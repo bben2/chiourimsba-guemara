@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eruvin 48b - Deux maisons, et un domaine qui sert a deux</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Eruvin 48b - Deux maisons, et un domaine qui sert a deux</h1>
+    <div class="ref">Eruvin 48b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Eruvin_48a.html">&lsaquo; Eruvin 48a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> Suite de Rav Chechet : l&#x27;erouv des deux cours exterieures est au milieu, mais dans deux maisons, et elles ne se joignent pas. La Guemara demande si cela suit Beit Chammai.</p><p>Beit Hillel aussi refusent deux maisons, ils ne valident deux recipients que dans une seule maison. Rav Aha, fils de Rav Avya, objecte a Rav Yehouda la chelihout, et a Rav Chechet les cinq residents.</p><p>Rav Achi repond par le guiloui daat, puis par les diourin pour alleger seulement. Rav, au nom de Rav Yehouda, attribue la michna a Rabbi Chimon.</p><p>Les Hakhamim disent : un domaine sert a deux domaines, deux domaines ne servent pas a un domaine.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg">
+<rect width="760" height="300" fill="#fbfaf7"/>
+<text x="380" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Ou est depose l'erouv</text>
+<text x="380" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Trois cours ouvertes l'une sur l'autre, et sur le reshout ha-rabim.</text>
+<rect x="16" y="62" width="360" height="28" fill="#ede7dc" stroke="#8a7b63"/>
+<text x="196.0" y="80.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Rav Yehouda</text>
+<rect x="384" y="62" width="360" height="28" fill="#ede7dc" stroke="#6b8193"/>
+<text x="564.0" y="80.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Rav Chechet</text>
+<rect x="16" y="100" width="110" height="78" fill="#f6e6e0" stroke="#93756b"/>
+<text x="71.0" y="127.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Exterieure A</text>
+<text x="71.0" y="143.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">recoit l'erouv</text>
+<text x="71.0" y="159.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">du milieu</text>
+<rect x="136" y="100" width="110" height="78" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="191.0" y="127.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Milieu</text>
+<text x="191.0" y="143.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">le depose</text>
+<text x="191.0" y="159.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">dans A et dans B</text>
+<rect x="256" y="100" width="120" height="78" fill="#f6e6e0" stroke="#93756b"/>
+<text x="316.0" y="127.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Exterieure B</text>
+<text x="316.0" y="143.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">recoit l'erouv</text>
+<text x="316.0" y="159.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">du milieu</text>
+<rect x="384" y="100" width="110" height="78" fill="#f6e6e0" stroke="#93756b"/>
+<text x="439.0" y="127.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Exterieure A</text>
+<text x="439.0" y="143.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">depose chez</text>
+<text x="439.0" y="159.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">le milieu</text>
+<rect x="504" y="100" width="110" height="78" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="559.0" y="127.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Milieu</text>
+<text x="559.0" y="143.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">maison 1</text>
+<text x="559.0" y="159.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">et maison 2</text>
+<rect x="624" y="100" width="120" height="78" fill="#f6e6e0" stroke="#93756b"/>
+<text x="684.0" y="127.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Exterieure B</text>
+<text x="684.0" y="143.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">depose chez</text>
+<text x="684.0" y="159.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">le milieu</text>
+<rect x="16" y="196" width="360" height="84" fill="#ffffff" stroke="#8a7b63"/>
+<text x="196.0" y="218.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Le milieu reside dans les deux.</text>
+<text x="196.0" y="234.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Les exterieures ne resident pas</text>
+<text x="196.0" y="250.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">l'une chez l'autre.</text>
+<text x="196.0" y="266.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Elles restent interdites entre elles.</text>
+<rect x="384" y="196" width="360" height="84" fill="#ffffff" stroke="#6b8193"/>
+<text x="564.0" y="218.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Les deux erouv sont au milieu,</text>
+<text x="564.0" y="234.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">chacun dans une maison.</text>
+<text x="564.0" y="250.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Deux maisons : pas une seule residence.</text>
+<text x="564.0" y="266.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Les exterieures ne se joignent pas.</text>
+</svg></div>
+          <figcaption>Rav Yehouda : l&#x27;erouv part du milieu vers chaque exterieure. Rav Chechet : chaque exterieure depose dans une maison du milieu.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg">
+<rect width="760" height="430" fill="#fbfaf7"/>
+<text x="380" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Les deux objections, puis Rav Achi</text>
+<rect x="150" y="42" width="460" height="40" fill="#ffffff" stroke="#6b8193"/>
+<text x="380.0" y="66.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rav Chechet : deux maisons dans la cour du milieu.</text>
+<line x1="380" y1="82" x2="380" y2="96" stroke="#8a7b63" stroke-width="1.4"/><polygon points="380,96 376,89 384,89" fill="#8a7b63"/>
+<rect x="150" y="98" width="460" height="40" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="380.0" y="122.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Selon qui ? D'abord : Beit Chammai.</text>
+<line x1="380" y1="138" x2="380" y2="152" stroke="#8a7b63" stroke-width="1.4"/><polygon points="380,152 376,145 384,145" fill="#8a7b63"/>
+<rect x="80" y="154" width="600" height="52" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="380.0" y="176.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Beit Hillel aussi : deux recipients, une maison, erouv valable.</text>
+<text x="380.0" y="192.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Deux maisons : l'erouv ne vaut pas.</text>
+<line x1="380" y1="206" x2="380" y2="220" stroke="#8a7b63" stroke-width="1.4"/><polygon points="380,220 376,213 384,213" fill="#8a7b63"/>
+<rect x="16" y="222" width="360" height="72" fill="#f6e6e0" stroke="#93756b"/>
+<text x="196.0" y="238.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Contre Rav Yehouda</text>
+<text x="196.0" y="254.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Le milieu, uni a A,</text>
+<text x="196.0" y="270.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">erouve ensuite avec B :</text>
+<text x="196.0" y="286.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">il fait la mission de A.</text>
+<rect x="384" y="222" width="360" height="72" fill="#f6e6e0" stroke="#93756b"/>
+<text x="564.0" y="238.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Contre Rav Chechet</text>
+<text x="564.0" y="254.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Tous resident au milieu.</text>
+<text x="564.0" y="270.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Deux maisons : comme cinq</text>
+<text x="564.0" y="286.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">dont un a oublie d'erouver.</text>
+<line x1="196" y1="294" x2="196" y2="312" stroke="#8a7b63" stroke-width="1.4"/><polygon points="196,312 192,305 200,305" fill="#8a7b63"/>
+<line x1="564" y1="294" x2="564" y2="312" stroke="#8a7b63" stroke-width="1.4"/><polygon points="564,312 560,305 568,305" fill="#8a7b63"/>
+<rect x="16" y="314" width="360" height="88" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="196.0" y="330.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Rav Achi</text>
+<text x="196.0" y="346.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Guiloui daat.</text>
+<text x="196.0" y="362.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Chacun veut le milieu.</text>
+<text x="196.0" y="378.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Il ne veut pas l'autre exterieure.</text>
+<text x="196.0" y="394.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Pas de chelihout malgre lui.</text>
+<rect x="384" y="314" width="360" height="88" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="564.0" y="330.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Rav Achi</text>
+<text x="564.0" y="346.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Diourin pour alleger.</text>
+<text x="564.0" y="362.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">La fiction permet.</text>
+<text x="564.0" y="378.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Elle n'interdit pas le milieu</text>
+<text x="564.0" y="394.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">comme une vraie residence.</text>
+</svg></div>
+          <figcaption>Deux maisons tiennent aussi selon Beit Hillel. Rav Achi leve la chelihout par le guiloui daat, et les cinq residents par les diourin pour alleger.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg">
+<rect width="760" height="400" fill="#fbfaf7"/>
+<text x="380" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Hakhamim : dans quel sens on porte</text>
+<text x="380" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Un domaine sert a deux. Deux domaines ne servent pas a un.</text>
+<rect x="16" y="60" width="360" height="28" fill="#ede7dc" stroke="#5d8a5d"/>
+<text x="196.0" y="78.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Lecture de Rachi</text>
+<rect x="384" y="60" width="360" height="28" fill="#ede7dc" stroke="#93756b"/>
+<text x="564.0" y="78.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Lecture de Rabbeinou Tam</text>
+<rect x="16" y="98" width="360" height="56" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="196.0" y="122.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Exterieure vers le milieu : permis.</text>
+<text x="196.0" y="138.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Ustensiles qui ont leur chevita la-bas.</text>
+<rect x="16" y="164" width="360" height="56" fill="#f6e6e0" stroke="#93756b"/>
+<text x="196.0" y="188.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Milieu vers une exterieure : interdit.</text>
+<text x="196.0" y="204.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">L'autre exterieure le tire.</text>
+<rect x="384" y="98" width="360" height="56" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="564.0" y="122.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Milieu vers une exterieure : permis.</text>
+<text x="564.0" y="138.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Peu de risque qu'il sorte l'ustensile d'autrui.</text>
+<rect x="384" y="164" width="360" height="56" fill="#f6e6e0" stroke="#93756b"/>
+<text x="564.0" y="188.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Exterieure vers le milieu : interdit.</text>
+<text x="564.0" y="204.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Gezeira : echanger d'une exterieure a l'autre.</text>
+<rect x="16" y="234" width="728" height="72" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="380.0" y="258.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rabbi Chimon, selon Rav : la michna.</text>
+<text x="380.0" y="274.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Le milieu est permis avec chacune, et chacune avec le milieu.</text>
+<text x="380.0" y="290.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Les deux exterieures restent interdites entre elles.</text>
+<rect x="16" y="318" width="728" height="64" fill="#ffffff" stroke="#8a7b63"/>
+<text x="380.0" y="338.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Selon Rachi, la regle des Hakhamim ne depend pas du lieu de l'erouv.</text>
+<text x="380.0" y="354.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Que les exterieures deposent au milieu, ou que le milieu depose chez elles :</text>
+<text x="380.0" y="370.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">elles sont permises avec lui, lui est interdit avec elles.</text>
+</svg></div>
+          <figcaption>Rachi : les exterieures portent au milieu, le milieu ne porte pas vers elles. Rabbeinou Tam lit le sens inverse, par gezeira.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בשני בתים.</div>
+            <div class="fr"><p>dans deux maisons.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בשני בתים</b> דהשתא לא מיחברן חיצונות בהדדי:</div>
+          <div class="glose-fr">Dans deux maisons : des lors, les exterieures ne se joignent pas l&#x27;une a l&#x27;autre.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Fin de la phrase de <b>Rav Chechet</b>, ouverte en 48a. Les deux cours exterieures ont depose leur erouv dans la cour du milieu, chacune dans une <b>maison</b> distincte. Elles ne deviennent pas une seule residence.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg">
+<rect width="760" height="300" fill="#fbfaf7"/>
+<text x="380" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Ou est depose l'erouv</text>
+<text x="380" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Trois cours ouvertes l'une sur l'autre, et sur le reshout ha-rabim.</text>
+<rect x="16" y="62" width="360" height="28" fill="#ede7dc" stroke="#8a7b63"/>
+<text x="196.0" y="80.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Rav Yehouda</text>
+<rect x="384" y="62" width="360" height="28" fill="#ede7dc" stroke="#6b8193"/>
+<text x="564.0" y="80.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Rav Chechet</text>
+<rect x="16" y="100" width="110" height="78" fill="#f6e6e0" stroke="#93756b"/>
+<text x="71.0" y="127.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Exterieure A</text>
+<text x="71.0" y="143.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">recoit l'erouv</text>
+<text x="71.0" y="159.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">du milieu</text>
+<rect x="136" y="100" width="110" height="78" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="191.0" y="127.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Milieu</text>
+<text x="191.0" y="143.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">le depose</text>
+<text x="191.0" y="159.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">dans A et dans B</text>
+<rect x="256" y="100" width="120" height="78" fill="#f6e6e0" stroke="#93756b"/>
+<text x="316.0" y="127.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Exterieure B</text>
+<text x="316.0" y="143.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">recoit l'erouv</text>
+<text x="316.0" y="159.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">du milieu</text>
+<rect x="384" y="100" width="110" height="78" fill="#f6e6e0" stroke="#93756b"/>
+<text x="439.0" y="127.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Exterieure A</text>
+<text x="439.0" y="143.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">depose chez</text>
+<text x="439.0" y="159.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">le milieu</text>
+<rect x="504" y="100" width="110" height="78" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="559.0" y="127.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Milieu</text>
+<text x="559.0" y="143.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">maison 1</text>
+<text x="559.0" y="159.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">et maison 2</text>
+<rect x="624" y="100" width="120" height="78" fill="#f6e6e0" stroke="#93756b"/>
+<text x="684.0" y="127.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Exterieure B</text>
+<text x="684.0" y="143.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">depose chez</text>
+<text x="684.0" y="159.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">le milieu</text>
+<rect x="16" y="196" width="360" height="84" fill="#ffffff" stroke="#8a7b63"/>
+<text x="196.0" y="218.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Le milieu reside dans les deux.</text>
+<text x="196.0" y="234.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Les exterieures ne resident pas</text>
+<text x="196.0" y="250.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">l'une chez l'autre.</text>
+<text x="196.0" y="266.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Elles restent interdites entre elles.</text>
+<rect x="384" y="196" width="360" height="84" fill="#ffffff" stroke="#6b8193"/>
+<text x="564.0" y="218.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Les deux erouv sont au milieu,</text>
+<text x="564.0" y="234.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">chacun dans une maison.</text>
+<text x="564.0" y="250.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Deux maisons : pas une seule residence.</text>
+<text x="564.0" y="266.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Les exterieures ne se joignent pas.</text>
+</svg></div><div class="svg-cap">Deux depots, deux maisons : les exterieures restent separees.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כמאן? כבית שמאי, דתניא: חמשה שגבו את עירובן ונתנוהו בשני כלים, בית שמאי אומרים: אין עירובן עירוב. ובית הלל אומרים: עירובן עירוב.</div>
+            <div class="fr"><p>Selon qui ? Selon Beit Chammai.</p><p>Car on a enseigne : cinq personnes ont collecte leur erouv et l&#x27;ont place dans deux recipients. Beit Chammai disent : leur erouv n&#x27;est pas un erouv.</p><p>Et Beit Hillel disent : leur erouv est un erouv.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>חמשה שגבו עירובן</b> שהיו דרין בחצר אחת וגבו מכל אחד את עירובו להתיר את חצירן להוציא מבתיהן לחצר:</div>
+          <div class="glose-fr">Cinq qui ont collecte leur erouv : ils habitaient une meme cour, et l&#x27;on a collecte de chacun son erouv, pour permettre leur cour, afin de sortir de leurs maisons vers la cour.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בשני כלים</b> בבית אחד:</div>
+          <div class="glose-fr">Dans deux recipients : dans une seule maison.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Premiere lecture : Rav Chechet suivrait <b>Beit Chammai</b>, qui refusent un erouv partage en deux recipients. <b>Beit Hillel</b> le valident.</p><p>Rachi fixe le cadre : une seule cour, un erouv collecte pour sortir des maisons vers la cour. Les deux recipients sont dans <b>une seule maison</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אפילו תימא בית הלל, עד כאן לא קאמרי בית הלל התם — אלא בשני כלים בבית אחד, אבל בשני בתים, לא.</div>
+            <div class="fr"><p>Meme si tu dis Beit Hillel : Beit Hillel ne l&#x27;ont dit la-bas que pour deux recipients dans une seule maison. Mais dans deux maisons, non.</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אבל בשני בתים לא</b> והא דלא מוקי לה רב יהודה כרב ששת לאו דקסבר דאפילו בשני בתים הוי עירוב לב&quot;ה דהא אפילו כלים קאמר רב יהודה לקמן דחולק עירובו אינו עירוב דעד כאן לא קאמרי ב&quot;ה אלא דמלי&#x27; למנא ואייתר והא דלא מוקי כרב ששת משום דפריך בסמוך לרב ששת דנהוי כחמשה ששרוין בחצר אחת וקסבר דאמר דיורין להחמיר:</div>
+          <div class="glose-fr">Mais dans deux maisons, non. Et si Rav Yehouda n&#x27;etablit pas le cas comme Rav Chechet, ce n&#x27;est pas qu&#x27;il tienne que, meme dans deux maisons, l&#x27;erouv vaille selon Beit Hillel. Car, meme pour des recipients, Rav Yehouda dit plus loin : celui qui divise son erouv, son erouv n&#x27;est pas un erouv. Beit Hillel ne l&#x27;ont dit que la ou le recipient s&#x27;est rempli et ou il en est reste. Et s&#x27;il n&#x27;etablit pas comme Rav Chechet, c&#x27;est parce qu&#x27;on objecte aussitot a Rav Chechet que ce soit comme cinq qui resident dans une meme cour. Et il tient que l&#x27;on dit des residents pour aggraver.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La limite de <b>Beit Hillel</b> : deux recipients valent dans une maison. <b>Deux maisons</b>, l'erouv ne vaut pas. Rav Chechet peut donc suivre Beit Hillel.</p><p>Tossefot : Rav Yehouda refuse aussi le partage voulu de l'erouv. Beit Hillel n'ont vise que le cas ou le recipient est plein et ou le <b>surplus</b> passe dans un second. Il n'adopte pas le cas de Rav Chechet, parce qu'il tient les <b>diourin pour aggraver</b>, et l'objection des cinq residents, juste apres, resterait debout.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 250" xmlns="http://www.w3.org/2000/svg">
+<rect width="760" height="250" fill="#fbfaf7"/>
+<text x="380" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Cinq qui ont collecte l'erouv</text>
+<text x="380" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Baraita. Le second recipient ne sauve que dans une seule maison.</text>
+<rect x="16" y="62" width="240" height="32" fill="#ffffff" stroke="#8a7b63"/>
+<text x="136.0" y="82.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b"></text>
+<rect x="256" y="62" width="240" height="32" fill="#ede7dc" stroke="#6b8193"/>
+<text x="376.0" y="82.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2b2b2b">Deux recipients, une maison</text>
+<rect x="496" y="62" width="248" height="32" fill="#ede7dc" stroke="#93756b"/>
+<text x="620.0" y="82.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2b2b2b">Deux maisons</text>
+<rect x="16" y="104" width="240" height="52" fill="#f6e6e0" stroke="#93756b"/>
+<text x="136.0" y="134.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Beit Chammai</text>
+<rect x="256" y="104" width="240" height="52" fill="#f6e6e0" stroke="#93756b"/>
+<text x="376.0" y="134.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">L'erouv ne vaut pas.</text>
+<rect x="496" y="104" width="248" height="52" fill="#f6e6e0" stroke="#93756b"/>
+<text x="620.0" y="134.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">L'erouv ne vaut pas.</text>
+<rect x="16" y="166" width="240" height="64" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="136.0" y="202.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Beit Hillel</text>
+<rect x="256" y="166" width="240" height="64" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="376.0" y="194.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">L'erouv vaut.</text>
+<text x="376.0" y="210.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Une seule maison.</text>
+<rect x="496" y="166" width="248" height="64" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="620.0" y="194.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">L'erouv ne vaut pas.</text>
+<text x="620.0" y="210.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Avis retenu pour Rav Chechet.</text>
+</svg></div><div class="svg-cap">Beit Hillel : deux recipients dans une maison. Deux maisons : l&#x27;erouv ne vaut pas, comme Beit Chammai.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר ליה רב אחא בריה דרב אויא לרב אשי: לרב יהודה קשיא ולרב ששת קשיא. לרב יהודה קשיא דאמר: כגון שנתנה אמצעית עירובה בזו ועירובה בזו, וכיון דעירבה אמצעית בהדי חיצונה הויא ליה חדא, וכי הדרה וערבה בהדי אידך — שליחותה עבדה.</div>
+            <div class="fr"><p>Rav Aha, fils de Rav Avya, dit a Rav Achi : pour Rav Yehouda c&#x27;est difficile, et pour Rav Chechet c&#x27;est difficile. Pour Rav Yehouda c&#x27;est difficile, car il a dit : par exemple, le milieu a place son erouv dans celle-ci, et son erouv dans celle-la.</p><p>Or, des que le milieu a erouve avec l&#x27;exterieure, elles sont devenues une. Et quand elle revient et erouve avec l&#x27;autre, elle a accompli sa mission (chelihout).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">הכי גרסינן כיון דעירבה אמצעית בהדי חיצונה הויא לה חדא וכי הדר&#x27; עירבה בהדי אידך שליחותה עבדה. שליחותה דחיצונה עבדה ואישתכח דכולהו כי הדדי עירבו וכולהו לישתרין ולא גרסינן ואידך מיהא לישתרי ואית דגרסי לה ומפרשי חיצונה שעירבה עמה מיהא תישתרי בחיצונה האחרת וזו תיאסר בה ואי אפשר לומר כן דכיון דשליחותה עבדה הוו להו כולהו חדא רשותא וכולהו שריין:</div>
+          <div class="glose-fr">Voici la version que nous lisons : des que le milieu a erouve avec l&#x27;exterieure, elle est devenue une avec elle, et quand elle revient et erouve avec l&#x27;autre, elle a accompli sa mission. Elle a accompli la mission de l&#x27;exterieure. Il se trouve que tous ont erouve ensemble, et tous devraient etre permis. Et nous ne lisons pas : et l&#x27;autre, du moins, qu&#x27;elle soit permise. Certains lisent ainsi, et expliquent : l&#x27;exterieure avec laquelle elle a erouve, du moins, serait permise dans l&#x27;autre exterieure, et celle-ci serait interdite en elle. On ne peut pas le dire : des lors qu&#x27;elle a accompli sa mission, ils sont tous un seul domaine, et tous sont permis.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לרב יהודה דאמר כגון שנתנה אמצעית עירובה בזו וכו&#x27;</b> לרב ששת לא שייך למיפרך הכי דכיון שנתנו עירובן באמצעית ולא נתנו עירובן יחד אלא בשני בתים גלי אדעתייהו דלא ניחא להו לחיצונות להשתתף ביחד אבל כשנתנה אמצעית עירובה בזו ובזו ליכא גלוי דעתייהו התם כולי האי אי נמי לרב יהודה כיון שנתנה עירובה בזו ובזו נעשה כאלו דרה בחיצונות בבתיהם ונעשית לכל אחת ואחת להיות שלוחה ולרב ששת אין האמצעית נעשית שליח דאדרבה כולן דיירין בה:</div>
+          <div class="glose-fr">Pour Rav Yehouda, qui a dit : par exemple, le milieu a place son erouv dans celle-ci, etc. Contre Rav Chechet, cette objection ne porte pas. Car, puisqu&#x27;ils ont depose leur erouv dans le milieu, et qu&#x27;ils ne l&#x27;ont pas depose ensemble mais dans deux maisons, ils ont manifeste leur intention : les exterieures ne veulent pas s&#x27;associer ensemble. Mais quand le milieu a place son erouv dans celle-ci et dans celle-la, il n&#x27;y a pas, la, une manifestation de leur intention a ce degre. Autre lecture : selon Rav Yehouda, des lors que le milieu a place son erouv dans celle-ci et dans celle-la, c&#x27;est comme s&#x27;il residait dans les exterieures, dans leurs maisons, et il devient, pour chacune, apte a etre son envoye. Selon Rav Chechet, le milieu ne devient pas envoye : au contraire, tous resident en lui.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rav Aha</b> vise d'abord <b>Rav Yehouda</b>. Le milieu, une fois uni a la premiere exterieure, erouve avec la seconde en tant qu'<b>envoye</b> de la premiere. Les trois auraient alors erouve ensemble.</p><p>Rachi ecarte une autre lecon, qui ne permettrait que l'exterieure deja jointe. La chelihout faite, le domaine est unique, et tous sont permis. Tossefot : contre Rav Chechet, les deux maisons ont deja montre que les exterieures refusent de s'associer. Selon Rav Yehouda, le milieu habite chez elles, et peut devenir leur envoye. Selon Rav Chechet, ce sont elles qui resident dans le milieu.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 230" xmlns="http://www.w3.org/2000/svg">
+<rect width="760" height="230" fill="#fbfaf7"/>
+<text x="380" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Objection : la mission de l'exterieure</text>
+<rect x="16" y="46" width="170" height="88" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="101.0" y="78.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">1. Milieu erouve</text>
+<text x="101.0" y="94.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">avec A.</text>
+<text x="101.0" y="110.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Ils sont un.</text>
+<rect x="202" y="46" width="170" height="88" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="287.0" y="78.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">2. Milieu erouve</text>
+<text x="287.0" y="94.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">ensuite avec B.</text>
+<text x="287.0" y="110.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Chelihout de A.</text>
+<rect x="388" y="46" width="170" height="88" fill="#f6e6e0" stroke="#93756b"/>
+<text x="473.0" y="78.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">3. A, milieu, B</text>
+<text x="473.0" y="94.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">auraient erouve</text>
+<text x="473.0" y="110.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">ensemble.</text>
+<rect x="574" y="46" width="170" height="88" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="659.0" y="78.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rav Achi</text>
+<text x="659.0" y="94.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">A ne veut pas B.</text>
+<text x="659.0" y="110.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Pas d'envoi.</text>
+<rect x="16" y="152" width="728" height="58" fill="#ffffff" stroke="#8a7b63"/>
+<text x="380.0" y="177.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Guiloui daat : chacune est satisfaite du milieu, pas de l'autre exterieure.</text>
+<text x="380.0" y="193.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Le milieu ne les unit pas malgre cette intention.</text>
+</svg></div><div class="svg-cap">Uni a la premiere exterieure, le milieu erouverait avec la seconde pour elle. Rav Achi : elle ne le veut pas.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ולרב ששת קשיא: תיהוי כחמשה ששרויין בחצר אחת, ושכח אחד מהן ולא עירב — דאסרי אהדדי!</div>
+            <div class="fr"><p>Et pour Rav Chechet c&#x27;est difficile : que ce soit comme cinq qui resident dans une meme cour, et dont l&#x27;un a oublie et n&#x27;a pas erouve, qui s&#x27;interdisent les uns les autres !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לרב ששת קשיא</b> כיון דנתנו שתיהן עירובן באמצעית העירוב מביא דיוריהן לתוכה והוו להו כאילו דרין כולן באמצעית וכיון דעירובן נתון בשני בתים נמצא שלא עירבו שתים החיצונות זו עם זו והוי כחמשה ששרוין בחצר אחת ושכח אחד מהן ולא עירב עם כולן יחד דכל החצר אסורה ואפילו עירב עם אחד מהן דהא גבי חמשה דחצר אחת תניא לעיל לבית הלל דבשני כלים הוא דהוי עירוב אבל בשני בתים לא ואע&quot;פ שעירבו השנים יחד לעצמן והשלשה לעצמן והכא נמי כיון דלא מצטרפי דקתני שתים החיצונות אסורות זו עם זו אמצעית גופה תיתסר בדידה שכולן אוסרין עליה:</div>
+          <div class="glose-fr">Pour Rav Chechet, c&#x27;est difficile. Puisque les deux ont depose leur erouv dans le milieu, l&#x27;erouv amene leur residence en elle, et ils sont comme s&#x27;ils residaient tous dans le milieu. Et puisque leur erouv est depose dans deux maisons, il se trouve que les deux exterieures n&#x27;ont pas erouve l&#x27;une avec l&#x27;autre. C&#x27;est comme cinq qui resident dans une meme cour, et dont l&#x27;un a oublie et n&#x27;a pas erouve avec tous ensemble : toute la cour est interdite, meme s&#x27;il a erouve avec l&#x27;un d&#x27;eux. Car, pour les cinq d&#x27;une meme cour, on a enseigne plus haut selon Beit Hillel : c&#x27;est dans deux recipients que l&#x27;erouv vaut, mais dans deux maisons, non, bien que les deux aient erouve ensemble pour eux-memes, et les trois pour eux-memes. Ici de meme : puisqu&#x27;ils ne se joignent pas, comme on enseigne que les deux exterieures sont interdites l&#x27;une avec l&#x27;autre, le milieu lui-meme devrait etre interdit avec elle, car tous l&#x27;interdisent.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deuxieme objection, contre <b>Rav Chechet</b>. L'erouv fait entrer les exterieures dans le milieu : elles y resident. Leurs depots etant dans <b>deux maisons</b>, elles n'ont pas erouve l'une avec l'autre.</p><p>Modele : <b>cinq</b> dans une cour, un a oublie. Meme deux groupes qui erouvent chacun de son cote, dans deux maisons, la cour reste interdite. Rachi en tire que le milieu lui-meme devrait etre interdit.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר ליה רב אשי: לא לרב יהודה קשיא ולא לרב ששת קשיא. לרב יהודה לא קשיא: כיון דעירבה לה אמצעית בהדי חיצונה, ושתים חיצונות בהדי הדדי לא עירבו — גליא דעתיה דבהא ניחא ליה, ובהא לא ניחא ליה.</div>
+            <div class="fr"><p>Rav Achi lui dit : pour Rav Yehouda, pas de difficulte, et pour Rav Chechet, pas de difficulte. Pour Rav Yehouda, pas de difficulte : des lors que le milieu a erouve avec l&#x27;exterieure, et que les deux exterieures n&#x27;ont pas erouve l&#x27;une avec l&#x27;autre, son intention est manifeste : de celle-ci cela lui convient, et de celle-la cela ne lui convient pas.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rav Achi</b> repond d'abord sur Rav Yehouda. Les exterieures n'ont pas erouve entre elles : <b>guiloui daat</b>, leur intention est manifeste. Chacune accepte le milieu, et refuse l'autre exterieure. Le milieu ne fait pas, pour elle, une mission qu'elle a ecartee.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ולרב ששת לא קשיא: אם אמרו דיורין להקל, יאמרו דיורין להחמיר?!</div>
+            <div class="fr"><p>Et pour Rav Chechet, pas de difficulte : s&#x27;ils ont dit des residents (diourin) pour alleger, diront-ils des residents pour aggraver ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אם אמרו דיורין</b> של זו בזו ע&quot;י העירוב להקל להתירן יחד יאמרו שהעירוב מביא הדיורין לתוכה כדי לאסור עליה הא לא דיירי ממש בגוה דליבעי עירובן בבית אחד הלכך אע&quot;ג דחיצונים לא עירבו אהדדי חיצון ואמצעי מיהא מצטרפי ולא אסרי אהדדי:</div>
+          <div class="glose-fr">S&#x27;ils ont dit des residents : ceux de celle-ci dans celle-la, par l&#x27;erouv, pour alleger, pour les permettre ensemble, dira-t-on que l&#x27;erouv amene les residences en elle afin de l&#x27;interdire ? Or ils ne resident pas reellement en elle, au point qu&#x27;il faille leur erouv dans une seule maison. Des lors, bien que les exterieurs n&#x27;aient pas erouve l&#x27;un avec l&#x27;autre, l&#x27;exterieur et le milieu, du moins, se joignent, et ils ne s&#x27;interdisent pas l&#x27;un l&#x27;autre.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>יאמרו דיורין להחמיר</b> והא דאמר בפרק הדר (לקמן עירובין דף סו:) נתנו עירובן בפנימית ושכח אחד מן הפנימית ולא עירב שתיהן אסורות משום דלא מצי מבטל לפנימית דאיכא חיצונה דאסרי עלייהו שאני התם דפשעה:</div>
+          <div class="glose-fr">Dira-t-on des residents pour aggraver. Et ce que l&#x27;on dit au chapitre Hader (plus loin, Erouvin 66b) : ils ont depose leur erouv dans l&#x27;interieure, et l&#x27;un de ceux de l&#x27;interieure a oublie et n&#x27;a pas erouve, les deux sont interdites, parce qu&#x27;il ne peut pas annuler son droit (bitoul) en faveur de l&#x27;interieure, puisqu&#x27;il y a l&#x27;exterieure qui les interdit. La, c&#x27;est different : il a ete negligent.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse sur <b>Rav Chechet</b>. La residence creee par l'erouv sert a <b>permettre</b> l'exterieure avec le milieu. On ne s'en sert pas pour les traiter comme des residents reels qui auraient oublie d'erouver, et pour interdire le milieu.</p><p>Tossefot rapproche Erouvin 66b : erouv dans la cour interieure, un habitant a oublie, les deux cours sont interdites, car le <b>bitoul</b> ne passe pas tant que l'exterieure interdit. La, celui qui a oublie a ete <b>negligent</b>.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 220" xmlns="http://www.w3.org/2000/svg">
+<rect width="760" height="220" fill="#fbfaf7"/>
+<text x="380" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Diourin : alleger, ou aggraver</text>
+<rect x="16" y="48" width="360" height="100" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="196.0" y="78.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Pour alleger</text>
+<text x="196.0" y="94.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">L'erouv fait entrer leur residence</text>
+<text x="196.0" y="110.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">au milieu, pour permettre</text>
+<text x="196.0" y="126.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">l'exterieure avec le milieu.</text>
+<rect x="384" y="48" width="360" height="100" fill="#f6e6e0" stroke="#93756b"/>
+<text x="564.0" y="78.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Pour aggraver</text>
+<text x="564.0" y="94.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">On ne les compte pas comme</text>
+<text x="564.0" y="110.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">residents reels, au point d'exiger</text>
+<text x="564.0" y="126.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">un seul depot et d'interdire le milieu.</text>
+<rect x="16" y="162" width="728" height="42" fill="#ffffff" stroke="#8a7b63"/>
+<text x="380.0" y="187.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Ils ne resident pas vraiment dans le milieu. Exterieur et milieu restent joints.</text>
+</svg></div><div class="svg-cap">L&#x27;erouv fait resident pour permettre. Il ne fait pas resident pour interdire.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר רב יהודה אמר רב: זו דברי רבי שמעון. אבל חכמים אומרים: רשות אחת משמשת לשתי רשויות. אבל לא שתי רשויות משמשות לרשות אחת.</div>
+            <div class="fr"><p>Rav Yehouda a dit au nom de Rav : ceci, ce sont les paroles de Rabbi Chimon. Mais les Hakhamim disent : un domaine sert a deux domaines, mais deux domaines ne servent pas a un domaine.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>זו דברי רבי שמעון</b> דהיא מותרת עמהן והן עמה:</div>
+          <div class="glose-fr">Ceci, paroles de Rabbi Chimon : elle est permise avec eux, et eux avec elle.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אבל חכמים אומרים</b> דלא שנא נתנו שתיהן עירובן באמצעית לא שנא נתנה אמצעית עירובן בזו ובזו היא אסורה עמהן והן מותרין עמה:</div>
+          <div class="glose-fr">Mais les Hakhamim disent : qu&#x27;elles aient toutes deux place leur erouv dans le milieu, ou que le milieu ait place leur erouv dans celle-ci et dans celle-la, elle est interdite avec eux, et eux sont permis avec elle.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>רשות אחת משמשת לשתי רשויות</b> כלים ששבתו בחיצונות מותרות באמצעית דהא החיצונות לא עירבו אלא עם זו ואין רשות אחרת מושכתן לצד אחר:</div>
+          <div class="glose-fr">Un domaine sert a deux domaines : des ustensiles qui ont fixe leur chevita dans les exterieures sont permis dans le milieu, car les exterieures n&#x27;ont erouve qu&#x27;avec celle-ci, et aucun autre domaine ne les tire de l&#x27;autre cote.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ואין ב&#x27; רשויות משמשות לרשות אחת</b> דכיון דשתי חיצונות לא עירבו יחד לעשות רשות אחת אלא רשויות חלוקות הן ואין כח באמצעית להשתמש לא בזו ולא בזו דזו מושכתה לכאן וזו מושכתה לכאן ושני דיורין לא יהבינן לה ודמיא כאילו היא מהך חצר החיצונה שלא עירבה בהדי אידך חיצונה ואוסרתה וכן נמי כי אזלא לאידך חצר דעירבה נמי בהדה אוסרתה אידך חיצונה אבל היכא דעירבו שלשתן הוו כולהו חדא רשותא:</div>
+          <div class="glose-fr">Et deux domaines ne servent pas a un domaine : puisque les deux exterieures n&#x27;ont pas erouve ensemble pour faire un seul domaine, ce sont des domaines distincts, et le milieu n&#x27;a pas la force de se servir ni de celle-ci ni de celle-la. Celle-ci le tire par ici, celle-la le tire par la, et nous ne lui accordons pas deux residences. Il est comme s&#x27;il faisait partie de cette cour exterieure qui n&#x27;a pas erouve avec l&#x27;autre exterieure, et celle-la l&#x27;interdit. De meme, quand il va vers l&#x27;autre cour avec laquelle il a aussi erouve, l&#x27;autre exterieure l&#x27;interdit. Mais la ou les trois ont erouve, ils sont tous un seul domaine.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רשות אחת משתמשת לשתי רשויו&#x27; ואין שתי רשויות משתמשות לרשות אחת</b> כן גרס הקונטרס ומפרש הקונטר&#x27; שהחיצונות משתמשות באמצעית ופי&#x27; משתמשות כמו משמשת אבל אמצעית אסורה בשתיהן דזו מושכתה לכאן וזו מושכתה לכאן וב&#x27; דירות לא יהבינן לה כיון דחיצונות לא עירבו יחד רשויות חלוקות הן והא דקאמר שמואל אף זו דברי ר&quot;ש פי&#x27; דר&quot;ש דווקא בענין זה התיר והא דקאמר ואזדא שמואל לטעמיה משום דסבירא ליה הלכה כדברי המיקל בעירוב ואי סבירא ליה כרב דאמר אמצעית נמי שרי לר&quot;ש בשתיהן לא היה אומר עירבה עם שתיהן אסורה עם שתיהן וקשה דלפי&#x27; היה לו ליגרוס משמשות שב&#x27; רשויות משתמשות בה ועוד קשה דקאמרינן לעיל [עירובין מח ע&quot;א] דה&quot;ק להו ר&quot;ש לרבנן מ&quot;ש גבי חצירות דפליגיתו כו&#x27; ולרב מה ענין זה לזה והא רבנן לא גזרו כלל דהא שרו חיצונות באמצעית ומאי קמשני נמי התם אוושא דיורין ועוד דלא שמעינן ליה לשמואל בשום מקום דקאמר הלכה כדברי המיקל בעירוב אלא ריב&quot;ל הוא דקאמר הכי לעיל ואדרבה שמואל הוא דאית ליה בפרק חלון (לקמן עירובין דף פא:) כל מקום שאמר רבי יהודה בעירוב הלכה כמותו ובר פלוגתא דר&quot;ש דהכא היינו ר&#x27; יהודה כדאמר לעיל ומיהו בהא י&quot;ל כיון דלא נזכר כאן ר&#x27; יהודה בפי&#x27; ליתא בההיא כללא דפסיק שמואל לקמן אלא היכא שנזכר בהדיא ועוד לשון אף לא אתי שפיר כמו שהקשה בעצמו דהוי עדיף טפי אי לא הוה תני אף דבהאי לישנא איכא למטעי דמשמע דתרוייהו שרי ועוד לפי&#x27; נחלקו רב ושמואל בפירוש לשון המשנה שהיא מותרת עמהן והן מותרות עמה לכן נראה לר&quot;ת דרשות אחת משתמשת לב&#x27; רשויות דאמצעית משתמשת בחיצונה דליכא למיגזר (בחיצונה) כולי האי שתוציא האמצעית כלי החיצונה מזו לזו אבל החיצונות אסורות עם האמצעית דילמא אתי להחליף כלים ששבתו בחיצונה זו לחיצונה זו אבל אין לפרש טעמא דרבנן דחיצונות אסורות באמצעית משום דחיצונות אוסרות זו על זו כיון דלא עירבו יחד או משום הכי אסורות החיצונות באמצעית משום דאין דיורי חיצונות באמצעית אבל אמצעית תשמש בחיצונות דעירובה מרגלתה בשתיהן ורב יהודה לטעמיה דמוקי לעיל כגון שנתנה אמצעית עירובה בזו ובזו דא&quot;כ לא הוי אתי שפיר הא דאמר ר&quot;ש לרבנן מ&quot;ש התם דפליגיתו אלא ודאי טעמא משום דגזרינן וקאמר שמואל דאף זו דברי ר&#x27; שמעון דשרי חיצונות ואמצעית זו בזו אבל לרבנן שלשתן אסורות והשתא הוי שמואל לטעמיה דאמר עירבה עם שתיהן אסורה עם שתיהן כרבנן דאמרי שלשתן אסורות דהיינו ר&#x27; יהודה ושמואל פסיק כר&#x27; יהודה בעירוב אבל לרב אינה אסורה עם שתיהן דאפילו לרבנן שרי לאמצעית להשתמש עמהן וקשה למהר&quot;י דאסורה עם שתיהן משמע אבל הם מותרין עמה מדלא קתני אוסרת על שתיהן כמו בסיפא אע&quot;ג דאיכא למימר דאשמעינן דאסורה עם שתיהן אע&quot;ג דליכא למיגזר כולי האי וכ&quot;ש דהם אסורות עמה דאיכא למיגזר טפי ומ&quot;מ כיון דלא מתסרי להשתמש יחד אלא משום גזירה אינה אוסרת על שתיהן מכל מקום כיון דלא קאמר עירבה עם שתיהן אינה אוסרת על שתיהן דהוה משמע וכולן אסורות זו עם זו אלא נקט אסורה עם שתיהן משמע ודאי דאבל הם מותרין עמה ועוד קשה דבפרק כל גגות (לקמן עירובין דף צא.) אמר שמואל הלכה כר&#x27; שמעון דאמר גגות חצירות וקרפיפות רשות אחד הן לכלים ששבתו בתוכן בין עירבו בין לא עירבו משום דרבי שמעון לטעמיה דהכא לא גזר ונראה לפרש דהא דקאמר שמואל דלרבנן שלשתן אסורות הוי מתרי טעמי חיצונות באמצעית משום גזירה שמא יוליכו כלי חיצונה זו לחיצונה אחרת ואמצעית בחיצונות ליכא למיגזר שמא תוליך האמצעית כלי חיצונה זו לאחרת דסתמא דמילתא כי משתמש איניש במאני דידיה קמשתמש ולא במאני דחבריה כדמפרש לקמן (עירובין דף עד.) גבי שתי חצירות וחורבה אחת ביניהן ואי משום שלא יוליכו [בני] החיצונות כליהן באמצעית הא ליכא למגזר דהוי גזירה לגזירה אלא טעמא דאסורה האמצעית בחיצונות שזו מושכתה לכאן וזו לכאן ור&quot;ש פליג אתרוייהו והשתא הוי שמואל לטעמיה דפסיק לקמן כר&#x27; יהודה בעירוב ולכך קאמר אסורה עם שתיהן כרבנן דהיינו ר&#x27; יהודה וטעמא משום דזו מושכת&#x27; לכאן וזו לכאן כדפרישית אבל הם מותרות עמה דבהא סבר כר&quot;ש דלא גזר וכדפסק בפרק כל גגות דהלכה כר&quot;ש דבין עירבו ובין לא עירבו לא גזר:</div>
+          <div class="glose-fr">Un domaine se sert de deux domaines, et deux domaines ne se servent pas d&#x27;un domaine. Telle est la version du Kontres (Rachi), et le Kontres explique que les exterieures se servent du milieu, et il explique se servent comme sert. Mais le milieu est interdit dans les deux, car celle-ci le tire par ici et celle-la le tire par la, et nous ne lui accordons pas deux residences. Puisque les exterieures n&#x27;ont pas erouve ensemble, ce sont des domaines distincts. Et ce que Chmouel dit : meme ceci, paroles de Rabbi Chimon, s&#x27;explique ainsi : Rabbi Chimon n&#x27;a permis que de cette facon. Et ce que l&#x27;on dit : Chmouel va selon son principe, c&#x27;est parce qu&#x27;il tient que la halakha suit l&#x27;avis indulgent en matiere d&#x27;erouv. S&#x27;il tenait comme Rav, qui dit que, selon Rabbi Chimon, le milieu aussi est permis dans les deux, il ne dirait pas : si elle a erouve avec les deux, elle est interdite avec les deux. Difficulte : selon cette explication, il aurait fallu la lecon se servent, car deux domaines se servent d&#x27;elle. Autre difficulte : nous disons plus haut (Erouvin 48a) que voici ce que Rabbi Chimon leur dit, aux Hakhamim : qu&#x27;est-ce qui distingue, pour les cours, le point ou vous divergez, etc. Selon Rav, quel rapport d&#x27;un cas a l&#x27;autre ? Les Hakhamim n&#x27;ont pas du tout decrete, puisqu&#x27;ils permettent les exterieures dans le milieu. Et que repond aussi, la-bas, le motif des habitants nombreux ? Autre point : nous n&#x27;avons entendu Chmouel dire en aucun endroit que la halakha suit l&#x27;avis indulgent en matiere d&#x27;erouv. C&#x27;est Rabbi Yehoshoua ben Levi qui le dit plus haut. Au contraire, Chmouel tient, au chapitre Halon (plus loin, Erouvin 81b) : partout ou Rabbi Yehouda a parle d&#x27;erouv, la halakha est comme lui. Et l&#x27;opposant de Rabbi Chimon ici, c&#x27;est Rabbi Yehouda, comme on l&#x27;a dit plus haut. Toutefois, la-dessus, on peut repondre : puisque Rabbi Yehouda n&#x27;est pas mentionne ici explicitement, il n&#x27;entre pas dans cette regle que Chmouel tranche plus loin, sinon la ou il est mentionne explicitement. De plus, le mot af (meme) ne vient pas bien, comme il l&#x27;a objecte lui-meme : il aurait mieux valu ne pas enseigner af, car avec cette formulation on peut se tromper et comprendre que les deux sont permis. De plus, selon cette explication, Rav et Chmouel divergent sur le sens des mots de la michna : elle est permise avec eux, et eux sont permis avec elle. C&#x27;est pourquoi il parait juste a Rabbeinou Tam d&#x27;expliquer : un domaine se sert de deux domaines, c&#x27;est le milieu qui se sert de l&#x27;exterieure, car il n&#x27;y a pas tant a decreter, dans l&#x27;exterieure, que le milieu fasse sortir l&#x27;ustensile de l&#x27;exterieure de celle-ci vers celle-la. Mais les exterieures sont interdites avec le milieu, de crainte que l&#x27;on en vienne a echanger des ustensiles qui ont fixe leur chevita dans cette exterieure vers cette autre exterieure. Mais il ne faut pas expliquer la raison des Hakhamim ainsi : les exterieures seraient interdites dans le milieu parce que les exterieures s&#x27;interdisent l&#x27;une l&#x27;autre, puisqu&#x27;elles n&#x27;ont pas erouve ensemble. Ou encore : les exterieures seraient interdites dans le milieu parce que les residents des exterieures ne sont pas dans le milieu, tandis que le milieu se servirait des exterieures, parce que son erouv le rend habitue dans les deux. Et Rav Yehouda irait selon son principe, lui qui etablit plus haut : par exemple, le milieu a place son erouv dans celle-ci et dans celle-la. Car alors ne viendrait pas bien ce que Rabbi Chimon dit aux Hakhamim : qu&#x27;est-ce qui distingue, la-bas, le point ou vous divergez. La raison est donc bien que nous decretons. Et Chmouel dit que meme ceci sont les paroles de Rabbi Chimon, qui permet les exterieures et le milieu l&#x27;un avec l&#x27;autre, mais selon les Hakhamim les trois sont interdites. Des lors Chmouel va selon son principe, lui qui a dit : si elle a erouve avec les deux, elle est interdite avec les deux, comme les Hakhamim qui disent que les trois sont interdites, c&#x27;est-a-dire Rabbi Yehouda, et Chmouel tranche comme Rabbi Yehouda en matiere d&#x27;erouv. Mais selon Rav, elle n&#x27;est pas interdite avec les deux, car meme selon les Hakhamim il est permis au milieu de se servir avec elles. Et c&#x27;est difficile pour le Ri : interdite avec les deux implique qu&#x27;elles sont permises avec elle, puisqu&#x27;il n&#x27;enseigne pas : elle interdit les deux, comme dans la fin du passage. Bien que l&#x27;on puisse dire : il nous apprend qu&#x27;elle est interdite avec les deux meme la ou il n&#x27;y a pas tant a decreter, et a plus forte raison elles sont interdites avec elle, la ou il y a davantage a decreter. Neanmoins, puisqu&#x27;elles ne sont interdites de se servir ensemble qu&#x27;a cause d&#x27;une gezeira, elle n&#x27;interdit pas les deux. De toute facon, puisqu&#x27;il ne dit pas : si elle a erouve avec les deux, elle n&#x27;interdit pas les deux, ce qui aurait implique que toutes sont interdites l&#x27;une avec l&#x27;autre, mais qu&#x27;il prend la formule interdite avec les deux, cela implique bien qu&#x27;elles sont permises avec elle. Autre difficulte : au chapitre Kol Gagot (plus loin, Erouvin 91a), Chmouel a dit : la halakha est comme Rabbi Chimon, qui dit que toits, cours et karpefot (enclos) sont un seul domaine pour les ustensiles qui ont fixe leur chevita en eux, qu&#x27;ils aient erouve ou qu&#x27;ils n&#x27;aient pas erouve, parce que Rabbi Chimon suit ici son principe : il ne decrete pas. Et il parait juste d&#x27;expliquer que ce que Chmouel dit, selon les Hakhamim les trois sont interdites, vient de deux raisons. Les exterieures dans le milieu : a cause d&#x27;une gezeira, de crainte qu&#x27;ils portent l&#x27;ustensile de cette exterieure vers l&#x27;autre exterieure. Et le milieu dans les exterieures : il n&#x27;y a pas a decreter de crainte que le milieu porte l&#x27;ustensile de cette exterieure vers l&#x27;autre, car d&#x27;ordinaire, quand un homme se sert d&#x27;ustensiles, il se sert des siens et non de ceux de son prochain, comme on l&#x27;explique plus loin (Erouvin 74a) au sujet de deux cours et d&#x27;une ruine entre elles. Et si c&#x27;est pour que les residents des exterieures ne portent pas leurs ustensiles dans le milieu, il n&#x27;y a pas a decreter, car ce serait une gezeira sur une gezeira (gezeira li-gezeira). La raison pour laquelle le milieu est interdit dans les exterieures est donc que celle-ci le tire par ici et celle-la par la. Et Rabbi Chimon diverge sur les deux. Des lors Chmouel va selon son principe, lui qui tranche plus loin comme Rabbi Yehouda en matiere d&#x27;erouv. C&#x27;est pourquoi il dit : interdite avec les deux, comme les Hakhamim, c&#x27;est-a-dire Rabbi Yehouda, et la raison est que celle-ci le tire par ici et celle-la par la, comme je l&#x27;ai explique. Mais elles sont permises avec elle, car sur ce point il tient comme Rabbi Chimon, qui ne decrete pas, et comme il a tranche au chapitre Kol Gagot : la halakha est comme Rabbi Chimon, qu&#x27;ils aient erouve ou non, il ne decrete pas.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">גמ&#x27; אמר רב יהודה אמר רב זו דברי ר&quot;ש. אבל חכמים אומרים רשות אחת משתמשת לשתי רשויות ואין שתי רשויות משתמשות לרשות אחת כלומר האמצעית משתמשת עם החיצונות ואין החיצונות משתמשות עם האמצעית. כי אמריתה קמיה דשמואל אמר אף זו דברי ר&quot;ש. אבל חכמים אומרים שלשתן אסורות. פרש&quot;י דאף איסור זה ר&quot;ש אמרו שלא התיר אלא שתהא רשות אחת משתמשת לשתי רשויות ולא שתי רשויות לרשות אחת. וכתב רבינו מאיר ז&quot;ל דאף לרש&quot;י הלכתא כוותיה דרב. באיסורי דסבירא ליה כר&quot;ש דמתיר הכל. ואע&quot;ג דתניא כוותיה דשמואל. הני מילי במילתייהו דרבנן דאמר שמואל דלדידהו שלשתן אסורות. אבל במילתיה דר&quot;ש לא מוכח מתוך הברייתא אי כרב אי כשמואל. ואזדא שמואל לטעמיה דאמר שמואל חצר שבין שני מבואות עירבה עם שניהם אסורה עם שניהם. לא עירבה עם שניהם אוסרת על שניהן. היתה באחד רגילה ובאחד אינה רגילה זה שרגילה בו אסורה. וזה שאינה רגילה בו מותרת. אמר רבה בר רב הונא אמר שמואל אם עירבה אצל שאינה רגילה הותר רגילה לעצמו. ואמר רבה בריה דרב הונא אמר שמואל אם עירבה רגילה לעצמו וזה שאין רגילה בו לא עירבה והיא עצמה לא עירבה דוחין אותה אצל מי שאינה רגילה בו. כגון זו כופין על מדת סדום. ורב אלפס ז&quot;ל לא הביא כלזה משום דלית הלכתא כשמואל בהא דאמר אם עירבה עם שניהם אסורה עם שניהם. דלרבנן אמר למילתיה וקי&quot;ל הלכה כר&quot;ש. ומיהו לשאר דברים אנו צריכים מה שחילק בין רגילה ובין שאינה רגילה. אמר רב חמא בר גוריא אמר רב הלכה כר&quot;ש. אמר רב יהודה אמר שמואל המקפיד על עירובו אין עירובו עירוב. מה שמו. עירוב שמו. רבי חנינא אמר עירובו עירוב אלא שנקרא מאנשי ורדינאה. והלכתא כשמואל דהכי אמר אביי לקמן בפ&#x27; הדר (עירובין דף סח.) כיון דאי בעו מינאי ולא אפשר לי למיתבא להו בטל שיתוף. לכך צריך ליזהר העושה עירוב שלא יערב בדבר המקפיד עליו כגון אם תקן לכבוד שבת פנדא או גלוסקא נאה דכיון דאי בעו מיניה לא יהיב להו בטל שיתוף:</div>
+          <div class="glose-fr">Guemara. Rav Yehouda a dit au nom de Rav : ceci, paroles de Rabbi Chimon. Mais les Hakhamim disent : un domaine se sert de deux domaines, et deux domaines ne se servent pas d&#x27;un domaine. C&#x27;est-a-dire : le milieu se sert avec les exterieures, et les exterieures ne se servent pas avec le milieu. Quand je l&#x27;ai dit devant Chmouel, il a dit : meme ceci, paroles de Rabbi Chimon. Mais les Hakhamim disent : les trois sont interdites. Rachi explique : meme cet interdit, Rabbi Chimon l&#x27;a dit. Il n&#x27;a permis qu&#x27;un domaine qui se sert de deux domaines, et non deux domaines pour un domaine. Et Rabbeinou Meir zal a ecrit : meme selon Rachi, la halakha est comme Rav. Pour les interdits, on tient comme Rabbi Chimon, qui permet tout. Et bien qu&#x27;une baraita soit enseignee comme Chmouel, ces paroles ne visent que la position des Hakhamim, dont Chmouel a dit que, selon eux, les trois sont interdites. Mais pour la position de Rabbi Chimon, la baraita ne prouve pas si c&#x27;est comme Rav ou comme Chmouel. Et Chmouel va selon son principe. Chmouel a dit : une cour placee entre deux mabouot (ruelles), si elle a erouve avec les deux, elle est interdite avec les deux. Si elle n&#x27;a pas erouve avec les deux, elle interdit les deux. Si elle etait habituelle dans l&#x27;un et non habituelle dans l&#x27;autre : celui ou elle est habituelle, elle y est interdite, et celui ou elle n&#x27;est pas habituelle, elle y est permise. Rabba bar Rav Houna a dit au nom de Chmouel : si elle a erouve aupres de celui ou elle n&#x27;est pas habituelle, celui ou elle est habituelle est permis pour lui-meme. Et Rabba, fils de Rav Houna, a dit au nom de Chmouel : si celui ou elle est habituelle a erouve pour lui-meme, et que celui ou elle n&#x27;est pas habituelle n&#x27;a pas erouve, et qu&#x27;elle-meme n&#x27;a pas erouve, on la repousse vers celui ou elle n&#x27;est pas habituelle. Dans un cas pareil, on contraint au titre de la mesure de Sodome (midat Sedom). Et Rav Alfas zal n&#x27;a pas rapporte tout cela, parce que la halakha n&#x27;est pas comme Chmouel en ceci qu&#x27;il a dit : si elle a erouve avec les deux, elle est interdite avec les deux. Car il a dit sa parole selon les Hakhamim, et nous tenons : la halakha est comme Rabbi Chimon. Toutefois, pour le reste, nous avons besoin de la distinction qu&#x27;il a faite entre l&#x27;habituelle et celle qui ne l&#x27;est pas. Rav Hama bar Gourya a dit au nom de Rav : la halakha est comme Rabbi Chimon. Rav Yehouda a dit au nom de Chmouel : celui qui est regardant (makpid) sur son erouv, son erouv n&#x27;est pas un erouv. Quel est son nom ? Eruv est son nom. Rabbi Hanina dit : son erouv est un erouv, mais on le compte parmi les gens de Vardina. Et la halakha est comme Chmouel, car ainsi a dit Abaye plus loin, au chapitre Hader (Erouvin 68a) : des lors que, s&#x27;ils me le demandaient, je ne pourrais pas le leur donner, le shitouf (association) est annule. C&#x27;est pourquoi celui qui fait un erouv doit prendre garde a ne pas erouver avec une chose sur laquelle il est regardant. Par exemple, s&#x27;il a prepare pour l&#x27;honneur du Chabbat un pain fin (panda) ou une belle galette (gelouska) : des lors que, s&#x27;ils le lui demandaient, il ne le leur donnerait pas, le shitouf est annule.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rav</b> attribue la michna a <b>Rabbi Chimon</b> : le milieu est permis avec les exterieures, et elles avec lui. Les <b>Hakhamim</b> limitent : un domaine sert a deux, deux domaines ne servent pas a un.</p><p>Rachi : les ustensiles des exterieures entrent au milieu. Le milieu ne sort vers aucune des deux, car chacune le <b>tire</b>, et on ne lui donne pas deux residences. Le lieu de l'erouv, chez Rav Yehouda ou chez Rav Chechet, ne change pas cet interdit.</p><p>Tossefot rapportent la lecture de <b>Rabbeinou Tam</b> : le milieu se sert des exterieures, et les exterieures sont interdites avec le milieu, par <b>gezeira</b> d'echange d'ustensiles. La fin de la glose pose deux motifs chez les Hakhamim, et Rabbi Chimon ecarte les deux. Le Rosh tient la halakha comme Rav, donc comme Rabbi Chimon, et enchaine la cour entre deux ruelles, puis le makpid.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg">
+<rect width="760" height="400" fill="#fbfaf7"/>
+<text x="380" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Hakhamim : dans quel sens on porte</text>
+<text x="380" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Un domaine sert a deux. Deux domaines ne servent pas a un.</text>
+<rect x="16" y="60" width="360" height="28" fill="#ede7dc" stroke="#5d8a5d"/>
+<text x="196.0" y="78.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Lecture de Rachi</text>
+<rect x="384" y="60" width="360" height="28" fill="#ede7dc" stroke="#93756b"/>
+<text x="564.0" y="78.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Lecture de Rabbeinou Tam</text>
+<rect x="16" y="98" width="360" height="56" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="196.0" y="122.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Exterieure vers le milieu : permis.</text>
+<text x="196.0" y="138.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Ustensiles qui ont leur chevita la-bas.</text>
+<rect x="16" y="164" width="360" height="56" fill="#f6e6e0" stroke="#93756b"/>
+<text x="196.0" y="188.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Milieu vers une exterieure : interdit.</text>
+<text x="196.0" y="204.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">L'autre exterieure le tire.</text>
+<rect x="384" y="98" width="360" height="56" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="564.0" y="122.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Milieu vers une exterieure : permis.</text>
+<text x="564.0" y="138.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Peu de risque qu'il sorte l'ustensile d'autrui.</text>
+<rect x="384" y="164" width="360" height="56" fill="#f6e6e0" stroke="#93756b"/>
+<text x="564.0" y="188.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Exterieure vers le milieu : interdit.</text>
+<text x="564.0" y="204.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Gezeira : echanger d'une exterieure a l'autre.</text>
+<rect x="16" y="234" width="728" height="72" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="380.0" y="258.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rabbi Chimon, selon Rav : la michna.</text>
+<text x="380.0" y="274.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Le milieu est permis avec chacune, et chacune avec le milieu.</text>
+<text x="380.0" y="290.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Les deux exterieures restent interdites entre elles.</text>
+<rect x="16" y="318" width="728" height="64" fill="#ffffff" stroke="#8a7b63"/>
+<text x="380.0" y="338.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Selon Rachi, la regle des Hakhamim ne depend pas du lieu de l'erouv.</text>
+<text x="380.0" y="354.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Que les exterieures deposent au milieu, ou que le milieu depose chez elles :</text>
+<text x="380.0" y="370.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">elles sont permises avec lui, lui est interdit avec elles.</text>
+</svg></div><div class="svg-cap">Rachi et Rabbeinou Tam ne lisent pas le meme sens de portage. Rabbi Chimon, selon Rav, permet les deux.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כי אמריתה קמיה דשמואל, אמר לי:</div>
+            <div class="fr"><p>Quand je l&#x27;ai enonce devant Chmouel, il m&#x27;a dit :</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Yehouda rapporte l'enseignement devant <b>Chmouel</b>. La reponse de Chmouel ouvre 49a.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Eruvin_48a.html">&lsaquo; Eruvin 48a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>
