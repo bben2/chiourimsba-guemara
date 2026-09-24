@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yoma 70b -- L ordre des offrandes du jour : suivre le texte ou suivre le verset, et ou couper les sept agneaux</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Yoma 70b -- L ordre des offrandes du jour : suivre le texte ou suivre le verset, et ou couper les sept agneaux</h1>
+    <div class="ref">Yoma 70b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_70a.html">&lsaquo; Yoma 70a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> Ce amud est tout entier occupe par une seule question : dans quel ordre, et a quel moment de la journee, s accomplissent les offrandes de Yom Kippour qui entourent le service du Saint des Saints. Il s ouvre sur la fin de la Tossefta rapportee au nom de Rabbi Akiva -- bouc exterieur, puis les deux beliers, puis les emourim du hatat, puis le tamid de l apres-midi -- et la guemara degage aussitot les deux logiques qui s opposent.</p><p>Rabbi Eliezer fait comme il est ecrit : le Levitique precedant les Nombres, les moussafim ferment la journee. Rabbi Akiva s appuie sur une derasha explicite, outre la ola du matin, qui avance les moussafim au tamid du matin.</p><p>La guemara presse alors Rabbi Eliezer sur le second verset en milevad, outre le hatat des expiations, ecrit a propos de Yom Kippour lui-meme : il repond que ce verset ne fixe pas un ordre mais une etendue d expiation -- ce sur quoi le bouc interieur expie, le bouc exterieur expie, selon la michna de Chevouot. Deux autres transmissions de Rabbi Akiva, par Rabbi Yehouda et par Rabbi Elazar be-Rabbi Chimon, coupent les sept agneaux du moussaf en deux paquets inverses -- un et six, ou six et un -- parce que deux versets tirent en sens contraire et qu il faut les honorer tous les deux.</p><p>Leur divergence tient a la crainte que chacun juge la plus serieuse : la houlcha, l epuisement du cohen gadol avant le service du jour, ou la pecha, le relachement qui ferait omettre ce qu on a repousse -- car pour le service du jour, dit le second, il est zeriz. La guemara releve ensuite que tous ces avis supposent un seul belier du peuple, ce qui suit Rabbi contre Rabbi Elazar be-Rabbi Chimon, et les deux maitres se partagent en consequence le mot ehad et le verset mivhar nedarekhem, l un pour l offrande obligatoire et l autre pour la volontaire.</p><p>Le amud se ferme sur un retour a la michna : la quatrieme immersion, et une baraita qui demande pourquoi Aharon entre encore a la tente d assignation, pour repondre qu il n y vient que pour en retirer la coupe et l encensoir.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 566" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="566" fill="#fffdf8"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#64748b"/></marker></defs>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Yoma 70b : le fil du daf</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.5" fill="#57534e">Une seule question tenue de bout en bout : dans quel ordre, et a quel moment, se font les offrandes du jour</text>
+
+  <rect x="20" y="58" width="720" height="76" rx="8" fill="#eef6ff" stroke="#9cc3ea"/>
+  <text x="38" y="79" font-size="12.5" font-weight="700" fill="#1d4ed8">A -- Seg 0 : la Tossefta de Rabbi Akiva livre la fin de sa liste</text>
+  <text x="38" y="98" font-size="10" fill="#334155">Bouc exterieur, puis son belier et le belier du peuple, puis les emourim du hatat, puis le tamid de l apres-midi.</text>
+  <text x="38" y="114" font-size="10" fill="#334155">Le bouc exterieur est place la par un verset : outre le hatat des expiations -- donc apres le service interieur.</text>
+  <text x="38" y="130" font-size="9.5" font-style="italic" fill="#1e40af">Tossefot conteste ici la lecture de Rachi et refait tout le decoupage de la michna.</text>
+
+  <path d="M 380 134 L 380 146" stroke="#64748b" stroke-width="1.6" marker-end="url(#a)"/>
+
+  <rect x="20" y="148" width="720" height="92" rx="8" fill="#fef6ee" stroke="#eabf9c"/>
+  <text x="38" y="169" font-size="12.5" font-weight="700" fill="#c2410c">B -- Seg 1 a 3 : deux logiques de lecture s affrontent</text>
+  <text x="38" y="188" font-size="10" fill="#334155">Rabbi Eliezer : on fait dans l ordre ou c est ecrit. Le Levitique vient avant les Nombres, donc les moussafim finissent la journee.</text>
+  <text x="38" y="204" font-size="10" fill="#334155">Rabbi Akiva : un verset commande explicitement -- outre la ola du matin -- donc les moussafim montent des le matin.</text>
+  <text x="38" y="220" font-size="10" fill="#334155">Et le verset outre le hatat des expiations, que Rabbi Akiva utilisait pour l ordre ? Rabbi Eliezer le lit autrement :</text>
+  <text x="38" y="236" font-size="9.5" font-style="italic" fill="#9a3412">il ne parle pas d ordre mais d etendue d expiation -- ce sur quoi l un expie, l autre expie (Chevouot 2a).</text>
+
+  <path d="M 380 240 L 380 252" stroke="#64748b" stroke-width="1.6" marker-end="url(#a)"/>
+
+  <rect x="20" y="254" width="720" height="92" rx="8" fill="#f3eefb" stroke="#c3a9e8"/>
+  <text x="38" y="275" font-size="12.5" font-weight="700" fill="#7c3aed">C -- Seg 4 a 7 : les rabbanim coupent les sept agneaux en deux</text>
+  <text x="38" y="294" font-size="10" fill="#4c1d95">Deux versets tirent dans deux directions : outre la ola du matin (matin) et il sortira et fera son ola (apres-midi).</text>
+  <text x="38" y="310" font-size="10" fill="#4c1d95">On satisfait donc les deux : une partie le matin, une partie le soir. Reste a savoir ou passe la coupure.</text>
+  <text x="38" y="326" font-size="10" fill="#4c1d95">Rabbi Yehouda : un seul le matin -- crainte de la faiblesse (houlcha) avant le service du jour.</text>
+  <text x="38" y="342" font-size="9.5" font-style="italic" fill="#6d28d9">Rabbi Elazar be-Rabbi Chimon : six le matin -- crainte de la negligence (pecha) apres coup ; pour le service du jour il est zeriz.</text>
+
+  <path d="M 380 346 L 380 358" stroke="#64748b" stroke-width="1.6" marker-end="url(#a)"/>
+
+  <rect x="20" y="360" width="720" height="88" rx="8" fill="#dcfce7" stroke="#9cc6a0"/>
+  <text x="38" y="381" font-size="12.5" font-weight="700" fill="#166534">D -- Seg 8 a 10 : un seul belier, ou deux ?</text>
+  <text x="38" y="400" font-size="10" fill="#14532d">Tous les avis precedents ne parlent que d un belier du peuple : cela suit Rabbi, pour qui le belier du Levitique et celui des Nombres sont un seul.</text>
+  <text x="38" y="416" font-size="10" fill="#14532d">Rabbi Elazar be-Rabbi Chimon, pour lui-meme, en compte deux. Chacun doit alors recaser le mot ehad et le verset mivhar nedarekhem.</text>
+  <text x="38" y="434" font-size="9.5" font-style="italic" fill="#166534">Rabbi : ehad = un seul. Son contradicteur : ehad = le plus choisi de son troupeau -- et il faut alors deux sources, hova et nedava.</text>
+
+  <path d="M 380 448 L 380 460" stroke="#64748b" stroke-width="1.6" marker-end="url(#a)"/>
+
+  <rect x="20" y="462" width="720" height="76" rx="8" fill="#fef9c3" stroke="#d6c98a"/>
+  <text x="38" y="483" font-size="12.5" font-weight="700" fill="#a16207">E -- Seg 11 : la guemara revient a la michna -- la quatrieme immersion</text>
+  <text x="38" y="502" font-size="10" fill="#3f3f46">Il sanctifie mains et pieds, se devet, s immerge, revet le lin et entre au Saint des Saints. Une baraita se met en place :</text>
+  <text x="38" y="518" font-size="10" fill="#3f3f46">et Aharon viendra a la tente d assignation -- pourquoi vient-il ? Pour sortir la coupe et l encensoir laisses le matin.</text>
+  <text x="38" y="534" font-size="9.5" font-style="italic" fill="#a16207">La demonstration se poursuit sur le amud suivant : toute la section a-t-elle ete dite dans l ordre ?</text>
+</svg></div>
+          <figcaption>Le mouvement du amud : de la fin de la Tossefta de Rabbi Akiva jusqu au retour a la michna et a la quatrieme immersion.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="470" fill="#fffdf8"/>
+  <defs><marker id="b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#b91c1c"/></marker><marker id="g" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#166534"/></marker></defs>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">L ordre des offrandes apres le service du jour : deux lectures de la Tora</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.5" fill="#57534e">A gauche on suit l ordre des livres ; a droite on suit une derasha qui deplace les moussafim au matin</text>
+
+  <rect x="24" y="58" width="342" height="382" rx="8" fill="#fef2f2" stroke="#e5a3a3"/>
+  <text x="195" y="80" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b91c1c">Rabbi Eliezer -- on fait comme c est ecrit</text>
+  <text x="195" y="97" text-anchor="middle" font-size="9.5" font-style="italic" fill="#7f1d1d">Levitique 16 d abord, puis Nombres 29</text>
+
+  <rect x="46" y="108" width="298" height="34" rx="5" fill="#ffffff" stroke="#e5a3a3"/>
+  <text x="195" y="130" text-anchor="middle" font-size="10.5" fill="#450a0a">Service du jour (avoda du Saint des Saints)</text>
+  <path d="M 195 142 L 195 152" stroke="#b91c1c" stroke-width="1.5" marker-end="url(#b)"/>
+  <rect x="46" y="154" width="298" height="34" rx="5" fill="#ffffff" stroke="#e5a3a3"/>
+  <text x="195" y="176" text-anchor="middle" font-size="10.5" fill="#450a0a">Son belier et le belier du peuple</text>
+  <path d="M 195 188 L 195 198" stroke="#b91c1c" stroke-width="1.5" marker-end="url(#b)"/>
+  <rect x="46" y="200" width="298" height="34" rx="5" fill="#ffffff" stroke="#e5a3a3"/>
+  <text x="195" y="222" text-anchor="middle" font-size="10.5" fill="#450a0a">Emourim du hatat</text>
+  <path d="M 195 234 L 195 244" stroke="#b91c1c" stroke-width="1.5" marker-end="url(#b)"/>
+  <rect x="46" y="246" width="298" height="34" rx="5" fill="#fff7ed" stroke="#e5a3a3"/>
+  <text x="195" y="268" text-anchor="middle" font-size="10.5" fill="#450a0a">Sortie de la coupe et de l encensoir</text>
+  <path d="M 195 280 L 195 290" stroke="#b91c1c" stroke-width="1.5" marker-end="url(#b)"/>
+  <rect x="46" y="292" width="298" height="46" rx="5" fill="#ffffff" stroke="#e5a3a3"/>
+  <text x="195" y="311" text-anchor="middle" font-size="10.5" fill="#450a0a">Moussafim : taureau de la ola, bouc exterieur,</text>
+  <text x="195" y="328" text-anchor="middle" font-size="10.5" fill="#450a0a">sept agneaux</text>
+  <path d="M 195 338 L 195 348" stroke="#b91c1c" stroke-width="1.5" marker-end="url(#b)"/>
+  <rect x="46" y="350" width="298" height="34" rx="5" fill="#ffffff" stroke="#e5a3a3"/>
+  <text x="195" y="372" text-anchor="middle" font-size="10.5" fill="#450a0a">Tamid de l apres-midi</text>
+  <text x="195" y="406" text-anchor="middle" font-size="9.5" fill="#7f1d1d">Aucun verset ne force autre chose :</text>
+  <text x="195" y="422" text-anchor="middle" font-size="9.5" font-style="italic" fill="#7f1d1d">outre le hatat des expiations parle d expiation, pas d ordre.</text>
+
+  <rect x="394" y="58" width="342" height="382" rx="8" fill="#eef6ff" stroke="#9cc3ea"/>
+  <text x="565" y="80" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1d4ed8">Rabbi Akiva -- la Tossefta du seg 0</text>
+  <text x="565" y="97" text-anchor="middle" font-size="9.5" font-style="italic" fill="#1e3a8a">le verset avance les moussafim, deux versets fixent le reste</text>
+
+  <rect x="416" y="108" width="298" height="34" rx="5" fill="#ffffff" stroke="#9cc3ea"/>
+  <text x="565" y="130" text-anchor="middle" font-size="10.5" fill="#0c2a5e">Tamid du matin + moussafim (taureau, agneaux)</text>
+  <path d="M 565 142 L 565 152" stroke="#166534" stroke-width="1.5" marker-end="url(#g)"/>
+  <rect x="416" y="154" width="298" height="34" rx="5" fill="#ffffff" stroke="#9cc3ea"/>
+  <text x="565" y="176" text-anchor="middle" font-size="10.5" fill="#0c2a5e">Service du jour</text>
+  <path d="M 565 188 L 565 198" stroke="#166534" stroke-width="1.5" marker-end="url(#g)"/>
+  <rect x="416" y="200" width="298" height="34" rx="5" fill="#fef9c3" stroke="#9cc3ea"/>
+  <text x="565" y="222" text-anchor="middle" font-size="10.5" fill="#0c2a5e">Bouc exterieur -- fixe par outre le hatat des expiations</text>
+  <path d="M 565 234 L 565 244" stroke="#166534" stroke-width="1.5" marker-end="url(#g)"/>
+  <rect x="416" y="246" width="298" height="34" rx="5" fill="#ffffff" stroke="#9cc3ea"/>
+  <text x="565" y="268" text-anchor="middle" font-size="10.5" fill="#0c2a5e">Son belier et le belier du peuple</text>
+  <path d="M 565 280 L 565 290" stroke="#166534" stroke-width="1.5" marker-end="url(#g)"/>
+  <rect x="416" y="292" width="298" height="34" rx="5" fill="#ffffff" stroke="#9cc3ea"/>
+  <text x="565" y="314" text-anchor="middle" font-size="10.5" fill="#0c2a5e">Emourim du hatat</text>
+  <path d="M 565 326 L 565 336" stroke="#166534" stroke-width="1.5" marker-end="url(#g)"/>
+  <rect x="416" y="338" width="298" height="34" rx="5" fill="#ffffff" stroke="#9cc3ea"/>
+  <text x="565" y="360" text-anchor="middle" font-size="10.5" fill="#0c2a5e">Tamid de l apres-midi</text>
+  <text x="565" y="392" text-anchor="middle" font-size="9.5" fill="#1e3a8a">Rachi place tout ce bloc a la troisieme immersion ;</text>
+  <text x="565" y="408" text-anchor="middle" font-size="9.5" fill="#1e3a8a">Tossefot objecte et renvoie les emourim du hatat</text>
+  <text x="565" y="424" text-anchor="middle" font-size="9.5" font-style="italic" fill="#1e3a8a">au tamid de l apres-midi, pour coller a la michna.</text>
+</svg></div>
+          <figcaption>Les deux ordonnancements du service : suivre l ordre des livres, ou suivre la derasha des versets.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="360" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Les sept agneaux du moussaf : trois repartitions dans la journee</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.5" fill="#57534e">Tous parlent au nom de Rabbi Akiva ; ils divergent sur la coupure entre matin et apres-midi</text>
+
+  <rect x="24" y="60" width="228" height="264" rx="8" fill="#eef6ff" stroke="#9cc3ea"/>
+  <text x="138" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#1d4ed8">Rabbi Akiva (michna)</text>
+  <text x="138" y="100" text-anchor="middle" font-size="9.5" fill="#475569">Tossefta, seg 2</text>
+  <rect x="42" y="112" width="192" height="52" rx="6" fill="#ffffff" stroke="#9cc3ea"/>
+  <text x="138" y="132" text-anchor="middle" font-size="11" fill="#1e3a8a">Tamid du matin</text>
+  <text x="138" y="152" text-anchor="middle" font-size="18" font-weight="700" fill="#1d4ed8">7 agneaux</text>
+  <rect x="42" y="176" width="192" height="52" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="138" y="196" text-anchor="middle" font-size="11" fill="#64748b">Tamid de l apres-midi</text>
+  <text x="138" y="216" text-anchor="middle" font-size="18" font-weight="700" fill="#94a3b8">0</text>
+  <text x="138" y="252" text-anchor="middle" font-size="9.5" fill="#334155">Un seul verset gouverne :</text>
+  <text x="138" y="268" text-anchor="middle" font-size="9.5" font-style="italic" fill="#1e40af">outre la ola du matin</text>
+  <text x="138" y="290" text-anchor="middle" font-size="9.5" fill="#334155">Tout le moussaf est avance</text>
+  <text x="138" y="306" text-anchor="middle" font-size="9.5" fill="#334155">au plus tot possible.</text>
+
+  <rect x="266" y="60" width="228" height="264" rx="8" fill="#f3eefb" stroke="#c3a9e8"/>
+  <text x="380" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Rabbi Yehouda</text>
+  <text x="380" y="100" text-anchor="middle" font-size="9.5" fill="#475569">au nom de Rabbi Akiva, seg 4 et 6</text>
+  <rect x="284" y="112" width="192" height="52" rx="6" fill="#ffffff" stroke="#c3a9e8"/>
+  <text x="380" y="132" text-anchor="middle" font-size="11" fill="#5b21b6">Tamid du matin</text>
+  <text x="380" y="152" text-anchor="middle" font-size="18" font-weight="700" fill="#7c3aed">1 agneau</text>
+  <rect x="284" y="176" width="192" height="52" rx="6" fill="#ffffff" stroke="#c3a9e8"/>
+  <text x="380" y="196" text-anchor="middle" font-size="11" fill="#5b21b6">Tamid de l apres-midi</text>
+  <text x="380" y="216" text-anchor="middle" font-size="18" font-weight="700" fill="#7c3aed">6 agneaux</text>
+  <text x="380" y="252" text-anchor="middle" font-size="9.5" fill="#4c1d95">Le minimum le matin :</text>
+  <text x="380" y="268" text-anchor="middle" font-size="9.5" font-style="italic" fill="#6d28d9">houlcha -- crainte de l epuisement</text>
+  <text x="380" y="290" text-anchor="middle" font-size="9.5" fill="#4c1d95">Il faut garder ses forces pour</text>
+  <text x="380" y="306" text-anchor="middle" font-size="9.5" fill="#4c1d95">le service du jour, coeur de l expiation.</text>
+
+  <rect x="508" y="60" width="228" height="264" rx="8" fill="#dcfce7" stroke="#9cc6a0"/>
+  <text x="622" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">R. Elazar be-R. Chimon</text>
+  <text x="622" y="100" text-anchor="middle" font-size="9.5" fill="#475569">au nom de Rabbi Akiva, seg 4 et 7</text>
+  <rect x="526" y="112" width="192" height="52" rx="6" fill="#ffffff" stroke="#9cc6a0"/>
+  <text x="622" y="132" text-anchor="middle" font-size="11" fill="#14532d">Tamid du matin</text>
+  <text x="622" y="152" text-anchor="middle" font-size="18" font-weight="700" fill="#166534">6 agneaux</text>
+  <rect x="526" y="176" width="192" height="52" rx="6" fill="#ffffff" stroke="#9cc6a0"/>
+  <text x="622" y="196" text-anchor="middle" font-size="11" fill="#14532d">Tamid de l apres-midi</text>
+  <text x="622" y="216" text-anchor="middle" font-size="18" font-weight="700" fill="#166534">1 agneau</text>
+  <text x="622" y="252" text-anchor="middle" font-size="9.5" fill="#14532d">Le maximum le matin :</text>
+  <text x="622" y="268" text-anchor="middle" font-size="9.5" font-style="italic" fill="#166534">pecha -- crainte du relachement</text>
+  <text x="622" y="290" text-anchor="middle" font-size="9.5" fill="#14532d">Pas de crainte de faiblesse :</text>
+  <text x="622" y="306" text-anchor="middle" font-size="9.5" fill="#14532d">pour le service du jour il est zeriz.</text>
+
+  <text x="380" y="346" text-anchor="middle" font-size="9.5" font-style="italic" fill="#57534e">Les deux derniers avis coupent parce que deux versets se contredisent ; Rabbi Akiva lui-meme ne coupe pas.</text>
+</svg></div>
+          <figcaption>Les trois repartitions des sept agneaux du moussaf, et le motif de chacune.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 336" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="336" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Le belier du peuple : un seul, ou deux ?</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.5" fill="#57534e">Deux versets mentionnent un belier ; toute la question est de savoir s ils designent la meme bete</text>
+
+  <rect x="150" y="58" width="200" height="48" rx="6" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="250" y="78" text-anchor="middle" font-size="10.5" font-weight="600" fill="#334155">Levitique 16,3</text>
+  <text x="250" y="96" text-anchor="middle" font-size="9.5" fill="#475569">et un belier en ola</text>
+  <rect x="410" y="58" width="200" height="48" rx="6" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="510" y="78" text-anchor="middle" font-size="10.5" font-weight="600" fill="#334155">Nombres 29,8</text>
+  <text x="510" y="96" text-anchor="middle" font-size="9.5" fill="#475569">un taureau, un belier, sept agneaux</text>
+
+  <rect x="40" y="128" width="330" height="182" rx="8" fill="#dcfce7" stroke="#9cc6a0"/>
+  <text x="205" y="150" text-anchor="middle" font-size="12.5" font-weight="700" fill="#166534">Rabbi -- un seul belier</text>
+  <text x="205" y="170" text-anchor="middle" font-size="10" fill="#14532d">Le belier du Levitique est celui des Nombres.</text>
+  <text x="205" y="192" text-anchor="middle" font-size="10" fill="#14532d">Preuve : le mot ehad -- un.</text>
+  <text x="205" y="208" text-anchor="middle" font-size="10" fill="#14532d">Un veut dire un, pas deux.</text>
+  <text x="205" y="234" text-anchor="middle" font-size="10" fill="#14532d">Et d ou vient alors l exigence</text>
+  <text x="205" y="250" text-anchor="middle" font-size="10" fill="#14532d">d une bete de choix ?</text>
+  <text x="205" y="272" text-anchor="middle" font-size="10" font-style="italic" fill="#166534">De mivhar nedarekhem -- le choix de tes voeux</text>
+  <text x="205" y="288" text-anchor="middle" font-size="10" fill="#14532d">(Deuteronome 12,11), qui vaut pour tout.</text>
+
+  <rect x="392" y="128" width="330" height="182" rx="8" fill="#f3eefb" stroke="#c3a9e8"/>
+  <text x="557" y="150" text-anchor="middle" font-size="12.5" font-weight="700" fill="#7c3aed">R. Elazar be-R. Chimon -- deux beliers</text>
+  <text x="557" y="170" text-anchor="middle" font-size="10" fill="#4c1d95">Un pour le service du jour, un pour le moussaf.</text>
+  <text x="557" y="192" text-anchor="middle" font-size="10" fill="#4c1d95">Alors que fait-il de ehad ?</text>
+  <text x="557" y="208" text-anchor="middle" font-size="10" font-style="italic" fill="#6d28d9">meyouhad che-be-edro -- le plus choisi du troupeau.</text>
+  <text x="557" y="234" text-anchor="middle" font-size="10" fill="#4c1d95">Il a donc deux sources pour la qualite :</text>
+  <text x="557" y="250" text-anchor="middle" font-size="10" fill="#4c1d95">ehad pour l offrande obligatoire (hova),</text>
+  <text x="557" y="266" text-anchor="middle" font-size="10" fill="#4c1d95">mivhar nedarekhem pour la volontaire (nedava).</text>
+  <text x="557" y="290" text-anchor="middle" font-size="10" font-style="italic" fill="#6d28d9">Et les deux sont necessaires -- tsrikhi.</text>
+
+  <path d="M 250 106 L 205 128" stroke="#166534" stroke-width="1.4" fill="none"/>
+  <path d="M 510 106 L 557 128" stroke="#7c3aed" stroke-width="1.4" fill="none"/>
+</svg></div>
+          <figcaption>Un seul belier ou deux : la dispute de Rabbi et de Rabbi Elazar be-Rabbi Chimon, et le partage des versets.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאַחַר כָּךְ שָׂעִיר הַנַּעֲשֶׂה בַּחוּץ, שֶׁנֶּאֱמַר: ״שְׂעִיר עִזִּים אֶחָד חַטָּאת מִלְּבַד חַטַּאת הַכִּפֻּורִים״, וְאַחַר כָּךְ אֵילוֹ וְאֵיל הָעָם, וְאַחַר כָּךְ אֵימוּרֵי חַטָּאת, וְאַחַר כָּךְ תָּמִיד שֶׁל בֵּין הָעַרְבָּיִם.</div>
+            <div class="fr"><p>et ensuite le bouc dont le service est accompli a l exterieur, ainsi qu il est dit : un bouc de chevre en hatat (sacrifice pour la faute), outre le hatat des expiations ; et ensuite son belier et le belier du peuple ; et ensuite les emourim (parties sacrificielles) du hatat ; et ensuite le tamid (offrande perpetuelle) de l apres-midi.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאַחַר כָּךְ אֵילוֹ וְאֵיל הָעָם וְאַחַ&quot;כּ אֵימוּרֵי חַטָּאת</b> כָּל אֵלּוּ בִּטְבִילָה שְׁלִישִׁית:</div>
+          <div class="glose-fr">Et ensuite son belier et le belier du peuple, et ensuite les emourim du hatat -- tous ceux-la se font a la troisieme immersion.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאַחַר כָּךְ תָּמִיד שֶׁל בֵּין הָעַרְבָּיִם</b> בִּטְבִילָה חֲמִישִׁית וְלָא אַייְרֵי הָכָא בְּהוֹצָאַת כַּף וּמַחְתָּה דִּפְשִׁיטָא לָן דְּבָתַר אֵילוֹ וְאֵיל הָעָם הִיא כִּדְתַנְיָא לְקַמָּן שֶׁכָּל הַפָּרָשָׁה נֶאֶמְרָה עַל הַסֵּדֶר וְכוּ&#x27;:</div>
+          <div class="glose-fr">Et ensuite le tamid de l apres-midi -- a la cinquieme immersion. Et il n est pas question ici de la sortie de la coupe et de l encensoir, car il est evident pour nous qu elle a lieu apres son belier et le belier du peuple, comme il est enseigne plus loin que toute la section a ete dite dans l ordre, etc.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאַחַר כָּךְ שָׂעִיר הַנַּעֲשֶׂה בַּחוּץ וְאַחַ&quot;כּ אֵילוֹ וְאֵיל הָעָם וְאַחַ&quot;כּ אֵימוּרֵי חַטָּאת</b> פרש&quot;י כּוּלְּהוּ בִּטְבִילָה שְׁלִישִׁית וְלָא נְהִירָא לִי דִּנְהִי דְּאָמְרִינַן לְעֵיל דְּמַתְנִי&#x27; לָאו מִתַּקַּנְתָּא מ&quot;מ לָאו מְשַׁבַּשְׁתָּא הִיא וְהָא דְּלָא קָרָא לָהּ מִתַּקַּנְתָּא לְפִי שֶׁאֵין הַסֵּדֶר מְפֹורָשׁ בָּהּ ולפרש&quot;י בָּרַייְתָא ע&quot;כ פְּלִיגָא אַמַּתְנִי&#x27; דִּבְמַתְנִי&#x27; קָתָנֵי הָיוּ קְרֵיבִים עִם תָּמִיד שֶׁל בֵּין הָעַרְבָּיִם ולפירש&quot;י לֹא הָיָה דָּבָר קָרֵב עִם תָּמִיד שֶׁל בֵּין הָעַרְבָּיִם וְעוֹד דִּלְקַמָּן בְּסָמוּךְ פָּרִיךְ וְדִילְמָא בְּשָׂעִיר הַנַּעֲשֶׂה בַּחוּץ מַפְסִיק לְהוּ וְהַשְׁתָּא עַל כָּרְחָךְ לְרַבִּי אֱלִיעֶזֶר לָא פָּרֵיךְ דְּהָא כֵּיוָן דִּסְבִירָא לֵיהּ עֲבִיד כְּדִכְתִיב אִם כֵּן עַל כָּרְחָךְ בְּאֵילּוּ וְאֵיל הָעָם כְּדִכְתִיב מִקַּמֵּי שָׂעִיר מַפְסִיק לְהוּ כִּדְתַנְיָא הָכָא אֶלָּא ע&quot;כ לְר&#x27; עֲקִיבָא פָּרֵיךְ דִּילְמָא בְּשָׂעִיר לְחוּדֵיהּ מַפְסִיק לְהוּ מִנָּלַן דְּמַפְסִיק לְהוּ נַמֵּי בְּאֵילוֹ וְאֵיל הָעָם דִּילְמָא אֵילוֹ וְאֵיל הָעָם עִם תָּמִיד שֶׁל בֵּין הָעַרְבָּיִם עֲבִיד לְהוּ וְהַשְׁתָּא לפרש&quot;י כִּי מְשַׁנֵּי וְיָצָא וְעָשָׂה אֶת עֹולָתוֹ וְאֶת עֹולַת הָעָם כו&#x27; אַכַּתִּי מ&quot;מ תִּיקְשֵׁי לָךְ וְדִילְמָא בְּשָׂעִיר הַנַּעֲשֶׂה בַּחוּץ וְאֵילּוּ וְאֵיל הָעָם דַּוְקָא מַפְסִיק לְהוּ מִנָּלַן דְּמַפְסִיק לְהוּ בְּאֵימוּרֵי חַטָּאת וְעוֹד ק&quot;ל אַמַּאי קָרֵי לָהּ מִתַּקַּנְתָּא הָאִיכָּא לְמִיבְעֵי עֲלָהּ כְּמוֹ אַמַּתְנִיתִין אִי אֵימוּרֵי חַטָּאת קְרֵיבִין בִּטְבִילָה שְׁלִישִׁית בַּהֲדֵי אֵילוֹ וְאֵיל הָעָם אוֹ בַּהֲדֵי תָּמִיד שֶׁל בֵּין הָעַרְבָּיִם עַל כֵּן נִרְאֶה לִי דְּאֵימוּרֵי חַטָּאת קְרֵיבִין עִם תָּמִיד שֶׁל בֵּין הָעַרְבָּיִם וְדִבְרֵי ר&#x27; עֲקִיבָא דְּמַתְנִיתִין ה&quot;פ עִם תָּמִיד שֶׁל שַׁחַר הָיוּ קְרֵיבִין הַכְּבָשִׂים וּפַר הָעוֹלָה וְשָׂעִיר הַנַּעֲשֶׂה בַּחוּץ קָרֵב אַחַ&quot;כּ בִּזְמַנּוֹ עִם אֵילוֹ וְאֵיל הָעָם וְהַאי דְּלָא קָתָנֵי אֵילוֹ וְאֵיל הָעָם מִשּׁוּם דר&quot;א מוֹדֶה לוֹ בְּהוּ דְּבִטְבִילָה שְׁלִישִׁית הָווּ וּמַאי דְּתָנֵי הָיוּ קְרֵיבִין עִם תָּמִיד שֶׁל בֵּין הָעַרְבָּיִם ה&quot;ק עוֹד הַקְרָבוֹת אֲחֵרוֹת קְרֵיבִין עִם תָּמִיד הָעָרֶב וְהָא דְּלָא קָתָנֵי לְהוּ לֹא בְּדִבְרֵי ר&#x27; אֱלִיעֶזֶר וְלֹא בְּדִבְרֵי רַבִּי עֲקִיבָא שֶׁמָּא מִשּׁוּם דְּלָאו קָרְבָּן שָׁלֵם נִינְהוּ דִּכְבָר נִזְרַק הַדָּם בִּטְבִילָה שְׁנִיָּה הִלְכָּךְ לָא חָיְישִׁי לְמִיחְשְׁבֵיהּ כֵּיוָן דְּאֵינוֹ אֶלָּא גְּמַר קָרְבָּן וְלֹא עֲבוֹדָה דִּמְעַכְּבִי כַּפָּרָה דְּאִינְהוּ עַצְמָן שֶׁלֹּא הֻוקְטְרוּ אֵימוּרִין כָּשֵׁר וְדִבְרֵי רַבִּי אֱלִיעֶזֶר דְּמַתְנִי&#x27; יֵשׁ לְפָרֵשׁ דְּלָא פְּלִיג אַתַּנָּא דְּבֵי שְׁמוּאֵל וה&quot;ק וְיָצָא וְעָשָׂה אֵילוֹ וְאֵיל הָעָם וה&quot;ה אֵימוּרֵי חַטָּאת אֶלָּא דְּשַׁיְּירִינְהוּ מִטַּעְמָא דְּפָרֵישִׁית וְהָא דְּקָתָנֵי ז&#x27; כְּבָשִׂים תְּמִימִים וְשִׁייֵּר פַּר הָעוֹלָה וְשָׂעִיר הַנַּעֲשֶׂה בַּחוּץ יֵשׁ לוֹמַר מִשּׁוּם דְּרַבִּי עֲקִיבָא ס&quot;ל דִּקְרֵיבִין עִם תָּמִיד שֶׁל שַׁחַר אֲתָא רַבִּי אֱלִיעֶזֶר לְמֵימַר אַתָּה מַקְדִּים אוֹתָם לְכָל הַיּוֹתֵר שֶׁאַתָּה יָכוֹל וַאֲנִי מְאַחֵר אוֹתָם כָּל מַה שֶׁאֲנִי יָכוֹל וּמִמֵּילָא יָדַעְנָא דְּהַייְנוּ טַעְמָא דִּכְתִיבִי לְבַסּוֹף בְּפָרָשַׁת פִּינְחָס וְאִם כֵּן ה&quot;ה פַּר הָעוֹלָה וְשָׂעִיר הַנַּעֲשֶׂה בַּחוּץ דִּכְתִיבִי לְבַסּוֹף וְנִיחָא לֵיהּ לְמִינְקַט כְּבָשִׂים מִשּׁוּם דְּאִית בְּהוּ פְּלוּגְתָּא טוּבָא לְרַבִּי עֲקִיבָא כּוּלְּהוּ בַּבֹּקֶר וּלְרַבִּי יְהוּדָה אַלִּיבָּא דְּרַבִּי עֲקִיבָא אֶחָד בַּבֹּקֶר וְשִׁשָּׁה עִם תָּמִיד שֶׁל בֵּין הָעַרְבָּיִם וְלֵר&#x27; אֶלְעָזָר בַּר רַבִּי שִׁמְעוֹן אִיפְּכָא:</div>
+          <div class="glose-fr">Et ensuite le bouc fait a l exterieur, et ensuite son belier et le belier du peuple, et ensuite les emourim du hatat -- Rachi a explique : tous a la troisieme immersion. Cela ne me parait pas juste. Car meme si nous avons dit plus haut que notre michna n est pas metaknata (pleinement ordonnee), elle n est pas pour autant mechabechta (erronee) ; et si on ne l a pas appelee metaknata, c est seulement parce que l ordre n y est pas explicite. Or, selon Rachi, la baraita serait necessairement en desaccord avec la michna : la michna enseigne qu ils etaient offerts avec le tamid de l apres-midi, et selon Rachi rien n etait offert avec le tamid de l apres-midi. En outre, la guemara demandera tout de suite : et peut-etre est-ce par le bouc fait a l exterieur qu il les interrompt ? Or ce n est certainement pas Rabbi Eliezer qui est vise, car puisqu il tient qu on fait selon l ordre ecrit, c est forcement par son belier et le belier du peuple -- ecrits avant le bouc -- qu il les interrompt, comme il est enseigne ici. C est donc necessairement Rabbi Akiva qui est vise : peut-etre n interrompt-il que par le bouc seul, et d ou saurions-nous qu il interrompt aussi par son belier et le belier du peuple ? Peut-etre son belier et le belier du peuple, il les fait avec le tamid de l apres-midi. Et alors, selon Rachi, lorsque la guemara repond a partir de &lt;i&gt;et il sortira et fera son ola et l ola du peuple&lt;/i&gt;, il resterait quand meme a demander : peut-etre n interrompt-il precisement que par le bouc exterieur et par son belier et le belier du peuple ; d ou saurions-nous qu il interrompt aussi par les emourim du hatat ? J ai encore une difficulte : pourquoi appeler cette baraita metaknata ? On peut lui poser la meme question qu a la michna : les emourim du hatat sont-ils offerts a la troisieme immersion, avec son belier et le belier du peuple, ou bien avec le tamid de l apres-midi ? C est pourquoi il me semble que les emourim du hatat sont offerts avec le tamid de l apres-midi. Et les paroles de Rabbi Akiva dans la michna s expliquent ainsi : avec le tamid du matin etaient offerts les agneaux et le taureau de la ola ; et le bouc fait a l exterieur est offert ensuite, en son temps, avec son belier et le belier du peuple. S il n a pas mentionne son belier et le belier du peuple, c est parce que Rabbi Eliezer lui accorde a leur sujet qu ils sont a la troisieme immersion. Et ce qu il enseigne -- ils etaient offerts avec le tamid de l apres-midi -- veut dire : d autres offrandes encore sont offertes avec le tamid du soir. Et s il ne les a mentionnees ni dans les paroles de Rabbi Eliezer ni dans celles de Rabbi Akiva, c est peut-etre parce qu elles ne constituent pas un sacrifice entier : le sang a deja ete asperge a la deuxieme immersion. Ils n ont donc pas pris soin de les compter, puisque ce n est que l achevement du sacrifice et non un service qui empeche l expiation -- car, en eux-memes, si les emourim n ont pas ete brules, l offrande reste kacher. Quant aux paroles de Rabbi Eliezer dans la michna, on peut les expliquer comme n etant pas en desaccord avec le tana de l ecole de Chemouel, et voici ce qu il dit : il sort et fait son belier et le belier du peuple, et il en va de meme des emourim du hatat, sauf qu il les a omis pour la raison que j ai exposee. Et s il enseigne sept agneaux sans defaut en omettant le taureau de la ola et le bouc fait a l exterieur, on peut dire que c est parce que Rabbi Akiva tient qu ils sont offerts avec le tamid du matin : Rabbi Eliezer vient dire -- toi tu les avances autant que tu peux, et moi je les retarde autant que je peux. De la nous savons d office que la raison en est qu ils sont ecrits en dernier, dans la section de Pinhas ; et s il en est ainsi, il en va de meme du taureau de la ola et du bouc exterieur, ecrits eux aussi en dernier. Et il lui a convenu de prendre les agneaux comme exemple parce qu il y a a leur sujet beaucoup de controverse : pour Rabbi Akiva tous le matin ; pour Rabbi Yehouda au nom de Rabbi Akiva, un le matin et six avec le tamid de l apres-midi ; et pour Rabbi Elazar be-Rabbi Chimon, l inverse.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאַחַ&quot;כּ שָׂעִיר הַנַּעֲשֶׂה בַּחוּץ וְאַחַר כָּךְ אֵילוֹ וְאֵיל הָעָם</b> וְאַף עַל גַּב דִּכְתִיב וְיָצָא וְעָשָׂה אֶת עֹולָתוֹ וְאֶת עֹולַת הָעָם וְדָיְיקִינַן מִינָּהּ בְּסָמוּךְ יְצִיאָה רִאשׁוֹנָה וּמַשְׁמַע דְּמִיָּד בִּיצִיאָה רִאשׁוֹנָה עֲבִיד לְהוּ וְהָכָא קָאָמַר דְּשָׂעִיר הַנַּעֲשֶׂה בַּחוּץ עֲבִיד בְּרֵישָׁא וְיֵשׁ לוֹמַר דְּהָכִי קָאָמַר מִכָּל מַה שֶׁכָּתַב בְּפָרָשַׁת אַחֲרֵי מוֹת לֹא הָיָה דָּבָר קוֹדֵם לְאֵילוֹ וְאֵיל הָעָם בִּיצִיאָה רִאשׁוֹנָה וְשָׂעִיר הַנַּעֲשֶׂה בַּחוּץ לָא כְּתִיב הָתָם:</div>
+          <div class="glose-fr">Et ensuite le bouc fait a l exterieur, et ensuite son belier et le belier du peuple -- et bien qu il soit ecrit &lt;i&gt;et il sortira et fera son ola et l ola du peuple&lt;/i&gt;, dont nous deduirons tout de suite qu il s agit de la premiere sortie, ce qui laisse entendre qu il les fait des la premiere sortie, alors qu ici on dit que le bouc exterieur se fait d abord -- on peut dire que voici ce que cela signifie : de tout ce qui est ecrit dans la section Aharei Mot, rien ne precedait son belier et le belier du peuple lors de la premiere sortie ; or le bouc fait a l exterieur n est pas ecrit la-bas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Fin de la <b>Tossefta</b> citee en 70a au nom de Rabbi Akiva : elle enumere, dans l ordre, tout ce qui suit le service interieur de Yom Kippour. Le point neuf est la place du <b>bouc exterieur</b> -- le bouc du moussaf, dont le sang est asperge dans la cour et non dans le Saint des Saints. Un verset le fixe : <i>outre le hatat des expiations</i> ; le mot <b>milevad</b> (outre, en plus de) suppose que le hatat interieur est deja accompli, donc le bouc exterieur vient apres lui.</p><p>Cette baraita est appelee <b>metaknata</b> (bien ordonnee) parce qu elle enonce l ordre explicitement, contrairement a la michna. Rachi place tout ce bloc dans la <b>troisieme immersion</b> ; Tossefot, dans une longue glose, refuse cette lecture et renvoie les emourim du hatat au tamid de l apres-midi, pour ne pas mettre la baraita en contradiction frontale avec la michna.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="470" fill="#fffdf8"/>
+  <defs><marker id="b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#b91c1c"/></marker><marker id="g" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#166534"/></marker></defs>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">L ordre des offrandes apres le service du jour : deux lectures de la Tora</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.5" fill="#57534e">A gauche on suit l ordre des livres ; a droite on suit une derasha qui deplace les moussafim au matin</text>
+
+  <rect x="24" y="58" width="342" height="382" rx="8" fill="#fef2f2" stroke="#e5a3a3"/>
+  <text x="195" y="80" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b91c1c">Rabbi Eliezer -- on fait comme c est ecrit</text>
+  <text x="195" y="97" text-anchor="middle" font-size="9.5" font-style="italic" fill="#7f1d1d">Levitique 16 d abord, puis Nombres 29</text>
+
+  <rect x="46" y="108" width="298" height="34" rx="5" fill="#ffffff" stroke="#e5a3a3"/>
+  <text x="195" y="130" text-anchor="middle" font-size="10.5" fill="#450a0a">Service du jour (avoda du Saint des Saints)</text>
+  <path d="M 195 142 L 195 152" stroke="#b91c1c" stroke-width="1.5" marker-end="url(#b)"/>
+  <rect x="46" y="154" width="298" height="34" rx="5" fill="#ffffff" stroke="#e5a3a3"/>
+  <text x="195" y="176" text-anchor="middle" font-size="10.5" fill="#450a0a">Son belier et le belier du peuple</text>
+  <path d="M 195 188 L 195 198" stroke="#b91c1c" stroke-width="1.5" marker-end="url(#b)"/>
+  <rect x="46" y="200" width="298" height="34" rx="5" fill="#ffffff" stroke="#e5a3a3"/>
+  <text x="195" y="222" text-anchor="middle" font-size="10.5" fill="#450a0a">Emourim du hatat</text>
+  <path d="M 195 234 L 195 244" stroke="#b91c1c" stroke-width="1.5" marker-end="url(#b)"/>
+  <rect x="46" y="246" width="298" height="34" rx="5" fill="#fff7ed" stroke="#e5a3a3"/>
+  <text x="195" y="268" text-anchor="middle" font-size="10.5" fill="#450a0a">Sortie de la coupe et de l encensoir</text>
+  <path d="M 195 280 L 195 290" stroke="#b91c1c" stroke-width="1.5" marker-end="url(#b)"/>
+  <rect x="46" y="292" width="298" height="46" rx="5" fill="#ffffff" stroke="#e5a3a3"/>
+  <text x="195" y="311" text-anchor="middle" font-size="10.5" fill="#450a0a">Moussafim : taureau de la ola, bouc exterieur,</text>
+  <text x="195" y="328" text-anchor="middle" font-size="10.5" fill="#450a0a">sept agneaux</text>
+  <path d="M 195 338 L 195 348" stroke="#b91c1c" stroke-width="1.5" marker-end="url(#b)"/>
+  <rect x="46" y="350" width="298" height="34" rx="5" fill="#ffffff" stroke="#e5a3a3"/>
+  <text x="195" y="372" text-anchor="middle" font-size="10.5" fill="#450a0a">Tamid de l apres-midi</text>
+  <text x="195" y="406" text-anchor="middle" font-size="9.5" fill="#7f1d1d">Aucun verset ne force autre chose :</text>
+  <text x="195" y="422" text-anchor="middle" font-size="9.5" font-style="italic" fill="#7f1d1d">outre le hatat des expiations parle d expiation, pas d ordre.</text>
+
+  <rect x="394" y="58" width="342" height="382" rx="8" fill="#eef6ff" stroke="#9cc3ea"/>
+  <text x="565" y="80" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1d4ed8">Rabbi Akiva -- la Tossefta du seg 0</text>
+  <text x="565" y="97" text-anchor="middle" font-size="9.5" font-style="italic" fill="#1e3a8a">le verset avance les moussafim, deux versets fixent le reste</text>
+
+  <rect x="416" y="108" width="298" height="34" rx="5" fill="#ffffff" stroke="#9cc3ea"/>
+  <text x="565" y="130" text-anchor="middle" font-size="10.5" fill="#0c2a5e">Tamid du matin + moussafim (taureau, agneaux)</text>
+  <path d="M 565 142 L 565 152" stroke="#166534" stroke-width="1.5" marker-end="url(#g)"/>
+  <rect x="416" y="154" width="298" height="34" rx="5" fill="#ffffff" stroke="#9cc3ea"/>
+  <text x="565" y="176" text-anchor="middle" font-size="10.5" fill="#0c2a5e">Service du jour</text>
+  <path d="M 565 188 L 565 198" stroke="#166534" stroke-width="1.5" marker-end="url(#g)"/>
+  <rect x="416" y="200" width="298" height="34" rx="5" fill="#fef9c3" stroke="#9cc3ea"/>
+  <text x="565" y="222" text-anchor="middle" font-size="10.5" fill="#0c2a5e">Bouc exterieur -- fixe par outre le hatat des expiations</text>
+  <path d="M 565 234 L 565 244" stroke="#166534" stroke-width="1.5" marker-end="url(#g)"/>
+  <rect x="416" y="246" width="298" height="34" rx="5" fill="#ffffff" stroke="#9cc3ea"/>
+  <text x="565" y="268" text-anchor="middle" font-size="10.5" fill="#0c2a5e">Son belier et le belier du peuple</text>
+  <path d="M 565 280 L 565 290" stroke="#166534" stroke-width="1.5" marker-end="url(#g)"/>
+  <rect x="416" y="292" width="298" height="34" rx="5" fill="#ffffff" stroke="#9cc3ea"/>
+  <text x="565" y="314" text-anchor="middle" font-size="10.5" fill="#0c2a5e">Emourim du hatat</text>
+  <path d="M 565 326 L 565 336" stroke="#166534" stroke-width="1.5" marker-end="url(#g)"/>
+  <rect x="416" y="338" width="298" height="34" rx="5" fill="#ffffff" stroke="#9cc3ea"/>
+  <text x="565" y="360" text-anchor="middle" font-size="10.5" fill="#0c2a5e">Tamid de l apres-midi</text>
+  <text x="565" y="392" text-anchor="middle" font-size="9.5" fill="#1e3a8a">Rachi place tout ce bloc a la troisieme immersion ;</text>
+  <text x="565" y="408" text-anchor="middle" font-size="9.5" fill="#1e3a8a">Tossefot objecte et renvoie les emourim du hatat</text>
+  <text x="565" y="424" text-anchor="middle" font-size="9.5" font-style="italic" fill="#1e3a8a">au tamid de l apres-midi, pour coller a la michna.</text>
+</svg></div><div class="svg-cap">Les deux ordonnancements en presence : Rabbi Eliezer suit l ordre des livres, Rabbi Akiva suit la derasha.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאי טַעְמָא דְּרַבִּי אֱלִיעֶזֶר? עֲבִיד כְּדִכְתִיב: עָבֵיד בְּרֵישָׁא דְּתוֹרַת כֹּהֲנִים, וַהֲדַר עָבֵיד דְּחֹומֶשׁ הַפְּקוּדִים.</div>
+            <div class="fr"><p>Quelle est la raison de Rabbi Eliezer ? Il fait comme il est ecrit : il accomplit d abord ce qui figure dans Torat Cohanim (le Levitique), puis il accomplit ce qui figure dans Houmach HaPekoudim (le livre des Nombres).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>עֲבִיד כְּדִכְתִיב</b> תּוֹרַת כֹּהֲנִים כְּתִיבָא וּבְרֵישָׁא הִלְכָּךְ אֵילוֹ וְאֵיל הָעָם וְאֵימוּרֵי חַטָּאת בָּתַר עֲבוֹדַת הַיּוֹם וַהֲדַר הוֹצָאַת כַּף וּמַחְתָּה וְאַחַר כָּךְ מוּסָפִין וְתָמִיד שֶׁל בֵּין הָעַרְבַּיִם דִּכְתִיבִי לְבַסּוֹף בְּחֻומַּשׁ הַפְּקוּדִים:</div>
+          <div class="glose-fr">Il fait comme il est ecrit -- Torat Cohanim est ecrit en premier. Donc son belier, le belier du peuple et les emourim du hatat viennent apres le service du jour, puis la sortie de la coupe et de l encensoir, et ensuite les moussafim et le tamid de l apres-midi, qui sont ecrits en dernier, dans Houmach HaPekoudim.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>עֲבִיד חַד כְּדִכְתִיב וַהֲדַר עֲבִיד שִׁשָּׁה דְּחֹומֶשׁ הַפְּקוּדִים</b> וְאִם תֹּאמַר אַמַּאי מַפְסִיק בִּכְבָשִׂים מִקְצָתָן בַּבֹּקֶר וּמִקְצָתָן בָּעֶרֶב יַקְרִיב כֻּולָּן בַּבֹּקֶר מִדִּכְתִיב מִלְּבַד וְאִי מִשּׁוּם דִּכְתִיבִי לְבַסּוֹף הִלְכָּךְ בָּעֵינַן שֶׁיַּקְרִיב מֵהֶן בָּעֶרֶב וְהָא פַּר הָעוֹלָה נָמֵי כְּתִיב לְבַסּוֹף אֲפִילּוּ הָכֵי מַקְרִיבוֹ בַּבֹּקֶר וְלָא אָמְרִינַן שֶׁיִּזְרֹוק דָּמוֹ וְהַקְטָרָתוֹ בָּעֶרֶב וְאִם כֵּן נֵימָא דְּפַר הָעוֹלָה יְהֵא בַּבֹּקֶר וְהַכְּבָשִׂים כֻּולָּן בָּעֶרֶב וְיֵשׁ לוֹמַר דִּקְרָא דְּמִלְּבַד דְּגָמְרִינַן מִינֵּיהּ לְהַקְרִיב הַמּוּסָפִין בַּבֹּקֶר עִיקַּר טַעַם הוּא הִלְכָּךְ כָּל כַּמָּה שֶׁנּוּכַל לַעֲשׂוֹת בַּבֹּקֶר מִן הַמּוּסָפִין עָבְדִינַן וּמִשּׁוּם דִּכְתִיבִי מוּסָפִין לְבַסּוֹף יֵשׁ לְהַנִּיחַ קְצָת מִן הַמּוּסָפִין לְהַקְרִיב בָּעֶרֶב וְכֵיוָן דִּמְשַׁיְּירִין מִן הַכְּבָשִׂים לָעֶרֶב לְמַר שִׁשָּׁה וּלְמַר חַד סַגִּי:</div>
+          <div class="glose-fr">Il en fait un comme il est ecrit, puis il en fait six de Houmach HaPekoudim -- et si tu dis : pourquoi couper les agneaux, une partie le matin et une partie le soir ? Qu il les offre tous le matin, puisqu il est ecrit milevad (outre) ! Et si c est parce qu ils sont ecrits en dernier et qu il faut donc en offrir une partie le soir -- mais le taureau de la ola aussi est ecrit en dernier, et pourtant on l offre le matin, et on ne dit pas d en asperger le sang et d en bruler les parties le soir ! Et s il en est ainsi, disons donc que le taureau de la ola sera le matin et les agneaux tous le soir ! On peut repondre que le verset milevad, dont nous apprenons a offrir les moussafim le matin, constitue la raison principale : donc tout ce que nous pouvons faire des moussafim le matin, nous le faisons ; et parce que les moussafim sont ecrits en dernier, il faut en laisser une part a offrir le soir. Et puisqu on laisse une part des agneaux pour le soir -- six pour l un, un pour l autre -- cela suffit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Voici le principe de Rabbi Eliezer, aussi simple que puissant : <b>l ordre du service suit l ordre du texte</b>. Le service de Yom Kippour est decrit deux fois dans la Tora : au Levitique 16 (<b>Torat Cohanim</b>) et aux Nombres 29 (<b>Houmach HaPekoudim</b>, le livre des recensements). Le Levitique venant en premier, tout ce qu il decrit -- le service interieur, puis les deux beliers, puis les emourim -- passe avant les moussafim des Nombres.</p><p>Consequence pratique, notee par Rachi : les moussafim et le tamid de l apres-midi ferment la journee, apres la sortie de la coupe et de l encensoir.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַבִּי עֲקִיבָא? כִּדְקָתָנֵי טַעְמָא: ״מִלְּבַד עֹולַת הַבֹּקֶר אֲשֶׁר לְעֹולַת הַתָּמִיד״, אַלְמָא מוּסָפִין עִם תָּמִיד שֶׁל שַׁחַר עָבֵיד לְהוּ.</div>
+            <div class="fr"><p>Et Rabbi Akiva ? Comme la raison qui a ete enseignee : outre la ola (holocauste) du matin qui est pour la ola perpetuelle -- il en ressort qu il accomplit les moussafim avec le tamid du matin.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabbi Akiva ne raisonne pas sur l ordre des livres mais sur une <b>derasha</b> (exposition d un verset). Nombres 28,23 attache les offrandes additionnelles a la ola du matin : <i>milevad olat haboker</i> -- outre la ola du matin. Le mot <b>milevad</b> place les moussafim dans le prolongement immediat du tamid du matin.</p><p>Un verset explicite l emporte sur une inference tiree de la simple succession des chapitres : c est tout le nerf de la mahloket avec Rabbi Eliezer.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַבִּי אֱלִיעֶזֶר, הַאי ״מִלְּבַד חַטַּאת הַכִּפּוּרִים״ מַאי עֲבִיד לֵיהּ? הַהוּא מִיבְּעֵי לֵיהּ, עַל מַה שֶּׁזֶּה מְכַפֵּר — זֶה מְכַפֵּר.</div>
+            <div class="fr"><p>Et Rabbi Eliezer, ce verset -- outre le hatat des expiations -- qu en fait-il ? Celui-la lui est necessaire pour enseigner : ce sur quoi celui-ci expie, celui-la expie.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַאי מִלְּבַד חַטַּאת הַכִּפּוּרִים</b> דְּמַשְׁמַע דְּשָׂעִיר הַחִיצוֹן קוֹדֵם לְאֵילוֹ וְאֵיל הָעָם מַאי עֲבִיד לֵיהּ בִּשְׁלָמָא מִלְּבַד עוֹלַת הַבָּקָר לָאו בְּיוֹם הַכִּיפּוּרִים כְּתִיב וּמֵרְגָלִים לָא יָלֵיף דִּסְמִיךְ אַסִּידְרָא לְמֶיעְבַּד הָנֵי דְּתוֹרַת כֹּהֲנִים בְּרֵישָׁא אֶלָּא הַאי דְּכָתַב בְּיוֹם הַכִּפּוּרִים גּוּפֵיהּ מַאי עֲבִיד לֵיהּ:</div>
+          <div class="glose-fr">Ce verset outre le hatat des expiations -- qui laisse entendre que le bouc exterieur precede son belier et le belier du peuple : qu en fait-il ? Passe encore pour outre la ola du matin, qui n est pas ecrit a propos de Yom Kippour et dont il ne tire donc pas d enseignement contraignant, puisqu il s appuie sur l ordre du texte pour accomplir d abord ce qui figure dans Torat Cohanim. Mais celui-ci, qui est ecrit a propos de Yom Kippour lui-meme, qu en fait-il ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>עַל מַה שֶּׁזֶּה מְכַפֵּר וְכוּ&#x27;</b> בְּמַתְנִיתִין דפ&quot;ק דִּשְׁבוּעוֹת (דַּף ב.) דָּרֵישׁ לֵיהּ הָכִי וְעַל שֶׁיֵּשׁ בָּהּ יְדִיעָה בַּסּוֹף וְאֵין בָּהּ יְדִיעָה בַּתְּחִילָּה שָׂעִיר הַנַּעֲשֶׂה בַּחוּץ מְכַפֵּר שֶׁנֶּאֱמַר וּשְׂעִיר חַטָּאת אֶחָד מִלְּבַד חַטַּאת הַכִּפּוּרִים עַל מַה שֶּׁזֶּה מְכַפֵּר זֶה מְכַפֵּר מַה פְּנִימִי אֵינוֹ מְכַפֵּר אֶלָּא עַל דָּבָר שֶׁיֵּשׁ בּוֹ יְדִיעָה כְּדִמְפָרֵשׁ הָתָם אַף חִיצוֹן אֵינוֹ מְכַפֵּר וְכוּ&#x27;:</div>
+          <div class="glose-fr">Ce sur quoi celui-ci expie, etc. -- dans la michna du premier chapitre de Chevouot (2a) on l expose ainsi : et pour la faute dont il y a eu connaissance a la fin mais non au debut, c est le bouc fait a l exterieur qui expie, ainsi qu il est dit -- et un bouc en hatat, outre le hatat des expiations : ce sur quoi celui-ci expie, celui-la expie. De meme que l interieur n expie que pour une chose dont il y a connaissance, comme il est explique la-bas, de meme l exterieur n expie que, etc.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara serre Rabbi Eliezer. Passe encore pour <i>outre la ola du matin</i>, qui n est pas ecrit a propos de Yom Kippour ; mais <i>outre le hatat des expiations</i> (Nombres 29,11) est ecrit a propos du jour lui-meme et semble bien fixer un ordre. Que devient-il ?</p><p>Reponse : chez Rabbi Eliezer ce verset ne parle pas de <b>chronologie</b> mais d <b>etendue d expiation</b>. C est la derasha de la michna d ouverture de Chevouot (2a) : le bouc exterieur expie exactement les memes fautes que le bouc interieur -- celles dont on a eu connaissance a la fin mais pas au debut. <i>Milevad</i> signifie alors : en plus de, dans le meme registre que.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 336" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="336" fill="#fffdf8"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#64748b"/></marker></defs>
+  <text x="370" y="26" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1c1917">Deux versets en milevad -- outre : que fait chacun de chacun ?</text>
+
+  <rect x="30" y="46" width="320" height="52" rx="6" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="190" y="66" text-anchor="middle" font-size="10.5" font-weight="600" fill="#334155">Nombres 28,23 : outre la ola du matin</text>
+  <text x="190" y="86" text-anchor="middle" font-size="9.5" fill="#475569">verset general, pas ecrit a propos de Yom Kippour</text>
+
+  <rect x="390" y="46" width="320" height="52" rx="6" fill="#fef9c3" stroke="#d6c98a"/>
+  <text x="550" y="66" text-anchor="middle" font-size="10.5" font-weight="600" fill="#3f3f46">Nombres 29,11 : outre le hatat des expiations</text>
+  <text x="550" y="86" text-anchor="middle" font-size="9.5" fill="#57534e">ecrit a propos de Yom Kippour lui-meme</text>
+
+  <path d="M 190 98 L 190 118" stroke="#64748b" stroke-width="1.5" marker-end="url(#a)"/>
+  <path d="M 550 98 L 550 118" stroke="#64748b" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <rect x="30" y="120" width="320" height="88" rx="6" fill="#eef6ff" stroke="#9cc3ea"/>
+  <text x="190" y="142" text-anchor="middle" font-size="11" font-weight="700" fill="#1d4ed8">Rabbi Akiva</text>
+  <text x="190" y="162" text-anchor="middle" font-size="9.5" fill="#334155">Il en tire l heure : les moussafim montent</text>
+  <text x="190" y="178" text-anchor="middle" font-size="9.5" fill="#334155">avec le tamid du matin.</text>
+  <text x="190" y="198" text-anchor="middle" font-size="9.5" font-style="italic" fill="#1e40af">C est la reponse du seg 2.</text>
+
+  <rect x="390" y="120" width="320" height="88" rx="6" fill="#eef6ff" stroke="#9cc3ea"/>
+  <text x="550" y="142" text-anchor="middle" font-size="11" font-weight="700" fill="#1d4ed8">Rabbi Akiva</text>
+  <text x="550" y="162" text-anchor="middle" font-size="9.5" fill="#334155">Il en tire l ordre : le bouc exterieur</text>
+  <text x="550" y="178" text-anchor="middle" font-size="9.5" fill="#334155">vient apres le hatat interieur.</text>
+  <text x="550" y="198" text-anchor="middle" font-size="9.5" font-style="italic" fill="#1e40af">C est la Tossefta du seg 0.</text>
+
+  <rect x="30" y="224" width="320" height="88" rx="6" fill="#fef2f2" stroke="#e5a3a3"/>
+  <text x="190" y="246" text-anchor="middle" font-size="11" font-weight="700" fill="#b91c1c">Rabbi Eliezer</text>
+  <text x="190" y="266" text-anchor="middle" font-size="9.5" fill="#450a0a">Le verset ne concerne pas Yom Kippour :</text>
+  <text x="190" y="282" text-anchor="middle" font-size="9.5" fill="#450a0a">il s appuie sur l ordre des livres,</text>
+  <text x="190" y="300" text-anchor="middle" font-size="9.5" font-style="italic" fill="#7f1d1d">Torat Cohanim avant Houmach HaPekoudim.</text>
+
+  <rect x="390" y="224" width="320" height="88" rx="6" fill="#fef2f2" stroke="#e5a3a3"/>
+  <text x="550" y="246" text-anchor="middle" font-size="11" font-weight="700" fill="#b91c1c">Rabbi Eliezer</text>
+  <text x="550" y="266" text-anchor="middle" font-size="9.5" fill="#450a0a">Le verset ne dit rien de l ordre : il fixe</text>
+  <text x="550" y="282" text-anchor="middle" font-size="9.5" fill="#450a0a">l etendue de l expiation du bouc exterieur.</text>
+  <text x="550" y="300" text-anchor="middle" font-size="9.5" font-style="italic" fill="#7f1d1d">Ce sur quoi l un expie, l autre expie (Chevouot 2a).</text>
+</svg></div><div class="svg-cap">Les deux versets en milevad et le sort que chaque maitre leur reserve.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבִּי יְהוּדָה אוֹמֵר מִשְּׁמוֹ: אֶחָד קָרֵב עִם תָּמִיד שֶׁל שַׁחַר, וְשִׁשָּׁה עִם תָּמִיד שֶׁל בֵּין הָעַרְבָּיִם. רַבִּי אֶלְעָזָר בְּרַבִּי שִׁמְעוֹן אוֹמֵר מִשְּׁמוֹ: שִׁשָּׁה קְרֵבִין עִם תָּמִיד שֶׁל שַׁחַר, וְאֶחָד עִם תָּמִיד שֶׁל בֵּין הָעַרְבָּיִם.</div>
+            <div class="fr"><p>Rabbi Yehouda dit en son nom : un seul est offert avec le tamid du matin, et six avec le tamid de l apres-midi. Rabbi Elazar be-Rabbi Chimon dit en son nom : six sont offerts avec le tamid du matin, et un avec le tamid de l apres-midi.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִשְּׁמוֹ</b> שֶׁל ר&#x27; עֲקִיבָא:</div>
+          <div class="glose-fr">En son nom -- de Rabbi Akiva.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶחָד</b> מִן שִׁבְעַת כְּבָשִׂים:</div>
+          <div class="glose-fr">Un -- des sept agneaux.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Tossefta continue avec deux autres transmissions de l opinion de Rabbi Akiva. Les deux coupent les <b>sept agneaux</b> du moussaf en deux paquets, mais dans des proportions inverses : 1 et 6 pour Rabbi Yehouda, 6 et 1 pour Rabbi Elazar be-Rabbi Chimon.</p><p>Ces maitres sont ici appeles <b>rabbanim</b> par la guemara, par opposition a Rabbi Akiva lui-meme qui, dans la michna, ne coupait rien du tout.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="360" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Les sept agneaux du moussaf : trois repartitions dans la journee</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.5" fill="#57534e">Tous parlent au nom de Rabbi Akiva ; ils divergent sur la coupure entre matin et apres-midi</text>
+
+  <rect x="24" y="60" width="228" height="264" rx="8" fill="#eef6ff" stroke="#9cc3ea"/>
+  <text x="138" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#1d4ed8">Rabbi Akiva (michna)</text>
+  <text x="138" y="100" text-anchor="middle" font-size="9.5" fill="#475569">Tossefta, seg 2</text>
+  <rect x="42" y="112" width="192" height="52" rx="6" fill="#ffffff" stroke="#9cc3ea"/>
+  <text x="138" y="132" text-anchor="middle" font-size="11" fill="#1e3a8a">Tamid du matin</text>
+  <text x="138" y="152" text-anchor="middle" font-size="18" font-weight="700" fill="#1d4ed8">7 agneaux</text>
+  <rect x="42" y="176" width="192" height="52" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="138" y="196" text-anchor="middle" font-size="11" fill="#64748b">Tamid de l apres-midi</text>
+  <text x="138" y="216" text-anchor="middle" font-size="18" font-weight="700" fill="#94a3b8">0</text>
+  <text x="138" y="252" text-anchor="middle" font-size="9.5" fill="#334155">Un seul verset gouverne :</text>
+  <text x="138" y="268" text-anchor="middle" font-size="9.5" font-style="italic" fill="#1e40af">outre la ola du matin</text>
+  <text x="138" y="290" text-anchor="middle" font-size="9.5" fill="#334155">Tout le moussaf est avance</text>
+  <text x="138" y="306" text-anchor="middle" font-size="9.5" fill="#334155">au plus tot possible.</text>
+
+  <rect x="266" y="60" width="228" height="264" rx="8" fill="#f3eefb" stroke="#c3a9e8"/>
+  <text x="380" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Rabbi Yehouda</text>
+  <text x="380" y="100" text-anchor="middle" font-size="9.5" fill="#475569">au nom de Rabbi Akiva, seg 4 et 6</text>
+  <rect x="284" y="112" width="192" height="52" rx="6" fill="#ffffff" stroke="#c3a9e8"/>
+  <text x="380" y="132" text-anchor="middle" font-size="11" fill="#5b21b6">Tamid du matin</text>
+  <text x="380" y="152" text-anchor="middle" font-size="18" font-weight="700" fill="#7c3aed">1 agneau</text>
+  <rect x="284" y="176" width="192" height="52" rx="6" fill="#ffffff" stroke="#c3a9e8"/>
+  <text x="380" y="196" text-anchor="middle" font-size="11" fill="#5b21b6">Tamid de l apres-midi</text>
+  <text x="380" y="216" text-anchor="middle" font-size="18" font-weight="700" fill="#7c3aed">6 agneaux</text>
+  <text x="380" y="252" text-anchor="middle" font-size="9.5" fill="#4c1d95">Le minimum le matin :</text>
+  <text x="380" y="268" text-anchor="middle" font-size="9.5" font-style="italic" fill="#6d28d9">houlcha -- crainte de l epuisement</text>
+  <text x="380" y="290" text-anchor="middle" font-size="9.5" fill="#4c1d95">Il faut garder ses forces pour</text>
+  <text x="380" y="306" text-anchor="middle" font-size="9.5" fill="#4c1d95">le service du jour, coeur de l expiation.</text>
+
+  <rect x="508" y="60" width="228" height="264" rx="8" fill="#dcfce7" stroke="#9cc6a0"/>
+  <text x="622" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">R. Elazar be-R. Chimon</text>
+  <text x="622" y="100" text-anchor="middle" font-size="9.5" fill="#475569">au nom de Rabbi Akiva, seg 4 et 7</text>
+  <rect x="526" y="112" width="192" height="52" rx="6" fill="#ffffff" stroke="#9cc6a0"/>
+  <text x="622" y="132" text-anchor="middle" font-size="11" fill="#14532d">Tamid du matin</text>
+  <text x="622" y="152" text-anchor="middle" font-size="18" font-weight="700" fill="#166534">6 agneaux</text>
+  <rect x="526" y="176" width="192" height="52" rx="6" fill="#ffffff" stroke="#9cc6a0"/>
+  <text x="622" y="196" text-anchor="middle" font-size="11" fill="#14532d">Tamid de l apres-midi</text>
+  <text x="622" y="216" text-anchor="middle" font-size="18" font-weight="700" fill="#166534">1 agneau</text>
+  <text x="622" y="252" text-anchor="middle" font-size="9.5" fill="#14532d">Le maximum le matin :</text>
+  <text x="622" y="268" text-anchor="middle" font-size="9.5" font-style="italic" fill="#166534">pecha -- crainte du relachement</text>
+  <text x="622" y="290" text-anchor="middle" font-size="9.5" fill="#14532d">Pas de crainte de faiblesse :</text>
+  <text x="622" y="306" text-anchor="middle" font-size="9.5" fill="#14532d">pour le service du jour il est zeriz.</text>
+
+  <text x="380" y="346" text-anchor="middle" font-size="9.5" font-style="italic" fill="#57534e">Les deux derniers avis coupent parce que deux versets se contredisent ; Rabbi Akiva lui-meme ne coupe pas.</text>
+</svg></div><div class="svg-cap">Les trois repartitions des sept agneaux, toutes rapportees au nom de Rabbi Akiva.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאי טַעְמַייְהוּ דְּרַבָּנָן? תְּרֵי קְרָאֵי כְּתִיבִי. כְּתִיב: ״מִלְּבַד עוֹלַת הַבָּקָר״, וּכְתִיב: ״וְיָצָא וְעָשָׂה אֶת עֹולָתוֹ״, הִלְכָּךְ, עָבֵיד מִנַּייְהוּ הָכָא וּמָנַיְיהוּ הָכָא.</div>
+            <div class="fr"><p>Quelle est la raison des rabbanim ? Deux versets sont ecrits.</p><p>Il est ecrit : outre la ola du matin ; et il est ecrit : et il sortira et fera son ola. Donc il en fait une partie ici et une partie la.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La coupure ne vient pas d une commodite pratique mais d une <b>contradiction textuelle</b>. Nombres 28,23 rattache les moussafim au matin ; Levitique 16,24 -- <i>et il sortira et fera son ola et l ola du peuple</i> -- les place apres le service interieur, donc l apres-midi.</p><p>La regle de resolution est classique : quand deux versets tirent en sens contraire sans que l un annule l autre, on <b>honore les deux</b> en partageant l objet. D ou : une partie des agneaux le matin, une partie le soir.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 268" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="268" fill="#fffdf8"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#64748b"/></marker></defs>
+  <text x="360" y="26" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1c1917">Pourquoi couper les agneaux en deux : deux versets tirent en sens contraire</text>
+
+  <rect x="34" y="46" width="292" height="70" rx="6" fill="#eef6ff" stroke="#9cc3ea"/>
+  <text x="180" y="68" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1d4ed8">Nombres 28,23</text>
+  <text x="180" y="88" text-anchor="middle" font-size="9.5" font-style="italic" fill="#334155">outre la ola du matin</text>
+  <text x="180" y="106" text-anchor="middle" font-size="9.5" fill="#334155">Tire vers le MATIN</text>
+
+  <rect x="394" y="46" width="292" height="70" rx="6" fill="#fef6ee" stroke="#eabf9c"/>
+  <text x="540" y="68" text-anchor="middle" font-size="10.5" font-weight="700" fill="#c2410c">Levitique 16,24</text>
+  <text x="540" y="88" text-anchor="middle" font-size="9.5" font-style="italic" fill="#334155">et il sortira et fera son ola et l ola du peuple</text>
+  <text x="540" y="106" text-anchor="middle" font-size="9.5" fill="#334155">Tire vers l APRES-MIDI</text>
+
+  <path d="M 180 116 L 320 146" stroke="#64748b" stroke-width="1.5" marker-end="url(#a)"/>
+  <path d="M 540 116 L 400 146" stroke="#64748b" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <rect x="180" y="156" width="360" height="56" rx="6" fill="#dcfce7" stroke="#9cc6a0"/>
+  <text x="360" y="178" text-anchor="middle" font-size="11" font-weight="700" fill="#166534">Solution des rabbanim : on satisfait les deux</text>
+  <text x="360" y="198" text-anchor="middle" font-size="9.5" fill="#14532d">une partie des agneaux le matin, une partie l apres-midi</text>
+
+  <text x="360" y="240" text-anchor="middle" font-size="9.5" fill="#57534e">Reste alors une seule question : ou passe la coupure ? -- 1 et 6, ou 6 et 1.</text>
+  <text x="360" y="256" text-anchor="middle" font-size="9.5" font-style="italic" fill="#57534e">Rabbi Akiva, lui, n a pas ce probleme : pour lui tout monte le matin.</text>
+</svg></div><div class="svg-cap">Deux versets contraires, une seule solution : partager les agneaux entre les deux moments.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בְּמַאי קָא מִיפַּלְגִי? רַבִּי יְהוּדָה סָבַר: עֲבִיד חַד כְּדִכְתִיב: ״מִלְּבַד עוֹלַת הַבָּקָר״, וַהֲדַר עָבֵיד עֲבוֹדַת הַיּוֹם — דִּילְמָא חֻולְשָׁא חָלֵישׁ כֹּהֵן גָּדוֹל.</div>
+            <div class="fr"><p>Sur quoi divergent-ils ? Rabbi Yehouda tient : il en fait un, selon ce qui est ecrit -- outre la ola du matin -- puis il accomplit le service du jour, car peut-etre le cohen gadol (grand pretre) s affaiblirait-il.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>עָבֵיד חַד</b> כְּדִכְתִיב מִלְּבַד עוֹלַת הַבֹּקֶר לִסְמֹוךְ מִקְצָת הַמּוּסָפִין לְעוֹלַת הַתָּמִיד:</div>
+          <div class="glose-fr">Il en fait un -- comme il est ecrit outre la ola du matin, afin de joindre une partie des moussafim a la ola du tamid.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וַהֲדַר עָבֵיד עֲבוֹדַת הַיּוֹם</b> דְּאִי אָמְרַתְּ כָּל הַמּוּסָפִין יַקְרִיב עִם תָּמִיד שֶׁל שַׁחַר דִּילְמָא חֲלִישׁ וְלָא מָצֵי לְמֶיעְבַּד עֲבוֹדַת הַיּוֹם וְהוּא עִיקַּר הַכַּפָּרָה:</div>
+          <div class="glose-fr">Puis il accomplit le service du jour -- car si tu dis qu il offrira tous les moussafim avec le tamid du matin, peut-etre s affaiblira-t-il et ne pourra-t-il plus accomplir le service du jour, qui est l essentiel de l expiation.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabbi Yehouda part d une crainte physique : la <b>houlcha</b>, l epuisement. Le service du jour -- l entree au Saint des Saints avec l encens et le sang -- ne peut etre accompli par personne d autre, et sans lui il n y a pas d expiation. On ne charge donc pas le cohen gadol avant.</p><p>Un seul agneau le matin suffit a satisfaire <i>milevad olat haboker</i> : il suffit qu une part du moussaf soit <b>jointe</b> a la ola du tamid, comme le precise Rachi.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 296" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="296" fill="#fffdf8"/>
+  <text x="360" y="26" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1c1917">Deux craintes opposees pour le cohen gadol</text>
+  <text x="360" y="45" text-anchor="middle" font-size="10" fill="#57534e">Le meme homme, la meme journee -- mais on ne redoute pas la meme defaillance</text>
+
+  <rect x="30" y="60" width="316" height="200" rx="8" fill="#f3eefb" stroke="#c3a9e8"/>
+  <text x="188" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed">Rabbi Yehouda : un seul le matin</text>
+  <rect x="50" y="96" width="276" height="40" rx="5" fill="#ffffff" stroke="#c3a9e8"/>
+  <text x="188" y="112" text-anchor="middle" font-size="10" font-weight="600" fill="#4c1d95">Crainte : houlcha</text>
+  <text x="188" y="128" text-anchor="middle" font-size="9.5" fill="#4c1d95">l epuisement physique</text>
+  <text x="188" y="158" text-anchor="middle" font-size="9.5" fill="#4c1d95">S il offrait tout le moussaf le matin,</text>
+  <text x="188" y="174" text-anchor="middle" font-size="9.5" fill="#4c1d95">il risquerait de ne plus pouvoir accomplir</text>
+  <text x="188" y="190" text-anchor="middle" font-size="9.5" fill="#4c1d95">le service du jour -- que nul ne peut faire</text>
+  <text x="188" y="206" text-anchor="middle" font-size="9.5" fill="#4c1d95">a sa place, et qui est le coeur de l expiation.</text>
+  <text x="188" y="234" text-anchor="middle" font-size="9.5" font-style="italic" fill="#6d28d9">Donc : le strict minimum le matin,</text>
+  <text x="188" y="250" text-anchor="middle" font-size="9.5" font-style="italic" fill="#6d28d9">juste de quoi honorer outre la ola du matin.</text>
+
+  <rect x="374" y="60" width="316" height="200" rx="8" fill="#dcfce7" stroke="#9cc6a0"/>
+  <text x="532" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">R. Elazar be-R. Chimon : six le matin</text>
+  <rect x="394" y="96" width="276" height="40" rx="5" fill="#ffffff" stroke="#9cc6a0"/>
+  <text x="532" y="112" text-anchor="middle" font-size="10" font-weight="600" fill="#14532d">Crainte : pecha</text>
+  <text x="532" y="128" text-anchor="middle" font-size="9.5" fill="#14532d">le relachement, la negligence</text>
+  <text x="532" y="158" text-anchor="middle" font-size="9.5" fill="#14532d">Ce qui est repousse a plus tard risque</text>
+  <text x="532" y="174" text-anchor="middle" font-size="9.5" fill="#14532d">de ne pas etre fait du tout. Puisqu il a</text>
+  <text x="532" y="190" text-anchor="middle" font-size="9.5" fill="#14532d">commence, qu il aille au bout de ce qu il peut.</text>
+  <text x="532" y="206" text-anchor="middle" font-size="9.5" fill="#14532d">Et la faiblesse ? Pour le service du jour</text>
+  <text x="532" y="222" text-anchor="middle" font-size="9.5" fill="#14532d">il est zeriz -- il retrouve ses forces.</text>
+  <text x="532" y="250" text-anchor="middle" font-size="9.5" font-style="italic" fill="#166534">Donc : le maximum le matin, en gardant un seul agneau.</text>
+
+  <text x="360" y="284" text-anchor="middle" font-size="9.5" fill="#57534e">Aucun des deux ne va jusqu au bout : il faut toujours laisser quelque chose au soir, car les moussafim sont ecrits en dernier.</text>
+</svg></div><div class="svg-cap">Houlcha contre pecha : deux craintes opposees, deux repartitions inverses.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַבִּי אֶלְעָזָר בְּרַבִּי שִׁמְעוֹן סָבַר: כֵּיוָן דְּאַתְחִיל — עֲבִיד שִׁשָּׁה, דִּילְמָא פָּשַׁע. דִּלְגַבֵּי עֲבוֹדַת הַיּוֹם — זָרִיז הוּא.</div>
+            <div class="fr"><p>Et Rabbi Elazar be-Rabbi Chimon tient : puisqu il a commence, qu il en fasse six, car peut-etre serait-il negligent ; quant au service du jour, il est zeriz (empresse, vigoureux).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דִּילְמָא פָּשַׁע</b> וְלָא עֲבִיד לְהוּ אַחַר עֲבוֹדַת הַיּוֹם וּלְמַאי דְּחָיְישַׁתְּ דִּילְמָא חֲלִישׁ לֵיכָּא לְמֵיחַשׁ דִּלְגַבֵּי עֲבוֹדַת הַיּוֹם זָרִיז הוּא וּמַחֲלִיף כֹּחַ וְכֻולְּהוּ מוּסָפִין לָא עֲבִיד דְּתוֹרַת כֹּהֲנִים קָדִים וְצָרִיךְ לְקַיֵּים זוֹ וְזוֹ סֵדֶר הַכָּתוּב וּמִדְרְשֵׁי הַמִּקְרָאוֹת:</div>
+          <div class="glose-fr">Peut-etre serait-il negligent -- et ne les ferait-il pas apres le service du jour. Et quant a ce que tu crains, qu il s affaiblisse, il n y a pas lieu de le craindre : a l egard du service du jour il est zeriz et il renouvelle ses forces. Et il n accomplit pas non plus tous les moussafim, car Torat Cohanim a la priorite, et il faut satisfaire l un et l autre : l ordre de l Ecriture et les expositions des versets.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La crainte s inverse. Ce n est plus le corps qui inquiete mais la volonte : la <b>pecha</b>, le relachement qui fait remettre a plus tard et finalement omettre. Puisque le cohen gadol a commence les agneaux, qu il aille au bout de ce qu il peut.</p><p>Et l epuisement ? Il est neutralise par un principe de tenue : pour le service du jour, le cohen gadol est <b>zeriz</b> -- il retrouve ses forces devant l enjeu. Rachi ajoute la limite : il n offre pas pour autant <i>tous</i> les moussafim, car Torat Cohanim garde sa priorite ; il faut satisfaire a la fois l ordre du texte et les derashot des versets.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">דְּכֻולֵּי עָלְמָא מִיהַת, חַד אַיִל הוּא. כְּמַאן — כְּרַבִּי. דְּתַנְיָא, רַבִּי אוֹמֵר: אַיִל אֶחָד הָאָמוּר כָּאן, הוּא הָאָמוּר בְּחֹומֶשׁ הַפְּקוּדִים. רַבִּי אֶלְעָזָר בְּרַבִּי שִׁמְעוֹן אוֹמֵר: שְׁנֵי אֵילִים הֵן, אֶחָד הָאָמוּר כָּאן, וְאֶחָד הָאָמוּר בְּחֹומֶשׁ הַפְּקוּדִים.</div>
+            <div class="fr"><p>Pour tout le monde, en tout cas, il n y a qu un seul belier. Selon qui ?</p><p>Selon Rabbi. Car il est enseigne : Rabbi dit -- le un belier mentionne ici est celui qui est mentionne dans Houmach HaPekoudim.</p><p>Rabbi Elazar be-Rabbi Chimon dit : ce sont deux beliers, l un mentionne ici et l autre mentionne dans Houmach HaPekoudim.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּכֻולֵּי עָלְמָא מִיהָא</b> בֵּין לְר&#x27; אֱלִיעֶזֶר בֵּין לְר&#x27; עֲקִיבָא חַד אַיִל הוּא דְּצִיבּוּר דְּכוּלְּהוּ אָמְרִי אֵיל הָעָם וְלָא אַיְירֵי בְּאֵיל הַכָּתוּב בְּחֻומַּשׁ הַפְּקוּדִים כְּלָל:</div>
+          <div class="glose-fr">Pour tout le monde, en tout cas -- que ce soit pour Rabbi Eliezer ou pour Rabbi Akiva, il n y a qu un seul belier de la communaute, car tous disent le belier du peuple et il n est nullement question du belier ecrit dans Houmach HaPekoudim.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָאָמוּר כָּאן</b> בְּתוֹרַת כֹּהֲנִים וְאַיִל אֶחָד לְעוֹלָה:</div>
+          <div class="glose-fr">Mentionne ici -- dans Torat Cohanim : et un belier en ola.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּכֻולֵּי עָלְמָא מִיהַת חַד אַיִל הוּא כְּמַאן כְּרַבִּי</b> וְאַף עַל גַּב דְּרַבִּי אֶלְעָזָר בְּרַבִּי שִׁמְעוֹן נָמֵי אַיְירֵי בַּבָּרַייְתָא דִּלְעֵיל וּמַשְׁמַע דְּמוֹדֶה לְתַנָּא קַמָּא דְּאָמַר אֵילוֹ וְאֵיל הָעָם דְּמַשְׁמַע דְּלָא הָוֵי אֶלָּא חַד אַיִל יֵשׁ לוֹמַר דְּוַדַּאי מוֹדֶה לְתַנָּא קַמָּא דִּלְרַבִּי עֲקִיבָא לָא הֲוָה אֶלָּא חַד אַיִל דְּרַבִּי אֶלְעָזָר בְּר&quot;ש דְּבָרַיְיתָא מַשְׁמַע דְּאַלִּיבָּא דְּרַבִּי עֲקִיבָא קָאָמַר אֲבָל אַלִּיבָּא דְּנַפְשֵׁיהּ שְׁנֵי אֵילִים הֵן:</div>
+          <div class="glose-fr">Pour tout le monde en tout cas il n y a qu un seul belier ; selon qui ? Selon Rabbi -- et bien que Rabbi Elazar be-Rabbi Chimon figure lui aussi dans la baraita citee plus haut, ce qui laisse entendre qu il concede au tana kama disant son belier et le belier du peuple, formule impliquant un seul belier -- on peut dire qu il concede certes au tana kama que, selon Rabbi Akiva, il n y avait qu un seul belier : car le Rabbi Elazar be-Rabbi Chimon de la baraita parle manifestement selon l opinion de Rabbi Akiva. Mais selon sa propre opinion, ce sont deux beliers.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara releve un <b>presuppose commun</b> a toutes les opinions precedentes : elles parlent toutes du <i>belier du peuple</i> au singulier, sans jamais compter separement le belier des Nombres. Cela n est possible que si les deux versets designent une seule bete -- l opinion de <b>Rabbi</b> (Rabbi Yehouda HaNassi).</p><p>Rabbi Elazar be-Rabbi Chimon, lui, en compte deux : un pour le service du jour (Levitique 16,3) et un pour le moussaf (Nombres 29,8). Tossefot leve la difficulte : dans la baraita precedente, il parlait selon l opinion de Rabbi Akiva, pas selon la sienne.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 336" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="336" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Le belier du peuple : un seul, ou deux ?</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.5" fill="#57534e">Deux versets mentionnent un belier ; toute la question est de savoir s ils designent la meme bete</text>
+
+  <rect x="150" y="58" width="200" height="48" rx="6" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="250" y="78" text-anchor="middle" font-size="10.5" font-weight="600" fill="#334155">Levitique 16,3</text>
+  <text x="250" y="96" text-anchor="middle" font-size="9.5" fill="#475569">et un belier en ola</text>
+  <rect x="410" y="58" width="200" height="48" rx="6" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="510" y="78" text-anchor="middle" font-size="10.5" font-weight="600" fill="#334155">Nombres 29,8</text>
+  <text x="510" y="96" text-anchor="middle" font-size="9.5" fill="#475569">un taureau, un belier, sept agneaux</text>
+
+  <rect x="40" y="128" width="330" height="182" rx="8" fill="#dcfce7" stroke="#9cc6a0"/>
+  <text x="205" y="150" text-anchor="middle" font-size="12.5" font-weight="700" fill="#166534">Rabbi -- un seul belier</text>
+  <text x="205" y="170" text-anchor="middle" font-size="10" fill="#14532d">Le belier du Levitique est celui des Nombres.</text>
+  <text x="205" y="192" text-anchor="middle" font-size="10" fill="#14532d">Preuve : le mot ehad -- un.</text>
+  <text x="205" y="208" text-anchor="middle" font-size="10" fill="#14532d">Un veut dire un, pas deux.</text>
+  <text x="205" y="234" text-anchor="middle" font-size="10" fill="#14532d">Et d ou vient alors l exigence</text>
+  <text x="205" y="250" text-anchor="middle" font-size="10" fill="#14532d">d une bete de choix ?</text>
+  <text x="205" y="272" text-anchor="middle" font-size="10" font-style="italic" fill="#166534">De mivhar nedarekhem -- le choix de tes voeux</text>
+  <text x="205" y="288" text-anchor="middle" font-size="10" fill="#14532d">(Deuteronome 12,11), qui vaut pour tout.</text>
+
+  <rect x="392" y="128" width="330" height="182" rx="8" fill="#f3eefb" stroke="#c3a9e8"/>
+  <text x="557" y="150" text-anchor="middle" font-size="12.5" font-weight="700" fill="#7c3aed">R. Elazar be-R. Chimon -- deux beliers</text>
+  <text x="557" y="170" text-anchor="middle" font-size="10" fill="#4c1d95">Un pour le service du jour, un pour le moussaf.</text>
+  <text x="557" y="192" text-anchor="middle" font-size="10" fill="#4c1d95">Alors que fait-il de ehad ?</text>
+  <text x="557" y="208" text-anchor="middle" font-size="10" font-style="italic" fill="#6d28d9">meyouhad che-be-edro -- le plus choisi du troupeau.</text>
+  <text x="557" y="234" text-anchor="middle" font-size="10" fill="#4c1d95">Il a donc deux sources pour la qualite :</text>
+  <text x="557" y="250" text-anchor="middle" font-size="10" fill="#4c1d95">ehad pour l offrande obligatoire (hova),</text>
+  <text x="557" y="266" text-anchor="middle" font-size="10" fill="#4c1d95">mivhar nedarekhem pour la volontaire (nedava).</text>
+  <text x="557" y="290" text-anchor="middle" font-size="10" font-style="italic" fill="#6d28d9">Et les deux sont necessaires -- tsrikhi.</text>
+
+  <path d="M 250 106 L 205 128" stroke="#166534" stroke-width="1.4" fill="none"/>
+  <path d="M 510 106 L 557 128" stroke="#7c3aed" stroke-width="1.4" fill="none"/>
+</svg></div><div class="svg-cap">Un belier ou deux : les deux versets, les deux comptes, et le partage des derashot.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאי טַעְמָא דְּרַבִּי? דִּכְתִיב: ״אֶחָד״. וְרַבִּי אֶלְעָזָר בְּרַבִּי שִׁמְעוֹן, מַאי ״אֶחָד״? מְיֻוחָד שֶׁבְּעֶדְרוֹ.</div>
+            <div class="fr"><p>Quelle est la raison de Rabbi ? Car il est ecrit : un.</p><p>Et Rabbi Elazar be-Rabbi Chimon, que fait-il de ce un ? Le plus distingue de son troupeau.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le mot <b>ehad</b> (un) est le point d appui de Rabbi : un veut dire un, donc un seul belier pour les deux versets.</p><p>Rabbi Elazar be-Rabbi Chimon retourne le mot : <b>ehad</b> ne compte pas, il qualifie. Il signifie <i>meyouhad che-be-edro</i> -- l unique, le plus choisi de son troupeau. Meme procede qu ailleurs dans le Talmud : un mot de nombre relu comme un mot d excellence.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַבִּי? נָפְקָא לֵיהּ: מִ״מִבְחַר נְדָרֶיךָ״. וְרַבִּי אֶלְעָזָר בְּרַבִּי שִׁמְעוֹן? חַד בְּחוֹבָה, וְחַד בִּנְדָבָה. וּצְרִיכִי.</div>
+            <div class="fr"><p>Et Rabbi ? Il le deduit du verset : le choix de tes voeux.</p><p>Et Rabbi Elazar be-Rabbi Chimon ? L un porte sur l offrande obligatoire, l autre sur l offrande volontaire.</p><p>Et les deux sont necessaires.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּצְרִיכִי</b> שֶׁיֵּשׁ דַּעַת נוֹטָה לוֹמַר נְדָבָה מֻובְחֶרֶת כְּדֵי שֶׁתְּהֵא מְקֻובֶּלֶת בְּרָצוֹן וְיֵשׁ דַּעַת נוֹטָה לוֹמַר חוֹבָה תְּהֵא מֻובְחֶרֶת כְּדֵי שֶׁיֵּצֵא יְדֵי חוֹבָתוֹ יָפֶה:</div>
+          <div class="glose-fr">Et les deux sont necessaires -- car il y a un raisonnement qui incline a dire que l offrande volontaire doit etre de premier choix, afin qu elle soit agreee avec faveur ; et il y a un raisonnement qui incline a dire que c est l offrande obligatoire qui doit etre de premier choix, afin qu il s acquitte pleinement de son obligation.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Si <b>ehad</b> signifie seulement <i>un</i> chez Rabbi, d ou tire-t-il l exigence d une bete de premier choix ? De <i>mivhar nedarekhem</i> -- le choix de tes voeux (Deuteronome 12,11), regle generale valant pour toutes les offrandes.</p><p>Rabbi Elazar be-Rabbi Chimon a donc deux sources pour une seule exigence : il les repartit. <b>Ehad</b> vaut pour la <b>hova</b> (l offrande obligatoire), <i>mivhar nedarekhem</i> pour la <b>nedava</b> (l offrande volontaire). Et il conclut par <b>tsrikhi</b> -- les deux sont indispensables, aucune ne se deduit de l autre : chacune a son argument propre, comme l explique Rachi.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">קִידֵּשׁ יָדָיו וְרַגְלָיו. תָּנוּ רַבָּנַן: ״וּבָא אַהֲרֹן אֶל אֹהֶל מוֹעֵד״. לָמָּה הוּא בָּא? לְהוֹצִיא אֶת הַכַּף וְאֶת הַמַּחְתָּה,</div>
+            <div class="fr"><p>Il sanctifia ses mains et ses pieds (citation de la michna). Nos maitres ont enseigne : et Aharon viendra a la tente d assignation.</p><p>Pourquoi vient-il ? Pour sortir la coupe et l encensoir,</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Retour a la michna de 70a, au moment de la <b>quatrieme immersion</b> : le cohen gadol sanctifie mains et pieds, se devet, s immerge, revet les habits de lin et entre au Saint des Saints. Une baraita s ouvre alors sur le verset qui decrit cette entree, Levitique 16,23 : <i>et Aharon viendra a la tente d assignation</i>.</p><p>La question <b>lama hou ba</b> -- pourquoi vient-il ? -- est une question de fond : le verset semble annoncer un service, alors qu il n y en a plus. Reponse : cette entree n a d autre objet que de <b>retirer la coupe et l encensoir</b> laisses le matin. La demonstration, qui etablira que toute la section a ete dite dans l ordre, se poursuit au amud suivant.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="250" fill="#fffdf8"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#64748b"/></marker></defs>
+  <text x="360" y="26" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1c1917">La quatrieme immersion : une entree pour une seule chose</text>
+
+  <rect x="26" y="46" width="150" height="62" rx="6" fill="#fef9c3" stroke="#d6c98a"/>
+  <text x="101" y="70" text-anchor="middle" font-size="10" fill="#3f3f46">Le matin, service</text>
+  <text x="101" y="86" text-anchor="middle" font-size="10" fill="#3f3f46">du Saint des Saints :</text>
+  <text x="101" y="102" text-anchor="middle" font-size="9.5" font-style="italic" fill="#a16207">coupe et encensoir laisses la</text>
+
+  <path d="M 176 77 L 210 77" stroke="#64748b" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <rect x="212" y="46" width="150" height="62" rx="6" fill="#eef6ff" stroke="#9cc3ea"/>
+  <text x="287" y="70" text-anchor="middle" font-size="10" fill="#0c2a5e">Vetements d or,</text>
+  <text x="287" y="86" text-anchor="middle" font-size="10" fill="#0c2a5e">beliers et moussafim</text>
+  <text x="287" y="102" text-anchor="middle" font-size="9.5" font-style="italic" fill="#1e40af">3e immersion</text>
+
+  <path d="M 362 77 L 396 77" stroke="#64748b" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <rect x="398" y="46" width="150" height="62" rx="6" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="473" y="70" text-anchor="middle" font-size="10" fill="#334155">Kidouch mains et pieds,</text>
+  <text x="473" y="86" text-anchor="middle" font-size="10" fill="#334155">immersion, habits de lin</text>
+  <text x="473" y="102" text-anchor="middle" font-size="9.5" font-style="italic" fill="#475569">4e immersion</text>
+
+  <path d="M 548 77 L 582 77" stroke="#64748b" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <rect x="584" y="46" width="112" height="62" rx="6" fill="#dcfce7" stroke="#9cc6a0"/>
+  <text x="640" y="70" text-anchor="middle" font-size="10" fill="#14532d">Il entre et sort</text>
+  <text x="640" y="86" text-anchor="middle" font-size="10" fill="#14532d">la coupe et</text>
+  <text x="640" y="102" text-anchor="middle" font-size="10" fill="#14532d">l encensoir</text>
+
+  <rect x="80" y="140" width="560" height="80" rx="8" fill="#fef6ee" stroke="#eabf9c"/>
+  <text x="360" y="164" text-anchor="middle" font-size="11" font-weight="700" fill="#c2410c">La question de la baraita</text>
+  <text x="360" y="186" text-anchor="middle" font-size="10" fill="#334155">Et Aharon viendra a la tente d assignation (Levitique 16,23) -- pourquoi vient-il ?</text>
+  <text x="360" y="206" text-anchor="middle" font-size="10" font-style="italic" fill="#9a3412">Reponse : pour rien d autre que sortir la coupe et l encensoir. Rien de neuf ne s y accomplit.</text>
+</svg></div><div class="svg-cap">La quatrieme immersion : une entree entiere consacree a la seule sortie de la coupe et de l encensoir.</div></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_70a.html">&lsaquo; Yoma 70a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

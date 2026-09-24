@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yoma 33b -- La geographie du Heikhal et l&#x27;arithmetique des &amp;quot;boker&amp;quot;</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Yoma 33b -- La geographie du Heikhal et l&#x27;arithmetique des &amp;quot;boker&amp;quot;</h1>
+    <div class="ref">Yoma 33b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_33a.html">&lsaquo; Yoma 33a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> Ce amud acheve la justification du seder d&#x27;Abaye commence en 33a. Il s&#x27;ouvre sur une raison purement spatiale : si le deblaiement de l&#x27;autel d&#x27;or precede l&#x27;entretien des lampes, c&#x27;est que l&#x27;autel, centre mais tire vers l&#x27;est, est le premier objet que rencontre le kohen entrant dans le Heikhal -- et s&#x27;il est tire vers l&#x27;est, c&#x27;est pour ne pas s&#x27;interposer entre la table et la menora, que le verset veut &amp;quot;l&#x27;une face a l&#x27;autre&amp;quot;.</p><p>Rava en tire aussitot une application quotidienne : les tefillin du bras avant ceux de la tete, puisque c&#x27;est le bras que la main rencontre d&#x27;abord. Le corps du daf est ensuite une comptabilite serree : les deux &amp;quot;boker&amp;quot; devenus superflus chez les buches sont replaces, l&#x27;un sur l&#x27;entretien de cinq lampes, l&#x27;autre sur le sang du tamid, ce qui produit l&#x27;ordre 5 lampes / sang / 2 lampes.</p><p>Rav Papa propose une autre repartition, arithmetiquement aussi valable ; Abaye la refute par une contrainte exterieure -- il ne resterait plus rien pour separer les cinq lampes des deux -- objection qui ne mord vraiment que selon Rabbi Yohanan, pour qui &amp;quot;boker boker&amp;quot; impose deux matins reellement distincts. Le daf se clot sur les derniers maillons : deux lampes avant la ketoret, ketoret avant les membres, membres avant la minha.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="440" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Plan du Heikhal -- vue de dessus (le nord en haut, l'entree a l'est)</text>
+  <text x="380" y="43" text-anchor="middle" font-size="10.4" fill="#57534e">Le kohen entre par l'est : l'autel d'or, tire vers l'exterieur, est le premier objet qu'il rencontre</text>
+
+  <!-- enceinte du Heikhal -->
+  <rect x="110" y="70" width="520" height="280" rx="3" fill="#fffbf2" stroke="#8a7f6d" stroke-width="2"/>
+  <!-- mur ouest : parokhet -->
+  <rect x="110" y="70" width="12" height="280" fill="#c4b5a0"/>
+  <text x="88" y="215" text-anchor="middle" font-size="9.6" fill="#57534e" transform="rotate(-90 88 215)">Parokhet -- Kodech ha-Kodachim</text>
+  <!-- ouverture est -->
+  <rect x="624" y="70" width="6" height="80" fill="#8a7f6d"/>
+  <rect x="624" y="270" width="6" height="80" fill="#8a7f6d"/>
+  <text x="672" y="205" text-anchor="middle" font-size="9.6" fill="#57534e" transform="rotate(-90 672 205)">Petah ha-Heikhal (est)</text>
+
+  <text x="370" y="61" text-anchor="middle" font-size="10.6" font-weight="700" fill="#78716c">NORD (tsafon)</text>
+  <text x="370" y="371" text-anchor="middle" font-size="10.6" font-weight="700" fill="#78716c">SUD (darom)</text>
+
+  <!-- table, au nord -->
+  <rect x="300" y="105" width="86" height="26" rx="3" fill="#fef3c7" stroke="#d6bb77" stroke-width="1.4"/>
+  <text x="343" y="122" text-anchor="middle" font-size="10.4" font-weight="700" fill="#78350f">Choulhan</text>
+  <text x="343" y="97" text-anchor="middle" font-size="9" fill="#92400e">table du lehem ha-panim</text>
+
+  <!-- menora, au sud -->
+  <rect x="300" y="289" width="86" height="26" rx="3" fill="#fef3c7" stroke="#d6bb77" stroke-width="1.4"/>
+  <text x="343" y="306" text-anchor="middle" font-size="10.4" font-weight="700" fill="#78350f">Menora</text>
+  <text x="343" y="331" text-anchor="middle" font-size="9" fill="#92400e">les sept lampes</text>
+
+  <!-- cotes 2 amot 1/2 -->
+  <line x1="262" y1="70" x2="262" y2="105" stroke="#a8a29e" stroke-width="1"/>
+  <line x1="256" y1="70" x2="268" y2="70" stroke="#a8a29e" stroke-width="1"/>
+  <line x1="256" y1="105" x2="268" y2="105" stroke="#a8a29e" stroke-width="1"/>
+  <text x="252" y="92" text-anchor="end" font-size="9.4" fill="#57534e">2 amot 1/2</text>
+  <line x1="262" y1="315" x2="262" y2="350" stroke="#a8a29e" stroke-width="1"/>
+  <line x1="256" y1="315" x2="268" y2="315" stroke="#a8a29e" stroke-width="1"/>
+  <line x1="256" y1="350" x2="268" y2="350" stroke="#a8a29e" stroke-width="1"/>
+  <text x="252" y="337" text-anchor="end" font-size="9.4" fill="#57534e">2 amot 1/2</text>
+
+  <!-- ligne de vue table <-> menora -->
+  <line x1="343" y1="131" x2="343" y2="289" stroke="#0d9488" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="352" y="205" font-size="9.6" font-weight="700" fill="#0f766e">nokhah ha-choulhan</text>
+  <text x="352" y="219" font-size="9" fill="#0f766e">elles doivent se voir : rien ne s'interpose</text>
+
+  <!-- autel d'or, centre mais tire vers l'est -->
+  <rect x="452" y="183" width="68" height="54" rx="4" fill="#eff6ff" stroke="#5f8ac0" stroke-width="1.6"/>
+  <text x="486" y="204" text-anchor="middle" font-size="10" font-weight="700" fill="#1e3a5f">Mizbeah</text>
+  <text x="486" y="217" text-anchor="middle" font-size="10" font-weight="700" fill="#1e3a5f">ha-zahav</text>
+  <text x="486" y="229" text-anchor="middle" font-size="8.6" fill="#3b5f8a">autel d'or</text>
+  <text x="486" y="256" text-anchor="middle" font-size="9" fill="#3b5f8a">centre entre nord et sud...</text>
+  <text x="486" y="268" text-anchor="middle" font-size="9" fill="#3b5f8a">...mais mouchakh kelapei houts</text>
+  <text x="486" y="280" text-anchor="middle" font-size="9" fill="#3b5f8a">(tire un peu vers l'est)</text>
+
+  <!-- axe centre -->
+  <line x1="122" y1="210" x2="452" y2="210" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 5"/>
+  <text x="150" y="204" font-size="8.6" fill="#94a3b8">axe median nord-sud</text>
+
+  <!-- entree du kohen -->
+  <line x1="716" y1="210" x2="534" y2="210" stroke="#b45309" stroke-width="2" marker-end="url(#ar33b)"/>
+  <text x="700" y="196" text-anchor="end" font-size="10" font-weight="700" fill="#b45309">le kohen entre</text>
+  <text x="700" y="233" text-anchor="end" font-size="9" fill="#b45309">il croise l'autel avant la menora</text>
+  <defs>
+    <marker id="ar33b" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto">
+      <path d="M0 0 L9 4 L0 8 z" fill="#b45309"/>
+    </marker>
+  </defs>
+
+  <rect x="110" y="392" width="520" height="34" rx="5" fill="#f5f5f4" stroke="#d6d3d1" stroke-width="1"/>
+  <text x="370" y="406" text-anchor="middle" font-size="9.8" fill="#44403c">Ein maavirin al ha-mitsvot : puisque l'autel est rencontre en premier, son dichoun (deblaiement des cendres)</text>
+  <text x="370" y="419" text-anchor="middle" font-size="9.8" fill="#44403c">passe avant l'entretien des lampes -- c'est la geographie du Heikhal qui fixe l'ordre du service.</text>
+</svg></div>
+          <figcaption>Le mobilier du Heikhal : table au nord, menora au sud, autel d&#x27;or au centre mais decale vers l&#x27;est -- c&#x27;est ce decalage qui le place en premier sur la route du kohen.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="440" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">La comptabilite des &quot;boker&quot; : d'ou vient l'ordre 5 lampes / sang / 2 lampes</text>
+  <text x="380" y="43" text-anchor="middle" font-size="10.4" fill="#57534e">Regle de lecture : plus un service accumule d'occurrences de &quot;le matin&quot;, plus il est matinal -- a egalite, celui qui expie l'emporte</text>
+
+  <!-- source : le boker boker des gezirin -->
+  <rect x="230" y="62" width="300" height="52" rx="6" fill="#fffbeb" stroke="#d6bb77" stroke-width="1.5"/>
+  <text x="380" y="81" text-anchor="middle" font-size="11" font-weight="700" fill="#78350f">Chenei gezirei etsim : &quot;boker boker&quot;</text>
+  <text x="380" y="95" text-anchor="middle" font-size="9.2" fill="#92400e">deux occurrences devenues superflues : leur rang etait deja acquis</text>
+  <text x="380" y="107" text-anchor="middle" font-size="9.2" fill="#92400e">par mach'hir adif (ce qui rend apte passe en premier)</text>
+
+  <text x="380" y="132" text-anchor="middle" font-size="9.4" font-style="italic" fill="#57534e">davar che-eino inyan lo, tnehou inyan le-havero -- ce qui ne sert pas ici, applique-le ailleurs</text>
+
+  <line x1="330" y1="138" x2="230" y2="168" stroke="#b45309" stroke-width="1.6" marker-end="url(#arb)"/>
+  <line x1="430" y1="138" x2="530" y2="168" stroke="#b45309" stroke-width="1.6" marker-end="url(#arb)"/>
+  <defs>
+    <marker id="arb" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto">
+      <path d="M0 0 L9 4 L0 8 z" fill="#b45309"/>
+    </marker>
+  </defs>
+
+  <rect x="112" y="172" width="232" height="34" rx="5" fill="#eff6ff" stroke="#9dbbe0" stroke-width="1.3"/>
+  <text x="228" y="193" text-anchor="middle" font-size="10.4" font-weight="700" fill="#1e3a5f">1er &quot;boker&quot; -&gt; hatavat 5 nerot</text>
+  <rect x="416" y="172" width="232" height="34" rx="5" fill="#ecfdf5" stroke="#8fbfa4" stroke-width="1.3"/>
+  <text x="532" y="193" text-anchor="middle" font-size="10.4" font-weight="700" fill="#14532d">2e &quot;boker&quot; -&gt; dam ha-tamid</text>
+
+  <!-- pesee 1 -->
+  <rect x="60" y="232" width="640" height="82" rx="6" fill="#ffffff" stroke="#d6d3d1" stroke-width="1.2"/>
+  <text x="76" y="251" font-size="10.6" font-weight="700" fill="#1c1917">Pesee 1 -- hatavat cinq nerot contre dam ha-tamid</text>
+  <rect x="76" y="260" width="250" height="44" rx="5" fill="#eff6ff" stroke="#9dbbe0" stroke-width="1.1"/>
+  <text x="201" y="277" text-anchor="middle" font-size="10" font-weight="700" fill="#1e3a5f">Hatavat 5 nerot</text>
+  <text x="201" y="292" text-anchor="middle" font-size="9.2" fill="#3b5f8a">2 ecrits (Chemot 30,7) + 1 jete = 3</text>
+  <text x="363" y="285" text-anchor="middle" font-size="16" font-weight="700" fill="#b45309">&gt;</text>
+  <rect x="400" y="260" width="250" height="44" rx="5" fill="#ecfdf5" stroke="#8fbfa4" stroke-width="1.1"/>
+  <text x="525" y="277" text-anchor="middle" font-size="10" font-weight="700" fill="#14532d">Dam ha-tamid</text>
+  <text x="525" y="292" text-anchor="middle" font-size="9.2" fill="#2f6b4a">1 ecrit (Chemot 29,39) + 1 jete = 2</text>
+  <text x="676" y="286" text-anchor="middle" font-size="9.6" font-weight="700" fill="#1e3a5f">3 &gt; 2</text>
+
+  <!-- pesee 2 -->
+  <rect x="60" y="326" width="640" height="82" rx="6" fill="#ffffff" stroke="#d6d3d1" stroke-width="1.2"/>
+  <text x="76" y="345" font-size="10.6" font-weight="700" fill="#1c1917">Pesee 2 -- dam ha-tamid contre hatavat deux nerot</text>
+  <rect x="76" y="354" width="250" height="44" rx="5" fill="#ecfdf5" stroke="#8fbfa4" stroke-width="1.1"/>
+  <text x="201" y="371" text-anchor="middle" font-size="10" font-weight="700" fill="#14532d">Dam ha-tamid</text>
+  <text x="201" y="386" text-anchor="middle" font-size="9.2" fill="#2f6b4a">1 ecrit + 1 jete = 2</text>
+  <text x="363" y="379" text-anchor="middle" font-size="15" font-weight="700" fill="#78716c">=</text>
+  <rect x="400" y="354" width="250" height="44" rx="5" fill="#eff6ff" stroke="#9dbbe0" stroke-width="1.1"/>
+  <text x="525" y="371" text-anchor="middle" font-size="10" font-weight="700" fill="#1e3a5f">Hatavat 2 nerot</text>
+  <text x="525" y="386" text-anchor="middle" font-size="9.2" fill="#3b5f8a">2 ecrits, rien de jete = 2</text>
+  <text x="676" y="373" text-anchor="middle" font-size="9.4" font-weight="700" fill="#14532d">egalite -&gt;</text>
+  <text x="676" y="387" text-anchor="middle" font-size="9.4" font-weight="700" fill="#14532d">mekhaper adif</text>
+</svg></div>
+          <figcaption>Les deux &amp;quot;boker&amp;quot; devenus disponibles chez les buches sont replaces la ou ils produisent un ordre : c&#x27;est toute la reponse d&#x27;Abaye.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 210" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="210" fill="#fffdf8"/>
+  <defs>
+    <marker id="arc" markerWidth="8" markerHeight="8" refX="7" refY="3.5" orient="auto">
+      <path d="M0 0 L8 3.5 L0 7 z" fill="#b45309"/>
+    </marker>
+  </defs>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">La chaine reconstituee dans Yoma 33b</text>
+  <text x="380" y="46" text-anchor="middle" font-size="10.4" fill="#57534e">Six maillons du seder d'Abaye, chacun justifie par un decompte de &quot;boker&quot; ou par un principe de priorite</text>
+  <text x="380" y="66" text-anchor="middle" font-size="9.4" font-style="italic" fill="#78716c">en amont : maarakha guedola, maarakha de la ketoret, gezirei etsim, dichoun de l'autel interieur (traites en 33a)</text>
+  <rect x="24" y="86" width="106" height="58" rx="6" fill="#eff6ff" stroke="#9dbbe0" stroke-width="1.4"/>
+  <text x="77" y="110" text-anchor="middle" font-size="9.8" font-weight="700" fill="#1e3a5f">Hatavat 5 nerot</text>
+  <text x="77" y="128" text-anchor="middle" font-size="8.4" fill="#57534e">3 &quot;boker&quot;</text>
+  <path d="M132 115 L144 115" stroke="#b45309" stroke-width="1.8" marker-end="url(#arc)"/>
+  <rect x="146" y="86" width="106" height="58" rx="6" fill="#ecfdf5" stroke="#8fbfa4" stroke-width="1.4"/>
+  <text x="199" y="110" text-anchor="middle" font-size="9.8" font-weight="700" fill="#14532d">Dam ha-tamid</text>
+  <text x="199" y="128" text-anchor="middle" font-size="8.4" fill="#57534e">2 &quot;boker&quot; + expie</text>
+  <path d="M254 115 L266 115" stroke="#b45309" stroke-width="1.8" marker-end="url(#arc)"/>
+  <rect x="268" y="86" width="106" height="58" rx="6" fill="#eff6ff" stroke="#9dbbe0" stroke-width="1.4"/>
+  <text x="321" y="110" text-anchor="middle" font-size="9.8" font-weight="700" fill="#1e3a5f">Hatavat 2 nerot</text>
+  <text x="321" y="128" text-anchor="middle" font-size="8.4" fill="#57534e">2 &quot;boker&quot;</text>
+  <path d="M376 115 L388 115" stroke="#b45309" stroke-width="1.8" marker-end="url(#arc)"/>
+  <rect x="390" y="86" width="106" height="58" rx="6" fill="#eff6ff" stroke="#9dbbe0" stroke-width="1.4"/>
+  <text x="443" y="110" text-anchor="middle" font-size="9.8" font-weight="700" fill="#1e3a5f">Ketoret</text>
+  <text x="443" y="128" text-anchor="middle" font-size="8.4" fill="#57534e">be-hetivo... yaktirena</text>
+  <path d="M498 115 L510 115" stroke="#b45309" stroke-width="1.8" marker-end="url(#arc)"/>
+  <rect x="512" y="86" width="106" height="58" rx="6" fill="#ecfdf5" stroke="#8fbfa4" stroke-width="1.4"/>
+  <text x="565" y="110" text-anchor="middle" font-size="9.8" font-weight="700" fill="#14532d">Evarim du tamid</text>
+  <text x="565" y="128" text-anchor="middle" font-size="8.4" fill="#57534e">un seul &quot;boker&quot;</text>
+  <path d="M620 115 L632 115" stroke="#b45309" stroke-width="1.8" marker-end="url(#arc)"/>
+  <rect x="634" y="86" width="106" height="58" rx="6" fill="#ecfdf5" stroke="#8fbfa4" stroke-width="1.4"/>
+  <text x="687" y="110" text-anchor="middle" font-size="9.8" font-weight="700" fill="#14532d">Minha</text>
+  <text x="687" y="128" text-anchor="middle" font-size="8.4" fill="#57534e">rien avant le tamid</text>
+
+  <rect x="24" y="164" width="712" height="32" rx="5" fill="#f5f5f4" stroke="#d6d3d1" stroke-width="1"/>
+  <text x="380" y="177" text-anchor="middle" font-size="9.6" fill="#44403c">Deux moteurs seulement : le decompte des &quot;boker&quot; (plus il y en a, plus c'est matinal) et, a egalite, mekhaper adif -- ce qui expie l'emporte.</text>
+  <text x="380" y="190" text-anchor="middle" font-size="9.6" fill="#44403c">Une contrainte les encadre : l'entretien des lampes doit rester coupe en deux, il faut donc un service pour s'inserer entre les cinq et les deux.</text>
+</svg></div>
+          <figcaption>Les six maillons etablis dans ce amud, avec pour chacun la raison qui le tient a sa place.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְכִי עָייֵל לַהֵיכָל — בַּמִּזְבֵּחַ פָּגַע בְּרֵישָׁא. דְּתַנְיָא: שֻׁלְחָן בַּצָּפוֹן מָשׁוּךְ מִן הַכֹּותֶל שְׁתֵּי אַמּוֹת וּמֶחֱצָה, וּמְנוֹרָה בַּדָּרוֹם מְשׁוּכָה מִן הַכֹּותֶל שְׁתֵּי אַמּוֹת וּמֶחֱצָה. מִזְבֵּחַ מְמֻוצָּע וְעוֹמֵד בְּאֶמְצַע וּמָשׁוּךְ כְּלַפֵּי חוּץ קִימְעָא. וְנוֹקְמֶיהָ, לַהֲדַיְיהוּ? כֵּיוָן דִּכְתִיב: ״וְאֶת הַמְּנֹורָה נֹכַח הַשֻּׁלְחָן״, בָּעֵינַן דְּחָזוּ אַהֲדָדֵי.</div>
+            <div class="fr"><p>Et lorsqu&#x27;il entre dans le Heikhal, c&#x27;est l&#x27;autel qu&#x27;il rencontre en premier. Comme il est enseigne dans une baraita : la table est au nord, ecartee du mur de deux amot et demie ; et la menora est au sud, ecartee du mur de deux amot et demie.</p><p>L&#x27;autel [d&#x27;or] est centre et se tient au milieu, mais tire un peu vers l&#x27;exterieur. -- Et qu&#x27;on le dresse donc dans leur alignement ! -- Puisqu&#x27;il est ecrit &quot;et la menora face a la table&quot; (Chemot 26,35), nous exigeons qu&#x27;elles se voient l&#x27;une l&#x27;autre.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(5)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְכִי עָייֵל לְהֵיכָל בְּמִזְבֵּחַ פָּגַע בְּרֵישָׁא</b> קֹודֶם שֶׁיַּגִּיעַ לַמְנוֹרָה שֶׁהַמִּזְבֵּחַ מָשׁוּךְ כְּלַפֵּי מִזְרָח קִימְעָא:</div>
+          <div class="glose-fr">Avant qu&#x27;il n&#x27;atteigne la menora, car l&#x27;autel est tire un peu vers l&#x27;est.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מָשׁוּךְ מִן הַכֹּותֶל</b> מְרֻוחָק מִן הַכֹּותֶל צְפוֹנִי שְׁתֵּי אַמּוֹת וּמֶחֱצָה שִׁיעוּר דֶּרֶךְ שְׁנֵי כֹּהֲנִים זֶה אֵצֶל זֶה הַמְסַדְּרִין שְׁתֵּי מַעֲרָכוֹת שֶׁל לֶחֶם הַפָּנִים בְּשַׁבָּת וּמִצְווָתוֹ לְסַדְּרָן וּלְסַלְּקָן יַחַד וְאַרְבָּעָה נִכְנָסִין שְׁנַיִם מִצַּד זֶה שֶׁל שֻׁלְחָן לְסַלֵּק אֶת הַמַּעֲרָכָה הַיְּשָׁנָה שֶׁל לֶחֶם הַפָּנִים וּשְׁנַיִם מִצַּד זֶה לְסַדֵּר הַחֲדָשָׁה:</div>
+          <div class="glose-fr">Eloigne du mur nord de deux amot et demie : la mesure du passage de deux kohanim cote a cote, ceux qui disposent les deux rangees du lehem ha-panim (pain de proposition) le Chabbat -- car sa mitsva est de les disposer et de les enlever ensemble. Quatre [kohanim] entrent : deux de ce cote-ci de la table pour enlever l&#x27;ancienne rangee du lehem ha-panim, et deux de ce cote-la pour disposer la nouvelle.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מְשׁוּכָה מִן הַכֹּותֶל שְׁתֵּי אַמּוֹת וּמֶחֱצָה</b> כְּמִדַּת הַשֻּׁולְחָן דְּהָא כְּתִיב (שְׁמוֹת כ״ו:ל״ה) נֹכַח הַשֻּׁלְחָן זֶה בְּצַד זֶה:</div>
+          <div class="glose-fr">Comme la mesure de la table, puisqu&#x27;il est ecrit (Chemot 26,35) &quot;face a la table&quot; -- celle-ci a cote de celle-la.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּלַפֵּי חוּץ</b> כְּלַפֵּי מִזְרָח לְצַד פֶּתַח הַהֵיכָל:</div>
+          <div class="glose-fr">Vers l&#x27;est, du cote de l&#x27;entree du Heikhal.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לוֹקְמָא בַּהֲדַיְיהוּ</b> מְכֻווָּן בֵּינַייְהוּ וְלָמָּה נִמְשַׁךְ לַחוּץ:</div>
+          <div class="glose-fr">[Qu&#x27;on le dresse] exactement aligne entre elles -- et pourquoi donc a-t-il ete tire vers l&#x27;exterieur ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara continue de justifier le seder d'Abaye. On vient d'apprendre que le <b>dichoun de l'autel interieur</b> (le deblaiement des cendres de la ketoret de la veille) precede l'<b>entretien des lampes</b>. Pourquoi ? Pas pour une raison textuelle, mais pour une raison de plan : <b>ein maavirin al ha-mitsvot</b>, on ne passe pas outre une mitsva qu'on rencontre -- or le kohen qui franchit la porte du Heikhal, situee a l'est, croise l'autel d'or avant d'atteindre la menora.</p><p>La baraita donne les cotes. Le Heikhal fait vingt amot du nord au sud. La table et la menora sont chacune ecartee de <b>deux amot et demie</b> de leur mur : selon Rachi, cette marge est la place necessaire aux deux kohanim qui se tiennent cote a cote de chaque cote de la table pour le remplacement simultane du <b>lehem ha-panim</b> le Chabbat. L'autel d'or, lui, est <b>mimoutsa</b> -- exactement centre entre nord et sud -- mais <b>mouchakh kelapei houts</b>, decale vers l'est.</p><p>Reste la question de fond : pourquoi ce decalage ? Reponse : le verset veut la menora <b>nokhah ha-choulhan</b>, litteralement "face a la table". Il faut qu'elles <b>se voient</b>. Un autel plante sur l'axe qui les relie ferait ecran. Ainsi la contrainte scripturaire fixe la position, la position fixe l'ordre de rencontre, et l'ordre de rencontre fixe l'ordre du service.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="300" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="14.4" font-weight="700" fill="#1c1917">Pourquoi ne pas aligner l'autel sur la table et la menora ?</text>
+
+  <!-- panneau A : aligne -->
+  <rect x="24" y="42" width="344" height="212" rx="6" fill="#fef2f2" stroke="#e0a5a5" stroke-width="1.4"/>
+  <text x="196" y="62" text-anchor="middle" font-size="11" font-weight="700" fill="#7f1d1d">Hypothese rejetee : l'autel aligne</text>
+  <rect x="60" y="76" width="272" height="140" rx="3" fill="#ffffff" stroke="#c9c5c1" stroke-width="1.2"/>
+  <rect x="152" y="88" width="88" height="22" rx="3" fill="#fef3c7" stroke="#d6bb77" stroke-width="1.1"/>
+  <text x="196" y="103" text-anchor="middle" font-size="9.4" font-weight="700" fill="#78350f">Choulhan</text>
+  <rect x="152" y="182" width="88" height="22" rx="3" fill="#fef3c7" stroke="#d6bb77" stroke-width="1.1"/>
+  <text x="196" y="197" text-anchor="middle" font-size="9.4" font-weight="700" fill="#78350f">Menora</text>
+  <rect x="164" y="132" width="64" height="30" rx="3" fill="#eff6ff" stroke="#5f8ac0" stroke-width="1.2"/>
+  <text x="196" y="151" text-anchor="middle" font-size="9" font-weight="700" fill="#1e3a5f">Autel</text>
+  <line x1="196" y1="110" x2="196" y2="132" stroke="#b91c1c" stroke-width="1.6" stroke-dasharray="5 3"/>
+  <line x1="196" y1="162" x2="196" y2="182" stroke="#b91c1c" stroke-width="1.6" stroke-dasharray="5 3"/>
+  <text x="252" y="150" font-size="18" font-weight="700" fill="#b91c1c">X</text>
+  <text x="196" y="234" text-anchor="middle" font-size="9.6" fill="#7f1d1d">L'autel s'interpose : la table et la menora</text>
+  <text x="196" y="247" text-anchor="middle" font-size="9.6" fill="#7f1d1d">ne se voient plus -- contraire a &quot;nokhah&quot;.</text>
+
+  <!-- panneau B : tire vers l'est -->
+  <rect x="392" y="42" width="344" height="212" rx="6" fill="#f0fdf4" stroke="#8fbfa4" stroke-width="1.4"/>
+  <text x="564" y="62" text-anchor="middle" font-size="11" font-weight="700" fill="#14532d">Realite : l'autel tire vers l'est</text>
+  <rect x="428" y="76" width="272" height="140" rx="3" fill="#ffffff" stroke="#c9c5c1" stroke-width="1.2"/>
+  <rect x="486" y="88" width="88" height="22" rx="3" fill="#fef3c7" stroke="#d6bb77" stroke-width="1.1"/>
+  <text x="530" y="103" text-anchor="middle" font-size="9.4" font-weight="700" fill="#78350f">Choulhan</text>
+  <rect x="486" y="182" width="88" height="22" rx="3" fill="#fef3c7" stroke="#d6bb77" stroke-width="1.1"/>
+  <text x="530" y="197" text-anchor="middle" font-size="9.4" font-weight="700" fill="#78350f">Menora</text>
+  <rect x="612" y="132" width="64" height="30" rx="3" fill="#eff6ff" stroke="#5f8ac0" stroke-width="1.2"/>
+  <text x="644" y="151" text-anchor="middle" font-size="9" font-weight="700" fill="#1e3a5f">Autel</text>
+  <line x1="530" y1="110" x2="530" y2="182" stroke="#0d9488" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <text x="546" y="150" font-size="9.2" font-weight="700" fill="#0f766e">vue libre</text>
+  <text x="564" y="234" text-anchor="middle" font-size="9.6" fill="#14532d">La ligne de vue reste libre, et le kohen qui entre</text>
+  <text x="564" y="247" text-anchor="middle" font-size="9.6" fill="#14532d">par l'est bute sur l'autel avant tout le reste.</text>
+
+  <text x="380" y="278" text-anchor="middle" font-size="9.6" font-style="italic" fill="#57534e">Un detail d'architecture commande une regle de priorite : le verset regle la position, la position regle l'ordre du service.</text>
+</svg></div><div class="svg-cap">Aligner l&#x27;autel briserait la ligne de vue exigee par le verset ; le tirer vers l&#x27;est la preserve -- et le place du meme coup en premier sur le chemin du kohen.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רָבָא: שְׁמַע מִינַּהּ מִדְּרֵישׁ לָקִישׁ, עַבּוֹרֵי דְּרָעָא אַטּוֹטֶפְתָּא אָסוּר. הֵיכִי עֲבִיד? מִדְּרָעָא לְטוֹטֶפְתָּא.</div>
+            <div class="fr"><p>Rava dit : apprends-en, de Rech Lakich, que passer outre [les tefillin] du bras vers ceux de la tete est interdit. Comment fait-il ?</p><p>Du bras vers la tete.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִדְּרִישׁ לָקִישׁ</b> דְּאָמַר אֵין מַעֲבִירִין עַל הַמִּצְוֹת:</div>
+          <div class="glose-fr">Qui a dit : on ne passe pas outre les mitsvot.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>עַבּוֹרֵי דְּרָעָא אַטּוֹטֶפְתָּא</b> לְאַחֵר תְּפִילִּין שֶׁבַּזְּרוֹעַ בִּשְׁבִיל תְּפִילִּין שֶׁל רֹאשׁ אָסוּר דְּהָא בַּזְּרוֹעַ פָּגַע תְּחִילָּה:</div>
+          <div class="glose-fr">Passer outre celui du bras au profit de celui de la tete est interdit, car c&#x27;est le bras que l&#x27;on rencontre en premier.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הֵיכִי עָבֵיד מִדְּרָעָא לְטוֹטֶפְתָּא</b> מִן הַזְּרוֹעַ יָבֹא עַל רֹאשׁ יַנִּיחַ שֶׁבַּזְּרוֹעַ תְּחִילָּה וְאח&quot;כ יַנִּיחַ שֶׁל רֹאשׁ:</div>
+          <div class="glose-fr">Du bras il vient a la tete : qu&#x27;il pose d&#x27;abord celui du bras, et ensuite qu&#x27;il pose celui de la tete.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>עַבּוֹרֵי דְּרָעָא אַטּוֹטֶפְתָּא</b> פרש&quot;י לְהַנִּיחַ תְּפִילִּין בְּרֹאשׁ קֹודֶם שֶׁיַּנִּיחַ תְּפִילִּין שֶׁל יָד אָסוּר דְּקָא מַעֲבִיר עַל מִצְוַת תְּפִילִּין שֶׁל יָד דְּפָגַע בְּרֵישָׁא בַּזְּרוֹעַ קֹודֶם שֶׁיַּגִּיעַ לָרֹאשׁ וְקָשֶׁה לְפִי&#x27; דְּמַאי אִירְיָא מִדְּרֵישׁ לָקִישׁ תִּיפּוֹק לֵיהּ מִדְּאָמַר בְּפֶרֶק הַקּוֹמֵץ רַבָּה (מְנָחוֹת דַּף לוֹ.) כְּשֶׁהוּא מַנִּיחַ מַנִּיחַ שֶׁל יָד וְאַחַ&quot;כּ שֶׁל רֹאשׁ דִּכְתִיב וּקְשַׁרְתָּם לְאוֹת עַל יָדֶךָ וַהֲדַר וְהָיוּ לְטֹוטָפֹות בֵּין עֵינֶיךָ וּמְפָרֵשׁ רַבֵּינוּ תָּם בְּשֵׁם רַב הַאי גָּאוֹן זצ&quot;ל דְּאַיְירֵי בְּשָׁעָה שֶׁחוֹלֵץ תְּפִילִּין וּמַנִּיחָן בַּתִּיק שֶׁלֹּא יַעֲבִיר אוֹתָן שֶׁל יָד וְיִתְּנֵם בַּתִּיק תְּחִילָּה וְאח&quot;כ שֶׁל רֹאשׁ לְמַעְלָה דא&quot;כ כְּשֶׁיָּבֹא לְהַנִּיחַ יִפְגַּע בְּשֶׁל רֹאשׁ תְּחִילָּה וְיִצְטָרֵךְ לְהַעֲבִיר עַל הַמִּצְוֹת מִשּׁוּם דְּשֶׁל יָד יֵשׁ לְהַנִּיחַ תְּחִילָּה כִּדְפֵי&#x27; לְפִיכָךְ צָרִיךְ לְהַנִּיחַ בְּתִיק שֶׁל רֹאשׁ תְּחִילָּה וְאח&quot;כ שֶׁל יָד לְמַעְלָה וְרַבִּי אֵלִיָּהוּ זצ&quot;ל מְפָרֵשׁ דִּלְעִנְיַן מִשְׁמוּשׁ אַיְירֵי דְּחַייָּב אָדָם לְמַשְׁמֵשׁ בַּתְּפִילִּין כָּל שָׁעָה ק&quot;ו מִצִּיץ וְהַשְׁתָּא קָאָמַר דִּבְשֶׁל יָד מְמַשְׁמֵשׁ תְּחִילָּה מִשּׁוּם דְּפָגַע בָּהֶן בְּרֵישָׁא וְאַחַ&quot;כּ מְמַשְׁמֵשׁ בְּשֶׁל רֹאשׁ:</div>
+          <div class="glose-fr">Rachi a explique : poser les tefillin sur la tete avant d&#x27;avoir pose ceux du bras est interdit, car il passe outre la mitsva des tefillin du bras -- puisqu&#x27;on rencontre le bras en premier, avant d&#x27;atteindre la tete. Et cette explication fait difficulte : pourquoi tirer cela precisement de Rech Lakich ? Qu&#x27;il le deduise donc de ce qui est dit au chapitre Ha-kometz Rabba (Menahot 36a) : &quot;lorsqu&#x27;il pose, il pose celui du bras et ensuite celui de la tete, car il est ecrit &#x27;tu les attacheras comme un signe sur ton bras&#x27; puis &#x27;elles seront des totafot entre tes yeux&#x27;&quot; ! Rabbenou Tam explique donc, au nom de Rav Hai Gaon (que son souvenir soit une benediction), qu&#x27;il s&#x27;agit du moment ou l&#x27;on ote les tefillin et ou on les depose dans leur sac : qu&#x27;il ne passe pas outre celui du bras en le mettant dans le sac en premier et celui de la tete par-dessus -- car alors, quand il viendra les poser, il rencontrera celui de la tete en premier et devra passer outre la mitsva, puisque celui du bras doit etre pose d&#x27;abord comme on l&#x27;a explique. C&#x27;est pourquoi il faut deposer dans le sac celui de la tete en premier, et celui du bras par-dessus. Et Rabbi Eliyahou (que son souvenir soit une benediction) explique qu&#x27;il s&#x27;agit du michmouch (le fait de tater ses tefillin) : un homme est tenu de toucher ses tefillin a tout moment, par un kal va-homer tire du tsits (la lame d&#x27;or du front du kohen gadol) ; et voici ce que dit [Rava] : c&#x27;est celui du bras qu&#x27;il tate en premier, parce qu&#x27;il les rencontre d&#x27;abord, et ensuite il tate celui de la tete.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rava transpose hors du Temple le principe que Rech Lakich vient d'etablir : <b>ein maavirin al ha-mitsvot</b>. La main qui va chercher les tefillin rencontre d'abord celui du bras (<b>dera</b>) ; le contourner pour saisir celui de la tete (<b>totafta</b>) serait "passer outre". L'ordre est donc : bras, puis tete.</p><p>Tossefot pose ici une objection redoutable et tres instructive : ce resultat est deja connu ! La guemara de <b>Menahot 36a</b> le tire de l'ordre meme du verset -- "tu les attacheras comme un signe sur ton bras" <i>puis</i> "elles seront des totafot entre tes yeux". A quoi bon invoquer Rech Lakich ? D'ou trois relectures de ce que Rava veut vraiment dire : selon Rabbenou Tam au nom de Rav Hai Gaon, il parle du <b>rangement dans le sac</b> au moment ou l'on ote les tefillin -- il faut y deposer celui de la tete en premier, celui du bras par-dessus, faute de quoi le lendemain la main rencontrera la tete d'abord et devra passer outre ; selon Rabbi Eliyahou, il parle du <b>michmouch</b>, l'obligation de toucher ses tefillin regulierement, qui doit commencer par celui du bras.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 380" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="380" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="14.4" font-weight="700" fill="#1c1917">Ein maavirin applique aux tefillin -- et ce que Rava ajoute vraiment</text>
+
+  <!-- ordre de base -->
+  <rect x="24" y="42" width="712" height="58" rx="6" fill="#f5f5f4" stroke="#d6d3d1" stroke-width="1.2"/>
+  <rect x="44" y="54" width="150" height="34" rx="5" fill="#eff6ff" stroke="#9dbbe0" stroke-width="1.3"/>
+  <text x="119" y="70" text-anchor="middle" font-size="10" font-weight="700" fill="#1e3a5f">Chel yad (bras)</text>
+  <text x="119" y="83" text-anchor="middle" font-size="8.6" fill="#3b5f8a">rencontre en premier</text>
+  <path d="M200 71 L226 71" stroke="#b45309" stroke-width="1.8" marker-end="url(#art)"/>
+  <defs>
+    <marker id="art" markerWidth="8" markerHeight="8" refX="7" refY="3.5" orient="auto">
+      <path d="M0 0 L8 3.5 L0 7 z" fill="#b45309"/>
+    </marker>
+  </defs>
+  <rect x="232" y="54" width="150" height="34" rx="5" fill="#eff6ff" stroke="#9dbbe0" stroke-width="1.3"/>
+  <text x="307" y="70" text-anchor="middle" font-size="10" font-weight="700" fill="#1e3a5f">Chel roch (tete)</text>
+  <text x="307" y="83" text-anchor="middle" font-size="8.6" fill="#3b5f8a">ensuite</text>
+  <text x="404" y="66" font-size="9.6" fill="#44403c">Deja connu de Menahot 36a : &quot;ou-kchartam le-ot al yadekha&quot; puis &quot;ve-hayou le-totafot&quot;.</text>
+  <text x="404" y="80" font-size="9.6" font-weight="700" fill="#7f1d1d">D'ou la question de Tossefot : qu'apporte donc l'inference de Rech Lakich ?</text>
+
+  <!-- trois lectures -->
+  <text x="380" y="126" text-anchor="middle" font-size="11.4" font-weight="700" fill="#1c1917">Trois lectures de ce que Rava tire de &quot;ein maavirin&quot;</text>
+
+  <rect x="24" y="140" width="228" height="196" rx="6" fill="#fef2f2" stroke="#e0a5a5" stroke-width="1.3"/>
+  <text x="138" y="160" text-anchor="middle" font-size="10.6" font-weight="700" fill="#7f1d1d">Rachi</text>
+  <text x="138" y="178" text-anchor="middle" font-size="9.4" fill="#7f1d1d">Il s'agit de la pose.</text>
+  <text x="138" y="193" text-anchor="middle" font-size="9.4" fill="#7f1d1d">Poser la tete avant le bras,</text>
+  <text x="138" y="207" text-anchor="middle" font-size="9.4" fill="#7f1d1d">c'est passer outre le bras,</text>
+  <text x="138" y="221" text-anchor="middle" font-size="9.4" fill="#7f1d1d">qu'on rencontre d'abord.</text>
+  <text x="138" y="248" text-anchor="middle" font-size="9" font-style="italic" fill="#991b1b">Objection de Tossefot :</text>
+  <text x="138" y="262" text-anchor="middle" font-size="9" font-style="italic" fill="#991b1b">le verset le disait deja.</text>
+
+  <rect x="266" y="140" width="228" height="196" rx="6" fill="#f0fdf4" stroke="#8fbfa4" stroke-width="1.3"/>
+  <text x="380" y="160" text-anchor="middle" font-size="10.6" font-weight="700" fill="#14532d">Rabbenou Tam</text>
+  <text x="380" y="174" text-anchor="middle" font-size="9" fill="#2f6b4a">au nom de Rav Hai Gaon</text>
+  <text x="380" y="194" text-anchor="middle" font-size="9.4" fill="#14532d">Il s'agit du rangement.</text>
+  <text x="380" y="208" text-anchor="middle" font-size="9.4" fill="#14532d">En otant les tefillin, on range</text>
+  <text x="380" y="222" text-anchor="middle" font-size="9.4" fill="#14532d">celui de la TETE au fond,</text>
+  <text x="380" y="236" text-anchor="middle" font-size="9.4" fill="#14532d">celui du BRAS par-dessus.</text>
+  <text x="380" y="258" text-anchor="middle" font-size="9" font-style="italic" fill="#2f6b4a">Sinon, demain, la main</text>
+  <text x="380" y="271" text-anchor="middle" font-size="9" font-style="italic" fill="#2f6b4a">rencontrerait la tete d'abord</text>
+  <text x="380" y="284" text-anchor="middle" font-size="9" font-style="italic" fill="#2f6b4a">et il faudrait passer outre.</text>
+  <text x="380" y="308" text-anchor="middle" font-size="9" font-weight="700" fill="#14532d">Nafka mina pratique :</text>
+  <text x="380" y="321" text-anchor="middle" font-size="9" fill="#14532d">l'ordre dans le sac (tik).</text>
+
+  <rect x="508" y="140" width="228" height="196" rx="6" fill="#f5f3ff" stroke="#b6a8d9" stroke-width="1.3"/>
+  <text x="622" y="160" text-anchor="middle" font-size="10.6" font-weight="700" fill="#4c1d95">Rabbi Eliyahou</text>
+  <text x="622" y="180" text-anchor="middle" font-size="9.4" fill="#4c1d95">Il s'agit du michmouch :</text>
+  <text x="622" y="194" text-anchor="middle" font-size="9.4" fill="#4c1d95">on doit toucher ses tefillin</text>
+  <text x="622" y="208" text-anchor="middle" font-size="9.4" fill="#4c1d95">a tout moment -- kal va-homer</text>
+  <text x="622" y="222" text-anchor="middle" font-size="9.4" fill="#4c1d95">tire du tsits.</text>
+  <text x="622" y="248" text-anchor="middle" font-size="9" font-style="italic" fill="#5b21b6">On tate d'abord celui du bras,</text>
+  <text x="622" y="261" text-anchor="middle" font-size="9" font-style="italic" fill="#5b21b6">qu'on rencontre en premier,</text>
+  <text x="622" y="274" text-anchor="middle" font-size="9" font-style="italic" fill="#5b21b6">puis celui de la tete.</text>
+
+  <text x="380" y="360" text-anchor="middle" font-size="9.6" fill="#44403c">Le principe du Temple descend dans le quotidien : la meme regle de priorite gouverne l'ordre du service et le geste du matin.</text>
+</svg></div><div class="svg-cap">Le meme principe, trois terrains : la pose (Rachi), l&#x27;ordre dans le sac (Rabbenou Tam et Rav Hai Gaon), le michmouch (Rabbi Eliyahou).</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וַהֲטָבַת חָמֵשׁ נֵרוֹת קוֹדֵם לְדַם הַתָּמִיד, וְדַם הַתָּמִיד קוֹדֵם לַהֲטָבַת שְׁתֵּי נֵרוֹת. מַאי טַעְמָא? אָמַר אַבַּיֵּי: הַהוּא ״בַּבֹּקֶר בַּבֹּקֶר״ דִּשְׁנֵי גְּזִירֵי עֵצִים דְּלָא צְרִיכִי, שְׁדִינְהוּ לְהָכָא. חַד שִׁדְיֵיהּ לַהֲטָבַת חָמֵשׁ נֵרוֹת — דְּלִיקְדְּמֵיהּ לְדַם הַתָּמִיד, וְחַד שִׁדְיֵיהּ לְדַם הַתָּמִיד — דְּנִקְדְּמֵיהּ לַהֲטָבַת שְׁתֵּי נֵרוֹת.</div>
+            <div class="fr"><p>&quot;Et l&#x27;entretien de cinq lampes precede le sang du tamid, et le sang du tamid precede l&#x27;entretien de deux lampes.&quot; Quelle en est la raison ? Abaye dit : ce &quot;ba-boker ba-boker&quot; (le matin, le matin) dit a propos des deux buches, dont on n&#x27;a pas besoin, jette-le ici.</p><p>L&#x27;un, jette-le sur l&#x27;entretien des cinq lampes -- pour qu&#x27;il precede le sang du tamid ; et l&#x27;autre, jette-le sur le sang du tamid -- pour qu&#x27;il precede l&#x27;entretien des deux lampes.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בַּבֹּקֶר בַּבֹּקֶר דִּשְׁנֵי גְּזִירִין</b> דְּלָא צָרִיךְ דְּהָא אֲמָרָן מַכְשִׁיר עָדִיף:</div>
+          <div class="glose-fr">Dont on n&#x27;a pas besoin -- puisque nous avons dit [plus haut] : mach&#x27;hir adif, ce qui rend apte a la mitsva a la priorite.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שְׁדִינְהוּ לְהָכָא</b> שֶׁזּוֹ מִדָּה בַּתּוֹרָה דָּבָר שֶׁאֵינוֹ עִנְיָן לוֹ תְּנֵהוּ עִנְיָן לַחֲבֵירוֹ:</div>
+          <div class="glose-fr">Jette-les ici -- car c&#x27;est une des mesures (middot) de la Torah : une chose qui n&#x27;a pas d&#x27;objet dans son propre sujet, applique-la a un autre sujet.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>On entre dans le coeur technique du daf. La question porte sur le trio le plus etrange du seder : pourquoi l'entretien de la menora est-il <b>coupe en deux</b>, cinq lampes d'un cote, deux de l'autre, avec le sang du tamid glisse au milieu ?</p><p>La reponse d'Abaye repose sur un procede exegetique classique : <b>davar che-eino inyan lo, tnehou inyan le-havero</b> -- une expression qui ne sert a rien la ou elle est ecrite doit etre appliquee ailleurs. Le verset des <b>chenei gezirei etsim</b> (les deux buches ajoutees chaque matin sur la grande maarakha) porte un "ba-boker ba-boker" redondant : la priorite des buches etait deja acquise par <b>mach'hir adif</b>, ce qui rend apte au service passe avant. Ces deux occurrences sont donc disponibles.</p><p>Abaye les <b>jette</b> (chadinhou) chacune sur un service : la premiere sur l'entretien des cinq lampes, la seconde sur le sang du tamid. Chaque service voit ainsi son compte de "boker" augmenter d'une unite -- et c'est ce compte qui decide de la matinalite.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">חַד שִׁדְייֵהּ לַהֲטָבַת חָמֵשׁ נֵרוֹת, דְּלִיקְדְּמֵיהּ לְדַם הַתָּמִיד — דְּהָכָא תְּלָתָא וְהָכָא תְּרֵי.</div>
+            <div class="fr"><p>L&#x27;un, jette-le sur l&#x27;entretien des cinq lampes pour qu&#x27;il precede le sang du tamid : car ici il y en a trois et la il y en a deux.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּהָכָא תְּלָתָא וְהָכָא תְּרֵי</b> הָכָא תְּלָתָא בַּהֲטָבַת נֵרוֹת כְּתִיב בַּבֹּקֶר בַּבֹּקֶר וְהָא דְּשָׁדֵינַן עָלֶיהָ חַד הָא תְּלָתָא וּבְתָמִיד כְּתִיב (שְׁמוֹת כ״ט:ל״ט) אֶת הַכֶּבֶשׂ הָאֶחָד תַּעֲשֶׂה בַבֹּקֶר וְהַאי דְּשָׁדֵינַן עָלֶיהָ כִּדְאָמַר חַד שַׁדַּי לְדַם הַתָּמִיד:</div>
+          <div class="glose-fr">Ici trois : a propos de l&#x27;entretien des lampes il est ecrit &quot;ba-boker ba-boker&quot;, et celui que nous y avons jete -- cela fait trois. Et a propos du tamid il est ecrit (Chemot 29,39) &quot;tu feras l&#x27;un des agneaux le matin&quot;, plus celui que nous y jetons, comme il a ete dit &quot;et l&#x27;autre, jette-le sur le sang du tamid&quot; [-- cela fait deux].</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָכָא תְּלָתָא וְהָכָא תְּרֵי</b> אֵין לְהַקְשׁוֹת הָא טוּבָא בַּבֹּקֶר בַּבֹּקֶר כְּתִיבִי בְּתָמִיד בְּפָרָשַׁת וְאַתָּה תְּצַוֶּה וּבְפָרָשַׁת פִּינְחָס די&quot;ל הָנֵי כֻּולְּהוּ כְּחַד חֲשִׁיב לְהוּ כֵּיוָן דְּלָא כְּתִיבִי בַּהֲדֵי הֲדָדֵי כְּמוֹ בִּגְזִירִין וְנֵרוֹת דִּכְתִיב בַּבֹּקֶר בַּבֹּקֶר וְהָוֵי כְּמוֹ פָּרָשָׁה שֶׁנֶּאֶמְרָה וְנִשְׁנֵית:</div>
+          <div class="glose-fr">Il n&#x27;y a pas lieu d&#x27;objecter qu&#x27;il y a de nombreux &quot;ba-boker ba-boker&quot; ecrits a propos du tamid, dans la parasha de Ve-ata Tetsave et dans la parasha de Pinhas. Car on peut repondre : tous ceux-la sont comptes comme un seul, puisqu&#x27;ils ne sont pas ecrits l&#x27;un a cote de l&#x27;autre, comme ils le sont pour les buches et pour les lampes ou il est ecrit &quot;ba-boker ba-boker&quot; ; c&#x27;est comme une parasha qui a ete dite puis repetee.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le detail du premier calcul. L'<b>entretien des lampes</b> a deja pour lui les deux "boker" du verset de la ketoret ("ba-boker ba-boker be-hetivo et ha-nerot", Chemot 30,7) ; avec celui qu'Abaye y jette, cela fait <b>trois</b>. Le <b>sang du tamid</b> a le "boker" de son propre verset ("tu feras l'un des agneaux le matin", Chemot 29,39) : cela fait <b>deux</b>. Trois l'emporte sur deux, donc les cinq lampes passent d'abord.</p><p>Tossefot previent l'objection evidente : le tamid est mentionne au matin en bien d'autres endroits, dans Tetsave comme dans Pinhas -- pourquoi ne pas les compter ? Parce que ces mentions eparses valent pour <b>une seule</b> : seul un redoublement immediat, deux "boker" colles l'un a l'autre dans le meme verset, compte double. Le reste est une <b>parasha repetee</b>, qui ne cree pas de nouvelle unite.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְחַד שִׁדְייֵהּ לְדַם הַתָּמִיד — דְּנִקְדְּמֵיהּ לַהֲטָבַת שְׁתֵּי נֵרוֹת. אַף עַל גַּב דְּהָכָא תְּרֵי וְהָכָא תְּרֵי — מְכַפֵּר עָדִיף.</div>
+            <div class="fr"><p>Et l&#x27;autre, jette-le sur le sang du tamid pour qu&#x27;il precede l&#x27;entretien des deux lampes. Et bien qu&#x27;ici il y en ait deux et la deux -- ce qui expie a la priorite.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אע&quot;ג דְּהָכָא תְּרֵי וְהָכָא תְּרֵי</b> הָנֵי מְכַפְּרִי שֶׁהָעוֹלָה מְכַפֶּרֶת עַל עֲשֵׂה וְעַל לֹא תַעֲשֶׂה שֶׁנִּיתַּק לַעֲשֵׂה לְקַמָּן בְּפִירְקִין (דַּף לוֹ.):</div>
+          <div class="glose-fr">Ceux-ci expient : car la ola (l&#x27;holocauste) expie pour un commandement positif et pour un commandement negatif converti en positif -- plus loin dans notre chapitre (36a).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deuxieme calcul, et il tombe a egalite. Le <b>sang du tamid</b> compte deux "boker" (le sien plus celui qu'on lui a jete) ; l'<b>entretien des deux lampes</b> en compte deux aussi (les deux du verset de la ketoret -- le troisieme, celui qui avait ete jete, a deja servi pour les cinq premieres lampes). L'arithmetique ne departage plus.</p><p>C'est un second principe qui tranche : <b>mekhaper adif</b>, ce qui expie l'emporte. Rachi precise la portee de cette expiation : le <b>ola</b> (holocauste) -- et le tamid en est un -- expie pour la transgression d'un commandement positif, ainsi que pour un commandement negatif converti en positif ; la guemara y reviendra plus loin dans notre chapitre (36a).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר לֵיהּ רַב פָּפָּא לְאַבַּיֵּי, וְאֵימָא: חַד שִׁדְיֵיהּ לְדִישּׁוּן מִזְבֵּחַ הַפְּנִימִי, דְּנִקְדְּמֵיהּ לְדַם הַתָּמִיד — דְּהָכָא תְּלָתָא וְהָכָא תְּרֵי. וְחַד שִׁדְיֵיהּ לְדַם הַתָּמִיד, דְּנִקְדֹּום לַהֲטָבַת חָמֵשׁ נֵרוֹת — דְּאַף עַל גַּב דְּהָכָא תְּרֵי וְהָכָא תְּרֵי, מְכַפֵּר עָדִיף! אִם כֵּן אַפְסוֹקֵי בְּמַאי מַפְסְקַתְּ לְהוּ?</div>
+            <div class="fr"><p>Rav Papa dit a Abaye : dis plutot ceci -- l&#x27;un, jette-le sur le deblaiement des cendres de l&#x27;autel interieur, pour qu&#x27;il precede le sang du tamid, car ici il y en a trois et la deux ; et l&#x27;autre, jette-le sur le sang du tamid, pour qu&#x27;il precede l&#x27;entretien des cinq lampes, car bien qu&#x27;ici il y en ait deux et la deux, ce qui expie a la priorite ! -- S&#x27;il en est ainsi, avec quoi les separeras-tu ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>א&quot;כ</b> דְּמַקְדֶּמֶת לֵיהּ לְדַם הַתָּמִיד אַפְּסוּקֵיהּ בְּמַאי פָּסַקְתָּ לַהֲטָבַת הַנֵּרוֹת לְאַבָּא שָׁאוּל כֵּיוָן דְּאִית לֵיהּ מֵיטִיב וְאַחַ&quot;כּ יַקְטִיר דַּם הַתָּמִיד תַּקְדִּים וְהַקְּטֹורֶת תְּאַחֵר וּבְאֵיזוֹ עֲבוֹדָה תַּפְסִיקוּ וא&quot;ת מַאי אִיכְפַּת לָךְ הַנִּיחָא לר&quot;ש בֶּן לָקִישׁ דְּאָמַר אֵין הַפְסָקָתָן אֶלָּא לְהַרְבּוֹת הֶרְגֵּשׁ מַהֲלַךְ פְּסִיעוֹת וְקוֹל תְּחִילַּת עֲבוֹדוֹת בָּעֲזָרָה:</div>
+          <div class="glose-fr">S&#x27;il en est ainsi -- que tu avances le sang du tamid -- &quot;avec quoi les separeras-tu&quot; : avec quoi separeras-tu l&#x27;entretien des lampes, selon Abba Chaoul ? Puisqu&#x27;il tient qu&#x27;on entretient [les lampes] et qu&#x27;ensuite on fait fumer [la ketoret], le sang du tamid passerait devant et la ketoret viendrait apres -- par quel service les separeras-tu ? Et si tu dis : que t&#x27;importe ? -- cela va bien pour Rabbi Chimon ben Lakich, qui dit que leur separation n&#x27;a d&#x27;autre but que d&#x27;accroitre le remue-menage, le va-et-vient des pas et le bruit du debut des services dans l&#x27;azara (le parvis).</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאֵימָא חַד שִׁדְיֵיהּ לְדִישּׁוּן מִזְבֵּחַ הַפְּנִימִי דְּנִקְדְּמֵיהּ לְדַם הַתָּמִיד</b> וא&quot;ת נִישְׁדֵּי תַּרְוַייְהוּ בַּבֹּקֶר אָדָם הַתָּמִיד דְּנִיקְדֹּום לְדִישּׁוּן מִזְבֵּחַ הַפְּנִימִי דְּהָכָא תְּלָתָא וְהָכָא תְּרֵי וְי&quot;ל דְּהָא לָאו סְבָרָא הִיא דְּנִישְׁדֵּי תַּרְוַייְהוּ אַהֵיכָא דְּלָא כְּתַב אֶלָּא חַד וְאַדִּישּׁוּן פְּנִימִי דִּכְתִיב בֵּיהּ תְּרֵי לָא נִישְׁדֵּי מִידִי יַצִּיבָא בְּאַרְעָא וְגִיּוֹרָא בִּשְׁמֵי שְׁמַיָּא אִי נָמֵי י&quot;ל דא&quot;כ לֹא לִכְתֹּוב גַּבֵּי גְּזִירִין אֶלָּא חַד בַּבֹּקֶר וְנִשְׁדְּיֵיהּ אָדָם הַתָּמִיד דְּנַקְדִּים לְדִישּׁוּן מִזְבֵּחַ הַפְּנִימִי ואע&quot;ג דְּהָכָא תְּרֵי וְהָכָא תְּרֵי מְכַפֵּר עָדִיף וּמִדִּכְתִיב תְּרֵי בַּבֹּקֶר ש&quot;מ דְּאִיצְטְרִיךְ לְמֵימַר דְּנִישְׁדֵּי חַד אַדִּישּׁוּן מִזְבֵּחַ הַפְּנִימִי:</div>
+          <div class="glose-fr">Et si tu demandes : jetons donc les deux &quot;ba-boker&quot; sur le sang du tamid, pour qu&#x27;il precede le deblaiement de l&#x27;autel interieur, car ici il y en aurait trois et la deux ! On peut repondre : ce n&#x27;est pas une chose sensee, de jeter les deux la ou un seul est ecrit, et de ne rien jeter du tout sur le deblaiement de l&#x27;autel interieur ou deux sont ecrits -- &quot;le citoyen a terre et l&#x27;etranger au plus haut des cieux&quot; [c&#x27;est-a-dire une inversion absurde des rangs]. On peut encore repondre : s&#x27;il en etait ainsi, que le verset n&#x27;ecrive donc qu&#x27;un seul &quot;ba-boker&quot; a propos des buches, et jetons-le sur le sang du tamid pour qu&#x27;il precede le deblaiement de l&#x27;autel interieur -- et bien qu&#x27;ici il y en ait deux et la deux, ce qui expie a la priorite. Or du fait que deux &quot;ba-boker&quot; sont ecrits, apprends-en qu&#x27;il etait necessaire de dire que l&#x27;on en jette un sur le deblaiement de l&#x27;autel interieur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Papa attaque par la ou l'argument est vulnerable : la repartition d'Abaye n'est pas la seule possible. On peut jeter le premier "boker" sur le <b>dichoun de l'autel interieur</b> (qui, tirant lui aussi ses "boker" du verset de la ketoret, passerait a trois contre deux au sang) et le second sur le <b>sang du tamid</b>, lequel devancerait alors les cinq lampes par <b>mekhaper adif</b>. Meme regles, meme materiau, autre resultat.</p><p>La reponse d'Abaye n'est pas arithmetique mais structurelle : <b>apsoukei be-mai mafseket lehou ?</b> -- avec quoi couperas-tu ? Dans l'ordre de Rav Papa, les cinq lampes et les deux lampes se retrouvent collees, sans aucun service entre elles. Or l'entretien de la menora <i>doit</i> etre coupe en deux. Rachi souligne que la difficulte est particulierement aigue selon <b>Abba Chaoul</b>, pour qui l'entretien precede la ketoret : le sang passe devant, la ketoret vient apres, et il ne reste plus rien a glisser entre les deux temps de l'entretien.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="430" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="14.4" font-weight="700" fill="#1c1917">Abaye contre Rav Papa : deux facons de depenser les deux &quot;boker&quot;</text>
+  <text x="380" y="43" text-anchor="middle" font-size="10.2" fill="#57534e">Les deux repartitions sont arithmetiquement correctes -- c'est une contrainte exterieure qui tranche</text>
+
+  <!-- colonne Abaye -->
+  <rect x="24" y="58" width="344" height="252" rx="6" fill="#f0fdf4" stroke="#8fbfa4" stroke-width="1.5"/>
+  <text x="196" y="79" text-anchor="middle" font-size="11.4" font-weight="700" fill="#14532d">Abaye</text>
+  <text x="196" y="97" text-anchor="middle" font-size="9.4" fill="#2f6b4a">1er &quot;boker&quot; -&gt; hatavat 5 nerot | 2e -&gt; dam ha-tamid</text>
+  <rect x="44" y="108" width="304" height="26" rx="4" fill="#ffffff" stroke="#8fbfa4" stroke-width="1"/>
+  <text x="196" y="125" text-anchor="middle" font-size="9.4" fill="#14532d">Dichoun de l'autel interieur</text>
+  <rect x="44" y="140" width="304" height="26" rx="4" fill="#dcfce7" stroke="#8fbfa4" stroke-width="1"/>
+  <text x="196" y="157" text-anchor="middle" font-size="9.4" font-weight="700" fill="#14532d">Hatavat CINQ nerot</text>
+  <rect x="44" y="172" width="304" height="26" rx="4" fill="#fef3c7" stroke="#d6bb77" stroke-width="1.2"/>
+  <text x="196" y="189" text-anchor="middle" font-size="9.4" font-weight="700" fill="#78350f">Dam ha-tamid -- la coupure</text>
+  <rect x="44" y="204" width="304" height="26" rx="4" fill="#dcfce7" stroke="#8fbfa4" stroke-width="1"/>
+  <text x="196" y="221" text-anchor="middle" font-size="9.4" font-weight="700" fill="#14532d">Hatavat DEUX nerot</text>
+  <rect x="44" y="236" width="304" height="26" rx="4" fill="#ffffff" stroke="#8fbfa4" stroke-width="1"/>
+  <text x="196" y="253" text-anchor="middle" font-size="9.4" fill="#14532d">Ketoret</text>
+  <text x="196" y="284" text-anchor="middle" font-size="10" font-weight="700" fill="#14532d">Le sang du tamid tombe pile entre les cinq</text>
+  <text x="196" y="298" text-anchor="middle" font-size="10" font-weight="700" fill="#14532d">et les deux : la coupure est assuree.</text>
+
+  <!-- colonne Rav Papa -->
+  <rect x="392" y="58" width="344" height="252" rx="6" fill="#fef2f2" stroke="#e0a5a5" stroke-width="1.5"/>
+  <text x="564" y="79" text-anchor="middle" font-size="11.4" font-weight="700" fill="#7f1d1d">Rav Papa</text>
+  <text x="564" y="97" text-anchor="middle" font-size="9.4" fill="#991b1b">1er &quot;boker&quot; -&gt; dichoun interieur | 2e -&gt; dam ha-tamid</text>
+  <rect x="412" y="108" width="304" height="26" rx="4" fill="#ffffff" stroke="#e0a5a5" stroke-width="1"/>
+  <text x="564" y="125" text-anchor="middle" font-size="9.4" fill="#7f1d1d">Dichoun de l'autel interieur (3 contre 2)</text>
+  <rect x="412" y="140" width="304" height="26" rx="4" fill="#fee2e2" stroke="#e0a5a5" stroke-width="1"/>
+  <text x="564" y="157" text-anchor="middle" font-size="9.4" font-weight="700" fill="#7f1d1d">Dam ha-tamid (2 contre 2, mekhaper adif)</text>
+  <rect x="412" y="172" width="304" height="26" rx="4" fill="#fee2e2" stroke="#e0a5a5" stroke-width="1"/>
+  <text x="564" y="189" text-anchor="middle" font-size="9.4" font-weight="700" fill="#7f1d1d">Hatavat CINQ nerot</text>
+  <rect x="412" y="204" width="304" height="26" rx="4" fill="#fee2e2" stroke="#e0a5a5" stroke-width="1"/>
+  <text x="564" y="221" text-anchor="middle" font-size="9.4" font-weight="700" fill="#7f1d1d">Hatavat DEUX nerot -- collees</text>
+  <rect x="412" y="236" width="304" height="26" rx="4" fill="#ffffff" stroke="#e0a5a5" stroke-width="1"/>
+  <text x="564" y="253" text-anchor="middle" font-size="9.4" fill="#7f1d1d">Ketoret</text>
+  <text x="564" y="284" text-anchor="middle" font-size="10" font-weight="700" fill="#7f1d1d">Plus rien ne s'intercale entre les cinq et les deux :</text>
+  <text x="564" y="298" text-anchor="middle" font-size="10" font-weight="700" fill="#7f1d1d">&quot;apsoukei be-mai mafseket lehou ?&quot;</text>
+
+  <!-- verdict -->
+  <rect x="24" y="326" width="712" height="88" rx="6" fill="#f5f5f4" stroke="#d6d3d1" stroke-width="1.2"/>
+  <text x="380" y="346" text-anchor="middle" font-size="10.6" font-weight="700" fill="#1c1917">La replique d'Abaye n'est decisive que si la coupure exige un vrai service</text>
+  <rect x="48" y="356" width="320" height="46" rx="5" fill="#ffffff" stroke="#a8a29e" stroke-width="1"/>
+  <text x="208" y="373" text-anchor="middle" font-size="9.6" font-weight="700" fill="#44403c">Rech Lakich : la coupure sert seulement</text>
+  <text x="208" y="386" text-anchor="middle" font-size="9.6" fill="#44403c">a faire vibrer l'azara -- attendre suffit.</text>
+  <text x="208" y="398" text-anchor="middle" font-size="9" font-style="italic" fill="#7f1d1d">Rav Papa pourrait tenir.</text>
+  <rect x="392" y="356" width="320" height="46" rx="5" fill="#ffffff" stroke="#a8a29e" stroke-width="1"/>
+  <text x="552" y="373" text-anchor="middle" font-size="9.6" font-weight="700" fill="#44403c">Rabbi Yohanan : &quot;boker boker&quot; = deux matins</text>
+  <text x="552" y="386" text-anchor="middle" font-size="9.6" fill="#44403c">-- il FAUT un service entre les deux.</text>
+  <text x="552" y="398" text-anchor="middle" font-size="9" font-style="italic" fill="#14532d">Abaye seul reste possible.</text>
+</svg></div><div class="svg-cap">Deux repartitions arithmetiquement irreprochables, un seul ordre viable : celui qui laisse un service tomber entre les cinq lampes et les deux.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הַנִּיחָא לְרֵישׁ לָקִישׁ, דְּאָמַר: לָמָּה מְטִיבִין וְחוֹזְרִים וּמְטִיבִין — כְּדֵי לְהַרְגִּישׁ כָּל הָעֲזָרָה כֻּולָּהּ, שַׁפִּיר.</div>
+            <div class="fr"><p>Cela va bien pour Rech Lakich, qui dit : pourquoi entretient-on [les lampes], puis revient-on les entretenir [de nouveau] ? Afin de faire vibrer l&#x27;azara tout entiere -- fort bien.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שַׁפִּיר</b> יֵשׁ לְךָ לוֹמַר יַפְסִיק בֵּינֵיהֶם לְהַמְתִּין בֵּין אֵלּוּ לְאֵלּוּ לָצֵאת וְלִיכָּנֵס וְלֹא תְּהֵא עֲבוֹדָה בֵּינְתַיִים:</div>
+          <div class="glose-fr">Fort bien -- tu peux dire qu&#x27;il separe entre elles en patientant entre celles-ci et celles-la, le temps de sortir et d&#x27;entrer, sans qu&#x27;il y ait de service entre-temps.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara verifie la portee de la replique d'Abaye. Si l'on suit <b>Rech Lakich</b>, la coupure de l'entretien n'a qu'une fonction ceremonielle : <b>le-hargich kol ha-azara koula</b>, faire vibrer tout le parvis. Le kohen sort, revient, on entend ses pas, le service prend de l'ampleur aux yeux et aux oreilles de l'assistance.</p><p>Rachi tire la consequence : dans cette lecture, aucune <b>avoda</b> n'a besoin de s'intercaler. Une simple attente -- le temps de sortir et de rentrer -- suffit a produire l'effet. L'objection d'Abaye a Rav Papa perd alors sa force.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא לְרַבִּי יוֹחָנָן, דְּאָמַר: ״בַּבֹּקֶר בַּבֹּקֶר״ — חַלְּקֵהוּ לִשְׁנֵי בְּקָרִים, מַאי אִיכָּא לְמֵימַר?</div>
+            <div class="fr"><p>Mais pour Rabbi Yohanan, qui dit : &quot;ba-boker ba-boker&quot; -- divise-le en deux matins, qu&#x27;y a-t-il a dire ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא לְרַבִּי יוֹחָנָן</b> דְּדָרֵישׁ בַּבֹּקֶר בַּבֹּקֶר בְּהֵיטִיבוֹ חַלְּקֵהוּ לֵב&#x27; נֵרוֹת לִשְׁנֵי בְּקָרִים אֵלּוּ יְקַדְּמוּ לַעֲבוֹדָה אַחַת אַלְמָא יֵשׁ עֲבוֹדָה בֵּינֵיהֶם וְהָא לֵיכָּא לְמֵימַר אַפְסְקֵיהּ בְּדִישּׁוּן מִזְבֵּחַ הַפְּנִימִי דְּאִם כֵּן דְּמַקְדִּים הֲטָבַת ה&#x27; נֵרוֹת לְדִישּׁוּן הֲוָה לֵיהּ מַעֲבִיר עַל הַמִּצְוֹת וַעֲבוֹדָה תּוּ לֵיכָּא לְהַקְדִּים מְקוֹמָהּ לְתִתָּהּ בֵּינֵיהֶם שֶׁכֻּולָּם סְדוּרוֹת כָּאן ע&quot;פ הַמִּקְרָאוֹת:</div>
+          <div class="glose-fr">Qui expose &quot;ba-boker ba-boker&quot; a propos de &quot;be-hetivo&quot; (lorsqu&#x27;il entretiendra) : divise-le, pour les deux lampes, en deux matins -- que celles-la precedent un service ; il ressort donc qu&#x27;il y a un service entre elles. Et l&#x27;on ne peut pas dire qu&#x27;il les separe par le deblaiement de l&#x27;autel interieur, car alors, en avancant l&#x27;entretien des cinq lampes avant le deblaiement, il serait &quot;celui qui passe outre les mitsvot&quot; ; et il n&#x27;y a plus aucun service dont on puisse avancer la place pour l&#x27;inserer entre elles, car ils sont tous ordonnes ici d&#x27;apres les versets.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Selon <b>Rabbi Yohanan</b>, la coupure n'est pas une mise en scene mais une exigence du texte : le redoublement "ba-boker ba-boker" du verset de la ketoret commande de <b>diviser</b> l'entretien des lampes en deux matins, c'est-a-dire en deux moments reellement distincts. Deux matins supposent qu'une <b>avoda</b> les separe.</p><p>Rachi ferme alors toutes les issues. Pourrait-on separer par le <b>dichoun de l'autel interieur</b> ? Non : cela reviendrait a avancer les cinq lampes avant le dichoun, donc a passer outre une mitsva rencontree en premier -- exactement ce qu'interdit Rech Lakich au debut du daf. Et aucun autre service n'est disponible : tous ont deja leur place fixee par les versets. Il ne reste que l'ordre d'Abaye.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 320" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="320" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="14.4" font-weight="700" fill="#1c1917">Pourquoi entretenir cinq lampes, puis revenir en entretenir deux ?</text>
+  <text x="380" y="43" text-anchor="middle" font-size="10.2" fill="#57534e">Deux comprehensions de la coupure -- et une seule laisse la question de Rav Papa ouverte</text>
+
+  <rect x="24" y="58" width="344" height="196" rx="6" fill="#eff6ff" stroke="#9dbbe0" stroke-width="1.5"/>
+  <text x="196" y="80" text-anchor="middle" font-size="11.4" font-weight="700" fill="#1e3a5f">Rech Lakich</text>
+  <text x="196" y="102" text-anchor="middle" font-size="9.6" fill="#1e3a5f">La coupure est une mise en scene :</text>
+  <text x="196" y="116" text-anchor="middle" font-size="9.6" fill="#1e3a5f">&quot;kedei le-hargich kol ha-azara koula&quot; --</text>
+  <text x="196" y="130" text-anchor="middle" font-size="9.6" fill="#1e3a5f">faire vibrer toute la cour du Temple.</text>
+  <text x="196" y="154" text-anchor="middle" font-size="9.4" fill="#3b5f8a">Le kohen sort, revient, on entend</text>
+  <text x="196" y="168" text-anchor="middle" font-size="9.4" fill="#3b5f8a">ses pas et le bruit des services.</text>
+  <rect x="48" y="184" width="296" height="52" rx="5" fill="#ffffff" stroke="#9dbbe0" stroke-width="1"/>
+  <text x="196" y="202" text-anchor="middle" font-size="9.6" font-weight="700" fill="#1e3a5f">Consequence : aucun service n'est requis</text>
+  <text x="196" y="216" text-anchor="middle" font-size="9.6" fill="#1e3a5f">entre les deux temps. Une simple attente</text>
+  <text x="196" y="229" text-anchor="middle" font-size="9.6" fill="#1e3a5f">suffit a produire l'effet voulu.</text>
+
+  <rect x="392" y="58" width="344" height="196" rx="6" fill="#f5f3ff" stroke="#b6a8d9" stroke-width="1.5"/>
+  <text x="564" y="80" text-anchor="middle" font-size="11.4" font-weight="700" fill="#4c1d95">Rabbi Yohanan</text>
+  <text x="564" y="102" text-anchor="middle" font-size="9.6" fill="#4c1d95">La coupure est une exigence du texte :</text>
+  <text x="564" y="116" text-anchor="middle" font-size="9.6" fill="#4c1d95">&quot;boker boker&quot; -- halkehou li-chnei bekarim,</text>
+  <text x="564" y="130" text-anchor="middle" font-size="9.6" fill="#4c1d95">divise l'entretien en deux matins.</text>
+  <text x="564" y="154" text-anchor="middle" font-size="9.4" fill="#5b21b6">Deux matins veut dire deux moments</text>
+  <text x="564" y="168" text-anchor="middle" font-size="9.4" fill="#5b21b6">reellement distincts du service.</text>
+  <rect x="416" y="184" width="296" height="52" rx="5" fill="#ffffff" stroke="#b6a8d9" stroke-width="1"/>
+  <text x="564" y="202" text-anchor="middle" font-size="9.6" font-weight="700" fill="#4c1d95">Consequence : il FAUT une avoda entre elles.</text>
+  <text x="564" y="216" text-anchor="middle" font-size="9.6" fill="#4c1d95">Seul le sang du tamid peut jouer ce role --</text>
+  <text x="564" y="229" text-anchor="middle" font-size="9.6" fill="#4c1d95">donc l'ordre d'Abaye s'impose.</text>
+
+  <rect x="24" y="268" width="712" height="38" rx="5" fill="#f5f5f4" stroke="#d6d3d1" stroke-width="1"/>
+  <text x="380" y="284" text-anchor="middle" font-size="9.6" fill="#44403c">Nafka mina : sous Rech Lakich, la proposition de Rav Papa reste concevable ; sous Rabbi Yohanan, elle s'effondre --</text>
+  <text x="380" y="298" text-anchor="middle" font-size="9.6" fill="#44403c">et le dichoun interieur ne peut pas servir de coupure, car l'avancer apres les cinq lampes serait deja passer outre une mitsva.</text>
+</svg></div><div class="svg-cap">Deux comprehensions de la coupure -- ornement liturgique ou exigence scripturaire -- et deux sorts differents pour la proposition de Rav Papa.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רָבִינָא לְרַב אָשֵׁי: הַאי ״בַּבֹּקֶר בַּבֹּקֶר״ דְּעֵצִים, מִי מְיַיתַּר? הָא מִיבְּעֵי לֵיהּ לְגוּפֵיהּ, דְּקָאָמַר רַחֲמָנָא — נִקְדְּמוּ לְמַעֲרָכָה שְׁנִיָּה שֶׁל קְטֹורֶת! אֲמַר לֵיהּ: וְלָאו מִי אוֹקֵימְנָא ״עָלֶיהָ״ וְלֹא עַל חֲבֶרְתָּהּ, מִכְּלָל דְּאִיתָהּ לַחֲבֶרְתָּהּ.</div>
+            <div class="fr"><p>Ravina dit a Rav Achi : ce &quot;ba-boker ba-boker&quot; des buches, est-il vraiment superflu ? Il est pourtant necessaire pour lui-meme, puisque le Misericordieux dit : qu&#x27;elles precedent la seconde maarakha, celle de la ketoret !</p><p>Il lui repondit : n&#x27;avons-nous pas etabli &quot;sur elle&quot; (aleha) -- et non sur sa compagne -- ce qui implique, par deduction, que sa compagne existe [deja] ?</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Ravina remet en cause la base meme du raisonnement d'Abaye : si le "ba-boker ba-boker" des buches n'est pas superflu, il n'y a rien a jeter ailleurs. Or il semble bien necessaire, puisque c'est lui qui enseigne que les deux buches precedent la <b>seconde maarakha</b>, celle dont on tire les braises de la ketoret.</p><p>Rav Achi repond que ce rang est deja acquis autrement. On a etabli que le mot <b>aleha</b> ("sur elle") du verset limite le depot du bois a la <i>grande</i> maarakha et non a sa compagne. Or une exclusion ne se formule que contre quelque chose qui existe : si le verset prend la peine d'exclure la seconde maarakha, c'est qu'elle est deja la au moment ou l'on ajoute les buches. Le rang etait donc connu sans le "ba-boker ba-boker", qui redevient disponible.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאי שְׁנָא דְּעָבֵיד הֲטָבַת חָמֵשׁ נֵרוֹת בְּרֵישָׁא? נֶעְבֵּיד הֲטָבַת שְׁתֵּי נֵרוֹת בְּרֵישָׁא! כֵּיוָן דְּאַתְחִיל בְּהוּ — עֲבִיד רֻובָּא. וּנְעַבֵּיד שִׁית! אֲמַר קְרָא: ״בְּהֵיטִיבוֹ אֶת הַנֵּרֹות יַקְטִירֶנָּה״, וְאֵין נֵרוֹת פְּחוּתוֹת מִשְּׁתַּיִם.</div>
+            <div class="fr"><p>En quoi est-ce different, qu&#x27;il fasse d&#x27;abord l&#x27;entretien de cinq lampes ? Qu&#x27;il fasse d&#x27;abord l&#x27;entretien de deux lampes ! -- Puisqu&#x27;il a commence avec elles, il en fait la majorite. -- Qu&#x27;il en fasse donc six ! -- Le verset dit : &quot;lorsqu&#x27;il entretiendra les lampes, il la fera fumer&quot; (Chemot 30,7), et &quot;lampes&quot; n&#x27;est pas moins de deux.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Puisque le texte impose seulement une coupure, pourquoi ce partage precis en cinq et deux ? La guemara le borne des deux cotes.</p><p><b>Par le bas</b> : commencer par deux seulement serait incoherent -- <b>keivan de-athil behou, avid rouba</b>, une fois qu'on a mis la main a l'ouvrage, on en fait la majorite. Le premier temps doit donc porter sur plus de la moitie des sept lampes.</p><p><b>Par le haut</b> : pourquoi pas six, et une seule ensuite ? Parce que le verset qui regit le second temps parle des <b>nerot</b>, au pluriel -- et un pluriel n'est jamais inferieur a deux. Il faut donc que deux lampes restent pour la seconde phase. Cinq et deux est le seul partage qui satisfasse les deux contraintes.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="330" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="14.4" font-weight="700" fill="#1c1917">Pourquoi cinq lampes d'abord, et pas deux -- ni six</text>
+  <text x="380" y="43" text-anchor="middle" font-size="10.2" fill="#57534e">Deux contraintes se croisent : commencer par la majorite, et laisser un reste qui merite encore le pluriel</text>
+
+  <circle cx="224" cy="128" r="17" fill="#fef3c7" stroke="#d6bb77" stroke-width="1.6"/>
+  <text x="224" y="132" text-anchor="middle" font-size="10" font-weight="700" fill="#44403c">1</text>
+  <line x1="224" y1="145" x2="224" y2="168" stroke="#d6bb77" stroke-width="2"/>
+  <circle cx="276" cy="128" r="17" fill="#fef3c7" stroke="#d6bb77" stroke-width="1.6"/>
+  <text x="276" y="132" text-anchor="middle" font-size="10" font-weight="700" fill="#44403c">2</text>
+  <line x1="276" y1="145" x2="276" y2="168" stroke="#d6bb77" stroke-width="2"/>
+  <circle cx="328" cy="128" r="17" fill="#fef3c7" stroke="#d6bb77" stroke-width="1.6"/>
+  <text x="328" y="132" text-anchor="middle" font-size="10" font-weight="700" fill="#44403c">3</text>
+  <line x1="328" y1="145" x2="328" y2="168" stroke="#d6bb77" stroke-width="2"/>
+  <circle cx="380" cy="128" r="17" fill="#fef3c7" stroke="#d6bb77" stroke-width="1.6"/>
+  <text x="380" y="132" text-anchor="middle" font-size="10" font-weight="700" fill="#44403c">4</text>
+  <line x1="380" y1="145" x2="380" y2="168" stroke="#d6bb77" stroke-width="2"/>
+  <circle cx="432" cy="128" r="17" fill="#fef3c7" stroke="#d6bb77" stroke-width="1.6"/>
+  <text x="432" y="132" text-anchor="middle" font-size="10" font-weight="700" fill="#44403c">5</text>
+  <line x1="432" y1="145" x2="432" y2="168" stroke="#d6bb77" stroke-width="2"/>
+  <circle cx="484" cy="128" r="17" fill="#e0e7ff" stroke="#8b93d9" stroke-width="1.6"/>
+  <text x="484" y="132" text-anchor="middle" font-size="10" font-weight="700" fill="#44403c">6</text>
+  <line x1="484" y1="145" x2="484" y2="168" stroke="#8b93d9" stroke-width="2"/>
+  <circle cx="536" cy="128" r="17" fill="#e0e7ff" stroke="#8b93d9" stroke-width="1.6"/>
+  <text x="536" y="132" text-anchor="middle" font-size="10" font-weight="700" fill="#44403c">7</text>
+  <line x1="536" y1="145" x2="536" y2="168" stroke="#8b93d9" stroke-width="2"/>
+
+  <line x1="216" y1="168" x2="536" y2="168" stroke="#a8a29e" stroke-width="2.4"/>
+  <text x="380" y="72" text-anchor="middle" font-size="10.4" font-weight="700" fill="#44403c">Les sept lampes de la menora</text>
+
+  <line x1="205" y1="94" x2="459" y2="94" stroke="#b45309" stroke-width="1.6"/>
+  <line x1="205" y1="88" x2="205" y2="100" stroke="#b45309" stroke-width="1.6"/>
+  <line x1="459" y1="88" x2="459" y2="100" stroke="#b45309" stroke-width="1.6"/>
+  <text x="332" y="85" text-anchor="middle" font-size="9.8" font-weight="700" fill="#b45309">1er temps : cinq lampes</text>
+  <line x1="473" y1="94" x2="555" y2="94" stroke="#4c1d95" stroke-width="1.6"/>
+  <line x1="473" y1="88" x2="473" y2="100" stroke="#4c1d95" stroke-width="1.6"/>
+  <line x1="555" y1="88" x2="555" y2="100" stroke="#4c1d95" stroke-width="1.6"/>
+  <text x="514" y="85" text-anchor="middle" font-size="9.8" font-weight="700" fill="#4c1d95">2e temps : deux</text>
+
+  <rect x="52" y="196" width="326" height="72" rx="6" fill="#fffbeb" stroke="#d6bb77" stroke-width="1.3"/>
+  <text x="215" y="216" text-anchor="middle" font-size="10.4" font-weight="700" fill="#78350f">Plancher : pourquoi pas deux d'abord ?</text>
+  <text x="215" y="234" text-anchor="middle" font-size="9.4" fill="#92400e">&quot;Keivan de-athil behou, avid rouba&quot; :</text>
+  <text x="215" y="248" text-anchor="middle" font-size="9.4" fill="#92400e">une fois commence, on fait la majorite --</text>
+  <text x="215" y="261" text-anchor="middle" font-size="9.4" fill="#92400e">donc au moins quatre, en pratique cinq.</text>
+
+  <rect x="392" y="196" width="326" height="72" rx="6" fill="#f5f3ff" stroke="#b6a8d9" stroke-width="1.3"/>
+  <text x="555" y="216" text-anchor="middle" font-size="10.4" font-weight="700" fill="#4c1d95">Plafond : pourquoi pas six ?</text>
+  <text x="555" y="234" text-anchor="middle" font-size="9.4" fill="#5b21b6">&quot;Be-hetivo et ha-NEROT yaktirena&quot; :</text>
+  <text x="555" y="248" text-anchor="middle" font-size="9.4" fill="#5b21b6">le pluriel du second temps exige au moins</text>
+  <text x="555" y="261" text-anchor="middle" font-size="9.4" fill="#5b21b6">deux lampes -- il ne peut pas en rester une.</text>
+
+  <rect x="52" y="282" width="666" height="32" rx="5" fill="#f5f5f4" stroke="#d6d3d1" stroke-width="1"/>
+  <text x="385" y="302" text-anchor="middle" font-size="9.8" fill="#44403c">5 + 2 est le seul partage qui satisfasse a la fois la majorite au premier temps et le pluriel au second.</text>
+</svg></div><div class="svg-cap">Un plancher (faire la majorite) et un plafond (le pluriel de nerot) : entre les deux, une seule repartition possible.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וַהֲטָבַת שְׁתֵּי נֵרוֹת קוֹדֶמֶת לִקְטֹורֶת, דְּאָמַר קְרָא: ״בְּהֵיטִיבוֹ אֶת הַנֵּרוֹת״, וַהֲדַר ״יַקְטִירֶנָּה״.</div>
+            <div class="fr"><p>Et l&#x27;entretien des deux lampes precede la ketoret, car le verset dit : &quot;lorsqu&#x27;il entretiendra les lampes&quot;, et ensuite &quot;il la fera fumer&quot;.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le maillon le plus direct de toute la chaine : ici, nul decompte ni principe de priorite, seulement l'ordre des mots dans le verset. "<b>Be-hetivo et ha-nerot</b>" vient avant "<b>yaktirena</b>" : l'entretien des lampes precede la ketoret. C'est la position d'<b>Abba Chaoul</b>, sur laquelle Abaye a construit tout son seder.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּקְטֹורֶת לְאֵבָרִים, דְּתַנְיָא: יֻוקְדַּם דָּבָר שֶׁנֶּאֱמַר בּוֹ ״בַּבֹּקֶר בַּבֹּקֶר״, לְדָבָר שֶׁלֹּא נֶאֱמַר בּוֹ אֶלָּא ״בֹּקֶר״ אֶחָד בִּלְבַד.</div>
+            <div class="fr"><p>Et la ketoret [precede] les membres, comme il est enseigne dans une baraita : que precede la chose a propos de laquelle il est dit &quot;ba-boker ba-boker&quot;, sur la chose a propos de laquelle il n&#x27;est dit qu&#x27;un seul &quot;boker&quot;.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְדָבָר שֶׁלֹּא נֶאֱמַר בּוֹ אֶלָּא בֹּקֶר אֶחָד</b> הַתָּמִיד נֶאֱמַר בּוֹ תַּעֲשֶׂה בַּבֹּקֶר וא&quot;ת הָא שָׁדֵינַן עָלֶיהָ חַד מֵהָנָךְ דִּשְׁנֵי גְּזִירִין אָדָם הַתָּמִיד הוּא דְּשָׁדֵינַן עָלֶיהָ וְלֹא עַל הָאֵבָרִים וְאִם תֹּאמַר מְכַפֵּר עָדִיף אֵין כַּפָּרָה אֶלָּא בְּדָם:</div>
+          <div class="glose-fr">Le tamid, a propos duquel il est dit &quot;tu feras... le matin&quot;. Et si tu dis : n&#x27;avons-nous pas deja jete sur lui l&#x27;un de ces [&quot;boker&quot;] des deux buches ? -- C&#x27;est sur le sang du tamid que nous l&#x27;avons jete, et non sur les membres. Et si tu dis : ce qui expie a la priorite ! -- il n&#x27;y a d&#x27;expiation que par le sang.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>יֻוקְדַּם דָּבָר שֶׁנֶּאֱמַר בּוֹ בַּבֹּקֶר בַּבֹּקֶר לְדָבָר שֶׁלֹּא נֶאֱמַר בּוֹ אֶלָּא בַּבֹּקֶר</b> דְּאע&quot;ג דְּאָמַר לְעֵיל דְּתָמִיד כְּתִיב בֵּיהּ תְּרֵי בַּבֹּקֶר הַייְנוּ דַּם הַתָּמִיד דַּווְקָא וְקָשֶׁה לִי נֵימָא תְּרֵי בַּבֹּקֶר דִּגְזִירֵי עֵצִים חַד שַׁדְיֵיהּ אַדָּם הַתָּמִיד דְּנִקְדְּמֵיהּ לְדִישּׁוּן הַפְּנִימִי דאע&quot;ג דְּהָכָא תְּרֵי וְהָכָא תְּרֵי מְכַפֵּר עָדִיף וְחַד שַׁדְיֵיהּ אַאֶבְרֵי תָּמִיד דְּנִיקְדְּמוּ לַהֲטָבַת שְׁתֵּי נֵרוֹת דאע&quot;ג דְּהָכָא תְּרֵי וְהָכָא תְּרֵי נִקְדְּמוּ כִּי הֵיכִי דְּלֶיהֱוֵי הֶפְסֵק בַּנֵּרוֹת דְּרַחֲמָנָא אָמַר לִיפְסְקִינְהוּ וְאִי לָא מַפְסִיק לְהוּ בָּאֵבָרִים בְּמַאי מַפְסִיק לְהוּ וְי&quot;ל דְּאֵינוֹ סְבָרָא לְשַׁוּוֹיֵי תַּרְוַיְיהוּ בַּבֹּקֶר בְּתָמִיד כִּדְפָרֵישִׁית לְעֵיל ואע&quot;ג דְּחַד בְּדָם וְחַד בָּאֵבָרִים מ&quot;מ כֵּיוָן דִּבְחַד זִיבְחָא הוּא לֹא מִסְתַּבֵּר לוֹמַר כֵּן:</div>
+          <div class="glose-fr">Bien qu&#x27;il ait ete dit plus haut qu&#x27;il est ecrit deux &quot;ba-boker&quot; a propos du tamid, cela vaut pour le sang du tamid exclusivement. Et voici ce qui me fait difficulte : disons donc que des deux &quot;ba-boker&quot; des buches, l&#x27;un soit jete sur le sang du tamid pour qu&#x27;il precede le deblaiement de l&#x27;autel interieur -- car bien qu&#x27;ici il y en ait deux et la deux, ce qui expie a la priorite -- et que l&#x27;autre soit jete sur les membres du tamid pour qu&#x27;ils precedent l&#x27;entretien des deux lampes : car bien qu&#x27;ici il y en ait deux et la deux, qu&#x27;ils passent devant, afin qu&#x27;il y ait une coupure dans [l&#x27;entretien des] lampes, puisque le Misericordieux a dit de les couper -- et si l&#x27;on ne les coupe pas par les membres, par quoi les couperait-on ? On peut repondre qu&#x27;il n&#x27;est pas sense de placer les deux &quot;ba-boker&quot; sur le tamid, comme je l&#x27;ai explique plus haut ; et bien que l&#x27;un porte sur le sang et l&#x27;autre sur les membres, il reste que, puisqu&#x27;il s&#x27;agit d&#x27;un seul et meme sacrifice, il n&#x27;est pas raisonnable de parler ainsi.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le decompte reapparait, cette fois dans sa forme la plus simple : la <b>ketoret</b> a deux "boker" (Chemot 30,7), les <b>membres du tamid</b> n'en ont qu'un (Chemot 29,39). Deux l'emporte sur un.</p><p>Rachi devance deux objections. D'abord : un des "boker" des buches n'a-t-il pas ete jete sur le tamid ? Oui -- mais sur le <b>sang</b> du tamid, pas sur ses membres. Ensuite : <b>mekhaper adif</b> ne devrait-il pas jouer, puisque le tamid expie ? Non -- <b>ein kapara ella be-dam</b>, il n'y a d'expiation que par le sang ; la combustion des membres n'expie pas.</p><p>Tossefot pousse plus loin et propose une repartition qui resoudrait elegamment le probleme de la coupure : un "boker" au sang, l'autre aux membres, ces derniers venant alors s'intercaler entre les cinq lampes et les deux. La reponse est de principe : on ne repartit pas les deux "boker" sur un seul et meme sacrifice -- le sang et les membres relevent d'un <b>had zivha</b>, un unique zevah.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 260" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="260" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="14.4" font-weight="700" fill="#1c1917">Ketoret avant les membres : le decompte le plus simple du daf</text>
+
+  <rect x="60" y="52" width="290" height="86" rx="6" fill="#eff6ff" stroke="#9dbbe0" stroke-width="1.5"/>
+  <text x="205" y="74" text-anchor="middle" font-size="11" font-weight="700" fill="#1e3a5f">Ketoret</text>
+  <text x="205" y="94" text-anchor="middle" font-size="9.6" fill="#3b5f8a">&quot;ba-boker ba-boker&quot; (Chemot 30,7)</text>
+  <text x="205" y="119" text-anchor="middle" font-size="17" font-weight="700" fill="#1e3a5f">2 &quot;boker&quot;</text>
+
+  <text x="380" y="102" text-anchor="middle" font-size="20" font-weight="700" fill="#b45309">&gt;</text>
+
+  <rect x="410" y="52" width="290" height="86" rx="6" fill="#ecfdf5" stroke="#8fbfa4" stroke-width="1.5"/>
+  <text x="555" y="74" text-anchor="middle" font-size="11" font-weight="700" fill="#14532d">Evarim du tamid</text>
+  <text x="555" y="94" text-anchor="middle" font-size="9.6" fill="#2f6b4a">&quot;taasse ba-boker&quot; (Chemot 29,39)</text>
+  <text x="555" y="119" text-anchor="middle" font-size="17" font-weight="700" fill="#14532d">1 seul &quot;boker&quot;</text>
+
+  <rect x="60" y="156" width="640" height="86" rx="6" fill="#f5f5f4" stroke="#d6d3d1" stroke-width="1.2"/>
+  <text x="380" y="176" text-anchor="middle" font-size="10.4" font-weight="700" fill="#1c1917">Les deux objections que Rachi devance</text>
+  <text x="76" y="196" font-size="9.6" fill="#44403c">1. &quot;Mais un &quot;boker&quot; des buches n'a-t-il pas ete jete sur le tamid ?&quot; -- Il l'a ete sur le SANG du tamid, pas sur ses membres.</text>
+  <text x="76" y="214" font-size="9.6" fill="#44403c">2. &quot;Et mekhaper adif, puisque le tamid expie ?&quot; -- Il n'y a d'expiation que par le sang ; les membres n'expient pas.</text>
+  <text x="76" y="233" font-size="9.4" font-style="italic" fill="#57534e">Tossefot ajoute : on ne repartit pas les deux &quot;boker&quot; sur un meme sacrifice -- le sang et les membres sont un seul zevah.</text>
+</svg></div><div class="svg-cap">Deux &quot;boker&quot; contre un : et les deux objections que Rachi ecarte au passage.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאֵבָרִים לַמִּנְחָה, דְּתַנְיָא: מִנַּייִן שֶׁלֹּא יְהֵא דָּבָר קוֹדֵם לְתָמִיד שֶׁל שַׁחַר?</div>
+            <div class="fr"><p>Et les membres [precedent] la minha, comme il est enseigne dans une baraita : d&#x27;ou [sait-on] que rien ne doit preceder le tamid du matin ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִנַּייִן שֶׁלֹּא יְהֵא דָּבָר</b> נִיתָּן עַל מַעֲרָכָה גְּדוֹלָה קֹודֶם לְאֶבְרֵי הַתָּמִיד:</div>
+          <div class="glose-fr">D&#x27;ou que rien ne doit -- etre place sur la grande maarakha avant les membres du tamid.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Dernier maillon du daf, et la baraita est laissee en suspens -- la guemara en donnera la source au debut de 34a. Le principe est celui de la <b>preseance absolue du tamid du matin</b> : aucune offrande ne peut etre placee sur la <b>maarakha guedola</b> (le grand bucher de l'autel exterieur) avant les membres du tamid. La <b>minha</b>, l'offrande de farine qui accompagne le tamid, vient donc apres.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_33a.html">&lsaquo; Yoma 33a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

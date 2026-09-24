@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yoma 24b -- la frontiere exacte du sanctuaire : ou un zar meurt, ou il ne meurt pas, et pourquoi les cohanim tiraient au sort quatre fois par jour.</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Yoma 24b -- la frontiere exacte du sanctuaire : ou un zar meurt, ou il ne meurt pas, et pourquoi les cohanim tiraient au sort quatre fois par jour.</h1>
+    <div class="ref">Yoma 24b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_24a.html">&lsaquo; Yoma 24a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> Le daf s&#x27;ouvre sur la reponse que 24a laissait suspendue : Levi soutient que le filtre avodat matana -- seul un service qui depose rend passible, pas un service qui retire -- n&#x27;a ete enonce qu&#x27;a propos de ce qui se fait a l&#x27;interieur du parokhet ; au-dehors, un service de retrait acheve rend bel et bien passible, et la teroumat hadechen reste dans la liste. L&#x27;objection symetrique -- alors limitons aussi l&#x27;exigence d&#x27;avoda tama au dedans -- est ecartee par une seule lettre : le vav de ve-avadtem recoud les deux domaines, tandis qu&#x27;avodat matana, depourvue de vav, reste enfermee dans le sien.</p><p>Rava demande alors ou tombe le Heikhal, ni Saint des saints ni parvis, et tranche lui-meme par un autre vav : ou-le-mibeit la-parokhet annexe le Sanctuaire au dedans -- un service de retrait y est exempt. Mais l&#x27;annexion joue dans les deux sens, et la guemara passe alors en revue tout ce qui se depose dans le Heikhal : la table des pains, les coupelles d&#x27;encens, la menora, la meche, l&#x27;huile, l&#x27;allumage -- chaque candidat tombe parce qu&#x27;un geste reste a faire apres lui, jusqu&#x27;a l&#x27;allumage, ecarte pour une autre raison, hadlaka lav avoda hi, avec la contre-objection de la hatsatat alita qui oblige a distinguer le feu de l&#x27;autel, objet du culte, de la flamme de la menora, simple aboutissement.</p><p>La meme mecanique s&#x27;applique au bucher de l&#x27;autel jusqu&#x27;a la pose des deux buches, ou Rav et Rabbi Yohanan se separent franchement sur le decoupage des gestes. La sougya se referme sans arbitrage, sur deux baraitot, l&#x27;une taillee pour Rav sans la teroumat hadechen, l&#x27;autre pour Levi qui l&#x27;inscrit en tete.</p><p>La derniere partie du daf revient a la michna et a ses quatre payassot : pourquoi rassembler quatre fois plutot qu&#x27;une ? Rabbi Yohanan repond que la repetition est voulue pour le bruit qu&#x27;elle produit -- faire vibrer toute la azara, honneur rendu au Roi.</p><p>Puis Rav Nahman et Rav Chechet divergent sur la tenue du tirage : vetements profanes pour ecarter les hommes de main qui serviraient de force, ou vetements sacres pour empecher que la ferveur ne fasse servir un gagnant avant qu&#x27;il ait eu le temps de se changer.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 500" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="500" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Levi : les deux filtres du verset ne couvrent pas le meme territoire</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">Nombres 18,7 - ve-avadtem ... ou-le-mibeit la-parokhet ... avodat matana</text>
+
+  <rect x="40" y="58" width="680" height="40" rx="9" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.6"/>
+  <text x="380" y="83" text-anchor="middle" font-size="11" font-style="italic" fill="#713f12">ve-avadtem | ou-le-mibeit la-parokhet | avodat matana eten et kehounatkhem</text>
+
+  <rect x="40" y="112" width="330" height="150" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1.7"/>
+  <text x="205" y="134" text-anchor="middle" font-size="12.2" font-weight="700" fill="#1e40af">Filtre avodat matana</text>
+  <text x="205" y="152" text-anchor="middle" font-size="10.2" fill="#1e3a8a">un service qui DEPOSE, pas un service qui RETIRE</text>
+  <line x1="62" y1="162" x2="348" y2="162" stroke="#93c5fd"/>
+  <text x="205" y="182" text-anchor="middle" font-size="10.4" font-weight="700" fill="#1e40af">colle au mot qui le precede</text>
+  <text x="205" y="199" text-anchor="middle" font-size="10.2" fill="#1e3a8a">el mibeit la-parokhet - aucun vav devant lui</text>
+  <rect x="66" y="210" width="278" height="44" rx="7" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="205" y="228" text-anchor="middle" font-size="10.4" font-weight="700" fill="#1e3a8a">Ne vaut QUE pour le dedans</text>
+  <text x="205" y="245" text-anchor="middle" font-size="10" fill="#1e3a8a">au-dehors : meme un service de retrait tue</text>
+
+  <rect x="390" y="112" width="330" height="150" rx="10" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.7"/>
+  <text x="555" y="134" text-anchor="middle" font-size="12.2" font-weight="700" fill="#5b21b6">Filtre avoda tama</text>
+  <text x="555" y="152" text-anchor="middle" font-size="10.2" fill="#4c1d95">un service ACHEVE, que rien ne prolonge</text>
+  <line x1="412" y1="162" x2="698" y2="162" stroke="#c4b5fd"/>
+  <text x="555" y="182" text-anchor="middle" font-size="10.4" font-weight="700" fill="#5b21b6">ve-avadtem : le vav recoud</text>
+  <text x="555" y="199" text-anchor="middle" font-size="10.2" fill="#4c1d95">hadar arviyeh kra - il ajoute au sujet precedent</text>
+  <rect x="416" y="210" width="278" height="44" rx="7" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="555" y="228" text-anchor="middle" font-size="10.4" font-weight="700" fill="#4c1d95">Vaut PARTOUT, dedans comme dehors</text>
+  <text x="555" y="245" text-anchor="middle" font-size="10" fill="#4c1d95">un service inacheve ne tue jamais</text>
+
+  <text x="380" y="288" text-anchor="middle" font-size="12.4" font-weight="700" fill="#1c1917">Reste la question de Rava : et le Heikhal, ni Saint des saints ni parvis ?</text>
+
+  <rect x="40" y="302" width="680" height="106" rx="10" fill="#ffffff" stroke="#a8a29e" stroke-width="1.4"/>
+  <text x="380" y="324" text-anchor="middle" font-size="10.8" fill="#44403c">Un service de retrait dans le Heikhal - dichoun du mizbeah interieur, dichoun de la menora :</text>
+  <rect x="70" y="334" width="290" height="30" rx="6" fill="#fef2f2" stroke="#dc2626"/>
+  <text x="215" y="354" text-anchor="middle" font-size="10.4" fill="#7f1d1d">comme le dedans ? alors : exempt</text>
+  <rect x="400" y="334" width="290" height="30" rx="6" fill="#fef2f2" stroke="#dc2626"/>
+  <text x="545" y="354" text-anchor="middle" font-size="10.4" fill="#7f1d1d">comme le dehors ? alors : passible</text>
+  <rect x="150" y="372" width="460" height="28" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="380" y="391" text-anchor="middle" font-size="10.8" font-weight="700" fill="#166534">Rava tranche seul : mibayit aurait suffi - le vav de ve-la-mibayit annexe le Heikhal</text>
+
+  <rect x="40" y="420" width="680" height="60" rx="10" fill="#fff7ed" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="380" y="441" text-anchor="middle" font-size="11" font-weight="700" fill="#7c2d12">Effet de bord immediat - et c'est lui qui occupe toute la suite du daf</text>
+  <text x="380" y="461" text-anchor="middle" font-size="10.2" fill="#9a3412">Si le Heikhal est annexe au dedans pour le silouk, il l'est aussi pour la matana : un zar y devient passible</text>
+  <text x="380" y="475" text-anchor="middle" font-size="10.2" fill="#9a3412">pour tout service de depot acheve. La guemara passe alors en revue le chulhan, la menora, la maarakha.</text>
+</svg></div>
+          <figcaption>La cle de tout le debut du daf : chez Levi, les deux filtres du verset n&#x27;ont pas la meme portee -- avodat matana ne vaut qu&#x27;au dedans, avoda tama vaut partout -- et le vav de ve-la-mibayit annexe le Heikhal au dedans.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 560" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="560" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Pourquoi aucun de ces services ne tue : la chaine des avodot inachevees</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">A chaque candidat, la guemara repond : ikka - il reste encore quelque chose apres lui</text>
+
+  <rect x="34" y="58" width="692" height="26" rx="8" fill="#f5f5f4"/>
+  <text x="176" y="76" text-anchor="middle" font-size="10.4" font-weight="700" fill="#44403c">Le zar a fait ...</text>
+  <text x="452" y="76" text-anchor="middle" font-size="10.4" font-weight="700" fill="#44403c">... mais il reste apres lui</text>
+  <text x="672" y="76" text-anchor="middle" font-size="10.4" font-weight="700" fill="#44403c">Verdict</text>
+  <line x1="316" y1="58" x2="316" y2="470" stroke="#e7e5e4"/>
+  <line x1="592" y1="58" x2="592" y2="470" stroke="#e7e5e4"/>
+
+  <rect x="34" y="90" width="692" height="112" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.3"/>
+  <text x="46" y="108" font-size="10.6" font-weight="700" fill="#1e40af">Le chulhan - la table des pains</text>
+  <text x="46" y="130" font-size="10.2" fill="#1e3a8a">disposer les douze pains</text>
+  <text x="328" y="130" font-size="10.2" fill="#1e3a8a">la pose des bazikhin, les coupelles d'encens</text>
+  <text x="672" y="130" text-anchor="middle" font-size="10.2" font-weight="700" fill="#57534e">exempt</text>
+  <line x1="34" y1="140" x2="726" y2="140" stroke="#bfdbfe"/>
+  <text x="46" y="160" font-size="10.2" fill="#1e3a8a">disposer les bazikhin</text>
+  <text x="328" y="160" font-size="10.2" fill="#1e3a8a">leur retrait et leur combustion - le chabbat suivant</text>
+  <text x="672" y="160" text-anchor="middle" font-size="10.2" font-weight="700" fill="#57534e">exempt</text>
+  <text x="46" y="184" font-size="9.6" font-style="italic" fill="#1e40af">Rachi : la table n'est achevee qu'une semaine plus tard, quand les coupelles montent a l'autel.</text>
+
+  <rect x="34" y="208" width="692" height="140" rx="8" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.3"/>
+  <text x="46" y="226" font-size="10.6" font-weight="700" fill="#5b21b6">La menora</text>
+  <text x="46" y="248" font-size="10.2" fill="#4c1d95">remettre les lampes en place</text>
+  <text x="328" y="248" font-size="10.2" fill="#4c1d95">la pose de la meche</text>
+  <text x="672" y="248" text-anchor="middle" font-size="10.2" font-weight="700" fill="#57534e">exempt</text>
+  <line x1="34" y1="258" x2="726" y2="258" stroke="#ddd6fe"/>
+  <text x="46" y="276" font-size="10.2" fill="#4c1d95">poser la meche</text>
+  <text x="328" y="276" font-size="10.2" fill="#4c1d95">la pose de l'huile</text>
+  <text x="672" y="276" text-anchor="middle" font-size="10.2" font-weight="700" fill="#57534e">exempt</text>
+  <line x1="34" y1="286" x2="726" y2="286" stroke="#ddd6fe"/>
+  <text x="46" y="304" font-size="10.2" fill="#4c1d95">verser l'huile</text>
+  <text x="328" y="304" font-size="10.2" fill="#4c1d95">l'allumage</text>
+  <text x="672" y="304" text-anchor="middle" font-size="10.2" font-weight="700" fill="#57534e">exempt</text>
+  <line x1="34" y1="314" x2="726" y2="314" stroke="#ddd6fe"/>
+  <text x="46" y="332" font-size="10.2" fill="#4c1d95">allumer</text>
+  <text x="328" y="332" font-size="10.2" font-weight="700" fill="#5b21b6">rien - mais l'allumage n'est pas une avoda du tout</text>
+  <text x="672" y="332" text-anchor="middle" font-size="10.2" font-weight="700" fill="#57534e">exempt</text>
+
+  <rect x="34" y="354" width="692" height="116" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.3"/>
+  <text x="46" y="372" font-size="10.6" font-weight="700" fill="#166534">La maarakha - le bucher de l'autel</text>
+  <text x="46" y="394" font-size="10.2" fill="#15803d">disposer la rangee de bois</text>
+  <text x="328" y="394" font-size="10.2" fill="#15803d">la pose des deux bûches (chnei gezirei etsim)</text>
+  <text x="672" y="394" text-anchor="middle" font-size="10.2" font-weight="700" fill="#57534e">exempt</text>
+  <line x1="34" y1="404" x2="726" y2="404" stroke="#bbf7d0"/>
+  <text x="46" y="424" font-size="10.2" fill="#15803d">poser les deux bûches</text>
+  <text x="328" y="424" font-size="10.2" fill="#15803d">la disposition des membres du tamid</text>
+  <text x="672" y="424" text-anchor="middle" font-size="10.2" font-weight="700" fill="#991b1b">MAHLOKET</text>
+  <text x="46" y="450" font-size="9.6" font-style="italic" fill="#166534">Rav Assi au nom de Rabbi Yohanan : il est passible - les membres ouvrent une autre disposition. Rav : un seul et meme sidour.</text>
+
+  <rect x="34" y="486" width="692" height="60" rx="10" fill="#fff7ed" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="380" y="507" text-anchor="middle" font-size="11" font-weight="700" fill="#7c2d12">La lecture de Tossefot : contre quoi cette serie est-elle vraiment dirigee ?</text>
+  <text x="380" y="527" text-anchor="middle" font-size="10.2" fill="#9a3412">Contre la zerika. On l'a declaree tama bien que la haktara la suive - parce que pour le SANG elle est achevee.</text>
+  <text x="380" y="541" text-anchor="middle" font-size="10.2" fill="#9a3412">Alors pourquoi pas la maarakha, achevee pour le BOIS ? Reponse : ces gestes-la comptent tous comme un seul sidour.</text>
+</svg></div>
+          <figcaption>La longue serie d&#x27;objections du milieu du daf : chulhan, menora, maarakha. A chaque fois la guemara montre qu&#x27;il reste un geste apres, donc pas d&#x27;avoda tama, donc pas de mita.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 470" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="470" fill="#fffdf8"/>
+  <text x="370" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Deux baraitot, deux listes - et chacun repart avec la sienne</text>
+  <text x="370" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">tania kavateh de-Rav, tania kavateh de-Levi : la guemara ne tranche pas, elle documente</text>
+
+  <rect x="26" y="60" width="336" height="300" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1.7"/>
+  <text x="194" y="83" text-anchor="middle" font-size="12.6" font-weight="700" fill="#1e40af">Comme Rav - quatre avodot</text>
+  <text x="194" y="100" text-anchor="middle" font-size="9.8" font-style="italic" fill="#1e3a8a">le decompte est celui de Tossefot</text>
+  <line x1="48" y1="110" x2="340" y2="110" stroke="#93c5fd"/>
+  <rect x="46" y="120" width="296" height="58" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="60" y="139" font-size="10.4" font-weight="700" fill="#1e3a8a">1. Zerika du sang</text>
+  <text x="60" y="155" font-size="9.8" fill="#1e3a8a">au-dehors, au-dedans, au dedans du dedans,</text>
+  <text x="60" y="170" font-size="9.8" fill="#1e3a8a">et l'aspersion du hatat d'oiseau</text>
+  <rect x="46" y="186" width="296" height="42" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="60" y="205" font-size="10.4" font-weight="700" fill="#1e3a8a">2. Haktara de l'ola d'oiseau</text>
+  <text x="60" y="220" font-size="9.8" fill="#1e3a8a">avec le mitsoui, le pressurage du sang</text>
+  <rect x="46" y="236" width="296" height="34" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="60" y="258" font-size="10.4" font-weight="700" fill="#1e3a8a">3. Libation de trois log d'eau</text>
+  <rect x="46" y="278" width="296" height="34" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="60" y="300" font-size="10.4" font-weight="700" fill="#1e3a8a">4. Libation de trois log de vin</text>
+  <rect x="46" y="320" width="296" height="30" rx="6" fill="#fef2f2" stroke="#dc2626"/>
+  <text x="194" y="340" text-anchor="middle" font-size="10.4" font-weight="700" fill="#991b1b">la teroumat hadechen est ABSENTE</text>
+
+  <rect x="378" y="60" width="336" height="300" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.7"/>
+  <text x="546" y="83" text-anchor="middle" font-size="12.6" font-weight="700" fill="#166534">Comme Levi - trois rubriques</text>
+  <text x="546" y="100" text-anchor="middle" font-size="9.8" font-style="italic" fill="#15803d">la troisieme absorbe toute la liste de Rav</text>
+  <line x1="400" y1="110" x2="692" y2="110" stroke="#86efac"/>
+  <rect x="398" y="120" width="296" height="42" rx="6" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="412" y="139" font-size="10.4" font-weight="700" fill="#166534">1. Ha-merim et ha-dechen</text>
+  <text x="412" y="154" font-size="9.8" fill="#15803d">celui qui preleve la cendre - un silouk</text>
+  <rect x="398" y="170" width="296" height="58" rx="6" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="412" y="189" font-size="10.4" font-weight="700" fill="#166534">2. Les sept aspersions du dedans</text>
+  <text x="412" y="205" font-size="9.8" fill="#15803d">et celles du metsora</text>
+  <text x="412" y="220" font-size="9.8" fill="#15803d">= le lekhol devar ha-mizbeah de Rav</text>
+  <rect x="398" y="236" width="296" height="58" rx="6" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="412" y="255" font-size="10.4" font-weight="700" fill="#166534">3. Celui qui fait monter sur l'autel</text>
+  <text x="412" y="271" font-size="9.8" fill="#15803d">chose kachere ou chose passoul - pourvu</text>
+  <text x="412" y="286" font-size="9.8" fill="#15803d">que, montee, elle ne redescende plus</text>
+  <rect x="398" y="302" width="296" height="48" rx="6" fill="#bbf7d0" stroke="#16a34a"/>
+  <text x="546" y="321" text-anchor="middle" font-size="10.2" font-weight="700" fill="#166534">Tossefot : cette rubrique 3 contient deja</text>
+  <text x="546" y="337" text-anchor="middle" font-size="10.2" font-weight="700" fill="#166534">zerika, aspersions, haktarot, libations</text>
+
+  <rect x="26" y="376" width="688" height="80" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="370" y="398" text-anchor="middle" font-size="11.4" font-weight="700" fill="#713f12">La nafka mina tient en une ligne</text>
+  <text x="370" y="419" text-anchor="middle" font-size="10.4" fill="#854d0e">Un zar qui preleve la cendre de l'autel : pour Rav, il n'encourt pas la mita - c'est un service de retrait.</text>
+  <text x="370" y="437" text-anchor="middle" font-size="10.4" fill="#854d0e">Pour Levi, il l'encourt - au-dehors, le filtre avodat matana ne s'applique pas ; seul compte que le service soit acheve.</text>
+</svg></div>
+          <figcaption>Les deux baraitot qui viennent appuyer Rav et Levi -- et le point unique ou leurs listes se separent : le prelevement de la cendre.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">״וּלְמִבֵּית לַפָּרֹוכֶת וַעֲבַדְתֶּם״, ״אֶל מִבֵּית לַפָּרֹוכֶת״ הוּא דַּעֲבֹודַת מַתָּנָה וְלֹא עֲבוֹדַת סִילּוּק. הָא בַּחוּץ — אֲפִילּוּ עֲבוֹדַת סִילּוּק.</div>
+            <div class="fr"><p>[Le verset dit :] « et vers l&#x27;interieur du parokhet... et vous servirez ». C&#x27;est [seulement] « vers l&#x27;interieur du parokhet » qu&#x27;il s&#x27;agit d&#x27;un service de don (avodat matana) et non d&#x27;un service de retrait (avodat silouk) ; mais au-dehors — [un zar est passible] meme pour un service de retrait.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּלְמִבֵּית לַפָּרֹוכֶת</b> אַפְסִיק בֵּין כְּלָלָא לִפְרָטָא מִבֵּית לַפָּרֹוכֶת הוּא דַּעֲבֹודַת מַתָּנָה כְּגוֹן הַזָּאוֹת שֶׁבֵּין הַבַּדִּים דְּיוֹם הַכִּפּוּרִים וּנְתִינַת קְטֹורֶת עַל הָאֵשׁ:</div>
+          <div class="glose-fr">Il a coupe entre la generalite et la particularite : c&#x27;est [seulement] a l&#x27;interieur du parokhet qu&#x27;il s&#x27;agit d&#x27;un service de don — comme les aspersions faites entre les barres [de l&#x27;arche] a Yom Kippour, et le depot de l&#x27;encens sur le feu.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְלֹא עֲבוֹדַת סִילּוּק</b> כְּגוֹן הוֹצָאַת כַּף וּמַחְתָּה שֶׁהַכֹּהֵן גָּדוֹל מַכְנִיס שָׁם לִקְטֹורֶת יוה&quot;כ וּמַנִּיחַ בֵּין הַבַּדִּים וְאַחַ&quot;כּ חוֹזֵר וּמוֹצִיאָן:</div>
+          <div class="glose-fr">Et non un service de retrait — comme la sortie de la cuiller (kaf) et de l&#x27;encensoir (mahta) que le kohen gadol y introduit pour l&#x27;encens de Yom Kippour, depose entre les barres, puis revient ressortir ensuite.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Voici enfin le <i>amar kra</i> sur lequel s'arretait le daf precedent : la reponse de Levi a l'objection du <b>klal ou-perat</b>. Sa parade est spatiale. Le filtre <b>avodat matana</b> — n'est passible que celui qui accomplit un service qui <i>depose</i>, pas un service qui <i>retire</i> — n'est pas une regle generale du culte : il n'est enonce qu'a propos de ce qui se fait <i>mibeit la-parokhet</i>, a l'interieur du voile, dans le Saint des saints.</p><p>Rachi donne les deux exemples qui rendent la distinction concrete, et ils viennent tous deux du service de Yom Kippour. Un service de don, au dedans : les <b>aspersions entre les barres</b> de l'arche, ou le depot de l'encens sur les braises. Un service de retrait, au dedans : la <b>sortie de la kaf et de la mahta</b> — la cuiller et l'encensoir que le kohen gadol a introduits, deposes, et qu'il revient chercher a la fin.</p><p>Consequence, et c'est tout l'enjeu : au-dehors, sur l'autel exterieur, ce filtre ne joue plus. Un service de retrait y rend passible — donc la <b>teroumat hadechen</b>, le prelevement de la cendre, entre bien dans la liste. Levi tient sa cinquieme avoda.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִי הָכִי, ״וַעֲבַדְתֶּם״ נָמֵי, ״אֶל מִבֵּית לַפָּרֹוכֶת״ הוּא דַּעֲבוֹדָה תַּמָּה וְלֹא עֲבוֹדָה שֶׁיֵּשׁ אַחֲרֶיהָ עֲבוֹדָה. הָא בַּחוּץ — אֲפִילּוּ עֲבוֹדָה שֶׁיֵּשׁ אַחֲרֶיהָ עֲבוֹדָה!</div>
+            <div class="fr"><p>Si c&#x27;est ainsi, [on dira] aussi de « et vous servirez » : c&#x27;est [seulement] « vers l&#x27;interieur du parokhet » qu&#x27;il faut une avoda tama (un service acheve) et non un service apres lequel vient encore un service ; mais au-dehors — [on serait passible] meme pour un service apres lequel vient encore un service !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִי הָכִי וַעֲבַדְתֶּם נָמֵי מִבֵּית לַפָּרֹוכֶת דַּעֲבוֹדָה תַּמָּה</b> כְּגוֹן נְתִינַת קְטֹורֶת עַל הָאֵשׁ:</div>
+          <div class="glose-fr">Comme le depot de l&#x27;encens sur le feu.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְלֹא שֶׁיֵּשׁ אַחֲרֶיהָ עֲבוֹדָה</b> הוֹלָכַת כַּף וּמַחְתָּה שֶׁיֵּשׁ אַחֲרֶיהָ חֲפִינָה וְהַקְטָרָה:</div>
+          <div class="glose-fr">Et non celui qui a un service apres lui — le transport de la cuiller et de l&#x27;encensoir, apres lequel viennent encore la hafina (la prise de l&#x27;encens a pleines mains) et la haktara.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>L'objection retourne contre Levi son propre outil. Si l'on admet qu'un filtre enonce a cote du mot <i>parokhet</i> ne vaut que pour ce qui se passe derriere le parokhet, alors le second filtre doit subir le meme sort. <b>Ve-avadtem</b>, d'ou l'on tire l'exigence d'<b>avoda tama</b> — un service acheve, que rien ne vient prolonger —, se trouve dans le meme verset et au meme endroit.</p><p>Le resultat serait absurde et contredirait tout le daf precedent : au-dehors, un zar serait passible meme pour la <b>chehita</b>, la <b>kabbala</b> ou la <b>holakha</b>, alors meme que la zerika reste a faire apres elles. Rachi illustre par le service du dedans : le <b>transport</b> de la cuiller et de l'encensoir, auquel succedent encore la <i>hafina</i> (la prise de l'encens a pleines mains) et la haktara.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">״וַעֲבַדְתֶּם״ הָדַר עַרָּבֵיהּ קְרָא.</div>
+            <div class="fr"><p>[Reponse :] « et vous servirez » (ve-avadtem) — le verset revient et melange [les deux domaines].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וַעֲבַדְתֶּם הָדַר עַרָּבֵיהּ</b> לְעִנְיַן עֲבוֹדָה תַּמָּה שֶׁהַוָּי&quot;ו מוֹסִיף לְעִנְיָן רִאשׁוֹן אֲבָל עֲבוֹדַת מַתָּנָה לָא מִיהְדָּר אֶלָּא אַמְּבֻיָּת לַפָּרֹוכֶת דִּלְקַמֵּיהּ דְּלָא כְּתִיב בֵּיהּ וָי&quot;ו:</div>
+          <div class="glose-fr">Quant a l&#x27;avoda tama : car le vav ajoute au sujet precedent. Mais « service de don » ne renvoie qu&#x27;au « a l&#x27;interieur du parokhet » qui le suit, ou aucun vav n&#x27;est ecrit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse en trois mots, et elle tient a une seule lettre. <i>Ve-avadtem</i> s'ouvre par un <b>vav</b> conjonctif, et le vav, dans la lecture rabbinique, <b>ajoute au sujet precedent</b> : il recoud ce que la phrase avait separe. L'exigence d'avoda tama deborde donc le parokhet et vaut partout, dedans comme dehors.</p><p>Rachi verrouille la dissymetrie, et c'est elle qu'il faut retenir : <i>avodat matana</i>, elle, n'a pas de vav devant elle. Elle reste donc arrimee au seul <i>el mibeit la-parokhet</i> qui la suit immediatement. Un filtre voyage, l'autre non — non par decision arbitraire, mais parce que le texte a mis un vav a l'un et pas a l'autre.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בָּעֵי רָבָא: עֲבוֹדַת סִילּוּק בַּהֵיכָל, מַהוּ? לִפְנִים מִדְּמֵינַן לֵיהּ, אוֹ לְחוּץ מְדַמֵּינַן לֵיהּ?</div>
+            <div class="fr"><p>Rava a demande : un service de retrait dans le Heikhal (le Sanctuaire), qu&#x27;en est-il ? L&#x27;assimile-t-on au dedans, ou l&#x27;assimile-t-on au dehors ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>עֲבוֹדַת סִילּוּק בַּהֵיכָל</b> וְהִיא עֲבוֹדָה תַּמָּה כְּגוֹן דִּישּׁוּן מִזְבֵּחַ הַפְּנִימִי וְהַמְּנוֹרָה לְלֵוִי מַהוּ:</div>
+          <div class="glose-fr">Et il s&#x27;agit d&#x27;une avoda tama, comme l&#x27;enlevement des cendres (dichoun) de l&#x27;autel interieur et de la menora : selon Levi, qu&#x27;en est-il ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rava prend la position de Levi au serieux et cherche sa frontiere. Levi a oppose deux territoires — <i>lifnim</i>, l'interieur du voile, et <i>bahouts</i>, le dehors. Mais le Temple en compte <b>trois</b> : le Saint des saints, le <b>Heikhal</b> (la salle du Sanctuaire, ou se tiennent la menora, la table et l'autel d'or), et l'azara, le parvis avec le grand autel.</p><p>Rachi precise le cas vise, et il est parfaitement choisi : le <b>dichoun</b> de l'autel interieur et de la menora — retirer les cendres d'encens et les meches consumees. C'est un service de <b>retrait</b>, et c'est en meme temps une <b>avoda tama</b> : rien ne le prolonge. Il passe donc le second filtre et echoue au premier. Tout depend alors du cote de la frontiere ou tombe le Heikhal.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָדַר פְּשָׁטָהּ: ״מִבַּיִת״, ״וּלְמִבֵּית״.</div>
+            <div class="fr"><p>Il l&#x27;a ensuite lui-meme resolu : [il aurait fallu ecrire] « a l&#x27;interieur du parokhet » — [or il est ecrit] « et vers l&#x27;interieur du parokhet ».</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִבֵּית לַפָּרֹוכֶת הֲוָה לֵיהּ לְמִיכְתַּב</b> וּכְתִיב וּלְמִבֵּית לַפָּרֹוכֶת לַעֲשׂוֹת הֵיכָל כְּבֵית קָדְשֵׁי הַקֳּדָשִׁים וּפָטוּר עַל עֲבוֹדַת סִילּוּק:</div>
+          <div class="glose-fr">Or il est ecrit « et vers l&#x27;interieur du parokhet » — pour faire du Heikhal l&#x27;equivalent du Saint des saints : on est donc exempt pour un service de retrait.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rava tranche sa propre question, et par le meme procede que la reponse precedente : un <b>vav</b> de trop. Le verset aurait pu se contenter de <i>mibeit la-parokhet</i> ; il ecrit <i>ou-le-mibeit la-parokhet</i>. Cette syllabe superflue elargit le domaine : elle fait du <b>Heikhal l'equivalent du Saint des saints</b> pour cette regle.</p><p>Verdict : un zar qui accomplit un service de retrait dans le Heikhal est <b>exempt</b>. La frontiere ne passe pas devant le parokhet mais a la porte du Sanctuaire — d'un cote le batiment, de l'autre le parvis.</p><p>Ce qui parait un detail technique va commander toute la suite du daf. Car si le Heikhal est annexe au dedans, il l'est <b>aussi pour l'autre versant</b> : un zar y devient passible pour tout service de <i>depot</i> acheve. La guemara va donc passer en revue tout ce qui se depose dans le Heikhal.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="360" fill="#fffdf8"/>
+  <text x="360" y="26" text-anchor="middle" font-size="14.4" font-weight="700" fill="#1c1917">Deux vav, deux effets : toute la sougya tient a une seule lettre</text>
+
+  <rect x="26" y="46" width="322" height="140" rx="10" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.6"/>
+  <text x="187" y="68" text-anchor="middle" font-size="12" font-weight="700" fill="#5b21b6">Le vav de ve-avadtem</text>
+  <text x="187" y="88" text-anchor="middle" font-size="10.2" fill="#4c1d95">hadar arviyeh kra - le verset revient et melange</text>
+  <line x1="48" y1="98" x2="326" y2="98" stroke="#c4b5fd"/>
+  <text x="187" y="118" text-anchor="middle" font-size="10.2" fill="#4c1d95">Le vav rattache au sujet precedent :</text>
+  <text x="187" y="134" text-anchor="middle" font-size="10.2" fill="#4c1d95">l'exigence d'avoda tama deborde le parokhet</text>
+  <rect x="56" y="144" width="262" height="30" rx="6" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="187" y="164" text-anchor="middle" font-size="10.4" font-weight="700" fill="#4c1d95">dedans ET dehors</text>
+
+  <rect x="372" y="46" width="322" height="140" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <text x="533" y="68" text-anchor="middle" font-size="12" font-weight="700" fill="#1e40af">L'absence de vav devant el mibeit</text>
+  <text x="533" y="88" text-anchor="middle" font-size="10.2" fill="#1e3a8a">le-kamei de-lo ktiv beh vav</text>
+  <line x1="394" y1="98" x2="672" y2="98" stroke="#93c5fd"/>
+  <text x="533" y="118" text-anchor="middle" font-size="10.2" fill="#1e3a8a">Rien ne relie avodat matana au reste :</text>
+  <text x="533" y="134" text-anchor="middle" font-size="10.2" fill="#1e3a8a">le filtre reste enferme dans son domaine</text>
+  <rect x="402" y="144" width="262" height="30" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="533" y="164" text-anchor="middle" font-size="10.4" font-weight="700" fill="#1e3a8a">dedans SEULEMENT</text>
+
+  <rect x="26" y="202" width="668" height="140" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.6"/>
+  <text x="360" y="224" text-anchor="middle" font-size="12.2" font-weight="700" fill="#166534">Et le troisieme vav : celui de ou-le-mibeit la-parokhet</text>
+  <text x="360" y="243" text-anchor="middle" font-size="10.2" fill="#15803d">Rava resout sa propre question par la forme du mot : il aurait fallu ecrire mibayit, or il est ecrit ve-la-mibayit</text>
+  <rect x="60" y="256" width="180" height="64" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="150" y="278" text-anchor="middle" font-size="10.6" font-weight="700" fill="#166534">Kodech ha-kodachim</text>
+  <text x="150" y="296" text-anchor="middle" font-size="9.8" fill="#15803d">le dedans au sens strict</text>
+  <text x="150" y="312" text-anchor="middle" font-size="9.8" fill="#15803d">silouk : exempt</text>
+  <rect x="270" y="256" width="180" height="64" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-dasharray="5 3"/>
+  <text x="360" y="278" text-anchor="middle" font-size="10.6" font-weight="700" fill="#166534">Heikhal</text>
+  <text x="360" y="296" text-anchor="middle" font-size="9.8" fill="#15803d">annexe par le vav</text>
+  <text x="360" y="312" text-anchor="middle" font-size="9.8" fill="#15803d">silouk : exempt aussi</text>
+  <rect x="480" y="256" width="180" height="64" rx="8" fill="#fef2f2" stroke="#dc2626"/>
+  <text x="570" y="278" text-anchor="middle" font-size="10.6" font-weight="700" fill="#991b1b">Azara - le parvis</text>
+  <text x="570" y="296" text-anchor="middle" font-size="9.8" fill="#7f1d1d">hors du filtre</text>
+  <text x="570" y="312" text-anchor="middle" font-size="9.8" fill="#7f1d1d">silouk acheve : MITA</text>
+</svg></div><div class="svg-cap">Trois vav, trois effets : celui de ve-avadtem qui recoud les deux domaines, l&#x27;absence de vav qui enferme avodat matana au dedans, et celui de ve-la-mibayit qui annexe le Heikhal.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא מֵעַתָּה, זָר שֶׁסִּידֵּר אֶת הַשֻּׁלְחָן לִיחַייַּב! אִיכָּא סִידּוּר בְּזִיכְיַן. סִידֵּר בְּזִיכְיַן לִיחַייַּב! אִיכָּא סִילּוּק וְהַקְטָרָה.</div>
+            <div class="fr"><p>Mais alors, un zar qui a dispose la table [des pains de proposition] devrait etre passible ! — Il y a [encore] la disposition des bazikhin (les coupelles d&#x27;encens). Qu&#x27;il ait dispose les bazikhin : qu&#x27;il soit passible ! — Il y a [encore] leur retrait et leur combustion.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא מֵעַתָּה</b> דַּעֲבוֹדַת מַתָּנָה מִיחַייַּב בְּהֵיכַל זָר דִּמְרַבְּיָה וּלְמִבֵּית:</div>
+          <div class="glose-fr">Puisque, pour un service de don, un zar est passible dans le Heikhal, que « et vers l&#x27;interieur » est venu inclure.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>זָר שֶׁסִּידֵּר</b> לֶחֶם לִיחַייַּב מִיתָה וְאַמַּאי אָמְרִינַן לְעֵיל ד&#x27; עֲבוֹדוֹת וְתוּ לָא:</div>
+          <div class="glose-fr">[Qui a dispose] le pain : qu&#x27;il soit passible de mort ! Et pourquoi avons-nous dit plus haut quatre avodot et pas davantage ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִיכָּא סִידּוּר בְּזִיכְיַן</b> בָּתְרֵיהּ כְּדִכְתִיב (וַיִּקְרָא כ״ד:ז׳) וְנָתַתָּ עַל הַמַּעֲרֶכֶת לְבֹונָה זַכָּה וְלָאו עֲבוֹדָה תַּמָּה הִיא:</div>
+          <div class="glose-fr">Apres elle, comme il est ecrit (Levitique 24,7) : « et tu placeras sur la rangee de l&#x27;encens pur » — ce n&#x27;est donc pas une avoda tama.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִיכָּא סִילּוּק וְהַקְטָרָה</b> עֲדַייִן לֹא נִגְמְרָה עֲבוֹדָתָהּ עַד שַׁבָּת הַבָּאָה שֶׁיְּסַלְּקֶנָּה וְיַקְטִיר הַבְּזִיכִין:</div>
+          <div class="glose-fr">Son service n&#x27;est pas encore acheve avant le chabbat suivant, ou il l&#x27;enlevera et fera fumer les coupelles.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Premiere application de la conclusion de Rava. Puisqu'un zar est desormais passible pour un service de <b>depot</b> accompli dans le Heikhal, on devrait pouvoir allonger la liste de Rav bien au-dela de ses quatre avodot. Rachi formule l'objection dans ces termes exacts : <i>pourquoi avons-nous dit plus haut quatre avodot et pas davantage ?</i></p><p>Le premier candidat est le <b>chulhan</b>, la table des pains de proposition. Disposer les douze pains est bien un depot, dans le Heikhal. Mais ce n'est pas acheve : il reste a poser les <b>bazikhin</b>, les deux coupelles d'encens, comme le dit le verset <i>ve-natata al ha-maarekhet levona zaka</i> (Levitique 24,7).</p><p>Et les bazikhin eux-memes ? Rachi donne une reponse qui tient sur une echelle de temps inattendue : leur service n'est pas acheve <b>avant le chabbat suivant</b>, quand on les retirera et qu'on fera fumer leur encens sur l'autel. Une avoda dont l'achevement demande une semaine n'est jamais <i>tama</i> au moment ou on la pose.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">זָר שֶׁסִּידֵּר אֶת הַמְנוֹרָה לִיחַייַּב! אִיכָּא נְתִינַת פְּתִילָה. נָתַן פְּתִילָה לִיחַייֵּב! אִיכָּא נְתִינַת שֶׁמֶן.</div>
+            <div class="fr"><p>Un zar qui a dispose la menora devrait etre passible ! — Il y a [encore] la pose de la meche. Il a pose la meche : qu&#x27;il soit passible ! — Il y a [encore] la pose de l&#x27;huile.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁסִּידֵּר אֶת הַמְּנוֹרָה</b> בַּבֹּוקֶר הָיוּ מְסַלְּקִין אֶת הַנֵּרוֹת שֶׁל זָהָב מִן הַמְּנוֹרָה לְקַנֵּחַ אֶפְרָן יָפֶה וְחוֹזְרִין וְקוֹבְעִין אוֹתָם בָּהּ וַהֲרֵי עֲבוֹדָה תַּמָּה:</div>
+          <div class="glose-fr">Le matin, on retirait les lampes d&#x27;or de la menora pour en bien essuyer la cendre, puis on les y refixait : voila donc une avoda tama.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deuxieme candidat, meme mecanique. Rachi decrit le geste avec precision : chaque matin on <b>detachait les lampes d'or</b> de la menora pour en essuyer soigneusement la cendre, puis on les y refixait. Vu de l'exterieur, cela ressemble bien a une avoda achevee — d'ou l'objection.</p><p>La reponse decompose l'allumage quotidien en une chaine de gestes dont chacun appelle le suivant : remettre les lampes, poser la <b>meche</b>, verser l'<b>huile</b>, allumer. Aucun maillon ne se suffit a lui-meme, donc aucun n'est <i>avoda tama</i>, donc aucun ne rend passible.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">נָתַן שֶׁמֶן לִיחַייֵּב! אִיכָּא הַדְלָקָה. הִדְלִיק לִיחַייַּב! הַדְלָקָה לָאו עֲבוֹדָה הִיא.</div>
+            <div class="fr"><p>Il a mis l&#x27;huile : qu&#x27;il soit passible ! — Il y a [encore] l&#x27;allumage. Il a allume : qu&#x27;il soit passible ! — L&#x27;allumage n&#x27;est pas une avoda.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La chaine arrive a son dernier maillon, et la reponse change de nature. Jusqu'ici on repondait : <i>il reste quelque chose apres</i>. Pour l'allumage, plus rien ne suit — la guemara ne peut donc plus se servir du filtre de l'avoda tama.</p><p>Elle change alors d'argument : <b>hadlaka lav avoda hi</b>, l'allumage n'est pas un service. Non parce qu'il serait inacheve, mais parce qu'il ne fait rien a l'objet du culte : la lampe est deja en place, garnie, remplie ; approcher la flamme ne modifie plus la menora. C'est l'aboutissement du service, pas un acte de service.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְלֹא? וְהַתַּנְיָא: ״וְנָתְנוּ בְּנֵי אַהֲרֹן הַכֹּהֵן אֵשׁ עַל הַמִּזְבֵּחַ וְעָרְכוּ עֵצִים עַל הָאֵשׁ״, לִימֵּד עַל הַצָּתַת אֲלִיתָא שֶׁלֹּא תְּהֵא אֶלָּא בְּכֹהֵן כָּשֵׁר וּבִכְלִי שָׁרֵת! הַצָּתַת אֲלִיתָא — עֲבוֹדָה הִיא, הַדְלָקָה — לָאו עֲבוֹדָה הִיא.</div>
+            <div class="fr"><p>Vraiment pas ? Mais n&#x27;a-t-on pas enseigne : « les fils d&#x27;Aharon le cohen mettront du feu sur l&#x27;autel et disposeront du bois sur le feu » (Levitique 1,7) — cela enseigne au sujet de l&#x27;allumage des copeaux (hatsatat alita) qu&#x27;il ne se fait que par un cohen apte et en vetements de service ! — L&#x27;allumage des copeaux est une avoda ; l&#x27;allumage [des lampes] n&#x27;est pas une avoda.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַצָּתַת אֲלִיתָא</b> הַצָּתַת קֵיסָמִים דַּקִּים אִם הֻוצְרַךְ לְהַצִּית עַל הַמִּזְבֵּחַ בְּאַחַת מִן הַמַּעֲרָכוֹת כְּגוֹן שֶׁקָּרְבָה מַעֲרָכָה לְכַלּוֹת שֶׁנִּשְׂרְפָה כָּל הַמְּדוּרָה:</div>
+          <div class="glose-fr">L&#x27;allumage de fins copeaux, s&#x27;il a fallu allumer sur l&#x27;autel l&#x27;une des rangees — par exemple lorsque la rangee est pres de s&#x27;eteindre, tout le brasier ayant deja brule.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּבִכְלִי שָׁרֵת</b> שֶׁיְּהֵא לוֹבֵשׁ בִּגְדֵי כְּהֻונָּה אַרְבָּעָה אִם כֹּהֵן הֶדְיוֹט הוּא וְאִם כֹּהֵן גָּדוֹל הוּא שְׁמוֹנָה שֶׁהֲרֵי נֶאֱמַר כָּאן הַכֹּהֲנִים וְכָל מָקוֹם שֶׁנֶּאֱמַר בְּנֵי אַהֲרֹן הַכֹּהֲנִים בְּכִהוּנָם מַשְׁמַע בְּבִגְדֵי כְּהֻונָּתָם:</div>
+          <div class="glose-fr">Qu&#x27;il porte les vetements sacerdotaux : quatre s&#x27;il est cohen ordinaire, huit s&#x27;il est kohen gadol — car il est dit ici « les cohanim », et partout ou il est dit « les fils d&#x27;Aharon les cohanim », cela signifie dans leur sacerdoce, c&#x27;est-a-dire revetus de leurs vetements sacerdotaux.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection de bon sens : si allumer n'est pas un service, comment une baraita peut-elle exiger, pour la <b>hatsatat alita</b>, a la fois un cohen apte et les vetements sacerdotaux ? Rachi decrit la scene : de fins copeaux qu'on enflamme sur l'autel lorsqu'une des rangees menace de s'eteindre, tout le brasier ayant deja brule.</p><p>La reponse ne recule pas d'un pouce : les deux flammes n'ont pas le meme statut. Sur l'autel, <b>le feu lui-meme est l'objet du culte</b> — le maintenir en vie est un service a part entiere. Dans la menora, la flamme est le resultat d'un service deja termine ; l'allumer n'ajoute rien a l'ustensile.</p><p>Rachi profite de l'expression <i>ou-vikhli charet</i> pour rappeler une regle de lecture generale : partout ou l'Ecriture dit <b>bnei Aharon ha-kohanim</b>, elle sous-entend <i>be-khihounam</i>, dans leur sacerdoce — c'est-a-dire revetus des quatre vetements s'il s'agit d'un cohen ordinaire, des huit s'il s'agit du kohen gadol.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="320" fill="#fffdf8"/>
+  <text x="350" y="26" text-anchor="middle" font-size="14.4" font-weight="700" fill="#1c1917">Deux flammes, deux statuts : pourquoi l'une est une avoda et l'autre non</text>
+
+  <rect x="26" y="46" width="316" height="180" rx="10" fill="#fef2f2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="184" y="68" text-anchor="middle" font-size="12.2" font-weight="700" fill="#991b1b">Hadlaka - allumer les lampes</text>
+  <line x1="48" y1="78" x2="320" y2="78" stroke="#fca5a5"/>
+  <text x="184" y="99" text-anchor="middle" font-size="10.2" fill="#7f1d1d">Tout est deja en place : la lampe est fixee,</text>
+  <text x="184" y="115" text-anchor="middle" font-size="10.2" fill="#7f1d1d">la meche posee, l'huile versee.</text>
+  <text x="184" y="137" text-anchor="middle" font-size="10.2" fill="#7f1d1d">Approcher la flamme ne fait plus rien</text>
+  <text x="184" y="153" text-anchor="middle" font-size="10.2" fill="#7f1d1d">a l'objet du service lui-meme.</text>
+  <rect x="60" y="166" width="248" height="44" rx="7" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="184" y="184" text-anchor="middle" font-size="10.6" font-weight="700" fill="#7f1d1d">hadlaka lav avoda hi</text>
+  <text x="184" y="201" text-anchor="middle" font-size="10" fill="#7f1d1d">un zar qui allume n'encourt rien</text>
+
+  <rect x="358" y="46" width="316" height="180" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.6"/>
+  <text x="516" y="68" text-anchor="middle" font-size="12.2" font-weight="700" fill="#166534">Hatsatat alita - allumer les copeaux</text>
+  <line x1="380" y1="78" x2="652" y2="78" stroke="#86efac"/>
+  <text x="516" y="99" text-anchor="middle" font-size="10.2" fill="#15803d">Sur l'autel, quand une rangee menace</text>
+  <text x="516" y="115" text-anchor="middle" font-size="10.2" fill="#15803d">de s'eteindre : on rallume le brasier.</text>
+  <text x="516" y="137" text-anchor="middle" font-size="10.2" fill="#15803d">La flamme de l'autel EST l'objet du culte -</text>
+  <text x="516" y="153" text-anchor="middle" font-size="10.2" fill="#15803d">l'acte fait donc quelque chose au service.</text>
+  <rect x="392" y="166" width="248" height="44" rx="7" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="516" y="184" text-anchor="middle" font-size="10.6" font-weight="700" fill="#166534">avoda hi</text>
+  <text x="516" y="201" text-anchor="middle" font-size="10" fill="#166534">cohen apte + vetements sacerdotaux</text>
+
+  <rect x="26" y="240" width="648" height="64" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="350" y="261" text-anchor="middle" font-size="11" font-weight="700" fill="#713f12">Le verset invoque : Levitique 1,7</text>
+  <text x="350" y="281" text-anchor="middle" font-size="10.2" fill="#854d0e">ve-natnou bnei Aharon ha-kohen ech al ha-mizbeah - les fils d'Aharon le cohen mettront du feu sur l'autel</text>
+  <text x="350" y="297" text-anchor="middle" font-size="10.2" fill="#854d0e">Rachi : bnei Aharon ha-kohanim signifie toujours be-khihounam - revetus de leurs vetements de sacerdoce.</text>
+</svg></div><div class="svg-cap">Deux flammes, deux statuts : sur l&#x27;autel le feu est l&#x27;objet meme du culte, dans la menora il n&#x27;est que le resultat d&#x27;un service deja acheve.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא מֵעַתָּה, זָר שֶׁסִּידֵּר אֶת הַמַּעֲרָכָה לִיחַייַּב! אִיכָּא סִידּוּר שְׁנֵי גְּזִירֵי עֵצִים. סִידֵּר שְׁנֵי גְזִירִין לִיחַייַּב! אִיכָּא סִידּוּר אֵבָרִים.</div>
+            <div class="fr"><p>Mais alors, un zar qui a dispose la rangee [de bois] devrait etre passible ! — Il y a [encore] la disposition des deux buches. Il a dispose les deux buches : qu&#x27;il soit passible ! — Il y a [encore] la disposition des membres.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁסִּידֵּר הַמַּעֲרָכָה</b> עֵצִים:</div>
+          <div class="glose-fr">[La rangee] de bois.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִיכָּא בָּתְרָהּ סִידּוּר שְׁנֵי גְזִירִין</b> דְּיָלְפִינַן לְהוּ לְקַמָּן (יוֹמָא דַּף כו:) מִקְּרָאֵי:</div>
+          <div class="glose-fr">Il y a apres elle la disposition des deux buches, que nous apprenons plus loin (Yoma 26b) de versets.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִיכָּא סִידּוּר אֵבָרִים</b> דְּתָמִיד בָּתְרֵיהּ וְכָל זֶה מֵעֲבוֹדַת הַסִּידּוּר הוּא:</div>
+          <div class="glose-fr">[Celle] du tamid, qui vient apres elle ; et tout cela fait partie du service de disposition.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא מֵעַתָּה זָר שֶׁסִּידֵּר אֶת הַמַּעֲרָכָה לִיחַיַּיב</b> לָא יָדַעְנָא לְמָאֵן פָּרִיךְ וּמַאי אִי אָמְרַתְּ בִּשְׁלָמָא יֵשׁ כָּאן וְנִרְאֶה לִי דְּפָרִיךְ אַהָא דְּקָאָמַר לְעֵיל דְּאַזְּרִיקָה מִיחַייַּב אע&quot;ג דְּאִיכָּא בָּתְרָהּ הַקְטָרָה וּמִכָּל מָקוֹם מְחַייֶּבֶת עֲלָהּ כֵּיוָן דִּבְדָם מִיהַת עֲבוֹדָה תַּמָּה הִיא א&quot;כ אַסִּידּוּר מַעֲרָכָה לִיחַייַּב דְּלֵיכָּא בָּתְרָהּ בְּסִידּוּר עֲצֵי מַעֲרָכָה מִידִי וּמְשַׁנֵּי אִיכָּא סִידּוּר שְׁנֵי גְזִירִין וְכֵן יֵשׁ לְפָרֵשׁ כָּל הַסֻּוגְיָא וְהָא דְּפָרִיךְ לְעֵיל גַּבֵּי זָר שֶׁסִּידֵּר אֶת הַשֻּׁלְחָן לִיחַייַּב יֵשׁ לְפָרֵשׁ כֵּן וְקַל לְהָבִין וּמְשַׁנֵּי אִיכָּא בְּזִיכְיַן וְהָנֵי חֲשִׁיבֵי כּוּלְּהוּ כְּחַד וְלָא דָּמוּ לִזְרִיקָה וְהַקְטָרָה דְּהַקְטָרָה לָא מְעַכְּבָא:</div>
+          <div class="glose-fr">Je ne sais pas contre qui l&#x27;objection est dirigee, ni quel « si tu dis, soit » il y aurait ici. Il me semble qu&#x27;elle porte sur ce qui a ete dit plus haut : qu&#x27;on est passible pour la zerika bien qu&#x27;il y ait apres elle la haktara — et qu&#x27;on en rend malgre tout passible, puisque pour ce qui est du sang c&#x27;est en tout cas une avoda achevee. S&#x27;il en est ainsi, qu&#x27;on soit donc passible pour la disposition de la rangee de bois, puisqu&#x27;il n&#x27;y a rien apres elle dans la disposition des bois de la rangee ! Et [la guemara] repond : il y a [encore] la disposition des deux buches. C&#x27;est ainsi qu&#x27;il faut expliquer toute la sougya. Et l&#x27;objection formulee plus haut au sujet du zar qui a dispose la table — « qu&#x27;il soit passible ! » — s&#x27;explique de la meme facon, et cela est facile a comprendre ; [la guemara] repond : il y a les coupelles — et celles-ci comptent toutes comme une seule chose. Ce n&#x27;est pas comparable a la zerika et a la haktara, car la haktara n&#x27;est pas indispensable (meakevet).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>On quitte le Heikhal pour l'autel exterieur, et la serie continue : disposer le bois de la <b>maarakha</b>, le bucher. Reponse : il reste a poser les <b>chnei gezirei etsim</b>, les deux buches, dont Rachi signale que la source scripturaire sera donnee plus loin (Yoma 26b). Et apres les buches ? Il reste la <b>disposition des membres</b> du tamid — tout cela ne formant, dit Rachi, qu'un seul et meme service de disposition.</p><p>Tossefot ouvre par un aveu remarquable : <i>je ne sais pas contre qui l'objection est dirigee</i>. Le style de la guemara ici ne colle pas — pas de <i>i amart bichlama</i>, pas de these identifiable. Sa reconstruction est que la cible est la <b>zerika</b>. On l'a declaree <i>tama</i> alors meme que la haktara la suit, au motif que <b>pour ce qui est du sang</b> elle est achevee. Or la disposition du bois est, elle aussi, achevee pour ce qui est du bois — pourquoi ne pas la traiter pareillement ?</p><p>La reponse que Tossefot lit dans la guemara : tous ces gestes de disposition <b>comptent pour un seul</b>. La comparaison avec la zerika ne tient pas, car la haktara qui suit la zerika n'est pas <i>meakevet</i> — elle ne conditionne pas la validite du sacrifice ; le sang, lui, a bel et bien fini son parcours.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְהָא אָמַר רַב אַסִּי אָמַר רַבִּי יוֹחָנָן: זָר שֶׁסִּידֵּר שְׁנֵי גְּזִירֵי עֵצִים חַייָּב! בְּהָא פְּלִיגִי, מַר סָבַר: עֲבוֹדָה תַּמָּה הִיא, וּמַר סָבַר: לָאו עֲבוֹדָה תַּמָּה הִיא.</div>
+            <div class="fr"><p>Mais Rav Assi n&#x27;a-t-il pas dit au nom de Rabbi Yohanan : un zar qui a dispose les deux buches est passible ! — C&#x27;est bien la-dessus qu&#x27;ils divergent : l&#x27;un (mar) tient que c&#x27;est une avoda tama, et l&#x27;autre tient que ce n&#x27;est pas une avoda tama.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּהָא פְּלִיגִי</b> רַב וְרַבִּי יוֹחָנָן רַבִּי יוֹחָנָן סָבַר סִידּוּר שְׁנֵי גְזִירִין עֲבוֹדָה תַּמָּה הִיא שֶׁסִּידּוּר מַעֲרֶכֶת עֵצִים תַּמָּה וְגוֹמֶרֶת הִיא בָּהּ וְסִידּוּר הָאֵבָרִים תְּחִילַּת סִידּוּר אַחֵר הוּא וְרַב סָבַר לָאו עֲבוֹדָה תַּמָּה דְּשָׁם סִידּוּר אֶחָד הוּא:</div>
+          <div class="glose-fr">Rav et Rabbi Yohanan. Rabbi Yohanan tient que la disposition des deux buches est une avoda tama, car la disposition de la rangee de bois est achevee et se conclut par elle, tandis que la disposition des membres est le debut d&#x27;une autre disposition. Et Rav tient que ce n&#x27;est pas une avoda tama, car c&#x27;est un seul et meme nom de disposition.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Une tradition amoraique vient contredire frontalement la reponse precedente : pour Rabbi Yohanan, poser les deux buches <b>rend passible</b>. La guemara ne cherche pas a concilier — elle reconnait une <b>mahloket</b> franche entre Rav et Rabbi Yohanan.</p><p>Rachi expose le point exact du desaccord, et il est d'une grande finesse. Pour <b>Rabbi Yohanan</b>, la disposition du bois est un chantier qui se cloture avec les deux buches ; ce qui suit — la disposition des membres — est le <b>debut d'une autre</b> disposition, pas la fin de la premiere. Pour <b>Rav</b>, bois, buches et membres portent un seul et meme nom, <i>chem sidour ehad</i> : c'est une seule operation, et elle ne s'acheve qu'avec les membres.</p><p>La question n'est donc pas <i>que reste-t-il a faire ?</i> mais <i>ou finit cette avoda-ci et ou commence la suivante ?</i>. Le decoupage des gestes commande le verdict de vie ou de mort.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="340" fill="#fffdf8"/>
+  <text x="350" y="26" text-anchor="middle" font-size="14.4" font-weight="700" fill="#1c1917">Les deux bûches : une seule question, une vraie mahloket</text>
+  <text x="350" y="45" text-anchor="middle" font-size="10.2" fill="#57534e">Poser les chnei gezirei etsim sur la maarakha, puis y disposer les membres du tamid</text>
+
+  <rect x="150" y="58" width="400" height="52" rx="9" fill="#f5f5f4" stroke="#a8a29e" stroke-width="1.4"/>
+  <text x="350" y="78" text-anchor="middle" font-size="10.6" fill="#44403c">sidour maarakha (le bois) - sidour chnei gezirin - sidour evarim</text>
+  <text x="350" y="98" text-anchor="middle" font-size="10.2" font-style="italic" fill="#57534e">ou coupe-t-on la sequence ? La reponse decide de la mita</text>
+
+  <line x1="350" y1="110" x2="180" y2="134" stroke="#a8a29e" stroke-width="1.3"/>
+  <line x1="350" y1="110" x2="520" y2="134" stroke="#a8a29e" stroke-width="1.3"/>
+
+  <rect x="30" y="134" width="300" height="176" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <text x="180" y="157" text-anchor="middle" font-size="12.2" font-weight="700" fill="#1e40af">Rabbi Yohanan (via Rav Assi)</text>
+  <line x1="52" y1="167" x2="308" y2="167" stroke="#93c5fd"/>
+  <text x="180" y="188" text-anchor="middle" font-size="10.2" fill="#1e3a8a">La disposition du bois s'acheve avec</text>
+  <text x="180" y="204" text-anchor="middle" font-size="10.2" fill="#1e3a8a">les deux bûches. Ce qui suit - les membres -</text>
+  <text x="180" y="220" text-anchor="middle" font-size="10.2" fill="#1e3a8a">est le DEBUT d'une autre disposition.</text>
+  <rect x="60" y="234" width="240" height="30" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="180" y="254" text-anchor="middle" font-size="10.6" font-weight="700" fill="#1e3a8a">avoda tama</text>
+  <rect x="60" y="272" width="240" height="28" rx="6" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="180" y="291" text-anchor="middle" font-size="10.6" font-weight="700" fill="#991b1b">le zar est passible</text>
+
+  <rect x="370" y="134" width="300" height="176" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.6"/>
+  <text x="520" y="157" text-anchor="middle" font-size="12.2" font-weight="700" fill="#166534">Rav</text>
+  <line x1="392" y1="167" x2="648" y2="167" stroke="#86efac"/>
+  <text x="520" y="188" text-anchor="middle" font-size="10.2" fill="#15803d">Bois, bûches et membres portent tous</text>
+  <text x="520" y="204" text-anchor="middle" font-size="10.2" fill="#15803d">le meme nom : chem sidour ehad.</text>
+  <text x="520" y="220" text-anchor="middle" font-size="10.2" fill="#15803d">Tant que les membres ne sont pas dessus,</text>
+  <text x="520" y="236" text-anchor="middle" font-size="10.2" fill="#15803d">rien n'est acheve.</text>
+  <rect x="400" y="248" width="240" height="26" rx="6" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="520" y="266" text-anchor="middle" font-size="10.6" font-weight="700" fill="#166534">lav avoda tama</text>
+  <rect x="400" y="280" width="240" height="24" rx="6" fill="#f5f5f4" stroke="#a8a29e"/>
+  <text x="520" y="297" text-anchor="middle" font-size="10.6" font-weight="700" fill="#57534e">le zar est exempt</text>
+</svg></div><div class="svg-cap">Rav contre Rabbi Yohanan : la meme sequence de gestes, deux decoupages differents - et de ce decoupage depend la mita.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תַּנְיָא כְּוָותֵיהּ דְּרַב, תַּנְיָא כְּוָותֵיהּ דְּלֵוִי. תַּנְיָא כְּוָותֵיהּ דְּרַב: עֲבוֹדוֹת שֶׁזָּר חַייָּב עֲלֵיהֶם מִיתָה: זְרִיקַת דָּם בֵּין לְפָנִים בֵּין לִפְנַי וְלִפְנִים, וְהַמַּזֶּה בְּחַטַּאת הָעוֹף, וְהַמְמַצֶּה וְהַמַּקְטִיר בְּעוֹלַת הָעוֹף, וְהַמְנַסֵּךְ שְׁלֹשָׁה לֻוגִּין מַיִם, וּשְׁלֹשָׁה לֻוגִּין יַיִן.</div>
+            <div class="fr"><p>Une baraita a ete enseignee conformement a Rav, et une baraita a ete enseignee conformement a Levi. Conformement a Rav : les avodot pour lesquelles un zar est passible de mort — l&#x27;aspersion du sang, aussi bien au-dedans (lifnim) qu&#x27;au dedans du dedans (lifnei ve-lifnim) ; celui qui asperge dans le hatat d&#x27;oiseau ; celui qui presse [le sang] et celui qui fait fumer dans l&#x27;ola d&#x27;oiseau ; et celui qui verse en libation trois log d&#x27;eau ou trois log de vin.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(7)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>זְרִיקַת דָּם</b> הַמִּזְבֵּחַ בַּחוּץ:</div>
+          <div class="glose-fr">[L&#x27;aspersion du sang] de l&#x27;autel exterieur.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בֵּין לִפְנִים</b> הַזָּאָה שֶׁעַל הַפָּרֹוכֶת:</div>
+          <div class="glose-fr">L&#x27;aspersion faite sur le parokhet.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בֵּין לִפְנַי וְלִפְנִים</b> שֶׁעַל בֵּין הַבַּדִּים דְּיוֹם הַכִּפּוּרִים:</div>
+          <div class="glose-fr">Celle qui se fait entre les barres [de l&#x27;arche], a Yom Kippour.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּחַטַּאת הָעוֹף</b> כְּתִיב הַזָּאָה וְהִזָּה מִדַּם הַחַטָּאת עַל קִיר הַמִּזְבֵּחַ (וַיִּקְרָא ה׳:ט׳):</div>
+          <div class="glose-fr">Une aspersion y est ecrite : « et il aspergera du sang du hatat sur la paroi de l&#x27;autel » (Levitique 5,9).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּעוֹלַת הָעוֹף</b> כְּתִיב מִיצּוּי וּמָלַק אֶת רֹאשׁוֹ וְהִקְטִיר הַמִּזְבֵּחָה וְנִמְצָה דָמוֹ עַל קִיר הַמִּזְבֵּחַ (וַיִּקְרָא א׳:ט״ו):</div>
+          <div class="glose-fr">Un pressurage y est ecrit : « et il lui pincera la tete et [la] fera fumer sur l&#x27;autel, et son sang sera exprime sur la paroi de l&#x27;autel » (Levitique 1,15).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהַמַּקְטִיר</b> שֶׁהָעוֹלָה כָּלִיל הִיא:</div>
+          <div class="glose-fr">Car l&#x27;ola est entierement consumee (kalil).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהַמְנַסֵּךְ שְׁלֹשֶׁת לֻוגִּין</b> שֶׁהִיא פָּחוֹת שֶׁבַּנְּסָכִים רְבִיעִית הַהִין לַכֶּבֶשׁ וְאִילּוּ תְּרוּמַת הַדֶּשֶׁן לָא קָתָנֵי וְהַיְינוּ כְּרַב:</div>
+          <div class="glose-fr">C&#x27;est la plus petite des libations : un quart de hin pour un agneau. Or le prelevement de la cendre n&#x27;est pas enseigne ici — et c&#x27;est bien conforme a Rav.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהַמַּזֶּה בְּחַטַּאת הָעוֹף</b> מִשּׁוּם דְּלָא דָּמְיָא לַאֲחֵרִים שֶׁאֵין לוֹ קַבָּלָה בַּכְּלִי אֶלָּא אוֹחֵז בָּרֹאשׁ וּבַגּוּף וּמִזֶּה וְעוֹד שֶׁאֵין לְמִזְבֵּחַ אֶלָּא דָּמָהּ לְהָכִי נַקְּטָהּ בְּאַפֵּי נַפְשָׁהּ:</div>
+          <div class="glose-fr">Parce qu&#x27;il ne ressemble pas aux autres : il n&#x27;y a pas la de recueil du sang dans un vase, mais il saisit [l&#x27;oiseau] par la tete et par le corps et asperge ; et de plus, l&#x27;autel n&#x27;a rien d&#x27;elle sinon son sang. C&#x27;est pourquoi [la baraita] la mentionne a part.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהַמַּקְטִיר בְּעוֹלַת הָעוֹף</b> תֵּימַהּ לִי אַמַּאי לָא קָאָמַר נָמֵי וְהַמְמַצֶּה בְּעוֹלַת הָעוֹף וְעוֹד קַשְׁיָא לִי לִיתְנֵי הַמַּקְטִיר בְּכָל הַקֳּדָשִׁים וּבַתּוֹסֶפְתָּא דִּזְבָחִים עִייַּנְתִּי וְקָתָנֵי סְתָמָא וְהַמַּקְטִיר וְקָתָנֵי בָּהּ נָמֵי וְהַמְמַצֶּה בְּעוֹף וְתוֹסֶפְתָּא שֶׁלִּי מֻוטַּעַת הִיא וצ&quot;ע בַּתּוֹסֶפְתָּא אַחֶרֶת וּלְפִי הַסְּפָרִים שֶׁלִּי נִרְאֶה לִי דְּהָכִי פֵּירוּשׁוֹ וְהַמַּקְטִיר בְּעוֹלַת הָעוֹף וְאַף הַמַּקְטִיר אַף בְּעוֹלַת הָעוֹף וּמִשּׁוּם דִּבְחַטָּאת הָעוֹף לָא מִיחַייַּב אֶלָּא בְּהַזָּאַת דָּמָהּ דְּלֵית בָּהּ הַקְטָרָה מַה שֶׁאֵין כֵּן בְּכָל הַקֳּדָשִׁים קָאָמַר דִּבְעוֹלַת הָעוֹף חַיָּיב אַף הַמַּקְטִיר דְּלָא מִיבַּעְיָא בְּמִיצּוּי דְּמַה דְּאִיתָא נָמֵי בְּחַטַּאת הָעוֹף אֶלָּא אֲפִילּוּ בְּהַקְטָרָתָהּ דְּלֵיכָּא דִּכְוָותַהּ בְּחַטַּאת הָעוֹף וְלָא מִיבַּעְיָא בְּהַקְטָרָה דִּשְׁאָר זְבָחִים דְּשַׁיָּיךְ בְּכָל הַזְּבָחִים אֶלָּא אֲפִילּוּ בְּעוֹף דְּאִיכָּא חַטַּאת הָעוֹף דְּלֵית בָּהּ הַקְטָרָה אֲפִילּוּ הָכֵי בְּעוֹלַת הָעוֹף חַיָּיב:</div>
+          <div class="glose-fr">Cela m&#x27;etonne : pourquoi ne dit-il pas aussi « et celui qui presse [le sang] dans l&#x27;ola d&#x27;oiseau » ? Et il m&#x27;est encore difficile qu&#x27;il n&#x27;enseigne pas « celui qui fait fumer, dans tous les kodachim ». J&#x27;ai examine la Tossefta de Zevahim : elle enseigne de facon generale « et celui qui fait fumer », et elle y enseigne aussi « et celui qui presse, dans l&#x27;oiseau » — mais ma Tossefta est fautive, et cela demande examen dans une autre Tossefta. D&#x27;apres mes livres, il me semble que le sens est celui-ci : « et celui qui fait fumer dans l&#x27;ola d&#x27;oiseau » signifie : et meme celui qui fait fumer, et meme dans l&#x27;ola d&#x27;oiseau. Car dans le hatat d&#x27;oiseau on n&#x27;est passible que pour l&#x27;aspersion de son sang, puisqu&#x27;il n&#x27;y a pas la de haktara — a la difference de tous les autres kodachim ; il dit donc que dans l&#x27;ola d&#x27;oiseau on est passible meme pour la haktara. Ce n&#x27;est pas seulement pour le pressurage de son sang, qui existe aussi dans le hatat d&#x27;oiseau, mais meme pour sa haktara, dont il n&#x27;y a pas d&#x27;equivalent dans le hatat d&#x27;oiseau. Et ce n&#x27;est pas seulement pour la haktara des autres sacrifices, qui vaut pour tous les zevahim, mais meme pour l&#x27;oiseau — alors meme qu&#x27;il existe un hatat d&#x27;oiseau ou il n&#x27;y a pas de haktara : meme ainsi, dans l&#x27;ola d&#x27;oiseau on est passible.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>זְרִיקַת דָּם בֵּין לְפָנִים בֵּין לִפְנַי וְלִפְנִים וְהַמַּזֶּה בְּחַטַּאת הָעוֹף</b> כְּחַד חֲשִׁיב לְהוּ וּמַקְטִיר בְּעוֹלַת הָעוֹף הֲרֵי תְּרֵי וְנִיסּוּךְ הַיַּיִן וְהַמַּיִם הֲרֵי אַרְבַּע:</div>
+          <div class="glose-fr">Il les compte comme une seule [avoda] ; et « celui qui fait fumer dans l&#x27;ola d&#x27;oiseau » fait deux ; et la libation du vin et celle de l&#x27;eau : voila quatre.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara referme la sougya sans trancher : elle produit une baraita pour chaque camp. Celle-ci soutient <b>Rav</b>, et Rachi souligne le detail decisif — <i>la teroumat hadechen n'y est pas enseignee</i>. C'est exactement la these de Rav : un service de retrait ne tue pas, meme au-dehors.</p><p>Rachi identifie chaque item par son verset. L'aspersion du <b>hatat d'oiseau</b> vient de <i>ve-hiza mi-dam ha-hatat al kir ha-mizbeah</i> (Levitique 5,9). Le <b>mitsoui</b> (pressurage du sang) de l'ola d'oiseau vient de <i>ve-nimtsa damo al kir ha-mizbeah</i> (Levitique 1,15) — et la haktara y figure parce que l'ola est <i>kalil</i>, entierement consumee. Enfin les <b>trois log</b> : c'est le quart de hin de l'agneau, la plus petite des libations prevues.</p><p>Le premier Tossefot explique pourquoi le hatat d'oiseau est cite a part : il ne ressemble a aucun autre sacrifice — pas de recueil du sang dans un vase, le cohen tient l'oiseau par la tete et le corps et asperge directement, et l'autel n'en recoit que le sang.</p><p>Le deuxieme Tossefot est un veritable travail d'etablissement du texte : il compare notre baraita a la Tossefta de Zevahim, constate que son exemplaire est <b>fautif</b> et le dit franchement (<i>ve-tsarikh iyoun</i> — il faudra verifier dans une autre Tossefta). Sa lecture finale : la mention de la haktara dans l'ola d'oiseau est un <i>af</i>, un « meme » — meme la haktara, et meme celle d'un oiseau, alors que le hatat d'oiseau, lui, n'en comporte aucune.</p><p>Le troisieme Tossefot fait le decompte et retrouve exactement les <b>quatre</b> avodot de Rav : zerika (toutes formes confondues, y compris l'aspersion du hatat d'oiseau) = une ; haktara de l'ola d'oiseau = deux ; libation de vin = trois ; libation d'eau = quatre.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 470" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="470" fill="#fffdf8"/>
+  <text x="370" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Deux baraitot, deux listes - et chacun repart avec la sienne</text>
+  <text x="370" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">tania kavateh de-Rav, tania kavateh de-Levi : la guemara ne tranche pas, elle documente</text>
+
+  <rect x="26" y="60" width="336" height="300" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1.7"/>
+  <text x="194" y="83" text-anchor="middle" font-size="12.6" font-weight="700" fill="#1e40af">Comme Rav - quatre avodot</text>
+  <text x="194" y="100" text-anchor="middle" font-size="9.8" font-style="italic" fill="#1e3a8a">le decompte est celui de Tossefot</text>
+  <line x1="48" y1="110" x2="340" y2="110" stroke="#93c5fd"/>
+  <rect x="46" y="120" width="296" height="58" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="60" y="139" font-size="10.4" font-weight="700" fill="#1e3a8a">1. Zerika du sang</text>
+  <text x="60" y="155" font-size="9.8" fill="#1e3a8a">au-dehors, au-dedans, au dedans du dedans,</text>
+  <text x="60" y="170" font-size="9.8" fill="#1e3a8a">et l'aspersion du hatat d'oiseau</text>
+  <rect x="46" y="186" width="296" height="42" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="60" y="205" font-size="10.4" font-weight="700" fill="#1e3a8a">2. Haktara de l'ola d'oiseau</text>
+  <text x="60" y="220" font-size="9.8" fill="#1e3a8a">avec le mitsoui, le pressurage du sang</text>
+  <rect x="46" y="236" width="296" height="34" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="60" y="258" font-size="10.4" font-weight="700" fill="#1e3a8a">3. Libation de trois log d'eau</text>
+  <rect x="46" y="278" width="296" height="34" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="60" y="300" font-size="10.4" font-weight="700" fill="#1e3a8a">4. Libation de trois log de vin</text>
+  <rect x="46" y="320" width="296" height="30" rx="6" fill="#fef2f2" stroke="#dc2626"/>
+  <text x="194" y="340" text-anchor="middle" font-size="10.4" font-weight="700" fill="#991b1b">la teroumat hadechen est ABSENTE</text>
+
+  <rect x="378" y="60" width="336" height="300" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.7"/>
+  <text x="546" y="83" text-anchor="middle" font-size="12.6" font-weight="700" fill="#166534">Comme Levi - trois rubriques</text>
+  <text x="546" y="100" text-anchor="middle" font-size="9.8" font-style="italic" fill="#15803d">la troisieme absorbe toute la liste de Rav</text>
+  <line x1="400" y1="110" x2="692" y2="110" stroke="#86efac"/>
+  <rect x="398" y="120" width="296" height="42" rx="6" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="412" y="139" font-size="10.4" font-weight="700" fill="#166534">1. Ha-merim et ha-dechen</text>
+  <text x="412" y="154" font-size="9.8" fill="#15803d">celui qui preleve la cendre - un silouk</text>
+  <rect x="398" y="170" width="296" height="58" rx="6" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="412" y="189" font-size="10.4" font-weight="700" fill="#166534">2. Les sept aspersions du dedans</text>
+  <text x="412" y="205" font-size="9.8" fill="#15803d">et celles du metsora</text>
+  <text x="412" y="220" font-size="9.8" fill="#15803d">= le lekhol devar ha-mizbeah de Rav</text>
+  <rect x="398" y="236" width="296" height="58" rx="6" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="412" y="255" font-size="10.4" font-weight="700" fill="#166534">3. Celui qui fait monter sur l'autel</text>
+  <text x="412" y="271" font-size="9.8" fill="#15803d">chose kachere ou chose passoul - pourvu</text>
+  <text x="412" y="286" font-size="9.8" fill="#15803d">que, montee, elle ne redescende plus</text>
+  <rect x="398" y="302" width="296" height="48" rx="6" fill="#bbf7d0" stroke="#16a34a"/>
+  <text x="546" y="321" text-anchor="middle" font-size="10.2" font-weight="700" fill="#166534">Tossefot : cette rubrique 3 contient deja</text>
+  <text x="546" y="337" text-anchor="middle" font-size="10.2" font-weight="700" fill="#166534">zerika, aspersions, haktarot, libations</text>
+
+  <rect x="26" y="376" width="688" height="80" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="370" y="398" text-anchor="middle" font-size="11.4" font-weight="700" fill="#713f12">La nafka mina tient en une ligne</text>
+  <text x="370" y="419" text-anchor="middle" font-size="10.4" fill="#854d0e">Un zar qui preleve la cendre de l'autel : pour Rav, il n'encourt pas la mita - c'est un service de retrait.</text>
+  <text x="370" y="437" text-anchor="middle" font-size="10.4" fill="#854d0e">Pour Levi, il l'encourt - au-dehors, le filtre avodat matana ne s'applique pas ; seul compte que le service soit acheve.</text>
+</svg></div><div class="svg-cap">Les deux baraitot mises face a face : la liste de Rav se compte en quatre avodot, celle de Levi tient en trois rubriques dont la premiere est precisement la teroumat hadechen.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תַּנְיָא כְּוָותֵיהּ דְּלֵוִי: עֲבוֹדוֹת שֶׁזָּר חַייָּב עֲלֵיהֶן מִיתָה: הַמָּרִים אֶת הַדֶּשֶׁן, וְשֶׁבַע הַזָּאוֹת שֶׁבִּפְנִים, וְשֶׁבִּמְצוֹרָע, וְהַמַּעֲלֶה עַל גַּבֵּי הַמִּזְבֵּחַ בֵּין דָּבָר כָּשֵׁר בֵּין דָּבָר פָּסוּל.</div>
+            <div class="fr"><p>Une baraita a ete enseignee conformement a Levi : les avodot pour lesquelles un zar est passible de mort — celui qui preleve la cendre (ha-merim et ha-dechen) ; les sept aspersions du dedans, et celles du metsora ; et celui qui fait monter [quoi que ce soit] sur l&#x27;autel, que ce soit une chose kachere ou une chose passoul (invalide).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בֵּין דָּבָר פָּסוּל</b> בְּהָנָךְ פְּסוּלִין שֶׁפְּסוּלָן בַּקֹּודֶשׁ דְּאִם עָלוּ לֹא יֵרְדוּ מִשּׁוּם הָכִי חֲשִׁיבָא הַקְטָרָה:</div>
+          <div class="glose-fr">Parmi les invalides dont l&#x27;invalidation s&#x27;est produite dans le sanctuaire, de sorte que « s&#x27;ils sont montes [sur l&#x27;autel], ils ne redescendent pas » : c&#x27;est pourquoi la haktara compte [comme avoda].</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהַמַּעֲלֶה עַל גַּבֵּי הַמִּזְבֵּחַ בֵּין דָּבָר כָּשֵׁר כו&#x27;</b> בִּכְלַל זֶה יֵשׁ זְרִיקָה וְהַזָּאוֹת וְהַקְטָרוֹת וְנִיסּוּךְ הַיַּיִן וְהַמַּיִם שֶׁהֲרֵי כֻּולָּן עוֹלִין עַל גַּבֵּי הַמִּזְבֵּחַ:</div>
+          <div class="glose-fr">Sont comprises la-dedans la zerika, les aspersions, les haktarot ainsi que les libations de vin et d&#x27;eau, puisque toutes montent sur l&#x27;autel.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La baraita de Levi ouvre par ce qui manquait a celle de Rav : <b>ha-merim et ha-dechen</b>, le prelevement de la cendre. Un service de retrait, place en tete de liste — c'est la these de Levi affichee des le premier mot.</p><p>La mention d'une chose <b>passoul</b> demande une explication, que Rachi donne : il s'agit des invalides dont le defaut est survenu <i>ba-kodech</i>, dans l'enceinte sacree, et pour lesquels vaut la regle <b>im alou lo yerdou</b> — une fois montes sur l'autel, ils n'en redescendent plus. Puisque l'autel les retient, les y faire monter compte comme une vraie haktara.</p><p>Tossefot fait une remarque d'ensemble qui eclaire l'architecture des deux listes : la troisieme rubrique de Levi — <i>celui qui fait monter sur l'autel</i> — <b>contient deja</b> toute la liste de Rav, puisque zerika, aspersions, haktarot et libations montent toutes sur l'autel. Levi ne fait donc pas une liste plus longue : il fait une liste plus <b>synthetique</b>, a laquelle il ajoute en tete le cas qui separe les deux maitres.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לָמָּה מְפִיסִין? לָמָּה מְפִיסִין?! כְּדַאֲמָרָן! אֶלָּא: לָמָּה מְפַיְּסִין וְחוֹזְרִין וּמְפַיְּסִין!</div>
+            <div class="fr"><p>Pourquoi tire-t-on au sort (mefissin) ? — Pourquoi tire-t-on au sort ?! Mais comme nous l&#x27;avons dit [dans la michna : pour eviter les disputes] ! — Non : pourquoi tire-t-on au sort, puis recommence-t-on a tirer au sort ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּדַאֲמָרָן</b> שֶׁהָיוּ בָּאִים לִידֵי מַחֲלֹוקֶת:</div>
+          <div class="glose-fr">Qu&#x27;ils en venaient a la dispute.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לָמָּה מְפַיְּסִין וְחוֹזְרִין וּמְפַיְּסִין</b> לָמָּה נֶאֱסָפִין לְפַייֵּס אַרְבָּעָה פְּעָמִים בַּיּוֹם כְּדִתְנַן בְּמַתְנִיתִין יְפַיְּסוּ עַל כֻּולָּן בַּאֲסִיפָה רִאשׁוֹנָה מִי יִזְכֶּה לָזֶה וּמִי לְזוֹ:</div>
+          <div class="glose-fr">Pourquoi se rassemblent-ils pour le payis quatre fois par jour, comme il est enseigne dans notre michna ? Qu&#x27;ils tirent au sort sur toutes [les taches] des le premier rassemblement : qui obtiendra ceci et qui obtiendra cela.</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">וְצָרִיךְ לְפַיְּסוֹ בְּשָׁלֹשׁ שׁוּרוֹת שֶׁל שְׁלֹשָׁה בְּנֵי אָדָם. יֵשׁ לְהַקְשׁוֹת לָמָּה יְחַלְּקֵם לִשְׁלֹשָׁה חֲלוּקוֹת יִקַּח כָּל הַתִּשְׁעָה? וְנִרְאֶה לִי בס&quot;ד עַל דֶּרֶךְ שֶׁאָמַר לְעֵיל דַּף כ&quot;ד לָמָּה מְפַיְּיסִין וְחוֹזְרִין וּמְפַייְּסִין כְּדֵי לְהַרְגִּישׁ הָעֲזָרָה לְהַשְׁמִיעַ קוֹל כַּמָּה פְּעָמִים וְלָכֵן מֵבִיא שְׁלֹשָׁה שׁוּרוֹת בְּשָׁלֹשׁ פְּעָמִים לְהַרְגִּישׁ הָעִנְיָן שֶׁהוּא מְרַצֶּה אֶת חֲבֵירוֹ וְגַם חֲבֵירוֹ אֲפִילּוּ אִם הוּא אַכְזָרִי יִתְרַצֶּה. אוֹ יוּבַן מֵחֶלְקָם לְשָׁלֹשׁ חֲלוּקוֹת כִּי הַחוֹטֵא לַחֲבֵירוֹ פָּגַע בִּכְבוֹד הנר&quot;ן [נֶפֶשׁ, רוּחַ, נְשָׁמָה] שֶׁלּוֹ וְלָכֵן יְחַלְּקֵם לְשָׁלֹשׁ כְּנֶגֶד נר&quot;ן [נֶפֶשׁ, רוּחַ, נְשָׁמָה] . וּבָזֶה יְתֹורַץ קֻושְׁיָא אַחֶרֶת לָמָּה אַחַר שֶׁנִּפְטַר יוֹלִיךְ עֲשָׂרָה בְּבַת אַחַת וְאֵינוֹ מֵחֶלְקָם? וּבָזֶה נִיחָא כִּי בַּקֶּבֶר אֵינוֹ שׁוֹכֵן שָׁם אֶלָּא רַק נֶפֶשׁ לְבַד וְהִיא מִן הַקְּטַנּוֹת שֶׁבָּהּ וְלֹא נר&quot;ן. וּמַה שֶׁאָמַר &#x27; אַל יְבַקֵּשׁ מִמֶּנּוּ יוֹתֵר מִשָּׁלֹשׁ פְּעָמִים &#x27; מַקְשִׁים מְנָא לֵיהּ דִּטְפֵי לֹא? וְנִרְאֶה לִי דק&quot;ל כֵּיוָן דִּדְבָרִים אֵלּוּ מִפִּי יַעֲקֹב אָבִינוּ ע&quot;ה נֶאֱמָרִים לְמַאי הֻוצְרַךְ לוֹמַר ג&#x27; פְּעָמִים (בְּרֵאשִׁית נ, יז) &#x27;נָא&#x27; דְּוַדַּאי לָא חֲשִׁיד יוֹסֵף הַצַּדִּיק ע&quot;ה לְסָרֵב אֲפִילּוּ בְּדִיבּוּר אֶחָד אֶלָּא וַדַּאי שֶׁבָּא לְלַמְּדֵינוּ הַכָּתוּב שִׁיעוּר הַמְּחִילָה בְּעָלְמָא דְּהָוֵי עַד שָׁלֹשׁ. וַעֲדַיִין קָשֶׁה לָמָּה נָקֵיט &#x27;אַל יְבַקֵּשׁ&#x27; שֶׁהוּא לְעִיכּוּבָא לֵימָא אֵין צָרִיךְ לְבַקֵּשׁ יוֹתֵר מִשְּׁלֹשָׁה&#x27;? וְנִרְאֶה לִי בס&quot;ד דְּאָמַר לָשׁוֹן זֶה לְעִיכּוּבָא שֶׁאִם יִרְצֶה לְהַחְמִיר עַל עַצְמוֹ וּלְבַקֵּשׁ יוֹתֵר מִשָּׁלֹשׁ אֵינוֹ רַשַּׁאי מִפְּנֵי שֶׁבָּזֶה מַזִּיק אֶת חֲבֵירוֹ לְקַטְרֵג עָלָיו לְמַעְלָה שֶׁגַּם הקב&quot;ה לֹא יִמְחֹול לוֹ עַל עֲוֹנֹותָיו וּמִקִּטְרוּג לְקִטְרוּג יִמָּשֵׁךְ גַּם עַל יִשְׂרָאֵל ח&quot;ו.</div>
+          <div class="glose-fr">« Et il doit l&#x27;apaiser par trois rangees de trois personnes. » On peut objecter : pourquoi les diviser en trois groupes — qu&#x27;il prenne les neuf ensemble ! Il me semble, avec l&#x27;aide du Ciel, qu&#x27;il faut l&#x27;expliquer sur le modele de ce qui a ete dit plus haut, au daf 24 : pourquoi tire-t-on au sort et recommence-t-on a tirer au sort ? — afin de faire vibrer la azara, de faire entendre la rumeur plusieurs fois. De meme ici, il amene trois rangees en trois fois, pour faire sentir la chose — qu&#x27;il est bien en train d&#x27;apaiser son prochain ; et ainsi son prochain, meme s&#x27;il est dur (akhzari), finira par se laisser apaiser. Ou bien on comprendra la division en trois groupes ainsi : celui qui a fait tort a son prochain a porte atteinte a l&#x27;honneur de son NaRaN — nefech, rouah, nechama — c&#x27;est pourquoi il divise en trois, en correspondance avec ces trois niveaux d&#x27;ame. Cela resout une autre difficulte : pourquoi, lorsque l&#x27;offense est deja decede, amene-t-on dix personnes [sur sa tombe] d&#x27;un seul coup, sans les diviser ? Voici qui l&#x27;explique : dans la tombe ne reside que la nefech seule, et encore dans sa dimension la plus reduite — non le NaRaN entier. Quant a ce qui est dit : « qu&#x27;il ne lui demande pas plus de trois fois », on objecte : d&#x27;ou sait-on que davantage ne convient pas ? Il me semble que la difficulte est celle-ci : puisque ces paroles sont rapportees au nom de Yaakov Avinou, pourquoi a-t-il fallu dire trois fois « na » (de grace) — Genese 50,17 ? Car assurement Yossef le Juste n&#x27;etait pas soupconne de refuser, meme a une seule parole. C&#x27;est donc que le verset vient nous enseigner la mesure generale de la demande de pardon : jusqu&#x27;a trois fois. Reste une difficulte : pourquoi employer « qu&#x27;il ne demande pas », qui est une formule d&#x27;interdiction ? Qu&#x27;il dise plutot : il n&#x27;a pas besoin de demander plus de trois fois ! Il me semble, avec l&#x27;aide du Ciel, qu&#x27;il a employe cette formule prohibitive volontairement : si l&#x27;offenseur voulait etre rigoureux envers lui-meme et demander plus de trois fois, il n&#x27;en a pas le droit — car il nuirait ainsi a son prochain, en provoquant contre lui une accusation en haut, de sorte que le Saint beni soit-Il non plus ne lui pardonnerait pas ses fautes ; et d&#x27;accusation en accusation, cela pourrait s&#x27;etendre a tout Israel, a Dieu ne plaise.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Changement complet de sujet : la guemara revient a la michna et a ses <b>quatre payassot</b>, les quatre tirages au sort quotidiens. Un maitre demande <i>lama mefissin</i> — et la guemara s'etonne de la question elle-meme : la michna a deja repondu, c'est pour eviter les rixes entre cohanim, comme le rappelle Rachi.</p><p>La question est donc reformulee, et c'est la vraie : <b>lama mefissin ve-hozrin ou-mefissin</b>. Pourquoi rassembler l'ensemble des cohanim <b>quatre fois</b> dans la journee ? Rachi pose l'alternative evidente : qu'on tire au sort toutes les taches d'un seul coup, au premier rassemblement — qui obtiendra ceci, qui obtiendra cela — et l'affaire est reglee.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַבִּי יוֹחָנָן: כְּדֵי לְהַרְגִּישׁ כָּל הָעֲזָרָה, שֶׁנֶּאֱמַר: ״אֲשֶׁר יַחְדָּיו נַמְתִּיק סוֹד בְּבֵית אֱלֹהִים נְהַלֵּךְ בְּרָגֶשׁ״.</div>
+            <div class="fr"><p>Rabbi Yohanan a dit : afin de faire vibrer toute la azara (le parvis), ainsi qu&#x27;il est dit : « nous qui ensemble goutions la douceur du secret, dans la maison de Dieu nous marchions dans la rumeur » (Psaumes 55,15).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְהַרְגִּישׁ</b> לְהַשְׁמִיעַ קוֹל הֲמוֹן עַם רַב כַּמָּה פְּעָמִים שֶׁהוּא כָּבוֹד לַמֶּלֶךְ שֶׁנֶּאֱמַר בְּבֵית אֱלֹהִים וְגוֹ&#x27;:</div>
+          <div class="glose-fr">Faire entendre plusieurs fois la rumeur d&#x27;une grande foule, ce qui est un honneur pour le Roi, comme il est dit : « dans la maison de Dieu, etc. »</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La reponse est acoustique, et elle renverse la question. On cherchait une raison d'<b>efficacite</b> — pourquoi ne pas tout regler d'un coup ? La reponse est qu'il ne s'agissait pas d'efficacite : la repetition du rassemblement est voulue <b>pour elle-meme</b>.</p><p><b>Le-hargich</b> : faire vibrer, faire sentir, mettre en mouvement. Quatre fois par jour, les cohanim affluent de tout le Temple vers un meme point ; le bruit et la foule remplissent la azara. Rachi l'exprime sans detour : faire entendre plusieurs fois <b>la rumeur d'une grande foule</b>, car c'est un <i>kavod la-melekh</i>, un honneur rendu au Roi.</p><p>Le verset des Psaumes fournit le mot meme : <i>be-veit Elokim nehalekh <b>be-raguech</b></i> — dans la maison de Dieu nous marchions dans la rumeur. L'agitation bruyante du service divin n'est pas un desordre a tolerer ; elle fait partie de la solennite.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="340" fill="#fffdf8"/>
+  <text x="360" y="26" text-anchor="middle" font-size="14.4" font-weight="700" fill="#1c1917">Quatre tirages au sort au lieu d'un : la question et sa reponse</text>
+
+  <rect x="26" y="44" width="316" height="118" rx="10" fill="#fef2f2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="184" y="66" text-anchor="middle" font-size="11.8" font-weight="700" fill="#991b1b">La question qu'il ne faut PAS poser</text>
+  <text x="184" y="88" text-anchor="middle" font-size="10.2" fill="#7f1d1d">lama mefissin ? - pourquoi tirer au sort ?</text>
+  <text x="184" y="110" text-anchor="middle" font-size="10.2" fill="#7f1d1d">La michna l'a deja dit : pour eviter</text>
+  <text x="184" y="126" text-anchor="middle" font-size="10.2" fill="#7f1d1d">les disputes entre cohanim.</text>
+  <text x="184" y="150" text-anchor="middle" font-size="10.2" font-weight="700" fill="#991b1b">kedaamran - la guemara se reprend</text>
+
+  <rect x="378" y="44" width="316" height="118" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <text x="536" y="66" text-anchor="middle" font-size="11.8" font-weight="700" fill="#1e40af">La vraie question</text>
+  <text x="536" y="88" text-anchor="middle" font-size="10.2" fill="#1e3a8a">lama mefissin ve-hozrin ou-mefissin ?</text>
+  <text x="536" y="110" text-anchor="middle" font-size="10.2" fill="#1e3a8a">Pourquoi rassembler quatre fois,</text>
+  <text x="536" y="126" text-anchor="middle" font-size="10.2" fill="#1e3a8a">au lieu d'attribuer toutes les taches</text>
+  <text x="536" y="142" text-anchor="middle" font-size="10.2" fill="#1e3a8a">d'un coup au premier rassemblement ?</text>
+
+  <rect x="120" y="180" width="480" height="60" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.7"/>
+  <text x="360" y="203" text-anchor="middle" font-size="12.2" font-weight="700" fill="#166534">Rabbi Yohanan : kedei le-hargich kol ha-azara</text>
+  <text x="360" y="226" text-anchor="middle" font-size="10.4" fill="#15803d">pour faire vibrer tout le parvis - Rachi : faire entendre plusieurs fois la rumeur d'une grande foule</text>
+
+  <rect x="80" y="256" width="560" height="66" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="360" y="278" text-anchor="middle" font-size="11" font-weight="700" fill="#713f12">Psaumes 55,15 - le verset support</text>
+  <text x="360" y="299" text-anchor="middle" font-size="10.2" fill="#854d0e">acher yahdav namtik sod, be-veit Elokim nehalekh be-raguech</text>
+  <text x="360" y="315" text-anchor="middle" font-size="10.2" fill="#854d0e">La rumeur de la foule n'est pas un desordre tolere : elle est un honneur rendu au Roi.</text>
+</svg></div><div class="svg-cap">La question mal posee, la question juste, et la reponse de Rabbi Yohanan : la repetition du payis est voulue pour le bruit qu&#x27;elle produit.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בַּמֶּה מְפִיסִין? רַב נַחְמָן אָמַר: בְּבִגְדֵי חוֹל, וְרַב שֵׁשֶׁת אָמַר: בְּבִגְדֵי קֹדֶשׁ.</div>
+            <div class="fr"><p>En quoi [en quels vetements] tire-t-on au sort ? Rav Nahman dit : en vetements profanes (bigdei hol).</p><p>Et Rav Chechet dit : en vetements sacres (bigdei kodech).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בַּמֶּה מְפִיסִין</b> מֶה הָיוּ לוֹבְשִׁין אוֹתָם הַנֶּאֱסָפִין לְפַיֵּיס בִּגְדֵי חוֹל אוֹ בִּגְדֵי קֹדֶשׁ:</div>
+          <div class="glose-fr">Que portaient ceux qui se rassemblaient pour le payis : des vetements profanes ou des vetements sacres ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּבִגְדֵי חוֹל</b> וְהַזּוֹכֶה לַעֲבוֹדָה פּוֹשֵׁט וְלוֹבֵשׁ בִּגְדֵי קֹדֶשׁ:</div>
+          <div class="glose-fr">Et celui qui obtient le service se devet et revet les vetements sacres.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle question sur le meme rituel, tres concrete : dans quelle tenue les cohanim se presentaient-ils au payis ? Rachi reformule pour lever toute ambiguite — <i>que portaient ceux qui se rassemblaient pour le tirage au sort ?</i>.</p><p>Rav Nahman repond : en vetements ordinaires, et celui qui gagne se change ensuite pour revetir les vetements sacres. Rav Chechet repond l'inverse : ils etaient deja en tenue de service. Les raisons de chacun viennent au segment suivant, et elles sont symetriques.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg16">
+          <div class="seg-num">17</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַב נַחְמָן אָמַר: בְּבִגְדֵי חוֹל, דְּאִי אָמְרַתְּ בְּבִגְדֵי קֹדֶשׁ, אִיכָּא בַּעֲלֵי זְרוֹעוֹת דְּחָמְסִי וְעָבְדִי. רַב שֵׁשֶׁת אָמַר: בְּבִגְדֵי קֹדֶשׁ, דְּאִי אָמְרַתְּ בְּבִגְדֵי חֹול, אַגַּב חַבִּיבוּתֵיהּ מִיקְּרוּ וְעָבְדִי.</div>
+            <div class="fr"><p>Rav Nahman dit : en vetements profanes — car si tu dis en vetements sacres, il y a des hommes de main (baalei zeroa) qui useraient de force et accompliraient [le service]. Rav Chechet dit : en vetements sacres — car si tu dis en vetements profanes, du fait de leur affection [pour le service], il leur arriverait de [se precipiter et de] servir [ainsi].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּחָמְסִי וְעָבְדִי</b> אַף עַל פִּי שֶׁלֹּא זָכוּ בְּגוֹרָל:</div>
+          <div class="glose-fr">Bien qu&#x27;ils n&#x27;aient pas gagne au tirage au sort.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִקְּרוּ וְעָבְדִי</b> עֲבוֹדָה בְּבִגְדֵי חוֹל אוֹתָן שֶׁזָּכוּ לְפַיֵּיס:</div>
+          <div class="glose-fr">[Ceux qui ont gagne au payis] accompliraient le service en vetements profanes.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deux raisonnements de meme forme, deux craintes opposees — et chacune dessine un portrait du sacerdoce.</p><p><b>Rav Nahman</b> redoute la <b>violence</b>. Si les cohanim etaient deja revetus du sacre, des <i>baalei zeroa</i>, des hommes de force, n'auraient plus qu'a s'avancer : rien ne les separerait plus de l'autel. Rachi precise le scenario — ils feraient le service <i>bien qu'ils n'aient pas gagne au tirage</i>. Le vetement profane joue alors un role de frein : il faut se changer, et ce delai vaut controle.</p><p><b>Rav Chechet</b> redoute l'inverse : non la mauvaise foi, mais l'<b>elan</b>. <i>Agav havivouteh</i> — a cause de l'amour qu'ils portent au service, ceux qui viennent de gagner s'elanceraient et serviraient sans avoir pris le temps de se changer, invalidant du meme coup leur avoda. La tenue sacree portee d'avance supprime le risque.</p><p>Le desaccord n'est pas seulement technique : l'un protege le rite contre l'avidite, l'autre contre la ferveur.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 430" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="430" fill="#fffdf8"/>
+  <text x="370" y="26" text-anchor="middle" font-size="14.6" font-weight="700" fill="#1c1917">En quels vetements se tenait le payis ? Deux peurs opposees</text>
+  <text x="370" y="45" text-anchor="middle" font-size="10.2" fill="#57534e">Chacun choisit la tenue qui empeche l'accident qu'il redoute</text>
+
+  <rect x="26" y="60" width="336" height="212" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1.7"/>
+  <text x="194" y="83" text-anchor="middle" font-size="12.4" font-weight="700" fill="#1e40af">Rav Nahman : bigdei hol</text>
+  <text x="194" y="100" text-anchor="middle" font-size="10" font-style="italic" fill="#1e3a8a">vetements profanes</text>
+  <line x1="48" y1="110" x2="340" y2="110" stroke="#93c5fd"/>
+  <text x="194" y="132" text-anchor="middle" font-size="10.4" font-weight="700" fill="#1e40af">Ce qu'il redoute</text>
+  <text x="194" y="152" text-anchor="middle" font-size="10.2" fill="#1e3a8a">Des baalei zeroa, des hommes de main :</text>
+  <text x="194" y="168" text-anchor="middle" font-size="10.2" fill="#1e3a8a">deja vetus pour servir, ils passeraient</text>
+  <text x="194" y="184" text-anchor="middle" font-size="10.2" fill="#1e3a8a">en force sans avoir gagne au sort.</text>
+  <rect x="52" y="196" width="284" height="30" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="194" y="216" text-anchor="middle" font-size="10.4" font-weight="700" fill="#1e3a8a">hamsi ve-avdi - ils prennent de force</text>
+  <text x="194" y="245" text-anchor="middle" font-size="10.2" fill="#1e3a8a">Le gagnant se change ensuite :</text>
+  <text x="194" y="261" text-anchor="middle" font-size="10.2" fill="#1e3a8a">il ote le profane et revet le sacre.</text>
+
+  <rect x="378" y="60" width="336" height="212" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.7"/>
+  <text x="546" y="83" text-anchor="middle" font-size="12.4" font-weight="700" fill="#166534">Rav Chechet : bigdei kodech</text>
+  <text x="546" y="100" text-anchor="middle" font-size="10" font-style="italic" fill="#15803d">vetements sacres</text>
+  <line x1="400" y1="110" x2="692" y2="110" stroke="#86efac"/>
+  <text x="546" y="132" text-anchor="middle" font-size="10.4" font-weight="700" fill="#166534">Ce qu'il redoute</text>
+  <text x="546" y="152" text-anchor="middle" font-size="10.2" fill="#15803d">L'elan meme du cohen : agav havivouteh,</text>
+  <text x="546" y="168" text-anchor="middle" font-size="10.2" fill="#15803d">par amour du service, il se precipiterait</text>
+  <text x="546" y="184" text-anchor="middle" font-size="10.2" fill="#15803d">et servirait sans avoir pris le temps</text>
+  <text x="546" y="200" text-anchor="middle" font-size="10.2" fill="#15803d">de se changer - avoda passoul.</text>
+  <rect x="404" y="212" width="284" height="30" rx="6" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="546" y="232" text-anchor="middle" font-size="10.4" font-weight="700" fill="#166534">mikrou ve-avdi - la hate fait la faute</text>
+  <text x="546" y="261" text-anchor="middle" font-size="10.2" fill="#15803d">La tenue sacree est deja sur eux : rien a oublier.</text>
+
+  <rect x="26" y="288" width="688" height="126" rx="10" fill="#fff7ed" stroke="#ea580c" stroke-width="1.6"/>
+  <text x="370" y="310" text-anchor="middle" font-size="11.6" font-weight="700" fill="#7c2d12">La preuve de Rav Nahman - une michna de Tamid</text>
+  <text x="370" y="332" text-anchor="middle" font-size="10.4" fill="#9a3412">Apres le tirage, on remettait les gagnants aux hazanim, les preposes du Temple,</text>
+  <text x="370" y="349" text-anchor="middle" font-size="10.4" fill="#9a3412">qui LEUR OTAIENT leurs vetements et ne leur laissaient que les mikhnassaim, les caleçons.</text>
+  <line x1="120" y1="360" x2="620" y2="360" stroke="#fdba74"/>
+  <text x="370" y="381" text-anchor="middle" font-size="10.6" font-weight="700" fill="#7c2d12">Si l'on doit les deshabiller apres le payis, c'est qu'ils y etaient venus en vetements profanes.</text>
+  <text x="370" y="402" text-anchor="middle" font-size="10.2" fill="#9a3412">Le seul vetement conserve est le caleçon, qu'on ne peut oter par pudeur - il fait le lien entre les deux tenues.</text>
+</svg></div><div class="svg-cap">Rav Nahman contre Rav Chechet : deux dangers symetriques - la force de ceux qui n&#x27;ont pas gagne, la hate de ceux qui ont gagne - et la michna de Tamid qui sert de preuve.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg17">
+          <div class="seg-num">18</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב נַחְמָן: מְנָא אֲמִינָא לַהּ, דִּתְנַן: מְסָרוּן לַחַזָּנִין וְהָיוּ מַפְשִׁיטִין אוֹתָן אֶת בִּגְדֵיהֶן, וְלֹא הָיוּ מַנִּיחִין עֲלֵיהֶן אֶלָּא מִכְנָסַיִם בִּלְבַד.</div>
+            <div class="fr"><p>Rav Nahman a dit : d&#x27;ou est-ce que je le dis ? De ce que nous avons appris [dans la michna] : on les remettait aux hazanim (les preposes), qui leur otaient leurs vetements et ne leur laissaient que les mikhnassaim (les calecons).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לַחַזָּנִים</b> שַׁמָּשִׁין:</div>
+          <div class="glose-fr">Des serviteurs (chamachim).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Nahman cherche un appui dans une michna du traite Tamid, qui decrit ce qui suit immediatement le payis : les gagnants sont confies aux <b>hazanim</b> — Rachi glose d'un mot, <i>chamachim</i>, les serviteurs du Temple — lesquels les <b>deshabillent</b> et ne leur laissent que les calecons.</p><p>L'argument tient dans le geste : si l'on doit leur retirer leurs vetements apres le tirage, c'est bien qu'ils y sont venus vetus d'autre chose que du sacre. La preuve est indirecte mais nette.</p><p>Reste le detail des <b>mikhnassaim</b>, que la michna prend soin de mentionner : le caleçon est le seul vetement qu'on ne peut retirer par pudeur. Il fait charniere entre les deux tenues — et c'est aussi le seul point ou le profane et le sacre se touchent sur le corps du cohen.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_24a.html">&lsaquo; Yoma 24a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

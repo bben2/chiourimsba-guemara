@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sukkah 32a — L inspection du loulav : defauts, tiyomet, et pourquoi kapot temarim designe la palme</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Sukkah 32a — L inspection du loulav : defauts, tiyomet, et pourquoi kapot temarim designe la palme</h1>
+    <div class="ref">Sukkah 32a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Sukkah_31b.html">&lsaquo; Sukkah 31b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Sukkah_32b.html">Sukkah 32b &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> Le folio est une longue inspection du loulav, menee terme apres terme. Il acheve d abord la baraita des loulavim defectueux commencee en 31b, en bornant chacun de ses mots : Rav Papa restreint le fendu au seul cas ou la fente donne deux echines, comme l outil de scribe appele heimanak ; Rava restreint la courbure a celle qui se fait vers l avant, car une courbure vers l arriere est la croissance naturelle de la plante ; Rav Nahman laisse ouvert le cas des cotes, que les decisionnaires trancheront par rigueur.</p><p>Rava ajoute un defaut de naissance -- le loulav dont toutes les feuilles poussent du meme cote, qu il qualifie de baal moum, infirme. La Guemara revient ensuite a la michna et Rav Papa y separe deux mots voisins : les feuilles arrachees de l echine, qui font du loulav un balai et l invalident, et les feuilles simplement ecartees, qui le laissent kacher.</p><p>De la nait sa question la plus fine, sur la tiyomet, la paire de feuilles jumelles du sommet : otee elle invalide sans discussion, mais fendue ? Rien ne manque, pourtant l unite est rompue.</p><p>Une premiere version laisse la question ouverte, faute de preuve ; une seconde tranche que la fendue vaut l otee. Le folio remonte alors au verset lui-meme, kapot temarim, que R.</p><p>Yehouda au nom de R. Tarfon lit kafout, lie.</p><p>Ravina retourne aussitot cette lecture en objection : si le mot veut dire liable, pourquoi le loulav plutot qu autre chose du palmier ? Cinq candidats sont elimines l un apres l autre, chacun par un type de preuve different -- la branche durcie, trop dure pour ceder ; la buche, deja liee a jamais et donc jamais ecartee ; la jeune branche, liable mais herissee de pointes, alors que les voies de la Torah sont des voies de douceur ; deux regimes de dattes, ecartes par l orthographe massoretique ; une seule feuille, qui porte un autre nom.</p><p>Le folio se clot sur les palmes de la Montagne de Fer : la michna les declare kacherot, une baraita les declare pessoulot, et la contradiction se resout par la condition mesurable d Abaye -- l extremite d une feuille doit atteindre la base de la suivante.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 566" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="566" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1c1917">Le fil du folio : tout le loulav passe a l inspection</text>
+  <text x="380" y="42" text-anchor="middle" font-size="10.2" fill="#57534e">Quatre mouvements. Le folio acheve la baraita des loulavim abimes, revient a la michna, puis remonte au verset lui-meme.</text>
+
+  <rect x="24" y="56" width="712" height="98" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.4"/>
+  <text x="38" y="74" font-size="10.6" font-weight="700" fill="#7f1d1d">Mouvement 1 (seg. 0-3) -- la baraita des defauts, precisee mot par mot</text>
+  <text x="38" y="92" font-size="9" fill="#292524">Epineux, fendu, courbe comme une faucille, durci en bois : passoul. Chaque terme recoit ensuite sa borne amoraique.</text>
+  <text x="38" y="109" font-size="9" fill="#292524">Rav Papa borne le fendu : seulement quand la fente fait deux echines, comme le heimanak, l outil de fer a deux tetes.</text>
+  <text x="38" y="126" font-size="9" fill="#292524">Rava borne la courbure : vers l avant elle invalide, vers l arriere c est la croissance naturelle. Rav Nahman doute des cotes.</text>
+  <text x="38" y="145" font-size="8.6" fill="#b91c1c">Principe qui traverse tout le folio : ce qui est la nature du loulav ne peut pas etre son defaut.</text>
+  <path d="M380 154 L380 168" stroke="#78716c" stroke-width="1.3"/><path d="M375 167 L385 167 L380 173 Z" fill="#78716c"/>
+
+  <rect x="24" y="174" width="712" height="104" rx="7" fill="#f0f9ff" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="38" y="192" font-size="10.6" font-weight="700" fill="#0c4a6e">Mouvement 2 (seg. 4-6) -- retour a la michna : feuilles arrachees, feuilles ecartees, tiyomet fendue</text>
+  <text x="38" y="210" font-size="9" fill="#292524">Rav Papa separe deux mots voisins : nifretsou, les feuilles detachees de l echine et rattachees comme un balai -- passoul ;</text>
+  <text x="38" y="227" font-size="9" fill="#292524">nifredou, les feuilles qui s ecartent en haut mais tiennent encore par le bas -- kacher. Manque contre simple ecartement.</text>
+  <text x="38" y="244" font-size="9" fill="#292524">Puis sa question : la tiyomet, la paire de feuilles jumelles du sommet, FENDUE (et non otee) -- quelle loi ?</text>
+  <text x="38" y="264" font-size="8.6" fill="#0369a1">Premiere version : la preuve echoue, otee est different car il manque de la matiere. Deuxieme version : fendue = otee, passoul.</text>
+  <path d="M380 278 L380 292" stroke="#78716c" stroke-width="1.3"/><path d="M375 291 L385 291 L380 297 Z" fill="#78716c"/>
+
+  <rect x="24" y="298" width="712" height="132" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.4"/>
+  <text x="38" y="316" font-size="10.6" font-weight="700" fill="#78350f">Mouvement 3 (seg. 7-11) -- remontee au verset : pourquoi kapot temarim designe le loulav</text>
+  <text x="38" y="334" font-size="9" fill="#292524">R. Yehouda au nom de R. Tarfon lit kapot comme kafout, lie : si le loulav est ecarte, qu on le lie.</text>
+  <text x="38" y="351" font-size="9" fill="#292524">Ravina retourne alors la lecture contre elle-meme : si le mot veut dire liable, prends donc autre chose du palmier.</text>
+  <text x="38" y="368" font-size="9" fill="#292524">Le harouta, branche durcie : impossible a lier. L oufta, la buche nue : deja liee pour toujours, donc jamais ecartee.</text>
+  <text x="38" y="385" font-size="9" fill="#292524">Le koufra, jeune branche encore souple : liable, mais couvert de pointes -- ses voies sont des voies de douceur.</text>
+  <text x="38" y="405" font-size="9" fill="#292524">Deux regimes de dattes ? kapot est ecrit sans vav, donc un seul. Une seule feuille ? celle-la se nomme kaf, pas kapot.</text>
+  <text x="38" y="423" font-size="8.6" fill="#b45309">Un seul mot du verset, six candidats elimines : le loulav est le seul objet dont on puisse dire qu il est lie apres avoir ete ecarte.</text>
+  <path d="M380 430 L380 444" stroke="#78716c" stroke-width="1.3"/><path d="M375 443 L385 443 L380 449 Z" fill="#78716c"/>
+
+  <rect x="24" y="450" width="712" height="98" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.4"/>
+  <text x="38" y="468" font-size="10.6" font-weight="700" fill="#14532d">Mouvement 4 (seg. 12-13) -- les palmes de la Montagne de Fer, et une contradiction resolue</text>
+  <text x="38" y="486" font-size="9" fill="#292524">La michna les declare kacherot. Abaye pose la condition : l extremite d une feuille doit atteindre la base de la suivante.</text>
+  <text x="38" y="503" font-size="9" fill="#292524">Une baraita les declare pourtant pessoulot. Contradiction frontale avec la michna -- donc la baraita vise l autre cas.</text>
+  <text x="38" y="522" font-size="8.6" fill="#15803d">Chema mina keAbaye : la baraita elle-meme devient la preuve de la distinction d Abaye. Chema mina.</text>
+  <text x="38" y="540" font-size="8.6" fill="#57534e">Le folio se clot sur cette confirmation ; la michna du loulav volle et de l acherah reprend en 32b.</text>
+</svg></div>
+          <figcaption>Vue d ensemble : la baraita des defauts, le retour a la michna, la remontee au verset kapot temarim, et la Montagne de Fer.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="430" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Anatomie du loulav : le vocabulaire du folio</text>
+  <text x="380" y="42" text-anchor="middle" font-size="10" fill="#57534e">Tous les defauts du folio se disent avec trois mots : chidra, houtsin, tiyomet.</text>
+
+  <rect x="26" y="58" width="290" height="352" rx="7" fill="#f7fee7" stroke="#4d7c0f" stroke-width="1.3"/>
+  <text x="171" y="78" text-anchor="middle" font-size="10.6" font-weight="700" fill="#365314">Le loulav sain</text>
+
+  <line x1="171" y1="102" x2="171" y2="384" stroke="#3f6212" stroke-width="4"/>
+  <path d="M171 118 L120 106" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 118 L222 106" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 152 L118 142" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 152 L224 142" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 186 L118 177" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 186 L224 177" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 220 L120 212" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 220 L222 212" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 254 L122 247" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 254 L220 247" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 288 L126 282" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 288 L216 282" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 322 L132 317" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 322 L210 317" stroke="#65a30d" stroke-width="2.4"/>
+
+  <path d="M171 102 L162 74" stroke="#15803d" stroke-width="3.2"/>
+  <path d="M171 102 L180 74" stroke="#15803d" stroke-width="3.2"/>
+  <circle cx="171" cy="96" r="15" fill="none" stroke="#b91c1c" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <text x="171" y="400" text-anchor="middle" font-size="9" fill="#365314">la base (ikar) -- on tient le loulav par ici</text>
+
+  <text x="255" y="94" font-size="9.2" font-weight="700" fill="#b91c1c">tiyomet</text>
+  <text x="255" y="106" font-size="8.2" fill="#57534e">les deux feuilles</text>
+  <text x="255" y="117" font-size="8.2" fill="#57534e">jumelles du sommet</text>
+  <text x="245" y="200" font-size="9.2" font-weight="700" fill="#3f6212">chidra</text>
+  <text x="245" y="212" font-size="8.2" fill="#57534e">l echine centrale,</text>
+  <text x="245" y="223" font-size="8.2" fill="#57534e">lisse comme un baton</text>
+  <text x="42" y="330" font-size="9.2" font-weight="700" fill="#4d7c0f">houtsin</text>
+  <text x="42" y="342" font-size="8.2" fill="#57534e">les feuilles,</text>
+  <text x="42" y="353" font-size="8.2" fill="#57534e">par paires</text>
+
+  <rect x="330" y="58" width="406" height="352" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="533" y="78" text-anchor="middle" font-size="10.6" font-weight="700" fill="#7f1d1d">Le catalogue des atteintes, et ou elles portent</text>
+
+  <line x1="344" y1="88" x2="722" y2="88" stroke="#fca5a5" stroke-width="1"/>
+  <text x="352" y="104" font-size="9.4" font-weight="700" fill="#292524">kavouts -- epineux</text>
+  <text x="352" y="117" font-size="8.4" fill="#57534e">Rachi : des pointes sortent de l echine. Aroukh : le loulav se retracte, il fait des plis. Passoul.</text>
+
+  <text x="352" y="140" font-size="9.4" font-weight="700" fill="#292524">sadouk -- fendu</text>
+  <text x="352" y="153" font-size="8.4" fill="#57534e">Rav Papa : PAS la fente ordinaire des feuilles ni de l echine, mais la fente qui donne</text>
+  <text x="352" y="165" font-size="8.4" fill="#57534e">deux echines, moitie des feuilles ici, moitie la -- comme le heimanak. Passoul.</text>
+
+  <text x="352" y="188" font-size="9.4" font-weight="700" fill="#292524">akoum -- courbe comme une faucille</text>
+  <text x="352" y="201" font-size="8.4" fill="#57534e">Rava : vers l avant seulement. Vers l arriere, du cote de l echine, c est sa nature. Rav Nahman :</text>
+  <text x="352" y="213" font-size="8.4" fill="#57534e">sur les cotes, deux versions -- on tranche par rigueur, passoul.</text>
+
+  <text x="352" y="236" font-size="9.4" font-weight="700" fill="#292524">harout -- durci en bois</text>
+  <text x="352" y="249" font-size="8.4" fill="#57534e">Les feuilles tombees aux pluies, l echine devenue du bois. Passoul. Mais seulement SEMBLABLE</text>
+  <text x="352" y="261" font-size="8.4" fill="#57534e">au harout -- il a commence a durcir sans etre encore du bois -- kacher.</text>
+
+  <text x="352" y="284" font-size="9.4" font-weight="700" fill="#292524">had houtsa -- une seule rangee</text>
+  <text x="352" y="297" font-size="8.4" fill="#57534e">Rava : toutes les feuilles d un seul cote. Baal moum, un infirme. Passoul.</text>
+
+  <text x="352" y="320" font-size="9.4" font-weight="700" fill="#292524">nifretsou / nifredou -- arrachees ou ecartees</text>
+  <text x="352" y="333" font-size="8.4" fill="#57534e">Rav Papa : arrachees et reliees comme un balai -- passoul. Simplement ecartees du haut,</text>
+  <text x="352" y="345" font-size="8.4" fill="#57534e">encore tenues par le bas -- kacher.</text>
+
+  <text x="352" y="368" font-size="9.4" font-weight="700" fill="#292524">tiyomet -- otee ou fendue</text>
+  <text x="352" y="381" font-size="8.4" fill="#57534e">Otee : passoul sans discussion, il manque de la matiere. Fendue : c est la question de Rav Papa,</text>
+  <text x="352" y="393" font-size="8.4" fill="#57534e">et le folio en donne deux versions opposees.</text>
+</svg></div>
+          <figcaption>Le vocabulaire du folio : chidra, houtsin, tiyomet -- et la carte des atteintes qui rendent le loulav passoul.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 486" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="486" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">kapot temarim : six candidats, un seul survivant</text>
+  <text x="380" y="42" text-anchor="middle" font-size="10" fill="#57534e">Le verset dit branches de palmier. Rien n indique le loulav. Ravina force la Guemara a l etablir.</text>
+
+  <rect x="248" y="56" width="264" height="52" rx="7" fill="#eef2ff" stroke="#4338ca" stroke-width="1.5"/>
+  <text x="380" y="76" text-anchor="middle" font-size="10.4" font-weight="700" fill="#312e81">Vayikra 23,40 : kapot temarim</text>
+  <text x="380" y="94" text-anchor="middle" font-size="9" fill="#3730a3">lu kafout : lie. Ce qui etait ecarte, on le lie.</text>
+
+  <path d="M380 108 L380 126" stroke="#78716c" stroke-width="1.3"/>
+  <path d="M120 126 L640 126" stroke="#78716c" stroke-width="1.3"/>
+  <path d="M120 126 L120 142" stroke="#78716c" stroke-width="1.3"/>
+  <path d="M250 126 L250 142" stroke="#78716c" stroke-width="1.3"/>
+  <path d="M380 126 L380 142" stroke="#78716c" stroke-width="1.3"/>
+  <path d="M510 126 L510 142" stroke="#78716c" stroke-width="1.3"/>
+  <path d="M640 126 L640 142" stroke="#78716c" stroke-width="1.3"/>
+
+  <rect x="52" y="142" width="136" height="120" rx="6" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="120" y="160" text-anchor="middle" font-size="9.6" font-weight="700" fill="#7f1d1d">harouta</text>
+  <text x="120" y="174" text-anchor="middle" font-size="8.2" fill="#57534e">la branche durcie,</text>
+  <text x="120" y="185" text-anchor="middle" font-size="8.2" fill="#57534e">deux ou trois ans,</text>
+  <text x="120" y="196" text-anchor="middle" font-size="8.2" fill="#57534e">devenue du bois</text>
+  <text x="120" y="216" text-anchor="middle" font-size="8.4" font-weight="700" fill="#b91c1c">Elimine</text>
+  <text x="120" y="231" text-anchor="middle" font-size="8.2" fill="#292524">il faut pouvoir la lier</text>
+  <text x="120" y="243" text-anchor="middle" font-size="8.2" fill="#292524">-- elle est trop dure</text>
+  <text x="120" y="255" text-anchor="middle" font-size="8.2" fill="#292524">pour ceder</text>
+
+  <rect x="182" y="142" width="136" height="120" rx="6" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="250" y="160" text-anchor="middle" font-size="9.6" font-weight="700" fill="#7f1d1d">oufta</text>
+  <text x="250" y="174" text-anchor="middle" font-size="8.2" fill="#57534e">la buche prise a la</text>
+  <text x="250" y="185" text-anchor="middle" font-size="8.2" fill="#57534e">base du palmier :</text>
+  <text x="250" y="196" text-anchor="middle" font-size="8.2" fill="#57534e">lisse, sans branche</text>
+  <text x="250" y="216" text-anchor="middle" font-size="8.4" font-weight="700" fill="#b91c1c">Elimine</text>
+  <text x="250" y="231" text-anchor="middle" font-size="8.2" fill="#292524">kafout suppose un</text>
+  <text x="250" y="243" text-anchor="middle" font-size="8.2" fill="#292524">etat ecarte -- elle</text>
+  <text x="250" y="255" text-anchor="middle" font-size="8.2" fill="#292524">est liee a jamais</text>
+
+  <rect x="312" y="142" width="136" height="120" rx="6" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="380" y="160" text-anchor="middle" font-size="9.6" font-weight="700" fill="#7f1d1d">koufra</text>
+  <text x="380" y="174" text-anchor="middle" font-size="8.2" fill="#57534e">la jeune branche,</text>
+  <text x="380" y="185" text-anchor="middle" font-size="8.2" fill="#57534e">un ou deux ans :</text>
+  <text x="380" y="196" text-anchor="middle" font-size="8.2" fill="#57534e">encore liable</text>
+  <text x="380" y="216" text-anchor="middle" font-size="8.4" font-weight="700" fill="#b91c1c">Elimine</text>
+  <text x="380" y="231" text-anchor="middle" font-size="8.2" fill="#292524">Abaye : elle pique et</text>
+  <text x="380" y="243" text-anchor="middle" font-size="8.2" fill="#292524">ecorche les mains --</text>
+  <text x="380" y="255" text-anchor="middle" font-size="8.2" fill="#292524">voies de douceur</text>
+
+  <rect x="442" y="142" width="136" height="120" rx="6" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="510" y="160" text-anchor="middle" font-size="9.6" font-weight="700" fill="#7f1d1d">deux kapei</text>
+  <text x="510" y="174" text-anchor="middle" font-size="8.2" fill="#57534e">deux regimes de</text>
+  <text x="510" y="185" text-anchor="middle" font-size="8.2" fill="#57534e">dattes -- le mot est</text>
+  <text x="510" y="196" text-anchor="middle" font-size="8.2" fill="#57534e">au pluriel, apres tout</text>
+  <text x="510" y="216" text-anchor="middle" font-size="8.4" font-weight="700" fill="#b91c1c">Elimine</text>
+  <text x="510" y="231" text-anchor="middle" font-size="8.2" fill="#292524">la massora ecrit kpt</text>
+  <text x="510" y="243" text-anchor="middle" font-size="8.2" fill="#292524">sans vav : un seul,</text>
+  <text x="510" y="255" text-anchor="middle" font-size="8.2" fill="#292524">pas deux</text>
+
+  <rect x="572" y="142" width="136" height="120" rx="6" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="640" y="160" text-anchor="middle" font-size="9.6" font-weight="700" fill="#7f1d1d">une seule feuille</text>
+  <text x="640" y="174" text-anchor="middle" font-size="8.2" fill="#57534e">si le mot est au</text>
+  <text x="640" y="185" text-anchor="middle" font-size="8.2" fill="#57534e">singulier, pourquoi</text>
+  <text x="640" y="196" text-anchor="middle" font-size="8.2" fill="#57534e">pas une feuille ?</text>
+  <text x="640" y="216" text-anchor="middle" font-size="8.4" font-weight="700" fill="#b91c1c">Elimine</text>
+  <text x="640" y="231" text-anchor="middle" font-size="8.2" fill="#292524">une feuille se nomme</text>
+  <text x="640" y="243" text-anchor="middle" font-size="8.2" fill="#292524">kaf, jamais kapot :</text>
+  <text x="640" y="255" text-anchor="middle" font-size="8.2" fill="#292524">le mot dit plus</text>
+
+  <path d="M380 262 L380 288" stroke="#15803d" stroke-width="1.6"/>
+  <path d="M374 287 L386 287 L380 294 Z" fill="#15803d"/>
+
+  <rect x="150" y="296" width="460" height="82" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.6"/>
+  <text x="380" y="318" text-anchor="middle" font-size="11" font-weight="700" fill="#14532d">Le loulav -- la palme encore fermee</text>
+  <text x="380" y="337" text-anchor="middle" font-size="9" fill="#292524">Il est le seul dont on puisse dire les deux choses a la fois : il peut etre ecarte,</text>
+  <text x="380" y="352" text-anchor="middle" font-size="9" fill="#292524">et il peut etre lie. Assez souple pour ceder, assez doux pour etre tenu,</text>
+  <text x="380" y="367" text-anchor="middle" font-size="9" fill="#292524">un seul objet et non deux, plusieurs feuilles et non une.</text>
+
+  <rect x="66" y="394" width="628" height="74" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.3"/>
+  <text x="80" y="412" font-size="9.6" font-weight="700" fill="#78350f">La methode a retenir</text>
+  <text x="80" y="429" font-size="8.6" fill="#292524">Chaque candidat est elimine par un critere DIFFERENT : la contrainte physique (on ne peut pas le lier),</text>
+  <text x="80" y="443" font-size="8.6" fill="#292524">la logique du mot (kafout suppose un avant ecarte), la valeur (les voies de la Torah sont douces),</text>
+  <text x="80" y="457" font-size="8.6" fill="#292524">et enfin l orthographe massoretique. Quatre registres de preuve pour un seul mot de verset.</text>
+</svg></div>
+          <figcaption>Le coeur du folio : six lectures possibles de kapot temarim, chacune eliminee par un type de preuve different.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">קָווּץ, סָדוּק, עָקֹום דּוֹמֶה לְמַגָּל — פָּסוּל. חָרוּת — פָּסוּל. דּוֹמֶה לְחֵרוּת — כָּשֵׁר. אָמַר רַב פָּפָּא: דַּעֲבִיד כְּהֶימְנַק.</div>
+            <div class="fr"><p>[Un loulav] epineux, fendu, ou courbe au point de ressembler a une faucille -- passoul (invalide). [Devenu] harout (dur comme du bois) -- passoul.</p><p>Semblable au harout -- kacher. Rav Papa a dit : [fendu veut dire] qu il est fait comme un heimanak.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(6)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>קָווּץ</b> שֶׁיּוֹצְאִין בַּשִּׁדְרָה שֶׁלּוֹ עֻוקְצִין כְּמִין קוֹצִין:</div>
+          <div class="glose-fr">&lt;b&gt;Epineux (kavouts).&lt;/b&gt; Il sort de son echine des pointes en forme d epines.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>עָקֹום דּוֹמֶה לְמַגָּל</b> חֲדָא מִלְּתָא הִיא:</div>
+          <div class="glose-fr">&lt;b&gt;Courbe au point de ressembler a une faucille.&lt;/b&gt; C est une seule et meme chose [et non deux cas distincts].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>חָרוּת</b> קָשֶׁה שֶׁנַּעֲשָׂה חֲרִיּוֹת שֶׁכֵּן דֶּרֶךְ הַלּוּלָב עָלָיו נוֹשְׁרִים בִּימוֹת הַגְּשָׁמִים וְהַשִּׁדְרָה מִתְקַשֶּׁה וְנַעֲשָׂה עֵץ:</div>
+          <div class="glose-fr">&lt;b&gt;Harout.&lt;/b&gt; Dur, devenu haryout : c est en effet le cours ordinaire du loulav -- ses feuilles tombent a la saison des pluies, l echine durcit et devient du bois.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דּוֹמֶה לְחֵרוּת</b> הִתְחִיל לְהִתְקַשּׁוֹת וַעֲדַיִין לֹא נַעֲשָׂה עֵץ:</div>
+          <div class="glose-fr">&lt;b&gt;Semblable au harout.&lt;/b&gt; Il a commence a durcir, mais n est pas encore devenu du bois.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אָמַר רַב פָּפָּא</b> הָא דְּקָתָנֵי סָדוּק פָּסוּל לָאו שֶׁנִּסְדְּקוּ רָאשֵׁי עָלִין אוֹ שִׁדְרָה:</div>
+          <div class="glose-fr">&lt;b&gt;Rav Papa a dit.&lt;/b&gt; Ce qui est enseigne -- fendu, passoul -- ne vise pas le cas ou les extremites des feuilles, ou l echine, se sont fendues.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא דַּעֲבִיד כִּי הֶימְנֵק</b> יפויצפו&quot;ר שֶׁל בַּרְזֶל שֶׁל סוֹפְרִים שֶׁיֵּשׁ לוֹ שְׁנֵי רָאשִׁים וְרֹאשׁוֹ א&#x27; מְפֻוצָּל כָּךְ גָּדֵל הַלּוּלָב כְּמִין שְׁתֵּי שִׁדְרָאוֹת מַחֲצִית עָלִין לְכָאן וּמַחֲצִית עָלִין לְכָאן:</div>
+          <div class="glose-fr">&lt;b&gt;Mais qu il est fait comme un heimanak.&lt;/b&gt; Un instrument de fer de scribes (Rachi en donne le nom en vieux francais), qui a deux tetes et dont l une des tetes est fendue en deux ; ainsi le loulav a-t-il pousse en formant comme deux echines, la moitie des feuilles d un cote et la moitie de l autre.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">קָווּץ. פֵּי&#x27; בַּקּוּנְטְרֵס שֶׁיּוֹצְאִין בַּשִּׁדְרָה שֶׁלּוֹ עוֹקְצִים כְּמִין קוֹצִים וּבֶעָרוּךְ פֵּירֵשׁ עִנְיַן צְמִיתָה:</div>
+          <div class="glose-fr">&lt;b&gt;Epineux (kavouts).&lt;/b&gt; Rachi (le Kountras) explique qu il sort de son echine des pointes en forme d epines ; et le Aroukh explique qu il s agit d un phenomene de retraction [le loulav se ratatine et se plisse].</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">נִקְטַם רֹאשׁוֹ. אָמַר רַב לֹא שָׁנוּ אֶלָּא נִקְטַם אֲבָל נִסְדַּק כָּשֵׁר וְאִי נִסְדַּק וַעֲבִיד כִּי הֶמְנֵק פָּסוּל וְהוּא כְּלִי שֶׁיֵּשׁ לוֹ שְׁנֵי רָאשִׁין וְזֶהוּ צוּרָתוֹ. תַּנְיָא לוּלָב כָּפוּף קָווּץ סָדוּק עָקֹום דָּמֵי לְמַגָּל פָּסוּל חָרוּת פָּסוּל דָּמֵי לְחֵרוּת כָּשֵׁר קָווּץ פרש&quot;י בַּשִּׁדְרָה שֶׁלּוֹ יוֹצְאִין עוֹקְצִים כְּמִין קוֹצִים. וּבֶעָרוּךְ בְּעֵרֶךְ קָווּץ פִּי&#x27; שֶׁנִּצְמַח וְנִכְוַוץ וְיֵשׁ בּוֹ כְּעֵין קְמָטִין. עָקֹום דּוֹמֶה לְמַגָּל. אָמַר רָבָא לָא אֲמַרַן אֶלָּא לְפָנָיו אֲבָל לְאַחֲרָיו בִּרְיָיתֵיהּ הוּא וְכָשֵׁר אָמַר רַב פָּפָּא וְלִצְדָדִין כִּלְפָנָיו דָּמֵי וְאָמְרִי לַהּ כִּלְאַחֲרָיו דָּמֵי הִלְכָּךְ עָבְדִינַן לְחוּמְרָא וְכִלְפָנָיו דָּמֵי וּפָסוּל:</div>
+          <div class="glose-fr">&lt;b&gt;Dont la tete a ete coupee.&lt;/b&gt; Rav a dit : ils n ont enseigne [l invalidite] que du loulav coupe (niktam), mais fendu (nisdak) il est kacher ; et si, etant fendu, il est fait comme un heimanak -- il est passoul ; c est un instrument qui possede deux tetes, et telle est sa forme. On a enseigne : un loulav courbe, epineux, fendu, courbe au point de ressembler a une faucille -- passoul ; harout -- passoul ; semblable au harout -- kacher. Kavouts : Rachi explique que de son echine sortent des pointes en forme d epines ; et le Aroukh, a l entree kavats, explique qu il a pousse en se retractant et qu il presente comme des plis. Courbe au point de ressembler a une faucille : Rava a dit -- nous ne l avons dit que [d une courbure] vers l avant, mais vers l arriere c est sa croissance naturelle et il est kacher. Rav Papa a dit : sur les cotes, c est comme vers l avant ; et certains disent : comme vers l arriere. Aussi tranchons-nous par rigueur : c est comme vers l avant, et il est passoul.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le folio ouvre en pleine baraita, commencee a la derniere ligne de 31b : c est la liste des loulavim defectueux. Quatre termes s enchainent -- <b>kavouts</b> (epineux), <b>sadouk</b> (fendu), <b>akoum</b> (courbe comme une faucille), <b>harout</b> (durci en bois) -- et Rachi precise aussitot que courbe et faucille ne font qu un seul cas, non deux.</p><p>La derniere clause introduit une nuance decisive : <i>semblable</i> au harout reste kacher. Le durcissement est un processus, et la Guemara ne retient le defaut qu une fois le processus acheve. Ce sera le mouvement de tout le folio : chaque terme de la baraita va etre borne par un Amora.</p><p>Rav Papa commence par le mot le plus dangereux, <b>sadouk</b>. Pris au sens large, il invaliderait presque tous les loulavim, dont les feuilles se fendent naturellement. Il le restreint donc au cas extreme : la fente qui donne l illusion de <b>deux echines</b>, comme l outil de scribe a deux tetes appele <b>heimanak</b>.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="430" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Anatomie du loulav : le vocabulaire du folio</text>
+  <text x="380" y="42" text-anchor="middle" font-size="10" fill="#57534e">Tous les defauts du folio se disent avec trois mots : chidra, houtsin, tiyomet.</text>
+
+  <rect x="26" y="58" width="290" height="352" rx="7" fill="#f7fee7" stroke="#4d7c0f" stroke-width="1.3"/>
+  <text x="171" y="78" text-anchor="middle" font-size="10.6" font-weight="700" fill="#365314">Le loulav sain</text>
+
+  <line x1="171" y1="102" x2="171" y2="384" stroke="#3f6212" stroke-width="4"/>
+  <path d="M171 118 L120 106" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 118 L222 106" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 152 L118 142" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 152 L224 142" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 186 L118 177" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 186 L224 177" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 220 L120 212" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 220 L222 212" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 254 L122 247" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 254 L220 247" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 288 L126 282" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 288 L216 282" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 322 L132 317" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M171 322 L210 317" stroke="#65a30d" stroke-width="2.4"/>
+
+  <path d="M171 102 L162 74" stroke="#15803d" stroke-width="3.2"/>
+  <path d="M171 102 L180 74" stroke="#15803d" stroke-width="3.2"/>
+  <circle cx="171" cy="96" r="15" fill="none" stroke="#b91c1c" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <text x="171" y="400" text-anchor="middle" font-size="9" fill="#365314">la base (ikar) -- on tient le loulav par ici</text>
+
+  <text x="255" y="94" font-size="9.2" font-weight="700" fill="#b91c1c">tiyomet</text>
+  <text x="255" y="106" font-size="8.2" fill="#57534e">les deux feuilles</text>
+  <text x="255" y="117" font-size="8.2" fill="#57534e">jumelles du sommet</text>
+  <text x="245" y="200" font-size="9.2" font-weight="700" fill="#3f6212">chidra</text>
+  <text x="245" y="212" font-size="8.2" fill="#57534e">l echine centrale,</text>
+  <text x="245" y="223" font-size="8.2" fill="#57534e">lisse comme un baton</text>
+  <text x="42" y="330" font-size="9.2" font-weight="700" fill="#4d7c0f">houtsin</text>
+  <text x="42" y="342" font-size="8.2" fill="#57534e">les feuilles,</text>
+  <text x="42" y="353" font-size="8.2" fill="#57534e">par paires</text>
+
+  <rect x="330" y="58" width="406" height="352" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="533" y="78" text-anchor="middle" font-size="10.6" font-weight="700" fill="#7f1d1d">Le catalogue des atteintes, et ou elles portent</text>
+
+  <line x1="344" y1="88" x2="722" y2="88" stroke="#fca5a5" stroke-width="1"/>
+  <text x="352" y="104" font-size="9.4" font-weight="700" fill="#292524">kavouts -- epineux</text>
+  <text x="352" y="117" font-size="8.4" fill="#57534e">Rachi : des pointes sortent de l echine. Aroukh : le loulav se retracte, il fait des plis. Passoul.</text>
+
+  <text x="352" y="140" font-size="9.4" font-weight="700" fill="#292524">sadouk -- fendu</text>
+  <text x="352" y="153" font-size="8.4" fill="#57534e">Rav Papa : PAS la fente ordinaire des feuilles ni de l echine, mais la fente qui donne</text>
+  <text x="352" y="165" font-size="8.4" fill="#57534e">deux echines, moitie des feuilles ici, moitie la -- comme le heimanak. Passoul.</text>
+
+  <text x="352" y="188" font-size="9.4" font-weight="700" fill="#292524">akoum -- courbe comme une faucille</text>
+  <text x="352" y="201" font-size="8.4" fill="#57534e">Rava : vers l avant seulement. Vers l arriere, du cote de l echine, c est sa nature. Rav Nahman :</text>
+  <text x="352" y="213" font-size="8.4" fill="#57534e">sur les cotes, deux versions -- on tranche par rigueur, passoul.</text>
+
+  <text x="352" y="236" font-size="9.4" font-weight="700" fill="#292524">harout -- durci en bois</text>
+  <text x="352" y="249" font-size="8.4" fill="#57534e">Les feuilles tombees aux pluies, l echine devenue du bois. Passoul. Mais seulement SEMBLABLE</text>
+  <text x="352" y="261" font-size="8.4" fill="#57534e">au harout -- il a commence a durcir sans etre encore du bois -- kacher.</text>
+
+  <text x="352" y="284" font-size="9.4" font-weight="700" fill="#292524">had houtsa -- une seule rangee</text>
+  <text x="352" y="297" font-size="8.4" fill="#57534e">Rava : toutes les feuilles d un seul cote. Baal moum, un infirme. Passoul.</text>
+
+  <text x="352" y="320" font-size="9.4" font-weight="700" fill="#292524">nifretsou / nifredou -- arrachees ou ecartees</text>
+  <text x="352" y="333" font-size="8.4" fill="#57534e">Rav Papa : arrachees et reliees comme un balai -- passoul. Simplement ecartees du haut,</text>
+  <text x="352" y="345" font-size="8.4" fill="#57534e">encore tenues par le bas -- kacher.</text>
+
+  <text x="352" y="368" font-size="9.4" font-weight="700" fill="#292524">tiyomet -- otee ou fendue</text>
+  <text x="352" y="381" font-size="8.4" fill="#57534e">Otee : passoul sans discussion, il manque de la matiere. Fendue : c est la question de Rav Papa,</text>
+  <text x="352" y="393" font-size="8.4" fill="#57534e">et le folio en donne deux versions opposees.</text>
+</svg></div><div class="svg-cap">Segment 0 : le vocabulaire anatomique et la carte des atteintes que le folio va parcourir.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">עָקֹום דּוֹמֶה לְמַגָּל, אָמַר רָבָא: לָא אֲמַרַן אֶלָּא לְפָנָיו, אֲבָל לְאַחֲרָיו — בָּרַיְיתֵיהּ הוּא.</div>
+            <div class="fr"><p>Courbe au point de ressembler a une faucille : Rava a dit -- nous ne l avons dit que [d une courbure] vers l avant ; mais vers l arriere, c est sa croissance naturelle [et il reste kacher].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְאַחֲרָיו</b> שֶׁנֶּעֱקַם לְצַד שִׁדְרָה:</div>
+          <div class="glose-fr">&lt;b&gt;Vers l arriere.&lt;/b&gt; Qu il s est courbe du cote de l echine.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִלְּפָנָיו</b> לְצַד שֶׁכְּנֶגֶד הַשִּׁדְרָה שִׁדְרָה זֶהוּ צַד הֶעָשׂוּי כְּשִׁדְרָה שֶׁל בְּהֵמָה שֶׁהַצְּלָעוֹת וְהַחֻולְיוֹת מְחֻובָּרִין בָּהּ מִכָּאן וּמִכָּאן וְאֶמְצָעָהּ חָלָק וְעוֹלֶה כְּמַקֵּל:</div>
+          <div class="glose-fr">&lt;b&gt;Vers l avant.&lt;/b&gt; Du cote oppose a l echine. La chidra (echine), c est le cote fait comme l echine d un animal, ou les cotes et les vertebres sont attaches de part et d autre ; son milieu est lisse et monte comme un baton.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rava borne le troisieme terme de la baraita. Une courbure n est un defaut que si elle contredit la croissance de la plante. Vers l arriere -- du cote bombe, celui de l echine -- c est <b>beriteh hou</b>, sa facon naturelle de pousser : rien a redire.</p><p>Rachi glose ici le mot <b>chidra</b> par une image anatomique : le loulav a un dos, comme une bete, avec les feuilles attachees de part et d autre a la maniere des cotes, et un milieu lisse qui monte droit comme un baton. Ce vocabulaire du corps sert tout le folio : le loulav sera dit <i>baal moum</i>, infirme, au segment suivant.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="320" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Dans quel sens le loulav est-il courbe ?</text>
+  <text x="360" y="42" text-anchor="middle" font-size="9.6" fill="#57534e">Rachi : la chidra est le cote bombe, comme l echine d une bete ; l avant est le cote oppose.</text>
+
+  <rect x="24" y="56" width="216" height="232" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.4"/>
+  <text x="132" y="76" text-anchor="middle" font-size="10.2" font-weight="700" fill="#7f1d1d">Vers l avant -- lefanav</text>
+  <path d="M132 268 C 132 200, 140 150, 176 104" stroke="#3f6212" stroke-width="4" fill="none"/>
+  <path d="M146 214 L120 206" stroke="#65a30d" stroke-width="2"/>
+  <path d="M140 178 L114 170" stroke="#65a30d" stroke-width="2"/>
+  <path d="M152 142 L128 132" stroke="#65a30d" stroke-width="2"/>
+  <text x="132" y="286" text-anchor="middle" font-size="8.6" font-weight="700" fill="#b91c1c">PASSOUL -- il ressemble a une faucille</text>
+
+  <rect x="252" y="56" width="216" height="232" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.4"/>
+  <text x="360" y="76" text-anchor="middle" font-size="10.2" font-weight="700" fill="#14532d">Vers l arriere -- leaharav</text>
+  <path d="M360 268 C 360 200, 352 150, 316 104" stroke="#3f6212" stroke-width="4" fill="none"/>
+  <path d="M346 214 L372 206" stroke="#65a30d" stroke-width="2"/>
+  <path d="M352 178 L378 170" stroke="#65a30d" stroke-width="2"/>
+  <path d="M340 142 L364 132" stroke="#65a30d" stroke-width="2"/>
+  <text x="360" y="286" text-anchor="middle" font-size="8.6" font-weight="700" fill="#15803d">KACHER -- beriteh hou, c est sa croissance</text>
+
+  <rect x="480" y="56" width="216" height="232" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.4"/>
+  <text x="588" y="76" text-anchor="middle" font-size="10.2" font-weight="700" fill="#78350f">Sur les cotes -- letsdadin</text>
+  <text x="588" y="100" text-anchor="middle" font-size="9" fill="#292524">Rav Nahman, deux versions :</text>
+  <text x="588" y="126" text-anchor="middle" font-size="9" fill="#292524">comme vers l avant -- passoul</text>
+  <text x="588" y="146" text-anchor="middle" font-size="9" fill="#292524">comme vers l arriere -- kacher</text>
+  <line x1="504" y1="164" x2="672" y2="164" stroke="#fcd34d" stroke-width="1.2"/>
+  <text x="588" y="186" text-anchor="middle" font-size="8.8" fill="#57534e">Un doute non tranche dans la Guemara.</text>
+  <text x="588" y="204" text-anchor="middle" font-size="8.8" font-weight="700" fill="#b45309">Le Roch tranche par rigueur :</text>
+  <text x="588" y="221" text-anchor="middle" font-size="8.8" fill="#292524">on le traite comme courbe vers</text>
+  <text x="588" y="237" text-anchor="middle" font-size="8.8" fill="#292524">l avant, donc passoul.</text>
+  <text x="588" y="262" text-anchor="middle" font-size="8.4" fill="#57534e">Regle generale : un doute sur une</text>
+  <text x="588" y="276" text-anchor="middle" font-size="8.4" fill="#57534e">mitsva de la Torah va vers la rigueur.</text>
+</svg></div><div class="svg-cap">Segments 1-2 : trois directions de courbure, deux verdicts, et un doute que le Roch tranche par rigueur.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב נַחְמָן: לִצְדָדִין — כִּלְפָנָיו דָּמֵי. וְאָמְרִי לָהּ: כִּלְאַחֲרָיו דָּמֵי.</div>
+            <div class="fr"><p>Rav Nahman a dit : [courbe] sur les cotes, c est comme vers l avant [donc passoul]. Et certains rapportent : c est comme vers l arriere [donc kacher].</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reste le cas intermediaire, que Rava n avait pas traite : la courbure laterale. Rav Nahman le rapproche de l avant, donc invalide -- mais la Guemara transmet aussitot la version inverse, sans trancher.</p><p>Le folio laisse le doute ouvert. Ce sont les decisionnaires qui le referment : le Roch, cite au segment 0, conclut <i>hilkakh avdinan lehoumra</i>, nous agissons par rigueur -- on traite la courbure laterale comme une courbure vers l avant, et le loulav est <b>passoul</b>. Un doute portant sur une mitsva de la Torah se resout du cote severe.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאָמַר רָבָא: הַאי לוּלַבָּא דְּסָלֵיק בְּחַד הוּצָא — בַּעַל מוּם הוּא, וּפָסוּל.</div>
+            <div class="fr"><p>Et Rava a dit : ce loulav qui pousse avec une seule houtsa [une seule rangee de feuilles] -- il est atteint d un defaut (baal moum), et il est passoul.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּסָלֵיק בְּחַד הוּצָא</b> שֶׁכָּל עָלָיו מִצַּד אֶחָד:</div>
+          <div class="glose-fr">&lt;b&gt;Qui pousse avec une seule houtsa.&lt;/b&gt; Que toutes ses feuilles sont d un seul cote.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אָמַר רָבָא הַאי לוּלִיבָּא דְּסָלֵיק בְּחַד הוּצָא בַּעַל מוּם הוּא וּפָסוּל פרש&quot;י שֶׁכָּל עָלָיו מִצַּד א&#x27;. וי&quot;מ דְּכָל הֶעָלִים שֶׁהֵן כְּפוּלוֹת קָאָמַר שֶׁאִם לֹא הָיוּ כְּפוּלוֹת פָּסוּל וכ&quot;כ הָרַמְבַּ&quot;ם זַ&quot;ל פ&quot;ח מֹהַל&#x27; לוּלָב הֲלָכָה ד הָיוּ עָלָיו אַחַת אַחַת מִתְּחִלַּת בְּרִיָּיתוֹ וְלֹא הָיָה לָהֶם תְּיוֹמַת פָּסוּל וְרַב שַׂר שָׁלוֹם זַ&quot;ל כָּתַב בִּתְשׁוּבָה לוּלִיבָּא דְּסָלֵיק בְּחַד הוּצָא שֶׁהוּצָא אֶחָד בְּעִיקָּרוֹ וְעוֹלֶה אוֹתוֹ חַד הוּצָא מֵעִיקָּרוֹ וְעַד רֹאשׁ שִׁדְרָה וְנִפְרְצוּ עָלָיו פָּסוּל נִפְרְדוּ עָלָיו כָּשֵׁר אָמַר רַב פָּפָּא נִפְרְצוּ דְּעָבְדִי כִּי חֻופְיָא נִפְרְדוּ דַּאֲפָרֵיד אִיפָּרוֹדֵי:</div>
+          <div class="glose-fr">&lt;b&gt;Rava a dit : ce loulav qui pousse en une seule houtsa est atteint d un defaut et il est passoul.&lt;/b&gt; Rachi explique : toutes ses feuilles sont d un seul cote. Et certains expliquent qu il parle de toutes les feuilles, qui doivent etre doublees (kefoulot) : si elles n etaient pas doublees, il est passoul. Ainsi a ecrit le Rambam (Hilkhot Loulav, ch. 8, halakha 4) : si ses feuilles etaient une a une des l origine de sa croissance et qu elles n avaient pas de tiyomet -- passoul. Et Rav Sar Chalom a ecrit dans une responsa : loulava desalik behad houtsa, c est qu il y a une seule houtsa a sa base, et que cette unique houtsa monte depuis la base jusqu au sommet de l echine. Si ses feuilles ont ete arrachees (nifretsou) -- passoul ; si elles se sont ecartees (nifredou) -- kacher. Rav Papa a dit : nifretsou, c est qu il est fait comme un balai ; nifredou, c est qu elles se sont simplement separees.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rava ajoute un defaut absent de la baraita, et le qualifie d un mot fort : <b>baal moum</b>, le terme meme qui designe l animal infirme, disqualifie pour le sacrifice. Un loulav dont toutes les feuilles poussent du meme cote n est pas abime : il a mal pousse. C est une difformite de naissance, pas une blessure.</p><p>Le Roch signale que cette phrase, tres brieve, a recu deux lectures opposees. Pour Rachi il s agit de la repartition des feuilles autour de l echine ; pour le Rambam et d autres, du fait que chaque feuille soit ou non <b>doublee</b> -- ce qui rattache deja la question a la tiyomet, qui occupera les segments 5 et 6.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">נִפְרְצוּ עָלָיו כו׳. אָמַר רַב פָּפָּא: נִפְרְצוּ — דַּעֲבִיד כִּי חֻופְיָא. נִפְרְדוּ — דְּאִיפָּרוּד אִפָּרוֹדֵי.</div>
+            <div class="fr"><p>Si ses feuilles ont ete arrachees, etc. Rav Papa a dit : nifretsou (arrachees), c est qu il est fait comme un balai (houfia) ; nifredou (ecartees), c est qu elles se sont seulement ecartees.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כִּי חֻופְיָא</b> אשקוב&quot;א שֶׁבּוֹ מְכַבְּדִין אֶת הַבַּיִת וְעוֹשִׂין אוֹתָהּ מַעֲלִין שֶׁל לוּלָב הַתְּלוּשִׁין מֵהַשִּׁדְרָה וְאוֹגְדִין מֵהֶן הַרְבֵּה בְּיַחַד:</div>
+          <div class="glose-fr">&lt;b&gt;Comme un houfia.&lt;/b&gt; Un balai (Rachi en donne le nom en vieux francais) avec lequel on balaie la maison ; on le fabrique avec des feuilles de loulav detachees de l echine, dont on lie un grand nombre ensemble.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּאִיפָּרוּד אִיפָּרוֹדֵי</b> רָאשֵׁיהֶן נִפְרָדִין כְּעַנְפֵי דֶּקֶל וְאֵין מְצֻומְצָמִין עִם הַשִּׁדְרָה אֲבָל מִלְּמַטָּה הֵן מְחֻובָּרִין בָּהּ:</div>
+          <div class="glose-fr">&lt;b&gt;Qu elles se sont seulement ecartees.&lt;/b&gt; Leurs extremites s ecartent comme les branches d un palmier et ne serrent plus l echine ; mais par le bas, elles y demeurent attachees.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">דַּעֲבִיד כִּי חֻופְיָא. פֵּירוּשׁוֹ בְּמָתְנֵי&#x27;:</div>
+          <div class="glose-fr">&lt;b&gt;Qu il est fait comme un houfia.&lt;/b&gt; Son explication a ete donnee sur la michna.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara revient a la michna, et Rav Papa y separe deux mots que l on pourrait confondre. Le critere n est pas le degre de desordre, mais le <b>lien a l echine</b> : les feuilles tiennent-elles encore ?</p><p><b>Nifretsou</b> : elles sont detachees, puis rattachees en botte -- l objet obtenu ressemble a un balai, il a cesse d etre un loulav. <b>Nifredou</b> : elles s ouvrent en haut mais tiennent par le bas, comme les branches d un palmier. Rien n est rompu, seulement relache -- et c est precisement ce que R. Yehouda propose de corriger par une ligature, au segment 7.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="300" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">nifretsou ou nifredou : deux mots voisins, deux mondes</text>
+  <text x="360" y="42" text-anchor="middle" font-size="9.6" fill="#57534e">Rav Papa separe le detachement reel du simple ecartement.</text>
+
+  <rect x="30" y="58" width="310" height="212" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.4"/>
+  <text x="185" y="78" text-anchor="middle" font-size="10.4" font-weight="700" fill="#7f1d1d">nifretsou -- kehoufia, comme un balai</text>
+  <line x1="185" y1="100" x2="185" y2="196" stroke="#a16207" stroke-width="4"/>
+  <path d="M150 196 L138 240" stroke="#65a30d" stroke-width="2.2"/>
+  <path d="M163 196 L156 242" stroke="#65a30d" stroke-width="2.2"/>
+  <path d="M176 196 L174 243" stroke="#65a30d" stroke-width="2.2"/>
+  <path d="M194 196 L196 243" stroke="#65a30d" stroke-width="2.2"/>
+  <path d="M207 196 L214 242" stroke="#65a30d" stroke-width="2.2"/>
+  <path d="M220 196 L232 240" stroke="#65a30d" stroke-width="2.2"/>
+  <rect x="168" y="190" width="34" height="10" rx="3" fill="#78350f"/>
+  <text x="185" y="262" text-anchor="middle" font-size="8.8" fill="#292524">Les feuilles sont DETACHEES de l echine</text>
+  <text x="185" y="256" text-anchor="middle" font-size="0" fill="#292524"> </text>
+  <text x="185" y="276" text-anchor="middle" font-size="9" font-weight="700" fill="#b91c1c">PASSOUL -- ce n est plus un loulav, c est un balai</text>
+
+  <rect x="380" y="58" width="310" height="212" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.4"/>
+  <text x="535" y="78" text-anchor="middle" font-size="10.4" font-weight="700" fill="#14532d">nifredou -- elles s ecartent seulement</text>
+  <line x1="535" y1="100" x2="535" y2="240" stroke="#3f6212" stroke-width="4"/>
+  <path d="M535 226 C 512 216, 496 196, 490 168" stroke="#65a30d" stroke-width="2.2" fill="none"/>
+  <path d="M535 226 C 558 216, 574 196, 580 168" stroke="#65a30d" stroke-width="2.2" fill="none"/>
+  <path d="M535 200 C 514 192, 500 174, 496 150" stroke="#65a30d" stroke-width="2.2" fill="none"/>
+  <path d="M535 200 C 556 192, 570 174, 574 150" stroke="#65a30d" stroke-width="2.2" fill="none"/>
+  <path d="M535 174 C 518 166, 508 150, 506 130" stroke="#65a30d" stroke-width="2.2" fill="none"/>
+  <path d="M535 174 C 552 166, 562 150, 564 130" stroke="#65a30d" stroke-width="2.2" fill="none"/>
+  <text x="535" y="262" text-anchor="middle" font-size="8.8" fill="#292524">Les extremites s ouvrent, la base tient encore</text>
+  <text x="535" y="276" text-anchor="middle" font-size="9" font-weight="700" fill="#15803d">KACHER -- et R. Yehouda demande de le lier</text>
+</svg></div><div class="svg-cap">Segment 4 : deux mots presque identiques -- arrachees ou ecartees -- separes par la seule question du lien a l echine.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בָּעֵי רַב פָּפָּא: נֶחְלְקָה הַתְּיוֹמֶת, מַהוּ? תָּא שְׁמַע, דְּאָמַר (רַבִּי יוֹחָנָן) אָמַר רַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי: נִיטְּלָה הַתְיוֹמַת — פָּסוּל. מַאי לַָאו, הוּא הַדִּין נֶחְלְקָה? לֹא, נִיטְּלָה שָׁאנֵי, דְּהָא חָסֵר לֵיהּ.</div>
+            <div class="fr"><p>Rav Papa a demande : si la tiyomet [la paire de feuilles jumelles du sommet] s est fendue, quelle est la loi ? Viens et entends : Rabbi Yohanan a dit au nom de Rabbi Yehochoua ben Levi -- si la tiyomet a ete otee, [le loulav est] passoul.</p><p>N est-ce pas qu il en va de meme si elle s est fendue ? Non : otee, c est different, car il lui manque alors [de la matiere].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>נֶחְלְקָה הַתְּיוֹמֶת</b> שְׁנֵי עָלִין עֶלְיוֹנִים אֶמְצָעִים שֶׁשָּׁם הַשִּׁדְרָה כָּלָה נֶחְלְקוּ זֶה מִזֶּה וְנִסְדְּקָה הַשִּׁדְרָה עַד הֶעָלִין שֶׁלְּמַטָּה מֵהֶם:</div>
+          <div class="glose-fr">&lt;b&gt;Si la tiyomet s est fendue.&lt;/b&gt; Les deux feuilles superieures du milieu, la ou l echine se termine, se sont separees l une de l autre, et l echine s est fendue jusqu aux feuilles situees au-dessous d elles.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>תְּיוֹמַת</b> לְפִי שֶׁמְּדֻובָּקִין כִּתְאוֹמִים:</div>
+          <div class="glose-fr">&lt;b&gt;Tiyomet.&lt;/b&gt; Parce qu elles sont collees l une a l autre comme des jumeaux (teomim).</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">נֶחְלְקָה הַתְּיוֹמֶת. לָא מַייְרֵי שֶׁנִּסְדְּקוּ בְּרֹאשׁוֹ עָלִין שֶׁבְּרֹאשׁ הַשִּׁדְרָה דְּכוּלְּהוּ הָכִי אִיתַנְהוּ אֶלָּא כִּדְפֵירֵשׁ בַּקּוּנְטְרֵס שְׁנֵי עָלָיו עֶלְיוֹנִים אֶמְצָעִיִּים שֶׁשָּׁם הַשִּׁדְרָה כָּלָה נֶחְלְקוּ זֶה מִזֶּה וְנִסְדְּקָה הַשִּׁדְרָה עַד הֶעָלִים שֶׁלְּמַטָּה ובה&quot;ג פִּי&#x27; נֶחְלְקָה הַתְּיוֹמֶת הַהוּא גַּבָּא דְּהוּצָא הֵיכָא דְּדַבִּיקוּ אַהֲדָדֵי הַהוּא דִּמְתַיַּים בְּהוּ וּמְשַׁוֵּי לְהוּ חַד אִי כְּנִפְרְצוּ עָלָיו דָּמֵי פָּסוּל אִי כְּנִפְרְדוּ עָלָיו דָּמֵי כָּשֵׁר:</div>
+          <div class="glose-fr">&lt;b&gt;Si la tiyomet s est fendue.&lt;/b&gt; Il ne s agit pas du cas ou les feuilles du sommet de l echine se sont fendues a leur extremite, car elles sont toutes ainsi ; mais bien comme l explique Rachi : les deux feuilles superieures du milieu, la ou l echine se termine, se sont separees l une de l autre, et l echine s est fendue jusqu aux feuilles du dessous. Et les Halakhot Guedolot expliquent : nehleka hatiyomet vise le dos de la houtsa, la ou les deux [moities] adherent l une a l autre -- ce qui les rend jumelles et n en fait qu une ; si c est comparable a nifretsou, il est passoul ; si c est comparable a nifredou, il est kacher.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">בָּעֵי רַב פָּפָּא נֶחְלְקָה הַתְּיוֹמֶת מַהוּ ת&quot;ש דא&quot;ר יְהוֹשֻׁעַ בֶּן לֵוִי נֶחְלְקָה הַתְּיוֹמֶת נַעֲשָׂה כְּמִי שֶׁנִּיטְּלָה הַתְּיוֹמֶת וּפְסוּל פרש&quot;י בְּעָלִין עֶלְיוֹנִים אֶמְצָעִיִּים שֶׁשָּׁם הַשִּׁדְרָה כָּלֶה נֶחְלְקוּ זֶה מִזֶּה וְנִסְדְּקָה הַשִּׁדְרָה עַד הֶעָלִין שֶׁלְּמַטָּה מֵהֶם וּבִתְשׁוּבַת הַגְּאוֹנִים כָּתַב תְּיוֹמַת הוּא אוֹתוֹ הוּצָא הָעֶלְיוֹן שֶׁבְּרֹאשׁ הַלּוּלָב שֶׁאֵין הוּצָא לְמַעְלָה מִמֶּנּוּ וְהוּא כִּשְׁנֵי הוּצִין דְּבוּקִין זֶה בָּזֶה וְנִקְרֵאת תְּיוֹמַת. בָּעֵי רַב פָּפָּא וְנֶחְלְקָה הַתְיוֹמַת מַהוּ פֵּירוּשׁ נִפְרָד אֶחָד מֵחֲבֵירוֹ אוֹתוֹ הוּצָא הָעֶלְיוֹן שֶׁבַּלּוּלָב עַד שֶׁדּוֹמֶה לִשְׁנַיִם ע&quot;כ וּלְדִבְרֵיהֶם לֹא נִמְצָא לוּלָב כָּשֵׁר בְּשֶׁלָּנוּ כִּי בְּטֹורַח נִמְצָא שֶׁיְּהֵא לָנוּ תְּיוֹמַת בְּזֶה הָעִנְיָן וי&quot;ל שֶׁאַף לְדִבְרֵיהֶם אֵינוֹ פָּסוּל אֶלָּא א&quot;כ שֶׁנִּשְׁתַּנָּה מִבְּרִיָּיתוֹ שֶׁהָיְתָה מִתְּחִלָּה תְּיוֹמַת מְחֻובֶּרֶת כָּזֶה הָעִנְיָן וְנֶחְלְקָה אֲבָל אִם לֹא הָיְתָה הַתְיוֹמַת מְחֻובֶּרֶת מִתְּחִלָּה כָּשֵׁר וּכְעֵין פִּי&#x27; זֶה נוֹטֶה פִּי&#x27; ה&quot;ג שֶׁפֵּירֵשׁ בָּעֵי רַב פָּפָּא נֶחְלְקָה הַתְּיוֹמֶת הַהוּא גַּבָּהּ דְּהוּצָא דְּהֵיכָא דְּדַבִּיקוּ אַהֲדָדֵי הַהוּא דְּאַתְמִים לְהוּ וּמְשַׁוֵּי לְהוּ חַד נֶחְלְקָה מַהוּ אִי כְּנִפְרְצוּ עָלָיו דָּמֵי וּפָסוּל אוֹ כְּנִפְרְדוּ עָלָיו דָּמֵי וְכָשֵׁר ע&quot;כ ואע&quot;פ שֶׁלֹּא פֵּירֵשׁ שֶׁבַּהוּצָא הָעֶלְיוֹן מִדָּבָר שֶׁהוּא שְׁנַיִם מְחֻובָּרִים בְּיַחַד אֵין נִרְאֶה לְהַעֲמִיד דִּבְרֵיהֶם בִּשְׁאָר הוּצִין וְלוֹמַר שֶׁקּוֹרֵא לְגַבָּהּ דְּהוּצָא יְחִידִי תְּיוֹמַת עַל שֵׁם שֶׁמְּחַבֵּר כֶּפֶל הַהוּצָא בְּיַחַד דְּנִפְרְצוּ וְנִפְרְדוּ לָא אַיְירֵי אֶלָּא בְּרוֹב הֶעָלִין כִּדְאִיתָא בַּתּוֹסֶפְתָּא וְנֶחְלְקָה הַתְיוֹמַת לָא מַייְרֵי אֶלָּא רַק בַּחֲדָא מִדְּלָא קָאָמַר וְנֶחְלְקוּ הַתְּיוֹמוֹת ול&quot;נ דְּלָא קָשֶׁה נֶחֱלַק הַתְיוֹמַת שֶׁל כָּל אַחַת וְאַחַת קָאָמַר וְכֵן פִּי&#x27; הָרַב אַלְפָסִי תְּיוֹמַת גַּבָּהּ דְּהוּצָא דִּמְתַיַּים לְהוּ לְהוּצִין לִשְׁנֵי צִידֵּי הֶעָלִין וּמְשַׁוֵּי לְהוּ חַד כִּי כָּל אַחַת וְאַחַת כְּפוּלָה לִשְׁנַיִם וּתְיוֹמַת מִגַּבָּהּ וְאִם נִפְרְדוּ הַהוּצִיךְ זֶה מִזֶּה וְעָמַד כָּל אֶחָד וְאֶחָד כְּשֶׁהוּא כָּפוּל לִשְׁנַיִם וְהַתְּיוֹמָה שֶׁלָּהּ קַיֶּימֶת כְּשֵׁרָה וְאִם נֶחְלְקָה הַתְּיוֹמֶת נַעֲשָׂה כְּמִי שֶׁנִּפְרְצוּ עָלָיו וּפָסוּל וּבְרוֹב עָלָיו מַיְירֵי וְכֵן כָּתַב הָרַמְבַּ&quot;ם זַ&quot;ל פ&quot;ח מֹהַל&#x27; לוּלָב הֵל&#x27; ד&#x27; בְּרִייַּת עָלִין שֶׁבַּלּוּלָב כָּךְ הוּא כְּשֶׁהֵן גְּדֵלִין גְּדֵלִין שְׁנַיִם שְׁנַיִם וּדְבוּקִין מִגַּבָּן וְגַב כָּל שְׁנֵי עָלִין הַדְּבוּקִין הִיא נִקְרֵאת תְּיוֹמַת נֶחְלְקָה הַתְּיוֹמֶת פָּסוּל וְהַאי נֶחְלְקָה הוּא בְּרוֹב כָּל עָלֶה וְעָלֶה וְכֵן נֶחְלְקָה שֶׁל תְּשׁוּבַת הַגְּאוֹנִים הוּא בְּרוֹב וּלְפִי מַה שֶׁפֵּירְשׁוּ הַתּוֹסָפוֹת נִפְרְצוּ כִּי חֻופְיָא אֵין לְפָרֵשׁ כְּפֵירוּשׁ הָרַב אַלְפָסִי דְּהַייְנוּ נֶחְלְקָה הַתְּיוֹמֶת וּלְכָךְ אָמְרוּ דְּפֵירוּשׁ הֲלָכוֹת גְּדוֹלוֹת כְּפִי תְּשׁוּבַת הַגְּאוֹנִים: צִינֵּי הַר הַבַּרְזֶל כְּשֵׁרוֹת. אָמַר רַב הוּנָא לֹא שָׁנוּ אֶלָּא שֶׁרֹאשׁוֹ שֶׁל זֶה מַגִּיעַ בְּצַד עִיקָּרוֹ שֶׁל זֶה אֲבָל אֵין רֹאשׁוֹ שֶׁל זֶה בְּצַד עִיקָּרוֹ שֶׁל זֶה פְּסוּלוֹת:</div>
+          <div class="glose-fr">&lt;b&gt;Rav Papa a demande : si la tiyomet s est fendue, quelle est la loi ? Viens et entends, car Rabbi Yehochoua ben Levi a dit : si la tiyomet s est fendue, il devient comme celui dont la tiyomet a ete otee, et il est passoul.&lt;/b&gt; Rachi explique : les feuilles superieures du milieu, la ou l echine se termine, se sont separees l une de l autre, et l echine s est fendue jusqu aux feuilles situees au-dessous d elles. Et dans une responsa des Gueonim il est ecrit : la tiyomet, c est cette houtsa superieure qui se trouve au sommet du loulav et au-dessus de laquelle il n y a plus de houtsa ; elle est comme deux houtsin colles l un a l autre, et on l appelle tiyomet. Rav Papa a demande : si la tiyomet s est fendue, quelle est la loi ? -- c est-a-dire que l une s est separee de sa compagne, cette houtsa superieure du loulav, au point qu elle ressemble a deux. Fin de citation. Or, selon leurs propos, il ne se trouverait pas chez nous de loulav kacher, car ce n est qu a grand-peine que nous trouvons une tiyomet de cette sorte. On peut repondre que meme selon eux il n est passoul que s il s est ecarte de sa croissance naturelle, c est-a-dire que la tiyomet etait d abord jointe de cette maniere puis s est fendue ; mais si la tiyomet n etait pas jointe des le depart, il est kacher. L explication des Halakhot Guedolot tend vers cette meme lecture : Rav Papa a demande, si la tiyomet s est fendue -- il s agit du dos de la houtsa, la ou les deux moities adherent l une a l autre, ce qui les rend jumelles et n en fait qu une ; si elle s est fendue, quelle est la loi ? Est-ce comparable a nifretsou, et alors passoul, ou a nifredou, et alors kacher ? Fin de citation. Et bien qu il n ait pas precise qu il parle de la houtsa superieure, faite de deux moities jointes ensemble, il ne parait pas juste de rapporter ses propos aux autres houtsin et de dire qu il appelle tiyomet le dos d une houtsa isolee parce qu il en joint les deux replis : car nifretsou et nifredou ne parlent que de la majorite des feuilles, comme il ressort de la Tossefta, tandis que nehleka hatiyomet ne parle que d une seule, puisqu il n est pas dit nehleku hatiyomot. Il me semble que ce n est pas une difficulte : il veut dire que la tiyomet de chacune et chacune s est fendue. Ainsi a explique le Rif : la tiyomet, c est le dos de la houtsa qui rend jumelles les feuilles des deux cotes et n en fait qu une, car chacune est repliee en deux et sa tiyomet est sur son dos ; si les houtsin se sont ecartes l un de l autre et que chacun demeure replie en deux, sa tiyomet subsistant, il est kacher ; et si la tiyomet s est fendue, il devient comme celui dont les feuilles ont ete arrachees, et il est passoul -- et il parle de la majorite de ses feuilles. Ainsi a ecrit le Rambam (Hilkhot Loulav, ch. 8, halakha 4) : telle est la croissance des feuilles du loulav -- lorsqu elles poussent, elles poussent deux par deux, collees par le dos ; et le dos de chaque paire de feuilles collees s appelle tiyomet. Si la tiyomet s est fendue -- passoul ; et ce fendue s entend de la majorite de chaque feuille. De meme le fendue de la responsa des Gueonim s entend de la majorite. Et selon l explication que les Tossefot ont donnee de nifretsou -- comme un balai -- on ne peut pas expliquer comme le Rif, car ce serait alors la meme chose que nehleka hatiyomet ; c est pourquoi ils ont dit que l explication des Halakhot Guedolot suit la responsa des Gueonim. -- Les tsinei du Har haBarzel sont kacherot. Rav Houna a dit : ils n ont enseigne [cela] que lorsque l extremite de l une atteint le cote de la base de l autre ; mais si l extremite de l une n atteint pas le cote de la base de l autre, elles sont pessoulot.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La <b>tiyomet</b> -- de teomim, jumeaux -- est la paire de feuilles centrales qui ferme le sommet du loulav. Rav Papa isole un etat intermediaire, et c est toute la finesse de sa question : la tiyomet n est ni intacte ni absente, elle est <b>fendue</b>. Rien ne manque, mais l unite est rompue.</p><p>La Guemara tente de resoudre par R. Yehochoua ben Levi, qui invalide la tiyomet <b>otee</b>. La tentative echoue sur un mot : <i>nitla chani, deha haser leh</i> -- otee, c est autre chose, car il y a alors un manque de matiere. Le critere de cette source est la <b>diminution</b>, pas la division ; elle ne dit donc rien du cas de Rav Papa.</p><p>Le Roch montre l enjeu pratique enorme de la definition : selon la responsa des Gueonim, qui identifie la tiyomet a une unique houtsa sommitale, presque aucun loulav ne serait kacher. Il repond en distinguant ce qui a <b>change</b> par rapport a la croissance naturelle de ce qui n a jamais ete joint -- et rapporte les lectures du Rif et du Rambam, pour qui chaque feuille possede sa propre tiyomet.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 396" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="396" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="14.4" font-weight="700" fill="#1c1917">La tiyomet : otee, fendue, intacte</text>
+  <text x="380" y="42" text-anchor="middle" font-size="9.6" fill="#57534e">La question de Rav Papa porte sur un etat intermediaire : rien ne manque, mais l unite est rompue.</text>
+
+  <rect x="26" y="56" width="222" height="164" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.3"/>
+  <text x="137" y="76" text-anchor="middle" font-size="10" font-weight="700" fill="#14532d">Intacte</text>
+  <line x1="137" y1="184" x2="137" y2="120" stroke="#3f6212" stroke-width="4"/>
+  <path d="M137 120 L132 92" stroke="#15803d" stroke-width="3.4"/>
+  <path d="M137 120 L142 92" stroke="#15803d" stroke-width="3.4"/>
+  <text x="137" y="204" text-anchor="middle" font-size="9" font-weight="700" fill="#15803d">KACHER</text>
+
+  <rect x="268" y="56" width="222" height="164" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.3"/>
+  <text x="379" y="76" text-anchor="middle" font-size="10" font-weight="700" fill="#78350f">Fendue -- nehleka</text>
+  <line x1="379" y1="184" x2="379" y2="140" stroke="#3f6212" stroke-width="4"/>
+  <path d="M379 140 L366 122 L358 92" stroke="#15803d" stroke-width="3.4" fill="none"/>
+  <path d="M379 140 L392 122 L400 92" stroke="#15803d" stroke-width="3.4" fill="none"/>
+  <line x1="379" y1="140" x2="379" y2="120" stroke="#b45309" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <text x="379" y="204" text-anchor="middle" font-size="9" font-weight="700" fill="#b45309">La question de Rav Papa</text>
+
+  <rect x="510" y="56" width="222" height="164" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="621" y="76" text-anchor="middle" font-size="10" font-weight="700" fill="#7f1d1d">Otee -- nitla</text>
+  <line x1="621" y1="184" x2="621" y2="120" stroke="#3f6212" stroke-width="4"/>
+  <path d="M608 108 L634 92" stroke="#b91c1c" stroke-width="1.4"/>
+  <path d="M608 92 L634 108" stroke="#b91c1c" stroke-width="1.4"/>
+  <text x="621" y="204" text-anchor="middle" font-size="9" font-weight="700" fill="#b91c1c">PASSOUL -- il manque</text>
+
+  <rect x="26" y="234" width="344" height="146" rx="7" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.4"/>
+  <text x="198" y="254" text-anchor="middle" font-size="10.2" font-weight="700" fill="#1e3a8a">Version 1 (segment 5) -- la preuve echoue</text>
+  <text x="42" y="274" font-size="8.8" fill="#292524">On tente : R. Yehochoua ben Levi invalide la tiyomet OTEE ;</text>
+  <text x="42" y="289" font-size="8.8" fill="#292524">donc, sans doute, la fendue aussi.</text>
+  <text x="42" y="310" font-size="8.8" fill="#292524">Refus : nitla chani -- otee, c est autre chose, car il MANQUE</text>
+  <text x="42" y="325" font-size="8.8" fill="#292524">de la matiere au loulav. Or la fendue ne manque de rien.</text>
+  <text x="42" y="348" font-size="8.6" font-weight="700" fill="#1d4ed8">Resultat : la question de Rav Papa reste ouverte.</text>
+  <text x="42" y="365" font-size="8.4" fill="#57534e">Le critere separateur est le manque, pas la division.</text>
+
+  <rect x="390" y="234" width="344" height="146" rx="7" fill="#f5f3ff" stroke="#6d28d9" stroke-width="1.4"/>
+  <text x="562" y="254" text-anchor="middle" font-size="10.2" font-weight="700" fill="#4c1d95">Version 2 (segment 6) -- ikka deamri</text>
+  <text x="406" y="274" font-size="8.8" fill="#292524">La meme tradition est rapportee autrement : R. Yehochoua</text>
+  <text x="406" y="289" font-size="8.8" fill="#292524">ben Levi a directement dit que la tiyomet FENDUE</text>
+  <text x="406" y="304" font-size="8.8" fill="#292524">devient comme celle qui a ete otee -- et passoul.</text>
+  <text x="406" y="326" font-size="8.6" font-weight="700" fill="#6d28d9">Resultat : la question de Rav Papa est tranchee.</text>
+  <text x="406" y="345" font-size="8.4" fill="#57534e">Ici le critere separateur est l unite rompue : deux feuilles</text>
+  <text x="406" y="360" font-size="8.4" fill="#57534e">qui ne sont plus jumelles valent une tiyomet absente.</text>
+</svg></div><div class="svg-cap">Segments 5-6 : trois etats de la tiyomet, et les deux versions opposees de la reponse.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִיכָּא דְאָמְרִי: אָמַר (רַבִּי יוֹחָנָן) אָמַר רַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי: נֶחְלְקָה הַתְּיוֹמֶת, נַעֲשָׂה כְּמִי שֶׁנִּיטְּלָה הַתְּיוֹמֶת וּפְסוּל.</div>
+            <div class="fr"><p>Certains rapportent [autrement] : Rabbi Yohanan a dit au nom de Rabbi Yehochoua ben Levi -- si la tiyomet s est fendue, il devient comme celui dont la tiyomet a ete otee, et il est passoul.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La formule <b>ikka deamri</b> introduit une seconde transmission de la meme tradition. Ici, R. Yehochoua ben Levi ne parle pas de la tiyomet otee mais directement de la <b>fendue</b> -- et il l assimile a l otee.</p><p>La difference entre les deux versions est considerable. Dans la premiere, la question de Rav Papa reste ouverte, faute de preuve. Dans la seconde, elle est tranchee, et le principe change de nature : ce n est plus le manque de matiere qui invalide, mais la <b>rupture de l unite</b>. Deux feuilles qui ne sont plus jumelles valent une tiyomet absente. C est cette version que la halakha retiendra.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבִּי יְהוּדָה אוֹמֵר. תַּנְיָא, רַבִּי יְהוּדָה אוֹמֵר מִשּׁוּם רַבִּי טַרְפוֹן: ״כַּפּוֹת תְּמָרִים״ — כָּפוּת, אִם הָיָה פָּרוּד יִכְפְּתֶנּוּ.</div>
+            <div class="fr"><p>Rabbi Yehouda dit... On a enseigne : Rabbi Yehouda dit au nom de Rabbi Tarfon -- kapot temarim (branches de palmier) : [lis] kafout, lie ; s il etait ecarte, qu il le lie.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara reprend la clause de la michna ou R. Yehouda exige de lier le loulav, et lui donne sa source : une baraita au nom de R. Tarfon. Le procede est une <b>relecture du mot du verset</b> (Vayikra 23,40) : les consonnes de <i>kapot</i> se lisent aussi <b>kafout</b>, participe passif -- ce qui a ete lie.</p><p>Le verset ne decrirait donc pas seulement une espece botanique, mais un etat exige : le loulav doit se presenter comme un objet un. D ou la consequence pratique -- si ses feuilles se sont ecartees (le nifredou du segment 4, qui reste kacher), R. Yehouda demande qu on le <b>lie</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רָבִינָא לְרַב אָשֵׁי: מִמַּאי דְּהַאי ״כַּפּוֹת תְּמָרִים״ דְּלוּלִבָּא הוּא? אֵימָא חֲרוּתָא! בָּעֵינָא כָּפוּת וְלֵיכָּא.</div>
+            <div class="fr"><p>Ravina dit a Rav Achi : d ou [sait-on] que ce kapot temarim designe le loulav ? Dis plutot que c est le harouta [la branche durcie du palmier] ! -- Il faut qu il puisse etre lie (kafout), et ce n est pas le cas.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>חֲרוּתָא</b> עֲנַף הַדֶּקֶל מִשֶּׁנִּתְקַשָּׁה שְׁתֵּי שָׁנִים וְשָׁלֹשׁ וְיוֹצְאִין בּוֹ לוּלָבִין הַרְבֵּה שֶׁנָּשְׁרוּ עֲלֵיהֶן וְנִתְקַשּׁוּ גַּם הֵם וְנַעֲשׂוּ עֵץ זֶה פּוֹנֶה לְכָאן וְזֶה פּוֹנֶה לְכָאן כְּעַנְפֵי שְׁאָר אִילָנוֹת:</div>
+          <div class="glose-fr">&lt;b&gt;Harouta.&lt;/b&gt; La branche du palmier apres qu elle a durci deux ou trois ans ; il en sort de nombreux loulavim dont les feuilles sont tombees et qui ont durci a leur tour et sont devenus du bois, l un tourne d un cote, l autre de l autre, comme les branches des autres arbres.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בָּעֵינַן כָּפוּת</b> שֶׁאִם הָיָה פָּרוּד יִכְפְּתֶנּוּ וַהֲרֵי זֶה פָּרוּד וְאֵין אַתָּה יָכוֹל לְכָופְתוֹ שֶׁיְּהוּ עֲנָפָיו הַפְּרוּדִים כָּאן וְכָאן נִכְפָּתִים וּמִתְמַעֲכִים אֵצֶל אֲבִיהֶם שֶׁהֵן מְחֻובָּרִין בּוֹ לְפִי שֶׁקָּשִׁין הֵן:</div>
+          <div class="glose-fr">&lt;b&gt;Il faut qu il puisse etre lie.&lt;/b&gt; Car [il est dit] : s il etait ecarte, qu il le lie -- or celui-ci est ecarte, et tu ne peux pas le lier de facon que ses branches, ecartees de-ci de-la, soient serrees et pressees contre le tronc auquel elles sont attachees, parce qu elles sont dures.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Ravina retourne la lecture de R. Tarfon contre elle-meme. Si <i>kapot</i> veut dire <b>liable</b>, alors rien n indique le loulav en particulier : n importe quelle partie du palmier pourrait convenir. Il propose donc le <b>harouta</b>, la branche adulte devenue ligneuse.</p><p>La reponse est purement physique : <i>baeina kafout veleika</i> -- il faut pouvoir la lier, et on ne le peut pas. Rachi souligne le point exact : le bois durci ne cede pas ; on ne ramenera jamais ces branches contre leur tronc. Le critere degage par R. Tarfon devient ainsi un instrument d elimination, et cinq candidats vont y passer.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאֵימָא אֻופְתָּא! ״כָּפוּת״ — מִכְּלָל דְּאִיכָּא פָּרוּד, וְהַאי כָּפוּת וְעוֹמֵד לְעוֹלָם.</div>
+            <div class="fr"><p>Et dis plutot que c est l oufta [une buche prise au tronc du palmier] ! -- [Le mot] kafout implique qu il existe [un etat] ecarte ; or celui-ci est lie et le demeure a jamais.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאֵימָא אֻופְתָּא</b> אשטיל&quot;א מֵעִיקַּר הַדֶּקֶל שֶׁהוּא חָלָק וְאֵין עָנָף יוֹצֵא מִמֶּנּוּ לְכָאן וּלְכָאן שֶׁאֵין לְךָ כָּפוּת הֵימֶנּוּ:</div>
+          <div class="glose-fr">&lt;b&gt;Et dis plutot que c est l oufta.&lt;/b&gt; Une buche (Rachi en donne le nom en vieux francais) prise a la base du palmier, qui est lisse et dont aucune branche ne sort ni d un cote ni de l autre : il n y a rien de plus lie qu elle.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כַּפּוֹת</b> מַשְׁמַע שֶׁפָּרוּד מִתְּחִלָּה וְאַתָּה כּוֹפְתוֹ:</div>
+          <div class="glose-fr">&lt;b&gt;Kafout.&lt;/b&gt; Cela implique qu il etait ecarte au depart, et que tu le lies.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le candidat suivant est l inverse exact du precedent. Le harouta echouait parce qu il ne pouvait pas etre lie ; l <b>oufta</b>, la buche nue et lisse, echoue parce qu elle l est deja et pour toujours -- <i>kafout veomed leolam</i>.</p><p>L argument est de pure grammaire, et il est elegant : <b>kafout</b> est un participe passif, il decrit le resultat d une action. Un mot qui dit <i>a ete lie</i> suppose necessairement un etat anterieur ou la chose etait ecartee. Une qualite permanente, qui n a jamais eu d avant, ne peut pas etre designee par ce mot.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 288" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="288" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Pourquoi la buche ne peut pas etre kafout</text>
+  <text x="360" y="42" text-anchor="middle" font-size="9.6" fill="#57534e">Un mot qui decrit une action suppose l etat qui la precede.</text>
+
+  <rect x="34" y="58" width="300" height="196" rx="7" fill="#f8fafc" stroke="#475569" stroke-width="1.3"/>
+  <text x="184" y="78" text-anchor="middle" font-size="10.2" font-weight="700" fill="#1e293b">L oufta -- la buche</text>
+  <rect x="160" y="98" width="48" height="120" rx="6" fill="#d6d3d1" stroke="#78716c" stroke-width="1.4"/>
+  <line x1="172" y1="108" x2="172" y2="208" stroke="#a8a29e" stroke-width="1"/>
+  <line x1="196" y1="108" x2="196" y2="208" stroke="#a8a29e" stroke-width="1"/>
+  <text x="184" y="238" text-anchor="middle" font-size="8.8" fill="#292524">Lisse, aucune branche ne sort. Rien de plus lie.</text>
+
+  <path d="M344 156 L376 156" stroke="#78716c" stroke-width="1.4"/>
+  <path d="M375 150 L375 162 L383 156 Z" fill="#78716c"/>
+
+  <rect x="392" y="58" width="296" height="196" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.3"/>
+  <text x="540" y="78" text-anchor="middle" font-size="10.2" font-weight="700" fill="#78350f">La refutation, en un mot</text>
+  <text x="408" y="102" font-size="9" fill="#292524">kafout est un participe passif : quelque chose</text>
+  <text x="408" y="118" font-size="9" fill="#292524">a ete LIE. Donc il a d abord ete ecarte.</text>
+  <line x1="408" y1="132" x2="672" y2="132" stroke="#fcd34d" stroke-width="1.2"/>
+  <text x="408" y="154" font-size="9" fill="#292524">Loulav : ecarte -- puis lie. Le mot fonctionne.</text>
+  <text x="408" y="176" font-size="9" fill="#292524">Buche : liee depuis toujours, et pour toujours.</text>
+  <text x="408" y="192" font-size="9" fill="#292524">Il n y a jamais eu d avant. Le mot ne fonctionne pas.</text>
+  <text x="408" y="220" font-size="8.6" font-weight="700" fill="#b45309">kafout veomed leolam -- lie et le demeurant a jamais :</text>
+  <text x="408" y="236" font-size="8.6" fill="#292524">une qualite permanente n est pas ce que le verset decrit.</text>
+</svg></div><div class="svg-cap">Segment 9 : pourquoi un participe passif exclut ce qui a toujours ete tel -- la refutation de l oufta.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאֵימָא כֻּופְרָא? אָמַר אַבַּיֵּי: ״דְּרָכֶיהָ דַרְכֵי נֹועַם וְכָל נְתִיבוֹתֶיהָ שָׁלוֹם״ כְּתִיב.</div>
+            <div class="fr"><p>Et dis plutot que c est le koufra [la jeune branche pas encore durcie] ? Abaye a dit : il est ecrit -- Ses voies sont des voies de douceur, et tous ses sentiers sont paix (Michle 3,17).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאֵימָא כֻּופְרָא</b> הַייְנוּ נָמֵי עֵץ כְּעֵין חֲרוּתָא אֶלָּא עֲדַייִן בֶּן שָׁנָה אוֹ שְׁתֵּי שָׁנִים וְלֹא נִתְעַבָּה עֵצוֹ וְאַתָּה יָכוֹל לִכְפּוֹת עֲנָפָיו עַל יְדֵי אִגּוּד וּלְזָקְפָן לְמַעְלָה לְאָוגְדָן עִם אֲבִיהֶן:</div>
+          <div class="glose-fr">&lt;b&gt;Et dis plutot que c est le koufra.&lt;/b&gt; C est aussi du bois, du meme genre que le harouta, sauf qu il n a encore qu un an ou deux, que son bois ne s est pas epaissi, et que tu peux en lier les branches par une ligature et les redresser vers le haut pour les attacher avec leur tronc.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּרָכֶיהָ דַּרְכֵי נֹועַם</b> וְאֵלּוּ עִשּׂוּיַן כְּקוֹצִים וְיוֹצְאִין בָּהֶן עֻוקְצִין הַרְבֵּה וּמְסָרְטִין אֶת הַיָּדַיִם:</div>
+          <div class="glose-fr">&lt;b&gt;Ses voies sont des voies de douceur.&lt;/b&gt; Or celles-ci sont faites comme des epines, il en sort quantite de pointes, et elles ecorchent les mains.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">דְּרָכֶיהָ דַּרְכֵי נֹועַם. רָבָא לֹא הָיָה שָׁם מִשּׁוּם הָכִי לָא מַיְיתֵי הָכָא קְרָא דְּהָאֱמֶת וְהַשָּׁלוֹם כְּדִלְקַמָּן:</div>
+          <div class="glose-fr">&lt;b&gt;Ses voies sont des voies de douceur.&lt;/b&gt; Rava n etait pas la ; c est pourquoi on ne cite pas ici le verset la verite et la paix [aimez], comme [la Guemara le fait] plus loin.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le troisieme candidat est le plus serieux : le <b>koufra</b> est encore assez souple pour etre lie, et echappe donc aux deux refutations precedentes. Le critere de R. Tarfon ne suffit plus.</p><p>Abaye change alors de registre et invoque un principe general sur la Torah elle-meme : <i>derakheha darkhei noam</i>, ses voies sont des voies de douceur. Rachi donne la raison concrete -- ces branches sont herissees de pointes qui ecorchent les mains. Une mitsva ne peut pas exiger de saisir sept jours durant un objet blessant. L argument n est ni philologique ni physique : il est axiologique.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רָבָא תּוֹסְפָאָה לְרָבִינָא: וְאֵימָא תַּרְתֵּי כַּפֵּי דְתַמְרֵי? ״כְּפַת״ כְּתִיב. וְאֵימָא חֲדָא? לְהַהוּא — ״כַּף״ קָרֵי לֵיהּ.</div>
+            <div class="fr"><p>Rava Tossaa [le specialiste de la Tossefta] dit a Ravina : et dis plutot deux kapei de dattes [deux regimes] ? -- Il est ecrit kapot [sans vav, donc au singulier]. Et dis alors une seule ? -- Celle-la, on l appelle kaf.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תַּרְתֵּי כְּפִי דְּתַמְרֵי</b> תְּמָרִים עַצְמָן דַּרְכָּן לִהְיוֹת הַרְבֵּה תְּלוּיָן בְּיַחַד בַּמַּכְבְּדוֹת שֶׁלָּהֶם וְקוֹרִין לָהֶם כָּף טרוק&quot;א:</div>
+          <div class="glose-fr">&lt;b&gt;Deux kapei de dattes.&lt;/b&gt; Les dattes elles-memes ont coutume de pendre en grand nombre ensemble sur leurs regimes, et on appelle ceux-ci kaf (Rachi en donne le nom en vieux francais).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּפַת כְּתִיב</b> חֲדָא:</div>
+          <div class="glose-fr">&lt;b&gt;Il est ecrit kapot.&lt;/b&gt; [Donc] une seule.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כַּף קָרֵי לֵיהּ</b> וְכִי כְּתִיב כְּפַת עַל שֵׁם כָּפוּת אִם פְּרוּדָה וְאֵין לָשׁוֹן זֶה נוֹפֵל אֶלָּא עַל [עֲלֵי] הַלּוּלָב:</div>
+          <div class="glose-fr">&lt;b&gt;On l appelle kaf.&lt;/b&gt; Et si l Ecriture ecrit kapot, c est en raison de [la lecture] lie, s il etait ecarte -- et cette expression ne convient qu aux feuilles du loulav.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">כְּפַת כְּתִיב. בְּהַאי כֻּולֵּי עָלְמָא מוֹדוֹ דְּיֵשׁ אֵם לַמָּסֹורֶת וְצָרִיךְ טַעְמָא: [עִי&#x27; מַה שֶׁתֵּירְצוּ בִּפְסָחִים לוֹ. ד&quot;ה עֹונִי קָרֵינַן בֵּיהּ וְכוּ&#x27; וְע&quot;ע תּוֹסְ&#x27; לְעֵיל (סֻוכָּה ו:) ד&quot;ה וְר&#x27; שִׁמְעוֹן]:</div>
+          <div class="glose-fr">&lt;b&gt;Il est ecrit kapot.&lt;/b&gt; Sur ce point, tous s accordent a dire que la massora fait autorite (yech em lamassoret), et cela demande une explication. [Voir la reponse donnee dans Pessahim 36a, s.v. oni kerinan beh ; et voir encore Tossefot plus haut, Souka 6b, s.v. veRabbi Chimon.]</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deux dernieres objections, de registre purement textuel. Rava Tossaa remarque que le verset est au pluriel : pourquoi pas deux <b>regimes de dattes</b> ? La reponse joue sur l ecriture consonantique : la massora ecrit <i>kpt</i> sans vav -- le mot se lit au pluriel mais s ecrit au singulier, donc un seul objet.</p><p>Objection symetrique : si le mot est au singulier, pourquoi pas une seule <b>feuille</b> ? Reponse : une feuille isolee se nomme <b>kaf</b>, jamais kapot. La forme retenue dit donc les deux choses ensemble -- un seul objet, fait de plusieurs feuilles. Et Rachi ajoute que le mot ne garde son sens de <i>lie</i> que rapporte aux feuilles du loulav.</p><p>Tossefot releve la difficulte de methode : on tranche ici d apres l ecriture (<b>yech em lamassoret</b>) alors qu ailleurs on tranche d apres la lecture, et renvoie a Pessahim 36a pour la resolution.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 486" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="486" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">kapot temarim : six candidats, un seul survivant</text>
+  <text x="380" y="42" text-anchor="middle" font-size="10" fill="#57534e">Le verset dit branches de palmier. Rien n indique le loulav. Ravina force la Guemara a l etablir.</text>
+
+  <rect x="248" y="56" width="264" height="52" rx="7" fill="#eef2ff" stroke="#4338ca" stroke-width="1.5"/>
+  <text x="380" y="76" text-anchor="middle" font-size="10.4" font-weight="700" fill="#312e81">Vayikra 23,40 : kapot temarim</text>
+  <text x="380" y="94" text-anchor="middle" font-size="9" fill="#3730a3">lu kafout : lie. Ce qui etait ecarte, on le lie.</text>
+
+  <path d="M380 108 L380 126" stroke="#78716c" stroke-width="1.3"/>
+  <path d="M120 126 L640 126" stroke="#78716c" stroke-width="1.3"/>
+  <path d="M120 126 L120 142" stroke="#78716c" stroke-width="1.3"/>
+  <path d="M250 126 L250 142" stroke="#78716c" stroke-width="1.3"/>
+  <path d="M380 126 L380 142" stroke="#78716c" stroke-width="1.3"/>
+  <path d="M510 126 L510 142" stroke="#78716c" stroke-width="1.3"/>
+  <path d="M640 126 L640 142" stroke="#78716c" stroke-width="1.3"/>
+
+  <rect x="52" y="142" width="136" height="120" rx="6" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="120" y="160" text-anchor="middle" font-size="9.6" font-weight="700" fill="#7f1d1d">harouta</text>
+  <text x="120" y="174" text-anchor="middle" font-size="8.2" fill="#57534e">la branche durcie,</text>
+  <text x="120" y="185" text-anchor="middle" font-size="8.2" fill="#57534e">deux ou trois ans,</text>
+  <text x="120" y="196" text-anchor="middle" font-size="8.2" fill="#57534e">devenue du bois</text>
+  <text x="120" y="216" text-anchor="middle" font-size="8.4" font-weight="700" fill="#b91c1c">Elimine</text>
+  <text x="120" y="231" text-anchor="middle" font-size="8.2" fill="#292524">il faut pouvoir la lier</text>
+  <text x="120" y="243" text-anchor="middle" font-size="8.2" fill="#292524">-- elle est trop dure</text>
+  <text x="120" y="255" text-anchor="middle" font-size="8.2" fill="#292524">pour ceder</text>
+
+  <rect x="182" y="142" width="136" height="120" rx="6" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="250" y="160" text-anchor="middle" font-size="9.6" font-weight="700" fill="#7f1d1d">oufta</text>
+  <text x="250" y="174" text-anchor="middle" font-size="8.2" fill="#57534e">la buche prise a la</text>
+  <text x="250" y="185" text-anchor="middle" font-size="8.2" fill="#57534e">base du palmier :</text>
+  <text x="250" y="196" text-anchor="middle" font-size="8.2" fill="#57534e">lisse, sans branche</text>
+  <text x="250" y="216" text-anchor="middle" font-size="8.4" font-weight="700" fill="#b91c1c">Elimine</text>
+  <text x="250" y="231" text-anchor="middle" font-size="8.2" fill="#292524">kafout suppose un</text>
+  <text x="250" y="243" text-anchor="middle" font-size="8.2" fill="#292524">etat ecarte -- elle</text>
+  <text x="250" y="255" text-anchor="middle" font-size="8.2" fill="#292524">est liee a jamais</text>
+
+  <rect x="312" y="142" width="136" height="120" rx="6" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="380" y="160" text-anchor="middle" font-size="9.6" font-weight="700" fill="#7f1d1d">koufra</text>
+  <text x="380" y="174" text-anchor="middle" font-size="8.2" fill="#57534e">la jeune branche,</text>
+  <text x="380" y="185" text-anchor="middle" font-size="8.2" fill="#57534e">un ou deux ans :</text>
+  <text x="380" y="196" text-anchor="middle" font-size="8.2" fill="#57534e">encore liable</text>
+  <text x="380" y="216" text-anchor="middle" font-size="8.4" font-weight="700" fill="#b91c1c">Elimine</text>
+  <text x="380" y="231" text-anchor="middle" font-size="8.2" fill="#292524">Abaye : elle pique et</text>
+  <text x="380" y="243" text-anchor="middle" font-size="8.2" fill="#292524">ecorche les mains --</text>
+  <text x="380" y="255" text-anchor="middle" font-size="8.2" fill="#292524">voies de douceur</text>
+
+  <rect x="442" y="142" width="136" height="120" rx="6" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="510" y="160" text-anchor="middle" font-size="9.6" font-weight="700" fill="#7f1d1d">deux kapei</text>
+  <text x="510" y="174" text-anchor="middle" font-size="8.2" fill="#57534e">deux regimes de</text>
+  <text x="510" y="185" text-anchor="middle" font-size="8.2" fill="#57534e">dattes -- le mot est</text>
+  <text x="510" y="196" text-anchor="middle" font-size="8.2" fill="#57534e">au pluriel, apres tout</text>
+  <text x="510" y="216" text-anchor="middle" font-size="8.4" font-weight="700" fill="#b91c1c">Elimine</text>
+  <text x="510" y="231" text-anchor="middle" font-size="8.2" fill="#292524">la massora ecrit kpt</text>
+  <text x="510" y="243" text-anchor="middle" font-size="8.2" fill="#292524">sans vav : un seul,</text>
+  <text x="510" y="255" text-anchor="middle" font-size="8.2" fill="#292524">pas deux</text>
+
+  <rect x="572" y="142" width="136" height="120" rx="6" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="640" y="160" text-anchor="middle" font-size="9.6" font-weight="700" fill="#7f1d1d">une seule feuille</text>
+  <text x="640" y="174" text-anchor="middle" font-size="8.2" fill="#57534e">si le mot est au</text>
+  <text x="640" y="185" text-anchor="middle" font-size="8.2" fill="#57534e">singulier, pourquoi</text>
+  <text x="640" y="196" text-anchor="middle" font-size="8.2" fill="#57534e">pas une feuille ?</text>
+  <text x="640" y="216" text-anchor="middle" font-size="8.4" font-weight="700" fill="#b91c1c">Elimine</text>
+  <text x="640" y="231" text-anchor="middle" font-size="8.2" fill="#292524">une feuille se nomme</text>
+  <text x="640" y="243" text-anchor="middle" font-size="8.2" fill="#292524">kaf, jamais kapot :</text>
+  <text x="640" y="255" text-anchor="middle" font-size="8.2" fill="#292524">le mot dit plus</text>
+
+  <path d="M380 262 L380 288" stroke="#15803d" stroke-width="1.6"/>
+  <path d="M374 287 L386 287 L380 294 Z" fill="#15803d"/>
+
+  <rect x="150" y="296" width="460" height="82" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.6"/>
+  <text x="380" y="318" text-anchor="middle" font-size="11" font-weight="700" fill="#14532d">Le loulav -- la palme encore fermee</text>
+  <text x="380" y="337" text-anchor="middle" font-size="9" fill="#292524">Il est le seul dont on puisse dire les deux choses a la fois : il peut etre ecarte,</text>
+  <text x="380" y="352" text-anchor="middle" font-size="9" fill="#292524">et il peut etre lie. Assez souple pour ceder, assez doux pour etre tenu,</text>
+  <text x="380" y="367" text-anchor="middle" font-size="9" fill="#292524">un seul objet et non deux, plusieurs feuilles et non une.</text>
+
+  <rect x="66" y="394" width="628" height="74" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.3"/>
+  <text x="80" y="412" font-size="9.6" font-weight="700" fill="#78350f">La methode a retenir</text>
+  <text x="80" y="429" font-size="8.6" fill="#292524">Chaque candidat est elimine par un critere DIFFERENT : la contrainte physique (on ne peut pas le lier),</text>
+  <text x="80" y="443" font-size="8.6" fill="#292524">la logique du mot (kafout suppose un avant ecarte), la valeur (les voies de la Torah sont douces),</text>
+  <text x="80" y="457" font-size="8.6" fill="#292524">et enfin l orthographe massoretique. Quatre registres de preuve pour un seul mot de verset.</text>
+</svg></div><div class="svg-cap">Segments 8-11 : les six candidats au titre de kapot temarim, chacun elimine par un type de preuve different.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">צִינֵּי הַר הַבַּרְזֶל — כְּשֵׁרָה. אָמַר אַבַּיֵּי: לֹא שָׁנוּ אֶלָּא שֶׁרֹאשׁוֹ שֶׁל זֶה מַגִּיעַ לְצַד עִיקָּרוֹ שֶׁל זֶה, אֲבָל אֵין רֹאשׁוֹ שֶׁל זֶה מַגִּיעַ לְצַד עִיקָּרוֹ שֶׁל זֶה — פָּסוּל.</div>
+            <div class="fr"><p>Les tsinei du Har haBarzel [les palmes de la Montagne de Fer] -- kacherot. Abaye a dit : ils n ont enseigne [cela] que lorsque l extremite de celle-ci atteint le cote de la base de celle-la ; mais si l extremite de celle-ci n atteint pas le cote de la base de celle-la -- passoul.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>צִינֵּי הַר הַבַּרְזֶל</b> לוּלָבִין שֶׁלָּהֶן הֶעָלִין מוּעָטִין בַּשִּׁדְרָה מְרֻוחָקִין זֶה לְמַעְלָה מִזֶּה הַרְבֵּה וְעוֹד שֶׁקְּטַנִּים הֵן לְאָרְכָּן וּפְעָמִים אֵין מַגִּיעַ רֹאשׁוֹ שֶׁל עָלֶה זֶה לְעִיקָּרוֹ שֶׁל זֶה:</div>
+          <div class="glose-fr">&lt;b&gt;Les tsinei du Har haBarzel.&lt;/b&gt; Leurs loulavim ont peu de feuilles sur l echine, tres ecartees l une au-dessus de l autre ; de plus elles sont courtes, si bien que parfois l extremite de l une n atteint pas la base de l autre.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Retour a la michna, qui declarait kacherot les palmes d une variete particuliere, celle du <b>Har haBarzel</b>, la Montagne de Fer. Rachi decrit le probleme botanique : feuilles rares, courtes, et tres espacees le long de l echine.</p><p>Abaye pose une condition mesurable, et c est ce qui fait la valeur du passage : l extremite d une feuille doit <b>atteindre la base</b> de la feuille suivante. Tant que ce chevauchement existe, le loulav garde son aspect plein et continu. En dessous, l echine reste nue par endroits -- ce n est plus un loulav.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="300" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Les palmes de la Montagne de Fer : la condition d Abaye</text>
+  <text x="360" y="42" text-anchor="middle" font-size="9.6" fill="#57534e">Peu de feuilles, courtes et espacees. Tout se joue sur un chevauchement.</text>
+
+  <rect x="34" y="58" width="300" height="212" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.4"/>
+  <text x="184" y="78" text-anchor="middle" font-size="10.2" font-weight="700" fill="#14532d">L extremite atteint la base de la suivante</text>
+  <line x1="184" y1="240" x2="184" y2="100" stroke="#3f6212" stroke-width="3.4"/>
+  <path d="M184 224 L136 200" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M184 224 L232 200" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M184 190 L136 166" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M184 190 L232 166" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M184 156 L136 132" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M184 156 L232 132" stroke="#65a30d" stroke-width="2.4"/>
+  <circle cx="136" cy="200" r="4" fill="none" stroke="#15803d" stroke-width="1.4"/>
+  <circle cx="184" cy="190" r="4" fill="none" stroke="#15803d" stroke-width="1.4"/>
+  <path d="M140 199 L179 191" stroke="#15803d" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <text x="184" y="258" text-anchor="middle" font-size="9" font-weight="700" fill="#15803d">KACHER -- le loulav garde son aspect plein</text>
+
+  <rect x="386" y="58" width="300" height="212" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.4"/>
+  <text x="536" y="78" text-anchor="middle" font-size="10.2" font-weight="700" fill="#7f1d1d">Il ne l atteint pas -- l echine reste nue</text>
+  <line x1="536" y1="240" x2="536" y2="100" stroke="#3f6212" stroke-width="3.4"/>
+  <path d="M536 230 L502 218" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M536 230 L570 218" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M536 178 L502 166" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M536 178 L570 166" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M536 126 L502 114" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M536 126 L570 114" stroke="#65a30d" stroke-width="2.4"/>
+  <path d="M502 216 L502 180" stroke="#b91c1c" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <text x="470" y="200" text-anchor="end" font-size="8.4" fill="#b91c1c">vide</text>
+  <text x="536" y="258" text-anchor="middle" font-size="9" font-weight="700" fill="#b91c1c">PASSOUL -- il ne ressemble plus a un loulav</text>
+  <text x="360" y="286" text-anchor="middle" font-size="8.6" fill="#57534e">Segment 13 : une baraita les declare pessoulot, la michna kacherot -- la distinction d Abaye reconcilie les deux.</text>
+</svg></div><div class="svg-cap">Segments 12-13 : la condition mesurable d Abaye, et la contradiction michna / baraita qu elle resout.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תַּנְיָא נָמֵי הָכִי: צִינֵּי הַר הַבַּרְזֶל פְּסוּלָה. וְהָא אֲנַן תְּנַן כְּשֵׁרָה! אֶלָּא שְׁמַע מִינַּהּ כְּאַבָּיֵי: שְׁמַע מִינָּה.</div>
+            <div class="fr"><p>On a egalement enseigne ainsi [dans une baraita] : les tsinei du Har haBarzel -- passoul. Mais nous avons appris dans la michna qu elles sont kacherot !</p><p>Il faut donc en conclure comme Abaye. Concluons-en effectivement.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara produit une baraita qui dit exactement l inverse de la michna. La contradiction est frontale, et c est precisement ce qui la rend utile : deux sources tannaitiques ne peuvent pas se contredire sur un meme cas, elles parlent donc de deux cas differents.</p><p>La distinction d Abaye, jusque-la simple hypothese, devient alors la <b>seule</b> lecture possible -- la michna vise les palmes dont les feuilles se chevauchent, la baraita celles dont elles ne se rejoignent pas. <i>Chema mina keAbaye : chema mina.</i> Une objection s est retournee en preuve, et le folio se clot sur cette confirmation.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Sukkah_31b.html">&lsaquo; Sukkah 31b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Sukkah_32b.html">Sukkah 32b &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

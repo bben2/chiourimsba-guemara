@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chullin 141b — pourquoi R. Yehouda fouette, comment renvoyer, et les pigeons du colombier</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Chullin 141b — pourquoi R. Yehouda fouette, comment renvoyer, et les pigeons du colombier</h1>
+    <div class="ref">Chullin 141b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Chullin_141a.html">&lsaquo; Chullin 141a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Chullin_142a.html">Chullin 142a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> Le daf tranche la question sur la raison de Rabbi Yehouda. La braita &#x27;voleur et brigand sont fouettes&#x27; est ecartee (non enseignee dans une ecole fiable), puis celle de la pea et des gerbes oubliees (&#x27;taazov&#x27; s&#x27;entend des le depart) ; Ravina apporte la preuve decisive par le pessah (&#x27;lo totirou... baech tisrofou&#x27;, un assé pose apres l&#x27;interdit, sans flagellation) : on conclut que Rabbi Yehouda tient qu&#x27;un lav chénittak laassè n&#x27;entraine pas la flagellation, et que s&#x27;il fouette ici c&#x27;est parce que &#x27;chalea-h&#x27; s&#x27;entend des le depart (interdit autonome).</p><p>On expose ensuite comment renvoyer la mere (Rav Houna : par les pattes ; Rav Yehouda : par les ailes), l&#x27;episode des ailes coupees (makat mardout), la question du teima et le renvoi pour un seul oeuf. Enfin, les pigeons de colombier sont obliges du renvoi mais interdits a autrui pour vol par &#x27;darkei chalom&#x27; : la Guemara concilie cela avec l&#x27;acquisition par la cour (la mere couvant empeche l&#x27;acquisition), rapporte le cas du mineur et celui de Levi bar Simon a qui Chmouel ordonne de frapper le nid pour acquerir les pigeonneaux.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="300" fill="#fffdf8"/>
+  <text x="370" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Pourquoi R. Yehouda fouette : tranchee de la mahloket</text>
+  <rect x="40" y="44" width="320" height="58" rx="9" fill="#fdeaea" stroke="#b91c1c"/>
+  <text x="200" y="66" text-anchor="middle" font-size="11" font-weight="700" fill="#b91c1c">Hypothese A</text>
+  <text x="200" y="86" text-anchor="middle" font-size="10.5" fill="#292524">un lav chénittak laassè entraine</text>
+  <text x="200" y="100" text-anchor="middle" font-size="10.5" fill="#292524">la flagellation (avis general)</text>
+  <rect x="360" y="44" width="320" height="58" rx="9" fill="#eafaf1" stroke="#15803d"/>
+  <text x="520" y="66" text-anchor="middle" font-size="11" font-weight="700" fill="#15803d">Hypothese B (retenue)</text>
+  <text x="520" y="86" text-anchor="middle" font-size="10.5" fill="#292524">'chalea-h' s'entend DES LE DEPART</text>
+  <text x="520" y="100" text-anchor="middle" font-size="10.5" fill="#292524">-&gt; interdit autonome, donc fouette</text>
+  <rect x="40" y="116" width="640" height="74" rx="9" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="370" y="138" text-anchor="middle" font-size="11" fill="#292524">Preuves examinees : ganav/gazlan (rejete : braita non fiable) ; pea et chikheha</text>
+  <text x="370" y="156" text-anchor="middle" font-size="11" fill="#292524">'taazov' meikara ; PREUVE DECISIVE (Ravina) : 'lo totirou... baech tisrofou' (pessah)</text>
+  <text x="370" y="174" text-anchor="middle" font-size="11" fill="#292524">= assé pose APRES le lo taassè -&gt; pas de flagellation. Donc B : 'chalea-h' meikara</text>
+  <rect x="40" y="204" width="640" height="84" rx="9" fill="#fef3e2" stroke="#b45309"/>
+  <text x="370" y="226" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b45309">Comment renvoyer la mere prise ?</text>
+  <text x="370" y="248" text-anchor="middle" font-size="10.5" fill="#292524">Rav Houna : par les PATTES (raglim) ; Rav Yehouda : par les AILES (agapayim, ses 'pattes')</text>
+  <text x="370" y="268" text-anchor="middle" font-size="10.5" fill="#292524">Ailes coupees puis reprise -&gt; Rav Yehouda fouette (makat mardout) et : laisse-les repousser !</text>
+  <text x="370" y="285" text-anchor="middle" font-size="10" fill="#57534e">Eloignement requis : qu'elle echappe a sa main (ne puisse etre reprise aussitot)</text>
+</svg></div>
+          <figcaption>Segments 0-12 : la tranchee de la mahloket (preuves successives, conclusion &#x27;chalea-h meikara&#x27;), comment renvoyer la mere et l&#x27;eloignement requis.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 290" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="290" fill="#fffdf8"/>
+  <text x="370" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Pigeons de colombier : renvoi, acquisition par la cour, darkei chalom</text>
+  <rect x="40" y="44" width="680" height="44" rx="9" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="370" y="64" text-anchor="middle" font-size="11" fill="#292524">Braita : pigeons de colombier/grenier -&gt; OBLIGES du renvoi (non disponibles),</text>
+  <text x="370" y="82" text-anchor="middle" font-size="11" fill="#292524">mais INTERDITS [a autrui] pour vol (gazel), par 'voies de paix' (darkei chalom)</text>
+  <rect x="40" y="100" width="680" height="58" rx="9" fill="#fdeaea" stroke="#b91c1c"/>
+  <text x="370" y="122" text-anchor="middle" font-size="11" fill="#292524">Difficulte : si 'la cour de l'homme acquiert pour lui' (R. Yossi b. Hanina), l'oeuf serait</text>
+  <text x="370" y="140" text-anchor="middle" font-size="11" fill="#292524">disponible -&gt; exempt ! ('ki yikare' exclut le disponible). Or la braita oblige le renvoi.</text>
+  <rect x="40" y="170" width="680" height="58" rx="9" fill="#eafaf1" stroke="#15803d"/>
+  <text x="370" y="192" text-anchor="middle" font-size="11" fill="#292524">Reponse (Rabba) : oblige des la sortie de la MAJEURE PARTIE de l'oeuf ; la cour n'acquiert</text>
+  <text x="370" y="210" text-anchor="middle" font-size="11" fill="#292524">qu'a sa chute complete. Et (Rav Yehouda au nom de Rav) : interdit d'acquerir des oeufs que la</text>
+  <text x="370" y="226" text-anchor="middle" font-size="11" fill="#292524">mere couve -- 'renvoie la mere' PUIS 'prends les petits' : la cour ne peut ce que le proprio ne peut</text>
+  <rect x="40" y="240" width="680" height="44" rx="9" fill="#f5f3ff" stroke="#7c3aed"/>
+  <text x="370" y="262" text-anchor="middle" font-size="11" fill="#292524">'Interdit pour vol par darkei chalom' -&gt; vise un ENFANT (mineur) : son pere doit restituer</text>
+  <text x="370" y="280" text-anchor="middle" font-size="10.5" fill="#57534e">Levi bar Simon cede ses pigeonneaux a Rav Yehouda ; Chmouel : frappe le nid pour les acquerir</text>
+</svg></div>
+          <figcaption>Segments 13-21 : les pigeons de colombier -- renvoi, vol par darkei chalom, acquisition par la cour (hatser), le mineur et Levi bar Simon.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבִּי חִייָּא וּבֵי רַבִּי אוֹשַׁעְיָא מְשַׁבַּשְׁתָּא הִיא, וְלָא תּוֹתְבוּ מִינַּהּ בֵּי מִדְרְשָׁא, דִּלְמָא אֵינָהּ בִּכְלַל מַלְקוֹת אַרְבָּעִים תַּנְיָא.</div>
+            <div class="fr"><p>[...une braita de l&#x27;ecole de] Rabbi Hiyya ou de l&#x27;ecole de Rabbi Hochaya [seule est fiable] ; [une autre] est corrompue (mechabechta), et l&#x27;on n&#x27;objecte pas a partir d&#x27;elle dans l&#x27;ecole [d&#x27;etude]. Peut-etre [la braita] enseignait-elle [au contraire] : &#x27;[voleur et brigand] ne sont pas compris dans [le regime de] la flagellation des quarante&#x27; [, ce qui renverserait l&#x27;objection].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">רַבִּי חִייָּא וְרַבִּי אוֹשַׁעְיָא סִדְּרוּ אֶת הַבָּרָייְתוֹת וְדִקְדְּקוּ בְּדִבְרֵי כָּל חָכָם לוֹמַר כְּמוֹ שֶׁאָמַר אֲבָל יֵשׁ תַּנָּאִים הַרְבֵּה שֶׁמּוֹסִיפִים עַל מִשְׁנָתָם בִּדְדָמֵי כִּי הָכָא מִשּׁוּם דְּשָׁמְעִינַן לְרַבִּי יְהוּדָה הָכָא דִּמְחַיֵּיב סָבְרִי טַעְמָא מִשּׁוּם לָאו שֶׁנִּיתָּק לַעֲשֵׂה לוֹקִין עָלָיו וְהוֹסִיפוּ לוֹמַר גַּנָּב וְגַזְלָן:</div>
+          <div class="glose-fr">Rabbi Hiyya et Rabbi Hochaya ont ordonne les braitot et furent precis dans les propos de chaque Sage, [les rapportant] comme il les a dits ; mais nombre de tanaim ajoutent a leur enseignement par approximation -- comme ici, ou, ayant entendu Rabbi Yehouda obliger [a la flagellation], ils ont suppose que la raison [tenait a ce] qu&#x27;un lav chénittak laassè entraine la flagellation, et ils ont ajoute &#x27;voleur et brigand&#x27;.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דִּילְמָא אֵינוֹ בִּכְלַל מַלְקוֹת אַרְבָּעִים תַּנְיָא</b> וְאַשְׁמוֹעִינַן דְּטַעֲמָא דְּרַבִּי יְהוּדָה בְּמָתְנֵי&#x27; מִשּׁוּם דְּשָׁלַח מֵעִיקָּרָא מַשְׁמַע וְהַתַּנָּאִים טָעוּ בְּגִירְסָתָם לְאַחַר זְמַן וְאָמְרוּ שֶׁיֶּשְׁנָן דְּאָמְרִי דֻּומְיָא דְּמַתְנִי&#x27;:</div>
+          <div class="glose-fr">Peut-etre enseignait-elle &#x27;[ils] ne sont pas compris dans la flagellation des quarante&#x27; — et [cela] nous enseignerait que la raison de Rabbi Yehouda dans la Michna [tient a ce que] &#x27;chalea-h&#x27; s&#x27;entend des le depart, les tanaim ayant ensuite erre dans leur version et dit &#x27;[ils] sont [fouettes]&#x27;, par analogie [erronee] avec la Michna.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Refutation (suite de 141a) par <b>Rabbi Zira</b>. Une braita non enseignee dans une ecole reputee precise (<b>Rabbi Hiyya</b>, <b>Rabbi Hochaya</b>) peut etre <b>corrompue</b> (mechabechta) -- on ne l'oppose pas. Peut-etre la version exacte disait-elle 'voleur et brigand <b>ne sont pas</b> fouettes', ce qui irait dans le sens de la seconde hypothese ('chalea-h' meikara) et ruinerait l'objection.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּא שְׁמַע, דְּתָנֵי רַבִּי אוֹשַׁעְיָא וְרַבִּי חִיָּיא: ״לֹא תָּשׁוּב״ וְשָׁב, ״לֹא תִּכְלֶה״ וְכַלָּה – יֶשְׁנָן בִּכְלַל מַלְקוֹת אַרְבָּעִים, דִּבְרֵי רַבִּי יְהוּדָה.</div>
+            <div class="fr"><p>Viens entendre, car Rabbi Hochaya et Rabbi Hiyya ont enseigne : &#x27;tu ne reviendras pas [le prendre]&#x27; (lo tachouv) et qu&#x27;il est revenu [le prendre], &#x27;tu n&#x27;acheveras pas [de moissonner]&#x27; (lo tekhalé) et qu&#x27;il a acheve — [ces deux-la] sont compris dans [le regime de] la flagellation des quarante, [tels sont] les propos de Rabbi Yehouda.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא תָּשׁוּב</b> לְקַחְתּוֹ:</div>
+          <div class="glose-fr">&#x27;Tu ne reviendras pas&#x27; — le prendre.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא תְּכַלֶּה</b> דְּפֵאָה וַהֲרֵי הֵן נִיתְּקִין לַעֲשֵׂה דִּכְתִיב לֶעָנִי וְלַגֵּר תַּעֲזֹוב אֹותָם:</div>
+          <div class="glose-fr">&#x27;Tu n&#x27;acheveras pas&#x27; — [pour] la pea ; et ce sont des [interdits] repares par un assé, car il est ecrit &#x27;pour le pauvre et l&#x27;etranger tu les laisseras&#x27; (Lev 19:10).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle preuve, cette fois d'une braita <b>fiable</b> (Rabbi Hochaya et Rabbi Hiyya). 'Tu ne <b>reviendras</b> pas' chercher la gerbe oubliee (chikheha, Deut 24:19) et qu'on est revenu la prendre ; 'tu n'<b>acheveras</b> pas' de moissonner le coin du champ (pea, Lev 19:9) et qu'on l'a acheve : pour <b>Rabbi Yehouda</b>, on est <b>fouette</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">שְׁמַע מִינַּהּ טַעְמֵיהּ דְּרַבִּי יְהוּדָה, מִשּׁוּם דְּקָסָבַר לָאו שֶׁנִּיתָּק לַעֲשֵׂה – לוֹקִין עָלָיו.</div>
+            <div class="fr"><p>Conclus-en [donc] que la raison de Rabbi Yehouda [tient a ce] qu&#x27;il tient [qu&#x27;]un interdit repare par un assé (lav chénittak laassè), on est fouette a son sujet.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Inference. Pea et chikheha sont des <b>lav chénittak laassè</b> (l'interdit 'ne reviens pas' / 'n'acheve pas' est repare par 'pour le pauvre... tu <b>laisseras</b>'). Puisque Rabbi Yehouda y <b>fouette</b>, on conclurait qu'il tient, en general, qu'un tel interdit <b>entraine la flagellation</b> -- premiere hypothese.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">דִּלְמָא הָתָם הַייְנוּ טַעַם, דְּקָסָבַר ״תַּעֲזֹוב״ מֵעִיקָּרָא מַשְׁמַע.</div>
+            <div class="fr"><p>Peut-etre [que] la-bas, telle [est] la raison : il tient que &#x27;tu laisseras&#x27; (taazov) s&#x27;entend des le depart (meikara) [donc ce ne sont pas de vrais nittak laassè].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מֵעִיקָּרָא מַשְׁמַע</b> לֹא תִּכְלֶה אֲבָל מֶה עָלֶיךָ לַעֲשׂוֹת עָזוֹב אוֹתָם וְלֹא תְּכַלֶּה אֲבָל גַּנָּב וְגַזְלָן דְּעַל כָּרְחֲךָ נִיתַּק לַעֲשֵׂה אֵימָא לָךְ דְּלָא לָקֵי:</div>
+          <div class="glose-fr">S&#x27;entend des le depart — &#x27;tu n&#x27;acheveras pas&#x27;, mais que dois-tu faire ? &#x27;tu les laisseras&#x27;, et &#x27;tu n&#x27;acheveras pas&#x27; [de moissonner] ; tandis que pour voleur et brigand, ou [l&#x27;interdit] est forcement repare par un assé, je peux te dire qu&#x27;il n&#x27;est pas fouette.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Refutation. Peut-etre, pour pea et chikheha, Rabbi Yehouda fouette parce qu'il lit '<b>taazov</b>' (tu laisseras) comme valant <b>des le depart</b> -- l'obligation de laisser precede. Ce ne seraient donc <b>pas</b> de vrais lav chénittak laassè mais des interdits <b>autonomes</b>. De meme ici, 'chalea-h' meikara. La preuve ne tranche pas.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רָבִינָא לְרַב אָשֵׁי: תָּא שְׁמַע, ״לֹא תוֹתִירוּ מִמֶּנּוּ עַד בֹּקֶר וְגוֹ׳ בָּאֵשׁ תִּשְׂרֹפוּ״ – בָּא הַכָּתוּב לִיתֵּן עֲשֵׂה אַחַר לֹא תַעֲשֶׂה, לוֹמַר לָךְ שֶׁאֵין לוֹקִין עָלָיו, דִּבְרֵי רַבִּי יְהוּדָה.</div>
+            <div class="fr"><p>Ravina dit a Rav Achi : viens entendre — &#x27;vous n&#x27;en laisserez rien jusqu&#x27;au matin... [ce qui en reste] vous le brulerez au feu&#x27; (lo totirou mimenou... baech tisrofou) : le verset vient poser un commandement positif (assé) apres un [interdit] negatif (lo taassè), pour te dire qu&#x27;on n&#x27;est pas fouette a son sujet, [tels sont] les propos de Rabbi Yehouda.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא תוֹתִירוּ</b> וְאִם תּוֹתִירוּ בָּאֵשׁ תִּשְׂרֹופוּ הָא וַדַּאי נִיתַּק לַעֲשֵׂה:</div>
+          <div class="glose-fr">&#x27;Vous n&#x27;en laisserez rien&#x27; — et si vous en laissez, &#x27;vous le brulerez au feu&#x27; : c&#x27;est assurement un [interdit] repare par un assé.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Preuve decisive de <b>Ravina</b>, depuis le <b>korban pessah</b>. 'Vous n'en <b>laisserez</b> rien (lo totirou) jusqu'au matin ; ce qui en reste, vous le <b>brulerez</b> au feu' (Ex 12:10). Le verset pose un <b>assé</b> (bruler) <b>apres</b> un <b>lo taassè</b> (ne pas laisser) : c'est un lav chénittak laassè, et la Torah enseigne qu'on <b>n'est pas fouette</b> -- selon <b>Rabbi Yehouda</b> lui-meme.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">שְׁמַע מִינָּה: טַעְמָא דְּרַבִּי יְהוּדָה מִשּׁוּם דְּקָסָבַר ״שְׁלַח״ מֵעִיקָּרָא מַשְׁמַע, שְׁמַע מִינָּה.</div>
+            <div class="fr"><p>Conclus-en : la raison de Rabbi Yehouda [tient a ce] qu&#x27;il tient que &#x27;chalea-h&#x27; s&#x27;entend des le depart (meikara). Conclus-en.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Conclusion definitive. Puisque Rabbi Yehouda <b>n'est pas</b> fouette pour le lav chénittak laassè du pessah, c'est qu'<b>en general</b> il tient qu'un tel interdit <b>n'entraine pas</b> la flagellation. S'il fouette pour le nid, c'est donc <b>uniquement</b> parce que '<b>chalea-h</b>' s'entend <b>des le depart</b> (l'interdit 'ne prends pas' est autonome). La question de Rabbi Abba bar Memel est tranchee.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רַב אִידִי לְרַב אָשֵׁי: מַתְנִיתִין נָמֵי דַּיְקָא, דְּקָתָנֵי: הַנּוֹטֵל אֵם עַל הַבָּנִים – רַבִּי יְהוּדָה אוֹמֵר: לוֹקֶה וְאֵין מְשַׁלֵּחַ, וְאִי סָלְקָא דַּעְתָּךְ טַעְמָא דְּרַבִּי יְהוּדָה לָאו שֶׁנִּיתָּק לַעֲשֵׂה לוֹקִין עָלָיו, ״לוֹקֶה וּמְשַׁלֵּחַ״ מִבָּעֵי לֵיהּ!</div>
+            <div class="fr"><p>Rav Idi dit a Rav Achi : la Michna aussi est precise [en ce sens], car elle enseigne : &#x27;celui qui prend la mere sur les enfants — Rabbi Yehouda dit : [il est] fouette et ne renvoie pas&#x27;. Or si tu pensais que la raison de Rabbi Yehouda [tient a ce] qu&#x27;un interdit repare par un assé, on est fouette a son sujet, il aurait fallu [dire] &#x27;fouette et [il] renvoie&#x27; !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאִי ס&quot;ד</b> קָסָבַר ר&#x27; יְהוּדָה שַׁלַּח דִּקְרָא אַחַר לְקִיחָה מַשְׁמַע וְטַעֲמָא דְּלוֹקֶה מִשּׁוּם לָאו שֶׁנִּיתָּק לַעֲשֵׂה לוֹקִין עָלָיו אַמַּאי קָתָנֵי וְאֵין מְשַׁלֵּחַ הַכָּתוּב מְחַיְּיבוֹ אַף לְשַׁלְּחוֹ לְאַחַר לְקִיחָה וְהוּא פּוֹטְרוֹ:</div>
+          <div class="glose-fr">Or si tu pensais — [que] Rabbi Yehouda tient que &#x27;chalea-h&#x27; du verset s&#x27;entend apres la prise, et que la raison de la flagellation [tient a ce] qu&#x27;un lav chénittak laassè se fouette : pourquoi enseigner &#x27;et ne renvoie pas&#x27; ? Le verset l&#x27;oblige aussi a renvoyer apres la prise, et [Rabbi Yehouda] l&#x27;en dispenserait ?!</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Confirmation par <b>Rav Idi</b> depuis la formulation de la Michna : 'fouette <b>et ne renvoie pas</b>'. Si la raison etait qu'un lav chénittak laassè se fouette (premiere hypothese), l'interdit serait bien <b>repare par l'assé</b> de renvoyer -- donc il faudrait dire 'fouette <b>et il renvoie</b>'. Le fait que Rabbi Yehouda dise 'et <b>ne</b> renvoie pas' montre que, pour lui, l'interdit est <b>autonome</b> (chalea-h meikara) -- pas de renvoi reparateur.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְדִלְמָא הָכִי קָאָמַר בְּמַתְנִיתִין: אֵין נִפְטָר עַד דְּמַלְקִין לֵיהּ.</div>
+            <div class="fr"><p>Et peut-etre [que] voici ce qu&#x27;[elle] dit dans la Michna : il n&#x27;est pas quitte [par le seul renvoi] tant qu&#x27;on ne l&#x27;a pas fouette.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דִּילְמָא</b> אֵינוֹ מְשַׁלֵּחַ דְּקָאָמַר אֵינוֹ נִפְטָר בְּשִׁלּוּחַ אֶלָּא אַף לוֹקֶה:</div>
+          <div class="glose-fr">Peut-etre — &#x27;ne renvoie pas&#x27; veut dire : il n&#x27;est pas quitte par le renvoi, mais [il est] aussi fouette.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Refutation de la deduction de Rav Idi. 'Et ne renvoie pas' pourrait signifier autre chose : il <b>n'est pas quitte</b> de sa faute par le seul renvoi -- on doit <b>aussi</b> le fouetter. La Michna ne tranche donc pas formellement, mais la conclusion (chalea-h meikara) reste acquise par la preuve de Ravina.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">עַד כַּמָּה מְשַׁלְּחָהּ? אָמַר רַב יְהוּדָה: כְּדֵי שֶׁתֵּצֵא מִתַּחַת יָדוֹ. בַּמֶּה מְשַׁלְּחָהּ? רַב הוּנָא אָמַר: בְּרַגְלֶיהָ, רַב יְהוּדָה אָמַר: בַּאֲגַפֶּיהָ. רַב הוּנָא אָמַר בְּרַגְלֶיהָ, דִּכְתִיב: ״מְשַׁלְּחֵי רֶגֶל הַשּׁוֹר וְהַחֲמוֹר״. רַב יְהוּדָה אָמַר בַּאֲגַפֶּיהָ, דְּהָא כְּנָפֶיהָ נִינְהוּ.</div>
+            <div class="fr"><p>Jusqu&#x27;ou la renvoie-t-on ? Rav Yehouda a dit : assez pour qu&#x27;elle sorte de sa main [hors de portee immediate].</p><p>Par quoi la renvoie-t-on ? Rav Houna dit : par ses pattes (beraglèha) ; Rav Yehouda dit : par ses ailes (beagapèha).</p><p>Rav Houna dit &#x27;par ses pattes&#x27;, car il est ecrit &#x27;qui lachent librement le pied du boeuf et de l&#x27;ane&#x27; (mechalehei regel hachor vehahamor). Rav Yehouda dit &#x27;par ses ailes&#x27;, car ce sont la ses &#x27;pieds&#x27; [son moyen de locomotion].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(5)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>עַד כַּמָּה מְשַׁלְּחָהּ</b> אִם נְטָלָהּ:</div>
+          <div class="glose-fr">Jusqu&#x27;ou la renvoie-t-on — s&#x27;il l&#x27;a prise.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁתֵּצֵא מִתַּחַת יָדוֹ</b> וְאִם יָכוֹל לַחֲזֹור וּלְתָופְשָׂהּ מֻותָּר:</div>
+          <div class="glose-fr">Assez pour qu&#x27;elle sorte de sa main — et s&#x27;il peut revenir la saisir, [c&#x27;est] permis.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בַּמֶּה מְשַׁלְּחָהּ בָּרֶגֶל</b> יֹאחֲזֶנָּה בְּרַגְלָהּ וִישַׁלְּחֶנָּה:</div>
+          <div class="glose-fr">Par quoi la renvoie-t-on : par le pied — il la saisit par la patte et la lache.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בַּגַּפָּה</b> אוֹחֲזָהּ בְּכַנָּפָה וּמְשַׁלְּחָהּ:</div>
+          <div class="glose-fr">Par l&#x27;aile — il la tient par l&#x27;aile et la lache.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מְשַׁלְּחֵי רֶגֶל</b> אַלְמָא שִׁילּוּחַ בָּרֶגֶל הוּא כָּךְ שָׁמַעְתִּי. וְנִרְאֶה בְּעֵינַי שֶׁאֵין שִׁילּוּחַ זֶה דּוֹמֶה לְשִׁילּוּחַ רֶגֶל הַשּׁוֹר שֶׁהוּא הוֹלֵךְ בָּרְגָלִים וְהָכָא אֲחִיזָה בָּרְגָלִים וְכִמְדֻומֶּה לִי דְּהָכִי קָאָמַר רַב הוּנָא אָמַר בָּרֶגֶל שֶׁאִם תָּלַשׁ גַּפָּהּ וְשִׁלְּחָהּ נִפְטַר מִמִּצְוַת שִׁילּוּחַ כֵּיוָן שֶׁהָלְכָה ב&#x27; פְּסִיעוֹת אוֹ ג&#x27; וּמֻותָּר לַחֲזֹור לְתוֹפְשָׂהּ וְרַב יְהוּדָה אָמַר בְּגַפָּה שֶׁתּוּכַל לָעוּף כְּדַרְכָּהּ וּרְאָיָיה לִדְבָרַי מִדְּמַיְיתֵי עֻובְדָּא דְּהַהוּא דְּתַלְשִׁינְהוּ לַגַּפָּה וְשִׁלְּחָהּ דְּחַיְּיבֵיהּ רַב יְהוּדָה לִמְשַׁלְּחֶיהָ דְּרַב יְהוּדָה לְטַעְמֵיהּ דְּאָמַר אֵין שִׁילּוּחַ עוֹף בָּרֶגֶל:</div>
+          <div class="glose-fr">&#x27;Qui lachent le pied&#x27; — on voit donc que le renvoi [se fait] par le pied ; ainsi l&#x27;ai-je entendu. Mais il me semble que ce renvoi ne ressemble pas au &#x27;renvoi du pied du boeuf&#x27;, qui marche avec ses pieds, [alors qu&#x27;]ici [il s&#x27;agit] de saisir par les pieds ; et il me semble que Rav Houna dit &#x27;par le pied&#x27; [au sens ou], s&#x27;il a arrache son aile et l&#x27;a renvoyee, il est quitte de la mitsva du renvoi des lors qu&#x27;elle a fait deux ou trois pas, et il est permis de revenir la saisir ; tandis que Rav Yehouda dit &#x27;par l&#x27;aile&#x27;, [au sens ou il faut] qu&#x27;elle puisse voler a sa maniere. Et preuve a mes dires : on rapporte le cas de celui qui lui arracha l&#x27;aile et la renvoya, et que Rav Yehouda obligea a [la] renvoyer [a nouveau], Rav Yehouda etant fidele a son principe [selon lequel] le renvoi de l&#x27;oiseau ne [se fait] pas par le pied.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Modalites du renvoi. <b>Jusqu'ou</b> ? <b>Rav Yehouda</b> : assez loin pour qu'elle <b>echappe a sa main</b> (ne puisse etre reprise aussitot). <b>Par quoi</b> la saisit-on pour la lacher ? <b>Rav Houna</b> : par les <b>pattes</b> (raglim), d'apres 'qui lachent (mechalehei) le <b>pied</b> du boeuf et de l'ane' (Isaie 32:20). <b>Rav Yehouda</b> : par les <b>ailes</b> (agapayim), car c'est par elles que l'oiseau se meut -- ses ailes sont ses 'pieds'.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הַהוּא דְּגַזִּינְהוּ לַגַּפָּה, וְשִׁלְּחָהּ, וְאַחַר כָּךְ תִּפְשֶׂה. נַגְּדֵיהּ רַב יְהוּדָה. אֲמַר לֵיהּ: זִיל רַבִּי לַהּ גַּדְפַיהּ, וְשִׁלְּחָהּ!</div>
+            <div class="fr"><p>Un certain [homme] coupa ses ailes (gazinhou legapèha), la renvoya, puis la captura. Rav Yehouda le fit fouetter (nagdei) et lui dit : va, fais-lui repousser ses ailes (rabi la gadfeha) et renvoie-la !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רַבִּי לָהּ גִּדְפָּהּ</b> הִשְׁהָה אוֹתָהּ עַד שֶׁיִּגְדְּלוּ לָהּ כְּנָפֶיהָ וּתְשַׁלַּחְנָה:</div>
+          <div class="glose-fr">Fais-lui repousser ses ailes — garde-la jusqu&#x27;a ce que ses ailes repoussent, puis renvoie-la.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Episode. Un homme <b>coupa les ailes</b> de la mere, la 'renvoya' (incapable de voler) puis la <b>reprit</b>. <b>Rav Yehouda le fit fouetter</b> (ce n'etait pas un vrai renvoi, puisqu'elle ne pouvait s'envoler -- conformement a son avis 'par les ailes') et lui ordonna : <b>laisse repousser ses ailes</b> puis renvoie-la pour de bon.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כְּמַאן? אִי כְּרַבִּי יְהוּדָה – לוֹקֶה וְאֵין מְשַׁלֵּחַ, אִי כְּרַבָּנָן – מְשַׁלֵּחַ וְאֵין לוֹקֶה! לְעוֹלָם כְּרַבָּנָן, וּמַכַּת מַרְדּוּת מִדְּרַבָּנָן.</div>
+            <div class="fr"><p>Selon qui [Rav Yehouda a-t-il agi] ? Si [c&#x27;est] selon Rabbi Yehouda — [celui-ci dit] &#x27;fouette et ne renvoie pas&#x27; ; si [c&#x27;est] selon les Sages — [ceux-ci disent] &#x27;renvoie et n&#x27;est pas fouette&#x27; !</p><p>[Reponse :] en realite, selon les Sages, et [c&#x27;est] une flagellation de rebellion (makat mardout), de [decret] rabbinique.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַכַּת מַרְדּוּת</b> רִידּוּי בַּתּוֹכֵחָה שֶׁלֹּא יַרְגִּיל בָּזֶה וְאֵין לָהּ קִצְבָּה אֶלָּא עַד שֶׁיְּקַבֵּל עָלָיו:</div>
+          <div class="glose-fr">Makat mardout — un chatiment par reprimande, pour qu&#x27;il ne recidive pas ; elle n&#x27;a pas de mesure fixe, [mais dure] jusqu&#x27;a ce qu&#x27;il accepte [de se corriger].</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִי כְּרַבָּנָן מְשַׁלֵּחַ וְאֵינוֹ לוֹקֶה</b> הֲוָה מָצֵי לְמֵימַר דְּסָבַר קִיְּימוֹ וְלֹא קִיְּימוֹ הִילְכָּךְ לוֹקֶה וּמְשַׁלֵּחַ אַלִּיבָּא דְּרַבָּנָן:</div>
+          <div class="glose-fr">Si [c&#x27;est] selon les Sages, &#x27;renvoie et n&#x27;est pas fouette&#x27; — on aurait pu dire [aussi] qu&#x27;il tient &#x27;l&#x27;a-t-il accompli ou non&#x27;, et que des lors [on est] &#x27;fouette et [on] renvoie&#x27; selon les Sages [s&#x27;il n&#x27;a pas renvoye dans le delai voulu].</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Difficulte : selon qui Rav Yehouda a-t-il a la fois <b>fouette</b> et exige le <b>renvoi</b> ? Pas selon Rabbi Yehouda (qui dit 'fouette et <b>ne</b> renvoie pas'), ni selon les Sages (qui disent 'renvoie et <b>n'est pas</b> fouette'). <b>Reponse</b> : selon les <b>Sages</b> -- la flagellation n'etait pas la peine biblique, mais une <b>makat mardout</b> (flagellation de rebellion, decret rabbinique) pour conduite repréhensible.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָהוּא דַּאֲתָא לְקַמֵּיהּ דְּרָבָא, אֲמַר לֵיהּ: תֵּימַהּ מַהוּ? אָמַר: לָא יָדַע הַאי גַּבְרָא דְּעוֹף טָהוֹר חַייָּב לְשַׁלּוֹחֵי? אֲמַר לֵיהּ: דִּילְמָא חֲדָא בֵּיעֲתָא הוּא דְּרַמְיָא? אֲמַר לֵיהּ: (הַאי יָדְעִי) [אִין. אֲמַר לֵיהּ: מַאי תִּיבְּעֵי] לָךְ? מַתְנִיתִין הִיא: אֵין שָׁם אֶלָּא אֶפְרוֹחַ אֶחָד אוֹ בֵיצָה אַחַת – חַיָּיב לְשַׁלֵּחַ.</div>
+            <div class="fr"><p>Un certain [homme] vint devant Rava [et] lui dit : le teima, qu&#x27;en est-il [pour le renvoi] ? [Rava] dit : cet homme ne sait-il pas qu&#x27;un oiseau pur est oblige du renvoi ?</p><p>Il lui dit : peut-etre [s&#x27;agit-il d&#x27;un cas] ou elle ne pond qu&#x27;un seul oeuf ? Il lui dit : oui [c&#x27;est cela].</p><p>Il lui dit : qu&#x27;as-tu a demander ? C&#x27;est une Michna [explicite] : &#x27;[s&#x27;il] n&#x27;y a la qu&#x27;un seul poussin ou un seul oeuf — [on est] oblige du renvoi&#x27; !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תֵּימַהּ</b> עוֹף טָהוֹר הוּא:</div>
+          <div class="glose-fr">Le teima — c&#x27;est un oiseau pur.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲמַר לֵיהּ</b> רָבָא:</div>
+          <div class="glose-fr">[Rava] lui dit.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דִּלְמָא חֲדָא בֵּיעֲתָא הוּא דְּרַמְיָא</b> לְכָךְ הֻוצְרַכְתָּ לִשְׁאוֹל שֶׁלֹּא הֵטִילָה אֶלָּא בֵּיצָה אַחַת וּקְרָא אֶפְרוֹחִים אוֹ בֵּיצִים כְּתִיב:</div>
+          <div class="glose-fr">Peut-etre ne pond-elle qu&#x27;un seul oeuf — c&#x27;est pour cela que tu as eu besoin de demander, [le cas] ou elle n&#x27;a pondu qu&#x27;un oeuf, le verset disant &#x27;poussins ou oeufs&#x27;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Episode. Un homme demande a <b>Rava</b> le statut du <b>teima</b> (un oiseau pur). Rava s'etonne : tout oiseau pur oblige au renvoi ! L'homme precise son doute : un cas ou l'oiseau ne pond qu'un <b>seul oeuf</b> (le verset disant 'poussins ou oeufs' au pluriel). Rava : c'est deja tranche par une Michna explicite (140b) -- <b>un seul</b> poussin ou oeuf oblige.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">שִׁלְּחָהּ, וְאַהְדַּר לַהּ רָבָא פְּרִסְתָּקֵי וְתַפְסַהּ. וּלְיָחוּשׁ לַחֲשָׁדָא? כִּלְאַחַר יָד.</div>
+            <div class="fr"><p>[L&#x27;homme] la renvoya, et Rava disposa autour [du nid] des filets (perastekei) et la captura. Mais ne faut-il pas craindre le soupcon (hachada) [qu&#x27;il n&#x27;ait impose le renvoi que pour la capturer lui-meme] ?</p><p>[Reponse :] [il l&#x27;a fait] de maniere inhabituelle (kelahar yad).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>פְּרִסְתָּקֵי</b> מְצוּדוֹת:</div>
+          <div class="glose-fr">Filets (perastekei) — des pieges.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּלְיָחוּשׁ לַחֲשָׁדָא</b> שֶׁעַל הֲנָאַת עַצְמוֹ חִייְּבוּ לְשַׁלְּחָהּ דְּצָרִיךְ לְהִתְרַחֵק מִן הַכִּיעוּר כִּדְאָמַר בְּאֵלּוּ טְרֵפוֹת (לְעֵיל חֻולִּין דַּף מד:) דְּרַב חִסְדָּא שָׁרֵי בֻּוכְרָא וְלָא זָבֵין מִינֵּיהּ:</div>
+          <div class="glose-fr">Mais ne faut-il pas craindre le soupcon — qu&#x27;on l&#x27;ait oblige a la renvoyer pour son propre profit ; car il faut s&#x27;eloigner de toute [apparence de] laideur, comme on dit a &#x27;Elou trefot&#x27; (Houlin 44b) que Rav Hisda permettait un premier-ne mais ne l&#x27;achetait pas [du proprietaire].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמְשַׁנֵּי כִּלְאַחַר יָד</b> מֵרָחוֹק פֵּירֵשׁ הַמְּצוּדָה שֶׁלֹּא הֵבִין הַמְשַׁלֵּחַ:</div>
+          <div class="glose-fr">[La Guemara] repond : de maniere inhabituelle — il a tendu le piege de loin, de sorte que celui qui renvoyait n&#x27;a pas compris.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Suite. L'homme renvoya l'oiseau, et <b>Rava</b> tendit des <b>filets</b> (perastekei) pour le capturer. Difficulte : ne risque-t-on pas le <b>soupcon</b> (hachada) que Rava ait exige le renvoi dans son propre interet ? <b>Reponse</b> : il a dispose les filets <b>de maniere inhabituelle</b> (kelahar yad), a distance, sans que celui qui renvoyait s'en apercoive -- pas de soupcon.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּנוּ רַבָּנַן: יוֹנֵי שׁוֹבָךְ וְיוֹנֵי עֲלִיָּיה – חַייָּבוֹת בְּשִׁלּוּחַ, וַאֲסוּרוֹת מִשּׁוּם גָּזֵל מִפְּנֵי דַּרְכֵי שָׁלוֹם.</div>
+            <div class="fr"><p>Nos maitres ont enseigne : les pigeons de colombier et les pigeons de grenier (yonei chovakh veyonei aliya) sont obliges du renvoi, mais [il est] interdit [a autrui de les prendre] pour [cause de] vol (gazel), en raison des voies de paix (mipnei darkei chalom).</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Braita. Les <b>pigeons de colombier</b> et <b>de grenier</b> (sauvages, non disponibles) sont <b>obliges du renvoi</b> de la mere. Mais leurs oeufs/petits sont <b>interdits a autrui</b> sous l'angle du <b>vol</b> (gazel), non par stricte propriete mais par decret des <b>voies de paix</b> (darkei chalom) : on ne prend pas ce qu'un autre s'apprete a recolter.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאִי אִיתָא לְהָא דְּאָמַר רַבִּי יוֹסֵי בַּר רַבִּי חֲנִינָא, חֲצֵרוֹ שֶׁל אָדָם קוֹנָה לוֹ שֶׁלֹּא מִדַּעְתּוֹ, קָרֵי כָּאן ״כִּי יִקְרָא״ – פְּרָט לִמְזֻומָּן!</div>
+            <div class="fr"><p>Or s&#x27;il en est ainsi de ce qu&#x27;a dit Rabbi Yossi fils de Rabbi Hanina — &#x27;la cour de l&#x27;homme acquiert pour lui [meme] a son insu&#x27; — on lirait ici &#x27;si tu rencontres&#x27; (ki yikare), qui exclut le disponible [donc exempt] !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאִם אִיתָא לְדָר&#x27; יוֹסֵי וְכוּ&#x27;</b> הַשַּׁ&quot;ס פָּרֵיךְ לָהּ:</div>
+          <div class="glose-fr">Or s&#x27;il en est ainsi de [l&#x27;avis de] Rabbi Yossi, etc. — [c&#x27;est] la Guemara [qui] objecte.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Difficulte. Si l'on tient le principe de <b>Rabbi Yossi fils de Rabbi Hanina</b> -- 'la <b>cour</b> de l'homme acquiert pour lui, meme a son insu' -- alors le colombier <b>acquiert les oeufs</b> pour son proprietaire : ils sont <b>disponibles</b> (mezouman), et 'si tu <b>rencontres</b>' (ki yikare) <b>exclut</b> le disponible -- on devrait etre <b>exempt</b>. Or la braita oblige au renvoi. Contradiction.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר (רַב) [רַבָּה]: בֵּיצָה – עִם יְצִיאַת רֻובָּהּ הוּא דְּאִחַייַּב בְּשִׁלּוּחַ, מִקְנָא לָא קָנֵי עַד דְּתִפּוֹל לַחֲצֵרוֹ, וְכִי קָתָנֵי חַיָּיבוֹת בְּשִׁלּוּחַ – מִקַּמֵּי דְּתִפּוֹל לַחֲצֵרוֹ.</div>
+            <div class="fr"><p>Rabba a dit : un oeuf, [c&#x27;est] avec la sortie de sa majeure partie (yetsiat roubo) qu&#x27;on s&#x27;oblige au renvoi ; [mais] la cour ne [l&#x27;]acquiert pas tant qu&#x27;il n&#x27;est pas tombe en elle. Et ce qu&#x27;[elle] enseigne &#x27;obliges du renvoi&#x27; — [c&#x27;est] avant qu&#x27;il ne tombe dans la cour [du proprietaire].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>יְצִיאַת רֻובָּהּ</b> דְּאִם בָּא אָדָם וּמָצָא אֶת הָאֵם כְּשֶׁהִיא מְטִילָה בֵּיצָתָהּ וּכְבָר יָצָא רֻובָּהּ חַייָּב לְשַׁלֵּחַ מִקַּמֵּי דְּתִפּוֹל לַחֲצֵרוֹ דְּאַכַּתִּי לָאו מְזֻומָּן הוּא:</div>
+          <div class="glose-fr">Sortie de sa majeure partie — si quelqu&#x27;un survient et trouve la mere en train de pondre, sa majeure partie deja sortie, [il est] oblige du renvoi avant que [l&#x27;oeuf] ne tombe dans la cour, car il n&#x27;est pas encore disponible.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse de <b>Rabba</b>. L'obligation de renvoyer nait des que la <b>majeure partie de l'oeuf est sortie</b> (yetsiat roubo) du corps de la mere ; mais la <b>cour n'acquiert</b> l'oeuf qu'une fois <b>tombe</b> en elle (entierement sorti). Il y a donc un <b>intervalle</b> ou l'oeuf, a demi sorti, oblige deja au renvoi sans etre encore acquis (donc non disponible). La braita parle de ce moment-la.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg16">
+          <div class="seg-num">17</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִי הָכִי, אַמַּאי אֲסוּרוֹת מִשּׁוּם גָּזֵל? אַאִמָּם. וְאִיבָּעֵית אֵימָא: לְעוֹלָם אַבֵּיצָה, וּבֵיצָה כֵּיוָן דִּנְפַק לֵיהּ רֻובָּא – דַּעְתֵּיהּ עֲלֵיהּ.</div>
+            <div class="fr"><p>Si [c&#x27;est] ainsi, pourquoi [les oeufs] sont-ils interdits pour [cause de] vol [s&#x27;ils ne sont pas encore acquis] ? [Reponse :] [cela vise] leur mere.</p><p>Et si tu veux, dis : en realite [cela vise] l&#x27;oeuf ; et l&#x27;oeuf, des lors que sa majeure partie est sortie, [le proprietaire] a [deja] son esprit dessus [pour l&#x27;acquerir].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִי הָכִי</b> דְּלָא קָנְתָה חֲצֵרוֹ:</div>
+          <div class="glose-fr">Si [c&#x27;est] ainsi — que sa cour n&#x27;a pas [encore] acquis.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַמַּאי אֲסוּרוֹת מִשּׁוּם גָּזֵל</b> וַאֲפִילּוּ מִפְּנֵי דַּרְכֵי שָׁלוֹם וַהֲלֹא עֲדַיִין מִגּוּף הָאֵם הוּא:</div>
+          <div class="glose-fr">Pourquoi sont-ils interdits pour vol — meme au titre des voies de paix, puisqu&#x27;il [l&#x27;oeuf] est encore [issu] du corps de la mere ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמְשַׁנֵּי אַאִמָּן</b> דַּרְכֵי שָׁלוֹם דְּקָאָמַר אֲפִילּוּ עַל הָאֵם עַצְמָהּ יֵשׁ מִשּׁוּם דַּרְכֵי שָׁלוֹם:</div>
+          <div class="glose-fr">[La Guemara] repond : leur mere — les &#x27;voies de paix&#x27; dont il parle valent meme pour la mere elle-meme.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאִיבָּעֵית אֵימָא לְעוֹלָם אַבֵּיצִים</b> דְּאִילּוּ עַל אָמֵן אֲפִילּוּ מִשּׁוּם דַּרְכֵי שָׁלוֹם אֵין כָּאן הוֹאִיל וְאֵינָהּ נוֹחָה לְתוֹפְשָׂהּ לֹא סָמְכָה דַּעַת בַּעַל הַשּׁוֹבָךְ עֲלָהּ וְאֵינוֹ מִתְקוֹטֵט עִם הַלּוֹקֵחַ אֲבָל מֵהַבֵּיצִים הוּא מִתְקוֹטֵט דְּדַעְתֵּיהּ עֲלֵיהֶן וּנְהִי נָמֵי דְּלָא קָנָה לוֹ חֲצֵרוֹ מִשּׁוּם דַּרְכֵי שָׁלוֹם מִיהָא אִיכָּא:</div>
+          <div class="glose-fr">Et si tu veux, dis : en realite [cela vise] les oeufs — car pour la mere, meme au titre des voies de paix il n&#x27;y a rien, n&#x27;etant pas aisee a saisir ; le proprietaire du colombier ne compte pas dessus et ne se querelle pas avec celui qui [la] prend ; mais pour les oeufs il se querelle, ayant son esprit dessus ; et bien que sa cour ne les ait pas acquis, il y a du moins [matiere a] voies de paix.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִי הָכִי אַמַּאי אֲסוּרוֹת מִשּׁוּם גָּזֵל</b> מְפֹורָשׁ בְּסוֹף הַשּׁוֹאֵל (בּ&quot;מ דַּף קב.):</div>
+          <div class="glose-fr">Si [c&#x27;est] ainsi, pourquoi interdits pour vol — explique a la fin de &#x27;Hachoel&#x27; (Bava Metsia 102a).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Difficulte : si l'oeuf <b>n'est pas encore acquis</b> (avant la chute), pourquoi la braita le declare-t-elle <b>interdit pour vol</b> (darkei chalom) ? <b>Reponse 1</b> : l'interdit vise la <b>mere</b> elle-meme. <b>Reponse 2</b> : il vise bien l'<b>oeuf</b> -- car, des la sortie de sa majeure partie, le proprietaire a deja <b>l'intention</b> de l'acquerir ; meme si la cour ne l'acquiert pas encore juridiquement, la prendre froisse les voies de paix.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg17">
+          <div class="seg-num">18</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְהַשְׁתָּא דְּאָמַר רַב יְהוּדָה אָמַר רַב: אָסוּר לִזְכּוֹת בְּבֵיצִים שֶׁהָאֵם רֹובֶצֶת עֲלֵיהֶן, שֶׁנֶּאֱמַר: ״שְׁלַח אֶת הָאֵם״ וַהֲדַר ״הַבָּנִים תִּקַּח לָךְ״. אֲפִילּוּ תֵּימָא אַף עַל גַּב דִּנְפַל לַחֲצֵרוֹ, כֹּל הֵיכָא דְּאִיהוּ מָצֵי זָכֵי – חֲצֵרוֹ נָמֵי זָכְיָא, וְכֹל הֵיכָא דְּאִיהוּ לָא מָצֵי זָכֵי – חֲצֵרוֹ נָמֵי לָא זָכְיָא לֵיהּ.</div>
+            <div class="fr"><p>Et maintenant que Rav Yehouda a dit au nom de Rav : il est interdit d&#x27;acquerir des oeufs sur lesquels la mere couve, car il est dit &#x27;renvoie la mere&#x27; puis &#x27;les enfants tu prendras pour toi&#x27; — meme tu peux dire : bien qu&#x27;[il] soit tombe dans sa cour [le renvoi reste obligatoire]. Car partout ou lui-meme peut acquerir, sa cour aussi acquiert ; et partout ou lui-meme ne peut acquerir, sa cour non plus n&#x27;acquiert pas pour lui.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהַשְׁתָּא דְּאָמַר רַב יְהוּדָה כו&#x27;</b> מֵהַשְׁתָּא מָצֵית לְאוֹקוּמָא מַתְנִיתִין אֲפִילּוּ יָצָאת כֻּולָּהּ וְלֹא תִּקְשֶׁה לְרַבִּי יוֹסֵי בְּרַבִּי חֲנִינָא דְּלָא מְזֻומָּן הוּא וְחַיֶּיבֶת בְּשִׁילּוּחַ מִשּׁוּם בֵּיצָה אַחֲרוֹנָה זֹאת שֶׁלֹּא עָמְדָה הָאֵם עָלֶיהָ מִשֶּׁהִטִּילַתָּה וְאַף עַל פִּי שֶׁנָּפְלָה לֶחָצֵר לֹא קָנְתָה חֲצֵרוֹ דְּכֵיוָן דְּהוּא עַצְמוֹ אִם הָיָה כָּאן לֹא הָיָה יָכוֹל לְהַחְזִיק כָּל חֲצֵרוֹ נָמֵי לָא מָצֵי זָכֵי לֵיהּ וְאֵין זֶה מְזֻומָּן:</div>
+          <div class="glose-fr">Et maintenant que Rav Yehouda a dit, etc. — des lors tu peux etablir la Michna meme [dans le cas ou l&#x27;oeuf] est sorti entierement, sans difficulte contre Rabbi Yossi fils de Rabbi Hanina ; car il n&#x27;est pas disponible, et [on est] oblige du renvoi a cause de ce dernier oeuf sur lequel la mere s&#x27;est tenue depuis qu&#x27;elle l&#x27;a pondu, et bien qu&#x27;il soit tombe dans la cour, sa cour ne l&#x27;a pas acquis : puisque lui-meme, fut-il present, ne pourrait s&#x27;en saisir, sa cour non plus ne peut l&#x27;acquerir pour lui, et ce n&#x27;est pas disponible.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לִזְכּוֹת</b> לִפְשֹׁוט יָדוֹ תַּחַת הָאֵם וּלְהַחֲזִיק בָּהֶם. כָּל קְנִיָּיה דְּהֶפְקֵר זְכִיָּיה קָרֵי לֵיהּ:</div>
+          <div class="glose-fr">Acquerir — tendre la main sous la mere et s&#x27;en saisir ; toute prise d&#x27;un [bien] sans maitre (hefker) est appelee &#x27;acquisition&#x27; (zekhiya).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rav Yehouda au nom de Rav</b> : il est <b>interdit d'acquerir</b> des oeufs que la mere <b>couve</b>, car 'renvoie la mere' precede 'les enfants tu prendras' (Deut 22:7). Cela offre une autre solution : meme si l'oeuf est deja <b>tombe dans la cour</b>, le renvoi reste du. Principe : la <b>cour n'acquiert</b> pour son maitre que ce que <b>lui-meme</b> pourrait acquerir de sa main. Or tant que la mere couve, il ne <b>peut</b> pas prendre les oeufs (interdit avant renvoi) -- donc sa cour ne les acquiert pas, et ils ne sont pas disponibles.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg18">
+          <div class="seg-num">19</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִי הָכִי, אַמַּאי אֲסוּרוֹת מִפְּנֵי דַּרְכֵי שָׁלוֹם? אִי דְּשִׁלְּחָהּ – גֶּזֶל מְעַלְּיָא הוּא, אִי דְּלָא שִׁלְּחָהּ – שְׁלוּחֵי בָּעֵי!</div>
+            <div class="fr"><p>Si [c&#x27;est] ainsi, pourquoi [les oeufs] sont-ils interdits en raison des voies de paix [seulement] ? Si [c&#x27;est apres qu&#x27;]il a renvoye [la mere] — [c&#x27;est] un vol caracterise (gazel maalia) !</p><p>Si [c&#x27;est] qu&#x27;il n&#x27;a pas renvoye — [l&#x27;autre] doit [d&#x27;abord la] renvoyer !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִי הָכִי אַמַּאי אֲסוּרוֹת</b> מִשּׁוּם גָּזֵל. מִשּׁוּם דַּרְכֵי שָׁלוֹם וְתוּ לָא:</div>
+          <div class="glose-fr">Si [c&#x27;est] ainsi, pourquoi interdits — pour vol [seulement] au titre des voies de paix, et rien de plus ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִי דְּשַׁלְּחָהּ</b> קֹודֶם דְּהֶחֱזִיק בָּהּ הֲרֵי קָנְתָה חֲצֵרוֹ לְבַעַל הַבַּיִת וְגֶזֶל מְעַלְּיָא הוּא וְאִי דְּלָא שִׁלְּחָהּ הֵיאַךְ הוּא יָכוֹל לְיִטְּלֵם לְבֵיצִים הָא בָּעֵי שִׁלּוּחַ קֹודֶם לְקִיחַת הַבֵּיצִים כְּרַב יְהוּדָה:</div>
+          <div class="glose-fr">Si [c&#x27;est apres qu&#x27;]il a renvoye — avant qu&#x27;il ne s&#x27;en soit saisi, voici que sa cour les a acquis pour le proprietaire, et [c&#x27;est] un vol caracterise ; et s&#x27;il n&#x27;a pas renvoye, comment peut-il prendre les oeufs ? Il faut [d&#x27;abord] renvoyer avant de prendre les oeufs, selon Rav Yehouda.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Difficulte contre cette derniere solution. Si la cour acquiert (apres renvoi), pourquoi parler seulement de <b>voies de paix</b> ? Si l'on a <b>renvoye</b> la mere, la cour a <b>acquis</b> les oeufs -- les prendre est un <b>vol caracterise</b> (gazel maalia, interdit biblique). Si l'on n'a <b>pas renvoye</b>, on ne peut de toute facon pas les prendre (il faut d'abord renvoyer). Dans les deux cas, ce n'est pas une simple affaire de darkei chalom.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg19">
+          <div class="seg-num">20</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בְּקָטָן. קָטָן בַּר דַּרְכֵי שָׁלוֹם הוּא? הָכִי קָאָמַר: אָבִיו שֶׁל קָטָן חַיָּיב לְהַחְזִיר לוֹ, מִפְּנֵי דַּרְכֵי שָׁלוֹם.</div>
+            <div class="fr"><p>[Reponse :] [il s&#x27;agit] d&#x27;un mineur (katan). Un mineur est-il sujet aux voies de paix ?</p><p>Voici ce qu&#x27;[elle] dit : le pere du mineur est tenu de [les] lui restituer [au proprietaire], en raison des voies de paix.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמְשַׁנֵּי בְּקָטָן</b> דְּלָאו בַּר שִׁלּוּחַ הוּא. וְהוּא הַדִּין דַּהֲוָה מָצֵי לְשַׁנּוּיֵי כְּגוֹן דְּעָבַר וּנְטָלָן תַּחַת הָאֵם דִּגְזַל מְעַלְּיָא לֵיכָּא אֶלָּא נִיחָא לֵיהּ לְשַׁנּוֹיֵי בְּדֶרֶךְ הֶיתֵּר וְלֹא בְּדֶרֶךְ אִיסּוּר:</div>
+          <div class="glose-fr">[La Guemara] repond : un mineur — qui n&#x27;est pas sujet au renvoi. Et de meme on aurait pu repondre [le cas] ou [quelqu&#x27;un] a transgresse et les a pris sous la mere, [auquel cas il n&#x27;y a] pas de vol caracterise ; mais [la Guemara] prefere repondre par une voie permise plutot que par une voie d&#x27;interdit.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">וַהֲדַר מֻתְמָהּ וְאָמַר קָטָן בַּר דַּרְכֵי שָׁלוֹם הוּא :</div>
+          <div class="glose-fr">Puis [la Guemara] s&#x27;etonne et dit : un mineur est-il sujet aux voies de paix ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">ה&quot;ג אָבִיו שֶׁל קָטָן חַייָּב לְהַחְזִיר מִפְּנֵי דַּרְכֵי שָׁלוֹם:</div>
+          <div class="glose-fr">On lit : le pere du mineur est tenu de restituer, en raison des voies de paix.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse : la braita vise un <b>mineur</b> (katan), non tenu de la mitsva du renvoi (qui a donc pris les oeufs sans renvoyer). Difficulte : un mineur est-il assujetti aux 'voies de paix' ? Reponse : la braita veut dire que le <b>pere</b> du mineur est tenu de <b>restituer</b> les oeufs au proprietaire du colombier, au titre des <b>darkei chalom</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg20">
+          <div class="seg-num">21</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לֵוִי בַּר סִימוֹן אַקְנִי פֵּירוֹת שׁוֹבָכוֹ לְרַב יְהוּדָה. אֲתָא לְקַמֵּיהּ דִּשְׁמוּאֵל, אֲמַר לֵיהּ: זִיל טָרוּף אַקֵּן, דְּלִיתַגְּבְהוּ וְקָנִינְהוּ.</div>
+            <div class="fr"><p>Levi bar Simon transfera (akni) les rejetons (perot) de son colombier a Rav Yehouda. [Celui-ci] vint devant Chmouel ; [Chmouel] lui dit : va, frappe sur le nid (terof aken) pour qu&#x27;ils s&#x27;envolent et que tu les acquieres.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>פֵּירוֹת שׁוֹבָכוֹ</b> אֶפְרוֹחִים וּבֵיצִים:</div>
+          <div class="glose-fr">Les rejetons de son colombier — pigeonneaux et oeufs.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲתָא לְקַמֵּיהּ דִּשְׁמוּאֵל</b> לְקַמָּן מְפָרֵשׁ מַאי אִיצְטְרִיךְ לֵיהּ לְמִבְעֵי:</div>
+          <div class="glose-fr">Vint devant Chmouel — plus loin [la Guemara] explique de quoi il avait besoin de s&#x27;enquerir.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>טָרוּף אַקֵּן</b> הַקַּשׁ בְּיָדְךָ עַל הַקֵּן:</div>
+          <div class="glose-fr">Frappe sur le nid — frappe de ta main sur le nid.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּלִיתַגְּבֵהוּ</b> מִיִּרְאָתֶךָ. וְהַשְׁתָּא מְפָרֵשׁ וְאָזֵיל מַאי בְּעָא מִינֵּיהּ וּמַאי מַהְדַּר לֵיהּ:</div>
+          <div class="glose-fr">Pour qu&#x27;ils s&#x27;envolent — par crainte de toi. Et maintenant [la Guemara] explique ce qu&#x27;il lui demandait et ce que [Chmouel] lui repondit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Episode. <b>Levi bar Simon</b> <b>cede</b> (akni) a <b>Rav Yehouda</b> les <b>perot</b> (pigeonneaux et oeufs) de son colombier. Rav Yehouda vient demander a <b>Chmouel</b> comment parachever l'acquisition. Chmouel : '<b>frappe sur le nid</b> (terof aken)' pour faire <b>se soulever</b> les pigeonneaux et les <b>acquerir</b> (par ce mouvement, signe de prise de possession).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg21">
+          <div class="seg-num">22</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לְמַאי? אִי לִמְקַנֵּא – לִקְנִינְהוּ לֵיהּ בְּסוּדָר! אִי בְּיוֹם טוֹב –</div>
+            <div class="fr"><p>Pour quoi [faire] ? Si [c&#x27;est] pour acquerir — qu&#x27;il les lui acquiere par [l&#x27;echange d&#x27;]un linge (soudar) !</p><p>Si [c&#x27;est] un jour de fete (yom tov) —</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְמַאי</b> הַגְבָּהָה זוֹ לָמָּה:</div>
+          <div class="glose-fr">Pour quoi — cette elevation [des pigeonneaux], a quelle fin ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִי לִמְקַנֵּא</b> שֶׁלֹּא יַחֲזֹור בּוֹ לֵוִי בֶּן סִימוֹן וְהָכִי קָאָמַר לֵיהּ טָרוּף אַקֵּן דְּלִיתְגְּבֵהוּ אֶפְרוֹחִים מִיִּרְאָתֶךָ וְתִקְנֶה אוֹתָם בְּהַגְבָּהָה:</div>
+          <div class="glose-fr">Si [c&#x27;est] pour acquerir — afin que Levi bar Simon ne se retracte pas ; voici ce qu&#x27;il lui dit : frappe sur le nid pour que les pigeonneaux se soulevent par crainte de toi, et tu les acquerras par soulevement (hagbaha).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לִיקְנִינְהוּ בְּסוּדָר</b> וְלָמָּה הֻוצְרַךְ רַב יְהוּדָה לִשְׁאוֹל הֵיאַךְ יִקְנֶה:</div>
+          <div class="glose-fr">Qu&#x27;il les lui acquiere par un linge — pourquoi Rav Yehouda a-t-il eu besoin de demander comment acquerir ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאִם ליו&quot;ט</b> שֶׁהוּא עֶרֶב יו&quot;ט וּלְמָחָר יִהְיוּ אֲסוּרִים מִשּׁוּם מֻוקְצֶה וּבָא לִשְׁאוֹל בַּמֶּה הֲכָנָתָם לָמָּה לִי הַאי טִרְחָא לִטְרֹוף אַקֵּן:</div>
+          <div class="glose-fr">Et si [c&#x27;est] pour le jour de fete — [c&#x27;est] une veille de fete, et le lendemain ils seraient interdits comme muktsé ; il vient s&#x27;enquerir de leur &#x27;preparation&#x27; (hakhana) -- pourquoi cette peine de frapper sur le nid ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara questionne le conseil de Chmouel. <b>A quelle fin</b> frapper le nid ? Si c'est pour <b>parachever l'acquisition</b> (que Levi ne se retracte pas), il suffisait d'un <b>kinyan soudar</b> (acquisition symbolique par un linge). Si c'est un cas de <b>yom tov</b> (veille de fete, pour rendre les oiseaux preparés et donc permis -- non muktsé -- le lendemain)... (la discussion sur le motif reel se poursuit au daf suivant, 142a, dernier amud du traite).</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Chullin_141a.html">&lsaquo; Chullin 141a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Chullin_142a.html">Chullin 142a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

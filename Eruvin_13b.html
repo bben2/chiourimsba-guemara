@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eruvin 13b — Rabbi Meir, Beit Chamai et Beit Hillel, et la largeur de la qora</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Eruvin 13b — Rabbi Meir, Beit Chamai et Beit Hillel, et la largeur de la qora</h1>
+    <div class="ref">Eruvin 13b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Eruvin_13a.html">&lsaquo; Eruvin 13a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Eruvin_14a.html">Eruvin 14a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> La Guemara acheve la discussion de 13a sur la meguila de la sota : le guet exige une ecriture lichmah (« il ecrira pour elle »), la sota une action lichmah (« il fera pour elle »), et cette action est l&#x27;effacement. A propos de Rabbi Meir, elle rapporte son eloge : nul ne l&#x27;egalait dans sa generation, mais la halakha n&#x27;a pas ete fixee selon lui parce que ses collegues ne pouvaient saisir le fond de sa pensee.</p><p>Suivent son vrai nom (Nehorai), Rabbi qui l&#x27;a vu de dos, Soumakhos et ses quarante-huit raisons, l&#x27;eleve de Yavne qui purifiait le cheretz et le kal va-homer refute de Ravina. Puis la bat qol : les paroles des deux ecoles sont les paroles du D. vivant, mais la halakha suit Beit Hillel, parce qu&#x27;ils etaient doux et humbles.</p><p>Le daf se termine par la michna sur la qora (poutre transversale) du mavoy : sa largeur minimale d&#x27;un tefah, la solidite exigee, et la poutre ronde.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="760" height="330" fill="#fbfaf7"/>
+<text x="380" y="26" text-anchor="middle" font-family="Helvetica,Arial" font-size="15" font-weight="bold" fill="#2b2b2b">Lichmah : sur quel acte porte l'exigence ? (seg. 0-1)</text>
+<rect x="20" y="46" width="350" height="210" rx="8" fill="#eef3f8" stroke="#4a6a8a"/>
+<text x="195" y="70" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#2b4a6a">Guet (acte de divorce)</text>
+<text x="40" y="98" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Verset : vekhatav lah (il ecrira POUR ELLE)</text>
+<text x="40" y="122" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Acte vise : l'ECRITURE</text>
+<text x="40" y="146" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Ecrit pour la femme A, puis donne</text>
+<text x="40" y="164" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">a un homonyme pour sa femme B :</text>
+<text x="195" y="200" text-anchor="middle" font-family="Helvetica,Arial" font-size="14" font-weight="bold" fill="#a33">PASSOUL</text>
+<text x="195" y="230" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">l'ecriture n'a pas ete faite pour B</text>
+<rect x="390" y="46" width="350" height="210" rx="8" fill="#eef6ee" stroke="#4a7a4a"/>
+<text x="565" y="70" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#2b5a2b">Meguila de la sota</text>
+<text x="410" y="98" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Verset : veasa lah (il fera POUR ELLE)</text>
+<text x="410" y="122" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Acte vise : l'EFFACEMENT (mehika)</text>
+<text x="410" y="146" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Ecrite pour Rahel, effacee</text>
+<text x="410" y="164" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">pour Lea (Rabbi Ahai bar Yochiya) :</text>
+<text x="565" y="200" text-anchor="middle" font-family="Helvetica,Arial" font-size="14" font-weight="bold" fill="#2b7a2b">VALABLE</text>
+<text x="565" y="230" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">l'effacement est fait pour Lea</text>
+<rect x="20" y="270" width="720" height="48" rx="8" fill="#f6f1e6" stroke="#9a8a5a"/>
+<text x="380" y="290" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Tossefot : pourquoi ne pas effacer la parasha d'un Sefer Torah ? Parce que vekhatav et haalot</text>
+<text x="380" y="308" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">exige aussi une ecriture faite en vue des maledictions (le Sefer Torah n'a pas ete ecrit pour cela).</text>
+</svg></div>
+          <figcaption>Guet et sota : le lichmah porte sur l&#x27;ecriture pour le guet, sur l&#x27;effacement pour la sota.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="760" height="360" fill="#fbfaf7"/>
+<text x="380" y="26" text-anchor="middle" font-family="Helvetica,Arial" font-size="15" font-weight="bold" fill="#2b2b2b">Beit Chamai et Beit Hillel : la bat qol et ses raisons (seg. 9-12)</text>
+<rect x="30" y="46" width="300" height="66" rx="8" fill="#f8ecec" stroke="#8a4a4a"/>
+<text x="180" y="72" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#6a2b2b">Beit Chamai</text>
+<text x="180" y="94" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">la halakha est comme nous</text>
+<rect x="430" y="46" width="300" height="66" rx="8" fill="#eef3f8" stroke="#4a6a8a"/>
+<text x="580" y="72" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#2b4a6a">Beit Hillel</text>
+<text x="580" y="94" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">la halakha est comme nous</text>
+<text x="380" y="84" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#555">3 ans</text>
+<line x1="180" y1="112" x2="360" y2="150" stroke="#777" stroke-width="1.5"/>
+<line x1="580" y1="112" x2="400" y2="150" stroke="#777" stroke-width="1.5"/>
+<rect x="190" y="150" width="380" height="62" rx="8" fill="#f6f1e6" stroke="#9a8a5a"/>
+<text x="380" y="174" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#2b2b2b">Bat qol</text>
+<text x="380" y="196" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">les deux sont paroles du D. vivant ; halakha comme Beit Hillel</text>
+<line x1="380" y1="212" x2="380" y2="236" stroke="#777" stroke-width="1.5"/>
+<text x="380" y="252" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-style="italic" fill="#555">Pourquoi Beit Hillel ?</text>
+<rect x="20" y="266" width="170" height="80" rx="8" fill="#eef6ee" stroke="#4a7a4a"/>
+<text x="105" y="292" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b5a2b">nohin</text>
+<text x="105" y="312" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">doux, accommodants</text>
+<rect x="206" y="266" width="170" height="80" rx="8" fill="#eef6ee" stroke="#4a7a4a"/>
+<text x="291" y="292" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b5a2b">aluvin</text>
+<text x="291" y="312" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">patients face a l'offense</text>
+<rect x="392" y="266" width="170" height="80" rx="8" fill="#eef6ee" stroke="#4a7a4a"/>
+<text x="477" y="292" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b5a2b">enseignent les deux</text>
+<text x="477" y="312" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">leurs paroles et celles</text>
+<text x="477" y="328" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">de Beit Chamai</text>
+<rect x="578" y="266" width="170" height="80" rx="8" fill="#eef6ee" stroke="#4a7a4a"/>
+<text x="663" y="292" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b5a2b">citent Beit Chamai</text>
+<text x="663" y="312" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">en premier</text>
+<text x="663" y="328" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">(ex. : la soukka)</text>
+</svg></div>
+          <figcaption>La dispute de trois ans, la bat qol, et les quatre qualites qui ont valu a Beit Hillel la halakha.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 340" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="760" height="340" fill="#fbfaf7"/>
+<text x="380" y="26" text-anchor="middle" font-family="Helvetica,Arial" font-size="15" font-weight="bold" fill="#2b2b2b">La qora du mavoy : largeur et solidite (michna, seg. 14-16)</text>
+<text x="190" y="56" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#2b4a6a">Les mesures (coupe transversale)</text>
+<rect x="60" y="80" width="90" height="30" fill="#c9a36a" stroke="#6a4a2b"/>
+<text x="105" y="100" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">levena</text>
+<text x="105" y="128" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">brique : 3 tefahim</text>
+<rect x="210" y="80" width="45" height="30" fill="#d9b98a" stroke="#6a4a2b"/>
+<text x="232" y="100" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">ariah</text>
+<text x="232" y="128" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">1,5 tefah</text>
+<rect x="160" y="170" width="45" height="22" fill="#d9b98a" stroke="#6a4a2b"/>
+<rect x="152" y="192" width="30" height="24" fill="#8a6a4a" stroke="#4a3a2b"/>
+<text x="167" y="208" text-anchor="middle" font-family="Helvetica,Arial" font-size="10" fill="#fff">qora</text>
+<text x="100" y="244" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">qora de 1 tefah : l'ariah pose</text>
+<text x="100" y="260" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">dans sa largeur (lirhavo) suffit</text>
+<text x="100" y="282" font-family="Helvetica,Arial" font-size="11" fill="#a33">(la Guemara objectera : il faut 1,5)</text>
+<line x1="380" y1="46" x2="380" y2="320" stroke="#ccc"/>
+<text x="570" y="56" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#2b4a6a">Solidite et formes</text>
+<rect x="400" y="70" width="340" height="96" rx="8" fill="#eef3f8" stroke="#4a6a8a"/>
+<text x="414" y="92" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Premier tanna :</text>
+<text x="414" y="110" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">large ET solide pour porter l'ariah</text>
+<text x="414" y="134" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Rabbi Yehouda :</text>
+<text x="414" y="152" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">large suffit ; paille, roseau = metal</text>
+<rect x="400" y="180" width="340" height="140" rx="8" fill="#eef6ee" stroke="#4a7a4a"/>
+<text x="414" y="202" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">courbe : vue comme droite</text>
+<text x="414" y="222" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">ronde : vue comme carree</text>
+<circle cx="480" cy="274" r="30" fill="none" stroke="#8a6a4a" stroke-width="3"/>
+<line x1="450" y1="274" x2="510" y2="274" stroke="#a33" stroke-width="1.5"/>
+<text x="480" y="268" text-anchor="middle" font-family="Helvetica,Arial" font-size="10" fill="#a33">1 tefah</text>
+<text x="530" y="266" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">circonference 3 tefahim</text>
+<text x="530" y="286" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">=&gt; largeur (diametre) 1 tefah</text>
+</svg></div>
+          <figcaption>Michna de la qora : ariah de 1,5 tefah, qora d&#x27;au moins 1 tefah, solidite, formes courbe et ronde.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ונמלך ומצאו בן עירו ואמר: שמך כשמי ושם אשתך כשם אשתי — פסול לגרש בו!</div>
+            <div class="fr"><p>et il se ravise, et un homme de sa ville le trouve et lui dit : ton nom est comme mon nom et le nom de ta femme est comme le nom de ma femme — [ce guet] est invalide pour divorcer avec lui !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ונמלך</b> וחזר בו מלגרש אותה:</div>
+          <div class="glose-fr">Et il se ravise : il revient sur sa decision de la divorcer.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>פסול</b> אלמא וכתב לה משמע לשמה הכי נמי כתיב ועשה לה משמע לשמה:</div>
+          <div class="glose-fr">Invalide : on voit donc que « il ecrira pour elle » signifie en son nom (lichmah) ; de meme il est ecrit « il fera pour elle », ce qui signifie en son nom.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Suite de la question ouverte en 13a. La michna de Guittin enseigne qu'un <b>guet</b> ecrit pour une femme ne peut servir a divorcer une autre femme, meme si les noms sont identiques : il doit etre ecrit <b>lichmah</b> (en son nom). Si la meguila de la sota est comparable, comment Rabbi Ahai bar Yochiya peut-il valider une meguila ecrite pour une sota et utilisee pour une autre ?</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הכי השתא? התם ״וכתב לה״ כתיב — בעינן כתיבה לשמה, הכא ״ועשה לה״ כתיב — בעינן עשייה לשמה, עשייה דידה מחיקה היא.</div>
+            <div class="fr"><p>Comment compares-tu ? La-bas il est ecrit « il ecrira pour elle » : nous exigeons une ecriture en son nom.</p><p>Ici il est ecrit « il fera pour elle » : nous exigeons une action en son nom, et l&#x27;action la concernant, c&#x27;est l&#x27;effacement.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>התם כתיב לה</b> לגבי כתיבה:</div>
+          <div class="glose-fr">La-bas il est ecrit « pour elle » : a propos de l&#x27;ecriture.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הכא</b> כתיב לה לגבי עשייה עשייה היינו מחיקה:</div>
+          <div class="glose-fr">Ici : « pour elle » est ecrit a propos de l&#x27;action, et l&#x27;action, c&#x27;est l&#x27;effacement.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>עשייה דידה מחיקה היא</b> ואם תאמר אם כן למה אין מוחקין לה מן התורה ואומר ר&quot;י משום דכתיב וכתב את האלות האלה דבעינן שתהא כתיבה לשם אלה:</div>
+          <div class="glose-fr">L&#x27;action la concernant, c&#x27;est l&#x27;effacement : si tu objectes : s&#x27;il en est ainsi, pourquoi n&#x27;efface-t-on pas [la parasha] pour elle d&#x27;un Sefer Torah ? Le Ri dit : parce qu&#x27;il est ecrit « il ecrira ces maledictions », d&#x27;ou nous exigeons que l&#x27;ecriture soit faite en vue de la malediction.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara distingue les deux versets. Pour le guet, le mot « lah » (pour elle) suit <b>vekhatav</b> (il ecrira) : c'est l'ecriture qui doit etre lichmah. Pour la sota, « lah » suit <b>veasa</b> (il fera), et l'acte accompli sur la sota est l'<b>effacement</b> (mehika) de la meguila dans l'eau. Il suffit donc que l'effacement soit fait pour Lea.</p><p>Tossefot : l'ecriture n'est pas pour autant libre de toute exigence. Le verset « il ecrira ces <b>alot</b> » demande qu'elle soit faite en vue des maledictions ; un Sefer Torah, ecrit pour l'etude, n'y repond pas.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="760" height="330" fill="#fbfaf7"/>
+<text x="380" y="26" text-anchor="middle" font-family="Helvetica,Arial" font-size="15" font-weight="bold" fill="#2b2b2b">Lichmah : sur quel acte porte l'exigence ? (seg. 0-1)</text>
+<rect x="20" y="46" width="350" height="210" rx="8" fill="#eef3f8" stroke="#4a6a8a"/>
+<text x="195" y="70" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#2b4a6a">Guet (acte de divorce)</text>
+<text x="40" y="98" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Verset : vekhatav lah (il ecrira POUR ELLE)</text>
+<text x="40" y="122" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Acte vise : l'ECRITURE</text>
+<text x="40" y="146" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Ecrit pour la femme A, puis donne</text>
+<text x="40" y="164" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">a un homonyme pour sa femme B :</text>
+<text x="195" y="200" text-anchor="middle" font-family="Helvetica,Arial" font-size="14" font-weight="bold" fill="#a33">PASSOUL</text>
+<text x="195" y="230" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">l'ecriture n'a pas ete faite pour B</text>
+<rect x="390" y="46" width="350" height="210" rx="8" fill="#eef6ee" stroke="#4a7a4a"/>
+<text x="565" y="70" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#2b5a2b">Meguila de la sota</text>
+<text x="410" y="98" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Verset : veasa lah (il fera POUR ELLE)</text>
+<text x="410" y="122" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Acte vise : l'EFFACEMENT (mehika)</text>
+<text x="410" y="146" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Ecrite pour Rahel, effacee</text>
+<text x="410" y="164" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">pour Lea (Rabbi Ahai bar Yochiya) :</text>
+<text x="565" y="200" text-anchor="middle" font-family="Helvetica,Arial" font-size="14" font-weight="bold" fill="#2b7a2b">VALABLE</text>
+<text x="565" y="230" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">l'effacement est fait pour Lea</text>
+<rect x="20" y="270" width="720" height="48" rx="8" fill="#f6f1e6" stroke="#9a8a5a"/>
+<text x="380" y="290" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Tossefot : pourquoi ne pas effacer la parasha d'un Sefer Torah ? Parce que vekhatav et haalot</text>
+<text x="380" y="308" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">exige aussi une ecriture faite en vue des maledictions (le Sefer Torah n'a pas ete ecrit pour cela).</text>
+</svg></div><div class="svg-cap">Vekhatav lah pour le guet, veasa lah pour la sota.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר רבי אחא בר חנינא: גלוי וידוע לפני מי שאמר והיה העולם שאין בדורו של רבי מאיר כמותו, ומפני מה לא קבעו הלכה כמותו? שלא יכלו חביריו לעמוד על סוף דעתו. שהוא אומר על טמא טהור ומראה לו פנים, על טהור טמא ומראה לו פנים.</div>
+            <div class="fr"><p>Rabbi Aha bar Hanina a dit : il est revele et connu devant Celui qui a parle et le monde fut, que dans la generation de Rabbi Meir il n&#x27;y avait personne comme lui. Pourquoi alors n&#x27;a-t-on pas fixe la halakha selon lui ?</p><p>Parce que ses collegues ne pouvaient saisir le fond de sa pensee. Car il disait d&#x27;un [objet] impur qu&#x27;il est pur et lui montrait des raisons, et d&#x27;un [objet] pur qu&#x27;il est impur et lui montrait des raisons.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>על סוף דעתו</b> לא יכלו להבין באיזה דבריו נכונים ובאיזה אין דבריו נכונים שהיה נותן דעת מיושב והגון על אין הלכה כהלכה:</div>
+          <div class="glose-fr">Le fond de sa pensee : ils ne pouvaient comprendre lesquelles de ses paroles etaient justes et lesquelles ne l&#x27;etaient pas, car il donnait une argumentation posee et convenable pour ce qui n&#x27;est pas la halakha comme pour la halakha.</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">ומפני מה לא קבעו הלכה כמותו. פירוש הסכמת החכמים לקבוע הלכה כרב פפא ודאי היא בהשגחה מן השמים כי רוח ה&#x27; דבר בם על דרך (תהלים כה, יד) סוד ה&#x27; ליראיו, ומאחר דקמי שמיא גליא שהוא חכם מכולם בודאי דבריו הם אמת וצדק שאינו טועה בהוראתו ולכן שואל למה לא הניח הקבית הלל בלב החכמים לקבוע הלכה כמותו דהכל בידי שמים.</div>
+          <div class="glose-fr">Pourquoi n&#x27;a-t-on pas fixe la halakha selon lui. Explication : l&#x27;accord des sages pour fixer la halakha selon tel sage (le texte porte : Rav Papa) est certainement guide par la Providence, car l&#x27;esprit de Hachem parle par eux, selon « le secret de Hachem est pour ceux qui Le craignent » (Tehilim 25, 14). Puisqu&#x27;il est revele devant le Ciel qu&#x27;il etait le plus sage de tous, ses paroles sont certainement verite et justice et il ne se trompe pas dans son enseignement. La question est donc : pourquoi le Saint beni soit-Il n&#x27;a-t-Il pas mis dans le coeur des sages de fixer la halakha selon lui, puisque tout est entre les mains du Ciel ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">מפני שלא עמדו חבריו על סוף דעתו. קשה והלא בודאי הוא עצמו עמד על סוף דעתו ואם יש יכולת בידו לטהר הטמא ויראה לו פנים ודאי הוא לא יפסוק כן להלכה אלא חוזר וסותר דברים אלו כי באמת הוא חסיד וישר ונאמן ולא יפסוק להלכה אלא אליבא דאמת אף על פי שהאחרים אין שכלם משיג להכיר בזה? ועוד יש להבין, בלאו הכי צריך לנו לדעת למה היה עושה רבי מאיר דבר זה לטהר הטמא ויראה לו פנים דמה תועלת יש בזה אם אינו פוסק הלכה בחריפות זו? ונראה לי בס&quot;ד כי הוא היה עושה חריפות זו לטהר הטמא ויראה לו פנים כדי לחדד התלמידים ולראות אם ירגישו לדחות את דברים אלו בטענה של חריפות ומאחר דעל הרוב קצרה יד שכלם של החכמים להשיג הסתירה שיש לסתור את חריפות זו אלא נראה להם כי הפנים אשר מראה לדבריו הם אמתיים, לכך אף על פי שבאמת שהוא עצמו עושה סתירה לדברים ומראה להם שאין זה האמת חשו חכמים אם יקבעו הלכה כדבריו יהרהרו אחרים על קביעות הלכה זו כי יאמרו אולי גם הלכה זו אמרה על דרך אותה החריפות שעושה לטהר הטמא ולהראות פנים ואתם אין מרגישים בסתירה שיש לסתור דברים אלו כמו שלא הרגשתם בדברים אחרים שאמר לכם ולכן כדי שלא יהרהרו אחר דבריו שאומר להלכה אם יקבעו הלכה כמותו לכך לא קבעו הלכה כמותו ואף על פי שהם יודעים שהוא צדיק ונאמן ואם היה סתירה להלכה זו היה מגלה להם עם כל זה חשו משום לזות שפתים מאיש שגה ומפתי. והא דאמר &#x27; שהיה אומר על טמא , טהור ומראה לו פנים &#x27; נקט על טמא טהור ברישא לרבותא כי בכוחא דהיתרא איכא רבותא טפי שצריך ראיות חזקות כדי להתיר.</div>
+          <div class="glose-fr">Parce que ses collegues ne pouvaient saisir le fond de sa pensee. Difficulte : lui-meme saisissait certainement le fond de sa pensee. S&#x27;il etait capable de declarer pur l&#x27;impur en montrant des raisons, il ne trancherait certainement pas ainsi en halakha ; il reviendrait et refuterait ces paroles, car il etait pieux, droit et fidele, et ne trancherait la halakha que selon la verite, meme si l&#x27;intelligence des autres ne parvenait pas a le discerner. De plus, il faut comprendre pourquoi Rabbi Meir agissait ainsi, declarant pur l&#x27;impur avec des raisons : quelle utilite, s&#x27;il ne tranche pas la halakha selon cette subtilite ? Il me semble, avec l&#x27;aide du Ciel, qu&#x27;il usait de cette subtilite pour aiguiser les eleves et voir s&#x27;ils sauraient repousser ces paroles par un argument subtil. Or, le plus souvent, l&#x27;intelligence des sages ne parvenait pas a trouver la refutation de cette subtilite ; les raisons qu&#x27;il montrait leur paraissaient vraies. C&#x27;est pourquoi, bien qu&#x27;en realite il refutait lui-meme ces paroles et leur montrait que ce n&#x27;etait pas la verite, les sages ont craint que, s&#x27;ils fixaient la halakha selon lui, d&#x27;autres mettraient en doute cette decision : ils diraient que peut-etre cette halakha aussi a ete dite selon cette subtilite par laquelle il purifie l&#x27;impur, et que vous ne percevez pas la refutation, comme vous ne l&#x27;avez pas percue dans d&#x27;autres paroles qu&#x27;il vous a dites. Pour qu&#x27;on ne mette pas en doute ce qu&#x27;il enseigne comme halakha, ils n&#x27;ont pas fixe la halakha selon lui. Et bien qu&#x27;ils sachent qu&#x27;il est juste et fidele, et que s&#x27;il y avait une refutation a cette halakha il la leur revelerait, ils ont neanmoins craint la « perversite des levres » de celui qui erre et seduit. Et s&#x27;il est dit « il disait de l&#x27;impur qu&#x27;il est pur et lui montrait des raisons », il mentionne d&#x27;abord « de l&#x27;impur, pur » parce que c&#x27;est le plus fort : la force du permis (koha de-hetera) est plus grande, car il faut des preuves solides pour permettre.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Eloge de <b>Rabbi Meir</b> : il surpassait tous les sages de sa generation. Pourtant, en regle generale, la halakha n'est pas fixee selon lui face a ses collegues. La raison donnee : sa capacite a construire une argumentation convaincante pour la position contraire (declarer pur ce qui est impur) empechait ses collegues de distinguer ses <b>conclusions reelles</b> de ses exercices de raisonnement.</p><p>Le Ben Yehoyada explique que ces exercices servaient a aiguiser les eleves, et que les sages ont craint que ses decisions reelles soient mises en doute.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תנא: לא רבי מאיר שמו אלא רבי נהוראי שמו, ולמה נקרא שמו רבי מאיר? שהוא מאיר עיני חכמים בהלכה. ולא נהוראי שמו אלא רבי נחמיה שמו, ואמרי לה רבי אלעזר בן ערך שמו, ולמה נקרא שמו נהוראי? שמנהיר עיני חכמים בהלכה.</div>
+            <div class="fr"><p>On a enseigne : Rabbi Meir n&#x27;etait pas son nom, son nom etait Rabbi Nehorai. Pourquoi l&#x27;appelait-on Rabbi Meir ?</p><p>Parce qu&#x27;il eclairait (meir) les yeux des sages dans la halakha. Et Nehorai n&#x27;etait pas [non plus] son nom : son nom etait Rabbi Nehemia, et certains disent que son nom etait Rabbi Elazar ben Arakh.</p><p>Pourquoi l&#x27;appelait-on Nehorai ? Parce qu&#x27;il illuminait (manhir) les yeux des sages dans la halakha.</p></div>
+            <div class="tools"><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">תנא, לא רבי מאיר שמו, אלא רבי נהוראי שמו. הקשה הרב ישרש יעקב ז&quot;ל מה חילוק יש בין מאיר לנהוראי והכל אחד ולמה נשתנה שמו בשביל זו? עיין שם. ונראה לי בס&quot;ד דרבי אלעזר בן ערך קרא אותו אביו ביום המילה &#x27; אלעזר &#x27; ואחר שגדל בחכמה והיה מנהיר עיני חכמים קראו אותו החכמים בשם &#x27; נהוראי &#x27; בעבור המעלה הזאת, והוא היה קודם רבי מאיר מוכח כי היה מתלמידי רבי עקיבא. וכשנולד רבי מאיר קרא אותו אביו בשם &#x27; נהוראי &#x27; ביום המילה וזה היה עיקר שמו אך אחר שגדל בתורה והיה מאיר עיני חכמים רצו החכמים לחדש לו שם חדש בעבור המעלה הזאת וקראו אותו בשם &#x27; מאיר &#x27; ואף על פי שבשמו העיקרי שהוא נהוראי יש בו משמעות המעלה הזו שמנהיר עיני החכמים. עם כל זאת כיון דשם נהוראי נקרא בו מעת היותו קטן מיום המילה אינה ניכרת המעלה שלו בשם זה וגם בודאי &#x27;כמה שם נהוראי איכא בשוקא&#x27; מאחר ששם נהוראי כבר נתחדש בעולם בזמן רבי אלעזר בן ערך שחידשו לו חכמים שם זה, ולכך הוצרכו לחדש לו עתה שם חדש שקראו אותו מאיר כדי לפרסם המעלה שהוא מאיר עיני חכמים בהלכה ושם זה היה ראשון בעולם שנתחדש אצלו. ועיין בשער מאמרי רבותינו ז&quot;ל מה שכתב רבינו ז&quot;ל בביאור מאמר &#x27;תפוח עקיבו של אדם הראשון מכהה גלגל חמה&#x27; שרמז בשם מאיר – &#x27; נר ו אור &#x27; שנתקיים בו נר מצוה ותורה אור (משלי ו, כג) יעיין שם. ונראה לי שיבא רמז זה בשם נהוראי יותר שיש בשם זה אותיות נר ואותיות אור ונשאר אותיות י &quot; ה שהם סוד חו&quot;ב [חכמה ובינה] שהיה חכם ומבין וראש וסוף נ הורא י [60] עולה מספר הלכה [60] ונשאר באמצע אותיות אורה רמז שמאיר אורה בהלכה זיע&quot;א [זכותו יגן עלינו אמן] .</div>
+          <div class="glose-fr">On a enseigne : Rabbi Meir n&#x27;etait pas son nom, son nom etait Rabbi Nehorai. Le Rav Yachresh Yaakov a demande : quelle difference y a-t-il entre Meir et Nehorai ? Tout est un ; pourquoi changer son nom pour cela ? Voir la-bas. Il me semble, avec l&#x27;aide du Ciel, que Rabbi Elazar ben Arakh fut appele par son pere « Elazar » le jour de la mila ; apres qu&#x27;il eut grandi en sagesse et illumine les yeux des sages, les sages l&#x27;appelerent « Nehorai » en raison de cette qualite. Il vivait avant Rabbi Meir, puisque [Rabbi Meir] etait des eleves de Rabbi Akiva. Quand Rabbi Meir naquit, son pere l&#x27;appela « Nehorai » le jour de la mila, et ce fut son nom principal. Mais apres qu&#x27;il eut grandi dans la Torah et eclaire les yeux des sages, les sages voulurent lui donner un nom nouveau en raison de cette qualite, et l&#x27;appelerent « Meir ». Bien que son nom principal, Nehorai, porte deja le sens de cette qualite (il illumine les yeux des sages), puisqu&#x27;il portait ce nom depuis son enfance, depuis le jour de la mila, sa qualite n&#x27;y etait pas reconnaissable. Et certainement « combien de Nehorai y a-t-il au marche », puisque le nom Nehorai etait deja apparu dans le monde a l&#x27;epoque de Rabbi Elazar ben Arakh, a qui les sages l&#x27;avaient donne. C&#x27;est pourquoi il fallut lui donner un nom nouveau, Meir, pour faire connaitre sa qualite d&#x27;eclairer les yeux des sages dans la halakha, et ce nom apparaissait pour la premiere fois dans le monde avec lui. Voir dans le Chaar Maamarei Razal ce qu&#x27;a ecrit notre maitre [le Ari] en expliquant le propos « le talon d&#x27;Adam le premier homme obscurcissait la sphere du soleil » : il y fait allusion dans le nom Meir, [forme de] ner (lampe) et or (lumiere), en qui s&#x27;est realise « car la mitsva est une lampe et la Torah une lumiere » (Michle 6, 23). Voir la-bas. Il me semble que cette allusion convient davantage au nom Nehorai, qui contient les lettres de ner et celles de or, et il reste les lettres youd-he, qui sont le sod de Hokhma et Bina, car il etait sage et comprehensif. Le debut et la fin, noun et youd, valent 60, comme la valeur numerique de halakha (60), et il reste au milieu les lettres de ora (lumiere) : allusion a ce qu&#x27;il fait briller la lumiere dans la halakha. Que son merite nous protege, amen.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La baraita explique que « Meir » est un surnom tire de la racine <b>or</b> (lumiere) : il eclairait les sages. De meme, le tanna connu comme « Nehorai » (de l'arameen <b>nehora</b>, lumiere) s'appelait en realite Rabbi Nehemia ou Rabbi Elazar ben Arakh.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר רבי: האי דמחדדנא מחבראי דחזיתיה לרבי מאיר מאחוריה, ואילו חזיתיה מקמיה הוה מחדדנא טפי — דכתיב: ״והיו עיניך רואות את מוריך״.</div>
+            <div class="fr"><p>Rabbi a dit : si je suis plus perspicace que mes collegues, c&#x27;est que j&#x27;ai vu Rabbi Meir de dos ; si je l&#x27;avais vu de face, j&#x27;aurais ete encore plus perspicace, car il est ecrit : « Et tes yeux verront ton maitre » (Yechaya 30, 20).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דחזיתיה לרבי מאיר מאחוריה</b> כשלמדתי לפניו ישבתי בשורה של אחריו:</div>
+          <div class="glose-fr">Que j&#x27;ai vu Rabbi Meir de dos : quand j&#x27;etudiais devant lui, j&#x27;etais assis dans la rangee derriere lui.</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אמר רבי: האי דמחדדנא מחבראי, דחזתיה לרבי מאיר מאחוריה, ואלמלא חזתיה מקמיה, הואי מחדדנא טפי. נראה לי בס&quot;ד אחורי אותיות מ א יר יש אותיות קלט ואותיות לקט כי אות האלף לא יש אות מאחוריו דהוא ראשון אך אחר אותיות מאיר שהם מקמיה הם אותיות כבשן [372] שעולה מספרם שבע [372] ונרמז בזה דהרואה את רבי מאיר מאחוריו הרי זה קלט שיעור לקט שהוא דבר מועט שאינו משביע אך מאן דחזיה מקמי הרי זה שבע מאור תורתו דברי תורה שהם כבשונו של עולם. בא וראה כמה גדולה המשכה שתהיה מצד הפנים דאיכא בירושלמי (ירושלמי נדרים כט:) ברבי שמעון בן אלעזר שלא היו יכולים כל החכמים למצוא לו פתח לנדרו עד שבא זקן אחד ומצא לו פתח בחכמה ואמרו החכמים לאותו זקן מנין לך זאת החכמה שנתחכמת כולי האי? ואמר להם מקלו של רבי מאיר היתה בידי והיא מלמדת אותי דעת! עיין שם. ופרשנו במקום אחר מה שהיתה סגולת המקל חזקה וגדולה כל כך כי הראשונים ז&quot;ל היה דרכם ליקח בידם משענת ולפעמים סומכים עצמם עליה ומסתכלים בה כדי לפשט מחשבתם מן עניני עולם הזה ולצמצם מחשבתם בדבר קדושה אשר יביאו ויתבוננו בו ולכן המקל ההוא נמשך עליו רוח קדושה מקדושת מחשבתם ולכן אמר אלישע הנביא ע&quot;ה לגחזי שיקח משענת שלו וישים אותה על פני הנער להחיותו יען כי משענתי חופף עליה רוח קדושה מפניו הקדושים בעת שהוא מסתכל בה בעת ההתבודדות שלו ולכן יכולה היתה מקלו של רבי מאיר שהיה נשען עליה ומסתכל בה בעת שהיה מתבודד ומחשב בכונות קדושים הידועים לו להמשיך על עצמו רוח הקודש וגם היתה המקל קולטת רוח קדושה מן אור פניו הקדושים וכל כך קלטה קדושה שהיה בה טופח על מנת להטפיח שיש בה שיעור גדול שהזקן היה קולט חכמה מן קדושה שהיתה שורה עליה. ולכך אמר רבי אלמלא חזתיה מקמיה הואי מחדדנא טפי כי גדול האור הנמשך מצד הפנים עשר ידות על הנמשך מצד האחור ולכך הזהיר הכתוב (ישעיהו ל, כ) והיו עיניך ראות את מוריך. והנה לפי דברי גמרא דידן אמר רבי דברים אלו על זמן שהיה רבי קטן בשנים בזמן אביו רבן שמעון בן גמליאל והיה יושב בבית המדרש בשורה שהיא מאחוריו של רבי מאיר ואמר מחדדנא מחבראי מאותם שלא למדו תורה מן רבי מאיר ולא ישבו בישיבתו של רבי מאיר אפילו מאחוריו. אך בירושלמי דביצה פרק משילין (ירושלמי ביצה פרק ה הלכה ב דף כ:) איתא כשהיה רבי משיא את רבי שמעון בנו היו מטפחין באחורי ידיהם בשמחת חתן ביום שבת ועבר רבי מאיר ואמר רבותי! וכי הותרה שבת? ושמע רבינו את קולו ולא ידע שהוא רבי מאיר ואמר: מי הוא זה שבא להוכיחנו בתוך ביתינו?! כי רבי סבר טפוח כזה שהוא באחורי היד מותר ורבי מאיר סבירא ליה דאסור גם בכהאי גוונא, ושמע רבי מאיר קולו של רבי שאמר כך וברח לחוץ ויצאו עבדי רבי אחריו והוא היה רץ ובורח ואדהכי הפריח הרוח את סודר רבי מאיר מאחריו והיה רבי מציץ ורואה מן החלון בביתו וראה צוארו של רבי מאיר מאחוריו ואמר רבי לא זכית אנא לאורייתא אלא בגין דחמית קדליה דרבי מאיר מן אחורוי! עיין שם. ואנא עבדא פרשתי הטעם שרץ רבי מאיר וברח כדי שלא יראהו רבי ויתבייש רבי מן הדברים ההם שאמר מי הוא זה שבא להוכיחנו בתוך ביתינו. ונמצא לפי זה יש הפרש גדול בדבר זה בין תלמוד בבלי לתלמוד ירושלמי, ונראה לי בס&quot;ד דהא והא איתא דתחלה אמר רבי כמו שאמרו בבבלי על זמן שלמד תורה בישיבה של רבי מאיר בקטנותו ואחר כך בגודלו אחר שהיה נשיא דאז השיא את רבי שמעון בנו כמפורש בגמרא דכתובות שהשיאו בזמן נשיאותו אמר דברים הנזכר בירושלמי להפליג בשבחו של רבי מאיר. ועיין בספר לקוטי תורה המתייחס לרבינו האר&quot;י ז&quot;ל שפירש מאמר דחזתיה לרבי מאיר מאחוריה על הסוד ותמצית דבריו דכונת רבי בדברים אלו הוא על הארת מקום שורש נשמת רבי מאיר והלביש הסוד בדברים אלו להסתיר הענין.</div>
+          <div class="glose-fr">Rabbi a dit : si je suis plus perspicace que mes collegues, c&#x27;est que j&#x27;ai vu Rabbi Meir de dos ; si je l&#x27;avais vu de face, j&#x27;aurais ete plus perspicace. Il me semble, avec l&#x27;aide du Ciel : derriere les lettres mem-alef-youd-rech [dans l&#x27;ordre de l&#x27;alphabet] se trouvent les lettres qof-lamed-tet, qui forment aussi leqet, car la lettre alef n&#x27;a pas de lettre derriere elle, etant la premiere. Mais apres les lettres de Meir, qui sont « devant », viennent les lettres kaf-beit-chin-noun (kivchan, fournaise) [372], dont la valeur est celle de sava (rassasie) [372]. Cela indique que celui qui voit Rabbi Meir de dos recoit (qalat) la mesure d&#x27;un leqet, une petite chose qui ne rassasie pas ; mais celui qui le voit de face se rassasie de la lumiere de sa Torah, les paroles de Torah qui sont la « fournaise du monde ». Vois combien est grande l&#x27;influence qui vient de la face : il est rapporte dans le Yerouchalmi (Nedarim 29b) que pour Rabbi Chimon ben Elazar, aucun sage ne pouvait trouver d&#x27;ouverture (petah) pour annuler son voeu, jusqu&#x27;a ce qu&#x27;un vieillard vienne et en trouve une avec sagesse. Les sages demanderent a ce vieillard : d&#x27;ou te vient cette sagesse ? Il repondit : le baton de Rabbi Meir etait dans ma main, et il m&#x27;enseigne la connaissance ! Voir la-bas. Nous avons explique ailleurs pourquoi la vertu de ce baton etait si forte : les premiers avaient l&#x27;habitude de prendre un baton en main, de s&#x27;appuyer parfois dessus et de le regarder, afin de detacher leur pensee des affaires de ce monde et de la concentrer sur une chose sainte a mediter. Ce baton attirait donc sur lui un esprit de saintete venant de la saintete de leur pensee. C&#x27;est pourquoi le prophete Elicha dit a Guehazi de prendre son baton et de le poser sur le visage de l&#x27;enfant pour le ranimer, car sur ce baton reposait un esprit de saintete venant de sa face sainte, lorsqu&#x27;il le regardait dans ses moments de retraite. Ainsi le baton de Rabbi Meir, sur lequel il s&#x27;appuyait et qu&#x27;il regardait quand il se retirait et meditait les intentions saintes (kavanot) qu&#x27;il connaissait pour attirer sur lui l&#x27;esprit saint, recueillait aussi un esprit de saintete de la lumiere de sa face sainte ; il en avait recueilli tant qu&#x27;il etait « humide au point d&#x27;humecter », en grande mesure, et le vieillard recevait de la sagesse de la saintete qui reposait sur lui. C&#x27;est pourquoi Rabbi dit : si je l&#x27;avais vu de face, j&#x27;aurais ete plus perspicace, car la lumiere qui vient de la face depasse dix fois celle qui vient du dos ; c&#x27;est pourquoi le verset avertit : « Et tes yeux verront ton maitre » (Yechaya 30, 20). Selon notre Guemara, Rabbi a dit cela a propos de l&#x27;epoque ou il etait jeune, du temps de son pere Rabban Chimon ben Gamliel, et s&#x27;asseyait au beit hamidrach dans la rangee derriere Rabbi Meir ; il disait « plus perspicace que mes collegues » par rapport a ceux qui n&#x27;avaient pas appris la Torah de Rabbi Meir ni ne s&#x27;etaient assis dans sa yechiva, meme derriere lui. Mais dans le Yerouchalmi, Beitsa, chapitre Machilin (5, 2 ; 20b), il est rapporte : quand Rabbi maria son fils Rabbi Chimon, on frappait du revers de la main pour la joie du marie un jour de Chabbat. Rabbi Meir passa et dit : Maitres, le Chabbat a-t-il ete permis ? Notre maitre entendit sa voix sans savoir que c&#x27;etait Rabbi Meir et dit : qui est celui qui vient nous reprendre dans notre maison ?! Car Rabbi tenait qu&#x27;une telle frappe, du revers de la main, est permise, et Rabbi Meir la tenait interdite meme ainsi. Rabbi Meir entendit la voix de Rabbi disant cela et s&#x27;enfuit dehors ; les serviteurs de Rabbi sortirent a sa poursuite, et lui courait et fuyait. Pendant ce temps le vent souleva le foulard de Rabbi Meir par derriere ; Rabbi regardait par la fenetre de sa maison et vit la nuque de Rabbi Meir par derriere, et Rabbi dit : je n&#x27;ai merite la Torah que parce que j&#x27;ai vu la nuque de Rabbi Meir par derriere ! Voir la-bas. Moi, le serviteur, j&#x27;ai explique la raison pour laquelle Rabbi Meir a couru et s&#x27;est enfui : pour que Rabbi ne le voie pas et n&#x27;ait pas honte des paroles qu&#x27;il avait dites, « qui est celui qui vient nous reprendre dans notre maison ». Il y a donc sur ce point une grande difference entre le Talmud de Babylone et celui de Jerusalem. Il me semble, avec l&#x27;aide du Ciel, que les deux sont vrais : d&#x27;abord Rabbi a dit, comme dans le Bavli, ce qui concerne l&#x27;epoque ou il etudiait dans la yechiva de Rabbi Meir dans sa jeunesse ; ensuite, adulte, apres etre devenu nassi (alors il maria son fils Rabbi Chimon, comme il est explicite dans la Guemara de Ketoubot qu&#x27;il le maria pendant sa presidence), il dit les paroles rapportees dans le Yerouchalmi, pour exalter l&#x27;eloge de Rabbi Meir. Voir dans le Liqoutei Torah attribue a notre maitre le Ari, qui explique « je l&#x27;ai vu de dos » selon le sod : l&#x27;essentiel de ses paroles est que Rabbi visait par la l&#x27;eclairage de la racine de la nechama de Rabbi Meir, et il a revetu le sod de ces mots pour cacher le sujet.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rabbi</b> (Rabbi Yehouda HaNassi) attribue sa perspicacite au fait d'avoir etudie devant Rabbi Meir, meme assis derriere lui. Voir le visage du maitre ajoute a la comprehension, comme le dit le verset de Yechaya.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר רבי אבהו אמר רבי יוחנן: תלמיד היה לו לרבי מאיר וסומכוס שמו, שהיה אומר על כל דבר ודבר של טומאה ארבעים ושמונה טעמי טומאה, ועל כל דבר ודבר של טהרה ארבעים ושמונה טעמי טהרה.</div>
+            <div class="fr"><p>Rabbi Abahou a dit au nom de Rabbi Yohanan : Rabbi Meir avait un eleve nomme Soumakhos, qui disait sur chaque sujet d&#x27;impurete quarante-huit raisons d&#x27;impurete, et sur chaque sujet de purete quarante-huit raisons de purete.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>L'eleve herite de la methode du maitre : <b>Soumakhos</b> savait construire quarante-huit arguments pour chaque position, dans un sens comme dans l'autre.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תנא: תלמיד ותיק היה ביבנה שהיה מטהר את השרץ במאה וחמשים טעמים.</div>
+            <div class="fr"><p>On a enseigne : il y avait a Yavne un eleve eprouve qui purifiait le cheretz par cent cinquante raisons.</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שיודע לטהר את השרץ</b> תימה מאי חריפות הוא לטהר את השרץ שהתורה טמאתו בהדיא ואומר רבינו תם דלענין טומאת נבילות איירי שלא יטמא כזית ממנו במשא דהא כתיב או בנבלת חיה ושרץ אע&quot;פ שרוחש הוי בכלל חיה כמו נחש דדרשינן בסנהדרין בפרק ארבע מיתות (סנהדרין ד&#x27; נט:) ובכל חיה הרומשת זה נחש ויליף רבינא ק&quot;ו מנחש דיצא מכלל נבלת חיה דממעט ליה בתורת כהנים מטומאת נבילות מוכל הולך על גחון וכי מסיק ולא היא וסותר הקל וחומר מ&quot;מ אתי במה מצינו שפיר מנחש דלא הוי בכלל חיה ה&quot;נ כל שרצים שרוחשין לא הוו בכלל חיה ולא מצא ר&quot;י בתורת כהנים שממעט בשום מקום נחש מטומאת נבילות ועוד קשיא לר&quot;י דבהדיא ממעט בת&quot;כ כל שרצים מטומאת נבילות דקתני התם היא מטמאה במשא ואין שרצים מטמאים במשא שיכול ומה בהמה שלא עשה הכתוב דמה כבשרה מטמאה במשא שרץ שעשה דמו כבשרו אינו דין שיטמא במשא ת&quot;ל היא ולא שרץ ומיהו י&quot;ל אע&quot;ג דאיכא מיעוטה עביד נמי ק&quot;ו אבל קשיא היכי אתי רבינא לבטל הק&quot;ו שבתורת כהנים ואי לאו דאיכא מיעוטא בהדיא אדרבה הוה עבדינן ק&quot;ו דתורת כהנים ועוד דעל ק&quot;ו דרבינא איכא למיפרך מה לנחש שכן טהור אפילו במגע בכעדשה:</div>
+          <div class="glose-fr">Qui sait purifier le cheretz : c&#x27;est etonnant ; quelle subtilite y a-t-il a purifier le cheretz, que la Torah a declare impur explicitement ? Rabbenou Tam dit qu&#x27;il s&#x27;agit de l&#x27;impurete de nevela : qu&#x27;un kazayit de lui ne rende pas impur par le port (massa). Car il est ecrit « ou la nevela d&#x27;une haya [...] ou d&#x27;un cheretz » ; bien qu&#x27;il rampe, il serait inclus dans [la categorie] haya, comme le serpent, selon ce que nous expliquons dans Sanhedrin, chapitre Arba Mitot (59b) : « et toute haya qui rampe », c&#x27;est le serpent. Et Ravina tire un kal va-homer du serpent, qui est sorti de la categorie nevelat haya, puisque le Torat Kohanim l&#x27;exclut de l&#x27;impurete des nevelot par « et tout ce qui va sur le ventre ». Et quand [la Guemara] conclut « il n&#x27;en est pas ainsi » et refute le kal va-homer, on peut neanmoins le deduire par ma matsinu (analogie) du serpent : de meme que le serpent n&#x27;est pas inclus dans haya, ainsi tous les cheratsim qui rampent ne sont pas inclus dans haya. Mais le Ri n&#x27;a trouve nulle part dans le Torat Kohanim d&#x27;exclusion du serpent de l&#x27;impurete des nevelot. De plus, le Ri objecte que le Torat Kohanim exclut explicitement tous les cheratsim de l&#x27;impurete des nevelot, comme il est enseigne la-bas : « elle rend impur par le port, et les cheratsim ne rendent pas impur par le port. Car on aurait pu penser : si la behema, dont la Torah n&#x27;a pas fait le sang comme la chair, rend impur par le port, le cheretz, dont elle a fait le sang comme la chair, n&#x27;est-il pas logique qu&#x27;il rende impur par le port ? Le verset dit « elle », et non le cheretz. » On peut toutefois repondre que, bien qu&#x27;il y ait une exclusion [explicite], il fait aussi un kal va-homer. Mais la difficulte demeure : comment Ravina vient-il annuler le kal va-homer du Torat Kohanim ? Sans l&#x27;exclusion explicite, au contraire, nous aurions applique le kal va-homer du Torat Kohanim. De plus, le kal va-homer de Ravina peut etre refute : qu&#x27;en est-il du serpent, qui est pur meme au contact d&#x27;une quantite de la taille d&#x27;une lentille ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le <b>cheretz</b> (reptile ou petit animal rampant des huit especes impures) est explicitement impur dans la Torah. Savoir argumenter sa purete en cent cinquante raisons est un exercice de virtuosite dialectique, dans la ligne de Rabbi Meir et de Soumakhos.</p><p>Tossefot s'etonne : pourquoi louer quelqu'un qui contredit un verset explicite ? Rabbenou Tam en deduit que la discussion porte sur un point derive : l'impurete de <b>nevela par le port</b> (massa), et non l'impurete du cheretz par contact.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר רבינא, אני אדון ואטהרנו: ומה נחש שממית ומרבה טומאה — טהור, שרץ שאין ממית ומרבה טומאה — לא כל שכן!</div>
+            <div class="fr"><p>Ravina a dit : moi aussi je raisonnerai et je le purifierai. Si le serpent, qui tue et multiplie l&#x27;impurete, est pur, le cheretz, qui ne tue pas et ne multiplie pas l&#x27;impurete, a plus forte raison !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>נחש שממית</b> אדם ובהמה ומביא טומאה בעולם:</div>
+          <div class="glose-fr">Le serpent qui tue : l&#x27;homme et l&#x27;animal, et il apporte l&#x27;impurete dans le monde.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>טהור</b> כשמת דהא שמונה שרצים כתיבי:</div>
+          <div class="glose-fr">Est pur : quand il meurt, puisque [seuls] huit cheratsim sont ecrits [comme impurs].</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Exemple de ce genre de raisonnement : un <b>kal va-homer</b> (a fortiori). Le serpent, en tuant, produit des cadavres, source d'impurete ; pourtant il n'est pas compte parmi les huit cheratsim impurs. Le cheretz devrait donc etre pur a plus forte raison.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 250" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="760" height="250" fill="#fbfaf7"/>
+<text x="380" y="24" text-anchor="middle" font-family="Helvetica,Arial" font-size="14" font-weight="bold" fill="#2b2b2b">Le kal va-homer de Ravina et sa refutation</text>
+<rect x="20" y="42" width="220" height="92" rx="8" fill="#eef3f8" stroke="#4a6a8a"/>
+<text x="130" y="64" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b4a6a">Nahach (serpent)</text>
+<text x="130" y="86" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">tue, multiplie l'impurete</text>
+<text x="130" y="108" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">et pourtant : TAHOR</text>
+<text x="270" y="92" font-family="Helvetica,Arial" font-size="20" fill="#777">=&gt;</text>
+<rect x="310" y="42" width="220" height="92" rx="8" fill="#eef6ee" stroke="#4a7a4a"/>
+<text x="420" y="64" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b5a2b">Cheretz</text>
+<text x="420" y="86" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">ne tue pas</text>
+<text x="420" y="108" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">a fortiori TAHOR ?</text>
+<rect x="560" y="42" width="180" height="92" rx="8" fill="#f8ecec" stroke="#8a4a4a"/>
+<text x="650" y="64" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#6a2b2b">Velo hi</text>
+<text x="650" y="86" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">le serpent fait l'acte</text>
+<text x="650" y="104" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">d'une epine (qots) :</text>
+<text x="650" y="122" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">tuer ne rend pas impur</text>
+<rect x="20" y="152" width="720" height="84" rx="8" fill="#f6f1e6" stroke="#9a8a5a"/>
+<text x="36" y="176" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Le critere tuer / multiplier l'impurete n'a aucun lien avec la source de l'impurete :</text>
+<text x="36" y="196" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">une epine peut tuer et n'est pas impure. Le raisonnement tombe.</text>
+<text x="36" y="220" font-family="Helvetica,Arial" font-size="11" fill="#555">Tossefot (Rabbenou Tam) : il s'agit de l'impurete de nevela par le port (massa), non du cheretz lui-meme.</text>
+</svg></div><div class="svg-cap">Le kal va-homer de Ravina et sa refutation par l&#x27;epine.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ולא היא — מעשה קוץ בעלמא קעביד.</div>
+            <div class="fr"><p>Il n&#x27;en est pas ainsi : il ne fait que l&#x27;acte d&#x27;une epine.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">הכי גרסינן מעשה קוץ בעלמא קעביד:</div>
+          <div class="glose-fr">Nous lisons ainsi : il ne fait que l&#x27;acte d&#x27;une epine.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Refutation : le serpent qui tue agit comme une <b>epine</b> (qots) qui blesse ; causer la mort n'a pas de lien avec la purete ou l'impurete de celui qui la cause. Le point de depart du kal va-homer est donc sans pertinence.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר רבי אבא אמר שמואל: שלש שנים נחלקו בית שמאי ובית הלל, הללו אומרים: הלכה כמותנו, והללו אומרים: הלכה כמותנו. יצאה בת קול ואמרה: אלו ואלו דברי אלהים חיים הן, והלכה כבית הלל.</div>
+            <div class="fr"><p>Rabbi Abba a dit au nom de Chmouel : pendant trois ans, Beit Chamai et Beit Hillel furent en desaccord. Ceux-ci disaient : la halakha est comme nous, et ceux-la disaient : la halakha est comme nous.</p><p>Une bat qol sortit et dit : celles-ci et celles-la sont les paroles du D. vivant, et la halakha est comme Beit Hillel.</p></div>
+            <div class="tools"><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">שלש שנים נחלקו בית שמאי ובית הלל וכו&#x27;. נראה לי בס&quot;ד טעם שנמשכה המחלוקת בהלכות התורה &#x27;שלש שנים&#x27; כי המחלוקת באה להם מצד השכחה כי קודם זה שלא היה שכחה לא היה שום מחלוקת אלא היו שונים ההלכות כנתינתן מסיני וידוע דהשכחה באה מצד הקליפה וידוע כי הקליפות ישנם בשלשה עולמות בי&quot;ע [בריאה,יצירה, עשיה] מה שאין כן באצילות כתיב בה (תהלים ה, ה) לא יגרך רע ולכן נמשכה המחלוקת שלש שנים כנגד הקליפות של שלש עולמות בי&quot;ע. או יובן בס&quot;ד טעם לזה כי תורה שבכתב היא גוף האילן ותורה שבעל פה היא פירות היוצאין מן האילן והדין הוא בפירות האילן שלש שנים ערלים וברביעית מותרים לאכילה וכנגדו היה בהלכות שהם פירות שלש שנים היו במחלוקת שלא נפסקה ההלכה ואחר שלש יצאה בת קול ואמרה הלכה כבית הלל ואז נעשו ההלכות שלהם ראויין לאכילה לעשות מעשה על פניהם. ועוד נראה לי בס&quot;ד כי הלל ושמאי הם כנגד חסד וגבורה דרגין דאברהם ויצחק וכמו שכתוב בזוהר הקדוש, ותלמידים שלהם כנגד קו האמצעי דרגא דיעקב היוצא משניהם ולכן אחר שלש שנים הגין זכות האבות שהם סוד חג&quot;ת [חסד, גבורה, תפארת] ויצאה בת קול ופסקה ההלכה ושקטה המחלוקת.</div>
+          <div class="glose-fr">Pendant trois ans Beit Chamai et Beit Hillel furent en desaccord, etc. Il me semble, avec l&#x27;aide du Ciel, que la raison pour laquelle le desaccord sur les lois de la Torah dura « trois ans » est que le desaccord leur vint de l&#x27;oubli. Avant cela, quand il n&#x27;y avait pas d&#x27;oubli, il n&#x27;y avait aucun desaccord : ils enseignaient les lois telles qu&#x27;elles furent donnees au Sinai. Or il est connu que l&#x27;oubli vient du cote de la qelipa (ecorce, force d&#x27;impurete), et que les qelipot se trouvent dans les trois mondes Beria, Yetsira, Assiya, a la difference d&#x27;Atsilout, dont il est ecrit « le mal ne sejourne pas aupres de Toi » (Tehilim 5, 5). C&#x27;est pourquoi le desaccord dura trois ans, correspondant aux qelipot des trois mondes Beria, Yetsira, Assiya. On peut aussi comprendre, avec l&#x27;aide du Ciel, que la Torah ecrite est le tronc de l&#x27;arbre et la Torah orale les fruits qui en sortent. La loi des fruits d&#x27;un arbre est qu&#x27;ils sont orla trois ans, et la quatrieme annee ils sont permis a la consommation. De meme les halakhot, qui sont des fruits, furent trois ans en desaccord sans que la halakha soit tranchee ; apres trois ans, une bat qol sortit et dit : la halakha est comme Beit Hillel. Alors leurs halakhot devinrent aptes a la « consommation », a agir selon elles. Il me semble encore, avec l&#x27;aide du Ciel, que Hillel et Chamai correspondent a Hessed et Guevoura, les degres d&#x27;Avraham et d&#x27;Its&#x27;hak, comme il est ecrit dans le Zohar saint, et que leurs eleves correspondent a la ligne mediane, le degre de Yaakov, qui sort des deux. C&#x27;est pourquoi, apres trois ans, le merite des Patriarches, qui sont le sod de Hessed, Guevoura, Tiferet, les protegea : une bat qol sortit, trancha la halakha, et le desaccord s&#x27;apaisa.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La <b>bat qol</b> (voix celeste) reconnait que les deux ecoles expriment une verite de la Torah (<b>elou va-elou</b>), mais que la pratique suit <b>Beit Hillel</b>. La Guemara va demander pourquoi.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="760" height="360" fill="#fbfaf7"/>
+<text x="380" y="26" text-anchor="middle" font-family="Helvetica,Arial" font-size="15" font-weight="bold" fill="#2b2b2b">Beit Chamai et Beit Hillel : la bat qol et ses raisons (seg. 9-12)</text>
+<rect x="30" y="46" width="300" height="66" rx="8" fill="#f8ecec" stroke="#8a4a4a"/>
+<text x="180" y="72" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#6a2b2b">Beit Chamai</text>
+<text x="180" y="94" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">la halakha est comme nous</text>
+<rect x="430" y="46" width="300" height="66" rx="8" fill="#eef3f8" stroke="#4a6a8a"/>
+<text x="580" y="72" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#2b4a6a">Beit Hillel</text>
+<text x="580" y="94" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">la halakha est comme nous</text>
+<text x="380" y="84" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#555">3 ans</text>
+<line x1="180" y1="112" x2="360" y2="150" stroke="#777" stroke-width="1.5"/>
+<line x1="580" y1="112" x2="400" y2="150" stroke="#777" stroke-width="1.5"/>
+<rect x="190" y="150" width="380" height="62" rx="8" fill="#f6f1e6" stroke="#9a8a5a"/>
+<text x="380" y="174" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#2b2b2b">Bat qol</text>
+<text x="380" y="196" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">les deux sont paroles du D. vivant ; halakha comme Beit Hillel</text>
+<line x1="380" y1="212" x2="380" y2="236" stroke="#777" stroke-width="1.5"/>
+<text x="380" y="252" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-style="italic" fill="#555">Pourquoi Beit Hillel ?</text>
+<rect x="20" y="266" width="170" height="80" rx="8" fill="#eef6ee" stroke="#4a7a4a"/>
+<text x="105" y="292" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b5a2b">nohin</text>
+<text x="105" y="312" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">doux, accommodants</text>
+<rect x="206" y="266" width="170" height="80" rx="8" fill="#eef6ee" stroke="#4a7a4a"/>
+<text x="291" y="292" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b5a2b">aluvin</text>
+<text x="291" y="312" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">patients face a l'offense</text>
+<rect x="392" y="266" width="170" height="80" rx="8" fill="#eef6ee" stroke="#4a7a4a"/>
+<text x="477" y="292" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b5a2b">enseignent les deux</text>
+<text x="477" y="312" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">leurs paroles et celles</text>
+<text x="477" y="328" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">de Beit Chamai</text>
+<rect x="578" y="266" width="170" height="80" rx="8" fill="#eef6ee" stroke="#4a7a4a"/>
+<text x="663" y="292" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b5a2b">citent Beit Chamai</text>
+<text x="663" y="312" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">en premier</text>
+<text x="663" y="328" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">(ex. : la soukka)</text>
+</svg></div><div class="svg-cap">Trois ans de desaccord, la bat qol, et les raisons du choix de Beit Hillel.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וכי מאחר שאלו ואלו דברי אלהים חיים, מפני מה זכו בית הלל לקבוע הלכה כמותן? מפני שנוחין ועלובין היו, ושונין דבריהן ודברי בית שמאי, ולא עוד אלא שמקדימין דברי בית שמאי לדבריהן.</div>
+            <div class="fr"><p>Mais puisque celles-ci et celles-la sont les paroles du D. vivant, pourquoi Beit Hillel ont-ils merite que la halakha soit fixee selon eux ? Parce qu&#x27;ils etaient doux et patients (aluvin), et qu&#x27;ils enseignaient leurs paroles et les paroles de Beit Chamai ; bien plus, ils faisaient preceder les paroles de Beit Chamai aux leurs.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>עלובין</b> סבלנין:</div>
+          <div class="glose-fr">Aluvin : endurants.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ושונין דבריהן ודברי בית שמאי</b> כשהיו ב&quot;ש מביאין ראיה לדבריהם מן התורה וב&quot;ה מביאין ראיה ממקרא אחר והיו ב&quot;ה דורשין את המקרא של ב&quot;ש למה בא ולא היה קל בעיניהם כאותה ששנינו במסכת ברכות (ד&#x27; י:) ב&quot;ש אומרים בערב כל אדם יטה ויקרא ובבקר יעמוד שנאמר בשכבך ובקומך וב&quot;ה אומרים כל אדם קורא כדרכו שנאמר ובלכתך בדרך אם כן למה נאמר בשכבך ובקומך בשעה שדרך בני אדם שוכבין ובשעה שדרך בני אדם עומדין:</div>
+          <div class="glose-fr">Ils enseignaient leurs paroles et les paroles de Beit Chamai : quand Beit Chamai apportaient une preuve de la Torah a leur position et que Beit Hillel apportaient une preuve d&#x27;un autre verset, Beit Hillel expliquaient pourquoi vient le verset de Beit Chamai, et il n&#x27;etait pas negligeable a leurs yeux. Comme ce que nous avons appris dans le traite Berakhot (10b) : Beit Chamai disent : le soir, tout homme doit s&#x27;incliner et lire [le Chema], et le matin se lever, car il est dit « quand tu te couches et quand tu te leves » ; et Beit Hillel disent : tout homme lit selon sa facon, car il est dit « et quand tu marches sur le chemin ». S&#x27;il en est ainsi, pourquoi est-il dit « quand tu te couches et quand tu te leves » ? A l&#x27;heure ou les hommes ont l&#x27;habitude de se coucher et a l&#x27;heure ou ils ont l&#x27;habitude de se lever.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שמקדימין דברי ב&quot;ש לדבריהן</b> דקאמרי להו מעשה שהלכו זקני ב&quot;ש והדר זקני ב&quot;ה:</div>
+          <div class="glose-fr">Ils faisaient preceder les paroles de Beit Chamai aux leurs : car ils disaient « il arriva que les anciens de Beit Chamai allerent », puis « les anciens de Beit Hillel ».</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">מפני שנוחין הן ועלובין הן. נראה לי בס&quot;ד נקיט תרי מילי כי יש נראה נח בפיו לעיני הרואין אך לבו בוער כאש להבה ומצטמק ורע לו על הדבר אך בית הלל נוחין מבחוץ בפה ועלובין בלב שיש להם ענוה שלימה מבית ומחוץ.</div>
+          <div class="glose-fr">Parce qu&#x27;ils etaient doux et patients. Il me semble, avec l&#x27;aide du Ciel, qu&#x27;il emploie deux mots parce qu&#x27;un homme peut paraitre doux dans sa bouche aux yeux de ceux qui le voient, alors que son coeur brule comme une flamme, qu&#x27;il se consume et souffre de la chose. Mais Beit Hillel etaient doux a l&#x27;exterieur, dans la bouche, et patients dans le coeur : ils avaient une humilite complete, a l&#x27;interieur comme a l&#x27;exterieur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le merite de Beit Hillel tient a leur caractere et a leur methode : <b>nohin</b> (accommodants), <b>aluvin</b> (supportant l'offense sans repliquer), ils etudiaient serieusement la position adverse (Rachi : ils expliquaient le verset cite par Beit Chamai) et la citaient avant la leur.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כאותה ששנינו: מי שהיה ראשו ורובו בסוכה ושלחנו בתוך הבית, בית שמאי פוסלין ובית הלל מכשירין. אמרו בית הלל לבית שמאי: לא כך היה מעשה, שהלכו זקני בית שמאי וזקני בית הלל לבקר את רבי יוחנן בן החורנית ומצאוהו יושב ראשו ורובו בסוכה ושלחנו בתוך הבית. אמרו להן בית שמאי: אי משם ראיה?! אף הן אמרו לו: אם כך היית נוהג, לא קיימת מצות סוכה מימיך.</div>
+            <div class="fr"><p>Comme ce que nous avons appris : celui qui avait la tete et la plus grande partie [du corps] dans la soukka et sa table dans la maison, Beit Chamai invalident et Beit Hillel valident. Beit Hillel dirent a Beit Chamai : n&#x27;est-il pas arrive que les anciens de Beit Chamai et les anciens de Beit Hillel allerent visiter Rabbi Yohanan ben HaHoranit, et le trouverent assis la tete et la plus grande partie [du corps] dans la soukka et sa table dans la maison ?</p><p>Beit Chamai leur dirent : de la une preuve ?! Eux aussi lui dirent : si tu agissais ainsi, tu n&#x27;as jamais accompli la mitsva de soukka de tes jours.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Illustration tiree de la michna de Soukka (28a). En rapportant l'episode qui soutient leur propre position, Beit Hillel nomment d'abord <b>les anciens de Beit Chamai</b>, puis les leurs.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ללמדך שכל המשפיל עצמו — הקדוש ברוך הוא מגביהו, וכל המגביה עצמו — הקדוש ברוך הוא משפילו. כל המחזר על הגדולה — גדולה בורחת ממנו, וכל הבורח מן הגדולה — גדולה מחזרת אחריו, וכל הדוחק את השעה — שעה דוחקתו, וכל הנדחה מפני שעה — שעה עומדת לו.</div>
+            <div class="fr"><p>Pour t&#x27;apprendre que quiconque s&#x27;abaisse, le Saint beni soit-Il l&#x27;eleve, et quiconque s&#x27;eleve, le Saint beni soit-Il l&#x27;abaisse. Quiconque court apres la grandeur, la grandeur le fuit, et quiconque fuit la grandeur, la grandeur court apres lui.</p><p>Quiconque force le moment, le moment le repousse, et quiconque s&#x27;efface devant le moment, le moment se tient pour lui.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הדוחק את השעה</b> מתיגע להעשיר ולהתגדל ורואה שאינו מצליח ואעפ&quot;כ חוזר והולך למרחקים ומכניס עצמו לגבוהות:</div>
+          <div class="glose-fr">Qui force le moment : il se donne de la peine pour s&#x27;enrichir et s&#x27;elever, voit qu&#x27;il ne reussit pas, et malgre cela revient, part au loin et s&#x27;engage dans des choses trop hautes.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שעה עומדת לו</b> לאחר זמן עתידה לעמוד לו שעה מצלחת:</div>
+          <div class="glose-fr">Le moment se tient pour lui : plus tard, un moment de reussite viendra se tenir pour lui.</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">ללמדך, שכל המשפיל עצמו, הקדוש ברוך הוא מגביהו וכו&#x27;. כתב מהרש&quot;א ז&quot;ל לכאורה כל הני שלשה חלוקות דנקט הם קרובים לענין אחד וכפול הוא עיין שם. ונראה לי בס&quot;ד מגביה קאי על חכמת התורה ומחזר קאי על שררה וממשלה ונשיאות ודוחק על ריוח ממון והצלחת משא ומתן. ונראה לי דשלש אלה נסבכים זה בזה כי תחלה מגביה עצמו בחכמה שמראה לפני העולם שהוא חכם גדול כדי שיתנו לו כתר הרבנות ואחר שיגדלוהו ונותנים לו כתר רבנות אז הקדוש ברוך הוא משפילו שיעבירו אותו מגדולתו שבזה יצטער יותר מאחר שכבר נתגדל. וכיון שהושפל לא ישקוט ולא ינוח לעשות המצאות שיחזר לגדולתו והקדוש ברוך הוא סותר בנין שלו כמו שנאמר (מלאכי א, ד) המה יבנו ואני אהרוס ובזה יצטער יותר כי רואה בעיניו שהגיעה הגדולה לידו וברחה ממנו. ואחר שרואה שלא הועילו לו כל המצאות שעשה לעצמו אז ירדוף אחר השררה להשיגה במקום אחר ודוחק את השעה ליקח מקום של אחרים ואינו שלו וגם זה לא יועיל שהשעה דוחקתו! וכן תלת לטיבותא גם כן נסבכים זה בזה כל המשפיל עצמו כדוד המלך ע&quot;ה שהיה רועה צאן ולא קפיד על כבודו הקדוש ברוך הוא מגביהו שלקחו מן הנוה מאחרי הצאן ונמשח למלך על פי ה&#x27; שאמר (שמואל א&#x27; טז, א) כי ראיתי בבניו לי מלך ואמרו רבותינו ז&quot;ל כביכול &#x27;עלי מלך&#x27; ואחר שנמשח למלך ברח מן הגדולה שחזר להיות רועה צאן ונעשה עבד לשאול המלך ע&quot;ה ולא מרד בו ליקח המלכות מידו בחייו, הנה אז הגדולה מחזרת אחריו שסבב השם יתברך שימות שאול ובניו וסוף במעט ימים תפס דוד המלך ע&quot;ה את המלוכה על כל ישראל שגם אויביו השלימי אתו. ואחר שמלך על כל ישראל עמד עליו אבשלום בנו והוא לא נשאר בירושלם על כסא מלכות להלחם עם אבשלום וסיעתו אלא נדחה מפני השעה שברח מירושלם וגם את שמעי שקללו לא פגע בו הנה סופו הצליח שהיתה השעה עומדת לו שנהרג אבשלום וכל ישראל חזרו ונכנעו אליי והשלימו אתו.</div>
+          <div class="glose-fr">Pour t&#x27;apprendre que quiconque s&#x27;abaisse, le Saint beni soit-Il l&#x27;eleve, etc. Le Maharcha a ecrit qu&#x27;a premiere vue ces trois divisions sont proches d&#x27;un meme sujet et forment une repetition ; voir la-bas. Il me semble, avec l&#x27;aide du Ciel, que « s&#x27;eleve » se rapporte a la sagesse de la Torah, « court apres » a l&#x27;autorite, au pouvoir et a la presidence, et « force » au gain d&#x27;argent et a la reussite dans le commerce. Et il me semble que ces trois choses s&#x27;enchainent l&#x27;une dans l&#x27;autre : d&#x27;abord il s&#x27;eleve par la sagesse, se montrant au monde comme un grand sage, pour qu&#x27;on lui donne la couronne du rabbinat. Apres qu&#x27;on l&#x27;a eleve et qu&#x27;on lui a donne cette couronne, alors le Saint beni soit-Il l&#x27;abaisse : on le destitue de sa grandeur, et il en souffre davantage puisqu&#x27;il avait deja ete eleve. Une fois abaisse, il ne se tient pas tranquille et invente des moyens pour revenir a sa grandeur, et le Saint beni soit-Il detruit son edifice, comme il est dit « ils batiront et Moi Je demolirai » (Malakhi 1, 4) ; il en souffre davantage, car il voit de ses yeux que la grandeur est venue dans sa main et l&#x27;a fui. Quand il voit que tous ses moyens ne lui ont servi a rien, il poursuit l&#x27;autorite pour l&#x27;obtenir ailleurs, et force le moment pour prendre la place d&#x27;autrui qui n&#x27;est pas la sienne ; cela non plus ne servira pas, car le moment le repousse ! De meme les trois [enonces] en bien s&#x27;enchainent l&#x27;un dans l&#x27;autre. « Quiconque s&#x27;abaisse » : comme le roi David, qui etait berger et ne tenait pas a son honneur ; le Saint beni soit-Il l&#x27;eleve, Il le prit du paturage, de derriere le troupeau, et il fut oint roi sur l&#x27;ordre de Hachem qui dit : « car J&#x27;ai vu parmi ses fils un roi pour Moi » (Chmouel I 16, 1), et nos maitres ont dit : pour ainsi dire, « a Ma charge, un roi ». Apres avoir ete oint roi, il fuit la grandeur : il redevint berger et se fit serviteur du roi Chaoul, et ne se revolta pas contre lui pour lui prendre la royaute de son vivant. Alors la grandeur courut apres lui : Hachem fit en sorte que Chaoul et ses fils meurent, et en peu de temps le roi David saisit la royaute sur tout Israel, et meme ses ennemis firent la paix avec lui. Apres qu&#x27;il eut regne sur tout Israel, son fils Avchalom se dressa contre lui ; il ne resta pas a Jerusalem sur le trone pour combattre Avchalom et ses partisans, mais s&#x27;effaca devant le moment et s&#x27;enfuit de Jerusalem, et ne frappa pas non plus Chimi qui l&#x27;avait maudit. A la fin il reussit : le moment se tint pour lui, Avchalom fut tue, et tout Israel revint se soumettre a lui et fit la paix avec lui.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara tire de l'humilite de Beit Hillel trois enonces paralleles : l'<b>abaissement</b> qui mene a l'elevation, la <b>fuite de la grandeur</b> qui l'attire, et la <b>patience</b> face au moment. Rachi precise que « forcer le moment » designe celui qui s'obstine a s'enrichir malgre les echecs.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תנו רבנן: שתי שנים ומחצה נחלקו בית שמאי ובית הלל. הללו אומרים: נוח לו לאדם שלא נברא יותר משנברא, והללו אומרים: נוח לו לאדם שנברא יותר משלא נברא. נמנו וגמרו: נוח לו לאדם שלא נברא יותר משנברא, עכשיו שנברא — יפשפש במעשיו. ואמרי לה: ימשמש במעשיו.</div>
+            <div class="fr"><p>Nos maitres ont enseigne : pendant deux ans et demi, Beit Chamai et Beit Hillel furent en desaccord. Ceux-ci disaient : il aurait mieux valu pour l&#x27;homme ne pas etre cree que d&#x27;etre cree ; et ceux-la disaient : il vaut mieux pour l&#x27;homme avoir ete cree que de ne pas l&#x27;avoir ete.</p><p>Ils se compterent et conclurent : il aurait mieux valu pour l&#x27;homme ne pas etre cree que d&#x27;etre cree ; maintenant qu&#x27;il a ete cree, qu&#x27;il examine ses actes. Et certains disent : qu&#x27;il palpe (yemachmech) ses actes.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>יפשפש מעשיו</b> שעשה כבר ויבדוק עבירות שבידו ויתודה וישוב:</div>
+          <div class="glose-fr">Qu&#x27;il examine ses actes : ceux qu&#x27;il a deja faits ; qu&#x27;il verifie les fautes qu&#x27;il a commises, qu&#x27;il se confesse et fasse techouva.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ימשמש במעשיו</b> כגון אם בא מצוה לידו יחשב הפסד מצוה כנגד שכרה ולא יניח לעשותה בשביל ההפסד שהרי שכרה עתיד לבוא ואם באת לידו עבירה יחשב שכרו שמשתכר בה עכשיו כנגד הפסדה העתיד ליפרע ממנו:</div>
+          <div class="glose-fr">Qu&#x27;il palpe ses actes : par exemple, si une mitsva se presente a lui, qu&#x27;il compte la perte [causee par] la mitsva face a sa recompense, et qu&#x27;il ne renonce pas a la faire a cause de la perte, car sa recompense viendra ; et si une faute se presente a lui, qu&#x27;il compte le gain qu&#x27;il en tire maintenant face a la perte qui lui sera reclamee a l&#x27;avenir.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>נוח לו לאדם שלא נברא</b> והא דאמרינן בפ&quot;ק דע&quot;ג (ד&#x27; ה.) בואו ונחזיק טובה לאבותינו שאילמלי הן לא חטאו לא באנו לעולם הא מפרש התם אימא כמי שלא באנו לעולם א&quot;נ הכא איירי בסתם בני אדם אבל צדיק אשריו ואשרי דורו:</div>
+          <div class="glose-fr">Il aurait mieux valu pour l&#x27;homme ne pas etre cree : quant a ce que nous disons au premier chapitre d&#x27;Avoda Zara (5a) : « venez, soyons reconnaissants envers nos peres, car s&#x27;ils n&#x27;avaient pas faute, nous ne serions pas venus au monde », on l&#x27;explique la-bas : dis « [nous serions] comme si nous n&#x27;etions pas venus au monde ». Ou bien : ici il s&#x27;agit des hommes ordinaires, mais le juste, heureux est-il et heureuse est sa generation.</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">שתי שנים ומחצה נחלקו בית שמאי ובית הלל. הנה הרב פתח עינים ז&quot;ל הביא סדר חשבון בדבר זה בשם הגאון מהר&quot;י ז&quot;ל ויש בזה דוחקים הרבה כאשר יראה הרואה. ואנא עבדא נראה לי בס&quot;ד לבאר החשבון בדרך זה כי יצחק עשה החשבון על שבעים שנה וקבל עליו י&quot;ב שנה וחצי אך בקרא כתיב (תהלים צ, י) ואם בגבורת שמונים שנה נמצא הזכיר שמונים ואם תנכה מאלו העשרה שנים שהם משבעים עד שמונים כל הנכויים שניכה יצחק לפי ערך השבעים ישאר שתי שנים ומחצה אשר בעבורם לא דבר יצחק אבינו ע&quot;ה כלום ולא לקח על עצמו שום חלק מהם ולכן על אלו השתי שנים ומחצה נחלקו חד אמר נח שלא נברא כי אין להם על מה לסמוך וחד אמר נח לו שנברא.</div>
+          <div class="glose-fr">Pendant deux ans et demi Beit Chamai et Beit Hillel furent en desaccord. Le Rav Petah Einayim a rapporte un ordre de calcul a ce sujet au nom du Gaon Maharai, et il comporte bien des difficultes, comme le verra le lecteur. Moi, le serviteur, il me semble, avec l&#x27;aide du Ciel, expliquer le calcul ainsi : Its&#x27;hak fit le compte sur soixante-dix ans et prit sur lui douze ans et demi. Mais le verset dit « et avec la force, quatre-vingts ans » (Tehilim 90, 10) ; il mentionne donc quatre-vingts. Si tu retires de ces dix annees, de soixante-dix a quatre-vingts, toutes les deductions qu&#x27;a faites Its&#x27;hak au prorata des soixante-dix, il reste deux ans et demi, pour lesquels Its&#x27;hak notre pere n&#x27;a rien dit et n&#x27;a pris sur lui aucune part. C&#x27;est sur ces deux ans et demi qu&#x27;ils furent en desaccord : l&#x27;un dit qu&#x27;il aurait mieux valu ne pas etre cree, car ils n&#x27;ont rien sur quoi s&#x27;appuyer, et l&#x27;autre dit qu&#x27;il vaut mieux avoir ete cree.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">הללו אומרים: נח לו לאדם שלא נברא יותר משנברא וכו&#x27;. נראה לי בס&quot;ד פלוגתייהו בהאי טעמא מר סבר אזלינן בתר רוב מנין ומר סבר בתר רוב בנין, דעל הרוב האדם עושה עבירות יותר מן המצות ומכל מצוה בורא מלאך טוב ומן עבירה מלאך רע ולפי זה העונות הם רוב מנין אך המצות הם רוב בנין כי במה נחשבים המשחיתים כנגד מלאכים טובים הנבראים מן המצות. ולכן חד אמר נח שלא נברא דאזיל בתר רוב מנין וחד אמר נח לו שנברא דאזיל בתר בנין. וידוע מה שכתב התוספות דבית שמאי היו רוב בנין ובית הלל רוב מנין דבית שמאי מחדדי טפי אבל במנין בית הלל טפי ולכן אחר שאמרה בת קול הלכה כבית הלל דמשמע רוב מנין עדיף אז נמנו וגמרו: נח לו לאדם שלא נברא.</div>
+          <div class="glose-fr">Ceux-ci disaient : il aurait mieux valu pour l&#x27;homme ne pas etre cree que d&#x27;etre cree, etc. Il me semble, avec l&#x27;aide du Ciel, que leur desaccord tient a ceci : l&#x27;un suit la majorite en nombre (rov minyan), l&#x27;autre la majorite en qualite (rov binyan). Le plus souvent l&#x27;homme commet plus de fautes que de mitsvot ; de chaque mitsva il cree un ange bon, et de chaque faute un ange mauvais. Selon cela, les fautes sont la majorite en nombre, mais les mitsvot la majorite en qualite, car que valent les destructeurs face aux anges bons crees par les mitsvot ? C&#x27;est pourquoi l&#x27;un dit qu&#x27;il aurait mieux valu ne pas etre cree, suivant la majorite en nombre, et l&#x27;autre qu&#x27;il vaut mieux avoir ete cree, suivant la qualite. Et l&#x27;on connait ce qu&#x27;ont ecrit les Tossefot : Beit Chamai etaient la majorite en qualite et Beit Hillel la majorite en nombre, car Beit Chamai etaient plus aiguises, mais en nombre Beit Hillel etaient plus nombreux. C&#x27;est pourquoi, apres que la bat qol eut dit « la halakha est comme Beit Hillel », ce qui implique que la majorite en nombre prevaut, alors ils se compterent et conclurent : il aurait mieux valu pour l&#x27;homme ne pas etre cree.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">ועכשיו שנברא, יפשפש במעשיו! ואמרי לה: ימשמש במעשיו. נראה לי בס&quot;ד יפשפש בחלק העבירות שעשה ואומרו ימשמש במעשיו היינו בחלק הטוב דהיינו מצוה בלא כונה ותפלה שלא בכונה וכמו שכתבתי בס&quot;ד בביאור מאמר התנא (אבות ג, טו) ובטוב העולם נדון כלומר בחלק הטוב שהם המצות.</div>
+          <div class="glose-fr">Et maintenant qu&#x27;il a ete cree, qu&#x27;il examine ses actes ! Et certains disent : qu&#x27;il palpe ses actes. Il me semble, avec l&#x27;aide du Ciel : « qu&#x27;il examine » porte sur la part des fautes qu&#x27;il a commises, et « qu&#x27;il palpe ses actes » sur la part du bien, c&#x27;est-a-dire une mitsva sans intention et une priere sans kavana, comme je l&#x27;ai ecrit, avec l&#x27;aide du Ciel, en expliquant le propos du tanna (Avot 3, 15) « et le monde est juge avec bonte », c&#x27;est-a-dire dans la part du bien, qui sont les mitsvot.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deuxieme desaccord des deux ecoles, cette fois sur une question de pensee. La conclusion, obtenue par un <b>vote</b> (nimnou ve-gamrou), donne raison a la position severe, mais la tempere par une consigne pratique : puisque l'homme existe, il doit <b>examiner ses actes passes</b> (yefachpech) ou, selon l'autre version, <b>peser ses actes a venir</b> (yemachmech), comme l'explique Rachi.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מתני׳ הקורה שאמרו רחבה כדי לקבל אריח. ואריח, חצי לבנה של שלשה טפחים. דייה לקורה שתהא רחבה טפח כדי לקבל אריח לרחבו.</div>
+            <div class="fr"><p>MICHNA. La qora dont on a dit [qu&#x27;elle doit etre] large de facon a recevoir un ariah.</p><p>Et l&#x27;ariah est la moitie d&#x27;une brique de trois tefahim. Il suffit a la qora d&#x27;etre large d&#x27;un tefah, de facon a recevoir un ariah dans sa largeur.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מתני&#x27; רחבה כדי לקבל אריח</b> שתהא דומה לקביעות לבנות עליה בנין:</div>
+          <div class="glose-fr">Michna. Large de facon a recevoir un ariah : pour qu&#x27;elle ressemble a quelque chose de fixe, sur quoi l&#x27;on bâtit une construction.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ואריח חצי לבנה של ג&#x27; טפחים</b> נמצא אריח טפח ומחצה רוחב:</div>
+          <div class="glose-fr">Et l&#x27;ariah est la moitie d&#x27;une brique de trois tefahim : l&#x27;ariah a donc une largeur d&#x27;un tefah et demi.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דייה לקורה ברוחב טפח כדי לקבל אריח זה ברחבו</b> ובגמרא פריך טפח ומחצה בעי:</div>
+          <div class="glose-fr">Il suffit a la qora d&#x27;une largeur d&#x27;un tefah, de facon a recevoir cet ariah dans sa largeur : et dans la Guemara on objecte qu&#x27;il faut un tefah et demi.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">מתני&#x27; הקורה שאמרו רחבה כדי לקבל אריח והאריח חצי לבנה של שלשה טפחים. דיה לקורה שתהא רחבה טפח כדי לקבל אריח לרחבו רחבה לקבל אריח ובריאה לקבל אריח. ר&#x27; יהודה אומר רחבה אע&quot;פ שאין בריאה:</div>
+          <div class="glose-fr">Michna. La qora dont on a dit [qu&#x27;elle doit etre] large de facon a recevoir un ariah, et l&#x27;ariah est la moitie d&#x27;une brique de trois tefahim. Il suffit a la qora d&#x27;etre large d&#x27;un tefah, de facon a recevoir un ariah dans sa largeur ; large pour recevoir un ariah et solide pour recevoir un ariah. Rabbi Yehouda dit : large, meme si elle n&#x27;est pas solide.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Retour a la halakha des <b>mevoot</b> (impasses). Pour permettre le transport dans un mavoy, on pose a son entree une <b>qora</b> (poutre transversale). Sa largeur minimale se mesure par l'<b>ariah</b>, une demi-brique. La brique (levena) mesure trois tefahim, l'ariah un tefah et demi. La michna se contente d'une qora d'un tefah, sur laquelle l'ariah pose dans sa largeur peut tenir. Rachi : la qora doit ressembler a un element de construction stable.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 340" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="760" height="340" fill="#fbfaf7"/>
+<text x="380" y="26" text-anchor="middle" font-family="Helvetica,Arial" font-size="15" font-weight="bold" fill="#2b2b2b">La qora du mavoy : largeur et solidite (michna, seg. 14-16)</text>
+<text x="190" y="56" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#2b4a6a">Les mesures (coupe transversale)</text>
+<rect x="60" y="80" width="90" height="30" fill="#c9a36a" stroke="#6a4a2b"/>
+<text x="105" y="100" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">levena</text>
+<text x="105" y="128" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">brique : 3 tefahim</text>
+<rect x="210" y="80" width="45" height="30" fill="#d9b98a" stroke="#6a4a2b"/>
+<text x="232" y="100" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">ariah</text>
+<text x="232" y="128" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">1,5 tefah</text>
+<rect x="160" y="170" width="45" height="22" fill="#d9b98a" stroke="#6a4a2b"/>
+<rect x="152" y="192" width="30" height="24" fill="#8a6a4a" stroke="#4a3a2b"/>
+<text x="167" y="208" text-anchor="middle" font-family="Helvetica,Arial" font-size="10" fill="#fff">qora</text>
+<text x="100" y="244" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">qora de 1 tefah : l'ariah pose</text>
+<text x="100" y="260" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">dans sa largeur (lirhavo) suffit</text>
+<text x="100" y="282" font-family="Helvetica,Arial" font-size="11" fill="#a33">(la Guemara objectera : il faut 1,5)</text>
+<line x1="380" y1="46" x2="380" y2="320" stroke="#ccc"/>
+<text x="570" y="56" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#2b4a6a">Solidite et formes</text>
+<rect x="400" y="70" width="340" height="96" rx="8" fill="#eef3f8" stroke="#4a6a8a"/>
+<text x="414" y="92" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Premier tanna :</text>
+<text x="414" y="110" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">large ET solide pour porter l'ariah</text>
+<text x="414" y="134" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Rabbi Yehouda :</text>
+<text x="414" y="152" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">large suffit ; paille, roseau = metal</text>
+<rect x="400" y="180" width="340" height="140" rx="8" fill="#eef6ee" stroke="#4a7a4a"/>
+<text x="414" y="202" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">courbe : vue comme droite</text>
+<text x="414" y="222" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">ronde : vue comme carree</text>
+<circle cx="480" cy="274" r="30" fill="none" stroke="#8a6a4a" stroke-width="3"/>
+<line x1="450" y1="274" x2="510" y2="274" stroke="#a33" stroke-width="1.5"/>
+<text x="480" y="268" text-anchor="middle" font-family="Helvetica,Arial" font-size="10" fill="#a33">1 tefah</text>
+<text x="530" y="266" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">circonference 3 tefahim</text>
+<text x="530" y="286" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">=&gt; largeur (diametre) 1 tefah</text>
+</svg></div><div class="svg-cap">Brique, ariah et qora : les mesures de la michna.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רחבה כדי לקבל אריח ובריאה כדי לקבל אריח. רבי יהודה אומר: רחבה אף על פי שאין בריאה. היתה של קש ושל קנים — רואין אותה כאילו היא של מתכת.</div>
+            <div class="fr"><p>Large de facon a recevoir un ariah et solide de facon a recevoir un ariah. Rabbi Yehouda dit : large, meme si elle n&#x27;est pas solide.</p><p>Si elle etait de paille ou de roseaux, on la considere comme si elle etait de metal.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>היתה של קש כו&#x27;</b> רבי יהודה קאמר לה:</div>
+          <div class="glose-fr">Si elle etait de paille, etc. : c&#x27;est Rabbi Yehouda qui le dit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Mahloket : le premier tanna exige que la qora soit <b>large</b> et <b>solide</b> (beria) pour porter reellement l'ariah. <b>Rabbi Yehouda</b> se contente de la largeur. Selon Rachi, la regle de la qora de paille ou de roseaux, consideree comme de metal, appartient a Rabbi Yehouda.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg16">
+          <div class="seg-num">17</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">עקומה — רואין אותה כאילו היא פשוטה, עגולה — רואין אותה כאילו היא מרובעת. כל שיש בהיקיפו שלשה טפחים יש בו רוחב טפח.</div>
+            <div class="fr"><p>Si elle est courbe, on la considere comme si elle etait droite ; si elle est ronde, on la considere comme si elle etait carree. Tout ce qui a trois tefahim de circonference a un tefah de largeur.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>עקומה</b> שאין אריח יכול לעמוד עליה:</div>
+          <div class="glose-fr">Courbe : l&#x27;ariah ne peut tenir dessus.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>עגולה</b> ואין אריח יכול לעמוד עליה אבל עבה היא שאם תחלק יהא רחבה טפח:</div>
+          <div class="glose-fr">Ronde : l&#x27;ariah ne peut tenir dessus, mais elle est epaisse, de sorte que si on la taillait, elle aurait un tefah de largeur.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>רואין אותה כאלו היא מרובעת</b> נפסלת או חלוקה ואי זו היא מדת עגולה להכשיר:</div>
+          <div class="glose-fr">On la considere comme si elle etait carree : [on demande si] elle est invalide ou valide, et quelle est la mesure d&#x27;une ronde pour etre valide.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כל שיש בהקיפה ג&#x27; טפחים</b> שצריכה חוט ארוך ג&#x27; טפחים להקיפה סביב בידוע שיש בה רוחב טפח אם תחלק:</div>
+          <div class="glose-fr">Tout ce qui a trois tefahim de circonference : s&#x27;il faut un fil long de trois tefahim pour en faire le tour, on sait qu&#x27;elle aurait un tefah de largeur si on la taillait.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La forme n'empeche pas la validite : une qora <b>courbe</b> est vue comme droite, une qora <b>ronde</b> comme carree. Pour la poutre ronde, la michna donne une regle de mesure : une <b>circonference</b> de trois tefahim correspond a un <b>diametre</b> d'un tefah (rapport de 3 pour 1 utilise par la michna).</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Eruvin_13a.html">&lsaquo; Eruvin 13a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Eruvin_14a.html">Eruvin 14a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

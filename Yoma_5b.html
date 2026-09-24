@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yoma 5b — ce qui invalide les milouim (ikkouva) et l&#x27;ordre du revetement des cohanim</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Yoma 5b — ce qui invalide les milouim (ikkouva) et l&#x27;ordre du revetement des cohanim</h1>
+    <div class="ref">Yoma 5b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_5a.html">&lsaquo; Yoma 5a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> Ce daf clot l&#x27;enquete sur l&#x27;investiture des cohanim (milouim). Premiere question : un detail ecrit seulement dans la section de la REALISATION (Lev 8), et non dans celle du COMMANDEMENT (Ex 29), invalide-t-il aussi l&#x27;inauguration s&#x27;il manque ?</p><p>Trois reponses : la guezera chava &#x27;petach&#x27;-&#x27;petach&#x27; (Rav Nahman bar Yitzhak), &#x27;ve-chmartem et michmeret Hashem&#x27; (Rav Mecharchia), et &#x27;ki khen tzuveiti&#x27; (Rav Achi). Une baraita distingue alors trois expressions du commandement (Lev 8-10) et leur enseignement, dont l&#x27;obligation de manger la mincha du huitieme jour meme en etat d&#x27;aninout.</p><p>R. Yossi bar Hanina ajoute, par le vav de &#x27;ve-zeh ha-davar&#x27; et une guezera chava &#x27;zeh&#x27;-&#x27;zeh&#x27;, les caleçons et le dixieme d&#x27;epha ; R.</p><p>Yohanan au nom de Rachbi ajoute que meme la lecture publique de la section (mikra paracha) est indispensable. Le daf s&#x27;acheve sur l&#x27;ordre du revetement : consensus sur la tunique et la mitre (Aharon d&#x27;abord), litige sur la ceinture (Aharon puis ses fils, ou tous simultanement), dont la resolution ouvre 6a.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="430" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Yoma 5b — qu'est-ce qui invalide (me'akev) les milouim ?</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.5" fill="#57534e">Un detail ecrit dans la section du COMMANDEMENT (Ex 29) invalide s'il manque. Et un detail ecrit seulement dans la REALISATION (Lev 8) ?</text>
+  <rect x="40" y="62" width="320" height="52" rx="6" fill="#eef2ff" stroke="#a9b4e8"/>
+  <text x="200" y="84" text-anchor="middle" font-size="12" font-weight="700" fill="#3730a3">Section du commandement (tzavaa)</text>
+  <text x="200" y="102" text-anchor="middle" font-size="10" fill="#57534e">Ve-atta Tetzave (Ex 29). Deja acquis (5a) : 'kakha' = ikkouva.</text>
+  <rect x="400" y="62" width="320" height="52" rx="6" fill="#fef2f2" stroke="#e8b4b4"/>
+  <text x="560" y="84" text-anchor="middle" font-size="12" font-weight="700" fill="#b4231f">Section de la realisation (asiya)</text>
+  <text x="560" y="102" text-anchor="middle" font-size="10" fill="#57534e">Tzav et Aharon (Lev 8). Manque le terme 'kakha'. D'ou l'ikkouva ?</text>
+  <line x1="560" y1="114" x2="560" y2="140" stroke="#b0a99f" stroke-width="1.4"/>
+  <g font-size="10">
+  <rect x="34" y="142" width="228" height="88" rx="5" fill="#f8fafc" stroke="#e2e5ea"/>
+  <text x="148" y="162" text-anchor="middle" font-size="11" font-weight="700" fill="#292524">Rav Nahman b. Yitzhak</text>
+  <text x="148" y="182" text-anchor="middle">guezera chava</text>
+  <text x="148" y="199" text-anchor="middle" font-weight="700" fill="#3730a3">'petach' - 'petach'</text>
+  <text x="148" y="217" text-anchor="middle" fill="#57534e">le mot 'entree' relie les</text>
+  <text x="148" y="228" text-anchor="middle" fill="#57534e">deux sections (Ex 29:32 / Lev 8:31)</text>
+  <rect x="266" y="142" width="228" height="88" rx="5" fill="#f8fafc" stroke="#e2e5ea"/>
+  <text x="380" y="162" text-anchor="middle" font-size="11" font-weight="700" fill="#292524">Rav Mecharchia</text>
+  <text x="380" y="182" text-anchor="middle" font-weight="700" fill="#3730a3">'ve-chmartem et</text>
+  <text x="380" y="197" text-anchor="middle" font-weight="700" fill="#3730a3">michmeret Hashem'</text>
+  <text x="380" y="215" text-anchor="middle" fill="#57534e">(Lev 8:35) 'vous garderez'</text>
+  <text x="380" y="226" text-anchor="middle" fill="#57534e">= gardez tout l'ecrit. Pas besoin de g.ch.</text>
+  <rect x="498" y="142" width="228" height="88" rx="5" fill="#f8fafc" stroke="#e2e5ea"/>
+  <text x="612" y="162" text-anchor="middle" font-size="11" font-weight="700" fill="#292524">Rav Achi</text>
+  <text x="612" y="182" text-anchor="middle" font-weight="700" fill="#3730a3">'ki khen tzuveiti'</text>
+  <text x="612" y="200" text-anchor="middle" fill="#57534e">(Lev 8:35) 'car ainsi</text>
+  <text x="612" y="211" text-anchor="middle" fill="#57534e">il m'a ete ordonne'</text>
+  <text x="612" y="228" text-anchor="middle" fill="#57534e">= terme d'invalidation.</text>
+  </g>
+  <rect x="40" y="248" width="680" height="54" rx="6" fill="#ecfdf5" stroke="#bfe6d2"/>
+  <text x="380" y="270" text-anchor="middle" font-size="11.5" font-weight="700" fill="#065f46">R. Yohanan au nom de R. Chimon bar Yohai : meme la LECTURE de la section (mikra paracha) est indispensable</text>
+  <text x="380" y="290" text-anchor="middle" font-size="10" fill="#047857">'Moche dit a l'assemblee : voici la chose que Hashem a ordonne' (Lev 8:5) -- meme le dibbour (proclamation) invalide s'il manque.</text>
+  <rect x="40" y="316" width="680" height="86" rx="6" fill="#fffbeb" stroke="#f5e2a8"/>
+  <text x="380" y="337" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">Details non ecrits explicitement dans la section, ajoutes par R. Yossi bar Hanina</text>
+  <text x="380" y="357" text-anchor="middle" font-size="10" fill="#78350f">'ve-ZEH ha-davar asher ta'aseh lahem' (Ex 29:1) : le vav (et) ajoute au sujet precedent =></text>
+  <text x="230" y="379" text-anchor="middle" font-size="10.5" font-weight="700" fill="#78350f">les MIKHNASAYIM (caleçons)</text>
+  <text x="230" y="393" text-anchor="middle" font-size="9.5" fill="#92400e">voisins de la section des habits</text>
+  <text x="540" y="379" text-anchor="middle" font-size="10.5" font-weight="700" fill="#78350f">le DIXIEME D'EPHA (asirit ha-eifa)</text>
+  <text x="540" y="393" text-anchor="middle" font-size="9.5" fill="#92400e">g. chava 'zeh'-'zeh' (Lev 6:13)</text>
+</svg></div>
+          <figcaption>Les sources de l&#x27;invalidation (ikkouva) pour un detail ecrit seulement dans la section de la realisation, et les elements ajoutes par derachot.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="300" fill="#fffdf8"/>
+  <text x="360" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Baraita : les trois expressions du commandement dans la realisation</text>
+  <rect x="24" y="44" width="216" height="230" rx="6" fill="#eef2ff" stroke="#a9b4e8"/>
+  <rect x="252" y="44" width="216" height="230" rx="6" fill="#f0fdf4" stroke="#bfe6d2"/>
+  <rect x="480" y="44" width="216" height="230" rx="6" fill="#fef2f2" stroke="#e8b4b4"/>
+  <text x="132" y="68" text-anchor="middle" font-size="12" font-weight="700" fill="#3730a3">'ki khen tzuveiti'</text>
+  <text x="132" y="84" text-anchor="middle" font-size="9.5" fill="#57534e">car ainsi il m'a ete ordonne</text>
+  <text x="132" y="99" text-anchor="middle" font-size="9" fill="#94908a">Lev 8:35</text>
+  <text x="360" y="68" text-anchor="middle" font-size="12" font-weight="700" fill="#065f46">'ka'asher tzuveiti'</text>
+  <text x="360" y="84" text-anchor="middle" font-size="9.5" fill="#57534e">comme il m'a ete ordonne</text>
+  <text x="360" y="99" text-anchor="middle" font-size="9" fill="#94908a">Lev 10:18</text>
+  <text x="588" y="68" text-anchor="middle" font-size="12" font-weight="700" fill="#b4231f">'ka'asher tziva Hashem'</text>
+  <text x="588" y="84" text-anchor="middle" font-size="9.5" fill="#57534e">comme Hashem l'a ordonne</text>
+  <text x="588" y="99" text-anchor="middle" font-size="9" fill="#94908a">Lev 10:15</text>
+  <line x1="132" y1="110" x2="132" y2="132" stroke="#a9b4e8" stroke-width="1.2"/>
+  <line x1="360" y1="110" x2="360" y2="132" stroke="#bfe6d2" stroke-width="1.2"/>
+  <line x1="588" y1="110" x2="588" y2="132" stroke="#e8b4b4" stroke-width="1.2"/>
+  <g font-size="10" fill="#292524">
+  <text x="132" y="150" text-anchor="middle" font-weight="700">enseigne :</text>
+  <text x="132" y="172" text-anchor="middle">on la mange</text>
+  <text x="132" y="188" text-anchor="middle">en etat d'ANINOUT</text>
+  <text x="132" y="204" text-anchor="middle" font-size="9" fill="#57534e">(deuil du 1er jour) --</text>
+  <text x="132" y="218" text-anchor="middle" font-size="9" fill="#57534e">la mincha du 8e jour,</text>
+  <text x="132" y="232" text-anchor="middle" font-size="9" fill="#57534e">malgre le deuil de</text>
+  <text x="132" y="246" text-anchor="middle" font-size="9" fill="#57534e">Nadav et Avihou</text>
+  <text x="360" y="150" text-anchor="middle" font-weight="700">enseigne :</text>
+  <text x="360" y="172" text-anchor="middle">Moche le leur dit</text>
+  <text x="360" y="188" text-anchor="middle">AU MOMENT MEME</text>
+  <text x="360" y="204" text-anchor="middle" font-size="9" fill="#57534e">de l'evenement (le bouc</text>
+  <text x="360" y="218" text-anchor="middle" font-size="9" fill="#57534e">chatat brule) -- 'comme</text>
+  <text x="360" y="232" text-anchor="middle" font-size="9" fill="#57534e">je vous l'ai ordonne</text>
+  <text x="360" y="246" text-anchor="middle" font-size="9" fill="#57534e">pour la mincha'</text>
+  <text x="588" y="150" text-anchor="middle" font-weight="700">enseigne :</text>
+  <text x="588" y="172" text-anchor="middle">'ce n'est PAS</text>
+  <text x="588" y="188" text-anchor="middle">de moi-meme</text>
+  <text x="588" y="204" text-anchor="middle">que je le dis'</text>
+  <text x="588" y="226" text-anchor="middle" font-size="9" fill="#57534e">-- l'ordre vient de</text>
+  <text x="588" y="240" text-anchor="middle" font-size="9" fill="#57534e">Hashem, non de Moche</text>
+  </g>
+</svg></div>
+          <figcaption>La baraita des trois expressions du commandement (Lev 8-10) et ce que chacune enseigne.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="360" fill="#fffdf8"/>
+  <text x="360" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Comment Moche revetit-il Aharon et ses fils ? (le-misbar kra'ei)</text>
+  <rect x="40" y="42" width="640" height="52" rx="6" fill="#ecfdf5" stroke="#bfe6d2"/>
+  <text x="360" y="63" text-anchor="middle" font-size="11.5" font-weight="700" fill="#065f46">Consensus : tunique (ketonet) et mitre (mitznefet) -- Aharon D'ABORD, puis les fils</text>
+  <text x="360" y="82" text-anchor="middle" font-size="9.5" fill="#047857">Tant dans le commandement que dans la realisation, Aharon precede. (Les mikhnasayim precedent tout, non contestes.)</text>
+  <text x="360" y="116" text-anchor="middle" font-size="12" font-weight="700" fill="#b4231f">Le litige ne porte que sur la CEINTURE (avnet)</text>
+  <rect x="40" y="130" width="310" height="150" rx="6" fill="#eef2ff" stroke="#a9b4e8"/>
+  <text x="195" y="152" text-anchor="middle" font-size="11.5" font-weight="700" fill="#3730a3">Position A : Aharon puis ses fils</text>
+  <text x="195" y="176" text-anchor="middle" font-size="10" fill="#292524">S'appuie sur la REALISATION :</text>
+  <text x="195" y="198" text-anchor="middle" font-size="10" fill="#3730a3">'il le ceignit de la ceinture'</text>
+  <text x="195" y="212" text-anchor="middle" font-size="9" fill="#94908a">(Lev 8:7 -- Aharon, avec tous ses habits)</text>
+  <text x="195" y="234" text-anchor="middle" font-size="10" fill="#3730a3">puis 'il les ceignit de ceintures'</text>
+  <text x="195" y="248" text-anchor="middle" font-size="9" fill="#94908a">(Lev 8:13 -- les fils, ensuite)</text>
+  <text x="195" y="270" text-anchor="middle" font-size="9.5" fill="#57534e">=> Aharon entierement revetu, puis les fils</text>
+  <rect x="370" y="130" width="310" height="150" rx="6" fill="#fef2f2" stroke="#e8b4b4"/>
+  <text x="525" y="152" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b4231f">Position B : simultanement (bevat ahat)</text>
+  <text x="525" y="176" text-anchor="middle" font-size="10" fill="#292524">S'appuie sur le COMMANDEMENT :</text>
+  <text x="525" y="200" text-anchor="middle" font-size="10" fill="#b4231f">'et tu les ceindras d'une ceinture,</text>
+  <text x="525" y="214" text-anchor="middle" font-size="10" fill="#b4231f">Aharon et ses fils'</text>
+  <text x="525" y="228" text-anchor="middle" font-size="9" fill="#94908a">(Ex 29:9 -- ensemble, sans interruption)</text>
+  <text x="525" y="252" text-anchor="middle" font-size="9.5" fill="#57534e">=> la ceinture des uns et des autres</text>
+  <text x="525" y="266" text-anchor="middle" font-size="9.5" fill="#57534e">dans un seul et meme mouvement</text>
+  <rect x="40" y="296" width="640" height="50" rx="6" fill="#fffbeb" stroke="#f5e2a8"/>
+  <text x="360" y="317" text-anchor="middle" font-size="10.5" font-weight="700" fill="#92400e">Objection a B : mais la realisation dit bien 'il le ceignit' (Aharon) PUIS 'il les ceignit' (les fils) !</text>
+  <text x="360" y="335" text-anchor="middle" font-size="10" fill="#78350f">La guemara resout cette difficulte au debut de 6a.</text>
+</svg></div>
+          <figcaption>La mahloket sur l&#x27;ordre du revetement : consensus sur ketonet/mitznefet, litige sur la ceinture (avnet).</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מִילְּתָא דִּכְתִיבָא בְּהַאי עִנְיָנָא. מִילְּתָא דְּלָא כְּתִיבָא בְּהַאי עִנְיָנָא מְנָא לַן?</div>
+            <div class="fr"><p>[On vient d&#x27;etablir (5a) que] ce qui est ecrit dans ce contexte-ci [la section du commandement des milouim, dans Ve-atta Tetzave (Ex 29)] [invalide l&#x27;investiture s&#x27;il manque]. Mais ce qui N&#x27;est PAS ecrit dans ce contexte-ci — [et ne figure que dans la section de la realisation, Tzav et Aharon (Lev 8)] — d&#x27;ou tirons-nous [qu&#x27;il invalide egalement] ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִילְּתָא דִּכְתִיבָא בְּהַאי עִנְיָנָא</b> בְּפָרָשַׁת צַווָּאָה דְּמִלּוּאִים שֶׁנֶּאֱמַר בִּוְאַתָּה תְּצַוֶּה:</div>
+          <div class="glose-fr">Ce qui est ecrit dans ce contexte-ci — dans la section du commandement (tzavaa) des milouim, celle qui est enoncee dans Ve-atta Tetzave (Ex 29).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּלָא כְּתִיב</b> בְּפָרָשַׁת הַמִּלּוּאִים בְּזֶה הַדָּבָר אֲשֶׁר תַּעֲשֶׂה וְגוֹ&#x27; לָא כְּתִיב שֶׁיִּתֵּן אֶל הַחֹושֶׁן אוּרִים וְתֻומִּים כְּשֶׁהִלְבִּישָׁן אֲבָל בְּפָרָשַׁת צַו אֶת אַהֲרֹן שֶׁנֶּאֶמְרָה שָׁם עֲשִׂייַּת הַמִּלּוּאִים כְּתִיב וְיִתֵּן עָלָיו אֶת הַחֹשֶׁן וַיִּתֵּן אֶל הַחֹשֶׁן אֶת הָאוּרִים וְאֶת הַתֻּומִּים וא&quot;ת אַף בִּוְאַתָּה תְּצַוֶּה נֶאֱמַר וְנָתַתָּ אֶל חֹשֶׁן הַמִּשְׁפָּט אֶת הָאוּרִים וְאֶת הַתֻּומִּים אֵין זוֹ מִפָּרָשַׁת הַמִּלּוּאִים אֶלָּא עֲשִׂייַּת הַבְּגָדִים וּבְהַהוּא עִנְיָנָא לָא כְּתִיב כָּכָה לְעִיכּוּבָא:</div>
+          <div class="glose-fr">Ce qui n&#x27;est pas ecrit — dans la section des milouim &#x27;ve-zeh ha-davar asher ta&#x27;aseh&#x27; (Ex 29:1) il n&#x27;est pas ecrit qu&#x27;on place dans le pectoral (choshen) les ourim et les toumim au moment ou on les revet ; mais dans la section &#x27;Tzav et Aharon&#x27;, ou est enoncee la realisation des milouim, il est ecrit &#x27;il posa sur lui le pectoral, et mit dans le pectoral les ourim et les toumim&#x27; (Lev 8:8). Et si tu objectes : dans Ve-atta Tetzave aussi il est dit &#x27;tu mettras dans le pectoral du jugement les ourim et les toumim&#x27; (Ex 28:30) — [reponse :] ce verset-la n&#x27;appartient pas a la section des milouim, mais a celle de la confection des habits, et dans ce contexte-la le terme d&#x27;invalidation &#x27;kakha&#x27; n&#x27;est pas ecrit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara poursuit la sougya des <b>milouim</b> (l'investiture des cohanim). En 5a on a etabli qu'un detail ecrit dans la section du <b>commandement</b> (tzavaa, Ex 29) est <b>indispensable</b> (me'akev) : s'il est omis, l'investiture est invalide. Reste une question : certains details ne figurent QUE dans la section de la <b>realisation</b> (asiya, Lev 8), pas dans le commandement. D'ou sait-on qu'eux aussi invalident ?</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="430" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Yoma 5b — qu'est-ce qui invalide (me'akev) les milouim ?</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.5" fill="#57534e">Un detail ecrit dans la section du COMMANDEMENT (Ex 29) invalide s'il manque. Et un detail ecrit seulement dans la REALISATION (Lev 8) ?</text>
+  <rect x="40" y="62" width="320" height="52" rx="6" fill="#eef2ff" stroke="#a9b4e8"/>
+  <text x="200" y="84" text-anchor="middle" font-size="12" font-weight="700" fill="#3730a3">Section du commandement (tzavaa)</text>
+  <text x="200" y="102" text-anchor="middle" font-size="10" fill="#57534e">Ve-atta Tetzave (Ex 29). Deja acquis (5a) : 'kakha' = ikkouva.</text>
+  <rect x="400" y="62" width="320" height="52" rx="6" fill="#fef2f2" stroke="#e8b4b4"/>
+  <text x="560" y="84" text-anchor="middle" font-size="12" font-weight="700" fill="#b4231f">Section de la realisation (asiya)</text>
+  <text x="560" y="102" text-anchor="middle" font-size="10" fill="#57534e">Tzav et Aharon (Lev 8). Manque le terme 'kakha'. D'ou l'ikkouva ?</text>
+  <line x1="560" y1="114" x2="560" y2="140" stroke="#b0a99f" stroke-width="1.4"/>
+  <g font-size="10">
+  <rect x="34" y="142" width="228" height="88" rx="5" fill="#f8fafc" stroke="#e2e5ea"/>
+  <text x="148" y="162" text-anchor="middle" font-size="11" font-weight="700" fill="#292524">Rav Nahman b. Yitzhak</text>
+  <text x="148" y="182" text-anchor="middle">guezera chava</text>
+  <text x="148" y="199" text-anchor="middle" font-weight="700" fill="#3730a3">'petach' - 'petach'</text>
+  <text x="148" y="217" text-anchor="middle" fill="#57534e">le mot 'entree' relie les</text>
+  <text x="148" y="228" text-anchor="middle" fill="#57534e">deux sections (Ex 29:32 / Lev 8:31)</text>
+  <rect x="266" y="142" width="228" height="88" rx="5" fill="#f8fafc" stroke="#e2e5ea"/>
+  <text x="380" y="162" text-anchor="middle" font-size="11" font-weight="700" fill="#292524">Rav Mecharchia</text>
+  <text x="380" y="182" text-anchor="middle" font-weight="700" fill="#3730a3">'ve-chmartem et</text>
+  <text x="380" y="197" text-anchor="middle" font-weight="700" fill="#3730a3">michmeret Hashem'</text>
+  <text x="380" y="215" text-anchor="middle" fill="#57534e">(Lev 8:35) 'vous garderez'</text>
+  <text x="380" y="226" text-anchor="middle" fill="#57534e">= gardez tout l'ecrit. Pas besoin de g.ch.</text>
+  <rect x="498" y="142" width="228" height="88" rx="5" fill="#f8fafc" stroke="#e2e5ea"/>
+  <text x="612" y="162" text-anchor="middle" font-size="11" font-weight="700" fill="#292524">Rav Achi</text>
+  <text x="612" y="182" text-anchor="middle" font-weight="700" fill="#3730a3">'ki khen tzuveiti'</text>
+  <text x="612" y="200" text-anchor="middle" fill="#57534e">(Lev 8:35) 'car ainsi</text>
+  <text x="612" y="211" text-anchor="middle" fill="#57534e">il m'a ete ordonne'</text>
+  <text x="612" y="228" text-anchor="middle" fill="#57534e">= terme d'invalidation.</text>
+  </g>
+  <rect x="40" y="248" width="680" height="54" rx="6" fill="#ecfdf5" stroke="#bfe6d2"/>
+  <text x="380" y="270" text-anchor="middle" font-size="11.5" font-weight="700" fill="#065f46">R. Yohanan au nom de R. Chimon bar Yohai : meme la LECTURE de la section (mikra paracha) est indispensable</text>
+  <text x="380" y="290" text-anchor="middle" font-size="10" fill="#047857">'Moche dit a l'assemblee : voici la chose que Hashem a ordonne' (Lev 8:5) -- meme le dibbour (proclamation) invalide s'il manque.</text>
+  <rect x="40" y="316" width="680" height="86" rx="6" fill="#fffbeb" stroke="#f5e2a8"/>
+  <text x="380" y="337" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">Details non ecrits explicitement dans la section, ajoutes par R. Yossi bar Hanina</text>
+  <text x="380" y="357" text-anchor="middle" font-size="10" fill="#78350f">'ve-ZEH ha-davar asher ta'aseh lahem' (Ex 29:1) : le vav (et) ajoute au sujet precedent =></text>
+  <text x="230" y="379" text-anchor="middle" font-size="10.5" font-weight="700" fill="#78350f">les MIKHNASAYIM (caleçons)</text>
+  <text x="230" y="393" text-anchor="middle" font-size="9.5" fill="#92400e">voisins de la section des habits</text>
+  <text x="540" y="379" text-anchor="middle" font-size="10.5" font-weight="700" fill="#78350f">le DIXIEME D'EPHA (asirit ha-eifa)</text>
+  <text x="540" y="393" text-anchor="middle" font-size="9.5" fill="#92400e">g. chava 'zeh'-'zeh' (Lev 6:13)</text>
+</svg></div><div class="svg-cap">Le probleme et ses reponses : d&#x27;ou vient l&#x27;invalidation pour un detail ecrit seulement dans la realisation ?</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב נַחְמָן בַּר יִצְחָק: יָלֵיף ״פֶּתַח״ ״פֶּתַח״. רַב מִשָּׁרְשְׁיָא אָמַר: ״וּשְׁמַרְתֶּם אֶת מִשְׁמֶרֶת ה׳״ — עִכּוּבָא. רַב אַשִּׁי אָמַר: ״כִּי כֵן צִוִּיתִי״ — עִכּוּבָא.</div>
+            <div class="fr"><p>Rav Nahman bar Yitzhak dit : on l&#x27;apprend par une guezera chava (analogie verbale) &#x27;petach&#x27; — &#x27;petach&#x27; [le mot &#x27;entree&#x27; (petach ohel moed) figure dans les deux sections des milouim : dans le commandement (Ex 29:32) et dans la realisation (Lev 8:31) ; ce qui est ecrit dans les deux est donc indispensable]. Rav Mecharchia dit : [&#x27;ve-chmartem et michmeret Hashem&#x27; (Lev 8:35), ecrit dans la realisation elle-meme,] indique l&#x27;invalidation (ikkouva) [nul besoin de guezera chava].</p><p>Rav Achi dit : &#x27;ki khen tzuveiti&#x27; (&#x27;car ainsi il m&#x27;a ete ordonne&#x27;, Lev 8:35) — [c&#x27;est de la qu&#x27;on tire] l&#x27;invalidation.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>פֶּתַח פֶּתַח</b> בְּצַווָּאָה כְּתִיב (שְׁמוֹת כט) אֶל פֶּתַח אֹהֶל מוֹעֵד [יַתִּירָא] וְכֵן בַּעֲשִׂיָּיה [בַּצַּווָּאָה כְּתִיב] תַּקְרִיב פֶּתַח אֹהֶל מוֹעֵד וְאָכַל אַהֲרֹן וּבָנָיו אֶת בְּשַׂר הָאַיִל וְאֶת הַלֶּחֶם אֲשֶׁר בַּסָּל פֶּתַח אֹהֶל מוֹעֵד וְכֵן בַּעֲשִׂיָּיה וְאֵת כָּל הָעֵדָה הִקְהִילוּ אֶל פֶּתַח אֹהֶל מוֹעֵד בַּשְּׁלוּ אֶת הַבָּשָׂר פֶּתַח אֹהֶל מוֹעֵד:</div>
+          <div class="glose-fr">Petach — petach : dans le commandement il est ecrit (Ex 29) &#x27;a l&#x27;entree (petach) de la tente d&#x27;assignation&#x27; [mot surabondant] ; de meme dans la realisation. [Dans le commandement :] &#x27;tu offriras a l&#x27;entree de la tente d&#x27;assignation... et Aharon et ses fils mangeront la chair du belier et le pain qui est dans la corbeille, a l&#x27;entree de la tente d&#x27;assignation&#x27; ; et de meme dans la realisation : &#x27;toute la communaute, il l&#x27;assembla a l&#x27;entree de la tente d&#x27;assignation... ils firent cuire la chair a l&#x27;entree de la tente d&#x27;assignation&#x27;.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְרַב מִשָּׁרְשְׁיָא אָמַר</b> בְּפָרָשַׁת עֲשִׂיָּיתָן נָמֵי עִיכּוּבָא כְּתִיבָא וּשְׁמַרְתֶּם מִשְׁמֶרֶת מַשְׁמַע תִּשְׁמֹור כְּכָל הַכָּתוּב וְלֹא צָרִיךְ גְּזֵירָה שָׁוָה:</div>
+          <div class="glose-fr">Et Rav Mecharchia dit : dans la section de leur realisation aussi l&#x27;invalidation est ecrite : &#x27;ve-chmartem michmeret&#x27; (&#x27;vous garderez la garde&#x27;) signifie &#x27;tu observeras selon tout l&#x27;ecrit&#x27;, et il n&#x27;est pas besoin de la guezera chava.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Trois reponses a la question du segment precedent :</p><p><b>Rav Nahman bar Yitzhak</b> : une <b>guezera chava</b> sur le mot 'petach' (entree), qui apparait a la fois dans le commandement et dans la realisation, relie les deux sections — ce qui invalide dans l'une invalide dans l'autre.</p><p><b>Rav Mecharchia</b> : pas besoin de l'analogie ; le verset de la realisation lui-meme, 'et vous garderez la garde de Hashem' (Lev 8:35), signifie 'observez TOUT ce qui est ecrit' — donc l'omission invalide.</p><p><b>Rav Achi</b> : c'est l'expression 'ki khen tzuveiti' ('car ainsi il m'a ete ordonne') qui porte l'invalidation.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּנוּ רַבָּנַן: ״כִּי כֵן צִוִּיתִי״, ״כַּאֲשֶׁר צִוִּיתִי״, ״כַּאֲשֶׁר צִוָּה ה׳״. ״כִּי כֵן צִוֵּיתִי״ — בַּאֲנִינוּת יֹאכְלוּהָ. ״כַּאֲשֶׁר צִוִּיתִי״ — בִּשְׁעַת מַעֲשֶׂה אָמַר לָהֶם. ״כַּאֲשֶׁר צִוָּה ה׳״ — וְלֹא מֵאֵלַי אֲנִי אוֹמֵר.</div>
+            <div class="fr"><p>Nos Maitres ont enseigne : [&#x27;ki khen tzuveiti&#x27; (&#x27;car ainsi il m&#x27;a ete ordonne&#x27;, Lev 8:35), &#x27;ka&#x27;asher tzuveiti&#x27; (&#x27;comme il m&#x27;a ete ordonne&#x27;, Lev 10:18), &#x27;ka&#x27;asher tziva Hashem&#x27; (&#x27;comme Hashem l&#x27;a ordonne&#x27;, Lev 10:15)]. &#x27;Ki khen tzuveiti&#x27; — [enseigne que] c&#x27;est en etat d&#x27;aninout (deuil du premier jour) qu&#x27;on doit la manger [l&#x27;offrande]. &#x27;Ka&#x27;asher tzuveiti&#x27; — [Moche] le leur a dit au moment meme de l&#x27;evenement. &#x27;Ka&#x27;asher tziva Hashem&#x27; — [et Moche precise :] ce n&#x27;est pas de moi-meme que je le dis [mais sur ordre divin].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(6)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ת&quot;ר כִּי כֵן צִוֵּיתִי וְכוּ&#x27;</b> אַיְּידֵי דִּנְקַט הָכָא לְמִידְרַשׁ כִּי כֵן צִוִּיתִי לְעִנְיָנָא דְּמִלּוּאִים דִּלְעִיכּוּבָא אֲתָא קָבְעָה לָהּ בָּרַייְתָא הָכָא לְמִדְרַשׁ כִּי כֵן צִוִּיתִי דִּשְׁמִינִי לְמַאי אֲתָא וְלָאו נִיהוּ הַהוּא קְרָא דְּעִנְיָנָא דְּמִלּוּאִים דְּצַו אֶת אַהֲרֹן אֶלָּא דְּיוֹם הַשְּׁמִינִי דִּכְתִיב בְּמִנְחָה (וַיִּקְרָא י׳:י״ב) קְחוּ אֶת הַמִּנְחָה הַנּוֹתֶרֶת מֵאִשֵּׁי ה&#x27; וְאִכְלוּהָ מַצּוֹת אֵצֶל הַמִּזְבֵּחַ כִּי כֵּן צִוִּיתִי:</div>
+          <div class="glose-fr">&#x27;Nos Maitres ont enseigne : ki khen tzuveiti...&#x27; — puisqu&#x27;on a ici cite &#x27;ki khen tzuveiti&#x27; au sujet des milouim (ou il vient enseigner l&#x27;invalidation), la baraita est placee ici pour exposer a quoi vient le &#x27;ki khen tzuveiti&#x27; [du huitieme jour]. Ce n&#x27;est pas le verset du contexte des milouim (Tzav et Aharon), mais celui du huitieme jour, ecrit a propos de la mincha (Lev 10:12) : &#x27;prenez la mincha qui reste des offrandes de Hashem et mangez-la sans levain a cote de l&#x27;autel... car ainsi il m&#x27;a ete ordonne (ki khen tzuveiti)&#x27;.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כַּאֲשֶׁר צִוִּיתִי</b> גַּבֵּי שְׂעִיר חַטָּאת אֲשֶׁר דָּרַשׁ מֹשֶׁה וְהִנֵּה שֹׂורָף כְּתִיב אָכֹל תֹּאכְלוּ אֹותָהּ בְּמָקוֹם קָדוֹשׁ כַּאֲשֶׁר צִוִּיתִי (שָׁם):</div>
+          <div class="glose-fr">&#x27;Ka&#x27;asher tzuveiti&#x27; — a propos du bouc chatat que Moche rechercha &#x27;et voici il avait ete brule&#x27; (Lev 10:16), il est ecrit : &#x27;vous auriez du la manger en lieu saint, comme je l&#x27;avais ordonne (ka&#x27;asher tzuveiti)&#x27; (Lev 10:18).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כַּאֲשֶׁר צִוָּה ה&#x27;</b> גַּבֵּי שׁוֹק הַתְּרוּמָה וַחֲזֵה הַתְּנוּפָה כְּתִיב תֹּאכְלוּ בְּמָקוֹם טָהוֹר וְגוֹ&#x27; כַּאֲשֶׁר צִוָּה ה&#x27; (שָׁם) וְלָמָּה לִי חַד מִכָּל הָנֵי כּוּ&#x27; וְכִי כָּל הַדְּבָרִים שֶׁנֶּאֶמְרוּ לְמֹשֶׁה לוֹמַר לְיִשְׂרָאֵל חָזַר וְאָמַר כִּי כֵן צִוִּיתִי:</div>
+          <div class="glose-fr">&#x27;Ka&#x27;asher tziva Hashem&#x27; — a propos de la cuisse de prelevement et de la poitrine de balancement, il est ecrit : &#x27;vous les mangerez en lieu pur... comme Hashem l&#x27;a ordonne (ka&#x27;asher tziva Hashem)&#x27; (Lev 10:15). Et pourquoi ai-je besoin de chacune de ces [expressions] ? Est-ce que pour toutes les choses que Hashem dit a Moche de transmettre a Israel, celui-ci repetait &#x27;car ainsi il m&#x27;a ete ordonne&#x27; ? [Non — d&#x27;ou la necessite d&#x27;un enseignement particulier.]</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אוֹנְנִין</b> עַל נָדָב וַאֲבִיהוּא וְקָדָשִׁים אֲסוּרִין לְאוֹנֵן מִקַּל וָחֹומֶר מִמַּעֲשֵׂר הַקַּל דִּכְתִיב גַּבֵּי מַעֲשֵׂר (דְּבָרִים כ״ו:י״ד) לֹא אָכַלְתִּי בְאֹונִי מִמֶּנּוּ וְהוּא אָמַר לָהֶן לֶאֱכֹול הַמִּנְחָה הֻוזְקַק לוֹמַר כִּי כֵן צֻוֵּיתִי בַּאֲנִינוּת תֹּאכְלוּהָ:</div>
+          <div class="glose-fr">Onenin (en etat de deuil) — [en deuil] pour Nadav et Avihou. Or les kodachim sont interdits a l&#x27;onen par un kal va-homer depuis la dime (ma&#x27;asser), pourtant moins grave, dont il est ecrit (Deut 26:14) &#x27;je n&#x27;en ai pas mange dans mon deuil (be-oni)&#x27;. Et pourtant [Moche] leur dit de manger la mincha : il fallut donc preciser &#x27;car ainsi il m&#x27;a ete ordonne — c&#x27;est en etat d&#x27;aninout que vous la mangerez&#x27;.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כַּאֲשֶׁר צִוֵּיתִי בִּשְׁעַת מַעֲשֶׂה אָמַר לָהֶם</b> כְּשֶׁמָּצָא מַה שֶׁעָשׂוּ שֶׁשָּׂרְפוּ שְׂעִיר הַחַטָּאת וְהוּא שָׂעִיר שֶׁל ר&quot;ח אָמַר לָהֶם הֵן לֹא הוּבָא אֶת דָּמָהּ וְגוֹ&#x27; הֲלֹא לֹא אֵירַע בּוֹ פְּסוּל הָיָה לָכֶם לְאָוכְלוֹ בַּקֹּודֶשׁ כַּאֲשֶׁר צִוִּיתִי אֶתְכֶם בַּמִּנְחָה שֶׁאָמַרְתִּי לָכֶם בָּהּ שֶׁמִּפִּי הקב&quot;ה נִצְטַוֵּיתִי:</div>
+          <div class="glose-fr">&#x27;Ka&#x27;asher tzuveiti — au moment meme de l&#x27;evenement il le leur dit&#x27; — quand il constata ce qu&#x27;ils avaient fait, ayant brule le bouc chatat (celui de Roch Hodech), il leur dit : &#x27;voici, son sang n&#x27;a pas ete apporte... (Lev 10:18)&#x27; — aucune invalidite n&#x27;y etant survenue, vous auriez du le manger en lieu saint, &#x27;comme je vous l&#x27;avais ordonne&#x27; pour la mincha, ou je vous ai dit que c&#x27;est de la bouche du Saint beni soit-Il que j&#x27;en ai recu l&#x27;ordre.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כַּאֲשֶׁר צִוָּה ה&#x27; וְלֹא מֵאֵלַי אֲנִי אוֹמֵר</b> הָיוּ סוֹמְכִין ע&quot;פ הַדִּיבּוּר וְאָכְלוּ אוֹתוֹ אוֹנְנִין וְלֹא תַּעֲשׂוּ כַּאֲשֶׁר עֲשִׂיתֶם בְּחַטָּאת וּמֹשֶׁה טָעָה בַּדָּבָר שֶׁלֹּא נֶאֱמַר לוֹ אֶלָּא בְּמִנְחָה וּבְחָזֶה וְשׁוֹק וְשָׂעִיר שְׁמִינִי וּבִשְׂעִיר נַחְשׁוֹן שֶׁהָיוּ קָדְשֵׁי שָׁעָה אֲבָל שְׂעִיר ר&quot;ח שֶׁהוּא קָדְשֵׁי דּוֹרוֹת לֹא הֻותַּר לְאוֹנֵן וּשְׁלֹשָׁה שְׂעִירִים קָרְבוּ בּוֹ בַּיּוֹם וְלֹא נִשְׂרַף אֶלָּא שֶׁל ר&quot;ח בִּלְבַד שֶׁנֶּאֱמַר (וַיִּקְרָא י׳:י״ז) וְאֹותָהּ נָתַן לָכֶם לָשֵׂאת אֶת עֲוֹן הָעֵדָה זֶהוּ שֶׁל ר&quot;ח הַבָּא עַל טֻומְאַת מִקְדָּשׁ וְקָדָשָׁיו כְּמוֹ שֶׁשָּׁנִינוּ בְּמַסֶּכֶת שְׁבוּעוֹת (דַּף ט:):</div>
+          <div class="glose-fr">&#x27;Ka&#x27;asher tziva Hashem — et ce n&#x27;est pas de moi-meme que je le dis&#x27; — ils s&#x27;appuyaient sur la parole [divine] et mangeaient en etat d&#x27;aninout ; [Moche leur dit :] ne faites pas comme vous avez fait pour le chatat. Or Moche s&#x27;etait trompe : il ne lui avait ete dit [d&#x27;autoriser l&#x27;aninout] que pour la mincha, la poitrine et la cuisse, le bouc du huitieme jour et le bouc de Nahchon — qui etaient des kodchei chaa (offrandes du moment) ; mais le bouc de Roch Hodech, qui est kodchei dorot (des generations), n&#x27;etait pas permis a l&#x27;onen. Trois boucs furent offerts ce jour-la, et seul celui de Roch Hodech fut brule, car il est dit (Lev 10:17) &#x27;Il vous l&#x27;a donne pour porter la faute de la communaute&#x27; — c&#x27;est celui de Roch Hodech, qui vient pour l&#x27;impurete du Sanctuaire et de ses saintetes, comme nous l&#x27;avons appris au traite Chevouot (9b).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>A propos de l'expression 'ki khen tzuveiti', la guemara cite une baraita qui distingue trois formules proches, chacune enseignant une chose :</p><p><b>'Ki khen tzuveiti'</b> (Lev 8:35) : la mincha du huitieme jour doit etre mangee <b>meme en etat d'aninout</b> (le deuil du premier jour, apres la mort de Nadav et Avihou) — d'ordinaire les kodachim sont interdits a l'onen.</p><p><b>'Ka'asher tzuveiti'</b> (Lev 10:18) : Moche le leur a dit <b>au moment meme</b> de l'incident (a propos du bouc chatat que les fils d'Aharon avaient brule).</p><p><b>'Ka'asher tziva Hashem'</b> (Lev 10:15) : Moche insiste — l'ordre vient de Hashem, <b>non de sa propre initiative</b>.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="300" fill="#fffdf8"/>
+  <text x="360" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Baraita : les trois expressions du commandement dans la realisation</text>
+  <rect x="24" y="44" width="216" height="230" rx="6" fill="#eef2ff" stroke="#a9b4e8"/>
+  <rect x="252" y="44" width="216" height="230" rx="6" fill="#f0fdf4" stroke="#bfe6d2"/>
+  <rect x="480" y="44" width="216" height="230" rx="6" fill="#fef2f2" stroke="#e8b4b4"/>
+  <text x="132" y="68" text-anchor="middle" font-size="12" font-weight="700" fill="#3730a3">'ki khen tzuveiti'</text>
+  <text x="132" y="84" text-anchor="middle" font-size="9.5" fill="#57534e">car ainsi il m'a ete ordonne</text>
+  <text x="132" y="99" text-anchor="middle" font-size="9" fill="#94908a">Lev 8:35</text>
+  <text x="360" y="68" text-anchor="middle" font-size="12" font-weight="700" fill="#065f46">'ka'asher tzuveiti'</text>
+  <text x="360" y="84" text-anchor="middle" font-size="9.5" fill="#57534e">comme il m'a ete ordonne</text>
+  <text x="360" y="99" text-anchor="middle" font-size="9" fill="#94908a">Lev 10:18</text>
+  <text x="588" y="68" text-anchor="middle" font-size="12" font-weight="700" fill="#b4231f">'ka'asher tziva Hashem'</text>
+  <text x="588" y="84" text-anchor="middle" font-size="9.5" fill="#57534e">comme Hashem l'a ordonne</text>
+  <text x="588" y="99" text-anchor="middle" font-size="9" fill="#94908a">Lev 10:15</text>
+  <line x1="132" y1="110" x2="132" y2="132" stroke="#a9b4e8" stroke-width="1.2"/>
+  <line x1="360" y1="110" x2="360" y2="132" stroke="#bfe6d2" stroke-width="1.2"/>
+  <line x1="588" y1="110" x2="588" y2="132" stroke="#e8b4b4" stroke-width="1.2"/>
+  <g font-size="10" fill="#292524">
+  <text x="132" y="150" text-anchor="middle" font-weight="700">enseigne :</text>
+  <text x="132" y="172" text-anchor="middle">on la mange</text>
+  <text x="132" y="188" text-anchor="middle">en etat d'ANINOUT</text>
+  <text x="132" y="204" text-anchor="middle" font-size="9" fill="#57534e">(deuil du 1er jour) --</text>
+  <text x="132" y="218" text-anchor="middle" font-size="9" fill="#57534e">la mincha du 8e jour,</text>
+  <text x="132" y="232" text-anchor="middle" font-size="9" fill="#57534e">malgre le deuil de</text>
+  <text x="132" y="246" text-anchor="middle" font-size="9" fill="#57534e">Nadav et Avihou</text>
+  <text x="360" y="150" text-anchor="middle" font-weight="700">enseigne :</text>
+  <text x="360" y="172" text-anchor="middle">Moche le leur dit</text>
+  <text x="360" y="188" text-anchor="middle">AU MOMENT MEME</text>
+  <text x="360" y="204" text-anchor="middle" font-size="9" fill="#57534e">de l'evenement (le bouc</text>
+  <text x="360" y="218" text-anchor="middle" font-size="9" fill="#57534e">chatat brule) -- 'comme</text>
+  <text x="360" y="232" text-anchor="middle" font-size="9" fill="#57534e">je vous l'ai ordonne</text>
+  <text x="360" y="246" text-anchor="middle" font-size="9" fill="#57534e">pour la mincha'</text>
+  <text x="588" y="150" text-anchor="middle" font-weight="700">enseigne :</text>
+  <text x="588" y="172" text-anchor="middle">'ce n'est PAS</text>
+  <text x="588" y="188" text-anchor="middle">de moi-meme</text>
+  <text x="588" y="204" text-anchor="middle">que je le dis'</text>
+  <text x="588" y="226" text-anchor="middle" font-size="9" fill="#57534e">-- l'ordre vient de</text>
+  <text x="588" y="240" text-anchor="middle" font-size="9" fill="#57534e">Hashem, non de Moche</text>
+  </g>
+</svg></div><div class="svg-cap">Les trois expressions et leur enseignement respectif.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַבִּי יוֹסֵי בַּר חֲנִינָא: מִכְנָסַיִם אֵין כְּתוּבִין בַּפָּרָשָׁה, כְּשֶׁהוּא אוֹמֵר ״וְזֶה הַדָּבָר אֲשֶׁר תַּעֲשֶׂה לָהֶם לְקַדֵּשׁ אֹתָם לְכַהֵן״ — לְהָבִיא הַמִּכְנָסַיִם וַעֲשִׂירִית הָאֵיפָה.</div>
+            <div class="fr"><p>R. Yossi bar Hanina dit : les caleçons (mikhnasayim) ne sont pas ecrits dans la section [des milouim] ; lorsque le verset dit &#x27;ve-zeh ha-davar asher ta&#x27;aseh lahem le-kadech otam le-khahen li&#x27; (&#x27;et voici ce que tu leur feras pour les sanctifier afin qu&#x27;ils exercent Mon sacerdoce&#x27;, Ex 29:1), [le vav &#x27;et&#x27; vient] inclure les caleçons et le dixieme d&#x27;epha (asirit ha-eifa).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵינָן כְּתוּבִין בַּפָּרָשָׁה</b> בִּלְבִישַׁת הַבְּגָדִים לֹא בְּצַוָּואָה וְלֹא בַּעֲשִׂיָּיה:</div>
+          <div class="glose-fr">Ne sont pas ecrits dans la section — [c&#x27;est-a-dire] dans le revetement des habits, ni dans le commandement ni dans la realisation.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּשֶׁהוּא אוֹמֵר וְזֶה הַדָּבָר אֲשֶׁר תַּעֲשֶׂה לָהֶם</b> וָי&quot;ו מוֹסִיף עַל עִנְיָן רִאשׁוֹן הַמְדַבֵּר בְּצַוָּואַת עֲשִׂייַּת הַבְּגָדִים וְשָׁם כְּתִיב וַעֲשֵׂה לָהֶם מִכְנְסֵי בָד:</div>
+          <div class="glose-fr">Lorsqu&#x27;il dit &#x27;ve-zeh ha-davar asher ta&#x27;aseh lahem&#x27; — le vav ajoute au sujet precedent, lequel traite du commandement de la confection des habits ; et la il est ecrit &#x27;tu leur feras des caleçons de lin&#x27; (Ex 28:42).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וַעֲשִׂירִית הָאֵיפָה</b> שֶׁהַכֹּהֲנִים צְרִיכִים לְהָבִיא בְּיוֹם חִינּוּכָם וַאֲפִילּוּ הַהֶדְיוֹט כִּדְאָמְרִינַן בִּמְנָחוֹת (דַּף נא:):</div>
+          <div class="glose-fr">Et le dixieme d&#x27;epha — que les cohanim doivent apporter au jour de leur inauguration, meme le simple cohen (hedyot), comme nous le disons a Menahot (51b).</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְהָבִיא אֶת הַמִּכְנָסַיִם</b> מִכָּאן קָשֶׁה לְהָא דִּבְפֶ&#x27; אֵלּוּ הֵן הַנִּשְׂרָפִין (סַנְהֶדְרִין דַּף פג:) מַפִּיק מִיתָה מְחֻוסַּר בְּגָדִים מִדְּדָרְשִׁינַן אֵין בִּגְדֵיהֶן עֲלֵיהֶן אֵין כְּהֻונָּתָן עֲלֵיהֶן וְהָווּ לְהוּ זָרִים וְהִקְשָׁה רַבֵּינוּ יַעֲקֹב מאורליינ&quot;ש הָא בְּהֶדְיָא כְּתִיב מִיתָה בִּוְאַתָּה תְּצַוֶּה נְהִי דְּהַאי קְרָא אִיצְטְרִיךְ לְשַׁווִּינְהוּ זָרִים אַף לְעִנְייַן לְחַלֵּל עֲבוֹדָה כְּמוֹ זָרִים מ&quot;מ הַהוּא קְרָא דִּכְתִיב בִּמְחֻוסְּרֵי בְּגָדִים מִיתָה בְּהֶדְיָא לָמָּה לִי תִּיפּוֹק לֵיהּ מֵאֵין בִּגְדֵיהֶם עֲלֵיהֶם אֵין כְּהֻונָּתָן עֲלֵיהֶן וְתֵירֵץ דְּמִכְנָסַיִם לָא כְּתִיב הָכָא וְאִיצְטְרִיךְ הַהוּא קְרָא לִמְחֻוסַּר מִכְנָסַיִם דַּהֲוָה בְּמִיתָה וְקָשֶׁה לְרַבִּי יוֹסֵי בַּר חֲנִינָא כֵּיוָן דְּנָפְקָא לֵיהּ מִכְנָסַיִם מֻוזֶּה הַדָּבָר הֲוָה לֵיהּ כְּאִלּוּ מִכְנָסַיִם נָמֵי כְּתִיבִי הָכָא וְתֵירֵץ ריצב&quot;א דְּמִיתָה דְּגַבֵּי [מִכְנָסַיִם] אִיצְטְרִיךְ לְחַיֵּיב אֲפִילּוּ בְּבִיאָה רֵיקָנִית אַאֹהֶל מוֹעֵד מִי שֶׁנִּכְנַס מְחֻוסַּר בְּגָדִים כְּדִכְתִיב (שְׁמוֹת כ״ח:מ״ג) וְהָיוּ עַל אַהֲרֹן וְעַל בָּנָיו בְּבֹאָם אֶל אֹהֶל מוֹעֵד וְכֵן בְּשֶׁלֹּא רְחוּץ יָדַיִם דִּכְתִיב (שָׁם ל) בְּבֹואָם אֶל אֹהֶל מוֹעֵד יִרְחֲצוּ אוֹ בְגִשְׁתָּם אֶל הַמִּזְבֵּחַ לְשָׁרֵת מִיחַייַּב אַאֹהֶל מוֹעֵד אֲפִילּוּ אַבִּיאָה רֵיקָנִית וְהָא דְּקָאָמַר פ&quot;ב דִּזְבָחִים (דַּף יט:) אִי כְּתַב רַחֲמָנָא בְּבוֹאָם וְלֹא כְּתַב בְּגִשְׁתָּם הֵ&quot;א אֲפִילּוּ אַבִּיאָה רֵיקָנִית כו&#x27; מַשְׁמַע דִּלְפִי הָאֱמֶת לָא מִיחַייַּב אַבִּיאָה רֵיקָנִית יֵשׁ לוֹמַר הַיְינוּ אַמִּזְבֵּחַ וה&quot;פ אִי כְּתִיב בְּבֹואָם אֶל אֹהֶל מוֹעֵד אוֹ אֶל הַמִּזְבֵּחַ וְלָא כְּתִיב לְשָׁרֵת הֵ&quot;א דַּאֲפִילּוּ אַמִּזְבֵּחַ מִיחַייַּב אַבִּיאָה רֵיקָנִית קמ&quot;ל דְּאַמִּזְבֵּחַ לָא מִיחַייַּב וּבַתּוֹסֶפְתָּא דְּמַסֶּכֶת כֵּלִים [פ&quot;א] תַּנְיָא אָמַר שִׁמְעוֹן הַצָּנוּעַ לִפְנֵי ר&quot;א אֲנִי נִכְנַסְתִּי בֵּין הָאוּלָם וְלַמִּזְבֵּחַ בְּלֹא רְחוּץ יָדַיִם וְרַגְלַיִם אָמַר לוֹ מִי חָבִיב אַתָּה אוֹ כֹּהֵן גָּדוֹל שָׁתַק אָמַר לוֹ בּוֹשׁ אַתָּה לוֹמַר (הָעֲבוֹדָה) שֶׁכַּלְבּוֹ שֶׁל כֹּהֵן גָּדוֹל יוֹתֵר חָבִיב מִמְּךָ וְכוּ&#x27; עַד וַאֲפִילּוּ כֹּהֵן גָּדוֹל מְפַצְּעִים אֶת מוֹחוֹ בְּגִיזְרִין אֶלָּא שֶׁלֹּא מְצָאֲךָ בַּעַל הַפּוֹל וּמִסְּתָמָא שִׁמְעוֹן הַצָּנוּעַ לֹא הָיָה מִשְׁתַּמֵּשׁ בְּלֹא רְחוּץ יָדַיִם כִּי לֹא הָיָה טוֹעֶה בָּזֶה אֲבָל רַשִׁ&quot;י פֵּירֵשׁ בְּפֵירוּשׁ חֻומָּשׁ בְּבֹואָם אֶל אֹהֶל מוֹעֵד לְהַקְטִיר וְלָא נְהִירָא אֶלָּא כִּדְפָרֵישִׁית:</div>
+          <div class="glose-fr">&#x27;Pour inclure les caleçons&#x27; — de la une difficulte contre ce qui est dit au chapitre Elou hen ha-nisrafin (Sanhedrin 83b), ou l&#x27;on tire la peine de mort pour le cohen &#x27;mehousar begadim&#x27; (auquel manque un habit) de la deracha &#x27;quand leurs habits ne sont pas sur eux, leur sacerdoce n&#x27;est pas sur eux&#x27; — ils sont alors comme des etrangers (zarim). Rabbenou Yaakov d&#x27;Orleans objecte : mais la peine de mort est ecrite explicitement dans Ve-atta Tetzave ! Certes ce verset est necessaire pour les rendre &#x27;comme des etrangers&#x27; aussi pour profaner le service comme des zarim ; mais le verset explicite de mort pour les mehousrei begadim, pourquoi le faut-il ? Qu&#x27;on la tire donc de &#x27;quand leurs habits ne sont pas sur eux, leur sacerdoce n&#x27;est pas sur eux&#x27; ! Il repond : les caleçons ne sont pas ecrits ici [dans Ve-atta Tetzave], et ce verset [de mort] est necessaire pour le cas du &#x27;mehousar mikhnasayim&#x27; (auquel manquent les caleçons), qui encourt la mort. Mais cela fait difficulte pour R. Yossi bar Hanina : puisqu&#x27;il tire les caleçons de &#x27;ve-zeh ha-davar&#x27;, c&#x27;est comme s&#x27;ils etaient eux aussi ecrits ici ! Le Ritzva repond : la mort enoncee a propos des caleçons est necessaire pour rendre passible meme celui qui entre &#x27;les mains vides&#x27; (sans service) dans la tente d&#x27;assignation, s&#x27;il y penetre mehousar begadim — comme il est ecrit (Ex 28:43) &#x27;ils seront sur Aharon et sur ses fils quand ils entreront dans la tente d&#x27;assignation&#x27;. De meme pour les mains non lavees, il est ecrit (Ex 30) &#x27;quand ils entreront dans la tente d&#x27;assignation, ils se laveront, ou quand ils approcheront de l&#x27;autel pour servir&#x27; — on est passible pour l&#x27;entree dans la tente d&#x27;assignation meme sans service. Et ce que dit le 2e chapitre de Zevahim (19b) — &#x27;si le Misericordieux avait ecrit be-voam (en entrant) et non be-guichtam (en approchant), j&#x27;aurais dit passible meme pour l&#x27;entree a mains vides&#x27; — d&#x27;ou il ressort qu&#x27;en verite on n&#x27;est pas passible pour l&#x27;entree a mains vides — il faut dire que cela concerne l&#x27;autel : le sens est que si etait ecrit &#x27;en entrant dans la tente d&#x27;assignation ou vers l&#x27;autel&#x27; sans &#x27;pour servir&#x27;, j&#x27;aurais dit passible meme a l&#x27;autel pour l&#x27;entree a mains vides ; le verset enseigne qu&#x27;a l&#x27;autel on ne l&#x27;est pas. Et dans la Tossefta du traite Kelim (ch. 1) : Chimon le Modeste dit devant R. Eliezer : je suis entre entre le Oulam et l&#x27;autel sans avoir lave mes mains et mes pieds ; il lui dit : qui est le plus cher, toi ou le Cohen gadol ? Il se tut. Il lui dit : tu as honte de dire que le chien du Cohen gadol t&#x27;est plus cher que toi... jusqu&#x27;a : et meme un Cohen gadol, on lui fend le crane avec des buches, seulement le &#x27;maitre du bulbe&#x27; (l&#x27;ange de la mort) ne t&#x27;a pas trouve. Vraisemblablement Chimon le Modeste ne servait pas sans mains lavees, car il ne se trompait pas la-dessus. Mais Rachi a explique dans son commentaire du Houmach &#x27;quand ils entreront dans la tente d&#x27;assignation&#x27; = pour offrir l&#x27;encens ; cela ne parait pas [exact] — plutot comme je l&#x27;ai explique.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>A propos des elements qui ne sont pas explicites dans la section, R. Yossi bar Hanina note que les <b>caleçons</b> (mikhnasayim) n'y figurent pas. Le <b>vav</b> initial de 've-zeh ha-davar' ('ET voici la chose') est un vav 'qui ajoute au sujet precedent' : il rattache le verset a ce qui precede (la confection des habits) et inclut ainsi les caleçons, ainsi que la <b>asirit ha-eifa</b>, le dixieme d'epha que le cohen offre au jour de son investiture.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בִּשְׁלָמָא מִכְנָסַיִם כְּתִיבִי בְּעִנְיָנָא דִבְגָדִים, אֶלָּא עֲשִׂירִית הָאֵיפָה מְנָא לַן? אָתְיָא ״זֶה״ ״זֶה״ מִ״וְזֶה קָרְבַּן אַהֲרֹן וּבָנָיו אֲשֶׁר יַקְרִיבוּ לַה׳ עֲשִׂירִית הָאֵיפָה״.</div>
+            <div class="fr"><p>[La guemara demande :] soit, les caleçons — ils sont ecrits dans le contexte des habits [voisin de notre section, on peut donc les inclure par le vav]. Mais le dixieme d&#x27;epha, d&#x27;ou le tirons-nous ?</p><p>[Reponse :] cela vient d&#x27;une [guezera chava] &#x27;zeh&#x27; — &#x27;zeh&#x27; : de &#x27;ve-zeh korban Aharon ou-vanav asher yakrivou la-Hashem... asirit ha-eifa&#x27; (&#x27;voici l&#x27;offrande d&#x27;Aharon et de ses fils qu&#x27;ils offriront a Hashem... un dixieme d&#x27;epha&#x27;, Lev 6:13).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בִּשְׁלָמָא מִכְנָסַיִם כְּתִיבִי בְּעִנְיָינָא דִבְגָדִים</b> דִּלְעֵיל מִינֵּיהּ דְּהַהִיא פָּרַשְׁתָּא אִיכָּא לְרַבּוֹיִינְהוּ וָי&quot;ו מוֹסִיף עַל עִנְיָן רִאשׁוֹן:</div>
+          <div class="glose-fr">Soit, les caleçons sont ecrits dans le contexte des habits — puisque juste au-dessus de cette section [Ex 29:1] on peut les inclure par &#x27;le vav qui ajoute au sujet precedent&#x27;.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>זֶה קָרְבַּן אַהֲרֹן וּבָנָיו</b> בַּעֲשִׂירִית הָאֵיפָה כְּתִיב שֶׁהַהֶדְיוֹט מֵבִיא בְּיוֹם חִינּוּכוֹ וְכֹהֵן גָּדוֹל בְּכָל יוֹם:</div>
+          <div class="glose-fr">&#x27;Zeh korban Aharon ou-vanav&#x27; — [ce verset] est ecrit a propos du dixieme d&#x27;epha : le simple cohen (hedyot) l&#x27;apporte au jour de son inauguration, et le Cohen gadol chaque jour.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection : l'inclusion par le vav fonctionne pour les <b>caleçons</b>, car ils figurent dans le passage voisin sur les habits (Ex 28). Mais la <b>asirit ha-eifa</b> n'y figure nulle part a proximite — d'ou la tirer ? Reponse : une <b>guezera chava</b> sur le mot 'zeh' (voici), commun a 've-ZEH ha-davar' (Ex 29:1) et 've-ZEH korban Aharon... asirit ha-eifa' (Lev 6:13). Le mot-crochet transfere l'obligation du dixieme d'epha a l'investiture.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַבִּי יוֹחָנָן מִשּׁוּם רַבִּי שִׁמְעוֹן בֶּן יוֹחַאי: מִנַּיִין שֶׁאַף מִקְרָא פָּרָשָׁה מְעַכֵּב, תַּלְמוּד לוֹמַר: ״וַיֹּאמֶר מֹשֶׁה אֶל הָעֵדָה זֶה הַדָּבָר אֲשֶׁר צִוָּה ה׳״ — אֲפִילּוּ דִּיבּוּר מְעַכֵּב.</div>
+            <div class="fr"><p>R. Yohanan dit au nom de R.</p><p>Chimon bar Yohai : d&#x27;ou [sait-on] que meme la lecture de la section (mikra paracha) est indispensable (me&#x27;akev) ? Le verset dit : &#x27;Moche dit a l&#x27;assemblee : voici la chose que Hashem a ordonne de faire&#x27; (Lev 8:5) — [cela enseigne que] meme la proclamation (dibbour) [de la section devant le peuple] est indispensable.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִקְרָא</b> פָּרָשַׁת מִלּוּאִים שֶׁנִּצְטַווָּה בִּוְאַתָּה תְּצַוֶּה אָמַר לָהֶם לַצִּיבּוּר בְּעֶשְׂרִים וּשְׁלֹשָׁה בַּאֲדָר כְּשֶׁהִתְחִילוּ הַמִּלּוּאִים וְהִקְהִיל אֶת הָעֵדָה אֶל פֶּתַח אֹהֶל מוֹעֵד שֶׁנֶּאֱמַר וַתִּקָּהֵל הָעֵדָה וְגוֹ&#x27; וַיֹּאמֶר מֹשֶׁה אֶל הָעֵדָה זֶה הַדָּבָר אֲשֶׁר צִוָּה ה&#x27; לַעֲשׂוֹת וּמִקְרָאוֹת הַלָּלוּ בַּעֲשִׂיַּית הַמִּלּוּאִים בְּצַו אֶת אַהֲרֹן:</div>
+          <div class="glose-fr">La lecture — [de] la section des milouim, celle dont il fut ordonne dans Ve-atta Tetzave ; il la dit a la communaute le 23 Adar, quand commencerent les milouim. Il assembla la communaute a l&#x27;entree de la tente d&#x27;assignation, comme il est dit &#x27;la communaute s&#x27;assembla... (Lev 8:4) et Moche dit a l&#x27;assemblee : voici la chose que Hashem a ordonne de faire&#x27; — et ces versets se trouvent dans la realisation des milouim, dans &#x27;Tzav et Aharon&#x27;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>R. Yohanan, au nom de R. Chimon bar Yohai, ajoute un element indispensable qui n'est pas un acte mais une <b>parole</b> : la <b>lecture publique de la section</b> des milouim. Le verset 'Moche dit a l'assemblee : voici la chose...' (Lev 8:5) montre que la <b>proclamation</b> (dibbour) de la section devant l'assemblee fait partie integrante de l'investiture — l'omettre l'invalide.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כֵּיצַד הִלְבִּישָׁן? כֵּיצַד הִלְבִּישָׁן?! מַאי דַהֲוָה הֲוָה! אֶלָּא: כֵּיצַד מַלְבִּישָׁן לֶעָתִיד לָבוֹא? לֶעָתִיד לָבוֹא נָמֵי, לִכְשֶׁיָּבוֹאוּ אַהֲרֹן וּבָנָיו וּמֹשֶׁה עִמָּהֶם!</div>
+            <div class="fr"><p>Comment [Moche] les a-t-il revetus [Aharon et ses fils, des habits sacerdotaux] ? [La guemara s&#x27;etonne :] &#x27;Comment les a-t-il revetus&#x27; ?!</p><p>Ce qui fut, fut (mai de-hava hava) — [quelle portee pratique cela a-t-il] ! Plutot [la question serait] : comment les revetira-t-il dans l&#x27;avenir (le-atid lavo) [a la resurrection des morts, quand le service sera retabli] ?</p><p>[Rejet :] dans l&#x27;avenir aussi, lorsque viendront Aharon et ses fils, et Moche avec eux, [ils sauront eux-memes l&#x27;ordre] !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כֵּיצַד הִלְבִּישָׁן</b> סֵדֶר בְּגָדִים לָאָב וְלַבָּנִים זֶה אַחַר זֶה:</div>
+          <div class="glose-fr">Comment les a-t-il revetus — l&#x27;ordre des habits pour le pere et pour les fils, l&#x27;un apres l&#x27;autre.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַאי דַהֲוָה הֲוָה</b> וּמַה צָרִיךְ לָנוּ לִשְׁאוֹל:</div>
+          <div class="glose-fr">Ce qui fut, fut — et pourquoi aurions-nous besoin de le demander ?</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַאי דַהֲוָה הֲוָה</b> בפ&quot;ק דְּסַנְהֶדְרִין (דַּף טו:) מִיבַּעְיָא לָן שׁוֹר סִינַי בְּכַמָּה מִי גָּמַר שָׁעָה מִדּוֹרוֹת אוֹ לָא וְלָא פָּרִיךְ הָתָם כִּי הָכָא מַאי דַהֲוָה הֲוָה:</div>
+          <div class="glose-fr">&#x27;Ce qui fut, fut&#x27; — au premier chapitre de Sanhedrin (15b), on s&#x27;interroge : le boeuf du Sinai, [s&#x27;il tue,] par combien [de juges est-il juge] ? Apprend-on le [cas du] moment a partir des generations, ou non ? Et l&#x27;on n&#x27;objecte pas la-bas, comme ici, &#x27;ce qui fut, fut&#x27; [car cela avait la une portee pour l&#x27;etude de la loi].</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara passe a l'ordre concret du revetement. Premiere lecture : 'comment Moche les a-t-il revetus ?' — mais on objecte : <b>mai de-hava hava</b> ('ce qui fut, fut'), l'ordre passe n'a pas de portee pratique. Deuxieme lecture : 'comment les revetira-t-il <b>le-atid lavo</b> (dans l'avenir), a la resurrection ?' — rejetee aussi : Aharon, ses fils et Moche reviendront eux-memes et connaitront l'ordre. La vraie portee de la question sera precisee au segment suivant.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא: כֵּיצַד הִלְבִּישָׁן לְמִיסְבַּר קְרָאֵי. פְּלִיגִי בָּהּ בְּנֵי רַבִּי חִייָּא וְרַבִּי יוֹחָנָן. חַד אָמַר: אַהֲרֹן וְאַחַר כָּךְ בָּנָיו, וְחַד אָמַר: אַהֲרֹן וּבָנָיו בְּבַת אַחַת.</div>
+            <div class="fr"><p>Plutot : [la question est] comment les a-t-il revetus, afin de comprendre (concilier) les versets (le-misbar kra&#x27;ei). A ce sujet divergent les fils de R.</p><p>Hiyya et R. Yohanan.</p><p>L&#x27;un dit : Aharon d&#x27;abord, puis ses fils ; et l&#x27;autre dit : Aharon et ses fils simultanement (bevat ahat).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְמִסְבַּר קְרָאֵי</b> דְּלָא לִירְמוֹ אַהֲדָדֵי דְּבַצַּווָּאָה כְּתִיב (שְׁמוֹת כ״ט:ט׳) וְחָגַרְתָּ אֹותָם אַבְנֵט אַהֲרֹן וּבָנָיו. מַשְׁמַע חֲגִירָתָם שֶׁל אָב וּבָנִים בְּסֵדֶר אֶחָד וְלֹא הִפְסִיק לְבִישַׁת בֶּגֶד אַחֵר בֵּינְתַיִים וּבָעֲשִׂייָּה כְּתִיב בְּאַהֲרֹן (וַיִּקְרָא ח׳:ז׳) וְיַחְגֹּור אוֹתוֹ בְּאַבְנֵט בְּסֵדֶר לְבִישַׁת בְּגָדִים וְגוֹ&#x27; וְהִלְבִּישׁוּ כָּל הַמַּלְבּוּשִׁין וְאַחַר כָּךְ הִקְרִיב בָּנָיו וְהִלְבִּישָׁם [וְלֹא] חָגַר אַהֲרֹן וּבָנָיו בְּבַת אַחַת:</div>
+          <div class="glose-fr">Pour concilier les versets — pour qu&#x27;ils ne se contredisent pas. Dans le commandement il est ecrit (Ex 29:9) &#x27;et tu les ceindras d&#x27;une ceinture, Aharon et ses fils&#x27; — ce qui suggere une ceinture du pere et des fils dans un seul mouvement, sans intercaler le revetement d&#x27;un autre habit ; tandis que dans la realisation il est ecrit a propos d&#x27;Aharon (Lev 8:7) &#x27;il le ceignit de la ceinture&#x27; dans l&#x27;ordre du revetement de ses habits — il lui revetit tous les habits, puis ensuite offrit [revetit] ses fils et les revetit ; il ne ceignit donc pas Aharon et ses fils dans un seul mouvement.</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">כֵּיצַד מַלְבִּישָׁן; לְמִסְבַּר קְרָאֵי. קָשֶׁה הֲוָה לֵיהּ לְמֵימַר כֵּיצַד הִלְבִּישָׁן לְמִסְבַּר קְרָאֵי דְּהַמִּקְרָאוֹת מְדַבְּרִים בְּמַה שֶׁהִלְבִּישָׁן מֵעִיקָּרָא וְאֵין מְדַבְּרִים בְּמַה שֶׁמַּלְבִּישָׁן לֶעָתִיד לָבוֹא? וְנִרְאֶה לִי בס&quot;ד דְּהַשּׁוֹאֵל מִתְּחִילָּה נִתְקַשָּׁה לוֹ בִּקְרָאֵי שֶׁהֵם הַפְכִּיִּים וְעָלָה בְּדַעְתּוֹ לְתָרֵץ הַמִּקְרָאוֹת כָּךְ דְּמַה שֶׁאָמַר לוֹ הַשֵּׁם יִתְבָּרַךְ בַּצִּוּוּי (שְׁמוֹת כט, ט) &#x27;וְחָגַרְתָּ אֹתָם אַבְנֵט אַהֲרֹן וּבָנָיו&#x27; דְּמַשְׁמַע חֲגִירַת אָב וּבָנִים בְּסֵדֶר אֶחָד וְלֹא יַפְסִיק בִּלְבִישַׁת בֶּגֶד אַחֵר בֵּנְתַיִים זֶה קָאֵי עַל עָתִיד לָבוֹא שֶׁבִּישְּׂרוֹ דִּלְעָתִיד לָבוֹא גַּם כֵּן הוּא יִלְבָּשָׁם בְּסֵדֶר זֶה וּכְמוֹ שֶׁמָּצִינוּ בְּעִנְיַן תְּרוּמוֹת וּמַעַשְׂרוֹת דִּכְתִיב (בַּמִּדְבָּר יח, כח) &#x27;וּנְתַתֶּם מִמֶּנּוּ אֶת תְּרוּמַת ה&#x27; לְאַהֲרֹן הַכֹּהֵן&#x27; וְאָמְרוּ רַבּוֹתֵינוּ זַ&quot;ל (סַנְהֶדְרִין צ:) הַכָּתוּב מִבְּשָׂרוֹ עַל עָתִיד לָבוֹא שֶׁיִּחְיוּ הַמֵּתִים וְיִתְּנוּ תְּרוּמָה לְאַהֲרֹן הַכֹּהֵן ע&quot;ה דְּבַמִּדְבָּר לֹא נָהֲגוּ תְּרוּמוֹת וּמַעַשְׂרוֹת, וְכֵן כָּאן מִבְּשָׂרוֹ עַל הֶעָתִיד שֶׁיִּחְיוּ וְיִלְבָּשָׁם כָּךְ בְּזֶה הַסֵּדֶר אַךְ עַל לְבִישָׁתָם עַתָּה צִיווָּהוּ שֶׁיַּלְבִּישֵׁם לְכָל אֶחָד בִּפְנֵי עַצְמוֹ אֶת הַלְּבוּשִׁים אֲפִילּוּ הָאַבְנֵט, וּבַתּוֹרָה נִתְפָּרֵשׁ וְנִכְתַּב הַסֵּדֶר שֶׁל עַתָּה בַּעֲשִׂיָּיה וְהַסֵּדֶר שֶׁל עָתִיד לָבוֹא בְּעֵת הַצִּוּוּי כָּךְ עָלָה בְּדַעַת הַשּׁוֹאֵל לְתָרֵץ הַמִּקְרָאוֹת. אַךְ זֶה הַתֵּירוּץ אִי אֶפְשָׁר לִהְיוֹת אֶלָּא אִם כֵּן נַנִּיחַ בְּמֻונָּח דִּלְעָתִיד לָבוֹא יִהְיֶה שִׁינּוּי בְּסֵדֶר לְבִישָׁתָם מִמַּה שֶׁהָיָה מִקֹּודֶם כְּמוֹ שֶׁיֵּשׁ קְצָת שִׁינּוּיִים בְּקָרְבָּנוֹת שֶׁל עָתִיד לָבוֹא בְּבַיִת שְׁלִישִׁי בִּנְבוּאַת יְחֶזְקֵאל הַנָּבִיא ע&quot;ה, וְאִם לֹא יֵשׁ לָנוּ קַבָּלָה בְּדָבָר זֶה שֶׁיִּהְיֶה שִׁינּוּי בִּלְבִישָׁתָן לֶעָתִיד לָבוֹא מִסֵּדֶר שֶׁנַּעֲשָׂה מִקֹּודֶם, אֵין אֲנַחְנוּ יְכוֹלִים לוֹמַר מִדַּעְתֵּינוּ שֶׁיִּהְיֶה שִׁינּוּי כְּדֵי לְתָרֵץ הַמִּקְרָאוֹת, וְלָכֵן נִתְכַּוֵּון הַשּׁוֹאֵל לִשְׁאוֹל וְלֵידַע בַּתְּחִילָּה כֵּיצַד מַלְבִּישָׁן לֶעָתִיד לָבוֹא שֶׁרָצָה לֵידַע אִם יֵשׁ לָהֶם קַבָּלָה בְּסֵדֶר לְבִישָׁתָם לֶעָתִיד לָבוֹא שֶׁאִם יָשִׁיבוּ לוֹ הַחֲכָמִים בְּבֵית הַמִּדְרָשׁ שֶׁיֵּשׁ לָהֶם קַבָּלָה דִּלְעָתִיד יִהְיֶה שִׁינּוּי לְבִישָׁתָם שֶׁהָאַבְנֵט שֶׁל כֻּולָּם תִּהְיֶה הַלְבָּשָׁתוֹ בִּפְנֵי עַצְמוֹ בְּיַחַד, אָז מִמֵּילָא יִתְייַשְּׁבוּ הַמִּקְרָאוֹת דְּעַתָּה יְפָרֵשׁ הַמִּקְרָא שֶׁל הַצִּוּוּי הוּא מְדַבֵּר עַל עָתִיד לָבוֹא. וְלָזֶה אָמַר כֵּיצַד מַלְבִּישָׁן לֶעָתִיד לָבוֹא כְּדֵי לְמִסְבַּר קְרָאֵי וְלֹא אָמַר כֵּיצַד הִלְבִּישָׁן מֵעִיקָּרָא כְּדֵי לְמִסְבַּר קְרָאֵי כִּי לְבִישָׁה דְּמֵעִיקָּרָא אֵין לְהִסְתַּפֵּק בָּהּ דְּוַדַּאי כְּמוֹ שֶׁאָמְרוּ גַּבֵּי עֲשִׂיָּה וּמִזֶּה לֹא יוּכַל לְתָרֵץ הַמִּקְרָאוֹת. וְדַע אַף עַל גַּב דְּשַׁפִּיר מְשַׁנֵּי דְּצָרִיךְ לְמַנְדַּע לְמִסְבַּר קְרָאֵי, הִנֵּה עוֹד מָצֵי לְשַׁנּוֹיֵי דְּנָפְקָא מִינָּהּ לְעִנְיַן דִּינָא אִם אֶחָד עָשָׂה לְבָנָיו אוֹ לְאוֹהֲבָיו בְּגָדִים שְׁלֵמִים כֻּתֹּונֶת וּמִכְנָסַייִם וּבֶגֶד וְאַבְנֵט וְנָדַר אוֹ נִשְׁבַּע שֶׁהוּא בְּעַצְמוֹ יַלְבִּישׁ הַבְּגָדִים הָאֵלֶּה לְכָל אֶחָד וְאֶחָד מֵהֶם כַּאֲשֶׁר הִלְבִּישׁ מֹשֶׁה רַבֵּינוּ ע&quot;ה אֶת אַהֲרֹן וּבָנָיו דְּהַשְׁתָּא צְרִיכִין אֲנַחְנוּ לָדַעַת אֵיךְ הִלְבִּישָׁן כְּדֵי לְקַייֵּם זֶה שְׁבוּעָתוֹ בְּאוֹתוֹ הַסֵּדֶר מַמָּשׁ! וְהִנֵּה לְמָאֵן דְּאָמַר (יוֹמָא יב.) שֶׁלֹּא הָיָה הֶפְסֵק בֵּין אַבְנֵט לָאַבְנֵט אֶלָּא הִלְבִּישׁ כָּל הָאַבְנֵטִים בְּזֶה אַחַר זֶה צָרִיךְ לְהָבִין לָמָּה נִשְׁתַּנָּה הָאַבְנֵט מִשְּׁאָר בְּגָדִים? וְנִרְאֶה לִי בס&quot;ד דְּאַבְנֵט בָּא לְתַקֵּן עַל הִרְהוּר הַלֵּב וּבְכָל מִצְוֹת שֶׁבַּתּוֹרָה חוּץ מֵעֲבוֹדָה זָרָה אֵין הַהִרְהוּר חָשׁוּב כְּלוּם וְרַק בְּקָדָשִׁים בַּעֲבוֹדַת כֹּהֲנִים פּוֹסֵל כִּי עוֹשֶׂה הַכֹּהֵן פִּיגּוּל בְּהִרְהוּר בִּלְבַד לָכֵן עָשָׂה לָהֶם שִׁינּוּי בָּאַבְנֵטִים לַחְגֹּור אֶת כֻּולָּם בְּיַחַד לְעוֹרֵר אוֹתָם בְּאַזְהָרַת הַהִרְהוּר שֶׁהוּא כְּנֶגֶד הָאַבְנֵט כִּי אַזְהָרָה זוֹ שָׁיְיכָה לָהֶם יוֹתֵר.</div>
+          <div class="glose-fr">&#x27;Comment les revetira-t-il ; pour concilier les versets.&#x27; Difficulte : il aurait du dire &#x27;comment les a-t-il revetus, pour concilier les versets&#x27;, car les versets parlent de la maniere dont il les a revetus au debut, et non de la maniere dont il les revetira dans l&#x27;avenir ? Il me semble, avec l&#x27;aide du Ciel, que le questionneur fut d&#x27;abord embarrasse par des versets qui paraissent opposes, et il envisagea de les concilier ainsi : ce que Hachem lui ordonna dans le commandement (Ex 29:9) &#x27;et tu les ceindras d&#x27;une ceinture, Aharon et ses fils&#x27; — qui suggere la ceinture du pere et des fils en un seul mouvement, sans intercaler le revetement d&#x27;un autre habit — se rapporterait a l&#x27;avenir : Il l&#x27;informerait que dans l&#x27;avenir aussi il les revetira selon cet ordre. De meme que l&#x27;on trouve, a propos des teroumot et maasserot, qu&#x27;il est ecrit (Nb 18:28) &#x27;vous donnerez de cela le prelevement de Hachem a Aharon le cohen&#x27;, et nos Maitres ont dit (Sanhedrin 90b) que le verset l&#x27;informe sur l&#x27;avenir, quand les morts revivront et donneront le prelevement a Aharon le cohen — puisqu&#x27;au desert on ne pratiquait pas teroumot et maasserot. De meme ici : le verset l&#x27;informe sur l&#x27;avenir, qu&#x27;ils revivront et qu&#x27;il les revetira ainsi, dans cet ordre ; mais pour leur revetement present, Il lui ordonna de revetir chacun separement, chaque habit, meme la ceinture. Et dans la Torah furent explicites : l&#x27;ordre du present dans la realisation, et l&#x27;ordre de l&#x27;avenir dans le commandement. Ainsi le questionneur pensa concilier les versets. Mais cette solution n&#x27;est possible que si l&#x27;on pose qu&#x27;a l&#x27;avenir il y aura un changement dans l&#x27;ordre de leur revetement par rapport a auparavant — comme il y a quelques changements dans les offrandes de l&#x27;avenir, au Troisieme Temple, dans la prophetie d&#x27;Ezechiel. Et si nous n&#x27;avons pas de tradition (kabbala) qu&#x27;il y aura a l&#x27;avenir un changement de revetement par rapport a l&#x27;ordre anterieur, nous ne pouvons dire de nous-memes qu&#x27;il y aura un changement afin de concilier les versets. C&#x27;est pourquoi le questionneur voulut d&#x27;abord demander et savoir &#x27;comment les revetira-t-il a l&#x27;avenir&#x27; : il voulait savoir s&#x27;ils ont une tradition sur l&#x27;ordre du revetement a l&#x27;avenir. Car si les sages de la maison d&#x27;etude lui repondaient qu&#x27;ils ont une tradition qu&#x27;a l&#x27;avenir le revetement changera — que la ceinture de tous sera mise separement, ensemble — alors les versets se resolvent d&#x27;eux-memes, car le verset du commandement parle desormais de l&#x27;avenir. Voila pourquoi il dit &#x27;comment les revetira-t-il a l&#x27;avenir, afin de concilier les versets&#x27;, et non &#x27;comment les a-t-il revetus au debut afin de concilier les versets&#x27; : car le revetement initial ne fait pas de doute — il est certainement tel qu&#x27;on l&#x27;a dit pour la realisation — et de la on ne peut concilier les versets. Et sache : bien qu&#x27;il reponde justement qu&#x27;il faut le savoir pour concilier les versets, on pourrait encore repondre qu&#x27;il y a une portee pratique (nafka mina) en matiere de loi : si quelqu&#x27;un a confectionne pour ses fils ou ses amis des habits complets (tunique, caleçons, vetement et ceinture) et a fait voeu ou serment que lui-meme les revetira de ces habits, chacun d&#x27;eux, comme Moche notre maitre revetit Aharon et ses fils — nous avons alors besoin de savoir comment il les revetit, afin d&#x27;accomplir ce serment exactement dans cet ordre ! Et pour celui qui dit (Yoma 12a) qu&#x27;il n&#x27;y eut pas d&#x27;interruption entre ceinture et ceinture, mais qu&#x27;il ceignit toutes les ceintures l&#x27;une apres l&#x27;autre, il faut comprendre pourquoi la ceinture differe des autres habits. Il me semble, avec l&#x27;aide du Ciel, que la ceinture vient reparer la pensee du coeur (hirhour ha-lev) ; or dans toutes les mitzvot de la Torah, hormis l&#x27;idolatrie, la pensee n&#x27;a aucune valeur, et ce n&#x27;est que dans les kodachim, dans le service des cohanim, qu&#x27;elle invalide — car le cohen rend l&#x27;offrande pigoul par la seule pensee. C&#x27;est pourquoi il leur fit un changement dans les ceintures, en les ceignant tous ensemble, pour les eveiller a l&#x27;avertissement contre la pensee, qui correspond a la ceinture, car cet avertissement les concerne plus particulierement.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">אִיבַּעְיָא לְהוּ : הֵי מִנַּיְהוּ חֲמִירָא? שְׁפִיכוּת דָּמִים הוּא דְּזִילָא , וּדְכֵלִים כִּדְקַיְמָא. קָשֶׁה מַאי נָפְקָא לָן מִזֶּה מַה דַּהֲוָה הֲוָה? וּכְהַאי גַּוְנָא פָּרֵיךְ לְעֵיל (דַּף ה:) &#x27;כֵּיצַד הִלְבִּישָׁן&#x27; מַאי דַהֲוָה הֲוָה! וּמְשַׁנֵּי לְמִסְבַּר קְרָאֵי. וְכָאן לֹא שַׁיָּיךְ תֵּירוּץ זֶה. וְנִרְאֶה לִי בס&quot;ד דְּאָמַר לְעֵיל (דַּף ט:) מִקְדָּשׁ רִאשׁוֹן חָרֵב בִּשְׁבִיל עֲבוֹדָה זָרָה גִּלּוּי עֲרָיוֹת וּשְׁפִיכוּת דָּמִים אֲבָל מִקְדָּשׁ שֵׁנִי חָרֵב בִּשְׁבִיל &#x27;שִׂנְאַת חִנָּם&#x27; לְלַמֶּדְךָ, שֶׁשְּׁקוּלָה שִׂנְאַת חִנָּם כְּנֶגֶד שָׁלֹשׁ עֲבֵירוֹת: עֲבוֹדָה זָרָה וְגִלּוּי עֲרָיוֹת וּשְׁפִיכוּת דָּמִים. וְהִנֵּה זֶה הַלִּימּוּד תָּלוּי בְּהַאי בַּעְיָא דְּאִם תֹּאמַר שְׁפִיכוּת דָּמִים הֲווָת זִילָא בַּמִּקְדָּשׁ שֵׁנִי שֶׁהָיְתָה כְּמוֹ מִקְדָּשׁ רִאשׁוֹן דִּכְתִיב בֵּיהּ (מְלָכִים ב&#x27; כא, טז) &#x27;וְגַם דָּם נָקִי שָׁפַךְ מְנַשֶּׁה&#x27; אִם כֵּן לֵיכָּא לְמֵימַר שֶׁחָרַב בִּשְׁבִיל שִׂנְאַת חִנָּם אֶלָּא יֵשׁ לוֹמַר דְּחֶרֶב בִּשְׁבִיל שְׁפִיכוּת דָּמִים וּמִמֵּילָא לֵיכָּא לִלְמֹוד דִּשְׁקוּלָה שִׂנְאַת חִנָּם כְּנֶגֶד ג&#x27; עֲבֵירוֹת, וְאִי אָמְרִינַן שְׁפִיכוּת דָּמִים לָא זִילָא בְּמִקְדָּשׁ שֵׁנִי אִם כֵּן לֹא נֶחֱרַב אֶלָּא בִּשְׁבִיל שִׂנְאַת חִנָּם וּמִמֵּילָא אַתָּה לָמֵד דַּחֲמִירָא שִׂנְאַת חִנָּם כְּנֶגֶד ג&#x27; עֲבֵירוֹת. מִפְּנֵי שֶׁמַּעֲשֶׁרֶת [כו.] קָשֶׁה מַה בְּכָךְ וְכִי צָרָה עֵינֵיהֶם ח&quot;ו בְּכֹהֲנִים שֶׁיִּהְיוּ עֲשִׁירִים? וְנִרְאֶה לִי בס&quot;ד כִּי מִצְוַת הַהַקְטָרָה הִיא יְקָרָה וּגְדוֹלָה מִכָּל מִצְוֹת שֶׁל עֲבוֹדָה מִפְּנֵי שֶׁהִיא בִּפְנִים בַּהֵיכָל וְעוֹד תִּיקּוּן שֶׁלָּהּ גְּדוֹלָה גָּדוֹל כַּנִּזְכָּר בַּזֹּוהַר הַקָּדוֹשׁ וְאִם יִתְעַשְּׁרוּ בָּהּ אֶפְשָׁר שֶׁיַּעֲשׂוּ מִצְוָה יְקָרָה זוֹ שֶׁלֹּא לִשְׁמָהּ. אוֹ יוּבַן אִם יִתְעַשְּׁרוּ אָז אוֹתָם הַמִּתְעַשְּׂרִים לֹא יָבֹאוּ לַעֲבֹוד עֲבוֹדָה, וּכְהַאי גַּווְנָא מָצִינוּ דְּאַנְשֵׁי כְּנֶסֶת הַגְּדוֹלָה הִתְפַּלְּלוּ עַל כּוֹתְבֵי סת&quot;ם [סְפָרִים, תְּפִילִּין, מְזוּזוֹת] שֶׁלֹּא יִתְעַשְּׁרוּ כְּדֵי שֶׁיִּכְתְּבוּ. וּמַה שֶׁאָמְרוּ הָא שְׁכִיחָא וְהָא לָא שְׁכִיחָא , נִרְאֶה לִי בס&quot;ד דְּיֵשׁ לְדַקְדֵּק זֶה מִן הַכָּתוּב דִּכְתִיב (דְּבָרִים לג, יא) &#x27;בָּרֵךְ ה&#x27; חֵילוֹ וּפֹעַל יָדָיו תִּרְצֶה&#x27; וְקָשֶׁה כֵּיוָן דִּיבָרֵךְ חֵילוֹ בְּוַדַּאי פֹּעַל יָדָיו יִרְצֶה וּלְמַאי הֻוצְרַךְ לוֹמַר &#x27;וּפָעַל יָדָיו תִּרְצֶה&#x27; אֶלָּא וַדַּאי &#x27;בֵּרֵךְ ה&#x27; חֵילוֹ&#x27; קָאֵי עַל יָשִׂימוּ קְטוּרָה דְּלָא שְׁכִיחָה וְגַם שֶׁהִיא עֲבוֹדָה בִּפְנִים, &#x27;וּפָעַל יָדָיו תִּרְצֶה&#x27; קָאֵי עַל וְכָלִיל עַל מִזְבַּחֲךָ שֶׁהִיא עֲבוֹדַת הַקְרָבַת קָרְבָּנוֹת.</div>
+          <div class="glose-fr">&#x27;On leur a demande : lequel des deux est plus grave ?&#x27; — [difficulte comparable a la nôtre]. On peut demander : quelle portee pratique, puisque &#x27;ce qui fut, fut&#x27; ? Et de meme on a objecte plus haut (5b) &#x27;comment les a-t-il revetus — ce qui fut, fut !&#x27;, et l&#x27;on a repondu &#x27;pour concilier les versets&#x27; ; mais ici cette reponse ne s&#x27;applique pas. Il me semble, avec l&#x27;aide du Ciel : on dit plus loin (9b) que le Premier Temple fut detruit a cause de l&#x27;idolatrie, des relations interdites et de l&#x27;effusion de sang, tandis que le Second Temple fut detruit a cause de la haine gratuite (sinat hinam), pour t&#x27;enseigner que la haine gratuite equivaut aux trois transgressions : idolatrie, relations interdites et effusion de sang. Or cet enseignement depend de cette question : si tu dis que l&#x27;effusion de sang etait repandue (zila) au Second Temple comme au Premier — dont il est ecrit a propos de Menache (2 Rois 21:16) &#x27;Menache repandit aussi du sang innocent&#x27; — alors on ne peut dire qu&#x27;il fut detruit pour la haine gratuite, mais bien pour l&#x27;effusion de sang, et l&#x27;on ne peut plus apprendre que la haine gratuite equivaut aux trois transgressions ; mais si nous disons que l&#x27;effusion de sang n&#x27;etait pas repandue au Second Temple, alors il ne fut detruit que pour la haine gratuite, et de la tu apprends que la haine gratuite est aussi grave que les trois transgressions. &#x27;Parce que cela les enrichirait&#x27; (26a) — difficulte : qu&#x27;importe, leur oeil serait-il, a Dieu ne plaise, jaloux que les cohanim soient riches ? Il me semble, avec l&#x27;aide du Ciel : la mitzva de l&#x27;encensement (haktara) est precieuse et plus grande que toutes les mitzvot du service, car elle s&#x27;accomplit a l&#x27;interieur, dans le Heikhal, et de plus sa reparation (tikoun) est grande, comme il est mentionne dans le saint Zohar ; et s&#x27;ils s&#x27;enrichissaient par elle, ils risqueraient d&#x27;accomplir cette precieuse mitzva non pour elle-meme (chelo lichma). Ou bien on peut comprendre : s&#x27;ils s&#x27;enrichissaient, ceux qui s&#x27;enrichiraient ne viendraient plus faire le service — comme on trouve que les Hommes de la Grande Assemblee prierent au sujet des scribes de STa&#x27;M (rouleaux, tefilin, mezouzot) qu&#x27;ils ne s&#x27;enrichissent pas, afin qu&#x27;ils continuent d&#x27;ecrire. Et ce qu&#x27;ils ont dit &#x27;ceci est frequent et cela ne l&#x27;est pas&#x27;, il me semble, avec l&#x27;aide du Ciel, qu&#x27;on peut le deduire du verset (Deut 33:11) &#x27;benis, Hachem, sa force, et agree l&#x27;oeuvre de ses mains&#x27;. Difficulte : puisqu&#x27;Il benit sa force, certainement l&#x27;oeuvre de ses mains sera agreee — pourquoi dire &#x27;et agree l&#x27;oeuvre de ses mains&#x27; ? Plutot : &#x27;benis, Hachem, sa force&#x27; se rapporte a &#x27;ils placeront l&#x27;encens&#x27; (yasimou ketora), qui n&#x27;est pas frequent et qui est en outre un service interieur ; &#x27;et agree l&#x27;oeuvre de ses mains&#x27; se rapporte a &#x27;ve-khalil al mizbahekha&#x27; (l&#x27;holocauste sur ton autel), qui est le service de l&#x27;offrande des sacrifices.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La vraie raison de la question : <b>le-misbar kra'ei</b> — pour <b>concilier des versets</b> apparemment contradictoires sur l'ordre du revetement. D'ou une mahloket entre les fils de R. Hiyya et R. Yohanan : l'un tient que Moche revetit <b>Aharon d'abord, puis ses fils</b> ; l'autre qu'il les revetit <b>simultanement</b> (bevat ahat), sans changer l'ordre prescrit par les versets. Abaye precisera (segment 8) que le litige ne porte que sur la ceinture.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="360" fill="#fffdf8"/>
+  <text x="360" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Comment Moche revetit-il Aharon et ses fils ? (le-misbar kra'ei)</text>
+  <rect x="40" y="42" width="640" height="52" rx="6" fill="#ecfdf5" stroke="#bfe6d2"/>
+  <text x="360" y="63" text-anchor="middle" font-size="11.5" font-weight="700" fill="#065f46">Consensus : tunique (ketonet) et mitre (mitznefet) -- Aharon D'ABORD, puis les fils</text>
+  <text x="360" y="82" text-anchor="middle" font-size="9.5" fill="#047857">Tant dans le commandement que dans la realisation, Aharon precede. (Les mikhnasayim precedent tout, non contestes.)</text>
+  <text x="360" y="116" text-anchor="middle" font-size="12" font-weight="700" fill="#b4231f">Le litige ne porte que sur la CEINTURE (avnet)</text>
+  <rect x="40" y="130" width="310" height="150" rx="6" fill="#eef2ff" stroke="#a9b4e8"/>
+  <text x="195" y="152" text-anchor="middle" font-size="11.5" font-weight="700" fill="#3730a3">Position A : Aharon puis ses fils</text>
+  <text x="195" y="176" text-anchor="middle" font-size="10" fill="#292524">S'appuie sur la REALISATION :</text>
+  <text x="195" y="198" text-anchor="middle" font-size="10" fill="#3730a3">'il le ceignit de la ceinture'</text>
+  <text x="195" y="212" text-anchor="middle" font-size="9" fill="#94908a">(Lev 8:7 -- Aharon, avec tous ses habits)</text>
+  <text x="195" y="234" text-anchor="middle" font-size="10" fill="#3730a3">puis 'il les ceignit de ceintures'</text>
+  <text x="195" y="248" text-anchor="middle" font-size="9" fill="#94908a">(Lev 8:13 -- les fils, ensuite)</text>
+  <text x="195" y="270" text-anchor="middle" font-size="9.5" fill="#57534e">=> Aharon entierement revetu, puis les fils</text>
+  <rect x="370" y="130" width="310" height="150" rx="6" fill="#fef2f2" stroke="#e8b4b4"/>
+  <text x="525" y="152" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b4231f">Position B : simultanement (bevat ahat)</text>
+  <text x="525" y="176" text-anchor="middle" font-size="10" fill="#292524">S'appuie sur le COMMANDEMENT :</text>
+  <text x="525" y="200" text-anchor="middle" font-size="10" fill="#b4231f">'et tu les ceindras d'une ceinture,</text>
+  <text x="525" y="214" text-anchor="middle" font-size="10" fill="#b4231f">Aharon et ses fils'</text>
+  <text x="525" y="228" text-anchor="middle" font-size="9" fill="#94908a">(Ex 29:9 -- ensemble, sans interruption)</text>
+  <text x="525" y="252" text-anchor="middle" font-size="9.5" fill="#57534e">=> la ceinture des uns et des autres</text>
+  <text x="525" y="266" text-anchor="middle" font-size="9.5" fill="#57534e">dans un seul et meme mouvement</text>
+  <rect x="40" y="296" width="640" height="50" rx="6" fill="#fffbeb" stroke="#f5e2a8"/>
+  <text x="360" y="317" text-anchor="middle" font-size="10.5" font-weight="700" fill="#92400e">Objection a B : mais la realisation dit bien 'il le ceignit' (Aharon) PUIS 'il les ceignit' (les fils) !</text>
+  <text x="360" y="335" text-anchor="middle" font-size="10" fill="#78350f">La guemara resout cette difficulte au debut de 6a.</text>
+</svg></div><div class="svg-cap">Les deux positions et les versets sur lesquels chacune s&#x27;appuie.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר אַבַּיֵּי: בְּכֻתֹּונֶת וּמִצְנֶפֶת כֻּולֵּי עָלְמָא לָא פְּלִיגִי דְּאַהֲרֹן וְאַחַר כָּךְ בָּנָיו. דְּבֵין בְּצַוָּואָה וּבֵין בַּעֲשִׂיָּה אַהֲרֹן קָדֵים. כִּי פְּלִיגִי בְּאַבְנֵט. מַאן דְּאָמַר אַהֲרֹן וְאַחַר כָּךְ בָּנָיו, דִּכְתִיב: ״וְיַחְגֹּור אוֹתוֹ בָּאַבְנֵט״, וַהֲדַר כְּתִיב: ״וְיַחְגֹּור אוֹתָם אַבְנֵט״. וּמַאן דְּאָמַר אַהֲרֹן וּבָנָיו בְּבַת אַחַת, דִּכְתִיב: ״וְחָגַרְתָּ אוֹתָם״. וּלְמַאן דְּאָמַר אַהֲרֹן וּבָנָיו בְּבַת אַחַת, הַכְּתִיב: ״וְיַחְגֹּור אוֹתוֹ בָּאַבְנֵט״ וַהֲדַר כְּתִיב: ״וְיַחְגֹּור אוֹתָם אַבְנֵט״!</div>
+            <div class="fr"><p>Abaye dit : pour la tunique (ketonet) et la mitre (mitznefet), tous s&#x27;accordent [que Moche revetit] Aharon puis ses fils, car tant dans le commandement que dans la realisation Aharon precede. Ils ne divergent qu&#x27;a propos de la ceinture (avnet).</p><p>Celui qui dit &#x27;Aharon puis ses fils&#x27; [s&#x27;appuie sur] &#x27;il le ceignit de la ceinture&#x27; (Lev 8:7), puis il est ecrit &#x27;il les ceignit de ceintures&#x27; (Lev 8:13). Et celui qui dit &#x27;Aharon et ses fils simultanement&#x27; [s&#x27;appuie sur] &#x27;ve-hagarta otam&#x27; (&#x27;et tu les ceindras&#x27;, Ex 29:9).</p><p>Mais pour celui qui dit &#x27;Aharon et ses fils simultanement&#x27; — n&#x27;est-il pas ecrit &#x27;il le ceignit de la ceinture&#x27; puis &#x27;il les ceignit de ceintures&#x27; [ce qui indique Aharon d&#x27;abord] ?! [La guemara resout en 6a.]</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(5)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אַבַּיֵּי מְפָרֵשׁ לָהּ לְמִילְּתַייְהוּ בְּכֻתֹּונֶת וּמִצְנֶפֶת לְהָכִי נְקַט כֻּתֹּונֶת וּמִצְנֶפֶת שֶׁשָּׁוִין בְּגָדוֹל וּבַהֶדְיוֹט וּמִכְנָסַיִם לֹא הֻוצְרַךְ לוֹמַר שֶׁהֲרֵי הֵן קוֹדְמִין לְכָל כִּדְאָמְרִינַן לְקַמָּן מִנַּיִין שֶׁלֹּא יְהֵא דָּבָר קוֹדֵם לַמִּכְנָסַיִם כו&#x27;:</div>
+          <div class="glose-fr">Abaye explicite leur position. [Il cite] la tunique et la mitre precisement parce qu&#x27;elles sont identiques pour le Cohen gadol et pour le simple cohen ; quant aux caleçons, nul besoin de les mentionner, car ils precedent tout, comme nous le disons plus loin : &#x27;d&#x27;ou [sait-on] que rien ne doit preceder les caleçons ?&#x27;.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כֻּולֵּי עָלְמָא לָא פְּלִיגִי דְּאַהֲרֹן וְאַחַ&quot;כּ בָּנָיו</b> לְאַהֲרֹן הִלְבִּישׁ תְּחִילָּה כָּל שְׁאָר בְּגָדָיו חוּץ מֵאַבְנֵט וְאַחַר כָּךְ הִתְחִיל לְהַלְבִּישׁ אֶת בָּנָיו:</div>
+          <div class="glose-fr">Tous s&#x27;accordent : Aharon puis ses fils — a Aharon il revetit d&#x27;abord tous ses autres habits, sauf la ceinture, puis il commenca a revetir ses fils.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּבֵין בְּצַווָּאָה בֵּין בַּעֲשִׂיָּיה</b> כָּךְ כְּתִיב:</div>
+          <div class="glose-fr">Tant dans le commandement que dans la realisation — ainsi est-il ecrit.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כִּי פְּלִיגִי בְּאַבְנֵט</b> שֶׁבַּצַּווָּאָה נֶאֱמַר חֲגִירָתָם כְּאַחַת וְחָגַרְתָּ אֹותָם אַבְנֵט אַהֲרֹן וּבָנָיו וְלֹא נֶאֶמְרָה חֲגִירָה בְּאַהֲרֹן כְּסֵדֶר לְבִישַׁת בְּגָדִים וּבָעֲשִׂיָּיה נֶאֶמְרָה חֲגִירָתוֹ כְּסֵדֶר שְׁאָר בְּגָדָיו וַחֲגִירַת בָּנָיו לְעַצְמָן בְּסֵדֶר בִּגְדֵיהֶם:</div>
+          <div class="glose-fr">Le litige porte sur la ceinture — car dans le commandement leur ceinture est enoncee ensemble, &#x27;et tu les ceindras d&#x27;une ceinture, Aharon et ses fils&#x27;, et la ceinture d&#x27;Aharon n&#x27;y est pas mentionnee dans l&#x27;ordre du revetement de ses habits ; tandis que dans la realisation sa ceinture [a lui] est enoncee dans l&#x27;ordre de ses autres habits, et celle de ses fils a part, dans l&#x27;ordre de leurs habits.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַאן דְּאָמַר אַהֲרֹן וּבָנָיו בְּבַת אַחַת</b> אָזַל בָּתַר צַוָּואָה וּלְקַמֵּיהּ מְפָרֵשׁ בְּבַת אַחַת מִי מַשְׁכַּחַתְּ לַהּ:</div>
+          <div class="glose-fr">Celui qui dit &#x27;Aharon et ses fils simultanement&#x27; — suit le [verset du] commandement ; et plus loin il expliquera comment &#x27;simultanement&#x27; est possible [en pratique].</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּכֻתֹּונֶת וּמִצְנֶפֶת כֻּולֵּי עָלְמָא לָא פְּלִיגִי</b> הָא דְּלָא נְקַט נָמֵי מִכְנָסַיִם נִרְאֶה לִי מִשּׁוּם דִּמְפָרֵשׁ דְּבֵין בַּצַּוָּואָה בֵּין בַּעֲשִׂייָּה אַהֲרֹן קָדִים וּמִכְנָסַיִם לָא כְּתִיבִי לֹא בַּצַּוָּואָה וְלֹא בַּעֲשִׂייָּה וְרַשִׁ&quot;י פִּי&#x27; טַעְמָא אַחַרְיַנָא:</div>
+          <div class="glose-fr">&#x27;Pour la tunique et la mitre, tous s&#x27;accordent&#x27; — s&#x27;il n&#x27;a pas mentionne aussi les caleçons, cela me parait etre parce qu&#x27;il explique &#x27;tant dans le commandement que dans la realisation Aharon precede&#x27;, or les caleçons ne sont ecrits ni dans le commandement ni dans la realisation. Rachi, lui, a donne une autre raison.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Abaye circonscrit le litige. Pour la <b>tunique</b> et la <b>mitre</b>, aucun desaccord : Aharon d'abord, car commandement ET realisation placent Aharon en tete. Le litige ne porte que sur la <b>ceinture</b> (avnet) :</p><p>• Position A ('Aharon puis ses fils') s'appuie sur les versets de la realisation : 'il le ceignit' (Aharon, Lev 8:7), puis 'il les ceignit' (les fils, Lev 8:13).</p><p>• Position B ('simultanement') s'appuie sur le commandement : 've-hagarta otam' — 'tu les ceindras' ensemble (Ex 29:9).</p><p>Objection a B : les versets de la realisation montrent bien Aharon d'abord ! La resolution ouvre le folio 6a.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="360" fill="#fffdf8"/>
+  <text x="360" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Comment Moche revetit-il Aharon et ses fils ? (le-misbar kra'ei)</text>
+  <rect x="40" y="42" width="640" height="52" rx="6" fill="#ecfdf5" stroke="#bfe6d2"/>
+  <text x="360" y="63" text-anchor="middle" font-size="11.5" font-weight="700" fill="#065f46">Consensus : tunique (ketonet) et mitre (mitznefet) -- Aharon D'ABORD, puis les fils</text>
+  <text x="360" y="82" text-anchor="middle" font-size="9.5" fill="#047857">Tant dans le commandement que dans la realisation, Aharon precede. (Les mikhnasayim precedent tout, non contestes.)</text>
+  <text x="360" y="116" text-anchor="middle" font-size="12" font-weight="700" fill="#b4231f">Le litige ne porte que sur la CEINTURE (avnet)</text>
+  <rect x="40" y="130" width="310" height="150" rx="6" fill="#eef2ff" stroke="#a9b4e8"/>
+  <text x="195" y="152" text-anchor="middle" font-size="11.5" font-weight="700" fill="#3730a3">Position A : Aharon puis ses fils</text>
+  <text x="195" y="176" text-anchor="middle" font-size="10" fill="#292524">S'appuie sur la REALISATION :</text>
+  <text x="195" y="198" text-anchor="middle" font-size="10" fill="#3730a3">'il le ceignit de la ceinture'</text>
+  <text x="195" y="212" text-anchor="middle" font-size="9" fill="#94908a">(Lev 8:7 -- Aharon, avec tous ses habits)</text>
+  <text x="195" y="234" text-anchor="middle" font-size="10" fill="#3730a3">puis 'il les ceignit de ceintures'</text>
+  <text x="195" y="248" text-anchor="middle" font-size="9" fill="#94908a">(Lev 8:13 -- les fils, ensuite)</text>
+  <text x="195" y="270" text-anchor="middle" font-size="9.5" fill="#57534e">=> Aharon entierement revetu, puis les fils</text>
+  <rect x="370" y="130" width="310" height="150" rx="6" fill="#fef2f2" stroke="#e8b4b4"/>
+  <text x="525" y="152" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b4231f">Position B : simultanement (bevat ahat)</text>
+  <text x="525" y="176" text-anchor="middle" font-size="10" fill="#292524">S'appuie sur le COMMANDEMENT :</text>
+  <text x="525" y="200" text-anchor="middle" font-size="10" fill="#b4231f">'et tu les ceindras d'une ceinture,</text>
+  <text x="525" y="214" text-anchor="middle" font-size="10" fill="#b4231f">Aharon et ses fils'</text>
+  <text x="525" y="228" text-anchor="middle" font-size="9" fill="#94908a">(Ex 29:9 -- ensemble, sans interruption)</text>
+  <text x="525" y="252" text-anchor="middle" font-size="9.5" fill="#57534e">=> la ceinture des uns et des autres</text>
+  <text x="525" y="266" text-anchor="middle" font-size="9.5" fill="#57534e">dans un seul et meme mouvement</text>
+  <rect x="40" y="296" width="640" height="50" rx="6" fill="#fffbeb" stroke="#f5e2a8"/>
+  <text x="360" y="317" text-anchor="middle" font-size="10.5" font-weight="700" fill="#92400e">Objection a B : mais la realisation dit bien 'il le ceignit' (Aharon) PUIS 'il les ceignit' (les fils) !</text>
+  <text x="360" y="335" text-anchor="middle" font-size="10" fill="#78350f">La guemara resout cette difficulte au debut de 6a.</text>
+</svg></div><div class="svg-cap">Le litige circonscrit a la ceinture, et l&#x27;objection finale a la position &#x27;simultanement&#x27;.</div></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_5a.html">&lsaquo; Yoma 5a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

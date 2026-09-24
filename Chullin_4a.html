@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chullin 4a — le test de la brochette d&#x27;oiseaux du Kouti, le principe &#x27;achzouk&#x27;, et la matsa du Kouti</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Chullin 4a — le test de la brochette d&#x27;oiseaux du Kouti, le principe &#x27;achzouk&#x27;, et la matsa du Kouti</h1>
+    <div class="ref">Chullin 4a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Chullin_3b.html">&lsaquo; Chullin 3b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Chullin_4b.html">Chullin 4b &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> La braita poursuit le cas du Kouti : pour eprouver une brochette d&#x27;oiseaux, on lui donne une tete a manger. Abaye deduit du debut de la braita (surveillance rapprochee requise), Rava de sa fin (entrer-sortir suffit).</p><p>On perfectionne le test : Rav Menacheh (cacher les oiseaux sous les pans), Rav Mecharchya (ecraser la tete) pour qu&#x27;aucune marque ne trahisse l&#x27;oiseau cacher. A l&#x27;objection &#x27;les Koutim tiennent peut-etre qu&#x27;il n&#x27;y a pas d&#x27;abattage toranique de l&#x27;oiseau&#x27;, on repond par le principe &#x27;achzouk&#x27; : ce qu&#x27;ils ont adopte, ils l&#x27;observent.</p><p>Le statut des mitzvot non ecrites qu&#x27;ils ont adoptees est une dispute tannaique (matsa du Kouti : Tana Kama permet, Rabbi Elazar interdit, RShBG les dit plus minutieux) ; la nafka mina porte sur le non-ecrit adopte. La sougya revient enfin a la regle de Rava sur l&#x27;apostat par appetit (couteau verifie) et une braita qui l&#x27;appuie.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 312" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="312" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Se fie-t-on aux Koutim pour une mitzva ? (Tana Kama vs RShBG)</text>
+  <rect x="180" y="50" width="250" height="36" fill="#e8ecfb" stroke="#d6cdbb"/>
+  <rect x="430" y="50" width="250" height="36" fill="#e8ecfb" stroke="#d6cdbb"/>
+  <text x="305" y="73" text-anchor="middle" font-size="13" font-weight="700" fill="#3730a3">Adoptee (achzouk)</text>
+  <text x="555" y="73" text-anchor="middle" font-size="13" font-weight="700" fill="#3730a3">Non adoptee</text>
+  <rect x="30" y="86" width="150" height="86" fill="#f3eee2" stroke="#d6cdbb"/>
+  <rect x="30" y="172" width="150" height="86" fill="#f3eee2" stroke="#d6cdbb"/>
+  <text x="105" y="133" text-anchor="middle" font-size="13" font-weight="700" fill="#1c1917">Mitzva ecrite</text>
+  <text x="105" y="219" text-anchor="middle" font-size="13" font-weight="700" fill="#1c1917">Non ecrite</text>
+  <rect x="180" y="86" width="250" height="86" fill="#eaf6ec" stroke="#d6cdbb"/>
+  <rect x="430" y="86" width="250" height="86" fill="#ffffff" stroke="#d6cdbb"/>
+  <rect x="180" y="172" width="250" height="86" fill="#fff7e6" stroke="#b45309" stroke-width="2"/>
+  <rect x="430" y="172" width="250" height="86" fill="#fdeaea" stroke="#d6cdbb"/>
+  <text x="305" y="123" text-anchor="middle" font-size="12.5" fill="#15803d">T.K. : OUI</text>
+  <text x="305" y="145" text-anchor="middle" font-size="12.5" fill="#15803d">RShBG : OUI</text>
+  <text x="555" y="123" text-anchor="middle" font-size="12.5" fill="#292524">T.K. : OUI</text>
+  <text x="555" y="145" text-anchor="middle" font-size="12.5" fill="#b91c1c">RShBG : NON</text>
+  <text x="305" y="200" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b91c1c">T.K. : NON</text>
+  <text x="305" y="222" text-anchor="middle" font-size="12.5" font-weight="700" fill="#15803d">RShBG : OUI</text>
+  <text x="305" y="242" text-anchor="middle" font-size="10" fill="#b45309">(la nafka mina retenue ici)</text>
+  <text x="555" y="211" text-anchor="middle" font-size="12.5" fill="#b91c1c">les deux : NON</text>
+  <text x="360" y="284" text-anchor="middle" font-size="11" fill="#78716c">Exemple : la matsa d'un Kouti (mitzva ecrite). R. Elazar, plus strict, interdit meme ecrite+adoptee</text>
+  <text x="360" y="300" text-anchor="middle" font-size="11" fill="#78716c">(les Koutim ne maitrisent pas les minuties du chimour).</text>
+</svg></div>
+          <figcaption>La matrice ecrit/non-ecrit x adopte/non-adopte : ou Tana Kama et RShBG divergent (segments 10-16).</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">דְּקוֹרֵיא שֶׁל צִפֳּרִים, קוֹטֵעַ רֹאשׁוֹ שֶׁל אֶחָד מֵהֶן וְנוֹתֵן לוֹ. אֲכָלוֹ – מֻותָּר לֶאֱכֹול מִשְּׁחִיטָתוֹ, וְאִם לָאו – אָסוּר לֶאֱכֹול מִשְּׁחִיטָתוֹ.</div>
+            <div class="fr"><p>...une brochette (dekourya) d&#x27;oiseaux [abattus] : il coupe la tete de l&#x27;un d&#x27;eux et la lui donne. S&#x27;il l&#x27;a mangee — permis de manger de son abattage ; sinon — interdit.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּקוֹרֵיא</b> מַחְרוֹזוֹת שֶׁל צִפֳּרִים שְׁחוּטִין. רייש&quot;ט בְּלַעַ&quot;ז:</div>
+          <div class="glose-fr">Dekourya — des enfilades d&#x27;oiseaux abattus (&#x27;rist&#x27; en langue vernaculaire, ancien francais).</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּקוֹרֵיא</b> סַל כְּמוֹ דְּקוֹרֵיא דְּפֶרֶק הַשּׂוֹכֵר אֶת הַפּוֹעֲלִים (בּ&quot;מ דַּף פד.) וְדִמְפַנִּין (שַׁבָּת קכז.):</div>
+          <div class="glose-fr">Dekourya — une corbeille (sal), comme le &#x27;dekourya&#x27; du chapitre &#x27;Ha-sokher et ha-poalim&#x27; (Baba Metsia 84a) et de &#x27;De-mefanin&#x27; (Chabbat 127a).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Suite de la braita : un Juif trouve chez un Kouti une <b>brochette d'oiseaux</b> et ignore s'ils sont bien abattus. Il coupe la tete de l'un et la lui donne ; s'il la mange (scrupuleux pour lui-meme), c'est permis.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="250" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1c1917">Rendre le test infaillible (la brochette d'oiseaux)</text>
+  <rect x="120" y="40" width="460" height="40" rx="8" fill="#fdeaea" stroke="#b91c1c"/>
+  <text x="350" y="65" text-anchor="middle" font-size="12" fill="#292524">Probleme : et si SEUL l'oiseau teste etait bien abattu (les autres nevelot) ?</text>
+  <rect x="30" y="110" width="310" height="118" rx="10" fill="#eef2ff" stroke="#3730a3"/>
+  <text x="185" y="138" text-anchor="middle" font-size="13" font-weight="700" fill="#3730a3">Rav Menacheh</text>
+  <text x="185" y="168" text-anchor="middle" font-size="11.5" fill="#292524">cache tous les oiseaux</text>
+  <text x="185" y="185" text-anchor="middle" font-size="11.5" fill="#292524">sous les pans de son habit</text>
+  <text x="185" y="210" text-anchor="middle" font-size="11" fill="#78716c">-&gt; le Kouti ignore lequel c'est</text>
+  <rect x="360" y="110" width="310" height="118" rx="10" fill="#eaf6ec" stroke="#15803d"/>
+  <text x="515" y="138" text-anchor="middle" font-size="13" font-weight="700" fill="#15803d">Rav Mecharchya</text>
+  <text x="515" y="168" text-anchor="middle" font-size="11.5" fill="#292524">ecrase la tete donnee</text>
+  <text x="515" y="185" text-anchor="middle" font-size="11.5" fill="#292524">(la rend meconnaissable)</text>
+  <text x="515" y="210" text-anchor="middle" font-size="11" fill="#78716c">-&gt; aucune marque possible</text>
+</svg></div><div class="svg-cap">Comment le test est rendu fiable.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אַבַּיֵּי דָּייֵק מֵרֵישָׁא, רָבָא דָּיֵיק מִסֵּיפָא. אַבַּיֵּי דָּייֵק מֵרֵישָׁא: טַעְמָא דְּיִשְׂרָאֵל עוֹמֵד עַל גַּבָּיו, אֲבָל יוֹצֵא וְנִכְנָס – לֹא.</div>
+            <div class="fr"><p>Abaye deduit du debut (recha), Rava deduit de la fin (sefa). Abaye deduit du debut : la raison [pour laquelle c&#x27;est permis] est qu&#x27;un Juif se tient au-dessus de lui ; mais [s&#x27;il] entre et sort — non.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַבַּיֵּי</b> דְּאָמַר לְעֵיל יוֹצֵא וְנִכְנָס לְכַתְּחִלָּה לָא שָׁרֵינַן גַּבֵּי שְׁחִיטָה דִּיֵּיק מֵרֵישָׁא:</div>
+          <div class="glose-fr">Abaye — qui a dit plus haut qu&#x27;on ne permet pas a priori [l&#x27;abattage du Kouti quand le Juif seulement] entre et sort, deduit du debut.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְרָבָא</b> דְּשָׁרֵי דָּייֵק מִסֵּיפָא דְּלָא מַצְרִיךְ תַּנָּא בְּדִיקָה אֶלָּא הֵיכָא דְּבָא וּמְצָאוֹ:</div>
+          <div class="glose-fr">Et Rava — qui [le] permet, deduit de la fin : le Tana n&#x27;exige le test (bedika) que la ou [le Juif] est venu et l&#x27;a trouve [deja abattu].</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Les deux Amoraim ancrent leur lecture dans la braita : <b>Abaye</b> infere du <b>debut</b> (permis quand un Juif se tient au-dessus -&gt; entrer-sortir ne suffit pas) ; <b>Rava</b> infere de la <b>fin</b> (on teste seulement si trouve deja abattu -&gt; entrer-sortir suffit a priori).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רָבָא דִּייֵּק מִסֵּיפָא, טַעְמָא דְּבָא וּמְצָאוֹ שֶׁשָּׁחַט, אֲבָל יוֹצֵא וְנִכְנָס – שַׁפִּיר דָּמֵי.</div>
+            <div class="fr"><p>Rava deduit de la fin : la raison [du test] est qu&#x27;[le Juif] est venu et l&#x27;a trouve ayant abattu ; mais [s&#x27;il] entre et sort — c&#x27;est bel et bien permis [a priori].</p></div>
+            <div class="tools"></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּלְאַבַּיֵּי קַשְׁיָא סֵיפָא, אָמַר לָךְ: יוֹצֵא וְנִכְנַס נָמֵי ״בָּא וּמְצָאוֹ״ קָרֵי לֵיהּ. וּלְרָבָא קַשְׁיָא רֵישָׁא, אָמַר לָךְ: יוֹצֵא וְנִכְנָס נָמֵי כְּעוֹמֵד עַל גַּבָּיו דָּמֵי.</div>
+            <div class="fr"><p>Et pour Abaye, la fin fait difficulte ; il peut te dire : &#x27;[le cas ou le Juif] entre et sort&#x27;, on l&#x27;appelle aussi &#x27;il est venu et l&#x27;a trouve&#x27;. Et pour Rava, le debut fait difficulte ; il peut te dire : &#x27;[le cas ou le Juif] entre et sort&#x27; est lui aussi comme &#x27;se tient au-dessus de lui&#x27;.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּעוֹמֵד עַל גַּבָּיו דָּמֵי</b> וְעוֹמֵד עַל גַּבָּיו דְּקָתָנֵי תַּנָּא הַיְינוּ יוֹצֵא וְנִכְנָס:</div>
+          <div class="glose-fr">Est comme &#x27;se tient au-dessus de lui&#x27; — et le &#x27;se tient au-dessus&#x27; qu&#x27;enseigne le Tana, c&#x27;est [le cas ou le Juif] entre et sort.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Chacun neutralise la clause genante : pour <b>Abaye</b>, 'entrer-sortir' se range sous 'venu et trouve' (a posteriori) ; pour <b>Rava</b>, 'entrer-sortir' equivaut a 'se tenir au-dessus' (a priori).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כַּיּוֹצֵא בוֹ, מָצָא בְּיָדוֹ דְּקוּרְיָא שֶׁל צִפֳּרִין, קוֹטֵעַ רֹאשׁוֹ כו׳. אַמַּאי? לֵיחוּשׁ דִּלְמָא הַאי הוּא דַּהֲוָה שָׁחֵיט שַׁפִּיר!</div>
+            <div class="fr"><p>De meme, [si le Juif] a trouve en sa possession une brochette d&#x27;oiseaux, il coupe la tete [de l&#x27;un], etc. Pourquoi [est-ce une preuve] ?</p><p>Craignons que ce soit peut-etre celui-ci [seul] qui a ete bien abattu [les autres etant des nevelot] !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַאי הוּא דְּהָוֵי שָׁחֵיט שַׁפִּיר</b> אוֹתוֹ עוֹף לְבַדּוֹ שָׁחוּט יָפֶה וְזֶה הָיָה מַכִּירוֹ וַאֲכָלוֹ וַאֲנַן הֵיכִי נִסְמוֹךְ לֶאֱכֹול הָאֲחֵרִים:</div>
+          <div class="glose-fr">C&#x27;est celui-ci qui a ete bien abattu — ce seul oiseau est bien abattu, [le Kouti] le reconnaissait et l&#x27;a mange ; comment nous fierions-nous pour manger les autres ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La braita applique le test au cas du Juif qui <b>trouve</b> la brochette. Objection : et si <b>seul l'oiseau teste</b> etait bien abattu, le Kouti l'ayant reconnu et mange ? Comment se fier pour les autres ?</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב מְנַשֶּׁה: (סִימָן: מַכְנִיס, אִיזְמֵל, בִּזְכָרִים) בְּמַכְנִיסָן תַּחַת כְּנָפָיו.</div>
+            <div class="fr"><p>Rav Menacheh dit : (mnemotechnique : &#x27;introduit, scalpel, dans les beliers&#x27;) [le cas ou] il les introduit sous les pans [de son vetement].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּמַכְנִיסָן תַּחַת כְּנָפָיו</b> יִשְׂרָאֵל זֶה הַבּוֹדְקוֹ מַכְנִיס כָּל הַצִּפֳּרִים תַּחַת כַּנְפֵי כְּסוּתוֹ וְאֵין הַכּוּתִי מַכִּיר אֵיזֶה נָתַן לוֹ:</div>
+          <div class="glose-fr">[Le cas ou] il les introduit sous les pans — ce Juif qui le teste introduit tous les oiseaux sous les pans de son vetement, et le Kouti ne reconnait pas lequel il lui a donne.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַכְנִיס אִיזְמֵל בִּזְכָרִים</b> סִימָנֵי שְׁמַעְתָּתָא דְּרַב מְנַשֶּׁה דְּהָא מְכִילְתָּא הֵן הַךְ דְּמַכְנִיס תַּחַת כְּנָפָיו וּלְקַמָּן בְּפֶרֶק שֵׁנִי (חֻולִּין דַּף לא.) אִיזְמֵל שֶׁאֵין לוֹ קַרְנַיִם וּבְפֶרֶק אֵלּוּ טְרֵפוֹת (לְקַמָּן חֻולִּין דַּף נא.) הָנְהוּ דִּיכְרֵי דְּגָנְבִי גַּנָּבֵי אֵין חוֹשְׁשִׁין לְרִיסּוּק אֵבָרִים מִיהוּ גַּם בִּמְקוֹמוֹת אֲחֵרִים יֵשׁ כִּדְאַשְׁכַּחְנָא בְּפֶרֶק ב&#x27; דִּיבָמוֹת (דַּף כֹּה.) דְּאָמַר רַב מְנַשֶּׁה גַּזְלָן דְּדִבְרֵיהֶם כָּשֵׁר לְעֵדוּת אִשָּׁה וּבְפֶרֶק מִי שֶׁהֶחְשִׁיךְ (שַׁבָּת קָנוּ.) אָמַר רַב מְנַשֶּׁה חֲדָא קַמֵּי חֲדָא תְּרֵי קַמֵּי תְּרֵי שַׁפִּיר דָּמֵי:</div>
+          <div class="glose-fr">&#x27;Introduit, scalpel, dans les beliers&#x27; — ce sont les reperes (simanim) des enseignements de Rav Menacheh dans ce traite : celui-ci (&#x27;il introduit sous ses pans&#x27;), celui du 2e chapitre (Houlin 31a) &#x27;un scalpel sans rebords&#x27;, et celui d&#x27;Elou terefot (Houlin 51a) &#x27;ces beliers que des voleurs derobent — on ne craint pas l&#x27;ecrasement des membres&#x27;. Il y en a aussi ailleurs : au 2e chapitre de Yevamot (25a), Rav Menacheh dit qu&#x27;un voleur [interdit] par decret rabbinique est valable pour temoigner [du deces d&#x27;un mari] en vue de remarier une femme ; et au chapitre &#x27;Mi che-hechechikh&#x27; (Chabbat 156a), Rav Menacheh dit &#x27;un [oiseau] face a un, deux face a deux — c&#x27;est permis&#x27;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse de <b>Rav Menacheh</b> : le Juif <b>cache les oiseaux sous les pans de son habit</b> et tend une tete au Kouti, qui ne peut savoir de quel oiseau elle provient. S'il la mange, c'est que tous sont bien abattus. (Suit un mnemotechnique des trois dictons de Rav Menacheh dans le traite.)</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְדִלְמָא סִימָנָא הֲוָה יָהֵיב לֵיהּ בְּגַוֵּיהּ? אָמַר רַב מְשַׁרְשְׁיָא: דְּמִמַּסְמֵס לֵיהּ מִסְמוּסַי.</div>
+            <div class="fr"><p>Et peut-etre lui a-t-il mis une marque (siman) dedans [pour reconnaitre le kacher] ? Rav Mecharchya dit : [le cas] ou il l&#x27;ecrase (le malaxe), [la rendant indistincte].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִמַּסְמֵס</b> מְמַעֲכוֹ וּמַכְתְּשׁוֹ:</div>
+          <div class="glose-fr">Il l&#x27;ecrase (memasmes) — il l&#x27;ecrabouille et le pile.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle objection : le Kouti aurait pu <b>marquer</b> l'oiseau cacher. Reponse de <b>Rav Mecharchya</b> : le Juif <b>ecrase la tete</b> donnee, la rendant meconnaissable.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְדִלְמָא קָסָבְרִי כּוּתִים: אֵין שְׁחִיטָה לָעוֹף מִן הַתּוֹרָה?</div>
+            <div class="fr"><p>Et peut-etre les Koutim estiment-ils qu&#x27;il n&#x27;y a pas d&#x27;[obligation d&#x27;]abattage pour l&#x27;oiseau d&#x27;apres la Torah ? [Manger la tete ne prouverait alors rien.]</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵין שְׁחִיטָה לָעוֹף מִן הַתּוֹרָה</b> מִשּׁוּם דְּלָא כְּתִיב זְבִיחָה בְּהֶדְיָא אֶלָּא בְּבָקָר וְצֹאן דִּכְתִיב וְזָבַחְתָּ מִבְּקָרְךָ וּמִצֹּאנְךָ וַאֲנַן יָלְפִינַן בְּהֶקֵּישָׁא לְקַמָּן (חוֹלִין דַּף כז:) מִזֹּאת תּוֹרַת הַבְּהֵמָה וְהָעוֹף:</div>
+          <div class="glose-fr">Il n&#x27;y a pas d&#x27;abattage pour l&#x27;oiseau d&#x27;apres la Torah — parce que le &#x27;sacrifier&#x27; (zevicha) n&#x27;est explicitement ecrit que pour le gros et le petit betail (&#x27;tu egorgeras de ton gros et de ton petit betail&#x27;), et nous, nous le deduisons par juxtaposition (heqecha), plus loin (Houlin 27b), de &#x27;voici la loi de la bete et de l&#x27;oiseau&#x27;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection radicale : les Koutim tiennent peut-etre qu'il n'y a <b>pas d'obligation toranique d'abattre l'oiseau</b> — ils mangeraient sa tete meme mal abattu, et le test ne prouve rien.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּלְטַעְמִיךְ, שְׁהִייָּה, דְּרָסָה, חֲלָדָה, הַגְרָמָה, וְעִיקּוּר – מִי כְּתִיבָן?</div>
+            <div class="fr"><p>Mais selon ton raisonnement : l&#x27;arret (chehiya), l&#x27;appui (derassa), la dissimulation (haldama), la deviation (hagrama) et l&#x27;arrachement (iqour) — sont-ils ecrits [dans la Torah] ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּלְטַעְמִיךְ</b> הַךְ זְבִיחָה דִּכְתִיב בַּבֹּקֶר וּבַצֹּאן מִי מְפַרְשֵׁן הִלְכוֹתֶיהָ בַּתּוֹרָה וְאַפֵּ&quot;ה סָמְכִי עֲלַיְיהוּ מִשּׁוּם דְּאַחְזִיק לְהוּ דְּאַחְזִיקוּ בָּהּ:</div>
+          <div class="glose-fr">Selon ton raisonnement — ce &#x27;sacrifier&#x27; ecrit pour le gros et le petit betail, ses regles sont-elles explicitees dans la Torah ? Et pourtant on se fie a eux [les Koutim], parce qu&#x27;on les tient pour avoir adopte [ces regles].</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Refutation : les cinq invalidations de l'abattage (chehiya, derassa, haldama, hagrama, iqour) ne sont pas non plus <b>ecrites explicitement</b> — et pourtant on se fie aux Koutim pour elles.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא, כֵּיוָן דְּאַחְזִיקוּ בְּהוּ – אַחְזִיקוּ בְּהוּ. הָכָא נָמֵי: כֵּיוָן דְּאַחְזִיקוּ – אַחְזִיקוּ.</div>
+            <div class="fr"><p>Plutot : du moment qu&#x27;ils les ont adoptees (achzouk), ils les ont adoptees [et l&#x27;on s&#x27;y fie]. Ici aussi : du moment qu&#x27;ils ont adopte [l&#x27;abattage de l&#x27;oiseau], ils l&#x27;ont adopte.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Principe d'<b>achzouk</b> : des lors que les Koutim ont <b>adopte</b> une pratique, on presume qu'ils l'observent comme les Juifs, y compris l'abattage de l'oiseau, meme non ecrit.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאַחְזוּק וְלָא אַחְזוּק בִּדְלָא כְּתִיבָא, תַּנָּאֵי הִיא, דְּתַנְיָא: מַצַּת כּוּתִי מֻותֶּרֶת, וְאָדָם יוֹצֵא בָּהּ יְדֵי חוֹבָתוֹ בְּפֶסַח.</div>
+            <div class="fr"><p>Et [savoir s&#x27;ils] ont adopte ou non [une mitzva] non ecrite est [l&#x27;objet d&#x27;une dispute de] Tanaim, car il est enseigne (braita) : la matsa d&#x27;un Kouti est permise, et l&#x27;on s&#x27;acquitte de son obligation avec elle a Pessah.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאַחְזוּק וְלָא אַחְזוּק בִּדְלָא כְּתִיבָא תַּנָּאֵי הִיא</b> מִצְוָה שֶׁאֵינָהּ כְּתוּבָה בְּפֵירוּשׁ בַּתּוֹרָה וְרָאִינוּ שֶׁהֶחֱזִיקוּ בָּהּ אִי אָמְרִינַן כֵּיוָן דְּאַחְזוּק לְדִידְהוּ אַחְזוּק נָמֵי לְדִידַן לִסְמֹוךְ עֲלַייְהוּ כִּי עָבְדִי לְצֹורֶךְ עַצְמָן אוֹ אִי אָמְרִינַן אע&quot;ג דְּאַחְזוּק לְדִידְהוּ לָא אַחְזוּק לְדִידַן כְּלוֹמַר לָא חָשְׁבִינַן לֵיהּ חֲזָקָה לְמִסְמַךְ עֲלַיְיהוּ תַּנָּאֵי פְּלִיגִי בָּהּ. אַחְזוּק וְלָא אַחְזוּק כְּלוֹמַר חֲזָקָה אוֹ אֵינָהּ חֲזָקָה:</div>
+          <div class="glose-fr">&#x27;Ont-ils adopte ou non, pour le non-ecrit : dispute de Tanaim&#x27; — une mitzva non explicitement ecrite dans la Torah, et qu&#x27;on a vu qu&#x27;ils ont adoptee : dit-on &#x27;puisqu&#x27;ils l&#x27;ont adoptee pour eux-memes, ils l&#x27;ont adoptee aussi a notre egard [et l&#x27;on s&#x27;y fie quand ils agissent pour eux-memes]&#x27;, ou dit-on &#x27;bien qu&#x27;ils l&#x27;aient adoptee pour eux-memes, ce n&#x27;est pas adopte a notre egard&#x27; (on ne le tient pas pour une presomption sur laquelle s&#x27;appuyer) ? Des Tanaim en disputent. &#x27;Achzouk / lo achzouk&#x27; = [est-ce] une hazaka ou non.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מֻותָּר</b> לְאוֹכְלָהּ וְלָא חָייְשִׁינַן לְחָמֵץ בְּפֶסַח:</div>
+          <div class="glose-fr">Permise — d&#x27;en manger, sans craindre [qu&#x27;il y ait du] hametz a Pessah.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאָדָם יוֹצֵא יְדֵי חוֹבָתוֹ</b> שֶׁהַכָּתוּב קְבָעוֹ חוֹבָה לֶאֱכֹול מַצָּה בְּלַיְלָה רִאשׁוֹנָה דִּכְתִיב (שְׁמוֹת י״ב:י״ח) בָּעֶרֶב תֹּאכְלוּ מַצּוֹת וְאִם יָשַׁב וְלֹא אָכַל עָבַר בַּעֲשֵׂה. וּלְקַמָּן פָּרֵיךְ כֵּיוָן דִּתְנָא מֻותָּר פְּשִׁיטָא דְּיוֹצֵא בָּהּ:</div>
+          <div class="glose-fr">Et l&#x27;on s&#x27;acquitte de son obligation — car l&#x27;Ecriture en a fait une obligation de manger de la matsa la premiere nuit, comme il est ecrit (Ex 12:18) &#x27;au soir vous mangerez des matsot&#x27; ; s&#x27;il s&#x27;est abstenu de manger, il transgresse un commandement positif. Plus loin [la Guemara] objecte : puisqu&#x27;on a enseigne &#x27;permise&#x27;, il est evident qu&#x27;on s&#x27;en acquitte.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אָסוּר</b> אֲפִילּוּ לְאוֹכְלָהּ:</div>
+          <div class="glose-fr">Interdite [selon R. Elazar] — meme d&#x27;en manger.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַצַּת כּוּתִי מֻותֶּרֶת</b> וא&quot;ת וַהֲלֹא גָּזְרוּ עַל פִּתָּן לְפִי שֶׁהָיוּ מְבַטְּלִין בִּנְיַן בֵּית הַמִּקְדָּשׁ בִּימֵי עֶזְרָא כִּדְאָמַר בְּפִירְקִין דר&quot;א (פ&#x27; לח) וְלֵיכָּא לְמֵימַר דְּהַייְנוּ בְּכוּתִים רִאשׁוֹנִים דִּכְתִיב בָּהֶם וְאֶת אֱלֹהֵיהֶם הָיוּ עֹובְדִים דְּהָא קָאָמַר הָתָם מִכָּאן אָמַר ר&quot;א כָּל הָאוֹכֵל פַּת כּוּתִי כְּאִילּוּ אוֹכֵל בְּשַׂר חֲזִיר וּתְנֵינָא נָמֵי לְקַמָּן (חֻולִּין דַּף יג.) שְׁחִיטַת צָדוֹקִי לַעֲבוֹדַת כּוֹכָבִים פִּתּוֹ פַּת כּוּתִי וְאוֹמֵר ר&quot;ת דְּמַיְירֵי הָכָא בְּעִיסָּה דְּיִשְׂרָאֵל שֶׁעָשָׂה הַכּוּתִי מִמֶּנָּה מַצָּה וא&quot;ת וְהֵיאַךְ יוֹצֵא בָּהּ וְשֶׁמָּא הוּא לֹא שָׁמַר לְשֵׁם מַצָּה דְּהָא חֲשִׁידִי אַלִּפְנֵי עִוֵּר לֹא תִתֵּן מִכְשֹׁול וְי&quot;ל כְּגוֹן שֶׁלֹּא אָכַל הַכּוּתִי מַצָּה אַחֶרֶת כָּל הַלַּיְלָה:</div>
+          <div class="glose-fr">La matsa d&#x27;un Kouti est permise — on pourrait objecter : n&#x27;a-t-on pas decrete [l&#x27;interdit] sur leur pain, parce qu&#x27;ils faisaient obstacle a la construction du Temple au temps d&#x27;Ezra (Pirkei de-Rabbi Eliezer, ch. 38) ? Et l&#x27;on ne peut dire que c&#x27;est [seulement] pour les premiers Koutim, dont il est ecrit &#x27;et ils servaient leurs dieux&#x27;, car on dit la-bas : &#x27;de la, Rabbi Eliezer a dit : quiconque mange du pain de Kouti, c&#x27;est comme s&#x27;il mangeait de la chair de porc&#x27; ; et nous enseignons aussi plus loin (Houlin 13a) &#x27;l&#x27;abattage d&#x27;un tsedouqi vise l&#x27;idolatrie, son pain [a le statut du] pain de Kouti&#x27;. Rabbenou Tam dit qu&#x27;il s&#x27;agit ici d&#x27;une pate appartenant a un Juif, dont le Kouti a fait une matsa. On pourrait objecter : comment s&#x27;en acquitterait-on, peut-etre ne l&#x27;a-t-il pas gardee en vue de la matsa [de la mitzva], etant suspect au regard de &#x27;devant l&#x27;aveugle tu ne placeras pas d&#x27;obstacle&#x27; ? On repond : [le cas] ou le Kouti n&#x27;a pas mange d&#x27;autre matsa de toute la nuit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le statut des mitzvot <b>non ecrites</b> adoptees par les Koutim est une <b>dispute tannaitique</b>. Braita : la <b>matsa d'un Kouti est permise</b>, et l'on s'acquitte de l'obligation de matsa avec elle.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 312" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="312" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Se fie-t-on aux Koutim pour une mitzva ? (Tana Kama vs RShBG)</text>
+  <rect x="180" y="50" width="250" height="36" fill="#e8ecfb" stroke="#d6cdbb"/>
+  <rect x="430" y="50" width="250" height="36" fill="#e8ecfb" stroke="#d6cdbb"/>
+  <text x="305" y="73" text-anchor="middle" font-size="13" font-weight="700" fill="#3730a3">Adoptee (achzouk)</text>
+  <text x="555" y="73" text-anchor="middle" font-size="13" font-weight="700" fill="#3730a3">Non adoptee</text>
+  <rect x="30" y="86" width="150" height="86" fill="#f3eee2" stroke="#d6cdbb"/>
+  <rect x="30" y="172" width="150" height="86" fill="#f3eee2" stroke="#d6cdbb"/>
+  <text x="105" y="133" text-anchor="middle" font-size="13" font-weight="700" fill="#1c1917">Mitzva ecrite</text>
+  <text x="105" y="219" text-anchor="middle" font-size="13" font-weight="700" fill="#1c1917">Non ecrite</text>
+  <rect x="180" y="86" width="250" height="86" fill="#eaf6ec" stroke="#d6cdbb"/>
+  <rect x="430" y="86" width="250" height="86" fill="#ffffff" stroke="#d6cdbb"/>
+  <rect x="180" y="172" width="250" height="86" fill="#fff7e6" stroke="#b45309" stroke-width="2"/>
+  <rect x="430" y="172" width="250" height="86" fill="#fdeaea" stroke="#d6cdbb"/>
+  <text x="305" y="123" text-anchor="middle" font-size="12.5" fill="#15803d">T.K. : OUI</text>
+  <text x="305" y="145" text-anchor="middle" font-size="12.5" fill="#15803d">RShBG : OUI</text>
+  <text x="555" y="123" text-anchor="middle" font-size="12.5" fill="#292524">T.K. : OUI</text>
+  <text x="555" y="145" text-anchor="middle" font-size="12.5" fill="#b91c1c">RShBG : NON</text>
+  <text x="305" y="200" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b91c1c">T.K. : NON</text>
+  <text x="305" y="222" text-anchor="middle" font-size="12.5" font-weight="700" fill="#15803d">RShBG : OUI</text>
+  <text x="305" y="242" text-anchor="middle" font-size="10" fill="#b45309">(la nafka mina retenue ici)</text>
+  <text x="555" y="211" text-anchor="middle" font-size="12.5" fill="#b91c1c">les deux : NON</text>
+  <text x="360" y="284" text-anchor="middle" font-size="11" fill="#78716c">Exemple : la matsa d'un Kouti (mitzva ecrite). R. Elazar, plus strict, interdit meme ecrite+adoptee</text>
+  <text x="360" y="300" text-anchor="middle" font-size="11" fill="#78716c">(les Koutim ne maitrisent pas les minuties du chimour).</text>
+</svg></div><div class="svg-cap">La dispute tannaique sur ecrit/non-ecrit et adopte/non-adopte.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבִּי אֶלְעָזָר אוֹסֵר, לְפִי שֶׁאֵין בְּקִיאִין בְּדִקְדּוּקֵי מִצְוֹת כְּיִשְׂרָאֵל.</div>
+            <div class="fr"><p>Rabbi Elazar interdit, parce qu&#x27;ils ne sont pas experts dans les minuties (diqdouqei) des mitzvot comme les Juifs.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁאֵין בְּקִיאִין</b> אֵין יוֹדְעִין לְשָׁומְרָהּ וּלְהַבְחִין בֵּין שֶׁיֵּאוֹר לְסִידּוּק בֵּין הִכְסִיפוּ פָּנָיו לְלֹא הִכְסִיפוּ פָּנָיו:</div>
+          <div class="glose-fr">Ils ne sont pas experts — ils ne savent pas la garder [du levain] ni distinguer entre &#x27;si&#x27;our&#x27; et &#x27;sidouk&#x27; (premiers degres de fermentation), entre &#x27;sa surface a pali&#x27; ou non.</div>
+        </div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל אוֹמֵר: כָּל מִצְוָה שֶׁהֶחֱזִיקוּ בָּהּ כּוּתִים, הַרְבֵּה מְדַקְדְּקִין בָּהּ יוֹתֵר מִיִּשְׂרָאֵל.</div>
+            <div class="fr"><p>Rabban Chimon ben Gamliel dit : toute mitzva que les Koutim ont adoptee, ils y sont bien plus minutieux que les Juifs.</p></div>
+            <div class="tools"></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר מַר: מַצַּת כּוּתִי מֻותֶּרֶת, וְאָדָם יוֹצֵא בָּהּ יְדֵי חוֹבָתוֹ בְּפֶסַח. פְּשִׁיטָא! מַהוּ דְתֵימָא: לָא בְּקִיאֵי בְּשִׁימּוּר, קָא מַשְׁמָע לַן. רַבִּי אֶלְעָזָר אוֹסֵר, לְפִי שֶׁאֵין בְּקִיאִין בְּדִקְדּוּקֵי מִצְוֹת. קָסָבַר: לָא בְּקִיאֵי בְּשִׁימּוּר.</div>
+            <div class="fr"><p>Le Maitre a dit : &#x27;la matsa d&#x27;un Kouti est permise, et l&#x27;on s&#x27;acquitte avec elle a Pessah&#x27;. C&#x27;est evident !</p><p>[Reponse :] de peur que tu ne dises qu&#x27;ils ne sont pas experts dans la garde (chimour), [le Tana] nous apprend [qu&#x27;ils le sont]. &#x27;Rabbi Elazar interdit, parce qu&#x27;ils ne sont pas experts dans les minuties des mitzvot&#x27; — il estime qu&#x27;ils ne sont pas experts dans la garde.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>פְּשִׁיטָא</b> דְּיוֹצֵא בָּהּ כֵּיוָן דְּמֻותֶּרֶת:</div>
+          <div class="glose-fr">C&#x27;est evident — qu&#x27;on s&#x27;en acquitte, puisqu&#x27;elle est permise.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַהוּ דְתֵימָא</b> אע&quot;ג דִּפְשִׁיטָא לָן דְּלָא הִנִּיחוּהָ לְהַחְמִיץ וּמֻותֶּרֶת בַּאֲכִילָה מִיהוּ לָא בְּקִיאֵי בְּהָא דְּבָעֵי לְמֶיעְבַּד שִׁימּוּר לְשֵׁם מַצָּה שֶׁל מִצְוָה וְכֵיוָן דְּלָא עֲבִיד בָּהּ שִׁימּוּר לָא נָפְקִינַן בָּהּ מִידִי דַּהֲוָה אַקְּמָחִין וּבְצֵקוֹת שֶׁל עוֹבְדֵי כּוֹכָבִים הַבָּאִים לְפָנֵינוּ קֹודֶם שֶׁאֲפָאָהּ עוֹבֵד כּוֹכָבִים וְרָאִינוּ שֶׁלֹּא הֶחֱמִיץ דְּקַיְימָא לָן דְּמֻותָּר וְלָא נָפְקִינַן בְּהוּ דִּתְנַן הַקְּמָחִין וּבְצֵקוֹת שֶׁל עוֹבְדֵי כּוֹכָבִים אָדָם מְמַלֵּא כְּרֵיסוֹ מֵהֶם וּבִלְבַד שֶׁיֹּאכַל כְּזַיִת מַצָּה בָּאַחֲרוֹנָה:</div>
+          <div class="glose-fr">De peur que tu ne dises — bien qu&#x27;il nous soit evident qu&#x27;ils ne l&#x27;ont pas laissee fermenter et qu&#x27;elle est permise a la consommation, ils ne sont neanmoins pas experts en ceci : qu&#x27;il faut effectuer une &#x27;garde&#x27; (chimour) en vue de la matsa de la mitzva ; et puisqu&#x27;on n&#x27;y a pas fait de garde, on ne s&#x27;en acquitterait pas — comme pour les farines et pates d&#x27;idolatres qui nous parviennent avant que l&#x27;idolatre ne [les] cuise et dont on a vu qu&#x27;elles n&#x27;ont pas fermente : nous tenons qu&#x27;elles sont permises, mais on ne s&#x27;en acquitte pas, car nous avons appris &#x27;les farines et pates d&#x27;idolatres, on peut s&#x27;en remplir le ventre, pourvu qu&#x27;on mange un kazayit de matsa [valable] a la fin&#x27;.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְרַבִּי אֱלִיעֶזֶר אוֹסֵר</b> אֲפִילּוּ לְאוֹכְלָהּ:</div>
+          <div class="glose-fr">Et Rabbi Elazar interdit — meme d&#x27;en manger.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>קָסָבַר לָא בְּקִיאִי בְּשִׁימּוּר</b> לָא גָּרְסִינַן. וְטַעְמוֹ מִשּׁוּם חִימּוּץ. וּלְמַאן דְּגָרֵיס לֵיהּ הָכִי מְפָרֵשׁ לָא בְּקִיאֵי לְשָׁומְרוֹ מִלְּהַחְמִיץ. וי&quot;מ ור&quot;א אוֹסֵר לָצֵאת בָּהּ יְדֵי חוֹבָתוֹ בְּפֶסַח וְלָאו מִילְּתָא הִיא שֶׁאֵין זֶה לְשׁוֹן אִיסּוּר:</div>
+          <div class="glose-fr">&#x27;Il estime qu&#x27;ils ne sont pas experts dans la garde&#x27; — [certains] ne lisent pas [cette phrase], et la raison [de R. Elazar] est [la crainte de] la fermentation ; selon celui qui la lit, on l&#x27;explique : ils ne sont pas experts pour la garder de fermenter. Et certains expliquent : R. Elazar interdit [seulement] de s&#x27;en acquitter a Pessah — mais ce n&#x27;est rien, car ce n&#x27;est pas un langage d&#x27;interdiction.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Analyse : 'permise -&gt; on s'en acquitte' semble evident. La nouveaute : on aurait cru les Koutim <b>non experts dans le chimour</b> (garder la pate en vue de la mitzva) ; le Tana enseigne qu'ils le sont. R. Elazar tient qu'ils ne le maitrisent pas (d'ou risque de hametz).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל אוֹמֵר: כָּל מִצְוָה שֶׁהֶחֱזִיקוּ בָּהּ כּוּתִים, הַרְבֵּה מְדַקְדְּקִין בָּהּ יוֹתֵר מִיִּשְׂרָאֵל. הַיְינוּ תַּנָּא קַמָּא? אִיכָּא בֵּינַייְהוּ דִּכְתִיבָא וְלָא אַחְזִיקוּ בַּהּ, תַּנָּא קַמָּא סָבַר: כֵּיוָן דִּכְתִיבָא, אַף עַל גַּב דְּלָא אַחְזִיקוּ בַּהּ, וְרַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל סָבַר: אִי אַחְזוּק – אִין, אִי לָא אַחְזוּק – לָא.</div>
+            <div class="fr"><p>Rabban Chimon ben Gamliel dit : toute mitzva que les Koutim ont adoptee, ils y sont bien plus minutieux que les Juifs. [Mais] c&#x27;est [identique au] premier Tana !</p><p>[Reponse :] il y a entre eux [une difference] pour [une mitzva] ecrite mais qu&#x27;ils n&#x27;ont pas adoptee : le premier Tana estime que, puisqu&#x27;elle est ecrite, [on s&#x27;y fie] meme s&#x27;ils ne l&#x27;ont pas adoptee ; et RShBG estime : s&#x27;ils ont adopte — oui ; sinon — non.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִיכָּא בֵינַיְיהוּ</b> מִילְּתָא דִּכְתִיבָא בְּאוֹרָייְתָא וְלָא יָדְעִינַן בְּהוּ דְּאַחְזִיקוּ בָּהּ:</div>
+          <div class="glose-fr">Il y a entre eux [une difference] — une chose ecrite dans la Torah dont on ne sait pas qu&#x27;ils l&#x27;ont adoptee.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ת&quot;ק</b> דְּלָא אַייְרֵי בַּחֲזָקָה כְּלָל אַכְּתִיבָא דְּאוֹרָיְיתָא קָפֵיד וְתַנָּא מַצָּה וה&quot;ה לְכָל הַכְּתוּבִים בַּתּוֹרָה אע&quot;ג דְּלָא יָדְעִינַן אִי אַחְזִיקוּ בָּהּ אִי לָא אַחְזוּק סָמְכִינַן עֲלַייְהוּ דְּכֵיוָן דִּכְתִיבָא וַדַּאי אַחְזוּק בָּהּ ור&quot;א אוֹסֵר אֲפִילּוּ אַחְזִיקוּ בָּהּ דְּהָא אֵינָם בְּקִיאִין בְּדִקְדּוּקֵי מִצְוֹת וְרַשְׁבָּ&quot;ג אֲתָא לְמֵימַר אַחְזוּק אִין לָא אַחְזוּק לָא. וְלָאו הַיְינוּ תַּנָּאֵי דְּאָמַר לְעֵיל עַד מַסְּקָנָא דְּמִילְּתָא:</div>
+          <div class="glose-fr">Le premier Tana — qui ne traite aucunement de l&#x27;adoption (hazaka), s&#x27;attache au [caractere] ecrit dans la Torah ; il a enseigne la matsa, et il en va de meme pour tout ce qui est ecrit : bien qu&#x27;on ne sache pas s&#x27;ils l&#x27;ont adopte ou non, on s&#x27;y fie, car puisque c&#x27;est ecrit, ils l&#x27;ont assurement adopte. R. Elazar interdit meme s&#x27;ils l&#x27;ont adopte, car ils ne sont pas experts dans les minuties des mitzvot. Et RShBG vient dire : adopte — oui, non adopte — non. Et ce ne sont pas [encore] les Tanaim [identifies] dont on a parle plus haut, jusqu&#x27;a la conclusion de l&#x27;affaire.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>RShBG semble identique au 1er Tana. Difference : une mitzva <b>ecrite mais non adoptee</b>. 1er Tana : ecrite suffit (fiable meme non adoptee). RShBG : il faut qu'ils l'aient <b>adoptee</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִי הָכִי, ״כָּל מִצְוָה שֶׁהֶחֱזִיקוּ בָּהּ כּוּתִים״ – ״אִם הֶחֱזִיקוּ״ מִיבְּעֵי לֵיהּ!</div>
+            <div class="fr"><p>Si c&#x27;est ainsi, &#x27;toute mitzva que les Koutim ont adoptee&#x27; — il aurait fallu [dire] &#x27;si ils ont adopte&#x27; !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כָּל מִצְוָה</b> מַשְׁמַע דִּלְרִבּוּיֵי אֲתָא אֲפִילּוּ הָנָךְ דְּלָא אַיְּירִי בְּהוּ וְכֵיוָן דְּאוֹקְמָן דְּאַהֲנֵי דְּאַיְירֵי בְּהוּ לְעֵיל קָאֵי דְּהַייְנוּ בְּדִכְתִיבִי לִמְעוּטֵי אֲתָא:</div>
+          <div class="glose-fr">&#x27;Toute mitzva&#x27; — cela implique qu&#x27;il vient inclure meme celles dont on n&#x27;a pas parle ; or, puisqu&#x27;on l&#x27;a etabli sur celles dont on a parle plus haut (les [mitzvot] ecrites), il vient [au contraire] exclure.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִם הֶחְזִיקוּ מִיבְּעֵי לֵיהּ</b> דְּהַשְׁתָּא הָוֵי מַשְׁמַע שַׁפִּיר דִּפְלִיג אַתַּרְוַייְהוּ לת&quot;ק דְּשָׁרֵי בְּלֹא חֲזָקָה ולר&quot;א דְּאוֹסֵר אֲפִילּוּ הֶחֱזִיקוּ וַאֲתָא אִיהוּ לְמֵימַר אִם הֶחֱזִיקוּ מְדַקְדְּקִין בָּהּ וּמֻותָּר וּדְלֹא כר&quot;א הָא לָא אַחְזִיקוּ אָסוּר וּדְלָא כת&quot;ק דְּשָׁרֵי בְּלֹא אַחְזִיקוּ אֲבָל הַשְׁתָּא דְּקָתָנֵי כָּל מַשְׁמַע דַּאֲפִילּוּ הָנָךְ דְּלָא כְּתִיבִין נָמֵי קָאָמַר דְּסָמְכִינַן אַחֲזָקַיְיהוּ:</div>
+          <div class="glose-fr">&#x27;Il aurait fallu dire si ils ont adopte&#x27; — car alors cela aurait bien implique qu&#x27;il diverge des deux : du premier Tana, qui permet sans adoption, et de R. Elazar, qui interdit meme s&#x27;ils ont adopte ; et lui vient dire : &#x27;s&#x27;ils ont adopte&#x27;, ils y sont minutieux et c&#x27;est permis (contre R. Elazar) ; mais sinon, c&#x27;est interdit (contre le premier Tana). Mais maintenant qu&#x27;il enseigne &#x27;toute&#x27;, cela implique qu&#x27;il parle meme des [mitzvot] non ecrites, [disant] qu&#x27;on se fie a leur adoption.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection a cette lecture : RShBG dit '<b>toute</b> mitzva qu'ils ont adoptee' (incluant les non-ecrites) — il aurait du dire '<b>si</b> ils ont adopte' s'il ne visait que les ecrites.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg16">
+          <div class="seg-num">17</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא, אִיכָּא בֵּינַייְהוּ דְּלָא כְּתִיבָא וְאַחְזִיקוּ בַּהּ: תַּנָּא קַמָּא סָבַר, כֵּיוָן דְּלָא כְּתִיבָא, אַף עַל גַּב דְּאַחְזִיקוּ בַּהּ – נָמֵי לָא; רַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל סָבַר, כֵּיוָן דְּאַחְזוּק – אַחְזוּק.</div>
+            <div class="fr"><p>Plutot, il y a entre eux [une difference] pour [une mitzva] non ecrite mais qu&#x27;ils ont adoptee : le premier Tana estime que, puisqu&#x27;elle n&#x27;est pas ecrite, meme s&#x27;ils l&#x27;ont adoptee — non [on ne s&#x27;y fie pas] ; RShBG estime : du moment qu&#x27;ils ont adopte — ils ont adopte [et l&#x27;on s&#x27;y fie].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא אִיכָּא בֵּינַייְהוּ דְּלָא כְּתִיבָא וְאַחְזוּק בָּהּ ת&quot;ק סָבַר</b> מַצָּה וְכֹל דְּדָמְיָא לֵיהּ דִּכְתִיבָא סָמְכִינַן עֲלַייְהוּ בֵּין אַחְזוּק בֵּין לָא אַחְזוּק וּדְלָא כְּתִיבָא לָא סָמְכִינַן עֲלַיְיהוּ וַאֲפִילּוּ אַחְזוּק ור&quot;א סָבַר אֲפִילּוּ כְּתִיבָא וְאַחְזוּק לָא סָמְכִינַן עֲלַייְהוּ וְרַשְׁבָּ&quot;ג סָבַר כָּל מִצְוָה שֶׁהֶחֱזִיקוּ ואע&quot;ג דְּלָא כְּתִיבָא סָמְכִינַן עֲלַיְיהוּ כֵּיוָן דְּאַחְזוּק אַחְזוּק. וְהַייְנוּ תַּנָּאֵי דִּלְעֵיל ת&quot;ק וְרַשְׁבָּ&quot;ג:</div>
+          <div class="glose-fr">&#x27;Plutot, il y a entre eux [une difference] pour le non-ecrit qu&#x27;ils ont adopte : le premier Tana estime&#x27; — la matsa et tout ce qui lui ressemble, [ce qui est] ecrit, on s&#x27;y fie, qu&#x27;ils l&#x27;aient adopte ou non ; et le non-ecrit, on ne s&#x27;y fie pas, meme s&#x27;ils l&#x27;ont adopte. R. Elazar estime : meme l&#x27;ecrit qu&#x27;ils ont adopte, on ne s&#x27;y fie pas. RShBG estime : toute mitzva qu&#x27;ils ont adoptee, meme non ecrite, on s&#x27;y fie — du moment qu&#x27;ils ont adopte, ils ont adopte. Et ce sont [bien] les Tanaim [de la dispute] ci-dessus, premier Tana et RShBG.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִיכָּא בֵּינַייְהוּ דְּלָא כְּתִיבָא וְאַחְזִיקוּ בַּהּ כו&#x27;</b> בפ&quot;ק דְּגִיטִּין (דַּף י.) מוּכָח דִּכְתִיבָא וְלָא אַחְזִיקוּ בַּהּ נָמֵי אִיכָּא בֵינַייְהוּ דלת&quot;ק מְהַנֵּי וּלְרַשְׁבָּ&quot;ג לָא מְהַנֵּי וְהָכָא לָא נְקַט אֶלָּא לָא כְּתִיבָא וְאַחְזִיקוּ בָּהּ מִשּׁוּם דְּאַשְּׁחִיטַת כּוּתִי בָּעֵי לְאֵתוּיֵי תַּנָּאֵי א&quot;נ דְּלָא אֲתָא לְשַׁנּוֹיֵי אֶלָּא מַה שֶׁהִקְשָׁה אִם הֶחֱזִיקוּ בָּהּ מִבָּעֵי לֵיהּ וְשָׁם פֵּירַשְׁנוּ:</div>
+          <div class="glose-fr">&#x27;Il y a entre eux [une difference] pour le non-ecrit qu&#x27;ils ont adopte, etc.&#x27; — au premier chapitre de Guittin (10a) il est prouve que [le cas de] l&#x27;ecrit qu&#x27;ils n&#x27;ont pas adopte fait aussi [une difference] entre eux : pour le premier Tana cela vaut, pour RShBG cela ne vaut pas. Ici on n&#x27;a pris que &#x27;le non-ecrit qu&#x27;ils ont adopte&#x27;, parce que [la Guemara], a propos de l&#x27;abattage du Kouti, voulait apporter [la dispute des] Tanaim ; ou bien parce qu&#x27;elle ne vient resoudre que l&#x27;objection &#x27;il aurait fallu dire si ils ont adopte&#x27;. Et la-bas nous l&#x27;avons explique.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle distinction : une mitzva <b>non ecrite mais adoptee</b>. 1er Tana : non ecrite -&gt; on ne s'y fie pas, meme adoptee. RShBG : adoptee -&gt; on s'y fie. C'est bien la dispute tannaique annoncee sur 'achzouk'.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg17">
+          <div class="seg-num">18</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">גּוּפָא אָמַר רָבָא: יִשְׂרָאֵל מְשֻׁומָּד, אוֹכֵל נְבֵילוֹת לְתֵיאָבוֹן – בּוֹדֵק סַכִּין וְנוֹתֵן לוֹ, וּמֻותָּר לֶאֱכֹול מִשְּׁחִיטָתוֹ.</div>
+            <div class="fr"><p>Le corps [de l&#x27;enseignement] : Rava a dit : un Juif apostat qui mange des nevelot par appetit — on verifie un couteau et on le lui donne, et il est permis de manger de son abattage.</p></div>
+            <div class="tools"><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אָמַר רָבָא יִשְׂרָאֵל עֲבַרְיָין לֶאֱכֹול נְבֵלוֹת לְתֵיאָבוֹן בּוֹדְקִין סַכִּין וְנוֹתְנִין לוֹ וּמֻותָּר לֶאֱכֹול מִשְּׁחִיטָתוֹ. וְלָא חָייְשִׁינַן שֶׁמָּא יִשְׁהֶה שֶׁמָּא יִדְרֹוס. דְּלָא שָׁבֵיק הֶיתֵּרָא וְאָכִיל אִיסּוּרָא. וַאֲפִילּוּ לֹא אָכַל מִמֶּנּוּ דְּאַלִּפְנֵי עִוֵּר חָייֵשׁ אֲבָל בְּלֹא בְּדִיקַת סַכִּין לָא מְהַנֵּי אֲפִילּוּ אִם יִשְׂרָאֵל יוֹצֵא וְנִכְנַס כִּי הֵיכִי דִּמְהַנֵּי בְּעוֹבֵד כּוֹכָבִים דְּלָא אַשְׁכְּחַן בְּעוֹבֵד כּוֹכָבִים שֶׁיְּהֵא צָרִיךְ בְּדִיקַת סַכִּין בְּיִשְׂרָאֵל יוֹצֵא וְנִכְנָס. מִשּׁוּם דְּעוֹבֵד כּוֹכָבִים מִירַתַּת לְפִי שֶׁיּוֹדֵעַ שֶׁאֵין יִשְׂרָאֵל סוֹמֵךְ עָלָיו וְיָרֵא שֶׁמָּא יִבְדֹּוק הַסַּכִּין אַחֲרָיו הִלְכָּךְ נִזְהָר מִלִּשְׁחֹוט בְּסַכִּין פָּגוּם. אֲבָל יִשְׂרָאֵל עֲבַרְיָין לָא מִירַתַּת כִּי הוּא סָבוּר שֶׁלֹּא יִבְדְּקוּ אַחֲרָיו לְפִי שֶׁמַּחֲזִיקִין אוֹתוֹ כְּיִשְׂרָאֵל. הִלְכָּךְ קָאַמְרַגְמְרָא לְעֵיל אִי דְּלֵיתֵיהּ לְסַכִּין כִּי אֲחֵרִים רוֹאִין אוֹתוֹ מַאי הָוֵי דִּלְמָא בְּסַכִּין פְּגוּמָה שָׁחֵט וְדַוְקָא בּוֹדֵק סַכִּין וְנוֹתֵן לוֹ אֲבָל אֵין לִיתֵּן לוֹ לִשְׁחֹוט וְלִבְדֹּוק הַסַּכִּין אַחַר הַשְּׁחִיטָה כִּדְאָמַר רַב אַשִּׁי לְעֵיל אֲבָל אִם לֹא בָּדַק וְנָתַן לוֹ לֹא יִשְׁחֹוט וְאִם שָׁחַט בּוֹדֵק סַכִּינוֹ אַחֲרָיו. דְּמַשְׁמַע אֵין לִיתֵּן לוֹ לְכַתְּחִלָּה לִשְׁחֹוט עַל סְמַךְ שֶׁיִּבְדֹּוק הַסַּכִּין. דְּחָייְשִׁינַן שֶׁמָּא לֹא יִבְדֹּוק אַחֲרָיו וְקָאֲכִיל אִיסּוּרָא. דְּאִם הָיָה סַכִּינוֹ פָּגוּם לֹא טָרַח לְתַקְּנוּן וְהִלְכְתָא בְּהַךְ כְּרָבָא דְּמַיְיתִי לָהּ גְּמָרָא סִיַּיעְתָּא מֵהַךְ בָּרַייְתָא הַכֹּל שׁוֹחֲטִין אֲפִילּוּ עוֹבֵד כּוֹכָבִים וַאֲפִילּוּ עָרֵל וַאֲפִילּוּ יִשְׂרָאֵל מוּמָר וּמוּקֵי לָהּ בְּמוּמָר לְאוֹתוֹ דָּבָר. ואע&quot;ג דְּדָחֵי לֵיהּ גְּמָרָא וּמוּקִי לָהּ בְּמוּמָר לַעֲבוֹדַת כּוֹכָבִים וְכִדְרַב עָנָן. הָא אִיתּוֹתַב רַב עָנָן. וא&quot;כ לָא מִיתּוֹקְמָא בָּרַייְתָא אֶלָּא בְּמוּמָר לְאוֹתוֹ דָּבָר אֲבָל עֲבַרְיָין לַעֲבֵירָה אַחֶרֶת עָסְקִינַן לְקַמָּן (חֻולִּין דַּף ה.) עֲבַרְייָן לְדָבָר אֶחָד לָא הָוֵי עֲבַרְיָין לְכָל הַתּוֹרָה כֻּולָּהּ חוּץ מֵעֲבַרְייָן לְנַסֵּךְ יַיִן וּלְחַלֵּל שַׁבָּתוֹת בְּפַרְהֶסְיָא וְלָא בָּעֵי בְּדִיקַת סַכִּין. דְּדַוְקָא עֲבַרְיָין לְאוֹתוֹ דָּבָר דְּדָשׁ בֵּיהּ הוּא דְּקָאָמַר רָבָא דְּבָעֵי בְּדִיקַת סַכִּין. וְהָרֵמִים זַ&quot;ל כָּתַב פ&quot;ד מֵהִלְכוֹת שְׁחִיטָה דְּיִשְׂרָאֵל עֲבַרְיָין לְאַחַת מִן הָעֲבֵירוֹת צָרִיךְ לִבְדֹּוק לוֹ סַכִּין. וְאֶפְשָׁר דְּסָבַר כֵּיוָן דְּחָזֵינַן שֶׁלְּתַאֲוָתוֹ עוֹבֵר אַחַת מִן הָעֲבֵירוֹת שֶׁבַּתּוֹרָה חָייְשִׁינַן דְּפָקַר שֶׁלֹּא לִטְרֹוחַ לְקַייֵּם שׁוּם מִצְוָה כְּהִלְכָתָהּ. וּנְקַט רָבָא עֲבַרְיָין לֶאֱכֹול נְבֵילוֹת לְאַשְׁמוֹעִינַן דְּשָׁרֵי לֶאֱכֹול מִשְּׁחִיטָתוֹ ע&quot;י בְּדִיקַת סַכִּין וְלָא אָמְרִינַן כֵּיוָן דְּדָשׁ בֵּיהּ כְּהֶיתֵּירָא דָּמֵי לֵיהּ וַעֲבַרְייָן לְהַכְעִיס פר&quot;י כֵּיוָן דְּאֵינוֹ חוֹשֵׁשׁ לִזְבּוֹחַ הָוֵי כְּעוֹבֵד כּוֹכָבִים דְּאֵינוֹ בַּר זְבִיחָה וְאָסוּר לֶאֱכֹול מִשְּׁחִיטָתוֹ אֲפִילּוּ בָּדַק לוֹ סַכִּין וַאֲפִילּוּ יִשְׂרָאֵל עוֹמֵד עַל גַּבָּיו. וְכֵן מִסְתַּבֵּר. וְאַף עַל גַּב דְּתַנְיָא בְּהַךְ בָּרַיְיתָא דִּשְׁחִיטַת כּוּתִי מֻותֶּרֶת וְכֵן בַּבָּרַייְתָא דִּלְעֵיל דְּמַתִּיר בְּיִשְׂרָאֵל עוֹמֵד עַל גַּבָּיו בְּחוֹתֵךְ כַּזַּיִת בָּשָׂר וְנוֹתֵן לוֹ. מַסְּקִינַן לְקַמָּן (חֻולִּין דַּף ו.) דְּבַדּוֹרוֹת אַחֲרוֹנִים עֲשָׂאוּם כְּעוֹבְדֵי כּוֹכָבִים גְּמוּרִים:</div>
+          <div class="glose-fr">Rava a dit : un Juif transgresseur (avaryan) qui mange des nevelot (betes mortes autrement que par un abattage rituel valable) par appetit (le-teiavon, c&#x27;est-a-dire par gourmandise et non par defi) — on verifie (bodkin) [pour lui] le couteau (sakin) et on le lui donne, et il est permis de manger de son abattage (chehita). Et l&#x27;on ne craint pas qu&#x27;il fasse une pause (chehiya) [dans l&#x27;abattage] ni qu&#x27;il appuie (dorass) [le couteau au lieu de trancher] : car il ne delaisse pas le permis (heter) pour manger l&#x27;interdit (issour). Et [c&#x27;est valable] meme s&#x27;il n&#x27;en a pas mange [lui-meme], parce qu&#x27;[on] craint [de contrevenir a] &#x27;devant l&#x27;aveugle [tu ne placeras pas d&#x27;obstacle]&#x27; (lifnei iver). Mais sans verification du couteau, cela ne vaut pas, meme si un Juif entre et sort (yotse ve-nikhnas), a la difference de ce qui vaut pour le non-Juif (oved kokhavim) : car nous ne trouvons pas, pour le non-Juif, qu&#x27;il faille une verification du couteau lorsqu&#x27;un Juif entre et sort. La raison en est que le non-Juif a peur (miratat), parce qu&#x27;il sait que le Juif ne se fie pas a lui et il craint qu&#x27;on ne verifie le couteau apres lui ; c&#x27;est pourquoi il prend garde de ne pas abattre avec un couteau ebreche (pagoum). Mais le Juif transgresseur n&#x27;a pas peur, car il pense qu&#x27;on ne verifiera pas apres lui, parce qu&#x27;on le tient [encore] pour un Juif. C&#x27;est pourquoi la Guemara dit plus haut : si le couteau n&#x27;est plus [disponible pour verification], quand bien meme d&#x27;autres le voient [abattre], qu&#x27;en resulte-t-il ? Peut-etre a-t-il abattu avec un couteau ebreche. Et [c&#x27;est] specifiquement [le cas ou] on verifie le couteau et on le lui donne [avant l&#x27;abattage] ; mais on ne doit pas le lui donner [en le laissant] abattre puis [seulement] verifier le couteau apres l&#x27;abattage, comme l&#x27;a dit Rav Achi plus haut : mais si l&#x27;on n&#x27;a pas verifie et qu&#x27;on [le] lui a donne, il ne doit pas abattre ; et s&#x27;il a abattu, on verifie son couteau apres lui. Ce qui implique qu&#x27;on ne doit pas le lui donner a priori (le-khatehila) pour abattre en comptant sur le fait qu&#x27;on verifiera [ensuite] le couteau ; car on craint qu&#x27;on ne verifie pas apres lui et qu&#x27;on en vienne a manger de l&#x27;interdit, [sachant que] si son couteau etait ebreche, il ne se donnerait pas la peine de le reparer. Et la halakha (la regle tranchee), sur ce point, est conforme a Rava, dont la Guemara apporte un appui a partir de cette braita (enseignement tannaique) : &#x27;Tous abattent, meme un non-Juif, meme un incirconcis (arel), et meme un Juif apostat (moumar)&#x27;, et elle l&#x27;etablit [comme parlant] d&#x27;un apostat pour cette chose-la meme (moumar le-oto davar, c&#x27;est-a-dire apostat precisement quant a la transgression en cause). Et bien que la Guemara la repousse et l&#x27;etablisse [comme parlant] d&#x27;un apostat a l&#x27;idolatrie (avodat kokhavim) et selon [l&#x27;avis de] Rav Anan — [en fait] Rav Anan a ete refute ; et s&#x27;il en est ainsi, la braita ne s&#x27;etablit que [comme parlant] d&#x27;un apostat pour cette chose-la meme. Mais [pour] un transgresseur d&#x27;une autre transgression, nous en traiterons plus loin (Houlin 5a) : un transgresseur pour une seule chose n&#x27;est pas un transgresseur pour toute la Torah entiere, hormis le transgresseur qui verse des libations de vin [idolatre] (menassekh yayin) et qui profane les chabbats publiquement (be-farhessia) ; et [pour un tel transgresseur d&#x27;une autre transgression] il ne faut pas de verification du couteau. Car c&#x27;est specifiquement le transgresseur pour cette chose-la meme, ou il est devenu coutumier (dach beih, &#x27;il l&#x27;a foulee&#x27;, c&#x27;est-a-dire s&#x27;y est accoutume au point de la banaliser), dont Rava dit qu&#x27;il faut la verification du couteau. Et le Rambam (Maimonide), de memoire benie, a ecrit au chapitre 4 des Lois de la chehita qu&#x27;un Juif transgresseur pour l&#x27;une des transgressions, [pour lui] il faut lui verifier le couteau. Et il est possible qu&#x27;il tienne que, du moment que nous voyons qu&#x27;il transgresse par appetit l&#x27;une des transgressions de la Torah, nous craignons qu&#x27;il ne soit devenu debauche (pakar) au point de ne pas se donner la peine d&#x27;accomplir aucune mitzva selon sa regle. Et Rava a pris [le cas du] transgresseur qui mange des nevelot pour nous apprendre qu&#x27;il est permis de manger de son abattage au moyen de la verification du couteau, et [pour] qu&#x27;on ne dise pas : du moment qu&#x27;il y est devenu coutumier, [l&#x27;interdit] est pour lui comme du permis. Quant au transgresseur par defi (le-hakhis), Rabbenou Yits&#x27;hak (le RY) explique : du moment qu&#x27;il ne se soucie pas d&#x27;abattre [rituellement], il est comme un non-Juif qui n&#x27;est pas apte a l&#x27;abattage (bar zevicha), et il est interdit de manger de son abattage, meme si l&#x27;on a verifie son couteau, et meme si un Juif se tient au-dessus de lui (omed al gabav). Et ainsi est-il logique. Et bien qu&#x27;il soit enseigne dans cette braita que l&#x27;abattage du Kouti est permis, de meme que dans la braita ci-dessus qui permet [l&#x27;abattage] lorsqu&#x27;un Juif se tient au-dessus de lui en decoupant un kazayit (la mesure d&#x27;une olive) de viande et en le lui donnant — nous concluons plus loin (Houlin 6a) que, dans les dernieres generations, on les a rendus [statutairement] comme des non-Juifs a part entiere (ke-ovdei kokhavim gemourim).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reprise de l'enseignement de Rava (cite en 3a) pour l'analyser : l'<b>apostat par appetit</b>, muni d'un <b>couteau verifie</b>, abat valablement.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg18">
+          <div class="seg-num">19</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאי טַעְמָא? כֵּיוָן דְּאִיכָּא הֶתֵּירָא וְאִיסּוּרָא, לָא שָׁבֵיק הֶתֵּירָא וְאָכֵיל אִיסּוּרָא.</div>
+            <div class="fr"><p>Quelle en est la raison ? Du moment qu&#x27;il y a [devant lui] du permis et de l&#x27;interdit, il ne delaisse pas le permis pour manger l&#x27;interdit.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כֵּיוָן דְּאִיכָּא הֶתֵּירָא וְאִיסּוּרָא</b> קַמֵּיהּ שֶׁבְּיָדוֹ לְהַכְשִׁירָהּ וּבְיָדוֹ לִנְבֵלָה:</div>
+          <div class="glose-fr">Du moment qu&#x27;il y a du permis et de l&#x27;interdit — devant lui : il a le pouvoir de la rendre cachere comme de la rendre nevela.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Raison : ayant le choix entre <b>abattre cacherement ou non</b>, l'apostat-par-appetit <b>ne delaisse pas le permis</b> pour l'interdit (couteau verifie + majorite experte -&gt; abattage presume valide).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg19">
+          <div class="seg-num">20</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִי הָכִי, כִּי לֹא בָּדַק נָמֵי, מִיטְרָח לֹא טָרַח.</div>
+            <div class="fr"><p>Si c&#x27;est ainsi, meme quand on n&#x27;a pas verifie [le couteau, ce devrait etre permis] ! [Reponse :] il ne se donne pas la peine [d&#x27;en chercher un autre].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִטְרָח לֹא טָרַח</b> אִם לֹא יִמְצָאֶנָּה יָפֶה לֹא יַחֲזֹור אַחַר סַכִּין אַחֶרֶת:</div>
+          <div class="glose-fr">Il ne se donne pas la peine — s&#x27;il ne la trouve pas impeccable, il ne se met pas en quete d&#x27;un autre couteau.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection : alors meme <b>sans couteau verifie</b> ce devrait etre permis (il prefere le permis) ! Reponse : si le couteau se revele ebreche, il <b>ne se donne pas la peine</b> d'en chercher un bon.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg20">
+          <div class="seg-num">21</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַרוּ לֵיהּ רַבָּנַן לְרָבָא: תַּנְיָא דִּמְסַייֵּעַ לָךְ, חֲמֵצָן שֶׁל עוֹבְרֵי עֲבֵירָה אַחַר הַפֶּסַח</div>
+            <div class="fr"><p>Les Sages dirent a Rava : une braita t&#x27;appuie — le hametz des transgresseurs (qui ne l&#x27;eliminent pas avant Pessah), apres Pessah... [la suite sur 4b].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תַּנְיָא דִּמְסַיֵּיעַ לָךְ</b> דְּכָל מִי שֶׁאֵינוֹ עוֹשֶׂה לְהַכְעִיס וְאִיכָּא הֶתֵּירָא קַמֵּיהּ לָא שָׁבֵיק הֶתֵּירָא וְאָכֵיל אִיסּוּרָא:</div>
+          <div class="glose-fr">Une braita t&#x27;appuie — car quiconque n&#x27;agit pas par defi (le-hakhis), et a du permis devant lui, ne delaisse pas le permis pour manger l&#x27;interdit.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁל עוֹבְרֵי עֲבֵירָה</b> שֶׁאֵין מְבַעֲרִין חָמֵץ בְּפֶסַח מִפְּנֵי הִפְסִידָה:</div>
+          <div class="glose-fr">Des transgresseurs — qui n&#x27;eliminent pas le hametz a Pessah, a cause de la perte [financiere].</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Les Sages apportent une braita a l'appui de Rava : le <b>hametz des transgresseurs apres Pessah</b> [reste permis] — preuve que celui qui ne peche pas 'par defi' ne delaisse pas le permis. (Suite sur 4b.)</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Chullin_3b.html">&lsaquo; Chullin 3b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Chullin_4b.html">Chullin 4b &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

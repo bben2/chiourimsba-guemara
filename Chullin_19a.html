@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chullin 19a — la mougremet (deviation hors de l&#x27;anneau) et l&#x27;exigence de la majorite par abattage (rov bichehita)</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Chullin 19a — la mougremet (deviation hors de l&#x27;anneau) et l&#x27;exigence de la majorite par abattage (rov bichehita)</h1>
+    <div class="ref">Chullin 19a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Chullin_18b.html">&lsaquo; Chullin 18b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Chullin_19b.html">Chullin 19b &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> La Guemara fixe la halakha : qui abat a partir de l&#x27;inclinaison du bonnet (chipouy kova) et vers le bas a fait un abattage valide ; au-dessus, tereifa. Rav Nahman valide ce cas, contre l&#x27;objection de Rav Hanan bar Rav Ketina (ni comme les Rabbanan ni comme R.</p><p>Yossi b. R.</p><p>Yehouda) ; Rav Nahman s&#x27;appuie sur une tradition de R. Yehochoua ben Levi remontant a R.</p><p>Hanina ben Antigonos, qui valide la mougremet (couteau devie hors du grand anneau). La sougya etablit ensuite que la halakha suit R.</p><p>Hanina ben Antigonos. Vient la longue analyse de Rav Houna a/n de Rav Assi sur les combinaisons de tiers (deviation hagrama vs abattage chehita) : selon l&#x27;ordre des tiers et le point ou la vie sort (yetsiat hiyouta), l&#x27;abattage est valide pour tous, invalide pour tous, ou objet de mahloket entre R.</p><p>Yossi (la majorite vaut le tout, comme la demi-trachee deja fendue) et les Rabbanan (la majorite doit etre coupee au lieu d&#x27;abattage). Rav Hisda inverse la lecture, Rav Yossef et Abaye debattent de l&#x27;attribution du principe rouvo kekoulo, puis une seconde version (lichna aharina) reprend le tout.</p><p>Enfin, le cas H-S-H oppose Rav Houna et Rav Yehouda au nom de Rav (valide / tereifa), et le cas S-H-S provoque la colere de Rav Yehouda, que Rav Houna reconnait fondee, jusqu&#x27;a ce que Rav Hisda l&#x27;exhorte a ne pas se retracter.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="280" fill="#fffdf8"/>
+  <text x="360" y="22" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">La trachee (kaneh) et le point de bascule de l'abattage</text>
+  <text x="360" y="40" text-anchor="middle" font-size="10.5" fill="#78716c">de haut en bas : la tete est en haut, le corps en bas</text>
+  <rect x="300" y="54" width="120" height="34" rx="6" fill="#fef3e2" stroke="#b45309"/>
+  <text x="360" y="76" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b45309">le bonnet (kova)</text>
+  <text x="445" y="70" font-size="10" fill="#78716c">grand anneau superieur</text>
+  <text x="445" y="84" font-size="10" fill="#78716c">(cartilage cricoide)</text>
+  <line x1="360" y1="88" x2="360" y2="104" stroke="#a8a29e" stroke-width="2" stroke-dasharray="3,3"/>
+  <path d="M330,104 L390,104 L384,118 L336,118 Z" fill="#eafaf1" stroke="#15803d"/>
+  <text x="360" y="115" text-anchor="middle" font-size="10" fill="#15803d">l'inclinaison (chipouy kova)</text>
+  <line x1="120" y1="118" x2="600" y2="118" stroke="#b91c1c" stroke-width="1.6" stroke-dasharray="5,3"/>
+  <text x="120" y="113" font-size="10.5" font-weight="700" fill="#b91c1c">SEUIL : a partir de l'inclinaison du bonnet et vers le bas</text>
+  <rect x="320" y="122" width="80" height="120" rx="8" fill="#f5f5f4" stroke="#a8a29e"/>
+  <line x1="320" y1="148" x2="400" y2="148" stroke="#a8a29e"/>
+  <line x1="320" y1="174" x2="400" y2="174" stroke="#a8a29e"/>
+  <line x1="320" y1="200" x2="400" y2="200" stroke="#a8a29e"/>
+  <line x1="320" y1="226" x2="400" y2="226" stroke="#a8a29e"/>
+  <text x="360" y="260" text-anchor="middle" font-size="10.5" fill="#292524">les anneaux de la trachee (kaneh)</text>
+  <rect x="430" y="128" width="270" height="50" rx="8" fill="#eafaf1" stroke="#15803d"/>
+  <text x="565" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#15803d">en dessous du seuil</text>
+  <text x="565" y="166" text-anchor="middle" font-size="11" fill="#292524">on abat ici -&gt; VALIDE (kachera)</text>
+  <rect x="430" y="60" width="80" height="40" rx="8" fill="#fdeaea" stroke="#b91c1c"/>
+  <text x="470" y="84" text-anchor="middle" font-size="10.5" fill="#b91c1c">au-dessus</text>
+  <text x="565" y="206" text-anchor="middle" font-size="10" fill="#78716c">au-dessus du seuil -&gt; tereifa (invalide pour Rabbanan / R. Yossi b. R. Yehouda)</text>
+  <text x="565" y="224" text-anchor="middle" font-size="10" fill="#78716c">R. Hanina b. Antigonos : valide meme au-dessus de l'anneau (mougremet)</text>
+</svg></div>
+          <figcaption>Anatomie de la trachee (segments 0-2) : le bonnet (kova), son inclinaison (chipouy kova) et le seuil qui separe l&#x27;abattage valide de la tereifa.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 230" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="230" fill="#fffdf8"/>
+  <text x="360" y="22" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Le coeur du desaccord : ou exige-t-on la majorite par abattage ?</text>
+  <rect x="30" y="40" width="320" height="170" rx="10" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="190" y="62" text-anchor="middle" font-size="12.5" font-weight="700" fill="#4338ca">Rav Houna a/n de Rav Assi</text>
+  <text x="190" y="84" text-anchor="middle" font-size="10.5" fill="#292524">la mahloket porte sur S-S-H</text>
+  <text x="190" y="104" text-anchor="middle" font-size="10.5" fill="#78716c">Rabbanan : toute la chehita doit etre</text>
+  <text x="190" y="120" text-anchor="middle" font-size="10.5" fill="#78716c">dans le grand anneau (mekom chehita)</text>
+  <text x="190" y="140" text-anchor="middle" font-size="10.5" fill="#78716c">R. Yossi b. R. Yehouda : rouvo kekoulo</text>
+  <text x="190" y="156" text-anchor="middle" font-size="10.5" fill="#78716c">(la majorite vaut le tout)</text>
+  <text x="190" y="184" text-anchor="middle" font-size="10.5" font-weight="700" fill="#4338ca">H-S-S : invalide pour tous</text>
+  <text x="190" y="200" text-anchor="middle" font-size="9.5" fill="#78716c">(la vie sort hors du lieu d'abattage)</text>
+  <rect x="370" y="40" width="320" height="170" rx="10" fill="#fef3e2" stroke="#b45309"/>
+  <text x="530" y="62" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b45309">Rav Hisda (inverse)</text>
+  <text x="530" y="84" text-anchor="middle" font-size="10.5" fill="#292524">la mahloket porte sur H-S-S</text>
+  <text x="530" y="104" text-anchor="middle" font-size="10.5" fill="#78716c">R. Yossi : comme la demi-trachee fendue</text>
+  <text x="530" y="120" text-anchor="middle" font-size="10.5" fill="#78716c">(hatsi kaneh pagoum) : un ajout suffit</text>
+  <text x="530" y="140" text-anchor="middle" font-size="10.5" fill="#78716c">Rabbanan : la-bas c'est le lieu d'abattage,</text>
+  <text x="530" y="156" text-anchor="middle" font-size="10.5" fill="#78716c">ici (hagrama) non</text>
+  <text x="530" y="184" text-anchor="middle" font-size="10.5" font-weight="700" fill="#b45309">S-S-H : valide pour tous</text>
+  <text x="530" y="200" text-anchor="middle" font-size="9.5" fill="#78716c">(rouvo chel ehad kemoto)</text>
+</svg></div>
+          <figcaption>Le coeur du desaccord (segments 7-11) : la lecture droite de Rav Houna a/n de Rav Assi et la lecture inverse de Rav Hisda, sur le point ou la majorite doit etre coupee par abattage.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="340" fill="#fffdf8"/>
+  <text x="360" y="22" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Les combinaisons de tiers : deviation (hagrama) et abattage (chehita)</text>
+  <text x="360" y="40" text-anchor="middle" font-size="10" fill="#78716c">H = tiers devie hors anneau (hagrama) ; S = tiers coupe au bon endroit (chehita). La vie sort a la majorite (2e tiers).</text>
+  <!-- header -->
+  <text x="30" y="72" font-size="11" font-weight="700" fill="#1c1917">cas (ordre 1er-2e-3e tiers)</text>
+  <text x="470" y="72" font-size="11" font-weight="700" fill="#1c1917">statut</text>
+  <line x1="24" y1="80" x2="696" y2="80" stroke="#e7e2d8"/>
+  <!-- ligne 1 : S S H -->
+  <rect x="30" y="92" width="44" height="30" rx="5" fill="#eafaf1" stroke="#15803d"/><text x="52" y="112" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">S</text>
+  <rect x="80" y="92" width="44" height="30" rx="5" fill="#eafaf1" stroke="#15803d"/><text x="102" y="112" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">S</text>
+  <rect x="130" y="92" width="44" height="30" rx="5" fill="#fdeaea" stroke="#b91c1c"/><text x="152" y="112" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">H</text>
+  <text x="220" y="105" font-size="10.5" fill="#78716c">majorite (2 tiers) deja coupee par abattage</text>
+  <rect x="455" y="92" width="240" height="30" rx="6" fill="#eafaf1" stroke="#15803d"/>
+  <text x="575" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#15803d">VALIDE pour tous</text>
+  <!-- ligne 2 : H S S -->
+  <rect x="30" y="134" width="44" height="30" rx="5" fill="#fdeaea" stroke="#b91c1c"/><text x="52" y="154" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">H</text>
+  <rect x="80" y="134" width="44" height="30" rx="5" fill="#eafaf1" stroke="#15803d"/><text x="102" y="154" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">S</text>
+  <rect x="130" y="134" width="44" height="30" rx="5" fill="#eafaf1" stroke="#15803d"/><text x="152" y="154" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">S</text>
+  <text x="220" y="147" font-size="10.5" fill="#78716c">la vie sort sur le 2e tiers, mais le 1er n'est pas au bon endroit</text>
+  <rect x="455" y="134" width="240" height="30" rx="6" fill="#fdeaea" stroke="#b91c1c"/>
+  <text x="575" y="154" text-anchor="middle" font-size="11" font-weight="700" fill="#b91c1c">INVALIDE pour tous</text>
+  <!-- ligne 3 mahloket : la-1 vs la-2 -->
+  <rect x="30" y="176" width="44" height="30" rx="5" fill="#fdeaea" stroke="#b91c1c"/><text x="52" y="196" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">H</text>
+  <rect x="80" y="176" width="44" height="30" rx="5" fill="#eafaf1" stroke="#15803d"/><text x="102" y="196" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">S</text>
+  <rect x="130" y="176" width="44" height="30" rx="5" fill="#eafaf1" stroke="#15803d"/><text x="152" y="196" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">S</text>
+  <text x="220" y="189" font-size="10.5" fill="#78716c">(2e version de Rav Houna/Rav Assi)</text>
+  <rect x="455" y="176" width="240" height="30" rx="6" fill="#fff7ed" stroke="#b45309"/>
+  <text x="575" y="196" text-anchor="middle" font-size="10.5" font-weight="700" fill="#b45309">MAHLOKET : R. Yossi valide / Rabbanan non</text>
+  <line x1="24" y1="220" x2="696" y2="220" stroke="#e7e2d8"/>
+  <!-- ligne 4 : H S H -->
+  <rect x="30" y="232" width="44" height="30" rx="5" fill="#fdeaea" stroke="#b91c1c"/><text x="52" y="252" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">H</text>
+  <rect x="80" y="232" width="44" height="30" rx="5" fill="#eafaf1" stroke="#15803d"/><text x="102" y="252" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">S</text>
+  <rect x="130" y="232" width="44" height="30" rx="5" fill="#fdeaea" stroke="#b91c1c"/><text x="152" y="252" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">H</text>
+  <text x="220" y="245" font-size="10.5" fill="#78716c">la vie sort sur le 2e tiers, coupe par abattage</text>
+  <rect x="455" y="232" width="240" height="30" rx="6" fill="#fff7ed" stroke="#b45309"/>
+  <text x="575" y="252" text-anchor="middle" font-size="10.5" font-weight="700" fill="#b45309">Rav Houna a/n de Rav : VALIDE ; Rav Yehouda : tereifa</text>
+  <!-- ligne 5 : S H S -->
+  <rect x="30" y="274" width="44" height="30" rx="5" fill="#eafaf1" stroke="#15803d"/><text x="52" y="294" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">S</text>
+  <rect x="80" y="274" width="44" height="30" rx="5" fill="#fdeaea" stroke="#b91c1c"/><text x="102" y="294" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">H</text>
+  <rect x="130" y="274" width="44" height="30" rx="5" fill="#eafaf1" stroke="#15803d"/><text x="152" y="294" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">S</text>
+  <text x="220" y="287" font-size="10.5" fill="#78716c">la vie sort sur le 2e tiers, devie hors de l'anneau</text>
+  <rect x="455" y="274" width="240" height="30" rx="6" fill="#fff7ed" stroke="#b45309"/>
+  <text x="575" y="294" text-anchor="middle" font-size="10" font-weight="700" fill="#b45309">Rav Yehouda a/n de Rav : VALIDE ; Rav Houna : tereifa</text>
+  <text x="360" y="324" text-anchor="middle" font-size="9.5" fill="#78716c">point cle : a la sortie de la vie (yetsiat hiyouta), exige-t-on la majorite par abattage, ou suffit-il que la majorite finale le soit ?</text>
+</svg></div>
+          <figcaption>Synthese des combinaisons de tiers (segments 7-18) : ordre des tiers H/S, point de sortie de la vie, et statut selon chaque opinion.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְהִלְכְתָא מִשִּׁיפּוּי כּוֹבַע וּלְמַטָּה – כְּשֵׁרָה, וְהַיְינוּ דְּשִׁיֵּיר בְּחִיטֵּי.</div>
+            <div class="fr"><p>Et la halakha [est] : a partir de l&#x27;inclinaison du bonnet (chipouy kova) et vers le bas — valide ; et c&#x27;est [conforme a l&#x27;opinion] de celui qui a laisse [une partie] dans les pointes (chiyer be-hitei).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהִלְכְתָא מִשִּׁיפּוּי כּוֹבַע וּלְמַטָּה כְּשֵׁרָה</b> קֹודֶם שֶׁיַּתְחִיל הַכּוֹבַע לְשַׁפֵּעַ וְלַעֲלוֹת כְּשֵׁרָה מִשָּׁם וּלְהַלָּן טְרֵפָה:</div>
+          <div class="glose-fr">Et la halakha [est] : a partir de l&#x27;inclinaison du bonnet et vers le bas, valide — avant que le bonnet ne commence a s&#x27;incliner et a monter, [c&#x27;est] valide ; de la et au-dela [vers le haut], tereifa.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהַייְנוּ דְּשִׁיֵּיר בְּחִיטֵּי</b> כְּלוֹמַר כמ&quot;ד שִׁיֵּיר בְּחִיטֵּי כְּשֵׁרָה:</div>
+          <div class="glose-fr">Et c&#x27;est [le sens de] &#x27;a laisse [une partie] dans les pointes&#x27; — c&#x27;est-a-dire [conforme] a l&#x27;avis de celui qui dit [que] &#x27;celui qui a laisse [une partie] dans les pointes&#x27; [a fait] un [abattage] valide.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara tranche : qui abat a partir de l'<b>inclinaison du bonnet</b> (chipouy kova, la pente du gros cartilage superieur de la trachee) et <b>vers le bas</b>, son abattage est <b>valide</b> (kachera) ; au-dessus, c'est <b>tereifa</b>. Cette decision suit l'avis que 'celui qui a laisse [une partie] dans les pointes (hitei)' — c'est-a-dire qui n'a pas coupe tout le cartilage en pointe — a tout de meme fait un abattage valide, car ce cartilage s'etend au-dela de ce point.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="280" fill="#fffdf8"/>
+  <text x="360" y="22" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">La trachee (kaneh) et le point de bascule de l'abattage</text>
+  <text x="360" y="40" text-anchor="middle" font-size="10.5" fill="#78716c">de haut en bas : la tete est en haut, le corps en bas</text>
+  <rect x="300" y="54" width="120" height="34" rx="6" fill="#fef3e2" stroke="#b45309"/>
+  <text x="360" y="76" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b45309">le bonnet (kova)</text>
+  <text x="445" y="70" font-size="10" fill="#78716c">grand anneau superieur</text>
+  <text x="445" y="84" font-size="10" fill="#78716c">(cartilage cricoide)</text>
+  <line x1="360" y1="88" x2="360" y2="104" stroke="#a8a29e" stroke-width="2" stroke-dasharray="3,3"/>
+  <path d="M330,104 L390,104 L384,118 L336,118 Z" fill="#eafaf1" stroke="#15803d"/>
+  <text x="360" y="115" text-anchor="middle" font-size="10" fill="#15803d">l'inclinaison (chipouy kova)</text>
+  <line x1="120" y1="118" x2="600" y2="118" stroke="#b91c1c" stroke-width="1.6" stroke-dasharray="5,3"/>
+  <text x="120" y="113" font-size="10.5" font-weight="700" fill="#b91c1c">SEUIL : a partir de l'inclinaison du bonnet et vers le bas</text>
+  <rect x="320" y="122" width="80" height="120" rx="8" fill="#f5f5f4" stroke="#a8a29e"/>
+  <line x1="320" y1="148" x2="400" y2="148" stroke="#a8a29e"/>
+  <line x1="320" y1="174" x2="400" y2="174" stroke="#a8a29e"/>
+  <line x1="320" y1="200" x2="400" y2="200" stroke="#a8a29e"/>
+  <line x1="320" y1="226" x2="400" y2="226" stroke="#a8a29e"/>
+  <text x="360" y="260" text-anchor="middle" font-size="10.5" fill="#292524">les anneaux de la trachee (kaneh)</text>
+  <rect x="430" y="128" width="270" height="50" rx="8" fill="#eafaf1" stroke="#15803d"/>
+  <text x="565" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#15803d">en dessous du seuil</text>
+  <text x="565" y="166" text-anchor="middle" font-size="11" fill="#292524">on abat ici -&gt; VALIDE (kachera)</text>
+  <rect x="430" y="60" width="80" height="40" rx="8" fill="#fdeaea" stroke="#b91c1c"/>
+  <text x="470" y="84" text-anchor="middle" font-size="10.5" fill="#b91c1c">au-dessus</text>
+  <text x="565" y="206" text-anchor="middle" font-size="10" fill="#78716c">au-dessus du seuil -&gt; tereifa (invalide pour Rabbanan / R. Yossi b. R. Yehouda)</text>
+  <text x="565" y="224" text-anchor="middle" font-size="10" fill="#78716c">R. Hanina b. Antigonos : valide meme au-dessus de l'anneau (mougremet)</text>
+</svg></div><div class="svg-cap">Le seuil de l&#x27;abattage valide : a partir de l&#x27;inclinaison du bonnet et vers le bas, valide ; au-dessus, tereifa.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַב נַחְמָן אַכְשַׁר מִשִּׁיפּוּי כּוֹבַע וּלְמַטָּה, אֲמַר לֵיהּ רַב חָנָן בַּר רַב קַטִּינָא לְרַב נַחְמָן: כְּמַאן? לָא כְּרַבָּנַן וְלָא כְּרַבִּי יוֹסֵי בְּרַבִּי יְהוּדָה.</div>
+            <div class="fr"><p>Rav Nahman a valide [un abattage fait] a partir de l&#x27;inclinaison du bonnet et vers le bas. Rav Hanan bar Rav Ketina dit a Rav Nahman : selon qui [tranches-tu ainsi] ?</p><p>Ni comme les Rabbanan, ni comme Rabbi Yossi fils de Rabbi Yehouda.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא כְּרַבָּנָן וְלֹא כְּר&#x27; יוֹסֵי</b> דְּאַפֵּי&#x27; ר&#x27; יוֹסֵי לָא מַכְשַׁר אֶלָּא הֵיכָא דַּהֲוַאי רֻובָּא דִּשְׁחִיטָה בְּתוֹךְ הַטַּבַּעַת אֲבָל כֻּולָּהּ לְמַעְלָה מִטַּבַּעַת הַגְּדוֹלָה מוֹדֶה דִּפְסוּלָה וְהָא כֻּולָּהּ לְמַעְלָה מִן הַטַּבַּעַת הִיא:</div>
+          <div class="glose-fr">Ni comme les Rabbanan ni comme R. Yossi — car meme Rabbi Yossi ne valide que la ou la majorite de l&#x27;abattage s&#x27;est faite a l&#x27;interieur de l&#x27;anneau ; mais [si] toute [la coupe est] au-dessus du grand anneau, il admet qu&#x27;[elle est] invalide ; or celle-ci [est] tout entiere au-dessus de l&#x27;anneau.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Nahman valide en pratique ce cas (abattage a partir de l'inclinaison du bonnet vers le bas). Rav Hanan bar Rav Ketina objecte : cette decision ne suit <b>aucune</b> des deux opinions de la michna — ni les <b>Rabbanan</b>, ni <b>Rabbi Yossi b. R. Yehouda</b> —, car tous deux invalident un abattage de la trachee fait au-dessus du grand anneau superieur (le cartilage cricoide).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ: אֲנָא לָא חִילָק יָדַעְנָא וְלָא בִּילָק יָדַעְנָא, אֲנָא שְׁמַעְתָּא יָדַעְנָא, דְּאָמַר רַבִּי חִייָּא בַּר אַבָּא אָמַר רַבִּי יוֹחָנָן, וְאָמְרִי לָהּ אָמַר רַבִּי אַבָּא בַּר זַבְדָּא אָמַר רַבִּי חֲנִינָא, וְאָמְרִי לָהּ אָמַר רַבִּי יַעֲקֹב בַּר אִידִי אָמַר רַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי: מִשִּׁיפּוּי כּוֹבַע וּלְמַטָּה כְּשֵׁרָה.</div>
+            <div class="fr"><p>Il lui dit : moi, je ne connais [ni] Hilek ni Bilek ; moi, [c&#x27;est] la tradition (chemaata) que je connais. Car Rabbi Hiyya bar Abba a dit au nom de Rabbi Yohanan — et certains [le] rapportent [ainsi] : Rabbi Abba bar Zavda a dit au nom de Rabbi Hanina, et certains [le] rapportent [ainsi] : Rabbi Yaakov bar Idi a dit au nom de Rabbi Yehochoua ben Levi : a partir de l&#x27;inclinaison du bonnet et vers le bas — valide.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לָא חִילָק יָדַעְנָא וְלָא בִּילָק יָדַעְנָא</b> לֹא כְּרַבָּנָן שָׁמַעְתִּי דְּמַייְרֵי בִּמְחַלֵּק טַבַּעַת לִשְׁנַיִם וְלֹא כְּר&#x27; יוֹסֵי שָׁמַעְתִּי דְּמַיְירֵי בִּמְבַלֵּק הַסִּימָנִין דקרניי&quot;ר בְּלַעַז לְשׁוֹן מְבֻולָּקָה כָּךְ שָׁמַעְתִּי. אֲבָל רָאִיתִי בְּחֵלֶק (סַנְהֶדְרִין דַּף צח:) עֲתִידִים יִשְׂרָאֵל דְּאָכְלִי שְׁנֵי מָשִׁיחַ וּפָרְכִינַן פְּשִׁיטָא אֶלָּא מַאן אָכִיל לְהוּ אַטּוּ חִילֵּק וּבִילָק אָכְלִי לֵיהּ וּלְפִי הַדְּבָרִים לִישָּׁנָא בְּעָלְמָא הוּא:</div>
+          <div class="glose-fr">Je ne connais [ni] Hilek ni Bilek — je n&#x27;ai pas entendu [le sens] des Rabbanan, qui parlent de [celui qui] fend l&#x27;anneau en deux (mehalek tabaat), ni [le sens] de R. Yossi, qui parle de [celui qui] arrache les simanim — &#x27;carnier&#x27; en langue vernaculaire, terme de &#x27;mevoulkah&#x27; (denudation) ; ainsi l&#x27;ai-je entendu. Mais j&#x27;ai vu dans [le chapitre] Helek (Sanhedrin 98b) : &#x27;Israel est appele a manger les annees du Machiah&#x27;, et l&#x27;on objecte : &#x27;c&#x27;est evident ! [mais] alors, qui [d&#x27;autre] les mangerait — est-ce Hilek et Bilek qui [les] mangeraient ?&#x27; ; [et] d&#x27;apres ces propos, [Hilek-Bilek] n&#x27;est qu&#x27;une simple expression [pour designer n&#x27;importe qui, deux quidams].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שְׁמַעְתָּא</b> דְּאָמוֹרָאֵי יָדַעְנָא דְּמַכְשְׁרִי לְמַעְלָה מִן הַטַּבַּעַת וּבִלְבַד שֶׁיְּהֵא מִשִּׁיפּוּי כּוֹבַע וּלְמַטָּה וְהָנֵי אָמוֹרָאֵי סָמְכִי אַדְּרַבִּי חֲנִינָא בֶּן אַנְטִיגְנוֹס שֶׁחָלַק עַל רַבָּנָן וְרַבִּי יוֹסֵי וּמַכְשַׁר מֻוגְרֶמֶת דִּידְהוּ:</div>
+          <div class="glose-fr">La tradition — [celle] des Amoraim, je [la] connais : ils valident [un abattage] au-dessus de l&#x27;anneau a la seule condition que [ce soit] a partir de l&#x27;inclinaison du bonnet et vers le bas. Et ces Amoraim s&#x27;appuient sur Rabbi Hanina ben Antigonos, qui a diverge d&#x27;avec les Rabbanan et R. Yossi, et qui valide leur [propre cas de] mougremet.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Nahman repond par une boutade : '<b>je ne connais ni Hilek ni Bilek</b>' (deux noms accoles pour dire : je ne saisis le raisonnement ni de l'un ni de l'autre, des Rabbanan ou de R. Yossi). Ce qu'il connait, c'est la <b>tradition</b> (chemaata) d'Amoraim — par une chaine remontant a <b>R. Yehochoua ben Levi</b> (selon les versions, via R. Yohanan, R. Hanina, ou R. Yaakov bar Idi) : 'a partir de l'inclinaison du bonnet et vers le bas, valide'. Ces Amoraim s'appuient sur R. Hanina ben Antigonos, qui validait la mougremet.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאָמַר רַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי: מֻוגְרֶמֶת דְּרַבָּנַן כְּשֵׁרָה לְרַבִּי יוֹסֵי בְּרַבִּי יְהוּדָה.</div>
+            <div class="fr"><p>Et Rabbi Yehochoua ben Levi a dit : la mougremet des Rabbanan [est] valide selon Rabbi Yossi fils de Rabbi Yehouda.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מֻוגְרֶמֶת דְּרַבָּנָן</b> שֶׁהַגֵּרִים מִיעוּט הַקָּנֶה לְאַחַר שֶׁשָּׁחַט רֻובָּהּ:</div>
+          <div class="glose-fr">La mougremet des Rabbanan — [c&#x27;est le cas] ou il a devie (higrim) la minorite de la trachee apres en avoir abattu la majorite.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מֻוגְרֶמֶת דְּר&#x27; יוֹסֵי</b> שֶׁשָּׁחַט רֻובָּהּ לְמַעְלָה מִן הַטַּבַּעַת אוֹ כֻּולָּהּ:</div>
+          <div class="glose-fr">La mougremet de R. Yossi — [c&#x27;est le cas] ou il a abattu la majorite [de la trachee] au-dessus de l&#x27;anneau, ou [meme] sa totalite.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara revient a la braita (18b) sur la <b>mougremet</b> (couteau devie, hagrama, hors du lieu d'abattage). R. Yehochoua ben Levi enseigne un recoupement des opinions : la <b>mougremet selon les Rabbanan</b> — c'est-a-dire le cas ou l'on a devie le <b>petit reste</b> (le dernier tiers) de la trachee apres en avoir abattu la majorite — est <b>valide selon R. Yossi b. R. Yehouda</b>, pour qui la majorite vaut le tout.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּדְרַבִּי יוֹסֵי בְּרַבִּי יְהוּדָה, כְּשֵׁרָה לְרַבִּי חֲנִינָא בֶּן אַנְטִיגְנוֹס.</div>
+            <div class="fr"><p>Et celle de Rabbi Yossi fils de Rabbi Yehouda [est] valide selon Rabbi Hanina ben Antigonos.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Suite : la <b>mougremet selon R. Yossi</b> — le cas ou l'on a abattu la majorite de la trachee <b>au-dessus de l'anneau</b> (voire sa totalite) — est a son tour <b>valide selon R. Hanina ben Antigonos</b>, qui valide meme un abattage dont la majorite a ete coupee hors du grand anneau.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">פְּשִׁיטָא! מַהוּ דְתֵימָא: רַבִּי חֲנִינָא בֶּן אַנְטִיגְנוֹס אַדְּרַבָּנַן קָאֵי, קָא מַשְׁמָע לַן.</div>
+            <div class="fr"><p>[Mais] c&#x27;est evident ! [Reponse :] de peur que tu ne dises [que] Rabbi Hanina ben Antigonos se rapporte aux Rabbanan [seulement] — [le texte] nous fait savoir [qu&#x27;il n&#x27;en est rien].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַהוּ דְּתֵימָא רַבִּי חֲנִינָא</b> דְּמַכְשִׁיר:</div>
+          <div class="glose-fr">De peur que tu ne dises [que] Rabbi Hanina — qui valide —</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַמֻּוגְרֶמֶת דְּרַבָּנָן קָאֵי</b> אֲבָל הֵיכָא דְּכֻולָּהּ לְמַעְלָה מִן טַבַּעַת פְּסוּלָה קמ&quot;ל:</div>
+          <div class="glose-fr">se rapporte a la mougremet des Rabbanan — mais que la ou [c&#x27;est] tout entier au-dessus de l&#x27;anneau [ce serait] invalide : [le texte] nous fait savoir [qu&#x27;il n&#x27;en est rien].</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection : cela va de soi (R. Hanina ben Antigonos est plus large que R. Yossi, donc valide d'autant plus son cas) ! Reponse : on aurait pu croire que R. Hanina ben Antigonos ne <b>valide que la mougremet des Rabbanan</b> (deviation du petit reste) tout en suivant R. Yossi pour le reste ; l'enonce nous <b>apprend</b> que non — il valide meme la mougremet plus radicale de R. Yossi.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאֵימָא הָכִי נָמֵי? אִם כֵּן, ״הֵעִיד עָלֶיהָ״ מִיבְּעֵי לֵיהּ. וְהִלְכְתָא כְּרַבִּי חֲנִינָא בֶּן אַנְטִיגְנוֹס, דְּקָאֵי רַב נַחְמָן כְּוָותֵיהּ.</div>
+            <div class="fr"><p>Et dis [donc] qu&#x27;il en [est] bien ainsi [qu&#x27;il se rapporte aux Rabbanan seulement] ? Si [c&#x27;etait le cas], il aurait fallu [dire] &#x27;il a temoigne a son sujet (heid aleha)&#x27;.</p><p>Et la halakha [est] comme Rabbi Hanina ben Antigonos, car Rav Nahman se tient selon [son avis].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>א&quot;כ הֵעִיד עָלֶיהָ מִיבַּעְיָא לֵיהּ</b> דְּמַשְׁמַע דְּאַסְּתָמָא דִּלְעֵיל מִינֵּיהּ קָאֵי דְּקָתָנֵי מֻוגְרֶמֶת פְּסוּלָה וְרַבָּנָן הִיא. הֵעִיד עָלֶיהָ רַבִּי חֲנִינָא כו&#x27; וּמִדְּמַהְדַּר וּנְקַט עַל מֻוגְרֶמֶת ש&quot;מ אַתַּרְוַיְיהוּ מֻוגְרֶמֶת דִּלְעֵיל מִינֵּיהּ קָאֵי וְהָכִי קָאָמַר לָא מִיבַּעְיָא מֻוגְרֶמֶת דְּרַבָּנָן דְּרֻובָּהּ בְּטַבַּעַת כְּשֵׁרָה אֶלָּא אַף מֻוגְרֶמֶת דְּר&#x27; יוֹסֵי דְּכֻולָּהּ לְמַעְלָה מִן הַטַּבַּעַת כְּשֵׁרָה:</div>
+          <div class="glose-fr">Si [c&#x27;etait le cas], il aurait fallu [dire] &#x27;il a temoigne a son sujet&#x27; — [formulation] qui impliquerait qu&#x27;il se rapporte a l&#x27;enonce anonyme (setama) qui [le] precede, lequel enseigne &#x27;mougremet [est] invalide&#x27;, et qui [exprime l&#x27;avis des] Rabbanan. [Mais puisqu&#x27;il est dit] &#x27;Rabbi Hanina a temoigne etc.&#x27;, et que [le texte] revient et place [son propos] sur la mougremet [en general], apprends-en qu&#x27;il se rapporte aux deux mougremot [mentionnees] plus haut ; et voici ce qu&#x27;il dit : non seulement la mougremet des Rabbanan, dont la majorite [est coupee] dans l&#x27;anneau, [est] valide, mais meme la mougremet de R. Yossi, dont la totalite [est] au-dessus de l&#x27;anneau, [est] valide.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּקָאֵי רַב נַחְמָן כְּוָותֵיהּ</b> דְּאַכְּשַׁר מִשִּׁיפּוּי כּוֹבַע וּלְמַטָּה כְּדַאֲמָרָן:</div>
+          <div class="glose-fr">Car Rav Nahman se tient selon [son avis] — [Rav Nahman] qui a valide [un abattage fait] a partir de l&#x27;inclinaison du bonnet et vers le bas, comme nous [l&#x27;]avons dit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Contre-objection : pourquoi ne pas dire <b>effectivement</b> que R. Hanina ben Antigonos se range derriere les Rabbanan ? Reponse : la braita le presente par le verbe '<b>il a temoigne</b>' (heid) — et non 'il a temoigne <b>a son sujet</b>' (heid <i>aleha</i>, qui le rattacherait a un avis precedent precis). Le simple 'il a temoigne' signale qu'il <b>diverge de tous</b>. Conclusion : la halakha suit <b>R. Hanina ben Antigonos</b>, car <b>Rav Nahman</b> (qui validait l'abattage a partir de l'inclinaison du bonnet) tranche comme lui.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב הוּנָא אָמַר רַב אַסִּי: מַחְלֹוקֶת בְּשֶׁשָּׁחַט שְׁנֵי שְׁלִישׁ וְהִגְרִים שְׁלִישׁ, דְּרַבָּנָן סָבְרִי: כֻּולַּהּ שְׁחִיטָה בָּעֵינַן בְּטַבַּעַת גְּדוֹלָה, וְרַבִּי יוֹסֵי בְּרַבִּי יְהוּדָה סָבַר: רֻובּוֹ כְּכֻולּוֹ.</div>
+            <div class="fr"><p>Rav Houna a dit au nom de Rav Assi : la divergence [porte] sur le cas ou il a abattu deux tiers et devie [le couteau pour] un tiers ; car les Rabbanan tiennent : nous exigeons tout l&#x27;abattage dans le grand anneau ; et Rabbi Yossi fils de Rabbi Yehouda tient : sa majorite [vaut] comme sa totalite (rouvo ke-koulo).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַחֲלֹוקֶת</b> דְּרַבָּנָן וְרַבִּי יוֹסֵי:</div>
+          <div class="glose-fr">La divergence — des Rabbanan et de Rabbi Yossi.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּשֶׁשָּׁחַט</b> תְּחִלָּה בְּתוֹךְ הַטַּבַּעַת שְׁנֵי שְׁלִישׁ הַגַּרְגֶּרֶת דְּהַיְינוּ מְלֹא הַחוּט שֶׁל רֻובָּהּ אַחַ&quot;כּ הַגֵּרִים שְׁלִישׁ הָאַחֲרוֹן:</div>
+          <div class="glose-fr">Sur le cas ou il a abattu — d&#x27;abord, a l&#x27;interieur de l&#x27;anneau, deux tiers de la trachee — c&#x27;est-a-dire &#x27;le plein d&#x27;un fil&#x27; [d&#x27;]une majorite [de celle-ci] — puis il a devie le dernier tiers.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כֻּולַּהּ שְׁחִיטָה בָּעֵינַן בְּטַבַּעַת הַגְּדוֹלָה</b> כְּלוֹמַר בְּמָקוֹם הָרָאוּי לִשְׁחִיטָה וכ&quot;ש לְמַטָּה הֵימֶנָּה:</div>
+          <div class="glose-fr">Nous exigeons tout l&#x27;abattage dans le grand anneau — c&#x27;est-a-dire au lieu apte a l&#x27;abattage ; et a plus forte raison en dessous de lui [vers le bas].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>רֻובּוֹ כְּכֻולּוֹ</b> וּגְמָרָהּ לָהּ שְׁחִיטָה בְּרֻובָּהּ וּמִכָּאן וְאֵילָךְ מְחַתֵּךְ בִּבְשַׂר שְׁחוּטָה בְּעָלְמָא הוּא:</div>
+          <div class="glose-fr">Sa majorite [vaut] comme sa totalite — l&#x27;abattage s&#x27;est acheve par sa majorite, et de la et au-dela [le reste] n&#x27;est qu&#x27;une simple decoupe dans la chair d&#x27;une [bete deja] abattue.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אָמַר רַב הוּנָא אָמַר רַב אַסִּי</b> הַייְנוּ רַב אַסִּי חֲבֵרוֹ שֶׁל רַב כָּהֲנָא שֶׁהָיוּ גְּדוֹלִים דְּלִסְבָרֵיהּ דְּרַב לֹא הָיוּ צְרִיכִין אֲבָל רַבִּי אַסִּי לָאו הַייְנוּ רַב אַסִּי דְּקָטָן מֵרַב הוּנָא הָיָה כִּדְאָמְרִי&#x27; בְּהַנִּיזָּקִין (גִּיטִּין נט:) רַבִּי אַמֵּי וְרַבִּי אַסִּי כָּהֲנֵי חֲשִׁיבִי דְּאַרְעָא דְּיִשְׂרָאֵל מִיכָּף כַּיְיפִי לֵיהּ לְרַב הוּנָא:</div>
+          <div class="glose-fr">Rav Houna a dit au nom de Rav Assi — c&#x27;est [le] Rav Assi compagnon de Rav Kahana, qui etaient [tous deux] des grands ; car selon l&#x27;opinion de Rav, ils n&#x27;en avaient pas besoin. Mais Rabbi Assi n&#x27;est pas [ce] Rav Assi, car [Rabbi Assi] etait plus jeune que Rav Houna, comme nous [le] disons dans [le chapitre] Ha-nizakin (Gittin 59b) : &#x27;Rabbi Ami et Rabbi Assi, les pretres considerables de la Terre d&#x27;Israel, s&#x27;inclinaient (se soumettaient) devant Rav Houna&#x27;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Houna, au nom de Rav Assi, precise l'objet du desaccord de la michna (voir les schemas). Il porte sur le cas <b>S-S-H</b> : on a abattu correctement <b>deux tiers</b> de la trachee dans l'anneau, puis devie le couteau (hagrama) vers le haut pour le <b>dernier tiers</b>. Les <b>Rabbanan</b> exigent que <b>tout l'abattage</b> se fasse dans le grand anneau (le lieu propre, mekom chehita) ; <b>R. Yossi b. R. Yehouda</b> tient que '<b>la majorite vaut le tout</b>' (rouvo ke-koulo) — les deux tiers valides suffisent.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 230" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="230" fill="#fffdf8"/>
+  <text x="360" y="22" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Le coeur du desaccord : ou exige-t-on la majorite par abattage ?</text>
+  <rect x="30" y="40" width="320" height="170" rx="10" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="190" y="62" text-anchor="middle" font-size="12.5" font-weight="700" fill="#4338ca">Rav Houna a/n de Rav Assi</text>
+  <text x="190" y="84" text-anchor="middle" font-size="10.5" fill="#292524">la mahloket porte sur S-S-H</text>
+  <text x="190" y="104" text-anchor="middle" font-size="10.5" fill="#78716c">Rabbanan : toute la chehita doit etre</text>
+  <text x="190" y="120" text-anchor="middle" font-size="10.5" fill="#78716c">dans le grand anneau (mekom chehita)</text>
+  <text x="190" y="140" text-anchor="middle" font-size="10.5" fill="#78716c">R. Yossi b. R. Yehouda : rouvo kekoulo</text>
+  <text x="190" y="156" text-anchor="middle" font-size="10.5" fill="#78716c">(la majorite vaut le tout)</text>
+  <text x="190" y="184" text-anchor="middle" font-size="10.5" font-weight="700" fill="#4338ca">H-S-S : invalide pour tous</text>
+  <text x="190" y="200" text-anchor="middle" font-size="9.5" fill="#78716c">(la vie sort hors du lieu d'abattage)</text>
+  <rect x="370" y="40" width="320" height="170" rx="10" fill="#fef3e2" stroke="#b45309"/>
+  <text x="530" y="62" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b45309">Rav Hisda (inverse)</text>
+  <text x="530" y="84" text-anchor="middle" font-size="10.5" fill="#292524">la mahloket porte sur H-S-S</text>
+  <text x="530" y="104" text-anchor="middle" font-size="10.5" fill="#78716c">R. Yossi : comme la demi-trachee fendue</text>
+  <text x="530" y="120" text-anchor="middle" font-size="10.5" fill="#78716c">(hatsi kaneh pagoum) : un ajout suffit</text>
+  <text x="530" y="140" text-anchor="middle" font-size="10.5" fill="#78716c">Rabbanan : la-bas c'est le lieu d'abattage,</text>
+  <text x="530" y="156" text-anchor="middle" font-size="10.5" fill="#78716c">ici (hagrama) non</text>
+  <text x="530" y="184" text-anchor="middle" font-size="10.5" font-weight="700" fill="#b45309">S-S-H : valide pour tous</text>
+  <text x="530" y="200" text-anchor="middle" font-size="9.5" fill="#78716c">(rouvo chel ehad kemoto)</text>
+</svg></div><div class="svg-cap">Lecture de Rav Houna a/n de Rav Assi : la mahloket porte sur S-S-H ; lecture inverse de Rav Hisda au segment 9.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲבָל הַגֵּרִים שְׁלִישׁ, וְשָׁחַט שְׁנֵי שְׁלִישׁ – דִּבְרֵי הַכֹּל פְּסוּלָה, דְּכִי נָפְקָא חִיּוּתָא בָּעֵינַן רֻובָּא בִּשְׁחִיטָה, וְלֵיכָּא.</div>
+            <div class="fr"><p>Mais [s&#x27;]il a devie un tiers puis abattu deux tiers — de l&#x27;avis de tous, [c&#x27;est] invalide ; car au moment ou la vie sort (nafka hiyouta), nous exigeons la majorite par abattage (rouba bi-chehita), et [il n&#x27;y en] a pas.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲבָל הַגֵּרִים שְׁלִישׁ</b> תְּחִלָּה שֶׁהִתְחִיל לִשְׁחֹוט לְמַעְלָה מִן הַטַּבַּעַת וְשָׁחַט רֹוב אַחֲרוֹן בִּמְקוֹם שְׁחִיטָה:</div>
+          <div class="glose-fr">Mais [s&#x27;]il a devie un tiers — d&#x27;abord, [c&#x27;est-a-dire] qu&#x27;il a commence a abattre au-dessus de l&#x27;anneau, puis a abattu la derniere majorite au lieu d&#x27;abattage.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>פְּסוּלָה</b> אַפֵּי&#x27; לְרַבִּי יוֹסֵי דִּיצִיאַת חַיּוּתָא שֶׁל בְּהֵמָה בְּרוֹב סִימָן הוּא וּכְשֶׁנֶּחְתַּךְ רֹוב הַסִּימָן לֹא נֶחְתַּךְ אוֹתוֹ הָרֹוב בַּשְּׁחִיטָה:</div>
+          <div class="glose-fr">Invalide — meme selon Rabbi Yossi ; car la sortie de la vie (yetsiat hiyouta) de la bete [se fait] par la majorite du siman, et lorsque la majorite du siman a ete coupee, cette majorite-la n&#x27;a pas ete coupee par abattage.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בָּעֵינַן רֻובָּא בִּשְׁחִיטָה</b> כְּלוֹמַר הַהוּא רֻובָּא דְּמַפִּיק חַיּוּתָא בֵּיהּ בָּעֵינַן בִּשְׁחִיטָה:</div>
+          <div class="glose-fr">Nous exigeons la majorite par abattage — c&#x27;est-a-dire : cette majorite-la qui fait sortir la vie, nous l&#x27;exigeons par abattage.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Cas inverse <b>H-S-S</b> : on a d'abord <b>devie</b> (hagrama) le premier tiers — hors du lieu d'abattage —, puis <b>abattu</b> correctement les deux tiers suivants. La : <b>invalide pour tous</b>. Pourquoi ? Parce que la <b>vie sort</b> de la bete (nafka hiyouta) au moment ou la <b>majorite</b> de la trachee est coupee — donc des le franchissement du seuil de la majorite —, et a ce moment-la, on exige que cette majorite ait ete coupee <b>par un abattage valide</b> (rouba bi-chehita) ; or le premier tiers, devie, n'en faisait pas partie.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רַב חִסְדָּא: אַדְּרַבָּה, לֵימָא מַר אִיפְּכָא: מַחֲלֹוקֶת כְּשֶׁהַגָּרִים שְׁלִישׁ, וְשָׁחַט שְׁנֵי שְׁלִישׁ, דְּרַבִּי יוֹסֵי בְּרַבִּי יְהוּדָה סָבַר מִידֵּי דְּהָוֵה אַחֲצִי קָנֶה פָּגוּם.</div>
+            <div class="fr"><p>Rav Hisda lui dit : au contraire, que le Maitre dise l&#x27;inverse ! La divergence [porte sur le cas] ou il a devie un tiers puis abattu deux tiers ; car Rabbi Yossi fils de Rabbi Yehouda tient [que c&#x27;est valide], a l&#x27;instar de ce qu&#x27;il en est pour la demi-trachee defectueuse (hatsi kaneh pagoum).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִידֵּי דְּהָוֵה אַחֲצִי קָנֶה פָּגוּם</b> דְּאָמַר לְקַמָּן (חֻולִּין דַּף כט.) הֲרֵי שֶׁהָיָה חֲצִי קָנֶה פָּגוּם מֵאֵלָיו וְהוֹסִיף עָלָיו כָּל שֶׁהוּא וּגְמָרוֹ שְׁחִיטָתוֹ כְּשֵׁרָה ואע&quot;ג דְּכִי נָפְקָא חַיּוּתָא לָאו רֻובָּא בִּשְׁחִיטָה. וְהַאי הַגְרָמָה דְּמִיעוּטָא נָמֵי כִּפְגִימָה בְּעָלְמָא הוּא וְכִי מוֹסִיף עָלֶיהָ וְשָׁחַט רֻובָּא לָא מִיפַּסְלָא וּמִיהוּ הָכָא בְּתוֹסֶפֶת כָּל שָׁהוּ לָא סַגִּי לֵיהּ דְּלָא מִצְטַרְפָא הַגְרָמָה לְאַכְשׁוֹרֵי לִשְׁחִיטָה הוֹאִיל וְלָאו מְקוֹם שְׁחִיטָה הוּא:</div>
+          <div class="glose-fr">A l&#x27;instar de ce qu&#x27;il en est pour la demi-trachee defectueuse — comme [le texte] le dit plus loin (Houlin 29a) : &#x27;celui dont la demi-trachee etait defectueuse d&#x27;elle-meme, et qui y a ajoute si peu que ce soit et acheve [ainsi] son abattage — [c&#x27;est] valide&#x27;, bien qu&#x27;au moment ou la vie sort, [la] majorite [ne soit] pas [coupee] par abattage. Et cette deviation (hagrama) d&#x27;une minorite [est] aussi comme une simple defectuosite (pegima) : lorsqu&#x27;il y ajoute et abat la majorite, [cela] n&#x27;est pas invalide. Toutefois, ici, un ajout de si peu que ce soit ne lui suffit pas, car la deviation ne se joint pas pour rendre l&#x27;abattage valide, puisqu&#x27;elle [n&#x27;est] pas [au] lieu d&#x27;abattage.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Hisda <b>inverse</b> la lecture de Rav Houna. Pour lui, la <b>mahloket</b> porte sur <b>H-S-S</b> (deviation du premier tiers, puis abattage des deux tiers). R. Yossi b. R. Yehouda la <b>valide</b>, par analogie avec la <b>demi-trachee defectueuse</b> (hatsi kaneh pagoum) : si la moitie de la trachee est deja fendue d'elle-meme, il suffit d'ajouter la moindre coupe valide pour parfaire l'abattage — la coupe qui fait passer la majorite ayant ete faite proprement. De meme ici : le second tiers est coupe proprement.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַבָּנָן, הָתָם מְקוֹם שְׁחִיטָה, הָכָא לָאו מְקוֹם שְׁחִיטָה.</div>
+            <div class="fr"><p>Et les Rabbanan [tiennent] : la-bas, [c&#x27;est le] lieu d&#x27;abattage ; ici, [ce n&#x27;]est pas [le] lieu d&#x27;abattage.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְרַבָּנָן הָתָם</b> הַהוּא פְּגָם בִּמְקוֹם שְׁחִיטָה הוּא וְכֵיוָן דְּאֵין טְרֵפוֹת בַּקָּנֶה עַד שֶׁתִּפָּסֵק רֻובָּא כִּדְאָמְרִינַן בְּאֵלּוּ טְרֵפוֹת (לְקַמָּן חֻולִּין דַּף מד.) הָוְייָן לָהּ כְּמִי שֶׁלֹּא נִפְגְּמָה ואע&quot;ג דְּכִי נָפְקָא לֵיהּ חַיּוּתָא לָאו כּוּלֵּיהּ רֻובָּא בִּשְׁחִיטָה נְפַק מִיהוּ בִּמְקוֹם שְׁחִיטָה מִיהָא נָפְקָא כּוּלֵּיהּ חַיּוּתָא אֲבָל הַגְרָמָה לָאו שְׁחִיטָה הוּא וְלָאו מְקוֹם שְׁחִיטָה הוּא וְכִי נָפְקָא חַיּוּתָא בְּרוֹב הָרִאשׁוֹן שֶׁל סִימָן בִּפְסוּלָא נְפַק דִּשְׁלָא בִּמְקוֹם שְׁחִיטָה הֲוַאי פַּלְגָא דְּמִיפָּק חַיּוּתָא:</div>
+          <div class="glose-fr">Et les Rabbanan [tiennent] : la-bas — cette defectuosite[-la est] au lieu d&#x27;abattage ; et puisqu&#x27;il n&#x27;y a pas de tereifout dans la trachee tant que sa majorite n&#x27;est pas tranchee — comme nous [le] disons dans [le chapitre] Elou Tereifot (plus loin, Houlin 44a) —, elle est comme [une trachee] qui n&#x27;aurait pas ete defectueuse ; et bien qu&#x27;au moment ou la vie lui sort, ce ne [soit] pas toute sa majorite [qui] sort par abattage, neanmoins toute la vie sort au lieu d&#x27;abattage. Mais la deviation n&#x27;est pas un abattage et n&#x27;est pas [au] lieu d&#x27;abattage ; et lorsque la vie sort par la premiere majorite du siman, elle sort dans l&#x27;invalidite (be-pesoula), car la moitie [par laquelle] la vie sort etait hors du lieu d&#x27;abattage.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse des <b>Rabbanan</b> a l'analogie de R. Yossi : le cas de la demi-trachee defectueuse est <b>different</b>. La-bas, la defectuosite se trouve <b>au lieu d'abattage</b> (mekom chehita) — l'essentiel de la vie sort donc au bon endroit. <b>Ici</b> (H-S-S), le premier tiers a ete coupe par <b>deviation</b>, hors du lieu d'abattage — la majorite de la vie ne sort donc <b>pas</b> au lieu propre. L'analogie ne tient pas, et le cas reste invalide pour eux.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲבָל שָׁחַט שְׁנֵי שְׁלִישׁ, וְהִגְרִים שְׁלִישׁ – דִּבְרֵי הַכֹּל כְּשֵׁרָה, דְּהָא תְּנַן: רֻובּוֹ שֶׁל אֶחָד כָּמוֹהוּ.</div>
+            <div class="fr"><p>Mais [s&#x27;]il a abattu deux tiers puis devie un tiers — de l&#x27;avis de tous, [c&#x27;est] valide ; car nous avons appris [dans la michna] : la majorite de l&#x27;un [des simanim vaut] comme lui (rouvo chel ehad ke-moto).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּהָא תְּנַן</b> בְּפֶ&#x27; ב&#x27; (לְקַמָּן חוֹלִין דַּף כז.):</div>
+          <div class="glose-fr">Car nous avons appris — au chapitre 2 (plus loin, Houlin 27a).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>רֻובּוֹ שֶׁל אֶחָד כָּמוֹהוּ</b> וְאִם לֹא שָׁחַט אֶלָּא רֹוב הַסִּימָן וְהָלַךְ לוֹ כְּשֵׁרָה אַלְמָא רֻובָּא כְּכֻולָּהּ. וּלְעִנְיַן הַגְרָמָה נָמֵי הָא אִתַּכְשַׁר בְּרֻובּוֹ וּמַתְנִי&#x27; דְּקָתָנֵי מְלֹא הַחוּט עַל פְּנֵי כֻּולָּהּ לִמְעוּטֵי הַגֵּרִים שְׁלִישׁ תְּחִלָּה קָאָתֵי וְלָא לִמְעוּטֵי הֵיכָא דְּהַגָּרְמָה בַּסּוֹף:</div>
+          <div class="glose-fr">La majorite de l&#x27;un [vaut] comme lui — et si l&#x27;on n&#x27;a abattu que la majorite du siman et qu&#x27;on s&#x27;en est alle, [c&#x27;est] valide : donc la majorite [vaut] comme la totalite. Et quant a la deviation aussi, [la bete] a deja ete rendue valide par sa majorite ; et la michna qui enseigne &#x27;le plein d&#x27;un fil sur toute [sa surface]&#x27; vient exclure [le cas] ou il a devie le premier tiers, et non [le cas] ou la deviation [intervient] a la fin.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Cas <b>S-S-H</b> selon Rav Hisda : abattage correct des deux tiers, puis deviation du dernier tiers. La : <b>valide pour tous</b>. Preuve, par la michna (27a) : '<b>la majorite de l'un [des simanim vaut] comme lui</b>' (rouvo chel ehad ke-moto) — si l'on n'a coupe que la majorite du siman et qu'on s'est arrete, c'est valide ; la majorite vaut donc le tout. La deviation du dernier tiers ne nuit pas, l'abattage etant deja parfait par la majorite.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רַב יוֹסֵף: מַאן נֵימָא לַן דְּהָהוּא רֻובָּא דְּהָתָם לָאו רַבִּי יוֹסֵי בְּרַבִּי יְהוּדָה קָתָנֵי לַהּ? דִּלְמָא רַבִּי יוֹסֵי בְּרַבִּי יְהוּדָה קָתָנֵי לַהּ!</div>
+            <div class="fr"><p>Rav Yossef lui dit : qui [nous] dira [que] cette [regle de] majorite de la-bas (rouva de-hatam), Rabbi Yossi fils de Rabbi Yehouda ne l&#x27;a pas enseignee ? Peut-etre [est-ce] Rabbi Yossi fils de Rabbi Yehouda [qui] l&#x27;a enseignee [et les Rabbanan divergent] !</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דִּילְמָא רַבִּי יוֹסֵי בְּרַבִּי יְהוּדָה הִיא</b> תֵּימַהּ דְּלָא מְשַׁנֵּי רֻובּוֹ שֶׁל אֶחָד הַיְינוּ ווֵשֶׁט וּמַאי אֶחָד מְיֻוחָד שֶׁבַּסִּימָנִים כְּרַב אַדָּא בַּר אַהֲבָה דִּלְקַמָּן בפ&quot;ב (חֻולִּין דַּף כֹּח.) וְשֶׁמָּא רַבָּנַן דְּרַבִּי יוֹסֵי בְּרַבִּי יְהוּדָה פְּלִיגִי בַּוֶּושֶׁט כְּמוֹ בְּקָנֶה:</div>
+          <div class="glose-fr">Peut-etre [est-ce] Rabbi Yossi fils de Rabbi Yehouda [qui l&#x27;enseigne] — c&#x27;est etonnant qu&#x27;[on] ne reponde pas [que] &#x27;la majorite de l&#x27;un&#x27;, c&#x27;est le veshet (oesophage), et que &#x27;l&#x27;un&#x27; [signifie] &#x27;le distingue (le plus particulier) des simanim&#x27;, selon Rav Ada bar Ahava plus loin au chapitre 2 (Houlin 28a) ! Et peut-etre [faut-il dire] que les Rabbanan [opposants] de R. Yossi b. R. Yehouda divergent au sujet du veshet comme [ils divergent] au sujet de la trachee (kaneh).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Yossef objecte a Rav Hisda. Ce dernier s'appuyait sur la michna 'la majorite de l'un vaut comme lui' comme sur une regle <b>admise de tous</b>. Mais qui dit que cette regle (rouva de-hatam) n'a pas ete enseignee precisement par <b>R. Yossi b. R. Yehouda</b> — auquel cas les <b>Rabbanan la contesteraient</b>, et l'on ne pourrait plus s'en servir comme d'un point d'accord ?</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר לֵיהּ אַבַּיֵּי: אַטּוּ כֹּל רֻובֵּי דְּעָלְמָא רַבִּי יוֹסֵי בְּרַבִּי יְהוּדָה קָתָנֵי לְהוּ? אֲמַר לֵיהּ: אֲנָא רֻובָּא דִּשְׁחִיטָה קָאָמֵינָא, דְּשָׁמַעְנָא לְהוּ דִּפְלִיגִי.</div>
+            <div class="fr"><p>Abaye lui dit : est-ce a dire que toutes les [regles de] majorite du monde, [c&#x27;est] Rabbi Yossi fils de Rabbi Yehouda [qui] les a enseignees ? Il lui dit : moi, [c&#x27;est] de la majorite de l&#x27;abattage (rouba di-chehita) que je parle, car nous [les] avons entendus diverger [a son sujet].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲנָא רֻובָּא דִּשְׁחִיטָה קָאָמֵינָא</b> כָּל תַּנָּא דְּאָזֵיל בִּשְׁחִיטָה בָּתַר רֻובָּא קָאָמֵינָא דְּרַבִּי יוֹסֵי בְּרַבִּי יְהוּדָה הִיא וְלָאו רַבָּנָן דְּהָא שָׁמְעִינַן לְהוּ דִּפְלִיגִי בָּהּ וְאָמְרִי דְּלָא אָזְלִינַן בִּשְׁחִיטָה בָּתַר רֻובָּא:</div>
+          <div class="glose-fr">Moi, [c&#x27;est] de la majorite de l&#x27;abattage que je parle — tout Tana qui, en matiere d&#x27;abattage, va d&#x27;apres la majorite, [c&#x27;est] de lui que je dis [que c&#x27;est] Rabbi Yossi fils de Rabbi Yehouda et non les Rabbanan ; car nous les avons entendus diverger a ce sujet et dire [qu&#x27;]en matiere d&#x27;abattage nous n&#x27;allons pas d&#x27;apres la majorite.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Abaye renforce l'objection de maniere ironique : faut-il attribuer a R. Yossi b. R. Yehouda <b>toutes</b> les regles de majorite enoncees dans le Talmud ? Rav Yossef precise : non — il parle specifiquement de la <b>majorite en matiere d'abattage</b> (rouba di-chehita) ; or sur ce point precis on <b>sait</b> que les Rabbanan <b>divergent</b> de lui (ils n'admettent pas qu'on suive la majorite dans l'abattage). On ne peut donc invoquer 'la majorite vaut le tout' comme un acquis commun.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לִישָּׁנָא אַחְרִינָא אָמְרִי לָהּ, אָמַר רַב הוּנָא אָמַר רַב אַסִּי: מַחְלֹוקֶת שֶׁהִגְרִים שְׁלִישׁ וְשָׁחַט שְׁנֵי שְׁלִישׁ, דְּרַבִּי יוֹסֵי בַּר רַבִּי יְהוּדָה סָבַר: מִידֵּי דְּהָוֵה אַחֲצִי קָנֶה פָּגוּם, וְרַבָּנָן – הָתָם מְקוֹם שְׁחִיטָה, הָכָא לָאו מְקוֹם שְׁחִיטָה.</div>
+            <div class="fr"><p>Une autre version (lichna aharina), certains [la] rapportent [ainsi] : Rav Houna a dit au nom de Rav Assi : la divergence [porte sur le cas] ou il a devie un tiers puis abattu deux tiers ; car Rabbi Yossi bar Rabbi Yehouda tient [que c&#x27;est valide], a l&#x27;instar de ce qu&#x27;il en est pour la demi-trachee defectueuse ; et les Rabbanan [tiennent] : la-bas, [c&#x27;est le] lieu d&#x27;abattage ; ici, [ce n&#x27;]est pas [le] lieu d&#x27;abattage.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Seconde version (lichna aharina) de tout l'echange. Ici, c'est <b>Rav Houna a/n de Rav Assi</b> lui-meme qui adopte la lecture que Rav Hisda proposait dans la premiere version : la <b>mahloket porte sur H-S-S</b>. R. Yossi b. R. Yehouda valide (analogie de la <b>demi-trachee defectueuse</b>), les Rabbanan invalident (la-bas c'est le lieu d'abattage, ici la deviation ne l'est pas). Le contenu est identique ; seule l'attribution change.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲבָל שָׁחַט שְׁנֵי שְׁלִישׁ, וְהִגְרִים שְׁלִישׁ – דִּבְרֵי הַכֹּל כְּשֵׁרָה, דְּהָא תְּנַן: רֻובּוֹ שֶׁל אֶחָד כָּמוֹהוּ.</div>
+            <div class="fr"><p>Mais [s&#x27;]il a abattu deux tiers puis devie un tiers — de l&#x27;avis de tous, [c&#x27;est] valide ; car nous avons appris : la majorite de l&#x27;un [vaut] comme lui.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Suite de la seconde version : le cas <b>S-S-H</b> (abattage des deux tiers puis deviation du dernier) est <b>valide pour tous</b>, en vertu de la michna 'la majorite de l'un vaut comme lui' (rouvo chel ehad ke-moto) — l'abattage etant deja acheve a la majorite.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg16">
+          <div class="seg-num">17</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַתְקִיף לַהּ רַב חִסְדָּא: מַאן לֵימָא לַן דְּהָהוּא רֻובָּא דְּהָתָם לָאו רַבִּי יוֹסֵי בְּרַבִּי יְהוּדָה קָתָנֵי לַהּ? דִּלְמָא רַבִּי יוֹסֵי בְּרַבִּי יְהוּדָה קָתָנֵי לַהּ! אֲמַר לֵיהּ רַב יוֹסֵף: אַטּוּ כֹּל רֻובֵּי דְּעָלְמָא רַבִּי יוֹסֵי בְּרַבִּי יְהוּדָה קָתָנֵי לְהוּ? אֲמַר לֵיהּ: אֲנָא רֻובָּא דִּשְׁחִיטָה קָאָמֵינָא, דְּשָׁמַעְנָא לְהוּ דִּפְלִיגִי.</div>
+            <div class="fr"><p>Rav Hisda lui oppose [une difficulte] : qui [nous] dira [que] cette [regle de] majorite de la-bas, Rabbi Yossi fils de Rabbi Yehouda ne l&#x27;a pas enseignee ? Peut-etre [est-ce] Rabbi Yossi fils de Rabbi Yehouda [qui] l&#x27;a enseignee !</p><p>Rav Yossef lui dit : est-ce a dire que toutes les [regles de] majorite du monde, [c&#x27;est] Rabbi Yossi fils de Rabbi Yehouda [qui] les a enseignees ? Il lui dit : moi, [c&#x27;est] de la majorite de l&#x27;abattage que je parle, car nous [les] avons entendus diverger [a son sujet].</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Dans cette seconde version, les roles sont <b>inverses</b> par rapport aux segments 12-13 : c'est <b>Rav Hisda</b> qui souleve l'objection (la regle 'la majorite vaut le tout' pourrait etre celle de R. Yossi seul), et c'est <b>Rav Yossef</b> qui repond (faut-il lui attribuer toutes les majorites ?), puis Rav Hisda qui precise : il parle de la <b>majorite en matiere d'abattage</b>, sur laquelle on sait que les Rabbanan divergent.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg17">
+          <div class="seg-num">18</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הַגֵּרִים שְׁלִישׁ, וְשָׁחַט שְׁלִישׁ, וְהִגְרִים שְׁלִישׁ – רַב הוּנָא אָמַר רַב: כְּשֵׁרָה, רַב יְהוּדָה אָמַר רַב: טְרֵפָה. רַב הוּנָא אָמַר רַב: כְּשֵׁרָה – כִּי נָפְקָא חִיּוּתָא בִּשְׁחִיטָה קָא נָפְקָא. רַב יְהוּדָה אָמַר רַב: טְרֵפָה – בָּעֵינַן רֻובָּא בִּשְׁחִיטָה וְלֵיכָּא.</div>
+            <div class="fr"><p>[S&#x27;]il a devie un tiers, abattu un tiers, [puis] devie un tiers — Rav Houna a dit au nom de Rav : valide ; Rav Yehouda a dit au nom de Rav : tereifa. Rav Houna a dit au nom de Rav : valide — [car] lorsque la vie sort, [c&#x27;est] par abattage qu&#x27;elle sort.</p><p>Rav Yehouda a dit au nom de Rav : tereifa — [car] nous exigeons la majorite par abattage, et [il n&#x27;y en] a pas.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִיפָּק חַיּוּתָא</b> שְׁלִישׁ אֶמְצָעִי בְּרוֹב סִימָן הוּא:</div>
+          <div class="glose-fr">La sortie de la vie — [se fait par] le tiers median, qui [constitue] la majorite du siman.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ה&quot;ג רַב יְהוּדָה אָמַר רַב טְרֵפָה בָּעֵינַן רֻובָּא בִּשְׁחִיטָה וְלָא גָּרְסִינַן כִּי נָפְקָא חִיּוּתָא בָּעֵינַן רֻובָּא בִּשְׁחִיטָה</b> דְּהָא רַב יְהוּדָה לָאו בְּמִיפָּק חַיּוּתָא תָּלֵי טַעְמָא דְּקָאָמַר בְּסֵיפָא שָׁחַט שְׁלִישׁ וְהִגְרִים שְׁלִישׁ וְשָׁחַט שְׁלִישׁ כְּשֵׁרָה הוֹאִיל וְרֻובָּא בִּשְׁחִיטָה וְאַף עַל גַּב דְּרֻובָּא קַמָּא דְּהוּא מִיפָּק חַיּוּתָא לָאו בִּשְׁחִיטָה הוּא:</div>
+          <div class="glose-fr">Ainsi faut-il lire : &#x27;Rav Yehouda a dit au nom de Rav : tereifa, [car] nous exigeons la majorite par abattage&#x27;, et l&#x27;on ne lit pas &#x27;lorsque la vie sort, nous exigeons la majorite par abattage&#x27; — car Rav Yehouda ne fonde pas son motif sur la sortie de la vie ; en effet il dit, dans la clause suivante, [que si] il a abattu un tiers, devie un tiers, [puis] abattu un tiers, [c&#x27;est] valide, puisque la majorite [est] par abattage, et ce, bien que la premiere majorite, qui fait sortir la vie, ne [soit] pas [coupee] par abattage.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הִגְרִים שְׁלִישׁ וְשָׁחַט שְׁלִישׁ כו&#x27; רַב הוּנָא אָמַר רַב כְּשֵׁרָה</b> וְהָא דִּפְסִיל רַב הוּנָא לְעֵיל הִגְרִים שְׁלִישׁ וְשָׁחַט שְׁנֵי שְׁלִישׁ הָתָם מִשְּׁמֵיהּ דְּרַב אַסִּי וְהָכָא מִשְּׁמֵיהּ דְּרַב:</div>
+          <div class="glose-fr">[S&#x27;]il a devie un tiers, abattu un tiers etc. — Rav Houna a dit au nom de Rav : valide ; et le fait que, plus haut, Rav Houna invalide [le cas ou] &#x27;il a devie un tiers et abattu deux tiers&#x27; — la-bas [c&#x27;est] au nom de Rav Assi, et ici [c&#x27;est] au nom de Rav.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouveau cas : <b>H-S-H</b> (deviation du 1er tiers, abattage du 2e, deviation du 3e). Deux traditions au nom de Rav s'opposent (voir le schema). <b>Rav Houna a/n de Rav : valide</b> — car le <b>2e tiers</b>, celui qui fait franchir la majorite et par lequel <b>la vie sort</b>, a ete coupe par <b>abattage</b>. <b>Rav Yehouda a/n de Rav : tereifa</b> — car on exige que <b>toute la majorite</b> (deux tiers) soit coupee par abattage, ce qui n'est pas le cas ici (un seul tiers l'est).</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="340" fill="#fffdf8"/>
+  <text x="360" y="22" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Les combinaisons de tiers : deviation (hagrama) et abattage (chehita)</text>
+  <text x="360" y="40" text-anchor="middle" font-size="10" fill="#78716c">H = tiers devie hors anneau (hagrama) ; S = tiers coupe au bon endroit (chehita). La vie sort a la majorite (2e tiers).</text>
+  <!-- header -->
+  <text x="30" y="72" font-size="11" font-weight="700" fill="#1c1917">cas (ordre 1er-2e-3e tiers)</text>
+  <text x="470" y="72" font-size="11" font-weight="700" fill="#1c1917">statut</text>
+  <line x1="24" y1="80" x2="696" y2="80" stroke="#e7e2d8"/>
+  <!-- ligne 1 : S S H -->
+  <rect x="30" y="92" width="44" height="30" rx="5" fill="#eafaf1" stroke="#15803d"/><text x="52" y="112" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">S</text>
+  <rect x="80" y="92" width="44" height="30" rx="5" fill="#eafaf1" stroke="#15803d"/><text x="102" y="112" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">S</text>
+  <rect x="130" y="92" width="44" height="30" rx="5" fill="#fdeaea" stroke="#b91c1c"/><text x="152" y="112" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">H</text>
+  <text x="220" y="105" font-size="10.5" fill="#78716c">majorite (2 tiers) deja coupee par abattage</text>
+  <rect x="455" y="92" width="240" height="30" rx="6" fill="#eafaf1" stroke="#15803d"/>
+  <text x="575" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#15803d">VALIDE pour tous</text>
+  <!-- ligne 2 : H S S -->
+  <rect x="30" y="134" width="44" height="30" rx="5" fill="#fdeaea" stroke="#b91c1c"/><text x="52" y="154" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">H</text>
+  <rect x="80" y="134" width="44" height="30" rx="5" fill="#eafaf1" stroke="#15803d"/><text x="102" y="154" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">S</text>
+  <rect x="130" y="134" width="44" height="30" rx="5" fill="#eafaf1" stroke="#15803d"/><text x="152" y="154" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">S</text>
+  <text x="220" y="147" font-size="10.5" fill="#78716c">la vie sort sur le 2e tiers, mais le 1er n'est pas au bon endroit</text>
+  <rect x="455" y="134" width="240" height="30" rx="6" fill="#fdeaea" stroke="#b91c1c"/>
+  <text x="575" y="154" text-anchor="middle" font-size="11" font-weight="700" fill="#b91c1c">INVALIDE pour tous</text>
+  <!-- ligne 3 mahloket : la-1 vs la-2 -->
+  <rect x="30" y="176" width="44" height="30" rx="5" fill="#fdeaea" stroke="#b91c1c"/><text x="52" y="196" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">H</text>
+  <rect x="80" y="176" width="44" height="30" rx="5" fill="#eafaf1" stroke="#15803d"/><text x="102" y="196" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">S</text>
+  <rect x="130" y="176" width="44" height="30" rx="5" fill="#eafaf1" stroke="#15803d"/><text x="152" y="196" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">S</text>
+  <text x="220" y="189" font-size="10.5" fill="#78716c">(2e version de Rav Houna/Rav Assi)</text>
+  <rect x="455" y="176" width="240" height="30" rx="6" fill="#fff7ed" stroke="#b45309"/>
+  <text x="575" y="196" text-anchor="middle" font-size="10.5" font-weight="700" fill="#b45309">MAHLOKET : R. Yossi valide / Rabbanan non</text>
+  <line x1="24" y1="220" x2="696" y2="220" stroke="#e7e2d8"/>
+  <!-- ligne 4 : H S H -->
+  <rect x="30" y="232" width="44" height="30" rx="5" fill="#fdeaea" stroke="#b91c1c"/><text x="52" y="252" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">H</text>
+  <rect x="80" y="232" width="44" height="30" rx="5" fill="#eafaf1" stroke="#15803d"/><text x="102" y="252" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">S</text>
+  <rect x="130" y="232" width="44" height="30" rx="5" fill="#fdeaea" stroke="#b91c1c"/><text x="152" y="252" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">H</text>
+  <text x="220" y="245" font-size="10.5" fill="#78716c">la vie sort sur le 2e tiers, coupe par abattage</text>
+  <rect x="455" y="232" width="240" height="30" rx="6" fill="#fff7ed" stroke="#b45309"/>
+  <text x="575" y="252" text-anchor="middle" font-size="10.5" font-weight="700" fill="#b45309">Rav Houna a/n de Rav : VALIDE ; Rav Yehouda : tereifa</text>
+  <!-- ligne 5 : S H S -->
+  <rect x="30" y="274" width="44" height="30" rx="5" fill="#eafaf1" stroke="#15803d"/><text x="52" y="294" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">S</text>
+  <rect x="80" y="274" width="44" height="30" rx="5" fill="#fdeaea" stroke="#b91c1c"/><text x="102" y="294" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">H</text>
+  <rect x="130" y="274" width="44" height="30" rx="5" fill="#eafaf1" stroke="#15803d"/><text x="152" y="294" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">S</text>
+  <text x="220" y="287" font-size="10.5" fill="#78716c">la vie sort sur le 2e tiers, devie hors de l'anneau</text>
+  <rect x="455" y="274" width="240" height="30" rx="6" fill="#fff7ed" stroke="#b45309"/>
+  <text x="575" y="294" text-anchor="middle" font-size="10" font-weight="700" fill="#b45309">Rav Yehouda a/n de Rav : VALIDE ; Rav Houna : tereifa</text>
+  <text x="360" y="324" text-anchor="middle" font-size="9.5" fill="#78716c">point cle : a la sortie de la vie (yetsiat hiyouta), exige-t-on la majorite par abattage, ou suffit-il que la majorite finale le soit ?</text>
+</svg></div><div class="svg-cap">Recapitulatif des cas de tiers : H-S-H et S-H-S opposent Rav Houna et Rav Yehouda au nom de Rav.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg18">
+          <div class="seg-num">19</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">שָׁחַט שְׁלִישׁ, וְהִגְרִים שְׁלִישׁ, וְשָׁחַט שְׁלִישׁ – רַב יְהוּדָה אָמַר רַב: כְּשֵׁרָה. אֲתוֹ שַׁיְילוּהּ לְרַב הוּנָא, אֲמַר לְהוּ: טְרֵפָה. שְׁמַע רַב יְהוּדָה אִיקְּפַד, אֲמַר: טָרֵיפְנָא (וּמַכְשַׁר) [מַכְשַׁר], (וּמַכְשַׁרְנָא) [מַכְשַׁרְנָא] טָרֵיף! אָמַר רַב הוּנָא: שַׁפִּיר קָא מִיקְפָּד, חֲדָא – אִיהוּ שְׁמִיעַ לֵיהּ מִינֵּיהּ דְּרַב, וַאֲנָא לָא שְׁמִיעַ לִי, וְעוֹד – הָאִיכָּא רֻובָּא בִּשְׁחִיטָה.</div>
+            <div class="fr"><p>[S&#x27;]il a abattu un tiers, devie un tiers, [puis] abattu un tiers — Rav Yehouda a dit au nom de Rav : valide. [Des Sages] vinrent interroger Rav Houna ; il leur dit : tereifa.</p><p>Rav Yehouda [l&#x27;]entendit [et] s&#x27;irrita ; il dit : [voila qu&#x27;]il declare tereifa [ce que] je declare valide, et [il declare] valide [ce que] je declare tereifa ! Rav Houna dit : c&#x27;est a bon droit qu&#x27;il s&#x27;irrite — pour une [raison], lui [l&#x27;]a entendu de Rav et moi je ne [l&#x27;]ai pas entendu [de lui] ; et de plus, ici [il y] a [pourtant] la majorite par abattage.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲתוֹ שַׁייְלוּהּ לְרַב הוּנָא אֲמַר לְהוּ טְרֵפָה</b> מִסְּבָרָא דְּנַפְשֵׁיהּ אֲמָרָהּ וְלָאו מִשְּׁמֵיהּ דְּרַב מִדְּלָא קָאָמַר לְהוּ הָכִי קָאָמַר רַב טְרֵפָה וְרַב יְהוּדָה אֲמָרָהּ מִשְּׁמֵיהּ דְּרַב:</div>
+          <div class="glose-fr">[Des Sages] vinrent interroger Rav Houna ; il leur dit : tereifa — il l&#x27;a dit de son propre raisonnement, et non au nom de Rav : [c&#x27;est ce qui ressort] de ce qu&#x27;il ne leur a pas dit &#x27;ainsi a dit Rav : tereifa&#x27; ; tandis que Rav Yehouda l&#x27;a dit au nom de Rav.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">גְּמָ&#x27; רַב וּשְׁמוּאֵל דְּאָמְרִי תַּרְווַיְהוּ הֲלָכָה כְּרַבִּי יוֹסֵי בְּר&#x27; יְהוּדָה דְּרֻובּוֹ כְּכוּלֵּי לְעִנְיַן הַגְרָמָה. וְאַף רַבִּי יוֹסֵי בְּר&#x27; יְהוּדָה לֹא אָמַר דְּרֹוב הַטַּבַּעַת כְּכֻולָּהּ אֶלָּא בְּטַבַּעַת הַגְּדוֹלָה הוֹאִיל וּמַקֶּפֶת אֶת כָּל הַקָּנֶה. אֲבָל שְׁאָר הַטַּבָּעוֹת שֶׁאֵינָן מַקִּיפוֹת אֶת כָּל הַקָּנֶה לָא הֲוָה רֹוב הַטַּבַּעַת כְּכֻולּוֹ וְאִם לֹא שָׁחַט אֶלָּא רֹוב הַטַּבַּעַת שְׁחִיטָתוֹ פְּסוּלָה דְּרֹוב הַקָּנֶה בָּעֵינַן וְרֹוב הַטַּבַּעַת לָא הָוְיָא רֹוב הַקָּנֶה וְלֵית הִלְכְתָא לָא כְּרַבָּנַן וְלָא כְּרַבִּי יוֹסֵי בְּר&#x27; יְהוּדָה דְּפָסְלִי שְׁחִיטָה לְמַעְלָה מִטַּבַּעַת הַגְּדוֹלָה. אֶלָּא כְּרַבִּי חֲנִינָא בֶּן אַנְטִיגְנוֹס דְּהֵעִיד עַל הַמֻּוגְרֶמֶת דְּרַבָּנָן וּדְרַבִּי יוֹסֵי בְּר&#x27; יְהוּדָה שֶׁהִיא כְּשֵׁירָה וְקַייְמָא לָן דְּכָל עֵדוּת הִלְכְתָא הִיא. וּמֻוגְרֶמֶת דְּר&#x27; חֲנִינָא בֶּן אַנְטִיגְנוֹס מְפָרְשִׁי אָמוֹרָאֵי רַב פָּפָּא מִשְּׁמֵיהּ דְּרַב אָמַר שִׁיֵּיר בְּחִיטֵּי הֶכְשֵׁירָהּ שָׁחַט בְּתוֹכוֹ וְשִׁייֵּר מֵהֶן מְעַט כְּלַפֵּי הָרֹאשׁ וְהַיְינוּ מִשִּׁיפּוּי כּוֹבַע וּלְמַטָּה וְכֵן אָמַר רַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי מִשִּׁיפּוּי כּוֹבַע וּלְמַטָּה כְּשֵׁירָה. אָמַר רַב הוּנָא מַחְלֹוקֶת כְּשֶׁהִגְרִים שְׁלִישׁ וְשָׁחַט שְׁנֵי שְׁלִישִׁים דְּרַבִּי יוֹסֵי בְּר&#x27; יְהוּדָה סָבַר מִידֵּי דְּהָוֵה אֶמְצָא חֲצִי קָנֶה פָּגוּם. וְרַבָּנָן סָבְרִי הָתָם מְקוֹם שְׁחִיטָה הָכָא לָאו מְקוֹם שְׁחִיטָה. אֲבָל שָׁחַט שְׁנֵי שְׁלִישִׁים וְהִגְרִים שְׁלִישׁ שְׁחִיטָתוֹ כְּשֵׁירָה. וְהִגְרִים שְׁלִישׁ וְשָׁחַט שְׁלִישׁ וְהִגְרִים שְׁלִישׁ רַב הוּנָא אָמַר רַב כְּשֵׁירָה. רַב יְהוּדָה אָמַר רַב טְרֵפָה. שָׁחַט שְׁלִישׁ וְהִגְרִים שְׁלִישׁ וְשָׁחַט שְׁלִישׁ רַב יְהוּדָה אָמַר רַב כְּשֵׁירָה. וּלְרַב הוּנָא דְּמַכְשִׁיר מִשְּׁמֵיהּ דְּרַב הִגְרִים שְׁלִישׁ וְשָׁחַט שְׁלִישׁ וְהִגְרִים שְׁלִישׁ מַטְרִיף הָכָא. וְרֹוב הַפּוֹסְקִים פָּסְקוּ הֲלָכָה כְּרַב יְהוּדָה. וְהַיְינוּ כְּלִישָּׁנָא בָּתְרָא דְּרַב הוּנָא דְּמַכְשִׁיר רַבִּי יוֹסֵי בְּר&#x27; יְהוּדָה בְּהַגֵּרִים שְׁלִישׁ וְשָׁחַט שְׁנֵי שְׁלִישִׁים וְכֵן רַב נַחְמָן סָבַר כְּרַב יְהוּדָה. אֲבָל רַשִׁ&quot;י פָּסַק לְקַמָּן בְּפֶרֶק הַשּׁוֹחֵט (חֻולִּין דַּף ל:) גַּבֵּי הֶחֱלִיד בְּמִיעוּט סִימָנִין מַהוּ וּפֵירֵשׁ רַשִׁ&quot;י לְאַחַר שֶׁשָּׁחַט רֹוב בְּהֶכְשֵׁר מִי אָמְרִינַן הַאי אִישְׁתְּחִיט שַׁפִּיר בְּרוֹב סִימָנִים אוֹ דִּילְמָא כֻּולָּהּ חַד שְׁחִיטָה הִיא וְהָא אִית בָּהּ חֲלָדָה. וּבְמִיעוּט קַמָּא פְּשִׁיטָא לָן דִּנְבֵילָה הֲוַאי. וְעָלְתָה בְּתֵיקוּ וְאָזְלִינַן לְחוּמְרָא. וְגַם הַגְרָמָה נָמֵי בֵּין שָׁחַט שְׁלִישׁ וְהִגְרִים שְׁלִישׁ וְשָׁחַט שְׁלִישׁ וּבֵין הִגְרִים שְׁלִישׁ וְשָׁחַט שְׁלִישׁ וְהִגְרִים שְׁלִישׁ וּבֵין שָׁחַט שְׁנֵי שְׁלִישִׁים וְהִגְרִים שְׁלִישׁ מְסַפְּקָא לָן דִּילְמָא סְבִירָא לָן כְּרַבָּנָן טָרוֹפָאֵי וְטָרְפִינַן בְּכָל חֲדָא מִינַּייְהוּ וְעָבְדִינַן לְחוּמְרָא ואע&quot;ג דְּשָׁנִינוּ לְעֵיל הַהִיא דְּשָׁחַט חֲצִי גַרְגֶּרֶת וְשָׁהָה בָּהּ וּגְמָרָהּ כְּשֵׁירָה וּמוּקֵי לָהּ בְּעוֹף וּמַכְשַׁר לָהּ מִמַּה נַפְשָׁךְ דְּאִי מֶחֱצָה עַל מֶחֱצָה כְּרֹוב הָא עָבֵד לֵהּ רֻובָּא. אַלְמָא מִכִּי עֲבַד רֻובָּא בְּכַשְׁרוּת לָא חָיְישִׁינַן לִפְסוּלָא דְּמִיעוּטָא. לָא סָמְכִינַן אַהַהִיא שִׁינּוּיָא דְּדִיחוּיָא הוּא דִּדְחִייָּה. וְטַעֲמָא הוּא מִשּׁוּם דְּמֶחֱצָה עַל מֶחֱצָה אֵינוֹ כְּרֹוב. וּבִשְׁחִיטָה קַמַּיְיתָא לָאו מִידֵּי קָעֲבִיד וְכִי שָׁהָה בְּפַלְגָא קָנֶה קַמָּא לָא אִיטְּרוּף אֲבָל בְּמִיעוּט בָּתְרָא בֵּין דְּקָנֶה בֵּין דְּוֶשֶׁט וּבְמִיעוּט קַמָּא דְּוֶשֶׁט מִיטְּרִיף. וְאַף בַּהֲלָכוֹת גְּדוֹלוֹת כָּתוּב וְהֵיכָא דְּשָׁהָה בְּמִיעוּט סִימָנִים בֵּין בַּתְּחִלָּה בֵּין בַּסּוֹף אָסוּר. דְּכֵיוָן דְּלָא אִיפְּשִׁיטָא לָן עָבְדִינַן לְחוּמְרָא. כָּל זֶה פֵּירֵשׁ רַשִׁ&quot;י זַ&quot;ל לְקַמָּן בְּפֶרֶק הַשּׁוֹחֵט. וְתֵימַהּ הוּא מַה סְפֵיקָא שַׁייָּךְ בְּשָׁחַט שְׁנֵי שְׁלִישִׁים וְהִגְרִים שְׁלִישׁ דְּאַף לְלִישָּׁנָא קַמָּא דְּרַב הוּנָא דְּמוֹקֵי פְּלֻוגְתַּייְהוּ כְּשֶׁשָּׁחַט שְׁנֵי שְׁלִישִׁים וְהִגְרִים שְׁלִישׁ הָא פָּסְקוּ רַב וּשְׁמוּאֵל כַּר&#x27; יוֹסֵי בְּר&#x27; יְהוּדָה וְלֵיכָּא מַאן דִּפְלִיג עֲלַיְיהוּ. וה&quot;ר יִצְחָק בְּרַבִּי מֵאִיר זַ&quot;ל חִלֵּק בֵּין הַגְרָמָה לַחֲלָדָה וּשְׁהִיָּיה דאע&quot;ג דְּעָלְתָה בְּתֵיקוּ בְּמִיעוּט בָּתְרָא בְּחֻלְדָּה וּשְׁהִייָּה מִכָּל מָקוֹם גַּבֵּי הַגְרָמָה פְּשִׁיטָא לָן דְּאָזְלִינַן בָּתַר רֻובָּא מִשּׁוּם דְּלָאו מְקוֹם שְׁחִיטָה הוּא וַהֲוָה לֵיהּ כְּאִילּוּ הוֹלִיךְ וְהֵבִיא שָׁחַט בָּרֶגֶל אַחַר שְׁחִיטָה. אֲבָל שָׁחַט בִּשְׁהִיָּיה אוֹ שֶׁדְּרָסָהּ בְּמִיעוּט בָּתְרָא כֵּיוָן דְּבִמְקוֹם שְׁחִיטָה הוּא אָזְלִינַן בָּהּ לְחוּמְרָא. וְכֵן נָמֵי אִם אַחַר שְׁחִיטַת הָרֹוב עָקַר הַמִּיעוּט כֵּיוָן דְּלָא הָוֵי כְּדֶרֶךְ שְׁחִיטָה כָּשֵׁר. וְכֵן מִסְתַּבֵּר. וְהָרַמְבַּ&quot;ם זַ&quot;ל כָּתַב בְּכֻולָּהּ לְהֶיתֵּירָא :</div>
+          <div class="glose-fr">Guemara. Rav et Chemouel, qui disent tous deux : la halakha (loi tranchee) [est] comme Rabbi Yossi fils de R. Yehouda, [pour qui] sa majorite [vaut] comme sa totalite (rouvo ke-koulo) en matiere de deviation (hagrama, le couteau devie hors du lieu propre d&#x27;abattage). Et meme Rabbi Yossi fils de R. Yehouda n&#x27;a dit que la majorite de l&#x27;anneau [vaut] comme sa totalite que pour le grand anneau (la tabaat gedola, le cartilage cricoide), puisqu&#x27;il entoure toute la trachee (kaneh). Mais les autres anneaux, qui n&#x27;entourent pas toute la trachee, la majorite de l&#x27;anneau n&#x27;[y vaut] pas comme sa totalite ; et s&#x27;il n&#x27;a abattu que la majorite de l&#x27;anneau, son abattage (chehita) [est] invalide (passoul), car nous exigeons la majorite de la trachee, et la majorite de l&#x27;anneau n&#x27;[equivaut] pas a la majorite de la trachee. Et la halakha n&#x27;[est] ni comme les Rabbanan ni comme Rabbi Yossi fils de R. Yehouda, qui invalident un abattage [fait] au-dessus du grand anneau. Mais [elle est] comme Rabbi Hanina ben Antigonos, qui a temoigne (heid) au sujet de la mougremet (l&#x27;abattage a couteau devie) des Rabbanan et de celle de Rabbi Yossi fils de R. Yehouda, qu&#x27;elle [est] valide (kachera) ; et nous tenons pour etabli que tout temoignage (edout) [equivaut a] une halakha [tranchee]. Et la mougremet de R. Hanina ben Antigonos, les Amoraim [l&#x27;]expliquent [ainsi] : Rav Pappa au nom de Rav a dit : [le cas de] &#x27;celui qui a laisse [une partie] dans les pointes (chiyer be-hitei)&#x27; [est] son [cas de] validite — [c&#x27;est] qu&#x27;il a abattu a l&#x27;interieur [du bonnet] et en a laisse un peu du cote de la tete ; et c&#x27;est cela &#x27;[a partir] de l&#x27;inclinaison du bonnet (chipouy kova) et vers le bas&#x27;. De meme a dit Rabbi Yehochoua ben Levi : a partir de l&#x27;inclinaison du bonnet et vers le bas, [c&#x27;est] valide. Rav Houna a dit : la divergence [porte sur le cas] ou il a devie (higrim) un tiers et abattu deux tiers ; car Rabbi Yossi fils de R. Yehouda tient : a l&#x27;instar de ce qu&#x27;il en est pour la demi-trachee defectueuse (hatsi kaneh pagoum). Et les Rabbanan tiennent : la-bas [c&#x27;est le] lieu d&#x27;abattage (mekom chehita), ici [ce n&#x27;est] pas [le] lieu d&#x27;abattage. Mais [s&#x27;]il a abattu deux tiers et devie un tiers, son abattage [est] valide. Et [s&#x27;]il a devie un tiers, abattu un tiers et devie un tiers — Rav Houna a dit au nom de Rav : valide ; Rav Yehouda a dit au nom de Rav : tereifa (bete rendue interdite par un defaut vital). [S&#x27;]il a abattu un tiers, devie un tiers et abattu un tiers — Rav Yehouda a dit au nom de Rav : valide ; et selon Rav Houna, qui declare valide au nom de Rav [le cas ou] il a devie un tiers, abattu un tiers et devie un tiers, ici [ce cas] il [le] declare tereifa. Et la majorite des decisionnaires (possekim) ont tranche la halakha comme Rav Yehouda. Et c&#x27;est [conforme] a la seconde version (lichna batra) de Rav Houna, [selon laquelle] Rabbi Yossi fils de R. Yehouda declare valide [le cas ou] il a devie un tiers et abattu deux tiers ; et de meme Rav Nahman tient comme Rav Yehouda. Mais Rachi a tranche plus loin, au chapitre Ha-choh&#x27;et (Houlin 30b), a propos de [la question] : celui qui a insinue [le couteau, halada] dans la minorite des simanim (organes a trancher : trachee et oesophage), qu&#x27;en [est-il] ? Et Rachi a explique : apres qu&#x27;il a abattu la majorite dans les regles (be-hekhcher), dit-on [que] celui-ci a ete valablement abattu par la majorite des simanim, ou bien [dit-on] que le tout [est] un seul [et meme] abattage, et [que] celui-ci comporte une halada (insinuation du couteau sous la peau ou entre les organes, l&#x27;un des cinq defauts d&#x27;abattage) ? Et pour la premiere minorite [ainsi coupee], il nous est evident (pechita) [que] c&#x27;est une nevela (charogne, bete non valablement abattue). Et [la question] s&#x27;est resolue en teikou (question laissee sans solution), et l&#x27;on va vers la severite (le-houmra). Et de meme aussi pour la deviation (hagrama) : que ce soit [le cas ou] il a abattu un tiers, devie un tiers et abattu un tiers, ou [le cas ou] il a devie un tiers, abattu un tiers et devie un tiers, ou [le cas ou] il a abattu deux tiers et devie un tiers — il nous est douteux (mesapeka lan) [que] peut-etre nous tenons comme les Rabbanan qui invalident [de tels abattages], et nous declarons tereifa dans chacun de ces [cas] et agissons par severite. Et bien que nous ayons resolu plus haut ce [cas] de celui qui a abattu la moitie de la trachee, s&#x27;y est interrompu (chaha) puis l&#x27;a acheve — [que c&#x27;est] valide, et [que le Talmud] l&#x27;etablit [comme parlant] de la volaille et la declare valide de toute maniere (mi-ma nafchakh) : car si [l&#x27;on tient que] moitie-moitie [equivaut] a la majorite, [alors] il en a bien fait la majorite [dans les regles] ; d&#x27;ou [il ressortirait que] des lors qu&#x27;il en a fait la majorite en validite, nous ne nous soucions pas de l&#x27;invalidite de la minorite [restante] — [neanmoins] nous ne nous appuyons pas sur cette resolution-la, car [ce n&#x27;etait] qu&#x27;une refutation (dih&#x27;ouya) [avancee] pour ecarter [la difficulte]. Et la raison [en] est que moitie-moitie n&#x27;[equivaut] pas a la majorite : par le premier abattage [de la moitie] il n&#x27;a rien fait [de valide], et lorsqu&#x27;il s&#x27;est interrompu a la moitie de la premiere trachee, elle n&#x27;est pas [devenue] tereifa ; mais pour la minorite finale — que ce soit celle de la trachee ou celle de l&#x27;oesophage (veshet) — et pour la premiere minorite de l&#x27;oesophage, [la bete] devient tereifa. Et de meme il est ecrit dans les Halakhot Guedolot : la ou il s&#x27;est interrompu (chaha) dans une minorite des simanim, que ce soit au debut ou a la fin, [c&#x27;est] interdit ; car puisque [la question] ne s&#x27;est pas resolue pour nous, nous agissons par severite. Tout ceci, Rachi de memoire benie l&#x27;a explique plus loin, au chapitre Ha-choh&#x27;et. Et c&#x27;est etonnant : quel doute peut-il y avoir dans [le cas ou] il a abattu deux tiers et devie un tiers ? Car meme selon la premiere version (lichna kama) de Rav Houna, qui etablit leur divergence [comme portant] sur [le cas ou] il a abattu deux tiers et devie un tiers, or [dans le cas inverse, deux tiers abattus puis un tiers devie] Rav et Chemouel ont tranche comme Rabbi Yossi fils de R. Yehouda et il n&#x27;y a personne qui diverge d&#x27;avec eux [sur ce cas-la]. Et notre maitre Rabbi Its&#x27;hak fils de Rabbi Meir, de memoire benie, a distingue entre la deviation (hagrama) d&#x27;une part, et la halada et la chehiya (interruption prolongee pendant l&#x27;abattage) d&#x27;autre part : bien que [la question] se soit resolue en teikou pour la minorite finale en matiere de halada et de chehiya, en tout cas, pour la deviation, il nous est evident que nous suivons la majorite, parce que [le lieu devie] n&#x27;[est] pas [le] lieu d&#x27;abattage et [que] c&#x27;est comme s&#x27;il avait mene [le couteau] en avant et [l&#x27;]avait ramene, [ou] avait abattu au pied [de la bete] apres l&#x27;abattage [regulier]. Mais [celui qui] a abattu avec chehiya, ou l&#x27;a pressee (derassa, appui brutal du couteau, autre defaut) dans la minorite finale — puisque c&#x27;est au lieu d&#x27;abattage, nous y allons par severite. Et de meme aussi, si apres l&#x27;abattage de la majorite il a arrache (akar) la minorite — puisque [cela] ne s&#x27;est pas fait a la maniere de l&#x27;abattage, [c&#x27;est] valide. Et ainsi cela est-il raisonnable (mistaber). Et le Rambam, de memoire benie, a ecrit, dans tous [ces cas], vers l&#x27;autorisation (le-heter, c&#x27;est-a-dire les declarant valides).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Dernier cas : <b>S-H-S</b> (abattage du 1er tiers, deviation du 2e, abattage du 3e). <b>Rav Yehouda a/n de Rav : valide</b> (deux tiers coupes par abattage = majorite). Mais Rav Houna, consulte, repond <b>tereifa</b> — selon son propre raisonnement, car ici le <b>tiers median</b> (par lequel la vie sort) est <b>devie</b>. Rav Yehouda <b>s'irrite</b> de la contradiction symetrique. Rav Houna reconnait la colere <b>fondee</b> : (1) Rav Yehouda tient la chose <b>directement de Rav</b>, pas lui ; (2) de fait, dans ce cas, <b>la majorite est bien coupee par abattage</b> (les deux tiers extremes), ce qui plaide pour la validite.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg19">
+          <div class="seg-num">20</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רַב חִסְדָּא: לֹא תֶּהְדַּר בָּךְ,</div>
+            <div class="fr"><p>Rav Hisda lui dit : ne te retracte pas,</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Hisda intervient pour soutenir Rav Houna : '<b>ne te retracte pas</b>' de ton avis [tereifa]. Le raisonnement par lequel Rav Hisda etaie cette position se poursuit au daf suivant (19b).</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Chullin_18b.html">&lsaquo; Chullin 18b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Chullin_19b.html">Chullin 19b &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

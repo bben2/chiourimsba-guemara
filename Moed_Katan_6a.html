@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moed Katan 6a — Lire les marques de chaux sur un champ, et sortir contre les kilayim a hol hamoed</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Moed Katan 6a — Lire les marques de chaux sur un champ, et sortir contre les kilayim a hol hamoed</h1>
+    <div class="ref">Moed_Katan 6a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Moed_Katan_5b.html">&lsaquo; Moed_Katan 5b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Moed_Katan_6b.html">Moed_Katan 6b &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> Le folio acheve la sougya du marquage des tombes ouverte en 5a. Il commence par une objection sur le champ marque ou poussent des arbres : peut-etre le labour n&#x27;a-t-il jamais atteint l&#x27;endroit de l&#x27;impurete.</p><p>Deux reponses la reglent. Rabbi Yehouda exige ensuite la presence d&#x27;un ancien ou d&#x27;un eleve des sages, ce qui donne a Abaye l&#x27;occasion d&#x27;une regle sur la responsabilite du lettre dans sa ville.</p><p>Viennent alors deux series de lecture du terrain : Rav Yehouda sur les pierres marquees a la chaux, avec une beraita contradictoire que Rav Papa resout, puis Rabbi Assi sur les limites marquees d&#x27;un champ. La seconde moitie du folio passe a la michna : on sort a hol hamoed contre les kilayim.</p><p>La guemara oppose la michna de Chekalim, qui fixe cette sortie au 15 adar, et rapporte deux resolutions. Elle demande enfin pourquoi hol hamoed precisement, et tire de la reponse que les ouvriers sont payes sur le prelevement de la chambre du Temple.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 452" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+ <rect x="0" y="0" width="760" height="452" fill="#ffffff"/>
+ <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1e293b">Lire des pierres marquees a la chaux trouvees dans un champ</text>
+
+ <rect x="250" y="40" width="260" height="36" rx="6" fill="#eef2ff" stroke="#6366f1"/>
+ <text x="380" y="63" text-anchor="middle" font-size="13" fill="#1e293b">Combien de pierres marquees ?</text>
+
+ <line x1="380" y1="76" x2="160" y2="118" stroke="#94a3b8" stroke-width="1.5"/>
+ <line x1="380" y1="76" x2="570" y2="118" stroke="#94a3b8" stroke-width="1.5"/>
+
+ <rect x="60" y="118" width="200" height="34" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
+ <text x="160" y="140" text-anchor="middle" font-size="13" fill="#1e293b">Une seule pierre</text>
+
+ <rect x="460" y="118" width="220" height="34" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
+ <text x="570" y="140" text-anchor="middle" font-size="13" fill="#1e293b">Deux pierres</text>
+
+ <line x1="160" y1="152" x2="160" y2="190" stroke="#94a3b8" stroke-width="1.5"/>
+ <rect x="52" y="190" width="216" height="52" rx="6" fill="#fee2e2" stroke="#dc2626"/>
+ <text x="160" y="210" text-anchor="middle" font-size="12.5" fill="#7f1d1d">Sous la pierre : impur</text>
+ <text x="160" y="230" text-anchor="middle" font-size="12.5" fill="#7f1d1d">Le reste du champ : pur</text>
+
+ <line x1="570" y1="152" x2="470" y2="190" stroke="#94a3b8" stroke-width="1.5"/>
+ <line x1="570" y1="152" x2="655" y2="190" stroke="#94a3b8" stroke-width="1.5"/>
+ <rect x="385" y="190" width="170" height="34" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
+ <text x="470" y="212" text-anchor="middle" font-size="12.5" fill="#1e293b">Chaux dans l intervalle</text>
+ <rect x="575" y="190" width="160" height="34" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
+ <text x="655" y="212" text-anchor="middle" font-size="12.5" fill="#1e293b">Pas de chaux</text>
+
+ <line x1="470" y1="224" x2="470" y2="256" stroke="#94a3b8" stroke-width="1.5"/>
+ <line x1="655" y1="224" x2="655" y2="256" stroke="#94a3b8" stroke-width="1.5"/>
+ <rect x="385" y="256" width="170" height="34" rx="6" fill="#fee2e2" stroke="#dc2626"/>
+ <text x="470" y="278" text-anchor="middle" font-size="12.5" fill="#7f1d1d">Intervalle impur</text>
+ <rect x="575" y="256" width="160" height="34" rx="6" fill="#dcfce7" stroke="#16a34a"/>
+ <text x="655" y="278" text-anchor="middle" font-size="12.5" fill="#14532d">Intervalle pur</text>
+
+ <text x="380" y="316" text-anchor="middle" font-size="12" fill="#64748b">Rav Yehouda ci-dessus. La beraita donne un autre critere :</text>
+ <rect x="40" y="326" width="680" height="40" rx="6" fill="#fef9c3" stroke="#ca8a04"/>
+ <text x="380" y="351" text-anchor="middle" font-size="12.5" fill="#713f12">Beraita : labour entre les deux pierres -&gt; intervalle pur ; pas de labour -&gt; intervalle impur</text>
+
+ <rect x="40" y="382" width="680" height="54" rx="6" fill="#e0f2fe" stroke="#0284c7"/>
+ <text x="380" y="403" text-anchor="middle" font-size="12.5" fill="#075985">Rav Papa : la beraita traite d une chaux versee sur le sommet des pierres et repandue autour.</text>
+ <text x="380" y="423" text-anchor="middle" font-size="12.5" fill="#075985">Labour -&gt; la chaux s est ecaillee, elle ne marque rien. Sans labour -&gt; elle a ete posee la pour marquer.</text>
+</svg></div>
+          <figcaption>Rav Yehouda, la beraita et Rav Papa : trois lectures du meme terrain marque.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 286" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+ <rect x="0" y="0" width="760" height="286" fill="#ffffff"/>
+ <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1e293b">Rabbi Assi : combien de limites du champ sont marquees ?</text>
+ <text x="380" y="44" text-anchor="middle" font-size="12" fill="#64748b">trait epais rouge = limite marquee a la chaux</text>
+
+ <rect x="48" y="64" width="130" height="130" fill="#dcfce7" stroke="#16a34a"/>
+ <line x1="48" y1="64" x2="178" y2="64" stroke="#dc2626" stroke-width="7"/>
+ <text x="113" y="214" text-anchor="middle" font-size="12.5" fill="#1e293b">Une limite</text>
+ <text x="113" y="232" text-anchor="middle" font-size="11.5" fill="#7f1d1d">la limite : impure</text>
+ <text x="113" y="250" text-anchor="middle" font-size="11.5" fill="#14532d">le champ : pur</text>
+
+ <rect x="235" y="64" width="130" height="130" fill="#dcfce7" stroke="#16a34a"/>
+ <line x1="235" y1="64" x2="365" y2="64" stroke="#dc2626" stroke-width="7"/>
+ <line x1="235" y1="64" x2="235" y2="194" stroke="#dc2626" stroke-width="7"/>
+ <text x="300" y="214" text-anchor="middle" font-size="12.5" fill="#1e293b">Deux limites</text>
+ <text x="300" y="232" text-anchor="middle" font-size="11.5" fill="#7f1d1d">les limites : impures</text>
+ <text x="300" y="250" text-anchor="middle" font-size="11.5" fill="#14532d">le champ : pur</text>
+
+ <rect x="422" y="64" width="130" height="130" fill="#dcfce7" stroke="#16a34a"/>
+ <line x1="422" y1="64" x2="552" y2="64" stroke="#dc2626" stroke-width="7"/>
+ <line x1="422" y1="64" x2="422" y2="194" stroke="#dc2626" stroke-width="7"/>
+ <line x1="552" y1="64" x2="552" y2="194" stroke="#dc2626" stroke-width="7"/>
+ <text x="487" y="214" text-anchor="middle" font-size="12.5" fill="#1e293b">Trois limites</text>
+ <text x="487" y="232" text-anchor="middle" font-size="11.5" fill="#7f1d1d">les limites : impures</text>
+ <text x="487" y="250" text-anchor="middle" font-size="11.5" fill="#14532d">le champ : pur</text>
+
+ <rect x="609" y="64" width="130" height="130" fill="#fee2e2" stroke="#dc2626"/>
+ <line x1="609" y1="64" x2="739" y2="64" stroke="#16a34a" stroke-width="7"/>
+ <line x1="609" y1="194" x2="739" y2="194" stroke="#16a34a" stroke-width="7"/>
+ <line x1="609" y1="64" x2="609" y2="194" stroke="#16a34a" stroke-width="7"/>
+ <line x1="739" y1="64" x2="739" y2="194" stroke="#16a34a" stroke-width="7"/>
+ <text x="674" y="214" text-anchor="middle" font-size="12.5" fill="#1e293b">Quatre limites</text>
+ <text x="674" y="232" text-anchor="middle" font-size="11.5" fill="#14532d">les limites : pures</text>
+ <text x="674" y="250" text-anchor="middle" font-size="11.5" fill="#7f1d1d">le champ entier : impur</text>
+
+ <text x="380" y="276" text-anchor="middle" font-size="12" fill="#64748b">Raison : on n eloigne pas le marquage de l endroit de l impurete, pour ne pas faire perdre de la terre d Israel.</text>
+</svg></div>
+          <figcaption>Rabbi Assi : le nombre de limites marquees inverse le partage entre le bord et le champ.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+ <rect x="0" y="0" width="760" height="330" fill="#ffffff"/>
+ <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1e293b">Sortir contre les kilayim : deux dates, une contradiction, deux resolutions</text>
+
+ <line x1="60" y1="100" x2="710" y2="100" stroke="#94a3b8" stroke-width="2"/>
+ <circle cx="130" cy="100" r="6" fill="#6366f1"/>
+ <circle cx="340" cy="100" r="6" fill="#6366f1"/>
+ <circle cx="640" cy="100" r="6" fill="#6366f1"/>
+
+ <rect x="55" y="48" width="150" height="38" rx="6" fill="#eef2ff" stroke="#6366f1"/>
+ <text x="130" y="65" text-anchor="middle" font-size="12" fill="#1e293b">1er adar</text>
+ <text x="130" y="80" text-anchor="middle" font-size="11" fill="#475569">on proclame</text>
+
+ <rect x="262" y="48" width="156" height="38" rx="6" fill="#eef2ff" stroke="#6366f1"/>
+ <text x="340" y="65" text-anchor="middle" font-size="12" fill="#1e293b">15 adar</text>
+ <text x="340" y="80" text-anchor="middle" font-size="11" fill="#475569">on sort arracher</text>
+
+ <rect x="556" y="48" width="168" height="38" rx="6" fill="#eef2ff" stroke="#6366f1"/>
+ <text x="640" y="65" text-anchor="middle" font-size="12" fill="#1e293b">hol hamoed de Pessah</text>
+ <text x="640" y="80" text-anchor="middle" font-size="11" fill="#475569">on ressort arracher</text>
+
+ <text x="380" y="132" text-anchor="middle" font-size="12.5" fill="#7f1d1d">Objection : si tout a ete arrache le 15 adar, pourquoi ressortir a hol hamoed ?</text>
+
+ <rect x="45" y="150" width="330" height="82" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
+ <text x="210" y="171" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1e293b">Premier avis</text>
+ <text x="210" y="192" text-anchor="middle" font-size="12" fill="#334155">15 adar : la semence precoce (bakhir)</text>
+ <text x="210" y="212" text-anchor="middle" font-size="12" fill="#334155">hol hamoed : la semence tardive (afil)</text>
+
+ <rect x="395" y="150" width="330" height="82" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
+ <text x="560" y="171" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1e293b">Second avis</text>
+ <text x="560" y="192" text-anchor="middle" font-size="12" fill="#334155">15 adar : les cereales</text>
+ <text x="560" y="212" text-anchor="middle" font-size="12" fill="#334155">hol hamoed : les legumes</text>
+
+ <rect x="45" y="248" width="680" height="64" rx="6" fill="#e0f2fe" stroke="#0284c7"/>
+ <text x="385" y="270" text-anchor="middle" font-size="12.5" fill="#075985">Pourquoi hol hamoed ? Les ouvriers chomant, ils baissent leur prix (Rabbi Yaakov au nom de Rabbi Yohanan).</text>
+ <text x="385" y="292" text-anchor="middle" font-size="12.5" fill="#075985">D ou Rav Zevid deduit que leur salaire sort du prelevement de la chambre, et non de la poche des proprietaires.</text>
+</svg></div>
+          <figcaption>La contradiction entre notre michna et celle de Chekalim, et ce que la reponse enseigne sur le financement.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְדִלְמָא טֻומְאָה מִגַּוַּאי וְאִילָנוֹת מִבָּרַאי?</div>
+            <div class="fr"><p>Et peut-etre l&#x27;impurete se trouvait-elle a l&#x27;interieur et les arbres a l&#x27;exterieur ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְדִלְמָא טֻומְאָה מִגַּוַּאי</b> וְלֹא בֵּין הָאִילָנוֹת וְלֹא נֶחֱרַשׁ בִּמְקוֹם טֻומְאָה:</div>
+          <div class="glose-fr">Et peut-etre l&#x27;impurete est-elle a l&#x27;interieur — et non entre les arbres ; alors l&#x27;endroit de l&#x27;impurete n&#x27;a pas ete laboure.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara discute depuis 5b la michna d'<b>Ohalot</b> : celui qui trouve un champ marque a la chaux sans savoir de quoi il retourne, s'il y a des arbres, sait qu'une tombe y a ete labouree ; s'il n'y a pas d'arbres, sait qu'une tombe s'y est perdue. Le raisonnement tient aux arbres : on ne plante pas sans labourer, donc le champ a ete laboure et la tombe a ete dispersee par le soc.</p><p>L'objection porte sur la geometrie du champ. Si les arbres sont plantes au pourtour et la tombe au centre, le labour n'a touche que la bande plantee et <b>l'endroit de l'impurete est reste intact</b>. On serait alors dans le cas d'une tombe perdue et non d'une tombe labouree.</p><p>L'enjeu est reel : une <b>tombe labouree</b> cree un <b>beit haperas</b>, dont l'impurete est de rang rabbinique et connait des allegements ; une <b>tombe perdue</b> laisse une impurete de tente certaine, de rang biblique.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+ <rect x="0" y="0" width="700" height="250" fill="#ffffff"/>
+ <text x="350" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#1e293b">Ou se trouve l impurete par rapport aux arbres ?</text>
+
+ <text x="175" y="46" text-anchor="middle" font-size="12.5" fill="#7f1d1d">Hypothese de l objection</text>
+ <rect x="55" y="56" width="240" height="150" fill="#f8fafc" stroke="#94a3b8"/>
+ <circle cx="80" cy="81" r="8" fill="#16a34a"/>
+ <circle cx="270" cy="81" r="8" fill="#16a34a"/>
+ <circle cx="80" cy="181" r="8" fill="#16a34a"/>
+ <circle cx="270" cy="181" r="8" fill="#16a34a"/>
+ <rect x="140" y="110" width="70" height="42" fill="#fee2e2" stroke="#dc2626"/>
+ <text x="175" y="136" text-anchor="middle" font-size="11.5" fill="#7f1d1d">tombe</text>
+ <text x="175" y="222" text-anchor="middle" font-size="11.5" fill="#475569">arbres au pourtour, tombe au centre :</text>
+ <text x="175" y="238" text-anchor="middle" font-size="11.5" fill="#475569">le labour n a pas atteint la tombe</text>
+
+ <text x="520" y="46" text-anchor="middle" font-size="12.5" fill="#14532d">Reponse : arbres enchevetres</text>
+ <rect x="400" y="56" width="240" height="150" fill="#f8fafc" stroke="#94a3b8"/>
+ <circle cx="425" cy="80" r="8" fill="#16a34a"/>
+ <circle cx="500" cy="100" r="8" fill="#16a34a"/>
+ <circle cx="575" cy="75" r="8" fill="#16a34a"/>
+ <circle cx="450" cy="150" r="8" fill="#16a34a"/>
+ <circle cx="540" cy="175" r="8" fill="#16a34a"/>
+ <circle cx="615" cy="140" r="8" fill="#16a34a"/>
+ <rect x="490" y="120" width="70" height="42" fill="#fee2e2" stroke="#dc2626"/>
+ <text x="525" y="146" text-anchor="middle" font-size="11.5" fill="#7f1d1d">tombe</text>
+ <text x="520" y="222" text-anchor="middle" font-size="11.5" fill="#475569">arbres repartis partout :</text>
+ <text x="520" y="238" text-anchor="middle" font-size="11.5" fill="#475569">tout le champ a ete laboure</text>
+</svg></div><div class="svg-cap">L&#x27;objection et sa premiere reponse : la disposition des arbres decide si le labour a atteint la tombe.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בִּמְסֻובָּכִין. וְאִיבָּעֵית אֵימָא, הָא אֲמַרַן: אֵין מַרְחִיקִין צִיּוּן מִמְּקוֹם טֻומְאָה שֶׁלֹּא לְהַפְסִיד אֶת אֶרֶץ יִשְׂרָאֵל.</div>
+            <div class="fr"><p>Il s&#x27;agit d&#x27;arbres enchevetres. Et si tu veux, dis plutot : nous l&#x27;avons deja enonce, on n&#x27;eloigne pas le marquage de l&#x27;endroit de l&#x27;impurete, pour ne pas faire perdre de la terre d&#x27;Israel.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מְסֻובָּכִין</b> שֶׁאֵינָן עוֹמְדִין בְּשׁוּרָה אַחַת סְבִיב הַגִּבּוּלִין אֶלָּא מְעֹורָבִין בְּכָל הַשָּׂדֶה דְּוַדַּאי נֶחֱרַשׁ כָּל הַשָּׂדֶה בִּשְׁבִיל הָאִילָנוֹת:</div>
+          <div class="glose-fr">Enchevetres — ils ne se tiennent pas sur une seule rangee le long des limites, mais sont meles dans tout le champ ; des lors le champ entier a certainement ete laboure a cause des arbres.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָא אֲמַרַן אֵין מַרְחִיקִין צִיּוּן מִמְּקוֹם טֻומְאָה</b> וְכֵיוָן שֶׁסָּמוּךְ לָאִילָנוֹת הַצִּיּוּן וַדַּאי טֻומְאָה בֵּין הָאִילָנוֹת הִיא וְנֶחֱרַשׁ בִּשְׁבִיל הָאִילָנוֹת:</div>
+          <div class="glose-fr">Nous avons deja dit qu&#x27;on n&#x27;eloigne pas le marquage de l&#x27;endroit de l&#x27;impurete — et puisque le marquage est proche des arbres, l&#x27;impurete se trouve certainement entre les arbres, et l&#x27;endroit a ete laboure a cause des arbres.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deux reponses. La premiere restreint le cas : les arbres sont <b>mesoubakhin</b>, disperses dans tout le champ plutot qu'alignes sur le pourtour, de sorte que le labour a necessairement couvert la surface entiere.</p><p>La seconde s'appuie sur un principe deja pose plus haut : <b>on ne place pas le marquage loin de l'impurete reelle</b>, pour ne pas retrancher inutilement du terrain a la terre d'Israel. Puisque la marque est posee pres des arbres, l'impurete se trouve parmi eux, la ou le soc est passe.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבִּי יְהוּדָה אוֹמֵר: עַד שֶׁיְּהֵא שָׁם זָקֵן אוֹ תַּלְמִיד, לְפִי שֶׁאֵין הַכֹּל בְּקִיאִין בַּדָּבָר. אָמַר אַבַּיֵּי: שְׁמַע מִינַּהּ צֻורְבָּא מֵרַבָּנַן דְּאִיכָּא בְּמָתָא — כָּל מִילֵּי דְמָתָא עֲלֵיהּ רַמְיָא.</div>
+            <div class="fr"><p>Rabbi Yehouda dit : a condition qu&#x27;il y ait la un ancien ou un eleve des sages, car tout le monde n&#x27;est pas competent en la matiere. Abaye dit : apprends-en qu&#x27;un jeune erudit qui se trouve dans une ville, toutes les affaires de la ville reposent sur lui.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כָּל מִילֵּי דְמָתָא עֲלֵיהּ רַמְיָא</b> דְּתַלְמִיד בָּקִי הוּא:</div>
+          <div class="glose-fr">Toutes les affaires de la ville reposent sur lui — car l&#x27;eleve des sages est competent en la matiere.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabbi Yehouda restreint la portee des indices du terrain : on ne se fie a la presence des arbres qu'a condition qu'un <b>ancien</b> ou un <b>eleve des sages</b> puisse temoigner de l'histoire du champ, la lecture des marques demandant une competence que le public n'a pas.</p><p>Abaye tire de cette formulation une regle generale. Si Rabbi Yehouda suppose que le lettre du lieu connait l'etat des champs, c'est que <b>les affaires publiques de la ville lui incombent</b> : le savoir l'oblige a en repondre.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב יְהוּדָה: מָצָא אֶבֶן מְצֻויֶּנֶת — תַּחְתֶּיהָ טָמֵא. שְׁתַּיִם, אִם יֵשׁ סִיד בֵּינֵיהֶן — בֵּינֵיהֶן טָמֵא, וְאִם אֵין סִיד בֵּינֵיהֶן — בֵּינֵיהֶן טָהוֹר.</div>
+            <div class="fr"><p>Rav Yehouda a dit : celui qui trouve une pierre marquee, en dessous d&#x27;elle c&#x27;est impur. Deux pierres : s&#x27;il y a de la chaux entre elles, entre elles c&#x27;est impur ; et s&#x27;il n&#x27;y a pas de chaux entre elles, entre elles c&#x27;est pur.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מָצָא אֶבֶן אַחַת מְצֻויֶּנֶת</b> בְּסִיד תַּחְתֶּיהָ טָמֵא וּמִפִּי מוֹרִי הַזָּקֵן אֶבֶן אַחַת מְצֻויֶּנֶת שֶׁיֵּשׁ סִיד עַל גַּבָּהּ דְּאֵינוֹ צָרִיךְ לְהַרְחִיק הַצִּיּוּן מִן הָאֶבֶן לְפִי שֶׁהָאֶבֶן גָּבוֹהַּ עַל גַּבֵּי קַרְקַע וְרוֹאָה אֶת הַצִּיּוּן מִיָּד קֹודֶם שֶׁיְּהֵא נוֹגֵעַ בּוֹ אֲבָל בַּשָּׂדֶה מַרְחִיקִין לָהּ צִיּוּן בְּסָמוּךְ דְּזִמְנִין לָא חָזֵי צִיּוּן עַד דְּאָתֵי וְנָגַע וּמַאֲהִיל:</div>
+          <div class="glose-fr">Il a trouve une pierre marquee — a la chaux : en dessous d&#x27;elle c&#x27;est impur. De la bouche de mon vieux maitre : une pierre marquee, c&#x27;est-a-dire qui porte de la chaux sur son dessus. On n&#x27;a pas besoin d&#x27;eloigner le marquage de la pierre, parce que la pierre s&#x27;eleve au-dessus du sol et que l&#x27;on voit la marque aussitot, avant de la toucher ; mais en plein champ on place la marque un peu a l&#x27;ecart, car il arrive qu&#x27;on ne l&#x27;apercoive qu&#x27;une fois arrive au contact, apres avoir touche et fait tente.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שְׁתַּיִם מְצֻוייָּנוֹת</b> תַּחְתֵּיהֶן טָמֵא אֲבָל בֵּינֵיהֶן אִם יֵשׁ סִיד בֵּינֵיהֶם עַל הָאָרֶץ טָמֵא דְּמִשּׁוּם צִיּוֹן הוּא:</div>
+          <div class="glose-fr">Deux pierres marquees — en dessous d&#x27;elles c&#x27;est impur ; quant a l&#x27;intervalle, s&#x27;il y a de la chaux entre elles sur le sol, il est impur, car cette chaux est la au titre du marquage.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אִם יֵשׁ סִיד בֵּינֵיהֶם. הַצִּיּוּן הוּא מִסִּיד כְּדִתְנַן פֶּרֶק ה&#x27; דְּמַעֲשֵׂר שֵׁנִי (מ&quot;א) וּמַיְיתִי לָהּ פֶּרֶק מְרֻובֶּה (ב&quot;ק סט. וְשָׁם) אִם יֵשׁ סִיד בֵּינֵיהֶם לָא יָדַעְנָא כַּמָּה:</div>
+          <div class="glose-fr">S&#x27;il y a de la chaux entre elles. Le marquage se fait a la chaux, comme nous l&#x27;avons appris au chapitre 5 de Maasser Cheni (michna 1), passage rapporte au chapitre Meroube (Baba Kama 69a). Quelle quantite de chaux faut-il entre elles, je ne le sais pas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle serie, consacree a la lecture concrete des marques. Le <b>tsioun</b> se fait a la chaux, blanche et visible de loin. Une pierre seule portant de la chaux signale une impurete sous elle, sans plus.</p><p>Deux pierres marquees posent la question de l'intervalle. Rav Yehouda le tranche par la presence de chaux au sol entre elles : si elle s'y trouve, les deux pierres bornent une <b>zone impure continue</b> ; sinon, chacune signale son propre point et l'espace intermediaire reste pur.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאַף עַל גַּב דְּלֵיכָּא חֹורֶשׁ? וְהָתַנְיָא: מָצָא אֶבֶן אַחַת מְצֻויֶּנֶת — תַּחְתֶּיהָ טָמֵא. שְׁתַּיִם, אִם יֵשׁ חֹורֶשׁ בֵּינֵיהֶן — בֵּינֵיהֶן טָהוֹר, וְאִם לָאו — בֵּינֵיהֶן טָמֵא!</div>
+            <div class="fr"><p>Et cela meme s&#x27;il n&#x27;y a pas eu de labour ? Or on a enseigne : celui qui trouve une pierre marquee, en dessous d&#x27;elle c&#x27;est impur ; deux pierres, s&#x27;il y a du labour entre elles, entre elles c&#x27;est pur, et sinon, entre elles c&#x27;est impur !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אע&quot;ג דְּלֵיכָּא חוֹרֵשׁ</b> שֶׁלֹּא חָרַשׁ בֵּינֵיהֶם מֵעוֹלָם טָהוֹר כִּי לֵיכָּא סִיד:</div>
+          <div class="glose-fr">Meme s&#x27;il n&#x27;y a pas de labour — meme si l&#x27;on n&#x27;a jamais laboure entre elles, c&#x27;est pur des lors qu&#x27;il n&#x27;y a pas de chaux.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִם אֵין חוֹרֵשׁ בֵּינֵיהֶן טָמֵא</b> ואע&quot;ג דְּלֵיכָּא סִיד לְפִי שֶׁצִּייֵּן אֶת הָאֲבָנִים שֶׁמִּכָּאן וּמִכָּאן לֹא חָשַׁשׁ לְצַיֵּין בֵּינְתַיִם:</div>
+          <div class="glose-fr">S&#x27;il n&#x27;y a pas de labour entre elles, c&#x27;est impur — et cela meme s&#x27;il n&#x27;y a pas de chaux : puisqu&#x27;il a marque les pierres de part et d&#x27;autre, il ne s&#x27;est pas soucie de marquer aussi l&#x27;intervalle.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אע&quot;ג דְּלֵיכָּא חֶרֶס. גָּרְסִינַן וּמָצָאתִי מְפָרֵשׁ חֶרֶס דּוֹמֶה הוּא לְחַרְסִית וְאֵין לָבָן כְּמוֹ סִיד ונ&quot;ל פֵּירוּשׁוֹ אִם יֵשׁ חַרְסִית בֵּינֵיהֶם דּוֹמֶה שֶׁמְּצַייְּנִין לְהוֹדִיעַ שֶׁהוּא טָהוֹר שֶׁעַד שָׁם אֵין בֵּית הַקְּבָרוֹת שֶׁאֵינָהּ לָבָן בֵּינְתַיִם:</div>
+          <div class="glose-fr">Meme s&#x27;il n&#x27;y a pas de heres. Telle est notre version. J&#x27;ai trouve un commentateur qui explique : heres est proche de la harsit, la terre cuite pilee, qui n&#x27;est pas blanche comme la chaux. Il me semble que son explication est la suivante : s&#x27;il y a de la harsit entre elles, cela ressemble a un marquage destine a faire savoir que l&#x27;endroit est pur, que le cimetiere ne s&#x27;etend pas jusque-la, puisque ce qui se trouve dans l&#x27;intervalle n&#x27;est pas blanc.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La beraita retient un tout autre critere que Rav Yehouda : la trace du <b>soc</b>, et non la chaux. Elle declare l'intervalle pur quand le labour y est passe, impur en son absence, sans faire etat de chaux.</p><p>La contradiction est double. Rav Yehouda purifie l'intervalle des qu'il n'y a pas de chaux, meme sans labour ; la beraita l'impurifie des qu'il n'y a pas de labour, meme sans chaux. Tossefot signale d'ailleurs une variante de texte : <b>heres</b>, terre cuite pilee, au lieu de <b>horech</b>, le labour.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב פָּפָּא: הָכָא כְּשֶׁהַסִּיד שָׁפוּךְ עַל רָאשֵׁיהֶן וּמְרֻודֶּה לְכָאן וּלְכָאן. אִי אִיכָּא חֹורֶשׁ בֵּינֵיהֶן — בֵּינֵיהֶן טָהוֹר, דְּאֵימוֹר מֵחֲמַת חֹורֶשׁ הוּא דְּאִיקְּפַל, וְאִי לָא, סִיד דְּבֵינֵי בֵּינֵי הוּא וְטָמֵא.</div>
+            <div class="fr"><p>Rav Papa a dit : ici, il s&#x27;agit d&#x27;un cas ou la chaux a ete versee sur le sommet des pierres et s&#x27;est repandue de part et d&#x27;autre. S&#x27;il y a du labour entre elles, entre elles c&#x27;est pur, car on peut dire que la chaux s&#x27;est ecaillee a cause du labour ; et sinon, la chaux de l&#x27;intervalle y est pour elle-meme, et c&#x27;est impur.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָכָא</b> דְּקָתָנֵי כִּי לֵיכָּא חוֹרֵשׁ טָמֵא כְּגוֹן סִיד שְׁפוֹךְ עַל רָאשֵׁי אֲבָנִים וּמֵרוֹדָה לְכָאן וּלְכָאן בֵּינֵיהֶן דְּאִי אִיכָּא חוֹרֵשׁ מֵחֲמַת חוֹרֵשׁ הוּא דְּאִיקַּלַּף שֶׁנִּקְלַף מִן הָאֲבָנִים וְנָפְלוּ שָׁם בֵּינֵיהֶם וְטָהוֹר וְאִי לָא סִיד דְּבֵינֵי בֵּינֵי הוּא וּמֵחֲמַת צִיּוֹן נַעֲשָׂה שָׁם לְהוֹדִיעַ שֶׁיֵּשׁ גַּם בֵּינֵיהֶם טֻומְאָה:</div>
+          <div class="glose-fr">Ici — la ou la beraita enseigne que, sans labour, c&#x27;est impur : il s&#x27;agit par exemple d&#x27;une chaux versee sur le sommet des pierres et repandue de part et d&#x27;autre dans l&#x27;intervalle. Car s&#x27;il y a du labour, c&#x27;est a cause du labour qu&#x27;elle s&#x27;est ecaillee, s&#x27;est detachee des pierres et est tombee la, entre elles, et c&#x27;est pur. Sinon, la chaux de l&#x27;intervalle y est pour elle-meme : elle a ete mise la au titre du marquage, pour faire savoir que l&#x27;impurete se trouve aussi entre les pierres.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אָמַר רַב פָּפָּא כְּשֶׁהַסִּיד שְׁפוֹךְ. פֵּירוּשׁ וַדַּאי כִּי לֵיכָּא סִיד וְחַרְסִית טְהוֹרִין אֲבָל כְּשֶׁהוּא מְרֻובֶּה וְשָׁפוּךְ עַל רֹאשׁוֹ אָז צָרִיךְ חַרְסִית שֶׁאִם יֵשׁ חַרְסִית יֵשׁ לִתְלוֹת שֶׁנָּתַן לְצִידֵּי הָאֶבֶן חַרְסִית וְהַסִּיד נִתְחַבֵּר בּוֹ וְצֵרְפוּ הַסִּיד שֶׁעַל רֹאשׁוֹ עִמָּהּ וְאִם אֵין חַרְסִית א&quot;כ סִיד הוּא שֶׁל צִיּוּן בֵּינְתַיִם וּלְפֵירוּשׁ הַקּוּנְטְרֵס גָּרְסִינַן אַף עַל גַּב דְּלֵיכָּא חֹורֶשׁ וּמְפָרֵשׁ בֵּינֵיהֶם טָהוֹר דְּאִינַּתְקָא לָהּ טֻומְאָה דְּהָוֵי לָהּ קֶבֶר שֶׁנֶּחֱרַשׁ וְתֵימַהּ לִי נְהִי דְּטָהוֹר מִטֻּומְאַת אֹהֶל טָהוֹר לָא הָוֵי דְּהָוֵי כְּמוֹ שָׂדֶה שֶׁנֶּחֱרַשׁ בָּהּ קֶבֶר וְשֶׁמָּא טָהוֹר מֵאֹהֶל קָאָמַר א&quot;נ לְגַמְרֵי ע&quot;י דִּישָׁה וְנִיפּוּחַ א&quot;נ בֵּינֵיהֶם אִיכָּא טוּבָא סְפֵיקוֹת וְשָׁרֵי סָפֵק אִי אִיכָּא צִיּוּן הַטֻּומְאָה שֶׁבֵּינֵיהֶם אִי לֹא וַאֲפִילּוּ אִיכָּא צִיּוּן הֲרֵי נֶחֱרַשׁ וּמָצָאתִי מְפָרֵשׁ דְּהַשְׁתָּא סָלְקָא דַּעְתֵּיהּ דה&quot;פ אִם יֵשׁ בֵּינֵיהֶם חוֹרֵשׁ טָהוֹר דְּוַדַּאי לֹא הָיָה שָׁם טֻומְאָה דְּאִם הָיָה בֵּינֵיהֶם לֹא הָיָה חוֹרְשׁוֹ אָדָם תֵּימַהּ לִי אַמַּאי לָא פָּרִיךְ דְּקָתָנֵי בְּקַמָּייְתָא אִם יֵשׁ סִיד בֵּינֵיהֶם בֵּינְתַיִם טָמֵא אע&quot;ג דְּאִיכָּא חוֹרֵשׁ וְהָכָא קָתָנֵי אִם יֵשׁ חוֹרֵשׁ בֵּינֵיהֶם טָהוֹר ואע&quot;ג דְּאִיכָּא סִיד ונ&quot;ל דְּסָלְקָא דַּעְתֵּיהּ דְּהַךְ בָּתְרָיְיתָא אַייְרֵי בִּדְלֵיכָּא סִיד דְּכִי אִיכָּא סִיד לֹא הָיָה טָהוֹר לְעוֹלָם דְּהָא אֵין מְצַיְּינִין אִם לָאו עַל הַטֻּומְאָה וְכִי חוֹרְשׁוֹ לֹא יְהֵא טָהוֹר וּלְהָכֵי לֹא מַקְשֶׁה כִּי אִם מִסֵּיפָא דְּבָרַיְיתָא קַמַּיְיתָא דְּאַייְרֵי בִּדְלֵיכָּא סִיד:</div>
+          <div class="glose-fr">Rav Papa a dit : quand la chaux est versee. Explication : en l&#x27;absence de chaux et de harsit, l&#x27;endroit est certainement pur ; mais quand la chaux est abondante et versee sur le sommet de la pierre, il faut alors de la harsit. Car s&#x27;il y a de la harsit, on peut supposer qu&#x27;on en a mis sur les cotes de la pierre, que la chaux s&#x27;y est jointe et que la harsit a entraine avec elle la chaux du sommet ; et s&#x27;il n&#x27;y a pas de harsit, la chaux de l&#x27;intervalle est une chaux de marquage. Selon l&#x27;explication de Rachi, notre version porte : meme s&#x27;il n&#x27;y a pas de labour ; et il explique que l&#x27;intervalle est pur parce que l&#x27;impurete a ete dispersee, le cas etant celui d&#x27;une tombe labouree. Cela me fait difficulte : admettons qu&#x27;il soit pur de l&#x27;impurete de tente, il ne devient pas pur pour autant, car c&#x27;est comme un champ dans lequel une tombe a ete labouree. Peut-etre veut-il dire pur de l&#x27;impurete de tente seulement ; ou bien pur entierement, par l&#x27;effet du pietinement et de la dispersion au vent. On peut aussi dire que, dans l&#x27;intervalle, plusieurs doutes se cumulent et que l&#x27;on est indulgent : doute si l&#x27;impurete de l&#x27;intervalle a ete marquee ou non, et meme si elle l&#x27;a ete, l&#x27;endroit a ete laboure. J&#x27;ai trouve un commentateur qui explique qu&#x27;a ce stade on pense que le sens est le suivant : s&#x27;il y a du labour entre elles, c&#x27;est pur, car il n&#x27;y avait certainement pas d&#x27;impurete a cet endroit, sans quoi personne ne l&#x27;aurait laboure. Cela me fait difficulte : pourquoi ne pas objecter depuis la premiere beraita, qui enseigne que s&#x27;il y a de la chaux entre elles l&#x27;intervalle est impur, et cela meme s&#x27;il y a du labour, alors qu&#x27;ici on enseigne que s&#x27;il y a du labour entre elles c&#x27;est pur, et cela meme s&#x27;il y a de la chaux ? Il me semble que l&#x27;on pensait que cette seconde beraita traite d&#x27;un cas sans chaux ; car s&#x27;il y avait de la chaux, l&#x27;endroit ne serait jamais pur, puisqu&#x27;on ne marque que sur de l&#x27;impurete, et le labour ne le purifierait pas. C&#x27;est pourquoi on n&#x27;objecte que depuis la fin de la premiere beraita, qui traite d&#x27;un cas sans chaux.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Papa resout en restreignant la beraita a une configuration precise : la chaux a ete <b>versee sur le dessus des pierres</b> et a deborde vers le sol. Les deux textes parlent alors du meme cas, avec deux origines possibles pour la chaux trouvee au sol.</p><p>Le labour devient un <b>indice d'origine</b> plutot qu'un critere autonome. Son passage explique que la chaux se soit detachee des pierres et soit tombee dans l'intervalle : elle ne marque donc rien. En son absence, la chaux du sol ne peut venir que d'une pose deliberee, et l'intervalle est impur.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+ <rect x="0" y="0" width="700" height="260" fill="#ffffff"/>
+ <text x="350" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#1e293b">Rav Papa : d ou vient la chaux tombee entre les deux pierres ?</text>
+
+ <rect x="30" y="40" width="300" height="190" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
+ <text x="180" y="62" text-anchor="middle" font-size="12.5" font-weight="700" fill="#14532d">Trace de labour dans l intervalle</text>
+ <line x1="55" y1="150" x2="305" y2="150" stroke="#a16207" stroke-width="3"/>
+ <rect x="75" y="112" width="44" height="38" fill="#cbd5e1" stroke="#64748b"/>
+ <rect x="241" y="112" width="44" height="38" fill="#cbd5e1" stroke="#64748b"/>
+ <line x1="75" y1="112" x2="119" y2="112" stroke="#dc2626" stroke-width="6"/>
+ <line x1="241" y1="112" x2="285" y2="112" stroke="#dc2626" stroke-width="6"/>
+ <circle cx="140" cy="146" r="3" fill="#dc2626"/>
+ <circle cx="170" cy="147" r="3" fill="#dc2626"/>
+ <circle cx="200" cy="145" r="3" fill="#dc2626"/>
+ <circle cx="225" cy="147" r="3" fill="#dc2626"/>
+ <path d="M 95 108 Q 130 128 145 142" fill="none" stroke="#94a3b8" stroke-dasharray="3,3"/>
+ <text x="180" y="176" text-anchor="middle" font-size="11.5" fill="#475569">la chaux du sommet s est ecaillee et est tombee</text>
+ <text x="180" y="204" text-anchor="middle" font-size="13" font-weight="700" fill="#14532d">intervalle pur</text>
+
+ <rect x="370" y="40" width="300" height="190" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
+ <text x="520" y="62" text-anchor="middle" font-size="12.5" font-weight="700" fill="#7f1d1d">Aucune trace de labour</text>
+ <line x1="395" y1="150" x2="645" y2="150" stroke="#a16207" stroke-width="3"/>
+ <rect x="415" y="112" width="44" height="38" fill="#cbd5e1" stroke="#64748b"/>
+ <rect x="581" y="112" width="44" height="38" fill="#cbd5e1" stroke="#64748b"/>
+ <line x1="415" y1="112" x2="459" y2="112" stroke="#dc2626" stroke-width="6"/>
+ <line x1="581" y1="112" x2="625" y2="112" stroke="#dc2626" stroke-width="6"/>
+ <line x1="463" y1="147" x2="577" y2="147" stroke="#dc2626" stroke-width="6"/>
+ <text x="520" y="176" text-anchor="middle" font-size="11.5" fill="#475569">la chaux a ete posee la pour marquer</text>
+ <text x="520" y="204" text-anchor="middle" font-size="13" font-weight="700" fill="#7f1d1d">intervalle impur</text>
+</svg></div><div class="svg-cap">Le labour ne purifie pas par lui-meme : il explique d&#x27;ou vient la chaux tombee au sol.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַבִּי אַסִּי מֶצֶר אֶחָד מְצֻויָּן — הוּא טָמֵא, וְכָל הַשָּׂדֶה כֻּולָּהּ טְהוֹרָה. שְׁנַיִם — הֵם טְמֵאִין, וְכָל הַשָּׂדֶה כֻּולָּהּ טְהוֹרָה. שְׁלֹשָׁה — הֵם טְמֵאִין, וְכָל הַשָּׂדֶה כֻּולָּהּ טְהוֹרָה. אַרְבָּעָה — הֵן טְהוֹרִין, וְכָל הַשָּׂדֶה כֻּולָּהּ טְמֵאָה.</div>
+            <div class="fr"><p>Rabbi Assi a dit : une seule limite marquee, elle est impure et tout le champ est pur. Deux, elles sont impures et tout le champ est pur.</p><p>Trois, elles sont impures et tout le champ est pur. Quatre, elles sont pures et tout le champ est impur.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabbi Assi passe des pierres isolees aux <b>limites</b> du champ, les mitsarim. Tant que le marquage laisse un cote libre, il se lit comme une bordure d'avertissement : les bords marques sont impurs et l'interieur reste pur.</p><p>Le quatrieme marquage renverse la lecture. Un champ ceinture de toutes parts ne se comprend plus comme une somme de bords impurs mais comme une enceinte delimitant une <b>surface impure</b> ; les bords eux-memes deviennent alors purs. La raison suit au segment suivant.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 286" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+ <rect x="0" y="0" width="760" height="286" fill="#ffffff"/>
+ <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1e293b">Rabbi Assi : combien de limites du champ sont marquees ?</text>
+ <text x="380" y="44" text-anchor="middle" font-size="12" fill="#64748b">trait epais rouge = limite marquee a la chaux</text>
+
+ <rect x="48" y="64" width="130" height="130" fill="#dcfce7" stroke="#16a34a"/>
+ <line x1="48" y1="64" x2="178" y2="64" stroke="#dc2626" stroke-width="7"/>
+ <text x="113" y="214" text-anchor="middle" font-size="12.5" fill="#1e293b">Une limite</text>
+ <text x="113" y="232" text-anchor="middle" font-size="11.5" fill="#7f1d1d">la limite : impure</text>
+ <text x="113" y="250" text-anchor="middle" font-size="11.5" fill="#14532d">le champ : pur</text>
+
+ <rect x="235" y="64" width="130" height="130" fill="#dcfce7" stroke="#16a34a"/>
+ <line x1="235" y1="64" x2="365" y2="64" stroke="#dc2626" stroke-width="7"/>
+ <line x1="235" y1="64" x2="235" y2="194" stroke="#dc2626" stroke-width="7"/>
+ <text x="300" y="214" text-anchor="middle" font-size="12.5" fill="#1e293b">Deux limites</text>
+ <text x="300" y="232" text-anchor="middle" font-size="11.5" fill="#7f1d1d">les limites : impures</text>
+ <text x="300" y="250" text-anchor="middle" font-size="11.5" fill="#14532d">le champ : pur</text>
+
+ <rect x="422" y="64" width="130" height="130" fill="#dcfce7" stroke="#16a34a"/>
+ <line x1="422" y1="64" x2="552" y2="64" stroke="#dc2626" stroke-width="7"/>
+ <line x1="422" y1="64" x2="422" y2="194" stroke="#dc2626" stroke-width="7"/>
+ <line x1="552" y1="64" x2="552" y2="194" stroke="#dc2626" stroke-width="7"/>
+ <text x="487" y="214" text-anchor="middle" font-size="12.5" fill="#1e293b">Trois limites</text>
+ <text x="487" y="232" text-anchor="middle" font-size="11.5" fill="#7f1d1d">les limites : impures</text>
+ <text x="487" y="250" text-anchor="middle" font-size="11.5" fill="#14532d">le champ : pur</text>
+
+ <rect x="609" y="64" width="130" height="130" fill="#fee2e2" stroke="#dc2626"/>
+ <line x1="609" y1="64" x2="739" y2="64" stroke="#16a34a" stroke-width="7"/>
+ <line x1="609" y1="194" x2="739" y2="194" stroke="#16a34a" stroke-width="7"/>
+ <line x1="609" y1="64" x2="609" y2="194" stroke="#16a34a" stroke-width="7"/>
+ <line x1="739" y1="64" x2="739" y2="194" stroke="#16a34a" stroke-width="7"/>
+ <text x="674" y="214" text-anchor="middle" font-size="12.5" fill="#1e293b">Quatre limites</text>
+ <text x="674" y="232" text-anchor="middle" font-size="11.5" fill="#14532d">les limites : pures</text>
+ <text x="674" y="250" text-anchor="middle" font-size="11.5" fill="#7f1d1d">le champ entier : impur</text>
+
+ <text x="380" y="276" text-anchor="middle" font-size="12" fill="#64748b">Raison : on n eloigne pas le marquage de l endroit de l impurete, pour ne pas faire perdre de la terre d Israel.</text>
+</svg></div><div class="svg-cap">Le passage de trois a quatre limites marquees inverse le statut du bord et celui de l&#x27;interieur.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">דְּאָמַר מַר: אֵין מַרְחִיקִין צִיּוּן מִמְּקוֹם טֻומְאָה, שֶׁלֹּא לְהַפְסִיד אֶת אֶרֶץ יִשְׂרָאֵל.</div>
+            <div class="fr"><p>Car le maitre a dit : on n&#x27;eloigne pas le marquage de l&#x27;endroit de l&#x27;impurete, pour ne pas faire perdre de la terre d&#x27;Israel.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵין מַרְחִיקִין צִיּוּן מִמְּקוֹם טֻומְאָה</b> וּלְהָכִי צִייֵּן כָּל אַרְבָּעָה מְצָרָיו דִּתְהֵא כָּל הַשָּׂדֶה נִטְמְאָה וּבְצִיּוּן דְּמֶצֶר אֶחָד לָא סַגִּי לְכֻולָּהּ דְּאֵין מַרְחִיקִין צִיּוּן מִמְּקוֹם טֻומְאָה:</div>
+          <div class="glose-fr">On n&#x27;eloigne pas le marquage de l&#x27;endroit de l&#x27;impurete — c&#x27;est pourquoi, s&#x27;il a marque ses quatre limites, c&#x27;est que le champ entier a ete rendu impur ; le marquage d&#x27;une seule limite ne suffirait pas pour le champ entier, puisqu&#x27;on n&#x27;eloigne pas le marquage de l&#x27;endroit de l&#x27;impurete.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">דְּאָמַר מַר אֵין מַרְחִיקִים. כָּךְ פֵּירֵשׁ בַּתּוֹסֶפְתָּא וּבַקְּוַנְט&#x27; וּבַסְּפָרִים מָצָאתִי דְּאָמַר מַר אֵין מַעֲמִידִין צִיּוּן כּוּ&#x27; וּלְפִי זֶה אֵינוֹ נוֹתֵן טַעַם לָמָּה כָּל הַשָּׂדֶה טָמֵא אֶלָּא נוֹתֵן טַעַם לָמָּה תַּחְתֵּיהֶן טְהוֹרִין דְּאֵין מַעֲמִידִין צִיּוּן בִּמְקוֹם הַטֻּומְאָה וּנְהִי דִּבְרוּחַ אֶחָד אוֹ שְׁנַיִם אוֹ שְׁלשָׁה יֵשׁ לָנוּ לוֹמַר דְּכָל תַּחְתֶּיהָ טָמֵא כִּי אֵין הַטֻּומְאָה בְּפָחוֹת מִן הַצִּיּוּן אֲבָל בְּאַרְבָּעָה יֵשׁ לִתְלוֹת הַטֻּומְאָה בְּכָל הַשָּׂדֶה לְפִיכָךְ תַּחְתֵּיהֶן טְהוֹרִים:</div>
+          <div class="glose-fr">Car le maitre a dit : on n&#x27;eloigne pas. Ainsi l&#x27;expliquent la Tossefta et Rachi. Mais dans certains livres j&#x27;ai trouve : car le maitre a dit, on ne dresse pas le marquage, etc. Selon cette version, la phrase ne donne pas la raison pour laquelle tout le champ est impur, mais celle pour laquelle le dessous des marques est pur : on ne dresse pas le marquage a l&#x27;endroit meme de l&#x27;impurete. Et s&#x27;il est vrai que pour un cote, deux ou trois, nous devons dire que tout le dessous est impur, car l&#x27;impurete n&#x27;est pas moindre que la marque elle-meme, en revanche avec quatre cotes on peut rattacher l&#x27;impurete au champ tout entier, et c&#x27;est pourquoi le dessous des marques est pur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le principe deja invoque plus haut fournit la cle du quatrieme cas. Puisqu'on pose la marque au plus pres de l'impurete, marquer une seule limite ne saurait signaler un champ entier ; marquer les quatre n'a de sens que si l'impurete occupe toute la surface.</p><p>Le motif est economique autant que halakhique : chaque metre declare impur sans raison est un metre de terre d'Israel soustrait a l'usage. Tossefot rapporte une autre version du texte, <b>on ne dresse pas le marquage a l'endroit meme de l'impurete</b>, qui deplace ce que la phrase explique.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְיוֹצְאִין אַף עַל הַכִּלְאַיִם.</div>
+            <div class="fr"><p>Et l&#x27;on sort aussi pour les kilayim.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reprise d'une clause de la michna de 2a. Les <b>kilayim</b> sont les melanges d'especes interdits a la semence ; le tribunal envoie des agents dans les champs pour arracher les pousses interdites, y compris pendant <b>hol hamoed</b>, les jours intermediaires de la fete.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאַכִּלְאַיִם בְּחֻולּוֹ שֶׁל מוֹעֵד נָפְקִינַן? וּרְמִינְהוּ: בְּאֶחָד בַּאֲדָר מַשְׁמִיעִין עַל הַשְּׁקָלִים וְעַל הַכִּלְאַיִם.</div>
+            <div class="fr"><p>Et sort-on pour les kilayim a hol hamoed ? On leur oppose : le premier adar, on proclame au sujet des chekalim et au sujet des kilayim.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאַכִּלְאַיִם בְּחֻולּוֹ שֶׁל מוֹעֵד נָפְקִינַן וּרְמִינְהוּ בְּאֶחָד בַּאֲדָר מַשְׁמִיעִין עַל הַשְּׁקָלִים</b> שֶׁיְּהוּ יִשְׂרָאֵל מְבִיאִין תְּרוּמַת שְׁקָלִים בְּנִיסָן דִּכְתִיב בְּחָדְשׁוֹ לְחָדְשֵׁי הַשָּׁנָה חַדֵּשׁ וְהָבֵא לִי קָרְבָּן מִתְּרוּמָה חֲדָשָׁה:</div>
+          <div class="glose-fr">Et sort-on pour les kilayim a hol hamoed ? On leur oppose : le premier adar on proclame au sujet des chekalim — afin qu&#x27;Israel apporte le prelevement des chekalim en nissan, selon le verset : en son mois, pour les mois de l&#x27;annee — renouvelle, et apporte-moi le sacrifice a partir du prelevement nouveau.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">וְאַכִּלְאַיִם בְּחֻולּוֹ שֶׁל מוֹעֵד נָפְקִינַן. בַּמִּשְׁנָה פִּי&#x27; מַאי טַעְמָא לֹא מַקְשֶׁה עַל אִינָךְ וּבִירֻושַּׁל&#x27; מַקְשֶׁה מְצַייְּנִין עַל הַקְּבָרוֹת וְלֹא כְּבָר צִייְּנוּ וּמְתָרֵץ כְּגוֹן שֶׁיָּרַד שֶׁטֶף מַיִם שֶׁל גְּשָׁמִים וּשְׁטָפוֹ:</div>
+          <div class="glose-fr">Et sort-on pour les kilayim a hol hamoed ? Rachi a explique dans son commentaire sur la michna pourquoi la guemara n&#x27;objecte pas depuis les autres clauses. Dans le Talmud de Jerusalem, on objecte a partir du marquage des tombes : ne les a-t-on pas deja marquees ? Et l&#x27;on repond qu&#x27;il s&#x27;agit par exemple d&#x27;une crue d&#x27;eaux de pluie qui les a emportees.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara oppose l'ouverture du traite <b>Chekalim</b>, qui fixe au 1er adar la proclamation publique portant sur deux obligations : apporter le demi-chekel, dont les offrandes publiques de nissan doivent etre financees par le prelevement nouveau, et arracher les kilayim des champs.</p><p>Tossefot demande pourquoi l'objection ne porte que sur les kilayim, alors que la michna de Chekalim enumere d'autres travaux que notre michna place a hol hamoed. La reponse de Rachi figure au segment suivant.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בַּחֲמִשָּׁה עָשָׂר בּוֹ קוֹרִין אֶת הַמְּגִילָּה בַּכְּרַכִּים, וְיוֹצְאִין לְקַווֵּץ אֶת הַדְּרָכִים, וּלְתַקֵּן הָרְחוֹבוֹת, וְלִמּוּד הַמִּקְוָאוֹת. וְעוֹשִׂין כָּל צָורְכֵי רַבִּים, וּמְצַיְּנִין אֶת הַקְּבָרוֹת, וְיוֹצְאִין עַל הַכִּלְאַיִם.</div>
+            <div class="fr"><p>Le quinze de ce mois, on lit la meguila dans les villes fortifiees, et l&#x27;on sort pour degager les ronces des chemins, reparer les places, mesurer les mikvaot. On accomplit tous les besoins publics, on marque les tombes, et l&#x27;on sort pour les kilayim.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בַּכְּרַכִּים</b> הַמֻּוקָּפִין חוֹמָה מִימוֹת יְהוֹשֻׁעַ בִּן נוּן:</div>
+          <div class="glose-fr">Dans les villes fortifiees — celles qui sont entourees d&#x27;une muraille depuis les jours de Yehochoua bin Noun.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאֶת מִקְוָאוֹת הַמַּיִם</b> מִקְוָאוֹת הַמַּיִם שֶׁל מ&#x27; סְאָה שֶׁחוֹטְטִין אוֹתָן מִן הַזֶּבֶל שֶׁנִּכְנַס לְתוֹכָן כָּל יְמוֹת הַגְּשָׁמִים וְהַאי דְּלָא פָּרֵיךְ נָמֵי בַּגְּמָרָא אַשְּׁאָר מַתְנֵי&#x27; דְּתָנֵי וּמְתַקְּנִים הַדְּרָכִים וְהָרְחוֹבוֹת בְּחֻולּוֹ ש&quot;מ וְהָכָא תְּנָא בט&quot;ו בַּאֲדָר מִשּׁוּם דְּלָאו פִּירְכָא הוּא דִּבְדִין הוּא דִּמְתַקְּנִין לְהוּ תְּרֵי זִימְנֵי דְּכִי מְתַקֵּן בט&quot;ו בַּאֲדָר אָתוּ גְּשָׁמִים וּמְקַלְקְלִי לְהוּ וְהָדְרִי וּמְתַקְּנִי לְהוּ בְּחֻולּוֹ שֶׁל מוֹעֵד אֲבָל אַכִּלְאַיִם כֵּיוָן דְּעָקְרוּ לְהוּ לְגַמְרֵי בַּחֲמִשָּׁה עָשָׂר בַּאֲדָר לָמָּה לִי לְמִיפַּק בּוֹ בְּחֻולּוֹ שֶׁל מוֹעֵד וּלְהָכִי קָא מִיבַּעְיָא:</div>
+          <div class="glose-fr">Et les bassins d&#x27;eau — les mikvaot de quarante sea, que l&#x27;on cure des boues qui y sont entrees pendant toute la saison des pluies. Si la guemara n&#x27;objecte pas aussi depuis le reste de notre michna, qui enseigne que l&#x27;on repare les chemins et les places a hol hamoed alors qu&#x27;ici on l&#x27;enseigne au 15 adar, c&#x27;est que ce ne serait pas une objection : il est normal qu&#x27;on les repare deux fois, car apres la reparation du 15 adar les pluies viennent et les degradent, de sorte qu&#x27;on les repare de nouveau a hol hamoed. Pour les kilayim en revanche, puisqu&#x27;on les a entierement arraches le 15 adar, pourquoi faudrait-il ressortir a hol hamoed ? C&#x27;est cela que la guemara demande.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">בט&quot;ו קוֹרִין אֶת הַמְּגִילָּה. הָוֵי מָצֵי לְמִתְנֵי בי&quot;ד בּוֹ (בַּכְּפָרִים) אֶלָּא מִשּׁוּם דט&quot;ו זְמַן דִּדְבָרִים אֲחֵרִים הוּא כְּגוֹן וּמְתַקְּנִין אֶת הַדְּרָכִים וְכוּ&#x27;:</div>
+          <div class="glose-fr">Le quinze on lit la meguila. On aurait pu enseigner : le quatorze de ce mois, dans les bourgades ; mais on a retenu le quinze parce que c&#x27;est la date des autres mesures, comme la reparation des chemins, etc.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La michna de Chekalim place au 15 adar la sortie effective des agents du tribunal, et elle enumere exactement les memes travaux que notre michna attribue a hol hamoed : chemins, places, mikvaot, marquage des tombes, kilayim.</p><p>Rachi explique pourquoi seuls les kilayim font difficulte. Chemins et places se degradent sous les pluies et se reparent deux fois sans contradiction. L'arrachage des kilayim, lui, est cense etre <b>complet</b> : une fois les pousses arrachees en adar, une seconde sortie a Pessah devient incomprehensible.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבִּי אֶלְעָזָר וְרַבִּי יוֹסֵי בַּר חֲנִינָא, חַד אָמַר: כָּאן בְּבַכִּיר, כָּאן בְּאָפִיל. וְחַד אָמַר: כָּאן בִּזְרָעִים, כָּאן בִּירָקוֹת.</div>
+            <div class="fr"><p>Rabbi Elazar et Rabbi Yossi bar Hanina : l&#x27;un dit, ici il s&#x27;agit de la semence precoce, la de la semence tardive ; et l&#x27;autre dit, ici il s&#x27;agit des cereales, la des legumes.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כָּאן בְּבַכִּיר כָּאן בְּאָפִיל</b> עַל הַבַּכִּירוֹת יוֹצְאִים בט&quot;ו בַּאֲדָר עַל הָאֲפֵילוֹת בְּחֻולּוֹ שֶׁל מוֹעֵד דְּפֶסַח:</div>
+          <div class="glose-fr">Ici la precoce, la la tardive — pour les cultures precoces on sort le 15 adar, pour les tardives a hol hamoed de Pessah.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בִּזְרָעִים</b> עַל הַתְּבוּאָה יוֹצְאִין בט&quot;ו בַּאֲדָר שֶׁקּוֹדְמִין לִירָקוֹת:</div>
+          <div class="glose-fr">Les cereales — pour le grain on sort le 15 adar, car il vient avant les legumes.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Les deux resolutions partagent la meme forme : les deux michnayot traitent de cultures differentes, dont les pousses ne deviennent reconnaissables qu'a des dates differentes. Une seule sortie ne peut donc pas les couvrir toutes.</p><p>Le premier avis oppose le <b>bakhir</b>, la semence precoce, visible des le 15 adar, a l'<b>afil</b>, la semence tardive, identifiable seulement a hol hamoed de Pessah. Le second oppose les <b>cereales</b>, semees en hiver et deja hautes en adar, aux <b>legumes</b>, qui viennent plus tard.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+ <rect x="0" y="0" width="760" height="330" fill="#ffffff"/>
+ <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1e293b">Sortir contre les kilayim : deux dates, une contradiction, deux resolutions</text>
+
+ <line x1="60" y1="100" x2="710" y2="100" stroke="#94a3b8" stroke-width="2"/>
+ <circle cx="130" cy="100" r="6" fill="#6366f1"/>
+ <circle cx="340" cy="100" r="6" fill="#6366f1"/>
+ <circle cx="640" cy="100" r="6" fill="#6366f1"/>
+
+ <rect x="55" y="48" width="150" height="38" rx="6" fill="#eef2ff" stroke="#6366f1"/>
+ <text x="130" y="65" text-anchor="middle" font-size="12" fill="#1e293b">1er adar</text>
+ <text x="130" y="80" text-anchor="middle" font-size="11" fill="#475569">on proclame</text>
+
+ <rect x="262" y="48" width="156" height="38" rx="6" fill="#eef2ff" stroke="#6366f1"/>
+ <text x="340" y="65" text-anchor="middle" font-size="12" fill="#1e293b">15 adar</text>
+ <text x="340" y="80" text-anchor="middle" font-size="11" fill="#475569">on sort arracher</text>
+
+ <rect x="556" y="48" width="168" height="38" rx="6" fill="#eef2ff" stroke="#6366f1"/>
+ <text x="640" y="65" text-anchor="middle" font-size="12" fill="#1e293b">hol hamoed de Pessah</text>
+ <text x="640" y="80" text-anchor="middle" font-size="11" fill="#475569">on ressort arracher</text>
+
+ <text x="380" y="132" text-anchor="middle" font-size="12.5" fill="#7f1d1d">Objection : si tout a ete arrache le 15 adar, pourquoi ressortir a hol hamoed ?</text>
+
+ <rect x="45" y="150" width="330" height="82" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
+ <text x="210" y="171" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1e293b">Premier avis</text>
+ <text x="210" y="192" text-anchor="middle" font-size="12" fill="#334155">15 adar : la semence precoce (bakhir)</text>
+ <text x="210" y="212" text-anchor="middle" font-size="12" fill="#334155">hol hamoed : la semence tardive (afil)</text>
+
+ <rect x="395" y="150" width="330" height="82" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
+ <text x="560" y="171" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1e293b">Second avis</text>
+ <text x="560" y="192" text-anchor="middle" font-size="12" fill="#334155">15 adar : les cereales</text>
+ <text x="560" y="212" text-anchor="middle" font-size="12" fill="#334155">hol hamoed : les legumes</text>
+
+ <rect x="45" y="248" width="680" height="64" rx="6" fill="#e0f2fe" stroke="#0284c7"/>
+ <text x="385" y="270" text-anchor="middle" font-size="12.5" fill="#075985">Pourquoi hol hamoed ? Les ouvriers chomant, ils baissent leur prix (Rabbi Yaakov au nom de Rabbi Yohanan).</text>
+ <text x="385" y="292" text-anchor="middle" font-size="12.5" fill="#075985">D ou Rav Zevid deduit que leur salaire sort du prelevement de la chambre, et non de la poche des proprietaires.</text>
+</svg></div><div class="svg-cap">Les deux dates et les deux manieres de les repartir entre types de cultures.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַבִּי אַסִּי אָמַר רַבִּי יוֹחָנָן: לֹא שָׁנוּ אֶלָּא שֶׁאֵין נִיצָּן נִיכָּר, אֲבָל נִיצָּן נִיכָּר — יוֹצְאִין עֲלֵיהֶן.</div>
+            <div class="fr"><p>Rabbi Assi a dit au nom de Rabbi Yohanan : on n&#x27;a enseigne cela que lorsque leur bourgeon n&#x27;est pas reconnaissable ; mais si leur bourgeon est reconnaissable, on sort pour eux.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא שָׁנוּ</b> דְּאֵין יוֹצְאִין עֲלֵיהֶן קֹודֶם אֲדָר וְקֹודֶם חֻולּוֹ שֶׁל מוֹעֵד:</div>
+          <div class="glose-fr">On n&#x27;a enseigne cela — a savoir qu&#x27;on ne sort pas pour eux avant adar ni avant hol hamoed.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabbi Yohanan degage le critere qui commande les deux dates : la <b>reconnaissabilite du bourgeon</b>. Les dates fixees par les michnayot valent pour le cas ordinaire, ou la pousse ne se laisse pas identifier plus tot.</p><p>Des lors que le bourgeon se distingue, l'obligation d'arracher s'ouvre immediatement, sans attendre le 15 adar ni hol hamoed. Le calendrier suit l'etat du champ.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאי שְׁנָא בְּחֻולּוֹ שֶׁל מוֹעֵד דְּנָפְקִינַן? אָמַר רַבִּי יַעֲקֹב אָמַר רַבִּי יוֹחָנָן: מִשּׁוּם שְׂכַר פְּעוּלָה דְּמוֹזְלִי גַּבַּן.</div>
+            <div class="fr"><p>Qu&#x27;y a-t-il de particulier a hol hamoed pour qu&#x27;on sorte alors ? Rabbi Yaakov a dit au nom de Rabbi Yohanan : a cause du salaire du travail, car ils nous le baissent.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִשּׁוּם שְׂכַר פְּעוּלָה דְּמוֹזְלִי גַּבַּן</b> כְּלוֹמַר שֶׁיָּכוֹל לִשְׂכֹּור פּוֹעֲלִין בְּזוֹל לְפִי שֶׁאֵינָן עוֹסְקִין בִּמְלָאכָה בְּחֻולּוֹ שֶׁל מוֹעֵד:</div>
+          <div class="glose-fr">A cause du salaire du travail, car ils nous le baissent — c&#x27;est-a-dire qu&#x27;on peut embaucher des ouvriers a bas prix, parce qu&#x27;ils ne sont pas occupes a leur travail pendant hol hamoed.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">דְּמוֹזְלִי גַּבָּן. לָמֶ&quot;ד לְקַמָּן (מוֹעֵד קָטָן דַּף יג.) שְׂכַר פְּעֻולָּה שֶׁאֵין לוֹ מַה יֹּאכַל שְׁרֵי נִיחָא שֶׁיְּכוֹלִין לִיטֹּול שְׂכָרָן אֶלָּא לְמַאן דְּאָמַר אָסוּר לָא יָדְעִינַן הֵיכָן יִשְׂכְּרוּ פּוֹעֲלִים בַּמּוֹעֵד וְשֶׁמָּא יֵשׁ לוֹמַר דְּהָנֵי דְּמִצְוֹת הִתִּירוּ:</div>
+          <div class="glose-fr">Car ils nous le baissent. Pour l&#x27;avis rapporte plus loin (Moed Katan 13a) selon lequel le salaire d&#x27;un ouvrier qui n&#x27;a pas de quoi manger est permis, la chose se comprend : ils peuvent recevoir leur salaire. Mais pour celui qui l&#x27;interdit, on ne voit pas ou l&#x27;on trouverait des ouvriers a embaucher pendant la fete. On peut peut-etre dire que, s&#x27;agissant d&#x27;un travail de mitsva, on l&#x27;a permis.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La question porte maintenant sur le choix de la periode. La reponse est economique : les ouvriers chomant pendant les jours intermediaires, ils acceptent un <b>salaire reduit</b>, et le tribunal fait arracher les kilayim au meilleur cout.</p><p>Tossefot souleve la difficulte. Le travail est interdit a hol hamoed, et l'avis rapporte en 13a qui n'autorise le travail salarie qu'a celui qui n'a pas de quoi manger laisse ouverte la question de savoir ou trouver des ouvriers. La reponse proposee : le travail accompli pour une <b>mitsva</b> a ete permis.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב זְבִיד וְאִיתֵּימָא רַב מְשַׁרְשְׁיָא: שְׁמַע מִינָּה, כִּי יָהֲבִינַן לְהוּ שָׂכָר — מִתְּרוּמַת הַלִּשְׁכָּה יָהֲבִינַן לְהוּ. דְּאִי סָלְקָא דַּעְתָּךְ מִדִּידְהוּ יָהֲבִינַן לְהוּ — מַאי נָפְקָא לַן מִינַּייְהוּ? כֹּל כַּמָּה דְּבָעוּ לִיתֵּן לְהוּ!</div>
+            <div class="fr"><p>Rav Zevid a dit, et certains disent Rav Mecharchia : apprends-en que, lorsqu&#x27;on leur donne un salaire, c&#x27;est du prelevement de la chambre qu&#x27;on le leur donne. Car s&#x27;il te venait a l&#x27;esprit qu&#x27;on le leur donne de leurs propres deniers, quel interet y aurions-nous ?</p><p>Qu&#x27;ils leur donnent tout ce qu&#x27;ils veulent !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שְׁמַע מִינָּה</b> מִדְּעָסְקִינַן לִשְׂכֹּור פּוֹעֲלִים בְּזוֹל:</div>
+          <div class="glose-fr">Apprends-en — du fait que l&#x27;on cherche a embaucher des ouvriers a bas prix.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כִּי יָהֲבִינַן לְהוּ</b> שְׂכִירוּת לַפּוֹעֲלִים דְּבָטְלִי כִּלְאַיִם:</div>
+          <div class="glose-fr">Lorsqu&#x27;on leur donne — le salaire des ouvriers qui suppriment les kilayim.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּאִי סָלְקָא דַעְתָּךְ מִדִּידְהוּ</b> דְּבַעַל הַבַּיִת יָהֵיב לְהוּ אַמַּאי יוֹצְאִין לְהָכִי בְּחֻולּוֹ שֶׁל מוֹעֵד מִשּׁוּם שְׂכַר פְּעֻולָּה לְבַטְּלוֹ בְּכָל זְמַן אַף עַל גַּב דְּלֵיכָּא שְׂכַר פְּעֻולָּה בְּזוֹל וְכָל מַה דְּבָעֵי לְיַתֵּב לְהוּ אֶלָּא מִתְּרוּמַת הַלִּשְׁכָּה יָהֲבִינַן לְהוּ וְכָל כַּמָּה דְּמָצֵינַן לְצַמְצֵם מָעוֹת דְּהֶקְדֵּשׁ עָבְדִינַן:</div>
+          <div class="glose-fr">Car s&#x27;il te venait a l&#x27;esprit que c&#x27;est de leurs deniers — que le proprietaire du champ les paie : pourquoi sortirait-on justement a hol hamoed a cause du prix de la main-d&#x27;oeuvre ? Que l&#x27;on supprime les kilayim a n&#x27;importe quel moment, meme sans main-d&#x27;oeuvre bon marche, et que le proprietaire paie tout ce qu&#x27;ils demandent. Il faut donc dire qu&#x27;on les paie du prelevement de la chambre, et que l&#x27;on economise l&#x27;argent consacre autant qu&#x27;on le peut.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">מִתְּרוּמַת הַלִּשְׁכָּה. אֵין לְהַקְשׁוֹת הָא אִית בָּהֶן מְעִילָה דְּלֵב ב&quot;ד מַתְנֶה עֲלַיְיהוּ וּבְפֶרֶק בָּתְרָא דִּכְתֻובּוֹת (דַּף קו. וְשָׁם) אִיכָּא מִילֵּי טוּבָא שֶׁנּוֹטְלִין שְׂכָרָן מִתְּרוּמַת הַלִּשְׁכָּה:</div>
+          <div class="glose-fr">Du prelevement de la chambre. Il n&#x27;y a pas lieu d&#x27;objecter qu&#x27;il y aurait la un detournement de biens consacres, car le tribunal pose d&#x27;avance une condition a leur sujet ; et au dernier chapitre de Ketoubot (106a) sont enumerees de nombreuses fonctions dont les titulaires recoivent leur salaire du prelevement de la chambre.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Zevid raisonne a partir du souci d'economie. Le tribunal ne choisirait pas une periode a bas salaires si la depense pesait sur les proprietaires des champs : leur bourse n'interesse pas la cour, et ils paieraient au prix demande, a n'importe quelle date.</p><p>Le choix de hol hamoed revele donc que la depense est publique et sort de la <b>teroumat halichka</b>, le prelevement de la chambre du Temple. L'argent etant consacre, on le menage autant qu'il est possible. Tossefot ecarte l'objection de <b>meila</b>, le detournement de biens consacres, par la condition que le tribunal pose d'avance sur ces fonds.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+ <rect x="0" y="0" width="700" height="250" fill="#ffffff"/>
+ <text x="350" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#1e293b">Qui paie les ouvriers qui arrachent les kilayim ?</text>
+
+ <rect x="30" y="42" width="300" height="180" rx="6" fill="#fef2f2" stroke="#dc2626"/>
+ <text x="180" y="64" text-anchor="middle" font-size="12.5" font-weight="700" fill="#7f1d1d">Hypothese ecartee</text>
+ <text x="180" y="90" text-anchor="middle" font-size="12" fill="#334155">le proprietaire du champ paie</text>
+ <line x1="80" y1="104" x2="280" y2="104" stroke="#fecaca"/>
+ <text x="180" y="128" text-anchor="middle" font-size="11.5" fill="#475569">le tribunal n a alors aucun interet</text>
+ <text x="180" y="146" text-anchor="middle" font-size="11.5" fill="#475569">a choisir une periode bon marche</text>
+ <text x="180" y="176" text-anchor="middle" font-size="11.5" fill="#475569">on sortirait a n importe quelle date</text>
+ <text x="180" y="202" text-anchor="middle" font-size="12.5" font-weight="700" fill="#7f1d1d">contredit la michna</text>
+
+ <rect x="370" y="42" width="300" height="180" rx="6" fill="#f0fdf4" stroke="#16a34a"/>
+ <text x="520" y="64" text-anchor="middle" font-size="12.5" font-weight="700" fill="#14532d">Conclusion de Rav Zevid</text>
+ <text x="520" y="90" text-anchor="middle" font-size="12" fill="#334155">le prelevement de la chambre paie</text>
+ <line x1="420" y1="104" x2="620" y2="104" stroke="#bbf7d0"/>
+ <text x="520" y="128" text-anchor="middle" font-size="11.5" fill="#475569">argent consacre : on economise</text>
+ <text x="520" y="146" text-anchor="middle" font-size="11.5" fill="#475569">autant qu on le peut</text>
+ <text x="520" y="176" text-anchor="middle" font-size="11.5" fill="#475569">d ou le choix de hol hamoed,</text>
+ <text x="520" y="202" text-anchor="middle" font-size="11.5" fill="#475569">ou la main-d oeuvre est au plus bas</text>
+</svg></div><div class="svg-cap">La deduction de Rav Zevid : le souci du prix trahit l&#x27;origine de l&#x27;argent.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְעַד כַּמָּה? אָמַר רַב שְׁמוּאֵל בַּר יִצְחָק, כְּאוֹתָהּ שֶׁשָּׁנִינוּ: כָּל סְאָה שֶׁיֵּשׁ בָּהּ</div>
+            <div class="fr"><p>Et jusqu&#x27;a quelle quantite ? Rav Chemouel bar Yitshak a dit : comme ce que nous avons appris — toute sea qui contient</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְעַד כַּמָּה</b> הָוֵי כִּלְאַיִם דְּחַיָּיב לְבַטְּלוֹ:</div>
+          <div class="glose-fr">Et jusqu&#x27;a quelle quantite — y a-t-il des kilayim que l&#x27;on est tenu de supprimer.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">שֶׁיֵּשׁ בָּהּ רֹובַע. פֵּירוּשׁ כְּשֶׁרוֹצֶה לִזְרֹועַ דְּהָא קָתָנֵי סֵיפָא ר&#x27; יוֹסֵי אוֹמֵר יָבֹור וְהָא לֹא שַׁייָּךְ בְּנִזְרַע כְּבָר וּבְפֶרֶק הַמּוֹכֵר פֵּירוֹת (ב&quot;ב דַּף צַד. וְשָׁם) מַיְיתֵי לָהּ מִיהוּ בִּשְׁמַעְתִּין דְּאַייְרֵי בְּנִזְרַע כְּבָר יֵשׁ לוֹמַר דְּלָא פְּלִיגִי:</div>
+          <div class="glose-fr">Qui contient un quart de kav. Explication : lorsqu&#x27;on veut semer, car la fin de la michna enseigne que Rabbi Yossi dit qu&#x27;il doit trier, ce qui ne se concoit pas dans un champ deja seme ; ce passage est rapporte au chapitre Hamokher Perot (Baba Batra 94a). Toutefois, dans notre sougya, qui traite d&#x27;un champ deja seme, on peut dire que les avis ne divergent pas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Derniere question du folio : a partir de quelle proportion de melange y a-t-il des kilayim que l'on est tenu de faire arracher. Rav Chemouel bar Yitshak renvoie a la michna de <b>Kilayim</b> 2:1, dont la citation se poursuit en 6b : une sea de semence contenant un quart de kav d'une autre espece.</p><p>Tossefot note que cette michna vise a priori celui qui s'apprete a semer, puisque sa fin fait dire a Rabbi Yossi qu'il doit trier, ce qui ne se concoit plus dans un champ deja seme ; il propose que, dans notre sougya, les avis ne divergent pas.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Moed_Katan_5b.html">&lsaquo; Moed_Katan 5b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Moed_Katan_6b.html">Moed_Katan 6b &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

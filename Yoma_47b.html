@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yoma 47b -- la farine entre les doigts : un doute que nul ne tranchera, et la main comme seule mesure du geste</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Yoma 47b -- la farine entre les doigts : un doute que nul ne tranchera, et la main comme seule mesure du geste</h1>
+    <div class="ref">Yoma 47b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_47a.html">&lsaquo; Yoma 47a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> Le amoud acheve d&#x27;abord la beraita sur la kemitsa des offrandes frites, ou le cohen doit racler le trop-plein du pouce et du petit doigt, et corrige la formule zo hi avoda kacha : c&#x27;est un service parmi les services difficiles, non le seul -- la melika et la hafina portent la meme etiquette. S&#x27;ouvre ensuite la sougya du bein habeinayim : la farine qui s&#x27;insinue entre les doigts du cohen est-elle du kometz ou des cherayim ?</p><p>Rav Papa isole une bande intermediaire, et Yehochoua ben Ouzaa tranche non pas le fond mais le statut du doute lui-meme -- safek irreductible, dont Tossefot tire une nafka mina sur l&#x27;annulation dans un melange. Reste a agir : Rabbi Hanina fixe l&#x27;ordre de combustion, le kometz d&#x27;abord, pour ne pas faire disparaitre des cherayim entre kemitsa et haktara ; mais cet ordre-la se heurte a bal taktirou, puisque l&#x27;offrande a deja donne sa part au feu.</p><p>Deux issues -- la condition lechem etsim de Rabbi Eliezer, et surtout la prevention de Rav Mari : qu&#x27;un cohen gras fasse la kemitsa, ses doigts charnus ne laissant aucun interstice ; solution retenue lekhathila meme pour Rabbi Eliezer. Un siman introduit enfin la serie de Rav Papa : d&#x27;abord le bein habeinayim de la hafina, ou tout depend de la portee du ve-lakah du verset et qui s&#x27;acheve en teikou, puis les questions sur la forme meme du geste.</p><p>Seule la maniere ordinaire est certaine -- comme les gens saisissent une poignee, comme les gens remplissent leurs mains -- et chaque ecart, du bout des doigts, de bas en haut, par le cote, ou main apres main, reste sans reponse.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="470" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Bein habeinayim : la farine coincee entre les doigts du cohen</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">Question de Rabbi Yehochoua ben Ouzaa. Rav Papa decoupe la poignee en trois zones : deux evidentes, une seule litigieuse.</text>
+
+  <rect x="40" y="62" width="680" height="34" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="380" y="84" text-anchor="middle" font-size="11.2" font-weight="700" fill="#78350f">Le cohen referme trois doigts sur la paume -- la farine s'insinue aussi ENTRE les doigts. Kometz ou cherayim ?</text>
+
+  <rect x="30" y="120" width="220" height="180" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="140" y="145" text-anchor="middle" font-size="12" font-weight="700" fill="#1e3a8a">DE GOUAI -- cote interieur</text>
+  <text x="140" y="167" text-anchor="middle" font-size="9.8" fill="#1d4ed8">la farine tournee vers la paume,</text>
+  <text x="140" y="183" text-anchor="middle" font-size="9.8" fill="#1d4ed8">du cote de la main</text>
+  <rect x="52" y="198" width="176" height="82" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.2"/>
+  <text x="140" y="222" text-anchor="middle" font-size="11.4" font-weight="700" fill="#1e3a8a">KOMETZ certain</text>
+  <text x="140" y="243" text-anchor="middle" font-size="9.4" fill="#1e3a8a">la tienne pas pour question :</text>
+  <text x="140" y="258" text-anchor="middle" font-size="9.4" fill="#1e3a8a">elle part a l'autel avec la poignee</text>
+  <text x="140" y="273" text-anchor="middle" font-size="9.4" font-weight="700" fill="#1e3a8a">-&gt; haktara</text>
+
+  <rect x="270" y="120" width="220" height="180" fill="#fef2f2" stroke="#dc2626" stroke-width="2.4"/>
+  <text x="380" y="145" text-anchor="middle" font-size="12" font-weight="700" fill="#7f1d1d">BEINI BEINI -- entre-deux</text>
+  <text x="380" y="167" text-anchor="middle" font-size="9.8" fill="#991b1b">ni franchement dedans</text>
+  <text x="380" y="183" text-anchor="middle" font-size="9.8" fill="#991b1b">ni franchement dehors</text>
+  <rect x="292" y="198" width="176" height="82" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.2"/>
+  <text x="380" y="222" text-anchor="middle" font-size="11.4" font-weight="700" fill="#7f1d1d">SAFEK -- doute</text>
+  <text x="380" y="243" text-anchor="middle" font-size="9.4" fill="#7f1d1d">hadar pachta : il tranche lui-meme</text>
+  <text x="380" y="258" text-anchor="middle" font-size="9.4" fill="#7f1d1d">que c'est un doute irreductible</text>
+  <text x="380" y="273" text-anchor="middle" font-size="9.4" font-weight="700" fill="#7f1d1d">-&gt; toute la sougya part de la</text>
+
+  <rect x="510" y="120" width="220" height="180" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="620" y="145" text-anchor="middle" font-size="12" font-weight="700" fill="#14532d">DE BARAI -- cote exterieur</text>
+  <text x="620" y="167" text-anchor="middle" font-size="9.8" fill="#166534">la farine tournee vers le dehors,</text>
+  <text x="620" y="183" text-anchor="middle" font-size="9.8" fill="#166534">hors de la prise</text>
+  <rect x="532" y="198" width="176" height="82" fill="#dcfce7" stroke="#15803d" stroke-width="1.2"/>
+  <text x="620" y="222" text-anchor="middle" font-size="11.4" font-weight="700" fill="#14532d">CHERAYIM certains</text>
+  <text x="620" y="243" text-anchor="middle" font-size="9.4" fill="#14532d">la tienne pas pour question :</text>
+  <text x="620" y="258" text-anchor="middle" font-size="9.4" fill="#14532d">c'est du reste, mange par les cohanim</text>
+  <text x="620" y="273" text-anchor="middle" font-size="9.4" font-weight="700" fill="#14532d">-&gt; akhila</text>
+
+  <line x1="380" y1="300" x2="380" y2="326" stroke="#78716c" stroke-width="1.6"/>
+
+  <rect x="90" y="328" width="580" height="122" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+  <text x="380" y="352" text-anchor="middle" font-size="12.4" font-weight="700" fill="#5b21b6">Pourquoi ce doute est-il paralysant ?</text>
+  <text x="380" y="376" text-anchor="middle" font-size="10" fill="#4c1d95">Les deux destinations sont exclusives ET obligatoires : ce qui est kometz DOIT bruler,</text>
+  <text x="380" y="394" text-anchor="middle" font-size="10" fill="#4c1d95">ce qui est cherayim NE DOIT PAS bruler -- et sa disparition invalide la haktara du kometz.</text>
+  <text x="380" y="418" text-anchor="middle" font-size="10.4" font-weight="700" fill="#5b21b6">Impossible de laisser en suspens : cette poignee-la doit etre traitee aujourd'hui.</text>
+  <text x="380" y="438" text-anchor="middle" font-size="9.6" fill="#6d28d9">D'ou la question de Rabbi Hanina : heikhi avid -- comment fait-il, concretement ?</text>
+</svg></div>
+          <figcaption>Les trois zones de la poignee selon Rav Papa : ce qui regarde vers la paume est du kometz, ce qui regarde vers l&#x27;exterieur est des cherayim, et seule la bande intermediaire coincee entre les doigts reste un doute -- doute paralysant, parce que les deux destinations possibles sont a la fois exclusives et obligatoires.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 560" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="560" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Heikhi avid : le piege de l'ordre de combustion, et ses deux sorties</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">Quel que soit l'ordre choisi, un interdit menace. La guemara ferme une porte, puis en ouvre deux autres.</text>
+
+  <rect x="30" y="62" width="330" height="152" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="195" y="86" text-anchor="middle" font-size="12" font-weight="700" fill="#7f1d1d">ORDRE A -- l'entre-deux D'ABORD</text>
+  <text x="195" y="110" text-anchor="middle" font-size="9.8" fill="#991b1b">je brule le bein habeinayim, puis le kometz</text>
+  <line x1="52" y1="122" x2="338" y2="122" stroke="#fca5a5" stroke-width="1.2"/>
+  <text x="195" y="144" text-anchor="middle" font-size="9.8" fill="#7f1d1d">si c'etaient des cherayim, je viens de les faire</text>
+  <text x="195" y="160" text-anchor="middle" font-size="9.8" fill="#7f1d1d">disparaitre entre kemitsa et haktara</text>
+  <rect x="60" y="170" width="270" height="36" fill="#fecaca" stroke="#b91c1c" stroke-width="1.2"/>
+  <text x="195" y="193" text-anchor="middle" font-size="10.2" font-weight="700" fill="#7f1d1d">-&gt; on ne fait plus fumer le kometz pour eux</text>
+
+  <rect x="400" y="62" width="330" height="152" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+  <text x="565" y="86" text-anchor="middle" font-size="12" font-weight="700" fill="#713f12">ORDRE B -- le kometz D'ABORD</text>
+  <text x="565" y="110" text-anchor="middle" font-size="9.8" fill="#854d0e">je brule le kometz seul, puis le bein habeinayim</text>
+  <line x1="422" y1="122" x2="708" y2="122" stroke="#fde047" stroke-width="1.4"/>
+  <text x="565" y="144" text-anchor="middle" font-size="9.8" fill="#713f12">mais si c'etaient des cherayim, l'offrande a deja</text>
+  <text x="565" y="160" text-anchor="middle" font-size="9.8" fill="#713f12">donne sa part au feu -- kol chemimenou la-ichim</text>
+  <rect x="430" y="170" width="270" height="36" fill="#fef08a" stroke="#a16207" stroke-width="1.2"/>
+  <text x="565" y="193" text-anchor="middle" font-size="10.2" font-weight="700" fill="#713f12">-&gt; interdit de bal taktirou</text>
+
+  <line x1="565" y1="214" x2="565" y2="244" stroke="#78716c" stroke-width="1.6"/>
+  <text x="565" y="238" text-anchor="middle" font-size="10" font-weight="700" fill="#44403c">l'ordre B est le bon -- reste a neutraliser SON probleme</text>
+
+  <rect x="30" y="250" width="700" height="30" fill="#f5f5f4" stroke="#a8a29e" stroke-width="1.4"/>
+  <text x="380" y="270" text-anchor="middle" font-size="10.8" font-weight="700" fill="#292524">Deux reponses, l'une conditionnelle, l'autre preventive</text>
+
+  <rect x="30" y="296" width="330" height="170" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="195" y="320" text-anchor="middle" font-size="11.8" font-weight="700" fill="#1e3a8a">REPONSE 1 -- lechem etsim</text>
+  <text x="195" y="341" text-anchor="middle" font-size="9.6" fill="#1d4ed8">R. Yehouda fils de R. Chimon ben Pazi</text>
+  <text x="195" y="362" text-anchor="middle" font-size="9.6" fill="#1e3a8a">il pose une condition en brulant : si ce sont</text>
+  <text x="195" y="378" text-anchor="middle" font-size="9.6" fill="#1e3a8a">des cherayim, que ce soit du simple BOIS</text>
+  <text x="195" y="400" text-anchor="middle" font-size="9.6" fill="#1d4ed8">appui : Rabbi Eliezer -- le-reah nihoah tu n'en</text>
+  <text x="195" y="416" text-anchor="middle" font-size="9.6" fill="#1d4ed8">fais pas monter, mais lechem etsim, oui</text>
+  <rect x="58" y="426" width="274" height="32" fill="#fee2e2" stroke="#dc2626" stroke-width="1.2"/>
+  <text x="195" y="447" text-anchor="middle" font-size="9.8" font-weight="700" fill="#7f1d1d">limite : ne marche pas selon les Rabbanan</text>
+
+  <rect x="400" y="296" width="330" height="170" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="565" y="320" text-anchor="middle" font-size="11.8" font-weight="700" fill="#14532d">REPONSE 2 -- de-kamtsei chemini</text>
+  <text x="565" y="341" text-anchor="middle" font-size="9.6" fill="#166534">Rav Mari</text>
+  <text x="565" y="362" text-anchor="middle" font-size="9.6" fill="#14532d">ce sont des cohanim GRAS qui font la kemitsa :</text>
+  <text x="565" y="378" text-anchor="middle" font-size="9.6" fill="#14532d">leurs doigts charnus se pressent l'un contre l'autre</text>
+  <text x="565" y="400" text-anchor="middle" font-size="9.6" font-weight="700" fill="#166534">il n'y a plus d'entre-deux du tout</text>
+  <text x="565" y="416" text-anchor="middle" font-size="9.6" fill="#166534">le doute n'est pas resolu : il est empeche de naitre</text>
+  <rect x="428" y="426" width="274" height="32" fill="#dcfce7" stroke="#15803d" stroke-width="1.2"/>
+  <text x="565" y="447" text-anchor="middle" font-size="9.8" font-weight="700" fill="#14532d">retenu meme pour R. Eliezer -- lekhathila</text>
+
+  <rect x="140" y="480" width="480" height="66" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.8"/>
+  <text x="380" y="503" text-anchor="middle" font-size="10.6" font-weight="700" fill="#5b21b6">Renversement final : hachta de-atit lehakhi</text>
+  <text x="380" y="524" text-anchor="middle" font-size="9.8" fill="#4c1d95">meme R. Eliezer, qui a une porte de sortie, prefere qu'on choisisse un cohen gras d'avance --</text>
+  <text x="380" y="539" text-anchor="middle" font-size="9.8" fill="#4c1d95">sa permission ne visait que le cas subi (melange d'organes), non le doute qu'on pouvait eviter.</text>
+</svg></div>
+          <figcaption>Le piege de l&#x27;ordre de combustion : bruler l&#x27;entre-deux en premier risque de faire disparaitre des cherayim avant la haktara du kometz ; le bruler en second risque de tomber sous bal taktirou. La guemara garde le second ordre et le desamorce deux fois -- par la condition lechem etsim de Rabbi Eliezer, puis par la prevention de Rav Mari : confier la kemitsa a un cohen gras.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 500" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="500" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Les quatre questions de Rav Papa sur le GESTE -- et pourquoi il les pose deux fois</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">Un seul point est acquis : ke-de-kamtsei / ke-de-hafnei inchei, comme font les gens. Tout ecart est teikou.</text>
+
+  <rect x="30" y="62" width="700" height="36" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="380" y="78" text-anchor="middle" font-size="11.2" font-weight="700" fill="#14532d">PECHITA LI -- ce qui est evident : la mesure de la Tora, c'est le geste ordinaire d'un homme</text>
+  <text x="380" y="93" text-anchor="middle" font-size="9.6" fill="#166534">kemitsa : le cote des doigts vers le bas -- hafina : la tranche de la paume vers le bas</text>
+
+  <rect x="30" y="118" width="340" height="240" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="200" y="142" text-anchor="middle" font-size="12.4" font-weight="700" fill="#1e3a8a">KEMITSA -- la poignee de la minha</text>
+  <text x="200" y="160" text-anchor="middle" font-size="9.4" fill="#1d4ed8">trois doigts rabattus sur la paume</text>
+  <rect x="52" y="172" width="296" height="40" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+  <text x="200" y="189" text-anchor="middle" font-size="10" font-weight="700" fill="#1e3a8a">1. be-rachei etsbe'otav -- du bout des doigts</text>
+  <text x="200" y="205" text-anchor="middle" font-size="9" fill="#1e40af">paume en bas, doigts plantes dans la farine</text>
+  <rect x="52" y="218" width="296" height="40" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+  <text x="200" y="235" text-anchor="middle" font-size="10" font-weight="700" fill="#1e3a8a">2. mi-lemata le-maala -- de bas en haut</text>
+  <text x="200" y="251" text-anchor="middle" font-size="9" fill="#1e40af">dos de la main en bas, il remonte vers la paume</text>
+  <rect x="52" y="264" width="296" height="40" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+  <text x="200" y="281" text-anchor="middle" font-size="10" font-weight="700" fill="#1e3a8a">3. min ha-tsedadin -- par les cotes</text>
+  <text x="200" y="297" text-anchor="middle" font-size="9" fill="#1e40af">la farine entre d'elle-meme entre les doigts</text>
+  <rect x="90" y="314" width="220" height="30" fill="#e7e5e4" stroke="#57534e" stroke-width="1.4"/>
+  <text x="200" y="334" text-anchor="middle" font-size="11" font-weight="700" fill="#292524">TEIKOU</text>
+
+  <rect x="390" y="118" width="340" height="240" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="560" y="142" text-anchor="middle" font-size="12.4" font-weight="700" fill="#78350f">HAFINA -- les deux mains d'encens</text>
+  <text x="560" y="160" text-anchor="middle" font-size="9.4" fill="#92400e">les deux paumes jointes, Yom Kippour</text>
+  <rect x="412" y="172" width="296" height="40" fill="#fef08a" stroke="#a16207" stroke-width="1"/>
+  <text x="560" y="189" text-anchor="middle" font-size="10" font-weight="700" fill="#78350f">1. du bout des doigts</text>
+  <text x="560" y="205" text-anchor="middle" font-size="9" fill="#854d0e">meme question -- mais le geste n'est pas le meme</text>
+  <rect x="412" y="218" width="296" height="40" fill="#fef08a" stroke="#a16207" stroke-width="1"/>
+  <text x="560" y="235" text-anchor="middle" font-size="10" font-weight="700" fill="#78350f">2. de bas en haut / 3. par le cote</text>
+  <text x="560" y="251" text-anchor="middle" font-size="9" fill="#854d0e">le dos de la main promene sur la ketoret</text>
+  <rect x="412" y="264" width="296" height="40" fill="#fed7aa" stroke="#c2410c" stroke-width="1.2"/>
+  <text x="560" y="281" text-anchor="middle" font-size="10" font-weight="700" fill="#7c2d12">4. hafan be-zo ou-ve-zo -- une main puis l'autre</text>
+  <text x="560" y="297" text-anchor="middle" font-size="9" fill="#7c2d12">puis il les rapproche : cas propre a la hafina</text>
+  <rect x="450" y="314" width="220" height="30" fill="#e7e5e4" stroke="#57534e" stroke-width="1.4"/>
+  <text x="560" y="334" text-anchor="middle" font-size="11" font-weight="700" fill="#292524">TEIKOU</text>
+
+  <rect x="60" y="376" width="640" height="112" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.8"/>
+  <text x="380" y="399" text-anchor="middle" font-size="11.8" font-weight="700" fill="#5b21b6">Pourquoi reposer les memes questions pour la hafina ? -- reponse de Tossefot</text>
+  <text x="380" y="422" text-anchor="middle" font-size="9.8" fill="#4c1d95">La guemara elle-meme avait objete plus haut : heinou hakh, c'est la meme chose !</text>
+  <text x="380" y="442" text-anchor="middle" font-size="9.8" fill="#4c1d95">Mais la norme de reference differe : l'une se mesure sur ke-de-kamtsei inchei, l'autre sur ke-de-hafnei inchei.</text>
+  <text x="380" y="464" text-anchor="middle" font-size="10.2" font-weight="700" fill="#5b21b6">Meme si tu tranches ce qui est ecart pour la poignee, rien ne dit que c'est un ecart pour les deux mains.</text>
+  <text x="380" y="481" text-anchor="middle" font-size="9.4" fill="#6d28d9">L'objection heinou hakh ne vaut que pour ce qui se transporte par guezera chava, pas pour la forme du geste.</text>
+</svg></div>
+          <figcaption>Les questions de Rav Papa sur la forme du geste : seule la maniere ordinaire est certaine, les trois ecarts restent teikou pour la kemitsa, et Rav Papa les repose pour la hafina en y ajoutant un quatrieme cas -- remplir chaque main separement puis les joindre.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּבְמַחֲבַת וּבְמַרְחֶשֶׁת, מוֹחֵק בְּגוֹדְלוֹ מִלְמַעְלָה, וּבְאֶצְבָּעוֹ קְטַנָּה מִלְּמַטָּה. וְזוֹ הִיא עֲבוֹדָה קָשָׁה שֶׁבַּמִּקְדָּשׁ. זוֹ הִיא וְתוּ לָא? וְהָא אִיכָּא מְלִיקָה, וְהָא אִיכָּא חֲפִינָה! אֶלָּא: זוֹ הִיא מֵעֲבוֹדוֹת קָשׁוֹת שֶׁבַּמִּקְדָּשׁ.</div>
+            <div class="fr"><p>Et pour la mahavat (offrande frite a la poele) et la marhechet (offrande cuite dans un recipient profond), il efface avec son pouce ce qui deborde par-dessus, et avec son petit doigt ce qui deborde par-dessous. Et voila le service difficile du Temple. -- Celui-la, et rien de plus ?</p><p>Mais il y a la melika (l&#x27;egorgement de l&#x27;oiseau par la nuque, a l&#x27;ongle), et il y a la hafina (la pleine prise d&#x27;encens a deux mains) ! -- Dis plutot : c&#x27;est l&#x27;un des services difficiles du Temple.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּבְמַחֲבַת וּבְמַרְחֶשֶׁת</b> שֶׁהוּא מִינֵי טִיגּוּן שֶׁהֵן אֲפוּיוֹת תְּחִילָּה וְחוֹזֵר וּפוֹתְתָן וְקָשֶׁה קְמִיצָתָן מִלִּהְיוֹת מְבֹורֶצֶת יוֹתֵר מִקְּמִיצַת מִנְחַת סֹולֶת שֶׁבֵּירוּצֶיהָ נוֹפְלִין מֵאֲלֵיהֶן צָרִיךְ לִהְיוֹת מוֹחֵק בְּגוֹדְלוֹ בֵּירוּצִין שֶׁל מַעְלָה וּבְאֶצְבָּעוֹ קְטַנָּה בֵּירוּצִין שֶׁל מַטָּה:</div>
+          <div class="glose-fr">Ce sont des sortes de fritures : elles sont d&#x27;abord cuites, puis on les emiette de nouveau, et leur kemitsa est plus difficile a tenir sans debordement (mevoretset) que celle de l&#x27;offrande de fleur de farine, dont les debordements tombent d&#x27;eux-memes. Il lui faut donc effacer avec son pouce les debordements du dessus, et avec son petit doigt ceux du dessous.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהָאִיכָּא מְלִיקָה</b> דְּתַנְיָא בָּהּ נָמֵי וְזוֹ הִיא עֲבוֹדָה קָשָׁה (בְּהַכֹּל שׁוֹחֲטִין):</div>
+          <div class="glose-fr">Car il est enseigne a son sujet aussi : et voila un service difficile (au chapitre Hakol chohatin).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהָא אִיכָּא חֲפִינָה</b> שֶׁבִּפְנִים דְּתַנְיָא בָּהּ נָמֵי לְקַמָּן בְּפִירְקִין (יוֹמָא דַּף מט:) וְזוֹ הִיא עֲבוֹדָה קָשָׁה:</div>
+          <div class="glose-fr">Celle qui se fait a l&#x27;interieur du Saint des Saints, car il est enseigne a son sujet aussi, plus loin dans notre chapitre (Yoma 49b) : et voila un service difficile.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">הָכִי גָּרְסִינַן אֵימָא זוֹ הִיא עֲבוֹדָה מֵעֲבוֹדוֹת קָשָׁה שֶׁבַּמִּקְדָּשׁ:</div>
+          <div class="glose-fr">Voici notre lecon : dis plutot -- c&#x27;est un service parmi les services difficiles du Temple.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְזוֹ הִיא עֲבוֹדָה קָשָׁה שֶׁבַּמִּקְדָּשׁ</b> סְבִירָא לֵיהּ כְּמַאן דְּאָמַר בְּפֶרֶק אֵלּוּ מְנָחוֹת (מְנָחוֹת דַּף עה:) שֶׁהָיָה קוֹפֵל אֶחָד לִשְׁנַיִם וּשְׁנַיִם לְאַרְבָּעָה אֲבָל לְתַנָּא דְּבֵי רַבִּי יִשְׁמָעֵאל דְּאָמַר פּוֹתְחָן עַד שֶׁמַּחֲזִירָן לְסָולְתָּן אֵינָהּ עֲבוֹדָה קָשֶׁה יוֹתֵר מִשְּׁאָר מְנָחוֹת:</div>
+          <div class="glose-fr">Il tient comme celui qui dit au chapitre Elou menahot (Menahot 75b) qu&#x27;il pliait le gateau en deux, et les deux en quatre ; mais selon le tana de l&#x27;ecole de Rabbi Yichmael, qui dit qu&#x27;on les emiette jusqu&#x27;a les ramener a l&#x27;etat de farine, ce n&#x27;est pas un service plus difficile que celui des autres offrandes.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le amoud s'ouvre sur la fin de la beraita consacree a la <b>kemitsa</b>, la prise d'une poignee de farine. Pour une offrande de simple fleur de farine, l'exces qui deborde de la poignee (<b>berouts</b>) tombe tout seul. Pour la <b>mahavat</b> et la <b>marhechet</b>, qui sont d'abord cuites puis emiettees, la matiere colle : le cohen doit racler activement le trop-plein, du <b>pouce</b> pour le dessus et du <b>petit doigt</b> pour le dessous.</p><p>La guemara ne conteste pas la difficulte, elle conteste l'article defini : <b>zo hi ve-tou lo</b> -- celui-la, et aucun autre ? Deux autres services portent la meme etiquette dans leurs propres beraitot : la <b>melika</b> (Houlin 21a) et la <b>hafina</b> de Yom Kippour, dont notre traite dira la meme chose plus loin (49b). La correction est purement grammaticale et vaut pour les trois sources : lire <b>me-avodot kachot</b>, un service parmi les services difficiles.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַבִּי יוֹחָנָן, בָּעֵי רַבִּי יְהוֹשֻׁעַ בֶּן עֻוזָּאָה: בֵּין הַבֵּינַיִם שֶׁל מְלֹא קֻומְצוֹ, מַהוּ? אָמַר רַב פָּפָּא: דְּגַוַּאי לָא תִּיבְּעֵי לָךְ — דְּוַדַּאי קֹומֶץ הוּא. דְּבָרַאי לָא תִּיבְּעֵי לָךְ — דְּוַדַּאי שִׁירַיִם הוּא.</div>
+            <div class="fr"><p>Rabbi Yohanan a dit : Rabbi Yehochoua ben Ouzaa a pose la question -- ce qui se trouve entre les doigts (bein habeinayim) lors de la pleine poignee (melo koumtso), quel est son statut ? Rav Papa a dit : pour ce qui est du cote interieur, ne pose pas la question -- c&#x27;est assurement du kometz.</p><p>Pour ce qui est du cote exterieur, ne pose pas la question -- ce sont assurement des cherayim.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בֵּין הַבֵּינַיִם</b> הַנִּכְנָס בֵּין הָאֶצְבָּעוֹת מַהוּ קֹומֶץ הֵן אוֹ שִׁירַיִים הֵן:</div>
+          <div class="glose-fr">Ce qui s&#x27;introduit entre les doigts : est-ce du kometz ou des cherayim ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle sougya. Le cohen ne prend pas la farine avec un ustensile : il rabat trois doigts sur sa paume. Une main n'est pas etanche -- de la farine s'insinue <b>entre</b> les doigts. Est-elle dans la poignee, donc <b>kometz</b>, destinee a bruler sur l'autel ? Ou est-elle hors de la poignee, donc <b>cherayim</b>, le reste que les cohanim mangent ?</p><p>Rav Papa refuse de traiter la zone comme un bloc : il la decoupe. Ce qui regarde vers la paume (<b>de-gavaei</b>) est evidemment pris ; ce qui regarde vers le dehors (<b>de-baraei</b>) est evidemment laisse. La question ne subsiste que pour ce qui n'est ni l'un ni l'autre.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="470" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Bein habeinayim : la farine coincee entre les doigts du cohen</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">Question de Rabbi Yehochoua ben Ouzaa. Rav Papa decoupe la poignee en trois zones : deux evidentes, une seule litigieuse.</text>
+
+  <rect x="40" y="62" width="680" height="34" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="380" y="84" text-anchor="middle" font-size="11.2" font-weight="700" fill="#78350f">Le cohen referme trois doigts sur la paume -- la farine s'insinue aussi ENTRE les doigts. Kometz ou cherayim ?</text>
+
+  <rect x="30" y="120" width="220" height="180" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="140" y="145" text-anchor="middle" font-size="12" font-weight="700" fill="#1e3a8a">DE GOUAI -- cote interieur</text>
+  <text x="140" y="167" text-anchor="middle" font-size="9.8" fill="#1d4ed8">la farine tournee vers la paume,</text>
+  <text x="140" y="183" text-anchor="middle" font-size="9.8" fill="#1d4ed8">du cote de la main</text>
+  <rect x="52" y="198" width="176" height="82" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.2"/>
+  <text x="140" y="222" text-anchor="middle" font-size="11.4" font-weight="700" fill="#1e3a8a">KOMETZ certain</text>
+  <text x="140" y="243" text-anchor="middle" font-size="9.4" fill="#1e3a8a">la tienne pas pour question :</text>
+  <text x="140" y="258" text-anchor="middle" font-size="9.4" fill="#1e3a8a">elle part a l'autel avec la poignee</text>
+  <text x="140" y="273" text-anchor="middle" font-size="9.4" font-weight="700" fill="#1e3a8a">-&gt; haktara</text>
+
+  <rect x="270" y="120" width="220" height="180" fill="#fef2f2" stroke="#dc2626" stroke-width="2.4"/>
+  <text x="380" y="145" text-anchor="middle" font-size="12" font-weight="700" fill="#7f1d1d">BEINI BEINI -- entre-deux</text>
+  <text x="380" y="167" text-anchor="middle" font-size="9.8" fill="#991b1b">ni franchement dedans</text>
+  <text x="380" y="183" text-anchor="middle" font-size="9.8" fill="#991b1b">ni franchement dehors</text>
+  <rect x="292" y="198" width="176" height="82" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.2"/>
+  <text x="380" y="222" text-anchor="middle" font-size="11.4" font-weight="700" fill="#7f1d1d">SAFEK -- doute</text>
+  <text x="380" y="243" text-anchor="middle" font-size="9.4" fill="#7f1d1d">hadar pachta : il tranche lui-meme</text>
+  <text x="380" y="258" text-anchor="middle" font-size="9.4" fill="#7f1d1d">que c'est un doute irreductible</text>
+  <text x="380" y="273" text-anchor="middle" font-size="9.4" font-weight="700" fill="#7f1d1d">-&gt; toute la sougya part de la</text>
+
+  <rect x="510" y="120" width="220" height="180" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="620" y="145" text-anchor="middle" font-size="12" font-weight="700" fill="#14532d">DE BARAI -- cote exterieur</text>
+  <text x="620" y="167" text-anchor="middle" font-size="9.8" fill="#166534">la farine tournee vers le dehors,</text>
+  <text x="620" y="183" text-anchor="middle" font-size="9.8" fill="#166534">hors de la prise</text>
+  <rect x="532" y="198" width="176" height="82" fill="#dcfce7" stroke="#15803d" stroke-width="1.2"/>
+  <text x="620" y="222" text-anchor="middle" font-size="11.4" font-weight="700" fill="#14532d">CHERAYIM certains</text>
+  <text x="620" y="243" text-anchor="middle" font-size="9.4" fill="#14532d">la tienne pas pour question :</text>
+  <text x="620" y="258" text-anchor="middle" font-size="9.4" fill="#14532d">c'est du reste, mange par les cohanim</text>
+  <text x="620" y="273" text-anchor="middle" font-size="9.4" font-weight="700" fill="#14532d">-&gt; akhila</text>
+
+  <line x1="380" y1="300" x2="380" y2="326" stroke="#78716c" stroke-width="1.6"/>
+
+  <rect x="90" y="328" width="580" height="122" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+  <text x="380" y="352" text-anchor="middle" font-size="12.4" font-weight="700" fill="#5b21b6">Pourquoi ce doute est-il paralysant ?</text>
+  <text x="380" y="376" text-anchor="middle" font-size="10" fill="#4c1d95">Les deux destinations sont exclusives ET obligatoires : ce qui est kometz DOIT bruler,</text>
+  <text x="380" y="394" text-anchor="middle" font-size="10" fill="#4c1d95">ce qui est cherayim NE DOIT PAS bruler -- et sa disparition invalide la haktara du kometz.</text>
+  <text x="380" y="418" text-anchor="middle" font-size="10.4" font-weight="700" fill="#5b21b6">Impossible de laisser en suspens : cette poignee-la doit etre traitee aujourd'hui.</text>
+  <text x="380" y="438" text-anchor="middle" font-size="9.6" fill="#6d28d9">D'ou la question de Rabbi Hanina : heikhi avid -- comment fait-il, concretement ?</text>
+</svg></div><div class="svg-cap">La decoupe de Rav Papa : deux zones evidentes encadrent une bande intermediaire qui, seule, fait probleme.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כִּי תִּיבְּעֵי לָךְ דְּבֵינֵי בֵּינֵי מַאי. אָמַר רַבִּי יוֹחָנָן: הֲדַר פָּשְׁטָה יְהוֹשֻׁעַ [בֶּן] עוֹזַאָה: בֵּין הַבֵּינַיִם סָפֵק נִינְהוּ.</div>
+            <div class="fr"><p>La question ne se pose que pour ce qui est exactement entre-deux (beini beini) : quel est son statut ? Rabbi Yohanan a dit : Yehochoua ben Ouzaa a ensuite tranche lui-meme -- ce qui est entre les doigts est un safek (un doute).</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָדַר פָּשְׁטָה בֵּין הַבֵּינַיִים סָפֵק</b> לָא יָדַעְנָא מַאי קָאָמַר הָדַר פָּשְׁטָה הָא מֵעִיקָּרָא נָמֵי כִּי הֲוָה מִיבְּעֵי לֵיהּ סָפֵק הוּא וְשֶׁמָּא יֵשׁ לוֹמַר דְּמֵעִיקָּרָא מְסַפְּקָא וַהֲוָה סָלְקָא דַעְתָּךְ לְמִיפְשַׁט הַאי בִּכְלַל קֹומֶץ הוּא אוֹ בִּכְלַל שִׁירַייִם וַהֲדַר פָּשְׁטָה דְּסָפֵק הוּא וְאֵינוֹ בָּא לַחֲזֹור וְלִפְשׁוֹט הַבַּעְיָא אִי וַדַּאי קֹומֶץ אִי וַדַּאי שִׁירַייִם אֶלָּא בְּוַדַּאי סָפֵק הוּא וְאֵין אָדָם יָכוֹל לְעוֹלָם לַעֲמֹוד עָלָיו אִי נָמֵי נִרְאֶה לִי דְּמֵעִיקָּרָא מִיבַּעְיָא לֵיהּ אִי טִיבְלָא הָוֵי כִּדְמֵעִיקָּרָא אִי סָפֵק הָוֵי סָפֵק קֹומֶץ סָפֵק שִׁירַיִים אִי טִיבְלָא הָוֵי כְּמוֹ מַרְבֶּה בַּמַּעַשְׂרוֹת דְּאָמַר (קִדּוּשִׁין דַּף נא.) פֵּירוֹתָיו מְתֻוקָּנִין וּמְעֻשְּׂרוֹתָיו מְקֻולְקָלוֹת דְּכָל מַאי דְּשָׁקִיל טְפֵי מִדִּינֵיהּ וְאֵינוֹ נִרְאֶה בַּחוּץ בְּדַעְתֵּיהּ דְּכֹהֵן תַּלְיָא מִילְּתָא וְאֵין דַּעְתּוֹ שֶׁיְּהֵא קֹומֶץ אֶלָּא דְּגַוַּאי וּמַה שֶׁנִּשְׁאַר בַּכְּלִי וּמַאי דְּבִרְאִי לֶהֱווֹ שִׁירַיִים אֲבָל דְּבֵינֵי בֵּינֵי טִיבְלָא הָוֵי כִּדְמֵעִיקָּרָא קֹודֶם קְמִיצָה אוֹ דִּילְמָא פְּשִׁיטָא דְּטִיבְלָא לָא הָוֵי אֶלָּא סָפֵק אוֹ קֹומֶץ אוֹ שִׁירַייִם הֲדַר פְּשָׁטָהּ דְּסָפֵק הוּא וְנָפְקָא מִינָּהּ אִי טִיבְלָא הָוֵי אִם נִתְעָרֵב בְּחֻולִּין שֶׁבָּעֲזָרָה הַנֶּאֱכָל עִם הַמִּנְחָה כִּדְאָמַר בְּהַקּוֹמֵץ רַבָּה (מְנָחוֹת דַּף כא:) יֹאכְלוּ שֶׁיֹּאכְלוּ עִמָּהּ חֻולִּין כְּדֵי שֶׁתְּהֵא נֶאֱכֶלֶת עַל הַשֹּׂובַע לָא בְּטִיל וְטָבַל בְּמַשֶּׁהוּ וְאִי סְפֵיקָא הָוֵי בְּטִיל:</div>
+          <div class="glose-fr">Je ne sais pas ce que veut dire il a ensuite tranche : des le depart deja, lorsqu&#x27;il posait la question, c&#x27;etait un doute ! On peut peut-etre dire qu&#x27;au depart il hesitait et qu&#x27;on pouvait penser trancher que cela releve du kometz ou bien des cherayim, puis il a tranche que c&#x27;est un doute -- il ne vient donc pas trancher a nouveau si c&#x27;est assurement du kometz ou assurement des cherayim, mais affirmer que c&#x27;est assurement un doute et que nul ne pourra jamais en decider. Ou bien il me semble qu&#x27;au depart il demandait si cela reste tevel comme auparavant, ou si c&#x27;est un doute -- doute de kometz, doute de cherayim. Que ce soit tevel serait comparable a celui qui preleve trop de maasserot, dont on dit (Kidouchin 51a) : ses fruits sont en regle et ses dimes sont gatees ; car tout ce qu&#x27;il prend au-dela de son du et qui n&#x27;apparait pas au-dehors depend de l&#x27;intention du cohen, et son intention n&#x27;est pas que ce soit du kometz sinon ce qui est du cote interieur ; ce qui reste dans le recipient et ce qui est du cote exterieur seraient des cherayim, mais ce qui est exactement entre-deux resterait tevel comme avant la kemitsa. Ou bien, peut-etre, il est evident que ce n&#x27;est pas du tevel mais seulement un doute : ou du kometz ou des cherayim -- et il a ensuite tranche que c&#x27;est un doute. La nafka mina : si c&#x27;etait du tevel et que cela se melangeait a du houlin de la azara qui se mange avec l&#x27;offrande -- comme il est dit dans Hakometz rabba (Menahot 21b) : ils mangeront, c&#x27;est-a-dire qu&#x27;ils mangent avec elle du houlin afin qu&#x27;elle soit mangee a satiete --, cela ne serait pas annule, car le tevel interdit en quantite infime (be-machehou) ; tandis que si c&#x27;est un doute, cela est annule.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La resolution est inhabituelle : elle ne tranche pas le fond, elle tranche le <b>statut du doute</b>. Yehochoua ben Ouzaa ne dit pas que la bande intermediaire est du kometz ni qu'elle est des cherayim -- il dit qu'elle est irreductiblement <b>safek</b>, et que personne n'en decidera.</p><p>Tossefot bute precisement la-dessus : <b>hadar pachta</b>, il a tranche -- mais tranche quoi ? C'etait deja un doute quand il posait la question. Deux lectures sont proposees. Soit la question portait sur l'espoir de trancher, et la reponse est qu'il faut y renoncer. Soit -- et c'est la lecture riche -- la question etait de savoir si cette farine reste <b>tevel</b>, non prelevee, parce que l'intention du cohen ne l'a jamais visee ; auquel cas elle ne serait pas annulee dans un melange, le tevel interdisant <b>be-machehou</b>. La reponse que c'est un simple safek la rend au contraire annulable.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הֵיכִי עֲבִיד? אָמַר רַבִּי חֲנִינָא: מַקְטִיר קֹומֶץ לְחוֹדֵיהּ תְּחִלָּה, וַהֲדַר בֵּין הַבֵּינַיִם. דְּאִי אָמְרַתְּ בֵּין הַבֵּינַיִם בְּרֵישָׁא — דִּילְמָא שִׁירַיִם נִינְהוּ וְהָווּ לְהוּ שִׁירַיִם שֶׁחָסְרוּ בֵּין קְמִיצָה [לְהַקְטָרָה], וְאָמַר מַר: שִׁירַיִם שֶׁחָסְרוּ בֵּין קְמִיצָה לְהַקְטָרָה אֵין מַקְטִירִין עֲלֵיהֶן אֶת הַקּוֹמֶץ.</div>
+            <div class="fr"><p>Comment fait-il donc ? Rabbi Hanina a dit : il fait fumer le kometz seul d&#x27;abord, et ensuite ce qui etait entre les doigts.</p><p>Car si tu disais qu&#x27;il fait fumer d&#x27;abord ce qui etait entre les doigts -- peut-etre sont-ce des cherayim, et ils se trouveraient etre des cherayim qui ont diminue entre la kemitsa et la haktara (la combustion) ; or le Maitre a dit : des cherayim qui ont diminue entre la kemitsa et la haktara, on ne fait pas fumer le kometz a leur sujet.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּאָמַר מַר</b> בִּמְנָחוֹת בפ&quot;ק (דַּף ט.):</div>
+          <div class="glose-fr">Dans Menahot, au premier chapitre (9a).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁחָסְרוּ</b> שֶׁנִּתְפַּזְּרוּ מֵהֶן:</div>
+          <div class="glose-fr">Qu&#x27;il s&#x27;en est disperse une partie.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵין מַקְטִירִין כו&#x27;</b> דְּתַנְיָא (מְנָחוֹת דַּף ט.) מִן הַמִּנְחָה פְּרָט לְשֶׁחָסְרָה הִיא אוֹ שֶׁחָסֵר קֻומְצָהּ:</div>
+          <div class="glose-fr">Car il est enseigne (Menahot 9a) : de l&#x27;offrande -- a l&#x27;exclusion de celle qui a diminue, ou dont le kometz a diminue.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאָמַר מָר שִׁירַייִם שֶׁחָסְרוּ בֵּין קְמִיצָה לְהַקְטָרָה אֵין מַקְטִירִין עֲלֵיהֶן אֶת הַקּוֹמֶץ</b> וְאַפֵּי&#x27; רַבִּי יוֹחָנָן דְּאָמַר פּ&quot;ק דִמְנָחוֹת (דַּף ט.) מַקְטִיר קֹומֶץ עֲלֵיהֶן מוֹדֶה הוּא דְּאוֹתָם שִׁירַייִם אֲסוּרִים בַּאֲכִילָה כִּדְיָלֵיף הָתָם מִקְּרָא וְהָכִי קָאָמַר אֵין מַקְטִירִין עֲלֵיהֶן כְּלוֹמַר אֵין מַקְטִירִין בִּשְׁבִילָן אֶת הַקֹּומֶץ כְּדֵי לְהַתִּירָן בַּאֲכִילָה וּלְהָכִי שְׁנֵי בְּלִישָּׁנֵיהּ דְּהָתָם קָאָמַר אֵין מַקְטִירִין קֹומֶץ עֲלֵיהֶן דִּסְמִיךְ לְשׁוֹן הַקְטָרָה אֵצֶל הַקֹּומֶץ דְּעִיקַּר הַקְטָרָה דְּהָתָם בִּשְׁבִיל קֹומֶץ הִיא וְהָכָא יֵשׁ בְּרוֹב סְפָרִים אֵין מַקְטִירִין עֲלֵיהֶן כו&#x27; וּלְהָכִי קָאָמַר דְּלָא לַקְּטִיר בֵּין הַבֵּינַיִם בְּרֵישָׁא דא&quot;כ מַפְסִיד לְהוּ לַשִּׁירַיִים מֵאֲכִילָה:</div>
+          <div class="glose-fr">Meme Rabbi Yohanan, qui dit au premier chapitre de Menahot (9a) qu&#x27;on fait fumer le kometz pour eux, reconnait que ces cherayim-la sont interdits a la consommation, comme on le deduit la-bas d&#x27;un verset. Et voici le sens de on ne fait pas fumer pour eux : on ne fait pas fumer le kometz a cause d&#x27;eux, c&#x27;est-a-dire afin de les rendre permis a la consommation. C&#x27;est pourquoi la formulation change : la-bas il est dit on ne fait pas fumer le kometz pour eux, accolant le terme de haktara au kometz, car l&#x27;essentiel de la haktara y est pour le kometz ; ici, la plupart des livres portent on ne fait pas fumer pour eux, etc. Et c&#x27;est pour cela qu&#x27;il dit de ne pas faire fumer d&#x27;abord ce qui est entre les doigts : car alors il ferait perdre aux cherayim leur consommation.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Heikhi avid</b> : la question passe de la theorie a la pratique. Un doute qu'on ne peut pas trancher doit quand meme etre execute aujourd'hui, sur cet autel. Rabbi Hanina fixe donc un <b>ordre</b>.</p><p>Le raisonnement est negatif : il elimine l'ordre inverse. Faire bruler l'entre-deux en premier, c'est risquer de dissiper des cherayim <b>avant</b> que le kometz ne soit monte. Or une offrande dont les restes ont diminue dans cet intervalle n'est plus rachetable : le kometz ne se brule plus pour eux, et les cherayim restent interdits a la consommation. Bruler le kometz d'abord met le principal a l'abri.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִי הָכִי, הַשְׁתָּא נָמֵי אִיקְּרִי כָּאן: כֹּל שֶׁמִּמֶּנּוּ לָאִשִּׁים — הֲרֵי הוּא בְּבַל תַּקְטִירוּ.</div>
+            <div class="fr"><p>S&#x27;il en est ainsi, maintenant aussi on devrait appliquer ici : tout ce dont une part a ete donnee aux feux de l&#x27;autel tombe sous l&#x27;interdit de vous n&#x27;en ferez pas fumer.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כֹּל שֶׁמִּמֶּנּוּ לָאִשִּׁים</b> מֵאַחַר שֶׁנָּתַתָּ לָאֵשׁ כָּל מִשְׁפָּטוֹ הֲרֵי הַשִּׁירַייִם בְּבַל תַּקְטִירוּ דִּכְתִיב (וַיִּקְרָא ב) לֹא תַקְטִירוּ מִמֶּנּוּ אִשֶּׁה לַה&#x27; לֹא תַקְטִירוּ דָּבָר שֶׁנִּיתַּן מִמֶּנּוּ לָאֵשׁ:</div>
+          <div class="glose-fr">Des lors que tu as donne au feu tout ce qui lui revient de droit, les cherayim tombent sous vous n&#x27;en ferez pas fumer, ainsi qu&#x27;il est ecrit (Levitique 2) : vous n&#x27;en ferez pas fumer un sacrifice par le feu pour l&#x27;Eternel -- vous ne ferez pas fumer une chose dont une part a deja ete donnee au feu.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>L'ordre choisi par Rabbi Hanina n'est pas gratuit non plus : il cree son propre probleme. Une fois le kometz monte, l'offrande a rempli son du envers le feu -- et des lors <b>kol chemimenou la-ichim harei hou be-bal taktirou</b> : tout ce qui reste d'elle devient interdit a l'autel. Bruler ensuite l'entre-deux, si ce sont des cherayim, c'est transgresser un interdit de la Tora (Levitique 2,11).</p><p>Le doute n'est donc pas seulement embarrassant : il rend chacune des deux options fautive. C'est cette impasse que les deux reponses suivantes viennent lever.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="300" fill="#fffdf8"/>
+  <text x="350" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Kol chemimenou la-ichim harei hou be-bal taktirou</text>
+  <text x="350" y="45" text-anchor="middle" font-size="10" fill="#57534e">Une offrande qui a deja donne sa part au feu ferme l'autel a tout son reste.</text>
+
+  <rect x="60" y="66" width="240" height="70" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="180" y="90" text-anchor="middle" font-size="11" font-weight="700" fill="#1e3a8a">Le kometz est monte</text>
+  <text x="180" y="110" text-anchor="middle" font-size="9.4" fill="#1d4ed8">l'offrande a rempli son du :</text>
+  <text x="180" y="126" text-anchor="middle" font-size="9.4" fill="#1d4ed8">une part d'elle est allee au feu</text>
+
+  <line x1="300" y1="101" x2="392" y2="101" stroke="#78716c" stroke-width="1.8"/>
+  <polygon points="392,101 382,96 382,106" fill="#78716c"/>
+
+  <rect x="396" y="66" width="244" height="70" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="518" y="90" text-anchor="middle" font-size="11" font-weight="700" fill="#7f1d1d">Tout le reste est verrouille</text>
+  <text x="518" y="110" text-anchor="middle" font-size="9.4" fill="#991b1b">lo taktirou mimenou iche la-Chem</text>
+  <text x="518" y="126" text-anchor="middle" font-size="9.4" fill="#991b1b">Levitique 2,11 -- interdit positif</text>
+
+  <rect x="120" y="160" width="460" height="52" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="350" y="181" text-anchor="middle" font-size="10.4" font-weight="700" fill="#78350f">Consequence pour notre doute : bruler l'entre-deux APRES le kometz</text>
+  <text x="350" y="200" text-anchor="middle" font-size="9.6" fill="#92400e">c'est peut-etre bruler des cherayim -- donc transgresser bal taktirou</text>
+
+  <rect x="120" y="228" width="460" height="52" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.6"/>
+  <text x="350" y="249" text-anchor="middle" font-size="10.4" font-weight="700" fill="#14532d">Sortie : ne pas le monter comme offrande, mais lechem etsim</text>
+  <text x="350" y="268" text-anchor="middle" font-size="9.6" fill="#166534">le bois de l'autel n'est pas un iche -- l'interdit ne le touche pas</text>
+</svg></div><div class="svg-cap">Bal taktirou : des qu&#x27;une part de l&#x27;offrande a ete donnee au feu, tout le reste devient interdit a l&#x27;autel -- ce qui condamne aussi l&#x27;ordre retenu par Rabbi Hanina.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַבִּי יְהוּדָה בְּרֵיהּ דְּרַבִּי שִׁמְעוֹן בֶּן פַּזִּי: דְּמַקְטֵיר לֵיהּ לְשׁוּם עֵצִים, כְּרַבִּי אֱלִיעֶזֶר. דְּתַנְיָא, רַבִּי אֱלִיעֶזֶר אוֹמֵר: ״לְרֵיחַ נִיחוֹחַ״ אִי אַתָּה מַעֲלֶה, אֲבָל אַתָּה מַעֲלֶה לְשׁוּם עֵצִים.</div>
+            <div class="fr"><p>Rabbi Yehouda fils de Rabbi Chimon ben Pazi a dit : il le fait fumer au titre de bois, selon Rabbi Eliezer. Car il est enseigne : Rabbi Eliezer dit -- en parfum agreable (le-reah nihoah) tu n&#x27;en fais pas monter, mais tu en fais bien monter au titre de bois.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּמַקְטֵיר לֵיהּ לְשׁוּם עֵצִים</b> דְּמַתְנֶה וְאוֹמֵר אִי שִׁירַייִם נִינְהוּ הֲרֵי הֵן כִּשְׁאָר עֵצִים:</div>
+          <div class="glose-fr">Car il pose une condition et dit : si ce sont des cherayim, qu&#x27;ils soient comme le reste du bois.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּרַבִּי אֱלִיעֶזֶר</b> דִּפְלִיג בְּמַס&#x27; זְבָחִים (דַּף עז:) בְּאֵיבְרֵי חַטָּאת שֶׁהֵן שִׁירַיִים מֵאַחַר שֶׁהֻוקְטְרוּ אֵימוּרִים וְנִתְעָרְבוּ אֵיבְרֵי חַטָּאת בְּאֵיבְרֵי עוֹלָה שֶׁהֵן כָּלִיל ר&#x27; אֱלִיעֶזֶר אוֹמֵר יִתֵּן הַכֹּל לְמַעְלָה וְרוֹאֶה אֲנִי אֶת בְּשַׂר חַטָּאת לְמַעְלָה כְּאִילּוּ הֵן עֵצִים וְיָלֵיף טַעְמָא מֵהַאי קְרָא וְאֶל הַמִּזְבֵּחַ לֹא יַעֲלוּ וְגוֹ&#x27; בָּתְרֵיהּ דְּהַאי קְרָא לֹא תַקְטִירוּ מִמֶּנּוּ כְּתִיב:</div>
+          <div class="glose-fr">Il est en desaccord, dans le traite Zevahim (77b), au sujet des membres d&#x27;un hatat, qui sont des restes une fois que les emourim ont ete brules, et qui se sont melanges a des membres d&#x27;une ola, laquelle est entierement consumee. Rabbi Eliezer dit : qu&#x27;il monte le tout en haut, et je considere la chair du hatat qui est en haut comme si c&#x27;etait du bois. Il en tire la raison de ce verset : et sur l&#x27;autel ils ne monteront pas, etc. -- car ce verset vient apres celui de vous n&#x27;en ferez pas fumer.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La sortie est une <b>tenai</b>, une condition mentale au moment de l'acte : si ce sont des cherayim, que ceci soit du simple bois de l'autel. L'interdit de bal taktirou ne vise que ce qu'on monte comme <b>iche</b>, comme sacrifice ; ce qui est monte comme combustible n'entre pas dans sa definition.</p><p>Cette manoeuvre suppose la position de Rabbi Eliezer, qui l'a formulee ailleurs (Zevahim 77b) : quand des membres d'un hatat -- devenus restes une fois les emourim brules -- se melangent a des membres d'une ola entierement consumee, il fait tout monter et considere la chair du hatat comme du bois.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָנִיחָא לְרַבִּי אֱלִיעֶזֶר, אֶלָּא לְרַבָּנַן מַאי אִיכָּא לְמֵימַר? אָמַר רַב מָרִי: דְּקָמְצִי שְׁמִינִי. הַשְׁתָּא דַאֲתֵית לְהָכִי, רַבִּי אֱלִיעֶזֶר נָמֵי לְכַתְּחִילָּה דְּקָמְצִי שַׁמִּינֵי.</div>
+            <div class="fr"><p>Cela va bien selon Rabbi Eliezer ; mais selon les Sages, que peut-on dire ? Rav Mari a dit : ce sont des cohanim gras qui font la kemitsa.</p><p>Maintenant que tu en es venu la, meme selon Rabbi Eliezer, il faut a priori que ce soient des gras qui fassent la kemitsa.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּקָמְצִי שְׁמִינִי</b> כֹּהֲנִים שְׁמֵינִים שֶׁבְּשַׂר אֶצְבְּעוֹתֵיהֶן בּוֹלֵט וְדוֹחֵק זֶה לְתוֹךְ זֶה וְאֵין שָׁם בֵּין הַבֵּינַיִים:</div>
+          <div class="glose-fr">Des cohanim gras, dont la chair des doigts fait saillie et se presse d&#x27;un doigt dans l&#x27;autre, si bien qu&#x27;il n&#x27;y a la aucun entre-deux.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֵר&#x27; אֱלִיעֶזֶר נָמֵי לְכַתְּחִילָּה דְּקָמְצִי שַׁמִּינֵי</b> שֶׁלֹּא הִתִּיר רַבִּי אֱלִיעֶזֶר לְהַעֲלוֹת שִׁירַיִים לְשֵׁם עֵצִים אֶלָּא מִפְּנֵי תַּעֲרֹובֶת אִיבְרֵי עוֹלָה שֶׁלֹּא יֵצְאוּ לְבֵית הַשְּׂרֵיפָה כִּדְקָאָמְרִי רַבָּנָן:</div>
+          <div class="glose-fr">Car Rabbi Eliezer n&#x27;a permis de faire monter des cherayim au titre de bois qu&#x27;a cause du melange avec les membres de la ola, pour qu&#x27;ils ne partent pas au lieu de cremation, comme le disent les Sages.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La condition <b>lechem etsim</b> n'est disponible que pour Rabbi Eliezer ; les Rabbanan la rejettent, et le probleme revient intact. Rav Mari change alors de registre : au lieu de resoudre le doute, il l'<b>empeche de naitre</b>. Qu'on confie la kemitsa a un cohen gras -- la chair des doigts fait saillie, les doigts se pressent l'un contre l'autre, et il n'y a plus d'entre-deux du tout.</p><p>Le renversement final -- <b>hachta de-atit lehakhi</b> -- est significatif : meme Rabbi Eliezer, qui dispose d'une porte de sortie, la prefere fermee. Rachi en donne la raison : sa permission ne concernait qu'une situation subie, un melange de membres qu'il fallait bien traiter ; elle ne legitime pas qu'on entre volontairement dans un doute qu'on pouvait eviter.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 560" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="560" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Heikhi avid : le piege de l'ordre de combustion, et ses deux sorties</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">Quel que soit l'ordre choisi, un interdit menace. La guemara ferme une porte, puis en ouvre deux autres.</text>
+
+  <rect x="30" y="62" width="330" height="152" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="195" y="86" text-anchor="middle" font-size="12" font-weight="700" fill="#7f1d1d">ORDRE A -- l'entre-deux D'ABORD</text>
+  <text x="195" y="110" text-anchor="middle" font-size="9.8" fill="#991b1b">je brule le bein habeinayim, puis le kometz</text>
+  <line x1="52" y1="122" x2="338" y2="122" stroke="#fca5a5" stroke-width="1.2"/>
+  <text x="195" y="144" text-anchor="middle" font-size="9.8" fill="#7f1d1d">si c'etaient des cherayim, je viens de les faire</text>
+  <text x="195" y="160" text-anchor="middle" font-size="9.8" fill="#7f1d1d">disparaitre entre kemitsa et haktara</text>
+  <rect x="60" y="170" width="270" height="36" fill="#fecaca" stroke="#b91c1c" stroke-width="1.2"/>
+  <text x="195" y="193" text-anchor="middle" font-size="10.2" font-weight="700" fill="#7f1d1d">-&gt; on ne fait plus fumer le kometz pour eux</text>
+
+  <rect x="400" y="62" width="330" height="152" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+  <text x="565" y="86" text-anchor="middle" font-size="12" font-weight="700" fill="#713f12">ORDRE B -- le kometz D'ABORD</text>
+  <text x="565" y="110" text-anchor="middle" font-size="9.8" fill="#854d0e">je brule le kometz seul, puis le bein habeinayim</text>
+  <line x1="422" y1="122" x2="708" y2="122" stroke="#fde047" stroke-width="1.4"/>
+  <text x="565" y="144" text-anchor="middle" font-size="9.8" fill="#713f12">mais si c'etaient des cherayim, l'offrande a deja</text>
+  <text x="565" y="160" text-anchor="middle" font-size="9.8" fill="#713f12">donne sa part au feu -- kol chemimenou la-ichim</text>
+  <rect x="430" y="170" width="270" height="36" fill="#fef08a" stroke="#a16207" stroke-width="1.2"/>
+  <text x="565" y="193" text-anchor="middle" font-size="10.2" font-weight="700" fill="#713f12">-&gt; interdit de bal taktirou</text>
+
+  <line x1="565" y1="214" x2="565" y2="244" stroke="#78716c" stroke-width="1.6"/>
+  <text x="565" y="238" text-anchor="middle" font-size="10" font-weight="700" fill="#44403c">l'ordre B est le bon -- reste a neutraliser SON probleme</text>
+
+  <rect x="30" y="250" width="700" height="30" fill="#f5f5f4" stroke="#a8a29e" stroke-width="1.4"/>
+  <text x="380" y="270" text-anchor="middle" font-size="10.8" font-weight="700" fill="#292524">Deux reponses, l'une conditionnelle, l'autre preventive</text>
+
+  <rect x="30" y="296" width="330" height="170" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="195" y="320" text-anchor="middle" font-size="11.8" font-weight="700" fill="#1e3a8a">REPONSE 1 -- lechem etsim</text>
+  <text x="195" y="341" text-anchor="middle" font-size="9.6" fill="#1d4ed8">R. Yehouda fils de R. Chimon ben Pazi</text>
+  <text x="195" y="362" text-anchor="middle" font-size="9.6" fill="#1e3a8a">il pose une condition en brulant : si ce sont</text>
+  <text x="195" y="378" text-anchor="middle" font-size="9.6" fill="#1e3a8a">des cherayim, que ce soit du simple BOIS</text>
+  <text x="195" y="400" text-anchor="middle" font-size="9.6" fill="#1d4ed8">appui : Rabbi Eliezer -- le-reah nihoah tu n'en</text>
+  <text x="195" y="416" text-anchor="middle" font-size="9.6" fill="#1d4ed8">fais pas monter, mais lechem etsim, oui</text>
+  <rect x="58" y="426" width="274" height="32" fill="#fee2e2" stroke="#dc2626" stroke-width="1.2"/>
+  <text x="195" y="447" text-anchor="middle" font-size="9.8" font-weight="700" fill="#7f1d1d">limite : ne marche pas selon les Rabbanan</text>
+
+  <rect x="400" y="296" width="330" height="170" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="565" y="320" text-anchor="middle" font-size="11.8" font-weight="700" fill="#14532d">REPONSE 2 -- de-kamtsei chemini</text>
+  <text x="565" y="341" text-anchor="middle" font-size="9.6" fill="#166534">Rav Mari</text>
+  <text x="565" y="362" text-anchor="middle" font-size="9.6" fill="#14532d">ce sont des cohanim GRAS qui font la kemitsa :</text>
+  <text x="565" y="378" text-anchor="middle" font-size="9.6" fill="#14532d">leurs doigts charnus se pressent l'un contre l'autre</text>
+  <text x="565" y="400" text-anchor="middle" font-size="9.6" font-weight="700" fill="#166534">il n'y a plus d'entre-deux du tout</text>
+  <text x="565" y="416" text-anchor="middle" font-size="9.6" fill="#166534">le doute n'est pas resolu : il est empeche de naitre</text>
+  <rect x="428" y="426" width="274" height="32" fill="#dcfce7" stroke="#15803d" stroke-width="1.2"/>
+  <text x="565" y="447" text-anchor="middle" font-size="9.8" font-weight="700" fill="#14532d">retenu meme pour R. Eliezer -- lekhathila</text>
+
+  <rect x="140" y="480" width="480" height="66" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.8"/>
+  <text x="380" y="503" text-anchor="middle" font-size="10.6" font-weight="700" fill="#5b21b6">Renversement final : hachta de-atit lehakhi</text>
+  <text x="380" y="524" text-anchor="middle" font-size="9.8" fill="#4c1d95">meme R. Eliezer, qui a une porte de sortie, prefere qu'on choisisse un cohen gras d'avance --</text>
+  <text x="380" y="539" text-anchor="middle" font-size="9.8" fill="#4c1d95">sa permission ne visait que le cas subi (melange d'organes), non le doute qu'on pouvait eviter.</text>
+</svg></div><div class="svg-cap">Les deux issues comparees : la condition de Rabbi Eliezer resout le doute apres coup, la prevention de Rav Mari le supprime en amont -- et c&#x27;est celle-la qui l&#x27;emporte lekhathila.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">(בֵּין הַבֵּינַייִם, פָּשַׁט, וּמָחַץ, וּפִזֵּר, וְחָשַׁב, בַּחֲפִינַת חֲבֵירוֹ — סִימָן). בָּעֵי רַב פָּפָּא: בֵּין הַבֵּינַיִם שֶׁל מְלֹא חָפְנָיו מַהוּ? מַאי קָא מִבַּעְיָא לֵיהּ? אִי גָּמַר ״מָלֵא״ ״מָלֵא״ מֵהָתָם — הַיְינוּ הָךְ!</div>
+            <div class="fr"><p>(Bein habeinayim, pachat, oumahats, oufizer, vehichev, ba-hafinat, havero -- signe mnemotechnique.) Rav Papa a demande : l&#x27;entre-deux des doigts dans le cas de ses pleines mains d&#x27;encens, quel est son statut ? -- Que demande-t-il donc ? S&#x27;il tire la guezera chava de melo / melo de la-bas, c&#x27;est exactement la meme chose !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִי גָּמַר מְלֹא מְלֹא</b> מַה קֹומֶץ בֵּירוּצוֹ אֵינוֹ נִקְטָר אַף חֲפִינָה בֵּירוּצֶיהָ פְּסוּלִין:</div>
+          <div class="glose-fr">De meme que le debordement du kometz n&#x27;est pas fait fumer, de meme les debordements de la hafina sont invalides.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַייְנוּ הָךְ</b> דְּבָעֵינַן לְעֵיל מַהוּ שֶׁיַּעֲשֶׂה מִדָּה לַחֲפִינָה דְּהָנֵי תַּרְוַיְיהוּ חֲדָא טַעְמָא הוּא דְּבֵירוּצִין וּמִדָּה לַקֹּומֶץ מִקֻּומְצוֹ נָפְקָא לָן כִּדְאָמְרִינַן לְעֵיל בְּקֻומְצוֹ שֶׁלֹּא יַעֲשֶׂה מִדָּה לַקֹּומֶץ וְגַבֵּי בֵּירוּצִין נָמֵי תְּנֵינָא לְעֵיל יָכוֹל מְבֹורָץ ת&quot;ל בְּקֻומְצוֹ וְאִי אֶיפְשַׁט לָן דְּמַייְתִינַן לַחֲפִינָה דְּרָשָׁה דִּבְקֻומְצוֹ בִּגְזֵירָה שָׁוָה כְּאִילּוּ כְּתִיב בְּחָפְנָיו תַּרְוַיְיהוּ מִיפַּשְׁטִי מִינָּהּ:</div>
+          <div class="glose-fr">C&#x27;est la question posee plus haut : peut-on fabriquer une mesure pour la hafina ? Car ces deux points n&#x27;ont qu&#x27;une seule et meme raison : les debordements, comme la mesure pour le kometz, se deduisent de be-koumtso, ainsi que nous l&#x27;avons dit plus haut -- be-koumtso : qu&#x27;il ne fabrique pas de mesure pour le kometz ; et pour les debordements aussi nous avons appris plus haut : on aurait pu croire meme debordant, le verset dit be-koumtso. Or si nous tranchons que l&#x27;on transporte a la hafina la deracha de be-koumtso par guezera chava, comme s&#x27;il etait ecrit be-hofnav, les deux questions se trouvent tranchees du meme coup.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Un <b>siman</b>, une chaine de mots-cles qui sert d'index aux questions a venir, marque l'ouverture d'une nouvelle serie. Rav Papa transpose la question du bein habeinayim de la <b>kemitsa</b> a la <b>hafina</b>, la prise d'encens a deux mains de Yom Kippour.</p><p>La guemara objecte aussitot : la question n'a pas d'espace propre. Le mot <b>melo</b> figure des deux cotes -- melo koumtso pour la poignee, melo hofnav pour les mains --, ce qui autorise une <b>guezera chava</b>. Si on l'accepte, la reponse est transportee telle quelle depuis la kemitsa ; si on la refuse, sur quoi la question s'appuierait-elle ? Rachi precise l'enjeu : c'est le meme verset <b>be-koumtso</b> qui exclut a la fois les debordements et la fabrication d'une mesure calibree.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַב פָּפָּא הָכִי בָּעֵי לֵיהּ: ״מְלֹא חָפְנָיו וְהֵבִיא״ בָּעֵינַן — וְהָא אִיכָּא, אוֹ דִּילְמָא: ״וְלָקַח״ ״וְהֵבִיא״ בָּעֵינַן — וְהָא לֵיכָּא? תֵּיקוּ.</div>
+            <div class="fr"><p>Rav Papa posait ainsi sa question : exigeons-nous ses pleines mains... et il apportera -- et cela est bien realise ; ou peut-etre exigeons-nous et il prendra... et il apportera -- et cela n&#x27;est pas realise ? Teikou (la question reste sans reponse).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רַב פָּפָּא הָכִי בָּעֵי</b> לְהָא בְּלֹא גְּזֵירָה שָׁוָה דִּמְלֹא מָלֵא אִיכָּא לְמִיבַּעְיָא לְהָא אִי נָמֵי לָא מַייְתֵי בְּחָפְנָיו לְגַבֵּי חֲפִינָה אֲבָל הַהִיא דִּלְעֵיל לַעֲשׂוֹת מִדָּה לַחֲפִינָה לֵיכָּא לְמִיבַּעְיָא אֶלָּא מִגְּזֵירָה שָׁוָה דְּמוֹלְקָחַ לָא שָׁמְעִינַן שֶׁלֹּא יַעֲשֶׂה מִדָּה לַקֹּומֶץ דִּלְקִיחָה עַל יְדֵי דָּבָר אַחֵר שְׁמָהּ לְקִיחָה בְּמַסֶּכֶת סֻוכָּה (דַּף לז.):</div>
+          <div class="glose-fr">Cette question-ci peut se poser sans la guezera chava de melo / melo, et meme si l&#x27;on n&#x27;applique pas be-hofnav a la hafina. Mais celle de plus haut -- fabriquer une mesure pour la hafina -- ne peut se poser que par la guezera chava ; car de ou-lakah nous n&#x27;apprenons pas qu&#x27;il ne doit pas fabriquer de mesure pour le kometz, puisqu&#x27;une prise faite par l&#x27;intermediaire d&#x27;un autre objet est bien appelee une prise (traite Souka 37a).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהָא לֵיכָּא</b> שֶׁמֵּאֵילָיו נִכְנַס לְבֵין הַבֵּינַיִם וְהוּא לֹא נִתְכַּוֵּון:</div>
+          <div class="glose-fr">Car cela est entre de soi-meme entre les doigts, sans qu&#x27;il en ait eu l&#x27;intention.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא רַב פָּפָּא הָכִי קָא מִבַּעְיָא לֵיהּ מְלֹא חָפְנָיו אֲמַר רַחֲמָנָא</b> פִּי&#x27; את&quot;ל דְּגַבֵּי קֹומֶץ פָּסוּל מִשּׁוּם דִּכְתִיב וְקָמַץ הַכֹּהֵן וְלֹא בֵּין הַבֵּינַיִם דְּלָאו כֹּהֵן קֹומֶץ אֶלָּא מִמֵּילָא עָייֵל לְהָתָם אֲבָל בַּחֲפִינָה לָא כְּתִיב וְלָקַח מְלֹא חָפְנָיו אֶלָּא מְלֹא חָפְנָיו דְּמַשְׁמַע אַפֵּי&#x27; בָּא מִמֵּילָא לְתוֹךְ חָפְנָיו דִּקְרָא וְלָקַח גַּבֵּי גֶּחָלִים כְּתִיב וְלָא אַקְּטֹרֶת אוֹ דִילְמָא וְלָקַח וְהֵבִיא כְּלוֹמַר וְלָקַח דְּרֵישֵׁיהּ דִּקְרָא קָאֵי נָמֵי אַקְּטֹרֶת כְּמוֹ אַגֶּחָלִים:</div>
+          <div class="glose-fr">Explication : meme si tu dis que pour le kometz c&#x27;est invalide parce qu&#x27;il est ecrit et le cohen prendra une poignee -- et non l&#x27;entre-deux des doigts, ou ce n&#x27;est pas le cohen qui puise mais la farine qui y entre d&#x27;elle-meme --, pour la hafina il n&#x27;est pas ecrit et il prendra ses pleines mains, mais seulement ses pleines mains, ce qui suggere que meme ce qui vient de soi-meme dans ses mains convient, car le verset et il prendra est ecrit a propos des braises et non de l&#x27;encens. Ou bien, peut-etre, et il prendra... et il apportera : c&#x27;est-a-dire que le et il prendra du debut du verset porte aussi sur l&#x27;encens, comme il porte sur les braises.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara degage un espace propre a la question, independant de la guezera chava. Tout tient a la <b>syntaxe du verset</b> (Levitique 16,12). Si la Tora n'exige que le resultat -- <b>melo hofnav ve-hevi</b>, que ses mains soient pleines au moment ou il entre --, l'encens venu de lui-meme entre les doigts compte, puisque les mains sont effectivement pleines.</p><p>Mais si le <b>ve-lakah</b> du debut du verset porte aussi sur l'encens, alors la prise et l'apport doivent avoir la meme qualite : ce qui n'a pas ete pris <b>intentionnellement</b> ne peut pas etre apporte. Tossefot ajoute l'observation decisive : pour la kemitsa il est ecrit <b>ve-kamats ha-cohen</b>, un acte du cohen ; pour la hafina le verbe de prise est ecrit a propos des braises, pas de l'encens. La question reste ouverte : <b>teikou</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב פָּפָּא: פְּשִׁיטָא לִי מְלֹא קֻומְצוֹ כִּדְקָמְצִי אִינָשֵׁי. בָּעֵי רַב פָּפָּא: קָמַץ בְּרָאשֵׁי אֶצְבְּעוֹתָיו, מַהוּ?</div>
+            <div class="fr"><p>Rav Papa a dit : il m&#x27;est evident que sa pleine poignee se fait comme les gens font une poignee. Rav Papa a demande : s&#x27;il a fait la kemitsa du bout des doigts, quel est le statut ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כִּדְקָמְצִי אִינָשֵׁי</b> צִידּוֹ שֶׁל אֶצְבְּעוֹתָיו לְמַטָּה:</div>
+          <div class="glose-fr">Le cote de ses doigts vers le bas.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּרָאשֵׁי אֶצְבְּעוֹתָיו</b> פַּס יָדוֹ לְמַטָּה וְתָחַב אֶצְבְּעוֹתָיו בַּסֹּלֶת וְקָמַץ קֹומֶץ שָׁלֵם עַד שֶׁמִּילֵּא כָּל אֹורֶךְ פַּס יָדוֹ:</div>
+          <div class="glose-fr">La paume de sa main vers le bas ; il a enfonce ses doigts dans la fleur de farine et a pris une poignee entiere, jusqu&#x27;a remplir toute la longueur de sa paume.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>קָמַץ בְּרָאשֵׁי אֶצְבְּעוֹתָיו מַהוּ</b> לָאו הַייְנוּ כְּמוֹ הַהוּא דִּלְעֵיל יָכוֹל אַפֵּי&#x27; בְּרָאשֵׁי אֶצְבְּעוֹתָיו דְּהַהוּא דִּלְעֵיל הַייְנוּ שֶׁאֵין לוֹ סֹלֶת אֶלָּא בְּרָאשֵׁי אֶצְבְּעוֹתָיו וְהָכָא בָּעֵי לְמֵימַר שֶׁהִתְחִיל לִקְמֹוץ בְּרָאשֵׁי אֶצְבְּעוֹתָיו וְנוֹטֵל סֹלֶת כָּל כָּךְ עַד שֶׁחוֹפֶה אֶצְבְּעוֹתָיו עַל פַּס יָדוֹ:</div>
+          <div class="glose-fr">Ce n&#x27;est pas la meme chose que le cas de plus haut, on aurait pu croire meme du bout des doigts. Car la-bas il s&#x27;agit du cas ou il n&#x27;a de fleur de farine que sur le bout des doigts, tandis qu&#x27;ici il veut dire qu&#x27;il a commence a puiser du bout des doigts et prend assez de farine pour finir par rabattre ses doigts sur la paume.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle serie, sur la <b>forme du geste</b> et non plus sur son contenu. Rav Papa pose d'abord un acquis : <b>ke-de-kamtsei inchei</b>, comme les gens saisissent une poignee -- le cote des doigts tourne vers le bas, on descend dans la farine et on referme sur la paume. C'est la norme, et elle n'est pas discutee.</p><p>Puis vient l'ecart : main retournee paume vers le bas, doigts plantes dans la farine, et il remplit ainsi toute la longueur de la paume. Tossefot previent une confusion : il ne s'agit pas du cas deja rencontre plus haut, ou la farine <b>ne se trouve que</b> sur le bout des doigts et ou la poignee est donc insuffisante. Ici la quantite est pleine ; seul le mouvement differe.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="260" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="13.6" font-weight="700" fill="#1c1917">Ke-de-kamtsei inchei : la position normale de la main</text>
+
+  <rect x="30" y="44" width="200" height="180" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="130" y="66" text-anchor="middle" font-size="11" font-weight="700" fill="#14532d">NORME</text>
+  <text x="130" y="86" text-anchor="middle" font-size="9.4" fill="#166534">le cote des doigts vers le bas</text>
+  <ellipse cx="130" cy="126" rx="62" ry="20" fill="#dcfce7" stroke="#15803d" stroke-width="1.4"/>
+  <line x1="90" y1="140" x2="90" y2="168" stroke="#15803d" stroke-width="3"/>
+  <line x1="112" y1="142" x2="112" y2="174" stroke="#15803d" stroke-width="3"/>
+  <line x1="134" y1="142" x2="134" y2="174" stroke="#15803d" stroke-width="3"/>
+  <line x1="156" y1="140" x2="156" y2="168" stroke="#15803d" stroke-width="3"/>
+  <rect x="60" y="180" width="140" height="18" fill="#fde68a" stroke="#a16207" stroke-width="1"/>
+  <text x="130" y="214" text-anchor="middle" font-size="9" fill="#166534">il descend et referme sur la paume</text>
+
+  <rect x="248" y="44" width="200" height="180" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="348" y="66" text-anchor="middle" font-size="11" font-weight="700" fill="#78350f">ECART 1 -- bout des doigts</text>
+  <text x="348" y="86" text-anchor="middle" font-size="9.4" fill="#92400e">paume vers le bas</text>
+  <rect x="288" y="112" width="120" height="16" fill="#fef08a" stroke="#a16207" stroke-width="1.2"/>
+  <line x1="300" y1="128" x2="300" y2="164" stroke="#a16207" stroke-width="3"/>
+  <line x1="324" y1="128" x2="324" y2="170" stroke="#a16207" stroke-width="3"/>
+  <line x1="348" y1="128" x2="348" y2="170" stroke="#a16207" stroke-width="3"/>
+  <line x1="372" y1="128" x2="372" y2="164" stroke="#a16207" stroke-width="3"/>
+  <rect x="278" y="180" width="140" height="18" fill="#fde68a" stroke="#a16207" stroke-width="1"/>
+  <text x="348" y="214" text-anchor="middle" font-size="9" fill="#92400e">il plante les doigts puis rabat -- teikou</text>
+
+  <rect x="466" y="44" width="204" height="180" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="568" y="66" text-anchor="middle" font-size="11" font-weight="700" fill="#78350f">ECART 2 -- de bas en haut</text>
+  <text x="568" y="86" text-anchor="middle" font-size="9.4" fill="#92400e">dos de la main vers le bas</text>
+  <line x1="520" y1="140" x2="520" y2="112" stroke="#a16207" stroke-width="3"/>
+  <line x1="544" y1="140" x2="544" y2="106" stroke="#a16207" stroke-width="3"/>
+  <line x1="568" y1="140" x2="568" y2="106" stroke="#a16207" stroke-width="3"/>
+  <line x1="592" y1="140" x2="592" y2="112" stroke="#a16207" stroke-width="3"/>
+  <rect x="508" y="140" width="120" height="16" fill="#fef08a" stroke="#a16207" stroke-width="1.2"/>
+  <rect x="498" y="180" width="140" height="18" fill="#fde68a" stroke="#a16207" stroke-width="1"/>
+  <text x="568" y="214" text-anchor="middle" font-size="9" fill="#92400e">il remonte la farine vers la paume -- teikou</text>
+</svg></div><div class="svg-cap">La norme et deux de ses ecarts : la position ordinaire de la main, puis la prise du bout des doigts et la prise de bas en haut -- toutes deux laissees en teikou.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מִלְּמַטָּה לְמַעְלָה, מַהוּ? מִן הַצְּדָדִין, מַהוּ? תֵּיקוּ.</div>
+            <div class="fr"><p>De bas en haut, quel est le statut ? Par les cotes, quel est le statut ?</p><p>Teikou.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִלְּמַטָּה לְמַעְלָה</b> שֶׁהָפַךְ גַּב יָדוֹ לְמַטָּה וְהֶעֱלָה הַקֹּומֶץ בְּרָאשֵׁי אֶצְבְּעוֹתָיו לְתוֹךְ פַּס יָדוֹ:</div>
+          <div class="glose-fr">Il a retourne le dos de sa main vers le bas et a fait monter la poignee du bout des doigts vers sa paume.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִלְּמַטָּה לְמַעְלָה מַהוּ</b> פרש&quot;י שֶׁהִכְנִיס רָאשֵׁי אֶצְבְּעוֹתָיו בַּסֹּלֶת וְגַב יָדוֹ כְּנֶגֶד הַקֶּמַח וְקָמַץ וְאֵין זֶה בְּרָאשֵׁי אֶצְבְּעוֹתָיו דְּקָא מִיבַּעְיָא לֵיהּ מֵעִיקָּרָא דְּהַהוּא הָוֵי פֵּירוּשׁ שֶׁקָּמַץ בְּרָאשֵׁי אֶצְבְּעוֹתָיו וּפַס יָדוֹ כְּנֶגֶד הַקֶּמַח:</div>
+          <div class="glose-fr">Rachi explique qu&#x27;il a introduit le bout de ses doigts dans la fleur de farine, le dos de la main face a la farine, et a puise ; et ce n&#x27;est pas le cas du bout des doigts qu&#x27;il demandait au depart, car celui-la se comprend comme une kemitsa du bout des doigts, la paume face a la farine.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deux ecarts supplementaires, egalement laisses sans reponse. <b>Mi-lemata le-maala</b> : le dos de la main tourne vers le bas, il fait remonter la farine du bout des doigts vers la paume. <b>Min ha-tsedadin</b> : il promene le dos de la main en la pressant, sans plonger les doigts, et la farine s'introduit d'elle-meme dans la paume en passant entre les doigts.</p><p>Tossefot tient a distinguer ce cas du precedent, malgre la description de Rachi : dans la question du bout des doigts, la paume faisait face a la farine ; ici c'est le dos de la main. Le verdict est le meme -- <b>teikou</b> -- mais les cas ne se confondent pas.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב פָּפָּא: פְּשִׁיטָא לִי ״מְלֹא חָפְנָיו״ כִּדְחָפְנִי אִינָשֵׁי. בָּעֵי רַב פָּפָּא: חָפַן בְּרָאשֵׁי אֶצְבְּעוֹתָיו, מַהוּ? מִלְּמַטָּה לְמַעְלָה, מַהוּ? מִן הַצַּד, מַהוּ? חָפַן בְּזוֹ וּבָזוֹ וְקֵרְבָן זוֹ אֵצֶל זוֹ, מַהוּ? תֵּיקוּ.</div>
+            <div class="fr"><p>Rav Papa a dit : il m&#x27;est evident que ses pleines mains se fait comme les gens remplissent leurs mains. Rav Papa a demande : s&#x27;il a rempli ses mains du bout des doigts, quel est le statut ?</p><p>De bas en haut, quel est le statut ? Par le cote, quel est le statut ?</p><p>S&#x27;il a rempli celle-ci et celle-la, puis les a rapprochees l&#x27;une de l&#x27;autre, quel est le statut ? Teikou.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כִּדְחָפְנִי אִינָשֵׁי</b> חֻודָּהּ שֶׁל פַּס הַיָּד לְמַטָּה:</div>
+          <div class="glose-fr">La tranche de la paume vers le bas.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִן הַצַּד</b> כְּלוֹמַר שֶׁלֹּא כְּדֶרֶךְ הַקּוֹמְצִין גַּב יָדוֹ לְמַטָּה וְלֹא תָּחַב אֶצְבְּעוֹתָיו בַּסֹּלֶת אֶלָּא מוֹלִיךְ עָל גַּב יָדוֹ בְּדֹוחַק וְהַסֹּלֶת נִכְנָס בְּפַס יָדוֹ דֶּרֶךְ אֶצְבְּעוֹתָיו:</div>
+          <div class="glose-fr">C&#x27;est-a-dire pas a la maniere de ceux qui puisent : le dos de sa main vers le bas, sans enfoncer ses doigts dans la fleur de farine, mais en promenant le dos de sa main en la pressant, si bien que la farine entre dans sa paume en passant entre ses doigts.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>חָפַן בְּרָאשֵׁי אֶצְבְּעוֹתָיו מַהוּ</b> אֵין לְהַקְשׁוֹת כֵּיוָן דִּכְבָר אִיבַּעְיָא לַן גַּבֵּי קְמִיצָה מַאי הָדַר תּוּ מִבַּעְיָא לֵיהּ בַּחֲפִינָה הַייְנוּ הָךְ כִּדְפָרִיךְ לְעֵיל וְי&quot;ל דִּפְשִׁיטָא גּוּף הַחֲפִינָה וְהַקְּמִיצָה אֵינָם שָׁווּ לְהָדְדִי דְּהַאי כִּדְקָמְצִי אִינָשֵׁי וְהַאי כִּדְחָפְנִי אִינָשֵׁי וּלְהָכִי הָדַר תּוּ מִיבַּעְיָא לֵיהּ אַפֵּי&#x27; את&quot;ל דֶּרֶךְ קְמִיצָה בְּכָךְ אוֹ אֵין דֶּרֶךְ קְמִיצָה בְּכָךְ דֶּרֶךְ חֲפִינָה בְּכָךְ אוֹ לֹא:</div>
+          <div class="glose-fr">Il ne faut pas objecter : puisque la question a deja ete posee au sujet de la kemitsa, pourquoi la reposer pour la hafina -- c&#x27;est la meme chose, comme la guemara l&#x27;a objecte plus haut ! On peut repondre qu&#x27;il est evident que la hafina et la kemitsa ne sont pas identiques dans leur forme meme : l&#x27;une se fait comme les gens font une poignee, l&#x27;autre comme les gens remplissent leurs mains. C&#x27;est pourquoi il repose la question : meme si tu dis que telle est, ou n&#x27;est pas, la maniere de la kemitsa, est-ce la maniere de la hafina ou non ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Papa reprend la serie entiere pour la <b>hafina</b>, avec le meme acquis de depart -- <b>ke-de-hafnei inchei</b>, la tranche de la paume tournee vers le bas -- et les memes trois ecarts, auxquels il ajoute un quatrieme qui n'a pas d'equivalent dans la kemitsa : remplir chaque main separement, puis les joindre.</p><p>Tossefot repond a l'objection previsible, celle-la meme que la guemara avait lancee plus haut (<b>heinou hakh</b>) : pourquoi reposer des questions deja posees ? Parce que la norme de reference n'est pas la meme. La kemitsa se mesure sur la maniere ordinaire de saisir une poignee, la hafina sur la maniere ordinaire de remplir ses deux mains. Trancher qu'un mouvement s'ecarte de l'une ne dit rien de l'autre. Tout reste en <b>teikou</b>.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 500" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="500" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Les quatre questions de Rav Papa sur le GESTE -- et pourquoi il les pose deux fois</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">Un seul point est acquis : ke-de-kamtsei / ke-de-hafnei inchei, comme font les gens. Tout ecart est teikou.</text>
+
+  <rect x="30" y="62" width="700" height="36" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="380" y="78" text-anchor="middle" font-size="11.2" font-weight="700" fill="#14532d">PECHITA LI -- ce qui est evident : la mesure de la Tora, c'est le geste ordinaire d'un homme</text>
+  <text x="380" y="93" text-anchor="middle" font-size="9.6" fill="#166534">kemitsa : le cote des doigts vers le bas -- hafina : la tranche de la paume vers le bas</text>
+
+  <rect x="30" y="118" width="340" height="240" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="200" y="142" text-anchor="middle" font-size="12.4" font-weight="700" fill="#1e3a8a">KEMITSA -- la poignee de la minha</text>
+  <text x="200" y="160" text-anchor="middle" font-size="9.4" fill="#1d4ed8">trois doigts rabattus sur la paume</text>
+  <rect x="52" y="172" width="296" height="40" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+  <text x="200" y="189" text-anchor="middle" font-size="10" font-weight="700" fill="#1e3a8a">1. be-rachei etsbe'otav -- du bout des doigts</text>
+  <text x="200" y="205" text-anchor="middle" font-size="9" fill="#1e40af">paume en bas, doigts plantes dans la farine</text>
+  <rect x="52" y="218" width="296" height="40" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+  <text x="200" y="235" text-anchor="middle" font-size="10" font-weight="700" fill="#1e3a8a">2. mi-lemata le-maala -- de bas en haut</text>
+  <text x="200" y="251" text-anchor="middle" font-size="9" fill="#1e40af">dos de la main en bas, il remonte vers la paume</text>
+  <rect x="52" y="264" width="296" height="40" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+  <text x="200" y="281" text-anchor="middle" font-size="10" font-weight="700" fill="#1e3a8a">3. min ha-tsedadin -- par les cotes</text>
+  <text x="200" y="297" text-anchor="middle" font-size="9" fill="#1e40af">la farine entre d'elle-meme entre les doigts</text>
+  <rect x="90" y="314" width="220" height="30" fill="#e7e5e4" stroke="#57534e" stroke-width="1.4"/>
+  <text x="200" y="334" text-anchor="middle" font-size="11" font-weight="700" fill="#292524">TEIKOU</text>
+
+  <rect x="390" y="118" width="340" height="240" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="560" y="142" text-anchor="middle" font-size="12.4" font-weight="700" fill="#78350f">HAFINA -- les deux mains d'encens</text>
+  <text x="560" y="160" text-anchor="middle" font-size="9.4" fill="#92400e">les deux paumes jointes, Yom Kippour</text>
+  <rect x="412" y="172" width="296" height="40" fill="#fef08a" stroke="#a16207" stroke-width="1"/>
+  <text x="560" y="189" text-anchor="middle" font-size="10" font-weight="700" fill="#78350f">1. du bout des doigts</text>
+  <text x="560" y="205" text-anchor="middle" font-size="9" fill="#854d0e">meme question -- mais le geste n'est pas le meme</text>
+  <rect x="412" y="218" width="296" height="40" fill="#fef08a" stroke="#a16207" stroke-width="1"/>
+  <text x="560" y="235" text-anchor="middle" font-size="10" font-weight="700" fill="#78350f">2. de bas en haut / 3. par le cote</text>
+  <text x="560" y="251" text-anchor="middle" font-size="9" fill="#854d0e">le dos de la main promene sur la ketoret</text>
+  <rect x="412" y="264" width="296" height="40" fill="#fed7aa" stroke="#c2410c" stroke-width="1.2"/>
+  <text x="560" y="281" text-anchor="middle" font-size="10" font-weight="700" fill="#7c2d12">4. hafan be-zo ou-ve-zo -- une main puis l'autre</text>
+  <text x="560" y="297" text-anchor="middle" font-size="9" fill="#7c2d12">puis il les rapproche : cas propre a la hafina</text>
+  <rect x="450" y="314" width="220" height="30" fill="#e7e5e4" stroke="#57534e" stroke-width="1.4"/>
+  <text x="560" y="334" text-anchor="middle" font-size="11" font-weight="700" fill="#292524">TEIKOU</text>
+
+  <rect x="60" y="376" width="640" height="112" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.8"/>
+  <text x="380" y="399" text-anchor="middle" font-size="11.8" font-weight="700" fill="#5b21b6">Pourquoi reposer les memes questions pour la hafina ? -- reponse de Tossefot</text>
+  <text x="380" y="422" text-anchor="middle" font-size="9.8" fill="#4c1d95">La guemara elle-meme avait objete plus haut : heinou hakh, c'est la meme chose !</text>
+  <text x="380" y="442" text-anchor="middle" font-size="9.8" fill="#4c1d95">Mais la norme de reference differe : l'une se mesure sur ke-de-kamtsei inchei, l'autre sur ke-de-hafnei inchei.</text>
+  <text x="380" y="464" text-anchor="middle" font-size="10.2" font-weight="700" fill="#5b21b6">Meme si tu tranches ce qui est ecart pour la poignee, rien ne dit que c'est un ecart pour les deux mains.</text>
+  <text x="380" y="481" text-anchor="middle" font-size="9.4" fill="#6d28d9">L'objection heinou hakh ne vaut que pour ce qui se transporte par guezera chava, pas pour la forme du geste.</text>
+</svg></div><div class="svg-cap">Le parallelisme des deux series et sa justification : deux normes de reference distinctes, donc deux series de questions -- avec un quatrieme cas propre a la hafina.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בָּעֵי</div>
+            <div class="fr"><p>Il demande...</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le amoud s'interrompt au premier mot d'une nouvelle question, qui se poursuit au debut de 48a.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_47a.html">&lsaquo; Yoma 47a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yoma 32b -- Cinq immersions, dix kidouchim : d&#x27;ou viennent-ils, et ou tombent-ils ? Puis : keratzo, la chehita du tamid par le kohen gadol</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Yoma 32b -- Cinq immersions, dix kidouchim : d&#x27;ou viennent-ils, et ou tombent-ils ? Puis : keratzo, la chehita du tamid par le kohen gadol</h1>
+    <div class="ref">Yoma 32b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_32a.html">&lsaquo; Yoma 32a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> L&#x27;amoud s&#x27;ouvre sur une question de derivation : d&#x27;ou sait-on que le kohen gadol doit s&#x27;immerger a CHAQUE changement de vetements, dans les deux sens ? L&#x27;ecole de Rabbi Yichmael tente deux kal va-homer symetriques -- de l&#x27;or vers le blanc, puis du blanc vers l&#x27;or -- et la guemara les refute tous les deux : l&#x27;or a pour lui une kappara plus abondante (il sert toute l&#x27;annee), le blanc a pour lui l&#x27;entree dans le Saint des Saints.</p><p>Reste donc la derivation de Rabbi, tiree de Lev. 16:4 : c&#x27;est la SAINTETE des vetements qui declenche la tevila, et l&#x27;or est sacre lui aussi.</p><p>La baraita enumere ensuite les cinq services du jour, puis demande d&#x27;ou vient que chaque immersion soit encadree de deux kidouchim : par im eino inyan, un verset ecrit en langage de tevila mais devenu disponible est reaffecte au kidouch -- et le fait qu&#x27;il soit ecrit en langage de tevila enseigne au passage que la tevila, comme le kidouch, doit se faire en lieu sacre. Vient alors le coeur du debat : Rav Hisda montre que Rabbi s&#x27;ecarte a la fois des Sages et de Rabbi Meir sur la POSITION des kidouchim -- pour lui les deux se font alors qu&#x27;il est devetu.</p><p>Mais Rav Aha bar Yaakov etablit que tous s&#x27;accordent a placer le second kidouch apres le revetement, tire de &quot;ou lorsqu&#x27;ils s&#x27;approcheront de l&#x27;autel&quot; : le kohen doit n&#x27;avoir plus que l&#x27;approche a accomplir. Rav Aha fils de Rava en conclut que les deux enonces sont incompatibles -- ensemble ils donneraient quinze kidouchim au lieu de dix.</p><p>L&#x27;amoud se termine en revenant a la michna : que signifie keratzo ? Oulla y voit un terme de mise a mort, confirme par un verset de Jeremie sur l&#x27;Egypte, et precise que le kohen gadol coupe la majeure partie des deux simanim ; un autre kohen acheve (mirek) pendant que lui recueille le sang.</p><p>Rech Lakich explique par la meme occasion pourquoi la michna de la chehita enseigne separement &quot;rov chnayim&quot;, et la guemara etablit que l&#x27;invalidite envisagee faute d&#x27;achevement ne pourrait etre que de-rabbanan -- sans quoi le service de Yom Kippour dependrait d&#x27;un autre que le kohen gadol.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 452" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="452" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Deux kal va-homer symetriques -- et tous les deux refutes</text>
+  <text x="380" y="43" text-anchor="middle" font-size="10.4" fill="#57534e">Question de fond : d'ou sait-on que CHAQUE changement de vetements, dans les deux sens, exige une tevila (immersion) ?</text>
+
+  <!-- Panneau gauche -->
+  <rect x="20" y="56" width="352" height="286" rx="7" fill="#fffbeb" stroke="#e0c98a" stroke-width="1.4"/>
+  <text x="196" y="77" text-anchor="middle" font-size="11.6" font-weight="700" fill="#92400e">1. OR  -&gt;  BLANC</text>
+  <text x="196" y="93" text-anchor="middle" font-size="9.8" fill="#78716c">(ecole de Rabbi Yichmael, debut de l'amoud)</text>
+
+  <rect x="38" y="104" width="316" height="54" rx="5" fill="#fef3c7" stroke="#d6bb77" stroke-width="1.1"/>
+  <text x="52" y="123" font-size="10.4" font-weight="700" fill="#78350f">Vetements d'OR</text>
+  <text x="52" y="139" font-size="10.2" fill="#44403c">n'entrent PAS lifnai velifnim (Saint des Saints)</text>
+  <text x="52" y="153" font-size="10.2" fill="#44403c">et pourtant : ils exigent une tevila</text>
+
+  <path d="M196 158 L196 182" stroke="#a8a29e" stroke-width="1.6" marker-end="url(#ar1)"/>
+  <text x="206" y="176" font-size="9.6" fill="#78716c">a fortiori</text>
+
+  <rect x="38" y="186" width="316" height="54" rx="5" fill="#f1f5f9" stroke="#b6c2cf" stroke-width="1.1"/>
+  <text x="52" y="205" font-size="10.4" font-weight="700" fill="#334155">Vetements BLANCS</text>
+  <text x="52" y="221" font-size="10.2" fill="#44403c">entrent lifnai velifnim</text>
+  <text x="52" y="235" font-size="10.2" fill="#44403c">n'est-il pas logique qu'ils exigent une tevila ?</text>
+
+  <rect x="38" y="252" width="316" height="74" rx="5" fill="#fee2e2" stroke="#e0a3a3" stroke-width="1.2"/>
+  <text x="52" y="271" font-size="10.4" font-weight="700" fill="#991b1b">PARACHE (refutation)</text>
+  <text x="52" y="288" font-size="10.2" fill="#44403c">L'or a un avantage propre : sa kappara est</text>
+  <text x="52" y="303" font-size="10.2" fill="#44403c">MEROUBA -- il sert toute l'annee, pour toutes</text>
+  <text x="52" y="318" font-size="10.2" fill="#44403c">les fautes. Le blanc ne sert qu'un seul jour.</text>
+
+  <!-- Panneau droit -->
+  <rect x="388" y="56" width="352" height="286" rx="7" fill="#f8fafc" stroke="#c3ccd6" stroke-width="1.4"/>
+  <text x="564" y="77" text-anchor="middle" font-size="11.6" font-weight="700" fill="#334155">2. BLANC  -&gt;  OR</text>
+  <text x="564" y="93" text-anchor="middle" font-size="9.8" fill="#78716c">(meme ecole, quelques lignes plus bas)</text>
+
+  <rect x="406" y="104" width="316" height="54" rx="5" fill="#f1f5f9" stroke="#b6c2cf" stroke-width="1.1"/>
+  <text x="420" y="123" font-size="10.4" font-weight="700" fill="#334155">Vetements BLANCS</text>
+  <text x="420" y="139" font-size="10.2" fill="#44403c">kappara reduite (un seul jour dans l'annee)</text>
+  <text x="420" y="153" font-size="10.2" fill="#44403c">et pourtant : ils exigent une tevila</text>
+
+  <path d="M564 158 L564 182" stroke="#a8a29e" stroke-width="1.6" marker-end="url(#ar1)"/>
+  <text x="574" y="176" font-size="9.6" fill="#78716c">a fortiori</text>
+
+  <rect x="406" y="186" width="316" height="54" rx="5" fill="#fef3c7" stroke="#d6bb77" stroke-width="1.1"/>
+  <text x="420" y="205" font-size="10.4" font-weight="700" fill="#78350f">Vetements d'OR</text>
+  <text x="420" y="221" font-size="10.2" fill="#44403c">kappara meroubva</text>
+  <text x="420" y="235" font-size="10.2" fill="#44403c">n'est-il pas logique qu'ils exigent une tevila ?</text>
+
+  <rect x="406" y="252" width="316" height="74" rx="5" fill="#fee2e2" stroke="#e0a3a3" stroke-width="1.2"/>
+  <text x="420" y="271" font-size="10.4" font-weight="700" fill="#991b1b">PARACHE (refutation)</text>
+  <text x="420" y="288" font-size="10.2" fill="#44403c">Le blanc a un avantage propre : c'est avec lui</text>
+  <text x="420" y="303" font-size="10.2" fill="#44403c">qu'il entre lifnai velifnim, la ou l'or n'entre</text>
+  <text x="420" y="318" font-size="10.2" fill="#44403c">jamais.</text>
+
+  <path d="M196 342 L196 362 L564 362 L564 342" fill="none" stroke="#a8a29e" stroke-width="1.4"/>
+  <path d="M380 362 L380 378" stroke="#a8a29e" stroke-width="1.6" marker-end="url(#ar1)"/>
+
+  <rect x="20" y="382" width="720" height="60" rx="6" fill="#ecfdf5" stroke="#8fbfa4" stroke-width="1.4"/>
+  <text x="38" y="402" font-size="10.8" font-weight="700" fill="#065f46">Les deux a fortiori tombent -- il faut donc UN verset qui couvre les deux sens :</text>
+  <text x="38" y="420" font-size="10.4" fill="#1c1917">Lev. 16:4 -- &quot;bigdei kodesh hem, verahats et besaro ba-mayim ou-levecham&quot; (ce sont des vetements SACRES ; il baignera sa chair</text>
+  <text x="38" y="435" font-size="10.4" fill="#1c1917">dans l'eau puis les revetira). Le motif de la tevila est la SAINTETE des vetements -- or l'or aussi est sacre. Donc : les deux sens.</text>
+
+  <defs><marker id="ar1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+    <path d="M0 0 L10 5 L0 10 z" fill="#a8a29e"/></marker></defs>
+</svg></div>
+          <figcaption>Les deux kal va-homer de l&#x27;ecole de Rabbi Yichmael se refutent l&#x27;un l&#x27;autre : chaque type de vetement possede un avantage que l&#x27;autre n&#x27;a pas. Il faut donc un verset unique -- la saintete des vetements -- qui couvre les deux sens.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 452" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="452" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Un seul changement de vetements : ou tombent les DEUX kidouchim ?</text>
+  <text x="380" y="43" text-anchor="middle" font-size="10.4" fill="#57534e">Tous admettent 5 tevilot et 10 kidouchim. Le desaccord porte sur le placement : avant ou apres le devetissement, avant ou apres le revetement.</text>
+
+  <!-- Frise des etapes -->
+  <line x1="46" y1="94" x2="716" y2="94" stroke="#a8a29e" stroke-width="2"/>
+  <g font-size="9.8" fill="#44403c">
+    <circle cx="90" cy="94" r="6" fill="#e7e5e4" stroke="#a8a29e" stroke-width="1.4"/>
+    <text x="90" y="76" text-anchor="middle" font-size="10.2" font-weight="700" fill="#1c1917">VETU</text>
+    <text x="90" y="116" text-anchor="middle">service A</text>
+    <text x="90" y="130" text-anchor="middle" fill="#78716c">(vetements 1)</text>
+
+    <circle cx="248" cy="94" r="6" fill="#e7e5e4" stroke="#a8a29e" stroke-width="1.4"/>
+    <text x="248" y="76" text-anchor="middle" font-size="10.2" font-weight="700" fill="#1c1917">PECHITA</text>
+    <text x="248" y="116" text-anchor="middle">il ote</text>
+    <text x="248" y="130" text-anchor="middle" fill="#78716c">(il est nu)</text>
+
+    <circle cx="392" cy="94" r="6" fill="#e7e5e4" stroke="#a8a29e" stroke-width="1.4"/>
+    <text x="392" y="76" text-anchor="middle" font-size="10.2" font-weight="700" fill="#1c1917">TEVILA</text>
+    <text x="392" y="116" text-anchor="middle">immersion</text>
+    <text x="392" y="130" text-anchor="middle" fill="#78716c">(makom kadoch)</text>
+
+    <circle cx="540" cy="94" r="6" fill="#e7e5e4" stroke="#a8a29e" stroke-width="1.4"/>
+    <text x="540" y="76" text-anchor="middle" font-size="10.2" font-weight="700" fill="#1c1917">LEVICHA</text>
+    <text x="540" y="116" text-anchor="middle">il revet</text>
+    <text x="540" y="130" text-anchor="middle" fill="#78716c">(vetements 2)</text>
+
+    <circle cx="686" cy="94" r="6" fill="#e7e5e4" stroke="#a8a29e" stroke-width="1.4"/>
+    <text x="686" y="76" text-anchor="middle" font-size="10.2" font-weight="700" fill="#1c1917">AVODA</text>
+    <text x="686" y="116" text-anchor="middle">service B</text>
+  </g>
+
+  <!-- Lignes d'opinions -->
+  <rect x="20" y="146" width="720" height="46" rx="5" fill="#f1f5f9" stroke="#c3ccd6" stroke-width="1.1"/>
+  <text x="34" y="166" font-size="10.6" font-weight="700" fill="#334155">Les Sages (rabbanan)</text>
+  <text x="34" y="182" font-size="9.6" fill="#57534e">il sanctifie ENCORE VETU</text>
+  <circle cx="168" cy="169" r="11" fill="#334155"/><text x="168" y="173" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">K1</text>
+  <circle cx="612" cy="169" r="11" fill="#334155"/><text x="612" y="173" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">K2</text>
+
+  <rect x="20" y="200" width="720" height="46" rx="5" fill="#fffbeb" stroke="#e0c98a" stroke-width="1.1"/>
+  <text x="34" y="220" font-size="10.6" font-weight="700" fill="#92400e">Rabbi Meir</text>
+  <text x="34" y="236" font-size="9.6" fill="#57534e">le 2e kidouch se fait VETU</text>
+  <circle cx="320" cy="223" r="11" fill="#92400e"/><text x="320" y="227" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">K1</text>
+  <circle cx="612" cy="223" r="11" fill="#92400e"/><text x="612" y="227" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">K2</text>
+
+  <rect x="20" y="254" width="720" height="46" rx="5" fill="#fdf2f8" stroke="#d8b4c8" stroke-width="1.1"/>
+  <text x="34" y="274" font-size="10.6" font-weight="700" fill="#9d174d">Rabbi (selon Rav Hisda)</text>
+  <text x="34" y="290" font-size="9.6" fill="#57534e">les DEUX se font DEVETU</text>
+  <circle cx="320" cy="277" r="11" fill="#9d174d"/><text x="320" y="281" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">K1</text>
+  <circle cx="466" cy="277" r="11" fill="#9d174d"/><text x="466" y="281" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">K2</text>
+
+  <line x1="248" y1="140" x2="248" y2="306" stroke="#d6d3d1" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="392" y1="140" x2="392" y2="306" stroke="#d6d3d1" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="540" y1="140" x2="540" y2="306" stroke="#d6d3d1" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- La contradiction -->
+  <rect x="20" y="318" width="352" height="120" rx="6" fill="#eff6ff" stroke="#9dbbe0" stroke-width="1.3"/>
+  <text x="36" y="338" font-size="10.8" font-weight="700" fill="#1e40af">Rav Aha bar Yaakov</text>
+  <text x="36" y="356" font-size="10.2" fill="#44403c">Tous s'accordent : le 2e kidouch se fait</text>
+  <text x="36" y="371" font-size="10.2" fill="#44403c">APRES le revetement.</text>
+  <text x="36" y="390" font-size="10.2" fill="#44403c">Verset : &quot;ou be-gichtam el ha-mizbeah&quot;</text>
+  <text x="36" y="405" font-size="10.2" fill="#44403c">(Ex. 30:20) -- celui a qui il ne manque</text>
+  <text x="36" y="420" font-size="10.2" fill="#44403c">QUE l'approche. Exclut celui a qui il</text>
+  <text x="36" y="433" font-size="10.2" fill="#44403c">manque le revetement ET l'approche.</text>
+
+  <rect x="388" y="318" width="352" height="120" rx="6" fill="#fee2e2" stroke="#e0a3a3" stroke-width="1.3"/>
+  <text x="404" y="338" font-size="10.8" font-weight="700" fill="#991b1b">Rav Aha fils de Rava : incompatibles</text>
+  <text x="404" y="356" font-size="10.2" fill="#44403c">Rav Hisda place les 2 kidouchim de Rabbi</text>
+  <text x="404" y="371" font-size="10.2" fill="#44403c">AVANT le revetement ; Rav Aha en exige un</text>
+  <text x="404" y="386" font-size="10.2" fill="#44403c">APRES. Si les deux tenaient ensemble :</text>
+  <text x="404" y="407" font-size="11.4" font-weight="700" fill="#991b1b">3 kidouchim x 5 tevilot = 15</text>
+  <text x="404" y="426" font-size="10.2" fill="#44403c">alors que la halakha en compte DIX.</text>
+</svg></div>
+          <figcaption>Cinq immersions, dix kidouchim : le nombre est acquis, mais leur PLACE dans la sequence pechita / tevila / levicha oppose les Sages, Rabbi Meir et Rabbi. Rav Aha bar Yaakov ajoute une regle que Rav Hisda ne peut pas accepter.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="400" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">&quot;Keratzo&quot; -- le kohen gadol coupe, un autre acheve</text>
+  <text x="380" y="43" text-anchor="middle" font-size="10.4" fill="#57534e">Michna : &quot;on lui amena le tamid, il l'egorgea (keratzo), un autre acheva (mirek) la chehita a sa place, et lui recueillit le sang&quot;</text>
+
+  <!-- Coupe du cou -->
+  <rect x="20" y="58" width="300" height="238" rx="7" fill="#f8fafc" stroke="#c3ccd6" stroke-width="1.3"/>
+  <text x="170" y="79" text-anchor="middle" font-size="11.4" font-weight="700" fill="#334155">Le cou en coupe : les deux simanim</text>
+
+  <ellipse cx="170" cy="185" rx="112" ry="88" fill="#fef7f4" stroke="#d8b8ac" stroke-width="1.6"/>
+  <text x="170" y="286" text-anchor="middle" font-size="9.6" fill="#78716c">peau et chair du cou</text>
+
+  <circle cx="170" cy="140" r="34" fill="#e0f2fe" stroke="#7aa8c4" stroke-width="1.6"/>
+  <path d="M136 140 A34 34 0 0 1 204 140" fill="none" stroke="#dc2626" stroke-width="4"/>
+  <text x="170" y="144" text-anchor="middle" font-size="10.2" font-weight="700" fill="#0c4a6e">kane</text>
+  <text x="170" y="157" text-anchor="middle" font-size="8.8" fill="#0c4a6e">trachee</text>
+
+  <circle cx="170" cy="222" r="30" fill="#fce7f3" stroke="#c98fb0" stroke-width="1.6"/>
+  <path d="M140 222 A30 30 0 0 1 200 222" fill="none" stroke="#dc2626" stroke-width="4"/>
+  <text x="170" y="226" text-anchor="middle" font-size="10.2" font-weight="700" fill="#831843">vechet</text>
+  <text x="170" y="239" text-anchor="middle" font-size="8.8" fill="#831843">oesophage</text>
+
+  <line x1="214" y1="140" x2="268" y2="122" stroke="#dc2626" stroke-width="1.2"/>
+  <text x="272" y="119" font-size="9.4" font-weight="700" fill="#b91c1c">ROV</text>
+  <text x="272" y="131" font-size="9" fill="#7f1d1d">majorite</text>
+  <line x1="205" y1="222" x2="268" y2="240" stroke="#dc2626" stroke-width="1.2"/>
+  <text x="272" y="238" font-size="9.4" font-weight="700" fill="#b91c1c">ROV</text>
+  <text x="272" y="250" font-size="9" fill="#7f1d1d">majorite</text>
+
+  <!-- Chaine des actes -->
+  <rect x="336" y="58" width="404" height="238" rx="7" fill="#fffdf8" stroke="#d6d3d1" stroke-width="1.3"/>
+  <text x="538" y="79" text-anchor="middle" font-size="11.4" font-weight="700" fill="#1c1917">La chaine des actes</text>
+
+  <rect x="352" y="92" width="372" height="46" rx="5" fill="#ecfdf5" stroke="#8fbfa4" stroke-width="1.2"/>
+  <text x="366" y="111" font-size="10.4" font-weight="700" fill="#065f46">1. Le kohen gadol : keratzo</text>
+  <text x="366" y="128" font-size="10.2" fill="#44403c">rov chnayim -- la majeure partie des DEUX simanim</text>
+
+  <path d="M538 138 L538 154" stroke="#a8a29e" stroke-width="1.6" marker-end="url(#ar2)"/>
+  <text x="548" y="151" font-size="9.4" fill="#16a34a">chehita deja VALIDE de-oraita</text>
+
+  <rect x="352" y="158" width="372" height="46" rx="5" fill="#f5f5f4" stroke="#c9c5c1" stroke-width="1.2"/>
+  <text x="366" y="177" font-size="10.4" font-weight="700" fill="#44403c">2. Un autre kohen : mirek</text>
+  <text x="366" y="194" font-size="10.2" fill="#44403c">il acheve la coupe -- non indispensable de-oraita</text>
+
+  <path d="M538 204 L538 220" stroke="#a8a29e" stroke-width="1.6" marker-end="url(#ar2)"/>
+
+  <rect x="352" y="224" width="372" height="56" rx="5" fill="#ecfdf5" stroke="#8fbfa4" stroke-width="1.2"/>
+  <text x="366" y="243" font-size="10.4" font-weight="700" fill="#065f46">3. Le kohen gadol : kabbala + zerika</text>
+  <text x="366" y="260" font-size="10.2" fill="#44403c">il recueille le sang et l'asperge -- ces actes-la sont</text>
+  <text x="366" y="274" font-size="10.2" fill="#44403c">de vrais services, reserves a lui seul.</text>
+
+  <rect x="20" y="308" width="720" height="80" rx="6" fill="#eff6ff" stroke="#9dbbe0" stroke-width="1.3"/>
+  <text x="38" y="328" font-size="10.8" font-weight="700" fill="#1e40af">Pourquoi confier l'achevement a un autre ? Et pourquoi cela ne peut pas etre indispensable</text>
+  <text x="38" y="346" font-size="10.4" fill="#1c1917">Le kohen gadol se libere aussitot pour recueillir le sang. Si le mirek etait indispensable, le sacrifice dependrait d'un acte fait par</text>
+  <text x="38" y="362" font-size="10.4" fill="#1c1917">UN AUTRE -- or tous les services de Yom Kippour ne valent que par lui. Reponse de la guemara : l'invalidite envisagee n'etait</text>
+  <text x="38" y="378" font-size="10.4" fill="#1c1917">que DE-RABBANAN (decret des Sages), et la michna a tenu a l'ecarter en enseignant &quot;rov chnayim&quot; a part pour les kodachim.</text>
+
+  <defs><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+    <path d="M0 0 L10 5 L0 10 z" fill="#a8a29e"/></marker></defs>
+</svg></div>
+          <figcaption>La michna reprend : le kohen gadol coupe la majeure partie des deux simanim, un autre kohen acheve, et lui recueille le sang. Toute la sougya finale porte sur le statut de cet achevement (mirek).</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּנָא דְּבֵי רַבִּי יִשְׁמָעֵאל, קַל וָחֹומֶר: מַה בִּגְדֵי זָהָב שֶׁאֵין כֹּהֵן נִכְנָס בָּהֶן לִפְנַי וְלִפְנִים — טָעוּן טְבִילָה, בִּגְדֵי לָבָן שֶׁנִּכְנָס בָּהֶן לִפְנַי וְלִפְנִים — אֵינוֹ דִּין שֶׁטָּעוּן טְבִילָה! אִיכָּא לְמִפְרַךְ: מַה לְבִגְדֵי זָהָב שֶׁכֵּן כַּפָּרָתָן מְרֻובָּה! אֶלָּא, נָפְקָא לֵיהּ מִדְּרַבִּי.</div>
+            <div class="fr"><p>L&#x27;ecole de Rabbi Yichmael a enseigne [que cela se deduit] par un kal va-homer (raisonnement a fortiori) : si les vetements d&#x27;or, avec lesquels le kohen n&#x27;entre pas lifnai velifnim (dans le Saint des Saints), exigent une tevila (immersion), les vetements blancs, avec lesquels il entre lifnai velifnim, n&#x27;est-il pas logique qu&#x27;ils exigent une tevila ! Il y a de quoi refuter : ce qui distingue les vetements d&#x27;or, c&#x27;est que leur kappara (expiation) est abondante !</p><p>Plutot, il le deduit de l&#x27;enseignement de Rabbi.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כַּפָּרָתָן מְרֻובָּה</b> שֶׁמְּשַׁמֵּשׁ בָּהֶן כָּל יְמוֹת הַשָּׁנָה אֲבָל עֲבוֹדַת פְּנִים דְּיוֹם הַכִּפּוּרִים אֵינָהּ מְכַפֶּרֶת אֶלָּא עַל טֻומְאַת מִקְדָּשׁ וְקָדָשָׁיו כִּדְאָמְרִינַן בִּשְׁבוּעוֹת (דַּף ז:):</div>
+          <div class="glose-fr">Leur kappara est abondante -- car il officie avec eux tous les jours de l&#x27;annee ; tandis que le service interieur de Yom Kippour n&#x27;expie que la touma (impurete) du Temple et de ses saintetes, comme nous le disons dans Chevouot (7b).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>נָפְקָא לֵיהּ מִדְּרַבִּי</b> כְּתֹונֶת בַּד קֹדֶשׁ יִלְבָּשׁ וְרָחַץ בַּמַּיִם וּלְבָשָׁם:</div>
+          <div class="glose-fr">Il le deduit de l&#x27;enseignement de Rabbi -- [du verset] &quot;il revetira une tunique de lin sacree ... il baignera dans l&#x27;eau puis les revetira&quot; (Lev. 16:4).</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תָּנָא דְּבֵי ר&#x27; יִשְׁמָעֵאל ק&quot;ו מַה בִּגְדֵי זָהָב כּוּ&#x27;</b> תֵּימַהּ וְתַנָּא דְּבֵי רַבִּי יִשְׁמָעֵאל גּוּפֵיהּ הָכָא גָּמַר בִּגְדֵי לָבָן מִבִּגְדֵי זָהָב וּלְקַמָּן תָּנָא דְּבֵי רַבִּי יִשְׁמָעֵאל [אִיפְּכָא וי&quot;ל דְּתַנָּא דְּבֵי רַבִּי יִשְׁמָעֵאל] גָּמַר טְבִילָה מִבִּגְדֵי לָבָן לְבִגְדֵי זָהָב כר&quot;י וּמִבִּגְדֵי זָהָב לְבִגְדֵי לָבָן כְּרַבִּי וְקָאָמַר לָמָּה לִי תְּרֵי קְרָאֵי נִיכְתֹּוב חַד וְנַיְתֵי אִידָךְ מִינֵּיהּ וְהַייְנוּ דְּקָא דָּיֵיק הֵי נִיכְתּוֹב אִי כְּתַב בְּבִגְדֵי זָהָב לָא אָתוּ בִּגְדֵי לָבָן בְּקַל וָחֹומֶר וּמַה בִּגְדֵי זָהָב וְכוּ&#x27; דְּאִיכָּא לְמִיפְרַךְ וְכֵן אִיפְּכָא:</div>
+          <div class="glose-fr">L&#x27;ecole de Rabbi Yichmael a enseigne un kal va-homer : si les vetements d&#x27;or, etc. -- Etonnant ! L&#x27;ecole de Rabbi Yichmael elle-meme deduit ici les vetements blancs a partir des vetements d&#x27;or, et plus loin cette meme ecole [raisonne en sens inverse]. On peut repondre que l&#x27;ecole de Rabbi Yichmael deduit la tevila [du passage] des vetements blancs aux vetements d&#x27;or comme Rabbi Yehouda, et [du passage] des vetements d&#x27;or aux vetements blancs comme Rabbi ; et elle demande : pourquoi me faut-il deux versets ? Qu&#x27;on n&#x27;en ecrive qu&#x27;un seul et qu&#x27;on tire l&#x27;autre de lui ! C&#x27;est precisement ce que la guemara examine : lequel faudrait-il ecrire ? Si l&#x27;Ecriture avait ecrit [le verset] pour les vetements d&#x27;or, les vetements blancs ne s&#x27;en deduiraient pas par kal va-homer -- &quot;si les vetements d&#x27;or, etc.&quot; -- car il y a de quoi refuter ; et il en va de meme dans l&#x27;autre sens.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Suite directe de 32a. On cherche la source du principe : <b>tout passage d'un service a un autre</b> oblige le kohen gadol a une <b>tevila</b>. L'ecole de Rabbi Yichmael propose un <b>kal va-homer</b> : les vetements d'or, moins prestigieux puisqu'ils n'entrent jamais dans le Saint des Saints, exigent deja une immersion ; a plus forte raison les vetements blancs.</p><p>La refutation (<b>pircha</b>) est classique : le terme de depart possede un avantage propre qui explique sa severite sans qu'on puisse la transferer. Ici, les vetements d'or ont une <b>kappara meroubva</b> -- ils servent toute l'annee, pour l'ensemble des sacrifices publics et donc pour un eventail bien plus large de fautes. Rachi precise le contraste : le service interieur de Yom Kippour, lui, n'expie qu'un domaine etroit (la <b>touma</b> du Temple et de ses saintetes).</p><p>Le kal va-homer tombe. Il faut donc revenir a un verset : celui de <b>Rabbi</b>.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 452" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="452" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Deux kal va-homer symetriques -- et tous les deux refutes</text>
+  <text x="380" y="43" text-anchor="middle" font-size="10.4" fill="#57534e">Question de fond : d'ou sait-on que CHAQUE changement de vetements, dans les deux sens, exige une tevila (immersion) ?</text>
+
+  <!-- Panneau gauche -->
+  <rect x="20" y="56" width="352" height="286" rx="7" fill="#fffbeb" stroke="#e0c98a" stroke-width="1.4"/>
+  <text x="196" y="77" text-anchor="middle" font-size="11.6" font-weight="700" fill="#92400e">1. OR  -&gt;  BLANC</text>
+  <text x="196" y="93" text-anchor="middle" font-size="9.8" fill="#78716c">(ecole de Rabbi Yichmael, debut de l'amoud)</text>
+
+  <rect x="38" y="104" width="316" height="54" rx="5" fill="#fef3c7" stroke="#d6bb77" stroke-width="1.1"/>
+  <text x="52" y="123" font-size="10.4" font-weight="700" fill="#78350f">Vetements d'OR</text>
+  <text x="52" y="139" font-size="10.2" fill="#44403c">n'entrent PAS lifnai velifnim (Saint des Saints)</text>
+  <text x="52" y="153" font-size="10.2" fill="#44403c">et pourtant : ils exigent une tevila</text>
+
+  <path d="M196 158 L196 182" stroke="#a8a29e" stroke-width="1.6" marker-end="url(#ar1)"/>
+  <text x="206" y="176" font-size="9.6" fill="#78716c">a fortiori</text>
+
+  <rect x="38" y="186" width="316" height="54" rx="5" fill="#f1f5f9" stroke="#b6c2cf" stroke-width="1.1"/>
+  <text x="52" y="205" font-size="10.4" font-weight="700" fill="#334155">Vetements BLANCS</text>
+  <text x="52" y="221" font-size="10.2" fill="#44403c">entrent lifnai velifnim</text>
+  <text x="52" y="235" font-size="10.2" fill="#44403c">n'est-il pas logique qu'ils exigent une tevila ?</text>
+
+  <rect x="38" y="252" width="316" height="74" rx="5" fill="#fee2e2" stroke="#e0a3a3" stroke-width="1.2"/>
+  <text x="52" y="271" font-size="10.4" font-weight="700" fill="#991b1b">PARACHE (refutation)</text>
+  <text x="52" y="288" font-size="10.2" fill="#44403c">L'or a un avantage propre : sa kappara est</text>
+  <text x="52" y="303" font-size="10.2" fill="#44403c">MEROUBA -- il sert toute l'annee, pour toutes</text>
+  <text x="52" y="318" font-size="10.2" fill="#44403c">les fautes. Le blanc ne sert qu'un seul jour.</text>
+
+  <!-- Panneau droit -->
+  <rect x="388" y="56" width="352" height="286" rx="7" fill="#f8fafc" stroke="#c3ccd6" stroke-width="1.4"/>
+  <text x="564" y="77" text-anchor="middle" font-size="11.6" font-weight="700" fill="#334155">2. BLANC  -&gt;  OR</text>
+  <text x="564" y="93" text-anchor="middle" font-size="9.8" fill="#78716c">(meme ecole, quelques lignes plus bas)</text>
+
+  <rect x="406" y="104" width="316" height="54" rx="5" fill="#f1f5f9" stroke="#b6c2cf" stroke-width="1.1"/>
+  <text x="420" y="123" font-size="10.4" font-weight="700" fill="#334155">Vetements BLANCS</text>
+  <text x="420" y="139" font-size="10.2" fill="#44403c">kappara reduite (un seul jour dans l'annee)</text>
+  <text x="420" y="153" font-size="10.2" fill="#44403c">et pourtant : ils exigent une tevila</text>
+
+  <path d="M564 158 L564 182" stroke="#a8a29e" stroke-width="1.6" marker-end="url(#ar1)"/>
+  <text x="574" y="176" font-size="9.6" fill="#78716c">a fortiori</text>
+
+  <rect x="406" y="186" width="316" height="54" rx="5" fill="#fef3c7" stroke="#d6bb77" stroke-width="1.1"/>
+  <text x="420" y="205" font-size="10.4" font-weight="700" fill="#78350f">Vetements d'OR</text>
+  <text x="420" y="221" font-size="10.2" fill="#44403c">kappara meroubva</text>
+  <text x="420" y="235" font-size="10.2" fill="#44403c">n'est-il pas logique qu'ils exigent une tevila ?</text>
+
+  <rect x="406" y="252" width="316" height="74" rx="5" fill="#fee2e2" stroke="#e0a3a3" stroke-width="1.2"/>
+  <text x="420" y="271" font-size="10.4" font-weight="700" fill="#991b1b">PARACHE (refutation)</text>
+  <text x="420" y="288" font-size="10.2" fill="#44403c">Le blanc a un avantage propre : c'est avec lui</text>
+  <text x="420" y="303" font-size="10.2" fill="#44403c">qu'il entre lifnai velifnim, la ou l'or n'entre</text>
+  <text x="420" y="318" font-size="10.2" fill="#44403c">jamais.</text>
+
+  <path d="M196 342 L196 362 L564 362 L564 342" fill="none" stroke="#a8a29e" stroke-width="1.4"/>
+  <path d="M380 362 L380 378" stroke="#a8a29e" stroke-width="1.6" marker-end="url(#ar1)"/>
+
+  <rect x="20" y="382" width="720" height="60" rx="6" fill="#ecfdf5" stroke="#8fbfa4" stroke-width="1.4"/>
+  <text x="38" y="402" font-size="10.8" font-weight="700" fill="#065f46">Les deux a fortiori tombent -- il faut donc UN verset qui couvre les deux sens :</text>
+  <text x="38" y="420" font-size="10.4" fill="#1c1917">Lev. 16:4 -- &quot;bigdei kodesh hem, verahats et besaro ba-mayim ou-levecham&quot; (ce sont des vetements SACRES ; il baignera sa chair</text>
+  <text x="38" y="435" font-size="10.4" fill="#1c1917">dans l'eau puis les revetira). Le motif de la tevila est la SAINTETE des vetements -- or l'or aussi est sacre. Donc : les deux sens.</text>
+
+  <defs><marker id="ar1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+    <path d="M0 0 L10 5 L0 10 z" fill="#a8a29e"/></marker></defs>
+</svg></div><div class="svg-cap">Les deux tentatives d&#x27;a fortiori de l&#x27;amoud, et l&#x27;avantage propre a chaque camp qui les fait tomber.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַבִּי: מִנַּיִן לְחָמֵשׁ טְבִילוֹת וַעֲשָׂרָה קִידּוּשִׁין שֶׁטּוֹבֵל כֹּהֵן גָּדוֹל וּמְקַדֵּשׁ בּוֹ בַּיּוֹם, תַּלְמוּד לוֹמַר: ״כְּתֹנֶת בַּד קֹודֶשׁ יִלְבָּשׁ״, הָא לָמַדְתָּ שֶׁכָּל הַמְשַׁנֶּה מֵעֲבוֹדָה לַעֲבוֹדָה שֶׁטָּעוּן טְבִילָה. אַשְׁכְּחַן מִבִּגְדֵי זָהָב לְבִגְדֵי לָבָן, מִבִּגְדֵי לָבָן לְבִגְדֵי זָהָב מִנַּיִן?</div>
+            <div class="fr"><p>Rabbi a dit : d&#x27;ou [sait-on] les cinq tevilot et les dix kidouchim que le kohen gadol accomplit -- il s&#x27;immerge et il se sanctifie -- en ce jour ? Le verset enseigne : &quot;il revetira une tunique de lin sacree&quot; (Lev.</p><p>16:4). Tu as ainsi appris que quiconque passe d&#x27;un service a un autre service exige une tevila.</p><p>Nous avons trouve [la source] pour [le passage] des vetements d&#x27;or aux vetements blancs ; des vetements blancs aux vetements d&#x27;or, d&#x27;ou [le sait-on] ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>א&quot;ר וְכוּ&#x27;</b> לְפָרוֹשֵׁי מַתְנִיתָא דִּלְעֵיל קָא מַהְדַּר:</div>
+          <div class="glose-fr">Rabbi a dit, etc. -- il revient expliquer la baraita citee plus haut.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le verset complet est : "il revetira une tunique de lin sacree ... ce sont des vetements sacres, <b>il baignera sa chair dans l'eau puis les revetira</b>" (Lev. 16:4). Rabbi y lit une regle generale : la tevila n'est pas attachee a un moment particulier de la journee, mais a <b>tout changement de service</b>.</p><p>Reste une asymetrie. Le verset parle du moment ou il revet les <b>vetements blancs</b> : il couvre donc le passage <b>or vers blanc</b>. Mais le kohen gadol repasse aussi du blanc a l'or (apres le service du jour, pour les beliers ; apres la sortie de la kaf et de la mahta, pour le tamid du soir). D'ou vient l'immersion dans ce sens-la ? C'est la question qui relance la sougya.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּנָא דְּבֵי רַבִּי יִשְׁמָעֵאל, קַל וָחֹומֶר: מַה בִּגְדֵי לָבָן שֶׁאֵין כַּפָּרָתָן מְרֻובָּה — טְעוּנִין טְבִילָה, בִּגְדֵי זָהָב שֶׁכַּפָּרָתָן מְרֻובָּה — אֵינוֹ דִּין שֶׁטְּעוּנִין טְבִילָה?</div>
+            <div class="fr"><p>L&#x27;ecole de Rabbi Yichmael a enseigne, par kal va-homer : si les vetements blancs, dont la kappara n&#x27;est pas abondante, exigent une tevila, les vetements d&#x27;or, dont la kappara est abondante, n&#x27;est-il pas logique qu&#x27;ils exigent une tevila ?</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>L'ecole de Rabbi Yichmael retourne exactement son propre argument. Tout a l'heure, l'avantage de l'or (kappara abondante) servait a <b>refuter</b> l'a fortiori ; ici, ce meme avantage devient le <b>moteur</b> du raisonnement inverse : si le vetement dont l'expiation est etroite exige deja une immersion, celui dont l'expiation est large l'exige a plus forte raison.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִיכָּא לְמִפְרַךְ: מַה לְבִגְדֵי לָבָן שֶׁכֵּן נִכְנָס בָּהֶן לִפְנַי וְלִפְנִים! הַיְינוּ דְקָתָנֵי, וְאוֹמֵר: ״בִּגְדֵי קֹודֶשׁ הֵם וְרָחַץ אֶת בְּשָׂרוֹ בַּמַּיִם וּלְבֵשָׁם״.</div>
+            <div class="fr"><p>Il y a de quoi refuter : ce qui distingue les vetements blancs, c&#x27;est qu&#x27;il entre avec eux lifnai velifnim ! C&#x27;est [precisement] ce qui est enseigne [dans la baraita] : &quot;et il dit : ce sont des vetements sacres, il baignera sa chair dans l&#x27;eau puis les revetira&quot; (Lev.</p><p>16:4).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַייְנוּ דְקָתָנֵי</b> בְּמִילְּתָא דְּרַבִּי וְאוֹמֵר בִּגְדֵי קֹדֶשׁ הֵם וְהָכִי דְּרֵישׁ לֵיהּ תָּלָה הַכָּתוּב טַעַם הַטְּבִילָה בִּשְׁבִיל שֶׁהֵם בִּגְדֵי קֹדֶשׁ לְלַמֶּדְךָ שֶׁכָּל חֲלִיפוֹת בִּגְדֵי קֹדֶשׁ בּוֹ בַּיּוֹם טְעוּנִין טְבִילָה וּבִגְדֵי זָהָב גַּם הֵם קֹדֶשׁ:</div>
+          <div class="glose-fr">C&#x27;est ce qui est enseigne -- dans le propos de Rabbi : &quot;et il dit : ce sont des vetements sacres&quot;. Et voici comment il l&#x27;expose : l&#x27;Ecriture a suspendu le motif de la tevila au fait qu&#x27;il s&#x27;agit de vetements sacres, pour t&#x27;enseigner que tout changement de vetements sacres en ce jour exige une tevila -- et les vetements d&#x27;or, eux aussi, sont sacres.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le second a fortiori tombe pour la raison symetrique du premier : les vetements blancs ont eux aussi un avantage exclusif -- ils sont les seuls a franchir le rideau du Saint des Saints. Aucun des deux sens ne se deduit donc de l'autre par la logique seule.</p><p>D'ou la reponse : la baraita de 32a ne s'arretait pas la, elle ajoutait <b>"ve-omer"</b> ("et il dit"), c'est-a-dire un second appui scripturaire. Rachi explique la lecture : l'Ecriture suspend le motif de l'immersion au fait que <b>ce sont des vetements SACRES</b>. Ce n'est donc pas la blancheur ni l'entree au Saint des Saints qui declenche la tevila, mais la saintete -- et les vetements d'or sont sacres eux aussi. Les deux sens sont couverts d'un coup.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְחָמֵשׁ עֲבוֹדוֹת הֵן: תָּמִיד שֶׁל שַׁחַר בְּבִגְדֵי זָהָב, עֲבוֹדַת הַיּוֹם בְּבִגְדֵי לָבָן, אֵילוֹ וְאֵיל הָעָם בְּבִגְדֵי זָהָב, כַּף וּמַחְתָּה בְּבִגְדֵי לָבָן, תָּמִיד שֶׁל בֵּין הָעַרְבַּיִם בְּבִגְדֵי זָהָב.</div>
+            <div class="fr"><p>Et ce sont cinq services : le tamid du matin, en vetements d&#x27;or ; le service du jour, en vetements blancs ; son belier et le belier du peuple, en vetements d&#x27;or ; la kaf (cuiller a encens) et la mahta (encensoir), en vetements blancs ; le tamid du soir, en vetements d&#x27;or.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La baraita justifie le chiffre de <b>cinq</b> : cinq blocs de service, alternant a chaque fois entre les huit vetements d'or et les quatre vetements blancs. Comme chaque alternance impose une tevila, on obtient cinq immersions -- et, a deux kidouchim par immersion, dix kidouchim.</p><p>Noter l'alternance stricte : <b>or / blanc / or / blanc / or</b>. Les services accomplis a l'exterieur (les tamidim, les beliers) se font en or ; ceux qui touchent au Saint des Saints (le taureau et le bouc, puis la recuperation de la kaf et de la mahta) se font en blanc.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּמִנַּיִן שֶׁכָּל טְבִילָה וּטְבִילָה צְרִיכָה שְׁנֵי קִידּוּשִׁין? תַּלְמוּד לוֹמַר: ״וּפָשַׁט ... וְרָחַץ״, ״וְרָחַץ ... וְלָבַשׁ״. הַאי בִּטְבִילָה כְּתִיב! אִם אֵינוֹ עִנְיָן לִטְבִילָה, דְּנָפְקָא לֵיהּ: מִ״בִּגְדֵי קֹדֶשׁ הֵם״, תְּנֵהוּ עִנְיָן לְקִידּוּשׁ.</div>
+            <div class="fr"><p>Et d&#x27;ou [sait-on] que chaque tevila exige deux kidouchim ? Le verset enseigne : &quot;il otera ... et il baignera&quot; (Lev.</p><p>16:23), &quot;et il baignera ... et il revetira&quot; (Lev. 16:24).</p><p>Mais celui-ci est ecrit a propos de la tevila ! Si ce n&#x27;est pas l&#x27;objet de la tevila -- puisque celle-ci se deduit deja de &quot;ce sont des vetements sacres&quot; -- applique-le a l&#x27;objet du kidouch.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַאי בִּטְבִילָה כְּתִיב</b> דְּהָא כְּתִיב בְּשָׂרוֹ:</div>
+          <div class="glose-fr">Celui-ci est ecrit a propos de la tevila -- puisqu&#x27;il y est ecrit &quot;sa chair&quot;.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">הָכִי גָּרְסִינַן אִם אֵינוֹ עִנְיָן לִטְבִילָה דְּנָפְקָא לֵיהּ מִבִּגְדֵי קֹדֶשׁ הֵם תְּנֵהוּ לְעִנְיַן קִידּוּשׁ:</div>
+          <div class="glose-fr">Telle est notre version du texte : si ce n&#x27;est pas l&#x27;objet de la tevila -- puisque celle-ci se deduit de &quot;ce sont des vetements sacres&quot; -- applique-le a l&#x27;objet du kidouch.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La baraita isole deux sequences ou le mot "il baignera" est encadre par un devetissement puis un revetement : <b>ote / baigne</b>, puis <b>baigne / revet</b>. Deux lavages autour d'un meme moment de changement -- d'ou deux kidouchim.</p><p>Objection immediate : ce verbe "baigner" designe manifestement la <b>tevila</b>, pas le <b>kidouch</b> des mains et des pieds. Rachi donne le signe decisif : le verset dit "il baignera sa <b>chair</b>" -- le corps entier, donc une immersion.</p><p>Reponse par la regle hermeneutique <b>im eino inyan</b> ("si ce n'est pas son objet") : la tevila possede deja sa source ailleurs ("ce sont des vetements sacres"). Ce verset-ci devient donc disponible ; on le reaffecte a ce qui n'a pas encore de source -- le kidouch.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 268" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="268" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Im eino inyan : recycler un verset devenu disponible</text>
+
+  <rect x="24" y="42" width="300" height="66" rx="5" fill="#f1f5f9" stroke="#b6c2cf" stroke-width="1.2"/>
+  <text x="38" y="61" font-size="10.4" font-weight="700" fill="#334155">Le verset dit &quot;ve-rahats et besaro&quot;</text>
+  <text x="38" y="78" font-size="10.2" fill="#44403c">&quot;il baignera sa CHAIR&quot; -- le mot besaro impose</text>
+  <text x="38" y="93" font-size="10.2" fill="#44403c">de comprendre : tevila du corps entier (Rachi).</text>
+
+  <rect x="376" y="42" width="300" height="66" rx="5" fill="#fffbeb" stroke="#e0c98a" stroke-width="1.2"/>
+  <text x="390" y="61" font-size="10.4" font-weight="700" fill="#92400e">Mais la tevila a deja sa source</text>
+  <text x="390" y="78" font-size="10.2" fill="#44403c">&quot;bigdei kodech hem&quot; (Lev. 16:4) l'enseigne</text>
+  <text x="390" y="93" font-size="10.2" fill="#44403c">pour tout changement de vetements sacres.</text>
+
+  <path d="M174 108 L174 132 L526 132 L526 108" fill="none" stroke="#a8a29e" stroke-width="1.4"/>
+  <path d="M350 132 L350 152" stroke="#a8a29e" stroke-width="1.6" marker-end="url(#ar3)"/>
+
+  <rect x="130" y="156" width="440" height="42" rx="5" fill="#f5f5f4" stroke="#c9c5c1" stroke-width="1.2"/>
+  <text x="350" y="182" text-anchor="middle" font-size="11" font-weight="700" fill="#44403c">Le verset devient DISPONIBLE : plus rien a enseigner sur la tevila</text>
+
+  <path d="M350 198 L350 216" stroke="#a8a29e" stroke-width="1.6" marker-end="url(#ar3)"/>
+
+  <rect x="130" y="220" width="440" height="38" rx="5" fill="#ecfdf5" stroke="#8fbfa4" stroke-width="1.3"/>
+  <text x="350" y="244" text-anchor="middle" font-size="11" font-weight="700" fill="#065f46">Applique-le au KIDOUCH : 2 kidouchim par tevila</text>
+
+  <defs><marker id="ar3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+    <path d="M0 0 L10 5 L0 10 z" fill="#a8a29e"/></marker></defs>
+</svg></div><div class="svg-cap">Im eino inyan : un verset dont l&#x27;objet apparent est deja couvert ailleurs est reaffecte a un autre objet.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְלִיכְתְּבֵיהּ רַחֲמָנָא בִּלְשׁוֹן קִידּוּשׁ! הָא קָא מַשְׁמַע לַן דִּטְבִילָה כְּקִידּוּשׁ, מַה קִידּוּשׁ בְּמָקוֹם קָדוֹשׁ, אַף טְבִילָה בְּמָקוֹם קָדוֹשׁ.</div>
+            <div class="fr"><p>Et que le Misericordieux l&#x27;ecrive donc dans le langage du kidouch ! Ceci vient nous enseigner que la tevila est comme le kidouch : de meme que le kidouch [se fait] dans un lieu sacre, de meme la tevila [se fait] dans un lieu sacre.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָא קמ&quot;ל</b> מִדְּאַפְקִי&#x27; בִּלְשׁוֹן טְבִילָה דְּיָלְפִינַן טְבִילָה מִינֵּיהּ:</div>
+          <div class="glose-fr">Ceci vient nous enseigner -- du fait que l&#x27;Ecriture l&#x27;a exprime dans le langage de la tevila, nous en deduisons [une regle concernant] la tevila.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַה קִידּוּשׁ בְּמָקוֹם קָדוֹשׁ</b> כְּדִכְתִיב בָּהּ בְּמָקוֹם קָדוֹשׁ אַף טְבִילוֹת הַבָּאוֹת מֵחֲמַת מַחְלְפוֹת הַיּוֹם בְּמָקוֹם קָדוֹשׁ אֲבָל טְבִילָה רִאשׁוֹנָה לָא יַלֶּפֶת מִינֵּיהּ דְּהָא לָאו דְּאוֹרַיְיתָא הִיא:</div>
+          <div class="glose-fr">De meme que le kidouch [se fait] dans un lieu sacre -- comme il est ecrit a son sujet &quot;dans un lieu sacre&quot;, de meme les tevilot qui viennent a cause des changements [de vetements] du jour [se font] dans un lieu sacre. Mais la premiere tevila, tu ne la deduis pas de la, car elle n&#x27;est pas de-oraita (d&#x27;ordre biblique).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Si le verset vise en realite le kidouch, pourquoi la Torah a-t-elle choisi un vocabulaire d'immersion ? Reponse : le detour est voulu. En ecrivant le kidouch en <b>langage de tevila</b>, l'Ecriture cree un rapprochement entre les deux actes et transfere a la tevila une exigence propre au kidouch -- le <b>makom kadoch</b> (lieu sacre).</p><p>Concretement : le kidouch se fait au kior (la vasque), situe dans la cour du Temple, donc en zone sacree. Les immersions de Yom Kippour devront de meme se faire dans l'enceinte, et non a l'exterieur. Rachi ajoute une limite importante : cela ne vaut que pour les tevilot liees aux changements de vetements du jour. La <b>premiere</b> immersion du kohen gadol, celle par laquelle il entre en service, n'est pas de-oraita et echappe donc a cette regle.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַבִּי יְהוּדָה, קִידּוּשׁ מְנָא לֵיהּ? נָפְקָא לֵיהּ מִדְּרַבִּי אֶלְעָזָר בְּרַבִּי שִׁמְעוֹן.</div>
+            <div class="fr"><p>Et Rabbi Yehouda, d&#x27;ou tire-t-il le kidouch ? Il le tire de l&#x27;enseignement de Rabbi Elazar be-Rabbi Chimon.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְר&#x27; יְהוּדָה</b> דְּמַפְּקָא לֵיהּ לְהַאי קְרָא לִטְבִילַת בִּגְדֵי זָהָב לָא דְּרֵישׁ בִּגְדֵי קֹדֶשׁ הֵם קִידּוּשׁ מְנָא לֵיהּ:</div>
+          <div class="glose-fr">Et Rabbi Yehouda -- qui applique ce verset a la tevila des vetements d&#x27;or et n&#x27;expose pas &quot;ce sont des vetements sacres&quot; : d&#x27;ou tire-t-il le kidouch ?</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>נָפְקָא לֵיהּ מִדְּרַבִּי אֶלְעָזָר בְּרַבִּי שִׁמְעוֹן</b> וְאִם תֹּאמַר אִם כֵּן מַאי אִיצְטְרִיךְ לְעֵיל לְמֵימַר דר&quot;י נָפְקָא לֵיהּ מִדְּרַבִּי טְבִילָה בְּבִגְדֵי לָבָן נַיְתֵי נָמֵי מֻדַּר&#x27; אֶלְעָזָר בְּרַבִּי שִׁמְעוֹן לְהֶיקֵּישָׁא דְּמַקִּישׁ פְּשִׁיטָה לִלְבִישָׁה וְנֵימָא הָכִי מַה לְבִישָׁה דְּבִגְדֵי זָהָב שֶׁהוּא לוֹבֵשׁ טָעוּן טְבִילָה כִּדְנָפְקָא לֵיהּ לר&quot;י מוֹרְחָץ אַף בְּגָדִים שֶׁהוּא פּוֹשֵׁט (בָּהֶם) שֶׁהֵם שֶׁל לָבָן כְּשֶׁהוּא לוֹבְשָׁן יְהֵא טָעוּן טְבִילָה וְי&quot;ל אִי אָמְרִינַן הֶיקֵּישָׁא כִּי הַאי גַוְונָא אָז לֹא מָצִינוּ לְמִיגְמַר מִינֵּיהּ קִידּוּשׁ לִפְשִׁיטָה דְּנֵימָא הָכִי מַה שֶׁהוּא לוֹבֵשׁ שֶׁהֵם שֶׁל זָהָב כְּשֶׁהוּא לוֹבְשָׁן טָעוּן קִידּוּשׁ אַף שֶׁל לָבָן שֶׁהוּא פּוֹשֵׁט כְּשֶׁהוּא לוֹבְשָׁן טָעוּן קִידּוּשׁ וְלָא צְרִיכָא לְהַאי דְּרָשָׁא דְּהַאי קִידּוּשׁ לִלְבִישַׁת בִּגְדֵי לָבָן מק&quot;ו אָתְיָא כְּמוֹ קִידּוּשׁ לְבִגְדֵי זָהָב וא&quot;כ לָא הֲוָה דָּרְשִׁינַן הֶיקֵּישָׁא אֶלָּא לִטְבִילַת בִּגְדֵי לָבָן אֲבָל קִידּוּשׁ לִפְשִׁיטָה לָא הֲוָה נָפְקָא לָן הִילְכָּךְ אִיצְטְרִיךְ קְרָא לִטְבִילָה וּמִמֵּילָא דָּרְשִׁינַן הֶיקֵּישָׁא לְקִידּוּשׁ כְּדַאֲמַרַן לְעֵיל:</div>
+          <div class="glose-fr">Il le tire de l&#x27;enseignement de Rabbi Elazar be-Rabbi Chimon -- Et si tu demandes : s&#x27;il en est ainsi, pourquoi fallait-il dire plus haut que Rabbi Yehouda tire de l&#x27;enseignement de Rabbi la tevila pour les vetements blancs ? Qu&#x27;il la tire egalement de Rabbi Elazar be-Rabbi Chimon, par le hekech (rapprochement) qui rapproche la pechita (devetissement) de la levicha (revetement), et qu&#x27;on raisonne ainsi : de meme que le revetement des vetements d&#x27;or exige une tevila -- comme Rabbi Yehouda le tire de &quot;et il baignera&quot; -- de meme les vetements qu&#x27;il ote, qui sont les blancs, exigeront une tevila lorsqu&#x27;il les revet ! On peut repondre : si l&#x27;on raisonnait par hekech de cette maniere, on ne pourrait plus en deduire le kidouch pour la pechita. Car on dirait alors : de meme que ce qu&#x27;il revet, qui est d&#x27;or, exige un kidouch au moment ou il le revet, de meme les blancs qu&#x27;il ote exigent un kidouch lorsqu&#x27;il les revet -- et une telle derasha serait inutile, puisque le kidouch pour le revetement des vetements blancs s&#x27;obtient deja par kal va-homer, tout comme le kidouch des vetements d&#x27;or. Ainsi on n&#x27;exposerait le hekech que pour la tevila des vetements blancs, mais le kidouch de la pechita ne s&#x27;en deduirait pas. C&#x27;est pourquoi le verset est necessaire pour la tevila, et de la on expose d&#x27;office le hekech pour le kidouch, comme nous l&#x27;avons dit plus haut.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rappel du partage des sources (etabli en 32a) : <b>Rabbi Yehouda</b> utilise le verset "il otera ... et il baignera" pour etablir la <b>tevila</b> lors du passage aux vetements d'or, et il ne recourt pas a la derasha de "ce sont des vetements sacres". Ce verset lui etant deja pris, il ne peut plus s'en servir, comme le fait Rabbi, pour le kidouch.</p><p>Sa source est donc celle de <b>Rabbi Elazar be-Rabbi Chimon</b> : un kal va-homer. Puisque la Torah exige un kidouch la ou elle n'exige aucune tevila (tout au long de l'annee, avant chaque service), a plus forte raison en exige-t-elle un la ou elle impose une tevila a chaque changement de vetements.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב חִסְדָּא: הָא דְּרַבִּי מַפְּקָא מִדְּרַבִּי מֵאִיר, וּמַפְּקָא מִדְּרַבָּנָן. מַפְּקָא מִדְּרַבָּנָן, דְּאִילּוּ רַבָּנָן אָמְרִי: כְּשֶׁהוּא לָבוּשׁ מְקַדֵּשׁ, וְאִיהוּ אָמַר: כְּשֶׁהוּא פּוֹשֵׁט מְקַדֵּשׁ. וּמַפְּקָא מִדְּרַבִּי מֵאִיר: דְּאִילּוּ רַבִּי מֵאִיר אָמַר: הָךְ קִידּוּשׁ בָּתְרָא כְּשֶׁהוּא לָבוּשׁ מְקַדֵּשׁ, וְאִיהוּ אָמַר: כְּשֶׁהוּא פּוֹשֵׁט מְקַדֵּשׁ.</div>
+            <div class="fr"><p>Rav Hisda a dit : cet enseignement de Rabbi sort du cadre de [l&#x27;opinion de] Rabbi Meir et sort du cadre de [celle] des Sages. Il sort de celle des Sages : car les Sages disent qu&#x27;il se sanctifie alors qu&#x27;il est vetu, tandis que lui dit qu&#x27;il se sanctifie alors qu&#x27;il se devet.</p><p>Et il sort de celle de Rabbi Meir : car Rabbi Meir dit que ce dernier kidouch, il l&#x27;accomplit alors qu&#x27;il est vetu, tandis que lui dit qu&#x27;il l&#x27;accomplit alors qu&#x27;il se devet.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אָמַר רַב חִסְדָּא כוּ&#x27;</b> קָסָבַר רַב חִסְדָּא דַּוְקָא א&quot;ר וּפָשַׁט וְרָחַץ וְרָחַץ וְלָבַשׁ שְׁנֵי קִידּוּשִׁין בֵּין פְּשִׁיטָה וּלְבִישָׁה אֶחָד לִפְנֵי טְבִילָה וְאֶחָד לְאַחֲרֶיהָ קֹודֶם לְבִישָׁה:</div>
+          <div class="glose-fr">Rav Hisda a dit, etc. -- Rav Hisda estime que Rabbi a dit precisement : &quot;il otera ... et il baignera&quot;, &quot;et il baignera ... et il revetira&quot; -- deux kidouchim entre la pechita et la levicha, l&#x27;un avant la tevila et l&#x27;autre apres elle, avant le revetement.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַפְּקָא מָדָר&#x27; מֵאִיר</b> מוּצֵאת הִיא מִכְּלַל דְּבָרָיו שֶׁל ר&quot;מ לָא סְבִירָא לֵיהּ כר&quot;מ דְּאע&quot;ג דְּאָמְרִינַן בְּמַתְנִיתִין פָּשַׁט וְקִידֵּשׁ יָדָיו וְרַגְלָיו דס&quot;ל קִידּוּשׁ שֶׁלִּפְנֵי הַטְּבִילָה אַחַר פְּשִׁיטָה הוּא פְּלִיג עָלֶיהָ מִיהָא בְּקִידּוּשׁ שֵׁנִי דְּקָאָמַר אַחַר לְבִישָׁה הוּא כִּדְקָתָנֵי בָּרַיְיתָא דר&quot;מ לְעֵיל לָבַשׁ קִידֵּשׁ יָדָיו וְרַגְלָיו:</div>
+          <div class="glose-fr">Il sort du cadre de Rabbi Meir -- son propos sort du cadre des paroles de Rabbi Meir : il ne tient pas comme Rabbi Meir. Car bien que nous disions dans la michna &quot;il ota et sanctifia ses mains et ses pieds&quot; -- ce qui montre qu&#x27;il tient que le kidouch precedant la tevila a lieu apres la pechita -- il diverge de lui en tout cas sur le second kidouch, dont [Rabbi Meir] dit qu&#x27;il a lieu apres le revetement, comme l&#x27;enseigne plus haut la baraita de Rabbi Meir : &quot;il revetit, il sanctifia ses mains et ses pieds&quot;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Hisda prend au pied de la lettre l'ordre des mots chez Rabbi : <b>"il otera ... et il baignera"</b> puis <b>"et il baignera ... et il revetira"</b>. Les deux kidouchim se logent donc tous deux dans l'intervalle ou le kohen gadol <b>n'est vetu de rien</b> : un apres avoir ote, un apres l'immersion mais avant de revetir (Rachi).</p><p>Cela le met en conflit sur deux fronts. Contre les <b>Sages</b>, qui placent le premier kidouch alors qu'il porte encore les vetements sacres (avant la pechita). Contre <b>Rabbi Meir</b>, qui s'accorde sur le premier mais place le <b>second</b> apres le revetement -- comme l'enonce sa baraita : "il revetit, il sanctifia ses mains et ses pieds".</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 452" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="452" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Un seul changement de vetements : ou tombent les DEUX kidouchim ?</text>
+  <text x="380" y="43" text-anchor="middle" font-size="10.4" fill="#57534e">Tous admettent 5 tevilot et 10 kidouchim. Le desaccord porte sur le placement : avant ou apres le devetissement, avant ou apres le revetement.</text>
+
+  <!-- Frise des etapes -->
+  <line x1="46" y1="94" x2="716" y2="94" stroke="#a8a29e" stroke-width="2"/>
+  <g font-size="9.8" fill="#44403c">
+    <circle cx="90" cy="94" r="6" fill="#e7e5e4" stroke="#a8a29e" stroke-width="1.4"/>
+    <text x="90" y="76" text-anchor="middle" font-size="10.2" font-weight="700" fill="#1c1917">VETU</text>
+    <text x="90" y="116" text-anchor="middle">service A</text>
+    <text x="90" y="130" text-anchor="middle" fill="#78716c">(vetements 1)</text>
+
+    <circle cx="248" cy="94" r="6" fill="#e7e5e4" stroke="#a8a29e" stroke-width="1.4"/>
+    <text x="248" y="76" text-anchor="middle" font-size="10.2" font-weight="700" fill="#1c1917">PECHITA</text>
+    <text x="248" y="116" text-anchor="middle">il ote</text>
+    <text x="248" y="130" text-anchor="middle" fill="#78716c">(il est nu)</text>
+
+    <circle cx="392" cy="94" r="6" fill="#e7e5e4" stroke="#a8a29e" stroke-width="1.4"/>
+    <text x="392" y="76" text-anchor="middle" font-size="10.2" font-weight="700" fill="#1c1917">TEVILA</text>
+    <text x="392" y="116" text-anchor="middle">immersion</text>
+    <text x="392" y="130" text-anchor="middle" fill="#78716c">(makom kadoch)</text>
+
+    <circle cx="540" cy="94" r="6" fill="#e7e5e4" stroke="#a8a29e" stroke-width="1.4"/>
+    <text x="540" y="76" text-anchor="middle" font-size="10.2" font-weight="700" fill="#1c1917">LEVICHA</text>
+    <text x="540" y="116" text-anchor="middle">il revet</text>
+    <text x="540" y="130" text-anchor="middle" fill="#78716c">(vetements 2)</text>
+
+    <circle cx="686" cy="94" r="6" fill="#e7e5e4" stroke="#a8a29e" stroke-width="1.4"/>
+    <text x="686" y="76" text-anchor="middle" font-size="10.2" font-weight="700" fill="#1c1917">AVODA</text>
+    <text x="686" y="116" text-anchor="middle">service B</text>
+  </g>
+
+  <!-- Lignes d'opinions -->
+  <rect x="20" y="146" width="720" height="46" rx="5" fill="#f1f5f9" stroke="#c3ccd6" stroke-width="1.1"/>
+  <text x="34" y="166" font-size="10.6" font-weight="700" fill="#334155">Les Sages (rabbanan)</text>
+  <text x="34" y="182" font-size="9.6" fill="#57534e">il sanctifie ENCORE VETU</text>
+  <circle cx="168" cy="169" r="11" fill="#334155"/><text x="168" y="173" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">K1</text>
+  <circle cx="612" cy="169" r="11" fill="#334155"/><text x="612" y="173" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">K2</text>
+
+  <rect x="20" y="200" width="720" height="46" rx="5" fill="#fffbeb" stroke="#e0c98a" stroke-width="1.1"/>
+  <text x="34" y="220" font-size="10.6" font-weight="700" fill="#92400e">Rabbi Meir</text>
+  <text x="34" y="236" font-size="9.6" fill="#57534e">le 2e kidouch se fait VETU</text>
+  <circle cx="320" cy="223" r="11" fill="#92400e"/><text x="320" y="227" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">K1</text>
+  <circle cx="612" cy="223" r="11" fill="#92400e"/><text x="612" y="227" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">K2</text>
+
+  <rect x="20" y="254" width="720" height="46" rx="5" fill="#fdf2f8" stroke="#d8b4c8" stroke-width="1.1"/>
+  <text x="34" y="274" font-size="10.6" font-weight="700" fill="#9d174d">Rabbi (selon Rav Hisda)</text>
+  <text x="34" y="290" font-size="9.6" fill="#57534e">les DEUX se font DEVETU</text>
+  <circle cx="320" cy="277" r="11" fill="#9d174d"/><text x="320" y="281" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">K1</text>
+  <circle cx="466" cy="277" r="11" fill="#9d174d"/><text x="466" y="281" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">K2</text>
+
+  <line x1="248" y1="140" x2="248" y2="306" stroke="#d6d3d1" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="392" y1="140" x2="392" y2="306" stroke="#d6d3d1" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="540" y1="140" x2="540" y2="306" stroke="#d6d3d1" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- La contradiction -->
+  <rect x="20" y="318" width="352" height="120" rx="6" fill="#eff6ff" stroke="#9dbbe0" stroke-width="1.3"/>
+  <text x="36" y="338" font-size="10.8" font-weight="700" fill="#1e40af">Rav Aha bar Yaakov</text>
+  <text x="36" y="356" font-size="10.2" fill="#44403c">Tous s'accordent : le 2e kidouch se fait</text>
+  <text x="36" y="371" font-size="10.2" fill="#44403c">APRES le revetement.</text>
+  <text x="36" y="390" font-size="10.2" fill="#44403c">Verset : &quot;ou be-gichtam el ha-mizbeah&quot;</text>
+  <text x="36" y="405" font-size="10.2" fill="#44403c">(Ex. 30:20) -- celui a qui il ne manque</text>
+  <text x="36" y="420" font-size="10.2" fill="#44403c">QUE l'approche. Exclut celui a qui il</text>
+  <text x="36" y="433" font-size="10.2" fill="#44403c">manque le revetement ET l'approche.</text>
+
+  <rect x="388" y="318" width="352" height="120" rx="6" fill="#fee2e2" stroke="#e0a3a3" stroke-width="1.3"/>
+  <text x="404" y="338" font-size="10.8" font-weight="700" fill="#991b1b">Rav Aha fils de Rava : incompatibles</text>
+  <text x="404" y="356" font-size="10.2" fill="#44403c">Rav Hisda place les 2 kidouchim de Rabbi</text>
+  <text x="404" y="371" font-size="10.2" fill="#44403c">AVANT le revetement ; Rav Aha en exige un</text>
+  <text x="404" y="386" font-size="10.2" fill="#44403c">APRES. Si les deux tenaient ensemble :</text>
+  <text x="404" y="407" font-size="11.4" font-weight="700" fill="#991b1b">3 kidouchim x 5 tevilot = 15</text>
+  <text x="404" y="426" font-size="10.2" fill="#44403c">alors que la halakha en compte DIX.</text>
+</svg></div><div class="svg-cap">Les trois positions sur le placement des deux kidouchim, et la regle de Rav Aha bar Yaakov qui va tout compliquer.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב אַחָא בַּר יַעֲקֹב: הַכֹּל מוֹדִין בְּקִידּוּשׁ שֵׁנִי שֶׁלּוֹבֵשׁ וְאַחַר כָּךְ מְקַדֵּשׁ. מַאי טַעְמָא, דְּאָמַר קְרָא: ״אוֹ בְגִשְׁתָּם אֶל הַמִּזְבֵּחַ״, מִי שֶׁאֵינוֹ מְחֻוסָּר אֶלָּא גִּישָׁה, יָצָא זֶה שֶׁמְחֻוסָּר לְבִישָׁה וְגִישָׁה.</div>
+            <div class="fr"><p>Rav Aha bar Yaakov a dit : tous s&#x27;accordent, pour le second kidouch, qu&#x27;il revet [d&#x27;abord] et se sanctifie ensuite. Quelle en est la raison ?</p><p>Car le verset dit : &quot;ou lorsqu&#x27;ils s&#x27;approcheront de l&#x27;autel&quot; (Ex. 30:20) -- celui a qui il ne manque plus que l&#x27;approche ; cela exclut celui-ci, a qui il manque et le revetement et l&#x27;approche.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַכֹּל מוֹדִים</b> וַאֲפִילּוּ רַבִּי שֶׁהַקִּידּוּשׁ הַסָּמוּךְ לִפְנֵי הָעֲבוֹדָה כְּשֶׁהוּא לָבוּשׁ מְקַדְּשׁוֹ:</div>
+          <div class="glose-fr">Tous s&#x27;accordent -- et meme Rabbi : le kidouch immediatement anterieur au service, il l&#x27;accomplit alors qu&#x27;il est vetu.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Aha bar Yaakov pose une regle transversale, valable pour toutes les opinions : le kidouch qui precede immediatement le service doit se faire <b>une fois habille</b>.</p><p>La preuve vient de la formulation du verset sur le kior : les kohanim se lavent mains et pieds "lorsqu'ils entreront dans la tente d'assignation <b>ou lorsqu'ils s'approcheront de l'autel</b>". La derasha lit une condition d'etat : est vise celui pour qui <b>l'approche est le seul acte restant</b>. Un kohen encore nu n'est pas dans cet etat -- il lui manque deux choses, s'habiller <i>puis</i> s'approcher. Le kidouch fait a ce moment-la ne serait pas celui du verset.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רַב אַחָא בְּרֵיהּ דְּרָבָא לְרַב אָשֵׁי: לָא רַב חִסְדָּא אִית לֵיהּ דְּרַב אַחָא, וְלָא רַב אַחָא אִית לֵיהּ דְּרַב חִסְדָּא. דְּאִם כֵּן, לְרַבִּי הָווּ לְהוּ חֲמֵיסַר קִידּוּשִׁין.</div>
+            <div class="fr"><p>Rav Aha fils de Rava dit a Rav Achi : ni Rav Hisda ne tient [l&#x27;enseignement] de Rav Aha, ni Rav Aha ne tient celui de Rav Hisda. Car s&#x27;il en etait ainsi, il y aurait selon Rabbi quinze kidouchim.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא רַב חִסְדָּא</b> דְּאָמַר מִילְּתֵיהּ דְּרַבִּי דַּוְקָא בָּעֵי שְׁנֵי קִידּוּשִׁין בֵּין פְּשִׁיטָה לִלְבִישָׁה:</div>
+          <div class="glose-fr">Ni Rav Hisda -- qui dit que le propos de Rabbi est a prendre au pied de la lettre : il exige deux kidouchim entre la pechita et la levicha --</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִית לֵיהּ דְּרַב אַחָא</b> דְּאָמַר קִידּוּשׁ אַחַר לְבִישָׁה בָּעֵינַן:</div>
+          <div class="glose-fr">ne tient l&#x27;enseignement de Rav Aha -- qui dit qu&#x27;un kidouch est requis apres le revetement.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא רַב אֲחָא</b> דְּבָעֵי קִידּוּשׁ סָמוּךְ לַעֲבוֹדָה:</div>
+          <div class="glose-fr">Ni Rav Aha -- qui exige un kidouch immediatement avant le service --</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִית לֵיהּ דְּרַב חִסְדָּא</b> דְּבָעֵי לְרַבִּי שְׁנֵי קִידּוּשִׁין כְּשֶׁהוּא עָרֹום דְּאִם כֵּן דְּאִית לְהוּ בַּהֲדָדִי הָווּ לֵיהּ לְרַבִּי ג&#x27; קִידּוּשִׁין בְּכָל טְבִילָה ב&#x27; כְּשֶׁהוּא עָרֹום וְאֶחָד כְּשֶׁהוּא [לְבוּשׁ]:</div>
+          <div class="glose-fr">ne tient celui de Rav Hisda -- qui exige selon Rabbi deux kidouchim alors qu&#x27;il est nu. Car s&#x27;il en etait ainsi -- s&#x27;ils tenaient l&#x27;un l&#x27;enseignement de l&#x27;autre -- il y aurait selon Rabbi trois kidouchim a chaque tevila : deux alors qu&#x27;il est nu et un alors qu&#x27;il est vetu.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le rapprochement des deux enonces est arithmetiquement impossible. <b>Rav Hisda</b> attribue a Rabbi deux kidouchim accomplis alors qu'il est devetu ; <b>Rav Aha bar Yaakov</b> exige en outre un kidouch une fois habille, juste avant le service. Cumules, cela ferait <b>trois</b> kidouchim par changement de vetements, donc quinze pour les cinq immersions -- alors que le chiffre transmis est dix.</p><p>Conclusion : chacun des deux amoraim rejette necessairement la lecture de l'autre. Ou bien les deux kidouchim de Rabbi encadrent l'immersion pendant qu'il est nu (Rav Hisda) et alors la regle de Rav Aha ne s'applique pas a Rabbi ; ou bien le second kidouch se fait habille (Rav Aha) et alors Rabbi ne place pas les deux avant le revetement.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="230" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">L'arithmetique qui rend les deux enonces incompatibles</text>
+
+  <rect x="24" y="40" width="200" height="62" rx="5" fill="#fdf2f8" stroke="#d8b4c8" stroke-width="1.2"/>
+  <text x="124" y="59" text-anchor="middle" font-size="10.4" font-weight="700" fill="#9d174d">Rav Hisda</text>
+  <text x="124" y="76" text-anchor="middle" font-size="10" fill="#44403c">2 kidouchim DEVETU</text>
+  <text x="124" y="91" text-anchor="middle" font-size="10" fill="#44403c">(avant et apres la tevila)</text>
+
+  <text x="248" y="76" text-anchor="middle" font-size="18" font-weight="700" fill="#78716c">+</text>
+
+  <rect x="272" y="40" width="200" height="62" rx="5" fill="#eff6ff" stroke="#9dbbe0" stroke-width="1.2"/>
+  <text x="372" y="59" text-anchor="middle" font-size="10.4" font-weight="700" fill="#1e40af">Rav Aha bar Yaakov</text>
+  <text x="372" y="76" text-anchor="middle" font-size="10" fill="#44403c">1 kidouch VETU</text>
+  <text x="372" y="91" text-anchor="middle" font-size="10" fill="#44403c">(juste avant le service)</text>
+
+  <text x="496" y="76" text-anchor="middle" font-size="18" font-weight="700" fill="#78716c">=</text>
+
+  <rect x="520" y="40" width="156" height="62" rx="5" fill="#fee2e2" stroke="#e0a3a3" stroke-width="1.3"/>
+  <text x="598" y="63" text-anchor="middle" font-size="10.4" font-weight="700" fill="#991b1b">3 kidouchim</text>
+  <text x="598" y="80" text-anchor="middle" font-size="10" fill="#44403c">par changement</text>
+  <text x="598" y="95" text-anchor="middle" font-size="10" fill="#44403c">de vetements</text>
+
+  <path d="M598 102 L598 124" stroke="#a8a29e" stroke-width="1.6" marker-end="url(#ar4)"/>
+
+  <rect x="130" y="130" width="440" height="42" rx="5" fill="#fee2e2" stroke="#e0a3a3" stroke-width="1.3"/>
+  <text x="350" y="157" text-anchor="middle" font-size="12" font-weight="700" fill="#991b1b">3 x 5 tevilot = 15 kidouchim</text>
+
+  <rect x="130" y="182" width="440" height="38" rx="5" fill="#ecfdf5" stroke="#8fbfa4" stroke-width="1.3"/>
+  <text x="350" y="206" text-anchor="middle" font-size="11" font-weight="700" fill="#065f46">Or la halakha en compte DIX -- donc chacun rejette l'autre</text>
+
+  <defs><marker id="ar4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+    <path d="M0 0 L10 5 L0 10 z" fill="#a8a29e"/></marker></defs>
+</svg></div><div class="svg-cap">Le calcul qui interdit de tenir ensemble Rav Hisda et Rav Aha bar Yaakov.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הֵבִיאוּ לוֹ אֶת הַתָּמִיד קְרָצוֹ וְכוּ׳. מַאי קְרָצוֹ? אָמַר עֻולָּא: לִישָּׁנָא דְּקַטְלָא הוּא. אָמַר רַב נַחְמָן בַּר יִצְחָק, מַאי קְרָא: ״עֶגְלָה יְפֵהפִיָּה מִצְרָיִם קֶרֶץ מִצָּפוֹן בָּא בָא״. מַאי מַשְׁמַע? כְּדִמְתַרְגֵּם רַב יוֹסֵף: ״מַלְכוּ יָאֲיָא הֲוָת מִצְרַיִם עַמְמִין קָטוֹלִין מִצִּיפּוּנָא יֵיתוֹן עֲלַהּ״. קְרָצוֹ בְּכַמָּה? אָמַר עֻולָּא: בְּרוֹב שְׁנַיִם.</div>
+            <div class="fr"><p>&quot;On lui amena le tamid, il l&#x27;egorgea (keratzo), etc.&quot; -- que signifie keratzo ? Oulla a dit : c&#x27;est un terme de mise a mort.</p><p>Rav Nahman bar Yitshak a dit : quel est le verset [qui le prouve] ? &quot;L&#x27;Egypte est une genisse magnifique ; le keretz vient du nord, il vient&quot; (Jer.</p><p>46:20). D&#x27;ou l&#x27;inference ?</p><p>Comme le traduit Rav Yossef : &quot;L&#x27;Egypte etait un royaume splendide ; des peuples tueurs viendront sur elle du nord.&quot; Keratzo -- jusqu&#x27;ou [a-t-il coupe] ? Oulla a dit : la majeure partie des deux [simanim].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּרוֹב שְׁנַיִם</b> הֶכְשֵׁר שְׁחִיטָה בְּצִמְצוּם:</div>
+          <div class="glose-fr">La majeure partie des deux -- la validite de la chehita au plus juste [le minimum strictement requis].</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara revient a la michna de 31b et s'arrete sur un mot rare : <b>keratzo</b>. Oulla y voit un terme de mise a mort, et Rav Nahman bar Yitshak produit un appui : le verset de Jeremie sur l'Egypte, ou <b>keretz</b> designe l'agresseur venu du nord. Le Targoum de Rav Yossef confirme la lecture en rendant le mot par <b>ammin katolin</b> ("des peuples tueurs").</p><p>Vient alors la question technique : dans quelle mesure a-t-il coupe ? Reponse d'Oulla : <b>rov chnayim</b> -- la majeure partie de chacun des deux <b>simanim</b> (le <b>kane</b>, trachee, et le <b>vechet</b>, oesophage). C'est exactement le minimum requis pour que la chehita soit valide (Rachi : "la validite au plus juste"). Le kohen gadol s'arrete donc au seuil, et laisse un autre achever, pour pouvoir recueillir le sang sans delai.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="400" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">&quot;Keratzo&quot; -- le kohen gadol coupe, un autre acheve</text>
+  <text x="380" y="43" text-anchor="middle" font-size="10.4" fill="#57534e">Michna : &quot;on lui amena le tamid, il l'egorgea (keratzo), un autre acheva (mirek) la chehita a sa place, et lui recueillit le sang&quot;</text>
+
+  <!-- Coupe du cou -->
+  <rect x="20" y="58" width="300" height="238" rx="7" fill="#f8fafc" stroke="#c3ccd6" stroke-width="1.3"/>
+  <text x="170" y="79" text-anchor="middle" font-size="11.4" font-weight="700" fill="#334155">Le cou en coupe : les deux simanim</text>
+
+  <ellipse cx="170" cy="185" rx="112" ry="88" fill="#fef7f4" stroke="#d8b8ac" stroke-width="1.6"/>
+  <text x="170" y="286" text-anchor="middle" font-size="9.6" fill="#78716c">peau et chair du cou</text>
+
+  <circle cx="170" cy="140" r="34" fill="#e0f2fe" stroke="#7aa8c4" stroke-width="1.6"/>
+  <path d="M136 140 A34 34 0 0 1 204 140" fill="none" stroke="#dc2626" stroke-width="4"/>
+  <text x="170" y="144" text-anchor="middle" font-size="10.2" font-weight="700" fill="#0c4a6e">kane</text>
+  <text x="170" y="157" text-anchor="middle" font-size="8.8" fill="#0c4a6e">trachee</text>
+
+  <circle cx="170" cy="222" r="30" fill="#fce7f3" stroke="#c98fb0" stroke-width="1.6"/>
+  <path d="M140 222 A30 30 0 0 1 200 222" fill="none" stroke="#dc2626" stroke-width="4"/>
+  <text x="170" y="226" text-anchor="middle" font-size="10.2" font-weight="700" fill="#831843">vechet</text>
+  <text x="170" y="239" text-anchor="middle" font-size="8.8" fill="#831843">oesophage</text>
+
+  <line x1="214" y1="140" x2="268" y2="122" stroke="#dc2626" stroke-width="1.2"/>
+  <text x="272" y="119" font-size="9.4" font-weight="700" fill="#b91c1c">ROV</text>
+  <text x="272" y="131" font-size="9" fill="#7f1d1d">majorite</text>
+  <line x1="205" y1="222" x2="268" y2="240" stroke="#dc2626" stroke-width="1.2"/>
+  <text x="272" y="238" font-size="9.4" font-weight="700" fill="#b91c1c">ROV</text>
+  <text x="272" y="250" font-size="9" fill="#7f1d1d">majorite</text>
+
+  <!-- Chaine des actes -->
+  <rect x="336" y="58" width="404" height="238" rx="7" fill="#fffdf8" stroke="#d6d3d1" stroke-width="1.3"/>
+  <text x="538" y="79" text-anchor="middle" font-size="11.4" font-weight="700" fill="#1c1917">La chaine des actes</text>
+
+  <rect x="352" y="92" width="372" height="46" rx="5" fill="#ecfdf5" stroke="#8fbfa4" stroke-width="1.2"/>
+  <text x="366" y="111" font-size="10.4" font-weight="700" fill="#065f46">1. Le kohen gadol : keratzo</text>
+  <text x="366" y="128" font-size="10.2" fill="#44403c">rov chnayim -- la majeure partie des DEUX simanim</text>
+
+  <path d="M538 138 L538 154" stroke="#a8a29e" stroke-width="1.6" marker-end="url(#ar2)"/>
+  <text x="548" y="151" font-size="9.4" fill="#16a34a">chehita deja VALIDE de-oraita</text>
+
+  <rect x="352" y="158" width="372" height="46" rx="5" fill="#f5f5f4" stroke="#c9c5c1" stroke-width="1.2"/>
+  <text x="366" y="177" font-size="10.4" font-weight="700" fill="#44403c">2. Un autre kohen : mirek</text>
+  <text x="366" y="194" font-size="10.2" fill="#44403c">il acheve la coupe -- non indispensable de-oraita</text>
+
+  <path d="M538 204 L538 220" stroke="#a8a29e" stroke-width="1.6" marker-end="url(#ar2)"/>
+
+  <rect x="352" y="224" width="372" height="56" rx="5" fill="#ecfdf5" stroke="#8fbfa4" stroke-width="1.2"/>
+  <text x="366" y="243" font-size="10.4" font-weight="700" fill="#065f46">3. Le kohen gadol : kabbala + zerika</text>
+  <text x="366" y="260" font-size="10.2" fill="#44403c">il recueille le sang et l'asperge -- ces actes-la sont</text>
+  <text x="366" y="274" font-size="10.2" fill="#44403c">de vrais services, reserves a lui seul.</text>
+
+  <rect x="20" y="308" width="720" height="80" rx="6" fill="#eff6ff" stroke="#9dbbe0" stroke-width="1.3"/>
+  <text x="38" y="328" font-size="10.8" font-weight="700" fill="#1e40af">Pourquoi confier l'achevement a un autre ? Et pourquoi cela ne peut pas etre indispensable</text>
+  <text x="38" y="346" font-size="10.4" fill="#1c1917">Le kohen gadol se libere aussitot pour recueillir le sang. Si le mirek etait indispensable, le sacrifice dependrait d'un acte fait par</text>
+  <text x="38" y="362" font-size="10.4" fill="#1c1917">UN AUTRE -- or tous les services de Yom Kippour ne valent que par lui. Reponse de la guemara : l'invalidite envisagee n'etait</text>
+  <text x="38" y="378" font-size="10.4" fill="#1c1917">que DE-RABBANAN (decret des Sages), et la michna a tenu a l'ecarter en enseignant &quot;rov chnayim&quot; a part pour les kodachim.</text>
+
+  <defs><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+    <path d="M0 0 L10 5 L0 10 z" fill="#a8a29e"/></marker></defs>
+</svg></div><div class="svg-cap">Rov chnayim : la majeure partie des deux simanim, puis l&#x27;achevement (mirek) confie a un autre kohen.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְכֵן אָמַר רַבִּי יוֹחָנָן: בְּרוֹב שְׁנַיִם. וְאַף רֵישׁ לָקִישׁ סָבַר בְּרֹוב שְׁנַיִם, דְּאָמַר רֵישׁ לָקִישׁ: וְכִי מֵאַחַר שֶׁשָּׁנִינוּ: רֻובּוֹ שֶׁל אֶחָד כָּמוֹהוּ, לָמָּה שָׁנִינוּ: רֹוב אֶחָד בָּעוֹף וְרֹוב שְׁנַיִם בַּבְּהֵמָה? לְפִי שֶׁשָּׁנִינוּ: הֵבִיאוּ לוֹ אֶת הַתָּמִיד, קְרָצוֹ וּמֵירַק אַחֵר שְׁחִיטָה עַל יָדוֹ, וְקִיבֵּל אֶת הַדָּם וּזְרָקוֹ. יָכוֹל לֹא מֵירֵק — יְהֵא פָּסוּל.</div>
+            <div class="fr"><p>Et de meme Rabbi Yohanan a dit : la majeure partie des deux. Et meme Rech Lakich tient [qu&#x27;il s&#x27;agit de] la majeure partie des deux, car Rech Lakich a dit : puisque nous avons deja appris &quot;la majeure partie de l&#x27;un vaut comme lui tout entier&quot;, pourquoi avons-nous appris [en outre] &quot;la majeure partie d&#x27;un [siman] pour l&#x27;oiseau, et la majeure partie des deux pour l&#x27;animal&quot; ?</p><p>Parce que nous avons appris : &quot;on lui amena le tamid, il l&#x27;egorgea, un autre acheva (mirek) la chehita a sa place, et il recueillit le sang et l&#x27;aspergea&quot; ; on aurait pu croire que s&#x27;il n&#x27;avait pas acheve, [le sacrifice] serait passoul (invalide).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְכִי מֵאַחַר שֶׁשָּׁנִינוּ</b> בִּשְׁחִיטַת חֻולִּין וְרֻובּוֹ שֶׁל אֶחָד כָּמוֹהוּ מִמֵּילָא שָׁמְעִינַן רֹוב שְׁנַיִם כִּשְׁנַיִם:</div>
+          <div class="glose-fr">Puisque nous avons deja appris -- dans [les michnayot de] la chehita des houlin : &quot;et la majeure partie de l&#x27;un vaut comme lui tout entier&quot; -- il s&#x27;ensuit d&#x27;office que la majeure partie des deux vaut comme les deux.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לָמָּה שָׁנִינוּ</b> בְּצִדָּהּ רֹוב אֶחָד בָּעוֹף וְכוּ&#x27;:</div>
+          <div class="glose-fr">Pourquoi avons-nous appris -- a cote : &quot;la majeure partie d&#x27;un [siman] pour l&#x27;oiseau, etc.&quot;</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rech Lakich part d'une redondance dans les michnayot de la chehita (Houlin). On y enseigne d'abord le principe general : <b>"la majeure partie de l'un vaut comme lui tout entier"</b>. Il en decoule mecaniquement que la majeure partie des deux vaut comme les deux (Rachi). Pourquoi alors ajouter explicitement "<b>rov echad be-of, rov chnayim be-behema</b>" -- un siman pour l'oiseau, deux pour l'animal ?</p><p>Reponse : cet ajout vise precisement notre michna de Yoma. Puisqu'on y lit que le kohen gadol s'arrete a la majeure partie et qu'un <b>autre acheve</b>, on aurait pu conclure que cet achevement est indispensable et que, sans lui, le tamid serait <b>passoul</b>. La michna de la chehita coupe court en reaffirmant que "rov chnayim" suffit -- y compris pour les kodachim.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">יָכוֹל לֹא מֵירַק יְהֵא פָּסוּל?! אִם כֵּן הָוְיָא לֵיהּ עֲבוֹדָה בְּאַחֵר, (וּתְנַן): כָּל עֲבוֹדוֹת יוֹם הַכִּפּוּרִים אֵינָן כְּשֵׁרוֹת אֶלָּא בּוֹ! הָכִי קָאָמַר: יָכוֹל יְהֵא פָּסוּל מִדְּרַבָּנַן,</div>
+            <div class="fr"><p>&quot;On aurait pu croire que s&#x27;il n&#x27;avait pas acheve, ce serait passoul&quot; ?! Si c&#x27;etait le cas, ce serait un service [accompli] par un autre, et nous avons appris : tous les services de Yom Kippour ne sont valides que par lui [le kohen gadol] !</p><p>Voici ce qu&#x27;il veut dire : on aurait pu croire que ce serait passoul de-rabbanan (par decret des Sages),</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>יָכוֹל יְהֵא פָּסוּל מִדְּרַבָּנַן</b> הוֹאִיל וְכָל עַצְמוֹ לְדַם הוּא צָרִיךְ פָּסוּל וְכִי תְּנַן רֻובּוֹ שֶׁל אֶחָד כָּמוֹהוּ בְּחֻולִּין תְּנַן:</div>
+          <div class="glose-fr">On aurait pu croire que ce serait passoul de-rabbanan -- puisque tout ce dont il a besoin, c&#x27;est du sang, [on aurait cru que] c&#x27;est passoul ; et lorsque nous avons enseigne &quot;la majeure partie de l&#x27;un vaut comme lui tout entier&quot;, c&#x27;est a propos des houlin que nous l&#x27;avons enseigne.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִם כֵּן הָוְיָא לֵהּ עֲבוֹדָה בְּאַחֵר</b> ה&quot;נ הֲוָה מָצֵי לְמִיפְרַךְ אִם כֵּן הָוֵי לָהּ שְׁחִיטָה בִּשְׁנַיִם כֵּיוָן דְּאִם לֹא מֵירֵק פָּסוּל וְאִם שְׁנַיִם שׁוֹחֲטִין זֶבַח אֶחָד אֲפִילּוּ בְּזֶה אַחַר זֶה פָּסוּל כִּדְמוֹכַח בְּפֶרֶק הַשּׁוֹחֵט (חֻולִּין דַּף כט.) וא&quot;ת וּמַאי קַשְׁיָא לֵיהּ מֵעֲבוֹדָה בְּאַחֵר הָא בְּפֶ&#x27; טָרַף בַּקַּלְפִּי (לְקַמָּן יוֹמָא דַּף מב.) אִיכָּא מַאן דְּמַכְשִׁיר אֲפִילּוּ שְׁחִיטַת פָּרוֹ בְּזָר וַאֲפִילּוּ מַאן דְּפוֹסֵל הַיְינוּ דַּוְקָא פָּרוֹ דְּאָתֵי לְחוֹבַת הַיּוֹם דְּקָאֵי עָלֶיהָ אַהֲרֹן וְחֻוקָּה אֲבָל תָּמִיד דְּלָא שַׁייָּךְ לְחוֹבַת יוֹם הַכִּפּוּרִים לָא קָאֵי עָלֶיהָ אַהֲרֹן וְחֻוקָּה בִּשְׁחִיטָה כֵּיוָן דְּלָאו עֲבוֹדָה הִיא וְיֵשׁ לוֹמַר דְּמִכָּל מָקוֹם פָּסוּל מִדְּרַבָּנָן וי&quot;מ מִשּׁוּם דִּמְרִיקָה צֹורֶךְ קַבָּלָה וְלָא נְהִירָא דָּמֵי עָדִיף מִיעוּט סִימָן בָּתְרָא מֵרֹוב קַמָּא וְעוֹד י&quot;מ כֵּיוָן דְּהָא דְּאָמַר שְׁחִיטָה לָאו עֲבוֹדָה הִיא הַיְינוּ כְּמוֹ שֶׁפֵּירֵשׁ רַבֵּינוּ יַעֲקֹב מאורליינ&quot;ש לְפִי שֶׁנּוֹהֶגֶת אַף בְּחֻולִּין וְהַאי מֵירוּק אֵינוֹ מְעַכֵּב&#x27; בְּחֻולִּין א&quot;כ הָוֵי עֲבוֹדָה וְלֹא יְהֵא כָּשֵׁר אֶלָּא בּוֹ:</div>
+          <div class="glose-fr">Si c&#x27;etait le cas, ce serait un service [accompli] par un autre -- Il aurait pu tout aussi bien objecter : s&#x27;il en est ainsi, ce serait une chehita faite par deux personnes, puisque si l&#x27;autre n&#x27;achevait pas ce serait passoul ; or si deux personnes egorgent un meme sacrifice, meme l&#x27;une apres l&#x27;autre, c&#x27;est passoul, comme cela ressort du chapitre HaChohet (Houlin 29a). Et si tu demandes : qu&#x27;est-ce qui le genait dans &quot;un service par un autre&quot; ? Au chapitre Taraf be-Kalpi (plus loin, Yoma 42a), il y a un avis qui valide meme la chehita de son taureau par un zar (non-kohen) ; et meme celui qui l&#x27;invalide, c&#x27;est precisement pour son taureau, qui releve de l&#x27;obligation du jour, sur lequel portent [les termes] &quot;Aharon&quot; et &quot;houka&quot; (statut) ; tandis que le tamid, qui ne releve pas de l&#x27;obligation de Yom Kippour, n&#x27;est concerne ni par &quot;Aharon&quot; ni par &quot;houka&quot; quant a la chehita, puisqu&#x27;elle n&#x27;est pas un service. On peut repondre que de toute facon ce serait passoul de-rabbanan. Certains expliquent : parce que l&#x27;achevement (merika) est un besoin de la kabbala (reception du sang) -- mais cela n&#x27;est pas clair : en quoi la partie minoritaire du second siman serait-elle superieure a la majeure partie du premier ? D&#x27;autres encore expliquent : puisque l&#x27;affirmation &quot;la chehita n&#x27;est pas un service&quot; s&#x27;entend comme l&#x27;a explique Rabbenou Yaakov d&#x27;Orleans -- parce qu&#x27;elle se pratique aussi pour les houlin -- or cet achevement n&#x27;est pas indispensable pour les houlin, il s&#x27;agirait donc bien d&#x27;un service, et il ne serait valide que par lui [le kohen gadol].</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection sur l'hypothese meme de Rech Lakich. Si l'achevement de la coupe etait <b>indispensable de-oraita</b>, alors un acte determinant du sacrifice serait accompli par un autre kohen -- ce qui contredit frontalement la regle : <b>tous les services de Yom Kippour ne valent que par le kohen gadol</b>. L'hypothese s'effondre d'elle-meme.</p><p>La guemara recalibre : Rech Lakich n'a jamais envisage une invalidite biblique, mais une invalidite <b>de-rabbanan</b>. Rachi en donne le motif : ce qui interesse ici, c'est le <b>sang</b> ; on aurait pu penser que les Sages exigent une coupe achevee pour les kodachim, et que le principe "la majeure partie de l'un vaut comme lui tout entier" n'a ete enseigne que pour les <b>houlin</b>. L'amoud se coupe ici -- la suite du raisonnement se poursuit en 33a.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_32a.html">&lsaquo; Yoma 32a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

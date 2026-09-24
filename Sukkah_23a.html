@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sukkah 23a — Une souka qui bouge, une souka qui vit : du bateau a la bete faite paroi</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Sukkah 23a — Une souka qui bouge, une souka qui vit : du bateau a la bete faite paroi</h1>
+    <div class="ref">Sukkah 23a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Sukkah_22b.html">&lsaquo; Sukkah 22b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Sukkah_23b.html">Sukkah 23b &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> Le folio commence par attribuer deux michnayot a leur Tana. La souka posee sur un bateau est celle de Rabbi Akiva, contre Rabban Gamliel qui l invalide — et la baraita rapporte le fait vecu ou le vent arracha la souka que Rabbi Akiva avait dressee sur le pont, sous les yeux de Rabban Gamliel.</p><p>Abaye desamorce la force de ce recit en decoupant trois etages de vent : trop fragile pour un vent ordinaire de terre, tous invalident ; assez solide pour un vent exceptionnel de terre, tous valident ; entre les deux, un seul cran ou le desaccord se loge, celui du vent ordinaire de la mer. Le fond du litige est une definition : dirat keva pour Rabban Gamliel, dirat arai pour Rabbi Akiva.</p><p>La souka posee sur un chameau est ensuite attribuee a Rabbi Meir, contre Rabbi Yehouda qui tire du verset « tu feras la fete des Souccot sept jours » que seule une souka utilisable sept jours merite le nom — or on ne monte pas sur une bete a Yom Tov. Rabbi Meir repond par un partage de niveaux : selon la Tora elle est apte, seul un decret rabbinique l empeche, et un decret ne defait pas la souka.</p><p>Tossefot conteste ici la reconstruction de Rachi et montre que le verset n a d utilite que si la souka tient seule sur des poteaux. Vient alors le renversement : la bete n est plus le plancher mais la paroi, et les positions s inversent — Rabbi Meir invalide, Rabbi Yehouda valide.</p><p>Rabbi Meir enonce une regle large sur tout ce qui a un souffle de vie, refuse comme paroi de souka, comme lehi de mavoy, comme pasin de puits et comme golel de tombeau, Rabbi Yossi HaGuelili y ajoutant l ecriture d un guet. Le reste du amoud cherche le motif de Rabbi Meir : Abaye craint que la bete ne meure, Rabbi Zera qu elle ne s enfuie.</p><p>La premiere nafka mina proposee — l elephant libre — tombe sous une objection de frequence, et le point de partage se deplace sur la bete ordinaire attachee. Restent trois defauts pratiques : la breche entre les pattes, comblee de palmes et de laurier ; l affaissement, empeche par des cordes tendues depuis le haut ; et une derniere difficulte, ou la crainte de la mort retrouve prise par le calcul de lavoud, que le folio laisse ouverte.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 540" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="540" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1c1917">Le fil du folio : une souka qui bouge, une souka qui vit</text>
+  <text x="380" y="42" text-anchor="middle" font-size="10.2" fill="#57534e">Onze segments. Deux michnayot attribuees a leur Tana, puis un long examen de la bete transformee en paroi</text>
+
+  <rect x="24" y="56" width="712" height="96" rx="7" fill="#eef2ff" stroke="#4338ca" stroke-width="1.4"/>
+  <text x="38" y="74" font-size="10.6" font-weight="700" fill="#312e81">Bloc A -- segments 0 a 3 : le bateau, ou la souka doit-elle etre permanente ?</text>
+  <text x="38" y="92" font-size="9" fill="#292524">La michna finit par sa regle : l arbre retire, si la souka tient d elle-meme, on y monte a Yom Tov. La Guemara demande de qui elle est.</text>
+  <text x="38" y="108" font-size="9" fill="#292524">Reponse : de Rabbi Akiva, celui qui declare valable la souka faite au sommet d un bateau. Rabban Gamliel, lui, l invalide -- et un fait vecu le lui donne apparemment raison.</text>
+  <text x="38" y="124" font-size="9" fill="#312e81" font-weight="700">Abaye tranche le desaccord en trois etages de vent : trop faible pour tous, assez solide pour tous, et entre les deux -- le vrai point de litige.</text>
+  <text x="38" y="142" font-size="9" fill="#57534e">Enjeu de fond : dirat keva (habitation permanente) pour Rabban Gamliel, dirat arai (habitation temporaire) pour Rabbi Akiva.</text>
+  <path d="M380 152 L380 164" stroke="#78716c" stroke-width="1.3"/><path d="M375 163 L385 163 L380 169 Z" fill="#78716c"/>
+
+  <rect x="24" y="170" width="712" height="88" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.4"/>
+  <text x="38" y="188" font-size="10.6" font-weight="700" fill="#14532d">Bloc B -- segments 4 a 5 : le chameau, ou la souka doit-elle servir sept jours ?</text>
+  <text x="38" y="206" font-size="9" fill="#292524">Notre michna est de Rabbi Meir. Rabbi Yehouda invalide, tirant du verset "tu feras la fete des Souccot sept jours" que seule une souka apte aux sept jours merite le nom.</text>
+  <text x="38" y="222" font-size="9" fill="#292524">Or on ne monte pas sur une bete le jour de fete : la souka posee sur elle est donc inutilisable des le premier jour.</text>
+  <text x="38" y="240" font-size="9" fill="#166534" font-weight="700">Rabbi Meir repond par un partage de niveaux : selon la Tora elle est parfaitement utilisable ; seul un decret rabbinique l empeche -- et un decret ne defait pas la souka.</text>
+  <text x="38" y="254" font-size="9" fill="#57534e">Meme structure d argument qu en 22b : validite de la souka d un cote, interdit d y monter de l autre.</text>
+  <path d="M380 258 L380 270" stroke="#78716c" stroke-width="1.3"/><path d="M375 269 L385 269 L380 275 Z" fill="#78716c"/>
+
+  <rect x="24" y="276" width="712" height="94" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.4"/>
+  <text x="38" y="294" font-size="10.6" font-weight="700" fill="#78350f">Bloc C -- segment 6 : le renversement des roles, et la liste de Rabbi Meir</text>
+  <text x="38" y="312" font-size="9" fill="#292524">Nouveau cas : la bete n est plus le plancher, elle est la paroi. Les positions s inversent -- Rabbi Meir invalide, Rabbi Yehouda declare valable.</text>
+  <text x="38" y="328" font-size="9" fill="#292524">Rabbi Meir enonce une regle large : rien de ce qui a un souffle de vie ne sert de paroi de souka, de lehi de mavoy, de pasin de puits, ni de golel de tombeau.</text>
+  <text x="38" y="346" font-size="9" fill="#92400e" font-weight="700">Rabbi Yossi HaGuelili ajoute : on n ecrit pas non plus un guet sur un etre vivant. Deux des items sont des indulgences, pas des rigueurs -- la Guemara y reviendra en 23b.</text>
+  <text x="38" y="362" font-size="9" fill="#57534e">Tossefot consacre ici une longue glose au golel : ce qui obture la cavite du tombeau, et le dofek qui le porte.</text>
+  <path d="M380 370 L380 382" stroke="#78716c" stroke-width="1.3"/><path d="M375 381 L385 381 L380 387 Z" fill="#78716c"/>
+
+  <rect x="24" y="388" width="712" height="140" rx="7" fill="#fdf2f8" stroke="#9d174d" stroke-width="1.4"/>
+  <text x="38" y="406" font-size="10.6" font-weight="700" fill="#831843">Bloc D -- segments 7 a 10 : pourquoi une bete ne fait pas une paroi</text>
+  <text x="38" y="424" font-size="9" fill="#292524">Deux raisons concurrentes : Abaye dit shema tamout -- de peur qu elle ne meure et ne tombe. Rabbi Zera dit shema tivrah -- de peur qu elle ne s enfuie.</text>
+  <text x="38" y="440" font-size="9" fill="#292524">Premier essai de nafka mina : l elephant attache, valable pour tous ; l elephant libre departagerait les deux avis. Objection : celui qui craint la mort craint a plus forte raison la fuite.</text>
+  <text x="38" y="458" font-size="9" fill="#831843" font-weight="700">Correction : l elephant libre est invalide pour tous. Le vrai partage se joue sur la bete ordinaire attachee -- elle ne peut plus fuir, mais elle peut encore mourir et s effondrer.</text>
+  <text x="38" y="476" font-size="9" fill="#292524">Puis trois defauts pratiques et leurs remedes : l espace entre les pattes (comble de palmes et de laurier), l affaissement (cordes tendues par le haut).</text>
+  <text x="38" y="492" font-size="9" fill="#292524">Derniere objection : si elle est amarree par le haut, meme morte elle ne tombe pas -- pourquoi craindre encore la mort ?</text>
+  <text x="38" y="510" font-size="9" fill="#831843" font-weight="700">Reponse, laissee ouverte a la fin du amoud : parfois la bete ne fait que sept tefahim, et c est lavoud qui complete les dix. Morte, elle rapetisse -- et lavoud ne joue plus.</text>
+</svg></div>
+          <figcaption>Le fil du folio en quatre blocs : le bateau, le chameau, la bete-paroi, et les raisons de Rabbi Meir.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 400" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="400" fill="#fffdf8"/>
+  <text x="370" y="24" text-anchor="middle" font-size="14.6" font-weight="700" fill="#1c1917">Les trois etages de vent d Abaye : ou se situe exactement le desaccord</text>
+  <text x="370" y="42" text-anchor="middle" font-size="9.8" fill="#57534e">Abaye ne tranche pas le litige : il en reduit le domaine. Deux etages sur trois font l unanimite</text>
+
+  <rect x="30" y="58" width="680" height="82" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="46" y="78" font-size="10.4" font-weight="700" fill="#7f1d1d">Etage 1 -- elle ne tient meme pas face a un vent courant sur la terre ferme</text>
+  <text x="46" y="98" font-size="9" fill="#292524">Ce n est meme pas une habitation temporaire. Rachi : afilou dirat arai lo havya.</text>
+  <text x="46" y="116" font-size="9.6" font-weight="700" fill="#b91c1c">Invalide pour tous -- Rabban Gamliel comme Rabbi Akiva</text>
+  <text x="46" y="132" font-size="8.6" fill="#57534e">Aucune divergence : il n y a pas de souka du tout</text>
+
+  <rect x="30" y="152" width="680" height="94" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.6"/>
+  <text x="46" y="172" font-size="10.4" font-weight="700" fill="#78350f">Etage 2 -- elle tient face a un vent courant de terre, pas face a un vent non courant de terre</text>
+  <text x="46" y="190" font-size="9" fill="#292524">Rachi : le vent non courant de la terre ferme, c est justement le vent courant en mer. C est le cas du bateau.</text>
+  <text x="46" y="210" font-size="9.6" font-weight="700" fill="#b45309">ICI SEULEMENT ils divergent</text>
+  <text x="46" y="228" font-size="9" fill="#292524">Rabban Gamliel : il faut dirat keva -- elle ne tient pas face au vent courant du lieu, donc rien. Rabbi Akiva : dirat arai suffit -- elle tient face au vent courant de terre, donc valable.</text>
+  <text x="46" y="242" font-size="8.6" fill="#57534e">C est la souka du fait rapporte : le vent de mer l a arrachee</text>
+
+  <rect x="30" y="258" width="680" height="82" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.3"/>
+  <text x="46" y="278" font-size="10.4" font-weight="700" fill="#14532d">Etage 3 -- elle tient meme face a un vent non courant de la terre ferme</text>
+  <text x="46" y="298" font-size="9" fill="#292524">Rachi : meme si elle ne resiste pas a un vent non courant en mer, cela suffit. Meme qui exige dirat keva y trouve son compte.</text>
+  <text x="46" y="316" font-size="9.6" font-weight="700" fill="#15803d">Valable pour tous</text>
+  <text x="46" y="332" font-size="8.6" fill="#57534e">Aucune divergence : la solidite requise est atteinte des deux points de vue</text>
+
+  <rect x="120" y="352" width="500" height="38" rx="6" fill="#eef2ff" stroke="#4338ca" stroke-width="1.2"/>
+  <text x="370" y="368" text-anchor="middle" font-size="9.6" font-weight="700" fill="#312e81">Ce qu Abaye a gagne</text>
+  <text x="370" y="383" text-anchor="middle" font-size="8.8" fill="#292524">Le litige n est pas sur la solidite en general, mais sur un seul cran : le vent courant du lieu ou l on se trouve</text>
+</svg></div>
+          <figcaption>Les trois etages de vent d Abaye : deux font l unanimite, un seul porte le desaccord.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 428" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="428" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="14.6" font-weight="700" fill="#1c1917">La bete et la souka : deux roles, deux verdicts inverses</text>
+  <text x="380" y="42" text-anchor="middle" font-size="9.8" fill="#57534e">Le meme animal, selon qu il porte la souka ou qu il la ferme, oppose les memes deux Tanaim en sens contraire</text>
+
+  <rect x="26" y="58" width="344" height="176" rx="7" fill="#eef2ff" stroke="#4338ca" stroke-width="1.4"/>
+  <text x="198" y="80" text-anchor="middle" font-size="11" font-weight="700" fill="#312e81">Role 1 -- la bete PORTE la souka</text>
+  <text x="198" y="98" text-anchor="middle" font-size="8.8" fill="#57534e">Segments 4 a 5 : plancher, ou support</text>
+  <rect x="42" y="110" width="150" height="52" rx="5" fill="#f0fdf4" stroke="#15803d" stroke-width="1.1"/>
+  <text x="117" y="128" text-anchor="middle" font-size="9.6" font-weight="700" fill="#14532d">Rabbi Meir</text>
+  <text x="117" y="146" text-anchor="middle" font-size="9.4" font-weight="700" fill="#15803d">VALABLE</text>
+  <rect x="204" y="110" width="150" height="52" rx="5" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.1"/>
+  <text x="279" y="128" text-anchor="middle" font-size="9.6" font-weight="700" fill="#7f1d1d">Rabbi Yehouda</text>
+  <text x="279" y="146" text-anchor="middle" font-size="9.4" font-weight="700" fill="#b91c1c">INVALIDE</text>
+  <text x="42" y="182" font-size="8.6" fill="#292524">Rabbi Yehouda : sept jours exiges par le verset, or on n y</text>
+  <text x="42" y="196" font-size="8.6" fill="#292524">monte pas a Yom Tov -- elle rate le premier jour.</text>
+  <text x="42" y="212" font-size="8.6" fill="#292524">Rabbi Meir : selon la Tora elle est apte ; seul un decret</text>
+  <text x="42" y="226" font-size="8.6" fill="#292524">des Sages l empeche, et cela ne defait pas la souka.</text>
+
+  <rect x="390" y="58" width="344" height="176" rx="7" fill="#fdf2f8" stroke="#9d174d" stroke-width="1.4"/>
+  <text x="562" y="80" text-anchor="middle" font-size="11" font-weight="700" fill="#831843">Role 2 -- la bete EST une paroi</text>
+  <text x="562" y="98" text-anchor="middle" font-size="8.8" fill="#57534e">Segments 6 a 10 : dofen, sans rien porter</text>
+  <rect x="406" y="110" width="150" height="52" rx="5" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.1"/>
+  <text x="481" y="128" text-anchor="middle" font-size="9.6" font-weight="700" fill="#7f1d1d">Rabbi Meir</text>
+  <text x="481" y="146" text-anchor="middle" font-size="9.4" font-weight="700" fill="#b91c1c">INVALIDE</text>
+  <rect x="568" y="110" width="150" height="52" rx="5" fill="#f0fdf4" stroke="#15803d" stroke-width="1.1"/>
+  <text x="643" y="128" text-anchor="middle" font-size="9.6" font-weight="700" fill="#14532d">Rabbi Yehouda</text>
+  <text x="643" y="146" text-anchor="middle" font-size="9.4" font-weight="700" fill="#15803d">VALABLE</text>
+  <text x="406" y="182" font-size="8.6" fill="#292524">Rabbi Meir : rien de vivant ne sert de cloison -- crainte</text>
+  <text x="406" y="196" font-size="8.6" fill="#292524">qu elle meure (Abaye) ou qu elle s enfuie (Rabbi Zera).</text>
+  <text x="406" y="212" font-size="8.6" fill="#292524">Tossefot : Rabbi Yehouda ne valide que si la souka ne</text>
+  <text x="406" y="226" font-size="8.6" fill="#292524">s appuie pas sur elle -- sinon on retombe sur le cas 1.</text>
+
+  <rect x="26" y="248" width="708" height="52" rx="6" fill="#fffbeb" stroke="#b45309" stroke-width="1.3"/>
+  <text x="380" y="268" text-anchor="middle" font-size="10.2" font-weight="700" fill="#78350f">Pourquoi l inversion n est pas une contradiction</text>
+  <text x="380" y="288" text-anchor="middle" font-size="8.9" fill="#292524">Les deux cas ne testent pas la meme chose : le premier teste l usage licite au jour de fete, le second teste la permanence de la cloison elle-meme</text>
+
+  <rect x="26" y="312" width="708" height="102" rx="6" fill="#f5f3ff" stroke="#6d28d9" stroke-width="1.3"/>
+  <text x="380" y="332" text-anchor="middle" font-size="10.2" font-weight="700" fill="#4c1d95">La liste de Rabbi Meir : quatre emplois refuses a tout etre anime, plus un</text>
+  <text x="60" y="354" font-size="9" fill="#292524">1. Dofen la-souka -- paroi de souka</text>
+  <text x="290" y="354" font-size="9" fill="#292524">2. Lehi la-mavoy -- montant de ruelle</text>
+  <text x="540" y="354" font-size="9" fill="#292524">3. Pasin li-veraot -- planches de puits</text>
+  <text x="60" y="374" font-size="9" fill="#292524">4. Golel la-kever -- pierre de tombeau</text>
+  <text x="290" y="374" font-size="9" fill="#292524">5. Guet ecrit dessus (Rabbi Yossi HaGuelili)</text>
+  <text x="380" y="398" text-anchor="middle" font-size="8.8" fill="#57534e">Les trois premiers sont des cloisons ; le golel et le guet ne le sont pas -- c est la difficulte que la Guemara soulevera plus loin</text>
+</svg></div>
+          <figcaption>La bete porteuse et la bete-paroi : deux roles opposes, deux verdicts inverses, et la liste de Rabbi Meir.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">זֶה הַכְּלָל: כָּל שֶׁיִּנָּטֵל הָאִילָן וִיכוֹלָה לַעֲמֹוד בִּפְנֵי עַצְמָהּ — כְּשֵׁרָה וְעוֹלִין לָהּ בְּיוֹם טוֹב.</div>
+            <div class="fr"><p>Voici la regle : dans tous les cas ou, l arbre retire, [la souka] pourrait tenir d elle-meme — elle est valable, et l on y monte le jour de fete.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Derniere ligne de la michna commencee en 22b. Elle ramene toutes les configurations mixtes — deux parois dans l arbre et une au sol, trois de main d homme et une dans l arbre — a un critere unique et verifiable : <b>l arbre retire, la souka tient-elle encore debout ?</b></p><p>Le test ne porte pas sur la validite de la souka, qui n a jamais ete en cause, mais sur le droit d y monter le jour de fete. Si l arbre porte encore quelque chose, y entrer revient a <b>se servir de l arbre</b>, ce que les Sages ont interdit a Yom Tov. S il ne porte plus rien, il n est qu un voisin de la souka, et l interdit tombe.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">גְּמ׳ מַנִּי מַתְנִיתִין — רַבִּי עֲקִיבָא הִיא. דְּתַנְיָא: הָעוֹשֶׂה סֻוכָּתוֹ בְּרֹאשׁ הַסְּפִינָה — רַבָּן גַּמְלִיאֵל פּוֹסֵל, וְרַבִּי עֲקִיבָא מַכְשִׁיר.</div>
+            <div class="fr"><p>Guemara. De qui est notre michna ?</p><p>Elle est de Rabbi Akiva. Car il est enseigne [dans une baraita] : celui qui fait sa souka au sommet du bateau — Rabban Gamliel invalide, et Rabbi Akiva declare valable.</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">דְּתַנְיָא הָעוֹשֶׂה סֻוכָּתוֹ בְּרֹאשׁ הַסְּפִינָה. שַׁפִּיר גָּרֵיס בַּבָּרַייְתָא בְּרֹאשׁ הָעֲגָלָה דִּפְלִיגִי נָמֵי בְּרֹאשׁ הָעֲגָלָה כִּדְפָרֵישִׁי&#x27; לְעֵיל (סֻוכָּה דַּף כא: בד&quot;ה שֶׁאֵין) וְלֹא כְּמוֹ שֶׁפֵּי&#x27; ר&quot;ת בפ&quot;ק (דַּף ז: וְשָׁם בד&quot;ה הָעוֹשֶׂה):</div>
+          <div class="glose-fr">« Car il est enseigne : celui qui fait sa souka au sommet du bateau ». C est a bon droit que l on a dans la baraita la lecon « au sommet de la charrette », car ils divergent aussi sur le cas de la charrette, comme nous l avons expose plus haut (Souka 21b, s.v. che-ein), et non comme l a explique Rabbenou Tam au premier chapitre (Souka 7b, s.v. ha-osse).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara ouvre par sa question d attribution habituelle : <b>mani matnitin</b> — de qui est notre michna ? La michna a declare valable une souka posee sur une charrette ou sur un bateau. Or une baraita montre que ce point est dispute : Rabban Gamliel invalide, Rabbi Akiva valide. Notre michna suit donc Rabbi Akiva.</p><p>Tossefot defend ici une variante textuelle. Certains manuscrits ajoutent la charrette a la baraita, aux cotes du bateau ; Rabbenou Tam la rejetait. Tossefot maintient qu elle est correcte : le desaccord porte sur les deux cas ensemble, parce que le motif est le meme — une structure qui se deplace et que le vent peut emporter.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַעֲשֶׂה בְּרַבָּן גַּמְלִיאֵל וְרַבִּי עֲקִיבָא שֶׁהָיוּ בָּאִין בִּסְפִינָה, עָמַד רַבִּי עֲקִיבָא וְעָשָׂה סֻוכָּה בְּרֹאשׁ הַסְּפִינָה. לְמָחָר נָשְׁבָה רוּחַ וַעֲקָרַתָּה. אָמַר לוֹ רַבָּן גַּמְלִיאֵל: עֲקִיבָא! הֵיכָן סֻוכָּתְךָ?</div>
+            <div class="fr"><p>Un fait : Rabban Gamliel et Rabbi Akiva voyageaient en bateau. Rabbi Akiva se leva et fit une souka au sommet du bateau.</p><p>Le lendemain, un vent souffla et l arracha. Rabban Gamliel lui dit : Akiva !</p><p>Ou est ta souka ?</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La baraita illustre le desaccord par un <b>maasse</b>, un fait rapporte — la forme la plus forte de l argumentation tannaitique, puisqu elle confronte la position a l epreuve du reel. Rabbi Akiva a construit ; le vent a defait.</p><p>La replique de Rabban Gamliel — « Akiva ! Ou est ta souka ? » — n est pas seulement ironique. Elle porte une these : ce qui n a pas tenu n avait jamais ete valable, <b>meme avant de tomber</b>. La solidite n est pas un accident heureux, c est une condition de la souka.</p><p>Le fait, tel quel, semble donner tort a Rabbi Akiva. C est precisement ce qu Abaye va desamorcer au segment suivant, en montrant que le vent qui a souffle ce jour-la n etait pas celui dont Rabbi Akiva parlait.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר אַבַּיֵּי: דְּכֻולֵּי עָלְמָא, הֵיכָא דְּאֵינָהּ יְכוֹלָה לַעֲמֹוד בְּרוּחַ מְצוּיָה דְּיַבָּשָׁה — לֹא כְּלוּם הִיא. יְכוֹלָה לַעֲמֹוד בְּשֶׁאֵינָהּ מְצוּיָה דְּיַבָּשָׁה, כֻּולֵּי עָלְמָא לָא פְּלִיגִי דִּכְשֵׁרָה. כִּי פְּלִיגִי בְּדִיכוֹלָה לַעֲמֹוד בְּרוּחַ מְצוּיָה דְּיַבָּשָׁה וְאֵינָהּ יְכוֹלָה לַעֲמֹוד (בְּרוּחַ שֶׁאֵינָהּ מְצוּיָה דְּיַבָּשָׁה). רַבָּן גַּמְלִיאֵל סָבַר: סֻוכָּה דִּירַת קֶבַע בָּעֵינַן, וְכֵיוָן דְּאֵינָהּ יְכוֹלָה לַעֲמֹוד בְּרוּחַ מְצוּיָה דְּיָם — לֹא כְּלוּם הִיא. רַבִּי עֲקִיבָא סָבַר: סֻוכָּה דִּירַת עֲרַאי בָּעֵינַן, וְכֵיוָן דִּיכוֹלָה לַעֲמֹוד בְּרוּחַ מְצוּיָה דְּיַבָּשָׁה — כְּשֵׁרָה.</div>
+            <div class="fr"><p>Abaye dit : de l avis de tous, la ou elle ne peut pas tenir face a un vent courant sur la terre ferme — elle n est rien du tout. [La ou] elle peut tenir face a un vent non courant sur la terre ferme, de l avis de tous il n y a pas de divergence : elle est valable.</p><p>Ils ne divergent que dans le cas ou elle peut tenir face a un vent courant sur la terre ferme mais ne peut pas tenir (face a un vent non courant sur la terre ferme). Rabban Gamliel tient : nous exigeons de la souka une habitation permanente (dirat keva) ; et puisqu elle ne peut pas tenir face a un vent courant en mer — elle n est rien.</p><p>Rabbi Akiva tient : nous exigeons de la souka une habitation temporaire (dirat arai) ; et puisqu elle peut tenir face a un vent courant sur la terre ferme — elle est valable.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>גְּמ&#x27; לֹא כְּלוּם הִיא</b> דְּאַפֵּי&#x27; דִּירַת עֲרַאי לָא הָוְיָא:</div>
+          <div class="glose-fr">Guem. « Elle n est rien du tout » — car elle n est meme pas une habitation temporaire (dirat arai).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁאֵינָהּ מְצוּיָה דְּיַבָּשָׁה</b> הָוֵי כְּרוּחַ מְצוּיָה דְּיָם:</div>
+          <div class="glose-fr">« [Un vent] non courant sur la terre ferme » — cela equivaut a un vent courant en mer.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>יְכוֹלָה לַעֲמֹוד בְּרוּחַ שֶׁאֵינָהּ מְצוּיָה דְּיַבָּשָׁה</b> דְּהַייְנוּ רוּחַ מְצוּיָה דְּיָם דְּכֻולֵּי עָלְמָא כּוּ&#x27; אַף ע&quot;ג דְּאֵינָהּ עוֹמֶדֶת בְּרוּחַ שֶׁאֵינָהּ מְצוּיָה דְּיָם דְּאַפֵּי&#x27; לְמָאֵן דְּבָעֵי סֻוכָּה דִּירַת קֶבַע אִיכָּא:</div>
+          <div class="glose-fr">« Elle peut tenir face a un vent non courant sur la terre ferme » — c est-a-dire face a un vent courant en mer : de l avis de tous, etc. [elle est valable] — et cela bien qu elle ne tienne pas face a un vent non courant en mer ; car meme pour celui qui exige de la souka une habitation permanente (dirat keva), il y a la de quoi la tenir pour permanente.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Abaye ne tranche pas le litige, il en <b>reduit le domaine</b>. Il distingue trois degres de resistance et montre que deux d entre eux font l unanimite. Trop fragile pour un vent ordinaire de terre : ce n est meme pas une habitation temporaire, tous invalident. Assez solide pour un vent exceptionnel de terre : tous valident. Reste un seul cran, celui du bateau, ou les deux Tanaim s opposent.</p><p>La cle est l equivalence donnee par Rachi : <b>ce qui est exceptionnel a terre est ordinaire en mer</b>. La souka de Rabbi Akiva tenait face au vent ordinaire de terre — elle etait donc, selon lui, une souka. Elle n a pas tenu face au vent ordinaire de la mer ; pour Rabban Gamliel, cela suffit a la disqualifier des l origine.</p><p>Sous la dispute technique, un desaccord de definition : <b>dirat keva</b> (habitation permanente) contre <b>dirat arai</b> (habitation temporaire). Rabban Gamliel demande a la souka de tenir contre le vent du lieu ou elle se trouve ; Rabbi Akiva ne lui demande que le minimum d une cabane de terre ferme, parce que la souka n a jamais eu vocation a durer.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="300" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="13.6" font-weight="700" fill="#1c1917">La meme souka, deux echelles de vent : pourquoi le fait vecu ne tranche rien</text>
+  <text x="360" y="42" text-anchor="middle" font-size="9.4" fill="#57534e">L equivalence posee par Rachi : ce qui est exceptionnel a terre est ordinaire en mer</text>
+
+  <rect x="40" y="58" width="290" height="118" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.3"/>
+  <text x="185" y="78" text-anchor="middle" font-size="10.6" font-weight="700" fill="#14532d">Echelle de la terre ferme</text>
+  <rect x="56" y="90" width="258" height="30" rx="4" fill="#dcfce7"/>
+  <text x="185" y="110" text-anchor="middle" font-size="9.2" fill="#292524">Vent courant a terre -- rouah metsouya</text>
+  <rect x="56" y="126" width="258" height="34" rx="4" fill="#fef9c3"/>
+  <text x="185" y="146" text-anchor="middle" font-size="9.2" fill="#292524">Vent non courant a terre -- exceptionnel</text>
+  <text x="185" y="170" text-anchor="middle" font-size="8.4" fill="#57534e">Deux crans seulement pour qui reste sur la terre</text>
+
+  <rect x="390" y="58" width="290" height="118" rx="7" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.3"/>
+  <text x="535" y="78" text-anchor="middle" font-size="10.6" font-weight="700" fill="#1e3a8a">Echelle de la mer</text>
+  <rect x="406" y="90" width="258" height="30" rx="4" fill="#dbeafe"/>
+  <text x="535" y="110" text-anchor="middle" font-size="9.2" fill="#292524">Vent courant en mer -- rouah metsouya de yam</text>
+  <rect x="406" y="126" width="258" height="34" rx="4" fill="#fee2e2"/>
+  <text x="535" y="146" text-anchor="middle" font-size="9.2" fill="#292524">Vent non courant en mer -- tempete</text>
+  <text x="535" y="170" text-anchor="middle" font-size="8.4" fill="#57534e">La mer decale l echelle entiere vers le haut</text>
+
+  <path d="M314 143 L406 105" stroke="#b45309" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <path d="M398 102 L408 104 L402 112 Z" fill="#b45309"/>
+  <rect x="230" y="188" width="260" height="34" rx="5" fill="#fffbeb" stroke="#b45309" stroke-width="1.3"/>
+  <text x="360" y="209" text-anchor="middle" font-size="9.6" font-weight="700" fill="#78350f">Rachi : ces deux crans sont le meme vent</text>
+
+  <rect x="40" y="234" width="640" height="52" rx="6" fill="#fdf2f8" stroke="#9d174d" stroke-width="1.2"/>
+  <text x="360" y="254" text-anchor="middle" font-size="9.8" font-weight="700" fill="#831843">D ou la question : quelle echelle sert de reference ?</text>
+  <text x="360" y="274" text-anchor="middle" font-size="8.8" fill="#292524">Rabban Gamliel mesure a l echelle du lieu -- en mer, il faut tenir contre le vent de mer. Rabbi Akiva mesure a l echelle de la terre -- une habitation temporaire n a jamais eu a faire davantage</text>
+</svg></div><div class="svg-cap">L equivalence de Rachi : le vent exceptionnel de la terre ferme est le vent ordinaire de la mer.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אוֹ עַל גַּבֵּי גָּמָל כּוּ׳. מַתְנִיתִין מַנִּי — רַבִּי מֵאִיר הִיא. דְּתַנְיָא: הָעוֹשֶׂה סֻוכָּתוֹ עַל גַּבֵּי בְּהֵמָה — רַבִּי מֵאִיר מַכְשִׁיר, וְרַבִּי יְהוּדָה פּוֹסֵל. מַאי טַעְמֵיהּ דְּרַבִּי יְהוּדָה? אֲמַר קְרָא: ״חַג הַסֻּוכֹּות תַּעֲשֶׂה לְךָ שִׁבְעַת יָמִים״. סֻוכָּה הָרְאוּיָה לְשִׁבְעָה — שְׁמָהּ סֻוכָּה. סֻוכָּה שֶׁאֵינָהּ רְאוּיָה לְשִׁבְעָה — לֹא שְׁמָהּ סֻוכָּה.</div>
+            <div class="fr"><p>« Ou sur le dos d un chameau, etc. » — de qui est notre michna ? Elle est de Rabbi Meir.</p><p>Car il est enseigne : celui qui fait sa souka sur le dos d une bete — Rabbi Meir declare valable, et Rabbi Yehouda invalide. Quelle est la raison de Rabbi Yehouda ?</p><p>Le verset dit : « Tu feras pour toi la fete des Souccot sept jours » (Devarim 16,13) — une souka apte a sept jours est appelee souka ; une souka qui n est pas apte a sept jours n est pas appelee souka.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>עַל גַּבֵּי בְּהֵמָה</b> כְּגוֹן נָתַן דְּלָתוֹת עַל שְׁנֵי סוּסִים וְהֵם קַרְקָעִית הַסֻּוכָּה וְעָשָׂה לְמַעְלָה מְחִיצּוֹת וּסְכָךְ:</div>
+          <div class="glose-fr">« Sur le dos d une bete » — par exemple : il a pose des planches sur deux chevaux, et ces planches forment le plancher de la souka ; puis il a dresse au-dessus les parois et le s khakh.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָרָאוּי&#x27; לְשִׁבְעָה</b> וְהַשְׁתָּא דִּגְזוּר רַבָּנָן אֵין עוֹלִין לָהּ נִמְצֵאת שֶׁאֵינָהּ רְאוּיָה לְיוֹם רִאשׁוֹן:</div>
+          <div class="glose-fr">« Apte a sept [jours] » — or maintenant que les Sages ont decrete qu on n y monte pas, il se trouve qu elle n est pas apte pour le premier jour.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">עַל גַּבֵּי בְּהֵמָה. פ&quot;ה נָתַן דְּלָתוֹת עַל ב&#x27; סוּסִים לִהְיוֹתָם קַרְקָעִית הַסֻּוכָּה וְעָשָׂה לְמַעְלָה מְחִיצּוֹת וְסִיכֵּךְ רַבִּי יְהוּדָה פּוֹסֵל וּמִכָּאן קָשֶׁה לְפֵ&quot;ה דְּמַתְנִיתִין דִּלְעֵיל (סֻוכָּה דַּף כא:) גַּבֵּי סָמַךְ סֻוכָּתוֹ בְּכַרְעֵי הַמִּטָּה כִּדְפֵי&#x27; לְעֵיל וי&quot;מ דְּהָכָא לָאו בְּמִיטַּלְטֵל הַסְּכָךְ עַל גַּבֵּי הַבְּהֵמָה דא&quot;כ לָמָּה לִי קְרָא לְר&#x27; יְהוּדָה תִּיפּוֹק לֵיהּ מִשּׁוּם דְּאֵין לָהּ קֶבַע כִּדְפָרֵישִׁית לְעֵיל אֶלָּא הֶעֱמִיד סֻוכָּה עַל ד&#x27; קוּנְדָּסִים וְסָמַךְ עֲלֵיהֶן הַסְּכָךְ וְהִכְנִיס שָׁם הַבְּהֵמָה וְעָשָׂה עָלֶיהָ קַרְקָעִיתָהּ וּמְחִיצוֹתֶיהָ עַד לַסְּכָךְ דְּלָא חַזְיָא לְשִׁבְעָה דְּאֵין עוֹלִין עַל גַּבֵּי בְּהֵמָה בְּיוֹם טוֹב:</div>
+          <div class="glose-fr">« Sur le dos d une bete ». Rachi a explique : il a pose des planches sur deux chevaux pour qu elles servent de plancher a la souka, puis il a dresse au-dessus les parois et couvert de s khakh — et Rabbi Yehouda invalide. De la, une difficulte contre l explication de Rachi sur la michna precedente (Souka 21b), a propos de « il a appuye sa souka sur les pieds du lit », comme nous l avons expose plus haut. Aussi certains expliquent-ils qu ici le s khakh n est pas porte par la bete ; car s il l etait, pourquoi Rabbi Yehouda aurait-il besoin d un verset ? Il lui suffirait de dire qu elle n a pas de stabilite (keva), comme nous l avons explique plus haut. Il s agit plutot d une souka dressee sur quatre poteaux, sur lesquels on a appuye le s khakh ; il a ensuite fait entrer la bete a l interieur et en a fait le plancher et les parois jusqu au s khakh — et elle n est pas apte a sept jours, puisqu on ne monte pas sur une bete le jour de fete.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">סֻוכָּה הָרְאוּיָה לְשִׁבְעָה. מֵהַאי טַעְמָא נָמֵי הָיָה פּוֹסֵל בְּסֻוכָּה עַל גַּבֵּי אִילָן:</div>
+          <div class="glose-fr">« Une souka apte a sept [jours] ». C est pour cette meme raison qu il invalidait aussi une souka [faite] sur un arbre.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Meme question d attribution, nouveau cas. La michna a valide une souka posee sur un chameau ; une baraita montre que Rabbi Yehouda l invalide. Notre michna est donc de <b>Rabbi Meir</b>.</p><p>Le raisonnement de Rabbi Yehouda est un <b>drach</b> sur le mot souka lui-meme : le verset joint « la fete des Souccot » et « sept jours », donc le nom de souka ne s applique qu a ce qui peut servir sept jours. Comme les Sages ont interdit de monter sur une bete le jour de fete, cette souka manque le premier jour — et elle est disqualifiee des le depart, pas seulement le premier jour.</p><p>Tossefot souleve une objection de fond a la reconstruction de Rachi. Si la bete porte reellement le s khakh, Rabbi Yehouda n a pas besoin du verset : une structure portee par un animal qui bouge manque de <b>keva</b> tout court. Le verset n a d utilite que dans un montage ou la souka tient d elle-meme sur quatre poteaux, la bete ne fournissant que le sol et les parois. Alors, et alors seulement, le seul defaut restant est l impossibilite d y monter a Yom Tov.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="300" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="13.6" font-weight="700" fill="#1c1917">Comment la souka est-elle posee sur la bete ? Deux lectures</text>
+  <text x="360" y="42" text-anchor="middle" font-size="9.4" fill="#57534e">Tossefot conteste la reconstruction de Rachi et en propose une autre, ou la bete ne porte rien</text>
+
+  <rect x="30" y="58" width="322" height="182" rx="7" fill="#eef2ff" stroke="#4338ca" stroke-width="1.3"/>
+  <text x="191" y="78" text-anchor="middle" font-size="10.8" font-weight="700" fill="#312e81">Lecture de Rachi -- la bete porte tout</text>
+  <rect x="72" y="96" width="238" height="14" rx="2" fill="#65a30d"/>
+  <text x="191" y="107" text-anchor="middle" font-size="7.6" fill="#ffffff">s khakh</text>
+  <rect x="72" y="110" width="10" height="52" fill="#a8a29e"/>
+  <rect x="300" y="110" width="10" height="52" fill="#a8a29e"/>
+  <rect x="72" y="162" width="238" height="12" rx="2" fill="#92400e"/>
+  <text x="191" y="172" text-anchor="middle" font-size="7.4" fill="#ffffff">planches -- le plancher de la souka</text>
+  <rect x="96" y="174" width="52" height="34" rx="6" fill="#d6d3d1" stroke="#78716c" stroke-width="1"/>
+  <text x="122" y="196" text-anchor="middle" font-size="8" fill="#292524">cheval</text>
+  <rect x="234" y="174" width="52" height="34" rx="6" fill="#d6d3d1" stroke="#78716c" stroke-width="1"/>
+  <text x="260" y="196" text-anchor="middle" font-size="8" fill="#292524">cheval</text>
+  <text x="191" y="224" text-anchor="middle" font-size="8.6" fill="#7f1d1d" font-weight="700">Difficulte : si la bete porte tout, pas besoin de verset</text>
+  <text x="191" y="236" text-anchor="middle" font-size="8.2" fill="#57534e">il suffirait de dire qu elle manque de keva</text>
+
+  <rect x="368" y="58" width="322" height="182" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.3"/>
+  <text x="529" y="78" text-anchor="middle" font-size="10.8" font-weight="700" fill="#14532d">Lecture des Yech Mefarchim -- la bete ne porte rien</text>
+  <rect x="410" y="96" width="238" height="14" rx="2" fill="#65a30d"/>
+  <text x="529" y="107" text-anchor="middle" font-size="7.6" fill="#ffffff">s khakh pose sur quatre poteaux</text>
+  <rect x="412" y="110" width="8" height="98" fill="#78716c"/>
+  <rect x="638" y="110" width="8" height="98" fill="#78716c"/>
+  <rect x="470" y="110" width="8" height="98" fill="#a8a29e"/>
+  <rect x="580" y="110" width="8" height="98" fill="#a8a29e"/>
+  <rect x="478" y="140" width="102" height="68" rx="10" fill="#fde68a" stroke="#b45309" stroke-width="1.2"/>
+  <text x="529" y="178" text-anchor="middle" font-size="8.6" fill="#292524">la bete, a l interieur</text>
+  <rect x="410" y="208" width="238" height="10" rx="2" fill="#a16207"/>
+  <text x="529" y="230" text-anchor="middle" font-size="8.6" fill="#166534" font-weight="700">Le sol et les parois sont faits de la bete, le toit non</text>
+
+  <rect x="30" y="252" width="660" height="38" rx="6" fill="#fffbeb" stroke="#b45309" stroke-width="1.2"/>
+  <text x="360" y="270" text-anchor="middle" font-size="9.6" font-weight="700" fill="#78350f">Pourquoi la distinction compte</text>
+  <text x="360" y="284" text-anchor="middle" font-size="8.8" fill="#292524">Le verset des sept jours n est necessaire que si la souka tient debout toute seule : alors son seul defaut est qu on ne peut pas y monter a Yom Tov</text>
+</svg></div><div class="svg-cap">Les deux reconstructions de la souka sur une bete, et l enjeu du verset des sept jours.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַבִּי מֵאִיר, הָא נָמֵי — מִדְּאוֹרַייְתָּא מִחְזָא חַזְיָא, וְרַבָּנָן הוּא דְּגָזְרוּ בָּהּ.</div>
+            <div class="fr"><p>Et Rabbi Meir ? Celle-ci aussi, selon la Tora, est apte [a l usage] ; ce sont les Sages qui y ont decrete [un interdit].</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse breve et decisive de Rabbi Meir, qui repose sur un <b>partage de niveaux</b>. L aptitude de la souka se mesure selon la Tora, non selon les decrets rabbiniques. Or, sur le plan de la Tora, rien n empeche de monter sur une bete le jour de fete : l interdit est une <b>gezera</b> des Sages, destinee a eviter qu on n en vienne a couper une branche pour l aiguillonner.</p><p>La souka est donc <b>raouya</b> — apte — pour les sept jours au sens ou le verset l entend. Un obstacle rabbinique posterieur limite son usage sans defaire sa qualification. C est exactement la structure d argument deja rencontree a la fin de 22b : la validite de la souka d un cote, l interdit d y monter de l autre, sans que le second contamine le premier.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">עֲשָׂאָהּ לִבְהֵמָה דֹּופֶן לְסֻוכָּה — רַבִּי מֵאִיר פּוֹסֵל וְרַבִּי יְהוּדָה מַכְשִׁיר. שֶׁהָיָה רַבִּי מֵאִיר אוֹמֵר: כָּל דָּבָר שֶׁיֵּשׁ בּוֹ רוּחַ חַיִּים, אֵין עוֹשִׂין אוֹתוֹ לֹא דֹּופֶן לְסֻוכָּה, וְלֹא לֶחִי לַמָּבוֹי, וְלֹא פַּסִּין לְבֵירָאוֹת, וְלֹא גּוֹלֵל לְקֶבֶר. מִשּׁוּם רַבִּי יוֹסֵי הַגְּלִילִי אָמְרוּ: אַף אֵין כּוֹתְבִין עָלָיו גִּיטֵּי נָשִׁים.</div>
+            <div class="fr"><p>S il a fait de la bete une paroi pour la souka — Rabbi Meir invalide et Rabbi Yehouda declare valable. Car Rabbi Meir disait : de tout ce qui possede un souffle de vie, on ne fait ni paroi pour une souka, ni lehi (montant) pour un mavoy (ruelle), ni pasin (planches dressees) pour des puits, ni golel (pierre de fermeture) pour un tombeau.</p><p>Au nom de Rabbi Yossi HaGuelili on a dit : on n y ecrit pas non plus les actes de divorce des femmes (guittin).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְלֹא פַּסִּין לְבֵירָאוֹת</b> דִּתְנַן בְּעֵירוּבִין (דַּף יז:) עוֹשִׂין פַּסִּין לְבֵירָאוֹת אַרְבַּע&#x27; דְּיוֹמָדִין לַבּוֹר שֶׁבִּרְשׁוּת הָרַבִּים וְהַבּוֹר עָמֹוק עֲשָׂרָה דְּהוּא רה&quot;י וְאֵין יָכוֹל לְמַלֹּאות מִמֶּנָּה אֶלָּא אִם כֵּן מֻוקָּף מְחִיצּוֹת וּמִפְּנֵי בְּהֵמוֹת עוֹלֵי רְגָלִים הִתִּירוּ הַמְּחִיצּוֹת בְּאַרְבָּעָה דְּיוֹמָדִין לְאַרְבַּע פֵּיאוֹת וְאָמַר ר&#x27; מֵאִיר דְּלָא עָבְדִין חֲדָא מֵהָנָךְ בְּבַעֲלֵי חַיִּים וְטַעְמָא מְפָרֵשׁ לְקַמָּן:</div>
+          <div class="glose-fr">« Ni des pasin pour les puits » — car nous avons appris dans une michna (Erouvin 17b) : on fait des pasin pour les puits, quatre diyoumadin (angles en equerre) autour d un puits situe dans le domaine public. Le puits, profond de dix [tefahim], est un domaine prive, et l on ne peut y puiser que s il est entoure de cloisons ; en faveur des betes des pelerins montant [a Jerusalem], on a permis que les cloisons se reduisent a quatre diyoumadin aux quatre coins. Et Rabbi Meir dit qu on ne fait aucune de ces choses avec des etres vivants — la raison en est expliquee plus loin.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְלֹא גּוֹלֵל לְקֶבֶר</b> כְּלוֹמַר אִם עֲשָׂאוּהוּ כִּיסּוּי לַאֲרוֹנוֹ שֶׁל מֵת אֵין שֵׁם גּוֹלֵל עָלָיו לְטַמֵּא דְּאָמְרִי&#x27; בִּבְהֵמָה הַמְקַשָּׁה דְּגוֹלֵל מְטַמֵּא בְּמַגָּע וּבְמַשָּׂא וּבְאֹהֶל דְּתַנְיָא (חֻולִּין דַּף עב.) עַל פְּנֵי הַשָּׂדֶה לְרַבּוֹת גּוֹלֵל וְדוֹפֵק:</div>
+          <div class="glose-fr">« Ni un golel pour un tombeau » — c est-a-dire : si l on en a fait le couvercle du cercueil d un mort, il n a pas le statut de golel pour transmettre l impurete. Car nous disons au chapitre Behema haMakcha (Houlin 72a) que le golel rend impur par contact, par port et par tente (ohel), comme il est enseigne : « sur la face du champ » (Bamidbar 19,16) vient inclure le golel et le dofek.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְר&#x27; יוֹסֵי הַגְּלִילִי</b> מְפָרֵשׁ לְקַמֵּיהּ טַעְמָא:</div>
+          <div class="glose-fr">« Et Rabbi Yossi HaGuelili » — sa raison est expliquee plus loin.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">וְרַבִּי יְהוּדָה מַכְשִׁיר. בְּשֶׁלֹּא סָמַךְ הַסֻּוכָּה עַל גַּבָּהּ אַייְרֵי דא&quot;כ הָוְיָא לָהּ כִּסְמָכָהּ בְּכַרְעֵי הַמִּטָּה:</div>
+          <div class="glose-fr">« Et Rabbi Yehouda declare valable ». Il s agit du cas ou l on n a pas appuye la souka sur elle ; car sinon, ce serait comme le cas ou l on appuie sa souka sur les pieds du lit.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">וְלֹא גּוֹלֵל לְקֶבֶר. כְּשֶׁהַמֵּת מֻונָּח בַּקֶּבֶר מַנִּיחִין עַל הַקֶּבֶר אֶבֶן גְּדוֹלָה לִסְתֹּום אֶת חֲלָלָהּ וְהוּא נִקְרָא גּוֹלֵל כִּדְמוֹכַח בְּמַסֶּכֶת אֹהָלוֹת פֶּרֶק ט&quot;ו [מ&quot;ח] דִּתְנַן קוֹרָה שֶׁעֲשָׂאָהּ גּוֹלֵל לְקֶבֶר בֵּין מֻוטָּה עַל צִידָּהּ בֵּין עוֹמֶדֶת אֵין טָמֵא אֶלָּא כְּנֶגֶד הַפֶּתַח וְעוֹד תַּנְיָא בַּתּוֹסֶפְתָּא דְּאֹהָלוֹת [פט&quot;ו ע&quot;ש] גַּל שֶׁל צְרוֹרוֹת גּוֹלֵל לַקֶּבֶר הַנּוֹגֵעַ בְּתוֹכוֹ עַד אַרְבָּעָה טְפָחִים טָמֵא דִּבְרֵי רַבִּי יְהוּדָה וַחֲכָמִים אוֹמְרִים אֵינוֹ טָמֵא אֶלָּא סֵדֶר הַפְּנִימִי צָורְכוֹ שֶׁל קֶבֶר מַשְׁמַע דְּנִקְרָא גּוֹלֵל מַה שֶׁסּוֹתֵם הֶחָלָל וְעוֹד תַּנְיָא בַּתּוֹסֶפְתָּא דְּאֹהָלוֹת סוֹף פֶּרֶק (שֵׁנִי) שְׁתֵּי אֲבָנִים גְּדוֹלוֹת שֶׁל אַרְבָּעָה טְפָחִים שֶׁעֲשָׂאָן גּוֹלֵל לְקֶבֶר הַמַּאֲהִיל עַל גַּבֵּי שְׁתֵּיהֶן טָמֵא נִיטְּלָה אַחַת מֵהֶן הַמַּאֲהִיל עַל גַּבֵּי שְׁנִיָּה טָהוֹר מִפְּנֵי שֶׁיֵּשׁ לַטֻּומְאָה דֶּרֶךְ שֶׁתֵּצֵא מִכָּל הָנֵי מַשְׁמַע שֶׁתַּחַת הַגּוֹלֵל כֻּולּוֹ חָלָל ואע&quot;ג דִּבְפֶ&#x27; בְּהֵמָה הַמְקַשָּׁה (חֻולִּין דַּף עב.) נָפְקָא טֻומְאַת הַגּוֹלֵל מִדִּכְתִיב עַל פְּנֵי הַשָּׂדֶה דְּמַשְׁמַע דְּאֵין דָּבָר עַל גַּבֵּי הַגּוֹלֵל וְעוֹמֵד מְגֻולֶּה עַל פְּנֵי הַשָּׂדֶה זִימְנִין דְּאֵינוֹ מְגֻולֶּה כִּי הַהִיא דֶּגֶל שֶׁל צְרוֹרוֹת דְּאֵינוֹ טָמֵא אֶלָּא סֵדֶר הַפְּנִימִי וְדוֹפֵק הַנִּזְכָּר בְּכָל מָקוֹם עִם הַגּוֹלֵל הֵם אֲבָנִים שֶׁהַגּוֹלֵל נִשְׁעָן עֲלֵיהֶם כְּדִתְנַן פֶּרֶק ב&#x27; דְּאֹהָלוֹת [מ&quot;ד] וְאֵיזֶהוּ דּוֹפֵק אֶת שֶׁהַגּוֹלֵל נִשְׁעָן עָלָיו אֲבָל דּוֹפֵק דְּפָקְיָן טָהוֹר דִּפְעָמִים מַנִּיחִין אֶבֶן לִסְמֹוךְ אֹותָהּ שֶׁהַגּוֹלֵל נִשְׁעָן עָלֶיהָ וְהִיא נִקְרֵאת דּוֹפֵק דְּפָקְיָן וְצָרִיךְ לְדַקְדֵּק הָא דְּאָמַר פ&#x27; הָעוֹר וְהָרֹוטֶב (חֻולִּין דַּף קכו:) דְּגוֹלֵל מְטַמֵּא בְּמַגָּע וּבְאֹהֶל הֵיכִי דָמֵי בִּשְׁלָמָא מַגָּע אֶפְשָׁר מִן הַצַּד אֶלָּא בְּאֹהֶל מַאי אִרְיָא מִשּׁוּם גּוֹלֵל תִּיפּוֹק לֵיהּ מִשּׁוּם שֶׁהַקֶּבֶר סָתוּם וְתַנְיָא בְּנָזִיר פ&#x27; כֹּהֵן גָּדוֹל (נָזִיר דַּף נג:) אוֹ בְּקֶבֶר זוֹ קֶבֶר סָתוּם דְּאָמְרִי&#x27; טֻומְאָה בּוֹקַעַת וְעוֹלָה בּוֹקַעַת וְיוֹרֶדֶת וְאֵין לוֹמַר דְּאִיצְטְרִיךְ הֵיכָא דְּאֵין הַמֵּת בַּקֶּבֶר דְּאִי לֵיתֵיהּ אִם כֵּן לֹא מְטַמֵּא מִשּׁוּם גּוֹלֵל דְּאַפֵּי&#x27; כִּי אִיתֵיהּ וְיֵשׁ מָקוֹם לְטֻומְאָה לָצֵאת לֹא מְטַמֵּא וְאֵין לוֹמַר נָמֵי כְּגוֹן דְּבוֹלֵט חוּץ לַקֶּבֶר דְּהָא מַה שֶׁחוּץ לַקֶּבֶר טָהוֹר כִּדְקָאָמְרִינַן אֵין טָמֵא אֶלָּא כְּנֶגֶד הַפֶּתַח דְּהָא דְּקָתָנֵי סֵיפָא עָשָׂה רֹאשָׁהּ גּוֹלֵל לְקֶבֶר אֵין טָמֵא אֶלָּא עַד אַרְבָּעָה טְפָחִים הַהִיא כְּשֶׁנָּתְנָה עַל הַקֶּבֶר מְעֻומָּד אַייְרֵי דְּכֻולָּהּ כְּנֶגֶד הַפֶּתַח וְעַד אַרְבָּעָה דְּקָתָנֵי הַיְינוּ בְּגָובְהָהּ דֻּומְיָא דְּהַהִיא דֶּגֶל שֶׁל צְרוֹרוֹת לְרַבִּי יְהוּדָה וּמִיהוּ מָצֵינַן לְמֵימַר דְּאִיצְטְרִיךְ לְמַאֲהִיל עַל הַגּוֹלֵל כְּנֶגֶד מְחִיצּוֹת הַקֶּבֶר שֶׁהַגּוֹלֵל מֻונָּח עֲלֵיהֶם דאע&quot;פ שֶׁאֵין מַאֲהִיל כְּנֶגֶד חֲלַל הַקֶּבֶר טָמֵא מִשּׁוּם דְּמַאֲהִיל עַל הַגּוֹלֵל דְּאִם אֵין שָׁם גּוֹלֵל טָהוֹר:</div>
+          <div class="glose-fr">« Ni un golel pour un tombeau ». Lorsque le mort repose dans le tombeau, on pose sur celui-ci une grande pierre pour en boucher la cavite : c est ce qu on appelle le golel, comme il ressort du traite Ohalot chapitre 15 [michna 8], ou l on enseigne : une poutre dont on a fait un golel pour un tombeau, qu elle soit couchee sur le cote ou dressee, seule la partie qui fait face a l ouverture est impure. Il est encore enseigne dans la Tossefta d Ohalot [ch. 15] : un amas de cailloux [servant de] golel pour un tombeau — celui qui touche a l interieur, jusqu a quatre tefahim, est impur, parole de Rabbi Yehouda ; et les Sages disent : seule la rangee interieure est impure, car elle seule sert au tombeau. Cela montre qu on appelle golel ce qui obture la cavite. Il est encore enseigne dans la Tossefta d Ohalot, fin du chapitre [deux] : deux grandes pierres de quatre tefahim dont on a fait un golel pour un tombeau — celui qui les surplombe toutes deux est impur ; l une d elles retiree, celui qui surplombe la seconde est pur, parce que l impurete a desormais un chemin par ou sortir. De tout cela il ressort que sous le golel tout entier il y a une cavite. Et bien qu au chapitre Behema haMakcha (Houlin 72a) l impurete du golel soit deduite du verset « sur la face du champ » — ce qui suggere que rien ne se trouve au-dessus du golel et qu il est a decouvert sur la face du champ — il arrive qu il ne soit pas a decouvert, comme dans le cas de l amas de cailloux, ou seule la rangee interieure est impure. Et le dofek, mentionne partout avec le golel, ce sont les pierres sur lesquelles le golel s appuie, comme nous l avons appris au chapitre 2 d Ohalot [michna 4] : qu est-ce que le dofek ? Ce sur quoi le golel s appuie. Mais le dofek des dofekin est pur : parfois on place une pierre pour soutenir celle sur laquelle le golel s appuie, et on la nomme dofek des dofekin. Et il faut examiner ce qui est dit au chapitre haOr vehaRotev (Houlin 126b), que le golel rend impur par contact et par tente : de quel cas s agit-il ? Pour le contact, soit — c est possible par le cote. Mais pour la tente, pourquoi invoquer le golel ? Qu on le deduise du fait que le tombeau est ferme ! Car il est enseigne dans Nazir, chapitre Cohen Gadol (Nazir 53b) : « ou dans un tombeau » — c est un tombeau ferme, dont nous disons que l impurete perce et monte, perce et descend. Et l on ne peut pas dire qu il fallait ce cas la ou le mort n est pas dans le tombeau : car s il n y est pas, il n y a pas d impurete par golel — meme quand il y est et que l impurete a un chemin pour sortir, [le golel] ne rend pas impur. Et l on ne peut pas dire non plus qu il s agit d un golel debordant hors du tombeau, car ce qui est hors du tombeau est pur, comme nous l avons dit : seule la partie qui fait face a l ouverture est impure. Quant a ce qui est enseigne dans la clause finale — « il a fait de son extremite un golel pour le tombeau, seuls quatre tefahim sont impurs » — cela vise le cas ou on l a posee sur le tombeau debout, de sorte que toute la poutre fait face a l ouverture ; et les quatre tefahim enseignes concernent sa hauteur, a l instar du cas de l amas de cailloux selon Rabbi Yehouda. On peut toutefois dire que [le verset] etait necessaire pour celui qui surplombe le golel a l aplomb des parois du tombeau sur lesquelles le golel repose : bien qu il ne surplombe pas la cavite du tombeau, il est impur parce qu il surplombe le golel — car s il n y avait pas la de golel, il serait pur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Renversement complet. Dans le cas precedent, la bete portait la souka ; ici elle <b>est</b> l une de ses parois. Et les positions s inversent : Rabbi Meir, qui validait, invalide ; Rabbi Yehouda, qui invalidait, valide. Tossefot precise aussitot la condition : Rabbi Yehouda ne valide que si la souka <b>ne s appuie pas</b> sur l animal — sinon on retombe sur le cas des pieds du lit, deja traite en 21b.</p><p>Rabbi Meir ne se contente pas d une decision ponctuelle : il enonce une regle generale sur tout ce qui possede un <b>rouah hayim</b>, un souffle de vie. Suivent quatre emplois refuses. Les trois premiers sont des cloisons — paroi de souka, <b>lehi</b> (montant plante a l entree d une ruelle pour y permettre le portage le chabbat), <b>pasin</b> (les quatre equerres dressees autour d un puits public, concession faite aux betes des pelerins pour qu on puisse y puiser).</p><p>Le quatrieme detonne : le <b>golel</b>, la pierre qui ferme un tombeau, n est pas une cloison, et le declarer invalide <b>allege</b> l impurete au lieu de l aggraver. Meme remarque pour l ajout de Rabbi Yossi HaGuelili sur les guittin. Rachi note deux fois « la raison est expliquee plus loin » : la Guemara devra trouver un motif capable de couvrir a la fois des rigueurs et des indulgences.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 342" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="342" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="13.6" font-weight="700" fill="#1c1917">Les cinq emplois refuses a tout etre vivant, et ce qu ils ont en commun</text>
+  <text x="360" y="42" text-anchor="middle" font-size="9.4" fill="#57534e">Trois cloisons, puis deux cas qui n en sont pas -- c est la faille que la Guemara exploitera</text>
+
+  <rect x="26" y="58" width="668" height="116" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.3"/>
+  <text x="360" y="78" text-anchor="middle" font-size="10.6" font-weight="700" fill="#14532d">Groupe 1 -- des cloisons, ou l animal servirait de mehitsa</text>
+  <rect x="44" y="90" width="200" height="70" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="1"/>
+  <text x="144" y="110" text-anchor="middle" font-size="9.6" font-weight="700" fill="#14532d">Dofen la-souka</text>
+  <text x="144" y="128" text-anchor="middle" font-size="8.6" fill="#292524">Paroi de la souka</text>
+  <text x="144" y="146" text-anchor="middle" font-size="8.2" fill="#57534e">Si elle tombe, plus de souka</text>
+  <rect x="260" y="90" width="200" height="70" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="1"/>
+  <text x="360" y="110" text-anchor="middle" font-size="9.6" font-weight="700" fill="#14532d">Lehi la-mavoy</text>
+  <text x="360" y="128" text-anchor="middle" font-size="8.6" fill="#292524">Montant a l entree d une ruelle</text>
+  <text x="360" y="146" text-anchor="middle" font-size="8.2" fill="#57534e">Si elle part, le portage devient interdit</text>
+  <rect x="476" y="90" width="200" height="70" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="1"/>
+  <text x="576" y="110" text-anchor="middle" font-size="9.6" font-weight="700" fill="#14532d">Pasin li-veraot</text>
+  <text x="576" y="128" text-anchor="middle" font-size="8.6" fill="#292524">Planches en equerre autour d un puits</text>
+  <text x="576" y="146" text-anchor="middle" font-size="8.2" fill="#57534e">Si elle part, on ne peut plus puiser</text>
+
+  <rect x="26" y="186" width="668" height="112" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="360" y="206" text-anchor="middle" font-size="10.6" font-weight="700" fill="#7f1d1d">Groupe 2 -- ce ne sont pas des cloisons, et le refus y devient une indulgence</text>
+  <rect x="90" y="218" width="252" height="66" rx="6" fill="#fee2e2" stroke="#b91c1c" stroke-width="1"/>
+  <text x="216" y="238" text-anchor="middle" font-size="9.6" font-weight="700" fill="#7f1d1d">Golel la-kever</text>
+  <text x="216" y="256" text-anchor="middle" font-size="8.6" fill="#292524">Pierre qui obture la cavite du tombeau</text>
+  <text x="216" y="272" text-anchor="middle" font-size="8.2" fill="#57534e">Le refuser allege l impurete -- pas de rigueur</text>
+  <rect x="378" y="218" width="252" height="66" rx="6" fill="#fee2e2" stroke="#b91c1c" stroke-width="1"/>
+  <text x="504" y="238" text-anchor="middle" font-size="9.6" font-weight="700" fill="#7f1d1d">Guet ecrit sur un vivant</text>
+  <text x="504" y="256" text-anchor="middle" font-size="8.6" fill="#292524">Rabbi Yossi HaGuelili</text>
+  <text x="504" y="272" text-anchor="middle" font-size="8.2" fill="#57534e">Rien a voir avec une cloison qui tombe</text>
+
+  <rect x="26" y="308" width="668" height="26" rx="5" fill="#fffbeb" stroke="#b45309" stroke-width="1.2"/>
+  <text x="360" y="325" text-anchor="middle" font-size="9" font-weight="700" fill="#78350f">Rachi annonce deux fois : la raison est expliquee plus loin -- c est la Guemara de 23b qui devra reunir ces cinq cas sous un seul motif</text>
+</svg></div><div class="svg-cap">La liste de Rabbi Meir : trois cloisons, puis deux cas qui n en sont pas -- la tension a resoudre.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאי טַעְמֵיהּ דְּרַבִּי מֵאִיר? אַבַּיֵּי אָמַר: שֶׁמָּא תָּמוּת. רַבִּי זֵירָא אָמַר: שֶׁמָּא תִּבְרַח. בְּפִיל קָשׁוּר כֻּולֵּי עָלְמָא לָא פְּלִיגִי, דְּאִי נָמֵי מָייֵת — יֵשׁ בְּנִבְלָתוֹ עֲשָׂרָה. כִּי פְּלִיגִי בְּפִיל שֶׁאֵינוֹ קָשׁוּר. לְמַאן דְּאָמַר שֶׁמָּא תָּמוּת — לָא חָיְישִׁינַן. לְמַאן דְּאָמַר גְּזֵרָה שֶׁמָּא תִּבְרַח — חָיְישִׁינַן.</div>
+            <div class="fr"><p>Quelle est la raison de Rabbi Meir ? Abaye dit : de peur qu elle ne meure.</p><p>Rabbi Zera dit : de peur qu elle ne s enfuie. Dans le cas d un elephant attache, de l avis de tous il n y a pas de divergence [il est valable], car meme s il meurt, sa carcasse a [encore] dix [tefahim].</p><p>Ils ne divergent que dans le cas d un elephant non attache : pour celui qui dit « de peur qu elle ne meure » — nous ne craignons pas ; pour celui qui dit « c est un decret, de peur qu elle ne s enfuie » — nous craignons.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>גְּזֵרָה שֶׁמָּא תָּמוּת</b> הַבְּהֵמָה בְּיוֹם טוֹב וְתִפֹּול וְאֵין כָּאן דֹּופֶן וְנִמְצָא בָּטֵל מִמִּצְוַת סֻוכָּה וּלְקַמֵּיהּ פָּרִיךְ וּבְגוֹלֵל דְּקֻולָּא הִיא מַאי טַעְמֵיהּ:</div>
+          <div class="glose-fr">« Decret, de peur qu elle ne meure » — la bete, le jour de fete ; elle tombera, il n y aura plus de paroi, et il se trouvera prive de la mitsva de souka. Et plus loin la Guemara objecte : mais pour le golel, ou [la regle] est une indulgence, quelle en est la raison ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>קָשׁוּר</b> דְּלֵיכָּא לְמִיחַשׁ שֶׁמָּא תִּבְרַח:</div>
+          <div class="glose-fr">« Attache » — car il n y a pas lieu de craindre qu il ne s enfuie.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּכֻולֵּי עָלְמָא</b> בֵּין לְאַבַּיֵּי בֵּין לְרַבִּי זֵירָא מַכְשִׁיר רַבִּי מֵאִיר:</div>
+          <div class="glose-fr">« De l avis de tous » — aussi bien selon Abaye que selon Rabbi Zera, Rabbi Meir declare valable.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּאִי נָמֵי מָיֵית</b> וְיִפּוֹל יֵשׁ בְּנִבְלָתוֹ עֲשָׂרָה:</div>
+          <div class="glose-fr">« Car meme s il meurt » — et qu il tombe, sa carcasse a [encore] dix [tefahim].</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">בְּפִיל קָשׁוּר כֻּולֵּי עָלְמָא לָא פְּלִיגִי. לְשׁוֹן הַשַּׁ&quot;ס מְשֻׁונֶּה כָּאן מִשְּׁאָר מְקוֹמוֹת דְּרַבִּי זֵירָא וְאַבַּיֵּי תַּרְוַייְהוּ מְפָרְשִׁי טַעְמָא דְּרַבִּי מֵאִיר וַהֲוָה לֵיהּ לְמֵימַר מַאי בֵינַיְיהוּ וְהוּא מְפָרֵשׁ וְהוֹלֵךְ בִּלְשׁוֹן פְּלִיגִי:</div>
+          <div class="glose-fr">« Pour un elephant attache, de l avis de tous il n y a pas de divergence ». La formulation du Talmud est ici differente de celle des autres endroits : Rabbi Zera et Abaye expliquent tous deux la raison de Rabbi Meir, et il aurait fallu dire « quelle difference y a-t-il entre eux ? » ; or le Talmud poursuit son explication en employant le langage de « ils divergent ».</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara cherche le motif de Rabbi Meir, et deux Amoraim proposent deux craintes distinctes. Abaye : <b>chema tamout</b> — de peur que la bete ne meure et ne s effondre, laissant la souka sans paroi au milieu de la fete. Rabbi Zera : <b>chema tivrah</b> — de peur qu elle ne s enfuie. Dans les deux cas, la paroi disparait ; ce qui change, c est le scenario redoute.</p><p>Pour departager, la Guemara cherche une <b>nafka mina</b> et croit la trouver dans l elephant. Un elephant mort reste haut de dix tefahim : sa carcasse fait encore une paroi valable. Donc, s il est attache, la crainte de la mort ne mord pas, la crainte de la fuite non plus — tous valident. S il n est pas attache, seule la crainte de la fuite subsiste : Abaye validerait, Rabbi Zera invaliderait.</p><p>Tossefot releve une anomalie de style. D ordinaire, quand deux Amoraim expliquent differemment le meme Tana, le Talmud demande <b>mai beinaihou</b> — quelle difference entre eux ? Ici il emploie le vocabulaire du desaccord, <b>ki peligui</b>, comme s il s agissait d une dispute reelle.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לְמַאן דְּאָמַר גְּזֵרָה שֶׁמָּא תָּמוּת, נִיחוּשׁ שֶׁמָּא תִּבְרַח! אֶלָּא: בְּפִיל שֶׁאֵינוֹ קָשׁוּר, כֻּולֵּי עָלְמָא לָא פְלִיגִי. כִּי פְלִיגִי בִּבְהֵמָה קְשׁוּרָה. לְמַאן דְּאָמַר גְּזֵרָה שֶׁמָּא תָּמוּת — חָיְישִׁינַן. וּלְמַאן דְּאָמַר גְּזֵרָה שֶׁמָּא תִּבְרַח — לָא חָיְישִׁינַן.</div>
+            <div class="fr"><p>[Objection :] pour celui qui dit « c est un decret, de peur qu elle ne meure », craignons donc aussi qu elle ne s enfuie ! — Plutot : dans le cas d un elephant non attache, de l avis de tous il n y a pas de divergence [il est invalide]. Ils ne divergent que dans le cas d une bete attachee : pour celui qui dit « c est un decret, de peur qu elle ne meure » — nous craignons ; et pour celui qui dit « c est un decret, de peur qu elle ne s enfuie » — nous ne craignons pas.</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">וּלְמַאן דְּאָמַר שֶׁמָּא תָּמוּת נֵיחוּשׁ שֶׁמָּא תִּבְרַח. דאע&quot;ג דִּלְמַאן דְּאָמַר שֶׁמָּא תִּבְרַח נָמֵי עַל כָּרְחָךְ ר&#x27; יְהוּדָה דְּמַכְשַׁר לָא חָיֵישׁ מ&quot;מ אַבַּיֵּי אַלִּיבָּא דר&quot;מ דְּחָייֵשׁ לְמִיתָה דְּלָא שְׁכִיחָא כ&quot;ש דְּיֵשׁ לוֹ לָחוּשׁ לִשְׁמָא תִּבְרַח דִּשְׁכִיחָא:</div>
+          <div class="glose-fr">« Et pour celui qui dit : de peur qu elle ne meure, craignons aussi qu elle ne s enfuie ». Certes, meme selon celui qui dit « de peur qu elle ne s enfuie », force est d admettre que Rabbi Yehouda, qui declare valable, ne le craint pas ; il reste qu Abaye, selon Rabbi Meir, qui craint la mort — laquelle n est pas frequente — a plus forte raison doit craindre la fuite, qui, elle, est frequente.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>L objection est un raisonnement a fortiori sur la frequence. La mort d une bete est un evenement rare ; la fuite est banale. Celui qui prend la peine de decreter contre un risque rare doit d autant plus decreter contre un risque courant. Abaye ne peut donc pas laisser valable un elephant libre.</p><p>La Guemara corrige alors les deux extremites du tableau. <b>L elephant libre est invalide pour tous</b> : la fuite est crainte de part et d autre. Le vrai point de partage descend d un cran, sur la <b>bete ordinaire attachee</b> — celle qui ne peut plus fuir, mais qui peut encore mourir et dont la carcasse, elle, n atteint pas dix tefahim.</p><p>Tossefot precise l economie de l argument. Ce n est pas que la fuite soit crainte de facon absolue : Rabbi Yehouda, qui valide, ne la craint evidemment pas. C est que la position d Abaye est interne a Rabbi Meir — <b>alibba de-Rabbi Meir</b> — et qu a l interieur de cette position, craindre le rare sans craindre le frequent serait incoherent.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 344" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="344" fill="#fffdf8"/>
+  <text x="370" y="24" text-anchor="middle" font-size="13.6" font-weight="700" fill="#1c1917">La nafka mina, premiere version puis version corrigee</text>
+  <text x="370" y="42" text-anchor="middle" font-size="9.4" fill="#57534e">Une objection de qal va-homer deplace le point de partage de l elephant vers la bete ordinaire</text>
+
+  <rect x="26" y="56" width="330" height="150" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="191" y="76" text-anchor="middle" font-size="10.6" font-weight="700" fill="#7f1d1d">Premiere version -- rejetee</text>
+  <text x="42" y="98" font-size="9" fill="#292524">Elephant attache : valable pour tous</text>
+  <text x="42" y="116" font-size="9" fill="#292524">Elephant libre : le point de partage</text>
+  <text x="42" y="136" font-size="8.8" fill="#292524">Chema tamout -- la carcasse fait dix tefahim,</text>
+  <text x="42" y="150" font-size="8.8" fill="#292524">donc on ne craint pas : valable</text>
+  <text x="42" y="168" font-size="8.8" fill="#292524">Chema tivrah -- rien ne le retient : invalide</text>
+  <rect x="42" y="178" width="298" height="20" rx="4" fill="#fee2e2"/>
+  <text x="191" y="192" text-anchor="middle" font-size="8.6" font-weight="700" fill="#7f1d1d">Objection : qui craint le rare craint le frequent</text>
+
+  <rect x="384" y="56" width="330" height="150" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.3"/>
+  <text x="549" y="76" text-anchor="middle" font-size="10.6" font-weight="700" fill="#14532d">Version corrigee -- retenue</text>
+  <text x="400" y="98" font-size="9" fill="#292524">Elephant libre : invalide pour tous</text>
+  <text x="400" y="116" font-size="9" fill="#292524">Bete ordinaire attachee : le point de partage</text>
+  <text x="400" y="136" font-size="8.8" fill="#292524">Chema tamout -- attachee, elle peut encore mourir</text>
+  <text x="400" y="150" font-size="8.8" fill="#292524">et s effondrer sous dix tefahim : invalide</text>
+  <text x="400" y="168" font-size="8.8" fill="#292524">Chema tivrah -- attachee, elle ne fuit pas : valable</text>
+  <rect x="400" y="178" width="298" height="20" rx="4" fill="#dcfce7"/>
+  <text x="549" y="192" text-anchor="middle" font-size="8.6" font-weight="700" fill="#14532d">L attache neutralise une crainte, pas l autre</text>
+
+  <path d="M356 132 L384 132" stroke="#78716c" stroke-width="1.6"/>
+  <path d="M378 127 L388 132 L378 137 Z" fill="#78716c"/>
+
+  <rect x="26" y="222" width="688" height="106" rx="7" fill="#eef2ff" stroke="#4338ca" stroke-width="1.3"/>
+  <text x="370" y="242" text-anchor="middle" font-size="10.4" font-weight="700" fill="#312e81">Le tableau final : quatre cases, deux avis</text>
+  <line x1="240" y1="252" x2="240" y2="320" stroke="#c7d2fe" stroke-width="1"/>
+  <line x1="480" y1="252" x2="480" y2="320" stroke="#c7d2fe" stroke-width="1"/>
+  <line x1="42" y1="272" x2="698" y2="272" stroke="#c7d2fe" stroke-width="1"/>
+  <text x="140" y="266" text-anchor="middle" font-size="9" font-weight="700" fill="#312e81">Cas</text>
+  <text x="360" y="266" text-anchor="middle" font-size="9" font-weight="700" fill="#312e81">Abaye -- chema tamout</text>
+  <text x="590" y="266" text-anchor="middle" font-size="9" font-weight="700" fill="#312e81">Rabbi Zera -- chema tivrah</text>
+  <text x="140" y="290" text-anchor="middle" font-size="8.8" fill="#292524">Elephant attache</text>
+  <text x="360" y="290" text-anchor="middle" font-size="8.8" fill="#15803d" font-weight="700">Valable</text>
+  <text x="590" y="290" text-anchor="middle" font-size="8.8" fill="#15803d" font-weight="700">Valable</text>
+  <text x="140" y="306" text-anchor="middle" font-size="8.8" fill="#292524">Elephant libre</text>
+  <text x="360" y="306" text-anchor="middle" font-size="8.8" fill="#b91c1c" font-weight="700">Invalide</text>
+  <text x="590" y="306" text-anchor="middle" font-size="8.8" fill="#b91c1c" font-weight="700">Invalide</text>
+  <text x="140" y="322" text-anchor="middle" font-size="8.8" fill="#292524">Bete ordinaire attachee</text>
+  <text x="360" y="322" text-anchor="middle" font-size="8.8" fill="#b91c1c" font-weight="700">Invalide</text>
+  <text x="590" y="322" text-anchor="middle" font-size="8.8" fill="#15803d" font-weight="700">Valable</text>
+</svg></div><div class="svg-cap">Le deplacement du point de partage : de l elephant libre a la bete ordinaire attachee.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּמַאן דְּאָמַר גְּזֵרָה שֶׁמָּא תִּבְרַח, נִיחוּשׁ שֶׁמָּא תָּמוּת? מִיתָה לָא שְׁכִיחָא. וְהָאִיכָּא רַווְחָא דְּבֵינֵי בֵּינֵי? דְּעָבֵיד לֵיהּ בְּהוּצָא וְדַפְנָא.</div>
+            <div class="fr"><p>Et celui qui dit « c est un decret, de peur qu elle ne s enfuie », qu il craigne donc qu elle ne meure ! — La mort n est pas frequente. — Mais il y a bien l espace [vide] entre [ses pattes] ! — Il le lui amenage avec du hotsa et du dafna.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִיתָה לָא שְׁכִיחָא</b> וַאֲפִילּוּ רַבִּי מֵאִיר לָא פְּסִיל:</div>
+          <div class="glose-fr">« La mort n est pas frequente » — et meme Rabbi Meir n invalide pas [pour cela].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהָאִיכָּא רַוְוחָא</b> דְּבֵינֵי כַּרְעֵי שֶׁהִיא פִּירְצָה וְאַפֵּי&#x27; כְּשֶׁהִיא חַיָּה:</div>
+          <div class="glose-fr">« Mais il y a l espace » — d entre les pattes, qui constitue une breche, et cela meme de son vivant.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דַּעֲבִיד לֵיהּ</b> גָּדֵר בֵּין רַגְלֶיהָ:</div>
+          <div class="glose-fr">« Il le lui amenage » — une cloture entre ses pattes.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּהוּצָא וְדַפְנָא</b> הוּצָא לוּלְבֵי דֶּקֶל דַּפְנָא עַנְפֵי עֵץ שֶׁקּוֹרִין לורי&quot;ר וְגָדֵל בּוֹ פְּרִי שֶׁקּוֹרִין באיי&quot;ש:</div>
+          <div class="glose-fr">« Avec du hotsa et du dafna » — hotsa : des palmes de dattier. Dafna : des rameaux de l arbre qu on appelle lorier, et sur lequel poussent des fruits qu on appelle baies.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Question symetrique de la precedente : si Rabbi Zera craint la fuite, pourquoi ne craint-il pas la mort ? La reponse pose un principe general de la mecanique des decrets : <b>on ne decrete pas contre l improbable</b>. La mort d une bete en pleine fete n est pas <b>chekhiha</b>, pas frequente ; elle ne merite donc pas de decret.</p><p>La Guemara passe alors des craintes hypothetiques a un defaut bien present. Une bete debout n est pas un mur plein : l espace entre ses pattes est une <b>pirtsa</b>, une breche — et cela, comme le souligne Rachi, <b>de son vivant deja</b>, sans qu il faille imaginer sa mort.</p><p>La reponse est pratique : on comble l intervalle. Rachi glose les deux materiaux : <b>hotsa</b>, palmes de dattier, et <b>dafna</b>, rameaux de laurier — qu il traduit meme en vieux francais, lorier, avec ses baies. La paroi n est donc plus l animal seul, mais l animal complete.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְדִלְמָא רְבָעָהּ? דִּמְתִיחָה בְּאַשְׁלֵי מִלְּעֵיל. וּלְמַאן דְּאָמַר גְּזֵרָה שֶׁמָּא תָּמוּת נָמֵי, הָא מְתִיחָה בְּאַשְׁלֵי מִלְּעֵיל! זִמְנִין דְּמוֹקֵים בְּפָחוֹת מִשְּׁלֹשָׁה סָמוּךְ לַסְּכָךְ,</div>
+            <div class="fr"><p>Et peut-etre se couchera-t-elle ? — [Il s agit d un cas] ou elle est tendue par des cordes depuis le haut. — Mais alors, pour celui qui dit « c est un decret, de peur qu elle ne meure » aussi : elle est bien tendue par des cordes depuis le haut ! — Il arrive parfois qu il la place a moins de trois [tefahim] du s khakh,</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רְבָעָהּ</b> רוֹבֶצֶת:</div>
+          <div class="glose-fr">« Rav a » — [c est-a-dire] qu elle se couche.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַשְׁלֵי</b> חֲבָלִים:</div>
+          <div class="glose-fr">« Achlei » — des cordes.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָא מְתִיחָה בְּאַשְׁלֵי מִלְּעֵיל</b> וְאִם תָּמוּת אֵינָהּ נוֹפֶלֶת:</div>
+          <div class="glose-fr">« Mais elle est tendue par des cordes depuis le haut » — et si elle meurt, elle ne tombe pas.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>זִימְנָא דְּמוּקִי לָהּ פָּחוֹת מִג&#x27; כו&#x27;</b> פְּעָמִים שֶׁאֵין בְּגָובְהָהּ שֶׁל בְּהֵמָה אֶלָּא שִׁבְעָה וּמַשֶּׁהוּ וְסֻוכָּה עֲשָׂרָה דְּקָאֵי לָהּ בְּפָחוֹת מִשְּׁלֹשָׁה סָמוּךְ לַסְּכָךְ וְאָמְרִינַן לָבוּד:</div>
+          <div class="glose-fr">« Il arrive parfois qu il la place a moins de trois, etc. » — il arrive que la hauteur de la bete ne soit que de sept [tefahim] et un peu, alors que la souka [en exige] dix ; il la place donc a moins de trois [tefahim] du s khakh, et nous disons lavoud (ce qui est proche est repute joint).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deux objections finales, de plus en plus fines. D abord : meme vivante et debout, la bete peut se <b>coucher</b> — Rachi glose <b>rav a</b> par rovetset — et la paroi tombe alors sous dix tefahim. Reponse : on parle d une bete amarree par des cordes, <b>achlei</b>, depuis le haut, qui ne peut pas s affaisser.</p><p>Cette reponse se retourne aussitot contre Abaye : si les cordes la maintiennent, meme morte elle ne tombe pas, comme Rachi le note. La crainte <b>chema tamout</b> semble alors sans objet, et la position d Abaye s effondre.</p><p>La reponse tient a un calcul de hauteur. La paroi doit faire dix tefahim ; une bete ordinaire n en fait souvent que sept et un peu. On la place donc a moins de trois tefahim du s khakh et l on invoque <b>lavoud</b> — la fiction qui repute joint ce qui est separe par moins de trois tefahim. Le montage ne tient que si la bete conserve sa taille : morte, elle se tasse, l ecart passe la barre des trois, et lavoud cesse d operer. La phrase reste suspendue en fin de amoud et se prolonge en 23b.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="320" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="13.6" font-weight="700" fill="#1c1917">Trois defauts de la bete-paroi, et ce qui les repare</text>
+  <text x="360" y="42" text-anchor="middle" font-size="9.4" fill="#57534e">Deux remedes suffisent ; le troisieme cas laisse la question ouverte a la fin du amoud</text>
+
+  <rect x="24" y="58" width="216" height="130" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.3"/>
+  <text x="132" y="78" text-anchor="middle" font-size="10.2" font-weight="700" fill="#78350f">Defaut 1 -- l espace entre les pattes</text>
+  <rect x="60" y="90" width="144" height="10" rx="2" fill="#65a30d"/>
+  <rect x="76" y="100" width="112" height="42" rx="9" fill="#fde68a" stroke="#b45309" stroke-width="1"/>
+  <rect x="88" y="142" width="8" height="26" fill="#a16207"/>
+  <rect x="168" y="142" width="8" height="26" fill="#a16207"/>
+  <text x="132" y="160" text-anchor="middle" font-size="8" fill="#b91c1c" font-weight="700">breche</text>
+  <text x="132" y="182" text-anchor="middle" font-size="8.6" fill="#166534" font-weight="700">Remede : hotsa et dafna</text>
+
+  <rect x="252" y="58" width="216" height="130" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.3"/>
+  <text x="360" y="78" text-anchor="middle" font-size="10.2" font-weight="700" fill="#78350f">Defaut 2 -- elle se couche</text>
+  <rect x="288" y="90" width="144" height="10" rx="2" fill="#65a30d"/>
+  <path d="M312 100 L312 128" stroke="#57534e" stroke-width="1.4"/>
+  <path d="M408 100 L408 128" stroke="#57534e" stroke-width="1.4"/>
+  <rect x="304" y="128" width="112" height="42" rx="9" fill="#fde68a" stroke="#b45309" stroke-width="1"/>
+  <text x="360" y="120" text-anchor="middle" font-size="7.8" fill="#57534e">cordes</text>
+  <text x="360" y="182" text-anchor="middle" font-size="8.6" fill="#166534" font-weight="700">Remede : tendue par le haut -- achlei</text>
+
+  <rect x="480" y="58" width="216" height="130" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="588" y="78" text-anchor="middle" font-size="10.2" font-weight="700" fill="#7f1d1d">Defaut 3 -- elle meurt malgre les cordes</text>
+  <rect x="516" y="90" width="144" height="10" rx="2" fill="#65a30d"/>
+  <rect x="516" y="100" width="144" height="18" rx="3" fill="#fee2e2" stroke="#b91c1c" stroke-dasharray="3 2"/>
+  <text x="588" y="113" text-anchor="middle" font-size="7.6" fill="#7f1d1d">moins de 3 tefahim -- lavoud</text>
+  <rect x="524" y="118" width="128" height="50" rx="9" fill="#fde68a" stroke="#b45309" stroke-width="1"/>
+  <text x="588" y="148" text-anchor="middle" font-size="8" fill="#292524">bete de 7 tefahim et un peu</text>
+  <text x="588" y="182" text-anchor="middle" font-size="8.6" fill="#b91c1c" font-weight="700">La reponse continue en 23b</text>
+
+  <rect x="24" y="204" width="672" height="100" rx="7" fill="#eef2ff" stroke="#4338ca" stroke-width="1.3"/>
+  <text x="360" y="224" text-anchor="middle" font-size="10.4" font-weight="700" fill="#312e81">Le calcul de la hauteur, la ou tout se joue</text>
+  <text x="360" y="244" text-anchor="middle" font-size="9" fill="#292524">Une paroi de souka exige dix tefahim. Si la bete n en fait que sept et un peu, elle ne suffit pas seule.</text>
+  <text x="360" y="262" text-anchor="middle" font-size="9" fill="#292524">On la place alors a moins de trois tefahim du s khakh : lavoud comble l ecart et la paroi vaut dix.</text>
+  <text x="360" y="282" text-anchor="middle" font-size="9" font-weight="700" fill="#312e81">Mais lavoud suppose que la bete reste a sa hauteur. Morte, meme retenue par les cordes, elle s affaisse --</text>
+  <text x="360" y="298" text-anchor="middle" font-size="9" font-weight="700" fill="#312e81">l ecart depasse trois tefahim et le rattachement ne joue plus. La crainte d Abaye retrouve un terrain.</text>
+</svg></div><div class="svg-cap">Les trois defauts successifs de la bete-paroi et le calcul de hauteur ou se rejoue la crainte de la mort.</div></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Sukkah_22b.html">&lsaquo; Sukkah 22b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Sukkah_23b.html">Sukkah 23b &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

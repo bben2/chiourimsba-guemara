@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beitzah 10a — La recherche de la vraie contradiction qui force le mouhlefet ha-chita, puis la michna du colombier et la bereira</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Beitzah 10a — La recherche de la vraie contradiction qui force le mouhlefet ha-chita, puis la michna du colombier et la bereira</h1>
+    <div class="ref">Beitzah 10a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Beitzah_9b.html">&lsaquo; Beitzah 9b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Beitzah_10b.html">Beitzah 10b &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> Le folio poursuit une enquete commencee a la page precedente : quelle michna oblige vraiment Rabbi Yohanan a dire que les avis de l&#x27;ecole de Chammai et de l&#x27;ecole de Hillel sont intervertis ? Le point de depart est la michna de l&#x27;abattage a yom tov, ou l&#x27;ecole de Chammai permet de creuser avec une beche pour recouvrir le sang tandis que l&#x27;ecole de Hillel l&#x27;interdit — l&#x27;inverse de leur repartition habituelle.</p><p>La guemara essaie successivement quatre michnayot du meme chapitre : les pigeonneaux du colombier, le pilon, la peau posee devant ceux qui la pietinent, les volets de boutique. Les trois premieres sont ecartees par deux reponses toujours disponibles : l&#x27;ecole de Chammai ne permettait la qu&#x27;avec une beche deja plantee, et l&#x27;ecole de Hillel ne permet ici qu&#x27;en raison d&#x27;un motif particulier.</p><p>Seule la michna des volets resiste du cote de l&#x27;ecole de Hillel. Vient ensuite la michna du colombier : Rav Hanan bar Ami situe le differend sur la premiere couvee, et la guemara demande pourquoi une designation precise est requise.</p><p>La discussion s&#x27;ouvre alors sur la bereira, a travers la michna d&#x27;Ohalot sur le mort et les ouvertures de la maison, et se conclut par la raison de Rava : la crainte de deplacer et de reposer des pigeonneaux mouktze.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 372" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="372" fill="#fbfaf6"/>
+<text x="370" y="24" text-anchor="middle" font-size="16" font-weight="bold" fill="#2b2b2b">Quelle michna force vraiment Rabbi Yohanan a dire que les avis sont intervertis ?</text>
+<rect x="20" y="34" width="700" height="40" rx="6" fill="#ecebe4" stroke="#b6b2a4"/>
+<text x="370" y="51" text-anchor="middle" font-size="12.5" fill="#3a3a3a">Le point fixe : celui qui abat une bete sauvage ou un oiseau a yom tov. Ecole de Chammai : il creuse avec la beche et recouvre le sang (allegement).</text>
+<text x="370" y="67" text-anchor="middle" font-size="12.5" fill="#3a3a3a">Ecole de Hillel : il n'abat pas, sauf s'il avait de la terre preparee depuis la veille (rigueur). Repartition inverse de l'habitude.</text>
+<rect x="20" y="82" width="152" height="26" rx="4" fill="#dcd7c8" stroke="#b6b2a4"/>
+<rect x="176" y="82" width="162" height="26" rx="4" fill="#f2e2dd" stroke="#a75d4b"/>
+<rect x="342" y="82" width="162" height="26" rx="4" fill="#e2efe0" stroke="#5d8f5b"/>
+<rect x="508" y="82" width="212" height="26" rx="4" fill="#e7e9f2" stroke="#7a86a8"/>
+<text x="96" y="100" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">Michna essayee</text>
+<text x="257" y="100" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#7c3b2c">Ecole de Chammai</text>
+<text x="423" y="100" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2e5c2c">Ecole de Hillel</text>
+<text x="614" y="100" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2f3a55">Ce que repond la guemara</text>
+<rect x="20" y="112" width="152" height="52" rx="4" fill="#fff" stroke="#c9c5b6"/>
+<rect x="176" y="112" width="162" height="52" rx="4" fill="#fff" stroke="#c9c5b6"/>
+<rect x="342" y="112" width="162" height="52" rx="4" fill="#fff" stroke="#c9c5b6"/>
+<rect x="508" y="112" width="212" height="52" rx="4" fill="#fff" stroke="#c9c5b6"/>
+<text x="96" y="134" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">1. Les pigeonneaux</text>
+<text x="96" y="151" text-anchor="middle" font-size="11.5" fill="#6a6a6a">du colombier</text>
+<text x="257" y="134" text-anchor="middle" font-size="11.5" fill="#7c3b2c">il faut les avoir remues</text>
+<text x="257" y="151" text-anchor="middle" font-size="11.5" fill="#7c3b2c">la veille</text>
+<text x="423" y="134" text-anchor="middle" font-size="11.5" fill="#2e5c2c">une declaration de la</text>
+<text x="423" y="151" text-anchor="middle" font-size="11.5" fill="#2e5c2c">veille suffit</text>
+<text x="614" y="134" text-anchor="middle" font-size="11.5" fill="#2f3a55">Ecarte : ici l'interdit n'est que le</text>
+<text x="614" y="151" text-anchor="middle" font-size="11.5" fill="#2f3a55">mouktze, de rang rabbinique</text>
+<rect x="20" y="168" width="152" height="52" rx="4" fill="#fff" stroke="#c9c5b6"/>
+<rect x="176" y="168" width="162" height="52" rx="4" fill="#fff" stroke="#c9c5b6"/>
+<rect x="342" y="168" width="162" height="52" rx="4" fill="#fff" stroke="#c9c5b6"/>
+<rect x="508" y="168" width="212" height="52" rx="4" fill="#fff" stroke="#c9c5b6"/>
+<text x="96" y="190" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">2. Le pilon (eli)</text>
+<text x="96" y="207" text-anchor="middle" font-size="11.5" fill="#6a6a6a">pour decouper la viande</text>
+<text x="257" y="197" text-anchor="middle" font-size="11.5" fill="#7c3b2c">on ne le prend pas</text>
+<text x="423" y="197" text-anchor="middle" font-size="11.5" fill="#2e5c2c">permis</text>
+<text x="614" y="190" text-anchor="middle" font-size="11.5" fill="#2f3a55">Ecarte : le pilon porte le statut</text>
+<text x="614" y="207" text-anchor="middle" font-size="11.5" fill="#2f3a55">d'ustensile (torat keli)</text>
+<rect x="20" y="224" width="152" height="52" rx="4" fill="#fff" stroke="#c9c5b6"/>
+<rect x="176" y="224" width="162" height="52" rx="4" fill="#fff" stroke="#c9c5b6"/>
+<rect x="342" y="224" width="162" height="52" rx="4" fill="#fff" stroke="#c9c5b6"/>
+<rect x="508" y="224" width="212" height="52" rx="4" fill="#fff" stroke="#c9c5b6"/>
+<text x="96" y="246" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">3. La peau</text>
+<text x="96" y="263" text-anchor="middle" font-size="11.5" fill="#6a6a6a">devant ceux qui pietinent</text>
+<text x="257" y="253" text-anchor="middle" font-size="11.5" fill="#7c3b2c">on ne l'etend pas</text>
+<text x="423" y="253" text-anchor="middle" font-size="11.5" fill="#2e5c2c">permis</text>
+<text x="614" y="246" text-anchor="middle" font-size="11.5" fill="#2f3a55">Ecarte : la peau sert aussi a</text>
+<text x="614" y="263" text-anchor="middle" font-size="11.5" fill="#2f3a55">s'y appuyer pour s'asseoir</text>
+<rect x="20" y="280" width="152" height="52" rx="4" fill="#fdf4e8" stroke="#c98b3a" stroke-width="1.5"/>
+<rect x="176" y="280" width="162" height="52" rx="4" fill="#fdf4e8" stroke="#c98b3a" stroke-width="1.5"/>
+<rect x="342" y="280" width="162" height="52" rx="4" fill="#fdf4e8" stroke="#c98b3a" stroke-width="1.5"/>
+<rect x="508" y="280" width="212" height="52" rx="4" fill="#fdf4e8" stroke="#c98b3a" stroke-width="1.5"/>
+<text x="96" y="302" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">4. Les volets</text>
+<text x="96" y="319" text-anchor="middle" font-size="11.5" fill="#6a6a6a">des boutiques (terissin)</text>
+<text x="257" y="311" text-anchor="middle" font-size="11.5" fill="#7c3b2c">on ne les retire pas</text>
+<text x="423" y="302" text-anchor="middle" font-size="11.5" fill="#2e5c2c">permis, et meme de les</text>
+<text x="423" y="319" text-anchor="middle" font-size="11.5" fill="#2e5c2c">remettre en place</text>
+<text x="614" y="295" text-anchor="middle" font-size="11.5" fill="#8a5a12">Chammai contre Chammai se resout ;</text>
+<text x="614" y="311" text-anchor="middle" font-size="11.5" fill="#8a5a12">Hillel contre Hillel demeure</text>
+<text x="614" y="327" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#8a5a12">-&gt; c'est ici le mouhlefet ha-chita</text>
+<rect x="20" y="340" width="700" height="26" rx="5" fill="#eef0f6" stroke="#7a86a8"/>
+<text x="370" y="357" text-anchor="middle" font-size="12" fill="#2f3a55">Derniere issue proposee, qui evite meme l'interversion : l'ecole de Hillel n'allege ici que parce qu'il n'y a ni construction ni demolition dans les ustensiles.</text>
+</svg></div>
+          <figcaption>Les quatre michnayot essayees l&#x27;une apres l&#x27;autre, et la raison pour laquelle seules les volets produisent une contradiction qui tienne.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 330" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="330" fill="#fbfaf6"/>
+<text x="370" y="24" text-anchor="middle" font-size="16" font-weight="bold" fill="#2b2b2b">La michna du colombier : que faut-il faire la veille pour prendre des pigeonneaux a yom tov ?</text>
+<rect x="24" y="40" width="330" height="128" rx="8" fill="#f7ebe7" stroke="#a75d4b" stroke-width="1.5"/>
+<text x="189" y="64" text-anchor="middle" font-size="15" font-weight="bold" fill="#7c3b2c">Ecole de Chammai</text>
+<text x="189" y="88" text-anchor="middle" font-size="13" fill="#4a2820">Il faut les avoir remues et manipules</text>
+<text x="189" y="107" text-anchor="middle" font-size="13" fill="#4a2820">la veille, tant qu'il faisait jour.</text>
+<text x="189" y="132" text-anchor="middle" font-size="12" fill="#7c3b2c">Motif : on decrete de crainte qu'il ne se ravise</text>
+<text x="189" y="150" text-anchor="middle" font-size="12" fill="#7c3b2c">demain et ne les epargne par pitie.</text>
+<rect x="386" y="40" width="330" height="128" rx="8" fill="#eaf3e8" stroke="#5d8f5b" stroke-width="1.5"/>
+<text x="551" y="64" text-anchor="middle" font-size="15" font-weight="bold" fill="#2e5c2c">Ecole de Hillel</text>
+<text x="551" y="88" text-anchor="middle" font-size="13" fill="#24422a">Il se tient debout la veille et declare :</text>
+<text x="551" y="107" text-anchor="middle" font-size="13" fill="#24422a">celui-ci et celui-la, je les prends.</text>
+<text x="551" y="132" text-anchor="middle" font-size="12" fill="#2e5c2c">Motif : on ne decrete pas ; la hazmana</text>
+<text x="551" y="150" text-anchor="middle" font-size="12" fill="#2e5c2c">(designation verbale) leve le mouktze.</text>
+<rect x="24" y="184" width="692" height="30" rx="5" fill="#ecebe4" stroke="#b6b2a4"/>
+<text x="370" y="204" text-anchor="middle" font-size="13" font-weight="bold" fill="#3a3a3a">Rav Hanan bar Ami : ou porte exactement ce differend ?</text>
+<rect x="24" y="224" width="330" height="76" rx="6" fill="#fff" stroke="#c9c5b6"/>
+<text x="189" y="246" text-anchor="middle" font-size="13" font-weight="bold" fill="#3a3a3a">Premiere couvee (bricha richona)</text>
+<text x="189" y="266" text-anchor="middle" font-size="11.5" fill="#6a6a6a">On la laisse d'ordinaire au nid pour tenir</text>
+<text x="189" y="282" text-anchor="middle" font-size="11.5" fill="#6a6a6a">compagnie a la mere : on s'y attache.</text>
+<text x="189" y="296" text-anchor="middle" font-size="12" font-weight="bold" fill="#a03b28">-&gt; la mahloket porte ici</text>
+<rect x="386" y="224" width="330" height="76" rx="6" fill="#fff" stroke="#c9c5b6"/>
+<text x="551" y="246" text-anchor="middle" font-size="13" font-weight="bold" fill="#3a3a3a">Couvee suivante (bricha chenia)</text>
+<text x="551" y="266" text-anchor="middle" font-size="11.5" fill="#6a6a6a">Destinee d'emblee a la consommation :</text>
+<text x="551" y="282" text-anchor="middle" font-size="11.5" fill="#6a6a6a">aucune crainte qu'il l'epargne.</text>
+<text x="551" y="296" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e5c2c">-&gt; tous s'accordent : declarer suffit</text>
+<rect x="24" y="308" width="692" height="18" rx="4" fill="#eef0f6" stroke="#7a86a8"/>
+<text x="370" y="321" text-anchor="middle" font-size="11.5" fill="#2f3a55">Rachi : les pigeons pondent une couvee par mois, un male et une femelle ; ils s'interrompent vers Tevet et reprennent en Nissan.</text>
+</svg></div>
+          <figcaption>Le differend du colombier, et la distinction de Rav Hanan bar Ami entre la premiere couvee et les suivantes.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 384" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="384" fill="#fbfaf6"/>
+<text x="370" y="24" text-anchor="middle" font-size="16" font-weight="bold" fill="#2b2b2b">La bereira mise a l'epreuve : le mort dans une maison a plusieurs ouvertures</text>
+<rect x="24" y="40" width="288" height="216" rx="8" fill="#f3f1ea" stroke="#b6b2a4"/>
+<text x="168" y="60" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">La maison et ses quatre ouvertures</text>
+<rect x="74" y="74" width="188" height="148" fill="#e6ded1" stroke="#8a7a62" stroke-width="2"/>
+<rect x="104" y="120" width="128" height="56" rx="6" fill="#d6cdbd" stroke="#8a7a62"/>
+<text x="168" y="154" text-anchor="middle" font-size="12.5" fill="#4a4030">met (le mort)</text>
+<rect x="60" y="102" width="14" height="38" fill="#4c4438"/>
+<rect x="60" y="160" width="14" height="38" fill="#4c4438"/>
+<rect x="262" y="102" width="14" height="38" fill="#4c4438"/>
+<rect x="262" y="160" width="14" height="38" fill="#4c4438"/>
+<text x="46" y="98" font-size="11" fill="#5a5245">petah</text>
+<text x="286" y="98" font-size="11" fill="#5a5245">petah</text>
+<text x="168" y="240" text-anchor="middle" font-size="11.5" fill="#6a6a6a">Les ustensiles poses dans l'embrasure,</text>
+<text x="168" y="253" text-anchor="middle" font-size="11.5" fill="#6a6a6a">sous le linteau, sont en cause.</text>
+<rect x="328" y="40" width="388" height="62" rx="6" fill="#f7ebe7" stroke="#a75d4b"/>
+<text x="344" y="60" font-size="12.5" font-weight="bold" fill="#7c3b2c">Cas 1 : toutes les ouvertures pareilles</text>
+<text x="344" y="79" font-size="12" fill="#4a2820">On ignore par laquelle il sortira : les Sages ont decrete</text>
+<text x="344" y="95" font-size="12" fill="#4a2820">l'impurete sur toutes.</text>
+<rect x="328" y="110" width="388" height="62" rx="6" fill="#eaf3e8" stroke="#5d8f5b"/>
+<text x="344" y="130" font-size="12.5" font-weight="bold" fill="#2e5c2c">Cas 2 : une seule a ete ouverte apres la mort</text>
+<text x="344" y="149" font-size="12" fill="#24422a">Elle seule est impure, toutes les autres sont pures :</text>
+<text x="344" y="165" font-size="12" fill="#24422a">c'est par la qu'il sortira, de facon certaine.</text>
+<rect x="328" y="180" width="388" height="76" rx="6" fill="#f4eef8" stroke="#8a6ba5"/>
+<text x="344" y="200" font-size="12.5" font-weight="bold" fill="#5a3d78">Cas 3 : il a pense a en utiliser une</text>
+<text x="344" y="219" font-size="12" fill="#3f2a58">Ou une fenetre de quatre sur quatre, mesure jugee</text>
+<text x="344" y="235" font-size="12" fill="#3f2a58">convenable pour sortir un mort : cette intention</text>
+<text x="344" y="251" font-size="12" fill="#3f2a58">preserve toutes les autres ouvertures.</text>
+<rect x="24" y="266" width="692" height="30" rx="5" fill="#ecebe4" stroke="#b6b2a4"/>
+<text x="370" y="286" text-anchor="middle" font-size="13" font-weight="bold" fill="#3a3a3a">Le troisieme cas : a partir de quand l'intention agit-elle ?</text>
+<rect x="24" y="304" width="212" height="68" rx="6" fill="#fff" stroke="#c9c5b6"/>
+<text x="130" y="324" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#7c3b2c">Ecole de Chammai</text>
+<text x="130" y="343" text-anchor="middle" font-size="11.5" fill="#4a2820">Seulement s'il y a pense</text>
+<text x="130" y="359" text-anchor="middle" font-size="11.5" fill="#4a2820">avant que le mort ne meure.</text>
+<rect x="248" y="304" width="212" height="68" rx="6" fill="#fff" stroke="#c9c5b6"/>
+<text x="354" y="324" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2e5c2c">Ecole de Hillel</text>
+<text x="354" y="343" text-anchor="middle" font-size="11.5" fill="#24422a">Meme apres la mort.</text>
+<text x="354" y="359" text-anchor="middle" font-size="11.5" fill="#24422a">Donc elle admet la bereira ?</text>
+<rect x="472" y="304" width="244" height="68" rx="6" fill="#eef0f6" stroke="#7a86a8"/>
+<text x="594" y="322" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f3a55">Rabba et Rabbi Ochaya : a partir de</text>
+<text x="594" y="337" text-anchor="middle" font-size="12" fill="#2f3a55">ce moment seulement (pas de bereira)</text>
+<text x="594" y="356" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f3a55">Rava : retroactivement (bereira admise)</text>
+</svg></div>
+          <figcaption>La michna d&#x27;Ohalot sur le mort et les ouvertures, et les deux lectures du differend : avec ou sans bereira.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲבָל הֵיכָא דְּלֵיכָּא דָּקָר נָעוּץ — לֹא. אִי נָמֵי: עַד כָּאן לָא קָאָמְרִי בֵּית הִלֵּל הָכָא, אֶלָּא כֵּיוָן דְּמֻוקְצֶה הוּא, בְּעוֹמֵד וְאוֹמֵר זֶה וְזֶה אֲנִי נוֹטֵל סַגִּי. אֲבָל הָתָם — לֹא.</div>
+            <div class="fr"><p>Mais la ou il n&#x27;y a pas de beche plantee — non. Ou encore : l&#x27;ecole de Hillel n&#x27;a dit son avis ici que parce qu&#x27;il s&#x27;agit d&#x27;un mouktze (objet ecarte, interdit de rang rabbinique), et qu&#x27;alors il suffit qu&#x27;il se tienne debout et declare : celui-ci et celui-la, je les prends.</p><p>Mais la-bas — non.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲבָל הֵיכָא דְּלֵיכָּא דָּקָר נָעוּץ לָא</b> וְהָא נָמֵי לְהָא דָּמְיָא דִּלְמָא מִמְּלִיךְ וְאִשְׁתְּכַח דְּטִלְטְלָהּ בִּכְדִי דְּכֵיוָן דְּמִמְּלִיךְ בָּטְלָה לָהּ הַזְמָנָה לְמַפְרֵעַ:</div>
+          <div class="glose-fr">Ce cas-ci ressemble a celui-la : il pourrait se raviser, et il se trouverait avoir deplace pour rien ; car des lors qu&#x27;il se ravise, la hazmana (designation preparatoire) se trouve annulee retroactivement.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא כֵּיוָן דְּמֻוקְצֶה הוּא</b> כֵּיוָן דְּאֵינוֹ אָסוּר אֶלָּא מִשּׁוּם מֻוקְצֶה בְּהַזְמָנָה בְּעָלְמָא סַגִּי:</div>
+          <div class="glose-fr">Puisqu&#x27;il n&#x27;est interdit qu&#x27;au titre de mouktze, une simple hazmana (designation verbale) suffit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Ce segment acheve le rejet d'une premiere tentative, commencee a la page precedente : on avait voulu tirer la contradiction de la michna du colombier, ou l'ecole de Chammai est rigoureuse et l'ecole de Hillel allegeante. La guemara oppose deux parades qui reviendront ensuite a l'identique.</p><p>La premiere porte sur l'ecole de Chammai : si elle allege dans le cas de l'abattage, c'est uniquement parce qu'une <b>beche plantee</b> (deker naoutz) se trouve deja en terre, si bien que recouvrir le sang ne demande aucun travail interdit. La seconde porte sur l'ecole de Hillel : si elle allege au colombier, c'est parce que l'obstacle y est seulement le <b>mouktze</b>, interdit de rang rabbinique qu'une declaration de la veille suffit a lever. Aucune des deux ecoles ne se trouve donc contredite.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא, אִי קַשְׁיָא — הָא קַשְׁיָא: בֵּית שַׁמַּאי אוֹמְרִים: אֵין נוֹטְלִין אֶת הָעֱלִי, לְקַצֵּב עָלָיו בָּשָׂר, וּבֵית הִלֵּל מַתִּירִין. אַלְמָא גַּבֵּי שִׂמְחַת יוֹם טוֹב בֵּית שַׁמַּאי לְחֻומְרָא וּבֵית הִלֵּל לְקֻולָּא, וּרְמִינְהִי הַשּׁוֹחֵט חַיָּה וְעוֹף, בֵּית שַׁמַּאי וְכוּ׳! אָמַר רַבִּי יוֹחָנָן: מֻוחְלֶפֶת הַשִּׁיטָה.</div>
+            <div class="fr"><p>Plutot, s&#x27;il y a une difficulte, la voici : l&#x27;ecole de Chammai dit qu&#x27;on ne prend pas le pilon (eli) pour y decouper de la viande, et l&#x27;ecole de Hillel le permet. Il apparait donc qu&#x27;en matiere de simha de yom tov (rejouissance de la fete) l&#x27;ecole de Chammai va vers la rigueur et l&#x27;ecole de Hillel vers l&#x27;allegement — et l&#x27;on oppose : celui qui abat une bete sauvage ou un oiseau, l&#x27;ecole de Chammai dit, etc. !</p><p>C&#x27;est la-dessus que Rabbi Yohanan a dit : les avis sont intervertis (mouhlefet ha-chita).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶת הָעֱלִי</b> דַּף עָב וְכָבֵד וְכוֹתְשִׁין בּוֹ חִטִּים לִטְרָגִיס וְטִיסְנֵי וְהָוֵי מְלַאכְתּוֹ לְאִיסּוּר וְקָא סָבְרִי ב&quot;ש אָסוּר לְטַלְטְלוֹ וְאַפֵּי&#x27; לְצֹורֶךְ גּוּפוֹ שֶׁצָּרִיךְ לְגוּף הַכְּלִי לִמְלָאכָה הַמֻּותֶּרֶת הַיּוֹם:</div>
+          <div class="glose-fr">L&#x27;eli est un pilon epais et lourd, avec lequel on broie le ble pour en faire du tragis et de la tisane ; son usage propre sert donc a un travail interdit (melakhto le-issour). L&#x27;ecole de Chammai tient qu&#x27;il est interdit de le deplacer, meme letzorekh goufo, c&#x27;est-a-dire lorsqu&#x27;on a besoin de l&#x27;objet lui-meme pour un travail permis ce jour-la.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Seconde tentative. La guemara cherche une michna ou la repartition habituelle des deux ecoles soit manifeste, afin que la michna de l'abattage forme avec elle une contradiction reelle. Elle prend celle du <b>pilon</b> : un ustensile lourd dont l'usage normal est de piler le grain, travail interdit a yom tov. Vouloir s'en servir comme billot pour decouper de la viande releve de la rejouissance du jour.</p><p>Rachi precise l'enjeu technique : un ustensile dont l'usage propre sert a un travail interdit peut normalement etre deplace <b>letzorekh goufo</b>, lorsqu'on a besoin de l'objet lui-meme pour un usage permis. L'ecole de Chammai le refuse ici, l'ecole de Hillel l'accorde.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מִמַּאי? דִּלְמָא לָא הִיא: עַד כָּאן לָא קָאָמְרִי בֵּית שַׁמַּאי הָתָם אֶלָּא הֵיכָא דְּאִיכָּא דָּקָר נָעוּץ, אֲבָל הֵיכָא דְּלֵיכָּא דָּקָר נָעוּץ — לֹא, אִי נָמֵי: עַד כָּאן לָא קָאָמְרִי בֵּית הִלֵּל הָכָא אֶלָּא, דְּאִיכָּא תּוֹרַת כְּלִי עָלָיו, אֲבָל הָתָם לֹא.</div>
+            <div class="fr"><p>D&#x27;ou le sais-tu ? Peut-etre n&#x27;en est-il pas ainsi : l&#x27;ecole de Chammai n&#x27;a dit son avis la-bas que la ou il y a une beche deja plantee, mais la ou il n&#x27;y a pas de beche plantee — non.</p><p>Ou encore : l&#x27;ecole de Hillel n&#x27;a dit son avis ici que parce que l&#x27;objet porte le statut d&#x27;ustensile (torat keli), mais la-bas — non.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תּוֹרַת כְּלִי עָלָיו</b> וְאַף עַל פִּי שֶׁמְּלַאכְתּוֹ לְאִיסּוּר מֻותָּר לְטַלְטְלוֹ לְצֹורֶךְ גּוּפוֹ:</div>
+          <div class="glose-fr">Il porte le statut d&#x27;ustensile (torat keli) : bien que son usage propre serve a un travail interdit, il est permis de le deplacer letzorekh goufo, pour l&#x27;usage meme de l&#x27;objet.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La meme double parade revient, avec seulement la seconde branche adaptee au cas. L'ecole de Hillel n'allege pas ici au nom de la rejouissance du jour, mais parce que le pilon est un <b>ustensile</b> : cette qualite suffit a autoriser son deplacement pour un usage permis. Rien n'oblige donc a lui preter le meme allegement dans le cas de l'abattage, ou il faudrait creuser la terre.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 214" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="700" height="214" fill="#fbfaf6"/>
+<text x="350" y="22" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#2b2b2b">La double parade qui ecarte chaque contradiction</text>
+<rect x="240" y="34" width="220" height="34" rx="5" fill="#ecebe4" stroke="#b6b2a4"/>
+<text x="350" y="56" text-anchor="middle" font-size="12.5" fill="#3a3a3a">D'ou le sais-tu ? Peut-etre n'en est-il rien</text>
+<line x1="300" y1="68" x2="180" y2="92" stroke="#a75d4b" stroke-width="2"/>
+<line x1="400" y1="68" x2="520" y2="92" stroke="#5d8f5b" stroke-width="2"/>
+<rect x="24" y="92" width="312" height="100" rx="7" fill="#f7ebe7" stroke="#a75d4b" stroke-width="1.5"/>
+<text x="180" y="113" text-anchor="middle" font-size="13" font-weight="bold" fill="#7c3b2c">Parade 1 : du cote de l'ecole de Chammai</text>
+<text x="40" y="136" font-size="12" fill="#4a2820">Elle n'allege dans le cas de l'abattage que</text>
+<text x="40" y="154" font-size="12" fill="#4a2820">parce qu'une beche est deja plantee en terre.</text>
+<text x="40" y="176" font-size="12" fill="#4a2820">Sans beche plantee, elle serait rigoureuse la aussi.</text>
+<rect x="364" y="92" width="312" height="100" rx="7" fill="#eaf3e8" stroke="#5d8f5b" stroke-width="1.5"/>
+<text x="520" y="113" text-anchor="middle" font-size="13" font-weight="bold" fill="#2e5c2c">Parade 2 : du cote de l'ecole de Hillel</text>
+<text x="380" y="136" font-size="12" fill="#24422a">Elle n'allege dans la michna citee que pour un</text>
+<text x="380" y="154" font-size="12" fill="#24422a">motif propre a ce cas : statut d'ustensile, usage</text>
+<text x="380" y="172" font-size="12" fill="#24422a">de siege, absence de construction dans les objets.</text>
+<text x="520" y="190" text-anchor="middle" font-size="11.5" fill="#2e5c2c">Rien a voir avec la simha de yom tov.</text>
+</svg></div><div class="svg-cap">Les deux reponses toujours disponibles pour dissoudre la contradiction, l&#x27;une du cote de chaque ecole.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא, אִי קַשְׁיָא — הָא קַשְׁיָא: בֵּית שַׁמַּאי אוֹמְרִים: אֵין נוֹתְנִין אֶת הָעוֹר לִפְנֵי הַדּוֹרְסָן, וְלֹא יַגְבִּיהֶנּוּ אֶלָּא אִם כֵּן יֵשׁ עָלָיו כְּזַיִת בָּשָׂר. וּבֵית הִלֵּל מַתִּירִין.</div>
+            <div class="fr"><p>Plutot, s&#x27;il y a une difficulte, la voici : l&#x27;ecole de Chammai dit qu&#x27;on ne pose pas la peau devant ceux qui la pietinent, et qu&#x27;on ne la souleve pas a moins qu&#x27;il n&#x27;y ait dessus un kazayit (volume d&#x27;une olive) de viande. Et l&#x27;ecole de Hillel le permet.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵין נוֹתְנִין אֶת הָעוֹר</b> שֶׁהֻופְשַׁט בְּיוֹם טוֹב:</div>
+          <div class="glose-fr">La peau dont on a depouille la bete a yom tov.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לִפְנֵי הַדּוֹרְסָן</b> לֹא יִשְׁטָחֶנּוּ בִּמְקוֹם דְּרִיסַת הָרַגְלַיִם שֶׁזֶּהוּ צֹורֶךְ עִבּוּד שֶׁמִּתְעַבֵּד ע&quot;י הַדְּרִיסָה:</div>
+          <div class="glose-fr">Qu&#x27;il ne l&#x27;etende pas a l&#x27;endroit ou les pieds passent, car c&#x27;est la un besoin du tannage (ibboud) : la peau se tanne par le pietinement.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּבֵית הִלֵּל מַתִּירִין</b> קס&quot;ד מִשּׁוּם שִׂמְחַת יוֹם טוֹב דְּאִי לָא שָׁרֵית לֵיהּ לָא שָׁחֵיט:</div>
+          <div class="glose-fr">On pense d&#x27;abord que c&#x27;est au titre de la simha de yom tov : si on ne le lui permettait pas, il n&#x27;abattrait pas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Troisieme tentative, avec la michna de la <b>peau</b>. La peau fraichement retiree de la bete abattue se gate si on la laisse ; l'etendre a un endroit de passage la fait tanner sous les pieds. L'ecole de Chammai y voit un tannage (ibboud) interdit, l'ecole de Hillel permet.</p><p>Rachi donne le raisonnement suppose de l'ecole de Hillel, et c'est lui qui rend la michna utile a la guemara : si on ne permettait pas de sauver la peau, l'homme <b>renoncerait a abattre</b>, et la rejouissance du jour en souffrirait. L'allegement se rattache donc bien a la simha de yom tov.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אַלְמָא, גַּבֵּי שִׂמְחַת יוֹם טוֹב בֵּית שַׁמַּאי לְחֻומְרָא וּבֵית הִלֵּל לְקֻולָּא, וּרְמִינְהִי: הַשּׁוֹחֵט חַיָּה וָעוֹף בְּיוֹם טוֹב וְכוּ׳, אָמַר רַבִּי יוֹחָנָן: מֻוחְלֶפֶת הַשִּׁיטָה.</div>
+            <div class="fr"><p>Il apparait donc qu&#x27;en matiere de simha de yom tov l&#x27;ecole de Chammai va vers la rigueur et l&#x27;ecole de Hillel vers l&#x27;allegement — et l&#x27;on oppose : celui qui abat une bete sauvage ou un oiseau a yom tov, etc. C&#x27;est la-dessus que Rabbi Yohanan a dit : les avis sont intervertis.</p></div>
+            <div class="tools"></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מִמַּאי? דִּלְמָא לָא הִיא: עַד כָּאן לָא קָאָמְרִי בֵּית שַׁמַּאי הָתָם אֶלָּא הֵיכָא דְּאִיכָּא דָּקָר נָעוּץ, אֲבָל הֵיכָא דְּלֵיכָּא דָּקָר נָעוּץ — לֹא. אִי נָמֵי: עַד כָּאן לָא קָאָמְרִי בֵּית הִלֵּל הָכָא, אֶלָּא דַּחֲזֵי לְמִזְגֵּא עִלָּוֵיהּ, אֲבָל הָתָם לֹא.</div>
+            <div class="fr"><p>D&#x27;ou le sais-tu ? Peut-etre n&#x27;en est-il pas ainsi : l&#x27;ecole de Chammai n&#x27;a dit son avis la-bas que la ou il y a une beche plantee, mais la ou il n&#x27;y a pas de beche plantee — non.</p><p>Ou encore : l&#x27;ecole de Hillel n&#x27;a dit son avis ici que parce que la peau se prete a ce qu&#x27;on s&#x27;y appuie pour s&#x27;asseoir, mais la-bas — non.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְמִזְגָּא עָלֶיהָ</b> כֵּן הָיְתָה יְשִׁיבָתָם שׁוֹטְחִין בְּגָדִים עַל גַּבֵּי הַקַּרְקַע וְנִסְמָכִין וְיוֹשְׁבִין עַל בִּרְכֵּיהֶן כְּפּוּפִין כִּדְאָמְרִינַן בִּפְסָחִים (דַּף קח.) הֲוָה זָגֵינַן אַבִּרְכֵּי דַּהֲדָדִי וְנִמְצֵאת שְׁטִיחָתוֹ צֹורֶךְ י&quot;ט:</div>
+          <div class="glose-fr">Telle etait leur maniere de s&#x27;asseoir : ils etendaient des etoffes sur le sol, s&#x27;y appuyaient et s&#x27;asseyaient les genoux replies, comme il est dit dans Pessahim (108a) : nous nous appuyions sur les genoux les uns des autres. Etendre la peau se trouve donc etre un besoin de yom tov.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La parade du cote de l'ecole de Hillel change une nouvelle fois de contenu, en restant de meme forme : la peau se prete a un usage immediat et permis, celui de <b>s'y appuyer pour s'asseoir</b>. Elle n'est donc pas un objet ecarte, et son deplacement se justifie par lui-meme.</p><p>Rachi decrit la posture de l'epoque, pour rendre l'argument concret : on etendait des etoffes a meme le sol et l'on s'y appuyait, genoux replies. Une peau etendue remplit la meme fonction, et cette utilite suffit a expliquer l'allegement sans faire appel a la rejouissance du jour.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא, אִי קַשְׁיָא — הָא קַשְׁיָא: בֵּית שַׁמַּאי אוֹמְרִים: אֵין מְסַלְּקִין אֶת הַתְּרִיסִין בְּיוֹם טוֹב, וּבֵית הִלֵּל מַתִּירִין אַף לְהַחְזִיר. אַלְמָא, גַּבֵּי שִׂמְחַת יוֹם טוֹב בֵּית שַׁמַּאי לְחֻומְרָא וּבֵית הִלֵּל לְקֻולָּא, וּרְמִינְהִי: הַשּׁוֹחֵט חַיָּה וָעוֹף בְּיוֹם טוֹב וְכוּ׳.</div>
+            <div class="fr"><p>Plutot, s&#x27;il y a une difficulte, la voici : l&#x27;ecole de Chammai dit qu&#x27;on ne retire pas les volets (terissin) a yom tov, et l&#x27;ecole de Hillel permet meme de les remettre en place. Il apparait donc qu&#x27;en matiere de simha de yom tov l&#x27;ecole de Chammai va vers la rigueur et l&#x27;ecole de Hillel vers l&#x27;allegement — et l&#x27;on oppose : celui qui abat une bete sauvage ou un oiseau a yom tov, etc.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תְּרִיסִין</b> דַּלְתוֹת הַחַלּוֹנוֹת שֶׁל חֲנוּיוֹת שֶׁסּוֹגְרִין בָּהֶן הַחַלּוֹנוֹת בַּלַּיְלָה וּמְסַלְּקִין אוֹתָם בַּיּוֹם וְנוֹתְנִין אוֹתָן לִפְנֵיהֶם וְשׁוֹטְחִין עֲלֵיהֶן תַּבְלִין לִמְכֹּור לָרַבִּים ובי&quot;ט מֻותָּר לִיקַּח מֵחֶנְוָנִי הַמַּכִּיר אוֹתוֹ וּבִלְבַד שֶׁלֹּא יַזְכִּיר סְכוּם מִקָּח:</div>
+          <div class="glose-fr">Les terissin sont les volets des devantures de boutique : on en ferme les ouvertures la nuit, on les retire le jour, on les pose devant soi et l&#x27;on y etale les epices a vendre au public. A yom tov il est permis d&#x27;acheter chez le boutiquier qui vous connait, pourvu qu&#x27;on ne mentionne pas de somme d&#x27;achat.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַף לְהַחֲזִיר</b> וְלִסְגֹּור בָּהֶן וַחֲזָרָה וַדַּאי שֶׁלֹּא לְצֹורֶךְ הִיא וַאֲפִילּוּ דְּאָמְרִינַן אֵין בִּנְיָן בְּכֵלִים טִרְחָא דְּלָאו צֹורֶךְ מִיהָא הֲוָה וְקָא שָׁרֵינַן לֵיהּ מִשּׁוּם תְּחִלָּתָן כְּדִלְקַמָּן אַלְמָא מִשּׁוּם שִׂמְחַת י&quot;ט מְקִילִּינַן וְקַשְׁיָא ב&quot;ה דְּכִסּוּי:</div>
+          <div class="glose-fr">Et de refermer les ouvertures avec eux. Or les remettre en place n&#x27;est certainement pas un besoin du jour ; meme si l&#x27;on tient qu&#x27;il n&#x27;y a pas de construction dans les ustensiles (ein binyan bekelim), cela reste une peine inutile, et on le permet pourtant a cause du premier geste, comme il est expose plus loin. Il apparait donc qu&#x27;au nom de la simha de yom tov on allege — d&#x27;ou la difficulte sur l&#x27;ecole de Hillel dans le cas du recouvrement du sang.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Quatrieme et derniere tentative : les <b>volets de boutique</b>. Les retirer ouvre la boutique, ce qui permet d'acheter de quoi se rejouir ; les remettre en place, en revanche, ne sert plus a rien pour le jour meme.</p><p>Rachi montre pourquoi cette michna est la plus forte des quatre. L'ecole de Hillel ne se contente pas de permettre l'ouverture : elle autorise aussi la fermeture, geste sans aucune utilite pour la fete. On ne peut donc plus expliquer son allegement par une commodite propre au cas ; il faut bien qu'il vienne de la <b>simha de yom tov</b>, et l'on ne permet la fermeture que pour ne pas dissuader d'ouvrir.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בִּשְׁלָמָא בֵּית שַׁמַּאי אַבֵּית שַׁמַּאי לָא קַשְׁיָא: הָתָם דְּאִיכָּא דָּקָר נָעוּץ, הָכָא לֵיכָּא דָּקָר נָעוּץ. אֶלָּא בֵּית הִלֵּל אַבֵּית הִלֵּל קַשְׁיָא!</div>
+            <div class="fr"><p>Passe encore pour l&#x27;ecole de Chammai face a l&#x27;ecole de Chammai, il n&#x27;y a la aucune difficulte : la-bas il y a une beche plantee, ici il n&#x27;y a pas de beche plantee. Mais l&#x27;ecole de Hillel face a l&#x27;ecole de Hillel fait difficulte !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָכָא לֵיכָּא דָּקָר נָעוּץ</b> כְּלוֹמַר לֵיכָּא טַעְמָא לְהֶתֵּירָא דְּקָא סָבְרִי יֵשׁ בִּנְיָן בְּכֵלִים:</div>
+          <div class="glose-fr">C&#x27;est-a-dire qu&#x27;il n&#x27;y a pas ici de raison de permettre, puisqu&#x27;ils tiennent qu&#x27;il y a construction dans les ustensiles (yesh binyan bekelim).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara separe ici les deux moities du probleme. Du cote de l'ecole de Chammai, la premiere parade tient encore : elle allege pour le recouvrement du sang parce qu'une beche est plantee, et se montre rigoureuse pour les volets faute d'une raison equivalente. Rachi precise ce que serait cette raison : l'ecole de Chammai tient qu'<b>il y a construction dans les ustensiles</b>, si bien que retirer un volet demeure interdit.</p><p>Du cote de l'ecole de Hillel, la seconde parade ne fonctionne plus, puisque la michna permet jusqu'au geste inutile de refermer. La contradiction subsiste, et c'est elle qui appelle une solution.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַבִּי יוֹחָנָן: מֻוחְלֶפֶת הַשִּׁיטָה. (אִי נָמֵי:) עַד כָּאן לָא קָאָמְרִי בֵּית הִלֵּל הָכָא, אֶלָּא מִשּׁוּם דְּאֵין בִּנְיָן בְּכֵלִים וְאֵין סְתִירָה בְּכֵלִים. אֲבָל הָתָם — לֹא.</div>
+            <div class="fr"><p>C&#x27;est la-dessus que Rabbi Yohanan a dit : les avis sont intervertis. (Ou encore :) l&#x27;ecole de Hillel n&#x27;a dit son avis ici que parce qu&#x27;il n&#x27;y a pas de construction dans les ustensiles ni de demolition dans les ustensiles.</p><p>Mais la-bas — non.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Voici le terme de l'enquete. C'est la michna des volets, et elle seule, qui oblige a l'interversion : <b>mouhlefet ha-chita</b>, il faut echanger les noms des deux ecoles dans l'une des deux michnayot.</p><p>La guemara ajoute pourtant une derniere issue, qui evite l'interversion. Si l'ecole de Hillel allege pour les volets, c'est parce qu'elle tient qu'il n'y a ni <b>binyan</b> (construction) ni <b>setira</b> (demolition) dans les ustensiles : aucun interdit de fond n'est en jeu, seulement une peine inutile, et cela peut se permettre. Dans le cas de l'abattage, ou il faudrait creuser la terre, un interdit reel demeure, et l'ecole de Hillel reste rigoureuse sans se contredire.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַתְנִי׳ בֵּית שַׁמַּאי אוֹמְרִים: לֹא יִטּוֹל אֶלָּא אִם כֵּן נִעְנַע מִבְּעוֹד יוֹם. וּבֵית הִלֵּל אוֹמְרִים: עוֹמֵד וְאוֹמֵר ״זֶה וָזֶה אֲנִי נוֹטֵל״.</div>
+            <div class="fr"><p>MICHNA. L&#x27;ecole de Chammai dit : il n&#x27;en prendra pas, a moins de les avoir remues tant qu&#x27;il faisait encore jour.</p><p>Et l&#x27;ecole de Hillel dit : il se tient debout et declare : celui-ci et celui-la, je les prends.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַתְנֵי&#x27; עוֹמֵד וְאוֹמֵר</b> מִבְּעוֹד יוֹם:</div>
+          <div class="glose-fr">Il se tient debout et declare : la veille, tant qu&#x27;il fait encore jour.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle michna. Elle porte sur les pigeonneaux d'un colombier que l'on veut prendre a yom tov. Faute d'avoir ete prepares, ils sont <b>mouktze</b> : ecartes de tout usage, et donc interdits au deplacement. La question est de savoir quel acte de la veille suffit a lever cet ecart.</p><p>L'ecole de Chammai exige un geste : il faut les avoir <b>remues</b> et manipules avant la nuit. L'ecole de Hillel se contente d'une parole precise, prononcee la veille : celui-ci et celui-la, je les prends.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">גְּמָ׳ אָמַר רַב חָנָן בַּר אַמֵּי: מַחֲלֹוקֶת בִּבְרֵיכָה רִאשׁוֹנָה, דְּבֵית שַׁמַּאי סָבְרִי: גָּזְרִינַן דִּלְמָא אָתֵי לְאִמְּלוֹכֵי.</div>
+            <div class="fr"><p>GUEMARA. Rav Hanan bar Ami a dit : le differend porte sur la premiere couvee (bricha richona), l&#x27;ecole de Chammai tenant qu&#x27;on decrete par crainte qu&#x27;il ne vienne a se raviser.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>גמ&#x27; בִּבְרֵיכָה רִאשׁוֹנָה</b> דֶּרֶךְ מְגַדְּלֵי יוֹנִים לְהַנִּיחַ בְּרִיכָה רִאשׁוֹנָה שֶׁל כָּל שָׁנָה לִהְיוֹת צֶוֶות לָאַמָּה:</div>
+          <div class="glose-fr">Les eleveurs de pigeons ont coutume de laisser la premiere couvee de chaque annee pour tenir compagnie a la mere.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>גָּזְרִינַן</b> כִּי שְׁקִיל לְהוּ לְמָחָר אָתֵי לְאִמְּלוֹכֵי וְחָיֵיס עֲלַייְהוּ וְהָוֵי לֵיהּ טִלְטוּל שֶׁלֹּא לְצֹורֶךְ וּמִשֶּׁנִּעְנַע וּמְשַׁמֵּשׁ בָּהֶן מִבְּעוֹד יוֹם לִשְׁחִיטָה וְלֹא חָס עֲלַיְיהוּ תּוּ לָא חָיְישִׁינַן דְּחָיֵיס:</div>
+          <div class="glose-fr">Lorsqu&#x27;il les prendra le lendemain, il pourrait se raviser et les epargner par pitie, et il se trouverait avoir deplace sans besoin. Mais des lors qu&#x27;il les a remues et manipules la veille en vue de l&#x27;abattage sans les avoir epargnes, on ne craint plus qu&#x27;il les epargne.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Hanan bar Ami resserre le differend. Il ne porte pas sur tous les pigeonneaux, mais sur la <b>premiere couvee</b> de l'annee, celle que l'eleveur laisse d'ordinaire au nid pour tenir compagnie a la mere. Comme on n'a pas l'habitude de la consommer, une hesitation reste possible.</p><p>Rachi nomme la crainte : au moment de les prendre, l'homme pourrait s'attendrir et les laisser, et il aurait alors deplace des pigeonneaux pour rien. Le geste de la veille lui sert d'epreuve : celui qui les a deja manipules en vue de l'abattage sans reculer ne reculera plus.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּבֵית הִלֵּל סָבְרִי: לָא גָּזְרִינַן. אֲבָל בִּבְרִיכָה שְׁנִיָּה — דִּבְרֵי הַכֹּל בְּעוֹמֵד וְאוֹמֵר ״זֶה וָזֶה אֲנִי נוֹטֵל״ סַגְיָא.</div>
+            <div class="fr"><p>Et l&#x27;ecole de Hillel tient qu&#x27;on ne decrete pas. Mais pour la seconde couvee, tous s&#x27;accordent qu&#x27;il suffit qu&#x27;il se tienne debout et declare : celui-ci et celui-la, je les prends.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּרִיכָה</b> קובי&quot;ד בְּלַעַ&quot;ז שֶׁהַיּוֹנִים יוֹלְדִים בְּרִיכָה בְּכָל חֹדֶשׁ וְחֹדֶשׁ וְהֵן שְׁנֵי גּוֹזָלוֹת זָכָר וּנְקֵבָה וּמַפְסִיקִין בִּתְקוּפַת טֵבֵת וְחוֹזְרִים וְיוֹלְדִים בְּנִיסָן:</div>
+          <div class="glose-fr">Bricha — covide en langue vulgaire : les pigeons produisent une couvee chaque mois, soit deux pigeonneaux, un male et une femelle ; ils s&#x27;interrompent a la saison de Tevet et recommencent a pondre en Nissan.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Pour les couvees suivantes, destinees d'emblee a la table, nul ne craint que l'homme s'attendrisse : la declaration de la veille suffit selon les deux ecoles. Le desaccord se reduit donc au cas particulier de la premiere couvee.</p><p>Rachi donne au passage le rythme de l'elevage, qui explique la notion meme de couvee : un couple de pigeonneaux par mois, avec une interruption au coeur de l'hiver et une reprise au printemps.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּבֵית הִלֵּל — לָמָּה לֵיהּ לְמֵימַר ״זֶה וָזֶה אֲנִי נוֹטֵל״? לֵימָא: ״מִכָּאן אֲנִי נוֹטֵל לְמָחָר״?</div>
+            <div class="fr"><p>Et selon l&#x27;ecole de Hillel, pourquoi lui faut-il dire : celui-ci et celui-la, je les prends ? Qu&#x27;il dise : c&#x27;est d&#x27;ici que je prendrai demain !</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle question, sur la formulation exigee par l'ecole de Hillel. Puisqu'une parole suffit, pourquoi doit-elle designer des pigeonneaux precis ? Une designation globale — c'est de ce colombier que je prendrai demain — devrait produire le meme effet, le choix effectif du lendemain venant clarifier apres coup ce qui avait ete designe.</p><p>Cette clarification retroactive porte un nom : la <b>bereira</b>. Toute la suite de la sougya consiste a savoir si l'ecole de Hillel l'admet.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְכִי תֵּימָא בֵּית הִלֵּל לֵית לְהוּ בְּרֵירָה, וְהִתְנָן: הַמֵּת בַּבַּיִת וְלוֹ פְּתָחִים הַרְבֵּה — כֻּולָּן טְמֵאִים.</div>
+            <div class="fr"><p>Et si tu disais que l&#x27;ecole de Hillel n&#x27;admet pas la bereira (clarification retroactive) — n&#x27;avons-nous pas appris : un mort se trouve dans une maison qui a plusieurs ouvertures, toutes sont impures.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֵית לְהוּ בְּרֵירָה</b> וְכִי שְׁקִיל לְמָחָר דִּלְמָא לָא הָנֵי אַזְמִין וְהוּא לֹא הִזְמִין אֶת כֻּולָּם אֶלָּא כְּדֵי צָרְכּוֹ:</div>
+          <div class="glose-fr">Ils n&#x27;admettent pas la bereira : lorsqu&#x27;il en prend le lendemain, peut-etre n&#x27;est-ce pas ceux-la qu&#x27;il avait designes, puisqu&#x27;il ne les a pas tous designes mais seulement selon son besoin.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְלוֹ פְּתָחִים הַרְבֵּה</b> כֻּולָּם פְּתוּחִים אוֹ כֻּולָּם סְגוּרִים:</div>
+          <div class="glose-fr">Toutes ouvertes, ou toutes fermees.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כֻּולָּם טְמֵאִים</b> כָּל כֵּלִים הַמֻּונָּחִים בַּחֲלַל הַפְּתָחִים תַּחַת עֳובִי הַתִּקְרָה שֶׁל פֶּתַח טְמֵאִים ואע&quot;פ שֶׁאֵינוֹ תַּחַת הַגַּג הַמַּאֲהִיל עַל הַמֵּת שֶׁגָּזְרוּ חֲכָמִים טֻומְאָה עַל מָקוֹם שֶׁהוּא דֶּרֶךְ יְצִיאַת הַטֻּומְאָה שֶׁסּוֹפוֹ לָצֵאת דֶּרֶךְ שָׁם וְכָאן אֵין אָנוּ יוֹדְעִים בְּאֵיזֶה יוֹצִיאֶנּוּ הִלְכָּךְ כֻּולָּם טְמֵאִים:</div>
+          <div class="glose-fr">Tous les ustensiles poses dans l&#x27;embrasure des ouvertures, sous l&#x27;epaisseur du linteau, sont impurs, bien qu&#x27;ils ne soient pas sous le toit qui couvre le mort : les Sages ont decrete l&#x27;impurete sur le lieu par ou l&#x27;impurete doit sortir, puisque le corps finira par sortir par la. Ici nous ignorons par laquelle on le sortira ; toutes sont donc impures.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara suppose d'abord la reponse la plus simple — l'ecole de Hillel rejette la bereira — puis l'attaque au moyen d'une michna du traite Ohalot. Rachi explique d'abord pourquoi le rejet de la bereira obligerait a nommer les pigeonneaux : l'homme n'a designe que ce dont il avait besoin, et sans clarification retroactive rien ne garantit que ceux qu'il prend soient ceux-la.</p><p>La michna citee concerne un mort dans une maison a plusieurs ouvertures. Les Sages ont etendu l'impurete au <b>lieu de sortie</b> du corps, sous le linteau de la porte. Comme on ignore laquelle servira, toutes sont frappees.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">נִפְתַּח אֶחָד מֵהֶן, הוּא טָמֵא, וְכֻולָּן טְהוֹרִין. חִשֵּׁב לְהוֹצִיאוֹ בְּאֶחָד מֵהֶן, אוֹ בְּחַלּוֹן שֶׁיֵּשׁ בּוֹ אַרְבָּעָה עַל אַרְבָּעָה — מַצֶּלֶת עַל כָּל הַפְּתָחִים כֻּולָּן.</div>
+            <div class="fr"><p>Si l&#x27;une d&#x27;elles a ete ouverte, celle-la est impure et toutes les autres sont pures. S&#x27;il a eu l&#x27;intention de le faire sortir par l&#x27;une d&#x27;elles, ou par une fenetre de quatre sur quatre, elle preserve toutes les autres ouvertures.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(5)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>נִפְתַּח אֶחָד מֵהֶם</b> לְאַחַר מִיתַת הַמֵּת:</div>
+          <div class="glose-fr">Apres la mort.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הוּא טָמֵא</b> בֵּין כֵּלִים דְּמֵעִיקָּרָא בֵּין כֵּלִים דִּלְבַסּוֹף הַמּוּבָאִין לוֹ מִבַּחוּץ:</div>
+          <div class="glose-fr">Aussi bien les ustensiles qui s&#x27;y trouvaient des le debut que ceux qu&#x27;on y apporte ensuite du dehors.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְכֻולָּן טְהוֹרִים</b> לְדִבְרֵי הַכֹּל מוֹקְמִינַן לְהוּ דְּמוֹדוֹ הַכֹּל מִכָּאן וּלְהַבָּא בְּכֵלִים הַמּוּבָאִים לְתוֹכָן אַחֲרֵי כֵן מִבַּחוּץ דְּוַדַּאי בְּהַהוּא דְּנִפְתַּח מַפִּיק לֵיהּ:</div>
+          <div class="glose-fr">Nous etablissons cette clause comme etant de l&#x27;avis de tous : tous concedent, a partir de ce moment (mikan oulehaba), pour les ustensiles apportes ensuite du dehors, puisqu&#x27;il le sortira certainement par celle qui a ete ouverte.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַרְבָּעָה עַל אַרְבָּעָה</b> בְּכָךְ שִׁעֲרוּהוּ שֶׁרָאוּי לְהוֹצָאַת מֵתִים:</div>
+          <div class="glose-fr">Telle est la mesure qu&#x27;ils ont evaluee comme convenant a la sortie des morts.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַצֶּלֶת עַל כָּל הַפְּתָחִים</b> מִלְּטַמֵּא כְּאִילּוּ נִפְתַּח:</div>
+          <div class="glose-fr">Elle les preserve de contracter l&#x27;impurete, comme si elle avait ete ouverte.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La michna distingue deux facons de fixer le lieu de sortie. Par un <b>acte</b> : on ouvre l'une des portes apres la mort, et le corps sortira certainement par la. Par une <b>intention</b> (mahshava) : on decide d'utiliser telle ouverture, ou une fenetre assez large pour livrer passage a un corps, quatre tefahim sur quatre.</p><p>Rachi marque une nuance decisive pour la suite. Dans le cas de la porte ouverte, ce qui est admis sans conteste ne concerne que les ustensiles <b>apportes apres coup</b> ; le sort de ceux qui etaient deja la avant reste a discuter, et c'est exactement le point que le segment suivant va soulever.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בֵּית שַׁמַּאי אוֹמְרִים: וְהוּא שֶׁחִשֵּׁב לְהוֹצִיאוֹ עַד שֶׁלֹּא יָמוּת הַמֵּת, וּבֵית הִלֵּל אוֹמְרִים: אַף מְשִׂימוֹת הַמֵּת.</div>
+            <div class="fr"><p>L&#x27;ecole de Chammai dit : a condition qu&#x27;il ait forme cette intention avant que le mort ne meure ; et l&#x27;ecole de Hillel dit : meme apres que le mort est mort.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַף מְשִׂימוֹת הַמֵּת</b> וקס&quot;ד דְּבִבְרֵירָה פְּלִיגִי וּבְכֵלִים שֶׁהָיוּ בָּהֶם בֵּין מִיתָה לְמַחְשָׁבָה ב&quot;ש סָבְרִי לָא אָמְרִי&#x27; הֻובְרַר דְּמֵעִיקָּרָא דַּעְתֵּיהּ לְהָכִי הֲוַאי וְלֹא יָרְדָה הַטֻּומְאָה לִשְׁאָר הַפְּתָחִים וּבֵית הִלֵּל סָבְרִי הֻובְרַר וּלְמַאי דְּס&quot;ד הַשְׁתָּא סְבִירָא לָן דִּבְנִפְתַּח אֶחָד מֵהֶם נָמֵי הֲווּ פְּלִיגִי בְּכֵלִים דְּמֵעִיקָּרָא וּטְהוֹרִין דְּקָא תָּנֵי לְעֵיל לְדִבְרֵי הַכֹּל בְּכֵלִים דְּמִכָּאן וּלְהַבָּא:</div>
+          <div class="glose-fr">On pense d&#x27;abord que leur differend porte sur la bereira, et qu&#x27;il concerne les ustensiles qui se trouvaient dans les ouvertures entre la mort et la decision. L&#x27;ecole de Chammai tient qu&#x27;on ne dit pas hou&#x27;barar — qu&#x27;il se serait clarifie que telle etait son intention des le debut — et que l&#x27;impurete n&#x27;a pas quitte les autres ouvertures ; l&#x27;ecole de Hillel tient qu&#x27;il s&#x27;est clarifie. Et selon cette premiere lecture, nous tenons qu&#x27;ils divergeraient de meme dans le cas ou l&#x27;une des ouvertures a ete ouverte, s&#x27;agissant des ustensiles presents des le debut, le mot pures enseigne plus haut valant de l&#x27;avis de tous pour les ustensiles apportes a partir de ce moment.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Voici l'argument. L'ecole de Hillel admet une intention formee <b>apres</b> la mort, alors meme que l'impurete avait deja frappe toutes les ouvertures. Si cette decision tardive purifie, c'est qu'elle agit en arriere : il se clarifie retroactivement que telle etait la porte prevue depuis le debut. L'ecole de Hillel admettrait donc la bereira — et la question du segment 12 reste entiere.</p><p>Rachi souligne que cette lecture est celle qu'on adopte pour l'instant, et qu'elle sera revisee : le mot <b>hou'barar</b>, il s'est clarifie, est le terme technique de la bereira.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg16">
+          <div class="seg-num">17</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָא אִתְּמַר עֲלַהּ, אָמַר רַבָּה: לְטַהֵר אֶת הַפְּתָחִים מִכָּאן וּלְהַבָּא. וְכֵן אָמַר רַבִּי אוֹשַׁעְיָא: לְטַהֵר אֶת הַפְּתָחִים מִכָּאן וּלְהַבָּא. מִכָּאן וּלְהַבָּא — אִין, לְמַפְרֵעַ — לֹא.</div>
+            <div class="fr"><p>Mais il a ete enseigne a ce sujet : Rabba a dit : pour rendre les ouvertures pures a partir de ce moment (mikan oulehaba). Et de meme Rabbi Ochaya a dit : pour rendre les ouvertures pures a partir de ce moment.</p><p>A partir de ce moment, oui ; retroactivement, non.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָא אִתְּמַר עֲלַהּ כו&#x27;</b> וְאַפֵּי&#x27; בֵּית הִלֵּל לֵית לְהוּ הֻובְרַר וְאֵין מְטַהֲרִין אֶלָּא כֵּלִים דִּלְבַסּוֹף דִּלְאַחַר מַחֲשָׁבָה אֲבָל הָרִאשׁוֹנִים טְמֵאִים וב&quot;ש מְטַמְּאִין אַף הָאַחֲרוֹנִים דְּקָא סָבְרִי מִשֶּׁיָּרְדָה תּוֹרַת טֻומְאָה לַפְּתָחִים לִפְנֵי מַחְשָׁבָה בְּמִיתַת הַמֵּת שׁוּב אֵינוֹ עוֹלֶה מֵהֶם אֶלָּא עַל יְדֵי מַעֲשֶׂה כְּגוֹן נִפְתַּח וּבְנִפְתַּח אֶחָד מֵהֶם לָא פְלִיגִי מִידִי:</div>
+          <div class="glose-fr">Meme l&#x27;ecole de Hillel n&#x27;admet pas hou&#x27;barar : elle ne declare purs que les ustensiles apportes en dernier, apres la decision, tandis que les premiers restent impurs. L&#x27;ecole de Chammai declare impurs meme les derniers, tenant qu&#x27;une fois le statut d&#x27;impurete descendu sur les ouvertures avant la decision, au moment de la mort, il ne s&#x27;en retire plus que par un acte, comme le fait d&#x27;ouvrir l&#x27;une d&#x27;elles. Et dans le cas ou l&#x27;une a ete ouverte, ils ne divergent en rien.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">ב&quot;ש אוֹמְרִים וְהוּא שֶׁחִשֵּׁב עָלָיו וְכוּ&#x27; וב&quot;ה אוֹמְרִים אַף מִשֶּׁיָּמוּת הַמֵּת. וְקָא סָלְקָא דַעְתָּךְ דְּמַייְרֵי בְּכֵלִים דִּלְמַפְרֵעַ וה&quot;ה דִּפְלִיגִי כְּשֶׁנִּפְתַּח אֶחָד מֵהֶם וּבְכֵלִים דִּלְמַפְרֵעַ וְהָא דְּקָאָמַר לְעֵיל נִפְתַּח אֶחָד מֵהֶם הוּא טָמֵא וְהֵן טְהוֹרִין וְלָא פְּלִיגִי ב&quot;ש מַיְירֵי בְּכֵלִים הַבָּאִים אַחַר כֵּן שָׁם וְתֵימַהּ אַדִּפְלִיגִי בְּחָשַׁב לִיפְלְגוּ בְּנִפְתַּח וּבְכֵלִים דִּלְמַפְרֵעַ וי&quot;ל דִּנְקַט חָשַׁב מִשּׁוּם רְבוּתָא דב&quot;ה דְּאַפֵּי&#x27; בְּמַחְשָׁבָה דְּעָלְמָא פְּלִיגִי דְּמוֹעִיל לְהַצִּיל כָּל הַפְּתָחִים אֲחֵרִים אֲבָל תֵּימַהּ לב&quot;ה דְּאִית לְהוּ בְּרֵירָה הֵיכִי מַשְׁכַּחַת כְּשֶׁמֵּת בַּבַּיִת וְלוֹ פְּתָחִים הַרְבֵּה דְּכֻולָּן טְמֵאִים הָא אִיכָּא לְמֵימַר לְבַסּוֹף כְּשֶׁמּוֹצִיאִין בְּהַהוּא פֶּתַח הֻובְרַר הַדָּבָר מִתְּחִלָּה דְּסוֹפוֹ לָצֵאת דֶּרֶךְ שָׁם וְי&quot;ל כְּגוֹן שֶׁעֲשָׂאוֹ פֶּתַח חָדָשׁ וְהוֹצִיאוֹ הַמֵּת דְּלָא שַׁיָּיךְ בְּרֵירָה א&quot;נ מַייְרֵי דְּנִשְׁאַר הַמֵּת בִּמְקוֹמוֹ:</div>
+          <div class="glose-fr">L&#x27;ecole de Chammai dit : a condition qu&#x27;il y ait pense, etc., et l&#x27;ecole de Hillel dit : meme apres que le mort est mort. On pense d&#x27;abord qu&#x27;il s&#x27;agit des ustensiles retroactivement (lemafrea), et qu&#x27;il en irait de meme lorsque l&#x27;une des ouvertures a ete ouverte, pour les ustensiles retroactivement ; ce qui est enseigne plus haut — si l&#x27;une a ete ouverte, elle est impure et les autres pures, sans que l&#x27;ecole de Chammai diverge — porterait alors sur les ustensiles apportes la ensuite. Il y a lieu de s&#x27;etonner : plutot que de diverger sur le cas ou il a pense, qu&#x27;ils divergent sur le cas ou l&#x27;une a ete ouverte, quant aux ustensiles retroactivement. On peut repondre que la michna a retenu le cas de la pensee pour marquer la force de l&#x27;avis de l&#x27;ecole de Hillel : meme sur une simple pensee ils divergent, puisqu&#x27;elle suffit a preserver toutes les autres ouvertures. Mais il y a lieu de s&#x27;etonner davantage : pour l&#x27;ecole de Hillel, qui admet la bereira, comment trouver un cas ou un mort se trouve dans une maison a plusieurs ouvertures et ou toutes soient impures ? On pourrait toujours dire qu&#x27;a la fin, lorsqu&#x27;on le sort par telle ouverture, il s&#x27;est clarifie depuis le debut qu&#x27;il devait sortir par la. On peut repondre : par exemple si l&#x27;on a perce une ouverture nouvelle et qu&#x27;on a sorti le mort par la, cas ou la bereira ne s&#x27;applique pas ; ou bien il s&#x27;agit d&#x27;un cas ou le mort est reste a sa place.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La preuve est renversee. Rabba et Rabbi Ochaya ont deja explique la michna d'Ohalot : l'ecole de Hillel ne purifie que <b>mikan oulehaba</b>, a partir du moment de la decision. Les ustensiles apportes ensuite echappent a l'impurete, ceux qui se trouvaient deja la restent impurs. Aucune clarification retroactive n'est donc affirmee, et l'ecole de Hillel peut fort bien rejeter la bereira.</p><p>Rachi precise du meme coup la position de l'ecole de Chammai : selon elle, une impurete une fois descendue ne se retire que par un <b>acte</b>, non par une pensee. Tossefot pousse la difficulte plus loin : si l'ecole de Hillel admettait vraiment la bereira, on ne verrait jamais de cas ou toutes les ouvertures soient impures, puisque la sortie effective clarifierait toujours apres coup. Il repond par deux cas ou la clarification est impossible : une ouverture percee apres coup, ou un corps qui n'est jamais sorti.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg17">
+          <div class="seg-num">18</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רָבָא אָמַר: לְעוֹלָם לְמַפְרֵעַ, וְהָכָא הַיְינוּ טַעְמָא: דִּלְמָא מְטַלְטֵל וְשָׁבֵיק, מְטַלְטֵל וְשָׁבֵיק, וְקָא מְטַלְטֵל מִידֵּי דְּלָא חֲזֵי לֵיהּ.</div>
+            <div class="fr"><p>Rava a dit : en verite, c&#x27;est bien retroactivement ; et ici, voici la raison : peut-etre deplacera-t-il puis laissera, deplacera puis laissera, et il se trouvera deplacer une chose qui ne lui convient pas.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רָבָא אָמַר לְעוֹלָם לְמַפְרֵעַ</b> נָמֵי מְטַהֲרִין בֵּית הִלֵּל דְּאִית לְהוּ בְּרֵירָה וְהָכָא בְּמַתְנִיתִין הַייְנוּ טַעְמָא דְּצָרִיךְ לְבָרֵר וְלוֹמַר אֵלּוּ אֲנִי נוֹטֵל דִּלְמָא לְמָחָר מְטַלְטֵל וּבוֹדֵק הַשְּׁמָנִים וְשָׁבֵיק הָא וּשְׁקִיל אִידָךְ נִמְצָא מְטַלְטֵל מַה שֶׁלֹּא הִזְמִין שֶׁהֲרֵי לֹא הָיָה דַּעְתּוֹ אֶלָּא בִּכְדֵי צָרְכּוֹ הִלְכָּךְ אוֹמֵר זֶה וָזֶה אֲנִי נוֹטֵל וּלְמָחָר עַל כָּרְחֵיהּ הָנֵי מִילֵּי דְּשָׁקִיל:</div>
+          <div class="glose-fr">L&#x27;ecole de Hillel declare purs meme retroactivement, car elle admet la bereira. Et dans notre michna, voici la raison pour laquelle il doit preciser et dire : ceux-ci, je les prends. Le lendemain il pourrait deplacer les pigeonneaux et tater les gras, en laisser un et en prendre un autre ; il se trouverait deplacer ce qu&#x27;il n&#x27;avait pas designe, puisque son intention ne portait que sur ce dont il avait besoin. Aussi dit-il : celui-ci et celui-la, je les prends, et le lendemain il n&#x27;a d&#x27;autre choix que de prendre ceux-la.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rava garde a l'ecole de Hillel la bereira, y compris <b>retroactivement</b>, et cherche ailleurs la raison d'exiger une designation nominative. Elle n'est pas de principe mais de precaution pratique.</p><p>Si l'homme n'a designe que le colombier, il arrivera le lendemain sans savoir lesquels prendre. Il en soulevera un, le tatera, le reposera, en prendra un autre : <b>metaltel ve-chavik</b>, il deplace et laisse. Chacun des pigeonneaux qu'il repose est un objet mouktze qu'il aura manipule sans besoin. La designation precise ferme le choix a l'avance et supprime ce tatonnement.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="700" height="220" fill="#fbfaf6"/>
+<text x="350" y="22" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#2b2b2b">La raison de Rava : metaltel ve-chavik, il deplace puis repose</text>
+<rect x="24" y="36" width="652" height="30" rx="5" fill="#ecebe4" stroke="#b6b2a4"/>
+<text x="350" y="56" text-anchor="middle" font-size="12.5" fill="#3a3a3a">S'il dit seulement : je prendrai d'ici demain, il n'a designe aucun pigeonneau en particulier.</text>
+<g stroke="#8a7a62" stroke-width="1.5" fill="#e6ded1">
+<ellipse cx="90" cy="118" rx="30" ry="22"/><ellipse cx="180" cy="118" rx="30" ry="22"/>
+<ellipse cx="270" cy="118" rx="30" ry="22"/><ellipse cx="360" cy="118" rx="30" ry="22"/>
+</g>
+<text x="90" y="123" text-anchor="middle" font-size="11.5" fill="#4a4030">maigre</text>
+<text x="180" y="123" text-anchor="middle" font-size="11.5" fill="#4a4030">maigre</text>
+<text x="270" y="123" text-anchor="middle" font-size="11.5" fill="#4a4030">gras</text>
+<text x="360" y="123" text-anchor="middle" font-size="11.5" fill="#4a4030">gras</text>
+<defs><marker id="m10a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#a03b28"/></marker></defs>
+<path d="M90 92 Q 135 66 180 92" fill="none" stroke="#a03b28" stroke-width="2" marker-end="url(#m10a)"/>
+<path d="M180 92 Q 225 66 270 92" fill="none" stroke="#a03b28" stroke-width="2" marker-end="url(#m10a)"/>
+<text x="225" y="62" text-anchor="middle" font-size="11.5" fill="#a03b28">il souleve, tate, repose, recommence</text>
+<rect x="416" y="88" width="260" height="60" rx="6" fill="#f7ebe7" stroke="#a75d4b" stroke-width="1.5"/>
+<text x="546" y="110" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#7c3b2c">Resultat : il a deplace des pigeonneaux</text>
+<text x="546" y="129" text-anchor="middle" font-size="12" fill="#4a2820">qu'il ne prendra pas et qui restent mouktze.</text>
+<text x="546" y="144" text-anchor="middle" font-size="11.5" fill="#7c3b2c">Un deplacement sans besoin, a yom tov.</text>
+<rect x="24" y="164" width="652" height="44" rx="6" fill="#eaf3e8" stroke="#5d8f5b"/>
+<text x="350" y="183" text-anchor="middle" font-size="12.5" fill="#24422a">D'ou l'exigence de l'ecole de Hillel : celui-ci et celui-la, je les prends. La designation nominative ferme le choix,</text>
+<text x="350" y="200" text-anchor="middle" font-size="12.5" fill="#24422a">et le lendemain il ne prendra que ceux-la, gras ou maigres, sans toucher aux autres.</text>
+</svg></div><div class="svg-cap">Le tatonnement du lendemain que la designation nominative doit empecher, selon la raison de Rava.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg18">
+          <div class="seg-num">19</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְהָא אֲמַרְתְּ — בְּעוֹמֵד וְאוֹמֵר ״זֶה וָזֶה אֲנִי נוֹטֵל״ סַגְיָא! הָנֵי מִילֵּי מֵעֶרֶב יוֹם טוֹב,</div>
+            <div class="fr"><p>Mais tu as dit qu&#x27;il suffit qu&#x27;il se tienne debout et declare : celui-ci et celui-la, je les prends ! — Cela vaut depuis la veille de yom tov,</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהָא אֲמַרְתְּ בְּעוֹמֵד</b> מֵרָחוֹק וְאֵין מְנַעְנֵעַ סַגְיָא אַלְמָא לֹא בָּדַק מֵאֶתְמוֹל הַכְּחוּשִׁים וְהַשְּׁמָנִים וְאַכַּתִּי אִיכָּא לְמֵיחַשׁ:</div>
+          <div class="glose-fr">Or tu as dit qu&#x27;il suffit qu&#x27;il se tienne a distance, sans remuer les pigeonneaux : il apparait donc qu&#x27;il n&#x27;a pas examine la veille lesquels sont maigres et lesquels sont gras, et la crainte subsiste.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ה&quot;מ מֵעֶרֶב י&quot;ט</b> כְּלוֹמַר הֵיכָא דְּיָדַע מֵעֶרֶב י&quot;ט דְּהָנֵי הוּא דְּאַזְמִינֵן דְּתוּ בֵּין שֶׁהֵן כְּחוּשִׁין בֵּין שֶׁהֵן שְׁמֵנִים לָא שְׁקִיל אַחֲרֵינִי שֶׁהֲרֵי יוֹדֵעַ שֶׁמֻּוקְצִין הֵם שֶׁלֹּא זְמַנָּן:</div>
+          <div class="glose-fr">C&#x27;est-a-dire lorsqu&#x27;il sait des la veille de yom tov que ce sont ceux-la qu&#x27;il a designes : des lors, qu&#x27;ils soient maigres ou gras, il n&#x27;en prendra pas d&#x27;autres, car il sait qu&#x27;ils sont mouktze faute d&#x27;avoir ete designes.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection immediate contre Rava. Selon l'ecole de Hillel, l'homme se tient a distance et se contente de parler, sans toucher aux pigeonneaux : il n'a donc pas verifie lesquels sont gras. La crainte du tatonnement devrait subsister telle quelle.</p><p>La reponse tient a la <b>date</b> de la designation. Parce qu'elle a ete faite la veille, l'homme sait le lendemain que les autres sont mouktze et qu'il ne pourra pas les prendre. Ce savoir le retient de fouiller : il prendra ceux qu'il a nommes, gras ou maigres. Le raisonnement se poursuit a la page suivante.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Beitzah_9b.html">&lsaquo; Beitzah 9b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Beitzah_10b.html">Beitzah 10b &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taanit 19a — La plaie qui se deplace, le cercle de Honi, et le jeune qu&#x27;on interrompt</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Taanit 19a — La plaie qui se deplace, le cercle de Honi, et le jeune qu&#x27;on interrompt</h1>
+    <div class="ref">Taanit 19a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Taanit_18b.html">&lsaquo; Taanit 18b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Taanit_19b.html">Taanit 19b &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> Le folio acheve les michnayot du chapitre trois, puis ouvre la guemara. Les michnayot reglent d&#x27;abord la geographie de la detresse : la ville frappee jeune et fait la hatra&#x27;a, ses voisines jeunent sans hatra&#x27;a, et Rabbi Akiva inverse les deux termes.</p><p>Vient ensuite la liste des plaies pour lesquelles on sonne partout, parce qu&#x27;elles se deplacent, puis celles pour lesquelles on sonne meme chabbat. La michna rapporte alors l&#x27;episode de Honi HaMeaguel, qui trace un cercle, s&#x27;engage par serment et corrige trois fois la pluie recue, et la reponse de Chimon ben Chetah.</p><p>Les deux dernieres michnayot fixent l&#x27;heure a partir de laquelle un jeune commence a lier : avant le lever du soleil pour l&#x27;avis anonyme, avant midi pour Rabbi Eliezer, avec le precedent de Rabbi Tarfon a Lod. La guemara s&#x27;ouvre sur une contradiction entre la michna et une baraita au sujet des trois revi&#x27;ot, resolue par Rav Yehouda, puis distingue la recolte qui a change de la recolte dessechee, et enfin la batsoret de la famine.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 392" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+<text x="20" y="26" font-size="15" font-weight="bold" fill="#22323f">Plan du folio Taanit 19a</text>
+<rect x="16" y="42" width="360" height="150" rx="8" fill="#eef2f8" stroke="#3b5b8c"/>
+<text x="30" y="64" font-size="12" font-weight="bold" fill="#1d3550">1. Michna : ou l'on jeune, ou l'on sonne (segments 0-4)</text>
+<text x="30" y="86" font-size="10.5" fill="#3c4a58">La ville frappee et ses voisines. Rabbi Akiva</text>
+<text x="30" y="102" font-size="10.5" fill="#3c4a58">inverse le jeune et la hatra'a.</text>
+<text x="30" y="124" font-size="10.5" fill="#3c4a58">Definition du dever : cinq cents hommes,</text>
+<text x="30" y="140" font-size="10.5" fill="#3c4a58">trois morts en trois jours de suite.</text>
+<text x="30" y="162" font-size="10.5" fill="#3c4a58">Les plaies itinerantes : on sonne partout.</text>
+<text x="30" y="178" font-size="10.5" fill="#3c4a58">Les cas ou l'on sonne meme chabbat.</text>
+<rect x="392" y="42" width="352" height="150" rx="8" fill="#fbf7ec" stroke="#a8862e"/>
+<text x="406" y="64" font-size="12" font-weight="bold" fill="#6b5312">2. Michna : Honi HaMeaguel (segments 5-8)</text>
+<text x="406" y="86" font-size="10.5" fill="#3c4a58">On ne sonne pas pour un exces de pluie.</text>
+<text x="406" y="108" font-size="10.5" fill="#3c4a58">Le cercle, le serment, les trois corrections :</text>
+<text x="406" y="124" font-size="10.5" fill="#3c4a58">gouttes, violence, puis pluie de bienveillance.</text>
+<text x="406" y="146" font-size="10.5" fill="#3c4a58">La ville inondee monte au mont du Temple.</text>
+<text x="406" y="168" font-size="10.5" fill="#3c4a58">Chimon ben Chetah : le nidouy renonce,</text>
+<text x="406" y="184" font-size="10.5" fill="#3c4a58">et le verset des Proverbes.</text>
+<rect x="16" y="206" width="360" height="168" rx="8" fill="#eef4ee" stroke="#3f7a4a"/>
+<text x="30" y="228" font-size="12" font-weight="bold" fill="#25502f">3. Michna : interrompre le jeune (segments 9-10)</text>
+<text x="30" y="250" font-size="10.5" fill="#3c4a58">La pluie tombe pendant le jeune decrete.</text>
+<text x="30" y="272" font-size="10.5" fill="#3c4a58">Avis anonyme : le lever du soleil partage.</text>
+<text x="30" y="294" font-size="10.5" fill="#3c4a58">Rabbi Eliezer : midi partage.</text>
+<text x="30" y="316" font-size="10.5" fill="#3c4a58">Precedent de Lod : Rabbi Tarfon renvoie</text>
+<text x="30" y="332" font-size="10.5" fill="#3c4a58">manger et boire, puis le Hallel HaGadol</text>
+<text x="30" y="348" font-size="10.5" fill="#3c4a58">est lu l'apres-midi.</text>
+<text x="30" y="366" font-size="10" fill="#25502f">Piskei HaRosh discute ici le jeune individuel.</text>
+<rect x="392" y="206" width="352" height="168" rx="8" fill="#f4eef7" stroke="#8a6ca8"/>
+<text x="406" y="228" font-size="12" font-weight="bold" fill="#4a2765">4. Guemara : revi'a et batsoret (segments 11-14)</text>
+<text x="406" y="250" font-size="10.5" fill="#3c4a58">Contradiction : la michna parle de la premiere</text>
+<text x="406" y="266" font-size="10.5" fill="#3c4a58">revi'a, la baraita ne fait jeuner qu'a la troisieme.</text>
+<text x="406" y="288" font-size="10.5" fill="#3c4a58">Rav Yehouda relit la michna : les trois revi'ot</text>
+<text x="406" y="304" font-size="10.5" fill="#3c4a58">passees sans pluie.</text>
+<text x="406" y="326" font-size="10.5" fill="#3c4a58">Rav Nahman : la recolte qui a change, oui ;</text>
+<text x="406" y="342" font-size="10.5" fill="#3c4a58">dessechee, non ; montee en tige, non plus.</text>
+<text x="406" y="364" font-size="10.5" fill="#3c4a58">La batsoret commence a etre pesee.</text>
+</svg></div>
+          <figcaption>Le folio passe de la carte des detresses au recit de Honi, puis a l&#x27;heure du jeune, avant d&#x27;ouvrir le travail de la guemara.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 336" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+<text x="20" y="26" font-size="15" font-weight="bold" fill="#22323f">Qui jeune et qui fait la hatra'a</text>
+<rect x="20" y="42" width="176" height="40" rx="6" fill="#e7ebf1" stroke="#8a94a0"/>
+<text x="32" y="60" font-size="10.5" font-weight="bold" fill="#3c4a58">La detresse</text>
+<text x="32" y="75" font-size="9.5" fill="#3c4a58">frappe une ville</text>
+<rect x="202" y="42" width="172" height="40" rx="6" fill="#eef2f8" stroke="#3b5b8c"/>
+<text x="214" y="60" font-size="10.5" font-weight="bold" fill="#1d3550">La ville frappee</text>
+<text x="214" y="75" font-size="9.5" fill="#1d3550">tous les avis</text>
+<rect x="380" y="42" width="176" height="40" rx="6" fill="#eef4ee" stroke="#3f7a4a"/>
+<text x="392" y="60" font-size="10.5" font-weight="bold" fill="#25502f">Ses voisines</text>
+<text x="392" y="75" font-size="9.5" fill="#25502f">avis anonyme</text>
+<rect x="562" y="42" width="178" height="40" rx="6" fill="#fdf7f5" stroke="#c07a56"/>
+<text x="574" y="60" font-size="10.5" font-weight="bold" fill="#6b3419">Ses voisines</text>
+<text x="574" y="75" font-size="9.5" fill="#6b3419">Rabbi Akiva</text>
+<rect x="20" y="88" width="176" height="46" rx="6" fill="#f8fafc" stroke="#c8d0da"/>
+<text x="32" y="110" font-size="10.5" fill="#3c4a58">Pas de pluie sur elle</text>
+<text x="32" y="126" font-size="9.5" fill="#7c8894">michna de 18b</text>
+<rect x="202" y="88" width="172" height="46" rx="6" fill="#f8fafc" stroke="#c8d0da"/>
+<text x="214" y="110" font-size="10.5" fill="#3c4a58">Jeune et hatra'a</text>
+<rect x="380" y="88" width="176" height="46" rx="6" fill="#f8fafc" stroke="#c8d0da"/>
+<text x="392" y="110" font-size="10.5" fill="#3c4a58">Jeune, sans hatra'a</text>
+<rect x="562" y="88" width="178" height="46" rx="6" fill="#f8fafc" stroke="#c8d0da"/>
+<text x="574" y="110" font-size="10.5" fill="#3c4a58">Hatra'a, sans jeune</text>
+<rect x="20" y="140" width="176" height="46" rx="6" fill="#f8fafc" stroke="#c8d0da"/>
+<text x="32" y="162" font-size="10.5" fill="#3c4a58">Dever, la peste</text>
+<text x="32" y="178" font-size="9.5" fill="#7c8894">segments 0 et 1</text>
+<rect x="202" y="140" width="172" height="46" rx="6" fill="#f8fafc" stroke="#c8d0da"/>
+<text x="214" y="162" font-size="10.5" fill="#3c4a58">Jeune et hatra'a</text>
+<rect x="380" y="140" width="176" height="46" rx="6" fill="#f8fafc" stroke="#c8d0da"/>
+<text x="392" y="162" font-size="10.5" fill="#3c4a58">Jeune, sans hatra'a</text>
+<rect x="562" y="140" width="178" height="46" rx="6" fill="#f8fafc" stroke="#c8d0da"/>
+<text x="574" y="162" font-size="10.5" fill="#3c4a58">Hatra'a, sans jeune</text>
+<rect x="20" y="192" width="176" height="46" rx="6" fill="#f8fafc" stroke="#c8d0da"/>
+<text x="32" y="214" font-size="10.5" fill="#3c4a58">Mapolet, effondrements</text>
+<text x="32" y="230" font-size="9.5" fill="#7c8894">segment 0</text>
+<rect x="202" y="192" width="172" height="46" rx="6" fill="#f8fafc" stroke="#c8d0da"/>
+<text x="214" y="214" font-size="10.5" fill="#3c4a58">Jeune et hatra'a</text>
+<rect x="380" y="192" width="176" height="46" rx="6" fill="#f8fafc" stroke="#c8d0da"/>
+<text x="392" y="214" font-size="10.5" fill="#3c4a58">Jeune, sans hatra'a</text>
+<rect x="562" y="192" width="178" height="46" rx="6" fill="#f8fafc" stroke="#c8d0da"/>
+<text x="574" y="214" font-size="10.5" fill="#3c4a58">Hatra'a, sans jeune</text>
+<rect x="20" y="248" width="720" height="36" rx="6" fill="#fbf7ec" stroke="#d9c58a"/>
+<text x="34" y="264" font-size="10.5" font-weight="bold" fill="#6b5312">Pourquoi les voisines jeunent (Rachi) : la ville privee de pluie viendra acheter son grain chez elles,</text>
+<text x="34" y="279" font-size="10.5" fill="#6b5312">et la penurie s'y installera. Elles jeunent donc pour une detresse qui va les atteindre.</text>
+<rect x="20" y="290" width="720" height="36" rx="6" fill="#f4eef7" stroke="#c0a8d4"/>
+<text x="34" y="306" font-size="10.5" font-weight="bold" fill="#4a2765">Nafka mina : l'avis anonyme charge les voisines du jeune et reserve la hatra'a a la ville frappee ;</text>
+<text x="34" y="321" font-size="10.5" fill="#4a2765">Rabbi Akiva les fait crier avec elle sans les faire jeuner.</text>
+</svg></div>
+          <figcaption>Le tableau se lit ligne par ligne : la ville frappee cumule toujours les deux gestes, et le desaccord ne porte que sur ses voisines.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 356" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+<text x="20" y="26" font-size="15" font-weight="bold" fill="#22323f">Honi HaMeaguel : le cercle et les trois corrections</text>
+<rect x="20" y="42" width="230" height="58" rx="8" fill="#eef2f8" stroke="#3b5b8c"/>
+<text x="32" y="62" font-size="11" font-weight="bold" fill="#1d3550">Premiere priere</text>
+<text x="32" y="79" font-size="10" fill="#3c4a58">Rentrez les fours a Pessah,</text>
+<text x="32" y="94" font-size="10" fill="#3c4a58">ils vont fondre. Rien ne tombe.</text>
+<path d="M250 71 L286 71" stroke="#8a94a0" stroke-width="1.6" marker-end="url(#a19a)"/>
+<defs><marker id="a19a" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#8a94a0"/></marker></defs>
+<rect x="290" y="42" width="230" height="58" rx="8" fill="#fbf7ec" stroke="#a8862e"/>
+<text x="302" y="62" font-size="11" font-weight="bold" fill="#6b5312">Le cercle et le serment</text>
+<text x="302" y="79" font-size="10" fill="#3c4a58">Il trace une ouga, s'y tient,</text>
+<text x="302" y="94" font-size="10" fill="#3c4a58">et jure de ne pas en bouger.</text>
+<path d="M520 71 L556 71" stroke="#8a94a0" stroke-width="1.6" marker-end="url(#a19a)"/>
+<rect x="560" y="42" width="180" height="58" rx="8" fill="#eef4ee" stroke="#3f7a4a"/>
+<text x="572" y="62" font-size="11" font-weight="bold" fill="#25502f">Son titre</text>
+<text x="572" y="79" font-size="10" fill="#3c4a58">Comme un familier</text>
+<text x="572" y="94" font-size="10" fill="#3c4a58">de la maison.</text>
+<text x="20" y="126" font-size="12" font-weight="bold" fill="#22323f">Trois pluies, trois refus</text>
+<rect x="20" y="136" width="232" height="76" rx="8" fill="#f8fafc" stroke="#8fa6c4"/>
+<text x="32" y="156" font-size="10.5" font-weight="bold" fill="#1d3550">1. Gouttes (menatfin)</text>
+<text x="32" y="174" font-size="10" fill="#3c4a58">Trop peu. Ce que je demandais,</text>
+<text x="32" y="189" font-size="10" fill="#3c4a58">c'est la pluie qui remplit les</text>
+<text x="32" y="204" font-size="10" fill="#3c4a58">citernes, fosses et grottes.</text>
+<rect x="264" y="136" width="232" height="76" rx="8" fill="#f8fafc" stroke="#d9a894"/>
+<text x="276" y="156" font-size="10.5" font-weight="bold" fill="#6b3419">2. Violence (beza'af)</text>
+<text x="276" y="174" font-size="10" fill="#3c4a58">Trop brutal. Ce que je</text>
+<text x="276" y="189" font-size="10" fill="#3c4a58">demandais, c'est une pluie de</text>
+<text x="276" y="204" font-size="10" fill="#3c4a58">bienveillance et de largesse.</text>
+<rect x="508" y="136" width="232" height="76" rx="8" fill="#eef4ee" stroke="#3f7a4a"/>
+<text x="520" y="156" font-size="10.5" font-weight="bold" fill="#25502f">3. Comme il faut</text>
+<text x="520" y="174" font-size="10" fill="#3c4a58">Puis sans arret : la ville est</text>
+<text x="520" y="189" font-size="10" fill="#3c4a58">noyee et le peuple monte</text>
+<text x="520" y="204" font-size="10" fill="#3c4a58">au mont du Temple.</text>
+<rect x="20" y="226" width="360" height="60" rx="8" fill="#f4eef7" stroke="#8a6ca8"/>
+<text x="34" y="246" font-size="11" font-weight="bold" fill="#4a2765">La demande inverse</text>
+<text x="34" y="264" font-size="10" fill="#3c4a58">Priez qu'elle cesse. Reponse de Honi : allez voir</text>
+<text x="34" y="279" font-size="10" fill="#3c4a58">si la Pierre des Reclamants a fondu.</text>
+<rect x="396" y="226" width="344" height="60" rx="8" fill="#fdf7f5" stroke="#c07a56"/>
+<text x="410" y="246" font-size="11" font-weight="bold" fill="#6b3419">Chimon ben Chetah</text>
+<text x="410" y="264" font-size="10" fill="#3c4a58">Un autre que toi, je le mettais au nidouy.</text>
+<text x="410" y="279" font-size="10" fill="#3c4a58">Mais tu obtiens comme un fils obtient d'un pere.</text>
+<rect x="20" y="298" width="720" height="44" rx="6" fill="#fbf7ec" stroke="#d9c58a"/>
+<text x="34" y="316" font-size="10.5" font-weight="bold" fill="#6b5312">L'enjeu du passage : la michna vient d'exclure l'exces de pluie de la liste des detresses. Le recit montre</text>
+<text x="34" y="332" font-size="10.5" fill="#6b5312">une pluie devenue penible, et pourtant personne ne sonne pour elle : on demande seulement une priere.</text>
+</svg></div>
+          <figcaption>Le recit est place juste apres la clause qui exclut l&#x27;exces de pluie, et il en donne le cas limite.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אוֹתָהּ הָעִיר מִתְעַנָּה וּמַתְרַעַת, וְכָל סְבִיבוֹתֶיהָ מִתְעַנּוֹת וְלֹא מַתְרִיעוֹת. רַבִּי עֲקִיבָא אוֹמֵר: מַתְרִיעוֹת וְלֹא מִתְעַנּוֹת. וְכֵן עִיר שֶׁיֵּשׁ בָּהּ דֶּבֶר אוֹ מַפּוֹלֶת — אוֹתָהּ הָעִיר מִתְעַנָּה וּמַתְרַעַת, וְכָל סְבִיבוֹתֶיהָ מִתְעַנּוֹת וְלֹא מַתְרִיעוֹת. רַבִּי עֲקִיבָא אוֹמֵר: מַתְרִיעוֹת וְלֹא מִתְעַנּוֹת.</div>
+            <div class="fr"><p>[La michna poursuit :] cette ville-la jeune et fait la hatra&#x27;a, et toutes ses voisines jeunent sans faire la hatra&#x27;a. Rabbi Akiva dit : elles font la hatra&#x27;a sans jeuner.</p><p>Et de meme, une ville ou il y a un dever (peste) ou une mapolet (effondrement de batiments) — cette ville-la jeune et fait la hatra&#x27;a, et toutes ses voisines jeunent sans faire la hatra&#x27;a. Rabbi Akiva dit : elles font la hatra&#x27;a sans jeuner.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ה&quot;ג אוֹתָהּ הָעִיר מִתְעַנָּה וּמַתְרַעַת וְכָל סְבִיבוֹתֶיהָ מִתְעַנּוֹת וְלֹא מַתְרִיעוֹת</b> וּלְפִיכָךְ מִתְעַנּוֹת שֶׁאוֹתָהּ הָעִיר שֶׁלֹּא יָרְדוּ עָלֶיהָ גְּשָׁמִים תֵּלֵךְ לִקְנוֹת הַתְּבוּאָה בְּאוֹתָהּ הָעִיר וְיִהְיֶה בָּהּ רָעָב:</div>
+          <div class="glose-fr">Telle est notre version : « cette ville-la jeune et fait la hatra&#x27;a, et toutes ses voisines jeunent sans faire la hatra&#x27;a » — et elles jeunent pour la raison suivante : la ville sur laquelle la pluie n&#x27;est pas tombee viendra acheter le grain dans cette ville-ci, et la penurie s&#x27;y installera.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אוֹ מַפֹּולֶת</b> שֶׁחוֹמוֹתֶיהָ וְהַבָּתִּים נוֹפְלִין בְּרוּחַ:</div>
+          <div class="glose-fr">Ou une mapolet — que ses murailles et ses maisons tombent sous le vent.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La michna commencee en 18b se termine ici. Elle repartit deux gestes distincts : le <b>jeune</b>, qui pese sur le corps de celui qui le prend, et la <b>hatra'a</b>, le cri public accompagne du chofar et de la priere Anenou. La ville frappee accomplit les deux. Le desaccord porte seulement sur ses voisines.</p><p>Rachi explique pourquoi les voisines sont concernees : la ville privee de pluie viendra acheter chez elles, et leurs propres reserves s'epuiseront. Leur jeune porte donc sur une detresse qui vient vers elles. <b>Rabbi Akiva</b> lit la situation en sens inverse : leur detresse reste eventuelle, ce qui suffit pour crier avec la ville frappee sans aller jusqu'au jeune.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֵיזֶהוּ דֶּבֶר? עִיר הַמּוֹצִיאָה חֲמֵשׁ מֵאוֹת רַגְלִי, וְיָצְאוּ מִמֶּנָּה שְׁלֹשָׁה מֵתִים בִּשְׁלֹשָׁה יָמִים זֶה אַחַר זֶה — הֲרֵי זֶה דֶּבֶר, פָּחוֹת מִכָּאן — אֵין זֶה דֶּבֶר.</div>
+            <div class="fr"><p>Qu&#x27;est-ce qu&#x27;un dever ? Une ville qui fournit cinq cents fantassins, et dont trois morts sont sortis en trois jours, l&#x27;un apres l&#x27;autre — c&#x27;est un dever ; moins que cela — ce n&#x27;est pas un dever.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La michna donne un seuil mesurable, pour eviter que toute serie de deces soit traitee comme une epidemie. La population est comptee en <b>ragle</b>, les hommes valides mobilisables : cinq cents fantassins designent une ville de cette taille.</p><p>Deux conditions se cumulent : trois morts, et trois jours consecutifs. Trois morts le meme jour, ou deux morts sur trois jours, restent en dessous du seuil. La guemara reviendra sur ce calcul plus loin dans le traite.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 226" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+<text x="20" y="26" font-size="14" font-weight="bold" fill="#22323f">Le seuil du dever selon la michna</text>
+<rect x="20" y="40" width="720" height="34" rx="6" fill="#e7ebf1" stroke="#8a94a0"/>
+<text x="34" y="62" font-size="11" fill="#3c4a58">Base de comptage : une ville qui fournit 500 fantassins (hommes valides mobilisables).</text>
+<rect x="20" y="86" width="230" height="60" rx="8" fill="#eef4ee" stroke="#3f7a4a"/>
+<text x="32" y="106" font-size="10.5" font-weight="bold" fill="#25502f">Jour 1 : un mort</text>
+<text x="32" y="124" font-size="10.5" font-weight="bold" fill="#25502f">Jour 2 : un mort</text>
+<text x="32" y="140" font-size="10.5" font-weight="bold" fill="#25502f">Jour 3 : un mort</text>
+<rect x="264" y="86" width="230" height="60" rx="8" fill="#f8fafc" stroke="#c8d0da"/>
+<text x="276" y="106" font-size="10.5" fill="#3c4a58">Trois morts, trois jours</text>
+<text x="276" y="124" font-size="10.5" fill="#3c4a58">consecutifs : les deux</text>
+<text x="276" y="140" font-size="10.5" fill="#3c4a58">conditions sont remplies.</text>
+<rect x="508" y="86" width="232" height="60" rx="8" fill="#eef4ee" stroke="#3f7a4a"/>
+<text x="520" y="112" font-size="12" font-weight="bold" fill="#25502f">C'est un dever</text>
+<text x="520" y="132" font-size="10" fill="#25502f">Jeune et hatra'a dans la ville.</text>
+<rect x="20" y="158" width="494" height="56" rx="8" fill="#fdf7f5" stroke="#d9a894"/>
+<text x="32" y="178" font-size="10.5" fill="#6b3419">Trois morts le meme jour, ou deux morts sur trois jours,</text>
+<text x="32" y="196" font-size="10.5" fill="#6b3419">ou trois morts sur des jours separes : le seuil n'est pas atteint.</text>
+<rect x="528" y="158" width="212" height="56" rx="8" fill="#fdf7f5" stroke="#c07a56"/>
+<text x="540" y="184" font-size="12" font-weight="bold" fill="#6b3419">Ce n'est pas un dever</text>
+<text x="540" y="203" font-size="10" fill="#6b3419">Pas de jeune a ce titre.</text>
+</svg></div><div class="svg-cap">Le seuil tient en deux exigences cumulees : le nombre de morts et leur repartition sur trois jours de suite.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">עַל אֵלּוּ מַתְרִיעִין בְּכָל מָקוֹם: עַל הַשִּׁדָּפוֹן, וְעַל הַיֵּרָקוֹן, וְעַל הָאַרְבֶּה, וְעַל הֶחָסִיל, וְעַל הַחַיָּה רָעָה, וְעַל הַחֶרֶב — מַתְרִיעִין עָלֶיהָ, מִפְּנֵי שֶׁהִיא מַכָּה מְהַלֶּכֶת.</div>
+            <div class="fr"><p>Pour ceux-ci on fait la hatra&#x27;a en tout lieu : pour le chidafon (le grain brule par le vent), pour le yerakon (le grain jauni), pour l&#x27;arbe (la sauterelle), pour le hassil (une autre espece de sauterelle), pour la bete sauvage et pour l&#x27;epee — on fait la hatra&#x27;a pour elle, parce que c&#x27;est une plaie qui marche.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(5)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַתְרִיעִים בכ&quot;מ</b> אִם יִרְאוּ בְּאַסְפַּמְיָא מַתְרִיעִין בְּבָבֶל בְּבָבֶל מַתְרִיעִין בְּאַסְפַּמְיָא כִּדְקָתָנֵי טַעְמָא בְּסֵיפָא מִפְּנֵי שֶׁהִיא מַכָּה מְהַלֶּכֶת אִם בְּמָקוֹם אֶחָד הִיא מַתְרִיעִין עָלֶיהָ כָּל הַשּׁוֹמְעִין כְּדֵי שֶׁלֹּא תָּבֹא עֲלֵיהֶן:</div>
+          <div class="glose-fr">On fait la hatra&#x27;a en tout lieu — si on la voit en Aspamia, on fait la hatra&#x27;a en Babylonie ; si elle est en Babylonie, on fait la hatra&#x27;a en Aspamia, comme la michna en donne elle-meme la raison a la fin : parce que c&#x27;est une plaie qui marche. Si elle est dans un seul lieu, tous ceux qui l&#x27;apprennent font la hatra&#x27;a, afin qu&#x27;elle ne vienne pas sur eux.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שִׁדָּפוֹן</b> בִּתְבוּאוֹת:</div>
+          <div class="glose-fr">Chidafon — dans les recoltes.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>יֵרָקוֹן</b> חֹולִי:</div>
+          <div class="glose-fr">Yerakon — une maladie.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>חַיָּה רָעָה</b> מְשַׁכֶּלֶת בְּנֵי אָדָם:</div>
+          <div class="glose-fr">Bete sauvage — qui tue des hommes.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>חֶרֶב</b> חֲייָלוֹת הַהוֹלְכִין לַהֲרֹוג וּלְהַשְׁחִית בְּכָל מָקוֹם:</div>
+          <div class="glose-fr">L&#x27;epee — des troupes qui vont tuer et detruire en tout lieu.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La michna passe d'une geographie a une autre. Les detresses du segment precedent restent locales ; celles-ci se deplacent, et la hatra'a devient donc mondiale. Rachi prend volontairement les deux extremites du monde connu, <b>Aspamia</b> et la <b>Babylonie</b> : on crie a l'une pour ce qui s'est produit a l'autre.</p><p>Le motif est donne par la michna elle-meme : <b>maka mehalekhet</b>, une plaie qui marche. La hatra'a n'y repond pas a un malheur deja subi, elle vise le malheur en chemin. Les cinq cas listes ont ce trait commun : nuees d'insectes, betes qui sortent de leur territoire, armees en campagne, maladies du grain qui suivent le vent.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 276" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+<text x="20" y="26" font-size="14" font-weight="bold" fill="#22323f">Maka mehalekhet : la plaie qui marche</text>
+<rect x="20" y="42" width="200" height="56" rx="8" fill="#fdf7f5" stroke="#c07a56"/>
+<text x="32" y="64" font-size="11" font-weight="bold" fill="#6b3419">Aspamia</text>
+<text x="32" y="82" font-size="10" fill="#6b3419">La plaie y est vue.</text>
+<path d="M224 70 L392 70" stroke="#c07a56" stroke-width="1.8" marker-end="url(#a19b)"/>
+<defs><marker id="a19b" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#c07a56"/></marker></defs>
+<text x="252" y="62" font-size="10" fill="#6b3419">On fait la hatra'a la-bas aussi</text>
+<rect x="396" y="42" width="200" height="56" rx="8" fill="#eef2f8" stroke="#3b5b8c"/>
+<text x="408" y="64" font-size="11" font-weight="bold" fill="#1d3550">Babylonie</text>
+<text x="408" y="82" font-size="10" fill="#1d3550">Encore intacte.</text>
+<rect x="612" y="42" width="128" height="56" rx="8" fill="#eef4ee" stroke="#3f7a4a"/>
+<text x="624" y="64" font-size="10.5" font-weight="bold" fill="#25502f">Et l'inverse</text>
+<text x="624" y="82" font-size="10" fill="#25502f">de meme.</text>
+<text x="20" y="124" font-size="12" font-weight="bold" fill="#22323f">Les six cas de la liste</text>
+<rect x="20" y="134" width="172" height="48" rx="6" fill="#f8fafc" stroke="#c8d0da"/>
+<text x="32" y="154" font-size="10.5" font-weight="bold" fill="#3c4a58">Chidafon</text>
+<text x="32" y="171" font-size="10" fill="#3c4a58">Le grain brule.</text>
+<rect x="198" y="134" width="172" height="48" rx="6" fill="#f8fafc" stroke="#c8d0da"/>
+<text x="210" y="154" font-size="10.5" font-weight="bold" fill="#3c4a58">Yerakon</text>
+<text x="210" y="171" font-size="10" fill="#3c4a58">Le grain jauni.</text>
+<rect x="376" y="134" width="172" height="48" rx="6" fill="#f8fafc" stroke="#c8d0da"/>
+<text x="388" y="154" font-size="10.5" font-weight="bold" fill="#3c4a58">Arbe</text>
+<text x="388" y="171" font-size="10" fill="#3c4a58">La sauterelle.</text>
+<rect x="554" y="134" width="186" height="48" rx="6" fill="#f8fafc" stroke="#c8d0da"/>
+<text x="566" y="154" font-size="10.5" font-weight="bold" fill="#3c4a58">Hassil</text>
+<text x="566" y="171" font-size="10" fill="#3c4a58">Sauterelle en nuee.</text>
+<rect x="20" y="188" width="350" height="48" rx="6" fill="#f8fafc" stroke="#c8d0da"/>
+<text x="32" y="208" font-size="10.5" font-weight="bold" fill="#3c4a58">Haya ra'a, la bete sauvage</text>
+<text x="32" y="225" font-size="10" fill="#3c4a58">Elle sort de son territoire et tue des hommes.</text>
+<rect x="376" y="188" width="364" height="48" rx="6" fill="#f8fafc" stroke="#c8d0da"/>
+<text x="388" y="208" font-size="10.5" font-weight="bold" fill="#3c4a58">Herev, l'epee</text>
+<text x="388" y="225" font-size="10" fill="#3c4a58">Des troupes en campagne, qui passent de lieu en lieu.</text>
+<rect x="20" y="244" width="720" height="26" rx="5" fill="#fbf7ec" stroke="#d9c58a"/>
+<text x="34" y="261" font-size="10" font-weight="bold" fill="#6b5312">Trait commun : chacune de ces plaies avance. On crie donc avant de l'avoir subie.</text>
+</svg></div><div class="svg-cap">La hatra&#x27;a devient universelle des que la detresse est mobile ; la distance ne protege plus.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַעֲשֶׂה שֶׁיָּרְדוּ זְקֵנִים מִירוּשָׁלַיִם לְעָרֵיהֶם, וְגָזְרוּ תַּעֲנִית עַל שֶׁנִּרְאָה כִּמְלֹא פִּי תַנּוּר שִׁדָּפוֹן בְּאַשְׁקְלוֹן. וְעוֹד גָּזְרוּ תַּעֲנִית עַל שֶׁאָכְלוּ זְאֵבִים שְׁנֵי תִינוֹקוֹת בְּעֵבֶר הַיַּרְדֵּן. רַבִּי יוֹסֵי אוֹמֵר: לֹא עַל שֶׁאָכְלוּ, אֶלָּא עַל שֶׁנִּרְאוּ.</div>
+            <div class="fr"><p>Il est arrive que des anciens descendent de Jerusalem vers leurs villes et decretent un jeune parce qu&#x27;on avait vu, de quoi remplir la bouche d&#x27;un four, du chidafon a Achkelon. Et ils ont encore decrete un jeune parce que des loups avaient devore deux enfants en Transjordanie.</p><p>Rabbi Yossi dit : on l&#x27;a decrete non pour les avoir devores, mais pour avoir ete vus.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(5)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מָלֵא תַּנּוּר</b> מְפָרֵשׁ בַּגְּמָרָא:</div>
+          <div class="glose-fr">De quoi remplir un four — la guemara l&#x27;explique.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְעָרֵיהֶם</b> בא&quot;י:</div>
+          <div class="glose-fr">Vers leurs villes — en Terre d&#x27;Israel.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּאַשְׁקְלוֹן</b> בְּאֶרֶץ פְּלִשְׁתִּים:</div>
+          <div class="glose-fr">A Achkelon — au pays des Philistins.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְעַל שֶׁאָכְלוּ זְאֵבִים</b> שֶׁהִיא חַיָּה רָעָה וּמַכָּה מְהַלֶּכֶת הִיא:</div>
+          <div class="glose-fr">Et pour ce que des loups avaient devore — car c&#x27;est une bete sauvage, et c&#x27;est une plaie qui marche.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁנִּרְאוּ</b> וּבָאוּ בָּעִיר:</div>
+          <div class="glose-fr">Qu&#x27;ils ont ete vus — et qu&#x27;ils etaient entres dans la ville.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deux precedents illustrent la regle precedente. Le premier montre a quel point le seuil est bas quand la plaie se propage : une quantite de grain brule tenant dans la bouche d'un four, vue dans une seule ville, suffit a faire decreter un jeune dans tout le pays. Rachi renvoie a la guemara pour la mesure exacte.</p><p>Le second precedent porte sur les loups. <b>Rabbi Yossi</b> deplace le motif du jeune : le fait declencheur est l'apparition des betes dans une zone habitee, et non le deces des deux enfants. Sa lecture rend le jeune coherent avec la clause « plaie qui marche » : l'evenement est traite comme un debut, et non comme un bilan.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">עַל אֵלּוּ מַתְרִיעִין בְּשַׁבָּת: עַל עִיר שֶׁהִקִּיפוּהָ נָכְרִים אוֹ נָהָר, וְעַל הַסְּפִינָה הַמִּיטָּרֶפֶת בַּיָּם. רַבִּי יוֹסֵי אוֹמֵר: לַעֲזָרָה וְלֹא לִצְעָקָה. שִׁמְעוֹן הַתֵּימְנִי אוֹמֵר: אַף עַל הַדָּבָר, וְלֹא הוֹדוּ לוֹ חֲכָמִים.</div>
+            <div class="fr"><p>Pour ceux-ci on fait la hatra&#x27;a le chabbat : pour une ville encerclee par des non-Juifs ou par un fleuve, et pour le navire balotte en mer. Rabbi Yossi dit : pour le secours, sans aller jusqu&#x27;au cri.</p><p>Chimon HaTimni dit : meme pour le dever ; les Sages ne lui ont pas donne raison.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַתְרִיעִין</b> בַּעֲנָנוֹ:</div>
+          <div class="glose-fr">On fait la hatra&#x27;a — par la priere Anenou.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַמְטֹורֶפֶת</b> מִלְּשׁוֹן טָרַף אַבָּבָא (בְּרָכוֹת דַּף כֹּח.) וּמִלְּשׁוֹן בֵּיצָה טְרוּפָה (עִדִּיּוֹת פ&quot;ב מ&quot;ד) כּוּ&#x27; כְּדִמְפָרֵשׁ בַּפֶּרֶק שֶׁלְּמַעְלָה (דַּף יד.):</div>
+          <div class="glose-fr">Balotte — du meme mot que taraf abava, frapper a la porte (Berakhot 28a), et que betsa teroufa, un oeuf battu (Eduyot 2:4), etc., comme cela est explique au chapitre precedent (14a).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שִׁמְעוֹן הַתֵּימְנִי</b> מִתְמַנֶּה הָיָה:</div>
+          <div class="glose-fr">Chimon HaTimni — il etait de Timna.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le chabbat, le chofar est ecarte et la hatra'a se reduit a la priere. Rachi le precise d'un mot : <b>be-Anenou</b>, par la formule Anenou inseree dans la priere. Les trois cas admis ont en commun un danger immediat pour des vies : un siege, une crue, un naufrage.</p><p><b>Rabbi Yossi</b> distingue deux fonctions d'un meme geste. Sonner pour appeler du monde a la rescousse est un acte de secours et reste permis ; sonner comme cri d'imploration publique ne l'est pas le chabbat. <b>Chimon HaTimni</b> voudrait ajouter le dever, qui frappe sans qu'un secours humain puisse intervenir ; les Sages refusent, ce qui confirme que le critere retenu est la possibilite d'agir.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 286" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+<text x="20" y="26" font-size="14" font-weight="bold" fill="#22323f">La hatra'a le chabbat : ce qui est admis, ce qui est refuse</text>
+<rect x="20" y="42" width="230" height="64" rx="8" fill="#eef4ee" stroke="#3f7a4a"/>
+<text x="32" y="62" font-size="10.5" font-weight="bold" fill="#25502f">Ville encerclee</text>
+<text x="32" y="80" font-size="10" fill="#3c4a58">Par des troupes non juives</text>
+<text x="32" y="96" font-size="10" fill="#3c4a58">ou par un fleuve en crue.</text>
+<rect x="264" y="42" width="230" height="64" rx="8" fill="#eef4ee" stroke="#3f7a4a"/>
+<text x="276" y="62" font-size="10.5" font-weight="bold" fill="#25502f">Navire balotte</text>
+<text x="276" y="80" font-size="10" fill="#3c4a58">Une embarcation en peril</text>
+<text x="276" y="96" font-size="10" fill="#3c4a58">au large.</text>
+<rect x="508" y="42" width="232" height="64" rx="8" fill="#fdf7f5" stroke="#c07a56"/>
+<text x="520" y="62" font-size="10.5" font-weight="bold" fill="#6b3419">Dever</text>
+<text x="520" y="80" font-size="10" fill="#6b3419">Propose par Chimon HaTimni,</text>
+<text x="520" y="96" font-size="10" fill="#6b3419">refuse par les Sages.</text>
+<rect x="20" y="120" width="474" height="30" rx="6" fill="#eef2f8" stroke="#8fa6c4"/>
+<text x="34" y="140" font-size="10.5" font-weight="bold" fill="#1d3550">Point commun : une action humaine peut encore changer l'issue.</text>
+<rect x="508" y="120" width="232" height="30" rx="6" fill="#fdf7f5" stroke="#d9a894"/>
+<text x="520" y="140" font-size="10.5" fill="#6b3419">Aucun secours a organiser.</text>
+<text x="20" y="176" font-size="12" font-weight="bold" fill="#22323f">La distinction de Rabbi Yossi</text>
+<rect x="20" y="186" width="352" height="74" rx="8" fill="#f8fafc" stroke="#3f7a4a"/>
+<text x="32" y="206" font-size="10.5" font-weight="bold" fill="#25502f">La-ezra : pour le secours</text>
+<text x="32" y="224" font-size="10" fill="#3c4a58">Le son appelle du monde a venir aider.</text>
+<text x="32" y="240" font-size="10" fill="#3c4a58">C'est un acte de sauvetage.</text>
+<text x="32" y="254" font-size="10.5" font-weight="bold" fill="#25502f">Permis le chabbat.</text>
+<rect x="388" y="186" width="352" height="74" rx="8" fill="#f8fafc" stroke="#c07a56"/>
+<text x="400" y="206" font-size="10.5" font-weight="bold" fill="#6b3419">La-tse'aka : pour le cri</text>
+<text x="400" y="224" font-size="10" fill="#3c4a58">Le son est le cri public d'imploration,</text>
+<text x="400" y="240" font-size="10" fill="#3c4a58">sans effet materiel sur le danger.</text>
+<text x="400" y="254" font-size="10.5" font-weight="bold" fill="#6b3419">Ecarte le chabbat.</text>
+<rect x="20" y="266" width="720" height="14" rx="4" fill="#fbf7ec" stroke="#d9c58a"/>
+<text x="34" y="277" font-size="9.5" font-weight="bold" fill="#6b5312">Rachi : le chabbat, la hatra'a passe par la priere Anenou.</text>
+</svg></div><div class="svg-cap">Le critere retenu est la marge d&#x27;action : le chabbat, on sonne pour ce qu&#x27;un secours peut encore atteindre.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">עַל כָּל צָרָה שֶׁלֹּא תָּבוֹא עַל הַצִּבּוּר מַתְרִיעִין עֲלֵיהֶן, חוּץ מֵרֹוב גְּשָׁמִים. מַעֲשֶׂה שֶׁאָמְרוּ לוֹ לְחוֹנִי הַמְעַגֵּל, הִתְפַּלֵּל שֶׁיָּרְדוּ גְּשָׁמִים. אָמַר לָהֶם: צְאוּ וְהַכְנִיסוּ תַּנּוּרֵי פְסָחִים בִּשְׁבִיל שֶׁלֹּא יִמּוֹקוּ. הִתְפַּלֵּל וְלֹא יָרְדוּ גְּשָׁמִים.</div>
+            <div class="fr"><p>Pour toute detresse qui ne viendrait pas sur la collectivite, on fait la hatra&#x27;a, hormis l&#x27;exces de pluie. Il est arrive qu&#x27;on dise a Honi HaMeaguel : prie pour que la pluie tombe.</p><p>Il leur dit : sortez et rentrez les fours a agneaux pascaux, pour qu&#x27;ils ne se dissolvent pas. Il pria, et la pluie ne tomba pas.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁלֹּא תָּבֹא</b> לִישָּׁנָא מְעַלְּיָא נְקַט:</div>
+          <div class="glose-fr">Qui ne viendrait pas — il a employe une expression de bon augure.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מֵרֹוב גְּשָׁמִים</b> לָאו כְּגוֹן שֶׁיָּרְדָה עַל עִיר אֶחָת וְעַל עִיר אַחַת לֹא יָרְדָה שֶׁשָּׁם וַדַּאי שְׁתֵּיהֶן לִקְלָלָה כִּדְאָמַר רַב יְהוּדָה (לְעֵיל תַּעֲנִית ו:) תִּמָּטֵר מְקוֹם מָטָר שֶׁמְּקַלְקֵל תְּבוּאָה אֶלָּא כְּבָר יָרְדוּ וְטוֹרֵחַ הֵם לִבְנֵי אָדָם אֲבָל אֵינָן מְקַלְקְלִין תְּבוּאוֹת וְטַעְמָא מְפָרֵשׁ בַּגְּמָרָא לָמָּה אֵין מַתְרִיעִין:</div>
+          <div class="glose-fr">De l&#x27;exces de pluie — il ne s&#x27;agit pas du cas ou elle est tombee sur une ville et pas sur une autre, car la, les deux sont assurement sous une malediction, comme l&#x27;a dit Rav Yehouda (plus haut, Taanit 6b) : « il pleuvra sur un endroit », d&#x27;une pluie qui abime la recolte ; il s&#x27;agit plutot du cas ou elles sont deja tombees et pesent aux hommes, sans pour autant abimer les recoltes. Et la guemara explique la raison pour laquelle on ne fait pas la hatra&#x27;a.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>תַּנּוּרֵי פְּסָחִים</b> שֶׁהֵם בַּחֲצֵרוֹת וְשֶׁל חֶרֶס הֵן וּמְטַלְטְלִין אוֹתָן שֶׁלֹּא יִמּוֹקוּ בַּגְּשָׁמִים:</div>
+          <div class="glose-fr">Les fours a agneaux pascaux — ils se trouvent dans les cours, ils sont en terre cuite, et on les deplace pour qu&#x27;ils ne se dissolvent pas sous la pluie.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La michna generalise, puis pose une exception. La formule « qui ne viendrait pas sur la collectivite » est un euphemisme, releve par Rachi : on evite de nommer directement le malheur. L'exception concerne l'<b>exces de pluie</b>, et Rachi en delimite soigneusement le champ : une pluie mal repartie qui gate les recoltes reste une malediction, pour laquelle on crie ; ici il s'agit d'une pluie abondante qui gene sans detruire.</p><p>Le recit de Honi s'enchaine sur cette clause. Sa premiere reaction est une consigne pratique : les fours en terre crue installes dans les cours pour rotir l'agneau pascal fondraient sous une forte pluie. Il annonce ainsi la pluie avant de l'avoir obtenue, et rien ne tombe.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מֶה עָשָׂה? עָג עוּגָה וְעָמַד בְּתוֹכָהּ, וְאָמַר לְפָנָיו: רִבּוֹנוֹ שֶׁל עוֹלָם! בָּנֶיךָ שָׂמוּ פְּנֵיהֶם עָלַי, שֶׁאֲנִי כְּבֶן בַּיִת לְפָנֶיךָ. נִשְׁבָּע אֲנִי בְּשִׁמְךָ הַגָּדוֹל שֶׁאֵינִי זָז מִכָּאן עַד שֶׁתְּרַחֵם עַל בָּנֶיךָ. הִתְחִילוּ גְּשָׁמִים מְנַטְּפִין. אָמַר: לֹא כָּךְ שָׁאַלְתִּי, אֶלָּא גִּשְׁמֵי בּוֹרוֹת שִׁיחִין וּמְעָרוֹת. הִתְחִילוּ לֵירֵד בְּזַעַף. אָמַר: לֹא כָּךְ שָׁאַלְתִּי, אֶלָּא גִּשְׁמֵי רָצוֹן בְּרָכָה וּנְדָבָה.</div>
+            <div class="fr"><p>Que fit-il ? Il traca un cercle et se tint a l&#x27;interieur, et dit devant Lui : Maitre du monde, Tes enfants ont tourne leur visage vers moi, car je suis comme un familier de Ta maison.</p><p>Je jure par Ton grand Nom que je ne bougerai pas d&#x27;ici avant que Tu aies pitie de Tes enfants. La pluie commenca a tomber en gouttes.</p><p>Il dit : ce n&#x27;est pas ainsi que j&#x27;ai demande, mais des pluies de citernes, de fosses et de grottes. Elle commenca a tomber avec violence.</p><p>Il dit : ce n&#x27;est pas ainsi que j&#x27;ai demande, mais des pluies de bienveillance, de benediction et de largesse.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>גִּשְׁמֵי בּוֹרוֹת</b> שִׁיפּוּעַ גְּשָׁמִים לְמַלֹּאות בּוֹרוֹת:</div>
+          <div class="glose-fr">Des pluies de citernes — un ecoulement de pluie suffisant pour remplir les citernes.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּנְדָבוֹת</b> רָצוֹן וְעַיִן יָפָה:</div>
+          <div class="glose-fr">Et de largesse — de la bienveillance et un oeil genereux.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le cercle trace au sol, l'<b>ouga</b>, donne son surnom a Honi. Il pose un lieu dont il s'interdit de sortir, et son serment lie sa priere a une position physique. Le titre qu'il s'attribue, « comme un familier de la maison » (ke-ven bayit), est la cle du passage et sera reprise par Chimon ben Chetah au segment 8.</p><p>Viennent ensuite deux corrections. Les gouttes sont insuffisantes : la demande portait sur des <b>guichmei borot chihin ou-me'arot</b>, des pluies capables de remplir les reserves d'eau pour l'annee. La pluie violente est excessive : la demande portait sur une pluie de <b>ratson, berakha ou-nedava</b>, recue avec bienveillance. Rachi glose nedava par « un oeil genereux » : la mesure demandee est celle d'un don, et non d'une decharge.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">יָרְדוּ כְּתִקְנָן, עַד שֶׁיָּצְאוּ יִשְׂרָאֵל מִירוּשָׁלַיִם לְהַר הַבַּיִת מִפְּנֵי הַגְּשָׁמִים. בָּאוּ וְאָמְרוּ לוֹ: כְּשֵׁם שֶׁהִתְפַּלַּלְתָּ עֲלֵיהֶם שֶׁיֵּרְדוּ — כָּךְ הִתְפַּלֵּל שֶׁיֵּלְכוּ לָהֶן. אָמַר לָהֶם: צְאוּ וּרְאוּ אִם נִמְחֵית אֶבֶן הַטּוֹעִין.</div>
+            <div class="fr"><p>Elles tomberent comme il faut, jusqu&#x27;a ce qu&#x27;Israel sorte de Jerusalem vers le mont du Temple a cause des pluies. Ils vinrent et lui dirent : de meme que tu as prie pour elles afin qu&#x27;elles tombent, prie de meme pour qu&#x27;elles s&#x27;en aillent.</p><p>Il leur dit : sortez et voyez si la Pierre des Reclamants s&#x27;est dissoute.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶבֶן הַטּוֹעִין</b> אֶבֶן טוֹעִין הָיְתָה בִּירוּשָׁלַיִם וְכָל מִי שֶׁאָבְדָה לוֹ אֲבֵידָה כו&#x27; בְּבָבָא מְצִיעָא (דַּף כֹּח:):</div>
+          <div class="glose-fr">La Pierre des Reclamants — il y avait a Jerusalem une Pierre des Reclamants, et quiconque avait perdu un objet, etc., dans Bava Metsia (28b).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La pluie ajustee devient a son tour un probleme : la ville basse est inondee et la population se replie sur le point haut, le mont du Temple. La demande s'inverse donc, mais la michna n'emploie toujours pas le vocabulaire de la hatra'a : on demande une <b>priere</b>, conformement a la clause qui exclut l'exces de pluie de la liste des detresses.</p><p>La reponse de Honi est un critere, non un refus. La <b>even hato'in</b>, la Pierre des Reclamants, est le point de Jerusalem ou l'on annoncait les objets perdus et retrouves (Bava Metsia 28b). Tant qu'une pierre de cette taille tient, l'eau n'a pas atteint le degre ou l'on prie pour que la benediction cesse.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">שָׁלַח לוֹ שִׁמְעוֹן בֶּן שָׁטָח: אִלְמָלֵא חוֹנִי אַתָּה — גּוֹזְרַנִי עָלֶיךָ נִידּוּי. אֲבָל מָה אֶעֱשֶׂה לְּךָ, שֶׁאַתָּה מִתְחַטֵּא לִפְנֵי הַמָּקוֹם וְעוֹשֶׂה לְךָ רְצוֹנְךָ כְּבֵן שֶׁהוּא מִתְחַטֵּא עַל אָבִיו וְעוֹשֶׂה לוֹ רְצוֹנוֹ, וְעָלֶיךָ הַכָּתוּב אוֹמֵר: ״יִשְׂמַח אָבִיךָ וְאִמֶּךָ וְתָגֵל יוֹלַדְתֶּךָ״.</div>
+            <div class="fr"><p>Chimon ben Chetah lui fit dire : si tu n&#x27;etais pas Honi, je decreterais contre toi le nidouy (mise a l&#x27;ecart). Mais que puis-je te faire, puisque tu te fais cajoler devant HaMakom et qu&#x27;Il accomplit ta volonte, comme un fils qui se fait cajoler par son pere et dont le pere accomplit la volonte.</p><p>Et de toi l&#x27;Ecriture dit : « Que ton pere et ta mere se rejouissent, et que celle qui t&#x27;a enfante soit dans l&#x27;allegresse. »</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְנַדּוֹת</b> עַל כְּבוֹד הָרַב:</div>
+          <div class="glose-fr">De mettre au nidouy — pour l&#x27;honneur du maitre.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִתְחַטֵּא</b> פורפיי&quot;ש בְּלַעַ&quot;ז יִשְׂמַח אָבִיךָ וְאִמֶּךָ וְתָגֵל יוֹלַדְתֶּךָ:</div>
+          <div class="glose-fr">Mithate — porfeies en langue vernaculaire. « Que ton pere et ta mere se rejouissent, et que celle qui t&#x27;a enfante soit dans l&#x27;allegresse. »</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Chimon ben Chetah, a la tete du Sanhedrin, enonce d'abord la sanction encourue. Rachi en donne le motif : le <b>nidouy</b> serait prononce « pour l'honneur du maitre », c'est-a-dire pour la maniere dont Honi a impose un serment et fixe les conditions de la reponse.</p><p>Puis il renonce, et le mot decisif est <b>mithate</b> : se comporter comme l'enfant familier qui obtient ce qu'il reclame. Rachi le glose par un terme de vieux francais. Le reproche et la reconnaissance tiennent ensemble : la conduite serait reprehensible chez un autre, et le resultat obtenu atteste la place particuliere de Honi. Le verset des Proverbes (23:25) referme le passage sur l'image du pere et de l'enfant deja employee par Honi lui-meme.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָיוּ מִתְעַנִּין וְיָרְדוּ לָהֶם גְּשָׁמִים, קֹודֶם הָנֵץ הַחַמָּה — לֹא יַשְׁלִימוּ, לְאַחַר הָנֵץ הַחַמָּה — יַשְׁלִימוּ. רַבִּי אֱלִיעֶזֶר אוֹמֵר: קֹודֶם חֲצוֹת — לֹא יַשְׁלִימוּ, לְאַחַר חֲצוֹת — יַשְׁלִימוּ.</div>
+            <div class="fr"><p>S&#x27;ils jeunaient et que la pluie tomba pour eux : avant le lever du soleil — ils n&#x27;achevent pas ; apres le lever du soleil — ils achevent. Rabbi Eliezer dit : avant midi — ils n&#x27;achevent pas ; apres midi — ils achevent.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>קֹודֶם הָנֵץ הַחַמָּה לֹא יַשְׁלִימוּ</b> דְּאַכַּתִּי לֹא חָל עֲלַייְהוּ תַּעֲנִית כִּי נָחֲתִי גְּשָׁמִים:</div>
+          <div class="glose-fr">Avant le lever du soleil, ils n&#x27;achevent pas — car le jeune n&#x27;avait pas encore pris effet sur eux lorsque les pluies sont tombees.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>קֹודֶם חֲצוֹת</b> דַּחֲצוֹת זְמַן אֲכִילָה הִיא מֵחֲצוֹת וְאֵילָךְ חָל הַתַּעֲנִית כֵּיוָן שֶׁלֹּא סָעֲדוּ בִּשְׁעַת סְעוּדָה:</div>
+          <div class="glose-fr">Avant midi — car midi est l&#x27;heure du repas : a partir de midi, le jeune prend effet, puisqu&#x27;ils n&#x27;ont pas mange a l&#x27;heure du repas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La question est celle du moment ou un jeune decrete devient contraignant. Tant qu'il n'a pas pris effet, la pluie recue le rend sans objet et l'on peut manger ; une fois pris effet, il doit etre mene a son terme.</p><p>Les deux avis placent la frontiere a des heures differentes, et Rachi donne pour chacun sa logique. Pour l'avis anonyme, le jeune commence avec le jour : le <b>lever du soleil</b> marque son entree en vigueur. Pour <b>Rabbi Eliezer</b>, ce qui lie n'est pas le debut du jour mais la privation effective : midi etant l'heure du repas, le jeune ne devient reel qu'a partir du moment ou ce repas a ete manque.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 268" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+<text x="20" y="26" font-size="14" font-weight="bold" fill="#22323f">A quelle heure le jeune commence-t-il a lier ?</text>
+<rect x="20" y="44" width="720" height="26" rx="5" fill="#e7ebf1" stroke="#8a94a0"/>
+<text x="34" y="62" font-size="10.5" fill="#3c4a58">Journee du jeune decrete pour la pluie. La pluie tombe a un moment de cette journee.</text>
+<line x1="60" y1="106" x2="700" y2="106" stroke="#8a94a0" stroke-width="2"/>
+<line x1="196" y1="96" x2="196" y2="116" stroke="#3b5b8c" stroke-width="2"/>
+<text x="150" y="90" font-size="10.5" font-weight="bold" fill="#1d3550">Lever du soleil</text>
+<line x1="420" y1="96" x2="420" y2="116" stroke="#c07a56" stroke-width="2"/>
+<text x="396" y="90" font-size="10.5" font-weight="bold" fill="#6b3419">Midi</text>
+<text x="644" y="90" font-size="10.5" fill="#3c4a58">Le soir</text>
+<text x="20" y="140" font-size="12" font-weight="bold" fill="#1d3550">Avis anonyme</text>
+<rect x="150" y="126" width="260" height="34" rx="6" fill="#eef4ee" stroke="#3f7a4a"/>
+<text x="162" y="148" font-size="10.5" fill="#25502f">Pluie avant le lever : on interrompt.</text>
+<rect x="418" y="126" width="322" height="34" rx="6" fill="#fdf7f5" stroke="#c07a56"/>
+<text x="430" y="148" font-size="10.5" fill="#6b3419">Pluie apres le lever : on acheve la journee.</text>
+<text x="20" y="184" font-size="12" font-weight="bold" fill="#6b3419">Rabbi Eliezer</text>
+<rect x="150" y="170" width="268" height="34" rx="6" fill="#eef4ee" stroke="#3f7a4a"/>
+<text x="162" y="192" font-size="10.5" fill="#25502f">Pluie avant midi : on interrompt.</text>
+<rect x="426" y="170" width="314" height="34" rx="6" fill="#fdf7f5" stroke="#c07a56"/>
+<text x="438" y="192" font-size="10.5" fill="#6b3419">Pluie apres midi : on acheve la journee.</text>
+<rect x="20" y="214" width="356" height="44" rx="6" fill="#eef2f8" stroke="#8fa6c4"/>
+<text x="32" y="232" font-size="10" font-weight="bold" fill="#1d3550">Raison de l'avis anonyme (Rachi)</text>
+<text x="32" y="249" font-size="10" fill="#1d3550">Le jeune prend effet avec le jour lui-meme.</text>
+<rect x="384" y="214" width="356" height="44" rx="6" fill="#fbf7ec" stroke="#d9c58a"/>
+<text x="396" y="232" font-size="10" font-weight="bold" fill="#6b5312">Raison de Rabbi Eliezer (Rachi)</text>
+<text x="396" y="249" font-size="10" fill="#6b5312">Il prend effet quand le repas de midi a ete manque.</text>
+</svg></div><div class="svg-cap">La nafka mina porte sur la matinee : la pluie tombee entre le lever du soleil et midi interrompt le jeune pour Rabbi Eliezer seulement.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַעֲשֶׂה שֶׁגָּזְרוּ תַּעֲנִית בְּלֹוד, וְיָרְדוּ לָהֶם גְּשָׁמִים קֹודֶם חֲצוֹת. אֲמַר לָהֶם רַבִּי טַרְפוֹן: צְאוּ וְאִכְלוּ וּשְׁתוּ וַעֲשׂוּ יוֹם טוֹב, וְיָצְאוּ וְאָכְלוּ וְשָׁתוּ וְעָשׂוּ יוֹם טוֹב, וּבָאוּ בֵּין הָעַרְבַּיִם וְקָרְאוּ הַלֵּל הַגָּדוֹל.</div>
+            <div class="fr"><p>Il est arrive qu&#x27;on decrete un jeune a Lod, et que la pluie tombe pour eux avant midi. Rabbi Tarfon leur dit : sortez, mangez, buvez et faites un jour de fete.</p><p>Ils sortirent, mangerent, burent et firent un jour de fete ; puis ils revinrent a l&#x27;heure de l&#x27;apres-midi et lurent le Hallel HaGadol.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְעָשׂוּ יו&quot;ט</b> מִתּוֹךְ שִׂמְחָה:</div>
+          <div class="glose-fr">Et ils firent un jour de fete — du fait de la joie.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַלֵּל הַגָּדוֹל</b> הוֹדוּ לֵאלֹהֵי הָאֱלֹהִים כִּי לְעוֹלָם חַסְדּוֹ וּמִפְּנֵי שֶׁנֶּאֱמַר בּוֹ נֹותֵן לֶחֶם לְכָל בָּשָׂר כִּדְאָמְרִינַן בְּשִׁילְהֵי פְּסָחִים (דַּף קיח.):</div>
+          <div class="glose-fr">Le Hallel HaGadol — « Rendez grace au D. des dieux, car Sa bonte est eternelle » ; et parce qu&#x27;il y est dit « Il donne du pain a toute chair », comme nous le disons a la fin de Pessahim (118a).</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">ת&quot;ר הֲרֵי שֶׁהָיָה מִתְעַנֶּה עַל הַחוֹלֶה וְנִתְרַפֵּא בָּאוּ עַל הַצַּעַר וְעָבְרָה הֲרֵי זֶה מִתְעַנֶּה וּמַשְׁלִים. הִקְשָׁה הָרָאָבָ&quot;ד זַ&quot;ל מַאי שְׁנָא מִתַּעֲנִית גְּשָׁמִים (לְקַמָּן תַּעֲנִית דַּף יט.) שֶׁמַּפְסִיקִין בַּיּוֹם אִם יָרְדוּ לָהֶם גְּשָׁמִים קֹודֶם חֲצוֹת. וְתֵירֵץ דְּשָׁאנֵי תַּעֲנִית גְּשָׁמִים דְּכֵיוָן שֶׁיָּרְדוּ לָהֶם גְּשָׁמִים כָּל צָורְכָן שׁוּב אֵין לָהֶן צֹורֶךְ בָּזֶה הַפַּעַם אֲבָל צָרָה אַחֶרֶת כָּל שָׁעָה צָרִיךְ רַחֲמִים שֶׁלֹּא תַּחֲזֹור. וְאֵינוֹ טַעַם מַסְפִּיק דְּבִגְשָׁמִים נָמֵי אֲפִילּוּ לֹא יָרַד לָהֶן כָּל צָרְכָן אוֹכְלִין וְשׁוֹתִין וּשְׂמֵחִים וְאוֹמְרִים הַלֵּל לְפִי שֶׁנִּתְקַבְּלָה תְּפִלָּתָם וּבוֹטְחִים בְּבוֹרֵא שֶׁיָּרְדוּ לָהֶם כָּל הַצֹּורֶךְ. וְזֶה שַׁייָּךְ לוֹמַר אַף בִּשְׁאָר צָרוֹת אֶלָּא נ&quot;ל לְחַלֵּק בֵּין צִבּוּר לְיָחִיד דְּצִבּוּר צְרִיכִין לְהַלֵּל וּלְהוֹדוֹת מִתּוֹךְ שִׂמְחָה וּבְכֶרֶס מְלֵאָה אֵבֶל יָחִיד מַשְׁלִים תַּעֲנִיתוֹ וְכֵן מַשְׁמַע מִתּוֹךְ הָרַמְבַּ&quot;ם זַ&quot;ל (פ&quot;א מֹהַל&#x27; תַּעֲנִית הֵל&#x27; טז) שֶׁכָּתַב גַּבֵּי צִבּוּר שֶׁהָיוּ מִתְעַנִּים וְיָרְדוּ גְּשָׁמִים קֹודֶם חֲצוֹת שֶׁמַּפְסִיקִין. וְכֵן אִם מִתְעַנִּין עַל צָרָה וְעָבְרָה וְעַל ד&quot;א וּבָטֵל. אִם קֹודֶם חֲצוֹת לֹא יַשְׁלִימוּ לְאַחַר חֲצוֹת יַשְׁלִימוּ. אַלְמָא לָא מְפַלֵּיג בְּצִבּוּר בֵּין גְּשָׁמִים וּבֵין צָרוֹת א&quot;כ צָרִיךְ לְחַלֵּק בֵּין צִבּוּר וּבֵין יָחִיד הֲרֵי זֶה מְשַׁלֵּים כָּל הַתַּעֲנִיּוֹת שֶׁקִּיבֵּל עָלָיו. וְנִרְאֶה דה&quot;ה נָמֵי אִם מֵת הַחוֹלֶה דְּכֵיוָן שֶׁקִּבֵּל עָלָיו תַּעֲנִיּוֹת סְתָם וְלֹא הִתְנָה דַּעְתּוֹ הָיָה אַקַּבָּלָה זוֹ מִתּוֹךְ שֶׁקִּיבֵּל עָלָיו תַּעֲנִיּוֹת הַלָּלוּ תִּהְיֶה מְקֻובָּל תְּפִלָּתוֹ שֶׁיִּתְפַּלֵּל עַל הַחוֹלֶה וְעַל הַצָּרָה. וְהַאי דִּנְקַט וְנִתְרַפֵּא מִשּׁוּם דִּבְדָבָר זֶה יֵשׁ חִילּוּק בֵּין צִבּוּר לְיָחִיד:</div>
+          <div class="glose-fr">Nos maitres ont enseigne : si quelqu&#x27;un jeunait pour un malade et que celui-ci a gueri, ou pour une douleur et que celle-ci est passee, il jeune et acheve son jeune. Le Raavad, de memoire benie, a objecte : en quoi cela differe-t-il du jeune pour la pluie (plus bas, Taanit 19a), que l&#x27;on interrompt en pleine journee si la pluie est tombee avant midi ? Il a repondu que le jeune pour la pluie est different : du moment que la pluie est tombee autant qu&#x27;il leur fallait, ils n&#x27;en ont plus besoin cette fois-ci ; alors que pour une autre detresse, il faut a chaque instant de la misericorde afin qu&#x27;elle ne revienne pas. Cette raison ne suffit pas, car pour la pluie aussi, meme si elle n&#x27;est pas tombee autant qu&#x27;il leur fallait, ils mangent, boivent, se rejouissent et disent le Hallel, parce que leur priere a ete recue, et ils s&#x27;appuient sur le Createur pour qu&#x27;il leur en tombe tout ce qu&#x27;il faut ; or cela peut se dire aussi des autres detresses. Il me semble plutot qu&#x27;il faut distinguer entre la collectivite (tsibour) et l&#x27;individu (yahid) : la collectivite doit louer et rendre grace dans la joie et le ventre plein, tandis que l&#x27;individu acheve son jeune. C&#x27;est aussi ce qui ressort du Rambam, de memoire benie (Lois des jeunes, chapitre 1, halakha 16), qui ecrit a propos d&#x27;une collectivite qui jeunait et pour qui la pluie est tombee avant midi, qu&#x27;ils interrompent ; et de meme s&#x27;ils jeunent pour une detresse et qu&#x27;elle est passee, ou pour autre chose et qu&#x27;elle a cesse : avant midi, ils n&#x27;achevent pas ; apres midi, ils achevent. Il en ressort qu&#x27;il ne distingue pas, pour la collectivite, entre la pluie et les autres detresses. Il faut donc distinguer entre la collectivite et l&#x27;individu : celui-ci acheve tous les jeunes qu&#x27;il a pris sur lui. Et il semble qu&#x27;il en aille de meme si le malade est mort : puisqu&#x27;il a pris sur lui des jeunes sans precision et n&#x27;a pose aucune condition, son intention, en prenant cet engagement, etait que du fait meme d&#x27;avoir pris ces jeunes sur lui, sa priere soit recue lorsqu&#x27;il prierait pour le malade et pour la detresse. Et si la baraita a retenu le cas ou il a gueri, c&#x27;est parce que sur ce point precis il y a une difference entre la collectivite et l&#x27;individu.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le precedent de Lod applique l'avis de Rabbi Eliezer : la pluie est tombee avant midi, et <b>Rabbi Tarfon</b> renvoie l'assemblee manger et boire. Il ajoute un element que la michna precedente ne demandait pas : la journee devient un jour de fete.</p><p>Le <b>Hallel HaGadol</b> est le psaume 136, lu l'apres-midi. Rachi en donne la raison : on y lit « Il donne du pain a toute chair », verset qui repond exactement a une detresse de recolte. L'ordre des gestes compte : on mange d'abord, on rend grace ensuite.</p><p>Piskei HaRosh discute ici le cas parallele du <b>jeune individuel</b> pris pour un malade ou une douleur. Sa conclusion distingue le tsibour du yahid : la collectivite interrompt pour louer dans la joie, l'individu acheve le jeune qu'il a pris sur lui.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">גְּמָ׳ סֵדֶר תַּעֲנִיּוֹת הָאֵלּוּ הָאָמוּר בִּרְבִיעָה רִאשׁוֹנָה. וּרְמִינְהִי: רְבִיעָה רִאשׁוֹנָה וּשְׁנִיָּה לִשְׁאֹול, שְׁלִישִׁית לְהִתְעַנּוֹת!</div>
+            <div class="fr"><p>Guemara. [La michna a dit :] l&#x27;ordre de ces jeunes est enonce pour la premiere revi&#x27;a (periode de pluie).</p><p>Et l&#x27;on objecte : la premiere et la deuxieme revi&#x27;a, c&#x27;est pour demander ; la troisieme, c&#x27;est pour jeuner !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>גמ&#x27; רְבִיעָה רִאשׁוֹנָה וּשְׁנִיָּה לִשְׁאֹול</b> שֶׁאַף עַל פִּי שֶׁלֹּא יָרְדוּ גְּשָׁמִים לֹא בָּרִאשׁוֹנָה וְלֹא בַּשְּׁנִיָּה לֹא הָיוּ מִתְעַנִּין אֶלָּא שׁוֹאֲלִין וְקַשְׁיָין מַתְנִי&#x27; דְּקָתָנֵי סֵדֶר תַּעֲנִיּוֹת אֵלּוּ הָאָמוּר בִּרְבִיעָה רִאשׁוֹנָה וּבָרַיְיתָא אַהֲדָדֵי:</div>
+          <div class="glose-fr">Guemara. La premiere et la deuxieme revi&#x27;a, pour demander — car meme si les pluies ne sont tombees ni a la premiere ni a la deuxieme, ils ne jeunaient pas, mais demandaient ; et la michna, qui enseigne « l&#x27;ordre de ces jeunes est enonce pour la premiere revi&#x27;a », et la baraita se contredisent l&#x27;une l&#x27;autre.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara s'ouvre sur une contradiction de textes. La <b>revi'a</b> est une periode attendue de pluie dans la saison des semailles ; le traite en compte trois, echelonnees. La michna rattache tout le dispositif des jeunes progressifs a la premiere revi'a.</p><p>La baraita citee dit autre chose : les deux premieres revi'ot manquees appellent seulement une <b>demande</b> de pluie, et le jeune ne commence qu'a la troisieme. Rachi formule l'opposition dans ses propres termes : d'un cote un jeune des la premiere revi'a, de l'autre un jeune reporte a la troisieme.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב יְהוּדָה, הָכִי קָאָמַר: סֵדֶר תַּעֲנִיּוֹת הָאָמוּר אֵימָתַי — בִּזְמַן שֶׁיָּצְאָה רְבִיעָה רִאשׁוֹנָה וּשְׁנִיָּה וּשְׁלִישִׁית וְלֹא יָרְדוּ גְּשָׁמִים. אֲבָל יָרְדוּ גְּשָׁמִים בִּרְבִיעָה רִאשׁוֹנָה וְזָרְעוּ וְלֹא צָמְחוּ, אִי נָמֵי צָמְחוּ וְחָזְרוּ וְנִשְׁתַּנּוּ — מַתְרִיעִין עֲלֵיהֶן מִיָּד.</div>
+            <div class="fr"><p>Rav Yehouda dit : voici ce que la michna veut dire. L&#x27;ordre des jeunes enonce, quand s&#x27;applique-t-il ?</p><p>Lorsque la premiere, la deuxieme et la troisieme revi&#x27;a sont passees et que les pluies ne sont pas tombees. Mais si les pluies sont tombees a la premiere revi&#x27;a, qu&#x27;ils ont seme et que cela n&#x27;a pas leve, ou bien que cela a leve puis a change d&#x27;aspect — on fait la hatra&#x27;a pour eux immediatement.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָכִי קָאָמַר כּוּ&#x27;</b> וּכְגוֹן רְבִיעָה רִאשׁוֹנָה שְׁנִיָּה וּשְׁלִישִׁית דְּכֻולֵּי יוֹרֶה קָרֵי לֵיהּ רְבִיעָה כָּךְ שָׁמַעְתִּי:</div>
+          <div class="glose-fr">Voici ce qu&#x27;elle dit, etc. — a savoir la premiere, la deuxieme et la troisieme revi&#x27;a, car il appelle revi&#x27;a tout le yore (la saison des premieres pluies) ; ainsi l&#x27;ai-je entendu.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Yehouda resout la contradiction en relisant la michna. L'expression « la premiere revi'a » n'indique pas le moment ou l'on commence a jeuner, mais le <b>type de situation</b> auquel l'ordre des jeunes s'applique : une annee ou la pluie a manque depuis le debut de la saison, les trois revi'ot etant passees sans rien. Rachi ajoute que le mot revi'a peut designer toute la saison du <b>yore</b>, ce qui autorise cette lecture large.</p><p>Un second cas est alors distingue, qui echappe a l'ordre progressif : la pluie est bien tombee, on a seme, et la recolte echoue ensuite. Ici, la detresse est deja visible, et l'on passe directement a la hatra'a, <b>immediatement</b>, sans parcourir les paliers de jeunes.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 288" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+<text x="20" y="26" font-size="14" font-weight="bold" fill="#22323f">La contradiction des revi'ot et la reponse de Rav Yehouda</text>
+<rect x="20" y="42" width="352" height="72" rx="8" fill="#eef2f8" stroke="#3b5b8c"/>
+<text x="32" y="62" font-size="10.5" font-weight="bold" fill="#1d3550">La michna</text>
+<text x="32" y="80" font-size="10" fill="#3c4a58">L'ordre de ces jeunes est enonce</text>
+<text x="32" y="96" font-size="10" fill="#3c4a58">pour la premiere revi'a.</text>
+<text x="32" y="110" font-size="10" font-style="italic" fill="#1d3550">Lu ainsi : on jeune des la premiere.</text>
+<rect x="388" y="42" width="352" height="72" rx="8" fill="#fdf7f5" stroke="#c07a56"/>
+<text x="400" y="62" font-size="10.5" font-weight="bold" fill="#6b3419">La baraita</text>
+<text x="400" y="80" font-size="10" fill="#3c4a58">Premiere et deuxieme revi'a :</text>
+<text x="400" y="96" font-size="10" fill="#3c4a58">pour demander. Troisieme : pour jeuner.</text>
+<text x="400" y="110" font-size="10" font-style="italic" fill="#6b3419">Le jeune commence a la troisieme.</text>
+<path d="M196 118 L196 134" stroke="#8a94a0" stroke-width="1.6"/>
+<path d="M564 118 L564 134" stroke="#8a94a0" stroke-width="1.6"/>
+<rect x="20" y="136" width="720" height="30" rx="6" fill="#e7ebf1" stroke="#8a94a0"/>
+<text x="34" y="156" font-size="10.5" font-weight="bold" fill="#3c4a58">Rav Yehouda : la michna ne fixe pas le depart du jeune, elle decrit le type d'annee concerne.</text>
+<rect x="20" y="180" width="352" height="90" rx="8" fill="#eef4ee" stroke="#3f7a4a"/>
+<text x="32" y="200" font-size="10.5" font-weight="bold" fill="#25502f">Cas 1 : rien n'est tombe</text>
+<text x="32" y="218" font-size="10" fill="#3c4a58">Les trois revi'ot passent sans pluie.</text>
+<text x="32" y="236" font-size="10" fill="#3c4a58">On suit l'ordre progressif des jeunes,</text>
+<text x="32" y="252" font-size="10" fill="#3c4a58">palier par palier, comme au chapitre.</text>
+<text x="32" y="266" font-size="10" font-weight="bold" fill="#25502f">Accord avec la baraita.</text>
+<rect x="388" y="180" width="352" height="90" rx="8" fill="#f4eef7" stroke="#8a6ca8"/>
+<text x="400" y="200" font-size="10.5" font-weight="bold" fill="#4a2765">Cas 2 : la pluie est tombee, puis echec</text>
+<text x="400" y="218" font-size="10" fill="#3c4a58">On a seme et rien n'a leve,</text>
+<text x="400" y="236" font-size="10" fill="#3c4a58">ou cela a leve puis a change d'aspect.</text>
+<text x="400" y="252" font-size="10" fill="#3c4a58">Hatra'a immediate, sans paliers.</text>
+<text x="400" y="266" font-size="10" font-weight="bold" fill="#4a2765">La detresse est deja sous les yeux.</text>
+</svg></div><div class="svg-cap">Deux regimes distincts : l&#x27;annee seche se traite par paliers, la recolte perdue apres la pluie appelle une reaction immediate.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב נַחְמָן: דַּוְקָא נִשְׁתַּנּוּ, אֲבָל יָבְשׁוּ — לֹא. פְּשִׁיטָא, נִשְׁתַּנּוּ תְּנַן! לָא צְרִיכָא, דַּאֲקוּן. מַהוּ דְתֵימָא: אֲקַנְתָּא מִילְּתָא הִיא, קָמַשְׁמַע לַן.</div>
+            <div class="fr"><p>Rav Nahman dit : c&#x27;est precisement dans le cas ou cela a change d&#x27;aspect ; mais si cela a seche — non. C&#x27;est evident, puisque nous avons appris « cela a change » !</p><p>Cela n&#x27;est necessaire que pour le cas ou cela est monte en tige (de-akon). Tu aurais pu dire que la montee en tige est quelque chose ; il nous apprend qu&#x27;il n&#x27;en est rien.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(6)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דַּוְקָא נִשְׁתַּנּוּ</b> דְּכִי נִשְׁתַּנּוּ וַדַּאי הוּא דְּמַתְרִיעִין מִיָּד דְּצָרִיךְ לְהִתְפַּלֵּל עָלֶיהָ שֶׁיַּחֲזִיר בְּיוֹפִי כְּתִקְנָן:</div>
+          <div class="glose-fr">C&#x27;est precisement dans le cas ou cela a change d&#x27;aspect — car lorsque cela a change, on fait assurement la hatra&#x27;a immediatement, puisqu&#x27;il faut prier pour que la recolte retrouve son bel aspect, comme il convient.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲבָל יָבְשׁוּ</b> לֹא צָרִיךְ דְּמִכָּאן וְאֵילָךְ לֹא יוֹעִיל וְהוּא תְּפִלַּת שָׁוְא אֲפִילּוּ יָבְשׁוּ כְּשֶׁהֵן חִטִּין עֲדַיִין דַּקִּין אֲפִילּוּ הָכֵי לֹא מַתְרִיעִין:</div>
+          <div class="glose-fr">Mais si cela a seche — non ; car desormais cela ne servirait a rien, et ce serait une priere vaine. Meme si cela a seche alors que les bles etaient encore minces, on ne fait pourtant pas la hatra&#x27;a.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">הָכִי גָּרְסִינַן פְּשִׁיטָא שָׁנוּ תְּנַן לָא צְרִיכָא דַּאֲקוּן מַהוּ דְּתֵימָא כו&#x27;:</div>
+          <div class="glose-fr">Telle est notre version : « C&#x27;est evident, nous avons appris « cela a change » ! Cela n&#x27;est necessaire que pour le cas de akon. Tu aurais pu dire, etc. »</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דַּאֲקוּן</b> שֶׁעָלוּ בַּקָּנֶה שֶׁנִּתְקְנוּ מְעַט לְאַחַר שֶׁנִּתְיַיבְּשׁוּ:</div>
+          <div class="glose-fr">De-akon — qu&#x27;ils sont montes en tige, c&#x27;est-a-dire qu&#x27;ils se sont un peu redresses apres avoir seche.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַהוּ דְּתֵימָא אֲקַנְתָּא מִילְּתָא הִיא</b> דְּהוֹאִיל וְנִתַּקְּנוּ מְעַט אִם יִתְפַּלֵּל מוֹעִיל לָהֶם קָא מַשְׁמַע לַן רַב נַחְמָן דְּאָקַנָּא לָאו מִילְּתָא ל&quot;א אֲבָל יָבְשׁוּ לֹא דְּמִמֵּילָא חוֹזְרִין:</div>
+          <div class="glose-fr">Tu aurais pu dire que la montee en tige est quelque chose — puisqu&#x27;ils se sont un peu redresses, prier leur serait utile ; Rav Nahman nous apprend que la montee en tige n&#x27;est rien. Autre version : « mais s&#x27;ils ont seche — non », car ils reviennent d&#x27;eux-memes.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לָא צְרִיכָא דַּאֲקוּן</b> שֶׁעָלוּ בַּקָּנֶה מַהוּ דְּתֵימָא אֲקַנְתָּא מִילְּתָא הִיא דְּכֵיוָן שֶׁעָלוּ בַּקָּנֶה וַעֲדַייִן לֹא בָּשְׁלוּ כָּל צָרְכָּן וַדַּאי אִי לֹא מַתְרִיעִין תּוּ לָא גָּדְלִי קָמַשְׁמַע לַן דְּלָאו מִילְּתָא הִיא דְּאַף עַל גַּב דַּאֲקוּן אַכַּתִּי גָּדְלִי טְפֵי:</div>
+          <div class="glose-fr">Cela n&#x27;est necessaire que pour le cas de akon — qu&#x27;ils sont montes en tige. « Tu aurais pu dire que la montee en tige est quelque chose » — puisqu&#x27;ils sont montes en tige et n&#x27;ont pas encore muri autant qu&#x27;il le faut, il est certain que, faute de hatra&#x27;a, ils ne pousseront plus ; il nous apprend qu&#x27;il n&#x27;en est rien, car meme montes en tige, ils poussent encore davantage.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">לָא צְרִיכָא דַּאֲקוּן. פִּי&#x27; לְאַחַר שֶׁעָלוּ בַּקָּנֶה נִתְיַיבְּשׁוּ מַהוּ דְּתֵימָא אֲקַנְתָּא מִילְּתָא הִיא פִּי&#x27; דְּהוֹאִיל וְעָלוּ בְּקָנֶה וְלֹא נִתְבַּשְּׁלוּ כָּל צָורְכָם לִיבְעֵי הַתְרָעָה קמ&quot;ל דְּלָאו מִילְּתָא הִיא:</div>
+          <div class="glose-fr">« Cela n&#x27;est necessaire que pour le cas de akon. » Explication : apres etre montes en tige, ils ont seche. « Tu aurais pu dire que la montee en tige est quelque chose » — explication : puisqu&#x27;ils sont montes en tige et n&#x27;ont pas muri autant qu&#x27;il le fallait, il faudrait une hatra&#x27;a ; il nous apprend qu&#x27;il n&#x27;en est rien.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Nahman serre le mot de la michna. Elle dit <b>nichtanou</b>, « cela a change d'aspect », et c'est exactement ce cas qui autorise la hatra'a immediate : la recolte est abimee mais recuperable, donc il y a matiere a prier. Une recolte <b>dessechee</b> sort du champ de la priere ; Rachi le dit sans detour, ce serait une priere vaine.</p><p>L'objection est de methode : Rav Nahman semble repeter le mot de la michna. La reponse introduit un cas intermediaire, <b>de-akon</b>, un debut de redressement apres le dessechement : la tige monte. On pourrait y voir un signe encourageant justifiant la hatra'a. Rav Nahman l'ecarte.</p><p>Rachi propose deux raisons opposees de cet ecart, dans ses gloses 5 et 6, et Tossefot suit la seconde formulation : soit la montee en tige est trop faible pour valoir une hatra'a, soit elle indique au contraire que la recolte se refait d'elle-meme. Dans les deux lectures, la conclusion pratique est la meme.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 262" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+<text x="20" y="26" font-size="14" font-weight="bold" fill="#22323f">Trois etats de la recolte, une seule qui ouvre la hatra'a</text>
+<rect x="20" y="42" width="232" height="96" rx="8" fill="#eef4ee" stroke="#3f7a4a"/>
+<text x="32" y="62" font-size="11" font-weight="bold" fill="#25502f">Nichtanou</text>
+<text x="32" y="80" font-size="10" fill="#3c4a58">La pousse a change d'aspect.</text>
+<text x="32" y="96" font-size="10" fill="#3c4a58">Abimee, mais vivante.</text>
+<text x="32" y="118" font-size="10.5" font-weight="bold" fill="#25502f">Hatra'a immediate.</text>
+<text x="32" y="132" font-size="9.5" fill="#25502f">La priere a un objet.</text>
+<rect x="264" y="42" width="232" height="96" rx="8" fill="#fdf7f5" stroke="#c07a56"/>
+<text x="276" y="62" font-size="11" font-weight="bold" fill="#6b3419">Yavchou</text>
+<text x="276" y="80" font-size="10" fill="#3c4a58">La pousse a seche.</text>
+<text x="276" y="96" font-size="10" fill="#3c4a58">Rien ne peut plus la reprendre.</text>
+<text x="276" y="118" font-size="10.5" font-weight="bold" fill="#6b3419">Pas de hatra'a.</text>
+<text x="276" y="132" font-size="9.5" fill="#6b3419">Rachi : ce serait une priere vaine.</text>
+<rect x="508" y="42" width="232" height="96" rx="8" fill="#f4eef7" stroke="#8a6ca8"/>
+<text x="520" y="62" font-size="11" font-weight="bold" fill="#4a2765">De-akon</text>
+<text x="520" y="80" font-size="10" fill="#3c4a58">Apres avoir seche, la tige monte.</text>
+<text x="520" y="96" font-size="10" fill="#3c4a58">Cas discute du passage.</text>
+<text x="520" y="118" font-size="10.5" font-weight="bold" fill="#4a2765">Rav Nahman : pas de hatra'a.</text>
+<text x="520" y="132" font-size="9.5" fill="#4a2765">Akna lav milta hi.</text>
+<rect x="20" y="152" width="720" height="26" rx="5" fill="#e7ebf1" stroke="#8a94a0"/>
+<text x="34" y="170" font-size="10.5" font-weight="bold" fill="#3c4a58">Pourquoi ecarter le cas de-akon ? Deux explications, meme conclusion pratique.</text>
+<rect x="20" y="188" width="352" height="62" rx="8" fill="#eef2f8" stroke="#8fa6c4"/>
+<text x="32" y="208" font-size="10.5" font-weight="bold" fill="#1d3550">Premiere explication (Rachi 6, Tossefot)</text>
+<text x="32" y="226" font-size="10" fill="#1d3550">La montee en tige est trop faible pour compter :</text>
+<text x="32" y="242" font-size="10" fill="#1d3550">la recolte continue de pousser de toute facon.</text>
+<rect x="388" y="188" width="352" height="62" rx="8" fill="#fbf7ec" stroke="#d9c58a"/>
+<text x="400" y="208" font-size="10.5" font-weight="bold" fill="#6b5312">Seconde explication (Rachi 5, autre version)</text>
+<text x="400" y="226" font-size="10" fill="#6b5312">Puisque la recolte se refait d'elle-meme,</text>
+<text x="400" y="242" font-size="10" fill="#6b5312">il n'y a pas lieu de crier pour elle.</text>
+</svg></div><div class="svg-cap">La hatra&#x27;a suppose une recolte encore recuperable par la priere : ni dessechee, ni deja en voie de reprise.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְכֵן שֶׁפָּסְקוּ גְּשָׁמִים בֵּין גֶּשֶׁם לְגֶשֶׁם כּוּ׳. מַאי מַכַּת בַּצֹּורֶת? אָמַר רַב יְהוּדָה אָמַר רַב: מַכָּה הַמְּבִיאָה לִידֵי בַּצֹּורֶת. אָמַר רַב נַחְמָן: נַהֲרָא אַנַּהֲרָא —</div>
+            <div class="fr"><p>« Et de meme lorsque les pluies ont cesse entre une pluie et l&#x27;autre, etc. » Qu&#x27;est-ce qu&#x27;une plaie de batsoret (disette) ? Rav Yehouda dit au nom de Rav : une plaie qui conduit a la batsoret.</p><p>Rav Nahman dit : d&#x27;un fleuve a un fleuve —</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>נַהֲרָא אַנַּהֲרָא בְּצֻורְתָּא</b> בְּשֶׁאֵין תְּבוּאָה בְּעִיר אַחַת וְיֵשׁ בַּעֲייָרוֹת אֲחֵרוֹת וְאֶפְשָׁר לְהָבִיא מִזֶּה לָזֶה דֶּרֶךְ נָהָר בִּסְפִינָה:</div>
+          <div class="glose-fr">D&#x27;un fleuve a un fleuve : c&#x27;est de la batsorta — lorsqu&#x27;il n&#x27;y a pas de recolte dans une ville et qu&#x27;il y en a dans d&#x27;autres villes, et qu&#x27;il est possible d&#x27;en amener de l&#x27;une a l&#x27;autre par voie de fleuve, en bateau.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">נַהֲרָא אַנַּהֲרָא בְּצֻורְתָּא. פִּי&#x27; (. הָכֵי) בְּשֶׁאֵין תְּבוּאָה בָּעִיר וְיֵשׁ הַרְבֵּה בִּשְׁאָר עֲיָירוֹת וִיכוֹלִין לְהָבִיא מִזּוֹ לְזוֹ הַיְינוּ מִקְּרֵי בַּצֹּורֶת וְלָא מִקְּרֵי רָעָב וּמֵאַחַר שֶׁיְּכוֹלִין לְהָבִיא ע&quot;י הַנָּהָר דְּלֵיכָּא אֶלָּא טִרְחָא זְעֵירָא וּמֵהַאי כְּלוֹמַר מְדַבֵּר מוּעָט כָּזֶה אֵין מַתְרִיעִין מְדִינְתָּא אַמְּדִינְתָּא פֵּירוּשׁ שֶׁצָּרִיךְ לְהוֹצִיא מִמְּדִינָה לִמְדִינָה אַחֶרֶת ע&quot;י חֲמוֹרִים וְסוּסִים וְאָז מַתְרִיעִין דְּאִי אֶפְשָׁר לְהָבִיא בְּשֶׁפַע כ&quot;כ כְּמוֹ בִּסְפִינוֹת ל&quot;א נַהֲרָא אַנַּהֲרָא כְּלוֹמַר אִם יָבַשׁ הַנָּהָר זֶה וְצָרִיךְ לְהָסֵב נָהָר אַחֵר לְכָאן אִי נָמֵי צָרִיךְ לְהַמְתִּין עַד שֶׁיִּגְדַּל הַנָּהָר הָאַחֵר וְיָבֹא בְּכָאן זֶה בַּצֹּורֶת וְלֹא מַתְרִיעִין מְדִינְתָּא אַמְּדִינְתָּא אִם יָבְשׁוּ כָּל הַנְּהָרוֹת שֶׁבְּזוֹ הָעִיר וּצְרִיכִין לְהָבִיא מַיִם מֵעִיר אַחֶרֶת כַּפְנָא וְקָשֶׁה דִּבְמַתְנִי&#x27; מַשְׁמַע דְּאַבַּצֹּורֶת מִתְעַנִּין דְּקָתָנֵי מַתְרִיעִין עֲלֵיהֶן מִפְּנֵי שֶׁהִיא מַכַּת בַּצֹּורֶת וְיֵשׁ לוֹמַר דְּמַכַּת בַּצֹּורֶת דְּמַתְנִי&#x27; הָוֵי כְּמוֹ דְּכַפְנָא כַּאֲשֶׁר פֵּירַשְׁתִּי שֶׁתַּחַת חִטָּה יָצָא חוֹחַ וּמִשּׁוּם הָכִי מַתְרִיעִין אע&quot;ג דַּעֲדַיִין אֵינוֹ רַק בַּצֹּורֶת הוֹאִיל וְסוֹפוֹ רָעָב מַתְרִיעִין אע&quot;ג דְּאַכַּתִּי לָא הָווּ כַּפְנָא אֲבָל לְעוֹלָם אֵין מַתְרִיעִין עַל מַכַּת בַּצֹּורֶת אִי לָא מָצֵי לָבֹא לִידֵי רָעָב וּלְהָכִי קָאָמַר הָכָא דְּנַהֲרָא אַנַּהֲרָא דְּלָא הָוֵי אֶלָּא כִּי בַּצֻּורְתָּא וְלֹא מַתְרִיעִין:</div>
+          <div class="glose-fr">« D&#x27;un fleuve a un fleuve : c&#x27;est de la batsorta. » Explication : lorsqu&#x27;il n&#x27;y a pas de recolte dans une ville et qu&#x27;il y en a beaucoup dans les autres villes, et qu&#x27;on peut en amener de l&#x27;une a l&#x27;autre — cela s&#x27;appelle batsoret (disette) et non ra&#x27;av (famine) ; et du moment qu&#x27;on peut en amener par le fleuve, ou il n&#x27;y a qu&#x27;une petite peine, pour une chose aussi legere on ne fait pas la hatra&#x27;a. « D&#x27;une province a une province » : explication, qu&#x27;il faut faire sortir d&#x27;une province vers une autre a dos d&#x27;anes et de chevaux, et alors on fait la hatra&#x27;a, car il est impossible d&#x27;en amener en abondance autant qu&#x27;avec des bateaux. Autre version de « d&#x27;un fleuve a un fleuve » : si ce fleuve-ci a seche et qu&#x27;il faut derouter un autre fleuve jusqu&#x27;ici, ou bien qu&#x27;il faut attendre que l&#x27;autre fleuve grossisse et parvienne ici — c&#x27;est de la batsoret, et l&#x27;on ne fait pas la hatra&#x27;a ; « d&#x27;une province a une province » : si tous les fleuves de cette ville ont seche et qu&#x27;il faut amener l&#x27;eau d&#x27;une autre ville — c&#x27;est kafna (la famine). Et il y a une difficulte : dans la michna, il ressort que l&#x27;on jeune pour la batsoret, puisqu&#x27;elle enseigne « on fait la hatra&#x27;a pour elles, parce que c&#x27;est une plaie de batsoret ». On peut repondre que la plaie de batsoret de la michna est comme le kafna, ainsi que je l&#x27;ai explique : qu&#x27;a la place du ble sort une ronce ; et c&#x27;est pourquoi on fait la hatra&#x27;a, bien qu&#x27;on ne soit encore qu&#x27;a la batsoret, car sa fin est la famine — on fait la hatra&#x27;a alors meme qu&#x27;on n&#x27;est pas encore au kafna. Mais jamais on ne fait la hatra&#x27;a pour une plaie de batsoret si elle ne peut aboutir a la famine ; et c&#x27;est pourquoi il dit ici que « d&#x27;un fleuve a un fleuve » n&#x27;est que de la batsorta, et l&#x27;on ne fait pas la hatra&#x27;a.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le folio revient a une clause de la michna : quarante jours sans pluie entre deux pluies constituent une <b>plaie de batsoret</b>. La guemara demande ce que cette expression ajoute, puisque l'absence de pluie est deja la disette. Rav Yehouda au nom de Rav repond en deplacant le mot : la michna decrit une plaie qui <b>conduit</b> a la batsoret, un etat encore en amont.</p><p>Rav Nahman commence alors a graduer les situations, et sa phrase est coupee par la fin du folio ; le mot manquant, <b>batsorta</b>, est deja lu par Rachi et Tossefot. Le critere est le cout du ravitaillement : si le grain circule d'un fleuve a l'autre en bateau, la peine est legere et l'on reste dans la disette, sans hatra'a.</p><p>Tossefot developpe l'echelle complete, jusqu'au transport a dos d'anes entre provinces, et pose la regle qui commande tout le passage : on ne crie pour une batsoret que lorsqu'elle peut aboutir a la famine.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 296" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+<text x="20" y="26" font-size="14" font-weight="bold" fill="#22323f">L'echelle de la penurie : batsoret, puis kafna</text>
+<rect x="20" y="42" width="720" height="28" rx="5" fill="#e7ebf1" stroke="#8a94a0"/>
+<text x="34" y="61" font-size="10.5" fill="#3c4a58">Critere retenu : la difficulte a faire venir le grain la ou il manque.</text>
+<rect x="20" y="82" width="352" height="86" rx="8" fill="#eef4ee" stroke="#3f7a4a"/>
+<text x="32" y="102" font-size="11" font-weight="bold" fill="#25502f">Nahara a-nahara : d'un fleuve a un fleuve</text>
+<text x="32" y="120" font-size="10" fill="#3c4a58">Le grain manque ici, il abonde ailleurs,</text>
+<text x="32" y="136" font-size="10" fill="#3c4a58">et un bateau suffit a l'amener.</text>
+<text x="32" y="156" font-size="10.5" font-weight="bold" fill="#25502f">Batsoret : disette. Pas de hatra'a.</text>
+<rect x="388" y="82" width="352" height="86" rx="8" fill="#fdf7f5" stroke="#c07a56"/>
+<text x="400" y="102" font-size="11" font-weight="bold" fill="#6b3419">Medinata a-medinata : d'une province a l'autre</text>
+<text x="400" y="120" font-size="10" fill="#3c4a58">Il faut convoyer a dos d'anes et de chevaux.</text>
+<text x="400" y="136" font-size="10" fill="#3c4a58">Les volumes transportes s'effondrent.</text>
+<text x="400" y="156" font-size="10.5" font-weight="bold" fill="#6b3419">Kafna : famine. On fait la hatra'a.</text>
+<rect x="20" y="182" width="720" height="30" rx="6" fill="#eef2f8" stroke="#8fa6c4"/>
+<text x="34" y="202" font-size="10.5" font-weight="bold" fill="#1d3550">Seconde lecture de Tossefot, sur l'eau et non sur le grain : fleuve deroute ou attendu, disette ; tous les fleuves secs, famine.</text>
+<rect x="20" y="224" width="352" height="62" rx="8" fill="#f4eef7" stroke="#8a6ca8"/>
+<text x="32" y="244" font-size="10.5" font-weight="bold" fill="#4a2765">La difficulte de Tossefot</text>
+<text x="32" y="262" font-size="10" fill="#4a2765">La michna fait pourtant jeuner pour une plaie</text>
+<text x="32" y="278" font-size="10" fill="#4a2765">de batsoret. Comment l'accorder ?</text>
+<rect x="388" y="224" width="352" height="62" rx="8" fill="#fbf7ec" stroke="#d9c58a"/>
+<text x="400" y="244" font-size="10.5" font-weight="bold" fill="#6b5312">La regle qui resout</text>
+<text x="400" y="262" font-size="10" fill="#6b5312">On crie pour une batsoret seulement quand</text>
+<text x="400" y="278" font-size="10" fill="#6b5312">elle peut aboutir a la famine.</text>
+</svg></div><div class="svg-cap">Le partage ne se fait pas sur la quantite de grain disponible, mais sur le cout de son acheminement.</div></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Taanit_18b.html">&lsaquo; Taanit 18b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Taanit_19b.html">Taanit 19b &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

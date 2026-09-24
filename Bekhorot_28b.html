@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bekhorot 28b — le bekhor abattu sans expert (kenas ou guezera), les paiements, et le juge qui se trompe (davar michna, mumhe le-beit din)</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Bekhorot 28b — le bekhor abattu sans expert (kenas ou guezera), les paiements, et le juge qui se trompe (davar michna, mumhe le-beit din)</h1>
+    <div class="ref">Bekhorot 28b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Bekhorot_28a.html">&lsaquo; Bekhorot 28a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Bekhorot_29a.html">Bekhorot 29a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> Le daf acheve la discussion sur le premier-ne (bekhor) abattu sans l&#x27;aval d&#x27;un expert : R. Meir interdit dans tous les cas — la Guemara conclut que c&#x27;est une amende (kenas) — tandis que R.</p><p>Yehouda distingue les defauts de la cornee (dukin, qui changent apres la mort) des defauts du corps (qui ne changent pas). On precise ensuite les paiements du non-expert (un quart pour le petit betail, la moitie pour le gros) et leur raison.</p><p>La michna suivante traite du juge qui rend un jugement errone et cause une perte : il paie de sa poche s&#x27;il a agi de sa propre main (nasa ve-natan be-yad), mais un expert agree par le tribunal est exempt. Illustration par le celebre recit de R.</p><p>Tarfon, qui declara terefa une vache privee de matrice et la fit donner aux chiens, avant que les Sages de Yavne ne la declarent permise ; R. Akiva l&#x27;exonere car il erra sur une michna explicite (Houlin 54a) et parce qu&#x27;il est expert agree.</p><p>Enfin, celui qui prend salaire pour examiner les bekhorot : on n&#x27;abat pas sur sa parole, sauf s&#x27;il est expert.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="300" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Bekhor abattu sans expert : R. Meir vs R. Yehouda</text>
+  <text x="360" y="44" text-anchor="middle" font-size="11.5" fill="#78716c">Les mumim (defauts) de la cornee (dukin) changent apres la mort ; ceux du corps, non</text>
+  <rect x="30" y="60" width="320" height="200" rx="10" fill="#fdeaea" stroke="#b91c1c"/>
+  <rect x="370" y="60" width="320" height="200" rx="10" fill="#eaf6ec" stroke="#15803d"/>
+  <text x="190" y="86" text-anchor="middle" font-size="13.5" font-weight="700" fill="#b91c1c">R. Meir</text>
+  <text x="530" y="86" text-anchor="middle" font-size="13.5" font-weight="700" fill="#15803d">R. Yehouda</text>
+  <g font-size="11.5" fill="#292524">
+  <text x="190" y="112" text-anchor="middle">dukin (cornee) : ASSUR (interdit)</text>
+  <text x="190" y="134" text-anchor="middle">mumim du corps : ASSUR aussi</text>
+  <text x="190" y="162" text-anchor="middle" font-size="11">On decrete (gozrin) le corps</text>
+  <text x="190" y="178" text-anchor="middle" font-size="11">a cause de la cornee</text>
+  <text x="190" y="206" text-anchor="middle" font-size="11" font-style="italic">Motif : kenas (amende)</text>
+  <text x="190" y="222" text-anchor="middle" font-size="11" font-style="italic">pour avoir abattu sans expert</text>
+  <text x="530" y="112" text-anchor="middle">dukin (cornee) : ASSUR</text>
+  <text x="530" y="134" text-anchor="middle">mumim du corps : MOUTAR (permis)</text>
+  <text x="530" y="162" text-anchor="middle" font-size="11">Pas de decret : le corps ne</text>
+  <text x="530" y="178" text-anchor="middle" font-size="11">change pas, donc verifiable</text>
+  <text x="530" y="206" text-anchor="middle" font-size="11" font-style="italic">Nafka mina : temoins qui disent</text>
+  <text x="530" y="222" text-anchor="middle" font-size="11" font-style="italic">'pas de changement' -> on s'y fie</text>
+  </g>
+  <text x="360" y="284" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1c1917">Halakha : machloket entre Cheiltot/Rambam (kenas, comme R. Yehouda) et Halakhot Guedolot (guezera, comme R. Meir)</text>
+</svg></div>
+          <figcaption>La machloket R. Meir / R. Yehouda sur le bekhor abattu sans expert (segments 0-4).</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="320" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Le juge qui se trompe : quand paie-t-il ?</text>
+  <text x="360" y="44" text-anchor="middle" font-size="11.5" fill="#78716c">Mishna : 'ce qu'il a fait est fait' + 'il paie de sa poche' (sauf s'il est expert agree)</text>
+  <rect x="40" y="62" width="300" height="34" rx="8" fill="#eef2ff" stroke="#3730a3"/>
+  <text x="190" y="84" text-anchor="middle" font-size="12" font-weight="700" fill="#3730a3">Erreur de jugement causant une perte</text>
+  <path d="M190 96 L190 116" stroke="#78716c" stroke-width="2" fill="none"/>
+  <rect x="40" y="116" width="300" height="70" rx="8" fill="#ffffff" stroke="#d6cdbb"/>
+  <text x="190" y="138" text-anchor="middle" font-size="11.5" fill="#292524">A-t-il AGI de sa main</text>
+  <text x="190" y="154" text-anchor="middle" font-size="11.5" fill="#292524">(nasa ve-natan be-yad) ?</text>
+  <text x="190" y="174" text-anchor="middle" font-size="10.5" fill="#78716c">sinon : simple garme (cause indirecte)</text>
+  <rect x="400" y="80" width="280" height="46" rx="8" fill="#fdeaea" stroke="#b91c1c"/>
+  <text x="540" y="100" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b91c1c">Non expert + a agi de sa main</text>
+  <text x="540" y="117" text-anchor="middle" font-size="11.5" fill="#b91c1c">-> PAIE de sa poche</text>
+  <rect x="400" y="150" width="280" height="46" rx="8" fill="#eaf6ec" stroke="#15803d"/>
+  <text x="540" y="170" text-anchor="middle" font-size="11.5" font-weight="700" fill="#15803d">Expert agree par le beit din</text>
+  <text x="540" y="187" text-anchor="middle" font-size="11.5" fill="#15803d">-> EXEMPT de payer</text>
+  <text x="360" y="228" text-anchor="middle" font-size="12" font-weight="700" fill="#1c1917">Erreur dans une michna explicite (davar michna) -> la decision est annulee (chozer)</text>
+  <text x="360" y="250" text-anchor="middle" font-size="11.5" fill="#292524">R. Tarfon : cas de la vache sans matrice -> permise (Houlin 54a) ; il croyait devoir payer</text>
+  <text x="360" y="272" text-anchor="middle" font-size="11.5" fill="#292524">R. Akiva : 'tu es expert agree, donc exempt' — double raison (davar michna + mumhe)</text>
+  <text x="360" y="298" text-anchor="middle" font-size="11" font-style="italic" fill="#78716c">chikoul ha-daat = trancher a l'encontre de l'usage etabli entre deux avis non tranches</text>
+</svg></div>
+          <figcaption>Le juge qui se trompe et cause une perte : responsabilite et exemptions (segments 7-15).</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 700 210" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="210" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1c1917">Combien paie le non-expert qui a fait consommer le bekhor ?</text>
+  <rect x="60" y="46" width="260" height="120" rx="10" fill="#fff7e6" stroke="#b45309"/>
+  <text x="190" y="72" text-anchor="middle" font-size="13" font-weight="700" fill="#b45309">Behema daka (petit betail)</text>
+  <text x="190" y="98" text-anchor="middle" font-size="11.5" fill="#292524">mouton / chevre</text>
+  <text x="190" y="126" text-anchor="middle" font-size="18" font-weight="700" fill="#b91c1c">1/4 de la valeur</text>
+  <text x="190" y="150" text-anchor="middle" font-size="10.5" fill="#78716c">perte moderee + guezera sur</text>
+  <rect x="380" y="46" width="260" height="120" rx="10" fill="#eef2ff" stroke="#3730a3"/>
+  <text x="510" y="72" text-anchor="middle" font-size="13" font-weight="700" fill="#3730a3">Behema gassa (gros betail)</text>
+  <text x="510" y="98" text-anchor="middle" font-size="11.5" fill="#292524">boeuf / vache</text>
+  <text x="510" y="126" text-anchor="middle" font-size="18" font-weight="700" fill="#15803d">1/2 de la valeur</text>
+  <text x="510" y="150" text-anchor="middle" font-size="10.5" fill="#78716c">grande perte (hefsed merouba)</text>
+  <text x="350" y="190" text-anchor="middle" font-size="11" fill="#78716c">Motif (Rav Papa) grande vs petite perte ; (Rav Aha b. Ika) guezera contre l'elevage du petit betail en E-I</text>
+</svg></div>
+          <figcaption>Le bareme des paiements du non-expert (segments 5-6).</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַתְנִיתִין נָמֵי דַּיְקָא, רַבִּי מֵאִיר אוֹמֵר: הוֹאִיל וְנִשְׁחַט שֶׁלֹּא עַל פִּי מֻומְחֶה אָסוּר. שְׁמַע מִינַּהּ קְנָסָא קָא קָנֵיס רַבִּי מֵאִיר, שְׁמַע מִינָּה.</div>
+            <div class="fr"><p>La michna elle-meme est precise (dikka) [en ce sens] : R. Meir dit — puisqu&#x27;[il] a ete abattu sans l&#x27;aval d&#x27;un expert (mumhe), [il est] interdit.</p><p>Deduis-en (chema mina) que R. Meir inflige une amende (kenas).</p><p>Deduis-en [qu&#x27;il en est bien ainsi].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַתְנֵי&#x27; נָמֵי דַּיְקָא</b> דִּבְמוּמִין שֶׁבַּגּוּף פְּלִיגִי אֲבָל בְּדֻוקִּין לָא פְלִיגִי:</div>
+          <div class="glose-fr">La michna elle-meme est precise — [en ce sens] que c&#x27;est sur les defauts du corps (mumim she-ba-gouf) qu&#x27;ils divergent, mais sur les [taies de la] cornee (dukin) ils ne divergent pas.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הוֹאִיל וְנִשְׁחַט שֶׁלֹּא עַל פִּי מֻומְחֶה</b> דְּלָא מַשְׁכַּח בֵּיהּ ר&#x27; מֵאִיר שׁוּם רֵיעוּתָא אֶלָּא קָנְסוּ דִּשְׁחָטוֹ שֶׁלֹּא עַל פִּי מֻומְחֶה וְאִי בְּדֻוקִּין שֶׁבָּעַיִן הֲוָה לֵיהּ לְמִתְנֵי ר&#x27; מֵאִיר אוֹסֵר הוֹאִיל וּמִשֶּׁתַּנִּין אֶלָּא וַדַּאי לֵיכָּא רֵיעוּתָא דִּבְמוּמֵי הַגּוּף פְּלִיגִי וּקְנָסָא קְנִיס גְּזֵירָה מִשּׁוּם דֻּוקִּין:</div>
+          <div class="glose-fr">Puisqu&#x27;il a ete abattu sans l&#x27;aval d&#x27;un expert — car R. Meir ne trouve en cela aucun vice (rieouta), sinon qu&#x27;il [lui] inflige une amende pour l&#x27;avoir abattu sans l&#x27;aval d&#x27;un expert. Et s&#x27;il s&#x27;agissait des taies de la cornee, il aurait fallu enseigner &#x27;R. Meir interdit puisqu&#x27;elles changent (mishtanin)&#x27; ; or, assurement, il n&#x27;y a pas de vice, car c&#x27;est sur les defauts du corps qu&#x27;ils divergent, et [R. Meir] inflige une amende, [un] decret (guezera) a cause des taies de la cornee.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Conclusion de la sougya precedente. La formulation de la michna montre que pour <b>R. Meir</b>, l'interdit n'est pas du a un doute reel (les defauts du corps ne changent pas apres la mort), mais a une <b>amende (kenas)</b> infligee pour avoir abattu le bekhor sans le montrer a un expert.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִיבַּעְיָא לְהוּ: מִפְּנֵי הַמִּשְׁתַּנִּין — דְּכֻולְּהוּ מִשְׁתַּנֵּי, אוֹ דִּלְמָא אִיכָּא דְּמִשְׁתַּנֵּי וְאִיכָּא דְּלָא מִשְׁתַּנֵּי?</div>
+            <div class="fr"><p>On leur a demande (ibaya lehou) : &#x27;a cause de celles qui changent&#x27; (mishtanin) — [cela signifie-t-il] qu&#x27;elles changent toutes, ou peut-etre y en a-t-il qui changent et d&#x27;autres qui ne changent pas ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּכוּלְּהוּ מִישְׁתַּנּוּ</b> כָּל דֻּוקִּין שֶׁבָּעַיִן מִשְׁתַּנִּין אוֹ דִּלְמָא בְּדֻוקִּין גּוּפַיְיהוּ אִיכָּא דְּמִשְׁתַּנֵּי וְאִיכָּא דְּלָא מִשְׁתַּנֵּי וּמִיהוּ לְמוּמִין שֶׁבַּגּוּף גָּזְרִינַן אַטּוּ הָנָךְ דֻּוקִּין מִשְׁתַּנִּין:</div>
+          <div class="glose-fr">Qu&#x27;elles changent toutes — toutes les taies de la cornee changent [-elles] ? Ou peut-etre, parmi les taies elles-memes, y en a-t-il qui changent et d&#x27;autres qui ne changent pas — et neanmoins, pour les defauts du corps, on decrete (gazrinan) a cause de ces taies-la qui changent.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Question posee a la maison d'etude. La baraita justifiait l'interdit des <b>dukin</b> (taies de la cornee) 'parce qu'elles changent apres la mort'. Ambiguite : <b>toutes</b> changent-elles necessairement, ou seulement <b>certaines</b> ?</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לְמַאי נָפְקָא מִינַּהּ? לְאַכְחוֹשֵׁי סָהֲדֵי. אִי אָמְרַתְּ: כֻּולְּהוּ מִשְׁתַּנֵּי — שַׁקָּרֵי נִינְהוּ, וְאִי אָמְרַתְּ: אִיכָּא דְּמִשְׁתַּנֵּי וְאִיכָּא דְּלָא מִשְׁתַּנֵּי — סָמְכִינַן עֲלַיְיהוּ. מַאי?</div>
+            <div class="fr"><p>Quelle en est la consequence pratique (nafka mina) ? Pour contredire des temoins (le-akhchouchei sahadi).</p><p>Si tu dis : toutes changent — [alors] ce sont des menteurs ; et si tu dis : il y en a qui changent et d&#x27;autres qui ne changent pas — [alors] on se fie a eux. Qu&#x27;en est-il ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְמַאי נָפְקָא מִינַּהּ</b> הָא אֲפִילּוּ אִיכָּא דְּלָא מִשְׁתַּנֵּי הוֹאִיל וְלָא קִים לָן הֵי מִישְׁתַּנִּי וְהֵי לָא מִישְׁתַּנִּי כֻּולְּהוּ אֲסִירִי אִם נִשְׁחֲטוּ בְּלֹא מֻומְחֶה:</div>
+          <div class="glose-fr">Quelle en est la consequence pratique — [pourtant] meme s&#x27;il y en a qui ne changent pas, puisque nous ne savons pas laquelle change et laquelle ne change pas, toutes sont interdites si elles ont ete abattues sans expert.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְאַכְחוֹשֵׁי סָהֲדֵי</b> אִם שְׁחָטוֹ בְּלֹא מֻומְחֶה וְהַשְׁתָּא חָזֵינָא לֵיהּ קָבוּעַ וְקָייְמִי סָהֲדֵי דְּלָא נִשְׁתַּנָּה וּמַרְאֶה זֶה הָיָה לוֹ מֵחַיִּים:</div>
+          <div class="glose-fr">Pour contredire des temoins — s&#x27;il [l]&#x27;a abattu sans expert, et que maintenant nous le voyons [le defaut] fixe et permanent, et que des temoins attestent qu&#x27;il n&#x27;a pas change et que cet aspect [la taie] existait deja de son vivant.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שַׁקָּרֵי נִינְהוּ</b> וְאָסוּר לְדִבְרֵי הַכֹּל:</div>
+          <div class="glose-fr">Ce sont des menteurs — et [c&#x27;est] interdit de l&#x27;avis de tous.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>סָמְכִינַן עֲלַיְיהוּ</b> וְשָׁרִי לְר&#x27; יְהוּדָה דְּלָא קָנֵיס:</div>
+          <div class="glose-fr">On se fie a eux — et [c&#x27;est] permis selon R. Yehouda, qui n&#x27;inflige pas d&#x27;amende.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">גְּמ&#x27; אָמַר רַבָּה בב&quot;ח בְּדֻוקִּין שֶׁבָּעַיִן ד&quot;ה אָסוּר מִפְּנֵי שֶׁהֵן מִשְׁתַּנִּין לֹא נֶחְלְקוּ אֶלָּא בְּמוּמִין שֶׁבַּגּוּף. ר&quot;מ סָבַר גָּזְרִינַן מוּמִין שֶׁבַּגּוּף אַטּוּ דֻּוקִּין שֶׁבָּעַיִן וְרַבִּי יְהוּדָה סָבַר לָא גָּזְרִינַן. תַּנְיָא נָמֵי הָכִי הַשּׁוֹחֵט אֶת הַבְּכוֹר וְהֶרְאָה אֶת מוּמוֹ רַבִּי יְהוּדָה אוֹמֵר בְּדֻוקִּין שֶׁבְּעַיִן אָסוּר מִפְּנֵי שֶׁהֵן מִשְׁתַּנִּין. בְּמוּמִין שֶׁבַּגּוּף מֻותָּר מִפְּנֵי שֶׁאֵין מִשְׁתַּנִּין. רַבִּי מֵאִיר אוֹמֵר אֶחָד זֶה וְאֶחָד זֶה אָסוּר מִפְּנֵי שֶׁהֵן מִשְׁתַּנִּין. מִפְּנֵי שֶׁהֵן מִשְׁתַּנִּין ס&quot;ד מוּמִין שֶׁבַּגּוּף מִי מִשְׁתַּנִּין אֶלָּא אֵימָא מִפְּנֵי הַמִּשְׁתַּנִּין: אָמַר רַב נַחְמָן בַּר יִצְחָק מַתְנִיתִין נָמֵי דַּיְקָא דְּקָתָנֵי ר&#x27; מֵאִיר אוֹמֵר הוֹאִיל וְנִשְׁחַט שֶׁלֹּא עַל פִּי מֻומְחֶה אָסוּר ש&quot;מ רַבִּי מֵאִיר קְנָסָא הוּא דְּקָנֵיס. אע&quot;ג דְּהַשַּׁ&quot;ס דְּקָאָמַר לְעֵיל גָּזְרִינַן מוּמִין שֶׁבַּגּוּף אַטּוּ דֻּוקִּין שֶׁבָּעַיִן מִדְּקָרֵי לֵיהּ הָכָא קְנָסָא אַלְמָא קְנָסָא הָוֵי וְלֹא גְּזֵירָה. וּפָסַק בִּשְׁאִלְתּוֹת דְּרַב אַחַאי דַּהֲלָכָה כר&quot;מ בִּגְזֵירוֹתָיו וְלֹא בִּקְנָסוֹתָיו. וְהֵבִיא רְאָיָה מִמְּעֻובֶּרֶת חֲבֵירוֹ וּמְיֻנוּקַת חֲבֵירוֹ דְּקָנֵיס רַבִּי מֵאִיר יוֹצִיא וְלֹא יַחְזִיר עוֹלָמִית. וּסְתָמָא דְּהַשַּׁ&quot;ס בְּרֵישׁ הַחוֹלֵץ (יְבָמוֹת דַּף לז.) דְּלָא כְּוָותֵיהּ. וְכֵן סֻוגְיָא דִּשְׁמַעְתִּין כְּר&#x27; יְהוּדָה דְּקָאָמַר נָפְקָא מִינֵּיהּ לְאַכְחוֹשֵׁי סָהֲדֵי מַשְׁמַע דְּאִי אִיכָּא סָהֲדֵי דְּלָא אִישְׁתַּנִּי סָמְכִינַן עֲלַייְהוּ. וְלֵר&#x27; מֵאִיר קָנְסִינַן בְּכוּלְּהוּ מִפְּנֵי הַמִּשְׁתַּנִּין. וְכֵן לְקַמָּן דְּקָאָמַר לֵימָא סְתָמָא כְּרַבִּי מֵאִיר וְקָמְשַׁנֵּי בְּדֻוקִּין שֶׁבָּעַיִן וד&quot;ה. וְכֵן פָּסַק מַר שְׁמוּאֵל הַכֹּהֵן בַּר חָפְנֵי גָּאוֹן זַ&quot;ל. וּבַעַל הֲלָכוֹת פָּסַק כְּר&#x27; מֵאִיר דַּחֲשִׁיב לֵיהּ גְּזֵירָה. וְכֵן נִרְאֶה לִי מִלְּשׁוֹן הַבָּרַייְתָא דְּקָתָנֵי מִפְּנֵי הַמִּשְׁתַּנִּין. וּקְנָסָא דְּקָאָמַר הַשַּׁ&quot;ס לָאו דַּוְקָא. וְכֵן דַּעַת הָרַמְבַּ&quot;ן זַ&quot;ל וְהֵבִיא רְאָיָה מִדְּקָתָנֵי הוֹאִיל וְנִשְׁחַט וְלָא קָתָנֵי הוֹאִיל וְשׁוֹחֲטוֹ. מַשְׁמַע אֲפִי&#x27; שְׁחָטוֹ אַחֵר וּבְהָא לֹא שַׁיָּיךְ קְנָסָא אֶלָּא גְּזֵירָה:</div>
+          <div class="glose-fr">Guemara. Rabba bar bar Hana a dit : pour les taies de la cornee, de l&#x27;avis de tous [c&#x27;est] interdit parce qu&#x27;elles changent ; ils n&#x27;ont diverge que sur les defauts du corps. R. Meir tient qu&#x27;on decrete (gazrinan) les defauts du corps a cause des taies de la cornee, et R. Yehouda tient qu&#x27;on ne decrete pas. On a egalement enseigne ainsi [dans une baraita] : celui qui abat le premier-ne (bekhor) et [en] montre le defaut — R. Yehouda dit : pour les taies de la cornee, [c&#x27;est] interdit parce qu&#x27;elles changent ; pour les defauts du corps, [c&#x27;est] permis parce qu&#x27;elles ne changent pas. R. Meir dit : l&#x27;un comme l&#x27;autre [sont] interdits parce qu&#x27;elles changent. &#x27;Parce qu&#x27;elles changent&#x27; — [cela] te viendrait a l&#x27;esprit [pour les defauts du corps] ?! Les defauts du corps changent-ils donc ? Plutot dis : &#x27;a cause de celles qui changent&#x27;. Rav Nahman bar Yits&#x27;hak a dit : la michna aussi est precise, puisqu&#x27;elle enseigne &#x27;R. Meir dit : puisqu&#x27;il a ete abattu sans l&#x27;aval d&#x27;un expert, [c&#x27;est] interdit&#x27; — deduis-en que R. Meir inflige une amende (kenas). Bien que le Talmud dise plus haut &#x27;on decrete les defauts du corps a cause des taies de la cornee&#x27;, du fait qu&#x27;il l&#x27;appelle ici kenas, il apparait que c&#x27;est une amende et non un decret (guezera). Le Cheiltot de Rav Ahai a tranche que la halakha est comme R. Meir dans ses decrets mais non dans ses amendes ; il a apporte une preuve du cas de la femme enceinte d&#x27;autrui et de la nourrice d&#x27;autrui, ou R. Meir inflige une amende [&#x27;qu&#x27;il] renvoie et ne [la] reprenne jamais&#x27;. Or la sougya anonyme au debut de Ha-holets (Yevamot 37a) n&#x27;est pas conforme a lui. De meme, la sougya de notre passage [suit] R. Yehouda, puisqu&#x27;elle dit &#x27;la consequence est pour contredire des temoins&#x27; — [ce qui] implique que s&#x27;il y a des temoins [attestant] qu&#x27;elle n&#x27;a pas change, on se fie a eux ; et pour R. Meir on inflige une amende dans tous les cas &#x27;a cause de celles qui changent&#x27;. De meme plus loin, quand [la Guemara] dit &#x27;dirons-nous que la [michna] anonyme suit R. Meir&#x27;, et repond &#x27;pour les taies de la cornee, de l&#x27;avis de tous&#x27;. Ainsi a tranche aussi Mar Chmouel ha-Cohen bar Hofni Gaon, de memoire benie. Mais l&#x27;auteur des Halakhot [Guedolot] a tranche comme R. Meir, tenant [l&#x27;interdit] pour un decret. Et cela me parait [juste] d&#x27;apres le libelle de la baraita qui enseigne &#x27;a cause de celles qui changent&#x27; ; et le &#x27;kenas&#x27; que dit le Talmud n&#x27;est pas [a prendre] au sens strict. Telle est aussi l&#x27;opinion du Ramban, de memoire benie, qui apporte une preuve du fait qu&#x27;elle enseigne &#x27;puisqu&#x27;il a ete abattu&#x27; et non &#x27;puisqu&#x27;il l&#x27;abat&#x27; — ce qui implique meme si un autre l&#x27;a abattu, et dans ce cas l&#x27;amende ne s&#x27;applique pas, mais [seulement] le decret.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Enjeu pratique. Si un bekhor a ete abattu sans expert, et que des <b>temoins</b> attestent que la taie visible sur l'oeil du cadavre existait deja du vivant (donc que rien n'a change). Si toutes les taies changent, ces temoins sont des <b>menteurs</b>. Sinon, on peut <b>s'y fier</b> (et permettre, selon R. Yehouda qui n'inflige pas d'amende).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּא שְׁמַע, דִּאָמַר רַבָּה בַּר בַּר חָנָה: שָׂח לִי רַבִּי יֹאשִׁיָּה דְּמִן אוּשָׁא, בֹּא וְאַרְאֶךָּ בְּדֻוקִּין שֶׁהֵן מִשְׁתַּנִּים. מִדְּקָאָמַר לֵיהּ ״בֹּא וְאַרְאֲךָ״, מִכְּלָל דְּאִיכָּא דְּמִשְׁתַּנֵּי וְאִיכָּא דְּלָא מִשְׁתַּנֵּי.</div>
+            <div class="fr"><p>Viens et entends (ta chema) : Rabba bar bar Hana a dit : Rabbi Yochiya de Ousha m&#x27;a confie : viens et je te montrerai, parmi les taies, celles qui changent. Du fait qu&#x27;il lui dit &#x27;viens et je te montrerai&#x27;, on deduit qu&#x27;il y en a qui changent et d&#x27;autres qui ne changent pas.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Resolution de la question. Rabba bar bar Hana rapporte que R. Yochiya proposait de lui <b>montrer</b> les taies qui changent — l'expression 'je te montrerai [celles-la]' implique que seules <b>certaines</b> changent, d'autres non. Reponse a la question du segment 1.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מִי שֶׁאֵינוֹ מֻומְחֶה, וְרָאָה אֶת הַבְּכוֹר וְנִשְׁחַט עַל פִּיו, הֲרֵי זֶה יִקָּבֵר, וִישַׁלֵּם מִבֵּיתוֹ. לֵימָא תְּנַן סְתָמָא כְּרַבִּי מֵאִיר? דִּלְמָא בְּדֻוקִּין שֶׁבָּעַיִן, וְדִבְרֵי הַכֹּל.</div>
+            <div class="fr"><p>[Michna :] celui qui n&#x27;est pas expert (mumhe), qui a vu le premier-ne (bekhor) et [que celui-ci] a ete abattu sur sa parole — [le bekhor] sera enterre (yikaver) et [le non-expert] paiera de sa poche. Dirons-nous que nous avons enseigne la [michna] anonyme (setama) comme R.</p><p>Meir ? Peut-etre [s&#x27;agit-il] des taies de la cornee, et [alors c&#x27;est] de l&#x27;avis de tous.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>סְתָמָא כְּר&#x27; מֵאִיר</b> דְּאָמַר לְעֵיל אֶחָד זֶה וְאֶחָד זֶה אָסוּר דְּקָתָנֵי יִקָּבֵר ואע&quot;ג דְּהַשְׁתָּא מִיתְחֲזֵי קָבוּעַ:</div>
+          <div class="glose-fr">[La michna] anonyme comme R. Meir — qui dit plus haut &#x27;l&#x27;un comme l&#x27;autre [sont] interdits&#x27;, puisqu&#x27;elle enseigne &#x27;sera enterre&#x27; bien que maintenant [le defaut] apparaisse fixe et permanent.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דִּלְמָא בְּדֻוקִּין שֶׁבָּעַיִן</b> אָמַר יִקָּבֵר דִּלְדִבְרֵי הַכֹּל מִשְׁתַּנִּין:</div>
+          <div class="glose-fr">Peut-etre [s&#x27;agit-il] des taies de la cornee — [c&#x27;est] pour elles qu&#x27;[elle] dit &#x27;sera enterre&#x27;, car de l&#x27;avis de tous elles changent.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">מַתְנֵי&#x27; מִי שֶׁאֵינוֹ מֻומְחֶה וְרָאָה אֶת הַבְּכוֹר וְנִשְׁחַט עַל פִּיו הֲרֵי זֶה יִקָּבֵר וִישַׁלֵּם מִבֵּיתוֹ. דָּן אֶת הַדִּין זִיכָּה אֶת הַחַיָּיב חַייָּב אֶת הַזַּכַּאי טִימֵּא אֶת הַטָּהוֹר טִיהֵר אֶת הַטָּמֵא מַה שֶּׁעָשָׂה עָשׂוּי וִישַׁלֵּם מִבֵּיתוֹ. וְאִם הָיָה מֻומְחֶה לְרַבִּים פָּטוּר מִלְּשַׁלֵּם: מַעֲשֶׂה בְּפָרָה שֶׁנִּיטְּלָה הָאֵם שֶׁלָּהּ וְהֶאֱכִילָהּ ר&#x27; טַרְפוֹן לִכְלָבִים וּבָא מַעֲשֶׂה לִפְנֵי חֲכָמִים בְּיַבְנֶה וְהִתִּירוּ. אָמַר תּוֹדוֹס הָרוֹפֵא אֵין פָּרָה וַחֲזִירָה יוֹצְאָה מֵאלֶכְּסַנְדְּרִי&#x27; שֶׁל מִצְרַיִם עַד שֶׁחוֹתְכִין הָאֵם שֶׁלָּהּ בִּשְׁבִיל שֶׁלֹּא תֵּלֵד. אָמַר רַבִּי טַרְפוֹן הָלְכָה חֲמוֹרְךָ טַרְפוֹן. אָמַר לוֹ רַבִּי עֲקִיבָא פָּטוּר אַתָּה שֶׁאַתָּה מֻומְחֶה וְכָל הַמֻּומְחֶה לב&quot;ד פָּטוּר מִלְּשַׁלֵּם:</div>
+          <div class="glose-fr">Michna. Celui qui n&#x27;est pas expert, qui a vu le premier-ne et [que celui-ci] a ete abattu sur sa parole — [le bekhor] sera enterre et [le non-expert] paiera de sa poche. [Michna suivante :] a rendu le jugement, [s&#x27;]il a acquitte le coupable, condamne l&#x27;innocent, declare impur le pur, declare pur l&#x27;impur — ce qu&#x27;il a fait est fait, et il paie de sa poche ; mais s&#x27;il etait expert agree par le tribunal (mumhe la-rabbim), il est exempt de payer. Fait rapporte : une vache dont on avait pris la matrice, que R. Tarfon fit donner aux chiens ; l&#x27;affaire vint devant les Sages a Yavne, et ils [la] permirent. Todos le medecin dit : nulle vache ni truie ne sort d&#x27;Alexandrie d&#x27;Egypte sans qu&#x27;on [lui] coupe la matrice, afin qu&#x27;elle n&#x27;enfante pas [ailleurs]. R. Tarfon dit : ton ane est perdu, Tarfon ! R. Akiva lui dit : tu es exempt, car tu es expert, et quiconque est expert pour le tribunal est exempt de payer.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La michna ordonne d'<b>enterrer</b> le bekhor abattu sur l'avis d'un non-expert (car il ne peut ni etre offert ni consomme comme profane sans certitude de defaut permanent), et de faire <b>payer</b> le non-expert. La Guemara se demande si cette regle anonyme suit forcement R. Meir (qui interdit toujours) — non : elle peut viser les <b>taies de la cornee</b>, ou l'interdit fait l'unanimite.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תְּנָא: כְּשֶׁהוּא מְשַׁלֵּם — מְשַׁלֵּם רְבִיעַ לְדַקָּה, וּמֶחֱצָה לְגַסָּה. מַאי טַעְמָא? אָמַר רַב פָּפָּא: זֶה הֶפְסֵד מְרֻובֶּה, וְזֶה הֶפְסֵד מוּעָט.</div>
+            <div class="fr"><p>On a enseigne (tanna) : quand il paie — il paie un quart pour le [betail] menu (daka) et la moitie pour le [betail] gros (gassa). Quelle en est la raison ?</p><p>Rav Papa a dit : celui-ci [le gros betail represente] une grande perte, et celui-la [le menu] une petite perte.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּשֶׁהוּא מְשַׁלֵּם</b> לַכֹּהֵן נוֹתֵן רְבִיעַ דָּמָיו מִשּׁוּם בְּכוֹר בְּהֵמָה דַּקָּה וְלִבְכוֹר בְּהֵמָה גַּסָּה חֲצִי דָּמָיו. מִשּׁוּם הָכִי מְשַׁלֵּם מֶחֱצָה דְּמָמוֹן הַמֻּוטָּל בְּסָפֵק הוּא דְּאִיכָּא לְמֵימַר אַפְּסֵדֶיהָ כּוּלֵּיהּ דְּאִי לָא הֲוָה שָׁרֵי לֵיהּ הָכִי כִּי הֲוָה מַיְיתֵי לֵיהּ קַמֵּי מֻומְחֶה גָּמוּר וְשָׁרִי לֵיהּ וַהֲוָה אָכִיל לֵיהּ וְהַשְׁתָּא בָּעֵי קְבוּרָה וְאִיכָּא לְמֵימַר דְּלָאו מִידֵּי אַפְּסֵדֶיהָ דְּדִלְמָא לָא הֲוָה מוּמָא וּמֻומְחֶה גָּמוּר לָא הֲוָה שָׁרִי לֵיהּ וְשֶׁמָּא לָא הֲוָה נָפֵיל בֵּיהּ לְעוֹלָם מוּם קָבוּעַ עַד שֶׁיָּמוּת:</div>
+          <div class="glose-fr">Quand il paie — au cohen : il donne un quart de sa valeur pour un premier-ne de menu betail, et pour un premier-ne de gros betail la moitie de sa valeur. C&#x27;est pourquoi il paie la moitie : car c&#x27;est un bien soumis a un doute (mamon ha-moutal be-safek). On peut dire qu&#x27;il [lui] a fait tout perdre — car si [le non-expert] ne le [lui] avait pas permis ainsi, quand il l&#x27;aurait amene devant un expert accompli, celui-ci le [lui] aurait permis et il l&#x27;aurait mange ; or maintenant [le bekhor] requiert l&#x27;enterrement. Et on peut [aussi] dire qu&#x27;il ne [lui] a rien fait perdre — car peut-etre n&#x27;y avait-il pas [reellement] de defaut, et l&#x27;expert accompli ne le [lui] aurait pas permis, et peut-etre [l&#x27;animal] n&#x27;aurait-il jamais eu de defaut permanent jusqu&#x27;a sa mort [naturelle].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מ&quot;ט</b> רְבִיעַ לַדַּקָּה וּמֶחֱצָה לַגַּסָּה:</div>
+          <div class="glose-fr">Quelle en est la raison — [de payer] un quart pour le menu et la moitie pour le gros ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>גַּסָּה הִפְסִידָה מְרֻובֶּה</b> לְפִיכָךְ תַּשְׁלוּמִין מְרֻובִּין:</div>
+          <div class="glose-fr">Le gros [betail] a une perte plus grande — c&#x27;est pourquoi le dedommagement est plus grand.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רְבִיעַ לַדַּקָּה וּמֶחֱצָה לַגַּסָּה</b> ואע&quot;פ שָׁפֵי&#x27; בַּקּוּנְטְרֵס מִשּׁוּם דְּהָוֵי מָמוֹן הַמֻּוטָּל בְּסָפֵק שֶׁמָּא יַתִּירֶנּוּ חָכָם עַל מוּם וְשֶׁמָּא לֹא יַתִּירֶנּוּ לָאו מִשּׁוּם דְּתַיְתֵי כְּסוּמָכוֹס אֶלָּא תַּקָּנַת חֲכָמִים בְּעָלְמָא הוּא ואע&quot;ג דְּאַיְירֵי בְּכָל מוּם אֲפִילּוּ יָדוּעַ שֶׁיַּתִּירֶנּוּ מֻומְחֶה עַל יָדוֹ מ&quot;מ חֲשִׁיב לֵיהּ סָפֵק קְצָת דְּשֶׁמָּא לֹא מִזְּקִיק לֵיהּ מֻומְחֶה וְגַם לָא פְּלִיג בֵּין מוּם וְאִי הֲוָה מַיְירֵי הַךְ בָּרַיְיתָא בְּדֻוקִּין שֶׁבָּעַיִן דַּוְקָא הֲוָה נִיחָא טְפֵי דה&quot;נ קַיְימָא לַן כְּרַבִּי יְהוּדָה כִּדְפָרֵישִׁית וּלְדִידֵיהּ אֵינוֹ נִקְבָּר אֶלָּא בְּדֻוקִּין שֶׁבָּעַיִן וְעוֹד יֵשׁ לְפָרֵשׁ דְּהַיְינוּ טַעְמָא דִּמְשַׁלֵּם מֶחֱצָה שֶׁשִּׁיעֲרוּ חֲכָמִים דְּאֵינוֹ שָׁוֶה יוֹתֵר כ&quot;ז שֶׁעוֹמֵד בְּסָפֵק שֶׁעֲדַיִין לֹא הֻותַּר וּבִתְרוּמָה נַמֵּי אַשְׁכְּחַן שֶׁאֵינוֹ שָׁוֶה אֶלָּא כְּמֶחֱצָה שֶׁל חֻולִּין כִּדְאָמְרִינַן בְּפֶרֶק אַף עַל פִּי (כְּתֻובּוֹת דַּף נח.) כָּל מָקוֹם שֶׁהֻוזְכַּר תְּרוּמָה נוֹתֵן לָהּ כִּפְלַיִם בְּחֻולִּין וּמִיהוּ לָא דָּמֵי מַמָּשׁ לִתְרוּמָה דַּאֲסוּרָה לְזָרִים וַאֲסוּרָה בְּטֻומְאָה אֲבָל בְּכוֹר מוּמִין שָׁרֵי לְגַמְרֵי כִּצְבִי וְכָאַיָּל:</div>
+          <div class="glose-fr">Un quart pour le menu et la moitie pour le gros — bien que le Commentateur (Rachi) ait explique [que c&#x27;est] parce que c&#x27;est un bien soumis a un doute — peut-etre un sage lui aurait-il permis [l&#x27;animal] au titre du defaut, peut-etre non — [cela] ne [signifie] pas que [la michna] serait selon Soumkhos [qui juge qu&#x27;un bien litigieux se partage] ; c&#x27;est simplement une ordonnance rabbinique (takanat hakhamim). Et bien qu&#x27;il s&#x27;agisse de tout defaut, meme s&#x27;il est certain qu&#x27;un expert le [lui] aurait permis, [la Guemara] le tient neanmoins pour un [certain] doute, car peut-etre l&#x27;expert ne lui aurait-il pas cause [de perte], et [la michna] ne distingue pas entre les defauts. Et si cette baraita traitait uniquement des taies de la cornee, [ce serait] plus commode, car la aussi nous tenons [la halakha] comme R. Yehouda, ainsi que je l&#x27;ai explique, et pour lui [le bekhor] n&#x27;est enterre que pour les taies de la cornee. On peut encore expliquer que la raison pour laquelle il paie la moitie [est] que les Sages ont evalue qu&#x27;il ne vaut pas davantage tant qu&#x27;il demeure dans le doute et n&#x27;a pas encore ete permis. Et pour la terouma aussi nous trouvons qu&#x27;elle ne vaut que comme la moitie [de la valeur] du profane, ainsi que nous disons au chapitre &#x27;Af al pi&#x27; (Ketoubot 58a) : partout ou la terouma est mentionnee, on lui donne le double en profane. Toutefois cela ne ressemble pas exactement a la terouma, qui est interdite aux etrangers [non-cohanim] et interdite en etat d&#x27;impurete, tandis que le bekhor, une fois [porteur] de defauts, est totalement permis, comme la gazelle et le cerf.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">גְּמ&#x27; תָּנָא כְּשֶׁהוּא מְשַׁלֵּם מְשַׁלֵּם רְבִיעַ לַדַּקָּה וּמֶחֱצָה לַגַּסָּה מַאי טַעְמָא אָמַר רַב הוּנָא בַּר מָנוֹחַ מִשּׁוּם גְּזֵירָה מְגַדְּלֵי בְּהֵמָה דַּקָּה נָגְעִי בָּהּ. וְכָתַב הָרַמְבַּ&quot;ן זַ&quot;ל דִּבְחוּצָה לָאָרֶץ מְשַׁלֵּם אַף לְדַקָּה מֶחֱצָה וְכֵן מִסְתַּבֵּר: דָּן אֶת הַדִּין וְכוּ&#x27; לֵימָא תְּנַן סְתָמָא כַּר&#x27; מֵאִיר דְּדָאֵין דִּינָא דִּגְרָמֵי. אָמַר רַבִּי אֱלִיעֶזֶר אָמַר רַב כְּשֶׁנָּשָׂא וְנָתַן בַּיָּד. וְהָא דִּתְנַן מִי שֶׁאֵינוֹ מֻומְחֶה וְרוֹאֶה אֶת הַבְּכוֹר וְנִשְׁחַט עַל פִּיו הֲרֵי זֶה יִקָּבֵר וִישַׁלֵּם מִבֵּיתוֹ. הָתָם קְנָסָא הוּא דְּקָנְסִי רַבָּנָן דְּלָא לַיְּתֵי לְמִישְׁרֵי בֻּוכְרָא אֶלָּא מִי שֶׁהוּא מֻומְחֶה. לְפִי שֶׁחָכְמָה יְתֵירָה הִיא רְאִייַּת מוּמִין. דְּהָא רַב גִּידֵּל הָיָה שְׁמֹנָה עָשָׂר חֹדֶשׁ אֵצֶל הָרוֹעִים לְהִתְבּוֹנֵן בְּמוּמִין:</div>
+          <div class="glose-fr">Guemara. On a enseigne : quand il paie, il paie un quart pour le menu et la moitie pour le gros. Quelle en est la raison ? Rav Houna bar Manoah a dit : a cause du decret contre les eleveurs de menu betail (megaddelei behema daka), on [le] touche [avec cette regle]. Le Ramban, de memoire benie, a ecrit que hors de la Terre [d&#x27;Israel] il paie la moitie meme pour le menu [betail], et ainsi est-il raisonnable. [Michna :] &#x27;a rendu le jugement, etc.&#x27; — dirons-nous que nous avons enseigne la [michna] anonyme comme R. Meir, qui juge [selon] la loi du dommage indirect (dina de-garmi) ? R. Eliezer a dit au nom de Rav : [c&#x27;est] lorsqu&#x27;il a manipule [l&#x27;objet] de sa main (nassa ve-natan be-yad). Et ce qu&#x27;enseigne [la michna] &#x27;celui qui n&#x27;est pas expert, qui voit le premier-ne et [que celui-ci] a ete abattu sur sa parole — [le bekhor] sera enterre et il paiera de sa poche&#x27; — la, c&#x27;est une amende (kenas) que les Sages ont infligee, afin qu&#x27;on ne vienne pas a permettre le premier-ne [par n&#x27;importe qui,] mais [seulement par] celui qui est expert, car c&#x27;est une sagesse superieure que l&#x27;examen des defauts. En effet, Rav Guidel resta dix-huit mois aupres des bergers pour s&#x27;instruire des defauts.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Bareme du dedommagement du non-expert au cohen : <b>un quart</b> de la valeur pour un mouton ou une chevre, <b>la moitie</b> pour un boeuf. Selon <b>Rav Papa</b>, c'est proportionne a la perte : celle du gros betail est grande, celle du menu betail petite.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 210" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="210" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1c1917">Combien paie le non-expert qui a fait consommer le bekhor ?</text>
+  <rect x="60" y="46" width="260" height="120" rx="10" fill="#fff7e6" stroke="#b45309"/>
+  <text x="190" y="72" text-anchor="middle" font-size="13" font-weight="700" fill="#b45309">Behema daka (petit betail)</text>
+  <text x="190" y="98" text-anchor="middle" font-size="11.5" fill="#292524">mouton / chevre</text>
+  <text x="190" y="126" text-anchor="middle" font-size="18" font-weight="700" fill="#b91c1c">1/4 de la valeur</text>
+  <text x="190" y="150" text-anchor="middle" font-size="10.5" fill="#78716c">perte moderee + guezera sur</text>
+  <rect x="380" y="46" width="260" height="120" rx="10" fill="#eef2ff" stroke="#3730a3"/>
+  <text x="510" y="72" text-anchor="middle" font-size="13" font-weight="700" fill="#3730a3">Behema gassa (gros betail)</text>
+  <text x="510" y="98" text-anchor="middle" font-size="11.5" fill="#292524">boeuf / vache</text>
+  <text x="510" y="126" text-anchor="middle" font-size="18" font-weight="700" fill="#15803d">1/2 de la valeur</text>
+  <text x="510" y="150" text-anchor="middle" font-size="10.5" fill="#78716c">grande perte (hefsed merouba)</text>
+  <text x="350" y="190" text-anchor="middle" font-size="11" fill="#78716c">Motif (Rav Papa) grande vs petite perte ; (Rav Aha b. Ika) guezera contre l'elevage du petit betail en E-I</text>
+</svg></div><div class="svg-cap">Le bareme des paiements du non-expert.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִי הָכִי, לְפוּם פְּסֵידָא לִישַׁלֵּם! אָמַר רַב הוּנָא בַּר מָנוֹחַ מִשְּׁמֵיהּ דְּרַב אַחָא בַּר אִיקָא: מִשּׁוּם גְּזֵירַת מְגַדְּלֵי בְּהֵמָה דַּקָּה נָגְעוּ בָּהּ.</div>
+            <div class="fr"><p>Si c&#x27;est ainsi, qu&#x27;il paie selon la perte [reelle] ! Rav Houna bar Manoah a dit au nom de Rav Aha bar Ika : c&#x27;est a cause du decret contre les eleveurs de menu betail (megaddelei behema daka) qu&#x27;on l&#x27;a touche.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְפוּם פְּסֵידָא לִישַׁלֵּם</b> לָזֶה חֲצִי דָּמָיו הַמְרֻובִּין וְלָזֶה חֲצִי דָּמָיו הַמִּעוּטִין:</div>
+          <div class="glose-fr">Qu&#x27;il paie selon la perte — a celui-ci la moitie de sa grande valeur, et a celui-la la moitie de sa petite valeur.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִשּׁוּם גְּזֵירַת מְגַדְּלֵי בְּהֵמָה דַּקָּה נָגְעוּ בָּהּ</b> מִשּׁוּם טֹורַח מְגַדְּלֵי בְּהֵמָה דַּקָּה שֶׁיֵּשׁ בָּהּ טֹורַח גָּדוֹל לְגַדְּלָהּ וְזֶה שֶׁהִתִּיר הַבְּכוֹר הִצִּילוֹ לַכֹּהֵן מִטֹּורַח גָּדוֹל דְּשֶׁמָּא אִם הֶרְאָהוּ לְאַחֵר לֹא הָיָה מַתִּירוֹ לוֹ וְהָיָה לוֹ עוֹד טִיפּוּל מְרֻובֶּה עַד שֶׁיִּפֹּול בּוֹ מוּם לְהָכִי נָגְעוּ בּוֹ דְּלָא מְשַׁלֵּם אֶלָּא רְבִיעַ. ל&quot;א מִפְּנֵי גְּזֵירַת מְגַדְּלֵי בְּהֵמָה דַּקָּה שֶׁעוֹבְרִין עַל דִּבְרֵי חֲכָמִים כְּדִתְנַן (בּ&quot;ק דַּף עֵט:) אֵין מְגַדְּלִין בְּהֵמָה דַּקָּה בא&quot;י קְנָסוּהוּ חֲכָמִים דְּלָא לִישְׁקֹל אֶלָּא רִיבְעָא. וְלֹא מִפִּי הַמּוֹרֶה:</div>
+          <div class="glose-fr">C&#x27;est a cause du decret contre les eleveurs de menu betail qu&#x27;on l&#x27;a touche — a cause de la peine des eleveurs de menu betail, qui ont grand-peine a l&#x27;elever ; et celui qui a permis le premier-ne a epargne au cohen une grande peine, car peut-etre, s&#x27;il l&#x27;avait montre a un autre, celui-ci ne le lui aurait pas permis, et il aurait eu encore un long soin [a en prendre] jusqu&#x27;a ce qu&#x27;un defaut y survienne ; c&#x27;est pourquoi on l&#x27;a touche [avec cette regle], [de sorte] qu&#x27;il ne paie qu&#x27;un quart. Autre version : a cause du decret contre les eleveurs de menu betail, qui transgressent les paroles des Sages — comme nous avons enseigne (Baba Kama 79b) &#x27;on n&#x27;eleve pas de menu betail en Terre d&#x27;Israel&#x27; — les Sages l&#x27;ont [en fait] penalise afin qu&#x27;il ne prenne qu&#x27;un quart. Mais [cela] ne [vient] pas de la bouche du Maitre [= ce n&#x27;est pas l&#x27;explication de Rachi lui-meme].</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִשּׁוּם גְּזֵירַת מְגַדְּלֵי בְּהֵמָה דַּקָּה</b> פֵּירוּשׁ שֶׁהֶחְמִירוּ עֲלֵיהֶם חֲכָמִים שֶׁלֹּא לְגַדְּלָם כִּי אִם בָּחֳורָשִׁין חוּץ לַייִּשּׁוּב וְיֵשׁ בָּהּ טֹורַח גָּדוֹל וְאֵינוֹ שָׁוֶה אֶלָּא רְבִיעַ דְּהַייְנוּ מֶחֱצָה פָּחוֹת מִן הַגַּסָּה וְגַם בַּקּוּנְטְרֵס פֵּירֵשׁ כֵּן מִפְּנֵי טֹורַח גָּזְרוּ לָהּ אֲבָל לֹא דִּקְדֵּק לְיַישֵּׁב לְשׁוֹן גְּזֵירָה:</div>
+          <div class="glose-fr">A cause du decret contre les eleveurs de menu betail — c&#x27;est-a-dire que les Sages leur ont impose une rigueur : ne les elever que dans les bois, hors des lieux habites ; et il y a la grande peine, et [l&#x27;animal] ne vaut qu&#x27;un quart, soit la moitie de moins que le gros [betail]. Le Commentateur (Rachi) l&#x27;a aussi explique ainsi : c&#x27;est a cause de la peine qu&#x27;on a decrete [ainsi]. Mais il n&#x27;a pas pris soin d&#x27;ajuster [cette explication au] terme &#x27;decret&#x27; (guezera).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection : si le motif est la perte, qu'il paie la meme <em>proportion</em> pour le menu que pour le gros. Reponse (<b>Rav Aha bar Ika</b>) : la reduction a un quart pour le menu betail tient au <b>decret contre l'elevage du menu betail</b> en Terre d'Israel (car il degrade les champs) — decret qui epargne au cohen la peine d'elever un tel animal, d'ou un dedommagement moindre.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַתְנִי׳ דָּן אֶת הַדִּין, זִיכָּה אֶת הַחַיָּיב וְחִייֵּב אֶת הַזַּכַּאי, טִימֵּא אֶת הַטָּהוֹר וְטִיהֵר אֶת הַטָּמֵא — מַה שֶׁעָשָׂה עָשׂוּי, וִישַׁלֵּם מִבֵּיתוֹ. וְאִם הָיָה מֻומְחֶה לְבֵית דִּין — פָּטוּר מִלְּשַׁלֵּם.</div>
+            <div class="fr"><p>[Michna :] a rendu le jugement, [s&#x27;]il a acquitte le coupable et condamne l&#x27;innocent, declare impur le pur et declare pur l&#x27;impur — ce qu&#x27;il a fait est fait (ma che-assa assouy), et il paie de sa poche. Mais s&#x27;il etait expert agree par le tribunal (mumhe le-beit din) — il est exempt de payer.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַתְנֵי&#x27; וְאִם הָיָה מֻומְחֶה לב&quot;ד פָּטוּר</b> דְּלָא מָצֵי מֵימָר לֵיהּ אַמַּאי דָּייְנַתְּ לֵיהּ הוֹאִיל וְלֹא בָּקִי בְּדִינֵי:</div>
+          <div class="glose-fr">[Michna :] mais s&#x27;il etait expert agree par le tribunal, il est exempt — car [la partie lesee] ne peut lui dire &#x27;pourquoi as-tu juge [ainsi] ?&#x27;, puisqu&#x27;[il n&#x27;etait pas non] verse dans les lois [au point d&#x27;etre tenu pour negligent].</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דָּן אֶת הַדִּין כו&#x27;</b> בפ&quot;ק דְּסַנְהֶדְרִין (דַּף ו.) פָּרִיךְ מִינָּהּ לְר&#x27; אַבָּהוּ שֶׁאָמַר שְׁנַיִם שֶׁדָּנוּ אֵין דִּינֵיהֶן דִּין וְתֵימַהּ מְנָא לֵיהּ דְּמַייְרֵי בְּיָחִיד אִי מִשּׁוּם דְּקָתָנֵי דָּן אֶת הַדִּין לְשׁוֹן יָחִיד הָא בְּרֵישׁ אֵלּוּ טְרֵיפוֹת (חֻולִּין דַּף מד:) קָתָנֵי דָּן אֶת הַדִּין וְלָא מַיְירֵי בְּיָחִיד כִּדְקָתָנֵי וְכֻולָּן רַשָּׁאִין לִיקַּח וְיֵשׁ לוֹמַר דְּהָתָם קָתָנֵי דֻּומְיָא דְּעֵדִים אֲבָל מַתְנֵי&#x27; דְּהָכָא מַיְירֵי כֻּולָּהּ בְּיָחִיד דְּקָתָנֵי סֵיפָא וְאִם הָיָה מֻומְחֶה לְבֵית דִּין כו&#x27; וּמַעֲשֶׂה בַּר&#x27; טִרְפוֹן כו&#x27; וְרֵישָׁא נָמֵי מִי שֶׁאֵינוֹ מֻומְחֶה וְרָאָה אֶת הַבְּכוֹר:</div>
+          <div class="glose-fr">A rendu le jugement, etc. — au premier chapitre de Sanhedrin (6a), on objecte de la a R. Abo: qui dit que &#x27;deux qui ont juge, leur jugement n&#x27;[est] pas [un] jugement&#x27;. Et [c&#x27;est] etonnant : d&#x27;ou [sait-on] qu&#x27;il s&#x27;agit d&#x27;un juge unique ? Si c&#x27;est parce qu&#x27;elle enseigne &#x27;a rendu le jugement&#x27; au singulier — or, au debut de &#x27;Eilou terefot&#x27; (Houlin 44b), elle enseigne aussi &#x27;a rendu le jugement&#x27; sans qu&#x27;il s&#x27;agisse d&#x27;un juge unique, puisqu&#x27;elle enseigne &#x27;et tous ont le droit d&#x27;acheter&#x27;. On peut repondre : la, [la michna] enseigne [cela] a l&#x27;instar des temoins ; mais notre michna ici traite entierement du juge unique, puisqu&#x27;elle enseigne dans la fin &#x27;et s&#x27;il etait expert agree par le tribunal, etc.&#x27;, et [rapporte] le fait de R. Tarfon, etc. ; et le debut aussi [traite du singulier] : &#x27;celui qui n&#x27;est pas expert et voit le premier-ne&#x27;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle michna : un juge qui rend une decision <b>erronee</b> causant une perte (acquitter le coupable, condamner l'innocent, statuer a tort sur la purete). Sa decision <b>tient</b> ('ce qu'il a fait est fait'), mais il <b>paie de sa poche</b>. Exception : le <b>juge expert agree</b> (mumhe le-beit din) est exempt.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">גְּמָ׳ לֵימָא תְּנַן סְתָמָא כְּרַבִּי מֵאִיר, דְּדָאֵין דִּינָא דְגָרְמִי? אָמַר רַבִּי אִילְעָא אָמַר רַב: כְּגוֹן שֶׁנָּשָׂא וְנָתַן בַּיָּד.</div>
+            <div class="fr"><p>Guemara. Dirons-nous que nous avons enseigne la [michna] anonyme comme R.</p><p>Meir, qui juge [selon] la loi du dommage indirect (dina de-garmi) ? R.</p><p>Ilaa a dit au nom de Rav : [c&#x27;est] par exemple lorsqu&#x27;il a manipule [l&#x27;objet] de sa main (nassa ve-natan be-yad).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>גמ&#x27; ר&quot;מ דָּאֵין דִּינָא דְגָרְמִי</b> בב&quot;ק בְּפֶרֶק הַגּוֹזֵל עֵצִים (בָּבָא קַמָּא דַּף ק.) מְחִיצַת הַכֶּרֶם שֶׁנִּפְרְצָה אוֹמֵר לוֹ גְּדֹור נִתְייָאֵשׁ הֵימֶנָּה וְלֹא גְּדָרָהּ הֲרֵי זֶה קִידֵּשׁ וְחַייָּב בְּאַחְרָיוּתוֹ. גַּרְמֵי דְּגָרַם לֶאֱסֹור תְּבוּאָתוֹ שֶׁל חֲבֵירוֹ:</div>
+          <div class="glose-fr">Guemara. R. Meir qui juge [selon] le dommage indirect — dans Baba Kama, au chapitre &#x27;Ha-gozel etsim&#x27; (100a) : [au sujet d&#x27;]une cloture de vigne qui s&#x27;est effondree, on lui dit &#x27;cloture[-la]&#x27; ; [s&#x27;]il [y] a renonce et ne l&#x27;a pas cloturee, voici qu&#x27;il [en] a rendu [le raisin] interdit (kiddech) et [en] est responsable — [c&#x27;est] du garmi, car il a cause l&#x27;interdiction de la recolte de son prochain.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֵימָא תְּנַן סְתָמָא כְּרַבִּי מֵאִיר כּוּ&#x27;</b> תֵּימַהּ דְּלָא דָּייֵק הָכָא מֵרֵישָׁא דָּמֵי שֶׁאֵינוֹ מֻומְחֶה וְרוֹאֶה אֶת הַבְּכוֹר וְנִשְׁחַט עַל פִּיו הֲרֵי זֶה יִקָּבֵר וִישַׁלֵּם מִבֵּיתוֹ דְּהַהִיא מַה נַפְשָׁךְ כְּרַבִּי מֵאִיר אָתְיָא דְּדָאֵין דִּינָא דְגָרְמִי דְּלָא מִתּוֹקְמָא בְּנָשָׂא וְנָתַן בַּיָּד דְּהָא נִשְׁחַט עַל פִּיו קָתָנֵי וּבְהַגּוֹזֵל קַמָּא (בּ&quot;ק דַּף ק.) לָא מַשְׁכַּח הָתָם מִשְׁנָה דְּדָאֵין ר&quot;מ דִּינָא דְגָרְמִי אֶלָּא מִבָּרַיְיתָא דִּמְחִיצַּת הַכֶּרֶם וַהֲוָה לֵיהּ לְאֵיתוּיֵי מֵהַךְ וּבְהַגּוֹזֵל בָּתְרָא (שָׁם דַּף קיז:) גַּבֵּי הַהוּא דְּאַחוֹיֵי אַחְוִי דְּסָבַר לְמִיחַיְּיבֵיהּ מִמַּתְנִיתִין דְּדָן אֶת הַדִּין וְקָדָחֵי אַמַּאי לָא חַיְּיבֵיהּ מֵהַךְ:</div>
+          <div class="glose-fr">Dirons-nous que nous avons enseigne la [michna] anonyme comme R. Meir, etc. — [c&#x27;est] etonnant qu&#x27;on ne deduise pas ici du debut, [a savoir] &#x27;celui qui n&#x27;est pas expert et voit le premier-ne et [que celui-ci] a ete abattu sur sa parole — [le bekhor] sera enterre et il paiera de sa poche&#x27;, car ce [cas]-la, de toute maniere, vient [necessairement] comme R. Meir qui juge le dommage indirect, [puisqu&#x27;]il ne peut pas s&#x27;expliquer par &#x27;il a manipule de sa main&#x27;, car [la michna] enseigne &#x27;[que le bekhor] a ete abattu sur sa parole&#x27;. Et dans &#x27;Ha-gozel kamma&#x27; (Baba Kama 100a), [la Guemara] ne trouve pas la de michna [montrant] que R. Meir juge le dommage indirect, mais [seulement] d&#x27;une baraita, celle de la cloture de vigne — or elle aurait du l&#x27;apporter de celle-ci [notre michna]. Et dans &#x27;Ha-gozel batra&#x27; (ibid. 117b), a propos de celui qui [en] a designe [un autre du doigt aux brigands], quand [la Guemara] envisage de le rendre responsable a partir de notre michna &#x27;a rendu le jugement&#x27;, et [le refute] — pourquoi ne l&#x27;a-t-elle pas rendu responsable a partir de celle-ci [notre michna du bekhor] ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara demande si la michna (qui rend le juge responsable) suit necessairement <b>R. Meir</b>, seul a tenir pour responsable le <b>dommage indirect</b> (dina de-garmi). Reponse de Rav : non — la michna vise le cas ou le juge a <b>agi materiellement de sa main</b> (nassa ve-natan be-yad), c'est-a-dire un dommage direct, tenu pour responsable par tous.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בִּשְׁלָמָא חִייֵּב אֶת הַזַּכַּאי — כְּגוֹן שֶׁנָּשָׂא וְנָתַן בַּיָּד, אֶלָּא זִיכָּה אֶת הַחַייָּב הֵיכִי דָּמֵי? אִי דְּאָמַר לֵיהּ ״פָּטוּר אַתָּה״ — וְהָא לֹא נָשָׂא וְנָתַן בַּיָּד! אָמַר רָבִינָא: כְּגוֹן שֶׁהָיָה לוֹ מַשְׁכּוֹן וּנְטָלוֹ הֵימֶנּוּ.</div>
+            <div class="fr"><p>Soit (bichlama) &#x27;a condamne l&#x27;innocent&#x27; — par exemple lorsqu&#x27;il a manipule [le bien] de sa main ; mais &#x27;a acquitte le coupable&#x27;, quel en est le cas (heikhi dami) ? S&#x27;il lui a dit &#x27;tu es exempt&#x27; — [alors] il n&#x27;a pas manipule de sa main !</p><p>Ravina a dit : par exemple lorsqu&#x27;[il, le creancier,] avait un gage (machkon) et [le juge] le lui a pris.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בִּשְׁלָמָא חִייֵּב אֶת הַזַּכַּאי מַשְׁכַּחַת נָשָׂא וְנָתַן בַּיָּד</b> שֶׁנָּטַל הוּא הַמָּעוֹת מִמֶּנּוּ בְּיָדוֹ וּפְרָעוֹ לְבַעַל דִּין:</div>
+          <div class="glose-fr">Soit &#x27;a condamne l&#x27;innocent&#x27; : on trouve [le cas ou] il a manipule de sa main — [c&#x27;est] qu&#x27;il a pris lui-meme l&#x27;argent de sa main et l&#x27;a paye a la partie [adverse].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא זִיכָּה אֶת הַחַייָּב הֵיכִי דָּמֵי</b> בַּעַל כָּרְחֲךָ לָא מַשְׁכַּחַת לָהּ דַּעֲבִיד מִידִי אֶלָּא פָּטוּר אַתָּה קָאָמַר לֵיהּ:</div>
+          <div class="glose-fr">Mais &#x27;a acquitte le coupable&#x27;, quel en est le cas — de force, on ne trouve pas [de cas] ou il ait fait quelque chose, sinon qu&#x27;il lui dit &#x27;tu es exempt&#x27;.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁהָיָה לוֹ מַשְׁכּוֹן</b> לַמַּלְוֶה וְזֶה פָּטַר אֶת הַלֹּוֶה וְנָטַל אֶת הַמַּשְׁכּוֹן מִיָּד הַמַּלְוֶה וְהֶחֱזִירוֹ לַלֹּוֶה:</div>
+          <div class="glose-fr">[Le cas ou] il avait un gage — le creancier ; et celui-ci [le juge] a exempte le debiteur et a pris le gage de la main du creancier et l&#x27;a rendu au debiteur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara affine : 'condamner l'innocent' se comprend bien par une action directe (le juge prend le bien et le remet a l'autre). Mais 'acquitter le coupable' semble n'etre qu'une parole ('tu es exempt') — donc <b>pas</b> d'action de la main. <b>Ravina</b> repond : le cas ou le creancier detenait un <b>gage (machkon)</b>, et le juge le lui a retire de la main pour le rendre au debiteur — la, il y a bien action materielle.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">טִימֵּא אֶת הַטָּהוֹר — דְּאַגַּע בְּהוּ שֶׁרֶץ, טִיהֵר אֶת הַטָּמֵא — שֶׁעֵירְבָן עִם פֵּירוֹתָיו.</div>
+            <div class="fr"><p>&#x27;A declare impur le pur&#x27; — [par exemple] qu&#x27;il a fait toucher sur eux un [animal] rampant impur (cherets) ; &#x27;a declare pur l&#x27;impur&#x27; — qu&#x27;il les a melanges avec ses [propres] fruits.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּאַגַּע בְּהוּ שֶׁרֶץ</b> הֵבִיאוּ טְהָרוֹת לְפָנָיו לִישָּׁאֵל עֲלֵיהֶן וְאָמַר טְמֵאוֹת הֵן וְנָטַל שֶׁרֶץ אֶחָד וְנָגַע בָּהֶן כְּדֵי שֶׁלֹּא יְהֵא עוֹד סָפֵק בָּהֶן וְיַעֲמִיד דְּבָרָיו:</div>
+          <div class="glose-fr">Qu&#x27;il a fait toucher sur eux un [animal] rampant — on [lui] avait apporte des [aliments] purs (taharot) pour l&#x27;interroger a leur sujet, et il [a] dit &#x27;ils sont impurs&#x27;, et [il] a pris un rampant et les [en] a touches, afin qu&#x27;il n&#x27;y ait plus de doute a leur sujet et pour maintenir ses dires.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁעֵירְבָן עִם פֵּירוֹתָיו</b> שֶׁהֵבִיא טְהָרוֹת לְפָנָיו לִישָּׁאֵל עֲלֵיהֶן וְאָמַר טְהוֹרוֹת וּנְטָלָן הוּא עַצְמוֹ וְעֵירְבָן עִם פֵּירוֹתָיו שֶׁל נִשְׁאַל לְסוֹף אָמַר חָכָם מֻומְחֶה טְמֵאוֹת הֵן וְטִימְּאוּ אֶת הַשְּׁאָר שֶׁנִּתְעָרְבוּ בָּהֶן:</div>
+          <div class="glose-fr">Qu&#x27;il les a melanges avec ses [propres] fruits — on [lui] avait apporte des [aliments] purs pour l&#x27;interroger a leur sujet, et il [a] dit &#x27;ils sont purs&#x27;, et il les a pris lui-meme et les a melanges avec les fruits de celui qui interrogeait ; a la fin, un sage expert [a] dit &#x27;ils sont impurs&#x27;, et ils ont rendu impur le reste [des fruits] qui s&#x27;y etaient meles.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Meme logique pour les cas de purete : 'declarer impur le pur' par action directe = le juge <b>fait toucher un cherets</b> (rampant impur) aux aliments purs. 'Declarer pur l'impur' = il <b>melange</b> les aliments [en realite impurs] avec des fruits purs, contaminant l'ensemble une fois l'erreur reconnue.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַתְנִי׳ וּמַעֲשֶׂה בְּפָרָה שֶׁנִּיטְּלָה הָאֵם שֶׁלָּהּ, וְהֶאֱכִילָהּ רַבִּי טַרְפוֹן לִכְלָבִים, וּבָא מַעֲשֶׂה לִפְנֵי חֲכָמִים בְּיַבְנֶה, וְהִתִּירוּהָ.</div>
+            <div class="fr"><p>[Michna :] et [voici] un fait : une vache dont on avait pris la matrice (ha-em), que R. Tarfon fit donner aux chiens ; l&#x27;affaire vint devant les Sages a Yavne, et ils la permirent.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַתְנֵי&#x27; הָאֵם שֶׁלָּהּ</b> רֶחֶם שֶׁלָּהּ:</div>
+          <div class="glose-fr">[Michna :] sa matrice (ha-em) — son uterus (rehem).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהֶאֱכִילָהּ ר&quot;ט לַכְּלָבִים</b> שֶׁשָּׁאֲלוּ לוֹ עָלֶיהָ אִם טְרֵיפָה הִיא וְהֶאֱכִילָהּ לַכְּלָבִים:</div>
+          <div class="glose-fr">Que R. Tarfon fit donner aux chiens — car on l&#x27;avait interroge a son sujet [pour savoir] si elle etait terefa, et [le proprietaire] la fit donner aux chiens.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Recit illustrant la responsabilite du juge. Consulte sur une <b>vache privee de matrice</b>, R. Tarfon la declara terefa (interdite), et le proprietaire la <b>jeta aux chiens</b>. Mais les Sages de <b>Yavne</b> jugerent ensuite qu'une telle vache est <b>permise</b> — donc R. Tarfon avait cause une perte.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאָמַר תּוֹדוֹס הָרוֹפֵא: אֵין פָּרָה וַחֲזִירָה יוֹצְאָה מֵאֲלֶכְּסַנְדְּרִיָּא שֶׁל מִצְרַיִם, שֶׁאֵין חוֹתְכִין הָאֵם שֶׁלָּהּ, בִּשְׁבִיל שֶׁלֹּא תֵּלֵד.</div>
+            <div class="fr"><p>Et Todos le medecin (ha-rofe) dit : nulle vache ni truie ne sort d&#x27;Alexandrie d&#x27;Egypte sans qu&#x27;on [lui] coupe la matrice, afin qu&#x27;elle n&#x27;enfante pas.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁלֹּא תֵּלֵד</b> מִפְּנֵי שֶׁפָּרוֹת וַחֲזִירוֹת שֶׁלָּהֶן מְעוּלֵין מְאֹד וּמוֹכְרִין אוֹתָן בְּיֹוקֶר וְרוֹצִין שֶׁלֹּא יָלְדוּ בְּמַלְכוּת אַחֶרֶת כְּדֵי שֶׁיְּהוּ צְרִיכִין לָהֶם וְחוֹתְכִין הָאֵם שֶׁלָּהּ וְאֵינָהּ מֵתָה הִילְכָּךְ לָאו טְרֵיפָה הִיא:</div>
+          <div class="glose-fr">Afin qu&#x27;elle n&#x27;enfante pas — parce que leurs vaches et truies sont d&#x27;excellente [qualite] et qu&#x27;ils les vendent cher ; ils veulent qu&#x27;elles n&#x27;enfantent pas dans un autre royaume, afin qu&#x27;on ait [toujours] besoin d&#x27;eux, [aussi] coupent-ils leur matrice, et [pourtant l&#x27;animal] ne meurt pas — [c&#x27;est] pourquoi elle n&#x27;est pas terefa.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Preuve apportee par <b>Todos le medecin</b> : a Alexandrie, on ampute systematiquement la matrice des vaches et truies exportees pour qu'elles ne se reproduisent pas ailleurs. Ces animaux <b>survivent</b> longtemps — donc l'ablation de la matrice ne rend pas <b>terefa</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַבִּי טַרְפוֹן: הָלְכָה חֲמוֹרְךָ טַרְפוֹן! אָמַר לוֹ רַבִּי עֲקִיבָא: רַבִּי טֵרָפוֹן, אַתָּה מֻומְחֶה לְבֵית דִּין, וְכָל הַמֻּומְחֶה לְבֵית דִּין פָּטוּר מִלְּשַׁלֵּם.</div>
+            <div class="fr"><p>R. Tarfon dit : ton ane est perdu (halkha hamorkha), Tarfon !</p><p>R. Akiva lui dit : R.</p><p>Tarfon, tu es expert agree par le tribunal (mumhe le-beit din), et quiconque est expert agree par le tribunal est exempt de payer.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָלְכָה חֲמוֹרְךָ טַרְפוֹן</b> הִפְסַדְתָּ חֲמוֹר שֶׁתְּשַׁלְּמֶנּוּ לְבַעַל הַפָּרָה:</div>
+          <div class="glose-fr">Ton ane est perdu, Tarfon — tu as perdu [le prix d&#x27;]un ane, [somme] que tu devrais payer au proprietaire de la vache.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reconnaissant son erreur, R. Tarfon se croit tenu de <b>dedommager</b> le proprietaire (il devra 'vendre son ane'). R. Akiva le rassure : en tant qu'<b>expert agree par le tribunal</b>, il est <b>exempt</b> de toute reparation.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">גְּמ׳ וְתִיפּוֹק לֵיהּ, דְּטָעָה בִּדְבַר מִשְׁנָה, וְטָעָה בִּדְבַר מִשְׁנָה חוֹזֵר!</div>
+            <div class="fr"><p>Guemara. Mais qu&#x27;il [le] deduise [autrement] : [R.</p><p>Tarfon] s&#x27;est trompe sur [une chose enoncee dans] une michna (davar michna), et celui qui se trompe sur une michna [voit sa decision] revenir [= annulee] (chozer) !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>גְּמ&#x27; וְתִיפּוֹק לֵיהּ</b> דְּאִי נָמֵי לָאו מֻומְחֶה הוּא פָּטוּר דְּטוֹעֶה בִּדְבַר מִשְׁנָה הוּא דִּתְנַן בְּאֵלּוּ טְרֵיפוֹת (חֻולִּין דַּף נד.) נִיטְּלָה הָאֵם כְּשֵׁירָה וְטָעָה בִּדְבַר מִשְׁנָה חוֹזֵר בְּדִיבּוּרוֹ בְּסַנְהֶדְרִין (דַּף לג.) וְכֵיוָן דְּאִי קַיְימָא פָּרָה הֲוָה מָצֵי לְמִיהְדַּר בֵּיהּ וּלְמַשְׁרְיָיה אִישְׁתְּכַח דְּמַה שֶׁאָמַר לָאו כְּלוּם הוּא זֶה וְזֶה שֶׁהֶאֱכִילָהּ לַכְּלָבִים אִיהוּ הוּא דְּאַפְסֵיד אַנַּפְשֵׁיהּ:</div>
+          <div class="glose-fr">Guemara. Mais qu&#x27;il [le] deduise — car meme s&#x27;il n&#x27;etait pas expert, il [serait] exempt, puisqu&#x27;il [s&#x27;]est trompe sur une michna : nous avons enseigne dans &#x27;Eilou terefot&#x27; (Houlin 54a) &#x27;si on a pris la matrice, [l&#x27;animal est] cacher&#x27; ; et celui qui se trompe sur une michna revient sur sa parole [= sa decision est annulee], [comme] dans Sanhedrin (33a). Or, des lors que si la vache etait restee [vivante] il aurait pu revenir [sur sa decision] et la permettre, il se trouve que ce qu&#x27;il a dit n&#x27;est rien du tout — et celui qui l&#x27;a donnee aux chiens, c&#x27;est lui[-meme] qui a cause sa propre perte.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection de la Guemara : R. Akiva n'avait pas besoin de l'argument 'expert agree'. R. Tarfon avait erre sur une <b>michna explicite</b> (Houlin 54a : la vache sans matrice est cachere). Or, une erreur <b>sur une michna</b> est nulle : la decision est <b>annulee</b> (chozer). Donc le proprietaire a jete l'animal permis de son propre fait, et R. Tarfon n'est pas responsable, meme sans etre expert.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">חֲדָא וְעוֹד קָאָמַר: חֲדָא — דְּטָעָה בִּדְבַר מִשְׁנָה חוֹזֵר, וְעוֹד — אִי נָמֵי בְּשִׁיקּוּל הַדַּעַת טָעִיתָה, מֻומְחֶה לְבֵית דִּין אַתָּה, וְכָל הַמֻּומְחֶה לְבֵית דִּין פָּטוּר מִלְּשַׁלֵּם.</div>
+            <div class="fr"><p>[R. Akiva] dit une [raison] et [en] ajoute une autre (hada ve-od kaamar) : la premiere — celui qui se trompe sur une michna [voit sa decision] annulee ; et la seconde — meme si tu t&#x27;es trompe dans une deliberation (chikoul ha-daat), tu es expert agree par le tribunal, et quiconque est expert agree par le tribunal est exempt de payer.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִי נָמֵי בְּשִׁיקּוּל הַדַּעַת טָעִיתָ</b> דַּאֲפִילּוּ הֲוָה קַיְימָא לָא מָצֵי לְמִיהְדַּר בֵּיהּ וּלְמִישְׁרְייֵהּ וְאִישְׁתְּכַח דְּאִיסּוּרוֹ אִיסּוּר וְאַתָּה הִפְסַדְתּוֹ אֲפִילּוּ הָכֵי פָּטוּר אַתָּה מִלְּשַׁלֵּם דְּמֻומְחֶה אַתָּה. שִׁיקּוּל הַדַּעַת מְפָרֵשׁ בְּפֶרֶק קַמָּא דְּסַנְהֶדְרִין (דַּף ו.) כְּגוֹן תְּרֵי תַּנָּאֵי אוֹ תְּרֵי אָמוֹרָאֵי דִּפְלִיגִי וְלָא אִיתְּמַר הִילְכְתָא לָא כְּמָר וְלָא כְּמַר וְסֻוגְייָא דְּעָלְמָא כְּחַד מִינַּייְהוּ וְאָזֵיל הַאי וַעֲבַד כְּאִידָךְ מַה שֶּׁעָשָׂה עָשׂוּי וּמְשַׁלֵּם מִבֵּיתוֹ:</div>
+          <div class="glose-fr">Meme si tu t&#x27;es trompe dans une deliberation (chikoul ha-daat) — [cas ou], meme si [l&#x27;animal] etait reste [vivant], il n&#x27;aurait pu revenir [sur sa decision] ni le permettre, et il se trouve que son interdit [reste] un interdit et que c&#x27;est toi qui l&#x27;as fait perdre — meme ainsi, tu es exempt de payer, car tu es expert. Le chikoul ha-daat est explique au premier chapitre de Sanhedrin (6a) : par exemple, deux tannaim ou deux amoraim en desaccord, sans qu&#x27;ait ete enonce [de] halakha ni comme l&#x27;un ni comme l&#x27;autre, et l&#x27;usage general [suit] l&#x27;un d&#x27;eux, et celui-ci va agir comme l&#x27;autre — ce qu&#x27;il a fait est fait, et il paie de sa poche.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse : R. Akiva a donne <b>deux raisons</b>. (1) L'erreur portait sur une michna, donc la decision est nulle. (2) Meme si l'erreur avait ete un simple <b>chikoul ha-daat</b> (deliberation errante — trancher a l'encontre de l'usage etabli entre deux avis non tranches, cas ou la decision <em>tient</em>), R. Tarfon resterait exempt en tant qu'<b>expert agree</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg16">
+          <div class="seg-num">17</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַתְנִי׳ הַנּוֹטֵל שָׂכָר לִהְיוֹת רוֹאֶה אֶת הַבְּכוֹרוֹת — אֵין שׁוֹחֲטִין עַל פִּיו, אֶלָּא אִם כֵּן הָיָה מֻומְחֶה.</div>
+            <div class="fr"><p>[Michna :] celui qui prend salaire (sakhar) pour etre l&#x27;examinateur des premiers-nes (roeh et ha-bekhorot) — on n&#x27;abat pas sur sa parole, a moins qu&#x27;il ne fut expert (mumhe).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַתְנֵי&#x27; אֵין שׁוֹחֲטִין</b> דִּלְמָא מִשּׁוּם אַגְרָא קָשָׁרֵי לֵיהּ:</div>
+          <div class="glose-fr">[Michna :] on n&#x27;abat pas — car peut-etre, a cause du salaire, le [lui] permet-il.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">מַתְנִי&#x27; הַנּוֹטֵל שָׂכָר לִהְיוֹת רוֹאֶה אֶת הַבְּכוֹר אֵין שׁוֹחֲטִין עַל פִּיו אֶלָּא אִם כֵּן הָיָה מֻומְחֶה כְּאִילָא בְיַבְנֶה. שֶׁהִתִּירוּ לוֹ חֲכָמִים לִהְיוֹת נוֹטֵל ד&#x27; אִיסָּרוֹת לְדַקָּה וְשִׁשָּׁה לְגַסָּה בֵּין תָּם בֵּין בַּעַל מוּם. הַנּוֹטֵל שָׂכָר לָדוּן דִּינָיו בְּטֵלִין וְהָא דְּתַנְיָא מְכֹועָר הַדַּייָּן שֶׁנּוֹטֵל שָׂכָר לָדוּן אֶלָּא שֶׁדִּינוֹ דִּין מְפָרֵשׁ בפ&quot;ב דִּכְתֻובּוֹת דַּף קה. בַּאֲגַר בְּטֵילָה דְּמוּכָח. וְהָא דְּאָמְרִינַן שָׁם שְׁנֵי דַּיָּינֵי גְּזֵירוֹת שֶׁבִּירוּשָׁלַיִם הָיוּ נוֹטְלִין שְׂכָרָן מִתְּרוּמַת הַלִּשְׁכָּה וּמוּכָח הָתָם דִּבְלֹא אֲגַר בְּטֵילָה דְּמוּכָח שָׁרִי שָׁאנֵי הָתָם דְּכָל עִסְקֵיהֶם הָיוּ בָּזֶה וְלֹא הָיוּ יְכוֹלִין לַעֲסֹוק בְּשׁוּם מְלָאכָה. וְאִי אֶפְשָׁר לָמוּת בְּרָעָב וְהָיוּ צְרִיכִין לִיטֹּול כְּדֵי פַּרְנָסָתָם. וְכֵן אֵילָא בְּיַבְנֶה שֶׁהִתִּירוּ לוֹ חֲכָמִים לִיטֹּול שָׂכָר לְפִי שֶׁהַכֹּל הָיוּ מְבִיאִין אֵלָיו בְּכוֹרֵיהֶן כָּל הַיּוֹם וְהָיָה צָרִיךְ לִהְיוֹת בָּטֵל מִכָּל מְלָאכָה:</div>
+          <div class="glose-fr">Michna. Celui qui prend salaire pour etre l&#x27;examinateur du premier-ne — on n&#x27;abat pas sur sa parole, a moins qu&#x27;il ne fut expert, comme Ila a Yavne, a qui les Sages permirent de prendre quatre issars pour le menu [betail] et six pour le gros, aussi bien [pour l&#x27;animal] sans defaut (tam) que [pour celui] porteur de defaut (baal moum). Celui qui prend salaire pour juger — ses jugements sont nuls (batelin). Et ce qu&#x27;enseigne [la baraita] &#x27;laid est le juge qui prend salaire pour juger, mais son jugement est [tout de meme un] jugement&#x27; s&#x27;explique, au chapitre 2 de Ketoubot (105a), [comme] un salaire pour [compenser] le chomage [de son travail] lorsque [ce chomage] est manifeste (agar betela de-mokhah). Et ce que nous disons la [-bas] : &#x27;deux juges des decrets [siegeant] a Jerusalem prenaient leur salaire sur le prelevement de la Chambre [du Temple]&#x27; — d&#x27;ou il ressort que sans salaire pour chomage manifeste [ce serait] permis — la, c&#x27;est different, car toute leur occupation etait en cela et ils ne pouvaient s&#x27;adonner a aucun [autre] travail, et il n&#x27;[est] pas possible de mourir de faim ; ils devaient donc prendre de quoi assurer leur subsistance. De meme Ila a Yavne, a qui les Sages permirent de prendre salaire parce que tous lui apportaient leurs premiers-nes tout le jour et qu&#x27;il devait chomer de tout travail.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle michna : celui qui se fait <b>payer</b> pour examiner les defauts des bekhorot inspire la mefiance (il pourrait permettre pour toucher son salaire) ; <b>on n'abat pas</b> sur son avis, <b>sauf</b> s'il est un veritable <b>expert</b> (comme Ila a Yavne, dont le Rosh precise le statut).</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Bekhorot_28a.html">&lsaquo; Bekhorot 28a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Bekhorot_29a.html">Bekhorot 29a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

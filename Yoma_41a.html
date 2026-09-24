@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yoma 41a -- quand une designation se fixe-t-elle ? La regle de Rav Hisda sur les kinin (a la prise ou a l&#x27;accomplissement, jamais entre les deux), eprouvee par le kal va-homer de ve-assahou hatat puis par le cas du metame mikdash devenu riche.</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Yoma 41a -- quand une designation se fixe-t-elle ? La regle de Rav Hisda sur les kinin (a la prise ou a l&#x27;accomplissement, jamais entre les deux), eprouvee par le kal va-homer de ve-assahou hatat puis par le cas du metame mikdash devenu riche.</h1>
+    <div class="ref">Yoma 41a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_40b.html">&lsaquo; Yoma 40b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> Le daf clot d&#x27;abord la sougya precedente : puisqu&#x27;un enseignement anonyme du Sifra est de Rabbi Yehouda, et qu&#x27;il y est dit que le sort seul fait le hatat, le tirage au sort des boucs de Kippour est bien indispensable -- refutation definitive de l&#x27;avis contraire. S&#x27;ouvre alors une sougya nouvelle, appelee par le meme theme : a quel instant une designation prend-elle effet ?</p><p>Rav Hisda pose que les kinin -- ces paires d&#x27;oiseaux dont l&#x27;un est hatat et l&#x27;autre ola -- ne se departagent qu&#x27;a deux moments : la lekiha (prise par le proprietaire) ou l&#x27;assiya (acte du kohen) ; Rav Chimi bar Achi le fonde sur les verbes des versets de l&#x27;accouchee et du zav. Deux baraitot semblent contredire cette regle.</p><p>La premiere, sur le kal va-homer de ve-assahou hatat, supposait qu&#x27;une parole prononcee a l&#x27;heure du tirage aurait pu consacrer : Rava la relit en logeant chaque parole dans l&#x27;une des deux fenetres, et la difficulte tombe. La seconde vient du metame mikdash pauvre qui met de l&#x27;argent de cote, s&#x27;enrichit, puis nomme ses deux tas : l&#x27;argent dit ola se trouve verrouille, donc une parole a bien fixe.</p><p>Rav Chechet repond en montrant, grace a l&#x27;avis de Rabbi Hocha&#x27;ya (le riche ne s&#x27;acquitte pas avec l&#x27;offrande du pauvre), que la baraita est de toute facon mal ordonnee et qu&#x27;il a parle des la mise de cote -- laquelle equivaut a la lekiha. Le daf s&#x27;acheve en pointant l&#x27;avis inverse, celui de Rabbi Yochiya, qui prive Rav Chechet de son levier : la suite est en 41b.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 400" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="400" fill="#fffdf8"/>
+  <text x="370" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">La regle de Rav Hisda : un ken ne se departage qu'a deux instants</text>
+  <text x="370" y="46" text-anchor="middle" font-size="10.4" fill="#57534e">Ken = paire d'oiseaux dont l'un doit etre hatat (expiatoire) et l'autre ola (holocauste). Qui est lequel ?</text>
+
+  <!-- axe du temps -->
+  <line x1="60" y1="200" x2="690" y2="200" stroke="#a8a29e" stroke-width="2"/>
+  <polygon points="690,200 678,195 678,205" fill="#a8a29e"/>
+  <text x="694" y="204" font-size="10" fill="#78716c">temps</text>
+
+  <!-- fenetre 1 : lekicha -->
+  <rect x="80" y="120" width="170" height="80" rx="8" fill="#dcfce7" stroke="#4ade80" stroke-width="2"/>
+  <text x="165" y="146" text-anchor="middle" font-size="13" font-weight="700" fill="#166534">1. LEKIHA</text>
+  <text x="165" y="164" text-anchor="middle" font-size="10.2" fill="#166534">prise / achat par le proprietaire</text>
+  <text x="165" y="180" text-anchor="middle" font-size="10.2" fill="#166534">(consecration initiale)</text>
+  <text x="165" y="194" text-anchor="middle" font-size="10" fill="#15803d">FENETRE OUVERTE</text>
+
+  <!-- zone morte -->
+  <rect x="270" y="140" width="200" height="60" rx="8" fill="#fee2e2" stroke="#fca5a5" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="370" y="164" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">ENTRE LES DEUX</text>
+  <text x="370" y="182" text-anchor="middle" font-size="10.2" fill="#b91c1c">une parole ne fixe RIEN -- le kohen peut encore changer</text>
+
+  <!-- fenetre 2 : asiya -->
+  <rect x="490" y="120" width="170" height="80" rx="8" fill="#dcfce7" stroke="#4ade80" stroke-width="2"/>
+  <text x="575" y="146" text-anchor="middle" font-size="13" font-weight="700" fill="#166534">2. ASSIYA</text>
+  <text x="575" y="164" text-anchor="middle" font-size="10.2" fill="#166534">acte sacrificiel du kohen</text>
+  <text x="575" y="180" text-anchor="middle" font-size="10.2" fill="#166534">(melika sur l'oiseau)</text>
+  <text x="575" y="194" text-anchor="middle" font-size="10" fill="#15803d">FENETRE OUVERTE</text>
+
+  <!-- versets sources -->
+  <rect x="80" y="240" width="170" height="56" rx="6" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="165" y="260" text-anchor="middle" font-size="11" font-weight="700" fill="#1e40af">ve-lakeha</text>
+  <text x="165" y="276" text-anchor="middle" font-size="9.6" fill="#1e3a8a">Lev 12,8 (accouchee) :</text>
+  <text x="165" y="289" text-anchor="middle" font-size="9.6" fill="#1e3a8a">elle prendra... un pour ola, un pour hatat</text>
+
+  <rect x="490" y="240" width="170" height="56" rx="6" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="575" y="260" text-anchor="middle" font-size="11" font-weight="700" fill="#1e40af">ve-assa</text>
+  <text x="575" y="276" text-anchor="middle" font-size="9.6" fill="#1e3a8a">Lev 15,15 (zav) :</text>
+  <text x="575" y="289" text-anchor="middle" font-size="9.6" fill="#1e3a8a">le kohen fera l'un hatat, l'autre ola</text>
+
+  <line x1="165" y1="240" x2="165" y2="204" stroke="#93c5fd" stroke-width="1.5"/>
+  <line x1="575" y1="240" x2="575" y2="204" stroke="#93c5fd" stroke-width="1.5"/>
+
+  <text x="370" y="330" text-anchor="middle" font-size="10.6" fill="#57534e">Rav Chimi bar Achi : les deux versets ne connaissent que ces deux verbes -- prendre et faire.</text>
+  <text x="370" y="348" text-anchor="middle" font-size="10.6" fill="#57534e">Donc : ou bien la designation est faite a la prise, ou bien elle attend l'acte du kohen. Rien au milieu.</text>
+  <text x="370" y="374" text-anchor="middle" font-size="10.4" font-weight="700" fill="#7c2d12">Tout le daf teste cette regle contre deux baraitot ou une parole semble fixer hors de ces fenetres.</text>
+</svg></div>
+          <figcaption>La regle de Rav Hisda : la designation d&#x27;un ken ne peut se fixer qu&#x27;a la prise (lekiha) ou a l&#x27;acte du kohen (assiya) -- jamais entre les deux.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="470" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Le kal va-homer de la baraita : deux lectures possibles</text>
+  <text x="380" y="46" text-anchor="middle" font-size="10.4" fill="#57534e">La baraita raisonne du ken (sans tirage) vers les deux boucs de Kippour (avec tirage). Mais que compare-t-elle au juste ?</text>
+
+  <!-- colonne gauche : lecture naive -->
+  <rect x="24" y="66" width="350" height="330" rx="10" fill="#fef2f2" stroke="#fca5a5" stroke-width="2"/>
+  <text x="199" y="90" text-anchor="middle" font-size="13" font-weight="700" fill="#b91c1c">Lecture naive (la question)</text>
+
+  <rect x="44" y="106" width="310" height="72" rx="6" fill="#fff" stroke="#fecaca"/>
+  <text x="54" y="126" font-size="10.6" font-weight="700" fill="#7f1d1d">Kal (le cas leger) : le ken</text>
+  <text x="54" y="143" font-size="10" fill="#7f1d1d">Le tirage au sort n'y consacre pas...</text>
+  <text x="54" y="159" font-size="10" fill="#7f1d1d">...et pourtant la PAROLE (chem) y consacre.</text>
+  <text x="54" y="173" font-size="9.6" fill="#991b1b">(sans precision de moment)</text>
+
+  <text x="199" y="196" text-anchor="middle" font-size="16" fill="#b91c1c">v</text>
+
+  <rect x="44" y="204" width="310" height="72" rx="6" fill="#fff" stroke="#fecaca"/>
+  <text x="54" y="224" font-size="10.6" font-weight="700" fill="#7f1d1d">Homer (le cas lourd) : les boucs de Kippour</text>
+  <text x="54" y="241" font-size="10" fill="#7f1d1d">Le tirage y consacre -- a plus forte raison</text>
+  <text x="54" y="257" font-size="10" fill="#7f1d1d">la parole devrait y consacrer !</text>
+  <text x="54" y="271" font-size="9.6" fill="#991b1b">(sous-entendu : a l'instant du tirage)</text>
+
+  <rect x="44" y="292" width="310" height="88" rx="6" fill="#fee2e2" stroke="#f87171"/>
+  <text x="199" y="313" text-anchor="middle" font-size="11" font-weight="700" fill="#b91c1c">PROBLEME pour Rav Hisda</text>
+  <text x="54" y="332" font-size="10" fill="#7f1d1d">L'instant du tirage n'est ni la lekiha (les boucs</text>
+  <text x="54" y="347" font-size="10" fill="#7f1d1d">sont deja acquis) ni l'assiya (rien n'est encore fait).</text>
+  <text x="54" y="366" font-size="10" font-weight="700" fill="#7f1d1d">Or la baraita admet qu'une parole y fixerait :</text>
+  <text x="54" y="378" font-size="10" font-weight="700" fill="#7f1d1d">c'est une troisieme fenetre. Contradiction.</text>
+
+  <!-- colonne droite : Rava -->
+  <rect x="392" y="66" width="344" height="330" rx="10" fill="#f0fdf4" stroke="#4ade80" stroke-width="2"/>
+  <text x="564" y="90" text-anchor="middle" font-size="13" font-weight="700" fill="#166534">Relecture de Rava (la reponse)</text>
+
+  <rect x="410" y="106" width="308" height="72" rx="6" fill="#fff" stroke="#bbf7d0"/>
+  <text x="420" y="126" font-size="10.6" font-weight="700" fill="#14532d">Kal : le ken</text>
+  <text x="420" y="143" font-size="10" fill="#14532d">Le tirage n'y consacre pas, MEME s'il tombe</text>
+  <text x="420" y="159" font-size="10" fill="#14532d">a la lekiha ou a l'assiya -- et la parole, elle,</text>
+  <text x="420" y="173" font-size="10" fill="#14532d">y consacre A LA LEKIHA OU A L'ASSIYA.</text>
+
+  <text x="564" y="196" text-anchor="middle" font-size="16" fill="#16a34a">v</text>
+
+  <rect x="410" y="204" width="308" height="72" rx="6" fill="#fff" stroke="#bbf7d0"/>
+  <text x="420" y="224" font-size="10.6" font-weight="700" fill="#14532d">Homer : les boucs de Kippour</text>
+  <text x="420" y="241" font-size="10" fill="#14532d">Le tirage y consacre bien qu'il tombe HORS</text>
+  <text x="420" y="257" font-size="10" fill="#14532d">des deux fenetres -- a plus forte raison la parole</text>
+  <text x="420" y="271" font-size="10" fill="#14532d">devrait y consacrer A LA LEKIHA OU A L'ASSIYA.</text>
+
+  <rect x="410" y="292" width="308" height="88" rx="6" fill="#dcfce7" stroke="#22c55e"/>
+  <text x="564" y="313" text-anchor="middle" font-size="11" font-weight="700" fill="#166534">Rav Hisda est sauf</text>
+  <text x="420" y="332" font-size="10" fill="#14532d">La parole dont parle la baraita se tient toujours</text>
+  <text x="420" y="347" font-size="10" fill="#14532d">dans l'une des deux fenetres. Le tirage, lui, est</text>
+  <text x="420" y="366" font-size="10" fill="#14532d">l'exception : c'est justement sa force -- il fixe</text>
+  <text x="420" y="378" font-size="10" fill="#14532d">la ou aucune parole ne le pourrait.</text>
+
+  <rect x="24" y="410" width="712" height="46" rx="8" fill="#fef9c3" stroke="#facc15"/>
+  <text x="380" y="430" text-anchor="middle" font-size="11" font-weight="700" fill="#713f12">Dans les deux lectures, la conclusion est la meme : le verset ve-assahou hatat coupe court.</text>
+  <text x="380" y="447" text-anchor="middle" font-size="10.2" fill="#854d0e">Le goral (tirage) fait le hatat ; le chem (la parole) ne fait pas le hatat -- pour les boucs de Kippour, la parole ne prend jamais la place du sort.</text>
+</svg></div>
+          <figcaption>Le kal va-homer de la baraita sur ve-assahou hatat : la lecture naive contredit Rav Hisda, la relecture de Rava le sauve en logeant chaque parole dans l&#x27;une des deux fenetres.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 500" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="500" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Le metame mikdash devenu riche : le sacrifice a echelle mobile (korban ole ve-yored)</text>
+  <text x="380" y="46" text-anchor="middle" font-size="10.4" fill="#57534e">Celui qui entre au Temple en etat d'impurete apporte un sacrifice dont la nature depend de sa fortune.</text>
+
+  <!-- deux etages de fortune -->
+  <rect x="30" y="66" width="320" height="92" rx="8" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+  <text x="190" y="88" text-anchor="middle" font-size="12" font-weight="700" fill="#1e40af">PAUVRE (dalout)</text>
+  <text x="190" y="110" text-anchor="middle" font-size="10.4" fill="#1e3a8a">un KEN : deux oiseaux</text>
+  <text x="190" y="128" text-anchor="middle" font-size="10.4" fill="#1e3a8a">l'un hatat, l'autre ola</text>
+  <text x="190" y="148" text-anchor="middle" font-size="9.8" fill="#3730a3">valeur faible -- il met de l'argent de cote</text>
+
+  <rect x="410" y="66" width="320" height="92" rx="8" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="2"/>
+  <text x="570" y="88" text-anchor="middle" font-size="12" font-weight="700" fill="#5b21b6">RICHE (achirout)</text>
+  <text x="570" y="110" text-anchor="middle" font-size="10.4" fill="#4c1d95">une BETE : hatat animale seule</text>
+  <text x="570" y="128" text-anchor="middle" font-size="10.4" fill="#4c1d95">PAS d'ola du tout</text>
+  <text x="570" y="148" text-anchor="middle" font-size="9.8" fill="#5b21b6">valeur elevee -- il devra completer</text>
+
+  <!-- la sequence -->
+  <text x="380" y="184" text-anchor="middle" font-size="12" font-weight="700" fill="#1c1917">Le cas de la baraita, dans l'ordre</text>
+
+  <rect x="24" y="196" width="160" height="66" rx="6" fill="#fff" stroke="#a8a29e"/>
+  <text x="104" y="216" text-anchor="middle" font-size="10.4" font-weight="700" fill="#292524">1. Il est pauvre</text>
+  <text x="104" y="234" text-anchor="middle" font-size="9.8" fill="#44403c">il met de cote des maot</text>
+  <text x="104" y="249" text-anchor="middle" font-size="9.8" fill="#44403c">(pieces) pour son ken</text>
+
+  <rect x="204" y="196" width="160" height="66" rx="6" fill="#fff" stroke="#a8a29e"/>
+  <text x="284" y="216" text-anchor="middle" font-size="10.4" font-weight="700" fill="#292524">2. Il s'enrichit</text>
+  <text x="284" y="234" text-anchor="middle" font-size="9.8" fill="#44403c">il doit desormais une</text>
+  <text x="284" y="249" text-anchor="middle" font-size="9.8" fill="#44403c">hatat animale</text>
+
+  <rect x="384" y="196" width="176" height="66" rx="6" fill="#fff" stroke="#a8a29e"/>
+  <text x="472" y="216" text-anchor="middle" font-size="10.4" font-weight="700" fill="#292524">3. Puis il partage</text>
+  <text x="472" y="234" text-anchor="middle" font-size="9.8" fill="#44403c">ceci pour ma hatat,</text>
+  <text x="472" y="249" text-anchor="middle" font-size="9.8" fill="#44403c">cela pour mon ola</text>
+
+  <rect x="580" y="196" width="156" height="66" rx="6" fill="#fef9c3" stroke="#facc15"/>
+  <text x="658" y="216" text-anchor="middle" font-size="10.4" font-weight="700" fill="#713f12">4. Regle enoncee</text>
+  <text x="658" y="234" text-anchor="middle" font-size="9.8" fill="#854d0e">il complete depuis</text>
+  <text x="658" y="249" text-anchor="middle" font-size="9.8" fill="#854d0e">les maot de la hatat</text>
+
+  <line x1="184" y1="229" x2="200" y2="229" stroke="#78716c" stroke-width="1.6"/>
+  <line x1="364" y1="229" x2="380" y2="229" stroke="#78716c" stroke-width="1.6"/>
+  <line x1="560" y1="229" x2="576" y2="229" stroke="#78716c" stroke-width="1.6"/>
+
+  <!-- les deux tas -->
+  <rect x="120" y="284" width="230" height="66" rx="6" fill="#dcfce7" stroke="#4ade80" stroke-width="2"/>
+  <text x="235" y="306" text-anchor="middle" font-size="10.6" font-weight="700" fill="#166534">Maot dites hatat : ON PEUT ajouter</text>
+  <text x="235" y="325" text-anchor="middle" font-size="9.8" fill="#14532d">La hatat reste une hatat, seul le support change</text>
+  <text x="235" y="341" text-anchor="middle" font-size="9.8" fill="#14532d">(oiseau -> bete). On complete de sa poche.</text>
+
+  <rect x="400" y="284" width="230" height="66" rx="6" fill="#fee2e2" stroke="#f87171" stroke-width="2"/>
+  <text x="515" y="306" text-anchor="middle" font-size="10.6" font-weight="700" fill="#b91c1c">Maot dites ola : ON NE PEUT PAS</text>
+  <text x="515" y="325" text-anchor="middle" font-size="9.8" fill="#7f1d1d">Le nom ola s'est fixe sur elles ; on ne les</text>
+  <text x="515" y="341" text-anchor="middle" font-size="9.8" fill="#7f1d1d">detourne plus vers l'achat d'une hatat.</text>
+
+  <text x="380" y="374" text-anchor="middle" font-size="10.6" font-weight="700" fill="#7f1d1d">Ce blocage prouve qu'une simple parole a FIXE -- hors lekiha, hors assiya. Objection a Rav Hisda.</text>
+
+  <!-- la mahloket -->
+  <rect x="30" y="392" width="340" height="94" rx="8" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+  <text x="200" y="414" text-anchor="middle" font-size="11.4" font-weight="700" fill="#9a3412">R. Elazar au nom de R. Hocha'ya</text>
+  <text x="200" y="433" text-anchor="middle" font-size="10.2" fill="#7c2d12">Riche qui apporte le sacrifice du pauvre : LO YATSA</text>
+  <text x="200" y="449" text-anchor="middle" font-size="10.2" fill="#7c2d12">(il ne s'acquitte pas, meme apres coup)</text>
+  <text x="200" y="470" text-anchor="middle" font-size="10" font-weight="700" fill="#9a3412">Reponse de Rav Chechet : la baraita est mal ordonnee.</text>
+  <text x="200" y="482" text-anchor="middle" font-size="9.8" fill="#7c2d12">Il avait deja parle quand il etait pauvre = a la hafracha. Rav Hisda tient.</text>
+
+  <rect x="392" y="392" width="338" height="94" rx="8" fill="#f0f9ff" stroke="#7dd3fc" stroke-width="2"/>
+  <text x="561" y="414" text-anchor="middle" font-size="11.4" font-weight="700" fill="#075985">R. Haga au nom de R. Yochiya</text>
+  <text x="561" y="433" text-anchor="middle" font-size="10.2" fill="#0c4a6e">Riche qui apporte le sacrifice du pauvre : YATSA</text>
+  <text x="561" y="449" text-anchor="middle" font-size="10.2" fill="#0c4a6e">(il s'acquitte apres coup)</text>
+  <text x="561" y="470" text-anchor="middle" font-size="10" font-weight="700" fill="#075985">Alors la baraita se lit telle quelle : il a parle riche...</text>
+  <text x="561" y="482" text-anchor="middle" font-size="9.8" fill="#0c4a6e">...et cela a fixe. L'objection contre Rav Hisda revient -- suite en 41b.</text>
+</svg></div>
+          <figcaption>Le metame mikdash devenu riche : la sequence du cas, le blocage des maot dites ola, et la mahloket Hocha&#x27;ya / Yochiya qui commande toute la solution.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">סְתָם סִיפְרָא מַנִּי — רַבִּי יְהוּדָה, וְקָא תָּנֵי: הַגּוֹרָל עוֹשֶׂה חַטָּאת, וְאֵין הַשֵּׁם עוֹשֶׂה חַטָּאת. אַלְמָא הַגְרָלָה מְעַכְּבָא, תְּיוּבְתָּא דְּמַאן דְּאָמַר הַגְרָלָה לָא מְעַכְּבָא. תְּיוּבְתָּא.</div>
+            <div class="fr"><p>Un enseignement anonyme du Sifra, de qui est-il ? De Rabbi Yehouda.</p><p>Or il enseigne : « c&#x27;est le sort (goral) qui fait le hatat, et ce n&#x27;est pas la parole (chem) qui fait le hatat. » Il apparait donc que, pour lui, le tirage au sort (hagrala) est indispensable (me&#x27;akev). C&#x27;est une refutation de celui qui a dit que le tirage au sort n&#x27;est pas indispensable.</p><p>Refutation etablie.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>סְתָם סִיפְרָא</b> תּוֹרַת כֹּהֲנִים רַבִּי יְהוּדָה הִיא הָכִי קָאָמַר בְּסַנְהֶדְרִין (דַּף פּוֹ.) וְהָא בְּתוֹרַת כֹּהֲנִים הִיא דְּהָא קְרָא בְּסֵפֶר וַיִּקְרָא כְּתִיב:</div>
+          <div class="glose-fr">Un enseignement anonyme du Sifra - la Torat Kohanim, c&#x27;est Rabbi Yehouda. Ainsi est-il dit dans Sanhedrin (86a). Et cette baraita releve bien de la Torat Kohanim, puisque le verset dont elle traite est ecrit dans le livre du Levitique.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>סְתָם סִיפְרָא מַנִּי רַבִּי יְהוּדָה</b> תֵּימַהּ לר&quot;י בפ&quot;ק דְּקִדּוּשִׁין (ד&#x27; יד.) דְּפָרִיךְ וְכָל הֵיכָא דִּכְתִיב חֻוקָּה לָא דָּרְשִׁינַן קַל וָחֹומֶר וְהָא גַּבֵּי יוה&quot;כ וְכוּ&#x27; עַד וְטַעֲמָא דִּכְתִיב וְעָשָׂהוּ חַטָּאת הָא לָאו הָכִי דָּרְשִׁינַן קַל וָחֹומֶר וְהַשְׁתָּא מַאי פָּרֵיךְ וְהָא סְתַם סִיפְרָא רַבִּי יְהוּדָה וּלְדִידֵיהּ חֻוקָּה לָא קַייְמָא אַהַגְרָלָה וְתֵירֵץ רַבֵּינוּ שִׁמְשׁוֹן מִקּוּצִי דְּפָרִיךְ מִדְּאִיצְטְרִיךְ זֹאת וְאַחַת לְקַמָּן בְּפֶרֶק הוֹצִיאוּ לוֹ (יוֹמָא דַּף ס:) לִמְעוּטֵי דְּלָא קַיְימָא חֻוקָּה אַדְּבָרִים הַנַּעֲשִׂים בְּבִגְדֵי לָבָן בַּחוּץ ש&quot;מ דְּדָרְשִׁינַן ק&quot;ו אַפֵּי&#x27; הֵיכָא דִּכְתִיב חֻוקָּה דְּאִי לָא תֵּימָא הָכִי לִשְׁתּוֹק מִינֵּיהּ מַאי אֲמַרְתְּ אִי לֹא כְּתַב זֹאת וְאַחַת הֲוָה אֲמִינָא דְּחוּקָה קַיְימָא אָכַל מִילֵּי א&quot;כ כֵּיוָן דַּהֲוָה קַייְמָא נָמֵי אַהַגְרָלָה א&quot;כ לִשְׁתּוֹק מִוְּעַשָּׁהוּ אֶלָּא ע&quot;כ אִי לֹא כְּתַב וְעָשָׂהוּ הֵ&quot;א אע&quot;ג דְּחוּקָה הֲוָה קַיְימָא אָכַל מִילֵּי הַגְרָלָה מִיהָא לָא מְעַכְּבָא מק&quot;ו אַלְמָא אע&quot;ג דִּכְתִיב חֻוקָּה דָּרְשִׁינַן ק&quot;ו אֲבָל קָשֶׁה עַל תֵּירוּץ זֶה דַּאֲפִילּוּ כִּי קַיְימָא חֻוקָּה אָכַל מִילֵּי וְלָא הֲוָה דָּרְשִׁינַן קַל וָחֹומֶר הֵיכָא דְּכָתַב חֻוקָּה לָא סַגִּי דְּלָא כְּתַב וְעָשָׂהוּ לִמְעוּטֵי בְּעָלְמָא שֶׁלֹּא יְקַדֵּשׁ הַגּוֹרָל כִּדְפֵי&#x27; לְעֵיל וְעוֹד אֲפִילּוּ קַיְימָא חֻוקָּה אָכַל מִילֵּי אִיצְטְרִיךְ וְעָשָׂהוּ לְגוֹרַל דְּהַגְרָלָה לָאו עֲבוֹדָה הִיא וְיָכֵילְנָא לְשַׁנּוֹיֵי דְּלָאו דַּוְוקָא נְקַט הָתָם חֻוקָּה דְּעִיכּוּבָא אַחַרְיַנָא אִיתָא דִּתְנָא בֵּיהּ קְרָא תְּרֵי זִימְנֵי דְּהָוֵי כְּמוֹ חֻוקָּה וְהָכִי פָּרִיךְ וְכָל הֵיכָא דְּכָתַב עִיכּוּבָא לָא דָּרְשִׁינַן ק&quot;ו וְהָא גַּבֵּי יוה&quot;כ דִּכְתִיב גּוֹרָל וּכְתִיב חֻוקָּה דְּמַשְׁמַע עִיכּוּבָא לְרַבִּי נְחֶמְיָה וּלְרַבִּי יְהוּדָה אִיכָּא עִיכּוּבָא אַחַרְיַנָא דִּתְנָא בֵּיהּ קְרָא וְטַעְמָא דְּכָתַב רַחֲמָנָא וְעָשָׂהוּ הָא לָאו הָכִי הֲוָה דָּרְשִׁינַן קַל וָחֹומֶר אע&quot;פ שֶׁהָיָה רָאוּי לִדְרוֹשׁ אֲשֶׁר עָלָה אֲשֶׁר עָלָה לְעִיכּוּבָא אַף עַל גַּב דְּלָא כְּתַב בִּלְשׁוֹן צִוּוּי וְנִרְאֶה כְּמוֹ סִיפּוּר דְּבָרִים בְּעָלְמָא מִכָּל מָקוֹם כֵּיוָן דִּכְתִיב חֻוקָּה הָיָה סְבָרָא לוֹמַר דִּמְעַכְּבָא מִכֹּחַ חֻוקָּה וּמִכֹּחַ תְּרֵי אֲשֶׁר עָלָה אֶלָּא דַּאֲתָא קַל וָחֹומֶר וְעָקַר לֵיהּ מֵהַאי סְבָרָא וְאוֹקְמִינַן חֻוקָּה לִשְׁאָר מִילֵּי וַאֲשֶׁר עָלָה וַאֲשֶׁר עָלָה אָמְרִינַן סִיפּוּר דְּבָרִים בְּעָלְמָא הוּא הָכָא נָמֵי גַּבֵּי יְבָמָה דִּכְתִיב כָּכָה לְעִיכּוּבָא נֵימָא קַל וָחֹומֶר דְּתֵצֵא בְּגֵט וְעִיכּוּבָא דִּכְּכָה לִשְׁאָר מִילֵּי:</div>
+          <div class="glose-fr">Un enseignement anonyme du Sifra, de qui est-il ? De Rabbi Yehouda - difficulte du Ri : au premier chapitre de Kiddouchin (14a), la guemara objecte : « et partout ou il est ecrit houka (statut), on ne tire pas de kal va-homer ? Or, a propos de Yom Kippour... » -- jusqu&#x27;a : « et la raison en est qu&#x27;il est ecrit ve-assahou hatat ; sans cela, on aurait tire un kal va-homer. » Or quelle est la difficulte ? Un enseignement anonyme du Sifra est de Rabbi Yehouda, et pour lui la houka ne porte pas sur le tirage au sort ! Rabbenou Chimchon de Coucy a repondu : la question part de ce que les mots zot et ahat ont ete necessaires plus loin, au chapitre Hotsiou Lo (Yoma 60b), pour exclure -- pour enseigner que la houka ne porte pas sur les rites accomplis en vetements blancs a l&#x27;exterieur. On en deduit que l&#x27;on tire un kal va-homer meme la ou houka est ecrit ; car si tu ne dis pas ainsi, que l&#x27;Ecriture se taise sur ce point. Que repondrais-tu -- que sans zot et ahat j&#x27;aurais cru que la houka porte sur tout ? Mais alors, puisqu&#x27;elle porterait aussi sur le tirage au sort, que l&#x27;Ecriture se taise sur ve-assahou ! Force est donc de dire : si ve-assahou n&#x27;avait pas ete ecrit, j&#x27;aurais dit que meme si la houka porte sur tout, le tirage au sort, lui du moins, n&#x27;est pas indispensable -- en vertu d&#x27;un kal va-homer. Preuve que meme la ou houka est ecrit, on tire un kal va-homer. Mais cette reponse fait difficulte : meme si la houka portait sur tout et qu&#x27;on ne tirait pas de kal va-homer la ou houka est ecrit, il ne suffirait pas que ve-assahou ne soit pas ecrit -- il faudrait encore l&#x27;ecrire pour exclure de facon generale que le sort ne consacre pas, comme explique plus haut. En outre, meme si la houka porte sur tout, ve-assahou reste necessaire pour le sort, puisque le tirage au sort n&#x27;est pas une avoda (un service sacrificiel proprement dit). Et je pourrais repondre que la-bas (dans Kiddouchin) le terme houka n&#x27;est pas pris au sens strict : il existe une autre marque d&#x27;indispensabilite, a savoir que l&#x27;Ecriture repete la chose deux fois, ce qui equivaut a une houka. Et voici comment il faut lire l&#x27;objection : « et partout ou une marque d&#x27;indispensabilite est ecrite, on ne tire pas de kal va-homer ? Or a propos de Yom Kippour, ou il est ecrit goral et ou il est ecrit houka -- ce qui implique l&#x27;indispensabilite selon Rabbi Nehemia, et selon Rabbi Yehouda il y a une autre indispensabilite, la repetition par l&#x27;Ecriture -- et la raison en est que le Misericordieux a ecrit ve-assahou ; sans cela on aurait tire un kal va-homer. » Et bien qu&#x27;il eut ete legitime d&#x27;exposer les deux acher ala (« celui sur lequel est monte [le sort] », repete) comme marque d&#x27;indispensabilite -- meme s&#x27;ils ne sont pas ecrits a l&#x27;imperatif et paraissent un simple recit --, neanmoins, puisque houka est ecrit, il y avait lieu de dire que la chose est indispensable en vertu de la houka et en vertu des deux acher ala ; mais le kal va-homer est venu deraciner ce raisonnement, si bien que nous rapportons la houka aux autres rites, et que les deux acher ala, nous les tenons pour un simple recit. Ici de meme, a propos de la yevama ou il est ecrit kakha (« ainsi ») comme marque d&#x27;indispensabilite : disons un kal va-homer selon lequel elle sortirait par un guet, et l&#x27;indispensabilite de kakha porterait sur les autres details.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Cloture de la sougya precedente. La guemara cherchait a savoir si, selon <b>Rabbi Yehouda</b>, le <b>tirage au sort</b> des deux boucs de Kippour est <b>me'akev</b> (indispensable, sans quoi le service est invalide) ou seulement une mitsva de premiere intention. Elle s'appuie sur une regle d'attribution classique : <b>stam Sifra = Rabbi Yehouda</b>, c'est-a-dire que toute baraita anonyme du Sifra (Torat Kohanim, le midrach halakhique sur le Levitique) exprime l'avis de Rabbi Yehouda.</p><p>Puisque cette baraita anonyme affirme que seul le <b>goral</b> fait le hatat -- et non le <b>chem</b>, la designation verbale --, Rabbi Yehouda tient bien le tirage pour indispensable. Celui qui soutenait l'inverse est refute : <b>tiyouvta</b>, refutation definitive et non simple difficulte.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב חִסְדָּא: אֵין הַקִּינִּין מִתְפָּרְשׁוֹת אֶלָּא אוֹ בִּלְקִיחַת בְּעָלִים, אוֹ בַּעֲשִׂיַּית כֹּהֵן.</div>
+            <div class="fr"><p>Rav Hisda a dit : les kinin (paires d&#x27;oiseaux) ne se departagent qu&#x27;a la prise par les proprietaires (lekiha), ou a l&#x27;accomplissement par le kohen (assiya).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵין הַקִּינִּין מִתְפָּרְשׁוֹת</b> אֵיזוֹ לְעוֹלָה וְאֵיזוֹ לְחַטָּאת אֶלָּא אוֹ בִּלְקִיחַת בְּעָלִים כו&#x27; אִם כְּשֶׁקְּנָאָן אָמַר זֶה אֲנִי לוֹקֵחַ לְעוֹלָה וְאֶת זֶה לְחַטָּאת שׁוּב אֵין הַכֹּהֵן יָכוֹל לְשַׁנּוֹתָן בַּעֲשִׂיָּיתָן וְאִם שִׁינָּה פָּסוּל וְאִם כְּשֶׁקְּנָאָן לֹא פֵּירֵשׁ אַף עַל פִּי שֶׁקָּרָא לָהֶם שֵׁם [לְאַחַר מִיכֵּן] אֵין שֵׁם חָל עֲלֵיהֶם וְיָכוֹל הַכֹּהֵן לְשַׁנּוֹתָן:</div>
+          <div class="glose-fr">Les kinin ne se departagent pas - lequel pour l&#x27;ola et lequel pour le hatat, si ce n&#x27;est a la prise par les proprietaires, etc. S&#x27;il a dit au moment de les acheter : « celui-ci, je le prends pour l&#x27;ola et celui-la pour le hatat », le kohen ne peut plus les intervertir au moment de l&#x27;accomplissement ; et s&#x27;il les a intervertis, c&#x27;est invalide. Et si, au moment de les acheter, il n&#x27;a pas specifie, alors meme qu&#x27;il leur ait donne un nom par la suite, ce nom ne prend pas sur eux, et le kohen peut les intervertir.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle sougya, appelee par le theme precedent : quand une designation se <b>fixe</b>-t-elle ? Un <b>ken</b> (pluriel <b>kinin</b>) est une paire d'oiseaux apportee par certains obligeants -- l'accouchee, le zav, le metsora, le pauvre -- dont l'un doit etre offert en <b>hatat</b> (expiatoire) et l'autre en <b>ola</b> (holocauste). Les deux oiseaux sont identiques : rien ne dit lequel est lequel.</p><p><b>Rav Hisda</b> pose que cette repartition ne peut se cristalliser qu'a deux instants precis : la <b>lekiha</b>, moment ou le proprietaire acquiert et consacre les oiseaux, ou la <b>assiya</b>, moment ou le kohen accomplit le rite sur l'oiseau. Consequence pratique : si le proprietaire a specifie a l'achat, le kohen ne peut plus intervertir -- s'il le fait, l'offrande est <b>passoul</b> (invalide). Mais s'il n'a rien specifie a l'achat, une declaration ulterieure ne produit aucun effet : le kohen reste libre.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב שִׁימִי בַּר אָשֵׁי: מַאי טַעְמָא דְּרַב חִסְדָּא, דִּכְתִיב: ״וּלְקָחָהּ״ ״וְעָשָׂה״. אוֹ בִּלְקִיחָה, אוֹ בַּעֲשִׂיָּיה.</div>
+            <div class="fr"><p>Rav Chimi bar Achi a dit : quelle est la raison de Rav Hisda ? Parce qu&#x27;il est ecrit « et elle prendra » (ve-lakeha) et « et il fera » (ve-assa) : ou bien a la prise, ou bien a l&#x27;accomplissement.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּלְקָחָהּ וְעָשָׂה</b> בְּיוֹלֶדֶת כְּתִיב וְלָקְחָה שְׁתֵּי תֹורִים אוֹ שְׁנֵי בְּנֵי יוֹנָה אֶחָד לְעֹולָה וְאֶחָד לְחַטָּאת וְכֵן בִּמְצוֹרָע וְגַבֵּי זָב וְעָשָׂה הַכֹּהֵן אֶחָד חַטָּאת וְאֶחָד עוֹלָה אַלְמָא אוֹ בִּשְׁעַת לְקִיחָה נִקְבָּעִין אוֹ בִּשְׁעַת עֲשִׂיָּיתָן אֲבָל בֵּינֵי בֵּינֵי לֹא:</div>
+          <div class="glose-fr">Et elle prendra, et il fera - a propos de l&#x27;accouchee il est ecrit : « et elle prendra deux tourterelles ou deux jeunes pigeons, l&#x27;un pour l&#x27;ola et l&#x27;autre pour le hatat » ; et de meme chez le metsora. Et a propos du zav : « et le kohen fera l&#x27;un hatat et l&#x27;autre ola ». Il apparait donc qu&#x27;ils se fixent soit au moment de la prise, soit au moment de l&#x27;accomplissement -- mais dans l&#x27;entre-deux (beini beini), non.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La source scripturaire de la regle. Deux versets traitent des kinin en nommant leur repartition, et chacun l'attache a un verbe different :</p><p>-- Chez l'accouchee (Lev 12,8) : « <b>et elle prendra</b> deux tourterelles ou deux jeunes pigeons, l'un en ola et l'autre en hatat » -- la repartition est accrochee a la <b>prise</b>, acte du proprietaire.<br>-- Chez le zav (Lev 15,15) et le metsora : « <b>et le kohen les fera</b>, l'un hatat et l'autre ola » -- la repartition est accrochee a l'<b>accomplissement</b>, acte du kohen.</p><p>La Torah ne connait donc que ces deux moments porteurs. Tout ce qui se dit dans l'intervalle -- <b>beini beini</b>, « entre-deux » selon le mot de Rachi -- est sans portee juridique.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מֵיתִיבִי: ״וְעָשָׂהוּ חַטָּאת״, הַגּוֹרָל עוֹשֶׂה חַטָּאת, וְאֵין הַשֵּׁם עוֹשֶׂה חַטָּאת.</div>
+            <div class="fr"><p>On objecte : « et il le fera hatat » (ve-assahou hatat) -- c&#x27;est le sort qui fait le hatat, et ce n&#x27;est pas la parole qui fait le hatat.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Premiere objection contre Rav Hisda, tiree de la baraita du Sifra deja citee au debut du daf. Le verset Lev 16,9 dit d'Aharon qu'il offrira le bouc echu au sort pour le Nom « <b>ve-assahou hatat</b> », « et il le fera hatat ». La baraita en tire une exclusion : seul le <b>goral</b> fait le hatat, pas le <b>chem</b>.</p><p>Retenons la structure : une exclusion suppose que, sans elle, on aurait cru le contraire. Les segments suivants exposent le raisonnement qu'il a fallu ecarter.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">שֶׁיָּכוֹל, וַהֲלֹא דִּין הוּא: וּמַה בִּמְקוֹם שֶׁלֹּא קִידֵּשׁ הַגּוֹרָל — קִידֵּשׁ הַשֵּׁם, מָקוֹם שֶׁקִּידֵּשׁ הַגּוֹרָל, אֵינוֹ דִּין שֶׁיְּקַדֵּשׁ הַשֵּׁם?!</div>
+            <div class="fr"><p>Car j&#x27;aurais pu croire -- et n&#x27;etait-ce pas logique ? -- : si la ou le sort ne consacre pas, la parole consacre pourtant, la ou le sort consacre, n&#x27;est-il pas logique que la parole consacre ?</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le <b>kal va-homer</b> (raisonnement a fortiori) que le verset doit venir briser. Il compare deux domaines :</p><p>-- Le <b>cas leger</b> : les kinin. Le tirage au sort n'y a aucun pouvoir consecratoire ; et pourtant, la parole, elle, y consacre.<br>-- Le <b>cas lourd</b> : les deux boucs de Kippour. Le tirage au sort y consacre bel et bien. A plus forte raison la parole devrait-elle y consacrer !</p><p>La logique est celle-ci : la ou l'instrument faible (le sort) est efficace, l'instrument fort (la parole) devrait l'etre a fortiori. Le verset ve-assahou hatat vient nier cette evidence.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תַּלְמוּד לוֹמַר: ״וְעָשָׂהוּ חַטָּאת״, הַגּוֹרָל עוֹשֶׂה חַטָּאת, וְאֵין הַשֵּׁם עוֹשֶׂה חַטָּאת.</div>
+            <div class="fr"><p>L&#x27;Ecriture dit donc : « et il le fera hatat » -- c&#x27;est le sort qui fait le hatat, et ce n&#x27;est pas la parole qui fait le hatat.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Conclusion de la baraita : le verset barre le kal va-homer. Pour les boucs de Kippour, le <b>goral</b> jouit d'un monopole. C'est un cas rare ou l'Ecriture prefere un procede materiel et aleatoire a la volonte declaree de l'officiant.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְהָא הָכָא, דְּלָאו שְׁעַת לְקִיחָה וְלָאו שְׁעַת עֲשִׂיָּיה הִיא, וְקָתָנֵי דְּקָבַע!</div>
+            <div class="fr"><p>Or ici, ce n&#x27;est ni le moment de la prise ni le moment de l&#x27;accomplissement -- et pourtant il enseigne que cela fixerait !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהָא הָכָא כוּ&#x27;</b> מִדְּקָתָנֵי כָּאן שֶׁקִּידֵּשׁ הַגּוֹרָל אֵינוֹ דִּין שֶׁיְּקַדֵּשׁ הַשֵּׁם וְקָא סָלְקָא דַּעְתֵּיהּ דְּקִידּוּשׁ הַשֵּׁם בִּשְׁעַת קִידּוּשׁ גּוֹרָל קָאָמַר שֶׁאֵינוֹ לֹא שְׁעַת לְקִיחָה וְלֹא שְׁעַת עֲשִׂייָּה הָכִי גָּרְסִינַן וְהָא הָכָא דְּלָאו שְׁעַת לְקִיחָה וְלָאו שְׁעַת עֲשִׂיָּיה הִיא וְקָתָנֵי דְּקָבַע:</div>
+          <div class="glose-fr">Or ici, etc. - du fait qu&#x27;il enseigne « la ou le sort consacre, n&#x27;est-il pas logique que la parole consacre », et l&#x27;on avait cru que la consecration par la parole dont il parle se ferait au moment ou l&#x27;on consacre par le sort, lequel n&#x27;est ni le moment de la prise ni le moment de l&#x27;accomplissement. Voici la version du texte : « Or ici, ce n&#x27;est ni le moment de la prise ni le moment de l&#x27;accomplissement -- et pourtant il enseigne que cela fixerait ! »</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Voici l'objection proprement dite contre Rav Hisda. Elle ne porte pas sur la conclusion de la baraita, mais sur le <b>kal va-homer</b> qu'elle a du refuter.</p><p>Ce kal va-homer supposait qu'une parole prononcee <b>a l'instant du tirage au sort</b> aurait pu consacrer. Or cet instant n'est <b>ni la lekiha</b> -- les boucs sont deja acquis depuis longtemps -- <b>ni l'assiya</b> -- aucun rite n'a encore commence. Si le kal va-homer etait meme seulement pensable, c'est qu'une parole peut fixer en dehors des deux fenetres de Rav Hisda. Sa regle serait donc fausse.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רָבָא, הָכִי קָאָמַר: מַה בִּמְקוֹם שֶׁלֹּא קִידֵּשׁ הַגּוֹרָל וַאֲפִילּוּ בִּשְׁעַת לְקִיחָה, וַאֲפִילּוּ בִּשְׁעַת עֲשִׂיָּיה — קִידֵּשׁ הַשֵּׁם בִּשְׁעַת לְקִיחָה וּבִשְׁעַת עֲשִׂיָּיה, מְקוֹם שֶׁקִּידֵּשׁ הַגּוֹרָל שֶׁלֹּא בִּשְׁעַת לְקִיחָה וְשֶׁלֹּא בִּשְׁעַת עֲשִׂייָּה, אֵינוֹ דִּין שֶׁיְּקַדֵּשׁ הַשֵּׁם בִּשְׁעַת לְקִיחָה וּבִשְׁעַת עֲשִׂיָּיה?</div>
+            <div class="fr"><p>Rava a dit : voici ce que la baraita veut dire. Si la ou le sort ne consacre pas -- meme au moment de la prise, meme au moment de l&#x27;accomplissement -- la parole, elle, consacre au moment de la prise et au moment de l&#x27;accomplissement, alors la ou le sort consacre bien qu&#x27;il ne soit ni au moment de la prise ni au moment de l&#x27;accomplissement, n&#x27;est-il pas logique que la parole consacre au moment de la prise et au moment de l&#x27;accomplissement ?</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse de <b>Rava</b> : le kal va-homer n'a jamais parle d'une parole prononcee a l'instant du tirage. Il faut y ajouter partout la mention des deux fenetres, et le raisonnement se renverse elegamment.</p><p>Relu ainsi, le contraste est double. Chez les kinin : le sort est impuissant <b>meme s'il tombe dans une bonne fenetre</b>, tandis que la parole y est efficace. Chez les boucs : le sort est puissant <b>alors meme qu'il tombe hors des fenetres</b> -- a plus forte raison la parole devrait-elle l'etre <b>dans</b> les fenetres.</p><p>La force du kal va-homer est donc intacte, mais son objet a change : la parole dont il est question reste toujours logee dans la lekiha ou l'assiya. <b>Rav Hisda n'est plus contredit.</b></p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="300" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Le glissement opere par Rava : ce que l'on compare vraiment</text>
+
+  <rect x="30" y="44" width="300" height="34" rx="5" fill="#e7e5e4"/>
+  <text x="180" y="66" text-anchor="middle" font-size="11" font-weight="700" fill="#292524">LE SORT (goral)</text>
+  <rect x="370" y="44" width="300" height="34" rx="5" fill="#e7e5e4"/>
+  <text x="520" y="66" text-anchor="middle" font-size="11" font-weight="700" fill="#292524">LA PAROLE (chem)</text>
+
+  <text x="16" y="112" font-size="10.6" font-weight="700" fill="#1e40af">KININ</text>
+  <rect x="90" y="92" width="240" height="46" rx="5" fill="#fee2e2" stroke="#fca5a5"/>
+  <text x="210" y="112" text-anchor="middle" font-size="10" fill="#7f1d1d">inefficace MEME dans les deux fenetres</text>
+  <text x="210" y="128" text-anchor="middle" font-size="9.6" fill="#991b1b">(le sort n'a aucun pouvoir ici)</text>
+  <rect x="370" y="92" width="300" height="46" rx="5" fill="#dcfce7" stroke="#4ade80"/>
+  <text x="520" y="112" text-anchor="middle" font-size="10" fill="#14532d">efficace DANS les deux fenetres</text>
+  <text x="520" y="128" text-anchor="middle" font-size="9.6" fill="#166534">(lekiha ou assiya)</text>
+
+  <text x="16" y="192" font-size="10.6" font-weight="700" fill="#5b21b6">BOUCS</text>
+  <rect x="90" y="172" width="240" height="46" rx="5" fill="#dcfce7" stroke="#4ade80"/>
+  <text x="210" y="192" text-anchor="middle" font-size="10" fill="#14532d">efficace HORS des deux fenetres</text>
+  <text x="210" y="208" text-anchor="middle" font-size="9.6" fill="#166534">(force propre du goral)</text>
+  <rect x="370" y="172" width="300" height="46" rx="5" fill="#fef9c3" stroke="#facc15"/>
+  <text x="520" y="192" text-anchor="middle" font-size="10" fill="#713f12">devrait etre efficace DANS les fenetres...</text>
+  <text x="520" y="208" text-anchor="middle" font-size="9.6" fill="#854d0e">...mais ve-assahou hatat le refuse</text>
+
+  <line x1="210" y1="140" x2="210" y2="170" stroke="#78716c" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <line x1="520" y1="140" x2="520" y2="170" stroke="#78716c" stroke-width="1.4" stroke-dasharray="4 3"/>
+
+  <text x="350" y="248" text-anchor="middle" font-size="10.4" fill="#57534e">Nulle part la parole n'agit hors des deux fenetres : la regle de Rav Hisda traverse le tableau intacte.</text>
+  <text x="350" y="272" text-anchor="middle" font-size="10.4" font-weight="700" fill="#7c2d12">Ce qui est exceptionnel, c'est le sort -- seul instrument capable de fixer au milieu de nulle part.</text>
+</svg></div><div class="svg-cap">La relecture de Rava : les quatre cases du raisonnement, une fois chaque parole ramenee dans sa fenetre.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תַּלְמוּד לוֹמַר: ״וְעָשָׂהוּ חַטָּאת״, הַגּוֹרָל עוֹשֶׂה חַטָּאת, וְאֵין הַשֵּׁם עוֹשֶׂה חַטָּאת.</div>
+            <div class="fr"><p>L&#x27;Ecriture dit donc : « et il le fera hatat » -- c&#x27;est le sort qui fait le hatat, et ce n&#x27;est pas la parole qui fait le hatat.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reprise de la conclusion de la baraita, cette fois selon la lecture de Rava. Le verset garde le meme office : il retire a la parole tout pouvoir sur les boucs de Kippour, y compris quand elle est prononcee au bon moment. La premiere objection contre Rav Hisda est ecartee.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּא שְׁמַע: מְטַמֵּא מִקְדָּשׁ עָנִי, וְהִפְרִישׁ מָעוֹת לְקִינּוֹ וְהֶעֱשִׁיר, וְאַחַר כָּךְ אָמַר: אֵלּוּ לְחַטָּאתוֹ, וְאֵלּוּ לְעוֹלָתוֹ —</div>
+            <div class="fr"><p>Viens et ecoute : un metame mikdash (celui qui a rendu le Temple impur) pauvre, qui a mis de cote de l&#x27;argent (maot) pour son ken, puis s&#x27;est enrichi, et a dit ensuite : « ceci pour mon hatat, et cela pour mon ola » --</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מְטַמֵּא מִקְדָּשׁ</b> הַנִּכְנָס לַמִּקְדָּשׁ טָמֵא וְהוּא בְּקָרְבָּן עוֹלֶה וְיוֹרֵד עֲשִׁירוּת וְדַלּוּת וּדְלִי דַּלּוּת הָאֲמוּרָה אֵצֶל שְׁבוּעַת בִּטּוּי וּשְׁבוּעַת קוֹל אֵלֶּה וְהָתָם נָמֵי כְּתִיב (וַיִּקְרָא ה׳:א׳) אוֹ נֶפֶשׁ כִּי תִּגַּע וְגוֹ&#x27; וְאוֹקְמִינַן לָהּ בִּשְׁבוּעוֹת (דַּף ז.) בְּטֻומְאַת מִקְדָּשׁ וְקָדָשָׁיו שֶׁאַחַר שֶׁנִּטְמָא נִכְנַס לַמִּקְדָּשׁ אוֹ אָכַל קָדָשִׁים:</div>
+          <div class="glose-fr">Metame mikdash - celui qui entre au Temple en etat d&#x27;impurete. Il releve du sacrifice qui monte et descend (ole ve-yored) : richesse, pauvrete et extreme pauvrete, tel qu&#x27;il est enonce a propos du serment d&#x27;expression et du serment de temoignage. Et la aussi il est ecrit « ou une personne qui touche... » (Lev 5,1 et suiv.), que nous avons etabli dans Chevouot (7a) comme portant sur l&#x27;impurete du Temple et de ses offrandes -- a savoir celui qui, apres avoir contracte l&#x27;impurete, est entre au Temple ou a mange des offrandes consacrees.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהֶעֱשִׁיר</b> וְצָרִיךְ לְהָבִיא בַּעֲשִׁירוּת:</div>
+          <div class="glose-fr">Et il s&#x27;est enrichi - il doit alors apporter selon le regime de richesse.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאַחַר כָּךְ</b> חוֹלֵק הַמָּעוֹת וּפֵירֵשׁ וְאָמַר אֵלּוּ לְחַטָּאתוֹ וְאֵלּוּ לְעוֹלָתוֹ אע&quot;ג שֶׁאֵין קָרְבַּן עָנִי עַכְשָׁיו עָלָיו חוֹבָה אֶלָּא קָרְבַּן עָשִׁיר וְאֵין בְּקָרְבַּן עָשִׁיר [עוֹלָה אֶלָּא] חַטַּאת בְּהֵמָה כְּשֶׁבָּא לב&quot;ד יֹאמְרוּ לוֹ ב&quot;ד קָרְבַּן עָשִׁיר תָּבִיא:</div>
+          <div class="glose-fr">Et ensuite - il partage l&#x27;argent, precise et dit : « ceci pour mon hatat et cela pour mon ola » -- et cela bien que le sacrifice du pauvre ne soit plus a present son obligation, mais celui du riche ; or le sacrifice du riche ne comporte pas d&#x27;ola, seulement une hatat animale, si bien que lorsqu&#x27;il viendra devant le tribunal, celui-ci lui dira : « c&#x27;est le sacrifice du riche que tu dois apporter ».</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מְטַמֵּא מִקְדָּשׁ וְכוּ&#x27;</b> הָא דְּלָא נְקַט שְׁמִיעַת קוֹל דִּכְתִיב בְּרֵישָׁא יֵשׁ לוֹמַר מִילְּתָא דִּשְׁכִיחָא טְפֵי נְקַט:</div>
+          <div class="glose-fr">Metame mikdash, etc. - pourquoi la baraita n&#x27;a-t-elle pas pris le cas du serment de temoignage (chemi&#x27;at kol), qui est ecrit en premier dans le verset ? On peut dire qu&#x27;elle a choisi le cas le plus frequent.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Seconde objection, tiree du regime du <b>korban ole ve-yored</b>, le « sacrifice qui monte et descend » : son cout s'ajuste a la fortune de celui qui l'apporte. Le <b>metame mikdash</b> -- celui qui est entre au Temple, ou a mange des offrandes, en etat d'impurete, par inadvertance -- en releve.</p><p>Trois etages : le riche apporte une <b>hatat animale</b> ; le pauvre, un <b>ken</b> (un oiseau en hatat, un en ola) ; le tres pauvre, une offrande de farine. Le cas expose ici enchaine : il est pauvre, il met de l'argent de cote pour son ken, <b>puis il s'enrichit</b> -- il doit desormais une bete --, et c'est <b>seulement ensuite</b> qu'il partage son argent en deux tas nommes. Ce mot « ensuite » (<b>ve-ahar kakh</b>) porte toute l'objection.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מוֹסִיף וּמֵבִיא חוֹבָתוֹ מִדְּמֵי חַטָּאתוֹ, וְאֵין מוֹסִיף וּמֵבִיא חוֹבָתוֹ מִדְּמֵי עוֹלָתוֹ.</div>
+            <div class="fr"><p>-- il ajoute et apporte son obligation a partir de l&#x27;argent de son hatat, mais il n&#x27;ajoute pas et n&#x27;apporte pas son obligation a partir de l&#x27;argent de son ola.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מוֹסִיף</b> מִבֵּיתוֹ עַד דְּמֵי בְּהֵמָה וּמֵבִיא חוֹבָתוֹ בְּהֵמָה מִדָּמִים שֶׁקָּרָא לָהֶם שֵׁם חַטָּאת:</div>
+          <div class="glose-fr">Il ajoute - depuis sa maison, jusqu&#x27;au prix d&#x27;une bete, et apporte son obligation -- une bete -- a partir de l&#x27;argent auquel il a donne le nom de hatat.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאֵין מוֹסִיף וּמֵבִיא</b> חַטַּאת בְּהֵמָה מִדְּמֵי עוֹלָתוֹ שֶׁאֵין יָכוֹל לְשַׁנּוֹתָן לְמָעוֹת שֶׁהִפְרִישָׁן שֶׁקָּרָא לָהֶן שֵׁם עוֹלָה לִיקַּח מֵהֶן חַטָּאת:</div>
+          <div class="glose-fr">Et il n&#x27;ajoute pas et n&#x27;apporte pas - une hatat animale a partir de l&#x27;argent de son ola, car il ne peut pas convertir cet argent qu&#x27;il a mis de cote et auquel il a donne le nom d&#x27;ola, pour en acheter un hatat.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La regle enoncee par la baraita, et le noeud de l'objection. L'homme est desormais riche : il doit une hatat animale, plus chere que l'oiseau prevu.</p><p>-- Sur le tas nomme <b>hatat</b> : il <b>complete de sa poche</b> jusqu'au prix d'une bete et achete sa hatat. Le nom hatat reste le meme, seul le support change (oiseau devenu bete).<br>-- Sur le tas nomme <b>ola</b> : <b>impossible</b>. Ces pieces portent le nom ola ; on ne les detourne pas pour acheter une hatat.</p><p>C'est precisement ce blocage qui fait probleme : il prouve que la parole a <b>fixe</b> un statut sur cet argent. Or elle a ete prononcee apres la mise de cote et apres l'enrichissement -- ni lekiha, ni assiya.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 660 280" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="660" height="280" fill="#fffdf8"/>
+  <text x="330" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Les deux tas de maot : l'un se laisse completer, l'autre est verrouille</text>
+
+  <!-- tas hatat -->
+  <rect x="40" y="46" width="250" height="180" rx="8" fill="#f0fdf4" stroke="#4ade80" stroke-width="2"/>
+  <text x="165" y="70" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">Tas dit HATAT</text>
+  <circle cx="130" cy="102" r="12" fill="#fbbf24" stroke="#d97706"/>
+  <circle cx="158" cy="102" r="12" fill="#fbbf24" stroke="#d97706"/>
+  <circle cx="186" cy="102" r="12" fill="#fbbf24" stroke="#d97706"/>
+  <text x="165" y="136" text-anchor="middle" font-size="10" fill="#14532d">prix d'un oiseau -- insuffisant</text>
+  <rect x="70" y="146" width="190" height="30" rx="5" fill="#dcfce7" stroke="#22c55e"/>
+  <text x="165" y="165" text-anchor="middle" font-size="10" font-weight="700" fill="#166534">+ il ajoute de sa poche</text>
+  <text x="165" y="196" text-anchor="middle" font-size="10.6" font-weight="700" fill="#15803d">-&gt; achete la HATAT animale</text>
+  <text x="165" y="214" text-anchor="middle" font-size="9.6" fill="#14532d">meme nom, autre support : rien n'est detourne</text>
+
+  <!-- tas ola -->
+  <rect x="370" y="46" width="250" height="180" rx="8" fill="#fef2f2" stroke="#f87171" stroke-width="2"/>
+  <text x="495" y="70" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">Tas dit OLA</text>
+  <circle cx="460" cy="102" r="12" fill="#fbbf24" stroke="#d97706"/>
+  <circle cx="488" cy="102" r="12" fill="#fbbf24" stroke="#d97706"/>
+  <circle cx="516" cy="102" r="12" fill="#fbbf24" stroke="#d97706"/>
+  <text x="495" y="136" text-anchor="middle" font-size="10" fill="#7f1d1d">le riche ne doit plus AUCUNE ola</text>
+  <rect x="400" y="146" width="190" height="30" rx="5" fill="#fee2e2" stroke="#ef4444"/>
+  <text x="495" y="165" text-anchor="middle" font-size="10" font-weight="700" fill="#b91c1c">X on ne complete pas</text>
+  <text x="495" y="196" text-anchor="middle" font-size="10.6" font-weight="700" fill="#b91c1c">-&gt; ne peut PAS servir a la hatat</text>
+  <text x="495" y="214" text-anchor="middle" font-size="9.6" fill="#7f1d1d">le nom ola s'est fixe et bloque l'argent</text>
+
+  <text x="330" y="256" text-anchor="middle" font-size="10.6" font-weight="700" fill="#7c2d12">Ce verrou est la preuve genante : une simple parole a FIXE un statut -- hors lekiha, hors assiya.</text>
+  <text x="330" y="272" text-anchor="middle" font-size="10" fill="#57534e">Si Rav Hisda avait raison, ces pieces seraient restees libres et auraient pu servir a la hatat.</text>
+</svg></div><div class="svg-cap">Pourquoi la baraita gene Rav Hisda : le tas dit ola est verrouille, donc la parole a bien fixe quelque chose hors des deux fenetres.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְהָא הָכָא, דְּלָאו שְׁעַת לְקִיחָה וְלָאו שְׁעַת עֲשִׂיָּיה הִיא, וְקָתָנֵי דְּקָבַע!</div>
+            <div class="fr"><p>Or ici, ce n&#x27;est ni le moment de la prise ni le moment de l&#x27;accomplissement -- et pourtant il enseigne que cela fixe !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהָא הָכָא</b> דִּלְאַחַר שֶׁהִפְרִישָׁן פֵּירֵשׁ וְאֵין זוֹ לָא לְקִיחָה וְלָא עֲשִׂיָּיה:</div>
+          <div class="glose-fr">Or ici - puisque c&#x27;est apres les avoir mis de cote qu&#x27;il a precise, et ce n&#x27;est ni une prise ni un accomplissement.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְקָתָנֵי דְּקָבַע</b> עֲלֵיהֶם הַשֵּׁם וְאֵין רַשַּׁאי לְשַׁנּוֹתָן:</div>
+          <div class="glose-fr">Et il enseigne que cela fixe - le nom prend sur eux et il n&#x27;a plus le droit de les convertir.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Formulation de l'objection, dans les memes termes que precedemment (segment 6). La <b>hafracha</b> (mise de cote de l'argent) est passee ; l'homme s'est enrichi ; et c'est seulement <b>apres</b> qu'il nomme ses deux tas. Aucun des deux moments porteurs de Rav Hisda n'est en jeu. Pourtant la baraita traite ce nommage comme irrevocable.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב שֵׁשֶׁת: וְתִסְבְּרָא? וְהָאָמַר רַבִּי אֶלְעָזָר אָמַר רַבִּי הוֹשַׁעְיָא: מְטַמֵּא מִקְדָּשׁ עָשִׁיר וְהֵבִיא קָרְבַּן עָנִי — לֹא יָצָא, וְכֵיוָן דְּלֹא יָצָא הֵיכִי קָבַע?</div>
+            <div class="fr"><p>Rav Chechet a dit : mais peux-tu vraiment comprendre ainsi ? Rabbi Elazar n&#x27;a-t-il pas dit au nom de Rabbi Hocha&#x27;ya : un metame mikdash riche qui a apporte le sacrifice du pauvre ne s&#x27;est pas acquitte (lo yatsa) ?</p><p>Et puisqu&#x27;il ne s&#x27;acquitte pas, comment cela pourrait-il fixer ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְתִסְבְּרָא</b> הַךְ מְתָרַצְתָּא הִיא וְהָאָמַר ר&quot;א וְכוּ&#x27;. וְכֵיוָן דְּאֵין קָרְבַּן עָנִי רָאוּי לוֹ אֲפִילּוּ בְּדִיעֲבַד הֵיכִי קָבַע לֵיהּ שֵׁם עוֹלָה עֲלַיְיהוּ מִשֶּׁהֶעֱשִׁיר הֲרֵי אֵינוֹ מְחֻויָּב עוֹלָה:</div>
+          <div class="glose-fr">Mais peux-tu comprendre ainsi - cette baraita est-elle vraiment bien ordonnee ? Or Rabbi Elazar a dit, etc. Et puisque le sacrifice du pauvre ne lui convient pas, meme apres coup, comment pourrait-il fixer sur cet argent le nom d&#x27;ola, des lors qu&#x27;il s&#x27;est enrichi ? Il n&#x27;est plus tenu d&#x27;aucune ola.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rav Chechet</b> ne repond pas encore : il commence par montrer que la baraita, telle qu'elle est ordonnee, est <b>inintelligible pour tout le monde</b> -- pas seulement pour Rav Hisda.</p><p>Son levier est l'enseignement de <b>Rabbi Hocha'ya</b> : un riche qui apporte l'offrande du pauvre <b>lo yatsa</b>, il ne s'acquitte pas, meme apres coup (<b>bediavad</b>). Or, dans le cas de la baraita, l'homme parle alors qu'il est deja riche. A cet instant, le ken ne peut plus rien pour lui : l'ola qu'il nomme n'est plus une obligation, et l'argent ne peut se lier a un sacrifice qui ne le libererait pas. <b>Une parole qui designe une offrande inapte ne fixe rien.</b> La baraita, lue dans cet ordre, ne tient donc pas debout d'elle-meme.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא מַאי אִית לָךְ לְמֵימַר — שֶׁכְּבָר אָמַר מֵעֲנִיּוּתוֹ, הָכָא נָמֵי — שֶׁכְּבָר אָמַר מִשְּׁעַת הַפְרָשָׁה.</div>
+            <div class="fr"><p>Plutot, que peux-tu bien dire ? Qu&#x27;il avait deja parle du temps de sa pauvrete.</p><p>Ici aussi : qu&#x27;il avait deja parle des le moment de la mise de cote.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא מַאי אִית לָךְ לְמֵימַר</b> עַל כָּרְחָךְ מִיבַּעְיָא לְשַׁבּוּשָׁא וּלְמֵימַר דְּהַאי וְאַחַ&quot;כּ דְּקָתָנֵי שִׁיבּוּשׁ הוּא אֶלָּא הָכִי מִיבַּעְיָא לֵיהּ לְמִיתְנֵי וְאָמַר אֵלּוּ לְחַטָּאת וְאֵלּוּ לְעוֹלָה וְאַחַ&quot;כּ הֶעֱשִׁיר דְּבִשְׁעַת שֶׁקְּבָעָן הֲוָה קָרְבָּן חֲזִי לֵיהּ וְכֵיוָן דְּעַל כָּרְחֲךָ מְשַׁבַּשְׁתָּא הִיא לְרַב חִסְדָּא נָמֵי הָכִי תִּרְצֶה שֶׁכְּבָר אָמַר מִשְּׁעַת הַפְרָשָׁה וְתָנֵי הָכָא מְטַמֵּא מִקְדָּשׁ עָנִי שֶׁהִפְרִישׁ מָעוֹת לְקִינּוֹ וְאָמַר בִּשְׁעַת הַפְרָשָׁה אֵלּוּ לְחַטָּאת וְאֵלּוּ לְעוֹלָה וְאַחַ&quot;כּ הֶעֱשִׁיר מוֹסִיף וּמֵבִיא דְּהַפְרָשָׁה בְּמָעוֹת כִּשְׁעַת לְקִיחַת הָעוֹפוֹת:</div>
+          <div class="glose-fr">Plutot, que peux-tu bien dire - force est de dire que la baraita est corrompue, et que ce « et ensuite » qu&#x27;elle enseigne est une erreur ; il faudrait plutot enseigner : « et il a dit : ceci pour le hatat et cela pour l&#x27;ola, et ensuite il s&#x27;est enrichi » -- car au moment ou il les a fixes, le sacrifice lui convenait. Et puisque, de toute facon, la baraita est corrompue, pour Rav Hisda aussi corrige-la ainsi : « il avait deja parle des le moment de la mise de cote ». Et l&#x27;on enseignera ici : un metame mikdash pauvre qui a mis de cote de l&#x27;argent pour son ken et a dit, au moment de la mise de cote, « ceci pour le hatat et cela pour l&#x27;ola », puis s&#x27;est enrichi -- il ajoute et apporte. Car la mise de cote de l&#x27;argent equivaut au moment de la prise des oiseaux.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La solution de Rav Chechet, en deux temps.</p><p><b>Premier temps</b> -- forcement, quelle que soit l'ecole, il faut corriger l'ordre de la baraita : le mot « ensuite » (<b>ve-ahar kakh</b>) est une erreur de transmission. Il faut lire : il a mis de cote <b>et a dit</b> « ceci pour le hatat, cela pour l'ola », <b>puis</b> il s'est enrichi. Ainsi, au moment ou il a parle, il etait pauvre et le sacrifice lui convenait.</p><p><b>Second temps</b> -- une fois cette correction admise pour tous, elle sert aussi Rav Hisda : sa parole se situe <b>a l'instant de la hafracha</b>, la mise de cote de l'argent. Or, comme le note Rachi, mettre de l'argent de cote pour un ken <b>equivaut a la lekiha des oiseaux</b> : c'est le geste par lequel le proprietaire prend et consacre. Nous sommes donc bien dans la premiere fenetre. <b>La seconde objection tombe.</b></p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּלְרַבִּי חַגָּא אָמַר רַבִּי יֹאשִׁיָּה, דְּאָמַר יָצָא,</div>
+            <div class="fr"><p>Mais selon Rabbi Haga au nom de Rabbi Yochiya, qui a dit qu&#x27;il s&#x27;est acquitte (yatsa) --</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּלְרַבִּי חַגָּא</b> דְּאָמַר מְטַמֵּא מִקְדָּשׁ עָשִׁיר וְהֵבִיא קָרְבַּן עָנִי יָצָא וּמִשּׁוּם הָא לֹא מִשְׁתַּבֵּשׁ וּמְתָרַצְתָּא הִיא וְכֵיוָן דְּחָזֵי לֵיהּ הַאי קָרְבָּן בְּדִיעֲבַד מָצֵי לְמִיתְנֵי דְּקָבַע:</div>
+          <div class="glose-fr">Mais selon Rabbi Haga - qui a dit qu&#x27;un metame mikdash riche ayant apporte le sacrifice du pauvre s&#x27;est acquitte -- pour ce motif la baraita n&#x27;est pas corrompue et elle est bien ordonnee ; et puisque ce sacrifice lui convient apres coup, il peut enseigner que cela fixe.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּלְרַבִּי חַגָּא אָמַר רַבִּי יֹאשִׁיָּה דְּאָמַר יָצָא מַאי אִיכָּא לְמֵימַר</b> וְכוּלֵּי עָלְמָא אִית לְהוּ דְּרַב חִסְדָּא דְּאֵין הַקִּינִּין מִתְפָּרְשׁוֹת וְכוּ&#x27;:</div>
+          <div class="glose-fr">Mais selon Rabbi Haga au nom de Rabbi Yochiya, qui a dit qu&#x27;il s&#x27;est acquitte, que peut-on dire ? - car tout le monde admet l&#x27;enseignement de Rav Hisda, selon lequel les kinin ne se departagent pas, etc.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Ouverture d'un dernier mouvement, qui se poursuit en 41b. Toute la reponse de Rav Chechet reposait sur l'avis de <b>Rabbi Hocha'ya</b> : puisque le riche ne s'acquitte pas avec l'offrande du pauvre, la baraita etait forcement mal ordonnee.</p><p>Mais il existe l'avis oppose -- <b>Rabbi Haga au nom de Rabbi Yochiya</b> : le riche qui apporte l'offrande du pauvre <b>yatsa</b>, il s'acquitte apres coup. Selon lui, plus rien n'oblige a corriger le texte : la baraita se lit telle quelle, l'homme a bien parle une fois riche, et sa parole a bien fixe. L'objection contre Rav Hisda ressuscite intacte.</p><p>Tossefot souligne l'enjeu : <b>tout le monde admet la regle de Rav Hisda</b> ; la question n'est pas de savoir si elle est vraie, mais comment la concilier avec cette baraita selon la seconde opinion.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_40b.html">&lsaquo; Yoma 40b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

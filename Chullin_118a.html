@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chullin 118a — la poignee (yad) et la protection (shomer) : faire entrer, faire sortir, et s&#x27;ajouter a la mesure d&#x27;impurete</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Chullin 118a — la poignee (yad) et la protection (shomer) : faire entrer, faire sortir, et s&#x27;ajouter a la mesure d&#x27;impurete</h1>
+    <div class="ref">Chullin 118a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Chullin_117b.html">&lsaquo; Chullin 117b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Chullin_118b.html">Chullin 118b &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> La sougya prolonge la braita sur l&#x27;impurete de la peau d&#x27;une charogne (nevela) : la peau ne joint pas la chair pour completer un kazayit (olive), mais lorsqu&#x27;il y a deja un kazayit de chair, la peau qui la couvre sert de poignee (yad) et celui qui touche son revers est impur. De la, la Guemara passe a la michna d&#x27;Okatzin : ce qui est &#x27;poignee&#x27; (yad) et non &#x27;protection&#x27; (shomer) fait entrer et sortir l&#x27;impurete mais ne s&#x27;ajoute pas a la mesure ; ce qui est &#x27;protection&#x27; (shomer), meme sans etre poignee, fait entrer, sortir ET s&#x27;ajoute ; ce qui n&#x27;est ni l&#x27;un ni l&#x27;autre (le poil) ne fait rien.</p><p>Ou les poignees sont-elles ecrites ? Dans les versets &#x27;lakhem&#x27; (pour vous) — sur l&#x27;aliment et sur la charogne.</p><p>Le shomer pour faire entrer et sortir se deduit a fortiori (kal vachomer) de la yad ; le verset du shomer n&#x27;est donc la que pour enseigner la jonction (tseiruf). Suit une longue analyse : la yad pour sortir est ecrite trois fois (zeraim/aliment, tanur/four, nevela/charogne) ; laquelle est superflue ?</p><p>Par binyan av et tsad hashaveh, la Guemara montre qu&#x27;une se deduit des deux autres — c&#x27;est la yad de la nevela qui est en trop, d&#x27;ou l&#x27;on derive &#x27;si ce n&#x27;est pas son objet, applique-la a la yad en general&#x27; pour faire ENTRER. Une objection (dayo) et une derniere lecture du verset du shomer de la nevela bouclent le raisonnement.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 308" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="308" fill="#fffdf8"/>
+  <text x="360" y="22" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Yad (poignee) et shomer (protection) dans la transmission de l'impurete</text>
+  <text x="360" y="40" text-anchor="middle" font-size="11" fill="#78716c">trois fonctions : faire ENTRER l'impurete dans l'aliment, la faire SORTIR, et S'AJOUTER a la mesure (kazayit / kabeitsa)</text>
+  <rect x="20" y="56" width="320" height="38" rx="8" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="180" y="74" text-anchor="middle" font-size="13" font-weight="700" fill="#4338ca">YAD (poignee)</text>
+  <text x="180" y="89" text-anchor="middle" font-size="10" fill="#78716c">ex. os sans moelle tenant un kazayit de chair</text>
+  <rect x="380" y="56" width="320" height="38" rx="8" fill="#eafaf1" stroke="#15803d"/>
+  <text x="540" y="74" text-anchor="middle" font-size="13" font-weight="700" fill="#15803d">SHOMER (protection)</text>
+  <text x="540" y="89" text-anchor="middle" font-size="10" fill="#78716c">ex. peau face a un kazayit de chair</text>
+  <rect x="20" y="106" width="320" height="56" rx="8" fill="#fffdf8" stroke="#4338ca"/>
+  <text x="180" y="128" text-anchor="middle" font-size="11" fill="#292524">ENTRER : oui  -  SORTIR : oui</text>
+  <text x="180" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#b91c1c">S'AJOUTER : NON</text>
+  <rect x="380" y="106" width="320" height="56" rx="8" fill="#fffdf8" stroke="#15803d"/>
+  <text x="540" y="128" text-anchor="middle" font-size="11" fill="#292524">ENTRER : oui  -  SORTIR : oui</text>
+  <text x="540" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#15803d">S'AJOUTER : OUI</text>
+  <rect x="20" y="178" width="680" height="50" rx="8" fill="#f5f5f4" stroke="#a8a29e"/>
+  <text x="360" y="198" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1c1917">Ni yad ni shomer (ex. le poil, sear)</text>
+  <text x="360" y="218" text-anchor="middle" font-size="11" fill="#b91c1c">ne fait rien : ni entrer, ni sortir, ni s'ajouter</text>
+  <rect x="20" y="242" width="680" height="50" rx="8" fill="#fef3e2" stroke="#b45309"/>
+  <text x="360" y="262" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b45309">La logique du kal vachomer</text>
+  <text x="360" y="282" text-anchor="middle" font-size="11" fill="#292524">le shomer protege l'aliment, la yad non -&gt; ce qui vaut pour la yad vaut a fortiori pour le shomer</text>
+</svg></div>
+          <figcaption>La michna d&#x27;Okatzin (segments 4-5) : yad et shomer, leurs trois fonctions (entrer, sortir, s&#x27;ajouter), et la regle du ni-l&#x27;un-ni-l&#x27;autre.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 286" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="286" fill="#fffdf8"/>
+  <text x="360" y="22" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Les trois versets 'lakhem' qui incluent la yad (poignee)</text>
+  <text x="360" y="40" text-anchor="middle" font-size="11" fill="#78716c">la yad SORTIR est ecrite trois fois ; les trois sont-elles requises, ou l'une est-elle de trop ?</text>
+  <rect x="20" y="54" width="212" height="120" rx="10" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="126" y="76" text-anchor="middle" font-size="12.5" font-weight="700" fill="#4338ca">ZERAIM (aliment)</text>
+  <text x="126" y="94" text-anchor="middle" font-size="10" fill="#78716c">graines, semences</text>
+  <text x="126" y="118" text-anchor="middle" font-size="10.5" fill="#292524">impurete plus etendue</text>
+  <text x="126" y="136" text-anchor="middle" font-size="10.5" fill="#292524">(recoit des enfants</text>
+  <text x="126" y="151" text-anchor="middle" font-size="10.5" fill="#292524">de l'impurete)</text>
+  <text x="126" y="168" text-anchor="middle" font-size="10" fill="#b45309">mais : seulement par hekhcher</text>
+  <rect x="254" y="54" width="212" height="120" rx="10" fill="#fef3e2" stroke="#b45309"/>
+  <text x="360" y="76" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b45309">TANUR (four)</text>
+  <text x="360" y="94" text-anchor="middle" font-size="10" fill="#78716c">ustensile de terre</text>
+  <text x="360" y="118" text-anchor="middle" font-size="10.5" fill="#292524">impurifie par son air</text>
+  <text x="360" y="136" text-anchor="middle" font-size="10.5" fill="#292524">(sans contact)</text>
+  <text x="360" y="160" text-anchor="middle" font-size="10" fill="#78716c">mais : n'est pas un aliment</text>
+  <rect x="488" y="54" width="212" height="120" rx="10" fill="#fdeaea" stroke="#b91c1c"/>
+  <text x="594" y="76" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b91c1c">NEVELA (charogne)</text>
+  <text x="594" y="94" text-anchor="middle" font-size="10" fill="#78716c">cadavre d'animal</text>
+  <text x="594" y="116" text-anchor="middle" font-size="10.5" fill="#292524">impurifie l'homme,</text>
+  <text x="594" y="132" text-anchor="middle" font-size="10.5" fill="#292524">par le port (massa),</text>
+  <text x="594" y="148" text-anchor="middle" font-size="10.5" fill="#292524">impurete de son corps</text>
+  <rect x="20" y="190" width="680" height="80" rx="9" fill="#eafaf1" stroke="#15803d"/>
+  <text x="360" y="212" text-anchor="middle" font-size="11.5" font-weight="700" fill="#15803d">Conclusion (tsad hashaveh)</text>
+  <text x="360" y="234" text-anchor="middle" font-size="11" fill="#292524">une seule ne se deduit pas d'une seule, mais une se deduit des deux autres : c'est la yad de NEVELA</text>
+  <text x="360" y="256" text-anchor="middle" font-size="11" fill="#292524">qui est en trop -&gt; 'si pas pour la nevela, applique-la a la yad en general' = yad fait ENTRER</text>
+</svg></div>
+          <figcaption>L&#x27;analyse des trois versets (segments 15-24) : zeraim, tanur, nevela ; pourquoi c&#x27;est la yad de la nevela qui est superflue.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">יכול הנוגע כנגד בשר מאחוריו לא יהא טמא? תלמוד לומר: ״יטמא״.</div>
+            <div class="fr"><p>Aurait-on pu [penser que] celui qui touche, sur le revers, [la peau] en face de la chair, n&#x27;est pas impur ? L&#x27;enseignement [du verset] dit : &#x27;il sera impur&#x27; (Levitique 11:39).</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Fin de la braita commencee en 117b. On aurait pu croire que seul celui qui touche la <b>chair</b> d'une charogne (nevela) devient impur, mais que celui qui touche, sur le revers, la <b>peau</b> situee en face de la chair (sans toucher la chair elle-meme) reste pur. Le verset 'il sera impur' (Lev 11:39) enseigne que <b>meme celui-la est impur</b> : la peau sert de poignee (yad) a la chair.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מאי קאמר? אמר רבא, ואמרי לה כדי: חסורי מיחסרא והכי קתני: ״בנבלתה״ – ולא בעור שאין עליו כזית בשר, ועור משלימו לכזית.</div>
+            <div class="fr"><p>Que dit[-elle, la braita] ? Rava a dit, et certains [le] rapportent de maniere anonyme : elle est incomplete (hessorei mihassera) et voici ce qu&#x27;elle enseigne : &#x27;dans sa charogne (be-nivlata)&#x27; — et non [pour] une peau sur laquelle il n&#x27;y a pas un kazayit (volume d&#x27;une olive) de chair, et [meme si] la peau la complete jusqu&#x27;a un kazayit [elle ne joint pas].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מאי קאמר</b> רישא קתני ולא בעור אלמא לאו נבלה מיקרי ופחות מכזית לאו שיעורא הוא והדר תני דמטמא:</div>
+          <div class="glose-fr">Que dit[-elle] — la premiere clause enseigne &#x27;et non [pour] la peau&#x27;, d&#x27;ou [il ressort] qu&#x27;elle n&#x27;est pas appelee charogne et que moins d&#x27;un kazayit n&#x27;est pas une mesure [d&#x27;impurete] ; puis elle enseigne de nouveau qu&#x27;elle impurifie.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ועורה משלימו לכזית</b> ואשמעינן דאין שומר מצטרף לטומאת נבלות:</div>
+          <div class="glose-fr">Et sa peau la complete jusqu&#x27;a un kazayit — et [la braita] nous enseigne que le shomer (la protection) ne se joint pas a l&#x27;impurete de charogne (toum&#x27;at nevelot).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Difficulte : la premiere clause de la braita semble dire que la peau n'est <b>pas</b> charogne, et la seconde qu'on devient impur en la touchant. Rava harmonise par <b>hessorei mihassera</b> (la braita est lacunaire et se relit ainsi) : le mot 'be-nivlata' exclut une peau qui ne porte <b>pas</b> un <b>kazayit</b> de chair ; et meme si peau et chair reunies font un kazayit, la peau <b>ne se joint pas</b> a la chair pour completer la mesure de l'impurete de charogne.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">יכול שאני מוציא אף עור שיש עליו כזית בשר, הנוגע כנגד בשר מאחוריו יכול לא יהא טמא, ואפילו מעשה יד נמי לא עביד.</div>
+            <div class="fr"><p>Aurait-on pu [penser que] j&#x27;exclus [de l&#x27;impurete] meme une peau sur laquelle il y a un kazayit de chair, [au point que] celui qui touche, sur le revers, [la peau] en face de la chair, aurait-on pu [penser qu&#x27;]il n&#x27;est pas impur, et [que la peau] ne ferait pas non plus office de poignee (maasse yad) ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>יכול שאני מוציא כו&#x27;</b> שהנוגע כנגד הבשר לא יהא טמא דאפילו מעשה יד לא עבד להכניס ולהוציא טומאה לא נעביד האי שומר דכיון דאימעיט מאיצטרופי אפילו תורת יד האוכל לא ניהוי ליה דשאם נגע יד האוכל הטמא בדבר אחר ילפינן לקמן דמוציאה טומאה מן הטמא לטהור והאי שומר לאו יד הוא ושמירתו לא תשוייה אפילו לחשיבות יד תלמוד לומר יטמא:</div>
+          <div class="glose-fr">Aurait-on pu [penser que] j&#x27;exclus etc. — [au point] que celui qui touche en face de la chair ne serait pas impur ; puisque [la peau] ne fait meme pas office de poignee pour faire entrer et sortir l&#x27;impurete, ne ferions-nous pas [de] ce shomer [une poignee] : car, des lors qu&#x27;il a ete exclu de la jonction, [on aurait pu croire qu&#x27;]il n&#x27;aurait meme pas le statut de poignee de l&#x27;aliment — car si la poignee d&#x27;un aliment impur touche une autre chose, nous apprenons plus loin qu&#x27;elle fait sortir l&#x27;impurete de l&#x27;[objet] impur vers le pur ; or cette protection-ci n&#x27;[etant] pas une poignee, sa fonction de protection ne lui confererait pas meme l&#x27;importance d&#x27;une poignee. L&#x27;enseignement [du verset] dit : &#x27;il sera impur&#x27;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La braita poursuit : on aurait pu croire que j'exclus de l'impurete <b>meme</b> une peau portant un kazayit de chair, de sorte que celui qui touche le revers de la peau en face de la chair ne serait pas impur — la peau n'agissant <b>meme pas comme poignee</b> (yad) de la chair. Car, puisqu'elle a ete exclue de la jonction (au segment precedent), on aurait pu croire qu'elle perd aussi son statut de poignee.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תלמוד לומר ״יטמא״.</div>
+            <div class="fr"><p>L&#x27;enseignement [du verset] dit : &#x27;il sera impur&#x27; (Levitique 11:39).</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le verset 'il sera impur' tranche : bien qu'une protection (shomer) ne se joigne pas a la chair pour completer un kazayit, elle vaut <b>poignee</b> (yad) de la chair, et fait donc bien transmettre l'impurete. Des qu'il y a un kazayit de chair attache a la peau, celui qui touche l'exterieur de la peau devient impur, meme sans toucher la chair.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תנן התם: כל שהוא יד ולא שומר – טמא ומטמא, ואינו מצטרף.</div>
+            <div class="fr"><p>Nous avons appris la-bas (Okatzin 1:1) : tout ce qui est poignee (yad) et non protection (shomer) — [l&#x27;aliment] est rendu impur [par lui] et il rend impur, mais il ne se joint pas [a la mesure].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כל שהוא יד</b> עצם שאין בו מוח ובראשו האחד בשר:</div>
+          <div class="glose-fr">Tout ce qui est poignee — un os sans moelle (moah), portant de la chair a l&#x27;une de ses extremites.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>טמא</b> אם היה טהור ונגע היד בשרץ מכנסת טומאה לאוכל דאע&quot;ג דאיהו לאו אוכל הוא מקבל טומאה כאוכל עצמו:</div>
+          <div class="glose-fr">Est rendu impur (tame) — s&#x27;il etait pur et que la poignee a touche un reptile (cherets), elle fait entrer l&#x27;impurete dans l&#x27;aliment, car bien qu&#x27;elle ne soit pas elle-meme un aliment, elle recoit l&#x27;impurete comme l&#x27;aliment lui-meme.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ומטמא</b> אם אוכל טמא הוא ונגע ידו באוכל טהור מטמאו:</div>
+          <div class="glose-fr">Et rend impur (oumetame) — si l&#x27;aliment est impur et que sa poignee touche un aliment pur, elle l&#x27;impurifie.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ואינו מצטרף</b> לכביצה:</div>
+          <div class="glose-fr">Et ne se joint pas — au [volume d&#x27;]un oeuf (kabeitsa).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara passe a la michna d'<b>Okatzin</b> sur la transmission de l'impurete des aliments par leurs annexes. Une <b>yad</b> (poignee : ce par quoi on tient l'aliment pour le manger, mais qui ne le protege pas) a deux fonctions : si elle touche une source d'impurete, l'aliment attache <b>devient impur</b> (elle fait entrer) ; et elle <b>rend impur</b> (elle fait sortir l'impurete de l'aliment vers d'autres). Mais elle <b>ne se joint pas</b> a l'aliment pour completer la mesure (kabeitsa, volume d'un oeuf).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">שומר, ואף על פי שאינו יד – טמא ומטמא ומצטרף; לא יד ולא שומר – לא טמא ולא מטמא.</div>
+            <div class="fr"><p>[Tout ce qui est] protection (shomer), meme s&#x27;il n&#x27;est pas poignee — [l&#x27;aliment] est rendu impur [par lui], il rend impur, et il se joint [a la mesure] ; [ce qui n&#x27;est] ni poignee ni protection — [l&#x27;aliment] n&#x27;est pas rendu impur [par lui] et il ne rend pas impur.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וכל שהוא שומר אע&quot;פ שאינו יד</b> כגון עור שכנגדו כזית בשר:</div>
+          <div class="glose-fr">Et tout ce qui est protection, meme s&#x27;il n&#x27;est pas poignee — par exemple une peau face a laquelle il y a un kazayit de chair.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>טמא</b> אם היה טהור מקבל טומאה ומכניסה לאוכל:</div>
+          <div class="glose-fr">Est rendu impur (tame) — s&#x27;il etait pur, il recoit l&#x27;impurete et la fait entrer dans l&#x27;aliment.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ומטמא</b> אם היה אוכל טמא ונגע שומרו בטהור מוציא שומר את הטומאה מזה לזה:</div>
+          <div class="glose-fr">Et rend impur (oumetame) — si l&#x27;aliment etait impur et que sa protection a touche un [aliment] pur, la protection fait sortir l&#x27;impurete de l&#x27;un vers l&#x27;autre.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לא יד ולא שומר</b> כגון שער:</div>
+          <div class="glose-fr">Ni poignee ni protection — par exemple le poil (sear).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Une <b>shomer</b> (protection), meme si elle ne sert pas de poignee, a <b>trois</b> fonctions : l'aliment attache devient impur (faire entrer), elle rend impur (faire sortir), <b>et</b> elle <b>se joint</b> a l'aliment pour completer la mesure. En revanche, une annexe qui n'est <b>ni</b> poignee <b>ni</b> protection (par exemple le poil) ne fait rien : l'aliment n'est pas rendu impur par elle, et elle ne rend pas impur.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ידות היכא כתיבי? דכתיב ״וכי יתן מים על זרע ונפל מנבלתם עליו טמא הוא לכם״, ״לכם״ – לכל שבצרכיכם, לרבות את הידות.</div>
+            <div class="fr"><p>Ou les poignees (yadot) sont-elles ecrites ? [La] ou il est ecrit : &#x27;et si de l&#x27;eau a ete mise sur une semence, et qu&#x27;il tombe [un morceau] de leur charogne dessus, elle est impure pour vous (lakhem)&#x27; (Levitique 11:38) — &#x27;pour vous (lakhem)&#x27; : [pour] tout ce qui [est] dans vos besoins, [pour] inclure les poignees.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>D'ou tire-t-on que les <b>poignees</b> (yadot) recoivent et transmettent l'impurete ? Du verset sur l'impurete des aliments : 'elle est impure <b>pour vous</b> (lakhem)' (Lev 11:38). On lit 'lakhem' comme 'tout ce qui sert <b>a vos besoins</b>' dans l'usage de cet aliment — donc y compris les <b>poignees</b> qui facilitent sa consommation.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וכתיב: ״וכי ימות מן הבהמה אשר היא לכם״, ״לכם״ – לכל שבצרכיכם, לרבות את הידות, יד להכניס ולהוציא.</div>
+            <div class="fr"><p>Et il est ecrit : &#x27;et si meurt [un animal] parmi le betail qui est a vous [a consommer] (asher hi lakhem)&#x27; (Levitique 11:39) — &#x27;pour vous (lakhem)&#x27; : [pour] tout ce qui [est] dans vos besoins, [pour] inclure les poignees ; poignee [qui sert] a faire entrer et a faire sortir.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>טמא הוא לכם לכל שבצרכיכם</b> לכל דבר שהוא צורך לכם באוכל הזה הכל טמא הרי לך שהיד מביאה טומאה לאוכל דהא יד גבי הבאת טומאה כתיב:</div>
+          <div class="glose-fr">&#x27;Elle est impure pour vous (lakhem)&#x27;, [pour] tout ce qui [est] dans vos besoins — [pour] toute chose qui est un besoin pour vous dans cet aliment, le tout est impur ; voici donc [etabli] que la poignee fait entrer l&#x27;impurete dans l&#x27;aliment, car [c&#x27;est] a propos de l&#x27;introduction de l&#x27;impurete que la poignee est ecrite [ici].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וכי ימות וגו&#x27;</b> הרי יד להוציא דהא נבלה לאו בת הכנסה היא שהטומאה מגופה ויד דכתיב בה לטמויי אחריני כתיב:</div>
+          <div class="glose-fr">&#x27;Et si meurt etc.&#x27; — voici [etablie] la poignee [qui sert] a faire sortir, car la charogne n&#x27;est pas susceptible de recevoir [l&#x27;impurete de l&#x27;exterieur], puisque l&#x27;impurete vient de son [propre] corps ; et la poignee qui y est ecrite est ecrite pour en impurifier d&#x27;autres.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>יד להכניס ולהוציא</b> כלומר הרי לנו יד להכניס דטומאת אוכלין ויד נבלה להוציא:</div>
+          <div class="glose-fr">Poignee [qui sert] a faire entrer et a faire sortir — c&#x27;est-a-dire : voici que nous avons [la] poignee [qui sert] a faire entrer, pour l&#x27;impurete des aliments, et [la] poignee de la charogne, [qui sert] a faire sortir.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Et il est ecrit, a propos de l'impurete de la <b>charogne</b> : 'celui qui touche sa charogne sera impur' — 'asher hi <b>lakhem</b>' inclut aussi les <b>poignees</b>. Celui qui touche la poignee d'un objet impur d'impurete de charogne devient impur comme s'il touchait la charogne elle-meme. Ces deux versets enseignent donc que la poignee transmet l'impurete dans les deux sens : pour <b>faire entrer</b> (le verset des aliments) et pour <b>faire sortir</b> (le verset de la charogne).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">שומר להכניס ולהוציא – לא צריך קרא, קל וחומר מיד אתי: ומה יד, שאינה מגינה – מכנסת ומוציאה, שומר – לא כל שכן?</div>
+            <div class="fr"><p>La protection (shomer) [qui sert] a faire entrer et a faire sortir ne necessite pas de verset ; [cela] vient par kal vachomer (a fortiori) [a partir] de la poignee : et si la poignee, qui ne protege pas [l&#x27;aliment], fait entrer et fait sortir — la protection, n&#x27;est-ce pas a plus forte raison [le cas] ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שומר</b> דכתב רחמנא לעיל מעל כל זרע זרוע למה לי:</div>
+          <div class="glose-fr">Protection (shomer) — celle que le Misericordieux a ecrite plus haut [par] &#x27;sur toute semence semee (zeraa)&#x27; (Levitique 11:37), pourquoi me [la faut-il] ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Pour la <b>protection</b> (shomer), un verset n'est pas necessaire afin d'etablir qu'elle fait entrer et sortir : cela se deduit <b>a fortiori</b> (kal vachomer) de la poignee. Si la <b>yad</b>, traitee plus legerement (car elle ne protege pas l'aliment), fait neanmoins entrer et sortir l'impurete, alors la <b>shomer</b>, traitee plus severement (car elle protege l'aliment), fera <b>a plus forte raison</b> entrer et sortir.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">שומר דכתב רחמנא, למה לי? שמע מינה לצרף.</div>
+            <div class="fr"><p>La protection (shomer) que le Misericordieux a ecrite, pourquoi me [la faut-il] ? Apprends-en [donc] qu&#x27;[elle sert] a joindre (le-tsaref).</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שומר דכתב רחמנא למה לי ש&quot;מ לצרף</b> וא&quot;ת לפי&#x27; ר&quot;ת ורבינו שמואל דבעו כביצה לקבל טומאה מנלן צירוף בשומר להכניס דאימא קרא אתא להוציא וי&quot;ל כיון דיד מכניס ומוציא ושומר מכניס ומוציא לענין צירוף שומר נמי לא שנא:</div>
+          <div class="glose-fr">La protection que le Misericordieux a ecrite, pourquoi me [la faut-il] ? apprends-en qu&#x27;[elle sert] a joindre — et si tu objectes : selon l&#x27;explication de Rabbenou Tam et de Rabbenou Chmouel, qui exigent [le volume d&#x27;]un oeuf (kabeitsa) pour recevoir l&#x27;impurete, d&#x27;ou [savons-]nous [qu&#x27;il y a] jonction par la protection pour faire entrer ? car [on pourrait] dire [que] le verset vient [pour] faire sortir ! Et l&#x27;on peut dire : puisque la poignee fait entrer et sortir, et que la protection fait entrer et sortir, alors quant a la jonction la protection [n&#x27;est] pas non plus differente [il n&#x27;y a pas lieu de distinguer].</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Puisque le faire-entrer et le faire-sortir de la shomer se deduisent par kal vachomer, pourquoi le verset de la protection (Lev 11:37-38, 'sur toute semence semee... elle est impure pour vous') est-il necessaire ? <b>Apprends-en</b> que la protection ne fait pas seulement entrer et sortir l'impurete, mais qu'elle <b>se joint</b> (le-tsaref) a l'aliment pour completer la mesure requise.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ואימא: יד להכניס ולא להוציא, שומר להכניס ולהוציא, אבל יד להוציא ושומר לצרף – לא.</div>
+            <div class="fr"><p>Et dis [donc] : poignee [pour] faire entrer et non [pour] faire sortir, protection [pour] faire entrer et faire sortir, mais poignee [pour] faire sortir et protection [pour] joindre — non.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ה&quot;ג ואימא יד להכניס ולא להוציא ושומר להכניס ולהוציא</b> כלומר יד האמורה באוכלין להכניס היא אבל לא להוציא ומנבלה לא ילפא להוציא כדאמרינן לקמן דשאני נבלה דטומאה חמורה היא וכי כתב שומר להוציא כתיב דלהכניס אתי בק&quot;ו מיד אבל יד להוציא ושומר לצרף לית לך:</div>
+          <div class="glose-fr">Telle est la lecon : &#x27;et dis [donc] : poignee [pour] faire entrer et non [pour] faire sortir, et protection [pour] faire entrer et faire sortir&#x27; — c&#x27;est-a-dire : la poignee mentionnee a propos des aliments [sert] a faire entrer, mais non a faire sortir ; et de la charogne on ne deduit pas [le] faire-sortir, comme nous le dirons plus loin, car la charogne est differente, son impurete etant grave ; et lorsque [le verset] ecrit la protection, [c&#x27;est pour] faire sortir qu&#x27;il [l&#x27;]ecrit, car [le] faire-entrer vient [deja] par kal vachomer a partir de la poignee ; mais [le] faire-sortir de la poignee et [le] joindre de la protection, tu ne les as pas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara objecte : pourquoi lire ainsi ? <b>Dis plutot</b> : la poignee (plus legere) ne vaut que pour <b>faire entrer</b> l'impurete, non pour la faire sortir ; la protection (plus severe) fait <b>entrer et sortir</b> ; mais on ne deduit <b>ni</b> que la poignee fait sortir, <b>ni</b> que la protection se joint a la mesure. Le kal vachomer ne servirait alors qu'a etablir le faire-sortir de la shomer.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">יד להכניס ולא להוציא, לא מצית אמרת, השתא עיולי מעיילא, אפוקי מיבעיא?!</div>
+            <div class="fr"><p>Poignee [pour] faire entrer et non [pour] faire sortir, tu ne peux [le] dire : maintenant qu&#x27;elle fait entrer, faut-il [encore] parler de faire sortir ?!</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ומשני יד להכניס ולא להוציא לא מצית אמרת דהשתא עיולי מעיילא</b> ואע&quot;פ שעדיין לא ירדה לו טומאה אפוקי מיבעיא הלכך כיון דמכנסת כ&quot;ש דמוציאה ושומר אתי להכניס ולהוציא בק&quot;ו והאי דכתביה רחמנא לצרף כתביה:</div>
+          <div class="glose-fr">[La Guemara] repond : &#x27;poignee [pour] faire entrer et non [pour] faire sortir, tu ne peux [le] dire, car maintenant qu&#x27;elle fait entrer&#x27; — et bien que l&#x27;impurete ne soit pas encore descendue sur elle, faut-il [encore] parler de faire sortir ? Par consequent, des lors qu&#x27;elle fait entrer, a plus forte raison fait-elle sortir ; et la protection vient [pour] faire entrer et sortir par kal vachomer ; et ce que le Misericordieux l&#x27;a [pourtant] ecrite, [c&#x27;est] pour la jonction qu&#x27;il l&#x27;a ecrite.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Refutation : tu ne peux dire que la poignee fait entrer mais non sortir. <b>Maintenant qu'elle fait entrer</b> l'impurete dans l'aliment (elle rend impur un aliment pur qui lui est attache), <b>a plus forte raison</b> fait-elle sortir l'impurete d'un aliment impur vers d'autres aliments. Puisque la yad fait donc entrer ET sortir, on deduit a fortiori que la shomer aussi ; et le verset de la protection sert alors a enseigner la <b>jonction</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ואימא: יד להוציא ולא להכניס, שומר להוציא ולהכניס, אבל יד להכניס ושומר לצרף – לא.</div>
+            <div class="fr"><p>Et dis [donc] : poignee [pour] faire sortir et non [pour] faire entrer, protection [pour] faire sortir et faire entrer, mais poignee [pour] faire entrer et protection [pour] joindre — non.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ואימא יד</b> דכתיבא באוכלים להוציא כתיבא ולא להכניס והכנסה לא אתי מהוצאה וכתב שומר לרבות בו אף הכנסה אבל יד להכניס ושומר לצרף לא ולקמיה משני מעיקרא כי כתיבא יד באוכלין אתחלת טומאה כתיבא דהיא הכנסה ומיהו השתא משני ליה שינויא אחרינא:</div>
+          <div class="glose-fr">Et dis [donc] : poignee — celle qui est ecrite a propos des aliments est ecrite [pour] faire sortir, et non [pour] faire entrer, et [le] faire-entrer ne vient pas du faire-sortir ; et [le verset] a ecrit la protection pour y inclure aussi [le] faire-entrer ; mais poignee [pour] faire entrer et protection [pour] joindre — non. Et plus loin [la Guemara] repond [que], des l&#x27;origine, lorsque la poignee est ecrite a propos des aliments, [c&#x27;est] au commencement de l&#x27;impurete qu&#x27;elle est ecrite, ce qui est [le] faire-entrer ; mais pour l&#x27;heure [la Guemara] lui repond par une autre reponse.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle objection symetrique : dis plutot que la poignee (plus legere) ne vaut que pour <b>faire sortir</b>, non pour faire entrer ; la protection (plus severe) fait <b>sortir et entrer</b> ; mais on ne deduit <b>ni</b> que la poignee fait entrer, <b>ni</b> que la protection se joint a la mesure.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">יד יתירא כתיב, ״תנור וכירים יותץ וגו׳״.</div>
+            <div class="fr"><p>Une poignee surnumeraire est ecrite : &#x27;four et foyer seront detruits etc.&#x27; (Levitique 11:35).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>יד יתירא כתיבא</b> ועל כרחך תרתי להוצאה לא איצטריך דל חד מינייהו להכנסה וכיון דאיתא הכנסה והוצאה ביד יליף שומר בק&quot;ו וכי כתביה רחמנא לצרף כתביה:</div>
+          <div class="glose-fr">Une poignee surnumeraire est ecrite — et force est [de constater] que deux [mentions] ne sont pas necessaires [toutes deux] pour [le] faire-sortir : retire l&#x27;une d&#x27;elles pour [le] faire-entrer ; et puisqu&#x27;il y a [le] faire-entrer et [le] faire-sortir pour la poignee, on deduit la protection par kal vachomer ; et ce que le Misericordieux l&#x27;a ecrite, [c&#x27;est] pour la jonction qu&#x27;il l&#x27;a ecrite.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse : il y a une derivation <b>supplementaire</b> de la poignee, ecrite a propos de l'impurete des <b>ustensiles</b> : 'tout ce sur quoi tombe [un morceau] de leur charogne sera impur ; four ou foyer (kirayim) seront detruits ; ils sont impurs, et seront impurs <b>pour vous</b>' (Lev 11:35). Cela fournit une troisieme mention de la yad.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לכם״ – לכל שבצרכיכם, לרבות את הידות.</div>
+            <div class="fr"><p>&#x27;Pour vous (lakhem)&#x27; : [pour] tout ce qui [est] dans vos besoins, [pour] inclure les poignees.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>On lit 'lakhem' (a propos du four) comme 'tout ce qui sert <b>a vos besoins</b>' dans l'usage d'un ustensile — donc y compris les <b>poignees</b>, qui prennent le statut de l'ustensile lui-meme. Il y a ainsi <b>deux</b> derivations pour la poignee : l'une enseigne qu'elle fait <b>entrer</b> l'impurete, l'autre qu'elle la fait <b>sortir</b>. De la, par kal vachomer, la shomer fait entrer et sortir, et le verset 'sur toute semence semee' enseigne la <b>jonction</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הי מינייהו מייתר?</div>
+            <div class="fr"><p>Laquelle d&#x27;entre elles est superflue (meyatter) ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הי מינייהו מייתר</b> כולהו להוצאה צריכי:</div>
+          <div class="glose-fr">Laquelle d&#x27;entre elles est superflue — toutes [trois] sont necessaires pour [le] faire-sortir.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara examine ces <b>trois</b> versets lus comme designant les poignees — l'un sur l'impurete des <b>aliments</b> (zeraim), l'un sur les <b>ustensiles</b> (tanur), l'un sur la <b>charogne</b> (nevela) : <b>laquelle</b> est superflue, de sorte qu'on puisse en deduire que la poignee ne se contente pas de faire sortir l'impurete mais la fait aussi entrer ? Car a priori les trois semblent necessaires pour le seul faire-sortir.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg16">
+          <div class="seg-num">17</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לכתוב רחמנא בזרעים, וליתו הנך מינייהו – מה לזרעים, שכן טומאתן מרובה.</div>
+            <div class="fr"><p>Que le Misericordieux ecrive [a propos] des semences (zeraim), et que celles-la [le] tirent d&#x27;elle [par deduction] — [non, car] qu&#x27;as-tu [a objecter pour] les semences ? leur impurete est plus etendue (meruba).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וליתו הנך</b> תנור ונבלה:</div>
+          <div class="glose-fr">Et que celles-la [le tirent] d&#x27;elle — [c&#x27;est-a-dire] le four et la charogne.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>זרעים טומאה מרובה</b> שמקבלין טומאה מולדי טומאה תאמר בתנור שאינו מקבל טומאה אלא מאב הטומאה וכן מנבלה מרובה טומאת אוכלין כדתנן מתניתין ריבה לטמא טומאת אוכלין ממה שריבה לטמא טומאת נבלות:</div>
+          <div class="glose-fr">Les semences, [leur] impurete est plus etendue — car elles recoivent l&#x27;impurete des enfants de l&#x27;impurete (toldot toum&#x27;a) ; dis-le [donc en revanche] du four, qui ne recoit l&#x27;impurete que d&#x27;un pere de l&#x27;impurete (av ha-toum&#x27;a) ; et de meme [par rapport] a la charogne, l&#x27;impurete des aliments est plus etendue, comme nous l&#x27;avons appris dans notre michna : &#x27;[le verset] a multiplie pour impurifier d&#x27;impurete des aliments plus qu&#x27;il n&#x27;a multiplie pour impurifier d&#x27;impurete des charognes&#x27;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Detail de la question : que le verset ecrive le faire-sortir pour les <b>semences</b> (aliment), et qu'on deduise de la les deux autres (four et charogne). Mais on ne peut pas : qu'y a-t-il de <b>notable</b> pour les semences ? Leur impurete est plus <b>etendue</b> — l'aliment est susceptible meme d'une impurete de second degre (il recoit l'impurete des <b>enfants de l'impurete</b>, toldot), alors que l'ustensile ne la recoit que d'un <b>pere</b> de l'impurete. De meme on ne deduit pas la nevela des semences, car l'impurete des aliments s'applique a plus d'objets.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg17">
+          <div class="seg-num">18</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לכתוב רחמנא בתנור, וליתי הנך מיניה – מה לתנור, שכן מטמא מאוירו.</div>
+            <div class="fr"><p>Que le Misericordieux ecrive [a propos] du four (tanur), et que celles-la [le] tirent de lui — [non, car] qu&#x27;as-tu [a objecter pour] le four ? il impurifie depuis son air (me-avir).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תנור מטמא אוכלין באוירו</b> שהתנור תחלה הוי ואוכלין שניים כדתניא בפסחים בפרק ראשון (דף כ:) דת&quot;ר תוכו אע&quot;פ שלא נגע מה תוכו האמור לטמא כו&#x27; אלמא תנור מטמא לאוכלין אע&quot;פ שאינן נוגעין בו תאמר בנבלה ובזרעים טמאין שאינן מטמאין אחרים אא&quot;כ נגעו בהן כל הנך דקאמר תיתי מיניה בבנין אב קאמר טימא כאן וטימא כאן מה מצינו כאן שהיד מוציאה טומאה לאחרים אף כאן יד מוציאה טומאה לאחרים:</div>
+          <div class="glose-fr">Le four impurifie les aliments par son air — car le four est [au] premier [degre] et les aliments [au] second, comme il est enseigne dans Pessahim au premier chapitre (20b), [a savoir] ce que nos Maitres ont enseigne : &#x27;son interieur (tokho), bien qu&#x27;il [n&#x27;y] ait pas touche&#x27; — de meme que &#x27;son interieur&#x27; dit a propos d&#x27;impurifier etc. ; d&#x27;ou [il ressort] que le four impurifie les aliments bien qu&#x27;ils ne le touchent pas. Dis-le [en revanche] de la charogne et des semences impures, qui n&#x27;impurifient autrui qu&#x27;a la condition de les avoir touches. Tous ceux qu&#x27;il dit &#x27;qu&#x27;on [le] deduise de lui&#x27;, c&#x27;[est] par binyan av (paradigme) qu&#x27;il [le] dit : il a impurifie ici et il a impurifie la — de meme que nous avons trouve ici que la poignee fait sortir l&#x27;impurete vers autrui, de meme ici la poignee fait sortir l&#x27;impurete vers autrui.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Que le verset ecrive le faire-sortir pour le <b>four</b> (ustensile), et qu'on deduise de la l'aliment et la charogne. Mais ce raisonnement non plus n'est pas valide : qu'y a-t-il de <b>notable</b> pour le four ? Il impurifie les aliments non seulement par contact mais aussi par son <b>air</b> (avir) — un reptile dans la cavite du four impurifie ce qui s'y trouve sans contact. Les autres impuretes n'ont pas cette severite.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg18">
+          <div class="seg-num">19</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לכתוב רחמנא בנבלה, וליתי הנך מינה – מה לנבלה שכן מטמאה אדם, ומטמאה במשא, וטומאה יוצאה מגופה.</div>
+            <div class="fr"><p>Que le Misericordieux ecrive [a propos] de la charogne (nevela), et que celles-la [le] tirent d&#x27;elle — [non, car] qu&#x27;as-tu [a objecter pour] la charogne ? elle impurifie l&#x27;homme (adam), elle impurifie par le port (massa), et [son] impurete sort de son [propre] corps.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Que le verset ecrive le faire-sortir pour la <b>charogne</b>, et qu'on deduise de la l'aliment et l'ustensile. Mais la non plus : qu'y a-t-il de <b>notable</b> pour la charogne ? Elle impurifie <b>l'homme</b> ; elle impurifie par le <b>port</b> (massa, meme sans contact) ; et son impurete <b>emane de son propre corps</b> (et non d'une source externe). Les autres impuretes n'ont pas ces severites.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg19">
+          <div class="seg-num">20</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">חדא מחדא לא אתיא, תיתי חדא מתרתי.</div>
+            <div class="fr"><p>L&#x27;une ne se deduit pas de l&#x27;[autre] une seule, [mais] que l&#x27;une se deduise de [l&#x27;ensemble des] deux.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse : l'impurete de l'<b>une</b> de ces trois ne peut se deduire de l'<b>une</b> des deux autres prise seule (chacune ayant sa severite propre). Pourtant l'un des versets demeure <b>superflu</b>, car l'<b>une</b> des trois peut se deduire des <b>deux</b> autres reunies (par leur trait commun, tsad hashaveh).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg20">
+          <div class="seg-num">21</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הי תיתי? לא לכתוב רחמנא בזרעים, ותיתי מהנך! מה להנך – שכן מטמאין שלא בהכשר, תאמר בזרעים – שאין מטמאין אלא בהכשר!</div>
+            <div class="fr"><p>Laquelle se deduira[-t-elle] ? Que le Misericordieux n&#x27;ecrive pas [a propos] des semences, et qu&#x27;elle se deduise de celles-la (des deux autres) !</p><p>[Non, car] qu&#x27;as-tu [a objecter pour] celles-la ? elles impurifient sans [avoir besoin] d&#x27;aptitude (hekhcher) ; dis-le [en revanche] des semences, qui n&#x27;impurifient qu&#x27;avec aptitude (hekhcher) !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הי תיתי</b> איזו מהן לא תכתוב ותיתי מינייהו:</div>
+          <div class="glose-fr">Laquelle se deduira — laquelle d&#x27;entre elles n&#x27;ecriras-tu pas, et la deduiras-tu d&#x27;elles [les autres] ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ותיתי מהנך</b> הצד השוה שבהם שהן טמאין וידן מוציאה טומאתן לאחרים אף אני אביא זרעים טמאים שתהא ידן מוציאה טומאתן לאחרים:</div>
+          <div class="glose-fr">Et qu&#x27;elle se deduise de celles-la — [par] le trait commun (tsad hashaveh) qu&#x27;il y a entre elles : qu&#x27;elles sont impures et que leur poignee fait sortir leur impurete vers autrui ; moi aussi j&#x27;apporterai les semences impures, [pour] que leur poignee fasse sortir leur impurete vers autrui.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Laquelle peut-on deduire des deux autres ? Que le verset n'ecrive pas le faire-sortir pour les <b>semences</b>, et qu'on le deduise de la charogne et du four. Mais ce trait commun (tsad hashaveh) est refute : qu'y a-t-il de notable pour <b>celles-la</b> (four et charogne) ? Elles deviennent impures <b>sans</b> avoir besoin d'etre rendues aptes (<b>hekhcher</b>) par contact avec un liquide. Tandis que les semences ne deviennent impures qu'apres avoir ete <b>rendues aptes</b> par un liquide.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg21">
+          <div class="seg-num">22</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר רב הונא בריה דרב יהושע: פירות שלא הוכשרו, כתנור שלא נגמרה מלאכתו דמי.</div>
+            <div class="fr"><p>Rav Houna fils de Rav Yehochoua a dit : des fruits qui n&#x27;ont pas ete rendus aptes (hukhcheru) sont comparables a un four dont l&#x27;ouvrage n&#x27;a pas ete acheve (nigmera melakhto).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אמר רב הונא בריה דרב יהושע</b> הא דהכשר לאו פירכא היא דהיינו גמר מלאכה דידהו ותנור נמי בלאו גמר מלאכה לאו טמא הוא:</div>
+          <div class="glose-fr">Rav Houna fils de Rav Yehochoua a dit — cette [objection] de l&#x27;aptitude (hekhcher) n&#x27;est pas une refutation, car elle est [pour les fruits] leur achevement (gemar melakha) ; et le four non plus, sans achevement [de sa fabrication], n&#x27;est pas impur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Houna fils de Rav Yehochoua ecarte cette objection : la condition d'aptitude (hekhcher) n'est pas un trait distinctif. Des <b>fruits non rendus aptes</b> par un liquide sont comparables a un <b>four dont la fabrication n'est pas achevee</b> — un tel four n'est pas non plus susceptible d'impurete. L'aptitude n'est donc que l'<b>achevement</b> de l'aliment, exactement comme l'achevement du four.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg22">
+          <div class="seg-num">23</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אלא פריך הכי: מה להנך, שכן מטמאין שלא בנגיעה, תאמר בזרעים, שאין מטמאין אלא בנגיעה!</div>
+            <div class="fr"><p>[Rav Houna] objecte plutot ainsi : qu&#x27;as-tu [a objecter pour] celles-la ? elles impurifient sans contact (negia) ; dis-le [en revanche] des semences, qui n&#x27;impurifient qu&#x27;avec contact !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מה להנך שכן מיטמאין</b> קבלו הטומאה שלא בנגיעה דהא אמרן בכל הבשר (לעיל חולין דף קטו:) דמה הצד פרכינן כל דהו:</div>
+          <div class="glose-fr">Qu&#x27;as-tu [a objecter pour] celles-la ? elles impurifient — [c&#x27;est-a-dire] qu&#x27;elles ont recu l&#x27;impurete sans contact ; car nous avons dit dans [le chapitre] &#x27;Kol ha-bassar&#x27; (plus haut, Houlin 115b) que pour [le trait commun appele] &#x27;ma ha-tsad&#x27; nous refutons par quoi que ce soit [si minime].</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Plutot, on refute la deduction [des semences] autrement : qu'y a-t-il de notable pour <b>celles-la</b> (four et charogne) ? Elles deviennent impures <b>sans contact</b> — le four est impur si un reptile est dans son air, et l'impurete de la charogne emane de son corps sans contact. Tandis que les semences ne deviennent impures que par <b>contact</b>. Le tsad hashaveh est donc bien rompu pour les semences.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg23">
+          <div class="seg-num">24</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לא לכתוב רחמנא בתנור, ותיתי מהנך, מה להנך שכן אוכל.</div>
+            <div class="fr"><p>Que le Misericordieux n&#x27;ecrive pas [a propos] du four, et qu&#x27;elle se deduise de celles-la — [non, car] qu&#x27;as-tu [a objecter pour] celles-la ? c&#x27;est un aliment (okhel).</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Que le verset n'ecrive pas le faire-sortir pour le <b>four</b> (ustensile), et qu'on le deduise de l'aliment et de la charogne. Mais la non plus : qu'y a-t-il de notable pour <b>celles-la</b> (semences et charogne) ? Ce sont des <b>aliments</b>. Leurs lois ne peuvent donc pas necessairement s'appliquer au four et aux autres ustensiles, qui ne sont pas des aliments.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg24">
+          <div class="seg-num">25</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לא לכתוב רחמנא בנבלה, ותיתי מהנך? אין הכי נמי. אלא יד דנבלה למה לי? אם אינו ענין ליד נבלה, תנהו ענין ליד דעלמא.</div>
+            <div class="fr"><p>Que le Misericordieux n&#x27;ecrive pas [a propos] de la charogne, et qu&#x27;elle se deduise de celles-la ? — oui, il en est bien ainsi. Mais alors, la poignee de la charogne, pourquoi me [la faut-il] ?</p><p>Si elle n&#x27;a pas d&#x27;objet [propre] pour [la] poignee de la charogne, applique-la a la [question de la] poignee en general (yad de-alma).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אלא יד דנבלה</b> מייתר דתיתי מהנך דכי פרכת מה לזרעים שכן טומאתן מרובה תנור יוכיח מה לתנור שכן מטמא אחרים מאוירו זרעים יוכיחו וחזר הדין הצד השוה שבהן שהן טמאין וידן מוציאה טומאה לאחרים אף אני אביא נבלה אלמא מייתר יד דנבלה להוציא:</div>
+          <div class="glose-fr">Mais alors, la poignee de la charogne — est superflue, car elle se deduit de celles-la : lorsque tu objectes &#x27;qu&#x27;as-tu [a objecter pour] les semences ? leur impurete est plus etendue&#x27;, le four [le] prouve (yokhiah) ; &#x27;qu&#x27;as-tu [a objecter pour] le four ? il impurifie autrui par son air&#x27;, les semences [le] prouvent ; et le raisonnement revient [a son point de depart] : le trait commun (tsad hashaveh) qu&#x27;il y a entre elles, [a savoir] qu&#x27;elles sont impures et que leur poignee fait sortir l&#x27;impurete vers autrui — moi aussi j&#x27;apporterai la charogne. D&#x27;ou [il ressort] que la poignee de la charogne, [pour] faire sortir, est superflue.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>למה לי דאם אינו ענין לה</b> דהא אתיא במה הצד:</div>
+          <div class="glose-fr">Pourquoi me [la faut-il], puisque, si elle n&#x27;a pas d&#x27;objet [propre] — car elle se deduit [deja] par le trait commun (ba-ma ha-tsad).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>תנהו ענין ליד דעלמא</b> לאוכלין ואם אינו ענין להוצאה דהא בדידהו יד כתיבא תנהו להכנסה הרי יד להכניס ולהוציא ושומר לצרף:</div>
+          <div class="glose-fr">Applique-la a la [question de la] poignee en general — [c&#x27;est-a-dire] aux aliments ; et si elle n&#x27;a pas d&#x27;objet pour [le] faire-sortir — car a leur propos la poignee est [deja] ecrite — applique-la au faire-entrer. Voici donc [etabli] : poignee [pour] faire entrer et faire sortir, et protection [pour] joindre.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Que le verset n'ecrive pas le faire-sortir pour la <b>charogne</b>, et qu'on le deduise de l'aliment et de l'ustensile. Reponse : <b>oui, c'est bien ainsi</b>. Des lors, puisqu'on peut deduire que la poignee de la charogne fait sortir, pourquoi le verset de la <b>poignee de la charogne</b> est-il ecrit ? S'il n'est pas necessaire pour son objet propre (le faire-sortir de la charogne), <b>applique-le</b> a la <b>poignee en general</b> (yad de-alma) — et derive de la que la poignee fait <b>entrer</b> l'impurete dans l'aliment.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg25">
+          <div class="seg-num">26</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">יד להכניס, יד להוציא, שומר לצרף.</div>
+            <div class="fr"><p>Poignee [pour] faire entrer, poignee [pour] faire sortir, protection [pour] joindre.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Bilan : on derive que la poignee fait <b>entrer</b> l'impurete et que la poignee la fait <b>sortir</b> ; et l'on deduit a fortiori (kal vachomer), a partir de la poignee, que la protection fait entrer et sortir. Le verset de la <b>protection</b> (sur l'aliment) enseigne donc qu'elle <b>se joint</b> a l'aliment pour completer la mesure requise.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg26">
+          <div class="seg-num">27</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ואכתי, יד דנבלה אצטריך, דאי לא כתב רחמנא בנבלה, הוה אמינא: דיו לבא מן הדין להיות כנדון, מה הנך לא מטמו אדם, אף נבלה לא מטמאה אדם.</div>
+            <div class="fr"><p>Mais encore, la poignee de la charogne est [bien] necessaire : car si le Misericordieux n&#x27;avait pas ecrit [la poignee] a propos de la charogne, j&#x27;aurais dit : il suffit a ce qui derive d&#x27;un raisonnement [a fortiori] d&#x27;etre comme [le cas] dont il derive (dayo) ; de meme que celles-la (l&#x27;aliment et l&#x27;ustensile) n&#x27;impurifient pas l&#x27;homme, de meme la charogne [par sa poignee] n&#x27;impurifiera pas l&#x27;homme.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שלא תאמר דיו</b> אי לא הוה כתיבא בגופה וגמרה מהנך הוה אמינא דיו ליד נבלה הלמדה מאלו להיות כאלו דמה אלו לא מטמו אדם אף נבלה הואיל ויד דידה מהנך אתיא לא תטמא אדם דרך ידה כגון תחב קיסם בכזית בשר נבלה להיות לו יד ונגע אדם בו לא יטמא עד שיגע בנבלה עצמה וכן עצם של נבלה עצמה נמי דהויא יד:</div>
+          <div class="glose-fr">[Afin] que tu ne dises pas &#x27;il suffit&#x27; (dayo) — si [la poignee] n&#x27;avait pas ete ecrite a propos de son [propre] corps et qu&#x27;on l&#x27;avait deduite de celles-la, j&#x27;aurais dit : il suffit a la poignee de la charogne, qui se deduit de celles-ci, d&#x27;etre comme celles-ci ; de meme que celles-ci n&#x27;impurifient pas l&#x27;homme, de meme la charogne — puisque sa poignee vient [par deduction] de celles-la — n&#x27;impurifiera pas l&#x27;homme par le biais de sa poignee, par exemple [si] l&#x27;on a fiche un copeau (kissam) dans un kazayit de chair de charogne pour lui servir de poignee et qu&#x27;un homme y a touche : il ne serait pas impur jusqu&#x27;a ce qu&#x27;il touche la charogne elle-meme ; et de meme aussi un os de la charogne elle-meme qui sert de poignee.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection : la poignee de la charogne reste pourtant <b>necessaire</b> pour son objet propre. Car si le verset n'avait pas ecrit la poignee a propos de la charogne, j'aurais applique le principe <b>dayo</b> : il suffit a ce qui se deduit d'un kal vachomer d'avoir le statut de sa source, sans la depasser. La poignee de la charogne, deduite de l'aliment et de l'ustensile (qui n'impurifient pas l'<b>homme</b>), n'aurait donc pas non plus impurifie l'homme. Le verset est donc requis pour cela, et ne peut servir au faire-entrer.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg27">
+          <div class="seg-num">28</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אלא, יד דנבלה מיצרך צריך, ושומר דנבלה הוא דלא צריך. למאי הלכתא כתביה רחמנא? אי לאיצטרופי – אמרת לא מצטרף, ולהוציא – קל וחומר מיד אתי.</div>
+            <div class="fr"><p>Plutot, la poignee de la charogne est bien necessaire, et c&#x27;est la protection de la charogne qui n&#x27;est pas necessaire. Pour quelle loi le Misericordieux l&#x27;a-t-il ecrite ?</p><p>Si [c&#x27;est] pour joindre — tu as dit qu&#x27;elle ne se joint pas ; et [si c&#x27;est] pour faire sortir — [cela] vient par kal vachomer a partir de la poignee.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ושומר דנבלה</b> דרבינן לה לעיל דאמר יכול אף עור שיש עליו כזית בשר הנוגע כנגד בשר מאחוריו לא יהא טמא ת&quot;ל יטמא לא צריך למיכתביה דלמאי הלכתא כתביה:</div>
+          <div class="glose-fr">Et la protection de la charogne — que nous avons incluse plus haut [par] ce qu&#x27;il dit : &#x27;aurait-on pu [penser que] meme une peau sur laquelle il y a un kazayit de chair, celui qui touche en face de la chair sur le revers ne serait pas impur ? l&#x27;enseignement [du verset] dit : il sera impur&#x27; — [cette protection] n&#x27;avait pas besoin d&#x27;etre ecrite ; [donc] pour quelle loi [le verset] l&#x27;a-t-il ecrite ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אי לאצטרופי</b> הא מעטיה מהכי דקתני רישא בנבלתה ולא בעור שאין עליו כזית בשר ועור משלימו לכזית:</div>
+          <div class="glose-fr">Si [c&#x27;est] pour joindre — or [le verset] l&#x27;en a [deja] exclue, puisque la premiere clause enseigne &#x27;dans sa charogne (be-nivlata)&#x27;, et non [pour] une peau sur laquelle il n&#x27;y a pas un kazayit de chair, et [meme si] la peau la complete jusqu&#x27;a un kazayit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse : la poignee de la charogne est bien necessaire (pour le dayo), mais c'est la <b>protection de la charogne</b> qui ne l'est pas. Pour quelle loi le verset l'a-t-il ecrite ? <b>Pas pour joindre</b> : on a deja dit (segment 1) qu'une protection de charogne ne se joint pas a la mesure. <b>Pas pour faire sortir</b> : cela se deduit a fortiori de la poignee. Cette mention est donc disponible.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg28">
+          <div class="seg-num">29</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אלא, אם אין ענין לשומר דנבלה, תנהו ענין ליד דנבלה, ואם אינו ענין ליד דנבלה, תנהו ענין ליד דעלמא: יד להוציא, יד להכניס, ושומר לצרף.</div>
+            <div class="fr"><p>Plutot, si elle n&#x27;a pas d&#x27;objet [propre] pour la protection de la charogne, applique-la a la [question de la] poignee de la charogne ; et si elle n&#x27;a pas d&#x27;objet pour la poignee de la charogne, applique-la a la [question de la] poignee en general (yad de-alma) : poignee [pour] faire sortir, poignee [pour] faire entrer, et protection [pour] joindre.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תנהו ענין ליד דנבלה</b> שאף ע&quot;פ שאינו שומר תוציא:</div>
+          <div class="glose-fr">Applique-la a la [question de la] poignee de la charogne — [pour enseigner] que, bien qu&#x27;elle ne soit pas protection, elle fait sortir.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ואם אינו ענין לה</b> דהא בגופה כתיבא תנהו ענין ליד דעלמא ולהוציא לא אצטריך אלא להכניס. האי דנקט תנהו ענין ליד דנבלה והדר איצטריך ליה למימר תנהו ענין ליד דעלמא ולא נקט הכי אם אינו ענין לשומר דנבלה תנהו ענין ליד דעלמא הכי שייך למיתני שפיר מדכיון דיתורא דשומר בנבלה כתיבא תנהו ענין לנבלה דנבלה ונבלה היא וכיון דמשום יד אתא תנהו ענין ליד דעלמא דיד ויד הוא אבל שומר דנבלה להיות ענין ליד דעלמא לא שייך למימר:</div>
+          <div class="glose-fr">Et si elle n&#x27;a pas d&#x27;objet pour elle — car [la poignee] est [deja] ecrite a propos de son [propre] corps — applique-la a la [question de la] poignee en general ; et [pour le] faire-sortir [elle] n&#x27;est pas necessaire, mais [seulement pour le] faire-entrer. Ce qu&#x27;[on] adopte [la formulation] &#x27;applique-la a la poignee de la charogne&#x27;, puis qu&#x27;[on] a besoin de dire &#x27;applique-la a la poignee en general&#x27;, et qu&#x27;[on] n&#x27;adopte pas ainsi &#x27;si elle n&#x27;a pas d&#x27;objet pour la protection de la charogne, applique-la a la poignee en general&#x27; — il convient bien de [l&#x27;]enseigner ainsi, car, du fait que le surnumeraire de la protection est ecrit a propos de la charogne, applique-le a [ce qui est] de la charogne, [puisque c&#x27;est] de la charogne et que c&#x27;[est] une charogne ; et puisqu&#x27;elle vient au titre de poignee, applique-la a la poignee en general, [puisque c&#x27;est] une poignee et que c&#x27;[est] une poignee. Mais [dire que] la protection de la charogne soit l&#x27;objet de la poignee en general, [cela] ne convient pas de [le] dire.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Conclusion : si le verset n'a pas d'objet pour la <b>protection de la charogne</b>, applique-le a la <b>poignee de la charogne</b> (pour le dayo : elle impurifie bien l'homme) ; et si elle n'a pas d'objet pour la poignee de la charogne, applique-la a la <b>poignee en general</b> — d'ou la poignee fait <b>entrer</b>. Bilan final : la poignee fait <b>sortir</b> et fait <b>entrer</b>, et le verset de la protection (sur l'aliment) enseigne qu'elle <b>se joint</b> a la mesure.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Chullin_117b.html">&lsaquo; Chullin 117b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Chullin_118b.html">Chullin 118b &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

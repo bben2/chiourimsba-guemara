@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sukkah 2a -- pourquoi vingt coudees : la vue, l&#x27;ombre ou le precaire, et pourquoi la michna dit invalide et non qu&#x27;il l&#x27;abaisse</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Sukkah 2a -- pourquoi vingt coudees : la vue, l&#x27;ombre ou le precaire, et pourquoi la michna dit invalide et non qu&#x27;il l&#x27;abaisse</h1>
+    <div class="ref">Sukkah 2a</div>
+  </header>
+  <nav class="dafnav"><span class="nav-b off">&lsaquo;</span><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Sukkah_2b.html">Sukkah 2b &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> Le traite s&#x27;ouvre sur une michna qui n&#x27;explique rien et se contente d&#x27;enumerer ce qui disqualifie une soucca : plus de vingt coudees de haut, moins de dix tefahim, moins de trois parois, plus de soleil que d&#x27;ombre. La Guemara commence par ne pas poser la question qu&#x27;on attend.</p><p>Elle rapproche notre michna de celle d&#x27;Erouvin, ou la meme mesure de vingt coudees apparait pour la poutre d&#x27;un mavoi -- avec les memes protagonistes, les Sages et Rabbi Yehouda -- mais formulee autrement : la-bas qu&#x27;il l&#x27;abaisse, ici invalide. Deux reponses sont donnees a cet ecart de langue : le rang de la loi, de-oraita contre de-rabbanan, ou simplement le nombre de cas que la michna doit couvrir d&#x27;un seul mot.</p><p>Le folio bascule ensuite sur le fond avec mena hanei mili. Rabba tire la mesure d&#x27;un verset de connaissance -- afin que vos generations sachent -- et fait de la limite un seuil de perception : au-dela, l&#x27;oeil n&#x27;atteint plus le s&#x27;khakh.</p><p>Rabbi Zeira la tire d&#x27;un verset d&#x27;ombre et fait du seuil un fait optique : trop haut, ce sont les parois qui ombragent et non plus la couverture. Rava la tire de sept jours et en fait une exigence structurelle : au-dela de vingt coudees, on ne batit plus precaire.</p><p>Abaye objecte a chacun par un cas limite -- une soucca dressee entre les montagnes d&#x27;Achterot Karnayim, une soucca posee sur des cloisons de fer -- et les deux reponses precisent la nature exacte du critere : un obstacle exterieur ne vicie pas, et la hauteur est une mesure et non un mode de construction. Le Rosh montre que ces trois raisons n&#x27;ouvrent pas les memes issues -- parois jointes au s&#x27;khakh chez Rabba, largeur superieure a quatre coudees chez Rabbi Zeira, aucun remede chez Rava -- et tranche comme Rava, parce que la halakha tient qu&#x27;une soucca doit rester une demeure precaire.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 436" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="436" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1c1917">Pourquoi vingt coudees ? Trois versets, trois criteres, trois consequences</text>
+  <text x="380" y="43" text-anchor="middle" font-size="10.2" fill="#57534e">Les trois Amoraim s'accordent sur la limite mais pas sur ce qu'elle protege -- et c'est de la que naissent des remedes differents (Rosh).</text>
+
+  <rect x="16" y="56" width="232" height="356" rx="9" fill="#ffffff" stroke="#b45309" stroke-width="1.6"/>
+  <rect x="16" y="56" width="232" height="30" rx="9" fill="#fef3c7"/>
+  <rect x="16" y="76" width="232" height="10" fill="#fef3c7"/>
+  <text x="132" y="76" text-anchor="middle" font-size="11.4" font-weight="700" fill="#78350f">Rabba -- la vue</text>
+  <rect x="28" y="96" width="208" height="62" rx="6" fill="#faf9f7" stroke="#d6d3d1"/>
+  <text x="38" y="112" font-size="9.4" font-weight="700" fill="#44403c">Vayikra 23,43</text>
+  <text x="38" y="126" font-size="9.2" fill="#292524">afin que vos generations sachent</text>
+  <text x="38" y="138" font-size="9.2" fill="#292524">que j'ai fait resider les enfants</text>
+  <text x="38" y="150" font-size="9.2" fill="#292524">d'Israel dans des souccot</text>
+  <rect x="28" y="166" width="208" height="42" rx="6" fill="#fff7ed" stroke="#b45309" stroke-width="1.2"/>
+  <text x="38" y="182" font-size="9.4" font-weight="700" fill="#78350f">Critere : l'oeil doit avoir prise</text>
+  <text x="38" y="196" font-size="9.2" fill="#292524">sur le s'khakh -- lo chalta ba eina</text>
+  <rect x="28" y="216" width="208" height="38" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="1.2"/>
+  <text x="38" y="232" font-size="9.4" font-weight="700" fill="#14532d">Jusqu'a 20 coudees</text>
+  <text x="38" y="246" font-size="9.2" fill="#292524">Il sait qu'il habite une soucca.</text>
+  <rect x="28" y="262" width="208" height="44" rx="6" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.2"/>
+  <text x="38" y="278" font-size="9.4" font-weight="700" fill="#7f1d1d">Au-dessus de 20</text>
+  <text x="38" y="292" font-size="9.2" fill="#292524">Il ne voit plus le s'khakh :</text>
+  <text x="38" y="303" font-size="9.2" fill="#292524">il ne le sait plus.</text>
+  <rect x="28" y="314" width="208" height="86" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.2"/>
+  <text x="38" y="330" font-size="9.4" font-weight="700" fill="#1e3a8a">Remede (Rosh)</text>
+  <text x="38" y="345" font-size="9.2" fill="#292524">Si les parois montent jusqu'au</text>
+  <text x="38" y="357" font-size="9.2" fill="#292524">s'khakh, l'oeil a de nouveau prise :</text>
+  <text x="38" y="369" font-size="9.2" fill="#292524">kachere meme au-dela de 20.</text>
+  <text x="38" y="388" font-size="9" font-style="italic" fill="#78716c">Le critere est perceptif.</text>
+
+  <rect x="264" y="56" width="232" height="356" rx="9" fill="#ffffff" stroke="#15803d" stroke-width="1.6"/>
+  <rect x="264" y="56" width="232" height="30" rx="9" fill="#dcfce7"/>
+  <rect x="264" y="76" width="232" height="10" fill="#dcfce7"/>
+  <text x="380" y="76" text-anchor="middle" font-size="11.4" font-weight="700" fill="#14532d">Rabbi Zeira -- l'ombre</text>
+  <rect x="276" y="96" width="208" height="62" rx="6" fill="#faf9f7" stroke="#d6d3d1"/>
+  <text x="286" y="112" font-size="9.4" font-weight="700" fill="#44403c">Yechayahou 4,6</text>
+  <text x="286" y="126" font-size="9.2" fill="#292524">et il y aura une soucca pour faire</text>
+  <text x="286" y="138" font-size="9.2" fill="#292524">ombre le jour contre la chaleur</text>
+  <text x="286" y="150" font-size="9" font-style="italic" fill="#78716c">Le s'khakh se definit par son ombre.</text>
+  <rect x="276" y="166" width="208" height="42" rx="6" fill="#f0fdf4" stroke="#15803d" stroke-width="1.2"/>
+  <text x="286" y="182" font-size="9.4" font-weight="700" fill="#14532d">Critere : etre assis a l'ombre</text>
+  <text x="286" y="196" font-size="9.2" fill="#292524">du s'khakh, non a celle des parois</text>
+  <rect x="276" y="216" width="208" height="38" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="1.2"/>
+  <text x="286" y="232" font-size="9.4" font-weight="700" fill="#14532d">Jusqu'a 20 coudees</text>
+  <text x="286" y="246" font-size="9.2" fill="#292524">L'ombre vient bien du s'khakh.</text>
+  <rect x="276" y="262" width="208" height="44" rx="6" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.2"/>
+  <text x="286" y="278" font-size="9.4" font-weight="700" fill="#7f1d1d">Au-dessus de 20</text>
+  <text x="286" y="292" font-size="9.2" fill="#292524">Les parois si hautes ombragent</text>
+  <text x="286" y="303" font-size="9.2" fill="#292524">seules : le s'khakh ne sert plus.</text>
+  <rect x="276" y="314" width="208" height="86" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.2"/>
+  <text x="286" y="330" font-size="9.4" font-weight="700" fill="#1e3a8a">Remede (Rosh)</text>
+  <text x="286" y="345" font-size="9.2" fill="#292524">Si elle fait plus de 4 coudees de</text>
+  <text x="286" y="357" font-size="9.2" fill="#292524">large, l'ombre des parois ne couvre</text>
+  <text x="286" y="369" font-size="9.2" fill="#292524">plus tout : kachere.</text>
+  <text x="286" y="388" font-size="9" font-style="italic" fill="#78716c">Le critere est optique.</text>
+
+  <rect x="512" y="56" width="232" height="356" rx="9" fill="#ffffff" stroke="#7c3aed" stroke-width="1.6"/>
+  <rect x="512" y="56" width="232" height="30" rx="9" fill="#ede9fe"/>
+  <rect x="512" y="76" width="232" height="10" fill="#ede9fe"/>
+  <text x="628" y="76" text-anchor="middle" font-size="11.4" font-weight="700" fill="#4c1d95">Rava -- le precaire</text>
+  <rect x="524" y="96" width="208" height="62" rx="6" fill="#faf9f7" stroke="#d6d3d1"/>
+  <text x="534" y="112" font-size="9.4" font-weight="700" fill="#44403c">Vayikra 23,42</text>
+  <text x="534" y="126" font-size="9.2" fill="#292524">dans des souccot vous residerez</text>
+  <text x="534" y="138" font-size="9.2" fill="#292524">sept jours</text>
+  <text x="534" y="150" font-size="9" font-style="italic" fill="#78716c">Sept jours : une demeure d'un temps.</text>
+  <rect x="524" y="166" width="208" height="42" rx="6" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.2"/>
+  <text x="534" y="182" font-size="9.4" font-weight="700" fill="#4c1d95">Critere : dirat arai --</text>
+  <text x="534" y="196" font-size="9.2" fill="#292524">quitter le durable pour le precaire</text>
+  <rect x="524" y="216" width="208" height="38" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="1.2"/>
+  <text x="534" y="232" font-size="9.4" font-weight="700" fill="#14532d">Jusqu'a 20 coudees</text>
+  <text x="534" y="246" font-size="9.2" fill="#292524">On peut batir leger : elle tient.</text>
+  <rect x="524" y="262" width="208" height="44" rx="6" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.2"/>
+  <text x="534" y="278" font-size="9.4" font-weight="700" fill="#7f1d1d">Au-dessus de 20</text>
+  <text x="534" y="292" font-size="9.2" fill="#292524">Fondations et murs doivent tenir :</text>
+  <text x="534" y="303" font-size="9.2" fill="#292524">c'est fatalement une dirat keva.</text>
+  <rect x="524" y="314" width="208" height="86" rx="6" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.2"/>
+  <text x="534" y="330" font-size="9.4" font-weight="700" fill="#7f1d1d">Aucun remede (Rosh)</text>
+  <text x="534" y="345" font-size="9.2" fill="#292524">Parois jointes ou non, large ou non :</text>
+  <text x="534" y="357" font-size="9.2" fill="#292524">au-dessus de 20 elle est passoul.</text>
+  <text x="534" y="369" font-size="9.2" font-weight="700" fill="#7f1d1d">Le Rosh tranche comme Rava.</text>
+  <text x="534" y="388" font-size="9" font-style="italic" fill="#78716c">Le critere est structurel.</text>
+</svg></div>
+          <figcaption>Les trois derivations de la limite des vingt coudees, et ce que chacune rend possible : le desaccord porte moins sur le chiffre que sur la nature du defaut qu&#x27;il previent.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 402" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="402" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1c1917">Meme mesure, deux formulations : pourquoi passoul ici et un remede la ?</text>
+  <text x="380" y="43" text-anchor="middle" font-size="10.2" fill="#57534e">Soucca et mavoi partagent la limite des vingt coudees. La michna dit d'une part elle est invalide, d'autre part qu'il l'abaisse.</text>
+
+  <rect x="30" y="58" width="320" height="96" rx="9" fill="#ffffff" stroke="#b45309" stroke-width="1.6"/>
+  <text x="190" y="78" text-anchor="middle" font-size="11.4" font-weight="700" fill="#78350f">Michna -- Soucca 2a</text>
+  <text x="44" y="98" font-size="9.6" fill="#292524">Une soucca haute de plus de vingt coudees :</text>
+  <text x="44" y="118" font-size="12" font-weight="700" fill="#b91c1c">PSOULA -- elle est invalide.</text>
+  <text x="44" y="138" font-size="9" font-style="italic" fill="#78716c">Un verdict. Aucune marche a suivre.</text>
+
+  <rect x="410" y="58" width="320" height="96" rx="9" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.6"/>
+  <text x="570" y="78" text-anchor="middle" font-size="11.4" font-weight="700" fill="#1e3a8a">Michna -- Erouvin 2a</text>
+  <text x="424" y="98" font-size="9.6" fill="#292524">Un mavoi dont la poutre depasse vingt coudees :</text>
+  <text x="424" y="118" font-size="12" font-weight="700" fill="#15803d">YEMAET -- qu'il l'abaisse.</text>
+  <text x="424" y="138" font-size="9" font-style="italic" fill="#78716c">Une takanta : un remede, pas un verdict.</text>
+
+  <path d="M190 154 L190 176 L380 176 L380 194" fill="none" stroke="#78716c" stroke-width="1.6"/>
+  <path d="M570 154 L570 176 L380 176" fill="none" stroke="#78716c" stroke-width="1.6"/>
+  <polygon points="380,200 375,190 385,190" fill="#78716c"/>
+  <rect x="250" y="204" width="260" height="30" rx="15" fill="#1c1917"/>
+  <text x="380" y="224" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">Mai chena ? Qu'est-ce qui differe ?</text>
+
+  <rect x="30" y="252" width="345" height="132" rx="9" fill="#ffffff" stroke="#15803d" stroke-width="1.5"/>
+  <rect x="30" y="252" width="345" height="28" rx="9" fill="#dcfce7"/>
+  <rect x="30" y="272" width="345" height="8" fill="#dcfce7"/>
+  <text x="202" y="271" text-anchor="middle" font-size="10.8" font-weight="700" fill="#14532d">Reponse 1 -- le rang de la loi</text>
+  <text x="44" y="298" font-size="9.6" font-weight="700" fill="#44403c">Soucca = de-oraita</text>
+  <text x="44" y="312" font-size="9.2" fill="#292524">La mesure vient du Sinai : on peut dire</text>
+  <text x="44" y="324" font-size="9.2" fill="#292524">invalide, car elle n'est pas selon la Tora.</text>
+  <text x="44" y="344" font-size="9.6" font-weight="700" fill="#44403c">Mavoi = de-rabbanan</text>
+  <text x="44" y="358" font-size="9.2" fill="#292524">Qui donc l'aurait invalide avant la michna ?</text>
+  <text x="44" y="370" font-size="9.2" fill="#292524">La michna est le debut meme de la regle.</text>
+
+  <rect x="385" y="252" width="345" height="132" rx="9" fill="#ffffff" stroke="#b45309" stroke-width="1.5"/>
+  <rect x="385" y="252" width="345" height="28" rx="9" fill="#fef3c7"/>
+  <rect x="385" y="272" width="345" height="8" fill="#fef3c7"/>
+  <text x="557" y="271" text-anchor="middle" font-size="10.8" font-weight="700" fill="#78350f">Reponse 2 -- l'economie de la michna</text>
+  <text x="399" y="298" font-size="9.6" font-weight="700" fill="#44403c">Soucca : nefiche mileta -- ses cas sont nombreux</text>
+  <text x="399" y="312" font-size="9.2" fill="#292524">trop bas : qu'il rehausse ; pas trois parois : qu'il</text>
+  <text x="399" y="324" font-size="9.2" fill="#292524">en fasse ; trop de soleil : qu'il ajoute du s'khakh.</text>
+  <text x="399" y="336" font-size="9.2" fill="#292524">Quatre remedes differents -- un seul mot les couvre.</text>
+  <text x="399" y="356" font-size="9.6" font-weight="700" fill="#44403c">Mavoi : un seul cas -- un seul remede suffit.</text>
+  <text x="399" y="372" font-size="9" font-style="italic" fill="#78716c">Regle de Pessahim 3b : qu'on enseigne par le chemin le plus court.</text>
+</svg></div>
+          <figcaption>La premiere question du daf ne porte pas sur la loi mais sur la maniere dont la michna la formule : invalide d&#x27;un cote, qu&#x27;il l&#x27;abaisse de l&#x27;autre.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="470" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1c1917">Le fil du daf : de la forme de la michna a la raison de la mesure</text>
+
+  <rect x="230" y="40" width="300" height="34" rx="8" fill="#1c1917"/>
+  <text x="380" y="62" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">Michna : plus de 20 coudees -- passoul</text>
+  <path d="M380 74 L380 92" fill="none" stroke="#78716c" stroke-width="1.6"/>
+  <polygon points="380,98 375,88 385,88" fill="#78716c"/>
+
+  <rect x="60" y="100" width="640" height="98" rx="9" fill="#ffffff" stroke="#b45309" stroke-width="1.5"/>
+  <text x="76" y="120" font-size="10.8" font-weight="700" fill="#78350f">Premier temps -- la forme de l'enonce</text>
+  <text x="76" y="140" font-size="9.4" fill="#292524">Tanan hatam : la meme mesure revient pour le mavoi (Erouvin 2a) -- mais la, un remede.</text>
+  <text x="76" y="158" font-size="9.4" fill="#292524">Reponse 1 : soucca de-oraita, mavoi de-rabbanan.</text>
+  <text x="76" y="176" font-size="9.4" fill="#292524">Reponse 2 (ve-ibaeit eima) : la soucca a trop de cas pour les detailler ; le mavoi n'en a qu'un.</text>
+  <text x="76" y="192" font-size="8.8" font-style="italic" fill="#78716c">On n'a encore rien dit du fond : seulement du style de la michna.</text>
+  <path d="M380 198 L380 216" fill="none" stroke="#78716c" stroke-width="1.6"/>
+  <polygon points="380,222 375,212 385,212" fill="#78716c"/>
+
+  <rect x="270" y="224" width="220" height="30" rx="15" fill="#7c3aed"/>
+  <text x="380" y="244" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">Mena hanei mili ? D'ou cela ?</text>
+  <path d="M380 254 L380 268" fill="none" stroke="#78716c" stroke-width="1.6"/>
+  <path d="M150 268 L610 268" fill="none" stroke="#78716c" stroke-width="1.6"/>
+  <path d="M150 268 L150 284 M380 268 L380 284 M610 268 L610 284" fill="none" stroke="#78716c" stroke-width="1.6"/>
+  <polygon points="150,290 145,280 155,280" fill="#78716c"/>
+  <polygon points="380,290 375,280 385,280" fill="#78716c"/>
+  <polygon points="610,290 605,280 615,280" fill="#78716c"/>
+
+  <rect x="46" y="294" width="208" height="52" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.3"/>
+  <text x="150" y="313" text-anchor="middle" font-size="10.4" font-weight="700" fill="#78350f">Rabba -- lemaan yedeou</text>
+  <text x="150" y="331" text-anchor="middle" font-size="9.2" fill="#292524">l'oeil doit atteindre le s'khakh</text>
+
+  <rect x="276" y="294" width="208" height="52" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.3"/>
+  <text x="380" y="313" text-anchor="middle" font-size="10.4" font-weight="700" fill="#14532d">R. Zeira -- ve-soucca le-tsel</text>
+  <text x="380" y="331" text-anchor="middle" font-size="9.2" fill="#292524">l'ombre doit venir du s'khakh</text>
+
+  <rect x="506" y="294" width="208" height="52" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.3"/>
+  <text x="610" y="313" text-anchor="middle" font-size="10.4" font-weight="700" fill="#4c1d95">Rava -- ba-soukkot techvou</text>
+  <text x="610" y="331" text-anchor="middle" font-size="9.2" fill="#292524">la demeure doit rester precaire</text>
+
+  <path d="M380 346 L380 362" fill="none" stroke="#78716c" stroke-width="1.6"/>
+  <path d="M380 362 L610 362 L610 378" fill="none" stroke="#78716c" stroke-width="1.6"/>
+  <polygon points="380,368 375,358 385,358" fill="#78716c"/>
+  <polygon points="610,384 605,374 615,374" fill="#78716c"/>
+
+  <rect x="276" y="372" width="208" height="76" rx="8" fill="#ffffff" stroke="#b91c1c" stroke-width="1.4"/>
+  <text x="380" y="391" text-anchor="middle" font-size="10.2" font-weight="700" fill="#7f1d1d">Objection d'Abaye</text>
+  <text x="380" y="408" text-anchor="middle" font-size="9" fill="#292524">Et une soucca a Achterot Karnayim ?</text>
+  <text x="380" y="425" text-anchor="middle" font-size="9" fill="#292524">Reponse : ote les montagnes,</text>
+  <text x="380" y="438" text-anchor="middle" font-size="9" fill="#292524">l'ombre du s'khakh subsiste.</text>
+
+  <rect x="506" y="388" width="208" height="76" rx="8" fill="#ffffff" stroke="#b91c1c" stroke-width="1.4"/>
+  <text x="610" y="407" text-anchor="middle" font-size="10.2" font-weight="700" fill="#7f1d1d">Objection d'Abaye</text>
+  <text x="610" y="424" text-anchor="middle" font-size="9" fill="#292524">Et des cloisons de fer ?</text>
+  <text x="610" y="441" text-anchor="middle" font-size="9" fill="#292524">Reponse : c'est la hauteur, non</text>
+  <text x="610" y="454" text-anchor="middle" font-size="9" fill="#292524">la solidite, qui est la mesure.</text>
+</svg></div>
+          <figcaption>Le mouvement d&#x27;ensemble du folio, de l&#x27;examen du vocabulaire de la michna aux deux objections d&#x27;Abaye.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">סֻוכָּה שֶׁהִיא גְּבוֹהָה לְמַעְלָה מֵעֶשְׂרִים אַמָּה — פְּסוּלָה. וְרַבִּי יְהוּדָה מַכְשִׁיר.</div>
+            <div class="fr"><p>MICHNA. Une soucca qui est haute de plus de vingt coudees (ama) -- elle est passoul (invalide).</p><p>Et Rabbi Yehouda la declare kachere.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַתְנֵי&#x27; סֻוכָּה וְרַבִּי יְהוּדָה מַכְשִׁיר</b> בִּגְמָרָא מְפָרֵשׁ פְּלֻוגְתַּייְהוּ:</div>
+          <div class="glose-fr">MICHNA. Une soucca ... et Rabbi Yehouda la declare kachere -- c&#x27;est dans la Guemara qu&#x27;est expliquee leur controverse (mahloket).</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">סֻוכָּה שֶׁהִיא גְּבוֹהָה לְמַעְלָה מֵעֶשְׂרִים אַמָּה פְּסוּלָה וְרַבִּי יְהוּדָה מַכְשִׁיר. וְשֶׁאֵינָהּ גְּבוֹהָה י&#x27; טְפָחִים וְשֶׁאֵין לָהּ שָׁלֹשׁ דְּפָנוֹת וְשֶׁחַמָּתָהּ מְרֻובָּה מִצִּלָּתָהּ פְּסוּלָה:</div>
+          <div class="glose-fr">Une soucca qui est haute de plus de vingt coudees est passoul, et Rabbi Yehouda la declare kachere. Et celle qui n&#x27;est pas haute de dix tefahim, et celle qui n&#x27;a pas trois parois, et celle dont le soleil est plus abondant que son ombre -- passoul.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La michna d'ouverture du traite ne definit pas la soucca : elle enumere ce qui la disqualifie. Ce qui est mesure ici, ce n'est pas la hauteur des parois mais celle du <b>s'khakh</b> (la couverture vegetale), car c'est de lui que la soucca tire son nom -- Rachi le rappellera au segment suivant.</p><p>Vingt coudees font environ dix metres. Le chiffre n'est enonce nulle part dans la Tora : la Guemara demandera plus loin <b>mena hanei mili</b>, d'ou tenons-nous cela ? Trois Amoraim y repondront par trois versets differents, et leurs raisons ne se recouvrent pas.</p><p><b>Rabbi Yehouda</b> valide sans limite de hauteur. Sa position n'est pas un detail : la Guemara etablira plus loin (21b) qu'elle decoule de son principe general, <b>soucca dirat keva beina</b> -- une soucca doit etre une demeure durable. Toute la mahloket du daf se joue deja la.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְשֶׁאֵינָהּ גְּבוֹהָה עֲשָׂרָה טְפָחִים, וְשֶׁאֵין לָהּ (שְׁלֹשָׁה) דְּפָנוֹת, וְשֶׁחַמָּתָהּ מְרֻובָּה מִצִּלָּתָהּ — פְּסוּלָה.</div>
+            <div class="fr"><p>Et celle qui n&#x27;est pas haute de dix tefahim (paumes), et celle qui n&#x27;a pas (trois) parois (defanot), et celle dont le soleil est plus abondant que son ombre -- elle est passoul.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְשֶׁאֵינָהּ גְּבוֹהָה עֲשָׂרָה</b> בַּגְּמָרָא מְפָרֵשׁ טַעְמָא:</div>
+          <div class="glose-fr">Et celle qui n&#x27;est pas haute de dix -- c&#x27;est dans la Guemara qu&#x27;en est expliquee la raison.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שָׁלֹשׁ דְּפָנוֹת</b> נָמֵי בַּגְּמָרָא יָלֵיף לְהוּ:</div>
+          <div class="glose-fr">Trois parois -- elles aussi, c&#x27;est dans la Guemara qu&#x27;on les deduit [de l&#x27;Ecriture].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְשֶׁחַמָּתָהּ מְרֻובָּה מִצִּלָּתָהּ</b> הַמּוּעָט בָּטֵל בְּרֹוב וַהֲרֵי הוּא כְּמִי שֶׁאֵינוֹ וְעַל שֵׁם הַסְּכָךְ קְרוּיָה סֻוכָּה:</div>
+          <div class="glose-fr">Et celle dont le soleil est plus abondant que son ombre -- le peu s&#x27;annule dans le plus grand nombre, et le voila comme s&#x27;il n&#x27;existait pas ; or c&#x27;est du s&#x27;khakh que la soucca tire son nom.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Trois autres invalidations, de nature differente de la premiere. La hauteur minimale de <b>dix tefahim</b> (environ 80 cm) est la mesure generique d'un espace clos dans toute la halakha des domaines. Les <b>trois parois</b> font de la soucca un lieu et non un simple auvent. La derniere clause porte sur la densite du s'khakh.</p><p>Rachi donne la logique de cette derniere : <b>ha-mouat batel ba-rov</b>, le peu s'annule dans le plus grand nombre. Si le soleil qui traverse l'emporte sur l'ombre, l'ombre est reputee inexistante -- et une couverture qui ne fait pas d'ombre n'est plus un s'khakh. C'est ce meme lien entre le s'khakh et l'ombre que Rabbi Zeira exploitera plus loin pour deriver la limite des vingt coudees.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="340" fill="#fffdf8"/>
+  <text x="350" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Les quatre invalidations de notre michna</text>
+
+  <line x1="70" y1="60" x2="70" y2="292" stroke="#44403c" stroke-width="1.4"/>
+  <line x1="64" y1="60" x2="76" y2="60" stroke="#b91c1c" stroke-width="2"/>
+  <text x="82" y="58" font-size="9.4" font-weight="700" fill="#b91c1c">20 coudees -- plafond</text>
+  <text x="82" y="70" font-size="8.6" fill="#78716c">au-dela : passoul (R. Yehouda : kachere)</text>
+  <line x1="64" y1="262" x2="76" y2="262" stroke="#15803d" stroke-width="2"/>
+  <text x="82" y="278" font-size="9.4" font-weight="700" fill="#15803d">10 tefahim -- plancher</text>
+  <text x="82" y="290" font-size="8.6" fill="#78716c">en dessous : passoul</text>
+  <text x="40" y="180" font-size="9" fill="#57534e" transform="rotate(-90 40 180)">hauteur admise</text>
+  <rect x="62" y="60" width="16" height="202" fill="#dcfce7" opacity="0.7"/>
+
+  <rect x="330" y="60" width="340" height="112" rx="8" fill="#ffffff" stroke="#d6d3d1"/>
+  <text x="344" y="80" font-size="10.4" font-weight="700" fill="#44403c">Trois parois (chaloch defanot)</text>
+  <line x1="360" y1="96" x2="360" y2="160" stroke="#b45309" stroke-width="3.5"/>
+  <line x1="360" y1="160" x2="452" y2="160" stroke="#b45309" stroke-width="3.5"/>
+  <line x1="452" y1="160" x2="452" y2="96" stroke="#b45309" stroke-width="3.5"/>
+  <line x1="360" y1="96" x2="452" y2="96" stroke="#d6d3d1" stroke-width="2" stroke-dasharray="4 4"/>
+  <text x="406" y="112" text-anchor="middle" font-size="8.6" fill="#78716c">cote ouvert</text>
+  <text x="406" y="178" text-anchor="middle" font-size="9" font-weight="700" fill="#15803d">kachere</text>
+  <line x1="530" y1="96" x2="530" y2="160" stroke="#b91c1c" stroke-width="3.5"/>
+  <line x1="530" y1="160" x2="622" y2="160" stroke="#b91c1c" stroke-width="3.5"/>
+  <line x1="622" y1="160" x2="622" y2="96" stroke="#d6d3d1" stroke-width="2" stroke-dasharray="4 4"/>
+  <line x1="530" y1="96" x2="622" y2="96" stroke="#d6d3d1" stroke-width="2" stroke-dasharray="4 4"/>
+  <text x="576" y="178" text-anchor="middle" font-size="9" font-weight="700" fill="#b91c1c">passoul -- deux parois</text>
+
+  <rect x="330" y="196" width="340" height="124" rx="8" fill="#ffffff" stroke="#d6d3d1"/>
+  <text x="344" y="216" font-size="10.4" font-weight="700" fill="#44403c">Hamata merouba mi-tsilata -- plus de soleil que d'ombre</text>
+  <rect x="360" y="230" width="120" height="54" fill="#44403c"/>
+  <rect x="360" y="230" width="40" height="54" fill="#fde68a"/>
+  <text x="420" y="300" text-anchor="middle" font-size="9" font-weight="700" fill="#15803d">ombre majoritaire -- kachere</text>
+  <rect x="530" y="230" width="120" height="54" fill="#44403c"/>
+  <rect x="530" y="230" width="80" height="54" fill="#fde68a"/>
+  <text x="590" y="300" text-anchor="middle" font-size="9" font-weight="700" fill="#b91c1c">soleil majoritaire -- passoul</text>
+  <text x="344" y="316" font-size="8.6" font-style="italic" fill="#78716c">Rachi : le peu s'annule dans le plus grand nombre -- et la soucca tient son nom du s'khakh.</text>
+</svg></div><div class="svg-cap">Les quatre disqualifications enoncees par la michna : un plafond, un plancher, un nombre de parois, un rapport d&#x27;ombre.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">גְּמ׳ תְּנַן הָתָם: מָבוֹי שֶׁהוּא גָּבוֹהַּ מֵעֶשְׂרִים אַמָּה — יְמַעֵט. רַבִּי יְהוּדָה אוֹמֵר: אֵינוֹ צָרִיךְ.</div>
+            <div class="fr"><p>GUEMARA. Nous avons appris la-bas (Erouvin 2a) : un mavoi (ruelle fermee) dont [la poutre] est plus haute que vingt coudees -- qu&#x27;il l&#x27;abaisse.</p><p>Rabbi Yehouda dit : ce n&#x27;est pas necessaire.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מָבוֹי שֶׁהוּא גָבוֹהַּ</b> מָבוֹי שֶׁהוּא סָתוּם מִשָּׁלֹשׁ צְדָדִין וְרֹאשׁוֹ פָּתוּחַ לִרְשׁוּת הָרַבִּים וַחֲצֵירוֹת פְּתוּחוֹת לוֹ וְיוֹצְאוֹת וּבָאוֹת לִרְשׁוּת הָרַבִּים הֲרֵי הוּא רְשׁוּת הַיָּחִיד לִבְנֵי חֲצֵירוֹת וְאָסְרוּ חֲכָמִים לְהוֹצִיא מֵרְשׁוּתוֹ לִרְשׁוּת חֲבֵירוֹ בְּלֹא עֵירוּב שֶׁהַחֲצֵירוֹת כָּל אַחַת רְשׁוּת לְעַצְמָהּ וְהַמָּבוֹי רְשׁוּת לְכֻולָּן וְהִצְרִיכוּ בּוֹ שִׁיתּוּף לְהִשְׁתַּתֵּף כָּל הַחֲצֵירוֹת בְּפַת אוֹ בְּיַיִן וּלְהַנִּיחַ הַשִּׁיתּוּף בְּאַחַת מִן הַחֲצֵירוֹת וּלְפִי שֶׁאֵין לוֹ מְחִיצָּה רְבִיעִית וְקָרוֹב הוּא לִהְיוֹת דּוֹמֶה לִרְשׁוּת הָרַבִּים הִצְרִיכוּ הֶיכֵּר בְּרֹאשׁוֹ הַפָּתוּחַ לִרְשׁוּת הָרַבִּים אוֹ לֶחִי זָקוּף אוֹ קוֹרָה מִכֹּותֶל לְכֹותֶל וְאִם גָּבוֹהַּ הַקּוֹרָה מֵעֶשְׂרִים אַמָּה:</div>
+          <div class="glose-fr">Un mavoi qui est haut -- un mavoi est ferme sur trois cotes et son extremite est ouverte sur le domaine public ; des cours (hatserot) y debouchent, dont les habitants vont et viennent vers le domaine public. Il constitue un domaine prive pour les gens des cours, et les Sages ont interdit de sortir du domaine de l&#x27;un vers celui de son compagnon sans erouv, car chaque cour est un domaine pour elle-meme tandis que le mavoi est un domaine commun a toutes. Ils y ont donc exige un chitouf : que toutes les cours s&#x27;associent par du pain ou du vin, et que l&#x27;on depose ce chitouf dans l&#x27;une des cours. Et parce que le mavoi n&#x27;a pas de quatrieme cloison et qu&#x27;il risque ainsi de ressembler au domaine public, ils ont exige un repere (heker) a son extremite ouverte sur le domaine public : soit un lehi dresse, soit une poutre allant d&#x27;un mur a l&#x27;autre. Et si la poutre est plus haute que vingt coudees...</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>יְמַעֵט</b> יַשְׁפִּיל:</div>
+          <div class="glose-fr">Qu&#x27;il diminue -- qu&#x27;il l&#x27;abaisse.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵינוֹ צָרִיךְ</b> וְהָתָם מְפָרֵשׁ טַעְמָא:</div>
+          <div class="glose-fr">Ce n&#x27;est pas necessaire -- et c&#x27;est la-bas (dans Erouvin) qu&#x27;en est expliquee la raison.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara ne commence pas par le fond mais par un rapprochement de textes. Une autre michna, au debut d'Erouvin, emploie exactement la meme mesure -- vingt coudees -- pour la poutre (<b>korah</b>) posee a l'entree d'un mavoi. Et l'on y retrouve meme les deux memes protagonistes : les Sages et Rabbi Yehouda.</p><p>Mais la formulation differe : ici <b>psoula</b>, un verdict ; la-bas <b>yemaet</b>, qu'il l'abaisse -- une <b>takanta</b>, une marche a suivre. Toute la premiere sougya du traite va porter sur cet ecart de vocabulaire, avant meme qu'on ait cherche la source de la mesure.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="300" fill="#fffdf8"/>
+  <text x="350" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Le mavoi et sa poutre : ce que Rachi explique ici</text>
+
+  <rect x="40" y="44" width="300" height="216" rx="8" fill="#ffffff" stroke="#d6d3d1"/>
+  <text x="190" y="62" text-anchor="middle" font-size="10.2" font-weight="700" fill="#44403c">Vue en plan</text>
+  <line x1="70" y1="80" x2="70" y2="230" stroke="#44403c" stroke-width="4"/>
+  <line x1="290" y1="80" x2="290" y2="230" stroke="#44403c" stroke-width="4"/>
+  <line x1="70" y1="80" x2="290" y2="80" stroke="#44403c" stroke-width="4"/>
+  <text x="180" y="70" text-anchor="middle" font-size="8.6" fill="#78716c">trois cotes fermes</text>
+  <rect x="82" y="96" width="60" height="42" fill="#fef3c7" stroke="#b45309"/>
+  <text x="112" y="121" text-anchor="middle" font-size="8.6" fill="#78350f">hatser</text>
+  <rect x="82" y="152" width="60" height="42" fill="#fef3c7" stroke="#b45309"/>
+  <text x="112" y="177" text-anchor="middle" font-size="8.6" fill="#78350f">hatser</text>
+  <rect x="218" y="96" width="60" height="42" fill="#fef3c7" stroke="#b45309"/>
+  <text x="248" y="121" text-anchor="middle" font-size="8.6" fill="#78350f">hatser</text>
+  <rect x="218" y="152" width="60" height="42" fill="#fef3c7" stroke="#b45309"/>
+  <text x="248" y="177" text-anchor="middle" font-size="8.6" fill="#78350f">hatser</text>
+  <line x1="70" y1="230" x2="290" y2="230" stroke="#b91c1c" stroke-width="4" stroke-dasharray="7 4"/>
+  <text x="180" y="246" text-anchor="middle" font-size="9" font-weight="700" fill="#7f1d1d">cote ouvert sur le domaine public</text>
+
+  <rect x="360" y="44" width="300" height="216" rx="8" fill="#ffffff" stroke="#d6d3d1"/>
+  <text x="510" y="62" text-anchor="middle" font-size="10.2" font-weight="700" fill="#44403c">Vue en coupe -- l'entree</text>
+  <line x1="400" y1="86" x2="400" y2="230" stroke="#44403c" stroke-width="5"/>
+  <line x1="620" y1="86" x2="620" y2="230" stroke="#44403c" stroke-width="5"/>
+  <line x1="390" y1="230" x2="640" y2="230" stroke="#44403c" stroke-width="2"/>
+  <line x1="400" y1="86" x2="620" y2="86" stroke="#b91c1c" stroke-width="6"/>
+  <text x="510" y="78" text-anchor="middle" font-size="9" font-weight="700" fill="#7f1d1d">korah trop haute -- au-dela de 20 coudees</text>
+  <line x1="400" y1="150" x2="620" y2="150" stroke="#15803d" stroke-width="6"/>
+  <text x="510" y="143" text-anchor="middle" font-size="9" font-weight="700" fill="#14532d">korah abaissee -- yemaet</text>
+  <path d="M510 94 L510 142" fill="none" stroke="#15803d" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <polygon points="510,148 505,138 515,138" fill="#15803d"/>
+  <text x="510" y="252" text-anchor="middle" font-size="8.8" font-style="italic" fill="#78716c">Le lehi ou la korah donnent le heker : le repere qui distingue le mavoi du domaine public.</text>
+</svg></div><div class="svg-cap">Le mavoi selon la longue glose de Rachi : trois cotes fermes, des cours qui y debouchent, et un repere a l&#x27;entree ouverte sur le domaine public.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאי שְׁנָא גַּבֵּי סֻוכָּה דְּתָנֵי פְּסוּלָה, וּמַאי שְׁנָא גַּבֵּי מָבוֹי דְּתָנֵי תַּקַּנְתָּא?</div>
+            <div class="fr"><p>En quoi la soucca est-elle differente, pour que [la michna] y enseigne passoul, et en quoi le mavoi est-il different, pour qu&#x27;elle y enseigne un remede (takanta) ?</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">מַאי שְׁנָא גַּבֵּי סֻוכָּה דְּתָנֵי פְּסוּלָה וּמַאי שְׁנָא גַּבֵּי מָבוֹי דְּתָנֵי תַּקַּנְתָּא. וְהָא דְּלָא פָּרֵיךְ מַאי שְׁנָא גַּבֵּי הֲדַס דְּתָנֵי פְּסוּלָה וְתַקַּנְתָּא דִּתְנַן בְּפֶרֶק לוּלָב הַגָּזוּל (לְקַמָּן סֻוכָּה דַּף לב:) אוֹ שֶׁהָיוּ עֲנָבָיו מְרֻובִּין מֵעָלָיו פָּסוּל וְאִם מִיעֲטָן כָּשֵׁר דְּלָא פָּרֵיךְ אֶלָּא מִסֻּוכָּה וּמָבוֹי שֶׁדִּינָם שָׁוֶה לְעִנְיַן גָּבוֹהַּ וְשִׁינָּה לָשׁוֹן מִשְׁנָתוֹ וְעוֹד דְּגַבֵּי הֲדַס אִצְטְרִיךְ לְמִיתְנֵי תַּקַּנְתָּא דְּס&quot;ד אָמֵינָא כֵּיוָן דְּגִדּוּלוֹ בִּפְסוּל תּוּ לֵית לֵיהּ תַּקַּנְתָּא:</div>
+          <div class="glose-fr">En quoi la soucca est-elle differente, pour qu&#x27;on y enseigne passoul, et en quoi le mavoi est-il different, pour qu&#x27;on y enseigne un remede. -- Quant au fait que [la Guemara] ne demande pas pourquoi, a propos du hadass (myrte), la michna enseigne a la fois l&#x27;invalidite et le remede, comme nous l&#x27;avons appris au chapitre Loulav ha-gazoul (plus loin, Soucca 32b) : ou bien si ses baies etaient plus nombreuses que ses feuilles il est passoul, et s&#x27;il les a diminuees il est kacher -- [c&#x27;est parce que] la Guemara n&#x27;interroge que la soucca et le mavoi, dont la loi est identique quant a la hauteur et dont [le Tana] a pourtant change le style de son enseignement. De plus, a propos du hadass, il etait necessaire d&#x27;enseigner le remede, car on aurait pu penser que, sa croissance s&#x27;etant faite dans l&#x27;invalidite (gidoulo be-passoul), il n&#x27;a plus de remede.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La question n'est pas halakhique mais redactionnelle : deux michnayot, une meme mesure, deux registres de langue. Ce genre de question -- <b>mai chena</b>, qu'est-ce qui differe -- suppose que le choix des mots du Tana est deliberé et porte un enseignement.</p><p>Tossefot demande aussitot pourquoi la Guemara n'a pas plutot interroge le cas du <b>hadass</b> (le myrte du loulav), ou la meme michna emploie les deux registres a la fois. Sa reponse est methodologique : on ne compare que ce qui est comparable. Soucca et mavoi partagent la mesure exacte ; le hadass, non.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">סֻוכָּה דְּאוֹרָייְתָא, תָּנֵי פְּסוּלָה. מָבוֹי דְּרַבָּנָן, תָּנֵי תַּקַּנְתָּא.</div>
+            <div class="fr"><p>La soucca, qui est de-oraita (de la Tora), [la michna] y enseigne passoul. Le mavoi, qui est de-rabbanan (d&#x27;institution rabbinique), elle y enseigne un remede.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>סֻוכָּה מִדְּאוֹרַיְיתָּא</b> דְּעֶשְׂרִים אַמָּה דִּילָּה יָלְפִינַן מִדְּאוֹרַיְיתָּא וְקֹודֶם שֶׁנִּשְׁנֵית הַמִּשְׁנָה נֶאֶמְרָה שִׁיעוּרָהּ מִסִּינַי:</div>
+          <div class="glose-fr">La soucca, de par la Tora -- car ses vingt coudees, nous les deduisons de la Tora, et avant meme que la michna ne fut enseignee, sa mesure avait ete dite depuis le Sinai.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>תָּנֵי פְּסוּלָה</b> שַׁייָּךְ לְמִיתְנֵי בָּהּ לְשׁוֹן פָּסוּל כְּלוֹמַר לֹא נַעֲשֵׂית כַּתּוֹרָה וְכַהֲלָכָה:</div>
+          <div class="glose-fr">Elle enseigne passoul -- il convient d&#x27;employer a son sujet le terme d&#x27;invalidite, c&#x27;est-a-dire : elle n&#x27;a pas ete faite selon la Tora et selon la halakha.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מָבוֹי</b> דְּכוּלֵּיהּ מִדְּרַבָּנָן דְּמִדְּאוֹרַיְיתָּא סַגִּי לֵיהּ בְּשָׁלֹשׁ מְחִיצּוֹת וְאֵינוֹ צָרִיךְ לְקוֹרָה זוֹ אֶלָּא מִדְּרַבָּנָן:</div>
+          <div class="glose-fr">Le mavoi -- qui est entierement rabbinique, car selon la Tora trois cloisons lui suffisent, et cette poutre ne lui est requise que rabbiniquement.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>תָּנֵי תַּקַּנְתָּא</b> דְּלָא שַׁייָּךְ לְמִתְנֵי בָּהּ לְשׁוֹן פָּסוּל דְּמַאן פָּסְלָה קֹודֶם שֶׁנִּשְׁנֵית מִשְׁנָה זוֹ הֲרֵי הִיא תְּחִלַּת הוֹרָאָתוֹ וּמִצְוָתוֹ:</div>
+          <div class="glose-fr">Elle enseigne un remede -- car il ne convient pas d&#x27;employer a son sujet le terme d&#x27;invalidite : qui donc l&#x27;aurait invalide avant que cette michna ne fut enseignee ? Elle est le commencement meme de son enseignement et de sa prescription.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">דְּאוֹרָייְתָא תָּנֵי פְּסוּלָה. דְּאִי הֲוָה תָּנֵי יְמַעֵט חָיְישִׁינַן דִּילְמָא טָעֵי אִינִישׁ לוֹמַר יְמַעֵט לְכַתְּחִילָּה וְדִיעֲבַד כְּשֵׁרָה וְדִקְדֵּק בִּלְשׁוֹנוֹ דִּלְמָא אָתֵי לִידֵי אִיסּוּרָא דְּאוֹרָייְתָא וְתָנֵי פְּסוּלָה אע&quot;ג דְּלָא הָוֵי לִישָּׁנָא מְעַלְּיָא כְּמוֹ יְמַעֵט אֲבָל בְּמָבוֹי דְּרַבָּנָן לָא חָיֵישׁ וּתְנָא יְמַעֵט שֶׁהוּא לִישָּׁנָא מְעַלְּיָא כִּדְאַשְׁכְּחַן בְּרֵישׁ פְּסָחִים (דַּף ג.) שֶׁעִקֵּם הַכָּתוּב כַּמָּה אוֹתִיּוֹת שֶׁלֹּא לְהוֹצִיא דָּבָר מְגֻונֶּה מִפִּיו וּבַקּוּנְטְרֵס לֹא פֵּירֵשׁ כֵּן אִי נָמֵי יֵשׁ לוֹמַר דִּלְשׁוֹן יְמַעֵט מַשְׁמַע חוּמְרָא דְּרַבָּנָן בְּעָלְמָא וּפְסוּלָה מַשְׁמַע דְּאוֹרָיְיתָא וּבְפֶרֶק בַּמֶּה מַדְלִיקִין (שַׁבָּת דַּף כב.) דְּאָמְרִינַן נֵר חֲנֻוכָּה שֶׁהִנִּיחָהּ לְמַעְלָה מֵעֶשְׂרִים אַמָּה פְּסוּלָה כְּסֻוכָּה וּכְמָבוֹי אַגַּב דִּתְנַן כְּסֻוכָּה נְקַט נָמֵי גַּבֵּי נֵר חֲנֻוכָּה פְּסוּלָה א&quot;נ אִי הֲוָה תָּנֵי יְמַעֵט הֲוָה מַשְׁמַע כְּמוֹת שֶׁהָיְתָה מַדְלֶקֶת יַשְׁפִּילֶנָּה וְזֶה אֵינוֹ לְמָאֵן דְּאָמַר הַדְלָקָה עוֹשָׂה מִצְוָה וְאַפֵּי&#x27; לָמֶ&quot;ד הַנָּחָה עוֹשָׂה מִצְוָה חָיְישִׁינַן דְּהָרוֹאֶה אוֹמֵר לְצָורְכּוֹ הוּא מַדְלִיקָהּ כִּדְאָמְרִינַן גַּבֵּי הִדְלִיקָהּ בִּפְנִים וְהִנִּיחָהּ בַּחוּץ:</div>
+          <div class="glose-fr">Ce qui est de-oraita, elle enseigne passoul. -- Car si elle avait enseigne qu&#x27;il l&#x27;abaisse, nous craindrions qu&#x27;un homme ne se trompe et ne dise : qu&#x27;il l&#x27;abaisse a priori (lekhathila), mais a posteriori (bediavad) elle est kachere. [Le Tana] a donc pese son langage, de peur qu&#x27;on n&#x27;en vienne a un interdit de la Tora, et il a enseigne passoul, bien que ce ne soit pas une expression aussi elegante que qu&#x27;il l&#x27;abaisse. Mais pour le mavoi, qui est rabbinique, il ne le craint pas, et il a enseigne qu&#x27;il l&#x27;abaisse, qui est une expression elegante -- comme nous le trouvons au debut de Pessahim (3a) : l&#x27;Ecriture a detourne plusieurs lettres pour ne pas laisser sortir de sa bouche une parole grossiere. Et Rachi n&#x27;a pas explique ainsi. Ou bien l&#x27;on peut dire que le terme qu&#x27;il l&#x27;abaisse suggere une simple rigueur rabbinique, tandis que passoul suggere la Tora. Et quant a ce que nous disons au chapitre Ba-me madlikin (Chabbat 22a) : une lampe de Hanouka qu&#x27;on a placee au-dessus de vingt coudees est passoul, comme la soucca et comme le mavoi -- c&#x27;est incidemment, parce qu&#x27;on a enseigne comme la soucca, qu&#x27;on a employe aussi le mot passoul a propos de la lampe de Hanouka. Ou encore : s&#x27;il avait enseigne qu&#x27;il l&#x27;abaisse, cela aurait laisse entendre qu&#x27;il l&#x27;abaisse alors qu&#x27;elle brule deja telle quelle -- or cela ne convient pas selon celui qui dit que c&#x27;est l&#x27;allumage qui accomplit la mitsva ; et meme selon celui qui dit que c&#x27;est le depot qui accomplit la mitsva, nous craignons que celui qui la voit ne dise : c&#x27;est pour son propre usage qu&#x27;il l&#x27;allume -- comme nous le disons a propos de celui qui l&#x27;a allumee a l&#x27;interieur et l&#x27;a deposee a l&#x27;exterieur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Premiere reponse : le registre de la langue suit le rang de la loi. Le mot <b>passoul</b> signifie, selon Rachi, qu'une chose n'a pas ete faite selon la Tora et selon la halakha -- il suppose donc une norme anterieure a la michna. La mesure des vingt coudees pour la soucca est deduite d'un verset : elle precede la michna, qui ne fait que la constater.</p><p>Pour le mavoi, tout est rabbinique -- selon la Tora trois cloisons suffisent et la poutre n'est pas requise. Rachi formule l'argument avec force : <b>qui donc l'aurait invalide</b> avant que cette michna ne fut enseignee ? La michna est ici le commencement meme de la regle ; elle ne peut donc que prescrire, non declarer invalide.</p><p>Tossefot propose une lecture toute differente, fondee sur la <b>prudence pedagogique</b>. Le mot yemaet risquerait de laisser croire qu'abaisser est une exigence a priori et qu'a posteriori la soucca reste valable. Devant un interdit de la Tora, le Tana prefere le mot rude a l'expression elegante -- alors qu'ailleurs, rappelle-t-il d'apres Pessahim 3a, l'Ecriture allonge son texte de plusieurs lettres pour eviter un mot grossier.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאִיבָּעֵית אֵימָא: בִּדְאוֹרָייְתָא נָמֵי תָּנֵי תַּקַּנְתָּא, מִיהוּ סֻוכָּה דִּנְפִישִׁי מִילָּתַהּ — פָּסֵיק וְתָנֵי פְּסוּלָה, מָבוֹי דְּלָא נְפִישׁ מִילֵּיהּ — תָּנֵי תַּקַּנְתָּא.</div>
+            <div class="fr"><p>Et si tu veux, dis plutot : meme dans ce qui est de-oraita, [la michna] enseigne aussi un remede. Mais la soucca, dont les cas sont nombreux -- elle tranche et enseigne passoul ; le mavoi, dont les cas ne sont pas nombreux -- elle enseigne un remede.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאִיבָּעֵית אֵימָא בִּדְאוֹרָיְיתָא נָמֵי</b> שַׁייָּךְ לְמֵימַר תַּקַּנְתָּא:</div>
+          <div class="glose-fr">Et si tu veux, dis plutot : meme dans ce qui est de-oraita -- il conviendrait d&#x27;enoncer un remede.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>סֻוכָּה דִּנְפִישִׁי מִילָתָהּ</b> וְאֵין דּוֹמִין תַּקָּנוֹתֵיהֶן זוֹ לְזוֹ וְצָרִיךְ לְשַׁנּוֹת הַלָּשׁוֹן לְכָל תַּקָּנָה וְתַקָּנָה כְּגוֹן בִּגְבוֹהָה יְמַעֵט וּכְשֶׁאֵינָהּ גְּבוֹהָה יַגְבִּיהַּ וְשֶׁאֵין לָהּ שָׁלֹשׁ דְּפָנוֹת יַעֲשֶׂה לָהּ וְשֶׁחַמָּתָהּ מְרֻובָּה יוֹסִיף סְכָךְ הִלְכָּךְ פָּסֵיק וְתָנֵי פְּסוּלָה דְּמָצֵי לְמִיכְלְלִינְהוּ לְכֻולְּהוּ בְּהַךְ פְּסוּלָה דְּקַייְמָא לָן (פְּסָחִים דַּף ג:) יִשְׁנֶה אָדָם לְתַלְמִידוֹ דֶּרֶךְ קְצָרָה:</div>
+          <div class="glose-fr">La soucca, dont les cas sont nombreux -- et leurs remedes ne se ressemblent pas l&#x27;un l&#x27;autre : il faudrait changer de formule pour chaque remede. Ainsi, pour celle qui est trop haute : qu&#x27;il l&#x27;abaisse ; pour celle qui n&#x27;est pas assez haute : qu&#x27;il la rehausse ; pour celle qui n&#x27;a pas trois parois : qu&#x27;il lui en fasse ; et pour celle dont le soleil est plus abondant : qu&#x27;il ajoute du s&#x27;khakh. C&#x27;est pourquoi [le Tana] tranche et enseigne passoul, car il peut ainsi les englober toutes dans cette invalidite -- selon la regle que nous tenons pour etablie (Pessahim 3b) : qu&#x27;un homme enseigne a son disciple par le chemin le plus court.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מָבוֹי לָא נְפִישׁ מִילֵּיהּ</b> בְּאוֹתָהּ מִשְׁנָה:</div>
+          <div class="glose-fr">Le mavoi, dont les cas ne sont pas nombreux -- dans cette michna-la.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Seconde reponse (<b>ve-ibaeit eima</b>), qui abandonne entierement le critere du rang de la loi. Le probleme n'est plus theologique mais editorial : notre michna enumere quatre invalidations, et chacune appellerait un remede different -- rehausser, abaisser, ajouter une paroi, epaissir le s'khakh. Detailler quatre remedes aurait allonge l'enonce ; un seul mot, <b>psoula</b>, les couvre tous.</p><p>Rachi appuie cette lecture sur un principe enonce en Pessahim 3b : <b>qu'un homme enseigne a son disciple par le chemin le plus court</b>. La forme de la michna obeit donc a une exigence de concision, non a une doctrine sur la nature de l'interdit.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מְנָא הָנֵי מִילֵּי?</div>
+            <div class="fr"><p>D&#x27;ou ces choses [sont-elles tirees] ?</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Charniere du daf. Ayant regle la question du vocabulaire, la Guemara passe au fond : sur quoi repose la mesure de vingt coudees ? La formule <b>mena hanei mili</b> est la demande standard d'une source scripturaire pour une regle enoncee sans preuve.</p><p>Trois reponses vont suivre, de trois Amoraim, avec trois versets et trois criteres. Elles ne sont pas equivalentes : elles definissent chacune un defaut different, et le Rosh montrera qu'elles n'ouvrent donc pas les memes possibilites de rattrapage.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַבָּה, דְּאָמַר קְרָא: ״לְמַעַן יֵדְעוּ דֹורֹותֵיכֶם כִּי בַסֻּוכּוֹת הוֹשַׁבְתִּי אֶת בְּנֵי יִשְׂרָאֵל״, עַד עֶשְׂרִים אַמָּה, אָדָם יוֹדֵעַ שֶׁהוּא דָּר בַּסֻּוכָּה, לְמַעְלָה מֵעֶשְׂרִים אַמָּה — אֵין אָדָם יוֹדֵעַ שֶׁדָּר בַּסֻּוכָּה, מִשּׁוּם דְּלָא שָׁלְטָא בָּהּ עֵינָא.</div>
+            <div class="fr"><p>Rabba dit : car le verset dit &quot;afin que vos generations sachent que j&#x27;ai fait resider les enfants d&#x27;Israel dans des souccot&quot; (Levitique 23,43). Jusqu&#x27;a vingt coudees, l&#x27;homme sait qu&#x27;il habite dans une soucca ; au-dessus de vingt coudees, l&#x27;homme ne sait pas qu&#x27;il habite dans une soucca -- parce que l&#x27;oeil n&#x27;y a pas prise.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְמַעַן יֵדְעוּ</b> עֲשֵׂה סֻוכָּה שֶׁיְּשִׁיבָתָהּ נִיכֶּרֶת לְךָ דִּכְתִיב יָדְעוּ כִּי בְּסֻוכּוֹת הוֹשַׁבְתִּי צִוִּיתִי לֵישֵׁב הָכִי דְּרֵישׁ לֵיהּ וְאע&quot;ג דְּאֵין יוֹצֵא מִידֵי פְּשׁוּטוֹ דְּהֶיקֵּף עַנְנֵי כָּבוֹד מִיהוּ דָּרְשִׁינַן לֵיהּ לִדְרָשָׁה:</div>
+          <div class="glose-fr">Afin qu&#x27;ils sachent -- fais une soucca dont le sejour te soit perceptible, puisqu&#x27;il est ecrit qu&#x27;ils sachent que dans des souccot j&#x27;ai fait resider, c&#x27;est-a-dire : j&#x27;ai ordonne d&#x27;y resider. C&#x27;est ainsi qu&#x27;il l&#x27;interprete. Et bien que le verset ne sorte pas de son sens simple -- l&#x27;enveloppement des nuees de gloire --, nous l&#x27;employons neanmoins pour cette dracha.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּלָא שָׁלְטָא בָּהּ עֵינָא</b> שֶׁאֵינוֹ רוֹאֶה אֶת הַסְּכָךְ וְסֻוכָּה הַייְנוּ סְכָךְ כִּשְׁמָהּ:</div>
+          <div class="glose-fr">Parce que l&#x27;oeil n&#x27;y a pas prise -- car il ne voit pas le s&#x27;khakh ; or la soucca, c&#x27;est le s&#x27;khakh, conformement a son nom.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אָמַר רַבָּה אָמַר קְרָא לְמַעַן יֵדְעוּ כו&#x27;. קְצָת קָשֶׁה לְלִישָּׁנָא קַמָּא דִּבְרֵישׁ עֵירוּבִין (דַּף ג.) גַּבֵּי מִקְצָת סֻוכָּה בְּתוֹךְ עֶשְׂרִים דְּאָמַר רַבָּה הַסֻּוכָּה פְּסוּלָה הָא שָׁלְטָה בָּהּ עֵינָא כֵּיוָן דְּאֵין חֲלָלָה עֶשְׂרִים וְרַבָּה גָּרַס הָתָם כִּי הָכָא דְּהָא רָבָא פְּלִיג הָתָם וְאָמַר זֶה וָזֶה כָּשֵׁר חֲלַל סֻוכָּה תְּנַן חֲלַל מָבוֹי תְּנַן וְיֵשׁ לוֹמַר דְּהָא מְפָרֵשׁ הָתָם טַעְמָא מִשּׁוּם דְּסֻוכָּה דִּבְיָחִיד קָא הָוֵי&#x27; לָא קָא מִדְּכַר וְזִימְנִין דְּמִישְׁתְּקִיל מִלְּתַחַת עֹובִי הַסְּכָךְ הַנִּכְנָס לְתוֹךְ עֶשְׂרִים וְקַיְימָא כֻּולָּהּ לְמַעְלָה מֵעֶשְׂרִים וְרָבִינָא נָמֵי דִּמְשַׁנֵּי סֻוכָּה דְּאוֹרָייְתָא אַחְמִירוּ בַּהּ רַבָּנַן מ&quot;מ מַשְׁמַע דְּמִדְּאוֹרַיְיתָּא כְּשֵׁרָה:</div>
+          <div class="glose-fr">Rabba dit : le verset dit afin qu&#x27;ils sachent, etc. -- C&#x27;est un peu difficile selon la premiere version qu&#x27;on lit au debut d&#x27;Erouvin (3a) a propos d&#x27;une soucca dont une partie se trouve en deca de vingt [coudees], ou Rabba dit que la soucca est passoul : or l&#x27;oeil y a bien prise, puisque son espace interieur n&#x27;atteint pas vingt coudees ! Et la lecon la-bas est bien Rabba, comme ici, car Rava y est en desaccord et dit : dans l&#x27;un et l&#x27;autre cas c&#x27;est kacher -- c&#x27;est l&#x27;espace interieur de la soucca que nous avons appris, c&#x27;est l&#x27;espace interieur du mavoi que nous avons appris. Et l&#x27;on peut repondre que la raison en est expliquee la-bas : la soucca, faite par un particulier, on ne la lui rappelle pas, et il arrive qu&#x27;on retire par en dessous l&#x27;epaisseur du s&#x27;khakh qui penetrait en deca des vingt coudees, en sorte qu&#x27;elle se retrouve tout entiere au-dessus de vingt. Et Ravina egalement, qui repond que la soucca etant de-oraita les Sages y ont ete plus rigoureux -- de toute facon il ressort que selon la Tora elle est kachere.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">גְּמ׳ מה&quot;מ אָמַר רַבָּה אָמַר קְרָא לְמַעַן יֵדְעוּ דֹורֹותֵיכֶם כִּי בַסֻּוכּוֹת הוֹשַׁבְתִּי אֶת בְּנֵי יִשְׂרָאֵל עַד עֶשְׂרִים אַמָּה אָדָם יוֹדֵעַ שֶׁהוּא דָּר בַּסֻּוכָּה לְמַעְלָה מֵעֶשְׂרִים אַמָּה אֵין אָדָם יוֹדֵעַ שֶׁהוּא דָּר בַּסֻּוכָּה מַאי טַעְמָא מִשּׁוּם דְּלָא שָׁלְטָא בֵּיהּ עֵינָא. וְרַבִּי זֵירָא אָמַר מֵהָכָא וְסֻוכָּה תִּהְיֶה לְצֵל יוֹמָם מֵחֹורֶב עַד עֶשְׂרִים אַמָּה אָדָם יוֹשֵׁב בְּצֵל סֻוכָּה לְמַעְלָה מֵעֶשְׂרִים אַמָּה אֵין אָדָם יוֹשֵׁב בְּצֵל סֻוכָּה אֶלָּא בְּצֵל דְּפָנוֹת. רָבָא אָמַר מֵהָכָא בַּסֻּוכֹּות תֵּשְׁבוּ שִׁבְעַת יָמִים אָמְרָה תּוֹרָה צֵא מִדִּירַת קֶבַע וְשֵׁב בְּדִירַת עֲרַאי עַד עֶשְׂרִים אַמָּה אָדָם עוֹשֶׂה דִּירָתוֹ דִּירַת עֲרַאי. פִּי&#x27; רְאוּיָה לַעֲמֹוד בְּבִנְיָן עֲרַאי הִלְכָּךְ אֲפִילּוּ אִי עֲבִיד קֶבַע כְּגוֹן שֶׁסִּיכֵּךְ עַל מְחִיצּוֹת שֶׁל בַּרְזֶל שַׁפִּיר דָּמֵי לְמַעְלָה מֵעֶשְׂרִים אַמָּה אֵין אָדָם עוֹשֶׂה דִּירָתוֹ דִּירַת עֲרַאי אֶלָּא קֶבַע. לְרַבָּה דְּאָמַר לְמַעְלָה מֵעֶשְׂרִים אַמָּה אֵין אָדָם יוֹדֵעַ שֶׁדָּר בַּסֻּוכָּה מִשּׁוּם דְּלָא שָׁלְטָא בֵּיהּ עֵינָא אִם הָיוּ דְּפָנוֹת מַגִּיעוֹת לַסְּכָךְ כֵּיוָן דְּשָׁלְטָא בֵּיהּ עֵינָא אע&quot;ג דְּגָבוֹהַּ מֵעֶשְׂרִים אַמָּה וּלְמַעְלָה כְּשֵׁירָה. וּלְרַבִּי זֵירָא דְּאָמַר לְמַעְלָה מֵעֶשְׂרִים אַמָּה אֵין אָדָם יוֹשֵׁב בְּצֵל סֻוכָּה אֶלָּא בְּצֵל דְּפָנוֹת אִי אִית בָּהּ יוֹתֵר מִד&#x27; אַמּוֹת כֵּיוָן דִּרְוִיחָא אִיכָּא צֵל סֻוכָּה וּכְשֵׁירָה. וּלְרָבָא דְּאָמַר לְמַעְלָה מֵעֶשְׂרִים אַמָּה אֵין אָדָם עוֹשֶׂה דִּירָתוֹ דִּירַת עֲרַאי אֶלָּא דִּירַת קֶבַע לֵית לֵיהּ תַּקַּנְתָּא אֶלָּא בֵּין דְּפָנוֹת מַגִּיעוֹת לַסְּכָךְ בֵּין אֵין דְּפָנוֹת מַגִּיעוֹת לַסְּכָךְ בֵּין יֵשׁ בָּהּ יוֹתֵר מִד&#x27; אַמּוֹת בֵּין אֵין בָּהּ יוֹתֵר מִד&#x27; אַמּוֹת כֵּיוָן שֶׁהִיא גְּבוֹהָה לְמַעְלָה מֵעֶשְׂרִים אַמָּה פְּסוּלָה. אִיכָּא מ&quot;ד הִלְכְתָא כְּרַבָּה דְּהָא בְּכָל מִילֵּי כְּרַב עֲבַד שַׁבָּת דַּף כב.. וַאֲנַן מִסְתַּבְּרָא לָן דְּהִלְכְתָא כְּרָבָא דקי&quot;ל סֻוכָּה דִּירַת עֲרַאי בָּעֵינַן וְרַבִּי יְהוּדָה דְּמַכְשִׁיר ס&quot;ל דְּסֻוכָּה דִּירַת קֶבַע בָּעֵינַן פִּי&#x27; דְּמַכְשִׁיר אַף בְּדִירַת קֶבַע וְלֵית הִלְכְתָא כְּוָתֵיהּ וְאִי הָווּ דְּפָנוֹת מַגִּיעוֹת לַסְּכָךְ כ&quot;ש דַּהֲוָה לֵיהּ דִּירַת קֶבַע. וְעוֹד דְּהָא סֻוגְיָא בְּעִנְיַן סֻוכָּה ע&quot;ג סֻוכָּה כְּוָותֵיהּ. וְכֵן פָּסַק הר&quot;ז הַלֵּוִי זַ&quot;ל כְּרָבָא דְּבָתְרָאָה הוּא וַאֲפִילּוּ לְאַבַּיֵּי דְּאַקְשִׁי עָלֶיהָ הָא קַבְּלֵיהּ לְטַעְמָא מִדְּאַשְׁכְּחַן לְאַבַּיֵּי דְּאָמַר רַבִּי וְרַבִּי אוֹשַׁעְיָא וְכוּ&#x27; כֻּולְּהוּ סְבִירָא לְהוּ סֻוכָּה דִּירַת קֶבַע בָּעֵינַן. וּמִינָּהּ שָׁמְעִינַן דְּטַעֲמָא דְּרַבָּנָן מִשּׁוּם דְּבָעֵינַן דִּירַת עֲרַאי. אע&quot;ג דְּחָשׁוּ לָהּ לְקֻושְׁיָא דְּאַבַּיֵּי כִּדְאָמַר כּוּלְּהוּ כְּרָבָא לָא אָמְרִי מִשּׁוּם קֻושְׁיָא דְאַבָּיֵי מ&quot;מ כֵּיוָן דְּאַבַּיֵּי גּוּפֵיהּ קַבְּלֵיהּ לְטַעְמָא דְּרָבָא כִּדְאָמַר הִלְכָּךְ דְּרָבָא עָדִיף וְעָלֶיהָ סָמְכִינַן ע&quot;כ. וְלָאו רְאָיָה הִיא כְּמוֹ שֶׁפֵּירֵשׁ רִ&quot;י לְקַמָּן (סֻוכָּה דַּף ז:) דְּהָא דְּחָשֵׁיב לְרַבִּי יְהוּדָה לֹא מִשּׁוּם דְּאַסְּקִינַן לְעֵיל טַעְמָא דְּרַבָּנָן דְּפָסְלִי מִשּׁוּם דְּבָעֵינַן דִּירַת עֲרַאי דְּהָא אַבַּיֵּי דְּהָכָא הוּא דְּאַקְּשֵׁיהּ לֵיהּ לְרָבָא לְעֵיל דְּאִית לֵיהּ הַהוּא טַעְמָא אֲבָל מ&quot;מ אֱמֶת הוּא דִּלְמַעְלָה מֵעֶשְׂרִים אַמָּה לָא קַיְימָא בְּלֹא קֶבַע. וְאָמְרִינַן נָמֵי בְּפֶרֶק הַיָּשֵׁן (סֻוכָּה דַּף כא:) רַבִּי יְהוּדָה לְטַעְמֵיהּ דְּאָמַר סֻוכָּה דִּירַת קֶבַע בָּעֵינַן וְדַייְקָא מֵהָא דְּמַכְשַׁר לְמַעְלָה מֵעֶשְׂרִים. וְכֵן פָּסַק הרי&quot;ץ גֵּיאוּת זַ&quot;ל כְּרָבָא וְכֵן ה&quot;ר יְשַׁעְיָה דטרנ&quot;י. אֲבָל בַּעַל הָעִיטּוּר פָּסַק כְּרַבָּה וְלֹא נִרְאוּ לִי דְּבָרָיו: אָמַר רַב שְׁמוּאֵל בַּר רַב יִצְחָק אָמַר רַב הוּנָא הֲלָכָה צְרִיכָה שֶׁתְּהֵא מַחְזֶקֶת רֹאשׁוֹ וְרֻובּוֹ וְשֻׁולְחָנוֹ וְהַייְנוּ ז&#x27; טְפָחִים עַל ז&#x27; טְפָחִים דְּגַבְרָא בְּאַמְּתָא יָתֵיב וְשֻׁולְחָנוֹ טֶפַח כִּדְאִיתָא בִּירוּשַׁלְמִי פֶּרֶק הַיָּשֵׁן הֲלָכָה ח כַּמָּה כְּדֵי שֻׁולְחָן טֶפַח. א&quot;ל רַבִּי אַבָּא דַּאֲמַר לָךְ מַנִּי ב&quot;ש הִיא. בְּסֵדֶר רַב עַמְרָם פָּסַק בְּשֵׁשׁ מְקוֹמוֹת הֲלָכָה כב&quot;ש וְהַךְ דְּהָכָא שֶׁתְּהֵא מַחְזֶקֶת רֹאשׁוֹ וְרֻובּוֹ וְשֻׁולְחָנוֹ חֲדָא מִינַּייְהוּ ואע&quot;ג דְּאָמַר בְּפֶרֶק קַמָּא דִבְרָכוֹת דַּף יא. אָמַר רַב יוֹסֵף עָשָׂה כב&quot;ש לֹא עָשָׂה וְלֹא כְלוּם וּמַיְיתִי רְאָיָה מֵעֻובְדָּא דְּרַבִּי יוֹחָנָן בֶּן הַחֹורֹנִי שֶׁהָיָה יוֹשֵׁב רֹאשׁוֹ וְרֻובּוֹ בַּסֻּוכָּה וְשֻׁולְחָנוֹ בְּתוֹךְ הַבַּיִת הַהִיא בְּסֻוכָּה גְּדוֹלָה אַייְרֵי וּפְלִיגָא בָּתַרְתִּי כִּדְמַסִּיק בִּשְׁמַעְתִּין. בִּגְדוֹלָה הֲלָכָה כְּב&quot;ה דְּלָא גָּזְרִינַן שֶׁמָּא יִמָּשֵׁךְ אַחַר שֻׁולְחָנוֹ אֲבָל בִּקְטַנָּה הֲלָכָה כב&quot;ש כְּדִפְסִיק הָכָא וְכֵן מַשְׁמַע הַלָּשׁוֹן צְרִיכָה שֶׁתְּהֵא מַחֲזֶקֶת וּמַיְירֵי שֶׁהוּא וְשֻׁולְחָנוֹ בְּתוֹךְ הַסֻּוכָּה וְלֹא שַׁייָּךְ הָכָא טַעְמָא שֶׁמָּא יִמָּשֵׁךְ אֶלָּא בְּשִׁיעוּר הֶכְשֵׁר סֻוכָּה קָא מִיפַּלְגִי אֲבָל בְּסֻוכָּה גְּדוֹלָה וְהוּא יוֹשֵׁב עַל פֶּתַח הַסֻּוכָּה רָחוֹק מִן הַדְּפָנוֹת וְשֻׁולְחָנוֹ בְּתוֹךְ הַבַּיִת אִיכָּא לְמֵיחַשׁ שֶׁמָּא יִשְׁכַּח יְשִׁיבַת הַסֻּוכָּה וְיִמָּשֵׁךְ אַחַר שֻׁולְחָנוֹ. וּבְהָא הִלְכְתָא כְּבֵית הִלֵּל וְכֵן כָּתַב רי&quot;ץ גֵּיאוּת זַ&quot;ל והר&quot;ז הַלֵּוִי זַ&quot;ל וּבַעַל הָעִיטּוּר. אֲבָל הָרַב אַלְפָסִי סָבַר דְּחַד טַעְמָא לְתַרְוַייְהוּ וּבִשְׁנֵיהֶם פָּסַק כב&quot;ש וכ&quot;כ ה&quot;ר יְשַׁעְיָה דטרנ&quot;י וְאֵין דְּבָרָיו נִרְאִים דְּלִישָּׁנָא שֶׁתְּהֵא מַחֲזֶקֶת לָא מַשְׁמַע הָכִי. וְעוֹד מִדְּקָתָנֵי בַּבָּרַיְיתָא רַבִּי אוֹמֵר כָּל סֻוכָּה שֶׁאֵין בָּהּ אַרְבַּע אַמּוֹת עַל אַרְבַּע אַמּוֹת פְּסוּלָה וַחֲכָמִים אוֹמְרִים אֲפִילּוּ אֵינָהּ מַחְזֶקֶת אֶלָּא כְּדֵי רֹאשׁוֹ וְרֻובּוֹ וְשֻׁולְחָנוֹ כְּשֵׁירָה דְּמַשְׁמַע דֻּומְיָא דְּאַרְבַּע אַמּוֹת שֶׁגַּם שֻׁולְחָנוֹ בְּתוֹךְ הַסֻּוכָּה וְאַפֵּ&quot;ה פָּסַל ת&quot;ק דְּאִידָךְ בָּרַייְתָא אַלְמָא לָאו מִשּׁוּם שֶׁמָּא יִמָּשֵׁךְ:</div>
+          <div class="glose-fr">GUEMARA. D&#x27;ou ces choses ? Rabba dit : le verset dit &quot;afin que vos generations sachent que j&#x27;ai fait resider les enfants d&#x27;Israel dans des souccot&quot; -- jusqu&#x27;a vingt coudees, l&#x27;homme sait qu&#x27;il habite dans une soucca ; au-dessus de vingt coudees, l&#x27;homme ne sait pas qu&#x27;il habite dans une soucca. Pour quelle raison ? Parce que l&#x27;oeil n&#x27;y a pas prise. Et Rabbi Zeira dit : [on l&#x27;apprend] d&#x27;ici -- &quot;et il y aura une soucca pour faire ombre le jour contre la chaleur&quot; : jusqu&#x27;a vingt coudees l&#x27;homme est assis a l&#x27;ombre de la soucca ; au-dessus de vingt coudees l&#x27;homme n&#x27;est pas assis a l&#x27;ombre de la soucca mais a l&#x27;ombre des parois. Rava dit : d&#x27;ici -- &quot;dans des souccot vous residerez sept jours&quot; : la Tora a dit, sors d&#x27;une demeure permanente (dirat keva) et reside dans une demeure precaire (dirat arai) ; jusqu&#x27;a vingt coudees, l&#x27;homme fait de sa demeure une demeure precaire. Explication : [il suffit qu&#x27;elle soit] apte a tenir avec une construction precaire ; c&#x27;est pourquoi, meme s&#x27;il l&#x27;a faite permanente -- par exemple s&#x27;il a pose le s&#x27;khakh sur des cloisons de fer --, cela convient. Au-dessus de vingt coudees, l&#x27;homme ne fait pas de sa demeure une demeure precaire mais permanente. Selon Rabba, qui dit qu&#x27;au-dessus de vingt coudees l&#x27;homme ne sait pas qu&#x27;il habite dans une soucca parce que l&#x27;oeil n&#x27;y a pas prise : si les parois atteignaient le s&#x27;khakh, puisque l&#x27;oeil y a prise, elle serait kachere meme haute de plus de vingt coudees. Et selon Rabbi Zeira, qui dit qu&#x27;au-dessus de vingt coudees l&#x27;homme n&#x27;est pas assis a l&#x27;ombre de la soucca mais a l&#x27;ombre des parois : si elle a plus de quatre coudees [de large], puisqu&#x27;elle est spacieuse, il y a bien une ombre de soucca, et elle est kachere. Et selon Rava, qui dit qu&#x27;au-dessus de vingt coudees l&#x27;homme ne fait pas de sa demeure une demeure precaire mais permanente, il n&#x27;y a pour elle aucun remede : que les parois atteignent le s&#x27;khakh ou non, qu&#x27;elle ait plus de quatre coudees ou non, des lors qu&#x27;elle est haute de plus de vingt coudees, elle est passoul. Certains disent que la halakha suit Rabba, car en toute chose il a agi comme Rav (Chabbat 22a). Mais il nous parait plus vraisemblable que la halakha suive Rava, car nous tenons pour etabli qu&#x27;une soucca doit etre une demeure precaire ; et Rabbi Yehouda, qui la declare kachere, tient qu&#x27;une soucca doit etre une demeure permanente -- c&#x27;est-a-dire qu&#x27;il la valide meme en demeure permanente --, et la halakha n&#x27;est pas comme lui. Et si les parois atteignent le s&#x27;khakh, a plus forte raison est-ce une demeure permanente. De plus, la sougya relative a une soucca [construite] au-dessus d&#x27;une soucca va dans son sens. Ainsi a tranche Rabbi Zerahia Halevi, de memoire benie, comme Rava, parce qu&#x27;il est posterieur ; et meme selon Abaye, qui lui a objecte, il a bien accepte sa raison, puisque nous trouvons qu&#x27;Abaye dit : Rabbi, et Rabbi Ochaya, etc. -- tous tiennent qu&#x27;une soucca doit etre une demeure permanente ; et de la nous entendons que la raison des Sages est qu&#x27;il faut une demeure precaire. Et bien qu&#x27;on ait tenu compte de l&#x27;objection d&#x27;Abaye -- comme on dit : tous n&#x27;ont pas parle comme Rava a cause de l&#x27;objection d&#x27;Abaye --, de toute facon, puisque Abaye lui-meme a accepte la raison de Rava, comme il l&#x27;a dit, c&#x27;est celle de Rava qui prevaut et c&#x27;est sur elle que nous nous appuyons. Fin de citation. Mais ce n&#x27;est pas une preuve, ainsi que l&#x27;a explique le Ri plus loin (Soucca 7b) : le fait qu&#x27;il compte Rabbi Yehouda [parmi eux] ne vient pas de ce que nous aurions conclu plus haut que la raison des Sages qui invalident est qu&#x27;il faut une demeure precaire -- car c&#x27;est precisement l&#x27;Abaye d&#x27;ici qui a objecte a Rava plus haut, lui qui tient cette raison-la. Mais de toute facon il est vrai qu&#x27;au-dessus de vingt coudees elle ne tient pas sans etre permanente. Et nous disons egalement au chapitre Ha-yachen (Soucca 21b) : Rabbi Yehouda suit sa propre opinion, lui qui dit qu&#x27;une soucca doit etre une demeure permanente -- et on le deduit precisement de ce qu&#x27;il la declare kachere au-dessus de vingt [coudees]. Ainsi a tranche Rabbi Yitshak ibn Guiat, de memoire benie, comme Rava, et de meme Rabbi Yechaya de Trani. Mais l&#x27;auteur du Ittour a tranche comme Rabba, et ses propos ne m&#x27;ont pas paru justes. Rav Chmouel bar Rav Yitshak dit au nom de Rav Houna : la halakha est qu&#x27;elle doit pouvoir contenir sa tete, la plus grande partie de son corps et sa table -- ce qui fait sept tefahim sur sept tefahim, car un homme est assis sur une coudee et sa table [occupe] un tefah, comme il est dit dans le Yerouchalmi, chapitre Ha-yachen, halakha 8 : combien faut-il pour la table ? Un tefah. Rabbi Abba lui dit : celui qui te l&#x27;a dit, de qui suit-il l&#x27;avis ? C&#x27;est Beit Chammai. Dans le Seder de Rav Amram, il est tranche qu&#x27;en six endroits la halakha suit Beit Chammai, et celui-ci -- qu&#x27;elle doive pouvoir contenir sa tete, la plus grande partie de son corps et sa table -- en est un. Et bien qu&#x27;il soit dit au premier chapitre de Berakhot (11a) : Rav Yossef a dit, celui qui a agi selon Beit Chammai n&#x27;a rien fait du tout -- et l&#x27;on en apporte une preuve du fait de Rabbi Yohanan ben ha-Horani, qui etait assis avec sa tete et la plus grande partie de son corps dans la soucca et sa table a l&#x27;interieur de la maison --, ce cas-la traite d&#x27;une grande soucca, et la controverse porte sur deux points, comme le conclut notre sougya. Dans une grande [soucca], la halakha suit Beit Hillel, car nous ne decretons pas de peur qu&#x27;il ne se laisse entrainer a la suite de sa table ; mais dans une petite, la halakha suit Beit Chammai, comme il est tranche ici. Et c&#x27;est bien ce qu&#x27;indique l&#x27;expression elle doit pouvoir contenir : il s&#x27;agit du cas ou lui et sa table sont a l&#x27;interieur de la soucca, et la raison du de peur qu&#x27;il ne se laisse entrainer ne s&#x27;applique pas ici -- c&#x27;est sur la mesure qui rend une soucca valable qu&#x27;ils divergent. Mais dans une grande soucca, ou il est assis a l&#x27;entree de la soucca, loin des parois, et sa table a l&#x27;interieur de la maison, il y a lieu de craindre qu&#x27;il n&#x27;oublie le sejour dans la soucca et ne se laisse entrainer a la suite de sa table ; et en ce cas la halakha suit Beit Hillel. Ainsi ont ecrit Rabbi Yitshak ibn Guiat, de memoire benie, Rabbi Zerahia Halevi, de memoire benie, et l&#x27;auteur du Ittour. Mais le Rav Alfassi (Rif) tient qu&#x27;il y a une seule et meme raison pour les deux cas, et dans les deux il a tranche comme Beit Chammai ; ainsi a ecrit aussi Rabbi Yechaya de Trani. Mais ses propos ne paraissent pas justes, car l&#x27;expression qu&#x27;elle puisse contenir ne suggere pas cela. De plus, puisqu&#x27;il est enseigne dans une beraita : Rabbi dit, toute soucca qui n&#x27;a pas quatre coudees sur quatre coudees est passoul, et les Sages disent, meme si elle ne peut contenir que sa tete, la plus grande partie de son corps et sa table, elle est kachere -- cela indique que, semblablement au cas des quatre coudees, sa table aussi se trouve a l&#x27;interieur de la soucca ; et malgre cela le premier Tana de l&#x27;autre beraita l&#x27;a invalidee. Il en ressort donc que ce n&#x27;est pas a cause du de peur qu&#x27;il ne se laisse entrainer.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabba tire la mesure d'un verset qui porte sur la <b>connaissance</b> : la soucca doit etre sue. Rachi transpose : fais une soucca dont le sejour te soit perceptible. Le critere devient donc perceptif -- et sa traduction concrete est <b>lo chalta ba eina</b>, l'oeil n'y a pas prise.</p><p>Le point technique est que l'oeil, sans effort volontaire, ne monte pas au-dela d'une vingtaine de coudees. Au-dessus, il faut lever la tete deliberement pour voir le s'khakh -- or, precise Rachi, <b>la soucca c'est le s'khakh</b>. Ne pas le voir, c'est ne pas savoir qu'on est dans une soucca.</p><p>Rachi ajoute une remarque d'exegese importante : le sens simple du verset porte sur les <b>nuees de gloire</b> qui entouraient Israel au desert, et ce sens simple demeure ; la lecture de Rabba s'y ajoute comme <b>dracha</b> sans l'abolir.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 330" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="330" fill="#fffdf8"/>
+  <text x="350" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Rabba : lo chalta ba eina -- l'oeil n'a plus prise sur le s'khakh</text>
+
+  <rect x="30" y="40" width="310" height="266" rx="8" fill="#ffffff" stroke="#15803d" stroke-width="1.5"/>
+  <text x="185" y="60" text-anchor="middle" font-size="10.4" font-weight="700" fill="#14532d">Jusqu'a 20 coudees</text>
+  <line x1="80" y1="96" x2="80" y2="266" stroke="#44403c" stroke-width="4"/>
+  <line x1="292" y1="96" x2="292" y2="266" stroke="#44403c" stroke-width="4"/>
+  <line x1="72" y1="96" x2="300" y2="96" stroke="#15803d" stroke-width="7"/>
+  <text x="186" y="88" text-anchor="middle" font-size="8.8" font-weight="700" fill="#14532d">s'khakh</text>
+  <line x1="60" y1="266" x2="312" y2="266" stroke="#44403c" stroke-width="2"/>
+  <circle cx="150" cy="222" r="9" fill="#292524"/>
+  <line x1="150" y1="231" x2="150" y2="262" stroke="#292524" stroke-width="3"/>
+  <path d="M157 216 L288 102" fill="none" stroke="#15803d" stroke-width="1.6" stroke-dasharray="5 3"/>
+  <path d="M157 216 L200 102" fill="none" stroke="#15803d" stroke-width="1.6" stroke-dasharray="5 3"/>
+  <text x="185" y="290" text-anchor="middle" font-size="9.2" fill="#292524">Sans effort, le regard rencontre le s'khakh :</text>
+  <text x="185" y="302" text-anchor="middle" font-size="9.2" font-weight="700" fill="#14532d">il sait qu'il habite dans une soucca.</text>
+
+  <rect x="360" y="40" width="310" height="266" rx="8" fill="#ffffff" stroke="#b91c1c" stroke-width="1.5"/>
+  <text x="515" y="60" text-anchor="middle" font-size="10.4" font-weight="700" fill="#7f1d1d">Au-dessus de 20 coudees</text>
+  <line x1="410" y1="76" x2="410" y2="266" stroke="#44403c" stroke-width="4"/>
+  <line x1="622" y1="76" x2="622" y2="266" stroke="#44403c" stroke-width="4"/>
+  <line x1="402" y1="76" x2="630" y2="76" stroke="#b91c1c" stroke-width="7"/>
+  <text x="516" y="70" text-anchor="middle" font-size="8.8" font-weight="700" fill="#7f1d1d">s'khakh hors de portee du regard</text>
+  <line x1="390" y1="266" x2="642" y2="266" stroke="#44403c" stroke-width="2"/>
+  <circle cx="480" cy="222" r="9" fill="#292524"/>
+  <line x1="480" y1="231" x2="480" y2="262" stroke="#292524" stroke-width="3"/>
+  <path d="M487 216 L640 172" fill="none" stroke="#b45309" stroke-width="1.6" stroke-dasharray="5 3"/>
+  <text x="646" y="176" font-size="8.6" fill="#b45309">champ</text>
+  <text x="646" y="187" font-size="8.6" fill="#b45309">usuel</text>
+  <rect x="410" y="86" width="212" height="80" fill="#fee2e2" opacity="0.5"/>
+  <text x="516" y="130" text-anchor="middle" font-size="8.8" fill="#7f1d1d">zone que l'oeil n'atteint pas</text>
+  <text x="515" y="290" text-anchor="middle" font-size="9.2" fill="#292524">Il faut lever la tete volontairement :</text>
+  <text x="515" y="302" text-anchor="middle" font-size="9.2" font-weight="700" fill="#7f1d1d">il ne sait plus qu'il habite une soucca.</text>
+</svg></div><div class="svg-cap">Le critere de Rabba est un critere de champ visuel : au-dela de vingt coudees, le s&#x27;khakh sort du regard ordinaire.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבִּי זֵירָא אָמַר מֵהָכָא: ״וְסֻוכָּה תִּהְיֶה לְצֵל יוֹמָם מֵחֹורֶב״, עַד עֶשְׂרִים אַמָּה אָדָם יוֹשֵׁב בְּצֵל סֻוכָּה, לְמַעְלָה מֵעֶשְׂרִים אַמָּה — אֵין אָדָם יוֹשֵׁב בְּצֵל סֻוכָּה אֶלָּא בְּצֵל דְּפָנוֹת.</div>
+            <div class="fr"><p>Rabbi Zeira dit : [on l&#x27;apprend] d&#x27;ici -- &quot;et il y aura une soucca pour faire ombre le jour contre la chaleur&quot; (Isaie 4,6). Jusqu&#x27;a vingt coudees, l&#x27;homme est assis a l&#x27;ombre de la soucca ; au-dessus de vingt coudees, l&#x27;homme n&#x27;est pas assis a l&#x27;ombre de la soucca mais a l&#x27;ombre des parois.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְסֻוכָּה תִּהְיֶה לְצֵל</b> מַשְׁמַע אֵין סְכָךְ אֶלָּא הֶעָשׂוּי לְצֵל:</div>
+          <div class="glose-fr">Et il y aura une soucca pour l&#x27;ombre -- cela indique qu&#x27;il n&#x27;y a de s&#x27;khakh que ce qui est fait pour l&#x27;ombre.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא בְּצֵל דְּפָנוֹת</b> שֶׁהַצְּלָלִין מַגִּיעִין זֶה לָזֶה מִתּוֹךְ גָּובְהָן שֶׁל דְּפָנוֹת וְאֵין צָרִיךְ סְכָךְ וּלְקַמָּן מוֹקֵי פְּלֻוגְתַּייְהוּ לֵר&#x27; זֵירָא בְּשֶׁאֵין בָּהּ אֶלָּא אַרְבַּע עַל אַרְבַּע דְּקִים לְהוּ לְרַבָּנָן דִּבְהַאי שִׁיעוּרָא לֵיכָּא צֵל סְכָךְ אֶלָּא צֵל שֶׁל דְּפָנוֹת:</div>
+          <div class="glose-fr">Mais a l&#x27;ombre des parois -- car les ombres se rejoignent l&#x27;une l&#x27;autre du fait de la hauteur des parois, et le s&#x27;khakh devient inutile. Et plus loin la Guemara etablit leur controverse, selon Rabbi Zeira, dans le cas ou elle n&#x27;a que quatre [coudees] sur quatre : les Sages tiennent pour certain qu&#x27;avec cette mesure il n&#x27;y a pas d&#x27;ombre du s&#x27;khakh mais [seulement] l&#x27;ombre des parois.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabbi Zeira deplace le critere de la vue vers l'<b>ombre</b>. Son verset -- tire des Prophetes, non de la Tora -- definit la soucca par sa fonction : faire ombre. Rachi en tire une definition restrictive : il n'y a de s'khakh que ce qui est fait pour l'ombre.</p><p>L'argument physique est le suivant : passe une certaine hauteur, les parois projettent des ombres assez longues pour se rejoindre et couvrir tout l'espace. On est alors a l'ombre <b>des parois</b>, et le s'khakh ne joue plus aucun role. Rachi precise que la Guemara plus loin restreindra ce raisonnement au cas d'une soucca de quatre coudees sur quatre -- dans une soucca plus large, l'ombre des parois ne suffit plus, ce qui donne le remede que le Rosh signalera.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר לֵיהּ אַבַּיֵּי: אֶלָּא מֵעַתָּה, הָעוֹשֶׂה סֻוכָּתוֹ בְּעַשְׁתְּרוֹת קַרְנַיִם, הָכִי נָמֵי דְּלָא הָוֵי סֻוכָּה?</div>
+            <div class="fr"><p>Abaye lui dit : mais s&#x27;il en est ainsi, celui qui fait sa soucca a Achterot Karnayim -- la aussi, ce ne serait donc pas une soucca ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>עַשְׁתְּרֹות קַרְנַיִם</b> שְׁנֵי הָרִים גְּדוֹלִים וְהַשְּׁפֵלָה בֵּינֵיהֶם וּמִתּוֹךְ גֹּובַהּ הֶהָרִים אֵין חַמָּה זוֹרַחַת שָׁם בַּשְּׁפֵלָה:</div>
+          <div class="glose-fr">Achterot Karnayim -- deux grandes montagnes avec un creux entre elles ; du fait de la hauteur des montagnes, le soleil ne brille pas la, dans le creux.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection par reduction a l'absurde. Achterot Karnayim est, selon Rachi, un site encaisse entre deux hautes montagnes qui interceptent le soleil : celui qui y dresse une soucca est a l'ombre des montagnes, non a celle du s'khakh. Si le critere de Rabbi Zeira etait litteral, une telle soucca serait invalide -- conclusion que personne n'accepte.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ: הָתָם, דַּל עַשְׁתָּרוֹת קַרְנַיִם — אִיכָּא צֵל סֻוכָּה. הָכָא, דַּל דְּפָנוֹת — לֵיכָּא צֵל סֻוכָּה.</div>
+            <div class="fr"><p>Il lui dit : la-bas, ote Achterot Karnayim -- il y a [encore] une ombre de soucca. Ici, ote les parois -- il n&#x27;y a pas d&#x27;ombre de soucca.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דַּל דְּפָנוֹת לֵיכָּא צֵל סֻוכָּה</b> שֶׁחַמָּה בָּאָה מִתַּחְתַּי&#x27; נִמְצָא שְׁמָהּ בָּטֵל:</div>
+          <div class="glose-fr">Ote les parois, il n&#x27;y a pas d&#x27;ombre de soucca -- car le soleil vient par en dessous ; il se trouve que [son ombre] est annulee.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La reponse introduit un test d'abstraction : <b>dal</b>, ote par la pensee l'element litigieux et regarde ce qui subsiste. A Achterot Karnayim, la soucca est intrinsequement correcte : son s'khakh ferait de l'ombre si les montagnes n'etaient pas la. L'obstacle est <b>exterieur</b> a la soucca et ne la disqualifie pas.</p><p>Dans une soucca de plus de vingt coudees, le retrait des parois ne laisse rien : le soleil entrerait par-dessous toute la journee et le s'khakh, trop haut, ne couvrirait rien. Le defaut est <b>interne</b>. La distinction est celle entre un empechement accidentel et un vice de constitution.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 316" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="316" fill="#fffdf8"/>
+  <text x="350" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Le test de Rabbi Zeira : dal -- retire l'element etranger et regarde ce qui reste</text>
+
+  <rect x="30" y="38" width="310" height="252" rx="8" fill="#ffffff" stroke="#15803d" stroke-width="1.5"/>
+  <text x="185" y="58" text-anchor="middle" font-size="10.4" font-weight="700" fill="#14532d">Achterot Karnayim -- kachere</text>
+  <path d="M50 220 L110 120 L170 220 Z" fill="#d6d3d1" stroke="#a8a29e"/>
+  <path d="M200 220 L260 120 L320 220 Z" fill="#d6d3d1" stroke="#a8a29e"/>
+  <text x="110" y="112" text-anchor="middle" font-size="8.4" fill="#78716c">montagne</text>
+  <text x="260" y="112" text-anchor="middle" font-size="8.4" fill="#78716c">montagne</text>
+  <rect x="152" y="182" width="66" height="38" fill="none" stroke="#44403c" stroke-width="3"/>
+  <line x1="146" y1="182" x2="224" y2="182" stroke="#15803d" stroke-width="5"/>
+  <line x1="60" y1="220" x2="320" y2="220" stroke="#44403c" stroke-width="2"/>
+  <text x="185" y="244" text-anchor="middle" font-size="9.2" fill="#292524">Ote les montagnes par la pensee :</text>
+  <text x="185" y="258" text-anchor="middle" font-size="9.2" font-weight="700" fill="#14532d">l'ombre du s'khakh existe toujours.</text>
+  <text x="185" y="276" text-anchor="middle" font-size="8.6" font-style="italic" fill="#78716c">L'obstacle est exterieur a la soucca.</text>
+
+  <rect x="360" y="38" width="310" height="252" rx="8" fill="#ffffff" stroke="#b91c1c" stroke-width="1.5"/>
+  <text x="515" y="58" text-anchor="middle" font-size="10.4" font-weight="700" fill="#7f1d1d">Soucca de plus de 20 coudees -- passoul</text>
+  <line x1="440" y1="92" x2="440" y2="220" stroke="#44403c" stroke-width="4" stroke-dasharray="6 4"/>
+  <line x1="590" y1="92" x2="590" y2="220" stroke="#44403c" stroke-width="4" stroke-dasharray="6 4"/>
+  <line x1="432" y1="92" x2="598" y2="92" stroke="#b45309" stroke-width="5"/>
+  <text x="515" y="86" text-anchor="middle" font-size="8.4" fill="#78350f">s'khakh</text>
+  <line x1="420" y1="220" x2="620" y2="220" stroke="#44403c" stroke-width="2"/>
+  <path d="M410 110 L436 130 M410 140 L436 160 M410 170 L436 190" fill="none" stroke="#f59e0b" stroke-width="2.4"/>
+  <path d="M620 110 L594 130 M620 140 L594 160 M620 170 L594 190" fill="none" stroke="#f59e0b" stroke-width="2.4"/>
+  <text x="515" y="244" text-anchor="middle" font-size="9.2" fill="#292524">Ote les parois par la pensee :</text>
+  <text x="515" y="258" text-anchor="middle" font-size="9.2" font-weight="700" fill="#7f1d1d">le soleil entre par-dessous, plus d'ombre.</text>
+  <text x="515" y="276" text-anchor="middle" font-size="8.6" font-style="italic" fill="#78716c">C'est la soucca elle-meme qui ne fait plus d'ombre.</text>
+</svg></div><div class="svg-cap">Le meme resultat visible -- de l&#x27;ombre -- mais deux causes opposees : le test du dal separe l&#x27;obstacle exterieur du vice interne.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרָבָא אָמַר, מֵהָכָא: ״בַּסֻּוכֹּות תֵּשְׁבוּ שִׁבְעַת יָמִים״. אָמְרָה תּוֹרָה: כָּל שִׁבְעַת הַיָּמִים צֵא מִדִּירַת קֶבַע וְשֵׁב בְּדִירַת עֲרַאי. עַד עֶשְׂרִים אַמָּה אָדָם עוֹשֶׂה דִּירָתוֹ דִּירַת עֲרַאי, לְמַעְלָה מֵעֶשְׂרִים אַמָּה — אֵין אָדָם עוֹשֶׂה דִּירָתוֹ דִּירַת עֲרַאי אֶלָּא דִּירַת קֶבַע.</div>
+            <div class="fr"><p>Et Rava dit : [on l&#x27;apprend] d&#x27;ici -- &quot;dans des souccot vous residerez sept jours&quot; (Levitique 23,42). La Tora a dit : pendant les sept jours, sors d&#x27;une demeure permanente (dirat keva) et reside dans une demeure precaire (dirat arai).</p><p>Jusqu&#x27;a vingt coudees, l&#x27;homme fait de sa demeure une demeure precaire ; au-dessus de vingt coudees, l&#x27;homme ne fait pas de sa demeure une demeure precaire mais une demeure permanente.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שִׁבְעַת יָמִים</b> סֻוכָּה שֶׁל שִׁבְעָה וְתוּ לָא דְּהַיְינוּ עֲרַאי וְדַיָּיהּ בִּמְחִיצּוֹת קַלּוֹת:</div>
+          <div class="glose-fr">Sept jours -- une soucca de sept [jours] et pas davantage, c&#x27;est-a-dire du precaire ; et des cloisons legeres lui suffisent.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְמַעְלָה מֵעֶשְׂרִים</b> צָרִיךְ לַעֲשׂוֹת יְסוֹדוֹתֶיהָ וּמְחִיצוֹתֶיהָ קִבּוּעִין שֶׁלֹּא תִּפֹּול:</div>
+          <div class="glose-fr">Au-dessus de vingt -- il faut faire ses fondations et ses cloisons permanentes pour qu&#x27;elle ne tombe pas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Troisieme derivation, la plus structurelle. Rava ne lit pas dans le verset une exigence de perception ni d'ombre, mais une <b>duree</b> : sept jours. Rachi le formule ainsi -- une soucca de sept jours et pas davantage, ce qui definit le precaire ; des cloisons legeres lui suffisent.</p><p>Le lien avec les vingt coudees est alors purement constructif : au-dela de cette hauteur, une structure ne tient plus sans fondations ni parois solides. Batir haut, c'est batir durable -- et batir durable, c'est sortir de la <b>dirat arai</b> que la Tora impose.</p><p>C'est cette lecture que le Rosh retiendra comme halakha, precisement parce qu'elle rejoint le principe general <b>soucca dirat arai beina</b>, dont Rabbi Yehouda est justement le contradicteur.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר לֵיהּ אַבַּיֵּי: אֶלָּא מֵעַתָּה, עָשָׂה מְחִיצוֹת שֶׁל בַּרְזֶל וְסִיכֵּךְ עַל גַּבָּן, הָכִי נָמֵי דְּלָא הָוֵי סֻוכָּה?</div>
+            <div class="fr"><p>Abaye lui dit : mais s&#x27;il en est ainsi, celui qui a fait des cloisons de fer et a pose le s&#x27;khakh par-dessus -- la aussi, ce ne serait donc pas une soucca ?</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Meme forme d'objection que precedemment, appliquee cette fois a Rava. Si l'exigence porte reellement sur le caractere precaire de la construction, alors une soucca dressee sur des <b>cloisons de fer</b> -- le comble du durable -- devrait etre invalide, meme basse. Or aucune opinion ne l'invalide.</p><p>L'objection vise donc le glissement possible du critere de Rava : d'une mesure de hauteur vers une exigence de fragilite materielle.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ, הָכִי קָאָמֵינָא לָךְ: עַד עֶשְׂרִים אַמָּה דְּאָדָם עוֹשֶׂה דִּירָתוֹ דִּירַת עֲרַאי, כִּי עָבֵיד לֵיהּ דִּירַת קֶבַע, נָמֵי נָפֵיק. לְמַעְלָה מֵעֶשְׂרִים אַמָּה, דְּאָדָם עוֹשֶׂה דִּירָתוֹ דִּירַת קֶבַע, כִּי עָבֵיד לֵיהּ דִּירַת עֲרַאי, נַמֵּי לָא נָפֵיק.</div>
+            <div class="fr"><p>Il lui dit : voici ce que je te dis. Jusqu&#x27;a vingt coudees, ou l&#x27;homme fait de sa demeure une demeure precaire, lorsqu&#x27;il en fait une demeure permanente, il s&#x27;acquitte aussi.</p><p>Au-dessus de vingt coudees, ou l&#x27;homme fait de sa demeure une demeure permanente, lorsqu&#x27;il en fait une demeure precaire, il ne s&#x27;acquitte pas non plus.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>עַד עֶשְׂרִים אַמָּה דְּאָדָם עוֹשֶׂה כו&#x27;</b> שַׁפִּיר דָּמֵי דְּוַדַּאי יֵשׁ בִּכְלַל קֶבַע עֲרַאי וַהֲרֵי עָשָׂה כַּתּוֹרָה וְעַל כָּרְחֲךָ לֹא הִקְפִּידָה תּוֹרָה עַל הָעֲרַאי אֶלָּא לְשֵׁם שִׁיעוּר לָתֵת לְךָ שִׁיעוּר בְּגָובְהָהּ שֶׁתְּהֵא יְכוֹלָה לַעֲמֹוד עַל יְדֵי יְתֵידוֹת עֲרַאי:</div>
+          <div class="glose-fr">Jusqu&#x27;a vingt coudees, ou l&#x27;homme fait, etc. -- cela convient, car le precaire est assurement compris dans le permanent, et il a donc agi selon la Tora. Force est de dire que la Tora n&#x27;a pas ete exigeante sur le precaire pour lui-meme, mais a titre de mesure : pour te donner une mesure de hauteur, celle a laquelle elle peut tenir au moyen de piquets precaires.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">כִּי עָבֵיד לֵיהּ דִּירַת קֶבַע שַׁפִּיר דָּמֵי. דאע&quot;ג דְּיֵשׁ לְפָרֵשׁ קְרָא בְּדִירָה שֶׁאֵינָהּ רְאוּיָה אֶלָּא לְשִׁבְעָה לִמְעוּטֵי קֶבַע מַשְׁמַע לֵיהּ קְרָא דַּאֲתָא לְשִׁיעוּרָא לְאוֹרוֹיֵי לָךְ מִדַּת גָּובְהָהּ כֻּלּוֹ&#x27; בְּסֻוכָּה שֶׁאֶפְשָׁר לַעֲשׂוֹת עֲרַאי וא&quot;ת וְכֵיוָן דְּלָא חָייְשִׁינַן אֶלָּא שֶׁתְּהֵא רְאוּיָה לַעֲשׂוֹתָהּ עֲרַאי ואע&quot;פ שֶׁעוֹשֶׂה אוֹתָהּ קֶבַע א&quot;כ אַמַּאי אָמַר (תַּעֲנִית דַּף ב.) גְּשָׁמִים סִימַן קְלָלָה בֶּחָג וַהֲלֹא יָכוֹל לִקְבֹּועַ הַנְּסָרִים בְּמַסְמְרִים שֶׁלֹּא יֵרְדוּ גְּשָׁמִים בַּסֻּוכָּה וַאֲפִילּוּ תִּימְצֵי לוֹמַר דְּאָסוּר מִשּׁוּם גְּזֵרַת תִּקְרָה כִּי הֵיכִי דְּאָמַר לְקַמָּן בְּפִירְקִין (סֻוכָּה דַּף יד.) גַּבֵּי פְּלוּגְתָּא דר&quot;מ וְרַבִּי יְהוּדָה דִּמְסַכְּכִין בִּנְסָרִין דְּאִי מַכְשֶׁרֶת בְּהוּ אָתֵי לְמֵימַר מַה לִי לְסַכֵּךְ בָּזֶה מַה לִי לֵישֵׁב תַּחַת תִּקְרַת בֵּיתִי וּבֵיתוֹ וַדַּאי פָּסוּל מִדְּאוֹרַיְיתָּא דְּסֻוכָּה אֲמַר רַחֲמָנָא וְלֹא בֵּיתוֹ שֶׁל כָּל יְמוֹת הַשָּׁנָה מ&quot;מ כֵּיוָן דְּלָא אָסוּר אֶלָּא מִדְּרַבָּנָן לָא שַׁיְיכָא לְמֵימַר שֶׁהַגְּשָׁמִים סִימַן קְלָלָה וְי&quot;ל דִּנְהִי דְּלָא חָיְישִׁינַן בַּדְּפָנוֹת אִי עֲבִיד לְהוּ קֶבַע מ&quot;מ בִּסְכָכָהּ שֶׁעִיקַּר הַסֻּוכָּה עַל שֵׁם הַסְּכָךְ לָא מִיתַּכְשְׁרָה עַד דַּעֲבִיד לָהּ עֲרַאי ומה&quot;ט נָמֵי נִיחָא לְרַבִּי זֵירָא דְּדָרֵישׁ מְדַכָּתִי&#x27; וְסֻוכָּה תִּהְיֶה לְצֵל הָא כִּתֵּי&#x27; נָמֵי מִזֶּרֶם וּמִמָּטָר וְנִיבְעֵי נָמֵי שֶׁלֹּא יֵרְדוּ גְּשָׁמִים לְתוֹכָהּ אֶלָּא וַדַּאי מִשּׁוּם דְּבָעֵינַן סְכָכָה עֲרַאי וא&quot;כ הֲוָה לֵיהּ קֶבַע:</div>
+          <div class="glose-fr">Lorsqu&#x27;il en fait une demeure permanente, cela convient. -- Car bien qu&#x27;on puisse interpreter le verset comme parlant d&#x27;une demeure qui ne convient que pour sept jours, a l&#x27;exclusion du permanent, il comprend que le verset vient donner une mesure, pour t&#x27;enseigner la mesure de sa hauteur, c&#x27;est-a-dire une soucca qu&#x27;il est possible de faire precaire. Et si tu dis : puisque nous n&#x27;exigeons que la possibilite de la faire precaire, meme s&#x27;il la fait permanente, pourquoi donc est-il dit (Taanit 2a) que la pluie est un signe de malediction pendant la fete ? Il pourrait pourtant fixer les planches avec des clous, en sorte que la pluie ne tombe pas dans la soucca ! Et meme si tu venais a dire que cela est interdit a cause du decret [d&#x27;assimilation] au plafond -- comme il est dit plus loin dans notre chapitre (Soucca 14a) a propos de la controverse de Rabbi Meir et de Rabbi Yehouda sur le fait de couvrir avec des planches : car si tu les validais, on en viendrait a dire, quelle difference entre couvrir avec cela et m&#x27;asseoir sous le plafond de ma maison ? -- et sa maison est assurement passoul selon la Tora, car le Misericordieux a dit une soucca et non sa maison de toute l&#x27;annee ; malgre tout, puisque ce n&#x27;est interdit que rabbiniquement, il n&#x27;y a pas lieu de dire que la pluie serait un signe de malediction. Et l&#x27;on peut repondre : quand bien meme nous ne nous soucions pas des parois s&#x27;il les fait permanentes, en revanche pour son s&#x27;khakh -- puisque l&#x27;essentiel de la soucca tient a son nom meme de s&#x27;khakh -- elle n&#x27;est pas rendue kachere tant qu&#x27;il ne le fait pas precaire. Et pour cette meme raison se comprend aussi [la position] de Rabbi Zeira, qui tire sa dracha de ce qu&#x27;il est ecrit et il y aura une soucca pour l&#x27;ombre : or il est ecrit aussi contre l&#x27;averse et contre la pluie -- devrions-nous exiger que la pluie n&#x27;y tombe pas ? Mais assurement [non], parce que nous avons besoin que son s&#x27;khakh soit precaire -- et [s&#x27;il arretait la pluie] il serait des lors permanent.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rava requalifie son propre critere. Le verset ne prescrit pas un mode de construction mais fixe une <b>mesure</b> (chiour) : la hauteur a laquelle le precaire est encore la maniere ordinaire de batir. Rachi le dit nettement : la Tora n'a pas exige le precaire pour lui-meme, mais pour te donner une mesure de hauteur -- celle a laquelle une structure peut tenir sur de simples piquets.</p><p>D'ou les deux consequences, symetriques et toutes deux contre-intuitives. En dessous de vingt coudees, batir en dur reste valable, car <b>le permanent contient le precaire</b>. Au-dessus, batir leger ne sauve rien : la mesure est depassee, quelle que soit la facon de faire.</p><p>Tossefot poursuit avec une question celebre : si la solidite des parois est indifferente, pourquoi la pluie pendant la fete est-elle un signe de malediction (Taanit 2a) ? On pourrait clouer des planches et rester au sec. Sa reponse trace la limite exacte de la concession de Rava : elle vaut pour les <b>parois</b>, jamais pour le <b>s'khakh</b> -- c'est de lui que la soucca tire son nom, et lui doit rester precaire.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 316" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="316" fill="#fffdf8"/>
+  <text x="350" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">La reponse de Rava : la hauteur est une mesure, pas un mode de construction</text>
+  <text x="350" y="40" text-anchor="middle" font-size="9.4" fill="#57534e">Ce que la Tora fixe, c'est la hauteur a laquelle une demeure precaire est encore possible -- non la maniere de batir.</text>
+
+  <rect x="180" y="56" width="230" height="34" rx="6" fill="#f5f5f4" stroke="#d6d3d1"/>
+  <text x="295" y="78" text-anchor="middle" font-size="10" font-weight="700" fill="#44403c">Batie en precaire (arai)</text>
+  <rect x="420" y="56" width="230" height="34" rx="6" fill="#f5f5f4" stroke="#d6d3d1"/>
+  <text x="535" y="78" text-anchor="middle" font-size="10" font-weight="700" fill="#44403c">Batie en dur (cloisons de fer)</text>
+
+  <rect x="30" y="98" width="140" height="94" rx="6" fill="#f5f5f4" stroke="#d6d3d1"/>
+  <text x="100" y="140" text-anchor="middle" font-size="10" font-weight="700" fill="#44403c">Jusqu'a</text>
+  <text x="100" y="156" text-anchor="middle" font-size="10" font-weight="700" fill="#44403c">20 coudees</text>
+  <rect x="30" y="200" width="140" height="94" rx="6" fill="#f5f5f4" stroke="#d6d3d1"/>
+  <text x="100" y="242" text-anchor="middle" font-size="10" font-weight="700" fill="#44403c">Au-dessus de</text>
+  <text x="100" y="258" text-anchor="middle" font-size="10" font-weight="700" fill="#44403c">20 coudees</text>
+
+  <rect x="180" y="98" width="230" height="94" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <text x="295" y="128" text-anchor="middle" font-size="11.6" font-weight="700" fill="#14532d">Il s'acquitte</text>
+  <text x="295" y="150" text-anchor="middle" font-size="9" fill="#292524">Cas ordinaire : la hauteur permet</text>
+  <text x="295" y="163" text-anchor="middle" font-size="9" fill="#292524">le precaire et il l'a fait precaire.</text>
+
+  <rect x="420" y="98" width="230" height="94" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <text x="535" y="122" text-anchor="middle" font-size="11.6" font-weight="700" fill="#14532d">Il s'acquitte aussi</text>
+  <text x="535" y="144" text-anchor="middle" font-size="9" fill="#292524">Le permanent contient le precaire :</text>
+  <text x="535" y="157" text-anchor="middle" font-size="9" fill="#292524">a cette hauteur elle pouvait tenir</text>
+  <text x="535" y="170" text-anchor="middle" font-size="9" fill="#292524">avec de simples piquets.</text>
+
+  <rect x="180" y="200" width="230" height="94" rx="6" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+  <text x="295" y="224" text-anchor="middle" font-size="11.6" font-weight="700" fill="#7f1d1d">Il ne s'acquitte pas</text>
+  <text x="295" y="246" text-anchor="middle" font-size="9" fill="#292524">A cette hauteur, le precaire n'est</text>
+  <text x="295" y="259" text-anchor="middle" font-size="9" fill="#292524">plus la maniere de batir des hommes :</text>
+  <text x="295" y="272" text-anchor="middle" font-size="9" fill="#292524">la mesure elle-meme est depassee.</text>
+
+  <rect x="420" y="200" width="230" height="94" rx="6" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+  <text x="535" y="234" text-anchor="middle" font-size="11.6" font-weight="700" fill="#7f1d1d">Il ne s'acquitte pas</text>
+  <text x="535" y="256" text-anchor="middle" font-size="9" fill="#292524">Passoul dans tous les cas.</text>
+</svg></div><div class="svg-cap">Les quatre combinaisons de hauteur et de mode de construction : seule la hauteur decide, ce que la reponse de Rava rend explicite.</div></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><span class="nav-b off">&lsaquo;</span><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Sukkah_2b.html">Sukkah 2b &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

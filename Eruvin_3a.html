@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eruvin 3a — L&#x27;amaltera, la kora au-dessus de vingt amot et le parallele avec la soukka</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Eruvin 3a — L&#x27;amaltera, la kora au-dessus de vingt amot et le parallele avec la soukka</h1>
+    <div class="ref">Eruvin 3a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Eruvin_2b.html">&lsaquo; Eruvin 2b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Eruvin_3b.html">Eruvin 3b &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> La Guemara poursuit son objection contre Rav : si les Sages tirent la hauteur maximale du mavoy (20 amot) du petach de l&#x27;heikhal, une amaltera (corniche decorative) ne devrait pas permettre de depasser vingt amot, puisque l&#x27;heikhal avait des amalteraot et ne mesurait pourtant que vingt. Or Rabbi Ile&#x27;a rapporte au nom de Rav que l&#x27;amaltera dispense de diminuer.</p><p>Rav Yosef repond que c&#x27;est une beraita ; Abaye objecte qu&#x27;elle contredit tout de meme Rav, et l&#x27;on repond qu&#x27;il s&#x27;agit d&#x27;une discussion de Tanaim. Rav Nahman bar Yitshak explique autrement : la kora sert de hekker (signe visible), et l&#x27;heikhal n&#x27;est qu&#x27;un moyen mnemotechnique.</p><p>On definit ensuite l&#x27;amaltera (nids sculptes ou poutres de cedre). La seconde partie traite d&#x27;une kora ou d&#x27;un skhakh situes en partie sous vingt amot et en partie au-dessus : Rabba distingue mavoy et soukka, selon deux versions opposees, avec les explications de Rava de Parzakya et de Ravina.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="760" height="470" fill="#fbfaf7"/>
+<text x="380" y="24" text-anchor="middle" font-family="Helvetica,Arial" font-size="15" font-weight="bold" fill="#2b2b2b">L'objection de l'amaltera contre Rav</text>
+<rect x="130" y="40" width="500" height="50" rx="6" fill="#ede7dc" stroke="#8a7b63"/>
+<text x="380" y="60" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Rav : les Sages apprennent de l'heikhal (20 amot).</text>
+<text x="380" y="78" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Or l'heikhal avait des amalteraot et ne depassait pas 20.</text>
+<line x1="380" y1="90" x2="380" y2="110" stroke="#555" stroke-width="1.5"/>
+<rect x="130" y="110" width="500" height="50" rx="6" fill="#f6e3e0" stroke="#a35a4f"/>
+<text x="380" y="130" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Donc chez Rav, l'amaltera ne devrait rien changer.</text>
+<text x="380" y="148" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Mais R. Ile'a au nom de Rav : avec amaltera, pas besoin de diminuer.</text>
+<line x1="380" y1="160" x2="380" y2="180" stroke="#555" stroke-width="1.5"/>
+<rect x="130" y="180" width="500" height="40" rx="6" fill="#eef4ee" stroke="#6f8a6f"/>
+<text x="380" y="205" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Rav Yosef : la regle de l'amaltera vient d'une beraita.</text>
+<line x1="380" y1="220" x2="380" y2="240" stroke="#555" stroke-width="1.5"/>
+<rect x="130" y="240" width="500" height="40" rx="6" fill="#f6e3e0" stroke="#a35a4f"/>
+<text x="380" y="265" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Abaye : meme une beraita contredit Rav.</text>
+<line x1="250" y1="280" x2="190" y2="310" stroke="#555" stroke-width="1.5"/>
+<line x1="510" y1="280" x2="570" y2="310" stroke="#555" stroke-width="1.5"/>
+<rect x="20" y="310" width="340" height="140" rx="6" fill="#eef4ee" stroke="#6f8a6f"/>
+<text x="190" y="332" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Reponse de Rav</text>
+<text x="190" y="356" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">Les deux beraitot se contredisent</text>
+<text x="190" y="374" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">de toute facon : c'est une</text>
+<text x="190" y="392" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">discussion de Tanaim.</text>
+<text x="190" y="416" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">Rav suit le Tana de l'heikhal ;</text>
+<text x="190" y="434" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">l'autre Tana valide l'amaltera.</text>
+<rect x="400" y="310" width="340" height="140" rx="6" fill="#e6edf5" stroke="#5a7896"/>
+<text x="570" y="332" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Rav Nahman bar Yitshak</text>
+<text x="570" y="356" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">Sans Rav, pas de contradiction :</text>
+<text x="570" y="374" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">la kora sert de hekker (signe vu).</text>
+<text x="570" y="392" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">L'amaltera attire le regard.</text>
+<text x="570" y="416" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">L'heikhal n'est qu'un simana</text>
+<text x="570" y="434" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">(aide-memoire pour le chiffre 20).</text>
+</svg></div>
+          <figcaption>L&#x27;objection de l&#x27;amaltera contre Rav et les deux manieres de la resoudre.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="760" height="360" fill="#fbfaf7"/>
+<text x="380" y="24" text-anchor="middle" font-family="Helvetica,Arial" font-size="15" font-weight="bold" fill="#2b2b2b">Kora ou skhakh en partie au-dessus de 20 amot : deux versions de Rabba</text>
+<rect x="20" y="40" width="160" height="36" fill="#ede7dc" stroke="#8a7b63"/>
+<rect x="180" y="40" width="280" height="36" fill="#ede7dc" stroke="#8a7b63"/>
+<rect x="460" y="40" width="280" height="36" fill="#ede7dc" stroke="#8a7b63"/>
+<text x="100" y="63" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Explication</text>
+<text x="320" y="63" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Version 1 : mavoy kasher, soukka passoul</text>
+<text x="600" y="63" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Version 2 : mavoy passoul, soukka kasher</text>
+<rect x="20" y="76" width="160" height="90" fill="#f3f0ea" stroke="#8a7b63"/>
+<rect x="180" y="76" width="280" height="90" fill="#eef4ee" stroke="#6f8a6f"/>
+<rect x="460" y="76" width="280" height="90" fill="#e6edf5" stroke="#5a7896"/>
+<text x="100" y="118" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Kalouch</text>
+<text x="100" y="136" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">(amincir)</text>
+<text x="320" y="100" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">Mavoy : on amincit la kora.</text>
+<text x="320" y="118" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">Soukka : amincie, plus de soleil que d'ombre.</text>
+<text x="320" y="142" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#a35a4f">Rejete : la kora serait emportee par le vent ;</text>
+<text x="320" y="158" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#a35a4f">"broches de metal" valent pour les deux.</text>
+<text x="600" y="100" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">Soukka : on amincit le skhakh.</text>
+<text x="600" y="118" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">Mavoy : kora emportee par le vent.</text>
+<text x="600" y="142" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#a35a4f">Rejete : meme argument inverse,</text>
+<text x="600" y="158" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#a35a4f">"ombre plus que soleil" vaut pour les deux.</text>
+<rect x="20" y="166" width="160" height="90" fill="#f3f0ea" stroke="#8a7b63"/>
+<rect x="180" y="166" width="280" height="90" fill="#eef4ee" stroke="#6f8a6f"/>
+<rect x="460" y="166" width="280" height="90" fill="#e6edf5" stroke="#5a7896"/>
+<text x="100" y="208" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Rava</text>
+<text x="100" y="226" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">de Parzakya</text>
+<text x="320" y="196" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">Soukka d'un seul : il ne s'en souviendra pas.</text>
+<text x="320" y="216" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">Mavoy de plusieurs : ils se le</text>
+<text x="320" y="234" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">rappellent l'un a l'autre.</text>
+<text x="600" y="196" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">Soukka d'un seul : il s'en charge.</text>
+<text x="600" y="216" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">Mavoy de plusieurs : chacun compte sur l'autre.</text>
+<text x="600" y="234" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">"Marmite d'associes : ni chaude ni froide"</text>
+<rect x="20" y="256" width="160" height="70" fill="#f3f0ea" stroke="#8a7b63"/>
+<rect x="180" y="256" width="280" height="70" fill="#eef4ee" stroke="#6f8a6f"/>
+<rect x="460" y="256" width="280" height="70" fill="#e6edf5" stroke="#5a7896"/>
+<text x="100" y="296" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Ravina</text>
+<text x="320" y="284" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">Soukka de la Torah : on est plus strict.</text>
+<text x="320" y="304" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">Mavoy rabbinique : pas de rigueur.</text>
+<text x="600" y="284" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">Soukka de la Torah : pas besoin de renfort.</text>
+<text x="600" y="304" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">Mavoy rabbinique : besoin de renfort.</text>
+<text x="380" y="348" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Conclusion : Rabba bar Rav Oula, les deux passoul ; Rava, les deux kasher.</text>
+</svg></div>
+          <figcaption>Les deux versions de Rabba sur la kora ou le skhakh a cheval sur la limite des 20 amot, avec les trois explications.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לא תיהני ליה אמלתרא, דהא היכל אמלתרא הויא ליה, ואפילו הכי — עשרים אמה הוא דגבוה, דתנן: חמש אמלתראות של מילה היו על גביו, זו למעלה מזו, וזו למעלה מזו.</div>
+            <div class="fr"><p>(Selon Rav), l&#x27;amaltera ne devrait pas etre efficace, car l&#x27;heikhal avait une amaltera et, malgre cela, il n&#x27;etait haut que de vingt amot ; comme nous l&#x27;avons appris (dans une michna) : cinq amalteraot de bois de mila etaient au-dessus de lui, l&#x27;une au-dessus de l&#x27;autre, et l&#x27;autre encore au-dessus de celle-ci.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לא תיהני ליה אמלתרא</b> לאכשורי גובהו יותר מכ&#x27; לקמן מפרש מאי אמלתרא והיכא תני דמהניא:</div>
+          <div class="glose-fr">Pour rendre valable (le mavoy) dont la hauteur depasse vingt. Plus loin on explique ce qu&#x27;est une amaltera et ou l&#x27;on enseigne qu&#x27;elle est efficace.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>של מילה</b> עץ שגדילין בו מילין והם עפצים ובלעז גלא&quot;ש:</div>
+          <div class="glose-fr">Un bois sur lequel poussent des milin, ce sont des noix de galle ; en langue vernaculaire, glans.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Suite de l'objection contre Rav. Rav a dit que les Sages tirent la hauteur maximale du mavoy (<b>20 amot</b>) du <b>petach de l'heikhal</b>. Or l'heikhal possedait des <b>amalteraot</b> (corniches ou ornements en saillie au-dessus de l'entree) et n'avait pourtant que vingt amot. Une amaltera ne devrait donc pas permettre, chez les Sages selon Rav, une kora placee plus haut que vingt.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">והאי מאי תיובתא? דילמא כי תניא ההיא דאמלתראות, באולם תניא?</div>
+            <div class="fr"><p>Et quelle refutation est-ce la ? Peut-etre, quand on a enseigne cette (michna) des amalteraot, on l&#x27;a enseignee a propos de l&#x27;oulam ?</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>L'<b>oulam</b> (vestibule) avait une entree de 40 amot. Si les amalteraot etaient sur l'oulam, l'heikhal n'en avait peut-etre pas, et l'objection tombe.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">והאי מאי קושיא? דילמא תבנית היכל כתבנית אולם?</div>
+            <div class="fr"><p>Et quelle difficulte est-ce la ? Peut-etre la forme de l&#x27;heikhal etait comme la forme de l&#x27;oulam ?</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>On repond qu'il est plausible que l'heikhal ait ete construit sur le meme modele que l'oulam, avec des amalteraot lui aussi. L'objection demeure donc possible, et la Guemara en donne maintenant la vraie force au segment suivant.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אלמה אמר רבי אילעא אמר רב: רחבה ארבעה, אף על פי שאינה בריאה. ואם יש לה אמלתרא אפילו גבוהה יותר מעשרים אמה אינו צריך למעט.</div>
+            <div class="fr"><p>Pourquoi donc Rabbi Ile&#x27;a a-t-il dit au nom de Rav : (si la kora est) large de quatre (tefahim), (elle est valable) meme si elle n&#x27;est pas solide ; et si elle a une amaltera, meme si elle est haute de plus de vingt amot, on n&#x27;a pas besoin de diminuer ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אלמה אמר ר&#x27; אילעא כו&#x27;</b> השתא קא מסיק לפירכיה דאשכחן דמהניא אמלתרא אליבא דרב ומעיקרא לא שבקיה לאסוקי למלתיה עד דסתר ליה לתיובתא:</div>
+          <div class="glose-fr">Maintenant il conclut son objection : nous trouvons que l&#x27;amaltera est efficace selon Rav. Au debut on ne l&#x27;a pas laisse achever son propos jusqu&#x27;a ce qu&#x27;il ait repousse la refutation.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>רחבה ד&#x27;</b> אם היתה קורה רחבה ד&#x27; טפחים אע&quot;פ שהיא דקה ואינה חזקה לקבל אריח כשירה והא דתנן במתניתין (לקמן עירובין ד&#x27; יג:) בריאה כדי לקבל אריח כשאינה רחבה ד&#x27; טפחים קאמר:</div>
+          <div class="glose-fr">Si la kora etait large de quatre tefahim, bien qu&#x27;elle soit mince et pas assez forte pour recevoir un ariah (demi-brique), elle est valable. Et ce que nous avons appris dans la michna (plus loin, Eruvin 13b) « solide pour recevoir un ariah », il le dit pour le cas ou elle n&#x27;est pas large de quatre tefahim.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ואם יש לה אמלתרא כו&#x27;</b> תרתי מילי קאמר רב ולקולא:</div>
+          <div class="glose-fr">Rav dit deux choses, et toutes deux dans le sens de la souplesse.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Voici le coeur de l'objection : Rav lui-meme reconnaitrait qu'une <b>amaltera</b> permet de depasser vingt amot. Si les Sages apprenaient vraiment de l'heikhal, qui avait des amalteraot et ne depassait pas vingt, cette regle serait impossible. Rav contredit donc Rav.</p><p>Deux leniences : une kora <b>large de 4 tefahim</b> n'a pas besoin d'etre <b>bria</b> (assez solide pour porter un <b>ariah</b>, une demi-brique) ; et l'amaltera dispense de <b>diminuer</b> la hauteur.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר רב יוסף: אמלתרא מתניתא היא, מאן קתני לה?</div>
+            <div class="fr"><p>Rav Yosef a dit : l&#x27;amaltera est une beraita. Qui l&#x27;enseigne ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אמר רב יוסף</b> הא אמלתרא דאייתוה משמיה דרב לא רב אמרה דתיקשי דרב אדרב אלא מתנית&#x27; היא:</div>
+          <div class="glose-fr">Cette amaltera qu&#x27;on a rapportee au nom de Rav, ce n&#x27;est pas Rav qui l&#x27;a dite, de sorte que Rav contredirait Rav ; c&#x27;est une beraita.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Yosef detache la regle de l'amaltera de Rav : c'est une <b>beraita</b>, et Rav n'est pas tenu de la suivre. La question « qui l'enseigne ? » sous-entend qu'elle n'est pas d'une autorite certaine.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר אביי: והא חמא בריה דרבה בר אבוה קתני לה, ותיהוי אמלתרא מתניתא ותיקשי לרב!</div>
+            <div class="fr"><p>Abaye a dit : mais c&#x27;est Hama, fils de Rabba bar Avouh, qui l&#x27;enseigne ! Et meme si l&#x27;amaltera est une beraita, qu&#x27;elle contredise Rav !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ותיקשי לרב</b> דהא חזינן הכא דלא גמרי רבנן מהיכל מדתקני דאמלתרא מהניא:</div>
+          <div class="glose-fr">Car nous voyons ici que les Sages n&#x27;apprennent pas de l&#x27;heikhal, puisqu&#x27;ils enseignent que l&#x27;amaltera est efficace.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Abaye repond que cette beraita est fiable (Hama l'enseigne). Une beraita qui valide l'amaltera montre que les Sages <b>n'apprennent pas de l'heikhal</b> : elle contredit l'explication de Rav.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר לך רב: דל אנא מהכא, מתנייתא מי לא קשיין אהדדי? אלא מאי אית לך למימר — תנאי היא, לדידי נמי תנאי היא.</div>
+            <div class="fr"><p>Rav te dira : retire-moi d&#x27;ici ; les beraitot ne se contredisent-elles pas l&#x27;une l&#x27;autre ? Qu&#x27;as-tu a dire, sinon que c&#x27;est une discussion de Tanaim ?</p><p>Pour moi aussi, c&#x27;est une discussion de Tanaim.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דל אנא מהכא</b> הרימני מיכן כאילו שתקתי ולא אמרתי דבר זה:</div>
+          <div class="glose-fr">Enleve-moi d&#x27;ici, comme si je m&#x27;etais tu et n&#x27;avais pas dit cette chose.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מתנייתא מי לא קשיין אהדדי</b> דהא תניא לעיל בהדיא מבוי שהוא גבוה מכ&#x27; יותר מפתחו של היכל אלמא רבנן מהתם גמרי:</div>
+          <div class="glose-fr">Car on a enseigne plus haut explicitement « un mavoy plus haut que vingt, plus que le petach de l&#x27;heikhal » ; les Sages apprennent donc de la.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>תנאי היא</b> תנא דלעיל דסבירא ליה דרבנן מהיכל גמרי ואמלתרא לא מהניא והאי תנא דאמלתרא סבר לאו מהיכל גמרי:</div>
+          <div class="glose-fr">Le Tana cite plus haut tient que les Sages apprennent de l&#x27;heikhal et que l&#x27;amaltera n&#x27;est pas efficace ; et ce Tana de l&#x27;amaltera tient qu&#x27;ils n&#x27;apprennent pas de l&#x27;heikhal.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לדידי נמי תנאי היא</b> ואנא כתנא דלעיל אמרי:</div>
+          <div class="glose-fr">Et moi je parle selon le Tana cite plus haut.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav se defend : la contradiction existe entre les deux <b>beraitot</b> elles-memes, independamment de lui. L'une parle de « plus que le petach de l'heikhal », l'autre valide l'amaltera. Il faut donc dire que ce sont deux <b>Tanaim</b> en desaccord, et Rav suit le premier.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רב נחמן בר יצחק אמר: בלא רב — מתנייתא אהדדי לא קשיין: לרבנן קורה טעמא מאי — משום היכרא, והאי דקתני ״יתר מפתחו של היכל״ — סימנא בעלמא.</div>
+            <div class="fr"><p>Rav Nahman bar Yitshak a dit : sans Rav, les beraitot ne se contredisent pas. Pour les Sages, quelle est la raison de la kora ?</p><p>A cause du hekker (signe visible). Et ce qu&#x27;on enseigne « plus que le petach de l&#x27;heikhal » n&#x27;est qu&#x27;un simple moyen mnemotechnique.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(5)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בלא רב</b> אי לא הוה מפרש רב למתניתא קמייתא ויליף מינה דרבנן מהיכל גמרי:</div>
+          <div class="glose-fr">Si Rav n&#x27;avait pas explique la premiere beraita et n&#x27;en avait pas tire que les Sages apprennent de l&#x27;heikhal.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מתנייתא אהדדי לא קשיין</b> דבין לההיא מתניתין ובין להא מתניתין דאמלתרא:</div>
+          <div class="glose-fr">Ni cette beraita-la, ni celle de l&#x27;amaltera.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>קורה לרבנן טעמא מאי</b> בעו תוך כ&#x27; אמה:</div>
+          <div class="glose-fr">Ils exigent (qu&#x27;elle soit) a moins de vingt amot.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>משום היכר</b> דליחזו אינשי ולידעו דתקנתא עבוד ולא ליתי לאיחלופי ברה&quot;ר ומשום הכי מהניא אמלתרא דכיון דמיסתכלי בה אינשי אפילו למעלה מכ&#x27; אמה איכא היכרא:</div>
+          <div class="glose-fr">Pour que les gens la voient et sachent qu&#x27;on a fait une reparation (tikkoun), et qu&#x27;on ne vienne pas a confondre avec le domaine public. C&#x27;est pourquoi l&#x27;amaltera est efficace : puisque les gens la regardent, meme au-dessus de vingt amot il y a un hekker.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>והא דקתני</b> במתניתא קמייתא יותר מפתחו של היכל לאו דגמרי מהתם אלא סימנא בעלמא נקט שלא תחליף גירסא דעשרים ותאמר למעלה מל&#x27; או מארבעים יהא פתח היכל סימן בידך:</div>
+          <div class="glose-fr">Dans la premiere beraita, « plus que le petach de l&#x27;heikhal » ne veut pas dire qu&#x27;on apprend de la ; il a seulement pris un signe mnemotechnique, pour que tu ne changes pas la lecture « vingt » et ne dises pas « au-dessus de trente ou de quarante » : que le petach de l&#x27;heikhal soit un signe entre tes mains.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ורב נחמן בר יצחק אי סבירא ליה הא דרבה כו&#x27;</b> לרבה גופיה הוה מצי למיפרך דאית ליה בפרקין (ד&#x27; יב:) דקורה משום היכרא אלא משום דרב נחמן מפרש בהדיא דפליגי בהיכר פריך למה להו לאיפלוגי בתרתי:</div>
+          <div class="glose-fr">Il aurait pu objecter a Rabba lui-meme, qui tient dans notre chapitre (12b) que la kora sert de hekker. Mais parce que Rav Nahman bar Yitshak explique expressement qu&#x27;ils divergent sur le hekker, il objecte : pourquoi devraient-ils diverger sur deux cas ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle approche : les Sages n'apprennent rien de l'heikhal. La kora a pour fonction le <b>hekker</b> : un signe visible qui rappelle que le mavoy n'est pas le domaine public. Au-dela de vingt amot, on ne la remarque plus ; l'<b>amaltera</b>, elle, attire le regard. Le chiffre de l'heikhal (20) sert seulement de <b>simana</b>, un aide-memoire contre une erreur de transmission.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ורב נחמן בר יצחק, הניחא אי לא סבירא ליה הא דרבה, אלא אי סבירא ליה הא דרבה, דאמר רבה, כתיב: ״למען ידעו דורותיכם כי בסכות הושבתי״, עד עשרים אמה אדם יודע שדר בסוכה, למעלה מעשרים אמה אין אדם יודע, משום דלא שלטא ביה עינא.</div>
+            <div class="fr"><p>Et Rav Nahman bar Yitshak : c&#x27;est bien s&#x27;il ne tient pas cet enseignement de Rabba. Mais s&#x27;il tient cet enseignement de Rabba ?</p><p>Car Rabba a dit : il est ecrit « Afin que vos generations sachent que Je les ai fait resider dans des soukkot » : jusqu&#x27;a vingt amot, l&#x27;homme sait qu&#x27;il demeure dans une soukka ; au-dessus de vingt amot, l&#x27;homme ne le sait pas, parce que l&#x27;oeil ne l&#x27;atteint pas.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אי סבירא ליה הא דרבה</b> דטעמייהו דרבנן בסוכה נמי משום היכר:</div>
+          <div class="glose-fr">Que la raison des Sages pour la soukka aussi est le hekker.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabba (Soukka 2a) explique l'invalidite d'une soukka de plus de vingt amot par le verset Vayikra 23:43 : l'oeil ne <b>domine</b> pas (<b>la chalta bei eina</b>) un skhakh place si haut. La raison est donc aussi la visibilite.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אלמא גבי סוכה נמי בהיכרא פליגי, איפלוגי בתרתי למה לי?</div>
+            <div class="fr"><p>Il en ressort que pour la soukka aussi ils divergent sur le hekker. Pourquoi ai-je besoin qu&#x27;ils divergent sur deux cas ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>למה להו</b> לרבנן ולר&#x27; יהודה לפלוגי בתרתי:</div>
+          <div class="glose-fr">Pour les Sages et Rabbi Yehouda, (pourquoi) diverger sur deux cas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Les Sages et Rabbi Yehouda divergent deja sur la soukka au-dessus de vingt. Si leur discussion sur le mavoy porte sur le meme principe (le hekker), elle serait redondante.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">צריכא, דאי אשמעינן גבי סוכה — בהא קאמר רבי יהודה כיון דלישיבה עבידא, שלטא ביה עינא. אבל מבוי, דלהילוך עביד — אימא מודה להו לרבנן. ואי אשמעינן בהא — בהא קאמרי רבנן, אבל בהך אימא מודו ליה לרבי יהודה. צריכא.</div>
+            <div class="fr"><p>C&#x27;est necessaire. Car si on nous l&#x27;avait appris pour la soukka : dans ce cas Rabbi Yehouda dit (qu&#x27;elle est valable), puisqu&#x27;elle est faite pour y habiter, l&#x27;oeil l&#x27;atteint ; mais le mavoy, qui est fait pour y passer, dis qu&#x27;il reconnait (la position) des Sages.</p><p>Et si on nous l&#x27;avait appris dans ce cas-ci : dans ce cas les Sages le disent, mais dans l&#x27;autre, dis qu&#x27;ils reconnaissent (la position) de Rabbi Yehouda. C&#x27;est necessaire.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מבוי דלהילוך עביד</b> כלומר המהלך אינו מביט למעלה:</div>
+          <div class="glose-fr">C&#x27;est-a-dire : celui qui marche ne regarde pas vers le haut.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Structure classique de <b>tserikha</b> (les deux cas sont necessaires). La soukka sert a <b>demeurer</b> : on finit par lever les yeux. Le mavoy sert a <b>passer</b> : on ne regarde pas en haut. Chaque cas pourrait donc donner une conclusion differente, d'ou la necessite des deux discussions.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מאי אמלתרא? רב חמא בריה דרבה בר אבוה אמר: קיני. כי אתא רב דימי אמר, אמרי במערבא: פסקי דארזא.</div>
+            <div class="fr"><p>Qu&#x27;est-ce que l&#x27;amaltera ? Rav Hama, fils de Rabba bar Avouh, a dit : des kinei (nids).</p><p>Quand Rav Dimi est venu, il a dit : on dit en Occident : des pisqei de-arza (troncons de cedre).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>קיני</b> כגון קיני עופות היו בולטין מתחת האולם למעלה (מל&#x27;) מן הפתח:</div>
+          <div class="glose-fr">Comme des nids d&#x27;oiseaux, qui faisaient saillie sous l&#x27;oulam, au-dessus de l&#x27;entree.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>פסקי דארזא</b> כלונסות של ארז ארוכין תחובין בכותל ואיידי דנפיש משכיה אורך דידהו חזו להו אינשי ואיכא היכרא:</div>
+          <div class="glose-fr">De longues perches de cedre fichees dans le mur ; et comme leur longueur est grande, les gens les voient et il y a un hekker.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deux definitions : <b>kinei</b>, des sculptures en forme de nids d'oiseaux ; ou <b>pisqei de-arza</b>, des poutres de cedre. Dans les deux cas, on cherche un objet qui attire le regard au-dessus de vingt amot. L'<b>Occident</b> (Maarava) designe la terre d'Israel.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="640" height="220" fill="#fbfaf7"/>
+<text x="320" y="22" text-anchor="middle" font-family="Helvetica,Arial" font-size="14" font-weight="bold" fill="#2b2b2b">Qu'est-ce que l'amaltera ?</text>
+<rect x="30" y="40" width="270" height="120" rx="6" fill="#eef4ee" stroke="#6f8a6f"/>
+<text x="165" y="62" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Rav Hama : kinei (nids)</text>
+<text x="165" y="86" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">Sculptures en forme de nids d'oiseaux</text>
+<text x="165" y="104" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">Objet etonnant : on le regarde</text>
+<text x="165" y="130" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#a35a4f">Poutres de cedre : non</text>
+<rect x="340" y="40" width="270" height="120" rx="6" fill="#e6edf5" stroke="#5a7896"/>
+<text x="475" y="62" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Occident : pisqei de-arza</text>
+<text x="475" y="86" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">Longues poutres de cedre</text>
+<text x="475" y="104" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">Objet de valeur : on en parle</text>
+<text x="475" y="130" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6f8a6f">A plus forte raison les nids</text>
+<text x="320" y="195" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Critere commun : le hekker, le regard est attire au-dessus de 20 amot</text>
+</svg></div><div class="svg-cap">Les deux definitions de l&#x27;amaltera et leur rapport de kal va-homer.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מאן דאמר פסקי דארזא, כל שכן קיני. מאן דאמר קיני, אבל פסקי דארזא לא.</div>
+            <div class="fr"><p>Celui qui dit « troncons de cedre », a plus forte raison les nids. Celui qui dit « nids », mais les troncons de cedre, non.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מאן דאמר פסקי</b> איכא היכרא למבוי:</div>
+          <div class="glose-fr">Il y a un hekker pour le mavoy.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כל שכן קיני</b> דאיידי דחשיבי ומילתא דתמיהא היא מסתכלי בהו אינשי וחזו לקורה:</div>
+          <div class="glose-fr">Parce qu&#x27;ils sont importants et que c&#x27;est une chose etonnante, les gens les regardent et voient la kora.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Un <b>kal va-homer</b> a sens unique : les nids sculptes, objet curieux, attirent davantage le regard que de simples poutres.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ומאן דאמר פסקי דארזא מאי טעמא — משום דנפיש משכיה. והא סוכה דנפיש משכיה, וקאמרי רבנן דלא!</div>
+            <div class="fr"><p>Et celui qui dit « troncons de cedre », quelle est la raison ? Parce que leur longueur est grande.</p><p>Mais la soukka, dont la longueur est grande, et les Sages disent que non !</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Si la longueur suffisait a creer le hekker, une soukka longue devrait etre valable au-dessus de vingt amot. Les Sages l'invalident : la longueur n'est donc pas la raison.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אלא: כיון דקא חשיב אית ליה קלא.</div>
+            <div class="fr"><p>Plutot : puisque c&#x27;est (un objet) important, il fait parler de lui.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le cedre est un bois precieux : il a du <b>kala</b> (renom). On en parle, on le montre, et la kora devient visible.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מקצת קורה בתוך עשרים, ומקצת קורה למעלה מעשרים, מקצת סכך בתוך עשרים, ומקצת סכך למעלה מעשרים? אמר רבה: במבוי כשר, בסוכה פסול.</div>
+            <div class="fr"><p>Une partie de la kora a moins de vingt et une partie de la kora au-dessus de vingt ; une partie du skhakh a moins de vingt et une partie du skhakh au-dessus de vingt ? Rabba a dit : pour le mavoy, kasher ; pour la soukka, passoul.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מקצת</b> עובי הקורה בתוך כ&#x27; ומקצתה למעלה וכן עובי סככה של סוכה:</div>
+          <div class="glose-fr">L&#x27;epaisseur de la kora (se trouve) en partie a moins de vingt et en partie au-dessus ; de meme l&#x27;epaisseur du skhakh de la soukka.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Cas limite : l'<b>epaisseur</b> de la kora (ou du <b>skhakh</b>) traverse la ligne des vingt amot. Selon cette premiere version, Rabba valide le mavoy et invalide la soukka.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="640" height="260" fill="#fbfaf7"/>
+<text x="320" y="22" text-anchor="middle" font-family="Helvetica,Arial" font-size="14" font-weight="bold" fill="#2b2b2b">Une epaisseur a cheval sur la limite de 20 amot</text>
+<line x1="40" y1="130" x2="600" y2="130" stroke="#a35a4f" stroke-width="2" stroke-dasharray="6,4"/>
+<text x="600" y="122" text-anchor="end" font-family="Helvetica,Arial" font-size="12" fill="#a35a4f">limite : 20 amot</text>
+<rect x="80" y="100" width="220" height="60" fill="#c9b48f" stroke="#6b5a3c"/>
+<text x="190" y="92" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Kora du mavoy</text>
+<rect x="360" y="100" width="220" height="60" fill="#9cb58a" stroke="#4f6b3f"/>
+<text x="470" y="92" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Skhakh de la soukka</text>
+<text x="190" y="120" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">partie au-dessus</text>
+<text x="190" y="152" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">partie en dessous</text>
+<text x="470" y="120" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">partie au-dessus</text>
+<text x="470" y="152" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">partie en dessous</text>
+<line x1="20" y1="240" x2="620" y2="240" stroke="#555" stroke-width="2"/>
+<text x="320" y="232" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">sol</text>
+<text x="190" y="195" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Rabba (v.1) : kasher</text>
+<text x="470" y="195" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Rabba (v.1) : passoul</text>
+<text x="320" y="215" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">Kalouch : on considere la partie superieure comme retiree</text>
+</svg></div><div class="svg-cap">L&#x27;epaisseur de la kora ou du skhakh traverse la ligne des 20 amot.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg16">
+          <div class="seg-num">17</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מאי שנא במבוי דכשר, דאמרינן קלוש? סוכה נמי לימא קלוש!</div>
+            <div class="fr"><p>En quoi le mavoy differe-t-il, qu&#x27;il soit kasher ? Parce que nous disons kalouch (amincis).</p><p>Pour la soukka aussi, disons kalouch !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>קלוש</b> רואין כאילו ניטל אותו העובי היוצא למעלה ותהא קורה דקה:</div>
+          <div class="glose-fr">On considere comme si l&#x27;epaisseur qui depasse vers le haut etait enlevee, et la kora serait mince.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Kalouch</b> : on considere la partie situee au-dessus de vingt comme retiree. Il reste une kora plus mince, entierement sous vingt. Pourquoi ne pas raisonner ainsi pour le skhakh ?</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg17">
+          <div class="seg-num">18</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אי קלשת — הויא לה חמתה מרובה מצילתה.</div>
+            <div class="fr"><p>Si tu amincis, la soukka devient hamata meroubba mi-tsilata (plus de soleil que d&#x27;ombre).</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אי קלשת הוי לה חמתה מרובה מצילתה</b> מפר&#x27; ר&quot;י חמתה מרובה מצילתה ע&quot;י שיבא הרוח ויפזר עד שתהא חמתה מרובה מצילתה דאי ע&quot;י קלישה לחודה תהא חמתה מרובה היכי מכשר&#x27; לה בלישנא בתרא הא אין סכך פסול מצטרף בהדי סכך כשר כדאמרי&#x27; בסוכה (ד&#x27; ט:) גבי העושה סוכתו תחת האילן וקשיא דאמר בפרק קמא דסוכה (ד&#x27; ד.) היתה גבוהה מכ&#x27; אמה והוצין יורדין בתוך כ&#x27; אם צילתה מרובה מחמתה כשירה אם לאו פסולה ואמאי כשירה והלא אי קלשת ליה יפלו ההוצין למטה וללישנא בתרא דהכא אתי שפיר ולרבא מפרזקיא נמי דמפרש משום דסוכה דיחיד היא ולא מידכר אתי שפיר דגבי הוצין איכא למימר דיורדין הרבה למטה דליכא למיגזר מידי אבל לרבינא קשה דמשמע דמשום סוכה דאורייתא פסולה משום אי קלשת כו&#x27; וי&quot;ל דהתם מיירי שיש הרבה הוצין שיכולין להתקיים בקל על ידי סמיכה ועוד נוכל לומר הכא דאי קלשת ליה הוי חמתה מרובה ע&quot;י קלישה לחוד ומצטרף לסכך דלמעלה מכ&#x27; וללישנא בתרא דלא חשיב כל כך סכך פסול הואיל והוי סכך כשר אם היה למטה מכ&#x27; אבל קשה דגבי הוצין אמרי&#x27; ואם לאו פסול וללישנא בתרא דהכא מכשרינן אפילו חמתה מרובה מצילתה מיהו ללישנא קמא ניחא אי נמי גבי הוצין יש לפסול יותר הואיל ואגודים עליונים והתחתונים זה בזה דאי קלשת יפול הכל:</div>
+          <div class="glose-fr">Le Ri explique « plus de soleil que d&#x27;ombre » : par le fait que le vent viendra et dispersera (le skhakh) jusqu&#x27;a ce qu&#x27;il y ait plus de soleil que d&#x27;ombre. Car si, par le seul amincissement, il y avait plus de soleil que d&#x27;ombre, comment la valider selon la derniere version ? Le skhakh passoul ne se joint pas au skhakh kasher, comme nous le disons dans Soukka (9b) a propos de celui qui fait sa soukka sous un arbre. Difficulte : il est dit au premier chapitre de Soukka (4a) : si elle etait plus haute que vingt amot et que des branches pendent a moins de vingt, si l&#x27;ombre y domine le soleil elle est kasher, sinon passoul. Pourquoi kasher ? Si tu l&#x27;amincis, les branches tomberont ! Selon la derniere version d&#x27;ici, cela va bien ; et selon Rava de Parzakya aussi, qui explique que la soukka est celle d&#x27;un seul et qu&#x27;il ne s&#x27;en souvient pas, cela va bien, car pour les branches on peut dire qu&#x27;elles descendent beaucoup plus bas et qu&#x27;il n&#x27;y a pas lieu de faire une gezera. Mais selon Ravina c&#x27;est difficile, car il en ressort que c&#x27;est parce que la soukka est de la Torah qu&#x27;elle est invalide, du fait de « si tu amincis ». On peut repondre que la-bas il s&#x27;agit de nombreuses branches qui peuvent tenir facilement en s&#x27;appuyant. On peut encore dire ici : si tu l&#x27;amincis, il y a plus de soleil par le seul amincissement, et cela se joint au skhakh au-dessus de vingt ; et selon la derniere version, on ne le considere pas vraiment comme skhakh passoul, puisque ce serait un skhakh kasher s&#x27;il etait sous vingt. Mais c&#x27;est difficile a propos des branches, ou l&#x27;on dit « sinon passoul », alors que selon la derniere version d&#x27;ici on valide meme avec plus de soleil que d&#x27;ombre. Toutefois selon la premiere version cela va bien. Ou bien, pour les branches, il y a davantage lieu d&#x27;invalider, puisque celles du haut et celles du bas sont liees les unes aux autres : si tu amincis, tout tombera.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Une soukka exige que l'<b>ombre domine le soleil</b> (<b>tsilata meroubba mi-hamata</b>). Si l'on retire en pensee la partie superieure du skhakh, ce qui reste sous vingt peut ne plus donner assez d'ombre.</p><p>Tossefot discute en detail comment comprendre « plus de soleil » (par le vent qui disperse, ou par le seul amincissement) et confronte ce passage a Soukka 4a (branches pendantes).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg18">
+          <div class="seg-num">19</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הכא נמי, אי קלשת הויא לה קורה הניטלת ברוח. אלא על כרחך, נעשו כשפודין של מתכת. הכא נמי — על כרחך נעשית צילתה מרובה מחמתה!</div>
+            <div class="fr"><p>Ici aussi, si tu amincis, elle devient une kora emportee par le vent ! Il faut donc dire, forcement, qu&#x27;elles sont considerees comme des broches de metal.</p><p>Ici aussi, forcement, elle devient (une soukka dont) l&#x27;ombre domine le soleil !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הניטלת ברוח</b> שהרי שיערוה חכמים בריאה כדי לקבל אריח ואי לאו הכי שדי ליה זיקא הלכך לא חשיב:</div>
+          <div class="glose-fr">Car les Sages l&#x27;ont evaluee « solide pour recevoir un ariah » ; sans cela le vent l&#x27;emporte, et elle ne compte pas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Refutation : la kora amincie serait trop faible, <b>emportee par le vent</b>. Si l'on valide malgre tout, c'est qu'on la considere comme des <b>chefoudin</b> (broches de metal), fines mais solides : l'amincissement est un simple regard juridique. Alors, pour la soukka aussi, on devrait considerer que l'ombre domine toujours. La distinction par kalouch ne tient pas.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg19">
+          <div class="seg-num">20</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר רבא מפרזקיא: סוכה דליחיד היא לא מדכר, מבוי דלרבים מדכרי אהדדי.</div>
+            <div class="fr"><p>Rava de Parzakya a dit : la soukka est (celle) d&#x27;un seul, il ne s&#x27;en souvient pas ; le mavoy est a plusieurs, ils se le rappellent les uns aux autres.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לא מידכר</b> וזמנין דמשתקיל מקצת עובי הסכך הנכנס לתוך כ&#x27; וקיימא כולה למעלה מכ&#x27;:</div>
+          <div class="glose-fr">Il arrive que soit retiree une partie de l&#x27;epaisseur du skhakh qui entre sous les vingt, et qu&#x27;elle se retrouve toute au-dessus de vingt.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מדכרי אהדדי</b> שאם תרקב תחתונה של קורה ותעמוד כולה למעלה מעשרים אמה מתקני לה:</div>
+          <div class="glose-fr">Si le dessous de la kora pourrit et qu&#x27;elle se retrouve toute au-dessus de vingt amot, ils la reparent.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Explication par la <b>gezera</b> : si la partie basse disparait, tout sera au-dessus de vingt. Un particulier seul risque de ne pas le remarquer ; les habitants d'un mavoy <b>se le rappellent</b> mutuellement. On est donc strict pour la soukka seulement.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg20">
+          <div class="seg-num">21</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רבינא אמר: סוכה דאורייתא — אחמירו בה רבנן, מבוי דרבנן — לא אחמירו ביה רבנן.</div>
+            <div class="fr"><p>Ravina a dit : la soukka est de la Torah, les Sages ont ete stricts a son sujet ; le mavoy est rabbinique, les Sages n&#x27;ont pas ete stricts a son sujet.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Critere de source : la soukka est une mitsva <b>de-oraita</b> (de la Torah), d'ou la rigueur ; le mavoy est une institution <b>de-rabbanan</b>, d'ou la souplesse.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg21">
+          <div class="seg-num">22</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רב אדא בר מתנה מתני להא שמעתא דרבה איפכא. אמר רבה: במבוי פסול, בסוכה כשירה!</div>
+            <div class="fr"><p>Rav Ada bar Matna enseignait cet enseignement de Rabba a l&#x27;inverse. Rabba a dit : pour le mavoy, passoul ; pour la soukka, kasher !</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אמר רבה במבוי פסול</b> ל&quot;ג רב דרב יליף מפתחו של היכל דהוי חללו כ&#x27;:</div>
+          <div class="glose-fr">(Dans « Rabba a dit ») on ne lit pas « Rav », car Rav apprend du petach de l&#x27;heikhal, dont l&#x27;espace interieur est de vingt.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Seconde version, inverse : le mavoy est invalide, la soukka valide. Toute la dialectique va etre reprise en miroir.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg22">
+          <div class="seg-num">23</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מאי שנא סוכה דכשירה, דאמרינן קלוש? במבוי נמי לימא קלוש!</div>
+            <div class="fr"><p>En quoi la soukka differe-t-elle, qu&#x27;elle soit kasher ? Parce que nous disons kalouch.</p><p>Pour le mavoy aussi, disons kalouch !</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Meme question que plus haut, cas inverses.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg23">
+          <div class="seg-num">24</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אי קלשת, הוי לה קורה הניטלת ברוח. הכא נמי, אי קלשת — הויא לה חמתה מרובה מצילתה! אלא על כרחך, נעשית צילתה מרובה מחמתה, הכא נמי, על כרחך נעשו כשפודין של מתכת!</div>
+            <div class="fr"><p>Si tu amincis, elle devient une kora emportee par le vent. Ici aussi, si tu amincis, elle devient (une soukka avec) plus de soleil que d&#x27;ombre !</p><p>Il faut donc dire, forcement, qu&#x27;elle devient (une soukka dont) l&#x27;ombre domine le soleil ; ici aussi, forcement, elles sont considerees comme des broches de metal !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אלא</b> אמאי מכשרת בסוכה משום דעל כרחך השתא צילתה מרובה מחמתה דהא רואין הוא דקאמרי&#x27; ולא שקילנא מינה מידי:</div>
+          <div class="glose-fr">Pourquoi la valides-tu pour la soukka ? Parce que, forcement, a present l&#x27;ombre domine le soleil, puisque nous disons seulement « on considere », et nous n&#x27;en retirons rien.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הכא נמי</b> חשוב אותה כשפודין כבידין דאי נמי קלישי לא שדי להו זיקא דהא לא מידי שקלת מינה אלא רואין הוא דקאמר:</div>
+          <div class="glose-fr">Considere-les comme des broches lourdes : meme amincies, le vent ne les emporte pas, puisque tu n&#x27;en as rien retire ; il dit seulement « on considere ».</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rachi precise le principe : <b>kalouch</b> est une consideration juridique (<b>roin</b>), rien n'est physiquement retire. L'ombre reelle demeure, la kora reelle reste solide. L'argument ne distingue donc pas davantage dans ce sens.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg24">
+          <div class="seg-num">25</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר רבא מפרזקיא: סוכה דליחיד היא רמי אנפשיה ומדכר, מבוי דלרבים היא סמכי אהדדי ולא מדכרי, דאמרי אינשי: קדרא דבי שותפי, לא חמימא ולא קרירא.</div>
+            <div class="fr"><p>Rava de Parzakya a dit : la soukka est (celle) d&#x27;un seul, il s&#x27;en charge lui-meme et s&#x27;en souvient ; le mavoy est a plusieurs, ils comptent les uns sur les autres et ne s&#x27;en souviennent pas, comme les gens disent : la marmite des associes n&#x27;est ni chaude ni froide.</p></div>
+            <div class="tools"><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אמרי אינשי: קדרה דשתפי לא קרירא ולא חמימא. נראה לי בס&quot;ד המשל הזה רמז לעונג שבת שהוא נעשה בשיתוף רצון הנפש והחומר שבחול דרכם להיות נגדיים אך בשבת גם הנפש יש לה רצון ברבוי אכילה ושתיה דעונג שבת הוא מצוה גדולה וכאשר כתבתי בס&quot;ד בדרשותי הטעם שאומרים שבת שלום מפני דבשבת יש שלום בין הנפש ובין החומר ברבוי המותרות מה שאין כן בחול אין שלום ביניהם דהנפש מקפדת ברבוי המותרות באכילה ושתיה שיבקש החומר וגם החומר מקפיד בסיגופים שתבקש הנפש כי רצון הנפש הוא שהאדם ימשוך ידו מאכילתו הערבה לו קודם שישבע ממנה. משל לאחד שהיה נושא אשה שהיה לה בת מאיש אחר ודרה עמה בבית וגם לאישה היה לו בן מאשה אחרת שכבר מתה ודר גם כן עמהם והאיש היה מקפיד וחושד את אשתו שהיא מהנית לבתה מפרנסת הבית ביותר והיא מקפדת וחושבת שבעלה מרבה הנאה לבנו ביותר מהם ובעבור זאת היו תמיד בקטטה והקפדה זה עם זה, אחר כך נשא הבן לאותה הבת אז שבת דין וקלון שנעשו בשלום תמיד כי עתה נעשית הבת כלתו ורוצה בהנאתה והיא נעשה הבן חתן שלה ורוצה בהנאתו. וכן הענין הזה בחול, הנפש מקפדת על החומר שחפצו ורצונו ברבוי המותרות והחומר מקפיד על הנפש שחפצה ורצוצה בסיגופים היא אומרת שהוא מרבה בהנאה יותר מדאי והוא אומר שמרבה היא בסיגופים יותר מדאי אך בשבת עושים שלום ביניהם מפני שהנפש לא תקפיד ברבוי תענוג והנאה אשר יבקש החומר. ולכך בשבת אומרים שבת שלום, נמצא עונג אכילה ושתיה בשבת נקרא קדרה דשתפי דהנפש והחומר שניהם משותפים בו במצוה זו ולזה מצות עונג שבת לא קרירה מצד יצר הרע ולא חמימה מצד יצר הטוב כי דרכו של יצר הרע בכל מצוה יקרר לבו של אדם לעשותה בעצלות והיצר הטוב עושה להפך מחמם לבו לעשותה בהתלהבות וזריזות ורק מצוה זו של עונג שהיא &#x27;קדרה דשתפי&#x27; אין היצר הרע מקרר בה מפני כי באמת החומר מתענג בה ונהנה ממנה וגם זו אינה צריכה לחמימות היצר הטוב שיהיה נופח בלב האדם להלהיב אותו בעשייתה מפני כי האדם הוא רודף אחריה מצד חמרו ומזגו כיון דהוא מתענג בה מאד. ובאופן אחר נראה לי בס&quot;ד המשל הנזכר על תאות התשמיש באשתו של אדם המותרת לו שהיא בשיתוף הנפש והחומר יען דהנפש יש לה רצון בזו התאוה שהוא מקיים בה מצות עונה ועושה בה פריה ורביה והחומר גם כן יש לו רצון בתאוה זו שהוא מתענג ונהנה בה ותאוה זו עומדת אצל האדם במדרגת המיצוע לא חמימה אצלו כתאות המנאפים דכתיב בהו (משלי ט, יז) מים גנובים ימתקו ולחם סתרים ינעם וגם לא קרירה דאינו קץ בה האדם אף על פי שהוא רגיל בה תמיד עם אשתו המותרת וטבע האדם לקוץ בהנאה הרגיל בה הרבה עם כל זה הוא אינו קץ ומתאוה להזקק לאשתו תמיד. ובאופן אחר נראה לי בס&quot;ד המשל הנזכר על עולם הזה שהמשילו אותה חז&quot;ל לקדרה והיא נקראת קדרה דשותפי ששולטים בה יצר הטוב ויצר הרע ואמרו רבותינו ז&quot;ל (סנהדרין צח.) אין בן דוד בא אלא בדור שכולו זכאי או בדור שכולו חייב דהיינו שיהיו הכל תחת ממשלת היצר הטוב או יהיו הכל תחת ממשלת היצר הרע אך כל עוד שהיא &#x27; קדרה דשתפי &#x27; אז תהיה גאולתה קשה וזהו &#x27; לא קרירה ולא חמימה &#x27; שאם יהיה בדור שכולו חייב אז תשבע הקליפה הרבה וממילא תקיא הכל מרוב שובעה ובזה גאולה תהיה לארץ. או נראה לי בס&quot;ד דרך הלצה קדרה דשתפי על העני דלית ליה מגרמיה כלום והוא מוטל על העשירים לפרנסו והכל משותפים בחיוב פרנסתו ולכך נקרא &#x27;קדרה דשתפי&#x27;, הנה זה הקבית הלל מרחם עליו שיודע שאין השותפים נותנים לו כסות ודירה טובה לשמרו מן רבוי הקור בימי הקור וגם לא דברים ודירה טובה להגין עליו מרבוי החום, לכך מרחם עליו שלא יגיע אליו תוקף הקור ותוקף החום כמו שמגיע לעשירים וז&quot;ש לא קרירה הרבה בימי הקור ולא חמימה הרבה בימי החום. ובאופן אחר נראה לי בס&quot;ד המשל הנזכר על קליפת נוגה שיש בה תערובת טוב ורע ועומדת בין הקודש ובין החול ועליה רמזו חז&quot;ל (בבא מציעא כב.) &#x27;ירדן שנטל מזה ונתן לזה מה שנטל נטל ומה שנתן נתן&#x27; והיא עשויה כמו טיקלא ולכן נקראת &#x27; קדרה דשתפי &#x27; שהם חלקים טוב ורע וכל זמן שהם שוים במשקל אחד אז היא לא קרירה ולא חמימה מצד הפעולה שלה ודוק היטב. ובני ידידי כה&quot;ר יעקב הי&quot;ו פירש רמז המשל הנזכר על פי מה שכתב הרמב&quot;ם ז&quot;ל (בפ&quot;ט מהלכות שבת) כל מלאכה שהיחיד יכול לעשותה לבדה ועשו אותה שנים בשותפות כגון שאחזו שניהם בקולמוס וכתבו או אחזו ככר והוציאוהו מרשות לרשות הרי אלו פטורין עכ&quot;ל, וידוע כל פטורין דהלכות שבת הם &#x27;פטור אבל אסור&#x27;. וז&quot;ש קדרה דשתפי כגון דאחזו שנים בקולמוס וכתבו וכיוצא בזה שעשו מלאכה בשותפות לא קרירה דאין בזה היתר גמור ולא חמימה דאין בזה חיוב סקילה במזיד וחיוב חטאת בשוגג אלא רק שם איסור רביע עלה. ועוד פירש המשל הזה על מי שחציו עבד וחציו בן חורין דגופו משותף בשני חלקים של חירות ושל עבדות לא קרירה ולא חמימה דאינו יכול לישא לא שפחה ולא בת חורין ואינו יכול להוציא עצמו ידי חבתו לא בשופר ולא בקריאת מגילה וכיוצא בזה עד כאן דבריו נר&quot;ו.</div>
+          <div class="glose-fr">Les gens disent : « La marmite des associes n&#x27;est ni froide ni chaude. » Il me semble, avec l&#x27;aide du Ciel, que cette parabole fait allusion a l&#x27;oneg Chabbat (le plaisir du Chabbat), qui se fait par l&#x27;association de la volonte de la nefech (l&#x27;ame) et de la matiere, lesquelles, en semaine, ont coutume d&#x27;etre opposees. Mais le Chabbat, la nefech elle aussi desire l&#x27;abondance de nourriture et de boisson, car l&#x27;oneg Chabbat est une grande mitsva. Ainsi que je l&#x27;ai ecrit, avec l&#x27;aide du Ciel, dans mes derachot, la raison pour laquelle on dit « Chabbat chalom » : le Chabbat il y a la paix entre la nefech et la matiere dans l&#x27;abondance du superflu, ce qui n&#x27;est pas le cas en semaine. Il n&#x27;y a pas de paix entre elles : la nefech s&#x27;offusque de l&#x27;abondance de superflu en nourriture et boisson que demande la matiere, et la matiere s&#x27;offusque des mortifications que demande la nefech, car la volonte de la nefech est que l&#x27;homme retire sa main de la nourriture qui lui plait avant d&#x27;en etre rassasie. Parabole d&#x27;un homme qui epousa une femme ayant une fille d&#x27;un autre homme, qui habitait avec elle dans la maison ; l&#x27;homme avait aussi un fils d&#x27;une autre femme deja decedee, qui habitait egalement avec eux. L&#x27;homme s&#x27;offusquait et soupconnait sa femme de faire profiter sa fille davantage des ressources de la maison, et elle s&#x27;offusquait et pensait que son mari faisait davantage profiter son fils. Pour cette raison, ils etaient toujours en querelle et en ressentiment l&#x27;un contre l&#x27;autre. Ensuite le fils epousa cette fille : alors cesserent la dispute et l&#x27;affront, et ils vecurent en paix constamment, car desormais la fille etait devenue sa belle-fille et il desirait son bien-etre, et le fils etait devenu le gendre de la femme et elle desirait son bien-etre. Il en va de meme en semaine : la nefech s&#x27;offusque contre la matiere, dont le desir et la volonte sont dans l&#x27;abondance du superflu, et la matiere s&#x27;offusque contre la nefech, dont le desir et la volonte sont dans les mortifications. Elle dit qu&#x27;il prend trop de plaisir, et lui dit qu&#x27;elle multiplie trop les mortifications. Mais le Chabbat, ils font la paix entre eux, car la nefech ne s&#x27;offusque pas de l&#x27;abondance de delices et de plaisir que demande la matiere. C&#x27;est pourquoi le Chabbat on dit « Chabbat chalom ». Il ressort que le plaisir de manger et de boire le Chabbat s&#x27;appelle « la marmite des associes », car la nefech et la matiere sont toutes deux associees dans cette mitsva. C&#x27;est pourquoi la mitsva d&#x27;oneg Chabbat n&#x27;est « pas froide » du cote du yetser hara, et « pas chaude » du cote du yetser hatov. Car la maniere du yetser hara, pour toute mitsva, est de refroidir le coeur de l&#x27;homme pour qu&#x27;il l&#x27;accomplisse avec paresse, et le yetser hatov fait l&#x27;inverse : il rechauffe son coeur pour qu&#x27;il l&#x27;accomplisse avec ferveur et empressement. Seule cette mitsva d&#x27;oneg, qui est « la marmite des associes », le yetser hara ne la refroidit pas, car en verite la matiere y trouve delice et plaisir ; et elle n&#x27;a pas besoin non plus de la chaleur du yetser hatov, qui soufflerait dans le coeur de l&#x27;homme pour l&#x27;enflammer a l&#x27;accomplir, car l&#x27;homme la poursuit du fait de sa matiere et de son temperament, puisqu&#x27;il y trouve grand plaisir. D&#x27;une autre maniere, il me semble, avec l&#x27;aide du Ciel, que la parabole vise le desir de l&#x27;union conjugale avec l&#x27;epouse permise a l&#x27;homme, qui se fait dans l&#x27;association de la nefech et de la matiere. Car la nefech desire cette envie, par laquelle il accomplit la mitsva de ona et fait pirya ve-rivya (la procreation), et la matiere aussi desire cette envie, car elle y trouve delice et plaisir. Cette envie se tient chez l&#x27;homme au degre du juste milieu : elle n&#x27;est pas chaude chez lui comme l&#x27;envie des adulteres, dont il est ecrit (Michle 9:17) « les eaux volees sont douces et le pain cache est agreable » ; et elle n&#x27;est pas froide non plus, car l&#x27;homme ne s&#x27;en lasse pas bien qu&#x27;il y soit toujours habitue avec son epouse permise. La nature de l&#x27;homme est de se lasser d&#x27;un plaisir auquel il est tres habitue ; malgre cela, il ne s&#x27;en lasse pas et desire s&#x27;unir a son epouse constamment. D&#x27;une autre maniere, il me semble, avec l&#x27;aide du Ciel, que la parabole vise ce monde-ci, que nos Sages ont compare a une marmite. Il est appele « marmite des associes », car y dominent le yetser hatov et le yetser hara. Nos maitres ont dit (Sanhedrin 98a) : le fils de David ne vient que dans une generation entierement meritante ou dans une generation entierement coupable, c&#x27;est-a-dire que tous soient sous la domination du yetser hatov, ou tous sous la domination du yetser hara. Mais tant qu&#x27;elle est « la marmite des associes », sa delivrance sera difficile, et c&#x27;est « ni froide ni chaude ». Car si c&#x27;est une generation entierement coupable, la klipa (l&#x27;ecorce, force de l&#x27;impurete) se rassasiera beaucoup, et d&#x27;elle-meme vomira tout par exces de satiete, et ainsi viendra la delivrance pour la terre. Ou bien, il me semble, avec l&#x27;aide du Ciel, par maniere de trait d&#x27;esprit : la « marmite des associes » designe le pauvre qui ne possede rien par lui-meme et dont la subsistance incombe aux riches ; tous sont associes dans l&#x27;obligation de le nourrir, c&#x27;est pourquoi on l&#x27;appelle « marmite des associes ». Le Saint, beni soit-Il, a pitie de lui, car Il sait que les associes ne lui donnent ni vetement ni bon logement pour le proteger du grand froid dans les jours froids, ni [vetements] et bon logement pour le proteger de la grande chaleur. C&#x27;est pourquoi Il a pitie de lui, pour que la force du froid et la force de la chaleur ne l&#x27;atteignent pas comme elles atteignent les riches. C&#x27;est ce qui est dit : pas tres froide dans les jours froids, et pas tres chaude dans les jours chauds. D&#x27;une autre maniere, il me semble, avec l&#x27;aide du Ciel, que la parabole vise la klipat noga, dans laquelle il y a un melange de bien et de mal, et qui se tient entre le sacre et le profane. C&#x27;est a elle que nos Sages ont fait allusion (Bava Metsia 22a) : « le Jourdain qui a pris de celui-ci et donne a celui-la : ce qu&#x27;il a pris est pris, et ce qu&#x27;il a donne est donne ». Elle est faite comme une balance, c&#x27;est pourquoi on l&#x27;appelle « marmite des associes », car ce sont des parts de bien et de mal ; et tant qu&#x27;elles sont egales en poids, elle n&#x27;est ni froide ni chaude du point de vue de son action. Examine bien. Et mon fils bien-aime, l&#x27;honorable Rabbi Yaakov (que Hachem le garde), a explique l&#x27;allusion de cette parabole d&#x27;apres ce qu&#x27;a ecrit le Rambam (chapitre 9 des Lois du Chabbat) : tout travail qu&#x27;un seul peut faire seul, et que deux ont fait en association, par exemple ils ont tenu tous deux la plume et ecrit, ou tenu une miche et l&#x27;ont sortie d&#x27;un domaine a un autre, ils sont exemptes, fin de citation. Et il est connu que toutes les exemptions des lois du Chabbat sont « exempt mais interdit ». C&#x27;est ce qu&#x27;il dit : la marmite des associes, comme lorsque deux tiennent la plume et ecrivent, et autres cas semblables ou l&#x27;on a fait un travail en association : « pas froide », car ce n&#x27;est pas une permission complete ; « pas chaude », car il n&#x27;y a pas la l&#x27;obligation de lapidation en cas d&#x27;intention, ni l&#x27;obligation d&#x27;un sacrifice hatat en cas d&#x27;erreur, mais seulement la designation d&#x27;interdit repose sur elle. Il a encore explique cette parabole a propos de celui qui est moitie esclave et moitie libre : son corps est associe en deux parts, liberte et esclavage. « Pas froide ni chaude », car il ne peut epouser ni une servante ni une femme libre, et il ne peut s&#x27;acquitter de son obligation ni avec le chofar ni avec la lecture de la Meguila, et autres cas semblables. Fin de ses paroles, que Hachem le garde.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Dans la version inverse, Rava de Parzakya retourne son argument : le particulier assume sa soukka et y pense ; les habitants d'un mavoy <b>comptent les uns sur les autres</b>. Le proverbe de la <b>marmite des associes</b> resume l'effet : quand la responsabilite est partagee, personne ne s'en occupe vraiment.</p><p>Le <b>Ben Yehoyada</b> propose plusieurs lectures allusives du proverbe (oneg Chabbat, vie conjugale, ce monde, le pauvre, klipat noga, puis deux lectures halakhiques de son fils).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg25">
+          <div class="seg-num">26</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רבינא אמר: סוכה דאורייתא — לא בעי חיזוק. מבוי דרבנן — בעי חיזוק.</div>
+            <div class="fr"><p>Ravina a dit : la soukka, qui est de la Torah, n&#x27;a pas besoin de renfort ; le mavoy, qui est rabbinique, a besoin de renfort.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Ravina aussi s'inverse : une loi de la Torah est respectee d'elle-meme ; une institution rabbinique a besoin d'un <b>hizouk</b> (renforcement), d'ou la rigueur pour le mavoy.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg26">
+          <div class="seg-num">27</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מאי הוי עלה? רבה בר רב עולא אמר: זה וזה — פסול. רבא אמר: זה וזה כשר.</div>
+            <div class="fr"><p>Quelle est la conclusion a ce sujet ? Rabba bar Rav Oula a dit : l&#x27;un et l&#x27;autre, passoul.</p><p>Rava a dit : l&#x27;un et l&#x27;autre, kasher.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Faute de savoir quelle version de Rabba est la bonne, deux positions : Rabba bar Rav Oula invalide les deux cas, Rava valide les deux. La suite de la phrase continue en 3b.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Eruvin_2b.html">&lsaquo; Eruvin 2b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Eruvin_3b.html">Eruvin 3b &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

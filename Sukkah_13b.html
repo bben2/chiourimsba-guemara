@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sukkah 13b — Le lien qui ne lie pas, la poignee qui ne sert pas</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Sukkah 13b — Le lien qui ne lie pas, la poignee qui ne sert pas</h1>
+    <div class="ref">Sukkah 13b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Sukkah_13a.html">&lsaquo; Sukkah 13a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Sukkah_14a.html">Sukkah 14a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> Ce folio acheve d&#x27;abord le dossier de l&#x27;agad (le lien) ouvert en 12a : apres une derniere retouche du texte sur le faisceau d&#x27;ezov, trois cas viennent montrer qu&#x27;un noeud peut n&#x27;etre pas un lien au sens du decret. Marimar autorise les bottes de roseaux de Soura, liees seulement pour etre comptees a la vente ; Rabbi Abba autorise les huttes coniques de saule des lors que le noeud du sommet est defait, Rav Papa precisant qu&#x27;il a aussi retire le fil du bas ; et Rav Houna fils de Rav Yehochoua pose la definition la plus large — tout lien qui ne sert pas a transporter l&#x27;objet n&#x27;est pas un lien.</p><p>Un enseignement de Rabbi Abba au nom de Chemouel fait ensuite basculer la sougya : les legumes du maror amenent la touma, ne font pas ecran devant elle, et rendent la soukka passoul au titre de l&#x27;air — parce qu&#x27;en sechant ils s&#x27;effritent et tombent, on les traite deja comme absents. Le nom de Rabbi Abba entraine alors le dossier des yadot, ces parties non comestibles qui transmettent la touma a l&#x27;aliment auquel elles tiennent.</p><p>Rabbi Abba au nom de Rav Houna les refuse au vendangeur, Rav Menachya bar Gada au nom du meme Rav Houna les refuse au moissonneur qui couvre sa soukka ; la Guemara montre que le second enonce implique le premier mais non l&#x27;inverse. Une baraita sur les branchages porteurs de fruits semble arbitrer entre eux : le premier tanna ne pese que la nourriture, Aherim y ajoutent les yadot.</p><p>Rabbi Abba doit s&#x27;aligner sur Aherim, mais Rav Menachya s&#x27;echappe en relisant la baraita comme un cas d&#x27;intention changee — coupe pour manger, ravise pour couvrir. Le folio se clot sur le prix de cette echappatoire : que disent alors les Sages, et une seconde mahshava peut-elle annuler la premiere ?</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 486" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="486" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1c1917">Le fil du folio : du lien qui ne lie pas a la poignee qui ne sert pas</text>
+  <text x="380" y="42" text-anchor="middle" font-size="10.2" fill="#57534e">Deux concepts jumeaux -- agad et yad -- qui dependent tous deux de ce que l homme veut, non de ce que la chose est</text>
+
+  <rect x="24" y="54" width="712" height="46" rx="7" fill="#f5f3ff" stroke="#6d28d9" stroke-width="1.4"/>
+  <text x="38" y="72" font-size="10.4" font-weight="700" fill="#4c1d95">Segment 0 -- solde du debat de 13a sur l ezov</text>
+  <text x="38" y="90" font-size="9" fill="#292524">Correction du texte : le commencement n invalide que s il est deja tombe a la mesure du reste, un seul brin. Donc pour les Sages, trois n est qu une exigence a priori.</text>
+  <path d="M380 100 L380 110" stroke="#78716c" stroke-width="1.3"/><path d="M375 109 L385 109 L380 115 Z" fill="#78716c"/>
+
+  <rect x="24" y="118" width="712" height="96" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.4"/>
+  <text x="38" y="136" font-size="10.4" font-weight="700" fill="#78350f">Segments 1 a 3 -- fin du dossier agad : trois liens qui n en sont pas</text>
+  <text x="38" y="153" font-size="9" fill="#292524">Marimar : les bottes de roseaux de Soura sont liees pour etre comptees a la vente, pas pour etre gardees ainsi.</text>
+  <text x="38" y="167" font-size="9" fill="#292524">Rabbi Abba : les huttes de saule redeviennent kacheres des qu on defait le noeud du sommet. Objection : le bas reste tresse.</text>
+  <text x="38" y="181" font-size="9" fill="#292524">Rav Papa repond par les faits -- il a delie aussi le bas. Rav Houna fils de Rav Yehochoua repond par la definition :</text>
+  <text x="38" y="195" font-size="9" fill="#292524">un lien qui ne sert pas a transporter l objet n est pas un lien. Ici, sitot deplacee, la hutte se defait toute seule.</text>
+  <text x="38" y="209" font-size="9" fill="#57534e">Bilan : c est la finalite du noeud, pas sa solidite, qui decide. Le fagot interdit visait l entrepot ; rien de tel ici.</text>
+  <path d="M380 214 L380 224" stroke="#78716c" stroke-width="1.3"/><path d="M375 223 L385 223 L380 229 Z" fill="#78716c"/>
+
+  <rect x="24" y="232" width="712" height="76" rx="7" fill="#ecfeff" stroke="#0e7490" stroke-width="1.4"/>
+  <text x="38" y="250" font-size="10.4" font-weight="700" fill="#164e63">Segment 4 -- charniere : Rabbi Abba au nom de Chemouel, les legumes du maror</text>
+  <text x="38" y="267" font-size="9" fill="#292524">Trois regimes d un coup : ils amenent la touma, ils ne font pas ecran devant elle, et ils invalident la soukka comme de l air.</text>
+  <text x="38" y="281" font-size="9" fill="#292524">Raison unique : une fois secs ils s effritent et tombent -- donc deja maintenant on les traite comme s ils n etaient pas la.</text>
+  <text x="38" y="295" font-size="9" fill="#57534e">Le nom de Rabbi Abba est le pivot : la Guemara enchaine sur ses autres enseignements, et le sujet glisse vers les yadot.</text>
+  <path d="M380 308 L380 318" stroke="#78716c" stroke-width="1.3"/><path d="M375 317 L385 317 L380 323 Z" fill="#78716c"/>
+
+  <rect x="24" y="326" width="712" height="82" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.4"/>
+  <text x="38" y="344" font-size="10.4" font-weight="700" fill="#14532d">Segments 5 a 7 -- deux enseignements de Rav Houna sur les yadot</text>
+  <text x="38" y="361" font-size="9" fill="#292524">Rabbi Abba au nom de Rav Houna : celui qui vendange pour le pressoir -- pas de yadot (les rafles suceraient le vin).</text>
+  <text x="38" y="375" font-size="9" fill="#292524">Rav Menachya bar Gada au nom de Rav Houna : celui qui moissonne pour le sekhakh -- pas de yadot (le grain ne l interesse pas).</text>
+  <text x="38" y="389" font-size="9" fill="#292524">La Guemara calibre : le second enonce implique le premier, mais l inverse est faux -- donc les deux ne disent pas la meme chose.</text>
+  <text x="38" y="403" font-size="9" fill="#57534e">Nafka mina : pour Rabbi Abba, moissonner pour le sekhakh donne bel et bien des yadot.</text>
+  <path d="M380 408 L380 418" stroke="#78716c" stroke-width="1.3"/><path d="M375 417 L385 417 L380 423 Z" fill="#78716c"/>
+
+  <rect x="24" y="426" width="712" height="52" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.4"/>
+  <text x="38" y="444" font-size="10.4" font-weight="700" fill="#7f1d1d">Segments 8 a 11 -- la baraita, la tentative de controverse tannaitique, et la question ouverte</text>
+  <text x="38" y="461" font-size="9" fill="#292524">Rav Menachya se sauve en relisant la baraita : coupe pour manger, puis ravise pour couvrir. Mais alors, que disent les Sages ?</text>
+  <text x="38" y="474" font-size="9" fill="#57534e">Si leur raison est que la seconde mahshava annule la premiere -- la michna des ustensiles s y oppose. Suite en 14a.</text>
+</svg></div>
+          <figcaption>Le fil du folio : la fin du dossier agad, puis le basculement vers les yadot, par le nom de Rabbi Abba.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="430" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Quand un noeud n est pas un agad : le bilan des segments 1 a 3</text>
+  <text x="380" y="42" text-anchor="middle" font-size="10" fill="#57534e">La question n est jamais -- est-ce solidement attache ? -- mais toujours -- pourquoi est-ce attache ?</text>
+
+  <rect x="30" y="58" width="700" height="34" rx="6" fill="#eef2ff" stroke="#4338ca" stroke-width="1.3"/>
+  <text x="380" y="80" text-anchor="middle" font-size="10.6" font-weight="700" fill="#312e81">Le decret de depart (12a-12b) : un fagot pose sur la soukka est passoul, de crainte qu on ne couvre avec des bottes d entrepot</text>
+
+  <path d="M380 92 L380 106" stroke="#78716c" stroke-width="1.4"/><path d="M374 105 L386 105 L380 112 Z" fill="#78716c"/>
+  <text x="380" y="126" text-anchor="middle" font-size="10.4" font-weight="700" fill="#292524">Trois voies de sortie, trois raisons differentes</text>
+
+  <rect x="26" y="140" width="228" height="176" rx="8" fill="#fffbeb" stroke="#b45309" stroke-width="1.5"/>
+  <text x="140" y="162" text-anchor="middle" font-size="11" font-weight="700" fill="#78350f">1. Lie pour compter</text>
+  <text x="140" y="180" text-anchor="middle" font-size="9.2" fill="#57534e">Marimar -- segment 1</text>
+  <line x1="46" y1="190" x2="234" y2="190" stroke="#d6d3d1" stroke-width="1"/>
+  <text x="40" y="208" font-size="9" fill="#292524">Cas : les issouryata de Soura,</text>
+  <text x="40" y="221" font-size="9" fill="#292524">bottes de roseaux vendues au</text>
+  <text x="40" y="234" font-size="9" fill="#292524">marche a la piece.</text>
+  <text x="40" y="254" font-size="9" fill="#292524">Raison : le noeud sert au</text>
+  <text x="40" y="267" font-size="9" fill="#292524">comptage, pas a la conservation ;</text>
+  <text x="40" y="280" font-size="9" fill="#292524">l acheteur le defait pour secher.</text>
+  <rect x="40" y="290" width="188" height="18" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1"/>
+  <text x="134" y="303" text-anchor="middle" font-size="9.2" font-weight="700" fill="#14532d">Kacher, sans rien defaire</text>
+
+  <rect x="266" y="140" width="228" height="176" rx="8" fill="#ecfeff" stroke="#0e7490" stroke-width="1.5"/>
+  <text x="380" y="162" text-anchor="middle" font-size="11" font-weight="700" fill="#164e63">2. Le noeud est defait</text>
+  <text x="380" y="180" text-anchor="middle" font-size="9.2" fill="#57534e">Rabbi Abba + Rav Papa -- segment 2</text>
+  <line x1="286" y1="190" x2="474" y2="190" stroke="#d6d3d1" stroke-width="1"/>
+  <text x="280" y="208" font-size="9" fill="#292524">Cas : les tsrifei de-orbani, huttes</text>
+  <text x="280" y="221" font-size="9" fill="#292524">coniques en branches de saule.</text>
+  <text x="280" y="241" font-size="9" fill="#292524">Objection : le bas reste tresse.</text>
+  <text x="280" y="261" font-size="9" fill="#292524">Reponse de fait : il defait aussi</text>
+  <text x="280" y="274" font-size="9" fill="#292524">le fil du bas -- inutile de</text>
+  <text x="280" y="287" font-size="9" fill="#292524">detresser la vannerie elle-meme.</text>
+  <rect x="280" y="290" width="188" height="18" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1" opacity="0"/>
+  <rect x="280" y="292" width="188" height="18" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1"/>
+  <text x="374" y="305" text-anchor="middle" font-size="9.2" font-weight="700" fill="#14532d">Kacher, une fois defait</text>
+
+  <rect x="506" y="140" width="228" height="176" rx="8" fill="#f5f3ff" stroke="#6d28d9" stroke-width="1.5"/>
+  <text x="620" y="162" text-anchor="middle" font-size="11" font-weight="700" fill="#4c1d95">3. Noeud inutile au transport</text>
+  <text x="620" y="180" text-anchor="middle" font-size="9.2" fill="#57534e">Rav Houna b. Rav Yehochoua -- seg. 3</text>
+  <line x1="526" y1="190" x2="714" y2="190" stroke="#d6d3d1" stroke-width="1"/>
+  <text x="520" y="208" font-size="9" fill="#292524">Cas : la meme hutte, le bas</text>
+  <text x="520" y="221" font-size="9" fill="#292524">toujours tresse.</text>
+  <text x="520" y="241" font-size="9" fill="#292524">Raison : tout agad qui ne permet</text>
+  <text x="520" y="254" font-size="9" fill="#292524">pas de deplacer l objet n est pas</text>
+  <text x="520" y="267" font-size="9" fill="#292524">un agad. Sitot soulevee, la hutte</text>
+  <text x="520" y="280" font-size="9" fill="#292524">se defait d elle-meme.</text>
+  <rect x="520" y="292" width="188" height="18" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1"/>
+  <text x="614" y="305" text-anchor="middle" font-size="9.2" font-weight="700" fill="#14532d">Kacher, meme sans rien defaire</text>
+
+  <rect x="26" y="330" width="708" height="82" rx="7" fill="#f8fafc" stroke="#475569" stroke-width="1.3"/>
+  <text x="40" y="350" font-size="10.2" font-weight="700" fill="#1e293b">Ce que les trois ont en commun</text>
+  <text x="40" y="368" font-size="9.2" fill="#292524">Aucune ne conteste que la matiere soit physiquement liee. Chacune conteste que ce lien soit un agad au sens du decret :</text>
+  <text x="40" y="383" font-size="9.2" fill="#292524">un agad, c est un noeud fait pour que la botte reste une botte -- pour la ranger, la garder, la deplacer.</text>
+  <text x="40" y="398" font-size="9.2" fill="#57534e">La reponse la plus forte est la troisieme : elle ne demande aucun geste du proprietaire, seulement de regarder a quoi sert le noeud.</text>
+</svg></div>
+          <figcaption>Les trois facons dont un noeud cesse d etre un agad -- et pourquoi la troisieme est la plus forte.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 462" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="462" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">La mahloket sur les yadot : deux enseignements de Rav Houna, deux portees</text>
+  <text x="380" y="42" text-anchor="middle" font-size="10" fill="#57534e">Une yad est un manche qui transmet la touma a l aliment -- mais seulement si le proprietaire en veut</text>
+
+  <rect x="26" y="56" width="708" height="44" rx="7" fill="#f8fafc" stroke="#475569" stroke-width="1.3"/>
+  <text x="40" y="74" font-size="10" fill="#292524">Regle de base (Houlin 117a) : la tige, la rafle, le chaume attenants a un aliment sont des yadot -- ils recoivent la touma et la lui transmettent.</text>
+  <text x="40" y="90" font-size="10" fill="#292524">Condition posee par Rachi : encore faut-il que ce soit une prise dont on a besoin. Ce qui ne sert a rien n est pas une yad, c est un dechet.</text>
+
+  <rect x="26" y="112" width="344" height="150" rx="8" fill="#eef2ff" stroke="#4338ca" stroke-width="1.5"/>
+  <text x="198" y="134" text-anchor="middle" font-size="11.4" font-weight="700" fill="#312e81">Rabbi Abba au nom de Rav Houna</text>
+  <text x="198" y="152" text-anchor="middle" font-size="9.4" fill="#57534e">segment 5</text>
+  <text x="40" y="172" font-size="9.4" font-weight="700" fill="#292524">Vendanger pour le pressoir : pas de yadot</text>
+  <text x="40" y="190" font-size="9" fill="#292524">Les rafles ne servent pas au vigneron : elles</text>
+  <text x="40" y="203" font-size="9" fill="#292524">sucent le vin et le gatent (Rachi, seg. 7).</text>
+  <rect x="40" y="214" width="316" height="38" rx="5" fill="#fff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="52" y="230" font-size="9" fill="#1e293b">Et moissonner pour le sekhakh ?</text>
+  <text x="52" y="245" font-size="9" font-weight="700" fill="#166534">Il y a des yadot -- le grain lui sert de lest.</text>
+
+  <rect x="390" y="112" width="344" height="150" rx="8" fill="#fffbeb" stroke="#b45309" stroke-width="1.5"/>
+  <text x="562" y="134" text-anchor="middle" font-size="11.4" font-weight="700" fill="#78350f">Rav Menachya bar Gada au nom de Rav Houna</text>
+  <text x="562" y="152" text-anchor="middle" font-size="9.4" fill="#57534e">segment 6</text>
+  <text x="404" y="172" font-size="9.4" font-weight="700" fill="#292524">Moissonner pour le sekhakh : pas de yadot</text>
+  <text x="404" y="190" font-size="9" fill="#292524">Celui qui couvre sa soukka ne veut que la paille ;</text>
+  <text x="404" y="203" font-size="9" fill="#292524">le grain, il n en a que faire.</text>
+  <rect x="404" y="214" width="316" height="38" rx="5" fill="#fff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="416" y="230" font-size="9" fill="#1e293b">Et vendanger pour le pressoir ?</text>
+  <text x="416" y="245" font-size="9" font-weight="700" fill="#991b1b">A plus forte raison : pas de yadot non plus.</text>
+
+  <path d="M198 262 L198 288" stroke="#4338ca" stroke-width="1.4"/><path d="M192 287 L204 287 L198 294 Z" fill="#4338ca"/>
+  <path d="M562 262 L562 288" stroke="#b45309" stroke-width="1.4"/><path d="M556 287 L568 287 L562 294 Z" fill="#b45309"/>
+
+  <rect x="26" y="300" width="708" height="46" rx="7" fill="#ecfeff" stroke="#0e7490" stroke-width="1.4"/>
+  <text x="40" y="318" font-size="10.2" font-weight="700" fill="#164e63">La baraita arbitre (segment 8) : Aherim exigent que la paille depasse les yadot ET la nourriture</text>
+  <text x="40" y="336" font-size="9.2" fill="#292524">Aherim comptent donc des yadot au produit moissonne ; le premier tanna, qui ne compte que la nourriture, semble n en compter aucune.</text>
+
+  <rect x="26" y="356" width="344" height="94" rx="8" fill="#f0fdf4" stroke="#15803d" stroke-width="1.4"/>
+  <text x="198" y="376" text-anchor="middle" font-size="10.4" font-weight="700" fill="#14532d">Pour Rabbi Abba : oui, c est tannaitique</text>
+  <text x="40" y="396" font-size="9" fill="#292524">Il dit comme Aherim : moissonner pour le sekhakh</text>
+  <text x="40" y="409" font-size="9" fill="#292524">donne des yadot. Le premier tanna le contredit</text>
+  <text x="40" y="422" font-size="9" fill="#292524">frontalement -- impossible de le lire autrement.</text>
+  <text x="40" y="440" font-size="9" fill="#57534e">Sa position est donc adossee a un tanna, pas a tous.</text>
+
+  <rect x="390" y="356" width="344" height="94" rx="8" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.4"/>
+  <text x="562" y="376" text-anchor="middle" font-size="10.4" font-weight="700" fill="#7f1d1d">Pour Rav Menachya : non, il se sauve</text>
+  <text x="404" y="396" font-size="9" fill="#292524">Il relit la baraita : on a coupe pour manger, puis</text>
+  <text x="404" y="409" font-size="9" fill="#292524">on s est ravise pour couvrir. Les yadot sont nees</text>
+  <text x="404" y="422" font-size="9" fill="#292524">de la premiere intention -- tout le monde l admet.</text>
+  <text x="404" y="440" font-size="9" fill="#57534e">Prix a payer : expliquer ce que disent alors les Sages (seg. 11).</text>
+</svg></div>
+          <figcaption>Rabbi Abba contre Rav Menachya bar Gada : meme maitre, deux enseignements, deux portees inegales.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא אֵימָא: עַד שֶׁתְּהֵא תְּחִלָּתוֹ כִּשְׁיָרָיו אֶחָד.</div>
+            <div class="fr"><p>Plutot, dis ainsi : [le faisceau n&#x27;est invalide] que si son commencement est comme ses restes — un seul brin.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא</b> אַתְּחִלָּתוֹ קָאֵי וְהָכִי קָאָמַר אֵין תְּחִילָּתוֹ פָּסוּל עַד שֶׁיְּהֵא הוּא כְּשִׁיעוּר שְׁיָרָיו דְּהַייְנוּ אֶחָד אַלְמָא לְרַבָּנָן שְׁלֹשָׁה דְּקָאָמְרִינַן לְעֵיל לְמִצְוָה דְּאִי לְעַכֵּב הָא מַנִּי לָא רַבִּי יוֹסֵי וְלָא רַבָּנַן:</div>
+          <div class="glose-fr">Plutot : cela porte sur son commencement, et voici ce qu&#x27;il veut dire — son commencement n&#x27;est pas invalide tant qu&#x27;il n&#x27;est pas reduit a la mesure de ses restes, c&#x27;est-a-dire un seul brin. Il en ressort donc que, pour les Sages, les trois dont nous avons parle plus haut ne valent que pour la mitsva (a priori) ; car si c&#x27;etait indispensable, de qui serait cette baraita ? Ni de Rabbi Yossei, ni des Sages.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le folio s'ouvre sur la derniere retouche d'un debat entame en 13a : combien de brins faut-il a un faisceau d'<b>ezov</b> (hysope) pour qu'il reste valide ? La baraita semblait dire que le faisceau devient invalide des que son <b>commencement</b> tombe au niveau de ce qu'on tolere pour ses <b>restes</b> — ce qui creait une contradiction interne.</p><p>La correction (<i>ela eima</i>, « plutot dis ») deplace le seuil : le commencement n'invalide que s'il est reduit a un seul brin. Rachi en tire la consequence decisive pour tout le dossier : chez les Sages, l'exigence de trois brins n'est qu'une exigence <b>lekhat'hila</b> (a priori) et non un <b>ikouv</b> (une condition sine qua non). Sans cette lecture, la baraita ne correspondrait a l'avis d'aucun des deux camps.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">דָּרַשׁ מֵרִימֶר: הָנֵי אִיסּוּרְיָיתָא דְּסוּרָא — מְסַכְּכִין בְּהוּ. אַף עַל גַּב דַּאֲגִדָן — לְמִנְיָנָא בְּעָלְמָא הוּא דַּאֲגִדָן.</div>
+            <div class="fr"><p>Marimar a enseigne : ces issouryata (bottes de roseaux) de Soura, on peut en couvrir la soukka. Bien qu&#x27;on les ait liees, ce n&#x27;est que pour le denombrement qu&#x27;on les a liees.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִיסּוּרְיָיתָא דְּסוּרָא</b> חֲבִילֵי קָנִים שֶׁהָיוּ עוֹשִׂין לִמְכֹּור בַּשּׁוּק וּמוֹכְרִין אוֹתָם בְּמִנְיָן:</div>
+          <div class="glose-fr">Les issouryata de Soura : des fagots de roseaux que l&#x27;on confectionnait pour les vendre au marche, et que l&#x27;on vend au compte.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מְסַכְּכִין בָּהֶן</b> וְאֵין בָּהֶם מִשּׁוּם גְּזֵרַת אוֹצָר דְּכָל יְמוֹת הַשָּׁנָה לְפִי שֶׁאֵין דֶּרֶךְ לְהַצְנִיעָם בְּאַגְדָּם:</div>
+          <div class="glose-fr">On peut en couvrir : et il n&#x27;y a pas en elles le motif du decret de l&#x27;entrepot (otsar), celui des bottes que l&#x27;on conserve toute l&#x27;annee, parce qu&#x27;il n&#x27;est pas d&#x27;usage de les entreposer liees.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא לְמִנְיָנָא בְּעָלְמָא</b> אַגְדִינְהוּ עַד שֶׁיִּמְכְּרוּ וְהַלּוֹקְחָן לְייַבְּשָׁן מַתִּיר אֲגָדָן הִלְכָּךְ הַמְסַכֵּךְ בָּהֶן לְשֵׁם סֻוכָּה אֵינוֹ צָרִיךְ לְהַתִּיר אֲגָדָן:</div>
+          <div class="glose-fr">Mais seulement pour le denombrement : il les lie le temps qu&#x27;elles se vendent, et celui qui les achete pour les faire secher en defait le lien. Par consequent, celui qui en couvre sa soukka n&#x27;a pas besoin d&#x27;en defaire le lien.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אָמַר רַב יְהוּדָה הָנֵי שׁוּצֵי וּשְׁוָצְרֵי מְסַכְּכִין בָּהֶן. מִין עֵשֶׂב הֵן וַעֲלֵיהֶם רְחָבִים וְגִידּוּלָן בַּיַּעַר. אַבַּיֵּי אָמַר בְּשׁוֹצֵי מְסַכְּכִין בִּשְׁוָצְרֵי אֵין מְסַכְּכִין מַאי טַעְמָא כֵּיוָן דְּסָנֵי רֵיחַיְיהוּ שָׁבֵיק לְהוּ וְנָפֵיק. אָמַר ר&#x27; חָנָן בַּר רָבָא הָנֵי הִיזְמֵי וְהִיגֵי מְסַכְּכִין בָּהֶן אַבַּיֵּי אָמַר בְּהִיזְמֵי מְסַכְּכִין בְּהִיגֵי אֵין מְסַכְּכִין דְּכֵיוָן דְּנָתְרִי טַרְפַיְיהוּ שָׁבֵיק לְהוּ וְנָפֵיק. בְּכָל הָנֵי לְכַתְּחִילָּה לָא מִשּׁוֹס גְּזֵרָה דִּלְמָא שָׁבֵיק לְהוּ וְנָפֵיק אֲבָל יָצָא יְדֵי חוֹבָתוֹ אִם סִיכֵּךְ בָּהֶן וכ&quot;כ הָרַמְבַּ&quot;ם זַ&quot;ל פ&quot;ה מֹהַל&#x27; סֻוכָּה ה&quot;ב. אָמַר רַב גִּידֵּל אָמַר רַב הַאי אַפָּקוּתָא דְּדִיקְלָא מְסַכְּכִין בֵּיהּ אַף ע&quot;ג דַּאֲגִידִי אֶגֶד בִּידֵי שָׁמַיִם לָא שְׁמֵיהּ אֶגֶד ואע&quot;ג דַּהֲדַר אַגִּיד לְהוּ מִלְמַעְלָה אֶגֶד דְּחַד לָא שְׁמֵיהּ אֶגֶד כֵּיוָן שֶׁהוּא לְמַטָּה אֶחָד ואע&quot;פ שֶׁמִּתְפַּצֵּל לְכַמָּה קָנִים חַד מִיקְּרוּ וְלָא שְׁמֵיהּ אֶגֶד. אָמַר רַב חִסְדָּא אֶגֶד דְּחַד לָא שְׁמֵיהּ אֶגֶד ג&#x27; שְׁמֵיהּ אֶגֶד שְׁנַיִם מַחְלֹוקֶת רַבִּי יוֹסֵי וְרַבָּנַן רַבִּי יוֹסֵי בָּעֵי ג&#x27; וְרַבָּנָן בָּעוּ שְׁנַיִם וַהֲלָכָה כְּרַבָּנָן דִּתְרֵין הָוֵי אֶגֶד וְכָל דָּבָר כְּמוֹ אַפְקוּתָא וְדוּקָרִי דְּקָנֵי דִּכְשֶׁאֲגָדָן וְאַחֵר עִמּוֹ הֲוָה חֲבִילָה בַּחֲבִילָה שֶׁל כ&quot;ה קָנִים כְּהַהִיא דִּירוּשַׁלְמִי: דָּרֵשׁ מָרִימָר הָנֵי אִיסּוּרְייָתָא דְסוּרָא מְסַכְּכִין בָּהֶן ואע&quot;ג דַּאֲגִידָן לְמִנְיָנָא בְּעָלְמָא הוּא דַּאֲגִדָן אָמַר ר&#x27; אַבָּא אָמַר שְׁמוּאֵל הָנֵי צְרִיפֵי דְּאוֹרְבֵינִי כֵּיוָן שֶׁהִתִּיר רָאשֵׁי מַעֲדַנִּים שֶׁלָּהּ כְּשֵׁירָה וְהָא אַגִּיד מִתַּתַּאי א&quot;ר פָּפָּא דְּשָׁרֵי לְהוּ. רַב הוּנָא בְּרֵיהּ דְּרַב יְהוֹשֻׁעַ אָמַר אֲפִילּוּ תֵּימָא דְּלָא שָׁרֵי לְהוּ כָּל אֶגֶד שֶׁאֵינוֹ עָשׂוּי לְטַלְטְלוֹ בּוֹ לָא שְׁמֵיהּ אֶגֶד:</div>
+          <div class="glose-fr">Rav Yehouda a dit : ces chouchei et ces chavtseri, on peut en couvrir la soukka. Ce sont des especes d&#x27;herbe, leurs feuilles sont larges et elles poussent en foret. Abaye a dit : avec les chouchei on couvre, avec les chavtseri on ne couvre pas ; quelle en est la raison ? Puisque leur odeur est repoussante, il les abandonne et sort. Rabbi Hanan bar Rava a dit : ces heizmei et ces higei, on peut en couvrir ; Abaye a dit : avec les heizmei on couvre, avec les higei on ne couvre pas, car puisque leurs feuilles tombent, il les abandonne et sort. Dans tous ces cas, &lt;b&gt;lekhat&#x27;hila&lt;/b&gt; (a priori) on ne le fait pas, en raison du decret de crainte qu&#x27;il n&#x27;abandonne la soukka et n&#x27;en sorte ; mais s&#x27;il a couvert avec elles, il s&#x27;est acquitte de son obligation, et ainsi a ecrit le Rambam, de memoire benie, au chapitre 5 des Lois de la Soukka, halakha 2. Rav Guidel a dit au nom de Rav : cette apkouta de-dikla (souche de palmier a rejets), on peut en couvrir ; et bien que les rejets soient lies, un lien fait par la main du Ciel n&#x27;est pas appele un lien ; et bien qu&#x27;il les lie ensuite par le haut, le lien d&#x27;une chose unique n&#x27;est pas appele un lien, puisqu&#x27;en bas elle est une seule piece : meme si elle se ramifie en plusieurs tiges, elle est appelee une, et ce n&#x27;est pas un lien. Rav Hisda a dit : le lien d&#x27;un seul n&#x27;est pas un lien ; a trois, c&#x27;est un lien ; a deux, c&#x27;est la controverse de Rabbi Yossei et des Sages — Rabbi Yossei exige trois et les Sages exigent deux ; et la &lt;b&gt;halakha&lt;/b&gt; suit les Sages : deux constituent un lien. Et toute chose comme l&#x27;apkouta ou les dokrei de-kanei, lorsqu&#x27;il les lie et y adjoint une autre chose, devient fagot dans un fagot, d&#x27;une botte de vingt-cinq roseaux, comme dans ce passage du Yerouchalmi. Marimar a enseigne : ces issouryata de Soura, on peut en couvrir, et bien qu&#x27;elles soient liees, elles ne l&#x27;ont ete que pour le denombrement. Rabbi Abba a dit au nom de Chemouel : ces tsrifei de saule, des lors qu&#x27;il a defait les extremites de leurs attaches, elles sont kacheres. Mais elles sont pourtant liees par le bas ! Rav Papa a dit : c&#x27;est qu&#x27;il les a deliees. Rav Houna fils de Rav Yehochoua a dit : tu peux meme dire qu&#x27;il ne les a pas deliees — tout lien qui n&#x27;est pas fait pour transporter l&#x27;objet n&#x27;est pas appele un lien.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rappel du decret pose en 12a-12b : un <b>houvila</b> (fagot) pose sur la soukka la rend <b>passoul</b> (invalide), de crainte qu'on ne finisse par couvrir avec des bottes sorties de l'entrepot, mises la pour secher et non pour l'ombre.</p><p>Marimar tranche par la finalite du noeud. Les roseaux de Soura sont lies pour une raison purement commerciale : on les vend a la piece, et le lien sert a compter. L'acheteur le defait de toute facon. Rachi ajoute l'argument decisif : <i>il n'est pas d'usage de les entreposer liees</i> — donc le scenario que le decret redoutait ne se presente pas.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַבִּי אַבָּא: הָנֵי צְרִיפֵי דְּאֻורְבָּנֵי, כֵּיוָן שֶׁהֻותְּרָה רָאשֵׁי מַעֲדַנִּים שֶׁלָּהֶן — כְּשֵׁרִין. וְהָא אַגִּידֵי מִתַּתַּאי! אָמַר רַב פָּפָּא: דְּשָׁרֵי לְהוּ.</div>
+            <div class="fr"><p>Rabbi Abba a dit : ces tsrifei de-orbani (huttes faites de branches de saule), des lors qu&#x27;on a defait les extremites de leurs attaches, elles sont kacheres. Mais elles sont pourtant liees par le bas !</p><p>Rav Papa a dit : il s&#x27;agit d&#x27;un cas ou il les a deliees.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(5)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>צְרִיפֵי</b> כְּמִין כּוּךְ עָגֹול כְּכוֹבַע וְנֶחְבָּאִים בְּתוֹכוֹ צַיָּידֵי עוֹפוֹת:</div>
+          <div class="glose-fr">Tsrifin : une sorte de niche ronde, en forme de chapeau, dans laquelle se dissimulent les oiseleurs.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּאֻורְבָּנֵי</b> עָשׂוּי מֵעַנְפֵי עֲרָבוֹת וְגוֹדְלִין אוֹתוֹ מִתַּחְתָּיו פִּיו רָחָב וּלְמַעְלָה קוֹשְׁרִין רָאשֵׁי הַנְּצָרִים בְּחֶבֶל קֶשֶׁר אֶחָד כְּעֵין כְּלֵי מְצוּדוֹת שֶׁצָּדִין דָּגִים קְטַנִּים שֶׁעוֹשִׂין בְּגֻומָּא שֶׁקּוֹרִין יונק&quot;ש אֲבָל אֵין בְּצָרִיף שְׁלֹשָׁה וְאַרְבָּעָה בָּתֵּי אֲרִיגָה כְּמוֹ שֶׁיֵּשׁ לַמְּצוּדָה:</div>
+          <div class="glose-fr">De-orbani : faite de branches de saule. On la tresse par le bas, son ouverture est large, et par le haut on attache les pointes des rameaux avec une corde, en un seul noeud, a la maniere des nasses dont on se sert pour prendre les petits poissons et que l&#x27;on fabrique en jonc — celles qu&#x27;on appelle yonqes. Mais il n&#x27;y a pas dans le tsrif trois ou quatre rangs de tressage comme il y en a dans la nasse.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>רָאשֵׁי מַעֲדַנִּים</b> קֶשֶׁר הָעֶלְיוֹן מַעֲדַנִּים כְּמוֹ הַתְקַשֵּׁר מַעֲדַנּוֹת כִּימָה (אִיּוֹב ל״ח:ל״א):</div>
+          <div class="glose-fr">Les extremites des maadanim : le noeud du haut. Maadanot, comme dans « noueras-tu les liens (maadanot) des Pleiades » (Job 38, 31).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִתַּתַּאי</b> לְצַד פִּיו הוּא קָלוּעַ:</div>
+          <div class="glose-fr">Par le bas : c&#x27;est du cote de son ouverture qu&#x27;elle est tressee.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּשָׁרֵי לְהוּ</b> מַתִּיר רָאשֵׁי הַחוּט שֶׁהוּא קָלוּעַ בּוֹ וְאֵינוֹ צָרִיךְ לְהַפְקִיעַ הַקְּלִיעָה:</div>
+          <div class="glose-fr">Il s&#x27;agit d&#x27;un cas ou il les a deliees : il defait les extremites du fil avec lequel elle est tressee, et il n&#x27;a pas besoin de defaire le tressage lui-meme.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouveau cas d'espece. Le <b>tsrif de-orbani</b> est une hutte conique en branches de saule, fermee en pointe par un noeud unique et tressee en bas autour d'une large ouverture. Rabbi Abba autorise de s'en servir comme <b>sekhakh</b> (couverture) une fois le noeud du sommet defait.</p><p>La Guemara objecte : le bas reste tresse, donc le lien subsiste. Rav Papa repond sur le terrain des faits — Rabbi Abba parle d'un cas ou l'on a aussi retire le fil du bas. Rachi precise l'economie du geste : il suffit de tirer le fil, sans avoir a detresser toute la vannerie.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="340" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="13.6" font-weight="700" fill="#1c1917">Le tsrif de-orbani : ou se trouvent les deux liens</text>
+  <text x="350" y="41" text-anchor="middle" font-size="9.4" fill="#57534e">D apres Rachi : hutte conique en branches de saule, ou se cachent les oiseleurs</text>
+
+  <line x1="70" y1="292" x2="630" y2="292" stroke="#a8a29e" stroke-width="1.6"/>
+  <path d="M240 292 L300 88 L360 292 Z" fill="#f7fee7" stroke="#4d7c0f" stroke-width="1.8"/>
+  <path d="M262 292 L300 106" stroke="#84cc16" stroke-width="0.9"/>
+  <path d="M282 292 L300 106" stroke="#84cc16" stroke-width="0.9"/>
+  <path d="M320 292 L300 106" stroke="#84cc16" stroke-width="0.9"/>
+  <path d="M340 292 L300 106" stroke="#84cc16" stroke-width="0.9"/>
+
+  <circle cx="300" cy="92" r="9" fill="none" stroke="#b91c1c" stroke-width="2.4"/>
+  <text x="376" y="86" font-size="10.4" font-weight="700" fill="#7f1d1d">Lien du haut -- rachei maadanim</text>
+  <text x="376" y="102" font-size="9" fill="#292524">Une corde, un seul noeud, qui rassemble</text>
+  <text x="376" y="115" font-size="9" fill="#292524">les pointes de tous les rameaux.</text>
+  <text x="376" y="132" font-size="9" font-weight="700" fill="#166534">Rabbi Abba : on le defait -- kacher.</text>
+  <path d="M370 88 L316 90" stroke="#b91c1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+
+  <path d="M244 274 Q300 262 356 274" fill="none" stroke="#c2410c" stroke-width="2.6"/>
+  <path d="M244 262 Q300 250 356 262" fill="none" stroke="#c2410c" stroke-width="2.6"/>
+  <text x="376" y="222" font-size="10.4" font-weight="700" fill="#7c2d12">Tressage du bas -- mitatai</text>
+  <text x="376" y="238" font-size="9" fill="#292524">Cote de l ouverture large : la vannerie</text>
+  <text x="376" y="251" font-size="9" fill="#292524">proprement dite, un fil passe en cordon.</text>
+  <text x="376" y="268" font-size="9" fill="#292524">Rav Papa : il en defait le fil -- pas besoin</text>
+  <text x="376" y="281" font-size="9" fill="#292524">de detresser toute la vannerie.</text>
+  <text x="376" y="300" font-size="9" font-weight="700" fill="#4c1d95">Rav Houna b. R. Yehochoua : meme laisse en place,</text>
+  <text x="376" y="313" font-size="9" font-weight="700" fill="#4c1d95">il ne sert pas au transport -- ce n est pas un agad.</text>
+  <path d="M370 250 L360 262" stroke="#c2410c" stroke-width="1.2" stroke-dasharray="3 3"/>
+
+  <text x="150" y="150" font-size="9.4" font-weight="700" fill="#292524">Ce que dit Rachi de la forme</text>
+  <text x="82" y="170" font-size="8.8" fill="#57534e">Comme une niche ronde, en forme</text>
+  <text x="82" y="183" font-size="8.8" fill="#57534e">de chapeau ; ouverture large en bas,</text>
+  <text x="82" y="196" font-size="8.8" fill="#57534e">pointe fermee en haut.</text>
+  <text x="82" y="215" font-size="8.8" fill="#57534e">Contrairement a la nasse a poissons,</text>
+  <text x="82" y="228" font-size="8.8" fill="#57534e">elle n a pas trois ou quatre rangs</text>
+  <text x="82" y="241" font-size="8.8" fill="#57534e">de tressage : un seul cordon suffit.</text>
+</svg></div><div class="svg-cap">Anatomie du tsrif de saule : le noeud du sommet, la vannerie du bas, et ce que chaque maitre en fait.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">(וְאָמַר) רַב הוּנָא בְּרֵיהּ דְּרַב יְהוֹשֻׁעַ: אֲפִילּוּ תֵּימָא דְּלָא שָׁרֵי לְהוּ, כָּל אֶגֶד שֶׁאֵינוֹ עָשׂוּי לְטַלְטְלוֹ — לָא שְׁמֵיהּ אֶגֶד.</div>
+            <div class="fr"><p>Rav Houna fils de Rav Yehochoua a dit : tu peux meme dire qu&#x27;il ne les a pas deliees — tout lien qui n&#x27;est pas fait pour transporter [l&#x27;objet] n&#x27;est pas appele un lien.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁאֵינוֹ עָשׂוּי לְטַלְטְלוֹ</b> כְּגוֹן זֶה שֶׁמִּשֶּׁהִתִּיר קֶשֶׁר הָעֶלְיוֹן אִם אַתָּה מְטַלְטְלוֹ הוּא נִיתַּק מֵאֵלָיו שֶׁאֵין לוֹ אֶלָּא פִּיו קָלוּעַ כְּמִין גְּדִיל לֶאֱחֹוז אֶת הַנְּצָרִים:</div>
+          <div class="glose-fr">Qui n&#x27;est pas fait pour le transporter : comme ici — des lors qu&#x27;il a defait le noeud du haut, si tu la transportes elle se defait d&#x27;elle-meme, car elle n&#x27;a que son ouverture tressee, a la maniere d&#x27;un cordon, pour retenir les rameaux.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Houna fils de Rav Yehochoua repond a l'objection sans rien exiger du proprietaire. Il pose une <b>definition</b> : un <b>agad</b> (lien), au sens du decret, est un noeud qui permet de manipuler l'objet comme une unite. Un tressage qui ne sert pas au transport n'est pas un agad, quelle que soit sa solidite.</p><p>Rachi verifie le critere sur le cas : une fois le sommet defait, il suffit de soulever la hutte pour qu'elle se disloque. Le cordon du bas ne tient donc rien qui compte — il ne fait pas d'elle un objet transportable.</p><p>C'est la reponse la plus forte du groupe : les deux premieres dependaient de ce que l'homme avait fait ou voulu, celle-ci se lit dans la structure meme de l'objet.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַבִּי אַבָּא אָמַר שְׁמוּאֵל: יְרָקוֹת שֶׁאָמְרוּ חֲכָמִים אָדָם יוֹצֵא בָּהֶן יְדֵי חוֹבָתוֹ בַּפֶּסַח, מְבִיאִין אֶת הַטֻּומְאָה, וְאֵין חוֹצְצִין בִּפְנֵי הַטֻּומְאָה, וּפוֹסְלִין בַּסֻּוכָּה מִשּׁוּם אֲוִיר. מַאי טַעְמָא — כֵּיוָן דִּלְכִי יָבְשִׁי פָּרְכִי וְנָפְלִי, כְּמַאן דְּלֵיתַנְהוּ דָּמֵי.</div>
+            <div class="fr"><p>Rabbi Abba a dit au nom de Chemouel : les legumes dont les Sages ont dit qu&#x27;un homme s&#x27;acquitte par eux de son obligation [de maror] a Pessah — ils amenent la touma (impurete), ils ne font pas ecran devant la touma, et ils rendent la soukka passoul au titre de l&#x27;air. Quelle en est la raison ?</p><p>Puisque, une fois secs, ils s&#x27;effritent et tombent, ils sont consideres comme s&#x27;ils n&#x27;etaient pas la.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>יְרָקוֹת שֶׁאָמְרוּ חֲכָמִים</b> בְּפֶסַח שֶׁאָדָם יוֹצֵא בָּהֶן יְדֵי מָרוֹר חֲזֶרֶת וָעֳולָשִׁין וּשְׁאָר חַבְרוֹתֵיהֶן דַּקּוֹת הֵם טינב&quot;ש בְּלַעַ&quot;ז הִלְכָּךְ אֵין חוֹצְצִין בִּפְנֵי הַטֻּומְאָה אִם סִיכֵּךְ בָּהֶן גַּג וּמִדְּרַבָּנָן הוּא דִּגְזוּר עֲלַייְהוּ שֶׁלֹּא יִסְמְכוּ עֲלֵיהֶן לַחוּץ בִּפְנֵי הַטֻּומְאָה דִּלְמָא סָמְכִי עֲלַייְהוּ לְכִי יָבְשִׁי נָמֵי מִיהוּ בְּעוֹדָן לַחִין חוֹצְצִין מִדְּאוֹרַיְיתָּא מִשּׁוּם דְּלָא מְקַבְּלִי טֻומְאָה דְּלָאו מַאֲכַל אָדָם נִינְהוּ (דְּאִי מְקַבְּלִי טֻומְאָה לָא חָייְצִי בִּפְנֵי הַטֻּומְאָה) וּלְכִי יָבְשִׁי אֵין חֲצִיצָתָן חֲצִיצָה כְּדִמְפָרֵשׁ דְּמִפָּרְכִי וְנָפְלִי:</div>
+          <div class="glose-fr">Les legumes dont les Sages ont dit : a Pessah, qu&#x27;un homme s&#x27;acquitte par eux du maror (herbes ameres) — la laitue (hazeret), la chicoree (oulchin) et leurs congeneres : elles sont fines, tenves en langue vulgaire. Par consequent, elles ne font pas ecran devant la touma s&#x27;il en a couvert un toit ; et c&#x27;est d&#x27;ordre rabbinique que l&#x27;on a decrete a leur sujet qu&#x27;on ne s&#x27;appuierait pas sur elles pour faire ecran devant la touma, de crainte qu&#x27;on ne s&#x27;appuie sur elles egalement une fois seches. Toutefois, tant qu&#x27;elles sont fraiches, elles font ecran d&#x27;ordre toraique, parce qu&#x27;elles ne recoivent pas la touma, n&#x27;etant pas nourriture d&#x27;homme (car si elles recevaient la touma, elles ne feraient pas ecran devant la touma) ; et une fois seches, leur ecran n&#x27;est pas un ecran, comme il l&#x27;explique : elles s&#x27;effritent et tombent.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמְבִיאִין אֶת הַטֻּומְאָה</b> בְּעוֹדָן לַחִין וְכָל כַּמָּה דְּלָא יָבְשִׁי אֹהֶל הוּא מִדְּאוֹרַיְיתָּא:</div>
+          <div class="glose-fr">Et elles amenent la touma : tant qu&#x27;elles sont fraiches ; et aussi longtemps qu&#x27;elles ne sont pas seches, c&#x27;est un ohel (une tente, une couverture) d&#x27;ordre toraique.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּפוֹסְלִין בַּסֻּוכָּה מִשּׁוּם אֲוִיר</b> כְּשִׁיעוּר שֶׁאֲוִיר פּוֹסֵל בָּהּ דְּהַייְנוּ בִּשְׁלֹשָׁה טְפָחִים כִּדְאָמְרִינַן לְקַמָּן בְּפִירְקִין (סֻוכָּה דַּף יז.) אֲוִיר בִּשְׁלֹשָׁה וְלָא מְשַׁעֲרִינַן לְהוּ לִפְסֹול כְּשִׁיעוּר שְׁאָר סְכָךְ פָּסוּל דְּאֹוכֶל הָרָאוּי לְקַבֵּל טֻומְאָה הוּא וּסְכָךְ פָּסוּל אֵינוֹ פּוֹסֵל אֶלָּא בְּאַרְבָּעָה טְפָחִים בְּאֶמְצַע וְאַרְבַּע אַמּוֹת מִן הַצַּד אֶלָּא כִּי אֲוִיר דָּיְינִינַן לְהוּ לְחוּמְרָא וּבִשְׁלֹשָׁה:</div>
+          <div class="glose-fr">Et elles rendent la soukka passoul au titre de l&#x27;air : selon la mesure par laquelle l&#x27;air l&#x27;invalide, c&#x27;est-a-dire trois tefahim (paumes), comme nous le dirons plus loin dans ce chapitre (Soukka 17a) : l&#x27;air, a trois. Et on ne les evalue pas, pour invalider, selon la mesure du reste du sekhakh passoul (couverture invalide) — bien que ce soit un aliment susceptible de recevoir la touma, et que le sekhakh passoul n&#x27;invalide qu&#x27;a quatre tefahim au milieu et quatre coudees sur le cote — mais on les juge comme de l&#x27;air, par rigueur, et donc a trois.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">יְרָקוֹת שֶׁאָמְרוּ חֲכָמִים. בְּפֶסַח שֶׁאָדָם יוֹצֵא בָּהֶן יְדֵי מָרוֹר חֲזֶרֶת וָעֳולָשִׁין וְתַמְכָא וְחַרְחֲבִינָא דַּקּוֹת הֵן מְאֹד טינב&quot;ש בְּלַעַ&quot;ז הִלְכָּךְ אֵין חוֹצְצִין בָּהֶן בִּפְנֵי הַטֻּומְאָה אִם סִיכֵּךְ בָּהֶן גַּג וּמִדְּרַבָּנָן הוּא דִּגְזוּר רַבָּנָן עֲלַיְיהוּ שֶׁלֹּא יִסְמְכוּ עֲלֵיהֶן לַחוּץ מִפְּנֵי הַטֻּומְאָה דִּלְמָא סָמְכוּ עֲלַייְהוּ נָמֵי לְכִי יָבְשִׁי וּמִיהוּ מִדְּאוֹרַיְיתָּא חָייְצִי דְּלָא מְקַבְּלִי טֻומְאָה דְּלָאו מַאֲכַל אָדָם נִינְהוּ וּלְכִי יָבְשִׁי אֵין חֲצִיצָתָן חֲצִיצָה כְּדִמְפָרֵשׁ דְּמִפָּרְכִי וְנָפְלִי וּמְבִיאִין אֶת הַטֻּומְאָה בְּעוֹדָן לַחִין דְּכָל כַּמָּה דְּלָא יָבְשׁוּ אֹהֶל הוּא מִדְּאוֹרַיְיתָּא כִּדְפֵירֵשׁ בַּקּוּנְטְרֵס וּמַה שֶׁהֻוזְקַק לְפָרֵשׁ מִדְּרַבָּנָן דְּאִי חֲשִׁיבִי אֹהֶל מִדְּאוֹרַייְתָּא הוּא לְעִנְיַן הֲבָאָה אִם כֵּן לְעִנְיַן חֲצִיצָה נַמֵּי וְאִי לָא חֲשִׁיבִי אֹהֶל לְעִנְיַן חֲצִיצָה אִם כֵּן לְעִנְיַן הֲבָאָה נָמֵי לֹא דְּלָא דָּמֵי לְהָנְהוּ דְּחָשֵׁיב בְּפֶרֶק שְׁמִינִי דְּאֹהָלוֹת (מ&quot;א) גַּבֵּי מְבִיאִין וְלֹא חוֹצְצִין דְּהָתָם הַיְינוּ טַעְמָא מִשּׁוּם דְּדָבָר הַמְקַבֵּל טֻומְאָה אֵינוֹ חוֹצֵץ מִפְּנֵי הַטֻּומְאָה אֲבָל לֹא שַׁיָּיךְ לְמִיתְלֵי טַעְמָא בְּהָכִי דְּהָא מְפָרֵשׁ טַעְמָא מִשּׁוּם דְּכִי יָבְשִׁי מִפָּרְכִי וְנָפְלִי וְלֹא מִסְתַּבֵּר לְמֵימַר דְּאַסֻּוכָּה לְחוּדָהּ קָאֵי דְּלִכְאוֹרָה אַכֻּולָּהּ מִלְּתָא קָאֵי וְעוֹד דְּאִי בְּהָכִי תָּלֵי טַעְמָא מִמַּתְנִיתִין דְּאֹהָלוֹת שָׁמְעִינַן לֵיהּ דְּקָחֲשִׁיב אֳוכָלִין טְמֵאִין אֶלָּא וַדַּאי מִדְּרַבָּנָן הוּא דְּאֵין חוֹצְצִין הָכָא וְהָא דְּלָא חֲשִׁיב לְהוּ גַּבֵּי הָנְהוּ דְּאֹהָלוֹת מִשּׁוּם דְּהָתָם מַדְאוֹרַיי&#x27; וְהָכָא מִדְּרַבָּנָן אֲבָל קָשֶׁה דְּהֵיכִי מָצֵי לְמֵימַר דְּלָאו מַאֲכַל אָדָם נִינְהוּ הָא אָמְרִינַן בְּפֶרֶק כָּל שָׁעָה (פְּסָחִים דַּף לט:) מַה מַצָּה שֶׁנִּקַּחַת בְּכֶסֶף מַעֲשֵׂר אַף מָרוֹר כו&#x27; וּמֵהַאי טַעְמָא מְמַעֵט הֲרַדְּפֵנִי דְּאֵין יוֹצְאִים בּוֹ יְדֵי מָרוֹר כִּדְפֵירֵשׁ שָׁם בַּקּוּנְטְרֵס דְּהַרְדַּפְנִי אֵינוֹ נִקָּח בְּכֶסֶף מַעֲשֵׂר דְּאֵינוֹ מַאֲכָל וַאֲנַן בָּעֵינַן אֳוכָלִין דֻּומְיָא דַּייָּן וְשֵׁכָר וּבָקָר וְצֹאן וְהַגָּהָה הָיְתָה שֶׁהִגִּיהַּ הָר&#x27; יְהוּדָה בְּפֵירוּשׁ רַשִׁ&quot;י דְּלָא מְקַבְּלִי טֻומְאָה מִשּׁוּם דְּלָאו מַאֲכַל אָדָם נִינְהוּ וְאֵינוֹ כֵּן אֶלָּא מַאֲכַל אָדָם הֵן וְאַפֵּ&quot;ה חָיְיצִי מִדְּאוֹרַייְתָּא כָּל זְמַן שֶׁלֹּא הֻוכְשְׁרוּ כְּדִתְנַן בְּמַסֶּכֶת אֹהָלוֹת פ&quot;ח (מ&quot;א) גַּבֵּי מְבִיאִין וְחוֹצְצִין קָחֲשִׁיב אֳוכָלִין טְהוֹרִין דְּהַיְינוּ שֶׁלֹּא הֻוכְשְׁרוּ וְגַבֵּי מְבִיאִין וְלֹא חוֹצְצִין קָא חֲשִׁיב אֳוכָלִין טְמֵאִין דְּהַיְינוּ שֶׁהֻוכְשְׁרוּ וְכֵן מוּכָח בְּהֶדְיָא פֶּרֶק לֹא יַחְפֹּור (ב&quot;ב דַּף יט: וְשָׁם) בִּשְׁמַעְתִּין דְּרָקִיק וְדַוְוקָא בִּתְלוּשִׁין עָסְקִינַן דְּאֵלּוּ מְחֻובָּרִין לֹא מְבִיאִין וְלֹא חוֹצְצִין כְּדִתְנַן בפ&quot;ח דְּאֹהָלוֹת (מ&quot;ה) אֵלּוּ לֹא מְבִיאִין וְלֹא חוֹצְצִין הַזְּרָעִים וְהַיְרָקוֹת הַמְחֻובָּרִים לַקַּרְקַע חוּץ מִן הַיְרָקוֹת שֶׁמָּנוּ חֲכָמִים כְּלוֹמַר גַּבֵּי מְבִיאִין וְחוֹצְצִין דְּקָחֲשִׁיב הָתָם בְּרֵישׁ פֶּרֶק ח&#x27; הָאֵירוּס וְהַקִּיסּוֹם וְיַרְקוֹת חֲמוֹר וּדְלַעַת יְוָונִית דְּהָנְהוּ אֲפִילּוּ מְחֻובָּרִין חָייְצִי דִּקְבִיעִי וְקָייְמִי וְאֵין הָרוּחַ מְנַעְנְעָן אֲבָל שְׁאַר יְרָקוֹת הַמְחֻובָּרִין מִתְנַעְנְעִין בְּרוּחַ וְהָווּ לְהוּ כְּטַלִּית וּסְפִינָה שֶׁהִיא שָׁטָה עַל פְּנֵי הַמַּיִם וַאֲפִילּוּ בְּעִידָּנָא דְּלָא נָייְדִי וְאֵין מְבִיאִין וְאֵין חוֹצְצִין מִדְּקָתָנֵי בְּסֵיפָא קָשַׁר אֶת הַסְּפִינָה בְּדָבָר שֶׁהוּא יָכוֹל לְהַעֲמִיד כָּבַשׁ אֶת הָאֶבֶן עַל גַּבֵּי טַלִּית מְבִיאָה אֶת הַטֻּומְאָה הָא לָאו הָכִי לָא אֲבָל כְּשֶׁהֵן תְּלוּשִׁין וּמֻונָּחִין בַּחַלּוֹן אוֹ כְּנֶגֶד אֲרֻובָּה חָייְצִי וּשְׁאָר יְרָקוֹת כִּדְאָמְרִינַן בְּפֶרֶק לֹא יַחְפֹּור (ב&quot;ב דַּף כ. וְשָׁם) עֲשָׂבִים שֶׁתְּלָשָׁן וְהִנִּיחָן בַּחַלּוֹן אוֹ שֶׁעָלוּ מֵאֵילֵיהֶן בַּחַלּוֹן מְמַעֲטִין:</div>
+          <div class="glose-fr">Les legumes dont les Sages ont dit. A Pessah, qu&#x27;un homme s&#x27;acquitte par eux du maror — la laitue, la chicoree, le tamkha et le harhavina : elles sont extremement fines, tenves en langue vulgaire. Par consequent, elles ne font pas ecran devant la touma s&#x27;il en a couvert un toit ; et c&#x27;est d&#x27;ordre rabbinique que les Sages ont decrete a leur sujet qu&#x27;on ne s&#x27;appuierait pas sur elles pour faire ecran devant la touma, de crainte qu&#x27;on ne s&#x27;appuie sur elles egalement une fois seches. Toutefois, d&#x27;ordre toraique elles font ecran, car elles ne recoivent pas la touma, n&#x27;etant pas nourriture d&#x27;homme ; et une fois seches leur ecran n&#x27;est pas un ecran, comme il l&#x27;explique : elles s&#x27;effritent et tombent. Et elles amenent la touma tant qu&#x27;elles sont fraiches, car aussi longtemps qu&#x27;elles ne sont pas seches c&#x27;est un ohel d&#x27;ordre toraique — ainsi l&#x27;a explique le Qountres (Rachi). Et s&#x27;il a ete contraint d&#x27;expliquer que [l&#x27;absence d&#x27;ecran] est d&#x27;ordre rabbinique, c&#x27;est que si elles etaient tenues pour un ohel d&#x27;ordre toraique quant au fait d&#x27;amener la touma, elles devraient l&#x27;etre aussi quant a l&#x27;ecran ; et si elles ne sont pas tenues pour un ohel quant a l&#x27;ecran, elles ne devraient pas l&#x27;etre non plus quant a l&#x27;apport de la touma. Car notre cas ne ressemble pas a ceux qu&#x27;enumere le chapitre huit d&#x27;Oholot (michna 1) parmi ceux qui « amenent mais ne font pas ecran » : la-bas, la raison en est qu&#x27;une chose susceptible de recevoir la touma ne fait pas ecran devant la touma. Mais ici, on ne peut faire tenir la raison a cela, puisque la Guemara donne expressement pour raison que, une fois seches, elles s&#x27;effritent et tombent ; et il n&#x27;est pas plausible de dire que cette raison ne vaudrait que pour la soukka, car a premiere vue elle porte sur l&#x27;ensemble de l&#x27;enonce. De plus, si la raison tenait a cela, nous l&#x27;aurions apprise de la michna d&#x27;Oholot, qui enumere les aliments impurs. Il faut donc bien dire que c&#x27;est d&#x27;ordre rabbinique qu&#x27;elles ne font pas ecran ici, et si la michna d&#x27;Oholot ne les enumere pas avec les autres, c&#x27;est que la-bas il s&#x27;agit du droit toraique, et ici du droit rabbinique. Mais il y a une difficulte : comment peut-on dire qu&#x27;elles ne sont pas nourriture d&#x27;homme ? Nous disons pourtant au chapitre Kol Chaa (Pessahim 39b) : de meme que la matsa s&#x27;achete avec l&#x27;argent du maasser (seconde dime), de meme le maror, etc. ; et c&#x27;est pour cette raison que l&#x27;on exclut le laurier-rose (hardofni), dont on ne s&#x27;acquitte pas du maror, comme l&#x27;a explique la-bas le Qountres : le laurier-rose ne s&#x27;achete pas avec l&#x27;argent du maasser, n&#x27;etant pas un aliment, et nous exigeons des aliments a l&#x27;image du vin, de la boisson forte, du gros et du petit betail. Et il y avait une correction que Rabbenou Yehouda avait portee dans le commentaire de Rachi : « qu&#x27;elles ne recoivent pas la touma parce qu&#x27;elles ne sont pas nourriture d&#x27;homme » — or il n&#x27;en est rien : elles sont bel et bien nourriture d&#x27;homme, et pourtant elles font ecran d&#x27;ordre toraique aussi longtemps qu&#x27;elles n&#x27;ont pas ete rendues aptes (hokhcharou) a la touma. Ainsi l&#x27;enseigne la michna du traite Oholot, chapitre 8 (michna 1) : parmi ceux qui « amenent et font ecran » elle compte les aliments purs, c&#x27;est-a-dire ceux qui n&#x27;ont pas ete rendus aptes ; et parmi ceux qui « amenent et ne font pas ecran » elle compte les aliments impurs, c&#x27;est-a-dire ceux qui ont ete rendus aptes. Et cela ressort explicitement du chapitre Lo Yahpor (Baba Batra 19b) dans notre passage sur la galette. Et il s&#x27;agit specifiquement de vegetaux detaches, car ceux qui sont attaches au sol n&#x27;amenent pas la touma et ne font pas ecran, ainsi que l&#x27;enseigne la michna au chapitre 8 d&#x27;Oholot (michna 5) : voici ceux qui n&#x27;amenent pas et ne font pas ecran — les semences et les legumes attaches au sol, hormis les legumes que les Sages ont enumeres. C&#x27;est-a-dire, parmi ceux qui « amenent et font ecran » et que la michna enumere au debut du chapitre 8 : l&#x27;iris, le lierre, les courges sauvages et la courge grecque — ceux-la font ecran meme attaches, car ils sont fermes et stables et que le vent ne les agite pas. Mais les autres legumes, lorsqu&#x27;ils sont attaches, sont agites par le vent : ils sont comme le manteau ou comme la barque qui flotte a la surface de l&#x27;eau — et cela meme au moment ou ils ne bougent pas, ils n&#x27;amenent pas et ne font pas ecran, puisque la michna enseigne dans sa seconde partie : s&#x27;il a amarre la barque a quelque chose qui puisse la maintenir, s&#x27;il a leste le manteau avec une pierre, cela amene la touma — d&#x27;ou il ressort que sans cela, non. En revanche, lorsqu&#x27;ils sont detaches et poses dans une fenetre ou face a une lucarne, ils font ecran, y compris les autres legumes, comme nous le disons au chapitre Lo Yahpor (Baba Batra 20a) : des herbes qu&#x27;il a arrachees puis posees dans la fenetre, ou qui y ont pousse d&#x27;elles-memes, reduisent [l&#x27;ouverture].</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אָמַר רַבִּי אַבָּא אָמַר שְׁמוּאֵל יְרָקוֹת שֶׁאָמְרוּ חֲכָמִים אָדָם יוֹצֵא בָּהֶן יְדֵי חוֹבָתוֹ בַּפֶּסַח פּוֹסְלִין בַּסֻּוכָּה מִשּׁוּם אֲוִיר מַאי טַעְמָא כֵּיוָן דִּלְכִי יָבְשִׁי מִפָּרְכִי וְנָפְלִי כְּמַאן דְּלֵיתַנְהוּ דָּמֵי וַחֲשִׁיבִי כַּאֲוִיר וּפוֹסְלִים בַּג&#x27; וְאִי לָא מִפָּרְכִי פּוֹסְלִים בָּאֶמְצַע בַּד&#x27; טְפָחִים מִן הַצַּד בְּד&#x27; אַמּוֹת כְּדִין סְכָךְ פָּסוּל דָּאֳוכָלִין נִינְהוּ וּמְקַבְּלִים טֻומְאָה:</div>
+          <div class="glose-fr">Rabbi Abba a dit au nom de Chemouel : les legumes dont les Sages ont dit qu&#x27;un homme s&#x27;acquitte par eux de son obligation a Pessah rendent la soukka passoul au titre de l&#x27;air. Quelle en est la raison ? Puisque, une fois secs, ils s&#x27;effritent et tombent, ils sont consideres comme s&#x27;ils n&#x27;etaient pas la et comptent comme de l&#x27;air : ils invalident donc des trois [tefahim]. Et s&#x27;ils ne s&#x27;effritent pas, ils invalident au milieu a quatre tefahim, et sur le cote a quatre coudees, selon la regle du sekhakh passoul, puisque ce sont des aliments et qu&#x27;ils recoivent la touma.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">לוּלָב הַגָּזוּל וְהַיָּבֵשׁ פָּסוּל שֶׁל אֲשֵׁירָה וְשֶׁל עִיר הַנִּדַּחַת פָּסוּל נִקְטַם רֹאשׁוֹ נִפְרְצוּ עָלָיו פָּסוּל נִפְרְדוּ עָלָיו כָּשֵׁר ר&#x27; יְהוּדָה אוֹמֵר יְאַגְּדֵן מִלְמַעְלָה צִינֵי הַר הַבַּרְזֶל כְּשֵׁרוֹת לוּלָב שֶׁיֵּשׁ בּוֹ שְׁלֹשָׁה טְפָחִים כְּדֵי לְנַעְנֵעַ בּוֹ כָּשֵׁר. וְהַיָּבֵשׁ פָּסוּל אֵין לְפָרֵשׁ הַיָּבֵשׁ כְּמוֹ יָבֵשׁ דְּפֶ&#x27; אֵין מַעֲמִידִין (עֲבוֹדָה זָרָה דַּף כט:) דִּתְנַן הַחַרְצַנִּים שֶׁל נָכְרִים יְבֵשִׁים מֻותָּרִים וּמְפָרֵשׁ הָתָם דַּף לד. יְבֵשִׁים לְאַחַר י&quot;ב חֹדֶשׁ דְּהָא אָמְרִינַן גַּבֵּי הֲדַס הַיָּבֵשׁ יָבְשׁוּ עָלָיו וְנִשְׁתַּייְּרוּ בּוֹ שְׁלֹשָׁה בַּדֵּי עָלִין לַחִים כָּשֵׁר אַלְמָא דְּאֵין הַיְבֵשׁוּת תָּלוּי בִּזְמַן אֶלָּא יָבֵשׁ דְּהָכָא יֵשׁ לְפָרֵשׁ כְּמוֹ יָבֵשׁ דְּאֹזֶן בְּכוֹר דְּפֶרֶק אֵלּוּ מוּמִין דַּף כט. דִּתְנַן רַבִּי יוֹסֵי בֶּן מְשֻׁולָּם אוֹמֵר יְבֵישָׁה כְּדֵי שֶׁתְּהֵא נִפְרֶכֶת בְּצִפֹּורֶן והר&quot;ז הַלֵּוִי זַ&quot;ל כָּתַב דְּאֵין נוֹפֵל לְשׁוֹן פְּרִיכָה אֶלָּא בָּאֳוכָלִין כִּדְקָאָמַר בִּירָקוֹת לְעֵיל (סֻוכָּה דַּף יג:) דִּלְכִי יָבְשִׁי מִיפַּרְכִי וּמִסְתַּבֵּר מִשֶּׁיָּצְאוּ מִכְּלָל כְּמוּשִׁים וְעָבַר הַלַּחְלוּחִית נִקְרָא יָבֵשׁ. וְהָרָאָבָ&quot;ד זַ&quot;ל חִילֵּק בִּיבֵשׁוֹת לְפִי הַמִּינִים וְגַבֵּי לוּלָב כָּתַב הַדָּבָר יָדוּעַ דַּאֲפִילּוּ אַחַר כַּמָּה שָׁנִים אֵינוֹ נִפְרָךְ וְאֵינוֹ עוֹמֵד עַל יְבֵשׁוּתוֹ בִּפְרִיכָה וּשְׁבִירָה אֶלָּא שֶׁסִּימָן הַנָּכוֹן וְהַיָּשָׁר בְּמִינֵי עֵצִים וְהוּא הַמַּרְאֶה שֶׁלָּהֶם כִּי כָּל זְמַן שֶׁיְּהֵא עֲלֵיהֶן מַרְאֶה יְרָקוֹת הוּא סִימָן הַלַּחוּת אוֹ הַכְּמִישׁוֹת וְאֵינָם יְבֵשִׁים אֲבָל מִשֶּׁכָּלָה כָּל מַרְאֶה יַרְקוּת שֶׁלָּהֶן וְיַלְבִּינוּ פְּנֵיהֶם אָז הֵם כְּמֵתִים וַעֲלֵיהֶם אוֹמֵר בַּיְּרוּשַׁלְמִי הֲלָכָה א&#x27; הַיָּבֵשׁ פָּסוּל עַל שֵׁם שֶׁנֶּאֱמַר לֹא הַמֵּתִים יְהַלְלוּ יָהּ אע&quot;פ שֶׁבַּגְּמָרָא דִּידַן פָּסֵיל לָהּ מִשּׁוּם הָדָר אע&quot;פ כֵּן רְאָיָה גְּדוֹלָה הִיא וְסִימָן גָּדוֹל הוּא שֶׁאֵינוֹ נִקְרָא יָבֵשׁ עַד שֶׁיַּלְבִּינוּ פָּנָיו וְיַחֲזֹור כַּמֵּת הִלְכָּךְ בְּמִינִים עֵצִים וַדַּאי רָאוּי הַסִּימָן הַזֶּה בֵּין לְהָקֵל בֵּין לְהַחְמִיר לְפִי שֶׁתִּמְצָא פְּעָמִים שֶׁהַהֲדַס יִתְיַבְּשׁוּ עָלָיו עַד שֶׁיְּהוּ נִפְרָכִים בַּיָּד וַעֲדַיִין הֵם יְרֻוקִּים כִּתְחִלָּתָן וְאוֹמֵר אֲנִי שֶׁאֵין דָּנִין אוֹתָם כִּיבֵשִׁים לְפִי שֶׁאִם תִּשְׁרֶה אוֹתָן בַּמַּיִם יוֹם אוֹ יוֹמַיִם יַחְזְרוּ לִכְמוֹת שֶׁהָיוּ בְּמִשְׁמוּשָׁן וּבְמַרְאֵיהֶן אֲבָל מִשֶּׁיַּלְבִּינוּ פְּנֵיהֶם אע&quot;פ שֶׁתִּשְׁרֶה אוֹתָן בַּמַּיִם כַּמָּה יָמִים לֹא יַחְזְרוּ לְמַרְאֵיהֶן וַהֲרֵי הֵן כְּעֵץ יָבֵשׁ שֶׁאֲפִילּוּ תִּשְׁרֶה אוֹתָן בַּמַּיִם כַּמָּה יָמִים לֹא יָסוּר מֵעָלָיו שֵׁם הַיָּבֵשׁ ע&quot;כ:</div>
+          <div class="glose-fr">« Le loulav vole ou dessseche est passoul ; celui d&#x27;une acheira ou d&#x27;une ville devoyee est passoul ; si sa pointe a ete tranchee ou si ses folioles ont ete arrachees, il est passoul ; si ses folioles se sont separees, il est kacher ; Rabbi Yehouda dit : qu&#x27;il les lie par le haut. Les palmes du Har HaBarzel sont kacheres. Un loulav qui a trois tefahim, de quoi l&#x27;agiter, est kacher. » « Et le dessseche (yavech) est passoul » : il ne faut pas comprendre yavech ici comme le yavech du chapitre Ein Maamidin (Avoda Zara 29b), ou la michna enseigne que les grappes seches des non-Juifs sont permises, ce que la Guemara (34a) explique comme « seches apres douze mois » ; car nous disons a propos du hadass (myrte) desseche que « si ses feuilles se sont desechees mais qu&#x27;il lui reste trois rameaux de feuilles fraiches, il est kacher » — d&#x27;ou il ressort que le dessechement ne se mesure pas au temps ecoule. Le yavech d&#x27;ici doit plutot se comprendre comme le yavech de l&#x27;oreille du premier-ne, au chapitre Elou Moumin (Bekhorot 29a), ou la michna enseigne : Rabbi Yossei ben Mechoulam dit — desechee, au point de s&#x27;effriter sous l&#x27;ongle. Mais Rav Zerahia HaLevi, de memoire benie, a ecrit que le terme d&#x27;effritement ne s&#x27;applique qu&#x27;aux aliments, comme il est dit plus haut a propos des legumes (Soukka 13b) : « une fois secs ils s&#x27;effritent » ; et il est plus plausible que, des lors qu&#x27;ils sont sortis de l&#x27;etat de fletrissure et que l&#x27;humidite a disparu, on les appelle secs. Le Raavad, de memoire benie, a distingue le dessechement selon les especes. A propos du loulav il a ecrit : il est notoire que meme apres plusieurs annees il ne s&#x27;effrite pas, et son dessechement ne se verifie ni par l&#x27;effritement ni par la cassure. Le signe juste et droit pour les especes de bois est plutot leur couleur : tant qu&#x27;elles gardent une teinte verte, c&#x27;est le signe qu&#x27;elles sont encore humides ou seulement fletries, et elles ne sont pas seches ; mais des que toute teinte verte a disparu et que leur face a blanchi, elles sont comme mortes. C&#x27;est d&#x27;elles que le Yerouchalmi (halakha 1) dit : « le desseche est passoul », en vertu du verset « ce ne sont pas les morts qui louent Yah » — et bien que notre Guemara l&#x27;invalide au titre du hadar (la beaute), c&#x27;est neanmoins une grande preuve et un grand signe : il n&#x27;est appele desseche que lorsque sa face a blanchi et qu&#x27;il est redevenu comme un mort. Aussi, pour les especes de bois, ce signe convient assurement, aussi bien pour alleger que pour aggraver, car tu trouveras parfois un hadass dont les feuilles se sont desechees au point de s&#x27;effriter a la main, et qui reste vert comme au debut ; et je dis qu&#x27;on ne les juge pas desechees, car si tu les trempes dans l&#x27;eau un jour ou deux, elles retrouveront leur souplesse et leur couleur. Mais des que leur face a blanchi, meme si tu les trempes dans l&#x27;eau plusieurs jours, elles ne retrouveront pas leur couleur : elles sont comme un bois sec, qui a beau tremper plusieurs jours, ne perdra pas son nom de sec. Fin de citation.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Changement de sujet, amorce par un nom : Rabbi Abba. Ces legumes tres fins — laitue, chicoree — recoivent trois statuts d'un coup. Ils forment un <b>ohel</b> (une tente) qui amene la touma sur ce qui est dessous ; mais ils ne font pas <b>hatsitsa</b> (ecran) pour l'arreter ; et poses sur une soukka, ils la rendent <b>passoul</b>.</p><p>La raison unique gouverne les trois : en sechant, ces feuilles s'effritent et tombent. On anticipe donc leur disparition et on les traite deja comme absentes. D'ou la severite du troisieme point, soulignee par Rachi : au lieu du bareme du <b>sekhakh passoul</b> (quatre tefahim au milieu, quatre coudees sur le cote), on applique celui de l'<b>avir</b> (l'air) — trois tefahim seulement.</p><p>Tossefot conteste le detail de Rachi : ces plantes <i>sont</i> nourriture d'homme — la Guemara de Pessahim l'exige pour le maror. Leur aptitude a la touma ne depend donc pas de leur nature mais du <b>hekhcher</b> (contact avec un liquide) qui les rend receptives.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 344" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="344" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="13.6" font-weight="700" fill="#1c1917">Les legumes du maror : trois regimes, une seule raison</text>
+  <text x="360" y="41" text-anchor="middle" font-size="9.4" fill="#57534e">Laitue, chicoree et leurs congeneres -- fines au point de disparaitre en sechant</text>
+
+  <rect x="24" y="54" width="672" height="34" rx="6" fill="#f8fafc" stroke="#475569" stroke-width="1.2"/>
+  <text x="360" y="76" text-anchor="middle" font-size="10.2" font-weight="700" fill="#1e293b">Raison commune : kivan de-lekhi yavchei parkhei ve-naflei -- une fois secs ils s effritent et tombent</text>
+
+  <rect x="24" y="102" width="216" height="128" rx="8" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.5"/>
+  <text x="132" y="124" text-anchor="middle" font-size="10.8" font-weight="700" fill="#7f1d1d">1. Ils amenent la touma</text>
+  <text x="132" y="142" text-anchor="middle" font-size="9" fill="#57534e">mevi in et ha touma</text>
+  <text x="36" y="164" font-size="9" fill="#292524">Etendus au-dessus d une source</text>
+  <text x="36" y="177" font-size="9" fill="#292524">d impurete, ils forment un ohel</text>
+  <text x="36" y="190" font-size="9" fill="#292524">(une tente) : l impurete se</text>
+  <text x="36" y="203" font-size="9" fill="#292524">propage a ce qui est dessous.</text>
+  <text x="36" y="222" font-size="8.8" font-weight="700" fill="#7f1d1d">Tant qu ils sont frais -- de la Tora.</text>
+
+  <rect x="252" y="102" width="216" height="128" rx="8" fill="#fffbeb" stroke="#b45309" stroke-width="1.5"/>
+  <text x="360" y="124" text-anchor="middle" font-size="10.8" font-weight="700" fill="#78350f">2. Ils ne font pas ecran</text>
+  <text x="360" y="142" text-anchor="middle" font-size="9" fill="#57534e">ein hotstsin bifnei ha touma</text>
+  <text x="264" y="164" font-size="9" fill="#292524">L impurete les traverse et monte.</text>
+  <text x="264" y="183" font-size="9" fill="#292524">Rachi : de la Tora ils feraient</text>
+  <text x="264" y="196" font-size="9" fill="#292524">pourtant ecran ; c est un decret</text>
+  <text x="264" y="209" font-size="9" fill="#292524">rabbinique, de peur qu on ne s y</text>
+  <text x="264" y="222" font-size="9" fill="#292524">fie aussi une fois qu ils secheront.</text>
+
+  <rect x="480" y="102" width="216" height="128" rx="8" fill="#eef2ff" stroke="#4338ca" stroke-width="1.5"/>
+  <text x="588" y="124" text-anchor="middle" font-size="10.8" font-weight="700" fill="#312e81">3. Ils invalident la soukka</text>
+  <text x="588" y="142" text-anchor="middle" font-size="9" fill="#57534e">passoul mi choum avir</text>
+  <text x="492" y="164" font-size="9" fill="#292524">Non pas comme un sekhakh</text>
+  <text x="492" y="177" font-size="9" fill="#292524">passoul, mais comme un trou</text>
+  <text x="492" y="190" font-size="9" fill="#292524">dans le toit : du vide pur.</text>
+  <text x="492" y="209" font-size="8.8" font-weight="700" fill="#312e81">Consequence : le seuil est celui</text>
+  <text x="492" y="222" font-size="8.8" font-weight="700" fill="#312e81">de l air, plus severe.</text>
+
+  <rect x="24" y="244" width="672" height="88" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.4"/>
+  <text x="40" y="264" font-size="10.2" font-weight="700" fill="#14532d">Pourquoi le regime -- comme de l air -- est plus severe (Rachi)</text>
+  <text x="40" y="284" font-size="9.2" fill="#292524">Sekhakh passoul : invalide a partir de 4 tefahim au milieu du toit, ou 4 amot le long d une paroi.</text>
+  <text x="40" y="300" font-size="9.2" fill="#292524">Avir (air) : invalide deja a partir de 3 tefahim (Soukka 17a).</text>
+  <text x="40" y="320" font-size="9.2" fill="#57534e">Bien qu il s agisse d aliments susceptibles de touma -- ce qui appellerait le premier bareme -- on les juge au second, par rigueur.</text>
+</svg></div><div class="svg-cap">Les trois regimes des legumes du maror, et pourquoi le seuil retenu pour la soukka est le plus severe.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאָמַר רַבִּי אַבָּא אָמַר רַב הוּנָא: הַבּוֹצֵר לַגַּת — אֵין לוֹ יָדוֹת.</div>
+            <div class="fr"><p>Et Rabbi Abba a dit au nom de Rav Houna : celui qui vendange pour le pressoir — [sa recolte] n&#x27;a pas de yadot (poignees).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַבּוֹצֵר לַגַּת</b> הַבּוֹצֵר עֲנָבִים לִדְרֹוךְ אוֹתָם אֵין לָהֶם יָדוֹת לְהָבִיא הָעֵץ טֻומְאָה עַל הָאֹוכֶל לְפִי שֶׁאֵינוֹ צָרִיךְ לְבֵית אֲחִיזָה וְלָא נִיחָא לֵיהּ בָּהֶן וְכִי אִתְרַבּוֹ יָדוֹת לְטֻומְאָה בְּהָעוֹר וְהָרֹוטֶב (חֻולִּין דַּף קיז.) הָנֵי מִילֵּי בַּיָּד הַצְּרִיכָה אוֹ בִּכְלִי אוֹ בְּאֹוכֶל:</div>
+          <div class="glose-fr">Celui qui vendange pour le pressoir : celui qui vendange des raisins pour les fouler — ils n&#x27;ont pas de yadot qui feraient que le bois amene la touma sur l&#x27;aliment, parce qu&#x27;il n&#x27;a pas besoin d&#x27;une prise et que celles-ci ne lui conviennent pas. Et lorsque les yadot ont ete incluses dans la touma au chapitre HaOr veHarotev (Houlin 117a), il ne s&#x27;agissait que d&#x27;une prise dont on a besoin, soit pour un ustensile, soit pour un aliment.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouveau dossier, greffe sur le precedent par le nom de Rabbi Abba. Une <b>yad</b> (litteralement « main », ici poignee ou manche) est la partie non comestible attenante a un aliment — la rafle de la grappe, le chaume de l'epi. La halakha lui accorde un statut special : elle recoit la <b>touma</b> et la transmet a l'aliment auquel elle tient.</p><p>Rav Houna pose une limite fonctionnelle, que Rachi formule nettement : une yad n'est une yad que si c'est <b>une prise dont on a besoin</b>. Celui qui vendange pour le pressoir ne veut que le jus ; les rafles ne lui servent a rien. Elles ne sont donc pas des poignees, mais du dechet — et ne transmettent rien.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַב מְנַשְּׁיָא בַּר גַּדָּא אָמַר רַב הוּנָא: הַקּוֹצֵר לְסַכֵּךְ — אֵין לוֹ יָדוֹת.</div>
+            <div class="fr"><p>Et Rav Menachya bar Gada a dit au nom de Rav Houna : celui qui moissonne pour couvrir [la soukka] — [sa recolte] n&#x27;a pas de yadot.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַקּוֹצֵר לְסַכֵּךְ</b> אֵין הַקַּשִּׁין מְבִיאִין טֻומְאָה עַל הָאֹוכֶל דְּלָא נִיחָא לֵיהּ בְּחִיבּוּרִין דְּאֹוכֶל בִּסְכָךְ לָא מִיבְּעֵי וְאִי לָאו דִּפְסֹולֶת מְרֻובֶּה עָלָיו הֲוָה פָּסֵיל לָהּ לְסֻוכָּה:</div>
+          <div class="glose-fr">Celui qui moissonne pour couvrir : les chaumes n&#x27;amenent pas la touma sur le grain, car leur attache ne lui convient pas — du grain dans le sekhakh, il n&#x27;a que faire ; et si le dechet n&#x27;etait pas plus abondant que lui, il rendrait la soukka passoul.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Meme maitre, Rav Houna, rapporte cette fois par Rav Menachya bar Gada, et applique a un autre cas : on moissonne du ble non pour le grain mais pour la paille, destinee au <b>sekhakh</b>. Le grain devient l'indesirable ; le chaume, le produit voulu.</p><p>Le rapport s'inverse donc par rapport au cas ordinaire : ce n'est pas le chaume qui sert de poignee au grain, c'est le grain qui encombre le chaume. Rachi ajoute une precision halakhique importante : ce grain reste un aliment susceptible de touma, et s'il excedait le volume de la paille, il rendrait a lui seul la soukka <b>passoul</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאן דְּאָמַר קוֹצֵר, כָּל שֶׁכֵּן בּוֹצֵר — דְּלָא נִיחָא לֵיהּ, דְּלָא נִימְצְייֵהּ לְחַמְרֵיהּ. מַאן דְּאָמַר בּוֹצֵר שֶׁאֵין לוֹ יָדוֹת, אֲבָל קוֹצֵר יֵשׁ לוֹ יָדוֹת — דְּנִיחָא לֵיהּ דְּלִיסַכֵּךְ בְּהוּ, כִּי הֵיכִי דְּלָא לִיבַּדְּרָן.</div>
+            <div class="fr"><p>Celui qui dit « celui qui moissonne » [n&#x27;a pas de yadot], a plus forte raison le dira-t-il de « celui qui vendange » — car cela ne lui convient pas, afin que [les rafles] ne sucent pas son vin. Mais celui qui dit que celui qui vendange n&#x27;a pas de yadot, [dira] en revanche que celui qui moissonne, lui, a des yadot — car il lui convient d&#x27;en couvrir [sa soukka], afin qu&#x27;elles ne se dispersent pas.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַאן דְּאָמַר</b> דְּקוֹצֵר לִסְכָךְ אֵין לוֹ יָדוֹת:</div>
+          <div class="glose-fr">Celui qui dit : que celui qui moissonne pour couvrir n&#x27;a pas de yadot.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כָּל שֶׁכֵּן בּוֹצֵר</b> לַגַּת דְּלָא נִיחָא לֵיהּ בְּהָנָךְ יָדוֹת:</div>
+          <div class="glose-fr">A plus forte raison celui qui vendange : pour le pressoir, car ces yadot-la ne lui conviennent pas.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּנִמְצְייֵהּ לְחַמְרֵיהּ</b> מוֹצְצוֹת אֶת הַיַּיִן וּמַפְסִידוֹת:</div>
+          <div class="glose-fr">Afin qu&#x27;elles ne sucent pas son vin : elles absorbent le vin et le font perdre.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּלָא לִיבַּדְּרָן</b> נִיחָא לֵיהּ בְּאוֹכֵל הַמְחֻובָּר בָּהֶן שֶׁאִם יַבְדִּיל רָאשֵׁי שִׁבֳּלִים מִן הַקָּשִׁים שֶׁמָּא יִתְפַּזְּרוּ וְיֵלְכוּ לְאִיבּוּד:</div>
+          <div class="glose-fr">Afin qu&#x27;elles ne se dispersent pas : il lui convient que le grain reste attache a eux, car s&#x27;il separait les tetes d&#x27;epis des chaumes, elles risqueraient de s&#x27;eparpiller et de se perdre.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">דְּלָא לִיבַּדְּרָן. פ&quot;ה שֶׁאִם יַבְדִּיל רָאשֵׁי שִׁיבֳּולִים מִן הַקַּשִּׁין יִתְפָּרְדוּ וְיֵלְכוּ לְאִיבּוּד וי&quot;מ שֶׁיַּכְבִּידוּ רָאשֵׁי שִׁבֳּלִין עַל הַקָּשִׁים וְלֹא יִתְפָּרְדוּ הַקָּשִׁים מֵעַל הַסֻּוכָּה בְּרוּחַ:</div>
+          <div class="glose-fr">Afin qu&#x27;elles ne se dispersent pas. Rachi a explique : que s&#x27;il separait les tetes d&#x27;epis des chaumes, elles se disperseraient et se perdraient. Et certains expliquent : que les tetes d&#x27;epis alourdissent les chaumes, de sorte que ceux-ci ne se detachent pas du toit de la soukka sous l&#x27;effet du vent.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara calibre la portee respective des deux enonces. Celui de Rav Menachya (moissonner pour le sekhakh) entraine celui de Rabbi Abba par un <b>kal va-homer</b> implicite : si le grain, qu'on pourrait au moins manger, ne compte pas comme un aliment muni de poignees, a plus forte raison les rafles, que le vigneron redoute activement — elles boivent le vin et le gatent.</p><p>L'inverse n'est pas vrai. Rabbi Abba peut fort bien limiter sa regle a la vendange, et accorder des yadot au moissonneur : le grain lui rend un service reel. Rachi et Tossefot en donnent deux versions — pour Rachi, les epis restes attaches ne se perdent pas ; pour l'autre lecture citee par Tossefot, ils font contrepoids et empechent le vent d'emporter la paille. Dans les deux cas, le grain <b>sert</b> — donc les yadot existent.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">נֵימָא דְּרַב מְנַשְּׁיָא בַּר גַּדָּא תַּנָּאֵי הִיא? דְּתַנְיָא: סוֹכֵי תְאֵנִים וּבָהֶן תְּאֵנִים, פַּרְכִּילִין וּבָהֶן עֲנָבִים, קָשִׁין וּבָהֶן שִׁבֳּלִים, מַכְבְּדוֹת וּבָהֶן תְּמָרִים, כֻּולָּן, אִם פְּסֹולֶת מְרֻובָּה עַל הָאֳוכָלִין — כְּשֵׁרָה, וְאִם לָאו — פְּסוּלָה. אֲחֵרִים אוֹמְרִים: עַד שֶׁיְּהוּ קַשִּׁין מְרֻובִּין עַל הַיָּדוֹת וְעַל הָאֳוכָלִין.</div>
+            <div class="fr"><p>Dirons-nous que [l&#x27;enseignement] de Rav Menachya bar Gada fait l&#x27;objet d&#x27;une controverse de tannaim ? Car il a ete enseigne : des branches de figuier avec des figues dessus, des sarments avec des raisins dessus, des chaumes avec des epis dessus, des palmes avec des dattes dessus — dans tous ces cas, si le dechet (pesolet) l&#x27;emporte sur la nourriture, [la soukka] est kachere ; sinon, elle est passoul.</p><p>Aherim (D&#x27;autres) disent : [elle n&#x27;est kachere] que si les chaumes l&#x27;emportent sur les yadot et sur la nourriture.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(6)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>נֵימָא דְּרַב מְנַשְּׁיָא</b> דְּאָמַר קוֹצֵר אֵין לוֹ יָדוֹת תַּנָּאֵי הִיא:</div>
+          <div class="glose-fr">Dirons-nous que [l&#x27;enseignement] de Rav Menachya — qui dit que celui qui moissonne n&#x27;a pas de yadot — fait l&#x27;objet d&#x27;une controverse de tannaim.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>סוֹכֵי תְּאֵנִים</b> עַנְפֵי תְּאֵנִים:</div>
+          <div class="glose-fr">Soukhei teenim : des branches de figuier.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>פַּרְכִּילִין</b> זְמוֹרוֹת:</div>
+          <div class="glose-fr">Parkhilin : des sarments de vigne.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַכְבְּדוֹת</b> עַנְפֵי דֶּקֶל:</div>
+          <div class="glose-fr">Makhbadot : des palmes de dattier.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּשֵׁירִין</b> לְסַכֵּךְ:</div>
+          <div class="glose-fr">Kacheres : pour couvrir la soukka.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>עַל הַיָּדוֹת</b> כְּדֵי בֵּית יָד סָמוּךְ לָאֹוכֶל אַף הוּא צָרִיךְ בִּיטּוּל שֶׁגַּם הוּא מְקַבֵּל טֻומְאָה:</div>
+          <div class="glose-fr">Sur les yadot : la longueur d&#x27;une prise attenante a la nourriture — elle aussi requiert d&#x27;etre annulee, car elle aussi recoit la touma.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אִם פְּסֹולֶת מְרֻובָּה עַל הָאֳוכָלִין כְּשֵׁרָה. אֲבָל אֹוכֶל מְרֻובֶּה פְּסוּלָה אע&quot;ג דְּאָמַר בְּפֶרֶק הָעוֹר וְהָרֹוטֶב (חוֹלִין דַּף קכט. וְשָׁם) בַּיִת שֶׁסִּיכְּכוֹ בִּזְרָעִים טִיהֲרוּ מִשּׁוּם דְּבַטְּלִינְהוּ יֵשׁ לְחַלֵּק בֵּין בַּיִת לְסֻוכָּה דִּבְסֻוכָּה לָא בְּטִילִי דַּעֲבִיד דְּסָתַר לָהּ אַחַר הֶחָג אִי נָמֵי בָּעֵינַן דְּלָא מְקַבְּלִי טֻומְאָה בִּשְׁעַת סִיכּוּךְ מִשּׁוּם תַּעֲשֶׂה וְלֹא מִן הֶעָשׂוּי אִי נָמֵי הָתָם כְּשֶׁעָשָׂה בָּהֶן שִׁינּוּי מַעֲשֶׂה דִּבְמַחֲשָׁבָה לָא סָלְקִי מִטֻּומְאָה וְהָכָא בְּשֶׁלֹּא עָשָׂה בָּהֶן שִׁינּוּי מַעֲשֶׂה כִּדְמוֹכַח בָּתַר הָכִי דְּפָרִיךְ אִי הָכִי מ&quot;ט דְּרַבָּנָן דְּמַה שֶׁמַּנִּיחָן ע&quot;ג הַסֻּוכָּה לָא חֲשִׁיב שִׁינּוּי מַעֲשֶׂה וְכֵן בְּפֶרֶק לֹא יַחְפֹּור (ב&quot;ב דַּף יט: וְשָׁם) דְּאָמַר רָקִיק אֵינוֹ מְמַעֵט בַּחַלּוֹן כִּדְקָאָמְרִינַן הָתָם מִשּׁוּם דְּלָא מְבַטֵּל לֵיהּ וּפָרִיךְ וְתִיפּוֹק לֵיהּ דְּהָוֵי דָּבָר הַמְקַבֵּל טֻומְאָה דְּלָא מְהַנֵּי בִּיטּוּל בְּלֹא שִׁינּוּי מַעֲשֶׂה:</div>
+          <div class="glose-fr">Si le dechet l&#x27;emporte sur la nourriture, elle est kachere. Mais si la nourriture l&#x27;emporte, elle est passoul — bien qu&#x27;il soit dit au chapitre HaOr veHarotev (Houlin 129a) qu&#x27;une maison couverte de semences est declaree pure, parce qu&#x27;il les a annulees. Il faut distinguer entre une maison et une soukka : dans la soukka elles ne sont pas annulees, car il est destine a la demonter apres la fete. Ou bien : nous exigeons qu&#x27;elles ne soient pas susceptibles de touma au moment meme de la couverture, en raison de « taasse ve-lo min he-assouy » (elle doit etre faite, et non pas se trouver deja faite). Ou encore : la-bas il s&#x27;agit d&#x27;un cas ou il leur a fait subir un changement d&#x27;etat effectif (chinouy maasse), car une simple pensee ne les fait pas sortir de la touma ; et ici, d&#x27;un cas ou il ne leur en a pas fait subir — comme cela ressort de la suite, ou la Guemara objecte « si c&#x27;est ainsi, quelle est la raison des Sages ? », puisque le seul fait de les poser sur la soukka n&#x27;est pas tenu pour un changement d&#x27;etat effectif. De meme au chapitre Lo Yahpor (Baba Batra 19b), ou il est dit qu&#x27;une galette ne reduit pas [l&#x27;ouverture d&#x27;] une fenetre, la raison donnee la-bas etant qu&#x27;il ne l&#x27;annule pas ; et la Guemara objecte : mais qu&#x27;on tire cela de ce qu&#x27;il s&#x27;agit d&#x27;une chose susceptible de touma, pour laquelle l&#x27;annulation est inoperante sans changement d&#x27;etat effectif.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">תַּנְיָא סוֹכֵי תְּאֵנִים וּבָהֶם תְּאֵנִים פַּרְכִּילִין וּבָהֶם עֲנָבִים קָשִׁין וּבָהֶם שֶׁיְּבוּלִין מַכְבְּדוֹת וּבָהֶם תְּמָרִים אִם פְּסֹולֶת מְרֻובָּה עַל הָאֳוכָלִים כְּשֵׁרִים וְאִם אוֹכְלִים מְרֻובִּין עַל הַפְּסֹולֶת פְּסוּלִין וְאִם קָצְרָן מִתְּחִילָּה לְסַכֵּךְ אֵין לָהֶם יָדוֹת דְּלָא נִיחָא לֵיהּ בְּהוּ וְאֵין מְבִיאִין טֻומְאָה לְאֹוכֶל וּמְסַייְּעִין לְבַטֵּל אֶת הָאֹוכֶל וְאִם מִתְּחִילָּה קָצַץ לַאֲכִילָה וְנִמְלַךְ עֲלֵיהֶם לְסִיכּוּךְ אֵין הַמַּחֲשָׁבָה מוֹצִיא אֶת הַיָּדוֹת מִידֵי טֻומְאָה וַחֲשִׁיבִי כְּאֹוכֶל. וְצָרִיךְ שֶׁיְּהֵא בִּפְסֹולֶת לְבַטֵּל אֶת הָאֹוכֶל וְהַבֵּית יָד הַסָּמוּךְ לָאֹוכֶל עַד שֶׁיַּעֲשֶׂה בְּהוּ מַעֲשֶׂה כְּגוֹן שֶׁדִּשֵּׁן בְּגֹורֶן:</div>
+          <div class="glose-fr">Il a ete enseigne : des branches de figuier avec des figues dessus, des sarments avec des raisins dessus, des chaumes avec des epis dessus, des palmes avec des dattes dessus — si le dechet l&#x27;emporte sur les aliments, elles sont kacheres ; et si les aliments l&#x27;emportent sur le dechet, elles sont passoul. Et s&#x27;il les a coupes des le depart pour couvrir, ils n&#x27;ont pas de yadot, car cela ne lui convient pas : ils n&#x27;amenent pas la touma sur l&#x27;aliment et ils concourent a annuler l&#x27;aliment. Mais si des le depart il a coupe pour manger, puis s&#x27;est ravise a leur sujet pour la couverture, la mahshava (l&#x27;intention) ne fait pas sortir les yadot du regime de la touma, et elles comptent comme de l&#x27;aliment. Il faut alors que le dechet suffise a annuler l&#x27;aliment ainsi que la prise attenante a l&#x27;aliment — a moins qu&#x27;il ne leur ait fait subir un acte effectif, comme de les avoir battus sur l&#x27;aire.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara cherche a rattacher le debat des Amoraim a une controverse tannaitique. La baraita enumere quatre situations identiques : un support inapte au sekhakh parce qu'il porte un fruit apte a la touma.</p><p>Le premier tanna pese le <b>pesolet</b> (le dechet, ici le bois) contre l'<b>okhel</b> (la nourriture) : si le dechet l'emporte, la soukka tient. <b>Aherim</b> ajoutent un troisieme terme sur le plateau de l'aliment — les <b>yadot</b>. Rachi explique pourquoi : la longueur de prise attenante au fruit recoit elle aussi la touma, elle doit donc elle aussi etre annulee.</p><p>Tossefot souleve ici la difficulte de fond : pourquoi l'annulation ne suffit-elle pas, alors qu'une maison couverte de semences est declaree pure ? Trois reponses — la soukka est provisoire, on exige la validite au moment de la couverture, et surtout : l'annulation d'une chose susceptible de touma exige un <b>chinouy maasse</b> (un acte materiel), et non une simple decision.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 730 372" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="730" height="372" fill="#fffdf8"/>
+  <text x="365" y="24" text-anchor="middle" font-size="13.6" font-weight="700" fill="#1c1917">La baraita des quatre branchages : ce qu on pese, et contre quoi</text>
+  <text x="365" y="41" text-anchor="middle" font-size="9.4" fill="#57534e">Un rameau porteur de fruit ne peut couvrir la soukka que si la part inapte l emporte</text>
+
+  <rect x="24" y="56" width="682" height="26" rx="5" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1"/>
+  <text x="120" y="74" text-anchor="middle" font-size="9.6" font-weight="700" fill="#1e293b">Le support (pesolet)</text>
+  <text x="330" y="74" text-anchor="middle" font-size="9.6" font-weight="700" fill="#1e293b">Le fruit porte (okhel)</text>
+  <text x="560" y="74" text-anchor="middle" font-size="9.6" font-weight="700" fill="#1e293b">Nom arameen du couple</text>
+
+  <rect x="24" y="84" width="682" height="24" fill="#fff"/>
+  <text x="120" y="101" text-anchor="middle" font-size="9.2" fill="#292524">Branches de figuier</text>
+  <text x="330" y="101" text-anchor="middle" font-size="9.2" fill="#292524">figues</text>
+  <text x="560" y="101" text-anchor="middle" font-size="9.2" fill="#57534e">soukhei teenim</text>
+  <rect x="24" y="108" width="682" height="24" fill="#f8fafc"/>
+  <text x="120" y="125" text-anchor="middle" font-size="9.2" fill="#292524">Sarments de vigne</text>
+  <text x="330" y="125" text-anchor="middle" font-size="9.2" fill="#292524">raisins</text>
+  <text x="560" y="125" text-anchor="middle" font-size="9.2" fill="#57534e">parkhilin</text>
+  <rect x="24" y="132" width="682" height="24" fill="#fff"/>
+  <text x="120" y="149" text-anchor="middle" font-size="9.2" fill="#292524">Chaumes</text>
+  <text x="330" y="149" text-anchor="middle" font-size="9.2" fill="#292524">epis de ble</text>
+  <text x="560" y="149" text-anchor="middle" font-size="9.2" fill="#57534e">kachin ou-vahen chibolin</text>
+  <rect x="24" y="156" width="682" height="24" fill="#f8fafc"/>
+  <text x="120" y="173" text-anchor="middle" font-size="9.2" fill="#292524">Palmes de dattier</text>
+  <text x="330" y="173" text-anchor="middle" font-size="9.2" fill="#292524">dattes</text>
+  <text x="560" y="173" text-anchor="middle" font-size="9.2" fill="#57534e">makhbadot</text>
+  <rect x="24" y="84" width="682" height="96" fill="none" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="228" y1="84" x2="228" y2="180" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="440" y1="84" x2="440" y2="180" stroke="#e2e8f0" stroke-width="1"/>
+
+  <rect x="24" y="198" width="336" height="158" rx="8" fill="#eef2ff" stroke="#4338ca" stroke-width="1.5"/>
+  <text x="192" y="220" text-anchor="middle" font-size="11" font-weight="700" fill="#312e81">Premier tanna</text>
+  <text x="38" y="242" font-size="9.2" fill="#292524">Il faut : pesolet &gt; okhel</text>
+  <rect x="38" y="252" width="308" height="52" rx="5" fill="#fff" stroke="#94a3b8" stroke-width="1"/>
+  <rect x="46" y="262" width="180" height="14" fill="#c7d2fe"/><text x="234" y="273" font-size="8.6" fill="#312e81">support inapte</text>
+  <rect x="46" y="282" width="96" height="14" fill="#fca5a5"/><text x="150" y="293" font-size="8.6" fill="#7f1d1d">fruit</text>
+  <text x="38" y="322" font-size="9" fill="#292524">Il ne met dans la balance que le fruit</text>
+  <text x="38" y="335" font-size="9" fill="#292524">lui-meme : le manche ne compte pas.</text>
+  <text x="38" y="350" font-size="9" font-weight="700" fill="#312e81">Lecture directe : pas de yadot.</text>
+
+  <rect x="372" y="198" width="334" height="158" rx="8" fill="#fffbeb" stroke="#b45309" stroke-width="1.5"/>
+  <text x="539" y="220" text-anchor="middle" font-size="11" font-weight="700" fill="#78350f">Aherim -- D autres disent</text>
+  <text x="386" y="242" font-size="9.2" fill="#292524">Il faut : pesolet &gt; (yadot + okhel)</text>
+  <rect x="386" y="252" width="306" height="52" rx="5" fill="#fff" stroke="#94a3b8" stroke-width="1"/>
+  <rect x="394" y="262" width="150" height="14" fill="#fde68a"/><text x="552" y="273" font-size="8.6" fill="#78350f">support inapte</text>
+  <rect x="394" y="282" width="96" height="14" fill="#fca5a5"/><text x="498" y="293" font-size="8.6" fill="#7f1d1d">fruit</text>
+  <rect x="490" y="282" width="52" height="14" fill="#fdba74"/><text x="550" y="293" font-size="8.6" fill="#7c2d12">yad</text>
+  <text x="386" y="322" font-size="9" fill="#292524">Rachi : la longueur de prise attenante au</text>
+  <text x="386" y="335" font-size="9" fill="#292524">fruit doit elle aussi etre annulee, car elle</text>
+  <text x="386" y="348" font-size="9" fill="#292524">aussi recoit la touma.</text>
+</svg></div><div class="svg-cap">Les quatre couples support-fruit de la baraita, et les deux baremes de pesee proposes.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאי לַָאו, בְּהָא קָא מִיפַּלְגִי: דְּמָר סָבַר יֵשׁ לָהֶן יָדוֹת, וּמַר סָבַר אֵין לָהֶן יָדוֹת!</div>
+            <div class="fr"><p>N&#x27;est-ce pas sur ceci qu&#x27;ils divergent : l&#x27;un tient qu&#x27;[ils] ont des yadot, et l&#x27;autre tient qu&#x27;[ils] n&#x27;ont pas de yadot ?</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Formulation de l'hypothese. Si Aherim comptent les yadot dans la pesee, c'est qu'a leurs yeux le produit moissonne <b>en possede</b>. Et si le premier tanna ne les mentionne pas, c'est apparemment qu'il n'en reconnait aucune — precisement la these de Rav Menachya bar Gada.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לְרַבִּי אַבָּא — וַדַּאי תַּנָּאֵי הִיא. לְרַב מְנַשְּׁיָא בַּר גַּדָּא מִי לֵימָא תַּנָּאֵי הִיא? אָמַר לָךְ רַב מְנַשְּׁיָא: דְּכֻולֵּי עָלְמָא סָבְרִי הַקּוֹצֵר לִסְכָךְ אֵין לוֹ יָדוֹת. וְהָכָא בְּמַאי עָסְקִינַן — כְּגוֹן שֶׁקּוֹצְצָן לַאֲכִילָה, וְנִמְלַךְ עֲלֵיהֶן לְסִיכּוּךְ.</div>
+            <div class="fr"><p>Pour Rabbi Abba — c&#x27;est assurement une controverse de tannaim. Pour Rav Menachya bar Gada, dirons-nous que c&#x27;est une controverse de tannaim ?</p><p>Rav Menachya pourrait te dire : tout le monde s&#x27;accorde a tenir que celui qui moissonne pour couvrir n&#x27;a pas de yadot ; et ici, de quoi traitons-nous ? D&#x27;un cas ou il les a coupes pour les manger, puis s&#x27;est ravise a leur sujet en vue de la couverture.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְרַבִּי אַבָּא</b> דְּאָמַר בּוֹצֵר אֵין לוֹ יָדוֹת אֲבָל קוֹצֵר יֵשׁ לוֹ וַדַּאי תַּנָּאֵי הִיא עַל כָּרְחֵיהּ מִבָּעֵי לְמֵימַר אֲנָא דְּאָמְרִי כַּאֲחֵרִים דְּאָמְרִי יֵשׁ לוֹ דְּאִילּוּ תַּנָּא קַמָּא לָא מִיתּוֹקַם כְּוָותֵיהּ דְּהָא אָמַר אֵין לוֹ וְאִי בְּקוֹצֵר לַאֲכִילָה וְנִמְלַךְ לְסִיכּוּךְ כָּל שֶׁכֵּן דַּהֲוָה לֵיהּ לְמֵימַר יֵשׁ לוֹ וְקָאָמַר אֵין לוֹ הִלְכָּךְ לָא מִיתּוֹקְמָא כְּרַבִּי אַבָּא:</div>
+          <div class="glose-fr">Pour Rabbi Abba : qui dit que celui qui vendange n&#x27;a pas de yadot mais que celui qui moissonne en a — c&#x27;est assurement une controverse de tannaim, car il est bien force de dire : moi, je parle comme Aherim, qui disent qu&#x27;il en a. Le premier tanna, lui, ne peut etre etabli selon son avis, puisqu&#x27;il dit qu&#x27;il n&#x27;en a pas ; et s&#x27;il s&#x27;agissait de quelqu&#x27;un qui a moissonne pour manger puis s&#x27;est ravise pour couvrir, il aurait dit a plus forte raison qu&#x27;il en a — or il dit qu&#x27;il n&#x27;en a pas. Par consequent, [le premier tanna] ne peut pas etre etabli selon Rabbi Abba.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא לְרַב מְנַשְּׁיָא</b> דְּאָמַר קוֹצֵר לְסַכֵּךְ אֵין לוֹ מִי מִידְּחִיק לְאוֹקְמֵי מִילְּתֵיהּ כְּתַנָּאֵי וּלְמֵימַר אֲנָא אָמְרִי כְּתַנָּא קַמָּא וַאֲחֵרִים פְּלִיגִי אוֹ מוֹקְמִינַן לְמַתְנִיתִין בְּקוֹצֵר לַאֲכִילָה וְנִמְלַךְ לְסַכֵּךְ וּמִשּׁוּם הָכִי אָמְרִי אֲחֵרִים דְּיֵשׁ לוֹ יָדוֹת אֲבָל בְּקוֹצֵר לְסַכֵּךְ אֲחֵרִים מוֹדוֹ נָמֵי דְּאֵין לוֹ:</div>
+          <div class="glose-fr">Mais pour Rav Menachya : qui dit que celui qui moissonne pour couvrir n&#x27;en a pas — qui le contraint a etablir son propos comme une controverse de tannaim et a dire « moi, je parle comme le premier tanna, et Aherim divergent » ? On peut tout aussi bien etablir la baraita dans le cas de celui qui a moissonne pour manger puis s&#x27;est ravise pour couvrir : c&#x27;est pour cela qu&#x27;Aherim disent qu&#x27;il a des yadot, mais s&#x27;il avait moissonne d&#x27;emblee pour couvrir, Aherim reconnaitraient eux aussi qu&#x27;il n&#x27;en a pas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara traite les deux Amoraim separement. Rabbi Abba, qui accorde des yadot au moissonneur, ne peut se ranger que derriere Aherim ; le premier tanna le contredit de front. Sa position est donc bien tannaitiquement disputee — Rachi montre qu'aucune relecture ne peut sauver le premier tanna a son profit.</p><p>Rav Menachya, lui, n'est pas contraint. Il relit la baraita comme un cas particulier : on a coupe les tiges <b>pour manger</b>, puis on s'est ravise pour couvrir. Les yadot sont alors nees de la premiere <b>mahshava</b> (intention), et Aherim se contentent de dire qu'elles ne disparaissent pas. Sur le cas qui l'interesse — moissonner d'emblee pour le sekhakh — tout le monde lui donnerait raison.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="300" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="13.6" font-weight="700" fill="#1c1917">L echappatoire de Rav Menachya, et le prix a payer</text>
+  <text x="350" y="41" text-anchor="middle" font-size="9.4" fill="#57534e">Segments 10 et 11 : la baraita relue comme un cas de changement d intention</text>
+
+  <rect x="26" y="56" width="152" height="58" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.4"/>
+  <text x="102" y="78" text-anchor="middle" font-size="9.8" font-weight="700" fill="#14532d">Il coupe pour manger</text>
+  <text x="102" y="95" text-anchor="middle" font-size="8.8" fill="#292524">premiere mahshava</text>
+  <text x="102" y="107" text-anchor="middle" font-size="8.8" font-weight="700" fill="#166534">des yadot naissent</text>
+
+  <path d="M178 85 L212 85" stroke="#78716c" stroke-width="1.5"/><path d="M211 80 L211 90 L218 85 Z" fill="#78716c"/>
+
+  <rect x="220" y="56" width="152" height="58" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.4"/>
+  <text x="296" y="78" text-anchor="middle" font-size="9.8" font-weight="700" fill="#78350f">Il se ravise : couvrir</text>
+  <text x="296" y="95" text-anchor="middle" font-size="8.8" fill="#292524">seconde mahshava</text>
+  <text x="296" y="107" text-anchor="middle" font-size="8.8" fill="#57534e">nimlakh alehen le sikoukh</text>
+
+  <path d="M372 85 L406 85" stroke="#78716c" stroke-width="1.5"/><path d="M405 80 L405 90 L412 85 Z" fill="#78716c"/>
+
+  <rect x="414" y="56" width="262" height="58" rx="7" fill="#eef2ff" stroke="#4338ca" stroke-width="1.4"/>
+  <text x="545" y="78" text-anchor="middle" font-size="9.8" font-weight="700" fill="#312e81">Aherim : les yadot restent</text>
+  <text x="545" y="95" text-anchor="middle" font-size="8.8" fill="#292524">Donc tout le monde peut convenir que moissonner</text>
+  <text x="545" y="107" text-anchor="middle" font-size="8.8" fill="#292524">d emblee pour le sekhakh ne donne pas de yadot.</text>
+
+  <path d="M350 118 L350 138" stroke="#b91c1c" stroke-width="1.6"/><path d="M344 137 L356 137 L350 144 Z" fill="#b91c1c"/>
+
+  <rect x="26" y="150" width="650" height="46" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.5"/>
+  <text x="350" y="170" text-anchor="middle" font-size="10.6" font-weight="700" fill="#7f1d1d">Mais alors, que disent les Sages -- le premier tanna ?</text>
+  <text x="350" y="187" text-anchor="middle" font-size="9.2" fill="#292524">Il a bien coupe pour manger : les yadot devraient exister. Pourquoi ne les compte-t-il pas ?</text>
+
+  <rect x="26" y="208" width="316" height="80" rx="7" fill="#f5f3ff" stroke="#6d28d9" stroke-width="1.4"/>
+  <text x="184" y="228" text-anchor="middle" font-size="9.8" font-weight="700" fill="#4c1d95">Reponse envisagee</text>
+  <text x="40" y="248" font-size="9" fill="#292524">La seconde mahshava annule la premiere :</text>
+  <text x="40" y="261" font-size="9" fill="#292524">en decidant de couvrir, il efface l intention</text>
+  <text x="40" y="274" font-size="9" fill="#292524">alimentaire -- donc plus de yadot.</text>
+
+  <rect x="360" y="208" width="316" height="80" rx="7" fill="#f8fafc" stroke="#475569" stroke-width="1.4"/>
+  <text x="518" y="228" text-anchor="middle" font-size="9.8" font-weight="700" fill="#1e293b">Objection qui clot le folio</text>
+  <text x="374" y="248" font-size="9" fill="#292524">Une michna sur les ustensiles -- kol ha kelim --</text>
+  <text x="374" y="261" font-size="9" fill="#292524">montre qu une intention deja acquise ne</text>
+  <text x="374" y="274" font-size="9" fill="#292524">se defait pas par un simple changement d avis.</text>
+</svg></div><div class="svg-cap">L echappatoire de Rav Menachya : la baraita relue comme un cas d intention changee — et l objection qui s ensuit.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִי קוֹצְצָן לַאֲכִילָה, מַאי טַעְמַייְהוּ דְּרַבָּנָן? וְכִי תֵּימָא קָסָבְרִי רַבָּנַן כֵּיוָן דְּנִמְלַךְ עֲלֵיהֶן לְסִיכּוּךְ, בָּטְלָה לֵיהּ מַחְשַׁבְתּוֹ. וּמִי בָּטְלָה לֵיהּ מַחְשָׁבָה בְּהָכִי? וְהִתְנָן: כָּל הַכֵּלִים</div>
+            <div class="fr"><p>S&#x27;il les a coupes pour les manger, quelle est la raison des Sages ? Et si tu dis que les Sages tiennent que, des lors qu&#x27;il s&#x27;est ravise a leur sujet en vue de la couverture, son intention [premiere] s&#x27;est annulee — et l&#x27;intention s&#x27;annule-t-elle par un tel moyen ?</p><p>N&#x27;avons-nous pas appris : tous les ustensiles...</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמִי בָּטְלָה מַחֲשָׁבָה</b> קַבָּלַת טֻומְאָה בְּהָכִי וַאֲפִילּוּ לֹא נִטְמְאוּ קֹודֶם שֶׁנִּמְלַךְ מִיהוּ יָרְדָה לָהֶן תּוֹרַת קַבָּלַת טֻומְאָה עַל יְדֵי מַחְשָׁבָה רִאשׁוֹנָה וּמִי בָּטְלָה קַמַּיְיתָא בְּמַחְשָׁבָה בָּתְרָיְיתָא:</div>
+          <div class="glose-fr">Et l&#x27;intention s&#x27;annule-t-elle : la reception de la touma, par ce moyen ? Meme s&#x27;ils n&#x27;ont pas ete rendus impurs avant qu&#x27;il ne se ravise, il leur est neanmoins echu, par la premiere mahshava, le statut de choses susceptibles de recevoir la touma — et la premiere s&#x27;annule-t-elle par la seconde mahshava ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>C'est le prix de l'echappatoire. Si la baraita parle de tiges coupees pour manger, alors les yadot devraient exister pour tout le monde — et l'on ne comprend plus le premier tanna (« les Sages »), qui refuse de les compter.</p><p>La reponse envisagee est que la seconde <b>mahshava</b> annule la premiere. Mais la Guemara s'y oppose aussitot : une fois qu'une chose est entree dans le regime de receptivite a la touma par une intention, un simple changement d'avis ne l'en fait pas sortir — il y faudrait un acte materiel. La michna invoquee, <i>kol ha-kelim</i> (« tous les ustensiles »), va etre citee au debut de 14a.</p><p>Le folio s'arrete sur cette question ouverte : la sougya des yadot se poursuit sur l'amud suivant.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Sukkah_13a.html">&lsaquo; Sukkah 13a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Sukkah_14a.html">Sukkah 14a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

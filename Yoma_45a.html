@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yoma 45a -- fin des sept ors, les differences de la michna (encens, rampe, kiton d&#x27;or) et la grande mahloket sur le nombre de ma&#x27;arakhot</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Yoma 45a -- fin des sept ors, les differences de la michna (encens, rampe, kiton d&#x27;or) et la grande mahloket sur le nombre de ma&#x27;arakhot</h1>
+    <div class="ref">Yoma 45a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_44b.html">&lsaquo; Yoma 44b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> Le daf acheve la liste des sept ors ouverte en 44b -- chahout, sagour, parvayim -- avant que Rav Achi n&#x27;y remette de l&#x27;ordre : il n&#x27;y a que cinq varietes, chacune en deux qualites, et l&#x27;or rouge de la mahta de Kippour prouve l&#x27;existence du parvayim. La guemara commente ensuite, en serie, quatre differences de la michna : l&#x27;encens broye daka min ha-daka, la montee au milieu de la rampe et non par son bord est, le kiddouch yadayim ve-raglayim au kiton d&#x27;or -- les deux dernieres pour un seul motif, l&#x27;honneur du kohen gadol.</p><p>La seconde moitie du amoud est occupee par une mahloket de comptage : combien de ma&#x27;arakhot, de tas de bois, brulent sur l&#x27;autel ? Rabbi Yehouda dit deux, Rabbi Yossi trois (il ajoute le kiyoum ha-ech), Rabbi Meir quatre (il ajoute les evarim ou-fedarim inacheves) -- et chacun un de plus a Kippour, pour les braises du Saint des saints.</p><p>Notre michna suit Rabbi Meir. La guemara distribue alors les mentions du feu dans les versets : ce que l&#x27;un affecte a un tas, l&#x27;autre doit l&#x27;affecter ailleurs, d&#x27;ou le detour par la hatsatat alita -- ou allume-t-on le petit bois, et un zar pourrait-il le faire au soufflet depuis le sol ?</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 322" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="322" fill="#fffdf8"/>
+  <text x="370" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Les quatre differences de la michna commentees dans ce amoud</text>
+  <text x="370" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">La michna oppose le rite de chaque jour a celui de Yom Kippour. La guemara demande a chaque fois : ma taama, quelle en est la raison ?</text>
+
+  <rect x="20"  y="62" width="205" height="30" fill="#f5f5f4" stroke="#a8a29e" stroke-width="1.2"/>
+  <rect x="225" y="62" width="245" height="30" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+  <rect x="470" y="62" width="250" height="30" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="122" y="82" text-anchor="middle" font-size="11" font-weight="700" fill="#44403c">Objet</text>
+  <text x="347" y="82" text-anchor="middle" font-size="11" font-weight="700" fill="#075985">Chaque jour</text>
+  <text x="595" y="82" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">Yom Kippour</text>
+
+  <rect x="20"  y="92" width="205" height="54" fill="#fafaf9" stroke="#d6d3d1"/>
+  <rect x="225" y="92" width="245" height="54" fill="#f0f9ff" stroke="#bae6fd"/>
+  <rect x="470" y="92" width="250" height="54" fill="#fffbeb" stroke="#fde68a"/>
+  <text x="32" y="114" font-size="10.6" font-weight="700" fill="#292524">1. Mouture de la ketoret</text>
+  <text x="32" y="131" font-size="9.6" fill="#57534e">Ex 30,36 : et tu en broieras fin</text>
+  <text x="237" y="120" font-size="10.6" fill="#0c4a6e">daka -- broyee fin</text>
+  <text x="482" y="114" font-size="10.6" font-weight="700" fill="#7c2d12">daka min ha-daka</text>
+  <text x="482" y="131" font-size="9.6" fill="#78350f">plus fin que fin (Lev 16,12 : daka)</text>
+
+  <rect x="20"  y="146" width="205" height="54" fill="#fafaf9" stroke="#d6d3d1"/>
+  <rect x="225" y="146" width="245" height="54" fill="#f0f9ff" stroke="#bae6fd"/>
+  <rect x="470" y="146" width="250" height="54" fill="#fffbeb" stroke="#fde68a"/>
+  <text x="32" y="168" font-size="10.6" font-weight="700" fill="#292524">2. Montee sur la rampe</text>
+  <text x="32" y="185" font-size="9.6" fill="#57534e">kevesh, au sud de l'autel</text>
+  <text x="237" y="168" font-size="10.6" fill="#0c4a6e">cote EST de la rampe</text>
+  <text x="237" y="185" font-size="9.6" fill="#075985">tout tour se fait vers la droite</text>
+  <text x="482" y="168" font-size="10.6" font-weight="700" fill="#7c2d12">au MILIEU, montee et descente</text>
+  <text x="482" y="185" font-size="9.6" fill="#78350f">raison : kevodo chel kohen gadol</text>
+
+  <rect x="20"  y="200" width="205" height="54" fill="#fafaf9" stroke="#d6d3d1"/>
+  <rect x="225" y="200" width="245" height="54" fill="#f0f9ff" stroke="#bae6fd"/>
+  <rect x="470" y="200" width="250" height="54" fill="#fffbeb" stroke="#fde68a"/>
+  <text x="32" y="222" font-size="10.6" font-weight="700" fill="#292524">3. Sanctification mains-pieds</text>
+  <text x="32" y="239" font-size="9.6" fill="#57534e">kiddouch yadayim ve-raglayim</text>
+  <text x="237" y="230" font-size="10.6" fill="#0c4a6e">au kiyor (la vasque)</text>
+  <text x="482" y="222" font-size="10.6" font-weight="700" fill="#7c2d12">au kiton d'or</text>
+  <text x="482" y="239" font-size="9.6" fill="#78350f">raison : kevodo chel kohen gadol</text>
+
+  <rect x="20"  y="254" width="205" height="54" fill="#fafaf9" stroke="#d6d3d1"/>
+  <rect x="225" y="254" width="245" height="54" fill="#f0f9ff" stroke="#bae6fd"/>
+  <rect x="470" y="254" width="250" height="54" fill="#fffbeb" stroke="#fde68a"/>
+  <text x="32" y="276" font-size="10.6" font-weight="700" fill="#292524">4. Ma'arakhot sur l'autel</text>
+  <text x="32" y="293" font-size="9.6" fill="#57534e">les tas de bois disposes</text>
+  <text x="237" y="284" font-size="10.6" fill="#0c4a6e">quatre</text>
+  <text x="482" y="276" font-size="10.6" font-weight="700" fill="#7c2d12">cinq</text>
+  <text x="482" y="293" font-size="9.6" fill="#78350f">notre michna suit donc Rabbi Meir</text>
+</svg></div>
+          <figcaption>Les quatre differences de la michna que la guemara commente dans ce amoud : la mouture de l&#x27;encens, la montee sur la rampe, la sanctification des mains et des pieds, et le nombre de ma&#x27;arakhot.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 452" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="452" fill="#fffdf8"/>
+  <text x="370" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Combien de ma'arakhot sur l'autel ? La carte des trois avis</text>
+  <text x="370" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">Une ma'arakha est un tas de bois dispose et allume sur l'autel exterieur. Chaque tana compte differemment, et chacun doit trouver un verset pour chaque tas.</text>
+
+  <rect x="20"  y="60" width="228" height="34" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <rect x="256" y="60" width="228" height="34" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <rect x="492" y="60" width="228" height="34" fill="#fae8ff" stroke="#a21caf" stroke-width="1.8"/>
+  <text x="134" y="76" text-anchor="middle" font-size="11.5" font-weight="700" fill="#14532d">Rabbi Yehouda</text>
+  <text x="134" y="89" text-anchor="middle" font-size="10" fill="#166534">2 chaque jour / 3 a Kippour</text>
+  <text x="370" y="76" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1e3a8a">Rabbi Yossi</text>
+  <text x="370" y="89" text-anchor="middle" font-size="10" fill="#1d4ed8">3 chaque jour / 4 a Kippour</text>
+  <text x="606" y="76" text-anchor="middle" font-size="11.5" font-weight="700" fill="#701a75">Rabbi Meir</text>
+  <text x="606" y="89" text-anchor="middle" font-size="10" fill="#a21caf">4 chaque jour / 5 a Kippour -- c'est notre michna</text>
+
+  <rect x="20"  y="102" width="228" height="40" fill="#f0fdf4" stroke="#86efac"/>
+  <rect x="256" y="102" width="228" height="40" fill="#eff6ff" stroke="#bfdbfe"/>
+  <rect x="492" y="102" width="228" height="40" fill="#fdf4ff" stroke="#f5d0fe"/>
+  <text x="32"  y="119" font-size="10.4" font-weight="700" fill="#14532d">1. Ma'arakha guedola</text>
+  <text x="32"  y="134" font-size="9.4" fill="#166534">le grand tas : olot et emourim</text>
+  <text x="268" y="119" font-size="10.4" font-weight="700" fill="#1e3a8a">1. Ma'arakha guedola</text>
+  <text x="268" y="134" font-size="9.4" fill="#1d4ed8">le grand tas : olot et emourim</text>
+  <text x="504" y="119" font-size="10.4" font-weight="700" fill="#701a75">1. Ma'arakha guedola</text>
+  <text x="504" y="134" font-size="9.4" fill="#a21caf">le grand tas : olot et emourim</text>
+
+  <rect x="20"  y="142" width="228" height="40" fill="#f0fdf4" stroke="#86efac"/>
+  <rect x="256" y="142" width="228" height="40" fill="#eff6ff" stroke="#bfdbfe"/>
+  <rect x="492" y="142" width="228" height="40" fill="#fdf4ff" stroke="#f5d0fe"/>
+  <text x="32"  y="159" font-size="10.4" font-weight="700" fill="#14532d">2. Ma'arakha chenia</text>
+  <text x="32"  y="174" font-size="9.4" fill="#166534">braises pour la ketoret quotidienne</text>
+  <text x="268" y="159" font-size="10.4" font-weight="700" fill="#1e3a8a">2. Ma'arakha chenia</text>
+  <text x="268" y="174" font-size="9.4" fill="#1d4ed8">braises pour la ketoret quotidienne</text>
+  <text x="504" y="159" font-size="10.4" font-weight="700" fill="#701a75">2. Ma'arakha chenia</text>
+  <text x="504" y="174" font-size="9.4" fill="#a21caf">braises pour la ketoret quotidienne</text>
+
+  <rect x="20"  y="182" width="228" height="40" fill="#fafaf9" stroke="#e7e5e4"/>
+  <rect x="256" y="182" width="228" height="40" fill="#eff6ff" stroke="#bfdbfe"/>
+  <rect x="492" y="182" width="228" height="40" fill="#fdf4ff" stroke="#f5d0fe"/>
+  <text x="134" y="206" text-anchor="middle" font-size="10.4" fill="#a8a29e">-- il n'en compte pas --</text>
+  <text x="268" y="199" font-size="10.4" font-weight="700" fill="#1e3a8a">3. Kiyoum ha-ech</text>
+  <text x="268" y="214" font-size="9.4" fill="#1d4ed8">reserve de bois pour raviver le feu</text>
+  <text x="504" y="199" font-size="10.4" font-weight="700" fill="#701a75">3. Kiyoum ha-ech</text>
+  <text x="504" y="214" font-size="9.4" fill="#a21caf">reserve de bois pour raviver le feu</text>
+
+  <rect x="20"  y="222" width="228" height="40" fill="#fafaf9" stroke="#e7e5e4"/>
+  <rect x="256" y="222" width="228" height="40" fill="#fafaf9" stroke="#e7e5e4"/>
+  <rect x="492" y="222" width="228" height="40" fill="#fdf4ff" stroke="#f5d0fe"/>
+  <text x="134" y="246" text-anchor="middle" font-size="10.4" fill="#a8a29e">-- il n'en compte pas --</text>
+  <text x="370" y="246" text-anchor="middle" font-size="10.4" fill="#a8a29e">-- il n'en compte pas --</text>
+  <text x="504" y="239" font-size="10.4" font-weight="700" fill="#701a75">4. Evarim ou-fedarim</text>
+  <text x="504" y="254" font-size="9.4" fill="#a21caf">membres et graisses restes de la veille</text>
+
+  <rect x="20"  y="262" width="700" height="42" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="370" y="279" text-anchor="middle" font-size="10.8" font-weight="700" fill="#7c2d12">+ 1 a Yom Kippour seulement : la ma'arakha ajoutee ce jour-la</text>
+  <text x="370" y="295" text-anchor="middle" font-size="9.6" fill="#78350f">on y prend les braises de la ketoret de lifnai ve-lifnim (le Saint des saints). Les trois tanaim s'accordent sur cet ajout : c'est le +1 de la michna.</text>
+
+  <text x="20" y="330" font-size="11" font-weight="700" fill="#1c1917">D'ou chacun tire-t-il ses tas ?</text>
+  <rect x="20"  y="338" width="228" height="98" fill="#f0fdf4" stroke="#86efac"/>
+  <rect x="256" y="338" width="228" height="98" fill="#eff6ff" stroke="#bfdbfe"/>
+  <rect x="492" y="338" width="228" height="98" fill="#fdf4ff" stroke="#f5d0fe"/>
+  <text x="32"  y="356" font-size="9.6" fill="#14532d">Lev 6,2 : ha-ola al mokda -- grande</text>
+  <text x="32"  y="371" font-size="9.6" fill="#14532d">Lev 6,2 : ve-ech ha-mizbeah -- ketoret</text>
+  <text x="32"  y="390" font-size="9.6" font-weight="700" fill="#166534">Lev 6,5 (ve-ha-ech) : sert ailleurs --</text>
+  <text x="32"  y="404" font-size="9.6" fill="#166534">hatsatat alita au sommet de l'autel</text>
+  <text x="32"  y="424" font-size="9.4" fill="#57534e">le vav de ve-ech : il ne l'expose pas</text>
+  <text x="268" y="356" font-size="9.6" fill="#1e3a8a">Lev 6,2 : ha-ola al mokda -- grande</text>
+  <text x="268" y="371" font-size="9.6" fill="#1e3a8a">Lev 6,2 : ve-ech ha-mizbeah -- ketoret</text>
+  <text x="268" y="390" font-size="9.6" font-weight="700" fill="#1d4ed8">Lev 6,5 (ve-ha-ech) : kiyoum ha-ech</text>
+  <text x="268" y="404" font-size="9.6" fill="#1d4ed8">alita : depuis Lev 1,7, comme R. Chimon</text>
+  <text x="268" y="424" font-size="9.4" fill="#57534e">le vav de ve-ech : il ne l'expose pas</text>
+  <text x="504" y="356" font-size="9.6" fill="#701a75">Lev 6,2 : ha-ola al mokda -- grande</text>
+  <text x="504" y="371" font-size="9.6" fill="#701a75">Lev 6,2 : ve-ech ha-mizbeah -- ketoret</text>
+  <text x="504" y="390" font-size="9.6" fill="#a21caf">Lev 6,5 (ve-ha-ech) : kiyoum ha-ech</text>
+  <text x="504" y="409" font-size="9.6" font-weight="700" fill="#a21caf">le VAV de ve-ech : evarim ou-fedarim</text>
+  <text x="504" y="424" font-size="9.4" fill="#86198f">lui seul expose le vav</text>
+</svg></div>
+          <figcaption>La mahloket centrale du daf : combien de tas de bois sur l&#x27;autel ? Rabbi Yehouda 2, Rabbi Yossi 3, Rabbi Meir 4 -- plus un a Kippour pour la ketoret du Saint des saints. Notre michna suit Rabbi Meir.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 420" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="420" fill="#fffdf8"/>
+  <text x="370" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Quatre mentions du feu, quatre enseignements a distribuer</text>
+  <text x="370" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">Chaque tana a le meme stock de versets et un nombre de tas different : ce qui reste libre chez l'un doit servir a autre chose chez l'autre.</text>
+
+  <defs>
+    <marker id="ar45" markerWidth="9" markerHeight="9" refX="8" refY="3.2" orient="auto">
+      <path d="M0,0 L8,3.2 L0,6.4 z" fill="#78716c"/>
+    </marker>
+  </defs>
+
+  <rect x="24" y="70" width="250" height="56" fill="#f5f5f4" stroke="#78716c" stroke-width="1.5"/>
+  <text x="36" y="90" font-size="10.6" font-weight="700" fill="#1c1917">Lev 6,2 : hi ha-ola al mokda</text>
+  <text x="36" y="106" font-size="9.6" fill="#57534e">c'est la ola sur son foyer, sur l'autel,</text>
+  <text x="36" y="119" font-size="9.6" fill="#57534e">toute la nuit</text>
+  <line x1="274" y1="98" x2="424" y2="98" stroke="#78716c" stroke-width="1.4" marker-end="url(#ar45)"/>
+  <rect x="428" y="76" width="288" height="44" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="440" y="94" font-size="10.6" font-weight="700" fill="#713f12">Ma'arakha guedola -- le grand tas</text>
+  <text x="440" y="110" font-size="9.6" fill="#854d0e">accepte par tous les trois</text>
+
+  <rect x="24" y="140" width="250" height="56" fill="#f5f5f4" stroke="#78716c" stroke-width="1.5"/>
+  <text x="36" y="160" font-size="10.6" font-weight="700" fill="#1c1917">Lev 6,2 : ve-ech ha-mizbeah</text>
+  <text x="36" y="176" font-size="9.6" fill="#57534e">et le feu de l'autel y sera maintenu</text>
+  <text x="36" y="189" font-size="9.6" fill="#57534e">allume</text>
+  <line x1="274" y1="168" x2="424" y2="168" stroke="#78716c" stroke-width="1.4" marker-end="url(#ar45)"/>
+  <rect x="428" y="146" width="288" height="44" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="440" y="164" font-size="10.6" font-weight="700" fill="#713f12">Ma'arakha chenia -- celle de la ketoret</text>
+  <text x="440" y="180" font-size="9.6" fill="#854d0e">accepte par tous les trois ; le VAV en plus : R. Meir</text>
+
+  <rect x="24" y="210" width="250" height="72" fill="#f5f5f4" stroke="#78716c" stroke-width="1.5"/>
+  <text x="36" y="230" font-size="10.6" font-weight="700" fill="#1c1917">Lev 6,5 : ve-ha-ech al ha-mizbeah</text>
+  <text x="36" y="246" font-size="9.6" fill="#57534e">et le feu sur l'autel y sera maintenu</text>
+  <text x="36" y="259" font-size="9.6" fill="#57534e">allume -- troisieme mention du feu</text>
+  <text x="36" y="274" font-size="9.4" fill="#a8a29e">c'est ici que les avis se separent</text>
+  <line x1="274" y1="232" x2="424" y2="222" stroke="#2563eb" stroke-width="1.6" marker-end="url(#ar45)"/>
+  <line x1="274" y1="258" x2="424" y2="272" stroke="#16a34a" stroke-width="1.6" marker-end="url(#ar45)"/>
+  <rect x="428" y="200" width="288" height="42" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="440" y="218" font-size="10.6" font-weight="700" fill="#1e3a8a">R. Yossi (et R. Meir) : kiyoum ha-ech</text>
+  <text x="440" y="233" font-size="9.6" fill="#1d4ed8">un tas de plus, pour entretenir le feu</text>
+  <rect x="428" y="250" width="288" height="42" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="440" y="268" font-size="10.6" font-weight="700" fill="#14532d">R. Yehouda : hatsatat alita</text>
+  <text x="440" y="283" font-size="9.6" fill="#166534">on allume les brindilles AU SOMMET de l'autel</text>
+
+  <rect x="24" y="300" width="250" height="72" fill="#f5f5f4" stroke="#78716c" stroke-width="1.5"/>
+  <text x="36" y="320" font-size="10.6" font-weight="700" fill="#1c1917">Lev 1,7 : ve-natnou bnei Aharon</text>
+  <text x="36" y="335" font-size="10.6" font-weight="700" fill="#1c1917">ha-kohen ech al ha-mizbeah</text>
+  <text x="36" y="351" font-size="9.6" fill="#57534e">les fils d'Aharon le cohen mettront</text>
+  <text x="36" y="364" font-size="9.6" fill="#57534e">du feu sur l'autel</text>
+  <line x1="274" y1="322" x2="424" y2="316" stroke="#16a34a" stroke-width="1.6" marker-end="url(#ar45)"/>
+  <line x1="274" y1="352" x2="424" y2="362" stroke="#2563eb" stroke-width="1.6" marker-end="url(#ar45)"/>
+  <rect x="428" y="298" width="288" height="38" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="440" y="314" font-size="10.4" font-weight="700" fill="#14532d">R. Yehouda : alita par un cohen apte,</text>
+  <text x="440" y="329" font-size="9.6" fill="#166534">revetu des habits du service</text>
+  <rect x="428" y="344" width="288" height="38" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="440" y="360" font-size="10.4" font-weight="700" fill="#1e3a8a">R. Chimon (donc R. Yossi) : alita</text>
+  <text x="440" y="375" font-size="9.6" fill="#1d4ed8">au sommet de l'autel -- pas besoin d'un verset pour le cohen</text>
+
+  <rect x="24" y="386" width="692" height="26" fill="#fff7ed" stroke="#fb923c" stroke-width="1.2"/>
+  <text x="370" y="403" text-anchor="middle" font-size="9.8" fill="#7c2d12">Nafka mina du debat R. Yehouda / R. Chimon : un zar pourrait-il rester au sol et attiser au soufflet ? R. Yehouda dit qu'il fallait un verset pour l'exclure.</text>
+</svg></div>
+          <figcaption>Le meme stock de versets, des comptes differents : ce qu&#x27;un tana affecte a un tas, l&#x27;autre doit l&#x27;affecter a autre chose -- d&#x27;ou le detour par l&#x27;allumage des brindilles (hatsatat alita).</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">שֶׁדּוֹמֶה לְפָז. זָהָב שָׁחוּט — שֶׁנִּטְוָה כְּחוּט. זָהָב סָגוּר — בְּשָׁעָה שֶׁנִּפְתָּח כָּל הַחֲנוּיוֹת נִסְגָּרוֹת. זָהָב פַּרְוָיִם — שֶׁדּוֹמֶה לְדַם הַפָּרִים.</div>
+            <div class="fr"><p>-- parce qu&#x27;il ressemble au paz (l&#x27;or fin). L&#x27;or chahout (file) -- parce qu&#x27;on le file comme un fil.</p><p>L&#x27;or sagour (ferme) -- a l&#x27;heure ou (sa boutique) s&#x27;ouvre, toutes les (autres) boutiques se ferment. L&#x27;or parvayim -- parce qu&#x27;il ressemble au sang des taureaux (parim).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁדּוֹמֶה לְפָז</b> מַצְהִיב כְּמַרְגָּלִית:</div>
+          <div class="glose-fr">Parce qu&#x27;il ressemble au paz -- il brille d&#x27;un eclat jaune comme une perle (margalit).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁנִּטְווָה כְּחוּט</b> מִפְּנֵי שֶׁהוּא רַךְ:</div>
+          <div class="glose-fr">Parce qu&#x27;on le file comme un fil -- parce qu&#x27;il est mou (donc malleable).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כָּל הַחֲנוּיוֹת נִסְגָּרוֹת</b> שֶׁאֵין מֶכֶר לְזָהָב אַחֵר מִפְּנֵי זֶה:</div>
+          <div class="glose-fr">Toutes les boutiques se ferment -- car aucun autre or ne trouve plus preneur a cause de celui-ci.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le daf s'ouvre sur la fin de la liste des <b>sept ors</b> de Rav Hisda, commencee a la fin de 44b. Chaque nom biblique de l'or recoit une etymologie : le <b>moufaz</b> brille comme le <i>paz</i> ; le <b>chahout</b> est si malleable qu'on peut le filer (<i>chenitve ke-hout</i>, d'ou son nom) ; le <b>sagour</b> est si recherche que toutes les autres boutiques d'orfevrerie ferment des qu'on en met en vente ; le <b>parvayim</b> est rouge comme le sang des taureaux (<i>parim</i>).</p><p>Cette liste n'est pas ornementale : la michna a enseigne que la <b>mahta</b> (l'encensoir) de Yom Kippour etait d'un or particulier, ce qui a ouvert la discussion sur les varietes d'or.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 330" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="330" fill="#fffdf8"/>
+  <text x="370" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Les sept ors -- et pourquoi Rav Achi n'en compte que cinq</text>
+  <text x="370" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">Rav Hisda comptait sept ors ; notre passage acheve d'expliquer les quatre derniers noms, puis Rav Achi corrige le compte.</text>
+
+  <rect x="20"  y="62" width="98" height="76" fill="#fef3c7" stroke="#d97706" stroke-width="1.4"/>
+  <rect x="122" y="62" width="98" height="76" fill="#fef3c7" stroke="#d97706" stroke-width="1.4"/>
+  <rect x="224" y="62" width="118" height="76" fill="#fde68a" stroke="#b45309" stroke-width="1.4"/>
+  <rect x="346" y="62" width="118" height="76" fill="#fde68a" stroke="#b45309" stroke-width="1.4"/>
+  <rect x="468" y="62" width="118" height="76" fill="#fde68a" stroke="#b45309" stroke-width="1.4"/>
+  <rect x="590" y="62" width="130" height="76" fill="#fde68a" stroke="#b45309" stroke-width="1.4"/>
+
+  <text x="69"  y="82" text-anchor="middle" font-size="10.4" font-weight="700" fill="#78350f">zahav</text>
+  <text x="69"  y="100" text-anchor="middle" font-size="9.2" fill="#92400e">l'or simple</text>
+  <text x="171" y="82" text-anchor="middle" font-size="10.4" font-weight="700" fill="#78350f">zahav tov</text>
+  <text x="171" y="100" text-anchor="middle" font-size="9.2" fill="#92400e">le bon or</text>
+  <text x="283" y="82" text-anchor="middle" font-size="10.4" font-weight="700" fill="#7c2d12">Ofir / moufaz</text>
+  <text x="283" y="100" text-anchor="middle" font-size="9.2" fill="#92400e">moufaz : brille</text>
+  <text x="283" y="114" text-anchor="middle" font-size="9.2" fill="#92400e">comme le paz</text>
+  <text x="405" y="82" text-anchor="middle" font-size="10.4" font-weight="700" fill="#7c2d12">chahout</text>
+  <text x="405" y="100" text-anchor="middle" font-size="9.2" fill="#92400e">si mou qu'on le</text>
+  <text x="405" y="114" text-anchor="middle" font-size="9.2" fill="#92400e">file comme un fil</text>
+  <text x="527" y="82" text-anchor="middle" font-size="10.4" font-weight="700" fill="#7c2d12">sagour</text>
+  <text x="527" y="100" text-anchor="middle" font-size="9.2" fill="#92400e">des qu'il s'en vend,</text>
+  <text x="527" y="114" text-anchor="middle" font-size="9.2" fill="#92400e">les autres ferment</text>
+  <text x="655" y="82" text-anchor="middle" font-size="10.4" font-weight="700" fill="#7c2d12">parvayim</text>
+  <text x="655" y="100" text-anchor="middle" font-size="9.2" fill="#92400e">rouge comme le</text>
+  <text x="655" y="114" text-anchor="middle" font-size="9.2" fill="#92400e">sang des parim</text>
+
+  <text x="171" y="132" text-anchor="middle" font-size="8.8" fill="#a16207">deux noms selon Rav Hisda</text>
+  <text x="472" y="132" text-anchor="middle" font-size="8.8" fill="#a16207">cinq varietes nommees</text>
+
+  <path d="M170,142 L170,170 L370,170" stroke="#b45309" stroke-width="1.4" fill="none" stroke-dasharray="4 3"/>
+  <text x="370" y="192" text-anchor="middle" font-size="11.4" font-weight="700" fill="#7c2d12">Rav Achi : hamicha hen -- il n'y en a que CINQ</text>
+  <text x="370" y="209" text-anchor="middle" font-size="10" fill="#92400e">zahav et zahav tov ne sont pas deux categories : ce sont deux qualites presentes DANS chacune des cinq.</text>
+
+  <rect x="150" y="222" width="440" height="52" fill="#fff7ed" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="370" y="242" text-anchor="middle" font-size="10.4" font-weight="700" fill="#7c2d12">Chaque variete x 2 qualites</text>
+  <text x="370" y="260" text-anchor="middle" font-size="9.6" fill="#9a3412">ex. or d'Ofir : un or ordinaire (avec scories) et un bon or (sans scories) -- idem pour les cinq</text>
+
+  <rect x="150" y="282" width="440" height="38" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="370" y="299" text-anchor="middle" font-size="10.2" font-weight="700" fill="#7f1d1d">Preuve (tania nami hakhi) : la mahta de Kippour</text>
+  <text x="370" y="313" text-anchor="middle" font-size="9.4" fill="#991b1b">chaque jour son or etait verdatre ; ce jour-la, rouge -- c'est le parvayim, couleur du sang des taureaux</text>
+</svg></div><div class="svg-cap">Les sept ors de Rav Hisda, leurs etymologies, et la correction de Rav Achi : cinq varietes, chacune en deux qualites.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַב אַשִּׁי אָמַר: חֲמִשָּׁה הֵן, וְכָל חַד וְחַד אִית בֵּיהּ זָהָב וְזָהָב טוֹב. תַּנְיָא נָמֵי הָכִי: בְּכָל יוֹם הָיָה זְהָבָהּ יָרֹוק, וְהַיּוֹם אָדֹום — וְהַייְנוּ זְהַב פַּרְוַיִם שֶׁדּוֹמֶה לְדַם הַפָּרִים.</div>
+            <div class="fr"><p>Rav Achi dit : il y en a cinq, et chacun d&#x27;eux comporte (une qualite) « or » et (une qualite) « bon or ». On a enseigne de meme (dans une baraita) : chaque jour son or etait verdatre, et ce jour-la rouge -- et c&#x27;est l&#x27;or parvayim, qui ressemble au sang des taureaux.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תַּנְיָא נָמֵי הָכִי</b> דְּעַל שֵׁם שֶׁדּוֹמֶה לְדַם הַפָּרִים נִקְרָא זָהָב פַּרְוָיִם בְּדִבְרֵי הַיָּמִים (ב ג):</div>
+          <div class="glose-fr">On a enseigne de meme -- (a savoir) que c&#x27;est parce qu&#x27;il ressemble au sang des taureaux qu&#x27;il est appele zahav parvayim dans Divrei ha-Yamim (II Chroniques 3,6).</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">רַב אָשֵׁי אָמַר : חֲמִשָּׁה הֵן , וְכָל חַד וְחַד אִית בֵּיהּ &quot; זָהָב &quot; ו &quot; זָהָב טוֹב &quot;. פֵּירוּשׁ זָהָב סְתָם הוּא הַמָּצוּי בְּיַד כָּל אָדָם שֶׁיֵּשׁ בּוֹ סִיגִים וְ&#x27;זָהָב טוֹב&#x27; הוּא שֶׁאֵין בּוֹ סִיגִים וּשְׁתַּיִם אֵלּוּ נִמְצָאִים בְּכָל אוֹתָם הַחֲמִשָּׁה דֶּרֶךְ מָשָׁל זָהָב אוֹפִיר יֵשׁ בּוֹ זָהָב סְתָם שֶׁיֵּשׁ בּוֹ סִיגִים וְזָהָב טוֹב שֶׁאֵין בּוֹ סִיגִים וְכֵן בְּכוּלְּהוּ.</div>
+          <div class="glose-fr">« Rav Achi dit : il y en a cinq, et chacun d&#x27;eux comporte or et bon or. » Explication : l&#x27;or simple (zahav stam) est celui que l&#x27;on trouve chez tout un chacun et qui contient des scories (sigim) ; le « bon or » (zahav tov) est celui qui n&#x27;a pas de scories. Et ces deux-la se rencontrent dans chacune des cinq varietes : par exemple l&#x27;or d&#x27;Ofir comporte un or simple, qui a des scories, et un bon or, sans scories -- et ainsi pour toutes.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">בְּכָל יוֹם הָיָה זְהָבָהּ יָרֹוק, וְהַיּוֹם אָדָם וְהַיְנוּ: &quot;זָהָב פַּרְוָיִם&quot;. מַקְשִׁים לָמָּה בְּיוֹם הַכִּיפּוּרִים יִהְיֶה דּוֹמֶה לְדַם פָּרִים וַהֲלֹא זָהָב סָגוּר הוּא יָקָר יוֹתֵר? וְנִרְאֶה לִי בס&quot;ד כִּי זֶה הַיּוֹם נִקְרָא יוֹם הַכִּפּוּרִים וּכְמוֹ שֶׁאָמַר הַפָּסוּק (וַיִּקְרָא כג, כז) &#x27;אַךְ בֶּעָשׂוֹר לַחֹדֶשׁ הַשְּׁבִיעִי הַזֶּה יוֹם הַכִּפֻּרִים הוּא מִקְרָא קֹדֶשׁ יִהְיֶה לָכֶם&#x27; וְנִקְרָא כִּפּוּרִים מָלֵא בְּוָא&quot;ו, וְאִם תָּסִיר כ&quot;ו מִן כ פ ו רִים יִשָּׁאֵר פָּרִים , וְהוּא כִּי אוֹתִיּוֹת פָּרִים מוֹרִים עַל הַדִּין כִּי מנצפ&quot;ך הוּא פ&quot;ר דִּינִים וְהֵם כְּפוּלִים הֲרֵי הֵם פָּרִים לְשׁוֹן רַבִּים, וְיִתְמַתְּקוּ עַל יְדֵי הָעֲבוֹדָה שֶׁעוֹשִׂים אוֹתוֹ הַיּוֹם לְשֵׁם ה&#x27; וּכְמוֹ שֶׁנֶּאֱמַר (וַיִּקְרָא טז, ל) &#x27;כִּי בַיּוֹם הַזֶּה יְכַפֵּר עֲלֵיכֶם לְטַהֵר אֶתְכֶם מִכֹּל חַטֹּאתֵיכֶם לִפְנֵי ה&#x27; תִּטְהָרוּ&#x27; כְּלוֹמַר כָּל עֲבֹודַתְכֶם תִּהְיֶה בִּקְדֻושַּׁת הַמַּחֲשָׁבָה שֶׁהִיא לִפְנֵי ה&#x27; גַּם תְּכֻונּוּ לְשֵׁם ה&#x27; וְאָז תִּטְהָרוּ שֶׁתֻּושְׁלַם כַּפָּרָה שֶׁלָּכֶם בְּמִיתּוּק הַדִּינִים שֶׁיִּתְחַבְּרוּ אוֹתִיּוֹת כ&quot;ו שֶׁהֵם מִסְפַּר שֵׁם הֲוָיָ&quot;ה עִם אוֹתִיּוֹת &#x27;פָּרִים&#x27; שְׁמוּרִים עַל הַדִּינִין וּבָזֶה יִהְיֶה אֶצְלְכֶם צֵירוּף &#x27;כִּפּוּרִים&#x27; לְטַהֵר אֶתְכֶם. וְלָכֵן עוֹשִׂים הַזָּהָב שֶׁל אוֹתוֹ הַיּוֹם דּוֹמֶה לְדַם הַפָּרִים לְהוֹרוֹת שֶׁצְּרִיכִין הַיּוֹם הַזֶּה לְהַשְׁלִים וּלְתַקֵּן אוֹתִיּוֹת &#x27;פָּרִים&#x27; לַעֲשׂוֹתָם &#x27;כִּפּוּרִים&#x27; עַל יְדֵי הַכַּוָּנָה שֶׁתִּהְיֶה לְשֵׁם ה&#x27; שֶׁהוּא מִסְפַּר כ&quot;ו. אוֹ יוּבַן בס&quot;ד הַטַּעַם שֶׁעוֹשִׂין אֶת הַמַּחְתָּה מִזָּהָב הַדּוֹמֶה לְדַם הַפָּרִים לִרְמֹוז לוֹ שֶׁצָּרִיךְ אַחַר הַקְטָרַת הַקְּטֹורֶת בִּפְנִים לְהַזּוֹת גַּם כֵּן בִּפְנִים מִדַּם הַפָּר תְּחִילָּה שֶׁאִם שִׁינָּה וְהִזָּה מִדַּם הַשָּׂעִיר תְּחִילָּה עֲבוֹדָתוֹ פְּסוּלָה.</div>
+          <div class="glose-fr">« Chaque jour son or etait verdatre, et ce jour-la rouge, et c&#x27;est l&#x27;or parvayim. » On demande : pourquoi, le jour de Kippour, (l&#x27;or) ressemblerait-il au sang des taureaux, alors que l&#x27;or sagour est plus precieux ? Il me semble, avec l&#x27;aide du Ciel, que c&#x27;est parce que ce jour est appele Yom ha-Kippourim, comme le dit le verset (Lev 23,27) : « Or, le dixieme jour de ce septieme mois, c&#x27;est le jour des Kippourim, il y aura pour vous une convocation sainte » -- et kippourim y est ecrit plein, avec un vav. Or si tu retires kaf-vav (26) de כ פ ו רים, il reste parim (taureaux). Car les lettres de parim designent la rigueur (din) : les lettres finales mantsepakh valent pe-rech (280) dinim, et ils sont doubles -- d&#x27;ou parim, au pluriel. Ces rigueurs sont adoucies par le service (avoda) accompli ce jour-la pour le Nom de Hachem, comme il est dit (Lev 16,30) : « Car en ce jour on fera expiation sur vous pour vous purifier ; de toutes vos fautes, devant Hachem vous serez purs » -- c&#x27;est-a-dire : que tout votre service soit accompli dans la saintete de la pensee (mahchava), qui est « devant Hachem », et que vous dirigiez votre intention vers le Nom de Hachem ; alors « vous serez purs », votre expiation sera complete par l&#x27;adoucissement des rigueurs, lorsque les lettres kaf-vav -- valeur numerique du Nom Havaya (26) -- se joindront aux lettres parim qui designent les rigueurs : vous obtiendrez ainsi la combinaison kippourim, « pour vous purifier ». C&#x27;est pourquoi on fait l&#x27;or de ce jour-la semblable au sang des taureaux : pour enseigner qu&#x27;en ce jour il faut parachever et reparer les lettres parim afin d&#x27;en faire kippourim, par l&#x27;intention dirigee vers le Nom de Hachem, qui vaut kaf-vav. Ou bien on comprendra, avec l&#x27;aide du Ciel, la raison pour laquelle on fait la mahta d&#x27;un or semblable au sang des taureaux : c&#x27;est pour lui rappeler qu&#x27;apres avoir fait fumer l&#x27;encens a l&#x27;interieur, il doit aussi asperger a l&#x27;interieur, et d&#x27;abord du sang du taureau -- car s&#x27;il a interverti et asperge d&#x27;abord du sang du bouc, son service est passoul (invalide).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rav Achi</b> reduit la liste : il n'y a pas sept categories mais <b>cinq</b>. « Or » et « bon or » ne sont pas deux sortes a part ; ce sont deux <i>qualites</i> (avec ou sans scories) qui se retrouvent a l'interieur de chacune des cinq varietes nommees.</p><p>La preuve (<b>tania nami hakhi</b>) porte sur le dernier nom de la liste : une baraita atteste que l'encensoir de Kippour etait rouge alors qu'il etait verdatre le reste de l'annee -- c'est bien que le <b>parvayim</b> est une variete reelle et distincte, nommee d'apres la couleur du sang des taureaux.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בְּכָל יוֹם מַקְרִיב פְּרָס שַׁחֲרִית וְכוּ׳. בְּכָל יוֹם הָיְתָה דַּקָּה, וְהַיּוֹם דַּקָּה מִן הַדַּקָּה. תָּנוּ רַבָּנַן: ״דַּקָּה״ מַה תַּלְמוּד לוֹמַר? וַהֲלֹא כְּבָר נֶאֱמַר: ״וְשָׁחַקְתָּ מִמֶּנָּה הַדַּק״! אֶלָּא, לְהָבִיא דַּקָּה מִן הַדַּקָּה.</div>
+            <div class="fr"><p>« Chaque jour il offre un peras (une demi-mane d&#x27;encens) le matin, etc. » Chaque jour (l&#x27;encens) etait broye fin (daka), et ce jour-la plus fin que fin (daka min ha-daka). Nos maitres ont enseigne : que vient enseigner (le mot) « daka » (fin) ?</p><p>N&#x27;a-t-il pas deja ete dit : « et tu en broieras finement » ! Mais (c&#x27;est) pour inclure le plus fin que fin.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וַהֲלֹא כְּבָר נֶאֱמַר</b> בְּשֶׁל כָּל יְמוֹת הַשָּׁנָה וְשָׁחַקְתָּ מִמֶּנָּה הַדַּק:</div>
+          <div class="glose-fr">N&#x27;a-t-il pas deja ete dit -- a propos de (l&#x27;encens) de tous les jours de l&#x27;annee : « et tu en broieras finement » (Ex 30,36).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara passe au commentaire de la michna. Le principe de la <b>dracha</b> est ici l'economie du texte : puisque Ex 30,36 exige deja de broyer l'encens <i>finement</i> pour toute l'annee, l'adjectif <b>daka</b> repete a propos de Kippour (Lev 16,12) serait superflu -- il doit donc enseigner un degre supplementaire.</p><p>D'ou : <b>daka min ha-daka</b>, plus fin que fin. Le meme encens est repasse au pilon la veille de Kippour pour atteindre cette finesse superieure.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בְּכָל יוֹם כֹּהֲנִים עוֹלִין בְּמִזְרָחוֹ שֶׁל כֶּבֶשׁ. דְּאָמַר מָר: כָּל פִּינּוֹת שֶׁאַתָּה פּוֹנֶה לֹא יְהוּ אֶלָּא דֶּרֶךְ יָמִין לַמִּזְרָח.</div>
+            <div class="fr"><p>« Chaque jour, les cohanim montent du cote est de la rampe (kevesh). » Car le Maitre a dit : tous les tours que tu tournes ne seront que par la droite, c&#x27;est-a-dire vers l&#x27;est.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא דֶּרֶךְ יָמִין</b> שֶׁהוּא לַמִּזְרָח שֶׁהֲרֵי הַכֶּבֶשׂ בַּדָּרוֹם לְכָךְ עוֹלֶה בְּמִזְרָחוֹ שֶׁל כֶּבֶשׁ שֶׁסָּמוּךְ לִיפָּנוֹת לְיָמִין:</div>
+          <div class="glose-fr">Seulement par la droite -- qui est vers l&#x27;est ; car la rampe est au sud, c&#x27;est pourquoi (le cohen) monte du cote est de la rampe, qui est le plus proche (de l&#x27;endroit ou il devra) tourner vers la droite.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La rampe est adossee au <b>sud</b> de l'autel ; un cohen qui la gravit a donc l'est a sa droite. Le principe general <b>kol pinot che-ata pone lo yehou ela derekh yamin</b> (tout tour se fait par la droite) impose de contourner l'autel en partant vers l'est.</p><p>Monter par le bord <b>est</b> de la rampe, c'est arriver en haut deja du bon cote : le virage a droite se fait sans traverser la plateforme.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 396" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="396" fill="#fffdf8"/>
+  <text x="350" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Par ou monte-t-on sur la rampe ? Vue de dessus</text>
+  <text x="350" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">La rampe (kevesh) est au SUD de l'autel. Le nord est en haut du schema, l'est a droite.</text>
+
+  <g stroke="#a8a29e" stroke-width="1" fill="#78716c" font-size="9.4">
+    <line x1="628" y1="82" x2="628" y2="130" stroke="#a8a29e"/>
+    <line x1="604" y1="106" x2="652" y2="106" stroke="#a8a29e"/>
+    <text x="628" y="76" text-anchor="middle">N</text>
+    <text x="628" y="145" text-anchor="middle">S</text>
+    <text x="596" y="110" text-anchor="middle">O</text>
+    <text x="662" y="110" text-anchor="middle">E</text>
+  </g>
+
+  <rect x="200" y="70" width="230" height="140" fill="#e7e5e4" stroke="#57534e" stroke-width="2"/>
+  <text x="315" y="132" text-anchor="middle" font-size="12" font-weight="700" fill="#292524">Mizbeah ha-hitson</text>
+  <text x="315" y="150" text-anchor="middle" font-size="9.6" fill="#57534e">l'autel exterieur, avec ses ma'arakhot</text>
+
+  <rect x="245" y="212" width="140" height="140" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <text x="315" y="336" text-anchor="middle" font-size="10.6" font-weight="700" fill="#78350f">Kevesh (la rampe)</text>
+  <line x1="315" y1="212" x2="315" y2="352" stroke="#d6d3d1" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <defs>
+    <marker id="arK" markerWidth="9" markerHeight="9" refX="8" refY="3.2" orient="auto">
+      <path d="M0,0 L8,3.2 L0,6.4 z" fill="#0284c7"/>
+    </marker>
+    <marker id="arK2" markerWidth="9" markerHeight="9" refX="8" refY="3.2" orient="auto">
+      <path d="M0,0 L8,3.2 L0,6.4 z" fill="#d97706"/>
+    </marker>
+  </defs>
+
+  <line x1="368" y1="345" x2="368" y2="218" stroke="#0284c7" stroke-width="2.6" marker-end="url(#arK)"/>
+  <text x="392" y="290" font-size="10.4" font-weight="700" fill="#075985">chaque jour :</text>
+  <text x="392" y="305" font-size="10.4" font-weight="700" fill="#075985">cote EST de la rampe</text>
+  <text x="392" y="321" font-size="9.4" fill="#0369a1">on arrive au plus pres du</text>
+  <text x="392" y="334" font-size="9.4" fill="#0369a1">virage a droite</text>
+
+  <line x1="300" y1="345" x2="300" y2="218" stroke="#d97706" stroke-width="2.6" marker-end="url(#arK2)"/>
+  <text x="60" y="290" font-size="10.4" font-weight="700" fill="#92400e">Yom Kippour :</text>
+  <text x="60" y="305" font-size="10.4" font-weight="700" fill="#92400e">au MILIEU, a la montee</text>
+  <text x="60" y="320" font-size="10.4" font-weight="700" fill="#92400e">comme a la descente</text>
+  <text x="60" y="336" font-size="9.4" fill="#a16207">honneur du kohen gadol</text>
+
+  <path d="M368,196 C368,176 350,168 330,168" stroke="#0284c7" stroke-width="2" fill="none" marker-end="url(#arK)"/>
+  <text x="215" y="240" font-size="9.6" fill="#0369a1">arrive en haut, il tourne a DROITE, c'est-a-dire vers l'est</text>
+  <text x="215" y="254" font-size="9.6" fill="#0369a1">et contourne l'autel dans le sens inverse des aiguilles</text>
+
+  <rect x="40" y="360" width="620" height="28" fill="#f5f5f4" stroke="#a8a29e" stroke-width="1.2"/>
+  <text x="350" y="378" text-anchor="middle" font-size="9.8" fill="#44403c">Regle generale : kol pinot che-ata pone lo yehou ela derekh yamin -- tous les tours que tu tournes, seulement par la droite.</text>
+</svg></div><div class="svg-cap">Vue de dessus : la rampe au sud, la montee par le bord est chaque jour, par le milieu a Kippour, et le virage obligatoire vers la droite.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְהַיּוֹם (עוֹלִין) בָּאֶמְצַע (וְיוֹרְדִין) בָּאֶמְצַע. מַאי טַעְמָא — מִשּׁוּם כְּבוֹדוֹ דְּכֹהֵן גָּדוֹל.</div>
+            <div class="fr"><p>« Et ce jour-la (ils montent) au milieu et (descendent) au milieu. » Quelle en est la raison ? A cause de l&#x27;honneur du kohen gadol.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִשּׁוּם כְּבוֹדוֹ</b> לְהַרְאוֹת חֲשִׁיבוּתוֹ שֶׁהוּא כְּבֶן בַּיִת וּמַקִּיף לְצֹורֶךְ וְשֶׁלֹּא לְצֹורֶךְ:</div>
+          <div class="glose-fr">A cause de son honneur -- pour montrer son importance : il est comme le maitre de maison (ben bayit), et il fait le tour (de l&#x27;autel) qu&#x27;il en ait besoin ou non.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le grand pretre ne longe pas le bord : il emprunte l'axe de la rampe, a la montee comme a la descente. La raison n'est pas rituelle mais protocolaire -- <b>kevodo chel kohen gadol</b>.</p><p>Rachi precise la nuance : marcher au centre et faire le tour de l'autel qu'on en ait besoin ou non, c'est se comporter en <b>ben bayit</b>, en maitre de maison chez soi. Le rite met en scene le statut du kohen gadol dans le Temple ce jour-la.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בְּכָל יוֹם כֹּהֵן [גָּדוֹל] מְקַדֵּשׁ יָדָיו וְרַגְלָיו מִן הַכִּיּוֹר וְכוּ׳. מַאי טַעְמָא — מִשּׁוּם כְּבוֹדוֹ שֶׁל כֹּהֵן גָּדוֹל.</div>
+            <div class="fr"><p>« Chaque jour, le kohen [gadol] sanctifie ses mains et ses pieds a partir du kiyor (la vasque), etc. » Quelle en est la raison ? A cause de l&#x27;honneur du kohen gadol.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Meme reponse, deuxieme application : a Kippour, le grand pretre puise l'eau du <b>kiddouch yadayim ve-raglayim</b> dans un <b>kiton d'or</b> et non dans le kiyor commun. La guemara traite ces differences en serie parce qu'elles relevent d'un unique principe : l'honneur du kohen gadol.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בְּכָל יוֹם הָיוּ שָׁם אַרְבַּע מַעֲרָכוֹת. תָּנוּ רַבָּנַן: בְּכָל יוֹם הָיוּ שְׁתַּיִם מַעֲרָכוֹת, וְהַיּוֹם שָׁלֹשׁ. אַחַת מַעֲרָכָה גְּדוֹלָה, וְאַחַת מַעֲרָכָה שְׁנִיָּה שֶׁל קְטֹורֶת, וְאַחַת שֶׁמּוֹסִיפִין בּוֹ בַּיּוֹם, דִּבְרֵי רַבִּי יְהוּדָה.</div>
+            <div class="fr"><p>« Chaque jour il y avait la quatre ma&#x27;arakhot (dispositions de bois). » Nos maitres ont enseigne : chaque jour il y avait deux ma&#x27;arakhot, et ce jour-la trois : l&#x27;une, la grande ma&#x27;arakha ; l&#x27;une, la seconde ma&#x27;arakha, celle de la ketoret ; et l&#x27;une, celle qu&#x27;on ajoute en ce jour -- paroles de Rabbi Yehouda.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁמּוֹסִיפִין לִבּוֹ בַּיּוֹם</b> לִיטֹּול מִמֶּנָּה גֶּחָלִים לִקְטֹורֶת שֶׁל לִפְנַי וְלִפְנִים אֲבָל קְטֹורֶת שֶׁל מִזְבֵּחַ הַפְּנִימִי הֲרֵי הוּא כִּקְטֹורֶת שֶׁל כָּל הַשָּׁנָה:</div>
+          <div class="glose-fr">Qu&#x27;on ajoute en ce jour -- pour y prendre les braises destinees a la ketoret de lifnai ve-lifnim (le Saint des saints) ; mais la ketoret de l&#x27;autel interieur, elle, est comme la ketoret de toute l&#x27;annee.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle section de la michna, et immediatement une difficulte : la michna annonce <b>quatre</b> ma'arakhot par jour, mais la baraita en donne trois comptes differents. Une <b>ma'arakha</b> est un tas de bois dispose et allume sur l'autel exterieur, chacun ayant sa fonction propre.</p><p>Rabbi Yehouda est le plus econome : deux tas ordinaires (le grand tas pour les sacrifices, le second pour les braises de la ketoret quotidienne), plus un le jour de Kippour. Rachi precise a quoi sert cet ajout : on y prend les braises de la ketoret de <b>lifnai ve-lifnim</b>, celle que le kohen gadol fait fumer dans le Saint des saints.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבִּי יוֹסֵי אוֹמֵר: בְּכָל יוֹם שָׁלֹשׁ, וְהַיּוֹם אַרְבַּע. אַחַת שֶׁל מַעֲרָכָה גְּדוֹלָה, וְאַחַת מַעֲרָכָה שְׁנִיָּה שֶׁל קְטֹורֶת, וְאַחַת שֶׁל קִיּוּם הָאֵשׁ, וְאַחַת שֶׁמּוֹסִיפִין בּוֹ בַּיּוֹם.</div>
+            <div class="fr"><p>Rabbi Yossi dit : chaque jour trois, et ce jour-la quatre : l&#x27;une, celle de la grande ma&#x27;arakha ; l&#x27;une, la seconde ma&#x27;arakha, celle de la ketoret ; l&#x27;une, celle du maintien du feu (kiyoum ha-ech) ; et l&#x27;une, celle qu&#x27;on ajoute en ce jour.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁל קִיּוּם הָאֵשׁ</b> שֶׁאִם אֵין אֵשׁ שֶׁל מַעֲרָכָה גְּדוֹלָה מִתְגַּבֵּר מוֹסִיפִין עָלָיו מִזֶּה:</div>
+          <div class="glose-fr">Celle du maintien du feu -- car si le feu de la grande ma&#x27;arakha ne prend pas assez de force, on y ajoute (du bois) pris de celle-ci.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רַבִּי יוֹסֵי אוֹמֵר בְּכָל יוֹם ג&#x27; וְהַיּוֹם ד&#x27;</b> תֵּימַהּ בְּפֶרֶק שֵׁנִי דְּתָמִיד (דַּף כט.) תְּנַן בֵּירְרוּ מִשָּׁם עֲצֵי תְאֵנָה וְכוּ&#x27; וּמוּקֵי לְהַהִיא מַתְנִיתִין כְּר&#x27; יוֹסֵי בְּפֶרֶק קָדְשֵׁי קָדָשִׁים בְּמַסֶּכֶת זְבָחִים (דַּף נח.) וְהֵיכִי מִתּוֹקְמָא כְּרַבִּי יוֹסֵי וְהָא קָתָנֵי סֵיפָא וְהִצִּיתוּ שְׁתֵּי מַעֲרָכוֹת יָרְדוּ וּבָאוּ לְלִשְׁכַּת הַגָּזִית וּלְרַבִּי יוֹסֵי הָא קָאָמַר בְּכָל יוֹם הָיוּ שָׁם שָׁלֹשׁ וְדֹוחַק הוּא לוֹמַר סָבַר לֵיהּ כְּוָותֵיהּ בַּחֲדָא וּפְלִיג עֲלֵיהּ בַּחֲדָא וי&quot;ל דְּאַכַּתִּי הֲוַאי חֲדָא לְקִיּוּם הָאֵשׁ וְלָא קָא חָשֵׁיב אֶלָּא הָנָךְ תַּרְתֵּי דְּדָמְייָן לַהֲדָדֵי וּמַצִּיתִין אוֹתָן בְּיַחַד וּמֵחַד קְרָא מַפִּיק לְהוּ וְהִקְשָׁה רַבִּי אֶלְחָנָן בַּמִּזְבֵּחַ הַנְּחֹשֶׁת שֶׁלֹּא הָיָה מְקוֹם מַעֲרָכָה אֶלָּא אַמָּה כִּדְאָמַר בְּפֶרֶק קָדְשֵׁי קָדָשִׁים (זְבָחִים דַּף סב:) וְאָמְרִינַן נָמֵי הָתָם גִּיזְרִין שֶׁעָשָׂה מֹשֶׁה אָרְכָּן וְרָחְבָּן אַמָּה א&quot;כ כָּל הָנֵי מַעֲרָכוֹת הֵיכָא הֲווּ קָיְימִי וְצָרִיךְ לוֹמַר בְּאַמָּה שֶׁל הִילּוּךְ רַגְלֵי הַכֹּהֲנִים וְהָיוּ מְסַבְּבִין הַמַּעֲרָכָה גְּדוֹלָה עַד הָנֵי מַעֲרָכוֹת:</div>
+          <div class="glose-fr">« Rabbi Yossi dit : chaque jour trois, et ce jour-la quatre » -- c&#x27;est etonnant. Au deuxieme chapitre de Tamid (29a), la michna enseigne : « ils trierent la des bois de figuier, etc. », et au chapitre Kodchei Kodachim de Zevahim (58a) on etablit cette michna selon Rabbi Yossi. Or comment peut-on l&#x27;etablir selon Rabbi Yossi ? Sa fin enseigne : « ils allumerent les DEUX ma&#x27;arakhot, descendirent et vinrent a la Lichkat ha-Gazit » -- alors que Rabbi Yossi dit bien que chaque jour il y en avait trois ! Et il serait force de dire qu&#x27;il partage son avis sur un point et diverge de lui sur un autre. On peut repondre : il y avait bien encore un (tas) pour le maintien du feu, mais (la michna) ne compte que ces deux-la, qui se ressemblent, qu&#x27;on allume ensemble et qu&#x27;on tire d&#x27;un seul et meme verset. Rabbi Elhanan a objecte : sur l&#x27;autel de cuivre (celui de Moche), l&#x27;emplacement de la ma&#x27;arakha n&#x27;etait que d&#x27;une ama (coudee), comme il est dit au chapitre Kodchei Kodachim (Zevahim 62b) ; et l&#x27;on y dit egalement que les buches que fit Moche avaient une ama de long et une ama de large. S&#x27;il en est ainsi, ou toutes ces ma&#x27;arakhot tenaient-elles ? Il faut dire : sur l&#x27;ama reservee au passage des pieds des cohanim ; et ils contournaient la grande ma&#x27;arakha (en marchant) jusqu&#x27;a ces ma&#x27;arakhot.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabbi Yossi ajoute un troisieme tas permanent : le <b>kiyoum ha-ech</b>, une reserve de bois destinee a nourrir le grand tas si sa flamme faiblit. Le total passe donc a trois en semaine et quatre a Kippour.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבִּי (מֵאִיר) אוֹמֵר: בְּכָל יוֹם אַרְבַּע, וְהַיּוֹם חָמֵשׁ. אַחַת שֶׁל מַעֲרָכָה גְּדוֹלָה, וְאַחַת שֶׁל מַעֲרָכָה שְׁנִיָּה שֶׁל קְטֹורֶת, וְאַחַת שֶׁל קִיּוּם הָאֵשׁ, וְאַחַת לְאֵיבָרִים וּפְדָרִים שֶׁלֹּא נִתְעַכְּלוּ מִבָּעֶרֶב, וְאַחַת שֶׁמּוֹסִיפִין בּוֹ בַּיּוֹם.</div>
+            <div class="fr"><p>Rabbi (Meir) dit : chaque jour quatre, et ce jour-la cinq : l&#x27;une, celle de la grande ma&#x27;arakha ; l&#x27;une, celle de la seconde ma&#x27;arakha, celle de la ketoret ; l&#x27;une, celle du maintien du feu ; l&#x27;une, pour les membres et les graisses (evarim ou-fedarim) qui n&#x27;ont pas ete consumes depuis la veille au soir ; et l&#x27;une, celle qu&#x27;on ajoute en ce jour.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁלֹּא נִתְעַכְּלוּ</b> שֶׁלֹּא נִיתְּנוּ עַל מַעֲרָכָה אוֹ נִיתְּנוּ וְלֹא הִסְפִּיקוּ לְהִתְעַכֵּל:</div>
+          <div class="glose-fr">Qui n&#x27;ont pas ete consumes -- (soit) qu&#x27;ils n&#x27;aient pas ete places sur la ma&#x27;arakha, (soit) qu&#x27;ils y aient ete places mais n&#x27;aient pas eu le temps d&#x27;etre consumes.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabbi Meir ajoute un quatrieme tas permanent, reserve aux <b>evarim ou-fedarim</b> -- les membres et les graisses des sacrifices de la veille dont la combustion n'a pas ete achevee. C'est son compte qui donne quatre et cinq : <b>notre michna suit donc Rabbi Meir</b>.</p><p>Rachi definit le cas : soit ces morceaux n'ont jamais ete places sur le tas, soit ils y ont ete places mais n'ont pas eu le temps de bruler entierement.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 452" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="452" fill="#fffdf8"/>
+  <text x="370" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Combien de ma'arakhot sur l'autel ? La carte des trois avis</text>
+  <text x="370" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">Une ma'arakha est un tas de bois dispose et allume sur l'autel exterieur. Chaque tana compte differemment, et chacun doit trouver un verset pour chaque tas.</text>
+
+  <rect x="20"  y="60" width="228" height="34" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <rect x="256" y="60" width="228" height="34" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <rect x="492" y="60" width="228" height="34" fill="#fae8ff" stroke="#a21caf" stroke-width="1.8"/>
+  <text x="134" y="76" text-anchor="middle" font-size="11.5" font-weight="700" fill="#14532d">Rabbi Yehouda</text>
+  <text x="134" y="89" text-anchor="middle" font-size="10" fill="#166534">2 chaque jour / 3 a Kippour</text>
+  <text x="370" y="76" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1e3a8a">Rabbi Yossi</text>
+  <text x="370" y="89" text-anchor="middle" font-size="10" fill="#1d4ed8">3 chaque jour / 4 a Kippour</text>
+  <text x="606" y="76" text-anchor="middle" font-size="11.5" font-weight="700" fill="#701a75">Rabbi Meir</text>
+  <text x="606" y="89" text-anchor="middle" font-size="10" fill="#a21caf">4 chaque jour / 5 a Kippour -- c'est notre michna</text>
+
+  <rect x="20"  y="102" width="228" height="40" fill="#f0fdf4" stroke="#86efac"/>
+  <rect x="256" y="102" width="228" height="40" fill="#eff6ff" stroke="#bfdbfe"/>
+  <rect x="492" y="102" width="228" height="40" fill="#fdf4ff" stroke="#f5d0fe"/>
+  <text x="32"  y="119" font-size="10.4" font-weight="700" fill="#14532d">1. Ma'arakha guedola</text>
+  <text x="32"  y="134" font-size="9.4" fill="#166534">le grand tas : olot et emourim</text>
+  <text x="268" y="119" font-size="10.4" font-weight="700" fill="#1e3a8a">1. Ma'arakha guedola</text>
+  <text x="268" y="134" font-size="9.4" fill="#1d4ed8">le grand tas : olot et emourim</text>
+  <text x="504" y="119" font-size="10.4" font-weight="700" fill="#701a75">1. Ma'arakha guedola</text>
+  <text x="504" y="134" font-size="9.4" fill="#a21caf">le grand tas : olot et emourim</text>
+
+  <rect x="20"  y="142" width="228" height="40" fill="#f0fdf4" stroke="#86efac"/>
+  <rect x="256" y="142" width="228" height="40" fill="#eff6ff" stroke="#bfdbfe"/>
+  <rect x="492" y="142" width="228" height="40" fill="#fdf4ff" stroke="#f5d0fe"/>
+  <text x="32"  y="159" font-size="10.4" font-weight="700" fill="#14532d">2. Ma'arakha chenia</text>
+  <text x="32"  y="174" font-size="9.4" fill="#166534">braises pour la ketoret quotidienne</text>
+  <text x="268" y="159" font-size="10.4" font-weight="700" fill="#1e3a8a">2. Ma'arakha chenia</text>
+  <text x="268" y="174" font-size="9.4" fill="#1d4ed8">braises pour la ketoret quotidienne</text>
+  <text x="504" y="159" font-size="10.4" font-weight="700" fill="#701a75">2. Ma'arakha chenia</text>
+  <text x="504" y="174" font-size="9.4" fill="#a21caf">braises pour la ketoret quotidienne</text>
+
+  <rect x="20"  y="182" width="228" height="40" fill="#fafaf9" stroke="#e7e5e4"/>
+  <rect x="256" y="182" width="228" height="40" fill="#eff6ff" stroke="#bfdbfe"/>
+  <rect x="492" y="182" width="228" height="40" fill="#fdf4ff" stroke="#f5d0fe"/>
+  <text x="134" y="206" text-anchor="middle" font-size="10.4" fill="#a8a29e">-- il n'en compte pas --</text>
+  <text x="268" y="199" font-size="10.4" font-weight="700" fill="#1e3a8a">3. Kiyoum ha-ech</text>
+  <text x="268" y="214" font-size="9.4" fill="#1d4ed8">reserve de bois pour raviver le feu</text>
+  <text x="504" y="199" font-size="10.4" font-weight="700" fill="#701a75">3. Kiyoum ha-ech</text>
+  <text x="504" y="214" font-size="9.4" fill="#a21caf">reserve de bois pour raviver le feu</text>
+
+  <rect x="20"  y="222" width="228" height="40" fill="#fafaf9" stroke="#e7e5e4"/>
+  <rect x="256" y="222" width="228" height="40" fill="#fafaf9" stroke="#e7e5e4"/>
+  <rect x="492" y="222" width="228" height="40" fill="#fdf4ff" stroke="#f5d0fe"/>
+  <text x="134" y="246" text-anchor="middle" font-size="10.4" fill="#a8a29e">-- il n'en compte pas --</text>
+  <text x="370" y="246" text-anchor="middle" font-size="10.4" fill="#a8a29e">-- il n'en compte pas --</text>
+  <text x="504" y="239" font-size="10.4" font-weight="700" fill="#701a75">4. Evarim ou-fedarim</text>
+  <text x="504" y="254" font-size="9.4" fill="#a21caf">membres et graisses restes de la veille</text>
+
+  <rect x="20"  y="262" width="700" height="42" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="370" y="279" text-anchor="middle" font-size="10.8" font-weight="700" fill="#7c2d12">+ 1 a Yom Kippour seulement : la ma'arakha ajoutee ce jour-la</text>
+  <text x="370" y="295" text-anchor="middle" font-size="9.6" fill="#78350f">on y prend les braises de la ketoret de lifnai ve-lifnim (le Saint des saints). Les trois tanaim s'accordent sur cet ajout : c'est le +1 de la michna.</text>
+
+  <text x="20" y="330" font-size="11" font-weight="700" fill="#1c1917">D'ou chacun tire-t-il ses tas ?</text>
+  <rect x="20"  y="338" width="228" height="98" fill="#f0fdf4" stroke="#86efac"/>
+  <rect x="256" y="338" width="228" height="98" fill="#eff6ff" stroke="#bfdbfe"/>
+  <rect x="492" y="338" width="228" height="98" fill="#fdf4ff" stroke="#f5d0fe"/>
+  <text x="32"  y="356" font-size="9.6" fill="#14532d">Lev 6,2 : ha-ola al mokda -- grande</text>
+  <text x="32"  y="371" font-size="9.6" fill="#14532d">Lev 6,2 : ve-ech ha-mizbeah -- ketoret</text>
+  <text x="32"  y="390" font-size="9.6" font-weight="700" fill="#166534">Lev 6,5 (ve-ha-ech) : sert ailleurs --</text>
+  <text x="32"  y="404" font-size="9.6" fill="#166534">hatsatat alita au sommet de l'autel</text>
+  <text x="32"  y="424" font-size="9.4" fill="#57534e">le vav de ve-ech : il ne l'expose pas</text>
+  <text x="268" y="356" font-size="9.6" fill="#1e3a8a">Lev 6,2 : ha-ola al mokda -- grande</text>
+  <text x="268" y="371" font-size="9.6" fill="#1e3a8a">Lev 6,2 : ve-ech ha-mizbeah -- ketoret</text>
+  <text x="268" y="390" font-size="9.6" font-weight="700" fill="#1d4ed8">Lev 6,5 (ve-ha-ech) : kiyoum ha-ech</text>
+  <text x="268" y="404" font-size="9.6" fill="#1d4ed8">alita : depuis Lev 1,7, comme R. Chimon</text>
+  <text x="268" y="424" font-size="9.4" fill="#57534e">le vav de ve-ech : il ne l'expose pas</text>
+  <text x="504" y="356" font-size="9.6" fill="#701a75">Lev 6,2 : ha-ola al mokda -- grande</text>
+  <text x="504" y="371" font-size="9.6" fill="#701a75">Lev 6,2 : ve-ech ha-mizbeah -- ketoret</text>
+  <text x="504" y="390" font-size="9.6" fill="#a21caf">Lev 6,5 (ve-ha-ech) : kiyoum ha-ech</text>
+  <text x="504" y="409" font-size="9.6" font-weight="700" fill="#a21caf">le VAV de ve-ech : evarim ou-fedarim</text>
+  <text x="504" y="424" font-size="9.4" fill="#86198f">lui seul expose le vav</text>
+</svg></div><div class="svg-cap">Les trois comptes cote a cote, tas par tas, avec la source scripturaire de chacun. La michna, avec ses quatre et cinq, est celle de Rabbi Meir.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">דְּכֻולֵּי עָלְמָא מִיהַת תַּרְתֵּי אִית לְהוּ, מִנָּלַן? אֲמַר קְרָא: ״הִיא הָעֹולָה עַל מוֹקְדָה עַל הַמִּזְבֵּחַ כָּל הַלַּיְלָה״ — זוֹ מַעֲרָכָה גְּדוֹלָה. ״וְאֵשׁ הַמִּזְבֵּחַ תּוּקַד בּוֹ״ — זוֹ מַעֲרָכָה שְׁנִיָּה שֶׁל קְטֹורֶת. וְרַבִּי יוֹסֵי, קִיּוּם הָאֵשׁ מְנָא לֵיהּ? נָפְקָא לֵיהּ: מִ״וְהָאֵשׁ עַל הַמִּזְבֵּחַ תּוּקַד בּוֹ״.</div>
+            <div class="fr"><p>En tout etat de cause, tous s&#x27;accordent au moins sur deux (ma&#x27;arakhot) : d&#x27;ou le savons-nous ? Le verset dit : « c&#x27;est la ola sur son foyer, sur l&#x27;autel, toute la nuit » (Lev 6,2) -- c&#x27;est la grande ma&#x27;arakha ; « et le feu de l&#x27;autel y sera maintenu allume » (ibid.) -- c&#x27;est la seconde ma&#x27;arakha, celle de la ketoret.</p><p>Et Rabbi Yossi, d&#x27;ou tire-t-il le maintien du feu ? Il le tire de « et le feu sur l&#x27;autel y sera maintenu allume » (Lev 6,5).</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara change de registre : apres avoir enonce les avis, elle cherche <b>la source de chaque tas</b>. Le raisonnement est arithmetique -- il faut autant de mentions du feu dans le texte que de tas dans le compte.</p><p>Deux tas font consensus, tires des deux moities d'un meme verset (Lev 6,2). Rabbi Yossi, qui en veut trois, mobilise la troisieme mention du feu (Lev 6,5) pour son <b>kiyoum ha-ech</b>. Question implicite pour la suite : si Rabbi Yehouda n'a que deux tas, a quoi lui sert ce troisieme verset ?</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 420" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="420" fill="#fffdf8"/>
+  <text x="370" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Quatre mentions du feu, quatre enseignements a distribuer</text>
+  <text x="370" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">Chaque tana a le meme stock de versets et un nombre de tas different : ce qui reste libre chez l'un doit servir a autre chose chez l'autre.</text>
+
+  <defs>
+    <marker id="ar45" markerWidth="9" markerHeight="9" refX="8" refY="3.2" orient="auto">
+      <path d="M0,0 L8,3.2 L0,6.4 z" fill="#78716c"/>
+    </marker>
+  </defs>
+
+  <rect x="24" y="70" width="250" height="56" fill="#f5f5f4" stroke="#78716c" stroke-width="1.5"/>
+  <text x="36" y="90" font-size="10.6" font-weight="700" fill="#1c1917">Lev 6,2 : hi ha-ola al mokda</text>
+  <text x="36" y="106" font-size="9.6" fill="#57534e">c'est la ola sur son foyer, sur l'autel,</text>
+  <text x="36" y="119" font-size="9.6" fill="#57534e">toute la nuit</text>
+  <line x1="274" y1="98" x2="424" y2="98" stroke="#78716c" stroke-width="1.4" marker-end="url(#ar45)"/>
+  <rect x="428" y="76" width="288" height="44" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="440" y="94" font-size="10.6" font-weight="700" fill="#713f12">Ma'arakha guedola -- le grand tas</text>
+  <text x="440" y="110" font-size="9.6" fill="#854d0e">accepte par tous les trois</text>
+
+  <rect x="24" y="140" width="250" height="56" fill="#f5f5f4" stroke="#78716c" stroke-width="1.5"/>
+  <text x="36" y="160" font-size="10.6" font-weight="700" fill="#1c1917">Lev 6,2 : ve-ech ha-mizbeah</text>
+  <text x="36" y="176" font-size="9.6" fill="#57534e">et le feu de l'autel y sera maintenu</text>
+  <text x="36" y="189" font-size="9.6" fill="#57534e">allume</text>
+  <line x1="274" y1="168" x2="424" y2="168" stroke="#78716c" stroke-width="1.4" marker-end="url(#ar45)"/>
+  <rect x="428" y="146" width="288" height="44" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="440" y="164" font-size="10.6" font-weight="700" fill="#713f12">Ma'arakha chenia -- celle de la ketoret</text>
+  <text x="440" y="180" font-size="9.6" fill="#854d0e">accepte par tous les trois ; le VAV en plus : R. Meir</text>
+
+  <rect x="24" y="210" width="250" height="72" fill="#f5f5f4" stroke="#78716c" stroke-width="1.5"/>
+  <text x="36" y="230" font-size="10.6" font-weight="700" fill="#1c1917">Lev 6,5 : ve-ha-ech al ha-mizbeah</text>
+  <text x="36" y="246" font-size="9.6" fill="#57534e">et le feu sur l'autel y sera maintenu</text>
+  <text x="36" y="259" font-size="9.6" fill="#57534e">allume -- troisieme mention du feu</text>
+  <text x="36" y="274" font-size="9.4" fill="#a8a29e">c'est ici que les avis se separent</text>
+  <line x1="274" y1="232" x2="424" y2="222" stroke="#2563eb" stroke-width="1.6" marker-end="url(#ar45)"/>
+  <line x1="274" y1="258" x2="424" y2="272" stroke="#16a34a" stroke-width="1.6" marker-end="url(#ar45)"/>
+  <rect x="428" y="200" width="288" height="42" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="440" y="218" font-size="10.6" font-weight="700" fill="#1e3a8a">R. Yossi (et R. Meir) : kiyoum ha-ech</text>
+  <text x="440" y="233" font-size="9.6" fill="#1d4ed8">un tas de plus, pour entretenir le feu</text>
+  <rect x="428" y="250" width="288" height="42" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="440" y="268" font-size="10.6" font-weight="700" fill="#14532d">R. Yehouda : hatsatat alita</text>
+  <text x="440" y="283" font-size="9.6" fill="#166534">on allume les brindilles AU SOMMET de l'autel</text>
+
+  <rect x="24" y="300" width="250" height="72" fill="#f5f5f4" stroke="#78716c" stroke-width="1.5"/>
+  <text x="36" y="320" font-size="10.6" font-weight="700" fill="#1c1917">Lev 1,7 : ve-natnou bnei Aharon</text>
+  <text x="36" y="335" font-size="10.6" font-weight="700" fill="#1c1917">ha-kohen ech al ha-mizbeah</text>
+  <text x="36" y="351" font-size="9.6" fill="#57534e">les fils d'Aharon le cohen mettront</text>
+  <text x="36" y="364" font-size="9.6" fill="#57534e">du feu sur l'autel</text>
+  <line x1="274" y1="322" x2="424" y2="316" stroke="#16a34a" stroke-width="1.6" marker-end="url(#ar45)"/>
+  <line x1="274" y1="352" x2="424" y2="362" stroke="#2563eb" stroke-width="1.6" marker-end="url(#ar45)"/>
+  <rect x="428" y="298" width="288" height="38" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="440" y="314" font-size="10.4" font-weight="700" fill="#14532d">R. Yehouda : alita par un cohen apte,</text>
+  <text x="440" y="329" font-size="9.6" fill="#166534">revetu des habits du service</text>
+  <rect x="428" y="344" width="288" height="38" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="440" y="360" font-size="10.4" font-weight="700" fill="#1e3a8a">R. Chimon (donc R. Yossi) : alita</text>
+  <text x="440" y="375" font-size="9.6" fill="#1d4ed8">au sommet de l'autel -- pas besoin d'un verset pour le cohen</text>
+
+  <rect x="24" y="386" width="692" height="26" fill="#fff7ed" stroke="#fb923c" stroke-width="1.2"/>
+  <text x="370" y="403" text-anchor="middle" font-size="9.8" fill="#7c2d12">Nafka mina du debat R. Yehouda / R. Chimon : un zar pourrait-il rester au sol et attiser au soufflet ? R. Yehouda dit qu'il fallait un verset pour l'exclure.</text>
+</svg></div><div class="svg-cap">Le stock de versets et sa distribution : chaque tana affecte les mentions du feu differemment, et ce qui reste libre chez l&#x27;un sert ailleurs chez l&#x27;autre.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַבִּי יְהוּדָה: הַהוּא, לְהַצָּתַת אֲלִיתָא הוּא דַּאֲתָא. דְּתַנְיָא, הָיָה רַבִּי יְהוּדָה אוֹמֵר: מִנַּיִין לְהַצָּתַת אֲלִיתָא שֶׁלֹּא תְּהֵא אֶלָּא בְּרֹאשׁוֹ שֶׁל מִזְבֵּחַ? תַּלְמוּד לוֹמַר: ״וְהָאֵשׁ עַל הַמִּזְבֵּחַ תּוּקַד בּוֹ״. אָמַר רַבִּי יוֹסֵי: מִנַּייִן שֶׁעוֹשֶׂה מַעֲרָכָה לְקִיּוּם הָאֵשׁ? תַּלְמוּד לוֹמַר: ״וְהָאֵשׁ עַל הַמִּזְבֵּחַ תּוּקַד בּוֹ״.</div>
+            <div class="fr"><p>Et Rabbi Yehouda ? Ce (verset) vient pour l&#x27;allumage des alita (les brindilles).</p><p>Comme on l&#x27;a enseigne : Rabbi Yehouda disait : d&#x27;ou (sait-on) que l&#x27;allumage des brindilles ne doit se faire qu&#x27;au sommet de l&#x27;autel ? Le verset dit : « et le feu sur l&#x27;autel y sera maintenu allume ».</p><p>Rabbi Yossi dit : d&#x27;ou (sait-on) qu&#x27;on fait une ma&#x27;arakha pour le maintien du feu ? Le verset dit : « et le feu sur l&#x27;autel y sera maintenu allume ».</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְהַצָּתַת הָאֲלִיתָא</b> לְהַצִּית בָּהֶן אוֹר מַעֲרָכָה גְּדוֹלָה:</div>
+          <div class="glose-fr">Pour l&#x27;allumage des alita -- pour allumer par elles le feu de la grande ma&#x27;arakha.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲלִיתָא</b> קֵיסָמִים דַּקִּים:</div>
+          <div class="glose-fr">Alita -- de fins copeaux de bois.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse : le troisieme verset n'est pas inemploye chez Rabbi Yehouda -- il enseigne la <b>hatsatat alita</b>, l'allumage du petit bois. Les <i>alita</i> sont, selon Rachi, de fins copeaux avec lesquels on met le feu au grand tas.</p><p>L'enjeu pratique : allume-t-on ces copeaux en bas, sur le dallage, pour les monter ensuite enflammes, ou doit-on les allumer <b>en haut de l'autel</b> ? Le verset, qui parle d'un feu <i>sur l'autel</i>, tranche pour la seconde solution. La baraita met ainsi les deux drachot en vis-a-vis : meme verset, deux emplois exclusifs l'un de l'autre.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַבִּי יוֹסֵי, הַצָּתַת אֲלִיתָא מְנָא לֵיהּ? נָפְקָא לֵיהּ מֵהֵיכָא דְּנָפְקָא לֵיהּ לְרַבִּי שִׁמְעוֹן. דְּתַנְיָא: ״וְנָתְנוּ בְּנֵי אַהֲרֹן הַכֹּהֵן אֵשׁ עַל הַמִּזְבֵּחַ״ — לִימֵּד עַל הַצָּתַת אֲלִיתָא שֶׁלֹּא תְּהֵא אֶלָּא בְּכֹהֵן כָּשֵׁר וּבִכְלִי שָׁרֵת, דִּבְרֵי רַבִּי יְהוּדָה. אָמַר לוֹ רַבִּי שִׁמְעוֹן: וְכִי תַּעֲלֶה עַל דַּעְתְּךָ שֶׁזָּר קָרֵב לְגַבֵּי מִזְבֵּחַ? אֶלָּא, לִימֵּד עַל הַצָּתַת אֲלִיתָא שֶׁלֹּא תְּהֵא אֶלָּא בְּרֹאשׁוֹ שֶׁל מִזְבֵּחַ.</div>
+            <div class="fr"><p>Et Rabbi Yossi, d&#x27;ou tire-t-il l&#x27;allumage des alita ? Il le tire de la ou Rabbi Chimon le tire.</p><p>Comme on l&#x27;a enseigne : « Et les fils d&#x27;Aharon le cohen mettront du feu sur l&#x27;autel » (Lev 1,7) -- cela enseigne sur l&#x27;allumage des alita qu&#x27;il ne doit se faire que par un cohen apte (kacher) et avec les keli charet (revetu des habits du service) : paroles de Rabbi Yehouda. Rabbi Chimon lui dit : t&#x27;imaginerais-tu qu&#x27;un zar (non-cohen) s&#x27;approche de l&#x27;autel ?</p><p>Mais (le verset) enseigne sur l&#x27;allumage des alita qu&#x27;il ne doit se faire qu&#x27;au sommet de l&#x27;autel.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְרַבִּי יוֹסֵי הַצָּתַת אֲלִיתָא מְנָא לֵיהּ</b> שֶׁתְּהֵא בְּרֹאשׁוֹ שֶׁל מִזְבֵּחַ וְלֹא יַצִּית עַל הָרִצְפָּה וְיַעֲלֵם כְּשֶׁהֵן דּוֹלְקִין עַל הַמִּזְבֵּחַ:</div>
+          <div class="glose-fr">Et Rabbi Yossi, d&#x27;ou tire-t-il l&#x27;allumage des alita -- (a savoir) qu&#x27;il doit se faire au sommet de l&#x27;autel, et qu&#x27;on ne les allume pas sur le dallage pour les monter ensuite sur l&#x27;autel deja enflammees.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּבִכְלִי שָׁרֵת</b> בַּלְּבוּשׁ בִּגְדֵי כְּהֻונָּה:</div>
+          <div class="glose-fr">Et avec les keli charet -- (c&#x27;est-a-dire) revetu des habits de kehouna.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְכִי תַּעֲלֶה עַל דַּעְתְּךָ</b> מֵאַחַר שֶׁאַתָּה לָמֵד מִן הָאֵשׁ עַל הַמִּזְבֵּחַ תּוּקַד בּוֹ שֶׁיְּהֵא בְּרֹאשׁוֹ שֶׁל מִזְבֵּחַ כְּלוּם הֻוצְרַכְנוּ לְמִקְרָא זֶה לְהַטְעִינָהּ כֹּהֵן וְכִי תַּעֲלֶה עַל לֵב שֶׁזָּר קָרֵב לְגַבֵּי מִזְבֵּחַ וַהֲלֹא נֶאֱמַר (בַּמִּדְבָּר י״ח:ג׳) אַךְ אֶל כְּלֵי הַקֹּדֶשׁ וְאֶל הַמִּזְבֵּחַ לֹא יִקְרָבוּ:</div>
+          <div class="glose-fr">T&#x27;imaginerais-tu -- des lors que tu apprends de « et le feu sur l&#x27;autel y sera maintenu allume » que (l&#x27;allumage) doit se faire au sommet de l&#x27;autel, avions-nous encore besoin de ce verset-ci pour exiger un cohen ? T&#x27;imaginerais-tu vraiment qu&#x27;un zar s&#x27;approche de l&#x27;autel ? N&#x27;a-t-il pas ete dit (Nb 18,3) : « seulement, des ustensiles sacres et de l&#x27;autel ils n&#x27;approcheront pas » ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא לִימֵּד עַל הַצָּתַת הָאֲלִיתָא שֶׁלֹּא תְּהֵא אֶלָּא עַל רֹאשׁ הַמִּזְבֵּחַ</b> וְאִידָךְ קְרָא לְקִיּוּם הָאֵשׁ אֲתָא כְּרַבִּי יוֹסֵי וּכְהֻונָּה דִּכְתִיב בְּהַאי קְרָא לְגוּפָא אִיצְטְרִיךְ לָהּ שֶׁנְּתִינַת אֵשׁ צְרִיכָה כֹּהֵן וְלֹא יִטְּלֶנָּה זָר וְיִזְרְקֶנָּה לַמִּזְבֵּחַ:</div>
+          <div class="glose-fr">Mais il enseigne sur l&#x27;allumage des alita qu&#x27;il ne doit se faire qu&#x27;au sommet de l&#x27;autel -- et l&#x27;autre verset vient pour le maintien du feu, comme Rabbi Yossi. Quant a la mention de la kehouna ecrite dans ce verset-ci, elle est necessaire pour elle-meme : le depot du feu requiert un cohen, et un zar ne doit pas le prendre et le jeter sur l&#x27;autel.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְכִי תַּעֲלֶה עַל דַּעְתְּךָ שֶׁזָּר קָרֵב אֵצֶל הַמִּזְבֵּחַ</b> הִקְשָׁה רַשִׁ&quot;י לְדִידֵיהּ נַמֵּי תִּקְשֵׁי דְּמוּקִי קְרָא לְהַצָּתַת אֲלִיתָא הַכֹּהֵן לָמָּה לִי וְכִי תַּעֲלֶה עַל דַּעְתְּךָ שֶׁזָּר קָרֵב כּוּ&#x27; וְתֵירֵץ דְּאִיצְטְרִיךְ מִשּׁוּם דְּדָרְשִׁינַן לְעֵיל בְּסוֹף פֶּרֶק קַמָּא (יוֹמָא דַּף כא:) וְנָתְנוּ בְּנֵי אַהֲרֹן הַכֹּהֵן אֵשׁ עַל הַמִּזְבֵּחַ אע&quot;פ שֶׁהָאֵשׁ יוֹרֶדֶת מִן הַשָּׁמַיִם מִצְוָה לְהָבִיא מִן הַהֶדְיוֹט וסד&quot;א שֶׁיְּהֵא כָּשֵׁר בְּזָר וְאֶפְשָׁר דְּקָאֵי אַאַרְעָא וְזָרֵיק אֵשׁ שֶׁל הֶדְיוֹט לְמַעְלָה וְקַשְׁיָא לָן א&quot;כ מְנָא לֵיהּ דַּאֲתָא קְרָא לְהַצָּתַת אֲלִיתָא דִּילְמָא כּוּלֵּיהּ קְרָא לִנְתִינַת אֵשׁ דְּהֶדְיוֹט וְי&quot;ל דְּא&quot;כ לִכְתּוֹב קְרָא וְנָתְנוּ בְּנֵי אַהֲרֹן הַכֹּהֵן אֵשׁ וְעָרְכוּ עֵצִים עַל הָאֵשׁ וַאֲנָא יָדַעְנָא דִּנְתִינַת הָאֵשׁ עַל הַמִּזְבֵּחַ הֲוָה מִדִּכְתִיב וְעָרְכוּ עֵצִים עַל הָאֵשׁ דְּמַעֲרָכָה בְּרֹאשׁ הַמִּזְבֵּחַ הִיא עַל הַמִּזְבֵּחַ לָמָּה לִי אֶלָּא לְמִידְרַשׁ אֵשׁ עַל הַמִּזְבֵּחַ לְהַצָּתַת אֲלִיתָא שֶׁמַּבְעִירִין אוֹתָהּ עַל הַמִּזְבֵּחַ וְתֵימַהּ לִי וְהָא ר&quot;ש לֵית לֵיהּ סְבָרָא דְּאֶפְשָׁר דְּקָאֵי אַאַרְעָא וַעֲבִיד בְּמַפּוּחָא א&quot;כ לָא הֲוָה צָרִיךְ הַכֹּהֵן לִנְתִינַת אֵשׁ דְּהֶדְיוֹט דְּלֵיכָּא לְמֵימַר כְּמוֹ שפרש&quot;י דְּאֶפְשָׁר דְּקָאֵי אַאַרְעָא וּזְרִיק דְּהָא ר&quot;ש לֵית לֵיהּ הַאי סְבָרָא וי&quot;ל דִּבְאֵשׁ דְּהֶדְיוֹט שַׁפִּיר אִית לֵיהּ דְּאֶפְשָׁר דְּקָאֵי אַאַרְעָא וּזְרִיק לָהּ כֵּיוָן דְּשֶׁל הֶדְיוֹט הִיא אֲבָל הַצָּתַת אֲלִיתָא שֶׁהַבְעָרָתָהּ עַל הַמִּזְבֵּחַ לָאו אוֹרַח אַרְעָא לְמִיעְבַּד בְּמַפּוּחָא בְּרִחוּק וְקָשֶׁה לִי לְר&#x27; יְהוּדָה וְהָאֵשׁ עַל הַמִּזְבֵּחַ תּוּקַד בּוֹ לְהַצָּתַת אֲלִיתָא שֶׁהַבְעָרָתָהּ עַל הַמִּזְבֵּחַ לָמָּה לִי תִּיפּוֹק לֵיהּ מוֹנָתֵנוּ בְּנֵי אַהֲרֹן אֵשׁ עַל הַמִּזְבֵּחַ דְּהָא רַבִּי יְהוּדָה גָּמַר מֵהָתָם הַצָּתַת אֲלִיתָא שֶׁתְּהֵא בְּכֹהֵן כָּשֵׁר וּכְלֵי שָׁרֵת וְי&quot;ל אִי לֹא כְּתַב וְהָאֵשׁ עַל הַמִּזְבֵּחַ תּוּקַד בּוֹ לֹא הֲוָה דָּרְשִׁינַן מוֹנָתֵנוּ אֶלָּא נְתִינַת הָאֵשׁ דְּהֶדְיוֹט עַל הַמִּזְבֵּחַ וְשֶׁתְּהֵא בְּכֹהֵן כָּשֵׁר וּכְלֵי שָׁרֵת אֲבָל הַצָּתַת אֲלִיתָא לָא דָּרְשִׁינַן אֲבָל הַשְׁתָּא דְּנָפְקָא מִוְּהָאָשׁ עַל הַמִּזְבֵּחַ הַצָּתַת אֲלִיתָא שֶׁתְּהֵא בְּרֹאשׁוֹ שֶׁל מִזְבֵּחַ גָּמְרִינַן שַׁפִּיר מוֹנָתֵנוּ הַצָּתַת אֲלִיתָא וּנְתִינַת אֵשׁ דְּהֶדְיוֹט שֶׁלֹּא יְהוּ אֶלָּא בְּכֹהֵן כָּשֵׁר וּכְלֵי שָׁרֵת דְּמִסְּתָמָא בְּנֵי אַהֲרֹן דְּנָפְקָא לָן מִינֵּיהּ כֹּהֵן כָּשֵׁר וּכְלֵי שָׁרֵת קָאֵי אָכַל מִצְוֹת שֶׁעַל הַמִּזְבֵּחַ:</div>
+          <div class="glose-fr">« Et t&#x27;imaginerais-tu qu&#x27;un zar s&#x27;approche de l&#x27;autel » -- Rachi a souleve la difficulte : selon lui (Rabbi Chimon) aussi la question se pose. Puisqu&#x27;il rapporte le verset a l&#x27;allumage des alita, pourquoi « le cohen » y est-il ecrit ? T&#x27;imaginerais-tu qu&#x27;un zar s&#x27;approche, etc. ? Et il a repondu que c&#x27;etait necessaire, parce que nous avons expose plus haut, a la fin du premier chapitre (Yoma 21b), le verset « et les fils d&#x27;Aharon le cohen mettront du feu sur l&#x27;autel » : bien que le feu descende du ciel, c&#x27;est une mitsva d&#x27;en apporter du feu profane (min ha-hediot) -- et j&#x27;aurais pu penser que cela est valable meme par un zar, qui pourrait se tenir au sol et lancer le feu profane vers le haut. Nous objectons : s&#x27;il en est ainsi, d&#x27;ou sait-il que le verset vient pour l&#x27;allumage des alita ? Peut-etre le verset tout entier porte-t-il sur le depot du feu profane ! On peut repondre : s&#x27;il en etait ainsi, le verset aurait du ecrire « et les fils d&#x27;Aharon le cohen mettront du feu, et disposeront du bois sur le feu », et j&#x27;aurais su de moi-meme que le depot du feu se fait sur l&#x27;autel, puisqu&#x27;il est ecrit « et ils disposeront du bois sur le feu » et que la ma&#x27;arakha est au sommet de l&#x27;autel. Alors pourquoi « sur l&#x27;autel » ? Seulement pour exposer « du feu sur l&#x27;autel » a propos de l&#x27;allumage des alita, qu&#x27;on enflamme sur l&#x27;autel. Et cela m&#x27;etonne : Rabbi Chimon ne retient pas le raisonnement selon lequel (un zar) pourrait se tenir au sol et operer avec un soufflet ! S&#x27;il en est ainsi, il n&#x27;aurait pas eu besoin du « cohen » pour le depot du feu profane, car on ne peut pas dire comme Rachi qu&#x27;il pourrait se tenir au sol et le lancer, puisque Rabbi Chimon ne retient pas ce raisonnement. On peut repondre : s&#x27;agissant du feu profane, il admet bien qu&#x27;on pourrait se tenir au sol et le lancer, puisque c&#x27;est un feu profane ; mais l&#x27;allumage des alita, dont l&#x27;embrasement se fait sur l&#x27;autel, il n&#x27;est pas d&#x27;usage de le faire au soufflet, a distance. Et une difficulte se pose a moi selon Rabbi Yehouda : pourquoi lui faut-il « et le feu sur l&#x27;autel y sera maintenu allume » pour l&#x27;allumage des alita, dont l&#x27;embrasement se fait sur l&#x27;autel ? Qu&#x27;il le tire de « et les fils d&#x27;Aharon mettront du feu sur l&#x27;autel », puisque Rabbi Yehouda apprend de la que l&#x27;allumage des alita doit se faire par un cohen apte et avec les keli charet ! On peut repondre : si « et le feu sur l&#x27;autel y sera maintenu allume » n&#x27;avait pas ete ecrit, nous n&#x27;aurions expose de « et ils mettront » que le depot du feu profane sur l&#x27;autel, et qu&#x27;il doit se faire par un cohen apte et avec les keli charet, mais nous n&#x27;y aurions pas expose l&#x27;allumage des alita. Maintenant, en revanche, que l&#x27;on tire de « et le feu sur l&#x27;autel » que l&#x27;allumage des alita se fait au sommet de l&#x27;autel, nous apprenons bien de « et ils mettront » que l&#x27;allumage des alita comme le depot du feu profane ne se font que par un cohen apte et avec les keli charet : car vraisemblablement « les fils d&#x27;Aharon », d&#x27;ou nous tirons le cohen apte et les keli charet, se rapporte a toutes les mitsvot accomplies sur l&#x27;autel.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabbi Yossi a deja depense Lev 6,5 pour son <b>kiyoum ha-ech</b> : il lui faut donc une autre source pour l'allumage en haut de l'autel. Il la trouve la ou <b>Rabbi Chimon</b> la trouve, dans Lev 1,7.</p><p>Le debat entre Rabbi Yehouda et Rabbi Chimon porte sur ce que ce verset enseigne. Pour Rabbi Yehouda : que l'operation exige un <b>cohen kacher</b> revetu des habits de kehouna. Rabbi Chimon objecte que c'est evident -- Nb 18,3 interdit deja au <b>zar</b> d'approcher de l'autel -- et que le verset doit donc enseigner autre chose : le lieu, le sommet de l'autel.</p><p>Rachi (glose 4) explique le systeme de Rabbi Chimon jusqu'au bout : le mot « cohen » du verset n'est pas superflu pour autant, il sert au depot du feu lui-meme (un zar ne peut pas le lancer sur l'autel depuis le sol) ; et Lev 6,5 reste disponible pour le kiyoum ha-ech, comme Rabbi Yossi.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַבִּי יְהוּדָה? אִי מֵהָתָם, הֲוָה אֲמִינָא: קָאֵי אַאַרְעָא וְעָבֵיד בְּמַפּוּחָא, קָא מַשְׁמָע לַן.</div>
+            <div class="fr"><p>Et Rabbi Yehouda ? Si (on l&#x27;apprenait) de la, j&#x27;aurais pu dire : il se tient au sol et opere avec un soufflet (mapouah) -- (le verset) nous enseigne donc (qu&#x27;il faut un cohen).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְרַבִּי יְהוּדָה</b> אָמַר לָךְ:</div>
+          <div class="glose-fr">Et Rabbi Yehouda -- te dira.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִי מֵהָתָם</b> מֵהָאֵשׁ עַל הַמִּזְבֵּחַ כו&#x27; אע&quot;ג דְּשָׁמְעִינַן מִינָּהּ שֶׁהַצָּתָה בְּרֹאשׁ הַמִּזְבֵּחַ לָא שָׁמְעִינַן דִּפְסוּלָה בְּזָר הֲוָה אֲמִינָא קָאֵי זָר אַאַרְעָא וַעֲבִיד בְּמַפּוּחָא:</div>
+          <div class="glose-fr">Si de la -- de « et le feu sur l&#x27;autel, etc. » : bien que nous en apprenions que l&#x27;allumage se fait au sommet de l&#x27;autel, nous n&#x27;en apprenons pas qu&#x27;il est passoul (invalide) s&#x27;il est fait par un zar. J&#x27;aurais pu dire : le zar se tient au sol et opere avec un soufflet.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabbi Yehouda repond a l'objection de Rabbi Chimon. Certes, un zar ne peut pas <i>approcher</i> de l'autel -- mais il pourrait rester au sol, hors de la zone interdite, et attiser les copeaux d'en bas au <b>mapouah</b>, le soufflet. Le verset n'est donc pas superflu : il exclut aussi cette hypothese a distance.</p><p>C'est la <b>nafka mina</b> reelle du debat : jusqu'ou porte l'interdit du zar quand il n'y a pas de contact physique avec l'autel.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַבִּי מֵאִיר, אֵיבָרִים וּפְדָרִים שֶׁלֹּא נִתְעַכְּלוּ מִבָּעֶרֶב, מְנָא לֵיהּ? נָפְקָא לֵיהּ: מִ״וְאֵשׁ״. וְרַבָּנָן — וְאוֹ לָא דָּרְשִׁי.</div>
+            <div class="fr"><p>Et Rabbi Meir, les membres et les graisses qui n&#x27;ont pas ete consumes depuis la veille au soir, d&#x27;ou (tire-t-il leur ma&#x27;arakha) ? Il le tire de « ET le feu » (ve-ech).</p><p>Et les Sages : ils n&#x27;exposent pas le vav.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מְנָא לֵיהּ</b> דְּבָעֵי מַעֲרָכָה:</div>
+          <div class="glose-fr">D&#x27;ou (le tire-t-il) -- (a savoir) qu&#x27;il faille (pour eux) une ma&#x27;arakha.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>נָפְקָא לֵיהּ מִוְּאִשׁ</b> וָא&quot;ו דְּרֵישׁ:</div>
+          <div class="glose-fr">Il le tire de « et le feu » -- il expose (dorech) le vav.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reste le quatrieme tas de Rabbi Meir. Sa source est le plus mince des indices : le <b>vav</b> de <i>ve-ech ha-mizbeah</i> (Lev 6,2). Un vav en apparence purement conjonctif devient, chez lui, l'indication d'un tas supplementaire.</p><p>Les Sages -- ici Rabbi Yehouda et Rabbi Yossi -- <b>ne dorchent pas le vav</b> : ils ne tirent aucune halakha d'une simple lettre de liaison. C'est une divergence de methode exegetique, pas de fait.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַבָּנָן, אֵיבָרִים וּפְדָרִים שֶׁלֹּא נִתְעַכְּלוּ מִבָּעֶרֶב מַאי עָבֵיד לְהוּ? מַהְדַּר לְהוּ לְמַעֲרָכָה גְּדוֹלָה. דְּתַנְיָא: מִנַּיִין לְאֵיבָרִים וּפְדָרִים שֶׁלֹּא נִתְעַכְּלוּ מִבָּעֶרֶב</div>
+            <div class="fr"><p>Et les Sages, que font-ils des membres et des graisses qui n&#x27;ont pas ete consumes depuis la veille au soir ? Il les remet sur la grande ma&#x27;arakha.</p><p>Comme on l&#x27;a enseigne : d&#x27;ou (sait-on) que les membres et les graisses qui n&#x27;ont pas ete consumes depuis la veille au soir</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Derniere consequence : puisque les Sages n'ont pas de tas dedie, il faut bien que ces restes aillent quelque part. Reponse : <b>mahazir lahen la-ma'arakha guedola</b> -- on les remet sur le grand tas, ou leur combustion s'achevera.</p><p>Le amoud s'interrompt en pleine citation de la baraita qui doit fournir le verset : la suite est en 45b.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_44b.html">&lsaquo; Yoma 44b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

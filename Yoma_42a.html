@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yoma 42a -- les poids des trois languettes, puis la grande question de la para adouma : un non-kohen peut-il l&#x27;egorger ?</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Yoma 42a -- les poids des trois languettes, puis la grande question de la para adouma : un non-kohen peut-il l&#x27;egorger ?</h1>
+    <div class="ref">Yoma 42a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_41b.html">&lsaquo; Yoma 41b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> Le daf acheve d&#x27;abord la sougya des languettes d&#x27;ecarlate ouverte en 41b : Ravin rapporte les trois poids -- dix zouz pour la para, deux sela&#x27;im pour le bouc emissaire, un chekel pour le metsora --, et Rachi en donne la logique (le koved pour l&#x27;une, la halouka pour l&#x27;autre, ni l&#x27;un ni l&#x27;autre pour la troisieme). Rabbi Yohanan y loge une mahloket de Rabbi Chimon ben Halafta et des Sages sur la languette de la para, avec pour signe la michna « celui qui donne beaucoup comme celui qui donne peu » ; Rabbi Yirmeya de Difti la deplace sur le bouc emissaire, avec pour signe la mort de Ravia bar Kissi survenue ce jour-la.</p><p>S&#x27;ouvre alors la grande sougya du daf : Rabbi Yitzhak a recu une distinction entre deux abattages -- celui de la para rousse et celui du taureau du kohen gadol -- dont l&#x27;un est invalide par un zar, sans savoir lequel. Rav et Chmouel occupent chacun une branche ; la guemara identifie Rav par son commentaire sur Rabbi Zera (« Elazar et houka »), puis eprouve les deux positions par la symetrie des versets, la regle chehita lav avoda hi, le statut de kodchei bedek habayit de la para -- c&#x27;est sa moindre saintete qui la rend plus severe --, et le kal va-homer ecarte par les mar&#x27;ot nega&#x27;im.</p><p>Le mot le-fanav est ensuite partage : autorisation du zar pour Chmouel, exigence de hessah hadaat pour Rav, qui garde le-einav pour la combustion. Une tsricha montre que les deux versets etaient necessaires, et le daf s&#x27;interrompt sur la question qu&#x27;elle ouvre : « pour exclure quoi ? » -- le ramassage de la cendre et le puisage de l&#x27;eau du kidouch, dont le sort se decidera en 42b.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="430" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1c1917">Les trois languettes d'ecarlate : quel poids, et pourquoi ce poids</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">Rabbi Yonatan rapporte par Ravin -- 1 sela = 4 zouz, 1 chekel = 2 zouz</text>
+
+  <rect x="24" y="62" width="228" height="150" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="138" y="86" text-anchor="middle" font-size="12.6" font-weight="700" fill="#92400e">PARA ADOUMA</text>
+  <text x="138" y="104" text-anchor="middle" font-size="9.8" fill="#a16207">la vache rousse (Nombres 19)</text>
+  <text x="138" y="132" text-anchor="middle" font-size="19" font-weight="700" fill="#78350f">10 zouz</text>
+  <text x="138" y="160" text-anchor="middle" font-size="10.4" fill="#92400e">Rachi : de-ba'ya koved</text>
+  <text x="138" y="177" text-anchor="middle" font-size="9.8" fill="#a16207">il faut du poids -- la languette</text>
+  <text x="138" y="192" text-anchor="middle" font-size="9.8" fill="#a16207">doit tomber dans le bucher</text>
+
+  <rect x="266" y="62" width="228" height="150" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.6"/>
+  <text x="380" y="86" text-anchor="middle" font-size="12.6" font-weight="700" fill="#075985">SEIR HAMICHTALEAH</text>
+  <text x="380" y="104" text-anchor="middle" font-size="9.8" fill="#0c4a6e">le bouc emissaire (Levitique 16)</text>
+  <text x="380" y="132" text-anchor="middle" font-size="19" font-weight="700" fill="#0c4a6e">2 sela'im = 8 zouz</text>
+  <text x="380" y="160" text-anchor="middle" font-size="10.4" fill="#075985">Rachi : de-ba'ya halouka</text>
+  <text x="380" y="177" text-anchor="middle" font-size="9.8" fill="#0c4a6e">il faut pouvoir la partager</text>
+  <text x="380" y="192" text-anchor="middle" font-size="9.8" fill="#0c4a6e">rocher / cornes -- et cela suffit</text>
+
+  <rect x="508" y="62" width="228" height="150" rx="8" fill="#f5f5f4" stroke="#a8a29e" stroke-width="1.6"/>
+  <text x="622" y="86" text-anchor="middle" font-size="12.6" font-weight="700" fill="#292524">METSORA</text>
+  <text x="622" y="104" text-anchor="middle" font-size="9.8" fill="#57534e">purification du lepreux (Lev 14)</text>
+  <text x="622" y="132" text-anchor="middle" font-size="19" font-weight="700" fill="#292524">1 chekel = 2 zouz</text>
+  <text x="622" y="160" text-anchor="middle" font-size="10.4" fill="#44403c">Rachi : lo ha ve-lo ha</text>
+  <text x="622" y="177" text-anchor="middle" font-size="9.8" fill="#57534e">ni poids ni partage --</text>
+  <text x="622" y="192" text-anchor="middle" font-size="9.8" fill="#57534e">le minimum lui suffit</text>
+
+  <rect x="24" y="234" width="712" height="30" rx="6" fill="#1c1917"/>
+  <text x="380" y="254" text-anchor="middle" font-size="12" font-weight="700" fill="#fafaf9">Sur laquelle porte la mahloket de Rabbi Chimon ben Halafta et des Sages ?</text>
+
+  <rect x="24" y="280" width="348" height="132" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.6"/>
+  <text x="198" y="303" text-anchor="middle" font-size="12" font-weight="700" fill="#5b21b6">RABBI YOHANAN : sur la PARA</text>
+  <text x="198" y="323" text-anchor="middle" font-size="10.4" fill="#6d28d9">l'un dit 10 zouz -- l'autre dit 1 chekel</text>
+  <text x="198" y="341" text-anchor="middle" font-size="10" fill="#7c3aed">le maximum contre le minimum, jamais l'intermediaire</text>
+  <rect x="42" y="352" width="312" height="46" rx="5" fill="#ffffff" stroke="#a78bfa"/>
+  <text x="198" y="370" text-anchor="middle" font-size="10" font-weight="700" fill="#5b21b6">Signe : ehad hamarbe ve-ehad hamamit</text>
+  <text x="198" y="387" text-anchor="middle" font-size="9.6" fill="#6d28d9">celui qui donne beaucoup, celui qui donne peu (Menahot 110a)</text>
+
+  <rect x="388" y="280" width="348" height="132" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.6"/>
+  <text x="562" y="303" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">R. YIRMEYA DE DIFTI : sur le SEIR</text>
+  <text x="562" y="323" text-anchor="middle" font-size="10.4" fill="#15803d">ce n'est pas la languette de la para qui est en cause</text>
+  <text x="562" y="341" text-anchor="middle" font-size="10" fill="#16a34a">correction adressee a Ravina</text>
+  <rect x="406" y="352" width="312" height="46" rx="5" fill="#ffffff" stroke="#4ade80"/>
+  <text x="562" y="370" text-anchor="middle" font-size="10" font-weight="700" fill="#166534">Signe : Ravia bar Kissi mort ce jour-la</text>
+  <text x="562" y="387" text-anchor="middle" font-size="9.6" fill="#15803d">il expie comme le bouc emissaire -- la mort des justes expie</text>
+</svg></div>
+          <figcaption>Les trois languettes d&#x27;ecarlate : leurs poids selon Rabbi Yonatan, la raison de chacun selon Rachi, et les deux lectures concurrentes de la mahloket de Rabbi Chimon ben Halafta et des Sages.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="470" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1c1917">Un zar peut-il egorger ? La para rousse et le taureau du kohen gadol</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">zar = non-kohen. Rabbi Yitzhak savait qu'une des deux chehitot est invalide par un zar, sans savoir laquelle.</text>
+
+  <rect x="250" y="60" width="240" height="34" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.4"/>
+  <text x="370" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#92400e">PARA ADOUMA</text>
+  <rect x="500" y="60" width="240" height="34" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="620" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#075985">PARO -- taureau du KG</text>
+
+  <rect x="20" y="106" width="224" height="120" rx="6" fill="#f5f5f4" stroke="#a8a29e"/>
+  <text x="132" y="132" text-anchor="middle" font-size="13" font-weight="700" fill="#292524">RAV</text>
+  <text x="132" y="154" text-anchor="middle" font-size="9.8" fill="#57534e">identifie par la parole de R. Zera :</text>
+  <text x="132" y="170" text-anchor="middle" font-size="9.8" fill="#57534e">chehitat para be-zar pessoula</text>
+  <text x="132" y="194" text-anchor="middle" font-size="9.8" fill="#78716c">et Rav commente : Elazar et houka</text>
+  <text x="132" y="210" text-anchor="middle" font-size="9.8" fill="#78716c">sont enseignes a son sujet</text>
+
+  <rect x="250" y="106" width="240" height="120" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="370" y="132" text-anchor="middle" font-size="12.4" font-weight="700" fill="#991b1b">PASSOUL par un zar</text>
+  <text x="370" y="154" text-anchor="middle" font-size="10" fill="#991b1b">Elazar (Nb 19,3) + houka (Nb 19,2)</text>
+  <text x="370" y="174" text-anchor="middle" font-size="9.6" fill="#b91c1c">houka = ikouva : rien ne se remplace</text>
+  <text x="370" y="198" text-anchor="middle" font-size="9.6" fill="#b91c1c">et l'on ne peut dire lav avoda :</text>
+  <text x="370" y="213" text-anchor="middle" font-size="9.6" fill="#b91c1c">kodchei bedek habayit, actes indistincts</text>
+
+  <rect x="500" y="106" width="240" height="120" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="620" y="132" text-anchor="middle" font-size="12.4" font-weight="700" fill="#166534">KACHER par un zar</text>
+  <text x="620" y="154" text-anchor="middle" font-size="10" fill="#166534">Aharon + houka sont pourtant ecrits</text>
+  <text x="620" y="176" text-anchor="middle" font-size="9.6" fill="#15803d">mais chehita lav avoda hi :</text>
+  <text x="620" y="192" text-anchor="middle" font-size="9.6" fill="#15803d">la houka ne porte pas sur l'egorgement</text>
+  <text x="620" y="212" text-anchor="middle" font-size="9.6" fill="#15803d">-- il n'est pas un service du Temple</text>
+
+  <rect x="20" y="238" width="224" height="120" rx="6" fill="#f5f5f4" stroke="#a8a29e"/>
+  <text x="132" y="264" text-anchor="middle" font-size="13" font-weight="700" fill="#292524">CHMOUEL</text>
+  <text x="132" y="288" text-anchor="middle" font-size="9.8" fill="#57534e">position symetrique :</text>
+  <text x="132" y="304" text-anchor="middle" font-size="9.8" fill="#57534e">c'est le taureau qui exige le kohen,</text>
+  <text x="132" y="320" text-anchor="middle" font-size="9.8" fill="#57534e">et la para qui se passe de lui</text>
+
+  <rect x="250" y="238" width="240" height="120" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="370" y="264" text-anchor="middle" font-size="12.4" font-weight="700" fill="#166534">KACHER par un zar</text>
+  <text x="370" y="288" text-anchor="middle" font-size="10" fill="#166534">ve-chahat otah le-fanav (Nb 19,3)</text>
+  <text x="370" y="310" text-anchor="middle" font-size="9.6" fill="#15803d">devant lui : un zar egorge</text>
+  <text x="370" y="326" text-anchor="middle" font-size="9.6" fill="#15803d">et Elazar regarde</text>
+
+  <rect x="500" y="238" width="240" height="120" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="620" y="264" text-anchor="middle" font-size="12.4" font-weight="700" fill="#991b1b">PASSOUL par un zar</text>
+  <text x="620" y="288" text-anchor="middle" font-size="10" fill="#991b1b">Aharon (Lev 16,11) + houka (Lev 16,34)</text>
+  <text x="620" y="310" text-anchor="middle" font-size="9.6" fill="#b91c1c">et meme les autres kohanim</text>
+  <text x="620" y="326" text-anchor="middle" font-size="9.6" fill="#b91c1c">n'y sont pas admis : il faut le KG</text>
+
+  <rect x="20" y="378" width="720" height="76" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="380" y="400" text-anchor="middle" font-size="11.6" font-weight="700" fill="#9a3412">L'objection ecartee : le kal va-homer</text>
+  <text x="380" y="420" text-anchor="middle" font-size="10" fill="#9a3412">Si le taureau, saintete de corps et vraie offrande, est valide par un zar -- la para, simple bien du Temple, ne devrait-elle pas l'etre a plus forte raison ?</text>
+  <text x="380" y="440" text-anchor="middle" font-size="10" fill="#c2410c">Rav Chicha fils de Rav Idi : non. Les mar'ot nega'im ne sont pas un service et exigent pourtant un kohen. Kehouna et avoda ne coincident pas.</text>
+</svg></div>
+          <figcaption>La controverse de Rav et de Chmouel : quelle chehita un zar peut-il faire ? Chaque case porte le verset invoque, la difficulte, et la reponse -- avec l&#x27;objection du kal va-homer ecartee par les mar&#x27;ot nega&#x27;im.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="430" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1c1917">Deux mots du verset, deux economies : le-fanav et le-einav</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">Hessah hadaat = detournement de l'attention. Dans le rite de la para, il invalide -- mais ou exactement ?</text>
+
+  <rect x="40" y="66" width="300" height="52" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="190" y="88" text-anchor="middle" font-size="12" font-weight="700" fill="#92400e">le-fanav -- devant lui</text>
+  <text x="190" y="106" text-anchor="middle" font-size="9.8" fill="#a16207">Nombres 19,3 : il l'egorgera devant lui</text>
+
+  <rect x="420" y="66" width="300" height="52" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="570" y="88" text-anchor="middle" font-size="12" font-weight="700" fill="#075985">le-einav -- sous ses yeux</text>
+  <text x="570" y="106" text-anchor="middle" font-size="9.8" fill="#0c4a6e">Nombres 19,5 : il brulera la para sous ses yeux</text>
+
+  <line x1="190" y1="118" x2="190" y2="150" stroke="#a8a29e" stroke-width="1.4"/>
+  <line x1="570" y1="118" x2="570" y2="150" stroke="#a8a29e" stroke-width="1.4"/>
+  <line x1="190" y1="150" x2="190" y2="176" stroke="#a8a29e" stroke-width="1.4"/>
+  <line x1="570" y1="150" x2="570" y2="176" stroke="#a8a29e" stroke-width="1.4"/>
+
+  <rect x="40" y="176" width="300" height="102" rx="7" fill="#f5f5f4" stroke="#a8a29e" stroke-width="1.4"/>
+  <text x="190" y="198" text-anchor="middle" font-size="12.4" font-weight="700" fill="#292524">RAV</text>
+  <text x="190" y="220" text-anchor="middle" font-size="9.8" fill="#44403c">Elazar egorge lui-meme.</text>
+  <text x="190" y="238" text-anchor="middle" font-size="9.8" fill="#44403c">le-fanav = qu'il ne detourne pas</text>
+  <text x="190" y="254" text-anchor="middle" font-size="9.8" fill="#44403c">son attention de sa garde.</text>
+  <text x="190" y="271" text-anchor="middle" font-size="9.6" font-weight="700" fill="#78716c">un verset pour la chehita</text>
+
+  <rect x="420" y="176" width="300" height="102" rx="7" fill="#f5f5f4" stroke="#a8a29e" stroke-width="1.4"/>
+  <text x="570" y="198" text-anchor="middle" font-size="12.4" font-weight="700" fill="#292524">CHMOUEL</text>
+  <text x="570" y="220" text-anchor="middle" font-size="9.8" fill="#44403c">le-fanav est deja consomme :</text>
+  <text x="570" y="238" text-anchor="middle" font-size="9.8" fill="#44403c">il autorise le zar a egorger.</text>
+  <text x="570" y="254" text-anchor="middle" font-size="9.8" fill="#44403c">Le hessah hadaat vient de le-einav.</text>
+  <text x="570" y="271" text-anchor="middle" font-size="9.6" font-weight="700" fill="#78716c">un seul verset, pour la serifa</text>
+
+  <rect x="40" y="298" width="680" height="112" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="380" y="320" text-anchor="middle" font-size="11.8" font-weight="700" fill="#5b21b6">Pour Rav, les deux versets sont necessaires (tsricha) -- et cette double ecriture exclut quelque chose</text>
+  <rect x="58" y="332" width="316" height="62" rx="5" fill="#ffffff" stroke="#a78bfa"/>
+  <text x="216" y="352" text-anchor="middle" font-size="10.2" font-weight="700" fill="#5b21b6">CHEHITA</text>
+  <text x="216" y="370" text-anchor="middle" font-size="9.6" fill="#6d28d9">importance propre : tehilat avoda</text>
+  <text x="216" y="386" text-anchor="middle" font-size="9.6" fill="#6d28d9">c'est le debut du service</text>
+  <rect x="386" y="332" width="316" height="62" rx="5" fill="#ffffff" stroke="#a78bfa"/>
+  <text x="544" y="352" text-anchor="middle" font-size="10.2" font-weight="700" fill="#5b21b6">SERIFA</text>
+  <text x="544" y="370" text-anchor="middle" font-size="9.6" fill="#6d28d9">importance propre : c'est alors</text>
+  <text x="544" y="386" text-anchor="middle" font-size="9.6" fill="#6d28d9">que la para devient apte -- sa cendre</text>
+</svg></div>
+          <figcaption>Le partage des deux versets : ce que le-fanav enseigne pour Rav et pour Chmouel, d&#x27;ou vient le hessah hadaat chez chacun, et pourquoi Rav a besoin des deux.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">שֶׁל פָּרָה — מִשְׁקַל עֲשָׂרָה זוּז, וְשֶׁל שָׂעִיר הַמִּשְׁתַּלֵּחַ — מִשְׁקַל שְׁנֵי סְלָעִים, וְשֶׁל מְצֹורָע — מִשְׁקַל שֶׁקֶל.</div>
+            <div class="fr"><p>[Celle] de la para (la vache rousse) : du poids de dix zouz ; celle du bouc emissaire (sa&#x27;ir hamichtaleah) : du poids de deux sela&#x27;im ; et celle du metsora (le lepreux en voie de purification) : du poids d&#x27;un chekel.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁל פָּרָה מִשְׁקַל עָשָׂר זוּז</b> דְּבָעֲיָא כֹּובֶד:</div>
+          <div class="glose-fr">Celle de la para, du poids de dix zouz - parce qu&#x27;elle exige le koved (le poids).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁל שָׂעִיר</b> דְּבָעֲיָא חֲלֻוקָּה מִשְׁקַל שְׁנֵי סְלָעִים וְדַיָּיהּ בְּכָךְ:</div>
+          <div class="glose-fr">Celle du bouc - parce qu&#x27;elle exige la halouka (le partage) : le poids de deux sela&#x27;im, et cela lui suffit.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁל מְצֹורָע</b> דְּלָא הָא וְלָא הָא סַגִּי לֵיהּ בְּשֶׁקֶל:</div>
+          <div class="glose-fr">Celle du metsora - qui n&#x27;exige ni ceci ni cela : un chekel lui suffit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le daf s'ouvre sur l'appariement annonce a la fin de 41b : Ravin rapporte au nom de Rabbi Yonatan les trois poids des trois languettes d'ecarlate (<b>lechonot chel zehorit</b>). Rachi donne la logique de l'echelle : chaque poids repond a une exigence propre.</p><p>La languette de la <b>para</b> doit peser lourd -- <b>koved</b> -- parce qu'on la jette dans le bucher de la vache : trop legere, elle serait emportee ou consumee en l'air. Celle du <b>bouc emissaire</b> n'a pas besoin de poids mais de <b>halouka</b>, d'etre partageable : une part est attachee au rocher, l'autre entre les cornes de la bete. Celle du <b>metsora</b> ne demande ni l'un ni l'autre : le minimum, un <b>chekel</b> (deux zouz), lui suffit.</p><p>Rappel des equivalences : un <b>sela</b> vaut quatre zouz, un <b>chekel</b> en vaut deux. L'echelle va donc de dix zouz a huit zouz puis a deux zouz.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַבִּי יוֹחָנָן: פְּלִיגִי בַּהּ רַבִּי שִׁמְעוֹן בֶּן חֲלַפְתָּא וְרַבָּנַן בְּפָרָה, חַד אָמַר: מִשְׁקַל עֲשָׂרָה, וְחַד אָמַר: מִשְׁקַל שֶׁקֶל. וְסִימָנָיךְ: ״אֶחָד הַמַּרְבֶּה וְאֶחָד הַמַּמְעִיט״.</div>
+            <div class="fr"><p>Rabbi Yohanan a dit : Rabbi Chimon ben Halafta et les Sages sont en desaccord la-dessus au sujet de la para. L&#x27;un dit : du poids de dix [zouz] ; et l&#x27;autre dit : du poids d&#x27;un chekel.</p><p>Et ton signe [mnemotechnique] : « celui qui donne beaucoup comme celui qui donne peu ».</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">הָכִי גָּרְסִינַן פְּלִיגִי בָּהּ ר&quot;ש בֶּן חֲלַפְתָּא וְרַבָּנַן בְּפָרָה:</div>
+          <div class="glose-fr">Voici la lecon qu&#x27;il faut retenir (hakhi garsinan) : Rabbi Chimon ben Halafta et les Sages sont en desaccord la-dessus au sujet de la para.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְסִימָן</b> שֶׁלֹּא תִּטְעֶה לוֹמַר שֶׁאֶחָד הָיָה אוֹמֵר מִשְׁקַל שְׁנֵי סְלָעִים מִשְׁנָה זוֹ תְּהֵא לְךָ סִימָן שֶׁשָּׁנִינוּ (מְנָחוֹת דַּף קי.) אֶחָד הַמַּרְבֶּה וְאֶחָד הַמַּמְעִיט וּבִלְבַד שֶׁיְּכַוֵּין לִבּוֹ לַשָּׁמַיִם בְּסִימָן זֶה תִּזְכֹּור לוֹמַר שֶׁהָאֶחָד נָתַן בָּהּ שִׁיעוּר הַמַּרְבֶּה מִכֻּולָּן וְהָאֶחָד נָתַן בָּהּ שִׁיעוּר וְקָא מְמַעֵט מִכֻּולָּן אֲבָל שִׁיעוּר בֵּינוֹנִי לֹא הֻוזְכַּר כָּאן:</div>
+          <div class="glose-fr">Et un signe - pour que tu ne te trompes pas en disant que l&#x27;un d&#x27;eux enoncait le poids de deux sela&#x27;im. Que cette michna te serve de signe : nous avons appris (Menahot 110a) « celui qui donne beaucoup comme celui qui donne peu, pourvu qu&#x27;il oriente son coeur vers le Ciel ». Par ce signe tu te souviendras que l&#x27;un a fixe pour elle la plus grande des mesures et que l&#x27;autre lui a donne la mesure la plus petite de toutes -- mais qu&#x27;aucune mesure intermediaire n&#x27;est mentionnee ici.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabbi Yohanan enregistre une controverse sur la seule languette de la para : dix zouz pour l'un, un chekel -- deux zouz -- pour l'autre. Ce qui frappe, c'est qu'aucun des deux ne propose la valeur intermediaire, les deux sela'im (huit zouz) du bouc emissaire.</p><p>D'ou le <b>siman</b>, le signe destine a proteger la memoire de l'etudiant. Rachi l'explicite : pour ne pas te tromper en pretant a l'un des deux la mesure moyenne, souviens-toi de la michna de Menahot 110a -- <b>ehad hamarbe ve-ehad hamamit</b>, « celui qui donne beaucoup comme celui qui donne peu, pourvu qu'il oriente son coeur vers le Ciel ». Le couple maximum / minimum, sans milieu, est exactement la forme de la mahloket.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רַבִּי יִרְמְיָה מִדִּיפְתִּי לְרָבִינָא: לָא בְּפָרָה פְּלִיגִי, אֶלָּא בְּשָׂעִיר הַמִּשְׁתַּלֵּחַ פְּלִיגִי. וְהָהוּא יוֹמָא נָח נַפְשֵׁיהּ דְּרַבְיָא בַּר קִיסִי, וְאַנַּחוּ בָּהּ סִימָנָא: רַבְיָא [בַּר] קִיסִי מְכַפֵּר כְּשָׂעִיר הַמִּשְׁתַּלֵּחַ.</div>
+            <div class="fr"><p>Rabbi Yirmeya de Difti dit a Ravina : ce n&#x27;est pas au sujet de la para qu&#x27;ils sont en desaccord, mais au sujet du bouc emissaire. Et ce jour-la meme mourut Ravia bar Kissi, et l&#x27;on en fit un signe : Ravia bar Kissi expie comme le bouc emissaire.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא בְּפָרָה פְּלִיגִי</b> בְּלָשׁוֹן שֶׁל פָּרָה:</div>
+          <div class="glose-fr">Ce n&#x27;est pas au sujet de la para qu&#x27;ils divergent - c&#x27;est-a-dire au sujet de la languette de la para.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהַהוּא יוֹמָא</b> דְּאִיפְּלִיגִי בָּהּ נֹחַ רַבְיָא בַּר קִיסִּי. שֵׁם חָכָם:</div>
+          <div class="glose-fr">Et ce jour-la - ou ils divergerent la-dessus, Ravia bar Kissi s&#x27;eteignit. C&#x27;est le nom d&#x27;un Sage.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מְכַפֵּר</b> מִיתַת צַדִּיקִים מְכַפֶּרֶת כִּדְאָמַר בְּעָלְמָא (מוֹעֵד קָטָן דַּף כֹּח.) לָמָּה נִסְמְכָה מִיתַת אַהֲרֹן לְבִגְדֵי כְהֻונָּה לוֹמַר לָךְ מַה בִּגְדֵי כְהֻונָּה מְכַפְּרִין אַף מִיתַת צַדִּיקִים מְכַפֶּרֶת:</div>
+          <div class="glose-fr">Expie - la mort des justes expie, comme il est dit ailleurs (Moed Katan 28a) : pourquoi la mort d&#x27;Aharon est-elle juxtaposee aux vetements de la kehouna ? Pour t&#x27;enseigner que de meme que les vetements de la kehouna expient, de meme la mort des justes expie.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabbi Yirmeya de Difti corrige la transmission de Rabbi Yohanan : la mahloket ne porte pas sur la languette de la <b>para</b> mais sur celle du <b>bouc emissaire</b>. Rachi precise que le desaccord porte, dans les deux versions, sur le <b>lachon</b>, la languette elle-meme, pas sur le rite.</p><p>La guemara joint alors a cette version un second <b>siman</b>, cette fois biographique. Le jour meme ou la correction fut enoncee, le Sage <b>Ravia bar Kissi</b> mourut ; on retint la formule « Ravia bar Kissi expie comme le bouc emissaire », qui accroche a la fois le nom du Sage et l'objet de la controverse. Rachi rappelle le principe sous-jacent : <b>mitat tsadikim mekhaperet</b>, la mort des justes expie -- de meme que les vetements de la kehouna expient, comme l'enseigne Moed Katan 28a a partir de la juxtaposition de la mort d'Aharon et des vetements sacerdotaux.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַבִּי יִצְחָק: שְׁתֵּי שְׁחִיטוֹת שָׁמַעְתִּי, אַחַת שֶׁל פָּרָה, וְאַחַת שֶׁל פָּרוֹ. אַחַת כְּשֵׁרָה בְּזָר, וְאַחַת פְּסוּלָה בְּזָר, וְלָא יָדַעְנָא הֵי מִינַּייְהוּ.</div>
+            <div class="fr"><p>Rabbi Yitzhak a dit : j&#x27;ai entendu [une tradition sur] deux abattages (chehitot), l&#x27;un celui de la para et l&#x27;autre celui de son taureau [le taureau du kohen gadol] : l&#x27;un est kacher fait par un zar (un non-kohen) et l&#x27;autre est passoul (invalide) fait par un zar -- mais je ne sais pas lequel des deux.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁל פָּרוֹ</b> פַּר כֹּהֵן גָּדוֹל שֶׁל יוה&quot;כ:</div>
+          <div class="glose-fr">De son taureau - le taureau du kohen gadol de Yom Kippour.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle sougya, batie sur la meme figure litteraire que celle de la fin de 41b : un Sage a recu une <b>distinction</b> mais en a perdu l'attribution. Rabbi Yitzhak sait de source sure que les deux abattages ne se valent pas devant un <b>zar</b> -- un non-kohen -- mais il ne sait plus lequel des deux est invalide.</p><p>Les deux betes sont d'un statut tres different. La <b>para adouma</b> (Nombres 19) n'est pas offerte sur l'autel : elle est egorgee et brulee hors de la Ville, sur le mont des Oliviers. Le <b>par kohen gadol</b> (Levitique 16), precise Rachi, est le taureau expiatoire que le grand pretre offre pour lui-meme a Yom Kippour : une offrande de plein droit, au coeur du sanctuaire. L'intuition premiere voudrait que ce soit le taureau, plus saint, qui exige un kohen -- la guemara va montrer que rien n'est si simple.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="300" fill="#fffdf8"/>
+  <text x="350" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">La tradition mutilee de Rabbi Yitzhak</text>
+  <rect x="30" y="46" width="640" height="34" rx="6" fill="#f5f5f4" stroke="#a8a29e"/>
+  <text x="350" y="68" text-anchor="middle" font-size="11" fill="#44403c">J'ai entendu : deux chehitot -- l'une kachere par un zar, l'autre passoule par un zar</text>
+  <line x1="200" y1="80" x2="200" y2="104" stroke="#a8a29e" stroke-width="1.4"/>
+  <line x1="500" y1="80" x2="500" y2="104" stroke="#a8a29e" stroke-width="1.4"/>
+  <rect x="60" y="104" width="280" height="86" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="200" y="128" text-anchor="middle" font-size="12" font-weight="700" fill="#92400e">PARA ADOUMA</text>
+  <text x="200" y="149" text-anchor="middle" font-size="9.8" fill="#a16207">hors de la Ville, sur le mont des Oliviers</text>
+  <text x="200" y="166" text-anchor="middle" font-size="9.8" fill="#a16207">jamais offerte sur l'autel</text>
+  <text x="200" y="183" text-anchor="middle" font-size="9.8" fill="#a16207">verset : ve-natatem otah el Elazar</text>
+  <rect x="360" y="104" width="280" height="86" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="500" y="128" text-anchor="middle" font-size="12" font-weight="700" fill="#075985">PAR KOHEN GADOL</text>
+  <text x="500" y="149" text-anchor="middle" font-size="9.8" fill="#0c4a6e">taureau expiatoire de Yom Kippour</text>
+  <text x="500" y="166" text-anchor="middle" font-size="9.8" fill="#0c4a6e">offrande de plein droit, dans le Temple</text>
+  <text x="500" y="183" text-anchor="middle" font-size="9.8" fill="#0c4a6e">verset : ve-chahat et par hahatat acher lo</text>
+  <rect x="200" y="214" width="300" height="58" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="350" y="238" text-anchor="middle" font-size="18" font-weight="700" fill="#991b1b">laquelle est passoule ?</text>
+  <text x="350" y="259" text-anchor="middle" font-size="10" fill="#b91c1c">ve-lo yadana hei minaihou -- l'attribution est perdue</text>
+</svg></div><div class="svg-cap">La forme de la tradition recue par Rabbi Yitzhak : la distinction est sure, son sens ne l&#x27;est plus. Rav et Chmouel vont chacun la remplir dans un sens oppose.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִיתְּמַר: שְׁחִיטַת פָּרָה וּפָרוֹ, רַב וּשְׁמוּאֵל. חַד אָמַר: פָּרָה פְּסוּלָה, פָּרוֹ כְּשֵׁרָה. וְחַד אָמַר: פָּרוֹ פְּסוּלָה, פָּרָה כְּשֵׁרָה.</div>
+            <div class="fr"><p>Il fut enonce : au sujet de l&#x27;abattage de la para et de son taureau, Rav et Chmouel [divergent]. L&#x27;un dit : la para est invalide et son taureau valide ; et l&#x27;autre dit : son taureau est invalide et la para valide.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara produit une controverse amoraique qui epouse exactement la forme du doute de Rabbi Yitzhak : deux positions symetriques, chacune remplissant la case laissee vide. Mais le rapporteur n'attribue pas les opinions -- <b>had amar... ve-had amar</b> : « l'un dit... et l'autre dit... ». Le doute s'est deplace du contenu vers les noms.</p><p>La suite immediate du daf va lever cette seconde indetermination par une <b>tistayem</b> : une inference qui identifie l'auteur d'une position anonyme a partir d'une autre parole, celle-la clairement attribuee.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תִּסְתַּייֵּם דְּרַב הוּא דְּאָמַר פָּרָה פְּסוּלָה, דְּאָמַר רַבִּי זֵירָא: שְׁחִיטַת פָּרָה בְּזָר פְּסוּלָה, וְאָמַר רַב עֲלָהּ: ״אֶלְעָזָר״ וְ״חֻוקָּה״ שָׁנִינוּ בָּהּ.</div>
+            <div class="fr"><p>Concluons (tistayem) que c&#x27;est Rav qui dit que la para est invalide -- car Rabbi Zera a dit : l&#x27;abattage de la para par un zar est invalide, et Rav a dit a ce propos : « Elazar » et « houka » sont enseignes a son sujet.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלְעָזָר וְחֻוקָּה</b> אֶלְעָזָר כְּתִיב בָּהּ וּנְתַתֶּם אֹותָהּ אֶל אֶלְעָזָר הַכֹּהֵן וְגוֹ&#x27; (בַּמִּדְבָּר י״ט:ג׳) וּכְתִיב (שָׁם) זֹאת חֻקַּת הַתּוֹרָה וְכָל הֵיכָא דַּכְתִּי&#x27; חֻוקָּה עִיכּוּבָא הוּא:</div>
+          <div class="glose-fr">« Elazar » et « houka » - « Elazar » est ecrit a son sujet : « vous la remettrez a Elazar le kohen etc. » (Nombres 19,3) ; et il est ecrit (ibid.) « telle est la houka -- le decret -- de la Torah ». Or partout ou il est ecrit « houka », il y a ikouva (l&#x27;exigence est indispensable et son omission invalide).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La <b>tistayem</b> fonctionne ainsi : on connait par ailleurs une parole ou Rav commente explicitement l'enonce de Rabbi Zera « l'abattage de la para par un zar est invalide ». Puisque Rav fournit la raison de cette invalidite, c'est bien lui qui la soutient -- donc c'est lui, dans la controverse anonyme, qui tient « la para invalide, son taureau valide ». Chmouel occupe l'autre position.</p><p>La raison donnee par Rav est un couple. D'une part le mot <b>Elazar</b> : « vous la remettrez a Elazar le kohen » (Nombres 19,3) -- le rite est confie a un kohen. D'autre part le mot <b>houka</b> : « telle est la houka de la Torah » (Nombres 19,2). Rachi rappelle la regle generale : partout ou la Torah ecrit <b>houka</b>, il y a <b>ikouva</b> -- l'exigence est indispensable, et son omission invalide l'acte au lieu de le laisser simplement imparfait. Elazar seul donnerait une preference ; Elazar avec houka donne une condition.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַב, מַאי שְׁנָא פָּרָה — דִּכְתִיב ״אֶלְעָזָר״ וּ״חֻוקָּה״, פָּרוֹ נָמֵי — הָא כְתִיב ״אַהֲרֹן״ וְ״חֻוקָּה״!</div>
+            <div class="fr"><p>Et selon Rav : en quoi la para est-elle differente, parce qu&#x27;il y est ecrit « Elazar » et « houka » ? Mais son taureau aussi -- n&#x27;y est-il pas ecrit « Aharon » et « houka » !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַהֲרֹן וְחֻוקָּה</b> דִּכְתִיב (וַיִּקְרָא ט״ז:ו׳) וְהִקְרִיב אַהֲרֹן אֶת פַּר הַחַטָּאת אֲשֶׁר לוֹ וְכִפֶּר וְגוֹ&#x27; וְשָׁחַט אֶת פַּר הַחַטָּאת אֲשֶׁר לוֹ וְגוֹ&#x27; וּכְתִיב בְּאַחֲרֵי מוֹת בְּעִנְיָנָא (שָׁם) וְהָיְתָה זֹּאת לָכֶם לְחֻקַּת עוֹלָם לְכַפֵּר עַל בְּנֵי יִשְׂרָאֵל:</div>
+          <div class="glose-fr">« Aharon » et « houka » - car il est ecrit (Levitique 16,6) « Aharon offrira le taureau du hatat qui est le sien et il expiera etc. », « il egorgera le taureau du hatat qui est le sien etc. » ; et il est ecrit dans [la parachat] Aharei Mot, dans ce meme sujet (ibid.) : « ce sera pour vous un decret perpetuel d&#x27;expier pour les enfants d&#x27;Israel ».</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>L'objection est purement formelle et d'autant plus forte : le couple invoque par Rav pour invalider l'abattage de la para se retrouve mot pour mot du cote du taureau. Rachi releve les deux versets. Pour « <b>Aharon</b> » : « Aharon offrira le taureau du hatat qui est le sien... il egorgera le taureau du hatat qui est le sien » (Levitique 16,6 et 11) -- le nom du kohen gadol est accroche a l'acte d'egorger lui-meme. Pour « <b>houka</b> » : « ce sera pour vous un decret perpetuel (houkat olam) d'expier pour les enfants d'Israel » (Levitique 16,34), qui cloture precisement ce meme sujet.</p><p>Si le raisonnement de Rav vaut, il devrait valoir des deux cotes -- et Rav, qui declare le taureau valide par un zar, se contredirait.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">שְׁחִיטָה לָאו עֲבוֹדָה הִיא. אִי הָכִי פָּרָה נָמֵי! שָׁאנֵי פָּרָה, דְּקָדְשֵׁי בֶּדֶק הַבַּיִת הִיא.</div>
+            <div class="fr"><p>[Reponse :] l&#x27;abattage n&#x27;est pas un service (chehita lav avoda hi). Si c&#x27;est ainsi, la para aussi [devrait etre valide] !</p><p>La para est differente, car elle releve des kodchei bedek habayit (les biens consacres a l&#x27;entretien du Temple).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שְׁחִיטָה לָאו עֲבוֹדָה הִיא</b> וְלָא קַיְימָא חֻוקָּה אַשְּׁחִיטָה:</div>
+          <div class="glose-fr">L&#x27;abattage n&#x27;est pas un service - et la houka ne porte donc pas sur l&#x27;abattage.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שָׁאנֵי פָּרָה דְּקָדְשֵׁי בֶּדֶק הַבַּיִת הִיא</b> כְּלוֹמַר אֵין בָּהּ קְדֻושַּׁת הַמִּזְבֵּחַ אֶלָּא קְדֻושַּׁת דָּמִים בְּעָלְמָא שֶׁהֲרֵי שְׁחִיטָתָהּ בְּהַר הַמִּשְׁחָה הִלְכָּךְ אֵין צַד עֲבוֹדוֹת נֶחֱלָקוֹת בָּהּ וְכָל הָעֲבוֹדוֹת שָׁווֹת בָּהּ:</div>
+          <div class="glose-fr">La para est differente, car elle releve des kodchei bedek habayit - c&#x27;est-a-dire qu&#x27;elle n&#x27;a pas la saintete de l&#x27;autel mais une simple saintete de valeur (kedouchat damim), puisque son abattage a lieu sur le mont des Oliviers. Des lors il n&#x27;y a pas en elle de categories d&#x27;actes qui se distingueraient les unes des autres : tous les actes y sont sur un meme plan.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שְׁחִיטָה לָאו עֲבוֹדָה הִיא</b> בְּכָל דֻּוכְתָּא פרש&quot;י מִשּׁוּם דִּכְשֵׁירָה בְּזָר וְתֵימַהּ הוּא דבפ&quot;ק דִּזְבָחִים (דַּף יד:) פָּרֵיךְ וַהֲרֵי שְׁחִיטָה דא&quot;א לְבַטְּלָהּ וּכְשֵׁירָה בְּזָר וּמְשַׁנֵּי שְׁחִיטָה לָאו עֲבוֹדָה הִיא וְהַשְׁתָּא מַה תְּשׁוּבָה הִיא זוֹ שֶׁהֲרֵי הִקְשָׁה שֶׁהָיָה לָהּ לִיפָּסֵל בְּזָר כֵּיוָן דא&quot;א לְבַטְּלָהּ וּפֵירֵשׁ רַבֵּינוּ יַעֲקֹב מאורליינ&quot;ש דְּלָאו עֲבוֹדָה הִיא דְּנוֹהֶגֶת אַפֵּי&#x27; בְּחֻולִּין וְקָשֶׁה א&quot;כ מַאי פָּרֵיךְ עֲלָהּ הָתָם וְהָאָמַר רַב שְׁחִיטַת פָּרָה בְּזָר פְּסוּלָה בִּשְׁלָמָא לפרש&quot;י פָּרֵיךְ שַׁפִּיר אֲבָל לְפֵירוּשׁ רַבֵּינוּ יַעֲקֹב מַאי פָּרֵיךְ נְהִי דִּשְׁחִיטַת פָּרָה פְּסוּלָה בְּזָר מ&quot;מ לָאו עֲבוֹדָה הִיא כֵּיוָן דְּנוֹהֶגֶת נָמֵי בְּחֻולִּין וְהָיָה נִרְאֶה לְייַשֵּׁב פרש&quot;י כֵּן וּלְפָרֵשׁ שְׁחִיטָה לָאו עֲבוֹדָה הִיא כֵּיוָן דְּהֻוכְשְׁרוּ בָּהּ כָּל הַפְּסוּלִין וְאַפֵּי&#x27; נָשִׁים וַעֲבָדִים וּטְמֵאִים מִסְּתָמָא לָא חֲשִׁיבָא עֲבוֹדָה לִפְנֵי הַמָּקוֹם מֵאֵיזֶה טַעַם שֶׁיְּהֵא אוֹ מִשּׁוּם דְּנוֹהֶגֶת נָמֵי בְּחֻולִּין אוֹ מִשּׁוּם טַעְמָא אַחַרְיַנָא וַהֲדַר פָּרִיךְ מְנָא לָךְ דְּלָאו עֲבוֹדָה הִיא מִדְּהֻוכְשְׁרוּ בָּהּ כָּל הַפְּסוּלִין וַהֲלֹא יֵשׁ שְׁחִיטָה שֶׁהִיא פְּסוּלָה בְּזָר כְּגוֹן שְׁחִיטַת פָּרָה וְרַבֵּינוּ שִׁמְשׁוֹן מְפָרֵשׁ לָאו עֲבוֹדָה דְּגַבֵּי קַבָּלָה בָּעֵינַן שֶׁהַמְקַבֵּל יַעֲמוֹד בִּפְנִים וּבִשְׁחִיטָה אִם עָמַד וְהוֹשִׁיט יָדוֹ לִפְנִים וְשָׁחַט כָּשֵׁר כִּדְדָרְשִׁינַן בְּפֶרֶק כָּל הַפְּסוּלִין (זְבָחִים דַּף לב:) בֶּן הַבָּקָר לִפְנֵי ה&#x27; וְהוּא בְּעַצְמוֹ הִקְשָׁה לְשִׁמְעוֹן הַתֵּימְנִי דִּפְלִיג הָתָם וְאָמַר שֶׁיְּהוּ יָדָיו שֶׁל שׁוֹחֵט לִפְנִים מִן הַנִּשְׁחָט מַאי אִיכָּא לְמֵימַר מִיהוּ מָצֵי לְמֵימַר דְּאַפֵּי&#x27; לְשִׁמְעוֹן הַתֵּימְנִי שְׁחִיטָה לָאו עֲבוֹדָה הִיא שֶׁהֲרֵי בְּקָדְשֵׁי קָדָשִׁים צָרִיךְ שֶׁיַּעֲמֹוד הַמְקַבֵּל בַּצָּפוֹן כִּדְדָרְשִׁינַן בְּפֶרֶק אֵיזֶהוּ מְקוֹמָן (זְבָחִים דַּף מח.) מִוְּלֶקַח לוֹ יִקַּח וּבְשׁוֹחֵט לָא בָּעֵינַן שֶׁיַּעֲמֹוד הַשּׁוֹחֵט בַּצָּפוֹן וְכִי פָּרֵיךְ בְּפ&quot;ק דִּזְבָחִים (דַּף יד:) ובפ&quot;ק דִּמְנָחוֹת (דַּף ו:) וְהָאָמַר רַב שְׁחִיטַת פָּרָה בְּזָר פְּסוּלָה וּמְשַׁנֵּי שָׁאנֵי פָּרָה דְּקָדְשֵׁי בֶּדֶק הַבַּיִת הִיא תֵּימַהּ לִיפְרֹךְ מִפָּרוֹ שֶׁל אַהֲרֹן לְמָאֵן דְּאָמַר פְּסוּלָה בְּזָר וְלָא הֲוָה מָצֵי לְשַׁנּוּיֵי הָכִי וְאָמַר לִי מוֹרִי הָרַב ר&#x27; שְׁמוּאֵל בַּר שְׁלֹמֹה בְּשֵׁם הָר&#x27; יוֹסֵף קלצון זצ&quot;ל דְּמֵהָתָם לֵיכָּא לְמִיפְרַךְ דְּהָתָם לָאו מִשּׁוּם דַּעֲבוֹדָה הִיא דְּהָא פְּסוּלָה אַפֵּי&#x27; בִּשְׁאָר הַכֹּהֲנִים אֶלָּא בכ&quot;ג לְחוּדֵיהּ אֶלָּא גַּלִּי רַחֲמָנָא דְּבָעֵינַן בְּעָלִים מִידֵּי דַּהֲוָה אַסְּמִיכָה דְּלָאו עֲבוֹדָה הִיא דְּבָעֵינַן בְּעָלִים:</div>
+          <div class="glose-fr">L&#x27;abattage n&#x27;est pas un service - partout Rachi explique [qu&#x27;on le sait] parce qu&#x27;il est valide par un zar. Et c&#x27;est etonnant, car au premier chapitre de Zevahim (14b) la guemara objecte : mais voici l&#x27;abattage, qui ne peut etre supprime (i efchar levatela) et qui est pourtant valide par un zar ! Et elle repond : l&#x27;abattage n&#x27;est pas un service. Or quelle reponse est-ce la, puisque l&#x27;objection portait justement sur le fait qu&#x27;il aurait du etre invalide par un zar des lors qu&#x27;il ne peut etre supprime ? Rabbenou Yaakov d&#x27;Orleans a explique : il n&#x27;est pas un service parce qu&#x27;il a cours meme sur des betes profanes (houlin). Mais cela fait difficulte : s&#x27;il en est ainsi, que demande donc la guemara la-bas, « mais Rav n&#x27;a-t-il pas dit que l&#x27;abattage de la para par un zar est invalide ? » ? Selon Rachi l&#x27;objection se comprend bien ; mais selon Rabbenou Yaakov, que demande-t-elle ? Meme si l&#x27;abattage de la para est invalide par un zar, il reste malgre tout non-service, puisqu&#x27;il a cours aussi sur les houlin. Il paraissait possible de sauver l&#x27;explication de Rachi ainsi : « l&#x27;abattage n&#x27;est pas un service » parce que tous les inaptes y ont ete declares aptes -- meme les femmes, les esclaves et les impurs ; il est donc vraisemblable qu&#x27;il n&#x27;est pas tenu pour un service devant le Lieu, pour quelque raison que ce soit -- ou parce qu&#x27;il a cours aussi sur les houlin, ou pour une autre raison. Et la guemara demande alors : d&#x27;ou sais-tu qu&#x27;il n&#x27;est pas un service ? Du fait que tous les inaptes y sont aptes ? Mais il existe pourtant un abattage invalide par un zar, celui de la para ! Et Rabbenou Chimchon explique : il n&#x27;est pas un service, car pour la reception du sang (kabala) il faut que celui qui recoit se tienne a l&#x27;interieur, tandis que pour l&#x27;abattage, s&#x27;il s&#x27;est tenu dehors et a tendu la main a l&#x27;interieur pour abattre, c&#x27;est valide, comme on l&#x27;expose au chapitre Kol haPessoulin (Zevahim 32b) a partir de « le taureau devant l&#x27;Eternel ». Mais lui-meme a objecte : selon Chimon haTimni, qui diverge la-bas et dit que les mains de l&#x27;abatteur doivent etre a l&#x27;interieur, plus loin que la bete abattue, que dire ? On peut cependant repondre que meme pour Chimon haTimni l&#x27;abattage n&#x27;est pas un service, car pour les kodchei kodachim celui qui recoit le sang doit se tenir au nord, comme on l&#x27;expose au chapitre Eizehou Mekoman (Zevahim 48a) a partir de « il prendra pour lui », alors que pour l&#x27;abattage on n&#x27;exige pas que l&#x27;abatteur se tienne au nord. Et lorsque la guemara demande au premier chapitre de Zevahim (14b) et au premier chapitre de Menahot (6b) « mais Rav n&#x27;a-t-il pas dit que l&#x27;abattage de la para par un zar est invalide ? » et repond « la para est differente, car elle releve des kodchei bedek habayit » -- il y a lieu de s&#x27;etonner : qu&#x27;elle objecte donc plutot du taureau d&#x27;Aharon, selon celui qui le declare invalide par un zar, car alors on n&#x27;aurait pas pu repondre ainsi ! Mon maitre Rabbi Chmouel bar Chelomo m&#x27;a dit au nom de Rabbi Yossef Kaltson, que son souvenir soit une benediction, que de la on ne peut pas objecter : la-bas ce n&#x27;est pas parce qu&#x27;il s&#x27;agit d&#x27;un service [qu&#x27;un kohen est requis] -- la preuve, il est invalide meme fait par les autres kohanim, et seul le kohen gadol convient -- mais la Torah a revele qu&#x27;il faut le proprietaire lui-meme (les be&#x27;alim), comme pour la semikha, qui n&#x27;est pas un service et exige pourtant les be&#x27;alim.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שָׁאנֵי פָּרָה דְּקָדְשֵׁי בֶּדֶק הַבַּיִת הִיא</b> וְהָכִי נָמֵי אָמְרִינַן בְּפ&quot;ק דִּזְבָחִים (דַּף יד:) ובפ&quot;ק דִּמְנָחוֹת (דַּף ו:) ובפ&quot;ק דִּשְׁבוּעוֹת (דַּף יא:) וְקָשֶׁה מִכָּאן לפרש&quot;י שֶׁפֵּירֵשׁ בְּרֵישׁ פ&#x27; אֵין מַעֲמִידִין (ע&quot;ז דַּף כג: וְשָׁם) גַּבֵּי ש&quot;מ פָּרָה קָדְשֵׁי מִזְבֵּחַ הִיא דְּאִי קָדְשֵׁי בֶּדֶק הַבַּיִת הִיא מִי מִיפַּסְלָא בִּרְבִיעָה אֶלָּא מֵעַתָּה תִּיפָּסֵל בְּיוֹצֵא דֹּופֶן אַלְּמָה תַּנְיָא וּפְסוּלָה בְּיוֹצֵא דֹּופֶן ור&quot;ש מַכְשִׁיר אֶלָּא שָׁאנֵי פָּרָה הוֹאִיל וְהַמּוּם פּוֹסֵל בָּהּ דְּבַר עֶרְוָה וַעֲבוֹדַת כּוֹכָבִים פּוֹסֵל בָּהּ ופרש&quot;י דִּלְרַבָּנָן קָדְשֵׁי מִזְבֵּחַ הִיא וּלְהָכִי מִיפַּסְלָא בִּרְבִיעָה וּבְיוֹצֵא דֹּופֶן ולר&quot;ש קָדְשֵׁי בֶּדֶק הַבַּיִת הִיא וּלְהָכִי לָא מִיפַּסְלָא בְּיוֹצֵא דֹּופֶן וְהַאי דְּמוֹדֶה ר&quot;ש דְּמִיפַּסְלָא בִּרְבִיעָה מִשּׁוּם דְּכֵיוָן דְּהַמּוּם פּוֹסֵל בָּהּ דְּבַר עֶרְוָה וַעֲבוֹדַת כּוֹכָבִים פּוֹסְלִין בָּהּ וְקָשֶׁה לְפִי&#x27; דא&quot;כ כָּל סְתָמֵי דְּהַשַּׁ&quot;ס בְּכַמָּה דֻּוכְתֵי דְּקָאָמַר פָּרָה קָדְשֵׁי בֶּדֶק הַבַּיִת הִיא כר&quot;ש וְלֹא כְּרַבָּנָן וְשָׁם מְפֹורָשׁ וּבְפֶרֶק קַמָּא דְּחֻולִּין (דַּף יא. ד&quot;ה חַטָּאת) בִּשְׁמַעְתָּא דִּמְנָא הָא מִילְּתָא דְּאָזְלִי בָּתַר רֻובָּא הֶאֱרַכְתִּי:</div>
+          <div class="glose-fr">La para est differente, car elle releve des kodchei bedek habayit - et c&#x27;est bien ce que l&#x27;on dit aussi au premier chapitre de Zevahim (14b), au premier chapitre de Menahot (6b) et au premier chapitre de Chevouot (11b). Or il y a la une difficulte contre l&#x27;explication de Rachi, qui explique au debut du chapitre Ein Ma&#x27;amidin (Avoda Zara 23b, et la-bas) sur « conclus-en que la para releve des kodchei mizbeah » : car si elle relevait des kodchei bedek habayit, serait-elle invalidee par la revi&#x27;a (le fait d&#x27;avoir ete saillie) ? [Et la guemara y objecte :] si c&#x27;est ainsi, qu&#x27;elle soit donc invalidee par le yotse dofen (l&#x27;animal ne par cesarienne) ! Pourquoi alors a-t-on enseigne « elle est invalide par yotse dofen, et Rabbi Chimon la declare valide » ? Mais [repond-elle] la para est differente : puisque le mum (le defaut corporel) l&#x27;invalide, la debauche et l&#x27;idolatrie l&#x27;invalident aussi. Et Rachi explique que pour les Sages elle releve des kodchei mizbeah -- et c&#x27;est pourquoi elle est invalidee par la revi&#x27;a et par le yotse dofen --, tandis que pour Rabbi Chimon elle releve des kodchei bedek habayit et n&#x27;est donc pas invalidee par le yotse dofen ; et si Rabbi Chimon concede qu&#x27;elle est invalidee par la revi&#x27;a, c&#x27;est parce que, des lors que le mum l&#x27;invalide, la debauche et l&#x27;idolatrie l&#x27;invalident. Or cette explication fait difficulte : s&#x27;il en etait ainsi, toutes les affirmations anonymes du Talmud, en plusieurs endroits, qui disent « la para releve des kodchei bedek habayit », suivraient Rabbi Chimon et non les Sages. C&#x27;est explique la-bas ; et au premier chapitre de Houlin (11a, s.v. hatat), dans la sougya « d&#x27;ou tient-on que l&#x27;on suit la majorite ? », je me suis etendu la-dessus.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse en deux temps. D'abord la regle generale : la <b>chehita</b> n'est pas comptee parmi les <b>avodot</b>, les services sacrificiels reserves aux kohanim -- elle est valide meme faite par un non-kohen, une femme, un esclave, un impur. Or le mot <b>houka</b> ne verrouille que ce qui est service : comme dit Rachi, « la houka ne porte pas sur l'abattage ». Le taureau est donc valide malgre Aharon et houka.</p><p>Mais alors la para devrait l'etre aussi, par le meme argument. D'ou la distinction : la para releve des <b>kodchei bedek habayit</b>. Rachi explique la portee de cette qualification : elle n'a pas de saintete d'autel mais une simple <b>kedouchat damim</b> (saintete de valeur) -- la preuve, son abattage a lieu sur le mont des Oliviers et non au Temple. Des lors on ne peut pas y distinguer des categories d'actes : il n'y a pas, en elle, de partage entre ce qui serait avoda et ce qui ne le serait pas. Tous ses actes sont sur un meme plan, et la houka les frappe tous, l'abattage compris.</p><p>Tossefot consacre a ce passage une longue discussion : d'ou sait-on que la chehita n'est pas une avoda ? De ce qu'elle est valide par un zar (Rachi) -- mais l'argument tourne en rond ; de ce qu'elle a cours meme sur des betes profanes (Rabbenou Yaakov d'Orleans) ; ou de la position du corps, puisque le receveur du sang doit se tenir a l'interieur et au nord alors que l'abatteur n'y est pas tenu (Rabbenou Chimchon).</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 330" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="330" fill="#fffdf8"/>
+  <text x="350" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Pourquoi houka n'invalide pas partout : la chaine de l'argument</text>
+  <rect x="150" y="44" width="400" height="40" rx="6" fill="#f5f5f4" stroke="#a8a29e"/>
+  <text x="350" y="60" text-anchor="middle" font-size="10.6" fill="#44403c">Regle : houka = ikouva -- l'exigence est indispensable</text>
+  <text x="350" y="76" text-anchor="middle" font-size="10.6" font-weight="700" fill="#292524">mais elle ne verrouille que ce qui est une avoda</text>
+  <line x1="350" y1="84" x2="350" y2="106" stroke="#a8a29e" stroke-width="1.4"/>
+  <rect x="150" y="106" width="400" height="36" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="350" y="129" text-anchor="middle" font-size="11.4" font-weight="700" fill="#5b21b6">chehita lav avoda hi -- l'abattage n'est pas un service</text>
+  <line x1="350" y1="142" x2="350" y2="160" stroke="#a8a29e" stroke-width="1.4"/>
+  <line x1="180" y1="160" x2="520" y2="160" stroke="#a8a29e" stroke-width="1.4"/>
+  <line x1="180" y1="160" x2="180" y2="180" stroke="#a8a29e" stroke-width="1.4"/>
+  <line x1="520" y1="160" x2="520" y2="180" stroke="#a8a29e" stroke-width="1.4"/>
+  <rect x="40" y="180" width="280" height="118" rx="7" fill="#dcfce7" stroke="#16a34a" stroke-width="1.6"/>
+  <text x="180" y="203" text-anchor="middle" font-size="11.6" font-weight="700" fill="#166534">PARO -- le taureau</text>
+  <text x="180" y="224" text-anchor="middle" font-size="9.8" fill="#15803d">saintete d'autel : les actes s'y distinguent</text>
+  <text x="180" y="241" text-anchor="middle" font-size="9.8" fill="#15803d">certains sont avoda, d'autres non</text>
+  <text x="180" y="262" text-anchor="middle" font-size="9.8" fill="#15803d">la chehita tombe hors du verrou</text>
+  <text x="180" y="286" text-anchor="middle" font-size="12.4" font-weight="700" fill="#166534">KACHER par un zar</text>
+  <rect x="380" y="180" width="280" height="118" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="520" y="203" text-anchor="middle" font-size="11.6" font-weight="700" fill="#991b1b">PARA -- la vache rousse</text>
+  <text x="520" y="224" text-anchor="middle" font-size="9.8" fill="#b91c1c">kodchei bedek habayit : kedouchat damim</text>
+  <text x="520" y="241" text-anchor="middle" font-size="9.8" fill="#b91c1c">egorgee hors du Temple, sur le mont</text>
+  <text x="520" y="262" text-anchor="middle" font-size="9.8" fill="#b91c1c">aucun partage entre les actes -- tous egaux</text>
+  <text x="520" y="286" text-anchor="middle" font-size="12.4" font-weight="700" fill="#991b1b">PASSOUL par un zar</text>
+</svg></div><div class="svg-cap">Le paradoxe assume par Rav : c&#x27;est la moindre saintete de la para qui la rend plus severe. Faute de hierarchie interne entre ses actes, la houka les verrouille tous.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְלָאו כָּל דְּכֵן הוּא? אָמַר רַב שִׁישָׁא בְּרֵיהּ דְּרַב אִידִי: מִידֵּי דְּהָוֵה אַמַּרְאוֹת נְגָעִים, דְּלָאו עֲבוֹדָה הִיא וּבָעֲיָא כְּהֻונָּה.</div>
+            <div class="fr"><p>Mais n&#x27;est-ce pas un a fortiori (kal va-homer) ? Rav Chicha fils de Rav Idi dit : il en va comme des apparences des nega&#x27;im (les plaies de tsara&#x27;at), qui ne sont pas un service et exigent pourtant la kehouna.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְלֹא כֵּן דְּכֵן הוּא</b> בִּתְמִיהַּ אַשְּׁחִיטַת פָּרוֹ דִּקְדֻושַּׁת הַגּוּף הִיא לָא כְּתִיבָא חֻוקָּה וְאַשְּׁחִיטַת פָּרָה כְּתִיבָה חֻוקָּה וּמִיפַּסְלָא בְּזָר:</div>
+          <div class="glose-fr">« Et n&#x27;est-ce pas un a fortiori ? » - sur un ton d&#x27;etonnement : sur l&#x27;abattage de son taureau, qui possede une saintete de corps (kedouchat haguf), la houka ne serait pas ecrite, tandis que sur l&#x27;abattage de la para elle serait ecrite et l&#x27;invaliderait par un zar ?!</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַמַּרְאוֹת נְגָעִים</b> דִּכְתִיב (וַיִּקְרָא י״ג:ב׳) (כְּנֶגַע נִרְאֶה) וְהוּבָא אֶל אַהֲרֹן הַכֹּהֵן:</div>
+          <div class="glose-fr">Comme les apparences des nega&#x27;im - car il est ecrit (Levitique 13,2) « [comme une plaie apparait] on l&#x27;amenera a Aharon le kohen ».</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection de bon sens contre la distinction precedente. Rachi la formule sur le ton de l'etonnement : le taureau du kohen gadol possede une <b>kedouchat haguf</b>, une saintete de corps, il est une offrande veritable -- et pourtant la houka n'y verrouillerait pas l'abattage. La para, simple bien consacre a l'entretien du Temple, y serait au contraire verrouillee et invalidee par un zar ? La hierarchie des saintetes se trouve inversee.</p><p>Rav Chicha fils de Rav Idi refuse le a fortiori en produisant un contre-exemple qui brise le lien suppose entre <b>avoda</b> et <b>kehouna</b> : les <b>mar'ot nega'im</b>, l'examen des plaies de tsara'at. Declarer une plaie pure ou impure n'est en rien un service sacrificiel -- et pourtant le verset exige un kohen : « on l'amenera a Aharon le kohen » (Levitique 13,2). Preuve qu'un acte peut requerir la kehouna sans etre une avoda : le kal va-homer ne tient pas.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְלִשְׁמוּאֵל, דְּאָמַר פָּרוֹ פְּסוּלָה, מַאי שְׁנָא פָּרוֹ — דִּכְתִיב: ״אַהֲרֹן״ וְ״חֻוקָּה״, פָּרָה נָמֵי — הָא כְתִיב: ״אֶלְעָזָר״ וּ״חֻוקָּה״? שָׁאנֵי הָתָם, דִּכְתִיב: ״וְשָׁחַט אוֹתָהּ לְפָנָיו״, שֶׁיְּהֵא זָר שׁוֹחֵט וְאֶלְעָזָר רוֹאֶה.</div>
+            <div class="fr"><p>Et selon Chmouel, qui dit que son taureau est invalide : en quoi son taureau est-il different, parce qu&#x27;il y est ecrit « Aharon » et « houka » ? Mais la para aussi -- n&#x27;y est-il pas ecrit « Elazar » et « houka » ?</p><p>La-bas c&#x27;est different, car il est ecrit « il l&#x27;egorgera devant lui » (Nombres 19,3) : qu&#x27;un zar egorge et qu&#x27;Elazar regarde.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְשָׁחַט אוֹתָהּ לְפָנָיו</b> מִדִּכְתִיב לְפָנָיו מִכְּלָל דְּהַשְּׁחִיטָה לָאו אַאֶלְעָזָר קָאֵי אֶלָּא וְשָׁחַט אוֹתָהּ אַחֵר לִפְנֵי אֶלְעָזָר:</div>
+          <div class="glose-fr">« Il l&#x27;egorgera devant lui » - du fait qu&#x27;il est ecrit « devant lui », il ressort que l&#x27;abattage ne se rapporte pas a Elazar, mais qu&#x27;un autre l&#x27;egorgera devant Elazar.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara instruit maintenant l'autre branche, symetriquement. Chmouel doit expliquer pourquoi le couple « Aharon + houka » invalide l'abattage du taureau alors que le couple « Elazar + houka », de meme forme, n'invalide pas celui de la para.</p><p>La reponse tient a un mot du verset : <b>ve-chahat otah lefanav</b>, « il l'egorgera <em>devant lui</em> ». Rachi degage l'inference : si l'egorgement se faisait par Elazar lui-meme, la precision « devant lui » n'aurait aucun sens. C'est donc qu'un <b>autre</b> egorge, et qu'Elazar se tient devant lui a regarder. Le verset qui nomme Elazar est aussi celui qui l'ecarte de l'acte : il le fait passer de l'acteur au temoin.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַב: שֶׁלֹּא יַסִּיחַ דַּעְתּוֹ מִמֶּנָּה. וּשְׁמוּאֵל, שֶׁלֹּא יַסִּיחַ דַּעְתּוֹ מְנָא לֵיהּ? נָפְקָא לֵיהּ: מִ״וְשָׂרַף אֶת הַפָּרָה לְעֵינָיו״.</div>
+            <div class="fr"><p>Et Rav ? [Il lit « devant lui » :] qu&#x27;il ne detourne pas son attention d&#x27;elle.</p><p>Et Chmouel, d&#x27;ou tire-t-il qu&#x27;il ne doit pas detourner son attention ? Il le tire de « il brulera la para sous ses yeux » (Nombres 19,5).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְרַב</b> לְעוֹלָם אֶלְעָזָר שְׁחָטָהּ וּמַאי לְפָנָיו שֶׁלֹּא יַסִּיחַ דַּעְתּוֹ מִשְּׁמִירָתָהּ:</div>
+          <div class="glose-fr">Et Rav - en verite c&#x27;est Elazar qui l&#x27;a egorgee ; et que signifie alors « devant lui » ? Qu&#x27;il ne detourne pas son attention de sa garde.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara redistribue le meme mot entre les deux maitres. Pour <b>Rav</b>, Elazar egorge bel et bien lui-meme, et « devant lui » n'exclut personne : il enseigne une exigence d'attention. Rachi precise l'objet de cette attention : qu'il ne detourne pas sa pensee de la <b>chemira</b>, de la garde de la vache. C'est le principe du <b>hessah hadaat</b> -- le detournement de l'attention -- qui invalide le rite de la para, comme il invalide d'autres domaines de purete.</p><p>Mais alors <b>Chmouel</b>, qui a deja depense « devant lui » pour autoriser le zar, d'ou tire-t-il le hessah hadaat ? D'un second mot du meme passage : <b>le-einav</b>, « il brulera la para <em>sous ses yeux</em> » (Nombres 19,5). Chacun a donc son verset -- mais Chmouel n'en a qu'un, tandis que Rav en a deux disponibles.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַב: חַד בִּשְׁחִיטָה וְחַד בִּשְׂרֵיפָה.</div>
+            <div class="fr"><p>Et Rav : l&#x27;un [des deux versets vaut] pour l&#x27;abattage et l&#x27;autre pour la combustion.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse breve mais decisive : chez Rav, les deux mots ne font pas doublon. <b>Le-fanav</b>, ecrit a propos de l'egorgement, impose l'attention pendant la <b>chehita</b> ; <b>le-einav</b>, ecrit a propos du bucher, l'impose pendant la <b>serifa</b> (la combustion). Le hessah hadaat est ainsi ancre a deux moments distincts du rite -- et le segment suivant va montrer qu'aucun des deux versets n'aurait pu se deduire de l'autre.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּצְרִיכָא, דְּאִי כְּתַב רַחֲמָנָא בִּשְׁחִיטָה — מִשּׁוּם דִּתְחִילַּת עֲבוֹדָה הִיא, אֲבָל שְׂרֵיפָה — אֵימָא לָא, צְרִיכָא. וְאִי כְּתַב רַחֲמָנָא בִּשְׂרֵיפָה — מִשּׁוּם דְּהַשְׁתָּא הוּא דְּמִתַּכְשְׁרָא פָּרָה, אֲבָל שְׁחִיטָה — אֵימָא לָא, צְרִיכָא.</div>
+            <div class="fr"><p>Et les deux sont necessaires (tsricha) : car si la Torah ne l&#x27;avait ecrit qu&#x27;a propos de l&#x27;abattage, [j&#x27;aurais dit que c&#x27;est] parce qu&#x27;il est le debut du service, mais pour la combustion j&#x27;aurais dit que non -- il fallait donc [l&#x27;ecrire]. Et si la Torah ne l&#x27;avait ecrit qu&#x27;a propos de la combustion, [j&#x27;aurais dit que c&#x27;est] parce que c&#x27;est alors que la para devient apte, mais pour l&#x27;abattage j&#x27;aurais dit que non -- il fallait donc [l&#x27;ecrire].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּהַשְׁתָּא הוּא דְּמִתַּכְשְׁרָא פָּרָה</b> שֶׁהֲרֵי כָּל עַצְמָהּ אֵינָהּ עֲשׂוּיָה אֶלָּא לְאֶפְרָהּ:</div>
+          <div class="glose-fr">C&#x27;est alors que la para devient apte - car toute son existence n&#x27;est ordonnee qu&#x27;a sa cendre.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Structure classique de la <b>tsricha</b> : on montre qu'aucun des deux versets ne se deduit de l'autre, parce que chacun porte une particularite que l'autre n'a pas.</p><p>L'abattage a pour lui d'etre la <b>tehilat avoda</b>, le commencement du service : on pourrait croire que la rigueur de l'attention ne s'attache qu'a l'ouverture du rite. La combustion a pour elle un autre titre : c'est a ce moment que la para devient reellement apte. Rachi le formule d'un mot -- <b>toute son existence n'est ordonnee qu'a sa cendre</b> : la vache n'a pas d'autre finalite que de produire l'<em>efer</em>, cette cendre qui, melangee a l'eau, purifiera. Le moment ou elle brule est donc le moment ou elle atteint son but.</p><p>Deux titres a la rigueur, incomparables entre eux : il fallait donc deux versets.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 290" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="290" fill="#fffdf8"/>
+  <text x="350" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">La tsricha : pourquoi aucun des deux versets ne suffit</text>
+  <rect x="40" y="46" width="290" height="96" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="185" y="70" text-anchor="middle" font-size="11.6" font-weight="700" fill="#92400e">SI SEULE LA CHEHITA</text>
+  <text x="185" y="92" text-anchor="middle" font-size="9.8" fill="#a16207">j'aurais dit : c'est parce qu'elle est</text>
+  <text x="185" y="108" text-anchor="middle" font-size="9.8" fill="#a16207">tehilat avoda, le debut du service</text>
+  <text x="185" y="130" text-anchor="middle" font-size="10.4" font-weight="700" fill="#b45309">et la serifa ? j'aurais dit : non</text>
+  <rect x="370" y="46" width="290" height="96" rx="7" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="515" y="70" text-anchor="middle" font-size="11.6" font-weight="700" fill="#075985">SI SEULE LA SERIFA</text>
+  <text x="515" y="92" text-anchor="middle" font-size="9.8" fill="#0c4a6e">j'aurais dit : c'est parce que c'est alors</text>
+  <text x="515" y="108" text-anchor="middle" font-size="9.8" fill="#0c4a6e">que la para devient apte -- sa cendre</text>
+  <text x="515" y="130" text-anchor="middle" font-size="10.4" font-weight="700" fill="#0369a1">et la chehita ? j'aurais dit : non</text>
+  <line x1="185" y1="142" x2="185" y2="168" stroke="#a8a29e" stroke-width="1.4"/>
+  <line x1="515" y1="142" x2="515" y2="168" stroke="#a8a29e" stroke-width="1.4"/>
+  <line x1="185" y1="168" x2="515" y2="168" stroke="#a8a29e" stroke-width="1.4"/>
+  <line x1="350" y1="168" x2="350" y2="190" stroke="#a8a29e" stroke-width="1.4"/>
+  <rect x="140" y="190" width="420" height="44" rx="7" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.6"/>
+  <text x="350" y="218" text-anchor="middle" font-size="12.4" font-weight="700" fill="#5b21b6">tsricha -- il fallait les deux versets</text>
+  <rect x="80" y="248" width="540" height="30" rx="6" fill="#fff7ed" stroke="#ea580c" stroke-width="1.3"/>
+  <text x="350" y="268" text-anchor="middle" font-size="10" fill="#9a3412">Consequence : puisque deux actes seulement sont vises, il y en a d'autres qui ne le sont pas -- le-ma'ote mai ?</text>
+</svg></div><div class="svg-cap">Les deux branches de la tsricha : chaque acte porte un titre de rigueur que l&#x27;autre n&#x27;a pas, si bien qu&#x27;aucun ne se deduit de l&#x27;autre.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לִמְעוּטֵי מַאי? אִילֵּימָא לְמַעוֹטֵי אֲסִיפַת אֶפְרָהּ וּמִילּוּי מַיִם לְקִידּוּשׁ,</div>
+            <div class="fr"><p>Pour exclure quoi ? Si l&#x27;on dit : pour exclure le ramassage de sa cendre et le puisage de l&#x27;eau en vue du kidouch,</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לִמְעוּטֵי מַאי</b> דְּלָא פְּסִיל בָּהּ הֶיסַּח הַדַּעַת בְּמַעֲשֵׂה פָּרָה:</div>
+          <div class="glose-fr">Pour exclure quoi - c&#x27;est-a-dire : quel est, dans le rite de la para, l&#x27;acte ou le hessah hadaat n&#x27;invalide pas ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲסִיפַת אֶפְרָהּ</b> וְאָסַף אִישׁ טָהוֹר וְגוֹ&#x27; (בַּמִּדְבָּר י״ט:ט׳):</div>
+          <div class="glose-fr">Le ramassage de sa cendre - « un homme pur ramassera etc. » (Nombres 19,9).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמִילּוּי מַיִם</b> לָתֵת לְתוֹךְ אֵפֶר לְהַזּוֹת:</div>
+          <div class="glose-fr">Et le puisage de l&#x27;eau - pour la verser sur la cendre afin de faire l&#x27;aspersion.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְקִידּוּשׁ</b> הִיא נְתִינַת מַיִם עַל הָאֵפֶר וּמְעָרְבָן יַחַד:</div>
+          <div class="glose-fr">En vue du kidouch - c&#x27;est le fait de verser l&#x27;eau sur la cendre et de les melanger ensemble.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְמַעוֹטֵי מַאי אִילֵּימָא לְמַעוֹטֵי אֲסִיפַת אֶפְרָהּ כּוּ&#x27;</b> תֵּימַהּ לִי מַאי קָאָמַר לִמְעוּטֵי מַאי וְכִי חוֹבָה הוּא שֶׁיֵּשׁ לִי לְמַעֵט וְלֵיכָּא לְמֵימַר מִשּׁוּם דְּהָוֵי שְׁחִיטָה וּשְׂרֵיפָה שְׁנֵי כְּתוּבִים הַבָּאִים כְּאֶחָד וְאֵין מְלַמְּדִין דְּאַדְּרַבָּה אֵינָן בָּאִין כְּאֶחָד דְּהָא מִיצְרָךְ צְרִיכִי וְנִרְאֶה דע&quot;כ הֶיסַּח הַדַּעַת לָא פְּסִיל בְּכוּלְּהוּ דְּאִי פְּסִיל בְּכוּלְּהוּ מַאי אִיצְטְרִיךְ לְמִיכְתַּב בִּשְׁחִיטָה וּבִשְׂרֵיפָה דְּלָא אָתוּ מְהֻדְּדֵי לִיכְתְּבֵיהּ גַּבֵּי אֲסִיפַת אֶפְרָהּ אוֹ מִילּוּי מֵימֶיהָ אוֹ בְּאַחַת מִן הַשְּׁאָר שֶׁאֵינָן תְּחִילַּת עֲבוֹדָה וְלֹא עֲבוֹדָה דְּהַשְׁתָּא הוּא דְּמִתְכַּשְּׁרָהּ פָּרָה וְנִיְתּוֹ כֻּולְּהוּ וְנִיגְמַר מִינָּהּ לְמַאי הִילְכְתָא כַּתְבֵיהּ בָּתַרְתִּי שֶׁיֵּשׁ בְּכָל חֲדָא מִילְּתָא דַּחֲשִׁיבוּתָא אֶלָּא שְׁמַע מִינָּה לִמְעוּטֵי עֲבוֹדָה שֶׁאֵין לָהּ שׁוּם חֲשִׁיבוּתָא דְּלָא פָּסַל בָּהּ הֶיסַּח הַדַּעַת וְהַייְנוּ דְּקָאָמַר לִמְעוּטֵי מַאי:</div>
+          <div class="glose-fr">« Pour exclure quoi ? Si l&#x27;on dit : pour exclure le ramassage de sa cendre etc. » - cela m&#x27;etonne : que veut dire « pour exclure quoi » ? Est-ce une obligation qu&#x27;il y ait quelque chose a exclure ? Et l&#x27;on ne peut pas dire que ce serait parce que l&#x27;abattage et la combustion seraient « deux textes venus pour une meme chose » (chenei ketouvim haba&#x27;im ke-ehad), qui n&#x27;enseignent pas [par extension] -- car au contraire ils ne viennent pas pour une meme chose, puisque la guemara vient d&#x27;etablir que les deux sont necessaires. Il apparait plutot que necessairement le hessah hadaat n&#x27;invalide pas dans tous les actes : car s&#x27;il invalidait dans tous, pourquoi aurait-il fallu l&#x27;ecrire a la fois pour l&#x27;abattage et pour la combustion, qui ne se deduisent pas l&#x27;un de l&#x27;autre ? Qu&#x27;on l&#x27;ecrive donc pour le ramassage de sa cendre, ou pour le puisage de son eau, ou pour l&#x27;un des autres actes qui ne sont ni « le debut du service » ni « le moment ou la para devient apte » -- et tous se deduiraient de la ! A quoi bon l&#x27;ecrire deux fois, chaque fois sur un acte qui possede une importance particuliere ? Il faut donc en conclure que c&#x27;est pour exclure un acte depourvu de toute importance, ou le hessah hadaat n&#x27;invalide pas. Et c&#x27;est justement ce que demande la guemara : « pour exclure quoi ? »</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Puisque le hessah hadaat est ecrit deux fois, pour deux actes precis, c'est qu'il ne vaut pas partout : la guemara demande donc ce que cette limitation <b>exclut</b>. Rachi reformule la question : quel est, dans le rite de la para, l'acte ou le detournement de l'attention n'invalide pas ?</p><p>Premiere hypothese, aussitot avancee : les deux actes qui suivent la combustion. Le <b>ramassage de la cendre</b> -- « un homme pur ramassera la cendre de la vache » (Nombres 19,9) -- et le <b>puisage de l'eau</b> destinee au <b>kidouch</b>. Rachi definit ce dernier terme : le kidouch est le fait de verser l'eau vive sur la cendre et de les melanger ensemble, l'operation qui produit les <em>me hatat</em>, les eaux lustrales de l'aspersion. Le daf s'interrompt sur cette proposition ; sa refutation se lira en 42b.</p><p>Tossefot s'etonne d'abord de la question elle-meme -- rien n'oblige a ce qu'il y ait quelque chose a exclure -- puis la justifie : si le hessah hadaat invalidait tous les actes sans exception, il aurait suffi de l'ecrire une seule fois, a propos d'un acte quelconque et sans titre particulier, et tous s'en seraient deduits. Que la Torah l'ait ecrit deux fois, chaque fois pour un acte remarquable, prouve qu'un acte depourvu de tout titre reste hors de la regle.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 250" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="250" fill="#fffdf8"/>
+  <text x="370" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Les etapes du rite de la para : ou le hessah hadaat invalide-t-il ?</text>
+  <rect x="24" y="52" width="160" height="70" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="104" y="76" text-anchor="middle" font-size="11.4" font-weight="700" fill="#991b1b">CHEHITA</text>
+  <text x="104" y="95" text-anchor="middle" font-size="9.4" fill="#b91c1c">le-fanav (19,3)</text>
+  <text x="104" y="112" text-anchor="middle" font-size="9.4" font-weight="700" fill="#991b1b">invalide -- ecrit</text>
+  <path d="M188 87 L212 87" stroke="#a8a29e" stroke-width="1.6"/>
+  <path d="M206 82 L214 87 L206 92 Z" fill="#a8a29e"/>
+  <rect x="216" y="52" width="160" height="70" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.7"/>
+  <text x="296" y="76" text-anchor="middle" font-size="11.4" font-weight="700" fill="#991b1b">SERIFA</text>
+  <text x="296" y="95" text-anchor="middle" font-size="9.4" fill="#b91c1c">le-einav (19,5)</text>
+  <text x="296" y="112" text-anchor="middle" font-size="9.4" font-weight="700" fill="#991b1b">invalide -- ecrit</text>
+  <path d="M380 87 L404 87" stroke="#a8a29e" stroke-width="1.6"/>
+  <path d="M398 82 L406 87 L398 92 Z" fill="#a8a29e"/>
+  <rect x="408" y="52" width="150" height="70" rx="7" fill="#f5f5f4" stroke="#a8a29e" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="483" y="76" text-anchor="middle" font-size="11.4" font-weight="700" fill="#44403c">ASSIFAT EFER</text>
+  <text x="483" y="95" text-anchor="middle" font-size="9.4" fill="#57534e">ramassage de la cendre</text>
+  <text x="483" y="112" text-anchor="middle" font-size="9.4" font-weight="700" fill="#78716c">exclu ?</text>
+  <path d="M562 87 L586 87" stroke="#a8a29e" stroke-width="1.6"/>
+  <path d="M580 82 L588 87 L580 92 Z" fill="#a8a29e"/>
+  <rect x="590" y="52" width="126" height="70" rx="7" fill="#f5f5f4" stroke="#a8a29e" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="653" y="76" text-anchor="middle" font-size="11.4" font-weight="700" fill="#44403c">MILOUI MAYIM</text>
+  <text x="653" y="95" text-anchor="middle" font-size="9.4" fill="#57534e">puisage pour le kidouch</text>
+  <text x="653" y="112" text-anchor="middle" font-size="9.4" font-weight="700" fill="#78716c">exclu ?</text>
+  <rect x="24" y="142" width="692" height="42" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.3"/>
+  <text x="370" y="160" text-anchor="middle" font-size="10.4" font-weight="700" fill="#075985">Kidouch = verser l'eau vive sur la cendre et melanger -- on obtient les me hatat, les eaux de l'aspersion</text>
+  <text x="370" y="176" text-anchor="middle" font-size="9.6" fill="#0c4a6e">Rachi : c'est la nettinat mayim al ha-efer, l'operation qui rend la cendre agissante</text>
+  <rect x="24" y="196" width="692" height="40" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.3"/>
+  <text x="370" y="214" text-anchor="middle" font-size="10" font-weight="700" fill="#5b21b6">Tossefot : s'il invalidait partout, un seul verset sur un acte quelconque aurait suffi et tout s'en deduirait</text>
+  <text x="370" y="230" text-anchor="middle" font-size="9.6" fill="#6d28d9">Deux ecritures, chacune sur un acte remarquable : donc un acte sans titre particulier reste hors de la regle</text>
+</svg></div><div class="svg-cap">La chaine du rite et la question ouverte : les deux actes verrouilles par un verset, et les deux candidats a l&#x27;exclusion sur lesquels le daf s&#x27;interrompt.</div></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_41b.html">&lsaquo; Yoma 41b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

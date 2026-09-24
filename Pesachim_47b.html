@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pesachim 47b — Le hoil, le sillon, et les cinq coups</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Pesachim 47b — Le hoil, le sillon, et les cinq coups</h1>
+    <div class="ref">Pesachim 47b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Pesachim_47a.html">&lsaquo; Pesachim 47a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Pesachim_48a.html">Pesachim 48a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> L&#x27;amoud poursuit la question de Rav Hisda a Rabba : dit-on le hoil (puisque) ? La michna du sillon unique continue : chevi&#x27;it, Yom Tov, cohen et nazir sur un lieu d&#x27;impurete.</p><p>Si le hoil vaut, les coups du labour de Yom Tov tomberaient, puisque la terre peut couvrir le sang d&#x27;un oiseau. La Guemara serre le cas jusqu&#x27;a la metounta, terre humide qui se seme et ne donne pas de poussiere.</p><p>Abaye objecte par les cinq series de coups de celui qui cuit le gid ha-nache dans du lait a Yom Tov. Rabba retire l&#x27;embrasement et met les bois de mouktse, qu&#x27;il tient pour un interdit de la Torah.</p><p>Abaye reprend alors une question de Rabba : un agneau de prairie, egorge en tamid le jour de Yom Tov.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 300" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="300" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Un sillon, la suite des interdits</text>
+<text x="370" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#6b6255">Deja comptes au daf precedent : boeuf et ane, animaux consacres, kilaim dans la vigne.</text>
+<rect x="16" y="64" width="170" height="118" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="101" y="90" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">Chevi'it</text>
+<text x="101" y="114" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Ton champ,</text>
+<text x="101" y="132" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">tu ne le semeras pas</text>
+<text x="101" y="156" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#6b6255">Labour qui recouvre</text>
+<rect x="198" y="64" width="170" height="118" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="283" y="90" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Yom Tov</text>
+<text x="283" y="114" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Travail du jour</text>
+<text x="283" y="140" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#8a4b3a">Cible du hoil</text>
+<text x="283" y="158" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#8a4b3a">sur cet amoud</text>
+<rect x="380" y="64" width="170" height="118" rx="4" fill="#eef3f7" stroke="#5d7385"/>
+<text x="465" y="90" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5566">Cohen</text>
+<text x="465" y="114" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Cimetiere</text>
+<text x="465" y="132" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Il ne se rend pas impur</text>
+<rect x="562" y="64" width="162" height="118" rx="4" fill="#eef3f7" stroke="#5d7385"/>
+<text x="643" y="90" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5566">Nazir</text>
+<text x="643" y="114" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Meme lieu</text>
+<text x="643" y="132" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Il n'entre pas</text>
+<text x="643" y="150" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">sur une ame morte</text>
+<rect x="16" y="200" width="708" height="80" rx="4" fill="#eef4ee" stroke="#6f8a6f"/>
+<text x="370" y="226" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Hoil de Rabba</text>
+<text x="370" y="248" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">La terre ameublie peut couvrir le sang d'un oiseau ou d'une bete sauvage.</text>
+<text x="370" y="268" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Kisui ha-dam. Alors les coups du labour de Yom Tov ne tiendraient plus.</text>
+</svg></div>
+          <figcaption>Quatre interdits ajoutes au sillon. Le hoil de Rabba vise les coups du labour de Yom Tov.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 420" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="420" fill="#fbfaf7"/>
+<text x="370" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Quelle terre echappe au hoil ?</text>
+<text x="370" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#6b6255">Elle doit convenir au semis. Elle ne doit pas pouvoir couvrir le sang.</text>
+<rect x="16" y="60" width="230" height="72" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="131" y="86" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#8a4b3a">1. Pierres mekorzelot</text>
+<text x="131" y="108" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Rav Papa bar Chmouel</text>
+<text x="131" y="124" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Impropres a couvrir</text>
+<rect x="262" y="60" width="230" height="72" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="377" y="86" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#6b5344">2. On peut ecraser</text>
+<text x="377" y="108" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Ecraser a Yom Tov ?</text>
+<text x="377" y="124" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Kela'har yad : chevout</text>
+<rect x="494" y="60" width="230" height="72" rx="4" fill="#eef3f7" stroke="#5d7385"/>
+<text x="609" y="86" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#3d5566">3. Tsounma</text>
+<text x="609" y="108" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Roche qu'on n'ecrase pas</text>
+<text x="609" y="124" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Le hoil s'arrete</text>
+<line x1="609" y1="132" x2="609" y2="156" stroke="#8a7b63" stroke-width="1.5"/>
+<rect x="380" y="156" width="344" height="88" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="552" y="180" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#8a4b3a">4. Roche dessus, meuble dessous</text>
+<text x="552" y="202" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">La tsounma ne se seme pas seule</text>
+<text x="552" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#8a4b3a">La terre meuble ramene le hoil</text>
+<rect x="16" y="156" width="348" height="88" rx="4" fill="#eef4ee" stroke="#6f8a6f"/>
+<text x="190" y="180" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2f5c2f">5. Metounta</text>
+<text x="190" y="202" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Mar bar Rav Achi</text>
+<text x="190" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2f5c2f">Humide : semis oui, poussiere non</text>
+<rect x="16" y="264" width="708" height="136" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="370" y="290" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">Pourquoi la metounta tient</text>
+<text x="190" y="322" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Semis</text>
+<text x="190" y="342" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Terre humide</text>
+<text x="190" y="360" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">propre a la semence</text>
+<text x="370" y="322" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Ecrasement</text>
+<text x="370" y="342" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Elle colle</text>
+<text x="370" y="360" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">elle se petrit</text>
+<text x="560" y="322" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Kisui ha-dam</text>
+<text x="560" y="342" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Pas de poussiere</text>
+<text x="560" y="360" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">le hoil ne part pas</text>
+<text x="370" y="388" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#6b5344">Les coups du labour de Yom Tov restent, dans ce cas.</text>
+</svg></div>
+          <figcaption>De la pierre a la metounta : la terre doit se semer, et ne pas couvrir le sang.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 400" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="400" fill="#fbfaf7"/>
+<text x="370" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Gid ha-nache cuit dans du lait, a Yom Tov</text>
+<text x="370" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#6b6255">Cinq series de coups. Le hoil vise seulement la cinquieme.</text>
+<rect x="16" y="60" width="136" height="78" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="84" y="86" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" fill="#8a4b3a">1. Cuire le gid</text>
+<text x="84" y="106" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#5c5348">a Yom Tov</text>
+<text x="84" y="122" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#6b6255">cuisson non propre</text>
+<rect x="160" y="60" width="136" height="78" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="228" y="86" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" fill="#6b5344">2. Manger le gid</text>
+<text x="228" y="110" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#5c5348">interdit propre</text>
+<rect x="304" y="60" width="136" height="78" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="372" y="82" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" fill="#8a4b3a">3. Cuire</text>
+<text x="372" y="100" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" fill="#8a4b3a">viande et lait</text>
+<text x="372" y="120" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#6b6255">meme en semaine</text>
+<rect x="448" y="60" width="136" height="78" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="516" y="82" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" fill="#6b5344">4. Manger</text>
+<text x="516" y="100" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" fill="#6b5344">viande et lait</text>
+<rect x="592" y="60" width="132" height="78" rx="4" fill="#eef3f7" stroke="#5d7385"/>
+<text x="658" y="86" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" fill="#3d5566">5. Hav'ara</text>
+<text x="658" y="106" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#5c5348">embrasement</text>
+<text x="658" y="122" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#5c5348">travail a part</text>
+<rect x="16" y="156" width="708" height="52" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="370" y="178" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#8a4b3a">Hoil d'Abaye : le feu lui sert pour un besoin licite.</text>
+<text x="370" y="196" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#8a4b3a">Les coups de l'embrasement tomberaient.</text>
+<rect x="16" y="224" width="348" height="100" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="190" y="248" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#6b5344">Essai : gid de neveila</text>
+<text x="190" y="270" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Coups pour la bete morte</text>
+<text x="190" y="290" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#8a4b3a">Rabbi Hiya : 2 a la bouche</text>
+<text x="190" y="308" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#8a4b3a">3 a la cuisson. Compte bloque.</text>
+<rect x="376" y="224" width="348" height="100" rx="4" fill="#eef4ee" stroke="#6f8a6f"/>
+<text x="550" y="248" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2f5c2f">Retenu : bois de mouktse</text>
+<text x="550" y="270" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Feu interdit de la Torah</text>
+<text x="550" y="290" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">ve-hekhineu, puis lo ta'ase</text>
+<text x="550" y="308" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2f5c2f">Le hoil ne part plus</text>
+<rect x="16" y="340" width="708" height="44" rx="4" fill="#eef3f7" stroke="#5d7385"/>
+<text x="370" y="366" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#3d5566">Suite d'Abaye : l'agneau de prairie offert en tamid. Le verset exclut bekhor, ma'asser, palgas.</text>
+</svg></div>
+          <figcaption>Cinq coups. L&#x27;embrasement tombe devant le hoil. Rabba met a sa place les bois de mouktse.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּשְׁבִיעִית, בְּיוֹם טוֹב, כֹּהֵן וְנָזִיר אַבֵּית הַטֻּומְאָה. וְאִי אָמְרִינַן ״הוֹאִיל״ — אַחֲרִישָׁה לָא לִיחַייַּב, הוֹאִיל וְחָזֵי לְכִיסּוּי דַּם צִיפּוֹר.</div>
+            <div class="fr"><p>Et la chevi&#x27;it, le jour de Yom Tov, un cohen et un nazir dans un lieu d&#x27;impurete. Et si nous disons hoil (puisque), pour le labour il ne serait pas passible, puisque c&#x27;est propre a couvrir le sang d&#x27;un oiseau.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּשְׁבִיעִית</b> דְּעוֹבֵר מִשּׁוּם שָׂדְךָ לֹא תִזְרַע וְחוֹרֵשׁ תּוֹלָדָה דְּזוֹרֵעַ כְּגוֹן חוֹרֵשׁ לְכַסּוֹת אֶת הַזְּרִיעָה:</div>
+          <div class="glose-fr">Car il transgresse a cause de : ton champ, tu ne le semeras pas. Et labourer est une toleda (travail derive) de semer, par exemple labourer pour couvrir la semence.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְכֹהֵן וְנָזִיר אַבֵּית הַטֻּומְאָה</b> שֶׁזֶּה בֵּית הַקְּבָרוֹת וְהוּא כֹּהֵן וְנָזִיר וְיֵשׁ כָּאן לָאו דְּכֹהֵן לְנֶפֶשׁ לֹא יִטַּמָּא וְלָאו דְּנָזִיר עַל נֶפֶשׁ מֵת לֹא יָבֹוא:</div>
+          <div class="glose-fr">Car c&#x27;est un cimetiere, et lui est cohen et nazir. Il y a ici l&#x27;interdit du cohen : pour un mort, il ne se rendra pas impur. Et l&#x27;interdit du nazir : sur une ame morte, il n&#x27;entrera pas.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַחֲרִישָׁה</b> מִשּׁוּם לָאו די&quot;ט לָא לִילְקֵי:</div>
+          <div class="glose-fr">Pour l&#x27;interdit de Yom Tov, il ne recevrait pas les coups.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דַּם צִפּוֹר</b> הוֹאִיל וְאִי מִזְדַּמְּנֵי לֵיהּ צִפֳּרִים וְחַיּוֹת טוּבָא:</div>
+          <div class="glose-fr">Puisque, s&#x27;il lui arrive beaucoup d&#x27;oiseaux et de betes sauvages.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּשְׁבִיעִית</b> לָמֶ&quot;ד בפ&quot;ק דְּמוֹעֵד קָטָן (דַּף ג.) חוֹרֵשׁ בַּשְּׁבִיעִית אֵינוֹ לוֹקֶה מוּקִי הַךְ דְּהָכָא בְּחוֹרֵשׁ וּמְחַפֶּה דִּמְחַפֶּה חַיָּיב מִשּׁוּם זוֹרֵעַ:</div>
+          <div class="glose-fr">Selon l&#x27;avis, au premier chapitre de Moed Katan (3a), que celui qui laboure pendant la chevi&#x27;it ne recoit pas les coups, on place ce cas-ci sur celui qui laboure et recouvre : celui qui recouvre est passible a titre de semeur.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַחֲרִישָׁה לָא לִיחַייַּב הוֹאִיל וְחָזֵי לְכִיסּוּי דַּם צִיפּוֹר</b> אִם הָיָה דַּם צִיפּוֹר בִּמְקוֹם חֲרִישָׁה ובכה&quot;ג שֶׁאִם הָיָה מְבַקֵּשׁ עָפָר אַחֵר יְנַגֵּב הַדָּם אוֹ יִטַּשְׁטֵשׁ ע&quot;י מַיִם וְלֹא יְקַיֵּים מִצְוַת כִּיסּוּי וְגַם מַייְרֵי שֶׁאֵין יָכוֹל לְקַפְּלוֹ וְלִיטְלוֹ דְּאִם לֹא כֵן לֹא שַׁיָּיךְ כָּאן דְּלִידְחֵי עֲשֵׂה לֹא תַעֲשֶׂה כִּדְאָמַר ר&quot;ל [בְּשַׁבָּת] (דַּף קלב.) כָּל מָקוֹם שֶׁאַתָּה מוֹצֵא עֲשֵׂה וְלֹא תַעֲשֶׂה אִם אַתָּה יָכוֹל לְקַיֵּים שְׁנֵיהֶם מוּטָב אִם לָאו יִדְחֶה עֲשֵׂה לֹא תַעֲשֶׂה:</div>
+          <div class="glose-fr">S&#x27;il y avait du sang d&#x27;oiseau a l&#x27;endroit du labour, et dans un cas tel que, s&#x27;il allait chercher une autre terre, le sang secherait, ou serait brouille par l&#x27;eau, et il n&#x27;accomplirait pas le commandement de couvrir. Et l&#x27;on parle aussi d&#x27;un cas ou il ne peut pas le plier et l&#x27;emporter. Sinon, il n&#x27;y aurait pas lieu ici qu&#x27;un asse (commandement positif) repousse un lo ta&#x27;asse (interdit), comme dit Reish Lakich (Chabbat 132a) : partout ou tu trouves un asse et un lo ta&#x27;asse, si tu peux accomplir les deux, c&#x27;est preferable ; sinon, l&#x27;asse repousse le lo ta&#x27;asse.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Suite de la michna du <b>sillon unique</b>. Quatre interdits de plus : <b>chevi'it</b>, <b>Yom Tov</b>, <b>cohen</b>, <b>nazir</b>, tous les deux sur une tombe. Rachi : le labour qui recouvre la semence est une <b>toleda</b> de semer, visee par ton champ, tu ne le semeras pas.</p><p>Le <b>hoil</b> de Rabba attaque les coups de Yom Tov. La terre du sillon peut servir au <b>kisui ha-dam</b>, le recouvrement du sang d'un oiseau ou d'une bete sauvage. Tossefot serre le cas : le sang seche ou se brouille s'il cherche de la terre ailleurs, et il ne peut pas l'emporter. Alors les deux devoirs ne se tiennent plus ensemble.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 150" xmlns="http://www.w3.org/2000/svg">
+<rect width="700" height="150" fill="#fbfaf7"/>
+<text x="350" y="22" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Le hoil sur le labour de Yom Tov</text>
+<rect x="16" y="40" width="150" height="64" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="91" y="66" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#6b5344">Sillon</text>
+<text x="91" y="86" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">terre ameublie</text>
+<rect x="190" y="40" width="170" height="64" rx="4" fill="#eef3f7" stroke="#5d7385"/>
+<text x="275" y="66" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#3d5566">Kisui ha-dam</text>
+<text x="275" y="86" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">oiseau, bete sauvage</text>
+<rect x="384" y="40" width="150" height="64" rx="4" fill="#eef4ee" stroke="#6f8a6f"/>
+<text x="459" y="66" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2f5c2f">Hoil</text>
+<text x="459" y="86" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">la terre sert</text>
+<rect x="558" y="40" width="126" height="64" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="621" y="66" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#8a4b3a">Coups</text>
+<text x="621" y="86" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">du labour ?</text>
+<line x1="166" y1="72" x2="190" y2="72" stroke="#8a7b63" stroke-width="1.5"/>
+<line x1="360" y1="72" x2="384" y2="72" stroke="#8a7b63" stroke-width="1.5"/>
+<line x1="534" y1="72" x2="558" y2="72" stroke="#8a7b63" stroke-width="1.5"/>
+<text x="350" y="130" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Cas serre par Tossefot : le sang seche ou se brouille s'il va chercher ailleurs.</text>
+</svg></div><div class="svg-cap">Terre du sillon, kisui ha-dam, hoil, coups du labour.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב פָּפָּא בַּר שְׁמוּאֵל: בַּאֲבָנִים מְקֻורְזָלוֹת.</div>
+            <div class="fr"><p>Rav Papa bar Chmouel dit : avec des pierres mekorzelot.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בַּאֲבָנִים</b> דְּלָא חֲזוּ לְכִיסּוּי:</div>
+          <div class="glose-fr">Qui ne sont pas propres a couvrir.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בַּאֲבָנִים מְקֻורְזָלוֹת</b> פִּי&#x27; רַכּוֹת שֶׁהֵן רְאוּיוֹת לִזְרִיעָה מִיהוּ לָא חֲזִי לְכִיסּוּי עַד שֶׁיִּכְתֹּושׁ וְגַבֵּי בֵּית הַכִּסֵּא נָמֵי לְפִי שֶׁהֵן רַכּוֹת רְאוּיוֹת יוֹתֵר לְקִינּוּחַ מִכְּשֶׁהֵן קָשִׁים וְלֹא כְּפֵ&quot;ה דְּפִי&#x27; הָתָם בְּפָ&#x27; כִּירָה (שַׁבָּת מג.) מְקֻורְזָלוֹת חֶדְוַת דְּהָכָא לָא א&quot;ש וְרַשִׁ&quot;י מְחָקוֹ כָּאן מִן הַסְּפָרִים:</div>
+          <div class="glose-fr">Explication : molles, qui sont propres a la semence. Toutefois elles ne sont pas propres a couvrir tant qu&#x27;on ne les ecrase pas. Et pour les latrines aussi : parce qu&#x27;elles sont molles, elles conviennent mieux a l&#x27;essuyage que lorsqu&#x27;elles sont dures. Et non comme le commentaire, qui explique la-bas, au chapitre Kira (Chabbat 43a), que mekorzelot signifie aigues. Ici, cela ne se tient pas. Et Rachi l&#x27;a efface ici des livres.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Premiere reponse. Des <b>pierres mekorzelot</b> : Rachi imprime qu'elles ne couvrent pas le sang. Tossefot lit : pierres <b>molles</b>, bonnes a semer, encore impropres a couvrir avant d'etre ecrasees. La glose aigues, donnee a Chabbat 43a pour les latrines, a ete retiree ici par Rachi.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רְאוּיוֹת לְכָותְשָׁן! וּכְתִישָׁה בְּיוֹם טוֹב מִי שְׁרֵי?! רְאוּיוֹת לְכָותְשָׁן כִּלְאַחַר יָד! בְּצוּנָמָא.</div>
+            <div class="fr"><p>Elles sont propres a etre ecrasees ! Et l&#x27;ecrasement, le jour de Yom Tov, est-il permis ?!</p><p>Elles sont propres a etre ecrasees kela&#x27;har yad (d&#x27;une maniere inhabituelle) ! Dans de la tsounma (roche dure).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רְאוּיוֹת לְכָותְשָׁן</b> קֻושְׁיָא הִיא:</div>
+          <div class="glose-fr">C&#x27;est une objection.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כִּלְאַחַר יָד</b> ע&quot;י שִׁינּוּי דִּשְׁבוּת בְּעָלְמָא הוּא וְכֵיוָן דְּמִדְּאוֹרַיְיתָּא שָׁרִי פָּקַע לֵיהּ מַלְקוֹת:</div>
+          <div class="glose-fr">Par un changement : ce n&#x27;est qu&#x27;un chevout (interdit des Sages). Et puisque, de la Torah, c&#x27;est permis, les coups tombent.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּתִישָׁה בי&quot;ט מִי שָׁרִי</b> הִקְשָׁה רִיבָ&quot;א מַאי פָּרִיךְ הָא וַדַּאי שָׁרֵי כְּמוֹ חֲרִישָׁה דְּשָׁרֵי מִשּׁוּם הוֹאִיל הָכָא נָמֵי כְּתִישָׁה וְעוֹד תֵּימַהּ הֵיכִי פָּרֵיךְ הָכָא דִּלֵּיתִי עֲשֵׂה דְּכִיסּוּי וְיִדְחֶה לָאו די&quot;ט הָא אֵין י&quot;ט נִדְחֶה מִפְּנֵי עֲשֵׂה דְּהָא תְּנַן בִּכְיָצֹד צוֹלִין (לְקַמָּן פְּסָחִים פג:) אֵין שְׂרֵיפַת קָדָשִׁים דּוֹחָה י&quot;ט וּבְפֶ&#x27; בַּמֶּה מַדְלִיקִין (שַׁבָּת כד:) יָלֵיף מִקְּרָאֵי אוֹ מִשּׁוּם כִּדְמַסִּיק רַב אַשִּׁי הָתָם די&quot;ט עֲשֵׂה וְלֹא תַעֲשֶׂה הוּא וְאֵין עֲשֵׂה דּוֹחֶה לֹא תַעֲשֶׂה וַעֲשֵׂה וּמְפָרֵשׁ רַשְׁבָּ&quot;ם הוֹאִיל וְחָזֵי לְכִיסּוּי דַּם צִיפּוֹר לֹא מִשּׁוּם דְּחִיָּה קָאָמַר אֶלָּא מִשּׁוּם דְּאָז לֹא צָרִיךְ לַחֲרִישָׁה אֶלָּא לַעֲפָרָהּ וּפָטוּר דְּהַחוֹפֵר גֻּומָּא וְאֵינוֹ צָרִיךְ אֶלָּא לַעֲפָרָהּ פָּטוּר מִשּׁוּם דְּהָוֵי מְלָאכָה שֶׁאֵין צְרִיכָה לְגוּפָהּ וְהַשְׁתָּא פָּרִיךְ שַׁפִּיר כְּתִישָׁה בי&quot;ט מִי שָׁרֵי דִּכְתִישָׁה הָוֵי כִּטְחִינָה וּצְרִיכָה לְגוּפָהּ הוּא שֶׁמִּתְכַּוֵּון לַעֲשׂוֹת עָפָר לְכַסּוֹת וְלָא מִשְׁתְּרֵי לְצֹורֶךְ כִּיסּוּי דְּאֵין עֲשֵׂה דּוֹחֶה לֹא תַעֲשֶׂה וַעֲשֵׂה וְקָשֶׁה לר&quot;י הָא דְּחוֹפֵר גֻּומָּא פָּטוּר הַייְנוּ דַּוְקָא בְּבַיִת דִּמְקַלְקֵל הוּא כִּדְמוֹכַח בפ&quot;ק דַּחֲגִיגָה (דַּף י.) וְהָכָא בְּשָׂדֶה דְּלִזְרִיעָה קַיְימָא שֶׁמַּשְׁבִּיחַ אֶת הַשָּׂדֶה בַּחֲרִישָׁה וַאֲפִילּוּ אִי הֲוָה הָתָם דַּם צִיפּוֹר הֲוָה חַייָּב אִי חָרִישׁ בְּאַרְעָא דִּילֵיהּ וְאִי אָמְרַתְּ הוֹאִיל וְאִי הָוֵי מְלָאכָה שֶׁאֵין צְרִיכָה לְגוּפָהּ פָּטוּר הַשְׁתָּא נָמֵי פָּטוּר א&quot;כ בִּיטַּלְתָּ כָּל מְלֶאכֶת שַׁבָּת ור&quot;ת מְפָרֵשׁ דְּבַחֲרִישָׁה דְּכִלְאַיִם קָאֵי דְּלֵיכָּא אֶלָּא לָאו גְּרֵידָא אֲבָל אַיּוֹם טוֹב לָא קָאֵי וּכְגוֹן שֶׁאִם הָיָה הוֹלֵךְ לְבַקֵּשׁ עָפָר אַחֵר הָיָה הַדָּם נִבְלָע בַּקַּרְקַע וּמַסִּיק כְּתִישָׁה בי&quot;ט מִי שָׁרֵי טְפֵי כֵּיוָן דְּמִשּׁוּם י&quot;ט אָסוּר דְּמִשּׁוּם דְּאִית בֵּיהּ עֲשֵׂה וְלֹא תַּעֲשֶׂה גַּם מִשּׁוּם כִּלְאַיִם לֹא שַׁיָּיךְ לְמִיפְטַר בְּהוֹאִיל דַּאֲפִילּוּ אִם הָיָה שָׁם דַּם צִיפּוֹר אָסוּר וּבַתְּחִלָּה נַמֵּי הֲוָה מָצֵי לְשַׁנּוּיֵי חֲרִישָׁה בי&quot;ט מִי שָׁרֵי אֶלָּא דִּמְשַׁנֵּי לֵיהּ בע&quot;א מִשּׁוּם יַגְדִּיל תּוֹרָה וְיַאְדִּיר:</div>
+          <div class="glose-fr">Le Riva objecte : que demande-t-il ? C&#x27;est certes permis, comme le labour qui est permis a cause du hoil ; ici aussi l&#x27;ecrasement. Et encore, c&#x27;est etonnant : comment demande-t-il ici que vienne le commandement positif du recouvrement et qu&#x27;il repousse l&#x27;interdit de Yom Tov ? Or Yom Tov n&#x27;est pas repousse devant un commandement positif. Car nous avons appris dans Keitsad Tsolin (plus loin, Pesachim 83b) : la combustion des kodachim ne repousse pas Yom Tov. Et dans le chapitre Bame Madlikin (Chabbat 24b), il le derive des versets, ou bien a cause de ce que Rav Achi conclut la-bas : Yom Tov est un commandement positif et un interdit, et un commandement positif ne repousse pas un interdit et un commandement positif. Le Rachbam explique : puisque c&#x27;est propre a couvrir le sang d&#x27;un oiseau, il ne le dit pas parce que cela repousserait. Il le dit parce qu&#x27;alors il n&#x27;a besoin du labour que pour sa terre, et il est quitte. Car celui qui creuse une fosse et n&#x27;a besoin que de sa terre est quitte, du fait que c&#x27;est une melakha che-eina tserikha le-goufa (travail dont on n&#x27;a pas besoin pour lui-meme). Des lors, la question est bien posee : l&#x27;ecrasement, le jour de Yom Tov, est-il permis ? Car l&#x27;ecrasement est comme la mouture, et on en a besoin pour lui-meme : il a l&#x27;intention de faire de la terre pour couvrir. Et cela ne se permet pas pour le besoin du recouvrement, car un commandement positif ne repousse pas un interdit et un commandement positif. C&#x27;est difficile pour le Ri : que celui qui creuse une fosse soit quitte, c&#x27;est seulement dans une maison, ou il deteriore, comme il ressort au premier chapitre de Haguiga (10a). Ici, c&#x27;est un champ destine a la semence : il ameliore le champ par le labour. Meme s&#x27;il y avait la du sang d&#x27;oiseau, il serait passible s&#x27;il laboure sa propre terre. Et si tu dis : puisque, si c&#x27;etait un travail dont on n&#x27;a pas besoin pour lui-meme, il serait quitte, maintenant aussi il est quitte, alors tu as annule tout travail de Chabbat. Rabbeinou Tam explique que cela porte sur le labour des kilaim, ou il n&#x27;y a qu&#x27;un interdit seul, et que cela ne porte pas sur Yom Tov. Et c&#x27;est un cas ou, s&#x27;il allait chercher une autre terre, le sang serait absorbe dans le sol. Et il conclut : l&#x27;ecrasement le jour de Yom Tov, est-il permis davantage ? Puisque, a cause de Yom Tov, c&#x27;est interdit, du fait qu&#x27;il y a en lui un commandement positif et un interdit, pour les kilaim non plus il n&#x27;y a pas lieu d&#x27;etre quitte par le hoil : meme s&#x27;il y avait la du sang d&#x27;oiseau, ce serait interdit. Et au debut aussi, il aurait pu repondre : le labour le jour de Yom Tov est-il permis ? Mais il repond d&#x27;une autre maniere, afin que la Torah grandisse et soit magnifiee.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Trois tours. On peut <b>ecraser</b> les pierres et en faire une poussiere de recouvrement. La Guemara repond : ecraser a <b>Yom Tov</b> est interdit. Reprise : on peut ecraser <b>kela'har yad</b>, avec un changement. Rachi : simple <b>chevout</b>. De la Torah, les coups tombent, le hoil reviendrait. Dernier mot de la ligne : <b>tsounma</b>, roche qu'on n'ecrase pas.</p><p>Tossefot ouvre le sens du hoil. Le <b>Rachbam</b> : l'homme n'a besoin du labour que pour la terre. Creuser pour la terre seule est une <b>melakha che-eina tserikha le-goufa</b>. Il est quitte. Ecraser est une mouture voulue pour la poussiere. Yom Tov est un positif et un interdit : le recouvrement ne le repousse pas.</p><p>Le <b>Ri</b> : l'exemption de la fosse vaut dans la maison, la ou l'on deteriore. Au champ, le labour ameliore. Etendre ce hoil viderait les travaux de Chabbat. <b>Rabbeinou Tam</b> : le hoil vise le labour des <b>kilaim</b>, interdit seul. Yom Tov reste dehors. L'ecrasement y etant interdit, le hoil ne quitte pas les kilaim non plus.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 340" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="340" fill="#fbfaf7"/>
+<text x="370" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Ecraser a Yom Tov : trois lectures</text>
+<text x="370" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#6b6255">Tossefot sur : l'ecrasement, le jour de Yom Tov, est-il permis ?</text>
+<rect x="16" y="60" width="230" height="200" rx="4" fill="#eef3f7" stroke="#5d7385"/>
+<text x="131" y="84" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5566">Rachbam</text>
+<text x="131" y="110" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2b2b2b">Hoil = terre seule</text>
+<text x="131" y="130" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Fosse pour sa terre :</text>
+<text x="131" y="148" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">melakha non voulue</text>
+<text x="131" y="166" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">pour elle-meme</text>
+<text x="131" y="192" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#8a4b3a">Ecraser = moudre</text>
+<text x="131" y="210" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#8a4b3a">voulu pour la poussiere</text>
+<text x="131" y="236" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#6b6255">Yom Tov : positif + interdit</text>
+<rect x="256" y="60" width="228" height="200" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="370" y="84" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Ri</text>
+<text x="370" y="110" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2b2b2b">La fosse quitte</text>
+<text x="370" y="128" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">seulement dans la maison</text>
+<text x="370" y="146" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">la on deteriore</text>
+<text x="370" y="172" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2b2b2b">Au champ, le labour</text>
+<text x="370" y="190" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2b2b2b">ameliore la terre</text>
+<text x="370" y="216" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#8a4b3a">Ce hoil, etendu,</text>
+<text x="370" y="234" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#8a4b3a">viderait les travaux de Chabbat</text>
+<rect x="496" y="60" width="228" height="200" rx="4" fill="#eef4ee" stroke="#6f8a6f"/>
+<text x="610" y="84" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Rabbeinou Tam</text>
+<text x="610" y="110" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2b2b2b">Le hoil vise les kilaim</text>
+<text x="610" y="128" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">interdit seul</text>
+<text x="610" y="154" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2b2b2b">Yom Tov reste a part</text>
+<text x="610" y="172" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">positif et interdit</text>
+<text x="610" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2f5c2f">Ecraser y reste interdit</text>
+<text x="610" y="216" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2f5c2f">le hoil ne quitte pas</text>
+<text x="610" y="234" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2f5c2f">les kilaim non plus</text>
+<rect x="16" y="276" width="708" height="48" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="370" y="304" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#6b5344">Reponse plus courte possible des le debut : le labour de Yom Tov est-il permis ?</text>
+</svg></div><div class="svg-cap">Rachbam, Ri, Rabbeinou Tam sur l&#x27;ecrasement a Yom Tov.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">צוּנָמָא בַּר זְרִיעָה?! צוּנָמָא מִלְמַעְלָה, וְעָפָר תִּיחוּחַ מִלְּמַטָּה. וְתִיפּוֹק לֵיהּ מִשּׁוּם עָפָר תִּיחוּחַ!</div>
+            <div class="fr"><p>La tsounma est-elle propre a la semence ?! De la tsounma par-dessus, et de la terre meuble par-dessous.</p><p>Et qu&#x27;il en soit quitte a cause de la terre meuble !</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Une roche ne se seme pas. La reponse deplie le sol : croute dure au-dessus, <b>terre meuble</b> au-dessous, la ou la graine peut entrer. La Guemara renverse : cette terre meuble est propre au <b>kisui ha-dam</b>. Le <b>hoil</b> revient, et les coups du labour tombent de nouveau.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא אָמַר מָר בַּר רַב אָשֵׁי: בְּטִינָא. וְטִינָא בַּר זְרִיעָה הוּא?! בִּמְתוּנְתָּא.</div>
+            <div class="fr"><p>Plutot, Mar bar Rav Achi dit : dans de la tina (boue). Et la tina est-elle propre a la semence ?!</p><p>Dans de la metounta (terre humide).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>טִינָא</b> טִיט לַח וּבָלוּל:</div>
+          <div class="glose-fr">De la boue humide et melangee.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מְתוּנְתָּא</b> אֶרֶץ לַחָה רְאוּיָה לִזְרִיעָה וְאֵינָהּ נַעֲשֵׂית עָפָר אִם בָּא לְכָותְשָׁהּ הִיא מִדַּבֶּקֶת וְנִגְבֶּלֶת:</div>
+          <div class="glose-fr">Une terre humide, propre a la semence. Elle ne devient pas de la poussiere : si l&#x27;on vient l&#x27;ecraser, elle colle et se petrit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Mar bar Rav Achi</b> sort de la roche. La <b>tina</b>, boue liquide, ne se seme pas : nouvelle objection. La <b>metounta</b> ferme la serie. Elle est assez humide pour la semence. Ecrasee, elle colle et se petrit. Elle ne donne pas la poussiere du recouvrement. Le hoil n'a plus de prise, les coups du labour restent.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֵיתִיבֵיהּ אַבַּיֵּי: הַמְבַשֵּׁל גִּיד הַנָּשֶׁה בְּחָלָב בְּיוֹם טוֹב וְאוֹכְלוֹ — לוֹקֶה חָמֵשׁ. לוֹקֶה מִשּׁוּם מְבַשֵּׁל גִּיד בְּיוֹם טוֹב, וְלוֹקֶה מִשּׁוּם אוֹכֵל גִּיד, וְלוֹקֶה מִשּׁוּם מְבַשֵּׁל בָּשָׂר בְּחָלָב, וְלוֹקֶה מִשּׁוּם אוֹכֵל בָּשָׂר בְּחָלָב, וְלוֹקֶה מִשּׁוּם הַבְעָרָה. וְאִי אָמְרִינַן ״הוֹאִיל״ — אַהַבְעָרָה לָא לִיחַייַּב, הוֹאִיל דַּחֲזֵי לֵיהּ לְצָרְכּוֹ!</div>
+            <div class="fr"><p>Abaye lui objecta : celui qui cuit le gid ha-nache (nerf sciatique) dans du lait le jour de Yom Tov, et le mange, recoit cinq fois les coups. Il recoit les coups pour avoir cuit le gid le jour de Yom Tov, et il recoit les coups pour avoir mange le gid, et il recoit les coups pour avoir cuit de la viande dans du lait, et il recoit les coups pour avoir mange de la viande dans du lait, et il recoit les coups pour l&#x27;embrasement.</p><p>Et si nous disons hoil, pour l&#x27;embrasement il ne serait pas passible, puisque cela lui est propre pour son besoin !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לוֹקֶה מִשּׁוּם מְבַשֵּׁל גִּיד בי&quot;ט</b> בִּישּׁוּל שֶׁאֵינוֹ רָאוּי וְלוֹקֶה מִשּׁוּם מְבַשֵּׁל בָּשָׂר בְּחָלָב אֲפִילּוּ הוּא חוֹל וְקָסָבַר יֵשׁ בַּגִּידִים בְּנוֹתֵן טַעַם וּבָשָׂר הֵם:</div>
+          <div class="glose-fr">Une cuisson qui n&#x27;est pas propre. Et il recoit les coups pour avoir cuit de la viande dans du lait, meme un jour de semaine. Et il estime : les nerfs ont un noten ta&#x27;am (ils donnent un gout), et ils sont de la viande.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִשּׁוּם הַבְעָרָה</b> שֶׁלֹּא לְצֹורֶךְ דְּהַבְעָרָה מְלָאכָה לְעַצְמָהּ וּבִישּׁוּל מְלָאכָה לְעַצְמוֹ:</div>
+          <div class="glose-fr">Sans besoin. Car l&#x27;embrasement est un travail a part, et la cuisson est un travail a part.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְלוֹקֶה מִשּׁוּם הַבְעָרָה</b> בְּפֵ&quot;א דְּבֵיצָה (דַּף יב:) אָמַר הָא מַנִּי ב&quot;ש הִיא דְּלֵית לְהוּ מִתּוֹךְ אֲבָל לְבֵית הִלֵּל שָׁרִי אע&quot;ג דְּצָרִיךְ שֶׁיְּהֵא צֹורֶךְ הַיּוֹם הָא נָמֵי חֲשִׁיב צֹורֶךְ הַיּוֹם אע&quot;פ שֶׁאֵין רָאוּי לְאָוכְלוֹ אֶלָּא בְּאִיסּוּר:</div>
+          <div class="glose-fr">Au premier chapitre de Beitsa (12b), il dit : de qui est cet enseignement ? C&#x27;est Beit Chammai, qui n&#x27;ont pas le principe de mitokh (du fait que). Mais pour Beit Hillel, c&#x27;est permis. Bien qu&#x27;il faille que ce soit un besoin du jour, ceci aussi compte comme un besoin du jour, meme si l&#x27;on ne peut le manger que dans l&#x27;interdit.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַהַבְעָרָה לָא לִיחַיַּיב</b> מִכָּאן מוֹכִיחַ רִיבָ&quot;א דְּרַבָּה דְּאָמַר הוֹאִיל הַיְינוּ אֲפִילּוּ לְבֵית שַׁמַּאי אָמַר:</div>
+          <div class="glose-fr">De la, le Riva prouve que Rabba, qui dit hoil, le dit meme selon Beit Chammai.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle objection d'<b>Abaye</b>. Cinq <b>lavin</b> sur un seul plat : cuire le <b>gid ha-nache</b> a Yom Tov, le manger, cuire viande et lait, manger viande et lait, allumer. Rachi separe l'<b>hav'ara</b> de la cuisson : deux travaux. Le gid cuit a Yom Tov est une cuisson qui n'est pas propre a etre mangee. Les nerfs, ici, donnent un gout et comptent comme viande : d'ou les coups du lait, meme en semaine.</p><p>Le <b>hoil</b> : ce feu pourrait cuire un mets permis. Les coups de l'embrasement tomberaient. Tossefot : la baraita suit <b>Beit Chammai</b>, qui n'ont pas le <b>mitokh</b>. Pour Beit Hillel, cuire ce gid compte deja comme un besoin du jour. Le Riva en tire que le hoil de Rabba est dit aussi selon Beit Chammai.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ: אַפֵּיק הַבְעָרָה, וְעַייֵּל גִּיד הַנָּשֶׁה שֶׁל נְבֵילָה.</div>
+            <div class="fr"><p>Il lui dit : retire l&#x27;embrasement, et introduis le gid ha-nache d&#x27;une neveila (bete morte sans chehita valable).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>גִּיד הַנָּשֶׁה שֶׁל נְבֵלָה</b> דְּלוֹקֶה עַל אֲכִילָתוֹ מִשּׁוּם נְבֵילָה:</div>
+          <div class="glose-fr">Car il recoit les coups pour l&#x27;avoir mange, a titre de neveila.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rabba</b> garde cinq coups, et sort l'<b>hav'ara</b>, seule visee par le hoil. A sa place : manger le <b>gid</b> d'une <b>neveila</b>. Les coups de la bete morte s'ajoutent a la bouche. Le feu n'est plus dans le compte.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְהַתָּנֵי רַבִּי חַייָּא: לוֹקִין שְׁתַּיִם עַל אֲכִילָתוֹ, וְשָׁלֹשׁ עַל בִּישּׁוּלוֹ. וְאִי אִיתָא, שָׁלֹשׁ עַל אֲכִילָתוֹ מִיבְּעֵי לֵיהּ!</div>
+            <div class="fr"><p>Et Rabbi Hiya a enseigne : on recoit deux fois les coups pour l&#x27;avoir mange, et trois fois pour l&#x27;avoir cuit. Et s&#x27;il en est ainsi, c&#x27;est trois fois pour l&#x27;avoir mange qu&#x27;il fallait !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שְׁתַּיִם עַל אֲכִילָתוֹ</b> אוֹכֵל גִּיד וְאוֹכֵל בָּשָׂר בְּחָלָב:</div>
+          <div class="glose-fr">Manger le gid, et manger de la viande dans du lait.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שָׁלֹשׁ עַל בִּישּׁוּלוֹ</b> מִשּׁוּם הַבְעָרָה די&quot;ט וּמִשּׁוּם בִּישּׁוּל די&quot;ט וּמִשּׁוּם מְבַשֵּׁל בָּשָׂר בְּחָלָב אֲפִילּוּ בְּחוֹל:</div>
+          <div class="glose-fr">A cause de l&#x27;embrasement de Yom Tov, a cause de la cuisson de Yom Tov, et a cause de celui qui cuit de la viande dans du lait, meme en semaine.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rabbi Hiya</b> fixe le partage : <b>deux</b> a la consommation, <b>trois</b> a la cuisson. Les trois de la cuisson sont l'embrasement, la cuisson de Yom Tov, et la cuisson viande-lait. Une <b>neveila</b> ajouterait un troisieme coup a la bouche. Le compte de Rabbi Hiya refuse cet ajout. L'embrasement reste donc dans la baraita.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא: אַפֵּיק הַבְעָרָה, וְעָיֵיל עֲצֵי מֻוקְצֶה.</div>
+            <div class="fr"><p>Plutot : retire l&#x27;embrasement, et introduis des bois de mouktse.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְעָייֵל עֲצֵי מֻוקְצֶה</b> דְּהַשְׁתָּא לֵיכָּא לְמֵימַר הוֹאִיל דְּמִדְּאוֹרַיְיתָּא אָסוּר לְהִשְׁתַּמֵּשׁ בָּאֵשׁ מֻוקְצֶה בי&quot;ט:</div>
+          <div class="glose-fr">Desormais, on ne peut pas dire hoil, car de la Torah il est interdit de se servir d&#x27;un feu de mouktse le jour de Yom Tov.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְעָייֵל עֲצֵי מֻוקְצֶה</b> תֵּימַהּ לר&quot;י מ&quot;מ לִיתְנֵי גִּיד הַנָּשֶׁה שֶׁל נְבֵילָה וְלִילְקֵי נָמֵי מִשּׁוּם נְבֵילָה:</div>
+          <div class="glose-fr">Etonnement pour le Ri : en tout cas, qu&#x27;il enseigne le gid ha-nache d&#x27;une neveila, et qu&#x27;il recoive aussi les coups a titre de neveila.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">גְּמָ&#x27; תַּנְיָא אָמַר רַבִּי יְהוּדָה אֲנִי לֹא שָׁמַעְתִּי אֶלָּא סְעוּדַת אֵירוּסִין בִּלְבַד. א&quot;ר יוֹסֵי אֲנִי שָׁמַעְתִּי סְעוּדַת אֵירוּסִין וְסִבְלוֹנוֹת. הָרַב הַבַּרְצֵלוֹנִי זַ&quot;ל פָּסַק כְּר&#x27; יוֹסֵי וְכֵן בַּעַל הָעִיטּוּר וּסְעוּדַת הָאֵירוּסִין דְּמַתְנִיתִין שְׁתֵּיהֶן בִּכְלָל.</div>
+          <div class="glose-fr">Guemara. On enseigne : Rabbi Yehouda dit : je n&#x27;ai entendu que le repas de fiancailles seulement. Rabbi Yosse dit : j&#x27;ai entendu le repas de fiancailles et les sivlonot (cadeaux envoyes a la fiancee). Le Rav de Barcelone, de memoire benie, a tranche comme Rabbi Yosse, et de meme le Baal ha-Itour. Et le repas de fiancailles de la michna inclut les deux.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deuxieme remplacement. Les <b>bois de mouktse</b> prennent la place de l'embrasement. Rachi : un feu alimente par du mouktse est interdit <b>de la Torah</b> a Yom Tov. On ne dit plus : ce feu lui est propre pour son besoin. Le hoil s'arrete.</p><p>Le <b>Ri</b> laisse la question ouverte : la baraita pourrait nommer le gid d'une neveila et ajouter les coups de la neveila. La Guemara, elle, substitue les bois, pour rester sur le compte de Rabbi Hiya.</p><p>Le <b>Roch</b>, glose jointe ici par la source, tranche une autre baraita. Rabbi Yehouda n'a entendu que la <b>seoudat eroussin</b>. Rabbi Yosse y joint les <b>sivlonot</b>. Le Rav de Barcelone et le Baal ha-Itour suivent Rabbi Yosse. Les deux entrent dans le repas de fiancailles de la michna.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּמֻוקְצֶה דְּאוֹרָייְתָא הוּא? אֲמַר לֵיהּ: אִין, דִּכְתִיב: ״וְהָיָה בַּיּוֹם הַשִּׁשִּׁי וְהֵכִינוּ אֵת אֲשֶׁר יָבִיאוּ״. וְאַזְהָרָתָהּ מֵהָכָא, מ״לא תַּעֲשֶׂה כָּל מְלָאכָה״.</div>
+            <div class="fr"><p>Et le mouktse est-il de la Torah ? Il lui dit : oui, car il est ecrit : Et ce sera le sixieme jour, et ils prepareront ce qu&#x27;ils apporteront.</p><p>Et son avertissement vient d&#x27;ici : Tu ne feras aucun travail.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מֻוקְצֶה דְּאוֹרָיְיתָא</b> בִּתְמִיהַּ:</div>
+          <div class="glose-fr">Est-ce de la Torah ? C&#x27;est un etonnement.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהֵכִינוּ</b> בִּמְזֻומָּן שֶׁמְּזַמֵּן כָּל צָורְכּוֹ הַיּוֹם וְיֹאמַר דָּבָר זֶה לְצֹורֶךְ הַיּוֹם דְּמִשּׁוּם טֹורַח מְלֶאכֶת שַׁבָּת לֹא צָרִיךְ דְּהָכְתִיב אֵת אֲשֶׁר תֹּאפוּ אֵפוּ וְאֵת אֲשֶׁר תְּבַשְּׁלוּ בַּשֵּׁלוּ וְכֵיוָן דְּלָאו מְזֻומָּן הוּא וְהַכָּתוּב קְרָאוֹ הֲכָנָה הָוְיָא לָהּ מְלָאכָה וְעוֹבֵר עָלֶיהָ מִשּׁוּם לֹא תַעֲשֶׂה כָל מְלָאכָה:</div>
+          <div class="glose-fr">Dans ce qui est prepare : il prepare aujourd&#x27;hui tout son besoin, et il dit : cette chose est pour le besoin du jour. Pour la peine du travail de Chabbat, ce verset n&#x27;est pas necessaire, car il est ecrit : ce que vous cuirez au four, cuisez-le, et ce que vous ferez bouillir, faites-le bouillir. Et puisqu&#x27;elle n&#x27;est pas preparee, et que le verset l&#x27;a appelee preparation, cela devient un travail, et il transgresse a son sujet a cause de : tu ne feras aucun travail.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Abaye s'etonne : le <b>mouktse</b> porterait des coups de la Torah ? <b>Rabba</b> : oui. <b>Ve-hekhineu</b> (Chemoth 16, 5) exige une preparation la veille. Ce qui n'a pas ete prepare, le verset le range dans un travail. L'<b>azhara</b>, l'avertissement qui fait un lav passible de coups, est : tu ne feras aucun travail (Chemoth 20, 10).</p><p>Rachi distingue. Ce que vous cuirez, cuisez-le parle de la peine des travaux, deja ecrite ailleurs. Ve-hekhineu ajoute la <b>hakhana</b> : designer la chose pour le jour. Sans cette designation, se servir du bois est un travail.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 180" xmlns="http://www.w3.org/2000/svg">
+<rect width="700" height="180" fill="#fbfaf7"/>
+<text x="350" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Mouktse de la Torah, deux versets</text>
+<rect x="16" y="44" width="320" height="90" rx="4" fill="#eef3f7" stroke="#5d7385"/>
+<text x="176" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#3d5566">Chemoth 16, 5</text>
+<text x="176" y="92" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2b2b2b">Le sixieme jour, ils prepareront</text>
+<text x="176" y="112" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Hakhana : ce qui n'est pas pret</text>
+<rect x="364" y="44" width="320" height="90" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="524" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#8a4b3a">Chemoth 20, 10</text>
+<text x="524" y="92" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2b2b2b">Tu ne feras aucun travail</text>
+<text x="524" y="112" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Azhara : l'avertissement du lav</text>
+<text x="350" y="160" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Sans preparation, le verset appelle cela un travail. Les coups ont un avertissement.</text>
+</svg></div><div class="svg-cap">Preparation le sixieme jour, avertissement dans l&#x27;interdit du travail.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ, וְהָא אַתְּ הוּא דַּאֲמַרְתְּ: בְּעַאי מִינֵּיהּ מֵרַב חִסְדָּא, וְאָמְרִי לָהּ: בְּעַאי מִינֵּיהּ מֵרַב הוּנָא: הֵבִיא שֶׂה מֵאֲפָר, וּשְׁחָטוֹ תָּמִיד בְּיוֹם טוֹב, מַהוּ?</div>
+            <div class="fr"><p>Il lui dit : et c&#x27;est toi qui as dit : j&#x27;ai interroge la-dessus Rav Hisda, et d&#x27;autres disent : j&#x27;ai interroge la-dessus Rav Houna : il a apporte un agneau de l&#x27;efer, et il l&#x27;a egorge en tamid le jour de Yom Tov, qu&#x27;en est-il ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּעַאי</b> שָׁאַלְתִּי:</div>
+          <div class="glose-fr">J&#x27;ai interroge.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מֵאֵפֶר</b> אָחוּ וּמֻוקְצֶה הוּא שֶׁאֵינוֹ נִכְנָס לְיִישּׁוּב יָמִים רַבִּים:</div>
+          <div class="glose-fr">D&#x27;un ahou (prairie). C&#x27;est du mouktse : il n&#x27;entre pas dans le lieu habite pendant de nombreux jours.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>תָּמִיד</b> עוֹלָה שֶׁל צִיבּוּר:</div>
+          <div class="glose-fr">Un ola (holocauste) du public.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַהוּ</b> לִיקָּרֵב:</div>
+          <div class="glose-fr">Peut-il etre offert ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Abaye retourne une question de <b>Rabba</b> lui-meme, posee a <b>Rav Hisda</b>, ou selon une autre version a <b>Rav Houna</b>. Un agneau pris dans l'<b>ahou</b>, la prairie : Rachi, il n'entre pas au village depuis longtemps, il est <b>mouktse</b>. On l'egorge comme <b>tamid</b>, olah du public, le jour de Yom Tov. Peut-il monter sur l'autel ?</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאַתְּ אָמְרַתְּ לָן, (אָמַר לִי) עֲלָהּ: ״שֶׂה״ — וְלֹא הַבְּכוֹר.</div>
+            <div class="fr"><p>Et tu nous as dit, (il m&#x27;a dit) a ce sujet : seh (un agneau) - et non le bekhor (premier-ne).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׂה וְלֹא אֶת הַבְּכוֹר</b> מַתְנִיתָא הִיא וּדְרָשָׁה קְרָא דִּיחֶזְקֵאל (מה) גַּבֵּי קָרְבָּנוֹת: וְשֶׂה אַחַת מִן הַצֹּאן מִן הַמָּאתַיִם מִמַּשְׁקֵה יִשְׂרָאֵל:</div>
+          <div class="glose-fr">C&#x27;est une baraita. Et l&#x27;on derache le verset d&#x27;Yehezkel (45) au sujet des offrandes : et un agneau du troupeau, sur deux cents, de l&#x27;abreuvement d&#x27;Israel.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׂה וְלֹא אֶת הַבְּכוֹר</b> דְּשֶׂה מַשְׁמַע שֶׁיְּהֵא רָאוּי לִהְיוֹת בֵּין זָכָר בֵּין נְקֵבָה דְּכֻולָּן בִּכְלַל שֶׂה וּבְכוֹר אֵינוֹ אֶלָּא זָכָר:</div>
+          <div class="glose-fr">Car seh implique qu&#x27;il soit propre a etre aussi bien male que femelle, car tous entrent dans le terme seh. Et le bekhor n&#x27;est que male.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׂה וְלֹא הַבְּכוֹר</b> פֵּירֵשׁ בַּקְּוַנְט&#x27; דְּשֶׂה מַשְׁמַע בֵּין זָכָר וּבֵין נְקֵיבָה וְתֵימַהּ דְּהָא בְּעוֹלָה אַייְרֵי דְּאֵין בָּאָה נְקֵבָה וא&quot;ת אַמַּאי אִיצְטְרִיךְ קְרָא שֶׁאֵין תָּמִיד בָּא מִבְּכוֹר וּמַעֲשֵׂר תִּיפּוֹק לֵיהּ שֶׁאֵין מַתְּנוֹתֵיהֶן שָׁווֹת וְי&quot;ל דְּהָא אָמַר כָּל הֲנִיתַנִי&#x27; בְּמַתַּן ד&#x27; שֶׁנְּתָנוֹ בְּמַתָּנָה אַחַת כִּיפֵּר וע&quot;ק הֵיאַךְ יַעֲשֶׂה תָּמִיד מִבְּכוֹר הָא קָעָבַר מִשּׁוּם כֹּל שֶׁמִּמֶּנּוּ לָאִשִּׁים הֲרֵי הוּא בְּבַל תַּקְטִירוּ (יְבָמוֹת דַּף ק.) וְי&quot;ל כֵּיוָן דְּמַסִּיק לֵיהּ לְשֵׁם עוֹלָה דִּינוֹ כְּדִין עוֹלָה וּמֵהַאי טַעְמָא נָמֵי נִיחָא לְעִנְיַן מַתָּנָה ור&quot;י פֵּירֵשׁ דְּהַאי קְרָא מִישְׁתַּעֵי בְּפֶסַח דִּכְתִיב בֵּיהּ שֶׂה תָּמִים וְקָאָמַר שֶׁלֹּא יְבִיאֶנּוּ לֹא דִּבְכוֹר וְלֹא דְּמַעֲשֵׂר וא&quot;ש הַשְׁתָּא דְּמַתְּנוֹתֵיהֶן שָׁווֹת וְלָא תִּיקְשֵׁי כֹּל שֶׁמִּמֶּנּוּ לָאִשִּׁים:</div>
+          <div class="glose-fr">Le commentaire explique que seh implique aussi bien le male que la femelle. C&#x27;est etonnant, car il s&#x27;agit d&#x27;une ola, qui ne vient pas en femelle. Et si tu dis : pourquoi le verset est-il necessaire, pour que le tamid ne vienne pas d&#x27;un bekhor ni d&#x27;un ma&#x27;asser ? Qu&#x27;on le tire de ce que leurs applications du sang ne sont pas egales. On peut repondre : car il est dit que tout ce qui se donne en quatre applications, si on l&#x27;a donne en une seule application, il a expie. Et c&#x27;est encore difficile : comment ferait-on un tamid d&#x27;un bekhor ? Il transgresserait, car tout ce dont une part va aux feux, le voici sous bal taktirou (Yevamot 100a). On peut repondre : puisqu&#x27;il l&#x27;offre au nom d&#x27;une ola, son statut est le statut d&#x27;une ola. Et pour cette meme raison, c&#x27;est aussi regle pour l&#x27;application. Le Ri explique que ce verset parle du Pessah, au sujet duquel il est ecrit seh tamim (agneau entier), et il dit qu&#x27;il ne l&#x27;apportera ni d&#x27;un bekhor ni d&#x27;un ma&#x27;asser. Et maintenant cela se tient : leurs applications sont egales, et la difficulte de tout ce dont une part va aux feux ne se pose pas.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׂה וְלֹא בְּכוֹר</b> וא&quot;ת בְּפֶרֶק קַמָּא דַּחֲגִיגָה (דַּף ח.) דְּנָפְקָא לָן מִבְּמַסַּת יָדְךָ דְּכָל דָּבָר שֶׁבָּא חוֹבָה אֵין בָּא אֶלָּא מִן הַחֻולִּין וְי&quot;ל דְּהָכָא אַסְמַכְתָּא בְּעָלְמָא הִיא וּמִן הַמָּאתַיִם שֶׁעָרְלָה בְּטֵילָה בְּמָאתַיִם נָמֵי אַסְמַכְתָּא הִיא אַךְ קָשֶׁה דְּמִמַּשְׁקֵה יִשְׂרָאֵל מִן הַמֻּותָּר לְיִשְׂרָאֵל דְּרָשָׁה גְּמוּרָה הִיא דְּמֵהַאי קְרָא יָלֵיף בפ&quot;ק דִּמְנָחוֹת (דַּף ה:) דִּטְרֵיפָה אֲסוּרָה לַגָּבוֹהַּ:</div>
+          <div class="glose-fr">Et si tu dis : au premier chapitre de Haguiga (8a), nous derivons de ke-matnat yadekha (selon le don de ta main) que toute chose qui vient en obligation ne vient que du houlin (profane). On peut repondre : ici, c&#x27;est une asmakhta (appui) seulement. Et min ha-matayim (sur deux cents), que l&#x27;orla est annulee dans deux cents, est aussi une asmakhta. Mais c&#x27;est difficile : mi-michke Israel (de l&#x27;abreuvement d&#x27;Israel), de ce qui est permis a Israel, est une deracha veritable. Car de ce verset il apprend, au premier chapitre de Menahot (5b), qu&#x27;une terefa est interdite pour le Gavoha (l&#x27;autel).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La reponse que Rabba avait rapportee derache <b>Yehezkel 45</b> : un agneau, un, du troupeau. Premier mot, <b>seh</b> : Rachi, le terme couvre le male et la femelle. Le <b>bekhor</b> n'est que male. Il sort.</p><p>Tossefot trouve cela etroit pour une <b>ola</b>, qui ne vient pas en femelle. L'ecart des applications du sang ne suffit pas : une seule application expie la ou quatre etaient prescrites. Reste <b>bal taktirou</b> : bruler a l'autel ce qui doit revenir aux cohanim. Reponse possible : offert au nom d'ola, il suit le droit de l'ola. Le <b>Ri</b> lit le verset sur le <b>Pessah</b>, ou seh tamim est ecrit, et ou bekhor et ma'asser ont les memes applications.</p><p>Deuxieme glose. A Haguiga, l'obligation vient du <b>houlin</b>, depuis ke-matnat yadekha. Ici, bekhor et ma'asser seraient une <b>asmakhta</b>, comme le chiffre deux cents pour l'orla. Mi-michke Israel, en revanche, est une deracha pleine : Menahot 5b en interdit la <b>terefa</b> sur l'autel.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 250" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="250" fill="#fbfaf7"/>
+<text x="370" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Yehezkel 45 : trois exclusions du korban public</text>
+<text x="370" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#6b6255">Reponse rapportee par Rabba. Le mouktse n'y figure pas.</text>
+<rect x="16" y="64" width="230" height="120" rx="4" fill="#eef3f7" stroke="#5d7385"/>
+<text x="131" y="90" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5566">seh</text>
+<text x="131" y="114" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">et non le bekhor</text>
+<text x="131" y="138" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Seh : male ou femelle</text>
+<text x="131" y="156" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Bekhor : male seulement</text>
+<rect x="256" y="64" width="228" height="120" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="370" y="90" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">ahat</text>
+<text x="370" y="114" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">et non le ma'asser</text>
+<text x="370" y="138" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Un, qui soit seul</text>
+<text x="370" y="156" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Le dixieme sort d'un compte</text>
+<rect x="496" y="64" width="228" height="120" rx="4" fill="#eef4ee" stroke="#6f8a6f"/>
+<text x="610" y="90" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">min ha-tson</text>
+<text x="610" y="114" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">et non le palgas</text>
+<text x="610" y="138" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Du troupeau, pas tout</text>
+<text x="610" y="156" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Entre agneau et belier</text>
+<text x="370" y="214" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Question d'Abaye : l'agneau de l'ahou, mouktse, egorge en tamid.</text>
+<text x="370" y="234" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">La reponse citee nomme trois autres exclusions.</text>
+</svg></div><div class="svg-cap">Seh, ahat, min ha-tson : bekhor, ma&#x27;asser, palgas.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">״אַחַת״ — וְלֹא מַעֲשֵׂר.</div>
+            <div class="fr"><p>Ahat (une) - et non le ma&#x27;asser (dime des betes).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְלֹא מַעֲשֵׂר</b> דְּמַעְשַׂר בְּהֵמָה אֵינוֹ רָאוּי לְהַקְדִּישׁוֹ לְקָרְבָּן אַחֵר וְהָכִי מַשְׁמַע אֶחָד שֶׁיְּהֵא לְבַד וְלֹא זֶה שֶׁאֵינוֹ בָּא אֶלָּא מִכְּלַל עֲשָׂרָה:</div>
+          <div class="glose-fr">Car le ma&#x27;asser behema n&#x27;est pas propre a etre consacre pour une autre offrande. Et voici le sens : un, qui soit seul, et non celui-ci, qui ne vient que du compte de dix.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deuxieme mot du verset : <b>ahat</b>, une. Le <b>ma'asser behema</b> n'existe que comme dixieme d'un passage au compte. Il n'est pas une bete seule, et on ne le reconvertit pas en un autre korban. Il sort du tamid.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">״מִן הַצֹּאן״ — וְלֹא הַפַּלְגָּס.</div>
+            <div class="fr"><p>Min ha-tson (du troupeau) - et non le palgas.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִן הַצֹּאן</b> וְלֹא כָּל הַצֹּאן מִיעוּטָא הוּא לְהוֹצִיא פַּלְגָּס יָצָא מִכְּלַל כֶּבֶשׂ וְלִכְלַל אַיִל לֹא בָּא וְהַיְינוּ כָּל חֹודֶשׁ שְׁלֹשָׁה עָשָׂר דְּכֶבֶשׂ בֶּן שָׁנָה הוּא וְאַיִל מִשֶּׁנִּכְנַס לְשָׁנָה שְׁנִיָּה חֹודֶשׁ שָׁלֵם וְהָכִי מְפָרֵשׁ לָהּ בְּמַס&#x27; פָּרָה (פ&quot;א מִשְׁנָה ג):</div>
+          <div class="glose-fr">Du troupeau, et non tout le troupeau : c&#x27;est une restriction, pour exclure le palgas. Il est sorti de la categorie de l&#x27;agneau, et il n&#x27;est pas entre dans la categorie du belier. C&#x27;est tout le treizieme mois. Car le keves (agneau) a un an, et l&#x27;ayil (belier), des qu&#x27;il entre dans la deuxieme annee, un mois entier. Et c&#x27;est ainsi qu&#x27;on l&#x27;explique dans le traite Para (chapitre 1, michna 3).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Min ha-tson</b> restreint : du troupeau, pas tout le troupeau. Sort le <b>palgas</b>. Rachi le place sur tout le <b>treizieme mois</b> : plus un keves d'un an, pas encore un ayil, qui commence quand un mois plein de la deuxieme annee est entre. Para 1, 3.</p><p>L'amoud s'arrete sur ces trois exclusions. La question de l'agneau mouktse offert en tamid reste ouverte pour le daf suivant.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 160" xmlns="http://www.w3.org/2000/svg">
+<rect width="700" height="160" fill="#fbfaf7"/>
+<text x="350" y="22" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Palgas : le treizieme mois</text>
+<rect x="16" y="44" width="210" height="70" rx="4" fill="#eef4ee" stroke="#6f8a6f"/>
+<text x="121" y="72" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Keves</text>
+<text x="121" y="94" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Dans sa premiere annee</text>
+<rect x="246" y="44" width="210" height="70" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="351" y="72" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">Palgas</text>
+<text x="351" y="94" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Tout le mois treize</text>
+<rect x="476" y="44" width="208" height="70" rx="4" fill="#eef3f7" stroke="#5d7385"/>
+<text x="580" y="72" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5566">Ayil</text>
+<text x="580" y="94" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Un mois plein de l'an 2</text>
+<text x="350" y="140" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Sorti de l'agneau, pas encore entre chez le belier. Para, chapitre 1, michna 3.</text>
+</svg></div><div class="svg-cap">Keves, palgas, ayil : le mois qui separe l&#x27;agneau du belier.</div></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Pesachim_47a.html">&lsaquo; Pesachim 47a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Pesachim_48a.html">Pesachim 48a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

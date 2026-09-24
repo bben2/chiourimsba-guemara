@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chullin 2a — &#x27;Hakol shochtin&#x27; : qui peut abattre, et le sens du mot &#x27;tous&#x27; (a priori ou a posteriori)</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Chullin 2a — &#x27;Hakol shochtin&#x27; : qui peut abattre, et le sens du mot &#x27;tous&#x27; (a priori ou a posteriori)</h1>
+    <div class="ref">Chullin 2a</div>
+  </header>
+  <nav class="dafnav"><span class="nav-b off">&lsaquo;</span><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Chullin_2b.html">Chullin 2b &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> Michna inaugurale du traite : tous peuvent pratiquer la chehita, sauf le sourd-muet, le dement et le mineur (de peur qu&#x27;ils ne la gachent), leur abattage restant valable a posteriori s&#x27;ils sont surveilles. La Guemara releve une tension : &#x27;tous abattent&#x27; sonne comme une permission a priori, mais &#x27;leur abattage est cacher&#x27; comme une validite a posteriori.</p><p>Rav Aha montre, via les michnayot paralleles &#x27;tous substituent&#x27; (Temoura) et &#x27;tous evaluent et vouent&#x27; (Arakhin), que le mot &#x27;hakol&#x27; n&#x27;implique pas toujours &#x27;a priori&#x27; : la temoura est interdite (quarante coups) et il vaut mieux s&#x27;abstenir de vouer (Deut 23:23 ; Qohelet 5:4). Rav Achi repond que ces michnayot le precisent par la raison qu&#x27;elles ajoutent ; ici, faute d&#x27;une telle reserve, &#x27;tous abattent&#x27; est bien a priori.</p><p>La sougya se clot sur la dispute Rabbi Meir / Rabbi Yehouda sur le voeu.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 244" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="244" fill="#fffdf8"/>
+  <text x="360" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Michna d'ouverture : qui peut faire la chehita ?</text>
+  <rect x="40" y="50" width="200" height="170" rx="10" fill="#eaf6ec" stroke="#15803d"/>
+  <rect x="260" y="50" width="200" height="170" rx="10" fill="#fdeaea" stroke="#b91c1c"/>
+  <rect x="480" y="50" width="200" height="170" rx="10" fill="#fdf3e3" stroke="#b45309"/>
+  <text x="140" y="86" text-anchor="middle" font-size="14" font-weight="700" fill="#15803d">Tous (hakol)</text>
+  <text x="140" y="132" text-anchor="middle" font-size="12.5" fill="#292524">a priori</text>
+  <text x="140" y="151" text-anchor="middle" font-size="11.5" fill="#78716c">(lechatchila)</text>
+  <text x="140" y="180" text-anchor="middle" font-size="13" font-weight="700" fill="#15803d">cacher</text>
+  <text x="360" y="84" text-anchor="middle" font-size="14" font-weight="700" fill="#b91c1c">Cheresh, choteh,</text>
+  <text x="360" y="103" text-anchor="middle" font-size="14" font-weight="700" fill="#b91c1c">katan</text>
+  <text x="360" y="145" text-anchor="middle" font-size="12.5" fill="#292524">exclus a priori</text>
+  <text x="360" y="172" text-anchor="middle" font-size="11.5" fill="#78716c">de peur qu'ils ne</text>
+  <text x="360" y="189" text-anchor="middle" font-size="11.5" fill="#78716c">gachent l'abattage</text>
+  <text x="580" y="84" text-anchor="middle" font-size="13.5" font-weight="700" fill="#b45309">...mais surveilles</text>
+  <text x="580" y="103" text-anchor="middle" font-size="11" fill="#78716c">(acherim roin otan)</text>
+  <text x="580" y="145" text-anchor="middle" font-size="12.5" fill="#292524">a posteriori</text>
+  <text x="580" y="164" text-anchor="middle" font-size="11.5" fill="#78716c">(bedi'avad)</text>
+  <text x="580" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#b45309">cacher</text>
+</svg></div>
+          <figcaption>La Michna (segment 0) : tous abattent a priori, sauf cheresh/choteh/katan, valables a posteriori sous surveillance.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 296" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="296" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Le mot 'hakol' (tous) implique-t-il toujours 'a priori' ?</text>
+  <rect x="30" y="42" width="300" height="34" fill="#f3eee2" stroke="#d6cdbb"/>
+  <rect x="330" y="42" width="110" height="34" fill="#e8ecfb" stroke="#d6cdbb"/>
+  <rect x="440" y="42" width="250" height="34" fill="#e8ecfb" stroke="#d6cdbb"/>
+  <text x="46" y="64" font-size="12.5" font-weight="700" fill="#1c1917">Michna</text>
+  <text x="385" y="64" text-anchor="middle" font-size="12.5" font-weight="700" fill="#3730a3">a priori ?</text>
+  <text x="565" y="64" text-anchor="middle" font-size="12.5" font-weight="700" fill="#3730a3">pourquoi</text>
+  <rect x="30" y="76" width="300" height="52" fill="#ffffff" stroke="#d6cdbb"/>
+  <rect x="330" y="76" width="110" height="52" fill="#ffffff" stroke="#d6cdbb"/>
+  <rect x="440" y="76" width="250" height="52" fill="#ffffff" stroke="#d6cdbb"/>
+  <text x="46" y="100" font-size="12.5" font-weight="700" fill="#292524">Hakol shochtin</text>
+  <text x="46" y="118" font-size="11" fill="#78716c">(notre Michna)</text>
+  <text x="385" y="107" text-anchor="middle" font-size="13" font-weight="700" fill="#15803d">OUI</text>
+  <text x="565" y="107" text-anchor="middle" font-size="11.5" fill="#292524">aucune reserve enoncee</text>
+  <rect x="30" y="128" width="300" height="52" fill="#fbf7ef" stroke="#d6cdbb"/>
+  <rect x="330" y="128" width="110" height="52" fill="#fbf7ef" stroke="#d6cdbb"/>
+  <rect x="440" y="128" width="250" height="52" fill="#fbf7ef" stroke="#d6cdbb"/>
+  <text x="46" y="152" font-size="12.5" font-weight="700" fill="#292524">Hakol mamirin</text>
+  <text x="46" y="170" font-size="11" fill="#78716c">(Temoura 2a)</text>
+  <text x="385" y="159" text-anchor="middle" font-size="13" font-weight="700" fill="#b91c1c">NON</text>
+  <text x="565" y="153" text-anchor="middle" font-size="11" fill="#292524">temoura interdite, 40 coups ;</text>
+  <text x="565" y="170" text-anchor="middle" font-size="11" fill="#292524">precisee par la raison</text>
+  <rect x="30" y="180" width="300" height="56" fill="#ffffff" stroke="#d6cdbb"/>
+  <rect x="330" y="180" width="110" height="56" fill="#ffffff" stroke="#d6cdbb"/>
+  <rect x="440" y="180" width="250" height="56" fill="#ffffff" stroke="#d6cdbb"/>
+  <text x="46" y="203" font-size="12.5" font-weight="700" fill="#292524">Hakol maarikhin / nodrim</text>
+  <text x="46" y="221" font-size="11" fill="#78716c">(Arakhin 2a)</text>
+  <text x="385" y="212" text-anchor="middle" font-size="13" font-weight="700" fill="#b91c1c">NON</text>
+  <text x="565" y="206" text-anchor="middle" font-size="11" fill="#292524">mieux vaut ne pas vouer</text>
+  <text x="565" y="223" text-anchor="middle" font-size="11" fill="#292524">(Deut 23:23 ; Qoh 5:4)</text>
+  <text x="360" y="262" text-anchor="middle" font-size="11.5" fill="#78716c">'hakol' = la loi s'applique a eux, pas 'permis a priori'. Ici, faute de reserve enoncee -&gt; bien a priori.</text>
+</svg></div>
+          <figcaption>Le coeur de la sougya (segments 1-4) : &#x27;hakol&#x27; ne signifie pas toujours &#x27;a priori&#x27; ; il faut lire la raison enoncee.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַתְנִי׳ הַכֹּל שׁוֹחֲטִין וּשְׁחִיטָתָן כְּשֵׁרָה, חוּץ מֵחֵרֵשׁ שׁוֹטֶה וְקָטָן, שֶׁמָּא יְקַלְקְלוּ אֶת שְׁחִיטָתָן. וְכֻולָּן שֶׁשָּׁחֲטוּ וַאֲחֵרִים רוֹאִין אוֹתָן – שְׁחִיטָתָן כְּשֵׁרָה.</div>
+            <div class="fr"><p>MICHNA. Tous abattent (peuvent accomplir une chehita valide) et leur abattage est cacher, sauf le sourd-muet (cheresh), le dement (choteh) et le mineur (katan), de peur qu&#x27;ils ne gachent leur abattage.</p><p>Et tous ceux-la, s&#x27;ils ont abattu pendant que d&#x27;autres les surveillent, leur abattage est cacher.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַתְנֵי&#x27; הַכֹּל שׁוֹחֲטִין</b> כָּל הֵיכָא דְּתָנֵי הַכֹּל כּוּלְּהוּ מַיְיתֵי לְהוּ בִּשְׁמַעְתָּא קַמַּייְתָא דַּעֲרָכִין וּמְפָרֵשׁ הַכֹּל לַאֲתוּיֵי מַאי. וְהַכֹּל שׁוֹחֲטִין דְּמַתְנִיתִין פְּלִיגִי בָּהּ אָמוֹרָאֵי בַּגְּמָרָא לְמַר לַאֲתוּיֵי טָמֵא בְּחֻולִּין וּלְמַר לַאֲתוּיֵי כּוּתִי אוֹ מוּמָר:</div>
+          <div class="glose-fr">Partout ou [la Michna] enseigne &#x27;tous&#x27; (hakol), [le Talmud] rassemble toutes ces michnayot dans le premier chapitre d&#x27;Arakhin et explique : &#x27;tous&#x27; vient inclure quoi ? Et sur le &#x27;tous abattent&#x27; de notre Michna, les Amoraim divergent dans la Guemara : pour l&#x27;un, [le mot] vient inclure un homme impur (tameh) abattant de la houlin ; pour l&#x27;autre, un Kouti (Samaritain) ou un moumar (apostat).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְכֻולָּן</b> בַּגְּמָרָא מְפָרֵשׁ מַאי וְכֻולָּן:</div>
+          <div class="glose-fr">La Guemara explique ce que signifie &#x27;et tous ceux-la&#x27;.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַתְנֵי&#x27; הַכֹּל שׁוֹחֲטִין</b> כָּתוּב בְּהִלְכוֹת אֶרֶץ יִשְׂרָאֵל דְּנָשִׁים לֹא יִשְׁחֲטוּ מִפְּנֵי שֶׁדַּעְתָּן קַלּוֹת וְאֵין נִרְאֶה דַּאֲפִילּוּ בְּמֻוקְדָּשִׁין שׁוֹחֲטוֹת לְכַתְּחִלָּה כִּדְאָמְרִינַן פֶּרֶק כָּל הַפְּסוּלִין (זְבָחִים דַּף לא:) כָּל הַפְּסוּלִים שֶׁשָּׁחֲטוּ דִּיעֲבַד אִין לְכַתְּחִלָּה לָא וּרְמִינְהִי וְשָׁחַט מְלַמֵּד שֶׁהַשְּׁחִיטָה כְּשֵׁרָה כּוּ&#x27; וּמְשַׁנֵּי הוּא הַדִּין דַּאֲפִילּוּ לְכַתְּחִלָּה אֶלָּא מִשּׁוּם דְּבָעֵי לְמִיתְנֵי טָמֵא בְּמֻוקְדָּשִׁים דִּלְכַתְּחִלָּה לָא תְּנָא נָמֵי שֶׁשָּׁחֲטוּ וְלָא קָאָמַר מִשּׁוּם דְּבָעֵי לְמִיתְנֵי נָשִׁים דִּתְנָא לְהוּ בְּרֵישָׁא אֶלָּא וַדַּאי מִשּׁוּם דְּנָשִׁים שׁוֹחֲטוֹת לְכַתְּחִלָּה אֲפִילּוּ בְּמֻוקְדָּשִׁין וְהָא דְּלָא קָתָנֵי הַכֹּל שׁוֹחֲטִין אֶחָד אֲנָשִׁים וְאֶחָד נָשִׁים כִּדְקָתָנֵי בִּתְמוּרָה (דַּף ב.) הָתָם אִצְטְרִיךְ לְמִיתְנְייֵהּ כִּדְפֵירֵשׁ בְּרֵישׁ תְּמוּרָה מִשּׁוּם דְּכָל הַפָּרָשָׁה כֻּולָּהּ נֶאֶמְרָה בִּלְשׁוֹן זָכָר אֲבָל הָכָא אֵין חִידּוּשׁ בְּאִשָּׁה יוֹתֵר מִבְּאִישׁ וּבְפֶרֶק כָּל הַפְּסוּלִין (זְבָחִים דַּף לא:) גַּבֵּי קָדָשִׁים אִיצְטְרִיךְ לְמִיתְנֵי נָשִׁים מִשּׁוּם דְּבִשְׁאָר עֲבוֹדוֹת נָשִׁים פְּסוּלוֹת אֲפִילּוּ כֹּהֲנוֹת:</div>
+          <div class="glose-fr">Il est ecrit dans les Halakhot d&#x27;Eretz Israel que les femmes ne doivent pas abattre, car elles sont legeres d&#x27;esprit (daatan kalot). Cela ne parait pas exact, car elles abattent meme des animaux consacres a priori, comme nous disons au chapitre Kol ha-pessoulim (Zevahim 31b) : tous les disqualifies qui ont abattu — a posteriori oui, a priori non ; et l&#x27;on objecte : &#x27;ve-chahat&#x27; enseigne que leur abattage est cacher, etc. ; et l&#x27;on repond : il en va de meme a priori, mais c&#x27;est parce qu&#x27;il fallait enseigner &#x27;le tameh pour les consacres, a priori non&#x27; qu&#x27;on a enseigne aussi &#x27;qui ont abattu&#x27;. Et l&#x27;on ne dira pas que ce &#x27;qui ont abattu&#x27; est dit a cause des femmes, car elles sont enseignees au debut ; donc assurement les femmes abattent a priori, meme des consacres. Et si l&#x27;on n&#x27;enseigne pas ici &#x27;tous abattent, tant les hommes que les femmes&#x27; comme dans Temoura (2a), c&#x27;est que la-bas il fallait le preciser parce que toute la section de la Torah y est enoncee au masculin ; mais ici il n&#x27;y a pas de nouveaute pour la femme plus que pour l&#x27;homme. Et au chapitre Kol ha-pessoulim (Zevahim 31b), a propos des consacres, il fallait enseigner &#x27;les femmes&#x27; parce que pour les autres services du Temple les femmes sont disqualifiees, meme les filles de kohanim.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁמָּא יְקַלְקְלוּ כּוּ&#x27;</b> בַּגְּמָרָא (לְקַמָּן חֻולִּין יב:) דִּייֵּק מִדְּקָתָנֵי שֶׁמָּא יְקַלְקְלוּ וְלָא קָתָנֵי שֶׁמָּא קִלְקְלוּ ש&quot;מ אֵין מוֹסְרִין לָהֶן חֻולִּין לְכַתְּחִלָּה וּפֵ&quot;ה אֲפִילּוּ אֲחֵרִים רוֹאִין אוֹתָן וְק&#x27; לְפֵירוּשׁוֹ דְּהָא מִסֵּיפָא שָׁמְעִינַן לָהּ וְכֻולָּן שֶׁשָּׁחֲטוּ וַאֲחֵרִים רוֹאִין אוֹתָן כּוּ&#x27; דְּמַשְׁמַע דִּיעֲבַד דַּוְקָא וְלֵיכָּא לְמֵימַר דְּדִיעֲבַד נְקַט מִשּׁוּם טָמֵא בְּמֻוקְדָּשִׁין אוֹ אֵין מֻומְחִין אֲבָל חש&quot;ו אֲפִילּוּ לְכַתְּחִלָּה שׁוֹחֲטִין בַּאֲחֵרִים רוֹאִין אוֹתָן דְּהָא רָבָא הוּא דְּדָיֵיק שֶׁמָּא קִלְקְלוּ לָא קָתָנֵי וּלְרָבָא לָא קָאֵי וְכֻולָּן שֶׁשָּׁחֲטוּ אֶלָּא אחש&quot;ו כִּדְאָמְרִינַן בַּגְּמָרָא וי&quot;מ דְּגָרַס לְקַמָּן רַבָּה אֲבָל רָבָא לֹא דִּיֵּיק בֵּין יְקַלְקְלוּ לְקַלְקְלוֹ כִּי הֵיכִי דְּלָא חָייֵשׁ בְּהָא דְּלָא קָתָנֵי וְאִם שָׁחֲטוּ ור&quot;ת מְפָרֵשׁ דְּאֵין מוֹסְרִין לָהֶן חֻולִּין לְכַתְּחִלָּה לִשְׁחֹוט אֲפִילּוּ כְּדֵי לְהַשְׁלִיךְ לַכְּלָבִים דִּלְמָא אָתֵי לְמֵיכַל שֶׁיִּטְעוּ לְהַכְשִׁיר שְׁחִיטָתָן מִתּוֹךְ שֶׁיִּרְאוּ שֶׁמּוֹסְרִים לָהֶן כִּדְפָטַר לְקַמָּן שְׁחִיטָתָן מִכִּסּוּי דִּלְמָא אָתֵי לְמֵימַר שְׁחִיטָה מְעַלַּיְיתָא הִיא וְנִיחָא הַשְׁתָּא דִּבְאֵין אֲחֵרִים רוֹאִין אוֹתָן עָסְקִינַן בְּרֵישָׁא:</div>
+          <div class="glose-fr">Dans la Guemara (Houlin 12b) on deduit : du fait qu&#x27;on enseigne &#x27;de peur qu&#x27;ils ne gachent&#x27; (futur) et non &#x27;de peur qu&#x27;ils n&#x27;aient gache&#x27; (passe), on conclut qu&#x27;on ne leur confie pas de la houlin a priori, meme si d&#x27;autres les surveillent. Rachi a explique : meme si d&#x27;autres les surveillent. Cela fait difficulte a son explication, car on l&#x27;apprend deja de la fin : &#x27;et tous ceux-la, s&#x27;ils ont abattu pendant que d&#x27;autres les surveillent...&#x27;, qui implique a posteriori seulement. Et l&#x27;on ne peut dire que ce &#x27;a posteriori&#x27; est dit a cause du tameh pour les consacres ou des non-experts, tandis que le cheresh/choteh/katan abattraient meme a priori sous surveillance — car c&#x27;est Rava qui deduit &#x27;kilkelou lo katani&#x27;, et selon Rava le &#x27;qui ont abattu&#x27; ne porte pas sur eux [le tameh] mais sur le cheresh/choteh/katan, comme dans la Guemara. Certains lisent plus loin &#x27;Rabba&#x27; ; mais Rava ne distingue pas entre &#x27;yekalkelou&#x27; et &#x27;kilkelou&#x27;, de meme qu&#x27;il ne s&#x27;inquiete pas qu&#x27;on n&#x27;enseigne pas &#x27;et s&#x27;ils ont abattu&#x27;. Rabbenou Tam explique : on ne leur confie pas de houlin a priori pour abattre, meme en vue de la jeter aux chiens, de peur qu&#x27;on n&#x27;en vienne a en manger — qu&#x27;on se trompe a tenir leur abattage pour cacher en voyant qu&#x27;on le leur confie, comme la Guemara plus loin les dispense du recouvrement du sang de peur qu&#x27;on ne dise &#x27;c&#x27;est un abattage de premier ordre&#x27;. Tout s&#x27;eclaire alors : le debut de la Michna traite du cas ou d&#x27;autres NE les surveillent PAS.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">הַכֹּל שׁוֹחֲטִין וּשְׁחִיטָתָן כְּשֵׁירָה. חוּץ מֵחֵרֵשׁ שׁוֹטֶה וְקָטָן שֶׁמָּא יְקַלְקְלוּ בִשְׁחִיטָתָן וְכֻולָּן שֶׁשָּׁחֲטוּ וַאֲחֵרִים רוֹאִין אוֹתָן שְׁחִיטָתָן כְּשֵׁירָה. הָא דְּלָא תְּנָא אֶחָד אֲנָשִׁים וְאֶחָד נָשִׁים כִּדְקָתָנֵי בִּתְמוּרָה הָתָם אִיצְטְרִיךְ לְמִיתְנֵי נָשִׁים כִּדְקָתָנֵי הָתָם מִשּׁוּם דְּכָל הַפָּרָשָׁה בִּלְשׁוֹן זָכָר נֶאֶמְרָה. אֲבָל הָכָא אֵין חִדּוּשׁ בָּאִשָּׁה יוֹתֵר מִבְּאִישׁ. וְהָא דִּתְנָא בְּפֶ&#x27; כָּל הַפְּסוּלִים (זְבָחִים דַּף לֹא:) שֶׁהַשְּׁחִיטָה כְּשֵׁירָה בְּנָשִׁים מִשּׁוּם דִּשְׁאָר עֲבוֹדוֹת פְּסוּלוֹת בְּנָשִׁים הֶאֱפִילוּ כֹּהֲנוֹת אִיצְטְרִיךְ לְמֵימַר בִּשְׁחִיטָה דִּכְשֵׁירָה. וּבְהִלְכוֹת אֶרֶץ יִשְׂרָאֵל כָּתַב דְּנָשִׁים לֹא יִשְׁחֲטוּ מִפְּנֵי שֶׁדַּעְתָּן קַלּוֹת. וְאֵין הַשַּׁ&quot;ס שֶׁלָּנוּ סוֹבֵר כֵּן מִדְּאָמַר בְּפָ&#x27; כָּל הַפְּסוּלִין שֶׁשָּׁחֲטוּ דִּיעֲבַד אִין לְכַתְּחִלָּה לָא וּרְמִינְהוּ וְשָׁחַט מְלַמֵּד שֶׁהַשְּׁחִיטָה כְּשֵׁירָה בְּזָר. וּמְשַׁנֵּי הוּא הַדִּין דְּאַפֵּי&#x27; לְכַתְּחִלָּה וּמִשּׁוּם דְּבָעֵי לְמִיתְנֵי טָמֵא דִּלְכַתְּחִלָּה לֹא שֶׁמָּא יִגַּע בַּבָּשָׂר תְּנָא שֶׁשְּׁחָטוֹ. וְאִם אִיתָא דְּנָשִׁים לֹא יִשְׁחֲטוּ לְכַתְּחִלָּה הֲוָה לֵיהּ לְמֵימַר מִנָּשִׁים דְּמַתְנֵי בְּרֵישָׁא. וְעוֹד דַּאֲפִילּוּ בְּחֻולִּין לֹא יִשְׁחֲטוּ לְכַתְּחִלָּה. וְאוֹתוֹ חָכָם שֶׁכָּתַב הִלְכוֹת א&quot;י כָּתַב חֻומְרוֹת מִדַּעְתּוֹ וּכְמוֹ כֵּן כָּתַב</div>
+          <div class="glose-fr">« Tous abattent (rituellement), et leur chehita [abattage rituel] est kachère [valide], excepté le sourd-muet (cheresh), l&#x27;imbécile (choteh) et le mineur (katan), de peur qu&#x27;ils ne gâchent leur chehita ; mais si tous ceux-là ont abattu et que d&#x27;autres les surveillaient, leur chehita est kachère. »
+Si la michna n&#x27;a pas enseigné ici « aussi bien les hommes que les femmes », comme elle l&#x27;enseigne dans le traité Temoura, c&#x27;est que là-bas il était nécessaire d&#x27;enseigner « les femmes » comme on l&#x27;y enseigne, parce que toute la parachah (section de la Torah y afférente) est formulée au masculin ; mais ici il n&#x27;y a aucun hidouch (nouveauté légale) concernant la femme plus que concernant l&#x27;homme. Et ce qui est enseigné au chapitre « Kol ha-pessoulim » (Zevahim 31b), à savoir que la chehita est kachère quand elle est faite par des femmes, c&#x27;est parce que les autres avodot (services du Temple) sont invalides (passoul) quand elles sont faites par des femmes, même par des filles de cohanim ; il était donc nécessaire de préciser qu&#x27;à la chehita elle est kachère. Or dans les Halakhot de la Terre d&#x27;Israël il a été écrit que les femmes ne doivent pas abattre, parce que « leur intention est légère » (leur esprit est versatile). Mais notre Talmud (le Chas qui est le nôtre) ne tient pas ainsi, car il est dit au chapitre « Kol ha-pessoulin » : « celles qui ont abattu » — a posteriori (be-diavad) oui, mais a priori (le-khathila) non ; et l&#x27;on objecte : « et il abattit » (Vaïkra) « enseigne que la chehita est kachère quand elle est faite par un non-cohen (zar) ». Et l&#x27;on résout : il en va de même (hou ha-din) qu&#x27;elle est kachère même a priori, et c&#x27;est parce qu&#x27;il fallait enseigner le cas de l&#x27;homme impur (tamé), qui a priori ne doit pas (abattre) de peur qu&#x27;il ne touche la chair, qu&#x27;on a enseigné « qui a abattu » (au passé, formule de be-diavad). Or s&#x27;il était vrai que les femmes ne doivent pas abattre a priori, il aurait fallu le dire à propos des femmes, qui sont enseignées en premier. De plus, même pour le profane (houlin) elles ne devraient pas abattre a priori (selon cet avis). Et ce sage qui a écrit les Halakhot de la Terre d&#x27;Israël a écrit des rigueurs (houmrot) de son propre chef, et de même il a écrit</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">מַתְנֵי&#x27; בִּשְׁחִיטַת עוֹבְדֵי כּוֹכָבִים נְבֵלָה וּמְטַמְּאָה בְּמַשָּׂא. וַאֲפִילּוּ רָאוּ אֲחֵרִים שֶׁשָּׁחֲטוּ יָפֶה וּפֵירֵשׁ ר&quot;י הַטַּעַם מִשּׁוּם דִּכְתִיב וְזָבַחְתָּ וְאָכַלְתָּ אוֹתוֹ שֶׁהוּא בַּר זְבִיחָה אֱכוֹל מִזִּבְחוֹ. וְהָרַמְבַּ&quot;ם זַ&quot;ל פֵּירֵשׁ מִשּׁוּם דִּכְתִיב וְקָרָא לְךָ וְאָכַלְתָּ מִזִּבְחוֹ מֵאַחַר שֶׁהִזְהִיר שֶׁמָּא יֹאכַל מִזִּבְחוֹ אַתָּה לָמֵד שֶׁזִּבְחוֹ אָסוּר וְאֵינָם דְּבָרִים שֶׁל טַעַם שֶׁהַתּוֹרָה הִזְהִירָה כְּשִׁיקְרָא לְךָ שֶׁלֹּא תֹּאכַל מִזִּבְחוֹ מִמַּה שֶׁזֶּבַח בְּתוֹךְ בֵּיתוֹ. רָבִינָא אָמַר הַכֹּל שׁוֹחֲטִין הַכֹּל מֻומְחִין שׁוֹחֲטִין אע&quot;פ שֶׁאֵין מֻוחְזָקִין. וְהוּא שֶׁיּוֹדְעִין בּוֹ שֶׁיּוֹדֵעַ הִלְכוֹת שְׁחִיטָה אֲבָל אִם אֵין יוֹדְעִין בּוֹ אִם יוֹדֵעַ הִלְכוֹת שְׁחִיטָה לֹא יִשְׁחֹוט. וְאִם שָׁחַט בּוֹדְקִין אוֹתוֹ אִם יוֹדֵעַ הִלְכוֹת שְׁחִיטָה מֻותָּר לֶאֱכֹול מִשְּׁחִיטָתוֹ וְאִם לָאו אָסוּר לֶאֱכֹול מִשְּׁחִיטָתוֹ. וְאָסוּר לִמְסֹור לוֹ לְכַתְּחִלָּה עַל סְמַךְ שֶׁיִּבְדְּקֶנּוּ אַחַר שְׁחִיטָה. מִשּׁוּם דְּלֵית לֵיהּ רֹוב מְצוּיִין אֵצֶל שְׁחִיטָה מֻומְחִין הֵן וְאִי לֵיתֵיהּ קַמַּן שֶׁלֹּא עָכַל לְבָדְקוֹ שְׁחִיטָתוֹ אֲסוּרָה. אוֹ אִי אִישְׁתְּלִי וְלָא בְּדָקֶיהָ וְאַכְלֵיהּ אִיסּוּרָא קָא אָכִיל. הִלְכָּךְ לְכַתְּחִלָּה אֵין מוֹסְרִין לוֹ לִשְׁחֹוט עַל סְמַךְ שֶׁיִּבְדְּקֶנּוּ. כִּדְאַשְׁכְּחַן בְּיִשְׂרָאֵל מוּמָר לַעֲבוֹדַת כּוֹכָבִים אַלִּיבָּא דְּרַב אַשִּׁי וּבְעוֹבֵד כּוֹכָבִים לְאַבַּיֵּי וְרָבָא שֶׁאָסוּר לִמְסֹור לָהֶם לְכַתְּחִלָּה לִשְׁחֹוט עַל סְמַךְ שֶׁיִּבְדֹּוק הַסַּכִּין אַחֲרָיו וְשֶׁיַּחְתֹּוךְ כַּזַּיִת בָּשָׂר וְיִתֵּן לְעוֹבֵד כּוֹכָבִים. מִשּׁוּם שֶׁאָסוּר לֶאֱכֹול מִשְּׁחִיטָתוֹ עַד שֶׁיִּבְדֹּוק הַסַּכִּין בְּיִשְׂרָאֵל מוּמָר לַעֲבוֹדַת כּוֹכָבִים וְעַד שֶׁיֹּאכַל הָעוֹבֵד כּוֹכָבִים כַּזַּיִת בָּשָׂר הִלְכָּךְ חָיְישִׁינַן דִּילְמָא מִישְׁתְּלֵי וְלָא עֲבִיד וְקָאֲכִיל אִיסּוּרָא. וְכֵן בְּשֶׁאֵין מֻומְחֶה נָמֵי. וְאִיכָּא דְאָמְרִי רָבִינָא אָמַר הַכֹּל מֻוחְזָקִין שׁוֹחֲטִין ואע&quot;פ שֶׁאֵין מֻומְחִין בד&quot;א שֶׁשָּׁחַט לְפָנֵינוּ שְׁנַיִם וּשְׁלֹשָׁה פְּעָמִים שֶׁלֹּא נִתְעַלֵּף. אֲבָל אִם לֹא שָׁחַט לְפָנֵינוּ שְׁנַיִם וּשְׁלֹשָׁה פְּעָמִים לֹא יִשְׁחֹוט שֶׁמָּא יִתְעַלֵּף וְאִם שָׁחַט וְאָמַר בָּרִי לִי שֶׁלֹּא נִתְעַלַּפְתִּי שְׁחִיטָתוֹ כְּשֵׁירָה. כֻּולְּהוּ כְּרָבִינָא לָא אָמְרִי לְהַךְ לִישָּׁנָא דְּאָמַר מֻומְחִין אִין שֶׁאֵין מֻומְחִין לָא רֹוב מְצוּיִין אֵצֶל שְׁחִיטָה מֻומְחִין הֵן. פֵּי&#x27; רַשִׁ&quot;י וְשׁוֹחֵט אַף לְכַתְּחִלָּה. דְּאֵין לְפָרֵשׁ דִּבְדִיעֲבַד הוּא דְּהָוְיָא שְׁחִיטָה כְּשֵׁירָה וְאַפֵּי&#x27; אֵין אֲחֵרִים רוֹאִין אוֹתוֹ וְלָא מָצוּ לְאוֹקוֹמֵי מַתְנִיתִין בְּהָכִי מִשּׁוּם דְּקַשְׁיָא לְהוּ וְכֻולָּן דְּמַאי נָפְקָא מִינַּהּ בְּלָאו הָכִי נָמֵי לְאַבַּיֵּי וְרָבָא וְרַב אָשֵׁי לָא מִתּוֹקַם לְהוּ וְכֻולָּן אֶלָּא אַחֵרֵשׁ שׁוֹטֶה וְקָטָן וְהַגְּאוֹנִים מְפָרְשִׁין מִשּׁוּם דְּאִית לְהוּ רֹוב מְצוּיִין אֵצֶל שְׁחִיטָה מֻומְחִין הֵן וּמוֹסְרִין לָהֶן לְכַתְּחִלָּה לִשְׁחֹוט אע&quot;פ שֶׁאֵין יָדוּעַ אִם מֻומְחֶה הוּא אִם לָאו עַל סְמַךְ שֶׁיִּבְדְּקֶנּוּ אַחַר שְׁחִיטָה. מִשּׁוּם דְּאִי לֵיתֵיהּ קַמַּן סָמְכִינַן אַרוֹב מְצוּיִין אֵצֶל שְׁחִיטָה מֻומְחִין וְשָׁרֵינַן לֵיהּ. וְכֵן אִי אִישְׁתְּלִי וְאַכְלֵיהּ בְּלֹא בְּדִיקָה לָאו אִיסּוּרָא עֲבַד וְסָמְכִינַן אַרֻובָּא. הִילְכָּךְ לָא חָיְישִׁינַן דִּילְמָא אִישְׁתְּלִי. וּמִיהוּ אִי אִיתֵיהּ קַמַּן לָא סָמְכִינַן אַרֻובָּא וְאָסוּר לֶאֱכֹול עַד שֶׁיִּבְדְּקֶנּוּ. וְכַיּוֹצֵא בָּזֶה יֵשׁ דְּבָרִים דְּסָמְכִינַן אַרֻובָּא בְּדִיעֲבַד אֲבָל לְכַתְּחִלָּה לָא. כְּגוֹן בְּדִיקַת סַכִּין אַחַר שְׁחִיטָה וְהָרֵיאָה שֶׁנְּטָלוּהָ זְאֵבִים וְקָשֶׁה לִי לְהַאי פֵּירוּשָׁא אַמַּאי לָא מוֹקֵי מַתְנִיתִין כְּרָבִינָא בְּמֻומְחִין וְהָכִי קָתָנֵי הַכֹּל שׁוֹחֲטִין לְכַתְּחִלָּה אע&quot;פ שֶׁאֵין מֻומְחִין עַל סְמַךְ שֶׁיִּבְדְּקֶנּוּ אַחַר שְׁחִיטָה. וְאִם שָׁחַט וְלֵיתֵיהּ קַמַּן שְׁחִיטָה כְּשֵׁירָה. וי&quot;ל דְּלָא שַׁיָּיךְ לְמִיתְנֵי הַכֹּל שׁוֹחֲטִין לְכַתְּחִלָּה כֵּיוָן דִּמְחֻוסַּר תִּיקּוּן הוּא אַחַר הַשְּׁחִיטָה שֶׁאֲסִיר לֶאֱכֹול בְּלֹא בְּדִיקָה וְלָא מִיקְּרֵי כִּי הַאי גַווְנָא לְכַתְּחִלָּה. וְכֵן כָּתַב רַב אִלְפָּס זַ&quot;ל.</div>
+          <div class="glose-fr">Notre michna traite de la chehita faite par des adorateurs d&#x27;étoiles (idolâtres) : c&#x27;est une bête morte (nevela) et elle rend impur par le port (massa, le fait de la porter), et ce même si d&#x27;autres les ont vus abattre correctement. Et le Ri (Rabbeinou Yits&#x27;hak) a expliqué la raison : parce qu&#x27;il est écrit « tu abattras (ve-zavahta) et tu mangeras » (Devarim) — de celui qui est apte à l&#x27;abattage (bar zeviha), tu mangeras de son sacrifice. Et le Rambam, de mémoire bénie, a expliqué : parce qu&#x27;il est écrit « et il t&#x27;invitera, et tu mangeras de son sacrifice » (Chemot) : puisque (la Torah) a mis en garde (de peur) que tu ne manges de son sacrifice (de l&#x27;idolâtre), tu apprends que son sacrifice est interdit. Mais ces propos ne sont pas satisfaisants (ne relèvent pas de la raison démonstrative), car la Torah a mis en garde, « lorsqu&#x27;il t&#x27;invitera », que tu ne manges pas de son sacrifice — de ce qu&#x27;il a abattu à l&#x27;intérieur de sa maison. Ravina a dit : « Tous abattent » signifie que tous les experts (moumhin) abattent, bien qu&#x27;ils ne soient pas présumés (mouhzakin) experts ; et cela à condition que l&#x27;on sache de lui qu&#x27;il connaît les lois de la chehita (hilkhot chehita). Mais si l&#x27;on ne sait pas de lui s&#x27;il connaît les hilkhot chehita, il ne doit pas abattre. Et s&#x27;il a abattu, on l&#x27;examine : s&#x27;il connaît les hilkhot chehita, il est permis de manger de sa chehita ; sinon, il est interdit de manger de sa chehita. Et il est interdit de lui confier (l&#x27;abattage) a priori en se fiant à ce qu&#x27;on l&#x27;examinera après la chehita, parce qu&#x27;il n&#x27;a pas pour lui (le principe) « la majorité de ceux qui se trouvent auprès de la chehita sont experts » ; car s&#x27;il n&#x27;est pas devant nous (présent après coup) pour l&#x27;examiner, sa chehita est interdite ; ou bien si l&#x27;on a oublié et qu&#x27;on ne l&#x27;a pas examiné et qu&#x27;on a mangé, on a mangé de l&#x27;interdit. C&#x27;est pourquoi, a priori, on ne lui confie pas d&#x27;abattre en se fiant à ce qu&#x27;on l&#x27;examinera. Comme nous le trouvons à propos du Juif apostat pour l&#x27;idolâtrie (yisraël moumar la-avoda zara) selon Rav Achi, et de l&#x27;idolâtre selon Abaye et Rava, à savoir qu&#x27;il est interdit de leur confier a priori d&#x27;abattre en se fiant à ce qu&#x27;on examinera le couteau après lui et qu&#x27;on découpera un ke-zayit (mesure d&#x27;une olive) de chair qu&#x27;on donnera à l&#x27;idolâtre. Parce qu&#x27;il est interdit de manger de sa chehita jusqu&#x27;à ce qu&#x27;on ait examiné le couteau — s&#x27;agissant du Juif apostat pour l&#x27;idolâtrie — et jusqu&#x27;à ce que l&#x27;idolâtre ait mangé un ke-zayit de chair ; c&#x27;est pourquoi nous craignons que peut-être on oublie et qu&#x27;on ne le fasse pas et qu&#x27;on mange de l&#x27;interdit. Et il en va de même aussi pour celui qui n&#x27;est pas expert. Et il y a ceux qui disent (une autre version) : Ravina a dit : « Tous » — les présumés (mouhzakin) — abattent, bien qu&#x27;ils ne soient pas (avérés) experts. Dans quel cas cela est-il dit (bamé devarim amourim) ? Lorsqu&#x27;il a abattu devant nous deux ou trois fois sans s&#x27;être évanoui. Mais s&#x27;il n&#x27;a pas abattu devant nous deux ou trois fois, il ne doit pas abattre, de peur qu&#x27;il ne s&#x27;évanouisse ; et s&#x27;il a abattu et a dit « il m&#x27;est certain que je ne me suis pas évanoui », sa chehita est kachère. Tous (les maîtres) n&#x27;ont pas tranché comme Ravina selon cette version qui dit « les experts oui, ceux qui ne sont pas experts non » (car ils tiennent que) « la majorité de ceux qui se trouvent auprès de la chehita sont experts ». Rachi a expliqué : et il abattra même a priori. Car on ne peut pas expliquer que ce soit seulement a posteriori que la chehita est kachère, et même sans que d&#x27;autres le surveillent, et qu&#x27;ils ne puissent pas établir la michna ainsi — parce que leur pose problème le mot « et tous », dont la portée (mai nafka mina) serait nulle sans cela ; car de toute façon, selon Abaye, Rava et Rav Achi, « et tous » ne peut être établi que sur le sourd-muet, l&#x27;imbécile et le mineur. Et les Gueonim expliquent : parce qu&#x27;ils tiennent le principe « la majorité de ceux qui se trouvent auprès de la chehita sont experts », on leur confie a priori d&#x27;abattre bien que l&#x27;on ne sache pas s&#x27;il est expert ou non, en se fiant à ce qu&#x27;on l&#x27;examinera après la chehita. Parce que s&#x27;il n&#x27;est pas devant nous (a posteriori), nous nous appuyons sur « la majorité de ceux qui se trouvent auprès de la chehita sont experts » et nous le permettons. Et de même, si l&#x27;on a oublié et qu&#x27;on a mangé sans examen, on n&#x27;a pas commis d&#x27;interdit, car nous nous appuyons sur la majorité (rouba). C&#x27;est pourquoi nous ne craignons pas que peut-être on ait oublié. Toutefois, s&#x27;il est devant nous, nous ne nous appuyons pas sur la majorité, et il est interdit de manger jusqu&#x27;à ce qu&#x27;on l&#x27;examine. Et il existe, à l&#x27;instar de cela, des cas où l&#x27;on s&#x27;appuie sur la majorité a posteriori mais non a priori — comme l&#x27;examen du couteau après la chehita, et le poumon (ha-réa) que des loups ont emporté. Et il m&#x27;est difficile, à propos de cette explication : pourquoi ne pas établir la michna comme Ravina, traitant des experts, et enseigner ainsi : « Tous abattent a priori, bien qu&#x27;ils ne soient pas experts, en se fiant à ce qu&#x27;on l&#x27;examinera après la chehita ; et s&#x27;il a abattu et n&#x27;est pas devant nous, la chehita est kachère » ? Et l&#x27;on peut répondre (ve-yech lomar) qu&#x27;il ne convient pas d&#x27;enseigner « tous abattent a priori », puisqu&#x27;il s&#x27;agit d&#x27;un cas qui requiert une rectification (tikoun) après la chehita — car il est interdit de manger sans examen — et un tel cas n&#x27;est pas appelé « a priori ». Et ainsi a écrit Rav Alfassi (le Rif), de mémoire bénie.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Michna d'ouverture du traite. Regle generale : <b>tout le monde</b> peut faire la chehita, sauf les trois incapables juridiques — <b>cheresh, choteh, katan</b> (sourd-muet, dement, mineur) — par crainte qu'ils ne ratent l'acte. Mais s'ils sont <b>surveilles</b> par une personne competente, leur abattage est valable a posteriori.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 244" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="244" fill="#fffdf8"/>
+  <text x="360" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Michna d'ouverture : qui peut faire la chehita ?</text>
+  <rect x="40" y="50" width="200" height="170" rx="10" fill="#eaf6ec" stroke="#15803d"/>
+  <rect x="260" y="50" width="200" height="170" rx="10" fill="#fdeaea" stroke="#b91c1c"/>
+  <rect x="480" y="50" width="200" height="170" rx="10" fill="#fdf3e3" stroke="#b45309"/>
+  <text x="140" y="86" text-anchor="middle" font-size="14" font-weight="700" fill="#15803d">Tous (hakol)</text>
+  <text x="140" y="132" text-anchor="middle" font-size="12.5" fill="#292524">a priori</text>
+  <text x="140" y="151" text-anchor="middle" font-size="11.5" fill="#78716c">(lechatchila)</text>
+  <text x="140" y="180" text-anchor="middle" font-size="13" font-weight="700" fill="#15803d">cacher</text>
+  <text x="360" y="84" text-anchor="middle" font-size="14" font-weight="700" fill="#b91c1c">Cheresh, choteh,</text>
+  <text x="360" y="103" text-anchor="middle" font-size="14" font-weight="700" fill="#b91c1c">katan</text>
+  <text x="360" y="145" text-anchor="middle" font-size="12.5" fill="#292524">exclus a priori</text>
+  <text x="360" y="172" text-anchor="middle" font-size="11.5" fill="#78716c">de peur qu'ils ne</text>
+  <text x="360" y="189" text-anchor="middle" font-size="11.5" fill="#78716c">gachent l'abattage</text>
+  <text x="580" y="84" text-anchor="middle" font-size="13.5" font-weight="700" fill="#b45309">...mais surveilles</text>
+  <text x="580" y="103" text-anchor="middle" font-size="11" fill="#78716c">(acherim roin otan)</text>
+  <text x="580" y="145" text-anchor="middle" font-size="12.5" fill="#292524">a posteriori</text>
+  <text x="580" y="164" text-anchor="middle" font-size="11.5" fill="#78716c">(bedi'avad)</text>
+  <text x="580" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#b45309">cacher</text>
+</svg></div><div class="svg-cap">Structure de la Michna.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">גמ׳ ״הַכֹּל שׁוֹחֲטִין״ – לְכַתְּחִלָּה, ״וּשְׁחִיטָתָן כְּשֵׁרָה״ – דִּיעֲבַד!</div>
+            <div class="fr"><p>GUEMARA. &#x27;Tous abattent&#x27; — a priori (lechatchila) ; &#x27;et leur abattage est cacher&#x27; — a posteriori (bedi&#x27;avad) ! [tension interne]</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>גְּמ&#x27; וּשְׁחִיטָתָן כְּשֵׁרָה דִּיעֲבַד</b> בִּתְמִיהַּ. וְקָשֶׁה רֵישָׁא דְּמַשְׁמַע דְּהַהוּא דְּאִתְּרַבִי מֵהַכֹּל לְכַתְּחִלָּה אִתְרַבַּי וְאִילּוּ סֵיפָא מַשְׁמַע דְּכִי מִרַבֵּינַן מֵהַכֹּל דִּיעֲבַד מִרַבֵּינַן לָהּ אֲבָל לְכַתְּחִלָּה לָא אִתְרַבַּי וְהָא לֵיכָּא לְמֵימַר כֻּולָּהּ מַתְנִיתִין לְכַתְּחִלָּה וַחֲדָא קָתָנֵי דְּכֵיוָן דִּתְנָא הַכֹּל שׁוֹחֲטִין פְּשִׁיטָא דִּכְשֵׁרָה:</div>
+          <div class="glose-fr">&#x27;Et leur abattage est cacher, a posteriori&#x27; — sur un ton d&#x27;etonnement (be-timha). La difficulte : le debut (&#x27;tous abattent&#x27;) implique que celui que &#x27;tous&#x27; inclut l&#x27;est a priori, alors que la fin (&#x27;leur abattage est cacher&#x27;) implique qu&#x27;en l&#x27;incluant par &#x27;tous&#x27; on ne l&#x27;inclut qu&#x27;a posteriori, non a priori. Et l&#x27;on ne peut dire que toute la Michna est a priori et n&#x27;enonce qu&#x27;une chose — car des lors qu&#x27;elle dit &#x27;tous abattent&#x27;, il est evident que c&#x27;est cacher.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Contradiction dans la formulation : '<b>tous abattent</b>' suggere une permission <b>a priori</b>, mais '<b>et leur abattage est cacher</b>' suggere une validite seulement <b>a posteriori</b>. La Guemara cherche a concilier.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רַב אַחָא בְּרֵיהּ דְּרָבָא לְרַב אָשֵׁי: וְכָל ״הַכֹּל״ לְכַתְּחִלָּה הוּא? אֶלָּא מֵעַתָּה: הַכֹּל מְמִירִין, אֶחָד הָאֲנָשִׁים וְאֶחָד הַנָּשִׁים – הָכִי נָמֵי דִּלְכַתְּחִלָּה הוּא? וְהָא כְּתִיב: ״לֹא יַחֲלִיפֶנּוּ וְלֹא יָמִיר אֹתוֹ טוֹב בְּרָע אוֹ רַע בְּטוֹב״!</div>
+            <div class="fr"><p>Rav Aha, fils de Rava, dit a Rav Achi : et tout &#x27;tous&#x27; (hakol) serait-il a priori ? Mais alors : &#x27;tous substituent (mamirin), tant les hommes que les femmes&#x27; (Temoura 2a) — la aussi serait-ce a priori ?</p><p>Or il est ecrit (Lev 27:10) : &#x27;Il ne l&#x27;echangera pas et ne le substituera pas, bon contre mauvais ou mauvais contre bon&#x27; [c&#x27;est un interdit] !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְכֹל הַכֹּל לְכַתְּחִלָּה הוּא</b> דְּתִקְשֶׁה לָךְ וְלֹא תּוּכַל לוֹמַר כֻּולָּהּ דִּיעֲבַד וה&quot;ק הַכֹּל תּוֹרַת שְׁחִיטָה נוֹהֶגֶת בָּהֶן שֶׁאִם שָׁחֲטוּ אוֹתָן הַפְּסוּלִין דְּמִתְרַבֵּי תְּהֵא שְׁחִיטָתָן כְּשֵׁרָה:</div>
+          <div class="glose-fr">[Rav Aha dit cela] pour te poser une difficulte, afin que tu ne puisses dire que toute la Michna est a posteriori : voici ce qu&#x27;elle dit — &#x27;tous&#x27;, c&#x27;est-a-dire la loi de la chehita s&#x27;applique a eux, de sorte que si ces personnes que &#x27;tous&#x27; inclut ont abattu, leur abattage est cacher.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא הַכֹּל מְמִירִים</b> מִי מָצֵית לְמֵימַר לְכַתְּחִלָּה יָבִיא בֶּהֱמַת חֻולִּין אֵצֶל בֶּהֱמַת קָדָשִׁים וְיֹאמַר זוֹ תְּמוּרַת זוֹ. הַכֹּל דִּתְמוּרָה מְפָרֵשׁ הָתָם לַאֲתוּיֵי יוֹרֵשׁ שֶׁמֵּמִיר בְּקָרְבַּן אָבִיו לְאַחַר מִיתַת אָבִיו דְּהָתָם תְּנַן אֵין מְמִירִין בְּשֶׁל אֲחֵרִים:</div>
+          <div class="glose-fr">Mais &#x27;tous substituent&#x27; — peux-tu dire &#x27;a priori&#x27; ? Cela voudrait dire qu&#x27;on amene a priori une bete profane aupres d&#x27;une bete consacree et qu&#x27;on dit &#x27;celle-ci en remplacement de celle-la&#x27; ! Le &#x27;tous&#x27; de Temoura est explique la-bas comme incluant l&#x27;heritier qui substitue [une bete] au sacrifice de son pere apres la mort de celui-ci — car la-bas on enseigne &#x27;on ne substitue pas a [un sacrifice] d&#x27;autrui&#x27;.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>טוֹב</b> תַּם:</div>
+          <div class="glose-fr">Bon (tov) — [une bete] sans defaut (tam).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>רַע</b> בַּעַל מוּם:</div>
+          <div class="glose-fr">Mauvais (ra) — [une bete] taree (baal moum).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Aha refute l'idee que '<b>hakol</b>' implique toujours a priori : dans Temoura, '<b>tous substituent</b>' ne peut pas etre a priori, puisque la <b>temoura</b> (substituer une bete profane a une bete consacree) est <b>interdite</b> par la Torah (Lev 27:10) et punie de flagellation.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָתָם, כִּדְקָתָנֵי טַעְמָא: לֹא שֶׁהָאָדָם רַשַּׁאי לְהָמִיר, אֶלָּא שֶׁאִם הֵמִיר – מוּמָר, וְסוֹפֵג אֶת הָאַרְבָּעִים.</div>
+            <div class="fr"><p>[Rav Achi repond :] La-bas, c&#x27;est comme l&#x27;enseigne la raison donnee : non que l&#x27;homme ait le droit de substituer, mais que s&#x27;il a substitue, la substitution prend effet (mumar), et il recoit les quarante coups. [Ici, faute d&#x27;une telle precision, &#x27;tous abattent&#x27; est bien a priori.]</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָתָם כִּדְקָתָנֵי טַעְמָא</b> דְּעָקַר לְהַכֹּל דְּרֵישָׁא דְּלָא תֵּימָא לְכַתְּחִלָּה הוּא אֲבָל הַכֹּל שׁוֹחֲטִין בְּדֻוכְתֵּיהּ קָאֵי דְּכָל כַּמָּה דְּלָא עָקַר לֵיהּ וְתַנָּא לֹא שֶׁיְּהוּ הַפְּסוּלִים רַשָּׁאִים לִשְׁחֹוט כִּדְעָקַר הָתָם מַשְׁמַע דִּלְכַתְּחִלָּה רַבִּינְהוּ וַהֲדַר תָּנֵי וּשְׁחִיטָתָן כְּשֵׁרָה דְּמַשְׁמַע דִּיעֲבַד:</div>
+          <div class="glose-fr">[La Michna de Temoura] deracine le &#x27;tous&#x27; du debut, pour que tu ne dises pas &#x27;a priori&#x27; ; mais &#x27;tous abattent&#x27; [de notre Michna] reste a sa place [a priori], car tant qu&#x27;elle ne le deracine pas en enseignant &#x27;non que les disqualifies aient le droit d&#x27;abattre&#x27; — comme elle le deracine la-bas — cela indique qu&#x27;elle les a inclus a priori, et ensuite elle enseigne &#x27;et leur abattage est cacher&#x27;, qui implique a posteriori.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא שֶׁהָאָדָם רַשַּׁאי</b> דִּכְתִיב לֹא יַחֲלִיפֶנּוּ וְרֵישָׁא הָכִי קָאָמַר הַכֹּל דִּין תְּמוּרָה נוֹהֶגֶת בָּהֶם וְהָא דִּתְנָא בְּרֵישָׁא הַכֹּל מְמִירִין וְאִיצְטְרִיךְ לֵיהּ תּוּ לְפָרוֹשֵׁי לֹא שֶׁהָאָדָם רַשַּׁאי כו&#x27; וְלָא נְקַט בְּרֵישָׁא לָשׁוֹן קְצָרָה הַכֹּל שֶׁהֵמִירוּ תְּמוּרָתָם תְּמוּרָה לְשׁוֹן הַתַּנָּאִים הוּא זֶה כְּמוֹ הַכֹּל שׁוֹחֲטִין הַכֹּל סוֹמְכִין הַכֹּל חַיָּיבִין הִלְכָּךְ הָכָא אע&quot;ג דְּהֻוצְרַךְ לְהַאֲרִיךְ לֹא שִׁינָּה הַתַּנָּא אֶת לְשׁוֹנוֹ:</div>
+          <div class="glose-fr">&#x27;Non que l&#x27;homme ait le droit&#x27; [de substituer] — car il est ecrit &#x27;il ne l&#x27;echangera pas&#x27; ; et le debut signifie : &#x27;tous&#x27; — la loi de la temoura s&#x27;applique a eux. Et le fait qu&#x27;on enseigne au debut &#x27;tous substituent&#x27; puis qu&#x27;il faille preciser &#x27;non que l&#x27;homme ait le droit, etc.&#x27; au lieu d&#x27;enoncer brievement &#x27;tous ceux qui ont substitue, leur substitution est valable&#x27;, c&#x27;est que &#x27;hakol&#x27; est une tournure des Tanaim, comme &#x27;tous abattent&#x27;, &#x27;tous posent les mains (somekhin)&#x27;, &#x27;tous sont tenus&#x27; ; c&#x27;est pourquoi ici, bien qu&#x27;il ait fallu s&#x27;etendre, le Tana n&#x27;a pas change sa formule.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מוּמָר</b> נִתְפֶּסֶת הַשְּׁנִיָּה וּשְׁתֵּיהֶן קְדוֹשׁוֹת:</div>
+          <div class="glose-fr">Prend effet (mumar) — la seconde bete est saisie [par la saintete], et les deux sont consacrees.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְסוֹפֵג אֶת הָאַרְבָּעִים</b> מִשּׁוּם לָאו דְּלָא יָמִיר:</div>
+          <div class="glose-fr">Et il recoit les quarante coups — a cause de l&#x27;interdit &#x27;lo yamir&#x27; (il ne substituera pas).</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָתָם כִּדְקָתָנֵי טַעְמָא</b> פֵּירֵשׁ בַּקּוּנְטְרֵס דְּעָקַר לֵיהּ לְהַכֹּל דְּרֵישָׁא דְּלָא תֵּימָא לְכַתְּחִלָּה הוּא וּלְשׁוֹן כִּדְקָתָנֵי טַעְמָא לֹא מַשְׁמַע כְּפֵירוּשׁוֹ וּמַה שֶׁפֵּירֵשׁ נָמֵי בַּמַּסְּקָנָא גַּבֵּי דְּאִי דִּיעֲבַד תַּרְתֵּי דִּיעֲבַד לָמָּה לִי ואע&quot;ג דְּבִתְמוּרָה נָמֵי תָּנֵי וַהֲדַר מְפָרֵשׁ הָתָם לָא תְּנָא כִּי הַאי גַווְנָא הַכֹּל מְמִירִין וּתְמוּרָתָן תְּמוּרָה גַּבֵּי הֲדָדֵי וְאִי מִשּׁוּם לֹא שֶׁהָאָדָם רַשַּׁאי לְהָמִיר מִשּׁוּם דְּבָעֵי לְאַסּוֹקֵי וְסוֹפֵג אֶת הָאַרְבָּעִים לְאַשְׁמוֹעִינַן דְּלוֹקִין עַל לָאו שֶׁאֵין בּוֹ מַעֲשֶׂה אֵין נִרְאֶה דְּמִשּׁוּם וְסוֹפֵג אֶת הָאַרְבָּעִים לְחוּדֵיהּ לָא הֲוָה לֵיהּ לְמִיתְנֵי תַּרְתֵּי דִּיעֲבַד דַּהֲוָה מָצֵי לְמִיתְנֵי הַכֹּל מְמִירִים וְהַמֵּמִיר סוֹפֵג אֶת הָאַרְבָּעִים וְעוֹד דִּבְרֵישׁ תְּמוּרָה (דַּף ב.) פָּרִיךְ הַכֹּל מְמִירִים לְכַתְּחִלָּה וְלֹא שֶׁהָאָדָם רַשַּׁאי לְהָמִיר דִּיעֲבַד וּמְשַׁנֵּי הָתָם רַב יְהוּדָה הָכִי קָתָנֵי הַכֹּל מַתְפִּיסִים בִּתְמוּרָה אֶחָד שׁוֹגֵג וְאֶחָד מֵזִיד וַהֲוָה לֵיהּ לְשַׁנּוּיֵי דִּתְנָא לֵיהּ מִשּׁוּם וְסוֹפֵג אֶת הָאַרְבָּעִים כִּדְפֵירֵשׁ בַּקּוּנְטְרֵס כָּאן וְנִרְאֶה לְרַבֵּינוּ תָּם דְּשִׁינּוּיָא דְּהָכָא הָוֵי כְּהַהִיא דִּתְמוּרָה וְהָכִי קָאָמַר הָתָם כִּדְקָתָנֵי טַעְמָא דִּלְהָכִי תְּנָא הַכֹּל מְמִירִים דְּמַשְׁמַע לְכַתְּחִלָּה לְאַשְׁמְעִינַן שֶׁאֲפִילּוּ הֵמִיר בְּמֵזִיד דְּהַייְנוּ לְכַתְּחִלָּה מוּמָר דְּלָא תֵּימָא אַרְבָּעִים בְּכַתְפֵּיהּ וְכָשֵׁר כְּדַאֲמָרָן בְּהַתּוֹדָה (מְנָחוֹת פא.) וְקָשֶׁה לְפֵירוּשׁוֹ דִּבְסוֹף פֶּרֶק קַמָּא דִּתְמוּרָה (דַּף יג.) מַשְׁמַע דְּמִן הַדִּין רָאוּי לִהְיוֹת תְּמוּרָה בְּמֵזִיד יוֹתֵר מִבְּשׁוֹגֵג דְּקָאָמַר יִהְיֶה לְרַבּוֹת שׁוֹגֵג כְּמֵזִיד וְיֵשׁ לוֹמַר דִּלְעִנְיַן בְּהֵמָה שֶׁתְּהֵא כְּשֵׁרָה לַמִּזְבֵּחַ פָּשׁוּט לָן שׁוֹגֵג יוֹתֵר מִמֵּזִיד אִי נָמֵי הָתָם אַיְירֵי בְּמֵזִיד וְלָא אַתְרוֹ בֵּיהּ דְּלָא הָווּ אַרְבָּעִים בְּכַתְפֵּיהּ וְהַהוּא מֵזִיד פָּשׁוּט לָן יוֹתֵר מִשּׁוֹגֵג:</div>
+          <div class="glose-fr">Rachi (le Kountras) a explique que [la Michna de Temoura] deracine le &#x27;tous&#x27; du debut, pour qu&#x27;on ne dise pas &#x27;a priori&#x27;. Mais la formule &#x27;comme l&#x27;enseigne la raison&#x27; ne s&#x27;accorde pas avec son explication ; de meme ce qu&#x27;il explique dans la conclusion, a propos de &#x27;si c&#x27;est a posteriori, pourquoi deux fois a posteriori ?&#x27;. Et bien que dans Temoura aussi on enseigne puis on explique, on n&#x27;y enseigne pas de cette maniere &#x27;tous substituent et leur substitution est valable&#x27; cote a cote. Et si l&#x27;on dit que c&#x27;est a cause de &#x27;non que l&#x27;homme ait le droit de substituer&#x27;, parce qu&#x27;il veut conclure &#x27;et il recoit les quarante coups&#x27; pour nous apprendre qu&#x27;on est flagelle pour un interdit sans acte (lav she-ein bo maaseh) — cela ne parait pas, car pour &#x27;et il recoit les quarante&#x27; a lui seul il n&#x27;aurait pas fallu enseigner deux fois &#x27;a posteriori&#x27;, puisqu&#x27;il aurait pu enseigner &#x27;tous substituent, et celui qui substitue recoit les quarante&#x27;. De plus, au debut de Temoura (2a) on objecte : &#x27;tous substituent&#x27; implique a priori, et &#x27;non que l&#x27;homme ait le droit de substituer&#x27; implique a posteriori ! Et l&#x27;on repond la-bas, au nom de Rav Yehouda : voici ce qu&#x27;elle enseigne — &#x27;tous font prendre [la saintete] par substitution, tant l&#x27;involontaire que le volontaire&#x27; ; or il aurait fallu repondre que le double est enseigne a cause de &#x27;et il recoit les quarante&#x27;, comme Rachi l&#x27;explique ici. Il parait donc a Rabbenou Tam que la reponse d&#x27;ici est comme celle de Temoura, et voici le sens : &#x27;la-bas, comme l&#x27;enseigne la raison&#x27; — si l&#x27;on a enseigne &#x27;tous substituent&#x27;, impliquant a priori, c&#x27;est pour nous apprendre que meme s&#x27;il a substitue volontairement (be-mezid), ce qui est &#x27;a priori&#x27;, la substitution prend effet, pour que tu ne dises pas &#x27;quarante coups sur l&#x27;epaule, mais la bete reste valable&#x27;, comme dans Ha-todah (Menahot 81a). On objecte a son explication : a la fin du premier chapitre de Temoura (13a) il ressort qu&#x27;il serait logique que la temoura prenne effet plutot pour le volontaire que pour l&#x27;involontaire, puisqu&#x27;on dit &#x27;yihyeh&#x27; vient inclure l&#x27;involontaire comme le volontaire. On peut repondre : quant a ce que la bete soit valable pour l&#x27;autel, l&#x27;involontaire nous est plus evident que le volontaire ; ou bien la-bas il s&#x27;agit d&#x27;un volontaire sans avertissement, donc sans les quarante coups sur l&#x27;epaule, et ce volontaire-la nous est plus evident que l&#x27;involontaire.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְסוֹפֵג אֶת הָאַרְבָּעִים</b> וא&quot;ת הֲוָה לֵיהּ לְמֵימַר וְסוֹפֵג שְׁמוֹנִים דְּהָא תְּרֵי לָאוֵי כְּתִיב לֹא יַחֲלִיפֶנּוּ וְלֹא יָמִיר וְיֵשׁ לוֹמַר דְּחַד בְּשֶׁלּוֹ וְחַד בְּשֶׁל חֲבֵרוֹ כִּדְאָמַר בִּתְמוּרָה (דַּף ט.) וּכְגוֹן דְּאָמַר חֲבֵרוֹ כָּל הָרוֹצֶה לְהָמִיר בִּבְהֶמְתּוֹ יָמִיר דִּבְעִנְיָן אַחֵר אֵין מְמִירִין בְּשֶׁל אֲחֵרִים וְהָכִי אִיתָא בְּהֶדְיָא בִּתְמוּרָה פ&quot;ק:</div>
+          <div class="glose-fr">Et il recoit les quarante coups — on pourrait objecter : il aurait fallu dire &#x27;et il recoit quatre-vingts&#x27;, puisqu&#x27;il y a deux interdits, &#x27;il ne l&#x27;echangera pas&#x27; et &#x27;il ne le substituera pas&#x27; ! On repond : l&#x27;un pour la sienne et l&#x27;autre pour celle d&#x27;autrui, comme dans Temoura (9a) — dans le cas ou son prochain a dit &#x27;quiconque veut substituer a ma bete, qu&#x27;il substitue&#x27; (car autrement on ne substitue pas a la bete d&#x27;autrui) ; et cela figure explicitement dans Temoura, premier chapitre.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse de Rav Achi : dans Temoura, le 'hakol' n'est <em>pas</em> a priori, et la Michna le dit expressement par la <b>raison</b> qu'elle ajoute — 'non que l'homme ait le droit de substituer, mais que s'il l'a fait, la substitution prend effet et il encourt les <b>quarante coups</b>'. Ici, faute d'une telle reserve, 'tous abattent' reste <b>a priori</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא הַכֹּל מַעֲרִיכִין וְנֶעֱרָכִין, נוֹדְרִין וְנִידָּרִין, הָכִי נָמֵי דִּלְכַתְּחִלָּה? וְהָא כְּתִיב: ״וְכִי תֶחְדַּל לִנְדֹּר לֹא יִהְיֶה בְךָ חֵטְא״!</div>
+            <div class="fr"><p>Plutot : &#x27;tous evaluent (maarikhin) et sont evalues (neerakhin), font des voeux (nodrim) et sont l&#x27;objet de voeux (nidrim)&#x27; (Arakhin 2a) — la aussi serait-ce a priori ? Or il est ecrit (Deut 23:23) : &#x27;Et si tu t&#x27;abstiens de faire des voeux, il n&#x27;y aura pas de faute en toi&#x27; [donc s&#x27;abstenir est preferable] !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(6)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַכֹּל מַעֲרִיכִין</b> הָתָם מְפָרֵשׁ לְאֵתוֹיֵי מֻופְלָא סָמוּךְ לְאִישׁ קָטָן הַיּוֹדֵעַ לְהַפְלוֹת לְשֵׁם מִי מַקְדִּישִׁין וְאִם סָמוּךְ לְפִרְקוֹ הוּא כְּגוֹן בֶּן י&quot;ב שָׁנָה וְיוֹם אֶחָד דְּבָרָיו קַיָּימִין אע&quot;פ שֶׁעֲדַייִן קָטָן הוּא עַד י&quot;ג שָׁנָה וְיוֹם אֶחָד:</div>
+          <div class="glose-fr">La-bas [Arakhin] on explique que ce &#x27;tous&#x27; vient inclure le &#x27;moufla samoukh le-ich&#x27; — le mineur proche [de la majorite] qui sait a qui l&#x27;on consacre ; s&#x27;il est proche de son terme, par exemple a douze ans et un jour, ses paroles tiennent, bien qu&#x27;il soit encore mineur jusqu&#x27;a treize ans et un jour.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַעֲרִיכִין</b> תּוֹרַת מַעֲרִיכִין עֲלֵיהֶם שֶׁאִם אָמַר עֶרְכִּי עָלַי אוֹ עֵרֶךְ פְּלוֹנִי עָלַי נִדְרוֹ קַיָּים ואע&quot;ג דְּקָטָן הוּא זֶה הַנּוֹדֵר חַיָּיב לִיתֵּן כְּפִי שָׁנִים שֶׁל נֶעֱרָךְ וְהַדָּמִים קִצּוּבִין בַּפָּרָשָׁה:</div>
+          <div class="glose-fr">La loi du erekh (montant forfaitaire) s&#x27;applique a eux : s&#x27;il dit &#x27;mon erekh m&#x27;incombe&#x27; ou &#x27;l&#x27;erekh d&#x27;untel m&#x27;incombe&#x27;, son voeu tient ; et bien qu&#x27;il soit mineur, ce voueur doit donner selon les annees de l&#x27;evalue, les montants etant fixes par la section de la Torah (Lev 27).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַכֹּל נֶעֱרָכִין</b> יֵשׁ לָהֶם עֵרֶךְ וַאֲפִילּוּ מֻוכֵּה שְׁחִין שֶׁאֵינוֹ שָׁוֶה כְּלוּם לִימָּכֵר בַּשּׁוּק יֵשׁ לוֹ עֵרֶךְ הַכָּתוּב בַּפָּרָשָׁה וְאִם אָמַר עַל עַצְמוֹ עֶרְכִּי עָלַי אוֹ אָמַר עַל אַחֵר עֵרֶךְ מֻוכֵּה שְׁחִין זֶה עָלַי לָא אָמְרִינַן הוֹאִיל וְדָמִים אֵין לוֹ עֵרֶךְ נָמֵי אֵין לוֹ:</div>
+          <div class="glose-fr">Tous sont evaluables : ils ont un erekh, meme un homme couvert d&#x27;ulceres (moukeh chehin) qui ne vaut rien a la vente au marche possede l&#x27;erekh inscrit dans la section ; et s&#x27;il dit de lui-meme &#x27;mon erekh m&#x27;incombe&#x27;, ou dit d&#x27;un autre &#x27;l&#x27;erekh de cet ulcereux m&#x27;incombe&#x27;, on ne dit pas &#x27;puisqu&#x27;il n&#x27;a pas de valeur marchande, il n&#x27;a pas non plus de erekh&#x27;.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַכֹּל נוֹדְרִים</b> דָּמֵי עָלַי אוֹ דְּמֵי פְּלוֹנִי עָלַי. וְהָתָם מְפָרֵשׁ דְּאַיְּידֵי דְּבָעֵי לְמִיתְנֵי הַכֹּל נִידָּרִין תְּנָא נָמֵי הַכֹּל נוֹדְרִים:</div>
+          <div class="glose-fr">Tous vouent [la valeur, damim] : &#x27;ma valeur m&#x27;incombe&#x27; ou &#x27;la valeur d&#x27;untel m&#x27;incombe&#x27;. Et la-bas on explique que, puisqu&#x27;il fallait enseigner &#x27;tous sont voues&#x27;, on a enseigne aussi &#x27;tous vouent&#x27;.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַכֹּל נִידָּרִים</b> כָּל אָדָם הַשָּׁוֶה כְּלוּם יֵשׁ לוֹ דָּמִים וְאִם אָמַר דָּמֵי עָלַי אוֹ אָמַר עַל אַחֵר דְּמֵי פְּלוֹנִי עָלַי נוֹתֵן לְפִי מַה שֶׁהוּא נִמְכָּר בַּשּׁוּק וַאֲפִילּוּ הָיָה הַנִּידָּר זֶה פָּחוֹת מִבֶּן חֹדֶשׁ וְאָמַר דְּמֵי תִּינוֹק זֶה עָלַי יִתֵּן דָּמָיו ואע&quot;פ שֶׁאֵין פָּחוֹת מִבֶּן חֹדֶשׁ נֶעֱרָךְ וְאִם אָמַר עֶרְכּוֹ עָלַי פָּטוּר מִכְּלוּם שֶׁלֹּא נָתְנָה בּוֹ תּוֹרָה עֵרֶךְ דִּכְתִיב (וַיִּקְרָא כז) וְאִם מִבֶּן חֹדֶשׁ וְעַד בֶּן חָמֵשׁ שָׁנִים דָּמִים מִיהָא יֵשׁ לוֹ לְפִי שָׁוְיוֹ וְאִם אָמַר בְּתוֹרַת דָּמִים נוֹתֵן דָּמָיו:</div>
+          <div class="glose-fr">Tous sont l&#x27;objet de voeux : tout homme qui vaut quelque chose a une valeur (damim) ; et s&#x27;il dit &#x27;sa valeur m&#x27;incombe&#x27; ou dit d&#x27;un autre &#x27;la valeur d&#x27;untel m&#x27;incombe&#x27;, il donne selon ce qu&#x27;il se vend au marche, meme si l&#x27;objet du voeu a moins d&#x27;un mois ; s&#x27;il dit &#x27;la valeur de ce nourrisson m&#x27;incombe&#x27;, il donne sa valeur, bien qu&#x27;un enfant de moins d&#x27;un mois ne soit pas evaluable au erekh. S&#x27;il dit &#x27;son erekh m&#x27;incombe&#x27;, il est quitte de tout, car la Torah ne lui a pas fixe de erekh — comme il est ecrit (Lev 27) &#x27;et si c&#x27;est d&#x27;un mois jusqu&#x27;a cinq ans...&#x27; : il a tout de meme une valeur selon son prix, et s&#x27;il s&#x27;est exprime en termes de damim, il donne sa valeur.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא יִהְיֶה בְךָ חֵטְא</b> הָא אִם תָּדוּר יִהְיֶה בְּךָ חֵטְא:</div>
+          <div class="glose-fr">&#x27;Il n&#x27;y aura pas de faute en toi&#x27; — d&#x27;ou l&#x27;on deduit : mais si tu voues, il y aura une faute en toi.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Autre refutation depuis Arakhin : '<b>tous evaluent et sont evalues, vouent et sont voues</b>' ne peut etre a priori, puisque l'Ecriture loue celui qui <b>s'abstient</b> de vouer (Deut 23:23).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּכְתִיב: ״טוֹב אֲשֶׁר לֹא תִדֹּר מִשֶּׁתִּדּוֹר וְלֹא תְשַׁלֵּם״, וְתַנְיָא: טוֹב מִזֶּה וּמִזֶּה שֶׁאֵינוֹ נוֹדֵר כָּל עִיקָּר, דִּבְרֵי רַבִּי מֵאִיר. רַבִּי יְהוּדָה אוֹמֵר: טוֹב מִזֶּה וּמִזֶּה נוֹדֵר וּמְשַׁלֵּם. וַאֲפִילּוּ רַבִּי יְהוּדָה לָא קָאָמַר אֶלָּא בְּאוֹמֵר ״הֲרֵי זוֹ״,</div>
+            <div class="fr"><p>Et il est ecrit (Qohelet 5:4) : &#x27;Mieux vaut que tu ne voues pas, que de vouer et ne pas accomplir&#x27; ; et il est enseigne (braita) : mieux que l&#x27;un et l&#x27;autre vaut celui qui ne voue pas du tout — paroles de Rabbi Meir. Rabbi Yehouda dit : mieux que l&#x27;un et l&#x27;autre vaut celui qui voue et accomplit.</p><p>Et meme Rabbi Yehouda ne le dit que dans le cas ou l&#x27;on dit &#x27;voici ceci&#x27; (hareh zo),</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(5)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>טוֹב אֲשֶׁר לֹא תִדֹּור</b> לְעֵיל מִינֵּיהּ כְּתִיב אֵת אֲשֶׁר תִּדֹּור שַׁלֵּם וַאֲפִילּוּ הָכֵי טוֹב אֲשֶׁר לֹא תִדֹּור שֶׁמָּא תָּדוּר וְלֹא תְּשַׁלֵּם הָכִי מְפָרֵשׁ לֵיהּ רַבִּי מֵאִיר:</div>
+          <div class="glose-fr">&#x27;Mieux vaut ne pas vouer&#x27; — juste avant il est ecrit &#x27;ce que tu as voue, accomplis-le&#x27; ; et malgre cela &#x27;mieux vaut ne pas vouer&#x27;, de peur que tu ne voues et n&#x27;accomplisses pas. Ainsi l&#x27;explique Rabbi Meir.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>טוֹב מִזֶּה וּמִזֶּה</b> מִנּוֹדֵר וּמְשַׁלֵּם וּמִנּוֹדֵר וְאֵינוֹ מְשַׁלֵּם:</div>
+          <div class="glose-fr">Mieux que l&#x27;un et l&#x27;autre — que celui qui voue et accomplit, et que celui qui voue et n&#x27;accomplit pas.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁאֵינוֹ נוֹדֵר כָּל עִיקָּר</b> שֶׁהִרְגִּיל בִּנְדָרִים בָּא לִידֵי לֹא יַחֵל דְּבָרוֹ:</div>
+          <div class="glose-fr">Celui qui ne voue pas du tout — car celui qui s&#x27;accoutume aux voeux en vient a [transgresser] &#x27;il ne profanera pas sa parole&#x27; (lo yahel devaro).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>רַבִּי יְהוּדָה אוֹמֵר טוֹב מִזֶּה וּמִזֶּה נוֹדֵר וּמְשַׁלֵּם</b> דְּהָכִי מַשְׁמַע טוֹב אֲשֶׁר לֹא תִדֹּור מִשֶּׁתִּדּוֹר וְלֹא תְשַׁלֵּם אֲבָל מִשֶּׁתִּדּוֹר וּתְשַׁלֵּם לֹא שֶׁהוּא טוֹב מִכֻּולָּם:</div>
+          <div class="glose-fr">Rabbi Yehouda dit : mieux que l&#x27;un et l&#x27;autre vaut celui qui voue et accomplit — car voici le sens : &#x27;mieux vaut ne pas vouer que vouer et ne pas accomplir&#x27; ; mais &#x27;que vouer et accomplir&#x27;, non — celui-la est le meilleur de tous.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וַאֲפִילּוּ ר&#x27; יְהוּדָה לָא קָאָמַר אֶלָּא דְּאָמַר הֲרֵי זוֹ</b> דְּאִם מֵתָה אוֹ נִגְנְבָה אֵינוֹ חַייָּב בְּאַחְרָיוּתָהּ. אִי נָמֵי כֵּיוָן דְּאַפְרְשָׁהּ תּוּ לָא הָדַר בֵּיהּ:</div>
+          <div class="glose-fr">Et meme Rabbi Yehouda ne le dit que lorsqu&#x27;on dit &#x27;voici ceci&#x27; (hareh zo) — car alors, si la bete meurt ou est volee, il n&#x27;est pas tenu d&#x27;en repondre. Autre explication : du fait qu&#x27;il l&#x27;a deja mise a part, il ne peut plus se retracter.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּכְתִיב טוֹב אֲשֶׁר לֹא תִדֹּור</b> מֵעִיקָּרָא מַייְתֵי מִדִּבְרֵי תּוֹרָה וַהֲדַר מַיְיתֵי מִדִּבְרֵי קַבָּלָה:</div>
+          <div class="glose-fr">&#x27;Et il est ecrit : mieux vaut ne pas vouer&#x27; — d&#x27;abord la Guemara apporte une preuve des paroles de la Torah (Deut 23:23), puis des paroles de la tradition (divrei kabbala, Qohelet 5:4).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>טוֹב מִזֶּה וּמִזֶּה שֶׁאֵינוֹ נוֹדֵר כָּל עִיקָּר</b> פ&quot;ה דִּלְעֵיל מִינֵּיהּ כְּתִיב אֵת אֲשֶׁר תִּדֹּור שַׁלֵּם וַאֲפִילּוּ הָכֵי טוֹב אֲשֶׁר לֹא תִדֹּור שֶׁמָּא תָּדוּר וְלֹא תְּשַׁלֵּם וְקָשֶׁה לר&quot;ת דְּלָא מַיְיתֵי בַּגְּמָרָא הַהוּא קְרָא כְּלָל וְנִרְאֶה לר&quot;ת דְּכֻולֵּי מִלְּתָא דָּרֵישׁ מֵהַאי קְרָא דַּהֲוָה לֵיהּ לְמִיכְתַּב טוֹב אֲשֶׁר לֹא תִדֹּור מִשֶּׁתִּדּוֹר וַאֲנָא יָדַעְנָא דְּמִשֶּׁתָּדוּר וְלֹא תְּשַׁלֵּם קָאָמַר אֶלָּא לְהָכִי קָאָמַר וְלֹא תְּשַׁלֵּם לְגַלּוֹיֵי עַל מִשֶּׁתִּדּוֹר דְּמִשֶּׁתִּדּוֹר כְּדֶרֶךְ הַנּוֹדְרִין קָאָמַר שֶׁנּוֹדְרִין וּמְשַׁלְּמִין כִּדְאָמַר גַּבֵּי שָׂכִיר וְתוֹשָׁב בָּא זֶה וְלִימֵּד עַל זֶה (קִדּוּשִׁין דַּף ד.):</div>
+          <div class="glose-fr">&#x27;Mieux que l&#x27;un et l&#x27;autre vaut celui qui ne voue pas du tout&#x27; — Rachi a explique : juste avant il est ecrit &#x27;ce que tu as voue, accomplis-le&#x27;, et malgre cela &#x27;mieux vaut ne pas vouer, de peur que tu ne voues et n&#x27;accomplisses pas&#x27;. Cela fait difficulte a Rabbenou Tam, car la Guemara n&#x27;apporte pas du tout ce verset-la. Il parait donc a Rabbenou Tam que tout se deduit de ce verset-ci [Qohelet] : il aurait du ecrire &#x27;mieux vaut ne pas vouer que vouer&#x27;, et je saurais de moi-meme qu&#x27;il s&#x27;agit de &#x27;vouer et ne pas accomplir&#x27; ; mais s&#x27;il dit &#x27;et ne pas accomplir&#x27;, c&#x27;est pour reveler, a propos de &#x27;que vouer&#x27;, qu&#x27;il parle de celui qui voue a la maniere ordinaire des voueurs, qui vouent et accomplissent — selon le principe &#x27;ce verset est venu enseigner sur l&#x27;autre&#x27; (cf. Kiddouchin 4a).</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">טוֹב מִזֶּה וּמִזֶּה, שֶׁאֵינוֹ נוֹדֵר כָּל עִקָּר (דְּבָרִים כג, כג) (קֹהֶלֶת ה, ד) . פֵּירוּשׁ טוֹב מִמִּי שֶׁנּוֹדֵר וְאֵינוֹ מְשַׁלֵּם מִיָּד אֶלָּא לְאַחַר זְמַן וּמִמִּי שֶׁנּוֹדֵר וּמְשַׁלֵּם מִיָּד דְּהַיְינוּ תּוֹךְ שָׁעָה אַחַת, הוּא שֶׁאֵינוֹ נוֹדֵר כָּל עִיקָּר כְּלוֹמַר אֵינוֹ מַזְכִּיר בְּפִיו לְשׁוֹן נֶדֶר לוֹמַר &#x27;הֲרֵי עָלַי&#x27; אֶלָּא אוֹמֵר &#x27;הֲרֵי זֶה&#x27; דְּאֵין כָּאן נֶדֶר כְּלָל דִּבְרֵי רַבִּי מֵאִיר אֲבָל רַבִּי יְהוּדָה אוֹמֵר טוֹב מִזֶּה וּמִזֶּה דְּהַיְינוּ מִמִּי שֶׁנּוֹדֵר וְאֵינוֹ מְשַׁלֵּם אֶלָּא לְאַחֲרֵי זֶה וּמִמִּי שֶׁנּוֹדֵר וּמְשַׁלֵּם מִיָּד דְּהַייְנוּ תּוֹךְ שָׁעָה אַחַת הוּא הַנּוֹדֵר וּמְשַׁלֵּם תּוֹךְ כְּדֵי דִבּוּר שֶׁאוֹמֵר הֲרֵי עָלַי וְהַחֵפֶץ אוֹ הַכֶּסֶף בְּיָדוֹ וְנוֹתְנוֹ תּוֹךְ כְּדֵי דִבּוּר מִפְּנֵי שֶׁזֶּה שְׁתֵּי מִצְוֹת הָאֶחָד מִצְוַת הַנֶּדֶר שֶׁאָמַר &#x27;הֲרֵי עָלַי&#x27; שֶׁחִיֵּיב עַצְמוֹ לִצְדָקָה וְהַשֵּׁנִי מִצְוַת הַפֵּרָעוֹן שֶׁפָּרַע תּוֹךְ כְּדֵי דִבּוּר יְשַׁלֵּם נִדְרוֹ מַה שֶׁאֵין כֵּן אִם אָמַר &#x27;הֲרֵי זֶה&#x27; אֵין בְּיָדוֹ אֶלָּא מִצְוָה אַחַת שֶׁהִקְדִּישׁ הַחֵפֶץ אוֹ הַכֶּסֶף.</div>
+          <div class="glose-fr">« Mieux que l&#x27;un et l&#x27;autre vaut celui qui ne voue pas du tout » (Deut 23:23 ; Qohelet 5:4). Explication : mieux que celui qui voue et n&#x27;accomplit pas immédiatement mais seulement plus tard, et que celui qui voue et accomplit immédiatement, c&#x27;est-à-dire dans l&#x27;heure, vaut celui qui ne voue pas du tout — c&#x27;est-à-dire qu&#x27;il ne prononce pas de sa bouche une formule de vœu en disant &#x27;cela m&#x27;incombe&#x27; (hareh alai), mais dit &#x27;voici ceci&#x27; (hareh zeh), de sorte qu&#x27;il n&#x27;y a là aucun vœu : paroles de Rabbi Meir. Mais Rabbi Yehouda dit : mieux que l&#x27;un et l&#x27;autre — c&#x27;est-à-dire que celui qui voue et n&#x27;accomplit que plus tard, et que celui qui voue et accomplit immédiatement, dans l&#x27;heure — vaut celui qui voue et accomplit dans le temps d&#x27;une parole (toch kedei dibour), en disant &#x27;cela m&#x27;incombe&#x27; (hareh alai) alors que l&#x27;objet ou l&#x27;argent est dans sa main et qu&#x27;il le donne dans le temps d&#x27;une parole ; car celui-là [remplit] deux mitzvot : l&#x27;une, la mitzva du vœu, ayant dit &#x27;cela m&#x27;incombe&#x27;, par laquelle il s&#x27;est engagé à la tsedaka ; la seconde, la mitzva de l&#x27;acquittement, ayant payé dans le temps d&#x27;une parole, accomplissant ainsi son vœu. Il n&#x27;en va pas de même s&#x27;il dit &#x27;voici ceci&#x27; (hareh zeh) : il n&#x27;a alors en main qu&#x27;une seule mitzva, celle d&#x27;avoir consacré l&#x27;objet ou l&#x27;argent.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">שׁוֹטֶה מְפָרֵשׁ בַּחֲגִיגָה דַּף ג: הַיּוֹצֵא יְחִידִי בַּלַּיְלָה וְהַלָּן בְּבֵית הַקְּבָרוֹת וְהַמְקָרֵעַ כְּסוּתוֹ. וְתַנְיָא אֵיזֶהוּ שׁוֹטֶה זֶה הַמְאַבֵּד כָּל מַה שֶׁנּוֹתְנִין לוֹ. וְקָאָמַר רַבִּי יוֹחָנָן אֲפִילּוּ בְּאֶחָד מֵהֶן. וְהוּא דְּקָעֲבִיד דֶּרֶךְ שְׁטוּת. וְכֵן הֲלָכָה. וְקָטָן דְּמַתְנִיתִין שֶׁאֵין שׁוֹחֵט לְכַתְּחִלָּה אֲפִילּוּ כְּשֶׁגָּדוֹל עוֹמֵד עַל גַּבָּיו הַיְינוּ בְּקָטָן שֶׁלֹּא הִגִּיעַ לְחִינּוּךְ. וְחִינּוּךְ דִּשְׁחִיטָה הַייְנוּ שֶׁיּוֹדֵעַ לְאַמֵּן אֶת יָדָיו. אֲבָל קָטָן מֻומְחֶה וְיוֹדֵעַ לְאַמֵּן אֶת יָדָיו שׁוֹחֵט לְכַתְּחִלָּה כְּשֶׁגָּדוֹל עוֹמֵד עַל גַּבָּיו כִּדְאִיתָא בְּסֻוכָּה דַּף מב. קָטָן הַיּוֹדֵעַ לִשְׁמוֹר תְּפִילִּין אָבִיו לוֹקֵחַ לוֹ תְּפִילִּין. הַיּוֹדֵעַ לִשְׁחֹוט מֻותָּר לֶאֱכֹול מִשְּׁחִיטָתוֹ. אָמַר רַב הוּנָא וְהוּא שֶׁגָּדוֹל עוֹמֵד עַל גַּבָּיו וּלְשׁוֹן מֻותָּר מַשְׁמַע אַף לְכַתְּחִלָּה:</div>
+          <div class="glose-fr">L&#x27;imbécile (choteh) est défini dans (le traité) Haguiga (3b) : celui qui sort seul la nuit, celui qui passe la nuit dans un cimetière, et celui qui déchire son vêtement. Et il est enseigné (dans une baraïta) : « Qui est un choteh ? Celui qui détruit tout ce qu&#x27;on lui donne. » Et Rabbi Yohanan a dit : même par l&#x27;un seul de ces (signes) — et à condition qu&#x27;il l&#x27;accomplisse à la manière de la folie (derekh chetout). Et telle est la halakha [la loi tranchée]. Et le mineur (katan) de notre michna, qui n&#x27;abat pas a priori même lorsqu&#x27;un adulte se tient à ses côtés (pour le surveiller), il s&#x27;agit d&#x27;un mineur qui n&#x27;a pas atteint l&#x27;âge de l&#x27;éducation (hinoukh) ; et le hinoukh en matière de chehita, c&#x27;est qu&#x27;il sache exercer (entraîner) ses mains. Mais un mineur expert (moumhé) qui sait exercer ses mains abat a priori lorsqu&#x27;un adulte se tient à ses côtés, comme cela figure dans (le traité) Souka (42a) : « Le mineur qui sait garder (préserver) les téfilines, son père lui achète des téfilines ; celui qui sait abattre, il est permis de manger de sa chehita. » Rav Houna a dit : et cela à condition qu&#x27;un adulte se tienne à ses côtés ; et le terme « il est permis » implique même a priori.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Double preuve scripturaire (Deut puis Qohelet) que <b>s'abstenir de vouer</b> vaut mieux. Dispute : pour <b>Rabbi Meir</b>, ne pas vouer du tout est preferable ; pour <b>Rabbi Yehouda</b>, vouer <em>et accomplir</em> est le mieux — mais seulement en disant '<b>hareh zo</b>' (cette bete-ci), car alors en cas de perte on n'est pas tenu de la remplacer.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 222" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="222" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1c1917">Vaut-il mieux vouer ? (Qohelet 5:4)</text>
+  <rect x="36" y="44" width="300" height="156" rx="10" fill="#eef2ff" stroke="#3730a3"/>
+  <text x="186" y="70" text-anchor="middle" font-size="13" font-weight="700" fill="#3730a3">Rabbi Meir</text>
+  <text x="186" y="104" text-anchor="middle" font-size="12" fill="#292524">Ne pas vouer DU TOUT</text>
+  <text x="186" y="122" text-anchor="middle" font-size="12" font-weight="700" fill="#1c1917">est le mieux</text>
+  <text x="186" y="158" text-anchor="middle" font-size="11" fill="#78716c">l'habitude des voeux mene</text>
+  <text x="186" y="175" text-anchor="middle" font-size="11" fill="#78716c">a 'lo yahel devaro'</text>
+  <rect x="364" y="44" width="300" height="156" rx="10" fill="#eaf6ec" stroke="#15803d"/>
+  <text x="514" y="70" text-anchor="middle" font-size="13" font-weight="700" fill="#15803d">Rabbi Yehouda</text>
+  <text x="514" y="104" text-anchor="middle" font-size="12" fill="#292524">Vouer ET accomplir</text>
+  <text x="514" y="122" text-anchor="middle" font-size="12" font-weight="700" fill="#1c1917">est le mieux</text>
+  <text x="514" y="158" text-anchor="middle" font-size="11" fill="#78716c">mais seulement en disant 'hareh zo'</text>
+  <text x="514" y="175" text-anchor="middle" font-size="11" fill="#78716c">(aucune obligation de remplacer)</text>
+</svg></div><div class="svg-cap">Segment 5 : la dispute Rabbi Meir / Rabbi Yehouda sur le voeu.</div></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><span class="nav-b off">&lsaquo;</span><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Chullin_2b.html">Chullin 2b &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

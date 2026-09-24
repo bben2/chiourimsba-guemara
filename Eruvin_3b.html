@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eruvin 3b — L&#x27;espace sous la kora et la mesure de l&#x27;ama (cinq ou six tefahim)</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Eruvin 3b — L&#x27;espace sous la kora et la mesure de l&#x27;ama (cinq ou six tefahim)</h1>
+    <div class="ref">Eruvin 3b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Eruvin_3a.html">&lsaquo; Eruvin 3a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Eruvin_4a.html">Eruvin 4a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> Le daf conclut la discussion sur les vingt amot : Rava etablit qu&#x27;elles se mesurent dans le halal (l&#x27;espace interieur), pour la souca comme pour le mavoy, et Rav Papa lui apporte une beraita qui compare le mavoy au portail de l&#x27;heikhal. Rav Chimi bar Rav Achi objecte a partir d&#x27;une Tossefta (placer la kora a partir du bord des vingt amot et en dessous) ; on repond que la regle d&#x27;en bas suit celle d&#x27;en haut : on mesure aussi les dix tefahim minimum dans le halal.</p><p>Le daf passe ensuite a la valeur de l&#x27;ama. Selon Abaye au nom de Rav Nahman, l&#x27;ama de la souca et du mavoy vaut cinq tefahim, celle des kilayim six, toujours dans le sens de la rigueur.</p><p>On examine chaque domaine et on repond aux cas ou la regle conduirait a une indulgence (longueur du mavoy, taille minimale de la souca, vignes rapprochees) : soit Rav Nahman suit l&#x27;avis qui ne mentionne pas d&#x27;amot, soit il parle de la plupart des amot. Rava rapporte une autre version : toutes les amot valent six tefahim, larges (sohakot) pour les kilayim, serres (atsevot) pour la souca et le mavoy.</p><p>Le daf s&#x27;arrete sur une beraita opposee a Abaye.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="760" height="360" fill="#fbfaf7"/>
+<text x="380" y="24" text-anchor="middle" font-family="Helvetica,Arial" font-size="15" font-weight="bold" fill="#2b2b2b">Deux versions de la regle de Rav Nahman sur l'ama</text>
+<rect x="20" y="40" width="160" height="36" fill="#ede7dc" stroke="#8a7b63"/>
+<rect x="180" y="40" width="280" height="36" fill="#ede7dc" stroke="#8a7b63"/>
+<rect x="460" y="40" width="280" height="36" fill="#ede7dc" stroke="#8a7b63"/>
+<text x="100" y="63" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Domaine</text>
+<text x="320" y="63" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Abaye au nom de Rav Nahman</text>
+<text x="600" y="63" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Rava au nom de Rav Nahman</text>
+
+<rect x="20" y="76" width="160" height="70" fill="#eef1f6" stroke="#6b7a93"/>
+<rect x="180" y="76" width="280" height="70" fill="#eef1f6" stroke="#6b7a93"/>
+<rect x="460" y="76" width="280" height="70" fill="#eef1f6" stroke="#6b7a93"/>
+<text x="100" y="106" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Mavoy</text>
+<text x="100" y="124" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">hauteur 20, piroutsa 10</text>
+<text x="320" y="104" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">ama de 5 tefahim</text>
+<text x="320" y="124" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">mesure plus courte = limite atteinte plus tot</text>
+<text x="600" y="104" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">ama de 6 tefahim atsevot (serres)</text>
+<text x="600" y="124" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">doigts joints</text>
+
+<rect x="20" y="146" width="160" height="70" fill="#eef1f6" stroke="#6b7a93"/>
+<rect x="180" y="146" width="280" height="70" fill="#eef1f6" stroke="#6b7a93"/>
+<rect x="460" y="146" width="280" height="70" fill="#eef1f6" stroke="#6b7a93"/>
+<text x="100" y="176" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Souca</text>
+<text x="100" y="194" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">hauteur 20, dofen akouma 4</text>
+<text x="320" y="174" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">ama de 5 tefahim</text>
+<text x="320" y="194" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">maximum atteint plus tot</text>
+<text x="600" y="174" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">ama de 6 tefahim atsevot (serres)</text>
+<text x="600" y="194" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">doigts joints</text>
+
+<rect x="20" y="216" width="160" height="70" fill="#f4eeee" stroke="#93706b"/>
+<rect x="180" y="216" width="280" height="70" fill="#f4eeee" stroke="#93706b"/>
+<rect x="460" y="216" width="280" height="70" fill="#f4eeee" stroke="#93706b"/>
+<text x="100" y="246" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Kilayim</text>
+<text x="100" y="264" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">karhat / mahol ha-kerem</text>
+<text x="320" y="244" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">ama de 6 tefahim</text>
+<text x="320" y="264" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">minimum atteint plus tard</text>
+<text x="600" y="244" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">ama de 6 tefahim sohakot (larges)</text>
+<text x="600" y="264" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">doigts ecartes</text>
+
+<rect x="20" y="300" width="720" height="44" fill="#eef4ee" stroke="#6f8a6f"/>
+<text x="380" y="319" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Point commun : chaque mesure est choisie pour aller vers la rigueur (le-houmra)</text>
+<text x="380" y="336" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">Rosh : la halakha suit Rava</text>
+</svg></div>
+          <figcaption>Abaye et Rava rapportent differemment la regle de Rav Nahman ; les deux visent la rigueur.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="760" height="330" fill="#fbfaf7"/>
+<text x="380" y="24" text-anchor="middle" font-family="Helvetica,Arial" font-size="15" font-weight="bold" fill="#2b2b2b">Le meme schema repete trois fois (version d'Abaye)</text>
+<rect x="20" y="40" width="160" height="30" fill="#ede7dc" stroke="#8a7b63"/>
+<rect x="180" y="40" width="190" height="30" fill="#ede7dc" stroke="#8a7b63"/>
+<rect x="370" y="40" width="190" height="30" fill="#ede7dc" stroke="#8a7b63"/>
+<rect x="560" y="40" width="180" height="30" fill="#ede7dc" stroke="#8a7b63"/>
+<text x="100" y="60" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Domaine</text>
+<text x="275" y="60" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Objection (cas indulgent)</text>
+<text x="465" y="60" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Reponse 1 : il suit...</text>
+<text x="650" y="60" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Reponse 2</text>
+
+<rect x="20" y="70" width="160" height="70" fill="#eef1f6" stroke="#6b7a93"/>
+<rect x="180" y="70" width="190" height="70" fill="#fff" stroke="#6b7a93"/>
+<rect x="370" y="70" width="190" height="70" fill="#fff" stroke="#6b7a93"/>
+<rect x="560" y="70" width="180" height="210" fill="#eef4ee" stroke="#6f8a6f"/>
+<text x="100" y="110" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Mavoy (5)</text>
+<text x="275" y="100" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">longueur minimale 4 amot</text>
+<text x="275" y="118" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">5 tefahim = plus court = kula</text>
+<text x="465" y="100" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">l'avis : 4 tefahim</text>
+<text x="465" y="118" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">pas d'amot dans ce cas</text>
+
+<rect x="20" y="140" width="160" height="70" fill="#eef1f6" stroke="#6b7a93"/>
+<rect x="180" y="140" width="190" height="70" fill="#fff" stroke="#6b7a93"/>
+<rect x="370" y="140" width="190" height="70" fill="#fff" stroke="#6b7a93"/>
+<text x="100" y="180" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Souca (5)</text>
+<text x="275" y="170" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">Rabbi : 4 x 4 amot minimum</text>
+<text x="275" y="188" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">5 tefahim = plus petit = kula</text>
+<text x="465" y="170" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">les Rabbanan : tete,</text>
+<text x="465" y="188" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">majeure partie du corps, table</text>
+
+<rect x="20" y="210" width="160" height="70" fill="#f4eeee" stroke="#93706b"/>
+<rect x="180" y="210" width="190" height="70" fill="#fff" stroke="#93706b"/>
+<rect x="370" y="210" width="190" height="70" fill="#fff" stroke="#93706b"/>
+<text x="100" y="250" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Kilayim (6)</text>
+<text x="275" y="240" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">R. Chimon : rangs a moins</text>
+<text x="275" y="258" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">de 4 amot = pas un kerem</text>
+<text x="465" y="240" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">les Rabbanan :</text>
+<text x="465" y="258" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">c'est un kerem</text>
+
+<text x="650" y="160" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">rov amot ka-amar</text>
+<text x="650" y="180" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">il parle de la plupart</text>
+<text x="650" y="196" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">des amot du domaine,</text>
+<text x="650" y="212" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">pas de toutes</text>
+<text x="380" y="310" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">Une regle posee le-houmra ne peut pas s'appliquer la ou elle donnerait une kula : il faut expliquer ces cas.</text>
+</svg></div>
+          <figcaption>Pour chaque domaine : objection tiree d&#x27;un cas ou la mesure serait indulgente, puis deux reponses.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">חלל סוכה תנן, חלל מבוי תנן.</div>
+            <div class="fr"><p>C&#x27;est l&#x27;espace interieur (halal) de la souca que nous avons appris ; c&#x27;est l&#x27;espace interieur du mavoy que nous avons appris.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>חלל סוכה תנן</b> עשרים אמות שהוזכרו בין במבוי בין בסוכה אחללה קיימי:</div>
+          <div class="glose-fr">Les vingt amot mentionnees, aussi bien pour le mavoy que pour la souca, se rapportent a l&#x27;espace interieur (halal).</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>חלל סוכה תנן</b> והא דאמר בסוכה (ד&#x27; ד.) והוצין יורדין לתוך כ&#x27; לאו דווקא ואגב דנקט למעלה מכ&#x27; נקט נמי בתוך כ&#x27; כלומר בתוך הכשר כ&#x27;:</div>
+          <div class="glose-fr">Et ce qui est dit dans Souca (4a) : « et les brindilles descendent a l&#x27;interieur des vingt » n&#x27;est pas a prendre a la lettre ; comme on a employe « au-dessus de vingt », on a aussi employe « a l&#x27;interieur de vingt », c&#x27;est-a-dire a l&#x27;interieur des vingt valables.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Fin de l'explication de <b>Rava</b> : la limite de vingt amot se mesure dans le <b>halal</b>, l'espace vide sous le sekhakh de la souca ou sous la <b>kora</b> du mavoy. L'epaisseur de la kora ou du sekhakh n'entre pas dans le calcul.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר ליה רב פפא לרבא, תניא דמסייע לך: מבוי שהוא גבוה מעשרים אמה יותר מפתחו של היכל ימעט. והיכל גופו חללו עשרים.</div>
+            <div class="fr"><p>Rav Papa dit a Rava : une beraita a ete enseignee qui te soutient : un mavoy qui est haut de plus de vingt amot, plus que le portail de l&#x27;heikhal, on doit le diminuer. Or l&#x27;heikhal lui-meme, son espace interieur est de vingt.</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תניא דמסייע לך</b> אע&quot;ג דהיכל באמת בת ששה הכא ארבא קאי דאית ליה לקמן דשל מבוי נמי באמת בת ששה ואע&quot;ג דהן עצבות שמא של היכל נמי עצבות היו א&quot;נ אפילו לאביי לסימנא בעלמא נקט לענין אמות אבל מ&quot;מ מייתי כמו שהיכל חללו עשרים באמות דידיה הכי נמי מבוי באמות דידיה:</div>
+          <div class="glose-fr">Bien que l&#x27;heikhal se mesurat en realite avec une ama de six [tefahim], ici on suit Rava, qui tient plus loin que l&#x27;ama du mavoy aussi est de six ; et bien que celles-ci soient atsevot (serrees), peut-etre celles de l&#x27;heikhal etaient-elles aussi atsevot. Autre explication : meme selon Abaye, la beraita n&#x27;a mentionne [l&#x27;heikhal] que comme un simple siman (aide-memoire) quant aux amot ; mais elle apporte malgre tout la comparaison : de meme que l&#x27;heikhal a un espace interieur de vingt selon ses propres amot, de meme le mavoy selon ses propres amot.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le portail de l'heikhal mesurait vingt amot de haut, et c'est son <b>ouverture</b> (l'espace vide) qui avait cette mesure. En comparant le mavoy a ce portail, la beraita montre que les vingt amot du mavoy se comptent aussi dans l'espace vide : c'est la these de Rava.</p><p>Tossefot note une difficulte : l'heikhal se mesurait en amot de six tefahim, alors qu'Abaye compte le mavoy en amot de cinq (voir plus bas). Reponse : soit la beraita suit Rava, soit l'heikhal n'est qu'un <b>siman</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">איתיביה רב שימי בר רב אשי לרב פפא: כיצד היה עושה — מניח קורה משפת עשרים ולמטה!</div>
+            <div class="fr"><p>Rav Chimi bar Rav Achi objecta a Rav Papa : comment faisait-il ? Il place la kora a partir du bord des vingt [amot] et en dessous !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>משפת כ&#x27; ולמטה</b> משמע שיהא עובי הקורה בתוך כ&#x27;:</div>
+          <div class="glose-fr">Cela implique que l&#x27;epaisseur de la kora soit a l&#x27;interieur des vingt.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Tossefta semble exiger que la kora entiere se trouve sous la ligne des vingt amot. On mesurerait alors jusqu'au <b>haut</b> de la kora, et non dans l'espace vide sous elle : objection contre Rava et Rav Papa.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אימא: ״ולמעלה״. והא ״למטה״ קתני!</div>
+            <div class="fr"><p>Dis : « et au-dessus ». Mais il est enseigne « en dessous » !</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Premiere tentative : corriger le texte en « et au-dessus ». On la rejette, car la lecon « en dessous » est explicite.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הא קא משמע לן, דלמטה כלמעלה: מה למעלה חללה עשרים, אף למטה חללה עשרה.</div>
+            <div class="fr"><p>Voici ce qu&#x27;il nous apprend : que le bas est comme le haut. De meme qu&#x27;en haut son espace interieur est de vingt [amot], de meme en bas son espace interieur est de dix [tefahim].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הא קמ&quot;ל</b> דשיעור שנתנו חכמים למטה מי&#x27; טפחים אחלל קאי כשיעור שאמרו בכ&#x27; למעלה והכי קאמר מתני&#x27; מניח את הקורה משפת כ&#x27; ולמעלה וכן למטה אם בא לעשותו נמוך מניחה משפת עשרה טפחים ולמעלה דבפחות מעשרה לא הוי מבוי:</div>
+          <div class="glose-fr">Que la mesure donnee par les Sages en bas, de dix tefahim, se rapporte a l&#x27;espace interieur, comme la mesure dite de vingt en haut. Et voici ce que dit la michna : il place la kora a partir du bord des vingt et au-dessus ; et de meme en bas, s&#x27;il veut la faire basse, il la place a partir du bord des dix tefahim et au-dessus, car a moins de dix ce n&#x27;est pas un mavoy.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>On garde le texte et on le lit autrement. La kora a deux limites : pas plus de <b>vingt amot</b> et pas moins de <b>dix tefahim</b>. Les deux se mesurent dans le <b>halal</b>, sous la kora. « A partir du bord de vingt » vise la limite superieure ; « et en dessous » introduit la regle de la limite inferieure, qui se mesure de la meme maniere.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="640" height="300" fill="#fbfaf7"/>
+<line x1="60" y1="270" x2="600" y2="270" stroke="#555" stroke-width="2"/>
+<text x="330" y="290" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">sol du mavoy</text>
+<rect x="130" y="60" width="20" height="210" fill="#b89b72" stroke="#6e5a3e"/>
+<rect x="400" y="60" width="20" height="210" fill="#b89b72" stroke="#6e5a3e"/>
+<rect x="130" y="44" width="290" height="16" fill="#8a6d45" stroke="#5a4428"/>
+<text x="275" y="38" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">kora (poutre)</text>
+<line x1="470" y1="60" x2="470" y2="270" stroke="#2f6f4f" stroke-width="2"/>
+<line x1="462" y1="60" x2="478" y2="60" stroke="#2f6f4f" stroke-width="2"/>
+<line x1="462" y1="270" x2="478" y2="270" stroke="#2f6f4f" stroke-width="2"/>
+<text x="486" y="150" font-family="Helvetica,Arial" font-size="12" fill="#2f6f4f">halal : de 10 tefahim</text>
+<text x="486" y="168" font-family="Helvetica,Arial" font-size="12" fill="#2f6f4f">a 20 amot</text>
+<text x="486" y="190" font-family="Helvetica,Arial" font-size="11" fill="#555">mesure sous la kora</text>
+<line x1="90" y1="44" x2="90" y2="270" stroke="#a04a3a" stroke-width="1.5" stroke-dasharray="5,4"/>
+<text x="84" y="40" text-anchor="end" font-family="Helvetica,Arial" font-size="11" fill="#a04a3a">haut de la kora</text>
+<text x="30" y="160" font-family="Helvetica,Arial" font-size="11" fill="#a04a3a">non</text>
+<text x="20" y="176" font-family="Helvetica,Arial" font-size="11" fill="#a04a3a">mesure</text>
+</svg></div><div class="svg-cap">Les deux limites de la kora se mesurent dans l&#x27;espace vide sous elle.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר אביי משמיה דרב נחמן: אמת סוכה ואמת מבוי באמה בת חמשה, אמת כלאים באמה בת ששה.</div>
+            <div class="fr"><p>Abaye dit au nom de Rav Nahman : l&#x27;ama de la souca et l&#x27;ama du mavoy sont d&#x27;une ama de cinq [tefahim] ; l&#x27;ama des kilayim est d&#x27;une ama de six.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אמת מבוי ואמת סוכה</b> אמות שהוזכרו במבוי ובסוכה באמות קטנות שיערו ואמות שהוזכרו בכלאים באמות גדולות שיערו ולקמן מפרש הי נינהו ור&quot;נ מדקאמר הכא קטנות והכא גדולות ש&quot;מ הכא חומרא והכא חומרא דאי לא לחומרא היכי מצי אמר הני גדולות והני קטנות הא לא תנן בהו שיעורא:</div>
+          <div class="glose-fr">Les amot mentionnees pour le mavoy et pour la souca, on les a evaluees en petites amot ; celles mentionnees pour les kilayim, en grandes amot. On expliquera plus loin lesquelles. Et Rav Nahman, puisqu&#x27;il dit ici petites et la grandes, on en deduit qu&#x27;ici c&#x27;est une rigueur et la une rigueur ; car si ce n&#x27;etait pas dans le sens de la rigueur, comment pourrait-il dire : celles-ci sont grandes et celles-la petites ? Aucune mesure [d&#x27;ama] n&#x27;est enseignee a leur sujet.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אמר אביי משמיה דרב נחמן אמת מבוי ואמת סוכה באמת בת חמשה ואמת כלאים באמת בת ששה רבא משמיה דרב נחמן אמר אחד זה ואחד זה באמת בת ששה אלא שהללו שוחקות והללו עציבות ולחומרא. היכא דשוחקות חומרא משחינן בריוח. והיכא דעציבות חומרא מצמצמין להו. והלכתא כרבא דמילתא דאביי מוקי כרשב&quot;ג ומילתא דרבא כד&quot;ה:</div>
+          <div class="glose-fr">Abaye dit au nom de Rav Nahman : l&#x27;ama du mavoy et l&#x27;ama de la souca sont d&#x27;une ama de cinq, et l&#x27;ama des kilayim d&#x27;une ama de six. Rava au nom de Rav Nahman dit : les unes et les autres sont d&#x27;une ama de six, mais celles-ci sont sohakot (larges) et celles-la atsevot (serrees), et dans le sens de la rigueur. La ou les sohakot sont une rigueur, on mesure largement ; la ou les atsevot sont une rigueur, on les mesure juste. Et la halakha est comme Rava, car la parole d&#x27;Abaye s&#x27;etablit selon Rabban Chimon ben Gamliel, et celle de Rava selon tous.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Question nouvelle : quelle est la longueur de l'<b>ama</b> ? L'ama standard compte six <b>tefahim</b> (largeurs de main). Selon Abaye, Rav Nahman distingue : pour la souca et le mavoy, une petite ama de cinq tefahim ; pour les <b>kilayim</b> (melanges interdits dans la vigne), une grande ama de six.</p><p>Rachi : la seule logique de cette distinction est la <b>houmra</b> (rigueur). Pour un maximum (hauteur de souca ou de kora), une petite ama fait atteindre la limite plus tot ; pour un minimum (espace a laisser avant de semer), une grande ama oblige a laisser plus de place.</p><p>Le Rosh tranche comme <b>Rava</b> (segment 20).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמת מבוי באמה בת חמשה, למאי הלכתא? לגובהו ולפירצת מבוי.</div>
+            <div class="fr"><p>L&#x27;ama du mavoy est d&#x27;une ama de cinq : pour quelle halakha ? Pour sa hauteur et pour la breche (piroutsa) du mavoy.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>למאי הלכתא</b> משערים אלו שבמבוי בקטנות דתיהוי חומרא:</div>
+          <div class="glose-fr">On evalue celles du mavoy en petites [amot] pour que ce soit une rigueur.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לגובהו</b> הנך כ&#x27; שהוזכרו ליפסל בגובהו מכי איכא כ&#x27; אמות קטנות פסלי אי מגבה לה טפי:</div>
+          <div class="glose-fr">Ces vingt [amot] mentionnees pour invalider par la hauteur : des qu&#x27;il y a vingt petites amot, [la kora] est invalide si on la monte davantage.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ולפירצת מבוי</b> דקיימא לן בהאי פירקא פרצת מבוי ביו&quot;ד אמות פסיל ליה וקאמר רב נחמן דבעשר אמות קטנות מיפסיל:</div>
+          <div class="glose-fr">Car nous tenons dans ce chapitre qu&#x27;une breche de mavoy de dix amot l&#x27;invalide, et Rav Nahman dit qu&#x27;il est invalide a partir de dix petites amot.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deux mesures du mavoy sont des <b>maximums</b> : la hauteur de la kora (vingt amot) et la largeur de la breche (dix amot). Avec une ama de cinq tefahim, la limite est atteinte plus tot : c'est bien une rigueur.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">והא איכא משך מבוי בארבע אמות, דלקולא!</div>
+            <div class="fr"><p>Mais il y a la longueur (mechekh) du mavoy, de quatre amot, ou c&#x27;est une indulgence !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>והא איכא</b> אמות שהוזכרו במשך מבוי ד&#x27; אמות ואם ארכו פחות מד&#x27; אמות פסיל ליה אביי לקמן בפירקין (עירובין ד&#x27; ה.) דאמר לקמן היה פחות מיו&quot;ד טפחים ובא להשלימו עד כמה חוקק בו במשכו רב יוסף אמר ד&#x27; טפחים אביי אמר ד&#x27; אמות דמשך מבוי בעינן ד&#x27; אמות ובהני אמות אתיא מילתיה דרב נחמן לקולא דמכשר ליה בד&#x27; אמות קטנות:</div>
+          <div class="glose-fr">Les amot mentionnees pour la longueur du mavoy, quatre amot : si sa longueur est inferieure a quatre amot, Abaye l&#x27;invalide plus loin dans notre chapitre (Erouvin 5a), car il est dit plus loin : s&#x27;il avait moins de dix tefahim et qu&#x27;on vient le completer, jusqu&#x27;a combien creuse-t-on dans sa longueur ? Rav Yossef dit : quatre tefahim ; Abaye dit : quatre amot, car pour la longueur du mavoy il faut quatre amot. Et pour ces amot, la parole de Rav Nahman aboutit a une indulgence, puisqu&#x27;il le valide avec quatre petites amot.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection : la longueur minimale du mavoy est un <b>minimum</b>. Avec des amot de cinq tefahim, on la valide plus facilement : ce serait une <b>kula</b> (indulgence), contraire au principe de Rav Nahman.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כמאן דאמר בארבעה טפחים.</div>
+            <div class="fr"><p>[Il suit] celui qui dit : en quatre tefahim.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כמ&quot;ד</b> משך מבוי בד&#x27; טפחים סבירא ליה לרב נחמן ולא הוזכרו אמות בשיעור משכו ופלוגתא דאביי ורב יוסף היא:</div>
+          <div class="glose-fr">Rav Nahman tient que la longueur du mavoy est de quatre tefahim, et on n&#x27;a pas mentionne d&#x27;amot pour la mesure de sa longueur. C&#x27;est la discussion d&#x27;Abaye et de Rav Yossef.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כמאן דאמר בארבעה</b> פי&#x27; ומשהו יותר דאין פתח פחות מד&#x27; ואי לא הוי משהו יותר א&quot;כ לא הוי ארכו יותר על רחבו ואינו ניתר בלחי וקורה כדאמרינן לקמן (עירובין ד&#x27; ה.) ואע&quot;ג דאביי גופיה אית ליה לקמן (שם) דמשך מבוי בד&#x27; אמות הכא אליבא דרב נחמן קאמר וליה לא סבירא ליה:</div>
+          <div class="glose-fr">Explication : et un peu plus, car il n&#x27;y a pas de petach de moins de quatre ; et s&#x27;il n&#x27;y avait pas un peu plus, sa longueur ne depasserait pas sa largeur et il ne serait pas permis par un lehi et une kora, comme nous le disons plus loin (Erouvin 5a). Et bien qu&#x27;Abaye lui-meme tienne plus loin (ibid.) que la longueur du mavoy est de quatre amot, ici il parle selon Rav Nahman, et lui-meme ne le tient pas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Premiere reponse : Rav Nahman suit l'avis de <b>Rav Yossef</b>, pour qui la longueur minimale est de quatre <b>tefahim</b>. Aucune ama n'est en jeu, donc pas d'indulgence.</p><p>Tossefot : il faut quatre tefahim <b>et un peu plus</b>, pour que la longueur depasse la largeur, condition pour qu'un <b>lehi</b> ou une kora suffise.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ואיבעית אימא, בארבע אמות — ורוב אמות קאמר.</div>
+            <div class="fr"><p>Et si tu veux, dis : en quatre amot, et il parle de la plupart des amot.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רוב אמות</b> הנזכרות במבוי קאמר רב נחמן דליהוי קטנות ולא אכל אמות מבוי קאמר:</div>
+          <div class="glose-fr">Rav Nahman parle de la plupart des amot mentionnees pour le mavoy, qu&#x27;elles soient petites, et il ne parle pas de toutes les amot du mavoy.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Seconde reponse, qui reviendra pour chaque domaine : <b>rov amot ka-amar</b>. Rav Nahman a decrit la regle generale ; la longueur du mavoy fait exception et se mesure en grandes amot.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמת סוכה באמה בת חמשה, למאי הלכתא? לגובהה ולדופן עקומה.</div>
+            <div class="fr"><p>L&#x27;ama de la souca est d&#x27;une ama de cinq : pour quelle halakha ? Pour sa hauteur et pour la paroi courbe (dofen akouma).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לגובהה</b> שהוזכרו כ&#x27; אמות לפוסלה:</div>
+          <div class="glose-fr">Ou vingt amot sont mentionnees pour l&#x27;invalider.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ולדופן עקומה</b> דתנן (סוכה ד&#x27; יז.) בית שנפחת וסיכך על גבי הפחת בסכך כשר ותקרת העלייה נותרת סביב ומפסקת בין סכך כשר לדפנות אם יש בין סכך כשר לדופן ד&#x27; אמות פסולה ולא אמרינן דופן עקומה פחות מד&#x27; אמות כשירה דאמרינן חזינן ליה להאי סכך פסול כאילו הוא מן הדפנות שנעקמו למעלן ובאו עד סכך כשר והרי אין כאן הפסק וקא אתא רב נחמן למימר דבאמות קטנות משערינן ליה ומיפסלא בעשרים טפחים והיינו חומרא:</div>
+          <div class="glose-fr">Car nous avons appris (Souca 17a) : une maison dont le toit s&#x27;est ouvert et sur l&#x27;ouverture de laquelle on a mis un sekhakh valable, tandis que le plafond de l&#x27;etage reste autour et separe le sekhakh valable des parois : s&#x27;il y a quatre amot entre le sekhakh valable et la paroi, elle est invalide. Et nous ne disons [la regle de] dofen akouma qu&#x27;a moins de quatre amot, cas ou elle est valable, car nous disons : nous considerons ce sekhakh invalide comme s&#x27;il faisait partie des parois qui se sont courbees vers le haut et sont venues jusqu&#x27;au sekhakh valable, et il n&#x27;y a donc pas d&#x27;interruption. Rav Nahman vient dire que nous l&#x27;evaluons en petites amot, et elle est invalide a vingt tefahim ; c&#x27;est cela la rigueur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Pour la souca, deux maximums : la hauteur (vingt amot) et la <b>dofen akouma</b>. Un sekhakh invalide colle a une paroi peut etre considere comme la paroi qui se recourbe, a condition de faire moins de quatre amot. Avec des amot de cinq tefahim, la limite tombe a vingt tefahim au lieu de vingt-quatre : rigueur.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">והא איכא משך סוכה בארבע אמות, דלקולא! דתניא, רבי אומר: אומר אני, כל סוכה שאין בה ארבע אמות על ארבע אמות פסולה!</div>
+            <div class="fr"><p>Mais il y a la longueur de la souca, de quatre amot, ou c&#x27;est une indulgence ! Car il est enseigne : Rabbi dit : je dis, toute souca qui n&#x27;a pas quatre amot sur quatre amot est invalide.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>והאיכא ארבע אמות</b> הנזכרות במשך סוכה דאי מכשרת ליה בקטנות איכא קולא ורב נחמן כייל ואמר כל אמות סוכה בקטנות ואי אמר רב נחמן כרבי הוי קולא:</div>
+          <div class="glose-fr">Les [quatre amot] mentionnees pour la longueur de la souca : si tu la valides en petites [amot], il y a une indulgence. Or Rav Nahman a pose la regle generale : toutes les amot de la souca en petites [amot]. Et si Rav Nahman parle selon Rabbi, c&#x27;est une indulgence.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Meme objection que pour le mavoy : selon <b>Rabbi</b> (Rabbi Yehouda ha-Nassi), la souca doit mesurer au moins quatre amot sur quatre. C'est un minimum ; des amot de cinq tefahim le rendraient plus facile a atteindre.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כרבנן, דאמרי: אפילו אינה מחזקת אלא ראשו ורובו ושולחנו.</div>
+            <div class="fr"><p>[Il suit] les Rabbanan, qui disent : meme si elle ne contient que sa tete, la plus grande partie de son corps et sa table.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Premiere reponse : Rav Nahman suit les <b>Rabbanan</b>, qui fixent la taille minimale sans amot (<b>rocho ve-roubo ve-choulhano</b>). La question ne se pose donc pas.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ואיבעית אימא: לעולם רבי היא, ורוב אמות קאמר.</div>
+            <div class="fr"><p>Et si tu veux, dis : en fait c&#x27;est Rabbi, et il parle de la plupart des amot.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ואיבעית אימא</b> רב נחמן לעולם כרבי והאי דאמר רב נחמן אמות סוכה בקטנות לאו באמות דמשך סוכה אלא בשאר אמות קאמר:</div>
+          <div class="glose-fr">Rav Nahman [suit] en fait Rabbi ; et quand Rav Nahman dit que les amot de la souca sont en petites [amot], il ne parle pas des amot de la longueur de la souca, mais des autres amot.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Seconde reponse : <b>rov amot ka-amar</b>, comme pour le mavoy.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמת כלאים באמה בת ששה, למאי הילכתא? לקרחת הכרם ולמחול הכרם.</div>
+            <div class="fr"><p>L&#x27;ama des kilayim est d&#x27;une ama de six : pour quelle halakha ? Pour la clairiere de la vigne (karhat ha-kerem) et pour le pourtour de la vigne (mahol ha-kerem).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לקרחת הכרם ולמחול הכרם</b> דכי משערת ליה בגדולות חומרא היא:</div>
+          <div class="glose-fr">Car si tu les evalues en grandes [amot], c&#x27;est une rigueur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Pour les <b>kilayim</b>, les mesures sont des <b>minimums</b> : l'espace libre qu'il faut dans une vigne pour y semer une autre culture. Une grande ama de six tefahim exige plus d'espace : rigueur.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">דתנן: קרחת הכרם, בית שמאי אומרים: עשרים וארבע אמות, ובית הלל אומרים: שש עשרה אמות. ומחול הכרם, בית שמאי אומרים: שש עשרה אמות, ובית הלל אומרים: שתים עשרה אמות.</div>
+            <div class="fr"><p>Car nous avons appris : la clairiere de la vigne, Beit Chamai disent : vingt-quatre amot, et Beit Hillel disent : seize amot. Et le pourtour de la vigne, Beit Chamai disent : seize amot, et Beit Hillel disent : douze amot.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>קרחת הכרם בית שמאי אומרים עשרים וארבע אמות</b> אם קרחתה עשרים וארבע אמות מותר לזרוע שם ואם פחות מכ&quot;&#x27;ד אמות אסור לזרוע שם ולקמן מפרש מאי קרחת ומאי מחול:</div>
+          <div class="glose-fr">Si sa clairiere est de vingt-quatre amot, il est permis d&#x27;y semer ; et si c&#x27;est moins de vingt-quatre amot, il est interdit d&#x27;y semer. Plus loin on explique ce qu&#x27;est la clairiere et ce qu&#x27;est le pourtour.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Michna de <b>Kilayim</b> (4, 1). Les chiffres sont des seuils : en dessous, l'espace est considere comme faisant partie de la vigne et il est interdit d'y semer.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg16">
+          <div class="seg-num">17</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">איזו היא קרחת הכרם? כרם שחרב אמצעיתו, אין שם שש עשרה אמות לא יביא זרע לשם. היו שם שש עשרה אמה — נותן לו כדי עבודתו, וזורע את המותר.</div>
+            <div class="fr"><p>Qu&#x27;est-ce que la clairiere de la vigne ? Une vigne dont le milieu a ete detruit.</p><p>S&#x27;il n&#x27;y a pas la seize amot, on n&#x27;y apportera pas de semence. S&#x27;il y avait la seize amot, on lui donne l&#x27;espace de son travail et on seme le reste.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שחרב באמצעיתו</b> שהרי יש שם גפנים סביב הקרחה י&quot;ו אמה על י&quot;ו אמה וכן אם הלכה הקרחה על פני כל רוחב הכרם שאין שם גפנים אלא מב&#x27; צידי הקרחה בעינן י&quot;ו רוחב הקרחה:</div>
+          <div class="glose-fr">Car il y a la des vignes autour de la clairiere, seize amot sur seize amot. De meme si la clairiere s&#x27;etend sur toute la largeur de la vigne, de sorte qu&#x27;il n&#x27;y a de vignes que des deux cotes de la clairiere, il faut seize [amot] de largeur de clairiere.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ואם לאו לא יביא זרע לשם</b> אפילו באמה האמצעית דד&#x27; אמות שבצד הכרם מזה וד&#x27; אמות שבצד זה אצל הכרם הוו עבודת הכרם דתנן (כלאים פ&quot;ו מ&quot;א) כמה עבודת הכרם (מלא) ד&#x27; אמות כמלא בקר וכלים שהיו בוצרים אותה בשוורים ובעגלות ובעת החרישה חורשים אותה בשוורים הלכך ככרם דמו ואם נשארו ח&#x27; אמות בינתים לבד אותן ד&#x27; לכל צד דכי שדית פלגא להכא ופלגא להכא איכא ד&#x27; אמות מקום חשוב לכל חד לא בטלי לגבי כרם ומותר לזורען ובציר מח&#x27; אמות שדי פלגא להכא ופלגא להכא ליכא ד&#x27; אמות מקום חשוב ובטיל לגבי כרם ולבית שמאי לא חשיב שדה בפחות מח&#x27; אמות הלכך כ&quot;ד אמות בעינן ד&#x27; לעבודת הכרם מכאן וכנגדן מכאן פשו י&quot;ו שדי שמנה להכא ושמנה להכא. איכא שדה ולא בטלי אי נמי סבירא להו לבית שמאי עבודת הכרם ח&#x27; אמות:</div>
+          <div class="glose-fr">Meme dans l&#x27;ama du milieu, car les quatre amot du cote de la vigne d&#x27;un cote et les quatre amot de l&#x27;autre cote pres de la vigne sont l&#x27;espace de travail de la vigne (avodat ha-kerem), comme nous avons appris (Kilayim 6, 1) : combien est l&#x27;avodat ha-kerem ? Quatre amot, l&#x27;espace d&#x27;un boeuf avec ses instruments ; car on vendangeait avec des boeufs et des chariots, et au temps du labour on la labourait avec des boeufs. C&#x27;est pourquoi elles sont comme la vigne. Et s&#x27;il reste huit amot entre elles, en plus de ces quatre de chaque cote, alors, quand on attribue la moitie a un cote et la moitie a l&#x27;autre, il y a quatre amot, un espace significatif, pour chacun : elles ne s&#x27;annulent pas face a la vigne et il est permis de les semer. Avec moins de huit amot, en attribuant la moitie ici et la moitie la, il n&#x27;y a pas quatre amot d&#x27;espace significatif, et cela s&#x27;annule face a la vigne. Et pour Beit Chamai, un champ n&#x27;est pas significatif a moins de huit amot ; c&#x27;est pourquoi il faut vingt-quatre amot : quatre pour l&#x27;avodat ha-kerem d&#x27;un cote et autant de l&#x27;autre, il reste seize ; on en attribue huit ici et huit la : il y a un champ et elles ne s&#x27;annulent pas. Autre explication : Beit Chamai tiennent que l&#x27;avodat ha-kerem est de huit amot.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Karhat ha-kerem</b> : un espace vide au milieu d'une vigne. Des deux cotes, quatre amot appartiennent a l'<b>avodat ha-kerem</b> (l'espace de travail des boeufs et des chariots). Selon Beit Hillel, il faut encore huit amot au milieu pour que ce soit un espace significatif : 4 + 8 + 4 = seize. En dessous, l'espace est <b>batel</b> (annule) face a la vigne.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="700" height="250" fill="#fbfaf7"/>
+<text x="350" y="22" text-anchor="middle" font-family="Helvetica,Arial" font-size="14" font-weight="bold" fill="#2b2b2b">Karhat ha-kerem selon Beit Hillel : 16 amot</text>
+<rect x="30" y="50" width="70" height="130" fill="#cfe0c3" stroke="#6f8a6f"/>
+<text x="65" y="120" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">vignes</text>
+<rect x="600" y="50" width="70" height="130" fill="#cfe0c3" stroke="#6f8a6f"/>
+<text x="635" y="120" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">vignes</text>
+<rect x="100" y="50" width="125" height="130" fill="#f1e6cf" stroke="#8a7b63"/>
+<text x="162" y="112" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">avodat ha-kerem</text>
+<text x="162" y="128" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">4 amot</text>
+<rect x="225" y="50" width="250" height="130" fill="#e3eedf" stroke="#6f8a6f"/>
+<text x="350" y="112" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">on peut semer : 8 amot</text>
+<text x="350" y="130" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">(4 attribuees a chaque cote)</text>
+<rect x="475" y="50" width="125" height="130" fill="#f1e6cf" stroke="#8a7b63"/>
+<text x="537" y="112" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">avodat ha-kerem</text>
+<text x="537" y="128" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">4 amot</text>
+<line x1="100" y1="200" x2="600" y2="200" stroke="#2b2b2b"/>
+<line x1="100" y1="194" x2="100" y2="206" stroke="#2b2b2b"/>
+<line x1="600" y1="194" x2="600" y2="206" stroke="#2b2b2b"/>
+<text x="350" y="222" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">16 amot (Beit Chamai : 24)</text>
+<text x="350" y="242" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">Rav Nahman : amot de 6 tefahim, pour qu'on ne seme pas trop tot</text>
+</svg></div><div class="svg-cap">Calcul des seize amot de la karhat ha-kerem selon Beit Hillel (explication de Rachi).</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg17">
+          <div class="seg-num">18</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ואיזהו מחול הכרם — בין כרם לגדר. אין שם שתים עשרה אמה, לא יביא זרע לשם. היו שם שתים עשרה אמה — נותן לו כדי עבודתו, וזורע את השאר.</div>
+            <div class="fr"><p>Et qu&#x27;est-ce que le pourtour de la vigne ? [L&#x27;espace] entre la vigne et la cloture.</p><p>S&#x27;il n&#x27;y a pas la douze amot, on n&#x27;y apportera pas de semence. S&#x27;il y avait la douze amot, on lui donne l&#x27;espace de son travail et on seme le reste.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מחול הכרם בין כרם לגדר</b> דהיינו סביב כמו מחולות:</div>
+          <div class="glose-fr">C&#x27;est-a-dire autour, comme des rondes (mehol).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>יש שם י&quot;ב אמות</b> לבית הלל נותן ד&#x27; אמות לעבודת הכרם וזורע השאר:</div>
+          <div class="glose-fr">Selon Beit Hillel, on donne quatre amot a l&#x27;avodat ha-kerem et on seme le reste.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אין שם י&quot;ב אמה לא יביא זרע לשם</b> דד&#x27; אמות דלהדי כרם עבודת הכרם וד&#x27; אמות דלהדי כותל כיון דלא מיזדרעי משום דוושא דכותל אפקורי מפקר להו אמצעיות אי איכא ד&#x27; אמות חשיב ואי לא בטיל לגבי כרם והכא לא בעינן י&quot;ו אמה שאין האיסור אלא מצד אחד והכי מפרש לה בפרק כל גגות (לקמן עירובין ד&#x27; צג.) וקא אמר רב נחמן דבאמות גדולות משערינן ולחומרא ולא משתריא בקטנות:</div>
+          <div class="glose-fr">Car les quatre amot pres de la vigne sont l&#x27;avodat ha-kerem ; et les quatre amot pres du mur, comme on ne les seme pas a cause du pietinement pres du mur, on les abandonne. Les amot du milieu : s&#x27;il y a quatre amot, c&#x27;est significatif, et sinon cela s&#x27;annule face a la vigne. Et ici on n&#x27;exige pas seize amot, car l&#x27;interdit ne vient que d&#x27;un cote. C&#x27;est ainsi qu&#x27;on l&#x27;explique au chapitre Kol Gagot (plus loin, Erouvin 93a). Et Rav Nahman dit qu&#x27;on evalue en grandes amot, dans le sens de la rigueur, et que ce n&#x27;est pas permis avec des petites.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Mahol ha-kerem</b> : la bande entre la derniere rangee de vignes et la cloture. Selon Rachi : quatre amot de travail cote vigne, quatre amot pres du mur (pietinees, on ne les seme pas), et au milieu quatre amot significatives. Le seuil est de douze : la vigne n'est que d'un cote, il suffit donc d'une seule bande de travail.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="700" height="240" fill="#fbfaf7"/>
+<text x="350" y="22" text-anchor="middle" font-family="Helvetica,Arial" font-size="14" font-weight="bold" fill="#2b2b2b">Mahol ha-kerem selon Beit Hillel : 12 amot</text>
+<rect x="30" y="50" width="80" height="130" fill="#cfe0c3" stroke="#6f8a6f"/>
+<text x="70" y="120" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">vignes</text>
+<rect x="110" y="50" width="160" height="130" fill="#f1e6cf" stroke="#8a7b63"/>
+<text x="190" y="112" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">avodat ha-kerem</text>
+<text x="190" y="128" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">4 amot</text>
+<rect x="270" y="50" width="160" height="130" fill="#e3eedf" stroke="#6f8a6f"/>
+<text x="350" y="112" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">on peut semer</text>
+<text x="350" y="128" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">4 amot</text>
+<rect x="430" y="50" width="160" height="130" fill="#eeeeee" stroke="#888"/>
+<text x="510" y="112" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">pres du mur : pietine,</text>
+<text x="510" y="128" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">abandonne (4 amot)</text>
+<rect x="590" y="40" width="20" height="150" fill="#9a8c7a" stroke="#5a4e40"/>
+<text x="640" y="120" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">gader</text>
+<line x1="110" y1="205" x2="590" y2="205" stroke="#2b2b2b"/>
+<line x1="110" y1="199" x2="110" y2="211" stroke="#2b2b2b"/>
+<line x1="590" y1="199" x2="590" y2="211" stroke="#2b2b2b"/>
+<text x="350" y="228" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">12 amot (Beit Chamai : 16) - selon Rachi</text>
+</svg></div><div class="svg-cap">Repartition des douze amot du mahol ha-kerem selon Beit Hillel.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg18">
+          <div class="seg-num">19</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">והא איכא רצופים בארבע אמות, דלקולא! דתנן: כרם הנטוע על פחות מארבע אמות, רבי שמעון אומר: אינו כרם. וחכמים אומרים: כרם, ורואין את האמצעיים כאילו אינם.</div>
+            <div class="fr"><p>Mais il y a les [vignes] rapprochees, a quatre amot, ou c&#x27;est une indulgence ! Car nous avons appris : une vigne plantee a moins de quatre amot, Rabbi Chimon dit : ce n&#x27;est pas une vigne ; et les Sages disent : c&#x27;est une vigne, et on considere celles du milieu comme si elles n&#x27;existaient pas.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>והא איכא רצופין</b> גפנים רצופין שסמוכה שורה לשורה יותר ממה שנתנו חכמים שיעור שאם אין בין שורה לשורה ד&#x27; אמות אינו כרם הואיל ואין לו כל צרכו להילוך עגלה ומותר לזרוע בכולן לר&#x27; שמעון ובהנך אמות אתיא מילתיה דרב נחמן לקולא דאי איכא ד&#x27; אמות קטנות אמרינן אינו כרם עד דאיכא גדולות:</div>
+          <div class="glose-fr">Des vignes rapprochees, ou une rangee est plus proche de l&#x27;autre que la mesure donnee par les Sages : s&#x27;il n&#x27;y a pas quatre amot entre une rangee et l&#x27;autre, ce n&#x27;est pas une vigne, puisqu&#x27;elle n&#x27;a pas tout ce qu&#x27;il lui faut pour le passage d&#x27;un chariot, et il est permis de semer dans toutes selon Rabbi Chimon. Et pour ces amot, la parole de Rav Nahman aboutit a une indulgence, car s&#x27;il y a quatre petites amot nous disons : ce n&#x27;est pas une vigne, tant qu&#x27;il n&#x27;y a pas de grandes [amot].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>על פחות מד&#x27; אמות</b> שאין בין שורה לשורה ד&#x27; אמות אינו כרם ומותר לזרוע לשם:</div>
+          <div class="glose-fr">Qu&#x27;il n&#x27;y a pas quatre amot entre une rangee et l&#x27;autre : ce n&#x27;est pas une vigne et il est permis d&#x27;y semer.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ורואין את האמצעיים</b> הנטועין בתוך ריוח הראוי להיות בין שורה לשורה:</div>
+          <div class="glose-fr">Celles qui sont plantees dans l&#x27;intervalle qui devrait se trouver entre une rangee et l&#x27;autre.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>והא איכא רצופין דלקולא כו&#x27; כרבנן דאמרי כרם הוי</b> וא&quot;ת הא איכא הא דתנן במסכת כלאים (פ&quot;ד מ&quot;ד) גדר שנפרצה עד י&#x27; אמות הרי הוא כפתח יותר מכאן כנגד הפרצה אסור וי&quot;ל דרוב אמות קאמר:</div>
+          <div class="glose-fr">Et si tu dis : il y a ce que nous avons appris dans le traite Kilayim (4, 4) : une cloture qui a ete percee jusqu&#x27;a dix amot est comme une porte ; au-dela, en face de la breche, c&#x27;est interdit. On peut repondre qu&#x27;il parle de la plupart des amot.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection en sens inverse : selon <b>Rabbi Chimon</b>, des rangees a moins de quatre amot l'une de l'autre ne forment pas une vigne, et on peut semer. Ici une grande ama <b>allege</b> : des rangees a quatre petites amot seraient encore sous le seuil, donc pas une vigne.</p><p>Les Sages disent au contraire que c'est une vigne : on ignore les rangees intercalees.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg19">
+          <div class="seg-num">20</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כרבנן, דאמרי הוי כרם. ואיבעית אימא: לעולם רבי שמעון, ורוב אמות קאמר.</div>
+            <div class="fr"><p>[Il suit] les Rabbanan, qui disent : c&#x27;est une vigne. Et si tu veux, dis : en fait c&#x27;est Rabbi Chimon, et il parle de la plupart des amot.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כרבנן</b> סבירא ליה לרב נחמן:</div>
+          <div class="glose-fr">Rav Nahman tient [comme eux].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דאמרי כרם</b> הלכך לא הוזכרו אמות בכלאים לענין רצופים:</div>
+          <div class="glose-fr">C&#x27;est pourquoi on n&#x27;a pas mentionne d&#x27;amot dans les kilayim a propos des vignes rapprochees.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כרבנן דאמרי כרם הוי</b> אף על גב דרבנן מודים דלא הוי כרם היכא דכי נאמר רואין את האמצעים כאילו אינם לא ישארו שתים נגד שתים ואחת יוצאה זנב אביי לא איירי אלא באמות שהוזכרו בפירוש ולא באמות דמשתמע מכלל דבריהן:</div>
+          <div class="glose-fr">Bien que les Rabbanan admettent que ce n&#x27;est pas une vigne lorsque, en disant qu&#x27;on considere celles du milieu comme absentes, il ne resterait pas deux [pieds] face a deux et un qui sort en queue, Abaye n&#x27;a parle que des amot mentionnees explicitement, et non des amot qui se deduisent implicitement de leurs paroles.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Memes deux reponses : Rav Nahman suit les <b>Rabbanan</b>, pour qui aucune ama n'intervient ici ; ou bien <b>rov amot ka-amar</b>.</p><p>Tossefot : meme les Rabbanan ont un cas ou la distance compte (la forme minimale d'une vigne, deux pieds face a deux et un en queue) ; mais Abaye ne vise que les amot explicitement mentionnees.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg20">
+          <div class="seg-num">21</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ורבא משמיה דרב נחמן אמר: כל אמות באמה בת ששה, אלא: הללו שוחקות, והללו עצבות.</div>
+            <div class="fr"><p>Et Rava, au nom de Rav Nahman, dit : toutes les amot sont d&#x27;une ama de six, seulement celles-ci sont larges (sohakot) et celles-la serrees (atsevot).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הללו שוחקות</b> אמות כלאים מודדין בטפחים גדולים ושל סוכה ומבוי עצבות מצומצמות לחומרא:</div>
+          <div class="glose-fr">On mesure les amot des kilayim avec de grands tefahim, et celles de la souca et du mavoy serrees, ajustees, dans le sens de la rigueur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Seconde version de Rav Nahman. Toutes les amot comptent six tefahim, mais le tefah varie : <b>sohakot</b> (litteralement « riantes »), doigts ecartes, pour les kilayim ; <b>atsevot</b> (« tristes »), doigts serres, pour la souca et le mavoy. Le principe de rigueur est le meme que chez Abaye, avec un ecart plus faible.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg21">
+          <div class="seg-num">22</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מיתיבי: כל אמות שאמרו חכמים באמה בת ששה, ובלבד</div>
+            <div class="fr"><p>On objecte : toutes les amot dont ont parle les Sages sont d&#x27;une ama de six, a condition</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">כל אמות שאמרו חכמים באמת בת ששה. לא איירי בהנך דכתיבי כגון אמה יסוד ואמה סובב:</div>
+          <div class="glose-fr">Toutes les amot dont ont parle les Sages sont d&#x27;une ama de six : cela ne traite pas de celles qui sont ecrites [dans la Torah], comme l&#x27;ama du yessod et l&#x27;ama du sovev.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Une beraita affirme que toutes les amot des Sages sont de six tefahim : objection contre la version d'Abaye. La suite de la beraita se lit en 4a.</p><p>Tossefot : il s'agit des amot fixees par les Sages, pas de celles de la Torah (mesures de l'autel : <b>yessod</b> et <b>sovev</b>).</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Eruvin_3a.html">&lsaquo; Eruvin 3a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Eruvin_4a.html">Eruvin 4a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

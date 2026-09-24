@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yoma 67b -- Un mot pour preuve, un mot a recaser : gezeira, le desert et les houkim</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Yoma 67b -- Un mot pour preuve, un mot a recaser : gezeira, le desert et les houkim</h1>
+    <div class="ref">Yoma 67b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_67a.html">&lsaquo; Yoma 67a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> Le daf acheve la controverse de Rav et Chmouel laissee ouverte en 67a : les membres du bouc emissaire, disloque contre le rocher, sont-ils permis ou interdits a la hanaa ? Les deux camps lisent le meme verset et se partagent ses deux mots -- celui qui permet prend ba-midbar, mot superflu qui rend le bouc hefker comme le desert ; celui qui interdit prend gezeira, terme de severite.</p><p>Chacun doit alors trouver un emploi au mot que l autre lui prend, et la guemara le fournit : ba-midbar inclut Nov, Guivon, Chilo et le Temple ; gezeira enseigne le rocher taille a pic, la dislocation des membres, et surtout le decret pur. Rava tranche en faveur de celui qui permet, par un argument de bon sens legislatif : la Torah n a pas ordonne d envoyer le bouc pour creer une takala.</p><p>Deux baraitot decomposent ensuite le nom Azazel -- apre et dur, le plus dur des monts -- avant que l ecole de Rabbi Yichmael n y entende les noms de Ouza et Azael, ce qui fait du bouc l expiation des arayot. De la, la guemara elargit a la grande partition de Vayikra 18,4 : cinq michpatim que la raison aurait ecrits d elle-meme, cinq houkim contre lesquels le Satan replique -- et le bouc emissaire ferme la seconde liste, avec pour toute reponse Ani Hachem.</p><p>Le daf revient alors a la michna restee en suspens : a partir de quand le convoyeur rend-il ses vetements impurs ? Rabbi Yehouda dit des la sortie du mur de Jerusalem, Rabbi Yossi a l arrivee au tsouk, Rabbi Chimon seulement au moment de la poussee.</p><p>Une nouvelle michna reprend enfin l ordre du service : le Cohen Gadol fend le taureau et le bouc interieurs, en retire les emourim, les depose dans un maguis, puis on les tresse ensemble pour les porter au beit ha-serefa. La guemara corrige aussitot la michna -- il ne peut pas les faire fumer maintenant, il porte encore les bigdei lavan -- et Tossefot consacre une longue glose a defendre la version du texte que Rachi voulait effacer.</p><p>Le daf s interrompt sur le premier membre de la guezera chava or-bassar-peresh, qui interdit d ecorcher avant de decouper.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 600" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="600" fill="#fffdf8"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#64748b"/></marker></defs>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Yoma 67b : un seul verset, quatre lectures -- puis retour a l ordre du service</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.5" fill="#57534e">Fin de la sougya du bouc emissaire, la question des houkim, et la reprise de la michna du Cohen Gadol</text>
+
+  <rect x="20" y="58" width="720" height="92" rx="8" fill="#eef6ff" stroke="#9cc3ea"/>
+  <text x="38" y="79" font-size="12.5" font-weight="700" fill="#1d4ed8">A -- Seg 0 a 4 : les membres du bouc, permis ou interdits a la hanaa ?</text>
+  <text x="38" y="98" font-size="10" fill="#334155">Celui qui permet lit le mot superflu bamidbar : le bouc est hefker comme le desert. Celui qui interdit lit gezeira : terme de severite.</text>
+  <text x="38" y="114" font-size="10" fill="#334155">Chacun doit alors recaser le mot que l autre lui prend : bamidbar sert a inclure Nov, Guivon, Chilo et le Temple ; gezeira sert a trois derachot.</text>
+  <text x="38" y="133" font-size="9.5" font-style="italic" fill="#1e40af">Rava tranche : la logique est du cote de celui qui permet -- la Torah n a pas dit envoie pour creer une takala (achoppement).</text>
+
+  <path d="M 380 150 L 380 164" stroke="#64748b" stroke-width="1.6" marker-end="url(#a)"/>
+
+  <rect x="20" y="168" width="352" height="128" rx="8" fill="#fef6ee" stroke="#eabf9c"/>
+  <text x="38" y="189" font-size="12.5" font-weight="700" fill="#c2410c">B -- Seg 5 a 6 : que veut dire Azazel ?</text>
+  <text x="38" y="208" font-size="10" fill="#334155">1. az ve-kache : apre et dur -- donc un tsouk</text>
+  <text x="38" y="224" font-size="10" fill="#334155">2. le plus dur des monts (eilei ha-arets)</text>
+  <text x="38" y="240" font-size="10" fill="#334155">3. dvei R. Yichmael : il expie l acte</text>
+  <text x="52" y="256" font-size="10" fill="#334155">de Ouza et Azael -- donc les arayot</text>
+  <text x="38" y="277" font-size="9.5" font-style="italic" fill="#9a3412">Le nom du lieu devient le nom de la faute reparee.</text>
+
+  <rect x="388" y="168" width="352" height="128" rx="8" fill="#f3eefb" stroke="#c3a9e8"/>
+  <text x="406" y="189" font-size="12.5" font-weight="700" fill="#7c3aed">C -- Seg 7 a 8 : michpatim contre houkim</text>
+  <text x="406" y="208" font-size="10" fill="#4c1d95">Michpatim : la raison les aurait ecrits.</text>
+  <text x="406" y="224" font-size="10" fill="#4c1d95">Houkim : le Satan y replique.</text>
+  <text x="406" y="245" font-size="10" font-weight="700" fill="#5b21b6">Le bouc emissaire est range parmi les houkim.</text>
+  <text x="406" y="265" font-size="9.5" font-style="italic" fill="#6d28d9">La reponse est la meme qu au segment 3 : Ani Hachem,</text>
+  <text x="406" y="279" font-size="9.5" font-style="italic" fill="#6d28d9">et tu n as pas le droit d elever des objections.</text>
+
+  <path d="M 380 296 L 380 310" stroke="#64748b" stroke-width="1.6" marker-end="url(#a)"/>
+
+  <rect x="20" y="314" width="720" height="96" rx="8" fill="#dcfce7" stroke="#9cc6a0"/>
+  <text x="38" y="335" font-size="12.5" font-weight="700" fill="#166534">D -- Seg 9 a 11 : a partir de quand le convoyeur rend-il ses vetements impurs ?</text>
+  <text x="38" y="354" font-size="10" fill="#14532d">Baraita : seul le mechaleah, pas ceux qui l accompagnent. Le verset ha-mechaleah exclut la sortie de la azara ;</text>
+  <text x="38" y="370" font-size="10" fill="#14532d">le vav de ve-ha-mechaleah exclut d attendre le tsouk.</text>
+  <text x="38" y="391" font-size="9.5" font-style="italic" fill="#166534">R. Yehouda : sortie du mur de Jerusalem -- R. Yossi : arrivee au tsouk -- R. Chimon : au moment de la poussee.</text>
+
+  <path d="M 380 410 L 380 424" stroke="#64748b" stroke-width="1.6" marker-end="url(#a)"/>
+
+  <rect x="20" y="428" width="720" height="152" rx="8" fill="#fee2e2" stroke="#e5a3a3"/>
+  <text x="38" y="449" font-size="12.5" font-weight="700" fill="#b91c1c">E -- Seg 12 a 15 : la michna reprend l ordre du service</text>
+  <text x="38" y="468" font-size="10" fill="#7f1d1d">Seg 12 : le Cohen Gadol revient au taureau et au bouc a bruler, les fend, en retire les emourim, les met dans un maguis.</text>
+  <text x="38" y="484" font-size="10" fill="#7f1d1d">Seg 13 : on les tresse ensemble et on les sort au beit ha-serefa. Tuma des vetements des la sortie du mur de la azara --</text>
+  <text x="38" y="500" font-size="10" fill="#7f1d1d">R. Chimon : seulement quand le feu a pris dans la plus grande partie.</text>
+  <text x="38" y="521" font-size="10" fill="#7f1d1d">Seg 14 : la guemara corrige la michna -- il ne peut pas les faire fumer maintenant, il est encore en bigdei lavan.</text>
+  <text x="38" y="537" font-size="10" fill="#7f1d1d">Lis donc : il les a mis dans le maguis pour les faire fumer plus tard.</text>
+  <text x="38" y="558" font-size="9.5" font-style="italic" fill="#991b1b">Seg 15 : la tresse selon R. Yohanan, et la guezera chava or-bassar-peresh qui interdit d ecorcher avant de decouper.</text>
+</svg></div>
+          <figcaption>Le fil du daf : de la fin de la controverse Rav-Chmouel sur les membres du bouc jusqu au retour a l ordre du service du Cohen Gadol.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="430" fill="#fffdf8"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#64748b"/></marker></defs>
+  <text x="380" y="26" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1c1917">Vayikra 16,22 : deux mots, deux camps</text>
+  <rect x="130" y="40" width="500" height="44" rx="8" fill="#fef9c3" stroke="#d6c98a"/>
+  <text x="380" y="60" text-anchor="middle" font-size="11" fill="#3f3f46">et le bouc portera sur lui toutes leurs fautes vers une terre</text>
+  <text x="292" y="77" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b45309">gezeira</text>
+  <text x="380" y="77" text-anchor="middle" font-size="11" fill="#3f3f46">, et il enverra le bouc</text>
+  <text x="486" y="77" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1d4ed8">ba-midbar</text>
+
+  <path d="M 486 84 L 560 116" stroke="#64748b" stroke-width="1.5" marker-end="url(#a)"/>
+  <path d="M 292 84 L 210 116" stroke="#64748b" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <rect x="20" y="122" width="352" height="150" rx="8" fill="#fef6ee" stroke="#eabf9c"/>
+  <text x="38" y="143" font-size="12.5" font-weight="700" fill="#c2410c">Man de-amar assourin (interdits)</text>
+  <text x="38" y="162" font-size="10" fill="#334155">Preuve : gezeira est un terme de severite</text>
+  <text x="38" y="177" font-size="10" fill="#334155">et d interdiction (Rachi).</text>
+  <text x="38" y="200" font-size="10.5" font-weight="700" fill="#9a3412">Que fait-il alors de ba-midbar ?</text>
+  <text x="38" y="219" font-size="10" fill="#334155">Il en a besoin pour la baraita des trois</text>
+  <text x="38" y="234" font-size="10" fill="#334155">mentions : ha-midbara, ha-midbara, ba-midbar</text>
+  <text x="38" y="249" font-size="10" fill="#334155">-- pour inclure Nov, Guivon, Chilo</text>
+  <text x="38" y="264" font-size="10" fill="#334155">et la Maison eternelle.</text>
+
+  <rect x="388" y="122" width="352" height="150" rx="8" fill="#eef6ff" stroke="#9cc3ea"/>
+  <text x="406" y="143" font-size="12.5" font-weight="700" fill="#1d4ed8">Man de-amar moutarin (permis)</text>
+  <text x="406" y="162" font-size="10" fill="#334155">Preuve : ba-midbar est un mot superflu --</text>
+  <text x="406" y="177" font-size="10" fill="#334155">il enseigne que le bouc est hefker, comme</text>
+  <text x="406" y="192" font-size="10" fill="#334155">le desert n appartient a personne.</text>
+  <text x="406" y="214" font-size="10.5" font-weight="700" fill="#1e40af">Que fait-il alors de gezeira ?</text>
+  <text x="406" y="233" font-size="10" fill="#334155">Trois derachot : 1. rocher taille a pic --</text>
+  <text x="406" y="248" font-size="10" fill="#334155">2. ce qui se decoupe en tombant (les membres)</text>
+  <text x="406" y="263" font-size="10" fill="#334155">-- 3. c est un decret, Ani Hachem.</text>
+
+  <path d="M 380 272 L 380 292" stroke="#64748b" stroke-width="1.6" marker-end="url(#a)"/>
+  <rect x="120" y="298" width="520" height="112" rx="8" fill="#dcfce7" stroke="#9cc6a0"/>
+  <text x="380" y="320" text-anchor="middle" font-size="12.5" font-weight="700" fill="#166534">Rava : mistabra ke-man de-amar moutarin</text>
+  <text x="380" y="342" text-anchor="middle" font-size="10.5" fill="#14532d">La Torah n a pas dit et il enverra le bouc pour creer un achoppement.</text>
+  <text x="380" y="360" text-anchor="middle" font-size="10.5" fill="#14532d">Une fois le bouc pousse, personne ne surveille plus les morceaux.</text>
+  <text x="380" y="382" text-anchor="middle" font-size="10" fill="#334155">Si le profit etait interdit, un passant les trouverait et en profiterait sans le savoir (Rachi).</text>
+  <text x="380" y="400" text-anchor="middle" font-size="9.5" font-style="italic" fill="#166534">Argument de bon sens legislatif : une mitsva ne se construit pas sur un piege.</text>
+</svg></div>
+          <figcaption>Un seul verset, deux mots, deux camps : chacun prend un mot pour preuve et doit trouver un emploi a celui que l autre lui prend. Rava tranche.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 380" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="380" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1c1917">Vayikra 18,4 : Mes michpatim et Mes houkim</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.5" fill="#57534e">Deux listes de cinq, et une seule reponse a la fin</text>
+
+  <rect x="20" y="60" width="352" height="232" rx="8" fill="#eef6ff" stroke="#9cc3ea"/>
+  <text x="196" y="83" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1d4ed8">Michpatim</text>
+  <text x="196" y="101" text-anchor="middle" font-size="9.5" font-style="italic" fill="#1e40af">n eussent-ils pas ete ecrits, la raison</text>
+  <text x="196" y="115" text-anchor="middle" font-size="9.5" font-style="italic" fill="#1e40af">exigeait qu ils fussent ecrits</text>
+  <text x="44" y="142" font-size="10.5" fill="#334155">1. avoda zara (idolatrie)</text>
+  <text x="44" y="164" font-size="10.5" fill="#334155">2. guilouy arayot (unions interdites)</text>
+  <text x="44" y="186" font-size="10.5" fill="#334155">3. chefikhout damim (meurtre)</text>
+  <text x="44" y="208" font-size="10.5" fill="#334155">4. guezel (vol)</text>
+  <text x="44" y="230" font-size="10.5" fill="#334155">5. birkat Hachem (blaspheme)</text>
+  <text x="44" y="262" font-size="9.5" font-style="italic" fill="#475569">Rachi : michpatim = choses droites, que le</text>
+  <text x="44" y="276" font-size="9.5" font-style="italic" fill="#475569">droit lui-meme impose d accomplir.</text>
+
+  <rect x="388" y="60" width="352" height="232" rx="8" fill="#f3eefb" stroke="#c3a9e8"/>
+  <text x="564" y="83" text-anchor="middle" font-size="12.5" font-weight="700" fill="#7c3aed">Houkim</text>
+  <text x="564" y="101" text-anchor="middle" font-size="9.5" font-style="italic" fill="#6d28d9">choses contre lesquelles le Satan replique</text>
+  <text x="564" y="115" text-anchor="middle" font-size="9.5" font-style="italic" fill="#6d28d9">(Rachi : le yetser hara, pour egarer Israel)</text>
+  <text x="412" y="142" font-size="10.5" fill="#4c1d95">1. akhilat hazir (le porc)</text>
+  <text x="412" y="164" font-size="10.5" fill="#4c1d95">2. chaatnez (laine et lin melanges)</text>
+  <text x="412" y="186" font-size="10.5" fill="#4c1d95">3. halitsat yevama</text>
+  <text x="412" y="208" font-size="10.5" fill="#4c1d95">4. taharat metsora</text>
+  <text x="412" y="230" font-size="10.5" font-weight="700" fill="#5b21b6">5. sair ha-michtaleah (notre bouc)</text>
+  <text x="412" y="262" font-size="9.5" font-style="italic" fill="#475569">Rachi : hok = simple decret du Roi, comme</text>
+  <text x="412" y="276" font-size="9.5" font-style="italic" fill="#475569">Yossef en fit une regle (Bereshit 47).</text>
+
+  <rect x="150" y="304" width="460" height="60" rx="8" fill="#fef9c3" stroke="#d6c98a"/>
+  <text x="380" y="326" text-anchor="middle" font-size="12" font-weight="700" fill="#92400e">Ani Hachem -- Moi, Hachem, Je les ai graves</text>
+  <text x="380" y="348" text-anchor="middle" font-size="10" fill="#3f3f46">et tu n as pas le droit d elever des objections a leur sujet.</text>
+</svg></div>
+          <figcaption>Michpatim contre houkim : cinq lois que la raison aurait ecrites, cinq que le Satan conteste -- et le bouc emissaire au bout de la seconde liste.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">דִּכְתִיב: ״בַּמִּדְבָּר״. וּמַאן דְּאָמַר אֲסוּרִין, דִּכְתִיב: ״גְּזֵירָה״.</div>
+            <div class="fr"><p>[Celui qui dit qu ils sont permis fonde son avis] sur ce qui est ecrit : &quot;dans le desert&quot; (ba-midbar). Et celui qui dit qu ils sont interdits [fonde le sien] sur ce qui est ecrit : &quot;gezeira&quot; (terre tranchee).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דִּכְתִיב בַּמִּדְבָּר</b> וְשִׁלַּח אֶת הַשָּׂעִיר בַּמִּדְבָּר (וַיִּקְרָא טז) וּקְרָא יַתִּירָא הוּא לְמִדְרַשׁ שֶׁיְּהֵא הֶפְקֵר כַּמִּדְבָּר:</div>
+          <div class="glose-fr">Car il est ecrit &quot;ba-midbar&quot; -- &quot;et il enverra le bouc dans le desert&quot; (Vayikra 16). C est un verset superflu, destine a etre expose : [pour enseigner] qu il soit hefker (sans proprietaire) comme le desert.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>גְּזֵירָה</b> לְשׁוֹן חֹומֶר וְאִיסּוּר:</div>
+          <div class="glose-fr">&quot;Gezeira&quot; -- un terme de severite et d interdiction.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le daf s ouvre au milieu de la phrase commencee en 67a : les membres du bouc emissaire, une fois qu il s est disloque contre le rocher, sont-ils permis ou interdits a la <b>hanaa</b> (au profit) ? Rav et Chmouel divergeaient, sans qu on sache qui soutient quoi. La guemara donne maintenant a chacun son verset.</p><p>Les deux camps lisent le meme verset, Vayikra 16,22 : <i>et le bouc portera sur lui toutes leurs fautes vers une terre <b>gezeira</b>, et il enverra le bouc <b>ba-midbar</b></i>. Celui qui <b>permet</b> s appuie sur ba-midbar : Rachi precise que ce mot est un <b>kra yetera</b> (un mot superflu), puisque le desert a deja ete mentionne deux fois ; il enseigne donc que le bouc devient <b>hefker</b> -- sans proprietaire, libre a tous, comme le desert lui-meme.</p><p>Celui qui <b>interdit</b> s appuie sur gezeira, que Rachi glose comme un <i>lachon homer ve-issour</i> : un terme de severite et d interdiction. Le meme mot qui, pour l un, decrit la geographie du rocher, devient pour l autre le vocabulaire de la prohibition.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="430" fill="#fffdf8"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#64748b"/></marker></defs>
+  <text x="380" y="26" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1c1917">Vayikra 16,22 : deux mots, deux camps</text>
+  <rect x="130" y="40" width="500" height="44" rx="8" fill="#fef9c3" stroke="#d6c98a"/>
+  <text x="380" y="60" text-anchor="middle" font-size="11" fill="#3f3f46">et le bouc portera sur lui toutes leurs fautes vers une terre</text>
+  <text x="292" y="77" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b45309">gezeira</text>
+  <text x="380" y="77" text-anchor="middle" font-size="11" fill="#3f3f46">, et il enverra le bouc</text>
+  <text x="486" y="77" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1d4ed8">ba-midbar</text>
+
+  <path d="M 486 84 L 560 116" stroke="#64748b" stroke-width="1.5" marker-end="url(#a)"/>
+  <path d="M 292 84 L 210 116" stroke="#64748b" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <rect x="20" y="122" width="352" height="150" rx="8" fill="#fef6ee" stroke="#eabf9c"/>
+  <text x="38" y="143" font-size="12.5" font-weight="700" fill="#c2410c">Man de-amar assourin (interdits)</text>
+  <text x="38" y="162" font-size="10" fill="#334155">Preuve : gezeira est un terme de severite</text>
+  <text x="38" y="177" font-size="10" fill="#334155">et d interdiction (Rachi).</text>
+  <text x="38" y="200" font-size="10.5" font-weight="700" fill="#9a3412">Que fait-il alors de ba-midbar ?</text>
+  <text x="38" y="219" font-size="10" fill="#334155">Il en a besoin pour la baraita des trois</text>
+  <text x="38" y="234" font-size="10" fill="#334155">mentions : ha-midbara, ha-midbara, ba-midbar</text>
+  <text x="38" y="249" font-size="10" fill="#334155">-- pour inclure Nov, Guivon, Chilo</text>
+  <text x="38" y="264" font-size="10" fill="#334155">et la Maison eternelle.</text>
+
+  <rect x="388" y="122" width="352" height="150" rx="8" fill="#eef6ff" stroke="#9cc3ea"/>
+  <text x="406" y="143" font-size="12.5" font-weight="700" fill="#1d4ed8">Man de-amar moutarin (permis)</text>
+  <text x="406" y="162" font-size="10" fill="#334155">Preuve : ba-midbar est un mot superflu --</text>
+  <text x="406" y="177" font-size="10" fill="#334155">il enseigne que le bouc est hefker, comme</text>
+  <text x="406" y="192" font-size="10" fill="#334155">le desert n appartient a personne.</text>
+  <text x="406" y="214" font-size="10.5" font-weight="700" fill="#1e40af">Que fait-il alors de gezeira ?</text>
+  <text x="406" y="233" font-size="10" fill="#334155">Trois derachot : 1. rocher taille a pic --</text>
+  <text x="406" y="248" font-size="10" fill="#334155">2. ce qui se decoupe en tombant (les membres)</text>
+  <text x="406" y="263" font-size="10" fill="#334155">-- 3. c est un decret, Ani Hachem.</text>
+
+  <path d="M 380 272 L 380 292" stroke="#64748b" stroke-width="1.6" marker-end="url(#a)"/>
+  <rect x="120" y="298" width="520" height="112" rx="8" fill="#dcfce7" stroke="#9cc6a0"/>
+  <text x="380" y="320" text-anchor="middle" font-size="12.5" font-weight="700" fill="#166534">Rava : mistabra ke-man de-amar moutarin</text>
+  <text x="380" y="342" text-anchor="middle" font-size="10.5" fill="#14532d">La Torah n a pas dit et il enverra le bouc pour creer un achoppement.</text>
+  <text x="380" y="360" text-anchor="middle" font-size="10.5" fill="#14532d">Une fois le bouc pousse, personne ne surveille plus les morceaux.</text>
+  <text x="380" y="382" text-anchor="middle" font-size="10" fill="#334155">Si le profit etait interdit, un passant les trouverait et en profiterait sans le savoir (Rachi).</text>
+  <text x="380" y="400" text-anchor="middle" font-size="9.5" font-style="italic" fill="#166534">Argument de bon sens legislatif : une mitsva ne se construit pas sur un piege.</text>
+</svg></div><div class="svg-cap">Le partage du verset entre les deux camps, et la conclusion de Rava (segment 4).</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּמַאן דְּאָמַר אֲסוּרִין, הַאי ״מְדַבֵּר״ מַאי עֲבִיד לֵיהּ? מִיבְּעֵי לֵיהּ לְכִדְתַנְיָא: ״הַמִּדְבָּרָה״, ״הַמִּדְבָּרָה״, ״בַּמִּדְבָּר״ — לְרַבּוֹת נוֹב וְגִבְעוֹן, שִׁילֹה, וּבֵית עוֹלָמִים.</div>
+            <div class="fr"><p>Et celui qui dit qu ils sont interdits, ce mot &quot;desert&quot;, qu en fait-il ? Il lui est necessaire pour ce qui a ete enseigne [dans une baraita] : &quot;vers le desert&quot; (ha-midbara), &quot;vers le desert&quot; (ha-midbara), &quot;dans le desert&quot; (ba-midbar) -- pour inclure Nov et Guivon, Chilo, et la Maison eternelle.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַמִּדְבָּרָה הַמִּדְבָּרָה בַּמִּדְבָּר</b> שָׁלֹשׁ מִקְרָאוֹת בְּעִנְיָן לְשַׁלַּח אֹותוֹ לַעֲזָאזֵל הַמִּדְבָּרָה וְשִׁלַּח בְּיַד אִישׁ עִתִּי הַמִּדְבָּרָה וְשִׁלַּח אֶת הַשָּׂעִיר בַּמִּדְבָּר:</div>
+          <div class="glose-fr">&quot;Ha-midbara, ha-midbara, ba-midbar&quot; -- trois versets sur ce sujet : &quot;pour l envoyer a Azazel, vers le desert&quot; ; &quot;il l enverra par la main d un homme designe, vers le desert&quot; ; &quot;et il enverra le bouc dans le desert&quot;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Regle constante de la guemara : celui qui refuse la lecture de l autre doit trouver un autre emploi au mot en question, sinon le mot resterait sans fonction. Celui qui interdit doit donc dire ce que ba-midbar vient enseigner chez lui.</p><p>Reponse : les trois mentions du desert dans la parasha (Vayikra 16,10 ; 16,21 ; 16,22) servent a etendre la mitsva du bouc emissaire aux differents sanctuaires de l histoire d Israel -- <b>Nov</b> et <b>Guivon</b> (les bamot, les hauts lieux autorises), <b>Chilo</b> (le Michkan de pierre) et le <b>beit olamim</b> (le Temple de Jerusalem). Autrement dit : le rituel du bouc n est pas reserve au desert du Sinai ni au seul Temple, il vaut partout ou l on offre les korbanot publics.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאִידָךְ, הַאי ״גְּזֵירָה״ מַאי עֲבִיד לֵיהּ? מִיבְּעֵי לֵיהּ לְכִדְתַנְיָא: ״גְּזֵירָה״ — אֵין גְּזֵירָה אֶלָּא חֲתוּכָה. דָּבָר אַחֵר: אֵין גְּזֵירָה אֶלָּא דָּבָר הַמִּתְגַּזֵּר וְיוֹרֵד.</div>
+            <div class="fr"><p>Et l autre, ce mot &quot;gezeira&quot;, qu en fait-il ? Il lui est necessaire pour ce qui a ete enseigne [dans une baraita] : &quot;gezeira&quot; -- gezeira ne signifie rien d autre que &quot;tranchee&quot;.</p><p>Autre explication : gezeira ne designe rien d autre qu une chose qui se decoupe en descendant.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>חֲתוּכָה</b> צוּק חִתּוּךְ בִּזְקִיפָה וְלֹא מְשֻׁופָּע כָּל כָּךְ:</div>
+          <div class="glose-fr">&quot;Tranchee&quot; -- un tsouk taille a pic, et non pas tellement en pente.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דָּבָר הַמִּתְגַּזֵּר וְיוֹרֵד</b> הַשָּׂעִיר מִתְגַּזֵּר בָּהּ אֵיבָרִים אֵיבָרִים:</div>
+          <div class="glose-fr">&quot;Une chose qui se decoupe en descendant&quot; -- le bouc s y decoupe membre apres membre.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Question symetrique : celui qui permet doit lui aussi trouver un emploi a gezeira. La baraita lui en fournit trois, dont deux ici.</p><p>Premiere lecture : gezeira, de la racine <i>gazar</i> (couper), decrit le lieu -- un rocher <b>taille a pic</b>. Rachi : <i>tsouk hatoukh be-zekifa</i>, une paroi verticale et non une pente douce. Deuxieme lecture : gezeira designe non le rocher mais ce qui lui arrive -- <b>davar ha-mitgazer ve-yored</b>, une chose qui se decoupe en descendant, c est-a-dire le bouc reduit en <i>evarim evarim</i> (membre apres membre) avant meme la mi-hauteur.</p><p>Le meme mot fournit ainsi la forme du rocher et l effet produit sur l animal : la geographie et le resultat du rituel tiennent dans une seule racine.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">דָּבָר אַחֵר: ״גְּזֵירָה״, שֶׁמָּא תֹּאמַר מַעֲשֵׂה תֹהוּ הוּא, תַּלְמוּד לוֹמַר: ״אֲנִי ה׳״, אֲנִי ה׳ גְּזַרְתִּיו, וְאֵין לְךָ רְשׁוּת לְהַרְהֵר בָּהֶן.</div>
+            <div class="fr"><p>Autre explication : &quot;gezeira&quot; -- de peur que tu ne dises que c est un acte vain (maasse tohou), le verset dit : &quot;Je suis Hachem&quot; -- Moi, Hachem, Je l ai decrete (guezartiv), et tu n as pas le droit d elever des objections a son sujet.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁמָּא תֹּאמַר מַעֲשֵׂה תֹהוּ הֵם</b> מַה כַּפָּרָה יֵשׁ בְּשִׁילּוּחַ זֶה וּמַה יֵשׁ בְּיַד צוּק זֶה לְהוֹעִיל:</div>
+          <div class="glose-fr">&quot;De peur que tu ne dises que ce sont des actes vains&quot; -- quelle kapara y a-t-il dans cet envoi, et que peut donc ce rocher pour etre utile ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Troisieme emploi de gezeira, et le plus lourd : la racine ne signifie plus couper mais <b>decreter</b>. Le mot annonce que ce rituel est un <b>guezera</b>, un decret royal dont la raison n est pas donnee.</p><p>Rachi formule crument l objection anticipee : <i>quelle kapara y a-t-il dans cet envoi, et que peut donc ce rocher pour etre utile ?</i> C est la question du lecteur qui regarde un bouc pousse d une falaise et n y voit aucun mecanisme d expiation. La reponse n est pas une explication mais une signature : <b>Ani Hachem</b>. Ce meme couple objection-signature reviendra mot pour mot au segment 8, cette fois pour toute la categorie des houkim.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רָבָא: מִסְתַּבְּרָא כְּמַאן דְּאָמַר מֻותָּרִין, לֹא אָמְרָה תּוֹרָה ״שְׁלַח״ לְתַקָּלָה.</div>
+            <div class="fr"><p>Rava dit : il est logique [de trancher] comme celui qui dit qu ils sont permis, [car] la Torah n a pas dit &quot;envoie&quot; pour [creer] un achoppement.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְתַקָּלָה</b> שֶׁיִּמְצָאֵם אָדָם וְיֵהָנֶה מֵהֶם שֶׁלֹּא יֵדַע שֶׁהָיוּ מִן הַשָּׂעִיר:</div>
+          <div class="glose-fr">&quot;Pour un achoppement&quot; -- qu un homme les trouve et en tire profit sans savoir qu ils provenaient du bouc.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rava ne tranche pas par un verset mais par un raisonnement de bon sens legislatif : <b>lo amra Torah chelah le-takala</b>. La Torah a ordonne d envoyer le bouc au desert et de l y abandonner ; elle n a pas ordonne cela dans le but de creer une <b>takala</b>, un piege.</p><p>Rachi explicite le scenario : les morceaux gisent au pied du tsouk, sans surveillance ; un passant les trouve et en tire profit <i>sans savoir qu ils provenaient du bouc</i>. Si le profit etait interdit, l accomplissement meme de la mitsva produirait mecaniquement des transgressions involontaires. Un ordre divin ne se construit pas ainsi -- donc les membres sont permis.</p><p>C est le meme type d argument que l on rencontre ailleurs sous la forme <i>la Torah n a pas donne ses paroles a des anges</i> : la halakha tient compte du monde reel dans lequel elle est appliquee.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּנוּ רַבָּנַן: ״עֲזָאזֵל״ — שֶׁיְּהֵא עַז וְקָשֶׁה. יָכוֹל בְּיִשּׁוּב, תַּלְמוּד לוֹמַר: ״בַּמִּדְבָּר״, וּמִנַּיִן שֶׁבְּצוּק? תַּלְמוּד לוֹמַר: ״גְּזֵירָה״. תַּנְיָא אִידָךְ: ״עֲזָאזֵל״ — קָשֶׁה שֶׁבֶּהָרִים, וְכֵן הוּא אוֹמֵר: ״וְאֶת אֵילֵי הָאָרֶץ לָקָח״.</div>
+            <div class="fr"><p>Nos maitres ont enseigne : &quot;Azazel&quot; -- qu il soit az (apre) et dur. Pourrait-on croire [que ce soit] dans une region habitee ?</p><p>Le verset dit : &quot;dans le desert&quot;. Et d ou [sait-on] que c est du haut d un tsouk ?</p><p>Le verset dit : &quot;gezeira&quot;. Il a ete enseigne dans une autre baraita : &quot;Azazel&quot; -- le plus dur des monts, et de meme il est dit : &quot;et les puissants (eilei) du pays, il les emmena&quot;.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁיְּהֵא עַז וְקָשֶׁה</b> אֶל לָשׁוֹן קָשָׁה:</div>
+          <div class="glose-fr">&quot;Qu il soit az et dur&quot; -- &quot;el&quot; est un terme de durete.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמִנַּייִן שֶׁבְּצוּק</b> הַר זָקוּף:</div>
+          <div class="glose-fr">&quot;Et d ou [sait-on] que c est du haut d un tsouk&quot; -- une montagne a pic.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>גְּזֵירָה</b> חֲתוּכָה:</div>
+          <div class="glose-fr">&quot;Gezeira&quot; -- tranchee.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara passe du verset au nom lui-meme. <b>Azazel</b> est decompose : <i>az</i> (apre, violent) et <i>el</i>, que Rachi glose comme <i>lachon kacheh</i>, un terme de durete. Le nom decrit donc un lieu rude.</p><p>Les trois mots deja rencontres se repartissent alors les trois informations : <b>Azazel</b> donne la nature du lieu (apre et dur), <b>ba-midbar</b> exclut qu il se trouve dans une region habitee, et <b>gezeira</b> ajoute la verticalite -- un <b>tsouk</b>, une montagne a pic selon Rachi. Rien n est laisse au hasard geographique.</p><p>La seconde baraita confirme par une preuve lexicale : dans Yehezkel 17,13, <i>eilei ha-arets</i> designe les puissants du pays. La racine el porte bien l idee de force et de durete.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="320" fill="#fffdf8"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#64748b"/></marker></defs>
+  <text x="350" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Azazel : trois lectures du meme nom</text>
+  <rect x="280" y="40" width="140" height="34" rx="17" fill="#fef9c3" stroke="#d6c98a"/>
+  <text x="350" y="62" text-anchor="middle" font-size="13" font-weight="700" fill="#92400e">Azazel</text>
+
+  <path d="M 320 74 L 150 104" stroke="#64748b" stroke-width="1.4" marker-end="url(#a)"/>
+  <path d="M 350 74 L 350 104" stroke="#64748b" stroke-width="1.4" marker-end="url(#a)"/>
+  <path d="M 380 74 L 550 104" stroke="#64748b" stroke-width="1.4" marker-end="url(#a)"/>
+
+  <rect x="20" y="112" width="200" height="128" rx="8" fill="#fef6ee" stroke="#eabf9c"/>
+  <text x="120" y="134" text-anchor="middle" font-size="11.5" font-weight="700" fill="#c2410c">az ve-kache</text>
+  <text x="120" y="152" text-anchor="middle" font-size="9.5" fill="#334155">apre et dur</text>
+  <text x="120" y="174" text-anchor="middle" font-size="9.5" fill="#334155">Pas dans une region</text>
+  <text x="120" y="188" text-anchor="middle" font-size="9.5" fill="#334155">habitee : ba-midbar</text>
+  <text x="120" y="210" text-anchor="middle" font-size="9.5" fill="#334155">Du haut d un tsouk :</text>
+  <text x="120" y="224" text-anchor="middle" font-size="9.5" fill="#334155">gezeira</text>
+
+  <rect x="250" y="112" width="200" height="128" rx="8" fill="#eef6ff" stroke="#9cc3ea"/>
+  <text x="350" y="134" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1d4ed8">le plus dur des monts</text>
+  <text x="350" y="156" text-anchor="middle" font-size="9.5" fill="#334155">Yehezkel 17,13 :</text>
+  <text x="350" y="172" text-anchor="middle" font-size="9.5" fill="#334155">et les eilei du pays,</text>
+  <text x="350" y="186" text-anchor="middle" font-size="9.5" fill="#334155">il les emmena</text>
+  <text x="350" y="210" text-anchor="middle" font-size="9.5" font-style="italic" fill="#1e40af">el = terme de durete</text>
+  <text x="350" y="226" text-anchor="middle" font-size="9.5" font-style="italic" fill="#1e40af">(Rachi)</text>
+
+  <rect x="480" y="112" width="200" height="128" rx="8" fill="#f3eefb" stroke="#c3a9e8"/>
+  <text x="580" y="134" text-anchor="middle" font-size="11.5" font-weight="700" fill="#7c3aed">Ouza et Azael</text>
+  <text x="580" y="156" text-anchor="middle" font-size="9.5" fill="#4c1d95">dvei R. Yichmael :</text>
+  <text x="580" y="172" text-anchor="middle" font-size="9.5" fill="#4c1d95">il expie leur acte</text>
+  <text x="580" y="196" text-anchor="middle" font-size="9.5" fill="#4c1d95">Rachi : anges descendus</text>
+  <text x="580" y="210" text-anchor="middle" font-size="9.5" fill="#4c1d95">aux jours de Naama --</text>
+  <text x="580" y="226" text-anchor="middle" font-size="9.5" font-weight="700" fill="#5b21b6">il expie les arayot</text>
+
+  <rect x="120" y="256" width="460" height="48" rx="8" fill="#dcfce7" stroke="#9cc6a0"/>
+  <text x="350" y="277" text-anchor="middle" font-size="10.5" fill="#14532d">Les deux premieres lectures decrivent un lieu ; la troisieme decrit une faute.</text>
+  <text x="350" y="295" text-anchor="middle" font-size="9.5" font-style="italic" fill="#166534">Le meme mot dit ou l on envoie le bouc et ce dont on se decharge.</text>
+</svg></div><div class="svg-cap">Les trois lectures du nom Azazel (segments 5 et 6) : deux decrivent un lieu, la troisieme une faute.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּנָא דְּבֵי רַבִּי יִשְׁמָעֵאל: ״עֲזָאזֵל״ — שֶׁמְּכַפֵּר עַל מַעֲשֵׂה עֻוזָּא וְעַזָּאֵל.</div>
+            <div class="fr"><p>L ecole de Rabbi Yichmael a enseigne : &quot;Azazel&quot; -- parce qu il expie l acte de Ouza et Azael.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>עֻוזָּא וַעֲזָאֵל</b> מַלְאֲכֵי חַבָּלָה שֶׁיָּרְדוּ לָאָרֶץ בִּימֵי נַעֲמָה אֲחוֹת תּוּבַל קַיִן וַעֲלֵיהֶם נֶאֱמַר וַיִּרְאוּ בְנֵי הָאֱלֹהִים אֶת בְּנוֹת הָאָדָם (בְּרֵאשִׁית ו׳:ב׳) כְּלוֹמַר עַל הָעֲרָיוֹת מְכַפֵּר:</div>
+          <div class="glose-fr">&quot;Ouza et Azael&quot; -- des anges destructeurs descendus sur terre aux jours de Naama, soeur de Toubal-Kayin, et c est d eux qu il est dit &quot;et les fils de Dieu virent les filles de l homme&quot; (Bereshit 6,2) -- autrement dit, il expie les arayot.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Troisieme lecture du nom, d un tout autre ordre. <b>Azazel</b> n est plus un lieu mais un echo de deux noms : <b>Ouza</b> et <b>Azael</b>. Rachi identifie ces derniers comme des <i>malakhei habala</i>, des anges destructeurs descendus sur terre aux jours de Naama, soeur de Toubal-Kayin, dont parle le verset <i>les fils de Dieu virent les filles de l homme</i> (Bereshit 6,2).</p><p>Rachi tire la conclusion halakhique de l aggada : <i>autrement dit, il expie les <b>arayot</b></i> (les unions interdites). Le bouc emissaire, qui porte les fautes d Israel au desert, repare specifiquement la faute qui a corrompu le monde avant le deluge. Le nom du lieu de l envoi devient le nom de la faute reparee.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּנוּ רַבָּנַן, ״אֶת מִשְׁפְּטֵי תַּעֲשׂוּ״ — דְּבָרִים שֶׁאִלְמָלֵא (לֹא) נִכְתְּבוּ דִּין הוּא שֶׁיִּכָּתְבוּ, וְאֵלּוּ הֵן: עֲבוֹדָה זָרָה, וְגִלּוּי עֲרָיוֹת, וּשְׁפִיכוּת דָּמִים, וְגָזֵל, וּבִרְכַּת הַשֵּׁם.</div>
+            <div class="fr"><p>Nos maitres ont enseigne : &quot;Vous accomplirez Mes michpatim&quot; -- ce sont des choses qui, n eussent-elles pas ete ecrites, la raison exigeait qu elles fussent ecrites ; les voici : l idolatrie, les unions interdites, l effusion de sang, le vol, et le blaspheme.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִשְׁפְּטֵי</b> מַשְׁמַע דְּבָרִים הַמְיֻושָּׁרִים וְהַדִּין נוֹתֵן לַעֲשׂוֹתוֹ:</div>
+          <div class="glose-fr">&quot;Mes michpatim&quot; -- cela signifie des choses droites, que le droit lui-meme impose d accomplir.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La sougya s elargit. Puisque le bouc emissaire est le type meme de la loi sans raison apparente, la guemara cite la baraita qui classe l ensemble de la Torah en deux categories, a partir de Vayikra 18,4 : <i>vous accomplirez Mes michpatim et vous garderez Mes houkim</i>.</p><p><b>Michpatim</b> : Rachi glose <i>devarim ha-meyoucharim</i>, des choses droites, que le droit lui-meme impose d accomplir. Cinq interdits en font partie : <b>avoda zara</b> (idolatrie), <b>guilouy arayot</b> (unions interdites), <b>chefikhout damim</b> (effusion de sang), <b>guezel</b> (vol) et <b>birkat Hachem</b> (le blaspheme, designe par euphemisme du mot benir).</p><p>La formule est remarquable : ces lois auraient ete ecrites de toute facon. La Revelation les confirme plutot qu elle ne les institue.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 380" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="380" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1c1917">Vayikra 18,4 : Mes michpatim et Mes houkim</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.5" fill="#57534e">Deux listes de cinq, et une seule reponse a la fin</text>
+
+  <rect x="20" y="60" width="352" height="232" rx="8" fill="#eef6ff" stroke="#9cc3ea"/>
+  <text x="196" y="83" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1d4ed8">Michpatim</text>
+  <text x="196" y="101" text-anchor="middle" font-size="9.5" font-style="italic" fill="#1e40af">n eussent-ils pas ete ecrits, la raison</text>
+  <text x="196" y="115" text-anchor="middle" font-size="9.5" font-style="italic" fill="#1e40af">exigeait qu ils fussent ecrits</text>
+  <text x="44" y="142" font-size="10.5" fill="#334155">1. avoda zara (idolatrie)</text>
+  <text x="44" y="164" font-size="10.5" fill="#334155">2. guilouy arayot (unions interdites)</text>
+  <text x="44" y="186" font-size="10.5" fill="#334155">3. chefikhout damim (meurtre)</text>
+  <text x="44" y="208" font-size="10.5" fill="#334155">4. guezel (vol)</text>
+  <text x="44" y="230" font-size="10.5" fill="#334155">5. birkat Hachem (blaspheme)</text>
+  <text x="44" y="262" font-size="9.5" font-style="italic" fill="#475569">Rachi : michpatim = choses droites, que le</text>
+  <text x="44" y="276" font-size="9.5" font-style="italic" fill="#475569">droit lui-meme impose d accomplir.</text>
+
+  <rect x="388" y="60" width="352" height="232" rx="8" fill="#f3eefb" stroke="#c3a9e8"/>
+  <text x="564" y="83" text-anchor="middle" font-size="12.5" font-weight="700" fill="#7c3aed">Houkim</text>
+  <text x="564" y="101" text-anchor="middle" font-size="9.5" font-style="italic" fill="#6d28d9">choses contre lesquelles le Satan replique</text>
+  <text x="564" y="115" text-anchor="middle" font-size="9.5" font-style="italic" fill="#6d28d9">(Rachi : le yetser hara, pour egarer Israel)</text>
+  <text x="412" y="142" font-size="10.5" fill="#4c1d95">1. akhilat hazir (le porc)</text>
+  <text x="412" y="164" font-size="10.5" fill="#4c1d95">2. chaatnez (laine et lin melanges)</text>
+  <text x="412" y="186" font-size="10.5" fill="#4c1d95">3. halitsat yevama</text>
+  <text x="412" y="208" font-size="10.5" fill="#4c1d95">4. taharat metsora</text>
+  <text x="412" y="230" font-size="10.5" font-weight="700" fill="#5b21b6">5. sair ha-michtaleah (notre bouc)</text>
+  <text x="412" y="262" font-size="9.5" font-style="italic" fill="#475569">Rachi : hok = simple decret du Roi, comme</text>
+  <text x="412" y="276" font-size="9.5" font-style="italic" fill="#475569">Yossef en fit une regle (Bereshit 47).</text>
+
+  <rect x="150" y="304" width="460" height="60" rx="8" fill="#fef9c3" stroke="#d6c98a"/>
+  <text x="380" y="326" text-anchor="middle" font-size="12" font-weight="700" fill="#92400e">Ani Hachem -- Moi, Hachem, Je les ai graves</text>
+  <text x="380" y="348" text-anchor="middle" font-size="10" fill="#3f3f46">et tu n as pas le droit d elever des objections a leur sujet.</text>
+</svg></div><div class="svg-cap">Les deux listes de cinq (segments 7 et 8), et la reponse commune : Ani Hachem.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">״אֶת חֻוקּוֹתַי תִּשְׁמְרוּ״ — דְּבָרִים שֶׁהַשָּׂטָן מֵשִׁיב עֲלֵיהֶן, וְאֵלּוּ הֵן: אֲכִילַת חֲזִיר, וּלְבִישַׁת שַׁעַטְנֵז, וַחֲלִיצַת יְבָמָה, וְטַהֲרַת מְצֹורָע, וְשָׂעִיר הַמִּשְׁתַּלֵּחַ. וְשֶׁמָּא תֹּאמַר מַעֲשֵׂה תֹוהוּ הֵם, תַּלְמוּד לוֹמַר: ״אֲנִי ה׳״, אֲנִי ה׳ חֲקַקְתִּיו, וְאֵין לְךָ רְשׁוּת לְהַרְהֵר בָּהֶן.</div>
+            <div class="fr"><p>&quot;Vous garderez Mes houkim&quot; -- ce sont des choses contre lesquelles le Satan replique ; les voici : la consommation du porc, le port du chaatnez, la halitsa de la yevama, la purification du metsora, et le bouc emissaire. Et de peur que tu ne dises que ce sont des actes vains, le verset dit : &quot;Je suis Hachem&quot; -- Moi, Hachem, Je les ai graves, et tu n as pas le droit d elever des objections a leur sujet.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>חוֹק</b> מַשְׁמַע שֶׁאֵינוֹ אֶלָּא גְּזֵירַת מֶלֶךְ כְּמוֹ וַיְשִׂימֶהָ לְחָק (שְׁמוּאֵל א ל) וַיָּשֶׂם אֹותָהּ יוֹסֵף לְחֹוק (בְּרֵאשִׁית מז):</div>
+          <div class="glose-fr">&quot;Hok&quot; -- cela signifie que ce n est qu un decret du Roi, comme &quot;il en fit une regle&quot; (Chmouel I 30), &quot;et Yossef en fit une regle&quot; (Bereshit 47).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַשָּׂטָן</b> יֵצֶר הָרַע מֵשִׁיב עֲלֵיהֶן תְּשׁוּבָה לְהַטְעוֹת אֶת יִשְׂרָאֵל וְלוֹמַר שֶׁהַתּוֹרָה אֵינָהּ אֱמֶת כִּי מַה תּוֹעֶלֶת בְּכָל אֵלּוּ לְכָךְ נִכְתַּב בָּהֶן חוֹק אני ה&#x27; גָּזַרְתִּי עֲלֵיכֶם:</div>
+          <div class="glose-fr">&quot;Le Satan&quot; -- c est le yetser hara qui replique contre elles, pour egarer Israel et dire que la Torah n est pas veridique -- car quelle utilite y a-t-il en tout cela ? C est pourquoi il est ecrit a leur sujet &quot;hok&quot; : Moi, Hachem, Je l ai decrete sur vous.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>תַּלְמוּד לוֹמַר אֲנִי ה&#x27;</b> אַחֻוקּוֹתַי קָאֵי דְּמִינַּייְהוּ סָלֵיק אֶת חֻוקּוֹתַי תִּשְׁמְרוּ אֲנִי ה&#x27; חֲקַקְתִּים גְּזַרְתִּים:</div>
+          <div class="glose-fr">&quot;Le verset dit : Je suis Hachem&quot; -- cela se rapporte aux houkim, puisque c est d eux qu on vient de parler : &quot;vous garderez Mes houkim, Je suis Hachem&quot; -- Je les ai graves, Je les ai decretes.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Seconde categorie : les <b>houkim</b>. Rachi definit <i>hok</i> comme <i>guezerat melekh</i>, un simple decret du Roi, en s appuyant sur des emplois profanes du mot (Chmouel I 30 ; Bereshit 47, ou Yossef en fait une regle fixe d Egypte).</p><p>Cinq exemples : l interdit du <b>porc</b>, le <b>chaatnez</b> (melange laine et lin), la <b>halitsa</b> de la yevama, la <b>purification du metsora</b>, et -- au bout de la liste -- notre <b>bouc emissaire</b>. C est ainsi que la baraita rejoint la sougya : le rituel du tsouk est le cas d ecole de la loi que la raison ne fonde pas.</p><p>Rachi identifie le Satan au <b>yetser hara</b> : il replique contre ces lois <i>pour egarer Israel et dire que la Torah n est pas veridique -- car quelle utilite y a-t-il en tout cela ?</i> La reponse est exactement celle du segment 3, mot pour mot, mais elargie de la seule guezera du bouc a toute la categorie : Ani Hachem, Je les ai graves.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֵימָתַי מְטַמֵּא בְּגָדִים. תָּנוּ רַבָּנַן: הַמְשַׁלֵּחַ מְטַמֵּא בְּגָדִים, וְאֵין הַשּׁוֹלֵחַ אֶת הַמְשַׁלֵּחַ מְטַמֵּא בְּגָדִים.</div>
+            <div class="fr"><p>&quot;A partir de quand rend-il ses vetements impurs ?&quot; Nos maitres ont enseigne : le convoyeur (ha-mechaleah) rend ses vetements impurs, mais celui qui envoie le convoyeur ne rend pas ses vetements impurs.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַשּׁוֹלֵחַ אֶת הַמְשַׁלֵּחַ</b> הַמַּלְוִים אוֹתוֹ מִירוּשָׁלַיִם:</div>
+          <div class="glose-fr">&quot;Celui qui envoie le convoyeur&quot; -- ceux qui l accompagnent depuis Jerusalem.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Retour a la michna de 67a, restee en suspens : le convoyeur rend ses vetements impurs (Vayikra 16,26), mais a partir de quel moment de sa route ?</p><p>La baraita pose d abord une delimitation de <b>personnes</b> avant celle du <b>moment</b> : seul le <b>mechaleah</b>, celui qui envoie effectivement le bouc, est concerne. Ceux que la baraita appelle joliment <i>ceux qui envoient le convoyeur</i> -- Rachi : les notables qui l accompagnent depuis Jerusalem et les hommes des soukot -- ne sont pas touches. La tuma ne se transmet pas par voisinage sur la route.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">יָכוֹל מִשֶּׁיֵּצֵא חוּץ לְחוֹמַת עֲזָרָה — תַּלְמוּד לוֹמַר: ״הַמְשַׁלֵּחַ״. אִי ״הַמְשַׁלֵּחַ״, יָכוֹל עַד שֶׁיַּגִּיעַ לַצּוּק — תַּלְמוּד לוֹמַר: ״וְהַמְשַׁלֵּחַ״. הָא כֵיצַד: מִשֶּׁיֵּצֵא חוּץ לְחוֹמַת יְרוּשָׁלַיִם, דִּבְרֵי רַבִּי יְהוּדָה.</div>
+            <div class="fr"><p>Pourrait-on croire [qu il devient impur] des qu il sort hors du mur de la azara ? Le verset dit : &quot;celui qui envoie (ha-mechaleah)&quot;.</p><p>Si [seulement] &quot;ha-mechaleah&quot;, pourrait-on croire [qu il ne le devienne] que lorsqu il parvient au tsouk ? Le verset dit : &quot;et celui qui envoie (ve-ha-mechaleah)&quot;.</p><p>Comment donc [concilier] ? Des qu il sort hors du mur de Jerusalem -- paroles de Rabbi Yehouda.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ת&quot;ל וְהַמְשַׁלֵּחַ</b> מַשְׁמַע שֶׁשִּׁילְּחוֹ כְּבָר לְצַד הַמִּדְבָּר:</div>
+          <div class="glose-fr">&quot;Le verset dit : ve-ha-mechaleah&quot; -- cela implique qu il l a deja envoye en direction du desert.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Construction typique en deux temps, ou chaque exces est corrige par un detail du verset. Point de depart le plus precoce imaginable : la sortie de la <b>azara</b>. Ecarte par le mot <b>ha-mechaleah</b>, participe qui suppose un envoi deja engage.</p><p>Point le plus tardif : l arrivee au <b>tsouk</b>. Ecarte par le <b>vav</b> de <i>ve-ha-mechaleah</i>. Rachi lit ce vav comme indiquant que <i>l envoi a deja eu lieu, en direction du desert</i> : la tuma commence donc avant l arrivee.</p><p>Entre les deux bornes, Rabbi Yehouda place le point d equilibre : la sortie hors du <b>mur de Jerusalem</b>. C est le moment ou le convoyeur quitte la ville et ou la route du desert commence vraiment.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבִּי יוֹסֵי אוֹמֵר: ״עֲזָאזֵל וְכִבֶּס״ — עַד שֶׁהִגִּיעַ לַצּוּק. רַבִּי שִׁמְעוֹן אוֹמֵר: ״וְהַמְשַׁלֵּחַ אֶת הַשָּׂעִיר לַעֲזָאזֵל יְכַבֵּס בְּגָדָיו״, זוֹרְקוֹ בְּבַת רֹאשׁ וּמְטַמֵּא בְּגָדִים.</div>
+            <div class="fr"><p>Rabbi Yossi dit : &quot;a Azazel... il lavera&quot; -- [seulement] lorsqu il est parvenu au tsouk. Rabbi Chimon dit : &quot;et celui qui envoie le bouc a Azazel lavera ses vetements&quot; -- [c est] lorsqu il le projette d un seul coup, la tete la premiere, qu il rend ses vetements impurs.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>זוֹרְקוֹ בְּבַת רֹאשׁ</b> קָסָבַר דְּחִיפָתוֹ וּזְרִיקָתוֹ הִיא שִׁילּוּחוֹ:</div>
+          <div class="glose-fr">&quot;Il le projette d un seul coup, la tete la premiere&quot; -- il tient que la poussee et la projection constituent son envoi.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deux avis plus tardifs, tires du meme verset lu autrement. <b>Rabbi Yossi</b> rattache le lavage au mot <b>Azazel</b> : le verset dit <i>a Azazel... il lavera ses vetements</i>, donc la tuma ne commence qu a l arrivee au rocher. Ce que Rabbi Yehouda excluait par le vav, Rabbi Yossi le retient par la proximite des mots.</p><p><b>Rabbi Chimon</b> va plus loin encore : rien avant la <b>poussee</b>. Rachi donne sa raison : <i>il tient que la poussee et la projection constituent son envoi</i> -- le <b>chilouah</b> n est pas la marche mais le geste final. Tant que le bouc n a pas ete jete <b>be-vat roch</b> (d un seul coup, la tete la premiere), la mitsva n a pas eu lieu, donc la tuma non plus.</p><p>Nafka mina pratique : les vetements du convoyeur, entre Jerusalem et le tsouk, sont-ils deja tame ? Selon Rabbi Yehouda oui, selon Rabbi Yossi et Rabbi Chimon non.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="300" fill="#fffdf8"/>
+  <text x="370" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">A quel moment le mechaleah rend-il ses vetements impurs ?</text>
+  <text x="370" y="45" text-anchor="middle" font-size="10" fill="#57534e">Quatre bornes possibles sur la route, trois avis</text>
+
+  <line x1="60" y1="100" x2="690" y2="100" stroke="#94a3b8" stroke-width="2.5"/>
+  <circle cx="90" cy="100" r="7" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5"/>
+  <circle cx="270" cy="100" r="7" fill="#86efac" stroke="#166534" stroke-width="1.8"/>
+  <circle cx="470" cy="100" r="7" fill="#93c5fd" stroke="#1d4ed8" stroke-width="1.8"/>
+  <circle cx="660" cy="100" r="7" fill="#fca5a5" stroke="#b91c1c" stroke-width="1.8"/>
+
+  <text x="90" y="82" text-anchor="middle" font-size="10" fill="#475569">mur de la azara</text>
+  <text x="270" y="82" text-anchor="middle" font-size="10" fill="#166534">mur de Jerusalem</text>
+  <text x="470" y="82" text-anchor="middle" font-size="10" fill="#1d4ed8">arrivee au tsouk</text>
+  <text x="660" y="82" text-anchor="middle" font-size="10" fill="#b91c1c">la poussee</text>
+
+  <text x="90" y="126" text-anchor="middle" font-size="9.5" font-style="italic" fill="#64748b">exclu par</text>
+  <text x="90" y="139" text-anchor="middle" font-size="9.5" font-style="italic" fill="#64748b">ha-mechaleah</text>
+
+  <rect x="196" y="150" width="150" height="62" rx="8" fill="#dcfce7" stroke="#9cc6a0"/>
+  <text x="271" y="171" text-anchor="middle" font-size="11" font-weight="700" fill="#166534">R. Yehouda</text>
+  <text x="271" y="189" text-anchor="middle" font-size="9.5" fill="#14532d">le vav de ve-ha-mechaleah</text>
+  <text x="271" y="203" text-anchor="middle" font-size="9.5" fill="#14532d">interdit d attendre le tsouk</text>
+
+  <rect x="396" y="150" width="150" height="62" rx="8" fill="#eef6ff" stroke="#9cc3ea"/>
+  <text x="471" y="171" text-anchor="middle" font-size="11" font-weight="700" fill="#1d4ed8">R. Yossi</text>
+  <text x="471" y="189" text-anchor="middle" font-size="9.5" fill="#334155">Azazel ve-khibess :</text>
+  <text x="471" y="203" text-anchor="middle" font-size="9.5" fill="#334155">on lit le lavage sur Azazel</text>
+
+  <rect x="586" y="150" width="150" height="62" rx="8" fill="#fee2e2" stroke="#e5a3a3"/>
+  <text x="661" y="171" text-anchor="middle" font-size="11" font-weight="700" fill="#b91c1c">R. Chimon</text>
+  <text x="661" y="189" text-anchor="middle" font-size="9.5" fill="#7f1d1d">la poussee est le shilouah :</text>
+  <text x="661" y="203" text-anchor="middle" font-size="9.5" fill="#7f1d1d">pas de tuma avant elle</text>
+
+  <rect x="60" y="232" width="630" height="52" rx="8" fill="#fef9c3" stroke="#d6c98a"/>
+  <text x="375" y="253" text-anchor="middle" font-size="10.5" fill="#3f3f46">Baraita preliminaire : seul le convoyeur est concerne -- ceux qui envoient le convoyeur, c est-a-dire ses accompagnateurs,</text>
+  <text x="375" y="271" text-anchor="middle" font-size="10.5" fill="#3f3f46">ne rendent pas leurs vetements impurs (Rachi : ce sont ceux qui l accompagnent depuis Jerusalem).</text>
+</svg></div><div class="svg-cap">Les quatre bornes de la route et les trois avis sur le moment ou commence la tuma des vetements.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַתְנִי׳ בָּא לוֹ אֵצֶל פַּר וְשָׂעִיר הַנִּשְׂרָפִין, קְרָעָן, וְהוֹצִיא אֶת אֵימוּרֵיהֶן, נְתָנָן בְּמָגֵיס וְהִקְטִירָן עַל גַּבֵּי הַמִּזְבֵּחַ.</div>
+            <div class="fr"><p>MICHNA. Il vint aupres du taureau et du bouc que l on brule, il les fendit, en retira les emourim, les placa dans un maguis, et les fit fumer sur l autel.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַתְנִי&#x27; בָּא לוֹ אֵצֶל פַּר וְכוּ&#x27;</b> חָזַר לוֹ הַתַּנָּא לְסִדְרוֹ הָרִאשׁוֹן שֶׁהוּא מְסַדֵּר עֲבוֹדַת כ&quot;ג וְקָתָנֵי בָּא לוֹ כֹּהֵן גָּדוֹל אֵצֶל פַּר וְשָׂעִיר הָעוֹמְדִים לִישָּׂרֵף אַחַר שֶׁמָּסַר אֶת הַמִּשְׁתַּלֵּחַ לְמִי שֶׁהוּא מוֹלִיכוֹ בָּא לוֹ אֶצְלָם וּקְרָעָם וְהוֹצִיא הָאֵימוּרִין:</div>
+          <div class="glose-fr">Michna. &quot;Il vint aupres du taureau, etc.&quot; -- le tana revient a son ordre initial, qui est l ordre du service du Cohen Gadol, et il enseigne : le Cohen Gadol vient aupres du taureau et du bouc qui sont destines a etre brules. Apres avoir remis le bouc emissaire a celui qui doit le conduire, il vient aupres d eux, les fend et en retire les emourim.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּנְתָנָם בְּמָגֵס</b> בִּקְעָרָה שֶׁל כְּלֵי שָׁרֵת וְהִקְטִירָן כְּדִכְתִיב (וַיִּקְרָא טז) וְאֵת חֵלֶב הַחַטָּאת יַקְטִיר הַמִּזְבֵּחָה וּבַגְּמָרָא פָּרִיךְ הָא אַכַּתִּי לָא חֲזִי לְהַקְטִירָן:</div>
+          <div class="glose-fr">&quot;Et il les placa dans un maguis&quot; -- dans un plat qui est un keli charet ; et il les fit fumer, comme il est ecrit (Vayikra 16) &quot;et la graisse du hatat, il la fera fumer vers l autel&quot;. Et dans la guemara on objecte : mais il n est pas encore apte a les faire fumer !</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">מֵאֶתְמוֹל הִזְמִינוֹ (שָׁם:) מִי שֶׁמּוֹלִיכוֹ לַעֲזָאזֵל. וְעַתָּה בָּא לְעֶזְרָה וּמוֹסְרוֹ לוֹ וַאֲפִילּוּ נִטְמָא וְאִם חָלָה הַשָּׂעִיר שֶׁלֹּא יוּכַל לֵילֵךְ מַרְכִּיבוֹ עַל כְּתֵפָיו וַאֲפִילּוּ אִם הוּא שַׁבָּת. וְכָל אָדָם כָּשֵׁר לָזֶה אֲפִילּוּ זָר. וְהָיוּ עוֹשִׂים לוֹ כֶּבֶשׂ שֶׁהָיָה הוֹלֵךְ עָלָיו לַחוּץ לָעֲזָרָה מִפְּנֵי קַלֵּי רֹאשׁ שֶׁבָּעַם שֶׁהָיוּ תּוֹלְשִׁין בִּשְׂעָרוֹ לוֹמַר טֹול וְצֵא. (דַּף סו:) וּמִיַּקִּירֵי יְרוּשָׁלַיִם הָיוּ מְלַוִּין אוֹתוֹ עַד הַסֻּוכָּה הָרִאשׁוֹנָה. שֶׁעִשֵּׂר סֻוכּוֹת הָיוּ עוֹשִׂין לוֹ בַּדֶּרֶךְ בֵּין כָּל אַחַת וְאַחַת מִיל. (דַּף סז.) וּבְכָל אַחַת יוֹשְׁבִים אֲנָשִׁים לִלְווֹתוֹ מֵאַחַת לַחֲבֶרְתָּהּ. וְעִם שֶׁבְּסֻוכָּה אַחֲרוֹנָה לִווָּהוּ מִיל. הֲרֵי שֶׁהָלַךְ אַחַד עָשָׂר מִיל. וְנִשְׁאֲרוּ שָׁם וְהוּא הָיָה מַרְחִיק עוֹד מִיל עַד שֶׁמַּגִּיעַ לִמְקוֹם הַצּוּק וְהֵם רוֹאִים מַעֲשָׂיו. וּבְכָל סֻוכָּה וְסֻוכָּה אוֹמְרִים לוֹ הֲרֵי מַיִם הֲרֵי מָזוֹן אִם יִצְטָרֵךְ לֶאֱכֹול. וְהָיָה לוֹקֵחַ לָשׁוֹן שֶׁל זְהוֹרִית וְחוֹלֵק אוֹתוֹ חֶצְיוֹ קוֹשֵׁר בַּסֶּלַע לִרְאוֹת כְּשֶׁיַּלְבִּין וְחֶצְיוֹ קוֹשֵׁר בֵּין קַרְנֵי הַשָּׂעִיר וְדוֹחֵהוּ לַאֲחוֹרָיו. וְלֹא הָיָה מַגִּיעַ לַחֲצִי הָהָר עַד שֶׁנַּעֲשֶׂה אֵבָרִים אֵבָרִים שֶׁצָּרִיךְ שֶׁיִּהְיֶה חִתּוּךְ וְקָשֶׁה. וְהָאֵבָרִים מֻותָּרִין בַּהֲנָאָה. וְהַמְשַׁלֵּחַ הָיָה מְטַמֵּא בְּגָדִים מִשֶּׁיַּגִּיעַ לַצּוּק וְחָזַר וְיָשַׁב בַּסֻּוכָּה הָאַחֲרוֹנָה עַד שֶׁתֶּחְשַׁךְ. וּלְמָחָר הַמְשַׁלֵּחַ יָבֹא לְכֹהֵן גָּדוֹל. (דַּף עא.) אִם מָצְאוּ בַּשּׁוּק יֹאמַר לוֹ כְּדֵי לְכַבְּדוֹ אִישִׁי כ&quot;ג עָשִׂיתִי שְׁלִיחוּתְךָ. אִם מָצְאוּ בַּבַּיִת יֹאמַר מְחַיֶּה חַיִּים עָשִׂיתִי שְׁלִיחוּתְךָ. אַחַ&quot;כּ (דַּף סז:) בָּא כ&quot;ג אֵצֶל פַּר וְשָׂעִיר וְהוֹצִיא אֶת אֵימוּרֵיהֶם וּנְתָנָן בִּכְלִי שָׁרֵת וְהִנִּיחָן עַד בָּא זְמַן הַקְטָרָתָן. וְנָתַן הַפָּר וְהַשָּׂעִיר לְמִי שֶׁמּוֹצִיאָן לִשְׂרֵיפָה חוּץ לִירוּשָׁלַיִם לִצְפוֹנָהּ. וְהָיוּ מְטַמְּאִים בְּגָדִים מִשֶּׁיֵּצְאוּ חוּץ לְחוֹמַת עֲזָרָה. וְהוֹצִיאוּם בְּמַקְלוֹת אַרְבָּעָה אֲנָשִׁים בִּשְׁנֵי מַקְלוֹת. קְלוּעוֹת פַּר וְשָׂעִיר זֶה עַל זֶה שְׁלֵימִים בְּעוֹרָן. וְכָךְ הָיוּ מְנַתְּחִין אוֹתָן בָּעוֹר וְשׂוֹרְפָן. אָמְרוּ לכ&quot;ג הִגִּיעַ הַשָּׂעִיר לַמִּדְבָּר שֶׁלֹּא הָיָה רַשַּׁאי לְהַתְחִיל בְּשׁוּם עֲבוֹדָה עַד הִגִּיעוּ שָׁמָּה. וְהֵיאַךְ הָיוּ יוֹדְעִין. אַנְשֵׁי הַסֻּוכּוֹת הָיוּ מְנִיפִין בְּסוּדָרִים וְהָיוּ רוֹאִין מִסֻּוכָּה לַסֻּוכָּה עַד שֶׁמַּגִּיעַ הַדָּבָר לִירוּשָׁלַיִם. וְאַחַר כָּךְ (דַּף סח:) קוֹרֵא כ&quot;ג בַּתּוֹרָה אִם יִרְצֶה בְּבִגְדֵי בּוּץ שֶׁהוּא לָבוּשׁ וְאִם יִרְצֶה יִקְדַּשׁ יָדָיו וְרַגְלָיו וּפוֹשֵׁט וְלוֹבֵשׁ אִיצְטְלִית לָבָן מִשֶּׁלּוֹ וְקוֹרֵא בּוֹ. חַזַּן הַכְּנֶסֶת נוֹטֵל סֵפֶר תּוֹרָה וְנִיתְּנוּ לְרֹאשׁ הַכְּנֶסֶת הַמְמֻונֶּה עַל צָרְכֵי בֵּית הַכְּנֶסֶת. וְרֹאשׁ הַכְּנֶסֶת נוֹתְנוֹ לַסְּגָן וְהַסְּגָן לְכֹהֵן גָּדוֹל. וְכָל זֶה מִשּׁוּם כְּבוֹד כֹּהֵן גָּדוֹל לְהַרְאוֹת שֶׁיֵּשׁ הַרְבֵּה שְׂרָרוֹת תַּחְתָּיו וְהוּא עַל כֻּולָּם. וְקוֹרֵא אַחֲרֵי מוֹת וְגוֹלֵל אַךְ בֶּעָשׂוֹר וְקוֹרֵא כֵּיוָן שֶׁהַכֹּל עִנְיָן אֶחָד וא&quot;צ לְהַפְסִיק בִּכְדֵי שֶׁיַּפְסִיק הַתֻּורְגְּמָן יָכוֹל לִגְלֹול. וְגוֹלֵל סֵפֶר תּוֹרָה וּמַנִּיחוֹ בְּחֵיקוֹ וְאוֹמֵר יוֹתֵר מִמַּה שֶּׁקָּרִיתִי לִפְנֵיכֶם כְּחוֹב כָּאן (דַּף ע.) מִשּׁוּם פָּגְמָה שֶׁל תּוֹרָה שֶׁלֹּא יַחְשְׁבוּ שֶׁהַסֵּפֶר תּוֹרָה חֲסֵרָה פָּרָשָׁה כֵּיוָן שֶׁצָּרִיךְ לִקְרוֹת עַל פֶּה וּבֶעָשׂוֹר שֶׁבְּחֻומַּשׁ הַפְּקוּדִים דְּהַייְנוּ קָרְבְּנוֹת הַמּוּסָפִין דְּהַייְנוּ פָּרָשַׁת פִּינְחָס קוֹרֵא עַל פֶּה שֶׁאִי אֶפְשָׁר לוֹ לִגְלֹול שָׁם מִפְּנֵי כְּבוֹד צִבּוּר שֶׁהָיָה צָרִיךְ לְהַפְסִיק יוֹתֵר מִכְּדֵי שֶׁיְּתַרְגֵּם הַמְתֻורְגְּמָן וְאֵין זֶה כְּבוֹד הַצִּבּוּר שֶׁיַּמְתִּינוּ לוֹ. וְאִי אֶפְשָׁר לוֹ לְהָבִיא סֵפֶר תּוֹרָה אַחֶרֶת שֶׁתְּהֵא נִגְלֶלֶת מֵאֶתְמוֹל מִפְּנֵי פְּגָמוֹ שֶׁל רִאשׁוֹן. וְעוֹד שֶׁיְּהֵא צָרִיךְ לְבָרֵךְ פַּעַם שֵׁנִית וִיהֵא בְּרָכָה שֶׁאֵינָהּ צְרִיכָה. וּמְבָרֵךְ עָלֶיהָ שְׁמֹונֶה בְּרָכוֹת. עַל הַתּוֹרָה כְּדֶרֶךְ שֶׁאָנוּ מְבָרְכִין תְּחִלָּה וָסוֹף. וְעַל עֲבוֹדָה רָצָה וְחוֹתֵם בָּרוּךְ אַתָּה ה&#x27; שֶׁאוֹתְךָ לְבַדְּךָ נַעֲבֹוד. וְעַל הַהוֹדָאָה מוֹדִים אֲנַחְנוּ לָךְ. וְעַל מְחִילַת עָוֹן מוֹחֵל עֲוֹנֹותֵיכֶם. וְעַל הַמִּקְדָּשׁ בָּרוּךְ אַתָּה ה&#x27; הַבּוֹחֵר בַּמִּקְדָּשׁ. וְעַל יִשְׂרָאֵל בָּרוּךְ אַתָּה ה&#x27; הַבּוֹחֵר בְּעַמּוֹ יִשְׂרָאֵל. וְעַל הַכֹּהֲנִים בָּרוּךְ אַתָּה ה&#x27; הַבּוֹחֵר בַּכֹּהֲנִים. וְעַל שְׁאָר הַתְּפִלָּה תְּפִלָּה רִנָּה וּבַקָּשָׁה שֶׁעַמְּךָ יִשְׂרָאֵל צְרִיכִין לְהִוָּשַׁע בָּרוּךְ אַתָּה ה&#x27; שׁוֹמֵעַ תְּפִלָּה. אִם קוֹרֵא בְּבִגְדֵי בּוּץ מְקַדֵּשׁ יָדָיו וְרַגְלָיו וּפָשַׁט וְטוֹבֵל (וּמְקַדֵּשׁ) וְלוֹבֵשׁ בִּגְדֵי זָהָב [וּמְקַדֵּשׁ] לְאֵילוֹ וְאֵיל הָעָם. וְאִם קָרָא בְּאִיצְטְלִית מִשֶּׁלּוֹ וְנִמְצָא כְּבָר קִדֵּשׁ יָדָיו וְרַגְלָיו בְּפָשְׁטוּ בִּגְדֵי הַבּוּץ וְאֵינוֹ צָרִיךְ עַתָּה אֶלָּא טְבִילָה וְקִידּוּשׁ וְעָשָׂה אֵילוֹ וְאֵיל הָעָם. (דַּף ע. עא.) וְאִיכָּא פְּלֻוגְתָּא טוּבָא בְּסֵדֶר הַקְרָבַת הַמּוּסָפִין הַכְּתוּבִים בְּפָרָשַׁת פִּינְחָס שֶׁהֵם שִׁבְעָה כְּבָשִׂים פַּר לְעוֹלָה וְשָׂעִיר לְחַטָּאת. רַבִּי אֱלִיעֶזֶר סָבַר שֶׁמִּיָּד אַחַר אֵילוֹ וְאֵיל הָעָם הָיָה מַקְטִיר אֵימוּרֵי פַּר וְשָׂעִיר הַפְּנִימִי וְאַחַר כָּךְ מְקַדֵּשׁ יָדָיו וְרַגְלָיו וְטוֹבֵל וּמְקַדֵּשׁ וְלוֹבֵשׁ בִּגְדֵי לָבָן וּמוֹצִיא כַּף וּמַחְתָּה שֶׁהִנִּיחַ לִפְנַי וְלִפְנִים בְּהִקְטִיר שָׁמָּה הַקְּטֹורֶת. וְאִם יִרְצֶה לַעֲשׂוֹת אֵלּוּ הַבְּגָדִים מִשֶּׁלּוֹ וְשֶׁלֹּא לִיקְחָם מִן הַצִּבּוּר הָרְשׁוּת בְּיָדוֹ וּבִלְבַד שֶׁיִּמְסְרֵם לַצִּבּוּר. אֲבָל בִּשְׁאָר הָעֲבוֹדוֹת לֹא הָיָה רַשַּׁאי לַעֲשׂוֹת כֵּן. וְאַחַ&quot;כּ מְקַדֵּשׁ יָדָיו וְרַגְלָיו [וְטוֹבֵל] וּמְקַדֵּשׁ וְלָבַשׁ בִּגְדֵי זָהָב וְעוֹשֶׂה כָּל הַמּוּסָפִין וְתָמִיד הָעֶרֶב וְהַדְלָקַת הַנֵּרוֹת וְחָבִיתִין כְּסֵדֶר כָּל הַיָּמִים. וְרַבִּי עֲקִיבָא סָבַר שִׁבְעָה כְּבָשִׂים וּפַר הָעוֹלָה הָיוּ קְרֵיבִין עִם תָּמִיד הַשַּׁחַר. וְשָׂעִיר הַנַּעֲשֶׂה בַּחוּץ מִיָּד שֶׁגָּמַר עֲבוֹדַת הַיּוֹם. אַחַ&quot;כּ אֵילוֹ וְאֵיל הָעָם. וְאַחַ&quot;כּ הַקְטָרַת אֵימוּרֵי פַּר וְשָׂעִיר בִּטְבִילָה שְׁלִישִׁית. וְאַחַ&quot;כּ הוֹצָאַת הַכַּף וּמַחְתָּה בִּטְבִילָה רְבִיעִית. וְאַחַ&quot;כּ תָּמִיד הָעֶרֶב וּקְטֹרֶת וְנֵרוֹת וְחָבִיתִין כְּסֵדֶר כָּל הַיָּמִים. וְאִיכָּא מַאן דְּאָמַר מִשְּׁמֵיהּ דְּרַבִּי עֲקִיבָא שִׁשָּׁה כְּבָשִׂים וּפַר הָעוֹלָה הָיוּ קְרֵיבִים עִם תָּמִיד הַשַּׁחַר וְאֶחָד הַנִּשְׁאָר עִם תָּמִיד הָעֶרֶב. וְאִיכָּא מַאן דְּאָמַר אִיפְּכָא שֶׁהָאֶחָד הָיָה קָרֵב עִם תָּמִיד הַשַּׁחַר וְשִׁשָּׁה כְּבָשִׂים וּפַר הָעוֹלָה עִם תָּמִיד הָעָרֶב. וְהָרַמְבַּ&quot;ם זַ&quot;ל פָּסַק כְּרַבִּי עֲקִיבָא וְהַדַּעַת מַכְרַעַת כְּחַד מֵהָנָךְ תַּנָּאֵי דְּאָמַר מִשְּׁמֵיהּ דְּר&#x27; עֲקִיבָא שֶׁמִּקְצָת הַמּוּסָפִין בַּבֹּוקֶר וּמִקְצָתָן בָּעֶרֶב לְקַיֵּים שְׁתֵּי הַדְּרָשׁוֹת. לְקַייֵּם מַה שֶׁנֶּאֱמַר מִלְּבַד עֹולַת הַבֹּקֶר אֲשֶׁר וְגוֹ&#x27; אַלְמָא שֶׁמּוּסָפִין קְרֵבִין עִם עוֹלַת הַבֹּוקֶר. וּלְקַייֵּם סִדְרָא דְּמִקְּרָאֵי שֶׁעֲבוֹדָה נֶאֶמְרָה בְּאַחֲרֵי מוֹת קֹודֶם הַמּוּסָפִין שֶׁהֵם בְּפִינְחָס אַלְמָא שֶׁעֲבוֹדַת הַיּוֹם קוֹדֵם הַמּוּסָפִין וְאִיכָּא לְמֵימַר שֶׁגַּם אֵימוּרֵי פַּר וְשָׂעִיר הָיוּ קְרֵיבִין אַחַר הוֹצָאַת כַּף וּמַחְתָּה כְּדֵי שֶׁנְּמַעֵט הַהַפְסָקָה בֵּין עֲבוֹדַת הַיּוֹם וּבֵין הוֹצָאַת כַּף וּמַחְתָּה שֶׁהֲרֵי הֵם כְּתוּבִים מִיָּד אַחַר עֲבוֹדַת הַיּוֹם וְהָיָה רָאוּי לַעֲשׂוֹתָן מִיָּד אֶלָּא שֶׁאָנוּ צְרִיכִין לְהַקְדִּים אֵילוֹ וְאֵיל הָעָם לְקַיֵּים חָמֵשׁ טְבִילוֹת וַעֲשָׂרָה קִידּוּשִׁין דִּגְמִירִי שֶׁצָּרִיךְ לַעֲשׂוֹת בְּיוֹם הַכִּפּוּרִים. הִלְכָּךְ כָּל מַה שֶׁנּוּכַל לְמַעֵט הַהֶפְסֵק עָדִיף טְפֵי. אַחַר כָּל זֶה (דַּף ע.) הָיָה מְקַדֵּשׁ יָדָיו וְרַגְלָיו וְלוֹבֵשׁ בִּגְדֵי עַצְמוֹ וּמְלַוִּין אוֹתוֹ רָאשֵׁי הָעָם וּגְדוֹלִים עַד בֵּיתוֹ. וְיוֹם טוֹב הָיָה עוֹשֶׂה לְכָל אוֹהֲבָיו כְּשֶׁהָיָה יוֹצֵא בְּשָׁלוֹם. הָרַחֲמָן הוּא יַחֲזִיר עֲבוֹדַת בֵּית הַמִּקְדָּשׁ בִּמְקוֹמָהּ בִּמְהֵרָה בְּיָמֵינוּ. יִרְאוּ עֵינֵינוּ וְיִשְׂמַח לִבֵּנוּ בְּתוֹרָתוֹ וּבְתוֹרָתוֹ יָאִיר עֵינֵינוּ. וִיבָרֵר כָּל סְפֵקוֹתֵינוּ:</div>
+          <div class="glose-fr">On avait designe des la veille (ibid.) celui qui conduit [le bouc] a Azazel. Et maintenant [le Cohen Gadol] vient a la azara et le lui remet -- et [il reste valable] meme s il est devenu tame (impur). Et si le bouc est tombe malade au point de ne plus pouvoir marcher, il le charge sur ses epaules, et cela meme si c est Chabbat. Tout homme est apte a cela, meme un zar (non-cohen). On lui amenageait une rampe (kevech) sur laquelle il sortait hors de la azara, a cause des gens legers du peuple qui lui arrachaient les poils en disant : prends et va-t en. (66b) Les notables de Jerusalem l accompagnaient jusqu a la premiere souka, car on lui dressait dix soukot sur la route, un mil entre chacune. (67a) Dans chacune se tenaient des hommes pour l accompagner de l une a la suivante. Les gens de la derniere souka l accompagnaient un mil : il avait donc parcouru onze mil. Ils restaient la, et lui s eloignait encore d un mil jusqu a parvenir au lieu du tsouk, et ils voyaient ce qu il faisait. A chaque souka on lui disait : voici de l eau, voici de la nourriture, s il avait besoin de manger. Il prenait un ruban d ecarlate (lachon chel zehorit), le partageait, en attachait la moitie au rocher pour voir quand il blanchirait, et l autre moitie entre les cornes du bouc, puis il le poussait a la renverse. Il n atteignait pas la moitie de la montagne qu il etait deja en morceaux -- car il faut que [le rocher] soit tranchant et dur. Et les morceaux sont permis a la hanaa (au profit). Le convoyeur rendait ses vetements impurs des qu il parvenait au tsouk ; il revenait s asseoir dans la derniere souka jusqu a la tombee de la nuit. Et le lendemain, le convoyeur viendra chez le Cohen Gadol. (71a) S il le rencontre au marche, il lui dira, afin de l honorer : mon maitre le Cohen Gadol, j ai accompli ta mission. S il le rencontre a la maison, il dira : [par Celui qui] fait vivre les vivants, j ai accompli ta mission. Ensuite (67b) le Cohen Gadol vient aupres du taureau et du bouc, en retire les emourim, les place dans un keli charet (ustensile de service) et les laisse jusqu a ce que vienne le temps de les faire fumer. Il remet le taureau et le bouc a ceux qui les sortent pour l incineration hors de Jerusalem, au nord. Ils rendaient les vetements impurs des qu ils sortaient hors du mur de la azara. On les sortait sur des barres : quatre hommes, deux barres. Taureau et bouc tresses l un sur l autre, entiers dans leur peau. Et c est ainsi qu on les decoupait avec la peau et qu on les brulait. On disait au Cohen Gadol : le bouc est parvenu au desert -- car il n avait pas le droit de commencer aucun service avant qu il n y parvienne. Et comment le savait-on ? Les hommes des soukot agitaient des linges (soudarim), et l on voyait d une souka a l autre jusqu a ce que la nouvelle parvienne a Jerusalem. Et ensuite (68b) le Cohen Gadol lit dans la Torah : s il le veut, dans les bigdei boutz (vetements de lin) qu il porte ; et s il le veut, il sanctifie ses mains et ses pieds, se devet, revet une itstalit blanche qui lui appartient, et y lit. Le hazan de la synagogue prend le sefer Torah et le donne au roch ha-knesset, prepose aux besoins de la synagogue ; le roch ha-knesset le donne au segan, et le segan au Cohen Gadol. Tout cela pour l honneur du Cohen Gadol, afin de montrer qu il y a beaucoup d autorites sous lui et qu il est au-dessus de toutes. Il lit Aharei Mot, puis roule [le sefer] jusqu a Akh be-assor et y lit : puisque tout est un seul et meme sujet et qu il n est pas necessaire de s arreter le temps que le targueman traduise, il peut rouler. Il roule le sefer Torah, le pose contre son sein et dit : plus que ce que j ai lu devant vous est ecrit ici (70a) -- a cause de la pegam (atteinte) faite a la Torah, pour qu on ne pense pas que le sefer Torah manque d une parasha, puisqu il doit lire par coeur. Et Ou-ve-assor du Houmach ha-Pekoudim, c est-a-dire les korbanot des moussafim, c est-a-dire la parasha de Pinhas, il le lit par coeur, car il lui est impossible d y rouler [le sefer] a cause de l honneur du public : il faudrait s arreter plus longtemps que le temps de la traduction, et ce n est pas un honneur pour le public de l attendre. Et il lui est impossible d apporter un autre sefer Torah qui aurait ete roule depuis la veille, a cause de la pegam du premier ; et de plus il devrait benir une seconde fois, et ce serait une berakha inutile. Il recite dessus huit berakhot : sur la Torah, comme nous benissons au debut et a la fin ; sur la avoda, Retse, et il conclut Baroukh Ata Hachem, [Toi] que Toi seul nous servirons ; sur la hodaa, Modim anahnou lakh ; sur le pardon des fautes, [Toi qui] pardonne vos fautes ; sur le Mikdach, Baroukh Ata Hachem qui choisit le Mikdach ; sur Israel, Baroukh Ata Hachem qui choisit Son peuple Israel ; sur les cohanim, Baroukh Ata Hachem qui choisit les cohanim ; et sur le reste de la tefila -- priere, chant et supplication, car Ton peuple Israel a besoin d etre sauve -- Baroukh Ata Hachem qui entend la priere. S il a lu dans les bigdei boutz, il sanctifie ses mains et ses pieds, se devet, s immerge (et sanctifie), revet les bigdei zahav [et sanctifie] pour son belier et le belier du peuple. Et s il a lu dans sa propre itstalit, il se trouve qu il a deja sanctifie ses mains et ses pieds en otant les bigdei boutz, et il ne lui faut plus maintenant que la tevila et le kidouch, puis il fait son belier et le belier du peuple. (70a, 71a) Et il y a une grande controverse sur l ordre de l offrande des moussafim ecrits dans la parasha de Pinhas, qui sont sept agneaux, un taureau en ola et un bouc en hatat. Rabbi Eliezer tient qu immediatement apres son belier et le belier du peuple il faisait fumer les emourim du taureau et du bouc interieurs, puis sanctifiait ses mains et ses pieds, s immergeait, sanctifiait, revetait les bigdei lavan et sortait la coupe et l encensoir qu il avait laisses dans le Saint des Saints lorsqu il y avait fait fumer l encens. Et s il veut faire ces vetements-la a ses frais et ne pas les prendre du public, il en a le droit, a condition de les remettre au public ; mais pour les autres services il n avait pas le droit d agir ainsi. Ensuite il sanctifiait ses mains et ses pieds, [s immergeait,] sanctifiait, revetait les bigdei zahav et faisait tous les moussafim, le tamid du soir, l allumage des lampes et les havitin, selon l ordre de tous les jours. Et Rabbi Akiva tient que les sept agneaux et le taureau de la ola etaient offerts avec le tamid du matin, et le bouc fait au dehors immediatement apres qu il eut acheve le service du jour ; ensuite son belier et le belier du peuple ; ensuite le fumage des emourim du taureau et du bouc lors de la troisieme tevila ; ensuite la sortie de la coupe et de l encensoir lors de la quatrieme tevila ; ensuite le tamid du soir, l encens, les lampes et les havitin, selon l ordre de tous les jours. Et il y a qui dit au nom de Rabbi Akiva que six agneaux et le taureau de la ola etaient offerts avec le tamid du matin, et le dernier restant avec le tamid du soir. Et il y a qui dit l inverse : qu un seul etait offert avec le tamid du matin, et six agneaux et le taureau de la ola avec le tamid du soir. Et le Rambam, de memoire benie, a tranche comme Rabbi Akiva ; et la raison penche pour l un de ces tanaim qui parlent au nom de Rabbi Akiva, a savoir qu une partie des moussafim est offerte le matin et une partie le soir, afin d accomplir les deux derachot : accomplir ce qui est dit outre la ola du matin qui..., d ou il ressort que les moussafim sont offerts avec la ola du matin ; et accomplir l ordre des versets, puisque la avoda est enoncee dans Aharei Mot avant les moussafim qui sont dans Pinhas, d ou il ressort que le service du jour precede les moussafim. Et l on peut dire que les emourim du taureau et du bouc etaient eux aussi offerts apres la sortie de la coupe et de l encensoir, afin de reduire l interruption entre le service du jour et la sortie de la coupe et de l encensoir -- car ils sont ecrits immediatement apres le service du jour et il aurait convenu de les faire aussitot, sauf qu il nous faut faire passer avant son belier et le belier du peuple, pour accomplir les cinq tevilot et les dix kidouchin dont nous avons la tradition qu il faut les faire a Yom Kippour. Donc, tout ce que nous pouvons faire pour reduire l interruption est preferable. Apres tout cela (70a) il sanctifiait ses mains et ses pieds, revetait ses propres vetements, et les tetes du peuple et les grands l accompagnaient jusqu a sa maison. Et il faisait un jour de fete pour tous ceux qui l aimaient lorsqu il sortait en paix. Que le Misericordieux retablisse le service de la Maison du Mikdach en son lieu, promptement et de nos jours. Que nos yeux voient et que notre coeur se rejouisse en Sa Torah ; que par Sa Torah Il illumine nos yeux et eclaircisse tous nos doutes.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle michna. Le tana abandonne la digression du bouc emissaire et revient a son fil principal : l ordre du service du Cohen Gadol. Rachi le note explicitement -- <i>le tana revient a son ordre initial</i>. Une fois le bouc emissaire remis a son convoyeur, le Cohen Gadol se retourne vers le <b>par</b> et le <b>sair</b> interieurs, ceux dont le sang a ete asperge dans le Saint des Saints et dont les corps doivent etre brules hors de Jerusalem.</p><p>Trois gestes : il les <b>fend</b> (kera) -- il n est pas tenu de les depecer, seulement d ouvrir le ventre ; il en <b>retire les emourim</b> (les parties consommees sur l autel : graisses, reins, lobe du foie) ; il les depose dans un <b>maguis</b>, un plat qui est un keli charet (ustensile de service).</p><p>La derniere proposition -- <i>et il les fit fumer sur l autel</i> -- est precisement celle que la guemara corrigera au segment 14 : a ce stade du service, le Cohen Gadol porte encore les bigdei lavan et ne peut pas encore proceder au fumage.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 330" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="330" fill="#fffdf8"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#64748b"/></marker></defs>
+  <text x="360" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Le transport du taureau et du bouc au beit ha-serefa</text>
+
+  <rect x="30" y="44" width="300" height="150" rx="8" fill="#eef6ff" stroke="#9cc3ea"/>
+  <text x="180" y="65" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1d4ed8">La kelia (tresse) selon Rachi</text>
+  <line x1="70" y1="96" x2="290" y2="96" stroke="#78716c" stroke-width="4"/>
+  <line x1="70" y1="152" x2="290" y2="152" stroke="#78716c" stroke-width="4"/>
+  <circle cx="80" cy="96" r="6" fill="#a8a29e"/><circle cx="280" cy="96" r="6" fill="#a8a29e"/>
+  <circle cx="80" cy="152" r="6" fill="#a8a29e"/><circle cx="280" cy="152" r="6" fill="#a8a29e"/>
+  <path d="M 110 124 C 150 100, 190 148, 250 120" stroke="#b45309" stroke-width="7" fill="none"/>
+  <path d="M 110 124 C 150 148, 190 100, 250 128" stroke="#ca8a04" stroke-width="7" fill="none"/>
+  <text x="180" y="176" text-anchor="middle" font-size="9.5" fill="#334155">Deux barres, quatre porteurs (deux devant, deux derriere).</text>
+  <text x="180" y="189" text-anchor="middle" font-size="9.5" fill="#334155">Taureau et bouc entiers, replies l un sous l autre.</text>
+
+  <rect x="360" y="44" width="330" height="150" rx="8" fill="#fef6ee" stroke="#eabf9c"/>
+  <text x="525" y="65" text-anchor="middle" font-size="11.5" font-weight="700" fill="#c2410c">Ce qui a ete fait avant</text>
+  <text x="380" y="88" font-size="9.5" fill="#334155">1. Le Cohen Gadol les fend (kera) -- seulement le ventre.</text>
+  <text x="380" y="108" font-size="9.5" fill="#334155">2. Il en retire les emourim.</text>
+  <text x="380" y="128" font-size="9.5" fill="#334155">3. Il les met dans un maguis, ustensile de service.</text>
+  <text x="380" y="148" font-size="9.5" font-weight="700" fill="#9a3412">4. Il ne les fait PAS fumer maintenant (guemara, seg 14).</text>
+  <text x="380" y="168" font-size="9.5" fill="#334155">Les corps restent entiers dans leur peau : on ne les ecorche pas.</text>
+  <text x="380" y="185" font-size="9.5" font-style="italic" fill="#9a3412">Rachi : seul le ventre a ete ouvert, pour les emourim.</text>
+
+  <path d="M 360 200 L 360 216" stroke="#64748b" stroke-width="1.6" marker-end="url(#a)"/>
+  <rect x="30" y="220" width="660" height="94" rx="8" fill="#dcfce7" stroke="#9cc6a0"/>
+  <text x="360" y="242" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">A partir de quand ceux qui les portent rendent-ils leurs vetements impurs ?</text>
+  <text x="360" y="264" text-anchor="middle" font-size="10.5" fill="#14532d">Tana kama : des la sortie hors du mur de la azara -- R. Chimon : quand le feu a pris dans la plus grande partie.</text>
+  <text x="360" y="284" text-anchor="middle" font-size="10" fill="#334155">Verset : et celui qui les brule lavera ses vetements (Vayikra 16,28).</text>
+  <text x="360" y="303" text-anchor="middle" font-size="9.5" font-style="italic" fill="#166534">Meme structure que pour le convoyeur : ou commence l acte que le verset nomme ?</text>
+</svg></div><div class="svg-cap">Ce qui precede le transport (segment 12) et la maniere dont on porte les corps au beit ha-serefa (segment 13).</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">קְלָעָן בְּמִקְלָעוֹת וְהוֹצִיאָן לְבֵית הַשְּׂרֵיפָה. וּמֵאֵימָתַי מְטַמְּאִין בְּגָדִים — מִשֶּׁיֵּצְאוּ חוּץ לְחוֹמַת הָעֲזָרָה. רַבִּי שִׁמְעוֹן אוֹמֵר: מִשֶּׁיַּצִּית הָאוּר בְּרֻובָּן.</div>
+            <div class="fr"><p>Il les tressa en tresses et les fit sortir vers le beit ha-serefa. Et a partir de quand rendent-ils les vetements impurs ?</p><p>Des qu ils sont sortis hors du mur de la azara. Rabbi Chimon dit : des que le feu a pris dans la plus grande partie d eux.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>קְלָעָן בְּמִקְלָעוֹת</b> כְּמִין קְלִיעָה אַרְבָּעָה בְּנֵי אָדָם נוֹשְׂאִין שְׁנֵי מוֹטוֹת שְׁנַיִם לִפְנִים שְׁנַיִם לְאָחוֹר וּמְהַלְּכִים מוֹט אֵצֶל מוֹט וְהֵפֵר וְהַשָּׂעִיר נְתוּנִים עֲלֵיהֶן מֻורְכָּבִין זֶה עַל זֶה וְכוֹפְפָן זֶה תַּחַת זֶה כְּמִין קְלִיעָה וּשְׁלֵימִין הֵן אֶלָּא שֶׁנִּקְרַע כְּרֵיסָן לְהוֹצִיא אֵימוּרֵיהֶן כִּדְתַנְיָא בַּגְּמָרָא שֶׁמּוֹצִיאָן שְׁלֵמִים:</div>
+          <div class="glose-fr">&quot;Il les tressa en tresses&quot; -- a la maniere d une tresse. Quatre hommes portent deux barres, deux devant et deux derriere, et ils marchent barre contre barre ; le taureau et le bouc sont poses dessus, montes l un sur l autre, et on les replie l un sous l autre a la maniere d une tresse. Ils sont entiers, sauf que leur ventre a ete fendu pour en retirer les emourim, comme il est enseigne dans la guemara qu on les sort entiers.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהוֹצִיאָן לְבֵית הַשְּׂרֵיפָה</b> חוּץ לִירוּשָׁלַיִם:</div>
+          <div class="glose-fr">&quot;Et il les fit sortir vers le beit ha-serefa&quot; -- hors de Jerusalem.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מֵאֵימָתַי מְטַמְּאִים בְּגָדִים</b> הָעִסּוּקִין בָּהֶן כְּדִכְתִיב וְהַשֹּׂורֵף אֹותָם יְכַבֵּס בְּגָדָיו (שָׁם):</div>
+          <div class="glose-fr">&quot;A partir de quand rendent-ils les vetements impurs&quot; -- [les vetements] de ceux qui s en occupent, comme il est ecrit &quot;et celui qui les brule lavera ses vetements&quot; (ibid.).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִשֶּׁיֵּצְאוּ חוּץ לְחוֹמַת הָעֲזָרָה</b> בַּגְּמָרָא מְפָרֵשׁ טַעְמָא:</div>
+          <div class="glose-fr">&quot;Des qu ils sont sortis hors du mur de la azara&quot; -- la guemara en explique la raison.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le transport. Rachi decrit le dispositif : quatre hommes portent <b>deux barres</b>, deux devant et deux derriere, marchant barre contre barre ; le taureau et le bouc sont poses dessus, montes l un sur l autre et replies l un sous l autre <i>a la maniere d une tresse</i>. Les corps sont <b>entiers</b>, dans leur peau -- seul le ventre a ete ouvert pour les emourim.</p><p>Puis la meme question qu au segment 9, transposee : les porteurs rendent-ils leurs vetements impurs, et a partir de quand ? Le verset est <i>et celui qui les brule lavera ses vetements</i> (Vayikra 16,28). Le <b>tana kama</b> fixe la borne a la sortie du mur de la <b>azara</b> ; <b>Rabbi Chimon</b>, fidele a sa logique du segment 11, attend l accomplissement effectif de l acte nomme par le verset -- ici la combustion : <i>des que le feu a pris dans la plus grande partie</i>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">גְּמ׳ ״וְהִקְטִירָן״ סָלְקָא דַעְתָּךְ? אֶלָּא אֵימָא: לְהַקְטִירָן עַל גַּבֵּי מִזְבֵּחַ.</div>
+            <div class="fr"><p>GUEMARA. &quot;Et il les fit fumer&quot; -- cela te viendrait-il a l esprit ?</p><p>Dis plutot : [il les placa dans le maguis] pour les faire fumer sur l autel.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>גְּמ&#x27; ה&quot;ג וְהִקְטִירָן ס&quot;ד אֶלָּא אֵימָא לְהַקְטִירָן</b> וְלֹא גָּרַס בְּמָגֵס מַקְטִיר לְהוּ וְגִירְסָא מְשֻׁובֶּשֶׁת הִיא כָּאן וּבְמַסֶּכֶת פְּסָחִים (דַּף סה:) וּבְמַסֶּכֶת סוֹטָה (דַּף טו.) דְּשַׁפִּיר הֲוָה שַׁיָּיךְ לְמִיתְנֵי לַתַּנָּא וְהִקְטִירָן בְּמָגֵס דִּבְמָגֵס מַעֲלֶה אוֹתָן לַמִּזְבֵּחַ דְּדִכְוָותֵיהּ תָּנֵינַן טוּבָא מָעֲלוּ וּמַקְטִירוֹ בִּכְלִי שָׁרֵת (סוֹטָה דַּף יד:) מָעֲלוּ וּמַקְטִירוֹ בְּהֶמְיָינוֹ אֶלָּא הָכִי קַשְׁיָא לֵיהּ וְהִקְטִירָן ס&quot;ד וְכִי עַכְשָׁיו הוּא מַקְטִירָן וַהֲלֹא עוֹדֶנּוּ לָבוּשׁ בִּגְדֵי לָבָן וַעֲדַיִין עָלָיו לִקְרוֹת הַפָּרָשָׁה בִּבְגָדִים הַלָּלוּ וְאַחַ&quot;כּ יִטְבֹּול וְיִלְבַּשׁ בִּגְדֵי זָהָב לְאֵילוֹ וְאֵיל הָעָם וְיִטְבֹּול שְׁנִיָּה לְהוֹצִיא כַּף וּמַחְתָּה וְיִטְבֹּול שְׁלִישִׁית לְמוּסָפִין וְאֵמוּרֵי חַטָּאת הַלָּלוּ וְתָמִיד שֶׁל בֵּין הָעַרְבַּיִם כִּדְקָתָנֵי בְּפִרְקִין דִּלְקַמָּן אֶלָּא אֵימָא לְהַקְטִירָן נְתָנָן לַמָּגֵס לְהַקְטִירָן בּוֹ לַמִּזְבֵּחַ כְּשֶׁיַּגִּיעַ זְמַנָּן:</div>
+          <div class="glose-fr">Guemara. Voici la version a retenir : &quot;ve-hiktiran, cela te viendrait-il a l esprit ? Dis plutot : le-haktiran&quot;. Et l on ne lit pas &quot;est-ce donc dans le maguis qu il les fait fumer ?&quot; -- c est une version corrompue, ici comme au traite Pessahim (65b) et au traite Sota (15a). Car il aurait ete parfaitement possible au tana d enseigner &quot;et il les fit fumer dans le maguis&quot;, puisque c est dans le maguis qu il les monte a l autel ; et de semblable nous avons enseigne bien des fois : &quot;il le monte et le fait fumer dans un keli charet&quot; (Sota 14b), &quot;il le monte et le fait fumer avec sa ceinture&quot;. Ce qui lui fait difficulte est plutot ceci : &quot;ve-hiktiran, cela te viendrait-il a l esprit ?&quot; -- est-ce maintenant qu il les fait fumer ? Il porte encore les bigdei lavan, et il lui reste a lire la parasha dans ces vetements-la ; apres quoi il s immergera et revetira les bigdei zahav pour son belier et le belier du peuple, puis s immergera une deuxieme fois pour sortir la coupe et l encensoir, et une troisieme fois pour les moussafim, ces emourim du hatat et le tamid de l apres-midi, comme il est enseigne au chapitre suivant. Dis plutot &quot;le-haktiran&quot; : il les a places dans le maguis afin de les y faire fumer sur l autel quand leur temps viendra.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַטּוּ בְּמָגֵס מַקְטִיר לֵיהּ</b> כָּךְ הָיָה כָּתוּב בַּסְּפָרִים כָּאן ובס&quot;פ תָּמִיד נִשְׁחָט (פִּסְחִיסְדָּף סה:) וְרַשִׁ&quot;י מְחָקוֹ לְפִי שֶׁהָיָה קָשֶׁה לוֹ דִּבְכַמָּה דֻּוכְתֵי בִּמְנָחוֹת קָתָנֵי מַעֲלֶה וּמַקְטִירָהּ בִּכְלִי שָׁרֵת וְלָא פָּרֵיךְ הָכִי אַטּוּ בִּכְלִי שָׁרֵת מַקְטֵיר לֵיהּ וְגָרַס רַשִׁ&quot;י וְהִקְטִירוֹ ס&quot;ד וְכִי הָיָה יָכוֹל לְהַקְטִירוֹ מִיָּד וַהֲלֹא הָיָה לָבוּשׁ עֲדַייִן בִּגְדֵי לָבָן וְהַקְטָרָה הוּא בְּבִגְדֵי זָהָב מִבַּחוּץ וּמְשַׁנֵּי נְתָנוֹ בְּמָגֵס לְהַקְטִירוֹ לִכְשֶׁיַּגִּיעַ זְמַנּוֹ וּבְפֶ&#x27; תָּמִיד נִשְׁחָט (גז&quot;ש) מְפָרֵשׁ הִקְטִירוּ ס&quot;ד אַטּוּ הוּא גּוּפֵיהּ מַקְטִיר לֵיהּ וְהָא בְּזָר קָיְימִינַן דִּלְעֵיל מִינֵּיהּ אַייְרֵי בְּהַפְשָׁטָה דִּכְשֵׁירָה בְּזָר וּמְשַׁנֵּי נְתָנוֹ בְּמָגֵס לְהַקְטִיר עַל יְדֵי כֹּהֵן ור&quot;ת אוֹמֵר דְּאֵין צָרִיךְ לְהַגִּיהַּ הַסְּפָרִים וְהָא דְּלָא פָּרֵיךְ הָכִי גַּבֵּי מִנְחָה בִּכְלִי שָׁרֵת ס&quot;ד שָׁאנֵי הָתָם כֵּיוָן דְּמִנְחָה בָּעֲיָא קִידּוּשׁ כְּלִי אַגַּב דִּמְקַדֵּשׁ בִּכְלִי שָׁרֵת מַעֲלֶה לַמִּזְבֵּחַ בִּכְלִי שָׁרֵת שֶׁהִיא נְתוּנָה בּוֹ לְהַקְטִירָהּ אֲבָל הָכָא וּבְפֶרֶק תָּמִיד נִשְׁחָט פָּרִיךְ שַׁפִּיר בְּמָגֵס ס&quot;ד וְכִי חוֹבָה הוּא שֶׁיִּהְיֶה בִּכְלִי שָׁרֵת כְּלָל וְהִקְשָׁה ה&quot;ר שְׁמוּאֵל מִוֶּרְדּוֹן דִּבְפֶרֶק שֵׁנִי דְּסוֹטָה (דַּף טו.) דְּפָרִיךְ הָכִי גַּבֵּי מִנְחָה דְּקָתָנֵי מַעֲלֶה וּמַקְטִירָהּ בִּכְלִי שָׁרֵת וּמַקְטִיר לָהּ וּמְשַׁנֵּי אֵימָא לְהַקְטִירָהּ וּמֵעַתָּה אֵין צָרִיךְ לִמְחוֹק הַסְּפָרִים דְּאִיכָּא לְמֵימַר כֵּיוָן דְּפָרִיךְ לָהּ חֲדָא זִימְנָא בְּסוֹטָה גַּבֵּי מִנְחָה וְשַׁנִּי לָהּ לֹא חָשׁ לְהַקְשׁוֹת בְּמִנְחָה זִימְנָא. אַחֲרִיתִי אע&quot;ג דִּבְזֶבַח פָּרֵיךְ לָהּ בְּתָמִיד נִשְׁחָט (פְּסָחִים דַּף סה:) וַהֲדַר פָּרֵיךְ לָהּ הָכָא הָתָם כְּבָשִׂים וְהָכָא פָּרִים אֲבָל גַּבֵּי מְנָחוֹת שֵׁם מִנְחָה אַחַת הִיא וְלַסְּפָרִים דְּגָרְסִינַן בְּסוֹטָה בַּבָּרַיְיתָא מַעֲלָן וּמַקְטִירָן בִּכְלִי שָׁרֵת וּמוֹלְחוֹ וְנוֹתְנוֹ עַל גַּבֵּי הָאִשִּׁים נִיחָא (לפר&quot;ת) דְּהָכִי פָּרִיךְ מַקְטִירוֹ בִּכְלִי שָׁרֵת ס&quot;ד פֵּירוּשׁ וְכִי כְּמוֹ שֶׁהִיא בִּכְלִי שָׁרֵת בְּלֹא מְלִיחָה מַקְטִירוֹ וּמְשַׁנֵּי אֵימָא לְהַקְטִירוֹ פֵּירוּשׁ לְאַחַר מְלִיחָה וְלִי נִרְאֶה דְּגָרְסִי&#x27; שַׁפִּיר בְּמָגֵס ס&quot;ד וּפָרִיךְ וְכִי חוֹבָה הוּא שֶׁיּוֹלִיכֶנּוּ בְּמָגֵס לַמִּזְבֵּחַ נְהִי נָמֵי דִּכְשֶׁקְּרָעָן וְהוֹצִיא אֵימוּרֵיהֶן נוֹתְנוֹ בְּמָגֵס וְלֹא עַל גַּבֵּי רִצְפָּה שֶׁלֹּא יְהוּ קָדְשֵׁי שָׁמַיִם מוּטָלִים כִּנְבֵלָה מ&quot;מ כְּשֶׁמַּעֲלָן לַמִּזְבֵּחַ יָכוֹל לְהַעֲלוֹתָן בְּיָדָיו וּמִדְּקָתָנֵי לֵיהּ גַּבֵּי סֵדֶר יוֹם הַכִּפּוּרִים מַשְׁמַע דְּכָךְ הוּא הַסֵּדֶר וּבְעִנְיָן אַחֵר אֵין לַעֲשׂוֹת וּלְהָכִי פָּרֵיךְ וְכִי חוֹבָה הוּא לַעֲשׂוֹת כֵּן לְהַעֲלוֹתָם בְּמָגֵס וּבְפֶרֶק תָּמִיד נִשְׁחָט נָמֵי דְּקָתָנֵי כָּל סֵדֶר הַפֶּסַח שְׁחִיטָתוֹ וְקַבָּלַת דָּמוֹ וְהוֹלָכָתוֹ וּזְרִיקָתוֹ וְהִפְשִׁיטוּ וְהַקְטָרָתוֹ לְהָכִי מֻתְמָהּ מִדְּקָתָנֵי הָכִי גַּבֵּי סֵדֶר הַפֶּסַח אַלְמָא דְּחוֹבָה הוּא לְהַקְטִירוֹ בְּמָגֵס וְכֵן בְּפֶרֶק ב&#x27; דְּסוֹטָה דְּקָתָנֵי סֵדֶר מְנָחוֹת כֵּיצַד אָדָם מֵבִיא מִנְחָתוֹ מִתּוֹךְ בֵּיתוֹ וְכָל סֵדֶר הַמִּנְחָה קָתָנֵי עַד מַעֲלֶה וּמַקְטִירָהּ בִּכְלִי שָׁרֵת לְהָכִי פָּרִיךְ מִדְּקָתָנֵי הָכִי גַּבֵּי סֵדֶר מִנְחָה אַלְמָא חוֹבָה הִיא אֲבָל בִּשְׁאָר דֻּוכְתֵי לָא פָּרֵיךְ הָכִי:</div>
+          <div class="glose-fr">Est-ce donc dans le maguis qu il le fait fumer ? -- Ainsi etait-il ecrit dans les livres, ici et a la fin du chapitre Tamid Nichhat (Pessahim 65b). Rachi l a raye parce que cela lui faisait difficulte : en plusieurs endroits du traite Menahot on enseigne il la monte et la fait fumer dans un keli charet, et l on n objecte pas ainsi -- est-ce donc dans un keli charet qu il la fait fumer ? Rachi lit donc : et il le fit fumer, cela te viendrait-il a l esprit ? Pouvait-il le faire fumer immediatement ? Il portait encore les bigdei lavan, alors que le fumage se fait en bigdei zahav, au dehors ! Et la guemara repond : il l a place dans le maguis pour le faire fumer quand son temps viendra. Et au chapitre Tamid Nichhat (meme endroit) il explique : il le fit fumer, cela te viendrait-il a l esprit ? Est-ce donc lui-meme qui le fait fumer ? Or nous traitons d un zar (non-cohen), puisque juste avant il etait question de l ecorchement, valide par un zar ! Et la guemara repond : il l a place dans le maguis pour qu il soit fait fumer par un cohen. Et Rabbenou Tam dit qu il n est pas necessaire de corriger les livres. Et si l on n objecte pas ainsi a propos de la minha -- dans un keli charet, cela te viendrait-il a l esprit ? -- c est que la-bas il en va autrement : puisque la minha requiert la sanctification par le keli, du fait meme qu elle est sanctifiee dans un keli charet, il la monte a l autel dans le keli charet ou elle se trouve pour la faire fumer. Mais ici, comme au chapitre Tamid Nichhat, on objecte a bon droit : dans le maguis, cela te viendrait-il a l esprit ? Est-ce donc une obligation qu il soit dans un keli charet, si peu que ce soit ? Et Rabbi Chmouel de Vardon a objecte : au deuxieme chapitre de Sota (15a) on objecte pourtant ainsi a propos de la minha, ou il est enseigne il la monte et la fait fumer dans un keli charet -- et il la fait fumer ?! -- et l on repond : dis plutot pour la faire fumer. Des lors il n est plus necessaire d effacer les livres, car on peut dire que, puisque la question a ete posee une fois dans Sota a propos de la minha et qu il y a ete repondu, le talmud ne s est pas soucie de la reposer une seconde fois a propos de la minha -- bien qu a propos d un zevah on la pose dans Tamid Nichhat (Pessahim 65b) puis de nouveau ici, car la-bas il s agit d agneaux et ici de taureaux, alors que pour les menahot il s agit d une seule et meme minha. Et selon les livres ou nous lisons dans la baraita de Sota il les monte et les fait fumer dans un keli charet, il le sale et le pose sur les feux, cela s explique bien [selon Rabbenou Tam] : voici l objection -- il le fait fumer dans le keli charet, cela te viendrait-il a l esprit ? c est-a-dire : le fait-il fumer tel quel, dans le keli charet et sans salage ? Et l on repond : dis plutot pour le faire fumer, c est-a-dire apres le salage. Et il me semble, quant a moi, que la lecon dans le maguis, cela te viendrait-il a l esprit ? est parfaitement correcte, et que l on objecte : est-ce donc une obligation qu il le porte a l autel dans le maguis ? Certes, lorsqu il les a fendus et en a retire les emourim, il les place dans un maguis et non a meme le dallage, pour que des choses consacrees au Ciel ne gisent pas comme une charogne ; mais quoi qu il en soit, lorsqu il les monte a l autel, il peut les y monter de ses mains. Et puisque cela est enseigne dans l ordre du jour de Kippour, cela implique que tel est l ordre et qu il n y a pas a faire autrement ; c est pourquoi l on objecte : est-ce donc une obligation d agir ainsi, de les monter dans le maguis ? Et de meme au chapitre Tamid Nichhat, ou l on enseigne tout l ordre du korban Pessah -- son abattage, la reception de son sang, son transport, son aspersion, son ecorchement et son fumage -- c est pour cela que l on s etonne : du fait qu on l enseigne ainsi dans l ordre du Pessah, il ressort que ce serait une obligation de le faire fumer dans le maguis. Et de meme au deuxieme chapitre de Sota, ou l on enseigne l ordre des menahot : comment ? un homme apporte sa minha de chez lui... et tout l ordre de la minha est enseigne jusqu a il la monte et la fait fumer dans un keli charet -- c est pour cela que l on objecte : du fait qu on l enseigne ainsi dans l ordre de la minha, il ressort que ce serait une obligation. Mais dans les autres endroits on n objecte pas ainsi.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara refuse la lecture litterale de la michna. Un simple mot doit etre relu comme un infinitif de but : non pas <i>ve-hiktiran</i> (et il les fit fumer) mais <i>le-haktiran</i> (pour les faire fumer).</p><p>Rachi donne la raison chronologique, et elle est decisive : a ce moment le Cohen Gadol porte encore les <b>bigdei lavan</b> ; il lui reste a lire la parasha dans ces memes vetements, puis a s immerger et a revetir les <b>bigdei zahav</b> pour son belier et le belier du peuple, puis une deuxieme tevila pour sortir la coupe et l encensoir, puis une troisieme pour les moussafim, ces emourim et le tamid du soir. Le fumage ne peut donc pas avoir lieu maintenant.</p><p>Rachi signale aussi qu il <b>corrige la version</b> du texte : il refuse la lecon <i>est-ce donc dans le maguis qu il les fait fumer ?</i>, qu il juge corrompue ici comme a Pessahim 65b et Sota 15a. Tossefot consacre toute sa glose a defendre, avec Rabbenou Tam puis avec sa propre lecture, la version que Rachi voulait effacer.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">״קְלָעָן בְּמִקְלָעוֹת״. אָמַר רַבִּי יוֹחָנָן: כְּמִין קְלִיעָה. תְּנָא: לֹא הָיָה מְנַתְּחָן נִיתּוּחַ בְּשַׂר עוֹלָה, אֶלָּא עוֹר עַל גַּבֵּי בָּשָׂר. מְנָא הָנֵי מִילֵּי? דְּתַנְיָא: רַבִּי אוֹמֵר: נֶאֱמַר כָּאן עוֹר וּבָשָׂר וָפֶרֶשׁ, וְנֶאֱמַר לְהַלָּן עוֹר וּבָשָׂר וָפֶרֶשׁ,</div>
+            <div class="fr"><p>&quot;Il les tressa en tresses&quot;. Rabbi Yohanan dit : a la maniere d une tresse.</p><p>Il a ete enseigne : il ne les depecait pas comme on depece la chair d une ola, mais peau sur chair. D ou ces choses [sont-elles tirees] ?</p><p>De ce qui a ete enseigne : Rabbi dit : il est dit ici &quot;peau, chair et fiente&quot;, et il est dit la-bas &quot;peau, chair et fiente&quot;,</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא הָיָה מְנַתְּחָן</b> הַשּׂוֹרְפָן כְּנִיתּוּחַ בְּשַׂר עוֹלָה שֶׁהוּא מֻופְשָׁט מִן הָעוֹר קֹודֶם נִיתּוּחַ כְּדִכְתִיב וְהִפְשִׁיט וְנִתַּח (וַיִּקְרָא א) אֶלָּא עוֹר עַל גַּבֵּי בָּשָׂר וְאֵינוֹ מַפְשִׁיטָן:</div>
+          <div class="glose-fr">&quot;Il ne les depecait pas&quot; -- celui qui les brule [ne les decoupe pas] comme on decoupe la chair d une ola, laquelle est ecorchee avant le decoupage, comme il est ecrit &quot;il l ecorchera et la decoupera&quot; (Vayikra 1) -- mais peau sur chair, et il ne les ecorche pas.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>נֶאֱמַר כָּאן</b> בְּפַר וְשָׂעִיר אֶת עֹורֹותָם וְאֶת בְּשָׂרָם וְאֶת פִּרְשָׁם:</div>
+          <div class="glose-fr">&quot;Il est dit ici&quot; -- a propos du taureau et du bouc : &quot;leurs peaux, leur chair et leur fiente&quot;.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְנֶאֱמַר</b> בְּפַר כֹּהֵן מָשִׁיחַ עוֹר וּבָשָׂר וּפֵרֵשׁ וְאֶת עוֹר הַפָּר וְאֶת כָּל בְּשָׂרוֹ עַל רֹאשׁוֹ וְעַל כְּרָעָיו וְקִרְבּוֹ וּפִרְשׁוֹ (וַיִּקְרָא ד):</div>
+          <div class="glose-fr">&quot;Et il est dit&quot; -- a propos du taureau du cohen machiah, &quot;peau, chair et fiente&quot; : &quot;et la peau du taureau, toute sa chair, avec sa tete, ses pattes, ses entrailles et sa fiente&quot; (Vayikra 4).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Trois enseignements enchaines. D abord Rabbi Yohanan confirme le sens du mot <b>kel-an be-mikla-ot</b> : une veritable tresse, corps entrelaces.</p><p>Ensuite une baraita enonce la regle du decoupage : contrairement a la <b>ola</b>, ou le verset ordonne <i>il l ecorchera et la decoupera</i> (Vayikra 1), on ne separe pas ici la peau de la chair. Le decoupage se fait <b>or al gabei bassar</b>, peau sur chair, sans ecorchement -- l animal est reduit en morceaux avec sa peau.</p><p>Enfin la source : une <b>guezera chava</b>. Les trois mots <i>or, bassar, peresh</i> (peau, chair, fiente) figurent ici a propos du taureau et du bouc de Yom Kippour (Vayikra 16,27) et la-bas a propos du taureau du cohen machiah (Vayikra 4,11), ou le detail est donne. Le daf s interrompt sur le premier membre de la guezera chava : sa conclusion se lit en 68a.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="300" fill="#fffdf8"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#64748b"/></marker></defs>
+  <text x="350" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">La guezera chava or -- bassar -- peresh</text>
+  <text x="350" y="45" text-anchor="middle" font-size="10" fill="#57534e">peau, chair et fiente : les trois mots reviennent dans deux passages</text>
+
+  <rect x="30" y="60" width="290" height="104" rx="8" fill="#eef6ff" stroke="#9cc3ea"/>
+  <text x="175" y="82" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1d4ed8">Ici -- Vayikra 16,27</text>
+  <text x="175" y="102" text-anchor="middle" font-size="10" fill="#334155">taureau et bouc de Yom Kippour</text>
+  <text x="175" y="124" text-anchor="middle" font-size="10" fill="#334155">leurs peaux, leur chair</text>
+  <text x="175" y="140" text-anchor="middle" font-size="10" fill="#334155">et leur fiente</text>
+  <text x="175" y="157" text-anchor="middle" font-size="9" font-style="italic" fill="#1e40af">le mode de decoupe n est pas precise</text>
+
+  <rect x="380" y="60" width="290" height="104" rx="8" fill="#fef6ee" stroke="#eabf9c"/>
+  <text x="525" y="82" text-anchor="middle" font-size="11.5" font-weight="700" fill="#c2410c">La-bas -- Vayikra 4,11</text>
+  <text x="525" y="102" text-anchor="middle" font-size="10" fill="#334155">taureau du cohen machiah</text>
+  <text x="525" y="124" text-anchor="middle" font-size="10" fill="#334155">la peau du taureau, toute sa chair,</text>
+  <text x="525" y="140" text-anchor="middle" font-size="10" fill="#334155">sa tete, ses pattes, ses entrailles, sa fiente</text>
+  <text x="525" y="157" text-anchor="middle" font-size="9" font-style="italic" fill="#9a3412">le detail y est donne</text>
+
+  <path d="M 175 164 L 300 196" stroke="#64748b" stroke-width="1.5" marker-end="url(#a)"/>
+  <path d="M 525 164 L 400 196" stroke="#64748b" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <rect x="110" y="202" width="480" height="86" rx="8" fill="#dcfce7" stroke="#9cc6a0"/>
+  <text x="350" y="224" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">Conclusion : peau sur chair (or al gabei bassar)</text>
+  <text x="350" y="246" text-anchor="middle" font-size="10.5" fill="#14532d">On ne les ecorche pas avant de les decouper, contrairement a la ola</text>
+  <text x="350" y="262" text-anchor="middle" font-size="10.5" fill="#14532d">ou il est ecrit il l ecorchera et la decoupera (Vayikra 1).</text>
+  <text x="350" y="281" text-anchor="middle" font-size="9.5" font-style="italic" fill="#166534">Le daf s interrompt sur le premier membre de la guezera chava : la suite est en 68a.</text>
+</svg></div><div class="svg-cap">La guezera chava or-bassar-peresh : deux passages, trois mots communs, une regle de decoupage.</div></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_67a.html">&lsaquo; Yoma 67a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

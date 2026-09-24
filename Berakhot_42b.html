@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Berakhot 42b — Quand une benediction en couvre une autre : le vin, la parperet et la fixation du repas commun</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Berakhot 42b — Quand une benediction en couvre une autre : le vin, la parperet et la fixation du repas commun</h1>
+    <div class="ref">Berakhot 42b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Berakhot_42a.html">&lsaquo; Berakhot 42a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Berakhot_43a.html">Berakhot 43a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> Ce folio poursuit la michna sur l&#x27;ordre des benedictions du repas et pose trois fois la meme question : un acte principal absorbe-t-il ce qui vient a cote de lui ? D&#x27;abord le vin — Rabbi Yohanan et Rabbi Yehochoua ben Levi restreignent la regle de la michna aux occasions ou l&#x27;on fixe son repas sur le vin, puis une question ouverte oppose six amoraim sur le point de savoir si le vin bu pendant le repas acquitte celui d&#x27;apres, avec l&#x27;objection de Rava a Rav Nahman et sa relecture de la michna.</p><p>Ensuite les mets : Beit Chammai ajoutent que le plat de marmite n&#x27;est pas acquitte, et le Talmud ne parvient pas a determiner sur quelle clause ils se prononcent — teikou. Enfin les convives : la michna exige l&#x27;installation a table pour qu&#x27;un seul benisse pour tous, une braita se contente de l&#x27;assise, et Rav Nahman bar Yitshak resout par la convocation prealable en un lieu.</p><p>Le folio se ferme sur le recit des disciples de Rav, revenant de son enterrement, qui butent sur cette question a leur propre table.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 452" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="452" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1c1917">Le fil du folio : trois fois la meme question</text>
+  <text x="380" y="42" text-anchor="middle" font-size="10.2" fill="#57534e">Quand un acte de benediction ou de repas en absorbe-t-il un autre ? Le vin, puis les mets, puis les convives.</text>
+
+  <rect x="24" y="56" width="712" height="98" rx="7" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.4"/>
+  <text x="38" y="76" font-size="10.8" font-weight="700" fill="#1e3a8a">Mouvement 1 (seg. 0-6) -- une coupe de vin en acquitte-t-elle une autre ?</text>
+  <text x="38" y="94" font-size="9" fill="#292524">La michna : le vin d'avant le repas acquitte celui d'apres. R. Yohanan restreint : seulement quand on fixe son repas sur le vin.</text>
+  <text x="38" y="111" font-size="9" fill="#292524">Puis la question ouverte : le vin bu pendant le repas acquitte-t-il celui d'apres ? Six amoraim se partagent.</text>
+  <text x="38" y="128" font-size="9" fill="#292524">Rava objecte a Rav Nahman depuis la michna ; Rav Nahman relit la michna comme deux cas independants.</text>
+  <text x="38" y="146" font-size="8.6" fill="#1d4ed8">Critere en jeu : boire (lichtot) contre faire descendre la nourriture (lichrot).</text>
+  <path d="M380 156 L380 170" stroke="#78716c" stroke-width="1.3"/><path d="M375 169 L385 169 L380 175 Z" fill="#78716c"/>
+
+  <rect x="24" y="178" width="712" height="94" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <text x="38" y="198" font-size="10.8" font-weight="700" fill="#7c2d12">Mouvement 2 (seg. 7-9) -- le pain absorbe-t-il les mets qui l'accompagnent ?</text>
+  <text x="38" y="216" font-size="9" fill="#292524">La michna : hamotsi sur le pain acquitte la parperet ; la benediction de la parperet n'acquitte pas le pain.</text>
+  <text x="38" y="233" font-size="9" fill="#292524">Beit Chammai ajoutent : pas meme le plat de marmite. Sur quelle clause portent-ils ? La question reste ouverte.</text>
+  <text x="38" y="252" font-size="8.6" fill="#b45309">Conclusion : teikou. La position de Beit Chammai est severe dans les deux lectures, mais sur des points opposes.</text>
+  <path d="M380 274 L380 288" stroke="#78716c" stroke-width="1.3"/><path d="M375 287 L385 287 L380 293 Z" fill="#78716c"/>
+
+  <rect x="24" y="296" width="712" height="112" rx="7" fill="#ecfdf5" stroke="#047857" stroke-width="1.4"/>
+  <text x="38" y="316" font-size="10.8" font-weight="700" fill="#065f46">Mouvement 3 (seg. 10-13) -- quand plusieurs mangeurs forment-ils un seul repas ?</text>
+  <text x="38" y="334" font-size="9" fill="#292524">La michna exige l'installation a table (hessev) pour qu'un seul benisse pour tous. Une braita se contente de s'asseoir.</text>
+  <text x="38" y="351" font-size="9" fill="#292524">Rav Nahman bar Yitshak resout : la braita parle de gens qui ont dit avant de partir, allons manger a tel endroit.</text>
+  <text x="38" y="368" font-size="9" fill="#292524">Recit : au retour de l'enterrement de Rav, ses disciples mangent ensemble et butent sur cette meme question.</text>
+  <text x="38" y="387" font-size="8.6" fill="#047857">Ce qui fixe le repas commun : le hessev, ou bien la parole prealable qui convoque en un lieu.</text>
+
+  <text x="380" y="428" text-anchor="middle" font-size="9.4" fill="#57534e">Un principe unique traverse le folio : ce qui est second par rapport a un acte principal est absorbe par la benediction de cet acte.</text>
+  <text x="380" y="444" text-anchor="middle" font-size="9.4" fill="#57534e">Reste a savoir, chaque fois, ce qui est principal et ce qui ne l'est pas.</text>
+</svg></div>
+          <figcaption>Les trois mouvements du folio, relies par une meme question : ce qui est second est-il absorbe par le principal ?</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 396" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="396" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Les trois moments du vin, et qui acquitte qui</text>
+  <text x="380" y="42" text-anchor="middle" font-size="10" fill="#57534e">Chaque coupe est situee par rapport au pain. La question est toujours : la premiere benediction couvre-t-elle la suivante ?</text>
+
+  <line x1="60" y1="112" x2="700" y2="112" stroke="#a8a29e" stroke-width="1.6"/>
+
+  <rect x="60" y="66" width="170" height="46" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.4"/>
+  <text x="145" y="86" text-anchor="middle" font-size="10.4" font-weight="700" fill="#1e3a8a">Vin avant le repas</text>
+  <text x="145" y="103" text-anchor="middle" font-size="8.8" fill="#292524">but : boire (lichtot)</text>
+
+  <rect x="295" y="66" width="170" height="46" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <text x="380" y="86" text-anchor="middle" font-size="10.4" font-weight="700" fill="#7c2d12">Vin pendant le repas</text>
+  <text x="380" y="103" text-anchor="middle" font-size="8.8" fill="#292524">but : faire descendre (lichrot)</text>
+
+  <rect x="530" y="66" width="170" height="46" rx="6" fill="#ecfdf5" stroke="#047857" stroke-width="1.4"/>
+  <text x="615" y="86" text-anchor="middle" font-size="10.4" font-weight="700" fill="#065f46">Vin apres le repas</text>
+  <text x="615" y="103" text-anchor="middle" font-size="8.8" fill="#292524">but : boire (lichtot)</text>
+
+  <path d="M145 130 C 145 176, 615 176, 615 130" fill="none" stroke="#1d4ed8" stroke-width="1.6"/>
+  <path d="M610 136 L620 136 L615 128 Z" fill="#1d4ed8"/>
+  <rect x="252" y="150" width="256" height="34" rx="5" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.1"/>
+  <text x="380" y="164" text-anchor="middle" font-size="9.2" font-weight="700" fill="#1e3a8a">Il acquitte : la michna le dit expressement</text>
+  <text x="380" y="177" text-anchor="middle" font-size="8.6" fill="#292524">l'un et l'autre sont pour boire</text>
+
+  <path d="M380 130 C 400 210, 590 210, 615 132" fill="none" stroke="#b45309" stroke-width="1.6" stroke-dasharray="5 3"/>
+  <path d="M610 138 L620 138 L615 130 Z" fill="#b45309"/>
+  <rect x="392" y="196" width="216" height="34" rx="5" fill="#ffffff" stroke="#b45309" stroke-width="1.1"/>
+  <text x="500" y="210" text-anchor="middle" font-size="9.2" font-weight="700" fill="#7c2d12">La question du folio (seg. 5-6)</text>
+  <text x="500" y="223" text-anchor="middle" font-size="8.6" fill="#292524">celui-ci est pour boire, celui-la pour faire descendre</text>
+
+  <rect x="60" y="248" width="316" height="122" rx="7" fill="#f5f5f4" stroke="#78716c" stroke-width="1.2"/>
+  <text x="74" y="268" font-size="10.2" font-weight="700" fill="#1c1917">La restriction de R. Yohanan (seg. 1-2)</text>
+  <text x="74" y="286" font-size="8.8" fill="#292524">La michna ne vaut que la ou l'on fixe son repas sur le vin :</text>
+  <text x="84" y="303" font-size="8.8" fill="#292524">- Chabbat et jours de fete</text>
+  <text x="84" y="319" font-size="8.8" fill="#292524">- en sortant du bain</text>
+  <text x="84" y="335" font-size="8.8" fill="#292524">- a l'heure de la saignee</text>
+  <text x="74" y="356" font-size="8.6" fill="#b91c1c">Les autres jours : chaque coupe demande sa benediction.</text>
+
+  <rect x="392" y="248" width="308" height="122" rx="7" fill="#f5f5f4" stroke="#78716c" stroke-width="1.2"/>
+  <text x="406" y="268" font-size="10.2" font-weight="700" fill="#1c1917">Pourquoi cette restriction</text>
+  <text x="406" y="286" font-size="8.8" fill="#292524">Une benediction ne couvre que ce qui etait deja dans</text>
+  <text x="406" y="302" font-size="8.8" fill="#292524">l'intention au moment ou on la recite.</text>
+  <text x="406" y="322" font-size="8.8" fill="#292524">Celui qui n'avait pas prevu de boire encore est un</text>
+  <text x="406" y="338" font-size="8.8" fill="#292524">nimlakh : il se ravise, et recommence a chaque coupe.</text>
+  <text x="406" y="359" font-size="8.6" fill="#047857">Abaye applique cela a lui-meme, meme un jour de fete.</text>
+</svg></div>
+          <figcaption>Le vin selon sa place dans le repas, et la question laissee ouverte au milieu du folio.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 340" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="340" fill="#fffdf8"/>
+  <text x="370" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Ce qui fait d'un groupe un seul repas</text>
+  <text x="370" y="42" text-anchor="middle" font-size="10" fill="#57534e">Trois situations, deux resultats : un seul benit pour tous, ou chacun pour soi.</text>
+
+  <rect x="26" y="62" width="216" height="152" rx="7" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.4"/>
+  <text x="134" y="84" text-anchor="middle" font-size="11" font-weight="700" fill="#7f1d1d">Assis par hasard</text>
+  <text x="134" y="102" text-anchor="middle" font-size="8.8" fill="#292524">Ils se trouvent au meme endroit,</text>
+  <text x="134" y="118" text-anchor="middle" font-size="8.8" fill="#292524">sans convocation prealable.</text>
+  <text x="134" y="142" text-anchor="middle" font-size="8.8" fill="#292524">Marcher ensemble en chemin</text>
+  <text x="134" y="158" text-anchor="middle" font-size="8.8" fill="#292524">et manger d'un meme pain</text>
+  <text x="134" y="174" text-anchor="middle" font-size="8.8" fill="#292524">ne suffit pas.</text>
+  <text x="134" y="200" text-anchor="middle" font-size="9.6" font-weight="700" fill="#b91c1c">Chacun benit pour soi</text>
+
+  <rect x="262" y="62" width="216" height="152" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <text x="370" y="84" text-anchor="middle" font-size="11" font-weight="700" fill="#7c2d12">Convoques par la parole</text>
+  <text x="370" y="102" text-anchor="middle" font-size="8.8" fill="#292524">Ils ont dit avant de partir :</text>
+  <text x="370" y="118" text-anchor="middle" font-size="8.8" fill="#292524">allons manger a tel endroit.</text>
+  <text x="370" y="142" text-anchor="middle" font-size="8.8" fill="#292524">Rachi : la parole, la decision</text>
+  <text x="370" y="158" text-anchor="middle" font-size="8.8" fill="#292524">et la convocation valent</text>
+  <text x="370" y="174" text-anchor="middle" font-size="8.8" fill="#292524">fixation (kevi'out).</text>
+  <text x="370" y="200" text-anchor="middle" font-size="9.6" font-weight="700" fill="#b45309">Comme s'ils s'etaient installes</text>
+
+  <rect x="498" y="62" width="216" height="152" rx="7" fill="#ecfdf5" stroke="#047857" stroke-width="1.4"/>
+  <text x="606" y="84" text-anchor="middle" font-size="11" font-weight="700" fill="#065f46">Installes a table (hessev)</text>
+  <text x="606" y="102" text-anchor="middle" font-size="8.8" fill="#292524">L'installation sur les lits de</text>
+  <text x="606" y="118" text-anchor="middle" font-size="8.8" fill="#292524">table, maniere ancienne de</text>
+  <text x="606" y="134" text-anchor="middle" font-size="8.8" fill="#292524">se fixer pour un repas.</text>
+  <text x="606" y="158" text-anchor="middle" font-size="8.8" fill="#292524">Le Roch : pour nous, la simple</text>
+  <text x="606" y="174" text-anchor="middle" font-size="8.8" fill="#292524">assise commune en tient lieu.</text>
+  <text x="606" y="200" text-anchor="middle" font-size="9.6" font-weight="700" fill="#047857">Un seul benit pour tous</text>
+
+  <rect x="26" y="234" width="688" height="88" rx="7" fill="#f5f5f4" stroke="#78716c" stroke-width="1.2"/>
+  <text x="40" y="254" font-size="10.2" font-weight="700" fill="#1c1917">Ce que le folio laisse ouvert</text>
+  <text x="40" y="272" font-size="8.9" fill="#292524">Les disciples de Rav, revenant de son enterrement, ont dit allons manger au bord du fleuve Danak. Ils ont donc la parole prealable,</text>
+  <text x="40" y="288" font-size="8.9" fill="#292524">mais ils ne se sont pas installes. Suffit-elle ? Ils ne surent pas trancher, et Rav Ada bar Ahava se leve pour repondre (suite au fol. 43a).</text>
+  <text x="40" y="310" font-size="8.9" fill="#1d4ed8">Enjeu pratique : le zimoun. Le Roch discute a partir de la si trois convives peuvent encore se separer une fois le repas commence.</text>
+</svg></div>
+          <figcaption>Les trois degres de fixation d&#x27;un repas commun et leur consequence sur la benediction.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בָּא לָהֶם יַיִן בְּתוֹךְ הַמָּזוֹן — כָּל אֶחָד וְאֶחָד מְבָרֵךְ לְעַצְמוֹ. אַחַר הַמָּזוֹן — אֶחָד מְבָרֵךְ לְכֻולָּם. וְהוּא אוֹמֵר עַל הַמֻּוגְמָר, וְאַף עַל פִּי שֶׁאֵין מְבִיאִין אֶת הַמֻּוגְמָר אֶלָּא לְאַחַר סְעוּדָה.</div>
+            <div class="fr"><p>Si du vin leur est venu au milieu du repas, chacun benit pour lui-meme. Apres le repas, un seul benit pour tous.</p><p>Et c&#x27;est lui qui recite la benediction sur le mougmar (l&#x27;encens), bien qu&#x27;on n&#x27;apporte le mougmar qu&#x27;apres le repas.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בָּא לָהֶם יַיִן בְּתוֹךְ הַמָּזוֹן כו&#x27;</b> בגמ&#x27; מְפָרֵשׁ טַעְמָא (ד&#x27; מג.):</div>
+          <div class="glose-fr">Le Talmud en explique la raison plus loin (fol. 43a).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהוּא אוֹמֵר עַל הַמֻּוגְמָר</b> אוֹתוֹ שֶׁבֵּרַךְ עַל הַיַּיִן הוּא מְבָרֵךְ עַל הַמֻּוגְמָר שֶׁהָיוּ רְגִילִים לְהָבִיא לִפְנֵיהֶם אַחַר אֲכִילָה אַבְקַת רוֹכְלִין עַל הָאֵשׁ בְּמַחְתּוֹת לְרֵיחַ טוֹב וּמְבָרְכִים עָלָיו בּוֹרֵא עֲצֵי בְּשָׂמִים:</div>
+          <div class="glose-fr">Celui qui a beni sur le vin, c&#x27;est lui qui benit sur le mougmar. On avait coutume d&#x27;apporter devant eux, apres le repas, de la poudre de parfumeur sur des braises, dans des encensoirs, pour la bonne odeur, et l&#x27;on benissait sur elle « bore atse vessamim ».</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְאַחַר סְעוּדָה</b> לְאַחַר בהמ&quot;ז שֶׁאֵינוֹ מִצָּרְכֵי סְעוּדָה אֲפִי&#x27; הָכִי מִי שֶׁבֵּרַךְ עַל הַיַּיִן שֶׁהִתְחִיל בִּבְרָכוֹת אַחֲרוֹנוֹת גּוֹמְרָן:</div>
+          <div class="glose-fr">Apres Birkat Hamazon, car le mougmar ne fait pas partie des besoins du repas. Malgre cela, celui qui a beni sur le vin, ayant commence les dernieres benedictions, les acheve.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">ואע&quot;פ שֶׁאֵין מְבִיאִין אֶת הַמֻּוגְמָר אֶלָּא לְאַחַר סְעוּדָה. וּכְבָר בָּרְכוּ בִּרְכַּת הַמָּזוֹן וְיֵשׁ הֶפְסֵק בֵּין יַיִן לְמֻוגְמָר. וְרַב שֵׁשֶׁת אָמַר אֵינוֹ פּוֹטֵר וְרַב נַחְמָן אָמַר פּוֹטֵר וְכָל תַּלְמִידֵי דְּרַב וְכוּ&#x27;. וְנִרְאֶה דַּהֲלָכָה כְּתַלְמִידֵי דְּרַב דְּרַב שֵׁשֶׁת קָאֵי כְּוָתַיְיהוּ וְהִלְכְתָא כְּוָתֵיהּ דר&quot;נ בְּדִינֵי וּכְרַב שֵׁשֶׁת בְּאִיסּוּרֵי ואע&quot;ג דקי&quot;ל דְּרַב וּשְׁמוּאֵל הֲלָכָה כְּרַב בְּאִיסּוּרֵי שָׁאנֵי הָכָא דְּכָל תַּלְמִידֵי דְּרַב פְּלִיגִי עָלֶיהָ מִסְּתָמָא כָּךְ שָׁמְעוּ מֵרַב מִיהוּ אֵין אָנוּ צְרִיכִין לְאוֹתוֹ פָּסַק דְּאֵין אָנוּ מוֹשְׁכִין יָדֵינוּ מִן הַפַּת כְּלָל וְנִרְאֶה דְּיַיִן שֶׁלִּפְנֵי סְעוּדָה פּוֹטֵר אֶת הַיַּיִן שֶׁבְּתוֹךְ הַסְּעוּדָה אע&quot;ג דְּפָסְקִינַן הָכָא דְּיַיִן שֶׁבְּתוֹךְ הַסְּעוּדָה אֵינוֹ פּוֹטֵר יַיִן דִּלְאַחַר הַסְּעוּדָה שָׁאנֵי הָכָא דְּזֶה לִשְׁרוֹת וְזֶה לִשְׁתּוֹת אֲבָל זֶה לִשְׁתּוֹת וְזֶה לִשְׁרוֹת פּוֹטֵר שַׁפִּיר כְּגוֹן יַיִן שֶׁלִּפְנֵי הַסְּעוּדָה פּוֹטֵר שֶׁבְּתוֹךְ הַסְּעוּדָה וּמַה דִּנְקַט שַׁבָּתוֹת וְי&quot;ט לָאו דַּוְקָא דְּה&quot;ה אִם קָבְעוּ סְעוּדָה עַל הַיַּיִן בִּשְׁאָר יְמוֹת הַחֹול וְאִם הֵבִיא אָדָם יַיִן לִפְנֵי הַסְּעוּדָה לִשְׁתּוֹת בְּתוֹךְ הַסְּעוּדָה פְּשִׁיטָא דְּיַיִן דְּלִפְנֵי סְעוּדָה פּוֹטַרְתּוֹ כֵּיוָן דְּדַעְתֵּיהּ לְמִשְׁתֵּי וְכֵן יַיִן שֶׁל קִידּוּשׁ פּוֹטֵר יַיִן שֶׁבְּתוֹךְ הַסְּעוּדָה וְכֵן הַבְדָּלָה אִם הֵבִיא עַל שֻׁלְחָנוֹ לְהַבְדִּיל דְּפוֹטֵר יַיִן שֶׁלְּאַחֲרֵי כֵּן שֶׁבְּתוֹךְ הַסְּעוּדָה וְשַׁבָּתוֹת וי&quot;ט לָאו דַּוְקָא וְלָא אֲתָא לְמַעוּטֵי אֶלָּא נִמְלַךְ וַאֲפִילּוּ את&quot;ל דְּדַוְקָא נְקַט שַׁבָּתוֹת וְי&quot;ט מ&quot;מ יֵשׁ לוֹמַר ה&quot;מ לְעִנְיַן שֶׁבָּא לִפְטוֹר יַיִן שֶׁלְּאַחַר הַמָּזוֹן שֶׁהוּא אַחַר שֶׁמָּשְׁכוּ יְדֵיהֶם מִן הַפַּת שֶׁאֵין רְגִילוּת לִקְבֹּועַ לִשְׁתּוֹת יַיִן לְאַחַר הַמָּזוֹן בִּקְבִיעוּת אֶלָּא בְּשַׁבָּתוֹת וְיָמִים טוֹבִים וְלֹא בִּשְׁאָר יָמִים אֲבָל לְעִנְיַן לִפְטוֹר יַיִן שֶׁבְּתוֹךְ הַמָּזוֹן שֶׁרְגִילוּת לִשְׁתּוֹת וַדַּאי אֲפִילּוּ בִּשְׁאָר יָמִים פָּטַר לֵיהּ יַיִן שֶׁלִּפְנֵי הַמָּזוֹן אע&quot;פ דְּזֶה לִשְׁתּוֹת וְזֶה לִשְׁרוֹת דְּעַד כָּאן לָא אִיבַּעְיָא לַן אֶלָּא אִי לִשְׁרוֹת דְּלָא חֲשִׁיב מַפִּיק לִשְׁתּוֹת אֲבָל לִשְׁתּוֹת דַּחֲשִׁיב טְפֵי דְּהַייְנוּ יַיִן שֶׁלִּפְנֵי הַמָּזוֹן פְּשִׁיטָא דְּפוֹטֵר יַיִן דְּלִשְׁרוֹת וְכֵן מַשְׁמַע נָמֵי בְּעַרְבֵי פְּסָחִים (דַּף קא) גַּבֵּי שֶׁקִּדְּשׁוּ בב&quot;ה דָּר&#x27; יוֹחָנָן אָמַר אַף יְדֵי יַיִן נָמֵי יָצְאוּ וְאֵין צָרִיךְ לַחֲזֹור וּלְבָרֵךְ עַל הַיַּיִן שֶׁבְּתוֹךְ הַסְּעוּדָה אע&quot;ג דְּקָדְשׁוּ שֶׁלֹּא בִּמְקוֹם סְעוּדָה ס&quot;ל לְרַבִּי יוֹחָנָן מִדְּיָצְאוּ יְדֵי קִידּוּשׁ מִידִי יַיִן נָמֵי יָצְאוּ וְאַף עַל גַּב דְּאִיתּוֹתַב רַבִּי יוֹחָנָן הַיְינוּ דַּוְקָא בְּשִׁינּוּי מָקוֹם א&quot;כ נִרְאֶה מִשָּׁם דה&quot;ה לְהַבְדָּלָה דְּאֵין לְחַלֵּק בֵּין הַבְדָּלָה לְקִידּוּשׁ וּלְאַפּוֹקֵי מֵהָנֵי דְּחוֹלְקִין וְאָמְרִי דַּוְקָא קִידּוּשׁ פּוֹטֵר מִשּׁוּם דְּאֵין קִידּוּשׁ אֶלָּא בִּמְקוֹם סְעוּדָה אֲבָל יַיִן שֶׁל הַבְדָּלָה לֹא פָּטַר אֲפִילּוּ הִבְדִּיל לְאַחַר נְטִילָה דְּהָכִי מַייְרֵי הָא דְּפָסְקִינַן דְּיַיִן שֶׁלִּפְנֵי הַמָּזוֹן פּוֹטֵר הַיַּיִן שֶׁבְּתוֹךְ הַמָּזוֹן דִּכְבָר נָטַל יָדָיו וְהָכִי מַשְׁמַע בְּסָמוּךְ מִתּוֹךְ הַבְרָיַית&#x27; כֵּיצַד סֵדֶר הֲסִבָּה וְכוּ&#x27; מִיהוּ נִרְאֶה כֵּיוָן דְּנָטַל יָדָיו וְדַעְתּוֹ לֶאֱכֹול וְלִשְׁתּוֹת שָׁם פּוֹטֵר אֲפִילּוּ דְּהַבְדָּלָה כִּדְפֵרֵישׁ מֵהַהִיא דְּעַרְבֵי פְּסָחִים וְעוֹד דְּלָא גָּרַע יַיִן דְּהַבְדָּלָה מִיַּיִן שֶׁלִּפְנֵי הַסְּעוּדָה דְּפָטַר וּמִיהוּ יֵשׁ שֶׁמַּחְמִירִין לְהַבְדִּיל קֹודֶם נְטִילַת יָדַיִם לְאַפּוֹקֵי נַפְשַׁיְיהוּ מִפְּלֻוגְתָּא דְּאָז וַדַּאי צָרִיךְ לְבָרֵךְ אַחֲרָיו בְּרָכָה מֵעֵין שָׁלֹשׁ וְלֹא פָּטַר יַיִן שֶׁבְּתוֹךְ הַמָּזוֹן:</div>
+          <div class="glose-fr">Bien qu&#x27;on n&#x27;apporte le mougmar qu&#x27;apres le repas : ils ont deja recite Birkat Hamazon, et il y a une interruption entre le vin et le mougmar. — Rav Chechet dit qu&#x27;il n&#x27;acquitte pas, Rav Nahman dit qu&#x27;il acquitte, et tous les disciples de Rav, etc. Il parait que la halakha suit les disciples de Rav, car Rav Chechet se tient avec eux ; et la regle veut que la halakha suive Rav Nahman en matiere de dinim (droit civil) et Rav Chechet en matiere d&#x27;issourim (interdits). Et bien que nous tenions que, entre Rav et Chemouel, la halakha suit Rav en matiere d&#x27;issourim, ici c&#x27;est different : tous les disciples de Rav sont en desaccord avec lui, et vraisemblablement c&#x27;est ainsi qu&#x27;ils l&#x27;ont entendu de Rav. Toutefois nous n&#x27;avons pas besoin de cette decision, car nous ne retirons plus du tout nos mains du pain avant Birkat Hamazon. Il parait aussi que le vin d&#x27;avant le repas acquitte le vin du milieu du repas, bien que nous tranchions ici que le vin du milieu du repas n&#x27;acquitte pas celui d&#x27;apres le repas : ici c&#x27;est different, car l&#x27;un est pour faire descendre la nourriture (lichrot) et l&#x27;autre pour boire (lichtot) ; mais lorsque le premier est pour boire et le second pour faire descendre, il acquitte bien — ainsi le vin d&#x27;avant le repas acquitte celui du milieu du repas. Et ce qui a ete dit, « Chabbat et jours de fete », n&#x27;est pas restrictif : il en va de meme si l&#x27;on a fixe son repas sur le vin les autres jours de la semaine. Si l&#x27;on a apporte du vin avant le repas pour en boire pendant le repas, il va de soi que le vin d&#x27;avant le repas l&#x27;acquitte, puisque son intention est d&#x27;en boire. De meme le vin du kidouch acquitte le vin du milieu du repas ; de meme la havdala, si on l&#x27;a apportee sur sa table pour la reciter, acquitte le vin qui vient ensuite au milieu du repas. « Chabbat et jours de fete » n&#x27;est pas restrictif, et cela ne vient exclure que le cas de celui qui se ravise (nimlakh). Et meme si l&#x27;on disait que « Chabbat et jours de fete » est restrictif, on peut repondre que cela ne vaut que lorsqu&#x27;il s&#x27;agit d&#x27;acquitter le vin d&#x27;apres le repas, qui vient apres qu&#x27;ils ont retire leurs mains du pain : on n&#x27;a pas coutume de s&#x27;installer a boire du vin apres le repas de facon fixe, sinon a Chabbat et aux jours de fete, et non les autres jours. Mais pour acquitter le vin du milieu du repas, qu&#x27;on a coutume de boire, le vin d&#x27;avant le repas l&#x27;acquitte assurement meme les autres jours, bien que l&#x27;un soit pour boire et l&#x27;autre pour faire descendre. Car notre question ne portait que sur le point de savoir si ce qui est pour faire descendre, qui compte moins, peut acquitter ce qui est pour boire ; mais ce qui est pour boire, qui compte davantage — c&#x27;est-a-dire le vin d&#x27;avant le repas —, acquitte evidemment le vin destine a faire descendre. C&#x27;est aussi ce qui ressort du chapitre Arve Pessahim (Pessahim 101a), a propos de ceux qui ont fait le kidouch a la synagogue : Rabbi Yohanan dit qu&#x27;ils se sont acquittes aussi du vin et qu&#x27;il n&#x27;est pas necessaire de benir de nouveau sur le vin du repas, bien que le kidouch ait ete fait hors du lieu du repas ; Rabbi Yohanan tient que, s&#x27;etant acquittes du kidouch, ils se sont acquittes aussi du vin. Et bien que Rabbi Yohanan ait ete refute, cela ne vaut que pour le changement de lieu. Il apparait donc de la qu&#x27;il en va de meme pour la havdala, car il n&#x27;y a pas lieu de distinguer entre havdala et kidouch — contre ceux qui distinguent et disent que seul le kidouch acquitte, parce que le kidouch n&#x27;a lieu qu&#x27;au lieu du repas, tandis que le vin de la havdala n&#x27;acquitterait pas, meme si on l&#x27;a recitee apres la netilat yadayim ; car c&#x27;est bien de ce cas que traite notre decision selon laquelle le vin d&#x27;avant le repas acquitte le vin du milieu du repas, a savoir qu&#x27;il s&#x27;est deja lave les mains, et c&#x27;est ce qui ressort plus loin de la braita « quel est l&#x27;ordre de l&#x27;installation a table ». Il parait toutefois que, du moment qu&#x27;il s&#x27;est lave les mains et qu&#x27;il a l&#x27;intention de manger et de boire la, le vin acquitte, meme celui de la havdala, comme on l&#x27;a explique a partir du passage de Pessahim ; d&#x27;autant que le vin de la havdala n&#x27;est pas inferieur au vin d&#x27;avant le repas, qui acquitte. Certains cependant sont rigoureux et recitent la havdala avant la netilat yadayim, pour se soustraire a la controverse ; en ce cas il faut assurement reciter apres elle la benediction me&#x27;ein chaloch, et elle n&#x27;acquitte pas le vin du milieu du repas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Cette michna, commencee au folio precedent, regle deux choses a la fois : <b>qui</b> benit, et <b>sur quoi</b> une benediction deja recitee continue de porter. Pendant le repas, chacun benit pour lui-meme, parce que les convives ont la bouche occupee et ne peuvent pas s'interrompre pour ecouter et repondre amen. Apres le repas, l'attention est libre : un seul benit pour tous.</p><p>La derniere clause etend la fonction de celui qui a beni sur le vin : c'est encore lui qui benit sur le <b>mougmar</b>, la poudre de parfumeur brulee sur des braises apres le repas. Rachi le justifie par une regle de continuite : celui qui a commence les dernieres benedictions les acheve.</p><p>Tossefot souligne la difficulte : le mougmar arrive apres Birkat Hamazon, donc apres une interruption complete. Sa longue glose part de la pour traiter la question qui commande tout le folio — quel vin acquitte quel vin.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">גְּמָ׳ אָמַר רַבָּה בַּר בַּר חָנָה אָמַר רַבִּי יוֹחָנָן: לֹא שָׁנוּ אֶלָּא בְּשַׁבָּתוֹת וְיָמִים טוֹבִים, הוֹאִיל וְאָדָם קוֹבֵעַ סְעֻודָּתוֹ עַל הַיַּיִן. אֲבָל בִּשְׁאָר יְמוֹת הַשָּׁנָה, מְבָרֵךְ עַל כָּל כּוֹס וָכוֹס.</div>
+            <div class="fr"><p>Guemara. Rabba bar bar Hana dit au nom de Rabbi Yohanan : on n&#x27;a enseigne cela qu&#x27;a propos des Chabbatot et des jours de fete, puisque l&#x27;homme fixe alors son repas sur le vin.</p><p>Mais les autres jours de l&#x27;annee, il benit sur chaque coupe.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>גְּמ&#x27; לֹא שָׁנוּ</b> דְּיַיִן שֶׁלִּפְנֵי הַמָּזוֹן פּוֹטֵר אֶת שֶׁלְּאַחַר הַמָּזוֹן:</div>
+          <div class="glose-fr">Que le vin d&#x27;avant le repas acquitte celui d&#x27;apres le repas.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא בְּשַׁבָּתוֹת כו&#x27;</b> דְּדַעְתּוֹ לֵישֵׁב אַחַר הַמָּזוֹן וְלִשְׁתּוֹת וְכִי בְּרִיךְ בְּרֵישָׁא אַדַּעְתָּא דְּהָכִי בְּרִיךְ:</div>
+          <div class="glose-fr">Car son intention est de rester assis apres le repas et de boire ; lorsqu&#x27;il a beni au debut, c&#x27;est dans cette intention qu&#x27;il a beni.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara ouvre sur la clause de la michna, apprise au folio precedent, selon laquelle le vin d'avant le repas acquitte le vin d'apres le repas. Rabbi Yohanan la restreint : elle ne vaut que la ou l'homme <b>fixe son repas sur le vin</b> (kove'a se'oudato al hayayin).</p><p>Le raisonnement porte sur l'intention. Une benediction couvre ce que celui qui la recite avait deja en vue. A Chabbat et aux jours de fete, on sait d'avance qu'on restera a table apres le repas et qu'on boira encore : la premiere benediction est recitee dans cette perspective et atteint donc les coupes suivantes. Les autres jours, rien de tel n'etait prevu.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִתְּמַר נָמֵי: אָמַר רַבָּה בַּר מָרִי אָמַר רַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי: לֹא שָׁנוּ אֶלָּא בְּשַׁבָּתוֹת וְיָמִים טוֹבִים, וּבְשָׁעָה שֶׁאָדָם יוֹצֵא מִבֵּית הַמֶּרְחָץ, וּבִשְׁעַת הַקָּזַת דָּם, הוֹאִיל וְאָדָם קוֹבֵעַ סְעֻודָּתוֹ עַל הַיַּיִן. אֲבָל בִּשְׁאָר יְמוֹת הַשָּׁנָה — מְבָרֵךְ עַל כָּל כּוֹס וָכוֹס.</div>
+            <div class="fr"><p>Il a ete dit de meme : Rabba bar Mari dit au nom de Rabbi Yehochoua ben Levi : on n&#x27;a enseigne cela qu&#x27;a propos des Chabbatot et des jours de fete, du moment ou l&#x27;homme sort du bain, et de l&#x27;heure de la saignee, puisqu&#x27;il fixe alors son repas sur le vin. Mais les autres jours de l&#x27;annee, il benit sur chaque coupe.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>עַל כָּל כּוֹס וָכוֹס</b> דַּהֲוָה כְּנִמְלָךְ וּמַתְחִיל בִּשְׁתִיָּה בְּכָל חַד וְחַד:</div>
+          <div class="glose-fr">Car il est comme quelqu&#x27;un qui se ravise et qui recommence a boire a chaque coupe.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La meme regle est rapportee au nom d'un second maitre, avec deux occasions supplementaires. Sortir du bain et se faire pratiquer une <b>saignee</b> (hakazat dam) laissent l'homme affaibli, et l'usage voulait qu'il s'installe alors a boire.</p><p>Ces deux ajouts eclairent le critere : ce qui compte n'est pas la saintete du jour mais l'etat d'esprit du buveur. Chabbat, le bain et la saignee ont en commun que l'on sait d'avance qu'on ne s'arretera pas a une coupe. Rachi nomme la situation inverse : les autres jours, l'homme est un <b>nimlakh</b>, il se ravise et recommence a boire a chaque coupe, si bien que la benediction precedente ne l'atteint pas.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 268" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="268" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="13.6" font-weight="700" fill="#1c1917">Quand fixe-t-on son repas sur le vin ?</text>
+
+  <rect x="24" y="42" width="316" height="176" rx="7" fill="#ecfdf5" stroke="#047857" stroke-width="1.4"/>
+  <text x="182" y="64" text-anchor="middle" font-size="10.6" font-weight="700" fill="#065f46">Occasions de kevi'out</text>
+  <text x="40" y="88" font-size="9" fill="#292524">- Chabbat et jours de fete (R. Yohanan)</text>
+  <text x="40" y="110" font-size="9" fill="#292524">- en sortant du bain (R. Yehochoua ben Levi)</text>
+  <text x="40" y="132" font-size="9" fill="#292524">- a l'heure de la saignee (R. Yehochoua ben Levi)</text>
+  <text x="40" y="160" font-size="8.8" fill="#292524">Point commun : on sait d'avance qu'on va rester</text>
+  <text x="40" y="176" font-size="8.8" fill="#292524">et boire encore.</text>
+  <text x="40" y="200" font-size="9.4" font-weight="700" fill="#047857">Une seule benediction couvre les coupes</text>
+
+  <rect x="360" y="42" width="316" height="176" rx="7" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.4"/>
+  <text x="518" y="64" text-anchor="middle" font-size="10.6" font-weight="700" fill="#7f1d1d">Les autres jours de l'annee</text>
+  <text x="376" y="88" font-size="9" fill="#292524">On ne prevoit pas de s'installer a boire.</text>
+  <text x="376" y="110" font-size="9" fill="#292524">Chaque coupe est une decision nouvelle :</text>
+  <text x="376" y="132" font-size="9" fill="#292524">l'homme y est un nimlakh, il se ravise.</text>
+  <text x="376" y="160" font-size="8.8" fill="#292524">Rachi : il recommence a boire a chaque fois,</text>
+  <text x="376" y="176" font-size="8.8" fill="#292524">et la benediction precedente ne l'atteint pas.</text>
+  <text x="376" y="200" font-size="9.4" font-weight="700" fill="#b91c1c">Une benediction par coupe</text>
+
+  <text x="350" y="244" text-anchor="middle" font-size="9" fill="#57534e">Le critere est l'intention au moment de la premiere benediction, non le calendrier pour lui-meme.</text>
+  <text x="350" y="260" text-anchor="middle" font-size="9" fill="#57534e">Abaye le montre en sens inverse : un jour de fete, il se declare nimlakh et benit sur chaque coupe.</text>
+</svg></div><div class="svg-cap">Les occasions ou l&#x27;on fixe son repas sur le vin, et leur denominateur commun : l&#x27;intention de continuer.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבָּה בַּר מָרִי אִיקְּלַע לְבֵי רָבָא בְּחוֹל. חַזְיֵיהּ דְּבָרֵיךְ לִפְנֵי הַמָּזוֹן, וַהֲדַר בָּרֵיךְ לְאַחַר הַמָּזוֹן. אֲמַר לֵיהּ: יִישַׁר. וְכֵן אָמַר רַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי.</div>
+            <div class="fr"><p>Rabba bar Mari se trouva chez Rava un jour de semaine. Il le vit benir avant le repas, puis benir de nouveau apres le repas.</p><p>Il lui dit : bien fait. Et ainsi a dit Rabbi Yehochoua ben Levi.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>יִישַׁר</b> יָפֶה עָשִׂיתָ:</div>
+          <div class="glose-fr">Tu as bien fait.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְכֵן אָמַר רִיבָּ&quot;ל</b> לַעֲשׂוֹת:</div>
+          <div class="glose-fr">C&#x27;est ainsi que Rabbi Yehochoua ben Levi a dit qu&#x27;il fallait faire.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Premier des deux recits qui verifient la regle dans la pratique. Rava, un jour ordinaire, recite deux benedictions distinctes, l'une avant, l'autre apres le repas — exactement ce que la restriction de Rabbi Yehochoua ben Levi impose hors des occasions de fixation.</p><p>Le mot de Rabba bar Mari, <b>yichar</b>, approuve la conduite et la rattache a l'enseignement qu'il a lui-meme transmis au nom de son maitre.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַב יִצְחָק בַּר יוֹסֵף אִיקְּלַע לְבֵי אַבָּיֵי בְּיוֹם טוֹב. חַזְיֵיהּ דְּבָרֵיךְ אַכָּל כָּסָא וְכָסָא. אֲמַר לֵיהּ: לָא סָבַר לַהּ מָר לְהָא דְּרַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי?! אֲמַר לֵיהּ: נִמְלַךְ אֲנָא.</div>
+            <div class="fr"><p>Rav Yitshak bar Yossef se trouva chez Abaye un jour de fete. Il le vit benir sur chaque coupe.</p><p>Il lui dit : le maitre ne tient-il pas l&#x27;enseignement de Rabbi Yehochoua ben Levi ? Il lui repondit : je suis, moi, un homme qui se ravise.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לָא סָבַר לָהּ מַר כו&#x27;</b> דִּבְיוֹם טוֹב לָאו נִמְלַךְ הוּא:</div>
+          <div class="glose-fr">Car un jour de fete on n&#x27;est pas dans le cas de celui qui se ravise.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>נִמְלַךְ אֲנָא</b> אֵינִי רָגִיל לִקְבֹּועַ סְעוּדָה עַל הַיַּיִן:</div>
+          <div class="glose-fr">Je n&#x27;ai pas coutume de fixer mon repas sur le vin.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le second recit prend le probleme par l'autre bout. Un jour de fete, Abaye devrait pouvoir se contenter d'une benediction, puisque c'est l'un des moments ou l'on fixe son repas sur le vin. Or il benit sur chaque coupe.</p><p>Sa reponse deplace le critere du calendrier vers la personne : <b>nimlakh ana</b>, je suis un homme qui se ravise. Rachi le glose : je n'ai pas coutume de fixer mon repas sur le vin. La regle des Chabbatot et jours de fete decrit l'usage ordinaire ; celui dont l'habitude personnelle differe est juge sur son habitude.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִיבַּעְיָא לְהוּ: בָּא לָהֶם יַיִן בְּתוֹךְ הַמָּזוֹן מַהוּ שֶׁיִּפְטֹור אֶת הַיַּיִן שֶׁלְּאַחַר הַמָּזוֹן? אִם תִּימְצֵי לוֹמַר בֵּרַךְ עַל הַיַּיִן שֶׁלִּפְנֵי הַמָּזוֹן פּוֹטֵר אֶת הַיַּיִן שֶׁלְּאַחַר הַמָּזוֹן — מִשּׁוּם דְּזֶה לִשְׁתּוֹת וְזֶה לִשְׁתּוֹת. אֲבָל הָכָא — דְּזֶה לִשְׁתּוֹת, וְזֶה לִשְׁרוֹת — לֹא. אוֹ דִּילְמָא לָא שְׁנָא.</div>
+            <div class="fr"><p>On leur posa la question : du vin leur est venu au milieu du repas, acquitte-t-il le vin d&#x27;apres le repas ? Si l&#x27;on veut dire que celui qui a beni sur le vin d&#x27;avant le repas acquitte le vin d&#x27;apres le repas, c&#x27;est parce que l&#x27;un est pour boire et l&#x27;autre pour boire ; mais ici, ou l&#x27;un est pour boire et l&#x27;autre pour faire descendre la nourriture, non.</p><p>Ou bien peut-etre n&#x27;y a-t-il pas de difference.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בָּא לָהֶם יַיִן בְּתוֹךְ הַמָּזוֹן</b> וְקֹודֶם הַמָּזוֹן לֹא בָּא לָהֶם:</div>
+          <div class="glose-fr">Et avant le repas il ne leur en etait pas venu.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִם תִּימְצֵי לוֹמַר</b> לְהָבִיא רְאָיָה מִמִּשְׁנָתֵנוּ דְּקָתָנֵי דְּיַיִן שֶׁלִּפְנֵי הַמָּזוֹן פּוֹטֵר אֶת שֶׁלְּאַחַר הַמָּזוֹן אֵינָהּ רְאָיָה דְּהָתָם זֶה לִשְׁתּוֹת וְזֶה לִשְׁתּוֹת אֲבָל שֶׁבְּתוֹךְ הַמָּזוֹן לִשְׁרוֹת אֲכִילָה שֶׁבְּמֵעָיו הוּא בָּא וְלֹא הָיוּ רְגִילִין לִשְׁתּוֹת בְּתוֹךְ הַסְּעוּדָה אֶלָּא מְעַט לִשְׁרוֹת:</div>
+          <div class="glose-fr">Vouloir tirer une preuve de notre michna, qui enseigne que le vin d&#x27;avant le repas acquitte celui d&#x27;apres le repas, n&#x27;est pas une preuve : la, l&#x27;un est pour boire et l&#x27;autre pour boire ; mais celui du milieu du repas vient pour faire descendre la nourriture qui est dans les entrailles, et l&#x27;on n&#x27;avait pas coutume de boire pendant le repas, sinon un peu, pour faire descendre.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>יַיִן שֶׁבְּתוֹךְ הַמָּזוֹן מַהוּ שֶׁיִּפְטֹור יַיִן שֶׁלְּאַחַר הַמָּזוֹן</b> וּמַייְרֵי דְּלָא הֲוָה לְהוּ יַיִן לִפְנֵי הַמָּזוֹן:</div>
+          <div class="glose-fr">Il s&#x27;agit du cas ou ils n&#x27;avaient pas eu de vin avant le repas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La question est construite en <b>im timtsi lomar</b> : elle part d'un acquis pour montrer qu'il ne se transporte pas de lui-meme au cas nouveau. L'acquis est la michna, ou le vin d'avant le repas acquitte celui d'apres. Mais ces deux coupes ont le meme usage : on les boit pour boire (<b>lichtot</b>).</p><p>Le vin servi au milieu du repas a un autre usage : il vient <b>faire descendre</b> la nourriture (<b>lichrot</b>), et l'on n'en buvait alors qu'un peu. La question est de savoir si une benediction recitee sur un vin de service peut couvrir un vin bu pour lui-meme.</p><p>Rachi precise le cadre du cas : il n'y a eu aucun vin avant le repas. S'il y en avait eu, sa benediction reglerait la question sans qu'on ait a interroger celle du milieu du repas.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="300" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="13.6" font-weight="700" fill="#1c1917">La structure de la question (im timtsi lomar)</text>
+
+  <rect x="150" y="40" width="400" height="46" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.3"/>
+  <text x="350" y="60" text-anchor="middle" font-size="9.8" font-weight="700" fill="#1e3a8a">Acquis : le vin d'avant le repas acquitte celui d'apres</text>
+  <text x="350" y="76" text-anchor="middle" font-size="8.8" fill="#292524">les deux sont bus pour boire (lichtot et lichtot)</text>
+
+  <path d="M350 88 L350 106" stroke="#78716c" stroke-width="1.3"/><path d="M345 105 L355 105 L350 111 Z" fill="#78716c"/>
+
+  <rect x="118" y="114" width="464" height="46" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="1.3"/>
+  <text x="350" y="134" text-anchor="middle" font-size="9.8" font-weight="700" fill="#7c2d12">Question : le vin bu pendant le repas acquitte-t-il celui d'apres ?</text>
+  <text x="350" y="150" text-anchor="middle" font-size="8.8" fill="#292524">celui-ci est pour boire, celui-la pour faire descendre (lichtot et lichrot)</text>
+
+  <path d="M350 162 L350 178" stroke="#78716c" stroke-width="1.3"/>
+  <path d="M220 178 L480 178" stroke="#78716c" stroke-width="1.3"/>
+  <path d="M220 178 L220 194" stroke="#78716c" stroke-width="1.3"/><path d="M215 193 L225 193 L220 199 Z" fill="#78716c"/>
+  <path d="M480 178 L480 194" stroke="#78716c" stroke-width="1.3"/><path d="M475 193 L485 193 L480 199 Z" fill="#78716c"/>
+
+  <rect x="60" y="202" width="320" height="72" rx="6" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="220" y="222" text-anchor="middle" font-size="9.6" font-weight="700" fill="#7f1d1d">Piste 1 : les deux usages different</text>
+  <text x="76" y="240" font-size="8.7" fill="#292524">Ce qui est bu pour faire descendre la nourriture</text>
+  <text x="76" y="256" font-size="8.7" fill="#292524">est trop mince pour couvrir ce qu'on boit ensuite.</text>
+  <text x="220" y="268" text-anchor="middle" font-size="8.7" font-weight="700" fill="#b91c1c">il n'acquitte pas</text>
+
+  <rect x="400" y="202" width="240" height="72" rx="6" fill="#ecfdf5" stroke="#047857" stroke-width="1.3"/>
+  <text x="520" y="222" text-anchor="middle" font-size="9.6" font-weight="700" fill="#065f46">Piste 2 : lo chena</text>
+  <text x="414" y="240" font-size="8.7" fill="#292524">Boire reste boire ; l'usage du vin</text>
+  <text x="414" y="256" font-size="8.7" fill="#292524">ne change pas sa benediction.</text>
+  <text x="520" y="268" text-anchor="middle" font-size="8.7" font-weight="700" fill="#047857">il acquitte</text>
+
+  <text x="350" y="292" text-anchor="middle" font-size="8.8" fill="#57534e">Rachi precise le cadre : ici, aucun vin n'a ete servi avant le repas, sinon la question ne se poserait pas.</text>
+</svg></div><div class="svg-cap">La forme de la question : un acquis, une difference d&#x27;usage, et deux issues possibles.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַב אָמַר: פּוֹטֵר, וְרַב כָּהֲנָא אָמַר: אֵינוֹ פּוֹטֵר. רַב נַחְמָן אָמַר: פּוֹטֵר, וְרַב שֵׁשֶׁת אָמַר: אֵינוֹ פּוֹטֵר. רַב הוּנָא וְרַב יְהוּדָה וְכָל תַּלְמִידֵי דְּרַב אָמְרִי: אֵינוֹ פּוֹטֵר. אֵיתִיבֵיהּ רָבָא לְרַב נַחְמָן: בָּא לָהֶם יַיִן בְּתוֹךְ הַמָּזוֹן — כָּל אֶחָד וְאֶחָד מְבָרֵךְ לְעַצְמוֹ. לְאַחַר הַמָּזוֹן — אֶחָד מְבָרֵךְ לְכֻולָּם. אֲמַר לֵיהּ, הָכִי קָאָמַר: אִם לֹא בָּא לָהֶם יַיִן בְּתוֹךְ הַמָּזוֹן אֶלָּא לְאַחַר הַמָּזוֹן, אֶחָד מְבָרֵךְ לְכֻולָּם.</div>
+            <div class="fr"><p>Rav dit : il acquitte. Rav Kahana dit : il n&#x27;acquitte pas.</p><p>Rav Nahman dit : il acquitte. Rav Chechet dit : il n&#x27;acquitte pas.</p><p>Rav Houna, Rav Yehouda et tous les disciples de Rav disent : il n&#x27;acquitte pas. Rava objecta a Rav Nahman : du vin leur est venu au milieu du repas, chacun benit pour lui-meme ; apres le repas, un seul benit pour tous.</p><p>Il lui repondit : voici ce que la michna veut dire — si le vin ne leur est pas venu au milieu du repas mais seulement apres le repas, un seul benit pour tous.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְאַחַר הַמָּזוֹן אֶחָד מְבָרֵךְ לְכֻולָּן</b> קס&quot;ד דה&quot;ק דִּכְשֶׁיָּבִיאוּ יַיִן שֵׁנִי אַחַר הַמָּזוֹן אֶחָד מְבָרֵךְ לְכֻולָּן וְהָא תְּנָא לֵיהּ דְּכָל אֶחָד וְאֶחָד יְבָרֵךְ עַל שֶׁבְּתוֹךְ הַמָּזוֹן לְעַצְמוֹ וְקָא מַצְרִיךְ תּוּ בְּרָכָה עַל שֶׁלְּאַחַר הַמָּזוֹן:</div>
+          <div class="glose-fr">On a d&#x27;abord pense que la michna voulait dire : lorsqu&#x27;on apportera un second vin apres le repas, un seul benira pour tous. Or elle a deja enseigne que chacun benit pour lui-meme sur le vin du milieu du repas, et voila qu&#x27;elle exige encore une benediction sur celui d&#x27;apres le repas.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְרַב שֵׁשֶׁת אָמַר אֵינוֹ פּוֹטֵר וְרַב נַחְמָן אָמַר פּוֹטֵר וְכָל תַּלְמִידֵי דְּרַב וְכוּ&#x27;</b> וְנִרְאֶה דַּהֲלָכָה כְּתַלְמִידֵי דְּרַב דְּרַב שֵׁשֶׁת קָאֵי כְּוָתַיְיהוּ וְהִלְכְתָא כְּוָתֵיהּ דר&quot;נ בְּדִינֵי וּכְרַב שֵׁשֶׁת בְּאִיסּוּרֵי ואע&quot;ג דקי&quot;ל דְּרַב וּשְׁמוּאֵל הֲלָכָה כְּרַב בְּאִיסּוּרֵי שָׁאנֵי הָכָא דְּכָל תַּלְמִידֵי דְּרַב פְּלִיגִי עָלֶיהָ מִסְּתָמָא כָּךְ שָׁמְעוּ מֵרַב מִיהוּ אֵין אָנוּ צְרִיכִין לְאוֹתוֹ פָּסַק דְּאֵין אָנוּ מוֹשְׁכִין יָדֵינוּ מִן הַפַּת כְּלָל וְנִרְאֶה דְּיַיִן שֶׁלִּפְנֵי סְעוּדָה פּוֹטֵר אֶת הַיַּיִן שֶׁבְּתוֹךְ הַסְּעוּדָה אע&quot;ג דְּפָסְקִינַן הָכָא דְּיַיִן שֶׁבְּתוֹךְ הַסְּעוּדָה אֵינוֹ פּוֹטֵר יַיִן דִּלְאַחַר הַסְּעוּדָה שָׁאנֵי הָכָא דְּזֶה לִשְׁרוֹת וְזֶה לִשְׁתּוֹת אֲבָל זֶה לִשְׁתּוֹת וְזֶה לִשְׁרוֹת פּוֹטֵר שַׁפִּיר כְּגוֹן יַיִן שֶׁלִּפְנֵי הַסְּעוּדָה פּוֹטֵר שֶׁבְּתוֹךְ הַסְּעוּדָה וּמַה דִּנְקַט שַׁבָּתוֹת וְי&quot;ט לָאו דַּוְקָא דְּה&quot;ה אִם קָבְעוּ סְעוּדָה עַל הַיַּיִן בִּשְׁאָר יְמוֹת הַחֹול וְאִם הֵבִיא אָדָם יַיִן לִפְנֵי הַסְּעוּדָה לִשְׁתּוֹת בְּתוֹךְ הַסְּעוּדָה פְּשִׁיטָא דְּיַיִן דְּלִפְנֵי סְעוּדָה פּוֹטַרְתּוֹ כֵּיוָן דְּדַעְתֵּיהּ לְמִשְׁתֵּי וְכֵן יַיִן שֶׁל קִידּוּשׁ פּוֹטֵר יַיִן שֶׁבְּתוֹךְ הַסְּעוּדָה וְכֵן הַבְדָּלָה אִם הֵבִיא עַל שֻׁלְחָנוֹ לְהַבְדִּיל דְּפוֹטֵר יַיִן שֶׁלְּאַחֲרֵי כֵּן שֶׁבְּתוֹךְ הַסְּעוּדָה וְשַׁבָּתוֹת וי&quot;ט לָאו דַּוְקָא וְלָא אֲתָא לְמַעוּטֵי אֶלָּא נִמְלַךְ וַאֲפִילּוּ את&quot;ל דְּדַוְקָא נְקַט שַׁבָּתוֹת וְי&quot;ט מ&quot;מ יֵשׁ לוֹמַר ה&quot;מ לְעִנְיַן שֶׁבָּא לִפְטוֹר יַיִן שֶׁלְּאַחַר הַמָּזוֹן שֶׁהוּא אַחַר שֶׁמָּשְׁכוּ יְדֵיהֶם מִן הַפַּת שֶׁאֵין רְגִילוּת לִקְבֹּועַ לִשְׁתּוֹת יַיִן לְאַחַר הַמָּזוֹן בִּקְבִיעוּת אֶלָּא בְּשַׁבָּתוֹת וְיָמִים טוֹבִים וְלֹא בִּשְׁאָר יָמִים אֲבָל לְעִנְיַן לִפְטוֹר יַיִן שֶׁבְּתוֹךְ הַמָּזוֹן שֶׁרְגִילוּת לִשְׁתּוֹת וַדַּאי אֲפִילּוּ בִּשְׁאָר יָמִים פָּטַר לֵיהּ יַיִן שֶׁלִּפְנֵי הַמָּזוֹן אע&quot;פ דְּזֶה לִשְׁתּוֹת וְזֶה לִשְׁרוֹת דְּעַד כָּאן לָא אִיבַּעְיָא לַן אֶלָּא אִי לִשְׁרוֹת דְּלָא חֲשִׁיב מַפִּיק לִשְׁתּוֹת אֲבָל לִשְׁתּוֹת דַּחֲשִׁיב טְפֵי דְּהַייְנוּ יַיִן שֶׁלִּפְנֵי הַמָּזוֹן פְּשִׁיטָא דְּפוֹטֵר יַיִן דְּלִשְׁרוֹת וְכֵן מַשְׁמַע נָמֵי בְּעַרְבֵי פְּסָחִים (דַּף קא.) גַּבֵּי שֶׁקִּדְּשׁוּ בב&quot;ה דָּר&#x27; יוֹחָנָן אָמַר אַף יְדֵי יַיִן נָמֵי יָצְאוּ וְאֵין צָרִיךְ לַחֲזֹור וּלְבָרֵךְ עַל הַיַּיִן שֶׁבְּתוֹךְ הַסְּעוּדָה אע&quot;ג דְּקָדְשׁוּ שֶׁלֹּא בִּמְקוֹם סְעוּדָה ס&quot;ל לְרַבִּי יוֹחָנָן מִדְּיָצְאוּ יְדֵי קִידּוּשׁ מִידִי יַיִן נָמֵי יָצְאוּ וְאַף עַל גַּב דְּאִיתּוֹתַב רַבִּי יוֹחָנָן הַיְינוּ דַּוְקָא בְּשִׁינּוּי מָקוֹם א&quot;כ נִרְאֶה מִשָּׁם דה&quot;ה לְהַבְדָּלָה דְּאֵין לְחַלֵּק בֵּין הַבְדָּלָה לְקִידּוּשׁ וּלְאַפּוֹקֵי מֵהָנֵי דְּחוֹלְקִין וְאָמְרִי דַּוְקָא קִידּוּשׁ פּוֹטֵר מִשּׁוּם דְּאֵין קִידּוּשׁ אֶלָּא בִּמְקוֹם סְעוּדָה אֲבָל יַיִן שֶׁל הַבְדָּלָה לֹא פָּטַר אֲפִילּוּ הִבְדִּיל לְאַחַר נְטִילָה דְּהָכִי מַייְרֵי הָא דְּפָסְקִינַן דְּיַיִן שֶׁלִּפְנֵי הַמָּזוֹן פּוֹטֵר הַיַּיִן שֶׁבְּתוֹךְ הַמָּזוֹן דִּכְבָר נָטַל יָדָיו וְהָכִי מַשְׁמַע בְּסָמוּךְ מִתּוֹךְ הַבְרָיַית&#x27; כֵּיצַד סֵדֶר הֲסִבָּה וְכוּ&#x27; מִיהוּ נִרְאֶה כֵּיוָן דְּנָטַל יָדָיו וְדַעְתּוֹ לֶאֱכֹול וְלִשְׁתּוֹת שָׁם פּוֹטֵר אֲפִילּוּ דְּהַבְדָּלָה כִּדְפֵרֵישׁ מֵהַהִיא דְּעַרְבֵי פְּסָחִים וְעוֹד דְּלָא גָּרַע יַיִן דְּהַבְדָּלָה מִיַּיִן שֶׁלִּפְנֵי הַסְּעוּדָה דְּפָטַר וּמִיהוּ יֵשׁ שֶׁמַּחְמִירִין לְהַבְדִּיל קֹודֶם נְטִילַת יָדַיִם לְאַפּוֹקֵי נַפְשַׁיְיהוּ מִפְּלֻוגְתָּא דְּאָז וַדַּאי צָרִיךְ לְבָרֵךְ אַחֲרָיו בְּרָכָה מֵעֵין שָׁלֹשׁ וְלֹא פָּטַר יַיִן שֶׁבְּתוֹךְ הַמָּזוֹן:</div>
+          <div class="glose-fr">Il parait que la halakha suit les disciples de Rav, car Rav Chechet se tient avec eux ; et la regle veut que la halakha suive Rav Nahman en matiere de dinim (droit civil) et Rav Chechet en matiere d&#x27;issourim (interdits). Et bien que nous tenions que, entre Rav et Chemouel, la halakha suit Rav en matiere d&#x27;issourim, ici c&#x27;est different : tous les disciples de Rav sont en desaccord avec lui, et vraisemblablement c&#x27;est ainsi qu&#x27;ils l&#x27;ont entendu de Rav. Toutefois nous n&#x27;avons pas besoin de cette decision, car nous ne retirons plus du tout nos mains du pain avant Birkat Hamazon. Il parait aussi que le vin d&#x27;avant le repas acquitte le vin du milieu du repas, bien que nous tranchions ici que le vin du milieu du repas n&#x27;acquitte pas celui d&#x27;apres le repas : ici c&#x27;est different, car l&#x27;un est pour faire descendre la nourriture (lichrot) et l&#x27;autre pour boire (lichtot) ; mais lorsque le premier est pour boire et le second pour faire descendre, il acquitte bien — ainsi le vin d&#x27;avant le repas acquitte celui du milieu du repas. Et ce qui a ete dit, « Chabbat et jours de fete », n&#x27;est pas restrictif : il en va de meme si l&#x27;on a fixe son repas sur le vin les autres jours de la semaine. Si l&#x27;on a apporte du vin avant le repas pour en boire pendant le repas, il va de soi que le vin d&#x27;avant le repas l&#x27;acquitte, puisque son intention est d&#x27;en boire. De meme le vin du kidouch acquitte le vin du milieu du repas ; de meme la havdala, si on l&#x27;a apportee sur sa table pour la reciter, acquitte le vin qui vient ensuite au milieu du repas. « Chabbat et jours de fete » n&#x27;est pas restrictif, et cela ne vient exclure que le cas de celui qui se ravise (nimlakh). Et meme si l&#x27;on disait que « Chabbat et jours de fete » est restrictif, on peut repondre que cela ne vaut que lorsqu&#x27;il s&#x27;agit d&#x27;acquitter le vin d&#x27;apres le repas, qui vient apres qu&#x27;ils ont retire leurs mains du pain : on n&#x27;a pas coutume de s&#x27;installer a boire du vin apres le repas de facon fixe, sinon a Chabbat et aux jours de fete, et non les autres jours. Mais pour acquitter le vin du milieu du repas, qu&#x27;on a coutume de boire, le vin d&#x27;avant le repas l&#x27;acquitte assurement meme les autres jours, bien que l&#x27;un soit pour boire et l&#x27;autre pour faire descendre. Car notre question ne portait que sur le point de savoir si ce qui est pour faire descendre, qui compte moins, peut acquitter ce qui est pour boire ; mais ce qui est pour boire, qui compte davantage — c&#x27;est-a-dire le vin d&#x27;avant le repas —, acquitte evidemment le vin destine a faire descendre. C&#x27;est aussi ce qui ressort du chapitre Arve Pessahim (Pessahim 101a), a propos de ceux qui ont fait le kidouch a la synagogue : Rabbi Yohanan dit qu&#x27;ils se sont acquittes aussi du vin et qu&#x27;il n&#x27;est pas necessaire de benir de nouveau sur le vin du repas, bien que le kidouch ait ete fait hors du lieu du repas ; Rabbi Yohanan tient que, s&#x27;etant acquittes du kidouch, ils se sont acquittes aussi du vin. Et bien que Rabbi Yohanan ait ete refute, cela ne vaut que pour le changement de lieu. Il apparait donc de la qu&#x27;il en va de meme pour la havdala, car il n&#x27;y a pas lieu de distinguer entre havdala et kidouch — contre ceux qui distinguent et disent que seul le kidouch acquitte, parce que le kidouch n&#x27;a lieu qu&#x27;au lieu du repas, tandis que le vin de la havdala n&#x27;acquitterait pas, meme si on l&#x27;a recitee apres la netilat yadayim ; car c&#x27;est bien de ce cas que traite notre decision selon laquelle le vin d&#x27;avant le repas acquitte le vin du milieu du repas, a savoir qu&#x27;il s&#x27;est deja lave les mains, et c&#x27;est ce qui ressort plus loin de la braita « quel est l&#x27;ordre de l&#x27;installation a table ». Il parait toutefois que, du moment qu&#x27;il s&#x27;est lave les mains et qu&#x27;il a l&#x27;intention de manger et de boire la, le vin acquitte, meme celui de la havdala, comme on l&#x27;a explique a partir du passage de Pessahim ; d&#x27;autant que le vin de la havdala n&#x27;est pas inferieur au vin d&#x27;avant le repas, qui acquitte. Certains cependant sont rigoureux et recitent la havdala avant la netilat yadayim, pour se soustraire a la controverse ; en ce cas il faut assurement reciter apres elle la benediction me&#x27;ein chaloch, et elle n&#x27;acquitte pas le vin du milieu du repas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Les positions se distribuent en deux camps, chacun a deux generations : Rav et Rav Nahman acquittent, Rav Kahana, Rav Chechet, puis Rav Houna, Rav Yehouda et l'ensemble des disciples de Rav n'acquittent pas. Tossefot en tire la halakha : quand tous les disciples d'un maitre s'opposent a lui, ils ont vraisemblablement entendu de lui cette version.</p><p>L'objection de Rava lit la michna comme une progression : le vin du milieu du repas a ete beni par chacun, et pourtant le vin d'apres exige encore une benediction. La position de Rav Nahman en serait refutee.</p><p>Rav Nahman repond en cassant la progression : la michna enonce <b>deux cas independants</b>. Le premier est celui du vin servi pendant le repas, le second celui d'un vin qui n'arrive qu'apres. Ainsi lue, la michna ne dit rien du cas ou du vin vient aux deux moments, et l'objection n'a plus de prise.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 366" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="366" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Le vin du repas acquitte-t-il celui d'apres ? Les positions</text>
+
+  <rect x="30" y="40" width="330" height="132" rx="7" fill="#ecfdf5" stroke="#047857" stroke-width="1.4"/>
+  <text x="195" y="62" text-anchor="middle" font-size="11" font-weight="700" fill="#065f46">Il acquitte</text>
+  <text x="48" y="86" font-size="9.4" fill="#292524">Rav</text>
+  <text x="48" y="108" font-size="9.4" fill="#292524">Rav Nahman</text>
+  <text x="48" y="140" font-size="8.7" fill="#292524">Rav Nahman doit alors relire la michna</text>
+  <text x="48" y="156" font-size="8.7" fill="#292524">autrement (voir le bas du schema).</text>
+
+  <rect x="400" y="40" width="330" height="132" rx="7" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.4"/>
+  <text x="565" y="62" text-anchor="middle" font-size="11" font-weight="700" fill="#7f1d1d">Il n'acquitte pas</text>
+  <text x="418" y="86" font-size="9.4" fill="#292524">Rav Kahana</text>
+  <text x="418" y="104" font-size="9.4" fill="#292524">Rav Chechet</text>
+  <text x="418" y="122" font-size="9.4" fill="#292524">Rav Houna, Rav Yehouda</text>
+  <text x="418" y="140" font-size="9.4" fill="#292524">et tous les disciples de Rav</text>
+  <text x="418" y="160" font-size="8.7" fill="#b91c1c">Tossefot : la halakha suit ce camp.</text>
+
+  <rect x="30" y="188" width="700" height="60" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="1.3"/>
+  <text x="44" y="208" font-size="10" font-weight="700" fill="#7c2d12">L'objection de Rava a Rav Nahman</text>
+  <text x="44" y="226" font-size="8.8" fill="#292524">La michna enseigne : vin pendant le repas, chacun benit pour soi ; apres le repas, un seul benit pour tous.</text>
+  <text x="44" y="241" font-size="8.8" fill="#292524">Lecture spontanee : il faut donc une benediction nouvelle sur le vin d'apres, malgre celle du milieu du repas.</text>
+
+  <path d="M380 250 L380 266" stroke="#78716c" stroke-width="1.3"/><path d="M375 265 L385 265 L380 271 Z" fill="#78716c"/>
+
+  <rect x="30" y="274" width="700" height="76" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.3"/>
+  <text x="44" y="294" font-size="10" font-weight="700" fill="#1e3a8a">La reponse de Rav Nahman : deux cas independants</text>
+  <text x="44" y="312" font-size="8.8" fill="#292524">Clause 1 : du vin vient pendant le repas, chacun benit pour lui-meme, parce qu'on ne s'interrompt pas pour repondre amen.</text>
+  <text x="44" y="328" font-size="8.8" fill="#292524">Clause 2 : s'il n'est venu aucun vin pendant le repas, mais seulement apres, alors un seul benit pour tous.</text>
+  <text x="44" y="344" font-size="8.8" fill="#1d4ed8">Ainsi lue, la michna ne dit rien du cas ou du vin est venu aux deux moments : l'objection tombe.</text>
+</svg></div><div class="svg-cap">Les deux camps, l&#x27;objection de Rava et la relecture de la michna en deux cas independants.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בֵּרַךְ עַל הַפַּת, פָּטַר אֶת הַפַּרְפֶּרֶת. עַל הַפַּרְפֶּרֶת, לֹא פָּטַר אֶת הַפַּת. בֵּית שַׁמַּאי אוֹמְרִים: אַף לֹא מַעֲשֵׂה קְדֵרָה.</div>
+            <div class="fr"><p>S&#x27;il a beni sur le pain, il a acquitte la parperet (les mets qui accompagnent le pain) ; s&#x27;il a beni sur la parperet, il n&#x27;a pas acquitte le pain. Beit Chammai disent : pas meme le plat de marmite.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>פָּטַר אֶת הַפַּרְפֶּרֶת</b> אע&quot;פ שֶׁאֵין צֹורֶךְ סְעוּדָה לְמִלּוּי הַכָּרֵס אֶלָּא לְמִגְמַר אֲכִילָה:</div>
+          <div class="glose-fr">Bien qu&#x27;elle ne serve pas au repas pour remplir le ventre, mais pour achever le repas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle clause de la michna, sur le meme principe : le principal absorbe l'accessoire. Le pain est le principal du repas, et la benediction de hamotsi couvre la <b>parperet</b>, les mets qui l'accompagnent. L'inverse ne vaut pas : ce qui est second ne peut pas acquitter ce qui est premier.</p><p>Rachi remarque que l'acquittement de la parperet ne va pas de soi : elle ne remplit pas le ventre, elle sert a achever le repas. Elle est pourtant absorbee.</p><p>Beit Chammai ajoutent une phrase de trois mots, <b>af lo ma'ase kedera</b>, pas meme le plat de marmite — une preparation de cereales cuites, plus nourrissante que la parperet. Le rattachement de cette phrase a l'une ou l'autre clause fera l'objet du segment suivant.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִיבַּעְיָא לְהוּ: בֵּית שַׁמַּאי אַרֵישָׁא פְּלִיגִי, אוֹ דִילְמָא אַסֵּיפָא פְּלִיגִי? דְּקָאָמַר תַּנָּא קַמָּא בֵּרַךְ עַל הַפַּת — פָּטַר אֶת הַפַּרְפֶּרֶת, וְכָל שֶׁכֵּן מַעֲשֵׂה קְדֵרָה. וְאָתֵי בֵּית שַׁמַּאי לְמֵימַר לָא מִיבַּעְיָא פַּרְפֶּרֶת דְּלָא פָּטְרָה לְהוּ פַּת, אֶלָּא אֲפִילּוּ מַעֲשֵׂה קְדֵרָה נָמֵי לָא פָּטְרָה. אוֹ דִילְמָא אַסֵּיפָא פְּלִיגִי, דְּקָתָנֵי: בֵּרַךְ עַל הַפַּרְפֶּרֶת — לֹא פָּטַר אֶת הַפַּת. פַּת הוּא דְּלָא פָּטַר אֲבָל מַעֲשֵׂה קְדֵרָה — פָּטַר. וְאָתוּ בֵּית שַׁמַּאי לְמֵימַר וַאֲפִילּוּ מַעֲשֵׂה קְדֵרָה נָמֵי לָא פָּטַר.</div>
+            <div class="fr"><p>On leur posa la question : Beit Chammai sont-ils en desaccord avec la premiere clause, ou bien avec la derniere ? Car le premier tana dit : s&#x27;il a beni sur le pain, il a acquitte la parperet — et a plus forte raison le plat de marmite ; et Beit Chammai viendraient dire : il ne suffit pas de dire que le pain n&#x27;acquitte pas la parperet, mais il n&#x27;acquitte meme pas le plat de marmite.</p><p>Ou bien sont-ils en desaccord avec la derniere clause, qui enseigne : s&#x27;il a beni sur la parperet, il n&#x27;a pas acquitte le pain — d&#x27;ou l&#x27;on deduit que le pain, il ne l&#x27;a pas acquitte, mais que le plat de marmite, il l&#x27;a acquitte ; et Beit Chammai viendraient dire : il n&#x27;acquitte meme pas le plat de marmite.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְכָל שֶׁכֵּן מַעֲשֵׂה קְדֵרָה</b> שֶׁהוּא לֶאֱכֹול לָזוּן מַמָּשׁ:</div>
+          <div class="glose-fr">Car il est fait pour etre mange et nourrir veritablement.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אִתְּמַר הֵבִיאוּ לְפָנָיו תְּאֵנִים וַעֲנָבִים בְּתוֹךְ הַסְּעוּדָה אָמַר רַב הוּנָא טְעוּנִין בְּרָכָה לִפְנֵיהֶם וְאֵין טְעוּנִים בְּרָכָה לְאַחֲרֵיהֶם וְכֵן אָמַר רַב נַחְמָן וְרַב שֵׁשֶׁת אָמַר טְעוּנִין בְּרָכָה בֵּין לִפְנֵיהֶם בֵּין לְאַחֲרֵיהֶם שֶׁאֵין לְךָ דָּבָר שֶׁטָּעוּן בְּרָכָה לְפָנָיו וְאֵין טָעוּן בְּרָכָה לְאַחֲרָיו אֶלָּא פַּת הַבָּאָה בְּכִיסָנִין בִּלְבַד וּפְלִיגָא דְּרַבִּי חִיָּיא דְּאָמַר רַבִּי חִייָּא פַּת פּוֹטֶרֶת כָּל מִינֵי מַאֲכָל וְיַיִן פּוֹטֵר כָּל מִינֵי מַשְׁקֶה וְאַף עַל גַּב דִּפְלִיגָא עָלֶיהָ בְּפַת בְּיַיִן לֵיכָּא דִּפְלִיג עָלֶיהָ וְהִלְכְתָא כְּוָותֵיהּ בְּיַיִן. אָמַר רַב פָּפָּא הִלְכְתָא דְּבָרִים הַבָּאִים מֵחֲמַת הַסְּעוּדָה בְּתוֹךְ הַסְּעוּדָה אֵין טְעוּנִין בְּרָכָה לֹא לִפְנֵיהֶם וְלֹא לְאַחֲרֵיהֶם שֶׁלֹּא מֵחֲמַת הַסְּעוּדָה בְּתוֹךְ הַסְּעוּדָה טְעוּנִין בְּרָכָה לִפְנֵיהֶם וְאֵין טְעוּנִין בְּרָכָה לְאַחֲרֵיהֶם וּלְאַחַר הַסְּעוּדָה טְעוּנִין בְּרָכָה בֵּין לִפְנֵיהֶם בֵּין לְאַחֲרֵיהֶם וקי&quot;ל כר&quot;פ. דְּבָרִים הַבָּאִים מֵחֲמַת הַסְּעוּדָה בְּתוֹךְ הַסְּעוּדָה פירש&quot;י כְּגוֹן בָּשָׂר וּפֵירוֹת וְכָל דָּבָר שֶׁהֵבִיאוּ לְלַפֵּת בָּהֶן אֶת הַפַּת אֵין טְעוּנִין בְּרָכָה לִפְנֵיהֶם מִשּׁוּם דְּהָווּ לְהוּ טְפֵילָה וְקָשֶׁה לְפֵירוּשׁוֹ מַאי קָא מַשְׁמַע לַן מַתְנִיתִין הִיא מְבָרֵךְ עַל הָעִיקָּר וּפוֹטֵר אֶת הַטְּפֵילָה בֵּירַךְ עַל הַפַּת פָּטַר אֶת הַפַּרְפֶּרֶת וְעוֹד קָשֶׁה הָא דְּפָרִיךְ בְּסָמוּךְ אִי הָכִי יַיִן נָמֵי נִפְטְרֵיהּ פַּת מַאי קַשְׁיָא לֵיהּ וַהֲלֹא כְּשֶׁשּׁוֹתֶה יַיִן אֵינוֹ טָפֵל לַפַּת וְאָנוּ בְּמִידִי דְּטָפֵל לַפַּת אַיְירֵי לפירש&quot;י וְאֵין לְפָרֵשׁ דְּפָרִיךְ לִיפְטְרֵיהּ פַּת כְּשֶׁשּׁוֹרֶה פִּתּוֹ בְּיַיִן דְּאִין הָכִי נָמֵי דְּוַדַּאי הַפַּת עִיקָּר וְאֵין לוֹמַר מִשּׁוּם דְּיַיִן בָּא לִשְׁרוֹת הָאֲכִילָה בְּמֵעָיו הָוֵי כְּאִילּוּ שׁוֹתֵהוּ עִם הַפַּת דְּמֵהֵיכָא פְּשִׁיטָא לֵיהּ כֻּולֵּי הַאי דְּמֵהַאי טַעְמָא הָוֵי כְּמוֹ דְּבָרִים שֶׁמְּלַפְּתִים בָּהֶם אֶת הַפַּת הִלְכָּךְ נִרְאֶה לְפָרֵשׁ דְּבָרִים הַבָּאִים מֵחֲמַת הַסְּעוּדָה בְּתוֹךְ הַסְּעוּדָה הַיְינוּ כְּגוֹן בָּשָׂר וְדָגִים וְיָרָק וְדַיְיסָא שֶׁרְגִילִין לִקְבֹּועַ עִיקַּר הַסְּעוּדָה עֲלֵיהֶם וְלֶאֱכֹול בָּהֶן אֶת הַפַּת הִלְכָּךְ אֲפִילּוּ אֲכָלָן בְּלֹא פַּת אֵין טְעוּנִין בְּרָכָה לֹא לִפְנֵיהֶם וְלֹא לְאַחֲרֵיהֶם כֵּיוָן דְּעִיקַּר הַסְּעוּדָה הֵם פּוֹטְרָן בִּרְכַּת הַפַּת וְכֵן בִּרְכַּת הַמָּזוֹן פּוֹטְרָן וְכֵן מַשְׁקִין הַבָּאִים בְּתוֹךְ הַסְּעוּדָה חֲשִׁיבִי בָּאִים מֵחֲמַת הַסְּעוּדָה לְפִי שֶׁאֵין בְּנֵי אָדָם רְגִילִין לֶאֱכֹול בְּלֹא שְׁתִיָּה וַחֲשִׁיבִי כְּעִיקָּר סְעוּדָה וְאֵין טְעוּנִין בְּרָכָה לִפְנֵיהֶם וּלְאַחֲרֵיהֶם חוּץ מִן הַיַּיִן הוֹאִיל וְגוֹרֵם בְּרָכָה לְעַצְמוֹ טָעוּן בְּרָכָה לְפָנָיו כְּדִתְנַן בְּמַתְנִיתִין אֲבָל לֹא לְאַחֲרָיו כִּדְמוֹכַח בִּשְׁמַעְתְּתָא דְּעַרְבֵי פְּסָחִים דַּף קג: בְּעֻובְדָּא דְּתַלְמִידֵי דְּרַב דְּחַד מִינַּייְהוּ בָּרֵיךְ אַכָּסָא קַמָּא וְאַכָּסָא דְּבִרְכְּתָא וּמְפָרֵשׁ טַעְמָא בְּפֶרֶק כִּיסּוּי הַדָּם דַּף פּוֹ מִשּׁוּם דְּבִרְכַּת הַמָּזוֹן הָוֵי הַפְסָקָה אַלְמָא דְּלָא בֵּירַךְ לְאַחַר הַיַּיִן שֶׁבְּתוֹךְ הַסְּעוּדָה דְּאִי בֵּירַךְ לְאַחֲרָיו לָמָּה לִי טַעְמָא מִשּׁוּם הַפְסָקָה דְּבִרְכַּת הַמָּזוֹן תִּיפּוֹק לֵיהּ מִשּׁוּם שֶׁבֵּירַךְ עַל הַיַּיִן שֶׁשָּׁתָה וְכֵן פֵּירֵשׁ בה&quot;ג דְּבָרִים הַבָּאִים מֵחֲמַת סְעוּדָה כְּגוֹן בִּשְׂרָא וּכְוָורֵי וְכָל מִינֵי בְּשׁוּלֵי דְּדַרְכַיְיהוּ לְמֵיכַל בְּהוּ רִיפְתָּא וְכֵן יַרְקֵי וּבוּצִינֵי אֵין טְעוּנִין בְּרָכָה לֹא לִפְנֵיהֶן וְלֹא לְאַחֲרֵיהֶן. שֶׁלֹּא מֵחֲמַת הַסְּעוּדָה בְּתוֹךְ הַסְּעוּדָה פירש&quot;י כְּגוֹן דַּיְיסָא כְּרוּב וּתְרָדִין שֶׁאֵינָן לְלַפֵּת וְהֵם לְמָזוֹן וּלְשֹׂובַע טְעוּנִין בְּרָכָה לִפְנֵיהֶם וְלֹא לְאַחֲרֵיהֶם וְלֹא יִתָּכֵן כְּלָל דְּעַל דַּייְסָא צָרִיךְ בְּרָכָה לְפָנָיו וְלֹא יִפָּטֵר בְּבִרְכַּת הַמּוֹצִיא דְּאֵין לְךָ מֵחֲמַת הַסְּעוּדָה יוֹתֵר מִזֶּה דַּהֲוָה עִיקַּר סְעוּדָה וְאָמְרִינַן נָמֵי לְקַמָּן בְּפִירְקִין (בְּרָכוֹת דַּף מב) בֵּירַךְ עַל הַפַּת פָּטַר אֶת הַפַּרְפֶּרֶת וכ&quot;ש מַעֲשֵׂה קְדֵרָה וְאָמְרִינַן לְעֵיל (בְּרָכוֹת דַּף לז.) וְאֵלּוּ הֵן מַעֲשֵׂה קְדֵרָה חִלְקָא טַרְגִּיס וְטִיסְנֵי דְּהַיְינוּ דַּייְסָא וְעוֹד הִקְשָׁה הָר&quot;ר יוֹסֵף זַ&quot;ל דִּלְעֵיל אָמְרִינַן דִּמְבָרֵךְ עַל הַצְּנוֹן וּפוֹטֵר אֶת הַזַּיִת מִשּׁוּם דִּצְנוֹן עִיקָּר כָּל שֶׁכֵּן הָכָא דְּפַת עִיקָּר וְאֵין לִדְחוֹת וְלוֹמַר דִּלְעֵיל מַייְרֵי שֶׁאָכַל אֶת הַצְּנוֹן וְהַזַּיִת יַחַד דְּלָא מַשְׁמַע הָכִי אֶלָּא שֶׁאָכַל זֶה אַחַר זֶה לְבַטֵּל מְרִירַת הַצְּנוֹן וְכֵן פֵּירֵשׁ בֶּעָרוּךְ דְּדַייְסָא אֵין טָעוּן בְּרָכָה לְפָנָיו וְלֹא לְאַחֲרָיו דְּמִמַּה נַפְשָׁךְ אִי חֲשִׁיבָא כְּנַהְמָא כִּדְאָמְרִינַן בֵּיצָה דַּף טז בַּבְלָאֵי טַפְשָׁאֵי דְּאָכְלִי נַהֲמָא בְּנַהֲמָא פַּת פּוֹטֶרֶת פַּת וְאִי לָא חֲשִׁיב כְּנַהְמָא הָווּ כִּשְׁאָר תַּבְשִׁיל דְּפַת פּוֹטְרָהּ. לְאַחַר הַסְּעוּדָה פירש&quot;י דְּבָרִים הָרְגִילִים לָבֹא לְאַחַר הַסְּעוּדָה כְּגוֹן פֵּירוֹת אֲפִילּוּ הֵבִיאוּ בְּתוֹךְ הַסְּעוּדָה שֶׁלֹּא מֵחֲמַת לִיפְתָּן טְעוּנִין בְּרָכָה לִפְנֵיהֶם דְּלָאו טְפֵילָה נִינְהוּ וּלְאַחֲרֵיהֶם דְּאֵין בִּרְכַּת הַמָּזוֹן פּוֹטַרְתָּן דְּלָאו מָזוֹן נִינְהוּ וְכֵן פֵּירֵשׁ בה&quot;ג דְּבָרִים הַבָּאִים לְאַחַר סְעוּדָה כְּגוֹן תַּמְרֵי וְרִמּוֹנֵי וּשְׁאָר מְגָדִים וְאַיְיתִינּוּן וְקָאֲכִיל לְהוּ בְּתוֹךְ הַסְּעוּדָה טְעוּנִין בְּרָכָה בֵּין לִפְנֵיהֶם בֵּין לְאַחֲרֵיהֶם וּלְפִי דִּבְרֵיהֶם פָּסַק רַב פָּפָּא כְּרַב שֵׁשֶׁת וְעוֹד כָּתַב בַּעַל ה&quot;ג מַה שֶׁחֲבִיצָא וְדַיְיסָא נִפְטָרִין בְּבִרְכַּת הַמָּזוֹן מִשּׁוּם דְּהָווּ מִין מָזוֹן אֲבָל תַּמְרֵי וְרִמּוֹנֵי וּשְׁאָר דְּבָרִים לָאו מִין מָזוֹן הוּא הִלְכָּךְ לֹא נִפְטְרוּ בְּבִרְכַּת הַמָּזוֹן וְקָשֶׁה לְפֵירוּשׁוֹ דְּתָלוּ הַטַּעַם מִשּׁוּם דְּמָזוֹן נִינְהוּ וּלְכָךְ נִפְטְרוּ בְּבִרְכַּת הַמָּזוֹן דְּאִי אִיתָא לְהַאי טַעְמָא הֲוָה לֵיהּ לַגְּמָרָא לְפָרוֹשֵׁי אֶלָּא דְּתָלֵי טַעַם הַפָּטוּר שֶׁבָּאִים בְּתוֹךְ הַסְּעוּדָה וְעוֹד כָּל מִילֵּי דְּזָייְנִי לְבַד מִמַּיִם שַׁייְכָא בְּהוּ בִּרְכַּת הַזָּן וּנְהִי דְּמָזוֹן לֹא שַׁייָּךְ בְּהוּ מ&quot;מ בִּרְכַּת הַזָּן וּבִרְכַּת הָאָרֶץ וּבִרְכַּת יְרוּשָׁלַיִם דְּעָדִיף טְפֵי מִמַּעְיָן שָׁלֹשׁ לְפָטְרָן וְעוֹד דְּפֵירוֹת דִּלְאַחַר סְעוּדָה אֵינוֹ שָׁוֶה לְמַה שֶׁאָמַר בְּתוֹךְ הַסְּעוּדָה שֶׁהֲרֵי גַּם בְּתוֹךְ הַסְּעוּדָה הֵן בָּאִין אֶלָּא שֶׁרְגִילִין לָבֹא לְאַחַר סְעוּדָה וְהָעִיקָּר חָסֵר מִן הַסֵּפֶר וְעוֹד בְּתוֹךְ הַסְּעוּדָה גַּבֵּי מֵחֲמַת סְעוּדָה אַמַּאי אִיצְטְרִיךְ לְאָמְרוֹ פְּשִׁיטָא שֶׁבְּתוֹךְ הַסְּעוּדָה אוֹכְלִין אוֹתָן כֵּיוָן דְּבָאִים לְלַפֵּת בָּהֶן וְעוֹד בָּשָׂר וְדָגִים וּבֵיצִים וּגְבִינָה וְכַיּוֹצֵא בָּהֶן שֶׁלֹּא בָּאוּ לְלַפֵּת אֶלָּא לֶאֱכֹול בִּפְנֵי עַצְמָם לֹא הִשְׁמִיעָנוּ רַב פָּפָּא מַה דִּינָם שֶׁהֲרֵי אֵינָם דּוֹמִים לֹא לְדָבָר הַבָּא בְּתוֹךְ הַסְּעוּדָה דְּהַיְינוּ מָזוֹן וְלֹא לְדָבָר הָרָגִיל אַחַר הַסְּעוּדָה דְּהַיְינוּ פֵּירוֹת דְּאֵלּוּ וַדַּאי רְגִילִים הֵן לָבֹא בְּתוֹךְ הַסְּעוּדָה וְאֵינָם מָזוֹן הִלְכָּךְ נִרְאֶה לְפָרֵשׁ דִּדְבָרִים הַבָּאִים שֶׁלֹּא מֵחֲמַת הַסְּעוּדָה כְּגוֹן תְּאֵנִים וַעֲנָבִים וְכָל מִינֵי פֵּירוֹת וּמִקְּרֵי שֶׁלֹּא מֵחֲמַת הַסְּעוּדָה לְפִי שֶׁאֵינָן כְּמוֹ בָּשָׂר וְדָגִים וּמִינִין מְלוּחִין שֶׁרְגִילִים לֶאֱכֹול וְלָבֹא לְעִיקַּר הַסְּעוּדָה לִפְנֵיהֶם טְעוּנִים בְּרָכָה לְפִי שֶׁבִּרְכַּת הַמּוֹצִיא אֵינָהּ פּוֹטַרְתָּן כֵּיוָן דְּלָאו מֵעִיקַּר סְעוּדָה הֵן וְלֹא לְאַחֲרֵיהֶם דְּבִרְכַּת הַמָּזוֹן פּוֹטֵר כָּל מַה שֶׁאָכְלוּ בְּתוֹךְ הַסְּעוּדָה וְהַיְינוּ כְּרַב הוּנָא וְרַב נַחְמָן וּדְלָא כְּרַב שֵׁשֶׁת. לְאַחַר הַסְּעוּדָה פֵּירוּשׁ דְּבָרִים שֶׁהִזְכַּרְנוּ לְמַעְלָה בֵּין הַבָּאִים מֵחֲמַת הַסְּעוּדָה בֵּין הַבָּאִים שֶׁלֹּא מֵחֲמַת הַסְּעוּדָה אִם הֱבִיאָן לְאַחַר הַסְּעוּדָה קֹודֶם בִּרְכַּת הַמָּזוֹן כִּי הָיוּ רְגִילִים בִּימֵיהֶם לְאַחַר גְּמַר סְעוּדָה וּכְבָר מָשְׁכוּ יְדֵיהֶם מִן הַפַּת שֶׁהָיוּ קוֹבְעִים עַצְמָם לֶאֱכֹול פֵּירוֹת וּפַרְפֶּרֶת וְלִשְׁתּוֹת יַיִן לְאַחַר הַמָּזוֹן וְהַיְינוּ דְּאָמְרִינַן בְּמָתְנֵי&#x27; בֵּירַךְ עַל הַיַּיִן שֶׁלִּפְנֵי הַמָּזוֹן פָּטַר אֶת הַיַּיִן שֶׁלְּאַחַר הַמָּזוֹן וְכֵן בֵּירַךְ עַל הַפַּרְפֶּרֶת שֶׁלִּפְנֵי הַמָּזוֹן פָּטַר אֶת הַפַּרְפֶּרֶת שֶׁלְּאַחַר הַמָּזוֹן הַיְינוּ לְאַחַר שֶׁסִּילֵּק הַמָּזוֹן קֹודֶם בהמ&quot;ז וְכֵיוָן שֶׁמָּשְׁכוּ יְדֵיהֶם מִן הַפַּת כָּל מַה שֶׁהֵבִיאוּ לְפָנָיו בֵּין דְּבָרִים הַבָּאִים מֵחֲמַת הַסְּעוּדָה בֵּין דְּבָרִים הַבָּאִים שֶׁלֹּא מֵחֲמַת הַסְּעוּדָה טְעוּנִים בְּרָכָה בֵּין לִפְנֵיהֶם בֵּין לְאַחֲרֵיהֶם דְּהַמּוֹצִיא וּבִרְכַּת הַמָּזוֹן אֵין פּוֹטְרִין אֶלָּא מַה שֶׁנֶּאֱכָל תּוֹךְ עִיקַּר הַסְּעוּדָה וּמַה שָׁפֵי&#x27; רַשְׁבָּ&quot;ם בְּפֶרֶק עַרְבֵי פְּסָחִים (פְּסָחִים דַּף קג:) דְּיַיִן שֶׁבְּתוֹךְ הַמָּזוֹן א&quot;צ בְּרָכָה לְאַחֲרָיו מִשּׁוּם דְּבִרְכַּת הַמָּזוֹן פּוֹטְרוֹ מִקַּל וָחֹומֶר הַשְׁתָּא בְּרָכָה אַחַת מֵעֵין שָׁלֹשׁ פּוֹטַרְתּוֹ כָּל שֶׁכֵּן ג&#x27; בְּרָכוֹת קַל וָחֹומֶר פְּרִיכָא הוּא דִּדְבָרִים הַבָּאִים מֵחֲמַת הַסְּעוּדָה לְאַחַר סְעוּדָה יוֹכִיחוּ דִּטְעוּנִין בְּרָכָה לְאַחֲרֵיהֶן וְאֵין בה&quot;מ פּוֹטַרְתָּן אֶלָּא הַייְנוּ טַעְמָא דְּאֵין טָעוּן בְּרָכָה לְאַחֲרָיו מִשּׁוּם דְּהָוֵי כִּדְבָרִים הַבָּאִים מֵחֲמַת הַסְּעוּדָה תּוֹךְ הַסְּעוּדָה וְאַף לְפָנָיו לֹא הָיָה טָעוּן בְּרָכָה אֶלָּא מִשּׁוּם דְּגוֹרֵם בְּרָכָה לְעַצְמוֹ:</div>
+          <div class="glose-fr">Il a ete dit : on a apporte devant lui des figues et des raisins au milieu du repas. Rav Houna dit : ils exigent une benediction avant eux et non apres eux ; ainsi a dit aussi Rav Nahman. Et Rav Chechet dit : ils exigent une benediction aussi bien avant eux qu&#x27;apres eux, car tu n&#x27;as rien qui exige une benediction avant lui sans en exiger apres lui, sinon le pain venant en kissanin. Et cela s&#x27;oppose a Rabbi Hiya, qui a dit : le pain acquitte toutes les especes d&#x27;aliments et le vin acquitte toutes les especes de boissons. Bien qu&#x27;on soit en desaccord avec lui pour le pain, personne ne le conteste pour le vin, et la halakha suit son avis pour le vin. Rav Papa a dit : la halakha est que les choses qui viennent a cause du repas, au milieu du repas, n&#x27;exigent de benediction ni avant elles ni apres elles ; celles qui ne viennent pas a cause du repas, au milieu du repas, exigent une benediction avant elles et non apres elles ; et celles qui viennent apres le repas exigent une benediction aussi bien avant elles qu&#x27;apres elles. Et nous tenons la halakha comme Rav Papa. « Les choses qui viennent a cause du repas, au milieu du repas » : Rachi explique qu&#x27;il s&#x27;agit par exemple de la viande, des fruits et de tout ce qu&#x27;on apporte pour en accompagner le pain ; elles n&#x27;exigent pas de benediction avant elles parce qu&#x27;elles sont accessoires. Cette explication fait difficulte : que nous apprendrait-elle ? C&#x27;est deja une michna — on benit sur le principal et l&#x27;on acquitte l&#x27;accessoire, et : s&#x27;il a beni sur le pain, il a acquitte la parperet. Autre difficulte : lorsque le Talmud objecte plus loin « s&#x27;il en est ainsi, que le pain acquitte aussi le vin », qu&#x27;y a-t-il la de difficile ? Quand on boit du vin, il n&#x27;est pas accessoire au pain, alors que, selon Rachi, nous traitons de ce qui est accessoire au pain. Et l&#x27;on ne peut pas expliquer que l&#x27;objection porte sur le cas ou l&#x27;on trempe son pain dans le vin, car alors il en irait effectivement ainsi, le pain etant assurement le principal. On ne peut pas dire non plus que, le vin venant faire descendre la nourriture dans les entrailles, ce serait comme s&#x27;il le buvait avec le pain : d&#x27;ou lui viendrait une telle evidence, que pour cette raison il serait comme les choses dont on accompagne le pain ? C&#x27;est pourquoi il parait qu&#x27;il faut expliquer ainsi : les choses qui viennent a cause du repas, au milieu du repas, ce sont par exemple la viande, le poisson, les legumes et la bouillie, sur lesquels on a coutume de fixer l&#x27;essentiel du repas et avec lesquels on mange le pain. Aussi, meme s&#x27;il les a mangees sans pain, elles n&#x27;exigent de benediction ni avant elles ni apres elles : puisqu&#x27;elles sont l&#x27;essentiel du repas, la benediction du pain les acquitte, et Birkat Hamazon les acquitte de meme. De meme, les boissons qui viennent au milieu du repas sont considerees comme venant a cause du repas, car on n&#x27;a pas coutume de manger sans boire ; elles comptent comme l&#x27;essentiel du repas et n&#x27;exigent de benediction ni avant elles ni apres elles — sauf le vin qui, puisqu&#x27;il fixe une benediction pour lui-meme, exige une benediction avant lui, comme l&#x27;enseigne notre michna, mais non apres lui, comme le prouve le passage d&#x27;Arve Pessahim (Pessahim 103b), dans l&#x27;episode des disciples de Rav dont l&#x27;un benit sur la premiere coupe et sur la coupe de la benediction ; la raison en est expliquee au chapitre Kissouy Hadam (Houlin 86b) : parce que Birkat Hamazon constitue une interruption. Il en ressort qu&#x27;il n&#x27;avait pas beni apres le vin bu au milieu du repas, car s&#x27;il avait beni apres lui, a quoi bon la raison de l&#x27;interruption par Birkat Hamazon ? Il aurait suffi de dire qu&#x27;il avait deja beni sur le vin qu&#x27;il avait bu. Ainsi a explique le Halakhot Guedolot : les choses qui viennent a cause du repas, comme la viande, le poisson et tous les mets cuits qu&#x27;on a coutume de manger avec du pain, ainsi que les legumes et les courges, n&#x27;exigent de benediction ni avant elles ni apres elles. « Ce qui ne vient pas a cause du repas, au milieu du repas » : Rachi explique par exemple la bouillie, le chou et les bettes, qui ne servent pas d&#x27;accompagnement et sont la pour nourrir et rassasier ; elles exigent une benediction avant elles et non apres elles. Cela ne se peut nullement : que la bouillie exige une benediction avant elle et ne soit pas acquittee par la benediction de hamotsi, alors qu&#x27;il n&#x27;y a rien qui vienne davantage a cause du repas, etant l&#x27;essentiel meme du repas. Nous disons aussi dans notre chapitre (Berakhot 42b) : s&#x27;il a beni sur le pain, il a acquitte la parperet, et a plus forte raison le plat de marmite ; et nous avons dit plus haut (Berakhot 37a) : voici ce qu&#x27;est le plat de marmite — halka, targuis et tissani, c&#x27;est-a-dire la bouillie. Rabbi Yossef a souleve une autre difficulte : plus haut nous disons qu&#x27;on benit sur le radis et qu&#x27;on acquitte l&#x27;olive, parce que le radis est le principal ; a plus forte raison ici, ou le pain est le principal. Et l&#x27;on ne peut ecarter cela en disant que, plus haut, il s&#x27;agit du cas ou il a mange le radis et l&#x27;olive ensemble, car ce n&#x27;est pas ainsi que le texte s&#x27;entend : il les a manges l&#x27;un apres l&#x27;autre, pour attenuer l&#x27;acrete du radis. Ainsi a explique le Aroukh : la bouillie n&#x27;exige de benediction ni avant elle ni apres elle. Car de toute facon : si elle compte comme du pain — comme nous le disons dans Betsa (16a), « Babyloniens stupides qui mangent du pain avec du pain » —, alors du pain acquitte du pain ; et si elle ne compte pas comme du pain, elle est comme les autres mets cuits, que le pain acquitte. « Apres le repas » : Rachi explique qu&#x27;il s&#x27;agit des choses qu&#x27;on a coutume d&#x27;apporter apres le repas, comme les fruits ; meme s&#x27;il les a apportees au milieu du repas sans que ce soit pour accompagner le pain, elles exigent une benediction avant elles, n&#x27;etant pas accessoires, et apres elles, car Birkat Hamazon ne les acquitte pas, n&#x27;etant pas des aliments nourrissants. Ainsi a explique le Halakhot Guedolot : les choses qui viennent apres le repas, comme les dattes, les grenades et les autres fruits de choix, si on les a apportees et qu&#x27;on les mange au milieu du repas, exigent une benediction avant elles et apres elles ; selon eux, Rav Papa aurait tranche comme Rav Chechet. L&#x27;auteur du Halakhot Guedolot a encore ecrit que la havitsa et la bouillie sont acquittees par Birkat Hamazon parce qu&#x27;elles sont de la categorie des aliments nourrissants, tandis que les dattes, les grenades et les autres choses n&#x27;en sont pas et ne sont donc pas acquittees par Birkat Hamazon. Cette explication fait difficulte : ils font dependre la raison de ce qu&#x27;elles sont des aliments nourrissants, et c&#x27;est pour cela qu&#x27;elles seraient acquittees par Birkat Hamazon ; or si cette raison etait la bonne, la guemara aurait du l&#x27;expliciter. Elle fait plutot dependre l&#x27;exemption du fait qu&#x27;elles viennent au milieu du repas. De plus, tout ce qui nourrit, hormis l&#x27;eau, releve de la benediction Hazan ; et meme si la categorie d&#x27;aliment nourrissant ne leur convient pas, la benediction Hazan, celle de la Terre et celle de Jerusalem, qui valent mieux que la me&#x27;ein chaloch, devraient les acquitter. De plus, les fruits d&#x27;apres le repas ne correspondent pas a ce qui a ete dit du milieu du repas, puisqu&#x27;ils viennent eux aussi au milieu du repas, si ce n&#x27;est qu&#x27;on a coutume de les apporter apres ; l&#x27;essentiel manquerait alors au texte. De plus, a propos de ce qui vient a cause du repas, pourquoi fallait-il preciser « au milieu du repas » ? Il va de soi qu&#x27;on les mange au milieu du repas, puisqu&#x27;elles viennent pour accompagner le pain. De plus, la viande, le poisson, les oeufs, le fromage et leurs semblables, qui ne viennent pas pour accompagner mais pour etre manges pour eux-memes : Rav Papa ne nous aurait pas appris quelle est leur regle, car ils ne ressemblent ni a ce qui vient au milieu du repas, c&#x27;est-a-dire l&#x27;aliment nourrissant, ni a ce qu&#x27;on a coutume d&#x27;apporter apres le repas, c&#x27;est-a-dire les fruits ; eux viennent assurement au milieu du repas et ne sont pas des aliments nourrissants. C&#x27;est pourquoi il parait qu&#x27;il faut expliquer ainsi : les choses qui ne viennent pas a cause du repas, ce sont par exemple les figues, les raisins et toutes les especes de fruits ; on les appelle ainsi parce qu&#x27;elles ne sont pas comme la viande, le poisson et les mets sales, qu&#x27;on a coutume de manger et qui viennent constituer l&#x27;essentiel du repas. Elles exigent une benediction avant elles, car la benediction de hamotsi ne les acquitte pas, n&#x27;etant pas de l&#x27;essentiel du repas ; et non apres elles, car Birkat Hamazon acquitte tout ce qu&#x27;on a mange au milieu du repas. C&#x27;est l&#x27;avis de Rav Houna et de Rav Nahman, et non celui de Rav Chechet. « Apres le repas » : cela vise les choses mentionnees plus haut, tant celles qui viennent a cause du repas que celles qui n&#x27;en viennent pas, s&#x27;il les a apportees apres le repas, avant Birkat Hamazon — comme on avait coutume de faire de leur temps, une fois le repas acheve et les mains deja retirees du pain, en s&#x27;installant a manger des fruits et de la parperet et a boire du vin apres le repas. C&#x27;est en ce sens que notre michna dit : s&#x27;il a beni sur le vin d&#x27;avant le repas, il a acquitte le vin d&#x27;apres le repas ; et de meme, s&#x27;il a beni sur la parperet d&#x27;avant le repas, il a acquitte la parperet d&#x27;apres le repas — c&#x27;est-a-dire apres qu&#x27;on a desservi le repas, avant Birkat Hamazon. Et du moment qu&#x27;ils ont retire leurs mains du pain, tout ce qu&#x27;on apporte devant lui, qu&#x27;il s&#x27;agisse de choses venant a cause du repas ou non, exige une benediction avant elles et apres elles, car hamotsi et Birkat Hamazon n&#x27;acquittent que ce qui a ete mange dans le corps du repas. Quant a l&#x27;explication du Rachbam au chapitre Arve Pessahim (Pessahim 103b), selon laquelle le vin bu au milieu du repas n&#x27;exige pas de benediction apres lui parce que Birkat Hamazon l&#x27;acquitte par un kal va-homer — si une seule benediction me&#x27;ein chaloch l&#x27;acquitte, a plus forte raison les trois benedictions —, ce kal va-homer se refute : les choses venant a cause du repas mais apportees apres le repas le prouvent, elles qui exigent une benediction apres elles sans que Birkat Hamazon les acquitte. La raison est plutot qu&#x27;il n&#x27;exige pas de benediction apres lui parce qu&#x27;il est comme les choses qui viennent a cause du repas au milieu du repas ; et il n&#x27;aurait meme pas exige de benediction avant lui, sinon parce qu&#x27;il fixe une benediction pour lui-meme.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Toute la difficulte tient au fait que la phrase de Beit Chammai peut se greffer sur l'une ou l'autre des deux clauses precedentes, avec un sens chaque fois different.</p><p>Sur la <b>premiere clause</b> : le premier tana dirait que le pain acquitte la parperet, et a plus forte raison le plat de marmite, qui nourrit veritablement. Beit Chammai restreindraient alors la portee de hamotsi, jusqu'a lui refuser meme le plat de marmite.</p><p>Sur la <b>derniere clause</b> : le premier tana dirait que la benediction de la parperet n'acquitte pas le pain, ce dont on deduit qu'elle acquitte tout de meme le plat de marmite. Beit Chammai supprimeraient cette deduction. Dans les deux lectures ils sont severes, mais l'objet de leur severite change entierement.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 348" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="348" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Beit Chammai : sur quelle clause portent-ils ?</text>
+  <text x="380" y="42" text-anchor="middle" font-size="9.6" fill="#57534e">Les memes mots, pas meme la reciter, produisent deux enseignements opposes.</text>
+
+  <rect x="30" y="56" width="700" height="42" rx="6" fill="#f5f5f4" stroke="#78716c" stroke-width="1.2"/>
+  <text x="44" y="74" font-size="9.2" fill="#292524">Michna : benediction sur le pain -- elle acquitte la parperet. Benediction sur la parperet -- elle n'acquitte pas le pain.</text>
+  <text x="44" y="90" font-size="9.2" font-weight="700" fill="#1c1917">Beit Chammai : pas meme le plat de marmite (ma'ase kedera).</text>
+
+  <rect x="30" y="116" width="336" height="176" rx="7" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.4"/>
+  <text x="198" y="138" text-anchor="middle" font-size="10.6" font-weight="700" fill="#1e3a8a">Lecture 1 : ils visent la premiere clause</text>
+  <text x="46" y="160" font-size="8.8" fill="#292524">Le premier tana : le pain acquitte la parperet,</text>
+  <text x="46" y="176" font-size="8.8" fill="#292524">et a plus forte raison le plat de marmite,</text>
+  <text x="46" y="192" font-size="8.8" fill="#292524">qui nourrit veritablement.</text>
+  <text x="46" y="216" font-size="8.8" fill="#292524">Beit Chammai renversent : le pain n'acquitte</text>
+  <text x="46" y="232" font-size="8.8" fill="#292524">meme pas le plat de marmite.</text>
+  <text x="46" y="262" font-size="9.2" font-weight="700" fill="#1d4ed8">Ils restreignent la portee de hamotsi.</text>
+  <text x="46" y="280" font-size="8.6" fill="#292524">Objet du desaccord : le pain.</text>
+
+  <rect x="394" y="116" width="336" height="176" rx="7" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+  <text x="562" y="138" text-anchor="middle" font-size="10.6" font-weight="700" fill="#7c2d12">Lecture 2 : ils visent la derniere clause</text>
+  <text x="410" y="160" font-size="8.8" fill="#292524">Le premier tana : la parperet n'acquitte pas le</text>
+  <text x="410" y="176" font-size="8.8" fill="#292524">pain -- donc, par deduction, elle acquitte</text>
+  <text x="410" y="192" font-size="8.8" fill="#292524">bien le plat de marmite.</text>
+  <text x="410" y="216" font-size="8.8" fill="#292524">Beit Chammai renversent : elle n'acquitte pas</text>
+  <text x="410" y="232" font-size="8.8" fill="#292524">meme le plat de marmite.</text>
+  <text x="410" y="262" font-size="9.2" font-weight="700" fill="#b45309">Ils restreignent la portee de la parperet.</text>
+  <text x="410" y="280" font-size="8.6" fill="#292524">Objet du desaccord : la parperet.</text>
+
+  <rect x="264" y="306" width="232" height="30" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.3"/>
+  <text x="380" y="326" text-anchor="middle" font-size="10.6" font-weight="700" fill="#5b21b6">Teikou : la question reste ouverte</text>
+</svg></div><div class="svg-cap">Les deux greffes possibles de la phrase de Beit Chammai, et les deux enseignements opposes qui en resultent.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תֵּיקוּ.</div>
+            <div class="fr"><p>Teikou (la question reste sans reponse).</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le Talmud ne dispose d'aucun element permettant de rattacher la phrase de Beit Chammai a l'une des deux clauses plutot qu'a l'autre, et laisse la question ouverte. En pratique, l'incertitude porte sur un point etroit : le statut du plat de marmite au regard de la benediction de la parperet.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָיוּ יוֹשְׁבִין כָּל אֶחָד וְאֶחָד כו׳. הֵסֵבּוּ — אִין, לֹא הֵסֵבּוּ — לֹא. וּרְמִינְהוּ: עֲשָׂרָה שֶׁהָיוּ הוֹלְכִים בַּדֶּרֶךְ, אַף עַל פִּי שֶׁכֻּולָּם אוֹכְלִים מִכִּכָּר אֶחָד — כָּל אֶחָד וְאֶחָד מְבָרֵךְ לְעַצְמוֹ. יָשְׁבוּ לֶאֱכֹול, אַף עַל פִּי שֶׁכָּל אֶחָד וְאֶחָד אוֹכֵל מִכִּכָּרוֹ — אֶחָד מְבָרֵךְ לְכֻולָּם. קָתָנֵי ״יָשְׁבוּ״ אַף עַל פִּי שֶׁלֹּא הֵסַבּוּ!</div>
+            <div class="fr"><p>« S&#x27;ils etaient assis, chacun... » : s&#x27;ils se sont installes a table, oui ; s&#x27;ils ne se sont pas installes, non. Et l&#x27;on oppose : dix personnes qui marchaient en chemin, meme si toutes mangent d&#x27;un seul pain, chacune benit pour elle-meme ; s&#x27;ils se sont assis pour manger, meme si chacun mange de son propre pain, un seul benit pour tous.</p><p>Il enseigne donc « s&#x27;ils se sont assis », bien qu&#x27;ils ne se soient pas installes.</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">הֵסַבּוּ אִין לֹא הֵסַבּוּ לָא. תֵּימַהּ אַמַּאי מַקְשֶׁה מִדִּיּוּקָא וְתִקְשֵׁי לֵיהּ מֵרֵישָׁא בְּהֶדְיָא דְּקָתָנֵי הָיוּ יוֹשְׁבִים מְבָרֵךְ כָּל אֶחָד לְעַצְמוֹ וְי&quot;ל דְּאִי מֵרֵישָׁא הֲוָה אֲמִינָא שֶׁיָּשְׁבוּ בִּשְׁבִיל עֵסֶק אַחֵר שֶׁלֹּא הָיָה דַּעְתָּם מִתְּחִלָּה לֶאֱכֹול אֲבָל אִם יָשְׁבוּ אַדַּעְתָּא לֶאֱכֹול אֲפִילּוּ בְּלֹא הֲסִבָּה נָמֵי מְהַנְּיָא: עֲשָׂרָה בְּנֵי אָדָם שֶׁהָיוּ מְהַלְּכִין כו&#x27; נִיזֵּיל וְנֵיכוּל לַחְמָא כו&#x27; כְּיָשְׁבוּ וְהֵסֵבּוּ דָּמְיָא. וְהַשְׁתָּא נִיחָא הָא דְּפָרֵישׁ בְּמָתְנֵי&#x27; דְּמַיְירֵי בֵּין בְּבִרְכַּת הַמּוֹצִיא בֵּין בְּבִרְכַּת הַמָּזוֹן כִּדְמַשְׁמַע הָכָא מִתּוֹךְ הַבָּרַיְיתָא דַּעֲשָׂרָה בְּנֵי אָדָם וְכוּ&#x27; וא&quot;ת אַמַּאי הִמְתִּינוּ לְמִיבְעֵי עַד בִּרְכַּת הַמָּזוֹן וְהֵיאַךְ בֵּרְכוּ עַל הַפַּת מִתְּחִלָּה וי&quot;ל שֶׁמָּא מַיְירֵי דְּיָשְׁבוּ לֶאֱכֹול זֶה אַחַר זֶה וּבֵרַךְ כָּל אֶחָד לְעַצְמוֹ הַמּוֹצִיא:</div>
+          <div class="glose-fr">Il y a lieu de s&#x27;etonner : pourquoi objecter a partir d&#x27;une deduction ? Que l&#x27;on objecte directement depuis la premiere clause, qui enseigne : s&#x27;ils etaient assis, chacun benit pour lui-meme. On peut repondre : de la premiere clause j&#x27;aurais pu dire qu&#x27;ils s&#x27;etaient assis pour une autre occupation, sans avoir eu au depart l&#x27;intention de manger ; mais s&#x27;ils se sont assis dans l&#x27;intention de manger, meme sans installation a table cela suffit. — « Dix hommes qui marchaient... allons manger du pain... » : c&#x27;est comme s&#x27;ils s&#x27;etaient assis et installes. On comprend des lors ce qui a ete explique dans notre michna, qu&#x27;elle traite aussi bien de la benediction de hamotsi que de Birkat Hamazon, comme il ressort ici de la braita des dix hommes. Et si l&#x27;on demande : pourquoi ont-ils attendu Birkat Hamazon pour poser la question, et comment avaient-ils beni sur le pain au depart ? On peut repondre qu&#x27;il s&#x27;agit peut-etre du cas ou ils se sont assis pour manger l&#x27;un apres l&#x27;autre, chacun ayant recite hamotsi pour lui-meme.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>עֲשָׂרָה בְּנֵי אָדָם שֶׁהָיוּ מְהַלְּכִין כו&#x27; נִיזֵּיל וְנֵיכוּל לַחְמָא כו&#x27; כְּיָשְׁבוּ וְהֵסֵבּוּ דָּמְיָא</b> וְהַשְׁתָּא נִיחָא הָא דְּפָרֵישׁ בְּמָתְנֵי&#x27; דְּמַייְרֵי בֵּין בְּבִרְכַּת הַמּוֹצִיא בֵּין בְּבִרְכַּת הַמָּזוֹן כִּדְמַשְׁמַע הָכָא מִתּוֹךְ הַבָּרַיְיתָא דַּעֲשָׂרָה בְּנֵי אָדָם וְכוּ&#x27; וא&quot;ת אַמַּאי הִמְתִּינוּ לְמִיבְעֵי עַד בִּרְכַּת הַמָּזוֹן וְהֵיאַךְ בֵּרְכוּ עַל הַפַּת מִתְּחִלָּה וי&quot;ל שֶׁמָּא מַיְירֵי דְּיָשְׁבוּ לֶאֱכֹול זֶה אַחַר זֶה וּבֵרַךְ כָּל אֶחָד לְעַצְמוֹ הַמּוֹצִיא:</div>
+          <div class="glose-fr">C&#x27;est comme s&#x27;ils s&#x27;etaient assis et installes. On comprend des lors ce qui a ete explique dans notre michna, qu&#x27;elle traite aussi bien de la benediction de hamotsi que de Birkat Hamazon, comme il ressort ici de la braita des dix hommes. Et si l&#x27;on demande : pourquoi ont-ils attendu Birkat Hamazon pour poser la question, et comment avaient-ils beni sur le pain au depart ? On peut repondre qu&#x27;il s&#x27;agit peut-etre du cas ou ils se sont assis pour manger l&#x27;un apres l&#x27;autre, chacun ayant recite hamotsi pour lui-meme.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">וְהוּא אוֹמֵר עַל הַמֻּוגְמָר אָמַר רַבָּה אָמַר ר&#x27; יִרְמְיָה מֵאֵימָתַי מְבָרְכִין עַל הַמֻּוגְמָר מִשֶּׁתַּעֲלֶה תִּמְרָתוֹ א&quot;ר חִסְדָּא עַל הַמֻּוגְמָרוֹת כֻּולָּן מְבָרְכִין עֲלֵיהֶם בּוֹרֵא עֲצֵי בְּשָׂמִים חוּץ ממוש&quot;ק דְּמִין חַיָּה הִיא שֶׁמְּבָרְכִים עָלָיו בּוֹרֵא מִינֵי בְּשָׂמִים י&quot;א שהמוש&quot;ק הוּא זֵיעַת חַיָּה וְנָכוֹן יוֹתֵר שֶׁחַיָּה יְדוּעָה הִיא שֶׁיֵּשׁ לָהּ חֲטוֹטֶרֶת בְּצַוָּארָהּ וּמִתְקַבֵּץ שָׁם תְּחִלָּה כְּעֵין דָּם וְאַחַר כָּךְ חוֹזֵר וְנַעֲשָׂה מוש&quot;ק והר&quot;ז הַלֵּוִי זַ&quot;ל הָיָה אוֹסֵר לְאָכְלוֹ מִפְּנֵי חֲשַׁשׁ דָּם וה&quot;ר יוֹנָה זַ&quot;ל פִּי&#x27; דְּאֶפְשָׁר לִיתֵּן בּוֹ טַעַם לְהַתִּיר וְלוֹמַר דְּפִירְשָׁא בְּעָלְמָא הוּא אע&quot;פ שֶׁמִּתְּחִלָּה הָיָה דָּם לָא חָייְשִׁינַן לְהָכִי דְּבָתַר הַשְׁתָּא אָזְלִינַן שֶׁהֲרֵי הַדְּבַשׁ אִם נָפַל בּוֹ חֲתִיכָה שֶׁל אִיסּוּר ואע&quot;ג שֶׁהָאִיסּוּר נִימּוֹחַ בְּתוֹךְ הַדְּבַשׁ כֵּיוָן שֶׁדֶּרֶךְ הַדְּבַשׁ לְהַחֲזִיר הַדָּבָר הַנּוֹפֵל לְתוֹכוֹ דְּבַשׁ כְּמוֹ דְּבַשׁ דָּיְינִינַן לֵיהּ וּמֻותָּר הָכָא נָמֵי אע&quot;פ שֶׁמִּתְּחִלָּה הָיָה דָּם כֵּיוָן דְּיָצָא מִתּוֹרַת דָּם בָּתַר הַשְׁתָּא אָזְלִינַן ואע&quot;פ שֶׁנּוֹתֵן טַעַם לְשֶׁבַח בַּתַּבְשִׁיל וְנִרְאֶה דְּהָא אֲפִילּוּ רְאָיָיתוֹ צְרִיכָה רְאָיָה:</div>
+          <div class="glose-fr">« Et c&#x27;est lui qui recite sur le mougmar » : Rabba a dit au nom de Rabbi Yirmeya : a partir de quand benit-on sur le mougmar ? Des que sa colonne de fumee monte. Rav Hisda a dit : sur tous les encens on recite « bore atse vessamim », a l&#x27;exception du musc, qui provient d&#x27;une espece animale et sur lequel on recite « bore mine vessamim ». Certains disent que le musc est la sueur d&#x27;un animal ; il est plus exact de dire qu&#x27;il s&#x27;agit d&#x27;un animal connu, portant une poche au cou, ou s&#x27;amasse d&#x27;abord une matiere semblable a du sang, laquelle devient ensuite du musc. Rabbi Zerahia Halevi l&#x27;interdisait a la consommation, par crainte du sang. Rabbenou Yona a explique qu&#x27;on peut donner une raison de le permettre : ce n&#x27;est la qu&#x27;une secretion, et bien que ce fut du sang au depart, nous ne nous en soucions pas, car on suit l&#x27;etat present. En effet, s&#x27;il tombe dans du miel un morceau d&#x27;interdit, bien que l&#x27;interdit s&#x27;y dissolve, puisque le miel a pour propriete de transformer en miel ce qui y tombe, nous le jugeons comme du miel et il est permis. Il en va de meme ici : bien que ce fut du sang au depart, puisqu&#x27;il est sorti de la categorie du sang, on suit l&#x27;etat present, et cela meme s&#x27;il donne du gout au mets. Il parait toutefois que sa preuve elle-meme demande a etre prouvee.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">שְׁלֹשָׁה שֶׁאָכְלוּ כְּאַחַת חַייָּבִין לְזַמֵּן אָכַל דְּמַאי וּמַעֲשֵׂר רִאשׁוֹן שֶׁנִּיטְּלָה תְּרוּמָתוֹ מַעֲשֵׂר שֵׁנִי וְהֶקְדֵּשׁ שֶׁנִּפְדּוּ וְהַשַּׁמָּשׁ שֶׁאָכַל כְּזַיִת וְהַכּוּתִי מְזַמְּנִין עָלָיו אָכַל טֶבֶל וּמַעֲשֵׂר רִאשׁוֹן שֶׁלֹּא נִיטְּלָה תְּרוּמָתוֹ מַעֲשֵׂר שֵׁנִי וְהֶקְדֵּשׁ שֶׁלֹּא נִפְדּוּ וְהַשַּׁמָּשׁ שֶׁאָכַל פָּחוֹת מִכַּזַּיִת וְהָעַכּוּ&quot;ם אֵין מְזַמְּנִין עֲלֵיהֶם נָשִׁים וַעֲבָדִים וּקְטַנִּים אֵין מְזַמְּנִין עֲלֵיהֶם וְעַד כַּמָּה מְזַמְּנִין עַד כְּזַיִת ר&#x27; יְהוּדָה אוֹמֵר עַד כְּבֵיצָה. שְׁלֹשָׁה שֶׁאָכְלוּ כְּאַחַת כָּתַב ה&quot;ר יוֹנָה זַ&quot;ל דְּמַיְירֵי שֶׁקָּבְעוּ עַצְמָן בְּיַחַד מִתְּחִלָּה לְבִרְכַּת הַמּוֹצִיא לְדִידְהוּ בַּהֲסִיבָּה וּלְדִידַן בִּישִׁיבָה אָז אֵינָם רַשָּׁאִין לֵיחָלֵק אֲבָל אִם לֹא נִקְבְּעוּ יַחַד בְּבִרְכַּת הַמּוֹצִיא רַשָּׁאִין לֵיחָלֵק וְדִקְדֵּק זֶה מֵהָא דְּרֵישׁ פֶּרֶק כֵּיצַד מְבָרְכִין (בְּרָכוֹת דַּף מב:) הֵסֵיבּוּ אֶחָד מְבָרֵךְ לְכֻולָּן וְדָייְקִינַן הֵסֵיבּוּ אִין לֹא הֵסֵיבּוּ לָא וּרְמִינְהוּ עֲשָׂרָה בְּנֵי אָדָם שֶׁהָיוּ מְהַלְּכִין בְּדֶרֶךְ אע&quot;פ שֶׁאוֹכְלִים מִכִּכָּר אֶחָד כָּל אֶחָד וְאֶחָד מְבָרֵךְ לְעַצְמוֹ יָשְׁבוּ אע&quot;פ שֶׁכָּל אֶחָד אוֹכֵל מִכִּכָּרוֹ אֶחָד מְבָרֵךְ לְכֻולָּן קָתָנֵי יָשְׁבוּ אע&quot;פ שֶׁלֹּא הֵסֵבּוּ וּמוּקֵי לָהּ רַב נַחְמָן כְּגוֹן דְּאָמְרִי נֵיזִיל וְנֵיכוֹל נַהְמָא בְּדֻוכְתָּא פְּלוֹנִית דְּהָוֵי כְּמוֹ הֵסֵבּוּ וְהַאי בָּרַיְיתָא בבהמ&quot;ז אַייְרֵי דְּקָתָנֵי בָּהּ בְּהֶדְיָא בִּירוּשַׁלְמִי יָשְׁבוּ וְאָכְלוּ וְאִם אִיתָא דְּלָא בָּעוּ קְבִיעוּת לְזִימּוּן אַמַּאי אִיצְטְרִיךְ רַב נַחְמָן לְאוֹקְמָא כְּשֶׁקָּבְעוּ מָקוֹם תִּיפּוֹק לֵיהּ מִכֵּיוָן שֶׁאָכְלוּ כְּאֶחָד קוֹבַעְתָּן זוֹ הָאֲכִילָה אֶלָּא וַדַּאי קְבִיעוּת מִתְּחִלָּה הוּא שֶׁמְּחַיְּיבָן בְּזִימּוּן וְעוֹד הֵבִיא רְאָיָה מֵהָא דִּתְנַן וְהַשַּׁמָּשׁ שֶׁאָכַל כַּזַּיִת מִצְטָרֵף מָה חִידּוּשׁ יֵשׁ בַּשֶּׁמֶשׁ יוֹתֵר מִבְּאַחֵר אֶלָּא וַדַּאי אַשְׁמְעִינַן אע&quot;פ שֶׁשְּׁאָר בְּנֵי אָדָם אֵין מִצְטָרְפִין אֶלָּא בִּישִׁיבַת קֶבַע הַשַּׁמָּשׁ מִצְטָרֵף בְּלֹא יְשִׁיבַת קֶבַע לְפִי שֶׁדֶּרֶךְ אֲכִילָתוֹ בְּכָךְ ול&quot;נ כְּדִבְרֵי הַמְפָרְשִׁים אע&quot;פ שֶׁלֹּא בֵּרְכוּ הַמּוֹצִיא בְּיַחַד אֶלָּא אַחַ&quot;כּ נִקְבְּעוּ בַּאֲכִילָה יַחַד נִקְבְּעוּ לְזִימּוּן וְאֵינָן רַשָּׁאִין לֵיחָלֵק וּמַה שֶׁהֵבִיא רְאָיָה מֵהַהִיא דְּכֵיצַד מְבָרְכִין לָאו רְאָיָה הִיא דְּשָׁאנֵי הָתָם דְּאִי לֹא אָמְרוּ נִיזּוֹל וְנֵיכוּל נַהְמָא בְּדֻוכְתָּא פְּלוֹנִית הָיוּ מִתְּחִלַּת הַסְּעוּדָה עַד סוֹפָהּ בְּלֹא קֶבַע וְלֹא הָיָה הָאֶחָד יָכוֹל לְהוֹצִיא חֲבֵירוֹ אֲבָל הֵסֵבּוּ מִקְצָתָן תְּחִלָּה וּבָא הַשְּׁלִישִׁי וְהֵסֵב עִמָּהֶם אַחַר שֶׁהִתְחִילוּ הָרִאשׁוֹנִים לֶאֱכֹול וּלְדִידַן אַפֵּי&#x27; בִּישִׁיבָה כֵּיוָן שֶׁהֵם קְבוּעִים יַחַד בִּגְמַר אֲכִילָה חַייָּבִין לִזְמַן וְכֵן הַהִיא דְּשַׁמָּשׁ אָדָם אַחֵר שֶׁהָיָה אוֹכֵל כְּעֵין הַשַּׁמָּשׁ לֹא הָיָה מִצְטָרֵף כֵּיוָן דְּאֵינוֹ קֶבַע:</div>
+          <div class="glose-fr">Trois personnes qui ont mange ensemble sont tenues au zimoun. Celui qui a mange du demai, du maasser richon dont la terouma a ete prelevee, du maasser cheni ou du hekdech rachetes, le serviteur qui a mange l&#x27;equivalent d&#x27;un kazayit, ainsi que le Kouti : on les compte pour le zimoun. Celui qui a mange du tevel, du maasser richon dont la terouma n&#x27;a pas ete prelevee, du maasser cheni ou du hekdech non rachetes, le serviteur qui a mange moins d&#x27;un kazayit, et l&#x27;idolatre : on ne les compte pas. Les femmes, les esclaves et les mineurs : on ne les compte pas. Et jusqu&#x27;a quelle quantite compte-t-on ? Jusqu&#x27;a un kazayit ; Rabbi Yehouda dit : jusqu&#x27;a un kabetsa. « Trois personnes qui ont mange ensemble » : Rabbenou Yona a ecrit qu&#x27;il s&#x27;agit du cas ou ils se sont fixes ensemble des le depart pour la benediction de hamotsi — pour eux par l&#x27;installation a table, pour nous par le fait d&#x27;etre assis ensemble ; alors ils n&#x27;ont pas le droit de se separer. Mais s&#x27;ils ne se sont pas fixes ensemble a la benediction de hamotsi, ils ont le droit de se separer. Il l&#x27;a deduit de notre passage, au debut du chapitre Keitsad Mevarekhin (Berakhot 42b) : s&#x27;ils se sont installes, un seul benit pour tous ; d&#x27;ou nous deduisons : installes, oui, non installes, non. Et l&#x27;on oppose : dix hommes qui marchaient en chemin, meme s&#x27;ils mangent d&#x27;un seul pain, chacun benit pour lui-meme ; s&#x27;ils se sont assis, meme si chacun mange de son propre pain, un seul benit pour tous — il enseigne donc « s&#x27;ils se sont assis », bien qu&#x27;ils ne se soient pas installes. Rav Nahman l&#x27;etablit dans le cas ou ils ont dit « allons manger du pain a tel endroit », ce qui equivaut a s&#x27;etre installes. Or cette braita traite de Birkat Hamazon, comme il est dit explicitement dans le Talmud de Jerusalem : ils se sont assis et ont mange. Et s&#x27;il etait vrai que le zimoun n&#x27;exige pas de fixation prealable, pourquoi Rav Nahman aurait-il eu besoin de l&#x27;etablir dans le cas ou ils ont fixe un lieu ? Il aurait suffi de dire que, puisqu&#x27;ils ont mange ensemble, ce repas meme les fixe. Il faut donc bien que ce soit la fixation initiale qui les oblige au zimoun. Il apporte encore une preuve de ce que la michna enseigne : le serviteur qui a mange un kazayit se joint. Quelle nouveaute y a-t-il dans le serviteur plus que dans un autre ? Il faut donc qu&#x27;elle nous apprenne que, bien que les autres ne se joignent qu&#x27;en etant assis de facon fixe, le serviteur se joint sans cette assise fixe, parce que telle est sa maniere de manger. Il me parait plutot, comme le disent les commentateurs, que meme s&#x27;ils n&#x27;ont pas recite hamotsi ensemble mais se sont fixes ensuite ensemble pour manger, ils sont fixes pour le zimoun et n&#x27;ont pas le droit de se separer. Quant a la preuve tiree du chapitre Keitsad Mevarekhin, ce n&#x27;en est pas une : la, c&#x27;est different, car s&#x27;ils n&#x27;avaient pas dit « allons manger du pain a tel endroit », ils seraient restes du debut a la fin du repas sans aucune fixation, et l&#x27;un n&#x27;aurait pas pu acquitter son compagnon. Mais si une partie d&#x27;entre eux s&#x27;est installee d&#x27;abord et que le troisieme est venu s&#x27;installer avec eux apres que les premiers ont commence a manger — et pour nous, meme simplement assis —, du moment qu&#x27;ils sont fixes ensemble a la fin du repas, ils sont tenus au zimoun. De meme pour le cas du serviteur : une autre personne qui mangerait a la maniere du serviteur ne se joindrait pas, faute d&#x27;etre fixee.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le folio passe au troisieme sujet : ce qui reunit plusieurs mangeurs en un seul repas. La michna oppose le fait d'etre assis, qui laisse chacun a sa propre benediction, et le <b>hessev</b>, l'installation sur les lits de table, qui permet a un seul de benir pour tous.</p><p>La braita des dix voyageurs contredit cette deduction : elle se contente de l'assise commune, et cela suffit. Tossefot demande pourquoi la guemara passe par une deduction alors que la premiere clause de la michna dit deja expressement le contraire ; il repond que cette clause pouvait viser des gens assis pour une autre occupation, sans intention initiale de manger.</p><p>La Roch tire de tout ce passage la question pratique du <b>zimoun</b> : ce qui fixe un groupe en un repas commun est aussi ce qui l'oblige a la benediction en commun.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 314" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="314" fill="#fffdf8"/>
+  <text x="370" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">La contradiction : hessev ou simple assise ?</text>
+
+  <rect x="28" y="42" width="326" height="112" rx="7" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.4"/>
+  <text x="191" y="64" text-anchor="middle" font-size="10.6" font-weight="700" fill="#1e3a8a">Notre michna</text>
+  <text x="44" y="86" font-size="8.9" fill="#292524">S'ils etaient assis : chacun benit pour lui-meme.</text>
+  <text x="44" y="104" font-size="8.9" fill="#292524">S'ils se sont installes : un seul benit pour tous.</text>
+  <text x="44" y="128" font-size="8.9" font-weight="700" fill="#1d4ed8">Deduction : installes, oui ; non installes, non.</text>
+  <text x="44" y="146" font-size="8.4" fill="#292524">Tossefot : pourquoi passer par la deduction ?</text>
+
+  <rect x="386" y="42" width="326" height="112" rx="7" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.4"/>
+  <text x="549" y="64" text-anchor="middle" font-size="10.6" font-weight="700" fill="#7f1d1d">La braita des dix voyageurs</text>
+  <text x="402" y="86" font-size="8.9" fill="#292524">En marchant, meme d'un seul pain : chacun pour soi.</text>
+  <text x="402" y="104" font-size="8.9" fill="#292524">Assis, meme chacun de son pain : un seul pour tous.</text>
+  <text x="402" y="128" font-size="8.9" font-weight="700" fill="#b91c1c">Elle enseigne assis, sans installation.</text>
+  <text x="402" y="146" font-size="8.4" fill="#292524">Le mouvement lui-meme empeche toute fixation.</text>
+
+  <path d="M191 158 C 191 186, 549 186, 549 158" fill="none" stroke="#78716c" stroke-width="1.4"/>
+  <text x="370" y="190" text-anchor="middle" font-size="10" font-weight="700" fill="#b45309">Contradiction</text>
+
+  <path d="M370 198 L370 214" stroke="#78716c" stroke-width="1.3"/><path d="M365 213 L375 213 L370 219 Z" fill="#78716c"/>
+
+  <rect x="88" y="222" width="564" height="76" rx="7" fill="#ecfdf5" stroke="#047857" stroke-width="1.4"/>
+  <text x="370" y="244" text-anchor="middle" font-size="10.6" font-weight="700" fill="#065f46">Rav Nahman bar Yitshak resout</text>
+  <text x="104" y="264" font-size="8.9" fill="#292524">La braita parle de gens qui ont dit avant de partir : allons manger du pain a tel endroit.</text>
+  <text x="104" y="282" font-size="8.9" fill="#292524">Cette convocation prealable vaut fixation ; leur assise n'est donc pas une simple assise.</text>
+</svg></div><div class="svg-cap">La michna, la braita et la resolution de Rav Nahman bar Yitshak.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב נַחְמָן בַּר יִצְחָק: כְּגוֹן דְּאָמְרִי ״נֵיזִיל וְנֵיכוֹל לַחְמָא בְּדוּךְ פְּלָן״.</div>
+            <div class="fr"><p>Rav Nahman bar Yitshak dit : par exemple lorsqu&#x27;ils ont dit « allons manger du pain a tel endroit ».</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּדוּךְ פְּלָן</b> בְּמָקוֹם פְּלוֹנִי דְּקָבְעוּ לָהֶם מִתְּחִלָּה מָקוֹם בְּדִבּוּר וְעֵצָה וְהַזְמָנָה הָוֵי קְבִיעוּת אֲבָל יָשְׁבוּ מֵאֲלֵיהֶן בְּמָקוֹם אֶחָד יַחַד אֵינָהּ קְבִיעוּת:</div>
+          <div class="glose-fr">En tel endroit : ils se sont fixe des le depart un lieu par la parole. Une decision et une convocation constituent une fixation ; mais s&#x27;ils se sont assis d&#x27;eux-memes ensemble en un meme lieu, ce n&#x27;est pas une fixation.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La contradiction se resout par un element absent du texte de la braita : la parole prononcee avant de se mettre en route. Ceux qui ont dit « allons manger du pain a tel endroit » ont fixe leur repas par la <b>hazmana</b>, la convocation, avant meme de s'asseoir.</p><p>Rachi degage la regle : la parole, la decision commune et la convocation valent fixation ; des gens qui se trouvent assis ensemble sans s'etre convies ne sont pas fixes. Ce qui reunit un repas est donc un acte de volonte, dont l'installation a table n'est qu'une des expressions possibles.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כִּי נָח נַפְשֵׁיהּ דְּרַב, אֲזוּל תַּלְמִידֵיהּ בָּתְרֵיהּ. כִּי הָדְרִי, אָמְרִי: נֵיזִיל וְנֵיכוּל לַחְמָא אַנְּהַר דָּנָק. בָּתַר דְּכָרְכִי, יָתְבִי וְקָא מִיבַּעְיָא לְהוּ: ״הֵסֵבּוּ״ דַּוְקָא תְּנַן, אֲבָל יָשְׁבוּ לֹא, אוֹ דִילְמָא כֵּיוָן דְּאָמְרִי ״נֵיזִיל וְנֵיכוֹל רִיפְתָּא בְּדֻוכְתָּא פְּלָנִיתָא״ — כִּי הֵסֵבּוּ דָּמֵי? לָא הֲוָה בִּידַיְיהוּ.</div>
+            <div class="fr"><p>Lorsque Rav mourut, ses disciples suivirent son convoi. En revenant, ils dirent : allons manger du pain au bord du fleuve Danak.</p><p>Apres avoir mange, ils s&#x27;assirent et se poserent la question : avons-nous appris « s&#x27;ils se sont installes » de facon restrictive, de sorte que s&#x27;ils se sont seulement assis, non ? Ou bien, puisqu&#x27;ils ont dit « allons manger du pain a tel endroit », est-ce comme s&#x27;ils s&#x27;etaient installes ?</p><p>Ils ne surent pas le resoudre.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אָזְלוּ תַּלְמִידָיו בָּתְרֵיהּ</b> דִּקְבָרוּהוּ בְּעִיר אַחֶרֶת:</div>
+          <div class="glose-fr">Car on l&#x27;enterra dans une autre ville.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>נְהַר דָּנָק</b> כָּךְ שְׁמוֹ:</div>
+          <div class="glose-fr">C&#x27;est son nom.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>רֵישָׁא דַּוְקָא</b> דְּקָתָנֵי הָיוּ יוֹשְׁבִים בְּלֹא הַזְמָנַת מָקוֹם הוּא דְּלָא הָוֵי קְבִיעוּת אֲבָל אָנוּ שֶׁהִזְמְנִינָהוּ לְכָךְ הָוֵי קְבִיעוּת וְאֶחָד מְבָרֵךְ לְכֻולָּן:</div>
+          <div class="glose-fr">La premiere clause, qui enseigne « s&#x27;ils etaient assis », vise le cas ou il n&#x27;y a pas eu de convocation en un lieu : la, il n&#x27;y a pas de fixation. Mais nous, qui nous sommes convies a cela, nous sommes fixes, et un seul benit pour tous.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le recit met en scene la question a l'instant meme ou elle devient pratique. Les disciples de Rav, revenant de l'enterrement de leur maitre dans une autre ville, ont dit avant de partir « allons manger au bord du fleuve Danak » : ils remplissent donc exactement la condition posee par Rav Nahman bar Yitshak. Reste a savoir si cette parole suffit.</p><p>La question porte sur la portee du mot de la michna : <b>hessev</b> est-il exige a la lettre, ou n'est-il que le cas ordinaire d'une fixation qu'une parole prealable peut produire autrement ? Rachi rapporte la formulation inverse : la premiere clause vise ceux qui se sont assis sans convocation.</p><p>La formule <b>lo hava beyadaihou</b>, ils ne surent pas le resoudre, prepare l'intervention de Rav Ada bar Ahava au segment suivant, qui se poursuit au folio 43a.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">קָם רַב אַדָּא בַּר אַהֲבָה</div>
+            <div class="fr"><p>Rav Ada bar Ahava se leva</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le folio s'interrompt sur le debut d'un geste. La suite, au folio 43a, montre Rav Ada bar Ahava dechirer son vetement en signe de deuil et reprocher aux disciples de discuter d'une question de benedictions alors que le deuil de leur maitre est encore ouvert.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Berakhot_42a.html">&lsaquo; Berakhot 42a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Berakhot_43a.html">Berakhot 43a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

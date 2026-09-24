@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yoma 40a -- La hagrala est-elle bloquante ? Le mot higril mis a l&#x27;epreuve</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Yoma 40a -- La hagrala est-elle bloquante ? Le mot higril mis a l&#x27;epreuve</h1>
+    <div class="ref">Yoma 40a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_39b.html">&lsaquo; Yoma 39b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> Ce folio poursuit sans repit une seule question, heritee de la fin de 39b : le tirage au sort qui designe lequel des deux boucs de Kippour ira a HaChem et lequel a Azazel est-il me&#x27;akev, c&#x27;est-a-dire indispensable a la validite du service ? Dans la seconde version du debat, Rabbi Yannai soutient qu&#x27;il l&#x27;est meme selon Rabbi Yehouda, et trois beraitot successives viennent lui faire piece.</p><p>La defense repose chaque fois sur la meme decouverte : le mot hagrala recouvre deux gestes distincts -- l&#x27;aliya, le sort qui monte de l&#x27;urne, que le verset a repetee et qui bloque, et la hanacha, la pose du sort sur la tete du bouc, mentionnee une seule fois et que personne ne tient pour bloquante. Contre la deuxieme beraita, la guemara fait repondre Rabbi Chimon sous condition, sans qu&#x27;il ait a trancher le sens du mot : une divergence si vous parlez de l&#x27;aliya, deux si vous parlez de la pose.</p><p>La troisieme attaque, la plus technique, oblige a parcourir tout l&#x27;ordre des services du taureau et du bouc pour trouver quel couple d&#x27;actes la beraita peut viser ; par elimination il ne reste que la hagrala, et deux sorties s&#x27;offrent alors -- attribuer la beraita a Rabbi Chimon, ou distinguer l&#x27;ordre, rendu bloquant par le mot houka qui ne couvre pas l&#x27;exterieur, de l&#x27;existence meme du geste, rendue bloquante par la repetition du verset. Le folio se termine sur une transition ou Rachi et Tossefot lisent le texte differemment, Tossefot rattachant la suite a la hagrala et deployant, sur le bouc mort en cours de service, toute la logique qui separe Rabbi Yehouda de Rabbi Chimon.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="400" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1c1917">Que veut dire "lo higril" ? Les trois gestes du sort</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.2" fill="#57534e">Tout le folio repose sur une ambiguite de vocabulaire : le mot hagrala recouvre deux gestes distincts.</text>
+
+  <rect x="24" y="62" width="220" height="96" rx="8" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.6"/>
+  <text x="134" y="84" text-anchor="middle" font-size="11.4" font-weight="700" fill="#1e3a8a">1. ALIYA</text>
+  <text x="134" y="100" text-anchor="middle" font-size="9.4" fill="#1e40af">la hagrala proprement dite</text>
+  <text x="134" y="118" text-anchor="middle" font-size="8.8" fill="#334155">le kohen gadol plonge les mains</text>
+  <text x="134" y="131" text-anchor="middle" font-size="8.8" fill="#334155">dans la kalpi (l'urne) et les deux</text>
+  <text x="134" y="144" text-anchor="middle" font-size="8.8" fill="#334155">sorts montent, un par main</text>
+
+  <rect x="270" y="62" width="220" height="96" rx="8" fill="#f5f3ff" stroke="#6d28d9" stroke-width="1.6"/>
+  <text x="380" y="84" text-anchor="middle" font-size="11.4" font-weight="700" fill="#4c1d95">2. HANACHA</text>
+  <text x="380" y="100" text-anchor="middle" font-size="9.4" fill="#5b21b6">la pose des sorts</text>
+  <text x="380" y="118" text-anchor="middle" font-size="8.8" fill="#334155">il pose le sort de la main droite</text>
+  <text x="380" y="131" text-anchor="middle" font-size="8.8" fill="#334155">sur la tete du bouc de droite,</text>
+  <text x="380" y="144" text-anchor="middle" font-size="8.8" fill="#334155">celui de gauche sur l'autre</text>
+
+  <rect x="516" y="62" width="220" height="96" rx="8" fill="#fff7ed" stroke="#c2410c" stroke-width="1.6"/>
+  <text x="626" y="84" text-anchor="middle" font-size="11.4" font-weight="700" fill="#7c2d12">3. VIDDOUY</text>
+  <text x="626" y="100" text-anchor="middle" font-size="9.4" fill="#9a3412">la confession</text>
+  <text x="626" y="118" text-anchor="middle" font-size="8.8" fill="#334155">sur le bouc envoye (Azazel) :</text>
+  <text x="626" y="131" text-anchor="middle" font-size="8.8" fill="#334155">vehitvada alav -- il confessera</text>
+  <text x="626" y="144" text-anchor="middle" font-size="8.8" fill="#334155">sur lui les fautes d'Israel</text>
+
+  <rect x="150" y="182" width="288" height="34" rx="17" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.5"/>
+  <text x="294" y="204" text-anchor="middle" font-size="11" font-weight="700" fill="#7f1d1d">"lo higril" -- il n'a pas tire les sorts</text>
+  <path d="M232 182 L160 164" stroke="#b91c1c" stroke-width="1.4" fill="none" marker-end="url(#ar40)"/>
+  <path d="M356 182 L378 164" stroke="#b91c1c" stroke-width="1.4" fill="none" marker-end="url(#ar40)"/>
+  <defs><marker id="ar40" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+    <path d="M0,0 L7,3 L0,6 z" fill="#b91c1c"/></marker></defs>
+  <text x="470" y="203" font-size="9.4" fill="#7f1d1d">l'expression peut viser 1 ou 2 : c'est toute la question</text>
+
+  <rect x="24" y="238" width="712" height="1.2" fill="#d6d3d1"/>
+  <text x="24" y="262" font-size="11.6" font-weight="700" fill="#1c1917">Le critere : tana bah kra -- le verset a-t-il repete le geste ?</text>
+
+  <rect x="24" y="274" width="344" height="104" rx="7" fill="#ecfdf5" stroke="#047857" stroke-width="1.4"/>
+  <text x="196" y="294" text-anchor="middle" font-size="10.4" font-weight="700" fill="#064e3b">ALIYA : le verset la repete</text>
+  <text x="38" y="313" font-size="8.8" fill="#065f46">"le bouc sur lequel est monte le sort" (Vay. 16:9)</text>
+  <text x="38" y="328" font-size="8.8" fill="#065f46">"et le bouc sur lequel est monte le sort" (16:10)</text>
+  <text x="38" y="349" font-size="9.6" font-weight="700" fill="#047857">=&gt; me'akev : sans elle, rien ne vaut</text>
+  <text x="38" y="366" font-size="8.6" fill="#065f46">c'est le point que Rabbi Yannai defend</text>
+
+  <rect x="392" y="274" width="344" height="104" rx="7" fill="#f5f5f4" stroke="#78716c" stroke-width="1.4"/>
+  <text x="564" y="294" text-anchor="middle" font-size="10.4" font-weight="700" fill="#292524">HANACHA : le verset ne la dit qu'une fois</text>
+  <text x="406" y="313" font-size="8.8" fill="#44403c">"Aharon posera sur les deux boucs des sorts"</text>
+  <text x="406" y="328" font-size="8.8" fill="#44403c">(Vay. 16:8) -- une seule mention</text>
+  <text x="406" y="349" font-size="9.6" font-weight="700" fill="#57534e">=&gt; pas me'akev : tout le monde l'admet</text>
+  <text x="406" y="366" font-size="8.6" fill="#44403c">d'ou la relecture "mitsva de poser"</text>
+</svg></div>
+          <figcaption>Aliya, hanacha, viddouy : les trois gestes que le mot hagrala peut recouvrir, et le critere du verset repete.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="430" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1c1917">Seconde version du debat : trois attaques contre Rabbi Yannai</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.2" fill="#57534e">Selon cette lecture, Yannai et Yohanan divergent chez Rabbi Yehouda ; chez Rabbi Nehemya, tous admettent que c'est me'akev.</text>
+
+  <rect x="24" y="60" width="352" height="54" rx="7" fill="#eef2ff" stroke="#4338ca" stroke-width="1.5"/>
+  <text x="200" y="80" text-anchor="middle" font-size="11.2" font-weight="700" fill="#312e81">Rabbi Yohanan : lo me'akva</text>
+  <text x="200" y="99" text-anchor="middle" font-size="8.8" fill="#3730a3">chez Rabbi Yehouda, la hagrala n'est pas bloquante</text>
+
+  <rect x="384" y="60" width="352" height="54" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.5"/>
+  <text x="560" y="80" text-anchor="middle" font-size="11.2" font-weight="700" fill="#7f1d1d">Rabbi Yannai : me'akva</text>
+  <text x="560" y="99" text-anchor="middle" font-size="8.8" fill="#991b1b">bloquante meme chez Rabbi Yehouda, a fortiori chez Nehemya</text>
+
+  <rect x="24" y="128" width="176" height="88" rx="6" fill="#ffffff" stroke="#a8a29e" stroke-width="1.1"/>
+  <text x="36" y="147" font-size="9.2" font-weight="700" fill="#292524">Attaque 1 (seg. 0-1)</text>
+  <text x="36" y="163" font-size="8.4" fill="#57534e">beraita : mitsva de tirer</text>
+  <text x="36" y="176" font-size="8.4" fill="#57534e">les sorts ; s'il n'a pas</text>
+  <text x="36" y="189" font-size="8.4" fill="#57534e">tire, c'est kacher</text>
+  <rect x="208" y="128" width="168" height="88" rx="6" fill="#eef2ff" stroke="#4338ca" stroke-width="1.1"/>
+  <text x="292" y="167" text-anchor="middle" font-size="9.4" font-weight="700" fill="#312e81">c'est Rabbi Yehouda</text>
+  <text x="292" y="184" text-anchor="middle" font-size="8.4" fill="#3730a3">aucune difficulte</text>
+  <rect x="384" y="128" width="352" height="88" rx="6" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.1"/>
+  <text x="560" y="152" text-anchor="middle" font-size="9.4" font-weight="700" fill="#7f1d1d">reponse : relire "mitsva de POSER"</text>
+  <text x="560" y="170" text-anchor="middle" font-size="8.4" fill="#991b1b">la beraita ne parle pas de l'aliya mais de la hanacha</text>
+  <text x="560" y="186" text-anchor="middle" font-size="8.4" fill="#991b1b">Tossefot : ce n'est pas une correction, c'est une glose</text>
+  <text x="560" y="202" text-anchor="middle" font-size="8.4" fill="#991b1b">du mot higril, que la Tossefta atteste tel quel</text>
+
+  <rect x="24" y="224" width="176" height="88" rx="6" fill="#ffffff" stroke="#a8a29e" stroke-width="1.1"/>
+  <text x="36" y="243" font-size="9.2" font-weight="700" fill="#292524">Attaque 2 (seg. 2-4)</text>
+  <text x="36" y="259" font-size="8.4" fill="#57534e">seifa : Rabbi Chimon dit</text>
+  <text x="36" y="272" font-size="8.4" fill="#57534e">lo higril kacher, lo</text>
+  <text x="36" y="285" font-size="8.4" fill="#57534e">hitvada passoul</text>
+  <rect x="208" y="224" width="168" height="88" rx="6" fill="#f5f5f4" stroke="#78716c" stroke-width="1.1"/>
+  <text x="292" y="256" text-anchor="middle" font-size="8.6" fill="#44403c">la relecture "poser" rendrait</text>
+  <text x="292" y="271" text-anchor="middle" font-size="8.6" fill="#44403c">Rabbi Chimon partisan d'une</text>
+  <text x="292" y="286" text-anchor="middle" font-size="8.6" fill="#44403c">aliya bloquante -- impossible</text>
+  <rect x="384" y="224" width="352" height="88" rx="6" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.1"/>
+  <text x="560" y="250" text-anchor="middle" font-size="9.4" font-weight="700" fill="#7f1d1d">reponse : Rabbi Chimon ne savait pas</text>
+  <text x="560" y="268" text-anchor="middle" font-size="8.4" fill="#991b1b">il repond sous condition, sans trancher le sens</text>
+  <text x="560" y="284" text-anchor="middle" font-size="8.4" fill="#991b1b">que les Sages donnaient au mot higril</text>
+  <text x="560" y="300" text-anchor="middle" font-size="8.4" fill="#991b1b">=&gt; voir le schema du segment 4</text>
+
+  <rect x="24" y="320" width="176" height="96" rx="6" fill="#ffffff" stroke="#a8a29e" stroke-width="1.1"/>
+  <text x="36" y="339" font-size="9.2" font-weight="700" fill="#292524">Attaque 3 (seg. 5-13)</text>
+  <text x="36" y="355" font-size="8.4" fill="#57534e">beraita : le taureau est</text>
+  <text x="36" y="368" font-size="8.4" fill="#57534e">me'akev pour le bouc,</text>
+  <text x="36" y="381" font-size="8.4" fill="#57534e">le bouc ne l'est pas pour</text>
+  <text x="36" y="394" font-size="8.4" fill="#57534e">le taureau</text>
+  <rect x="208" y="320" width="168" height="96" rx="6" fill="#f5f5f4" stroke="#78716c" stroke-width="1.1"/>
+  <text x="292" y="352" text-anchor="middle" font-size="8.6" fill="#44403c">le seul acte du bouc qui</text>
+  <text x="292" y="367" text-anchor="middle" font-size="8.6" fill="#44403c">precede le sang du taureau</text>
+  <text x="292" y="382" text-anchor="middle" font-size="8.6" fill="#44403c">a l'interieur, c'est la</text>
+  <text x="292" y="397" text-anchor="middle" font-size="8.6" fill="#44403c">hagrala -- donc non bloquante</text>
+  <rect x="384" y="320" width="352" height="96" rx="6" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.1"/>
+  <text x="560" y="344" text-anchor="middle" font-size="9.4" font-weight="700" fill="#7f1d1d">deux reponses</text>
+  <text x="560" y="362" text-anchor="middle" font-size="8.4" fill="#991b1b">(a) la beraita est de Rabbi Chimon, qui seul dit</text>
+  <text x="560" y="376" text-anchor="middle" font-size="8.4" fill="#991b1b">que la hagrala n'est pas bloquante</text>
+  <text x="560" y="394" text-anchor="middle" font-size="8.4" fill="#991b1b">(b) c'est Rabbi Yehouda : seul l'ORDRE n'est pas</text>
+  <text x="560" y="408" text-anchor="middle" font-size="8.4" fill="#991b1b">bloquant ; supprimer la hagrala le reste</text>
+</svg></div>
+          <figcaption>Les trois ta chema lances contre Rabbi Yannai et les reponses qui les desamorcent.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="330" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1c1917">L'ordre des avodot de Kippour (Rachi, seg. 5)</text>
+  <text x="380" y="42" text-anchor="middle" font-size="10.2" fill="#57534e">Taureau (par) et bouc (sa'ir) alternent. C'est cette alternance que la beraita de la 3e attaque met a l'epreuve.</text>
+
+  <rect x="24" y="56" width="110" height="16" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+  <text x="79" y="68" text-anchor="middle" font-size="8.4" font-weight="700" fill="#1e3a8a">Saint des Saints</text>
+  <rect x="142" y="56" width="72" height="16" rx="4" fill="#ede9fe" stroke="#6d28d9" stroke-width="1"/>
+  <text x="178" y="68" text-anchor="middle" font-size="8.4" font-weight="700" fill="#4c1d95">Heikhal</text>
+  <rect x="222" y="56" width="112" height="16" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1"/>
+  <text x="278" y="68" text-anchor="middle" font-size="8.4" font-weight="700" fill="#7c2d12">Autel interieur</text>
+  <rect x="342" y="56" width="88" height="16" rx="4" fill="#f5f5f4" stroke="#78716c" stroke-width="1"/>
+  <text x="386" y="68" text-anchor="middle" font-size="8.4" font-weight="700" fill="#292524">Azara / parvis</text>
+
+  <rect x="24" y="88" width="136" height="54" rx="6" fill="#f5f5f4" stroke="#78716c" stroke-width="1.2"/>
+  <text x="34" y="105" font-size="9" font-weight="700" fill="#292524">1. Viddouy I</text>
+  <text x="34" y="119" font-size="8.2" fill="#57534e">sur le taureau</text>
+  <text x="34" y="133" font-size="8.2" fill="#57534e">(pour lui et sa maison)</text>
+
+  <rect x="176" y="88" width="136" height="54" rx="6" fill="#fef9c3" stroke="#a16207" stroke-width="1.6"/>
+  <text x="186" y="105" font-size="9" font-weight="700" fill="#713f12">2. HAGRALA</text>
+  <text x="186" y="119" font-size="8.2" fill="#854d0e">les sorts sur les deux</text>
+  <text x="186" y="133" font-size="8.2" fill="#854d0e">boucs -- l'objet du debat</text>
+
+  <rect x="328" y="88" width="136" height="54" rx="6" fill="#f5f5f4" stroke="#78716c" stroke-width="1.2"/>
+  <text x="338" y="105" font-size="9" font-weight="700" fill="#292524">3. Viddouy II</text>
+  <text x="338" y="119" font-size="8.2" fill="#57534e">sur le taureau</text>
+  <text x="338" y="133" font-size="8.2" fill="#57534e">(pour les kohanim)</text>
+
+  <rect x="480" y="88" width="120" height="54" rx="6" fill="#f5f5f4" stroke="#78716c" stroke-width="1.2"/>
+  <text x="490" y="105" font-size="9" font-weight="700" fill="#292524">4. Chehita</text>
+  <text x="490" y="119" font-size="8.2" fill="#57534e">du taureau</text>
+  <text x="490" y="133" font-size="8.2" fill="#57534e">(abattage)</text>
+
+  <rect x="616" y="88" width="120" height="54" rx="6" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.2"/>
+  <text x="626" y="105" font-size="9" font-weight="700" fill="#1e3a8a">5. Ketoret</text>
+  <text x="626" y="119" font-size="8.2" fill="#1e40af">cuiller et encensoir</text>
+  <text x="626" y="133" font-size="8.2" fill="#1e40af">entre les barres</text>
+
+  <rect x="24" y="158" width="136" height="54" rx="6" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.2"/>
+  <text x="34" y="175" font-size="9" font-weight="700" fill="#1e3a8a">6. Sang du taureau</text>
+  <text x="34" y="189" font-size="8.2" fill="#1e40af">sur le kaporet</text>
+  <text x="34" y="203" font-size="8.2" fill="#1e40af">(matnot bifnim)</text>
+
+  <rect x="176" y="158" width="136" height="54" rx="6" fill="#f5f5f4" stroke="#78716c" stroke-width="1.2"/>
+  <text x="186" y="175" font-size="9" font-weight="700" fill="#292524">7. Chehita</text>
+  <text x="186" y="189" font-size="8.2" fill="#57534e">du bouc pour HaChem</text>
+  <text x="186" y="203" font-size="8.2" fill="#57534e">(sa'ir hapenimi)</text>
+
+  <rect x="328" y="158" width="136" height="54" rx="6" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.2"/>
+  <text x="338" y="175" font-size="9" font-weight="700" fill="#1e3a8a">8. Sang du bouc</text>
+  <text x="338" y="189" font-size="8.2" fill="#1e40af">sur le kaporet</text>
+  <text x="338" y="203" font-size="8.2" fill="#1e40af">(matnot bifnim)</text>
+
+  <rect x="480" y="158" width="120" height="54" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="490" y="175" font-size="9" font-weight="700" fill="#4c1d95">9. Sang taureau</text>
+  <text x="490" y="189" font-size="8.2" fill="#5b21b6">sur le parochet</text>
+  <text x="490" y="203" font-size="8.2" fill="#5b21b6">(dans le Heikhal)</text>
+
+  <rect x="616" y="158" width="120" height="54" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.2"/>
+  <text x="626" y="175" font-size="9" font-weight="700" fill="#4c1d95">10. Sang bouc</text>
+  <text x="626" y="189" font-size="8.2" fill="#5b21b6">sur le parochet</text>
+  <text x="626" y="203" font-size="8.2" fill="#5b21b6">(dans le Heikhal)</text>
+
+  <rect x="24" y="228" width="288" height="54" rx="6" fill="#ffedd5" stroke="#c2410c" stroke-width="1.2"/>
+  <text x="34" y="245" font-size="9" font-weight="700" fill="#7c2d12">11. Melange des sangs, autel interieur</text>
+  <text x="34" y="259" font-size="8.2" fill="#9a3412">"il prendra du sang du taureau et du sang du bouc" (Vay. 16:18)</text>
+  <text x="34" y="273" font-size="8.2" fill="#9a3412">c'est l'acte que le seg. 10 propose d'avancer -- en vain</text>
+
+  <rect x="328" y="228" width="408" height="54" rx="6" fill="#fff1f2" stroke="#9f1239" stroke-width="1.2"/>
+  <text x="338" y="245" font-size="9" font-weight="700" fill="#881337">Regle de la beraita</text>
+  <text x="338" y="259" font-size="8.2" fill="#9f1239">avancer un acte du BOUC avant l'acte du TAUREAU qui le precede = nul</text>
+  <text x="338" y="273" font-size="8.2" fill="#9f1239">avancer un acte du TAUREAU avant l'acte du BOUC qui le precede = valide</text>
+
+  <text x="380" y="304" text-anchor="middle" font-size="9" fill="#57534e">Le mot houka (Vay. 16:29) rend l'ordre bloquant pour tout ce qui se fait a l'INTERIEUR ; hors du Saint des Saints,</text>
+  <text x="380" y="318" text-anchor="middle" font-size="9" fill="#57534e">Rabbi Yehouda tient que ce qui se fait en vetements blancs n'est pas bloquant.</text>
+</svg></div>
+          <figcaption>L&#x27;ordre complet des services du taureau et du bouc, tel que Rachi le recapitule au segment 5.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא לְהָךְ לִישָּׁנָא דְּאָמְרַתְּ פְּלִיגִי, בִּשְׁלָמָא לְמַאן דְּאָמַר לָא מְעַכְּבָא, הָא מַנִּי — רַבִּי יְהוּדָה הִיא,</div>
+            <div class="fr"><p>Mais selon cette version-la, celle ou tu as dit qu&#x27;ils divergent : soit, pour celui qui dit qu&#x27;elle n&#x27;est pas me&#x27;akevet (bloquante), cette [beraita], de qui est-elle ? Elle est de Rabbi Yehouda.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא לְהָךְ לִישָּׁנָא דְּאָמְרַתְּ</b> אַלִּיבָּא דְּרַבִּי יְהוּדָה פְּלִיגִי וְאָמַר רַבִּי יַנַּאי מְעַכְּבָא וְכָל שֶׁכֵּן לְרַבִּי נְחֶמְיָה הָא מַנִּי לָא רַבִּי יְהוּדָה וְלָא רַבִּי נְחֶמְיָה:</div>
+          <div class="glose-fr">Mais selon cette version-la, celle ou tu as dit -- a savoir qu&#x27;ils divergent selon Rabbi Yehouda, et que Rabbi Yannai a dit qu&#x27;elle est me&#x27;akevet (et a plus forte raison selon Rabbi Nehemya) : cette [beraita], de qui est-elle ? Ni de Rabbi Yehouda, ni de Rabbi Nehemya.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le folio reprend en plein vol la discussion ouverte a la fin de 39b. Deux <b>lechonot</b> (versions) rapportent la meme divergence entre Rabbi Yannai et Rabbi Yohanan sur une seule question : la <b>hagrala</b>, le tirage au sort qui designe lequel des deux boucs ira a HaChem et lequel a Azazel, est-elle <b>me'akevet</b> -- bloquante, c'est-a-dire indispensable a la validite du service ?</p><p>Dans la seconde version, celle qu'on examine ici, la divergence est logee chez <b>Rabbi Yehouda</b> : Rabbi Yohanan dit qu'elle n'est pas bloquante, Rabbi Yannai qu'elle l'est ; chez <b>Rabbi Nehemya</b>, en revanche, tous deux s'accordent a la dire bloquante. Une beraita qui declare le service valide sans hagrala trouve donc facilement place chez Rabbi Yohanan -- elle est simplement de Rabbi Yehouda. Le probleme ne commence qu'au segment suivant, pour Rabbi Yannai.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא לְמַאן דְּאָמַר מְעַכְּבָא, הָא מַנִּי? תָּנֵי: מִצְוָה לְהַנִּיחַ.</div>
+            <div class="fr"><p>Mais pour celui qui dit qu&#x27;elle est me&#x27;akevet, cette [beraita], de qui est-elle ? Enseigne [plutot] : c&#x27;est une mitsva de poser [les sorts].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תָּנֵי מִצְוָה לְהַנִּיחַ</b> וְאִם לֹא הִנִּיחַ כָּשֵׁר וּבְהָא כֻּולֵּי עָלְמָא מוֹדוֹ דְּבִנְתִינָה לָא תְּנָא בָּהּ קְרָא אֶלָּא חֲדָא זִימְנָא הוּא דִּכְתִיב וְנָתַן אַהֲרֹן וְגוֹ&#x27; אֲבָל בַּעֲלִייָּה תְּנָא בֵּהּ קְרָא דִּכְתִיב וְהִקְרִיב אַהֲרֹן אֶת הַשָּׂעִיר אֲשֶׁר עָלָה עָלָיו וְגוֹ&#x27; וּכְתִיב וְהַשָּׂעִיר אֲשֶׁר עָלָה:</div>
+          <div class="glose-fr">Enseigne : c&#x27;est une mitsva de poser -- et s&#x27;il n&#x27;a pas pose, c&#x27;est kacher. Et sur ce point tout le monde s&#x27;accorde, car au sujet de la pose (netina) le verset ne l&#x27;a enseigne qu&#x27;une seule fois, puisqu&#x27;il est ecrit : &quot;et Aharon posera...&quot; ; tandis qu&#x27;au sujet de la montee (aliya) le verset l&#x27;a repete, car il est ecrit &quot;et Aharon presentera le bouc sur lequel est monte le sort...&quot; et il est ecrit &quot;et le bouc sur lequel est monte...&quot;.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תָּנֵי מִצְוָה לְהַנִּיחַ</b> ה&quot;נ הֲוָה מָצֵי לְשַׁנּוּיֵי הָא מַנִּי רַבִּי שִׁמְעוֹן הִיא דְּאָמַר הַגְרָלָה לָא מְעַכְּבָא וְאַחַ&quot;כּ מָצָאתִי בָּרַייְתָא זוֹ שְׁנוּיָה בַּתּוֹסֶפְתָּא [פ&quot;ג] וְסָמוּךְ לָהּ שְׁנוּיָה פְּלוּגְתָּא דִּבְסָמוּךְ דְּרַבִּי יְהוּדָה וְרַבִּי שִׁמְעוֹן יַעֲמֹד חַי וְכוּ&#x27; וּמַסִּיק דִּבְרֵי רַבִּי יְהוּדָה וְרַבִּי שִׁמְעוֹן אוֹמֵר וְכוּ&#x27; וּמִדְּסֵיפָא ר&quot;ש רֵישָׁא לָאו רַבִּי שִׁמְעוֹן:</div>
+          <div class="glose-fr">Enseigne : c&#x27;est une mitsva de poser -- ici aussi il aurait pu repondre : de qui est cette [beraita] ? Elle est de Rabbi Chimon, qui dit que la hagrala n&#x27;est pas me&#x27;akevet. Et j&#x27;ai trouve ensuite cette beraita enseignee dans la Tossefta [chap. 3] ; tout pres d&#x27;elle y est enseignee la divergence citee juste apres entre Rabbi Yehouda et Rabbi Chimon a propos de &quot;il sera place vivant&quot;, etc., et elle conclut : &quot;paroles de Rabbi Yehouda ; et Rabbi Chimon dit, etc.&quot;. Or puisque la fin (seifa) est de Rabbi Chimon, le debut (recha) n&#x27;est pas de Rabbi Chimon.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">הָא דְּקָאָמַר תָּנֵי מִצְוָה לְהַנִּיחַ אֵינוֹ מַגִּיהַּ הַבָּרַייְתָא אֶלָּא פָּרוֹשֵׁי קָא מְפָרֵשׁ מַאי לֹא הִגְרִיל לֹא הִנִּיחַ הַגּוֹרָל:</div>
+          <div class="glose-fr">Ce qu&#x27;il dit -- &quot;enseigne : c&#x27;est une mitsva de poser&quot; -- ne corrige pas la beraita : il ne fait que l&#x27;expliquer. Que signifie &quot;il n&#x27;a pas tire les sorts&quot; ? Il n&#x27;a pas pose le sort.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Voici la manoeuvre centrale du folio. Pour sauver Rabbi Yannai, la guemara ne rejette pas la beraita : elle en relit un mot. <b>Lehagril</b> (tirer les sorts) devient <b>lehaniah</b> (poser). Car le rituel comporte deux gestes distincts : le sort qui <b>monte</b> de la kalpi (l'urne) dans la main du kohen gadol -- l'<b>aliya</b>, la hagrala proprement dite -- puis le sort qu'on <b>pose</b> sur la tete du bouc -- la <b>hanacha</b>.</p><p>Rachi donne le critere qui les separe : <b>tana bah kra</b>, le verset l'a repete. La montee est mentionnee deux fois par la Torah, donc elle bloque ; la pose n'apparait qu'une fois, donc elle ne bloque pas. La beraita, relue ainsi, ne dit plus rien contre Rabbi Yannai.</p><p>Tossefot precise un point de methode important : cette relecture n'est pas une correction du texte (on ne touche pas a la beraita, que la Tossefta atteste telle quelle), mais une glose du mot. Et Tossefot demande au passage pourquoi la guemara se donne tant de mal, alors qu'il suffisait d'attribuer la beraita a Rabbi Chimon -- la reponse etant que la suite de la Tossefta montre que le debut n'est pas de lui.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּא שְׁמַע: מִצְוָה לְהַגְרִיל וּלְהִתְוַדּוֹת. לֹא הִגְרִיל וְלֹא הִתְוַדָּה — כָּשֵׁר. וְכִי תֵּימָא הָכִי נָמֵי לְהַנִּיחַ, אֵימָא סֵיפָא, רַבִּי שִׁמְעוֹן אוֹמֵר: לֹא הִגְרִיל — כָּשֵׁר, לֹא הִתְוַדָּה — פָּסוּל.</div>
+            <div class="fr"><p>Viens et entends : c&#x27;est une mitsva de tirer les sorts et de confesser. S&#x27;il n&#x27;a pas tire les sorts et n&#x27;a pas confesse -- c&#x27;est kacher.</p><p>Et si tu dis qu&#x27;ici aussi [il faut lire] &quot;de poser&quot;, dis donc la fin [de la beraita] : Rabbi Chimon dit -- s&#x27;il n&#x27;a pas tire les sorts, c&#x27;est kacher ; s&#x27;il n&#x27;a pas confesse, c&#x27;est passoul (invalide).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּלְהִתְוַדּוֹת</b> עַל שָׂעִיר הַמִּשְׁתַּלֵּחַ כְּדִכְתִיב וְהִתְוַדָּה עָלָיו וְגוֹ&#x27;:</div>
+          <div class="glose-fr">Et de confesser -- sur le bouc envoye (sa&#x27;ir hamichtaleah), comme il est ecrit : &quot;et il confessera sur lui...&quot;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deuxieme attaque. Une autre beraita joint la hagrala au <b>viddouy</b> (la confession que le kohen gadol prononce sur le bouc envoye a Azazel) et declare le service valide en l'absence des deux. La meme relecture serait disponible -- lire "poser" au lieu de "tirer" -- si la beraita s'arretait la.</p><p>Mais elle a une <b>seifa</b> (une clause finale) : Rabbi Chimon y separe les deux cas, kacher pour la hagrala, passoul pour le viddouy. Et cette clause resiste a la relecture, comme le segment suivant va le montrer.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאי ״לֹא הִגְרִיל״? אִילֵּימָא לֹא הִנִּיחַ, מִכְּלָל דְּרַבִּי שִׁמְעוֹן סָבַר הַגְרָלָה מְעַכְּבָא, וְהַתַּנְיָא: מֵת אֶחָד מֵהֶן, מֵבִיא חֲבֵירוֹ שֶׁלֹּא בְּהַגְרָלָה, דִּבְרֵי רַבִּי שִׁמְעוֹן.</div>
+            <div class="fr"><p>Que signifie &quot;il n&#x27;a pas tire les sorts&quot; ? Si l&#x27;on dit qu&#x27;il n&#x27;a pas pose [le sort], il en resulterait que Rabbi Chimon tient que la hagrala est me&#x27;akevet -- or n&#x27;a-t-on pas enseigne : &quot;si l&#x27;un des deux [boucs] est mort, il amene son compagnon sans hagrala, paroles de Rabbi Chimon&quot; ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִילֵּימָא לֹא הִנִּיחַ</b> בְּהָהוּא הוּא דְּקָאָמַר רַבִּי שִׁמְעוֹן כָּשֵׁר אֲבָל עֲלִיָּיתוֹ מִתּוֹךְ קַלְפִּי אִית לֵיהּ לְרַבִּי שִׁמְעוֹן דִּמְעַכְּבָא:</div>
+          <div class="glose-fr">Si l&#x27;on dit : il n&#x27;a pas pose -- c&#x27;est de ce cas-la que Rabbi Chimon dit &quot;kacher&quot; ; mais la montee [du sort] hors de la kalpi, Rabbi Chimon tiendrait qu&#x27;elle est me&#x27;akevet.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהָתַנְיָא מֵת אֶחָד מֵהֶן</b> לְאַחַר הַגְרָלָה דְּאִי אֶפְשָׁר עוֹד לְהַגְרִיל אֶלָּא אִם כֵּן יָבִיא שְׁנַיִם אֲחֵרִים וְיֵלֵךְ אֶחָד לְאִיבּוּד כִּדְאָמְרִי&#x27; בְּפֶ&#x27; שְׁנֵי שְׂעִירֵי (לְקַמָּן יוֹמָא דַּף סב.): מֵבִיא אֶחָד מִן הַשּׁוּק תַּחַת זֶה שֶׁמֵּת וִיהֵא חֲבֵירוֹ שֶׁל זֶה הָעוֹמֵד וְאֵין צָרִיךְ לְהַגְרִיל:</div>
+          <div class="glose-fr">Or n&#x27;a-t-on pas enseigne : si l&#x27;un des deux est mort -- apres la hagrala, car il n&#x27;est plus possible de tirer les sorts a nouveau, a moins d&#x27;amener deux autres [boucs] et d&#x27;en laisser un se perdre, comme nous le disons au chapitre Chenei Se&#x27;irei (plus loin, Yoma 62a) : il amene un [bouc] du marche a la place de celui qui est mort, et il sera le compagnon de celui qui reste debout, sans qu&#x27;il soit besoin de tirer les sorts.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le raisonnement est un raisonnement <b>a contrario</b>. Si, dans la bouche de Rabbi Chimon, "il n'a pas tire les sorts, c'est kacher" signifiait seulement "il n'a pas <i>pose</i>", alors sa tolerance s'arreterait la : la montee du sort hors de l'urne, elle, resterait bloquante pour lui.</p><p>Or une autre beraita le montre bien plus permissif : si l'un des deux boucs meurt apres le tirage, Rabbi Chimon fait remplacer le mort <b>sans nouveau tirage</b> -- le bouc de remplacement recoit sa designation du seul fait d'etre le compagnon du survivant. Rabbi Chimon ne peut donc pas tenir l'aliya pour bloquante, et la relecture s'effondre : sa clause parlait bien du tirage lui-meme, ce qui relance la difficulte contre Rabbi Yannai.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבִּי שִׁמְעוֹן לָא יָדַע מַאי קָאָמְרִי רַבָּנַן, וְהָכִי קָאָמַר לְהוּ: אִי הַגְרָלָה — הַגְרָלָה מַמָּשׁ קָא אָמְרִיתוּ, פָּלֵיגְנָא עֲלַייְכוּ בַּחֲדָא. אִי הַגְרָלָה דְּקָאָמְרִיתוּ הַיְינוּ הַנָּחָה — פָּלֵיגְנָא עֲלַייְכוּ בָּתַרְתִּי.</div>
+            <div class="fr"><p>Rabbi Chimon ne savait pas ce que disaient les Sages, et voici ce qu&#x27;il leur a dit : si par &quot;hagrala&quot; vous entendez la hagrala proprement dite, je diverge de vous sur un seul point ; si la &quot;hagrala&quot; dont vous parlez est la pose, je diverge de vous sur deux points.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רַבִּי שִׁמְעוֹן לָא יָדַע כּוּ&#x27;</b> לְעוֹלָם לֹא הִגְרִיל דְּקָאָמַר תַּנָּא קַמָּא כָּשֵׁר לֹא הִנִּיחַ הוּא וּדְקַשְׁיָא לָךְ הֵיכִי קָאָמַר ר&quot;ש עֲלָהּ לֹא הִגְרִיל כָּשֵׁר אִי הַגְרָלָה זוֹ הַייְנוּ הַנָּחָה מַשְׁמַע דְּאִי לֹא הֶעֱלָה פָּסוּל לְרַבִּי שִׁמְעוֹן לָא תִּקְשֵׁי דְּלָא הִגְרִיל דְּקָאָמַר ר&#x27; שִׁמְעוֹן לֹא הִגְרִיל מַמָּשׁ קָאָמַר וְלָא הֲוָה יָדַע דְּלָא הִגְרִיל דְּקָאָמַר ת&quot;ק אַהַנָּחָה הוּא דְּקָאֵי וְהָכִי קָאָמַר לְהוּ ר&#x27; שִׁמְעוֹן לְרַבָּנָן אִי לֹא הִגְרִיל כָּשֵׁר דְּקָאָמְרִיתוּ הַיְינוּ בַּעֲלִייָּה דְּהוּא הַגְרָלָה מַמָּשׁ פְּלִיגְנָא עֲלַיְיכוּ בַּחֲדָא בְּלֹא הִתְוַדָּה:</div>
+          <div class="glose-fr">Rabbi Chimon ne savait pas, etc. -- en verite, le &quot;il n&#x27;a pas tire les sorts&quot; dont le tanna kamma dit qu&#x27;il est kacher signifie bien &quot;il n&#x27;a pas pose&quot;. Et ta difficulte -- comment Rabbi Chimon peut-il dire a ce propos &quot;il n&#x27;a pas tire les sorts : kacher&quot;, si cette hagrala-la est la pose, ce qui impliquerait que, s&#x27;il n&#x27;a pas fait monter [le sort], ce serait passoul selon Rabbi Chimon -- n&#x27;en est pas une : car le &quot;il n&#x27;a pas tire les sorts&quot; que dit Rabbi Chimon vise la hagrala proprement dite, et il ne savait pas que le &quot;il n&#x27;a pas tire les sorts&quot; du tanna kamma portait sur la pose. Et voici ce que Rabbi Chimon dit aux Sages : si le &quot;il n&#x27;a pas tire les sorts : kacher&quot; que vous enoncez porte sur la montee, qui est la hagrala proprement dite, alors je diverge de vous sur un seul point, celui de &quot;il n&#x27;a pas confesse&quot;.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאִי הַגְרָלָה דְּקָאָמְרִיתוּ הַיְינוּ הַנָּחָה</b> אֲבָל עֲלִייָּה לְדִידְכוּ מְעַכְּבָא פָּלֵיגְנָא בָּתַרְתִּי דִּלְדִידִי הַגְרָלָה לָא מְעַכְּבָא כְּלָל וְהַוִּידּוּי מְעַכֵּב וּלְקַמָּן מְפָרֵשׁ טַעְמָא דְּתַרְוַיְיהוּ בְּוִידּוּי:</div>
+          <div class="glose-fr">Et si la hagrala dont vous parlez est la pose -- la montee etant, selon vous, bloquante -- alors je diverge sur deux points : car selon moi la hagrala n&#x27;est pas bloquante du tout, et le viddouy, lui, est bloquant. Et plus loin [la guemara] expliquera la raison de l&#x27;un et de l&#x27;autre au sujet du viddouy.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רַבִּי שִׁמְעוֹן לָא יָדַע</b> וְאִם תֹּאמַר לֵימָא דְּשַׁפִּיר יָדַע וְלֹא הִגְרִיל דְּרַבִּי שִׁמְעוֹן הַיְינוּ עָלָה כִּי הֵיכִי דִּמְפָרְשִׁי נַמֵּי הַשְׁתָּא לְלֹא הִגְרִיל דִּידֵיהּ עָלָה אע&quot;ג דְּלָא הִגְרִיל דְּרַבָּנָן מְסַפְּקָא לֵיהּ אִי הָוֵי הִנִּיחַ אוֹ עָלָה וְי&quot;ל אִי רַבִּי שִׁמְעוֹן פְּשִׁיטָא לֵיהּ דְּלָא הִגְרִיל דְּרַבָּנָן הַייְנוּ לֹא הִנִּיחַ א&quot;כ הֲוָה לֵיהּ לְמֵימַר אִיהוּ לֹא עָלָה הַגּוֹרָל אֲבָל הַשְׁתָּא נִיחָא מִשּׁוּם דִּמְסַפְּקָא לֵיהּ דִּילְמָא רַבָּנָן אָמְרִי לֹא עָלָה וְקָרוּ לֵיהּ לֹא הִגְרִיל נְקַט נָמֵי לֹא הִגְרִיל:</div>
+          <div class="glose-fr">Rabbi Chimon ne savait pas -- et si tu demandes : disons donc qu&#x27;il savait fort bien, et que son &quot;il n&#x27;a pas tire les sorts&quot; designe la montee, exactement comme on l&#x27;explique maintenant pour sa propre formule, meme si, quant au &quot;il n&#x27;a pas tire les sorts&quot; des Sages, il hesite entre la pose et la montee. On peut repondre : si Rabbi Chimon avait tenu pour evident que le &quot;il n&#x27;a pas tire les sorts&quot; des Sages signifiait &quot;il n&#x27;a pas pose&quot;, il aurait du dire lui-meme &quot;le sort n&#x27;est pas monte&quot;. Mais tel quel, tout s&#x27;explique : parce qu&#x27;il hesite -- peut-etre les Sages disent-ils &quot;le sort n&#x27;est pas monte&quot; et appellent-ils cela &quot;il n&#x27;a pas tire les sorts&quot; -- il a repris lui aussi l&#x27;expression &quot;il n&#x27;a pas tire les sorts&quot;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La reponse est d'une elegance rare : elle sauve la relecture du segment 1 <b>sans</b> forcer Rabbi Chimon a tenir l'aliya pour bloquante. Rabbi Chimon, dit la guemara, ne savait pas lui-meme dans quel sens les Sages employaient le mot ; sa phrase est donc une reponse <b>conditionnelle</b>, valable dans les deux hypotheses.</p><p>Si les Sages parlaient de l'aliya, Rabbi Chimon les rejoint sur ce point et ne se separe d'eux que sur le viddouy : <b>une</b> divergence. S'ils parlaient de la seule hanacha -- tenant l'aliya pour bloquante -- alors il se separe d'eux deux fois : sur la hagrala <i>et</i> sur le viddouy. Il compte donc ses desaccords au lieu de trancher le sens du mot.</p><p>Tossefot pousse la question : pourquoi ne pas dire simplement qu'il savait ? Reponse : s'il avait su, il aurait choisi une expression sans ambiguite ("le sort n'est pas monte") ; c'est precisement parce qu'il hesite qu'il reprend le mot flottant de ses interlocuteurs.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="300" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">La reponse conditionnelle de Rabbi Chimon</text>
+  <text x="360" y="42" text-anchor="middle" font-size="9.6" fill="#57534e">Il ignore ce que les Sages entendent par higril, alors il repond aux deux hypotheses a la fois.</text>
+
+  <rect x="240" y="56" width="240" height="38" rx="6" fill="#f5f5f4" stroke="#78716c" stroke-width="1.4"/>
+  <text x="360" y="80" text-anchor="middle" font-size="10.4" font-weight="700" fill="#292524">"Si par higril vous voulez dire..."</text>
+
+  <path d="M300 94 L160 124" stroke="#78716c" stroke-width="1.3" fill="none"/>
+  <path d="M420 94 L560 124" stroke="#78716c" stroke-width="1.3" fill="none"/>
+
+  <rect x="28" y="126" width="264" height="52" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.4"/>
+  <text x="160" y="146" text-anchor="middle" font-size="10" font-weight="700" fill="#1e3a8a">l'ALIYA (hagrala mamach)</text>
+  <text x="160" y="164" text-anchor="middle" font-size="8.6" fill="#1e40af">alors nous sommes deja d'accord sur elle</text>
+
+  <rect x="428" y="126" width="264" height="52" rx="6" fill="#f5f3ff" stroke="#6d28d9" stroke-width="1.4"/>
+  <text x="560" y="146" text-anchor="middle" font-size="10" font-weight="700" fill="#4c1d95">la HANACHA seulement</text>
+  <text x="560" y="164" text-anchor="middle" font-size="8.6" fill="#5b21b6">l'aliya restant bloquante selon vous</text>
+
+  <rect x="28" y="192" width="264" height="80" rx="6" fill="#ecfdf5" stroke="#047857" stroke-width="1.4"/>
+  <text x="160" y="212" text-anchor="middle" font-size="10.6" font-weight="700" fill="#064e3b">je diverge sur UN point</text>
+  <text x="42" y="232" font-size="8.6" fill="#065f46">hagrala : d'accord, non bloquante</text>
+  <text x="42" y="248" font-size="8.6" fill="#065f46">viddouy : je dis bloquant, vous non</text>
+  <text x="42" y="264" font-size="8.6" font-weight="700" fill="#047857">=&gt; 1 seule divergence : le viddouy</text>
+
+  <rect x="428" y="192" width="264" height="80" rx="6" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.4"/>
+  <text x="560" y="212" text-anchor="middle" font-size="10.6" font-weight="700" fill="#7f1d1d">je diverge sur DEUX points</text>
+  <text x="442" y="232" font-size="8.6" fill="#991b1b">hagrala : je dis non bloquante du tout</text>
+  <text x="442" y="248" font-size="8.6" fill="#991b1b">viddouy : je dis bloquant, vous non</text>
+  <text x="442" y="264" font-size="8.6" font-weight="700" fill="#b91c1c">=&gt; 2 divergences</text>
+</svg></div><div class="svg-cap">Rabbi Chimon repond aux deux lectures possibles du mot higril, sans avoir a choisir entre elles.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּא שְׁמַע: פַּר מְעַכֵּב אֶת הַשָּׂעִיר,</div>
+            <div class="fr"><p>Viens et entends : le taureau est me&#x27;akev pour le bouc,</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>פַּר מְעַכֵּב אֶת הַשָּׂעִיר</b> אִם הִקְדִּים אַחַת מִן הָעֲבוֹדוֹת שֶׁל שָׂעִיר הַמְאֻוחָרוֹת לְשֶׁל פָּר וַעֲשָׂאָהּ קֹודֶם לְפַר הַפָּר שֶׁהוּא רָאוּי לִיקָּדֵם לָהּ מְעַכְּבָא וּפוֹסְלָהּ וְאֵינָהּ עוֹלָה לוֹ וְצָרִיךְ לַחֲזֹור וְלַעֲשׂוֹתָהּ לְאַחַר הַפָּר וְסֵדֶר עֲבוֹדוֹתֵיהֶן כָּךְ הִיא בַּפָּרָשָׁה בַּתְּחִילָּה מִתְוַדֶּה עַל הַפָּר וִידּוּי רִאשׁוֹן וְאַחַ&quot;כּ מַגְרִיל עַל הַשָּׂעִיר וְאַחַר כָּךְ מִתְוַדֶּה עַל הַפָּר וִידּוּי שֵׁנִי וּשְׁחָטוֹ וּמַכְנִיס כַּף וּמַחְתָּה וְנוֹתֵן אֶת הַקְּטֹורֶת עַל הָאֵשׁ (וְגוֹ&#x27;) וְנוֹתֵן מִדַּם הַפָּר עַל הַכַּפֹּורֶת וְאַחַר כָּךְ שׁוֹחֵט אֶת הַשָּׂעִיר וְנוֹתֵן מִמֶּנּוּ עַל הַכַּפֹּורֶת וְאַחַר כָּךְ נוֹתֵן מִדַּם הַפָּר עַל הַפָּרֹוכֶת וְאַחַר כָּךְ מִדַּם הַשָּׂעִיר וְאַחַר כָּךְ מְעָרֵב דָּמִים וְנוֹתֵן עַל מִזְבֵּחַ הַפְּנִימִי:</div>
+          <div class="glose-fr">Le taureau est me&#x27;akev pour le bouc -- s&#x27;il a avance l&#x27;un des services du bouc qui viennent apres ceux du taureau et l&#x27;a accompli avant [le service du] taureau, le taureau, qui devait le preceder, est bloquant et l&#x27;invalide : ce service ne lui compte pas, et il devra le refaire apres celui du taureau. Et voici l&#x27;ordre de leurs services d&#x27;apres la section [de la Torah] : au debut il confesse sur le taureau le premier viddouy ; ensuite il tire les sorts sur le bouc ; ensuite il confesse sur le taureau le second viddouy ; il l&#x27;egorge ; il fait entrer la cuiller et l&#x27;encensoir et depose le ketoret (l&#x27;encens) sur le feu ; il asperge du sang du taureau sur le kaporet ; ensuite il egorge le bouc et asperge de son sang sur le kaporet ; ensuite il asperge du sang du taureau sur le parochet ; ensuite du sang du bouc ; ensuite il melange les sangs et en depose sur l&#x27;autel interieur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Troisieme et derniere attaque, la plus technique. Elle part d'une beraita sur l'<b>ordre</b> des services : taureau et bouc alternent tout au long de la journee, et la beraita pose une asymetrie -- deranger l'ordre dans un sens invalide, dans l'autre non.</p><p>Rachi profite du passage pour recapituler la sequence entiere. Retenir cette liste rend la suite du folio lisible : toute la discussion consistera a chercher <i>quel couple d'actes</i> la beraita peut bien avoir en vue.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְשָׂעִיר אֵין מְעַכֵּב אֶת הַפָּר בְּמַתָּנוֹת שֶׁבִּפְנִים.</div>
+            <div class="fr"><p>et le bouc n&#x27;est pas me&#x27;akev pour le taureau, dans les aspersions [faites] a l&#x27;interieur.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲבָל הַשָּׂעִיר אֵינוֹ מְעַכֵּב אֶת הַפָּר</b> אִם הִקְדִּים עֲבוֹדַת הַפָּר וְהוּא מִן הַמְאֻוחָרוֹת לְשֶׁל שָׂעִיר וַעֲשָׂאָהּ לִפְנֵי שָׂעִיר אֵין הַשָּׂעִיר שֶׁהָיָה רָאוּי לִיקָּדֵם לָהּ פּוֹסְלָהּ:</div>
+          <div class="glose-fr">Mais le bouc n&#x27;est pas me&#x27;akev pour le taureau -- s&#x27;il a avance un service du taureau qui vient apres ceux du bouc et l&#x27;a accompli avant [le service du] bouc, le bouc, qui devait le preceder, ne l&#x27;invalide pas.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בַּמַּתָּנוֹת שֶׁבִּפְנִים</b> קָאָמְרִי דְּסֵדֶר הַפָּר מְעַכֵּב אֶת הַשָּׂעִיר:</div>
+          <div class="glose-fr">Dans les aspersions de l&#x27;interieur -- c&#x27;est de celles-la qu&#x27;ils disent que l&#x27;ordre du taureau est bloquant pour le bouc.</div>
+        </div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בִּשְׁלָמָא פַּר מְעַכֵּב אֶת הַשָּׂעִיר: דְּאִי אַקְדְּמֵיהּ לְשָׂעִיר מִקַּמֵּי פַּר — לָא עֲבַד וְלֹא כְּלוּם. אֶלָּא שָׂעִיר אֵין מְעַכֵּב אֶת הַפָּר — מַאי נִיהוּ?</div>
+            <div class="fr"><p>Soit, &quot;le taureau est me&#x27;akev pour le bouc&quot; : car s&#x27;il a fait passer le bouc avant le taureau, il n&#x27;a rien fait du tout. Mais &quot;le bouc n&#x27;est pas me&#x27;akev pour le taureau&quot; -- de quoi s&#x27;agit-il ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִי אָקָדֶמְיָה לַשָּׂעִיר</b> עַל בֵּין הַבַּדִּים מִקַּמֵּי פַּר לֹא עָשָׂה כְּלוּם:</div>
+          <div class="glose-fr">S&#x27;il a fait passer le bouc -- [l&#x27;aspersion] entre les barres (bein habadim) avant celle du taureau, il n&#x27;a rien fait.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא שָׂעִיר אֵינוֹ מְעַכֵּב אֶת הַפָּר מַאי נִיהוּ</b> אֵיזֶה עֲבוֹדָה מָצִינוּ בְּשָׂעִיר הַקּוֹדֶמֶת לְשֶׁל פַּר בְּמַתְּנוֹת פָּנִים דְּנֵימָא עֲלָהּ שֶׁאִם שִׁינָּה לְהַקְדִּים אֶת שֶׁל פַּר לְפָנֶיהָ אֵין הַשָּׂעִיר הָרָאוּי לִיקָּדֵם לָהּ פּוֹסְלָהּ:</div>
+          <div class="glose-fr">Mais le bouc n&#x27;est pas me&#x27;akev pour le taureau, de quoi s&#x27;agit-il -- quel service du bouc trouvons-nous qui precede un service du taureau parmi les aspersions de l&#x27;interieur, dont on pourrait dire que, s&#x27;il a change l&#x27;ordre en placant celui du taureau avant lui, le bouc qui devait le preceder ne l&#x27;invalide pas ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La premiere moitie de la beraita se comprend d'elle-meme : le sang du taureau precede le sang du bouc entre les barres de l'arche, et intervertir les deux annule purement et simplement l'acte fait trop tot.</p><p>Mais la seconde moitie exige de trouver un cas concret : parmi les aspersions faites <b>a l'interieur</b> du Saint des Saints, quel acte du <i>bouc</i> precede un acte du <i>taureau</i> ? C'est cette recherche qui va occuper les segments 8 a 13 -- et la guemara n'en trouvera pas d'autre que la hagrala.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִילֵּימָא דְּאִי אַקְדֵּים מַתָּנוֹת דְּפַר בַּהֵיכָל מִקַּמֵּי מַתָּנוֹת דְּשָׂעִיר בִּפְנִים — ״חֻוקָּה״ כְּתִיב בְּהוּ.</div>
+            <div class="fr"><p>Si l&#x27;on dit : du cas ou il a fait passer les aspersions du taureau dans le Heikhal avant les aspersions du bouc a l&#x27;interieur -- mais &quot;houka&quot; est ecrit a leur sujet !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בַּהֵיכָל</b> עַל הַפָּרֹוכֶת:</div>
+          <div class="glose-fr">Dans le Heikhal -- sur le parochet.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>חֻוקָּה כְּתִיבָא בְּהוּ</b> דְּהָא אֲפִילּוּ רַבִּי יְהוּדָה מוֹדֶה דְּאַדְּבָרִים הַנַּעֲשִׂין בִּפְנִים כְּתִיב חֻוקָּה וַהֲרֵי שִׁינָּה זֶה בַּעֲבוֹדוֹת פָּנִים שֶׁהֲרֵי הִקְדִּים לָהּ אֶת שֶׁל חוּץ שֶׁהִיא מְאֻוחֶרֶת לָהּ:</div>
+          <div class="glose-fr">&quot;Houka&quot; est ecrit a leur sujet -- car meme Rabbi Yehouda concede que &quot;houka&quot; est ecrit au sujet des actes accomplis a l&#x27;interieur ; or celui-ci a bien change l&#x27;ordre au sein des services interieurs, puisqu&#x27;il a place avant l&#x27;un d&#x27;eux un service exterieur qui lui est posterieur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Premier candidat, ecarte aussitot. Le mot <b>houka</b> ("ce sera pour vous une loi", Vayikra 16:29) est le marqueur biblique de ce qui est indispensable : partout ou il porte, l'ordre prescrit devient bloquant.</p><p>Or il porte sur tout ce qui se fait <b>a l'interieur</b> du Saint des Saints -- et sur ce point meme Rabbi Yehouda, pourtant le plus permissif, ne discute pas. Avancer une aspersion faite dans le Heikhal (sur le parochet) au detriment d'une aspersion faite a l'interieur, c'est deranger l'ordre des services interieurs : la beraita ne peut donc pas declarer cela valide.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא לָאו, דְּאַקְדֵּים מַתָּנוֹת דְּפַר בִּפְנִים מִקַּמֵּי הַגְרָלָה. וּמִדְּסִדְרָא לָא מְעַכְּבָא — (עִיקָּרָא) הַגְרָלָה נָמֵי לָא מְעַכְּבָא!</div>
+            <div class="fr"><p>N&#x27;est-ce donc pas [du cas] ou il a fait passer les aspersions du taureau a l&#x27;interieur avant la hagrala ? Et puisque l&#x27;ordre n&#x27;est pas bloquant, la hagrala non plus n&#x27;est pas bloquante !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא לָאו דְּאַקְדֵּים מַתָּנוֹת דְּפַר בִּפְנִים מִקַּמֵּי הַגְרָלָה</b> דְּשָׂעִיר דְּעַל כָּרְחֲךָ אִינָךְ מוֹצֵא עֲבוֹדוֹת שָׂעִיר קֹודֶם מַתָּנוֹת דְּפַר בִּפְנִים אֶלָּא זוֹ וְקָתָנֵי דְּלָא מְעַכְּבָא:</div>
+          <div class="glose-fr">Plutot, n&#x27;est-ce pas qu&#x27;il a fait passer les aspersions du taureau a l&#x27;interieur avant la hagrala -- du bouc ; car necessairement, tu ne trouveras aucun service du bouc anterieur aux aspersions du taureau a l&#x27;interieur, sinon celle-ci -- et [la beraita] enseigne qu&#x27;elle n&#x27;est pas bloquante.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמִדְּסִידְרָא לָא מְעַכְּבָא הַגְרָלָה נָמֵי לָא מְעַכְּבָא</b> אֲפִילּוּ עָקַר לָהּ לְגַמְרֵי אַלְמָא אִיכָּא לְמָאֵן דְּאָמַר הַגְרָלָה לָא מְעַכְּבָא וְקַשְׁיָא לְמָאֵן דְּאָמַר אֲפִילּוּ לְרַבִּי יְהוּדָה מְעַכְּבָא וְכָל שֶׁכֵּן לְרַבִּי נְחֶמְיָה הָא מַנִּי:</div>
+          <div class="glose-fr">Et puisque son ordre n&#x27;est pas bloquant, la hagrala non plus n&#x27;est pas bloquante -- meme s&#x27;il l&#x27;a supprimee entierement. Il y a donc bien un avis selon lequel la hagrala n&#x27;est pas bloquante, ce qui fait difficulte pour celui qui dit que, meme selon Rabbi Yehouda, elle est bloquante (et a plus forte raison selon Rabbi Nehemya) : de qui serait alors cette [beraita] ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Par elimination, il ne reste qu'un candidat : le seul acte du bouc qui precede les aspersions du sang du taureau a l'interieur, c'est la <b>hagrala</b> elle-meme (voir la frise de l'ordre des services : le tirage au sort vient tres tot, bien avant tout sang).</p><p>Et la conclusion tombe, redoutable : si l'on peut deplacer la hagrala apres le sang du taureau sans invalider quoi que ce soit, c'est qu'elle ne bloque pas -- et Rachi tire le trait jusqu'au bout : <i>meme si on la supprimait entierement</i>. Rabbi Yannai, qui soutient qu'elle bloque y compris chez Rabbi Yehouda, n'a alors plus aucun tanna a qui attribuer cette beraita.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 340" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="340" fill="#fffdf8"/>
+  <text x="370" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Chasse au cas : "le bouc n'est pas me'akev pour le taureau" -- de quoi parle-t-on ?</text>
+  <text x="370" y="42" text-anchor="middle" font-size="9.6" fill="#57534e">Trois candidats sont examines. Deux tombent, le troisieme decide du sort de Rabbi Yannai.</text>
+
+  <rect x="24" y="58" width="692" height="72" rx="6" fill="#ffffff" stroke="#a8a29e" stroke-width="1.2"/>
+  <text x="36" y="78" font-size="10.2" font-weight="700" fill="#292524">Candidat A -- sang du taureau sur le PAROCHET avance avant le sang du bouc a l'INTERIEUR</text>
+  <text x="36" y="97" font-size="8.8" fill="#57534e">(seg. 8) Ce serait valide apres coup, dit la beraita.</text>
+  <rect x="470" y="86" width="234" height="34" rx="5" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="587" y="107" text-anchor="middle" font-size="9.6" font-weight="700" fill="#7f1d1d">REJETE : houka est ecrit sur l'interieur</text>
+  <text x="36" y="116" font-size="8.8" fill="#57534e">Meme Rabbi Yehouda l'admet : l'ordre y est bloquant.</text>
+
+  <rect x="24" y="142" width="692" height="76" rx="6" fill="#ffffff" stroke="#a8a29e" stroke-width="1.2"/>
+  <text x="36" y="162" font-size="10.2" font-weight="700" fill="#292524">Candidat B -- sang du taureau sur l'AUTEL interieur avance avant le sang du bouc dans le HEIKHAL</text>
+  <text x="36" y="181" font-size="8.8" fill="#57534e">(seg. 10) Ce serait Rabbi Yehouda : hors du Saint des Saints, en vetements blancs, l'ordre n'est pas bloquant.</text>
+  <rect x="470" y="172" width="234" height="34" rx="5" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="587" y="193" text-anchor="middle" font-size="9.6" font-weight="700" fill="#7f1d1d">REJETE : la beraita dit bien "a l'interieur"</text>
+  <text x="36" y="203" font-size="8.8" fill="#57534e">Or ces deux actes-la se font dehors : la clause finale ne colle pas.</text>
+
+  <rect x="24" y="230" width="692" height="98" rx="6" fill="#fef9c3" stroke="#a16207" stroke-width="1.6"/>
+  <text x="36" y="250" font-size="10.2" font-weight="700" fill="#713f12">Candidat C -- sang du taureau a l'INTERIEUR avance avant la HAGRALA</text>
+  <text x="36" y="268" font-size="8.8" fill="#854d0e">(seg. 9) Seul acte du bouc anterieur au sang du taureau a l'interieur : la hagrala. Il reste donc seul en lice.</text>
+  <text x="36" y="286" font-size="8.8" fill="#854d0e">Si deranger son ordre ne bloque pas, on en deduirait que la supprimer ne bloque pas non plus.</text>
+  <rect x="36" y="294" width="330" height="26" rx="5" fill="#eef2ff" stroke="#4338ca" stroke-width="1.2"/>
+  <text x="201" y="311" text-anchor="middle" font-size="8.8" font-weight="700" fill="#312e81">Sortie 1 (seg. 12) : la beraita est de Rabbi Chimon</text>
+  <rect x="378" y="294" width="326" height="26" rx="5" fill="#ecfdf5" stroke="#047857" stroke-width="1.2"/>
+  <text x="541" y="311" text-anchor="middle" font-size="8.8" font-weight="700" fill="#064e3b">Sortie 2 (seg. 13) : ordre non bloquant, hagrala bloquante</text>
+</svg></div><div class="svg-cap">Les trois cas candidats et leur sort : seule la hagrala tient debout, et c&#x27;est justement le probleme.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לֹא, דְּאַקְדֵּים מַתָּנוֹת דְּפַר בְּמִזְבֵּחַ מִקַּמֵּי מַתָּנוֹת דְּשָׂעִיר בַּהֵיכָל, וְרַבִּי יְהוּדָה הִיא, דְּאָמַר: דְּבָרִים הַנַּעֲשִׂין בְּבִגְדֵי לָבָן בַּחוּץ — לָא מְעַכְּבִי.</div>
+            <div class="fr"><p>Non : [il s&#x27;agit du cas] ou il a fait passer les aspersions du taureau sur l&#x27;autel avant les aspersions du bouc dans le Heikhal -- et c&#x27;est Rabbi Yehouda, qui dit : les actes accomplis en vetements blancs a l&#x27;exterieur ne sont pas bloquants.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּאַקְדִּים מַתָּנוֹת דְּפַר</b> עַל מִזְבֵּחַ הַפְּנִימִי כְּדִכְתִיב (וַיִּקְרָא ט״ז:י״ח) וְלָקַח מִדַּם הַפָּר וּמִדַּם הַשָּׂעִיר וְגוֹ&#x27; וְהָיָה לוֹ לְאַחֲרוֹ עַד גְּמַר מַתְּנוֹת הַפָּרֹוכֶת:</div>
+          <div class="glose-fr">Il a fait passer les aspersions du taureau -- sur l&#x27;autel interieur, comme il est ecrit (Vayikra 16:18) &quot;et il prendra du sang du taureau et du sang du bouc...&quot; ; or il aurait du les retarder jusqu&#x27;a l&#x27;achevement des aspersions sur le parochet.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Tentative de sauvetage : on cherche un couple d'actes qui soit hors du Saint des Saints, la ou <b>houka</b> ne porte pas. Le melange des sangs sur l'<b>autel interieur</b> (etape 11) aurait du venir apres les aspersions sur le parochet (etapes 9 et 10) ; l'avancer serait valide, selon le principe de Rabbi Yehouda : ce qui se fait <b>en vetements blancs a l'exterieur</b> -- c'est-a-dire hors du Saint des Saints, dans la tenue des services du jour -- n'est pas bloquant.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְהָא בְּמַתָּנוֹת שֶׁבִּפְנִים קָתָנֵי!</div>
+            <div class="fr"><p>Mais [la beraita] enseigne bien &quot;dans les aspersions de l&#x27;interieur&quot; !</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La tentative echoue sur un mot. La beraita a elle-meme circonscrit son propos : <b>bematanot chebifnim</b>, dans les aspersions de l'interieur. Or le melange des sangs sur l'autel et les aspersions sur le parochet se font tous deux <i>dehors</i>. Le candidat B ne colle pas a la lettre du texte.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא: הָא מַנִּי — רַבִּי שִׁמְעוֹן הִיא, דְּאָמַר: הַגְרָלָה לָא מְעַכְּבָא.</div>
+            <div class="fr"><p>Plutot : de qui est-elle ? Elle est de Rabbi Chimon, qui dit : la hagrala n&#x27;est pas bloquante.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Premiere sortie. On accepte la lecture du segment 9 -- la beraita vise bien la hagrala -- mais on refuse d'en faire une objection contre Rabbi Yannai : elle est de <b>Rabbi Chimon</b>, le seul a soutenir ouvertement que la hagrala n'est pas bloquante. Or Rabbi Yannai n'avait jamais parle que de Rabbi Yehouda et de Rabbi Nehemya. Sa these reste intacte.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאִיבָּעֵית אֵימָא: לְעוֹלָם רַבִּי יְהוּדָה הִיא, וּנְהִי דִּכְסִדְרָא לָא מְעַכְּבָא — הַגְרָלָה מִיהָא מְעַכְּבָא.</div>
+            <div class="fr"><p>Et si tu veux, dis : en verite, c&#x27;est Rabbi Yehouda ; et bien que l&#x27;ordre ne soit pas bloquant, la hagrala, elle, l&#x27;est tout de meme.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּנְהִי דִּבְסִדְרָא לָא מְעַכְּבָא</b> הַגְרָלָה דְּהָא לְרַבִּי יְהוּדָה לָא כְּתִיבָה חֻוקָּה אַדְּבָרִים הַנַּעֲשִׂים בַּחוּץ הַגְרָלָה מִיהָא כִּי עָקַר לָהּ לְגַמְרֵי מְעַכְּבָא דִּתְנָא בָּהּ קְרָא כְּדַאֲמָרָן:</div>
+          <div class="glose-fr">Et bien que dans l&#x27;ordre elle ne soit pas bloquante -- [a savoir] la hagrala, puisque selon Rabbi Yehouda &quot;houka&quot; n&#x27;est pas ecrit au sujet des actes accomplis a l&#x27;exterieur ; la hagrala, en revanche, lorsqu&#x27;il la supprime entierement, est bien bloquante, puisque le verset l&#x27;a repetee, comme nous l&#x27;avons dit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Seconde sortie, et la plus interessante : elle brise l'inference que le segment 9 tenait pour evidente. De "deranger l'ordre ne bloque pas", on ne peut pas conclure "supprimer ne bloque pas". Ce sont deux exigences distinctes, appuyees sur deux sources distinctes.</p><p>L'<b>ordre</b> ne devient bloquant que par le mot <b>houka</b>, qui ne couvre pas, selon Rabbi Yehouda, ce qui se fait hors du Saint des Saints -- et la hagrala se fait dehors. L'<b>existence</b> de la hagrala, elle, est rendue bloquante par un tout autre mecanisme : <b>tana bah kra</b>, le verset l'a repetee (voir Rachi au segment 1). La beraita peut donc etre de Rabbi Yehouda sans contredire Rabbi Yannai.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאַזֵּדוֹ לְטַעְמַיְיהוּ, דְּתַנְיָא:</div>
+            <div class="fr"><p>Et [Rabbi Yehouda et Rabbi Chimon] suivent chacun leur ligne de raisonnement, car il a ete enseigne :</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאַזֵּדוֹ לְטַעְמַיְיהוּ</b> אַפְּלוּגְתָּא דְּלָא הִתְוַדָּה קָאֵי וּמִיקַּמֵּי תָּא שְׁמַע פַּר מְעַכֵּב אֶת הַשָּׂעִיר גָּרְסִינַן לֵיהּ:</div>
+          <div class="glose-fr">Et ils suivent leur ligne de raisonnement -- cela se rapporte a la divergence sur &quot;il n&#x27;a pas confesse&quot;, et il faut le lire avant &quot;Viens et entends : le taureau est me&#x27;akev pour le bouc&quot;.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאַזֵּדוֹ לְטַעְמַייְהוּ דְּתַנְיָא יַעֲמֹד חַי כו&#x27;</b> פרש&quot;י דְּאַוִּידּוּי קָאֵי וְאָמַר שֶׁיֵּשׁ לִגְרֹוס אוֹתוֹ לְעֵיל קֹודֶם ת&quot;ש פַּר מְעַכֵּב אֶת הַשָּׂעִיר ול&quot;נ כְּגִירְסַת הַסְּפָרִים וְקָאֵי אַהַגְרָלָה וּמִשּׁוּם דְּקָאָמַר אִי בָּעֵית אֵימָא ר&quot;ש דְּאָמַר הַגְרָלָה לָא מְעַכְּבָא וְאִי בָּעֵית אֵימָא רַבִּי יְהוּדָה נְהִי דִּבְסִידְרָא לָא מְעַכְּבָא הַגְרָלָה מְעַכְּבָא הֵיכָא דְּלָא עָלָה הַגּוֹרָל כְּלָל כו&#x27; וְאַזֵּדוֹ לְטַעְמַייְהוּ דְּכִי הֵיכִי דִּפְלִיג ר&#x27; יְהוּדָה אַרַבִּי שִׁמְעוֹן הֵיכָא דְּלָא עָלָה הַגּוֹרָל מֵעוֹלָם הָכָא נָמֵי פְּלִיג הֵיכָא דְּעָלָה הַגּוֹרָל וּמֵת הַמִּשְׁתַּלֵּחַ קֹודֶם מַתַּן דָּמִים דְּשָׂעִיר הַפְּנִימִי דִּסְבִירָא לֵיהּ לְרַבִּי יְהוּדָה יִשָּׁפֵךְ הַדָּם וְיָבִיא שְׁנַיִם אֲחֵרִים וְיַגְרִיל עֲלֵיהֶם בַּתְּחִילָּה דְּתַנְיָא יָעֳמַד חַי עַד מָתַי יְהֵא זָקוּק לִחְיוֹת עַד מַתַּן דָּמִים שֶׁל חֲבֵירוֹ וּלְכַפֵּר עָלָיו דִּקְרָא הָוֵי פֵּירוּשׁ עַד שֶׁיִּכְפְּרוּ בַּחֲבֵירוֹ וְר&#x27; שִׁמְעוֹן סָבַר אֵין צָרִיךְ וּלְכַפֵּר עָלָיו אַשָּׂעִיר הַמִּשְׁתַּלֵּחַ קָאֵי וְה&quot;ק וְהַשָּׂעִיר אֲשֶׁר עָלָה עָלָיו הַגּוֹרָל לַעֲזָאזֵל יָעֳמַד חַי עַד שֶׁיְּכַפֵּר עָלָיו בְּוִידּוּי וְאִם מֵת קֹודֶם וִידּוּי מֵבִיא אַחֵר בְּלֹא הַגְרָלָה וְאִם מֵת אַחַר וִידּוּי אֵין צָרִיךְ לְהָבִיא אַחֵר אַף ע&quot;פ שֶׁלֹּא שִׁילְּחוּ עֲדַיִין דְּשִׁילּוּחַ אֵינוֹ מְעַכֵּב וְאִם מֵת הַמִּשְׁתַּלֵּחַ קֹודֶם וִידּוּי וְקֹודֶם זְרִיקַת דְּמֵי חֲבֵירוֹ יִזָּרֵק הַדָּם שֶׁל חֲבֵירוֹ וּמֵבִיא שָׂעִיר אַחֵר בְּלֹא הַגְרָלָה וּמִתְוַדֶּה עָלָיו וְלֹא יַגְרִיל אֲפִילּוּ לְמִצְוָה דְּאֵין הַגְרָלָה אֶלָּא בִּשְׁנַיִם כְּדִכְתִיב עַל שְׁנֵי הַשְּׂעִירִים וְאִם הָיָה מֵבִיא שְׁנַיִם הָיָה צָרִיךְ לִשְׁפֹּוךְ הַדָּם אוֹ לְאַבֵּד אֶת הַשֵּׁנִי. (עִמּוֹ) שֶׁיַּעֲלֶה עָלָיו הַגּוֹרָל לַשֵּׁם וּכְמוֹ שֶׁפֵּירַשׁ&#x27; דִּלְרַבִּי יְהוּדָה כְּשֶׁמֵּת הַמִּשְׁתַּלֵּחַ צָרִיךְ לְהָבִיא שְׁנַיִם אֲחֵרִים וּלְהַגְרִיל עֲלֵיהֶם בַּתְּחִילָּה הָכִי תְּנַן לְקַמָּן בְּפֶרֶק שְׁנֵי שְׂעִירֵי (יוֹמָא ד&#x27; סב.) וּמְסַייֵּם עֲלָהּ וְהַשֵּׁנִי יִרְעֶה עַד שֶׁיִּסְתָּאֵב רַבִּי יְהוּדָה אוֹמֵר תָּמוּת וְעוֹד א&quot;ר יְהוּדָה מֵת הַמִּשְׁתַּלֵּחַ יִשָּׁפֵךְ הַדָּם ובת&quot;כ נָמֵי אִיכָּא בְּהֶדְיָא מֵת אֶחָד מֵהֶם מִשֶּׁהִגְרִיל יָבִיא שְׁנַיִם אֲחֵרִים וְיַגְרִיל דִּבְרֵי רַבִּי יְהוּדָה וּמֵהַאי קְרָא נָפְקָא לָן לְרַבִּי יְהוּדָה דְּמִיָּד בָּתַר פְּלוּגְתָּא דְּרַבִּי יְהוּדָה וְרַבִּי שִׁמְעוֹן גָּרְסִינַן הָתָם לְשַׁלַּח אוֹתוֹ שֶׁאִם נִשְׁפַּךְ הַדָּם יָמוּת הַמִּשְׁתַּלֵּחַ מֵת הַמִּשְׁתַּלֵּחַ יִשָּׁפֵךְ הַדָּם וְהַאי מִילְּתָא אֲתַאן לְרַבִּי יְהוּדָה דְּרַבִּי שִׁמְעוֹן סְבִירָא לֵיהּ מֵת אֶחָד מֵהֶן מֵבִיא חֲבֵירוֹ בְּלֹא הַגְרָלָה אֶלָּא וַדַּאי רַבִּי יְהוּדָה הִיא וּדְרֵישׁ יַעֲמֹד חַי כְּדֵי לְכַפֵּר בּוֹ כֵּיוָן שֶׁאִם מֵת הַמִּשְׁתַּלֵּחַ לֹא יוּכַל לְכַפֵּר עוֹד בַּחֲבֵירוֹ אֶלָּא יִשָּׁפֵךְ הַדָּם וּדְרֵישׁ נָמֵי לְכַפֵּר עָלָיו לְשַׁלַּח אֹותוֹ שֶׁאִם רוֹצֶה לְשַׁלַּח אוֹתוֹ אֵינוֹ יָכוֹל לְשַׁלְּחוֹ אֶלָּא אִם כֵּן כִּפֵּר בַּחֲבֵירוֹ אֲבָל אִם נִשְׁפַּךְ הַדָּם יָמוּת הַמִּשְׁתַּלֵּחַ וְכֵיוָן דִּלְר&#x27; יְהוּדָה מִיעַכְּבִי אַהֲדָדֵי וְצָרִיךְ לְהָבִיא שְׁנַיִם אֲחֵרִים כָּל הֵיכָא דְקָרֵינַן בֵּיהּ וְלָקְחוּ שְׁנֵי הַשְּׂעִירִים קְרִי בֵיהּ נָמֵי וְנָתַן עַל שְׁנֵי הַשְּׂעִירִים גּוֹרָלוֹת אֲבָל לְר&#x27; שִׁמְעוֹן דְּדָרֵישׁ עַד שְׁעַת כַּפָּרַת דְּבָרִים דְּאֵינָן תְּלוּיִין זֶה בָּזֶה אֶלָּא שָׂעִיר הַמִּשְׁתַּלֵּחַ תָּלוּי בַּמַּעֲשֶׂה שֶׁבְּגוּפוֹ וְאִם נִשְׁפַּךְ הַדָּם לֹא יָמוּת הַמִּשְׁתַּלֵּחַ אֶלָּא יִתְוַדֶּה עָלָיו כֵּיוָן שֶׁהוּא חַי מֵבִיא אַחֵר שֶׁלֹּא בְּהַגְרָלָה דְּלָא קָרֵינַן בֵּיהּ וְלָקַח אֶת שְׁנֵי הַשְּׂעִירִים לָא קָרֵינַן בֵּיהּ נָמֵי וְנָתַן עַל שְׁנֵי הַשְּׂעִירִים גּוֹרָלוֹת וא&quot;ת אִם כֵּן תִּיקְשֵׁי מִכָּאן לָמֶ&quot;ד אַלִּיבָּא דְּר&#x27; יְהוּדָה דְּהַגְרָלָה לָא מְעַכְּבָא וְי&quot;ל דְּאִיכָּא לְמֵימַר הָא דְּיִשָּׁפֵךְ הַדָּם כְּשֶׁמֵּת הַמִּשְׁתַּלֵּחַ לָאו הַיְינוּ מִשּׁוּם הַגְרָלָה אֶלָּא מִשּׁוּם דְּבָעֵינַן וְלָקַח אֶת שְׁנֵי הַשְּׂעִירִים שֶׁיְּהוּ נִיקָּחֵין כְּאַחַת א&quot;נ כֵּיוָן דְּהֻוקְבְּעוּ כְּבָר כְּאַחַת אִם מֵת אֶחָד מֵהֶן גַּם הַשֵּׁנִי יִדָּחֶה הִלְכָּךְ צָרִיךְ לְהָבִיא אֲחֵרִים וְכֵיוָן דְּלָא סַגִּי דְּלָא מַיְיתֵי אַחֲרֵינִי מַגְרִיל עֲלֵיהֶם לְמִצְוָה וְלֵר&#x27; שִׁמְעוֹן לְמִצְוָה נָמֵי לֹא כֵּיוָן דִּסְבִירָא לֵיהּ דְּאֵינוֹ מֵבִיא אֶלָּא אֶחָד אֵין שַׁיָּיךְ בּוֹ הַגְרָלָה:</div>
+          <div class="glose-fr">Et ils suivent leur ligne de raisonnement, car il a ete enseigne : &quot;il sera place vivant&quot;, etc. -- Rachi explique que cela se rapporte au viddouy, et qu&#x27;il faut lire ce passage plus haut, avant &quot;Viens et entends : le taureau est me&#x27;akev pour le bouc&quot;. Mais il me semble [qu&#x27;il faut garder] la version des livres, et que cela se rapporte a la hagrala. En effet, puisqu&#x27;il a dit &quot;si tu veux, dis : c&#x27;est Rabbi Chimon, qui tient que la hagrala n&#x27;est pas bloquante ; et si tu veux, dis : c&#x27;est Rabbi Yehouda -- bien que l&#x27;ordre ne soit pas bloquant, la hagrala l&#x27;est la ou le sort n&#x27;est pas monte du tout&quot;, etc., alors &quot;ils suivent leur ligne de raisonnement&quot; signifie : de meme que Rabbi Yehouda diverge de Rabbi Chimon dans le cas ou le sort n&#x27;est jamais monte, de meme il diverge dans le cas ou le sort est monte, puis ou le bouc envoye est mort avant l&#x27;aspersion du sang du bouc interieur. Car Rabbi Yehouda tient que le sang doit etre repandu et qu&#x27;il faut amener deux autres [boucs] et tirer les sorts sur eux depuis le debut, comme il a ete enseigne : &quot;il sera place vivant&quot; -- jusqu&#x27;a quand doit-il rester en vie ? Jusqu&#x27;a l&#x27;aspersion du sang de son compagnon ; et &quot;pour expier par lui&quot; -- le verset signifie : jusqu&#x27;a ce que l&#x27;on ait expie par son compagnon. Et Rabbi Chimon tient que ce n&#x27;est pas necessaire : &quot;pour expier sur lui&quot; se rapporte au bouc envoye, et voici le sens : &quot;et le bouc sur lequel est monte le sort pour Azazel sera place vivant&quot; jusqu&#x27;a ce qu&#x27;on expie sur lui par le viddouy. S&#x27;il est mort avant le viddouy, on en amene un autre sans hagrala ; s&#x27;il est mort apres le viddouy, il n&#x27;est pas necessaire d&#x27;en amener un autre, meme si on ne l&#x27;a pas encore envoye, car l&#x27;envoi n&#x27;est pas bloquant. Et si le bouc envoye est mort avant le viddouy et avant l&#x27;aspersion du sang de son compagnon, on asperge le sang de son compagnon, on amene un autre bouc sans hagrala et on confesse sur lui ; et l&#x27;on ne tirera pas les sorts, meme a titre de mitsva, car il n&#x27;y a de hagrala qu&#x27;avec deux [boucs], comme il est ecrit &quot;sur les deux boucs&quot; ; et s&#x27;il en amenait deux, il faudrait repandre le sang ou faire perdre le second, celui sur lequel serait monte le sort &quot;pour HaChem&quot;. Et comme nous l&#x27;avons explique, selon Rabbi Yehouda, quand le bouc envoye est mort il faut amener deux autres [boucs] et tirer les sorts sur eux depuis le debut : ainsi l&#x27;enseigne la michna plus loin, au chapitre Chenei Se&#x27;irei (Yoma 62a), qui conclut : &quot;et le second paitra jusqu&#x27;a ce qu&#x27;il devienne impropre ; Rabbi Yehouda dit : il mourra&quot; ; et Rabbi Yehouda a dit encore : &quot;si le bouc envoye est mort, le sang sera repandu&quot;. Et dans le Torat Kohanim aussi il y a explicitement : &quot;si l&#x27;un d&#x27;eux est mort apres qu&#x27;il a tire les sorts, il en amene deux autres et tire les sorts, paroles de Rabbi Yehouda&quot;. Et c&#x27;est de ce verset que nous le deduisons pour Rabbi Yehouda, car immediatement apres la divergence entre Rabbi Yehouda et Rabbi Chimon on lit la-bas : &quot;pour l&#x27;envoyer&quot; -- que si le sang a ete repandu, le bouc envoye doit mourir ; et si le bouc envoye est mort, le sang doit etre repandu. Or cette regle vient selon Rabbi Yehouda, car Rabbi Chimon tient que si l&#x27;un d&#x27;eux est mort, on amene son compagnon sans hagrala. C&#x27;est donc bien Rabbi Yehouda, et il expose &quot;il sera place vivant&quot; -- afin d&#x27;expier par lui : puisque, si le bouc envoye est mort, on ne peut plus expier par son compagnon, mais le sang doit etre repandu ; et il expose de meme &quot;pour expier sur lui, pour l&#x27;envoyer&quot; : que s&#x27;il veut l&#x27;envoyer, il ne le peut qu&#x27;apres avoir expie par son compagnon ; mais si le sang a ete repandu, le bouc envoye doit mourir. Et puisque, selon Rabbi Yehouda, les deux se conditionnent mutuellement et qu&#x27;il faut amener deux autres [boucs], partout ou l&#x27;on peut lire &quot;et il prendra les deux boucs&quot;, on lit aussi &quot;et il posera sur les deux boucs des sorts&quot;. Mais selon Rabbi Chimon, qui expose [le verset] jusqu&#x27;au moment de l&#x27;expiation, ce sont des choses qui ne dependent pas l&#x27;une de l&#x27;autre : le bouc envoye depend de ce qui se fait sur son propre corps ; si le sang a ete repandu, le bouc envoye ne mourra pas, mais on confessera sur lui ; et puisqu&#x27;il est vivant, on en amene un autre sans hagrala, car nous ne lisons pas a son sujet &quot;et il prendra les deux boucs&quot;, et nous ne lisons donc pas non plus &quot;et il posera sur les deux boucs des sorts&quot;. Et si tu demandes : cela ferait alors difficulte pour celui qui dit que, selon Rabbi Yehouda, la hagrala n&#x27;est pas bloquante ! On peut repondre : on peut dire que ce &quot;le sang sera repandu&quot; lorsque le bouc envoye est mort ne tient pas a la hagrala, mais a ce que nous exigeons &quot;et il prendra les deux boucs&quot; -- qu&#x27;ils soient pris ensemble ; ou bien : puisqu&#x27;ils ont deja ete fixes ensemble, si l&#x27;un d&#x27;eux meurt le second est ecarte lui aussi, et il faut donc en amener d&#x27;autres ; et puisqu&#x27;on ne peut faire autrement que d&#x27;en amener d&#x27;autres, on tire les sorts sur eux a titre de mitsva. Et selon Rabbi Chimon, meme a titre de mitsva ce n&#x27;est pas le cas, puisqu&#x27;il tient qu&#x27;on n&#x27;en amene qu&#x27;un seul, et la hagrala ne s&#x27;y applique pas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le folio se clot sur une transition, et sur une divergence de <b>gorsa</b> (de version du texte) entre Rachi et Tossefot. Rachi deplace cette ligne : pour lui, "ils suivent leur ligne de raisonnement" se rattache au debat sur le <b>viddouy</b> et devrait figurer avant le "Viens et entends" du segment 5.</p><p>Tossefot defend au contraire la version des livres : la phrase se rattache a la <b>hagrala</b>. Le lien devient alors tres clair -- Rabbi Yehouda et Rabbi Chimon divergent sur le sort perdu <i>avant</i> le tirage, et ils divergent de la meme facon sur le bouc mort <i>apres</i> le tirage : chez Rabbi Yehouda les deux boucs se tiennent l'un l'autre ("il prendra les <i>deux</i> boucs"), si bien que la mort de l'un fait repandre le sang de l'autre et impose un nouveau couple avec un nouveau tirage ; chez Rabbi Chimon chacun vaut par ce qui se fait sur son propre corps, et un remplacant suffit, sans tirage.</p><p>Tossefot termine en desamorcant l'objection previsible : le "le sang sera repandu" de Rabbi Yehouda peut tenir non a la hagrala, mais a l'exigence que les deux boucs soient <b>pris ensemble</b> -- ce qui laisse intacte la position de celui qui dit que, chez Rabbi Yehouda, la hagrala n'est pas bloquante.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_39b.html">&lsaquo; Yoma 39b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

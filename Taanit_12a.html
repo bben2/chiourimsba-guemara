@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taanit 12a — Ce qui fait un jeune : achever la journee, l&#x27;accepter la veille, et jusqu&#x27;a quand manger la nuit</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Taanit 12a — Ce qui fait un jeune : achever la journee, l&#x27;accepter la veille, et jusqu&#x27;a quand manger la nuit</h1>
+    <div class="ref">Taanit 12a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Taanit_11b.html">&lsaquo; Taanit 11b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Taanit_12b.html">Taanit 12b &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> Le folio definit les conditions qui donnent a une privation de nourriture le statut de jeune. Rav Hisda pose la premiere : un jeune d&#x27;heures ne vaut que si l&#x27;on n&#x27;a rien goute jusqu&#x27;au soir, et tout jeune sur lequel le soleil ne s&#x27;est pas couche n&#x27;est pas appele jeune ; trois objections lui sont posees — les hommes de la garde, la famille de Sena&#x27;a ben Binyamin le dix av, et Rabbi Yohanan — et toutes sont ecartees au motif que ces privations visaient l&#x27;affliction ou la politesse, sans statut de jeune.</p><p>Chmouel pose la seconde condition : l&#x27;acceptation prealable, pendant qu&#x27;il fait encore jour ; sans elle, le jeuneur ressemble a un soufflet rempli de vent. Rav et Chmouel divergent sur le moment exact de cette acceptation, et Rav Yossef cherche un appui dans la Meguilat Taanit, ce qui ouvre la mahloket entre Rabbi Hiya et Rabbi Chimon berabbi sur la lecture d&#x27;un seul mot, yeisar ou yei&#x27;aser, et sur la regle d&#x27;anteriorite entre le vœu d&#x27;un individu et le decret des sages.</p><p>Le folio se clot sur la derniere heure ou l&#x27;on peut manger la nuit precedant un jeune, et sur ce qui vaut interruption : achever le repas, desservir, ou dormir.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 340" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="740" height="340" fill="#fbfaf8"/>
+  <text x="370" y="26" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Les deux conditions d'un jeune a part entiere</text>
+  <rect x="40" y="46" width="300" height="86" rx="9" fill="#e8eef7" stroke="#4a6fa5"/>
+  <text x="190" y="68" text-anchor="middle" font-size="12" font-weight="bold" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">1. Condition de Chmouel</text>
+  <text x="190" y="88" text-anchor="middle" font-size="11" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">L'accepter sur soi la veille,</text>
+  <text x="190" y="104" text-anchor="middle" font-size="11" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">pendant qu'il fait encore jour</text>
+  <text x="190" y="122" text-anchor="middle" font-size="10" fill="#4b5563" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">mibe'od yom — avant le debut du jeune</text>
+  <rect x="400" y="46" width="300" height="86" rx="9" fill="#e8eef7" stroke="#4a6fa5"/>
+  <text x="550" y="68" text-anchor="middle" font-size="12" font-weight="bold" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">2. Condition de Rav Hisda</text>
+  <text x="550" y="88" text-anchor="middle" font-size="11" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Ne rien gouter jusqu'au soir,</text>
+  <text x="550" y="104" text-anchor="middle" font-size="11" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">jusqu'au coucher du soleil</text>
+  <text x="550" y="122" text-anchor="middle" font-size="10" fill="#4b5563" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">chaka aleiv hama — sortie des etoiles</text>
+  <path d="M190 132 L300 168" stroke="#2f7d52" stroke-width="2" fill="none"/>
+  <path d="M550 132 L440 168" stroke="#2f7d52" stroke-width="2" fill="none"/>
+  <rect x="225" y="172" width="290" height="56" rx="9" fill="#e6f2ea" stroke="#2f7d52"/>
+  <text x="370" y="194" text-anchor="middle" font-size="12" font-weight="bold" fill="#14532d" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Taanit gmoura — jeune a part entiere</text>
+  <text x="370" y="214" text-anchor="middle" font-size="10" fill="#25523a" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">on recite Anenou ; le vœu est acquitte ; manger est interdit</text>
+  <rect x="40" y="248" width="300" height="76" rx="9" fill="#f7ecec" stroke="#a33b3b"/>
+  <text x="190" y="270" text-anchor="middle" font-size="12" font-weight="bold" fill="#7a2222" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Condition 1 absente</text>
+  <text x="190" y="290" text-anchor="middle" font-size="11" fill="#5c2a2a" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Rabba bar Chila : il ressemble</text>
+  <text x="190" y="306" text-anchor="middle" font-size="11" fill="#5c2a2a" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">a un soufflet rempli de vent</text>
+  <rect x="400" y="248" width="300" height="76" rx="9" fill="#f7ecec" stroke="#a33b3b"/>
+  <text x="550" y="270" text-anchor="middle" font-size="12" font-weight="bold" fill="#7a2222" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Condition 2 absente</text>
+  <text x="550" y="290" text-anchor="middle" font-size="11" fill="#5c2a2a" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Lets'aorei nafcheih : simple affliction,</text>
+  <text x="550" y="306" text-anchor="middle" font-size="11" fill="#5c2a2a" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">il peut manger des qu'il le veut</text>
+ </svg></div>
+          <figcaption>Acceptation prealable et journee achevee : les deux exigences posees par le folio, et le statut de ce qui leur manque.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 320" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="740" height="320" fill="#fbfaf8"/>
+  <text x="370" y="26" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Trois objections a Rav Hisda, trois fois la meme reponse</text>
+  <rect x="230" y="42" width="280" height="42" rx="8" fill="#fdf3dc" stroke="#b08a2e"/>
+  <text x="370" y="60" text-anchor="middle" font-size="12" font-weight="bold" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Rav Hisda : sans coucher du soleil,</text>
+  <text x="370" y="76" text-anchor="middle" font-size="12" font-weight="bold" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">ce n'est pas appele jeune</text>
+  <path d="M300 84 L140 112" stroke="#8b93a1" stroke-width="1.6" fill="none"/>
+  <path d="M370 84 L370 112" stroke="#8b93a1" stroke-width="1.6" fill="none"/>
+  <path d="M440 84 L600 112" stroke="#8b93a1" stroke-width="1.6" fill="none"/>
+  <rect x="20" y="116" width="220" height="124" rx="9" fill="#eef1f6" stroke="#6b7280"/>
+  <text x="130" y="138" text-anchor="middle" font-size="12" font-weight="bold" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Les hommes de la garde</text>
+  <text x="130" y="160" text-anchor="middle" font-size="11" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Anchei michmar : cohanim et</text>
+  <text x="130" y="176" text-anchor="middle" font-size="11" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">leviim en service au Temple</text>
+  <text x="130" y="198" text-anchor="middle" font-size="11" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Ils jeunent sans achever,</text>
+  <text x="130" y="214" text-anchor="middle" font-size="11" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">retenus par la avoda</text>
+  <text x="130" y="232" text-anchor="middle" font-size="10" fill="#6b7280" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Rachi : et pourtant on les dit jeuneurs</text>
+  <rect x="256" y="116" width="228" height="124" rx="9" fill="#eef1f6" stroke="#6b7280"/>
+  <text x="370" y="138" text-anchor="middle" font-size="12" font-weight="bold" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Sena'a ben Binyamin</text>
+  <text x="370" y="160" text-anchor="middle" font-size="11" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Le neuf av tombe un chabbat,</text>
+  <text x="370" y="176" text-anchor="middle" font-size="11" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">reporte au dix</text>
+  <text x="370" y="198" text-anchor="middle" font-size="11" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Ils jeunent sans achever :</text>
+  <text x="370" y="214" text-anchor="middle" font-size="11" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">le dix av est leur jour de fete</text>
+  <text x="370" y="232" text-anchor="middle" font-size="10" fill="#6b7280" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">jour de leur offrande de bois, Taanit 26a</text>
+  <rect x="500" y="116" width="220" height="124" rx="9" fill="#eef1f6" stroke="#6b7280"/>
+  <text x="610" y="138" text-anchor="middle" font-size="12" font-weight="bold" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Rabbi Yohanan</text>
+  <text x="610" y="160" text-anchor="middle" font-size="11" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Je serai en jeune jusqu'a</text>
+  <text x="610" y="176" text-anchor="middle" font-size="11" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">ce que j'arrive chez moi</text>
+  <text x="610" y="198" text-anchor="middle" font-size="11" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Rachi : arrive a la 2e ou 3e</text>
+  <text x="610" y="214" text-anchor="middle" font-size="11" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">heure, il mangeait</text>
+  <text x="610" y="232" text-anchor="middle" font-size="10" fill="#6b7280" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">formule employee devant le Nassi</text>
+  <path d="M130 240 L200 264" stroke="#2f7d52" stroke-width="1.6" fill="none"/>
+  <path d="M370 240 L370 264" stroke="#2f7d52" stroke-width="1.6" fill="none"/>
+  <path d="M610 240 L540 264" stroke="#2f7d52" stroke-width="1.6" fill="none"/>
+  <rect x="120" y="268" width="500" height="44" rx="9" fill="#e6f2ea" stroke="#2f7d52"/>
+  <text x="370" y="288" text-anchor="middle" font-size="11" font-weight="bold" fill="#14532d" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Reponse unique : ces privations n'ont jamais porte le nom de jeune</text>
+  <text x="370" y="304" text-anchor="middle" font-size="10" fill="#25523a" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">lets'aorei nafcheih, s'affliger avec le public — lichmotei nafcheih, se degager d'une invitation</text>
+ </svg></div>
+          <figcaption>Les trois preuves opposees a Rav Hisda et la distinction qui les desamorce toutes.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 350" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="740" height="350" fill="#fbfaf8"/>
+  <text x="370" y="26" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Un mot de la Meguilat Taanit : yeisar ou yei'aser</text>
+  <rect x="180" y="42" width="380" height="44" rx="8" fill="#fdf3dc" stroke="#b08a2e"/>
+  <text x="370" y="62" text-anchor="middle" font-size="11" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Lahen, kol inich de-yeitei aloui mikadmat dena...</text>
+  <text x="370" y="78" text-anchor="middle" font-size="10" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Toutefois, tout homme qui a pris sur lui auparavant...</text>
+  <path d="M300 86 L200 118" stroke="#8b93a1" stroke-width="1.6" fill="none"/>
+  <path d="M440 86 L540 118" stroke="#8b93a1" stroke-width="1.6" fill="none"/>
+  <rect x="30" y="122" width="330" height="120" rx="9" fill="#e8eef7" stroke="#4a6fa5"/>
+  <text x="195" y="144" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Lecture yeisar (yod)</text>
+  <text x="195" y="164" text-anchor="middle" font-size="11" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Qu'il se lie lui-meme — dans sa priere</text>
+  <text x="195" y="182" text-anchor="middle" font-size="11" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Appui de Rav Yossef pour Chmouel :</text>
+  <text x="195" y="198" text-anchor="middle" font-size="11" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">l'acceptation se fait dans la tefila</text>
+  <text x="195" y="220" text-anchor="middle" font-size="10" fill="#4b5563" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Sans acceptation dans la priere de minha,</text>
+  <text x="195" y="234" text-anchor="middle" font-size="10" fill="#4b5563" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">le vœu ne repousse pas ces jours de fete</text>
+  <rect x="380" y="122" width="330" height="120" rx="9" fill="#f0ecf7" stroke="#6b5b95"/>
+  <text x="545" y="144" text-anchor="middle" font-size="13" font-weight="bold" fill="#3b2f5e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Lecture yei'aser (alef)</text>
+  <text x="545" y="164" text-anchor="middle" font-size="11" fill="#4a3f6b" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Qu'il s'interdise lui-meme — de manger</text>
+  <text x="545" y="182" text-anchor="middle" font-size="11" fill="#4a3f6b" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">La preuve de Rav Yossef tombe :</text>
+  <text x="545" y="198" text-anchor="middle" font-size="11" fill="#4a3f6b" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">le mot ne parle plus d'acceptation</text>
+  <text x="545" y="220" text-anchor="middle" font-size="10" fill="#5a4f7b" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Peu importe alors que le vœu ait ete pris</text>
+  <text x="545" y="234" text-anchor="middle" font-size="10" fill="#5a4f7b" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">dans la priere ou hors de la priere</text>
+  <text x="370" y="264" text-anchor="middle" font-size="12" font-weight="bold" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Pour yei'aser, la baraita donne la regle d'anteriorite</text>
+  <rect x="60" y="276" width="290" height="62" rx="9" fill="#e6f2ea" stroke="#2f7d52"/>
+  <text x="205" y="296" text-anchor="middle" font-size="11" font-weight="bold" fill="#14532d" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Le vœu precede le decret</text>
+  <text x="205" y="314" text-anchor="middle" font-size="10" fill="#25523a" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Le vœu annule le decret :</text>
+  <text x="205" y="328" text-anchor="middle" font-size="10" fill="#25523a" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">il jeune ce jour-la</text>
+  <rect x="390" y="276" width="290" height="62" rx="9" fill="#f7ecec" stroke="#a33b3b"/>
+  <text x="535" y="296" text-anchor="middle" font-size="11" font-weight="bold" fill="#7a2222" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Le decret precede le vœu</text>
+  <text x="535" y="314" text-anchor="middle" font-size="10" fill="#5c2a2a" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Le decret annule le vœu :</text>
+  <text x="535" y="328" text-anchor="middle" font-size="10" fill="#5c2a2a" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">il ne jeune pas ce jour-la</text>
+ </svg></div>
+          <figcaption>La mahloket de Rabbi Hiya et Rabbi Chimon berabbi sur une lettre, et la regle d&#x27;anteriorite entre vœu prive et decret public.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָא דְּאָמְרַתְּ מִתְעַנִּין לְשָׁעוֹת — וְהוּא שֶׁלֹּא טָעַם כְּלוּם עַד הָעֶרֶב. אָמַר לֵיהּ אַבַּיֵּי: הָא תַּעֲנִית מְעַלַּיְיתָא הִיא! לָא צְרִיכָא — דְּאֶימְלַךְ אִימְּלוֹכֵי.</div>
+            <div class="fr"><p>Ce que tu as dit — on peut jeuner par heures — s&#x27;entend a condition qu&#x27;il n&#x27;ait rien goute jusqu&#x27;au soir. Abaye lui dit : mais c&#x27;est la un jeune a part entiere !</p><p>Il repondit : cela devait etre enonce pour le cas ou il a change d&#x27;avis en cours de journee.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָא דְּאָמְרַתְּ מִתְעַנִּין לְשָׁעוֹת וְהוּא שֶׁלֹּא טָעַם כְּלוּם כָּל אוֹתוֹ הַיּוֹם</b> כְּלוֹמַר לֹא אָמְרוּ בְּמִתְעַנֶּה שֶׁאָכַל בּוֹ בַּיּוֹם כְּגוֹן שֶׁהִתְחִיל לְהִתְעַנּוֹת עַד חֲצִי הַיּוֹם וְאַחַ&quot;כּ אָכַל דְּאֵין זֶה עִינּוּי וְאִם אָכַל קֹודֶם חֲצוֹת אֵין בְּכָךְ כְּלוּם דְּאֵינוֹ תַּעֲנִית שֶׁל כְּלוּם אֶלָּא כְּשֶׁהִשְׁלִים כָּל הַיּוֹם אע&quot;פ שֶׁלֹּא קִיבְּלוֹ עָלָיו מֵאֶתְמוֹל וּפָרִיךְ אִי דְּקִבֵּל עָלָיו לְהִתְעַנּוֹת עַד חֲצִי יוֹם וַהֲדַר מִתְעַנֶּה כָּל הַיּוֹם הַאי תַּעֲנִיתָא מְעַלֵּי&#x27; הוּא וּפְשִׁיטָא דְּתַעֲנִית גָּמוּר הוּא וַאֲפִילּוּ תְּפִלַּת תַּעֲנִית נָמֵי מִתְפַּלֵּל עָלָיו וְלָא אִיצְטְרִיךְ לְאוֹקוֹמֵי הֲלָכָה בְּהָכִי דְּזֶהוּ תַּעֲנִית גָּמוּר וְהַאי מַקְשֶׁה סָבַר דְּהַאי הֲלָכָה מִתְעַנִּין לְשָׁעוֹת כְּמַשְׁמָעוֹ דְּיָכוֹל לְהִתְעַנּוֹת עַד חֲצִי הַיּוֹם מִתְעַנֶּה קָרֵינָא בֵיהּ:</div>
+          <div class="glose-fr">C&#x27;est-a-dire : on n&#x27;a pas dit cela de celui qui jeune et qui a mange ce jour-la — par exemple il a commence a jeuner jusqu&#x27;a la moitie du jour puis a mange ensuite — car ce n&#x27;est la aucune privation ; et s&#x27;il a mange avant midi, cela ne compte pour rien, car ce n&#x27;est pas un jeune du tout. Il s&#x27;agit seulement du cas ou il a complete la journee entiere, meme sans l&#x27;avoir accepte sur lui depuis la veille. Et la guemara objecte : s&#x27;il avait accepte sur lui de jeuner jusqu&#x27;a la moitie du jour, puis a jeune toute la journee, c&#x27;est la un excellent jeune, et il est evident que c&#x27;est un jeune complet — il recite meme la priere du jeune ; il n&#x27;etait donc pas necessaire d&#x27;etablir la halakha dans un tel cas, puisque c&#x27;est un jeune complet. Celui qui pose l&#x27;objection pensait que la halakha « on jeune par heures » se prend selon son sens apparent : il peut jeuner jusqu&#x27;a la moitie du jour, et on l&#x27;appelle deja jeuneur.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לָא צְרִיכְנָא דְּמִמְּלִיךְ אִימְּלוֹכֵי</b> כְּלוֹמַר לֹא הָיָה בְּדַעְתּוֹ כְּלָל לְהִתְעַנּוֹת אֶלָּא אֲתָא לֵיהּ טִרְדָּא וְלֹא אָכַל עַד חֲצִי הַיּוֹם וְכִי מְטָא חֲצִי יוֹם מִמְּלִיךְ אָמַר הוֹאִיל וְהִתְעַנֵּיתִי עַד חֲצִי הַיּוֹם אֶתְעַנֶּה כָּל הַיּוֹם:</div>
+          <div class="glose-fr">C&#x27;est-a-dire : il n&#x27;avait aucunement l&#x27;intention de jeuner, mais un empechement lui est survenu et il n&#x27;a pas mange jusqu&#x27;a la moitie du jour ; et lorsque midi est arrive, il a change d&#x27;avis et s&#x27;est dit : puisque j&#x27;ai jeune jusqu&#x27;a midi, je jeunerai toute la journee.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אָמַר רַב יוֹסֵף מַאי קָא סָבַר רַב הוּנָא אִי סָבַר אֵין מִתְעַנִּין לְשָׁעוֹת כְּגוֹן שֶׁקִּיבֵּל עָלָיו בִּזְמַן הַמִּנְחָה לְהִתְעַנּוֹת עַד חֲצִי הַיּוֹם וְשׁוּב נִמְלַךְ וְהִתְעַנָּה עַד הָעֶרֶב לָא שְׁמֵיהּ תַּעֲנִית וְאֵינוֹ מִתְפַּלֵּל עֲנֵנוּ וְכֵן אִם קִיבֵּל עָלָיו תַּעֲנִית יוֹם אֶחָד לֹא יָצָא יְדֵי חוֹבָתוֹ בְּתַעֲנִית זֶה א&quot;כ אֵין זֶה קַבָּלַת תַּעֲנִית וּמֻותָּר לֶאֱכֹול וּמִילְּתָא דְּרַב הוּנָא הָוְיָא בְּתַעֲנִית שָׁעוֹת שֶׁלֹּא קִיבֵּל עָלָיו אֶלָּא יוֹם א&#x27; וְשׁוּב נִמְלַךְ וְהִתְעַנָּה גַּם יוֹם שֵׁנִי הִלְכָּךְ אֵין מִתְפַּלֵּל עֲנֵנוּ בְּיוֹם שֵׁנִי אֲבָל יוֹם רִאשׁוֹן וַדַּאי תַּעֲנִית הָוֵי שֶׁהֲרֵי הִתְעַנָּה יוֹם שֶׁקִּיבֵּל עָלָיו אוֹ דִּילְמָא לְעוֹלָם קָא סָבַר מִתְעַנִּין לְשָׁעוֹת וְאִם קִיבֵּל עָלָיו תַּעֲנִית יוֹם א&#x27; יוֹצֵא יְדֵי חוֹבָתוֹ וְגַם אָסוּר לֶאֱכֹול אֶלָּא דְּלָא מִיקְּרֵי תַּעֲנִית לְעִנְיַן עֲנֵנוּ. וְרַשִׁ&quot;י פִּי&#x27; בְּמַס&#x27; ע&quot;ז (דַּף לד:) מִתְעַנִּין לְשָׁעוֹת כְּגוֹן שֶׁקִּיבֵּל עָלָיו תַּעֲנִית מִשֵּׁשׁ שָׁעוֹת וּלְמַעְלָה אַךְ לֹא טָעַם חֲצִי הַיּוֹם הָרִאשׁוֹן אֶלָּא שֶׁלֹּא נִתְכַּוֵּין לְשֵׁם תַּעֲנִית וצ&quot;ל שֶׁקִּיבֵּל עָלָיו מֵאֶתְמוֹל מִזְּמַן הַמִּנְחָה. וְהָרַמְבַּ&quot;ן זַ&quot;ל כָּתַב דְּאַפֵּי&#x27; לֹא קִיבֵּל עָלָיו מִזְּמַן הַמִּנְחָה כֵּיוָן שֶׁקִּיבֵּל עָלָיו תַּעֲנִית קֹודֶם שָׁעוֹת הַתַּעֲנִית וְתֵימַהּ מַאי שְׁנָא מִתַּעֲנִית יוֹם שֶׁצָּרִיךְ לְקַבֵּל עָלָיו בִּזְמַן הַמִּנְחָה וְאִם קִיבֵּל עָלָיו בַּלַּיְלָה לָא הָוֵי תַּעֲנִית. וְי&quot;ל דְּהָתָם הוּא מְחֻויָּב תַּעֲנִית יוֹם שָׁלֵם הִלְכָּךְ צָרִיךְ קַבָּלָה קֹודֶם שֶׁיַּתְחִיל הַתַּעֲנִית. וּלְפִי זֶה מִי שֶׁלֹּא הָיָה בְּדַעְתּוֹ לְהִתְעַנּוֹת וּבַלַּיְלָה נִמְלַךְ וְקִיבֵּל עָלָיו תַּעֲנִית הָוֵי תַּעֲנִית דְּלָא גָּרַע מִקֶּיְבֶּל עָלָיו תַּעֲנִית מִשֵּׁשׁ שָׁעוֹת וּלְמַעְלָה וְאִי אֶפְשָׁר לוֹמַר כֵּן מִדְּקָאָמַר לֵיהּ אַבַּיֵּי לְעוֹלָם מִתְעַנִּין לְשָׁעוֹת וְכוּ&#x27; וְשָׁאנֵי הָכָא דְּלָא קַבְּלֵיהּ עִילָּוֵיהּ וְאַמַּאי וְהָא קַבְּלֵיהּ עֲלֵיהּ בְּלֵילְיָא וְהוּא לֹא מְחֻויָּב תַּעֲנִית יוֹם שָׁלֵם הִלְכָּךְ צ&quot;ל דְּכָל תַּעֲנִית צָרִיךְ קַבָּלָה בִּתְפִלַּת הַמִּנְחָה אָמַר אַבָּיֵי לְעוֹלָם קָסָבַר מִתְעַנִּין לְשָׁעוֹת וְהַמִּתְעַנֶּה לְשָׁעוֹת מִתְפַּלֵּל תְּפִלַּת תַּעֲנִית וְשָׁאנֵי הָכָא דְּלָא קַבְּלֵיהּ עִילָּוֵיהּ. אָמַר רַב חִסְדָּא הָא דְּאָמְרַתְּ מִתְעַנִּין לְשָׁעוֹת וְהוּא שֶׁלֹּא טָעַם כְּלוּם כָּל אוֹתוֹ הַיּוֹם א&quot;ל אַבַּיֵּי הָא תַּעֲנִיתָא מְעַלַּיְיתָא הוּא. לָא צְרִיכָא דְּקָא מִימְלָךְ אִימְּלוֹכֵי לְפֵירוּשׁ קַמָּא כְּשֶׁהִגִּיעַ חֲצִי הַיּוֹם נִמְלַךְ וְהִשְׁלִים תַּעֲנִיתוֹ עַד הָעֶרֶב וּלְאִידָךְ פֵּירוּשָׁא קִבֵּל עָלָיו לְהִתְעַנּוֹת מִשֵּׁשׁ שָׁעוֹת וּלְמַעְלָה וְנִמְלַךְ וְלֹא אָכַל שֵׁשׁ שָׁעוֹת הָרִאשׁוֹנוֹת. רַב חִסְדָּא לְטַעְמֵיהּ דְּאָמַר רַב חִסְדָּא כָּל תַּעֲנִית שֶׁלֹּא שָׁקְעָה עָלָיו הַחַמָּה לָא שְׁמֵיהּ תַּעֲנִית. הִלְכָּךְ לָא מִיקְּרֵי תַּעֲנִית שָׁעוֹת אִם לֹא שֶׁיִּהְיֶה שָׁרוּי כָּל הַיּוֹם בְּתַעֲנִית בְּלֹא טְעִימָה כְּלוּם. וְעִיקַּר הַךְ מִילְּתָא דְרַב חִסְדָּא בִּמְקַבֵּל עָלָיו תַּעֲנִית סְתָם שֶׁצָּרִיךְ לְהִתְעַנּוֹת עַד שְׁקִיעַת הַחַמָּה דְּהַייְנוּ צֵאת הַכּוֹכָבִים. ואע&quot;ג דְּאָמְרִינַן בִּפְסָחִים פ&#x27; מִי שֶׁהָיָה טָמֵא (פְּסָחִים דַּף צַד. ) דְּמִשְּׁקִיעַת הַחַמָּה עַד צֵאת הַכְּכֹבִים ה&#x27; מִילִין פר&quot;ת הַיְינוּ מִתְּחִילַּת שְׁקִיעַת הַחַמָּה כְּשֶׁהַחַמָּה מַתְחֶלֶת לִיכָּנֵס בְּעָבְיוֹ שֶׁל רָקִיעַ אֲבָל שְׁקִיעַת הַחַמָּה הַייְנוּ סוֹף שְׁקִיעָה וְהוּא זְמַן צֵאת הַכּוֹכָבִים. וּפָרִיךְ מֵאַנְשֵׁי מִשְׁמָר שֶׁהָיוּ מִתְעַנִּין וְלֹא מַשְׁלִימִין וְכֵן מִבְּנֵי סְנָאָה בֶּן בִּנְיָמִן אַלְמָא שֵׁם תַּעֲנִית עִילָּוֵיהּ. וּמְשַׁנֵּי לְצַעוֹרֵי נַפְשֵׁיהּ הוּא דְּעָבְדִי וְלֹא הָיָה שֵׁם תַּעֲנִית עָלָיו. וְתוּ פָּרִיךְ מַר&#x27; יוֹחָנָן דְּאָמַר אֱהֵא בְּתַעֲנִית עַד שֶׁאָבוֹא בְּבֵיתִי דְּאִיכָּא תַּרְתֵּי חֲדָא שֶׁלֹּא קִיבֵּל עָלָיו מִבְּעֶרֶב וְעוֹד שֶׁלֹּא הִשְׁלִים תַּעֲנִיתוֹ עַד הָעֶרֶב וְסָלְקָא שְׁמַעְתָּתָא דְּלָא מִיקְּרֵי תַּעֲנִית אִם לֹא שֶׁקִּיבֵּל עָלָיו מִבְּעֶרֶב וְגַם שֶׁיִּתְעַנֶּה עַד הָעֶרֶב. וְהָרַמְבַּ&quot;ם זַ&quot;ל (פ&quot;א מַה&#x27; תַּעֲנִית הֵל&#x27; י&quot;ג) כָּתַב אִם אָכַל וְשָׁתָה וְאַחַר כָּךְ הִתְחִיל לְהִתְעַנּוֹת שְׁאָר הַיּוֹם הֲרֵי זוֹ תַּעֲנִית שָׁעוֹת וּבִירוּשַׁלְמִי מַשְׁמַע כִּדְבָרָיו דְּגֵר&#x27; בִּירוּשַׁלְמִי דִּנְדָרִים פֶּרֶק קוֹנָם יַיִן (הֵל&#x27; א&#x27;) מִילְּתֵיהּ דְּר&#x27; יוֹחָנָן אָמְרָה מִתְעַנֶּה לְשָׁעוֹת. דְּא&quot;ר יוֹחָנָן הֲרֵינִי בְּתַעֲנִית עַד דְּנֶיחֱסַל פִּירְקִין. מִמִּילְּתֵיהּ דְּרַבִּי יוֹנָה הֲוָה מִתְעַנִּין לְשָׁעוֹת. דְּרַבִּי יוֹנָה הֲוָה בְּצוֹר וְשָׁמַע דִּדְמִיךְ בְּרֵיהּ דְּר&#x27; יוֹסֵי אע&quot;ג דְּאָכַל גַּבָּנֵי וְשַׁתָּא מַיָּא אַסְקִי&#x27; צוֹם הַהוּא יוֹמָא. מִילְּתֵיהּ דְּרַב אָמַר מִתְעַנִּין לְשָׁעוֹת. דְּאָמַר רַב לֹוֶה אָדָם תַּעֲנִיתוֹ וּפוֹרֵעַ פִּי&#x27; דְּגַם יוֹם זֶה שֶׁהִתְחִיל לְהִתְעַנּוֹת מִיקְּרֵי תַּעֲנִיתוֹ וְאֵין צָרִיךְ לִפְרֹועַ שֶׁהֲרֵי יוֹם שָׁלֵם קִבֵּל עָלָיו. וְרַבִּי אֲבִי הָעֶזְרִי נִדְחַק מְאֹד לְהַשְׁווֹת יַחַד הַיְרוּשַׁלְמִי וְהַבַּבְלִי. וּפֵירֵשׁ עַל שִׁיטַת הָרַמְבַּ&quot;ם זַ&quot;ל וְלֹא נִרְאֶה בְּעֵינַי אַךְ נִרְאֶה שֶׁהַיְּרוּשַׁלְמִי חוֹלֵק עַל הַבַּבְלִי א&quot;נ נוּכַל לוֹמַר דְּלָא פְּלִיג דְּהָא דְּקָאָמַר ר&#x27; יוֹחָנָן וְר&#x27; יוֹנָה דְּמִתְעַנִּין לְשָׁעוֹת לָאו לְעִנְיַן תְּפִלַּת תַּעֲנִית קָאָמַר אֶלָּא לְעִנְיָן זֶה שֶׁצָּרִיךְ לְקַיֵּים נִדְרוֹ. דְּלָא תֵּימָא דְּלָא מִיקְּרֵי נֶדֶר כֵּיוָן שֶׁלֹּא קִיבֵּל עָלָיו לְהִתְעַנּוֹת יוֹם שָׁלֵם קמ&quot;ל דְּמִיקְּרֵי שַׁפִּיר נֶדֶר וְצָרִיךְ לְקַייֵּם דְּבָרוֹ אֲבָל לְעִנְיַן עֲנֵנוּ לָא מִיקְּרֵי תַּעֲנִית אִם לֹא שֶׁהִתְעַנָּה הַיּוֹם שָׁלֵם. וְהָא דְּקָאָמַר רַב סָבַר מִתְעַנִּין לְשָׁעוֹת מִדְּקָאָמַר לֹוֶה אָדָם תַּעֲנִיתוֹ וּפוֹרֵעַ ה&quot;ק אע&quot;פ שֶׁקִּיבֵּל עָלָיו תַּעֲנִית יָכוֹל לִלְוָת עָלָיו תַּעֲנִיתוֹ וּמִיקְּרֵי שַׁפִּיר תַּעֲנִית מַה שֶׁהִתְעַנָּה מִקְצָת הַיּוֹם לְעִנְיָן זֶה דְּלָא מִיקְּרֵי מְבַטֵּל נִדְרוֹ בְּמַה שֶׁאָכַל הַיּוֹם:</div>
+          <div class="glose-fr">Rav Yossef a dit : que pense donc Rav Houna ? S&#x27;il tient qu&#x27;on ne jeune pas par heures — par exemple celui qui a accepte sur lui a l&#x27;heure de minha de jeuner jusqu&#x27;a la moitie du jour, puis a change d&#x27;avis et a jeune jusqu&#x27;au soir — cela n&#x27;est pas appele jeune et il ne recite pas Anenou ; de meme, s&#x27;il avait accepte sur lui un jeune d&#x27;un jour, il ne s&#x27;est pas acquitte de son obligation par ce jeune. S&#x27;il en est ainsi, il n&#x27;y a la aucune acceptation de jeune et il lui est permis de manger. Le propos de Rav Houna porterait alors sur un jeune d&#x27;heures ou il n&#x27;avait accepte sur lui qu&#x27;un seul jour, puis a change d&#x27;avis et a jeune aussi un second jour ; c&#x27;est pourquoi il ne recite pas Anenou le second jour, tandis que le premier jour est certainement un jeune, puisqu&#x27;il a jeune le jour qu&#x27;il avait accepte. Ou bien peut-etre tient-il en verite qu&#x27;on jeune par heures, et que s&#x27;il avait accepte sur lui un jeune d&#x27;un jour il s&#x27;en acquitte et qu&#x27;il lui est aussi interdit de manger, sauf que cela n&#x27;est pas appele jeune quant a Anenou. Rachi a explique dans le traite Avoda Zara (34b) : « on jeune par heures », par exemple celui qui a accepte sur lui un jeune a partir de la sixieme heure et au-dela, alors qu&#x27;il n&#x27;avait rien goute durant la premiere moitie du jour sans pourtant l&#x27;avoir eu en vue comme jeune ; et il faut dire qu&#x27;il l&#x27;avait accepte depuis la veille, a l&#x27;heure de minha. Le Ramban, de memoire benie, a ecrit que meme s&#x27;il ne l&#x27;a pas accepte a l&#x27;heure de minha, il suffit qu&#x27;il l&#x27;ait accepte avant les heures du jeune. Et cela etonne : en quoi cela differe-t-il du jeune d&#x27;un jour, qu&#x27;il faut accepter a l&#x27;heure de minha, et qui n&#x27;est pas un jeune s&#x27;il l&#x27;a accepte de nuit ? On peut repondre que la, il est tenu a une journee entiere de jeune, et c&#x27;est pourquoi l&#x27;acceptation doit preceder le debut du jeune. Selon cela, celui qui n&#x27;avait pas l&#x27;intention de jeuner et qui, dans la nuit, a change d&#x27;avis et a accepte sur lui un jeune, aurait un jeune, puisque ce n&#x27;est pas moindre que celui qui accepte sur lui un jeune a partir de la sixieme heure et au-dela. Or il est impossible de dire ainsi, puisque Abaye lui dit : « en verite on jeune par heures... et ici c&#x27;est different, car il ne l&#x27;a pas accepte sur lui » — et pourquoi donc ? Il l&#x27;avait bien accepte sur lui dans la nuit, et il n&#x27;est pas tenu a une journee entiere de jeune ! Il faut donc dire que tout jeune requiert une acceptation dans la priere de minha. Abaye a dit : en verite il tient qu&#x27;on jeune par heures, et celui qui jeune par heures recite la priere du jeune ; ici c&#x27;est different, car il ne l&#x27;a pas accepte sur lui. Rav Hisda a dit : ce que tu as dit, qu&#x27;on jeune par heures, vaut a condition qu&#x27;il n&#x27;ait rien goute de toute cette journee. Abaye lui dit : mais c&#x27;est un jeune a part entiere ! Cela devait etre dit pour le cas ou il change d&#x27;avis : selon la premiere explication, la moitie du jour arrivee, il a change d&#x27;avis et a complete son jeune jusqu&#x27;au soir ; selon l&#x27;autre explication, il avait accepte sur lui de jeuner a partir de la sixieme heure et au-dela, puis a change d&#x27;avis et n&#x27;a pas mange non plus durant les six premieres heures. Rav Hisda suit ici son opinion, lui qui a dit : tout jeune sur lequel le soleil ne s&#x27;est pas couche n&#x27;est pas appele jeune. Il n&#x27;y a donc de jeune d&#x27;heures que s&#x27;il demeure toute la journee en jeune sans rien gouter. L&#x27;essentiel de ce propos de Rav Hisda porte sur celui qui accepte sur lui un jeune sans precision, lequel doit jeuner jusqu&#x27;au coucher du soleil, c&#x27;est-a-dire jusqu&#x27;a la sortie des etoiles. Et bien qu&#x27;on dise dans Pessahim, chapitre Mi chehaya tame (94a), que du coucher du soleil jusqu&#x27;a la sortie des etoiles il y a cinq mil, Rabbenou Tam a explique qu&#x27;il s&#x27;agit la du debut du coucher, lorsque le soleil commence a entrer dans l&#x27;epaisseur du firmament ; mais « le coucher du soleil » dont il est question ici est la fin du coucher, et c&#x27;est le moment de la sortie des etoiles. La guemara objecte a partir des hommes de la garde, qui jeunaient sans achever, ainsi qu&#x27;a partir des fils de Sena&#x27;a ben Binyamin — signe qu&#x27;un nom de jeune reposait sur eux. Elle repond : c&#x27;est pour s&#x27;affliger eux-memes qu&#x27;ils agissaient ainsi, et il n&#x27;y avait la aucun nom de jeune. Elle objecte encore de Rabbi Yohanan, qui disait « je serai en jeune jusqu&#x27;a ce que j&#x27;arrive chez moi », ou il y a deux choses : d&#x27;abord qu&#x27;il ne l&#x27;avait pas accepte depuis la veille, ensuite qu&#x27;il n&#x27;a pas complete son jeune jusqu&#x27;au soir. Il ressort de la sougya que cela n&#x27;est pas appele jeune s&#x27;il ne l&#x27;a pas accepte depuis la veille et s&#x27;il ne jeune pas jusqu&#x27;au soir. Le Rambam (Hilkhot Taaniyot 1,13) a ecrit : s&#x27;il a mange et bu puis a commence a jeuner le reste de la journee, c&#x27;est un jeune d&#x27;heures. Et le Yerouchalmi va dans son sens, car on lit dans le Yerouchalmi Nedarim, chapitre Konam yayin (halakha 1) : le propos de Rabbi Yohanan indique qu&#x27;on jeune par heures, puisque Rabbi Yohanan a dit « me voici en jeune jusqu&#x27;a ce que nous achevions notre chapitre ». Du propos de Rabbi Yona il ressort qu&#x27;on jeunait par heures : Rabbi Yona etait a Tyr et apprit que le fils de Rabbi Yossi s&#x27;etait endormi ; bien qu&#x27;il eut mange du fromage et bu de l&#x27;eau, il eleva ce jour-la en jeune. Le propos de Rav dit qu&#x27;on jeune par heures, puisque Rav a dit : un homme emprunte son jeune et le rembourse — c&#x27;est-a-dire que ce jour-la aussi, ou il a commence a jeuner, est appele son jeune, et il n&#x27;a pas besoin de rembourser, puisqu&#x27;il avait accepte sur lui une journee entiere. Rabbi Avi HaEzri s&#x27;est beaucoup contraint pour accorder ensemble le Yerouchalmi et le Bavli, et il a explique selon la voie du Rambam ; cela ne m&#x27;a pas paru juste. Il me semble plutot que le Yerouchalmi diverge du Bavli. On peut aussi dire qu&#x27;il n&#x27;y a pas de divergence : ce que disent Rabbi Yohanan et Rabbi Yona, qu&#x27;on jeune par heures, se dit quant a l&#x27;obligation d&#x27;accomplir son vœu, et non quant a la priere du jeune. Pour que tu ne dises pas que cela n&#x27;est pas appele vœu puisqu&#x27;il n&#x27;a pas accepte sur lui de jeuner une journee entiere, cela nous apprend que c&#x27;est bel et bien appele vœu et qu&#x27;il doit accomplir sa parole ; mais quant a Anenou, cela n&#x27;est pas appele jeune s&#x27;il n&#x27;a pas jeune la journee entiere. Et ce qu&#x27;on dit, que Rav tient qu&#x27;on jeune par heures puisqu&#x27;il a dit « un homme emprunte son jeune et le rembourse », signifie ceci : bien qu&#x27;il ait accepte sur lui un jeune, il peut emprunter dessus son jeune, et ce qu&#x27;il a jeune d&#x27;une partie du jour est bel et bien appele jeune quant a ce point, a savoir qu&#x27;il n&#x27;est pas appele « annulant son vœu » par ce qu&#x27;il a mange ce jour-la.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La phrase s'ouvre au milieu d'un propos de <b>Rav Hisda</b> commence en 11b. Rav Hisda restreint la <b>taanit le-chaot</b> (jeune d'heures) : elle ne compte que si l'homme n'a rien goute jusqu'au soir. Abaye objecte que cette restriction vide la notion de son contenu, puisqu'un homme qui ne mange rien de la journee entiere accomplit deja un jeune ordinaire.</p><p>La reponse repose sur le mot <b>imlakh</b> (il a change d'avis) : le cas vise est celui d'un homme qui n'avait pris aucun engagement le matin, qui s'est trouve a jeun jusqu'a la mi-journee, puis a decide de poursuivre. L'innovation porte sur la moitie de journee deja ecoulee, qui se joint retroactivement a l'engagement pris a midi. Rachi donne une seconde lecture, rapportee ensuite par le Rosh : l'homme avait accepte la veille de jeuner a partir de la sixieme heure, et se trouve n'avoir rien mange non plus le matin.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 190" xmlns="http://www.w3.org/2000/svg">
+   <rect x="0" y="0" width="700" height="190" fill="#fbfaf8"/>
+   <text x="350" y="24" text-anchor="middle" font-size="14" font-weight="bold" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Le cas du imlakh : changer d'avis a la mi-journee</text>
+   <line x1="60" y1="80" x2="640" y2="80" stroke="#8b93a1" stroke-width="2"/>
+   <line x1="60" y1="72" x2="60" y2="88" stroke="#8b93a1" stroke-width="2"/>
+   <line x1="350" y1="66" x2="350" y2="94" stroke="#b08a2e" stroke-width="2"/>
+   <line x1="640" y1="72" x2="640" y2="88" stroke="#8b93a1" stroke-width="2"/>
+   <text x="60" y="106" text-anchor="middle" font-size="10" fill="#4b5563" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">lever du jour</text>
+   <text x="350" y="108" text-anchor="middle" font-size="10" font-weight="bold" fill="#8a6a3b" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">mi-journee : il change d'avis</text>
+   <text x="640" y="106" text-anchor="middle" font-size="10" fill="#4b5563" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">coucher du soleil</text>
+   <rect x="60" y="44" width="290" height="22" rx="5" fill="#eef1f6" stroke="#6b7280"/>
+   <text x="205" y="59" text-anchor="middle" font-size="10" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">a jeun sans aucune intention de jeuner</text>
+   <rect x="350" y="44" width="290" height="22" rx="5" fill="#e6f2ea" stroke="#2f7d52"/>
+   <text x="495" y="59" text-anchor="middle" font-size="10" fill="#14532d" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">il decide de poursuivre jusqu'au soir</text>
+   <rect x="120" y="128" width="460" height="48" rx="8" fill="#fff" stroke="#c9cdd4"/>
+   <text x="350" y="148" text-anchor="middle" font-size="11" font-weight="bold" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Innovation : la matinee sans intention se joint au jeune</text>
+   <text x="350" y="166" text-anchor="middle" font-size="10" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">s'il mange a un moment quelconque, tout tombe — rien ne subsiste du jeune</text>
+  </svg></div><div class="svg-cap">Le cas etroit que Rav Hisda veut sauver : une matinee a jeun sans intention, rattrapee par une decision prise a midi.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאָמַר רַב חִסְדָּא: כָּל תַּעֲנִית שֶׁלֹּא שָׁקְעָה עָלָיו חַמָּה — לָא שְׁמֵיהּ תַּעֲנִית. מֵיתִיבִי: אַנְשֵׁי מִשְׁמָר מִתְעַנִּין וְלֹא מַשְׁלִימִין! הָתָם, לְצַעוֹרֵי נַפְשֵׁיהּ בְּעָלְמָא הוּא.</div>
+            <div class="fr"><p>Et Rav Hisda a dit : tout jeune sur lequel le soleil ne s&#x27;est pas couche n&#x27;est pas appele jeune. On objecte : les hommes de la garde jeunent sans achever !</p><p>La, il s&#x27;agissait seulement de s&#x27;affliger eux-memes.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁלֹּא שָׁקְעָה עָלָיו חַמָּה</b> שֶׁלֹּא הִתְעַנָּה עַד אוֹתָהּ שָׁעָה:</div>
+          <div class="glose-fr">Qu&#x27;il n&#x27;a pas jeune jusqu&#x27;a ce moment-la.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַנְשֵׁי מִשְׁמָר</b> כֹּהֲנִים וּלְוִיִּם הָעוֹבְדִין מִתְעַנִּין כְּדִלְקַמָּן בְּפֶרֶק סֵדֶר תַּעֲנִיּוֹת:</div>
+          <div class="glose-fr">Les cohanim et les leviim qui officient ; ils jeunent, comme il est dit plus loin au chapitre Seder taaniyot.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְלֹא מַשְׁלִימִין</b> לְפִי שֶׁהֵן עֲסוּקֵין בַּעֲבוֹדָה וְאֵין יְכוֹלִים לְהַשְׁלִים אַלְמָא אע&quot;ג דְּאֵינוֹ מַשְׁלִים מִתְעַנֶּה קָרֵי לֵיהּ:</div>
+          <div class="glose-fr">Parce qu&#x27;ils sont occupes au service et ne peuvent achever le jeune. Il ressort donc que, meme sans achever, on l&#x27;appelle jeuneur.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְצַעוֹרֵי נַפְשַׁיְיהוּ</b> עִם הַצִּבּוּר אֲבָל אֵינוֹ תַּעֲנִית לֹא לְהִתְפַּלֵּל תְּפִלַּת עֲנֵנוּ וְלֹא לְקָובְעוֹ עָלָיו חוֹבָה כְּלָל וְכָל שָׁעָה שֶׁהוּא רוֹצֶה לֶאֱכֹול אוֹכֵל:</div>
+          <div class="glose-fr">Avec le public ; mais ce n&#x27;est pas un jeune, ni pour reciter la priere Anenou, ni pour le lui fixer en quoi que ce soit comme obligation ; et a toute heure ou il veut manger, il mange.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">כָּל תַּעֲנִית שֶׁלֹּא שָׁקְעָה עָלָיו חַמָּה לָא שְׁמֵיהּ תַּעֲנִית. פִּי&#x27; בְּמַסֶּכֶת ע&quot;ז פֶּרֶק אֵין מַעֲמִידִין (עֲבוֹדָה זָרָה דַּף לד.) וְכֵן בְּחָלוּק שֶׁאֵין לוֹ אִימְּרָא פֵּירֵשׁ הָתָם וְכָל הֶפְסֵק דְּמִתְעַנִּין לְשָׁעוֹת דְּכָל תַּעֲנִית צָרִיךְ לְקַבְּלוֹ מִבְּעֶרֶב בִּתְפִלַּת הַמִּנְחָה בְּשׁוֹמֵעַ תְּפִלָּה וְאִם הוּא שַׁבָּת בֶּאֱלֹהַי נְצֹור וְצָרִיךְ שֶׁיֹּאמַר לְמָחָר אֶהְיֶה בְּתַעֲנִית יָחִיד כִּי הֵיכִי דְּלֵיכָּא לְמִטְעֵי בְּתַעֲנִית צִבּוּר:</div>
+          <div class="glose-fr">Il l&#x27;a explique dans le traite Avoda Zara, chapitre Ein maamidin (34a), ainsi qu&#x27;au passage de la tunique sans ourlet ; il y a explique egalement tout le passage sur le jeune par heures : tout jeune doit etre accepte depuis la veille, dans la priere de minha, a la benediction Choméa tefila ; et si c&#x27;est chabbat, dans Elokai netsor. Il doit dire : demain je serai en jeune individuel — afin qu&#x27;il n&#x27;y ait pas d&#x27;erreur avec un jeune public.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Hisda generalise : <b>chaka alav hama</b>, le coucher du soleil, devient le critere du jeune. La guemara oppose aussitot une baraita sur les <b>anchei michmar</b>, les cohanim et leviim de la garde en service cette semaine-la : ils jeunent avec le public sans achever la journee, retenus par la <b>avoda</b> (service du Temple), et la baraita les appelle pourtant jeuneurs.</p><p>La reponse introduit la distinction qui commande tout le passage : <b>lets'aorei nafcheih</b>, s'affliger soi-meme par solidarite, releve d'une conduite et non d'un statut. Rachi en tire les consequences pratiques : pas de priere Anenou, aucune obligation fixee, et liberte de manger des qu'on le veut.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּא שְׁמַע, דְּאָמַר רַבִּי אֶלְעָזָר בְּרַבִּי צָדוֹק: אֲנִי מִבְּנֵי בָנָיו שֶׁל סְנָאָה בֶּן בִּנְיָמִין, וּפַעַם אַחַת חָל תִּשְׁעָה בְּאָב לִהְיוֹת בְּשַׁבָּת, וּדְחִינוּהוּ לְאַחַר הַשַּׁבָּת, וְהִתְעַנִּינוּ בּוֹ וְלֹא הִשְׁלַמְנוּהוּ — מִפְּנֵי שֶׁיּוֹם טוֹב שֶׁלָּנוּ הוּא. הָתָם נָמֵי, לְצַעוֹרֵי נַפְשֵׁיהּ בְּעָלְמָא הוּא.</div>
+            <div class="fr"><p>Viens et ecoute : Rabbi Elazar berabbi Tsadok a dit : je suis des descendants de Sena&#x27;a ben Binyamin ; une fois, le neuf av tomba un chabbat et nous l&#x27;avons repousse apres le chabbat, et nous avons jeune ce jour-la sans l&#x27;achever, parce que c&#x27;est notre jour de fete. La aussi, il s&#x27;agissait seulement de s&#x27;affliger soi-meme.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִבְּנֵי (סְנָאָב) בֶּן בִּנְיָמִין</b> מִשֵּׁבֶט בִּנְיָמִין:</div>
+          <div class="glose-fr">De la tribu de Binyamin.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁיּוֹם טוֹב שֶׁלָּנוּ הָיָה</b> כְּדִלְקַמָּן בִּשְׁלֹשָׁה פְּרָקִים (תַּעֲנִית דַּף כו.) זְמַן עֲצֵי כֹהֲנִים וְהָעָם כּוּ&#x27; עַד בַּחֲמִשָּׁה בְּאָב בְּנֵי פַרְעוֹשׁ בֶּן יְהוּדָה בַּעֲשָׂרָה בּוֹ בְּנֵי (סְנָאָב) בֶּן בִּנְיָמִין שֶׁעַל יְדֵי מַעֲשֶׂה קָבְעוּ לָהֶן חֲכָמִים לְהִתְנַדֵּב עֵצִים וּלְהָבִיא לַמַּעֲרָכָה וּכְשֶׁמַּגִּיעַ זְמַנּוֹ מְבִיאִין אוֹתָן וּמַדְלִיקִין אוֹתָן עַל גַּבֵּי הַמִּזְבֵּחַ אע&quot;פ שֶׁהָיוּ שָׁם שְׁאָר עֵצִים הַרְבֵּה משא&quot;כ בִּשְׁאָר מִתְנַדְּבֵי עֵצִים דְּאֵין מְבַעֲרִין אוֹתָן בִּזְמַן שֶׁיֵּשׁ עֵצִים אֲחֵרִים בְּמַסֶּכֶת מְנָחוֹת (דַּף קו:) אָמְרִינַן הַמִּתְנַדֵּב עֵצִים לֹא יִפְחֹות מִשְּׁנֵי גְזִירִין וְעֵצִים טְעוּנִין קְמִיצָה טְעוּנִים הַגָּשָׁה כו&#x27;:</div>
+          <div class="glose-fr">Comme il est dit plus loin, au chapitre Bi-chlocha perakim (Taanit 26a) : le temps des bois des cohanim et du peuple, etc., jusqu&#x27;a : le cinq av, les fils de Paroch ben Yehouda ; le dix du meme mois, les fils de Sena&#x27;a ben Binyamin. A la suite d&#x27;un evenement, les sages leur ont fixe d&#x27;offrir volontairement du bois et de l&#x27;apporter pour le bucher ; et lorsque leur temps arrive, ils les apportent et les allument sur l&#x27;autel, bien qu&#x27;il y eut la beaucoup d&#x27;autres bois — a la difference des autres donateurs de bois, dont on ne brule pas les bois tant qu&#x27;il y a d&#x27;autres bois. Dans le traite Menahot (106b) nous disons : celui qui offre volontairement du bois n&#x27;en donnera pas moins de deux buches, et les bois requierent la kemitsa et requierent la hagacha, etc.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">הָתָם לְצַעוֹרֵי נַפְשֵׁיהּ בְּעָלְמָא. ואע&quot;ג דְּאָמְרִינַן (ר&quot;ה דַּף יח:) מִשֶּׁחָרַב בֵּית הַמִּקְדָּשׁ בָּטְלָה מְגִילַּת תַּעֲנִית וְהַאי עֻובְדָּא דְּרַבִּי אֱלִיעֶזֶר בַּר צָדוֹק הָיָה לְאַחַר חֻורְבָּן דְּאִי קֹודֶם הַחֻורְבָּן אָמְרִינַן (שָׁם) כֵּיוָן שֶׁיֵּשׁ שָׁלוֹם אֵין שָׁם גְּזֵירוֹת הַמַּלְכוּת הַאי תַּנָּא סָבַר דְּלָא בָּטְלָה:</div>
+          <div class="glose-fr">Bien que nous disions (Roch Hachana 18b) que depuis la destruction du Temple la Meguilat Taanit est abolie, et que cet episode de Rabbi Eliezer bar Tsadok eut lieu apres la destruction — car s&#x27;il etait anterieur a la destruction, nous disons la-bas que du moment qu&#x27;il y a la paix il n&#x27;y a pas de decrets du royaume —, ce tana tient qu&#x27;elle n&#x27;est pas abolie.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deuxieme objection, tiree d'un temoignage familial. La famille de <b>Sena'a ben Binyamin</b> avait le dix av pour jour d'offrande de bois a l'autel, donc pour jour de fete prive ou l'on ne jeune pas. L'annee ou le neuf av tomba un chabbat, le jeune fut reporte au dix, et cette famille jeuna une partie de la journee seulement. L'expression « nous avons jeune sans achever » suppose qu'un jeune partiel porte encore le nom de jeune.</p><p>La reponse est la meme que precedemment. Tossefot note en passant une difficulte chronologique : la <b>Meguilat Taanit</b>, le rouleau des jours ou l'on ne jeune pas, est tenue pour abolie apres la destruction, et ce tana tient qu'elle subsiste.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּא שְׁמַע, דְּאָמַר רַבִּי יוֹחָנָן: אֱהֵא בְּתַעֲנִית עַד שֶׁאָבוֹא לְבֵיתִי. הָתָם, לְשַׁמּוֹטֵי נַפְשֵׁיהּ מִבֵּי נְשִׂיאָה הוּא דַּעֲבַד.</div>
+            <div class="fr"><p>Viens et ecoute : Rabbi Yohanan a dit : je serai en jeune jusqu&#x27;a ce que j&#x27;arrive chez moi. La, c&#x27;est pour se degager de la maison du Nassi qu&#x27;il agissait ainsi.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּאָמַר רַבִּי יוֹחָנָן</b> פְּעָמִים שֶׁהָיָה אוֹמֵר אֱהֵא בְּתַעֲנִית עַד שֶׁאָבוֹא לְבֵיתִי וְאִי מָטֵי לְבֵיתֵיהּ בִּשְׁתַּיִם אוֹ בַּג&#x27; שָׁעוֹת בַּיּוֹם הֲוָה אָכֵיל וְקָרֵי לֵיהּ מִתְעַנֶּה:</div>
+          <div class="glose-fr">Il lui arrivait de dire : je serai en jeune jusqu&#x27;a ce que j&#x27;arrive chez moi ; et s&#x27;il arrivait chez lui a la deuxieme ou a la troisieme heure du jour, il mangeait, et il appelait cela jeuner.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְשָׁמוֹטֵיהּ נַפְשֵׁיהּ מִבֵּי נְשִׂיאָה</b> דְּלָא לִיטָרְחוּהוּ לְמֵיכַל בַּהֲדַייְהוּ שֶׁהָיָה מְבַקֵּשׁ הֵימֶנּוּ שֶׁיֹּאכַל עִמּוֹ הָיָה אוֹמֵר כֵּן שֶׁלֹּא יַטְרִיחֶנּוּ לֶאֱכֹול עִמּוֹ וּמִיהוּ לָא הָוֵי תַּעֲנִית שֶׁאִם הָיָה רוֹצֶה הָיָה אוֹכֵל מִיָּד וְאֵין בְּנִדְרוֹ כְּלוּם:</div>
+          <div class="glose-fr">Pour qu&#x27;on ne l&#x27;importune pas a manger avec eux : quand on lui demandait de manger avec lui, il parlait ainsi afin qu&#x27;on ne l&#x27;importune pas ; cependant ce n&#x27;etait pas un jeune, car s&#x27;il l&#x27;avait voulu il aurait mange aussitot, et son vœu n&#x27;avait aucune valeur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Troisieme objection : Rabbi Yohanan employait la formule « je serai en jeune jusqu'a ce que j'arrive chez moi », ce qui suppose un jeune limite a quelques heures. La reponse rapporte cette formule a une situation sociale : elle servait a decliner une invitation a la table du <b>Nassi</b> sans le froisser. Rachi tire la consequence qui interesse la halakha : la parole ne creait aucune obligation, puisque Rabbi Yohanan aurait pu manger immediatement sans transgresser de vœu.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר שְׁמוּאֵל: כָּל תַּעֲנִית שֶׁלֹּא קִיבֵּל עָלָיו מִבְּעוֹד יוֹם — לָאו שְׁמֵיהּ תַּעֲנִית. וְאִי יָתֵיב, מַאי? אָמַר רַבָּה בַּר שֵׁילָא: דָּמֵי לְמַפּוּחָא דְּמַלְיָא זִיקָא.</div>
+            <div class="fr"><p>Chmouel a dit : tout jeune qu&#x27;il n&#x27;a pas accepte sur lui pendant qu&#x27;il faisait encore jour n&#x27;est pas appele jeune. Et s&#x27;il est demeure ainsi, qu&#x27;en est-il ?</p><p>Rabba bar Chila a dit : il ressemble a un soufflet rempli de vent.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאִי יָתֵיב מַאי</b> מִי סָלֵיק לְתַעֲנִית אִי לָא:</div>
+          <div class="glose-fr">Cela monte-t-il pour lui comme jeune ou non ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְמַפּוּחָא</b> הוּא הַמַּפּוּחַ שֶׁנּוֹפְחִין בּוֹ הַנַּפָּחִין אֶת הָאוֹר הַמִּתְמַלֵּא בְּרוּחַ אַף זֶה נִתְמַלֵּא רוּחַ שֶׁלֹּא אָכַל בְּחִנָּם:</div>
+          <div class="glose-fr">C&#x27;est le soufflet avec lequel les forgerons soufflent sur le feu et qui se remplit de vent ; celui-la aussi s&#x27;est rempli de vent, s&#x27;etant prive de manger pour rien.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אָמַר שְׁמוּאֵל כָּל תַּעֲנִית שֶׁלֹּא קִבְּלוֹ עָלָיו מִבְּעוֹד יוֹם לָא שְׁמֵיהּ תַּעֲנִית. בְּתוֹסְ&#x27; עֲבוֹדָה זָרָה (דַּף לד. ) כָּתַב ה&quot;ר יְהוּדָה בְּשֵׁם ר&quot;ת זַ&quot;ל אִם בְּדַעְתּוֹ לְהִתְעַנּוֹת מֵאֶתְמוֹל וְלֹא קִבֵּל עָלָיו בְּמִנְחָה אַךְ בְּלִבּוֹ הָיָה לְהִתְעַנּוֹת מֵאֶתְמוֹל אֶלָּא שֶׁלֹּא הוֹצִיאוֹ מִפִּיו מִיקְּרֵי שַׁפִּיר תַּעֲנִית דְּהָוֵי בִּכְלַל נְדִיב לֵב כִּדְאָמַר בְּפֶ&#x27; ג&#x27; דִּשְׁבוּעוֹת (דַּף כו:) דְּאִם גָּמַר בְּלִבּוֹ אע&quot;פ שֶׁלֹּא הוֹצִיאוֹ בִּשְׂפָתָיו מוֹעִיל. וְאַף ע&quot;ג דְּקָאָמַר הָתָם דִּלְעִנְיַן שְׁבוּעָה לָא מְהַנֵּי גְּמַר עַד שֶׁמּוֹצִיא בִּשְׂפָתָיו דִּכְתִיב לְבַטֵּא בִּשְׂפָתַיִם מִסְתַּבְּרָא דְּכָל עִנְיְנֵי נֶדֶר יָלְפִינַן מֵהֲדָדֵי דְּהָא גַּבֵּי צְדָקָה דָּרְשִׁינַן מוֹצָא שְׂפָתֶיךָ וְתִשְׁמֹור וּמוֹעִיל גָּמַר בְּלִבּוֹ וה&quot;ה גַּבֵּי תַּעֲנִית וְהָא דְּבָעֲיָא קַבָּלָה בִּתְפִלַּת הַמִּנְחָה לְכַתְּחִלָּה הוּא דְּבָעֲיָא הָכִי וְלִישָּׁנָא דְּהַגְּמָרָא לֹא מַשְׁמַע הָכִי מִדְּקָאָמַר כָּל תַּעֲנִית שֶׁלֹּא קִבְּלוּ עָלָיו מִבְּעוֹד יוֹם לָא שְׁמֵיהּ תַּעֲנִית מַשְׁמַע שֶׁאֵין שֵׁם תַּעֲנִית עָלָיו כְּלָל לְהִתְפַּלֵּל עֲנֵינוּ וְלָצֵאת יְדֵי נִדְרוֹ ונ&quot;ל דִּרְאָייַת ר&quot;ת לֹא הָיְתָה אֶלָּא לְמִי שֶׁהִרְהֵר קַבָּלַת תַּעֲנִית בְּלִבּוֹ בִּתְפִלַּת מִנְחָה וְלֹא הוֹצִיאוֹ. מִדְּהֵבִיא רְאָיָה מִנְּדִיב לֵב וּמִצְּדָקָה דְּמַחֲשֶׁבֶת הַלֵּב הָוֵי כְּאִילּוּ הוֹצִיאוֹ בְּפִיו אֲבָל לֹא עָדִיף הִרְהוּר שֶׁיּוֹצֵא כָּל הַיּוֹם יוֹתֵר מֵהוֹצָאַת פִּיו וְאִם הִרְהֵר בִּשְׁעַת תְּפִלָּה לְעִנְיָן זֶה רְאָיָיתוֹ טוֹבָה וּנְכוּחָה וְקָרֵינָא בֵּיהּ שַׁפִּיר קַבָּלָה עָלָיו. אֵימָתַי מְקַבְּלָהּ אָמַר רַב בְּמִנְחָה כְּשֶׁיַּגִּיעַ זְמַן הַמִּנְחָה יֹאמַר הֲרֵינִי בְּתַעֲנִית יָחִיד לְמָחָר וּשְׁמוּאֵל אָמַר בִּתְפִלַּת הַמִּנְחָה פר&quot;ח יֹאמַר בִּתְפִלַּת הַמִּנְחָה מָחָר אֶהְיֶה בְּתַעֲנִית יְהִי רָצוֹן שֶׁתְּהֵא תְּפִלָּתִי בְּיוֹם תַּעֲנִיתִי מְקֻובֶּלֶת וּבִשְׁאִלְתּוֹת דְּרַב אַחַאי פָּרָשַׁת וַיְחַל מְפָ&#x27; שֶׁיִּתְפַּלֵּל עֲנֵנוּ בִּתְפִלַּת הַמִּנְחָה וְלָא מַשְׁמַע הָכִי דְּרַב לָא קָאָמַר שֶׁיִּתְפַּלֵּל עֲנֵנוּ בִּתְפִלָּתוֹ וְכֵן לִשְׁמוּאֵל בִּתְפִלַּת הַמִּנְחָה. וְעוֹד דִּבְפֶ&#x27; בַּמֶּה מַדְלִיקִין (שַׁבָּת דַּף כד. ) לָא קָאָמַר דְּמִתְפַּלֵּל עֲנֵנוּ אֶלָּא עַרְבִית שַׁחֲרִית וּמִנְחָה. וְהִלְכְתָא כִּשְׁמוּאֵל מִשּׁוּם דא&quot;ר יוֹסֵף כְּוָותֵיהּ דִּשְׁמוּאֵל מִסְתַּבְּרָא וְהָרָאָבָ&quot;ד זַ&quot;ל כָּתַב הָרַב פּוֹסֵק כִּשְׁמוּאֵל מִשּׁוּם דְּקָאָמַר רַב יוֹסֵף כְּוָותֵיהּ מִסְתַּבְּרָא וְלֹא מְחֻווָּר דְּלָא פְּסִיק הִלְכְתָא אֶלָּא מִסְתַּבְּרָא אָמַר וְדִקְדֵּק מִן הַבָּרַייְתָא מַאי לַָאו יְיַסְּרוּ עַצְמוֹ בְּצִלּוֹ. וְכֵיוָן דְּתַנְיָא בְּהֶדְיָא דְּלָא כְּרַב יוֹסֵף מְדַחֵי סְבָרָא דִּילֵיהּ. וְקַייְמָא שְׁמַעְתָּתָא בֵּין רַב וּשְׁמוּאֵל בְּקַיְימָא לַן הִלְכְתָא כְּרַב בְּאִיסּוּרֵי כֵּן נִרְאֶה לִי וְכֵן עַמָּא דְּבַר ולכ&quot;ע הַסְכָּמַת צִיבּוּר לְהִתְעַנּוֹת א&quot;צ קַבָּלָה לֹא בְּמִנְחָה וְלֹא בִּתְפִלָּה אֶלָּא שְׁלִיחַ צִבּוּר מַכְרִיז וְהַתַּעֲנִית מְקֻובָּל וּמִתְפַּלְּלִין תְּפִלַּת תַּעֲנִית וְאִיתָא לְהָא מִילְּתָא (בִּירֻושַּׁל&#x27;) לְקַמָּן (תַּעֲנִית דַּף כֹּד) דָּר&#x27; יְהוּדָה נְשִׂיאָה גְּזַר תַּעֲנִיתָא א&quot;ל רֵישׁ לָקִישׁ לְר&#x27; יוֹחָנָן וְהָא לָא קְבִילְנָא א&quot;ל אַדְּבֵי רֵישׁ גָּלוּתָא סָמְכִינַן ע&quot;כ דִּבְרֵי הָרַאֲבַ&quot;ד זַ&quot;ל:</div>
+          <div class="glose-fr">Chmouel a dit : tout jeune qu&#x27;on n&#x27;a pas accepte sur soi pendant qu&#x27;il fait encore jour n&#x27;est pas appele jeune. Dans les Tossefot d&#x27;Avoda Zara (34a), Rabbenou Yehouda a ecrit au nom de Rabbenou Tam, de memoire benie : s&#x27;il avait l&#x27;intention de jeuner depuis la veille et ne l&#x27;a pas accepte a minha, mais qu&#x27;il avait dans le cœur de jeuner depuis la veille sans l&#x27;avoir prononce de sa bouche, cela est bel et bien appele jeune, car il entre dans la categorie du « cœur genereux », comme on dit au chapitre trois de Chevouot (26b) : s&#x27;il a resolu dans son cœur, meme sans l&#x27;avoir prononce de ses levres, cela est effectif. Et bien qu&#x27;on dise la-bas qu&#x27;en matiere de serment la resolution ne sert pas tant qu&#x27;il ne prononce pas de ses levres, puisqu&#x27;il est ecrit « pour prononcer des levres », il est logique que toutes les matieres de vœu se deduisent l&#x27;une de l&#x27;autre : ainsi, a propos de la tsedaka, nous exposons « ce qui sort de tes levres, tu l&#x27;observeras », et pourtant la resolution du cœur y est effective ; il en va de meme pour le jeune. Et si l&#x27;on exige une acceptation dans la priere de minha, c&#x27;est a priori qu&#x27;on l&#x27;exige ainsi. Mais la formulation de la guemara n&#x27;indique pas cela, puisqu&#x27;elle dit : tout jeune qu&#x27;il n&#x27;a pas accepte sur lui pendant qu&#x27;il fait encore jour n&#x27;est pas appele jeune — ce qui indique qu&#x27;aucun nom de jeune ne repose sur lui, ni pour reciter Anenou ni pour s&#x27;acquitter de son vœu. Il me semble que la preuve de Rabbenou Tam ne valait que pour celui qui a pense l&#x27;acceptation du jeune dans son cœur au moment de la priere de minha sans la prononcer, puisqu&#x27;il apporte sa preuve du « cœur genereux » et de la tsedaka, ou la pensee du cœur vaut comme si elle avait ete prononcee ; mais une pensee ne vaut pas mieux, pour valoir toute la journee, que la parole prononcee. Et s&#x27;il a pense ainsi au moment de la priere, sa preuve est bonne et juste sur ce point, et l&#x27;on dira bien qu&#x27;il l&#x27;a accepte sur lui. Quand l&#x27;accepte-t-il ? Rav a dit : a minha — lorsque vient le temps de minha, il dit : me voici demain en jeune individuel. Et Chmouel a dit : dans la priere de minha. Rabbenou Hananel a explique qu&#x27;il dira dans la priere de minha : « demain je serai en jeune ; qu&#x27;il soit Ta volonte que ma priere soit agreee le jour de mon jeune ». Dans les Chealtot de Rav Ahai, parachat Vayehal, il explique qu&#x27;il recitera Anenou dans la priere de minha ; mais cela ne semble pas ainsi, car Rav n&#x27;a pas dit qu&#x27;il recite Anenou dans sa priere, et de meme pour Chmouel « dans la priere de minha ». En outre, au chapitre Bame madlikin (Chabbat 24a), on n&#x27;a dit qu&#x27;il recite Anenou qu&#x27;a arvit, chaharit et minha. Et la halakha est comme Chmouel, parce que Rav Yossef a dit : l&#x27;opinion de Chmouel me parait logique. Le Raavad, de memoire benie, a ecrit : le Rav tranche comme Chmouel parce que Rav Yossef a dit que son avis lui parait logique ; mais cela n&#x27;est pas clair, car il n&#x27;a pas tranche la halakha — il a seulement dit qu&#x27;il est logique, et il l&#x27;a deduit de la baraita : « n&#x27;est-ce pas qu&#x27;il se lie lui-meme dans sa priere ? ». Or puisque la baraita enseigne explicitement autrement que Rav Yossef, son raisonnement est repousse, et la sougya demeure entre Rav et Chmouel ; nous tenons pour regle que la halakha suit Rav en matiere d&#x27;interdits. Ainsi me semble-t-il, et ainsi agit le peuple. Et de l&#x27;avis de tous, lorsque le public s&#x27;accorde a jeuner, aucune acceptation n&#x27;est requise, ni a minha ni dans la priere : le chaliah tsibour proclame le jeune, le jeune est accepte et l&#x27;on recite la priere du jeune. Cette chose se trouve dans le Yerouchalmi, plus loin (Taanit 24) : Rabbi Yehouda Nessia decreta un jeune ; Reich Lakich dit a Rabbi Yohanan : mais nous ne l&#x27;avons pas accepte ! Il lui repondit : nous nous appuyons sur la maison de l&#x27;exilarque. Fin des propos du Raavad, de memoire benie.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Chmouel ajoute la seconde exigence : la <b>kabbala</b> (acceptation) doit intervenir <b>mibe'od yom</b>, pendant qu'il fait encore jour, avant l'entree du jeune. Sans elle, la privation reste une privation, et la guemara demande quel statut lui reconnaitre.</p><p>L'image de Rabba bar Chila repond par la negative avec une precision technique : le <b>mapouah</b>, le soufflet du forgeron, se remplit d'air sans rien contenir. L'homme a effectivement l'estomac vide, et cette vacuite ne porte aucun statut religieux.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֵימַת מְקַבֵּיל לֵיהּ? רַב אָמַר: בְּמִנְחָה, וּשְׁמוּאֵל אָמַר: בִּתְפִלַּת הַמִּנְחָה. אָמַר רַב יוֹסֵף: כְּוָותֵיהּ דִּשְׁמוּאֵל מִסְתַּבְּרָא, דִּכְתִיב בִּמְגִילַּת תַּעֲנִית: לָהֶן, כָּל אִינִישׁ דְּיֵיתֵי עֲלוֹהִי מִקַּדְמַת דְּנָא — יְיַסֵּר.</div>
+            <div class="fr"><p>Quand l&#x27;accepte-t-il ? Rav dit : a minha.</p><p>Et Chmouel dit : dans la priere de minha. Rav Yossef a dit : l&#x27;opinion de Chmouel parait la plus logique, car il est ecrit dans la Meguilat Taanit : « Toutefois, tout homme sur qui vient un jeune d&#x27;auparavant — yeisar ».</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּמִנְחָה</b> בִּזְמַן הַמִּנְחָה וַאֲפִילּוּ בַּשּׁוּק אוֹמֵר הֲרֵינִי מָחָר בְּתַעֲנִית:</div>
+          <div class="glose-fr">Au temps de minha ; et meme au marche il dit : me voici demain en jeune.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בִּתְפִלַּת הַמִּנְחָה</b> בְּסוֹפָהּ תּוֹסֶפֶת רִיצּוּי וְתַחֲנוּנִים עַד שֶׁאוֹמֵר הֲרֵינִי מָחָר בְּתַעֲנִית וְדַוְקָא נְקַט מִנְחָה מִשּׁוּם דְּסָמוּךְ לִתְחִלַּת יוֹם תַּעֲנִיתוֹ לְאַפּוֹקֵי תְּפִלַּת יוֹצֵר וְדַיְקָא נָמֵי מִדִּפְסִיק שְׁמוּאֵל וּפְלִיג אַדְּרַב דְּאָמַר בִּזְמַן הַמִּנְחָה שִׁיעוּרָא יַתִּירָא:</div>
+          <div class="glose-fr">A la fin de celle-ci, en supplement d&#x27;apaisement et de supplications, jusqu&#x27;a ce qu&#x27;il dise : me voici demain en jeune. Et il a precisement dit minha parce que ce moment est proche du debut du jour de son jeune, a l&#x27;exclusion de la priere de Yotser. Cela ressort aussi de ce que Chmouel tranche et diverge de Rav, qui a dit « au temps de minha », mesure plus large.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּדִכְתִיב בִּמְגִילַּת תַּעֲנִית</b> לְסוֹף יָמִים טוֹבִים הַכְּתוּבִים בִּמְגִילַּת תַּעֲנִית כְּתִיב בָּהּ מִקַּדְמַת דְּנָא יְיַסֵּר לְעֵיל מִינָּהּ תָּנֵי אִילֵּין יוֹמַיָּא דִּי לָא לְהִתְעַנָּאָה בְּהוֹן לָהֵן כֹּל אִינִישׁ דְּיֵיתֵי עִלָּוֵהּ תַּעֲנִית מִן קַדְמַת דְּנָא לִפְנֵי אֵלּוּ יָמִים טוֹבִים כְּגוֹן שֶׁקִּיבֵּל עָלָיו עֲשָׂרָה תַּעֲנִיּוֹת אוֹ עֶשְׂרִים וְנִכְנְסוּ אֵלּוּ הַיָּמִים בָּהֶם:</div>
+          <div class="glose-fr">A la fin des jours de fete ecrits dans la Meguilat Taanit, il y est ecrit : mikadmat dena yeisar. Au-dessus, il est enseigne : voici les jours ou l&#x27;on ne doit pas jeuner ; toutefois, tout homme sur qui vient un jeune d&#x27;auparavant — c&#x27;est-a-dire avant ces jours de fete, par exemple s&#x27;il a accepte sur lui dix jeunes ou vingt, et que ces jours sont tombes parmi eux.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">גְּרָסִיגָן בְּפֶרֶק הָיָה קוֹרֵא בַּתּוֹרָה (דַּף יד.) בְּעָא מִינֵּיהּ אַשְׁיָאן תַּנָּא דְבֵי רַבִּי אַמֵּי מַר&#x27; אַמֵּי הַשָּׁרוּי בְּתַעֲנִית מַהוּ שֶׁיִּטְעֹום אֲכִילָה וּשְׁתִיָּיה קַבְּלֵיהּ עֲלֵיהּ וְלָא אָכִיל אוֹ דִּלְמָא הֲנָאָה קַבֵּל עֲלֵיהּ וְהָא קָא מִתְהֲנֵי. אֲמַר לֵיהּ טוֹעֵם וְאֵין בְּכָךְ כְּלוּם. תַּנְיָא נָמֵי הָכִי מַטְעֶמֶת אֵינָהּ צְרִיכָה בְּרָכָה וְהַשָּׁרוּי בְּתַעֲנִית טוֹעֵם וְאֵין בְּכָךְ כְּלוּם. כָּתַב ה&quot;ר יְהוּדָה הַבַּרְצֵלוֹנִי לְבַד מִיּוֹם הַכַּפֹּורֶת וְט&#x27; בְּאָב. עַד כַּמָּה ר&#x27; אַמִּי וְר&#x27; אַסִּי טְעִימִי עַד רְבִיעֲתָא וּמְפָרְשִׁי רַבְּוָותָא דְּצָרִיךְ לְאִזְדְּהוֹרֵי בֵּיהּ כִּי הֵיכִי דְּלָא לִבְלֹעַ כְּלוּם. הָרַב אַלְפָסִי לֹא הֵבִיא מֵימְרָא דְּרַב כָּהֲנָא אָמַר יָחִיד שֶׁקִּבֵּל עָלָיו תַּעֲנִית אָסוּר בִּנְעִילַת הַסַּנְדָּל חָיְישִׁינַן שֶׁמָּא תַּעֲנִית צִבּוּר קִבֵּיל עָלֶיהָ וְנִרְאֶה דס&quot;ל כמ&quot;ש לְעֵיל בְּשֵׁם אבי&quot;ה זַ&quot;ל (סִי&#x27; ט&#x27;) דְּהָאִידָּנָא דְּלֵיכָּא לְמִיחַשׁ מִשּׁוּם דְּקַייְמָא לָן דְּאֵין תַּעֲנִית צִבּוּר בְּבָבֶל:</div>
+          <div class="glose-fr">Nous lisons au chapitre Haya kore ba-Tora (Berakhot 14a) : Achian, le tana de l&#x27;ecole de Rabbi Ami, demanda a Rabbi Ami : celui qui est en jeune peut-il gouter aux plats ? Est-ce le manger et le boire qu&#x27;il a accepte sur lui, et il ne mange pas, ou bien est-ce le plaisir qu&#x27;il a accepte sur lui, et voici qu&#x27;il en tire du plaisir ? Il lui repondit : il goute et cela ne porte pas a consequence. C&#x27;est aussi enseigne dans une baraita : le fait de gouter ne requiert pas de benediction, et celui qui est en jeune goute et cela ne porte pas a consequence. Rabbenou Yehouda de Barcelone a ecrit : a l&#x27;exception de Yom Kippour et du neuf av. Jusqu&#x27;a quelle quantite ? Rabbi Ami et Rabbi Assi goutaient jusqu&#x27;a un revi&#x27;it. Et les grands maitres expliquent qu&#x27;il faut y prendre garde afin de ne rien avaler. Le Rif n&#x27;a pas rapporte le propos de Rav Kahana : un individu qui a accepte sur lui un jeune est interdit de chausser la sandale, car nous craignons qu&#x27;il ait accepte sur lui un jeune public. Il semble qu&#x27;il tienne comme ce que j&#x27;ai ecrit plus haut au nom de l&#x27;Avi HaEzri, de memoire benie (siman 9) : qu&#x27;aujourd&#x27;hui il n&#x27;y a pas lieu de le craindre, puisque nous tenons pour regle qu&#x27;il n&#x27;y a pas de jeune public a Babel.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La mahloket porte sur le moment precis de la kabbala. Pour <b>Rav</b>, il suffit que l'heure de minha soit arrivee : l'homme peut prononcer sa formule n'importe ou, meme au marche. Pour <b>Chmouel</b>, elle doit etre prononcee a l'interieur de la <b>tefila</b> de minha, dans les supplications qui la closent. Rachi releve que la position de Chmouel est plus etroite, et que le choix de minha tient a sa proximite avec l'entree du jeune.</p><p>Rav Yossef appuie Chmouel sur une ligne de la <b>Meguilat Taanit</b>, rouleau arameen enumerant les jours ou le jeune est interdit. La clause vise celui qui s'etait engage a une serie de jeunes tombant sur ces jours, et se termine par le mot <b>yeisar</b>, que Rav Yossef lit comme « qu'il se lie » — donc dans la priere.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 210" xmlns="http://www.w3.org/2000/svg">
+   <rect x="0" y="0" width="700" height="210" fill="#fbfaf8"/>
+   <text x="350" y="24" text-anchor="middle" font-size="14" font-weight="bold" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Quand accepte-t-on le jeune du lendemain ?</text>
+   <line x1="60" y1="92" x2="640" y2="92" stroke="#8b93a1" stroke-width="2"/>
+   <line x1="60" y1="84" x2="60" y2="100" stroke="#8b93a1" stroke-width="2"/>
+   <line x1="300" y1="84" x2="300" y2="100" stroke="#4a6fa5" stroke-width="2"/>
+   <line x1="470" y1="84" x2="470" y2="100" stroke="#6b5b95" stroke-width="2"/>
+   <line x1="640" y1="84" x2="640" y2="100" stroke="#8b93a1" stroke-width="2"/>
+   <text x="60" y="114" text-anchor="middle" font-size="10" fill="#4b5563" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">matin de la veille</text>
+   <text x="300" y="114" text-anchor="middle" font-size="10" fill="#4b5563" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">heure de minha</text>
+   <text x="470" y="114" text-anchor="middle" font-size="10" fill="#4b5563" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">priere de minha</text>
+   <text x="640" y="114" text-anchor="middle" font-size="10" fill="#4b5563" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">tombee de la nuit</text>
+   <rect x="180" y="128" width="230" height="66" rx="8" fill="#e8eef7" stroke="#4a6fa5"/>
+   <text x="295" y="148" text-anchor="middle" font-size="11" font-weight="bold" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Rav : des le temps de minha</text>
+   <text x="295" y="166" text-anchor="middle" font-size="10" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">en tout lieu, meme au marche</text>
+   <text x="295" y="182" text-anchor="middle" font-size="10" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">fenetre large</text>
+   <rect x="430" y="128" width="230" height="66" rx="8" fill="#f0ecf7" stroke="#6b5b95"/>
+   <text x="545" y="148" text-anchor="middle" font-size="11" font-weight="bold" fill="#3b2f5e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Chmouel : dans la tefila</text>
+   <text x="545" y="166" text-anchor="middle" font-size="10" fill="#4a3f6b" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">a la fin de la amida de minha</text>
+   <text x="545" y="182" text-anchor="middle" font-size="10" fill="#4a3f6b" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">fenetre etroite</text>
+   <rect x="60" y="44" width="580" height="30" rx="7" fill="#fff" stroke="#c9cdd4"/>
+   <text x="350" y="63" text-anchor="middle" font-size="10" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Formule commune : hareni be-taanit yahid lemahar — me voici demain en jeune individuel</text>
+  </svg></div><div class="svg-cap">Les deux fenetres d&#x27;acceptation : le temps de minha pour Rav, la priere elle-meme pour Chmouel.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאי לַָאו — יְיַסֵּר עַצְמוֹ בְּצִלּוֹ? לֹא — יֵאָסֵר עַצְמוֹ.</div>
+            <div class="fr"><p>N&#x27;est-ce pas que cela signifie : qu&#x27;il se lie lui-meme dans sa priere ? Non : qu&#x27;il s&#x27;interdise lui-meme.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>יְיַסֵּר בְּצִלּוֹ</b> בִּתְפִלָּה וְאִי לָא קַבְּלֵיהּ עֲלֵיהּ בִּתְפִלַּת הַמִּנְחָה לָא דָּחֵי לְהָנָךְ יָמִים טוֹבִים אַלְמָא דְּעִיקַּר תַּעֲנִית בָּעֵי לְקַבּוֹלֵי בִּתְפִלַּת הַמִּנְחָה עִילָּוֵיהּ וְאִי לָא קַבְּלֵיהּ עִילָּוֵיהּ בִּתְפִלַּת הַמִּנְחָה לֹא עָשָׂה כְּלוּם:</div>
+          <div class="glose-fr">Dans la priere ; et s&#x27;il ne l&#x27;a pas accepte sur lui dans la priere de minha, il ne repousse pas ces jours de fete. Il ressort que l&#x27;essentiel du jeune requiert d&#x27;etre accepte sur soi dans la priere de minha, et que s&#x27;il ne l&#x27;a pas accepte sur lui dans la priere de minha, il n&#x27;a rien fait.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>יְיַסֵּר</b> לְשׁוֹן וַאֲסָרָהּ אָסַר (בַּמִּדְבָּר ל):</div>
+          <div class="glose-fr">Du langage de « ve-asra issar » (Nombres 30).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּצִלּוֹ</b> צְלוֹתָא אִיכָּא דְאָמְרִי לְשׁוֹן נֶדֶר שֶׁקִּבֵּל עָלָיו לְהִתְעַנּוֹת כְּמוֹ הֲרִימֹותִי יָדִי אֶל ה&#x27; (בְּרֵאשִׁית י״ד:כ״ב) דִּמְתַרְגְּמִינַן אֲרֵימִית יָדִי בְּצִלּוֹ וְאֵין רַבִּי מוֹדֶה הַאי דְּקָתָנֵי דִּכְתִיב מִשּׁוּם דִּמְגִילַּת תַּעֲנִית הָיְתָה נִכְתֶּבֶת לְבַד לְזִכְרוֹן נִסִּים:</div>
+          <div class="glose-fr">Tselota, la priere. Certains disent que c&#x27;est un terme de vœu, qu&#x27;il a accepte sur lui de jeuner, comme « j&#x27;ai leve ma main vers ה&#x27; » (Genese 14,22), que nous traduisons par « arimit yedi bitslo ». Et Rabbi ne concede pas ce qui est enseigne « comme il est ecrit », parce que la Meguilat Taanit etait ecrite a part, en memoire des miracles.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">יֵאָסֵר. פִּי&#x27; יֵאָסֵר בְּאָלֶ&quot;ף הָוֵי לְשׁוֹן אִסּוּר שֶׁאָסַר עַצְמוֹ וִייַסֵּר הָוֵי לְשׁוֹן הֲסָרָה כְּלוֹמַר יָסוּר מִן הַנֶּדֶר יִהְיֶה מֻותָּר לֶאֱכֹול לְמָחָר שֶׁיִּהְיֶה יוֹם טוֹב וְאֵין לְהִתְעַנּוֹת:</div>
+          <div class="glose-fr">Il l&#x27;explique : yei&#x27;aser avec un alef est un terme d&#x27;interdiction — il s&#x27;est interdit lui-meme ; tandis que yeisar est un terme d&#x27;ecartement, c&#x27;est-a-dire qu&#x27;il s&#x27;ecartera de son vœu : il lui sera permis de manger le lendemain, puisque ce sera un jour de fete ou l&#x27;on ne doit pas jeuner.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Toute la preuve de Rav Yossef tient a la vocalisation d'une consonne. Lu <b>yeisar</b>, le mot signifie « qu'il se lie », et suppose un acte d'engagement situe dans la priere, ce qui confirme Chmouel. Lu <b>yei'aser</b> avec un alef, il signifie « qu'il sera interdit », et la clause parle alors de l'interdiction de manger qui pese sur celui dont le vœu precede les jours de fete, sans rien dire du moment de l'acceptation.</p><p>La guemara retient la seconde lecture, et la preuve tombe. Rachi rattache le mot a la racine des vœux dans Nombres 30, et rapporte une lecture ou <b>be-tslo</b> designe le vœu lui-meme, d'apres le Targoum de Genese 14,22.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">פְּלִיגִי בַּהּ רַבִּי חִייָּא וְרַבִּי שִׁמְעוֹן בְּרַבִּי. חַד אָמַר: יְיַסֵּר, וְחַד אָמַר: יֵאָסֵר. מַאן דְּאָמַר יְיַסֵּר — כִּדְאָמְרִינַן. לְמָאֵן דְּאָמַר יֵאָסֵר — מַאי הִיא?</div>
+            <div class="fr"><p>Rabbi Hiya et Rabbi Chimon berabbi divergent la-dessus. L&#x27;un dit : yeisar ; et l&#x27;autre dit : yei&#x27;aser.</p><p>Selon celui qui dit yeisar, c&#x27;est comme nous l&#x27;avons dit. Selon celui qui dit yei&#x27;aser, de quoi s&#x27;agit-il ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְחַד אָמַר יֵאָסֵר</b> דְּלָא הָוֵי תָּנֵי יְיַסֵּר בְּצִלּוֹ דְּמַשְׁמַע דַּוְקָא כִּדְאָמְרִינַן אִי מְקַבֵּל בִּתְפִלַּת הַמִּנְחָה אִין וְאִי לָא לָא אֶלָּא יֵאָסֵר דְּמַשְׁמַע יְהֵא אָסוּר לֶאֱכֹול אִי אָתֵי עָלֶיהָ תַּעֲנִיּוֹת מִן קַדְמַת דְּנָא בֵּין בִּתְפִלָּה בֵּין שֶׁלֹּא בִּתְפִלָּה:</div>
+          <div class="glose-fr">Car il n&#x27;enseignait pas « yeisar be-tslo », formule qui indiquerait precisement, comme nous l&#x27;avons dit, que s&#x27;il accepte dans la priere de minha, oui, et sinon, non ; mais plutot yei&#x27;aser, qui indique qu&#x27;il lui sera interdit de manger si des jeunes sont venus sur lui d&#x27;auparavant, qu&#x27;il les ait acceptes dans la priere ou hors de la priere.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַאי הִיא</b> מַאי קָסָבַר וּמְשַׁנֵּי כִּדְתַנְיָא יָחִיד שֶׁקִּבֵּל עָלָיו תַּעֲנִית שֵׁנִי וַחֲמִישִׁי שֶׁל כָּל הַשָּׁנָה כֻּולָּהּ כְּלוֹמַר כְּדִמְפָרֵשׁ בְּהֶדְיָא אִם נִדְרוֹ קֹודֶם לִגְזֵרָתֵנוּ כו&#x27; וְלָא שְׁנָא בֵּין בִּתְפִלָּה בֵּין שֶׁלֹּא בִּתְפִלָּה:</div>
+          <div class="glose-fr">Que pense-t-il ? Et la guemara repond : comme il est enseigne — un individu qui a accepte sur lui de jeuner les lundi et jeudi de toute l&#x27;annee, c&#x27;est-a-dire comme elle l&#x27;explique explicitement : si son vœu precede notre decret, etc., sans difference entre une acceptation faite dans la priere et hors de la priere.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La divergence sur la lecture du mot est attribuee a deux tanaim de la generation de Rabbi : <b>Rabbi Hiya</b> et <b>Rabbi Chimon berabbi</b>, fils de Rabbi Yehouda HaNassi. La guemara accorde d'abord que la lecture yeisar a deja ete exposee, puis demande a quoi renvoie concretement la lecture yei'aser, ce qui appelle la baraita du segment suivant.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">דְּתַנְיָא בִּמְגִילַּת תַּעֲנִית: כָּל אִינִישׁ דְּיֵיתֵי עֲלוֹהִי מִקַּדְמַת דְּנָא יֵאָסֵר. כֵּיצַד? יָחִיד שֶׁקִּיבֵּל עָלָיו שֵׁנִי וַחֲמִישִׁי וְשֵׁנִי שֶׁל כָּל הַשָּׁנָה כֻּולָּהּ, וְאֵירְעוּ בָּם יָמִים טוֹבִים הַכְּתוּבִין בִּמְגִילַּת תַּעֲנִית, אִם נִדְרוֹ קֹודֶם לִגְזֵרָתֵנוּ — יְבַטֵּיל נִדְרוֹ אֶת גְּזֵרָתֵנוּ, וְאִם גְּזֵרָתֵנוּ קוֹדֶמֶת לְנִדְרוֹ — תְּבַטֵּל גְּזֵרָתֵנוּ אֶת נִדְרוֹ.</div>
+            <div class="fr"><p>Car il est enseigne dans la Meguilat Taanit : tout homme sur qui vient un jeune d&#x27;auparavant, yei&#x27;aser. Comment cela ?</p><p>Un individu qui a accepte sur lui le lundi, le jeudi et le lundi de toute l&#x27;annee, et que sont survenus parmi eux des jours de fete inscrits dans la Meguilat Taanit : si son vœu precede notre decret, son vœu annulera notre decret ; et si notre decret precede son vœu, notre decret annulera son vœu.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>קֹודֶם גְּזֵרָתֵנוּ</b> קֹודֶם שֶׁגָּזְרוּ חֲכָמִים יָמִים טוֹבִים הַלָּלוּ אֲבָל מִשֶּׁגָּזְרוּ אע&quot;פ שֶׁהִתְחִיל תַּעֲנִיּוֹתָיו קֹודֶם הַזְּמַנִּים הַלָּלוּ לָא דָּחוּ:</div>
+          <div class="glose-fr">Avant que les sages n&#x27;aient decrete ces jours de fete ; mais une fois qu&#x27;ils les ont decretes, meme s&#x27;il a commence ses jeunes avant ces dates, ils ne les repoussent pas.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">וְאִם גְּזֵרָתֵנוּ קוֹדֵם לְנִדְרוֹ יִדְחֶה נִדְרוֹ מִפְּנֵי גְּזֵרָתֵנוּ. אוֹמֵר רַשִׁ&quot;י יִדְחֶה נִדְרוֹ מִכֹּל וָכֹל וְלֹא יַשְׁלִים אוֹתוֹ תַּעֲנִית והר&quot;י מְסֻופָּק בַּדָּבָר וְיֵשׁ לְהַחְמִיר דְּדַוְקָא אוֹתוֹ יוֹם לֹא יִתְעַנֶּה אֲבָל יַשְׁלִים אוֹתוֹ לְיוֹם מָחָר וְכֵן יֵשׁ לִיזָּהֵר שֶׁלֹּא לְהִתְעַנּוֹת בְּרֹאשׁ חֹדֶשׁ וּבַחֲנֻוכָּה וּבְפוּרִים דְּמֵאֵלּוּ וַדַּאי לֹא בָּטְלָה מְגִילַּת תַּעֲנִית:</div>
+          <div class="glose-fr">Rachi dit : son vœu est repousse entierement, et il ne completera pas ce jeune. Le Ri en doute, et il y a lieu d&#x27;etre rigoureux : c&#x27;est precisement ce jour-la qu&#x27;il ne jeunera pas, mais il le completera le lendemain. De meme, il faut prendre garde a ne pas jeuner a roch hodech, a Hanoucca et a Pourim, car pour ces jours-la la Meguilat Taanit n&#x27;est certainement pas abolie.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La baraita donne le contenu de la lecture yei'aser. Le cas type est celui d'un homme qui a fait vœu de jeuner la sequence <b>cheni, hamichi, cheni</b> — lundi, jeudi, lundi — tout au long de l'annee, et dont certains de ces jours coincident avec les dates festives de la Meguilat Taanit.</p><p>La regle est une regle d'anteriorite pure : le premier engage l'emporte. Un vœu prive anterieur au decret des sages tient et l'homme jeune ; un decret anterieur au vœu prive le vide de son effet pour ce jour-la. Tossefot rapporte une divergence sur la portee de cette annulation — le jeune est-il perdu ou simplement reporte — et rappelle que roch hodech, Hanoucca et Pourim restent hors d'atteinte du vœu.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg">
+   <rect x="0" y="0" width="700" height="240" fill="#fbfaf8"/>
+   <text x="350" y="24" text-anchor="middle" font-size="14" font-weight="bold" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Vœu prive contre decret des sages : qui est venu le premier ?</text>
+   <rect x="230" y="40" width="240" height="42" rx="8" fill="#fdf3dc" stroke="#b08a2e"/>
+   <text x="350" y="58" text-anchor="middle" font-size="11" font-weight="bold" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Vœu de jeuner cheni, hamichi, cheni</text>
+   <text x="350" y="74" text-anchor="middle" font-size="10" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">toute l'annee — un de ces jours tombe un yom tov</text>
+   <path d="M300 82 L190 112" stroke="#8b93a1" stroke-width="1.6" fill="none"/>
+   <path d="M400 82 L510 112" stroke="#8b93a1" stroke-width="1.6" fill="none"/>
+   <rect x="40" y="116" width="290" height="108" rx="9" fill="#e6f2ea" stroke="#2f7d52"/>
+   <text x="185" y="138" text-anchor="middle" font-size="12" font-weight="bold" fill="#14532d" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Le vœu est anterieur</text>
+   <text x="185" y="160" text-anchor="middle" font-size="11" fill="#25523a" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">nidro kodem li-gzeratenou</text>
+   <text x="185" y="182" text-anchor="middle" font-size="11" fill="#25523a" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Le vœu annule le decret</text>
+   <text x="185" y="204" text-anchor="middle" font-size="10" fill="#4b6355" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">il jeune ce jour-la comme prevu</text>
+   <rect x="370" y="116" width="290" height="108" rx="9" fill="#f7ecec" stroke="#a33b3b"/>
+   <text x="515" y="138" text-anchor="middle" font-size="12" font-weight="bold" fill="#7a2222" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Le decret est anterieur</text>
+   <text x="515" y="160" text-anchor="middle" font-size="11" fill="#5c2a2a" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">gzeratenou kodemet le-nidro</text>
+   <text x="515" y="182" text-anchor="middle" font-size="11" fill="#5c2a2a" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Le decret annule le vœu</text>
+   <text x="515" y="200" text-anchor="middle" font-size="10" fill="#6b4141" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Rachi : le jeune tombe entierement</text>
+   <text x="515" y="214" text-anchor="middle" font-size="10" fill="#6b4141" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Ri : il le reporte au lendemain</text>
+  </svg></div><div class="svg-cap">La regle d&#x27;anteriorite de la Meguilat Taanit, et la divergence sur le sort du jeune annule.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּנוּ רַבָּנַן: עַד מָתַי אוֹכֵל וְשׁוֹתֶה — עַד שֶׁיַּעֲלֶה עַמּוּד הַשַּׁחַר, דִּבְרֵי רַבִּי. רַבִּי אֶלְעָזָר בְּרַבִּי שִׁמְעוֹן אוֹמֵר: עַד קְרוֹת הַגֶּבֶר. אָמַר אַבַּיֵּי: לֹא שָׁנוּ אֶלָּא שֶׁלֹּא גָּמַר סְעוּדָתוֹ, אֲבָל גָּמַר סְעֻודָּתוֹ — אֵינוֹ אוֹכֵל.</div>
+            <div class="fr"><p>Nos maitres ont enseigne : jusqu&#x27;a quand mange-t-il et boit-il ? Jusqu&#x27;au lever de l&#x27;aube — paroles de Rabbi.</p><p>Rabbi Elazar berabbi Chimon dit : jusqu&#x27;au chant du coq. Abaye a dit : on n&#x27;a enseigne cela que s&#x27;il n&#x27;a pas acheve son repas ; mais s&#x27;il a acheve son repas, il ne mange plus.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>עַד מָתַי אוֹכֵל וְשׁוֹתֶה</b> בַּלַּיְלָה כְּשֶׁמִּתְעַנֶּה לְמָחָר בְּכָל תַּעֲנִיּוֹת שֶׁהוּא אוֹכֵל מִשֶּׁתֶּחְשַׁךְ וַאֲפִילּוּ בְּתַעֲנִית יָחִיד קָא מַיְירֵי:</div>
+          <div class="glose-fr">La nuit, lorsqu&#x27;il jeune le lendemain, dans tous les jeunes ou il mange des la tombee de la nuit ; et il parle meme d&#x27;un jeune individuel.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>עַד קְרוֹת הַגֶּבֶר</b> אֲפִילּוּ פַּעַם רִאשׁוֹנָה קָאָמַר מִדְּקָאָמַר גַּבֵּי יוֹצֵא יְחִידִי בַּלַּיְלָה בְּסֵדֶר יוֹמָא (דַּף כא.) עַד שֶׁיְּשַׁלֵּשׁ:</div>
+          <div class="glose-fr">Il parle meme du premier chant, puisqu&#x27;il est dit a propos de celui qui sort seul la nuit, dans Seder Yoma (21a) : jusqu&#x27;a ce qu&#x27;il chante trois fois.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁלֹּא גָּמַר סְעוּדָתוֹ</b> אֲבָל גָּמַר דִּבְרֵי הַכֹּל אֵינוֹ אוֹכֵל:</div>
+          <div class="glose-fr">Mais s&#x27;il l&#x27;a achevee, de l&#x27;avis de tous il ne mange plus.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">תָּנוּ רַבָּנַן עַד אֵימָתַי אוֹכֵל וְשׁוֹתֶה עַד שֶׁיַּעֲלֶה עַמּוּד הַשַּׁחַר דִּבְרֵי ר&#x27; ר&#x27; %לְפָנֵינוּ הַג&#x27; ר&#x27; אֱלִיעֶזֶר בַּר שִׁמְעוֹן אֶלְעָזָר אוֹמֵר עַד קְרוֹת הַגֶּבֶר וְקַיְימָא לָן כְּרַבִּי אָמַר רָבָא לֹא שָׁנוּ אֶלָּא שֶׁלֹּא גָּמַר אֲבָל גָּמַר אָסוּר לֶאֱכֹול. אֵיתִיבֵיהּ אַבָּיֵי יָשַׁן וְעָמַד הֲרֵי זֶה אוֹכֵל. הָתָם שֶׁלֹּא סִילֵּק. אִיכָּא דְּאָמְרִי אָמַר רָבָא לֹא שָׁנוּ אֶלָּא שֶׁלֹּא יָשַׁן אֲבָל יָשַׁן אֵינוֹ אוֹכֵל. פֵּירֵשׁ הָרָאָבָ&quot;ד זַ&quot;ל שֶׁלֹּא יָשַׁן אֲבָל יָשַׁן אַפֵּי&#x27; בְּתוֹךְ הַסְּעוּדָה אָסוּר דַּהֲוָה לֵיהּ כְּמִי שֶׁגָּמַר סְעֻודָּתוֹ וְסִילֵּק מִשּׁוּם דְּאַסַּח דַּעְתֵּיהּ לְמֵיכְלֵיהּ וְטָעוּן בְּרָכָה לְמַפְרֵעַ וּבְרָכָה לְכַתְּחִלָּה. וְהַייְנוּ דְּגָרְסִינַן בִּפְסָחִים (דַּף קכ:) אַבַּיֵּי הֲוָה קָאֵי קַמֵּי דְּרַבָּה בִּסְעוּדְתָא הֲוָה קָמְנַמְנַם אָמַר לֵיהּ אַבַּיֵּי מִינָם קָא נָיֵים מַר אֲמַר לֵיהּ נִמְנוּמִי קָמִנַּמְנָמָא. דִּתְנַן אִם נִתְנַמְנְמוּ יֹאכְלוּ וּלְהַפְסִיק סְעוּדָה אֲמַר לֵיהּ דְּגַבֵּי פֶּסַח הָוֵי כִּשְׁתֵּי חֲבוּרוֹת. אַיְּתִיבֶיהָ יָשַׁן וְעָמַד הֲרֵי זֶה אוֹכֵל וְשׁוֹתֶה הָתָם בְּמִתְנַמְנֵם. וְקַיְימָא לָן כְּלִישָּׁנָא בָּתְרָא לְחוּמְרָא אַפֵּי&#x27; יָשַׁן בְּתוֹךְ סְעֻודָּתוֹ קֹודֶם שֶׁסִּילֵּק אָסוּר וְכָל שֶׁכֵּן גָּמַר וּבֵירַךְ ע&quot;כ דִּבְרֵי הָרַאֲבַ&quot;ד זַ&quot;ל וְחֻומְרָא גְּדוֹלָה הִיא זוֹ וְלִישָּׁנָא דְּבָרַייְתָא לָא מַשְׁמַע הָכֵי כְּפֵירוּשׁוֹ דְּקָתָנֵי עַד מָתַי אוֹכֵל וְשׁוֹתֶה מַשְׁמַע בִּסְתָם אָדָם שֶׁאוֹכֵל בִּתְחִילַּת הַלַּיְלָה וְשׁוֹאֵל אִם רוֹצֶה לֶאֱכֹול פַּעַם אַחֶרֶת עַד מָתַי יָכוֹל לֶאֱכֹול עַד שֶׁיַּעֲלֶה עַמּוּד הַשַּׁחַר. וְעָלָה קָאָמַר רָבָא לֹא שָׁנוּ אֶלָּא שֶׁלֹּא יָשַׁן אַחַר אֲכִילָה הָרִאשׁוֹנָה. ואע&quot;ג דִּלְלִישָּׁנָא קַמָּא דְּרָבָא צָרִיךְ לְפָרֵשׁ דְּבַאֲכִילָה אַחַת קָאָמַר דְּאִם סִילֵּק אָסוּר לֶאֱכֹול לְלִישָּׁנָא בָּתְרָא לָא מַשְׁמַע לְפָרֵשׁ הָכִי. וְגַם יָשַׁן וְעָמַד מַשְׁמַע עַל מִטָּתוֹ דְּאִי יָשַׁן עַל שֻׁולְחָנוֹ מַאי וְעָמַד שַׁיָּיךְ בֵּיהּ. וְעוֹד תֵּימַהּ לָמָּה פָּסַק בְּשֶׁל סוֹפְרִים הֲלָכָה כְּאִיכָּא דְּאָמְרִי לְחוּמְרָא וְשֶׁמָּא לָא חֲשִׁיב לֵיהּ דִּבְרֵי סוֹפְרִים דְּקִיּוּם נִדְרוֹ הָוֵי דְּאוֹרָיְיתָא. וְגַם מַה שֶׁכָּתַב דְּשֵׁינָה הָוֵי הֶפְסֵק לְהַצְרִיךְ בְּרָכָה לְמַפְרֵעַ וּבְרָכָה לְכַתְּחִלָּה לָא סְבִירָא לִי דְּשֵׁינַת עֲרַאי דְּאָדָם יָשֵׁן בְּתוֹךְ סְעֻודָּתוֹ לָא הָוְיָא הֶיסַּח הַדַּעַת. וְלָא דָּמֵי לְהָא דְּתַנְיָא בַּתּוֹסֶפְתָּא דִּבְרָכוֹת פ&quot;ד בַּעַל הַבַּיִת שֶׁהָיָה מֵיסֵב וְאוֹכֵל קְרָאוֹ חֲבֵירוֹ לְדַבֵּר עִמּוֹ אֵין צָרִיךְ בְּרָכָה לְמַפְרֵעַ וְכוּ&#x27; הִפְלִיג צָרִיךְ בְּרָכָה לְמַפְרֵעַ וּכְשֶׁהוּא חוֹזֵר צָרִיךְ בְּרָכָה לְכַתְּחִלָּה. דְּהָתָם פְּלִיג בְּדִבְרֵי הָעוֹסְקִים וְאִיכָּא הֶיסַּח הַדַּעַת אֲבָל בְּשִׁינַת עֲרַאי שֶׁאָדָם יָשֵׁן לְאָונְסוֹ לֵיכָּא הֶיסַּח הַדַּעַת. וְעוֹד דְּקַייְמָא לָן כְּרַב חִסְדָּא בְּפֶ&#x27; עַרְבֵי פְּסָחִים (פְּסָחִים דַּף קא:) דִּדְבָרִים הַטְּעוּנִים בְּרָכָה לְאַחֲרֵיהֶם בִּמְקוֹמָם דִּלְקִיבְעָא קַמָּא הָדַר וְאֵין צָרִיךְ בְּרָכָה לְמַפְרֵעַ וּלְכַתְּחִלָּה וְאַפֵּי&#x27; עָקַר רַגְלוֹ לָצֵאת לִקְרַאת חָתָן וְלִקְרַאת כַּלָּה כָּל שֶׁכֵּן שִׁינַת אֹונֶס שֶׁנִּשְׁאַר בִּקְבִיעוּתוֹ אֵין צָרִיךְ בְּרָכָה לְמַפְרֵעַ וּלְכַתְּחִלָּה. וְהַהִיא דְּעַרְבֵי פְּסָחִים לָאו בְּהֶפְסֵק סְעוּדָה אַיְּירִי אֶלָּא כְּמוֹ שֶׁפֵּי&#x27; רַשְׁבָּ&quot;ם חַזְייֵהּ לְרַבָּה דְּקָא מְנַמְנֵם אַחַר שֶׁהִתְחִיל לֶאֱכֹול מַצָּה שֶׁל מִצְוָה שֶׁהִיא בִּמְקוֹם אֲכִילַת פֶּסַח וַאֲמַר לֵיהּ מִינָם קָא נָייֵם מַר לֹא תֹּאכַל יוֹתֵר מִמַּצָּה שֶׁל מִצְוָה שֶׁהִיא בִּמְקוֹם אֲכִילַת הַפֶּסַח. כְּדִתְנַן יֶשְׁנוֹ לֹא יֹאכְלוּ וְכֵן נָהֲגוּ כָּל הָעוֹלָם דְּשֵׁינָה בְּתוֹךְ הַסְּעוּדָה לָא הָוֵי הֶפְסֵק. הִלְכָּךְ לֵיתָא פֵּירוּשָׁא דִּידֵיהּ. וה&quot;ר אִלְפָּס זַ&quot;ל כָּתַב הַאי מִלְּתָא לָא אִיפְּסִיקָא בְּהַהִלְכְתָא בְּהֻדַּיַּאְאָלָא מִיהוּ מִדְּחָזֵינַן לַגְּמָרָא דְּקָא טִרְחָא לְפָרוֹשֵׁי מִתְנַמְנֵם שָׁמְעִינַן הֲלָכָה כְּלִישָּׁנָא בָּתְרָא. וְעוֹד דְּאִיסּוּרָא דְּרַבָּנָן הִיא וּלְקֻולָּא עָבְדִינַן וּבֵין סִילֵּק וּבֵין לֹא סִילֵּק אִם לֹא יָשַׁן אוֹכֵל וְהוֹלֵךְ עַד שֶׁיַּעֲלֶה עַמּוּד הַשַּׁחַר וְהַיְינוּ דְּלָא כְּפִי&#x27; הָרָאָבָ&quot;ד זַ&quot;ל דְּהָא קָרֵי לְלִישָּׁנָא בָּתְרָא קֻולָּא. וְעוֹד שֶׁהֲרֵי פָּסַק דְּסִילֵּק מֻותָּר לֶאֱכֹול וכ&quot;ש יָשַׁן לְאָונְסוֹ בְּתוֹךְ סְעֻודָּתוֹ דְּמֻותָּר לֶאֱכֹול. ור&quot;ח זַ&quot;ל הֵבִיא הַיְּרוּשַׁלְמִי (הֲלָכָה ד) יָשַׁן וְעָמַד אָסוּר לֹא שָׁנוּ אֶלָּא שֶׁלֹּא הִתְנָה אֲבָל הִתְנָה מֻותָּר. וּלְעִנְיַן תַּעֲנִית שֶׁפּוֹסֵק בּוֹ מִבְּעוֹד יוֹם חָזֵינַן לְגָאוֹן דְּקָאָמַר הָכִי אע&quot;פ שֶׁפּוֹסֵק חוֹזֵר וְאוֹכֵל וַאֲנַן מִסְתַּבְּרָא לָן לְמֵימַר דה&quot;מ דְּלָא קַבְּלֵיהּ עֲלֵיהּ לְתַעֲנִיתָא אֲבָל הֵיכָא דְּקַבְּלֵיהּ עֲלֵיהּ לְתַעֲנִיתָא אִיתְּסַר לֵיהּ לְמֵיכַל וּלְמִשְׁתֶּה דְּהָא בְּהֶדְיָא אָמְרִינַן (עֵירוּבִין דַּף מ:) לְעִנְיַן זְמַן עַל הַכּוֹס בְּיוֹם הַכִּפּוּרִים הֵיכִי נַעֲבִיד מְבָרֵךְ עֲלֵיהּ וְשָׁתֵי לֵיהּ כֵּיוָן דְּאָמַר זְמַן קַבְּלֵיהּ עֲלֵיהּ וְאִיתְּסַר עֲלֵיהּ לְמִישְׁתֵּי. וּלְעִנְיַן מִישְׁתֵּי מַיָּא הֵיכָא דְּאִית לֵיהּ לְמֵיכַל אִית לֵיהּ לְמִישְׁתֵּי וְהֵיכָא דְּלֵית לֵיהּ לְמֵיכַל לֵית לֵיהּ לְמִישְׁתֵּי מַיָּא. וְהָכִי נָמֵי כָּתַב גָּאוֹן. אֲבָל אִי לָא קַבְּלֵיהּ לְתַעֲנִיתָא עָלֶיהָ אֲפִילּוּ גָּמַר סְעוֹדְתֵּיהּ וְהִפְסִיק לָא הָוֵי קַבָּלָה וְחוֹזֵר וְאוֹכֵל וְשׁוֹתֶה. כִּדְאִיתָא בְּאִיְּכָה רַבָּתִי ר&#x27; יְהוּדָה בֶּן בְּתֵירָה אֲזַל לִנְצִיבִין בְּעַרְבָּא דְּצוֹמָא רַבָּה אָמַר רֵישׁ כְּנִישְׁתָּא לְזִמּוּנֶיהָ א&quot;ל כְּבָר אָכַלְתִּי וּפָסַקְתִּי לִי א&quot;ל אַשְׁגַּח עִילָּוַאי דְּלָא לֵימָא אִינָשֵׁי הַהוּא ר&#x27; לָא אַשְׁגַּח עִילָּוֵיהּ אֲזַל עִמֵּיהּ. וּמַסִּיק הָתָם דְּאָכַל מִכָּל עִיגּוּל חַד פְּתִית וּמִכָּל תַּבְשִׁיל חַד פַּת וּמִכָּל חָבִית חַד כּוֹס. וְכֵן מַשְׁמַע בְּפֶ&#x27; בְּכָל מְעָרְבִין (שָׁם ) דְּקָאָמַר כֵּיוָן דְּאָמַר זְמַן קַבְּלֵיהּ עִילָּוֵיהּ מַשְׁמַע דַּוְקָא הַזְכָּרַת זְמַן הוּא דְּהָוֵי קַבָּלַת תַּעֲנִית אֲבָל קֹודֶם לָכֵן לֹא וְאַפֵּי&#x27; הִפְסִיק סְעֻודָּתוֹ:</div>
+          <div class="glose-fr">Nos maitres ont enseigne : jusqu&#x27;a quand mange-t-il et boit-il ? Jusqu&#x27;au lever de l&#x27;aube — paroles de Rabbi. Rabbi Elazar — dans nos editions la version est Rabbi Eliezer bar Chimon — dit : jusqu&#x27;au chant du coq. Et nous tenons pour regle comme Rabbi. Rava a dit : on n&#x27;a enseigne cela que s&#x27;il n&#x27;a pas acheve, mais s&#x27;il a acheve il lui est interdit de manger. Abaye lui objecta : « il a dormi puis s&#x27;est leve — celui-la mange ! ». La, il s&#x27;agit du cas ou il n&#x27;a pas desservi. Certains disent : Rava a dit : on n&#x27;a enseigne cela que s&#x27;il n&#x27;a pas dormi, mais s&#x27;il a dormi il ne mange pas. Le Raavad, de memoire benie, a explique : « s&#x27;il n&#x27;a pas dormi » — mais s&#x27;il a dormi, meme au milieu du repas, c&#x27;est interdit, car il est comme celui qui a acheve son repas et desservi, ayant detourne son esprit de manger ; il requiert alors une benediction apres coup et une benediction avant de reprendre. Et c&#x27;est ce que nous lisons dans Pessahim (120b) : Abaye se tenait devant Rabba pendant le repas ; il somnolait. Abaye lui dit : le maitre dort-il ? Il lui repondit : je ne fais que somnoler — car nous avons appris : s&#x27;ils ont somnole, qu&#x27;ils mangent. Et quant a interrompre le repas, il lui dit : pour le Pessah, ce serait comme deux groupes. Il lui objecta : « il a dormi puis s&#x27;est leve — celui-la mange et boit ! ». La, il s&#x27;agit de celui qui somnole. Et nous tenons pour regle comme la derniere version, par rigueur : meme s&#x27;il a dormi au milieu de son repas avant d&#x27;avoir desservi, c&#x27;est interdit, a plus forte raison s&#x27;il a acheve et beni. Fin des propos du Raavad, de memoire benie. Or c&#x27;est la une grande rigueur, et la formulation de la baraita ne va pas dans le sens de son explication, puisqu&#x27;elle enseigne « jusqu&#x27;a quand mange-t-il et boit-il ? », ce qui indique un homme ordinaire qui mange au debut de la nuit et qui demande, s&#x27;il veut manger une seconde fois, jusqu&#x27;a quand il le peut : jusqu&#x27;au lever de l&#x27;aube. Et la-dessus Rava dit : on n&#x27;a enseigne cela que s&#x27;il n&#x27;a pas dormi apres le premier repas. Et bien que, selon la premiere version de Rava, il faille expliquer qu&#x27;il parle d&#x27;un seul repas — car s&#x27;il a desservi il lui est interdit de manger —, selon la derniere version il n&#x27;y a pas lieu d&#x27;expliquer ainsi. De plus, « il a dormi puis s&#x27;est leve » indique qu&#x27;il a dormi sur son lit : car s&#x27;il avait dormi a sa table, que viendrait faire « puis s&#x27;est leve » ? Il y a encore lieu de s&#x27;etonner : pourquoi a-t-il tranche, en matiere de paroles des scribes, comme la version « certains disent », par rigueur ? Peut-etre ne considere-t-il pas cela comme paroles des scribes, puisque l&#x27;accomplissement de son vœu releve de la Tora. Et ce qu&#x27;il a ecrit, que le sommeil constitue une interruption exigeant une benediction apres coup et une benediction avant de reprendre, je ne le tiens pas : un sommeil passager, tel que l&#x27;homme en connait au milieu de son repas, ne constitue pas un detournement de l&#x27;esprit. Cela ne ressemble pas a ce qui est enseigne dans la Tossefta de Berakhot, chapitre 4 : un maitre de maison qui etait attable et mangeait, et que son compagnon a appele pour lui parler, n&#x27;a pas besoin de benediction apres coup, etc. ; s&#x27;il s&#x27;est eloigne, il faut une benediction apres coup, et a son retour une benediction avant de reprendre. Car la, il s&#x27;est eloigne dans les propos de ceux qui s&#x27;y occupent, et il y a detournement de l&#x27;esprit ; tandis que dans un sommeil passager, ou l&#x27;homme dort malgre lui, il n&#x27;y a pas de detournement de l&#x27;esprit. En outre, nous tenons pour regle comme Rav Hisda au chapitre Arvei Pessahim (Pessahim 101b) : les choses qui requierent une benediction apres elles a leur place reviennent a leur fixation premiere, et il n&#x27;y a besoin ni de benediction apres coup ni de benediction avant de reprendre, et cela meme s&#x27;il a leve le pied pour sortir a la rencontre d&#x27;un marie ou d&#x27;une mariee ; a plus forte raison un sommeil subi, ou il demeure dans sa fixation, ne requiert ni benediction apres coup ni benediction avant de reprendre. Ce passage d&#x27;Arvei Pessahim ne traite pas d&#x27;une interruption du repas, mais, comme l&#x27;a explique le Rachbam : il vit Rabba somnoler apres avoir commence a manger la matsa de la mitsva, laquelle tient lieu de la consommation du Pessah, et il lui dit : le maitre dort-il ? — ne mange plus rien apres la matsa de la mitsva qui tient lieu de la consommation du Pessah, comme nous avons appris : « s&#x27;ils se sont endormis, qu&#x27;ils ne mangent pas ». Et ainsi l&#x27;usage s&#x27;est repandu partout : le sommeil au milieu du repas ne constitue pas une interruption. Son explication n&#x27;est donc pas retenue. Le Rif, de memoire benie, a ecrit : cette chose n&#x27;a pas ete tranchee explicitement dans la halakha ; toutefois, de ce que nous voyons la guemara se donner la peine d&#x27;expliquer « celui qui somnole », nous apprenons que la halakha est comme la derniere version. En outre, c&#x27;est un interdit rabbinique et nous agissons par indulgence : qu&#x27;il ait desservi ou non, s&#x27;il n&#x27;a pas dormi il continue a manger jusqu&#x27;au lever de l&#x27;aube. Et cela ne s&#x27;accorde pas avec l&#x27;explication du Raavad, de memoire benie, puisqu&#x27;il appelle « indulgence » la derniere version ; en outre il a tranche que meme s&#x27;il a desservi il lui est permis de manger, et a plus forte raison s&#x27;il a dormi malgre lui au milieu de son repas. Rabbenou Hananel, de memoire benie, a rapporte le Yerouchalmi (halakha 4) : « il a dormi puis s&#x27;est leve — c&#x27;est interdit ». On n&#x27;a enseigne cela que s&#x27;il n&#x27;a pas pose de condition ; mais s&#x27;il a pose une condition, c&#x27;est permis. Et quant au jeune ou il cesse de manger pendant qu&#x27;il fait encore jour, nous voyons un Gaon qui dit ainsi : bien qu&#x27;il ait cesse, il revient et mange. Et il nous parait logique de dire que cela ne vaut que lorsqu&#x27;il n&#x27;a pas accepte sur lui le jeune ; mais la ou il a accepte sur lui le jeune, il lui est interdit de manger et de boire, car nous disons explicitement (Erouvin 40b) a propos du Zeman sur la coupe a Yom Kippour : comment faire ? Il recite la benediction dessus et la boit ? Du moment qu&#x27;il a dit le Zeman, il l&#x27;a accepte sur lui et il lui est interdit de boire. Quant a boire de l&#x27;eau : la ou il lui est permis de manger, il lui est permis de boire ; et la ou il ne lui est pas permis de manger, il ne lui est pas permis de boire de l&#x27;eau. Ainsi a ecrit le Gaon. Mais s&#x27;il n&#x27;a pas accepte sur lui le jeune, meme s&#x27;il a acheve son repas et a cesse, ce n&#x27;est pas une acceptation, et il revient manger et boire — comme il se trouve dans Eikha Rabbati : Rabbi Yehouda ben Betera se rendit a Netsivin la veille du grand jeune ; le chef de la synagogue dit de l&#x27;inviter. Il lui dit : j&#x27;ai deja mange et j&#x27;ai cesse. Il lui repondit : prends egard a moi, que les gens ne disent pas « ce maitre n&#x27;a pas pris egard a lui ». Il partit avec lui. Et l&#x27;on conclut la-bas qu&#x27;il mangea de chaque miche un morceau, de chaque plat une portion, et de chaque tonneau une coupe. De meme, il ressort du chapitre Bekhol mearvin (ibid.) ou il est dit : du moment qu&#x27;il a dit le Zeman, il l&#x27;a accepte sur lui — ce qui indique que c&#x27;est precisement la mention du Zeman qui constitue l&#x27;acceptation du jeune, et non ce qui la precede, meme s&#x27;il a interrompu son repas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouveau sujet : la nuit qui precede un jeune. La baraita fixe le terme extreme de l'alimentation nocturne. Pour <b>Rabbi</b>, c'est le <b>amoud ha-chahar</b>, le lever de l'aube, moment ou le jeune entre effectivement. Pour <b>Rabbi Elazar berabbi Chimon</b>, c'est le chant du coq, sensiblement plus tot, et Rachi precise qu'il s'agit du premier chant.</p><p>Abaye restreint aussitot : cette latitude ne vaut que tant que le repas du soir n'est pas acheve. L'acte d'achever le repas vaut par lui-meme cloture, independamment de l'heure. La suite du folio discute ce qui constitue precisement cette cloture.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אַיְּתִיבֶיהָ רָבָא: גָּמַר וְעָמַד — הֲרֵי זֶה אוֹכֵל! הָתָם כְּשֶׁלֹּא סִילֵּק. אִיכָּא דְאָמְרִי, אָמַר רָבָא: לֹא שָׁנוּ אֶלָּא כְּשֶׁלֹּא יָשַׁן, אֲבָל יָשַׁן — אֵינוֹ אוֹכֵל. אֵיתִיבֵיהּ אַבַּיֵּי: יָשַׁן וְעָמַד — הֲרֵי זֶה אוֹכֵל! הָתָם בְּמִתְנַמְנֵם.</div>
+            <div class="fr"><p>Rava lui objecta : il a acheve et s&#x27;est leve — celui-la mange ! La, il s&#x27;agit du cas ou il n&#x27;a pas desservi.</p><p>Certains disent : Rava a dit : on n&#x27;a enseigne cela que s&#x27;il n&#x27;a pas dormi ; mais s&#x27;il a dormi, il ne mange pas. Abaye lui objecta : il a dormi et s&#x27;est leve — celui-la mange !</p><p>La, il s&#x27;agit de celui qui somnole.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(5)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אָכַל וְעָמַד</b> אע&quot;פ שֶׁבֵּירַךְ וְעָמַד מִשֻּׁולְחָנוֹ חוֹזֵר וְאוֹכֵל וְאֵין בְּכָךְ כְּלוּם:</div>
+          <div class="glose-fr">Meme s&#x27;il a beni et s&#x27;est leve de sa table, il revient manger et cela ne porte pas a consequence.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁלֹּא סִילֵּק</b> אֶת הַטַּבְלָא דְּלָאו עֲקִירָה הִיא וְלָא אַסַּח דַּעְתֵּיהּ מֵאֲכִילָה וְכִסְעוּדָה אֲרִיכְתָּא דָּמְיָא:</div>
+          <div class="glose-fr">La table ; car ce n&#x27;est pas une akira, et il n&#x27;a pas detourne son esprit de la nourriture : c&#x27;est comme un seul repas prolonge.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִיכָּא דְאָמְרִי אָמַר רָבָא כוּ&#x27;</b> וַהֲלָכָה כְּאִיכָּא דְּאָמְרִי אוֹכֵל וְשׁוֹתֶה עַד שֶׁיִּישַׁן קֶבַע וְעַד שֶׁיַּעֲלֶה עַמּוּד הַשַּׁחַר כְּרַבִּי:</div>
+          <div class="glose-fr">Et la halakha est comme la version « certains disent » : il mange et boit jusqu&#x27;a ce qu&#x27;il dorme d&#x27;un sommeil fixe, et jusqu&#x27;au lever de l&#x27;aube, comme Rabbi.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲבָל יָשֵׁן</b> הַפְסָקָה הִיא וְשׁוּב אֵינוֹ אוֹכֵל:</div>
+          <div class="glose-fr">C&#x27;est une interruption, et il ne mange plus.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָתָם</b> לָאו יָשֵׁן מַמָּשׁ אֶלָּא מִתְנַמְנֵם שומיליי&quot;ר בְּלַעַ&quot;ז:</div>
+          <div class="glose-fr">Non pas qu&#x27;il dorme vraiment, mais qu&#x27;il somnole — somiliier en langue vernaculaire.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deux versions de la discussion sont transmises. Dans la premiere, Abaye retient l'achevement du repas et Rava objecte qu'une baraita autorise a manger apres s'etre leve ; la reponse deplace le critere sur le fait de <b>desservir</b> la table, signe exterieur d'un <b>hessah ha-daat</b> (detournement de l'esprit).</p><p>Dans la seconde version, Rava place le critere sur le sommeil, et Abaye objecte une baraita permettant de manger apres s'etre leve d'un sommeil. La reponse distingue le sommeil veritable du <b>mitnamnem</b>, celui qui somnole. Rachi tranche selon cette seconde version, et le Rosh y consacre un long developpement contre le Raavad, refusant de voir dans un assoupissement une interruption du repas.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg">
+   <rect x="0" y="0" width="720" height="250" fill="#fbfaf8"/>
+   <text x="360" y="24" text-anchor="middle" font-size="14" font-weight="bold" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Qu'est-ce qui ferme le repas de la nuit ?</text>
+   <rect x="30" y="40" width="320" height="140" rx="9" fill="#e8eef7" stroke="#4a6fa5"/>
+   <text x="190" y="60" text-anchor="middle" font-size="12" font-weight="bold" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Premiere version</text>
+   <text x="190" y="80" text-anchor="middle" font-size="11" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Abaye : le critere est d'avoir acheve</text>
+   <text x="190" y="100" text-anchor="middle" font-size="10" fill="#4b5563" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Objection de Rava : il a acheve et s'est leve,</text>
+   <text x="190" y="114" text-anchor="middle" font-size="10" fill="#4b5563" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">et pourtant il mange</text>
+   <text x="190" y="136" text-anchor="middle" font-size="11" font-weight="bold" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Reponse : il n'avait pas desservi</text>
+   <text x="190" y="156" text-anchor="middle" font-size="10" fill="#4b5563" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">tant que la table reste mise, le repas dure ;</text>
+   <text x="190" y="170" text-anchor="middle" font-size="10" fill="#4b5563" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">seul le fait de desservir vaut hessah ha-daat</text>
+   <rect x="370" y="40" width="320" height="140" rx="9" fill="#f0ecf7" stroke="#6b5b95"/>
+   <text x="530" y="60" text-anchor="middle" font-size="12" font-weight="bold" fill="#3b2f5e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Seconde version — retenue</text>
+   <text x="530" y="80" text-anchor="middle" font-size="11" fill="#4a3f6b" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Rava : le critere est d'avoir dormi</text>
+   <text x="530" y="100" text-anchor="middle" font-size="10" fill="#5a4f7b" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Objection d'Abaye : il a dormi et s'est leve,</text>
+   <text x="530" y="114" text-anchor="middle" font-size="10" fill="#5a4f7b" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">et pourtant il mange</text>
+   <text x="530" y="136" text-anchor="middle" font-size="11" font-weight="bold" fill="#3b2f5e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Reponse : il ne faisait que somnoler</text>
+   <text x="530" y="156" text-anchor="middle" font-size="10" fill="#5a4f7b" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">mitnamnem — la definition se donne en 12b ;</text>
+   <text x="530" y="170" text-anchor="middle" font-size="10" fill="#5a4f7b" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Rachi : la halakha suit cette version</text>
+   <rect x="100" y="192" width="520" height="46" rx="8" fill="#fff" stroke="#c9cdd4"/>
+   <text x="360" y="212" text-anchor="middle" font-size="11" font-weight="bold" fill="#1f2a37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Terme extreme dans tous les cas : le lever de l'aube, comme Rabbi</text>
+   <text x="360" y="230" text-anchor="middle" font-size="10" fill="#3d4756" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">Le Rosh, contre le Raavad, refuse de traiter l'assoupissement comme une interruption</text>
+  </svg></div><div class="svg-cap">Les deux versions de la discussion Abaye-Rava et le critere retenu pour la cloture du repas nocturne.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הֵיכִי דָמֵי מִתְנַמְנֵם? אָמַר רַב אַשִּׁי:</div>
+            <div class="fr"><p>Quel est le cas de celui qui somnole ? Rav Achi a dit :</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le folio s'interrompt sur la question laissee ouverte par la reponse precedente : il faut une definition operatoire du <b>mitnamnem</b>. La reponse de Rav Achi se lit en 12b.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Taanit_11b.html">&lsaquo; Taanit 11b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Taanit_12b.html">Taanit 12b &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

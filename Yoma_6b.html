@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yoma 6b — tevila de jour ou de nuit, et l&#x27;impurete du mort en public (hutra ou dechuya)</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Yoma 6b — tevila de jour ou de nuit, et l&#x27;impurete du mort en public (hutra ou dechuya)</h1>
+    <div class="ref">Yoma 6b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_6a.html">&lsaquo; Yoma 6a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> Ce daf clot d&#x27;abord le debat sur le bo&#x27;el nidda (celui qui a eu commerce avec une nidda) : immerge-t-il de jour, comme le tamei met, ou de nuit, comme la nidda ? La baraita explicite de R.</p><p>Hiyya tranche — bo&#x27;el nidda de jour — et refute (tiouvta) Rav Shimi de Nehardea ; au passage, on precise la particularite du bo&#x27;el nidda, qui produit du mishkav u-moshav mais d&#x27;une impurete legere (aliments et boissons seulement). Le daf enchaine sur la sequestration du Cohen gadol avant Kippour : pourquoi l&#x27;ecarter de sa maison (risque frequent que sa femme soit nidda) et non des visiteurs (risque rare de mort) ?</p><p>Rava en deduit que l&#x27;impurete du mort est hutra (permise) en public ; Ravina se contente de la difference frequent/rare, meme si elle n&#x27;est que dechuya (repoussee). De la, la grande mahloket Rav Nahman (hutra) / Rav Chechet (dechuya), et ses trois etages de consequence pratique quant a savoir si l&#x27;on recherche des cohanim purs — le troisieme (ika de-amri) restant ouvert sur 7a.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="360" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Yoma 6b — quand immerge-t-on ? (baraita de R. Hiyya)</text>
+  <text x="380" y="46" text-anchor="middle" font-size="10.5" fill="#57534e">Enjeu : le bo'el nidda (qui a eu commerce avec une nidda) immerge-t-il de JOUR (comme le tamei met) ou de NUIT (comme la nidda) ?</text>
+  <rect x="40" y="66" width="340" height="230" rx="8" fill="#eff6ff" stroke="#93c5db"/>
+  <text x="210" y="90" text-anchor="middle" font-size="13" font-weight="700" fill="#1d4ed8">Tevila de JOUR</text>
+  <line x1="60" y1="100" x2="360" y2="100" stroke="#c7dbea"/>
+  <g font-size="11.5" fill="#292524">
+    <text x="210" y="124" text-anchor="middle">le zav et la zava</text>
+    <text x="210" y="148" text-anchor="middle">le metzora et la metzora'at</text>
+    <text x="210" y="172" text-anchor="middle" font-weight="700" fill="#1d4ed8">le bo'el nidda</text>
+    <text x="210" y="196" text-anchor="middle">le tamei met (impur par un mort)</text>
+  </g>
+  <text x="210" y="232" text-anchor="middle" font-size="10" fill="#57534e">Impurs dont l'impurete depend d'un compte de jours :</text>
+  <text x="210" y="248" text-anchor="middle" font-size="10" fill="#57534e">ils immergent le jour ou le compte s'acheve.</text>
+  <rect x="400" y="66" width="320" height="230" rx="8" fill="#f5f3ff" stroke="#c4b5e0"/>
+  <text x="560" y="90" text-anchor="middle" font-size="13" font-weight="700" fill="#6d28d9">Tevila de NUIT</text>
+  <line x1="420" y1="100" x2="700" y2="100" stroke="#dcd3ef"/>
+  <g font-size="11.5" fill="#292524">
+    <text x="560" y="124" text-anchor="middle">la nidda</text>
+    <text x="560" y="148" text-anchor="middle">la yoledet (accouchee)</text>
+  </g>
+  <text x="560" y="188" text-anchor="middle" font-size="10" fill="#57534e">Femmes dont l'impurete depend de la vue</text>
+  <text x="560" y="204" text-anchor="middle" font-size="10" fill="#57534e">du sang : elles immergent la nuit suivant</text>
+  <text x="560" y="220" text-anchor="middle" font-size="10" fill="#57534e">le dernier jour de leur compte.</text>
+  <rect x="40" y="312" width="680" height="36" rx="6" fill="#fef2f2" stroke="#e8b4b4"/>
+  <text x="380" y="335" text-anchor="middle" font-size="11" font-weight="700" fill="#b4231f">Tiouvta : la baraita range le bo'el nidda cote JOUR -> Rav Shimi de Nehardea (bo'el nidda comme la nidda, de nuit) est refute.</text>
+</svg></div>
+          <figcaption>La baraita de R. Hiyya : qui immerge de jour, qui de nuit, et la refutation de Rav Shimi.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="300" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Pourquoi separer le Cohen gadol de sa maison, mais pas du risque de mort ?</text>
+  <rect x="40" y="52" width="320" height="88" rx="7" fill="#fef9ec" stroke="#e7cd86"/>
+  <text x="200" y="76" text-anchor="middle" font-size="12" font-weight="700" fill="#92400e">On l'ecarte de sa MAISON (7 j. avant Kippour)</text>
+  <text x="200" y="98" text-anchor="middle" font-size="10" fill="#78350f">de peur que sa femme ne se trouve nidda</text>
+  <text x="200" y="116" text-anchor="middle" font-size="10.5" font-weight="700" fill="#92400e">tumat beito = FREQUENTE (chekhicha)</text>
+  <rect x="400" y="52" width="320" height="88" rx="7" fill="#f0fdf4" stroke="#9dd5b0"/>
+  <text x="560" y="76" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">On ne l'ecarte PAS des visiteurs</text>
+  <text x="560" y="98" text-anchor="middle" font-size="10" fill="#14532d">alors qu'un visiteur pourrait mourir aupres de lui</text>
+  <text x="560" y="116" text-anchor="middle" font-size="10.5" font-weight="700" fill="#166534">tumat met = RARE (lo chekhicha)</text>
+  <path d="M380 158 L380 176" stroke="#b0a99f" stroke-width="1.4"/>
+  <rect x="120" y="176" width="520" height="52" rx="7" fill="#eef2ff" stroke="#a9b4e8"/>
+  <text x="380" y="198" text-anchor="middle" font-size="11.5" font-weight="700" fill="#3730a3">Rav Tahlifa au nom de Rava : cela veut dire (zot omeret) que la tumat met est HUTRA (permise) en public</text>
+  <text x="380" y="218" text-anchor="middle" font-size="10" fill="#4338ca">un individu est ecarte (nidhe), mais la communaute n'est pas ecartee -- a Kippour le service est communautaire</text>
+  <rect x="120" y="242" width="520" height="46" rx="7" fill="#f8fafc" stroke="#dfe3e8"/>
+  <text x="380" y="262" text-anchor="middle" font-size="11" font-weight="700" fill="#334155">Ravina : meme si la tumat met n'est que DECHUYA (repoussee), la michna tient</text>
+  <text x="380" y="279" text-anchor="middle" font-size="10" fill="#475569">car il suffit que la difference frequente / rare explique pourquoi on ecarte l'une et non l'autre.</text>
+</svg></div>
+          <figcaption>Le passage a la sequestration du Cohen gadol : maison (frequent) vs mort (rare).</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="420" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Tumat met en public : HUTRA ou DECHUYA ? (Rav Nahman / Rav Chechet)</text>
+  <rect x="40" y="44" width="340" height="150" rx="8" fill="#f0fdf4" stroke="#9dd5b0"/>
+  <text x="210" y="68" text-anchor="middle" font-size="13" font-weight="700" fill="#166534">HUTRA — permise (Rav Nahman)</text>
+  <line x1="60" y1="78" x2="360" y2="78" stroke="#c3e6cf"/>
+  <text x="210" y="100" text-anchor="middle" font-size="10.5" fill="#14532d">Une permission pleine et entiere.</text>
+  <text x="210" y="120" text-anchor="middle" font-size="10.5" fill="#14532d">Tout se passe comme s'il n'y avait</text>
+  <text x="210" y="136" text-anchor="middle" font-size="10.5" fill="#14532d">aucune impurete : le service impur</text>
+  <text x="210" y="152" text-anchor="middle" font-size="10.5" fill="#14532d">vaut le service pur.</text>
+  <text x="210" y="178" text-anchor="middle" font-size="11" font-weight="700" fill="#166534">=> on ne recherche pas (lo mehadrinan)</text>
+  <rect x="400" y="44" width="320" height="150" rx="8" fill="#fef2f2" stroke="#e8b4b4"/>
+  <text x="560" y="68" text-anchor="middle" font-size="13" font-weight="700" fill="#b4231f">DECHUYA — repoussee (Rav Chechet)</text>
+  <line x1="420" y1="78" x2="700" y2="78" stroke="#eecccc"/>
+  <text x="560" y="100" text-anchor="middle" font-size="10.5" fill="#7f1d1d">L'interdit est ecarte avec peine,</text>
+  <text x="560" y="120" text-anchor="middle" font-size="10.5" fill="#7f1d1d">par necessite, non aboli.</text>
+  <text x="560" y="140" text-anchor="middle" font-size="10.5" fill="#7f1d1d">Il subsiste en arriere-plan : chaque</text>
+  <text x="560" y="156" text-anchor="middle" font-size="10.5" fill="#7f1d1d">fois qu'on peut faire pur, on le doit.</text>
+  <text x="560" y="178" text-anchor="middle" font-size="11" font-weight="700" fill="#b4231f">=> on recherche (mehadrinan)</text>
+  <text x="380" y="224" text-anchor="middle" font-size="12" font-weight="700" fill="#1c1917">Nafka mina — les trois cas</text>
+  <rect x="40" y="238" width="680" height="52" rx="6" fill="#f8fafc" stroke="#dfe3e8"/>
+  <text x="60" y="260" font-size="11" font-weight="700" fill="#334155">1. Purs ET impurs dans le meme beit av (equipe du jour)</text>
+  <text x="60" y="279" font-size="10.5" fill="#475569">Accord de tous : les PURS officient, les impurs non.</text>
+  <rect x="40" y="298" width="680" height="52" rx="6" fill="#eef2ff" stroke="#c3cbee"/>
+  <text x="60" y="320" font-size="11" font-weight="700" fill="#3730a3">2. Tout le beit av du jour est impur — faire venir des purs d'un autre beit av ?</text>
+  <text x="60" y="339" font-size="10.5" fill="#4338ca">1re version : Nahman (hutra) NON / Chechet (dechuya) OUI, on va les chercher.</text>
+  <rect x="40" y="358" width="680" height="52" rx="6" fill="#fef9ec" stroke="#e7cd86"/>
+  <text x="60" y="380" font-size="11" font-weight="700" fill="#92400e">3. Ika de-amri : meme cas 1 (purs et impurs presents dans le beit av)</text>
+  <text x="60" y="399" font-size="10.5" fill="#78350f">Nahman durcit sa position : les impurs officient AUSSI (suite en 7a).</text>
+</svg></div>
+          <figcaption>La mahloket hutra / dechuya et ses trois etages de consequence pratique.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא לָאו, לִטְבִילָתָן!</div>
+            <div class="fr"><p>[La guemara reprend :] Plutot, n&#x27;est-ce pas [que la baraita &#x27;le bo&#x27;el nidda est comme le tamei met&#x27; les rapproche] quant a leur immersion (tevila) — tous deux immergeant de JOUR ? [Cela refuterait Rav Shimi de Nehardea, qui fait immerger le bo&#x27;el nidda de nuit, comme la nidda.]</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Contexte (fin de 6a) : Rav Shimi de Nehardea soutenait que le <b>bo'el nidda</b> (celui qui a eu commerce avec une nidda) immerge de nuit, l'assimilant a la nidda. Contre lui, on invoque une baraita qui compare le bo'el nidda au <b>tamei met</b>. La guemara presse : cette comparaison ne doit-elle pas porter sur la <b>tevila</b> (immersion de jour) ? Si oui, Rav Shimi est refute.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לֹא, לְעוֹלָם לְטֻומְאָתָן, סֵיפָא אִצְטְרִיכָא לֵיהּ: אֶלָּא שֶׁחָמוּר מִמֶּנּוּ בּוֹעֵל נִדָּה, שֶׁמְּטַמֵּא מִשְׁכָּב וּמוֹשָׁב בְּטֻומְאָה קַלָּה, לְטַמֵּא אֳוכָלִין וּמַשְׁקִין.</div>
+            <div class="fr"><p>Non ; en verite [la baraita les compare] quant a leur [duree d&#x27;]impurete. C&#x27;est la clause finale (seifa) qui la rendait necessaire [au tana d&#x27;enoncer la comparaison] : &#x27;sauf que le bo&#x27;el nidda est plus grave que [le tamei met], en ce qu&#x27;il rend impurs le coucher et le siege (mishkav u-moshav) d&#x27;une impurete LEGERE — [au point seulement] de rendre impurs aliments et boissons&#x27;.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁמְּטַמֵּא מִשְׁכָּב וּמוֹשָׁב</b> אֲפִילּוּ עֶשֶׂר מַצָּעוֹת זוֹ עַל גַּב זוֹ וְטָמֵא מֵת אֵינוֹ מְטַמֵּא אֶלָּא מַגָּעוֹ:</div>
+          <div class="glose-fr">Qu&#x27;il rend impurs le coucher et le siege (mishkav u-moshav) — meme dix matelas l&#x27;un sur l&#x27;autre [le bo&#x27;el nidda les rend tous impurs par pression] ; tandis que le tamei met ne rend impur que ce qu&#x27;il touche (son contact seul).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְטַמֵּא אוֹכְלִין וּמַשְׁקִין</b> וְלֹא לְטַמֵּא אָדָם וְכֵלִים כִּשְׁאָר כֹּל עוֹשֶׂה מִשְׁכָּב וּמוֹשָׁב כְּגוֹן זָב וְזָבָה וְנִדָּה וּמְצוֹרָע שֶׁטֻּומְאָתָן אַב הַטֻּומְאָה לְטַמֵּא אָדָם וְכֵלִים אֲבָל בּוֹעֵל נִדָּה כְּתִיב בֵּיהּ (וַיִּקְרָא טו) כָּל הַמִּשְׁכָּב אֲשֶׁר יִשְׁכַּב עָלָיו יִטְמָא נִתְּקוֹ הַכָּתוּב מִטֻּומְאָה חֲמוּרָה דְּמִשְׁכַּב נִדָּה עַצְמָהּ שֶׁמְּטַמֵּא אָדָם כְּדִכְתִיב (שָׁם) וְכָל אֲשֶׁר יִגַּע בְּמִשְׁכָּבָהּ וְגוֹ&#x27; וֶהֱבִיאוֹ לְטֻומְאָה קַלָּה לְטַמֵּא אֳוכָלִין וּמַשְׁקִין דְּאִי לְטֻומְאָה חֲמוּרָה לִישְׁתּוֹק קְרָא מִינֵּיהּ וַאֲנָא יָדַעְנָא דְּמִשְׁכָּבָהּ טָמֵא כְּמִשְׁכַּב נִדָּה דְּהָא כְּתִיב וַתְּהִי נִדָּתָהּ עָלָיו (שָׁם):</div>
+          <div class="glose-fr">Pour rendre impurs aliments et boissons — et non pour rendre impurs hommes et ustensiles, comme le font tous les autres qui produisent du mishkav u-moshav, tels le zav, la zava, la nidda et le metzora, dont l&#x27;impurete est av ha-tumah (source d&#x27;impurete) rendant impurs hommes et ustensiles. Mais a propos du bo&#x27;el nidda il est ecrit (Lev 15) &#x27;tout couchage sur lequel il se couche sera impur&#x27; : le verset l&#x27;a detache de l&#x27;impurete grave — celle du couchage de la nidda elle-meme, qui rend l&#x27;homme impur, comme il est ecrit (ibid.) &#x27;et quiconque touche son couchage [lavera ses vetements]&#x27; — et l&#x27;a ramene a une impurete legere, celle de rendre impurs aliments et boissons. Car s&#x27;il s&#x27;agissait de l&#x27;impurete grave, le verset aurait pu se taire [a son sujet], et j&#x27;aurais su de moi-meme que son couchage [au bo&#x27;el nidda] est impur comme le couchage de la nidda, puisqu&#x27;il est ecrit &#x27;et sa souillure de nidda sera sur lui&#x27; (ibid.).</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>סֵיפָא אִיצְטְרִיךְ לֵיהּ אֶלָּא שֶׁחָמוּר מִמֶּנּוּ כּוּ&#x27;</b> בְּפֶרֶק אֵלּוּ דְּבָרִים בִּפְסָחִים (דַּף סח.) פָּרֵיךְ מֵהָכָא אִילֵימָא לְטֻומְאָתָם הַאי טֻומְאַת ז&#x27; כְּתִיב בֵּיהּ וְהַאי טֻומְאַת ז&#x27; כְּתִיב בֵּיהּ אֶלָּא לָאו לְמַחֲנוֹתָם וּמִדְּסֵיפָא לְמַחֲנוֹתָם רֵישָׁא נָמֵי לְמַחֲנוֹתָם מִידֵּי אִירְיָא הָא כִּדְאִיתָא וְהָא כִּדְאִיתָא וְגִמְגְּמוּ שָׁם הַתּוֹס&#x27; אַמַּאי מְשַׁנֵּי בְּדֹוחַק וּמוּקִי רֵישָׁא וְסֵיפָא בִּתְרֵי טַעְמֵי לִישָּׁנֵי כִּי הָכָא לְעוֹלָם לְטֻומְאָתָן וְסֵיפָא אִיצְטְרִיךְ לֵיהּ וְנִרְאֶה לִי לְתָרֵץ דְּהַהִיא שִׁינּוּיָא דְּהָתָם נִיחָא לֵיהּ לְתָרֵץ טְפֵי דְּהִיא גּוּפָא אִיצְטְרִיךְ מִלּוֹמַר דְּסֵיפָא אִיצְטְרִיךְ לֵיהּ וְתַנָּא רֵישָׁא מִשְׁנָה שֶׁאֵינָהּ צְרִיכָה מִשּׁוּם סֵיפָא וְהָכָא לָא מָצֵי לְשַׁנּוּיֵי כִּי הָתָם דְּמִסֵּיפָא גּוּפָהּ פָּרִיךְ וְאִיצְטְרִיךְ לְשַׁנּוֹיֵי שִׁינּוּיָא דְחִיקָא אִי נָמֵי נ&quot;ל דְּהָתָם נָמֵי לָא מָצֵי לְשַׁנּוּיֵי כִּי הָכָא דְּהָא מַסְּקִינַן הָכָא דְּבוֹעֵל נִדָּה כִּטְמֵא מֵת לִטְבִילָתוֹ וְטוֹבֵל בַּיּוֹם וְרַב שִׁימִי מִנְּהַרְדְּעָא סְבִירָא לֵיהּ דְּבוֹעֵל נִדָּה כְּנִדָּה לִטְבֹּול בַּלַּיְלָה וּמֵעִיקָּרָא פָּרֵיךְ לֵיהּ מִבָּרַייְתָא בּוֹעֵל נִדָּה כִּטְמֵא מֵת מַאי לָאו לִטְבִילָתוֹ לֹא לְטֻומְאָתוֹ וְסֵיפָא אִיצְטְרִיךְ לֵיהּ וַהֲדַר אִיתּוֹתַב מִבָּרַייְתָא דְּתַנְיָא בְּהֶדְיָא בּוֹעֵל נִדָּה וּטְמֵא מֵת טְבִילָתָם בַּיּוֹם וּלְהָכִי לָא הֲוָה מָצֵי לְשַׁנּוּיֵי הָתָם לְטֻומְאָתוֹ דְּהָא עַל כָּרְחָךְ בּוֹעֵל נִדָּה כִּטְמֵא מֵת נָמֵי לִטְבִילָתוֹ כִּדְמַסְּקִינַן הָכָא וְהַשְׁתָּא מַאי טַעְמָא הָוֵי כִּטְמֵא מֵת לִטְבִילָתוֹ אֶלָּא ש&quot;מ דִּכְנִדָּה הָוֵי לְכָל מַאי דִכְתִיב בְּהֶדְיָא אֲבָל לְמַאי דְּלָא רַבִּינְהוּ קְרָא יֵשׁ לָנוּ לְדַמּוֹתוֹ לְטַמֵּא מֵת מִסְּבָרָא מִשּׁוּם דְּהָוֵי טֻומְאַת מַגָּע כְּמוֹתוֹ וא&quot;כ ה&quot;ה לְמָחְנוֹתָם ואע&quot;ג דְּמֵעִיקָּרָא כִּי אָמַר לְמַאי אִי לְטֻומְאָה לָא הֲוָה קָשֶׁה לֵיהּ אֶלָּא הַאי טֻומְאַת ז&#x27; כְּתִיב בֵּיהּ כו&#x27; י&quot;ל דְּקֻושְׁיָא הַפְּשׁוּטָה נְקַט ומ&quot;מ אִי הֲוָה מְשַׁנֵּי לֵיהּ לְטֻומְאָתוֹ וְסֵיפָא אִיצְטְרִיךְ לֵיהּ אַכַּתִּי הֲוָה פָּרֵיךְ לֵיהּ וְהָא עַל כָּרְחָךְ בּוֹעֵל נִדָּה כִּטְמֵא מֵת לִטְבִילָתוֹ כִּדְמַסְּקִינַן הָכָא וְכֵיוָן דְּדָמֵי לִטְבִילָה דָּמֵי נָמֵי לְמָחְנוֹתָם כִּדְפֵי&#x27;:</div>
+          <div class="glose-fr">&#x27;La seifa etait necessaire pour lui : sauf que le bo&#x27;el nidda est plus grave, etc.&#x27; — Au chapitre Elou devarim, dans Pesahim (68a), on objecte a partir d&#x27;ici : si tu dis [que la baraita compare bo&#x27;el nidda et tamei met] quant a leur impurete — [c&#x27;est superflu,] car de l&#x27;un il est ecrit une impurete de sept jours et de l&#x27;autre une impurete de sept jours [donc rien a apprendre] ; plutot n&#x27;est-ce pas [qu&#x27;on les compare] quant a leurs camps (mahanot, d&#x27;ou ils sont expulses) ? Et puisque la seifa traite des camps, la recha aussi traite des camps ! [La-bas on repond :] &#x27;y a-t-il [contradiction] ? Ceci est comme il est et cela est comme il est&#x27; [chaque clause selon son propre motif]. Et les Tossafistes s&#x27;y sont demande avec embarras : pourquoi repond-il par une reponse forcee, placant recha et seifa sur deux motifs distincts ? Qu&#x27;il reponde comme ici : &#x27;en verite quant a leur impurete, et la seifa etait necessaire&#x27; ! Il me semble de repondre que cette reponse-la [de Pesahim] lui convient mieux : dire que la recha est elle-meme necessaire, plutot que de dire que seule la seifa etait necessaire et que le tana a enseigne une michna superflue a cause de la seifa. Et ici on ne peut pas repondre comme la-bas, car c&#x27;est de la seifa elle-meme qu&#x27;on objecte, et il fallait donner la reponse forcee. Ou bien il me semble que la-bas non plus on ne pouvait repondre comme ici : car nous concluons ici que le bo&#x27;el nidda est comme le tamei met quant a sa tevila et immerge de jour ; or Rav Shimi de Nehardea tient que le bo&#x27;el nidda est comme la nidda, immergeant de nuit, et au depart on lui objecte de la baraita &#x27;bo&#x27;el nidda comme tamei met&#x27; — n&#x27;est-ce pas quant a sa tevila ? Non, quant a son impurete, et la seifa etait necessaire ; puis il est refute d&#x27;une baraita enseignee explicitement : &#x27;bo&#x27;el nidda et tamei met, leur tevila est de jour&#x27;. C&#x27;est pourquoi on ne pouvait repondre la-bas &#x27;quant a son impurete&#x27;, car forcement le bo&#x27;el nidda est comme le tamei met aussi quant a sa tevila, comme nous concluons ici. Et alors, quelle est la raison qu&#x27;il soit comme le tamei met quant a la tevila ? Apprends-en qu&#x27;il est comme la nidda pour tout ce qui est ecrit explicitement, mais pour ce que le verset n&#x27;a pas [expressement] inclus, nous devons le comparer au tamei met par raisonnement, car il est une impurete de contact (tumat maga) comme lui ; et s&#x27;il en est ainsi, il en va de meme pour leurs camps. Et bien qu&#x27;au depart, lorsqu&#x27;il demande &#x27;quant a quoi ? si quant a l&#x27;impurete...&#x27;, ne le genait pas [le fait] que &#x27;de l&#x27;un il est ecrit impurete de sept jours, etc.&#x27; — on peut dire qu&#x27;il a pris l&#x27;objection la plus simple ; et de toute maniere, s&#x27;il avait repondu &#x27;quant a son impurete, et la seifa etait necessaire&#x27;, on lui aurait encore objecte : mais forcement le bo&#x27;el nidda est comme le tamei met quant a sa tevila, comme nous concluons ici, et puisqu&#x27;il [lui] ressemble pour la tevila il [lui] ressemble aussi pour les camps, comme explique.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא שֶׁחָמוּר מִמֶּנּוּ בּוֹעֵל נִדָּה כּוּ&#x27;</b> תֵּימַהּ לִי דְּטָמֵא מֵת נָמֵי חָמוּר מִבּוֹעֵל נִדָּה שֶׁטָּעוּן הַזָּאָה ג&#x27; וְז&#x27; וּמְטַמֵּא כְּלֵי מַתָּכוֹת לַעֲשׂוֹתָם אַב הַטֻּומְאָה כַּיּוֹצֵא בוֹ כְּדִתְנַן בְּרֵישׁ מַסֶּכֶת אֹהָלוֹת ג&#x27; טְמֵאִין בְּמֵת כֵּלִים בְּמֵת וְאָדָם בְּכֵלִים טְמֵאִים טֻומְאַת ז&#x27; וְכוּ&#x27; וְשֶׁמָּא בְּסֵיפָא דְּבָרַייְתָא חֲשִׁיב נָמֵי לְהָנֵי חוּמְרֵי דְּטָמֵא מֵת מִבּוֹעֵל נִדָּה:</div>
+          <div class="glose-fr">&#x27;Sauf que le bo&#x27;el nidda est plus grave, etc.&#x27; — cela m&#x27;etonne, car le tamei met aussi est plus grave que le bo&#x27;el nidda : il requiert l&#x27;aspersion (haza&#x27;ah, des cendres de la vache rousse) au 3e et au 7e jour, et il rend impurs les ustensiles de metal au point d&#x27;en faire des av ha-tumah semblables a lui, comme nous l&#x27;avons appris au debut du traite Ohalot : &#x27;trois [degres] deviennent impurs par le mort : les ustensiles [en contact] avec le mort, l&#x27;homme [en contact] avec les ustensiles [impurs] d&#x27;une impurete de sept jours, etc.&#x27;. Et peut-etre que dans la seifa de la baraita on compte aussi ces stringences du tamei met sur le bo&#x27;el nidda.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁמְּטַמֵּא מִשְׁכָּב וּמוֹשָׁב בְּטֻומְאָה קַלָּה</b> כָּאן חָזַר בּוֹ רַשִׁ&quot;י מִמַּה שֶׁפֵּירֵשׁ בְּפֶרֶק אֵלּוּ דְּבָרִים בִּפְסָחִים (דַּף סז:) אַהָא דְּקָאָמַר הָתָם אַדְּרַבָּה זָב חָמוּר מִמְּצוֹרָע שֶׁכֵּן עוֹשֶׂה מִשְׁכָּב וּמוֹשָׁב וְכוּ&#x27; מַשְׁמַע דִּמְצוֹרָע אֵינוֹ עוֹשֶׂה מִשְׁכָּב וּמוֹשָׁב וְהִקְשָׁה מִדְּאָמַר בְּתוֹרַת כֹּהֲנִים וְגִילַּח אֶת כָּל שְׂעָרוֹ פְּרָט לְבֵית הַסְּתָרִים וְדִין הוּא נֶאֱמַר תִּגְלַחַת בִּימֵי סִפְרוֹ וְנֶאֱמַר תִּגְלַחַת בִּימֵי גְּמָרוֹ מַה תִּגְלַחַת הָאֲמוּרָה בִּימֵי סִפְרוֹ פְּרָט לְבֵית הַסְּתָרִים אַף תִּגְלַחַת הָאֲמוּרָה בִּימֵי גְּמָרוֹ פְּרָט לְבֵית הַסְּתָרִים וּמַקְשֶׁה אִם הֵקֵל בִּימֵי סִפְרוֹ שֶׁאֵין מְטַמֵּא מִשְׁכָּב וּמוֹשָׁב וְאֵין מְטַמֵּא בְּבִיאָה נָקֵל בִּימֵי גְּמָרוֹ שֶׁמְּטַמֵּא מִשְׁכָּב וּמוֹשָׁב כּוּ&#x27; וְתֵירֵץ רַשִׁ&quot;י וְגַם ר&quot;ת דְּהַהִיא דְּאֵלּוּ דְּבָרִים דְּמַשְׁמַע דְּזָב עוֹשֶׂה מִשְׁכָּב וּמוֹשָׁב וְלֹא מְצֹורָע הַייְנוּ לְטַמֵּא אָדָם וּבְגָדִים וְהַהִיא דת&quot;כ מַיְירֵי לְטֻומְאָה קַלָּה לְטַמֵּא אֳוכָלִין וּמַשְׁקִין דְּאָתֵי בק&quot;ו כִּדְאִיתָא בְּרֵישׁ פֶּרֶק דַּם הַנִּדָּה (נִדָּה דַּף נד:) וּמַה זָב שֶׁאֵין מְטַמֵּא בְּבִיאָה עוֹשֶׂה מִשְׁכָּב וּמוֹשָׁב אֶבֶן הַמְנֻוגַּעַת וּמְצוֹרָע שֶׁמְּטַמְּאִים בְּבִיאָה אֵינוֹ דִּין שֶׁיַּעֲשׂוּ מִשְׁכָּב וּמוֹשָׁב וּמִמִּיעוּטָא דְּהַזָּב וְלֹא אֶבֶן הַמְנֻוגַּעַת מְמַעֵט הָתָם מִטֻּומְאָה חֲמוּרָה וְהָכִי נָמֵי נְמַעֵט מְצֹורָע גּוּפֵיהּ מֵהַהוּא קְרָא מִטֻּומְאָה חֲמוּרָה וְכָאן פרש&quot;י שֶׁעוֹשֶׂה מִשְׁכָּב וּמוֹשָׁב לְטַמֵּא אֳוכָלִין וּמַשְׁקִין וְלֹא כִּשְׁאָר מִשְׁכָּב וּמוֹשָׁב שֶׁעוֹשֶׂה לְטַמֵּא אָדָם וְכֵלִים כְּגוֹן הַזָּב וְהַמְצֹורָע וְכוּ&#x27; וה&quot;ר מֹשֶׁה מפונטייז&quot;א פִּי&#x27; כְּמוֹ שפרש&quot;י בְּכָאן וְהַהִיא דְּאֵלּוּ דְּבָרִים מוּקֵי לָהּ בִּמְצוֹרָע בִּימֵי סִפְרוֹ וְכִדְמַשְׁמַע בת&quot;כ שֶׁאֵין עוֹשֶׂה מִשְׁכָּב וּמוֹשָׁב וְעוֹד הֶאֱרִיכוּ בּוֹ הַתּוֹס&#x27; בְּאֵלּוּ דְּבָרִים (דַּף סז:) וְכָאן לֹא שַׁיָּיךְ וְלִי הֻוקְשָׁה עַל מַה שֶּׁפֵּי&#x27; הַתּוֹס&#x27; דִּמְצוֹרָע וְאֶבֶן הַמְנֻוגַּעַת אָתוּ בק&quot;ו מִזָּב לְטֻומְאָה קַלָּה וְהֵיכִי אָתוּ הָאִיכָּא לְמִיפְרַךְ מַה לְזָב שֶׁעוֹשֶׂה מִשְׁכָּב וּמוֹשָׁב לְטֻומְאָה חֲמוּרָה תֹּאמַר בְּהָנֵי וּמִיהוּ הָא לֹא קָשֶׁה דְּאִיכָּא לְמֵימַר בּוֹעֵל נִדָּה יוֹכִיחַ מִיהוּ אַכַּתִּי אִיכָּא לְמִיפְרַךְ מַה לְהַצַּד הַשָּׁוֶה שֶׁבָּהֶן שֶׁמְּטַמֵּא כְּלִי חֶרֶס בְּהֶיסֵּט דְּאַף בּוֹעֵל נִדָּה מְטַמֵּא כְּלִי חֶרֶס בְּהֶיסֵּט כְּמוֹ שֶׁהוֹכִיחַ שָׁם ר&quot;י מִדְּאָמַר פֶּרֶק בְּנוֹת כּוּתִים (נִדָּה דַּף לג.) מַה הִיא מְטַמְּאָה כְּלִי חֶרֶס אַף הוּא מְטַמֵּא כְּלִי חֶרֶס וּמִדִּנְקַט כְּלִי חֶרֶס שֶׁאֵין מִטַּמֵּא מִגַּבּוֹ ש&quot;מ בְּהֶיסֵּט קָאָמַר אֶלָּא נ&quot;ל דְּטֻומְאָה חֲמוּרָה נִמְעָטֶיהָ מֵהַזָּב וְטֻומְאָה קַלָּה מְטַמֵּא בְּהֶיקֵּשָׁא דִּוְהִזַּב אֶת זוֹבוֹ לַזָּכָר וְלַנְּקֵבָה וְדָרְשִׁינַן בְּפֶרֶק בְּנוֹת כּוּתִים (נִדָּה דַּף לד:) לַזָּכָר לְרַבּוֹת מְצֹורָע לְמַעְייְנוֹתָיו וְכוּ&#x27; וְאִיתַּקַּשׁ מְצֹורָע לְזָב גָּמוּר וּמִן הַדִּין הֲוָה לָן לְמֵימַר דְּאִיתַּקַּשׁ לְזָב אֲפִילּוּ לְטֻומְאָה חֲמוּרָה אֶלָּא דַּאֲתָא מִיעוּטָא דִּוְהִזֵּב וּמַעֲטֵיהּ וְנוֹקֵי מִיעוּטָא לְטֻומְאָה חֲמוּרָה וְהֶיקֵּשָׁא לְטֻומְאָה קַלָּה:</div>
+          <div class="glose-fr">&#x27;Qu&#x27;il rend impurs le coucher et le siege d&#x27;une impurete legere&#x27; — ici Rachi s&#x27;est retracte de ce qu&#x27;il avait explique au chapitre Elou devarim dans Pesahim (67b). La-bas il est dit : &#x27;au contraire, le zav est plus grave que le metzora, car il produit du mishkav u-moshav, etc.&#x27;, ce qui laisse entendre que le metzora ne produit pas de mishkav u-moshav. Et l&#x27;on a objecte de ce qui est dit au Torat Kohanim : &#x27;&#x27;et il rasera tout son poil&#x27; (Lev 14:9) — a l&#x27;exclusion des endroits caches ; et c&#x27;est [deduit] logiquement : il est dit rasage aux jours de son denombrement (yemei sifro) et il est dit rasage aux jours de son achevement (yemei gomro) ; de meme que le rasage dit aux jours de son denombrement exclut les endroits caches, ainsi le rasage dit aux jours de son achevement exclut les endroits caches&#x27;. On objecte : si [la Torah] a ete indulgente aux jours de son denombrement — ou il ne produit pas de mishkav u-moshav et ne rend pas impur par entree (be-vi&#x27;a) — serions-nous indulgents aux jours de son achevement, ou il produit du mishkav u-moshav, etc. ? [Cela implique que le metzora, aux jours de son achevement, produit bien du mishkav u-moshav.] Rachi, ainsi que Rabbenou Tam, ont repondu : ce passage d&#x27;Elou devarim, qui laisse entendre que le zav produit du mishkav u-moshav et non le metzora, concerne [le fait de] rendre impurs hommes et vetements ; tandis que ce passage du Torat Kohanim traite de l&#x27;impurete legere, rendre impurs aliments et boissons, laquelle vient par kal va-homer, comme il est dit au debut du chapitre Dam ha-nidda (Nidda 54b) : &#x27;et si le zav, qui ne rend pas impur par entree, produit du mishkav u-moshav, la pierre atteinte [de nega] et le metzora, qui rendent impurs par entree, n&#x27;est-il pas juste (din) qu&#x27;ils produisent du mishkav u-moshav ?&#x27; ; et de l&#x27;exclusion &#x27;ha-zav — et non la pierre atteinte&#x27; on exclut la-bas [la pierre] de l&#x27;impurete grave, et de meme ici nous excluons le metzora lui-meme, par ce verset, de l&#x27;impurete grave. Et ici Rachi a explique qu&#x27;il produit du mishkav u-moshav [seulement] pour rendre impurs aliments et boissons, et non comme les autres mishkav u-moshav qui rendent impurs hommes et ustensiles, tels le zav et le metzora, etc. Rabbenou Moche de Pontoise a explique comme Rachi l&#x27;a explique ici, et ce passage d&#x27;Elou devarim il l&#x27;etablit [au sujet] du metzora aux jours de son denombrement, comme le laisse entendre le Torat Kohanim, [ou] il ne produit pas de mishkav u-moshav. Les Tossafistes s&#x27;y sont encore etendus dans Elou devarim (67b), et ici ce n&#x27;est pas le lieu. Pour moi, il etait difficile [d&#x27;accepter] ce qu&#x27;ont explique les Tossafistes, [a savoir] que le metzora et la pierre atteinte viennent par kal va-homer du zav pour l&#x27;impurete legere : comment viennent-ils ? Il y a lieu d&#x27;objecter : ce qui vaut pour le zav, qui produit du mishkav u-moshav pour l&#x27;impurete grave — le diras-tu de ceux-ci [qui ne le produisent pas pour l&#x27;impurete grave] ? Toutefois ce n&#x27;est pas une difficulte, car on peut dire &#x27;le bo&#x27;el nidda le prouvera&#x27; [par tsad ha-chaveh]. Neanmoins on peut encore objecter : qu&#x27;y a-t-il de commun [tsad ha-chaveh] entre eux, sinon qu&#x27;ils rendent impur l&#x27;ustensile de terre (kli heres) par deplacement (heset) ? Car le bo&#x27;el nidda aussi rend impur l&#x27;ustensile de terre par heset, comme R&#x27;&#x27;i l&#x27;a prouve la-bas de ce qui est dit au chapitre Benot Koutim (Nidda 33a) : &#x27;de meme qu&#x27;elle [la nidda] rend impur l&#x27;ustensile de terre [par heset], lui aussi rend impur l&#x27;ustensile de terre&#x27; ; et du fait qu&#x27;il a pris [l&#x27;exemple de] l&#x27;ustensile de terre, qui ne devient pas impur par son dos (mi-gabo), apprends-en qu&#x27;il parle de heset. Plutot il me semble que l&#x27;impurete grave, nous l&#x27;excluons [pour le metzora] a partir de &#x27;ha-zav&#x27;, et l&#x27;impurete legere [vient] par l&#x27;analogie scripturaire (heikech) de &#x27;et le zav son ecoulement, pour le male et pour la femelle&#x27; (Lev 15:33), et nous exposons au chapitre Benot Koutim (Nidda 34b) : &#x27;&#x27;pour le male&#x27; — pour inclure le metzora quant a ses sources (ma&#x27;ayanot), etc.&#x27;, et le metzora est compare (houkach) au zav complet ; selon la stricte logique nous aurions du dire qu&#x27;il est compare au zav meme pour l&#x27;impurete grave, sauf que vient l&#x27;exclusion de &#x27;ha-zav&#x27; et l&#x27;exclut ; nous placons alors l&#x27;exclusion sur l&#x27;impurete grave et l&#x27;analogie sur l&#x27;impurete legere.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rejet : la baraita ne parle pas de la tevila mais de la <b>duree de l'impurete</b> (sept jours de part et d'autre). En soi cette equivalence n'apprend rien de neuf ; le tana ne l'a enoncee que pour amener la <b>seifa</b>, ou le bo'el nidda se revele plus grave que le tamei met.</p><p>Cette gravite tient a une singularite : le bo'el nidda produit du <b>mishkav u-moshav</b> (il rend impurs les objets sur lesquels on se couche ou s'assoit, meme sans contact direct, par simple pression). Mais — et c'est la nuance — d'une impurete <b>legere</b> : ce mishkav ne rend impurs que des <b>aliments et boissons</b>, non des hommes et des ustensiles (contrairement au mishkav du zav ou de la nidda, qui est av ha-tumah).</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="260" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Le mishkav u-moshav du bo'el nidda : une impurete LEGERE</text>
+  <text x="360" y="44" text-anchor="middle" font-size="10" fill="#57534e">Ce qui rend le bo'el nidda plus grave que le tamei met : il transmet l'impurete meme sans contact (par pression / heset).</text>
+  <rect x="40" y="60" width="300" height="170" rx="8" fill="#fef2f2" stroke="#e8b4b4"/>
+  <text x="190" y="84" text-anchor="middle" font-size="12" font-weight="700" fill="#b4231f">Zav, zava, nidda, metzora</text>
+  <text x="190" y="104" text-anchor="middle" font-size="10.5" fill="#7f1d1d">leur mishkav u-moshav est av ha-tumah</text>
+  <text x="190" y="130" text-anchor="middle" font-size="11" fill="#292524">rend impurs :</text>
+  <text x="190" y="152" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b4231f">hommes ET ustensiles</text>
+  <text x="190" y="150" text-anchor="middle"></text>
+  <text x="190" y="188" text-anchor="middle" font-size="10" fill="#7f1d1d">(impurete grave, tumaa hamoura)</text>
+  <rect x="380" y="60" width="300" height="170" rx="8" fill="#f0fdf4" stroke="#9dd5b0"/>
+  <text x="530" y="84" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">Bo'el nidda</text>
+  <text x="530" y="104" text-anchor="middle" font-size="10.5" fill="#14532d">le verset l'a detache de l'impurete grave</text>
+  <text x="530" y="130" text-anchor="middle" font-size="11" fill="#292524">son mishkav rend impurs :</text>
+  <text x="530" y="152" text-anchor="middle" font-size="11.5" font-weight="700" fill="#166534">aliments ET boissons seulement</text>
+  <text x="530" y="188" text-anchor="middle" font-size="10" fill="#14532d">(impurete legere, tumaa kalla)</text>
+</svg></div><div class="svg-cap">Le bo&#x27;el nidda produit du mishkav u-moshav, mais d&#x27;impurete legere (aliments/boissons seulement).</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּא שְׁמַע, דְּתָנֵי רַבִּי חַיָּיא: הַזָּב וְהַזָּבָה וְהַמְּצֹורָע וְהַמְצֹורַעַת וּבוֹעֵל נִדָּה וּטְמֵא מֵת טְבִילָתָן בַּיּוֹם, נִדָּה וְיוֹלֶדֶת טְבִילָתָן בַּלַּיְלָה! תְּיוּבְתָּא.</div>
+            <div class="fr"><p>Viens et entends [une preuve decisive] : R. Hiyya a enseigne : &#x27;le zav et la zava, le metzora et la metzora&#x27;at, le bo&#x27;el nidda et le tamei met — leur immersion est de JOUR ; la nidda et la yoledet (accouchee) — leur immersion est de NUIT&#x27;.</p><p>[C&#x27;est] une refutation (tiouvta) [de Rav Shimi de Nehardea] !</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Preuve tranchante : la baraita explicite de R. Hiyya range le <b>bo'el nidda</b> parmi ceux qui immergent de jour (aux cotes du zav, du metzora et du tamei met), et reserve l'immersion de nuit a la <b>nidda</b> et a la <b>yoledet</b>. Rav Shimi, qui assimilait le bo'el nidda a la nidda (immersion de nuit), est definitivement refute : <b>tiouvta</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְעַד שֶׁאַתָּה מַפְרִישׁוֹ מִטֻּומְאַת בֵּיתוֹ, הַפְרִישֵׁהוּ מִטֻּומְאַת הַמֵּת! אָמַר רַב תַּחְלִיפָא אֲבוּהּ דְּרַב הוּנָא (בַּר תַּחְלִיפָא) מִשְּׁמֵיהּ דְּרָבָא: זֹאת אוֹמֶרֶת: טֻומְאַת הַמֵּת הֻותְּרָה הִיא בְּצִיבּוּר.</div>
+            <div class="fr"><p>[Nouveau theme, sur la michna qui separe le Cohen gadol de sa maison sept jours avant Kippour, de peur que sa femme ne se trouve nidda. La guemara demande :] Et pendant que tu le separes de l&#x27;impurete de sa maison, separe-le [donc aussi] de l&#x27;impurete du mort [en interdisant les visiteurs, de crainte que l&#x27;un ne meure aupres de lui] !</p><p>Rav Tahlifa, pere de Rav Huna bar Tahlifa, dit au nom de Rava : cela veut dire (zot omeret) que l&#x27;impurete du mort est PERMISE (hutra) en public.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְעַד שֶׁאַתָּה מַפְרִישׁוֹ מִטֻּומְאַת בֵּיתוֹ</b> וּשְׁאָר כָּל אָדָם נִכְנָסִין וְיוֹצְאִין אֶצְלוֹ הִפְרִישׁוֹ מִטֻּומְאַת מֵת וְלֹא יִהְיוּ כָּל אָדָם נִכְנָסִין וְיוֹצְאִין אֶצְלוֹ שֶׁמָּא יָמוּת מֵת עָלָיו:</div>
+          <div class="glose-fr">Et pendant que tu le separes de l&#x27;impurete de sa maison — alors que tout autre homme entre et sort aupres de lui — separe-le [aussi] de l&#x27;impurete du mort : que nul homme n&#x27;entre ni ne sorte aupres de lui, de peur qu&#x27;un homme ne meure aupres de lui.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הֻותְּרָה הִיא בְּצִיבּוּר</b> כְּדִכְתִיב אִישׁ נִדְחֶה וְאֵין צִיבּוּר נִדְחִין וּבְיוֹם הַכִּפּוּרִים כּוּלֵּיהּ קָרְבַּן צִיבּוּר וְאַף קָרְבָּן שֶׁלּוֹ דּוֹחֶה אֶת הַטֻּומְאָה שֶׁהֲרֵי זְמַנּוֹ קָבוּעַ וְקָרְבָּנוֹ תָּלוּי בּוֹ:</div>
+          <div class="glose-fr">Elle est permise en public — comme il est ecrit &#x27;un individu est ecarte (nidhe) mais la communaute n&#x27;est pas ecartee&#x27; ; et le jour de Kippour, tout est offrande communautaire, et meme l&#x27;offrande qui lui est propre [au Cohen gadol] repousse l&#x27;impurete, car son temps est fixe et son offrande depend de lui.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La michna (Yoma 1:1) sequestre le Cohen gadol loin de sa <b>maison</b> (euphemisme pour son epouse) durant les sept jours precedant Kippour, de peur qu'elle ne se revele nidda et ne le rende impur. La guemara objecte : si l'on craint l'impurete, il faudrait a plus forte raison l'ecarter du risque d'<b>impurete du mort</b> — interdire les visites, de crainte qu'un homme ne meure aupres de lui.</p><p>Reponse de Rava (via Rav Tahlifa) : le fait qu'on ne le protege pas du mort <b>enseigne</b> (zot omeret) que l'impurete du mort est <b>hutra be-tzibbur</b> — pleinement permise dans un cadre communautaire. A Kippour tout le service est communautaire, et meme l'office propre du Cohen gadol repousse l'impurete, car son temps est fixe (le 10 Tichri) et l'office depend de lui.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רָבִינָא אָמַר: אֲפִילּוּ תֵּימָא טֻומְאַת הַמֵּת דְּחוּיָה הִיא בְּצִבּוּר. טֻומְאַת הַמֵּת לָא שְׁכִיחָא, טֻומְאַת בֵּיתוֹ שְׁכִיחָא.</div>
+            <div class="fr"><p>Ravina dit : meme si tu dis que l&#x27;impurete du mort n&#x27;est que REPOUSSEE (dechuya) en public [et non pleinement permise, la michna se comprend encore] : l&#x27;impurete du mort n&#x27;est pas frequente (lo chekhicha), tandis que l&#x27;impurete de sa maison est frequente (chekhicha).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּחוּיָה הִיא בְּצִיבּוּר</b> אַף עַל פִּי שֶׁהַקָּרְבָּן צִיבּוּר דּוֹחֶה אוֹתָהּ בְּקֹושִׁי הֻותְּרָה וְלֹא הֶיתֵּר גָּמוּר וְכָל מַה דְּמָצִינוּ לַהֲדוּרֵי מְהַדְּרִינַן שֶׁיַּעֲשֶׂה בְּטָהֳרָה:</div>
+          <div class="glose-fr">Elle est repoussee en public — bien que l&#x27;offrande communautaire la repousse, [c&#x27;est] avec peine qu&#x27;elle est permise, et non d&#x27;une permission complete ; et tout ce que nous pouvons faire pour rechercher [la purete], nous le recherchons, afin que [le service] se fasse en purete.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אָמַר רַב תַּחְלִיפָא מִשְּׁמֵיהּ דְּרָבָא זֹאת אוֹמֶרֶת טֻומְאָה הֻותְּרָה הִיא בְּצִיבּוּר</b> תֵּימַהּ דְּבִזְבָחִים ר&quot;פ כָּל הַפְּסוּלִים (זְבָחִים דַּף לג.) קָאָמַר מִכְּלָל דְּתַרְוַיְיהוּ סְבִירָא לְהוּ פִּי&#x27; אַבַּיֵּי וְרָבָא טֻומְאָה דְּחוּיָה הִיא בְּצִיבּוּר וְתֵירֵץ ר&quot;י דְּהָא דְּקָאָמַר רָבָא הָכָא טֻומְאָה הֶיתֵּר הִיא זֹאת אוֹמֶרֶת וְלֵיהּ לָא ס&quot;ל דס&quot;ל (כְּרַב) דְּאָמַר בְּסָמוּךְ טֻומְאָה דְּחוּיָה הִיא ול&quot;נ דְּאֵין אָנוּ צְרִיכִין לוֹמַר דְּלָא ס&quot;ל כִּסְתָם מַתְנִיתִין אֶלָּא הַהִיא דְּהָתָם לְעִנְיַן פֶּסַח אַיְירֵי דְּקָאֵי אַמַּאי דְּקָאָמַר עֻולָּא בִּיאָה בְּמִקְצָת שְׁמָהּ בִּיאָה וּפָרִיךְ לֵיהּ מִמְּצוֹרָע שֶׁחָל שְׁמִינִי שֶׁלּוֹ לִהְיוֹת בְּעֶרֶב הַפֶּסַח וְרָאָה קֶרִי אע&quot;פ שֶׁאֵין טְבוּל יוֹם אַחֵר נִכְנָס זֶה נִכְנָס מוּטָב יָבֹא עֲשֵׂה שֶׁיֵּשׁ בּוֹ כָּרֵת וְיִדְחֶה עֲשֵׂה שֶׁאֵין בּוֹ כָּרֵת וְאִי אָמְרַתְּ בִּיאָה בְּמִקְצָת שְׁמָהּ בִּיאָה אִידֵּי וְאִידֵּי עֲשֵׂה שֶׁיֵּשׁ בּוֹ כָּרֵת הוּא א&quot;ל מִטּוּנָךְ הוֹאִיל וְהֻותַּר לְצָרַעְתּוֹ הֻותַּר לְקִרְיוֹ אָמַר רַב יוֹסֵף ש&quot;מ דְּקָסָבַר עֻולָּא רֻובָּן זָבִין וְנַעֲשׂוּ טְמֵאֵי מֵתִים הוֹאִיל וְהֻותְּרוּ לְטֻומְאָתָן הֻותְּרוּ לְזִיבָתָן א&quot;ל אַבָּיֵי מִי דָּמֵי טֻומְאָה אִישְׁתְּרַאי זִיבָה לָא אִישְׁתְּרַאי וְכוּ&#x27; דִּילְמָא הָכִי קָאָמַר מָר רֻובָּן טְמֵאֵי מֵתִים וְכוּ&#x27; וְאַכַּתִּי לָא דָּמֵי מְצֹורָע הֶיתֵּירָא הוּא טֻומְאָה דְּחוּיָה הִיא לְהָא אִידְּחַאי לְהָא לָא אִידְּחַאי א&quot;ל רָבָא אַדְּרַבָּה אִיפְּכָא מִסְתַּבְּרָא וְכוּ&#x27; וְכֵיוָן דְּהָתָם לְעִנְיַן פֶּסַח אַיְירֵי אִיכָּא לְמֵימַר נְהִי דְּפֶסַח כֵּיוָן דְּאָתֵי בְּכִינּוּפְיָא חֲשִׁיב כְּקָרְבַּן צִיבּוּר וְדוֹחֶה אֶת הַשַּׁבָּת וְאֶת הַטֻּומְאָה מ&quot;מ כֵּיוָן דְּלָאו כָּל יִשְׂרָאֵל מַיְיתוּ חַד פֶּסַח בְּשֻׁותָּפוּת מְהַדְּרִינַן אַטְּהוֹרִין אֲפִילּוּ לָמֶ&quot;ד טֻומְאָה הֶיתֵּר הִיא בְּקָרְבַּן צִיבּוּר גָּמוּר הַבָּא בְּשֻׁותָּפוּת וְכֵן מַשְׁמַע לְקַמָּן בְּסָמוּךְ (יוֹמָא דַּף ז.) דְּאִילּוּ שֶׁל אַהֲרֹן אע&quot;ג דְּזִימְנָא קְבִיעָא לֵיהּ וְדָחֵי אֶת הַשַּׁבָּת וְאֶת הַטֻּומְאָה כְּקָרְבַּן צִיבּוּר מִכָּל מָקוֹם כֵּיוָן דְּקָרְבָּן יָחִיד הוּא מְהַדְּרִינַן אַטְּהוֹרִין לְכֻולֵּי עָלְמָא וכ&quot;ש דְּנִיחָא טְפֵי הָא דְּאִצְטְרִיךְ לְמֵידַק הָתָם מִכְּלָל דְּתַרְוַיְיהוּ סְבִירָא לְהוּ טֻומְאָה דְּחוּיָה דְּמַאי נָפְקָא מִינַּהּ בְּהַהוּא דִּיּוּקָא אֶלָּא מִשּׁוּם דְּרָבָא סְבִירָא לֵיהּ הָכָא טֻומְאָה הֶיתֵּר הִיא אִיצְטְרִיךְ לְמֵידַק הָתָם דַּאֲפִילּוּ הָכֵי מוֹדֶה הוּא בְּפֶסַח וש&quot;מ דְּשִׁינּוּיָא דְּשַׁנִּינַן הָכָא בְּיוֹמָא בְּסָמוּךְ אֵילִים בְּאֵילוֹ שֶׁל אַהֲרֹן דַּאֲפִילּוּ לָמֶ&quot;ד הֶיתֵּר הוּא בְּקָרְבַּן יָחִיד כְּמוֹ אֵילוֹ שֶׁל אַהֲרֹן וּפֶסַח אע&quot;ג דְּזִימְנָא קְבִיעַ לְהוּ וְדָחוּ שַׁבָּת וְטֻומְאָה מוֹדֶה הוּא דִּמְהַדְּרִינַן אַטָּהֳרָה:</div>
+          <div class="glose-fr">&#x27;Rav Tahlifa dit au nom de Rava : cela veut dire que l&#x27;impurete est permise (hutra) en public&#x27; — cela etonne, car dans Zevahim, au debut du chapitre Kol ha-pesoulim (33a), il dit : &#x27;d&#x27;ou il ressort que tous deux tiennent&#x27; — c&#x27;est-a-dire Abaye et Rava — &#x27;que l&#x27;impurete est repoussee (dechuya) en public&#x27;. R&#x27;&#x27;i a repondu : ce que Rava dit ici, &#x27;l&#x27;impurete est permise&#x27;, il le dit [au titre du] &#x27;cela veut dire (zot omeret)&#x27;, mais lui-meme n&#x27;est pas de cet avis, car il tient comme [Rav] qui dit plus loin que l&#x27;impurete est dechuya. Et il me semble que nous n&#x27;avons pas besoin de dire qu&#x27;il [Rava] n&#x27;est pas d&#x27;accord avec la michna anonyme (stam matnitin) ; plutot, ce passage de la-bas [Zevahim] traite du Pessah, portant sur ce que dit Oulla : &#x27;une entree partielle (bi&#x27;a be-miktsat) est-elle nommee entree ?&#x27;. On lui objecte du metzora dont le huitieme jour tombe la veille de Pessah et qui a eu une pollution (keri) : bien qu&#x27;aucun autre tevoul yom n&#x27;entre [au Temple], celui-ci entre — &#x27;mieux vaut que vienne un [commandement] positif comportant un karet [le Pessah] et repousse un positif ne comportant pas de karet [l&#x27;interdit d&#x27;entree du tevoul yom]&#x27; ; or si tu dis &#x27;une entree partielle est nommee entree&#x27;, l&#x27;un et l&#x27;autre sont [des commandements] positifs comportant un karet [et l&#x27;un ne repousse plus l&#x27;autre]. Il lui dit : &#x27;ton fardeau [t&#x27;accable] : puisqu&#x27;il fut permis pour sa lepre, il fut permis pour sa pollution&#x27;. Rav Yossef dit : apprends-en que Oulla tient — si la plupart [du peuple] etaient zavim et devinrent tamei met, puisqu&#x27;ils furent permis pour leur [premiere] impurete, ils furent permis pour leur zivout. Abaye lui dit : est-ce comparable ? L&#x27;impurete [du mort] fut permise, la zivout ne fut pas permise, etc. Peut-etre le maitre dit-il ainsi : la plupart etaient tamei met, etc. — et ce n&#x27;est toujours pas comparable : le metzora, c&#x27;est une permission (heteira) ; l&#x27;impurete [du mort] est repoussee (dechuya) ; pour ceci elle est repoussee, pour cela elle ne l&#x27;est pas. Rava lui dit : au contraire, l&#x27;inverse est plus logique, etc. Et puisque la-bas il s&#x27;agit du Pessah, on peut dire : bien que le Pessah, venant en assemblee (bi-khnoufia), soit considere comme une offrande communautaire et repousse le Chabbat et l&#x27;impurete, neanmoins, puisque ce n&#x27;est pas tout Israel qui apporte un seul Pessah en association, on recherche des [gens] purs, meme selon celui qui dit &#x27;l&#x27;impurete est permise (heter)&#x27; pour une offrande communautaire complete — [pour le Pessah,] venant en association [on recherche des purs]. Et de meme il ressort plus loin (Yoma 7a) qu&#x27;au [belier] d&#x27;Aharon, bien que son temps lui soit fixe et qu&#x27;il repousse Chabbat et impurete comme une offrande communautaire, neanmoins, puisque c&#x27;est une offrande individuelle, on recherche des [gens] purs pour tous, de l&#x27;avis de tous. Et a plus forte raison cela convient-il [pour expliquer] pourquoi il fallut deduire la-bas &#x27;d&#x27;ou il ressort que tous deux tiennent que l&#x27;impurete est dechuya&#x27; — car quelle importance aurait cette deduction [autrement] ? Plutot, parce que Rava tient ici que l&#x27;impurete est heter, il fallut deduire la-bas qu&#x27;il concede neanmoins pour le Pessah. Apprends-en que la reponse que nous donnons ici, dans Yoma plus loin, au sujet des beliers — [portant] sur le belier d&#x27;Aharon — [signifie que] meme selon celui qui dit &#x27;c&#x27;est une permission (heter)&#x27;, pour une offrande individuelle comme le belier d&#x27;Aharon et le Pessah — bien que leur temps leur soit fixe et qu&#x27;ils repoussent Chabbat et impurete — il concede qu&#x27;on recherche la purete.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Ravina propose une lecture qui n'engage pas la these forte de Rava. Meme si l'on tient que la tumat met est seulement <b>dechuya</b> (repoussee par necessite, non abolie), la michna reste coherente : elle protege le Cohen gadol du risque <b>frequent</b> (sa femme nidda, qui peut survenir a tout instant) mais non du risque <b>rare</b> (un visiteur qui meurt). La difference frequent/rare suffit a expliquer la michna, sans avoir a trancher hutra vs dechuya.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִיתְּמַר, טֻומְאַת הַמֵּת, רַב נַחְמָן אָמַר: הֻותְּרָה הִיא בְּצִיבּוּר, וְרַב שֵׁשֶׁת אָמַר: דְּחוּיָה הִיא בְּצִיבּוּר.</div>
+            <div class="fr"><p>Il a ete enonce (itmar) : [au sujet de] l&#x27;impurete du mort — Rav Nahman dit : elle est PERMISE (hutra) en public ; et Rav Chechet dit : elle est REPOUSSEE (dechuya) en public.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La controverse implicite devient une <b>mahloket</b> nommee entre amoraim. <b>Rav Nahman</b> : la tumat met est <b>hutra</b> (pleinement permise) en public — quand la communaute est concernee, tout se passe comme s'il n'y avait pas d'impurete. <b>Rav Chechet</b> : elle est seulement <b>dechuya</b> (repoussee par necessite) — l'interdit demeure en arriere-plan et l'on privilegie le pur des qu'on le peut. Les segments suivants degagent la consequence pratique (nafka mina) de cette divergence.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הֵיכָא דְּאִיכָּא טְמֵאִין וּטְהוֹרִין בְּהָהוּא בֵּית אָב — כֻּולֵּי עָלְמָא לָא פְּלִיגִי דִּטְהוֹרִין עָבְדִי, טְמֵאִין לָא עָבְדִי. כִּי פְּלִיגִי לְאַהְדּוֹרֵי וּלְאֵתוֹיֵי טְהוֹרִין מִבֵּית אָב אַחֲרִינָא.</div>
+            <div class="fr"><p>La ou il y a des [cohanim] impurs et des purs dans ce meme beit av [la famille paternelle assignee au service ce jour-la] — tout le monde s&#x27;accorde que les PURS officient et que les impurs n&#x27;officient pas. La ou ils divergent, c&#x27;est [sur le point de savoir s&#x27;il faut] rechercher et faire venir des [cohanim] purs d&#x27;un AUTRE beit av [du meme michmar, assigne un autre jour de la semaine].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּהַהוּא בֵּית אָב</b> שֶׁעוֹבֵד בְּאוֹתוֹ יוֹם דְּכֻולֵּי עָלְמָא טְהוֹרִין עָבְדִי תְּמִידִים דְּהַהוּא יוֹמָא אע&quot;פ שֶׁקָּרְבַּן צִיבּוּר הֵן:</div>
+          <div class="glose-fr">Dans ce meme beit av — qui officie ce jour-la : tous s&#x27;accordent que les [cohanim] purs accomplissent les tamidim de ce jour, bien qu&#x27;ils soient des offrandes communautaires.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>On circonscrit la mahloket. Le service au Temple s'organise par <b>michmar</b> (garde hebdomadaire) subdivise en <b>batei av</b> (une famille par jour). Deux precisions :</p><p>• Si dans le beit av <b>du jour</b> coexistent purs et impurs, <b>tous s'accordent</b> : les purs officient, meme pour les offrandes communautaires (les tamidim du jour). Nul ne fait servir un impur quand un pur est disponible sur place.</p><p>• Le <b>litige</b> ne porte donc que sur le cas ou il faudrait aller chercher des purs dans un <b>autre beit av</b> (assigne un autre jour) : faut-il se donner cette peine ?</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַב נַחְמָן אָמַר: הֶיתֵּר הִיא בְּצִיבּוּר, וְלָא מְהַדְּרִינַן. וְרַב שֵׁשֶׁת אָמַר: דְּחוּיָה הִיא בְּצִיבּוּר, וּמְהַדְּרִינַן.</div>
+            <div class="fr"><p>Rav Nahman dit : elle est PERMISE (heter) en public, et nous ne recherchons pas [d&#x27;autres cohanim] (lo mehadrinan). Et Rav Chechet dit : elle est REPOUSSEE (dechuya) en public, et nous recherchons (mehadrinan) [des cohanim purs dans un autre beit av].</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Application au cas litigieux (tout le beit av du jour est impur). Pour <b>Rav Nahman</b> (hutra), l'impurete etant pleinement permise, le service impur est parfaitement valide : inutile de deranger un autre beit av — <b>lo mehadrinan</b>. Pour <b>Rav Chechet</b> (dechuya), l'interdit subsiste et l'on doit privilegier la purete des qu'elle est atteignable : on va chercher des purs ailleurs — <b>mehadrinan</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִיכָּא דְאָמְרִי: אֲפִילּוּ הֵיכָא דְּאִיכָּא טְהוֹרִין וּטְמֵאִין בְּהָהוּא בֵּית אָב פְּלִיג רַב נַחְמָן, וְאָמַר: עָבְדִי נָמֵי טְמֵאִין,</div>
+            <div class="fr"><p>Certains rapportent [la controverse autrement] (ika de-amri) : meme la ou il y a des [cohanim] purs et impurs dans ce meme beit av, Rav Nahman diverge [de Rav Chechet] et dit : les impurs officient eux aussi,</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Seconde version de la mahloket, plus radicale. Selon le <b>ika de-amri</b>, Rav Nahman ne se contente pas de dispenser de chercher ailleurs : meme quand des purs sont <b>presents dans le beit av du jour</b>, il tient que les impurs <b>peuvent officier aussi</b>. Car si la tumat met est veritablement <b>hutra</b>, l'impur est purement et simplement apte, a egalite avec le pur. La phrase reste ouverte : la suite (et l'objection) se lit au folio 7a.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_6a.html">&lsaquo; Yoma 6a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

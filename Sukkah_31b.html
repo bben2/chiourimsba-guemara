@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sukkah 31b — La refutation de Rava et le retour a la michna : hadar, acherah, loulav abime</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Sukkah 31b — La refutation de Rava et le retour a la michna : hadar, acherah, loulav abime</h1>
+    <div class="ref">Sukkah 31b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Sukkah_31a.html">&lsaquo; Sukkah 31a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Sukkah_32a.html">Sukkah 32a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> Le folio acheve la grande sougya du hadar ouverte en 31a et se retourne contre celui qui l avait mise en forme. Il commence par ecarter la derniere preuve de Rabbi Yehouda — le fait des habitants des villes fortifiees qui leguaient leurs loulavim secs — au nom d un principe general : un temps de detresse n est pas une preuve.</p><p>La these de Rava, selon laquelle le desaccord sur le sec ne porte que sur le loulav et que tous exigent le hadar dans l etrog, survit encore un instant, sauvee par une simple restriction du champ de la baraita. Deux lignes de cette meme baraita sont ensuite justifiees contre l objection qu elles vont de soi : on n ajoute pas une cinquieme espece, meme non liee, et l on ne remplace pas un etrog manquant par une grenade, de peur de s accoutumer au substitut.</p><p>Puis vient le coup fatal : une baraita ou Rabbi Yehouda declare kacher l etrog vieux — defaut purement esthetique — refute Rava sans appel, teyouvta. La guemara doit alors reprendre les trois michnayot ou Rabbi Yehouda invalide un etrog, et montrer que la raison n en est jamais la beaute : vert comme le poireau et trop petit s expliquent par la maturation inachevee, trop grand par le risque materiel de laisser tomber le fruit au moment ou l on echange les mains.</p><p>Reste le verset lui-meme, qui ecrit hadar : Rabbi Yehouda le revocalise en ha-dar, ce qui demeure sur son arbre d une annee a l autre — le mot ne demande plus la beaute, il designe l etrog. Le folio bascule alors dans un tout autre registre en reprenant la michna : le loulav d une acherah, que Rava validait pourtant a posteriori, n est invalide que dans le cas de l acherah de Moshe, vouee au feu, dont la mesure est juridiquement pulverisee — lecture confirmee par le voisinage de la ville devoyee.</p><p>Il se termine sur la restriction de Rav Houna touchant le loulav dont la tete est atteinte — coupee, il est passoul ; seulement fendue, il reste kacher — et sur l objection d une baraita, laissee ouverte au mot loulav kafouf.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 560" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="560" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1c1917">Le fil du folio : la these de Rava tombe, puis on repart dans la michna</text>
+  <text x="380" y="42" text-anchor="middle" font-size="10.2" fill="#57534e">Quatre mouvements. Le folio acheve la sougya du hadar ouverte en 31a, puis reprend la michna ligne a ligne.</text>
+
+  <rect x="24" y="56" width="712" height="82" rx="7" fill="#f5f3ff" stroke="#6d28d9" stroke-width="1.4"/>
+  <text x="38" y="74" font-size="10.6" font-weight="700" fill="#4c1d95">Mouvement 1 (seg. 0-1) -- la derniere objection de 31a se retourne</text>
+  <text x="38" y="92" font-size="9" fill="#292524">Le maasse des bnei kerakhin, qui leguaient leurs loulavim secs, est ecarte : un temps de detresse ne prouve rien.</text>
+  <text x="38" y="109" font-size="9" fill="#292524">Reste le texte lui-meme : R. Yehouda dit que meme les secs sont kacherim. Sur l etrog ? Non, repond la guemara, sur le loulav.</text>
+  <text x="38" y="127" font-size="8.6" fill="#6d28d9">Rava tient donc encore : la mahloket du sec ne porte que sur le loulav, et pour l etrog tout le monde exige hadar.</text>
+  <path d="M380 138 L380 152" stroke="#78716c" stroke-width="1.3"/><path d="M375 151 L385 151 L380 157 Z" fill="#78716c"/>
+
+  <rect x="24" y="158" width="712" height="86" rx="7" fill="#f0f9ff" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="38" y="176" font-size="10.6" font-weight="700" fill="#0c4a6e">Mouvement 2 (seg. 2-3) -- deux lignes de la baraita qu on croyait evidentes</text>
+  <text x="38" y="194" font-size="9" fill="#292524">a. On n ajoute pas aux quatre especes. Pshita ? Non : puisque R. Yehouda exige une ligature, on aurait cru</text>
+  <text x="38" y="210" font-size="9" fill="#292524">qu une cinquieme espece non liee reste hors du compte. Elle compte quand meme -- bal tossif.</text>
+  <text x="38" y="227" font-size="9" fill="#292524">b. Pas d etrog ? On ne remplace par rien. Pshita ? Non : on aurait cru bon de garder vivante la torat etrog.</text>
+  <text x="38" y="240" font-size="8.6" fill="#0369a1">Refus : on finirait par s y accoutumer (lemisrakh) et le substitut deviendrait la norme.</text>
+  <path d="M380 244 L380 258" stroke="#78716c" stroke-width="1.3"/><path d="M375 257 L385 257 L380 263 Z" fill="#78716c"/>
+
+  <rect x="24" y="264" width="712" height="122" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.4"/>
+  <text x="38" y="282" font-size="10.6" font-weight="700" fill="#78350f">Mouvement 3 (seg. 4-9) -- teyuvta de Rava, puis quatre repliques</text>
+  <text x="38" y="300" font-size="9" fill="#292524">Coup fatal : l etrog vieux est passoul, et R. Yehouda le valide. Donc il n exige pas le hadar dans l ETROG. Teyuvta.</text>
+  <text x="38" y="317" font-size="9" fill="#292524">Mais alors trois michnayot semblent le contredire : vert comme le poireau, trop petit, trop grand -- il y invalide.</text>
+  <text x="38" y="334" font-size="9" fill="#292524">Les deux premieres sont expliquees autrement : lo gamar pira, le fruit n a pas acheve sa maturation.</text>
+  <text x="38" y="351" font-size="9" fill="#292524">La troisieme aussi : un etrog trop grand risque de tomber quand on echange les mains -- raison pratique, pas esthetique.</text>
+  <text x="38" y="371" font-size="8.6" fill="#b45309">Reste le verset : hadar est ecrit ! R. Yehouda le lit autrement -- ha-dar, ce qui DEMEURE sur son arbre d une annee a l autre.</text>
+  <path d="M380 386 L380 400" stroke="#78716c" stroke-width="1.3"/><path d="M375 399 L385 399 L380 405 Z" fill="#78716c"/>
+
+  <rect x="24" y="406" width="712" height="128" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.4"/>
+  <text x="38" y="424" font-size="10.6" font-weight="700" fill="#14532d">Mouvement 4 (seg. 10-14) -- retour a la michna : acherah, ville devoyee, tete coupee</text>
+  <text x="38" y="442" font-size="9" fill="#292524">La michna invalide le loulav d une acherah. Contradiction : Rava a dit qu un loulav d idolatrie, pris, reste kacher.</text>
+  <text x="38" y="459" font-size="9" fill="#292524">Reponse : la michna parle de l acherah de Moshe, vouee au feu -- kototei mikhtat chiourei, sa mesure est comme pulverisee.</text>
+  <text x="38" y="476" font-size="9" fill="#292524">Preuve de langue : elle est enseignee a l instar de la ville devoyee, autre cas de bien voue a la destruction.</text>
+  <text x="38" y="493" font-size="9" fill="#292524">Puis la michna suivante : tete coupee (niktam) -- Rav Houna restreint : seulement coupee, mais fendue (nisdak) reste kacher.</text>
+  <text x="38" y="513" font-size="8.6" fill="#15803d">Objection immediate d une baraita qui semble invalider le fendu : le folio s interrompt sur le mot loulav kafouf. Suite en 32a.</text>
+</svg></div>
+          <figcaption>Vue d ensemble : le folio acheve la sougya du hadar par la refutation de Rava, puis revient a la michna sur l acherah et le loulav abime.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="430" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">La these de Rava et sa refutation</text>
+  <text x="380" y="42" text-anchor="middle" font-size="10" fill="#57534e">Comment une seule ligne de baraita fait tomber une lecture de toute la mahloket</text>
+
+  <rect x="40" y="58" width="320" height="96" rx="7" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.4"/>
+  <text x="200" y="78" text-anchor="middle" font-size="10.6" font-weight="700" fill="#1e3a8a">La these de Rava (posee en 31a)</text>
+  <text x="200" y="98" text-anchor="middle" font-size="9" fill="#292524">La mahloket sur le SEC ne porte que sur le loulav.</text>
+  <text x="200" y="115" text-anchor="middle" font-size="9" fill="#292524">Pour l ETROG, tout le monde exige le hadar,</text>
+  <text x="200" y="132" text-anchor="middle" font-size="9" fill="#292524">car le verset l ecrit noir sur blanc : peri ets hadar.</text>
+  <text x="200" y="148" text-anchor="middle" font-size="8.4" fill="#1d4ed8">Consequence : R. Yehouda lui-meme exigerait hadar dans l etrog.</text>
+
+  <rect x="400" y="58" width="320" height="96" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.4"/>
+  <text x="560" y="78" text-anchor="middle" font-size="10.6" font-weight="700" fill="#7f1d1d">La baraita qui la tue (seg. 4)</text>
+  <text x="560" y="98" text-anchor="middle" font-size="9" fill="#292524">L etrog VIEUX est passoul --</text>
+  <text x="560" y="115" text-anchor="middle" font-size="9" fill="#292524">et Rabbi Yehouda le declare KACHER.</text>
+  <text x="560" y="132" text-anchor="middle" font-size="9" fill="#292524">Or vieux ne veut pas dire non mur : c est un defaut</text>
+  <text x="560" y="148" text-anchor="middle" font-size="8.4" fill="#b91c1c">purement esthetique. Donc : pas de hadar pour lui.</text>
+
+  <path d="M360 106 L396 106" stroke="#b91c1c" stroke-width="1.6"/><path d="M389 101 L389 111 L399 106 Z" fill="#b91c1c"/>
+
+  <rect x="230" y="174" width="300" height="42" rx="7" fill="#450a0a" stroke="#450a0a"/>
+  <text x="380" y="200" text-anchor="middle" font-size="12" font-weight="700" fill="#fef2f2">TEYUVTA DE RAVA -- TEYUVTA</text>
+
+  <text x="380" y="238" text-anchor="middle" font-size="10.4" font-weight="700" fill="#1c1917">Ce qui survit malgre tout a la refutation</text>
+
+  <rect x="40" y="252" width="336" height="150" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.3"/>
+  <text x="208" y="272" text-anchor="middle" font-size="10.2" font-weight="700" fill="#14532d">La position de R. Yehouda est coherente</text>
+  <text x="54" y="292" font-size="8.8" fill="#292524">Il invalide bien le vert-poireau, le trop petit,</text>
+  <text x="54" y="308" font-size="8.8" fill="#292524">le trop grand -- mais jamais pour cause de beaute :</text>
+  <text x="54" y="328" font-size="8.8" fill="#292524">- vert et trop petit : lo gamar pira (pas mur)</text>
+  <text x="54" y="344" font-size="8.8" fill="#292524">- trop grand : risque materiel de le laisser tomber</text>
+  <text x="54" y="366" font-size="8.8" fill="#15803d">Aucune de ces trois michnayot n exige donc le hadar.</text>
+  <text x="54" y="384" font-size="8.8" fill="#15803d">Son systeme tient sans la notion de beaute.</text>
+
+  <rect x="392" y="252" width="328" height="150" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.3"/>
+  <text x="556" y="272" text-anchor="middle" font-size="10.2" font-weight="700" fill="#78350f">Mais que fait-il du mot hadar ?</text>
+  <text x="406" y="292" font-size="8.8" fill="#292524">Le verset dit peri ets HADAR. Il ne peut pas etre</text>
+  <text x="406" y="308" font-size="8.8" fill="#292524">supprime -- il faut donc le lire autrement.</text>
+  <text x="406" y="330" font-size="9.4" font-weight="700" fill="#78350f">ha-DAR : ce qui DEMEURE, ce qui habite</text>
+  <text x="406" y="348" font-size="8.8" fill="#292524">Non pas hadar = eclat, mais dar = resider :</text>
+  <text x="406" y="364" font-size="8.8" fill="#292524">le fruit qui reste sur son arbre d une annee</text>
+  <text x="406" y="380" font-size="8.8" fill="#292524">a l autre. Aucun autre fruit ne fait cela --</text>
+  <text x="406" y="396" font-size="8.8" fill="#b45309">le verset devient une carte d identite de l etrog.</text>
+</svg></div>
+          <figcaption>Le coeur du folio : une seule ligne -- R. Yehouda valide l etrog vieux -- fait tomber la these de Rava, mais laisse intacte la coherence de R. Yehouda.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="400" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Trois michnayot, trois fois la meme question, trois fois lo</text>
+  <text x="380" y="42" text-anchor="middle" font-size="10" fill="#57534e">R. Yehouda invalide -- mais chaque fois la guemara refuse d y lire une exigence de beaute</text>
+
+  <rect x="20" y="58" width="236" height="316" rx="7" fill="#ffffff" stroke="#78716c" stroke-width="1.3"/>
+  <text x="138" y="80" text-anchor="middle" font-size="10.6" font-weight="700" fill="#1c1917">1. Vert comme le poireau</text>
+  <text x="138" y="98" text-anchor="middle" font-size="8.6" fill="#57534e">seg. 5</text>
+  <rect x="34" y="110" width="208" height="52" rx="5" fill="#f5f5f4"/>
+  <text x="138" y="128" text-anchor="middle" font-size="8.8" fill="#292524">R. Meir valide,</text>
+  <text x="138" y="144" text-anchor="middle" font-size="8.8" fill="#292524">R. Yehouda invalide.</text>
+  <text x="138" y="182" text-anchor="middle" font-size="9" font-style="italic" fill="#b91c1c">Lecture naive : il veut du hadar</text>
+  <path d="M138 192 L138 208" stroke="#78716c" stroke-width="1.2"/><path d="M133 207 L143 207 L138 213 Z" fill="#78716c"/>
+  <rect x="34" y="218" width="208" height="92" rx="5" fill="#f0fdf4" stroke="#15803d" stroke-width="1.2"/>
+  <text x="138" y="238" text-anchor="middle" font-size="9.6" font-weight="700" fill="#14532d">LO -- lo gamar pira</text>
+  <text x="138" y="258" text-anchor="middle" font-size="8.6" fill="#292524">Le fruit n a pas acheve</text>
+  <text x="138" y="274" text-anchor="middle" font-size="8.6" fill="#292524">sa maturation : le vert</text>
+  <text x="138" y="290" text-anchor="middle" font-size="8.6" fill="#292524">signale un fruit inacheve.</text>
+  <text x="138" y="330" text-anchor="middle" font-size="8.4" fill="#57534e">Tossefot et Roch : s il revient</text>
+  <text x="138" y="345" text-anchor="middle" font-size="8.4" fill="#57534e">plus tard a la couleur normale,</text>
+  <text x="138" y="360" text-anchor="middle" font-size="8.4" fill="#57534e">preuve qu il etait bien mur.</text>
+
+  <rect x="262" y="58" width="236" height="316" rx="7" fill="#ffffff" stroke="#78716c" stroke-width="1.3"/>
+  <text x="380" y="80" text-anchor="middle" font-size="10.6" font-weight="700" fill="#1c1917">2. Trop petit</text>
+  <text x="380" y="98" text-anchor="middle" font-size="8.6" fill="#57534e">seg. 6</text>
+  <rect x="276" y="110" width="208" height="52" rx="5" fill="#f5f5f4"/>
+  <text x="380" y="128" text-anchor="middle" font-size="8.8" fill="#292524">R. Meir : au moins une noix.</text>
+  <text x="380" y="144" text-anchor="middle" font-size="8.8" fill="#292524">R. Yehouda : au moins un oeuf.</text>
+  <text x="380" y="182" text-anchor="middle" font-size="9" font-style="italic" fill="#b91c1c">Lecture naive : il veut du hadar</text>
+  <path d="M380 192 L380 208" stroke="#78716c" stroke-width="1.2"/><path d="M375 207 L385 207 L380 213 Z" fill="#78716c"/>
+  <rect x="276" y="218" width="208" height="92" rx="5" fill="#f0fdf4" stroke="#15803d" stroke-width="1.2"/>
+  <text x="380" y="238" text-anchor="middle" font-size="9.6" font-weight="700" fill="#14532d">LO -- lo gamar pira</text>
+  <text x="380" y="258" text-anchor="middle" font-size="8.6" fill="#292524">Meme raison : en deca de</text>
+  <text x="380" y="274" text-anchor="middle" font-size="8.6" fill="#292524">cette taille, ce n est pas</text>
+  <text x="380" y="290" text-anchor="middle" font-size="8.6" fill="#292524">encore un fruit acheve.</text>
+  <text x="380" y="330" text-anchor="middle" font-size="8.4" fill="#57534e">Tossefot : a ne pas confondre</text>
+  <text x="380" y="345" text-anchor="middle" font-size="8.4" fill="#57534e">avec l etrog boser de 36a, qui</text>
+  <text x="380" y="360" text-anchor="middle" font-size="8.4" fill="#57534e">est un debat tout different.</text>
+
+  <rect x="504" y="58" width="236" height="316" rx="7" fill="#ffffff" stroke="#78716c" stroke-width="1.3"/>
+  <text x="622" y="80" text-anchor="middle" font-size="10.6" font-weight="700" fill="#1c1917">3. Trop grand</text>
+  <text x="622" y="98" text-anchor="middle" font-size="8.6" fill="#57534e">seg. 7</text>
+  <rect x="518" y="110" width="208" height="52" rx="5" fill="#f5f5f4"/>
+  <text x="622" y="128" text-anchor="middle" font-size="8.8" fill="#292524">R. Yehouda : deux tiennent</text>
+  <text x="622" y="144" text-anchor="middle" font-size="8.8" fill="#292524">dans une main. R. Yosse : non.</text>
+  <text x="622" y="182" text-anchor="middle" font-size="9" font-style="italic" fill="#b91c1c">Lecture naive : il veut du hadar</text>
+  <path d="M622 192 L622 208" stroke="#78716c" stroke-width="1.2"/><path d="M617 207 L627 207 L622 213 Z" fill="#78716c"/>
+  <rect x="518" y="218" width="208" height="92" rx="5" fill="#f0fdf4" stroke="#15803d" stroke-width="1.2"/>
+  <text x="622" y="238" text-anchor="middle" font-size="9.6" font-weight="700" fill="#14532d">LO -- raison pratique</text>
+  <text x="622" y="258" text-anchor="middle" font-size="8.6" fill="#292524">Il faut pouvoir tenir un</text>
+  <text x="622" y="274" text-anchor="middle" font-size="8.6" fill="#292524">instant loulav et etrog dans</text>
+  <text x="622" y="290" text-anchor="middle" font-size="8.6" fill="#292524">la meme main pour les echanger.</text>
+  <text x="622" y="330" text-anchor="middle" font-size="8.4" fill="#57534e">Trop grand, il tombe et se perce :</text>
+  <text x="622" y="345" text-anchor="middle" font-size="8.4" fill="#57534e">c est le risque de neqev qui fixe</text>
+  <text x="622" y="360" text-anchor="middle" font-size="8.4" fill="#57534e">la mesure, pas l esthetique.</text>
+</svg></div>
+          <figcaption>La methode de la guemara : chaque fois que R. Yehouda invalide un etrog, on cherche une raison autre que la beaute.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בִּבְנֵי כְּרַכִּין, שֶׁהָיוּ מוֹרִישִׁין אֶת לוּלְבֵיהֶן לִבְנֵי בְנֵיהֶן! אָמְרוּ (לָהֶם): מִשָּׁם רְאָיָה? אֵין שְׁעַת הַדְּחָק רְאָיָה.</div>
+            <div class="fr"><p>...[il s agissait] des habitants des grandes villes fortifiees, qui transmettaient leurs loulavim en heritage a leurs petits-enfants ! Ils lui dirent : est-ce de la une preuve ?</p><p>Un moment de detresse (cheat hadehak) ne constitue pas une preuve.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בִּבְנֵי כְּרַכִּין</b> שֶׁאֵין דָּרִין עַל מְקוֹם פַּרְדֵּסִין וְאֵין דְּקָלִים מְצֻוִּים שָׁם:</div>
+          <div class="glose-fr">Ils ne resident pas la ou se trouvent les vergers, et les palmiers ne sont pas disponibles chez eux.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le folio s ouvre au milieu de la phrase commencee a la fin de 31a. Rabbi Yehouda, qui valide le loulav sec, avait produit un <b>maasse</b> — un fait rapporte — a l appui de sa these : les habitants des villes fortifiees leguaient leurs loulavim a leurs descendants, donc des loulavim necessairement desseches, et cela etait admis.</p><p>Rachi explique la situation materielle : ces gens vivaient loin des palmeraies, et les branches fraiches ne leur parvenaient pas. C est precisement cette explication qui arme la reponse des Sages : ce n etait pas une pratique choisie, mais une pratique subie. La categorie qu ils opposent — <b>cheat hadehak</b>, le temps de detresse — est un outil de raisonnement talmudique majeur : ce qu on fait quand on ne peut pas faire autrement ne dit rien de ce qui est permis en regime normal, et ne peut donc pas servir de source halakhique.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">קָתָנֵי מִיהַת, רַבִּי יְהוּדָה אוֹמֵר: אַף יְבֵשִׁין כְּשֵׁרִין, מַאי לַָאו, אַאֶתְרוֹג! לָא, אַלּוּלָב.</div>
+            <div class="fr"><p>En tout etat de cause, [la baraita] enseigne : Rabbi Yehouda dit — meme secs, ils sont kacherim. Qu est-ce a dire, n est-ce pas [aussi] a propos de l etrog ?</p><p>Non : a propos du loulav.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le <b>maasse</b> est neutralise, mais le texte de la baraita, lui, subsiste : Rabbi Yehouda y dit que "meme les secs sont kacherim". Or la baraita traitait des quatre especes en general. Si ce "meme les secs" englobe l <b>etrog</b>, la these de Rava enoncee en 31a s effondre : Rava soutenait que le desaccord sur le sec ne porte que sur le loulav, et que pour l etrog tout le monde exige le <b>hadar</b>.</p><p>La guemara sauve Rava d une seule syllabe : <i>lo, a-loulav</i> — non, cela ne vise que le loulav. C est une reduction du champ d application de la phrase, procede constant du Talmud. La these tient encore, pour un segment seulement : l objection decisive arrive au segment 4.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר מַר: כְּשֵׁם שֶׁאֵין פּוֹחֲתִין מֵהֶן, כָּךְ אֵין מוֹסִיפִין עֲלֵיהֶן. פְּשִׁיטָא? מַהוּ דְתֵימָא: הוֹאִיל וְאָמַר רַבִּי יְהוּדָה לוּלָב צָרִיךְ אֶגֶד, וְאִי מַיְיתֵי מִינָא אַחֲרִינָא, הַאי לְחוֹדֵיהּ קָאֵי וְהַאי לְחוֹדֵיהּ קָאֵי, קָא מַשְׁמָע לַן.</div>
+            <div class="fr"><p>Le Maitre a dit : de meme qu on n en retranche pas, de meme on n y ajoute pas. Cela va de soi !</p><p>[Non, car] tu aurais pu dire : puisque Rabbi Yehouda a dit que le loulav requiert une ligature (agued), alors si l on apporte une autre espece, celle-ci se tient a part et celle-la se tient a part [et il n y aurait donc pas d ajout] — il nous enseigne [qu il n en est rien].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִי מַיְיתֵי מִינָא אַחַרְיַנָא</b> וְלָא אַגִּיד לֵיהּ בַּהֲדֵיהּ:</div>
+          <div class="glose-fr">Et il ne l a pas liee avec le reste.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">הוֹאִיל וְאָמַר ר&#x27; יְהוּדָה לוּלָב צָרִיךְ אֶגֶד אִי מַיְיתֵי מִינָא אַחֲרִינָא הַאי לְחוֹדֵיהּ קָאֵי וְהַאי לְחוֹדֵיהּ קָאֵי. תֵּימַהּ כ&quot;ש לְרַבָּנָן דְּמַשְׁמַע לְעֵיל דִּלְר&#x27; יְהוּדָה מִשּׁוּם דְּצָרִיךְ אֶגֶד אִי אַגִּיד לֵיהּ מִמִּין אַחֵר הֲוָה לֵיהּ חֲמֵשֶׁת הַמִּינִין אֲבָל לְרַבָּנָן דְּאֵין צָרִיךְ אֶגֶד לָא דְּהַאי לְחוֹדֵיהּ קָאֵי וְהַאי לְחוֹדֵיהּ קָאֵי וְהָכִי נָמֵי אָמְרִינַן בְּהֶדְיָא בְּפֶ&#x27; אֵלּוּ הֵן הַנֶּחֱנָקִין (סַנְהֶדְרִין דַּף פח:) גַּבֵּי כָּל הַמּוֹסִיף גּוֹרֵעַ דְּאִי סְבִירָא לָן לוּלָב אֵין צָרִיךְ אֶגֶד הַאי לְחוֹדֵיהּ קָאֵי וְהַאי לְחוֹדֵיהּ קָאֵי וְי&quot;ל דְּהָכָא מַיְירֵי בְּשֶׁנּוֹתֵן אוֹתוֹ חוּץ לָאֶגֶד לְר&#x27; יְהוּדָה וא&quot;ת א&quot;כ לֹא יֵחָשֵׁב תּוֹסֶפֶת הַאי מִינָא אַחַרְיַנָא דְּקָמַיְיתֵי כְּמוֹ לְרַבָּנָן דִּלְעֵיל דְּאֵין צָרִיךְ אֶגֶד וי&quot;ל דְּלָא דָּמֵי דִּכְשֶׁיַּאַגְדוֹ שֶׁלֹּא בְּמִינוֹ אֵין לוֹ לֵיחָשֵׁב כְּמוֹסִיף מִשּׁוּם דְּאֵין זֶה כְּדֶרֶךְ גְּדִילָתָן וּמִינִים שֶׁבַּלּוּלָב בָּעֵינַן כְּעֵין גְּדִילָתָן כְּדִלְקַמָּן (סֻוכָּה דַּף מה:) אֲבָל לְרַבִּי יְהוּדָה דְּבָעֵי אֶגֶד יֵשׁ לוֹ לֵיחָשֵׁב כְּמוֹסִיף בַּאֲגֻודָּתוֹ דְּכָל אִגּוּד&#x27; שֶׁלֹּא כְּדֶרֶךְ גְּדִילָתוֹ וְהָכָא אֲפִילּוּ לְרַבִּי יְהוּדָה קָאָמַר דְּמַייְתִי מִינָא אַחַרְיַנָא וּנְקַט לֵיהּ כְּדֶרֶךְ גְּדִילָתוֹ דַּאֲפִילּוּ חוּץ לָאֶגֶד חֲשִׁיב כְּמוֹסִיף וכ&quot;ש לְרַבָּנָן וְהָא דְּקָאָמַר בְּסַנְהֶדְרִין (דַּף פח:) לָמֶ&quot;ד אֵין צָרִיךְ אֶגֶד הַאי לְחוֹדֵיהּ קָאֵי וְהַאי לְחוֹדֵיהּ קָאֵי הַייְנוּ לְעִנְיַן דְּאֵין זֶה כָּל הַמּוֹסִיף גּוֹרֵעַ דִּלְעוֹלָם יְדֵי מִצְוָה יָצָא אֶלָּא דְּעוֹבֵר עַל בַּל תּוֹסִיף וְהַשְׁתָּא נִיחָא דת&quot;ק דְּר&#x27; יְהוּדָה דְּקָתָנֵי ד&#x27; מִינִים שֶׁבַּלּוּלָב אֵין מוֹסִיף עֲלֵיהֶן וּמִסְּתָמָא הַיְינוּ רַבָּנָן בַּר פְּלֻוגְתַּייְהוּ דְּלָא בָּעוּ אֶגֶד וְאַפֵּ&quot;ה אִיכָּא בַּל תּוֹסִיף וְהַיְינוּ כְּגוֹן דְּנָקֵיט לֵיהּ דֶּרֶךְ גְּדִילָתָן:</div>
+          <div class="glose-fr">&lt;b&gt;Puisque Rabbi Yehouda a dit que le loulav requiert une ligature, si l on apporte une autre espece, celle-ci se tient a part et celle-la se tient a part.&lt;/b&gt; Difficulte : a plus forte raison pour les Sages ! Car il ressort de ce qui precede que, chez Rabbi Yehouda, c est parce qu il faut une ligature que, s il lui lie une autre espece, il se retrouve avec cinq especes ; mais pour les Sages, qui n exigent pas de ligature, non — car celle-ci se tient a part et celle-la se tient a part. Et nous le disons explicitement au chapitre Elou hen hanehenakin (Sanhedrin 88b), a propos de la regle &quot;quiconque ajoute retranche&quot; : si nous tenons que le loulav n exige pas de ligature, celle-ci se tient a part et celle-la se tient a part. Et l on peut repondre qu ici il s agit du cas ou il place [la cinquieme espece] hors de la ligature, selon Rabbi Yehouda. Et si tu objectes : dans ce cas, cette autre espece qu il apporte ne devrait pas etre comptee comme un ajout, tout comme pour les Sages plus haut, qui n exigent pas de ligature ? On peut repondre que ce n est pas comparable : lorsqu on lie [le loulav] avec une espece etrangere, cela ne doit pas compter comme un ajout, parce que ce n est pas conforme a leur mode de croissance — or les especes du loulav doivent etre prises a la maniere de leur croissance, comme il est dit plus loin (Soukka 45b). Mais chez Rabbi Yehouda, qui exige une ligature, cela doit compter comme un ajout dans sa ligature, car toute ligature n est pas conforme au mode de croissance. Et ici, meme selon Rabbi Yehouda, il est question de quelqu un qui apporte une autre espece et la tient conformement a son mode de croissance : des lors, meme hors de la ligature, elle compte comme un ajout — et a plus forte raison chez les Sages. Quant a ce qui est dit dans Sanhedrin (88b) selon l avis qui n exige pas de ligature — celle-ci se tient a part et celle-la se tient a part —, cela ne concerne que la regle &quot;quiconque ajoute retranche&quot; : il s acquitte en tout etat de cause de la mitsva, mais il transgresse neanmoins bal tossif. Et desormais tout s eclaire : le tana kama de Rabbi Yehouda, qui enseigne que l on n ajoute pas aux quatre especes du loulav, est vraisemblablement les Sages qui le contredisent et n exigent pas de ligature ; et pourtant il y a bien bal tossif — a savoir dans le cas ou il tient [l espece surnumeraire] a la maniere de sa croissance.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara reprend la baraita citee en 31a, ligne apres ligne, avec sa formule d entree <i>amar mar</i> — "le Maitre a dit". Elle interroge une phrase apparemment vide : puisqu on ne peut pas retirer une espece, il semble evident qu on ne peut pas en ajouter une. Le talmudiste appelle cela <b>pchita</b> : une redondance qu il faut justifier.</p><p>La justification passe par une position propre a Rabbi Yehouda : chez lui, le loulav <b>requiert une ligature</b> (agued). Cette exigence definit la mitsva comme un objet unique, le paquet lie. On aurait donc pu croire qu une cinquieme espece tenue a cote, non liee, reste juridiquement exterieure au bouquet — <i>hai lehoudei kai</i>, "celle-ci se tient a part" — et n enfreint pas <b>bal tossif</b>, l interdit d ajouter aux mitsvot. La baraita coupe court : l ajout compte.</p><p>Les Tossefot font remarquer que le raisonnement semble inverse : c est chez les Sages, qui n exigent aucune ligature, que l argument du "chacun a part" devrait valoir le plus. Leur reponse deplace le critere de la <i>ligature</i> vers la <b>maniere de tenir</b> : ce qui rend une espece surnumeraire integrante, c est de la tenir dans le sens de sa croissance, comme les quatre autres.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="340" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Pourquoi il fallait le dire : la ligature de R. Yehouda et le bal tossif</text>
+
+  <rect x="24" y="44" width="316" height="132" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="182" y="64" text-anchor="middle" font-size="10.4" font-weight="700" fill="#7f1d1d">Hava amina -- ce qu on aurait pu croire</text>
+  <text x="182" y="86" text-anchor="middle" font-size="8.8" fill="#292524">R. Yehouda exige que le loulav soit LIE.</text>
+  <text x="182" y="104" text-anchor="middle" font-size="8.8" fill="#292524">La mitsva, chez lui, c est le paquet ligature.</text>
+  <text x="182" y="126" text-anchor="middle" font-size="8.8" fill="#292524">Donc une cinquieme espece tenue A COTE,</text>
+  <text x="182" y="143" text-anchor="middle" font-size="8.8" fill="#292524">hors de la ligature, resterait exterieure :</text>
+  <text x="182" y="162" text-anchor="middle" font-size="8.8" font-style="italic" fill="#b91c1c">celle-ci a part, celle-la a part -- pas d ajout.</text>
+
+  <rect x="380" y="44" width="316" height="132" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.3"/>
+  <text x="538" y="64" text-anchor="middle" font-size="10.4" font-weight="700" fill="#14532d">Ka mashma lan -- ce que la baraita enseigne</text>
+  <text x="538" y="86" text-anchor="middle" font-size="8.8" fill="#292524">Non : de meme qu on ne retranche pas,</text>
+  <text x="538" y="104" text-anchor="middle" font-size="8.8" fill="#292524">on n ajoute pas. La cinquieme espece</text>
+  <text x="538" y="126" text-anchor="middle" font-size="8.8" fill="#292524">compte, meme hors de la ligature,</text>
+  <text x="538" y="143" text-anchor="middle" font-size="8.8" fill="#292524">des lors qu on la tient a la maniere</text>
+  <text x="538" y="162" text-anchor="middle" font-size="8.8" font-style="italic" fill="#15803d">de sa croissance : bal tossif s applique.</text>
+
+  <path d="M340 110 L376 110" stroke="#78716c" stroke-width="1.5"/><path d="M369 105 L369 115 L379 110 Z" fill="#78716c"/>
+
+  <rect x="24" y="196" width="672" height="124" rx="7" fill="#f8fafc" stroke="#475569" stroke-width="1.2"/>
+  <text x="360" y="216" text-anchor="middle" font-size="10.2" font-weight="700" fill="#0f172a">La difficulte des Tossefot -- et sa resolution</text>
+  <text x="40" y="238" font-size="8.8" fill="#292524">Difficulte : a plus forte raison pour les SAGES, qui n exigent aucune ligature -- chez eux tout se tient a part !</text>
+  <text x="40" y="256" font-size="8.8" fill="#292524">Et Sanhedrin 88b dit explicitement : pour qui n exige pas de ligature, celle-ci a part et celle-la a part.</text>
+  <text x="40" y="278" font-size="8.8" fill="#292524">Reponse : tout depend de la MANIERE DE TENIR, pas de la ligature.</text>
+  <text x="40" y="296" font-size="8.8" fill="#292524">- liee dans le paquet mais a l envers du sens de croissance : ne compte pas comme ajout</text>
+  <text x="40" y="312" font-size="8.8" fill="#292524">- tenue dans le sens de sa croissance, meme hors de la ligature : compte comme ajout -- et a fortiori chez les Sages</text>
+</svg></div><div class="svg-cap">Segment 2 : ce que la baraita devait exclure, et le deplacement opere par les Tossefot de la ligature vers la maniere de tenir.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר מַר: לֹא מָצָא אֶתְרוֹג — לֹא יָבִיא לֹא רִמּוֹן וְלֹא פָּרִישׁ וְלֹא דָּבָר אַחֵר. פְּשִׁיטָא! מַהוּ דְתֵימָא: לַיְיתִי, כִּי הֵיכִי שֶׁלֹּא תִּשָּׁכַח תּוֹרַת אֶתְרוֹג, קָא מַשְׁמָע לַן, זִימְנִין דְּנָפֵיק חֻורְבָּא מִינֵּיהּ, דְּאָתֵי לְמִסְרַךְ.</div>
+            <div class="fr"><p>Le Maitre a dit : s il n a pas trouve d etrog, il n apportera ni grenade, ni coing, ni quoi que ce soit d autre. Cela va de soi !</p><p>[Non, car] tu aurais pu dire : qu il en apporte tout de meme, afin que la loi de l etrog ne tombe pas dans l oubli — il nous enseigne qu il en sortirait parfois un dommage, car on en viendrait a s y accoutumer.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deuxieme <b>pchita</b>, meme structure. Pourquoi interdire explicitement le substitut, alors qu il est evident qu une grenade n est pas un etrog ?</p><p>Parce qu il existe une raison serieuse d en apporter un : la transmission. Si une generation entiere ne voit jamais d etrog, la <b>torat etrog</b> — la connaissance concrete de ce qu est cette mitsva — se perd. Le principe "pour que la loi ne soit pas oubliee" est reellement operatoire ailleurs dans le Talmud ; ici il est ecarte.</p><p>Le motif du refus est un mot precis : <b>lemisrakh</b>, s accoutumer, prendre le pli. Le substitut pedagogique d aujourd hui devient l usage de demain, puis la norme. La guemara prefere une lacune momentanee a une deformation durable — <i>zimnin denafik hourba mineih</i>, il en sort parfois une ruine.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּא שְׁמַע: אֶתְרוֹג הַיָּשָׁן — פָּסוּל, וְרַבִּי יְהוּדָה מַכְשִׁיר. תְּיוּבְתָּא דְּרָבָא, תְּיוּבְתָּא.</div>
+            <div class="fr"><p>Viens et ecoute : l etrog vieux est passoul, et Rabbi Yehouda le declare kacher. C est une refutation de Rava — refutation concluante.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>C est le moment decisif du folio. La guemara produit une baraita ou Rabbi Yehouda valide expressement un <b>etrog vieux</b> (yachan) : un etrog de l annee precedente, ratatine, terni. Contrairement au vert ou au trop petit, ce defaut n a rien a voir avec la maturation — le fruit est parfaitement mur, il est simplement laid.</p><p>Si Rabbi Yehouda le valide, c est qu il n exige pas le <b>hadar</b> dans l etrog. Or Rava avait affirme en 31a que sur ce point tout le monde s accorde. La guemara conclut par la formule la plus forte de son arsenal : <b>teyouvta</b>, redoublee — <i>teyouvta deRava, teyouvta</i>. Une these amoraique est ici purement et simplement abandonnee ; le reste du folio n en discute plus, il en tire les consequences.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְלָא בָּעֵי הֲדַר? וְהָא אֲנַן תְּנַן: הַיָּרוֹק כְּכַרְתִּי — רַבִּי מֵאִיר מַכְשִׁיר וְרַבִּי יְהוּדָה פּוֹסֵל. לָאו מִשּׁוּם דְּבָעֵי הָדָר? לֹא, מִשּׁוּם דְּלָא גְּמַר פֵּירָא.</div>
+            <div class="fr"><p>Et [Rabbi Yehouda] n exigerait pas le hadar ? Mais n avons-nous pas appris dans la michna : celui qui est vert comme le poireau — Rabbi Meir le declare kacher et Rabbi Yehouda le declare passoul !</p><p>N est-ce pas parce qu il exige le hadar ? Non : parce que le fruit n a pas acheve sa maturation.</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">הַיָּרוֹק כְּכַרְתִּי. מַשְׁמַע שֶׁמַּרְאֵהוּ כְּצֶבַע שֶׁקּוֹרִין ויר&quot;ד בְּלַעַ&quot;ז וְהַהִיא דִּבְרָכוֹת מַשְׁמַע קְצָת שֶׁדּוֹמֶה לאירנד&quot;א בְּלַעַ&quot;ז דִּתְנַן הָתָם פ&quot;ק (בְּרָכוֹת דַּף ט:) מִשֶּׁיַּכִּיר בֵּין תְּכֵלֶת לְכַרְתִּי מַשְׁמַע דִּמְעַט מְשֻׁונִּין זֶה מִזֶּה וּבִמְנָחוֹת פ&#x27; הַתְּכֵלֶת (מְנָחוֹת דַּף מג:) אָמְרִינַן דִּתְכֵלֶת דּוֹמֶה לַיָּם וְיָם דּוֹמֶה לָרָקִיעַ וְזֶהוּ כְּעֵין צֶבַע שֶׁקּוֹרִין אירנד&quot;א בְּלַעַ&quot;ז אֲבָל בַּיְּרוּשַׁלְמִי מַשְׁמַע שֶׁהוּא צֶבַע ויר&quot;ד כְּעֵין עֲשָׂבִים דְּאַהָהִיא דְּבֵין תְּכֵלֶת לְכַרְתִּי מְסַיֵּים לֵיהּ תְּכֵלֶת דּוֹמֶה לַיָּם וְיָם דּוֹמֶה לַעֲשָׂבִים וַעֲשָׂבִים לָרָקִיעַ וּבְפֶרֶק אֵלּוּ טְרֵיפוֹת (חֻולִּין דַּף מז:) מַשְׁמַע דְּיָרוֹק דָּמֵי לְחֶלְמוֹן שֶׁל בֵּיצָה שֶׁהוּא כְּעֵין צֶבַע יאל&quot;ה בְּלַעַ&quot;ז דְּאָמְרִינַן כְּגוֹן בֵּיעֲתָא טְרֵפָה וּפָרִיךְ אֶלָּא יְרֻוקָּה דִּכְשֵׁרָה הֵיכִי דָּמֵי כְּכַרְתִּי וְכֵן מַשְׁמַע בַּתּוֹסֶפְתָּא דִּנְגָעִים שֶׁדּוֹמֶה לְשַׁעֲוָה דְּתַנְיָא יָרוֹק שֶׁבַּיְּרֻוקִּים ר&#x27; אֶלְעָזָר אוֹמֵר כְּשַׁעֲוָה וּכְחוֹרְמַל סוּמָכוֹס אוֹמֵר כִּכְנַף טַווָּס וּכְחָרוּץ שֶׁל דֶּקֶל וְכֵן מַשְׁמַע בְּפֶ&#x27; ב&#x27; דְּנִדָּה (דַּף יט.) גַּבֵּי ה&#x27; דָּמִים טְמֵאִים בְּאִשָּׁה דִּתְנַן הַיָּרֹוק עֲקַבְיָא בֶּן מַהֲלַלְאֵל מְטַמֵּא וְאָמְרִינַן הָתָם מִנַּיִן לְדַם נִדָּה שֶׁהוּא אָדֹום מַשְׁמַע דְּאֵין לְטֻמְאוֹת בְּאִשָּׁה אא&quot;כ נוֹטֶה לְמַרְאֵה אַדְמוּמִית וּבְכָל הַצְּבָעִים שֶׁזָּכַרְתִּי אֵין בָּהֶן נוֹטֶה לְמַרְאֵה אַדְמוּמִית אֶלָּא צֶבַע יאל&quot;ה בְּלַעַ&quot;ז וּקְרָא נָמֵי מוֹכִיחַ שֶׁהוּא הַנִּקְרָא יָרוֹק כְּדִכְתִיב (תְּהִילִּים ס״ח:י״ד) וְאֶבְרוֹתֶיהָ בִּירַקְרַק חָרוּץ וּבְסֵפֶר הַמַּחְבֶּרֶת פִּי&#x27; מְנַחֵם שֶׁהוּא זָהָב הַבָּא מִן הַחֲוִילָה וְדוּנָשׁ פִּי&#x27; חָרוּץ זֶה אֶבֶן טוֹבָה וּפְלוּגְתָּא דְּאָמוֹרָאֵי הִיא דְּאָמְרִינַן בִּבְרֵאשִׁית רַבָּה (פ&#x27; מ&quot;ג) אַקְּרָא . דְּוַיְרַק אֶת חֲנִיכָיו רֵישׁ לָקִישׁ אָמַר שֶׁהוֹרִיקָן בַּאֲבָנִים טוֹבוֹת וּמַרְגָּלִיּוֹת כַּמָּה דְּאַתְּ אָמְרַתְּ וְאֶבְרוֹתֶיהָ בִּירַקְרַק חָרוּץ פִּי&#x27; שֶׁלֹּא יְהוּ לְהוּטִין אַחַר הַמָּמוֹן וְיִתְעַסְּקוּ בְּהַצָּלַת נְפָשׁוֹת ר&#x27; לֵוִי אוֹמֵר בְּפָרָשַׁת שׁוֹטְרִים הוֹרִיקָן כַּמָּה דְּאַתְּ אָמְרַתְּ מִי הָאִישׁ הַיָּרֵא וְרַךְ הַלֵּבָב כְּלוֹמַר מֵעֲבֵירוֹת שֶׁבְּיָדָן וְנִתְבַּיְּישׁוּ בְּמַה שֶׁהֻוזְקְקוּ לַחֲזֹור וְאָמְרִינַן בְּשִׁילְהֵי ד&#x27; נְדָרִים (נְדָרִים ד&#x27; לב.) וְיָרָק אֶת חֲנִיכָיו רַב וּשְׁמוּאֵל חַד אָמַר שֶׁהוֹרִיקָן בַּתּוֹרָה בְּפָרָשַׁת שׁוֹטְרִים וְחַד אָמַר שֶׁהוֹרִיקָן בְּזָהָב פִּי&#x27; קְרָא דְּבִירַקְרַק חָרוּץ קָדָרֵישׁ וְזָהָב דּוֹמֶה לְצַבָּע יאל&quot;ה וּמִיהוּ אֶתְרוֹג עִיקָּרוֹ דּוֹמֶה לְשַׁעֲוָה וְאוֹתָם אֶתְרוֹגִים הַבָּאִים לְפָנֵינוּ יְרֻוקִּים כְּכַרְתִּי כְּשֵׁרִים אֲפִילּוּ לְר&#x27; יְהוּדָה כְּשֶׁחוֹזְרִים לְמַרְאֵה שְׁאָר אֶתְרוֹגִים אֲפִילּוּ בְּתָלוּשׁ לְאַחַר שֶׁשָּׁהוּ בִּכְלִי זְמַן מְרֻובֶּה דְּוַדַּאי גְּמַר פִּרְיָים:</div>
+          <div class="glose-fr">&lt;b&gt;Vert comme le poireau.&lt;/b&gt; Il en ressort que son aspect est de la couleur qu on appelle &lt;i&gt;vert&lt;/i&gt; en langue vernaculaire. Mais le passage de Berakhot suggere quelque peu qu il ressemble a la teinte qu on appelle &lt;i&gt;inde&lt;/i&gt; (bleu profond), car on enseigne la (Berakhot 9b) : [le moment du chema est venu] des qu il distingue entre le tekhelet et le poireau — ce qui indique qu ils different peu l un de l autre. Et dans Menahot, chapitre HaTekhelet (43b), nous disons que le tekhelet ressemble a la mer, la mer au firmament — et c est cette teinte-la. Mais dans le Yerouchalmi, il ressort qu il s agit du vert des herbes, car sur ce meme passage &quot;entre le tekhelet et le poireau&quot; il conclut : le tekhelet ressemble a la mer, la mer aux herbes, et les herbes au firmament. Et au chapitre Elou terefot (Houlin 47b) il ressort que le yarok ressemble au jaune d oeuf, soit la couleur qu on appelle &lt;i&gt;jaune&lt;/i&gt; : car nous y disons qu un oeuf de telle teinte rend l animal terefa, et l on demande — alors le vert qui est kacher, comment est-il ? — comme le poireau. De meme, il ressort de la Tossefta de Negaim qu il ressemble a la cire, car on y enseigne : le plus vert des verts — Rabbi Elazar dit : comme la cire et comme le hormal ; Soumkhos dit : comme l aile du paon et comme le harouts du palmier. De meme, il ressort du chapitre 2 de Nidda (19a), a propos des cinq sangs impurs chez la femme, ou l on enseigne : le vert — Akavia ben Mahalalel le declare impur ; et nous disons la : d ou sait-on que le sang de nidda est rouge ? — ce qui indique qu on ne declare impur, chez la femme, que ce qui tire vers la rougeur ; or aucune des couleurs que j ai mentionnees ne tire vers le rouge, sinon la teinte jaune. Le verset aussi prouve que c est cela qu on appelle yarok, comme il est ecrit (Tehilim 68:14) : &quot;et ses ailes d un vert d or (yerakrak harouts)&quot;. Dans le Mahberet, Menahem explique qu il s agit de l or venu de Havila ; et Dounach explique que harouts est une pierre precieuse. Et c est une controverse d Amoraim : nous disons dans Bereshit Rabba (43) sur le verset &quot;vayarek et hanikhav&quot; — Rech Lakich dit qu il les fit briller de pierres precieuses et de perles, comme tu dis &quot;ses ailes d un vert d or&quot;, c est-a-dire qu ils ne convoiteraient pas l argent et s occuperaient du sauvetage des vies ; Rabbi Levi dit qu il les fit palir par la section des officiers, comme tu dis &quot;quel est l homme craintif et au coeur mou&quot;, c est-a-dire des fautes qu ils avaient en main, et ils eurent honte d avoir a rebrousser chemin. Et nous disons a la fin du quatrieme chapitre de Nedarim (32a) : &quot;vayarek et hanikhav&quot; — Rav et Chmouel : l un dit qu il les fit briller par la Torah, dans la section des officiers, et l autre dit qu il les fit briller d or — c est-a-dire qu il expose le verset &quot;d un vert d or&quot;, et l or ressemble a la teinte jaune. Quoi qu il en soit, l etrog, dans son fond, ressemble a la cire ; et ces etrogim qui nous parviennent verts comme le poireau sont kacherim meme selon Rabbi Yehouda lorsqu ils reviennent a l aspect des autres etrogim — meme detaches, apres avoir sejourne longtemps dans un recipient — car assurement leur fruit avait bien acheve sa maturation.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">מַתְנִי&#x27; אֶתְרוֹג הַגָּזוּל וְהַיָּבֵשׁ פָּסוּל שֶׁל אֲשֵׁירָה וְשֶׁל עִיר הַנִּדַּחַת פָּסוּל שֶׁל עָרְלָה פָּסוּל וְשֶׁל תְּרוּמָה טְמֵאָה פָּסוּל וְשֶׁל טְהוֹרָה לֹא יִטּוֹל וְאִם נָטַל כָּשֵׁר וְשֶׁל דְּמַאי ב&quot;ש פּוֹסְלִין וב&quot;ה מַכְשִׁירִין אִית סְפָרִים דְּגָרְסִי אַמַּתְנִיתִין שֶׁל אֲשֵׁירָה וְשֶׁל עִיר הַנִּדַּחַת פָּסוּל מִשּׁוּם דְּהָוֵה לֵיהּ מִצְוָה הַבָּאָה בַּעֲבֵירָה מִשּׁוּם דִּס&quot;ל דְּלָא שַׁיָּיךְ לְמִיפְסַל מִשּׁוּם דִּמְיכַתַּת שִׁיעוּרֵיהּ מִשּׁוּם דְּלָא אַשְׁכְּחַן שִׁיעוּר מְפֹורָשׁ בְּאֶתְרוֹג וְהָא דְּאָמְרִי&#x27; כֶּאֱגוֹז כַּבֵּיצָה לָאו מִשּׁוּם שִׁיעוּר הוּא אֶלָּא כְּדִמְפָרֵשׁ טַעְמָא לְעֵיל (סֻוכָּה דַּף לא:) מִשּׁוּם דְּלָא גְּמַר פֵּירָא הוּא וְלָא נְהִירָא לר&quot;י דְּא&quot;כ אַמַּאי אִיצְטְרִיךְ לְפָרֵשׁ טַעְמָא דַּאֲשֵׁירָה וְעִיר הַנִּדַּחַת גַּבֵּי לוּלָב מִשּׁוּם דִּמְיכַתַּת שִׁיעוּרֵיהּ תִּיפּוֹק לֵיהּ מִשּׁוּם מִצְוָה הַבָּאָה בַּעֲבֵירָה וְעוֹד אַמַּאי שָׁרְיָא בַּאֲשֵׁרָה דְּנָכְרִי דִּיעֲבַד דְּהָא מִשּׁוּם מִצְוָה הַבָּאָה בַּעֲבֵירָה פָּסְלִינַן בְּדִיעֲבַד אֶלָּא וַדַּאי לָא מִיקְּרֵי מִצְוָה הַבָּאָה בַּעֲבֵירָה אֶלָּא דֻּומְיָא בִּדְגָזֵל דְּמֵחֲמַת עֲבֵירָה הוּא דְּגָזַל בְּאוֹתָהּ הַמִּצְוָה שֶׁיּוֹצֵא בָּהּ אֲבָל הָנֵי לָא נָפֵיק בְּהוּ מֵחֲמַת הָעֲבֵירָה שֶׁנַּעֲשֵׂית וּבְאֶתְרוֹג שַׁיָּיךְ שַׁפִּיר שִׁיעוּרָא מִשּׁוּם דְּבָעֵינַן דְּמִינְּכַר לְקִיחָה וּמֵהַאי טַעְמָא פָּסְלִינַן פִּלְפְּלִין וְכֵיוָן דִּמְיכַתַּת שִׁיעוּרֵיהּ הָוֵי כְּאִילּוּ נִשְׁחָק כֻּולּוֹ וְהָוֵי כְּאִילּוּ לֹא מְנַכֵּר לְקִיחָה:</div>
+          <div class="glose-fr">&lt;b&gt;Michna :&lt;/b&gt; l etrog vole et l etrog sec sont passoul ; celui d une acherah et celui d une ville devoyee sont passoul ; celui d orla est passoul ; celui de trouma impure est passoul ; celui de [trouma] pure, on ne le prendra pas, mais si on l a pris il est kacher ; et celui de demai — Beit Chammai invalident et Beit Hillel valident. Il est des livres qui lisent, sur notre michna, que celui d une acherah et celui d une ville devoyee sont passoul au titre de &lt;b&gt;mitsva haba a be-avera&lt;/b&gt; — une mitsva accomplie par une transgression — parce qu ils tiennent qu il n y a pas lieu d invalider au titre de &quot;sa mesure est pulverisee&quot;, puisque nous ne trouvons pas de mesure explicite pour l etrog ; et ce que l on dit — comme une noix, comme un oeuf — ne serait pas une mesure, mais s expliquerait comme la guemara l a explique plus haut (Soukka 31b) : parce que le fruit n a pas acheve sa maturation. Cela ne parait pas juste au Ri : car s il en etait ainsi, pourquoi aurait-il fallu expliquer la raison de l acherah et de la ville devoyee, a propos du loulav, par &quot;sa mesure est pulverisee&quot; ? Qu on la tire donc de la mitsva accomplie par une transgression ! De plus, pourquoi l acherah d un non-Juif serait-elle permise a posteriori, alors que pour une mitsva accomplie par une transgression nous invalidons meme a posteriori ? Force est donc de dire qu on n appelle mitsva accomplie par une transgression que ce qui est semblable au vol, ou c est par la transgression meme qu il s est empare de l objet de la mitsva dont il s acquitte ; tandis que dans ces cas-ci, ce n est pas par la transgression accomplie qu il s en acquitte. Et pour l etrog, la notion de mesure s applique bel et bien, car nous exigeons que la prise soit perceptible (&lt;b&gt;minkar lekiha&lt;/b&gt;) — et c est pour cette raison que nous invalidons les grains de poivre ; or des lors que sa mesure est pulverisee, c est comme s il avait ete entierement broye, et comme si la prise n etait pas perceptible.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">הַיָּרוֹק כְּכַרְתִּי שֶׁדּוֹמֶה לַעֲשָׂבִים כָּתְבוּ הַתּוֹסָפוֹת לְעֵיל (סֻוכָּה דַּף לא:) דְּאֶתְרוֹג שֶׁהוּא יָרֹוק כְּכַרְתִּי וּכְשֶׁמְּשַׁהִין אוֹתוֹ חוֹזֵר לְמַרְאֵה אֶתְרוֹג נִרְאֶה שֶׁהוּא כָּשֵׁר דְּאִי לָאו דְּנִגְמַר פִּרְיוֹ לֹא הָיָה חוֹזֵר לְמַרְאֵה אֶתְרוֹג בְּתָלוּשׁ:</div>
+          <div class="glose-fr">&lt;b&gt;Vert comme le poireau&lt;/b&gt;, c est-a-dire qui ressemble aux herbes. Les Tossefot ont ecrit plus haut (Soukka 31b) qu un etrog vert comme le poireau, et qui, lorsqu on le conserve, revient a l aspect d un etrog, parait kacher : car si son fruit n avait pas acheve sa maturation, il ne reviendrait pas a l aspect d un etrog une fois detache.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rava est refute, mais un probleme demeure : trois michnayot montrent Rabbi Yehouda invalidant des etrogim. Si ce n est pas au nom du hadar, alors au nom de quoi ? La guemara va traiter les trois cas l un apres l autre, et chaque fois par la meme parade : <i>lo, michoum de...</i> — non, c est pour une autre raison.</p><p>Premier cas : l etrog <b>vert comme le poireau</b>. Reponse : <b>lo gamar pira</b>, le fruit n a pas acheve sa maturation. Le vert n est pas un defaut de beaute, c est le signe d un fruit inacheve — donc pas encore un "fruit" au sens du verset.</p><p>Les Tossefot consacrent a l identification de cette couleur une de leurs gloses les plus longues, comparant sept passages talmudiques et deux versions du mot yarok : tantot le vert des herbes, tantot un bleu profond, tantot le jaune du jaune d oeuf. Leur conclusion est halakhique et rassurante pour l usage : les etrogim verts qui, apres un sejour en reserve, prennent la couleur normale, etaient donc bel et bien murs — et restent kacherim meme selon Rabbi Yehouda. Le Roch reprend exactement cette conclusion.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּא שְׁמַע: שִׁיעוּר אֶתְרוֹג קָטָן, רַבִּי מֵאִיר אוֹמֵר: כֶּאֱגוֹז, רַבִּי יְהוּדָה אוֹמֵר: כַּבֵּיצָה. לָאו מִשּׁוּם דְּבָעֵי הָדָר? לֹא, מִשּׁוּם דְּלָא גְּמַר פֵּירָא.</div>
+            <div class="fr"><p>Viens et ecoute : la mesure d un petit etrog — Rabbi Meir dit : comme une noix ; Rabbi Yehouda dit : comme un oeuf. N est-ce pas parce qu il exige le hadar ?</p><p>Non : parce que le fruit n a pas acheve sa maturation.</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">שִׁיעוּר אֶתְרוֹג קָטָן. אֵין זוֹ פְּלוּגְתָּא דְּאֶתְרוֹג הַבֹּוסֶר דִּפְלִיגִי בָּהּ ר&quot;ע וְרַבָּנָן לְקַמָּן בְּפִירְקִין (סֻוכָּה ד&#x27; לוֹ.) דְּהָא אֲפִילּוּ גָּדוֹל כֶּאֱגוֹז וְכַבֵּיצָה פְּסִיל לֵיהּ ר&quot;ע מִשּׁוּם דְּלָאו בַּר זְרִיעָה לְטַעַם אֶחָד וּלְפִי טַעַם שֵׁנִי מִשּׁוּם דְּבָעֵי הָדָר וְהַאי דְּהָכָא אֲפִילּוּ לָא בָּעֵי הָדַר פְּסִיל לֵיהּ מִשּׁוּם דְּלָא גְּמַר פֵּירָא וְלֹא כְּמוֹ שֶׁפֵּי&#x27; בַּקּוּנְטְרֵס לְקַמָּן אֶתְרוֹג הַבֹּוסֶר כְּפוֹל הַלָּבָן דְּהַהוּא שִׁיעוּרָא אִתְּמַר גַּבֵּי עֲנָבִים דְּבִגְמַר בִּישּׁוּלָם נָמֵי קְטַנִּים הֵם אֲבָל אֶתְרוֹג שֶׁהוּא פְּרִי גָּדוֹל אֲפִילּוּ יוֹתֵר מִכַּבֵּיצָה בֹּוסֶר הוּא כְּשֶׁסּוֹפוֹ לִיגָּדֵל יוֹתֵר הַרְבֵּה וְהָכָא בְּשֶׁאֵין סוֹפוֹ לִיגָּדֵל יוֹתֵר דַּאֲפִילּוּ ר&quot;ע דִּפְסִיל הָתָם הָכָא מַכְשִׁיר בְּכֶאֱגוֹז לְמַר וְכַבֵּיצָה לְמַר דַּחֲשִׁיב גְּמַר פְּרִי אֲבָל פָּחוּת מִכָּאן לֹא חֲשִׁיב גְּמַר פְּרִי אע&quot;פ שֶׁאֵין סוֹפוֹ לִיגָּדֵל יוֹתֵר דְּיֵשׁ דְּבָרִים הַרְבֵּה שֶׁלְּעוֹלָם לֹא יָבוֹאוּ לִידֵי בִּישּׁוּל פְּרִי וּמָצוּי הוּא בַּעֲנָבִים שֶׁיֵּשׁ מֵהֶם שֶׁלְּעוֹלָם בֹּוסֶר עוֹד יִתָּכֵן דַּאֲפִילּוּ רַבָּנָן דְּמַכְשִׁירֵי הָתָם פָּסְלִי הָכָא בְּפָחוֹת מִכָּאן דְּאֶתְרוֹג הַבֹּוסֶר חֲשִׁיב פֵּירָא טְפֵי ובפ&quot;ק דְּמַעַשְׂרוֹת בַּיְּרוּשַׁלְמִי תָּנֵי אֶתְרוֹג הַבֹּוסֶר ר&quot;ע אוֹמֵר פְּרִי וַחֲכָמִים אוֹמְרִים אֵינוֹ פְּרִי:</div>
+          <div class="glose-fr">&lt;b&gt;La mesure d un petit etrog.&lt;/b&gt; Ce n est pas la controverse relative a l etrog &lt;i&gt;boser&lt;/i&gt; (non mur) que discutent Rabbi Akiva et les Sages plus loin dans notre chapitre (Soukka 36a) : car meme gros comme une noix ou comme un oeuf, Rabbi Akiva l y invalide — soit, selon une premiere raison, parce qu il n est pas apte a etre seme, soit, selon la seconde raison, parce qu il exige le hadar. Or ici, meme celui qui n exige pas le hadar l invalide, parce que le fruit n a pas acheve sa maturation. Et il n en va pas comme l a explique le Kountras (Rachi) plus loin, selon qui l etrog boser est comparable a la feve blanche : car cette mesure a ete enoncee a propos des raisins, qui sont petits meme parvenus a maturite ; tandis que l etrog, qui est un grand fruit, demeure boser meme au-dela de la taille d un oeuf lorsqu il doit encore grandir beaucoup. Et ici il s agit du cas ou il ne doit plus grandir : des lors, meme Rabbi Akiva, qui invalide la-bas, valide ici a partir d une noix pour l un et d un oeuf pour l autre, car cela compte comme un fruit acheve ; mais en deca, cela ne compte pas comme un fruit acheve, quand bien meme il ne doit plus grandir — car il est bien des choses qui ne parviennent jamais a maturite, et cela se rencontre frequemment parmi les raisins, dont certains restent toujours verts. Il se peut encore que meme les Sages, qui valident la-bas, invalident ici en deca de cette mesure, car l etrog boser est davantage considere comme un fruit. Et au premier chapitre de Maasserot, dans le Yerouchalmi, on enseigne : l etrog boser — Rabbi Akiva dit : c est un fruit ; et les Sages disent : ce n est pas un fruit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deuxieme cas, meme mecanique : Rabbi Yehouda exige un etrog d au moins la taille d un oeuf, la ou Rabbi Meir se contente d une noix. Un etrog minuscule est-il rejete pour manque de <b>hadar</b> ? Non : meme raison que pour le vert — <b>lo gamar pira</b>. En deca d une certaine taille, l objet n a pas atteint le statut de fruit.</p><p>Les Tossefot previennent une confusion frequente : ce debat sur la <i>mesure minimale</i> n est pas celui de l <b>etrog boser</b> (fruit non mur) qui opposera Rabbi Akiva et les Sages en 36a. La distinction qu ils tracent est fine : ici on parle d un fruit qui a fini de grandir mais reste minuscule ; la-bas, d un fruit encore en cours de croissance. Ils corrigent au passage la lecture de Rachi sur ce point.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּא שְׁמַע: וּבְגָדוֹל כְּדֵי שֶׁיֶּאֱחֹוז שְׁנַיִם בְּיָדוֹ אַחַת, דִּבְרֵי רַבִּי יְהוּדָה. רַבִּי יוֹסֵי אוֹמֵר: אֲפִילּוּ אֶחָד בִּשְׁתֵּי יָדָיו. מַאי טַעְמָא, לָאו מִשּׁוּם דְּבָעֵי הָדָר? לֹא, כֵּיוָן דְּאָמַר רַבָּה: לוּלָב בְּיָמִין וְאֶתְרוֹג בִּשְׂמֹאל, זִימְנִין דְּמִחַלְּפִי לֵיהּ וְאָתֵי לְאַפּוּכִינְהוּ וְאָתֵי לְאִיפְּסוֹלֵי.</div>
+            <div class="fr"><p>Viens et ecoute : et pour le grand [etrog], [la mesure est] telle qu il puisse en tenir deux dans une seule main — paroles de Rabbi Yehouda. Rabbi Yosse dit : meme un seul dans ses deux mains.</p><p>Quelle en est la raison ? N est-ce pas parce qu il exige le hadar ?</p><p>Non : puisque Rabba a dit — le loulav dans la main droite et l etrog dans la gauche — il arrive qu on les lui intervertisse, qu il en vienne alors a les retourner, et que [l etrog] en vienne a devenir passoul.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שְׁנַיִם בְּיָדוֹ אַחַת</b> גָּרְסִינַן ב&#x27; אֶתְרוֹגִים בְּיָדוֹ אַחַת שֶׁבַּמָּקוֹם הָא&#x27; יֹאחַז הַלּוּלָב כְּשֶׁיְּהַפְּכֵן:</div>
+          <div class="glose-fr">Notre version est : deux etrogim dans une seule main — car a la place de l un [des deux] il tiendra le loulav lorsqu il les retournera.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כֵּיוָן דְּאָמַר רַבָּה אֶתְרוֹג בִּשְׂמֹאל וְלוּלָב בְּיָמִין</b> מִשּׁוּם דְּהָכָא תְּלָת מִצְוֹת וְאֶתְרוֹג חַד מִצְוָה וְזִימְנִין דִּמְחַלְּפִין לֵיהּ שֶׁנּוֹתְנִין לוֹ אֶתְרוֹג בְּיָמִין וְלוּלָב בִּשְׂמֹאל וְצָרִיךְ לְהַפְּכָן מִיָּד לְיָד וְלֶאֱחֹוז הָאֶתְרוֹג וְהַלּוּלָב בְּאַחַת מִיָּדָיו עַד שֶׁיַּחֲלִיף וְאִי הֲוָה גָּדוֹל יוֹתֵר מִדַּאי שֶׁמָּא יִפֹּול מִיָּדָיו וְיִפְסֹול שֶׁיֶּאֱרַע בּוֹ נֶקֶב:</div>
+          <div class="glose-fr">Parce qu ici [dans le loulav] il y a trois mitsvot, tandis que l etrog n en est qu une seule ; et il arrive qu on les lui intervertisse, en lui donnant l etrog dans la main droite et le loulav dans la gauche. Il doit alors les faire passer d une main a l autre, et tenir l etrog et le loulav dans une seule de ses mains, le temps de l echange. Or s il etait trop grand, il pourrait lui tomber des mains et devenir passoul par la perforation qui s y produirait.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Troisieme et dernier cas : la mesure <b>maximale</b>. Ici la parade de la guemara change de nature : on ne peut plus invoquer la maturation, puisqu un etrog trop grand est on ne peut plus mur.</p><p>La reponse est purement pratique et repose sur une regle de Rabba : le loulav se tient dans la main droite — il porte trois mitsvot, comme le precise Rachi — et l etrog dans la gauche, qui n en porte qu une. Il arrive frequemment qu on tende les especes a l envers ; il faut alors les echanger, et pendant cet instant une seule main tient les deux objets. Un etrog trop volumineux glisse, tombe, et se perce : le <b>neqev</b>, la perforation, l invalide.</p><p>Ainsi la mesure de Rabbi Yehouda n est pas esthetique mais fonctionnelle : elle protege l objet. Rabbi Yosse, qui ne partage pas cette crainte, valide meme un etrog qui remplit les deux mains.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="340" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Pourquoi un etrog trop grand est passoul : le moment de l echange</text>
+  <text x="360" y="42" text-anchor="middle" font-size="9.4" fill="#57534e">Ce n est pas une question de beaute mais de prise en main -- l explication de Rabba, glosee par Rachi</text>
+
+  <rect x="24" y="58" width="200" height="118" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.3"/>
+  <text x="124" y="78" text-anchor="middle" font-size="10.2" font-weight="700" fill="#14532d">1. La position correcte</text>
+  <text x="124" y="100" text-anchor="middle" font-size="8.8" fill="#292524">Main DROITE : le loulav</text>
+  <text x="124" y="116" text-anchor="middle" font-size="8.6" fill="#57534e">(trois mitsvot ensemble)</text>
+  <text x="124" y="138" text-anchor="middle" font-size="8.8" fill="#292524">Main GAUCHE : l etrog</text>
+  <text x="124" y="154" text-anchor="middle" font-size="8.6" fill="#57534e">(une seule mitsva)</text>
+  <text x="124" y="170" text-anchor="middle" font-size="8.4" fill="#15803d">Regle de Rabba : le plus lourd a droite.</text>
+
+  <path d="M228 116 L262 116" stroke="#78716c" stroke-width="1.4"/><path d="M255 111 L255 121 L265 116 Z" fill="#78716c"/>
+
+  <rect x="266" y="58" width="200" height="118" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.3"/>
+  <text x="366" y="78" text-anchor="middle" font-size="10.2" font-weight="700" fill="#78350f">2. On les lui donne a l envers</text>
+  <text x="366" y="100" text-anchor="middle" font-size="8.8" fill="#292524">Main DROITE : l etrog</text>
+  <text x="366" y="118" text-anchor="middle" font-size="8.8" fill="#292524">Main GAUCHE : le loulav</text>
+  <text x="366" y="142" text-anchor="middle" font-size="8.6" fill="#57534e">Situation courante : celui qui</text>
+  <text x="366" y="158" text-anchor="middle" font-size="8.6" fill="#57534e">tend les especes se trompe de main.</text>
+  <text x="366" y="172" text-anchor="middle" font-size="8.4" fill="#b45309">Il faut donc les intervertir.</text>
+
+  <path d="M470 116 L504 116" stroke="#78716c" stroke-width="1.4"/><path d="M497 111 L497 121 L507 116 Z" fill="#78716c"/>
+
+  <rect x="508" y="58" width="188" height="118" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="602" y="78" text-anchor="middle" font-size="10.2" font-weight="700" fill="#7f1d1d">3. L instant critique</text>
+  <text x="602" y="100" text-anchor="middle" font-size="8.8" fill="#292524">Pendant l echange, une seule</text>
+  <text x="602" y="116" text-anchor="middle" font-size="8.8" fill="#292524">main tient le loulav ET l etrog.</text>
+  <text x="602" y="140" text-anchor="middle" font-size="8.8" fill="#292524">Si l etrog est trop gros :</text>
+  <text x="602" y="156" text-anchor="middle" font-size="8.8" fill="#292524">il glisse, il tombe, il se perce.</text>
+  <text x="602" y="172" text-anchor="middle" font-size="8.4" fill="#b91c1c">Neqev = etrog passoul.</text>
+
+  <rect x="24" y="196" width="672" height="122" rx="7" fill="#f8fafc" stroke="#475569" stroke-width="1.2"/>
+  <text x="360" y="216" text-anchor="middle" font-size="10.2" font-weight="700" fill="#0f172a">La mesure devient donc un critere de prehension</text>
+  <text x="40" y="240" font-size="8.8" fill="#292524">R. Yehouda : la limite haute est atteinte quand on ne peut plus en tenir DEUX dans une seule main.</text>
+  <text x="40" y="258" font-size="8.6" fill="#57534e">Rachi precise la version : deux etrogim dans une main -- car a la place du second viendra le loulav lors du transfert.</text>
+  <text x="40" y="280" font-size="8.8" fill="#292524">R. Yosse : meme un seul qui remplit les deux mains reste valide -- il ne partage pas cette inquietude.</text>
+  <text x="40" y="304" font-size="8.6" fill="#0f172a">Nafka mina : chez R. Yehouda la mesure est fonctionnelle, elle protege l objet ; elle ne dit rien sur le hadar.</text>
+</svg></div><div class="svg-cap">Segment 7 : la sequence des mains qui explique la mesure maximale — une raison de prehension, non de beaute.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאֶלָּא לְרַבִּי יְהוּדָה, הָא כְתִיב ״הָדַר״?</div>
+            <div class="fr"><p>Mais alors, selon Rabbi Yehouda, n est-il pas ecrit &quot;hadar&quot; ?</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Question terminale et inevitable. Les trois michnayot ont ete neutralisees, mais il reste l obstacle irreductible : le <b>verset</b>. Vayikra 23:40 dit expressement <i>peri ets hadar</i>. Un mot de la Torah ne se neutralise pas comme une michna ; il doit recevoir un sens.</p><p>Cette question rappelle une regle de methode : on peut soutenir qu un Tana n exige pas telle chose, jamais qu il ignore un mot du texte.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הַהוּא הַדָּר בְּאִילָנוֹ מִשָּׁנָה לְשָׁנָה.</div>
+            <div class="fr"><p>Celui-la [signifie] : ce qui demeure sur son arbre d une annee a l autre.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַדָּר בְּאִילָנוֹ מִשָּׁנָה לְשָׁנָה</b> מֵהָכָא שָׁמְעִינַן דְּאֶתְרוֹג אֲמַר קְרָא שֶׁאֵין פְּרִי אַחֵר עוֹשֶׂה כֵּן:</div>
+          <div class="glose-fr">C est de la que nous apprenons que le verset parle de l etrog, car aucun autre fruit n agit ainsi.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">דָּבָר הַדָּר בְּאִילָנוֹ מִשָּׁנָה לְשָׁנָה. בֶּן עַזַּאי הוּא דְּדָרֵישׁ הָכִי לְקַמָּן בְּפִירְקִין (סֻוכָּה ד&#x27; לה.) וְיֵשׁ שָׁם דְּרָשׁוֹת אֲחֵרוֹת:</div>
+          <div class="glose-fr">&lt;b&gt;Ce qui demeure sur son arbre d une annee a l autre.&lt;/b&gt; C est Ben Azzai qui expose ainsi plus loin dans notre chapitre (Soukka 35a) ; et il s y trouve d autres derachot.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La reponse est un chef-d oeuvre de lecture. Rabbi Yehouda ne supprime pas le mot : il le revocalise. Au lieu de <b>hadar</b> (de la racine <i>hdr</i>, la magnificence), il lit <b>ha-dar</b> — de la racine <i>dour</i>, resider, habiter. Le verset ne pose alors aucune exigence de beaute : il <i>designe</i> un fruit par une propriete botanique.</p><p>Rachi tire la consequence : cette propriete est une carte d identite. L etrog demeure sur son arbre d une annee a l autre, ce qu aucun autre fruit ne fait — le verset devient donc une definition, non un critere qualitatif.</p><p>Les Tossefot situent cette deracha : elle est attribuee a <b>Ben Azzai</b> en 35a, ou la guemara en propose plusieurs autres sur le meme mot. Le meme signifiant y porte donc plusieurs lectures concurrentes.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="300" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Un seul mot du verset, deux lectures opposees</text>
+  <text x="350" y="42" text-anchor="middle" font-size="9.4" fill="#57534e">Vayikra 23:40 : peri ets hadar -- le fruit de l arbre hadar</text>
+
+  <rect x="270" y="56" width="160" height="40" rx="6" fill="#1c1917"/>
+  <text x="350" y="82" text-anchor="middle" font-size="14" font-weight="700" fill="#fffdf8">הדר</text>
+
+  <path d="M330 96 L200 122" stroke="#78716c" stroke-width="1.2"/><path d="M206 115 L197 124 L207 126 Z" fill="#78716c"/>
+  <path d="M370 96 L500 122" stroke="#78716c" stroke-width="1.2"/><path d="M494 115 L503 124 L493 126 Z" fill="#78716c"/>
+
+  <rect x="30" y="128" width="300" height="146" rx="7" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.3"/>
+  <text x="180" y="148" text-anchor="middle" font-size="10.4" font-weight="700" fill="#1e3a8a">Lecture des Sages : HADAR = eclat</text>
+  <text x="180" y="170" text-anchor="middle" font-size="8.8" fill="#292524">Racine hdr, la magnificence.</text>
+  <text x="180" y="188" text-anchor="middle" font-size="8.8" fill="#292524">Le verset pose une exigence de BEAUTE :</text>
+  <text x="180" y="206" text-anchor="middle" font-size="8.8" fill="#292524">le fruit doit etre intact et plaisant.</text>
+  <text x="180" y="230" text-anchor="middle" font-size="8.8" fill="#292524">Consequences : sec passoul, vieux passoul,</text>
+  <text x="180" y="246" text-anchor="middle" font-size="8.8" fill="#292524">et par hekech la meme exigence gagne</text>
+  <text x="180" y="262" text-anchor="middle" font-size="8.8" fill="#1d4ed8">les trois autres especes du loulav.</text>
+
+  <rect x="370" y="128" width="300" height="146" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.3"/>
+  <text x="520" y="148" text-anchor="middle" font-size="10.4" font-weight="700" fill="#14532d">Lecture de R. Yehouda : ha-DAR = demeurer</text>
+  <text x="520" y="170" text-anchor="middle" font-size="8.8" fill="#292524">Racine dour, resider, habiter.</text>
+  <text x="520" y="188" text-anchor="middle" font-size="8.8" fill="#292524">Le verset ne demande pas la beaute :</text>
+  <text x="520" y="206" text-anchor="middle" font-size="8.8" fill="#292524">il DESIGNE un fruit par sa nature.</text>
+  <text x="520" y="230" text-anchor="middle" font-size="8.8" fill="#292524">Celui qui demeure sur son arbre d une</text>
+  <text x="520" y="246" text-anchor="middle" font-size="8.8" fill="#292524">annee a l autre -- Rachi : aucun autre</text>
+  <text x="520" y="262" text-anchor="middle" font-size="8.8" fill="#15803d">fruit ne fait cela. Donc : c est l etrog.</text>
+</svg></div><div class="svg-cap">Segment 9 : les deux lectures du mot hadar, et ce que chacune fait dire au verset.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">שֶׁל אֲשֵׁרָה וְשֶׁל עִיר הַנִּדַּחַת. וְשֶׁל אֲשֵׁרָה — פָּסוּל? וְהָאָמַר רָבָא: לוּלָב שֶׁל עֲבוֹדָה זָרָה — לֹא יִטֹּול, וְאִם נָטַל — כָּשֵׁר.</div>
+            <div class="fr"><p>[La michna a enseigne :] celui d une acherah et celui d une ville devoyee. Et celui d une acherah serait passoul ?</p><p>Mais Rava n a-t-il pas dit : un loulav d idolatrie — qu on ne le prenne pas, mais si on l a pris, il est kacher !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לוּלָב שֶׁל ע&quot;ז</b> שֶׁשִּׁימְּשׁוּ בּוֹ לַעַ&quot;ז לְכַבֵּד לְפָנֶיהָ קַרְקַע אִי נָמֵי שֶׁעֲבוֹדָתָהּ בְּלוּלָב לְהַעֲבִירוֹ לְפָנֶיהָ אוֹ לְזָרְקָהּ בּוֹ:</div>
+          <div class="glose-fr">Dont on s est servi pour l idolatrie, pour balayer le sol devant elle ; ou bien dont le culte se fait avec un loulav, en le passant devant elle ou en la frappant avec.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא יִטֹּול</b> דִּמְאִיס לְגָבוֹהַּ:</div>
+          <div class="glose-fr">Car il est repugnant a l egard du Ciel.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאִם נָטַל כָּשֵׁר</b> ואע&quot;ג דְּאִיסּוּרֵי הֲנָאָה הוּא דְּמִצְוֹת לָאו לֵיהָנוֹת נִיתְּנוּ כְּלוֹמַר אֵין קִיּוּם מִצְוֹת הֲנָאַת הַגּוּף אֶלָּא עֲבוֹדַת עֶבֶד לְרַבּוֹ:</div>
+          <div class="glose-fr">Et bien qu il soit interdit a la jouissance — car les mitsvot n ont pas ete donnees pour en jouir : c est-a-dire que l accomplissement d une mitsva n est pas une jouissance du corps, mais le service d un serviteur envers son maitre.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">שֶׁל אֲשֵׁרָה וְשֶׁל עִיר הַנִּדַּחַת פָּסוּל. בְּסוֹף כִּיסּוּי הַדָּם (חֻולִּין ד&#x27; פט. וְשָׁם) דְּאָמַר רָבָא מִצְוֹת לָאו לֵיהָנוֹת נִיתְּנוּ וּמְכַסִּין בַּעֲפַר עִיר הַנִּדַּחַת וּפָרִיךְ מֵהָא דְּתַנְיָא שׁוֹפָר שֶׁל ע&quot;ז אִם תָּקַע לֹא יָצָא וְלוּלָב שֶׁל ע&quot;ז אִם נָטַל לֹא יָצָא הֲוָה מָצֵי לְאַקְשׁוּיֵי מִמַּתְנִיתִין דְּקָתָנֵי שֶׁל אֲשֵׁרָה פָּסוּל אֶלָּא נִיחָא לֵיהּ לְאֵתוּיֵי מִבָּרַיְיתָא מִשּׁוּם דְּאַסִּיק מֵעִיקָּרָא גַּבֵּי לוּלָב וְשׁוֹפָר תָּקַע יָצָא נָטַל יָצָא:</div>
+          <div class="glose-fr">&lt;b&gt;Celui d une acherah et celui d une ville devoyee sont passoul.&lt;/b&gt; A la fin du chapitre Kissouy hadam (Houlin 89a), ou Rava dit que les mitsvot n ont pas ete donnees pour en jouir et que l on peut recouvrir [le sang] avec la terre d une ville devoyee, on objecte a partir de ce qui a ete enseigne : un chofar d idolatrie, s il en a sonne, il ne s est pas acquitte ; et un loulav d idolatrie, s il l a pris, il ne s est pas acquitte. On aurait pu y objecter depuis notre michna, qui enseigne que celui d une acherah est passoul ; mais il a prefere apporter la baraita, parce qu il avait conclu d abord, a propos du loulav et du chofar, que s il en a sonne il s est acquitte et que s il l a pris il s est acquitte.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouveau mouvement : la guemara quitte la sougya du hadar et reprend la michna a la ligne suivante — le loulav provenant d une <b>acherah</b> (arbre voue a l idolatrie) ou d une <b>ville devoyee</b> (ir hanidahat, dont tous les biens doivent etre brules).</p><p>La contradiction est immediate : Rava a enseigne ailleurs qu un loulav d idolatrie, pris a posteriori, reste kacher. Rachi explique le fondement de cette validation : <b>mitsvot lav lehanot nitnou</b> — les mitsvot n ont pas ete donnees pour qu on en jouisse. Accomplir une mitsva n est pas un plaisir du corps mais un acte de service ; l interdit de jouissance qui frappe l idolatrie ne mord donc pas sur l usage rituel. Reste un obstacle a priori : <i>maiss legavoah</i>, la repugnance a l egard du Ciel.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָכָא בַּאֲשֵׁרָה דְמֹשֶׁה עָסְקִינַן, דִּכְתוּתֵי מִיכְתַּת שִׁיעוּרֵיהּ.</div>
+            <div class="fr"><p>Ici, nous traitons d une acherah de Moshe, dont la mesure est comme pulverisee.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בַּאֲשֵׁרָה דְּמֹשֶׁה</b> אוֹתָם שֶׁהָיוּ בִּשְׁעַת כִּיבּוּשׁ א&quot;י שֶׁהִצְרִיכָן הַכָּתוּב שְׂרֵפָה כְּדִכְתִיב (דְּבָרִים י״ב:ג׳) וַאֲשֵׁרֵיהֶם תִּשְׂרְפוּן בָּאֵשׁ וְלוּלָב צָרִיךְ שִׁיעוּר וְהַאי כְּמַאן דִּמְיכַתַּת שִׁיעוּרֵיהּ כֵּיוָן דְּלִשְׂרֵפָה קָאֵי:</div>
+          <div class="glose-fr">Celles qui existaient au temps de la conquete de la terre d Israel, dont l Ecriture a exige la combustion, comme il est ecrit (Devarim 12:3) : &quot;et leurs acherot vous brulerez au feu&quot;. Or le loulav requiert une mesure, et celui-ci est comme si sa mesure etait pulverisee, puisqu il est voue au feu.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">בַּאֲשֵׁרָה דְּמֹשֶׁה דִּכְתוּתֵי מִיכְתַּת שִׁיעוּרֵיהּ. וְכֵן בָּרַיְיתָא דְּסוֹף כִּיסּוּי הַדָּם (חֻולִּין ד&#x27; פט. וְשָׁם) דְּאִם נָטַל לֹא יָצָא וְכֵן צָרִיךְ לְתָרֵץ אַשּׁוֹפָר דְּקָתָנֵי הָתָם תָּקַע לֹא יָצָא וּבְפֶ&#x27; רָאוּהוּ ב&quot;ד (ר&quot;ה ד&#x27; כח. וְשָׁם) בְּשׁוֹפָר שֶׁל ע&quot;ז לֹא יִתְקַע וְאִם תָּקַע יָצָא וְכֵן בְּפֶ&#x27; מִצְוַת חֲלִיצָה (יְבָמוֹת ד&#x27; קג: וְשָׁם) אָמַר רָבָא בְּסַנְדָּל שֶׁל ע&quot;ז חֲלִיצָתָהּ כְּשֵׁרָה וְלָא אָמְרִינַן דִּמְכַתַּת שִׁיעוּרֵיהּ דְּהָנְהוּ בע&quot;ז דְּנָכְרִי דְּיֵשׁ לָהּ בִּיטּוּל וְהַהוּא דְּקָתָנֵי לֹא יָצָא בע&quot;ז דְּיִשְׂרָאֵל שֶׁאֵינָהּ בְּטֵילָה עוֹלָמִית וא&quot;ת ע&quot;ז דְּנָכְרִי נָמֵי מִדְּאַגְבְּהָה קַנְייֵהּ וְנַעֲשָׂה שֶׁל יִשְׂרָאֵל כִּדְאָמְרִינַן בְּפֶ&#x27; כָּל הַצְּלָמִים (ע&quot;ז ד&#x27; מב.) גָּזְרִינַן דִּלְמָא מַגְבַּהּ לַהּ וַהֲדַר מְבַטֵּל לַהּ וְי&quot;ל כְּגוֹן שֶׁהִגְבִּיהַּ עַל מְנָת שֶׁלֹּא לִקְנוֹת דְּהָא בְּמִנְעָל שֶׁאֵינוֹ שֶׁלּוֹ תְּנַן חֲלִיצָתָהּ כְּשֵׁרָה וְלוּלָב בי&quot;ט שֵׁנִי וּבִשְׁמַעְתִּין הֲוָה מָצֵי לְשַׁנּוּיֵי דְּמַתְנִי&#x27; בי&quot;ט רִאשׁוֹן וְלָא הֲוָה צָרִיךְ לְאוֹקְמֵי בַּאֲשֵׁרָה דְּמֹשֶׁה אֶלָּא מִשּׁוּם דְּקָתָנֵי דֻּומְיָא דְּעִיר הַנִּדַּחַת וַאֲפִילּוּ בי&quot;ט שֵׁנִי ור&quot;ת מְפָרֵשׁ דְּכוּלְּהוּ בע&quot;ז דְּנָכְרִי וְכָאן קֹודֶם בִּיטּוּל וְכָאן לְאַחַר בִּיטּוּל וּלְאַחַר בִּיטּוּל נָמֵי לְכַתְּחִלָּה לֹא יִטּוֹל וְלֹא יִתְקַע דִּמְאִיס לְעִנְיַן מִצְוָה לְפִי שֶׁהָיָה עָלָיו שֵׁם ע&quot;ז וְכֵן לֹא תַּחֲלֹוץ בּוֹ לְכַתְּחִלָּה וַאֲפִילּוּ אִם תִּימְצֵי לוֹמַר דְּשָׁרֵי לְכַסּוֹת לְכַתְּחִלָּה בַּעֲפַר ע&quot;ז כְּמוֹ בְּשֶׁל עִיר הַנִּדַּחַת לָא דָּמֵי כִּיסּוּי לַחֲלִיצָה וְהָא דִּמְשַׁנֵּי הָכָא בַּאֲשֵׁרָה דְּמֹשֶׁה וְלָא מְשַׁנֵּי בִּדְנָכְרִי וְקֹודֶם בִּיטּוּל מִשּׁוּם דְּמִשֶּׁנִּקְצַץ הַלּוּלָב מִן הַדֶּקֶל נִתְבַּטֵּל וּבְפֶרֶק מִצְוַת חֲלִיצָה (יְבָמוֹת ד&#x27; קג:) מְפַלֵּיג בֵּין סַנְדָּל שֶׁל ע&quot;ז לְסַנְדָּל שֶׁל תִּקְרֹובֶת ע&quot;ז דְּאֵין לוֹ בִּיטּוּל וְלָא מְפַלֵּיג בְּשֶׁל ע&quot;ז גּוּפֵיהּ בֵּין קֹודֶם בִּיטּוּל בֵּין לְאַחַר בִּיטּוּל אַגַּב אוֹרְחֵיהּ קָא מַשְׁמַע לַן דְּתִקְרֹובֶת ע&quot;ז אֵינָהּ בְּטֵילָה עוֹלָמִית וּבְהַהִיא דְּרָאוּהוּ בֵּית דִּין קָשֶׁה טְפֵי דִּמְפַלֵּיג רָבָא הָתָם בֵּין שׁוֹפָר שֶׁל ע&quot;ז לְשׁוֹפָר שֶׁל עִיר הַנִּדַּחַת דִּבְשֶׁל ע&quot;ז גּוּפֵיהּ הָיָה יָכוֹל לְחַלֵּק בֵּין קֹודֶם בִּיטּוּל בֵּין לְאַחַר בִּיטּוּל וְעַל כָּרְחֲךָ צָרִיךְ לְאוֹקוֹמֵהּ לְאַחַר בִּיטּוּל כְּפֵירוּשׁ ר&quot;ת לפמ&quot;ש שָׁם בְּרוֹב סְפָרִים רַב יְהוּדָה דְּאִי קֹודֶם בִּיטּוּל הָא רַב יְהוּדָה דְּאָמַר הָתָם לְעֵיל בְּשׁוֹפָר שְׁלֵמִים לֹא יָצָא דְּמִצְוֹת לֵיהָנוֹת נִיתְּנוּ וּמִיהוּ צָרִיךְ לוֹמַר דמ&quot;מ רָבָא גָּרַס וְלֹא רַב יְהוּדָה דְּהָא מְפָרֵשׁ הָתָם טַעְמָא דְּשׁוֹפָר שֶׁל עִיר הַנִּדַּחַת לֹא יָצָא מִשּׁוּם דִּכְתוּתֵי מִיכְתַּת שִׁיעוּרֵיהּ וּלְרַב יְהוּדָה הֲוָה לֵיהּ לְמֵימַר מִשּׁוּם דְּמִצְוֹת לֵיהָנוֹת נִיתְּנוּ וּמִיהוּ קָשֶׁה דִּבְפֶרֶק כָּל הַצְּלָמִים (ע&quot;ז ד&#x27; מז.) בָּעֵי ר&quot;ל הַמִּשְׁתַּחֲוֶה לַדֶּקֶל לוּלָבוֹ מַהוּ לְמִצְוָה וּמַסִּיק רַב דִּימֵי בַּאֲשֵׁרָה שֶׁבִּטְּלָהּ קָמִיבַּעְיָא לֵיהּ יֵשׁ דִּחוּי אֵצֶל מִצְוֹת אוֹ אֵין דִּחוּי אֵצֶל מִצְוֹת וּמוֹכְחָא מִלְּתָא דְּשׁוּם אָמוֹרָא לָא פְּשִׁיט לֵיהּ הָא מִלְּתָא דְּבָעֵי לְמִיפַּשְׁטָא מִדְּרַבִּי יוֹחָנָן וּמִדְּרַב פָּפָּא וּמְשַׁנֵּי דְּרַב פָּפָּא גּוּפֵיהּ קָמִיבַּעְיָא לֵיהּ וְקַיְימָא בְּתֵיקוּ וְהַשְׁתָּא לְפִי&#x27; ר&quot;ת הָא אַשְׁכְּחַן רָבָא דְּאָמַר הָכָא אִם נָטַל יָצָא אַלְמָא אֵין דָּחוּי אֲפִילּוּ לְקֻולָּא וּמִיהוּ י&quot;ל דְּהָא [דְּאָמַר רָבָא] דְּיָצָא כְּשֶׁבִּטְּלָהּ מֵעֶרֶב י&quot;ט וְהָא דְּמִיבְּעֵי לָן אִי יֵשׁ דִּחוּי כְּשֶׁבִּיטֵּל בי&quot;ט דְּאָז שַׁייָּךְ דָּחוּי כִּדְמוֹכַח לְקַמָּן בְּפִירְקִין (סֻוכָּה דַּף לג.) דְּבָעֵי ר&#x27; יִרְמְיָה נִקְטַם רֹאשׁוֹ מֵעֶרֶב י&quot;ט וְעָלְתָה בּוֹ תְּמָרָה בי&quot;ט אֲבָל עָלְתָה בּוֹ תְּמָרָה בְּעֶרֶב י&quot;ט לָא חֲשִׁיב דָּחוּי וְהוּא הַדִּין בְּבַטָּלָה מֵעֶרֶב יו&quot;ט וּלְלִישָּׁנָא קַמָּא דְּפָרֵישִׁית דע&quot;ז דְּנָכְרִי אֲפִילּוּ בְּלֹא בִּיטּוּל יוֹצֵא כְּגוֹן בי&quot;ט שֵׁנִי דְּלָא בָּעֵי לָכֶם קַשְׁיָא דְּהָתָם בַּאֲשֵׁרָה דְּנָכְרִי מַיְירֵי דְּיֵשׁ לָהּ בִּיטּוּל וַאֲפִילּוּ הָכֵי מַשְׁמַע דְּלָא יָצָא מִדַּחֲשִׁיב לָהּ דָּחוּי וְכִי תֵּימָא דבי&quot;ט רִאשׁוֹן הוּא דַּחֲשִׁיב לֵיהּ דָּחוּי לְפִי שֶׁלֹּא הָיָה שֶׁלּוֹ קֹודֶם בִּיטּוּל א&quot;כ מִי שֶׁנָּתְנוּ לוֹ לוּלָב בי&quot;ט לֹא יָצָא ואע&quot;ג דְּלָא דָּמֵי כֻּולֵּי הַאי דְּשֶׁל ע&quot;ז אֵין תַּקָּנָה בְּשׁוּם עִנְיָן מ&quot;מ כֵּיוָן דְּמִשּׁוּם אִיסּוּר ע&quot;ז דְּאִיכָּא הַשְׁתָּא לָא מִיפְּסִיל אֵין לָנוּ לְחָושְׁבוֹ דָּחוּי מֵחֲמַת שֶׁאֵינוֹ שֶׁלּוֹ וְנִרְאֶה לְפָרֵשׁ דְּרָבָא שָׁרֵי אֲפִילּוּ בע&quot;ז שֶׁל יִשְׂרָאֵל וּבְאִילָן שֶׁנְּטָעוֹ לְבַסּוֹף עַבְדּוֹ וּכְרַבָּנָן דִּפְלִיגִי עֲלֵיהּ דְּרַבִּי יוֹסֵי בְּר&#x27; יְהוּדָה בְּפֶרֶק כָּל הַצְּלָמִים (ע&quot;ז דַּף מח.) דְּשָׁרוּ לְהֶדְיוֹט אֶלָּא אִם כֵּן נְטָעוֹ מִתְּחִלָּה לְכָךְ דְּדָרְשִׁינַן תַּחַת כָּל עֵץ רַעֲנָן אֱלֹהֵיהֶם וְלֹא עֵץ רַעֲנָן אֱלֹהֵיהֶם וַאֲפִילּוּ בי&quot;ט רִאשׁוֹן אִם נָטַל יָצָא דְּשָׁרֵי לְהֶדְיוֹט וְלָכֶם קָרֵינָא בֵיהּ וּמָתְנִית&#x27; דְּשֶׁל אֲשֵׁרָה פָּסוּל כְּשֶׁנְּטָעָהּ מִתְּחִילָּה לְכָךְ וְהַייְנוּ אֲשֵׁרָה דְּמֹשֶׁה דִּבְהָהִיא מוּקֵי רַבָּנָן קְרָא דִּוְאִשְׁרֵיהֶם תִּשְׂרְפוּן בָּאֵשׁ (דְּבָרִים י״ב:ג׳) דְּאָסוּר אֲפִילּוּ לְהֶדְיוֹט וּבַעְיָא דְּכָל הַצְּלָמִים בַּאֲשֵׁרָה דְּנָכְרִי דִּנְטָעָהּ מִתְּחִלָּה לְכָךְ וְאַחַ&quot;כּ בָּטְלָה אִם יֵשׁ דָּחוּי אוֹ לֹא מִיהוּ לְלִישָּׁנָא קַמָּא דְּהָתָם דְּקָאָמַר כִּי תִּיבָּעֵי לָן בְּאִילָן שֶׁנְּטָעוֹ וּלְבַסּוֹף עַבְדּוֹ וְאַלִּיבָּא דְּרַבָּנָן דְּשָׁרוּ לְהֶדְיוֹט מַהוּ לְעִנְיַן מִצְוָה מְאִיס כְּלִגְבֹּוהַּ אוֹ לָא הֲוָה מָצֵי לְמִיפַּשְׁטָא מִדְּרָבָא מִדְּקָאָמַר אִם נָטַל יָצָא אֶלָּא רָבָא סְבִירָא לֵיהּ כְּרַב דִּימֵי דְּמַסִּיק דְּיֵשׁ דָּחוּי קָמִיבַּעְיָא לֵיהּ אֲבָל בְּהָא פְּשִׁיטָא לֵיהּ דְּיָצָא וא&quot;ת תִּיפְשֹׁוט דְּאֵין דָּחוּי מִמַּתְנִיתִין דַּעֲנָבָיו מְרֻובִּין מֵעָלָיו וְאִם מִיעֲטָן כָּשֵׁר וְאֵין מְמַעֲטִין בי&quot;ט וְאָמַר בַּגְּמָרָא הָא עָבַר וְלִקְּטָן כָּשֵׁר הֵיכָא דְּאַשְׁחוּר מֵאֶתְמוֹל דְּלָא פָּסְלִינַן עֲנָבָיו מְרֻובּוֹת אֶלָּא בִּשְׁחוֹרוֹת אֲבָל יְרָקוֹת לָא וְכִי אַשְׁחוּר מֵאֶתְמוֹל דָּחוּי מֵעִיקָּרָא בִּתְחִלַּת י&quot;ט לָא הָוֵי דִּחוּי אַלְמָא אֵין דִּחוּי אֵצֶל מִצְוֹת וְי&quot;ל דְּשָׁאנֵי הָתָם דִּבְיָדוֹ לְתַקֵּן דִּנְהִי דְּאָסוּר לְמַעֵט מ&quot;מ בְּיָדוֹ לְמַעֵט אֲבָל גַּבֵּי ע&quot;ז אֵין בְּיָדוֹ לְבַטֵּל דְּאֵין יִשְׂרָאֵל מְבַטֵּל ע&quot;ז שֶׁל נָכְרִי:</div>
+          <div class="glose-fr">&lt;b&gt;Il s agit d une acherah de Moshe, dont la mesure est comme pulverisee.&lt;/b&gt; Et de meme pour la baraita de la fin de Kissouy hadam (Houlin 89a), selon laquelle s il l a pris il ne s est pas acquitte ; et de meme faut-il repondre pour le chofar dont il est enseigne la-bas &quot;s il en a sonne il ne s est pas acquitte&quot;, alors qu au chapitre Raouhou beit din (Roch Hachana 28a) il est dit d un chofar d idolatrie qu on n en sonnera pas, mais que s il en a sonne il s est acquitte ; et de meme au chapitre Mitsvat halitsa (Yevamot 103b), ou Rava dit qu avec une sandale d idolatrie la halitsa est valide et ou l on ne dit pas que sa mesure serait pulverisee — car ces cas-la traitent d une idolatrie de non-Juif, qui peut etre annulee (bitoul), tandis que celui qui enseigne &quot;il ne s est pas acquitte&quot; traite d une idolatrie de Juif, qui n est jamais annulee. Et si tu objectes : l idolatrie d un non-Juif aussi, des lors qu il l a soulevee, il l a acquise et elle est devenue celle d un Juif, comme nous le disons au chapitre Kol hatselamim (Avoda Zara 42a), ou nous decretons de peur qu il ne la souleve puis l annule ? On peut repondre qu il s agit du cas ou il l a soulevee sans intention d acquerir — car pour une chaussure qui n est pas la sienne nous avons appris que la halitsa est valide — et, pour le loulav, du second jour de fete. Et dans notre sougya on aurait pu repondre que la michna traite du premier jour de fete, sans qu il faille l etablir sur l acherah de Moshe ; mais [on ne l a pas fait] parce qu elle est enseignee a l instar de la ville devoyee, donc meme pour le second jour. Et Rabbenou Tam explique que tous ces cas traitent d une idolatrie de non-Juif : ici avant l annulation, la-bas apres l annulation ; et meme apres l annulation, a priori on ne le prendra pas et on n en sonnera pas, car cela reste repugnant pour la mitsva, le nom d idolatrie ayant repose dessus ; et de meme on ne fera pas la halitsa avec, a priori. Et meme si l on veut dire qu il est permis de recouvrir a priori avec la terre d une idolatrie, comme avec celle d une ville devoyee, le recouvrement n est pas comparable a la halitsa. Quant a la raison pour laquelle on repond ici &quot;acherah de Moshe&quot; et non &quot;[acherah] de non-Juif avant l annulation&quot;, c est que, des lors que le loulav a ete coupe du palmier, il est annule. Et au chapitre Mitsvat halitsa (Yevamot 103b), on distingue entre une sandale d idolatrie et une sandale offerte en offrande a l idolatrie, laquelle n a pas d annulation, sans distinguer, au sein de l idolatrie elle-meme, entre avant et apres l annulation : chemin faisant, il nous apprend que ce qui est offert a l idolatrie n est jamais annule. Et dans le passage de Roch Hachana c est plus difficile encore, car Rava y distingue entre un chofar d idolatrie et un chofar d une ville devoyee, alors qu il aurait pu distinguer, au sein du chofar d idolatrie lui-meme, entre avant et apres l annulation ; force est donc de l etablir apres l annulation, selon l explication de Rabbenou Tam, conformement a ce qui y est ecrit dans la plupart des livres au nom de Rav Yehouda — car si c etait avant l annulation, voici que Rav Yehouda a dit plus haut, a propos d un chofar de chelamim, qu il ne s est pas acquitte, puisque les mitsvot ont ete donnees pour en jouir. Toutefois il faut dire que la version reste malgre tout Rava et non Rav Yehouda, car on y explique la raison du chofar d une ville devoyee — &quot;il ne s est pas acquitte&quot; — par le fait que sa mesure est pulverisee, alors que, pour Rav Yehouda, il aurait fallu dire : parce que les mitsvot ont ete donnees pour en jouir. Il subsiste neanmoins une difficulte : au chapitre Kol hatselamim (Avoda Zara 47a), Rech Lakich demande — celui qui se prosterne devant un palmier, qu en est-il de son loulav pour la mitsva ? Et l on conclut, avec Rav Dimi, que c est d une acherah annulee qu il s interrogeait : y a-t-il mise a l ecart (dihouy) pour les mitsvot ou non ? Et il ressort clairement qu aucun Amora ne l a tranche, car on voulait le trancher depuis Rabbi Yohanan et depuis Rav Papa, et l on repond que Rav Papa lui-meme s interrogeait, si bien que cela reste en teikou. Or, selon l explication de Rabbenou Tam, voici que nous trouvons Rava qui dit ici &quot;s il l a pris il s est acquitte&quot; — donc il n y a pas de dihouy, meme pour l indulgence ! On peut toutefois repondre que ce que dit Rava — qu il s est acquitte — vaut lorsqu elle a ete annulee la veille de la fete, tandis que la question du dihouy porte sur le cas ou il l a annulee pendant la fete, ou le dihouy s applique, comme il ressort plus loin dans notre chapitre (Soukka 33a), ou Rabbi Yirmeya demande : sa tete a ete coupee la veille de la fete et une datte y a pousse pendant la fete... mais si la datte y a pousse la veille de la fete, ce n est pas considere comme dihouy ; et il en va de meme lorsqu elle a ete annulee la veille de la fete. Et selon la premiere version que j ai expliquee, selon laquelle une idolatrie de non-Juif permet de s acquitter meme sans annulation — par exemple le second jour de fete, ou l on n exige pas lakhem —, il y a une difficulte : car la-bas il s agit d une acherah de non-Juif, susceptible d annulation, et pourtant il ressort qu il ne s est pas acquitte, puisqu on la considere comme dihouy. Et si tu dis que c est le premier jour de fete qu on la considere comme dihouy, parce qu elle n etait pas a lui avant l annulation — alors celui a qui l on aurait donne un loulav pendant la fete ne se serait pas acquitte ! Et bien que ce ne soit pas tout a fait comparable, puisque pour ce qui est de l idolatrie il n y a de remede en aucune maniere, malgre tout, des lors que ce n est pas a cause de l interdit d idolatrie qui existe maintenant qu il devient passoul, nous n avons pas a le considerer comme dihouy du seul fait qu il n est pas a lui. Et il parait preferable d expliquer que Rava permet meme dans le cas d une idolatrie de Juif, et d un arbre plante [d abord] puis adore ensuite, conformement aux Sages qui contredisent Rabbi Yosse be-Rabbi Yehouda au chapitre Kol hatselamim (Avoda Zara 48a) et qui le permettent a un particulier, a moins qu il ne l ait plante des l origine pour cela — car nous exposons &quot;sous tout arbre verdoyant&quot; : leurs dieux, et non un arbre verdoyant [qui serait] leur dieu. Et meme le premier jour, s il l a pris il s est acquitte, puisqu il est permis a un particulier et que &quot;lakhem&quot; s y applique. Et la michna qui declare passoul celui d une acherah traite du cas ou elle a ete plantee des l origine pour cela — et c est cela l acherah de Moshe, sur laquelle les Sages etablissent le verset &quot;et leurs acherot vous brulerez au feu&quot; (Devarim 12:3), interdite meme a un particulier. Et la question de Kol hatselamim porte sur une acherah de non-Juif plantee des l origine pour cela puis annulee : y a-t-il dihouy ou non ? Toutefois, selon la premiere version de la-bas, qui dit que la question porte sur un arbre plante puis adore ensuite, selon les Sages qui le permettent a un particulier — qu en est-il pour la mitsva, est-il repugnant comme a l egard du Ciel ou non ? —, on aurait pu la trancher depuis Rava, puisqu il dit &quot;s il l a pris il s est acquitte&quot; ; mais [il faut dire que] Rava est de l avis de Rav Dimi, qui conclut que la question portait sur le dihouy, tandis que sur ce point il lui etait evident qu il s acquitte. Et si tu dis : que l on tranche qu il n y a pas de dihouy depuis notre michna — si ses baies sont plus nombreuses que ses feuilles et qu il les a diminuees, il est kacher, et l on ne les diminue pas pendant la fete ; et la guemara dit : s il a transgresse et les a cueillies, il est kacher — dans le cas ou elles avaient noirci la veille, car nous n invalidons pour bales trop nombreuses que si elles sont noires, mais non si elles sont vertes ; or lorsqu elles ont noirci la veille, il y a dihouy des l origine, au debut de la fete, et pourtant ce n est pas considere comme dihouy — donc il n y a pas de dihouy pour les mitsvot ! On peut repondre que la-bas c est different, car il est en son pouvoir de reparer : meme s il est interdit de diminuer, il lui reste malgre tout possible de le faire ; tandis que pour l idolatrie il n est pas en son pouvoir de l annuler, car un Juif n annule pas l idolatrie d un non-Juif.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La resolution consiste a distinguer deux idolatries. Rava parlait d une idolatrie ordinaire ; la michna, elle, vise l <b>acherah de Moshe</b> — celles de la conquete du pays, que la Torah ordonne expressement de bruler (Devarim 12:3), comme le rappelle Rachi.</p><p>La difference n est pas de degre mais de nature juridique. Un objet voue au feu est traite comme s il etait <i>deja</i> detruit : <b>kototei mikhtat chiourei</b>, sa mesure est comme pulverisee. Or le loulav requiert un <b>chiour</b>, une mesure minimale. Un objet qui n a plus de mesure ne peut pas la remplir — l invalidite ne vient donc pas de l interdit de jouissance, mais de la disparition juridique de la matiere.</p><p>Cette glose des Tossefot est l une des plus longues du traite. Elle confronte tous les paralleles (chofar, sandale de halitsa, recouvrement du sang), classe les cas selon que l idolatrie est d un Juif — jamais annulable — ou d un non-Juif — annulable par <b>bitoul</b>, avant ou apres cette annulation, et se demande si un objet temporairement invalide reste ecarte (<b>dihouy</b>) une fois l empechement leve. Rabbenou Tam y propose une lecture d ensemble alternative.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 400" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="400" fill="#fffdf8"/>
+  <text x="370" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Quelle acherah ? Trier les cas pour lever la contradiction</text>
+  <text x="370" y="42" text-anchor="middle" font-size="9.4" fill="#57534e">La michna invalide, Rava valide a posteriori -- ils ne parlent pas du meme arbre</text>
+
+  <rect x="240" y="56" width="260" height="44" rx="7" fill="#ffffff" stroke="#78716c" stroke-width="1.3"/>
+  <text x="370" y="75" text-anchor="middle" font-size="10.4" font-weight="700" fill="#1c1917">Un loulav pris sur un arbre idolatre</text>
+  <text x="370" y="92" text-anchor="middle" font-size="8.6" fill="#57534e">L interdit de jouissance ne suffit pas : mitsvot lav lehanot nitnou</text>
+
+  <path d="M320 100 L180 128" stroke="#78716c" stroke-width="1.2"/><path d="M186 121 L177 130 L187 132 Z" fill="#78716c"/>
+  <path d="M420 100 L560 128" stroke="#78716c" stroke-width="1.2"/><path d="M554 121 L563 130 L553 132 Z" fill="#78716c"/>
+
+  <rect x="24" y="134" width="316" height="160" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="182" y="154" text-anchor="middle" font-size="10.4" font-weight="700" fill="#7f1d1d">Acherah de Moshe -- le cas de la michna</text>
+  <text x="38" y="176" font-size="8.8" fill="#292524">Les acherot de la conquete du pays, dont la Torah</text>
+  <text x="38" y="192" font-size="8.8" fill="#292524">ordonne la destruction par le feu (Devarim 12:3).</text>
+  <text x="38" y="214" font-size="8.8" fill="#292524">Vouee au feu = juridiquement deja brulee.</text>
+  <text x="38" y="236" font-size="9.4" font-weight="700" fill="#7f1d1d">kototei mikhtat chiourei</text>
+  <text x="38" y="252" font-size="8.8" fill="#292524">Sa mesure est comme pulverisee : il ne reste</text>
+  <text x="38" y="268" font-size="8.8" fill="#292524">rien qui puisse remplir le chiour du loulav.</text>
+  <text x="38" y="286" font-size="8.8" fill="#b91c1c">PASSOUL -- meme a posteriori.</text>
+
+  <rect x="400" y="134" width="316" height="160" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.3"/>
+  <text x="558" y="154" text-anchor="middle" font-size="10.4" font-weight="700" fill="#14532d">Idolatrie ordinaire -- le cas de Rava</text>
+  <text x="414" y="176" font-size="8.8" fill="#292524">Arbre servant a l idolatrie, ou loulav employe</text>
+  <text x="414" y="192" font-size="8.8" fill="#292524">dans son culte (Rachi : balayer devant elle).</text>
+  <text x="414" y="214" font-size="8.8" fill="#292524">Rien ne le voue a la destruction : sa matiere</text>
+  <text x="414" y="230" font-size="8.8" fill="#292524">et sa mesure restent entieres.</text>
+  <text x="414" y="252" font-size="8.8" fill="#292524">A priori on ne le prend pas : maiss legavoah,</text>
+  <text x="414" y="268" font-size="8.8" fill="#292524">c est repugnant a l egard du Ciel.</text>
+  <text x="414" y="286" font-size="8.8" fill="#15803d">Mais s il l a pris : KACHER.</text>
+
+  <rect x="24" y="308" width="692" height="76" rx="7" fill="#f8fafc" stroke="#475569" stroke-width="1.2"/>
+  <text x="370" y="328" text-anchor="middle" font-size="10.2" font-weight="700" fill="#0f172a">La preuve de la lecture (seg. 12) : dayka nami</text>
+  <text x="40" y="350" font-size="8.8" fill="#292524">La michna accole acherah et VILLE DEVOYEE -- or la ville devoyee est integralement vouee au feu.</text>
+  <text x="40" y="370" font-size="8.8" fill="#292524">Les deux cas sont donc du meme type : biens condamnes, mesure pulverisee. Chema mina -- apprends-en.</text>
+</svg></div><div class="svg-cap">Segment 11 : le tri des cas qui leve la contradiction — deux regimes juridiques distincts sous le meme mot idolatrie.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">דַּיְקָא נָמֵי, דְּקָתָנֵי: דֻּומְיָא דְּעִיר הַנִּדַּחַת. שְׁמַע מִינָּה.</div>
+            <div class="fr"><p>Le texte aussi est precis en ce sens, puisqu il l enseigne a l instar de la ville devoyee. Apprends-en.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Confirmation par la forme du texte. <b>Dayka nami</b> — "le texte aussi est precis" — est le procede par lequel la guemara valide une interpretation en montrant qu elle est inscrite dans la maniere dont la michna est redigee.</p><p>L argument est un argument de voisinage : la michna place l acherah <i>a cote de</i> la ville devoyee. Or le cas de la ville devoyee est sans ambiguite — tous ses biens sont voues au feu. En les accolant, la michna signale qu elles relevent du meme regime : des biens condamnes, dont la mesure est deja pulverisee. <b>Chema mina</b> : apprends-en que la lecture est la bonne.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">נִקְטַם רֹאשׁוֹ. אָמַר רַב הוּנָא: לֹא שָׁנוּ אֶלָּא נִקְטַם, אֲבָל נִסְדַּק — כָּשֵׁר.</div>
+            <div class="fr"><p>&quot;Dont la tete a ete coupee&quot;. Rav Houna a dit : ils n ont enseigne [cette invalidite] que dans le cas ou elle a ete coupee ; mais s il a ete fendu, il est kacher.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>נִסְדַּק</b> נִסְדְּקוּ רָאשֵׁי הֶעָלִין:</div>
+          <div class="glose-fr">Les extremites des feuilles se sont fendues.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">נִקְטַם רֹאשׁוֹ. פֵּירוּשׁוֹ בְּרֵישׁ פִּירְקִין:</div>
+          <div class="glose-fr">&lt;b&gt;Dont la tete a ete coupee.&lt;/b&gt; Son explication figure au debut de notre chapitre.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara passe a la clause suivante de la michna, celle du loulav dont la tete est <b>coupee</b> (niktam). Rav Houna pose une restriction classique — <i>lo chanou ela...</i>, "ils n ont enseigne que..." — qui borne l invalidite au seul cas enonce.</p><p>La distinction porte sur deux atteintes voisines : <b>niktam</b>, l amputation, ou de la matiere manque ; et <b>nisdak</b>, la fente, ou rien n est perdu. Rachi precise l objet exact de la fente : ce sont les extremites des feuilles qui se sont fendues. Rien ne manquant, le loulav reste kacher.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="300" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">La restriction de Rav Houna : coupe n est pas fendu</text>
+  <text x="350" y="42" text-anchor="middle" font-size="9.4" fill="#57534e">Deux atteintes a la tete du loulav, deux statuts -- et une objection qui vient aussitot</text>
+
+  <rect x="30" y="56" width="300" height="150" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.3"/>
+  <text x="180" y="76" text-anchor="middle" font-size="10.4" font-weight="700" fill="#7f1d1d">NIKTAM -- la tete est coupee</text>
+  <path d="M180 92 L180 148" stroke="#166534" stroke-width="5" stroke-linecap="round"/>
+  <path d="M164 100 L196 100" stroke="#b91c1c" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="180" y="168" text-anchor="middle" font-size="8.8" fill="#292524">L extremite manque : il y a perte</text>
+  <text x="180" y="184" text-anchor="middle" font-size="8.8" fill="#292524">de matiere, le loulav est ampute.</text>
+  <text x="180" y="200" text-anchor="middle" font-size="9" font-weight="700" fill="#b91c1c">PASSOUL (michna)</text>
+
+  <rect x="370" y="56" width="300" height="150" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.3"/>
+  <text x="520" y="76" text-anchor="middle" font-size="10.4" font-weight="700" fill="#14532d">NISDAK -- la tete est fendue</text>
+  <path d="M520 92 L520 148" stroke="#166534" stroke-width="5" stroke-linecap="round"/>
+  <path d="M520 100 L510 88" stroke="#166534" stroke-width="3" stroke-linecap="round"/>
+  <path d="M520 100 L530 88" stroke="#166534" stroke-width="3" stroke-linecap="round"/>
+  <text x="520" y="168" text-anchor="middle" font-size="8.8" fill="#292524">Rachi : ce sont les extremites des</text>
+  <text x="520" y="184" text-anchor="middle" font-size="8.8" fill="#292524">feuilles qui se sont fendues. Rien ne manque.</text>
+  <text x="520" y="200" text-anchor="middle" font-size="9" font-weight="700" fill="#15803d">KACHER (Rav Houna)</text>
+
+  <rect x="30" y="222" width="640" height="62" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.2"/>
+  <text x="350" y="242" text-anchor="middle" font-size="10" font-weight="700" fill="#78350f">L objection ouverte a la derniere ligne du folio</text>
+  <text x="46" y="262" font-size="8.8" fill="#292524">Une baraita enumere les loulavim defectueux -- courbe (kafouf), et la suite -- et semble y inclure le fendu.</text>
+  <text x="46" y="278" font-size="8.8" fill="#292524">Le folio s arrete sur le mot loulav kafouf : la reponse se lit en 32a.</text>
+</svg></div><div class="svg-cap">Segment 13 : coupee ou fendue — la distinction de Rav Houna, et l objection qui clot le folio.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְנִסְדַּק כָּשֵׁר? וְהַתַּנְיָא: לוּלָב כָּפוּף,</div>
+            <div class="fr"><p>Et le [loulav] fendu serait kacher ? Mais n a-t-on pas enseigne : un loulav courbe,</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כָּפוּף</b> רֹאשׁוֹ כָּפוּף כְּאַגְמוֹן דּוֹמוֹת לְאִישׁ גַּבָּן וְהַזָּקָן שֶׁרָאשֵׁיהֶן שְׁחִין וּכְפּוּפִין לְמַטָּה:</div>
+          <div class="glose-fr">Sa tete est courbee comme un jonc, semblable au bossu et au vieillard, dont la tete est inclinee et courbee vers le bas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le folio s interrompt en pleine objection. La guemara oppose a Rav Houna une baraita qui enumere les loulavim defectueux, et dont la liste — commencant par le <b>kafouf</b>, le loulav courbe — semble inclure le fendu.</p><p>Rachi glose ce premier terme par deux images physiques parlantes : la tete du loulav recourbee comme un jonc, et la silhouette du bossu ou du vieillard dont la tete penche vers le bas. La suite de la baraita, et la reponse de la guemara, se lisent en 32a.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Sukkah_31a.html">&lsaquo; Sukkah 31a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Sukkah_32a.html">Sukkah 32a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

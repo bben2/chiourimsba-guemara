@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chullin 128a — le membre pendant et la regle du &#x27;manche&#x27; (yad) pour l&#x27;impurete et l&#x27;aptitude</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Chullin 128a — le membre pendant et la regle du &#x27;manche&#x27; (yad) pour l&#x27;impurete et l&#x27;aptitude</h1>
+    <div class="ref">Chullin 128a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Chullin_127b.html">&lsaquo; Chullin 127b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Chullin_128b.html">Chullin 128b &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> La sougya poursuit la mahloket de Rabbi Meir et Rabbi Chimon sur le membre pendant (ever medouldal) d&#x27;une bete : le corps de la bete fait-il &#x27;manche&#x27; (yad) pour ce membre, de sorte qu&#x27;il le rende apte a l&#x27;impurete (hekhcher) et la lui transmette (toum&#x27;a) ? Rabbi Yohanan ouvre par &#x27;la position est inversee&#x27; (mouhlefet ha-chita), confronte a la braita de Rabbi sur l&#x27;egalite du toucher entre le tevoul yom et les autres impuretes ; Rabbi Yochia precise sa pensee.</p><p>Puis cinq Amoraim donnent cinq lectures du differend : Rava (manche pour la toum&#x27;a, pas pour le hekhcher), Rav Papa (hekhcher anterieur a l&#x27;intention, illustre par la graisse et les endives de Rabbi Akiva), Rav Aha fils de Rav Ika (le sang essuye entre les deux simanim : la chehita va-t-elle du debut a la fin ?), et Rav Achi (la chehita rend apte, et non le sang). Enfin trois questions de manche restent en suspens (teikou) : la bete vivante (Rabba), le concombre du pot de fleurs (Abaye selon Rabbi Chimon), et la demi-courge adoree comme idole (Rabbi Yirmeya).</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="300" fill="#fffdf8"/>
+  <text x="360" y="22" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Le membre pendant (ever medouldal) et la regle du 'manche' (yad)</text>
+  <text x="360" y="42" text-anchor="middle" font-size="11" fill="#78716c">le corps de la bete sert-il de 'manche' au membre pour la toum'a (impurete) et pour le hekhcher (aptitude) ?</text>
+  <rect x="40" y="62" width="300" height="36" rx="9" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="190" y="85" text-anchor="middle" font-size="12.5" font-weight="700" fill="#4338ca">Rabbi Meir</text>
+  <rect x="380" y="62" width="300" height="36" rx="9" fill="#eafaf1" stroke="#15803d"/>
+  <text x="530" y="85" text-anchor="middle" font-size="12.5" font-weight="700" fill="#15803d">Rabbi Chimon</text>
+  <text x="20" y="128" font-size="11.5" font-weight="700" fill="#1c1917">Yad / toum'a</text>
+  <text x="60" y="146" font-size="11" fill="#292524">manche -&gt; OUI (transmet l'impurete)</text>
+  <text x="400" y="146" font-size="11" fill="#292524">manche -&gt; OUI (transmet l'impurete)</text>
+  <line x1="20" y1="158" x2="700" y2="158" stroke="#e7e2d8"/>
+  <text x="20" y="184" font-size="11.5" font-weight="700" fill="#1c1917">Yad / hekhcher</text>
+  <text x="60" y="202" font-size="11" fill="#15803d">manche -&gt; OUI</text>
+  <text x="60" y="218" font-size="10.5" fill="#78716c">(le corps rend le membre apte a l'impurete)</text>
+  <text x="400" y="202" font-size="11" fill="#b91c1c">manche -&gt; NON</text>
+  <text x="400" y="218" font-size="10.5" fill="#78716c">(le membre n'est pas rendu apte par le corps)</text>
+  <line x1="20" y1="232" x2="700" y2="232" stroke="#e7e2d8"/>
+  <text x="20" y="258" font-size="11.5" font-weight="700" fill="#1c1917">Conclusion</text>
+  <text x="60" y="276" font-size="11" fill="#292524">le membre est rendu apte et impur avec le corps</text>
+  <text x="400" y="276" font-size="11" fill="#292524">le membre n'est pas rendu apte (reste pur)</text>
+</svg></div>
+          <figcaption>Le cadre de la mahloket : le corps fait-il manche au membre pendant pour la toum&#x27;a et pour le hekhcher, selon R. Meir et R. Chimon.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 318" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="318" fill="#fffdf8"/>
+  <text x="360" y="22" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Les cinq lectures de la mahloket R. Meir / R. Chimon</text>
+  <text x="360" y="40" text-anchor="middle" font-size="11" fill="#78716c">cinq Amoraim, cinq facons d'expliquer pourquoi ils divergent sur le membre pendant</text>
+  <rect x="20" y="54" width="680" height="44" rx="9" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="34" y="74" font-size="12" font-weight="700" fill="#4338ca">1. Rabbi Yohanan</text>
+  <text x="34" y="91" font-size="10.5" fill="#292524">la position est inversee (mouhlefet ha-chita) : R. Meir tient en fait 'meme si le grand ne monte pas, c'est comme lui'</text>
+  <rect x="20" y="104" width="680" height="44" rx="9" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="34" y="124" font-size="12" font-weight="700" fill="#4338ca">2. Rava</text>
+  <text x="34" y="141" font-size="10.5" fill="#292524">il y a manche pour la toum'a mais pas pour le hekhcher ; ils divergent sur ce principe</text>
+  <rect x="20" y="154" width="680" height="44" rx="9" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="34" y="174" font-size="12" font-weight="700" fill="#4338ca">3. Rav Papa</text>
+  <text x="34" y="191" font-size="10.5" fill="#292524">ils divergent sur le hekhcher anterieur a l'intention (mahchava) : graisse abattue avant qu'on la destine a l'homme</text>
+  <rect x="20" y="204" width="680" height="44" rx="9" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="34" y="224" font-size="12" font-weight="700" fill="#4338ca">4. Rav Aha fils de Rav Ika</text>
+  <text x="34" y="241" font-size="10.5" fill="#292524">le sang fut essuye entre les deux simanim : la chehita va-t-elle du debut a la fin (sang d'abattage) ou seulement a la fin (sang de plaie) ?</text>
+  <rect x="20" y="254" width="680" height="44" rx="9" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="34" y="274" font-size="12" font-weight="700" fill="#4338ca">5. Rav Achi</text>
+  <text x="34" y="291" font-size="10.5" fill="#292524">ils divergent sur 'la chehita rend apte, et non le sang' : le membre interdit n'est pas rendu apte par l'abattage</text>
+</svg></div>
+          <figcaption>Les cinq lectures amoraiques du differend (segments 1, 6, 8, 12, 14).</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="250" fill="#fffdf8"/>
+  <text x="360" y="22" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Trois questions de manche laissees en suspens (teikou)</text>
+  <rect x="20" y="40" width="220" height="180" rx="10" fill="#fef3e2" stroke="#b45309"/>
+  <text x="130" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#b45309">Rabba</text>
+  <text x="130" y="92" text-anchor="middle" font-size="10.5" fill="#292524">la bete de son vivant</text>
+  <text x="130" y="110" text-anchor="middle" font-size="10.5" fill="#292524">(non apte a la toum'a)</text>
+  <text x="130" y="134" text-anchor="middle" font-size="10.5" fill="#292524">sert-elle de manche</text>
+  <text x="130" y="152" text-anchor="middle" font-size="10.5" fill="#292524">au membre pendant ?</text>
+  <text x="130" y="190" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b45309">teikou</text>
+  <rect x="250" y="40" width="220" height="180" rx="10" fill="#fef3e2" stroke="#b45309"/>
+  <text x="360" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#b45309">Abaye</text>
+  <text x="360" y="92" text-anchor="middle" font-size="10.5" fill="#292524">le concombre sorti</text>
+  <text x="360" y="110" text-anchor="middle" font-size="10.5" fill="#292524">du pot : la partie pure</text>
+  <text x="360" y="134" text-anchor="middle" font-size="10.5" fill="#292524">sert-elle de manche</text>
+  <text x="360" y="152" text-anchor="middle" font-size="10.5" fill="#292524">a sa moitie (R. Chimon) ?</text>
+  <text x="360" y="190" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b45309">teikou</text>
+  <rect x="480" y="40" width="220" height="180" rx="10" fill="#fef3e2" stroke="#b45309"/>
+  <text x="590" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#b45309">Rabbi Yirmeya</text>
+  <text x="590" y="92" text-anchor="middle" font-size="10.5" fill="#292524">la demi-courge adoree</text>
+  <text x="590" y="110" text-anchor="middle" font-size="10.5" fill="#292524">(interdite a la jouissance) :</text>
+  <text x="590" y="134" text-anchor="middle" font-size="10.5" fill="#292524">sert-elle de manche</text>
+  <text x="590" y="152" text-anchor="middle" font-size="10.5" fill="#292524">a l'autre moitie ?</text>
+  <text x="590" y="190" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b45309">(question ouverte)</text>
+</svg></div>
+          <figcaption>Les trois questions de manche laissees en suspens en fin de daf (segments 15, 18, 19).</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רבי מאיר אומר: אם אוחז בקטן וגדול עולה עמו – הרי הוא כמוהו, ואם לאו – אינו כמוהו.</div>
+            <div class="fr"><p>Rabbi Meir dit : si, lorsqu&#x27;on saisit le petit [morceau], le grand monte avec lui — il est comme lui [ne font qu&#x27;un] ; et sinon — il n&#x27;est pas comme lui. [Or cela contredit son enseignement de la michna, ou le membre partiellement separe fait corps avec la bete meme si le grand ne monte pas avec le petit.]</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הרי הוא כמוהו</b> ואם נגע טבול יום באחד מן השברים פסל את חבירו:</div>
+          <div class="glose-fr">Il est comme lui — et si un tevoul yom (immerge du jour) a touche l&#x27;un des morceaux, il a rendu son compagnon passoul (invalide).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ואם לאו</b> חבירו טהור ואע&quot;פ שנוגעין זה בזה אין שלישי עושה רביעי בתרומה. וגבי טבול יום תנינא לה במסכת יומא (דף יט.):</div>
+          <div class="glose-fr">Et sinon — son compagnon [est] pur ; et bien qu&#x27;ils se touchent l&#x27;un l&#x27;autre, un troisieme [degre] ne fait pas un quatrieme dans la terouma. Et a propos du tevoul yom, nous l&#x27;avons appris au traite Yoma (page 19a).</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רבי מאיר אומר אם אוחז בקטן וגדול עולה עמו</b> ה&quot;ג בספרים ובפי&#x27; ר&quot;ת ובמסכת טבול יום (פ&quot;ג מ&quot;א) אינו כן דגרסינן ר&quot;מ אומר אם אוחז בגדול וקטן עולה עמו הרי הוא כמוהו רבי יהודה אומר אם אוחז בקטן וגדול עולה עמו הרי הוא כמוהו ולהך גירסא תימה מאי פריך הכא דר&quot;מ אדר&quot;מ ולא מסתבר לפרש דר&#x27; יוחנן דאמר באוחז בקטן ואין גדול עולה עמו אליבא דר&quot;מ לאו דוקא אלא גם הקטן אין עולה עם הגדול דלא משמע הכי:</div>
+          <div class="glose-fr">Rabbi Meir dit : si, lorsqu&#x27;on saisit le petit, le grand monte avec lui — ainsi est la version dans les livres et dans le commentaire de Rabbenou Tam. Mais au traite Tevoul Yom (chap. 3 michna 1) ce n&#x27;est pas ainsi, car nous y lisons : &#x27;Rabbi Meir dit : si, lorsqu&#x27;on saisit le grand, le petit monte avec lui, il est comme lui ; Rabbi Yehouda dit : si, lorsqu&#x27;on saisit le petit, le grand monte avec lui, il est comme lui.&#x27; Et selon cette version-la, [c&#x27;est] etonnant : que demande-t-on ici [de] R. Meir contre R. Meir [puisque la version de la michna y est differente] ? Et il n&#x27;est pas plausible d&#x27;expliquer que Rabbi Yohanan, qui dit &#x27;[on tient] le petit et le grand ne monte pas avec lui&#x27; selon R. Meir, [parle] non au sens strict, mais [qu&#x27;]aussi le petit ne monte pas avec le grand — car [le texte] n&#x27;implique pas ainsi.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>On confronte deux propos de <b>Rabbi Meir</b>. Ici (traite Tevoul Yom) : deux morceaux ne font 'un' que si, en saisissant le <b>petit</b>, le <b>grand monte avec lui</b> ; sinon ils sont separes. Mais dans notre michna (sur le <b>membre pendant</b>, ever medouldal), R. Meir tient le membre pour <b>attache au corps</b> meme si le grand ne se souleve pas avec le petit. D'ou la contradiction (R. Meir contre R. Meir).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ואמר רבי יוחנן: מוחלפת השיטה.</div>
+            <div class="fr"><p>Et Rabbi Yohanan a dit : la position est inversee (mouhlefet ha-chita).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מוחלפת השיטה</b> כאן החליף ר&quot;מ שיטתו אבל בעלמא ס&quot;ל אוחז בקטן ואין גדול עולה עמו הרי הוא כמוהו ומדקאמר רבי יוחנן הכי ש&quot;מ דס&quot;ל דבאוחז בקטן ואין גדול עולה עמו קא מיפלגי:</div>
+          <div class="glose-fr">La position est inversee — ici R. Meir a inverse sa position, mais en general il tient &#x27;[si] l&#x27;on saisit le petit et [que] le grand ne monte pas avec lui, il est comme lui&#x27; ; et du fait que Rabbi Yohanan parle ainsi, infere-[s&#x27;en] qu&#x27;il tient [que] c&#x27;est sur &#x27;[le cas ou] l&#x27;on saisit le petit et [ou] le grand ne monte pas avec lui&#x27; qu&#x27;ils divergent.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Resolution de <b>Rabbi Yohanan</b> : il faut <b>inverser</b> l'attribution des positions au traite Tevoul Yom. En verite, R. Meir tient que <b>meme si</b>, en soulevant le petit, le grand <b>ne monte pas</b>, c'est encore une seule et meme chose. Ainsi R. Yohanan explique le differend R. Meir / R. Chimon de la michna comme le faisait Abaye.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ומאי קושיא? דילמא שני ליה לרבי מאיר בין טבול יום לשאר טומאות.</div>
+            <div class="fr"><p>Et quelle [est] la difficulte ? Peut-etre Rabbi Meir distingue-t-il entre le tevoul yom (immerge du jour) et les autres impuretes !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ומהדר הש&quot;ס ומאי קשיא</b> ליה לרבי יוחנן דלמא אע&quot;ג דמיקל ר&quot;מ בטבול יום שהוא טומאה דרבנן מחמיר הוא בטומאה חמורה:</div>
+          <div class="glose-fr">Et le Talmud rapporte [l&#x27;objection] : et quelle [est] la difficulte — pour Rabbi Yohanan ? Peut-etre, bien que R. Meir soit indulgent a propos du tevoul yom, qui est une impurete rabbinique, est-il rigoureux dans une impurete grave !</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection a R. Yohanan : pourquoi <b>inverser</b> ? Il n'y a peut-etre <b>pas</b> de contradiction, car R. Meir peut <b>distinguer</b> entre le <b>tevoul yom</b> — impurete legere, l'homme s'etant deja immerge et n'attendant que le coucher du soleil — ou il est plus indulgent, et les <b>autres impuretes</b>, plus graves, ou il est plus rigoureux.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תניא, רבי אומר: אחד טבול יום ואחד שאר טומאות.</div>
+            <div class="fr"><p>Il est enseigne [dans une braita], Rabbi [Yehouda ha-Nassi] dit : aussi bien le tevoul yom que les autres impuretes [sont identiques quant au toucher].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תניא רבי אומר</b> תירוצא הוא כלומר הא תני רבי דלא שני ליה:</div>
+          <div class="glose-fr">Il est enseigne, Rabbi dit — c&#x27;est une reponse, c&#x27;est-a-dire : voici que Rabbi enseigne qu&#x27;[on] ne distingue pas [entre eux].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אחד טבול יום ואחד שאר טומאות</b> אין חילוק בנגיעתם דהקרויה בשאר טומאות נגיעה הוי בטבול יום נמי נגיעה:</div>
+          <div class="glose-fr">Aussi bien le tevoul yom que les autres impuretes — il n&#x27;y a pas de difference dans leur contact, car ce qui est appele &#x27;contact&#x27; dans les autres impuretes est aussi &#x27;contact&#x27; pour le tevoul yom.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse, par une braita : <b>Rabbi</b> enseigne qu'il n'y a <b>aucune distinction</b> de contact entre le <b>tevoul yom</b> et les <b>autres impuretes</b> — ce qui compte comme contact transmetteur pour l'un l'est pour l'autre. Donc R. Meir ne peut distinguer entre eux, et la contradiction subsiste : l'inversion de R. Yohanan se justifie.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ודילמא, לרבי לא שני ליה, ולרבי מאיר שני ליה?</div>
+            <div class="fr"><p>Et peut-etre, pour Rabbi [il n&#x27;y a] pas de distinction, mais pour Rabbi Meir [il y a] une distinction ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לדברי רבי דלא שני ליה</b> החליף ר&quot;מ שיטתו דהא כל היכא דהויא נגיעה בטבול יום הויא נגיעה בשאר טומאות והא שמעינן לר&quot;מ דמתניתין דאע&quot;ג דאין גדול עולה עמו חבור הוא:</div>
+          <div class="glose-fr">Selon les paroles de Rabbi [pour qui il n&#x27;y a] pas de distinction — R. Meir a inverse sa position, car partout ou il y a contact pour le tevoul yom il y a contact pour les autres impuretes ; or nous avons entendu R. Meir, dans la michna, [enseigner] que, bien que le grand ne monte pas avec lui, c&#x27;[est] un attachement (hibour).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle objection : la braita de <b>Rabbi</b> ne prouve rien quant a R. Meir. Peut-etre <b>Rabbi</b> ne distingue pas entre tevoul yom et autres impuretes, mais <b>R. Meir</b>, lui, <b>distingue</b> — auquel cas il n'y a <b>pas</b> de contradiction chez R. Meir, et l'inversion devient inutile.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר רבי יאשיה, הכי אמר רבי יוחנן: לדברי רבי מוחלפת השיטה.</div>
+            <div class="fr"><p>Rabbi Yochia a dit : ainsi a dit Rabbi Yohanan : selon les paroles de Rabbi, la position est inversee.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Precision de <b>Rabbi Yochia</b> sur l'intention de R. Yohanan : l'inversion n'est affirmee que <b>selon Rabbi</b> (pour qui il n'y a pas de distinction entre tevoul yom et autres impuretes). C'est dans <b>ce cadre</b> seulement qu'apparait la contradiction chez R. Meir, et donc que la position de la michna de Tevoul Yom doit etre <b>inversee</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רבא אמר: ביש יד לטומאה, ואין יד להכשר, קמיפלגי.</div>
+            <div class="fr"><p>Rava a dit : c&#x27;est sur [le principe qu&#x27;]il y a manche (yad) pour l&#x27;impurete (toum&#x27;a), et [qu&#x27;]il n&#x27;y a pas de manche pour l&#x27;aptitude (hekhcher), qu&#x27;ils divergent.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רבא אמר ביש יד להכשר</b> כי היכי דילפינן יד לטומאה בריש פרקין (חולין דף קיח.) קמיפלגי ודכ״ע בהמה נעשית יד לאבר:</div>
+          <div class="glose-fr">Rava a dit : c&#x27;est sur [le principe qu&#x27;]il y a manche pour l&#x27;aptitude — de meme que nous derivons [l&#x27;existence d&#x27;un] manche pour l&#x27;impurete au debut de notre chapitre (Houlin page 118a), c&#x27;est [la-dessus] qu&#x27;ils divergent ; et de l&#x27;avis de tous, la bete fait manche pour le membre.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Premiere des lectures amoraiques. <b>Rava</b> : la michna parle du cas ou le sang d'abattage a touche le <b>corps</b> de la bete mais non le membre ; tous admettent que la bete fait <b>manche (yad)</b> pour le membre. Ils divergent sur ce principe : le <b>manche</b> vaut-il pour <b>transmettre l'impurete</b> (toum'a) mais <b>non</b> pour <b>rendre apte</b> (hekhcher) — le manche etant alors, pour le hekhcher, un objet a part ?</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מר סבר יש יד לטומאה ואין יד להכשר, ומר סבר יש יד לטומאה ולהכשר.</div>
+            <div class="fr"><p>Un Maitre tient : il y a manche pour l&#x27;impurete et il n&#x27;y a pas de manche pour l&#x27;aptitude ; et un Maitre tient : il y a manche pour l&#x27;impurete et pour l&#x27;aptitude.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Detail de la mahloket selon Rava. Un Maitre (<b>Rabbi Chimon</b>) : il y a manche pour la <b>toum'a</b>, mais <b>pas</b> pour le <b>hekhcher</b> — donc, bien que le corps fasse manche au membre, il ne le rend pas apte a l'impurete. L'autre Maitre (<b>Rabbi Meir</b>) : il y a manche <b>et</b> pour la toum'a <b>et</b> pour le hekhcher — donc le corps rend le membre apte a l'impurete.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רב פפא אמר: בהכשר קודם מחשבה קמיפלגי.</div>
+            <div class="fr"><p>Rav Papa a dit : c&#x27;est sur [le cas de] l&#x27;aptitude anterieure a l&#x27;intention (hekhcher kodem mahchava) qu&#x27;ils divergent.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בהכשר קודם מחשבה קמיפלגי</b> ודכ&quot;ע יש יד לטומאה ולהכשר אלא ששחטה קודם שחישב להאכילו לעובד כוכבים דקדם הכשר למחשבה ר&quot;ש סבר כיון דבשעת הכשר אכתי לאו בר קבולי טומאה הוא דסתמיה לאו לאכילה קאי שאף לבן נח אסור הוא הכשר נמי לא מקבל:</div>
+          <div class="glose-fr">C&#x27;est sur l&#x27;aptitude anterieure a l&#x27;intention qu&#x27;ils divergent — et de l&#x27;avis de tous, il y a manche pour l&#x27;impurete et pour l&#x27;aptitude ; seulement, il l&#x27;a abattue avant d&#x27;avoir pense a la donner a manger a un idolatre, de sorte que l&#x27;aptitude a precede l&#x27;intention. Rabbi Chimon tient : puisque, au moment de l&#x27;aptitude, [la viande] n&#x27;etait pas encore apte a recevoir l&#x27;impurete — car en son etat ordinaire elle ne se destine pas a la consommation, etant [meme] interdite a un fils de Noe — l&#x27;aptitude [n&#x27;]est [donc] pas non plus recue.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Lecture de <b>Rav Papa</b> : tous admettent que le manche rend apte ; mais la michna vise un cas ou l'abattage a eu lieu <b>avant</b> que le proprietaire ait destine la viande a la consommation d'un non-Juif. Ils divergent sur la question : une chose peut-elle etre <b>rendue apte avant l'intention</b> (mahchava) de l'employer comme aliment ? Pour <b>R. Chimon</b>, non (le contact eut lieu avant l'intention) ; pour <b>R. Meir</b>, l'aptitude prend effet et vaut une fois la pensee survenue.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">דתנן, אמר רבי יהודה: כך היה רבי עקיבא שונה – חלב שחוטה בכפרים צריך מחשבה, ואין צריך הכשר, שכבר הוכשר בשחיטה.</div>
+            <div class="fr"><p>Comme nous l&#x27;avons appris : Rabbi Yehouda a dit : ainsi enseignait Rabbi Akiva — la graisse (helev) d&#x27;une [bete] abattue dans les villages requiert l&#x27;intention (mahchava) et ne requiert pas l&#x27;aptitude (hekhcher), car elle a deja ete rendue apte par l&#x27;abattage (chehita).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>חלב</b> אין דרכו לאוכלו בכפרים מפני שהעם מועט ויש להם בשר הרבה לצורך סיפוקן אבל בכרכים העם מרובה ואין להם בשר לכל הצורך אוכלין אותו ע&quot;י הדחק. א&quot;נ משום הכי אין דרכן לאוכלו בכפרים משום דעניים הם אבל בני כרכים שהם עשירים אוכלין אותו:</div>
+          <div class="glose-fr">La graisse — il n&#x27;est pas d&#x27;usage de la manger dans les villages, parce que la population [y] est peu nombreuse et qu&#x27;ils ont de la viande en abondance pour leurs besoins ; mais dans les grandes villes, la population [est] nombreuse et ils n&#x27;ont pas de viande pour tout le besoin, [aussi] la mangent-ils a la rigueur. Autre version : la raison pour laquelle il n&#x27;est pas d&#x27;usage de la manger dans les villages, [c&#x27;est] parce qu&#x27;ils sont pauvres, mais les gens des grandes villes, qui sont riches, la mangent.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הוכשר בשחיטה</b> ואע&quot;ג דקדם הכשר למחשבה:</div>
+          <div class="glose-fr">Elle a ete rendue apte par l&#x27;abattage — et bien que l&#x27;aptitude ait precede l&#x27;intention.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Source de la mahloket de Rav Papa. Selon le <b>premier</b> enseignement de <b>Rabbi Akiva</b> : la <b>graisse</b> (helev, interdite a la consommation) d'une bete abattue <b>dans les villages</b> — ou la population est rare et la viande abondante, donc on ne la mange d'ordinaire pas — requiert une <b>intention</b> de consommation pour devenir apte a l'impurete, mais ne requiert <b>pas</b> de contact liquide : elle a deja ete rendue apte par le <b>sang de l'abattage</b>, bien que ce contact ait precede l'intention.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמרתי לפניו: למדתנו רבינו, עולשין שלקטן והדיחן לבהמה, ונמלך עליהן לאדם – צריכות הכשר שני. וחזר רבי עקיבא להיות שונה כרבי יהודה.</div>
+            <div class="fr"><p>J&#x27;ai dit devant lui : tu nous as enseigne, notre maitre, [que] des endives (oulchin) qu&#x27;on a cueillies et rincees pour [nourrir] une bete, et [au sujet desquelles] on s&#x27;est ravise [pour les destiner] a l&#x27;homme — requierent une seconde aptitude (hekhcher cheni). Et Rabbi Akiva revint a enseigner comme Rabbi Yehouda.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>עולשים</b> עשב שקורין קרשפיל&quot;א:</div>
+          <div class="glose-fr">Des endives — une herbe qu&#x27;on appelle [en vernaculaire].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שלקטן</b> לבהמה והוכשרו ואח&quot;כ נמלך עליהם לאדם צריכין הכשר שני מפני שקדם הכשר למחשבה ור&quot;מ סבר לה כי היכי דא&quot;ר עקיבא מעיקרא מאכל בהמה אינו מקבל טומאה:</div>
+          <div class="glose-fr">Qu&#x27;on a cueillies — pour une bete, et [qui] ont ete rendues aptes, puis [au sujet desquelles] on s&#x27;est ravise [pour les destiner] a l&#x27;homme, [elles] requierent une seconde aptitude, parce que l&#x27;aptitude a precede l&#x27;intention ; et R. Meir tient comme ce que R. Akiva disait au depart : un aliment [destine] a une bete ne recoit pas l&#x27;impurete.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection de <b>Rabbi Yehouda</b> a Rabbi Akiva : tu nous as enseigne que des <b>endives</b> cueillies et rincees pour une <b>bete</b>, puis destinees finalement a l'<b>homme</b>, requierent un <b>second</b> contact liquide (hekhcher cheni), car un aliment destine aux betes ne contracte pas l'impurete — preuve que l'aptitude doit suivre l'intention. <b>Rabbi Akiva se retracta</b> et enseigna desormais comme R. Yehouda : l'aptitude anterieure a l'intention ne vaut pas.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מר סבר לה כמעיקרא, ומר סבר לה כחזרה.</div>
+            <div class="fr"><p>Un Maitre tient comme [l&#x27;enseignement] premier, et un Maitre tient comme la retractation.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Conclusion de Rav Papa : R. Meir et R. Chimon divergent a la maniere des deux etats de l'enseignement de Rabbi Akiva. <b>R. Meir</b> tient comme l'enseignement <b>premier</b> (l'aptitude anterieure a l'intention vaut), <b>R. Chimon</b> comme la <b>retractation</b> (elle ne vaut pas).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רב אחא בריה דרב איקא אמר: בנתקנח הדם בין סימן לסימן קמיפלגי.</div>
+            <div class="fr"><p>Rav Aha fils de Rav Ika a dit : c&#x27;est sur [le cas ou] le sang a ete essuye entre un siman et [l&#x27;autre] siman qu&#x27;ils divergent.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בנתקנח הדם כו&#x27;</b> ודכ&quot;ע אין יד להכשר אבל יש יד לטומאה ופלוגתייהו בשניתז הדם על האבר וקינחו בין סימן לסימן:</div>
+          <div class="glose-fr">[Le cas ou] le sang a ete essuye etc. — et de l&#x27;avis de tous, il n&#x27;y a pas de manche pour l&#x27;aptitude, mais il y a manche pour l&#x27;impurete ; et leur differend [porte] sur [le cas] ou le sang a jailli sur le membre et [ou] on l&#x27;a essuye entre un siman et [l&#x27;autre] siman.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Lecture de <b>Rav Aha fils de Rav Ika</b> : la michna vise le cas ou le sang d'abattage (qui rend apte) a touche le membre pendant ; tous admettent qu'il n'y a <b>pas</b> de manche pour le hekhcher, mais qu'il y a manche pour la toum'a. Ils divergent sur le cas ou le sang fut <b>essuye entre la coupe du premier siman et celle du second</b> (la trachee et l'oesophage).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מר סבר ישנה לשחיטה מתחלה ועד סוף, והאי דם שחיטה הוא, ומר סבר אינה לשחיטה אלא לסוף, והאי דם מכה הוא.</div>
+            <div class="fr"><p>Un Maitre tient : la chehita [existe] du debut jusqu&#x27;a la fin, et ce sang est du sang d&#x27;abattage (dam chehita) ; et un Maitre tient : la chehita n&#x27;[existe] qu&#x27;a la fin, et ce sang est du sang de plaie (dam maka).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דם מכה</b> אינו מכשיר דם חללים קרוי משקה ולא דם מכה:</div>
+          <div class="glose-fr">Du sang de plaie — il ne rend pas apte ; [c&#x27;est] le sang des [betes] mortes (dam halalim) qui est appele &#x27;liquide&#x27;, et non le sang de plaie.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le coeur du differend selon Rav Aha. Un Maitre (<b>R. Meir</b>) : la <b>chehita</b> se definit du <b>debut a la fin</b> de son execution, donc le sang qui a jailli [des le premier siman] est du <b>sang d'abattage</b> (qui rend apte). L'autre Maitre (<b>R. Chimon</b>) : la chehita ne se definit <b>qu'a sa fin</b>, donc ce sang [du premier siman] n'est que du <b>sang de plaie</b> (dam maka), qui ne rend pas apte.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רב אשי אמר: בשחיטה מכשרת ולא דם קמיפלגי.</div>
+            <div class="fr"><p>Rav Achi a dit : c&#x27;est sur [le principe que] la chehita rend apte, et non le sang, qu&#x27;ils divergent.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רב אשי אמר</b> דכ&quot;ע אית יד להכשר והאי אבר אית ליה יד דבהמה נעשית יד לאבר א&quot;נ ס&quot;ל אוחז בקטן ואין גדול עולה עמו הרי הוא כמוהו וכשניתז הדם על האבר ולא נתקנח קא מיפלגי ר&quot;מ סבר דם מכשיר והרי הוכשר ור&quot;ש לטעמיה דאמר בפרק שני (לעיל חולין לו.) שחיטה מכשרת ולא דם והאי אבר כיון דלא מהניא ליה שחיטה להתירו באכילה אע&quot;ג דמהניא ליה לטהוריה מידי נבלה לא מכשרה ליה לטומאה דטעמא דשחיטה מכשרת היינו משום דכיון דמשויא ליה אוכלא לענין היתר אכילה משויא ליה נמי אוכלא לענין טומאה והכא ליכא למימר הכי:</div>
+          <div class="glose-fr">Rav Achi a dit — de l&#x27;avis de tous, il y a manche pour l&#x27;aptitude, et ce membre a un manche, car la bete fait manche pour le membre ; ou bien il tient &#x27;[si] l&#x27;on saisit le petit et [que] le grand ne monte pas avec lui, il est comme lui&#x27; ; et [c&#x27;est] lorsque le sang a jailli sur le membre et [qu&#x27;]il n&#x27;a pas ete essuye qu&#x27;ils divergent. R. Meir tient : le sang rend apte, et voici qu&#x27;[il] a ete rendu apte. Et R. Chimon [reste fidele] a son principe, lui qui dit au chapitre 2 (plus haut, Houlin 36a) : la chehita rend apte, et non le sang ; et ce membre, puisque l&#x27;abattage ne lui sert pas a le rendre permis a la consommation — bien qu&#x27;il lui serve a le purifier du statut de nevela (charogne) — ne le rend pas apte a l&#x27;impurete ; car la raison pour laquelle la chehita rend apte, c&#x27;est que, des lors qu&#x27;elle en fait un aliment quant a la permission de [le] manger, elle en fait aussi un aliment quant a l&#x27;impurete ; et ici il n&#x27;y a pas lieu de le dire.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Derniere lecture, celle de <b>Rav Achi</b> : le sang d'abattage a bien touche le membre, mais ils divergent sur le principe que c'est la <b>chehita elle-meme</b> qui rend apte, et <b>non le sang</b>. Pour <b>R. Chimon</b>, le sang d'abattage n'est pas un liquide qui rend apte, mais la chehita rend apte car elle prepare la chair a la consommation — or le membre pendant, restant <b>interdit</b>, n'est pas prepare par l'abattage, donc non rendu apte. Pour <b>R. Meir</b>, le sang d'abattage <b>est</b> un liquide qui rend apte, donc le membre est rendu apte.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בעי רבה: בהמה בחייה, מהו שתעשה יד לאבר? תיקו.</div>
+            <div class="fr"><p>Rabba a demande : la bete de son vivant (be-hayeha), qu&#x27;en est-il [de la possibilite] qu&#x27;elle fasse manche pour le membre ? [La question] demeure (teikou).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בעי רבה כו&#x27;</b> רבה אוקים פלוגתייהו לעיל בבהמה נעשית יד לאבר בעי רבה לר&quot;מ דאמר בהמה נעשית יד לאבר בשחיטה לענין הכשר בחייה מהו שתעשה יד להכניס ולהוציא טומאה היכא דהוכשר במים לאחר דלדולו דאמרינן במתניתין דמקבלין טומאה במקומן ואם נגע טומאה בבהמה מהו שתעשה יד להביא טומאה לאבר מי אמרינן כיון דבעלי חיים לא מקבלי טומאה יד נמי לא הוו או דילמא נהי דאיהי גופה טהורה יד לאבר מיהא הויא כי היכי דאמרינן גבי עצם דבשר ואוכל עליו שהוא יד לבשר להכניס ולהוציא טומאה אע&quot;פ שאין עצם בלא בשר מקבל טומאה:</div>
+          <div class="glose-fr">Rabba a demande etc. — Rabba a etabli plus haut leur differend [sur le point de savoir si] la bete fait manche pour le membre. Rabba demande, selon R. Meir qui dit [que] la bete fait manche pour le membre par l&#x27;abattage quant a l&#x27;aptitude : de son vivant, qu&#x27;en est-il [de la possibilite] qu&#x27;elle fasse manche pour faire entrer et sortir l&#x27;impurete, la ou [le membre] a ete rendu apte par [contact avec] de l&#x27;eau apres son ballottement — car nous disons dans la michna [qu&#x27;un tel membre] recoit l&#x27;impurete a sa place — et [que] l&#x27;impurete a touche la bete : fait-elle manche pour amener l&#x27;impurete au membre ? Disons-nous [que], puisque les etres vivants ne recoivent pas l&#x27;impurete, [le corps] ne fait pas non plus manche ? Ou peut-etre, quoique [la bete] elle-meme [soit] pure, fait-elle du moins manche pour le membre, de meme que nous disons a propos d&#x27;un os portant chair et aliment [qu&#x27;]il est manche pour la chair, pour faire entrer et sortir l&#x27;impurete, bien qu&#x27;un os sans chair ne recoive pas l&#x27;impurete ?</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בהמה בחייה מהו שתעשה יד לאבר</b> תימה מאי מבעיא ליה אי משום דבהמה בחייה לאו בת קבולי טומאה היא כל ידות שבעולם נמי לא מקבלי טומאה אלא שמכניסות ומוציאות טומאה וי&quot;ל דלא דמי לשאר ידות דמאי דלא מקבלי טומאה משום שאינן אוכל אבל בעלי חיים כי נמי הוי אוכל כגון בן פקועה איכא למ&quot;ד פרק בהמה המקשה (לעיל חולין דף עה.) דלא מקבל טומאה:</div>
+          <div class="glose-fr">La bete de son vivant, qu&#x27;en est-il [de la possibilite] qu&#x27;elle fasse manche pour le membre — [c&#x27;est] etonnant : que demande-t-il ? Si [c&#x27;est] parce que la bete de son vivant n&#x27;est pas apte a recevoir l&#x27;impurete — [mais] tous les manches du monde ne recoivent pas non plus l&#x27;impurete, [et] pourtant ils font entrer et sortir l&#x27;impurete ! Et l&#x27;on peut dire [que] cela ne ressemble pas aux autres manches : car ceux-la ne recoivent pas l&#x27;impurete parce qu&#x27;ils ne sont pas un aliment, tandis que les etres vivants, meme quand ils sont un aliment — comme le ben pekoua (foetus trouve vivant) — il y a un avis, au chapitre Behema ha-Makcha (plus haut, Houlin 75a), [selon lequel] il ne recoit pas l&#x27;impurete.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Premiere des trois questions ouvertes. <b>Rabba</b> (qui plus haut, 127b, expliquait le differend par la question du manche) interroge selon <b>R. Meir</b> : si la bete, <b>vivante</b>, touche une source d'impurete — elle-meme n'est pas susceptible d'impurete (etant vivante), mais son <b>membre pendant</b> l'est, comme aliment — le <b>corps vivant</b> fait-il <b>manche</b> pour transmettre l'impurete au membre ? <b>Teikou</b> : non tranche.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg16">
+          <div class="seg-num">17</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר אביי: הרי אמרו, קישות שנטעה בעציץ והגדילה ויצאת חוץ לעציץ – טהורה.</div>
+            <div class="fr"><p>Abaye a dit : voici qu&#x27;ils [les Sages] ont dit : un concombre (kichout) qu&#x27;on a plante dans un pot de fleurs (atsits), [qui] a grandi et est sorti hors du pot — [il est] pur (tahor).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>קישות שנטעה בעציץ</b> שאינו נקוב כתלושה דמיא ומקבלת טומאה כשאר אוכלין או אם היתה טמאה הרי היא בטומאתה ואם הגדילה ויצאה נופה לחוץ ונוטה על הארץ ויונק מריח הארץ דרך אויר כמחובר דמיא וטהרה כל הקישות שבעציץ לפי שחוזרים ויונקין מן הנוף הנוטה חוץ לעציץ:</div>
+          <div class="glose-fr">Un concombre qu&#x27;on a plante dans un pot de fleurs — [un pot] non perce : [le concombre] est comme detache et recoit l&#x27;impurete comme les autres aliments ; ou bien, s&#x27;il etait impur, le voici dans son impurete. Et s&#x27;il a grandi et que son feuillage est sorti au-dehors et surplombe la terre, et [qu&#x27;]il aspire l&#x27;odeur de la terre par l&#x27;air, [il est] comme attache, et tout le concombre [qui est] dans le pot devient pur, parce qu&#x27;ils [re]aspirent du feuillage incline hors du pot.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>קישות שנטעה בעציץ והגדילה ויצאה חוץ לעציץ טהורה</b> ואע&quot;ג דאמר בפרק המביא גט (גיטין כב. ע&quot;ש) אילן בארץ ונופו נוטה בחוצה לארץ בתר עיקרו אזלינן התם מרובה יניקתו במקום העיקר אבל עיקרו בעציץ אין יניקת השרשים מרובה ואין הנופות יונקות מן העציץ:</div>
+          <div class="glose-fr">Un concombre qu&#x27;on a plante dans un pot de fleurs, [qui] a grandi et est sorti hors du pot, [il est] pur — et bien qu&#x27;on dise au chapitre Ha-Mevi Get (Guitin 22a, voir la-bas) [qu&#x27;un] arbre [enracine] dans le pays (Terre d&#x27;Israel) dont le feuillage s&#x27;incline hors du pays, nous suivons sa racine (son tronc) — la-bas son aspiration est abondante a l&#x27;endroit de la racine, mais [quand] sa racine [est] dans un pot, l&#x27;aspiration des racines n&#x27;est pas abondante, et les feuillages [n&#x27;]aspirent [donc plus] du pot.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Question parallele d'<b>Abaye</b>, tiree d'une michna (Oktsin). Un <b>concombre</b> impur plante dans un <b>pot de fleurs non perce</b> est tenu pour <b>detache</b> du sol, donc susceptible d'impurete comme aliment ; mais s'il <b>grandit et sort hors du pot</b>, surplombant le sol, le concombre <b>entier</b> est tenu pour <b>attache</b> au sol et devient <b>pur</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg17">
+          <div class="seg-num">18</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר רבי שמעון: וכי מה טיבה לטהר? אלא הטמא בטומאתו, וטהור בטהרתו.</div>
+            <div class="fr"><p>Rabbi Chimon a dit : et qu&#x27;a-t-elle [de propre] pour devenir pure ? Plutot, l&#x27;impur [reste] dans son impurete, et le pur dans sa purete.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הטמא בטומאתו</b> מה שבתוך העציץ מקבל טומאה לפי שהוא כתלוש:</div>
+          <div class="glose-fr">L&#x27;impur [reste] dans son impurete — ce qui est dans le pot recoit l&#x27;impurete, parce qu&#x27;il est comme detache.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>והטהור</b> הנוף שיצא לחוץ ויונקת מריח הארץ דרך אויר כמחובר וטהורה:</div>
+          <div class="glose-fr">Et le pur — le feuillage qui est sorti au-dehors et aspire l&#x27;odeur de la terre par l&#x27;air [est] comme attache, et [donc] pur.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אלא הטמא בטומאתו והטהור בטהרתו</b> ואע&quot;ג דבעציץ נקוב אמרינן בהמצניע (שבת צה:) דלרבי שמעון הוי כמחובר לענין הכשר זרעים ומסתמא הוא הדין לענין טומאה התם ע&quot;י הנקב הוי כמחובר אבל הכא ע&quot;י מה שיוצא לחוץ לא יהא מה שבפנים כמחובר:</div>
+          <div class="glose-fr">Plutot, l&#x27;impur [reste] dans son impurete et le pur dans sa purete — et bien que, [s&#x27;agissant] d&#x27;un pot perce, nous disions au chapitre Ha-Matsnia (Chabbat 95b) que, pour Rabbi Chimon, [le contenu est] comme attache quant a l&#x27;aptitude des semences — et vraisemblablement il en va de meme quant a l&#x27;impurete — la-bas [c&#x27;est] par le trou [qu&#x27;il est] comme attache, mais ici, par ce qui sort au-dehors, ce qui est a l&#x27;interieur ne sera pas comme attache.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reserve de <b>Rabbi Chimon</b> sur cette michna : <b>pourquoi</b> tout le concombre deviendrait-il pur ? Plutot, distinguons : la partie qui est <b>dans le pot</b> reste <b>impure</b> (comme detachee), et la partie qui est <b>hors du pot</b> reste <b>pure</b> (comme attachee au sol). Le meme corps porte donc deux statuts.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg18">
+          <div class="seg-num">19</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בעי אביי: מהו שתעשה יד לחברתה? תיקו.</div>
+            <div class="fr"><p>Abaye a demande : [la partie pure] qu&#x27;en est-il [de la possibilite] qu&#x27;elle fasse manche pour sa compagne [la partie impure] ? [La question] demeure (teikou).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">לר&quot;ש מהו שיעשה נוף הטהור יד לקישות להביא לה טומאה:</div>
+          <div class="glose-fr">Selon R. Chimon, qu&#x27;en est-il [de la possibilite] que le feuillage pur fasse manche pour le concombre [afin] de lui amener l&#x27;impurete.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Sur cette michna, <b>Abaye</b> pose une question selon <b>R. Chimon</b> : si la partie du concombre <b>hors du pot</b> (la partie pure) touche une source d'impurete, fait-elle <b>manche</b> pour sa <b>compagne</b> (la partie impure dans le pot) et lui transmet-elle l'impurete ? <b>Teikou</b> : non tranche.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg19">
+          <div class="seg-num">20</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר רבי ירמיה: הרי אמרו המשתחוה לחצי דלעת אסרה, בעי רבי ירמיה:</div>
+            <div class="fr"><p>Rabbi Yirmeya a dit : voici qu&#x27;ils [les Sages] ont dit : celui qui se prosterne devant une demi-courge (hatsi delaat) l&#x27;a [rendue] interdite [a la jouissance] ; Rabbi Yirmeya a demande :</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>המשתחוה לחצי דלעת אסרה</b> בהנאה משום עבודה זרה ולר&quot;ש איסורי הנאה אין מטמאין טומאת אוכלין דנפקא ליה לקמן (חולין דף קכט.) מכל האוכל אשר יאכל דבעינן שאתה יכול להאכילו לאחרים והא הדלעת איסורי הנאה היא ותו לא מטמא טומאת אוכלין ונהי דטומאה יוצאה לה מגופה דהא עבודה זרה מטמאה כשרץ שנאמר (דברים ז) שקץ תשקצנו ולר&quot;ע מטמאה כנדה שנאמר (ישעיהו ל) תזרם כמו דוה מיהו ההיא טומאה דרבנן היא כדאמרינן בפרק ר&quot;ע (שבת דף פג:) וקרא אסמכתא בעלמא הוא:</div>
+          <div class="glose-fr">Celui qui se prosterne devant une demi-courge l&#x27;a [rendue] interdite — a la jouissance, a cause [du statut d&#x27;]avoda zara (idolatrie). Et selon R. Chimon, les choses interdites a la jouissance ne contractent pas l&#x27;impurete alimentaire — il le derive plus loin (Houlin 129a) de &#x27;[de] tout aliment qui se mange&#x27; (Lev 11:34), [car] nous requerons que tu puisses le donner a manger a autrui ; or cette courge [est] interdite a la jouissance, et donc elle ne contracte pas [non plus] l&#x27;impurete alimentaire. Et quoique l&#x27;impurete sorte d&#x27;elle-meme — car l&#x27;avoda zara rend impur comme un cherets (reptile), ainsi qu&#x27;il est dit (Deut 7) &#x27;tu l&#x27;auras en abomination (chakets techaktsenou)&#x27;, et pour R. Akiva elle rend impur comme une nidda (femme menstruee), ainsi qu&#x27;il est dit (Isaie 30) &#x27;tu les disperseras (tizrem) comme [un linge] souille (dava)&#x27; — neanmoins cette impurete[-la] est rabbinique, comme nous le disons au chapitre Rabbi Akiva (Chabbat 83b), et le verset n&#x27;est qu&#x27;un simple appui (asmakhta).</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הרי אמרו המשתחוה לחצי דלעת אסרה בעי רבי זירא מהו שתעשה יד לחברתה</b> לפי&#x27; שני שבקונטרס דמבעיא ליה אי הויא חציה שלא השתחוה לה יד להוציא טומאה או לא כלום נעשה יד אוכל לאוכל אחר או לא תימה דבכולה שמעתין מוכח דאוכל נעשה יד לאוכל לקמן כוליא של נבלה בחלבה נעשה החלב יד לכוליא ולעיל נמי לא פליגי אלא בבהמה אם נעשית יד לאבר משום שהבהמה דבר גדול ואינה ראויה להיות יד אבל אם היו שוין הבהמה והאבר הויא יד לכ&quot;ע ועוד אמאי נקט דלעת ליבעי בשתי חתיכות בשר המדובקין בעור ונטמאה אחת מהן בשרץ ואין לומר נמי דבדלעת מחוברת איירי והחצי טמא מידי דהוה אאשרה וקא מבעיא ליה אי הוי יד אידך להוציא טומאה כיון שהוא מחובר כדמבעיא ליה בקישות שנטעה בעציץ דאכתי אמאי נקט דלעת לימא המשתחוה לחצי אילן ונראה כלשון ראשון שפירש בקונטרס דבעי אם נגע שרץ בחצי שהשתחוה אם נעשית יד לחצי האחר הואיל ואין ראוי לקבל טומאה לר&quot;ש דאמר אוכל שאין יכול להאכילו לאחרים אינו אוכל ולא דמי לשאר ידות דהתם אין מקבלות טומאה לפי שאינן ראויות לאכילה ועץ בעלמא הן אבל הכא אוכל גמור הוא אבל דבר אחר גורם לו שאין ראוי להאכילו לאחרים כדפרישית לעיל גבי בהמה בחייה מהו כו&#x27;:</div>
+          <div class="glose-fr">Voici qu&#x27;ils ont dit : celui qui se prosterne devant une demi-courge l&#x27;a [rendue] interdite ; Rabbi Zira a demande : qu&#x27;en est-il [de la possibilite] qu&#x27;elle fasse manche pour sa compagne — selon la seconde explication du commentaire [de Rachi], [a savoir] qu&#x27;il demande si la moitie devant laquelle il ne s&#x27;est pas prosterne fait manche pour faire sortir l&#x27;impurete ou non — [a savoir] si un aliment devient manche pour un autre aliment ou non — [c&#x27;est] etonnant, car dans toute notre sougya il ressort qu&#x27;un aliment devient manche pour un aliment : plus loin, [pour] le rognon (koulya) d&#x27;une nevela [enrobe] dans sa graisse, la graisse devient manche pour le rognon ; et plus haut aussi, ils ne divergeaient que sur la bete, [pour savoir] si elle fait manche pour le membre, parce que la bete [est] une grande chose et n&#x27;est pas apte a etre manche, mais si la bete et le membre etaient egaux, [le corps] ferait manche de l&#x27;avis de tous. Et de plus, pourquoi a-t-il pris une courge ? qu&#x27;il demande [le cas de] deux morceaux de viande colles par la peau, dont l&#x27;un a ete rendu impur par un cherets ! Et l&#x27;on ne peut pas dire non plus qu&#x27;il s&#x27;agit d&#x27;une courge attachee [au sol], dont la moitie [est] impure — a l&#x27;instar d&#x27;une achera (arbre adore) — et qu&#x27;il demande si l&#x27;autre fait manche pour faire sortir l&#x27;impurete, puisqu&#x27;elle est attachee, comme il le demande pour le concombre plante dans un pot ; car alors, pourquoi prendre encore une courge ? qu&#x27;il dise &#x27;celui qui se prosterne devant un demi-arbre&#x27; ! Et il parait [juste, donc, de retenir] la premiere explication qu&#x27;a donnee le commentaire [de Rachi], a savoir qu&#x27;il demande : si un cherets a touche la moitie devant laquelle il s&#x27;est prosterne, fait-elle manche pour l&#x27;autre moitie, puisqu&#x27;elle n&#x27;est pas apte a recevoir l&#x27;impurete selon R. Chimon, qui dit [qu&#x27;]un aliment qu&#x27;on ne peut donner a manger a autrui n&#x27;est pas un aliment ? Et cela ne ressemble pas aux autres manches : car la-bas ils ne recoivent pas l&#x27;impurete parce qu&#x27;ils ne sont pas aptes a la consommation et ne sont que du bois ordinaire, tandis qu&#x27;ici c&#x27;[est] un aliment veritable, mais [c&#x27;est] une autre cause qui fait qu&#x27;il n&#x27;est pas apte a etre donne a manger a autrui, comme je l&#x27;ai explique plus haut a propos de &#x27;la bete de son vivant, qu&#x27;en est-il&#x27;, etc.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Troisieme question, posee par <b>Rabbi Yirmeya</b> selon R. Chimon. Les Sages ont dit que celui qui se <b>prosterne devant une demi-courge</b> (l'adorant comme idole) la rend <b>interdite a la jouissance</b> (avoda zara) — l'autre moitie restant permise. Sur quoi Rabbi Yirmeya pose son dilemme [poursuivi au daf suivant] : la moitie adoree, devenue interdite (et donc, pour R. Chimon, inapte a l'impurete des aliments), fait-elle malgre tout <b>manche</b> pour l'autre moitie ?</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Chullin_127b.html">&lsaquo; Chullin 127b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Chullin_128b.html">Chullin 128b &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

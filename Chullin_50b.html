@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chullin 50b — qu&#x27;est-ce que la &#x27;panse interne&#x27; (keres ha-penimit) ? et l&#x27;aiguille dans le feuillet</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Chullin 50b — qu&#x27;est-ce que la &#x27;panse interne&#x27; (keres ha-penimit) ? et l&#x27;aiguille dans le feuillet</h1>
+    <div class="ref">Chullin 50b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Chullin_50a.html">&lsaquo; Chullin 50a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Chullin_51a.html">Chullin 51a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> Le daf poursuit la michna des tereifot du systeme digestif. Rav Nahman fixe d&#x27;abord que, meme si tout le point de jonction du rectum est enleve, la bete reste cachere pourvu qu&#x27;il reste &#x27;de quoi saisir&#x27; (un doigt, meme chez un grand boeuf).</p><p>Le coeur de la sougya : definir la &#x27;panse interne&#x27; (keres ha-penimit), perforee au moindre trou et donc tereifa, par opposition a la &#x27;panse externe&#x27; qui n&#x27;est tereifa que par une dechirure majoritaire. Sept avis s&#x27;affrontent (le caecum sania divi ; l&#x27;orifice istomkha ; un endroit etroit indetermine ; de l&#x27;etranglement vers le bas ; la zone sans &#x27;laine&#x27; ; un tefah d&#x27;oesophage ; toute la panse), puis Rabba bar Rav Houna la situe a la mafraata (le cote tourne vers le sol, decouvert a l&#x27;ouverture de la bete), pratique suivie a Nehardea, ou Ameimar montre a Rav Achi que la plupart des avis s&#x27;y rattachent.</p><p>R. Elazar relit ensuite &#x27;grande&#x27; et &#x27;petite&#x27; panse de Rabbi Yehouda non litteralement mais comme deux seuils (tefah ou majorite).</p><p>Geneiva fixe le trou rond invalidant (plus grand qu&#x27;un sela, soit trois noyaux de datte). Enfin la braita traite de l&#x27;aiguille trouvee dans l&#x27;epaisseur du feuillet-bonnet (bet ha-kossot) : cachere si elle perce d&#x27;un seul cote, tereifa des deux cotes, avec examen d&#x27;un grumeau de sang.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="340" fill="#fffdf8"/>
+  <text x="360" y="22" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Qu'est-ce que la 'panse interne' (keres ha-penimit) ? Sept avis</text>
+  <text x="360" y="40" text-anchor="middle" font-size="10.5" fill="#78716c">perforee au moindre trou -&gt; tereifa ; la 'panse externe' n'est tereifa que par une dechirure majoritaire</text>
+  <rect x="20" y="56" width="216" height="58" rx="9" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="128" y="76" text-anchor="middle" font-size="11.5" font-weight="700" fill="#4338ca">Rabbi Natan / R. Yehochoua</text>
+  <text x="128" y="96" text-anchor="middle" font-size="11" fill="#292524">sania divi (le caecum)</text>
+  <text x="128" y="109" text-anchor="middle" font-size="9.5" fill="#78716c">poche close, maigre et repugnante</text>
+  <rect x="252" y="56" width="216" height="58" rx="9" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="360" y="76" text-anchor="middle" font-size="11.5" font-weight="700" fill="#4338ca">Rabbi Yichmael</text>
+  <text x="360" y="96" text-anchor="middle" font-size="11" fill="#292524">istomkha de-karsa</text>
+  <text x="360" y="109" text-anchor="middle" font-size="9.5" fill="#78716c">l'orifice / entree de la panse</text>
+  <rect x="484" y="56" width="216" height="58" rx="9" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="592" y="76" text-anchor="middle" font-size="11.5" font-weight="700" fill="#4338ca">R. Yohanan (R. Asi)</text>
+  <text x="592" y="96" text-anchor="middle" font-size="11" fill="#292524">un endroit etroit</text>
+  <text x="592" y="109" text-anchor="middle" font-size="9.5" fill="#78716c">'mais j'ignore lequel'</text>
+  <rect x="20" y="126" width="216" height="58" rx="9" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="128" y="146" text-anchor="middle" font-size="11.5" font-weight="700" fill="#4338ca">Rav Aha bar Rav Ava</text>
+  <text x="128" y="166" text-anchor="middle" font-size="11" fill="#292524">de l'etranglement vers le bas</text>
+  <text x="128" y="179" text-anchor="middle" font-size="9.5" fill="#78716c">vers l'oesophage, bete suspendue</text>
+  <rect x="252" y="126" width="216" height="58" rx="9" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="360" y="146" text-anchor="middle" font-size="11.5" font-weight="700" fill="#4338ca">Chmouel</text>
+  <text x="360" y="166" text-anchor="middle" font-size="11" fill="#292524">l'endroit sans 'laine'</text>
+  <text x="360" y="179" text-anchor="middle" font-size="9.5" fill="#78716c">zone lisse, sans villosites</text>
+  <rect x="484" y="126" width="216" height="58" rx="9" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="592" y="146" text-anchor="middle" font-size="11.5" font-weight="700" fill="#4338ca">Rav (par Geneiva)</text>
+  <text x="592" y="166" text-anchor="middle" font-size="11" fill="#292524">un tefah de l'oesophage</text>
+  <text x="592" y="179" text-anchor="middle" font-size="9.5" fill="#78716c">attenant a la panse</text>
+  <rect x="160" y="196" width="400" height="50" rx="9" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="360" y="216" text-anchor="middle" font-size="11.5" font-weight="700" fill="#4338ca">Bnei Maarava (Terre d'Israel), au nom de R. Yossi bar Hanina</text>
+  <text x="360" y="234" text-anchor="middle" font-size="11" fill="#292524">TOUTE la panse est 'interne' ; l'externe = la chair qui l'enveloppe</text>
+  <rect x="20" y="262" width="680" height="62" rx="10" fill="#eafaf1" stroke="#15803d"/>
+  <text x="360" y="283" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">Rabba bar Rav Houna : la mafraata</text>
+  <text x="360" y="302" text-anchor="middle" font-size="11" fill="#292524">le cote de la panse tourne vers le sol, decouvert des qu'on ouvre la bete (heikha de-farei tabahei)</text>
+  <text x="360" y="318" text-anchor="middle" font-size="10" fill="#78716c">A Nehardea on tranche selon Rabba ; tous les avis du haut s'y rattachent (Ameimar a Rav Achi)</text>
+</svg></div>
+          <figcaption>Les sept definitions de la &#x27;panse interne&#x27; (segments 1-6) et la decision pratique de Rabba bar Rav Houna (la mafraata) suivie a Nehardea.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 232" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="232" fill="#fffdf8"/>
+  <text x="360" y="22" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">La dechirure de la panse externe (Rabbi Yehouda relu par R. Elazar)</text>
+  <text x="360" y="40" text-anchor="middle" font-size="10.5" fill="#78716c">'grande' et 'petite' ne sont pas litterales : ce qui compte, c'est le seuil atteint en premier</text>
+  <rect x="30" y="56" width="312" height="150" rx="10" fill="#fef3e2" stroke="#b45309"/>
+  <text x="186" y="78" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b45309">'Grande' (bete a grande panse)</text>
+  <text x="186" y="104" text-anchor="middle" font-size="11" fill="#292524">un tefah dechire SANS atteindre</text>
+  <text x="186" y="120" text-anchor="middle" font-size="11" fill="#292524">la majorite</text>
+  <text x="186" y="146" text-anchor="middle" font-size="11.5" fill="#1c1917">seuil = un tefah (une paume)</text>
+  <text x="186" y="178" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b45309">tefah -&gt; tereifa</text>
+  <rect x="378" y="56" width="312" height="150" rx="10" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="534" y="78" text-anchor="middle" font-size="12.5" font-weight="700" fill="#4338ca">'Petite' (bete a petite panse)</text>
+  <text x="534" y="104" text-anchor="middle" font-size="11" fill="#292524">la majorite dechiree SANS atteindre</text>
+  <text x="534" y="120" text-anchor="middle" font-size="11" fill="#292524">un tefah entier</text>
+  <text x="534" y="146" text-anchor="middle" font-size="11.5" fill="#1c1917">seuil = la majorite (rouba)</text>
+  <text x="534" y="178" text-anchor="middle" font-size="11.5" font-weight="700" fill="#4338ca">majorite -&gt; tereifa</text>
+</svg></div>
+          <figcaption>La relecture de Rabbi Elazar (segments 7-8) : &#x27;grande&#x27; et &#x27;petite&#x27; panse = deux seuils de dechirure (un tefah, ou la majorite).</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="250" fill="#fffdf8"/>
+  <text x="360" y="22" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">L'aiguille trouvee dans l'epaisseur du feuillet-bonnet (bet ha-kossot)</text>
+  <rect x="40" y="44" width="290" height="186" rx="10" fill="#eafaf1" stroke="#15803d"/>
+  <text x="185" y="66" text-anchor="middle" font-size="12.5" font-weight="700" fill="#15803d">Perce d'un seul cote</text>
+  <rect x="70" y="86" width="230" height="40" fill="#e7e2d8" stroke="#a8a29e"/>
+  <text x="185" y="110" text-anchor="middle" font-size="9.5" fill="#78716c">paroi (deux peaux)</text>
+  <line x1="120" y1="150" x2="150" y2="106" stroke="#0891b2" stroke-width="3"/>
+  <text x="185" y="170" text-anchor="middle" font-size="11" fill="#292524">la paroi n'est pas traversee</text>
+  <text x="185" y="206" text-anchor="middle" font-size="12.5" font-weight="700" fill="#15803d">CACHERE</text>
+  <rect x="390" y="44" width="290" height="186" rx="10" fill="#fdeaea" stroke="#b91c1c"/>
+  <text x="535" y="66" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b91c1c">Perce des deux cotes</text>
+  <rect x="420" y="86" width="230" height="40" fill="#e7e2d8" stroke="#a8a29e"/>
+  <text x="535" y="110" text-anchor="middle" font-size="9.5" fill="#78716c">paroi (deux peaux)</text>
+  <line x1="500" y1="150" x2="570" y2="62" stroke="#0891b2" stroke-width="3"/>
+  <text x="535" y="170" text-anchor="middle" font-size="11" fill="#292524">la paroi est traversee de part en part</text>
+  <text x="535" y="200" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b91c1c">TEREIFA</text>
+  <text x="535" y="220" text-anchor="middle" font-size="9.5" fill="#78716c">sauf examen : un grumeau de sang...</text>
+</svg></div>
+          <figcaption>L&#x27;aiguille dans l&#x27;epaisseur du feuillet-bonnet (segment 10) : cachere d&#x27;un seul cote, tereifa des deux cotes.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בוקי סריקי? הכי אמר רב נחמן: מקום הדבק, אפילו ניטל כולו – כשר, והוא שנשתייר בו כדי תפיסה. וכמה? אמר אביי: כמלא בטדא בתורא.</div>
+            <div class="fr"><p>[Des] cruches vides ? [c&#x27;est-a-dire des propos sans substance, attribues a tort ?] Ainsi a dit Rav Nahman : [au] lieu de la jonction [du rectum aux cuisses], meme s&#x27;il a ete enleve en entier — [la bete est] cachere, et ce[la] pourvu qu&#x27;il en soit reste de quoi saisir.</p><p>Et combien [faut-il] ? Abaye a dit : pleine largeur d&#x27;un doigt (beteda) chez un boeuf.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בוקי סריקי</b> כדים רקים כלומר דברים שאינן:</div>
+          <div class="glose-fr">Bouki sireki (des cruches vides) — des cruches vides, c&#x27;est-a-dire des choses qui ne [sont] pas [substantielles].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>תפיסה</b> אחיזת יד:</div>
+          <div class="glose-fr">De quoi saisir (tefissa) — une prise de la main.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בטדא</b> אצבע:</div>
+          <div class="glose-fr">Beteda — un doigt.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בתורא</b> אפילו בשור גדול די בכך:</div>
+          <div class="glose-fr">Chez un boeuf (betora) — meme chez un grand boeuf, cela suffit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara poursuit une discussion entamee plus haut : 'des cruches vides' designe des propos creux attribues a tort a un Maitre. Puis <b>Rav Nahman</b> tranche sur le point ou le rectum se rattache aux cuisses : meme si toute cette <b>jonction (mekom ha-devek)</b> a ete arrachee, la bete reste <b>cachere</b> tant qu'il subsiste 'de quoi saisir'. <b>Abaye</b> precise la mesure : la <b>largeur d'un doigt</b>, et cela suffit meme chez un grand boeuf.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הכרס הפנימי. אמר רב יהודה אמר רב: העיד נתן בר שילא ריש טבחיא דצפורי לפני רבי משום רבי נתן: אי זו היא כרס הפנימי? סניא דיבי. וכן אמר רבי יהושע בן קרחה: סניא דיבי. רבי ישמעאל אמר: איסתומכא דכרסא.</div>
+            <div class="fr"><p>[La michna :] &#x27;la panse interne (ha-keres ha-penimit) [perforee, tereifa].&#x27; Rav Yehouda a dit au nom de Rav : Natan bar Chila, chef des bouchers de Tsippori, a temoigne devant Rabbi [Yehouda ha-Nassi] au nom de Rabbi Natan : quelle est la panse interne ? Le sania divi (le caecum).</p><p>Et de meme a dit Rabbi Yehochoua ben Korha : le sania divi. Rabbi Yichmael a dit : l&#x27;istomkha de-karsa (l&#x27;orifice de la panse).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>סניא דיבי</b> קרשטי&quot;א בודי&quot;ל לשון מורי והוא עשוי ככיס וסתום בראשו וכך מצאתי באל&quot;ף בי&quot;ת של רבי מכיר בודי&quot;ל שאצלי&quot;ר ולשון סניא דיבי לפי שהוא מקום מאוס וכחוש ואפילו לזאבים וכל שאר הכרס קרוי חיצון ושיעורו ברוב. לישנא אחרינא שמעתי מן הפנצ&quot;א עצמה הוא מקום שמנקבים שם הטבחים הכרס ומוציאים הפרש מקום שהשנאוי זב והראשון נראה:</div>
+          <div class="glose-fr">Sania divi — &#x27;kerechtia&#x27; [boudin] &#x27;boudil&#x27; dans la langue de mon maitre ; et il est fait comme une bourse, ferme a son extremite ; et ainsi l&#x27;ai-je trouve dans l&#x27;alphabet de Rabbi Makhir : &#x27;boudil&#x27;, &#x27;chatzlier&#x27; ; et le terme &#x27;sania divi&#x27; [vient de ce] que c&#x27;est un endroit repugnant et maigre, [repugnant] meme pour les loups. Et tout le reste de la panse est appele &#x27;externe&#x27;, et sa mesure [pour etre tereifa est] dans la majorite. Autre version : j&#x27;ai entendu [que c&#x27;est] le pansa (l&#x27;estomac) lui-meme, l&#x27;endroit ou les bouchers percent la panse et font sortir le fumier (la fiente) — l&#x27;endroit ou s&#x27;ecoule le [contenu] repugnant ; mais la premiere [explication] parait [juste].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>איסתומכא דכרסא</b> אני שמעתי איסתומכ&quot;א בלע&quot;ז ואיני יודע מהו:</div>
+          <div class="glose-fr">Istomkha de-karsa — moi j&#x27;ai entendu &#x27;istomkha&#x27; en langue vernaculaire, et je ne sais pas ce que c&#x27;est.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>On ouvre la definition de la <b>panse interne</b> (keres ha-penimit), celle qui rend tereifa au moindre trou. Premier groupe d'avis : Rabbi Natan et Rabbi Yehochoua ben Korha l'identifient au <b>sania divi</b>, une poche close, maigre et repugnante (le caecum) ; Rabbi Yichmael l'identifie a l'<b>istomkha de-karsa</b>, l'orifice ou entree de la panse.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רב אסי אמר רבי יוחנן: מקום צר יש בכרס, ואיני יודע איזהו. אמר רב נחמן בר יצחק: נפל כרסא בבירא. אמר רב אחא בר רב עוא אמר רב אסי: מן המיצר ולמטה.</div>
+            <div class="fr"><p>Rav Asi a dit au nom de Rabbi Yohanan : il y a un endroit etroit dans la panse [, et c&#x27;est lui la panse interne], mais je ne sais pas lequel [c&#x27;est]. Rav Nahman bar Yitshak a dit : la panse est tombee dans un puits [tu ne nous as rien explique du tout].</p><p>Rav Aha bar Rav Ava a dit au nom de Rav Asi : depuis l&#x27;etranglement (ha-mitsar) et vers le bas.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(5)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מקום צר יש בכרס</b> שהוא קרוי כרס הפנימי וכל שאר הכרס קרוי חיצונה:</div>
+          <div class="glose-fr">Il y a un endroit etroit dans la panse — qui est appele &#x27;panse interne&#x27;, et tout le reste de la panse est appele &#x27;externe&#x27;.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>נפל כרסא בבירא</b> הואיל ואינך יודע היכן הוא לא פירשת לנו כלום:</div>
+          <div class="glose-fr">La panse est tombee dans un puits — puisque tu ne sais pas ou c&#x27;est, tu ne nous as rien explique.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>א&quot;ר אחא</b> אני אפרש אותו מקום צר:</div>
+          <div class="glose-fr">Rav Aha a dit — moi, j&#x27;expliquerai cet endroit etroit.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מן המיצר ולמטה</b> ממקום שהכרס הולך ומיצר לצד הוושט הוא קרוי פנימי מפני שנחבא בדופני החזה:</div>
+          <div class="glose-fr">Depuis l&#x27;etranglement et vers le bas — depuis l&#x27;endroit ou la panse va se retrecissant vers le cote de l&#x27;oesophage, c&#x27;est [cela] qui est appele &#x27;interne&#x27;, parce qu&#x27;il est cache dans les parois de la poitrine.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ולמטה</b> כשהבהמה תלויה:</div>
+          <div class="glose-fr">Et vers le bas — lorsque la bete est suspendue.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabbi Yohanan situe la panse interne en un <b>endroit etroit</b> de la panse, mais avoue 'je ne sais pas lequel'. Rav Nahman bar Yitshak ironise : '<b>la panse est tombee dans un puits</b>' — definition introuvable, donc inutilisable. Rav Aha bar Rav Ava precise au nom de Rav Asi : depuis l'<b>etranglement</b> (le point ou la panse se retrecit vers l'oesophage) et <b>vers le bas</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רבי יעקב בר נחמני אמר שמואל: מקום שאין בו מילת. רבי אבינא אמר גניבא משמיה דרב: טפח בוושט סמוך לכרס – זו היא כרס הפנימית.</div>
+            <div class="fr"><p>Rabbi Yaakov bar Nahmani a dit au nom de Chmouel : l&#x27;endroit ou il n&#x27;y a pas de &#x27;laine&#x27; (milat). Rabbi Avina a dit [au nom de] Geneiva, au nom de Rav : un tefah (une paume) dans l&#x27;oesophage, attenant a la panse — c&#x27;est cela la panse interne.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מקום שאין בו מילת</b> מקום יש בכרס חלק שאין שם אותו צמר שגוררין ברותחים מן הכרס:</div>
+          <div class="glose-fr">L&#x27;endroit ou il n&#x27;y a pas de &#x27;laine&#x27; — il y a dans la panse un endroit lisse ou il n&#x27;y a pas cette &#x27;laine&#x27; (ce duvet) qu&#x27;on racle a l&#x27;[eau] bouillante depuis la panse.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Encore deux avis. Pour <b>Chmouel</b>, c'est la zone <b>sans 'laine'</b> (milat) : l'endroit lisse de la panse, depourvu des villosites qu'on racle a l'eau bouillante. Pour <b>Rav</b> (rapporte par Geneiva via Rabbi Avina), c'est en realite <b>un tefah de l'oesophage</b> (veshet) attenant a la panse — donc situe non dans la panse mais juste avant elle.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמרי במערבא משמיה דרבי יוסי בר חנינא: כל הכרס כולו – זו היא כרס הפנימית, ואיזהו כרס החיצון? בשר החופה את רוב הכרס. רבה בר רב הונא אמר: מפרעתה. מאי מפרעתה? אמר רב אויא: היכא דפרעי טבחי.</div>
+            <div class="fr"><p>On dit en Occident (Terre d&#x27;Israel) au nom de Rabbi Yossi bar Hanina : toute la panse entiere — c&#x27;est cela la panse interne ; et quelle est la panse externe ? La chair qui enveloppe la majorite de la panse.</p><p>Rabba bar Rav Houna a dit : sa mafraata. Qu&#x27;est-ce que la mafraata ?</p><p>Rav Avya a dit : la ou les bouchers ouvrent (eventrent).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בשר החופה</b> פירשתיו וזהו קרום עב העובר על כל החלל וקורין לו טינפ&quot;א וישנו מן החזה ועד היריכים והכרס הקרוי פנצ&quot;א מעוטו נחבא בצלעות החזה ורובו תחת אותו קרום ורוב החיצונה דקאמר מתניתין רואין כמה יש מן הקרום כנגד אותו רוב הכרס ואם נקרע שם רוב מה שיש מן הקרום כנגד הכרס טרפה ואם ממקום שהכרס כלה ולמטה נקרע אותו קרום כשרה והיינו דאמרינן לקמן רובא ולא הוי טפח זו היא ששנינו כו&#x27; ואי בכוליה קרום משערינן אין לך בהמה קטנה שאין ברוב שלה יותר מטפח וכל אמוראי דלעיל קרו פנימית וחיצונה בכרס עצמה:</div>
+          <div class="glose-fr">La chair qui enveloppe — je l&#x27;ai expliquee ; et c&#x27;est la membrane epaisse qui passe sur toute la cavite, et qu&#x27;on appelle &#x27;tinpa&#x27; [taie] ; et elle va de la poitrine jusqu&#x27;aux cuisses. Et la panse, appelee &#x27;pansa&#x27;, sa minorite est cachee dans les cotes de la poitrine, et sa majorite [est] sous cette membrane. Et &#x27;la majorite de l&#x27;externe&#x27; que dit la michna : on regarde combien il y a de la membrane en regard de cette majorite de la panse ; et si la majorite de ce qu&#x27;il y a de membrane en regard de la panse a ete dechiree la — [la bete est] tereifa ; et si c&#x27;est depuis l&#x27;endroit ou la panse s&#x27;acheve et vers le bas que cette membrane a ete dechiree — [elle est] cachere. Et c&#x27;est [ce] que nous disons plus loin : &#x27;la majorite sans qu&#x27;il y ait un tefah, c&#x27;est cela que nous avons appris [pour la petite], etc.&#x27; ; et si nous mesurions sur toute la membrane, tu n&#x27;aurais pas de petite bete dont la majorite [ne fasse] plus d&#x27;un tefah. Et tous les Amoraim ci-dessus appellent &#x27;interne&#x27; et &#x27;externe&#x27; [des parties] dans la panse elle-meme.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מפרעתה</b> צד הכרס הרואה את הקרקע הנראה מיד כשפותחין הבהמה להוציא את המעיים והיינו דמפרש היכא דפרעי טבחי:</div>
+          <div class="glose-fr">Mafraata — le cote de la panse qui voit le sol, [celui] qui apparait aussitot qu&#x27;on ouvre la bete pour en sortir les entrailles ; et c&#x27;est [ce] qu&#x27;explique [Rav Avya] : &#x27;la ou les bouchers ouvrent&#x27;.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ואיזהו כרס החיצונה בשר החופה את רוב הכרס</b> וא&quot;ת אם כן חסר להו מי&quot;ח טרפות דבשר החופה את רוב הכרס הוא משב שמעתא דבריש פירקין ובריש פירקין (דף מג.) פירשתי:</div>
+          <div class="glose-fr">Et quelle est la panse externe ? La chair qui enveloppe la majorite de la panse — et si tu objectes : s&#x27;il en est ainsi, il leur manque [une] des dix-huit tereifot, car &#x27;la chair qui enveloppe la majorite de la panse&#x27; relevait des sept enseignements (chev chemaata) du debut de notre chapitre. [Reponse :] au debut de notre chapitre (folio 43a) je l&#x27;ai explique.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>L'avis de la <b>Terre d'Israel</b> (R. Yossi bar Hanina) : <b>toute</b> la panse est 'interne' (donc tereifa au moindre trou), et la 'panse <b>externe</b>' de la michna designe non une partie de la panse, mais la <b>chair qui l'enveloppe</b> (la membrane epaisse couvrant la majorite de la panse). Puis <b>Rabba bar Rav Houna</b> donne la definition qui sera retenue en pratique : la <b>mafraata</b>, expliquee par Rav Avya comme l'endroit que les bouchers <b>eventrent</b> (le cote tourne vers le sol, decouvert des qu'on ouvre la bete).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בנהרדעא עבדי כרבה בר רב הונא. אמר ליה רב אשי לאמימר: כל הני שמעתתא מאי? אמר ליה: כולהו שייכן בדרבה בר רב הונא.</div>
+            <div class="fr"><p>A Nehardea, ils pratiquaient comme Rabba bar Rav Houna. Rav Achi dit a Ameimar : tous ces enseignements [les autres avis], quoi [en faire] ?</p><p>Il lui dit : tous se rattachent a [l&#x27;avis de] Rabba bar Rav Houna.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כולהו שייכן בדרבה</b> סניא דיבי ואיסתומכא ומקום שאין בו מילת כולן באותו צד עומדים או למעלה או למטה וכי טרפת לה לכל אותו צד בנקב במשהו הנמצא בו מקיימת להו לכולהו: אמימר מנהרדעא הוה כדאמרינן בשנים אוחזין (ב&quot;מ דף טז:) אנא מנהרדעא אנא וסבירא לי שומא הדרא לעולם:</div>
+          <div class="glose-fr">Tous se rattachent a [l&#x27;avis de] Rabba — le sania divi, l&#x27;istomkha et l&#x27;endroit sans &#x27;laine&#x27; : tous se tiennent de ce meme cote, soit en haut soit en bas ; et lorsque tu rends tereifa tout ce cote-la par un trou de la moindre [taille] qui s&#x27;y trouve, tu confirmes [l&#x27;avis de] tous. Ameimar etait de Nehardea, comme nous le disons dans [le chapitre] Chenayim Ohazin (Bava Metsia 16b) : &#x27;moi je suis de Nehardea, et je tiens [que] la confiscation (chouma) revient [au proprietaire] pour toujours&#x27;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Decision pratique : a <b>Nehardea</b> on suivait <b>Rabba bar Rav Houna</b> (la mafraata). Rav Achi demande alors a Ameimar ce qu'il advient des <b>autres avis</b>. Ameimar repond qu'ils se <b>rattachent tous</b> a celui de Rabba : caecum, orifice, zone sans 'laine'... tous se trouvent du cote tourne vers le sol, donc inclus dans la mafraata.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ודרב אסי אמר רבי יוחנן, מאי אמר ליה? כבר פירשה רב אחא בר עוא. ודרבי אבינא ודבני מערבא, מאי אמר ליה? הני ודאי פליגי.</div>
+            <div class="fr"><p>Et [l&#x27;avis de] Rav Asi au nom de Rabbi Yohanan, que lui a-t-il dit [comment s&#x27;y rattache-t-il] ? Rav Aha bar Ava l&#x27;a deja explique [: de l&#x27;etranglement vers le bas, ce qui correspond a la mafraata].</p><p>Et [les avis] de Rabbi Avina et des gens d&#x27;Occident, que lui a-t-il dit ? Ceux-la, assurement, divergent.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(6)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דרב אסי אמר ר&#x27; יוחנן</b> דאמר לעיל ואיני יודע איזהו:</div>
+          <div class="glose-fr">[L&#x27;avis] de Rav Asi au nom de Rabbi Yohanan — qui a dit plus haut &#x27;mais je ne sais pas lequel&#x27;.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מאי</b> אמריתו עלה הא איכא לספוקי בכל הכרס כולו:</div>
+          <div class="glose-fr">Quoi [en faire] — avez-vous dit a son sujet ? car il y a [matiere] a douter [et a rendre tereifa] dans toute la panse entiere.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אמר ליה כבר פירשה רב אחא</b> דהיינו מן המצר ולמטה וההוא כנגד מפרעתה היא:</div>
+          <div class="glose-fr">Il lui dit : Rav Aha l&#x27;a deja explique — a savoir &#x27;de l&#x27;etranglement et vers le bas&#x27;, et cela [se trouve] en regard de la mafraata.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ודרבי אבינא</b> דאמר כרס הפנימי בוושט הוא:</div>
+          <div class="glose-fr">Et [l&#x27;avis] de Rabbi Avina — qui dit [que] la panse interne est dans l&#x27;oesophage.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ודבני מערבא</b> דאמרי כל הכרס כולו קרוי פנימי ונידון בנקב משהו:</div>
+          <div class="glose-fr">Et [l&#x27;avis] des gens d&#x27;Occident — qui disent [que] toute la panse entiere est appelee &#x27;interne&#x27; et est jugee [tereifa] au trou de la moindre [taille].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מאי</b> וכיון דלא אפסיק הלכתא עבדינן לחומרא וטרפינן בכל הכרס בנקב במשהו כבני מערבא. ומיהו כל הנך טרפות אנן לא טרחינן למיבדקי בתרייהו דכל כמה דלא מישתכחן אזלינן בתר רובא כדנפקא לן בפרק קמא (לעיל חולין יא.) מהאליה תמימה ומקראי טובא ובסירכי דריאה משום דשכיחן בדקינן בתרייהו:</div>
+          <div class="glose-fr">Quoi [en faire] — et puisque la halakha n&#x27;a pas ete tranchee [entre eux], nous agissons par rigueur et nous rendons tereifa pour [un trou] dans toute la panse, [meme] au trou de la moindre [taille], comme les gens d&#x27;Occident. Toutefois, toutes ces tereifot, nous ne nous donnons pas la peine de les rechercher [par examen] ; car tant qu&#x27;elles ne se trouvent pas [d&#x27;elles-memes], nous suivons la majorite, comme nous le derivons au premier chapitre (plus haut, Houlin 11a) du [verset] &#x27;la queue entiere&#x27; (ha-alya temima) et de nombreux versets ; mais les adherences (sirkhei) du poumon, parce qu&#x27;elles sont frequentes, nous les recherchons [par examen].</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Achi poursuit l'examen avis par avis. Celui de <b>Rabbi Yohanan</b> ('un endroit etroit, mais j'ignore lequel') a deja ete <b>precise</b> par Rav Aha bar Ava ('de l'etranglement vers le bas'), qui correspond a la mafraata. En revanche, les avis de <b>Rabbi Avina</b> (un tefah d'oesophage) et des <b>gens d'Occident</b> (toute la panse) <b>divergent</b> reellement de Rabba ; mais on ne les suit pas en pratique, ou l'on tranche par precaution.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רבי יהודה אומר: בגדולה כו׳. אמר רבי בנימין בר יפת אמר רבי אלעזר: לא ״גדולה״ – גדולה ממש, ולא ״קטנה״ – קטנה ממש, אלא כל שנקרע בה טפח ולא הוי רובא – זו היא ששנינו: ״בגדולה טפח״, רובא ולא הוי טפח – זו היא ששנינו: ״בקטנה ברובא״.</div>
+            <div class="fr"><p>[La michna :] &#x27;Rabbi Yehouda dit : pour une grande [bete], etc. [un tefah ; pour une petite, la majorite].&#x27; Rabbi Binyamin bar Yefet a dit au nom de Rabbi Elazar : &#x27;grande&#x27; n&#x27;[est] pas grande au sens propre, et &#x27;petite&#x27; n&#x27;[est] pas petite au sens propre, mais : toute [bete] dont [la panse] se dechire d&#x27;un tefah sans que cela [n&#x27;]atteigne la majorite — c&#x27;est cela que nous avons appris [par] &#x27;pour une grande [bete], un tefah&#x27; ; [toute bete dont la panse atteint] la majorite sans qu&#x27;il [n&#x27;]y ait un tefah — c&#x27;est cela que nous avons appris [par] &#x27;pour une petite [bete], a la majorite&#x27;.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>גדולה ממש</b> גדולה שבגדולות:</div>
+          <div class="glose-fr">Grande au sens propre — la plus grande des grandes.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כל שנקרע בה וכו&#x27;</b> כלומר כל היכא דמשתכחא או טפח או רובא טרפה:</div>
+          <div class="glose-fr">Toute [bete] dont [la panse] se dechire, etc. — c&#x27;est-a-dire : partout ou se trouve [une dechirure d&#x27;]un tefah ou de la majorite, [la bete est] tereifa.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>רובא פשיטא</b> דרובו ככולו:</div>
+          <div class="glose-fr">La majorite, [c&#x27;est] evident — car sa majorite [est] comme son tout.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Relecture de la michna par <b>Rabbi Elazar</b> : 'grande' et 'petite' bete ne sont pas a prendre <b>litteralement</b>. La regle vise deux <b>seuils</b> : une bete a panse assez large pour qu'un <b>tefah</b> (une paume) dechiree ne represente pas encore la majorite -&gt; tereifa des un tefah ; une bete a panse assez petite pour que la <b>majorite</b> dechiree n'atteigne pas un tefah -&gt; tereifa des la majorite. En somme : une panse externe dechiree soit d'un tefah, soit en majorite, rend tereifa.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רובא ולא הוי טפח, פשיטא! לא צריכא, דהויא טפח במשהו, מהו דתימא: עד דמיקרע בה טפח לא הוי טרפה, קא משמע לן.</div>
+            <div class="fr"><p>[Que la bete soit tereifa quand la panse atteint] la majorite sans qu&#x27;il [n&#x27;]y ait un tefah — [c&#x27;est] evident [, puisque la majorite vaut le tout] ! [Non,] ce n&#x27;est pas necessaire [a enseigner pour un cas ordinaire] : [c&#x27;est necessaire] dans [le cas] ou il y aurait un tefah au moindre [surplus] (tefah be-machehou) [: la panse externe est tout juste un peu plus petite que deux tefahim].</p><p>[Car] tu aurais pu dire : tant qu&#x27;elle ne s&#x27;est pas dechiree d&#x27;un tefah, elle n&#x27;est pas tereifa — [c&#x27;est pourquoi la michna] nous enseigne [qu&#x27;il n&#x27;en est rien].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הכי גרסינן לא צריכא דהויא טפח במשהו</b> אי הויא משהו טפי מרובא הוה מיקרע טפח:</div>
+          <div class="glose-fr">Ainsi lisons-nous : &#x27;ce n&#x27;est pas necessaire [sauf] dans [le cas] ou il y aurait un tefah au moindre [surplus]&#x27; — [c&#x27;est-a-dire que] s&#x27;il y avait un rien de plus que la majorite, [la dechirure] ferait un tefah.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רובא ולא הוי טפח פשיטא</b> פי&#x27; פשיטא דרוב מועיל לכולי עלמא וקצת תימה מאי קא משני לא צריכא דאיכא טפח במשהו מהו דתימא עד דמיקרע בה טפח לא הוה טרפה ואמאי ס&quot;ד למימר הכי ורבינו חננאל גריס דאיכא טפח ומשהו ורוצה לפרש רובא דלא הוי טפח היינו כשאין בכל הכרס טפח ולכך פריך שפיר פשיטא דלא בעי טפח שהרי אין בכולה טפח ומשני כגון דאיכא טפח ומשהו מהו דתימא כיון דאיכא בכולה טפי מטפח לא מיטרפא עד דמקרע טפח:</div>
+          <div class="glose-fr">La majorite sans qu&#x27;il [n&#x27;]y ait un tefah, [c&#x27;est] evident — c&#x27;est-a-dire : il est evident que la majorite sert [a rendre tereifa] de l&#x27;avis de tous. Et c&#x27;est un peu etonnant : que repond-il [en disant] &#x27;ce n&#x27;est pas necessaire [sauf] la ou il y a un tefah au moindre surplus, [car] tu aurais pu dire : tant qu&#x27;elle ne s&#x27;est pas dechiree d&#x27;un tefah, elle n&#x27;est pas tereifa&#x27; — et pourquoi serait-il venu a l&#x27;esprit de dire cela ? Et Rabbenou Hananel lit &#x27;[le cas] ou il y a un tefah et un rien (machehou)&#x27;, et veut expliquer [que] &#x27;la majorite sans qu&#x27;il y ait un tefah&#x27; [vise le cas] ou il n&#x27;y a pas, dans toute la panse, [un] tefah ; et c&#x27;est pourquoi il objecte a bon droit &#x27;[c&#x27;est] evident&#x27; qu&#x27;on n&#x27;exige pas un tefah, puisqu&#x27;il n&#x27;y a pas un tefah dans toute [la panse] ; et il repond : par exemple [le cas] ou il y a un tefah et un rien — tu aurais pu dire : puisqu&#x27;il y a dans toute [la panse] plus d&#x27;un tefah, elle n&#x27;est pas tereifa tant qu&#x27;elle ne s&#x27;est pas dechiree d&#x27;un tefah.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection : que la <b>majorite</b> rende tereifa, c'est <b>evident</b> (la majorite vaut le tout) ! Reponse : la regle est <b>necessaire</b> dans le cas limite ou la panse externe fait tout juste un peu moins de <b>deux tefahim</b> (donc 'un tefah au moindre surplus'). On aurait pu croire qu'ici il faut un <b>tefah entier</b> dechire pour rendre tereifa ; la michna enseigne que <b>non</b> : la majorite dechiree suffit, meme si elle fait moins d'un tefah.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר גניבא אמר רבי אסי: נקדרה כסלע – טרפה, שאם תמתח תעמוד על הטפח. אמר רבי חייא בר אבא: לדידי מפרשא לי מיניה דגניבא אמברא דנהרדעא – כסלע כשרה, יתר מכסלע טרפה. וכמה יתר מכסלע? אמר רב יוסף: כגון דעיילן תלת קשייתא בציפא בדוחקא, בלא ציפא ברווחא.</div>
+            <div class="fr"><p>Geneiva a dit au nom de Rabbi Asi : [si la panse externe] a ete percee [d&#x27;un trou rond] comme un sela (une piece) — [la bete est] tereifa, car si on l&#x27;etire, [le trou] atteindra un tefah. Rabbi Hiyya bar Aba a dit : a moi, [la chose] m&#x27;a ete expliquee par Geneiva lui-meme, au bac (au passage d&#x27;eau) de Nehardea : comme un sela — cachere ; plus qu&#x27;un sela — tereifa.</p><p>Et combien [vaut] &#x27;plus qu&#x27;un sela&#x27; ? Rav Yossef a dit : par exemple [le cas] ou trois noyaux [de datte] passent, avec la pulpe (betsifa) a l&#x27;etroit, [ou] sans la pulpe au large.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>נקדרה</b> כמין ארובה עגולה ורוחב הקדירה כסלע מטבע רחב הוא:</div>
+          <div class="glose-fr">A ete percee (nikdera) — comme une sorte de lucarne ronde, et la largeur de la perforation [est] comme un sela, une piece large.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שאם תמתח</b> אי הוה מושכו לכאן ולכאן שיכנס העוגל לאורך או לרוחב תמצא בו טפח באותה קדירה:</div>
+          <div class="glose-fr">Car si on l&#x27;etire — si on le tirait de-ci de-la, de sorte que le rond s&#x27;allonge en longueur ou en largeur, tu trouverais un tefah dans cette perforation.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>תלת קשייתא</b> גרעיני תמרה:</div>
+          <div class="glose-fr">Trois noyaux (telat kachyata) — des noyaux de datte.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בציפא</b> עם אוכל הנשאר סביבותיה כשאוכלין אותה יכנסו שלשה בנקב בדוחק או בלא ציפא בהרווחה:</div>
+          <div class="glose-fr">Avec la pulpe (betsifa) — avec l&#x27;aliment qui reste autour d&#x27;eux quand on les mange : [si] trois [noyaux] passent dans le trou a l&#x27;etroit, ou sans la pulpe au large.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לכשתמתח תעמוד על טפח</b> כשתקיף הסלע בחוט וימתח החוט יהיה בארכו טפח:</div>
+          <div class="glose-fr">Si on l&#x27;etire, [le trou] atteindra un tefah — si l&#x27;on entoure le sela d&#x27;un fil et qu&#x27;on etire le fil, sa longueur sera d&#x27;un tefah.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Geneiva</b> au nom de Rabbi Asi : un <b>trou rond</b> de la taille d'un <b>sela</b> (une piece de monnaie large) rend tereifa, car <b>etire</b> en longueur il vaudrait un tefah. Rabbi Hiyya bar Aba precise la version exacte recue de Geneiva : un trou <b>egal</b> a un sela laisse la bete <b>cachere</b>, un trou <b>plus grand</b> qu'un sela la rend <b>tereifa</b>. La mesure du 'plus grand qu'un sela', selon Rav Yossef : un trou ou passent <b>trois noyaux de datte</b> a l'etroit s'ils gardent leur pulpe, ou au large s'ils en sont depouilles.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">המסס ובית הכוסות, תנו רבנן: מחט שנמצאת בעובי בית הכוסות מצד אחד – כשרה, משני צדדים – טרפה. נמצא עליה קורט דם –</div>
+            <div class="fr"><p>[La michna :] &#x27;le feuillet (ha-messes) et le bonnet (bet ha-kossot) [perfores vers l&#x27;exterieur, tereifa].&#x27; Nos Maitres ont enseigne : une aiguille (mahat) qui se trouve dans l&#x27;epaisseur du bonnet (bet ha-kossot) d&#x27;un seul cote — [la bete est] cachere ; des deux cotes — [elle est] tereifa. [Si] l&#x27;on a trouve sur elle un grumeau (kort) de sang —</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מחט שנמצאת בעובי בית הכוסות בצד אחד כשרה</b> אבל בהמסס אפילו מצד אחד שלא נקב מעבר לעבר טרפה כך פירש רש״י במקום אחר ואפילו אם תמצא לומר דאין סברא שיהא טרפה הואיל ולא ניקב אלא חצי עור מצינו למימר דכוליה ניקב וחיישינן שמא הבריא כי היכי דחיישי&#x27; [גבי ושט] בריש פירקין (חולין דף מג.) למאן דחייש לספק דרוסה והא דקתני במתניתין המסס ובית הכוסות שנקבו לחוץ דמשמע דבעינן נקב מפולש לאו דוקא לחוץ שיהא מפולש אלא כלומר לחוץ כלפי חוץ ולאפוקי נקבו זה לתוך זה והא דקאמר מצד אחד כשרה בעובי בית הכוסות צריך לפרש אותו צד אחד מבפנים כלפי הריעי דאי צד שבחוץ כלפי חלל הגוף אפילו לא ניקב כלל אלא שנמצא מחט בחלל הגוף טרפה דאמר נקובי נקיב ואתאי ואין נראה לר״ת לומר שיהא טרפה בלא ניקב אלא חצי העור של המסס ונראה לו דהמסס נמי מצד אחד כשרה והא דנקט בעובי בית הכוסות מצד אחד כשרה רבותא קמשמע לן לפי שיש לו שני עורות וקמשמע לן דאע״ג שניקב עור אחד שלם אפילו הכי כשרה עד שניקבו שניהם ואגב דנקט מצד אחד כשרה נקט נמי משני צדדין טרפה אע״ג דמילתא דפשיטא היא ועוד אומר ר״ת דהאי נמי חדוש הוא דס״ד אמינא אפילו משני צדדין כגון שניקבו שני העורות כשרה לפי ששוכב ע״ג המסס ומדובק שם בשומן והוא הדין דאותו דבקות מגין שלא יצא הריעי מידי דהוה אחלחולת שניקבה וירכים מעמידין אותה דכשרה קא משמע לן הכא דטרפה וא״ת הא אמרינן בבמה מדליקין (שבת דף לו.) גבי הנהו תלת מילי דאישתנו שמייהו הובלילא בי כסי ובי כסי הובלילא למאי נפקא מינה למחט שנמצאת בעובי בית הכוסות והשתא מאי נפקותא איתא הא בתרוייהו אמרינן מצד אחד כשרה משני צדדים טרפה גם בהובלילא וי״ל דנפקא מינה שלא תטעה לפרש מה שאמר מצד אחד כשרה זהו בהובלילא דהיינו המסס שעתה קורין בית הכוסות אבל במה שקורין עכשיו הובלילא היינו מה שהיו רגילים לקרות בית הכוסות אפילו מצד אחד טרפה הואיל וניקב עור שלם אי נמי שלא נטעה נמי במשני צדדים טרפה דהוי במה שקורין אותו עכשיו בית הכוסות דהוא המסס אבל במה שקורין עכשיו הובלילא דהוא מה שקורין מתחלה בית הכוסות אפילו משני צדדין כשרה דהויא כמו חלחולת שניקבה וירכים מעמידין אותה:</div>
+          <div class="glose-fr">Une aiguille qui se trouve dans l&#x27;epaisseur du bonnet, d&#x27;un seul cote — cachere ; mais dans le feuillet (messes), meme d&#x27;un seul cote [, sans] qu&#x27;[elle] ait perce de part en part — [la bete est] tereifa ; ainsi Rachi a-t-il explique ailleurs. Et meme si l&#x27;on veut dire [qu&#x27;]il n&#x27;[est] pas logique qu&#x27;elle soit tereifa, puisqu&#x27;il n&#x27;a ete perce que la moitie de la peau, nous pouvons dire [que] tout [le reste] a ete perce, et que nous craignons qu&#x27;[il ne] se soit cicatrise (chema hivri) — de meme que nous craignons [, a propos de l&#x27;oesophage,] au debut de notre chapitre (Houlin 43a), pour celui qui tient compte du doute [de bete attaquee par] un fauve (sefek derousa). Et ce que la michna enseigne &#x27;le feuillet et le bonnet qui ont ete perfores vers l&#x27;exterieur&#x27;, d&#x27;ou il ressort qu&#x27;on requiert un trou perce de part en part — [cela] ne [veut] pas dire precisement &#x27;vers l&#x27;exterieur&#x27;, [a savoir] qu&#x27;il soit perce de part en part, mais cela veut dire &#x27;vers l&#x27;exterieur&#x27;, du cote de l&#x27;exterieur, et [c&#x27;est] pour exclure [le cas ou] ceux-ci se sont perces l&#x27;un dans l&#x27;autre. Et ce qu&#x27;il dit &#x27;d&#x27;un seul cote — cachere&#x27;, dans l&#x27;epaisseur du bonnet, il faut expliquer ce seul cote [comme etant] le cote de l&#x27;interieur, vers le [contenu] repugnant (la fiente) ; car si [c&#x27;est] le cote de l&#x27;exterieur, vers la cavite du corps, meme [si] elle n&#x27;a nullement perce, mais [qu&#x27;]une aiguille se trouve dans la cavite du corps — [la bete est] tereifa, car on dit : elle est venue en perforant. Et il ne parait pas a Rabbenou Tam de dire qu&#x27;[elle] soit tereifa sans qu&#x27;ait ete perce [plus] que la moitie de la peau du feuillet ; et il lui parait [que] pour le feuillet aussi, d&#x27;un seul cote, [la bete est] cachere. Et ce qu&#x27;il prend &#x27;[dans] l&#x27;epaisseur du bonnet, d&#x27;un seul cote — cachere&#x27;, il nous enseigne [par la] une nouveaute (rabouta), parce qu&#x27;[il a] deux peaux, et il nous enseigne que, bien qu&#x27;une [seule] peau entiere ait ete percee, malgre cela [la bete est] cachere, [et ne devient tereifa] que [lorsque] les deux ont ete percees ; et comme il a pris &#x27;d&#x27;un seul cote — cachere&#x27;, il a pris aussi &#x27;des deux cotes — tereifa&#x27;, bien que ce soit chose evidente. Et de plus, Rabbenou Tam dit que ceci aussi [est] une nouveaute, car tu aurais pu dire : meme des deux cotes, par exemple [le cas] ou les deux peaux ont ete percees, [la bete est] cachere, parce qu&#x27;[elle] repose sur le feuillet et [y] est collee la par la graisse, et de meme cette adherence protege de sorte que la fiente ne sorte pas — de meme qu&#x27;[il en va] pour le boyau (halhoulet) qui a ete perce et que les cuisses maintiennent, [auquel cas la bete est] cachere ; [c&#x27;est pourquoi] il nous enseigne ici qu&#x27;elle est tereifa. Et si tu objectes : n&#x27;avons-nous pas dit dans [le chapitre] Bameh Madlikin (Chabbat 36a), a propos de ces trois choses dont les noms ont change — &#x27;le hovlila [est devenu] bei kassei, et le bei kassei hovlila&#x27; — quelle [en est] la consequence pratique ? pour l&#x27;aiguille qui se trouve dans l&#x27;epaisseur du bonnet [bet ha-kossot] ; or maintenant, quelle consequence y a-t-il, puisque pour les deux nous disons &#x27;d&#x27;un seul cote — cachere, des deux cotes — tereifa&#x27;, [y compris] pour le hovlila ? Et l&#x27;on peut dire [que] la consequence [est] que tu ne te trompes pas en expliquant ce qu&#x27;il a dit &#x27;d&#x27;un seul cote — cachere&#x27; : [a savoir que] cela [vaut] pour le hovlila, qui est le feuillet (messes) qu&#x27;on appelle aujourd&#x27;hui bet ha-kossot ; mais pour ce qu&#x27;on appelle aujourd&#x27;hui hovlila, [a savoir] ce qu&#x27;on avait coutume d&#x27;appeler bet ha-kossot, meme d&#x27;un seul cote [, la bete est] tereifa, puisqu&#x27;une peau entiere a ete percee. Ou bien [encore], afin que nous ne nous trompions pas non plus [sur] &#x27;des deux cotes — tereifa&#x27;, [a savoir] que cela [vaut] pour ce qu&#x27;on appelle aujourd&#x27;hui bet ha-kossot, qui est le feuillet (messes) ; mais pour ce qu&#x27;on appelle aujourd&#x27;hui hovlila, [a savoir] ce qu&#x27;on appelait au debut bet ha-kossot, meme des deux cotes [, la bete est] cachere, car [elle est] comme le boyau (halhoulet) qui a ete perce et que les cuisses maintiennent.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>On passe a la perforation du <b>feuillet</b> (ha-messes) et du <b>bonnet</b> (bet ha-kossot), troisieme et quatrieme estomacs du ruminant. La braita traite d'une <b>aiguille</b> retrouvee enfoncee dans l'<b>epaisseur</b> de la paroi du bonnet : si elle perce <b>d'un seul cote</b> (sans traverser de part en part), la bete est <b>cachere</b> ; si elle perce <b>des deux cotes</b> (paroi entierement traversee), elle est <b>tereifa</b>. La suite (un <b>grumeau de sang</b> trouve sur l'aiguille) introduit un examen complementaire qui se poursuit au daf suivant.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="250" fill="#fffdf8"/>
+  <text x="360" y="22" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">L'aiguille trouvee dans l'epaisseur du feuillet-bonnet (bet ha-kossot)</text>
+  <rect x="40" y="44" width="290" height="186" rx="10" fill="#eafaf1" stroke="#15803d"/>
+  <text x="185" y="66" text-anchor="middle" font-size="12.5" font-weight="700" fill="#15803d">Perce d'un seul cote</text>
+  <rect x="70" y="86" width="230" height="40" fill="#e7e2d8" stroke="#a8a29e"/>
+  <text x="185" y="110" text-anchor="middle" font-size="9.5" fill="#78716c">paroi (deux peaux)</text>
+  <line x1="120" y1="150" x2="150" y2="106" stroke="#0891b2" stroke-width="3"/>
+  <text x="185" y="170" text-anchor="middle" font-size="11" fill="#292524">la paroi n'est pas traversee</text>
+  <text x="185" y="206" text-anchor="middle" font-size="12.5" font-weight="700" fill="#15803d">CACHERE</text>
+  <rect x="390" y="44" width="290" height="186" rx="10" fill="#fdeaea" stroke="#b91c1c"/>
+  <text x="535" y="66" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b91c1c">Perce des deux cotes</text>
+  <rect x="420" y="86" width="230" height="40" fill="#e7e2d8" stroke="#a8a29e"/>
+  <text x="535" y="110" text-anchor="middle" font-size="9.5" fill="#78716c">paroi (deux peaux)</text>
+  <line x1="500" y1="150" x2="570" y2="62" stroke="#0891b2" stroke-width="3"/>
+  <text x="535" y="170" text-anchor="middle" font-size="11" fill="#292524">la paroi est traversee de part en part</text>
+  <text x="535" y="200" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b91c1c">TEREIFA</text>
+  <text x="535" y="220" text-anchor="middle" font-size="9.5" fill="#78716c">sauf examen : un grumeau de sang...</text>
+</svg></div><div class="svg-cap">L&#x27;aiguille dans le bonnet (bet ha-kossot) : d&#x27;un seul cote -&amp;gt; cachere ; des deux cotes -&amp;gt; tereifa ; puis examen du grumeau de sang.</div></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Chullin_50a.html">&lsaquo; Chullin 50a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Chullin_51a.html">Chullin 51a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

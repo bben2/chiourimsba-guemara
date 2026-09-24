@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yoma 68a -- Un mot pour deux emplois : mi-houtz la-mahane, entre seuil de tuma et carte des trois camps</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Yoma 68a -- Un mot pour deux emplois : mi-houtz la-mahane, entre seuil de tuma et carte des trois camps</h1>
+    <div class="ref">Yoma 68a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_67b.html">&lsaquo; Yoma 67b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> Le daf s ouvre sur la fin de la guezera chava restee suspendue en 67b : les mots peau, chair et fiente rapprochent le taureau et le bouc de Yom Kippour du taureau du cohen machiah, et de ce rapprochement vient la regle du decoupage. Une baraita en reconstitue les trois temps -- on sort l animal entier, on ne le brule pas entier, donc on le decoupe, comme la ola d ou viennent les mots tete et pattes.</p><p>Reste une objection : si la ola est aussi ecorchee, pourquoi le taureau ne le serait-il pas ? Rav Papa repond par une lecture d enumeration -- de meme que la fiente reste dans les entrailles, la chair reste dans sa peau.</p><p>Tossefot conteste au passage le maillon supplementaire de Rachi au nom de la regle qui interdit d apprendre un hekech a partir d un hekech. La guemara revient alors a la michna : a partir de quand les porteurs rendent-ils leurs vetements impurs ?</p><p>Le verset de Yom Kippour ne parle que d un camp, alors que les autres taureaux brules en exigent trois -- et la guezera chava hatat-hatat les egalise. La sortie de cette contradiction est un deplacement de sens : le mot mahane ne fixe pas le lieu de la combustion, il fixe le seuil de la tuma des vetements, des le franchissement du premier mur.</p><p>La guemara verifie ensuite d ou viennent les trois camps, et decouvre une mecanique tres pure : trois versets qui n avaient pas besoin d etre ecrits achetent trois distances successives -- le camp de la Chekhina, celui des Levites, celui d Israel. Rabbi Chimon, qui ne fait commencer la tuma qu au moment ou le feu prend, garde le mot libre et le depense autrement : en guezera chava avec la vache rousse, d ou la para adouma tire ses trois camps et le taureau son orientation a l est de Jerusalem, face a l ouverture du heikhal.</p><p>Le daf se referme sur la question symetrique posee aux Rabbanan -- ou brulent-ils, eux qui n ont plus de guezera chava ? -- et la reponse attend en 68b.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 616" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="616" fill="#fffdf8"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#64748b"/></marker></defs>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Yoma 68a : ce qui sort du camp -- et a quelle distance</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.5" fill="#57534e">Fin de la guezera chava du decoupage, puis la grande question des trois camps et de la tuma des vetements</text>
+
+  <rect x="20" y="58" width="720" height="108" rx="8" fill="#eef6ff" stroke="#9cc3ea"/>
+  <text x="38" y="79" font-size="12.5" font-weight="700" fill="#1d4ed8">A -- Seg 0 a 2 : on decoupe, mais on n ecorche pas</text>
+  <text x="38" y="98" font-size="10" fill="#334155">La guezera chava rosh-kra-ayim rapproche le taureau brule de la ola : de la vient le nitouah (decoupage).</text>
+  <text x="38" y="114" font-size="10" fill="#334155">Mais si la ola est aussi ecorchee, pourquoi pas lui ? Le verset ajoute ve-kirbo ou-firsho -- entrailles et fiente.</text>
+  <text x="38" y="130" font-size="10" fill="#334155">Rav Papa : de meme que la fiente reste dans les entrailles, la chair reste dans la peau. Donc pas de hefchet.</text>
+  <text x="38" y="150" font-size="9.5" font-style="italic" fill="#1e40af">La guezera chava donne le decoupage ; un mot voisin lui retire l ecorchement.</text>
+
+  <path d="M 380 166 L 380 180" stroke="#64748b" stroke-width="1.6" marker-end="url(#a)"/>
+
+  <rect x="20" y="184" width="720" height="96" rx="8" fill="#fef6ee" stroke="#eabf9c"/>
+  <text x="38" y="205" font-size="12.5" font-weight="700" fill="#c2410c">B -- Seg 3 a 4 : la michna reprise -- un camp ou trois ?</text>
+  <text x="38" y="224" font-size="10" fill="#334155">Le verset de Yom Kippour dit yotsi el mi-houtz la-mahane : on croirait un seul camp a franchir.</text>
+  <text x="38" y="240" font-size="10" fill="#334155">Or les autres taureaux brules en exigent trois -- et tous sont rapproches par la guezera chava hatat-hatat.</text>
+  <text x="38" y="261" font-size="9.5" font-style="italic" fill="#9a3412">Solution : ce mahane unique ne parle pas du lieu de la combustion, mais du seuil de la tuma des vetements.</text>
+
+  <path d="M 380 280 L 380 294" stroke="#64748b" stroke-width="1.6" marker-end="url(#a)"/>
+
+  <rect x="20" y="298" width="720" height="116" rx="8" fill="#f3eefb" stroke="#c3a9e8"/>
+  <text x="38" y="319" font-size="12.5" font-weight="700" fill="#7c3aed">C -- Seg 5 a 7 : d ou viennent les trois camps ? Trois versets superflus</text>
+  <text x="38" y="338" font-size="10" fill="#4c1d95">1. ve-hotsi et kol ha-par (taureau du cohen machiah, Vayikra 4,12) -- premier camp.</text>
+  <text x="38" y="354" font-size="10" fill="#4c1d95">2. el mi-houtz la-mahane chez le taureau de la communaute (4,21) : inutile, car ka-acher saraf le dit deja -- 2e camp.</text>
+  <text x="38" y="370" font-size="10" fill="#4c1d95">3. mi-houtz la-mahane chez le dechen (6,4) : inutile, car el chefekh ha-dechen le dit deja -- 3e camp.</text>
+  <text x="38" y="391" font-size="9.5" font-style="italic" fill="#6d28d9">Methode : chaque mot que le verset n avait pas besoin d ecrire achete un camp supplementaire.</text>
+
+  <path d="M 380 414 L 380 428" stroke="#64748b" stroke-width="1.6" marker-end="url(#a)"/>
+
+  <rect x="20" y="432" width="352" height="122" rx="8" fill="#dcfce7" stroke="#9cc6a0"/>
+  <text x="38" y="453" font-size="12.5" font-weight="700" fill="#166534">D -- Seg 8 : et Rabbi Chimon ?</text>
+  <text x="38" y="472" font-size="10" fill="#14532d">Pour lui la tuma ne commence qu au feu : il n a</text>
+  <text x="38" y="488" font-size="10" fill="#14532d">pas besoin du mahane pour un seuil. Il le recycle</text>
+  <text x="38" y="504" font-size="10" fill="#14532d">en guezera chava avec la para adouma (Bamidbar 19,3).</text>
+  <text x="38" y="525" font-size="9.5" font-style="italic" fill="#166534">Resultat : la vache rousse aussi hors des trois camps,</text>
+  <text x="38" y="539" font-size="9.5" font-style="italic" fill="#166534">et a l est de Jerusalem, face a l ouverture du heikhal.</text>
+
+  <rect x="388" y="432" width="352" height="122" rx="8" fill="#fee2e2" stroke="#e5a3a3"/>
+  <text x="406" y="453" font-size="12.5" font-weight="700" fill="#b91c1c">E -- Seg 9 : ou brule-t-on, alors ?</text>
+  <text x="406" y="472" font-size="10" fill="#7f1d1d">Les Rabbanan, eux, ont depense le verset pour la</text>
+  <text x="406" y="488" font-size="10" fill="#7f1d1d">tuma des vetements : ils n ont plus de guezera chava</text>
+  <text x="406" y="504" font-size="10" fill="#7f1d1d">pour fixer l orientation.</text>
+  <text x="406" y="525" font-size="9.5" font-style="italic" fill="#b91c1c">La guemara ouvre alors une baraita -- heikhan nisrafin --</text>
+  <text x="406" y="539" font-size="9.5" font-style="italic" fill="#b91c1c">et le daf s interrompt sur la question. Suite en 68b.</text>
+
+  <rect x="20" y="566" width="720" height="36" rx="6" fill="#f5f5f4" stroke="#d6d3d1"/>
+  <text x="380" y="589" text-anchor="middle" font-size="10.5" font-style="italic" fill="#44403c">Un seul syntagme, mi-houtz la-mahane, tire dans deux directions : seuil de tuma pour les Rabbanan, guezera chava geographique pour Rabbi Chimon.</text>
+</svg></div>
+          <figcaption>Le fil du daf : du decoupage sans ecorchement a la geographie de la tuma des vetements.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="470" fill="#fffdf8"/>
+  <defs><marker id="b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#b91c1c"/></marker><marker id="g" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#166534"/></marker></defs>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">La carte des trois camps -- au desert et a Jerusalem</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.5" fill="#57534e">Ou l on brule les taureaux interieurs, et ou commence la tuma des vetements selon chaque avis</text>
+
+  <rect x="34" y="62" width="500" height="300" rx="10" fill="#fef3c7" stroke="#d6b25e" stroke-width="1.6"/>
+  <text x="48" y="82" font-size="11.5" font-weight="700" fill="#92400e">3. Mahane Yisrael  =  Jerusalem</text>
+
+  <rect x="96" y="98" width="376" height="228" rx="10" fill="#e0f2fe" stroke="#7ab3d6" stroke-width="1.6"/>
+  <text x="110" y="118" font-size="11.5" font-weight="700" fill="#1d4ed8">2. Mahane Leviya  =  Har haBayit</text>
+
+  <rect x="158" y="134" width="252" height="156" rx="10" fill="#ede9fe" stroke="#a78bfa" stroke-width="1.6"/>
+  <text x="172" y="154" font-size="11.5" font-weight="700" fill="#6d28d9">1. Mahane Chekhina  =  Azara</text>
+
+  <rect x="196" y="170" width="176" height="86" rx="8" fill="#ffffff" stroke="#c4b5fd"/>
+  <text x="284" y="196" text-anchor="middle" font-size="10.5" fill="#4c1d95">Le sang est porte a l interieur</text>
+  <text x="284" y="212" text-anchor="middle" font-size="10.5" fill="#4c1d95">(taureau et bouc de Yom Kippour)</text>
+  <text x="284" y="234" text-anchor="middle" font-size="10" font-style="italic" fill="#7c3aed">puis les corps sortent -- flechs vers l est</text>
+
+  <path d="M 372 213 L 470 213" stroke="#b91c1c" stroke-width="2" marker-end="url(#b)"/>
+  <circle cx="410" cy="213" r="5" fill="#b91c1c"/>
+  <text x="410" y="342" text-anchor="middle" font-size="9" fill="#b91c1c"></text>
+
+  <path d="M 472 213 L 534 213" stroke="#b91c1c" stroke-width="2" marker-end="url(#b)"/>
+  <path d="M 534 213 L 620 213" stroke="#166534" stroke-width="2" marker-end="url(#g)"/>
+
+  <rect x="596" y="180" width="146" height="70" rx="8" fill="#dcfce7" stroke="#9cc6a0"/>
+  <text x="669" y="203" text-anchor="middle" font-size="10.5" font-weight="700" fill="#166534">Beit ha-serefa</text>
+  <text x="669" y="219" text-anchor="middle" font-size="9.5" fill="#14532d">hors des trois camps,</text>
+  <text x="669" y="234" text-anchor="middle" font-size="9.5" fill="#14532d">au chefekh ha-dechen</text>
+
+  <rect x="34" y="376" width="352" height="80" rx="8" fill="#fee2e2" stroke="#e5a3a3"/>
+  <text x="52" y="397" font-size="11.5" font-weight="700" fill="#b91c1c">Point rouge -- avis des Rabbanan</text>
+  <text x="52" y="415" font-size="10" fill="#7f1d1d">Des la sortie d un seul camp (le mur de la azara),</text>
+  <text x="52" y="431" font-size="10" fill="#7f1d1d">les porteurs rendent leurs vetements impurs.</text>
+  <text x="52" y="448" font-size="9.5" font-style="italic" fill="#b91c1c">C est le sens de mi-houtz la-mahane en Vayikra 16,27.</text>
+
+  <rect x="398" y="376" width="344" height="80" rx="8" fill="#dcfce7" stroke="#9cc6a0"/>
+  <text x="416" y="397" font-size="11.5" font-weight="700" fill="#166534">Fleche verte -- avis de Rabbi Chimon</text>
+  <text x="416" y="415" font-size="10" fill="#14532d">Aucune tuma en chemin : elle ne commence que</text>
+  <text x="416" y="431" font-size="10" fill="#14532d">quand le feu a pris dans la plus grande partie.</text>
+  <text x="416" y="448" font-size="9.5" font-style="italic" fill="#166534">Le mot mi-houtz la-mahane lui reste libre pour autre chose.</text>
+</svg></div>
+          <figcaption>La carte des trois camps : ou l on brule, et ou commence la tuma selon les Rabbanan et selon Rabbi Chimon.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="430" fill="#fffdf8"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#64748b"/></marker></defs>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Comment trois versets achetent trois camps</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.5" fill="#57534e">Regle de lecture : un mot que le verset n avait pas besoin d ecrire ne peut pas etre nul -- il ajoute une distance</text>
+
+  <rect x="24" y="62" width="712" height="88" rx="8" fill="#ede9fe" stroke="#a78bfa"/>
+  <text x="42" y="83" font-size="12" font-weight="700" fill="#6d28d9">Verset 1 -- Vayikra 4,12 (taureau du cohen machiah)</text>
+  <text x="42" y="102" font-size="10.5" fill="#4c1d95">ve-hotsi et kol ha-par el mi-houtz la-mahane -- il fera sortir le taureau tout entier hors du camp</text>
+  <text x="42" y="122" font-size="10" fill="#334155">Question de la baraita : un seul camp, ou trois ? A ce stade rien ne tranche.</text>
+  <text x="42" y="140" font-size="9.5" font-style="italic" fill="#6d28d9">Acquis : premier camp -- on sort au moins du mahane Chekhina.</text>
+
+  <path d="M 380 150 L 380 164" stroke="#64748b" stroke-width="1.6" marker-end="url(#a)"/>
+
+  <rect x="24" y="168" width="712" height="94" rx="8" fill="#e0f2fe" stroke="#7ab3d6"/>
+  <text x="42" y="189" font-size="12" font-weight="700" fill="#1d4ed8">Verset 2 -- Vayikra 4,21 (taureau de la communaute)</text>
+  <text x="42" y="208" font-size="10.5" fill="#1e3a8a">el mi-houtz la-mahane -- mais le verset dit deja ve-saraf oto ka-acher saraf et ha-par ha-richon</text>
+  <text x="42" y="226" font-size="10" fill="#334155">Le ka-acher suffisait a transferer toute la loi du premier taureau. Le mi-houtz la-mahane est donc en trop.</text>
+  <text x="42" y="250" font-size="9.5" font-style="italic" fill="#1d4ed8">Acquis : deuxieme camp -- il faut aussi sortir du mahane Leviya (Har haBayit).</text>
+
+  <path d="M 380 262 L 380 276" stroke="#64748b" stroke-width="1.6" marker-end="url(#a)"/>
+
+  <rect x="24" y="280" width="712" height="94" rx="8" fill="#fef3c7" stroke="#d6b25e"/>
+  <text x="42" y="301" font-size="12" font-weight="700" fill="#92400e">Verset 3 -- Vayikra 6,4 (sortie du dechen, les cendres de l autel)</text>
+  <text x="42" y="320" font-size="10.5" fill="#78350f">ve-hotsi et ha-dechen el mi-houtz la-mahane -- mais on savait deja par el chefekh ha-dechen (4,12)</text>
+  <text x="42" y="338" font-size="10" fill="#334155">Puisque les taureaux brules sont deja envoyes au lieu ou l on verse les cendres, ce mahane-la est en trop.</text>
+  <text x="42" y="362" font-size="9.5" font-style="italic" fill="#92400e">Acquis : troisieme camp -- il faut sortir aussi du mahane Yisrael (Jerusalem).</text>
+
+  <rect x="24" y="388" width="712" height="34" rx="6" fill="#dcfce7" stroke="#9cc6a0"/>
+  <text x="380" y="410" text-anchor="middle" font-size="11" font-weight="700" fill="#166534">Conclusion : les taureaux brules le sont hors des trois camps -- donc, a Yom Kippour, le mahane du verset 16,27 sert a autre chose.</text>
+</svg></div>
+          <figcaption>La construction des trois camps : trois mots superflus, trois distances.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַה לְהַלָּן, עַל יְדֵי נִיתּוּחַ וְלֹא עַל יְדֵי הֶפְשֵׁט, אַף כָּאן, עַל יְדֵי נִיתּוּחַ וְלֹא עַל יְדֵי הֶפְשֵׁט.</div>
+            <div class="fr"><p>De meme que la-bas [pour les taureaux brules] c est par decoupage (nitouah) et non par ecorchement (hefchet), de meme ici c est par decoupage et non par ecorchement.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַה לְהַלָּן וְכוּ&#x27;</b> כְּדִמְפָרֵשׁ וְאָזֵיל:</div>
+          <div class="glose-fr">&quot;De meme que la-bas, etc.&quot; -- comme la guemara va l expliquer dans ce qui suit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Ce segment achete la <b>guezera chava</b> ouverte a la fin de 67b : les mots <i>or, bassar, perech</i> (peau, chair, fiente) figurent a la fois pour le taureau et le bouc de Yom Kippour (Vayikra 16,27) et pour le taureau du cohen machiah (Vayikra 4,11). Ce qui vaut pour l un vaut pour l autre.</p><p>Le contenu transfere tient en une opposition : <b>nitouah</b>, on met l animal en morceaux ; <b>hefchet</b>, on lui retire d abord la peau. Ici on fait le premier et pas le second -- les corps sont debites <i>or al gabei bassar</i>, peau sur chair. La guemara va maintenant remonter d un cran : d ou le sait-on <i>la-bas</i> ?</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְהָתָם מְנָא לַן? דְּתַנְיָא: ״וְקָרְבוּ וּפִרְשׁוֹ וְהוֹצִיא״ — מְלַמֵּד שֶׁמּוֹצִיאוֹ שָׁלֵם. יָכוֹל יִשְׂרְפֶנּוּ שָׁלֵם? נֶאֱמַר כָּאן: ״רֹאשׁוֹ וּכְרָעָיו״, וְנֶאֱמַר לְהַלָּן: (״רֹאשׁ וּכְרָעַיִם״), מַה לְהַלָּן עַל יְדֵי נִיתּוּחַ, אַף כָּאן עַל יְדֵי נִיתּוּחַ.</div>
+            <div class="fr"><p>Et la-bas, d ou le tenons-nous ? De ce qui a ete enseigne : &quot;et ses entrailles et sa fiente, et il [le] fera sortir&quot; -- cela enseigne qu il le fait sortir entier.</p><p>Pourrait-on croire qu il le brule entier ? Il est dit ici &quot;sa tete et ses pattes&quot;, et il est dit la-bas [a propos de la ola] (&quot;tete et pattes&quot;) : de meme que la-bas c est par decoupage, de meme ici c est par decoupage.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְקָרְבוּ וּפִרְשׁוֹ וְהוֹצִיא</b> בת&quot;כ ה&quot;ג לָהּ וְאֶת עוֹר הַפָּר וְאֶת כָּל בְּשָׂרוֹ עַל רֹאשׁוֹ וְעַל כְּרָעָיו וְקִרְבּוֹ וּפִרְשׁוֹ וְהוֹצִיא מְלַמֵּד שֶׁמּוֹצִיאוֹ שָׁלֵם:</div>
+          <div class="glose-fr">&quot;Et ses entrailles et sa fiente, et il fera sortir&quot; -- dans le Torat Cohanim, telle est la version : &quot;et la peau du taureau et toute sa chair, avec sa tete et avec ses pattes, et ses entrailles et sa fiente, et il fera sortir&quot; -- cela enseigne qu il le fait sortir entier.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְנֶאֱמַר לְהַלָּן רֹאשׁ וּכְרָעַיִם ה&quot;ג</b> וּמְעֻולָּה גָּמַר שֶׁנֶּאֶמְרוּ בָּהּ רֹאשׁ וּכְרָעַיִם בְּהַקְטָרָתָהּ שֶׁנֶּאֱמַר וְעָרְכוּ אֵת הַנְּתָחִים אֶת הָרֹאשׁ וְאֶת הַפָּדֶר וְנֶאֱמַר וְהַקֶּרֶב וְהַכְּרָעַיִם:</div>
+          <div class="glose-fr">&quot;Et il est dit la-bas : tete et pattes&quot; -- telle est la version. Et c est de la ola qu il l apprend, car tete et pattes y sont mentionnees a propos de sa combustion, ainsi qu il est dit &quot;ils disposeront les morceaux, la tete et la graisse&quot; (Vayikra 1,8), et il est dit &quot;et les entrailles et les pattes&quot; (ibid. 1,9).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La baraita procede en trois temps. Premier temps : le verset enumere la peau, la chair, la tete, les pattes, les entrailles et la fiente, <b>puis</b> dit <i>ve-hotsi</i> -- il fera sortir. Cette enumeration avant le verbe enseigne qu on le <b>sort entier</b>, sans rien preparer dans la azara.</p><p>Deuxieme temps : <b>yakhol yisrefenou chalem</b> -- pourrait-on croire qu il le brule egalement entier ? Le tana refuse cette extension.</p><p>Troisieme temps : une <b>guezera chava</b> fournit le regime de la combustion. Les mots <i>rocho ou-kra-av</i> (sa tete et ses pattes) apparaissent ici, et les mots <i>roch ou-kra-ayim</i> apparaissent pour la <b>ola</b>, ou le verset ordonne expressement de decouper. Rachi precise pourquoi c est bien de la ola qu on apprend : c est le seul sacrifice ou tete et pattes sont nommes <i>au moment de la combustion</i>.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="340" fill="#fffdf8"/>
+  <defs><marker id="b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#b91c1c"/></marker><marker id="g" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#166534"/></marker></defs>
+  <text x="350" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">La guezera chava rosh ve-kra-ayim : ce qu elle transporte et ce qu elle ne transporte pas</text>
+
+  <rect x="24" y="48" width="300" height="150" rx="8" fill="#e0f2fe" stroke="#7ab3d6"/>
+  <text x="42" y="70" font-size="12" font-weight="700" fill="#1d4ed8">Source -- la ola (Vayikra 1)</text>
+  <text x="42" y="90" font-size="10.5" fill="#1e3a8a">Mots communs : ha-rosh, ha-kra-ayim</text>
+  <text x="42" y="112" font-size="10.5" fill="#166534">+ nitouah (decoupage) : explicite</text>
+  <text x="42" y="132" font-size="10.5" fill="#b91c1c">+ hefchet (ecorchement) : explicite aussi</text>
+  <text x="42" y="156" font-size="9.5" font-style="italic" fill="#334155">ve-hifchit et ha-ola ve-nitah otah -- il l ecorchera</text>
+  <text x="42" y="171" font-size="9.5" font-style="italic" fill="#334155">et il la decoupera en morceaux.</text>
+  <text x="42" y="190" font-size="9.5" fill="#57534e">Deux operations, dans le meme verset.</text>
+
+  <rect x="376" y="48" width="300" height="150" rx="8" fill="#ede9fe" stroke="#a78bfa"/>
+  <text x="394" y="70" font-size="12" font-weight="700" fill="#6d28d9">Cible -- le taureau brule (Vayikra 4)</text>
+  <text x="394" y="90" font-size="10.5" fill="#4c1d95">Mots communs : rosho, kra-av</text>
+  <text x="394" y="112" font-size="10.5" fill="#166534">+ nitouah : importe par la guezera chava</text>
+  <text x="394" y="132" font-size="10.5" fill="#b91c1c">+ hefchet : bloque (voir segment suivant)</text>
+  <text x="394" y="156" font-size="9.5" font-style="italic" fill="#334155">Le verset a d abord enseigne qu on le sort entier,</text>
+  <text x="394" y="171" font-size="9.5" font-style="italic" fill="#334155">mais qu on ne le brule pas entier.</text>
+  <text x="394" y="190" font-size="9.5" fill="#57534e">Une seule operation retenue.</text>
+
+  <path d="M 324 108 L 372 108" stroke="#166534" stroke-width="2.2" marker-end="url(#g)"/>
+  <text x="348" y="102" text-anchor="middle" font-size="9" font-weight="700" fill="#166534">oui</text>
+  <path d="M 324 132 L 372 132" stroke="#b91c1c" stroke-width="2.2" stroke-dasharray="5 4" marker-end="url(#b)"/>
+  <text x="348" y="150" text-anchor="middle" font-size="9" font-weight="700" fill="#b91c1c">non</text>
+
+  <rect x="24" y="216" width="652" height="52" rx="8" fill="#fef6ee" stroke="#eabf9c"/>
+  <text x="42" y="238" font-size="10.5" fill="#7c2d12">Probleme : une guezera chava transporte en principe tout le paquet. Si elle donne le nitouah, pourquoi pas le hefchet ?</text>
+  <text x="42" y="257" font-size="10.5" font-style="italic" fill="#c2410c">Il faut un frein explicite -- ce sera ve-kirbo ou-firsho, expose par Rav Papa au segment suivant.</text>
+
+  <rect x="24" y="284" width="652" height="42" rx="6" fill="#f5f5f4" stroke="#d6d3d1"/>
+  <text x="350" y="302" text-anchor="middle" font-size="10" fill="#44403c">Etapes de la baraita : 1. il le sort entier -- 2. mais il ne le brule pas entier -- 3. donc decoupage,</text>
+  <text x="350" y="318" text-anchor="middle" font-size="10" fill="#44403c">appris de la ola par les mots tete et pattes.</text>
+</svg></div><div class="svg-cap">La guezera chava rosh ve-kra-ayim : elle importe le decoupage, mais il faudra bloquer l ecorchement.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִי מַה לְהַלָּן עַל יְדֵי הֶפְשֵׁט, אַף כָּאן עַל יְדֵי הֶפְשֵׁט, תַּלְמוּד לוֹמַר: ״וְקָרְבוּ וּפָרְשׂוּ״. מַאי תַּלְמוּדָא? אָמַר רַב פָּפָּא: כְּשֵׁם שֶׁפֵּרְשׁוּ בְּקִרְבּוֹ, כָּךְ בְּשָׂרוֹ בְּעוֹרוֹ.</div>
+            <div class="fr"><p>Si tel est le cas : de meme que la-bas [la ola] c est avec ecorchement, de meme ici ce serait avec ecorchement ? Le verset dit : &quot;et ses entrailles et sa fiente&quot;.</p><p>Quelle est la demonstration [tiree de ces mots] ? Rav Papa dit : de meme que sa fiente est dans ses entrailles, de meme sa chair est dans sa peau.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּשֵׁם שֶׁפֵּרְשׁוּ בְּקִרְבּוֹ וְכוּ&#x27;</b> שֶׁנֶּאֱמַר וְאֶת עוֹר הַפָּר וְאֶת כָּל בְּשָׂרוֹ הִקִּישׁ הוֹצָאַת עוֹר וּבָשָׂר לְהוֹצָאַת קִרְבּוֹ וּפִרְשׁוֹ מַה פֵּרְשׁוּ בְּקִרְבּוֹ אַף בְּשָׂרוֹ בְּעוֹרוֹ וּכְתִיב וְהוֹצִיא וְשָׂרַף מָה הוֹצָאָתוֹ בְּשָׂרוֹ וְעוֹרוֹ אַף שְׂרֵיפָתוֹ כֵּן:</div>
+          <div class="glose-fr">&quot;De meme que sa fiente est dans ses entrailles, etc.&quot; -- car il est dit &quot;et la peau du taureau et toute sa chair&quot; : le verset a rapproche (hekech) la sortie de la peau et de la chair de la sortie de ses entrailles et de sa fiente -- de meme que sa fiente est dans ses entrailles, de meme sa chair est dans sa peau. Et il est ecrit &quot;il fera sortir et il brulera&quot; : de meme que sa sortie se fait avec sa chair dans sa peau, de meme sa combustion.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּשֵׁם שֶׁפִּרְשׁוֹ בְּקִרְבּוֹ כָּךְ בְּשָׂרוֹ בְּעוֹרוֹ</b> פירש&quot;י וְאִיתַּקַּשׁ שְׂרֵיפָה לְהוֹצָאָה וְתֵימַהּ לִי וְהָא בְּקָדָשִׁים אֵין לְמֵידִין הֶיקֵּשׁ מֵהֶיקֵּשׁ וְהָכָא כֵּיוָן דְּהוֹצָאָה גּוּפָהּ לְמֵידִין בְּהֶיקֵּשׁ מִדְּאִיתַּקַּשׁ עוֹר וּבָשָׂר לְפָרֵשׁ הֵיכִי הָדַר תּוּ גָּמְרִינַן מִינָּהּ שְׂרֵיפָה בְּהֶיקֵּשׁ וְאֵין לְתָרֵץ כֵּיוָן דְּנִשְׂרָפִין חוּץ לְשָׁלֹשׁ מַחֲנוֹת לָא חֲשִׁיבִי עוֹר וּבָשָׂר שֶׁלָּהֶם קוֹדֶשׁ לְעִנְיָן זֶה שֶׁלֹּא יַחְזְרוּ וְיִלְמְדוּ בְּהֶיקֵּשׁ אֶלָּא חוֹזְרִין שַׁפִּיר וּמְלַמְּדִין בְּהֶיקֵּשׁ דְּהָא בְּפֶ&#x27; אֵיזֶהוּ מְקוֹמָן (זְבָחִים דַּף נ.) מַיְיתֵי הָא בָּרַיְיתָא דְּהָכָא וְגָמַר מִינָּהּ דָּבָר הַלָּמֵד בִּג&quot;ש חוֹזֵר וּמְלַמֵּד בג&quot;ש בְּקָדָשִׁים אֶלָּא יֵשׁ לוֹמַר דִּשְׂרֵיפָה גּוּפָהּ אִיתַּקַּשׁ לְפָרֵשׁ כְּשֵׁם שֶׁפֵּרְשׁוּ בְּקִרְבּוֹ בִּשְׁעַת שְׂרֵפָה כָּךְ בְּשָׂרוֹ בְּעוֹרוֹ דִּוְשָׂרָף קָאֵי עַל בְּשָׂרוֹ וְרֹאשׁוֹ וּכְרָעָיו וְקָרְבוּ וּפִרְשׁוֹ שֶׁשּׂוֹרֵף הַכֹּל וּכְשֵׁם שֶׁפֵּרְשׁוּ בְּקִרְבּוֹ דִּגְנַאי הָיָה לִשְׂרֹוף הֶפְרֵשׁ בִּפְנֵי עַצְמוֹ אַף בְּשָׂרוֹ בְּעוֹרוֹ מִיהוּ יָכוְלֵנִי לְיַישֵּׁב פירש&quot;י:</div>
+          <div class="glose-fr">&quot;De meme que sa fiente est dans ses entrailles, de meme sa chair est dans sa peau&quot; -- Rachi a explique que la combustion est rapprochee (hekech) de la sortie. Et cela m etonne : dans les kodachim on n apprend pas un hekech a partir d un hekech ! Ici, puisque la sortie elle-meme s apprend par hekech -- du fait que la peau et la chair ont ete rapprochees de la fiente -- comment en tirerions-nous encore la combustion par un [second] hekech ? Et l on ne peut pas repondre que, puisqu ils sont brules hors des trois camps, leur peau et leur chair ne seraient plus tenues pour kodech a cet egard, de sorte qu elles ne reviendraient pas enseigner par hekech : car en verite elles reviennent bel et bien enseigner par hekech -- au chapitre Eizehou Mekoman (Zevahim 50a) on cite cette meme baraita et l on en deduit qu une chose apprise par guezera chava revient enseigner par guezera chava dans les kodachim. Il faut donc dire que la combustion elle-meme a ete rapprochee de la fiente : de meme que sa fiente est dans ses entrailles au moment de la combustion, de meme sa chair est dans sa peau -- car le verbe &quot;il brulera&quot; porte sur sa chair, sa tete, ses pattes, ses entrailles et sa fiente, puisqu il brule le tout ; et de meme que sa fiente reste dans ses entrailles -- car il serait indigne de bruler la fiente a part -- de meme sa chair reste dans sa peau. Cela dit, je pourrais aussi justifier l explication de Rachi.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection previsible : une guezera chava ne se decoupe pas en tranches. Si elle transporte le <b>nitouah</b> depuis la ola, elle devrait transporter aussi le <b>hefchet</b>, puisque le meme verset commande les deux (<i>ve-hifchit et ha-ola ve-nitah otah</i>).</p><p>Le frein vient d un detail du verset du taureau : il ne dit pas seulement peau et chair, il ajoute <i>ve-kirbo ou-firecho</i>. <b>Rav Papa</b> lit l enumeration comme une comparaison implicite : les quatre elements sont poses sur le meme plan. Or personne n imagine vider les entrailles de leur fiente avant la combustion. Donc, de la meme facon, on ne detache pas la chair de sa peau.</p><p>Rachi ajoute un maillon : la sortie et la combustion sont rapprochees (<i>ve-hotsi ve-saraf</i>), donc ce qui vaut pour l une vaut pour l autre. C est precisement ce maillon que Tossefot va attaquer, au nom de la regle <b>ein lemedin hekech mi-hekech be-kodachim</b> -- dans les sacrifices, on n apprend pas un rapprochement a partir d un rapprochement.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="320" fill="#fffdf8"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#64748b"/></marker></defs>
+  <text x="350" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Le raisonnement de Rav Papa : deux emboitements paralleles</text>
+  <text x="350" y="45" text-anchor="middle" font-size="10" fill="#57534e">Le verset nomme cote a cote la peau, la chair, les entrailles et la fiente : il les traite de la meme facon</text>
+
+  <rect x="46" y="66" width="250" height="150" rx="70" fill="#fde8d7" stroke="#e0a878" stroke-width="1.8"/>
+  <text x="171" y="92" text-anchor="middle" font-size="11.5" font-weight="700" fill="#9a3412">Enveloppe : le kerev (entrailles)</text>
+  <ellipse cx="171" cy="152" rx="82" ry="44" fill="#f7c9a6" stroke="#c2803f" stroke-width="1.5"/>
+  <text x="171" y="150" text-anchor="middle" font-size="11" font-weight="700" fill="#7c2d12">le perech</text>
+  <text x="171" y="168" text-anchor="middle" font-size="9.5" fill="#7c2d12">(la fiente)</text>
+  <text x="171" y="208" text-anchor="middle" font-size="9.5" font-style="italic" fill="#9a3412">On ne vide pas les entrailles avant de bruler.</text>
+
+  <rect x="404" y="66" width="250" height="150" rx="70" fill="#dbeafe" stroke="#7ab3d6" stroke-width="1.8"/>
+  <text x="529" y="92" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1d4ed8">Enveloppe : le or (la peau)</text>
+  <ellipse cx="529" cy="152" rx="82" ry="44" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="529" y="150" text-anchor="middle" font-size="11" font-weight="700" fill="#1e3a8a">le bassar</text>
+  <text x="529" y="168" text-anchor="middle" font-size="9.5" fill="#1e3a8a">(la chair)</text>
+  <text x="529" y="208" text-anchor="middle" font-size="9.5" font-style="italic" fill="#1d4ed8">Donc on n ecorche pas avant de bruler.</text>
+
+  <path d="M 300 141 L 398 141" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
+  <text x="349" y="134" text-anchor="middle" font-size="10" font-weight="700" fill="#475569">meme rapport</text>
+
+  <rect x="24" y="234" width="652" height="70" rx="8" fill="#f3eefb" stroke="#c3a9e8"/>
+  <text x="42" y="256" font-size="10.5" fill="#4c1d95">Verset : ve-et or ha-par ve-et kol bessaro al rocho ve-al kra-av ve-kirbo ou-fircho -- la peau et la chair y sont mises</text>
+  <text x="42" y="273" font-size="10.5" fill="#4c1d95">sur le meme plan que les entrailles et la fiente. Or nul ne songe a separer la fiente des entrailles.</text>
+  <text x="42" y="294" font-size="10" font-style="italic" fill="#7c3aed">Rachi ajoute un second maillon : ve-hotsi ve-saraf -- ce qui vaut pour la sortie vaut pour la combustion. Tossefot conteste ce maillon.</text>
+</svg></div><div class="svg-cap">Rav Papa : la fiente dans les entrailles, la chair dans la peau -- deux emboitements que le verset traite pareillement.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מֵאֵימָתַי מְטַמְּאִין בְּגָדִים. תָּנוּ רַבָּנַן: ״יוֹצִיא אֶל מִחוּץ לַמַּחֲנֶה וְשָׂרְפוּ״.</div>
+            <div class="fr"><p>&quot;A partir de quand rendent-ils les vetements impurs ?&quot; [reprise de la michna]. Nos maitres ont enseigne : &quot;il fera sortir hors du camp et ils bruleront&quot;.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ת&quot;ר נֶאֱמַר כָּאן מִחוּץ לַמַּחֲנֶה וְכוּ&#x27;</b> הַגִּירְסָא הַזּוֹ מְשֻׁובֶּשֶׁת הִיא וְאִי אֶפְשָׁר לְהַעֲמִידָהּ וּבְמַסֶּכֶת זְבָחִים ובת&quot;כ הָכִי אִיתָא ת&quot;ר לְהַלָּן אַתָּה נוֹתֵן לָהֶן ג&#x27; מַחֲנוֹת וְכָאן אַתָּה נוֹתֵן לָהֶן מַחֲנֶה אַחַת א&quot;כ לָמָּה נֶאֱמַר אֶל מִחוּץ לַמַּחֲנֶה לוֹמַר לָךְ כֵּיוָן שֶׁיָּצְאוּ חוּץ לְמַחֲנֶה אַחַת מְטַמְּאִין בְּגָדִים וְגַבֵּי פַּר יוֹם הַכִּפּוּרִים תַּנְיָא לָהּ בת&quot;כ יוֹצִיא אֶל מִחוּץ לַמַּחֲנֶה וְשָׂרְפוּ וְגוֹ&#x27; וְקָמַתְמַהּ תַּנָּא וְאָמַר הָכִי לְהַלָּן בְּפַר הָעֵדָה וְכֹהֵן מָשִׁיחַ אַתָּה נוֹתֵן לָהֶן לִשְׂרֵיפָתָן חוּץ לֹג&#x27; מַחֲנוֹת עֲזָרָה וְהַר הַבַּיִת וִירוּשָׁלַיִם כִּדְיָלֵיף לְקַמָּן וְכָאן אַתָּה אוֹמֵר אֶל מִחוּץ לַמַּחֲנֶה וְשָׂרְפוּ דְּמַשְׁמַע שֶׁשּׂוֹרְפָן חוּץ לְמַחֲנֵה שְׁכִינָה מִיָּד בְּמַחֲנֵה לְוִיָּה וַהֲלֹא אַף אֵלּוּ פְּנִימִיִּים וְאִיתַּקִּישׁוּ לְהַדְּדִי לִשְׂרֵיפָה וּלְטֻומְאַת בְּגָדִים כִּדְאָמְרִינַן גַּבֵּי פַּר הֶעְלֵם דָּבָר וְעָשָׂה לַפָּר כַּאֲשֶׁר עָשָׂה לְפַר הַחַטָּאת וְכוּלֵּיהּ לִדְרָשָׁא וְדָרְשִׁינַן לַפָּר זֶה פַּר יוֹם הַכִּפּוּרִים בְּמַס&#x27; זְבָחִים (לט.) וּבְמַסֶּכֶת מְנָחוֹת (כז.) מַיְיתִינַן לָהּ וְעִיקָּרָהּ בת&quot;כ וְגַבֵּי פַּר יוה&quot;כ נָמֵי כְּתִיב הַחַטָּאת הַחַטָּאת וְאֵת פַּר הַחַטָּאת וְאֵת שְׂעִיר הַחַטָּאת מַה תַּלְמוּד לוֹמַר חַטָּאת חַטָּאת לְפִי שֶׁלֹּא לָמַדְנוּ שֶׁיְּהוּ מְטַמְּאִין בְּגָדִים וְנִשְׂרָפִין אַבֵּית הַדֶּשֶׁן אֶלָּא אֵלּוּ בִּלְבַד מִנַּיִין לְרַבּוֹת פַּר מָשִׁיחַ וּפַר הָעֵדָה וּשְׂעִירֵי ע&quot;ז ת&quot;ל חַטַּאת חַטָּאת אַלְמָא כִּי הֲדָדֵי נִינְהוּ א&quot;כ לָמָּה נֶאֱמַר כָּאן מַחֲנֶה אַחַת לֹא נֶאֶמְרָה אֶלָּא עַל טֻומְאַת הַבְּגָדִים הַכְּתוּבָה אַחֲרֶיהָ וְהַשֹּׂורֵף אֹותָם יְכַבֵּס בְּגָדָיו וְלוֹמַר לָךְ כֵּיוָן שֶׁיָּצְאוּ חוּץ לְמַחֲנֶה אַחַת מְטַמְּאִין בְּגָדִים וְאַף שֶׁל פַּר כֹּהֵן מָשִׁיחַ מִכָּאן לָמַד שֶׁהֲרֵי לֹא נִכְתְּבָה בּוֹ טֻומְאַת בְּגָדִים וּמֵרִיבּוּיָא דְּחַטָּאת חַטָּאת אָתְיָא כִּדְפָרֵישִׁית וה&quot;ג אָמַר מַר לְהַלָּן אַתָּה נוֹתֵן לָהֶם ג&#x27; מַחֲנוֹת וְכוּ&#x27;:</div>
+          <div class="glose-fr">&quot;Nos maitres ont enseigne : il est dit ici hors du camp, etc.&quot; -- cette version est corrompue et intenable. Dans le traite Zevahim et dans le Torat Cohanim, la version est ainsi : nos maitres ont enseigne -- la-bas tu leur donnes trois camps, et ici tu leur donnerais un seul camp ? Si tel est le cas, pourquoi est-il dit &quot;hors du camp&quot; ? Pour t enseigner que des lors qu ils sont sortis d un seul camp, ils rendent les vetements impurs. Et a propos du taureau de Yom Kippour, le Torat Cohanim enseigne : &quot;il fera sortir hors du camp et ils bruleront, etc.&quot;, et le tana s en etonne en disant : la-bas, pour le taureau de la communaute et pour celui du cohen machiah, tu assignes a leur combustion un lieu hors des trois camps -- la azara, le Har haBayit et Jerusalem, comme on le deduira plus loin -- et ici tu dis &quot;hors du camp et ils bruleront&quot;, ce qui laisse entendre qu on les brule hors du seul camp de la Chekhina, aussitot, dans le camp des Levites ! Or ceux-la aussi sont des sacrifices interieurs, et ils ont ete rapproches les uns des autres quant a la combustion et quant a la tuma des vetements, comme nous le disons a propos du taureau du helem davar : &quot;il fera au taureau comme il a fait au taureau de la hatat&quot; -- tout etant la pour la deracha -- et nous exposons &quot;au taureau&quot;, c est-a-dire le taureau de Yom Kippour (traite Zevahim 39a, et nous le rapportons aussi au traite Menahot 27a, sa source etant dans le Torat Cohanim). Et a propos du taureau de Yom Kippour il est ecrit egalement &quot;la hatat, la hatat&quot; -- &quot;et le taureau de la hatat et le bouc de la hatat&quot; : que vient enseigner ce double &quot;hatat, hatat&quot; ? Puisque nous n avions appris que ceux-la seuls rendent les vetements impurs et sont brules au beit ha-dechen, d ou inclure le taureau du machiah, le taureau de la communaute et les boucs de l idolatrie ? Le verset dit &quot;hatat, hatat&quot; -- ils sont donc tous equivalents. Si tel est le cas, pourquoi est-il dit ici un seul camp ? Cela n a ete dit que pour la tuma des vetements qui est ecrite a la suite -- &quot;et celui qui les brule lavera ses vetements&quot; -- et pour t enseigner que des lors qu ils sont sortis d un seul camp, ils rendent les vetements impurs. Et pour le taureau du cohen machiah aussi c est d ici qu on l apprend, car la tuma des vetements n y est pas ecrite, et elle vient du surplus &quot;hatat, hatat&quot; comme je l ai explique. Et telle est la version : &quot;Le maitre a dit : la-bas tu leur donnes trois camps, etc.&quot;</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara quitte la question du decoupage et revient a la <b>michna</b> laissee en suspens : a quel moment exact ceux qui transportent le taureau et le bouc de Yom Kippour au <b>beit ha-serefa</b> rendent-ils leurs vetements impurs ?</p><p>La baraita part du verset de Vayikra 16,27 : <i>yotsi el mi-houtz la-mahane ve-sarfou</i>. Le mot <b>mahane</b> y est au singulier, ce qui va declencher toute la sougya suivante. Rachi signale d emblee que la version imprimee de la baraita est corrompue et donne, sur plusieurs lignes, la lecon du Torat Cohanim et de Zevahim.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לְהַלָּן אַתָּה נוֹתֵן לָהֶם שָׁלֹשׁ מַחֲנוֹת, וְכָאן אַתָּה נוֹתֵן לָהֶם מַחֲנֶה אַחַת? אִם כֵּן לָמָּה נֶאֱמַר ״מִחוּץ לַמַּחֲנֶה״, לוֹמַר לָךְ: כֵּיוָן שֶׁיָּצָא חוּץ לְמַחֲנֶה אַחַת — מְטַמְּאִים בְּגָדִים.</div>
+            <div class="fr"><p>La-bas tu leur donnes trois camps, et ici tu leur donnerais un seul camp ? Si tel est le cas, pourquoi est-il dit &quot;hors du camp&quot; ?</p><p>Pour te dire : des lors qu il est sorti hors d un seul camp -- ils rendent les vetements impurs.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le tana refuse la lecture naive du verset. Les autres <b>parim ha-nisrafim</b> (taureau du cohen machiah, taureau de la communaute, boucs de l idolatrie) doivent etre brules hors des trois camps ; or le taureau et le bouc de Yom Kippour leur sont assimiles par la guezera chava <b>hatat -- hatat</b>. Ils ne peuvent donc pas etre brules plus pres.</p><p>La sortie est un deplacement de reference : le mot <i>mahane</i> ne designe pas le lieu de la combustion, mais le seuil a partir duquel la <b>tuma des vetements</b> frappe le porteur. Grammaticalement, il se rattache a la clause suivante, <i>ve-ha-soref otam yekhabes begadav</i>.</p><p>Le resultat est une dissociation nette : la combustion reste tres loin, hors des trois camps ; la tuma, elle, commence tres tot, des le franchissement du premier mur.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 350" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="350" fill="#fffdf8"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#64748b"/></marker></defs>
+  <text x="350" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Un camp ou trois ? La contradiction et sa sortie</text>
+
+  <rect x="24" y="46" width="316" height="104" rx="8" fill="#e0f2fe" stroke="#7ab3d6"/>
+  <text x="42" y="68" font-size="11.5" font-weight="700" fill="#1d4ed8">La-bas -- taureaux brules ordinaires</text>
+  <text x="42" y="88" font-size="10" fill="#1e3a8a">Taureau du cohen machiah, taureau de la</text>
+  <text x="42" y="104" font-size="10" fill="#1e3a8a">communaute, boucs de l idolatrie.</text>
+  <text x="42" y="126" font-size="11" font-weight="700" fill="#1d4ed8">Combustion hors des TROIS camps.</text>
+  <text x="42" y="143" font-size="9.5" font-style="italic" fill="#334155">Etabli aux segments 5 a 7.</text>
+
+  <rect x="360" y="46" width="316" height="104" rx="8" fill="#fee2e2" stroke="#e5a3a3"/>
+  <text x="378" y="68" font-size="11.5" font-weight="700" fill="#b91c1c">Ici -- taureau et bouc de Yom Kippour</text>
+  <text x="378" y="88" font-size="10" fill="#7f1d1d">Vayikra 16,27 : yotsi el mi-houtz la-mahane</text>
+  <text x="378" y="104" font-size="10" fill="#7f1d1d">ve-sarfou -- au singulier, UN camp.</text>
+  <text x="378" y="126" font-size="11" font-weight="700" fill="#b91c1c">Lecture naive : on brulerait des le mahane Leviya.</text>
+  <text x="378" y="143" font-size="9.5" font-style="italic" fill="#7f1d1d">Impossible : ils sont rapproches des precedents.</text>
+
+  <path d="M 182 150 L 300 176" stroke="#64748b" stroke-width="1.6" marker-end="url(#a)"/>
+  <path d="M 518 150 L 400 176" stroke="#64748b" stroke-width="1.6" marker-end="url(#a)"/>
+
+  <rect x="120" y="180" width="460" height="58" rx="8" fill="#fef6ee" stroke="#eabf9c"/>
+  <text x="350" y="202" text-anchor="middle" font-size="11.5" font-weight="700" fill="#c2410c">Le lien : la guezera chava hatat -- hatat</text>
+  <text x="350" y="222" text-anchor="middle" font-size="10" fill="#7c2d12">Le double ha-hatat ha-hatat egalise tous les sacrifices interieurs brules. Ils ne peuvent pas differer.</text>
+
+  <path d="M 350 238 L 350 254" stroke="#64748b" stroke-width="1.8" marker-end="url(#a)"/>
+
+  <rect x="60" y="258" width="580" height="76" rx="8" fill="#dcfce7" stroke="#9cc6a0"/>
+  <text x="350" y="280" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">Sortie : le mot mahane ne parle pas du lieu de la combustion</text>
+  <text x="350" y="300" text-anchor="middle" font-size="10.5" fill="#14532d">Il porte sur la phrase qui suit -- ve-ha-soref otam yekhabes begadav -- donc sur la tuma des vetements.</text>
+  <text x="350" y="322" text-anchor="middle" font-size="10" font-style="italic" fill="#166534">Des la sortie d un seul camp, le porteur est atteint ; la combustion, elle, reste hors des trois camps.</text>
+</svg></div><div class="svg-cap">La contradiction un camp / trois camps, et sa resolution : le mot mahane change de fonction.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְהָתָם מְנָא לַן? דְּתַנְיָא: ״וְהוֹצִיא אֶת כָּל הַפָּר״ — חוּץ לְשָׁלֹשׁ מַחֲנוֹת.</div>
+            <div class="fr"><p>Et la-bas, d ou le tenons-nous ? De ce qui a ete enseigne : &quot;il fera sortir le taureau tout entier&quot; -- hors des trois camps.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara verifie maintenant l affirmation sur laquelle repose tout le raisonnement precedent : les taureaux brules ordinaires sortent-ils vraiment des trois camps ? La baraita part de Vayikra 4,12, a propos du taureau du cohen machiah : <i>ve-hotsi et kol ha-par el mi-houtz la-mahane</i>.</p><p>La lecture proposee -- <b>hors des trois camps</b> -- n est pas encore justifiee ; elle va l etre par la sequence de trois versets superflus des segments suivants.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אַתָּה אוֹמֵר חוּץ לְשָׁלֹשׁ מַחֲנוֹת, אוֹ אֵינוֹ אֶלָּא חוּץ לְמַחֲנֶה אַחַת? כְּשֶׁהוּא אוֹמֵר בְּפַר הָעֵדָה ״אֶל מִחוּץ לַמַּחֲנֶה״, שֶׁאֵין תַּלְמוּד לוֹמַר, שֶׁהֲרֵי כְּבָר נֶאֱמַר ״וְשָׂרַף אֹותוֹ כַּאֲשֶׁר שָׂרַף אֵת הַפָּר הָרִאשׁוֹן״, וּמַה תַּלְמוּד לוֹמַר ״אֶל מִחוּץ לַמַּחֲנֶה״ — לִיתֵּן לוֹ מַחֲנֶה שְׁנִיָּה.</div>
+            <div class="fr"><p>Dis-tu hors des trois camps, ou bien n est-ce pas seulement hors d un seul camp ? Lorsqu il dit a propos du taureau de la communaute &quot;hors du camp&quot; -- ce que le verset n avait pas besoin de dire, puisqu il a deja ete dit &quot;et il le brulera comme il a brule le premier taureau&quot; -- que vient donc enseigner &quot;hors du camp&quot; ?</p><p>A lui donner un second camp.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Voici la mecanique exacte de la deracha. Pour le <b>taureau de la communaute</b> (par ha-eda), la Torah a deja ecrit <i>ve-saraf oto ka-acher saraf et ha-par ha-richon</i> : ce <i>ka-acher</i> transfere en bloc toute la loi du taureau du cohen machiah. Le membre de phrase <i>el mi-houtz la-mahane</i> est donc, en principe, redondant.</p><p>Regle de lecture : un mot que le verset <b>n avait pas besoin</b> d ecrire ne peut pas etre nul. Il doit ajouter quelque chose -- ici, un camp supplementaire a franchir. Premier acquis : deux camps.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּכְשֶׁהוּא אוֹמֵר ״מִחוּץ לַמַּחֲנֶה״ בַּדֶּשֶׁן, שֶׁאֵין תַּלְמוּד לוֹמַר, שֶׁהֲרֵי כְּבָר נֶאֱמַר: ״אֶל שֶׁפֶךְ הַדֶּשֶׁן״, תֵּן לוֹ מַחֲנֶה שְׁלִישִׁית.</div>
+            <div class="fr"><p>Et lorsqu il dit &quot;hors du camp&quot; a propos du dechen (les cendres) -- ce que le verset n avait pas besoin de dire, puisqu il a deja ete dit &quot;au lieu ou l on verse les cendres&quot; -- donne-lui un troisieme camp.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִחוּץ לַמַּחֲנֶה בַּדֶּשֶׁן</b> בְּהוֹצָאַת דֶּשֶׁן הַמִּזְבֵּחַ וְהוֹצִיא אֶת הַדֶּשֶׁן אֶל מִחוּץ לַמַּחֲנֶה שֶׁאֵין [ת&quot;ל] אֵינוֹ מְלַמֵּד כְּלוּם דַּאֲנָא יָדַעְנָא דְּאַל מִחוּץ לַמַּחֲנֶה מוֹצִיאִין אוֹתוֹ דִּכְתִיב בְּפָרִים הַנִּשְׂרָפִים אֶל שֶׁפֶךְ הַדֶּשֶׁן וּכְתִיב בְּהוּ מִחוּץ לַמַּחֲנֶה:</div>
+          <div class="glose-fr">&quot;Hors du camp, a propos du dechen&quot; -- lors de la sortie des cendres de l autel : &quot;et il fera sortir les cendres hors du camp&quot; (Vayikra 6,4). Ce que le verset n avait pas besoin de dire -- il n enseigne rien [de nouveau], car je sais deja qu on les sort hors du camp, puisqu il est ecrit a propos des taureaux brules &quot;au lieu ou l on verse les cendres&quot;, et qu il y est ecrit &quot;hors du camp&quot;.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תֵּן לוֹ מַחֲנֶה שְׁלִישִׁית</b> תֵּימַהּ בְּפַר הָעֵדָה מִנָּלַן שָׁלֹשׁ מַחֲנוֹת אִי מִפַּר כֹּהֵן מָשִׁיחַ הָא אִיהוּ גּוּפֵיהּ גָּמַר בְּהֶיקֵּשׁ מְדַשֵּׁן וְדָבָר הַלָּמֵד בְּהֶיקֵּשׁ אֵינוֹ חוֹזֵר וּמְלַמֵּד בְּהֶיקֵּשׁ וּלְמַאן דְּאָמַר הֵימֶנּוּ וְדָבָר אַחֵר לָא הָוֵי הֶיקֵּשׁ נִיחָא דְּאַגַּב דְּגָמְרִי מִינֵּיהּ מַחֲנֶה הַכָּתוּב בּוֹ גָּמְרִינַן נָמֵי מַחֲנֵה דְּגָמַר בְּהֶיקֵּשָׁא וְכֵן קָשֶׁה בְּפֶרֶק נִגְמַר הַדִּין (סַנְהֶדְרִין דַּף מב:) דְּיָלֵיף מְקַלֵּל דִּסְקִילָתוֹ חוּץ לְשָׁלֹשׁ מַחֲנוֹת מִגְּזֵירָה שָׁוָה דְּפָרִים הַנִּשְׂרָפִים וְאַמַּאי וְהָא דָּבָר הַלָּמֵד בְּהֶיקֵּשׁ אֵינוֹ חוֹזֵר וּמְלַמֵּד בִּגְזֵירָה שָׁוָה לְמָאֵן דְּאָמַר בְּאֵיזֶהוּ מְקוֹמָן דְּבָתַר מְלַמֵּד אָזְלִינַן אע&quot;ג דְּלָמַד חוֹל הוּא וְכֵן בִּשְׁמַעְתָּא דְּקָאָמַר לְהַלָּן אַתָּה נוֹתֵן לָהֶם שָׁלֹשׁ מַחֲנוֹת וְכָאן מַחֲנֶה אַחַת פֵּירוּשׁ הָא גָּמְרִי מֵהֲדָדֵי בג&quot;ש דְּחַטָּאת חַטָּאת בְּשִׁילְהֵי הַתַּעֲרֹובֶת (זֶבַח. ם דַּף פג.) וְקָשֶׁה וְהָא דָּבָר הַלָּמֵד בְּהֶיקֵּשׁ אֵינוֹ חוֹזֵר וּמְלַמֵּד בִּגְזֵירָה שָׁוָה וְכֵן קָשֶׁה לְר&#x27; שִׁמְעוֹן דְּגָמַר פָּרָה מִפַּר יוֹם הַכִּפּוּרִים חוּץ לְשָׁלֹשׁ מַחֲנוֹת בִּגְזֵירָה שָׁוָה וּפַר יוֹם הַכִּפּוּרִים גּוּפֵיהּ בְּהֶיקֵּשׁ מִפַּר כֹּהֵן מָשִׁיחַ כִּדְפֵירֵשׁ רַשִׁ&quot;י מִדְּדָרְשִׁי לַפָּר זֶה פַּר יוֹם הַכִּפּוּרִים דְּאִיתַּקַּשׁ בְּהַהוּא קְרָא לְפַר כֹּהֵן מָשִׁיחַ וּלְפַר הֶעְלֵם וּבִקְרָא אַחֲרִיתִי דִּכְתִיב וְאֵת פַּר הַחַטָּאת וְאֵת שְׂעִיר הַחַטָּאת שֶׁאֵין תַּלְמוּד לוֹמַר הַחַטָּאת הַחַטָּאת אֶלָּא הַחַטָּאת יַתִּירָא לִשְׁאָר נִשְׂרָפִין הוּא דַּאֲתָא הֲרֵי אִיתַּקַּשׁוּ לְהָדְדִי וְכָל שֶׁכֵּן דְּקָשֶׁה טְפֵי הָכָא דִּגְמַר פָּרָה בִּגְזֵירָה שָׁוָה מִפַּר יוֹם הַכִּפּוּרִים וּפַר יוֹם הַכִּפּוּרִים בְּהֶיקֵּשׁ מִפַּר כֹּהֵן . הַמָּשִׁיחַ דְּאִיהוּ גּוּפֵיהּ יָלֵיף בְּהֶיקֵּשׁ בִּשְׁלָמָא מִזְרָחָהּ שֶׁל יְרוּשָׁלַיִם דִּגְמַר יוֹם הַכִּפּוּרִים מִפָּרָה מָצֵי הָדַר לְמִיגְמַר מִפַּר כֹּהֵן מָשִׁיחַ לְרַב פַּפָּא דְּפֶרֶק אֵיזֶהוּ מְקוֹמָן דְּאָמַר בָּתַר מְלַמֵּד אָזְלִינַן וּמְלַמֵּד חֻולִּין הוּא דְּפָרָה קָדְשֵׁי בֶּדֶק הַבַּיִת הִיא אֲבָל הֵיכִי מְלַמֵּד יוֹם הַכִּפּוּרִים עַל פָּרָה כֵּיוָן דִּמְלַמֵּד קוֹדֶשׁ הוּא וְיֵשׁ לוֹמַר דְּפַר יוֹם הַכִּפּוּרִים וּפַר כֹּהֵן מָשִׁיחַ לֹא בְּהֶיקֵּשׁ גָּמְרִי בַּהֲדָדִי אֶלָּא בִּגְזֵירָה שָׁוָה דְּעוֹר וּבָשָׂר וּפֵרֵשׁ כְּדִלְעֵיל אוֹ בג&quot;ש דְּהַחַטָּאת הַחַטָּאת מְהֻדְּדֵי דִּבְכוּלְּהוּ כְּתִיב הַחַטָּאת וְלֹא כְּמוֹ שֶׁפֵּירֵשׁ רַשִׁ&quot;י דְּהֶיקֵּשׁ הוּא וְהַשְׁתָּא נִיחָא דַּהֲוָה לֵיהּ דָּבָר הַלָּמֵד בִּגְזֵירָה שָׁוָה חוֹזֵר וּמְלַמֵּד בִּגְזֵירָה שָׁוָה וּפַר הֶעְלֵם נַמֵּי לְמַאן דְּאָמַר הֵימֶנּוּ וְדָבָר אַחֵר הָוֵי הֶיקֵּשׁ לָאו בְּהֶיקֵּשׁ יָלֵיף אֶלָּא בִּגְזֵירָה שָׁוָה דְּהַחַטָּאת הַחַטָּאת וַאֲפִילּוּ לְר&#x27; מֵאִיר דִּפְלִיג בס&quot;פ הַתַּעֲרוֹבוֹת (גַּם זֶה שָׁם) אַהַהוּא דְּרָשָׁא דְּחַטָּאת וְקָאָמַר אֵינוֹ צָרִיךְ הֲרֵי הוּא אוֹמֵר לְכַפֵּר כו&#x27; לָאו מִשּׁוּם דְּלֵית לֵיהּ גְּזֵירָה שָׁוָה אֶלָּא ה&quot;ק אֵינוֹ צָרִיךְ גְּזֵירָה שָׁוָה לְטֻומְאַת בְּגָדִים דְּמִקְּרָא דְּלִכְפָר נָפְקָא אִי נָמֵי יָלֵיף שְׂרֵיפָה חוּץ לֹג&#x27; מַחֲנוֹת מִגְּזֵירָה שָׁוָה דְּמִחוּץ לַמַּחֲנֶה כְּרַבִּי שִׁמְעוֹן וְקָשֶׁה אַמַּאי אִיצְטְרִיךְ לְרַבִּי שִׁמְעוֹן מִחוּץ לַמַּחֲנֶה מְיֻותָּר לְלַמֵּד עַל פָּרָה שָׁלֹשׁ מַחֲנוֹת נִגְמַר לָהּ מִפָּרִים הַנִּשְׂרָפִים כִּדְגָמַר מְקַלֵּל בר&quot;פ נִגְמַר הַדִּין (סַנְהֶדְרִין דַּף מב:) וְיֵשׁ לוֹמַר דְּשֶׁמָּא לְרַבִּי שִׁמְעוֹן מְקַלֵּל נָמֵי מִפַּר יוה&quot;כ גָּמַר כְּמוֹ פָּרָה וְעוֹד תֵּימַהּ לְדִידַן נִגְמַר מְקַלֵּל שֶׁיְּהֵא חוּץ לַמַּחֲנֶה מִיּוֹם הַכִּפּוּרִים דִּמְטַמֵּא בְּגָדִים חוּץ לְמַחֲנֶה אַחַת וְלֹא נִגְמַר חוּץ לֹג&#x27; מַחֲנוֹת מִשְּׂרֵיפַת פָּרִים וְיֵשׁ לוֹמַר מִסְתַּבְּרָא מִשְּׂרֵיפָה אִית לָן לְמִיגְמַר דְּאִידִי וְאִידִי הִכְשִׁירוּ שֵׁם מְקַלֵּל לְסָוקְלוֹ וּפָרִים לְשָׂורְפָן אֲבָל טֻומְאַת בְּגָדִים שֶׁחוּץ לְמַחֲנֶה אַחַת אֵינָן הֶכְשֵׁירוֹ אֲבָל תֵּימַהּ מַאי אִיצְטְרִיךְ קְרָא בְּפֶ&#x27; הַשּׁוֹחֵט וְהַמַּעֲלֶה (זְבָחִים דַּף קז:) בַּמַּחֲנֶה לְרַבּוֹת אֲפִילּוּ חוּץ לְמַחֲנֶה אַחַת דְּלָא תֵּימָא חוּץ לֹג&#x27; מַחֲנוֹת כְּמוֹ פָּרִים הַנִּשְׂרָפִים בְּלָאו קְרָא נִגְמַר מִחוּץ לַמַּחֲנֶה דְּטֻומְאַת בְּגָדִים דְּדָמוּ לְהָדְדִי דְּתַרְוַייְהוּ לָאו מַכְשִׁירִים נִינְהוּ וְנִרְאֶה לִי דְּאִי לֹא כְּתַב בַּמַּחֲנֶה הֲוָה גָּמְרִינַן מִפָּרָה דְּאַף עַל גַּב דְּהַאי מַכְשִׁיר וְהַאי לָאו מַכְשִׁיר הוּא מִכָּל מָקוֹם כֵּיוָן דְּאִידִי וְאִידִי בִּשְׁחִיטַת חוּץ אַיְירֵי דִּכְתִיב גַּבֵּי פָּרָה וְהוֹצִיא אֹותָהּ אֶל מִחוּץ לַמַּחֲנֶה וְשָׁחַט אֹותָהּ לְפָנָיו וְגָמְרִינַן לְהוּ מְהֻדְּדֵי וּפָרָה גָּמְרִינַן מִפָּרִים הַנִּשְׂרָפִין מִשְּׂרֵיפָתָן וְלֹא מִטֻּומְאָתָן דְּלִשְׂרֵיפָתָן דָּמְיָא דְּאִידִי וְאִידִי מַכְשִׁיר הוּא אֲבָל לְטֻומְאָתָן לָא דָּמְיָא כְּלָל:</div>
+          <div class="glose-fr">&quot;Donne-lui un troisieme camp&quot; -- etonnant : pour le taureau de la communaute, d ou tenons-nous les trois camps ? Si c est du taureau du cohen machiah -- mais celui-ci les tient lui-meme par un hekech tire du dechen, et une chose apprise par hekech ne revient pas enseigner par hekech ! Pour celui qui tient que &quot;de lui et une autre chose&quot; n est pas un hekech [a part entiere], cela va bien : puisqu on apprend de lui, de toute facon, le camp qui est ecrit chez lui, on en apprend aussi le camp qu il tient par hekech. Meme difficulte au chapitre Nigmar ha-Din (Sanhedrin 42b), ou l on apprend que le blasphemateur est lapide hors des trois camps par une guezera chava tiree des taureaux brules. Pourquoi ? Une chose apprise par hekech ne revient pas enseigner par guezera chava, selon celui qui tient dans Eizehou Mekoman que l on suit le [statut du] terme enseignant, meme si le terme enseigne est du profane. Et de meme dans notre sougya, ou l on dit &quot;la-bas tu leur donnes trois camps et ici un seul camp&quot; -- c est-a-dire qu ils s apprennent l un de l autre par la guezera chava hatat-hatat (fin du chapitre Ha-Taarovet, Zevahim 83a) : difficulte, car une chose apprise par hekech ne revient pas enseigner par guezera chava. Meme difficulte encore pour Rabbi Chimon, qui apprend la para [adouma] du taureau de Yom Kippour -- hors des trois camps -- par guezera chava, alors que le taureau de Yom Kippour lui-meme le tient par hekech du taureau du cohen machiah, comme l a explique Rachi : du fait que l on expose &quot;au taureau&quot;, c est-a-dire le taureau de Yom Kippour, lequel a ete rapproche dans ce verset du taureau du cohen machiah et du taureau du helem davar ; et dans un autre verset, &quot;et le taureau de la hatat et le bouc de la hatat&quot;, puisque le double &quot;ha-hatat ha-hatat&quot; n avait pas besoin d etre dit, ce &quot;hatat&quot; superflu vient pour les autres sacrifices brules -- les voila donc rapproches les uns des autres. Et a plus forte raison la difficulte est-elle plus grande ici, ou l on apprend la para par guezera chava du taureau de Yom Kippour, lequel [tient] par hekech du taureau du cohen machiah, lequel lui-meme apprend par hekech. Passe encore pour &quot;a l est de Jerusalem&quot;, que [le taureau de] Yom Kippour apprend de la para : celle-ci peut a son tour aller apprendre du taureau du cohen machiah, selon Rav Papa au chapitre Eizehou Mekoman, qui dit qu on suit le terme enseignant -- et ici l enseignant est du profane, puisque la vache rousse releve des kodchei bedek ha-bayit. Mais comment Yom Kippour enseignerait-il a la para, alors que l enseignant est du kodech ? Il faut repondre que le taureau de Yom Kippour et le taureau du cohen machiah ne s apprennent pas l un de l autre par hekech, mais par la guezera chava &quot;peau, chair et fiente&quot; comme ci-dessus, ou par la guezera chava &quot;ha-hatat ha-hatat&quot; -- car dans tous il est ecrit &quot;la hatat&quot; -- et non comme l a explique Rachi, qui en fait un hekech. Des lors tout va bien : c est une chose apprise par guezera chava qui revient enseigner par guezera chava. Et le taureau du helem davar aussi -- meme pour celui qui tient que &quot;de lui et une autre chose&quot; est bien un hekech -- n apprend pas par hekech mais par la guezera chava &quot;ha-hatat ha-hatat&quot;. Et meme selon Rabbi Meir, qui conteste a la fin de Ha-Taarovet cette deracha de &quot;hatat&quot; et dit &quot;ce n est pas necessaire, car il est dit lekhaper, etc.&quot;, ce n est pas qu il rejette la guezera chava : il veut dire qu on n a pas besoin de la guezera chava pour la tuma des vetements, laquelle se deduit du verset lekhaper. Ou bien encore : il apprend la combustion hors des trois camps de la guezera chava &quot;hors du camp&quot;, comme Rabbi Chimon. Difficulte : pourquoi Rabbi Chimon aurait-il besoin du &quot;hors du camp&quot; superflu pour enseigner les trois camps a la para ? Qu il l apprenne des taureaux brules, comme on l apprend pour le blasphemateur au debut de Nigmar ha-Din (Sanhedrin 42b) ! Il faut repondre que peut-etre, pour Rabbi Chimon, le blasphemateur aussi s apprend du taureau de Yom Kippour, comme la para. Autre etonnement : selon nous, apprenons donc pour le blasphemateur qu il suffit d etre hors d un seul camp, a partir de Yom Kippour ou l on rend les vetements impurs des la sortie d un seul camp -- plutot que d apprendre &quot;hors des trois camps&quot; de la combustion des taureaux ! Il faut repondre qu il est logique d apprendre de la combustion, car de part et d autre il s agit de l accomplissement propre a la chose -- le blasphemateur, on le sort pour le lapider, et les taureaux, pour les bruler -- tandis que la tuma des vetements hors d un seul camp n est pas cet accomplissement. Mais il est etonnant : pourquoi a-t-on eu besoin du verset au chapitre Ha-Chohet ve-ha-Maale (Zevahim 107b), &quot;ba-mahane&quot;, pour inclure meme hors d un seul camp, afin qu on ne dise pas &quot;hors des trois camps&quot; comme pour les taureaux brules ? Sans ce verset, apprenons-le du &quot;hors du camp&quot; de la tuma des vetements, puisque les deux se ressemblent -- ni l un ni l autre n etant un mekhchir ! Et il me semble que si &quot;ba-mahane&quot; n avait pas ete ecrit, nous l aurions appris de la para : bien que l un soit un mekhchir et l autre non, puisque de part et d autre il s agit d un abattage hors [du camp] -- car il est ecrit a propos de la para &quot;il la fera sortir hors du camp et on l abattra devant lui&quot; -- nous les apprenons l un de l autre ; et la para, nous l apprenons des taureaux brules a partir de leur combustion et non de leur tuma, car elle ressemble a leur combustion -- de part et d autre c est un mekhchir -- mais elle ne ressemble nullement a leur tuma.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Meme mecanique, troisieme etage. La Torah dit, a propos de la sortie des cendres de l autel : <i>ve-hotsi et ha-dechen el mi-houtz la-mahane</i> (Vayikra 6,4). Or on savait deja ou cela se trouve, puisque le verset du taureau brule dit <i>el chefekh ha-dechen</i>, le lieu ou l on verse les cendres, et le situe <b>hors du camp</b>.</p><p>Ce troisieme <i>mahane</i> superflu achete donc un troisieme camp. Total : les taureaux brules sortent du <b>mahane Chekhina</b> (la azara), du <b>mahane Leviya</b> (le Har haBayit) et du <b>mahane Yisrael</b> (Jerusalem).</p><p>Tossefot ouvre ici une des plus longues gloses du daf. Sa question est de methode : si le taureau du cohen machiah tient lui-meme ses trois camps par un <b>hekech</b>, comment peut-il ensuite les transmettre a d autres par hekech ou par guezera chava ? La regle <i>davar ha-lamed be-hekech eino hozer ou-melamed</i> l interdit. Sa reponse finale : ce ne sont pas des hekech mais des <b>guezerot chavot</b> (or-bassar-perech, ou hatat-hatat), et une guezera chava, elle, revient enseigner.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="430" fill="#fffdf8"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#64748b"/></marker></defs>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Comment trois versets achetent trois camps</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.5" fill="#57534e">Regle de lecture : un mot que le verset n avait pas besoin d ecrire ne peut pas etre nul -- il ajoute une distance</text>
+
+  <rect x="24" y="62" width="712" height="88" rx="8" fill="#ede9fe" stroke="#a78bfa"/>
+  <text x="42" y="83" font-size="12" font-weight="700" fill="#6d28d9">Verset 1 -- Vayikra 4,12 (taureau du cohen machiah)</text>
+  <text x="42" y="102" font-size="10.5" fill="#4c1d95">ve-hotsi et kol ha-par el mi-houtz la-mahane -- il fera sortir le taureau tout entier hors du camp</text>
+  <text x="42" y="122" font-size="10" fill="#334155">Question de la baraita : un seul camp, ou trois ? A ce stade rien ne tranche.</text>
+  <text x="42" y="140" font-size="9.5" font-style="italic" fill="#6d28d9">Acquis : premier camp -- on sort au moins du mahane Chekhina.</text>
+
+  <path d="M 380 150 L 380 164" stroke="#64748b" stroke-width="1.6" marker-end="url(#a)"/>
+
+  <rect x="24" y="168" width="712" height="94" rx="8" fill="#e0f2fe" stroke="#7ab3d6"/>
+  <text x="42" y="189" font-size="12" font-weight="700" fill="#1d4ed8">Verset 2 -- Vayikra 4,21 (taureau de la communaute)</text>
+  <text x="42" y="208" font-size="10.5" fill="#1e3a8a">el mi-houtz la-mahane -- mais le verset dit deja ve-saraf oto ka-acher saraf et ha-par ha-richon</text>
+  <text x="42" y="226" font-size="10" fill="#334155">Le ka-acher suffisait a transferer toute la loi du premier taureau. Le mi-houtz la-mahane est donc en trop.</text>
+  <text x="42" y="250" font-size="9.5" font-style="italic" fill="#1d4ed8">Acquis : deuxieme camp -- il faut aussi sortir du mahane Leviya (Har haBayit).</text>
+
+  <path d="M 380 262 L 380 276" stroke="#64748b" stroke-width="1.6" marker-end="url(#a)"/>
+
+  <rect x="24" y="280" width="712" height="94" rx="8" fill="#fef3c7" stroke="#d6b25e"/>
+  <text x="42" y="301" font-size="12" font-weight="700" fill="#92400e">Verset 3 -- Vayikra 6,4 (sortie du dechen, les cendres de l autel)</text>
+  <text x="42" y="320" font-size="10.5" fill="#78350f">ve-hotsi et ha-dechen el mi-houtz la-mahane -- mais on savait deja par el chefekh ha-dechen (4,12)</text>
+  <text x="42" y="338" font-size="10" fill="#334155">Puisque les taureaux brules sont deja envoyes au lieu ou l on verse les cendres, ce mahane-la est en trop.</text>
+  <text x="42" y="362" font-size="9.5" font-style="italic" fill="#92400e">Acquis : troisieme camp -- il faut sortir aussi du mahane Yisrael (Jerusalem).</text>
+
+  <rect x="24" y="388" width="712" height="34" rx="6" fill="#dcfce7" stroke="#9cc6a0"/>
+  <text x="380" y="410" text-anchor="middle" font-size="11" font-weight="700" fill="#166534">Conclusion : les taureaux brules le sont hors des trois camps -- donc, a Yom Kippour, le mahane du verset 16,27 sert a autre chose.</text>
+</svg></div><div class="svg-cap">Trois versets qui n avaient pas besoin d etre ecrits, trois camps a franchir.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַבִּי שִׁמְעוֹן, הַאי ״מִחוּץ לַמַּחֲנֶה״ מַאי עֲבִיד לֵיהּ? מִיבְּעֵי לֵיהּ לְכִדְתַנְיָא: רַבִּי אֱלִיעֶזֶר אוֹמֵר: נֶאֱמַר כָּאן ״מִחוּץ לַמַּחֲנֶה״ וְנֶאֱמַר לְהַלָּן ״מִחוּץ לַמַּחֲנֶה״, מַה כָּאן חוּץ לְשָׁלֹשׁ מַחֲנוֹת, אַף לְהַלָּן חוּץ לְשָׁלֹשׁ מַחֲנוֹת. וּמַה לְהַלָּן בְּמִזְרָחָהּ שֶׁל יְרוּשָׁלַיִם — אַף כָּאן בְּמִזְרָחָהּ שֶׁל יְרוּשָׁלַיִם.</div>
+            <div class="fr"><p>Et Rabbi Chimon, ce &quot;hors du camp&quot;, qu en fait-il ? Il en a besoin pour ce qui a ete enseigne : Rabbi Eliezer dit : il est dit ici &quot;hors du camp&quot; et il est dit la-bas &quot;hors du camp&quot; -- de meme qu ici c est hors des trois camps, de meme la-bas c est hors des trois camps ; et de meme que la-bas c est a l est de Jerusalem, de meme ici c est a l est de Jerusalem.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְרַבִּי שִׁמְעוֹן</b> דְּאָמַר בְּמַתְנִיתִין אֵין מְטַמְּאִין בְּגָדִים עַד שֶׁיֻּוצַּת הָאוּר בְּרֻובָּן הַאי מִחוּץ לַמַּחֲנֶה דִּכְתִיב בְּפַר וְשָׂעִיר שֶׁל יוֹם הַכִּפּוּרִים מַאי עָבֵיד לֵיהּ:</div>
+          <div class="glose-fr">&quot;Et Rabbi Chimon&quot; -- lui qui dit dans la michna qu ils ne rendent pas les vetements impurs tant que le feu n a pas pris dans la plus grande partie [des corps] : ce &quot;hors du camp&quot; ecrit a propos du taureau et du bouc de Yom Kippour, qu en fait-il ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>נֶאֱמַר כָּאן</b> בְּפַר יוֹם הַכִּפּוּרִים וְנֶאֱמַר לְהַלָּן בְּפָרָה אֲדֻומָּה וְהוֹצִיא אֹותָהּ אֶל מִחוּץ לַמַּחֲנֶה (בַּמִּדְבָּר י״ט:ג׳):</div>
+          <div class="glose-fr">&quot;Il est dit ici&quot; -- a propos du taureau de Yom Kippour ; &quot;et il est dit la-bas&quot; -- a propos de la vache rousse : &quot;il la fera sortir hors du camp&quot; (Bamidbar 19,3).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַה כָּאן</b> בְּפָרִים הַנִּשְׂרָפִין חוּץ לֹג&#x27; מַחֲנוֹת אַף שְׁחִיטַת פָּרָה אֲדֻומָּה חוּץ לֹג&#x27; מַחֲנוֹת:</div>
+          <div class="glose-fr">&quot;De meme qu ici&quot; -- pour les taureaux brules, hors des trois camps -- de meme l abattage de la vache rousse se fait hors des trois camps.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמַה לְהַלָּן</b> בְּפָרָה אֲדֻומָּה בְּמִזְרָחָהּ שֶׁל יְרוּשָׁלַיִם דִּכְתִיב בָּהּ אֶל נֹכַח פְּנֵי אֹהֶל מוֹעֵד (שָׁם) אַלְמָא עוֹמֵד בַּמִּזְרָח וּפָנָיו לַמַּעֲרָב כְּנֶגֶד פִּתְחוֹ שֶׁל הֵיכָל שֶׁהוּא בְּכֹותֶל [מַעֲרָבִי] וּפָתוּחַ לַמִּזְרָח אַף כָּאן וְכוּ&#x27;:</div>
+          <div class="glose-fr">&quot;Et de meme que la-bas&quot; -- pour la vache rousse, a l est de Jerusalem, car il y est ecrit a son sujet &quot;face a l avant de la tente d assignation&quot; (ibid.). Il ressort donc qu elle se tient a l est, le visage tourne vers l ouest, en face de l ouverture du heikhal, laquelle est dans le mur [occidental] et s ouvre vers l est -- de meme ici, etc.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Un mot superflu n est monnayable qu une fois. Les Rabbanan ont depense <i>mi-houtz la-mahane</i> pour fixer le seuil precoce de la tuma des vetements. Mais <b>Rabbi Chimon</b> soutient dans la michna que la tuma ne commence que <i>micheyoutsat ha-our be-roubam</i>, quand le feu a pris dans la plus grande partie des corps : il n a aucun seuil geographique a fonder, et le mot lui reste disponible.</p><p>Il l emploie pour une <b>guezera chava</b> avec la <b>para adouma</b>, ou l on lit <i>ve-hotsi otah el mi-houtz la-mahane</i> (Bamidbar 19,3). Le va-et-vient est double : le taureau de Yom Kippour donne a la vache rousse le regime des trois camps ; la vache rousse rend au taureau une donnee d orientation -- <b>a l est de Jerusalem</b>, car il est ecrit a son sujet <i>el nokhah penei ohel moed</i>, face a l avant de la tente d assignation.</p><p>Rachi explique la geometrie : celui qui abat la vache se tient a l est, le visage tourne vers l ouest, en face de l ouverture du heikhal, laquelle s ouvre precisement vers l est.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 360" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="360" fill="#fffdf8"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#64748b"/></marker></defs>
+  <text x="350" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Un mot, deux budgets : que fait-on de mi-houtz la-mahane ?</text>
+  <text x="350" y="45" text-anchor="middle" font-size="10" fill="#57534e">Un syntagme superflu ne peut servir qu une fois -- chaque tana le depense ailleurs</text>
+
+  <rect x="176" y="60" width="348" height="42" rx="8" fill="#f5f5f4" stroke="#a8a29e"/>
+  <text x="350" y="87" text-anchor="middle" font-size="12" font-weight="700" fill="#292524">Vayikra 16,27 : el mi-houtz la-mahane</text>
+
+  <path d="M 300 102 L 190 126" stroke="#64748b" stroke-width="1.6" marker-end="url(#a)"/>
+  <path d="M 400 102 L 510 126" stroke="#64748b" stroke-width="1.6" marker-end="url(#a)"/>
+
+  <rect x="24" y="130" width="316" height="140" rx="8" fill="#fee2e2" stroke="#e5a3a3"/>
+  <text x="42" y="152" font-size="12" font-weight="700" fill="#b91c1c">Les Rabbanan</text>
+  <text x="42" y="172" font-size="10" fill="#7f1d1d">Michna : la tuma commence des la sortie</text>
+  <text x="42" y="188" font-size="10" fill="#7f1d1d">d un seul camp. Il leur faut donc un verset</text>
+  <text x="42" y="204" font-size="10" fill="#7f1d1d">pour fixer ce seuil precoce.</text>
+  <text x="42" y="226" font-size="10.5" font-weight="700" fill="#b91c1c">Depense : seuil de tuma des vetements.</text>
+  <text x="42" y="246" font-size="9.5" font-style="italic" fill="#7f1d1d">Consequence : plus de guezera chava disponible</text>
+  <text x="42" y="261" font-size="9.5" font-style="italic" fill="#7f1d1d">-- il faut une autre source pour l orientation (seg 9).</text>
+
+  <rect x="360" y="130" width="316" height="140" rx="8" fill="#dcfce7" stroke="#9cc6a0"/>
+  <text x="378" y="152" font-size="12" font-weight="700" fill="#166534">Rabbi Chimon</text>
+  <text x="378" y="172" font-size="10" fill="#14532d">Michna : pas de tuma avant que le feu ait</text>
+  <text x="378" y="188" font-size="10" fill="#14532d">pris dans la plus grande partie. Aucun seuil</text>
+  <text x="378" y="204" font-size="10" fill="#14532d">geographique a fonder : le mot est libre.</text>
+  <text x="378" y="226" font-size="10.5" font-weight="700" fill="#166534">Depense : guezera chava avec la para adouma.</text>
+  <text x="378" y="246" font-size="9.5" font-style="italic" fill="#14532d">Bamidbar 19,3 : ve-hotsi otah el mi-houtz la-mahane.</text>
+  <text x="378" y="261" font-size="9.5" font-style="italic" fill="#14532d">Meme expression des deux cotes.</text>
+
+  <path d="M 518 270 L 518 288" stroke="#64748b" stroke-width="1.6" marker-end="url(#a)"/>
+
+  <rect x="300" y="292" width="376" height="56" rx="8" fill="#ede9fe" stroke="#a78bfa"/>
+  <text x="488" y="314" text-anchor="middle" font-size="11" font-weight="700" fill="#6d28d9">Ce que la guezera chava fait gagner a la para adouma</text>
+  <text x="488" y="334" text-anchor="middle" font-size="10" fill="#4c1d95">1. hors des trois camps -- 2. a l est de Jerusalem, face au heikhal.</text>
+
+  <rect x="24" y="292" width="256" height="56" rx="8" fill="#fef6ee" stroke="#eabf9c"/>
+  <text x="152" y="314" text-anchor="middle" font-size="10.5" font-weight="700" fill="#c2410c">Nafka mina immediate</text>
+  <text x="152" y="333" text-anchor="middle" font-size="9.5" fill="#7c2d12">Le porteur qui n a franchi qu un mur : impur ou non ?</text>
+</svg></div><div class="svg-cap">Un mot, deux budgets exegetiques : seuil de tuma chez les Rabbanan, guezera chava geographique chez Rabbi Chimon.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַבָּנָן, הֵיכָא שְׂרִיף לְהוּ? כִּדְתַנְיָא: הֵיכָן נִשְׂרָפִין?</div>
+            <div class="fr"><p>Et les Sages, ou les brulent-ils ? Comme il a ete enseigne : ou sont-ils brules ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְרַבָּנָן</b> דְּמַפְּקִי לֵיהּ לִקְרָא לְטֻומְאַת בְּגָדִים וְלֵית לְהוּ גְּזֵירָה שָׁוָה:</div>
+          <div class="glose-fr">&quot;Et les Sages&quot; -- eux qui affectent ce verset a la tuma des vetements et n ont donc pas la guezera chava.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הֵיכָא שְׂרִיף לְהוּ</b> לְאֵיזוֹ רוּחַ שֶׁל יְרוּשָׁלַיִם:</div>
+          <div class="glose-fr">&quot;Ou les brule-t-on&quot; -- de quel cote de Jerusalem ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La question renverse la precedente. Puisque les Rabbanan ont deja affecte le verset <i>mi-houtz la-mahane</i> a la tuma des vetements, ils n ont plus de guezera chava avec la vache rousse -- donc plus de source pour l orientation. <b>Ou</b>, alors, brule-t-on le taureau et le bouc de Yom Kippour ?</p><p>La guemara ouvre une baraita par la question <b>heikhan nisrafin</b>, et le daf s interrompt exactement la. La reponse -- au nord de Jerusalem, hors des trois camps -- se lit au debut de 68b.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_67b.html">&lsaquo; Yoma 67b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

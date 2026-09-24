@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pesachim 3b — Langage propre : du verset a la parole de chacun</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Pesachim 3b — Langage propre : du verset a la parole de chacun</h1>
+    <div class="ref">Pesachim 3b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Pesachim_3a.html">&lsaquo; Pesachim 3a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Pesachim_4a.html">Pesachim 4a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> Le daf reprend la fin de 3a. La Tora evite le mot inconvenant quand la formule propre a la meme longueur ; quand elle allonge, elle choisit le mot bref, et l&#x27;on enseigne au disciple par la voie courte.</p><p>Le ketiv rakhevet tranche le verset d&#x27;Avigayil. Puis des recits montrent ce que la parole revele : deux disciples devant Rav, deux disciples devant Hillel, trois cohanim et le lehem ha-panim, l&#x27;Arameen du korban Pessah pris par le filet de Rabbi Yehouda ben Beteira a Netzivin, l&#x27;annonce de la mort de Rav Kahana, et Yohanan Hakuka devant la recolte.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 300" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="300" fill="#fbfaf7"/>
+<text x="370" y="24" text-anchor="middle" font-family="Helvetica,Arial" font-size="15" font-weight="bold" fill="#2b2b2b">Quand la Tora choisit le mot</text>
+<rect x="24" y="42" width="330" height="92" fill="#eef4ee" stroke="#6f8a6f"/>
+<text x="189" y="66" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#2f5c2f">Formules de meme longueur</text>
+<text x="189" y="88" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">lashon nekiya</text>
+<text x="189" y="108" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">langage propre, langage d'honneur</text>
+<rect x="386" y="42" width="330" height="92" fill="#f7efe8" stroke="#c4a48a"/>
+<text x="551" y="66" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#8a4b3a">Le mot propre allonge</text>
+<text x="551" y="88" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">lashon ketsara</text>
+<text x="551" y="108" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">langage bref : la girsa tient mieux</text>
+<rect x="24" y="150" width="692" height="36" fill="#ede7dc" stroke="#8a7b63"/>
+<text x="370" y="173" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Rav Houna au nom de Rav, ou au nom de Rabbi Meir : enseigner au disciple par la voie breve.</text>
+<rect x="24" y="202" width="220" height="78" fill="#f7f2ea" stroke="#c0a79b"/>
+<text x="134" y="226" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">rokhevet</text>
+<text x="134" y="248" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">5 lettres</text>
+<text x="134" y="266" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">montee</text>
+<rect x="260" y="202" width="220" height="78" fill="#f7f2ea" stroke="#c0a79b"/>
+<text x="370" y="226" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">yoshevet</text>
+<text x="370" y="248" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">5 lettres</text>
+<text x="370" y="266" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">assise</text>
+<rect x="496" y="202" width="220" height="78" fill="#eef4ee" stroke="#6f8a6f"/>
+<text x="606" y="226" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2f5c2f">ketiv : rakhevet</text>
+<text x="606" y="248" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">4 lettres, sans vav</text>
+<text x="606" y="266" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2f5c2f">le bref l'emporte</text>
+</svg></div>
+          <figcaption>Meme longueur : langage propre. Mot propre plus long : langage bref. Le ketiv rakhevet, quatre lettres, l&#x27;emporte sur yoshevet.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 390" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="390" fill="#fbfaf7"/>
+<text x="370" y="24" text-anchor="middle" font-family="Helvetica,Arial" font-size="15" font-weight="bold" fill="#2b2b2b">Ce que la parole entraine</text>
+<rect x="20" y="40" width="230" height="28" fill="#ede7dc" stroke="#8a7b63"/>
+<rect x="250" y="40" width="220" height="28" fill="#ede7dc" stroke="#8a7b63"/>
+<rect x="470" y="40" width="250" height="28" fill="#ede7dc" stroke="#8a7b63"/>
+<text x="135" y="59" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Parole</text>
+<text x="360" y="59" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Qui</text>
+<text x="595" y="59" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Suite</text>
+<rect x="20" y="72" width="230" height="46" fill="#f7efe8" stroke="#c4a48a"/>
+<rect x="250" y="72" width="220" height="46" fill="#f7efe8" stroke="#c4a48a"/>
+<rect x="470" y="72" width="250" height="46" fill="#f7efe8" stroke="#c4a48a"/>
+<text x="135" y="92" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">davar aher fatigue</text>
+<text x="135" y="108" text-anchor="middle" font-family="Helvetica,Arial" font-size="10" fill="#6b6255">le detour qui dit le porc</text>
+<text x="360" y="100" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">disciple devant Rav</text>
+<text x="595" y="100" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#8a4b3a">Rav ne lui parle plus</text>
+<rect x="20" y="122" width="230" height="46" fill="#eef4ee" stroke="#6f8a6f"/>
+<rect x="250" y="122" width="220" height="46" fill="#eef4ee" stroke="#6f8a6f"/>
+<rect x="470" y="122" width="250" height="46" fill="#eef4ee" stroke="#6f8a6f"/>
+<text x="135" y="142" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">on ne cueille pas en purete</text>
+<text x="135" y="158" text-anchor="middle" font-family="Helvetica,Arial" font-size="10" fill="#6b6255">il ne nomme pas la tuma</text>
+<text x="360" y="150" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">disciple devant Hillel</text>
+<text x="595" y="150" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2f5c2f">il rendra la horaa</text>
+<rect x="20" y="172" width="230" height="46" fill="#f7efe8" stroke="#c4a48a"/>
+<rect x="250" y="172" width="220" height="46" fill="#f7efe8" stroke="#c4a48a"/>
+<rect x="470" y="172" width="250" height="46" fill="#f7efe8" stroke="#c4a48a"/>
+<text x="135" y="192" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">queue de lezard</text>
+<text x="135" y="208" text-anchor="middle" font-family="Helvetica,Arial" font-size="10" fill="#6b6255">mesure d'un sheretz</text>
+<text x="360" y="200" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">cohen, lehem ha-panim</text>
+<text x="595" y="192" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#8a4b3a">shemets de pasoul</text>
+<text x="595" y="208" text-anchor="middle" font-family="Helvetica,Arial" font-size="10" fill="#6b6255">ou shahats, l'orgueil</text>
+<rect x="20" y="222" width="230" height="46" fill="#eef2f6" stroke="#6b7d8a"/>
+<rect x="250" y="222" width="220" height="46" fill="#eef2f6" stroke="#6b7d8a"/>
+<rect x="470" y="222" width="250" height="46" fill="#eef2f6" stroke="#6b7d8a"/>
+<text x="135" y="242" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">donnez-moi de l'alya</text>
+<text x="135" y="258" text-anchor="middle" font-family="Helvetica,Arial" font-size="10" fill="#6b6255">la queue grasse offerte</text>
+<text x="360" y="250" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">Arameen a Jerusalem</text>
+<text x="595" y="242" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">on l'examine, on le tue</text>
+<text x="595" y="258" text-anchor="middle" font-family="Helvetica,Arial" font-size="10" fill="#6b6255">filet tendu depuis Netzivin</text>
+<rect x="20" y="272" width="230" height="46" fill="#f7f2ea" stroke="#c0a79b"/>
+<rect x="250" y="272" width="220" height="46" fill="#f7f2ea" stroke="#c0a79b"/>
+<rect x="470" y="272" width="250" height="46" fill="#f7f2ea" stroke="#c0a79b"/>
+<text x="135" y="292" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">moi, je ne le dis pas</text>
+<text x="135" y="308" text-anchor="middle" font-family="Helvetica,Arial" font-size="10" fill="#6b6255">verset du sot qui repand</text>
+<text x="360" y="300" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">emissaire vers Rav Kahana</text>
+<text x="595" y="292" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">keria retournee dans le dos</text>
+<text x="595" y="308" text-anchor="middle" font-family="Helvetica,Arial" font-size="10" fill="#6b6255">la mort sans la phrase</text>
+<rect x="20" y="322" width="230" height="50" fill="#f4eee0" stroke="#8a7b63"/>
+<rect x="250" y="322" width="220" height="50" fill="#f4eee0" stroke="#8a7b63"/>
+<rect x="470" y="322" width="250" height="50" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="135" y="344" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">l'orge est devenue belle</text>
+<text x="135" y="360" text-anchor="middle" font-family="Helvetica,Arial" font-size="10" fill="#6b6255">il tait le ble rate</text>
+<text x="360" y="352" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">Yohanan Hakuka</text>
+<text x="595" y="344" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">mieux : ble de l'an passe</text>
+<text x="595" y="360" text-anchor="middle" font-family="Helvetica,Arial" font-size="10" fill="#6b6255">ou lentilles, nourriture d'homme</text>
+</svg></div>
+          <figcaption>Six paroles du daf, et ce que chacune entraine : silence de Rav, horaa, pasoul, filet de Netzivin, annonce voilee, formule a reprendre.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מִשּׁוּם בָּנָיו — אוֹרְחָא הוּא.</div>
+            <div class="fr"><p>A cause de ses fils, c&#x27;est l&#x27;usage.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִשּׁוּם בָּנָיו</b> שֶׁהֵן זְכָרִים כָּתַב לְשׁוֹן רְכִיבָה:</div>
+          <div class="glose-fr">Parce que ce sont des males, il a ecrit un langage de rekhiva (monte).</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">וְהָכְתִיב: (שְׁמוֹת ד, כ) &quot;וַיִּקַּח מֹשֶׁה אֶת אִשְׁתּוֹ וְאֶת בָּנָיו וַיַּרְכִּיבֵם עַל הַחֲמֹור&quot;? הָתָם, מִשּׁוּם בָּנָיו, אוֹרְחָא הוּא. עַיֵּין פֵּירוּשׁ רָשִׁ&quot;י זַ&quot;ל [שֶׁהֵן זְכָרִים כָּתַב לְשׁוֹן רְכִיבָה] וְנִרְאֶה לִי בס&quot;ד הַכַּוָּונָה, כֵּיוָן דְּבָנָיו הָיוּ עִמָּהּ עַל חֲמוֹר אֶחָד שֶׁהֵם קְטַנִּים וּצְרִיכָה לֶאֱחֹוז אוֹתָם אִי אֶפְשָׁר שֶׁתֵּשֵׁב עַל הַחֲמוֹר מִן הַצַּד אֶלָּא מֻוכְרָח שֶׁתֵּשֵׁב בְּפִיסּוּק רַגְלַיִם כְּדֵי שֶׁתּוּכַל לֶאֱחֹוז בָּהֶם שֶׁלֹּא יִפְּלוּ. אוֹ יוּבָן הַכַּווָּנָה כֵּיוָן דְּבָנָיו גַּם כֵּן הָיוּ עִמָּהּ עַל חֲמוֹר אֶחָד אֵינוֹ מַסְפִּיק גַּב הַחֲמוֹר שֶׁתִּהְיֶה הָרְכִיבָה מִן הַצַּד בְּלִי פִּיסּוּק רַגְלַיִם. אוֹ יוּבָן הַכַּווָּנָה כֵּיוָן דְּבָנֶיהָ עִמָּהּ שֶׁרוֹכְבִים אֶחָד מִלְּפָנֶיהָ וְאֶחָד מֵאַחֲרֶיהָ אָז אֵין גְּנַאי לִרְכֹּוב בְּפִיסּוּק רַגְלַיִם יַעַן כִּי פִּיסּוּק רַגְלֶיהָ יִהְיֶה מְכֻוסֶּה בְּבָנֶיהָ מִכָּאן וּמִכָּאן.</div>
+          <div class="glose-fr">Et il est ecrit (Chemoth 4, 20) : &quot;Moshe prit sa femme et ses fils, et il les fit monter sur l&#x27;ane&quot; ? La-bas, a cause de ses fils, c&#x27;est l&#x27;usage. Vois le commentaire de Rachi, sa memoire soit en benediction [ce sont des males : il a ecrit un langage de rekhiva]. Il me semble, avec l&#x27;aide du Ciel, que l&#x27;intention est celle-ci : puisque ses fils etaient avec elle sur un seul ane, qu&#x27;ils sont petits et qu&#x27;elle doit les retenir, il est impossible qu&#x27;elle s&#x27;asseye sur l&#x27;ane de cote ; elle est contrainte de s&#x27;asseoir les jambes ecartees, afin de pouvoir les retenir pour qu&#x27;ils ne tombent pas. Ou bien l&#x27;on entend l&#x27;intention ainsi : puisque ses fils aussi etaient avec elle sur un seul ane, le dos de l&#x27;ane ne suffit pas pour que la monte se fasse de cote, sans ecartement des jambes. Ou bien l&#x27;on entend l&#x27;intention ainsi : puisque ses fils sont avec elle, l&#x27;un montant devant elle et l&#x27;autre derriere elle, il n&#x27;y a alors pas de gene a monter les jambes ecartees, car l&#x27;ecartement de ses jambes sera couvert par ses fils de chaque cote.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le daf reprend la question laissee en 3a. Le verset dit que Moshe fit monter sa femme et ses fils sur l'ane (Chemoth 4, 20) : le verbe est un verbe de <b>rekhiva</b>. Reponse : a cause des fils, des males, ce langage est l'usage.</p><p>Le Ben Yehoyada donne trois lectures de cette contrainte. Les enfants sont petits et il faut les tenir : l'assise de cote est impossible. Le dos d'un seul ane ne laisse pas la place d'une assise de cote. L'un devant et l'autre derriere couvrent l'ecartement des jambes.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְהָכְתִיב: ״וְהִיא רֹכֶבֶת עַל הַחֲמוֹר״! הָתָם, מִשּׁוּם בִּיעֲתוּתָא דְּלֵילְיָא — אוֹרְחָא הוּא. וְאִיבָּעֵית אֵימָא: מִשּׁוּם בִּיעֲתוּתָא דְּלֵילְיָא — לֵיכָּא, מִשּׁוּם בִּיעֲתוּתָא דְּדָוִד — אִיכָּא. וְאִיבָּעֵית אֵימָא: בִּיעֲתוּתָא דְּדָוִד — נָמֵי לֵיכָּא, מִשּׁוּם בִּיעֲתוּתָא דְּהַר — אִיכָּא.</div>
+            <div class="fr"><p>Et il est ecrit : &quot;Et elle etait montee sur l&#x27;ane&quot; ! La-bas, a cause de la crainte de la nuit, c&#x27;est l&#x27;usage.</p><p>Et si tu veux, dis : la crainte de la nuit, il n&#x27;y en a pas ; la crainte de David, il y en a. Et si tu veux, dis : la crainte de David non plus, il n&#x27;y en a pas ; la crainte de la montagne, il y en a.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouveau verset : Avigayil, "elle etait montee sur l'ane" (I Samuel 25, 20). Trois reponses, chacune a la place de la precedente. <b>Crainte de la nuit</b> : voyager de nuit impose la monte. <b>Crainte de David</b> : la rencontre impose la monte. <b>Crainte de la montagne</b> : la descente impose la monte. Dans chaque cas, la <b>rekhiva</b> est l'usage du moment.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 168" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="700" height="168" fill="#fbfaf7"/>
+<text x="350" y="22" text-anchor="middle" font-family="Helvetica,Arial" font-size="14" font-weight="bold" fill="#2b2b2b">Avigayil : trois craintes, chacune a la place de la precedente</text>
+<rect x="16" y="40" width="210" height="108" fill="#f7f2ea" stroke="#c0a79b"/>
+<text x="121" y="66" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#2b2b2b">Nuit</text>
+<text x="121" y="90" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">biyeta de la nuit</text>
+<text x="121" y="112" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">voyager de nuit</text>
+<text x="121" y="130" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">impose la rekhiva</text>
+<rect x="244" y="40" width="210" height="108" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="349" y="66" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#2b2b2b">David</text>
+<text x="349" y="90" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">crainte de la nuit ecartee</text>
+<text x="349" y="112" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">la rencontre avec David</text>
+<text x="349" y="130" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">impose la rekhiva</text>
+<rect x="472" y="40" width="212" height="108" fill="#eef2f6" stroke="#6b7d8a"/>
+<text x="578" y="66" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#2b2b2b">Montagne</text>
+<text x="578" y="90" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">crainte de David ecartee</text>
+<text x="578" y="112" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">la descente du har</text>
+<text x="578" y="130" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">impose la rekhiva</text>
+</svg></div><div class="svg-cap">Trois craintes, en cascade : la nuit, puis David, puis la descente. Chacune rend la rekhiva ordinaire.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּבְאוֹרָייְתָא מִי לָא כְּתִיב ״טָמֵא״? אֶלָּא: כֹּל הֵיכָא דְּכִי הֲדָדֵי נִינְהוּ — מִשְׁתַּעֵי בְּלָשׁוֹן נְקִיָּה, כֹּל הֵיכָא דִּנְפִישִׁין מִילֵּי — מִשְׁתַּעֵי בְּלָשׁוֹן קְצָרָה. כִּדְאָמַר רַב הוּנָא אָמַר רַב, וְאָמְרִי לָהּ, אָמַר רַב הוּנָא אָמַר רַב מִשּׁוּם רַבִּי מֵאִיר: לְעוֹלָם יִשְׁנֶה אָדָם לְתַלְמִידוֹ דֶּרֶךְ קְצָרָה.</div>
+            <div class="fr"><p>Et dans la Tora, &quot;tame&quot; (impur) n&#x27;est-il pas ecrit ? Voici la regle : partout ou les formules sont egales, on parle en langage propre ; partout ou les mots sont plus nombreux, on parle en langage bref.</p><p>Comme l&#x27;a dit Rav Houna au nom de Rav, et d&#x27;autres disent : Rav Houna a dit au nom de Rav, au nom de Rabbi Meir : toujours, un homme enseigne a son disciple par la voie breve.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּכִי הֲדָדֵי נִינְהוּ</b> שֶׁאֵין אֹורֶךְ בִּלְשׁוֹן צַח מִן הַמְגֻונֶּה מִשְׁתַּעֵי בִּלְשׁוֹן כָּבוֹד:</div>
+          <div class="glose-fr">Lorsqu&#x27;il n&#x27;y a pas plus de longueur dans la langue nette que dans la langue inconvenante, on parle en langage d&#x27;honneur.</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">חַד אָמַר לְהוּ: &quot;מִפְּנֵי מַה בּוֹצְרִין בְּטָהֳרָה וּמוֹסְקִין בְּטֻמְאָה&quot;. זוֹ גִּרְסַת עֵין יַעֲקֹב דְּגָרֵיס &#x27;לְהוּ&#x27; דְּקָאֵי עַל הִלֵּל אוֹ עַל רַבִּי לְחַד לִישָּׁנָא וְכֵן הוּא גִּרְסַת תַּלְמוּד כְּתָב יָד אֲבָל בַּתַּלְמוּד שֶׁבְּיָדֵינוּ לָא גָּרֵיס &#x27;לְהוּ&#x27; וּצְרִיכִים לְהָבִין לְגִרְסַת &#x27;לְהוּ&#x27; מַאי קָא מַשְׁמַע לַן? וְנִרְאֶה לִי בס&quot;ד עַל פִּי מַה שֶׁכָּתַב הָרַשְׁבָּ&quot;ץ (ח&quot;ג סִימָן ע&quot;ח) מִפְּנֵי מַה שִׁיבַּח הַתַּלְמִיד שֶׁאָמַר &#x27;אֵין מוֹסְקִין בְּטָהֳרָה&#x27; אַדְּרַבָּא הֲוָה לֵיהּ לְשַׁבּוֹחֵי לְאִידָךְ שֶׁקִּיצֵּר בִּלְשׁוֹנוֹ דְּהָא אָמְרִינַן (פְּסָחִים ג:) &#x27;לְעוֹלָם יְשַׁנֶּה אָדָם לְתַלְמִידָיו דֶּרֶךְ קְצָרָה&#x27;? וְהֵשִׁיב הָרַשְׁבָּ&quot;ץ שֶׁשָּׁמַע מֵהַגָּאוֹן מו&quot;א זַ&quot;ל שֶׁתֵּירֵץ בְּשֵׁם הָרַבָּנִית אִשְׁתּוֹ שֶׁל הָרַב רַבִּי יוֹסֵף זַ&quot;ל דְּמַה שֶׁאָמְרוּ &#x27;יְשַׁנֶּה דֶּרֶךְ קְצָרָה&#x27; דַּוְקָא הָרַב לְתַלְמִיד כְּדֵי שֶׁלֹּא יִשְׁתַּבֵּשׁ הַתַּלְמִיד בְּלָשׁוֹן אֲרֻוכָּה, אֲבָל הַתַּלְמִיד שֶׁשּׁוֹאֵל מִן הָרַב עָדִיף לְדַבֵּר בְּלָשׁוֹן נְקִיָּה וְלָא בָּעֵי לָשׁוֹן קְצָרָה, כִּי הָרַב לִבּוֹ רָחָב וְלֹא יִתְבַּלְבֵּל בְּלָשׁוֹן אֲרֻוכָּה יְעַייֵּן שָׁם. וְלָכֵן דִּקְדֵּק מִסֵּדֶר הַשַּׁ&quot;ס לִמְנַקֵּט &#x27;לְהוּ&#x27; דְּפֵירוּשׁוֹ לְהַלֵּל אוֹ לְרַבִּי לְחַד לִישָּׁנָא לוֹמַר כֵּיוָן דְּהָיָה הַתַּלְמִיד שׁוֹאֵל לָרַב לְכָךְ יָאוּת לוֹ הַשֶּׁבַח שֶׁדִּיבֵּר בְּלָשׁוֹן נְקִיָּה אַף עַל גַּב שֶׁדִּיבֵּר בְּלָשׁוֹן אֲרֻוכָּה. וּבָזֶה נִיחָא נָמֵי לְתָרֵץ דִּקְדּוּק אַחֵר דְּאָמַר &#x27; מֻבְטָח אֲנִי בָּזֶה שֶׁמּוֹרֶה הוֹרָאוֹת בְּיִשְׂרָאֵל &#x27; וְיֵשׁ לְהַקְשׁוֹת מַה שַׁייָּכוּת יֵשׁ לָזֶה בָּזֶה כִּי מַה שֶּׁנִּמְצָא שֶׁדִּבֵּר בְּלָשׁוֹן נְקִיָּה רָאוּי שֶׁיֹּאמַר שֶׁיְּהֵא חָסִיד וּפָרוּשׁ כִּי סִימָן זֶה נוֹגֵעַ לְכָךְ? אַךְ כְּפִי הָאָמוּר נִיחָא כֵּיוָן שֶׁדִּיבֵּר בְּלָשׁוֹן אֲרֻוכָּה לְרַבּוֹ, וְהַייְנוּ נִמְצָא דְּחֵלֶק כָּבוֹד לְרַבּוֹ לוֹמַר שֶׁיֵּשׁ לוֹ לֵב רָחָב וְאֵינוֹ מִשְׁתַּבֵּשׁ בִּלְשׁוֹן אֲרֻוכָּה, לָכֵן בִּזְכוּת שֶׁחָלַק כָּבוֹד לְרַבּוֹ וַדַּאי יִזְכֶּה לְכָךְ שֶׁכָּל הַנִּזְהָר בִּכְבוֹד רַבּוֹ זוֹכֶה לִהְיוֹת הוּא רַב מוֹרֶה הוֹרָאוֹת בְּיִשְׂרָאֵל מִדָּה כְּנֶגֶד מִדָּה.</div>
+          <div class="glose-fr">L&#x27;un leur dit : &quot;Pourquoi vendange-t-on en etat de purete, et cueille-t-on les olives en etat d&#x27;impurete ?&quot; C&#x27;est la version du Ein Yaakov, qui lit &quot;leur&quot; (lehou). Ce pronom vise Hillel, ou Rabbi selon une version ; c&#x27;est aussi la lecon d&#x27;un manuscrit du Talmud. Dans le Talmud que nous avons en main, on ne lit pas &quot;leur&quot;. Il faut comprendre, pour la lecon &quot;leur&quot;, ce que cela vient nous apprendre. Il me semble, avec l&#x27;aide du Ciel, d&#x27;apres ce qu&#x27;a ecrit le Rashbats (troisieme partie, siman 78) : pourquoi a-t-on loue le disciple qui a dit &quot;on ne cueille pas les olives en etat de purete&quot; ? Il aurait fallu, au contraire, louer l&#x27;autre, qui a abrege son langage, puisque nous disons (Pesachim 3b) : &quot;Toujours, un homme enseigne a ses disciples par la voie breve.&quot; Le Rashbats repondit qu&#x27;il avait entendu du gaon, mon maitre et mon pere, sa memoire soit en benediction, lequel avait tranche au nom de la rabbanit, epouse du rav Rabbi Yossef, sa memoire soit en benediction : ce qu&#x27;ils ont dit, &quot;qu&#x27;il enseigne par la voie breve&quot;, vise le rav envers le disciple, afin que le disciple ne se trouble pas dans un langage long. Le disciple qui interroge le rav, lui, a interet a parler en langage propre, et il n&#x27;a pas besoin du langage bref : le rav a le coeur large, et un langage long ne le brouille pas. Vois la-bas. C&#x27;est pourquoi le redacteur du Chas a ete precis en retenant &quot;leur&quot;, dont le sens est : a Hillel, ou a Rabbi selon une version. Il dit ainsi : puisque le disciple interrogeait le rav, la louange lui convient d&#x27;avoir parle en langage propre, bien qu&#x27;il ait parle en langage long. Par la se regle aussi un autre scrupule. Il a dit : &quot;Je suis assure de celui-ci, qu&#x27;il rendra des decisions en Israel.&quot; On peut objecter : quel lien y a-t-il entre ceci et cela ? Puisqu&#x27;on a trouve qu&#x27;il parlait en langage propre, il convenait de dire qu&#x27;il sera un hassid et un paroush, car ce signe touche a cela. Selon ce qui a ete dit, la chose se tient : puisqu&#x27;il a parle en langage long a son rav, on trouve qu&#x27;il a honore son rav, en tenant pour acquis que celui-ci a le coeur large et qu&#x27;un langage long ne le trouble pas. Par le merite d&#x27;avoir honore son rav, il meritera ceci : quiconque prend garde a l&#x27;honneur de son rav merite d&#x27;etre lui-meme un rav qui rend des decisions en Israel, mesure pour mesure.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Tora ecrit <b>tame</b>, mot direct. La ou les deux formules ont la meme longueur, on parle en <b>lashon nekiya</b>. La ou le langage propre multiplie les mots, on parle en <b>lashon ketsara</b>. Rav Houna au nom de Rav, ou au nom de Rabbi Meir : on enseigne toujours au disciple par la voie breve, afin que la <b>girsa</b> tienne.</p><p>Rachi serre la premiere branche : on choisit le langage d'honneur quand la formule propre n'est pas plus longue que la formule inconvenante. Le Ben Yehoyada, sur la lecon "leur" du recit des deux disciples, distingue le rav qui abrege pour son eleve, et l'eleve qui, lui, parle proprement a son rav, fut-ce plus longuement.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְכָל הֵיכָא דְּכִי הֲדָדֵי נִינְהוּ מִשְׁתַּעֵי בִּלְשׁוֹן כָּבוֹד? וְהָא ״רוֹכֶבֶת״ ו״יוֹשֶׁבֶת״ דְּכִי הֲדָדֵי נִינְהוּ, וְקָאָמַר ״רוֹכֶבֶת״! ״רָכַבְתָּ״ כְּתִיב.</div>
+            <div class="fr"><p>Et partout ou elles sont egales, parle-t-on en langage d&#x27;honneur ? Or &quot;rokhevet&quot; (montee) et &quot;yoshevet&quot; (assise) sont egales, et il dit &quot;rokhevet&quot; !</p><p>C&#x27;est &quot;rakhevet&quot; qui est ecrit.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְכָל הֵיכָא כּוּ&#x27;</b> וְהָנֵי דִּלְעֵיל עִיקֵּם לְלַמֶּדְךָ שֶׁצָּרִיךְ לְחַזֵּר אַחַר לָשׁוֹן נָקִי וּבִשְׁאָר מְקוֹמוֹת כְּתִיב לָשׁוֹן מְגֻונֶּה וְקָצַר לְלַמֶּדְךָ שֶׁיִּשְׁנֶה אָדָם לְתַלְמִידוֹ לָשׁוֹן קְצָרָה לְפִי שֶׁמִּתְקַיֶּימֶת גִּירְסָא שֶׁלָּהּ יוֹתֵר מִן הָאֲרֻוכָּה:</div>
+          <div class="glose-fr">Et partout ou, etc. : ces cas ci-dessus, il les a infléchis pour t&#x27;apprendre qu&#x27;il faut rechercher un langage propre ; et dans les autres endroits est ecrit un langage inconvenant et bref, pour t&#x27;apprendre qu&#x27;un homme enseigne a son disciple un langage bref, parce que la girsa de celui-ci se maintient mieux que la longue.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>רָכַבְתָּ כְּתִיב</b> ואע&quot;ג דְּמָצֵי לְמִיכְתַּב נָמֵי יָשַׁבְתָּ חָסֵר מִיהוּ כָּל חֲסֵירוֹת שֶׁבַּתּוֹרָה לִדְרוֹשׁ הֵן בָּאִין וְכָאן לִמֶּדְךָ בְּחִסָּרוֹן זֶה שֶׁתִּתְפּוֹס לָשׁוֹן קְצָרָה וַאֲפִילּוּ הוּא מְגֻונֶּה שֶׁהֲרֵי כָּאן תָּפַס לָשׁוֹן מְגֻונֶּה וְקָצַר:</div>
+          <div class="glose-fr">&quot;Rakhevet&quot; est ecrit : et bien que l&#x27;on aurait pu ecrire aussi &quot;yashvet&quot; en graphie defective, toutes les defectivites de la Tora viennent pour etre derachees ; ici, par cette defectivite, il t&#x27;apprend a saisir le langage bref, meme inconvenant, puisqu&#x27;ici il a saisi un langage inconvenant et bref.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רָכַבְתָּ כְּתִיב</b> וא&quot;ת לִכְתֹּוב נָמֵי יָשַׁבְתָּ וְאוֹמֵר ר&quot;י דְּלָא מָצֵי לְמִיכְתַּב יָשַׁבְתָּ דְּכָל הֵיכָא דְּכָתַב יָשַׁב בְּלֹא וָי&quot;ו אֲתָא לִדְרָשָׁה כִּדְדָרְשִׁינַן וְלוֹט יֹשֵׁב בְּשַׁעַר סְדֹום אוֹתוֹ הַיּוֹם מִינּוּהוּ שׁוֹפֵט (בְּרֵאשִׁית רַבָּה פָּרָשָׁה נ):</div>
+          <div class="glose-fr">&quot;Rakhevet&quot; est ecrit. Et si tu dis : qu&#x27;il ecrive aussi &quot;yashvet&quot; ! Le Ri dit qu&#x27;on ne peut pas ecrire &quot;yashvet&quot;, car partout ou &quot;yashav&quot; est ecrit sans vav, cela vient pour une derasha, comme on derache &quot;et Lot s&#x27;assit a la porte de Sodome&quot; : ce jour-la, on le nomma juge (Bereshit Rabba, section 50).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rokhevet</b> et <b>yoshevet</b> comptent le meme nombre de lettres, et le verset dit pourtant la monte. Reponse : le <b>ketiv</b> est rakhevet, sans vav, donc plus court. La brievete l'emporte.</p><p>Rachi : une graphie defective sert d'ordinaire a la <b>derasha</b> ; ici la defectivite enseigne a prendre le mot bref. Les Tossefot, au nom du Ri : <b>yashav</b> sans vav est deja une derasha, comme Lot a la porte de Sodome, nomme juge ce jour-la (Bereshit Rabba 50).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָנְהוּ תְּרֵי תַּלְמִידֵי דַּהֲווֹ יָתְבִי קַמֵּיהּ דְּרַב. חַד אָמַר: שַׁוִּיתִינַּן הַאי שְׁמַעְתָּא כְּדָבָר אַחֵר מְסַנְּקָן, וְחַד אָמַר: שַׁוִּיתִינַּן הַאי שְׁמַעְתָּא כִּגְדִי מְסַנְּקָן, וְלָא אִישְׁתַּעִי רַב בַּהֲדֵי דְּהַאיְךְ.</div>
+            <div class="fr"><p>Ces deux disciples etaient assis devant Rav. L&#x27;un dit : nous avons rendu cette shemata pareille a une autre chose fatiguee.</p><p>Et l&#x27;un dit : nous avons rendu cette shemata pareille a un chevreau fatigue. Et Rav ne parla pas avec celui-la.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כִּגְדִי מְסַנְּקָן</b> כִּגְדִי עָיֵיף סִינּוּק לְשׁוֹן עֲייֵפוּת וְדוֹמֶה לוֹ גָּד גְּדִי וְסִינֵּק לֹא בַּגְּמָרָא דְּשַׁבָּת בְּפֶרֶק בַּמֶּה אִשָּׁה יוֹצְאָהּ (שַׁבָּת דַּף סז:) הִתְגַּבֵּר מַזָּלִי וְאַל תְּהִי עָיֵיף:</div>
+          <div class="glose-fr">Comme un chevreau fatigue : comme un chevreau epuise. Sinouk est un langage de fatigue. Semblable a cela : &quot;gad gedi ve-sinouk lo&quot;, dans la Guemara de Shabbat, au chapitre Bame isha (Shabbat 67b) : &quot;que mon mazal se renforce, et ne sois pas fatigue&quot;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deux disciples, une meme fatigue, deux mots. <b>Davar aher</b> est le detour par lequel on designe le porc. <b>Gedi</b> est un chevreau, animal pur. Rav cesse de parler avec celui qui a fait entrer le porc dans la maison d'etude.</p><p>Rachi : <b>mesankan</b> est la langue de la fatigue, comme la formule de Shabbat 67b, gad gedi ve-sinouk lo.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָנְהוּ תְּרֵי תַּלְמִידֵי דַּהֲווֹ יָתְבִי קַמֵּיהּ דְּהִלֵּל, וְחַד מִינַּייְהוּ רַבָּן יוֹחָנָן בֶּן זַכַּאי. וְאָמְרִי לָהּ, קַמֵּיהּ דְּרַבִּי, וְחַד מִינַּייְהוּ רַבִּי יוֹחָנָן. חַד אָמַר: מִפְּנֵי מַה בּוֹצְרִין בְּטָהֳרָה וְאֵין מוֹסְקִין בְּטָהֳרָה? וְחַד אָמַר: מִפְּנֵי מַה בּוֹצְרִין בְּטָהֳרָה וּמוֹסְקִין בְּטֻומְאָה? אָמַר: מֻובְטָח אֲנִי בָּזֶה שֶׁמּוֹרֶה הוֹרָאָה בְּיִשְׂרָאֵל. וְלֹא הָיָה יָמִים מוּעָטִים עַד שֶׁהוֹרָה הוֹרָאָה בְּיִשְׂרָאֵל.</div>
+            <div class="fr"><p>Ces deux disciples etaient assis devant Hillel, et l&#x27;un d&#x27;eux etait Rabban Yohanan ben Zakkai. Et d&#x27;autres disent : devant Rabbi, et l&#x27;un d&#x27;eux etait Rabbi Yohanan.</p><p>L&#x27;un dit : pourquoi vendange-t-on en etat de purete, et ne cueille-t-on pas les olives en etat de purete ? Et l&#x27;un dit : pourquoi vendange-t-on en etat de purete, et cueille-t-on les olives en etat d&#x27;impurete ?</p><p>Il dit : je suis assure de celui-ci, qu&#x27;il rendra une decision en Israel. Et il ne s&#x27;ecoula que peu de jours avant qu&#x27;il rende une decision en Israel.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִפְּנֵי מַה בּוֹצְרִים בְּטָהֳרָה</b> בְּכֵלִים טְהוֹרִים:</div>
+          <div class="glose-fr">Pourquoi vendange-t-on en etat de purete : dans des ustensiles purs.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאֵין מוֹסְקִין בְּטָהֳרָה</b> בְּזֵיתִים קָא קָרֵי מְסִיקָה וְאֵין צָרִיךְ לְמָוסְקָן בְּטָהֳרָה כִּדְאָמַר בְּמַסֶּכֶת שַׁבָּת בִּיצִיאוֹת שַׁבָּת (ד&#x27; יז.) דְּלָא חֲשִׁיב מוֹהֵל הַיּוֹצֵא מֵהֶן לְהַכְשִׁיר שֶׁאֵינוֹ שֶׁמֶן גָּמוּר אֶלָּא הַיּוֹצֵא ע&quot;י הַבַּד אֲבָל יַיִן הַזָּב עַל הָעֲנָבִים מַכְשִׁירָן דְּנִיחָא לֵיהּ בֵּיהּ:</div>
+          <div class="glose-fr">Et l&#x27;on ne cueille pas en etat de purete : ce sont les olives qu&#x27;il appelle mesika, et il n&#x27;est pas necessaire de les cueillir en etat de purete, comme il est dit dans le traite Shabbat, aux sorties de Shabbat (17a) : le mohal qui en sort ne compte pas pour rendre apte a l&#x27;impurete, car ce n&#x27;est pas une huile achevee ; seule compte celle qui sort par le pressoir. Mais le vin qui coule sur les raisins les rend aptes, car il lui est agreable.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵין מוֹסְקִין בְּטָהֳרָה</b> מְפָרֵשׁ ה&quot;ר יוֹסֵף דְּטַעֲמָא דִּבְצִירָה דפ&quot;ק דְּשַׁבָּת (ד&#x27; יז. וְשָׁם) לָא שָׁיְיכִי בִּמְסִיקָה דְּשֶׁמָּא יִבְצְרֶנּוּ בְּקֻופָּה מְזֻופֶּפֶת וְהַהִיא נָמֵי פְּעָמִים שֶׁאָדָם הוֹלֵךְ לְכַרְמוֹ וְרוֹאֶה אֶשְׁכּוֹל שֶׁבִּיכְּרָה סוֹחֲטוֹ וּמְזַלְּפוֹ ע&quot;ג עֲנָבִים וּבִשְׁעַת בְּצִירָה עֲדַייִן מַשְׁקֶה טוֹפֵחַ עֲלֵיהֶן דִּבְזֵיתִים אֵינוֹ רָגִיל לַעֲשׂוֹת כֵּן שֶׁאֵינוֹ מַשְׁקֶה וְאֵינוֹ חָשׁוּב כִּדְאָמַר הָתָם וְאֵינוֹ רוֹצֶה בְּקִיּוּמָהּ:</div>
+          <div class="glose-fr">On ne cueille pas en etat de purete. Le Rav Yossef explique que les raisons de la vendange, au premier chapitre de Shabbat (17a, et la-bas), ne s&#x27;appliquent pas a la cueillette des olives. Peut-etre les vendangera-t-il dans une coupe enduite de poix ; et encore : parfois un homme va a sa vigne, voit une grappe murie, la presse et en asperge les raisins, et au moment de la vendange le liquide est encore humide sur eux. Pour les olives, on n&#x27;a pas coutume d&#x27;agir ainsi : ce n&#x27;est pas une boisson, ce n&#x27;est pas considere, comme il est dit la-bas, et il n&#x27;en veut pas le maintien.</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">חַד אָמַר לְהוּ: &quot;מִפְּנֵי מַה בּוֹצְרִין בְּטָהֳרָה וּמוֹסְקִין בְּטֻמְאָה&quot;. זוֹ גִּרְסַת עֵין יַעֲקֹב דְּגָרֵיס &#x27;לְהוּ&#x27; דְּקָאֵי עַל הִלֵּל אוֹ עַל רַבִּי לְחַד לִישָּׁנָא וְכֵן הוּא גִּרְסַת תַּלְמוּד כְּתָב יָד אֲבָל בַּתַּלְמוּד שֶׁבְּיָדֵינוּ לָא גָּרֵיס &#x27;לְהוּ&#x27; וּצְרִיכִים לְהָבִין לְגִרְסַת &#x27;לְהוּ&#x27; מַאי קָא מַשְׁמַע לַן? וְנִרְאֶה לִי בס&quot;ד עַל פִּי מַה שֶׁכָּתַב הָרַשְׁבָּ&quot;ץ (ח&quot;ג סִימָן ע&quot;ח) מִפְּנֵי מַה שִׁיבַּח הַתַּלְמִיד שֶׁאָמַר &#x27;אֵין מוֹסְקִין בְּטָהֳרָה&#x27; אַדְּרַבָּא הֲוָה לֵיהּ לְשַׁבּוֹחֵי לְאִידָךְ שֶׁקִּיצֵּר בִּלְשׁוֹנוֹ דְּהָא אָמְרִינַן (פְּסָחִים ג:) &#x27;לְעוֹלָם יְשַׁנֶּה אָדָם לְתַלְמִידָיו דֶּרֶךְ קְצָרָה&#x27;? וְהֵשִׁיב הָרַשְׁבָּ&quot;ץ שֶׁשָּׁמַע מֵהַגָּאוֹן מו&quot;א זַ&quot;ל שֶׁתֵּירֵץ בְּשֵׁם הָרַבָּנִית אִשְׁתּוֹ שֶׁל הָרַב רַבִּי יוֹסֵף זַ&quot;ל דְּמַה שֶׁאָמְרוּ &#x27;יְשַׁנֶּה דֶּרֶךְ קְצָרָה&#x27; דַּוְקָא הָרַב לְתַלְמִיד כְּדֵי שֶׁלֹּא יִשְׁתַּבֵּשׁ הַתַּלְמִיד בְּלָשׁוֹן אֲרֻוכָּה, אֲבָל הַתַּלְמִיד שֶׁשּׁוֹאֵל מִן הָרַב עָדִיף לְדַבֵּר בְּלָשׁוֹן נְקִיָּה וְלָא בָּעֵי לָשׁוֹן קְצָרָה, כִּי הָרַב לִבּוֹ רָחָב וְלֹא יִתְבַּלְבֵּל בְּלָשׁוֹן אֲרֻוכָּה יְעַייֵּן שָׁם. וְלָכֵן דִּקְדֵּק מִסֵּדֶר הַשַּׁ&quot;ס לִמְנַקֵּט &#x27;לְהוּ&#x27; דְּפֵירוּשׁוֹ לְהַלֵּל אוֹ לְרַבִּי לְחַד לִישָּׁנָא לוֹמַר כֵּיוָן דְּהָיָה הַתַּלְמִיד שׁוֹאֵל לָרַב לְכָךְ יָאוּת לוֹ הַשֶּׁבַח שֶׁדִּיבֵּר בְּלָשׁוֹן נְקִיָּה אַף עַל גַּב שֶׁדִּיבֵּר בְּלָשׁוֹן אֲרֻוכָּה. וּבָזֶה נִיחָא נָמֵי לְתָרֵץ דִּקְדּוּק אַחֵר דְּאָמַר &#x27; מֻבְטָח אֲנִי בָּזֶה שֶׁמּוֹרֶה הוֹרָאוֹת בְּיִשְׂרָאֵל &#x27; וְיֵשׁ לְהַקְשׁוֹת מַה שַׁייָּכוּת יֵשׁ לָזֶה בָּזֶה כִּי מַה שֶּׁנִּמְצָא שֶׁדִּבֵּר בְּלָשׁוֹן נְקִיָּה רָאוּי שֶׁיֹּאמַר שֶׁיְּהֵא חָסִיד וּפָרוּשׁ כִּי סִימָן זֶה נוֹגֵעַ לְכָךְ? אַךְ כְּפִי הָאָמוּר נִיחָא כֵּיוָן שֶׁדִּיבֵּר בְּלָשׁוֹן אֲרֻוכָּה לְרַבּוֹ, וְהַייְנוּ נִמְצָא דְּחֵלֶק כָּבוֹד לְרַבּוֹ לוֹמַר שֶׁיֵּשׁ לוֹ לֵב רָחָב וְאֵינוֹ מִשְׁתַּבֵּשׁ בִּלְשׁוֹן אֲרֻוכָּה, לָכֵן בִּזְכוּת שֶׁחָלַק כָּבוֹד לְרַבּוֹ וַדַּאי יִזְכֶּה לְכָךְ שֶׁכָּל הַנִּזְהָר בִּכְבוֹד רַבּוֹ זוֹכֶה לִהְיוֹת הוּא רַב מוֹרֶה הוֹרָאוֹת בְּיִשְׂרָאֵל מִדָּה כְּנֶגֶד מִדָּה.</div>
+          <div class="glose-fr">L&#x27;un leur dit : &quot;Pourquoi vendange-t-on en etat de purete, et cueille-t-on les olives en etat d&#x27;impurete ?&quot; C&#x27;est la version du Ein Yaakov, qui lit &quot;leur&quot; (lehou). Ce pronom vise Hillel, ou Rabbi selon une version ; c&#x27;est aussi la lecon d&#x27;un manuscrit du Talmud. Dans le Talmud que nous avons en main, on ne lit pas &quot;leur&quot;. Il faut comprendre, pour la lecon &quot;leur&quot;, ce que cela vient nous apprendre. Il me semble, avec l&#x27;aide du Ciel, d&#x27;apres ce qu&#x27;a ecrit le Rashbats (troisieme partie, siman 78) : pourquoi a-t-on loue le disciple qui a dit &quot;on ne cueille pas les olives en etat de purete&quot; ? Il aurait fallu, au contraire, louer l&#x27;autre, qui a abrege son langage, puisque nous disons (Pesachim 3b) : &quot;Toujours, un homme enseigne a ses disciples par la voie breve.&quot; Le Rashbats repondit qu&#x27;il avait entendu du gaon, mon maitre et mon pere, sa memoire soit en benediction, lequel avait tranche au nom de la rabbanit, epouse du rav Rabbi Yossef, sa memoire soit en benediction : ce qu&#x27;ils ont dit, &quot;qu&#x27;il enseigne par la voie breve&quot;, vise le rav envers le disciple, afin que le disciple ne se trouble pas dans un langage long. Le disciple qui interroge le rav, lui, a interet a parler en langage propre, et il n&#x27;a pas besoin du langage bref : le rav a le coeur large, et un langage long ne le brouille pas. Vois la-bas. C&#x27;est pourquoi le redacteur du Chas a ete precis en retenant &quot;leur&quot;, dont le sens est : a Hillel, ou a Rabbi selon une version. Il dit ainsi : puisque le disciple interrogeait le rav, la louange lui convient d&#x27;avoir parle en langage propre, bien qu&#x27;il ait parle en langage long. Par la se regle aussi un autre scrupule. Il a dit : &quot;Je suis assure de celui-ci, qu&#x27;il rendra des decisions en Israel.&quot; On peut objecter : quel lien y a-t-il entre ceci et cela ? Puisqu&#x27;on a trouve qu&#x27;il parlait en langage propre, il convenait de dire qu&#x27;il sera un hassid et un paroush, car ce signe touche a cela. Selon ce qui a ete dit, la chose se tient : puisqu&#x27;il a parle en langage long a son rav, on trouve qu&#x27;il a honore son rav, en tenant pour acquis que celui-ci a le coeur large et qu&#x27;un langage long ne le trouble pas. Par le merite d&#x27;avoir honore son rav, il meritera ceci : quiconque prend garde a l&#x27;honneur de son rav merite d&#x27;etre lui-meme un rav qui rend des decisions en Israel, mesure pour mesure.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">מֻבְטָח אֲנִי בָּזֶה שֶׁמּוֹרֶה הוֹרָאוֹת בְּיִשְׂרָאֵל. מַקְשִׁים מַה שַׁייָּכוּת יֵשׁ לָזֶה בָּזֶה? וַהֲוָה לֵיהּ לְמֵימַר שֶׁיְּהֵא חָסִיד וּפָרוּשׁ מִשּׁוּם שֶׁדִּבֵּר בְּלָשׁוֹן נְקִיָּה! וְנִרְאֶה לִי בס&quot;ד דְּמִלְּבַד דָּבָר טוֹב זֶה שֶׁמָּצָא בּוֹ שֶׁדִּבֵּר בְּלָשׁוֹן נְקִיָּה עוֹד מָצָא בּוֹ חֲרִיפוֹת שֵׂכֶל וְחָכְמָה יְתֵירָה דַּהֲוָה דָּיֵיק לִישָּׁנָא שֶׁלֹּא אָמַר לָשׁוֹן דְּמִשְׁתְּמַע לִתְרֵי אַנְפֵּי כְּמוֹ חֲבֵירוֹ וְהוּא כִּי חֲבֵירוֹ אָמַר &#x27; מִפְּנֵי מַה בּוֹצְרִין בְּטָהֳרָה וּמוֹסְקִין בְּטֻמְאָה &#x27; דְּבָרָיו אֵלּוּ סוֹבְלִים שְׁנֵי פֵּירוּשִׁים הָא&#x27; לוֹמַר כַּוָּנָתוֹ לִשְׁאֹל רַק עַל הַמְּסִיקָה שֶׁל זֵתִים לָמָּה יַעֲשׂוּ בְּטֻומְאָה וּבֶאֱמֶת כָּךְ הִיא כַּוָּנָתוֹ בִּשְׁאֵלָה זוֹ, אַךְ דְּבָרָיו אֵלּוּ סוֹבְלִים עוֹד פֵּירוּשׁ אַחֵר אֲשֶׁר אֵין זֶה מַטְּרַת שְׁאֵלָתוֹ וְהוּא שֶׁהַשּׁוֹמֵעַ יְפָרֵשׁ שְׁאֵלָתוֹ כָּךְ &#x27;לָמָּה בּוֹצְרִין בְּטָהֳרָה וּמוֹסְקִין בְּטֻומְאָה וְאֵין עוֹשִׂין לְהֵפֶךְ לִהְיוֹת בּוֹצְרִין בְּטֻומְאָה וּמוֹסְקִין בְּטָהֳרָה?&#x27; דְּכַוָּנָתוֹ לִשְׁאֹל עַל שְׁנֵיהֶם לָתֵת שֶׁל זֶה בָּזֶה וְשֶׁל זֶה בָּזֶה, וּבֶאֱמֶת הוּא לֹא הָיְתָה כַּוָּנָתוֹ כָּךְ אֶלָּא שֶׁדְּבָרָיו סוֹבְלִים גַּם פֵּירוּשׁ זֶה וְנִמְצָא אֵינוֹ חָכָם לִהְיוֹת דִּיֵּיק בִּלְשׁוֹנוֹ לִתְפֹּוס שְׁאֵלָתוֹ בְּלָשׁוֹן בָּרוּר שֶׁאֵינוֹ סוֹבֵל אֶלָּא פֵּירוּשׁ אֶחָד דַּוְקָא. אַךְ זֶה הַשֵּׁנִי שֶׁלֹּא זָכַר בִּדְבָרָיו טֻומְאָה בְּחַד וְטָהֳרָה בְּחַד אֶלָּא שָׁאַל &#x27; מִפְּנֵי מַה בּוֹצְרִין בְּטָהֳרָה וְאֵין מוֹסְקִין בְּטָהֳרָה &#x27; אֵין דְּבָרָיו סוֹבְלִים שְׁנֵי פֵּירוּשִׁים אֶלָּא רַק פֵּירוּשׁ אֶחָד דְּמֻוכְרָח לְפָרֵשׁ דְּבָרָיו שֶׁכָּל שְׁאֵלָתוֹ הִיא רַק עַל הַטָּהֳרָה לָמָּה אֵין עוֹשִׂין אוֹתָהּ גַּם בִּמְסִיקָה, וְלֹא אֶפְשָׁר לְפָרֵשׁ דְּבָרָיו שֶׁשּׁוֹאֵל בִּשְׁתַּיִם לָתֵת שֶׁל זֶה בָּזֶה. וְשֶׁל זֶה בָּזֶה. וְלָכֵן כֵּיוָן שֶׁרָאָה חָכְמָתוֹ דְּדָיֵיק בִּלְשׁוֹנוֹ לִמְנַקַּט לָשׁוֹן בָּרוּר אָמַר &#x27; מְבַטְּחֵנִי שֶׁיִּהְיֶה חָכָם גָּדוֹל שֶׁמּוֹרֶה הוֹרָאוֹת בְּיִשְׂרָאֵל &#x27; כִּי דָּבָר זֶה דְּדָיֵיק בְּלִישָּׁנָא הוּא סִימָן טוֹב לָזֶה וּכְמוֹ שֶׁאָמְרוּ בְּעֵירוּבִין (עֵירוּבִין נג.) בְּנֵי יְאֻודֶּה דְּהָווּ דָּיְיקִי לִישָּׁנָא הָווּ גַּלֵּי מַסֶּכְתָּא מַה שֶׁאֵין כֵּן בְּנֵי גָּלִיל. וַעֲדַייִן יֵשׁ לְדַקְדֵּק בְּמַה שֶׁאָמַר &#x27; בְּיִשְׂרָאֵל &#x27; נִרְאֶה לְשׁוֹן יֶתֶר? וְנִרְאֶה לִי בס&quot;ד יֵשׁ מוֹרֶה הוֹרָאוֹת בְּבֵית הַמִּדְרָשׁ וְאֵין זוֹכֶה שֶׁתִּתְפַּשֵּׁט הוֹרָאָתוֹ לַעֲשׂוֹת מַעֲשֶׂה בְּקֶרֶב כָּל יִשְׂרָאֵל עַל פִּי הוֹרָאָתוֹ אֶלָּא הוֹרָאָתוֹ תִּשָּׁאֵר עֲצוּרָה בְּבֵית הַמִּדְרָשׁ דְּאֵין הֲלָכָה כְּמוֹתוֹ. וְיֵשׁ שֶׁזּוֹכֶה שֶׁיִּקְבְּעוּ הֲלָכָה כְּמוֹתוֹ לְעִנְיַן מַעֲשֶׂה הִנֵּה זֶה הוֹרָאָתוֹ יוֹצְאָהּ בְּבֵית הַמִּדְרָשׁ וּמִתְפַּשֶּׁטֶת בְּקֶרֶב יִשְׂרָאֵל דְּעָבְדִי עֻובְדָּא כְּוָותֵיהּ וְעַל זֶה נֶאֱמַר (מִשְׁלֵי ה, טז) יָפֻוצוּ מַעְיְנֹתֶיךָ חוּצָה. הָנְהוּ תְּלָתָא כָּהֲנֵי, חַד אָמַר [לְהוּ] : הִגִּיעַנִי כָּפוּל, וְחַד אָמַר : הִגִּיעַנִי כְּזַיִת, וְחַד אָמַר : הִגִּיעַנִי כִּזְנַב הַלְּטָאָה . בָּדְקוּ אַחֲרָיו וּמָצְאוּ בּוֹ שֶׁמֶץ פְּסוּל [ג:] קָשֶׁה הָנְהוּ תְּרֵי קַמָּאֵי לָמָּה הִזְכִּירָם פֹּה? וְסַגִּי לוֹמַר &#x27;הַהוּא כָּהֲנָא דְּאָמַר הִגִּיעַנִי כִּזְנַב הַלְּטָאָה וּבָדְקוּ אַחֲרָיו&#x27;? וְנִרְאֶה לִי בס&quot;ד דְּאִם לֹא הָיוּ אֵלּוּ עִמּוֹ שֶׁקָּדְמוּ וְדִבְּרוּ בְּשֶׁבַח לֹא הָיוּ בּוֹדְקִים אַחֲרָיו מֵחֲמַת שֶׁאָמַר כֵּן דְּהָיוּ אוֹמְרִים מִשְׁגֶּה שֶׁכָּךְ נָפַל בְּפִיו בִּשְׁגָגָה וְהָיָה נִשְׁאַר בְּחֶזְקָתוֹ וְלֹא הָיוּ בּוֹדְקִין אַחֲרָיו אַךְ מֵאַחַר דְּהָווּ יָתְבִי תְּלָתָא וְהָיָה הָאֶחָד מְחַבֵּב הַקֳּדָשִׁים שֶׁהָיָה מֵיצֵר עַל רֹועַ מַזָּלוֹ שֶׁלֹּא הִגִּיעַ לוֹ מִבְּשַׂר הַקֹּודֶשׁ אֶלָּא דָּבָר מוּעָט וְהַשֵּׁנִי הָיָה מְחַבֵּב הַקֳּדָשִׁים בְּאוֹמְרוֹ אֲנִי זָכִיתִי לְחֵלֶק חָשׁוּב יוֹתֵר מִמְּךָ שֶׁהִגִּיעַ לִי כַּזַּיִת וְזֶה הַשְּׁלִישִׁי לֹא הָלַךְ בְּדֶרֶךְ חֲבֵרָיו שֶׁחִבְּבוּ הַקֳּדָשִׁים אֶלָּא עָנָה אַחֲרֵיהֶם בִּדְבַר בִּזָּיוֹן לְדַמּוֹת הַקֳּדָשִׁים לְשִׁיעוּר זְנַב הַלְּטָאָה תּוּ לֵיכָּא לְלַמֵּד עָלָיו זְכוּת וְלוֹמַר בִּשְׁגָגָה דִּבֵּר בְּלָשׁוֹן זֶה לְכָךְ בָּדְקוּ אַחֲרָיו! אִי נָמֵי יֵשׁ לוֹמַר אֵין הַבֵּית דִּין בָּדְקוּ אַחֲרָיו דְּאֵין צְרִיכִין מִן הַדִּין לִבְדֹּוק אַחֲרָיו בַּעֲבוּר דְּבָרִים אַחַר שֶׁהָיָה מֻוחְזָק בְּכַשְׁרוּת אֶלָּא אוֹתָם הַשְּׁנַיִם שֶׁהָיוּ עִמּוֹ חָרָה לָהֶם עַל דְּבָרָיו וּבָדְקוּ וּמָצְאוּ שֶׁמֶץ פָּסוּל וּבֵירְרוּ אוֹתוֹ אַחַר כָּךְ בְּבֵית דִּין. בְּרַם אִיכָּא לְמֵידַק אֵיךְ יַגִּיעַ לָזֶה כָּפוּל וְלָזֶה כַּזַּיִת מִלֶּחֶם הַפָּנִים וַהֲלֹא צָרִיךְ לְחֶלְקוֹ בֵּינֵיהֶם בְּשָׁוֶה חֵלֶק כְּחֵלֶק? וְדֹוחַק לוֹמַר זֶה בַּעַל הַזַּיִת חָטַף מֵאֲחֵרִים וְנִשְׁלַם חֶלְקוֹ לְשִׁיעוּר זַיִת. וְנִרְאֶה לִי בס&quot;ד דְּאֵלּוּ הַשְּׁלֹשָׁה לָאו מֵחַד מִשְׁמָר הֵם אֶלָּא כָּל אֶחָד מִן מִשְׁמָר אַחֵר וְלָכֵן בְּמִשְׁמָר שֶׁל זֶה הָיוּ הַחֲלָקִים כֻּולָּם עַל שִׁיעוּר פּוֹל וּמִשְׁמָר זֶה כֻּולָּם זַיִת. אִי נָמֵי לְעוֹלָם שְׁלָשְׁתָּם מִשְׁמָר אֶחָד וְהַחֲלָקִים הָיוּ שִׁיעוּר פּוֹל לְכָךְ אָמַר הָרִאשׁוֹן הִגִּיעַנִי כָּפוּל וְהַשֵּׁנִי אָמַר אֲנִי חֶלְקִי הָיָה חָשׁוּב בְּעֵינַי כְּשִׁיעוּר זַיִת שֶׁהוּא גָּדוֹל מִפּוֹל וְהַג&#x27; אָמַר שֶׁהָיָה נִרְאֶה בְּעֵינָיו כִּזְנַב שֶׁהוּא קָטָן מִפּוֹל.</div>
+          <div class="glose-fr">&quot;Je suis assure de celui-ci, qu&#x27;il rendra des decisions en Israel.&quot; On objecte : quel lien y a-t-il entre ceci et cela ? Il aurait fallu dire qu&#x27;il sera un hassid et un paroush, puisqu&#x27;il a parle en langage propre. Il me semble, avec l&#x27;aide du Ciel : outre cette bonne chose qu&#x27;il a trouvee en lui, qu&#x27;il parlait en langage propre, il a encore trouve en lui une vivacite d&#x27;esprit et une sagesse de plus : il precisait son langage. Il n&#x27;a pas dit une formule qui s&#x27;entend de deux facons, comme son compagnon. Voici : son compagnon a dit &quot;pourquoi vendange-t-on en etat de purete, et cueille-t-on les olives en etat d&#x27;impurete&quot;. Ces paroles portent deux lectures. La premiere : son intention est de ne questionner que la cueillette des olives, pourquoi on la fait en etat d&#x27;impurete ; et telle est bien l&#x27;intention de sa question. Ces paroles portent encore une autre lecture, qui n&#x27;est pas le but de sa question : l&#x27;auditeur expliquera la question ainsi, &quot;pourquoi vendange-t-on en purete et cueille-t-on les olives en impurete, et pourquoi ne fait-on pas l&#x27;inverse, vendanger en impurete et cueillir les olives en purete ?&quot;, son intention etant de questionner les deux, pour mettre celui-ci a la place de celui-la et celui-la a la place de celui-ci. En verite son intention n&#x27;etait pas celle-la ; ses paroles portent aussi cette lecture. Il se trouve qu&#x27;il n&#x27;a pas la sagesse de preciser son langage, pour saisir sa question dans une formule claire qui ne porte qu&#x27;une seule lecture. Celui-ci, le second, n&#x27;a pas mentionne dans ses paroles l&#x27;impurete pour l&#x27;un et la purete pour l&#x27;autre. Il a demande : &quot;pourquoi vendange-t-on en etat de purete, et ne cueille-t-on pas les olives en etat de purete&quot;. Ses paroles ne portent pas deux lectures, une seule : on est force d&#x27;expliquer que toute sa question porte sur la purete, pourquoi on ne la pratique pas aussi pour la cueillette, et l&#x27;on ne peut pas expliquer qu&#x27;il questionne les deux pour les echanger. Puisqu&#x27;il a vu sa sagesse, qu&#x27;il precise son langage pour prendre une formule claire, il a dit : &quot;Je suis assure qu&#x27;il sera un grand sage, qui rendra des decisions en Israel.&quot; Preciser la langue est un bon signe pour cela, comme ils ont dit a Erouvin (53a) : les gens de Yehouda, qui precisaient la langue, leur enseignement etait clair, ce qui n&#x27;est pas le cas des gens du Galil. On peut encore scruter le mot &quot;en Israel&quot; : il semble de trop. Il me semble, avec l&#x27;aide du Ciel : il y a celui qui rend des decisions dans le beit ha-midrash, et qui ne merite pas que sa decision se repande pour qu&#x27;on agisse, au sein de tout Israel, selon elle ; sa decision reste enfermee dans le beit ha-midrash, car la halakha n&#x27;est pas fixee comme lui. Et il y a celui qui merite qu&#x27;on fixe la halakha comme lui pour la pratique : sa decision sort du beit ha-midrash et se repand au sein d&#x27;Israel, car on fait l&#x27;acte selon lui. De celui-la il est dit (Mishlei 5, 16) : &quot;que tes sources se repandent au-dehors&quot;. Ces trois cohanim. L&#x27;un dit [leur] : il m&#x27;est echeu comme une feve. L&#x27;un dit : il m&#x27;est echeu comme une olive. L&#x27;un dit : il m&#x27;est echeu comme une queue de lezard. Ils examinerent derriere lui et trouverent en lui un shemets de pasoul [3b]. Difficulte : ces deux premiers, pourquoi les mentionner ici ? Il suffirait de dire : &quot;ce cohen qui dit : il m&#x27;est echeu comme une queue de lezard, et ils examinerent derriere lui&quot;. Il me semble, avec l&#x27;aide du Ciel : si ceux-la n&#x27;avaient pas ete avec lui, eux qui ont parle d&#x27;abord en eloge, on ne l&#x27;aurait pas examine pour avoir dit cela. On aurait dit : une meprise, cela lui est tombe de la bouche par erreur ; il serait reste dans sa hazaka, et on ne l&#x27;aurait pas examine. Puisque les trois etaient assis, que le premier cherissait les kodashim, peine de sa mauvaise part, de n&#x27;avoir recu de la chair sacree qu&#x27;une chose minime, et que le second cherissait les kodashim en disant : j&#x27;ai merite une part plus importante que toi, il m&#x27;est echeu comme une olive, celui-ci, le troisieme, n&#x27;a pas suivi la voie de ses compagnons qui cherissaient les kodashim. Il a repondu apres eux par une parole de mepris, en comparant les kodashim a la mesure d&#x27;une queue de lezard. Il n&#x27;y a plus lieu de le juger favorablement et de dire qu&#x27;il a parle ainsi par erreur : c&#x27;est pourquoi on l&#x27;a examine. On peut dire aussi : le beit din ne l&#x27;a pas examine. Du point de vue du din, on n&#x27;a pas a l&#x27;examiner pour des paroles, des lors qu&#x27;il etait tenu pour kacher. Ce sont les deux qui etaient avec lui : ses paroles les ont mis en colere, ils ont examine, ils ont trouve un shemets de pasoul, et ils l&#x27;ont ensuite eclairci au beit din. On peut encore scruter : comment l&#x27;un recoit-il comme une feve et l&#x27;autre comme une olive, du lehem ha-panim ? Il faut le partager entre eux a parts egales, part pour part. Il est force de dire que le detenteur de l&#x27;olive a saisi la part d&#x27;autrui et que sa part s&#x27;est completee jusqu&#x27;a la mesure d&#x27;une olive. Il me semble, avec l&#x27;aide du Ciel : ces trois-la ne sont pas d&#x27;un seul mishmar ; chacun est d&#x27;un autre mishmar. Dans le mishmar de celui-ci, toutes les parts etaient a la mesure d&#x27;une feve, et dans ce mishmar-ci, toutes etaient a la mesure d&#x27;une olive. On peut dire aussi : les trois sont bien d&#x27;un seul mishmar, et les parts etaient a la mesure d&#x27;une feve. C&#x27;est pourquoi le premier a dit : il m&#x27;est echeu comme une feve ; le second a dit : ma part etait, a mes yeux, importante comme la mesure d&#x27;une olive, qui est plus grande qu&#x27;une feve ; et le troisieme a dit qu&#x27;elle lui paraissait comme une queue, qui est plus petite qu&#x27;une feve.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Une seule question, deux phrases. Les <b>raisins</b> : le vin qui coule est voulu, il fait <b>hekhsher</b> ; on vendange dans des <b>kelim tehorim</b>. Les <b>olives</b> : le <b>mohal</b> n'est pas une huile achevee, et l'on n'en veut pas le maintien ; la <b>mesika</b> n'exige pas la tahara (Shabbat 17a). Les Tossefot, au nom du Rav Yossef : la coupe poissee et le jus encore humide sont des raisons de la vigne.</p><p>Le premier eleve dit "on ne cueille pas en purete" : il ne nomme pas la <b>tuma</b>. Le second dit "on cueille en impurete" : il la nomme. Le maitre est assure de celui qui a parle proprement : il rendra la <b>horaa</b> en Israel. Deux scenes : Hillel et Rabban Yohanan ben Zakkai, ou Rabbi et Rabbi Yohanan.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="720" height="250" fill="#fbfaf7"/>
+<text x="360" y="22" text-anchor="middle" font-family="Helvetica,Arial" font-size="14" font-weight="bold" fill="#2b2b2b">Une question, deux phrases</text>
+<rect x="16" y="38" width="336" height="100" fill="#eef4ee" stroke="#6f8a6f"/>
+<text x="184" y="60" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2f5c2f">On ne cueille pas en purete</text>
+<text x="184" y="82" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">il ne nomme que la tahara</text>
+<text x="184" y="102" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">une seule lecture possible</text>
+<text x="184" y="122" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" font-weight="bold" fill="#2f5c2f">celui-ci rendra la horaa</text>
+<rect x="368" y="38" width="336" height="100" fill="#f7efe8" stroke="#c4a48a"/>
+<text x="536" y="60" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#8a4b3a">On cueille en impurete</text>
+<text x="536" y="82" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">il nomme la tuma</text>
+<text x="536" y="102" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">la phrase peut s'entendre</text>
+<text x="536" y="122" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">comme un echange des deux</text>
+<rect x="16" y="152" width="336" height="82" fill="#f7f2ea" stroke="#c0a79b"/>
+<text x="184" y="174" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Raisins : batsir</text>
+<text x="184" y="194" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">le vin qui coule est voulu</text>
+<text x="184" y="214" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">hekhsher : kelim tehorim</text>
+<rect x="368" y="152" width="336" height="82" fill="#f7f2ea" stroke="#c0a79b"/>
+<text x="536" y="174" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Olives : mesika</text>
+<text x="536" y="194" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">le mohal n'est pas l'huile finie</text>
+<text x="536" y="214" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">pas d'obligation de tahara</text>
+</svg></div><div class="svg-cap">La phrase qui ne nomme que la tahara, et la phrase qui nomme la tuma. En dessous : pourquoi la vigne exige la purete, et non la cueillette des olives.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָנְהוּ תְּלָתָא כָּהֲנֵי. חַד אָמַר לְהוּ: הִגִּיעַנִי כָּפוּל, וְחַד אָמַר: הִגִּיעַנִי כַּזַּיִת, וְחַד אָמַר: הִגִּיעַנִי כִּזְנַב הַלְּטָאָה. בָּדְקוּ אַחֲרָיו, וּמָצְאוּ בּוֹ שֶׁמֶץ פְּסוּל.</div>
+            <div class="fr"><p>Ces trois cohanim. L&#x27;un leur dit : il m&#x27;est echeu comme une feve.</p><p>Et l&#x27;un dit : il m&#x27;est echeu comme une olive. Et l&#x27;un dit : il m&#x27;est echeu comme une queue de lezard.</p><p>Ils examinerent derriere lui, et ils trouverent en lui un shemets (trace) de pasoul.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הִגִּיעַנִי כָּפוּל</b> מִלֶּחֶם הַפָּנִים לְחֶלְקִי:</div>
+          <div class="glose-fr">Il m&#x27;est echeu comme une feve : du pain de proposition, pour ma part.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁמֶץ פָּסוּל</b> פְּסוּל כְּהֻונָּה חָלָל:</div>
+          <div class="glose-fr">Shemets de pasoul : invalidite de kehouna, un halal.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁמֶץ פָּסוּל</b> פֵּירֵשׁ רַבֵּינוּ חֲנַנְאֵל דְּבַר עֲבוֹדַת כּוֹכָבִים כְּדִכְתִיב (שְׁמוֹת ל״ב:כ״ה) לְשִׁמְצָה בְּקָמֵיהֶם וּפָסוּל לִכְהֻונָּה כְּדִתְנַן בְּמַסֶּכֶת מְנָחוֹת (דַּף קט.) כֹּהֲנִים שֶׁשִּׁמְּשׁוּ בְּבֵית חוֹנְיוֹ לֹא יְשַׁמְּשׁוּ בַּמִּקְדָּשׁ וְאֵין צ&quot;ל לְדָבָר אַחֵר פֵּירוּשׁ לַעַ&quot;ז שֶׁנֶּאֱמַר אַךְ לֹא יַעֲלוּ כֹּהֲנֵי הַבָּמוֹת אֶל מִזְבַּח ה&#x27;:</div>
+          <div class="glose-fr">Shemets de pasoul. Rabbénou Hananel explique : une affaire d&#x27;avoda zara, comme il est ecrit (Chemoth 32, 25) &quot;en shemetsa parmi leurs adversaires&quot;, et il est pasoul pour la kehouna, comme nous l&#x27;enseignons dans le traite Menahot (109a) : des cohanim qui ont servi dans la maison de Honio ne serviront pas dans le Temple ; et il n&#x27;est pas besoin de le dire pour une autre chose, c&#x27;est-a-dire pour l&#x27;avoda zara, car il est dit : &quot;toutefois, les cohanim des bamot ne monteront pas vers l&#x27;autel de Hachem&quot;.</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">מֻבְטָח אֲנִי בָּזֶה שֶׁמּוֹרֶה הוֹרָאוֹת בְּיִשְׂרָאֵל. מַקְשִׁים מַה שַׁייָּכוּת יֵשׁ לָזֶה בָּזֶה? וַהֲוָה לֵיהּ לְמֵימַר שֶׁיְּהֵא חָסִיד וּפָרוּשׁ מִשּׁוּם שֶׁדִּבֵּר בְּלָשׁוֹן נְקִיָּה! וְנִרְאֶה לִי בס&quot;ד דְּמִלְּבַד דָּבָר טוֹב זֶה שֶׁמָּצָא בּוֹ שֶׁדִּבֵּר בְּלָשׁוֹן נְקִיָּה עוֹד מָצָא בּוֹ חֲרִיפוֹת שֵׂכֶל וְחָכְמָה יְתֵירָה דַּהֲוָה דָּיֵיק לִישָּׁנָא שֶׁלֹּא אָמַר לָשׁוֹן דְּמִשְׁתְּמַע לִתְרֵי אַנְפֵּי כְּמוֹ חֲבֵירוֹ וְהוּא כִּי חֲבֵירוֹ אָמַר &#x27; מִפְּנֵי מַה בּוֹצְרִין בְּטָהֳרָה וּמוֹסְקִין בְּטֻמְאָה &#x27; דְּבָרָיו אֵלּוּ סוֹבְלִים שְׁנֵי פֵּירוּשִׁים הָא&#x27; לוֹמַר כַּוָּנָתוֹ לִשְׁאֹל רַק עַל הַמְּסִיקָה שֶׁל זֵתִים לָמָּה יַעֲשׂוּ בְּטֻומְאָה וּבֶאֱמֶת כָּךְ הִיא כַּוָּנָתוֹ בִּשְׁאֵלָה זוֹ, אַךְ דְּבָרָיו אֵלּוּ סוֹבְלִים עוֹד פֵּירוּשׁ אַחֵר אֲשֶׁר אֵין זֶה מַטְּרַת שְׁאֵלָתוֹ וְהוּא שֶׁהַשּׁוֹמֵעַ יְפָרֵשׁ שְׁאֵלָתוֹ כָּךְ &#x27;לָמָּה בּוֹצְרִין בְּטָהֳרָה וּמוֹסְקִין בְּטֻומְאָה וְאֵין עוֹשִׂין לְהֵפֶךְ לִהְיוֹת בּוֹצְרִין בְּטֻומְאָה וּמוֹסְקִין בְּטָהֳרָה?&#x27; דְּכַוָּנָתוֹ לִשְׁאֹל עַל שְׁנֵיהֶם לָתֵת שֶׁל זֶה בָּזֶה וְשֶׁל זֶה בָּזֶה, וּבֶאֱמֶת הוּא לֹא הָיְתָה כַּוָּנָתוֹ כָּךְ אֶלָּא שֶׁדְּבָרָיו סוֹבְלִים גַּם פֵּירוּשׁ זֶה וְנִמְצָא אֵינוֹ חָכָם לִהְיוֹת דִּיֵּיק בִּלְשׁוֹנוֹ לִתְפֹּוס שְׁאֵלָתוֹ בְּלָשׁוֹן בָּרוּר שֶׁאֵינוֹ סוֹבֵל אֶלָּא פֵּירוּשׁ אֶחָד דַּוְקָא. אַךְ זֶה הַשֵּׁנִי שֶׁלֹּא זָכַר בִּדְבָרָיו טֻומְאָה בְּחַד וְטָהֳרָה בְּחַד אֶלָּא שָׁאַל &#x27; מִפְּנֵי מַה בּוֹצְרִין בְּטָהֳרָה וְאֵין מוֹסְקִין בְּטָהֳרָה &#x27; אֵין דְּבָרָיו סוֹבְלִים שְׁנֵי פֵּירוּשִׁים אֶלָּא רַק פֵּירוּשׁ אֶחָד דְּמֻוכְרָח לְפָרֵשׁ דְּבָרָיו שֶׁכָּל שְׁאֵלָתוֹ הִיא רַק עַל הַטָּהֳרָה לָמָּה אֵין עוֹשִׂין אוֹתָהּ גַּם בִּמְסִיקָה, וְלֹא אֶפְשָׁר לְפָרֵשׁ דְּבָרָיו שֶׁשּׁוֹאֵל בִּשְׁתַּיִם לָתֵת שֶׁל זֶה בָּזֶה. וְשֶׁל זֶה בָּזֶה. וְלָכֵן כֵּיוָן שֶׁרָאָה חָכְמָתוֹ דְּדָיֵיק בִּלְשׁוֹנוֹ לִמְנַקַּט לָשׁוֹן בָּרוּר אָמַר &#x27; מְבַטְּחֵנִי שֶׁיִּהְיֶה חָכָם גָּדוֹל שֶׁמּוֹרֶה הוֹרָאוֹת בְּיִשְׂרָאֵל &#x27; כִּי דָּבָר זֶה דְּדָיֵיק בְּלִישָּׁנָא הוּא סִימָן טוֹב לָזֶה וּכְמוֹ שֶׁאָמְרוּ בְּעֵירוּבִין (עֵירוּבִין נג.) בְּנֵי יְאֻודֶּה דְּהָווּ דָּיְיקִי לִישָּׁנָא הָווּ גַּלֵּי מַסֶּכְתָּא מַה שֶׁאֵין כֵּן בְּנֵי גָּלִיל. וַעֲדַייִן יֵשׁ לְדַקְדֵּק בְּמַה שֶׁאָמַר &#x27; בְּיִשְׂרָאֵל &#x27; נִרְאֶה לְשׁוֹן יֶתֶר? וְנִרְאֶה לִי בס&quot;ד יֵשׁ מוֹרֶה הוֹרָאוֹת בְּבֵית הַמִּדְרָשׁ וְאֵין זוֹכֶה שֶׁתִּתְפַּשֵּׁט הוֹרָאָתוֹ לַעֲשׂוֹת מַעֲשֶׂה בְּקֶרֶב כָּל יִשְׂרָאֵל עַל פִּי הוֹרָאָתוֹ אֶלָּא הוֹרָאָתוֹ תִּשָּׁאֵר עֲצוּרָה בְּבֵית הַמִּדְרָשׁ דְּאֵין הֲלָכָה כְּמוֹתוֹ. וְיֵשׁ שֶׁזּוֹכֶה שֶׁיִּקְבְּעוּ הֲלָכָה כְּמוֹתוֹ לְעִנְיַן מַעֲשֶׂה הִנֵּה זֶה הוֹרָאָתוֹ יוֹצְאָהּ בְּבֵית הַמִּדְרָשׁ וּמִתְפַּשֶּׁטֶת בְּקֶרֶב יִשְׂרָאֵל דְּעָבְדִי עֻובְדָּא כְּוָותֵיהּ וְעַל זֶה נֶאֱמַר (מִשְׁלֵי ה, טז) יָפֻוצוּ מַעְיְנֹתֶיךָ חוּצָה. הָנְהוּ תְּלָתָא כָּהֲנֵי, חַד אָמַר [לְהוּ] : הִגִּיעַנִי כָּפוּל, וְחַד אָמַר : הִגִּיעַנִי כְּזַיִת, וְחַד אָמַר : הִגִּיעַנִי כִּזְנַב הַלְּטָאָה . בָּדְקוּ אַחֲרָיו וּמָצְאוּ בּוֹ שֶׁמֶץ פְּסוּל [ג:] קָשֶׁה הָנְהוּ תְּרֵי קַמָּאֵי לָמָּה הִזְכִּירָם פֹּה? וְסַגִּי לוֹמַר &#x27;הַהוּא כָּהֲנָא דְּאָמַר הִגִּיעַנִי כִּזְנַב הַלְּטָאָה וּבָדְקוּ אַחֲרָיו&#x27;? וְנִרְאֶה לִי בס&quot;ד דְּאִם לֹא הָיוּ אֵלּוּ עִמּוֹ שֶׁקָּדְמוּ וְדִבְּרוּ בְּשֶׁבַח לֹא הָיוּ בּוֹדְקִים אַחֲרָיו מֵחֲמַת שֶׁאָמַר כֵּן דְּהָיוּ אוֹמְרִים מִשְׁגֶּה שֶׁכָּךְ נָפַל בְּפִיו בִּשְׁגָגָה וְהָיָה נִשְׁאַר בְּחֶזְקָתוֹ וְלֹא הָיוּ בּוֹדְקִין אַחֲרָיו אַךְ מֵאַחַר דְּהָווּ יָתְבִי תְּלָתָא וְהָיָה הָאֶחָד מְחַבֵּב הַקֳּדָשִׁים שֶׁהָיָה מֵיצֵר עַל רֹועַ מַזָּלוֹ שֶׁלֹּא הִגִּיעַ לוֹ מִבְּשַׂר הַקֹּודֶשׁ אֶלָּא דָּבָר מוּעָט וְהַשֵּׁנִי הָיָה מְחַבֵּב הַקֳּדָשִׁים בְּאוֹמְרוֹ אֲנִי זָכִיתִי לְחֵלֶק חָשׁוּב יוֹתֵר מִמְּךָ שֶׁהִגִּיעַ לִי כַּזַּיִת וְזֶה הַשְּׁלִישִׁי לֹא הָלַךְ בְּדֶרֶךְ חֲבֵרָיו שֶׁחִבְּבוּ הַקֳּדָשִׁים אֶלָּא עָנָה אַחֲרֵיהֶם בִּדְבַר בִּזָּיוֹן לְדַמּוֹת הַקֳּדָשִׁים לְשִׁיעוּר זְנַב הַלְּטָאָה תּוּ לֵיכָּא לְלַמֵּד עָלָיו זְכוּת וְלוֹמַר בִּשְׁגָגָה דִּבֵּר בְּלָשׁוֹן זֶה לְכָךְ בָּדְקוּ אַחֲרָיו! אִי נָמֵי יֵשׁ לוֹמַר אֵין הַבֵּית דִּין בָּדְקוּ אַחֲרָיו דְּאֵין צְרִיכִין מִן הַדִּין לִבְדֹּוק אַחֲרָיו בַּעֲבוּר דְּבָרִים אַחַר שֶׁהָיָה מֻוחְזָק בְּכַשְׁרוּת אֶלָּא אוֹתָם הַשְּׁנַיִם שֶׁהָיוּ עִמּוֹ חָרָה לָהֶם עַל דְּבָרָיו וּבָדְקוּ וּמָצְאוּ שֶׁמֶץ פָּסוּל וּבֵירְרוּ אוֹתוֹ אַחַר כָּךְ בְּבֵית דִּין. בְּרַם אִיכָּא לְמֵידַק אֵיךְ יַגִּיעַ לָזֶה כָּפוּל וְלָזֶה כַּזַּיִת מִלֶּחֶם הַפָּנִים וַהֲלֹא צָרִיךְ לְחֶלְקוֹ בֵּינֵיהֶם בְּשָׁוֶה חֵלֶק כְּחֵלֶק? וְדֹוחַק לוֹמַר זֶה בַּעַל הַזַּיִת חָטַף מֵאֲחֵרִים וְנִשְׁלַם חֶלְקוֹ לְשִׁיעוּר זַיִת. וְנִרְאֶה לִי בס&quot;ד דְּאֵלּוּ הַשְּׁלֹשָׁה לָאו מֵחַד מִשְׁמָר הֵם אֶלָּא כָּל אֶחָד מִן מִשְׁמָר אַחֵר וְלָכֵן בְּמִשְׁמָר שֶׁל זֶה הָיוּ הַחֲלָקִים כֻּולָּם עַל שִׁיעוּר פּוֹל וּמִשְׁמָר זֶה כֻּולָּם זַיִת. אִי נָמֵי לְעוֹלָם שְׁלָשְׁתָּם מִשְׁמָר אֶחָד וְהַחֲלָקִים הָיוּ שִׁיעוּר פּוֹל לְכָךְ אָמַר הָרִאשׁוֹן הִגִּיעַנִי כָּפוּל וְהַשֵּׁנִי אָמַר אֲנִי חֶלְקִי הָיָה חָשׁוּב בְּעֵינַי כְּשִׁיעוּר זַיִת שֶׁהוּא גָּדוֹל מִפּוֹל וְהַג&#x27; אָמַר שֶׁהָיָה נִרְאֶה בְּעֵינָיו כִּזְנַב שֶׁהוּא קָטָן מִפּוֹל.</div>
+          <div class="glose-fr">&quot;Je suis assure de celui-ci, qu&#x27;il rendra des decisions en Israel.&quot; On objecte : quel lien y a-t-il entre ceci et cela ? Il aurait fallu dire qu&#x27;il sera un hassid et un paroush, puisqu&#x27;il a parle en langage propre. Il me semble, avec l&#x27;aide du Ciel : outre cette bonne chose qu&#x27;il a trouvee en lui, qu&#x27;il parlait en langage propre, il a encore trouve en lui une vivacite d&#x27;esprit et une sagesse de plus : il precisait son langage. Il n&#x27;a pas dit une formule qui s&#x27;entend de deux facons, comme son compagnon. Voici : son compagnon a dit &quot;pourquoi vendange-t-on en etat de purete, et cueille-t-on les olives en etat d&#x27;impurete&quot;. Ces paroles portent deux lectures. La premiere : son intention est de ne questionner que la cueillette des olives, pourquoi on la fait en etat d&#x27;impurete ; et telle est bien l&#x27;intention de sa question. Ces paroles portent encore une autre lecture, qui n&#x27;est pas le but de sa question : l&#x27;auditeur expliquera la question ainsi, &quot;pourquoi vendange-t-on en purete et cueille-t-on les olives en impurete, et pourquoi ne fait-on pas l&#x27;inverse, vendanger en impurete et cueillir les olives en purete ?&quot;, son intention etant de questionner les deux, pour mettre celui-ci a la place de celui-la et celui-la a la place de celui-ci. En verite son intention n&#x27;etait pas celle-la ; ses paroles portent aussi cette lecture. Il se trouve qu&#x27;il n&#x27;a pas la sagesse de preciser son langage, pour saisir sa question dans une formule claire qui ne porte qu&#x27;une seule lecture. Celui-ci, le second, n&#x27;a pas mentionne dans ses paroles l&#x27;impurete pour l&#x27;un et la purete pour l&#x27;autre. Il a demande : &quot;pourquoi vendange-t-on en etat de purete, et ne cueille-t-on pas les olives en etat de purete&quot;. Ses paroles ne portent pas deux lectures, une seule : on est force d&#x27;expliquer que toute sa question porte sur la purete, pourquoi on ne la pratique pas aussi pour la cueillette, et l&#x27;on ne peut pas expliquer qu&#x27;il questionne les deux pour les echanger. Puisqu&#x27;il a vu sa sagesse, qu&#x27;il precise son langage pour prendre une formule claire, il a dit : &quot;Je suis assure qu&#x27;il sera un grand sage, qui rendra des decisions en Israel.&quot; Preciser la langue est un bon signe pour cela, comme ils ont dit a Erouvin (53a) : les gens de Yehouda, qui precisaient la langue, leur enseignement etait clair, ce qui n&#x27;est pas le cas des gens du Galil. On peut encore scruter le mot &quot;en Israel&quot; : il semble de trop. Il me semble, avec l&#x27;aide du Ciel : il y a celui qui rend des decisions dans le beit ha-midrash, et qui ne merite pas que sa decision se repande pour qu&#x27;on agisse, au sein de tout Israel, selon elle ; sa decision reste enfermee dans le beit ha-midrash, car la halakha n&#x27;est pas fixee comme lui. Et il y a celui qui merite qu&#x27;on fixe la halakha comme lui pour la pratique : sa decision sort du beit ha-midrash et se repand au sein d&#x27;Israel, car on fait l&#x27;acte selon lui. De celui-la il est dit (Mishlei 5, 16) : &quot;que tes sources se repandent au-dehors&quot;. Ces trois cohanim. L&#x27;un dit [leur] : il m&#x27;est echeu comme une feve. L&#x27;un dit : il m&#x27;est echeu comme une olive. L&#x27;un dit : il m&#x27;est echeu comme une queue de lezard. Ils examinerent derriere lui et trouverent en lui un shemets de pasoul [3b]. Difficulte : ces deux premiers, pourquoi les mentionner ici ? Il suffirait de dire : &quot;ce cohen qui dit : il m&#x27;est echeu comme une queue de lezard, et ils examinerent derriere lui&quot;. Il me semble, avec l&#x27;aide du Ciel : si ceux-la n&#x27;avaient pas ete avec lui, eux qui ont parle d&#x27;abord en eloge, on ne l&#x27;aurait pas examine pour avoir dit cela. On aurait dit : une meprise, cela lui est tombe de la bouche par erreur ; il serait reste dans sa hazaka, et on ne l&#x27;aurait pas examine. Puisque les trois etaient assis, que le premier cherissait les kodashim, peine de sa mauvaise part, de n&#x27;avoir recu de la chair sacree qu&#x27;une chose minime, et que le second cherissait les kodashim en disant : j&#x27;ai merite une part plus importante que toi, il m&#x27;est echeu comme une olive, celui-ci, le troisieme, n&#x27;a pas suivi la voie de ses compagnons qui cherissaient les kodashim. Il a repondu apres eux par une parole de mepris, en comparant les kodashim a la mesure d&#x27;une queue de lezard. Il n&#x27;y a plus lieu de le juger favorablement et de dire qu&#x27;il a parle ainsi par erreur : c&#x27;est pourquoi on l&#x27;a examine. On peut dire aussi : le beit din ne l&#x27;a pas examine. Du point de vue du din, on n&#x27;a pas a l&#x27;examiner pour des paroles, des lors qu&#x27;il etait tenu pour kacher. Ce sont les deux qui etaient avec lui : ses paroles les ont mis en colere, ils ont examine, ils ont trouve un shemets de pasoul, et ils l&#x27;ont ensuite eclairci au beit din. On peut encore scruter : comment l&#x27;un recoit-il comme une feve et l&#x27;autre comme une olive, du lehem ha-panim ? Il faut le partager entre eux a parts egales, part pour part. Il est force de dire que le detenteur de l&#x27;olive a saisi la part d&#x27;autrui et que sa part s&#x27;est completee jusqu&#x27;a la mesure d&#x27;une olive. Il me semble, avec l&#x27;aide du Ciel : ces trois-la ne sont pas d&#x27;un seul mishmar ; chacun est d&#x27;un autre mishmar. Dans le mishmar de celui-ci, toutes les parts etaient a la mesure d&#x27;une feve, et dans ce mishmar-ci, toutes etaient a la mesure d&#x27;une olive. On peut dire aussi : les trois sont bien d&#x27;un seul mishmar, et les parts etaient a la mesure d&#x27;une feve. C&#x27;est pourquoi le premier a dit : il m&#x27;est echeu comme une feve ; le second a dit : ma part etait, a mes yeux, importante comme la mesure d&#x27;une olive, qui est plus grande qu&#x27;une feve ; et le troisieme a dit qu&#x27;elle lui paraissait comme une queue, qui est plus petite qu&#x27;une feve.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le <b>lehem ha-panim</b> est partage en parts minuscules. La feve et l'olive sont des mesures de nourriture. La queue de lezard est la mesure d'un <b>sheretz</b>. On examine ce cohen, et l'on trouve un <b>shemets</b> de pasoul.</p><p>Rachi : un <b>halal</b>, pasoul pour la kehouna. Rabbénou Hananel : une tache d'<b>avoda zara</b>, d'apres le mot shemetsa (Chemoth 32, 25). Les cohanim de la maison de Honio ne servent pas au Temple ; ceux des bamot ne montent pas a l'autel (Menahot 109a).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְהָא (תַּנְיָא): אֵין בּוֹדְקִין מִן הַמִּזְבֵּחַ וּלְמַעְלָה!</div>
+            <div class="fr"><p>Et voici qu&#x27;on enseigne : on n&#x27;examine pas depuis l&#x27;autel et au-dessus !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵין בּוֹדְקִין</b> לְעִנְיַן יוּחֲסִין לִישָּׂא אִשָּׁה:</div>
+          <div class="glose-fr">On n&#x27;examine pas : au sujet des lignages, pour epouser une femme.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִן הַמִּזְבֵּחַ וּלְמַעְלָה</b> אִם שִׁימֵּשׁ בַּמִּזְבֵּחַ אֵין צָרִיךְ לִבְדֹּוק לְמַעְלָה הֵימֶנּוּ דְּאִם לֹא הָיָה רָאוּי לִכְהֻונָּה לֹא הָיוּ מַנִּיחִין אוֹתוֹ לְשַׁמֵּשׁ כְּדִתְנַן בְּמַסֶּכֶת מִדּוֹת (פ&quot;ה מִשְׁנָה ד&#x27;) לִשְׁכַּת הַגָּזִית שָׁם הָיוּ יוֹשְׁבִים ב&quot;ד מְיַחֲסֵי כְּהֻונָּה וּלְוִיָּה כָּל כֹּהֵן שֶׁנִּמְצָא בּוֹ פָּסוּל כְּשֶׁהָיָה רוֹצֶה לְהִתְחַנֵּךְ לַעֲבוֹדָה לוֹבֵשׁ שְׁחֹורִים וְיוֹצֵא:</div>
+          <div class="glose-fr">Depuis l&#x27;autel et au-dessus : s&#x27;il a servi a l&#x27;autel, il n&#x27;est pas necessaire d&#x27;examiner au-dessus de lui, car s&#x27;il n&#x27;avait pas ete apte a la kehouna, on ne l&#x27;aurait pas laisse servir. Comme nous l&#x27;enseignons dans le traite Middot (chapitre 5, michna 4) : a la chambre de la pierre taillee siegeait un tribunal des lignages de kehouna et de levia. Tout cohen en qui l&#x27;on trouvait un pasoul, lorsqu&#x27;il voulait etre initie au service, revet des habits noirs et sort.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Regle des <b>yuhasin</b> : on n'examine pas la lignee d'un cohen au-dela de l'autel, lorsqu'il s'agit d'epouser. S'il a servi, le tribunal de la <b>Lishkat ha-Gazit</b> l'a deja passe. Un cohen pasoul, a son entree au service, revet des habits noirs et sort (Middot 5, 4).</p><p>Le recit heurte la regle : cet homme a recu du lehem ha-panim, donc il a servi.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לָא תֵּימָא ״שֶׁמֶץ פְּסוּל״, אֶלָּא אֵימָא ״שַׁחַץ פָּסוּל״. וְאִי בָּעֵית אֵימָא: שָׁאנֵי הָתָם, דְּאִיהוּ דְּאָרַע נַפְשֵׁיהּ.</div>
+            <div class="fr"><p>A la place de &quot;shemets de pasoul&quot;, lis &quot;shahats de pasoul&quot;. Et si tu veux, dis : la-bas c&#x27;est different, car c&#x27;est lui qui a fait porter le soupcon sur sa personne.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שַׁחַץ פָּסוּל</b> הוּא עַצְמוֹ הָיָה גַּס רוּחַ וּמְבַזֶּה קָדְשֵׁי שָׁמַיִם וְאֵין רָאוּי לְשַׁמֵּשׁ כִּדְקַייְמָא לָן [בִּמְנָחוֹת] (דַּף יח:) עֲבוֹדָה הַמְּסוּרָה לִבְנֵי אַהֲרֹן כֹּהֵן שֶׁאֵינוֹ מוֹדֶה בְּכֻולָּן אַף בַּמְגֻונָּה שֶׁבָּהֶן אֵין לוֹ חֵלֶק בַּכְּהֻונָּה:</div>
+          <div class="glose-fr">Shahats de pasoul : lui-meme etait grossier d&#x27;esprit et meprisait les saintetes du Ciel, et il n&#x27;est pas apte a servir. Comme nous tenons [dans Menahot] (18b) : le service confie aux fils d&#x27;Aharon, un cohen qui ne reconnait pas la totalite, meme ce qu&#x27;il y a de meprisable, n&#x27;a pas de part dans la kehouna.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּאָרַע אַנַּפְשֵׁיהּ</b> וְהִצְרִיךְ בְּדִיקָה אַחֲרָיו וְגִלָּה שֶׁלֹּא בְּדָקוּהוּ יָפֶה מִתְּחִלָּה:</div>
+          <div class="glose-fr">Qui a fait porter le soupcon sur sa personne : il a rendu necessaire un examen derriere lui, et il a revele qu&#x27;on ne l&#x27;avait pas bien examine au debut.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deux issues. Premiere lecture : <b>shahats</b> de pasoul, l'orgueil. Il a meprise les <b>kodshe shamayim</b>. Un cohen qui ne reconnait pas tout le service confie aux fils d'Aharon, meme la part que l'on meprise, n'a pas de part dans la kehouna (Menahot 18b).</p><p>Seconde lecture : la regle de l'autel demeure, et cet homme a lui-meme rendu l'examen necessaire. L'examen a montre que la premiere verification avait ete incomplete.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 200" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="720" height="200" fill="#fbfaf7"/>
+<text x="360" y="22" text-anchor="middle" font-family="Helvetica,Arial" font-size="14" font-weight="bold" fill="#2b2b2b">On n'examine pas depuis l'autel : deux lectures</text>
+<rect x="16" y="40" width="336" height="144" fill="#f7efe8" stroke="#c4a48a"/>
+<text x="184" y="64" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#8a4b3a">shahats de pasoul</text>
+<text x="184" y="88" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">orgueil, mepris des kodashim</text>
+<text x="184" y="110" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">inapte a servir</text>
+<text x="184" y="132" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">meme le rite meprise</text>
+<text x="184" y="154" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">fait partie de la kehouna</text>
+<text x="184" y="172" text-anchor="middle" font-family="Helvetica,Arial" font-size="10" fill="#6b6255">Menahot 18b</text>
+<rect x="368" y="40" width="336" height="144" fill="#eef2f6" stroke="#6b7d8a"/>
+<text x="536" y="64" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#2b2b2b">c'est lui qui a provoque</text>
+<text x="536" y="88" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">la regle de l'autel demeure</text>
+<text x="536" y="110" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">sa parole a exige l'examen</text>
+<text x="536" y="132" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">l'examen montre que la</text>
+<text x="536" y="154" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">premiere verification</text>
+<text x="536" y="172" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">avait ete incomplete</text>
+</svg></div><div class="svg-cap">Soit l&#x27;on lit shahats, l&#x27;orgueil qui rend inapte au service. Soit l&#x27;homme a lui-meme provoque un examen que la regle de l&#x27;autel n&#x27;exigeait pas.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָהוּא אַרְמָאָה דַּהֲוָה סָלֵיק וְאָכֵיל פְּסָחִים בִּירוּשָׁלַיִם. אָמַר: כְּתִיב ״כָּל בֶּן נֵכָר לֹא יֹאכַל בּוֹ״, ״כָּל עָרֵל לֹא יֹאכַל בּוֹ״, וַאֲנָא הָא קָאָכֵילְנָא מִשֻׁופְרֵי שֻׁופְרֵי.</div>
+            <div class="fr"><p>Un certain Arameen montait et mangeait des pesahim a Jerusalem. Il dit : il est ecrit &quot;aucun fils d&#x27;etranger n&#x27;en mangera&quot;, &quot;aucun incirconcis n&#x27;en mangera&quot;, et moi, voici que je mange des plus beaux des beaux.</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וַאֲנָא אַכִּילָנָא מְשֻׁופְּרֵי שׁוֹפְרֵי</b> מִכָּאן אֵין רְאָיָה שֶׁנַּאֲמִין לְכָל הַבָּא לְפָנֵינוּ וְאוֹמֵר יִשְׂרָאֵל אֲנִי דְּשָׁאנֵי הָכָא דְּרֹוב יִשְׂרָאֵל הָיוּ וְאָזְלִינַן בָּתַר רֻובָּא אַךְ יֵשׁ לְהָבִיא רְאָיָה מִפֶּרֶק הַחוֹלֵץ (יְבָמוֹת דַּף מה. וְשָׁם) דְּאָמַר לֵיהּ זִיל גְּלִי אוֹ נְסֵיב בַּת מִינָּךְ וְכֵן מֵהַהוּא דַּאֲתָא לְקַמֵּיהּ דְּרַבִּי יְהוּדָה וְאָמַר נִתְגַּייַּרְתִּי בֵּינִי לְבֵין עַצְמִי אֲמַר לֵיהּ נֶאֱמָן אַתָּה לִפְסֹול אֶת עַצְמְךָ וְאִי אַתָּה נֶאֱמָן לִפְסֹול אֶת בָּנֶיךָ וְהַייְנוּ מִשּׁוּם דְּמָצֵי לְמֵימַר יִשְׂרָאֵל אֲנִי וְהָא דְּאָמַר בְּהַחוֹלֵץ (דַּף מו:) מִי שֶׁבָּא וְאָמַר גֵּר אֲנִי יָכוֹל נְקַבְּלֶנּוּ תַּלְמוּד לוֹמַר אִתְּךָ בְּמֻוחְזָק לְךָ הָתָם מַיְירֵי בְּמֻוחְזָק לָן בַּאֲבָהָתֵיהּ שֶׁהֵם נָכְרִים דְּאִי לָאו הָכִי נֶאֱמָן בְּמִיגּוֹ דְּאִי בָּעֵי אָמַר יִשְׂרָאֵל אֲנִי:</div>
+          <div class="glose-fr">Et moi, je mange des plus beaux des beaux. De la, il n&#x27;y a pas de preuve que l&#x27;on croie quiconque vient devant nous et dit &quot;je suis Israel&quot;. Ici, c&#x27;est different : la majorite etait Israel, et l&#x27;on suit la majorite. On peut toutefois apporter une preuve du chapitre Ha-holets (Yevamot 45a, et la-bas), ou on lui dit : va, exile-toi, ou epouse une fille des tiens. Et de meme celui qui vint devant Rabbi Yehouda et dit : je me suis converti entre moi et moi-meme. Il lui dit : tu es croyable pour te disqualifier toi-meme, et tu n&#x27;es pas croyable pour disqualifier tes fils. C&#x27;est qu&#x27;il pouvait dire : je suis Israel. Et ce que l&#x27;on dit dans Ha-holets (46b) : celui qui vient et dit &quot;je suis un ger&quot;, pourrait-on le recevoir ? Le verset enseigne &quot;avec toi&quot; : lorsqu&#x27;il est etabli pour toi. La-bas, il s&#x27;agit d&#x27;un cas ou il est etabli pour nous que ses peres sont des nokhrim. Sinon, il est croyable par un migo : s&#x27;il l&#x27;avait voulu, il aurait dit &quot;je suis Israel&quot;.</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">וַאֲנָא, הָא קָאָכֵילְנָא מִשּׁוּפְרֵי דְשׁוּפְרֵי. יֵשׁ לְהַקְשׁוֹת אִם הָיָה אוֹכֵל מִן הָאֵיבָרִים הַחֲשׁוּבִים סַגִּי לֵיהּ לוֹמַר קָאָכֵילְנָא מְשֻׁופְּרֵי וּמַה כַּוָּנָתוֹ לוֹמַר &#x27;שׁוֹפְרֵי דְּשׁוֹפָרִי&#x27;? וְנִרְאֶה לִי בס&quot;ד דְּאִיתָא לְקַמָּן (דַּף נז.) מַלְכָּא אָמַר הַגְּדִי מְשֻׁובָּח יוֹתֵר וּמַלְכְּתָא אָמְרָה הַכֶּבֶשׂ מְשֻׁובָּח יוֹתֵר וְשָׁאֲלוּ לְכֹהֵן גָּדוֹל, וְהֵשִׁיב הַכֶּבֶשׂ מְשֻׁובָּח יְעַייֵּן שָׁם. וְדִינוֹ שֶׁל פֶּסַח בָּא הֵן מִן הַכְּבָשִׂים הֵן מִן הָעִזִּים שֶׁיֵּשׁ נִמְנִים עַל כֶּבֶשׂ וְיֵשׁ נִמְנִים עַל עז וְהוּא כְּדֵי לְהִתְפָּאֵר הָיָה נִמְנֶה עַל כֶּבֶשׂ שֶׁהוּא שׁוֹפְרֵי וְהָיָה אוֹכֵל מִן הָאֵבָרִים הַחֲשׁוּבִים שֶׁבּוֹ וְלָזֶה אָמַר &#x27;מְשֻׁופְּרֵי דְּשׁוֹפָרִי&#x27;. וּבֶאֱמֶת דָּבָר זֶה שֶׁדִּקְדֵּק בּוֹ הָיָה סִיבָּה לְמַפַּלְתּוֹ דְּאִם הָיָה נִמְנֶה עַל עז וּגְדִי לֹא הָיָה אֶפְשָׁר לְרַבִּי יְהוּדָה בֶּן בְּתֵירָא לִפְרֹושׁ לוֹ רֶשֶׁת לְלָכְדוּ בְּדָבָר זֶה שֶׁאָמַר לוֹ &#x27;מֵאֵלֶיהָ מִי קָא סָפוּ לָךְ?&#x27; כֵּיוָן דִּבְעֹז וּגְדִי לֹא יֵשׁ אֵלֶיהָ אַךְ עַל יְדֵי שֶׁדִּקְדֵּק לֶאֱכֹול &#x27;מְשֻׁופְּרֵי דְּשׁוֹפָרִי&#x27; בָּזֶה נִלְכַּד בְּדָבָר זֶה שֶׁל אֵלִיָּה.</div>
+          <div class="glose-fr">Et moi, voici que je mange des plus beaux d&#x27;entre les plus beaux. On peut objecter : s&#x27;il mangeait des membres importants, il lui suffisait de dire &quot;je mange des plus beaux&quot;. Quelle est son intention en disant &quot;les plus beaux d&#x27;entre les plus beaux&quot; ? Il me semble, avec l&#x27;aide du Ciel : il est enseigne plus loin (57a) que le roi dit : le chevreau est le plus excellent, et la reine dit : l&#x27;agneau est le plus excellent ; ils interrogerent le cohen gadol, et il repondit : l&#x27;agneau est le plus excellent. Vois la-bas. La regle du Pessah est qu&#x27;il vient aussi bien des agneaux que des chevres : les uns se comptent sur un agneau, les autres sur une chevre. Lui, pour se glorifier, se comptait sur un agneau, qui est le plus beau, et il mangeait des membres importants de celui-ci. C&#x27;est pour cela qu&#x27;il a dit &quot;des plus beaux d&#x27;entre les plus beaux&quot;. En verite, cette precision a ete la cause de sa chute. S&#x27;il s&#x27;etait compte sur une chevre et un chevreau, Rabbi Yehouda ben Beteira n&#x27;aurait pas pu lui tendre un filet pour le prendre par cette parole : &quot;De l&#x27;alya, t&#x27;en a-t-on donne a manger ?&quot;, puisqu&#x27;il n&#x27;y a pas d&#x27;alya chez la chevre et le chevreau. Parce qu&#x27;il a tenu a manger &quot;des plus beaux d&#x27;entre les plus beaux&quot;, il a ete pris sur ce point de l&#x27;alya.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Un Arameen montait a Jerusalem, mangeait le <b>korban Pessah</b>, et opposait a son repas les versets : aucun <b>ben nekhar</b>, aucun <b>arel</b> (Chemoth 12, 43 et 48). <b>Moshparei shufrei</b> : les plus belles parts.</p><p>Les Tossefot : ce recit ne prouve pas que l'on croit toute personne qui dit "je suis Israel". Ici la majorite etait Israel, et l'on suit le <b>rov</b>. Les preuves sont a Yevamot : le <b>migo</b> "je pouvais dire : je suis Israel", et le verset "itekha", quand les peres sont etablis comme nokhrim.</p><p>Le Ben Yehoyada lit le double "plus beaux" : il s'etait compte sur un agneau, l'animal que le cohen gadol declare superieur (Pesachim 57a). Ce choix ouvre le filet de l'<b>alya</b>, presente sur l'agneau, absente du chevreau.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רַבִּי יְהוּדָה בֶּן בְּתֵירָא: מִי קָא סָפוּ לָךְ מֵאַלְיָה? אֲמַר לֵיהּ: לֹא. כִּי סָלְקַתְּ לְהָתָם אֵימָא לְהוּ: סְפוּ לִי מֵאֵלֶיהָ. כִּי סָלֵיק, אֲמַר לְהוּ: מֵאֵלֶיהָ סְפוּ לִי! אָמְרוּ לֵיהּ: אֵלִיָּה לְגָבוֹהַּ סָלְקָא.</div>
+            <div class="fr"><p>Rabbi Yehouda ben Beteira lui dit : t&#x27;a-t-on donne a manger de l&#x27;alya ? Il lui dit : non.</p><p>Quand tu monteras la-bas, dis-leur : donnez-moi a manger de l&#x27;alya. Quand il monta, il leur dit : de l&#x27;alya, donnez-moi a manger !</p><p>Ils lui dirent : l&#x27;alya monte vers le Haut.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִי קָא סָפוּ לָךְ</b> כְּלוּם נוֹתְנִין לְךָ מִן הָאַלְיָה לֶאֱכֹול אֵין נוֹתְנִין לְךָ אֶלָּא מִן הַכָּחוּשׁ שֶׁבּוֹ וְנִתְכַּווֵּן לְהַטְעוֹתוֹ לִכְשֶׁיֵּלֵךְ עוֹד יִשְׁאַל מִן הָאַלְיָה וּבְיַד ר&#x27; יְהוּדָה בֶּן בְּתֵירָא לֹא הָיָה לְהָורְגוֹ:</div>
+          <div class="glose-fr">T&#x27;a-t-on donne a manger : est-ce qu&#x27;on te donne de l&#x27;alya a manger ? On ne te donne que de la partie maigre. Il a eu l&#x27;intention de l&#x27;induire en erreur, afin que, lorsqu&#x27;il ira de nouveau, il demande de l&#x27;alya. Et Rabbi Yehouda ben Beteira n&#x27;avait pas en main de le tuer.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>סְפוּ לִי מֵאֵלֶיהָ</b> הַלְעִיטוּנִי מִן הָאַלְיָה וְכֶבֶשׂ הָיָה וְאַלְיָיתָהּ קְרֵיבָה לְגָבוֹהַּ דִּכְתִיב בַּכֶּבֶשׁ (וַיִּקְרָא ג) הָאַלְיָה תְּמִימָה:</div>
+          <div class="glose-fr">Donnez-moi a manger de l&#x27;alya : gavez-moi de l&#x27;alya. C&#x27;etait un agneau, et son alya est offerte vers le Haut, comme il est ecrit au sujet de l&#x27;agneau (Vayikra 3) : &quot;l&#x27;alya entiere&quot;.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מֵאֵלֶיהָ מִי קָסָפוּ לָךְ</b> אע&quot;ג דִּגְדִי אֵין אַלְיָתוֹ קְרֵיבָה רֹוב פִּסְחֵיהֶם הָיָה טָלֶה אוֹ שֶׁמָּא הִגִּיד לוֹ וְרַבִּי יְהוּדָה בֶן בְּתֵירָא שֶׁלֹּא עָלָה לְרֶגֶל י&quot;ל שֶׁלֹּא הָיָה לוֹ קַרְקַע אוֹ זָקֵן הָיָה שֶׁאֵינוֹ יָכוֹל לְהַלֵּךְ בְּרַגְלָיו דְּפָטוּר מִפֶּסַח כְּמוֹ מֵרְאִיָּה א&quot;נ נְצִיבִין חוּ&quot;ל הִיא כִּדְמוֹכַח בְּסִיפְרֵי בְּפָ&#x27; רָאָה וְעוֹד בְּתַרְגּוּם יְרוּשַׁלְמִי (בְּרֵאשִׁית י) וְאֶרֶךְ וְאַכַּד וְכַלְנֵה בְּאֶרֶץ שִׁנְעָר מְתַרְגֵּם וַהֲדַס וּנְצִיבִין וּקְטִיסְפֵּי:</div>
+          <div class="glose-fr">De l&#x27;alya, t&#x27;en a-t-on donne a manger ? Bien que l&#x27;alya d&#x27;un chevreau ne soit pas offerte, la plupart de leurs Pessah etaient des agneaux ; ou bien peut-etre le lui avait-il dit. Et Rabbi Yehouda ben Beteira, qui ne montait pas en pelerinage : on peut dire qu&#x27;il n&#x27;avait pas de terre, ou qu&#x27;il etait age et ne pouvait marcher sur ses pieds, et qu&#x27;il est dispense du Pessah comme de la re&#x27;iya. Autre explication : Netzivin est hors du pays, comme il ressort du Sifri a la section Re&#x27;eh ; et encore, dans le Targoum Yerushalmi (Bereshit 10), &quot;et Erekh, et Akkad, et Kalne, au pays de Shinear&quot; est traduit &quot;et Hadas, et Netzivin, et Ktesifon&quot;.</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אֲמַר לֵיהּ רַבִּי יְהוּדָה בֶּן בְּתֵירָא: מֵאֵלֶיהָ מִי קָא סָפוּ לָךְ. פֵּירֵשׁ עט&quot;ר אֲדוֹנִי הָרַב מו&quot;ר אָבִי זלה&quot;ה בְּסִפְרוֹ &#x27;מִדְרַשׁ אֵלִיָּהוּ&#x27; דֶּרֶךְ רֶמֶז דְּיִשְׂרָאֵל נִשְׁפָּעִים מִמָּקוֹם עֶלְיוֹן מֵהַחֲסָדִים וְהָרַחֲמִים וְהָאֻומּוֹת מִלְּמַטָּה וְהַחֲכָמִים זַ&quot;ל כָּל שִׁיחַתֶּם הִיא דִבְרֵי תוֹרָה שֶׁגַּם בְּעֵת שֶׁיְּדַבְּרוּ דְּבָרִים פְּשׁוּטִים מִשְׁתַּעוּ בִּלְשׁוֹן חָכְמָה וְלָכֵן רַבִּי יְהוּדָה בֶּן בְּתֵירָא שָׂם בְּפִיו שֶׁל זֶה לוֹמַר &#x27;סְפוּ לִי מֵאֵלֶיהָ&#x27; שֶׁיֵּשׁ רֶמֶז בְּתֵיבָה זוֹ &#x27;מא&quot;ל י&quot;ה&#x27; כִּי רָאָהוּ אוֹכֵל מִן הַקֹּודֶשׁ בְּגֶזֶל וְאִיסּוּר וְאָמַר כְּשֶׁיַּזְכִּיר שְׁמוֹת א&quot;ל י&quot;ה בְּפִיו הֵם יִנְקְמוּ מִמֶּנּוּ וְכֵן הָיָה לוֹ שֶׁהֵם הִרְגִּישׁוּ בְּרוּחַ קָדְשָׁם בָּזֶה וְאָמְרוּ לוֹ שֶׁלֹּא בְּמִתְכּוֹיִין א&quot;ל י&quot;ה לְגָבוֹהַּ אֵלּוּ יִשְׂרָאֵל דַּוְקָא סָלְקָא. וּמֵחֲמַת שֶׁהֻוזְכְּרוּ בְּאוֹתוֹ מַעֲמָד שְׁמוֹת הַקֹּודֶשׁ אֵלּוּ לְכָךְ עָשׂוּ פְּעֻולָּה זוֹ לְעוֹרֵר אֶת לֵב הַשּׁוֹמְעִין לִבְדֹּוק אַחֲרָיו וּבָדְקוּ וּמָצְאוּ וּבָעֲרוּ הָרַע מִן הָעוֹלָם עכת&quot;ד זַ&quot;ל.</div>
+          <div class="glose-fr">Rabbi Yehouda ben Beteira lui dit : de l&#x27;alya, t&#x27;en a-t-on donne a manger ? La couronne de ma tete, mon maitre le rav, mon maitre et mon pere, sa memoire soit pour la vie du monde a venir, a explique dans son livre Midrash Eliyahou, par voie de remez : Israel recoit l&#x27;influx d&#x27;un lieu d&#x27;en haut, des hasadim et des rahamim, et les nations d&#x27;en bas. Et les sages, leur memoire soit en benediction, toute leur conversation est parole de Tora : meme lorsqu&#x27;ils disent des choses simples, ils parlent en langage de sagesse. C&#x27;est pourquoi Rabbi Yehouda ben Beteira a place dans la bouche de celui-ci la formule &quot;donnez-moi a manger de l&#x27;alya&quot; : ce mot porte un remez, me-El Yah. Il le voyait manger du kodash par vol et par interdit, et il a dit : lorsqu&#x27;il mentionnera dans sa bouche les noms El et Yah, ils se vengeront de lui. Ainsi en fut-il : ils le sentirent par leur esprit de saintete, et ils lui dirent sans en avoir l&#x27;intention : El Yah vers le Haut, cela ne monte que pour Israel. Parce que ces noms saints ont ete mentionnes dans cette assemblee, ils ont produit cet effet : eveiller le coeur des auditeurs a examiner derriere lui. Ils ont examine, ils ont trouve, et ils ont ecarte le mal du monde. Jusqu&#x27;ici son langage, sa memoire soit en benediction.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">אֵימָא לְהוּ: &quot;סְפוּ לִי מֵאֵלֶיהָ&quot;. הַדָּבָר יִפָּלֵא אֵיךְ הֶאֱמִין זֶה הָעַכּוּ&quot;ם שֶׁיִּהְיֶה רַבִּי יְהוּדָה בֶּן בְּתֵירָא רַבָּן שֶׁל יִשְׂרָאֵל מְיַעֲצוֹ לַעֲשׂוֹת דָּבָר הֶפֶךְ הַתּוֹרָה אֲשֶׁר צִוְּתָה &#x27;עָרֵל לֹא יֹאכַל בּוֹ&#x27; (שְׁמוֹת יב, מח) דְּוַדַּאי מֵאַחַר שֶׁעָלְתָה בְּיָדוֹ עָרְמָתוֹ בַּתְּחִלָּה וְגַם אֶת הַמִּקְרָאוֹת יָדַע לְהוּ לֹא הָיָה טִפֵּשׁ? וְנִרְאֶה לִי בס&quot;ד דְּאוֹתוֹ עַכּוּ&quot;ם כְּשֶׁאָמַר דָּבָר זֶה לְרַבִּי יְהוּדָה בֶּן בְּתֵירָא הָיְתָה כַּוָּנָתוֹ לְזַלְזֵל בְּיִשְׂרָאֵל בְּאוֹמְרוֹ שֶׁאֵין מְדַקְדְּקִים לִשְׁמוֹר מִצְוֹת ה&#x27; אֱלֹהֵיהֶם כָּרָאוּי שֶׁהֲרֵי הֵם מַאֲכִילִים בְּיָדַיִם אֶת הַפֶּסַח גַּם לְנָכְרִים וַעֲרֵלִים וְאֵין מַרְגִּישִׁים! וְהֵשִׁיב לוֹ רַבִּי יְהוּדָה בֶּן בְּתֵירָא &#x27; מֵאֵלֶיהָ מִי קָא סָפוּ לָךְ? &#x27; וְכַוָּנָתוֹ לוֹמַר מַה שֶׁצִּוְּתָה תּוֹרָה &#x27;כָּל עָרֵל לֹא יֹאכַל&#x27; לֹא צִוְּתָה עַל בְּשַׂר הַפֶּסַח אֶלָּא רַק עַל חֵלֶק הַמְשֻׁובָּח שֶׁבּוֹ שֶׁהוּא הָאַלְיָה וְלָכֵן כָּל אָדָם שֶׁאֵינוֹ בָּדוּק אֶצְלָם שֶׁהוּא יִשְׂרָאֵל אֵין מַאֲכִילִין אוֹתוֹ מִן הָאַלְיָה אֲבָל עַל שְׁאֵר בָּשָׂר הַפֶּסַח כֵּיוָן דְּאֵין עָלָיו אַזְהָרָה מִן הַתּוֹרָה מַאֲכִילִין אוֹתוֹ לְכָל אָדָם שֶׁיָּבֹא וְיֹאמַר יִשְׂרָאֵל אֲנִי אַף עַל פִּי שֶׁאֵין בּוֹדְקִים אוֹתוֹ וְרַק לְנָכְרִי וְעָרֵל וַדַּאי לֹא יַאֲכִילוּהוּ מִבְּשַׂר הַפֶּסַח דְּמַעֲלָה וְסִלְסוּל נָהֲגוּ בּוֹ לְבִלְתִּי יֹאכַל עָרֵל מִבְּשַׂר הַפֶּסַח אֲבָל מִן הַתּוֹרָה אֵין מוֹנֵעַ בָּזֶה, וְאַתָּה אִם תִּרְצֶה לְהַבְחִין וְלֵידַע שֶׁדִּבְרֵי אֵלֶּה אֱמֶת אוֹ לָאו תֵּלֵךְ וְתֹאמַר לָהֶם לִסְפּוֹת לְךָ מִן הָאַלְיָה וְתִרְאֶה שֶׁלֹּא יַאֲכִילוּ אוֹתְךָ אֶלָּא אִם כֵּן יִבְדְּקוּ אוֹתְךָ תְּחִלָּה. וְזֶה הַנָּכְרִי נִכְנְסוּ בְּדַעְתּוֹ דְּבָרָיו שֶׁל רַבִּי יְהוּדָה בֶּן בְּתֵירָא וְלָא עָלָה עַל לִבּוֹ שֶׁאִם יִבְדְּקוּהוּ וְיִמְצָאוּהוּ עָרֵל יַהַרְגוּהוּ כִּי מֶה עָשָׂה אִיסּוּר שֶׁיִּתְחַייֵּב עָלָיו כָּךְ וַהֲלֹא מִקֹּודֶם לֹא הָיָה אוֹכֵל אֶלָּא מִן הַבָּשָׂר דַּוְקָא דְּאֵינוֹ אָסוּר מִן הַתּוֹרָה לְנָכְרִים וַעֲרֵלִים דְּהָא כְּתִיב &#x27;לֹא יֹאכַל בּוֹ&#x27; דַּיְיקָא דְּהַייְנוּ מְחַלֵּק הֶחָשׁוּב וְהַמֻּובְחָר שֶׁבּוֹ וּלְכָךְ הָלַךְ לְנַסּוֹת כְּמוֹ שֶׁאָמַר לוֹ רַבִּי יְהוּדָה בֶּן בְּתֵירָא וְנִיצּוֹד וְנִלְכַּד! וְנִרְאֶה לִי בס&quot;ד כִּי מַה שֶׁאָמַר לוֹ רַבִּי יְהוּדָה בֶּן בְּתֵירָא &#x27;מִי קָא סָפוּ לָךְ?&#x27; וְכֵן אָמַר לְדִידֵיהּ שֶׁיֹּאמַר לָהֶם בְּלָשׁוֹן זֶה &#x27;סְפוּ לִי&#x27; דְּנָקֵיט לְשׁוֹן סְפוּ וְלֹא אָמַר &#x27;הַאֲכִילוּנִי&#x27;? הִנֵּה בָּחַר רַבִּי יְהוּדָה בֶּן בְּתֵירָא בְּהַאי לִישָּׁנָא לְרָעָתוֹ שֶׁל זֶה כִּי סָפוּ הוּא סוֹבֵל, גַּם כֵּן מִמַּשְׁמָעוּת הֶרֶג וְכִלָּיוֹן כְּמוֹ יַחְדָּו יָסֻפוּ נְאֻם ה&#x27; (יְשַׁעְיָהוּ סו, יז) וּבְרִית כְּרוּתָה לַשְּׂפָתַיִם הִכְרִיחַ שֶׁיִּהְיֶה הוּא פּוֹתֵחַ בְּרָעָתוֹ.</div>
+          <div class="glose-fr">Dis-leur : &quot;donnez-moi a manger de l&#x27;alya&quot;. La chose etonne : comment cet idolatre a-t-il cru que Rabbi Yehouda ben Beteira, maitre d&#x27;Israel, le conseillait de faire une chose a l&#x27;encontre de la Tora, qui a ordonne &quot;un incirconcis n&#x27;en mangera pas&quot; (Chemoth 12, 48) ? Certainement, puisque sa ruse avait d&#x27;abord reussi, et qu&#x27;il connaissait aussi les versets, il n&#x27;etait pas un sot. Il me semble, avec l&#x27;aide du Ciel : lorsque cet idolatre dit cette chose a Rabbi Yehouda ben Beteira, son intention etait de rabaisser Israel, en disant qu&#x27;ils ne prennent pas soin de garder les mitsvot de Hachem, leur D., comme il convient, puisqu&#x27;ils font manger de leurs mains le Pessah meme a des nokhrim et a des incirconcis, et qu&#x27;ils ne s&#x27;en apercoivent pas. Rabbi Yehouda ben Beteira lui repondit : &quot;De l&#x27;alya, t&#x27;en a-t-on donne a manger ?&quot; Son intention, dans cette lecture, est de dire : ce que la Tora a ordonne, &quot;aucun incirconcis n&#x27;en mangera&quot;, elle ne l&#x27;a pas ordonne sur la viande du Pessah, seulement sur la part excellente de celui-ci, qui est l&#x27;alya. C&#x27;est pourquoi tout homme qui n&#x27;est pas verifie chez eux comme Israel, on ne lui donne pas a manger de l&#x27;alya. Sur le reste de la viande du Pessah, puisqu&#x27;il n&#x27;y a pas sur elle d&#x27;avertissement de la Tora, on en donne a manger a tout homme qui vient et dit &quot;je suis Israel&quot;, meme si on ne l&#x27;examine pas. Seulement a un nokhri et a un incirconcis certain on ne donnera pas a manger de la viande du Pessah : on a pris a son egard une elevation et un soin, afin qu&#x27;un incirconcis ne mange pas de la viande du Pessah ; de la Tora, rien n&#x27;empeche en cela. Et toi, si tu veux discerner et savoir si ces paroles sont vraies ou non, tu iras et tu leur diras de te donner a manger de l&#x27;alya, et tu verras qu&#x27;ils ne te donneront a manger qu&#x27;apres t&#x27;avoir examine d&#x27;abord. Ce nokhri : les paroles de Rabbi Yehouda ben Beteira sont entrees dans son esprit, et il ne lui est pas venu a l&#x27;esprit que, s&#x27;ils l&#x27;examinaient et le trouvaient incirconcis, ils le tueraient. Quel interdit a-t-il commis, pour etre passible de cela ? Auparavant il ne mangeait que de la viande, precisement, laquelle n&#x27;est pas interdite de la Tora aux nokhrim et aux incirconcis, puisqu&#x27;il est ecrit &quot;il n&#x27;en mangera pas&quot;, a prendre au precis, c&#x27;est-a-dire de la part importante et choisie. C&#x27;est pourquoi il est alle essayer, comme le lui a dit Rabbi Yehouda ben Beteira, et il a ete chasse et pris. Il me semble, avec l&#x27;aide du Ciel : Rabbi Yehouda ben Beteira lui a dit &quot;t&#x27;en a-t-on donne a manger ?&quot;, et il lui a dit de leur parler dans cette langue, &quot;donnez-moi a manger&quot; : il a pris le mot sefou, et il n&#x27;a pas dit &quot;faites-moi manger&quot; (haakhilouni). Rabbi Yehouda ben Beteira a choisi cette langue pour le malheur de celui-ci, car sefou porte aussi le sens de mise a mort et d&#x27;aneantissement, comme &quot;ensemble ils periront, parole de Hachem&quot; (Yeshaya 66, 17). Une alliance est scellee pour les levres : cela a contraint que ce soit lui qui ouvre la parole de son malheur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabbi Yehouda ben Beteira est a <b>Netzivin</b> : il n'a pas en main de le mettre a mort. Il le pousse a redemander, la fois suivante, la part que l'on ne mange pas. L'<b>alya</b> du keves est offerte : "l'alya temima" (Vayikra 3). Les Tossefot : la plupart des pesahim etaient des agneaux. Son absence de aliya la-regel : pas de terre, ou l'age qui empeche la marche, dispense du Pessah comme de la <b>re'iya</b> ; ou bien Netzivin est hors du pays (Sifri, Re'eh ; Targoum Yerushalmi, Bereshit 10).</p><p>Le Ben Yehoyada lit dans <b>me-alya</b> le remez me-El Yah. Dans l'autre glose, il reconstruit ce que l'Arameen a cru entendre : l'interdit ne viserait que l'alya. Le mot <b>sefou</b>, a la place de haakhilouni, porte aussi le sens de la perte (Yeshaya 66, 17) : une <b>berit keruta la-sefatayim</b>, c'est lui qui ouvre la parole de son malheur.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="720" height="300" fill="#fbfaf7"/>
+<text x="360" y="22" text-anchor="middle" font-family="Helvetica,Arial" font-size="14" font-weight="bold" fill="#2b2b2b">Le filet de l'alya</text>
+<rect x="40" y="38" width="640" height="32" fill="#f7efe8" stroke="#c4a48a"/>
+<text x="360" y="59" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Il se vante : il mange le Pessah, des plus beaux des beaux</text>
+<line x1="360" y1="70" x2="360" y2="82" stroke="#8a7b63" stroke-width="1.5"/>
+<rect x="40" y="82" width="640" height="32" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="360" y="103" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">A Netzivin : t'a-t-on donne de l'alya ? Non.</text>
+<line x1="360" y1="114" x2="360" y2="126" stroke="#8a7b63" stroke-width="1.5"/>
+<rect x="40" y="126" width="640" height="32" fill="#eef2f6" stroke="#6b7d8a"/>
+<text x="360" y="147" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">La prochaine montee : demande l'alya. R. Yehouda ne peut pas le tuer la-bas.</text>
+<line x1="360" y1="158" x2="360" y2="170" stroke="#8a7b63" stroke-width="1.5"/>
+<rect x="40" y="170" width="640" height="32" fill="#f7f2ea" stroke="#c0a79b"/>
+<text x="360" y="191" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">A Jerusalem : de l'alya, donnez-m'en. Reponse : l'alya monte vers le Haut.</text>
+<line x1="360" y1="202" x2="360" y2="214" stroke="#8a7b63" stroke-width="1.5"/>
+<rect x="40" y="214" width="640" height="32" fill="#f7efe8" stroke="#c4a48a"/>
+<text x="360" y="235" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Qui te l'a dit ? R. Yehouda ben Beteira. On examine : c'est un Arameen. On le tue.</text>
+<rect x="40" y="256" width="640" height="32" fill="#eef4ee" stroke="#6f8a6f"/>
+<text x="360" y="277" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2f5c2f">Message : tu es a Netzivin, et ton filet est etendu a Jerusalem.</text>
+</svg></div><div class="svg-cap">De la vantardise a Netzivin jusqu&#x27;a l&#x27;examen a Jerusalem : demander l&#x27;alya, part offerte, fait decouvrir l&#x27;Arameen.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמְרוּ לֵיהּ: מַאן אֲמַר לָךְ הָכִי? אֲמַר לְהוּ: רַבִּי יְהוּדָה בֶּן בְּתֵירָא. אָמְרוּ: מַאי הַאי דְּקָמִן? בָּדְקוּ בָּתְרֵיהּ, וְאַשְׁכְּחוּהוּ דְּאַרְמָאָה הוּא וְקַטְלוּהוּ. שְׁלַחוּ לֵיהּ לְרַבִּי יְהוּדָה בֶּן בְּתֵירָא: שְׁלָם לָךְ רַבִּי יְהוּדָה בֶּן בְּתֵירָא! דְּאַתְּ בִּנְצִיבִין וּמְצוּדָתְךָ פְּרוּסָה בִּירוּשָׁלַיִם.</div>
+            <div class="fr"><p>Ils lui dirent : qui t&#x27;a dit cela ? Il leur dit : Rabbi Yehouda ben Beteira.</p><p>Ils dirent : qu&#x27;est-ce que ceci qui est devant nous ? Ils examinerent derriere lui, ils trouverent qu&#x27;il etait un Arameen, et ils le tuerent.</p><p>Ils envoyerent a Rabbi Yehouda ben Beteira : paix a toi, Rabbi Yehouda ben Beteira ! Tu es a Netzivin, et ton filet est etendu a Jerusalem.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ר&#x27; יְהוּדָה בֶּן בְּתֵירָא</b> קָאָמַר לִי שֶׁאֵין אַתֶּם נוֹתְנִים לִי חֵלֶק יָפֶה אֶלָּא מִן הַכָּחוּשׁ וַאֲנִי נָתַתִּי דָּמִים כְּמוֹ כֵן:</div>
+          <div class="glose-fr">Rabbi Yehouda ben Beteira : il m&#x27;a dit que vous ne me donnez pas une belle part, seulement de la maigre, et moi j&#x27;ai donne de l&#x27;argent tout autant.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַאי דְּקָמִן</b> מָה הַדָּבָר הַזֶּה שֶׁבָּא לְפָנֵינוּ:</div>
+          <div class="glose-fr">Qu&#x27;est-ce qui est devant nous : quelle est cette chose qui est venue devant nous.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>נְצִיבִין</b> שֵׁם עִירוֹ הַאי עֻובְדָּא נְקַט הָכָא מִשּׁוּם הַהוּא דִּלְעֵיל דְּגָרְמוּ שְׁנֵיהֶם לִבְדֹּוק אַחֲרֵיהֶם וְהַהוּא נְקַט מִשּׁוּם לָשׁוֹן מְגֻונֶּה:</div>
+          <div class="glose-fr">Netzivin : le nom de sa ville. Ce fait est rapporte ici a cause de celui d&#x27;en haut : l&#x27;un et l&#x27;autre ont cause qu&#x27;on examine derriere eux. Et celui-la est rapporte a cause du langage inconvenant.</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">שְׁלָם לָךְ רַבִּי יְהוּדָה בֶּן בְּתֵירָא, דְּאַתְּ בִּנְצִיבִין וּמְצוּדָתְךָ פְּרוּסָה בִּירוּשָׁלַיִם. נִרְאֶה לִי בס&quot;ד אִם אַתָּה בִּירוּשָׁלַיִם וּמְצוּדָתְךָ בִּנְצִיבִין אֵין זֶה חִידּוּשׁ וּפֶלֶא כִּי זְכוּת אֶרֶץ יִשְׂרָאֵל מְסַייְּעָהּ אוֹתְךָ, וְכֵן הִיא הַמִּדָּה דִּכְתִיב (יְשַׁעְיָה ב, ג) &#x27;כִּי מִצִּיּוֹן תֵּצֵא תוֹרָה וּדְבַר ה&#x27; מִיְּרוּשְׁלֶ‍ם&#x27; אַךְ הַחִידּוּשׁ וְהַפֶּלֶא הוּא דְּאַתְּ בִּנְצִיבִין חוּץ לָאָרֶץ, וּמְצוּדָתְךָ פְּרוּסָה בִּירוּשָׁלַיִם דְּאִסְתַּיְּיעָא מִילְּתָא טוּבָא. וְדַע שֶׁיֵּשׁ קַבָּלָה בְּיַד אַנְשֵׁי נְצִיבִין אֲשֶׁר רַבִּי יְהוּדָה בֶּן בְּתֵירָא קָבוּר אֶצְלָם רָחוֹק מְעַט מֵהָעִיר, שֶׁפַּעַם אַחַת בָּאוּ גּוֹיִם וְלָקְחוּ אֲבָנִים מִן הַבִּנְיָן הַבָּנוּי עַל קִבְרוֹ וּנְשָׂאוּם עַל הַגְּמַלִּים וְנִסְתְּמוּ עֵינֵיהֶם שֶׁל הַגְּמַלִּים וְאוֹמְרִים דְּבַעֲבוּר נֵס זֶה קוֹרִין אוֹתוֹ הַגּוֹיִם מעא&quot;מי פֵּירוּשׁ מְסָמָא עַל שֵׁם הַמּוֹפֵת הַזֶּה. וַאֲנָא עָבְדָא בִּשְׁנַת תרכ&quot;ט עָלִיתִי לעה&quot;ק תובב&quot;ב וּבַחֲזַרְתִּי לְעִיר בַּגּ&#x27;דֹאַד בָּאתִי עַל דֶּרֶךְ נְצִיבִין וְזָכִיתִי לְנַשֵּׁק אַבְנֵי הַצִּיּוּן שֶׁלּוֹ וְלָמַדְתִּי שָׁם הַמַּאֲמָר הַזֶּה דִּמְכִילְתִּין. יְהִי רָצוֹן זְכוּתוֹ יָגֵן בַּעֲדֵינוּ וּבְעַד כָּל יִשְׂרָאֵל אָמֵן כֵּן יְהִי רָצוֹן!</div>
+          <div class="glose-fr">Paix a toi, Rabbi Yehouda ben Beteira, tu es a Netzivin et ton filet est etendu a Jerusalem. Il me semble, avec l&#x27;aide du Ciel : si tu es a Jerusalem et que ton filet est a Netzivin, cela n&#x27;a rien d&#x27;une nouveaute ni d&#x27;un prodige, car le merite de la Terre d&#x27;Israel t&#x27;assiste. Telle est la mesure, comme il est ecrit (Yeshaya 2, 3) : &quot;car de Tsion sortira la Tora, et la parole de Hachem, de Jerusalem&quot;. La nouveaute et le prodige, c&#x27;est que tu es a Netzivin, hors du pays, et que ton filet est etendu a Jerusalem : la chose a ete beaucoup assistee. Sache qu&#x27;il y a une tradition chez les gens de Netzivin : Rabbi Yehouda ben Beteira est enterre chez eux, un peu a l&#x27;ecart de la ville. Une fois, des non-Juifs sont venus, ont pris des pierres du batiment construit sur sa tombe, les ont chargees sur les chameaux, et les yeux des chameaux se sont fermes. Ils disent qu&#x27;a cause de ce miracle les non-Juifs l&#x27;appellent Maami, c&#x27;est-a-dire celui qui aveugle, du nom de ce prodige. Et moi, le serviteur, en l&#x27;an 5629, je suis monte a la ville sainte, qu&#x27;elle soit reconstruite et retablie bientot de nos jours ; en revenant vers la ville de Bagdad, je suis passe par Netzivin, j&#x27;ai merite de baiser les pierres de son tsioun, et j&#x27;y ai etudie ce passage de notre traite. Que ce soit la volonte : que son merite nous protege, nous et tout Israel. Amen, ainsi soit la volonte.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le nom de Rabbi Yehouda ben Beteira rend la demande impossible a ses yeux : il n'aurait pas dit de manger l'<b>alya</b>. L'examen suit. L'homme est un Arameen. Ils le mettent a mort. Le message a Netzivin : le <b>filet</b> est tendu a Jerusalem alors que le maitre est hors de la ville.</p><p>Rachi relie les deux recits. Le cohen et l'Arameen ont, l'un et l'autre, cause l'examen qui les vise. Le premier recit est amene par le langage inconvenant.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַב כָּהֲנָא חַלָּשׁ. שַׁדְּרוּהּ רַבָּנַן לְרַבִּי יְהוֹשֻׁעַ בְּרֵיהּ דְּרַב אִידִי, אָמְרוּ לֵיהּ: זִיל בְּדֹוק מַאי דִּינֵיהּ. אֲתָא, אַשִּׁכְחֵיהּ דְּנָח נַפְשֵׁיהּ. קַרְעֵיהּ לִלְבוּשֵׁיהּ, וְאַהֲדָרֵיהּ לְקִרְעֵיהּ לַאֲחוֹרֶיהָ, וּבְכִי וְאָתֵי. אָמְרוּ לֵיהּ: נָח נַפְשֵׁיהּ? אֲמַר לְהוּ: אֲנָא לָא קָאָמֵינָא. ״וּמוֹצִיא דִבָּה הוּא כְסִיל״.</div>
+            <div class="fr"><p>Rav Kahana tomba malade. Les Sages envoyerent Rabbi Yehoshoua, fils de Rav Idi.</p><p>Ils lui dirent : va examiner quelle est sa situation. Il vint, il le trouva qui avait rendu l&#x27;ame.</p><p>Il dechira son vetement, il retourna la dechirure vers l&#x27;arriere, et il venait en pleurant. Ils lui dirent : son ame s&#x27;est-elle reposee ?</p><p>Il leur dit : moi, je ne le dis pas. &quot;Et celui qui fait sortir une mauvaise parole est un insense.&quot;</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בָּדוּק מַאי דִּינֵיהּ</b> בָּדוּק וְדַע מֶה נִהְיְיתָה בּוֹ:</div>
+          <div class="glose-fr">Examine quelle est sa situation : examine, et sache ce qu&#x27;il est advenu de lui.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַהְדַּרִי&#x27; לְקִרְעֵיהּ לַאֲחוֹרֶיהָ</b> שֶׁלֹּא יָבִינוּ מַהֵר לְהֶדְיָא וְיֵצֵא לִבָּם:</div>
+          <div class="glose-fr">Il retourna la dechirure vers l&#x27;arriere : afin qu&#x27;ils ne comprennent pas vite, explicitement, et que leur coeur ne sorte.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabbi Yehoshoua accomplit la <b>keria</b>, puis retourne la dechirure dans le dos : la nouvelle n'arrive pas de face. A la question "son ame s'est-elle reposee ?", il refuse la phrase et repond par le verset (Mishlei 10, 18).</p><p>La mort est portee par la dechirure, les pleurs, et le refus de la dire. Rachi : le coeur des auditeurs ne doit pas sortir d'un coup.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">יוֹחָנָן חָקוֹקָאָה נְפַק לְקִרְייָתָא. כִּי אֲתָא, אָמְרוּ לֵיהּ: חִיטִּין נַעֲשׂוּ יָפוֹת? אָמַר לָהֶם: שְׂעוֹרִים נַעֲשׂוּ יָפוֹת. אָמְרוּ לֵיהּ: צֵא וּבַשֵּׂר לַסּוּסִים וְלַחֲמוֹרִים, דִּכְתִיב: ״הַשְּׂעֹרִים וְהַתֶּבֶן לַסּוּסִים וְלָרָכֶשׁ״. מַאי הֲוֵי לֵיהּ לְמֵימַר? אֶשְׁתָּקַד נַעֲשׂוּ חִיטִּין יָפוֹת. אִי נָמֵי: עֲדָשִׁים נַעֲשׂוּ יָפוֹת.</div>
+            <div class="fr"><p>Yohanan le Hakuka sortit vers les villages. Quand il vint, ils lui dirent : le ble est-il devenu beau ?</p><p>Il leur dit : l&#x27;orge est devenue belle. Ils lui dirent : sors, et annonce-le aux chevaux et aux anes, car il est ecrit : &quot;l&#x27;orge et la paille, pour les chevaux et les coursiers&quot;.</p><p>Qu&#x27;aurait-il du dire ? L&#x27;an passe, le ble est devenu beau.</p><p>Ou encore : les lentilles sont devenues belles.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>חָקוֹקָאָה</b> כִּינּוּי הַשֵּׁם:</div>
+          <div class="glose-fr">Hakuka : un surnom.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְקִרְיָיתָא</b> לַכְּפָרִים לִרְאוֹת בַּתְּבוּאוֹת:</div>
+          <div class="glose-fr">Vers les villages : vers les hameaux, pour voir les recoltes.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שְׂעוֹרִין נַעֲשׂוּ יָפוֹת</b> וּמִכְּלַל דְּבָרָיו מַשְׁמַע שֶׁהַחִטִּים לֹא נַעֲשׂוּ יָפוֹת וְלֹא הָיָה רוֹצֶה לְהוֹצִיא דְּבַר קְלָלָה מִפִּיו:</div>
+          <div class="glose-fr">L&#x27;orge est devenue belle : et de l&#x27;ensemble de ses paroles on entend que le ble n&#x27;est pas devenu beau, et il ne voulait pas faire sortir une parole de malediction de sa bouche.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>עֲדָשִׁים נַעֲשׂוּ יָפוֹת</b> מַאֲכַל אָדָם:</div>
+          <div class="glose-fr">Les lentilles sont devenues belles : nourriture de l&#x27;homme.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>חָקוֹקָאָה</b> פִּי&#x27; רַבֵּינוּ חֲנַנְאֵל סוֹפֵר ור&quot;י פֵּירֵשׁ מֵעִיר חֲקוּקָה הָיָה בְּסֵפֶר יְהוֹשֻׁעַ (יט):</div>
+          <div class="glose-fr">Hakuka. Rabbénou Hananel explique : un sofer (scribe). Et le Ri explique : il etait de la ville de Hakuka, dans le livre de Yehoshoua (19).</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אָמְרוּ לֵיהּ: &quot;צֵא וּבַשֵּׂר לַסּוּסִים וְלַחֲמוֹרִים&quot;. קָשֶׁה וְכִי הַשְּׂעוֹרִים הֵם קְלָלָה בָּעוֹלָם, וַהֲלֹא גַּם בָּהֶם יֵשׁ צֹורֶךְ לִבְנֵי אָדָם כִּי בְּנֵי אָדָם צְרִיכִין לִבְהֵמוֹת וְהֵם צְרִיכִין לִשְׂעוֹרִים, וְיֵשׁ בְּנֵי אָדָם שֶׁאוֹכְלִים פַּת שְׂעוֹרִים, וְאַמַּאי הִקְפִּידוּ עַל בְּשׂוֹרָה שֶׁבְּשָׂרָם בִּשְׂעוֹרִים וַהֲלֹא מָצִינוּ שֶׁהַכָּתוּב שֶׁבַח אֶת אֶרֶץ יִשְׂרָאֵל בְּשִׁבְעַת הַמִּינִים שֶׁבִּכְלָלָם הַשְּׂעוֹרִים דִּכְתִיב (דְּבָרִים ח, ח) אֶרֶץ חִטָּה וְשַׂעֲרָה אַטּוּ יֹאמְרוּ ח&quot;ו לִפְסֹוק &#x27;צֵא וּבָשָׂר לְסוּסִים&#x27;? וְנִרְאֶה לִי בס&quot;ד כִּי רָצוּ שֶׁבִּרְאוּתוֹ הַחִיטִּים שֶׁל אוֹתָהּ שָׁנָה אֵינָם יָפוֹת יִפְתַּח פִּיו לְטוֹבָה לְהַזְכִּיר שֵׁם יָפוֹת עַל הַחִיטִּים, דְּאוּלַי יִתֵּן הַשֵּׁם יִתְבָּרַךְ בְּרָכָה בְּאוֹתוֹ הַמֻּועָט לְהַסְפִּיק בְּמָקוֹם מְרֻובֶּה כְּמוֹ שֶׁמָּצִינוּ שֶׁפָּתַח אַבְרָהָם אָבִינוּ ע&quot;ה פִּיו לְטוֹבָה עַל יִצְחָק וְחָזַר לְשָׁלוֹם, וְלָכֵן הָיָה יוֹתֵר נָכוֹן שֶׁיֹּאמַר &#x27;אֶשְׁתָּקַד נַעֲשׂוּ חִטִּים יָפוֹת&#x27; דְּעַל כָּל פָּנִים זוֹכֵר שֵׁם יָפוֹת עַל הַחִיטִּים, וְהֵם הָיוּ מְבִינִים מִדְּבָרָיו עַל חִיטִּים דְּאוֹתָהּ שָׁנָה אֵיךְ הֵם, וְנָח לָהֶם בְּלָשׁוֹן זֶה שֶׁפּוֹתֵחַ פִּיו לְטוֹבָה עַל שֵׁם חִיטִּים. וְדַע דְּהָא דְּקָאָמַר הַשַּׁ&quot;ס הֲוָה לֵיהּ לְמֵימַר &#x27;אֶשְׁתָּקַד&#x27; לָאו דַּוְקָא אֶשְׁתָּקַד אֶלָּא הַכַּוָּונָה עַל אֵיזֶה שָׁנָה שֶׁעָבְרָה שֶׁנַּעֲשׂוּ בָּהּ חִיטִּים יָפוֹת כְּדֵי שֶׁלֹּא יוֹצִיא שֶׁקֶר מִפִּיו, וְכֵן מַה שֶׁאָמְרוּ עֲדָשִׁים לָאו דַּוְקָא עֲדָשִׁים אֶלָּא הַכַּוָּונָה שֶׁיִּתְפֹּוס אֵיזֶה מִין מִמִּינֵי מַאֲכָל שֶׁנַּעֲשָׂה יָפֶה בֶּאֱמֶת.</div>
+          <div class="glose-fr">Ils lui dirent : &quot;Sors, et annonce-le aux chevaux et aux anes.&quot; Difficulte : l&#x27;orge serait-elle une malediction dans le monde ? Il y a aussi en elle un besoin pour les hommes, car les hommes ont besoin des betes, et celles-ci ont besoin d&#x27;orge, et il y a des hommes qui mangent du pain d&#x27;orge. Pourquoi ont-ils ete pointilleux sur l&#x27;annonce qu&#x27;il a faite au sujet de l&#x27;orge ? Nous trouvons que le verset loue la Terre d&#x27;Israel par les sept especes, au nombre desquelles l&#x27;orge, comme il est ecrit (Devarim 8, 8) : &quot;un pays de ble et d&#x27;orge&quot;. Dira-t-on, has ve-shalom, au verset : &quot;sors, et annonce-le aux chevaux&quot; ? Il me semble, avec l&#x27;aide du Ciel : ils voulaient que, voyant le ble de cette annee qui n&#x27;est pas beau, il ouvre la bouche pour le bien, et qu&#x27;il mentionne le mot &quot;beau&quot; sur le ble. Peut-etre le Nom, beni soit-Il, mettra-t-il une benediction dans ce peu, pour qu&#x27;il suffise a la place du beaucoup, comme nous trouvons qu&#x27;Avraham notre pere, la paix sur lui, a ouvert la bouche pour le bien au sujet de Yitshak, et celui-ci est revenu en paix. Il etait donc plus juste qu&#x27;il dise : &quot;l&#x27;an passe, le ble est devenu beau&quot;. De toute facon, il mentionne le mot &quot;beau&quot; sur le ble ; eux comprenaient, de ses paroles, comment est le ble de cette annee ; et cette langue leur agreait, qui ouvre la bouche pour le bien sur le nom du ble. Sache que ce que dit le Chas, il aurait du dire &quot;l&#x27;an passe&quot;, ne vise pas l&#x27;an passe au sens etroit : l&#x27;intention est une annee deja passee ou le ble est devenu beau, afin qu&#x27;il ne fasse pas sortir un mensonge de sa bouche. De meme, ce qu&#x27;ils ont dit des lentilles ne vise pas les lentilles au sens etroit : l&#x27;intention est qu&#x27;il saisisse une espece, parmi les especes de nourriture, qui est devenue belle en verite.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Yohanan Hakuka ne veut pas faire sortir une malediction sur le ble. Il repond par l'orge. On lui renvoie le verset : l'orge et la paille sont la part des chevaux et des coursiers (I Rois 5, 8).</p><p>La Guemara indique deux formules qui gardent une bonne nouvelle dans la bouche : le ble d'une annee passee, ou les <b>lentilles</b>, nourriture d'homme. Rachi : Hakuka est un surnom. Les Tossefot : un <b>sofer</b>, selon Rabbénou Hananel ; un homme de la ville de Hakuka (Yehoshoua 19), selon le Ri.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 168" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="720" height="168" fill="#fbfaf7"/>
+<text x="360" y="22" text-anchor="middle" font-family="Helvetica,Arial" font-size="14" font-weight="bold" fill="#2b2b2b">Annoncer la recolte sans malediction</text>
+<rect x="16" y="40" width="220" height="112" fill="#f7efe8" stroke="#c4a48a"/>
+<text x="126" y="64" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#8a4b3a">Ce qu'il a dit</text>
+<text x="126" y="88" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">l'orge est belle</text>
+<text x="126" y="110" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">on entend : le ble a rate</text>
+<text x="126" y="130" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">part des chevaux</text>
+<rect x="252" y="40" width="220" height="112" fill="#eef4ee" stroke="#6f8a6f"/>
+<text x="362" y="64" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2f5c2f">Premiere formule</text>
+<text x="362" y="88" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">le ble de l'an passe</text>
+<text x="362" y="110" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">etait beau</text>
+<text x="362" y="130" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">le mot beau reste sur le ble</text>
+<rect x="488" y="40" width="216" height="112" fill="#eef4ee" stroke="#6f8a6f"/>
+<text x="596" y="64" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2f5c2f">Seconde formule</text>
+<text x="596" y="88" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">les lentilles sont belles</text>
+<text x="596" y="110" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">nourriture d'homme</text>
+<text x="596" y="130" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#6b6255">une annee ou c'est vrai</text>
+</svg></div><div class="svg-cap">L&#x27;orge fait entendre que le ble a rate. Le ble de l&#x27;an passe, ou les lentilles, gardent une parole bonne.</div></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Pesachim_3a.html">&lsaquo; Pesachim 3a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Pesachim_4a.html">Pesachim 4a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

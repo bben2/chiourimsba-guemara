@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yoma 55a -- Une en haut, sept en bas : viser l&#x27;epaisseur du kapporet et compter les aspersions a voix haute</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Yoma 55a -- Une en haut, sept en bas : viser l&#x27;epaisseur du kapporet et compter les aspersions a voix haute</h1>
+    <div class="ref">Yoma 55a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_54b.html">&lsaquo; Yoma 54b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> La sougya s&#x27;ouvre sur la fin de la reponse a la question du daf precedent (ke-matslif, comme celui qui fouette) et sur une baraita qui precise le geste : le cohen gadol n&#x27;asperge jamais SUR le couvercle de l&#x27;arche mais face a son epaisseur, en retournant sa main vers le bas pour l&#x27;aspersion du haut et vers le haut pour celles du bas. D&#x27;ou cela vient-il, alors que le verset dit expressement &quot;sur le kapporet&quot; ?</p><p>Rav Aha bar Yaakov, au nom de Rabbi Zeira, montre qu&#x27;un mot du verset est de trop et devient donc libre pour un rapprochement (hekech) : reste a savoir lequel, car les deux lectures possibles donnent des resultats opposes -- le sang touche ou ne touche pas. Le debat est tranche par l&#x27;ecole de Rabbi Eliezer ben Yaakov, dont le binyan av sur le mot &quot;penei&quot; (= le cote est) confisque le mot que la lecture adverse voulait declarer superflu.</p><p>Une longue baraita reconstruit ensuite le nombre des aspersions : les deux cases vides du tableau (combien en bas pour le bouc, combien en haut pour le taureau) sont comblees par les mots &quot;comme il a fait&quot;, qui exigent que toutes les operations soient identiques -- une en haut, sept en bas, de part et d&#x27;autre. L&#x27;amoud se termine sur le decompte a voix haute (Rabbi Meir et Rabbi Yehouda ne divergent que par l&#x27;usage de leur ville), sur les deux raisons de renommer la premiere aspersion a chaque fois (Rabbi Elazar : ne pas se tromper ; Rabbi Yohanan : le verset l&#x27;exige), puis sur les supports d&#x27;or de la michna, qui ouvrent la question parallele des troncs du Temple pour les nids d&#x27;obligation.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="460" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Le geste de l'aspersion dans le Saint des saints</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">Ou vise-t-on (jamais le couvercle lui-meme) et comment la main se retourne selon le sens.</text>
+
+  <rect x="18" y="60" width="352" height="250" rx="6" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.4"/>
+  <text x="194" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#1e3a8a">OU ? Face a l'epaisseur, jamais dessus</text>
+
+  <rect x="96" y="150" width="196" height="80" fill="#e7e5e4" stroke="#78716c" stroke-width="1.4"/>
+  <text x="194" y="196" text-anchor="middle" font-size="11" fill="#44403c">Aron ha-berit</text>
+  <rect x="88" y="128" width="212" height="22" fill="#fde68a" stroke="#b45309" stroke-width="1.6"/>
+  <text x="194" y="144" text-anchor="middle" font-size="10.4" font-weight="700" fill="#78350f">kapporet (couvercle)</text>
+
+  <line x1="88" y1="124" x2="300" y2="124" stroke="#dc2626" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="194" y="114" text-anchor="middle" font-size="10" font-weight="700" fill="#dc2626">PAS sur le toit (al gaga)</text>
+
+  <path d="M52 139 L84 139" stroke="#16a34a" stroke-width="2.4" fill="none" marker-end="url(#g55a)"/>
+  <defs><marker id="g55a" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+    <path d="M0 0 L9 4.5 L0 9 z" fill="#16a34a"/></marker></defs>
+  <text x="34" y="163" text-anchor="middle" font-size="10" font-weight="700" fill="#15803d">kenegged</text>
+  <text x="34" y="177" text-anchor="middle" font-size="10" font-weight="700" fill="#15803d">ovyah</text>
+  <text x="34" y="191" text-anchor="middle" font-size="9.4" fill="#15803d">face a</text>
+  <text x="34" y="203" text-anchor="middle" font-size="9.4" fill="#15803d">l'epaisseur</text>
+
+  <text x="194" y="256" text-anchor="middle" font-size="10.2" fill="#1e40af">Le sang ne touche jamais le kapporet :</text>
+  <text x="194" y="272" text-anchor="middle" font-size="10.2" fill="#1e40af">il est projete dans sa direction et retombe</text>
+  <text x="194" y="288" text-anchor="middle" font-size="10.2" fill="#1e40af">a terre (Rachi : koulan nofelot la-arets).</text>
+
+  <rect x="390" y="60" width="352" height="250" rx="6" fill="#fdf2f8" stroke="#db2777" stroke-width="1.4"/>
+  <text x="566" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#9d174d">COMMENT ? La main se retourne</text>
+
+  <rect x="404" y="96" width="324" height="98" rx="5" fill="#fff" stroke="#f472b6" stroke-width="1.2"/>
+  <text x="420" y="116" font-size="11" font-weight="700" fill="#9d174d">1 fois VERS LE HAUT (le-maala)</text>
+  <text x="420" y="134" font-size="10" fill="#831843">Il tourne le DOS de la main vers le bas</text>
+  <text x="420" y="150" font-size="10" fill="#831843">(metsaded gav yado le-mata)</text>
+  <text x="420" y="166" font-size="10" fill="#831843">et projette vers le haut.</text>
+  <path d="M660 176 L660 118" stroke="#db2777" stroke-width="2.4" fill="none" marker-end="url(#u55a)"/>
+  <defs><marker id="u55a" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+    <path d="M0 0 L9 4.5 L0 9 z" fill="#db2777"/></marker></defs>
+  <text x="690" y="152" font-size="9.6" fill="#9d174d">haut</text>
+
+  <rect x="404" y="200" width="324" height="98" rx="5" fill="#fff" stroke="#f472b6" stroke-width="1.2"/>
+  <text x="420" y="220" font-size="11" font-weight="700" fill="#9d174d">7 fois VERS LE BAS (le-mata)</text>
+  <text x="420" y="238" font-size="10" fill="#831843">Il tourne la main vers le haut, projette</text>
+  <text x="420" y="254" font-size="10" fill="#831843">devant lui : chaque jet un peu plus bas</text>
+  <text x="420" y="270" font-size="10" fill="#831843">que le precedent ; tous tombent a terre.</text>
+  <path d="M660 216 L660 278" stroke="#db2777" stroke-width="2.4" fill="none" marker-end="url(#d55a)"/>
+  <defs><marker id="d55a" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+    <path d="M0 0 L9 4.5 L0 9 z" fill="#db2777"/></marker></defs>
+  <text x="690" y="252" font-size="9.6" fill="#9d174d">bas</text>
+
+  <rect x="18" y="326" width="724" height="60" rx="6" fill="#fef3c7" stroke="#eab308" stroke-width="1.4"/>
+  <text x="34" y="348" font-size="11.4" font-weight="700" fill="#854d0e">ke-mangdana : comme celui qui fouette</text>
+  <text x="34" y="368" font-size="10.2" fill="#78716c">Rachi : comme le coup de laniere qui part de la hauteur des epaules et descend -- une seule detente du bras, du haut vers le bas.</text>
+
+  <rect x="18" y="398" width="724" height="48" rx="6" fill="#ecfdf5" stroke="#10b981" stroke-width="1.4"/>
+  <text x="34" y="420" font-size="11" font-weight="700" fill="#065f46">Le probleme que toute la sougya va resoudre</text>
+  <text x="34" y="438" font-size="10.2" fill="#047857">Le verset dit pourtant "AL ha-kapporet", SUR le couvercle. D'ou sait-on que le sang ne le touche pas ?</text>
+</svg></div>
+          <figcaption>Le geste : on vise l&#x27;epaisseur du kapporet, jamais sa face superieure ; la main se retourne selon le sens de l&#x27;aspersion.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 520" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="520" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Quel mot est superflu ? Le duel des deux hekech</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">Un mot inutile (moufne) devient libre pour un rapprochement. Reste a savoir lequel des deux l'est.</text>
+
+  <text x="120" y="80" text-anchor="middle" font-size="11" font-weight="700" fill="#44403c">EN HAUT (le-maala)</text>
+  <text x="330" y="80" text-anchor="middle" font-size="11" font-weight="700" fill="#44403c">EN BAS (le-mata)</text>
+  <text x="30" y="112" font-size="11" font-weight="700" fill="#44403c">PAR</text>
+  <text x="30" y="126" font-size="9.4" fill="#78716c">taureau</text>
+  <text x="30" y="192" font-size="11" font-weight="700" fill="#44403c">SAIR</text>
+  <text x="30" y="206" font-size="9.4" fill="#78716c">bouc</text>
+
+  <rect x="70" y="90" width="180" height="66" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.3"/>
+  <text x="160" y="110" text-anchor="middle" font-size="9.8" font-style="italic" fill="#1e3a8a">al penei ha-kapporet kedma</text>
+  <text x="160" y="128" text-anchor="middle" font-size="10" fill="#1e40af">combien ? non precise</text>
+  <text x="160" y="146" text-anchor="middle" font-size="9.6" fill="#1e40af">Lv 16,14</text>
+
+  <rect x="262" y="90" width="180" height="66" rx="5" fill="#dcfce7" stroke="#22c55e" stroke-width="1.3"/>
+  <text x="352" y="110" text-anchor="middle" font-size="9.8" font-style="italic" fill="#166534">lifnei ha-kapporet yazeh</text>
+  <text x="352" y="128" text-anchor="middle" font-size="11" font-weight="700" fill="#15803d">CHEVA -- sept, explicite</text>
+  <text x="352" y="146" text-anchor="middle" font-size="9.6" fill="#15803d">Lv 16,14</text>
+
+  <rect x="70" y="170" width="180" height="66" rx="5" fill="#dcfce7" stroke="#22c55e" stroke-width="1.3"/>
+  <text x="160" y="190" text-anchor="middle" font-size="9.8" font-style="italic" fill="#166534">ve-hizah OTO al ha-kapporet</text>
+  <text x="160" y="208" text-anchor="middle" font-size="11" font-weight="700" fill="#15803d">UNE -- oto implique une</text>
+  <text x="160" y="226" text-anchor="middle" font-size="9.6" fill="#15803d">Lv 16,15</text>
+
+  <rect x="262" y="170" width="180" height="66" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.3"/>
+  <text x="352" y="190" text-anchor="middle" font-size="9.8" font-style="italic" fill="#1e3a8a">ve-lifnei ha-kapporet</text>
+  <text x="352" y="208" text-anchor="middle" font-size="10" fill="#1e40af">combien ? non precise</text>
+  <text x="352" y="226" text-anchor="middle" font-size="9.6" fill="#1e40af">Lv 16,15</text>
+
+  <rect x="466" y="90" width="276" height="146" rx="6" fill="#f5f5f4" stroke="#a8a29e" stroke-width="1.3"/>
+  <text x="604" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#44403c">Les deux rites sont deja lies</text>
+  <text x="604" y="134" text-anchor="middle" font-size="9.8" font-style="italic" fill="#57534e">ve-asa et damo ka-asher asa le-dam ha-par</text>
+  <text x="604" y="152" text-anchor="middle" font-size="10" fill="#57534e">Tout ce qui manque a l'un se lit</text>
+  <text x="604" y="168" text-anchor="middle" font-size="10" fill="#57534e">dans l'autre. Donc l'un des deux</text>
+  <text x="604" y="184" text-anchor="middle" font-size="10" fill="#57534e">mots "manquants" est de trop --</text>
+  <text x="604" y="200" text-anchor="middle" font-size="10" font-weight="700" fill="#44403c">et un mot de trop est MOUFNE :</text>
+  <text x="604" y="218" text-anchor="middle" font-size="10" fill="#57534e">libre pour un hekech.</text>
+
+  <rect x="18" y="256" width="356" height="140" rx="6" fill="#ecfdf5" stroke="#10b981" stroke-width="1.6"/>
+  <text x="196" y="278" text-anchor="middle" font-size="11.6" font-weight="700" fill="#065f46">LECTURE A -- le BAS du bouc est superflu</text>
+  <text x="34" y="300" font-size="10" fill="#047857">Il s'apprenait deja du bas du taureau.</text>
+  <text x="34" y="318" font-size="10" fill="#047857">Donc il rapproche le "al" du bouc de son "lifnei" :</text>
+  <text x="34" y="338" font-size="10.4" font-weight="700" fill="#065f46">"lifnei" n'est pas dessus, donc "al" non plus.</text>
+  <text x="34" y="360" font-size="10" fill="#047857">=&gt; aucune aspersion ne touche le kapporet.</text>
+  <text x="34" y="380" font-size="10" fill="#047857">=&gt; la baraita du debut est justifiee.</text>
+
+  <rect x="386" y="256" width="356" height="140" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="1.6"/>
+  <text x="564" y="278" text-anchor="middle" font-size="11.6" font-weight="700" fill="#991b1b">LECTURE B -- le HAUT du taureau est superflu</text>
+  <text x="402" y="300" font-size="10" fill="#b91c1c">Il s'apprendrait du haut du bouc.</text>
+  <text x="402" y="318" font-size="10" fill="#b91c1c">Donc il rapproche le "lifnei" du taureau de son "al" :</text>
+  <text x="402" y="338" font-size="10.4" font-weight="700" fill="#991b1b">"al" est vraiment dessus, donc "lifnei" aussi.</text>
+  <text x="402" y="360" font-size="10" fill="#b91c1c">=&gt; le sang toucherait bien le couvercle.</text>
+  <text x="402" y="380" font-size="10" fill="#b91c1c">=&gt; la baraita serait refutee.</text>
+
+  <path d="M196 400 L196 424" stroke="#10b981" stroke-width="2.2" fill="none"/>
+  <path d="M564 400 L564 424" stroke="#ef4444" stroke-width="2.2" stroke-dasharray="5 4" fill="none"/>
+
+  <rect x="18" y="428" width="724" height="76" rx="6" fill="#fef3c7" stroke="#eab308" stroke-width="1.6"/>
+  <text x="34" y="450" font-size="11.6" font-weight="700" fill="#854d0e">L'ARBITRAGE : le haut du taureau n'est PAS libre</text>
+  <text x="34" y="470" font-size="10.2" fill="#78716c">Ecole de Rabbi Eliezer ben Yaakov : "al PENEI ha-kapporet KEDMA" fonde un binyan av pour toute la Tora --</text>
+  <text x="34" y="487" font-size="10.2" fill="#78716c">partout ou il est ecrit "penei", il s'agit du cote EST. Ce mot travaille donc deja ; la lecture B laisserait le bas du bouc sans emploi. Lecture A l'emporte.</text>
+</svg></div>
+          <figcaption>Le coeur de la sougya : lequel des deux mots est superflu, donc libre pour un rapprochement ? L&#x27;ecole de Rabbi Eliezer ben Yaakov tranche.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="400" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Comment la baraita comble les deux cases vides</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">Deux fois le meme scenario : un binyan av par le sens, un binyan av par le sujet, puis le verset tranche.</text>
+
+  <rect x="18" y="62" width="352" height="146" rx="6" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.4"/>
+  <text x="194" y="84" text-anchor="middle" font-size="11.6" font-weight="700" fill="#1e3a8a">Case 1 : le BAS du bouc</text>
+  <text x="34" y="106" font-size="10" fill="#1e40af">Piste 1 -- bas du taureau (7) : on deduit un bas d'un bas.</text>
+  <text x="34" y="124" font-size="10" fill="#1e40af">Piste 2 -- haut du bouc (1) : on deduit du meme sujet.</text>
+  <text x="34" y="146" font-size="10" fill="#78716c">"dan mata mi-mata" contre "dan goufo mi-goufo" : impasse.</text>
+  <text x="34" y="170" font-size="10.4" font-weight="700" fill="#1e3a8a">Verdict du verset (ka-asher asa) : SEPT</text>
+  <text x="34" y="190" font-size="9.8" fill="#78716c">toutes ses operations doivent etre identiques.</text>
+
+  <rect x="390" y="62" width="352" height="146" rx="6" fill="#fdf2f8" stroke="#db2777" stroke-width="1.4"/>
+  <text x="566" y="84" text-anchor="middle" font-size="11.6" font-weight="700" fill="#9d174d">Case 2 : le HAUT du taureau</text>
+  <text x="406" y="106" font-size="10" fill="#9d174d">Piste 1 -- haut du bouc (1) : on deduit un haut d'un haut.</text>
+  <text x="406" y="124" font-size="10" fill="#9d174d">Piste 2 -- bas du taureau (7) : on deduit du meme sujet.</text>
+  <text x="406" y="146" font-size="10" fill="#78716c">"dan maala mi-maala" contre "dan goufo mi-goufo" : impasse.</text>
+  <text x="406" y="170" font-size="10.4" font-weight="700" fill="#9d174d">Verdict du verset (ka-asher asa) : UNE</text>
+  <text x="406" y="190" font-size="9.8" fill="#78716c">le meme mot tranche les deux cases a la fois.</text>
+
+  <rect x="18" y="230" width="724" height="150" rx="6" fill="#ecfdf5" stroke="#10b981" stroke-width="1.6"/>
+  <text x="380" y="254" text-anchor="middle" font-size="12.4" font-weight="700" fill="#065f46">BILAN : huit aspersions dans chaque cas</text>
+
+  <rect x="120" y="270" width="240" height="44" rx="5" fill="#fff" stroke="#10b981" stroke-width="1.2"/>
+  <text x="240" y="290" text-anchor="middle" font-size="11" font-weight="700" fill="#065f46">TAUREAU (par)</text>
+  <text x="240" y="307" text-anchor="middle" font-size="10.4" fill="#047857">1 en haut + 7 en bas</text>
+
+  <rect x="400" y="270" width="240" height="44" rx="5" fill="#fff" stroke="#10b981" stroke-width="1.2"/>
+  <text x="520" y="290" text-anchor="middle" font-size="11" font-weight="700" fill="#065f46">BOUC (sair)</text>
+  <text x="520" y="307" text-anchor="middle" font-size="10.4" fill="#047857">1 en haut + 7 en bas</text>
+
+  <text x="380" y="338" text-anchor="middle" font-size="10.2" fill="#047857">Ce qui est explicite chez l'un comble ce qui manque chez l'autre : le "sept" est ecrit pour le taureau,</text>
+  <text x="380" y="356" text-anchor="middle" font-size="10.2" fill="#047857">le "une" est ecrit pour le bouc. Le verset "comme il a fait" transporte chacun vers l'autre.</text>
+  <text x="380" y="374" text-anchor="middle" font-size="9.8" font-style="italic" fill="#78716c">C'est ce total de huit que la michna fait compter a voix haute au cohen gadol.</text>
+</svg></div>
+          <figcaption>La baraita comble les deux cases manquantes par le meme mot du verset : une en haut, sept en bas, pour le taureau comme pour le bouc.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כִּמְנַגְּדָנָא. תַּנָּא, כְּשֶׁהוּא מִזֶּה — אֵינוֹ מַזֶּה עַל הַכַּפֹּורֶת, אֶלָּא כְּנֶגֶד עָובְיָהּ שֶׁל כַּפֹּורֶת. כְּשֶׁהוּא מִזֶּה לְמַעְלָה — מְצַדֵּד יָדוֹ לְמַטָּה. וּכְשֶׁהוּא מִזֶּה לְמַטָּה — מְצַדֵּד יָדוֹ לְמַעְלָה.</div>
+            <div class="fr"><p>Comme celui qui fouette. — Un Tana a enseigne : lorsqu&#x27;il asperge, il n&#x27;asperge pas sur le kapporet (le couvercle de l&#x27;arche), mais face a l&#x27;epaisseur du kapporet. Lorsqu&#x27;il asperge vers le haut, il retourne sa main vers le bas ; et lorsqu&#x27;il asperge vers le bas, il retourne sa main vers le haut.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כִּמְנַגְּדָנָא</b> כְּמַכֶּה בָּרְצוּעָה שֶׁמַּתְחִיל מִן הַכַּתָּפִים וּמַכֶּה וְהוֹלֵךְ לְמַטָּה:</div>
+          <div class="glose-fr">Comme celui qui frappe avec la laniere : il commence depuis les epaules et frappe en descendant.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵינוֹ מַזֶּה עַל הַכַּפֹּורֶת</b> עַל גַּגָּהּ אֶלָּא כְּנֶגֶד עָובְיָהּ וְלֹא הָיוּ דָּמִים נוֹגְעִין בָּהּ:</div>
+          <div class="glose-fr">Sur son toit (sa face superieure) ; mais bien face a son epaisseur — et le sang ne la touchait pas.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּשֶׁהוּא מִזֶּה</b> אַחַת לְמַעְלָה מְצַדֵּד גַּב יָדוֹ לְמַטָּה וּמִזֶּה כְּלַפֵּי לְמַעְלָה וּכְשֶׁהוּא מִזֶּה הִשָּׁבַע לְמַטָּה מְצַדֵּד יָדוֹ לְמַעְלָה וּמִזֶּה לָמוּל פָּנָיו אַחַת גְּבוֹהָה וְאַחַת בְּנָמוּךְ הֵימֶנָּה וְכֻולָּן נוֹפְלוֹת לָאָרֶץ:</div>
+          <div class="glose-fr">L&#x27;unique aspersion du haut : il retourne le dos de sa main vers le bas et asperge en direction du haut. Et lorsqu&#x27;il asperge les sept du bas, il retourne sa main vers le haut et asperge devant lui, une plus haute et une plus basse qu&#x27;elle — et toutes tombent a terre.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Les premiers mots closent la sougya de 54b : la michna disait que le cohen gadol aspergeait <b>ke-matslif</b>, et la guemara repondait <b>ke-mangdana</b> — a la maniere de celui qui frappe avec une laniere, dont le coup part de la hauteur des epaules et descend en un seul mouvement.</p><p>La baraita ajoute deux precisions techniques decisives. D'abord la <b>cible</b> : malgre le mot <b>al</b> (sur) du verset, on ne vise jamais la face superieure du couvercle mais <b>kenegged ovyah</b>, face a sa tranche — le sang ne touche donc pas le kapporet et retombe a terre. Ensuite le <b>geste</b> : le poignet se retourne (<b>metsaded yado</b>) selon le sens, dos de la main vers le bas pour projeter vers le haut, et l'inverse pour les sept du bas.</p><p>Toute la suite de l'amoud repose sur la question que cette baraita laisse ouverte : d'ou tire-t-on que le sang ne touche pas, alors que le verset dit "sur" ?</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מְנָא הָנֵי מִילֵּי? אָמַר רַב אַחָא בַּר יַעֲקֹב, אָמַר רַבִּי זֵירָא, אֲמַר קְרָא: ״וְהִזָּה אֹותוֹ עַל הַכַּפֹּורֶת וְלִפְנֵי הַכַּפֹּורֶת״, לֹא יֹאמַר ״לְמַטָּה״ בְּשָׂעִיר, דְּלָא צָרִיךְ, דְּגָמַר מִמַּטָּה דְּפַר,</div>
+            <div class="fr"><p>D&#x27;ou ces choses (sont-elles tirees) ? Rav Aha bar Yaakov a dit au nom de Rabbi Zeira : le verset dit &quot;et il en aspergera sur le kapporet et devant le kapporet&quot; (Vayikra 16,15).</p><p>Que le verset ne dise pas &quot;en bas&quot; pour le bouc, car ce n&#x27;est pas necessaire : on l&#x27;apprend deja du &quot;en bas&quot; du taureau ;</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מְנָא הָנֵי מִילֵּי</b> דְּאֵינוֹ מַזֶּה עַל הַכַּפֹּורֶת אוֹתָן שְׁתַּיִם אַחַת שֶׁל מַעְלָה בַּפָּר וְאַחַת שֶׁל מַעְלָה בְּשָׂעִיר עַל גַּג הַכַּפֹּורֶת מַמָּשׁ:</div>
+          <div class="glose-fr">D&#x27;ou sait-on qu&#x27;il n&#x27;asperge pas sur le kapporet — c&#x27;est-a-dire que ces deux aspersions, celle du haut pour le taureau et celle du haut pour le bouc, ne se font pas veritablement sur le toit du kapporet ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא יֹאמַר לְמַטָּה בְּשָׂעִיר</b> לֹא יֹאמַר וְלִפְנֵי הַכַּפֹּורֶת דְּהַייְנוּ לְמַטָּה דְּשָׂעִיר דִּכְתִיב בֵּיהּ וְהִזָּה אֹותוֹ עַל הַכַּפֹּורֶת וְלִפְנֵי הַכַּפֹּורֶת דְּלָא צָרִיךְ דְּסוֹף סוֹף גָּמַר מִמַּטָּה דְּפַר שֶׁהֲרֵי לֹא פֵּירֵשׁ בּוֹ כַּמָּה הַזָּאוֹת וְיָלְפִינַן לֵיהּ לְקַמָּן מִמַּטָּה דְּפַר דִּכְתִיב בֵּיהּ וְלִפְנֵי הַכַּפֹּורֶת יַזֶּה שֶׁבַע פְּעָמִים וְכֵיוָן דְּסוֹף סוֹף גָּמַר מִינֵּיהּ לִישְׁתּוֹק קְרָא מִינֵּיהּ וְלִיגְמְרָה לְכֻולָּהּ מִילְּתָא דְּמִטָּה דְּשָׂעִיר מִמַּטָּה דְּפַר דְּאִיתַּקּוּשׁ לְהָדְדִי דִּכְתִיב וְעָשָׂה אֶת דָּמוֹ כַּאֲשֶׁר עָשָׂה לְדַם הַפָּר דְּבִשְׁלָמָא לְמַעְלָה דִּידֵיהּ אִיצְטְרִיךְ דִּמְפֹורָשׁ בּוֹ אַחַת דִּכְתִיב וְהִזָּה אֹותוֹ עַל הַכַּפֹּורֶת וְאוֹתוֹ חֲדָא מַשְׁמָע וּבְמַעֲלֶה דְּפַר לֹא פֵּירֵשׁ אַחַת:</div>
+          <div class="glose-fr">Que le verset ne dise pas &quot;devant le kapporet&quot;, qui est le &quot;en bas&quot; du bouc — car il est ecrit a son sujet &quot;et il en aspergera sur le kapporet et devant le kapporet&quot; — puisque ce n&#x27;est pas necessaire : en fin de compte on l&#x27;apprend du &quot;en bas&quot; du taureau, car le nombre des aspersions n&#x27;est pas precise pour le bouc, et nous le deduirons plus loin du &quot;en bas&quot; du taureau, dont il est ecrit &quot;et devant le kapporet il aspergera sept fois&quot;. Et puisqu&#x27;en fin de compte on l&#x27;apprend de lui, que le verset se taise et que toute la question du &quot;en bas&quot; du bouc s&#x27;apprenne du &quot;en bas&quot; du taureau, puisque les deux sont rapproches l&#x27;un de l&#x27;autre — car il est ecrit &quot;et il fera de son sang comme il a fait pour le sang du taureau&quot;. Certes, son &quot;en haut&quot;, lui, etait necessaire, car le nombre y est explicite — une seule, puisqu&#x27;il est ecrit &quot;et il en aspergera sur le kapporet&quot;, et &quot;oto&quot; implique une seule — alors que pour le &quot;en haut&quot; du taureau le verset n&#x27;a pas precise &quot;une&quot;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La question porte precisement sur les deux aspersions <b>du haut</b> — celle du taureau et celle du bouc — dont le verset dit qu'elles se font "sur le kapporet". D'ou sait-on qu'elles ne touchent pas reellement sa face superieure ?</p><p>La reponse repose sur un principe d'exegese : un mot que l'on pouvait deduire autrement est un mot <b>mouvfne</b> (libre), et un mot libre n'est pas la pour rien — il sert a operer un <b>hekech</b>, un rapprochement entre deux expressions du verset.</p><p>Ici, le "devant le kapporet" du bouc semble superflu : puisque le verset declare deja que l'on fait du sang du bouc "comme on a fait" du sang du taureau, on aurait de toute facon appris de la que le bas du bouc se fait comme le bas du taureau. Comme le detaille Rachi, le "en haut" du bouc, lui, etait bien necessaire : il precise le nombre (<b>oto</b>, une seule), la ou le verset du taureau ne le precisait pas.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לָמָּה נֶאֱמַר — לְאַקּוֹשֵׁי ״עַל״ לְ״לִפְנֵי״: מַה ״לִפְנֵי״ דְּלָאו עַל, אַף ״עַל״ דְּלָאו עַל.</div>
+            <div class="fr"><p>Pourquoi donc est-il dit ? Pour rapprocher le &quot;sur&quot; du &quot;devant&quot; : de meme que &quot;devant&quot; ne signifie pas dessus, de meme &quot;sur&quot; ne signifie pas dessus.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לָמָּה נֶאֱמַר</b> לְמַטָּה דְּשָׂעִיר לְאַקּוֹשֵׁי לֵיהּ מַעֲלֶה דְּשָׂעִיר וְלוֹמַר עַל הַכַּפֹּורֶת כְּלִפְנֵי הַכַּפֹּורֶת מַה לִפְנֵי דְּלָאו מַמָּשׁ נוֹגֵעַ בַּכַּפֹּורֶת דְּהָא לִפְנֵי עַל הָאָרֶץ מַשְׁמַע אַף עַל דְּלָא מַמָּשׁ נוֹגֵעַ בַּכַּפֹּורֶת אֶלָּא לְעִנְיַן שֶׁיְּהֵא מְצַדֵּד יָדוֹ לְמַטָּה:</div>
+          <div class="glose-fr">Le &quot;en bas&quot; du bouc : pour rapprocher de lui le &quot;en haut&quot; du bouc, et dire que &quot;sur le kapporet&quot; est comme &quot;devant le kapporet&quot; — de meme que &quot;devant&quot; ne touche pas veritablement le kapporet, puisque &quot;devant&quot; implique sur le sol, de meme &quot;sur&quot; ne touche pas veritablement le kapporet, mais signifie seulement qu&#x27;il retourne sa main vers le bas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Voici le rendement du mot libre. Le "devant le kapporet" du bouc etant superflu, il vient <b>rapprocher</b> les deux expressions du meme verset : <b>al</b> (sur) et <b>lifnei</b> (devant).</p><p>Or "devant le kapporet" designe manifestement un point qui n'est pas sur le couvercle — Rachi precise que <i>lifnei</i> evoque le sol, devant l'arche. Le rapprochement transporte donc cette propriete sur le mot <b>al</b> : lui non plus n'implique pas le contact. Il ne garde du mot "sur" que l'orientation du geste — la main retournee vers le bas pour projeter vers le haut.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אַדְּרַבָּה: לֹא יֹאמַר ״לְמַעְלָה״ בַּפָּר דְּלָא צָרִיךְ, דְּגָמַר מִמַּעֲלָה דְּשָׂעִיר. לָמָּה נֶאֱמַר? לְאַקּוֹשֵׁי ״לִפְנֵי״ ל״על״: מַה ״עַל״ — עַל מַמָּשׁ, אַף ״לִפְנֵי״ — עַל מַמָּשׁ!</div>
+            <div class="fr"><p>Au contraire ! Que le verset ne dise pas &quot;en haut&quot; pour le taureau, car ce n&#x27;est pas necessaire : on l&#x27;apprend du &quot;en haut&quot; du bouc.</p><p>Pourquoi donc est-il dit ? Pour rapprocher le &quot;devant&quot; du &quot;sur&quot; : de meme que &quot;sur&quot; signifie veritablement dessus, de meme &quot;devant&quot; signifie veritablement dessus !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַדְּרַבָּה לֹא יֵאָמֵר לְמַעְלָה בְּפַר דְּלָא צְרִיךְ</b> דְּסוֹף סוֹף גָּמַר לְקַמָּן מִמַּעֲלָה דְּשָׂעִיר שֶׁפֵּירַשׁ בּוֹ אַחַת:</div>
+          <div class="glose-fr">Car en fin de compte on l&#x27;apprend, plus loin, du &quot;en haut&quot; du bouc, ou le nombre &quot;une&quot; est explicite.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לָמָּה נֶאֱמַר לְאַקּוֹשֵׁי</b> לִפְנֵי דְּפַר לְעַל דְּפַר שֶׁהַמֻּופְנֶה בָּא לְלַמֵּד:</div>
+          <div class="glose-fr">Le &quot;devant&quot; du taureau est rapproche du &quot;sur&quot; du taureau — car c&#x27;est le mot libre (mouvfne) qui vient enseigner.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מָה עַל עַל מַמָּשׁ</b> דְּהָא עַל פְּנֵי הַכַּפֹּורֶת כְּתִיב אַף לִפְנֵי עַל מַמָּשׁ שֶׁיְּהוּ דָּמִים נוֹגְעִים בְּעָבְיָהּ שֶׁל כַּפֹּורֶת:</div>
+          <div class="glose-fr">Puisqu&#x27;il est ecrit &quot;sur les faces du kapporet&quot; ; de meme &quot;devant&quot; signifie veritablement dessus, de sorte que le sang touche l&#x27;epaisseur du kapporet.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>L'objection retourne exactement le meme mecanisme. Si l'on cherche un mot superflu, pourquoi choisir celui du bouc ? Le "sur les faces du kapporet" du taureau est tout aussi deductible : puisque les deux rites sont assimiles, le haut du taureau s'apprendrait du haut du bouc, ou le nombre est ecrit.</p><p>Et si c'est ce mot-la qui est libre, le rapprochement joue <b>en sens inverse</b> : c'est le "devant" qui recoit la propriete du "sur". Le sang toucherait alors reellement la tranche du couvercle — et la baraita du debut serait refutee.</p><p>La sougya est donc devant deux lectures symetriques qui donnent des halakhot opposees. Il faut un critere exterieur pour departager : c'est l'objet du segment suivant.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הַאי מַאי?! אִי אָמְרַתְּ בִּשְׁלָמָא לְמַטָּה דְּשָׂעִיר לְאַקּוֹשֵׁי לְמַעְלָה דְפַר — מִיבְּעֵי לֵיהּ לְכִדְתָנָא דְּבֵי רַבִּי אֱלִיעֶזֶר בֶּן יַעֲקֹב. דְּתָנָא דְּבֵי רַבִּי אֱלִיעֶזֶר בֶּן יַעֲקֹב: ״עַל פְּנֵי הַכַּפֹּורֶת קֵדְמָה״ — זֶה בָּנָה אָב: כָּל מָקוֹם שֶׁנֶּאֱמַר ״פְּנֵי״ אֵינוֹ אֶלָּא קָדִים. אֶלָּא אִי אָמְרַתְּ לְמַעְלָה דְּפַר לְאַקּוֹשֵׁי לְמַטָּה דְשָׂעִיר — לְמַאי אֲתָא?</div>
+            <div class="fr"><p>Qu&#x27;est-ce que cela ?! Admettons que tu dises : le &quot;en bas&quot; du bouc sert au rapprochement — alors le &quot;en haut&quot; du taureau est necessaire pour ce qu&#x27;a enseigne l&#x27;ecole de Rabbi Eliezer ben Yaakov.</p><p>Car l&#x27;ecole de Rabbi Eliezer ben Yaakov a enseigne : &quot;sur les faces (penei) du kapporet, vers l&#x27;orient&quot; (Vayikra 16,14) — ceci fonde un principe general (binyan av) : partout ou il est dit &quot;penei&quot;, il ne s&#x27;agit que du cote est. Mais si tu dis que le &quot;en haut&quot; du taureau sert au rapprochement — a quoi vient alors le &quot;en bas&quot; du bouc ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִי אָמְרַתְּ בִּשְׁלָמָא לְמַטָּה דְשָׂעִיר לְאַקּוֹשֵׁי</b> כְּדַאֲמָרָן לְמַעְלָה דְּפַר דְּקַשְׁיָא לָךְ לֹא יֹאמַר מִיבְּעֵי לֵיהּ לְכִדְתַנְיָא וְכוּ&#x27;:</div>
+          <div class="glose-fr">Comme nous l&#x27;avons dit — alors le &quot;en haut&quot; du taureau, dont tu objectais qu&#x27;il ne devrait pas etre dit, est necessaire pour ce qui a ete enseigne, etc.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא אִי אָמְרַתְּ לְמַעְלָה דְפַר לְאַקּוֹשֵׁי כו&#x27;</b> וְאִם תֹּאמַר וּמִנָּלַן דְּאַחַת לְמַעְלָה דְּפַר לֹא נָגַע אִילֵּימָא מֵהֶיקֵּשׁ דְּשָׂעִיר כְּדִלְקַמָּן וְהָא שָׂעִיר גּוּפֵיהּ גָּמַר בְּהֶיקֵּישָׁא דְּאִיתַּקַּשׁ עַל לְלִפְנֵי וְדָבָר הַלָּמֵד בְּהֶיקֵּשׁ אֵינוֹ חוֹזֵר וּמְלַמֵּד בְּהֶיקֵּשׁ וי&quot;ל גִּילּוּי מִילְּתָא הוּא דְּעַל דְּהָכָא כִּדְהָתָם אִי נָמֵי כֵּיוָן דְּאַשְׁכְּחַן דְּעַל דְּשָׂעִיר לָאו דַּוְוקָא מַקְּשִׁינַן נָמֵי גַּבֵּי פַּר עַל לְלִפְנֵי:</div>
+          <div class="glose-fr">Et si tu demandes : d&#x27;ou savons-nous que l&#x27;unique aspersion du haut, pour le taureau, ne touchait pas le kapporet ? Si tu reponds : du rapprochement avec le bouc, comme plus loin — mais le bouc lui-meme ne l&#x27;apprend que par un rapprochement (son &quot;sur&quot; ayant ete rapproche de son &quot;devant&quot;), et une chose apprise par hekech ne peut a son tour enseigner par hekech ! On peut repondre : il s&#x27;agit ici d&#x27;un simple gilouy milta (devoilement du sens), le &quot;sur&quot; d&#x27;ici etant comme le &quot;sur&quot; de la-bas. Ou encore : puisque nous avons trouve que le &quot;sur&quot; du bouc n&#x27;est pas a prendre au pied de la lettre, nous rapprochons de meme, pour le taureau, le &quot;sur&quot; du &quot;devant&quot;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>L'arbitrage est asymetrique, et c'est ce qui le rend decisif. Un mot n'est "libre" que s'il n'a strictement rien d'autre a faire dans le verset.</p><p>Or le "en haut" du taureau travaille deja : l'ecole de Rabbi Eliezer ben Yaakov y lit, grace a l'apposition <b>al penei ... kedma</b>, un <b>binyan av</b> valable pour toute la Tora — le mot <b>penei</b> designe partout le cote <b>est</b>. Ce mot n'est donc pas disponible pour un hekech.</p><p>Symetriquement, si l'on adoptait la lecture adverse, le "en bas" du bouc resterait sans aucun emploi : ni pour le nombre (deja acquis), ni pour un rapprochement (deja pris). Un mot de la Tora sans emploi est impossible. La premiere lecture s'impose donc : <b>le sang n'atteint jamais le kapporet</b>.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="260" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="13.4" font-weight="700" fill="#1c1917">Le binyan av de l'ecole de Rabbi Eliezer ben Yaakov</text>
+
+  <rect x="30" y="42" width="280" height="70" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.3"/>
+  <text x="170" y="64" text-anchor="middle" font-size="10.4" font-style="italic" fill="#1e3a8a">"al PENEI ha-kapporet KEDMA"</text>
+  <text x="170" y="82" text-anchor="middle" font-size="10" fill="#1e40af">Lv 16,14 -- un cas particulier :</text>
+  <text x="170" y="99" text-anchor="middle" font-size="10" fill="#1e40af">ici, "penei" est glose par "kedma", vers l'est.</text>
+
+  <path d="M312 77 L386 77" stroke="#78716c" stroke-width="2" fill="none" marker-end="url(#p55a)"/>
+  <defs><marker id="p55a" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+    <path d="M0 0 L9 4.5 L0 9 z" fill="#78716c"/></marker></defs>
+  <text x="349" y="68" text-anchor="middle" font-size="9.4" fill="#57534e">zeh bana av</text>
+
+  <rect x="390" y="42" width="280" height="70" rx="5" fill="#dcfce7" stroke="#22c55e" stroke-width="1.3"/>
+  <text x="530" y="64" text-anchor="middle" font-size="10.6" font-weight="700" fill="#166534">Regle pour toute la Tora</text>
+  <text x="530" y="83" text-anchor="middle" font-size="10" fill="#15803d">partout ou il est ecrit "penei",</text>
+  <text x="530" y="100" text-anchor="middle" font-size="10" fill="#15803d">cela designe le cote EST.</text>
+
+  <rect x="30" y="132" width="640" height="106" rx="6" fill="#fef3c7" stroke="#eab308" stroke-width="1.4"/>
+  <text x="46" y="154" font-size="11" font-weight="700" fill="#854d0e">Consequence pour notre debat</text>
+  <text x="46" y="176" font-size="10.2" fill="#78716c">Ce mot n'est donc PAS un mot en trop : il a deja un travail a faire. La lecture B, qui voulait le declarer superflu</text>
+  <text x="46" y="194" font-size="10.2" fill="#78716c">pour en tirer un hekech, s'effondre -- et elle laisserait de surcroit le "bas du bouc" totalement sans emploi.</text>
+  <text x="46" y="216" font-size="10.4" font-weight="700" fill="#854d0e">Reste la lecture A : le sang n'atteint jamais le couvercle, il est projete face a son epaisseur.</text>
+</svg></div><div class="svg-cap">Le mot que la lecture adverse voulait declarer superflu est deja mobilise par un binyan av : c&#x27;est ce qui tranche.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּנוּ רַבָּנַן: ״וְהִזָּה אֹתוֹ עַל הַכַּפֹּורֶת וְלִפְנֵי הַכַּפֹּורֶת״ — לָמַדְנוּ: כַּמָּה לְמַעְלָה בְּשָׂעִיר — אַחַת. לְמַטָּה בְּשָׂעִיר, אֵינִי יוֹדֵעַ כַּמָּה!</div>
+            <div class="fr"><p>Nos maitres ont enseigne : &quot;et il en aspergera sur le kapporet et devant le kapporet&quot; — nous avons ainsi appris combien d&#x27;aspersions vers le haut pour le bouc : une. Mais vers le bas pour le bouc, je ne sais pas combien !</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle unite : une longue baraita qui ne porte plus sur le contact mais sur le <b>nombre</b>.</p><p>Le tableau des donnees est incomplet. Pour le <b>taureau</b> (Vayikra 16,14), le verset ecrit explicitement "sept fois" pour le bas, mais rien pour le haut. Pour le <b>bouc</b> (16,15), le mot <b>oto</b> indique une seule aspersion vers le haut, mais rien n'est dit du bas.</p><p>Deux cases vides, donc : combien en bas pour le bouc, et combien en haut pour le taureau. La baraita va les traiter l'une apres l'autre, exactement de la meme facon.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הֲרֵינִי דָּן: נֶאֶמְרוּ דָּמִים לְמַטָּה בַּפָּר, וְנֶאֶמְרוּ דָּמִים לְמַטָּה בַּשָּׂעִיר. מַה לְמַטָּה בַּפָּר — שֶׁבַע, אַף לְמַטָּה בְּשָׂעִיר — שֶׁבַע.</div>
+            <div class="fr"><p>Je vais donc raisonner : il est dit du sang vers le bas pour le taureau, et il est dit du sang vers le bas pour le bouc. De meme que le bas du taureau, c&#x27;est sept, de meme le bas du bouc, c&#x27;est sept.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Premier <b>binyan av</b>, fonde sur la <b>direction</b> : les deux versets emploient le meme registre — du sang projete vers le bas. Le nombre connu (sept, pour le taureau) est transporte vers la case vide (le bas du bouc).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אוֹ כַּלֵּךְ לְדֶרֶךְ זוֹ: נֶאֶמְרוּ דָּמִים לְמַעְלָה בַּשָּׂעִיר, וְנֶאֶמְרוּ דָּמִים לְמַטָּה בַּשָּׂעִיר. מַה לְמַעְלָה בְּשָׂעִיר — אַחַת, אַף לְמַטָּה בְּשָׂעִיר — אַחַת? נִרְאֶה לְמִי דּוֹמֶה: דָּנִין מַטָּה מִמַּטָּה, וְאֵין דָּנִין מַטָּה מִלְמַעְלָה.</div>
+            <div class="fr"><p>Ou bien va donc par cette voie : il est dit du sang vers le haut pour le bouc, et il est dit du sang vers le bas pour le bouc. De meme que le haut du bouc, c&#x27;est une, de meme le bas du bouc, ce serait une ? — Voyons a quoi cela ressemble le plus : on deduit un &quot;bas&quot; d&#x27;un &quot;bas&quot;, et l&#x27;on ne deduit pas un &quot;bas&quot; d&#x27;un &quot;haut&quot;.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לָמַדְנוּ לְמַעְלָה בְּשָׂעִיר אַחַת</b> דְּאוֹתוֹ חֲדָא מַשְׁמַע:</div>
+          <div class="glose-fr">&quot;Nous avons appris combien vers le haut pour le bouc : une&quot; — car le mot &quot;oto&quot; implique une seule.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Contre-proposition fondee non plus sur la direction mais sur le <b>sujet</b> : restons dans le bouc, dont le haut vaut une — donc son bas aussi vaudrait une.</p><p>La baraita arbitre d'abord par la ressemblance formelle (<b>nir'eh le-mi domeh</b>) : la parente de direction l'emporte, <b>dan mata mi-mata</b>. Mais cet arbitrage sera aussitot conteste.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אַדְּרַבָּה, דָּנִין גּוּפוֹ מִגּוּפוֹ, וְאֵין דָּנִין גּוּפוֹ מֵעָלְמָא! תַּלְמוּד לוֹמַר: ״וְעָשָׂה אֶת דָּמוֹ כַּאֲשֶׁר עָשָׂה לְדַם הַפָּר״, שֶׁאֵין תַּלְמוּד לוֹמַר ״כַּאֲשֶׁר עָשָׂה״, וּמַה תַּלְמוּד לוֹמַר ״כַּאֲשֶׁר עָשָׂה״ — שֶׁיִּהְיוּ כָּל עֲשִׂיּוֹתָיו שָׁווֹת. כְּשֵׁם שֶׁלְּמַטָּה בַּפָּר — שֶׁבַע, כָּךְ לְמַטָּה בְּשָׂעִיר — שֶׁבַע.</div>
+            <div class="fr"><p>Au contraire : on deduit une chose d&#x27;elle-meme, et l&#x27;on ne deduit pas une chose de l&#x27;exterieur ! — Le verset dit donc : &quot;et il fera de son sang comme il a fait pour le sang du taureau&quot;. Le verset n&#x27;avait pas besoin de dire &quot;comme il a fait&quot; ; que vient donc enseigner &quot;comme il a fait&quot; ?</p><p>Que toutes ses operations soient semblables : de meme que le bas du taureau, c&#x27;est sept, de meme le bas du bouc, c&#x27;est sept.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁאֵין תַּלְמוּד לוֹמַר וְכוּ&#x27;</b> שֶׁהֲרֵי אַף כָּאן פֹּורַשׁ וְהִזָּה וְעַל וְלִפְנֵי:</div>
+          <div class="glose-fr">&quot;Le verset n&#x27;avait pas besoin de dire&quot;, etc. — car ici aussi tout est explicite : &quot;et il aspergera&quot;, &quot;sur&quot; et &quot;devant&quot;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Les deux principes s'annulent : <b>dan mata mi-mata</b> (la parente de direction) contre <b>dan goufo mi-goufo</b> (la parente de sujet). Aucun n'est plus fort que l'autre, la deduction est bloquee.</p><p>C'est alors le verset qui tranche, et par un mot en trop. "Comme il a fait pour le sang du taureau" est inutile — Rachi le souligne : tout le rite du bouc est de toute facon redit en toutes lettres ("et il aspergera", "sur", "devant"). S'il est ecrit malgre tout, c'est pour poser une exigence globale : <b>che-yihyou kol assiyotav chavot</b>, que toutes les operations soient identiques jusque dans le detail.</p><p>Le bas du bouc vaut donc <b>sept</b>, comme celui du taureau.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="300" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="13.4" font-weight="700" fill="#1c1917">Deux binyan av qui se neutralisent, un verset qui tranche</text>
+
+  <rect x="24" y="44" width="300" height="88" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.3"/>
+  <text x="174" y="64" text-anchor="middle" font-size="10.8" font-weight="700" fill="#1e3a8a">Argument du SENS</text>
+  <text x="174" y="83" text-anchor="middle" font-size="10" fill="#1e40af">"dan mata mi-mata" : un bas s'apprend</text>
+  <text x="174" y="100" text-anchor="middle" font-size="10" fill="#1e40af">d'un bas, pas d'un haut.</text>
+  <text x="174" y="120" text-anchor="middle" font-size="10.2" font-weight="700" fill="#1e3a8a">=&gt; bas du bouc = SEPT</text>
+
+  <rect x="396" y="44" width="300" height="88" rx="5" fill="#fee2e2" stroke="#ef4444" stroke-width="1.3"/>
+  <text x="546" y="64" text-anchor="middle" font-size="10.8" font-weight="700" fill="#991b1b">Argument du SUJET</text>
+  <text x="546" y="83" text-anchor="middle" font-size="10" fill="#b91c1c">"dan goufo mi-goufo" : on apprend d'abord</text>
+  <text x="546" y="100" text-anchor="middle" font-size="10" fill="#b91c1c">du meme animal, pas d'un autre.</text>
+  <text x="546" y="120" text-anchor="middle" font-size="10.2" font-weight="700" fill="#991b1b">=&gt; bas du bouc = UNE</text>
+
+  <path d="M330 88 L390 88" stroke="#78716c" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+  <text x="360" y="80" text-anchor="middle" font-size="9.6" fill="#57534e">impasse</text>
+
+  <path d="M174 136 L360 168" stroke="#78716c" stroke-width="1.6" fill="none"/>
+  <path d="M546 136 L360 168" stroke="#78716c" stroke-width="1.6" fill="none"/>
+
+  <rect x="24" y="176" width="672" height="106" rx="6" fill="#ecfdf5" stroke="#10b981" stroke-width="1.6"/>
+  <text x="360" y="200" text-anchor="middle" font-size="11.6" font-weight="700" fill="#065f46">Le verset coupe court : "ve-asa et damo KA-ASHER ASA le-dam ha-par"</text>
+  <text x="40" y="224" font-size="10.2" fill="#047857">Ces mots sont inutiles : tout le rite du bouc est deja redit en toutes lettres ("il aspergera", "sur", "devant").</text>
+  <text x="40" y="242" font-size="10.2" fill="#047857">S'ils sont ecrits malgre tout, c'est pour exiger : che-yihyou kol assiyotav chavot -- que toutes ses operations soient identiques.</text>
+  <text x="40" y="266" font-size="10.4" font-weight="700" fill="#065f46">Donc SEPT en bas pour le bouc comme pour le taureau -- et, plus loin, UNE en haut pour le taureau comme pour le bouc.</text>
+</svg></div><div class="svg-cap">Deux binyan av de force egale se neutralisent ; c&#x27;est un mot superflu du verset qui impose l&#x27;identite complete des deux rites.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לָמַדְנוּ כַּמָּה לְמַטָּה? בַּפָּר וּבְשָׂעִיר — שֶׁבַע. לְמַעְלָה בַּפָּר אֵינִי יוֹדֵעַ כַּמָּה, וַהֲרֵינִי דָּן: נֶאֶמְרוּ דָּמִים לְמַעְלָה בַּשָּׂעִיר, וְנֶאֶמְרוּ דָּמִים לְמַעְלָה בַּפָּר. מַה לְמַעְלָה בְּשָׂעִיר — אַחַת, אַף לְמַעְלָה בַּפָּר — אַחַת.</div>
+            <div class="fr"><p>Nous avons ainsi appris combien vers le bas, pour le taureau et pour le bouc : sept. Mais vers le haut pour le taureau, je ne sais pas combien.</p><p>Je vais donc raisonner : il est dit du sang vers le haut pour le bouc, et il est dit du sang vers le haut pour le taureau. De meme que le haut du bouc, c&#x27;est une, de meme le haut du taureau, c&#x27;est une.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Seconde case vide, traitee selon le meme scenario exactement. Le premier binyan av est de nouveau celui de la <b>direction</b> : un haut s'apprend d'un haut, donc une seule aspersion pour le taureau comme pour le bouc.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אוֹ כַּלֵּךְ לְדֶרֶךְ זוֹ: נֶאֶמְרוּ דָּמִים לְמַטָּה בַּפָּר, וְנֶאֶמְרוּ דָּמִים לְמַעְלָה בַּפָּר. מַה לְמַטָּה בַּפָּר — שֶׁבַע, אַף לְמַעְלָה בַּפָּר — שֶׁבַע! נִרְאֶה לְמִי דּוֹמֶה? דָּנִין מַעְלָה מִמַּעֲלָה, וְאֵין דָּנִין מַעְלָה מִמַּטָּה!</div>
+            <div class="fr"><p>Ou bien va par cette voie : il est dit du sang vers le bas pour le taureau, et il est dit du sang vers le haut pour le taureau. De meme que le bas du taureau, c&#x27;est sept, de meme le haut du taureau, ce serait sept ! — Voyons a quoi cela ressemble : on deduit un &quot;haut&quot; d&#x27;un &quot;haut&quot;, et l&#x27;on ne deduit pas un &quot;haut&quot; d&#x27;un &quot;bas&quot; !</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Et de nouveau la contre-proposition par le <b>sujet</b> : restons dans le taureau, dont le bas vaut sept. Puis le meme arbitrage formel, <b>dan maala mi-maala</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אַדְּרַבָּה: דָּנִין גּוּפוֹ מִגּוּפוֹ, וְאֵין דָּנִין גּוּפוֹ מֵעָלְמָא! תַּלְמוּד לוֹמַר: ״וְעָשָׂה אֶת דָּמוֹ כַּאֲשֶׁר עָשָׂה״, שֶׁאֵין תַּלְמוּד לוֹמַר ״כַּאֲשֶׁר עָשָׂה״, וּמַה תַּלְמוּד לוֹמַר ״כַּאֲשֶׁר עָשָׂה״? שֶׁיִּהְיוּ כָּל עֲשִׂיּוֹתָיו שָׁווֹת, כְּשֵׁם שֶׁלְּמַטָּה בַּפָּר — שֶׁבַע, כָּךְ לְמַטָּה בְּשָׂעִיר — שֶׁבַע. וּכְשֵׁם שֶׁלְּמַעְלָה בְּשָׂעִיר — אַחַת, כָּךְ לְמַעְלָה בַּפָּר — אַחַת.</div>
+            <div class="fr"><p>Au contraire : on deduit une chose d&#x27;elle-meme, et l&#x27;on ne deduit pas une chose de l&#x27;exterieur ! — Le verset dit donc : &quot;et il fera de son sang comme il a fait&quot;. Le verset n&#x27;avait pas besoin de dire &quot;comme il a fait&quot; ; que vient donc enseigner &quot;comme il a fait&quot; ?</p><p>Que toutes ses operations soient semblables : de meme que le bas du taureau, c&#x27;est sept, de meme le bas du bouc, c&#x27;est sept ; et de meme que le haut du bouc, c&#x27;est une, de meme le haut du taureau, c&#x27;est une.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Meme blocage, meme denouement : le mot superflu <b>ka-asher asa</b> impose l'identite integrale des deux services. La baraita recapitule alors les deux resultats d'un seul tenant.</p><p>Le tableau est desormais complet et parfaitement symetrique : <b>une aspersion vers le haut et sept vers le bas</b>, pour le taureau comme pour le bouc — huit de chaque cote. C'est ce total que la michna fait ensuite compter a voix haute.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אַחַת, אַחַת וְאַחַת, אַחַת וּשְׁתַּיִם. תָּנוּ רַבָּנַן: אַחַת, אַחַת וְאַחַת, אַחַת וּשְׁתַּיִם, אַחַת וְשָׁלֹשׁ, אַחַת וְאַרְבַּע, אַחַת וְחָמֵשׁ, אַחַת וְשֵׁשׁ, אַחַת וְשֶׁבַע, דִּבְרֵי רַבִּי מֵאִיר. רַבִּי יְהוּדָה אוֹמֵר: אַחַת, אַחַת וְאַחַת, שְׁתַּיִם וְאַחַת, שָׁלֹשׁ וְאַחַת, אַרְבַּע וְאַחַת, חָמֵשׁ וְאַחַת, שֵׁשׁ וְאַחַת, שֶׁבַע וְאַחַת.</div>
+            <div class="fr"><p>&quot;Une ; une et une ; une et deux.&quot; — Nos maitres ont enseigne : une ; une et une ; une et deux ; une et trois ; une et quatre ; une et cinq ; une et six ; une et sept — paroles de Rabbi Meir. Rabbi Yehouda dit : une ; une et une ; deux et une ; trois et une ; quatre et une ; cinq et une ; six et une ; sept et une.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Retour a la michna, qui citait la formule de comptage du cohen gadol. La baraita en donne deux versions qui different par l'<b>ordre des mots</b> : chez Rabbi Meir la premiere aspersion est nommee en tete, chez Rabbi Yehouda en queue.</p><p>Le fond est identique dans les deux cas : une en haut, puis sept en bas, et la premiere est toujours rappelee a chaque enonce.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="320" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="13.4" font-weight="700" fill="#1c1917">Le decompte a voix haute : deux facons de dire le meme nombre</text>
+
+  <rect x="24" y="42" width="320" height="196" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.4"/>
+  <text x="184" y="64" text-anchor="middle" font-size="11.4" font-weight="700" fill="#1e3a8a">Rabbi Meir -- le total d'abord</text>
+  <text x="184" y="86" text-anchor="middle" font-size="10.4" fill="#1e40af">une</text>
+  <text x="184" y="103" text-anchor="middle" font-size="10.4" fill="#1e40af">une et une</text>
+  <text x="184" y="120" text-anchor="middle" font-size="10.4" fill="#1e40af">une et deux</text>
+  <text x="184" y="137" text-anchor="middle" font-size="10.4" fill="#1e40af">une et trois ... une et sept</text>
+  <text x="184" y="166" text-anchor="middle" font-size="9.8" fill="#57534e">Chez lui on dit "vingt et un", "vingt-deux" :</text>
+  <text x="184" y="182" text-anchor="middle" font-size="9.8" fill="#57534e">le nombre general, puis le detail.</text>
+  <text x="184" y="212" text-anchor="middle" font-size="10.2" font-weight="700" fill="#1e3a8a">La premiere ouvre chaque enonce</text>
+
+  <rect x="376" y="42" width="320" height="196" rx="6" fill="#fdf2f8" stroke="#db2777" stroke-width="1.4"/>
+  <text x="536" y="64" text-anchor="middle" font-size="11.4" font-weight="700" fill="#9d174d">Rabbi Yehouda -- le detail d'abord</text>
+  <text x="536" y="86" text-anchor="middle" font-size="10.4" fill="#831843">une</text>
+  <text x="536" y="103" text-anchor="middle" font-size="10.4" fill="#831843">une et une</text>
+  <text x="536" y="120" text-anchor="middle" font-size="10.4" fill="#831843">deux et une</text>
+  <text x="536" y="137" text-anchor="middle" font-size="10.4" fill="#831843">trois et une ... sept et une</text>
+  <text x="536" y="166" text-anchor="middle" font-size="9.8" fill="#57534e">Chez lui on dit "deux et vingt", "trois et vingt" :</text>
+  <text x="536" y="182" text-anchor="middle" font-size="9.8" fill="#57534e">le detail, puis le nombre general.</text>
+  <text x="536" y="212" text-anchor="middle" font-size="10.2" font-weight="700" fill="#9d174d">La premiere ferme chaque enonce</text>
+
+  <rect x="24" y="254" width="672" height="52" rx="6" fill="#fef3c7" stroke="#eab308" stroke-width="1.4"/>
+  <text x="40" y="276" font-size="11" font-weight="700" fill="#854d0e">"Mar ki atreh ve-mar ki atreh" -- ce ne sont pas deux halakhot mais deux dialectes</text>
+  <text x="40" y="294" font-size="10.2" fill="#78716c">Aucun desaccord sur le rite : dans les deux cas, une en haut et sept en bas, et la premiere est nommee a chaque fois.</text>
+</svg></div><div class="svg-cap">Deux formules, un seul rite : la divergence porte sur l&#x27;ordre des mots, pas sur le service.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְלָא פְּלִיגִי: מָר כִּי אַתְרֵיהּ וּמָר כִּי אַתְרֵיהּ.</div>
+            <div class="fr"><p>Et ils ne divergent pas : chacun selon l&#x27;usage de son lieu.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַר כִּי אַתְרֵיהּ וְכוּ&#x27;</b> בְּאַתְרֵיהּ דְּרַבִּי מֵאִיר מוֹנִין מִנְיָן כְּלָל תְּחִילָּה וְאַחַר כָּךְ פְּרָט כְּגוֹן עֶשְׂרִים וְאַחַת עֶשְׂרִים וּשְׁתַּיִם וּבְאַתְרֵיהּ דְּרַבִּי יְהוּדָה פֵּרֵט תְּחִילָּה שְׁתַּיִם וְעֶשְׂרִים שָׁלֹשׁ וְעֶשְׂרִים:</div>
+          <div class="glose-fr">Dans le lieu de Rabbi Meir, on compte d&#x27;abord le nombre general puis le detail, par exemple &quot;vingt et un&quot;, &quot;vingt-deux&quot; ; et dans le lieu de Rabbi Yehouda, le detail d&#x27;abord : &quot;deux et vingt&quot;, &quot;trois et vingt&quot;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara desamorce le desaccord apparent : <b>mar ki atreh ou-mar ki atreh</b>. Ce n'est pas une controverse halakhique mais une difference d'usage linguistique local.</p><p>Rachi l'illustre par la facon de dire les nombres composes : dans la ville de Rabbi Meir on dit "vingt et un", "vingt-deux" — le nombre general d'abord ; dans celle de Rabbi Yehouda on dit "deux et vingt", "trois et vingt" — le detail d'abord.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">דְּכֻולֵּי עָלְמָא מִיהַת הַזָּאָה רִאשׁוֹנָה צְרִיכָה מִנְיָן עִם כָּל אַחַת וְאַחַת, מַאי טַעְמָא? רַבִּי אֶלְעָזָר אָמַר: שֶׁלֹּא יִטְעֶה בַּהַזָּאוֹת.</div>
+            <div class="fr"><p>En tout cas, pour tous, la premiere aspersion doit etre comptee avec chacune des suivantes. Quelle en est la raison ?</p><p>Rabbi Elazar a dit : afin qu&#x27;il ne se trompe pas dans les aspersions.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁלֹּא יִטְעֶה</b> שֶׁיְּהֵא לוֹ שְׁהוּת בֵּנְתַייִם לָתֵת לִבּוֹ לַמִּנְיָן שֶׁלֹּא יִטְעֶה:</div>
+          <div class="glose-fr">Afin qu&#x27;il ait entre-temps un delai pour appliquer son coeur au compte et ne pas se tromper.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Ce que les deux formules ont en commun est plus important que ce qui les separe : dans les deux cas, l'aspersion du haut est <b>renommee a chaque fois</b>. Pourquoi ne pas compter simplement les sept du bas ?</p><p>Premiere reponse, pragmatique : sans ce rappel, le cohen gadol pourrait croire que son compte englobe deja celle du haut et en ajouter une de trop. Rachi ajoute une dimension de rythme : la formule plus longue lui menage un <b>temps d'arret</b> entre deux jets, le temps d'appliquer son coeur au compte.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבִּי יוֹחָנָן אָמַר, אֲמַר קְרָא: ״וְלִפְנֵי הַכַּפֹּורֶת יִזֶּה״, שֶׁאֵין תַּלְמוּד לוֹמַר ״יִזֶּה״, וּמַה תַּלְמוּד לוֹמַר ״יִזֶּה״? לִימֵּד עַל הַזָּאָה רִאשׁוֹנָה שֶׁצְּרִיכָה מִנְיָן עִם כָּל אַחַת וְאַחַת.</div>
+            <div class="fr"><p>Rabbi Yohanan a dit : le verset dit &quot;et devant le kapporet il aspergera&quot; — le verset n&#x27;avait pas besoin de dire &quot;il aspergera&quot; ; que vient donc enseigner &quot;il aspergera&quot; ? Cela enseigne, au sujet de la premiere aspersion, qu&#x27;elle doit etre comptee avec chacune des suivantes.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לִימֵּד עַל הַזָּאָה וְכוּ&#x27;</b> וּכְתִיבָא חֻוקָּה לְעִיכּוּבָא:</div>
+          <div class="glose-fr">Et il est ecrit &quot;houka&quot; (statut), ce qui rend la chose indispensable a la validite du service (le-ikouva).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Seconde reponse, d'un tout autre ordre : le comptage n'est pas un garde-fou mais une <b>exigence du verset</b>. Le mot <b>yazeh</b> de Vayikra 16,14 est redondant — la phrase se comprenait sans lui — et cette redondance impose de rattacher la premiere aspersion a chaque enonce ulterieur.</p><p>Rachi tire la consequence lourde : le service de Yom Kippour est regi par le mot <b>houka</b>, ce qui rend cette exigence <b>le-ikouva</b> — son omission n'est pas une simple imperfection, elle compromet la validite.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg16">
+          <div class="seg-num">17</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאי בֵינַיְיהוּ? אִיכָּא בֵּינַייְהוּ דְּלֹא מָנָה וְלֹא טָעָה.</div>
+            <div class="fr"><p>Quelle difference y a-t-il entre eux ? La difference entre eux porte sur le cas ou il n&#x27;a pas compte et ne s&#x27;est pas trompe.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La <b>nafka mina</b> isole exactement le point de divergence. Imaginons un cohen gadol qui aurait compte sans rappeler la premiere, et qui pourtant serait arrive au bon nombre.</p><p>Pour <b>Rabbi Elazar</b>, le comptage n'etait qu'un moyen d'eviter l'erreur : le but etant atteint, il n'y a rien a redire. Pour <b>Rabbi Yohanan</b>, le verset exigeait cette formule pour elle-meme : elle a manque, et avec le "houka" que rappelle Rachi, le service en est atteint.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="300" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="13.4" font-weight="700" fill="#1c1917">Pourquoi renommer la premiere aspersion ? Deux raisons, une nafka mina</text>
+
+  <rect x="24" y="42" width="320" height="112" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.4"/>
+  <text x="184" y="64" text-anchor="middle" font-size="11.4" font-weight="700" fill="#1e3a8a">Rabbi Elazar -- raison pratique</text>
+  <text x="40" y="86" font-size="10" fill="#1e40af">"chelo yit'e ba-hazaot" : pour ne pas se tromper.</text>
+  <text x="40" y="104" font-size="10" fill="#1e40af">Rachi : cela lui menage un temps d'arret pour</text>
+  <text x="40" y="121" font-size="10" fill="#1e40af">appliquer son coeur au compte.</text>
+  <text x="40" y="143" font-size="9.8" font-style="italic" fill="#57534e">Le comptage est un moyen.</text>
+
+  <rect x="376" y="42" width="320" height="112" rx="6" fill="#fdf2f8" stroke="#db2777" stroke-width="1.4"/>
+  <text x="536" y="64" text-anchor="middle" font-size="11.4" font-weight="700" fill="#9d174d">Rabbi Yohanan -- raison scripturaire</text>
+  <text x="392" y="86" font-size="10" fill="#831843">"ve-lifnei ha-kapporet YAZEH" : le mot "yazeh"</text>
+  <text x="392" y="104" font-size="10" fill="#831843">est de trop, il enseigne que la premiere</text>
+  <text x="392" y="121" font-size="10" fill="#831843">doit etre comptee avec chacune des suivantes.</text>
+  <text x="392" y="143" font-size="9.8" font-style="italic" fill="#57534e">Le comptage est une exigence en soi.</text>
+
+  <rect x="24" y="172" width="672" height="112" rx="6" fill="#fef3c7" stroke="#eab308" stroke-width="1.6"/>
+  <text x="360" y="196" text-anchor="middle" font-size="11.6" font-weight="700" fill="#854d0e">NAFKA MINA : il n'a pas compte -- et ne s'est pas trompe</text>
+  <text x="40" y="222" font-size="10.4" fill="#78716c">Selon Rabbi Elazar : le but est atteint, le compte etait un garde-fou. Rien a redire.</text>
+  <text x="40" y="242" font-size="10.4" fill="#78716c">Selon Rabbi Yohanan : le verset exigeait cette formule ; elle a manque. Rachi ajoute que "houka" est ecrit --</text>
+  <text x="40" y="260" font-size="10.4" fill="#78716c">ce qui rend l'exigence le-ikouva, indispensable a la validite du service.</text>
+  <text x="40" y="278" font-size="9.8" font-style="italic" fill="#854d0e">Meme geste, meme resultat apparent : seule la parole prononcee separe les deux avis.</text>
+</svg></div><div class="svg-cap">Un meme geste correct, deux verdicts opposes : c&#x27;est le statut de la parole prononcee qui separe Rabbi Elazar de Rabbi Yohanan.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg17">
+          <div class="seg-num">18</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">יָצָא וְהִנִּיחוֹ עַל כַּן הַזָּהָב שֶׁבַּהֵיכָל. תְּנַן הָתָם: רַבִּי יְהוּדָה אוֹמֵר: לֹא הָיוּ שׁוֹפָרוֹת לְקִינֵּי חוֹבָה, מִפְּנֵי הַתַּעֲרוֹבוֹת.</div>
+            <div class="fr"><p>&quot;Il sortit et le posa sur le support d&#x27;or qui se trouvait dans le Heikhal.&quot; — Nous avons appris la-bas (michna Chekalim) : Rabbi Yehouda dit : il n&#x27;y avait pas de troncs (chofarot) pour les nids d&#x27;obligation, a cause des melanges.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא הָיוּ שׁוֹפָרוֹת לְקִינֵּי חוֹבָה</b> שׁוֹפָר לָתֵת לְתוֹכוֹ מָעוֹת מִי שֶׁעָלָיו קֵן חוֹבָה שֶׁל זָב וְזָבָה וְיוֹלֶדֶת אוֹ מְטַמֵּא מִקְדָּשׁ כְּשֵׁם שֶׁהָיוּ שׁוֹפָרוֹת לְקֵן נְדָבָה כִּדְתַנְיָא לְקַמָּן בִּשְׁמַעְתִּין וְהַכֹּהֲנִים לוֹקְחִין בְּמָעוֹת קִינִּין וּמַקְרִיבִין אוֹתָן:</div>
+          <div class="glose-fr">Un tronc ou deposer son argent, pour celui qui doit un nid d&#x27;obligation — zav, zava, femme apres couches, ou celui qui a rendu impur le Sanctuaire — comme il y avait des troncs pour le nid de don volontaire, ainsi qu&#x27;il est enseigne plus loin dans notre sougya ; et les cohanim achetaient avec cet argent des nids et les offraient.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle unite, greffee sur un detail de la michna : le cohen gadol depose le vase du sang du taureau sur un support d'or, et plus tard celui du bouc sur un second support — mais selon Rabbi Yehouda il n'y avait qu'un seul support.</p><p>La guemara reconnait la une signature de Rabbi Yehouda : la crainte que deux recipients voisins ne soient <b>confondus</b>. Elle va donc examiner une michna de Chekalim ou il tient la meme position a propos des <b>chofarot</b>, les troncs en forme de corne dans lesquels on deposait l'argent des offrandes au Temple.</p><p>Un <b>ken</b> est un couple d'oiseaux. Pour un <b>ken hova</b> (nid d'obligation), l'un est offert en hatat et l'autre en ola ; pour un <b>ken nedava</b> (don volontaire), les deux sont des olot.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg18">
+          <div class="seg-num">19</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאי מִפְּנֵי הַתַּעֲרוֹבוֹת? אָמַר רַב יוֹסֵף: מִפְּנֵי תַּעֲרֹובֶת חוֹבָה בִּנְדָבָה. אָמַר לֵיהּ אַבַּיֵּי: וְנַעֲבֵיד תְּרֵי וְנִכְתּוֹב עֲלַייְהוּ הֵי דְּחוֹבָה וְהֵי דִּנְדָבָה? רַבִּי יְהוּדָה</div>
+            <div class="fr"><p>Que signifie &quot;a cause des melanges&quot; ? Rav Yossef a dit : a cause du melange de l&#x27;obligation avec le don volontaire.</p><p>Abaye lui dit : faisons-en donc deux, et ecrivons dessus lequel est celui de l&#x27;obligation et lequel celui du don volontaire ! — Rabbi Yehouda...</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִפְּנֵי תַּעֲרֹובֶת חוֹבָה בִּנְדָבָה</b> שֶׁמָּא יִתְחַלֵּף שׁוֹפָר בַּשּׁוֹפָר וְיַקְרִיב מִמְּעוֹת שׁוֹפָר הַחוֹבָה נְדָבָה אוֹ מִשֶּׁל נְדָבָה חוֹבָה וְתִיפָּסֵל שֶׁהַחוֹבָה אַחַת לְחַטָּאת וְאַחַת לְעוֹלָה וְהַנְּדָבָה כֻּולָּן עוֹלוֹת וְאֵין מַעֲשֵׂה עוֹלָה וּמַעֲשֵׂה חַטָּאת שָׁוִין:</div>
+          <div class="glose-fr">De peur qu&#x27;un tronc ne soit confondu avec l&#x27;autre, et qu&#x27;il offre avec l&#x27;argent du tronc de l&#x27;obligation un don volontaire, ou avec celui du don volontaire une obligation — et l&#x27;offrande serait invalide : car dans l&#x27;obligation, l&#x27;un est hatat et l&#x27;autre ola, tandis que dans le don volontaire tous sont des olot, et le rite de la ola et celui du hatat ne sont pas identiques.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִפְּנֵי תַּעֲרֹובֶת חוֹבָה בִּנְדָבָה</b> אֲבָל תַּעֲרֹובֶת חוֹבָה בְּחוֹבָה לֵיכָּא לְמֵיחַשׁ שֶׁיִּקַּח מִקְצָת מִמְּעוֹת רָחֵל וּמִקְצָת מִמְּעוֹת לֵאָה וְיַקְרִיב בִּשְׁבִיל לֵאָה דְּאֶפְשָׁר דְּכָל אַחַת צוֹרֶרֶת מְעוֹתֶיהָ לְעַצְמָהּ וְנוֹתֶנֶת בַּשּׁוֹפָר וְכָךְ עוֹשִׂין לְרַבָּנָן דְּרַבִּי יְהוּדָה דִּסְבִירָא לְהוּ שׁוֹפָרוֹת הָיוּ לְקִינֵּי חוֹבָה וּכְשֶׁהַכֹּהֵן לוֹקֵחַ מִכָּל צְרוֹר קֵן אֶחָד מַקְרִיב כָּל קֵן וְקֵן לְשֵׁם מִי שֶׁהוּא:</div>
+          <div class="glose-fr">Mais pour un melange d&#x27;obligation avec obligation, il n&#x27;y a pas lieu de craindre qu&#x27;il prenne une partie de l&#x27;argent de Rahel et une partie de celui de Lea et offre au nom de Lea : car chacune peut nouer son argent a part et le deposer ainsi dans le tronc. C&#x27;est de cette maniere que l&#x27;on procede selon les Sages qui contestent Rabbi Yehouda et tiennent qu&#x27;il y avait bien des troncs pour les nids d&#x27;obligation ; et lorsque le cohen prend un nid de chaque bourse, il offre chaque nid au nom de celui a qui il appartient.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִפְּנֵי תַּעֲרֹובֶת חוֹבָה בִּנְדָבָה</b> אֵין לְהַקְשׁוֹת לוֹמַר אִיפְּכָא לֹא הָיוּ שׁוֹפָרוֹת לִנְדָבָה מִפְּנֵי הַתַּעֲרוֹבוֹת אֲבָל לְחוֹבָה תִּקְּנוּ שׁוֹפָרוֹת די&quot;ל דְּלִנְדָבָה נְפִישִׁי וְעוֹד דְּזִימְנִין שֶׁלֹּא הָיוּ מַקְרִיבִין נְדָבָה יָמִים רַבִּים כְּשֶׁלֹּא הָיָה הַמִּזְבֵּחַ בָּטֵל וּבְתוֹךְ כָּךְ הָיוּ שׁוֹמְרִים מְעוֹת הַנְּדָבָה לְהָכִי צְרִיכִי שׁוֹפָר אֲבָל חוֹבָה יְכוֹלִין לְהַקְרִיב לְאַלְתַּר:</div>
+          <div class="glose-fr">Il n&#x27;y a pas lieu d&#x27;objecter en disant l&#x27;inverse — qu&#x27;il n&#x27;y ait pas eu de troncs pour le don volontaire a cause des melanges, mais que l&#x27;on ait institue des troncs pour l&#x27;obligation. Car on peut repondre : les dons volontaires sont nombreux ; et de plus, il arrivait qu&#x27;on n&#x27;offrit pas de don volontaire pendant de longs jours, lorsque l&#x27;autel n&#x27;etait pas desoeuvre — pendant ce temps on gardait l&#x27;argent des dons volontaires, et c&#x27;est pourquoi il leur fallait un tronc. Mais l&#x27;obligation, on peut l&#x27;offrir immediatement.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Yossef precise le risque : non pas une confusion entre deux personnes, mais entre deux <b>categories</b> d'offrande. Rachi l'explique : si l'on prend l'argent du mauvais tronc, on offrira en holocauste ce qui devait etre hatat ou l'inverse — et l'offrande est <b>passoul</b> (invalide), car les deux rites ne sont pas identiques.</p><p>Les Tossefot completent le tableau sur deux points : le melange <b>obligation contre obligation</b> n'est pas a craindre, chacune pouvant nouer son argent a part dans le tronc — c'est ainsi que procedent les Sages qui contestent Rabbi Yehouda ; et l'on ne peut pas inverser la solution (supprimer le tronc de la nedava plutot que celui de la hova), car les dons volontaires sont nombreux et leur argent doit parfois attendre longtemps avant que l'autel soit libre.</p><p>L'objection d'Abaye est de simple bon sens : il suffirait d'etiqueter les deux troncs. La reponse de Rabbi Yehouda commence ici et se deploie sur 55b.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 330" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="330" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="13.4" font-weight="700" fill="#1c1917">Les chofarot du Temple : pourquoi pas de tronc pour les nids d'obligation ?</text>
+  <text x="360" y="43" text-anchor="middle" font-size="10" fill="#57534e">Meme logique que les deux supports d'or : Rabbi Yehouda craint la confusion entre deux receptacles voisins.</text>
+
+  <rect x="24" y="58" width="320" height="124" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1.4"/>
+  <text x="184" y="80" text-anchor="middle" font-size="11.2" font-weight="700" fill="#166534">Ken NEDAVA (don volontaire)</text>
+  <text x="40" y="102" font-size="10" fill="#15803d">Les deux oiseaux sont des olot (holocaustes).</text>
+  <text x="40" y="120" font-size="10" fill="#15803d">Un tronc existe : on y jette son argent, les cohanim</text>
+  <text x="40" y="137" font-size="10" fill="#15803d">achetent des nids et les offrent.</text>
+  <text x="40" y="160" font-size="9.8" fill="#166534">Tossefot : les dons sont nombreux, et l'argent peut</text>
+  <text x="40" y="175" font-size="9.8" fill="#166534">attendre longtemps -- le tronc est necessaire.</text>
+
+  <rect x="376" y="58" width="320" height="124" rx="6" fill="#fee2e2" stroke="#ef4444" stroke-width="1.4"/>
+  <text x="536" y="80" text-anchor="middle" font-size="11.2" font-weight="700" fill="#991b1b">Ken HOVA (obligation)</text>
+  <text x="392" y="102" font-size="10" fill="#b91c1c">Un oiseau en hatat, l'autre en ola -- rites differents.</text>
+  <text x="392" y="120" font-size="10" fill="#b91c1c">Zav, zava, yoledet, metame mikdach.</text>
+  <text x="392" y="137" font-size="10" fill="#b91c1c">Rabbi Yehouda : pas de tronc.</text>
+  <text x="392" y="160" font-size="9.8" fill="#991b1b">Une obligation peut de toute facon etre offerte</text>
+  <text x="392" y="175" font-size="9.8" fill="#991b1b">immediatement : le tronc n'est pas indispensable.</text>
+
+  <rect x="24" y="198" width="672" height="60" rx="6" fill="#fef3c7" stroke="#eab308" stroke-width="1.4"/>
+  <text x="40" y="220" font-size="11" font-weight="700" fill="#854d0e">Le risque redoute (Rav Yossef, explique par Rachi) : hova melangee a nedava</text>
+  <text x="40" y="240" font-size="10.2" fill="#78716c">Si les troncs sont confondus, on offrira une nedava avec l'argent de l'obligation ou l'inverse -- et l'offrande est passoul,</text>
+  <text x="40" y="254" font-size="10.2" fill="#78716c">car le rite de la ola et celui du hatat ne sont pas identiques.</text>
+
+  <rect x="24" y="272" width="672" height="46" rx="6" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.4"/>
+  <text x="40" y="292" font-size="11" font-weight="700" fill="#1e3a8a">L'objection d'Abaye : et si on ecrivait dessus lequel est lequel ?</text>
+  <text x="40" y="310" font-size="10.2" fill="#1e40af">La reponse commence ici et se poursuit sur 55b -- Rabbi Yehouda ...</text>
+</svg></div><div class="svg-cap">Pourquoi un tronc pour les dons volontaires et aucun pour les obligations : la nature des offrandes et le delai avant sacrifice.</div></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_54b.html">&lsaquo; Yoma 54b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

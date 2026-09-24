@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Megillah 2a — les cinq jours de lecture de la Meguila et leur source</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Megillah 2a — les cinq jours de lecture de la Meguila et leur source</h1>
+    <div class="ref">Megillah 2a</div>
+  </header>
+  <nav class="dafnav"><span class="nav-b off">&lsaquo;</span><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Megillah_2b.html">Megillah 2b &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> Ce premier folio du traite ouvre sur la Michna qui autorise la lecture de la Meguila sur cinq jours, du 11 au 15 Adar, selon le statut du lieu : villes fortifiees depuis Yehochoua bin Noun, grandes bourgades, villages. La Guemara demande d&#x27;ou viennent le 11, le 12 et le 13, que le livre d&#x27;Esther ne mentionne pas.</p><p>Une premiere reponse invoque l&#x27;allegement accorde aux villages, mais la regle interdisant a un tribunal d&#x27;annuler l&#x27;oeuvre d&#x27;un tribunal plus grand oblige a rattacher ces jours aux hommes de la Grande Assemblee, donc a chercher une allusion scripturaire : Rav Chemen bar Abba la tire de bi-zmaneihem, Rabbi Chmouel bar Nahmani de ki-yamim. Le folio se poursuit par deux versions de Rabbi Yohanan sur l&#x27;etendue du desaccord entre Rabbi Akiva et les Sages, arbitrees par une baraita de Rabbi Yehouda.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 560" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="560" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1c1917">Le fil du folio : d'ou viennent le 11, le 12 et le 13 Adar ?</text>
+  <text x="380" y="42" text-anchor="middle" font-size="10.2" fill="#57534e">La Meguila est ecrite pour le 14 et le 15. La Michna en autorise cinq jours. Il faut une source.</text>
+
+  <rect x="24" y="56" width="712" height="86" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.4"/>
+  <text x="38" y="76" font-size="10.6" font-weight="700" fill="#78350f">Mouvement 1 (seg. 0-3) -- Michna : cinq jours possibles</text>
+  <text x="38" y="94" font-size="9" fill="#292524">Villes fortifiees depuis Yehochoua : le 15. Bourgades et villages : le 14.</text>
+  <text x="38" y="111" font-size="9" fill="#292524">Les villages peuvent avancer au yom ha-kenissa (lundi ou jeudi) : d'ou 11, 12 ou 13.</text>
+  <text x="38" y="128" font-size="8.6" fill="#b45309">Le tableau des sept cas (schema suivant) epuise toutes les configurations.</text>
+  <path d="M380 142 L380 156" stroke="#78716c" stroke-width="1.3"/><path d="M375 155 L385 155 L380 161 Z" fill="#78716c"/>
+
+  <rect x="24" y="162" width="712" height="104" rx="7" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.4"/>
+  <text x="38" y="182" font-size="10.6" font-weight="700" fill="#1e3a8a">Mouvement 2 (seg. 4-6) -- pourquoi la question se pose vraiment</text>
+  <text x="38" y="200" font-size="9" fill="#292524">Premiere lecture : les Sages ont simplement allege pour les villages. Pas besoin de verset.</text>
+  <text x="38" y="217" font-size="9" fill="#292524">Objection : un tribunal ne peut annuler l'oeuvre d'un tribunal plus grand (Edouyot 1:5).</text>
+  <text x="38" y="234" font-size="9" fill="#292524">Donc les cinq jours viennent deja des Anche Knesset ha-Guedola. Ou est l'allusion scripturaire ?</text>
+  <text x="38" y="255" font-size="8.6" fill="#1d4ed8">La question devient : heikha remiza -- ou le texte d'Esther laisse-t-il place a ces jours ?</text>
+  <path d="M380 266 L380 280" stroke="#78716c" stroke-width="1.3"/><path d="M375 279 L385 279 L380 285 Z" fill="#78716c"/>
+
+  <rect x="24" y="286" width="712" height="122" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.4"/>
+  <text x="38" y="306" font-size="10.6" font-weight="700" fill="#14532d">Mouvement 3 (seg. 7-16) -- deux derachot concurrentes</text>
+  <text x="38" y="324" font-size="9" fill="#292524">Rav Chemen bar Abba / R. Yohanan : bi-zmaneihem (Esther 9,31) -- pluriel de pluriel = jours en plus.</text>
+  <text x="38" y="341" font-size="9" fill="#292524">Filtrage : pas un nombre illimite (zmaneihem calque sur zmanam = deux), pas 16-17 (ve-lo yaavor).</text>
+  <text x="38" y="358" font-size="9" fill="#292524">R. Chmouel bar Nahmani : ki-yamim (Esther 9,22) ajoute deux jours -- le 11 et le 12.</text>
+  <text x="38" y="375" font-size="9" fill="#292524">Le 13 n'a besoin d'aucune inclusion : zman kehila la-kol, jour du rassemblement.</text>
+  <text x="38" y="396" font-size="8.6" fill="#15803d">Chacun explique pourquoi il refuse la derasha de l'autre (seg. 15-16).</text>
+  <path d="M380 408 L380 422" stroke="#78716c" stroke-width="1.3"/><path d="M375 421 L385 421 L380 427 Z" fill="#78716c"/>
+
+  <rect x="24" y="428" width="712" height="118" rx="7" fill="#faf5ff" stroke="#7e22ce" stroke-width="1.4"/>
+  <text x="38" y="448" font-size="10.6" font-weight="700" fill="#581c87">Mouvement 4 (seg. 17-23) -- la Michna est-elle l'avis de tous ?</text>
+  <text x="38" y="466" font-size="9" fill="#292524">R. Yohanan (1re version) : la Michna suit R. Akiva ; les Sages n'admettent que le jour fixe.</text>
+  <text x="38" y="483" font-size="9" fill="#292524">Baraita de R. Yehouda : l'avance vaut quand les annees sont reglees et Israel sur sa terre.</text>
+  <text x="38" y="500" font-size="9" fill="#292524">Cette baraita refute la premiere version : tiyouvta de-Rabbi Yohanan tiyouvta.</text>
+  <text x="38" y="517" font-size="9" fill="#292524">2e version (ika de-amri) : les Sages limitent l'avance a bi-zman ha-ze -- la baraita la confirme.</text>
+  <text x="38" y="537" font-size="8.6" fill="#7e22ce">Rav Achi ouvre alors une contradiction interne a R. Yehouda -- la suite est en 2b.</text>
+</svg></div>
+          <figcaption>Le mouvement d&#x27;ensemble du folio, de la Michna a la contradiction de Rav Achi.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="400" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Les sept cas de la Michna : qui lit quel jour ?</text>
+  <text x="380" y="42" text-anchor="middle" font-size="10" fill="#57534e">Yom ha-kenissa = le lundi ou le jeudi qui precede le 14 Adar. Les jours 11, 12, 13 en sortent.</text>
+
+  <rect x="30" y="56" width="180" height="30" fill="#e7e5e4" stroke="#78716c" stroke-width="1"/>
+  <rect x="210" y="56" width="176" height="30" fill="#e7e5e4" stroke="#78716c" stroke-width="1"/>
+  <rect x="386" y="56" width="176" height="30" fill="#e7e5e4" stroke="#78716c" stroke-width="1"/>
+  <rect x="562" y="56" width="168" height="30" fill="#e7e5e4" stroke="#78716c" stroke-width="1"/>
+  <text x="120" y="76" text-anchor="middle" font-size="10.2" font-weight="700" fill="#292524">Le 14 Adar tombe</text>
+  <text x="298" y="76" text-anchor="middle" font-size="10.2" font-weight="700" fill="#292524">Villages (kefarim)</text>
+  <text x="474" y="76" text-anchor="middle" font-size="10.2" font-weight="700" fill="#292524">Bourgades (ayarot)</text>
+  <text x="646" y="76" text-anchor="middle" font-size="10.2" font-weight="700" fill="#292524">Villes fortifiees</text>
+
+  <rect x="30" y="86" width="180" height="28" fill="#ffffff" stroke="#a8a29e" stroke-width="0.8"/>
+  <rect x="210" y="86" width="176" height="28" fill="#f0fdf4" stroke="#a8a29e" stroke-width="0.8"/>
+  <rect x="386" y="86" width="176" height="28" fill="#ffffff" stroke="#a8a29e" stroke-width="0.8"/>
+  <rect x="562" y="86" width="168" height="28" fill="#ffffff" stroke="#a8a29e" stroke-width="0.8"/>
+  <text x="42" y="105" font-size="9.4" fill="#292524">lundi</text>
+  <text x="298" y="105" text-anchor="middle" font-size="9.4" fill="#292524">14 (le jour meme)</text>
+  <text x="474" y="105" text-anchor="middle" font-size="9.4" fill="#292524">14</text>
+  <text x="646" y="105" text-anchor="middle" font-size="9.4" fill="#292524">15</text>
+
+  <rect x="30" y="114" width="180" height="28" fill="#ffffff" stroke="#a8a29e" stroke-width="0.8"/>
+  <rect x="210" y="114" width="176" height="28" fill="#f0fdf4" stroke="#a8a29e" stroke-width="0.8"/>
+  <rect x="386" y="114" width="176" height="28" fill="#ffffff" stroke="#a8a29e" stroke-width="0.8"/>
+  <rect x="562" y="114" width="168" height="28" fill="#ffffff" stroke="#a8a29e" stroke-width="0.8"/>
+  <text x="42" y="133" font-size="9.4" fill="#292524">mardi</text>
+  <text x="298" y="133" text-anchor="middle" font-size="9.4" font-weight="700" fill="#15803d">13 (lundi)</text>
+  <text x="474" y="133" text-anchor="middle" font-size="9.4" fill="#292524">14</text>
+  <text x="646" y="133" text-anchor="middle" font-size="9.4" fill="#292524">15</text>
+
+  <rect x="30" y="142" width="180" height="28" fill="#ffffff" stroke="#a8a29e" stroke-width="0.8"/>
+  <rect x="210" y="142" width="176" height="28" fill="#f0fdf4" stroke="#a8a29e" stroke-width="0.8"/>
+  <rect x="386" y="142" width="176" height="28" fill="#ffffff" stroke="#a8a29e" stroke-width="0.8"/>
+  <rect x="562" y="142" width="168" height="28" fill="#ffffff" stroke="#a8a29e" stroke-width="0.8"/>
+  <text x="42" y="161" font-size="9.4" fill="#292524">mercredi</text>
+  <text x="298" y="161" text-anchor="middle" font-size="9.4" font-weight="700" fill="#15803d">12 (lundi)</text>
+  <text x="474" y="161" text-anchor="middle" font-size="9.4" fill="#292524">14</text>
+  <text x="646" y="161" text-anchor="middle" font-size="9.4" fill="#292524">15</text>
+
+  <rect x="30" y="170" width="180" height="28" fill="#ffffff" stroke="#a8a29e" stroke-width="0.8"/>
+  <rect x="210" y="170" width="176" height="28" fill="#f0fdf4" stroke="#a8a29e" stroke-width="0.8"/>
+  <rect x="386" y="170" width="176" height="28" fill="#ffffff" stroke="#a8a29e" stroke-width="0.8"/>
+  <rect x="562" y="170" width="168" height="28" fill="#ffffff" stroke="#a8a29e" stroke-width="0.8"/>
+  <text x="42" y="189" font-size="9.4" fill="#292524">jeudi</text>
+  <text x="298" y="189" text-anchor="middle" font-size="9.4" fill="#292524">14 (le jour meme)</text>
+  <text x="474" y="189" text-anchor="middle" font-size="9.4" fill="#292524">14</text>
+  <text x="646" y="189" text-anchor="middle" font-size="9.4" fill="#292524">15</text>
+
+  <rect x="30" y="198" width="180" height="28" fill="#ffffff" stroke="#a8a29e" stroke-width="0.8"/>
+  <rect x="210" y="198" width="176" height="28" fill="#f0fdf4" stroke="#a8a29e" stroke-width="0.8"/>
+  <rect x="386" y="198" width="176" height="28" fill="#ffffff" stroke="#a8a29e" stroke-width="0.8"/>
+  <rect x="562" y="198" width="168" height="28" fill="#fef2f2" stroke="#a8a29e" stroke-width="0.8"/>
+  <text x="42" y="217" font-size="9.4" fill="#292524">vendredi (erev Chabbat)</text>
+  <text x="298" y="217" text-anchor="middle" font-size="9.4" font-weight="700" fill="#15803d">13 (jeudi)</text>
+  <text x="474" y="217" text-anchor="middle" font-size="9.4" fill="#292524">14</text>
+  <text x="646" y="217" text-anchor="middle" font-size="9.4" font-weight="700" fill="#b91c1c">14 (pas 15)</text>
+
+  <rect x="30" y="226" width="180" height="28" fill="#ffffff" stroke="#a8a29e" stroke-width="0.8"/>
+  <rect x="210" y="226" width="176" height="28" fill="#f0fdf4" stroke="#a8a29e" stroke-width="0.8"/>
+  <rect x="386" y="226" width="176" height="28" fill="#f0fdf4" stroke="#a8a29e" stroke-width="0.8"/>
+  <rect x="562" y="226" width="168" height="28" fill="#ffffff" stroke="#a8a29e" stroke-width="0.8"/>
+  <text x="42" y="245" font-size="9.4" fill="#292524">Chabbat</text>
+  <text x="298" y="245" text-anchor="middle" font-size="9.4" font-weight="700" fill="#15803d">12 (jeudi)</text>
+  <text x="474" y="245" text-anchor="middle" font-size="9.4" font-weight="700" fill="#15803d">12 (jeudi)</text>
+  <text x="646" y="245" text-anchor="middle" font-size="9.4" fill="#292524">15 (dimanche)</text>
+
+  <rect x="30" y="254" width="180" height="28" fill="#ffffff" stroke="#a8a29e" stroke-width="0.8"/>
+  <rect x="210" y="254" width="176" height="28" fill="#fffbeb" stroke="#a8a29e" stroke-width="0.8"/>
+  <rect x="386" y="254" width="176" height="28" fill="#ffffff" stroke="#a8a29e" stroke-width="0.8"/>
+  <rect x="562" y="254" width="168" height="28" fill="#ffffff" stroke="#a8a29e" stroke-width="0.8"/>
+  <text x="42" y="273" font-size="9.4" fill="#292524">dimanche</text>
+  <text x="298" y="273" text-anchor="middle" font-size="9.4" font-weight="700" fill="#b45309">11 (jeudi)</text>
+  <text x="474" y="273" text-anchor="middle" font-size="9.4" fill="#292524">14</text>
+  <text x="646" y="273" text-anchor="middle" font-size="9.4" fill="#292524">15</text>
+
+  <rect x="30" y="300" width="700" height="82" rx="7" fill="#faf5ff" stroke="#7e22ce" stroke-width="1.3"/>
+  <text x="44" y="320" font-size="10" font-weight="700" fill="#581c87">Ce que le tableau montre</text>
+  <text x="44" y="338" font-size="9" fill="#292524">Le 11 apparait dans un seul cas : le 14 tombe dimanche, le jeudi precedent est donc le 11.</text>
+  <text x="44" y="355" font-size="9" fill="#292524">Le 12 apparait quand le 14 tombe mercredi ou Chabbat. Le 13, quand il tombe mardi ou vendredi.</text>
+  <text x="44" y="372" font-size="9" fill="#292524">Aucune lecture le Chabbat : decret contre le transport de la Meguila. Aucune apres le 15 : ve-lo yaavor.</text>
+</svg></div>
+          <figcaption>Les sept configurations de la Michna et l&#x27;origine concrete des jours 11, 12 et 13.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="420" fill="#fffdf8"/>
+  <text x="380" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">R. Akiva et les Sages : deux versions de R. Yohanan</text>
+  <text x="380" y="42" text-anchor="middle" font-size="10" fill="#57534e">Jusqu'ou porte le desaccord sur la lecture avancee ?</text>
+
+  <rect x="24" y="58" width="352" height="164" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.6"/>
+  <text x="200" y="80" text-anchor="middle" font-size="11.6" font-weight="700" fill="#7f1d1d">1re version (seg. 17)</text>
+  <line x1="40" y1="90" x2="360" y2="90" stroke="#b91c1c" stroke-width="0.8"/>
+  <text x="40" y="110" font-size="9.2" fill="#292524">R. Akiva : deroche zman / zmanam / zmaneihem</text>
+  <text x="40" y="127" font-size="9.2" fill="#292524">-> l'avance au yom ha-kenissa est permise.</text>
+  <text x="40" y="150" font-size="9.2" fill="#292524">Sages : on ne lit qu'en son temps (bi-zmana),</text>
+  <text x="40" y="167" font-size="9.2" fill="#292524">en aucune epoque il n'y a d'avance.</text>
+  <text x="40" y="192" font-size="9.4" font-weight="700" fill="#b91c1c">Refute par la baraita de R. Yehouda</text>
+  <text x="40" y="209" font-size="9" fill="#292524">tiyouvta de-Rabbi Yohanan tiyouvta (seg. 20).</text>
+
+  <rect x="386" y="58" width="350" height="164" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.6"/>
+  <text x="561" y="80" text-anchor="middle" font-size="11.6" font-weight="700" fill="#14532d">2e version, ika de-amri (seg. 21)</text>
+  <line x1="402" y1="90" x2="720" y2="90" stroke="#15803d" stroke-width="0.8"/>
+  <text x="402" y="110" font-size="9.2" fill="#292524">R. Akiva : la Michna anonyme est de lui.</text>
+  <text x="402" y="127" font-size="9.2" fill="#292524">Les Sages derochent aussi les trois termes.</text>
+  <text x="402" y="150" font-size="9.2" fill="#292524">Sages : a notre epoque seulement, puisqu'on</text>
+  <text x="402" y="167" font-size="9.2" fill="#292524">se regle sur la lecture, on ne lit qu'au 14 / 15.</text>
+  <text x="402" y="192" font-size="9.4" font-weight="700" fill="#15803d">Confirme par la meme baraita</text>
+  <text x="402" y="209" font-size="9" fill="#292524">tanya nami hakhi (seg. 22).</text>
+
+  <rect x="24" y="238" width="712" height="76" rx="7" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.4"/>
+  <text x="38" y="258" font-size="10.4" font-weight="700" fill="#1e3a8a">La baraita qui arbitre (R. Yehouda, seg. 18)</text>
+  <text x="38" y="277" font-size="9.2" fill="#292524">Quand les annees sont intercalees par le tribunal et Israel reside sur sa terre : on peut avancer.</text>
+  <text x="38" y="295" font-size="9.2" fill="#292524">A notre epoque : on ne lit qu'en son temps, car les gens comptent Pessah depuis la lecture.</text>
+
+  <rect x="24" y="330" width="712" height="72" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.4"/>
+  <text x="380" y="352" text-anchor="middle" font-size="10.6" font-weight="700" fill="#78350f">Nafka mina</text>
+  <text x="380" y="372" text-anchor="middle" font-size="9.2" fill="#292524">1re version : le desaccord porte sur le principe meme de l'avance, en toute epoque.</text>
+  <text x="380" y="390" text-anchor="middle" font-size="9.2" fill="#292524">2e version : le desaccord porte seulement sur la periode d'apres la destruction.</text>
+</svg></div>
+          <figcaption>Les deux versions de R. Yohanan et le role d&#x27;arbitre de la baraita de R. Yehouda.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מְגִילָּה נִקְרֵאת בְּאַחַד עָשָׂר, בִּשְׁנַיִם עָשָׂר, בִּשְׁלֹשָׁה עָשָׂר, בְּאַרְבָּעָה עָשָׂר, בַּחֲמִשָּׁה עָשָׂר. לֹא פָּחוֹת, וְלֹא יוֹתֵר. כְּרַכִּין הַמֻּוקָּפִין חוֹמָה מִימוֹת יְהוֹשֻׁעַ בִּן נוּן — קוֹרִין בַּחֲמִשָּׁה עָשָׂר, כְּפָרִים וַעֲייָרוֹת גְּדוֹלוֹת — קוֹרִין בְּאַרְבָּעָה עָשָׂר, אֶלָּא שֶׁהַכְּפָרִים מַקְדִּימִין לְיוֹם הַכְּנִיסָה.</div>
+            <div class="fr"><p>MICHNA. La Meguila est lue le onze, le douze, le treize, le quatorze, le quinze [d&#x27;Adar] : pas moins, pas plus.</p><p>Les villes fortifiees (kerakim) entourees d&#x27;une muraille depuis les jours de Yehochoua bin Noun lisent le quinze ; les villages (kefarim) et les grandes bourgades (ayarot guedolot) lisent le quatorze, sauf que les villages avancent [leur lecture] au jour de rassemblement (yom ha-kenissa).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַתְנֵי&#x27; מְגִילָּה נִקְרֵאת בי&quot;א וְכוּ&#x27;</b> פְּעָמִים בָּזֶה וּפְעָמִים בָּזֶה וּלְקַמָּן מְפָרֵשׁ וְאָזֵיל:</div>
+          <div class="glose-fr">Parfois en tel jour, parfois en tel autre ; plus loin [la Michna] l&#x27;explique en detail.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא פָּחוֹת וְלֹא יוֹתֵר</b> לֹא פָּחוֹת מי&quot;א וְלֹא יוֹתֵר מט&quot;ו:</div>
+          <div class="glose-fr">Pas moins que le onze, et pas plus que le quinze.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מֵימוֹת יְהוֹשֻׁעַ</b> בַּגְּמ&#x27; מְפָרֵשׁ לָהּ:</div>
+          <div class="glose-fr">La Guemara l&#x27;explique.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא שֶׁהַכְּפָרִים מַקְדִּימִין לְיוֹם הַכְּנִיסָה</b> כְּלוֹמַר מֵאַחַר שֶׁהַמֻּוקָּפִין קוֹרִין בט&quot;ו וְשֶׁאֵין מֻוקָּפִין קוֹרִין בי&quot;ד הֲרֵי הַכֹּל בִּכְלָל תּוּ הֵיכִי מַשְׁכַּחַת י&quot;א י&quot;ב י&quot;ג אֶלָּא שֶׁהַכְּפָרִים נָתְנוּ לָהֶן חֲכָמִים רְשׁוּת לְהַקְדִּים קְרִיאָתָהּ לְיוֹם הַכְּנִיסָה יוֹם שֵׁנִי בְּשַׁבָּת שֶׁלִּפְנֵי י&quot;ד אוֹ חֲמִישִׁי בְּשַׁבָּת שֶׁהוּא יוֹם כְּנִיסָה שֶׁהַכְּפָרִים מִתְכַּנְּסִין לַעֲיָירוֹת לַמִּשְׁפָּט לְפִי שֶׁבָּתֵּי דִּינִין יוֹשְׁבִין בַּעֲייָרוֹת בְּשֵׁנִי וּבַחֲמִישִׁי כְּתַקָּנַת עֶזְרָא (בּ&quot;ק דַּף פב.) וְהַכְּפָרִים אֵינָן בְּקִיאִין לִקְרוֹת וּצְרִיכִין שֶׁיִּקְרָאֶנָּה לָהֶם אֶחָד מִבְּנֵי הָעִיר וְלֹא הִטְרִיחוּם חֲכָמִים לְהִתְאַחֵר וְלָבֹא בְּיוֹם י&quot;ד וּפְעָמִים שֶׁיּוֹם הַכְּנִיסָה בי&quot;ג וּפְעָמִים שֶׁהוּא בי&quot;א:</div>
+          <div class="glose-fr">C&#x27;est-a-dire : puisque les [villes] entourees d&#x27;une muraille lisent le quinze et celles qui ne le sont pas lisent le quatorze, tout le monde est deja compris [dans ces deux jours] ; des lors, comment trouver encore le onze, le douze, le treize ? Mais les Sages ont donne aux villages la permission d&#x27;avancer leur lecture au jour de rassemblement, le lundi qui precede le quatorze, ou le jeudi, qui est jour de rassemblement, car les villageois se rassemblent dans les bourgades pour le jugement, puisque les tribunaux siegent dans les bourgades le lundi et le jeudi, selon l&#x27;institution d&#x27;Ezra (Baba Kama 82a). Et les villageois ne savent pas lire [la Meguila] et il faut que l&#x27;un des gens de la ville la leur lise ; les Sages ne leur ont pas impose la peine de s&#x27;attarder et de venir le quatorze. Et parfois le jour de rassemblement tombe le treize, parfois il tombe le onze.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Michna pose d'emblee une fourchette de cinq jours et deux regimes de base : le <b>quinze</b> pour les <b>kerakim</b> fortifies depuis Yehochoua bin Noun, le <b>quatorze</b> pour tous les autres lieux. Les trois jours anticipes ne sortent de nulle part : ils naissent de la faculte accordee aux <b>kefarim</b> d'avancer leur lecture au <b>yom ha-kenissa</b>, le lundi ou le jeudi ou le tribunal siege dans la bourgade et ou les villageois y montent.</p><p>Le critere de fortification remonte volontairement a l'epoque de Yehochoua, non a celle d'Assuerus ; la Guemara plus loin en donnera la raison. La formule <b>pas moins, pas plus</b> ferme la liste : aucune lecture avant le onze, aucune apres le quinze.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="300" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Trois categories de lieux, deux jours de base</text>
+
+  <rect x="24" y="46" width="204" height="150" rx="7" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="126" y="68" text-anchor="middle" font-size="11" font-weight="700" fill="#1e3a8a">Kerakim</text>
+  <text x="126" y="84" text-anchor="middle" font-size="8.8" fill="#57534e">villes fortifiees</text>
+  <line x1="40" y1="94" x2="212" y2="94" stroke="#1d4ed8" stroke-width="0.8"/>
+  <text x="38" y="114" font-size="9" fill="#292524">Entourees d'une muraille</text>
+  <text x="38" y="130" font-size="9" fill="#292524">depuis les jours de</text>
+  <text x="38" y="146" font-size="9" fill="#292524">Yehochoua bin Noun</text>
+  <text x="126" y="176" text-anchor="middle" font-size="13" font-weight="700" fill="#1d4ed8">15 Adar</text>
+
+  <rect x="248" y="46" width="204" height="150" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.5"/>
+  <text x="350" y="68" text-anchor="middle" font-size="11" font-weight="700" fill="#14532d">Ayarot guedolot</text>
+  <text x="350" y="84" text-anchor="middle" font-size="8.8" fill="#57534e">grandes bourgades</text>
+  <line x1="264" y1="94" x2="436" y2="94" stroke="#15803d" stroke-width="0.8"/>
+  <text x="262" y="114" font-size="9" fill="#292524">Non fortifiees, mais dotees</text>
+  <text x="262" y="130" font-size="9" fill="#292524">d'un tribunal siegeant</text>
+  <text x="262" y="146" font-size="9" fill="#292524">le lundi et le jeudi</text>
+  <text x="350" y="176" text-anchor="middle" font-size="13" font-weight="700" fill="#15803d">14 Adar</text>
+
+  <rect x="472" y="46" width="204" height="150" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.5"/>
+  <text x="574" y="68" text-anchor="middle" font-size="11" font-weight="700" fill="#78350f">Kefarim</text>
+  <text x="574" y="84" text-anchor="middle" font-size="8.8" fill="#57534e">villages</text>
+  <line x1="488" y1="94" x2="660" y2="94" stroke="#b45309" stroke-width="0.8"/>
+  <text x="486" y="114" font-size="9" fill="#292524">Sans lecteur exerce : ils</text>
+  <text x="486" y="130" font-size="9" fill="#292524">montent a la bourgade le</text>
+  <text x="486" y="146" font-size="9" fill="#292524">jour de rassemblement</text>
+  <text x="574" y="172" text-anchor="middle" font-size="12.4" font-weight="700" fill="#b45309">14 Adar</text>
+  <text x="574" y="189" text-anchor="middle" font-size="9.4" fill="#b45309">ou 11 / 12 / 13</text>
+
+  <rect x="24" y="212" width="652" height="70" rx="7" fill="#faf5ff" stroke="#7e22ce" stroke-width="1.3"/>
+  <text x="350" y="234" text-anchor="middle" font-size="10" font-weight="700" fill="#581c87">La borne de la Michna</text>
+  <text x="350" y="253" text-anchor="middle" font-size="9" fill="#292524">Pas avant le 11, pas apres le 15 : cinq jours, et aucun autre.</text>
+  <text x="350" y="271" text-anchor="middle" font-size="9" fill="#292524">Les trois jours anticipes ne concernent que les villages.</text>
+</svg></div><div class="svg-cap">Les trois categories de lieux et les jours qui leur reviennent.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כֵּיצַד: חָל לִהְיוֹת אַרְבָּעָה עָשָׂר בַּשֵּׁנִי — כְּפָרִים וַעֲיָירוֹת גְּדוֹלוֹת קוֹרִין בּוֹ בַיּוֹם, וּמֻוקָּפוֹת חוֹמָה לְמָחָר. חָל לִהְיוֹת בַּשְּׁלִישִׁי אוֹ בָּרְבִיעִי — כְּפָרִים מַקְדִּימִין לְיוֹם הַכְּנִיסָה, וַעֲיָירוֹת גְּדוֹלוֹת קוֹרִין בּוֹ בַיּוֹם, וּמֻוקָּפוֹת חוֹמָה לְמָחָר.</div>
+            <div class="fr"><p>Comment cela ? Si le quatorze tombe un lundi, les villages et les grandes bourgades lisent ce jour meme, et les [villes] entourees d&#x27;une muraille le lendemain.</p><p>S&#x27;il tombe un mardi ou un mercredi, les villages avancent au jour de rassemblement, les grandes bourgades lisent ce jour meme, et les [villes] entourees d&#x27;une muraille le lendemain.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Michna passe en revue les configurations du calendrier. Quand le quatorze est lui-meme un lundi, il coincide avec un <b>yom ha-kenissa</b> et les villages n'ont rien a avancer. Quand il tombe un mardi, le lundi precedent est le treize ; quand il tombe un mercredi, le lundi precedent est le douze. Ces deux cas produisent les jours <b>13</b> et <b>12</b> de la liste.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">חָל לִהְיוֹת בַּחֲמִישִׁי — כְּפָרִים וַעֲייָרוֹת גְּדוֹלוֹת קוֹרִין בּוֹ בַיּוֹם, וּמֻוקָּפוֹת חוֹמָה לְמָחָר. חָל לִהְיוֹת עֶרֶב שַׁבָּת — כְּפָרִים מַקְדִּימִין לְיוֹם הַכְּנִיסָה, וַעֲיָירוֹת גְּדוֹלוֹת וּמֻוקָּפוֹת חוֹמָה קוֹרִין בּוֹ בַיּוֹם.</div>
+            <div class="fr"><p>S&#x27;il tombe un jeudi, les villages et les grandes bourgades lisent ce jour meme, et les [villes] entourees d&#x27;une muraille le lendemain. S&#x27;il tombe la veille de Chabbat, les villages avancent au jour de rassemblement, et les grandes bourgades comme les [villes] entourees d&#x27;une muraille lisent ce jour meme.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>חָל אַרְבָּעָה עָשָׂר לִהְיוֹת בְּעֶרֶב שַׁבָּת עֲיָירוֹת וּמֻוקָּפִין חוֹמָה קוֹרִין בּוֹ בַיּוֹם</b> שֶׁאֵין קְרִיאַת הַמְּגִילָּה בַּשַּׁבָּת גְּזֵירָה שֶׁמָּא יִטְּלֶנָּה בְּיָדוֹ וא&quot;ת יְאַחֲרוּ הַמֻּוקָּפִין עַד אַחַר שַׁבָּת הֲוָה לֵיהּ ט&quot;ז וְאָמַר קְרָא וְלֹא יַעֲבֹור:</div>
+          <div class="glose-fr">Car il n&#x27;y a pas de lecture de la Meguila le Chabbat, par decret [des Sages], de peur qu&#x27;on ne la porte a la main [dans le domaine public]. Et si tu dis : que les [villes] entourees d&#x27;une muraille retardent jusqu&#x27;apres le Chabbat — ce serait le seize, or le verset dit « et cela ne passera pas ».</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le quatorze tombant un jeudi est lui-meme jour de rassemblement : aucune avance. Le cas de la <b>veille de Chabbat</b> est le seul ou les villes fortifiees perdent leur jour propre : leur quinze serait un Chabbat, ou la lecture est interdite par decret, et le report au dimanche donnerait le seize, ferme par <b>ve-lo yaavor</b>. Elles lisent donc le quatorze avec les bourgades.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">חָל לִהְיוֹת בְּשַׁבָּת — כְּפָרִים וַעֲייָרוֹת גְּדוֹלוֹת מַקְדִּימִין וְקוֹרִין לְיוֹם הַכְּנִיסָה, וּמֻוקָּפוֹת חוֹמָה לְמָחָר. חָל לִהְיוֹת אַחַר הַשַּׁבָּת — כְּפָרִים מַקְדִּימִין לְיוֹם הַכְּנִיסָה, וַעֲיָירוֹת גְּדוֹלוֹת קוֹרִין בּוֹ בַיּוֹם, וּמֻוקָּפוֹת חוֹמָה לְמָחָר.</div>
+            <div class="fr"><p>S&#x27;il tombe un Chabbat, les villages et les grandes bourgades avancent et lisent au jour de rassemblement, et les [villes] entourees d&#x27;une muraille le lendemain. S&#x27;il tombe le lendemain de Chabbat, les villages avancent au jour de rassemblement, les grandes bourgades lisent ce jour meme, et les [villes] entourees d&#x27;une muraille le lendemain.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>חָל לִהְיוֹת אַחַר שַׁבָּת כְּפָרִים מַקְדִּימִין לְיוֹם הַכְּנִיסָה</b> דַּהֲוָה לֵיהּ י&quot;א וּטְפֵי לָא מַשְׁכַּחַת לָהּ יוֹם הַכְּנִיסָה שֶׁלִּפְנֵי פּוּרִים מֻוקְדָּם לוֹ דְּמִיּוֹם הַכְּנִיסָה לְיוֹם הַכְּנִיסָה לָא מַקְדְּמִינַן:</div>
+          <div class="glose-fr">Ce qui fait le onze. Et l&#x27;on ne trouve pas plus tot que cela : le jour de rassemblement qui precede Pourim est le plus avance possible, car d&#x27;un jour de rassemblement a un [autre] jour de rassemblement, on n&#x27;avance pas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le quatorze tombant un Chabbat, villages et bourgades reculent ensemble au jeudi, soit le <b>douze</b> ; les villes fortifiees lisent le dimanche quinze, qui reste leur jour normal. Le quatorze tombant un dimanche, le jeudi precedent est le <b>onze</b> : c'est l'unique configuration qui produit le premier jour de la liste, et donc la borne inferieure de la Michna.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">גְּמָ׳ מְגִילָּה נִקְרֵאת בְּאַחַד עָשָׂר. מִנָּלַן? מִנָּלַן?! כִּדְבָעֵינַן לְמֵימַר לְקַמָּן: חֲכָמִים הֵקֵילּוּ עַל הַכְּפָרִים לִהְיוֹת מַקְדִּימִין לְיוֹם הַכְּנִיסָה, כְּדֵי שֶׁיְּסַפְּקוּ מַיִם וּמָזוֹן לַאֲחֵיהֶם שֶׁבַּכְּרַכִּים.</div>
+            <div class="fr"><p>GUEMARA. « La Meguila est lue le onze. » D&#x27;ou le tenons-nous (menalan) ? — D&#x27;ou le tenons-nous ?!</p><p>Comme nous allons le dire plus loin : les Sages ont allege pour les villages, [leur permettant] d&#x27;avancer au jour de rassemblement, afin qu&#x27;ils fournissent eau et nourriture a leurs freres des villes.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>גְּמ&#x27; ה&quot;ג מְנָלַן מְנָלַן כִּדְבָעֵינַן לְמֵימַר לְקַמַּן וְכוּ&#x27;</b> וְהָכִי פֵּירוּשָׁא מִנָּלַן די&quot;א וי&quot;ב וי&quot;ג חֲזוּ לְקַרְייֵהּ די&quot;ד וט&quot;ו הוּא דִּכְתִיב בִּקְרָא וְקָא מַהְדַּר גְּמָרָא מִנָּלַן בִּתְמִיהַּ הַאי לָאו חוֹבָה הִיא אֶלָּא חֲכָמִים הֵקֵילּוּ עֲלֵיהֶן כִּדְבָעֵינַן לְמֵימַר לְקַמָּן:</div>
+          <div class="glose-fr">Voici l&#x27;explication : d&#x27;ou tenons-nous que le onze, le douze et le treize sont propres a la lecture, alors que ce sont le quatorze et le quinze qui sont ecrits dans le verset ? Et la Guemara repond « d&#x27;ou le tenons-nous ? » avec etonnement : ceci n&#x27;est pas une obligation, mais les Sages ont allege pour eux, comme nous allons le dire plus loin.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּדֵי שֶׁיְּסַפְּקוּ</b> שֶׁיְּהוּ פִּנּוּייָן בְּיוֹם פּוּרִים לְהַסְפִּיק צָורְכֵי סְעוּדַת פּוּרִים לִבְנֵי הָעֲיָירוֹת:</div>
+          <div class="glose-fr">Qu&#x27;ils soient libres le jour de Pourim pour fournir les besoins du repas de Pourim aux gens des bourgades.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">א מְגִילָּה נִקְרֵאת בְּאַחַד עָשָׂר בִּשְׁנֵים עָשָׂר בִּשְׁלֹשָׁה עָשָׂר בְּאַרְבָּעָה עָשָׂר וּבַחֲמִשָּׁה עָשָׂר לֹא פָּחוֹת וְלֹא יוֹתֵר. כְּרַכִּין הַמֻּוקָּפִין חוֹמָה מִימוֹת יְהוֹשֻׁעַ בִּן נוּן קוֹרִין בַּחֲמִשָּׁה עָשָׂר וַעֲייָרוֹת גְּדוֹלוֹת קוֹרִין בְּאַרְבָּעָה עָשָׂר. אֶלָּא שֶׁהַכְּפָרִים מַקְדִּימִין לְיוֹם הַכְּנִיסָה. כֵּיצַד חָל לִהְיוֹת בַּשֵּׁנִי כְּפָרִים וַעֲיָירוֹת גְּדוֹלוֹת קוֹרִין בּוֹ בַיּוֹם וּמֻוקָּפִין חוֹמָה לְמָחָר חָל לִהְיוֹת בַּשְּׁלִישִׁי אוֹ בָּרְבִיעִי כְּפָרִים מַקְדִּימִין לְיוֹם הַכְּנִיסָה וַעֲיָירוֹת גְּדוֹלוֹת קוֹרִין בּוֹ בַיּוֹם וּמֻוקָּפִין חוֹמָה לְמָחָר חָל לִהְיוֹת בַּחֲמִישִׁי כְּפָרִים וַעֲיָירוֹת גְּדוֹלוֹת קוֹרִין בּוֹ בַיּוֹם וּמֻוקָּפִין חוֹמָה לְמָחָר חָל לִהְיוֹת בְּעֶרֶב שַׁבָּת כְּפָרִים מַקְדִּימִין לְיוֹם הַכְּנִיסָה וַעֲיָירוֹת גְּדוֹלוֹת וּמֻוקָּפִין חוֹמָה קוֹרִין בּוֹ בַיּוֹם חָל לִהְיוֹת בַּשַּׁבָּת כְּפָרִים וַעֲיָירוֹת גְּדוֹלוֹת מַקְדִּימִין לְיוֹם הַכְּנִיסָה וּמֻוקָּפִין חוֹמָה לְמָחָר חָל לִהְיוֹת אַחַר הַשַּׁבָּת כְּפָרִים מַקְדִּימִין לְיוֹם הַכְּנִיסָה וַעֲיָירוֹת גְּדוֹלוֹת קוֹרִין בּוֹ בַיּוֹם וּמֻוקָּפִין חוֹמָה לְמָחָר:</div>
+          <div class="glose-fr">1. La Meguila est lue le onze, le douze, le treize, le quatorze et le quinze : pas moins, pas plus. Les villes fortifiees entourees d&#x27;une muraille depuis les jours de Yehochoua bin Noun lisent le quinze, et les grandes bourgades lisent le quatorze, sauf que les villages avancent au jour de rassemblement. Comment cela ? S&#x27;il tombe un lundi, les villages et les grandes bourgades lisent ce jour meme et les [villes] entourees d&#x27;une muraille le lendemain. S&#x27;il tombe un mardi ou un mercredi, les villages avancent au jour de rassemblement, les grandes bourgades lisent ce jour meme et les [villes] entourees d&#x27;une muraille le lendemain. S&#x27;il tombe un jeudi, les villages et les grandes bourgades lisent ce jour meme et les [villes] entourees d&#x27;une muraille le lendemain. S&#x27;il tombe la veille de Chabbat, les villages avancent au jour de rassemblement, et les grandes bourgades comme les [villes] entourees d&#x27;une muraille lisent ce jour meme. S&#x27;il tombe un Chabbat, les villages et les grandes bourgades avancent au jour de rassemblement, et les [villes] entourees d&#x27;une muraille [lisent] le lendemain. S&#x27;il tombe le lendemain de Chabbat, les villages avancent au jour de rassemblement, les grandes bourgades lisent ce jour meme et les [villes] entourees d&#x27;une muraille le lendemain.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara pose la question <b>menalan</b>, puis se l'oppose a elle-meme. Le onze ne procede d'aucune obligation scripturaire : c'est un <b>allegement</b> (kula) accorde aux villages, dont le motif est explicite plus loin dans le traite — ils doivent rester disponibles le jour de Pourim pour ravitailler les habitants des bourgades. Chercher un verset pour une simple facilite rabbinique parait donc hors de propos.</p><p>L'etonnement est un procede : il oblige a reformuler la question dans les termes exacts qui la rendent valide, ce que fait le segment suivant.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="260" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Le motif de l'allegement : le ravitaillement du jour de Pourim</text>
+
+  <rect x="24" y="44" width="196" height="106" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.5"/>
+  <text x="122" y="66" text-anchor="middle" font-size="10.6" font-weight="700" fill="#78350f">Le village</text>
+  <text x="38" y="88" font-size="9" fill="#292524">Lecture avancee au jour</text>
+  <text x="38" y="104" font-size="9" fill="#292524">de rassemblement</text>
+  <text x="38" y="126" font-size="9" fill="#292524">(11, 12 ou 13 Adar)</text>
+
+  <path d="M226 96 L268 96" stroke="#78716c" stroke-width="1.4"/><path d="M266 91 L266 101 L274 96 Z" fill="#78716c"/>
+
+  <rect x="278" y="44" width="196" height="106" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.5"/>
+  <text x="376" y="66" text-anchor="middle" font-size="10.6" font-weight="700" fill="#14532d">Le 14 Adar</text>
+  <text x="292" y="88" font-size="9" fill="#292524">Les villageois sont libres</text>
+  <text x="292" y="104" font-size="9" fill="#292524">de leur obligation et</text>
+  <text x="292" y="126" font-size="9" fill="#292524">disponibles ce jour-la</text>
+
+  <path d="M480 96 L522 96" stroke="#78716c" stroke-width="1.4"/><path d="M520 91 L520 101 L528 96 Z" fill="#78716c"/>
+
+  <rect x="532" y="44" width="144" height="106" rx="7" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="604" y="66" text-anchor="middle" font-size="10.6" font-weight="700" fill="#1e3a8a">La bourgade</text>
+  <text x="544" y="88" font-size="9" fill="#292524">Eau et nourriture</text>
+  <text x="544" y="104" font-size="9" fill="#292524">pour le repas de</text>
+  <text x="544" y="126" font-size="9" fill="#292524">Pourim des freres</text>
+
+  <rect x="24" y="166" width="652" height="76" rx="7" fill="#faf5ff" stroke="#7e22ce" stroke-width="1.3"/>
+  <text x="350" y="188" text-anchor="middle" font-size="10" font-weight="700" fill="#581c87">Pourquoi la Guemara s'etonne de la question</text>
+  <text x="350" y="207" text-anchor="middle" font-size="9" fill="#292524">Le 11 ne cree aucune obligation nouvelle : c'est une facilite accordee aux villages.</text>
+  <text x="350" y="225" text-anchor="middle" font-size="9" fill="#292524">Demander menalan, comme pour une loi de la Torah, parait donc deplace.</text>
+</svg></div><div class="svg-cap">Le motif de l&#x27;allegement accorde aux villages.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲנַן הָכִי קָאָמְרִינַן: מִכְּדִי כֻּולְּהוּ אַנְשֵׁי כְּנֶסֶת הַגְּדוֹלָה תַּקְּנִינְהוּ, דְּאִי סָלְקָא דַּעְתָּךְ אַנְשֵׁי כְּנֶסֶת הַגְּדוֹלָה אַרְבָּעָה עָשָׂר וַחֲמִשָּׁה עָשָׂר תַּקּוּן — אָתוּ רַבָּנַן וְעָקְרִי תַּקַּנְתָּא דְּתַקִּינוּ אַנְשֵׁי כְּנֶסֶת הַגְּדוֹלָה? וְהִתְנָן: אֵין בֵּית דִּין יָכוֹל לְבַטֵּל דִּבְרֵי בֵּית דִּין חֲבֵירוֹ אֶלָּא אִם כֵּן גָּדוֹל מִמֶּנּוּ בְּחָכְמָה וּבְמִנְיָן.</div>
+            <div class="fr"><p>Voici ce que nous voulions dire : puisque ce sont tous les hommes de la Grande Assemblee qui les ont institues — car s&#x27;il te venait a l&#x27;esprit que les hommes de la Grande Assemblee n&#x27;ont institue que le quatorze et le quinze, comment les Sages seraient-ils venus deraciner une institution qu&#x27;avaient etablie les hommes de la Grande Assemblee ? N&#x27;avons-nous pas appris [dans une Michna] : un tribunal ne peut annuler les paroles d&#x27;un autre tribunal, a moins d&#x27;etre plus grand que lui en sagesse et en nombre ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲנַן הָכִי קָאָמְרִינַן</b> אֲנַן דְּמִיבַּעְיָא לָן מִנָּלַן הָכִי קָאָמְרִינַן:</div>
+          <div class="glose-fr">Nous, qui demandions « d&#x27;ou le tenons-nous ? », voici ce que nous voulions dire.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִכְּדִי</b> מִדְּהֵקֵילּוּ חֲכָמִים עַל הַכְּפָרִים לְהַקְדִּים עַל כָּרְחָךְ אַנְשֵׁי כְּנֶסֶת הַגְּדוֹלָה שֶׁתִּיקְּנוּ בִּימֵי מָרְדְּכַי וְאֶסְתֵּר אֶת שִׂמְחַת הַפּוּרִים וּקְרִיאַת הַמְּגִילָּה כּוּלְּהוּ הָנֵי זִימְנֵי תִּיקּוּן וְנָתְנוּ רְשׁוּת לִקְרוֹת:</div>
+          <div class="glose-fr">Puisque les Sages ont allege pour les villages en [leur permettant] d&#x27;avancer, force est de dire que les hommes de la Grande Assemblee, qui ont institue aux jours de Mordekhai et d&#x27;Esther la joie de Pourim et la lecture de la Meguila, ont institue tous ces temps et ont donne la permission de lire [en chacun d&#x27;eux].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּאִי סָלְקָא דַעְתָּךְ</b> י&quot;ד וט&quot;ו תִּקּוּן הַכְּתוּבִין בִּמְגִילָּה וְתוּ לָא:</div>
+          <div class="glose-fr">[Que seuls] le quatorze et le quinze, ecrits dans la Meguila, ont ete institues, et rien de plus.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הֵיכִי אָתוּ רַבָּנָן</b> דְּבָתְרַייְהוּ וְעָקְרוּ תַּקַּנְתָּא וְהִתִּירוּ לְהַקְדִּים בִּתְמִיהַּ:</div>
+          <div class="glose-fr">Ceux qui vinrent apres eux, [comment auraient-ils pu] deraciner leur institution et permettre d&#x27;avancer ? — [dit] avec etonnement.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La question est reformulee. Si les hommes de la <b>Knesset ha-Guedola</b> n'avaient fixe que deux jours, l'autorisation d'avancer serait une abrogation de leur decret par un tribunal posterieur — ce que la Michna d'<b>Edouyot 1:5</b> interdit, sauf superiorite en sagesse et en nombre, condition qu'aucune generation ulterieure n'a remplie face a la Grande Assemblee.</p><p>Il faut donc admettre que les cinq jours figuraient deja dans l'institution d'origine. La question <b>menalan</b> reprend alors tout son sens, sous une forme precise : ou le texte d'Esther, redige par cette meme assemblee, laisse-t-il place a ces jours ?</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="320" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Pourquoi la question tient malgre tout</text>
+
+  <rect x="150" y="42" width="400" height="46" rx="7" fill="#e7e5e4" stroke="#57534e" stroke-width="1.3"/>
+  <text x="350" y="62" text-anchor="middle" font-size="10.2" font-weight="700" fill="#292524">Hypothese : les Anche Knesset ha-Guedola</text>
+  <text x="350" y="79" text-anchor="middle" font-size="9.4" fill="#292524">n'ont institue que le 14 et le 15</text>
+
+  <path d="M350 88 L350 104" stroke="#78716c" stroke-width="1.3"/><path d="M345 103 L355 103 L350 109 Z" fill="#78716c"/>
+
+  <rect x="110" y="112" width="480" height="46" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.4"/>
+  <text x="350" y="132" text-anchor="middle" font-size="10" font-weight="700" fill="#7f1d1d">Consequence : les Sages posterieurs auraient deracine leur institution</text>
+  <text x="350" y="149" text-anchor="middle" font-size="9.2" fill="#292524">en autorisant une lecture avancee</text>
+
+  <path d="M350 158 L350 174" stroke="#78716c" stroke-width="1.3"/><path d="M345 173 L355 173 L350 179 Z" fill="#78716c"/>
+
+  <rect x="90" y="182" width="520" height="62" rx="7" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.4"/>
+  <text x="350" y="203" text-anchor="middle" font-size="10.2" font-weight="700" fill="#1e3a8a">Regle d'Edouyot 1:5</text>
+  <text x="350" y="222" text-anchor="middle" font-size="9.2" fill="#292524">Un tribunal ne peut annuler les paroles d'un autre tribunal,</text>
+  <text x="350" y="238" text-anchor="middle" font-size="9.2" fill="#292524">a moins d'etre plus grand que lui en sagesse et en nombre.</text>
+
+  <path d="M350 244 L350 260" stroke="#78716c" stroke-width="1.3"/><path d="M345 259 L355 259 L350 265 Z" fill="#78716c"/>
+
+  <rect x="130" y="268" width="440" height="44" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.5"/>
+  <text x="350" y="288" text-anchor="middle" font-size="10.2" font-weight="700" fill="#14532d">Conclusion : les cinq jours viennent de la Grande Assemblee</text>
+  <text x="350" y="305" text-anchor="middle" font-size="9.2" fill="#292524">La question devient donc : ou le texte d'Esther y fait-il allusion ?</text>
+</svg></div><div class="svg-cap">L&#x27;argument d&#x27;Edouyot 1:5 qui reouvre la question.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא פְּשִׁיטָא כֻּולְּהוּ אַנְשֵׁי כְּנֶסֶת הַגְּדוֹלָה תַּקִּינוּ. הֵיכָא רְמִיזָא?</div>
+            <div class="fr"><p>Il est donc evident que ce sont tous [ces jours] que les hommes de la Grande Assemblee ont institues. Ou cela est-il fait allusion (heikha remiza) ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא פְּשִׁיטָא אִינְהוּ תַּקּוּן</b> וְכֵיוָן דְּאִינְהוּ תַּקּוּן וַדַּאי רַמְזִינְהוּ בִּמְגִילַּת אֶסְתֵּר הַיְינוּ דְּמִיבַּעְיָא לָן הֵיכָא רְמִיזָא וּמִנָּלַן:</div>
+          <div class="glose-fr">Et puisque ce sont eux qui l&#x27;ont institue, ils l&#x27;ont certainement fait allusion dans la Meguilat Esther ; c&#x27;est cela que nous demandions : ou en est l&#x27;allusion, et d&#x27;ou le tenons-nous ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La conclusion est acquise et la question prend sa forme definitive : <b>heikha remiza</b>, ou est l'allusion. Puisque la Grande Assemblee a elle-meme redige la Meguila d'Esther, son institution doit trouver un appui dans ce texte. Les segments suivants proposent deux versets concurrents.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב שֶׁמֶן בַּר אַבָּא אָמַר רַבִּי יוֹחָנָן, אֲמַר קְרָא: ״לְקַייֵּם אֵת יְמֵי הַפֻּורִים הָאֵלֶּה בִּזְמַנֵּיהֶם״, זְמַנִּים הַרְבֵּה תִּקְּנוּ לָהֶם.</div>
+            <div class="fr"><p>Rav Chemen bar Abba a dit au nom de Rabbi Yohanan : le verset dit « pour confirmer ces jours de Pourim en leurs temps (bi-zmaneihem) » — ils leur ont institue plusieurs temps.</p></div>
+            <div class="tools"><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">גְּמ&#x27; הֵיכָא רְמִיזָא אָמַר רַב שֶׁמֶן בַּר אַבָּא אָמַר רַבִּי יוֹחָנָן אָמַר קְרָא לְקַיֵּים אֵת יְמֵי הַפֻּורִים הָאֵלֶּה בִּזְמַנֵּיהֶם זְמַנִּים הַרְבֵּה תִּקְּנוּ לָהֶם חֲכָמִים וְאֵימָא זְמַנִּים טוּבָא זְמַנֵּיהֶם דֻּומְיָא דִּזְמַנָּם מַה זְמַנָּם תְּרֵי אַף זְמַנֵּיהֶם תְּרֵי וְאֵימָא תְּרֵיסַר וּתְלֵיסַר אָמַר רַב שְׁמוּאֵל בַּר יִצְחָק שְׁלֹשָׁה עָשָׂר זְמַן קְהִלָּה לַכֹּל הִיא פרש&quot;י שֶׁנִּקְהֲלוּ לַעֲמֹוד עַל נַפְשָׁם וּלְכָךְ לֹא צָרִיךְ קְרָא וְלֹא נְהִירָא דִּנְהִי דְּנִקְהֲלוּ בּוֹ בַּיּוֹם כֵּיוָן שֶׁקָּבְעוּ הַקְּרִיאָה בי&quot;ד וּבַחֲמִשָּׁה עָשָׂר מְנָא לַן שֶׁיְּכוֹלִין לִקְרוֹת בּוֹ וְעוֹד דְּלָא זְמַן הַמִּלְחָמָה גּוֹרֶמֶת הַקְּרִיאָה אֶלָּא זְמַן הַמְּנוּחָה כְּדִכְתִיב כַּיָּמִים אֲשֶׁר נָחוּ בָהֶם הַיְּהוּדִים וְגוֹ&#x27;. וְנִרְאֶה לר&quot;י דְּסֻוגְיַת גְּמָרָא דִּידַן כְּעֵין הַיְרוּשַׁלְמִי (הֵל&#x27; א) דְּפָרִיךְ הָתָם עַל שִׁנּוּיָא דִּכְיָמִים אֲשֶׁר נָחוּ וְאֵימָא י&quot;ב י&quot;ג כְּנֶגֶד י&quot;ד וט&quot;ו וּמְשַׁנֵּי רַבִּי חֶלְבּוֹ י&quot;ג זְמַן מִלְחָמָה הִיא וְהוּא מוֹכִיחַ עַל עַצְמוֹ שֶׁאֵין נַיְיחָא. פֵּירוּשׁ לֵיכָּא לְרַבּוֹיֵי דְּלָא הָווּ כַּיָּמִים אֲשֶׁר נָחוּ בָהֶם. אֶלָּא מֵעַתָּה לֹא יִקְרְאוּ בּוֹ. לְפָנָיו וּלְאַחֲרָיו קוֹרִין בּוֹ אֵין קוֹרִין וְהָכִי נָמֵי אִיכָּא לְפָרוּשֵׁי סֻוגְיָא דִּידַן זְמַן קְהִלָּה פִּי&#x27; זְמַן מִלְחָמָה וְלֵיכָּא לְרַבּוֹיֵי מִכִּימִים אֲשֶׁר נָחוּ בָּהֶם וְלֹא מִזְּמַנֵּיהֶם דְּמַשְׁמַע זְמַנִּים אֲחֵרִים דֻּומְיָא דְּאֵלּוּ זְמַנִּים דַּהֲוָה בְּהוּ נַייְחָא וְלֹא צָרִיךְ קְרָא לְרַבּוּיֵי דְּמִכָּל מָקוֹם קוֹרֵא (וְלֹא צָרִיךְ קְרָא) דמק&quot;ו אָתֵי כִּדְאִיתָא בִּירוּשַׁלְמִי. וְלָא נְהִירָא לְרַבֵּינוּ תָּם דַּהֲוָה לֵיהּ לְמֵימַר זְמַן מִלְחָמָה הוּא וְעוֹד קַשְׁיָא לֵיהּ הַאי דְּקָאָמַר וְלֹא צָרִיךְ קְרָא לְרַבּוּיֵי דְּאֵין דֶּרֶךְ הַשַּׁ&quot;ס (לִסְתּוֹר) דְּבָרָיו כֵּיוָן שֶׁלֹּא הֻוזְכַּר הַקַּל וָחֹומֶר בַּגְּמָרָא דִּידַן וּפֵירֵשׁ רַבֵּינוּ תָּם זְמַן קְהִלָּה לַכֹּל הִיא שֶׁהַכֹּל מִתְאַסְּפִין לְתַעֲנִית אֶסְתֵּר וּבָאִים בְּנֵי הַכְּפָרִים לַעֲיָירוֹת לוֹמַר סְלִיחוֹת וְתַחֲנוּנִים לְפִי שֶׁבּוֹ נִקְהֲלוּ לַעֲמֹוד עַל נַפְשָׁם וְהָיוּ צְרִיכִים רַחֲמִים. וְכֵן מָצִינוּ בְּמֹשֶׁה שֶׁעָשָׂה תַּעֲנִית כְּשֶׁנִּלְחַם בַּעֲמָלֵק דִּכְתִיב וּמֹשֶׁה אַהֲרֹן וְחוּר עָלוּ רֹאשׁ הַגִּבְעָה וְדָרְשִׁינַן בְּמַסֶּכֶת תַּעֲנִית מִכָּאן לְתַעֲנִית צִבּוּר שֶׁצָּרִיךְ שְׁלֹשָׁה מִכָּאן נִרְאֶה לְרַבֵּינוּ תָּם סַעַד לְתַעֲנִית אֶסְתֵּר שֶׁאָנוּ עוֹשִׂין כְּמוֹ שֶׁעָשׂוּ בִּימֵי מָרְדְּכַי וְאֶסְתֵּר כְּשֶׁנִּקְהֲלוּ הַיְּהוּדִים לַעֲמֹוד עַל נַפְשָׁם וְלֹא מָצִינוּ לוֹ סֶמֶךְ בְּשׁוּם מָקוֹם אֶלָּא בְּכָאן וּמַה שֶׁאָנוּ מַקְדִּימִין הַתַּעֲנִית לְיוֹם חֲמִישִׁי הֵיכָא שֶׁחָל פּוּרִים לִהְיוֹת בְּמוֹצָאֵי שַׁבָּת וְלָא עָבְדִינַן לֵיהּ בְּעֶרֶב שַׁבָּת נִמְצָא בִּתְשׁוּבַת הַגְּאוֹנִים לְפִי שֶׁרְגִילִין בְּתַעֲנִית לְהַרְבּוֹת בִּסְלִיחוֹת וּבְתַחֲנוּנִים וְלֹא יִתָּכֵן לַעֲשׂוֹת כֵּן בְּעֶרֶב שַׁבָּת לְפִי שֶׁלֹּא יוּכְלוּ לִטְרֹוחַ לִכְבוֹד הַשַּׁבָּת וּבְמַסֶּכֶת סוֹפְרִים (פי&quot;ז הֵל&#x27; ד) אִיתָא שֶׁרַבּוֹתֵינוּ שֶׁבַּמַּעֲרָב מִתְעַנִּין בַּאֲדָר שְׁלֹשָׁה תַּעֲנִיּוֹת שֶׁל אֶסְתֵּר אע&quot;פ שֶׁאוֹתָן הָיוּ בְּנִיסָן לֹא הָיוּ רוֹצִים לְהִתְעַנּוֹת בְּנִיסָן שֶׁנִּגְאֲלוּ בּוֹ אֲבוֹתֵינוּ וְהוּקַם הַמִּשְׁכָּן: וְאֵימָא שִׁיתְסַר וְשִׁיבְסַר אָמַר קְרָא וְלֹא יַעֲבוֹר. אָמַר רַבָּה בַּר בַּר חָנָה אָמַר רַבִּי יוֹחָנָן זוֹ דִּבְרֵי רַבִּי עֲקִיבָא סְתִימְתָּאָה אֲבָל חֲכָמִים אוֹמְרִים בִּזְמַן הַזֶּה הוֹאִיל וּמִסְתַּכְּלִין בָּהּ אֵין קוֹרִין אוֹתָהּ אֶלָּא בִּזְמַנָּהּ כְּלוֹמַר הוֹאִיל וְעֵינֵיהֶם שֶׁל עֲנִיִּים נְשׂוּאוֹת לְמִקְרָא מְגִילָּה כְּדֵי לְחַלֵּק לָהֶם מְעוֹת פּוּרִים בְּיוֹם קְרִיאָתָהּ לְפִיכָךְ אֵין קוֹרִין אֶלָּא בִּזְמַנָּהּ שֶׁאִם יִקְרְאוּ אוֹתָהּ קֹודֶם זְמַנָּהּ יַחְלְקוּ לָהֶם מָעוֹת פּוּרִים בְּיוֹם קְרִיאָתָהּ כִּדְאָמְרִינַן לְקַמָּן (מְגִילָּה דַּף ד:) גּוֹבִין בּוֹ בַּיּוֹם וּמְחַלְּקִין בּוֹ בַיּוֹם וּמוֹצִיאִין הַמָּעוֹת קֹודֶם י&quot;ד וְלֹא יִהְיֶה לָהֶם בַּמֶּה לִשְׂמֹוחַ בְּפוּרִים וְאָמְרִינַן לְקַמָּן (מְגִילָּה דַּף ה&#x27;) אֲבָל שִׂמְחָה אֵינָהּ נוֹהֶגֶת אֶלָּא בִּזְמַנָּהּ () וְהָא דְּאָמְרִינַן בַּזְּמַן הַזֶּה לְפִי שֶׁמְּצֻוייָּן רֹוב עֲנִיִּים וְיֵשׁ שֶׁגּוֹרְסֵי&#x27; הוֹאִיל וּמִסְתַּכְּנִין בָּהּ כְּלוֹמַר בְּאוֹתוֹ הַזְּמַן שֶׁהָיוּ יִשְׂרָאֵל יְכוֹלִין לְהַעֲמִיד בְּדָתוֹתֵיהֶם וְאֵין בָּאִין לִידֵי סַכָּנָה הָיוּ קוֹרִין י&quot;א י&quot;ב י&quot;ג אֲבָל בַּזְּמַן הַזֶּה אֵין קוֹרִין אוֹתָהּ אֶלָּא בִּזְמַנָּהּ שֶׁהוּא י&quot;ד וט&quot;ו וְכֵן הִלְכְתָא: כְּרַכִּין הַמֻּוקָּפִין חוֹמָה מִימוֹת יְהוֹשֻׁעַ בִּן נוּן קוֹרִין אוֹתָהּ בַּחֲמִשָּׁה עָשָׂר. מְנָא לַן אָמַר רָבָא דְּאָמַר קְרָא עַל כֵּן הַיְּהוּדִים הַפְּרָזִים וְגוֹ&#x27; מִדִּפְרָזִים בְּאַרְבָּעָה עָשָׂר מֻוקָּפִין חוֹמָה בַּחֲמִשָּׁה עָשָׂר וְשׁוּשַׁן אע&quot;פ שֶׁאֵינָהּ מֻוקֶּפֶת חוֹמָה מִימוֹת יְהוֹשֻׁעַ בִּן נוּן קוֹרִין בט&quot;ו מ&quot;ט הוֹאִיל וְנַעֲשָׂה בּוֹ נֵס וְהַיְּהוּדִים אֲשֶׁר בְּשׁוּשָׁן נִקְהֲלוּ בִּשְׁלֹשָׁה עָשָׂר בּוֹ בְּאַרְבָּעָה עָשָׂר בּוֹ וְנוֹחַ בַּחֲמִשָּׁה עָשָׂר בּוֹ וְגוֹ&#x27; אַרִיבָּ&quot;ל כְּרַךְ וְכָל הַסָּמוּךְ לוֹ אע&quot;פ שֶׁאֵינָהּ נִרְאֶה עִמּוֹ כְּגוֹן שֶׁיּוֹשֶׁבֶת הָעִיר בַּנַּחַל אוֹ כָּל הַנִּרְאֶה עִמּוֹ אע&quot;פ שֶׁלֹּא סָמַךְ לוֹ כְּגוֹן שֶׁיּוֹשֶׁבֶת בְּרֹאשׁ הָהָר נִידּוֹן כִּכְרַךְ וְקוֹרִין בט&quot;ו וְעַד כַּמָּה (לְעֵיל מְגִילָּה דַּף ב ע&quot;ב) א&quot;ר יִרְמְיָה מִיל:</div>
+          <div class="glose-fr">Guemara. « Ou cela est-il fait allusion ? » Rav Chemen bar Abba a dit au nom de Rabbi Yohanan : le verset dit « pour confirmer ces jours de Pourim en leurs temps » — les Sages leur ont institue plusieurs temps. Et dis : des temps nombreux ! — « leurs temps » est semblable a « leur temps » : de meme que « leur temps » vaut deux, de meme « leurs temps » vaut deux. Et dis : le douze et le treize ! — Rav Chmouel bar Yits&#x27;hak a dit : le treize est un temps de rassemblement (kehila) pour tous. Rachi a explique : parce qu&#x27;ils se rassemblerent pour defendre leur vie, et c&#x27;est pourquoi un verset n&#x27;est pas necessaire. Cela ne parait pas juste : meme s&#x27;ils se sont rassembles ce jour-la, puisque la lecture a ete fixee au quatorze et au quinze, d&#x27;ou tenons-nous qu&#x27;on puisse lire ce jour-la ? De plus, ce qui entraine la lecture est le temps du repos, comme il est ecrit « comme les jours ou les Juifs se reposerent de leurs ennemis... ». Il parait a Ri que la sougya de notre Guemara est du meme type que celle du Talmud de Jerusalem (halakha 1), ou l&#x27;on objecte sur la reponse tiree de « comme les jours ou ils se reposerent » : et dis le douze et le treize, en face du quatorze et du quinze ! Et Rabbi Helbo repond : le treize est un temps de guerre, et il temoigne de lui-meme qu&#x27;il n&#x27;y a pas de repos [en lui]. C&#x27;est-a-dire : on ne peut pas l&#x27;inclure, puisque ces jours ne furent pas « comme les jours ou ils se reposerent ». [On objecte alors :] s&#x27;il en est ainsi, qu&#x27;on n&#x27;y lise donc pas ! [Reponse :] avant lui et apres lui on lit, et en lui on ne lirait pas ? Ainsi peut-on aussi expliquer notre sougya : « temps de rassemblement » signifie temps de guerre, et on ne peut l&#x27;inclure ni de « comme les jours ou ils se reposerent », ni de « leurs temps », qui indique d&#x27;autres temps semblables a ceux-la, ou il y eut repos. Et un verset n&#x27;est pas necessaire pour l&#x27;inclure, puisqu&#x27;on y lit de toute maniere, cela decoulant d&#x27;un kal va-homer, comme il figure dans le Talmud de Jerusalem. Cela ne paraissait pas juste a Rabbenou Tam : [la Guemara] aurait du dire « c&#x27;est un temps de guerre ». De plus, il trouvait difficile la formule « et un verset n&#x27;est pas necessaire pour l&#x27;inclure », car il n&#x27;est pas dans la maniere du Talmud de contredire ses propres paroles, puisque le kal va-homer n&#x27;est pas mentionne dans notre Guemara. Rabbenou Tam a explique : « c&#x27;est un temps de rassemblement pour tous » — tous se rassemblent pour le jeune d&#x27;Esther, et les gens des villages viennent dans les bourgades dire des selihot et des supplications, parce qu&#x27;en ce jour ils se rassemblerent pour defendre leur vie et avaient besoin de misericorde. Nous trouvons de meme chez Moche, qui jeuna lorsqu&#x27;il combattit Amalek, comme il est ecrit « et Moche, Aharon et Hour monterent au sommet de la colline », et l&#x27;on deroche dans le traite Taanit : de la [on apprend] qu&#x27;un jeune public requiert trois [personnes]. De la Rabbenou Tam tire un appui au jeune d&#x27;Esther que nous observons, a l&#x27;exemple de ce qui fut fait aux jours de Mordekhai et d&#x27;Esther, lorsque les Juifs se rassemblerent pour defendre leur vie ; et nous ne lui avons trouve d&#x27;appui en aucun autre endroit qu&#x27;ici. Quant a ce que nous avancons le jeune au jeudi lorsque Pourim tombe a l&#x27;issue du Chabbat, sans le faire la veille de Chabbat : cela se trouve dans une reponse des Gueonim — parce qu&#x27;on a coutume, lors du jeune, de multiplier les selihot et les supplications, et il ne convient pas de le faire la veille de Chabbat, car on ne pourrait plus se donner de peine pour l&#x27;honneur du Chabbat. Et dans le traite Sofrim (chap. 17, halakha 4) il est dit que nos maitres d&#x27;Occident jeunent en Adar les trois jeunes d&#x27;Esther ; bien que ceux-la eussent lieu en Nissan, ils ne voulaient pas jeuner en Nissan, mois ou nos peres furent delivres et ou le Michkan fut erige. « Et dis le seize et le dix-sept ! — Le verset dit : et cela ne passera pas. » Rabba bar bar Hana a dit au nom de Rabbi Yohanan : ceci est la parole de Rabbi Akiva, [auteur] des enseignements anonymes ; mais les Sages disent : a notre epoque, puisqu&#x27;on se regle sur elle, on ne la lit qu&#x27;en son temps. C&#x27;est-a-dire : puisque les yeux des pauvres sont tournes vers la lecture de la Meguila, afin qu&#x27;on leur distribue l&#x27;argent de Pourim le jour de sa lecture, on ne la lit qu&#x27;en son temps ; car si on la lisait avant son temps, on leur distribuerait l&#x27;argent de Pourim le jour de la lecture, comme nous le disons plus loin (Meguila 4b) : on collecte le jour meme et l&#x27;on distribue le jour meme — et l&#x27;argent serait depense avant le quatorze, de sorte qu&#x27;ils n&#x27;auraient pas de quoi se rejouir a Pourim ; et nous disons plus loin (Meguila 5a) que la joie ne s&#x27;observe qu&#x27;en son temps. Et ce que nous disons « a notre epoque », c&#x27;est parce que les pauvres sont nombreux. Certains lisent : « puisqu&#x27;on y court un danger (mistakenin) », c&#x27;est-a-dire : a l&#x27;epoque ou Israel pouvait maintenir ses lois sans en venir au danger, on lisait le onze, le douze et le treize ; mais a notre epoque on ne la lit qu&#x27;en son temps, qui est le quatorze et le quinze. Et telle est la halakha. « Les villes fortifiees entourees d&#x27;une muraille depuis les jours de Yehochoua bin Noun la lisent le quinze. » D&#x27;ou le tenons-nous ? Rava a dit : le verset dit « c&#x27;est pourquoi les Juifs des campagnes (perazim)... » ; puisque les gens des campagnes [lisent] le quatorze, les [villes] entourees d&#x27;une muraille [lisent] le quinze. Et Chouchan, bien qu&#x27;elle ne soit pas entouree d&#x27;une muraille depuis les jours de Yehochoua bin Noun, lit le quinze. Quelle en est la raison ? Puisqu&#x27;un miracle y a ete accompli : « et les Juifs qui etaient a Chouchan se rassemblerent le treize et le quatorze, et se reposerent le quinze... ». Rabbi Yehochoua ben Levi a dit : une ville fortifiee et tout ce qui lui est contigu, meme si cela n&#x27;est pas visible avec elle — par exemple si la ville est situee dans une vallee — ou tout ce qui est visible avec elle, meme si cela ne lui est pas contigu — par exemple si elle est situee au sommet d&#x27;une montagne — est juge comme la ville fortifiee, et l&#x27;on y lit le quinze. Et jusqu&#x27;a quelle distance ? Rabbi Yirmiya a dit : un mil.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Premiere derasha, tiree d'<b>Esther 9,31</b>. Le mot <b>zmaneihem</b> porte une double marque de pluriel : le youd du pluriel du nom et le suffixe possessif pluriel. Cette surcharge est lue comme l'indice de <b>plusieurs temps</b> de lecture, au-dela des deux jours explicites au verset 21.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הַאי מִיבַּעְיָא לֵיהּ לְגוּפֵיהּ! אִם כֵּן לֵימָא קְרָא ״זְמַן״, מַאי ״זְמַנֵּיהֶם״ — זְמַנִּים טוּבָא.</div>
+            <div class="fr"><p>Mais ce [verset] est necessaire pour lui-meme ! — Si tel [etait tout son propos], que le verset dise « temps » (zman) ; que signifie « leurs temps » (zmaneihem) ? — des temps nombreux.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְגוּפֵיהּ</b> לי&quot;ד וט&quot;ו הַמְפֹורָשִׁין בַּסֵּפֶר:</div>
+          <div class="glose-fr">Pour le quatorze et le quinze, explicites dans le livre.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֵימָא קְרָא</b> אֵת יְמֵי הַפֻּורִים הָאֵלֶּה בִּזְמַן דְּמַשְׁמַע בַּזְּמַן הַמְפֹורָשׁ לָהֶם:</div>
+          <div class="glose-fr">« Ces jours de Pourim » en son temps (bi-zman) — ce qui indiquerait le temps qui leur est explicite.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection : le verset a deja une fonction propre, fixer que Pourim s'observe au jour voulu ; on ne peut pas en tirer davantage. Reponse : cette fonction se serait exprimee par la forme la plus simple, <b>zman</b>. Le passage a une forme chargee appelle un enseignement supplementaire.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאַכַּתִּי מִיבְּעֵי לֵיהּ: זְמַנּוֹ שֶׁל זֶה לֹא כִּזְמַנּוֹ שֶׁל זֶה! אִם כֵּן, לֵימָא קְרָא ״זְמַנָּם״, מַאי ״זְמַנֵּיהֶם״ — שָׁמְעַת מִינָּהּ כּוּלְּהוּ.</div>
+            <div class="fr"><p>Et il est encore necessaire [pour enseigner] que le temps de celui-ci n&#x27;est pas le meme que le temps de celui-la ! — Si tel [etait tout son propos], que le verset dise « leur temps » (zmanam) ; que signifie « leurs temps » (zmaneihem) ? Tu en deduis l&#x27;ensemble.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאַכַּתִּי מִיבְּעֵי לֵיהּ</b> הַאי דִּנְקַט זְמַנִּים לְשׁוֹן רַבִּים:</div>
+          <div class="glose-fr">Ce fait d&#x27;avoir employe « temps » au pluriel.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>זְמַנּוֹ</b> שֶׁל מֻוקָּפִין לָאו כִּזְמַנּוֹ שֶׁל פְּרָזִים דְּאִי כָּתוּב בַּזְּמַן הֲוָה מַשְׁמַע זְמַן אֶחָד לִשְׁנֵיהֶן אִי בָּעוּ לִיקְּרוּ בְּאַרְבֵּיסַר וְאִי בָּעוּ לִיקְּרוּ בַּחֲמֵיסַר:</div>
+          <div class="glose-fr">[Le temps] des [villes] entourees d&#x27;une muraille n&#x27;est pas le meme que celui des [villes] ouvertes (perazim) ; car s&#x27;il etait ecrit « bi-zman », cela indiquerait un temps unique pour les deux : s&#x27;ils veulent, qu&#x27;ils lisent le quatorze ; s&#x27;ils veulent, le quinze.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deuxieme objection : le pluriel sert deja a enseigner que les villes fortifiees et les villes ouvertes ont chacune leur date propre. Reponse : ce contenu-la tiendrait dans <b>zmanam</b>. La forme <b>zmaneihem</b>, qui ajoute encore un degre, enseigne donc les deux choses a la fois : la difference des dates selon les lieux, et l'existence de jours supplementaires.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="300" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">L'echelle des trois formes : zman, zmanam, zmaneihem</text>
+  <text x="350" y="42" text-anchor="middle" font-size="9.6" fill="#57534e">Chaque degre d'ecriture porte un enseignement de plus.</text>
+
+  <rect x="24" y="56" width="204" height="128" rx="7" fill="#f5f5f4" stroke="#78716c" stroke-width="1.4"/>
+  <text x="126" y="78" text-anchor="middle" font-size="11.6" font-weight="700" fill="#292524">zman</text>
+  <text x="126" y="94" text-anchor="middle" font-size="8.6" fill="#57534e">forme la plus simple</text>
+  <line x1="40" y1="104" x2="212" y2="104" stroke="#78716c" stroke-width="0.8"/>
+  <text x="38" y="124" font-size="9" fill="#292524">Enseignerait seulement</text>
+  <text x="38" y="140" font-size="9" fill="#292524">qu'il faut observer</text>
+  <text x="38" y="156" font-size="9" fill="#292524">Pourim au jour fixe</text>
+  <text x="126" y="176" text-anchor="middle" font-size="8.8" fill="#78716c">un temps unique</text>
+
+  <path d="M232 120 L262 120" stroke="#78716c" stroke-width="1.4"/><path d="M260 115 L260 125 L268 120 Z" fill="#78716c"/>
+
+  <rect x="272" y="56" width="204" height="128" rx="7" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.4"/>
+  <text x="374" y="78" text-anchor="middle" font-size="11.6" font-weight="700" fill="#1e3a8a">zmanam</text>
+  <text x="374" y="94" text-anchor="middle" font-size="8.6" fill="#57534e">leur temps</text>
+  <line x1="288" y1="104" x2="460" y2="104" stroke="#1d4ed8" stroke-width="0.8"/>
+  <text x="286" y="124" font-size="9" fill="#292524">Ajoute : le temps des</text>
+  <text x="286" y="140" font-size="9" fill="#292524">uns differe du temps</text>
+  <text x="286" y="156" font-size="9" fill="#292524">des autres</text>
+  <text x="374" y="176" text-anchor="middle" font-size="8.8" fill="#1d4ed8">deux jours : 14 et 15</text>
+
+  <path d="M480 120 L510 120" stroke="#78716c" stroke-width="1.4"/><path d="M508 115 L508 125 L516 120 Z" fill="#78716c"/>
+
+  <rect x="520" y="56" width="156" height="128" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.4"/>
+  <text x="598" y="78" text-anchor="middle" font-size="11.6" font-weight="700" fill="#14532d">zmaneihem</text>
+  <text x="598" y="94" text-anchor="middle" font-size="8.6" fill="#57534e">leurs temps</text>
+  <line x1="536" y1="104" x2="660" y2="104" stroke="#15803d" stroke-width="0.8"/>
+  <text x="534" y="124" font-size="9" fill="#292524">Ajoute encore deux</text>
+  <text x="534" y="140" font-size="9" fill="#292524">jours de lecture</text>
+  <text x="598" y="164" text-anchor="middle" font-size="9.4" font-weight="700" fill="#15803d">11 et 12</text>
+
+  <rect x="24" y="202" width="652" height="80" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.3"/>
+  <text x="350" y="224" text-anchor="middle" font-size="10" font-weight="700" fill="#78350f">Le garde-fou du seg. 10</text>
+  <text x="350" y="243" text-anchor="middle" font-size="9" fill="#292524">Le pluriel de pluriel pourrait ouvrir un nombre illimite de jours.</text>
+  <text x="350" y="261" text-anchor="middle" font-size="9" fill="#292524">On le calque sur zmanam : puisque zmanam vaut deux, zmaneihem n'ajoute que deux.</text>
+</svg></div><div class="svg-cap">La gradation zman / zmanam / zmaneihem et sa limite.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֵימָא זְמַנִּים טוּבָא! ״זְמַנֵּיהֶם״ דֻּומְיָא דִּ״זְמַנָּם״: מַה ״זְמַנָּם״ תְּרֵי — אַף ״זְמַנֵּיהֶם״ תְּרֵי.</div>
+            <div class="fr"><p>Dis [alors] : des temps nombreux [sans limite] ! — « Leurs temps » (zmaneihem) est semblable a « leur temps » (zmanam) : de meme que « leur temps » [vaut] deux, de meme « leurs temps » [ajoute] deux.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>זְמַנֵּיהֶם דֻּומְיָא דִּזְמַנָּם</b> רִבּוּיָא דְּדָרְשִׁינַן לִקְרָא לְייִתּוּרָא דְּיוּ&quot;ד וְהֵ&quot;א דֻּומְיָא דְּעִיקַּר הַזְּמַן דְּנָפְקָא לָן מִזְּמַנָּם הוּא דְּקָא מְרַבֶּה דֻּומְיָא דִּידְהוּ:</div>
+          <div class="glose-fr">L&#x27;inclusion que nous derochons du verset, [tiree] du surplus du youd et du he, est semblable au temps principal que nous tirons de « zmanam » : c&#x27;est a sa ressemblance qu&#x27;il ajoute.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Une derasha fondee sur un surplus de forme risque de tout ouvrir. La Guemara pose une mesure : l'ajout se calque sur ce qu'il prolonge. Puisque le degre precedent, <b>zmanam</b>, portait <b>deux</b> jours, le degre suivant en ajoute <b>deux</b>, et pas davantage.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאֵימָא תְּרֵיסַר וּתְלֵיסַר? כִּדְאָמַר רַב שְׁמוּאֵל בַּר יִצְחָק: שְׁלֹשָׁה עָשָׂר זְמַן קְהִילָּה לַכֹּל הִיא, וְלֹא צָרִיךְ לְרַבּוֹיֵי, הָכָא נָמֵי: שְׁלֹשָׁה עָשָׂר זְמַן קְהִילָּה לַכֹּל הִיא, וְלֹא צָרִיךְ לְרַבּוֹיֵי.</div>
+            <div class="fr"><p>Et dis [que ce sont] le douze et le treize ! — Comme l&#x27;a dit Rav Chmouel bar Yits&#x27;hak : le treize est un temps de rassemblement (zman kehila) pour tous, et il n&#x27;a pas besoin d&#x27;etre inclus [par un verset] ; ici aussi : le treize est un temps de rassemblement pour tous, et il n&#x27;a pas besoin d&#x27;etre inclus.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>זְמַן קְהִלָּה לַכֹּל הִיא</b> הַכֹּל נִקְהֲלוּ לְהִנָּקֵם מֵאוֹיְבֵיהֶם בֵּין בְּשׁוּשָׁן בֵּין בִּשְׁאָר מְקוֹמוֹת כְּמוֹ שֶׁכָּתוּב בְּסֵפֶר הִלְכָּךְ לֹא צָרִיךְ קְרָא לְרַבּוּיֵי שֶׁיְּהֵא רָאוּי לְקַרְיֵיהּ דְּעִיקַּר הַנֵּס בּוֹ הָיָה:</div>
+          <div class="glose-fr">Tous se rassemblerent pour se venger de leurs ennemis, tant a Chouchan que dans les autres lieux, comme il est ecrit dans le livre ; c&#x27;est pourquoi un verset n&#x27;est pas necessaire pour l&#x27;inclure comme jour propre a la lecture, car le miracle principal eut lieu ce jour-la.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deux jours sont ajoutes : lesquels ? La reponse ecarte le <b>treize</b> de la liste des jours a inclure, car il possede deja son propre titre : <b>zman kehila la-kol</b>, le jour ou tous se rassemblerent contre leurs ennemis, jour du miracle principal selon Rachi. Le verset ajoute donc les deux jours qui restent en amont : le <b>onze</b> et le <b>douze</b>.</p><p>Le Rosh discute longuement cette lecture et rapporte l'explication de <b>Rabbenou Tam</b>, pour qui le rassemblement du treize designe celui du jeune d'Esther.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="280" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Pourquoi 11 et 12, plutot que 12-13 ou 16-17</text>
+
+  <rect x="24" y="44" width="210" height="130" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.5"/>
+  <text x="129" y="66" text-anchor="middle" font-size="10.8" font-weight="700" fill="#7f1d1d">Hypothese 12 et 13</text>
+  <line x1="40" y1="76" x2="218" y2="76" stroke="#b91c1c" stroke-width="0.8"/>
+  <text x="38" y="96" font-size="9" fill="#292524">Rav Chmouel bar Yits'hak :</text>
+  <text x="38" y="112" font-size="9" fill="#292524">le 13 est zman kehila la-kol,</text>
+  <text x="38" y="128" font-size="9" fill="#292524">jour ou tous se rassemblent.</text>
+  <text x="38" y="150" font-size="9" fill="#292524">Il n'a besoin d'aucune</text>
+  <text x="38" y="166" font-size="9" fill="#292524">inclusion par un verset.</text>
+
+  <rect x="244" y="44" width="210" height="130" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.6"/>
+  <text x="349" y="66" text-anchor="middle" font-size="10.8" font-weight="700" fill="#14532d">Retenu : 11 et 12</text>
+  <line x1="260" y1="76" x2="438" y2="76" stroke="#15803d" stroke-width="0.8"/>
+  <text x="258" y="96" font-size="9" fill="#292524">Le 13 etant deja acquis,</text>
+  <text x="258" y="112" font-size="9" fill="#292524">les deux jours ajoutes par</text>
+  <text x="258" y="128" font-size="9" fill="#292524">le verset sont ceux qui</text>
+  <text x="258" y="144" font-size="9" fill="#292524">precedent.</text>
+  <text x="349" y="166" text-anchor="middle" font-size="10" font-weight="700" fill="#15803d">11 - 12 - 13 - 14 - 15</text>
+
+  <rect x="464" y="44" width="212" height="130" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.5"/>
+  <text x="570" y="66" text-anchor="middle" font-size="10.8" font-weight="700" fill="#7f1d1d">Hypothese 16 et 17</text>
+  <line x1="480" y1="76" x2="660" y2="76" stroke="#b91c1c" stroke-width="0.8"/>
+  <text x="478" y="96" font-size="9" fill="#292524">Esther 9,27 : ve-lo yaavor,</text>
+  <text x="478" y="112" font-size="9" fill="#292524">et cela ne passera pas.</text>
+  <text x="478" y="134" font-size="9" fill="#292524">Aucun report au-dela</text>
+  <text x="478" y="150" font-size="9" fill="#292524">du 15 Adar.</text>
+
+  <rect x="24" y="192" width="652" height="72" rx="7" fill="#faf5ff" stroke="#7e22ce" stroke-width="1.3"/>
+  <text x="350" y="214" text-anchor="middle" font-size="10" font-weight="700" fill="#581c87">Le sens de la borne</text>
+  <text x="350" y="233" text-anchor="middle" font-size="9" fill="#292524">Le verset ouvre vers l'avant et ferme vers l'arriere : on peut anticiper, jamais retarder.</text>
+  <text x="350" y="251" text-anchor="middle" font-size="9" fill="#292524">Rachi applique deja ce principe au 14 tombant vendredi (seg. 2).</text>
+</svg></div><div class="svg-cap">Les deux hypotheses ecartees et les jours retenus.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאֵימָא שִׁיתְסַר וְשִׁיבְסַר! ״וְלֹא יַעֲבֹור״ כְּתִיב.</div>
+            <div class="fr"><p>Et dis [que ce sont] le seize et le dix-sept ! — Il est ecrit « et cela ne passera pas » (ve-lo yaavor).</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La derniere hypothese possible est fermee par <b>Esther 9,27</b> : les jours de Pourim ne se reportent pas au-dela de leur terme. La fourchette est donc bornee vers l'aval au quinze, et l'ajout ne peut porter que sur les jours anterieurs.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַבִּי שְׁמוּאֵל בַּר נַחְמָנִי אָמַר, אֲמַר קְרָא: ״כַּיָּמִים אֲשֶׁר נָחוּ בָהֶם הַיְּהוּדִים״. ״יָמִים״, ״כַּיָּמִים״ — לְרַבּוֹת אַחַד עָשָׂר וּשְׁנֵים עָשָׂר.</div>
+            <div class="fr"><p>Et Rabbi Chmouel bar Nahmani a dit : le verset dit « comme les jours ou les Juifs se reposerent [de leurs ennemis] » — « les jours », « comme les jours » : pour inclure le onze et le douze.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>יָמִים כַּיָּמִים</b> לְעֵיל מִינֵּיהּ כְּתִיב י&quot;ד וט&quot;ו יִשְׂמְחוּ וּכְתִיב כַּיָּמִים אֲשֶׁר נָחוּ בָהֶם הַיְּהוּדִים וְגוֹ&#x27; וַהֲוָה לֵיהּ לְמִיכְתַּב יָמִים אֲשֶׁר נָחוּ דְּמַשְׁמַע הֵם הֵם יָמִים אֲשֶׁר נָחוּ מַאי כַּיָּמִים לְרַבּוֹת שָׁנִים אֲחֵרוֹת כְּדֻוגְמָתָן:</div>
+          <div class="glose-fr">Avant cela sont ecrits le quatorze et le quinze, ou ils se rejouissent ; et il est ecrit « comme les jours ou les Juifs se reposerent... ». Or il aurait fallu ecrire « les jours ou ils se reposerent », ce qui signifierait : ce sont precisement les jours ou ils se reposerent. Que vient donc [enseigner] « comme les jours » ? Inclure deux autres [jours] a leur exemple.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Seconde derasha, tiree d'<b>Esther 9,22</b>. Le verset precedent nomme le quatorze et le quinze ; celui-ci aurait pu dire « les jours ou ils se reposerent ». Le <b>kaf</b> de comparaison, « <b>comme</b> les jours », signale deux jours de plus, a leur ressemblance : le onze et le douze.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאֵימָא תְּרֵיסַר וּתְלֵיסַר! אָמַר רַב שְׁמוּאֵל בַּר יִצְחָק: שְׁלֹשָׁה עָשָׂר זְמַן קְהִילָּה לַכֹּל הִיא, וְלֹא צָרִיךְ לְרַבּוֹיֵי. וְאֵימָא שִׁיתְסַר וְשִׁיבְסַר! ״וְלֹא יַעֲבֹור״ כְּתִיב.</div>
+            <div class="fr"><p>Et dis [que ce sont] le douze et le treize ! — Rav Chmouel bar Yits&#x27;hak a dit : le treize est un temps de rassemblement pour tous, et il n&#x27;a pas besoin d&#x27;etre inclus. Et dis [que ce sont] le seize et le dix-sept ! — Il est ecrit « et cela ne passera pas ».</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La seconde derasha subit exactement les deux memes objections que la premiere et recoit les memes reponses. Ce parallelisme montre que le choix entre les deux versets ne change rien au resultat : les cinq jours sont identiques, seule la voie d'acces differe.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבִּי שְׁמוּאֵל בַּר נַחְמָנִי מַאי טַעְמָא לָא אָמַר מִ״בִּזְמַנֵּיהֶם״? ״זְמַן״ ״זְמַנָּם״ ״זְמַנֵּיהֶם״ לָא מַשְׁמַע לֵיהּ.</div>
+            <div class="fr"><p>Rabbi Chmouel bar Nahmani, pour quelle raison n&#x27;a-t-il pas dit [la derasha] de « bi-zmaneihem » ? — [La gradation] « zman », « zmanam », « zmaneihem » ne lui parait pas signifiante.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara demande a chacun pourquoi il n'a pas retenu la voie de l'autre. Rabbi Chmouel bar Nahmani rejette la methode meme : pour lui, l'ecart entre ces trois formes releve de l'usage de la langue et ne porte aucun enseignement distinct.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg16">
+          <div class="seg-num">17</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַב שֶׁמֶן בַּר אַבָּא מַאי טַעְמָא לָא אָמַר מִ״כַּיָּמִים״? אָמַר לָךְ: הָהוּא לְדוֹרוֹת הוּא דִּכְתִיב.</div>
+            <div class="fr"><p>Et Rav Chemen bar Abba, pour quelle raison n&#x27;a-t-il pas dit [la derasha] de « ki-yamim » ? — Il peut te dire : celui-la est ecrit pour les generations.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְדוֹרוֹת הוּא דִּכְתִיב</b> לְהָכִי שַׁיָּיךְ לִישָּׁנָא דִּקְרָא כַּיָּמִים כְּלוֹמַר יַעֲשׂוּ לְדוֹרוֹת י&quot;ד וט&quot;ו כַּאֲשֶׁר הָיָה בִּימֵי הַנֵּס יָמִים אֲשֶׁר נָחוּ בָּהֶם הִלְכָּךְ לָא אִיכָּא לְרַבּוֹיֵי מֵהָכָא שָׁנִים אֲחֵרִים:</div>
+          <div class="glose-fr">C&#x27;est pourquoi convient l&#x27;expression du verset « comme les jours », c&#x27;est-a-dire : qu&#x27;ils fassent pour les generations le quatorze et le quinze comme il en fut aux jours du miracle, « les jours ou ils se reposerent ». Des lors, on ne peut pas en inclure ici deux autres [jours].</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Chemen bar Abba assigne au verset <b>ki-yamim</b> une autre fonction : etendre a toutes les generations la celebration du quatorze et du quinze, a l'image de ce qui s'est passe a l'epoque du miracle. Ce verset etant deja employe, il ne peut plus servir a inclure des jours supplementaires.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="300" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Deux derachot, deux refus symetriques</text>
+
+  <rect x="24" y="44" width="320" height="176" rx="7" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.6"/>
+  <text x="184" y="66" text-anchor="middle" font-size="11" font-weight="700" fill="#1e3a8a">Rav Chemen bar Abba</text>
+  <text x="184" y="82" text-anchor="middle" font-size="8.8" fill="#57534e">au nom de R. Yohanan</text>
+  <line x1="40" y1="92" x2="328" y2="92" stroke="#1d4ed8" stroke-width="0.8"/>
+  <text x="38" y="112" font-size="9.2" fill="#292524">Source : bi-zmaneihem (Esther 9,31)</text>
+  <text x="38" y="130" font-size="9.2" fill="#292524">Methode : gradation zman / zmanam / zmaneihem</text>
+  <text x="38" y="154" font-size="9.2" font-weight="700" fill="#1d4ed8">Refuse ki-yamim car :</text>
+  <text x="38" y="172" font-size="9" fill="#292524">ce verset est ecrit pour les generations,</text>
+  <text x="38" y="188" font-size="9" fill="#292524">il fixe le 14 et le 15 a perpetuite</text>
+  <text x="38" y="209" font-size="9" fill="#292524">et n'ajoute donc aucun jour.</text>
+
+  <rect x="356" y="44" width="320" height="176" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.6"/>
+  <text x="516" y="66" text-anchor="middle" font-size="11" font-weight="700" fill="#14532d">R. Chmouel bar Nahmani</text>
+  <text x="516" y="82" text-anchor="middle" font-size="8.8" fill="#57534e">derasha alternative</text>
+  <line x1="372" y1="92" x2="660" y2="92" stroke="#15803d" stroke-width="0.8"/>
+  <text x="370" y="112" font-size="9.2" fill="#292524">Source : ki-yamim (Esther 9,22)</text>
+  <text x="370" y="130" font-size="9.2" fill="#292524">Methode : le kaf de comparaison inclut deux jours</text>
+  <text x="370" y="154" font-size="9.2" font-weight="700" fill="#15803d">Refuse bi-zmaneihem car :</text>
+  <text x="370" y="172" font-size="9" fill="#292524">la gradation zman / zmanam / zmaneihem</text>
+  <text x="370" y="188" font-size="9" fill="#292524">ne lui parait porter aucun sens</text>
+  <text x="370" y="209" font-size="9" fill="#292524">supplementaire.</text>
+
+  <rect x="24" y="238" width="652" height="52" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.3"/>
+  <text x="350" y="260" text-anchor="middle" font-size="10" font-weight="700" fill="#78350f">Point commun</text>
+  <text x="350" y="279" text-anchor="middle" font-size="9" fill="#292524">Les deux aboutissent aux memes cinq jours et subissent les memes deux objections : 12-13 et 16-17.</text>
+</svg></div><div class="svg-cap">Les deux derachot et les raisons croisees de leur refus mutuel.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg17">
+          <div class="seg-num">18</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַבָּה בַּר בַּר חָנָה אָמַר רַבִּי יוֹחָנָן: זוֹ דִּבְרֵי רַבִּי עֲקִיבָא סְתִימְתָּאָה, דְּדָרֵישׁ ״זְמַן״ ״זְמַנָּם״ ״זְמַנֵּיהֶם״, אֲבָל חֲכָמִים אוֹמְרִים: אֵין קוֹרִין אוֹתָהּ אֶלָּא בִּזְמַנָּהּ.</div>
+            <div class="fr"><p>Rabba bar bar Hana a dit au nom de Rabbi Yohanan : ceci est la parole de Rabbi Akiva, [auteur] des enseignements anonymes, qui deroche « zman », « zmanam », « zmaneihem » ; mais les Sages disent : on ne la lit qu&#x27;en son temps.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>זוֹ דִּבְרֵי ר&#x27; עֲקִיבָא</b> הָכִי גְּמִיר רַבִּי יוֹחָנָן מֵרַבֵּיהּ דְּמַתְנִי&#x27; ר&quot;ע אֲמָרָהּ:</div>
+          <div class="glose-fr">Ainsi Rabbi Yohanan l&#x27;a-t-il recu de son maitre : c&#x27;est Rabbi Akiva qui a enonce notre Michna.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>סְתִימָתָאָה</b> הַרְבֵּה סְתַם מִשְׁנָה סְתָם ר&#x27; שֶׁהֵן דִּבְרֵי ר&#x27; עֲקִיבָא וי&quot;מ סְתִימָתָאָה כָּל הַסִּתּוּמִין תַּלְמִידָיו הָיוּ כִּדְאָמַר בְּסַנְהֶדְרִין (דַּף פּוֹ.) סְתַם מִשְׁנָה ר&quot;מ סְתָם תּוֹסֶפְתָּא ר&#x27; נְחֶמְיָה סְתַם סִפְרָא רַבִּי יְהוּדָה וְכוּלְּהוּ סְתִימְתָּאֵי אַלִּיבָּא דְּר&#x27; עֲקִיבָא אַךְ קָשֶׁה בְּעֵינַי לְפָרֵשׁ כֵּן שֶׁמָּצִינוּ בְּכַמָּה מְקוֹמוֹת בְּשֵׁם ר&quot;א בְּר&#x27; יוֹסֵי סְתִימְתָּאֵי רַבִּי מְנַחֵם בַּר רַבִּי יוֹסֵי סְתִימְתָּאֵי לְקַמָּן בְּפֶרֶק בְּנֵי הָעִיר (מְגִילָּה דַּף כו.):</div>
+          <div class="glose-fr">Beaucoup de Michnayot anonymes de Rabbi [Yehouda ha-Nassi] sont les paroles de Rabbi Akiva. Certains expliquent « setimtaa » : tous les [recueils] anonymes sont [l&#x27;oeuvre de] ses disciples, comme il est dit dans Sanhedrin (86a) : une Michna anonyme, Rabbi Meir ; une Tossefta anonyme, Rabbi Nehemia ; un Sifra anonyme, Rabbi Yehouda — et tous suivent l&#x27;opinion de Rabbi Akiva. Mais il m&#x27;est difficile d&#x27;expliquer ainsi, car nous trouvons en plusieurs endroits « Rabbi Elazar bar Rabbi Yossi setimtaa », « Rabbi Menahem bar Rabbi Yossi setimtaa », plus loin au chapitre Bnei ha-Ir (Meguila 26a).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabbi Yohanan attribue notre Michna a <b>Rabbi Akiva</b> et la presente comme une position individuelle : les Sages, eux, n'admettraient aucune lecture hors du jour fixe. Le terme <b>setimtaa</b> designe l'auteur des enseignements transmis sans nom d'auteur ; Rachi rapporte a son sujet deux explications et discute la seconde.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg18">
+          <div class="seg-num">19</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מֵיתִיבִי, אָמַר רַבִּי יְהוּדָה: אֵימָתַי — בִּזְמַן שֶׁהַשָּׁנִים כְּתִיקְנָן וְיִשְׂרָאֵל שְׁרוּייִן עַל אַדְמָתָן, אֲבָל בַּזְּמַן הַזֶּה, הוֹאִיל וּמִסְתַּכְּלִין בָּהּ — אֵין קוֹרִין אוֹתָהּ אֶלָּא בִּזְמַנָּהּ.</div>
+            <div class="fr"><p>On objecte : Rabbi Yehouda a dit : quand [cela s&#x27;applique-t-il] ? — au temps ou les annees sont reglees comme il convient et ou Israel reside sur sa terre ; mais a notre epoque, puisqu&#x27;on se regle sur elle, on ne la lit qu&#x27;en son temps.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵימָתַי</b> הֵקֵילּוּ חֲכָמִים עַל הַכְּפָרִים:</div>
+          <div class="glose-fr">[Quand] les Sages ont-ils allege pour les villages.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בִּזְמַן שֶׁהַשְּׁנַיִם כְּתִיקְנָן</b> שֶׁהַשָּׁנִים מִתְעַבְּרוֹת עַל פִּי בֵּית דִּין וְהַחֲדָשִׁים הַמֻּקְדָּשִׁין בְּבֵית דִּין שׁוֹלְחִין שְׁלוּחֵיהֶן לְהוֹדִיעַ אֵימָתַי הֻוקְדַּשׁ נִיסָן וְעוֹשִׂין מוֹעֲדִים ע&quot;פ שְׁלוּחִין:</div>
+          <div class="glose-fr">Que les annees soient intercalees sur decision du tribunal et que les mois soient sanctifies au tribunal, lequel envoie ses messagers annoncer quand Nissan a ete sanctifie ; et l&#x27;on fait les fetes d&#x27;apres les messagers.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּשֶׁשְּׁרוּייָן עַל אַדְמָתָם</b> וְהַשְּׁלוּחִין מַגִּיעִין עַד הַפֶּסַח לִקְצֵה אֶרֶץ יִשְׂרָאֵל:</div>
+          <div class="glose-fr">Et les messagers parviennent avant Pessah jusqu&#x27;a l&#x27;extremite de la terre d&#x27;Israel.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲבָל בַּזְּמַן הַזֶּה</b> שֶׁפָּסְקוּ כָּל אֵלֶּה וְיִשְׂרָאֵל נִפְרְדוּ וְלֹא יַגִּיעוּ שְׁלוּחֵי ב&quot;ד אֶצְלָם הַכֹּל צוֹפִין לְמִקְרָא מְגִילָּה וְאוֹמְרִים יוֹם י&quot;ד בַּאֲדָר קָרֵינַן הַמְּגִילָּה נִשְׁאֲרוּ לַאֲדָר ט&quot;ו יוֹם וט&quot;ו שֶׁל נִיסָן עוֹשִׂין פֶּסַח וְאִם תַּקְדִּים קְרִיאָתָהּ יַעֲשׂוּ פֶּסַח לְסוֹף שְׁלֹשִׁים יוֹם שֶׁל קְרִיאָה וְנִמְצְאוּ אוֹכְלִין חָמֵץ בְּיָמִים אַחֲרוֹנִים (בַּיּוֹם) שֶׁל פֶּסַח:</div>
+          <div class="glose-fr">Ou tout cela a cesse, ou Israel s&#x27;est disperse et ou les messagers du tribunal ne parviennent plus jusqu&#x27;a eux : tous se reglent sur la lecture de la Meguila et disent : le quatorze Adar nous lisons la Meguila, il reste a Adar quinze jours, et le quinze Nissan on fait Pessah. Or si l&#x27;on avance sa lecture, ils feront Pessah au terme des trente jours [comptes] depuis la lecture, et il se trouvera qu&#x27;ils mangeront du hamets aux derniers jours de Pessah.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Une baraita introduit une distinction d'epoque. Tant que le tribunal intercale les annees et que des messagers annoncent la date de Nissan, l'avance de la lecture n'entraine aucun risque. <b>A notre epoque</b>, ou la dispersion prive les communautes de cette information, les gens comptent trente jours depuis la lecture de la Meguila pour situer Pessah ; une lecture avancee decalerait la fete, et l'on mangerait du <b>hamets</b> a la fin de Pessah.</p><p>Le Rosh signale une autre lecture, ou le mot renvoie aux pauvres qui attendent l'argent de Pourim le jour de la lecture, et une variante textuelle qui parle du <b>danger</b> encouru.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="300" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Le risque de l'avance selon Rachi : le calcul de Pessah</text>
+
+  <rect x="24" y="44" width="316" height="150" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.5"/>
+  <text x="182" y="66" text-anchor="middle" font-size="10.8" font-weight="700" fill="#14532d">Annees reglees, Israel sur sa terre</text>
+  <line x1="40" y1="76" x2="324" y2="76" stroke="#15803d" stroke-width="0.8"/>
+  <text x="38" y="96" font-size="9" fill="#292524">Le tribunal intercale les annees</text>
+  <text x="38" y="112" font-size="9" fill="#292524">et sanctifie les mois.</text>
+  <text x="38" y="134" font-size="9" fill="#292524">Des messagers annoncent la date</text>
+  <text x="38" y="150" font-size="9" fill="#292524">de Nissan avant Pessah.</text>
+  <text x="182" y="176" text-anchor="middle" font-size="9.6" font-weight="700" fill="#15803d">L'avance ne trompe personne</text>
+
+  <rect x="360" y="44" width="316" height="150" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.5"/>
+  <text x="518" y="66" text-anchor="middle" font-size="10.8" font-weight="700" fill="#7f1d1d">Bi-zman ha-ze</text>
+  <line x1="376" y1="76" x2="660" y2="76" stroke="#b91c1c" stroke-width="0.8"/>
+  <text x="374" y="96" font-size="9" fill="#292524">Les messagers n'atteignent plus</text>
+  <text x="374" y="112" font-size="9" fill="#292524">les communautes dispersees.</text>
+  <text x="374" y="134" font-size="9" fill="#292524">Chacun compte a partir du jour</text>
+  <text x="374" y="150" font-size="9" fill="#292524">ou il a entendu la Meguila.</text>
+  <text x="518" y="176" text-anchor="middle" font-size="9.6" font-weight="700" fill="#b91c1c">Une avance decale Pessah</text>
+
+  <rect x="24" y="210" width="652" height="80" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.3"/>
+  <text x="350" y="232" text-anchor="middle" font-size="10" font-weight="700" fill="#78350f">Le calcul en jeu</text>
+  <text x="350" y="251" text-anchor="middle" font-size="9" fill="#292524">Lecture le 14 Adar, plus trente jours : le 15 Nissan, premier soir de Pessah.</text>
+  <text x="350" y="269" text-anchor="middle" font-size="9" fill="#292524">Lecture avancee au 11, meme compte : Pessah tombe trois jours trop tot, et l'on mange du hamets a la fin de la fete.</text>
+</svg></div><div class="svg-cap">Les deux epoques et le calcul de Pessah depuis la lecture.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg19">
+          <div class="seg-num">20</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבִּי יְהוּדָה אַלִּיבָּא דְּמַאן? אִילֵימָא אַלִּיבָּא דְּרַבִּי עֲקִיבָא — אֲפִילּוּ בִּזְמַן הַזֶּה אִיתָא לְהַאי תַּקַּנְתָּא!</div>
+            <div class="fr"><p>Rabbi Yehouda, selon qui [parle-t-il] ? Si tu dis : selon Rabbi Akiva — meme a notre epoque cette institution demeure !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בַּזְּמַן הַזֶּה נָמֵי אִיתָא לְהָא תַּקַּנְתָּא</b> דְּהָא רַבִּי עֲקִיבָא בַּזְּמַן הַזֶּה [הֲוָה] וְאָמַר בְּמָתְנֵי&#x27; דְּמַקְדִּימִין:</div>
+          <div class="glose-fr">Car Rabbi Akiva vivait a notre epoque, et il a dit dans notre Michna que l&#x27;on avance.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Pour que la baraita refute Rabbi Yohanan, il faut identifier l'avis qu'elle exprime. Elle ne peut pas suivre <b>Rabbi Akiva</b> : celui-ci vivait apres la destruction et enseigne dans notre Michna que l'avance reste permise. La restriction d'epoque serait donc sans objet dans sa bouche.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg20">
+          <div class="seg-num">21</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא לָאו, אַלִּיבָּא דְּרַבָּנָן, וּבִזְמַן שֶׁהַשָּׁנִים כְּתִיקְנָן וְיִשְׂרָאֵל שְׁרוּייִן עַל אַדְמָתָן — מִיהָא קָרֵינַן, תְּיוּבְתָּא דְּרַבִּי יוֹחָנָן תְּיוּבְתָּא.</div>
+            <div class="fr"><p>Il faut donc dire : selon les Sages ; et [selon eux] au temps ou les annees sont reglees comme il convient et ou Israel reside sur sa terre, on lit en tout cas [avant le quatorze]. Refutation de Rabbi Yohanan — refutation [decisive].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא לָאו אַלִּיבָּא דְרַבָּנַן</b> דְּהָווּ מִקַּמֵּי ר&quot;ע אֲמָרָהּ:</div>
+          <div class="glose-fr">Qui furent avant Rabbi Akiva — c&#x27;est d&#x27;apres eux qu&#x27;il l&#x27;a dit.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִיהָא קָרֵינַן</b> אַלְמָא רַבָּנָן נָמֵי דָּרְשִׁי זְמַן זְמַנָּם זְמַנֵּיהֶם:</div>
+          <div class="glose-fr">Il en ressort que les Sages aussi derochent « zman », « zmanam », « zmaneihem ».</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Par elimination, la baraita exprime l'avis des <b>Sages</b>. Or elle leur prete l'avance dans les conditions anciennes, alors que la premiere version de Rabbi Yohanan leur pretait un refus absolu. La Guemara conclut par la formule la plus forte, <b>tiyouvta</b>, qui ecarte cette version.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="300" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">La refutation : selon qui parle R. Yehouda ?</text>
+
+  <rect x="150" y="42" width="400" height="44" rx="7" fill="#e7e5e4" stroke="#57534e" stroke-width="1.3"/>
+  <text x="350" y="62" text-anchor="middle" font-size="10.2" font-weight="700" fill="#292524">Baraita : R. Yehouda limite l'avance a une certaine epoque</text>
+  <text x="350" y="79" text-anchor="middle" font-size="9" fill="#292524">Selon quel avis parle-t-il ?</text>
+
+  <path d="M280 88 L200 108" stroke="#78716c" stroke-width="1.2"/>
+  <path d="M420 88 L500 108" stroke="#78716c" stroke-width="1.2"/>
+
+  <rect x="24" y="112" width="316" height="112" rx="7" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.5"/>
+  <text x="182" y="134" text-anchor="middle" font-size="10.6" font-weight="700" fill="#7f1d1d">Selon R. Akiva ? Impossible</text>
+  <line x1="40" y1="144" x2="324" y2="144" stroke="#b91c1c" stroke-width="0.8"/>
+  <text x="38" y="164" font-size="9" fill="#292524">R. Akiva maintient l'avance</text>
+  <text x="38" y="180" font-size="9" fill="#292524">meme a notre epoque : il vivait</text>
+  <text x="38" y="196" font-size="9" fill="#292524">apres la destruction et enseigne</text>
+  <text x="38" y="212" font-size="9" fill="#292524">l'avance dans notre Michna.</text>
+
+  <rect x="360" y="112" width="316" height="112" rx="7" fill="#f0fdf4" stroke="#15803d" stroke-width="1.5"/>
+  <text x="518" y="134" text-anchor="middle" font-size="10.6" font-weight="700" fill="#14532d">Donc selon les Sages</text>
+  <line x1="376" y1="144" x2="660" y2="144" stroke="#15803d" stroke-width="0.8"/>
+  <text x="374" y="164" font-size="9" fill="#292524">Les Sages admettent donc</text>
+  <text x="374" y="180" font-size="9" fill="#292524">l'avance lorsque les annees</text>
+  <text x="374" y="196" font-size="9" fill="#292524">sont reglees et Israel sur sa</text>
+  <text x="374" y="212" font-size="9" fill="#292524">terre.</text>
+
+  <rect x="130" y="240" width="440" height="48" rx="7" fill="#fffbeb" stroke="#b45309" stroke-width="1.5"/>
+  <text x="350" y="261" text-anchor="middle" font-size="10.4" font-weight="700" fill="#78350f">Tiyouvta de-Rabbi Yohanan tiyouvta</text>
+  <text x="350" y="279" text-anchor="middle" font-size="9" fill="#292524">La premiere version, qui pretait aux Sages un refus absolu, est ecartee.</text>
+</svg></div><div class="svg-cap">Le raisonnement par elimination qui aboutit a la tiyouvta.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg21">
+          <div class="seg-num">22</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִיכָּא דְאָמְרִי: אָמַר רַבָּה בַּר בַּר חָנָה אָמַר רַבִּי יוֹחָנָן: זוֹ דִּבְרֵי רַבִּי עֲקִיבָא סְתִימְתָּאָה, אֲבָל חֲכָמִים אָמְרוּ: בַּזְּמַן הַזֶּה, הוֹאִיל וּמִסְתַּכְּלִין בָּהּ — אֵין קוֹרִין אוֹתָהּ אֶלָּא בִּזְמַנָּהּ.</div>
+            <div class="fr"><p>Il y a ceux qui disent : Rabba bar bar Hana a dit au nom de Rabbi Yohanan : ceci est la parole de Rabbi Akiva, [auteur] des enseignements anonymes ; mais les Sages ont dit : a notre epoque, puisqu&#x27;on se regle sur elle, on ne la lit qu&#x27;en son temps.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִיכָּא דְאָמְרִי אָמַר רַבָּה זוֹ דִּבְרֵי ר&#x27; עֲקִיבָא סְתִימָתָאָה</b> וְלָא גָּרְסִינַן לְהַאי לִישָּׁנָא דְּדָרֵישׁ זְמַן זְמַנָּם זְמַנֵּיהֶם דְּהָא רַבָּנָן דִּפְלִיגִי עָלֶיהָ נָמֵי דָּרְשִׁי לֵיהּ אֶלָּא שֶׁהֶחְמִירוּ לְאַחַר חֻורְבָּן מִשּׁוּם דְּמִסְתַּכְּלִין בָּהּ:</div>
+          <div class="glose-fr">Et l&#x27;on ne lit pas dans cette version [les mots] « qui deroche zman, zmanam, zmaneihem », car les Sages qui le contredisent le derochent eux aussi ; mais ils ont ete plus stricts apres la destruction, parce qu&#x27;on se regle sur elle.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Seconde version de la meme tradition. Deux differences avec la premiere : la mention de la derasha des trois formes disparait, car les Sages la derochent eux aussi ; et leur position se limite a <b>bi-zman ha-ze</b>. Le desaccord porte alors sur la seule periode posterieure a la destruction.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg22">
+          <div class="seg-num">23</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תַּנְיָא נָמֵי הָכִי, אָמַר רַבִּי יְהוּדָה: אֵימָתַי — בִּזְמַן שֶׁהַשָּׁנִים כְּתִיקְנָן וְיִשְׂרָאֵל שְׁרוּייִן עַל אַדְמָתָן, אֲבָל בַּזְּמַן הַזֶּה, הוֹאִיל וּמִסְתַּכְּלִין בָּהּ — אֵין קוֹרִין אוֹתָהּ אֶלָּא בִּזְמַנָּהּ.</div>
+            <div class="fr"><p>Cela est aussi enseigne [dans une baraita] : Rabbi Yehouda a dit : quand ? — au temps ou les annees sont reglees comme il convient et ou Israel reside sur sa terre ; mais a notre epoque, puisqu&#x27;on se regle sur elle, on ne la lit qu&#x27;en son temps.</p></div>
+            <div class="tools"><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">מַתְנִי&#x27; הַכֹּל כְּשֵׁרִין לִקְרוֹת הַמְּגִילָּה חוּץ מֵחֵרֵשׁ וְשׁוֹטֶה וְקָטָן. ר&#x27; יְהוּדָה אוֹמֵר קָטָן כָּשֵׁר. אֵין קוֹרִין אֶת הַמְּגִילָּה וְלֹא מוֹהֲלִין וְלֹא טוֹבְלִין וְלֹא מַזִּין אֶלָּא בַּיּוֹם. וְכֵן שׁוֹמֶרֶת יוֹם כְּנֶגֶד יוֹם לֹא תִּטְבֹּול עַד הָנֵץ הַחַמָּה. וְכֻולָּן שֶׁעָשׂוּ מִשֶּׁעָלָה עַמּוּד הַשַּׁחַר כָּשֵׁר. כָּל הַיּוֹם כָּשֵׁר לִקְרוֹת אֶת הַמְּגִילָּה וְלִקְרִיאַת הַהַלֵּל וְלִתְקִיעַת שׁוֹפָר וְלִנְטִילַת לוּלָב וְלִתְפִלַּת הַמּוּסָפִין וְלַמּוּסָפִין וּלְוִידּוּי פָּרִים וּלְוִידּוּי מַעֲשֵׂר וּלְוִידּוּי יוה&quot;כ לִסְמִיכָה וְלִשְׁחִיטָה וְלִתְנוּפָה וְלַהַגָּשָׁה לִקְמִיצָה וּלְהַקְטָרָה וְלַמְּלִיקָה וּלְקַבָּלָה וּלְהַזָּאָה וּלְהַשְׁקוֹת סוֹטָה לַעֲרִיפַת עֶגְלָה וּלְטַהֲרַת מְצֹורָע. וְכָל הַלַּיְלָה כָּשֵׁר לִקְצִירַת הָעֹומֶר וְלִסְפִירַת הָעֹומֶר וּלְהֶקְטֵיר חֲלָבִים וְאֵבָרִים זֶה הַכְּלָל כָּל שֶׁמִּצְוָתוֹ בַּיּוֹם כָּשֵׁר כָּל הַיּוֹם וְשֶׁמִּצְוָתוֹ בַּלַּיְלָה כָּשֵׁר כָּל הַלַּיְלָה: 0הֲדַרַן עֲלָךְ הַקּוֹרֵא אֶת הֲמִיגְּלָה לְמַפְרֵעַ</div>
+          <div class="glose-fr">Michna. Tous sont aptes a lire la Meguila, hormis le sourd-muet (heresh), le dement (choté) et le mineur (katan). Rabbi Yehouda dit : un mineur est apte. On ne lit pas la Meguila, on ne circoncit pas, on n&#x27;immerge pas et on n&#x27;asperge pas [l&#x27;eau de purification], sinon de jour. De meme, une femme qui observe un jour en regard d&#x27;un jour (chomeret yom ke-neged yom) ne s&#x27;immerge qu&#x27;apres le lever du soleil. Et dans tous ces cas, si on les a faits a partir du lever de l&#x27;aube, c&#x27;est valide. Tout le jour est apte a la lecture de la Meguila, a la lecture du Hallel, a la sonnerie du chofar, a la prise du loulav, a la priere de Moussaf, aux offrandes additionnelles, a la confession sur les taureaux, a la confession de la dime, a la confession de Yom Kippour, a la semikha (imposition des mains), a la chehita (abattage), a la tenoufa (balancement), a la haggacha (approche de l&#x27;offrande), a la kemitsa (prelevement d&#x27;une poignee), a l&#x27;encensement, a la melika (egorgement de l&#x27;oiseau a l&#x27;ongle), a la reception [du sang], a l&#x27;aspersion, a faire boire la sota, a la rupture de la nuque de la genisse (eglat aroufa) et a la purification du metsora. Et toute la nuit est apte a la moisson du omer, au compte du omer, a la combustion des graisses et des membres. Voici la regle : ce dont la mitsva se fait de jour est valide tout le jour, et ce dont la mitsva se fait de nuit est valide toute la nuit. Hadran alakh « Ha-koré et ha-meguila lemafréa ».</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La baraita qui refutait la premiere version soutient la seconde. La formule <b>tanya nami hakhi</b> marque cet appui : les Sages admettent l'avance dans les conditions anciennes et la restreignent aujourd'hui, exactement comme le dit la version <b>ika de-amri</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg23">
+          <div class="seg-num">24</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַב אָשֵׁי קַשְׁיָא לֵיהּ דְּרַבִּי יְהוּדָה אַדְּרַבִּי יְהוּדָה,</div>
+            <div class="fr"><p>Rav Achi trouvait difficile [la contradiction entre les paroles de] Rabbi Yehouda et [celles de] Rabbi Yehouda,</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>קַשְׁיָא דר&quot;י</b> דְּהָא בָּרַייְתָא דִּלְעֵיל אֶדֶר&#x27; יְהוּדָה דְּמַתְנִי&#x27; כְּדִמְפָרֵשׁ וְאָזֵיל:</div>
+          <div class="glose-fr">Car la baraita citee plus haut [contredit] Rabbi Yehouda de la Michna, comme il l&#x27;explique ensuite.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le folio se termine sur l'ouverture d'une nouvelle difficulte : la baraita citee attribue a <b>Rabbi Yehouda</b> une position qui semble contredire ce qu'il enseigne ailleurs dans une Michna. Le developpement se poursuit en <b>2b</b>.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><span class="nav-b off">&lsaquo;</span><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Megillah_2b.html">Megillah 2b &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

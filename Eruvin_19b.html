@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eruvin 19b — Les passei bira : mesures des breches, prolonger les dyomadin, et ce qui peut servir de dyomad</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Eruvin 19b — Les passei bira : mesures des breches, prolonger les dyomadin, et ce qui peut servir de dyomad</h1>
+    <div class="ref">Eruvin 19b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Eruvin_19a.html">&lsaquo; Eruvin 19a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Eruvin_20a.html">Eruvin 20a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> Suite de la sougya des passei bira, l&#x27;enclos de planches autour d&#x27;un puits pour les pelerins. La baraita chiffre l&#x27;ecart permis entre les poteaux : six boeufs, soit dix coudees, pour Rabbi Meir ; huit boeufs, soit treize coudees et un tiers, pour Rabbi Yehouda.</p><p>Rav Papa en tire quand il faut ajouter des pechoutin (planches simples) selon la largeur de la citerne : 8 coudees, personne ; 12 coudees, tout le monde ; entre les deux, la mahloket. Abaye pose ensuite a Rabba une serie de questions (moyen mnemotechnique : ariKH, yoter, tel, hitsat...) : peut-on prolonger les dyomadin (poteaux d&#x27;angle) au lieu d&#x27;ajouter des pechoutin, pour Rabbi Meir et pour Rabbi Yehouda ; un tertre escarpe ou une haie de roseaux peuvent-ils servir de dyomad ?</p><p>Rabba repond chaque fois par une baraita, que la Guemara discute ; la question du tertre depend de la mahloket sur « un roin » ou « deux roin ».</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs><rect x="0" y="0" width="760" height="400" fill="#fbfaf7"/><text x="380" y="26" text-anchor="middle" font-family="Helvetica,Arial" font-size="15" fill="#2b2b2b" font-weight="bold">Passei bira vus de dessus (cas de Rav Papa : citerne de 8 coudees)</text><rect x="190" y="110" width="160" height="160" rx="4" fill="#cfe3f2" stroke="#4a7aa0" stroke-width="1.5"/><text x="270" y="190" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" fill="#2d5878" font-weight="bold">citerne</text><text x="270" y="206" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2d5878">8 coudees</text><rect x="150" y="70" width="240" height="240" fill="none" stroke="#999" stroke-dasharray="5,4" stroke-width="1"/><rect x="150" y="63" width="20" height="7" rx="0" fill="#b98a52" stroke="#7a5530" stroke-width="1"/><rect x="143" y="70" width="7" height="20" rx="0" fill="#b98a52" stroke="#7a5530" stroke-width="1"/><rect x="370" y="63" width="20" height="7" rx="0" fill="#b98a52" stroke="#7a5530" stroke-width="1"/><rect x="390" y="70" width="7" height="20" rx="0" fill="#b98a52" stroke="#7a5530" stroke-width="1"/><rect x="150" y="310" width="20" height="7" rx="0" fill="#b98a52" stroke="#7a5530" stroke-width="1"/><rect x="143" y="290" width="7" height="20" rx="0" fill="#b98a52" stroke="#7a5530" stroke-width="1"/><rect x="370" y="310" width="20" height="7" rx="0" fill="#b98a52" stroke="#7a5530" stroke-width="1"/><rect x="390" y="290" width="7" height="20" rx="0" fill="#b98a52" stroke="#7a5530" stroke-width="1"/><line x1="170" y1="52" x2="370" y2="52" stroke="#8a3b3b" stroke-width="1.3" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="270.0" y="46" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#8a3b3b">ecart : 10 coudees</text><line x1="150" y1="332" x2="190" y2="332" stroke="#555" stroke-width="1.3" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="170.0" y="326" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">2</text><line x1="190" y1="332" x2="350" y2="332" stroke="#555" stroke-width="1.3" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="270.0" y="326" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">8 (citerne)</text><line x1="350" y1="332" x2="390" y2="332" stroke="#555" stroke-width="1.3" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="370.0" y="326" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">2</text><rect x="440" y="80" width="22" height="8" rx="0" fill="#b98a52" stroke="#7a5530" stroke-width="1"/><text x="472" y="88" text-anchor="start" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">dyomad : poteau d'angle en L,</text><text x="472" y="104" text-anchor="start" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">une coudee de chaque cote</text><line x1="440" y1="128" x2="462" y2="128" stroke="#999" stroke-dasharray="5,4"/><text x="472" y="132" text-anchor="start" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">limite de l'enclos</text><text x="440" y="170" text-anchor="start" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">2 coudees de chaque cote =</text><text x="440" y="186" text-anchor="start" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">tete et majeure partie d'une vache</text><text x="440" y="202" text-anchor="start" font-family="Helvetica,Arial" font-size="11" fill="#666">(elle boit de l'interieur de l'enclos)</text><text x="440" y="236" text-anchor="start" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b" font-weight="bold">Calcul : 2 + 8 + 2 = 12 coudees d'enclos</text><text x="440" y="252" text-anchor="start" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">moins 1 coudee de dyomad de chaque cote</text><text x="440" y="268" text-anchor="start" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">= ecart de 10 coudees entre les dyomadin</text><text x="440" y="300" text-anchor="start" font-family="Helvetica,Arial" font-size="12" fill="#2f6b3a">Rabbi Meir : jusqu'a 10 -> sans pechoutin</text><text x="440" y="318" text-anchor="start" font-family="Helvetica,Arial" font-size="12" fill="#2f6b3a">Rabbi Yehouda : jusqu'a 13 1/3 -> idem</text></svg></div>
+          <figcaption>Les passei bira vus de dessus : citerne, espace pour les vaches, dyomadin aux angles et ecart entre eux (exemple de Rav Papa).</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs><rect x="0" y="0" width="760" height="300" fill="#fbfaf7"/><text x="380" y="26" text-anchor="middle" font-family="Helvetica,Arial" font-size="15" fill="#2b2b2b" font-weight="bold">Rav Papa : faut-il ajouter des pechoutin ?</text><text x="380" y="46" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#666">ecart = citerne + 2 + 2 (vaches) - 1 - 1 (dyomadin)</text><text x="95" y="82" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#666">citerne</text><text x="95" y="150" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#666">ecart</text><text x="95" y="206" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#666" font-weight="bold">Rabbi Meir</text><text x="95" y="256" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#666" font-weight="bold">Rabbi Yehouda</text><text x="95" y="226" text-anchor="middle" font-family="Helvetica,Arial" font-size="10" fill="#888">(max 10)</text><text x="95" y="276" text-anchor="middle" font-family="Helvetica,Arial" font-size="10" fill="#888">(max 13 1/3)</text><rect x="190" y="62" width="170" height="34" rx="8" fill="#cfe3f2" stroke="#4a7aa0" stroke-width="1.5"/><text x="275.0" y="83.33333333333333" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" fill="#2b2b2b" font-weight="bold">8 coudees</text><line x1="275" y1="98" x2="275" y2="124" stroke="#555" stroke-width="1.6" marker-end="url(#ar)"/><rect x="190" y="128" width="170" height="34" rx="8" fill="#f1eee6" stroke="#aaa" stroke-width="1.5"/><text x="275.0" y="149.33333333333334" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" fill="#2b2b2b" font-weight="bold">10 coudees</text><text x="275" y="180" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#444">accord : pas de pechoutin</text><rect x="225" y="192" width="100" height="34" rx="8" fill="#e3f1e0" stroke="#5f8a52" stroke-width="1.5"/><text x="275.0" y="213.33333333333334" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" fill="#2b2b2b" font-weight="bold">non</text><rect x="225" y="240" width="100" height="34" rx="8" fill="#e3f1e0" stroke="#5f8a52" stroke-width="1.5"/><text x="275.0" y="261.3333333333333" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" fill="#2b2b2b" font-weight="bold">non</text><rect x="380" y="62" width="170" height="34" rx="8" fill="#cfe3f2" stroke="#4a7aa0" stroke-width="1.5"/><text x="465.0" y="83.33333333333333" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" fill="#2b2b2b" font-weight="bold">entre 8 et 12</text><line x1="465" y1="98" x2="465" y2="124" stroke="#555" stroke-width="1.6" marker-end="url(#ar)"/><rect x="380" y="128" width="170" height="34" rx="8" fill="#f1eee6" stroke="#aaa" stroke-width="1.5"/><text x="465.0" y="149.33333333333334" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" fill="#2b2b2b" font-weight="bold">entre 10 et 14</text><text x="465" y="180" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#444">c'est la mahloket</text><rect x="415" y="192" width="100" height="34" rx="8" fill="#f6dcdc" stroke="#a44" stroke-width="1.5"/><text x="465.0" y="213.33333333333334" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" fill="#2b2b2b" font-weight="bold">oui</text><rect x="415" y="240" width="100" height="34" rx="8" fill="#e3f1e0" stroke="#5f8a52" stroke-width="1.5"/><text x="465.0" y="261.3333333333333" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" fill="#2b2b2b" font-weight="bold">non</text><rect x="570" y="62" width="170" height="34" rx="8" fill="#cfe3f2" stroke="#4a7aa0" stroke-width="1.5"/><text x="655.0" y="83.33333333333333" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" fill="#2b2b2b" font-weight="bold">12 coudees</text><line x1="655" y1="98" x2="655" y2="124" stroke="#555" stroke-width="1.6" marker-end="url(#ar)"/><rect x="570" y="128" width="170" height="34" rx="8" fill="#f1eee6" stroke="#aaa" stroke-width="1.5"/><text x="655.0" y="149.33333333333334" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" fill="#2b2b2b" font-weight="bold">14 coudees</text><text x="655" y="180" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#444">accord : pechoutin necessaires</text><rect x="605" y="192" width="100" height="34" rx="8" fill="#f6dcdc" stroke="#a44" stroke-width="1.5"/><text x="655.0" y="213.33333333333334" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" fill="#2b2b2b" font-weight="bold">oui</text><rect x="605" y="240" width="100" height="34" rx="8" fill="#f6dcdc" stroke="#a44" stroke-width="1.5"/><text x="655.0" y="261.3333333333333" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" fill="#2b2b2b" font-weight="bold">oui</text></svg></div>
+          <figcaption>Rav Papa : selon la largeur de la citerne, faut-il ajouter des pechoutin pour Rabbi Meir et pour Rabbi Yehouda ?</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs><rect x="0" y="0" width="760" height="360" fill="#fbfaf7"/><text x="380" y="26" text-anchor="middle" font-family="Helvetica,Arial" font-size="15" fill="#2b2b2b" font-weight="bold">Abaye interroge Rabba : les questions de ce daf</text><text x="95" y="58" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#666">mot-cle</text><text x="290" y="58" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#666">question</text><text x="480" y="58" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#666">source citee par Rabba</text><text x="655" y="58" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#666">issue</text><rect x="20" y="70" width="150" height="58" rx="8" fill="#e8eef7" stroke="#4a6a9a" stroke-width="1.5"/><text x="95.0" y="103.0" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b" font-weight="bold">ariKH (Rabbi Meir)</text><rect x="190" y="70" width="200" height="58" rx="8" fill="#ffffff" stroke="#bbb" stroke-width="1.5"/><text x="290.0" y="95.16666666666667" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">ecart > 10 : prolonger</text><text x="290.0" y="110.16666666666667" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">les dyomadin suffit ?</text><rect x="405" y="70" width="150" height="58" rx="8" fill="#fdf3dc" stroke="#c9a54a" stroke-width="1.5"/><text x="480.0" y="95.16666666666667" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">« ubilvad cheyarbe</text><text x="480.0" y="110.16666666666667" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">bepassin »</text><rect x="570" y="70" width="170" height="58" rx="8" fill="#eaf4e6" stroke="#5f8a52" stroke-width="1.5"/><text x="655.0" y="95.16666666666667" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">2e version : prolonger</text><text x="655.0" y="110.16666666666667" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">suffit (chema mina)</text><line x1="391" y1="99" x2="403" y2="99" stroke="#555" stroke-width="1.6" marker-end="url(#ar)"/><line x1="556" y1="99" x2="568" y2="99" stroke="#555" stroke-width="1.6" marker-end="url(#ar)"/><rect x="20" y="140" width="150" height="58" rx="8" fill="#e8eef7" stroke="#4a6a9a" stroke-width="1.5"/><text x="95.0" y="173.0" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b" font-weight="bold">YOTER (Rabbi Yehouda)</text><rect x="190" y="140" width="200" height="58" rx="8" fill="#ffffff" stroke="#bbb" stroke-width="1.5"/><text x="290.0" y="165.16666666666666" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">ecart > 13 1/3 :</text><text x="290.0" y="180.16666666666666" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">pechoutin ou prolonger ?</text><rect x="405" y="140" width="150" height="58" rx="8" fill="#fdf3dc" stroke="#c9a54a" stroke-width="1.5"/><text x="480.0" y="165.16666666666666" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">« zo mehitsa</text><text x="480.0" y="180.16666666666666" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">ve-elou passin »</text><rect x="570" y="140" width="170" height="58" rx="8" fill="#eaf4e6" stroke="#5f8a52" stroke-width="1.5"/><text x="655.0" y="165.16666666666666" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">refute : torat passin,</text><text x="655.0" y="180.16666666666666" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">breches de 13 1/3</text><line x1="391" y1="169" x2="403" y2="169" stroke="#555" stroke-width="1.6" marker-end="url(#ar)"/><line x1="556" y1="169" x2="568" y2="169" stroke="#555" stroke-width="1.6" marker-end="url(#ar)"/><rect x="20" y="210" width="150" height="58" rx="8" fill="#e8eef7" stroke="#4a6a9a" stroke-width="1.5"/><text x="95.0" y="243.0" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b" font-weight="bold">TEL</text><rect x="190" y="210" width="200" height="58" rx="8" fill="#ffffff" stroke="#bbb" stroke-width="1.5"/><text x="290.0" y="235.16666666666666" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">tertre de 10 tefahim</text><text x="290.0" y="250.16666666666666" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">en 4 coudees = dyomad ?</text><rect x="405" y="210" width="150" height="58" rx="8" fill="#fdf3dc" stroke="#c9a54a" stroke-width="1.5"/><text x="480.0" y="235.16666666666666" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">pierre carree / ronde</text><text x="480.0" y="250.16666666666666" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">(deux Tanaim)</text><rect x="570" y="210" width="170" height="58" rx="8" fill="#eaf4e6" stroke="#5f8a52" stroke-width="1.5"/><text x="655.0" y="235.16666666666666" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">depend de : un roin</text><text x="655.0" y="250.16666666666666" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">ou deux roin</text><line x1="391" y1="239" x2="403" y2="239" stroke="#555" stroke-width="1.6" marker-end="url(#ar)"/><line x1="556" y1="239" x2="568" y2="239" stroke="#555" stroke-width="1.6" marker-end="url(#ar)"/><rect x="20" y="280" width="150" height="58" rx="8" fill="#e8eef7" stroke="#4a6a9a" stroke-width="1.5"/><text x="95.0" y="313.0" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b" font-weight="bold">HITSAT kanim</text><rect x="190" y="280" width="200" height="58" rx="8" fill="#ffffff" stroke="#bbb" stroke-width="1.5"/><text x="290.0" y="305.1666666666667" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">haie de roseaux espaces</text><text x="290.0" y="320.1666666666667" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">de moins de 3 tefahim ?</text><rect x="405" y="280" width="150" height="58" rx="8" fill="#fdf3dc" stroke="#c9a54a" stroke-width="1.5"/><text x="480.0" y="305.1666666666667" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">« arbre, cloture ou</text><text x="480.0" y="320.1666666666667" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">haie de roseaux »</text><rect x="570" y="280" width="170" height="58" rx="8" fill="#eaf4e6" stroke="#5f8a52" stroke-width="1.5"/><text x="655.0" y="305.1666666666667" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">refute : deux sortes</text><text x="655.0" y="320.1666666666667" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2b2b2b">d'arbre / de cloture</text><line x1="391" y1="309" x2="403" y2="309" stroke="#555" stroke-width="1.6" marker-end="url(#ar)"/><line x1="556" y1="309" x2="568" y2="309" stroke="#555" stroke-width="1.6" marker-end="url(#ar)"/></svg></div>
+          <figcaption>Plan du daf : les questions d&#x27;Abaye a Rabba, la source citee et l&#x27;issue.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">שהן כעשר, דברי רבי מאיר. רבי יהודה אומר: כשלש עשרה אמה וכארבע עשרה אמה.</div>
+            <div class="fr"><p>... qui font environ dix [coudees] ; ce sont les paroles de Rabbi Meir. Rabbi Yehouda dit : environ treize coudees et environ quatorze coudees.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שהן כעשר</b> אמות ששה בקר ולקמן פריך מאי כעשר הא עשר מכוונות הן:</div>
+          <div class="glose-fr">Qui font environ dix : coudees, six boeufs. Plus loin [la Guemara] objecte : pourquoi « environ dix », ce sont exactement dix !</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כי&quot;ג וי&quot;ד</b> שמונה בקר יצאו מכלל שלש עשרה ולכלל י&quot;ד לא באו די&quot;ג אמה ושליש הן:</div>
+          <div class="glose-fr">Environ 13 et 14 : huit boeufs depassent treize et n&#x27;atteignent pas quatorze, car ils font treize coudees et un tiers.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Fin de la baraita commencee au daf 19a. Elle donne la largeur des attelages de boeufs qui fixent l'ecart maximal entre les <b>passei bira</b> (poteaux entourant un puits). Un boeuf occupe <b>une coudee et deux tiers</b>.</p><p>Rabbi Meir : deux attelages de trois, soit <b>6 boeufs = 10 coudees</b>. Rabbi Yehouda : deux attelages de quatre, soit <b>8 boeufs = 13 coudees 1/3</b>.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 230" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs><rect x="0" y="0" width="760" height="230" fill="#fbfaf7"/><text x="380" y="26" text-anchor="middle" font-family="Helvetica,Arial" font-size="15" fill="#2b2b2b" font-weight="bold">Largeur de l'ecart en boeufs (1 boeuf = 1 coudee 2/3)</text><text x="20" y="82" text-anchor="start" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b" font-weight="bold">Rabbi Meir</text><rect x="132.0" y="66" width="46.0" height="26" rx="6" fill="#e9d9b8" stroke="#9a7b45" stroke-width="1"/><rect x="182.0" y="66" width="46.0" height="26" rx="6" fill="#e9d9b8" stroke="#9a7b45" stroke-width="1"/><rect x="232.0" y="66" width="46.0" height="26" rx="6" fill="#e9d9b8" stroke="#9a7b45" stroke-width="1"/><rect x="282.0" y="66" width="46.0" height="26" rx="6" fill="#e9d9b8" stroke="#9a7b45" stroke-width="1"/><rect x="332.0" y="66" width="46.0" height="26" rx="6" fill="#e9d9b8" stroke="#9a7b45" stroke-width="1"/><rect x="382.0" y="66" width="46.0" height="26" rx="6" fill="#e9d9b8" stroke="#9a7b45" stroke-width="1"/><line x1="130" y1="110" x2="430.0" y2="110" stroke="#8a3b3b" stroke-width="1.3" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="280.0" y="104" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#8a3b3b">6 x 1 2/3 = 10 coudees</text><text x="20" y="162" text-anchor="start" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b" font-weight="bold">Rabbi Yehouda</text><rect x="132.0" y="146" width="46.0" height="26" rx="6" fill="#e9d9b8" stroke="#9a7b45" stroke-width="1"/><rect x="182.0" y="146" width="46.0" height="26" rx="6" fill="#e9d9b8" stroke="#9a7b45" stroke-width="1"/><rect x="232.0" y="146" width="46.0" height="26" rx="6" fill="#e9d9b8" stroke="#9a7b45" stroke-width="1"/><rect x="282.0" y="146" width="46.0" height="26" rx="6" fill="#e9d9b8" stroke="#9a7b45" stroke-width="1"/><rect x="332.0" y="146" width="46.0" height="26" rx="6" fill="#e9d9b8" stroke="#9a7b45" stroke-width="1"/><rect x="382.0" y="146" width="46.0" height="26" rx="6" fill="#e9d9b8" stroke="#9a7b45" stroke-width="1"/><rect x="432.0" y="146" width="46.0" height="26" rx="6" fill="#e9d9b8" stroke="#9a7b45" stroke-width="1"/><rect x="482.0" y="146" width="46.0" height="26" rx="6" fill="#e9d9b8" stroke="#9a7b45" stroke-width="1"/><line x1="130" y1="190" x2="530.0" y2="190" stroke="#8a3b3b" stroke-width="1.3" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="330.0" y="184" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#8a3b3b">8 x 1 2/3 = 13 1/3 coudees</text></svg></div><div class="svg-cap">Six boeufs pour Rabbi Meir, huit pour Rabbi Yehouda.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">״כעשר״? הא עשר הויין! משום דבעי למיתנא סיפא ״כשלש עשרה״.</div>
+            <div class="fr"><p>« Environ dix » ? Ce sont [exactement] dix !</p><p>Parce qu&#x27;il voulait enseigner dans la fin « environ treize ».</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שהן כעשר אמות</b> לא שייך למיפרך מניינא אתא לאשמעינן כדפריך בפ&quot;ק דקדושין (דף יז.) כיון דלא השמיענו מנין פרות:</div>
+          <div class="glose-fr">Qui font environ dix coudees : on ne peut pas objecter ici « est-il venu nous apprendre a compter ? », comme on objecte au premier chapitre de Kiddouchin (17a), puisqu&#x27;il ne nous avait pas fait connaitre la mesure des vaches.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>6 x 1 2/3 = 10 exactement : le mot <b>« environ »</b> est inutile pour Rabbi Meir. Il est employe par symetrie avec la mesure de Rabbi Yehouda, qui, elle, est approximative.</p><p>Tossefot : ailleurs le Talmud rejette un total que chacun peut calculer. Ici le total apprend quelque chose, car la largeur d'une vache n'etait pas encore donnee.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">״כשלש עשרה״ — טפי הויין? משום דבעי למתני ״כארבע עשרה״. ״וכארבע עשרה״ — הא לא הויא? אמר רב פפא: יתירות על שלש עשרה, ואינן מגיעות לארבע עשרה.</div>
+            <div class="fr"><p>« Environ treize » : ils font davantage ? Parce qu&#x27;il voulait enseigner « environ quatorze ».</p><p>« Et environ quatorze » : ils n&#x27;y arrivent pas ? Rav Papa dit : [ils sont] au-dela de treize, et n&#x27;atteignent pas quatorze.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>13 1/3 n'est ni treize ni quatorze. Rav Papa explique la double expression : la mesure se situe <b>entre</b> les deux nombres.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר רב פפא: בבור שמונה דכולי עלמא לא פליגי דלא בעינן פשוטין.</div>
+            <div class="fr"><p>Rav Papa dit : pour une citerne de huit [coudees], tout le monde s&#x27;accorde qu&#x27;on n&#x27;a pas besoin de pechoutin.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בבור רחב שמונה</b> אפי&#x27; לר&quot;מ לא בעינן פשוטין דכי מרחיק כדי ראשה ורובה דהיינו שתי אמות לכל רוח נמצא החלל שבין ב&#x27; המחיצות שתים עשרה אמה והפסין רחבן אמה לכל רוח זה כנגד זה נמצא בין פס לפס שיעור פתח עשר אמות ור&#x27; מאיר בהכי שרי:</div>
+          <div class="glose-fr">Pour une citerne large de huit : meme pour Rabbi Meir, on n&#x27;a pas besoin de pechoutin. Car lorsqu&#x27;on eloigne [les poteaux] de la mesure de sa tete et de la majeure partie de son corps, c&#x27;est-a-dire deux coudees de chaque cote, l&#x27;espace entre les deux cloisons est de douze coudees ; les poteaux ont une coudee de large de chaque cote, l&#x27;un face a l&#x27;autre ; il reste entre poteau et poteau une ouverture de dix coudees, et Rabbi Meir permet cela.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Pechoutin</b> : planches simples, larges d'une coudee, placees entre les <b>dyomadin</b> (poteaux d'angle en L). La vache doit pouvoir boire avec la tete et la majeure partie du corps a l'interieur : on compte donc 2 coudees de chaque cote de la citerne.</p><p>8 + 2 + 2 = 12 ; moins une coudee de dyomad de chaque cote = <b>10</b>. Cet ecart est permis meme pour Rabbi Meir.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בבור שתים עשרה — דכולי עלמא לא פליגי דבעינן פשוטין.</div>
+            <div class="fr"><p>Pour une citerne de douze, tout le monde s&#x27;accorde qu&#x27;on a besoin de pechoutin.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בבור שתים עשרה</b> דכי מרחיק שתי אמות מכאן וכנגדם מכאן יש חלל המחיצה י&quot;ו אמה ומהן שתי אמות עומד הרי בין זה לזה י&quot;ד פרוץ וכולי האי לא שרי רבי יהודה ובעינן פשוטין לכל צד דמכל צד וצד איכא י&quot;ד אמות ולקמן מפרש היכא משוי להו:</div>
+          <div class="glose-fr">Pour une citerne de douze : quand on s&#x27;eloigne de deux coudees ici et autant en face, l&#x27;espace de la cloison est de seize coudees ; deux coudees en sont debout ; entre l&#x27;un et l&#x27;autre il y a donc quatorze coudees ouvertes. Rabbi Yehouda ne permet pas autant, et il faut des pechoutin de chaque cote, puisque de chaque cote il y a quatorze coudees. Plus loin [la Guemara] explique ou on les place.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בבור שתים עשרה כ&quot;ע לא פליגי</b> הוה מצי למנקט בבור אחת עשרה ושליש ומשהו ולא דק:</div>
+          <div class="glose-fr">Pour une citerne de douze, tout le monde s&#x27;accorde : il aurait pu dire « une citerne de onze coudees et un tiers et un peu plus », mais il n&#x27;a pas ete precis.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>12 + 4 - 2 = <b>14</b> coudees, ce qui depasse meme les 13 1/3 de Rabbi Yehouda.</p><p>Tossefot : le seuil exact de l'accord est une citerne d'un peu plus de 11 1/3 (11 1/3 + 4 - 2 = 13 1/3). Rav Papa arrondit.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כי פליגי — משמונה עד שתים עשרה. לרבי מאיר בעינן פשוטין. לרבי יהודה לא בעינן פשוטין.</div>
+            <div class="fr"><p>Ou ils divergent, c&#x27;est de huit a douze : pour Rabbi Meir, on a besoin de pechoutin ; pour Rabbi Yehouda, on n&#x27;a pas besoin de pechoutin.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Entre 8 et 12 coudees de citerne, l'ecart est entre 10 et 14 : au-dela du maximum de Rabbi Meir, en dessous (pour l'essentiel) de celui de Rabbi Yehouda. Voir le schema de synthese.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ורב פפא מאי קא משמע לן? תנינא?!</div>
+            <div class="fr"><p>Et que nous apprend Rav Papa ? Nous l&#x27;avons [deja] appris !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תנינא</b> לדרב פפא במתני&#x27; . דקתני לר&#x27; מאיר ששה בקר ולרבי יהודה שמונה בקר וממילא שמעינן דר&quot;מ שרי בהבדלת עשר ור&#x27; יהודה שרי בהבדלת שלש עשרה אמה ושליש וכי קבעי ר&#x27; מאיר פשוטין ביותר מעשר קאמר:</div>
+          <div class="glose-fr">Nous l&#x27;avons appris : [l&#x27;enseignement] de Rav Papa [est deja] dans la baraita, qui enseigne six boeufs pour Rabbi Meir et huit boeufs pour Rabbi Yehouda. On en deduit de soi-meme que Rabbi Meir permet une separation de dix, et Rabbi Yehouda une separation de treize coudees et un tiers ; et quand Rabbi Meir exige des pechoutin, il parle de plus de dix.</div>
+        </div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רב פפא ברייתא לא שמיע ליה, וקא משמע לן כברייתא.</div>
+            <div class="fr"><p>Rav Papa n&#x27;avait pas entendu la baraita, et il nous enseigne [de lui-meme] comme la baraita.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רב פפא הך ברייתא</b> דתנא שיעורא דעובי הפרות לא שמיע ליה ובמתני&#x27; לא פריש להו ואתא רב פפא לפרושי לך מתניתין דשיעורא דר&#x27; מאיר עשר אמות ודר&#x27; יהודה שלש עשרה אמה ושליש והסכים רב פפא מדעתו למה ששנינו בברייתא דראשה ורובה שתי אמו&#x27; ועוביה אמה ושני שלישי אמה:</div>
+          <div class="glose-fr">Rav Papa [n&#x27;avait pas entendu] cette baraita : qui enseigne la mesure de l&#x27;epaisseur des vaches ; dans la Michna, elle n&#x27;est pas expliquee. Rav Papa est venu t&#x27;expliquer la Michna : la mesure de Rabbi Meir est de dix coudees et celle de Rabbi Yehouda de treize coudees et un tiers. Rav Papa est arrive par son propre raisonnement a ce que nous avons appris dans la baraita : la tete et la majeure partie [du corps] font deux coudees, et son epaisseur une coudee et deux tiers.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רב פפא ברייתא לא שמיע ליה</b> והא דמשני לעיל אברייתא יתירות על שלש עשרה היינו בתר דשמעה:</div>
+          <div class="glose-fr">Rav Papa n&#x27;avait pas entendu la baraita : et ce qu&#x27;il a repondu plus haut sur la baraita, « au-dela de treize », c&#x27;est apres l&#x27;avoir entendue.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Tossefot releve une difficulte : au segment 2, Rav Papa explique justement la baraita. Reponse : il l'a entendue plus tard.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אריך יותר בתל חיצת חצר שיבשה סימן. בעא מיניה אביי מרבה: האריך בדיומדין כשיעור פשוטין, לרבי מאיר מהו?</div>
+            <div class="fr"><p>Arikh (prolonger), yoter (plus), betel (dans un tertre), hitsat (haie), hatser (cour), cheyavcha (qui s&#x27;est asseche) : moyen mnemotechnique. Abaye demanda a Rabba : s&#x27;il a prolonge les dyomadin de la mesure des pechoutin, qu&#x27;en est-il pour Rabbi Meir ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>האריך בדיומדיין</b> יותר מאמה לכל צד עד שהעמיד ריוח שבינתים על עשר אמות:</div>
+          <div class="glose-fr">Il a prolonge les dyomadin : de plus d&#x27;une coudee de chaque cote, jusqu&#x27;a ramener l&#x27;espace entre eux a dix coudees.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מהו</b> דווקא פשוטין קאמר דכיון דהרחיקן יותר משיעור חכמים בעינן היכר ביני ביני ולא סגי בהארכת דיומדין אלא מרחיק פורתא מן הפס ונותן שם פשוט וכן לאידך גיסא משום דליהוי היכירא או דילמא כיון דסוף סוף עשר ריוח הוא דאיכא לא מיתסר:</div>
+          <div class="glose-fr">Qu&#x27;en est-il : [Rabbi Meir] dit-il pechoutin precisement ? Puisqu&#x27;il les a eloignes au-dela de la mesure des Sages, il faut un signe entre eux, et prolonger les dyomadin ne suffit pas ; il faut s&#x27;eloigner un peu du poteau et placer la un pachout, et de meme de l&#x27;autre cote, pour qu&#x27;il y ait un signe. Ou bien, puisqu&#x27;en fin de compte il n&#x27;y a qu&#x27;un espace de dix, ce n&#x27;est pas interdit ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le <b>siman</b> (moyen mnemotechnique) resume les questions d'Abaye qui suivent, ici et au daf suivant.</p><p>Question : quand l'ecart depasse dix coudees, Rabbi Meir exige des pechoutin. Peut-on a la place <b>allonger les bras des dyomadin</b> pour ramener la breche a dix ? Ou faut-il une planche separee, qui forme un <b>signe</b> (<i>hekher</i>) visible au milieu ?</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 250" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs><rect x="0" y="0" width="760" height="250" fill="#fbfaf7"/><text x="380" y="26" text-anchor="middle" font-family="Helvetica,Arial" font-size="15" fill="#2b2b2b" font-weight="bold">Ecart trop large : deux facons d'y remedier</text><text x="190" y="64" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" fill="#2b2b2b" font-weight="bold">A. ajouter un pachout au milieu</text><line x1="30" y1="110" x2="350" y2="110" stroke="#ccc" stroke-dasharray="4,4"/><rect x="30" y="106" width="16" height="8" rx="0" fill="#b98a52" stroke="#7a5530" stroke-width="1"/><rect x="334" y="106" width="16" height="8" rx="0" fill="#b98a52" stroke="#7a5530" stroke-width="1"/><rect x="30" y="106" width="8" height="40" rx="0" fill="#b98a52" stroke="#7a5530" stroke-width="1"/><rect x="342" y="106" width="8" height="40" rx="0" fill="#b98a52" stroke="#7a5530" stroke-width="1"/><rect x="182.0" y="106" width="16" height="8" rx="0" fill="#d7a86a" stroke="#7a5530" stroke-width="1"/><text x="190.0" y="136" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#7a5530">pachout</text><text x="190" y="176" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#444">signe visible entre les deux breches</text><text x="560" y="64" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" fill="#2b2b2b" font-weight="bold">B. prolonger les dyomadin</text><line x1="400" y1="110" x2="720" y2="110" stroke="#ccc" stroke-dasharray="4,4"/><rect x="400" y="106" width="80" height="8" rx="0" fill="#b98a52" stroke="#7a5530" stroke-width="1"/><rect x="640" y="106" width="80" height="8" rx="0" fill="#b98a52" stroke="#7a5530" stroke-width="1"/><rect x="400" y="106" width="8" height="40" rx="0" fill="#b98a52" stroke="#7a5530" stroke-width="1"/><rect x="712" y="106" width="8" height="40" rx="0" fill="#b98a52" stroke="#7a5530" stroke-width="1"/><line x1="480" y1="96" x2="640" y2="96" stroke="#8a3b3b" stroke-width="1.3" marker-start="url(#ar)" marker-end="url(#ar)"/><text x="560.0" y="90" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#8a3b3b">breche reduite</text><text x="560" y="176" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#444">une seule breche, plus etroite</text><text x="380" y="214" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#333">Abaye : pour Rabbi Meir (breche > 10) et pour Rabbi Yehouda (breche > 13 1/3),</text><text x="380" y="232" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#333">la methode B est-elle valable, ou faut-il la methode A ?</text></svg></div><div class="svg-cap">Methode A : pachout au milieu. Methode B : dyomadin prolonges.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר ליה, תניתוה: ״ובלבד שירבה בפסין״. מאי לאו דמאריך בדיומדין? לא, דמפיש ועביד פשוטין.</div>
+            <div class="fr"><p>Il lui dit : vous l&#x27;avez appris : « a condition qu&#x27;il augmente dans les passin ». N&#x27;est-ce pas qu&#x27;il prolonge les dyomadin ?</p><p>Non : il en fait davantage, il fait des pechoutin.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Michna (17b) : on peut eloigner les passin du puits autant qu'on veut, <b>« a condition qu'il augmente dans les passin »</b>. Rabba y lit un elargissement des dyomadin ; Abaye repond que cela peut designer un plus grand nombre de pechoutin.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אי הכי, האי ״ובלבד שירבה בפסין״, ״עד שירבה פסין״ מיבעי ליה! תני ״עד שירבה פסין״.</div>
+            <div class="fr"><p>S&#x27;il en est ainsi, ce « a condition qu&#x27;il augmente dans les passin », il aurait fallu dire « jusqu&#x27;a ce qu&#x27;il augmente les passin » ! Enseigne : « jusqu&#x27;a ce qu&#x27;il augmente les passin ».</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La preposition <b>« dans »</b> (<i>be-passin</i>) suggere qu'on agrandit les passin eux-memes. La reponse corrige la formulation : on lit « augmenter les passin », c'est-a-dire leur nombre.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">איכא דאמרי: אמר ליה, תניתוה: ״ובלבד שירבה בפסין״. מאי לאו דמפיש ועביד פשוטין? לא, דמאריך בדיומדין.</div>
+            <div class="fr"><p>Certains disent : il lui dit : vous l&#x27;avez appris : « a condition qu&#x27;il augmente dans les passin ». N&#x27;est-ce pas qu&#x27;il en fait davantage, qu&#x27;il fait des pechoutin ?</p><p>Non : il prolonge les dyomadin.</p></div>
+            <div class="tools"></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הכי נמי מסתברא, מדקתני ״ובלבד שירבה בפסין״. שמע מינה.</div>
+            <div class="fr"><p>C&#x27;est aussi logique, puisqu&#x27;il enseigne « a condition qu&#x27;il augmente dans les passin ». Deduis-en.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Dans la seconde version, Rabba voulait prouver que les pechoutin sont obligatoires. La Guemara conclut au contraire que <b>be-passin</b> designe l'elargissement des dyomadin : pour Rabbi Meir, prolonger les dyomadin est valable.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בעא מיניה אביי מרבה: יותר משלש עשרה אמה ושליש לרבי יהודה מהו? פשוטין עביד, או בדיומדין מאריך?</div>
+            <div class="fr"><p>Abaye demanda a Rabba : [un ecart de] plus de treize coudees et un tiers, qu&#x27;en est-il pour Rabbi Yehouda ? Fait-il des pechoutin, ou prolonge-t-il les dyomadin ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לר&#x27; יהודה</b> דלא אדכר פשוטין הי עדיפא ליה פשוטין עדיפי ליה ומרוחקין מן הדיומדין י&quot;ג אמה למיהוי היכירא ביני ביני ולא סגי בהארכת דיומדין או הארכת דיומדין עדיפא דלא ליתי אוירא דהאי גיסא ודהאי גיסא ולבטלה:</div>
+          <div class="glose-fr">Pour Rabbi Yehouda : qui n&#x27;a pas mentionne de pechoutin, lequel prefere-t-il ? Les pechoutin, eloignes des dyomadin de treize coudees, pour qu&#x27;il y ait un signe entre eux, et la prolongation des dyomadin ne suffit pas ? Ou la prolongation des dyomadin est-elle preferable, pour que l&#x27;air de ce cote et de l&#x27;autre ne vienne pas l&#x27;annuler ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabbi Yehouda ne parle que de dyomadin. Au-dela de 13 1/3, que faut-il faire ? Rachi presente les deux raisonnements : le pachout donne un <b>signe</b> ; le dyomad prolonge evite qu'une planche isolee soit <b>annulee</b> par les breches qui l'entourent.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר ליה: תניתוה. כמה הן מקורבין — כדי ראשה ורובה של פרה. וכמה מרוחקין — אפילו כור ואפילו כוריים.</div>
+            <div class="fr"><p>Il lui dit : vous l&#x27;avez appris : a quelle distance peuvent-ils etre rapproches ? De la mesure de la tete et de la majeure partie [du corps] d&#x27;une vache.</p><p>Et a quelle distance peuvent-ils etre eloignes ? Meme un kor, meme deux kor.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כמה הן מקורבין</b> לבור:</div>
+          <div class="glose-fr">A quelle distance peuvent-ils etre rapproches : de la citerne.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אפילו כור</b> ובלבד שירבה בפסין:</div>
+          <div class="glose-fr">Meme un kor : a condition qu&#x27;il augmente les passin.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Kor</b> : ici, la surface ou l'on seme un kor de grain (<i>beit kor</i>), soit trente <i>beit se'a</i>. L'enclos peut etre tres vaste selon les Sages.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רבי יהודה אומר: בית סאתים מותר, יותר מבית סאתים אסור. אמרו לו לרבי יהודה: אי אתה מודה בדיר וסהר ומוקצה וחצר, אפילו בת חמשת כורים ואפילו בת עשרה כורים שמותר?</div>
+            <div class="fr"><p>Rabbi Yehouda dit : [une surface de] beit saatayim est permise, plus que beit saatayim est interdite. Ils dirent a Rabbi Yehouda : n&#x27;admets-tu pas, pour un dir (enclos), un sahar (etable), un mouktse (arriere-cour) et une cour, que meme d&#x27;une surface de cinq kor et meme de dix kor, c&#x27;est permis ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>יותר מבית סאתים אסור</b> שזה שיעור היקף שלא כתיקנו:</div>
+          <div class="glose-fr">Plus que beit saatayim est interdit : car c&#x27;est la mesure d&#x27;une enceinte qui n&#x27;a pas ete faite dans les regles.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דיר</b> מוקף לדירה שהרועה דר שם בלילה:</div>
+          <div class="glose-fr">Dir : enceinte faite pour habiter, ou le berger reside la nuit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Beit saatayim</b> (surface de deux se'a, 5000 coudees carrees) : limite d'un <b>karpef</b>, espace clos qui n'a pas ete entoure pour y habiter. Pour Rabbi Yehouda, l'enclos de passin est traite comme tel. Les Sages objectent avec les enclos habituels, permis quelle que soit leur taille.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg16">
+          <div class="seg-num">17</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר להן: זו מחיצה, ואלו פסין.</div>
+            <div class="fr"><p>Il leur dit : celle-ci est une cloison, et ceux-la sont des passin.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>זו מחיצה</b> שלימה היא:</div>
+          <div class="glose-fr">Celle-ci est une cloison : elle est complete.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ואלו פסין הן</b> ובין כל אחד ואחד שלש עשרה אמות ואין עומד אלא פס אמה בין כל שלש עשרה ושלש עשרה אלמא לרבי יהודה פשוטין עביד דאי בדיומדין מאריך הא מחיצה היא:</div>
+          <div class="glose-fr">Et ceux-la sont des passin : entre chacun il y a treize coudees, et il ne se dresse qu&#x27;un poteau d&#x27;une coudee toutes les treize coudees. On en deduit que, pour Rabbi Yehouda, on fait des pechoutin ; car si on prolongeait les dyomadin, ce serait une cloison.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>C'est la preuve de Rabba : Rabbi Yehouda appelle l'enclos du puits « passin », donc des planches isolees. Selon Rachi, cela montre qu'on ajoute des pechoutin et qu'on ne prolonge pas les dyomadin.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg17">
+          <div class="seg-num">18</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ואם איתא, זו מחיצה וזו היא מחיצה מיבעי ליה!</div>
+            <div class="fr"><p>S&#x27;il en etait ainsi, il aurait fallu dire : « celle-ci est une cloison et celle-la aussi est une cloison » !</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ואם איתא זו היא מחיצה וזו היא מחיצה מיבעי ליה</b> קשה דהכא פשיטא ליה דהארכת דיומדין עדיפי מפשוטין ולעיל אליבא דר&quot;מ משמע ליה איפכא וי&quot;ל דלעיל בעי היכי דכי נמי נאריך בדיומדין יהיה פרוץ מרובה דאז פשוטין עדיפי דאיכא היכר טפי אבל הכא איירי ברחב הרבה שאם נאריך הדיומדין יהיה עומד מרובה כדקתני אי אתה מודה בדיר וסהר ומוקצה שאפילו בית י&#x27; כורין או יותר מותר לכך פריך שפיר זו מחיצה וזו מחיצה מבעי ליה:</div>
+          <div class="glose-fr">S&#x27;il en etait ainsi, il aurait fallu dire « celle-ci est une cloison et celle-la est une cloison » : difficulte : ici, il est evident [pour la Guemara] que la prolongation des dyomadin vaut mieux que les pechoutin, alors que plus haut, selon Rabbi Meir, il semblait le contraire. On peut repondre : plus haut, il s&#x27;agit d&#x27;un cas ou, meme si l&#x27;on prolonge les dyomadin, l&#x27;ouvert sera majoritaire ; alors les pechoutin valent mieux, car ils forment un signe plus net. Ici, il s&#x27;agit d&#x27;un espace tres large, ou, si l&#x27;on prolonge les dyomadin, le ferme sera majoritaire, comme il enseigne : « n&#x27;admets-tu pas pour un dir, un sahar et un mouktse que meme dix kor ou davantage, c&#x27;est permis ? » C&#x27;est pourquoi il objecte a juste titre : il aurait fallu dire « celle-ci est une cloison et celle-la est une cloison ».</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection a la preuve : si l'on prolongeait les dyomadin, l'enclos serait une vraie cloison, et Rabbi Yehouda n'aurait pas pu l'opposer a la cour. Il faudrait donc conclure qu'on met des pechoutin.</p><p>Tossefot distingue selon la proportion d'<b>omed</b> (partie fermee) et de <b>parouts</b> (partie ouverte) : quand le ferme est majoritaire, le dyomad prolonge devient une vraie cloison.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg18">
+          <div class="seg-num">19</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הכי קאמר: זו תורת מחיצה עליה — ופרצותיה בעשר, ואלו תורת פסין עליהן — ופרצותיהן בשלש עשרה אמה ושליש.</div>
+            <div class="fr"><p>Voici ce qu&#x27;il dit : celle-ci a le statut de cloison, et ses breches [sont limitees] a dix ; ceux-la ont le statut de passin, et leurs breches [vont jusqu&#x27;a] treize coudees et un tiers.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ופירצתה</b> אוסרת ביותר מעשר:</div>
+          <div class="glose-fr">Et ses breches : interdisent au-dela de dix.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ואלו תורת פסין עליהן</b> ויש י&quot;ג אמה בין הארכה להארכה הלכך ביותר מבית סאתים לא מיתכשר:</div>
+          <div class="glose-fr">Et ceux-la ont le statut de passin : il y a treize coudees entre une prolongation et l&#x27;autre ; c&#x27;est pourquoi, au-dela de beit saatayim, ce n&#x27;est pas valable.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara repousse la preuve : la difference entre cour et passin porte sur la <b>largeur de breche toleree</b> (10 contre 13 1/3). Meme avec des dyomadin prolonges, l'enclos garde le statut de passin. La baraita ne tranche donc pas la question d'Abaye.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg19">
+          <div class="seg-num">20</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בעא מיניה אביי מרבה: תל המתלקט עשרה מתוך ארבע, נידון משום דיומד או אינו נידון משום דיומד?</div>
+            <div class="fr"><p>Abaye demanda a Rabba : un tertre qui s&#x27;eleve de dix [tefahim] sur une distance de quatre [coudees], est-il considere comme un dyomad ou n&#x27;est-il pas considere comme un dyomad ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תל המתלקט י&#x27;</b> טפחים:</div>
+          <div class="glose-fr">Un tertre qui s&#x27;eleve de dix : tefahim.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מתוך ד&#x27;</b> אמות תל משופע אבל מדרונו זקוף קודם שימשך ד&#x27; אמות עלה ונתלקט גובהו לי&#x27; טפחים וקי&quot;ל בהזורק במס&#x27; שבת (דף ק.) דלענין שבת הוי רשות היחיד הכא מאי אי קאי במקום א&#x27; מן הדיומדין מי הוי כדיומד או לא ולהכי נקט מתוך ד&#x27; שאם היה מדרונו משופע יפה ואינו מתלקט לגובה עשרה עד שימשך יותר מד&#x27; אמות ואפי&#x27; עלה גובהו לשפוע לעשר אמות ארעא סמיכתא היא:</div>
+          <div class="glose-fr">Sur une distance de quatre : coudees. Un tertre en pente, mais dont la pente est raide : avant de s&#x27;etendre sur quatre coudees, il est monte et sa hauteur a atteint dix tefahim. Nous tenons [au chapitre] Hazorek, dans le traite Chabbat (100a), que pour Chabbat c&#x27;est un domaine prive (reshout hayahid). Ici, qu&#x27;en est-il : s&#x27;il se trouve a l&#x27;emplacement de l&#x27;un des dyomadin, est-il comme un dyomad ou non ? C&#x27;est pourquoi il precise « sur quatre » : car si sa pente etait bien douce et n&#x27;atteignait pas dix de hauteur avant de s&#x27;etendre sur plus de quatre coudees, meme si sa hauteur montait en pente jusqu&#x27;a dix coudees, c&#x27;est un sol en pente (ara semikhta).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Tel mitlaket</b> : tertre dont la pente atteint 10 tefahim de hauteur en moins de 4 coudees. Pour Chabbat, il vaut une cloison. Peut-il remplacer un <b>dyomad</b> a un angle de l'enclos ?</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 240" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="760" height="240" fill="#fbfaf7"/><text x="380" y="26" text-anchor="middle" font-family="Helvetica,Arial" font-size="15" fill="#2b2b2b" font-weight="bold">Tel mitlaket : le tertre qui s'eleve de 10 tefahim</text><path d="M40,190 L200,190 L200,110 Z" fill="#d9c7a3" stroke="#8a7042" stroke-width="1.5"/><path d="M40,190 L200,110" stroke="#8a7042" fill="none"/><text x="120" y="210" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#444">moins de 4 coudees</text><text x="222" y="150" text-anchor="start" font-family="Helvetica,Arial" font-size="11" fill="#444">10 tefahim</text><text x="160" y="70" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" fill="#2f6b3a" font-weight="bold">escarpe : mitlaket</text><text x="160" y="88" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#666">(reshout hayahid pour Chabbat)</text><path d="M400,190 L720,190 L720,120 Z" fill="#e7ddc6" stroke="#8a7042" stroke-width="1.5"/><text x="560" y="210" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#444">plus de 4 coudees</text><text x="560" y="70" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" fill="#a44" font-weight="bold">pente douce : ara semikhta</text><text x="560" y="88" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#666">(simple sol en pente, jamais dyomad)</text></svg></div><div class="svg-cap">Tertre escarpe (mitlaket) et pente douce (ara semikhta).</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg20">
+          <div class="seg-num">21</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר ליה, תניתוה: רבי שמעון בן אלעזר אומר: היתה שם אבן מרובעת רואין, כל שאילו תחלק ויש בה אמה לכאן ואמה לכאן נידון משום דיומד, ואם לאו אינו נידון משום דיומד.</div>
+            <div class="fr"><p>Il lui dit : vous l&#x27;avez appris : Rabbi Chimon ben Elazar dit : s&#x27;il y avait la une pierre carree, on regarde : si, en la divisant, il y aurait une coudee d&#x27;un cote et une coudee de l&#x27;autre, elle est consideree comme un dyomad ; sinon, elle n&#x27;est pas consideree comme un dyomad.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מרובעת</b> אמה על אמה ואינה מחוסרת אלא חליקה שינטל עובי שבינתים ותיעשה כמרזב דופן לכאן ודופן לכאן:</div>
+          <div class="glose-fr">Carree : une coudee sur une coudee, et il ne lui manque que la division : qu&#x27;on retire l&#x27;epaisseur du milieu et qu&#x27;elle devienne comme une gouttiere, une paroi d&#x27;un cote et une paroi de l&#x27;autre.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Roin</b> (« on regarde ») : on considere l'objet comme s'il avait subi la transformation qui en ferait un dyomad. Pour la pierre carree, une seule operation suffit : l'evider pour obtenir un angle en L.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg21">
+          <div class="seg-num">22</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רבי ישמעאל בנו של רבי יוחנן בן ברוקה אומר: היתה שם אבן עגולה, רואין כל שאילו תחקק ותחלק ויש בה אמה לכאן ואמה לכאן — נידון משום דיומד, ואם לאו — אינו נידון משום דיומד.</div>
+            <div class="fr"><p>Rabbi Yichmael, fils de Rabbi Yohanan ben Beroka, dit : s&#x27;il y avait la une pierre ronde, on regarde : si, en la taillant et en la divisant, il y aurait une coudee d&#x27;un cote et une coudee de l&#x27;autre, elle est consideree comme un dyomad ; sinon, elle n&#x27;est pas consideree comme un dyomad.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>עגולה</b> מחוסרת חקיקה לחקוק וליטול בליטת עיגול ולהשוות אמצעה לפיאותיה ותהא מרובעת ועדיין היא מחוסרת חליקה:</div>
+          <div class="glose-fr">Ronde : il lui manque la taille, pour tailler et retirer la saillie arrondie et egaliser son milieu avec ses coins, afin qu&#x27;elle soit carree ; et il lui manque encore la division.</div>
+        </div></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs><rect x="0" y="0" width="760" height="300" fill="#fbfaf7"/><text x="380" y="26" text-anchor="middle" font-family="Helvetica,Arial" font-size="15" fill="#2b2b2b" font-weight="bold">Roin : voir la pierre comme si elle etait taillee</text><text x="20" y="100" text-anchor="start" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b" font-weight="bold">pierre carree</text><rect x="150" y="60" width="70" height="70" rx="0" fill="#c9c4bb" stroke="#666" stroke-width="1.5"/><line x1="230" y1="95" x2="300" y2="95" stroke="#555" stroke-width="1.6" marker-end="url(#ar)"/><text x="265" y="85" text-anchor="middle" font-family="Helvetica,Arial" font-size="10" fill="#555">roin 1 : evider</text><path d="M320,60 L390,60 L390,72 L332,72 L332,130 L320,130 Z" fill="#c9c4bb" stroke="#666" stroke-width="1.5"/><text x="430" y="90" text-anchor="start" font-family="Helvetica,Arial" font-size="12" fill="#2f6b3a">= dyomad : une coudee</text><text x="430" y="106" text-anchor="start" font-family="Helvetica,Arial" font-size="12" fill="#2f6b3a">de chaque cote</text><text x="20" y="210" text-anchor="start" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b" font-weight="bold">pierre ronde</text><circle cx="185.0" cy="205.0" r="43.0" fill="#c9c4bb" stroke="#666" stroke-width="1.5"/><line x1="238" y1="205" x2="290" y2="205" stroke="#555" stroke-width="1.6" marker-end="url(#ar)"/><text x="264" y="195" text-anchor="middle" font-family="Helvetica,Arial" font-size="10" fill="#555">roin 1</text><rect x="300" y="170" width="70" height="70" rx="0" fill="#c9c4bb" stroke="#666" stroke-width="1.5"/><line x1="378" y1="205" x2="430" y2="205" stroke="#555" stroke-width="1.6" marker-end="url(#ar)"/><text x="404" y="195" text-anchor="middle" font-family="Helvetica,Arial" font-size="10" fill="#555">roin 2</text><path d="M440,170 L510,170 L510,182 L452,182 L452,240 L440,240 Z" fill="#c9c4bb" stroke="#666" stroke-width="1.5"/><text x="530" y="192" text-anchor="start" font-family="Helvetica,Arial" font-size="12" fill="#a44">Rabbi Chimon ben Elazar : non</text><text x="530" y="210" text-anchor="start" font-family="Helvetica,Arial" font-size="11" fill="#a44">(un seul roin)</text><text x="530" y="232" text-anchor="start" font-family="Helvetica,Arial" font-size="12" fill="#2f6b3a">Rabbi Yichmael : oui</text><text x="530" y="250" text-anchor="start" font-family="Helvetica,Arial" font-size="11" fill="#2f6b3a">(deux roin ; le tel aussi)</text></svg></div><div class="svg-cap">Pierre carree : un roin. Pierre ronde : deux roin.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg22">
+          <div class="seg-num">23</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">במאי קא מיפלגי? מר סבר: חד רואין אמרינן, תרי רואין לא אמרינן, ומר סבר: אפילו תרי רואין נמי אמרינן.</div>
+            <div class="fr"><p>Sur quoi divergent-ils ? L&#x27;un pense : on dit un seul roin, on ne dit pas deux roin ; et l&#x27;autre pense : on dit meme deux roin.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אמרי&#x27; נמי תרי רואין</b> לר&#x27; ישמעאל ותל נמי כאבן עגולה דמי לתנא קמא לא אמרינן תרי רואין:</div>
+          <div class="glose-fr">On dit aussi deux roin : pour Rabbi Yichmael ; et le tertre aussi est comparable a une pierre ronde. Pour le Tana Kama, on ne dit pas deux roin.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le tertre doit, comme la pierre ronde, etre imagine taille puis evide : <b>deux roin</b>. Selon Rabbi Yichmael il sert de dyomad ; selon Rabbi Chimon ben Elazar, non. La reponse a Abaye depend de cette <b>mahloket</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg23">
+          <div class="seg-num">24</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בעא מיניה אביי מרבה: חיצת הקנים קנה קנה פחות משלשה, נידון משום דיומד או לאו?</div>
+            <div class="fr"><p>Abaye demanda a Rabba : une haie de roseaux, chaque roseau [a] moins de trois [tefahim de l&#x27;autre], est-elle consideree comme un dyomad ou non ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>חיצת קנים</b> שעשאה לכאן ולכאן כעין דיומד:</div>
+          <div class="glose-fr">Une haie de roseaux : qu&#x27;il a faite d&#x27;un cote et de l&#x27;autre, en forme de dyomad.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Des roseaux separes de moins de 3 tefahim sont relies par le principe de <b>lavoud</b> (un espace de moins de trois tefahim est considere comme ferme). Forment-ils un dyomad valable ?</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg24">
+          <div class="seg-num">25</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר ליה, תניתוה: היה שם אילן או גדר או חיצת הקנים נידון משום דיומד. מאי לאו, קנה קנה פחות משלשה?</div>
+            <div class="fr"><p>Il lui dit : vous l&#x27;avez appris : s&#x27;il y avait la un arbre, une cloture ou une haie de roseaux, elle est consideree comme un dyomad. N&#x27;est-ce pas [des roseaux], chacun [a] moins de trois ?</p></div>
+            <div class="tools"></div>
+          </div>
+        </section><section class="seg" id="seg25">
+          <div class="seg-num">26</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לא, גודריתא דקני. אי הכי — היינו אילן.</div>
+            <div class="fr"><p>Non : une touffe de roseaux. S&#x27;il en est ainsi, c&#x27;est [le cas de] l&#x27;arbre !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>גודריתא דקני</b> קנים מחוברים הרבה בעץ א&#x27; סמוך לארץ ומלמעלה הן מתפרשין:</div>
+          <div class="glose-fr">Une touffe de roseaux : de nombreux roseaux reunis en une seule tige pres du sol, et qui se separent en haut.</div>
+        </div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg26">
+          <div class="seg-num">27</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ואלא מאי: קנה קנה פחות משלשה — היינו גדר! אלא מאי אית לך למימר, תרי גווני גדר? הכא נמי — תרי גווני אילן.</div>
+            <div class="fr"><p>Et sinon quoi ? Chaque roseau a moins de trois, c&#x27;est [le cas de] la cloture !</p><p>Ce que tu dois dire, c&#x27;est deux sortes de cloture ; ici aussi, deux sortes d&#x27;arbre.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תרי גווני אילן</b> אשמעי&#x27; אילן שלם דאיכא למימר יחלק ויחקק ואשמעי&#x27; האי אע&quot;ג דליכא למימר הכי שרי הואיל ותחתיו אחד הוא כדיומד אבל קנה פחות מג&#x27; לא:</div>
+          <div class="glose-fr">Deux sortes d&#x27;arbre : il nous apprend [le cas d&#x27;]un arbre entier, dont on peut dire qu&#x27;on le divise et qu&#x27;on le taille ; et il nous apprend [le cas de] celui-ci, qui est permis bien qu&#x27;on ne puisse pas dire cela, puisqu&#x27;en bas il est un, comme un dyomad. Mais des roseaux a moins de trois, non.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Chaque lecture fait apparemment double emploi avec un autre terme de la baraita. La Guemara repond qu'une baraita peut enumerer <b>deux varietes</b> d'un meme cas ; la preuve tombe.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg27">
+          <div class="seg-num">28</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">איכא דאמרי: גודריתא דקני קא מיבעיא ליה. גודריתא דקני מאי? אמר ליה, תניתוה: היה שם גדר או אילן או חיצת הקנים נידון משום דיומד. מאי לאו, גודריתא דקני?</div>
+            <div class="fr"><p>Certains disent : c&#x27;est la touffe de roseaux qu&#x27;il demandait. Une touffe de roseaux, qu&#x27;en est-il ?</p><p>Il lui dit : vous l&#x27;avez appris : s&#x27;il y avait la une cloture, un arbre ou une haie de roseaux, elle est consideree comme un dyomad. N&#x27;est-ce pas une touffe de roseaux ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מאי לאו גודריתא דקני</b> וש&quot;מ דאע&quot;ג דאין עוביו ד&#x27; בגובה עשרה אמרינן רואין:</div>
+          <div class="glose-fr">N&#x27;est-ce pas une touffe de roseaux : on en deduit que, bien qu&#x27;elle n&#x27;ait pas quatre d&#x27;epaisseur a une hauteur de dix, on dit roin.</div>
+        </div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg28">
+          <div class="seg-num">29</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לא, קנה קנה פחות משלשה. אי הכי, היינו גדר!</div>
+            <div class="fr"><p>Non : chaque roseau a moins de trois. S&#x27;il en est ainsi, c&#x27;est [le cas de] la cloture !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לא קנה קנה פחות מג&#x27;</b> דעשוי כדיומד ממש ובלא רואין איכא תיקון מעליא:</div>
+          <div class="glose-fr">Non, chaque roseau a moins de trois : qui est fait exactement comme un dyomad ; sans roin, il y a une installation valable.</div>
+        </div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg29">
+          <div class="seg-num">30</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ואלא מאי: גודריתא דקני — היינו אילן! אלא מאי אית לך למימר,</div>
+            <div class="fr"><p>Et sinon quoi ? Une touffe de roseaux, c&#x27;est [le cas de] l&#x27;arbre !</p><p>Ce que tu dois dire, c&#x27;est ...</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La phrase se poursuit au daf 20a, sur le modele de la premiere version : deux sortes de cloture, deux sortes d'arbre.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Eruvin_19a.html">&lsaquo; Eruvin 19a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Eruvin_20a.html">Eruvin 20a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yoma 27a -- quel verset dispense l&#x27;ecorchement et le decoupage du cohen, et comment trois pluriels donnent six cohanim.</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Yoma 27a -- quel verset dispense l&#x27;ecorchement et le decoupage du cohen, et comment trois pluriels donnent six cohanim.</h1>
+    <div class="ref">Yoma 27a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_26b.html">&lsaquo; Yoma 26b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> Le daf poursuit la discussion ouverte a la fin de 26b : d&#x27;ou sait-on que l&#x27;ecorchement (hefchet) et le decoupage (nitouah) de la bete sont valables meme accomplis par un zar, un non-cohen ? Hizkiya le tirait du verset sur la mise du feu ; la Guemara objecte que ce verset sert pour lui-meme.</p><p>Rav Chimi bar Achi rapporte alors la lecon qu&#x27;Abaye donnait a son fils : une baraita du Torat Cohanim etablit, par la place du mot cohen dans Levitique 1,5, que la kehouna ne commence qu&#x27;au recueil du sang -- mi-kabbala ve-eilakh mitsvat kehouna -- et que la chehita, accomplie par le proprietaire lui-meme, est valable par un zar. Cette regle rend superflue toute mention ulterieure du cohen dans le chapitre, et le daf devient une chasse au verset vraiment disponible : celui de la mise du feu est ecarte car il enseigne que la kehouna vaut meme pour un service qui n&#x27;empeche pas l&#x27;expiation ; celui de la disposition des morceaux resiste plus longtemps -- la Guemara ecarte d&#x27;abord l&#x27;hypothese qu&#x27;il dispense la pose des deux buches, en montrant par le verset du portage des membres que cette pose exige au contraire un cohen -- puis tombe a son tour, car ses pluriels servent a un comptage.</p><p>Reste le verset de la combustion, « et le cohen fera fumer le tout », seul reellement superflu : c&#x27;est lui qui porte l&#x27;exclusion. Le daf se cloture sur le comptage : les trois pluriels de Levitique 1,8 donnent six cohanim pour l&#x27;agneau, ce que Rabbi Elazar trouve difficile puisque le verset parle d&#x27;un taureau -- et il repond par les mots surnumeraires du verset, qui designent l&#x27;offrande pour laquelle bois, feu et autel ont ete specialement prescrits.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 560" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="560" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Levitique 1, verset par verset : ou la Torah nomme le cohen, et ou elle se tait</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">Tout le daf tient dans cette colonne de gauche. Chaque mention du cohen apres le v. 5 est de trop : c est ce surplus qui legifere.</text>
+
+  <rect x="36" y="58" width="688" height="30" rx="6" fill="#292524"/>
+  <text x="52" y="78" font-size="11.4" font-weight="700" fill="#fafaf9">Verset</text>
+  <text x="250" y="78" font-size="11.4" font-weight="700" fill="#fafaf9">Acte decrit</text>
+  <text x="470" y="78" font-size="11.4" font-weight="700" fill="#fafaf9">Le cohen est-il nomme ?</text>
+
+  <rect x="36" y="90" width="688" height="46" fill="#f5f5f4" stroke="#d6d3d1"/>
+  <text x="52" y="110" font-size="11" font-weight="700" fill="#292524">1,4</text>
+  <text x="52" y="127" font-size="9.6" fill="#57534e">ve-samakh yado</text>
+  <text x="250" y="110" font-size="11" fill="#292524">Il pose sa main sur la bete</text>
+  <text x="250" y="127" font-size="9.6" fill="#78716c">C est le proprietaire de l offrande qui agit</text>
+  <text x="470" y="118" font-size="11" fill="#6b7280">Non - sujet = le proprietaire</text>
+
+  <rect x="36" y="138" width="688" height="46" fill="#ecfdf5" stroke="#10b981" stroke-width="1.4"/>
+  <text x="52" y="158" font-size="11" font-weight="700" fill="#065f46">1,5 a</text>
+  <text x="52" y="175" font-size="9.6" fill="#047857">ve-chahat</text>
+  <text x="250" y="158" font-size="11" font-weight="700" fill="#065f46">CHEHITA - l abattage</text>
+  <text x="250" y="175" font-size="9.6" fill="#047857">Meme sujet que ve-samakh : le proprietaire</text>
+  <text x="470" y="166" font-size="11" font-weight="700" fill="#065f46">Non - donc valable par un zar</text>
+
+  <rect x="36" y="186" width="688" height="46" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <text x="52" y="206" font-size="11" font-weight="700" fill="#1e40af">1,5 b</text>
+  <text x="52" y="223" font-size="9.6" fill="#1d4ed8">ve-hikrivou bnei Aharon</text>
+  <text x="250" y="206" font-size="11" font-weight="700" fill="#1e40af">KABBALA - le recueil du sang</text>
+  <text x="250" y="223" font-size="9.6" fill="#1d4ed8">Verset-charniere de tout le chapitre</text>
+  <text x="470" y="206" font-size="11" font-weight="700" fill="#1e40af">Oui - et c est ici que la regle nait :</text>
+  <text x="470" y="223" font-size="10.4" font-weight="700" fill="#1e40af">de la kabbala et au-dela, mitsvat kehouna</text>
+
+  <rect x="36" y="234" width="688" height="42" fill="#fef2f2" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="52" y="254" font-size="11" font-weight="700" fill="#7f1d1d">1,6</text>
+  <text x="52" y="270" font-size="9.6" fill="#991b1b">ve-hifchit... ve-nitah</text>
+  <text x="250" y="254" font-size="11" font-weight="700" fill="#7f1d1d">HEFCHET et NITOUAH</text>
+  <text x="250" y="270" font-size="9.6" fill="#991b1b">Ecorchement et decoupage de la bete</text>
+  <text x="470" y="262" font-size="11" font-weight="700" fill="#7f1d1d">Non - c est ce silence qu il faut expliquer</text>
+
+  <rect x="36" y="278" width="688" height="42" fill="#fefce8" stroke="#ca8a04" stroke-width="1.4"/>
+  <text x="52" y="298" font-size="11" font-weight="700" fill="#713f12">1,7</text>
+  <text x="52" y="314" font-size="9.6" fill="#854d0e">ve-natnou bnei Aharon ech</text>
+  <text x="250" y="298" font-size="11" fill="#713f12">Ils mettent le feu sur l autel</text>
+  <text x="470" y="298" font-size="11" font-weight="700" fill="#713f12">Oui - mention en trop ? candidat n 1</text>
+  <text x="470" y="314" font-size="9.6" fill="#854d0e">rejete : elle sert pour elle-meme (v. seg. 3)</text>
+
+  <rect x="36" y="322" width="688" height="42" fill="#fefce8" stroke="#ca8a04" stroke-width="1.4"/>
+  <text x="52" y="342" font-size="11" font-weight="700" fill="#713f12">1,8</text>
+  <text x="52" y="358" font-size="9.6" fill="#854d0e">ve-arkhou bnei Aharon ha-kohanim</text>
+  <text x="250" y="342" font-size="11" fill="#713f12">Ils disposent les morceaux sur le bucher</text>
+  <text x="470" y="342" font-size="11" font-weight="700" fill="#713f12">Oui - mention en trop ? candidat n 2</text>
+  <text x="470" y="358" font-size="9.6" fill="#854d0e">rejete : elle sert pour le compte des six</text>
+
+  <rect x="36" y="366" width="688" height="46" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="52" y="386" font-size="11" font-weight="700" fill="#14532d">1,9</text>
+  <text x="52" y="403" font-size="9.6" fill="#166534">ve-hiktir ha-kohen et ha-kol</text>
+  <text x="250" y="386" font-size="11" fill="#14532d">Le cohen fait fumer le tout sur l autel</text>
+  <text x="470" y="386" font-size="11" font-weight="700" fill="#14532d">Oui - REPONSE FINALE du daf</text>
+  <text x="470" y="403" font-size="9.6" fill="#166534">elle exclut hefchet et nitouah</text>
+
+  <rect x="36" y="414" width="688" height="42" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.4"/>
+  <text x="52" y="434" font-size="11" font-weight="700" fill="#4c1d95">1,13</text>
+  <text x="52" y="450" font-size="9.6" fill="#5b21b6">ve-hikriv ha-kohen et ha-kol</text>
+  <text x="250" y="434" font-size="11" fill="#4c1d95">Portage des membres jusqu a la rampe</text>
+  <text x="470" y="434" font-size="11" font-weight="700" fill="#4c1d95">Oui - exclut le portage du BOIS</text>
+  <text x="470" y="450" font-size="9.6" fill="#5b21b6">donc la pose des buches, elle, exige un cohen</text>
+
+  <rect x="36" y="470" width="688" height="76" rx="10" fill="#1c1917"/>
+  <text x="52" y="493" font-size="12" font-weight="700" fill="#fef3c7">La logique unique du daf, en une phrase</text>
+  <text x="52" y="514" font-size="10.6" fill="#e7e5e4">Apres 1,5 b, toute mention du cohen est deja acquise par la regle generale : elle est donc superflue.</text>
+  <text x="52" y="533" font-size="10.6" fill="#e7e5e4">Un mot superflu doit travailler ailleurs : il sert de mi'out, une exclusion. Reste a savoir QUOI il exclut.</text>
+</svg></div>
+          <figcaption>La table de lecture du daf : dans Levitique 1, la kehouna est acquise des le v. 5 b ; toute mention ulterieure du cohen est un surplus qui doit servir a exclure quelque chose.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 520" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="520" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">La chasse au verset : quatre candidats pour un seul poste</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">Question fixe : quel verset apprend que l ecorchement et le decoupage sont valables par un zar ?</text>
+
+  <rect x="30" y="58" width="700" height="52" rx="9" fill="#fef2f2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="380" y="80" text-anchor="middle" font-size="12.4" font-weight="700" fill="#7f1d1d">Le critere de recevabilite d un candidat</text>
+  <text x="380" y="99" text-anchor="middle" font-size="10.4" fill="#7f1d1d">Un verset ne peut exclure que s il est REELLEMENT superflu. S il sert deja a autre chose - il est disqualifie.</text>
+
+  <rect x="30" y="124" width="700" height="72" rx="9" fill="#fefce8" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="46" y="146" font-size="12.4" font-weight="700" fill="#713f12">CANDIDAT 1 - ve-natnou bnei Aharon ech (1,7), la mise du feu</text>
+  <text x="46" y="166" font-size="10.4" fill="#78350f">Hizkiya, a la fin de 26b, batissait sur lui. Objection : il sert pour lui-meme.</text>
+  <text x="46" y="185" font-size="10.4" fill="#78350f">On aurait cru que le feu, qui n empeche pas la kappara (l expiation), soit dispense de kehouna. Le verset dit que non.</text>
+  <text x="672" y="168" text-anchor="middle" font-size="24" font-weight="700" fill="#dc2626">X</text>
+
+  <rect x="30" y="208" width="700" height="94" rx="9" fill="#fefce8" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="46" y="230" font-size="12.4" font-weight="700" fill="#713f12">CANDIDAT 2 - ve-arkhou bnei Aharon ha-kohanim (1,8), la pose des morceaux</text>
+  <text x="46" y="250" font-size="10.4" fill="#78350f">Il resiste plus longtemps : deux objections successives sont d abord ecartees</text>
+  <text x="60" y="269" font-size="10.2" fill="#78350f">a) et s il excluait plutot la pose des deux buches ? - non : la Guemara le refute au moyen du v. 1,13</text>
+  <text x="60" y="287" font-size="10.2" fill="#78350f">b) mais il sert pour lui-meme : ses trois pluriels comptent les six cohanim de l agneau (segment 11)</text>
+  <text x="672" y="255" text-anchor="middle" font-size="24" font-weight="700" fill="#dc2626">X</text>
+
+  <rect x="30" y="314" width="700" height="76" rx="9" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.2"/>
+  <text x="46" y="336" font-size="12.4" font-weight="700" fill="#14532d">CANDIDAT 3 - ve-hiktir ha-kohen et ha-kol (1,9), la combustion</text>
+  <text x="46" y="356" font-size="10.4" fill="#166534">Aucune tache propre a assurer : la kehouna de la haktara est deja donnee par la regle de 1,5 b.</text>
+  <text x="46" y="375" font-size="10.4" font-weight="700" fill="#166534">Verset reellement superflu = verset disponible. C est lui qui exclut hefchet et nitouah. RETENU.</text>
+  <text x="672" y="358" text-anchor="middle" font-size="24" font-weight="700" fill="#16a34a">V</text>
+
+  <rect x="30" y="402" width="700" height="100" rx="9" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.6"/>
+  <text x="46" y="424" font-size="12.4" font-weight="700" fill="#4c1d95">HORS CONCOURS - ve-hikriv ha-kohen et ha-kol ha-mizbeha (1,13), le portage des membres</text>
+  <text x="46" y="444" font-size="10.4" fill="#5b21b6">Ce verset a deja son emploi, connu d avant : il exclut le portage du BOIS jusqu a l autel.</text>
+  <text x="46" y="463" font-size="10.4" fill="#5b21b6">Il sert donc d ARBITRE, pas de candidat : puisqu il a fallu un verset pour dispenser le portage du bois,</text>
+  <text x="46" y="481" font-size="10.4" font-weight="700" fill="#5b21b6">c est que la POSE des buches, elle, exige la kehouna - ce qui elimine l hypothese a) du candidat 2.</text>
+</svg></div>
+          <figcaption>Le daf est une elimination : trois versets se presentent pour porter l exclusion de l ecorchement et du decoupage, deux sont disqualifies parce qu ils ont deja un emploi, le troisieme est retenu.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 500" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="500" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Les six cohanim de l agneau : comment trois pluriels font un chiffre</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">Regle de lecture : un pluriel non precise vaut deux (mi'out rabim chnayim). Le verset 1,8 en aligne trois.</text>
+
+  <rect x="60" y="60" width="640" height="40" rx="8" fill="#f5f5f4" stroke="#78716c" stroke-width="1.4"/>
+  <text x="380" y="86" text-anchor="middle" font-size="13" font-weight="700" fill="#292524">ve-arkhou    bnei Aharon    ha-kohanim    et ha-netahim...</text>
+
+  <path d="M 150 100 L 150 128" stroke="#2563eb" stroke-width="1.8" fill="none"/>
+  <path d="M 330 100 L 330 128" stroke="#2563eb" stroke-width="1.8" fill="none"/>
+  <path d="M 510 100 L 510 128" stroke="#2563eb" stroke-width="1.8" fill="none"/>
+
+  <rect x="70" y="128" width="160" height="66" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="150" y="150" text-anchor="middle" font-size="11.4" font-weight="700" fill="#1e40af">ve-arkhou</text>
+  <text x="150" y="168" text-anchor="middle" font-size="10.2" fill="#1e3a8a">et ils disposeront</text>
+  <text x="150" y="187" text-anchor="middle" font-size="13" font-weight="700" fill="#1e40af">= 2</text>
+
+  <rect x="250" y="128" width="160" height="66" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="330" y="150" text-anchor="middle" font-size="11.4" font-weight="700" fill="#1e40af">bnei Aharon</text>
+  <text x="330" y="168" text-anchor="middle" font-size="10.2" fill="#1e3a8a">les fils d Aharon</text>
+  <text x="330" y="187" text-anchor="middle" font-size="13" font-weight="700" fill="#1e40af">= 2</text>
+
+  <rect x="430" y="128" width="160" height="66" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="510" y="150" text-anchor="middle" font-size="11.4" font-weight="700" fill="#1e40af">ha-kohanim</text>
+  <text x="510" y="168" text-anchor="middle" font-size="10.2" fill="#1e3a8a">les cohanim</text>
+  <text x="510" y="187" text-anchor="middle" font-size="13" font-weight="700" fill="#1e40af">= 2</text>
+
+  <rect x="610" y="128" width="110" height="66" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="665" y="152" text-anchor="middle" font-size="11" font-weight="700" fill="#14532d">TOTAL</text>
+  <text x="665" y="180" text-anchor="middle" font-size="20" font-weight="700" fill="#14532d">6</text>
+
+  <rect x="60" y="208" width="640" height="60" rx="8" fill="#f5f5f4" stroke="#a8a29e" stroke-width="1.2"/>
+  <text x="80" y="230" font-size="11.4" font-weight="700" fill="#292524">Rachi verifie le compte sur la michna de 26b</text>
+  <text x="80" y="250" font-size="10.4" fill="#44403c">5 cohanim pour les cinq lots de chair  +  1 cohen pour les entrailles (kerayim)  =  6. Le compte tombe juste.</text>
+
+  <rect x="30" y="284" width="345" height="196" rx="9" fill="#fef2f2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="46" y="306" font-size="12.4" font-weight="700" fill="#7f1d1d">L objection de Rabbi Elazar</text>
+  <text x="46" y="328" font-size="10.4" fill="#7f1d1d">Le chapitre entier de Levitique 1 est le passage</text>
+  <text x="46" y="346" font-size="10.4" fill="#7f1d1d">de l olat bakar : le verset parle du TAUREAU.</text>
+  <text x="46" y="370" font-size="10.4" font-weight="700" fill="#7f1d1d">Or la michna donne pour le taureau : 24 cohanim.</text>
+  <text x="46" y="394" font-size="10.4" fill="#7f1d1d">Comment tirer le chiffre de l AGNEAU (6) d un</text>
+  <text x="46" y="412" font-size="10.4" fill="#7f1d1d">verset qui traite du taureau ?</text>
+  <text x="46" y="440" font-size="10.4" fill="#991b1b">Le pluriel donne bien 6 - mais applique au</text>
+  <text x="46" y="458" font-size="10.4" fill="#991b1b">mauvais animal, il ne prouve rien.</text>
+
+  <rect x="390" y="284" width="340" height="196" rx="9" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="406" y="306" font-size="12.4" font-weight="700" fill="#14532d">Sa propre reponse</text>
+  <text x="406" y="328" font-size="10.4" fill="#166534">La fin du verset est elle aussi en trop :</text>
+  <text x="406" y="350" font-size="10.6" font-weight="700" fill="#14532d">al ha-etsim acher al ha-ech acher al ha-mizbeah</text>
+  <text x="406" y="368" font-size="10.2" fill="#166534">sur le bois - sur le feu - sur l autel</text>
+  <text x="406" y="392" font-size="10.4" fill="#166534">Le feu et le bois viennent d etre poses au v. 1,7 :</text>
+  <text x="406" y="410" font-size="10.4" fill="#166534">les renommer ne decrit rien de neuf. C est donc</text>
+  <text x="406" y="428" font-size="10.4" fill="#166534">un signalement : les six cohanim valent pour</text>
+  <text x="406" y="446" font-size="10.4" font-weight="700" fill="#14532d">l offrande dont on dit bois, feu et autel - le tamid,</text>
+  <text x="406" y="464" font-size="10.4" font-weight="700" fill="#14532d">qui est un agneau. Le compte de 6 lui revient.</text>
+</svg></div>
+          <figcaption>La fin du daf : les trois pluriels de Levitique 1,8 donnent six cohanim, l objection de Rabbi Elazar sur le taureau, et sa reponse par les mots surnumeraires du verset.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הַאי מִיבְּעֵי לֵיהּ לְגוּפֵיהּ! אָמַר רַב שִׁימִי בַּר אָשֵׁי: אַשְׁכַּחְתֵּיהּ לְאַבָּיֵי דַּהֲוָה מַסְבַּר לֵיהּ לִבְרֵיהּ: ״וְשָׁחַט״ — שְׁחִיטָה בְּזָר כְּשֵׁירָה. וְכִי מֵאַיִן בָּאתָ? מִכְּלָל שֶׁנֶּאֱמַר: ״וְאַתָּה וּבָנֶיךָ אִתְּךָ תִּשְׁמְרוּ אֶת כְּהֻונַּתְכֶם״, שׁוֹמֵעַ אֲנִי אֲפִילּוּ שְׁחִיטָה,</div>
+            <div class="fr"><p>Mais ce verset-la, il en a besoin pour lui-meme ! Rav Chimi bar Achi a dit : j&#x27;ai trouve Abaye qui l&#x27;expliquait a son fils.</p><p>[Il est enseigne :] « et il egorgera » — la chehita (l&#x27;abattage rituel) est valable [meme accomplie] par un zar (un non-cohen). Et d&#x27;ou serais-tu venu [penser autrement] ?</p><p>Du fait qu&#x27;il est dit : « Et toi et tes fils avec toi, vous garderez votre kehouna (votre sacerdoce) » (Nombres 18,7), j&#x27;aurais entendu [que la reserve vaut] meme pour la chehita,</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>גְּמ&#x27; הַאי מִבַּעְיָא לֵיהּ לְגוּפֵיהּ</b> דְּנִיבְעֵי כֹּהֵן מִיעוּטָא מְנָא לַן לְהֶפְשֵׁט וְנִיתּוּחַ:</div>
+          <div class="glose-fr">Guemara. Celui-la, il en a besoin pour lui-meme — [ce verset sert] a exiger un cohen [pour la mise du feu] ; d&#x27;ou tirerions-nous alors l&#x27;exclusion (mi&#x27;outa) pour l&#x27;ecorchement et le decoupage ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דַּהֲוָה מַסְבַּר לֵיהּ לִבְרֵיהּ</b> הָא דְּחִזְקִיָּה וְהָכִי מַסְבַּר לֵיהּ נִיהֲלֵיהּ דְּתַנְיָא בְּתוֹרַת כֹּהֲנִים וְשָׁחַט שְׁחִיטָה בְּזָר כְּשֵׁירָה:</div>
+          <div class="glose-fr">Qu&#x27;il expliquait a son fils — ce propos de Hizkiya ; et voici comment il le lui expliquait : car il est enseigne dans le Torat Cohanim, « et il egorgera » — la chehita est valable par un zar.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְכִי מֵאַיִן בָּאתָ</b> לִישָּׁנָא דְּמַתְנִי&#x27; הוּא וְכִי מֵאַיִן בָּאתָ לוֹמַר פְּסוּלָה שֶׁנִּזְקַקְתָּ לְהָבִיא מִקְרָא לְהַכְשִׁירָהּ:</div>
+          <div class="glose-fr">Et d&#x27;ou serais-tu venu — c&#x27;est la formulation de la baraita : et d&#x27;ou serais-tu venu dire qu&#x27;elle est invalide, au point qu&#x27;il ait fallu apporter un verset pour la declarer valable ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִכְּלָל שֶׁנֶּאֱמַר כו&#x27;</b> וּמִתּוֹךְ אוֹתוֹ כְּלָל הָיִיתִי בָּא לִפְסוֹל:</div>
+          <div class="glose-fr">Du fait qu&#x27;il est dit, etc. — c&#x27;est de cette regle generale (klal) que je serais venu l&#x27;invalider.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le daf s'ouvre en pleine objection. A la fin de 26b, Hizkiya deduisait que l'ecorchement et le decoupage sont valables par un <b>zar</b> a partir du verset « <i>et les fils d'Aharon mettront du feu sur l'autel</i> » (Levitique 1,7) : puisque ce verset prend la peine d'exiger un cohen pour le feu, c'est que les actes voisins non mentionnes en sont dispenses. La Guemara riposte : <b>hai mibaei leh le-goufeh</b> — ce verset sert pour lui-meme, il enseigne simplement que le feu requiert un cohen. On ne peut rien en tirer de plus.</p><p>Rav Chimi bar Achi repond en rapportant une scene : il a surpris Abaye en train d'expliquer la chose a son fils, au moyen d'une baraita du <b>Torat Cohanim</b> (le midrach halakhique sur le Levitique). Cette baraita etablit une regle de portee generale qui va rendre la deduction de Hizkiya possible.</p><p>Noter la structure de la baraita : elle enonce d'abord la conclusion (« la chehita est valable par un zar »), puis se demande a rebours pourquoi il fallait un verset pour cela — <b>ve-khi me-ayin bata</b>, « d'ou serais-tu venu ? ». Reponse : d'un verset general de Nombres 18,7 qui semble reserver aux cohanim l'integralite de leur <b>kehouna</b>.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 430" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="430" fill="#fffdf8"/>
+  <text x="370" y="26" text-anchor="middle" font-size="14.4" font-weight="700" fill="#1c1917">Pourquoi fallait-il un verset pour AUTORISER la chehita par un non-cohen ?</text>
+  <text x="370" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">La baraita du Torat Cohanim s interroge sur elle-meme : ve-khi me-ayin bata - d ou serais-tu venu penser autrement ?</text>
+
+  <rect x="30" y="60" width="680" height="72" rx="9" fill="#fef2f2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="46" y="82" font-size="12" font-weight="700" fill="#7f1d1d">1. La hava amina - le point de depart menacant</text>
+  <text x="46" y="103" font-size="10.6" fill="#7f1d1d">Nombres 18,7 : ve-ata ou-vanekha itekha tichmerou et kehounatkhem - toi et tes fils garderez votre kehouna.</text>
+  <text x="46" y="122" font-size="10.6" fill="#991b1b">Lu largement, ce klal (cette regle generale) reserve aux cohanim TOUT le service, chehita comprise.</text>
+
+  <path d="M 370 132 L 370 156" stroke="#78716c" stroke-width="2" fill="none"/>
+  <path d="M 364 150 L 370 158 L 376 150 Z" fill="#78716c"/>
+
+  <rect x="30" y="160" width="680" height="84" rx="9" fill="#ecfdf5" stroke="#10b981" stroke-width="1.8"/>
+  <text x="46" y="182" font-size="12" font-weight="700" fill="#065f46">2. Le talmud lomar - le verset qui borne le klal</text>
+  <text x="46" y="203" font-size="10.6" fill="#065f46">Levitique 1,5 : ve-chahat et ben ha-bakar... ve-hikrivou bnei Aharon ha-kohanim et ha-dam.</text>
+  <text x="46" y="222" font-size="10.6" fill="#047857">Le cohen est nomme a la kabbala et PAS a la chehita : la frontiere de la kehouna passe donc entre les deux.</text>
+  <text x="46" y="238" font-size="10.4" font-weight="700" fill="#065f46">Conclusion : mi-kabbala ve-eilakh mitsvat kehouna - a partir du recueil du sang et au-dela seulement.</text>
+
+  <rect x="30" y="256" width="680" height="76" rx="9" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <text x="46" y="278" font-size="12" font-weight="700" fill="#1e40af">3. La confirmation par le sujet du verbe</text>
+  <text x="46" y="299" font-size="10.6" fill="#1e3a8a">ve-samakh yado (v. 4) - c est le proprietaire qui pose la main ; puis ve-chahat (v. 5) enchaine sans changer de sujet.</text>
+  <text x="46" y="318" font-size="10.6" font-weight="700" fill="#1e40af">Donc c est le proprietaire lui-meme qui egorge : la chehita est kechera be-zar, valable par un non-cohen.</text>
+
+  <rect x="30" y="344" width="680" height="72" rx="9" fill="#1c1917"/>
+  <text x="46" y="366" font-size="11.6" font-weight="700" fill="#fef3c7">Pourquoi Abaye raconte-t-il cela ici ?</text>
+  <text x="46" y="387" font-size="10.4" fill="#e7e5e4">Parce que cette baraita fournit la regle mi-kabbala ve-eilakh qui rend superflues toutes les mentions</text>
+  <text x="46" y="405" font-size="10.4" fill="#e7e5e4">ulterieures du cohen - et c est precisement de ce surplus que Hizkiya tirait sa preuve, contestee au debut du daf.</text>
+</svg></div><div class="svg-cap">La baraita du Torat Cohanim en trois temps : la crainte tiree de Nombres 18,7, le verset qui la borne, et la regle qui en sort — mi-kabbala ve-eilakh mitsvat kehouna.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תַּלְמוּד לוֹמַר: ״וְשָׁחַט אֶת בֶּן הַבָּקָר לִפְנֵי ה׳ וְהִקְרִיבוּ בְּנֵי אַהֲרֹן הַכֹּהֲנִים אֶת הַדָּם״, מִקַּבָּלָה וְאֵילָךְ מִצְוַת כְּהֻונָּה. ״וְסָמַךְ יָדוֹ וְשָׁחַט״, לִימֵּד עַל הַשְּׁחִיטָה שֶׁכְּשֵׁירָה בְּזָר.</div>
+            <div class="fr"><p>l&#x27;enseignement dit donc : « et il egorgera le jeune taureau devant l&#x27;Eternel, et les fils d&#x27;Aharon, les cohanim, offriront le sang » (Levitique 1,5) — a partir de la kabbala (le recueil du sang) et au-dela, c&#x27;est une mitsva [reservee a la] kehouna. « Et il posera sa main... et il egorgera » — [le verset] a enseigne au sujet de la chehita qu&#x27;elle est valable [meme accomplie] par un zar.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תַּלְמוּד לוֹמַר וְשָׁחַט וְהִקְרִיבוּ הַכֹּהֲנִים</b> וּמִדִּכְתִיב כֹּהֵן בְּקַבָּלָה וּבִשְׁחִיטָה לָא כְּתִיב מִכְּלָל דִּוְשָׁחַט אַבְּעָלִים קָאֵי וְסָמַךְ יָדוֹ וְשָׁחַט לִימֵּד עַל הַשְּׁחִיטָה שֶׁכְּשֵׁירָה בְּזָר עכ&quot;ל מִשְׁנָה וּמִינָּהּ הֲוָה מַסְבַּר אַבַּיֵּי לִבְרֵיהּ הָא דְּחִזְקִיָּה הָכִי:</div>
+          <div class="glose-fr">L&#x27;enseignement dit : « et il egorgera... et les cohanim offriront » — puisque le cohen est ecrit a propos de la kabbala et n&#x27;est pas ecrit a propos de la chehita, il en decoule que « et il egorgera » se rapporte aux proprietaires de l&#x27;offrande (les bealim) ; « et il posera sa main et il egorgera » a enseigne au sujet de la chehita qu&#x27;elle est valable par un zar. Fin de citation de la baraita. Et c&#x27;est de la qu&#x27;Abaye expliquait a son fils, de cette maniere, le propos de Hizkiya.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהִקְרִיבוּ בְּנֵי אַהֲרֹן מִקַּבָּלָה וְאֵילָךְ וְכוּ&#x27;</b> בפ&quot;ק דִּזְבָחִים (ד&#x27; ד.) פרש&quot;י הָא דְּאָמְרִינַן וְהִקְרִיבוּ זוֹ קַבָּלַת הַדָּם וְלֹא עֲבוֹדָה אַחֶרֶת מִשְּׁאָר עֲבוֹדוֹת דָּם כְּגוֹן הוֹלָכָה אוֹ זְרִיקָה מִשּׁוּם דִּכְתִיב וְשָׁחַט וְהִקְרִיבוּ וְאֵיזוֹ הִיא עֲבוֹדָה שֶׁהִיא אַחַר שְׁחִיטָה לְאַלְתַּר הֱוֵי אוֹמֵר זוֹ קַבָּלָה וְהִקְשָׁה ר&quot;י דבספ&quot;ק דִּזְבָחִים אִיכָּא טַעְמָא אַחַרְיַנָא כִּדְתַנְיָא הָתָם וְהִקְרִיבוּ זוֹ קַבָּלַת הַדָּם אוֹ אֵינוֹ אֶלָּא זְרִיקָה כְּשֶׁהוּא אוֹמֵר וְזָרְקוּ הֲרֵי זְרִיקָה אָמוּר הָא מָה אֲנִי מְקַיֵּים וְהִקְרִיבוּ זוֹ קַבָּלַת הַדָּם אַלְמָא דְּלָאו הַייְנוּ טַעְמָא וְהָא דְּלָא אָמְרִינַן זוֹ הוֹלָכָה מִשּׁוּם דְּלָא מִסְתַּבְּרָא לְאוֹקְמֵיהּ בְּהוֹלָכָה וְלוֹמַר מֵהוֹלָכָה וְאֵילָךְ מִצְוַת כְּהֻונָּה מִשּׁוּם דְּאֶפְשָׁר לְבַטְּלָהּ דְּאֶפְשָׁר עוֹמֵד בְּצַד מִזְבֵּחַ וְשׁוֹחֵט דְּלָא בָּעֵי לְהוֹלִיךְ:</div>
+          <div class="glose-fr">« Et les fils d&#x27;Aharon offriront » : a partir de la kabbala et au-dela, etc. — au premier chapitre de Zevahim (4a), Rachi a explique ceci : ce que nous disons, que « et ils offriront » designe le recueil du sang et non un autre service parmi les services du sang, comme le portage (holakha) ou l&#x27;aspersion (zerika), tient a ce qu&#x27;il est ecrit « et il egorgera... et ils offriront » — et quel est le service qui suit immediatement la chehita ? C&#x27;est necessairement la kabbala. Le Ri a objecte : a la fin du premier chapitre de Zevahim, une autre raison est donnee, comme il y est enseigne : « et ils offriront » — c&#x27;est le recueil du sang ; ou bien n&#x27;est-ce pas plutot l&#x27;aspersion ? Lorsque [l&#x27;Ecriture] dit « et ils aspergeront », l&#x27;aspersion est deja enoncee ; comment donc maintenir « et ils offriront » ? C&#x27;est le recueil du sang. Il en ressort que la raison [de Rachi] n&#x27;est pas la bonne. Et si nous ne disons pas qu&#x27;il s&#x27;agit du portage, c&#x27;est parce qu&#x27;il n&#x27;est pas raisonnable de l&#x27;appliquer au portage et de dire « a partir du portage et au-dela c&#x27;est une mitsva de kehouna », puisqu&#x27;on peut le supprimer (efchar levatla) : on peut se tenir a cote de l&#x27;autel et egorger, sans avoir besoin de porter [le sang].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא מֵהָכָא וְעָרְכוּ בְּנֵי אַהֲרֹן הַכֹּהֲנִים</b> בְּפֶ&#x27; ב&#x27; דִּזְבָחִים (ד&#x27; יח.) דְּרֵישׁ הַכֹּהֲנִים בְּכִיהוּנָם כֹּהֵן הֶדְיוֹט שֶׁלָּבַשׁ בִּגְדֵי כ&quot;ג וְעָבַד עֲבוֹדָה עֲבוֹדָתוֹ פְּסוּלָה וְהָכָא דָּרֵישׁ מִדִּכְתִיב בְּנֵי אַהֲרֹן וְאֵין לְהַקְשׁוֹת מַאי אִיצְטְרִיךְ קְרָא לַעֲרִיכַת נְתָחִים לְמִילְּפַהּ מִדְּקָאָמַר מִקַּבָּלָה וְאֵילָךְ מִצְוַת כְּהֻונָּה תִּיפּוֹק לֵיהּ מֻוכֵּי תַּעֲלֶה עַל דַּעְתְּךָ שֶׁזָּר קָרֵב אֵצֶל הַמִּזְבֵּחַ די&quot;ל דְּאֶפְשָׁר דְּקָאֵי בְּאַרְעָא וּזְרִיק לְהוּ לַמִּזְבֵּחַ כְּדַאי&#x27; לְקַמָּן בס&quot;פ טָרַף בַּקַּלְפִּי גַּבֵּי הַצָּתַת אֲלִיתָא אֶפְשָׁר דְּקָאֵי אַאַרְעָא וְעָבֵיד בְּמַפּוּחָא:</div>
+          <div class="glose-fr">« Mais plutot d&#x27;ici : et les fils d&#x27;Aharon, les cohanim, disposeront » — au deuxieme chapitre de Zevahim (18a) on expose « les cohanim » : dans leur sacerdoce, [d&#x27;ou l&#x27;on apprend qu&#x27;]un cohen ordinaire qui a revetu les vetements du cohen gadol et a accompli un service, son service est passoul (invalide). Ici, en revanche, on expose a partir de ce qui est ecrit « les fils d&#x27;Aharon ». Et il ne faut pas objecter : a quoi bon un verset pour la disposition des morceaux, alors qu&#x27;on pourrait l&#x27;apprendre de ce qui a ete dit, « a partir de la kabbala et au-dela c&#x27;est une mitsva de kehouna » — que cela decoule plutot de « te viendrait-il a l&#x27;esprit qu&#x27;un zar s&#x27;approche de l&#x27;autel ? ». Car on peut repondre qu&#x27;il est possible qu&#x27;il se tienne au sol et lance [les morceaux] vers l&#x27;autel, comme il est dit plus loin, a la fin du chapitre Taraf be-Kalpi, a propos de l&#x27;allumage du petit bois (hatsatat alita) : il est possible qu&#x27;il se tienne au sol et agisse au moyen d&#x27;un soufflet.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deux enseignements sortent d'un seul verset. Le premier tient a l'<b>emplacement</b> du mot cohen : la Torah le nomme au moment du recueil du sang et pas au moment de l'abattage. La frontiere du sacerdoce passe donc exactement la : <b>mi-kabbala ve-eilakh mitsvat kehouna</b>, du recueil du sang et au-dela.</p><p>Le second tient au <b>sujet des verbes</b>. Le verset precedent dit « <i>et il posera sa main sur la tete de l'holocauste</i> » — chacun sait que la <b>semikha</b> (l'imposition des mains) est faite par le proprietaire de l'offrande, pas par le cohen. Le verbe suivant, « <i>et il egorgera</i> », enchaine sans changer de sujet : c'est encore le proprietaire. La chehita est donc <b>kechera be-zar</b>.</p><p>C'est cette regle generale qui est le vrai butin d'Abaye : des lors que tout ce qui suit la kabbala exige deja un cohen, chaque mention supplementaire du cohen dans la suite du chapitre devient <b>superflue</b> — et un mot superflu, dans la logique du midrach, doit travailler ailleurs. Tout le daf va exploiter ce surplus.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מִכְּדֵי מִקַּבָּלָה וְאֵילָךְ מִצְוַת כְּהֻונָּה, ״וְנָתְנוּ בְּנֵי אַהֲרֹן״ לָמָּה לִי? לִמְעוּטֵי הֶפְשֵׁט וְנִיתּוּחַ.</div>
+            <div class="fr"><p>Or donc, puisque a partir de la kabbala et au-dela c&#x27;est une mitsva de kehouna, pourquoi ai-je besoin de « et les fils d&#x27;Aharon mettront [du feu] » ? Pour exclure l&#x27;ecorchement et le decoupage.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִכְּדִי</b> לָמַדְנוּ כָּאן דְּמִקַּבָּלָה וְאֵילָךְ מִצְוַת כְּהֻונָּה וְהַךְ נְתִינַת אֵשׁ בָּתַר קַבָּלָה כְּתִיבָה לָמָּה לִי לְמִכְתַּב בָּהּ כְּהֻונָּה:</div>
+          <div class="glose-fr">Or donc — nous avons appris ici qu&#x27;a partir de la kabbala et au-dela c&#x27;est une mitsva de kehouna ; et cette mise du feu est ecrite apres la kabbala : pourquoi donc y ecrire la kehouna ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לִמְעוּטֵי הֶפְשֵׁט וְנִיתּוּחַ</b> דְּלָא כְּתִיב בָּהּ כֹּהֵן וְתֵילַף מֵהָכָא דְּדַוְקָא כְּתִיב קְרָא וְאִי לֹא וּנְתָנוֹ הֲוָה אָמֵינָא הַאי דְּלָא כְּתִיב כֹּהֵן בְּהֶפְשֵׁט וְנִיתּוּחַ מִשּׁוּם דְּלָא אִצְטְרִיךְ הוּא דְּגַלִּי לֵיהּ דְּבָעֵי כְּהֻונָּה מִקַּבָּלָה וְאֵילָךְ:</div>
+          <div class="glose-fr">Pour exclure l&#x27;ecorchement et le decoupage — a propos desquels le cohen n&#x27;est pas ecrit ; et l&#x27;on apprend de la que ce verset est ecrit precisement [pour cette exclusion]. Car sans « et ils mettront », j&#x27;aurais dit : si le cohen n&#x27;est pas ecrit a propos de l&#x27;ecorchement et du decoupage, c&#x27;est parce que ce n&#x27;etait pas necessaire, puisqu&#x27;il a deja revele que la kehouna est requise a partir de la kabbala et au-dela.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Voici le raisonnement de Hizkiya reconstruit par Abaye, maintenant que la regle generale est acquise. La mise du feu (Levitique 1,7) vient <b>apres</b> le recueil du sang : elle est donc deja couverte par la regle. Nommer les cohanim une seconde fois n'apprend rien — le mot est <b>en trop</b>.</p><p>Or dans la logique du midrach, un mot en trop n'est jamais decoratif : il devient un <b>mi'out</b>, une exclusion. En disant « ce sont les fils d'Aharon qui mettent le feu », le verset laisse entendre : <i>eux, et pas d'autres actes voisins</i>. Les actes voisins non nommes — l'ecorchement (<b>hefchet</b>) et le decoupage (<b>nitouah</b>) du verset 6 — sont donc dispenses de la kehouna.</p><p>Rachi souligne le point delicat : sans ce surplus, le silence du verset 6 ne prouverait rien, puisqu'on pourrait toujours dire que la Torah n'a pas eu besoin d'y nommer le cohen, la regle generale suffisant. C'est la mention <b>redondante</b> du verset 7 qui transforme un silence muet en silence parlant.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאַכַּתִּי אִיצְטְרִיךְ: סָלְקָא דַּעְתָּךְ אָמֵינָא כֵּיוָן דְּלָאו עֲבוֹדָה דִּמְעַכְּבָא כַּפָּרָה הִיא — לָא תִּיבְּעֵי כְּהֻונָּה, קָא מַשְׁמַע לַן דְּבָעֲיָא כְּהֻונָּה!</div>
+            <div class="fr"><p>Mais il est encore necessaire [pour lui-meme] ! Il aurait pu te venir a l&#x27;esprit de dire : puisque ce n&#x27;est pas un service qui empeche l&#x27;expiation (kappara), il ne devrait pas requerir la kehouna ; [le verset] nous fait donc savoir qu&#x27;il requiert bien la kehouna !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּלָא מְעַכְּבָא כַּפָּרָה</b> דְּאֵין כַּפָּרָה אֶלָּא בְּדָם:</div>
+          <div class="glose-fr">Qui n&#x27;empeche pas l&#x27;expiation — car il n&#x27;y a d&#x27;expiation que par le sang.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara reactive son objection de depart, mais avec un argument neuf. La regle <i>mi-kabbala ve-eilakh</i> pourrait ne concerner que les services du <b>sang</b> — ceux qui sont <b>me'akev kappara</b>, indispensables a l'expiation. Le feu, lui, ne conditionne pas l'expiation : on aurait pu croire qu'il tombe hors de la regle.</p><p>Si tel est le cas, le verset 1,7 n'est plus superflu du tout : il vient couvrir un cas que la regle generale laissait dans le doute. Il travaille <b>pour lui-meme</b>, et ne peut donc plus servir de mi'out. La preuve de Hizkiya s'effondre — il faut chercher un autre verset.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא מֵהָכָא: ״וְעָרְכוּ בְּנֵי אַהֲרֹן הַכֹּהֲנִים אֵת הַנְּתָחִים אֶת הָרֹאשׁ וְאֶת הַפָּדֶר״, מִכְּדֵי, מִקַּבָּלָה וְאֵילָךְ מִצְוַת כְּהֻונָּה, ״וְעָרְכוּ״ לָמָּה לִי? לִמְעוּטֵי הֶפְשֵׁט וְנִיתּוּחַ.</div>
+            <div class="fr"><p>Mais plutot [on l&#x27;apprend] d&#x27;ici : « Et les fils d&#x27;Aharon, les cohanim, disposeront les morceaux, la tete et la graisse » (Levitique 1,8) — or donc, puisque a partir de la kabbala et au-dela c&#x27;est une mitsva de kehouna, pourquoi ai-je besoin de « et ils disposeront » ? Pour exclure l&#x27;ecorchement et le decoupage.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא מֵהָכָא וְעָרְכוּ בְּנֵי אַהֲרֹן הַכֹּהֲנִים</b> הֲרֵי לָמַדְנוּ מִקַּבָּלָה שֶׁאֵין צָרִיךְ כְּהֻונָּה אֶלָּא לִמְעוּטֵי הֶפְשֵׁט וְנִיתּוּחַ:</div>
+          <div class="glose-fr">Mais plutot d&#x27;ici, « et les fils d&#x27;Aharon, les cohanim, disposeront » — nous avons deja appris de la kabbala qu&#x27;il n&#x27;est pas besoin [de repeter] la kehouna, sinon pour exclure l&#x27;ecorchement et le decoupage.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deuxieme candidat. Le mecanisme est rigoureusement le meme, applique au verset suivant : la disposition des morceaux sur le bucher vient elle aussi apres la kabbala, donc la triple mention « <i>les fils d'Aharon, les cohanim</i> » est de trop, donc elle exclut.</p><p>Ce verset a de surcroit un avantage de <b>proximite</b> : il touche directement au corps de la bete — les <b>netahim</b>, les morceaux — exactement comme l'ecorchement et le decoupage. La suite du daf va tester precisement ce point.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאֵימָא לְמַעוֹטֵי סִידּוּר שְׁנֵי גְּזִירֵי עֵצִים! מִסְתַּבְּרָא דִּיבְחָא דִּכְוָתֵיהּ מְמַעֵט.</div>
+            <div class="fr"><p>Et dis [plutot] : pour exclure la disposition des deux buches (sidour chnei guezirei etsim) ! — Il est plus logique que [ce verset, qui traite] du sacrifice, exclue ce qui lui ressemble [c&#x27;est-a-dire un acte portant sur la bete].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵימָא לְמַעוֹטֵי סִידּוּר שְׁנֵי גְּזִירֵי עֵצִים</b> דְּבֵין הָעַרְבַּיִם דְּלָא כְּתִיב בְּהוּ הַכֹּהֲנִים אֲבָל בְּצַפְרָא בְּהֶדְיָא כְּתִיב וּבִעֵר עָלֶיהָ הַכֹּהֵן:</div>
+          <div class="glose-fr">Dis : pour exclure la disposition des deux buches — celles de l&#x27;apres-midi (bein ha-arbayim), a propos desquelles « les cohanim » n&#x27;est pas ecrit ; tandis que pour celles du matin il est explicitement ecrit : « et le cohen y fera bruler du bois » (Levitique 6,5).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Un mi'out doit bien viser quelque chose, mais quoi ? Deux candidats se disputent la place. Outre l'ecorchement et le decoupage, il y a la <b>pose des deux buches</b> sur l'autel l'apres-midi : la Torah ne la mentionne pas non plus avec un cohen, elle pourrait donc etre la cible de l'exclusion.</p><p>Reponse : <b>mistabra divha de-khavatei mema'et</b> — le raisonnable est qu'un verset exclue ce qui lui ressemble. Or « et ils disposeront les morceaux, la tete et la graisse » parle de la <b>bete offerte</b>. Il exclura donc un acte portant lui aussi sur la bete : ecorcher et decouper, non manipuler du bois.</p><p>Rachi precise le detail decisif : l'exclusion ne pourrait de toute facon viser que les buches de l'<b>apres-midi</b>. Pour celles du matin, le cohen est nomme explicitement (« <i>et le cohen y fera bruler du bois</i> », Levitique 6,5), la question ne se pose donc pas.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אַדְּרַבָּה, סִדּוּר דִּכְוָתֵיהּ מְמַעֵט!</div>
+            <div class="fr"><p>Au contraire ! [Ce verset traitant d&#x27;une] disposition, c&#x27;est ce qui lui ressemble [en tant que disposition] qu&#x27;il exclut !</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Contre-attaque en une ligne. La ressemblance peut se mesurer sur deux axes, et la Guemara vient d'en privilegier un arbitrairement. Si l'on regarde non pas la <b>matiere</b> (la bete) mais le <b>geste</b>, alors « et ils disposeront » est un verbe d'<b>agencement sur l'autel</b> — et ce qui lui ressemble le plus est justement la pose des buches, qui est aussi un agencement sur l'autel.</p><p>Ecorcher et decouper, a l'inverse, se font au sol, avant tout contact avec l'autel. Le critere se retourne donc contre la reponse precedente. La Guemara devra trancher par un argument exterieur.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 470" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="470" fill="#fffdf8"/>
+  <text x="370" y="26" text-anchor="middle" font-size="14.4" font-weight="700" fill="#1c1917">Que peut exclure ve-arkhou ? Le duel des deux ressemblances</text>
+  <text x="370" y="45" text-anchor="middle" font-size="10.4" fill="#57534e">Un mi'out (une exclusion) vise ce qui ressemble a son verset. Mais ressembler, en quoi ? La Guemara hesite entre deux axes.</text>
+
+  <rect x="30" y="60" width="340" height="126" rx="9" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/>
+  <text x="46" y="82" font-size="12" font-weight="700" fill="#1e40af">Axe A - la matiere : divha de-khavatei</text>
+  <text x="46" y="103" font-size="10.4" fill="#1e3a8a">ve-arkhou parle des NETAHIM, les morceaux</text>
+  <text x="46" y="121" font-size="10.4" fill="#1e3a8a">de la bete. Il exclut donc un acte portant</text>
+  <text x="46" y="139" font-size="10.4" fill="#1e3a8a">lui aussi sur la bete.</text>
+  <text x="46" y="163" font-size="10.6" font-weight="700" fill="#1e40af">Cible : hefchet et nitouah</text>
+  <text x="46" y="180" font-size="10" fill="#1d4ed8">(ecorcher et decouper la meme bete)</text>
+
+  <rect x="386" y="60" width="324" height="126" rx="9" fill="#fefce8" stroke="#ca8a04" stroke-width="1.6"/>
+  <text x="402" y="82" font-size="12" font-weight="700" fill="#713f12">Axe B - le geste : sidour de-khavatei</text>
+  <text x="402" y="103" font-size="10.4" fill="#78350f">ve-arkhou est un verbe de DISPOSITION sur</text>
+  <text x="402" y="121" font-size="10.4" fill="#78350f">l autel. Il exclut donc une autre disposition</text>
+  <text x="402" y="139" font-size="10.4" fill="#78350f">sur ce meme autel.</text>
+  <text x="402" y="163" font-size="10.6" font-weight="700" fill="#713f12">Cible : sidour chnei guezirei etsim</text>
+  <text x="402" y="180" font-size="10" fill="#854d0e">(poser les deux buches de l apres-midi)</text>
+
+  <path d="M 200 186 L 200 214 L 370 214" stroke="#78716c" stroke-width="1.6" fill="none"/>
+  <path d="M 548 186 L 548 214 L 370 214" stroke="#78716c" stroke-width="1.6" fill="none"/>
+  <path d="M 370 214 L 370 236" stroke="#78716c" stroke-width="1.6" fill="none"/>
+  <path d="M 364 230 L 370 238 L 376 230 Z" fill="#78716c"/>
+  <text x="370" y="208" text-anchor="middle" font-size="10.4" font-style="italic" fill="#57534e">adderaba - au contraire ! Les deux ressemblances se valent</text>
+
+  <rect x="30" y="242" width="680" height="122" rx="9" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.8"/>
+  <text x="46" y="264" font-size="12" font-weight="700" fill="#4c1d95">L arbitrage vient d ailleurs : un verset deja affecte, Levitique 1,13</text>
+  <text x="46" y="286" font-size="10.6" fill="#5b21b6">ve-hikriv ha-kohen et ha-kol ha-mizbeha : on sait deja qu il vise la holakhat evarim, le portage des membres</text>
+  <text x="46" y="304" font-size="10.6" fill="#5b21b6">jusqu a la rampe - et qu il exclut par la un autre portage : celui du BOIS, dispense de kehouna.</text>
+  <text x="46" y="328" font-size="10.6" font-weight="700" fill="#4c1d95">Raisonnement de Rachi : si meme la POSE des buches sur l autel etait dispensee de kehouna,</text>
+  <text x="46" y="346" font-size="10.6" font-weight="700" fill="#4c1d95">a quoi bon un verset pour dispenser le simple portage du bois ? Ce serait un kal va-homer evident.</text>
+
+  <rect x="30" y="376" width="680" height="78" rx="9" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="46" y="398" font-size="12" font-weight="700" fill="#14532d">Verdict</text>
+  <text x="46" y="419" font-size="10.6" fill="#166534">La pose des deux buches EXIGE la kehouna. Elle ne peut donc pas etre ce que ve-arkhou vient dispenser.</text>
+  <text x="46" y="438" font-size="10.6" font-weight="700" fill="#14532d">L axe B tombe : l axe A tient. ve-arkhou, s il exclut, exclut hefchet et nitouah.</text>
+</svg></div><div class="svg-cap">Les deux axes de ressemblance qui s&#x27;affrontent — la matiere contre le geste — et l&#x27;argument tire de Levitique 1,13 qui met fin au duel.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לָא סָלְקָא דַעְתָּךְ, דְּאָמַר מַר: ״וְהִקְרִיב הַכֹּהֵן אֶת הַכֹּל הַמִּזְבֵּחָה״, זוֹ הוֹלָכַת אֵבָרִים לַכֶּבֶשׁ. הוֹלָכַת אֵבָרִים לַכֶּבֶשׁ הוּא דְּבָעֲיָא כְּהֻונָּה, הוֹלָכַת עֵצִים לָא בָּעֲיָא כְּהֻונָּה. הָא סִידּוּר שְׁנֵי גְּזִירֵי עֵצִים — בָּעֲיָא כְּהֻונָּה!</div>
+            <div class="fr"><p>Cela ne peut te venir a l&#x27;esprit, car le Maitre a dit : « et le cohen offrira le tout vers l&#x27;autel » (Levitique 1,13) — c&#x27;est le portage des membres jusqu&#x27;a la rampe (holakhat evarim la-kevech). C&#x27;est le portage des membres jusqu&#x27;a la rampe qui requiert la kehouna ; le portage du bois, lui, ne requiert pas la kehouna.</p><p>Or [il en decoule que] la disposition des deux buches, elle, requiert bien la kehouna !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לָא סָלְקָא דַעְתָּךְ</b> דְּלָא נִיבְעֵי סִידּוּר גְּזִירִין כְּהֻונָּה מִדְּאִיצְטְרִיךְ לִמְעוּטֵי הוֹלָכַת עֵצִים מִכְּלָל דְּסִידּוּרָן בָּעֵי כֹּהֵן:</div>
+          <div class="glose-fr">Cela ne peut te venir a l&#x27;esprit — [a savoir] que la disposition des buches ne requiere pas la kehouna ; car du fait qu&#x27;il a fallu [un verset] pour exclure le portage du bois, il en decoule que leur disposition requiert un cohen.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הוֹלָכַת עֵצִים לָא בָּעֵי כְּהֻונָּה</b> דְּהַאי כֹּהֵן דִּכְתִיב בְּהוֹלָכַת אֵבָרִים עַל כָּרְחָךְ לִמְעוּטֵי הוֹלָכָה אַחֶרֶת בָּעֵי דְּאִי לְגוּפֵיהּ לָא אִיצְטְרִיךְ דְּהָא אַשְׁמְעִינַן מִקַּבָּלָה וְאֵילָךְ מִצְוַת כְּהֻונָּה:</div>
+          <div class="glose-fr">Le portage du bois ne requiert pas la kehouna — car ce mot « cohen » ecrit a propos du portage des membres vise necessairement a exclure un autre portage ; car pour lui-meme il n&#x27;etait pas necessaire, puisqu&#x27;on nous a deja enseigne qu&#x27;a partir de la kabbala et au-dela c&#x27;est une mitsva de kehouna.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הוֹלָכַת עֵצִים לָא בָּעֵי כְּהֻונָּה הָא סִידּוּר שְׁנֵי גְּזִירִין בָּעֵי כְּהֻונָּה</b> וא&quot;ת מְנָא לַן דְּאִיכָּא לְמֵידַק הָכִי דִּילְמָא מֵהַהוּא קְרָא מְמַעֲטִין הוֹלָכַת עֵצִים וּמֵהַאי קְרָא דְּהָכָא נְמַעֵט סִידּוּר שְׁנֵי גְזִירִין וי&quot;ל מִדְּאִיצְטְרִיךְ לִמְעוּטֵי הוֹלָכַת עֵצִים שְׁמַע מִינָּה דְּסִידּוּר שְׁנֵי גְּזִירִין בָּעֵי כְּהֻונָּה דְּאִי לָא בָּעֵי כְּהֻונָּה לָמָּה לִי קְרָא לְמַעוֹטֵי הוֹלָכַת עֵצִים הַשְׁתָּא אֲפִילּוּ סִידּוּר שְׁנֵי גְזִירִין שֶׁהֵם ע&quot;ג הַמִּזְבֵּחַ לָא בָּעֵי כְּהֻונָּה כ&quot;ש הוֹלָכַת עֵצִים וְלֵיכָּא לְאַקְשׁוֹיֵי אִי לָא כְּתַב אֶלָּא קְרָא דִּלְעֵיל לָא הֲוָה מְמַעֲטִינַן מִינֵּיהּ סִידּוּר שְׁנֵי גְזִירִין אֶלָּא הוֹלָכַת עֵצִים דְּמִסְתַּבֵּר טְפֵי די&quot;ל אֲפִילּוּ אִי לָא הֲוָה כְּתַב אֶלָּא קְרָא דִּוְעָרְכוּ הֲוָה מְמַעֲטִינַן מִינֵּיהּ סִידּוּר שְׁנֵי גְזִירִין דְּמִסְתַּבְּרָא קָאֵי בְּסִידּוּר מְמַעֵט סִידּוּר הִקְשָׁה הָר&#x27; אֵלִיָּהוּ מֵאיבריוק זצ&quot;ל לר&quot;ש דְּאִית לֵיהּ לְעֵיל שְׁנֵי גְּזִירִין בָּעֵי שְׁנֵי כֹּהֲנִים מְנָא לֵיהּ דְּבָעֵי כְּהֻונָּה אִי מֵהָכָא הָא אִיצְטְרִיךְ קְרָא לְגוּפֵיהּ סד&quot;א כֵּיוָן דְּאֶפְשָׁר לְבַטְּלָהּ הִיא כְּשֵׁרָה בְּזָר כִּדְאָמַר בספ&quot;ק דִּזְבָחִים (ד&#x27; יד.) הוֹלָכָה בְּזָר מַחֲלֹוקֶת ר&quot;ש וְרַבָּנָן לר&quot;ש דְּאָמַר עֲבוֹדָה שֶׁאֶפְשָׁר לְבַטְּלָהּ לָאו עֲבוֹדָה הִיא כְּשֵׁירָה בְּזָר וְכוּ&#x27; עַד וַהֲרֵי הוֹלָכַת אֵבָרִים לַכֶּבֶשׁ דְּאֶפְשָׁר לְבַטְּלָהּ וּפְסוּלָה בְּזָר דְּאָמַר מָר וְהִקְרִיב הַכֹּהֵן כו&#x27; הַמִּזְבֵּחָה זוֹ הוֹלָכַת אֵבָרִים לַכֶּבֶשׁ וּמְשַׁנֵּי הֵיכָא דְגַלִּי גַּלִּי וא&quot;כ כֵּיוָן דְּאִיצְטְרִיךְ לְגוּפֵיהּ א&quot;כ סִידּוּר שְׁנֵי גְזִירִין מִנָּלַן דְּבָעֵי כְּהֻונָּה וְתֵירֵץ לוֹ רַבִּי דר&quot;ש לְטַעְמֵיהּ דְּקָאָמַר לְקַמָּן בספ&quot;ד (יוֹמָא ד&#x27; מה.) גַּבֵּי הַצָּתַת אֲלִיתָא דְּלָא צְרִיךְ קְרָא שֶׁלֹּא תְּהֵא אֶלָּא בְּכֹהֵן מִשּׁוּם דְּכִי תַּעֲלֶה עַל דַּעְתְּךָ שֶׁזָּר קָרֵב אֵצֶל הַמִּזְבֵּחַ דְּלֵית לֵיהּ סְבָרָא דר&quot;י דְּאָמַר אֶפְשָׁר דְּקָאֵי אַאַרְעָא וְעָבֵיד בְּמַפּוּחָא וה&quot;ה בְּסִידּוּר שְׁנֵי גְּזִירִין דְּלָא מָצֵי קָאֵי אַאַרְעָא וְעָבֵיד בִּזְרִיקָה ולר&quot;י דְּאִית לֵיהּ אֶפְשָׁר בְּמַפּוּחָא אִיכָּא לְמֵימַר דה&quot;נ אִית לֵיהּ אֶפְשָׁר דְּזָרֵיק הַגְּזִירִין לְרֹאשׁ הַמִּזְבֵּחַ וְאַפֵּ&quot;ה נָפְקָא לֵיהּ שַׁפִּיר דְּבָעֵי כְּהֻונָּה מִדִּכְתִיב כֹּהֵן בְּהוֹלָכַת אֵבָרִים דִּלְגוּפֵיהּ לָא אִיצְטְרִיךְ דִּסְבִירָא לֵיהּ אע&quot;ג דְּאֶפְשָׁר לְבַטְּלָהּ עֲבוֹדָה הִיא אֶלָּא לְגַלּוֹיֵי אַגְּזִירִין דְּבָעֵינַן כְּהֻונָּה כְּדַאֲמָרָן בִּשְׁמַעְתִּין:</div>
+          <div class="glose-fr">« Le portage du bois ne requiert pas la kehouna ; donc la disposition des deux buches requiert la kehouna » — on peut objecter : d&#x27;ou savons-nous qu&#x27;il faut deduire en ce sens ? Peut-etre est-ce de ce verset-la que l&#x27;on exclut le portage du bois, tandis que de notre verset ici on exclurait la disposition des deux buches ! On peut repondre : du fait qu&#x27;il a fallu un verset pour exclure le portage du bois, on en deduit que la disposition des deux buches requiert la kehouna ; car si elle ne la requerait pas, a quoi bon un verset pour exclure le portage du bois ? Des lors que meme la disposition des deux buches, qui se fait sur l&#x27;autel, ne requerrait pas la kehouna, a plus forte raison le portage du bois. Et l&#x27;on ne peut pas objecter : si seul le verset precedent avait ete ecrit, nous n&#x27;en aurions pas exclu la disposition des deux buches mais le portage du bois, qui est plus vraisemblable — car on peut repondre que meme si seul le verset « et ils disposeront » avait ete ecrit, nous en aurions exclu la disposition des deux buches, puisqu&#x27;il est raisonnable que [le verset] qui traite d&#x27;une disposition exclue une disposition. Rabbi Eliahou d&#x27;Aibriouk, de memoire benie, a objecte : selon R. Chimon, qui soutient plus haut que les deux buches requierent deux cohanim, d&#x27;ou tient-il qu&#x27;elles requierent la kehouna ? Si c&#x27;est d&#x27;ici, mais le verset est necessaire pour lui-meme ! Car il aurait pu te venir a l&#x27;esprit que, puisqu&#x27;il s&#x27;agit d&#x27;un service que l&#x27;on peut supprimer (efchar levatla), il serait valable par un zar, comme il est dit a la fin du premier chapitre de Zevahim (14a) : le portage [du sang] par un zar fait l&#x27;objet d&#x27;une controverse entre R. Chimon et les Sages ; selon R. Chimon, qui dit qu&#x27;un service que l&#x27;on peut supprimer n&#x27;est pas un service, il est valable par un zar, etc., jusqu&#x27;a : mais voici le portage des membres jusqu&#x27;a la rampe, que l&#x27;on peut supprimer et qui est pourtant invalide par un zar, puisque le Maitre a dit « et le cohen offrira... vers l&#x27;autel » — c&#x27;est le portage des membres jusqu&#x27;a la rampe ! Et il repond : la ou [l&#x27;Ecriture] a revele, elle a revele. Si donc [le verset] est necessaire pour lui-meme, d&#x27;ou tenons-nous que la disposition des deux buches requiert la kehouna ? Rabbi lui a repondu que R. Chimon est fidele a sa propre position : il dit en effet plus loin, a la fin du quatrieme chapitre (Yoma 45a), a propos de l&#x27;allumage du petit bois, qu&#x27;aucun verset n&#x27;est necessaire pour qu&#x27;il ne soit fait que par un cohen, du fait de « te viendrait-il a l&#x27;esprit qu&#x27;un zar s&#x27;approche de l&#x27;autel ? » — car il n&#x27;admet pas le raisonnement de R. Yehouda, qui dit qu&#x27;il est possible de se tenir au sol et d&#x27;agir au moyen d&#x27;un soufflet. Et il en va de meme pour la disposition des deux buches, ou l&#x27;on ne peut pas se tenir au sol et proceder en les lancant. Quant a R. Yehouda, qui admet la possibilite du soufflet, on peut dire qu&#x27;il admet ici de meme la possibilite de lancer les buches au sommet de l&#x27;autel ; et pourtant il tire bien qu&#x27;elles requierent la kehouna de ce que le cohen est ecrit a propos du portage des membres, mention qui n&#x27;etait pas necessaire pour elle-meme puisqu&#x27;il tient que, meme si l&#x27;on peut le supprimer, cela reste un service — elle vient donc reveler, au sujet des buches, que la kehouna y est requise, comme nous l&#x27;avons dit dans notre passage.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>L'arbitrage vient d'un verset deja affecte a un autre emploi. On sait par tradition que « <i>et le cohen offrira le tout vers l'autel</i> » designe le <b>portage des membres</b> jusqu'a la rampe ; et comme cet acte suit lui aussi la kabbala, la mention du cohen y est encore une fois superflue — elle sert donc a exclure un <b>autre portage</b>, celui du bois, qui n'exige pas la kehouna.</p><p>Le raisonnement se poursuit par un raisonnement a fortiori implicite, que Rachi et Tossefot explicitent : si meme la <b>pose</b> des buches sur l'autel etait dispensee de kehouna, il aurait ete inutile d'ecrire un verset pour dispenser le simple <b>transport</b> du bois — le transport est evidemment moins exigeant que la pose. Le fait qu'un verset ait ete depense pour le portage prouve donc que la pose, elle, exige un cohen.</p><p>Consequence immediate sur le debat precedent : « et ils disposeront » ne peut pas dispenser la pose des buches, puisque celle-ci est requise de la kehouna par ailleurs. L'axe du <b>geste</b> tombe ; celui de la <b>matiere</b> demeure.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">״וְעָרְכוּ״ לָמָּה לִי? לִמְעוּטֵי הֶפְשֵׁט וְנִיתּוּחַ. וְאֵימָא הָכִי נָמֵי לְגוּפֵיהּ!</div>
+            <div class="fr"><p>[Revenons a] « et ils disposeront » : pourquoi en ai-je besoin ? Pour exclure l&#x27;ecorchement et le decoupage. — Mais dis [plutot] : la aussi, [le verset est necessaire] pour lui-meme !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְעֶרְכּוֹ לָמָּה לִי</b> דִּכְתִיב בָּהֶן כְּהֻונָּה:</div>
+          <div class="glose-fr">« Et ils disposeront » pourquoi en ai-je besoin — puisque la kehouna y est ecrite.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le deuxieme candidat vient de survivre a l'attaque des buches ; il tombe maintenant par ou le premier etait tombe. « Et ils disposeront » n'est peut-etre pas superflu du tout : le daf montrera au segment 11 que ses trois pluriels servent a <b>compter les six cohanim</b> de l'agneau.</p><p>Un verset qui a deja un emploi propre ne peut pas etre recycle en exclusion. Le candidat n 2 est disqualifie a son tour, et la chasse continue.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא: ״וְהִקְטִיר הַכֹּהֵן אֶת הַכֹּל״ לְמַאי אֲתָא? לִמְעוּטֵי הֶפְשֵׁט וְנִיתּוּחַ.</div>
+            <div class="fr"><p>Mais plutot : « et le cohen fera fumer le tout » (Levitique 1,9) — a quoi vient-il ? Pour exclure l&#x27;ecorchement et le decoupage.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לִמְעוּטֵי הֶפְשֵׁט וְנִיתּוּחַ</b> וּכְהֻונָּה דִּוְנָתַנּוּ לְגוּפֵיהּ כִּדְאָמְרִינַן דְּלָא תֵּימָא כֵּיוָן דְּלָא מִיעַכְּבָא כַּפָּרָה לָא תִּיבְּעֵי כְּהֻונָּה וּמִדְּגַלִּי בָּהּ דְּבָעֲיָא כְּהֻונָּה לָא אִיצְטְרִיךְ לְמִיהְדַּר לְמִיכְתַּב כְּהֻונָּה בְּהַעֲרָכַת נְתָחִין ואע&quot;ג דְּלָא מִיעַכְּבָא וְעַל כָּרְחֲךָ לִמְעוּטֵי כָּתְבִי&#x27;:</div>
+          <div class="glose-fr">Pour exclure l&#x27;ecorchement et le decoupage — et la kehouna de « et ils mettront » est pour elle-meme, comme nous l&#x27;avons dit : pour que tu ne dises pas que, puisqu&#x27;elle n&#x27;empeche pas l&#x27;expiation, elle ne requerrait pas la kehouna. Et des lors qu&#x27;il y a revele qu&#x27;elle requiert la kehouna, il n&#x27;etait plus necessaire de revenir ecrire la kehouna a propos de la disposition des morceaux, bien que celle-ci n&#x27;empeche pas [l&#x27;expiation] ; c&#x27;est donc necessairement pour l&#x27;exclusion qu&#x27;il l&#x27;a ecrite.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Troisieme candidat, et le bon. La <b>haktara</b> — faire fumer les morceaux sur l'autel — vient bien apres la kabbala : la mention du cohen y est superflue. Et cette fois, on ne peut lui trouver aucun emploi propre : elle n'apprend rien sur un service douteux, et ne sert a aucun comptage. Elle est donc <b>disponible</b> pour porter l'exclusion.</p><p>Rachi refait le bilan complet, et c'est un exercice d'economie : le verset 1,7 (« et ils mettront du feu ») sert pour lui-meme, a etablir que la kehouna vaut meme pour un acte qui n'empeche pas l'expiation. Une fois ce principe pose, il n'y avait plus besoin de le repeter pour la disposition des morceaux — donc la mention du cohen au verset 1,8 est libre, et sert au comptage. Reste le verset 1,9, qui n'a plus rien a faire : c'est lui l'exclusion.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">״וְהִקְרִיב הַכֹּהֵן אֶת הַכֹּל הַמִּזְבֵּחָה״ — זוֹ הוֹלָכַת אֵבָרִים לַכֶּבֶשׁ. הוֹלָכַת אֵבָרִים לַכֶּבֶשׁ הוּא דְּבָעֲיָא כְּהֻונָּה, הוֹלָכַת עֵצִים — לָא בָּעֲיָא כְּהֻונָּה, הָא סִדּוּר שְׁנֵי גְּזִירֵי עֵצִים — בָּעֲיָא כְּהֻונָּה. ״וְנָתְנוּ״ לְגוּפֵיהּ.</div>
+            <div class="fr"><p>« Et le cohen offrira le tout vers l&#x27;autel » (Levitique 1,13) — c&#x27;est le portage des membres jusqu&#x27;a la rampe : c&#x27;est le portage des membres jusqu&#x27;a la rampe qui requiert la kehouna, le portage du bois ne requiert pas la kehouna ; donc la disposition des deux buches requiert bien la kehouna. « Et ils mettront [du feu] » (Levitique 1,7) — pour lui-meme.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara solde ses comptes : chaque mention du cohen dans Levitique 1 recoit desormais son affectation, et aucune ne reste sans emploi. Le verset 1,13 exclut le portage du bois, ce qui etablit indirectement la kehouna de la pose des buches. Le verset 1,7 sert pour lui-meme, pour un service qui n'empeche pas l'expiation.</p><p>Restent les versets 1,8 et 1,9 : le premier va servir a compter les cohanim, le second porte l'exclusion. Ce recapitulatif n'ajoute pas d'idee nouvelle — c'est un <b>inventaire de verification</b>, la maniere dont la Guemara s'assure qu'aucun mot n'a ete depense deux fois ni laisse inutile.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">״וְעָרְכוּ״, שְׁנַיִם. ״בְּנֵי אַהֲרֹן״, שְׁנַיִם. ״הַכֹּהֲנִים״, שְׁנַיִם. לָמַדְנוּ לְטָלֶה שֶׁטָּעוּן שִׁשָּׁה.</div>
+            <div class="fr"><p>« Et ils disposeront » — deux ; « les fils d&#x27;Aharon » — deux ; « les cohanim » — deux. Nous avons appris que l&#x27;agneau requiert six [cohanim].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁטָּעוּן שִׁשָּׁה</b> הַבָּשָׂר בַּחֲמִשָּׁה וְהַקְּרָבַיִם בְּאֶחָד:</div>
+          <div class="glose-fr">Qu&#x27;il requiert six — la chair par cinq [cohanim] et les entrailles par un.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Voici l'emploi propre du verset 1,8, annonce au segment 8. La regle de lecture est classique : un pluriel sans precision vaut au minimum deux (<b>mi'out rabim chnayim</b>). Le verset en aligne trois d'affilee : le verbe, puis « les fils d'Aharon », puis « les cohanim ». Trois fois deux : <b>six cohanim</b> pour porter les membres de l'agneau.</p><p>Rachi verifie aussitot le chiffre sur la michna etudiee a 26b : cinq cohanim pour les cinq lots de chair, un pour les entrailles (<b>kerayim</b>) — total six. Le verset et la michna se recouvrent exactement.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב הַמְנוּנָא, קַשְׁיָא לֵיהּ לְרַבִּי אֶלְעָזָר: הַאי בְּבֶן הַבָּקָר כְּתִיב, וּבֶן הַבָּקָר עֶשְׂרִים וְאַרְבָּעָה בָּעֵי! וְנִיחָא לֵיהּ: ״עַל הָעֵצִים אֲשֶׁר עַל הָאֵשׁ אֲשֶׁר עַל הַמִּזְבֵּחַ״, אֵיזֶהוּ דָּבָר שֶׁנֶּאֱמַר בּוֹ עֵצִים אֵשׁ וּמִזְבֵּחַ —</div>
+            <div class="fr"><p>Rav Hamnouna a dit : Rabbi Elazar trouvait cela difficile — ce [verset]-la est ecrit a propos du jeune taureau, et le jeune taureau en requiert vingt-quatre ! Et il se l&#x27;expliquait [ainsi] : « sur le bois qui est sur le feu qui est sur l&#x27;autel » — quelle est la chose a propos de laquelle il est dit du bois, du feu et un autel —</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְנִיחָא לֵיהּ</b> הָדַר מְשַׁנֵּי לֵיהּ הָכִי עַל הָעֵצִים אֲשֶׁר עַל הָאֵשׁ קְרָא יַתִּירָא הוּא דְּהָכְתִיב וְנָתְנוּ אֵשׁ וְעָרְכוּ עֵצִים וְעָרְכוּ נְתָחִים לָמָּה לִי תּוּ עַל הָעֵצִים אֲשֶׁר עַל הָאֵשׁ וְגוֹ&#x27; לְמִידְרַשׁ בֵּיהּ דְּהָנֵי ו&#x27; כֹּהֲנִים הֻוצְרְכוּ לְדָבָר שֶׁנֶּאֱמַר בּוֹ אֵשׁ וְעֵצִים וּמִזְבֵּחַ וְאֵיזֶהוּ דָּבָר שֶׁהִזְקַקְתִּי לָכֶם לַמַּעֲרָכָה לְסַדֵּר עֵצִים וְאֵשׁ לַמִּזְבֵּחַ בִּשְׁבִילוֹ:</div>
+          <div class="glose-fr">Et il se l&#x27;expliquait — il repond ensuite ainsi : « sur le bois qui est sur le feu » est un verset superflu, car il est deja ecrit « et ils mettront du feu », « et ils disposeront du bois », « et ils disposeront les morceaux » ; pourquoi encore « sur le bois qui est sur le feu », etc. ? Pour en tirer que ces six cohanim ont ete requis pour la chose a propos de laquelle il est dit du feu, du bois et un autel. Et quelle est la chose pour laquelle je vous ai impose de disposer, pour le bucher, du bois et du feu sur l&#x27;autel a cause d&#x27;elle ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>L'objection est de contexte. Levitique 1,3-9 est le passage de l'<b>olat bakar</b>, l'holocauste de gros betail : le verset 1,8 parle donc du <b>taureau</b>. Or la michna de 26b compte vingt-quatre cohanim pour le taureau, pas six. Le chiffre tire du verset ne correspond pas a l'animal dont le verset traite.</p><p>Rabbi Elazar resout lui-meme sa difficulte par un second surplus, dans le meme verset : « <i>sur le bois qui est sur le feu qui est sur l'autel</i> ». Rachi montre que ces mots sont redondants — la Torah vient de dire qu'on met le feu (v. 7) et qu'on range le bois ; le redire ne decrit rien de neuf.</p><p>Ces mots sont donc un <b>signalement</b> : les six cohanim ne valent pas pour le taureau du contexte, mais pour l'offrande dont on a du specialement prescrire bois, feu et autel — c'est-a-dire le <b>tamid</b>, l'offrande quotidienne, qui est un agneau. Le daf s'interrompt sur cette definition ouverte, dont la reponse tombera a la page suivante.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_26b.html">&lsaquo; Yoma 26b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

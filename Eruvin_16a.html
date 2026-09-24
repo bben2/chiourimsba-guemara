@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eruvin 16a — Breche egale a la partie debout : les trois mesures des cloisons</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Eruvin 16a — Breche egale a la partie debout : les trois mesures des cloisons</h1>
+    <div class="ref">Eruvin 16a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Eruvin_15b.html">&lsaquo; Eruvin 15b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Eruvin_16b.html">Eruvin 16b &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> La Guemara poursuit la mahloket de Rav Pappa et de Rav Houna fils de Rav Yehochoua : une cloison dont la breche (parouts) egale la partie debout (omed) est-elle valable ? Rav Pappa permet, Rav Houna interdit.</p><p>Une baraita sur la caravane, puis une Tossefta de Kilayim enoncant trois mesures des cloisons (elements de moins de trois tefahim, de trois a quatre, de quatre a dix amot) sont examinees. Chaque clause semble contredire l&#x27;un des deux Amoraim ; la Guemara repond par le principe « puisqu&#x27;il a enseigne la premiere formule, il a enseigne la formule parallele », puis par l&#x27;explication de « sa pleine largeur » comme un espace ou l&#x27;on entre et sort.</p><p>Elle attribue enfin la premiere clause aux Rabbanan (lavoud en deca de trois) et commence a examiner la suivante a la lumiere de l&#x27;avis de Rabban Chimon ben Gamliel.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="760" height="470" fill="#fbfaf7"/>
+<text x="380" y="26" text-anchor="middle" font-family="Helvetica,Arial" font-size="15" font-weight="bold" fill="#2b2b2b">Tossefta Kilayim : les trois mesures des cloisons</text>
+<rect x="20" y="42" width="170" height="34" fill="#e8e4dc"/>
+<rect x="190" y="42" width="270" height="34" fill="#e8e4dc"/>
+<rect x="460" y="42" width="280" height="34" fill="#e8e4dc"/>
+<text x="105" y="64" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Largeur de chaque element</text>
+<text x="325" y="64" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Intervalle permis entre eux</text>
+<text x="600" y="64" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Si la breche domine</text>
+<rect x="20" y="76" width="720" height="92" fill="#eef3f8" stroke="#c9d3de"/>
+<text x="105" y="112" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#2b4a6a">1. moins de 3 tefahim</text>
+<text x="105" y="132" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">(roseaux)</text>
+<text x="200" y="102" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">moins de 3 tefahim</text>
+<text x="200" y="122" font-family="Helvetica,Arial" font-size="11" fill="#555">raison : que le chevreau ne s'y elance pas</text>
+<text x="200" y="140" font-family="Helvetica,Arial" font-size="11" fill="#555">en deca de 3 : lavoud, tout compte comme debout</text>
+<text x="470" y="112" font-family="Helvetica,Arial" font-size="12" fill="#2f6b3a">sans importance : seule compte</text>
+<text x="470" y="130" font-family="Helvetica,Arial" font-size="12" fill="#2f6b3a">la regle des 3 tefahim</text>
+<rect x="20" y="168" width="720" height="92" fill="#f7f1e6" stroke="#dccfb8"/>
+<text x="105" y="204" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#6a4a1a">2. de 3 a 4 tefahim</text>
+<text x="105" y="224" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">(4 non inclus)</text>
+<text x="200" y="194" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">moins que sa pleine largeur</text>
+<text x="200" y="214" font-family="Helvetica,Arial" font-size="11" fill="#555">que la breche n'egale pas la partie debout</text>
+<text x="200" y="232" font-family="Helvetica,Arial" font-size="11" fill="#555">(Rav Pappa : ou elle entre et sort)</text>
+<text x="470" y="204" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#a33">interdit partout,</text>
+<text x="470" y="222" font-family="Helvetica,Arial" font-size="12" fill="#a33">meme face a la partie debout</text>
+<rect x="20" y="260" width="720" height="118" fill="#eaf4ec" stroke="#bcd9c2"/>
+<text x="105" y="306" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#2f6b3a">3. de 4 tefahim</text>
+<text x="105" y="324" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#2f6b3a">a 10 amot</text>
+<text x="200" y="290" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">moins que sa pleine largeur</text>
+<text x="200" y="312" font-family="Helvetica,Arial" font-size="11" fill="#555">l'element est important (hachouv) :</text>
+<text x="200" y="330" font-family="Helvetica,Arial" font-size="11" fill="#555">le vide ne l'annule pas entierement</text>
+<text x="470" y="286" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">breche = debout :</text>
+<text x="484" y="304" font-family="Helvetica,Arial" font-size="11" fill="#2f6b3a">face au debout : permis</text>
+<text x="484" y="320" font-family="Helvetica,Arial" font-size="11" fill="#a33">face a la breche : interdit</text>
+<text x="470" y="342" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">debout majoritaire :</text>
+<text x="484" y="360" font-family="Helvetica,Arial" font-size="11" fill="#2f6b3a">permis meme face a la breche</text>
+<rect x="20" y="390" width="720" height="62" rx="8" fill="#ffffff" stroke="#8a4a4a"/>
+<text x="380" y="414" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Breche de plus de 10 amot : interdit, meme si tout le reste est debout</text>
+<text x="380" y="436" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2f6b3a">sauf tsourat hapetah (piquets + tresse au-dessus) : permis meme au-dela de 10</text>
+</svg></div>
+          <figcaption>Les trois mesures des cloisons selon la Tossefta de Kilayim, et la regle de la breche de dix amot.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 500" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="760" height="500" fill="#fbfaf7"/>
+<text x="380" y="26" text-anchor="middle" font-family="Helvetica,Arial" font-size="15" font-weight="bold" fill="#2b2b2b">Breche egale a la partie debout : qui la Tossefta soutient-elle ?</text>
+<rect x="20" y="42" width="350" height="62" rx="8" fill="#eaf4ec" stroke="#2f6b3a"/>
+<text x="195" y="66" text-anchor="middle" font-family="Helvetica,Arial" font-size="14" font-weight="bold" fill="#2f6b3a">Rav Pappa</text>
+<text x="195" y="88" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">parouts ke-omed : permis</text>
+<rect x="390" y="42" width="350" height="62" rx="8" fill="#f8eeee" stroke="#8a4a4a"/>
+<text x="565" y="66" text-anchor="middle" font-family="Helvetica,Arial" font-size="14" font-weight="bold" fill="#8a4a4a">Rav Houna fils de Rav Yehochoua</text>
+<text x="565" y="88" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">parouts ke-omed : interdit</text>
+<rect x="20" y="120" width="720" height="100" rx="8" fill="#ffffff" stroke="#aaa"/>
+<text x="36" y="142" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Debut (3 a 4) : "pas d'intervalle de sa pleine largeur" (seg. 6-7)</text>
+<text x="36" y="162" font-family="Helvetica,Arial" font-size="12" fill="#a33">Objection a Rav Pappa : l'egalite est donc interdite</text>
+<text x="36" y="182" font-family="Helvetica,Arial" font-size="12" fill="#2f6b3a">Reponse : "sa pleine largeur" = un espace ou l'element entre et sort,</text>
+<text x="36" y="200" font-family="Helvetica,Arial" font-size="12" fill="#2f6b3a">donc un peu plus que l'egalite</text>
+<rect x="20" y="232" width="350" height="140" rx="8" fill="#ffffff" stroke="#aaa"/>
+<text x="36" y="254" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Debut : "si la breche est plus grande</text>
+<text x="36" y="272" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">-> interdit" (seg. 8)</text>
+<text x="36" y="294" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">deduction : egale -> permis</text>
+<text x="36" y="314" font-family="Helvetica,Arial" font-size="12" fill="#a33">contre Rav Houna</text>
+<text x="36" y="340" font-family="Helvetica,Arial" font-size="11" fill="#2f6b3a">Reponse (seg. 12) : formule choisie</text>
+<text x="36" y="356" font-family="Helvetica,Arial" font-size="11" fill="#2f6b3a">pour faire pendant a la fin</text>
+<rect x="390" y="232" width="350" height="140" rx="8" fill="#ffffff" stroke="#aaa"/>
+<text x="406" y="254" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Fin : "si le debout est plus grand</text>
+<text x="406" y="272" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">-> permis" (seg. 9)</text>
+<text x="406" y="294" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">deduction : egale -> interdit</text>
+<text x="406" y="314" font-family="Helvetica,Arial" font-size="12" fill="#a33">contre Rav Pappa</text>
+<text x="406" y="340" font-family="Helvetica,Arial" font-size="11" fill="#2f6b3a">Reponse (seg. 11) : formule choisie</text>
+<text x="406" y="356" font-family="Helvetica,Arial" font-size="11" fill="#2f6b3a">pour faire pendant au debut</text>
+<rect x="20" y="386" width="720" height="98" rx="8" fill="#f3eef8" stroke="#6a4a8a"/>
+<text x="36" y="408" font-family="Helvetica,Arial" font-size="12" font-weight="bold" fill="#2b2b2b">Pourquoi separer "moins de 3" et "3" ? (seg. 13-15)</text>
+<text x="36" y="428" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Rav Pappa : element de 3 + intervalle de 3 = egalite -> permis ; impossible de les reunir</text>
+<text x="36" y="448" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Rav Houna : la loi est la meme, mais la raison differe (chevreau / egalite)</text>
+<text x="36" y="468" font-family="Helvetica,Arial" font-size="12" fill="#6a4a8a">Le Tanna enseigne les mesures de la cloison : une raison nouvelle merite sa propre clause</text>
+</svg></div>
+          <figcaption>Rav Pappa et Rav Houna fils de Rav Yehochoua face aux clauses de la Tossefta : chaque objection est repoussee.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בעביטין, בשליפין, בקנים, בקולחות — מטלטלין בתוכה, ובלבד שלא יהא בין גמל לגמל כמלא גמל, ובין אוכף לאוכף כמלא אוכף, ובין עביט לעביט כמלא עביט!</div>
+            <div class="fr"><p>... avec des avitin (coussins de selle), avec des chelifin, avec des roseaux, avec des kolahot (tiges) : on transporte a l&#x27;interieur, a condition qu&#x27;il n&#x27;y ait pas entre un chameau et un chameau la longueur d&#x27;un chameau, ni entre une selle et une selle la longueur d&#x27;une selle, ni entre un coussin et un coussin la longueur d&#x27;un coussin !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>עביטין</b> כר שתחת אוכף הגמל כדמתרגמינן (בראשית ל״א:ל״ד) בכר הגמל בעביטא דגמלא:</div>
+          <div class="glose-fr">Avitin : le coussin qui est sous la selle du chameau, comme nous traduisons (Genese 31, 34) « dans la selle du chameau » : be-avita de-gamla.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שליפין</b> משואות:</div>
+          <div class="glose-fr">Chelifin : massouot.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>קולחות</b> קלחי ירקות:</div>
+          <div class="glose-fr">Kolahot : des tiges de legumes.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Fin de la baraita de la <b>caravane</b> qui campe et s'entoure de ses montures et de ses objets. La condition « pas entre un chameau et un chameau la longueur d'un chameau » semble indiquer qu'une breche <b>egale</b> a la partie debout invalide l'enceinte : c'est une objection contre <b>Rav Pappa</b>, qui considere la breche egale a la partie debout (<b>parouts ke-omed</b>) comme permise.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הכא נמי כשנכנס ויוצא.</div>
+            <div class="fr"><p>Ici aussi, [il s&#x27;agit d&#x27;un intervalle] ou l&#x27;on entre et sort.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse : « la longueur d'un chameau » designe un espace ou l'on peut faire entrer et sortir le chameau aisement (<b>nikhnas ve-yotse</b>), donc un peu plus large que le chameau lui-meme. La breche est alors plus grande que la partie debout, et l'interdit ne contredit pas Rav Pappa.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תא שמע: נמצאת אתה אומר, שלש מדות במחיצות: כל שהוא פחות משלשה, צריך שלא יהא בין זה לזה שלשה, כדי שלא יזדקר הגדי בבת ראש.</div>
+            <div class="fr"><p>Viens et entends : Il se trouve que tu dis : il y a trois mesures pour les cloisons. Toute [cloison dont les elements font] moins de trois [tefahim], il faut qu&#x27;il n&#x27;y ait pas entre l&#x27;un et l&#x27;autre trois [tefahim], afin que le chevreau ne s&#x27;y elance pas tete la premiere.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>נמצאת אתה אומר כו&#x27;</b> רישא במס&#x27; כלאים (פ&quot;ד משנה ד) תנינן לה:</div>
+          <div class="glose-fr">Il se trouve que tu dis etc. : le debut [de cet enseignement], nous l&#x27;apprenons dans le traite Kilayim (ch. 4, michna 4).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כל שהוא פחות מג&#x27;</b> כל גדר העשוי בקנים עומדין פחות מרוחב ג&#x27;:</div>
+          <div class="glose-fr">Toute [cloison] de moins de trois : toute cloture faite de roseaux dresses de moins de trois [tefahim] de large.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>צריך שלא יהא בין זה לזה ג&#x27; כדי שלא יזדקר הגדי בבת ראש</b> כלומר להדיא בלא עכוב דדקירת גדי מבטל לה מתורת לבוד ואם אין בין זה לזה שלשה אפילו פרוץ מרובה על העומד כגון קנים של שתי אצבעות וריוח ב&#x27; טפחים בין זה לזה כשר דכל ריוח פחות מג&#x27; אמרי&#x27; לבוד וכולו הוי עומד:</div>
+          <div class="glose-fr">Il faut qu&#x27;il n&#x27;y ait pas entre l&#x27;un et l&#x27;autre trois, afin que le chevreau ne s&#x27;y elance pas tete la premiere : c&#x27;est-a-dire directement, sans obstacle ; car l&#x27;elan du chevreau l&#x27;exclut du statut de lavoud. Et s&#x27;il n&#x27;y a pas trois entre l&#x27;un et l&#x27;autre, meme si la breche est plus grande que la partie debout, par exemple des roseaux de deux doigts et un espace de deux tefahim entre l&#x27;un et l&#x27;autre, c&#x27;est valable, car pour tout espace de moins de trois nous disons lavoud, et le tout est considere comme debout.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle source, tiree des lois de <b>kilayim</b> (melanges interdits) : une cloison separe la vigne des semences et permet de semer une autre espece a cote. La Tossefta fixe <b>trois mesures</b> selon la largeur des elements qui forment la cloison.</p><p>Premiere mesure : des elements etroits (moins de trois tefahim). Seul compte l'intervalle : en deca de trois tefahim s'applique <b>lavoud</b> (les elements sont consideres comme joints). A trois tefahim, un chevreau peut passer d'un seul elan, et la cloison ne compte plus.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כל שהוא שלשה, ומשלשה עד ארבעה, צריך שלא יהא בין זה לזה כמלואו, כדי שלא יהא פרוץ כעומד. ואם היה פרוץ מרובה על העומד — אף כנגד העומד אסור.</div>
+            <div class="fr"><p>Toute [cloison dont les elements font] trois, et de trois jusqu&#x27;a quatre, il faut qu&#x27;il n&#x27;y ait pas entre l&#x27;un et l&#x27;autre sa pleine largeur, afin que la breche ne soit pas comme la partie debout. Et si la breche etait plus grande que la partie debout, meme en face de la partie debout c&#x27;est interdit.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ומג&#x27; ועד ד&#x27;</b> ולא ד&#x27; בכלל:</div>
+          <div class="glose-fr">Et de trois jusqu&#x27;a quatre : quatre non inclus.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>צריך שלא יהא בין זה לזה כמלואו</b> וכל כמה דלא הוי כמלואו אע&quot;ג דהוי ריוח שלשה כיון דעומד רבה עליו ליכא למימר אתי אוירא דהאי גיסא ודהאי גיסא ומבטל ליה והוו להו פתחים:</div>
+          <div class="glose-fr">Il faut qu&#x27;il n&#x27;y ait pas entre l&#x27;un et l&#x27;autre sa pleine largeur : et tant que [l&#x27;intervalle] n&#x27;atteint pas sa pleine largeur, bien qu&#x27;il y ait un espace de trois, puisque la partie debout est plus grande que lui, on ne peut pas dire que l&#x27;air de ce cote-ci et de ce cote-la vient l&#x27;annuler et qu&#x27;ils deviennent des ouvertures.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ואם היה פרוץ כו&#x27;</b> לקמן מתרץ לה אם היה פרוץ כעומד הוה ליה למיתני:</div>
+          <div class="glose-fr">Et si la breche etait etc. : plus loin [la Guemara] resout [la difficulte] : il aurait du enseigner « si la breche etait egale a la partie debout ».</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אף כנגד העומד אסור</b> לזרוע דלא אלים עומד בפחות מד&#x27; למישרי כנגדו היכא דפרוץ רבה עליו:</div>
+          <div class="glose-fr">Meme en face de la partie debout c&#x27;est interdit : de semer, car une partie debout de moins de quatre n&#x27;a pas la force de permettre en face d&#x27;elle la ou la breche la depasse.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deuxieme mesure : des elements de trois a quatre tefahim. L'intervalle peut depasser trois tefahim, a condition de rester en deca de la largeur de l'element (<b>kimlo'o</b>, « sa pleine largeur »).</p><p>Un element de moins de quatre tefahim n'est pas <b>hachouv</b> (important). Si la breche domine, le vide annule la cloison entiere, y compris la partie qui se tient debout.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כל שהוא ארבעה, ומארבעה עד עשר אמות, צריך שלא יהא בין זה לזה כמלואו, שלא יהא פרוץ כעומד. ואם היה פרוץ כעומד, כנגד העומד — מותר, כנגד הפרוץ — אסור. ואם היה עומד מרובה על הפרוץ — אף כנגד הפרוץ מותר.</div>
+            <div class="fr"><p>Toute [cloison dont les elements font] quatre, et de quatre jusqu&#x27;a dix amot, il faut qu&#x27;il n&#x27;y ait pas entre l&#x27;un et l&#x27;autre sa pleine largeur, afin que la breche ne soit pas comme la partie debout. Et si la breche etait comme la partie debout, en face de la partie debout c&#x27;est permis, en face de la breche c&#x27;est interdit.</p><p>Et si la partie debout etait plus grande que la breche, meme en face de la breche c&#x27;est permis.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ועד עשר</b> ועשר בכלל אבל יותר מי&#x27; כגון עומד י&quot;ב או ט&quot;ו לא מצי למיתני שיעור פירצתו במלואו דאפילו בציר ממלואו דאיכא פירצה יותר מעשרה מיתסר כולו כדתני סיפא:</div>
+          <div class="glose-fr">Et jusqu&#x27;a dix : dix inclus. Mais au-dela de dix, par exemple une partie debout de douze ou de quinze, il ne pouvait pas enseigner comme mesure de sa breche « sa pleine largeur », car meme en deca de sa pleine largeur, s&#x27;il y a une breche de plus de dix, tout est interdit, comme l&#x27;enseigne la fin.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כנגד העומד מותר</b> הואיל והיקף חשוב הוא וה&quot;ה אם היה פרוץ מרובה ולקמן מתרץ לה הרי כאן שלש מדות במדה ראשונה דקנים פחותים מג&#x27; לא קפדינן אמלואו כיון דמלואו לא הוי פירצה שלשה ואפי&#x27; איותר ממלואו לא קפדינן עד דאיכא פירצה שלשה ובמדה שניה קפדינן אמלואו דהא איכא שיעור פירצה למיהוי קרוי אויר ואתי אויר המרובה ומבטל לעומד דאפילו כנגדו אינו מתיר ובמדה שלישית דאיכא עומד חשוב אויר לא מבטל לה לגמרי ומתיר מיהא כנגדה:</div>
+          <div class="glose-fr">En face de la partie debout c&#x27;est permis : puisque c&#x27;est une enceinte importante. Et il en va de meme si la breche etait plus grande ; plus loin [la Guemara] l&#x27;explique. Voici donc trois mesures. Dans la premiere mesure, des roseaux de moins de trois, nous ne tenons pas compte de « sa pleine largeur », puisque sa pleine largeur n&#x27;est pas une breche de trois ; et meme au-dela de sa pleine largeur nous n&#x27;en tenons pas compte, tant qu&#x27;il n&#x27;y a pas une breche de trois. Dans la deuxieme mesure, nous tenons compte de « sa pleine largeur », car il y a la mesure de breche pour qu&#x27;on l&#x27;appelle « air », et l&#x27;air majoritaire vient annuler la partie debout, si bien que meme en face d&#x27;elle, elle ne permet pas. Dans la troisieme mesure, ou il y a une partie debout importante, l&#x27;air ne l&#x27;annule pas entierement, et elle permet du moins en face d&#x27;elle.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ואם היה עומד מרובה כו&#x27;</b> אכולה קאי ואפילו אעומד מג&#x27; ועד ד&#x27; דהא קתני בה נמי צריך שלא יהא בין זה לזה כמלואו הא בציר ממלואו שרי:</div>
+          <div class="glose-fr">Et si la partie debout etait plus grande etc. : cela porte sur l&#x27;ensemble, meme sur la partie debout de trois a quatre, puisqu&#x27;on y enseigne aussi « il faut qu&#x27;il n&#x27;y ait pas entre l&#x27;un et l&#x27;autre sa pleine largeur » ; donc moins que sa pleine largeur, c&#x27;est permis.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מארבעה עד עשר</b> גרסי&#x27; ולא גרסינן עד ארבע אמות:</div>
+          <div class="glose-fr">De quatre jusqu&#x27;a dix : nous lisons [ainsi], et nous ne lisons pas « jusqu&#x27;a quatre amot ».</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Troisieme mesure : des elements de quatre tefahim a dix amot. Ils sont <b>hachouv</b> : meme si la breche egale la partie debout, le vide n'annule pas la cloison entiere. On seme en face des elements debout ; en face des breches, on s'abstient.</p><p>Rachi resume la logique des trois mesures : plus l'element est large, plus il resiste a l'annulation par l'<b>avir</b> (l'air, le vide) qui l'entoure.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="700" height="250" fill="#fbfaf7"/>
+<text x="350" y="24" text-anchor="middle" font-family="Helvetica,Arial" font-size="14" font-weight="bold" fill="#2b2b2b">Planches de 4 tefahim ou plus, breche egale a la partie debout</text>
+<rect x="40" y="60" width="80" height="18" fill="#8a6a3a"/>
+<rect x="200" y="60" width="80" height="18" fill="#8a6a3a"/>
+<rect x="360" y="60" width="80" height="18" fill="#8a6a3a"/>
+<rect x="520" y="60" width="80" height="18" fill="#8a6a3a"/>
+<text x="80" y="52" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">omed</text>
+<text x="160" y="52" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">parouts</text>
+<rect x="40" y="84" width="80" height="100" fill="#dff0e3"/>
+<rect x="120" y="84" width="80" height="100" fill="#f6dede"/>
+<rect x="200" y="84" width="80" height="100" fill="#dff0e3"/>
+<rect x="280" y="84" width="80" height="100" fill="#f6dede"/>
+<rect x="360" y="84" width="80" height="100" fill="#dff0e3"/>
+<rect x="440" y="84" width="80" height="100" fill="#f6dede"/>
+<rect x="520" y="84" width="80" height="100" fill="#dff0e3"/>
+<text x="80" y="140" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2f6b3a">permis</text>
+<text x="160" y="140" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#a33">interdit</text>
+<text x="240" y="140" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2f6b3a">permis</text>
+<text x="320" y="140" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#a33">interdit</text>
+<text x="400" y="140" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2f6b3a">permis</text>
+<text x="480" y="140" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#a33">interdit</text>
+<text x="560" y="140" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#2f6b3a">permis</text>
+<text x="350" y="210" text-anchor="middle" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">Zone de semis de l'autre espece, derriere la cloison</text>
+<text x="350" y="230" text-anchor="middle" font-family="Helvetica,Arial" font-size="11" fill="#555">Si le debout est majoritaire, tout devient permis, meme face aux breches.</text>
+</svg></div><div class="svg-cap">Troisieme mesure : quand la breche egale la partie debout, on seme seulement en face des planches.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">נפרצה ביותר מעשר — אסור, היו שם קנים הדוקרנים ועושה להן פיאה מלמעלה, אפילו ביותר מעשר מותר.</div>
+            <div class="fr"><p>Si elle a ete percee sur plus de dix [amot], c&#x27;est interdit. S&#x27;il y avait la des roseaux pointus et qu&#x27;on leur a fait une tresse (pea) en haut, meme sur plus de dix, c&#x27;est permis.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>נפרצה ביותר מי&#x27; אסור</b> ואפי&#x27; כולו עומד:</div>
+          <div class="glose-fr">Si elle a ete percee sur plus de dix, c&#x27;est interdit : meme si tout le reste est debout.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>היו שם קנים הדוקרנין</b> משופין כדקר נעוצין בארץ ועשה להן פאה קלועה מלמעלה מזה לזה:</div>
+          <div class="glose-fr">S&#x27;il y avait la des roseaux pointus : effiles comme une pointe, plantes en terre, et on leur a fait une tresse en haut, de l&#x27;un a l&#x27;autre.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אפי&#x27; ביותר מעשר אמות מותר</b> דצורת הפתח מהניא בכלאים אף ליותר מעשר:</div>
+          <div class="glose-fr">Meme sur plus de dix amot, c&#x27;est permis : car la forme de porte (tsourat hapetah) est efficace pour les kilayim, meme au-dela de dix.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Une breche de plus de <b>dix amot</b> n'est plus une ouverture : elle annule la cloison, meme si le reste est entierement debout. Deux piquets reunis par une tresse en haut forment une <b>tsourat hapetah</b> (forme de porte), qui fait de l'espace une entree, quelle que soit sa largeur.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">קתני מיהת רישא משלשה עד ארבעה, ובלבד שלא יהא בין זה לזה כמלואו, תיובתא דרב פפא!</div>
+            <div class="fr"><p>Il enseigne en tout cas au debut : « de trois jusqu&#x27;a quatre, a condition qu&#x27;il n&#x27;y ait pas entre l&#x27;un et l&#x27;autre sa pleine largeur ». C&#x27;est une refutation de Rav Pappa !</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La deuxieme mesure exige un intervalle inferieur a la largeur de l'element. Une breche egale serait donc interdite, contrairement a l'avis de <b>Rav Pappa</b>. Le terme <b>tiyouvta</b> designe une refutation formelle.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר לך רב פפא: מאי מלואו — נכנס ויוצא.</div>
+            <div class="fr"><p>Rav Pappa te dira : que signifie « sa pleine largeur » ? [Un espace ou l&#x27;element] entre et sort.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מאי מלואו נכנס ויוצא</b> והכי משמע ברייתא כל שהוא ג&#x27; ומג&#x27; ועד ד&#x27; צריך שלא יהא בין זה לזה מילואו נכנס ויוצא שלא יהא פרוץ כעומד בנכנס ויוצא דהוה ליה פרוץ מרובה ואם היה פרוץ מרובה על העומד אף כנגד העומד אסור הואיל והוקף בדבר שאינו חשוב שאין בו רוחב ד&#x27;:</div>
+          <div class="glose-fr">Que signifie « sa pleine largeur » ? Entre et sort : et voici le sens de la baraita : toute [cloison] de trois, et de trois jusqu&#x27;a quatre, il faut qu&#x27;il n&#x27;y ait pas entre l&#x27;un et l&#x27;autre sa pleine largeur [au sens de] « entre et sort », afin que la breche ne soit pas comme la partie debout [au sens de] « entre et sort », car ce serait une breche majoritaire ; et si la breche etait plus grande que la partie debout, meme en face de la partie debout c&#x27;est interdit, puisqu&#x27;on a entoure avec une chose sans importance, qui n&#x27;a pas une largeur de quatre.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Meme reponse qu'au segment 1 : « sa pleine largeur » designe un intervalle ou l'element passe librement, un peu plus large que lui. L'egalite stricte reste permise.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הכי נמי מסתברא מדקתני: אם היה פרוץ מרובה על העומד — אף כנגד העומד אסור. הא כעומד — מותר. שמע מינה.</div>
+            <div class="fr"><p>On peut aussi le deduire par le raisonnement, puisqu&#x27;il enseigne : « si la breche etait plus grande que la partie debout, meme en face de la partie debout c&#x27;est interdit ». Donc [si elle est] comme la partie debout, c&#x27;est permis.</p><p>Deduis-en [cela].</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Soutien a Rav Pappa par <b>diyouk</b> (deduction de la formulation) : la Tossefta n'interdit que la breche <b>plus grande</b> que la partie debout ; l'egalite est donc permise.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לימא תיהוי תיובתיה דרב הונא בריה דרב יהושע? אמר לך: וליטעמיך, אימא סיפא: אם היה עומד מרובה על הפרוץ, אף כנגד הפרוץ מותר. הא כפרוץ — אסור!</div>
+            <div class="fr"><p>Dirons-nous que c&#x27;est une refutation de Rav Houna fils de Rav Yehochoua ? Il te dira : et selon ton raisonnement, dis la fin : « si la partie debout etait plus grande que la breche, meme en face de la breche c&#x27;est permis ».</p><p>Donc [si elle est] comme la breche, c&#x27;est interdit !</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La meme methode appliquee a la fin de la Tossefta donne le resultat inverse : seule la partie debout <b>majoritaire</b> permet partout ; l'egalite serait interdite, comme le dit Rav Houna fils de Rav Yehochoua.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">סיפא קשיא לרב פפא, רישא קשיא לרב הונא בריה דרב יהושע.</div>
+            <div class="fr"><p>La fin est difficile pour Rav Pappa, le debut est difficile pour Rav Houna fils de Rav Yehochoua.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Les deux deductions se contredisent. Chacun des deux Amoraim doit expliquer la clause qui semble aller contre lui.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">סיפא לרב פפא לא קשיא: איידי דתנא רישא ״פרוץ מרובה על העומד״, תנא סיפא ״עומד מרובה על הפרוץ״.</div>
+            <div class="fr"><p>La fin n&#x27;est pas difficile pour Rav Pappa : puisqu&#x27;il a enseigne au debut « la breche plus grande que la partie debout », il a enseigne a la fin « la partie debout plus grande que la breche ».</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>איידי דתנא רישא פרוץ מרובה על העומד</b> אסור דלא סגיא דלא קתני לה לגלויי אמלואו דלאו מצומצם קאמר דקמ&quot;ל הא כעומד מותר אף כנגד הפרוץ:</div>
+          <div class="glose-fr">Puisqu&#x27;il a enseigne au debut « la breche plus grande que la partie debout » : interdit. Il fallait absolument l&#x27;enseigner, pour reveler, a propos de « sa pleine largeur », qu&#x27;il ne parle pas d&#x27;une mesure exacte ; il nous apprend donc que [si elle est] comme la partie debout, c&#x27;est permis, meme en face de la breche.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>תנא סיפא עומד מרובה על הפרוץ</b> אע&quot;ג דלא איצטריך ליה דהא מגופה שמעת מינה דאפי&#x27; יש עומד כפרוץ שרי מדתנא ליה שלא יהא פרוץ כעומד ותרצינן לה בנכנס ויוצא הא בצמצום שרי וכ&quot;ש עומד מרובה על הפרוץ אלא משום רישא תנא סיפא ולא משום למידק מינה הא כפרוץ אסור:</div>
+          <div class="glose-fr">Il a enseigne a la fin « la partie debout plus grande que la breche » : bien que ce ne soit pas necessaire, car de [la clause] elle-meme tu apprends que meme si la partie debout est comme la breche, c&#x27;est permis, puisqu&#x27;il enseigne « afin que la breche ne soit pas comme la partie debout », et nous l&#x27;avons explique [au sens de] « entre et sort » ; donc a mesure exacte c&#x27;est permis, et a plus forte raison si la partie debout est plus grande que la breche. Mais c&#x27;est a cause du debut qu&#x27;il a enseigne la fin, et non pour qu&#x27;on en deduise : donc [si elle est] comme la breche, c&#x27;est interdit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Principe de redaction : <b>aydi</b> (« puisque »). Le Tanna choisit parfois une formule pour faire pendant a la clause precedente ; on ne tire pas de deduction de la formule ainsi amenee.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רישא לרב הונא בריה דרב יהושע לא קשיא: איידי דבעי למיתני סיפא ״עומד מרובה על הפרוץ״, תנא רישא ״פרוץ מרובה על העומד״.</div>
+            <div class="fr"><p>Le debut n&#x27;est pas difficile pour Rav Houna fils de Rav Yehochoua : puisqu&#x27;il voulait enseigner a la fin « la partie debout plus grande que la breche », il a enseigne au debut « la breche plus grande que la partie debout ».</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רישא לרב הונא לא קשיא איידי דבעי למיתני סיפא עומד מרובה על הפרוץ</b> מותר דלא סגי דלא קתני לה דקמ&quot;ל הא כפרוץ אסור:</div>
+          <div class="glose-fr">Le debut n&#x27;est pas difficile pour Rav Houna : puisqu&#x27;il voulait enseigner a la fin « la partie debout plus grande que la breche » : permis. Il fallait absolument l&#x27;enseigner, pour nous apprendre : donc [si elle est] comme la breche, c&#x27;est interdit.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>תני נמי רישא פרוץ מרובה על העומד</b> אע&quot;ג דלא איצטריך דהא אפי&#x27; כעומד נמי אסור:</div>
+          <div class="glose-fr">Il a enseigne aussi au debut « la breche plus grande que la partie debout » : bien que ce ne soit pas necessaire, puisque meme [si elle est] comme la partie debout, c&#x27;est aussi interdit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Houna fils de Rav Yehochoua applique le meme principe en sens inverse : c'est la clause finale qui porte l'enseignement, la premiere formule a ete choisie pour lui faire pendant.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בשלמא לרב פפא, משום הכי לא עריב להו ותני להו.</div>
+            <div class="fr"><p>Cela se comprend selon Rav Pappa : c&#x27;est pour cela qu&#x27;il ne les a pas reunis pour les enseigner [ensemble].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בשלמא לרב פפא</b> דאמר פרוץ כעומד מותר:</div>
+          <div class="glose-fr">Cela se comprend selon Rav Pappa : qui dit que la breche comme la partie debout est permise.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>משום הכי לא עריב</b> ג&#x27; בהדי פחות מג&#x27; ולמיתני כל שהוא פחות מג&#x27; וג&#x27; צריך שלא יהא בין זה לזה ג&#x27; דלא מצי למימר צריך שלא יהא בין זה לזה ג&#x27; דכיון דעומד ג&#x27; לא איכפת לן אי פרוץ נמי ג&#x27; דהא פרוץ כעומד מותר ומשום הכי אפסקיה לאתנייה גבי פחות מד&#x27; למיתנא ביה כמלואו דליהוי משמע בנכנס ויוצא:</div>
+          <div class="glose-fr">C&#x27;est pour cela qu&#x27;il ne les a pas reunis : trois avec moins de trois, pour enseigner « toute [cloison] de moins de trois et de trois, il faut qu&#x27;il n&#x27;y ait pas entre l&#x27;un et l&#x27;autre trois ». Car il ne pouvait pas dire « il faut qu&#x27;il n&#x27;y ait pas entre l&#x27;un et l&#x27;autre trois », puisque, la partie debout etant de trois, peu nous importe que la breche soit aussi de trois, car la breche comme la partie debout est permise. C&#x27;est pourquoi il l&#x27;a separe, pour l&#x27;enseigner avec moins de quatre et y enseigner « sa pleine largeur », qui signifie « entre et sort ».</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle question sur la structure de la Tossefta : pourquoi l'element de <b>trois</b> tefahim est-il range avec la deuxieme mesure plutot qu'avec la premiere ? Selon Rav Pappa, un element de trois avec un intervalle de trois forme une egalite, qui est permise ; la regle « pas d'intervalle de trois » ne pouvait donc pas s'y appliquer.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אלא לרב הונא בריה דרב יהושע — ליערבינהו וליתננהו: כל שהוא פחות משלשה, ושלשה — צריך שלא יהא בין זה לזה שלשה!</div>
+            <div class="fr"><p>Mais selon Rav Houna fils de Rav Yehochoua, qu&#x27;il les reunisse et les enseigne [ainsi] : « toute [cloison] de moins de trois, et de trois, il faut qu&#x27;il n&#x27;y ait pas entre l&#x27;un et l&#x27;autre trois » !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אלא לרב הונא</b> דאמר פרוץ כעומד אסור אפי&#x27; כנגד העומד:</div>
+          <div class="glose-fr">Mais selon Rav Houna : qui dit que la breche comme la partie debout est interdite, meme en face de la partie debout.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ליערב</b> ג&#x27; בהדי פחות מג&#x27; וליתני צריך שלא יהא בין זה לזה ג&#x27; טפחים:</div>
+          <div class="glose-fr">Qu&#x27;il les reunisse : trois avec moins de trois, et qu&#x27;il enseigne « il faut qu&#x27;il n&#x27;y ait pas entre l&#x27;un et l&#x27;autre trois tefahim ».</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Selon Rav Houna fils de Rav Yehochoua, un element de trois exige un intervalle de moins de trois, exactement comme un element plus etroit. Le Tanna aurait donc pu reunir les deux cas en une seule clause.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">משום דלא דמי פסולא דרישא לפסולא דסיפא. פסולא דרישא — כדי שלא יזדקר הגדי בבת אחת, פסולא דסיפא — שלא יהא פרוץ כעומד.</div>
+            <div class="fr"><p>Parce que l&#x27;invalidite du debut n&#x27;est pas semblable a l&#x27;invalidite de la fin. L&#x27;invalidite du debut : afin que le chevreau ne s&#x27;y elance pas d&#x27;un seul coup ; l&#x27;invalidite de la fin : afin que la breche ne soit pas comme la partie debout.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>משום דלא דמי</b> פסולא דפחות מג&#x27; לפסולא דג&#x27; דפסולא דפחות מג&#x27; לא הוי מצי למיתלי בפרוץ מרובה על העומד דכל כמה דלא הוי פרוץ ג&#x27; אע&quot;ג דעומד טפח ופרוץ טפחיים כשר ומכי מטא פרוץ לשלשה אשמעי&#x27; דבהכי מקרי פרוץ משום יזדקר גדי:</div>
+          <div class="glose-fr">Parce que n&#x27;est pas semblable : l&#x27;invalidite de moins de trois a l&#x27;invalidite de trois. Car l&#x27;invalidite de moins de trois, il ne pouvait pas la faire dependre de « la breche plus grande que la partie debout », puisque tant que la breche n&#x27;atteint pas trois, meme si la partie debout est d&#x27;un tefah et la breche de deux tefahim, c&#x27;est valable ; et des que la breche atteint trois, il nous apprend que par cela elle est appelee breche, a cause [de la regle] « que le chevreau ne s&#x27;elance pas ».</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>פסולא דסיפא</b> היכא דעומד ג&#x27; לא מיפסל משום דיקור גדי דאי הוה עומד מרובה לא הוה חיישינן לגדי אלא משום מאי מיפסיל בפרוץ ג&#x27; משום דהוי פרוץ כעומד ותנא לאגמורי מדות דמחיצה קאתי ומכי מצי לחדושי טעמיה ומתלייה בפסולא אחרינא תנייה:</div>
+          <div class="glose-fr">L&#x27;invalidite de la fin : la ou la partie debout est de trois, elle n&#x27;est pas invalidee a cause de l&#x27;elan du chevreau, car si la partie debout etait majoritaire, nous ne nous soucierions pas du chevreau. Pourquoi donc est-elle invalidee par une breche de trois ? Parce que c&#x27;est une breche comme la partie debout. Et le Tanna vient enseigner les mesures de la cloison ; des lors qu&#x27;il pouvait innover sa raison et la faire dependre d&#x27;une autre invalidite, il l&#x27;a enseignee [a part].</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse pour Rav Houna fils de Rav Yehochoua : la loi pratique est la meme, mais la <b>raison</b> differe. Pour les elements etroits, le critere est l'elan du chevreau ; pour l'element de trois, le critere est l'egalite entre breche et partie debout. La Tossefta, qui enseigne les mesures des cloisons, classe selon la raison.</p><p>La structure de la Tossefta ne tranche donc pas la mahloket.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg16">
+          <div class="seg-num">17</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">פחות משלשה מני — רבנן היא, דאמרי: פחות משלשה אמרינן לבוד, שלשה לא אמרינן לבוד.</div>
+            <div class="fr"><p>Moins de trois, de qui [est cet enseignement] ? Il est des Rabbanan, qui disent : en deca de trois, nous disons lavoud ; a trois, nous ne disons pas lavoud.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>פחות מג&#x27; מני רבנן היא</b> מדקא מפליג בין פחות מג&#x27; לג&#x27; ש&quot;מ רבנן היא דמפלגי נמי בין פחות מג&#x27; לג&#x27;:</div>
+          <div class="glose-fr">Moins de trois, de qui ? Il est des Rabbanan : puisqu&#x27;il distingue entre moins de trois et trois, on en deduit qu&#x27;il est des Rabbanan, qui distinguent eux aussi entre moins de trois et trois.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Lavoud</b> : deux elements separes par un intervalle tres petit sont consideres comme joints. Selon les <b>Rabbanan</b>, la mesure est de moins de trois tefahim ; selon <b>Rabban Chimon ben Gamliel</b>, de moins de quatre. La premiere clause, qui fixe la limite a trois, suit les Rabbanan.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg17">
+          <div class="seg-num">18</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אימא סיפא: כל שהוא שלשה, ומשלשה ועד ארבעה —</div>
+            <div class="fr"><p>Dis la fin : « toute [cloison dont les elements font] trois, et de trois jusqu&#x27;a quatre » -</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אימא סיפא כל שהוא ג&#x27; ומג&#x27; ועד ד&#x27;</b> מדקא מפליג בין פחות מד&#x27; לד&#x27; דקאמר פחות מד&#x27; אם פרוץ יתר עליו אף כנגד העומד אסור וד&#x27; גופיה קתני סיפא דמתיר כנגדו ואף על גב דפרוץ יתר עליו ש&quot;מ רבן שמעון בן גמליאל היא:</div>
+          <div class="glose-fr">Dis la fin « toute [cloison] de trois, et de trois jusqu&#x27;a quatre » : puisqu&#x27;il distingue entre moins de quatre et quatre, en disant que pour moins de quatre, si la breche la depasse, meme en face de la partie debout c&#x27;est interdit, et que pour quatre lui-meme la fin enseigne qu&#x27;il permet en face d&#x27;elle meme si la breche la depasse, on en deduit que c&#x27;est Rabban Chimon ben Gamliel.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אימא סיפא כל שהוא שלשה ומג&#x27; ועד ד&#x27; כו&#x27;</b> סיפא גופה היה יכול להקשות דלא אתיא כרבנן כדקאמר הש&quot;ס מדלא מתיר עומד שלשה כנגדו וכרשב&quot;ג נמי לא אתיא מדקאמר וצריך שלא יהא בין זה לזה כמלואו ולרשב&quot;ג אפי&#x27; יותר ממלואו אין בכך כלום כיון דליכא ד&#x27; כלבוד דמי אלא כך דרך הש&quot;ס שמתחיל קושיא מרישא כשיכול וכה&quot;ג איכא פ&#x27; כירה (שבת ד&#x27; לט:) גבי חמין שהוחמו בשבת:</div>
+          <div class="glose-fr">Dis la fin « toute [cloison] de trois, et de trois jusqu&#x27;a quatre » etc. : il aurait pu objecter a partir de la fin elle-meme qu&#x27;elle ne s&#x27;accorde pas avec les Rabbanan, comme le dit la Guemara, puisqu&#x27;elle ne permet pas en face d&#x27;une partie debout de trois ; et elle ne s&#x27;accorde pas non plus avec Rabban Chimon ben Gamliel, puisqu&#x27;elle dit « il faut qu&#x27;il n&#x27;y ait pas entre l&#x27;un et l&#x27;autre sa pleine largeur », alors que selon Rabban Chimon ben Gamliel, meme plus que sa pleine largeur ne pose aucun probleme, puisqu&#x27;en l&#x27;absence de quatre c&#x27;est comme lavoud. Mais telle est la maniere de la Guemara : elle commence la difficulte par le debut quand elle le peut. On trouve un cas semblable au chapitre Kira (Chabbat 39b), a propos de l&#x27;eau chauffee pendant Chabbat.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara commence a opposer la clause suivante a la premiere : elle distingue entre moins de quatre et quatre, ce qui correspond a la mesure de <b>Rabban Chimon ben Gamliel</b>. La Tossefta semblerait alors composee de clauses d'auteurs differents. La suite de la discussion se trouve au daf 16b.</p><p>Tossefot note que la clause finale pose aussi une difficulte propre, mais que la Guemara commence par la premiere clause quand elle le peut.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="700" height="220" fill="#fbfaf7"/>
+<text x="350" y="24" text-anchor="middle" font-family="Helvetica,Arial" font-size="14" font-weight="bold" fill="#2b2b2b">A qui attribuer la Tossefta ? La mesure du lavoud</text>
+<rect x="20" y="42" width="320" height="160" rx="8" fill="#eef3f8" stroke="#4a6a8a"/>
+<text x="180" y="66" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#2b4a6a">Rabbanan</text>
+<text x="36" y="92" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">intervalle de moins de 3 : lavoud</text>
+<text x="36" y="112" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">intervalle de 3 : pas de lavoud</text>
+<text x="36" y="144" font-family="Helvetica,Arial" font-size="11" fill="#2f6b3a">La premiere clause (moins de 3 / 3)</text>
+<text x="36" y="162" font-family="Helvetica,Arial" font-size="11" fill="#2f6b3a">distingue a 3 : elle est des Rabbanan (seg. 16)</text>
+<rect x="360" y="42" width="320" height="160" rx="8" fill="#f7f1e6" stroke="#9a7a4a"/>
+<text x="520" y="66" text-anchor="middle" font-family="Helvetica,Arial" font-size="13" font-weight="bold" fill="#6a4a1a">Rabban Chimon ben Gamliel</text>
+<text x="376" y="92" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">intervalle de moins de 4 : lavoud</text>
+<text x="376" y="112" font-family="Helvetica,Arial" font-size="12" fill="#2b2b2b">element de 4 : important</text>
+<text x="376" y="144" font-family="Helvetica,Arial" font-size="11" fill="#6a4a1a">La clause suivante distingue a 4 :</text>
+<text x="376" y="162" font-family="Helvetica,Arial" font-size="11" fill="#6a4a1a">selon Rachi, elle serait de lui (seg. 17)</text>
+</svg></div><div class="svg-cap">La mesure du lavoud permet d&#x27;identifier l&#x27;auteur de chaque clause.</div></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Eruvin_15b.html">&lsaquo; Eruvin 15b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Eruvin_16b.html">Eruvin 16b &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

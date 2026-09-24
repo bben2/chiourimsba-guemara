@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bekhorot 18b — le bekhor douteux, les dons sacerdotaux, et le partage quand une bete meurt</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Bekhorot 18b — le bekhor douteux, les dons sacerdotaux, et le partage quand une bete meurt</h1>
+    <div class="ref">Bekhorot 18b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Bekhorot_18a.html">&lsaquo; Bekhorot 18a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Bekhorot_19a.html">Bekhorot 19a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> La sougya prolonge la michna sur les jumeaux de brebis dont le statut d&#x27;aine (bekhor) est incertain. Elle precise le litige R.</p><p>Meir / R. Yossei : quand le remplacant du doute est deja entre les mains du cohen, R.</p><p>Yossei exempte des dons sacerdotaux (matnot : epaule, machoire, caillette) car on a rendu le non-ayant-droit comme un ayant-droit, tandis que R. Meir oblige parce que le cohen attaque des deux cotes ; Rav Papa precise que pour le maaser douteux tous exemptent.</p><p>La Guemara traite ensuite du cas ou l&#x27;une des deux betes meurt : R. Tarfon dit qu&#x27;on partage (yahalokou), R.</p><p>Akiva que la preuve incombe au reclamant (ha-motzi me-havero alav ha-raaya) ; R. Hiyya illustre par deux paraboles (deux deposants chez un berger vs un deposant chez le proprietaire), et Rava conclut que le vrai litige porte sur la cour du proprietaire ou paît un cohen.</p><p>Le Rosh tranche : la loi suit R. Meir pour les dons et R.</p><p>Akiva pour le partage.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="300" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Cas de doute : celui dont le remplacant est deja chez le cohen paie-t-il les matnot ?</text>
+  <rect x="30" y="42" width="330" height="26" fill="#eef2ff" stroke="#3730a3"/>
+  <rect x="360" y="42" width="330" height="26" fill="#fdeaea" stroke="#b91c1c"/>
+  <text x="46" y="60" font-size="12.5" font-weight="700" fill="#3730a3">R. Yossei : EXEMPTE</text>
+  <text x="376" y="60" font-size="12.5" font-weight="700" fill="#b91c1c">R. Meir : OBLIGE</text>
+  <g font-size="11">
+  <rect x="30" y="68" width="330" height="52" fill="#ffffff" stroke="#d6cdbb"/><rect x="360" y="68" width="330" height="52" fill="#ffffff" stroke="#d6cdbb"/>
+  <text x="46" y="88" fill="#292524">Le remplacant (l'une des betes du doute)</text><text x="46" y="104" fill="#292524">est deja chez le cohen : on a rendu</text><text x="46" y="118" fill="#292524">"le non-ayant-droit" comme un ayant-droit</text>
+  <text x="376" y="88" fill="#292524">Le cohen l'attaque des deux cotes :</text><text x="376" y="104" fill="#292524">si aine -&gt; tout a moi ; sinon -&gt;</text><text x="376" y="118" fill="#292524">donne-moi les matnot (dons)</text>
+  </g>
+  <rect x="30" y="128" width="660" height="34" fill="#fbf7ef" stroke="#d6cdbb"/>
+  <text x="360" y="149" text-anchor="middle" font-size="12" font-weight="700" fill="#292524">Rav Papa : dans le doute de MAASER, tous s'accordent qu'il est EXEMPTE des matnot</text>
+  <text x="360" y="182" text-anchor="middle" font-size="12" fill="#78716c">(le maaser : le cohen n'y a pas de part, il ne l'attaque pas des deux cotes)</text>
+  <rect x="30" y="196" width="660" height="26" fill="#eaf6ec" stroke="#15803d"/>
+  <text x="360" y="214" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">Halakha (Rosh) : la loi suit R. Meir pour les matnot du bekhor douteux</text>
+  <text x="360" y="246" text-anchor="middle" font-size="11.5" fill="#292524">Motif de R. Meir : "attaque des deux cotes" — non "pour que la loi des dons ne s'oublie pas"</text>
+  <text x="360" y="270" text-anchor="middle" font-size="11.5" fill="#292524">Motif de R. Yossei : "on a rendu le non-ayant-droit comme un ayant-droit"</text>
+</svg></div>
+          <figcaption>Le litige R. Meir / R. Yossei sur les dons sacerdotaux quand le remplacant est chez le cohen, et la precision de Rav Papa (segments 0-5).</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="320" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Deux agneaux (1 au cohen, 1 au proprietaire) : l'un meurt — a qui le survivant ?</text>
+  <rect x="24" y="40" width="330" height="122" rx="10" fill="#eef2ff" stroke="#3730a3"/>
+  <rect x="366" y="40" width="330" height="122" rx="10" fill="#fff7e6" stroke="#b45309"/>
+  <text x="189" y="64" text-anchor="middle" font-size="13" font-weight="700" fill="#3730a3">R. Tarfon : yahalokou (on partage)</text>
+  <text x="531" y="64" text-anchor="middle" font-size="13" font-weight="700" fill="#b45309">R. Akiva : ha-motzi me-havero</text>
+  <g font-size="11">
+  <text x="40" y="88" fill="#292524">Parabole : deux deposants chez UN berger</text>
+  <text x="40" y="106" fill="#292524">(r_oe) — nul ne detient. Le berger pose</text>
+  <text x="40" y="124" fill="#292524">la bete entre eux et se retire : on partage</text>
+  <text x="40" y="146" fill="#78716c">R. Ami : R. Tarfon s'est retracte (partage)</text>
+  <text x="382" y="88" fill="#292524">Parabole : UN deposant chez le baal ha-bayit</text>
+  <text x="382" y="106" fill="#292524">(qui a deja son troupeau) — le survivant est</text>
+  <text x="382" y="124" fill="#292524">deja detenu : la preuve incombe au reclamant</text>
+  <text x="382" y="146" fill="#78716c">Le cohen doit prouver, sinon rien</text>
+  </g>
+  <rect x="60" y="176" width="600" height="60" rx="9" fill="#fbf7ef" stroke="#d6cdbb"/>
+  <text x="360" y="198" text-anchor="middle" font-size="12" font-weight="700" fill="#292524">Rava / Rav Papa : tous s'accordent sur les deux paraboles.</text>
+  <text x="360" y="218" text-anchor="middle" font-size="11.5" fill="#292524">Le litige porte sur : la cour du baal ha-bayit ou paît un cohen —</text>
+  <text x="360" y="232" text-anchor="middle" font-size="11.5" fill="#292524">la cour acquiert-elle pour le cohen (partage) ou non (preuve au reclamant) ?</text>
+  <rect x="60" y="248" width="600" height="26" fill="#eaf6ec" stroke="#15803d"/>
+  <text x="360" y="266" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">Halakha (Rosh) : la loi suit R. Akiva</text>
+  <text x="360" y="296" text-anchor="middle" font-size="11.5" fill="#78716c">R. Tarfon : la cour du proprietaire acquiert pour le cohen (mitzva faite avec son bien) — donc partage</text>
+</svg></div>
+          <figcaption>Quand une des deux betes meurt : R. Tarfon (partage) vs R. Akiva (preuve au reclamant), les paraboles de R. Hiyya et la resolution de Rava (segments 6-11).</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="300" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Brebis n'ayant jamais mis bas (lo bikru) : quels petits vont au cohen ?</text>
+  <g font-size="11.5">
+  <rect x="24" y="40" width="216" height="70" rx="9" fill="#eaf6ec" stroke="#15803d"/>
+  <text x="132" y="62" text-anchor="middle" font-weight="700" fill="#15803d">2 brebis -&gt; 2 males</text>
+  <text x="132" y="84" text-anchor="middle" fill="#292524">les deux au cohen</text>
+  <text x="132" y="100" text-anchor="middle" fill="#78716c">(chacun aine de sa mere)</text>
+  <rect x="252" y="40" width="216" height="70" rx="9" fill="#eaf6ec" stroke="#15803d"/>
+  <text x="360" y="62" text-anchor="middle" font-weight="700" fill="#15803d">1 male + 1 femelle</text>
+  <text x="360" y="84" text-anchor="middle" fill="#292524">le male au cohen</text>
+  <rect x="480" y="40" width="216" height="70" rx="9" fill="#fff7e6" stroke="#b45309"/>
+  <text x="588" y="62" text-anchor="middle" font-weight="700" fill="#b45309">2 males + 1 femelle</text>
+  <text x="588" y="84" text-anchor="middle" fill="#292524">1 a lui, 1 au cohen</text>
+  <text x="588" y="100" text-anchor="middle" fill="#78716c">(doute : lequel est l'aine ?)</text>
+  <rect x="24" y="120" width="330" height="70" rx="9" fill="#fdeaea" stroke="#b91c1c"/>
+  <text x="189" y="142" text-anchor="middle" font-weight="700" fill="#b91c1c">2 femelles+1 male, ou 2 males+2 femelles</text>
+  <text x="189" y="164" text-anchor="middle" fill="#292524">le cohen n'a RIEN</text>
+  <text x="189" y="180" text-anchor="middle" font-size="10.5" fill="#78716c">(peut-etre une femelle est sortie la 1re)</text>
+  <rect x="366" y="120" width="330" height="70" rx="9" fill="#fff7e6" stroke="#b45309"/>
+  <text x="531" y="142" text-anchor="middle" font-weight="700" fill="#b45309">1 a deja mis bas, 1 non -&gt; 2 males</text>
+  <text x="531" y="164" text-anchor="middle" fill="#292524">1 a lui, 1 au cohen (doute)</text>
+  </g>
+  <rect x="60" y="204" width="600" height="60" rx="9" fill="#eef2ff" stroke="#3730a3"/>
+  <text x="360" y="226" text-anchor="middle" font-size="12" font-weight="700" fill="#3730a3">Sur le petit du doute qui reste au proprietaire :</text>
+  <text x="360" y="246" text-anchor="middle" font-size="11.5" fill="#292524">R. Tarfon : le cohen choisit le meilleur | R. Akiva : on evalue (le cohen prend le maigre)</text>
+  <text x="360" y="288" text-anchor="middle" font-size="11.5" fill="#78716c">Le second broute jusqu'a devenir taré (moum), puis le proprietaire le mange</text>
+</svg></div>
+          <figcaption>La michna : repartition des petits entre cohen et proprietaire selon les naissances (segments 12-18).</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כֹּל שֶׁחֲלִיפָיו בְּיַד כֹּהֵן פָּטוּר מִן הַמַּתָּנוֹת, וְרַבִּי מֵאִיר מְחַייֵּב. חֲלִיפִין בְּיַד כֹּהֵן — אִין, אֵין חֲלִיפִין בְּיַד כֹּהֵן — לֹא!</div>
+            <div class="fr"><p>Tout [animal] dont les remplacants (halifin) sont deja dans la main du cohen — [son proprietaire] est exempt des dons sacerdotaux (matnot) ; et Rabbi Meir [l&#x27;]oblige. [On deduit :] si les remplacants sont dans la main du cohen — oui [il est exempt] ; si les remplacants ne sont pas dans la main du cohen — non [il n&#x27;est pas exempt] !</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reprise de la michna : quand une des betes du doute (le <b>remplacant</b>, halifin) est deja passee au <b>cohen</b>, R. Yossei exempte le proprietaire des <b>matnot</b> (les dons sacerdotaux : epaule, machoire, caillette), R. Meir l'oblige. La Guemara infere <em>a contrario</em> : c'est seulement quand le remplacant est deja chez le cohen que R. Yossei exempte.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַהוּ דְתֵימָא: רַבִּי יוֹסֵי לִדְבָרָיו דְּרַבִּי מֵאִיר קָאָמַר לֵיהּ — לְדִידִי, אֲפִילּוּ אֵין חֲלִיפִין בְּיַד כֹּהֵן, דְּאִי מְחַיְּיבַתְּ לֵיהּ בְּמַתָּנוֹת אָתֵי לֵיהּ לִידֵי גִּיזָּה וַעֲבוֹדָה; לְדִידָךְ, אוֹדִי לִי מִיהָא הֵיכָא דַּחֲלִיפִין בְּיַד כֹּהֵן, דְּעָשׂוּ שֶׁאֵינוֹ זוֹכֶה כְּזוֹכֶה; וְאָמַר לֵיהּ רַבִּי מֵאִיר: לֹא.</div>
+            <div class="fr"><p>[La deduction est necessaire] pour que tu ne dises pas : Rabbi Yossei lui parlait selon les paroles de Rabbi Meir [par argument ad hominem, sans y adherer], [disant :] pour moi, [le proprietaire est exempt] meme si les remplacants ne sont pas dans la main du cohen — car si tu l&#x27;obliges aux dons, il en viendra a [le traiter en profane et a en tirer] tonte et travail ; mais pour toi, concede-moi au moins le cas ou les remplacants sont dans la main du cohen, [ou] l&#x27;on a rendu celui qui n&#x27;a pas d&#x27;ayant-droit comme un ayant-droit (asou she-eino zokhe ke-zokhe) ; et Rabbi Meir lui dit : non.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>On aurait pu croire que R. Yossei argumentait seulement <em>ad hominem</em> (<b>le-divrav de-R. Meir</b>) : meme selon ta logique, R. Meir, concede au moins le cas ou le remplacant est chez le cohen, car alors on a rendu <b>le non-ayant-droit comme un ayant-droit</b> (asou she-eino zokhe ke-zokhe). R. Meir refuse (<b>lo</b>). D'ou l'on tire que R. Yossei tient reellement cette position.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאָמַר רַב פָּפָּא: הַכֹּל מוֹדִים בִּסְפֵק מַעֲשֵׂר שֶׁפָּטוּר מִן הַמַּתָּנוֹת. ״הַכֹּל מוֹדִים״ — מַאן? רַבִּי מֵאִיר? פְּשִׁיטָא! עַד כָּאן לָא קָמְחַייֵּב רַבִּי מֵאִיר הָתָם אֶלָּא בִּסְפֵק בְּכוֹר, הוֹאִיל וּבָא עָלָיו כֹּהֵן מִשְּׁנֵי צְדָדִין, אֲבָל סְפֵק מַעֲשֵׂר — לֹא.</div>
+            <div class="fr"><p>Et Rav Papa dit : tous s&#x27;accordent, dans le cas du maaser douteux (safek maaser), qu&#x27;il est exempt des dons. [Question :] &#x27;tous s&#x27;accordent&#x27; — qui [inclut-on] ?</p><p>Rabbi Meir ? [Mais c&#x27;est] evident !</p><p>Rabbi Meir n&#x27;a oblige la-bas que dans le cas du bekhor douteux (safek bekhor), puisque le cohen l&#x27;attaque des deux cotes (mi-chnei tzdadim) ; mais pour le maaser douteux — non.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בִּסְפֵק מַעֲשֵׂר</b> כְּגוֹן שֶׁקָּפַץ אֶחָד מִן הַמְעֻושָּׂרִין לְתוֹכָם דְּאָמְרִינַן בפ&quot;ב (לְקַמָּן בְּכוֹרוֹת דַּף נח:) כֻּולָּם יִרְעוּ עַד שֶׁיִּסְתָּאֲבוּ וְיֵאָכְלוּ בְּמוּמָן לַבְּעָלִים. סָפֵק מַעֲשֵׂר אֵין כֹּהֵן בָּא עָלָיו מִשְּׁנֵי צְדָדִין דְּאִם מַעֲשֵׂר הוּא אֵין לַכֹּהֵן חֵלֶק בּוֹ דְּמַעֲשֵׂר קָרֵב שְׁלָמִים וְנֶאֱכָל לַבְּעָלִים:</div>
+          <div class="glose-fr">Dans le cas du maaser douteux — par exemple lorsqu&#x27;une bete deja soumise au maaser a saute au milieu [d&#x27;un troupeau non dime], au sujet de quoi nous disons au chapitre 2 (plus loin, Bekhorot 58b) : toutes brouteront jusqu&#x27;a devenir tarees (moum) et seront consommees, une fois tarees, par les proprietaires. Le maaser douteux — le cohen ne l&#x27;attaque pas des deux cotes, car si c&#x27;est du maaser, le cohen n&#x27;y a aucune part, puisque le maaser est offert comme chelamim et consomme par les proprietaires.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Papa : pour le <b>maaser douteux</b> (une bete dont on ne sait si c'est la dime du betail), tous exemptent des dons. Objection : cela vise-t-il R. Meir ? C'est evident ! R. Meir n'oblige que pour le <b>bekhor douteux</b>, car la le cohen <b>attaque des deux cotes</b> (si c'est un aine, tout lui revient ; sinon, il reclame les dons). Pour le maaser, ce raisonnement ne joue pas.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַהוּ דְתֵימָא: טַעְמָא דְּרַבִּי מֵאִיר דְּלֹא תִּשְׁתַּכַּח תּוֹרַת מַתָּנוֹת, אֲפִילּוּ סְפֵק מַעֲשֵׂר נָמֵי? קָא מַשְׁמָע לַן.</div>
+            <div class="fr"><p>[La precision de Rav Papa est necessaire] pour que tu ne dises pas : le motif de Rabbi Meir [qui l&#x27;oblige, c&#x27;est] pour que la loi des dons ne soit pas oubliee (de-lo tichtakah torat matnot) — [et] alors, meme pour le maaser douteux [il obligerait] aussi ? [Rav Papa] nous enseigne [qu&#x27;il n&#x27;en est rien].</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Pourquoi Rav Papa doit-il le dire ? Pour ecarter l'idee que le motif de R. Meir serait <b>de peur que la loi des dons ne s'oublie</b> (de-lo tichtakah torat matnot) — auquel cas il obligerait aussi pour le maaser douteux. Rav Papa enseigne que non : son motif est bien <em>l'attaque des deux cotes</em>, propre au bekhor.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּמִי מָצֵית אָמְרַתְּ הָכִי? וְהָקָתָנֵי סֵיפָא, שֶׁהָיָה רַבִּי יוֹסֵי אוֹמֵר: כֹּל שֶׁחֲלִיפָיו בְּיַד כֹּהֵן — פָּטוּר מִן הַמַּתָּנוֹת, וְרַבִּי מֵאִיר מְחַיֵּיב!</div>
+            <div class="fr"><p>Mais peux-tu dire ainsi [que le motif de R. Meir serait &#x27;pour que la loi ne s&#x27;oublie pas&#x27;] ?</p><p>Or la clause finale [de la michna] enseigne que Rabbi Yossei disait : tout [animal] dont les remplacants sont dans la main du cohen — est exempt des dons, et Rabbi Meir [l&#x27;]oblige !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמִי מָצֵית אָמְרַתְּ הָכִי</b> דְּטַעֲמָא דְּרַבִּי מֵאִיר מִשּׁוּם שֶׁלֹּא תִּשְׁתַּכַּח תּוֹרַת מַתָּנוֹת:</div>
+          <div class="glose-fr">Mais peux-tu dire ainsi — que le motif de Rabbi Meir serait &#x27;pour que la loi des dons ne soit pas oubliee&#x27; ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כָּל שֶׁחֲלִיפָיו כו&#x27;</b> אִי אָמְרַתְּ בִּשְׁלָמָא טַעְמָא דְּרַבִּי מֵאִיר גַּבֵּי בְּכוֹר מִשּׁוּם דְּבָא עָלָיו מְשַׁנֵּי צְדָדִין הַיְינוּ דְּקָנָסֵיב ר&#x27; יוֹסֵי הַשַּׁ&quot;ס דְּהוֹאִיל וַחֲלִיפָיו בְּיַד כֹּהֵן פָּטוּר דְּאֵינוֹ יָכוֹל לוֹמַר אִי בְּכוֹר הוּא כֻּולּוֹ דִּידִי הוּא דְּהָוֵי כְּמַאן דְּזַבְּנֵיהּ לְיִשְׂרָאֵל אֶלָּא אִי אָמְרַתְּ טַעְמָא דְּר&#x27; מֵאִיר מִשּׁוּם שֶׁלֹּא תִּשְׁתַּכַּח תּוֹרַת מַתָּנוֹת אַמַּאי נְקַט רַבִּי יוֹסֵי טַעְמָא מִשּׁוּם דַּחֲלִיפָיו בְּיַד כֹּהֵן הָא לְר&#x27; מֵאִיר נָמֵי מה&quot;ט לִפְטֹר אֶלָּא וַדַּאי טַעְמָא לָאו מִשּׁוּם שֶׁלֹּא תִּשְׁתַּכַּח תּוֹרַת מַתָּנוֹת הוּא:</div>
+          <div class="glose-fr">Tout [animal] dont les remplacants, etc. — admettons que le motif de Rabbi Meir a propos du bekhor soit &#x27;parce que [le cohen] l&#x27;attaque des deux cotes&#x27; : c&#x27;est pourquoi Rabbi Yossei formule ainsi [selon la Guemara] que, puisque ses remplacants sont dans la main du cohen, [le proprietaire] est exempt — car [le cohen] ne peut pas dire &#x27;si c&#x27;est un aine, tout est a moi&#x27;, vu que c&#x27;est comme s&#x27;il l&#x27;avait vendu a l&#x27;Israelite. Mais si tu dis que le motif de Rabbi Meir est &#x27;pour que la loi des dons ne soit pas oubliee&#x27;, pourquoi Rabbi Yossei prend-il pour motif &#x27;parce que ses remplacants sont dans la main du cohen&#x27; ? Selon Rabbi Meir aussi, [le proprietaire] devrait pour ce motif etre exempt ! Donc, assurement, le motif n&#x27;est pas &#x27;pour que la loi des dons ne soit pas oubliee&#x27;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Refutation : si le motif de R. Meir etait 'pour que la loi ne s'oublie pas', pourquoi la michna presente-t-elle leur litige a propos des <b>remplacants deja chez le cohen</b> ? R. Yossei ancre son exemption sur ce fait precis — ce qui montre que l'enjeu est bien 'a-t-on rendu le non-ayant-droit comme un ayant-droit', et non l'oubli de la loi.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַהוּ דְתֵימָא: רַבִּי מֵאִיר אֲפִילּוּ סְפֵק מַעֲשֵׂר מְחַיַּיב, וְהָא דְּמִיפַּלְגִי בַּחֲלִיפִין — לְהוֹדִיעֲךָ כֹּחוֹ דְּרַבִּי יוֹסֵי, דְּפָטַר אֲפִילּוּ הֵיכָא דְּכֹהֵן בָּא עָלָיו מִשְּׁנֵי צְדָדִין, קָא מַשְׁמָע לַן.</div>
+            <div class="fr"><p>[Reponse :] pour que tu ne dises pas : Rabbi Meir oblige meme pour le maaser douteux, et s&#x27;ils divergent [dans la michna] a propos des remplacants, c&#x27;est pour te faire connaitre la force de Rabbi Yossei (kohho de-R. Yossei), qui exempte meme la ou le cohen l&#x27;attaque des deux cotes ; [Rav Papa] nous enseigne [le contraire].</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Papa devance une lecture inverse : on aurait pu dire que R. Meir oblige <em>meme</em> pour le maaser douteux (motif : ne pas oublier la loi), et que la michna choisit le cas des remplacants seulement pour souligner <b>la force de la position de R. Yossei</b> (kohho de-R. Yossei) qui exempte meme dans le cas fort. Rav Papa ecarte cette lecture : R. Meir exempte bien pour le maaser douteux.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מֵת אֶחָד מֵהֶן, רַבִּי טִרְפוֹן אוֹמֵר: יַחֲלֹוקוּ. אַמַּאי יַחֲלֹוקוּ? נֶיחֱזֵי: אִי שָׁמֵן מִית — דְּכֹהֵן הוּא, וְהַאי דְּאִיכָּא דְּבַעַל הַבַּיִת; וְאִי כָּחוּשׁ מִית — דְּבַעַל הַבַּיִת מִית, וְהַאי דְּאִיכָּא דְּכֹהֵן הוּא! אָמַר רַבִּי אַמִּי: חָזַר בּוֹ רַבִּי טַרְפוֹן.</div>
+            <div class="fr"><p>[Michna :] si l&#x27;un d&#x27;eux est mort, Rabbi Tarfon dit : ils partagent (yahalokou). [Guemara :] pourquoi partageraient-ils ?</p><p>Regardons : si c&#x27;est le gras qui est mort — [c&#x27;est celui] du cohen, et celui qui reste est celui du proprietaire ; et si c&#x27;est le maigre qui est mort — c&#x27;est celui du proprietaire qui est mort, et celui qui reste est celui du cohen ! Rabbi Ami dit : Rabbi Tarfon s&#x27;est retracte.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִי שָׁמֵן מִית דְּכֹהֵן הוּא</b> הַאי דְּמִית דְּהָא רַבִּי טִרְפוֹן אָמַר כֹּהֵן בּוֹרֵר לוֹ אֶת הַיָּפֶה:</div>
+          <div class="glose-fr">Si c&#x27;est le gras qui est mort — c&#x27;est [celui] du cohen — celui qui est mort, car Rabbi Tarfon a dit : le cohen se choisit le beau.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>חָזַר בּוֹ רַבִּי טַרְפוֹן</b> מִקַּמָּייְתָא דְּאָמַר כֹּהֵן בּוֹרֵר לוֹ אֶת הַיָּפֶה וְסָבַר דְּלִשְׁנֵיהֶם יֵשׁ חֵלֶק בִּשְׁנֵיהֶם:</div>
+          <div class="glose-fr">Rabbi Tarfon s&#x27;est retracte — de sa premiere [position], ou il disait que le cohen se choisit le beau ; et il tient [desormais] que tous deux ont une part dans les deux.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Quand une des deux betes meurt, R. Tarfon dit <b>yahalokou</b> (on partage). Objection : d'apres R. Tarfon, le meilleur (gras) sort le premier et revient au cohen ; donc si le gras meurt, c'etait celui du cohen, et le survivant est au proprietaire ; si le maigre meurt, c'etait celui du proprietaire, et le survivant est au cohen. R. Ami repond : R. Tarfon <b>s'est retracte</b> de sa position anterieure (le cohen choisit le meilleur) et tient desormais que chacun a une part dans les deux.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבִּי עֲקִיבָא אוֹמֵר: הַמּוֹצִיא מֵחֲבֵירוֹ עָלָיו הָרְאָיָה. אָמַר רַבִּי חַייָּא: מָשָׁל דְּרַבִּי טַרְפוֹן לְמָה הַדָּבָר דּוֹמֶה? לִשְׁנַיִם שֶׁהִפְקִידוּ אֵצֶל רוֹעֶה, שֶׁמַּנִּיחַ רוֹעֶה בֵּינֵיהֶם וּמִסְתַּלֵּק.</div>
+            <div class="fr"><p>Rabbi Akiva dit : celui qui veut extraire [un bien] de son prochain, a lui incombe la preuve (ha-motzi me-havero alav ha-raaya). Rabbi Hiyya dit : la parabole (machal) de Rabbi Tarfon, a quoi la chose ressemble-t-elle ?</p><p>A deux [personnes] qui ont depose [chacune une bete] chez un berger (roe), ou le berger pose [la bete] entre eux et se retire.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לִשְׁנַיִם שֶׁהִפְקִידוּ אֵצֶל רוֹעֶה</b> שְׁתֵּי בְּהֵמוֹת וּמֵתָה הָאַחַת וְאֵין יָדוּעַ שֶׁל מִי מֵתָה:</div>
+          <div class="glose-fr">A deux [personnes] qui ont depose chez un berger — deux betes, et l&#x27;une est morte, sans qu&#x27;on sache de qui elle etait.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁמַּנִּיחַ רוֹעֶה</b> בֵּין שְׁנֵיהֶם לְחַלְּקָהּ וּמִסְתַּלֵּק דְּהָכָא לֵיכָּא לְמֵימַר הַמּוֹצִיא מֵחֲבֵירוֹ וּמַתְנִי&#x27; נַמֵּי דְּקָאָמַר רַבִּי טִרְפוֹן יַחֲלֹוקוּ כְּגוֹן שֶׁאוֹתוֹ סְפֵק בְּכוֹר הַחַי נִמְסַר לְרוֹעֶה וְאָתֵי בַּעַל הַבַּיִת וְכֹהֵן גַּבֵּי רוֹעֶה דְּלֵיכָּא מוֹצִיא מֵחֲבֵירוֹ דְּהָא לָא קָאֵי בִּרְשׁוּתָא דְּחַד מִינַּייְהוּ:</div>
+          <div class="glose-fr">Ou le berger pose [la bete] — entre eux deux pour la partager, et se retire ; car ici on ne peut pas dire &#x27;celui qui veut extraire de son prochain [doit prouver]&#x27;. Et notre michna aussi, ou Rabbi Tarfon dit &#x27;ils partagent&#x27;, vise par exemple le cas ou ce bekhor douteux vivant a ete confie a un berger, et [ou] le proprietaire et le cohen viennent [le reclamer] aupres du berger, [cas] ou il n&#x27;y a pas de &#x27;celui qui extrait de son prochain&#x27;, puisque [la bete] ne se trouve dans le domaine d&#x27;aucun d&#x27;eux.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>R. Akiva : <b>ha-motzi me-havero alav ha-raaya</b> — la preuve incombe a celui qui veut extraire un bien de la main d'autrui. R. Hiyya illustre R. Tarfon : c'est comme <b>deux deposants chez un berger</b> (roe) ; l'un des deux animaux meurt, on ignore lequel — le berger, qui ne detient pour personne en propre, pose la bete survivante entre eux et se retire (ils partagent).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּמִשֶּׁל דְּרַבִּי עֲקִיבָא: לְמָה הַדָּבָר דוֹמֶה? לְאֶחָד שֶׁהִפְקִיד אֵצֶל בַּעַל הַבַּיִת, שֶׁהַמּוֹצִיא מֵחֲבֵירוֹ עָלָיו הָרְאָיָה.</div>
+            <div class="fr"><p>Et la parabole de Rabbi Akiva, a quoi la chose ressemble-t-elle ? A un [seul] qui a depose chez un proprietaire (baal ha-bayit), [cas] ou celui qui veut extraire de son prochain, a lui incombe la preuve.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמִשֶּׁל דְּרַבִּי עֲקִיבָא לְאֶחָד שֶׁהִפְקִיד אֵצֶל בַּעַל הַבַּיִת</b> וְהִנִּיחָהּ בְּעֶדְרוֹ וּמֵתָה בְּהֵמָה אַחַת בְּעֶדְרוֹ וְאוֹמֵר שֶׁלְּךָ מֵתָה וְהַלָּה אוֹמֵר אַחַת מֵאוֹתָן שֶׁלְּךָ מֵתָה הַמּוֹצִיא מֵחֲבֵירוֹ עָלָיו הָרְאָיָה וּמַתְנִי&#x27; נָמֵי דְּמָרַע לֵיהּ ר&#x27; עֲקִיבָא לְכֹחוֹ שֶׁל כֹּהֵן כְּשֶׁיֶּשְׁנָן בִּרְשׁוּת בַּעַל הַבַּיִת דְּהָוֵי כֹּהֵן מוֹצִיא מֵחֲבֵירוֹ:</div>
+          <div class="glose-fr">Et la parabole de Rabbi Akiva : a un [seul] qui a depose chez un proprietaire — et il [le proprietaire] l&#x27;a mise dans son troupeau ; une bete est morte dans son troupeau, et [le proprietaire] dit &#x27;la tienne est morte&#x27;, tandis que l&#x27;autre dit &#x27;c&#x27;est une des tiennes qui est morte&#x27; — celui qui veut extraire de son prochain, a lui la preuve. Et notre michna aussi : Rabbi Akiva affaiblit la force du cohen lorsqu&#x27;elles [les betes] sont dans le domaine du proprietaire, car [alors] le cohen est celui qui veut extraire de son prochain.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>R. Hiyya illustre R. Akiva : c'est comme <b>un seul deposant chez un proprietaire</b> (baal ha-bayit) qui possede deja son propre troupeau. Une bete meurt ; le survivant se trouve deja dans le domaine du proprietaire, donc le deposant (ici : le cohen) doit prouver que la bete vivante est la sienne — sinon, <b>la preuve incombe au reclamant</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא בְּמַאי פְּלִיגִי? רַבִּי עֲקִיבָא פְּלִיג בִּשְׁנַיִם שֶׁהִפְקִידוּ אֵצֶל רוֹעֶה, שֶׁמַּנִּיחַ רוֹעֶה וּמִסְתַּלֵּק? וְרַבִּי טַרְפוֹן פְּלִיג בְּאֶחָד שֶׁהִפְקִיד אֵצֶל בַּעַל הַבַּיִת? אָמַר רָבָא, וְאִיתֵּימָא רַב פָּפָּא: הַכֹּל מוֹדִים בִּשְׁנַיִם שֶׁהִפְקִידוּ אֵצֶל רוֹעֶה — שֶׁמַּנִּיחַ רוֹעֶה בֵּינֵיהֶם וּמִסְתַּלֵּק, וּבְאֶחָד שֶׁהִפְקִיד אֵצֶל בַּעַל הַבַּיִת — שֶׁהַמּוֹצִיא מֵחֲבֵירוֹ עָלָיו הָרְאָיָה.</div>
+            <div class="fr"><p>Mais alors sur quoi divergent-ils ? Rabbi Akiva divergerait-il dans le cas de deux [deposants] chez un berger, [pour dire] que le berger pose [la bete] et se retire ?!</p><p>Et Rabbi Tarfon divergerait-il dans le cas d&#x27;un [deposant] chez un proprietaire ?! Rava dit, et certains disent Rav Papa : tous s&#x27;accordent, dans le cas de deux [deposants] chez un berger — que le berger la pose entre eux et se retire, et dans le cas d&#x27;un [deposant] chez un proprietaire — que celui qui veut extraire de son prochain, a lui la preuve.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא בְּמַאי פְּלִיגִי</b> הוֹאִיל וְלָאו בְּחַד גַּוְנָא קָמִיתָּרְצָא מַתְנֵי&#x27;:</div>
+          <div class="glose-fr">Mais alors sur quoi divergent-ils — puisque la michna n&#x27;est pas resolue selon un cas unique.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ר&#x27; עֲקִיבָא פְּלִיג בִּשְׁנַיִם שֶׁהִפְקִידוּ אֵצֶל רוֹעֶה</b> בִּתְמִיהַּ. הָא וַדַּאי לֵיכָּא לְמֵימַר הַמּוֹצִיא מֵחֲבֵירוֹ עָלָיו הָרְאָיָה:</div>
+          <div class="glose-fr">Rabbi Akiva divergerait-il dans le cas de deux [deposants] chez un berger — sur un ton d&#x27;etonnement. Ici, assurement, on ne peut pas dire &#x27;celui qui veut extraire de son prochain, a lui la preuve&#x27;.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַכֹּל מוֹדִים בִּשְׁנַיִם שֶׁהִפְקִידוּ אֵצֶל רוֹעֶה כּוּ&#x27;</b> בְּפֶרֶק הַמַּפְקִיד (בּ&quot;מ דַּף לז:) פָּרִיךְ דְּרָבָא אַדְּרָבָא אַהָא דְּאָמַר רָבָא דְּבִשְׁתֵּי כְּרִיכוֹת הֲוָה לֵיהּ לְמֵידַק כו&#x27;:</div>
+          <div class="glose-fr">Tous s&#x27;accordent dans le cas de deux [deposants] chez un berger, etc. — au chapitre &#x27;Ha-mafkid&#x27; (Baba Metsia 37b) on objecte &#x27;Rava contre Rava&#x27;, a propos de ce que dit Rava au sujet de deux ballots [de ble] : il aurait du y regarder de pres, etc.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁמַּנִּיחַ רוֹעֶה בֵּינֵיהֶם וּמִסְתַּלֵּק</b> אֵין זֶה כִּי הַהוּא דְּגָזַל אֶחָד מֵחֲמִשָּׁה בְּנֵי אָדָם דְּאָמְרִי&#x27; מַנִּיחַ גְּזֵילָה בֵּינֵיהֶם וּמִסְתַּלֵּק וּפָרִיךְ בְּפֶ&#x27; הַמַּפְקִיד (שָׁם.) וְשָׁקְלִי לֵיהּ כֻּולְּהוּ וְאָזְלִי וְהָאָמַר ר&#x27; אַבָּא בַּר זַבְדָּא סְפֵק הִנּוּחַ לְכַתְּחִלָּה לֹא יִטּוֹל וְאִם נָטַל לֹא יַחֲזִיר וּמְפָרֵשׁ דְּמַנִּיחַ דְּקָאָמַר גַּבֵּי גֶּזֶל הַיְינוּ שֶׁיַּנִּיחַ בְּיָדוֹ אוֹ בְּיַד בֵּית דִּין עַד שֶׁיִּתְבָּרֵר שֶׁל מִי הוּא אֲבָל הָכָא לָא חָיְישִׁינַן אִי שָׁקְלִי לָהּ כֻּולְּהוּ וְאָזְלִי דְּמַייְרֵי כְּשֶׁהִפְקִידוּ לוֹ שֶׁלֹּא מִדַּעְתּוֹ וְאֵינוֹ מֻוטָּל עָלָיו לִשְׁמוֹר וְלָא הָוֵי בִּסְפֵק הִינּוּחַ וְאִי מִסְתַּלֵּק דְּהָכָא בָּעֵי לְמֵימַר שֶׁיַּחֲלֹוקוּ בֵּינֵיהֶם הָוֵי מַמָּשׁ כְּמוֹ דְּרַבִּי טִרְפוֹן וְאִם רוֹצֶה לוֹמַר מִסְתַּלֵּק וְכָל דְּאַלִּים גָּבַר צָרִיךְ לוֹמַר דְּהָא דִּמְדַמֵּי לְהָא דָּר&#x27; טִרְפוֹן לִשְׁנַיִם שֶׁהִפְקִידוּ אֵצֶל רוֹעֶה הָכִי קָאָמַר דְּכֵיוָן דְּהָתָם כָּל דְּאַלִּים גָּבַר וְלָא אָמְרִינַן בֵּיהּ הַמּוֹצִיא מֵחֲבֵירוֹ עָלָיו הָרְאָיָה סְבָרָא הוּא לְתַקֵּן כְּמוֹ כֵן גַּבֵּי כֹּהֵן (שֶׁיַּחֲלֹוקוּ):</div>
+          <div class="glose-fr">Ou le berger la pose entre eux et se retire — ce n&#x27;est pas comme le cas de &#x27;celui qui a vole l&#x27;un de cinq hommes&#x27;, ou l&#x27;on dit qu&#x27;il pose l&#x27;objet vole entre eux et se retire, et sur quoi on objecte au chapitre &#x27;Ha-mafkid&#x27; (ibid.) : mais ils l&#x27;emporteraient tous ! Et R. Abba bar Zavda a dit : dans un cas de doute, on ne prendra pas d&#x27;emblee, et si on a pris on ne rendra pas ; et l&#x27;on explique que &#x27;il pose&#x27;, pour le vol, signifie qu&#x27;il la laisse en sa main ou en main du beit din jusqu&#x27;a ce que l&#x27;on sache de qui elle est. Mais ici, on ne craint pas qu&#x27;ils l&#x27;emportent tous, car il s&#x27;agit d&#x27;un cas ou l&#x27;on a depose chez lui a son insu, et il n&#x27;est pas tenu de garder ; ce n&#x27;est donc pas un cas de &#x27;doute de depot [volontaire]&#x27;. Et si &#x27;il se retire&#x27;, ici, veut dire qu&#x27;ils partagent entre eux, c&#x27;est exactement comme [la position de] Rabbi Tarfon. Et si l&#x27;on veut dire &#x27;il se retire&#x27; au sens de &#x27;le plus fort l&#x27;emporte&#x27; (kol de-alim gavar), il faut dire que la comparaison de [la position de] Rabbi Tarfon a &#x27;deux deposants chez un berger&#x27; signifie ceci : puisque la, &#x27;le plus fort l&#x27;emporte&#x27; et qu&#x27;on n&#x27;y dit pas &#x27;celui qui veut extraire de son prochain [doit prouver]&#x27;, il est logique d&#x27;instituer de meme, chez le cohen, [qu&#x27;ils partagent].</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Si chaque parabole vise un cas different, sur quoi porte reellement le desaccord ? On ne peut imaginer qu'ils s'opposent sur les paraboles elles-memes (elles sont evidentes). Rava (ou Rav Papa) : <b>tous s'accordent</b> sur les deux paraboles — deux deposants chez un berger : on partage ; un deposant chez le proprietaire : la preuve incombe au reclamant. Le vrai litige est ailleurs (segment suivant).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לֹא נֶחְלְקוּ אֶלָּא בַּחֲצַר בַּעַל הַבַּיִת, וְרוֹעֶה כֹּהֵן. רַבִּי טִרְפוֹן סָבַר: אַקְנוֹיֵי קָא מַקְנֵי לֵיהּ בַּחֲצֵירוֹ, וְנִיחָא לֵיהּ דְּלִיתְעֲבִיד מִצְוָה בְּמָמוֹנֵיהּ, וְהָוֵה לֵיהּ כִּשְׁנַיִם שֶׁהִפְקִידוּ אֵצֶל רוֹעֶה, שֶׁמַּנִּיחַ רוֹעֶה בֵּינֵיהֶן וּמִסְתַּלֵּק.</div>
+            <div class="fr"><p>Ils ne divergent que dans le cas de la cour du proprietaire ou le berger est un cohen. Rabbi Tarfon tient : [le proprietaire] lui transfere [une part] dans sa cour (aknouyei ka-makni leh be-hatzero), et il lui plait qu&#x27;une mitzva soit accomplie avec son bien (de-liteaved mitzva be-mamoneh) ; c&#x27;est alors comme deux [deposants] chez un berger, ou le berger la pose entre eux et se retire.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא נֶחְלְקוּ אֶלָּא</b> כְּגוֹן שֶׁהַבְּכוֹר חַי עוֹמֵד בַּחֲצַר בַּעַל הַבַּיִת וְכֹהֵן רוֹעֶה כָּל בַּהֲמוֹתָיו שֶׁל בַּעַל הַבַּיִת:</div>
+          <div class="glose-fr">Ils ne divergent que — par exemple lorsque le bekhor vivant se tient dans la cour du proprietaire et qu&#x27;un cohen fait paitre toutes les betes du proprietaire.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַקְּנוּיֵי אַקְנִי לֵיהּ</b> בַּעַל הַבַּיִת לַכֹּהֵן מָקוֹם בַּחֲצֵירוֹ כְּדֵי שֶׁיִּזְכֶּה כֹּהֵן בִּבְכוֹרוֹת כְּשֶׁיִּוָּולְדוּ מִיָּד דְּתִיקְנֵי לֵיהּ חֲצֵירוֹ:</div>
+          <div class="glose-fr">[Le proprietaire] lui transfere [une part] — le proprietaire [transfere] au cohen un emplacement dans sa cour, afin que le cohen acquiere les aines des leur naissance, [en sorte] que sa cour [du cohen] les lui acquiere.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּנִיחָא לֵיהּ לְאִינָשׁ דְּתִתְעֲבִיד מִצְוָה בְּמָמוֹנֵיהּ</b> שֶׁיִּגְדְּלוּ בְּכוֹרוֹתָיו שֶׁל כֹּהֵן בַּחֲצֵירוֹ וַהֲוָה לֵיהּ חָצֵר שֶׁל שְׁנֵיהֶם וְהָוֵי הַאי חָצֵר כִּי רוֹעֶה וּכְאִילּוּ שְׁנַיִם הִפְקִידוּ אֶצְלוֹ הִילְכָּךְ חוֹלְקִין דְּבִרְשׁוּת שְׁנֵיהֶם עוֹמֵד:</div>
+          <div class="glose-fr">Car il plait a un homme qu&#x27;une mitzva soit accomplie avec son bien — [a savoir] que les aines du cohen grandissent dans sa cour ; la cour est alors [reputee] a tous deux, et cette cour est comme un berger — comme si deux [personnes] avaient depose chez lui ; c&#x27;est pourquoi ils partagent, car [la bete] se tient dans le domaine des deux.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַקְנוֹיֵי קָא מַקְנֵי לֵיהּ מָקוֹם בַּחֲצֵרוֹ</b> וְאַפֵּי&#x27; בְּלֹא קִנְיָן קָא קָנֵי דְּגָמַר וּמְשַׁעְבֵּד נַפְשֵׁיהּ אִי נָמֵי כַּמָּה פְּעָמִים הָרוֹעֶה פּוֹתֵחַ וְנוֹעֵל כִּדְאָמַר תֵּיזִיל אִיהִי וְתָחוּד וְתִפְתַּח וּבִרְשׁוּת בַּעַל הַבַּיִת קָא מַחֲזִיק:</div>
+          <div class="glose-fr">[Le proprietaire] lui transfere un emplacement dans sa cour — et il [le] lui acquiert meme sans acte formel d&#x27;acquisition (kinyan), car [le proprietaire] se resout et s&#x27;engage ; ou bien, [c&#x27;est valide] parce que le berger ouvre et ferme [la cour] plusieurs fois, comme on dit [ailleurs] &#x27;qu&#x27;elle-meme aille fermer et ouvrir&#x27;, et il prend possession dans le domaine du proprietaire.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le vrai litige : la <b>cour du proprietaire</b> ou paît un cohen (a qui il donne d'ordinaire ses aines). R. Tarfon tient que le proprietaire <b>transfere au cohen une part de sa cour</b> (aknouyei ka-makni), car <b>il lui plait qu'une mitzva soit accomplie avec son bien</b> (de-liteaved mitzva be-mamoneh). Le cohen detient donc partiellement la cour : comme deux deposants chez un berger — on partage.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַבִּי עֲקִיבָא סָבַר: כֵּיוָן דְּאִית לֵיהּ פְּסֵידָא — לָא מַקְנֵי לֵיהּ מִידַּעַם, וְהָוֵה לֵיהּ כְּאֶחָד שֶׁהִפְקִיד אֵצֶל בַּעַל הַבַּיִת, שֶׁהַמּוֹצִיא מֵחֲבֵירוֹ עָלָיו הָרְאָיָה.</div>
+            <div class="fr"><p>Et Rabbi Akiva tient : puisqu&#x27;il y a pour [le proprietaire] une perte (psida), il ne lui transfere rien ; c&#x27;est alors comme un [deposant] chez un proprietaire, ou celui qui veut extraire de son prochain, a lui incombe la preuve.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>פְּסֵידָא</b> הֵיכָא דְּאִיכָּא סְפֵיקָא מַפְסִיד בַּעַל הַבַּיִת אִי קַיְימָא חָצֵר בִּרְשׁוּת כֹּהֵן:</div>
+          <div class="glose-fr">Une perte — la ou il y a un doute, le proprietaire subit une perte si la cour est [reputee] dans le domaine du cohen.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>R. Akiva refute : dans ce cas de doute, le proprietaire subit une <b>perte</b> (psida) — il ne va donc <em>rien</em> transferer au cohen. La cour reste au seul proprietaire : c'est comme un unique deposant chez le proprietaire — la <b>preuve incombe au reclamant</b> (le cohen). La halakha suit R. Akiva.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַתְנִי׳ שְׁתֵּי רְחֵילָיו שֶׁלֹּא בִּיכְּרוּ וְיָלְדוּ שְׁנֵי זְכָרִים — שְׁנֵיהֶם לַכֹּהֵן. זָכָר וּנְקֵבָה — הַזָּכָר לַכֹּהֵן. שְׁנֵי זְכָרִים וּנְקֵבָה — אֶחָד לוֹ וְאֶחָד לַכֹּהֵן. רַבִּי טִרְפוֹן אוֹמֵר: הַכֹּהֵן בּוֹרֵר לוֹ אֶת הַיָּפֶה. רַבִּי עֲקִיבָא אוֹמֵר: מְשַׁמְּנִין בֵּינֵיהֶן, וְהַשֵּׁנִי יִרְעֶה עַד שֶׁיִּסְתָּאֵב.</div>
+            <div class="fr"><p>MICHNA. Ses deux brebis qui n&#x27;avaient pas encore mis bas (lo bikru) et qui ont enfante deux males — tous deux [reviennent] au cohen.</p><p>[Un] male et [une] femelle — le male au cohen. Deux males et une femelle — l&#x27;un a lui et l&#x27;un au cohen.</p><p>Rabbi Tarfon dit : le cohen se choisit le beau (ha-yafe). Rabbi Akiva dit : ils evaluent entre eux (mechamnin beineihen), [le cohen prend le maigre] et le second broutera jusqu&#x27;a devenir taré (yistaev).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַתְנֵי&#x27; אֶחָד לוֹ</b> שֶׁהֲרֵי הָיְתָה נְקֵבָה עִמּוֹ וְאִיכָּא לְמֵימַר נְקֵבָה יָצָאת תְּחִלָּה:</div>
+          <div class="glose-fr">MICHNA. L&#x27;un a lui — car une femelle etait avec lui [dans la meme portee], et l&#x27;on peut dire que la femelle est sortie la premiere.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מְשַׁמְּנִין בֵּינֵיהֶן</b> כֹּהֵן נוֹטֵל כָּחוּשׁ:</div>
+          <div class="glose-fr">Ils evaluent entre eux — le cohen prend le maigre.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">מַתְנִי&#x27; רָחֵל שֶׁלֹּא בִּכְּרָה וְיָלְדָה שְׁנֵי זְכָרִים וְיָצְאוּ שְׁנֵי רָאשֵׁיהֶן כְּאַחַת ר&#x27; יוֹסֵי הַגְּלִילִי אוֹמֵר שְׁנֵיהֶם לַכֹּהֵן שֶׁנֶּאֱמַר הַזְּכָרִים. וַחֲכָמִים אוֹמְרִים אִי אֶפְשָׁר לְצַמְצֵם אֶלָּא אֶחָד לוֹ וְאֶחָד לַכֹּהֵן. ר&#x27; טִרְפוֹן אוֹמֵר כֹּהֵן בּוֹרֵר לוֹ אֶת הַיָּפֶה. רַבִּי עֲקִיבָא אוֹמֵר מְשַׁמְּנִים בֵּינֵיהֶם. וְהַשֵּׁנִי יִרְעֶה עַד שֶׁיִּסְתָּאֵב וְחַיָּיב בְּמַתָּנוֹת. וְרַבִּי יוֹסֵי פּוֹטֵר. מֵת אֶחָד מֵהֶן רַבִּי טַרְפוֹן אוֹמֵר יַחְלוֹקוּ. רַבִּי עֲקִיבָא אוֹמֵר הַמּוֹצִיא מֵחֲבֵירוֹ עָלָיו הָרְאָיָה. זָכָר וּנְקֵבָה אֵין לַכֹּהֵן כְּלוּם אֶלָּא יִרְעֶה עַד שֶׁיִּסְתָּאֵב וְיֵאָכֵל בְּמוּמוֹ לַבְּעָלִים. שְׁתֵּי רְחֵלוֹת שֶׁלֹּא בִּכְּרוּ וְיָלְדוּ שְׁנֵי זְכָרִים נוֹתֵן שְׁנֵיהֶם לַכֹּהֵן. זָכָר וּנְקֵבָה הַזָּכָר לַכֹּהֵן. שְׁנֵי זְכָרִים וּנְקֵבָה אֶחָד לוֹ וְאֶחָד לַכֹּהֵן. רַבִּי טַרְפוֹן אוֹמֵר הַכֹּהֵן בּוֹרֵר לוֹ הַיָּפֶה. וְר&#x27; עֲקִיבָא אוֹמֵר מְשַׁמְּנִין בֵּינֵיהֶם וְהַשֵּׁנִי יִרְעֶה עַד שֶׁיִּסְתָּאֵב וְחַייָּב בְּמַתָּנוֹת. וְרַבִּי יוֹסֵי פּוֹטֵר. מֵת אֶחָד מֵהֶן רַבִּי טַרְפוֹן אוֹמֵר יַחְלוֹקוּ. וְר&#x27; עֲקִיבָא אוֹמֵר המע&quot;ה. שְׁתֵּי נְקֵבוֹת וְזָכָר אוֹ שְׁנֵי זְכָרִים וּשְׁתֵּי נְקֵבוֹת אֵין כָּאן לַכֹּהֵן כְּלוּם. אַחַת בִּכְּרָה וְאַחַת לֹא בִּכְּרָה וְיָלְדוּ שְׁנֵי זְכָרִים אֶחָד לוֹ וְאֶחָד לַכֹּהֵן. רַבִּי טַרְפוֹן אוֹמֵר בּוֹרֵר לוֹ הַכֹּהֵן אֶת הַיָּפֶה. וְרַבִּי עֲקִיבָא אוֹמֵר מְשַׁמְּנִין בֵּינֵיהֶן וְהַשֵּׁנִי יִרְעֶה עַד שֶׁיִּסְתָּאֵב וְחַיָּיב בְּמַתָּנוֹת. וְר&#x27; יוֹסֵי פּוֹטֵר. שֶׁהָיָה רַבִּי יוֹסֵי אוֹמֵר כֹּל שֶׁחֲלִיפָיו בְּיַד כֹּהֵן פָּטוּר מִן הַמַּתָּנוֹת וְר&#x27; מֵאִיר מְחַיֵּיב. מֵת אֶחָד מֵהֶן ר&#x27; טִרְפוֹן אוֹמֵר יַחֲלֹוקוּ. ר&#x27; עֲקִיבָא אוֹמֵר המע&quot;ה. זָכָר וּנְקֵבָה אֵין כָּאן לַכֹּהֵן כְּלוּם. רַבִּי יוֹסֵי הַגְּלִילִי אוֹמֵר שְׁנֵיהֶם לַכֹּהֵן:</div>
+          <div class="glose-fr">MICHNA [avec la guemara qui l&#x27;accompagne] : une brebis qui n&#x27;avait pas mis bas et a enfante deux males, dont les deux tetes sont sorties en meme temps — Rabbi Yossei le Galileen dit : tous deux au cohen, car il est ecrit &#x27;les males&#x27; [au pluriel]. Et les Sages disent : il est impossible de coincider exactement (i efchar le-tzamtzem), donc l&#x27;un a lui et l&#x27;un au cohen. Rabbi Tarfon dit : le cohen se choisit le beau. Rabbi Akiva dit : ils evaluent entre eux, et le second broutera jusqu&#x27;a devenir taré, et [le proprietaire] est oblige aux dons ; Rabbi Yossei [l&#x27;]exempte. Si l&#x27;un d&#x27;eux est mort : Rabbi Tarfon dit qu&#x27;ils partagent, Rabbi Akiva dit que celui qui veut extraire de son prochain, a lui la preuve. [Un] male et [une] femelle — le cohen n&#x27;a rien, mais [la bete] broutera jusqu&#x27;a devenir taree et sera consommee, une fois taree, par les proprietaires. Deux brebis qui n&#x27;avaient pas mis bas et ont enfante deux males : il donne les deux au cohen. [Un] male et [une] femelle : le male au cohen. Deux males et une femelle : l&#x27;un a lui et l&#x27;un au cohen ; Rabbi Tarfon dit que le cohen se choisit le beau, Rabbi Akiva dit qu&#x27;ils evaluent entre eux, et le second broutera jusqu&#x27;a devenir taré et [le proprietaire] est oblige aux dons ; Rabbi Yossei [l&#x27;]exempte. Si l&#x27;un d&#x27;eux est mort : Rabbi Tarfon dit qu&#x27;ils partagent, Rabbi Akiva dit que la preuve incombe au reclamant. Deux femelles et un male, ou deux males et deux femelles : le cohen n&#x27;a rien ici. L&#x27;une avait mis bas et l&#x27;autre non, et elles ont enfante deux males : l&#x27;un a lui et l&#x27;un au cohen ; Rabbi Tarfon dit que le cohen se choisit le beau, Rabbi Akiva dit qu&#x27;ils evaluent entre eux, et le second broutera jusqu&#x27;a devenir taré et [le proprietaire] est oblige aux dons ; Rabbi Yossei [l&#x27;]exempte, car Rabbi Yossei disait : tout [animal] dont les remplacants sont dans la main du cohen est exempt des dons, et Rabbi Meir [l&#x27;]oblige. Si l&#x27;un d&#x27;eux est mort : Rabbi Tarfon dit qu&#x27;ils partagent, Rabbi Akiva dit que la preuve incombe au reclamant. [Un] male et [une] femelle : le cohen n&#x27;a rien ici ; Rabbi Yossei le Galileen dit : tous deux au cohen.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Michna : deux brebis <b>n'ayant jamais mis bas</b> (lo bikru). Deux males -&gt; les deux au cohen (chacun aine de sa mere). Male + femelle -&gt; le male au cohen. Deux males + une femelle -&gt; un a chacun (doute : laquelle a enfante l'aine ?). Pour ce petit du doute : R. Tarfon, le cohen prend <b>le beau</b> ; R. Akiva, <b>on evalue</b> (mechamnin) et le cohen prend le maigre ; le second broute jusqu'a etre <b>taré</b> (yistaev), puis se mange.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="300" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Brebis n'ayant jamais mis bas (lo bikru) : quels petits vont au cohen ?</text>
+  <g font-size="11.5">
+  <rect x="24" y="40" width="216" height="70" rx="9" fill="#eaf6ec" stroke="#15803d"/>
+  <text x="132" y="62" text-anchor="middle" font-weight="700" fill="#15803d">2 brebis -&gt; 2 males</text>
+  <text x="132" y="84" text-anchor="middle" fill="#292524">les deux au cohen</text>
+  <text x="132" y="100" text-anchor="middle" fill="#78716c">(chacun aine de sa mere)</text>
+  <rect x="252" y="40" width="216" height="70" rx="9" fill="#eaf6ec" stroke="#15803d"/>
+  <text x="360" y="62" text-anchor="middle" font-weight="700" fill="#15803d">1 male + 1 femelle</text>
+  <text x="360" y="84" text-anchor="middle" fill="#292524">le male au cohen</text>
+  <rect x="480" y="40" width="216" height="70" rx="9" fill="#fff7e6" stroke="#b45309"/>
+  <text x="588" y="62" text-anchor="middle" font-weight="700" fill="#b45309">2 males + 1 femelle</text>
+  <text x="588" y="84" text-anchor="middle" fill="#292524">1 a lui, 1 au cohen</text>
+  <text x="588" y="100" text-anchor="middle" fill="#78716c">(doute : lequel est l'aine ?)</text>
+  <rect x="24" y="120" width="330" height="70" rx="9" fill="#fdeaea" stroke="#b91c1c"/>
+  <text x="189" y="142" text-anchor="middle" font-weight="700" fill="#b91c1c">2 femelles+1 male, ou 2 males+2 femelles</text>
+  <text x="189" y="164" text-anchor="middle" fill="#292524">le cohen n'a RIEN</text>
+  <text x="189" y="180" text-anchor="middle" font-size="10.5" fill="#78716c">(peut-etre une femelle est sortie la 1re)</text>
+  <rect x="366" y="120" width="330" height="70" rx="9" fill="#fff7e6" stroke="#b45309"/>
+  <text x="531" y="142" text-anchor="middle" font-weight="700" fill="#b45309">1 a deja mis bas, 1 non -&gt; 2 males</text>
+  <text x="531" y="164" text-anchor="middle" fill="#292524">1 a lui, 1 au cohen (doute)</text>
+  </g>
+  <rect x="60" y="204" width="600" height="60" rx="9" fill="#eef2ff" stroke="#3730a3"/>
+  <text x="360" y="226" text-anchor="middle" font-size="12" font-weight="700" fill="#3730a3">Sur le petit du doute qui reste au proprietaire :</text>
+  <text x="360" y="246" text-anchor="middle" font-size="11.5" fill="#292524">R. Tarfon : le cohen choisit le meilleur | R. Akiva : on evalue (le cohen prend le maigre)</text>
+  <text x="360" y="288" text-anchor="middle" font-size="11.5" fill="#78716c">Le second broute jusqu'a devenir taré (moum), puis le proprietaire le mange</text>
+</svg></div><div class="svg-cap">Repartition des petits selon les naissances (michna, segments 12-18).</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְחַייָּב בְּמַתָּנוֹת, רַבִּי יוֹסֵי פּוֹטֵר. מֵת אֶחָד מֵהֶן, רַבִּי טִרְפוֹן אוֹמֵר: יַחֲלֹוקוּ, רַבִּי עֲקִיבָא אוֹמֵר: הַמּוֹצִיא מֵחֲבֵירוֹ עָלָיו הָרְאָיָה. שְׁתֵּי נְקֵבוֹת וְזָכָר אוֹ שְׁנֵי זְכָרִים וּשְׁתֵּי נְקֵבוֹת — אֵין כָּאן לַכֹּהֵן כְּלוּם.</div>
+            <div class="fr"><p>Et [le proprietaire] est oblige aux dons ; Rabbi Yossei [l&#x27;]exempte. Si l&#x27;un d&#x27;eux est mort, Rabbi Tarfon dit : ils partagent, Rabbi Akiva dit : celui qui veut extraire de son prochain, a lui incombe la preuve.</p><p>Deux femelles et un male, ou deux males et deux femelles — le cohen n&#x27;a rien ici.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>יַחֲלֹוקוּ</b> דְּחָזַר בּוֹ ר&#x27; טִרְפוֹן מִקַּמָּיְיתָא:</div>
+          <div class="glose-fr">Ils partagent — car Rabbi Tarfon s&#x27;est retracte de sa premiere [position].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שְׁנֵי זְכָרִים וּשְׁתֵּי נְקֵבוֹת אֵין כָּאן לַכֹּהֵן כְּלוּם</b> דְּאִיכָּא לְמֵימַר כָּל חֲדָא וַחֲדָא יָלְדָה זָכָר וּנְקֵבָה וְיָצָאת נְקֵבָה תְּחִלָּה:</div>
+          <div class="glose-fr">Deux males et deux femelles, le cohen n&#x27;a rien ici — car on peut dire que chacune [des brebis] a enfante un male et une femelle, et que la femelle est sortie la premiere.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Quand le proprietaire abat son petit (celui du doute), il est <b>oblige aux dons</b> (matnot) ; R. Yossei l'exempte. Si l'une des betes meurt : R. Tarfon partage, R. Akiva applique 'la preuve au reclamant'. Deux femelles + un male, ou deux males + deux femelles : le cohen <b>n'a rien</b> (on peut dire que chaque brebis a enfante d'abord une femelle).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אַחַת בִּיכְּרָה, וְאַחַת לֹא בִּיכְּרָה, וְיָלְדָה שְׁנֵי זְכָרִים, אֶחָד לוֹ וְאֶחָד לַכֹּהֵן. רַבִּי טִרְפוֹן אוֹמֵר: הַכֹּהֵן בּוֹרֵר אֶת הַיָּפֶה. רַבִּי עֲקִיבָא אוֹמֵר: מְשַׁמְּנִין בֵּינֵיהֶן, וְהַשֵּׁנִי יִרְעֶה עַד שֶׁיִּסְתָּאֵב.</div>
+            <div class="fr"><p>L&#x27;une avait mis bas et l&#x27;autre n&#x27;avait pas mis bas, et elles ont enfante deux males : l&#x27;un a lui et l&#x27;un au cohen. Rabbi Tarfon dit : le cohen se choisit le beau.</p><p>Rabbi Akiva dit : ils evaluent entre eux, et le second broutera jusqu&#x27;a devenir taré.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouveau cas : une brebis <b>a deja mis bas</b>, l'autre <b>non</b> ; elles enfantent deux males. Comme on ignore lequel provient de la brebis n'ayant jamais mis bas, il y a doute : <b>un a lui, un au cohen</b>. Meme litige : R. Tarfon (le cohen prend le beau) contre R. Akiva (on evalue, le second broute jusqu'a etre taré).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְחַייָּב בְּמַתָּנוֹת. רַבִּי יוֹסֵי פּוֹטֵר, שֶׁרַבִּי יוֹסֵי אוֹמֵר: כֹּל שֶׁחֲלִיפָיו בְּיַד כֹּהֵן פָּטוּר מִן הַמַּתָּנוֹת. וְרַבִּי מֵאִיר מְחַיֵּיב. מֵת אֶחָד מֵהֶן, רַבִּי טִרְפוֹן אוֹמֵר: יַחֲלֹוקוּ. רַבִּי עֲקִיבָא אוֹמֵר: הַמּוֹצִיא מֵחֲבֵירוֹ עָלָיו הָרְאָיָה. זָכָר וּנְקֵבָה — אֵין כָּאן לַכֹּהֵן כְּלוּם.</div>
+            <div class="fr"><p>Et [le proprietaire] est oblige aux dons. Rabbi Yossei [l&#x27;]exempte, car Rabbi Yossei disait : tout [animal] dont les remplacants sont dans la main du cohen est exempt des dons.</p><p>Et Rabbi Meir [l&#x27;]oblige. Si l&#x27;un d&#x27;eux est mort, Rabbi Tarfon dit : ils partagent.</p><p>Rabbi Akiva dit : celui qui veut extraire de son prochain, a lui incombe la preuve. [Un] male et [une] femelle — le cohen n&#x27;a rien ici.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁחֲלִיפָיו בְּיַד כֹּהֵן</b> שֶׁהַכֹּהֵן נוֹטֵל אַחַת מִן הַסְּפֵיקוֹת פָּטוּר הָאַחֵר מִן הַמַּתָּנוֹת דְּעָשׂוּ אֶת שֶׁאֵינוֹ זוֹכֶה כְּזוֹכֶה:</div>
+          <div class="glose-fr">Dont les remplacants sont dans la main du cohen — [c&#x27;est-a-dire] que le cohen prend l&#x27;une des [betes] du doute ; l&#x27;autre est exempte des dons, car on a rendu le non-ayant-droit comme un ayant-droit.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>זָכָר וּנְקֵבָה אֵין כָּאן לַכֹּהֵן כְּלוּם</b> דְּשֶׁמָּא אוֹתָהּ שֶׁלֹּא בִּיכְּרָה יָלְדָה הַנְּקֵבָה וְאוֹתָהּ שֶׁכְּבָר בִּיכְּרָה יָלְדָה זָכָר:</div>
+          <div class="glose-fr">[Un] male et [une] femelle, le cohen n&#x27;a rien ici — car peut-etre celle qui n&#x27;avait pas mis bas a-t-elle enfante la femelle, et celle qui avait deja mis bas a enfante un male.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">גְּמ&#x27; אָמְרִי דְּבֵי ר&#x27; יַנַּאי רַבִּי יוֹסֵי הַגְּלִילִי שָׁמְעִינַן לֵיהּ דְּאָמַר אֶפְשָׁר לְצַמְצֵם בִּידֵי שָׁמַיִם וכ&quot;ש בִּידֵי אָדָם וְרַבָּנָן אָמְרִי בִּידֵי שָׁמַיִם א&quot;א לְצַמְצֵם בִּידֵי אָדָם מַאי. וּמַסִּיק דְּסָבְרִי רַבָּנָן א&quot;א לְצַמְצֵם אַפֵּי&#x27; בִּידֵי אָדָם. וּפְסִיק ר&quot;י דַּהֲלָכָה כְּרַבִּי יוֹסֵי דְּבִידֵי אָדָם אֶפְשָׁר לְצַמְצֵם. מִדִּפְלִיגִי אָמוֹרָאֵי בְּפֶרֶק קַמָּא דְּעֵירוּבִין דַּף טז: בְּפָרוּץ כְּעוֹמֵד. וּבְפֶרֶק שֵׁנִי דְּחֻולִּין דַּף כֹּח: בְּמֶחֱצָה עַל מֶחֱצָה כְּרוֹב דְּאִי אֶפְשָׁר לְצַמְצֵם. מ&quot;ט דְּמַאן דְּשָׁרֵי. דִּלְמָא אַפֵּי&#x27; מֶחֱצָה אֵין כָּאן וּבְפֶרֶק שְׁבוּעַת הָעֵדוּת (שְׁבוּעוֹת דַּף לב.) פָּרִיךְ הַשַּׁ&quot;ס גַּבֵּי כָּפְרוּ שְׁנֵיהֶם כְּאַחַת וְהָא אִי אֶפְשָׁר לְצַמְצֵם וּמְשַׁנֵּי הָא מַנִּי רַבִּי יוֹסֵי הַגְּלִילִי הִיא. וְרַבִּי יוֹחָנָן אָמַר אַפֵּי&#x27; תֵּימָא רַבָּנָן. מַשְׁמַע דְּאֵין הֲלָכָה כְּרַבִּי יוֹסֵי הַגְּלִילִי. וְכֵן בְּפֶרֶק ד&#x27; אַחִין (יְבָמוֹת דַּף כֹּח.)גַּבֵּי אֲחָיוֹת אֵינִי יוֹדֵעַ מִי שְׁנָאָן אָמְרִינַן אַלִּיבָּא דְּרַבִּי יוֹחָנָן לָא סְתַם לַן תַּנָּא כְּרַבִּי יוֹסֵי הַגְּלִילִי. וְכֵן בְּגִיטִּין בְּפֶרֶק הַזּוֹרֵק (גִּיטִּין דַּף עח.) גַּבֵּי סָפֵק קָרוֹב לוֹ סָפֵק קָרוֹב לָהּ פָּרִיךְ וְנֶחֱזֵי הֵי מִינַּייְהוּ קְדֵים וְכִי תֵּימָא שֶׁבָּאוּ שְׁנֵיהֶם בְּבַת אַחַת וְהָא אִי אֶפְשָׁר לְצַמְצֵם. מִכָּל הָלֵין מַשְׁמַע דְּאֵין הֲלָכָה כְּרַבִּי יוֹסֵי הַגְּלִילִי וְנִרְאֶה דְּבִידֵי שָׁמַיִם אֵין הֲלָכָה כְּמוֹתוֹ. וְהַךְ דִּשְׁבוּעוֹת דְּלָא כִּוְּונוּ לְדַבֵּר כְּאַחַת וְכֵן הַךְ דְּגִיטִּין דְּלָא כִּוְּונוּ לִיכָּנֵס בְּבַת אַחַת לְתוֹךְ אַרְבַּע אַמּוֹת כְּבִידֵי שָׁמַיִם דָּמֵי. אֲבָל בִּידֵי אָדָם הֲלָכָה כְּמוֹתוֹ: רַבִּי טַרְפוֹן אוֹמֵר בּוֹרֵר לוֹ אֶת הַיָּפֶה. מ&quot;ט דְּרַבִּי טֵרָפוֹן. קָסָבַר הַהוּא דְּבָרִיא נָפְקָא בְּרֵישָׁא. וַהֲלָכָה כְּר&#x27; עֲקִיבָא דְּהָא ר&quot;ט גּוּפֵיהּ הָדַר בֵּיהּ: ר&quot;ע אוֹמֵר מְשַׁמְּנִין בֵּינֵיהֶן. אָמַר רַבִּי חִייָּא בַּר אַבָּא אָמַר ר&#x27; יוֹחָנָן וְכֹהֵן נוֹטֵל כָּחוּשׁ. אֲמַר לֵיהּ רַבִּי חִייָּא בַּר אַבָּא לְרַבִּי יוֹחָנָן וְהָא אֲנַן מְשַׁמְּנִים בֵּינֵיהֶם תְּנַן. אָמַר לֵיהּ אַדַּאֲכַלְתְּ כַּפְנְיָתָא בְּבָבֶל תַּרְגֵּימְנָא מִסֵּיפָא דְּקָתָנֵי מֵת אֶחָד מֵהֶן רַבִּי טַרְפוֹן אוֹמֵר יַחְלוֹקוּ וְרַבִּי עֲקִיבָא אוֹמֵר המע&quot;ה אַמַּאי לִיפְלְגִי בַּהֲדָדִי. אֶלָּא מַאי. מְשַׁמְּנִין בֵּינֵיהֶן שׁוּמָא יְהֵא בֵּינֵיהֶן. דְּאָמַר לֵיהּ לְכֹהֵן אַייְתִי רְאָיָה דִּבְכוֹר הוּא וּשְׁקוֹל: וְחַייָּב בְּמַתָּנוֹת. מ&quot;ט דְּרַבִּי מֵאִיר. אָמַר ר&#x27; יוֹחָנָן הוֹאִיל וְכֹהֵן בָּא עָלָיו מִשְּׁנֵי צְדָדִין. דְּאָמַר לֵיהּ אִי בְּכוֹר הוּא כֻּולּוֹ דִּידִי הוּא. וְאִי לָאו בְּכוֹר הוּא הַב לִי מַתָּנוֹת מִנֵּיהּ. וְר&#x27; יוֹסֵי מ&quot;ט. אָמַר רָבָא עָשׂוּ אֶת שֶׁאֵינוֹ זוֹכֶה כְּזוֹכֶה ואע&quot;ג דְּלָא מְטָא לִידֵיהּ דְּכֹהֵן שַׁווְּיוּהָ רַבָּנַן כְּמַאן דִּמְטָא לִידֵיהּ וְזַבְּנֵיהּ לְיִשְׂרָאֵל בְּמוּמֵי&#x27; וקי&quot;ל כר&quot;מ: מֵת אֶחָד מֵהֶן רַבִּי טַרְפוֹן אוֹמֵר יַחְלוֹקוּ ור&quot;ע אוֹמֵר המע&quot;ה. אָמַר רַבִּי חִייָּא בַּר אַבָּא אָמַר ר&#x27; יוֹחָנָן מָשָׁל דְּרַבִּי טַרְפוֹן לְמָה הַדָּבָר דּוֹמֶה לִשְׁנַיִם שֶׁהִפְקִידוּ אֵצֶל רוֹעֶה שֶׁמַּנִּיחַ רוֹעֶה בֵּינֵיהֶם וּמִסְתַּלֵּק. מָשָׁל דְּרַבִּי עֲקִיבָא לְמָה הַדָּבָר דּוֹמֶה לְאֶחָד שֶׁהִפְקִיד אֵצֶל בַּעַל הַבַּיִת שהמע&quot;ה. וְאֶלָּא בְּמַאי פְּלִיגִי. אֶלָּא אָמַר רָבָא וְאִיתֵּימָא רַב פָּפָּא הַכֹּל מוֹדִים בִּשְׁנַיִם שֶׁהִפְקִידוּ אֵצֶל רוֹעֶה שֶׁמַּנִּיחַ רוֹעֶה בֵּינֵיהֶן וּמִסְתַּלֵּק. וּבְאֶחָד שֶׁהִפְקִיד אֵצֶל בַּעַל הַבַּיִת שהמע&quot;ה. לֹא נֶחְלְקוּ אֶלָּא בַּחֲצַר בַּעַל הַבַּיִת וְרוֹעֶה כֹּהֵן. ר&quot;ט סָבַר אַקְּנוּיֵי מַקְנֵי לֵיהּ מָקוֹם בַּחֲצֵרוֹ דְּנִיחָא לֵיהּ דְּלִיתְעֲבִיד מִצְוָה בְּמָמוֹנֵיהּ וְהָוֵה לֵיהּ כִּשְׁנַיִם שֶׁהִפְקִידוּ אֵצֶל רוֹעֶה שֶׁמַּנִּיחַ רוֹעֶה בֵּינֵיהֶם וּמִסְתַּלֵּק. וְרַבִּי עֲקִיבָא סָבַר כֵּיוָן דְּאִית לֵיהּ פְּסֵידָא לָא מַקְנֵי לֵיהּ מִידִי וְהָוֵי לֵיהּ כא&#x27; שֶׁהִפְקִיד אֵצֶל בעה&quot;ב דהמע&quot;ה. וְהִלְכְתָא כְּר&#x27; עֲקִיבָא:</div>
+          <div class="glose-fr">GUEMARA. Ceux de l&#x27;ecole de Rabbi Yannai enseignaient : de Rabbi Yossei le Galileen nous savons qu&#x27;il dit qu&#x27;il est possible de coincider exactement (efchar le-tzamtzem) par la main du Ciel (bi-ydei chamayim), et a plus forte raison par la main de l&#x27;homme (bi-ydei adam) ; et les Sages disent [seulement] : par la main du Ciel il est impossible de coincider — [mais] par la main de l&#x27;homme, quoi ? On conclut que les Sages tiennent qu&#x27;il est impossible de coincider meme par la main de l&#x27;homme. Et Rabbenou Yits&#x27;hak tranche que la halakha suit Rabbi Yossei : par la main de l&#x27;homme il est possible de coincider. [Preuves :] du fait que des Amoraim divergent au chapitre 1 de Erouvin (16b) sur &#x27;le [pan] ajoure comme le plein&#x27; (paroutz ke-omed), et au chapitre 2 de Houlin (28b) sur &#x27;moitie-moitie comme la majorite&#x27; — car il est impossible de coincider ; quel est le motif de qui permet ? peut-etre n&#x27;y a-t-il meme pas moitie. Et au chapitre &#x27;Chevouat ha-edout&#x27; (Chevouot 32a) la Guemara objecte, a propos de deux [temoins] qui ont nie ensemble : mais il est impossible de coincider ! et l&#x27;on repond : cette [michna] est selon Rabbi Yossei le Galileen ; tandis que Rabbi Yohanan dit : tu peux meme dire que c&#x27;est selon les Sages — ce qui indique que la halakha ne suit pas Rabbi Yossei le Galileen. De meme au chapitre &#x27;Arbaa a&#x27;hin&#x27; (Yevamot 28a), a propos des soeurs &#x27;je ne sais qui les a enseignees&#x27;, on dit selon Rabbi Yohanan que le Tana ne nous a pas enseigne de maniere anonyme selon Rabbi Yossei le Galileen. De meme dans Guittin, chapitre &#x27;Ha-zorek&#x27; (78a), a propos de &#x27;doute [si le guet est tombe] plus pres de lui, doute plus pres d&#x27;elle&#x27;, on objecte : voyons lequel [est arrive] le premier ! et si tu dis qu&#x27;ils sont arrives tous deux en meme temps — mais il est impossible de coincider ! De tout cela il ressort que la halakha ne suit pas Rabbi Yossei le Galileen ; et il apparait que par la main du Ciel la halakha ne suit pas [Rabbi Yossei le Galileen]. Le cas de Chevouot, ou [les temoins] n&#x27;ont pas eu l&#x27;intention [de parler] ensemble, et de meme celui de Guittin, ou ils n&#x27;ont pas eu l&#x27;intention d&#x27;entrer ensemble dans les quatre coudees, sont comme &#x27;la main du Ciel&#x27;. Mais par la main de l&#x27;homme, la halakha suit [Rabbi Yossei le Galileen]. Rabbi Tarfon dit : le cohen se choisit le beau. Quel est le motif de Rabbi Tarfon ? Il tient que celui qui est robuste (baria) sort le premier. Et la halakha suit Rabbi Akiva, puisque Rabbi Tarfon lui-meme s&#x27;est retracte. Rabbi Akiva dit : ils evaluent entre eux. Rabbi Hiyya bar Abba a dit au nom de Rabbi Yohanan : et le cohen prend le maigre. Rabbi Hiyya bar Abba dit a Rabbi Yohanan : mais nous avons appris &#x27;ils evaluent entre eux&#x27; ! Il lui repondit : le temps que tu manges une datte a Babylone, je l&#x27;ai [deja] explique a partir de la clause finale, qui enseigne : &#x27;si l&#x27;un d&#x27;eux est mort, Rabbi Tarfon dit qu&#x27;ils partagent et Rabbi Akiva dit que la preuve incombe au reclamant&#x27; — pourquoi divergeraient-ils l&#x27;un de l&#x27;autre [dans ce cas si &#x27;evaluer&#x27; voulait dire partager la valeur] ? Que signifie donc &#x27;ils evaluent entre eux&#x27; ? Qu&#x27;il y aura entre eux une estimation (choma), [le proprietaire] disant au cohen : apporte la preuve que c&#x27;est un aine, et prends. Et [le proprietaire] est oblige aux dons. Quel est le motif de Rabbi Meir ? Rabbi Yohanan a dit : puisque le cohen l&#x27;attaque des deux cotes, [le cohen] lui disant : si c&#x27;est un aine, tout est a moi ; et si ce n&#x27;est pas un aine, donne-moi les dons de [la bete]. Et quel est le motif de Rabbi Yossei ? Rava a dit : on a rendu le non-ayant-droit comme un ayant-droit ; bien que [la bete] ne soit pas parvenue en main du cohen, les Sages l&#x27;ont traite comme si elle etait parvenue en sa main et qu&#x27;il l&#x27;avait vendue a l&#x27;Israelite avec ses defauts ; et nous tenons pour loi comme Rabbi Meir. Si l&#x27;un d&#x27;eux est mort : Rabbi Tarfon dit qu&#x27;ils partagent, Rabbi Akiva dit que la preuve incombe au reclamant. Rabbi Hiyya bar Abba a dit au nom de Rabbi Yohanan : la parabole de Rabbi Tarfon, a quoi cela ressemble-t-il ? A deux [deposants] chez un berger, ou le berger la pose entre eux et se retire. La parabole de Rabbi Akiva, a quoi cela ressemble-t-il ? A un [deposant] chez un proprietaire, ou la preuve incombe au reclamant. Mais alors sur quoi divergent-ils ? Rava dit, et certains disent Rav Papa : tous s&#x27;accordent, pour deux [deposants] chez un berger, qu&#x27;il la pose entre eux et se retire, et pour un [deposant] chez un proprietaire, que la preuve incombe au reclamant. Ils ne divergent que dans la cour du proprietaire ou le berger est un cohen. Rabbi Tarfon tient : [le proprietaire] lui transfere un emplacement dans sa cour, car il lui plait qu&#x27;une mitzva soit accomplie avec son bien ; c&#x27;est alors comme deux [deposants] chez un berger, ou le berger la pose entre eux et se retire. Et Rabbi Akiva tient : puisqu&#x27;il y a pour lui une perte, il ne lui transfere rien ; c&#x27;est alors comme un [deposant] chez un proprietaire, ou la preuve incombe au reclamant. Et la halakha suit Rabbi Akiva.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Suite du cas precedent : le proprietaire est <b>oblige aux dons</b> ; R. Yossei l'exempte au nom du principe 'tout [animal] dont le remplacant est chez le cohen est exempt des dons' ; R. Meir l'oblige. Si une bete meurt : R. Tarfon partage, R. Akiva applique 'la preuve au reclamant'. Male + femelle : le cohen <b>n'a rien</b> (peut-etre la brebis deja delivree a fait le male et l'autre la femelle).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg16">
+          <div class="seg-num">17</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">גְּמ׳ צְרִיכָא, דְּאִי אַשְׁמוֹעִינַן קַמַּייְתָא, בְּהַהִיא קָאָמַר רַבִּי עֲקִיבָא, דִּתְרֵי מֵחֲדָא.</div>
+            <div class="fr"><p>GUEMARA. [Ces trois cas etaient] necessaires.</p><p>Car si [la michna] ne nous avait enseigne que le premier [cas], j&#x27;aurais dit : c&#x27;est dans celui-la [seulement] que Rabbi Akiva parle [ainsi], car les deux [petits proviennent] d&#x27;une seule [mere] (tere me-hada).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>גְּמ&#x27; קַמַּיְיתָא</b> רָחֵל שֶׁיָּלְדָה שְׁנֵי זְכָרִים הָתָם קָאָמַר ר&quot;ע כֹּהֵן נוֹטֵל כָּחוּשׁ:</div>
+          <div class="glose-fr">GUEMARA. Le premier [cas] — la brebis qui a enfante deux males : c&#x27;est la que Rabbi Akiva dit que le cohen prend le maigre.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִשּׁוּם דִּתְרֵי מֵחֲדָא</b> רָחֵל נְפוּק וּמְסַפְּקָא מִילְּתָא וְהַמּוֹצִיא מֵחֲבֵירוֹ עָלָיו הָרְאָיָה:</div>
+          <div class="glose-fr">Parce que les deux [proviennent] d&#x27;une seule [mere] — c&#x27;est d&#x27;une [meme] brebis qu&#x27;ils sont sortis, et la chose est douteuse ; [donc] celui qui veut extraire de son prochain, a lui incombe la preuve.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara justifie la repetition des trois cas (une brebis; deux brebis; l'une a mis bas, l'autre non). Si seul le <b>premier cas</b> (une brebis, deux males) etait enseigne, on aurait cru que R. Akiva ne donne au cohen le maigre que la — car les <b>deux petits viennent d'une seule mere</b> (tere me-hada), sans raison de supposer que le meilleur est ne le premier.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg17">
+          <div class="seg-num">18</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲבָל רְחֵילָיו שֶׁלֹּא בִּיכְּרוּ, דִּתְרֵי מֵחֲדָא וְחַד מֵחֲדָא — אֵימָא מוֹדֵי לֵיהּ לְרַבִּי טַרְפוֹן, דְּהָךְ דִּילִידָא חַד שְׁבִיחַ טְפֵי.</div>
+            <div class="fr"><p>Mais [dans le cas de] ses brebis qui n&#x27;avaient pas mis bas, ou deux [proviennent] d&#x27;une seule [mere] et un d&#x27;une [autre] seule (tere me-hada ve-had me-hada), j&#x27;aurais dit : [Rabbi Akiva] concede a Rabbi Tarfon, car celui qui est ne seul (hakh di-yelida had) est plus estimable (chevih tefei).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲבָל שְׁתֵּי רְחֵלִים</b> שֶׁיָּלְדוּ שְׁנֵי זְכָרִים וּנְקֵבָה דִּתְרֵי נְפַקוּ מֵחֲדָא וְחַד מֵחֲדָא:</div>
+          <div class="glose-fr">Mais [le cas de] deux brebis — qui ont enfante deux males et une femelle, ou deux sont sortis d&#x27;une [mere] et un d&#x27;une [autre] seule.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵימָא מוֹדֵי לֵיהּ רַבִּי טִרְפוֹן</b> דְּכֹהֵן בּוֹרֵר לוֹ אֶת הַיָּפֶה דִּלְפִיכָךְ הוּא יָפֶה שֶׁיָּצָא יָחִיד וְלֹא הָיְתָה הַנְּקֵבָה עִמּוֹ וְזֶהוּ וַדַּאי בְּכוֹר גָּמוּר:</div>
+          <div class="glose-fr">J&#x27;aurais dit : Rabbi Tarfon [ou : Rabbi Akiva lui] concede — que le cohen se choisit le beau, car [ce male] est beau du fait qu&#x27;il est sorti seul et qu&#x27;il n&#x27;y avait pas de femelle avec lui : celui-la est assurement un aine parfait.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהַךְ דִּילִידָא חַד שְׁבִיחַ טְפֵי</b> שְׁבִיחַ מְעֻולֶּה:</div>
+          <div class="glose-fr">Et celui qui est ne seul est plus estimable — &#x27;chevih&#x27; [signifie] excellent, de premier choix.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Dans le <b>deuxieme cas</b> (deux brebis, deux males + une femelle), deux petits viennent d'une mere et un autre d'une seconde (<b>tere me-hada ve-had me-hada</b>). On aurait pu croire que R. Akiva concede a R. Tarfon : le male ne <b>seul</b> (sans femelle jumelle) est un aine certain, donc <b>plus estimable</b> (chevih tefei) — le cohen le prendrait.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg18">
+          <div class="seg-num">19</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאִי אַשְׁמוֹעִינַן הָא — בְּהָא קָאָמַר רַבִּי עֲקִיבָא, דְּתַרְוַיְיהוּ לָא בִּיכְּרוּ, אֲבָל אַחַת בִּיכְּרָה וְאַחַת שֶׁלֹּא בִּיכְּרָה וְיָלְדוּ שְׁנֵי זְכָרִים — אֵימָא מוֹדֵי לֵיהּ לְרַבִּי טַרְפוֹן,</div>
+            <div class="fr"><p>Et si [la michna] ne nous avait enseigne que ce [cas], j&#x27;aurais dit : c&#x27;est dans ce [cas] que Rabbi Akiva parle [ainsi], car toutes deux n&#x27;avaient pas mis bas ; mais [dans le cas ou] l&#x27;une avait mis bas et l&#x27;une n&#x27;avait pas mis bas et elles ont enfante deux males, j&#x27;aurais dit qu&#x27;[il] concede a Rabbi Tarfon,</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Et si seul ce <b>deuxieme cas</b> etait enseigne, on aurait limite R. Akiva a lui, car <b>les deux brebis n'avaient jamais mis bas</b>. Mais dans le <b>troisieme cas</b> (l'une a deja mis bas, l'autre non, deux males), on aurait cru que R. Akiva concede a R. Tarfon. D'ou la necessite d'enoncer les trois cas. (La conclusion se poursuit sur 19a.)</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Bekhorot_18a.html">&lsaquo; Bekhorot 18a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Bekhorot_19a.html">Bekhorot 19a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

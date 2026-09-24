@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chullin 16a — l&#x27;abattage par une roue (force directe ou indirecte) et la lame detachee puis rattachee</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Chullin 16a — l&#x27;abattage par une roue (force directe ou indirecte) et la lame detachee puis rattachee</h1>
+    <div class="ref">Chullin 16a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Chullin_15b.html">&lsaquo; Chullin 15b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Chullin_16b.html">Chullin 16b &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> La contradiction interne a la braita conduit a distinguer une lame attachee des l&#x27;origine d&#x27;une lame detachee puis rattachee. L&#x27;abattage par un mecanisme a roue est valable [s&#x27;il provient] d&#x27;une roue de potier (mue par l&#x27;homme) ou d&#x27;une roue a eau par &#x27;premiere force&#x27; (le premier tour, des qu&#x27;on libere l&#x27;eau), mais invalide par &#x27;seconde force&#x27; (l&#x27;eau agissant seule) — a l&#x27;instar du propos de Rav Papa sur celui qui detourne un flot d&#x27;eau sur un homme ligote : coupable par premiere force (&#x27;ses propres fleches&#x27;), exempt par seconde force (simple cause indirecte).</p><p>Rabbi deduit de &#x27;il prit le couteau pour egorger&#x27; (Gen 22:10) que l&#x27;abattage requiert une lame detachee, mais Rabbi Hiyya juge le raisonnement bancal (le verset n&#x27;enseigne que la diligence d&#x27;Abraham). Rava etablit qu&#x27;une chose detachee puis rattachee a le statut d&#x27;une chose detachee : quant a l&#x27;idolatrie, une maison peut devenir idole (a la difference des montagnes, attachees) ; et quant a rendre les semences aptes a l&#x27;impurete (le bol renverse sur un mur), c&#x27;est l&#x27;objet d&#x27;une divergence de Tannaim — que Rabbi Elazar tient pour une michna brisee, et Rav Papa concilie en distinguant un mur de caverne (attache) d&#x27;un mur de batiment (detache).</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 232" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="232" fill="#fffdf8"/>
+  <text x="360" y="22" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Premiere force (koach richon) vs seconde force (koach cheni)</text>
+  <rect x="30" y="36" width="320" height="156" rx="10" fill="#eaf6ec" stroke="#15803d"/>
+  <text x="190" y="58" text-anchor="middle" font-size="12.5" font-weight="700" fill="#15803d">PREMIERE FORCE (koach richon)</text>
+  <text x="190" y="84" text-anchor="middle" font-size="11" fill="#292524">Roue a eau : la lame abat des qu'on</text>
+  <text x="190" y="100" text-anchor="middle" font-size="11" fill="#292524">libere l'eau (1er tour) -&gt; VALABLE</text>
+  <text x="190" y="128" text-anchor="middle" font-size="11" fill="#292524">On detourne l'eau qui noie aussitot</text>
+  <text x="190" y="144" text-anchor="middle" font-size="11" fill="#292524">la victime -&gt; MEURTRE</text>
+  <text x="190" y="170" text-anchor="middle" font-size="10.5" fill="#78716c">('ce sont ses propres fleches', giri didei)</text>
+  <rect x="370" y="36" width="320" height="156" rx="10" fill="#fdeaea" stroke="#b91c1c"/>
+  <text x="530" y="58" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b91c1c">SECONDE FORCE (koach cheni)</text>
+  <text x="530" y="84" text-anchor="middle" font-size="11" fill="#292524">Roue a eau : la lame abat au 2e tour</text>
+  <text x="530" y="100" text-anchor="middle" font-size="11" fill="#292524">(l'eau agit seule) -&gt; INVALIDE</text>
+  <text x="530" y="128" text-anchor="middle" font-size="11" fill="#292524">L'eau atteint la victime au loin,</text>
+  <text x="530" y="144" text-anchor="middle" font-size="11" fill="#292524">ensuite -&gt; cause indirecte (garma)</text>
+  <text x="530" y="170" text-anchor="middle" font-size="10.5" fill="#78716c">-&gt; exempt</text>
+  <text x="360" y="214" text-anchor="middle" font-size="11" fill="#78716c">Critere commun : l'acte est-il l'effet DIRECT de la force de l'homme, ou non ?</text>
+</svg></div>
+          <figcaption>Force directe et force indirecte, dans l&#x27;abattage et dans le meurtre (segments 1-3).</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">קַשְׁייָן אַהֲדָדֵי! אֶלָּא לָאו שְׁמַע מִינַּהּ שָׁאנֵי בֵּין מְחֻובָּר מֵעִיקָּרוֹ לְתָלוּשׁ וּלְבַסּוֹף חִבְּרוֹ, שְׁמַע מִינָּה.</div>
+            <div class="fr"><p>Elles se contredisent l&#x27;une l&#x27;autre ! Plutot, n&#x27;en conclus-tu pas qu&#x27;il y a une difference entre [une lame] attachee des l&#x27;origine (mechoubar me-ikaro) et [une lame] detachee puis attachee a la fin (talouch u-le-vasof hibero) ?</p><p>Conclus-en.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>קַשְׁייָן אַהֲדָדֵי</b> דְּקָתָנֵי רֵישָׁא בִּמְחֻובָּר לַקַּרְקַע שְׁחִיטָתוֹ כְּשֵׁרָה אַלְמָא בְּדִיעֲבַד שַׁפִּיר דָּמֵי וַהֲדַר תָּנֵי הָיָה צוּר יוֹצֵא כוּ&#x27;:</div>
+          <div class="glose-fr">Elles se contredisent l&#x27;une l&#x27;autre — car on enseigne au debut &#x27;avec [une lame] attachee au sol, son abattage [est] valable&#x27;, preuve qu&#x27;a posteriori c&#x27;est bien [valide], puis on enseigne &#x27;un [eclat de] silex sortait [du mur], etc.&#x27; [invalide].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא לָאו ש&quot;מ כּוּ&#x27;</b> וְהָא מַתְנִיתִין רַבִּי הִיא דְּאִי רַבִּי חִיָּיא אֲפִילּוּ לְכַתְּחִלָּה מַכְשִׁיר:</div>
+          <div class="glose-fr">Plutot, n&#x27;en conclus-tu pas, etc. — et cette michna [c&#x27;est] Rabbi, car si [c&#x27;etait] Rabbi Hiyya, il validerait meme a priori.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Les deux clauses de la braita se <b>contredisent</b> (lame attachee = valable / silex saillant = invalide). <b>Conclusion</b> : il y a bien une difference entre <b>attache des l'origine</b> (invalide) et <b>detache puis rattache</b> (valable). Apprends-le. (Et la michna, qui valide a posteriori, est bien Rabbi.)</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר מַר: הַשּׁוֹחֵט בְּמוּכְנִי שְׁחִיטָתוֹ כְּשֵׁרָה, וְהַתַּנְיָא: שְׁחִיטָתוֹ פְּסוּלָה! לָא קַשְׁיָא: הָא בְּסָרַנָא דְּפַחְרָא, הָא בְּסָרַנָא דָּמְיָא.</div>
+            <div class="fr"><p>Le Maitre a dit : celui qui abat avec un mecanisme [a roue] (mokhni) — son abattage [est] valable. Mais n&#x27;a-t-on pas enseigne : son abattage [est] invalide !</p><p>Ce n&#x27;est pas difficile : ceci [le cas] d&#x27;une roue de potier (sarna de-pahra), cela [le cas] d&#x27;une roue [actionnee par] l&#x27;eau (sarna de-maya).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּסָרַנָא דְּפַחְרָא</b> גַּלְגַּל שֶׁל יוֹצְרִים שֶׁל חֶרֶס וְיֵשׁ לָהֶם מוּכְנִי שֶׁמְּגַלְגְּלִין בּוֹ כְּשֶׁחוֹקְקִין אֶת הַכְּלִי:</div>
+          <div class="glose-fr">Avec une roue de potier (sarna de-pahra) — la roue des potiers de terre cuite ; ils ont un mecanisme avec lequel ils [la] font tourner lorsqu&#x27;ils faconnent l&#x27;ustensile.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>פַּחְרָא</b> חֶרֶס וַחֲבֵירוֹ בְּדָנִיֵּאל בַּחֲלוֹמוֹ שֶׁל נְבוּכַדְנֶצַּר חֲסַף דִּי פֶּחָר:</div>
+          <div class="glose-fr">&#x27;Pahra&#x27; — [de la] terre cuite (heres) ; et son pareil [se trouve] dans Daniel, dans le songe de Nabuchodonosor : &#x27;de l&#x27;argile de potier (hasaf di pehar)&#x27;.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>סָרַנָא דְּפַחְרָא</b> שְׁחִיטָתוֹ כְּשֵׁרָה שֶׁאָדָם מְגַלְגְּלוֹ:</div>
+          <div class="glose-fr">Roue de potier — son abattage [est] valable, car c&#x27;est un homme [qui] la fait tourner.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">הַשּׁוֹחֵט בְּמוּכְנִי שֶׁל יוֹצֵר שְׁחִיטָתוֹ כְּשֵׁירָה. וּבְגַלְגַּל שֶׁל מַיִם בְּכֹחַ רִאשׁוֹן שְׁחִיטָתוֹ כְּשֵׁירָה. בְּכֹחַ שֵׁנִי שְׁחִיטָתוֹ פְּסוּלָה: תַּנְיָא נָעַץ סַכִּין בַּכֹּותֶל וְשָׁחַט בָּהּ שְׁחִיטָתוֹ כְּשֵׁירָה. אָמַר רַב עָנָן אֹמֶד שְׁמוּאֵל ל&quot;ש אֶלָּא שֶׁהַסַּכִּין לְמַעְלָה וְצַוַּאר בְּהֵמָה לְמַטָּה שְׁחִיטָתוֹ כְּשֵׁירָה בְּדִיעֲבַד. אֲבָל סַכִּין לְמַטָּה וְצַוַּאר בְּהֵמָה לְמַעְלָה אֲפִילּוּ בְּדִיעֲבַד שְׁחִיטָתוֹ פְּסוּלָה דְּחָיְישִׁינַן שֶׁמָּא יִדְרֹוס. וַהֲוָה לֵיהּ לְמֵימַר דָּרַס אֶלָּא נְקַט לִישָּׁנָא דִּלְהַבָּא לְאַשְׁמוֹעִינַן דַּאֲפִילּוּ אִי אָמַר בָּרִי לִי שֶׁלֹּא דָּרַסְתִּי שְׁחִיטָתוֹ פְּסוּלָה שֶׁמָּא יִדְרֹוס פַּעַם אַחֶרֶת. וְהָא דְּקָתָנֵי בֵּין שֶׁהַסַּכִּין לְמַטָּה וְצַוַּאר בְּהֵמָה לְמַעְלָה בֵּין שֶׁהַסַּכִּין לְמַעְלָה וְצַוַּאר בְּהֵמָה לְמַטָּה לִצְדָדִין קָתָנֵי. סַכִּין לְמַטָּה וְצַוַּאר בְּהֵמָה לְמַעְלָה בִּתְלוּשָׁה. סַכִּין לְמַעְלָה וְצַוַּאר בְּהֵמָה לְמַטָּה בִּמְחֻובֶּרֶת. רַב פָּפָּא אָמַר בְּעוֹפָא דְּקַלִּיל. בָּעֵי ר&#x27; יִרְמְיָה אֵיבְרֵי בְּשַׂר נְחִירָה שֶׁהִכְנִיסוּ עִמָּהֶם לְאֶרֶץ יִשְׂרָאֵל מַהוּ. וְקָאֵי בְּתֵיקוּ. פֵּירֵשׁ רַשִׁ&quot;י דְּרוֹשׁ וְקִבֵּל שָׂכָר הוּא דִּצְרִיכִין אָנוּ לַעֲמֹוד עַל הָאֱמֶת אע&quot;פ שֶׁכְּבָר עָבַר. וְלָא נְהִירָא לִי דְּדַוְקָא לְמִיסְבַּר קְרָאֵי דָּרְשִׁינַן אע&quot;פ שֶׁכְּבָר עָבַר. אֲבָל לִקְבֹּועַ בָּעֲיָא בַּשַּׁ&quot;ס בְּדָבָר שֶׁאֵין בּוֹ צֹורֶךְ לָא אַשְׁכְּחַן. וְהָכִי אָמְרִינַן בְּפ&quot;ק דְּיוֹמָא דַּף ה: כֵּיצַד הִלְבִּישָׁן כו&#x27; כֵּיצַד הִלְבִּישָׁן מַאי דַהֲוָה הֲוָה. אֶלָּא כֵּיצַד מַלְבִּישָׁן לֶעָתִיד לָבֹא. לע&quot;ל לִכְשֶׁיָּבֹאוּ אַהֲרֹן וּבָנָיו וּמֹשֶׁה עִמָּהֶן. אֶלָּא כֵּיצַד מַלְבִּישָׁן לְמִיסְבַּר קְרָאֵי בְּצַווָּאָה כְּתִיב וְכוּ&#x27;. וְנִרְאֶה לִי דְּנָפְקָא מִינָּהּ בְּבַעְיָא זוֹ לְאָדָם שֶׁאָסַר עַצְמוֹ בְּאֶחָד מִן הַמִּינִין מִזְּמַן יָדוּעַ וְאֵילָךְ וּכְשֶׁהִגִּיעַ הַזְּמַן הָיָה לוֹ מֵאוֹתוֹ הַמִּין שֶׁהָיָה אוֹכֵל וְהוֹלֵךְ עַד שֶׁהִגִּיעַ הַזְּמַן אִם מֻותָּר לֶאֱכֹול מַה שֶׁנִּתְוַתֵּר בְּיָדוֹ. אִי נָמֵי כְּגוֹן שֶׁרָצוּ ב&quot;ד לֶאֱסֹור דָּבָר אֶחָד כְּמוֹ שֶׁאָסְרוּ גְּבִינוֹת הָעוֹבָדֵי כּוֹכָבִים וּשְׁלָקוֹת וְכַיּוֹצֵא בָּהֶן אִם אָסוּר מַה שֶׁיֵּשׁ לוֹ מִמֶּנּוּ מֵאוֹתוֹ הַמִּין בְּיַד יִשְׂרָאֵל:</div>
+          <div class="glose-fr">Celui qui abat (le chochet) avec un mecanisme a roue (mokhni) de potier, son abattage (chehita) est valable (kacher). Et [pour] une roue [actionnee par] l&#x27;eau (galgal chel mayim), par une premiere force (koach richon) son abattage est valable ; par une seconde force (koach cheni) son abattage est invalide (passoul). On a enseigne [dans une braita] : [celui qui] a fiche un couteau (sakin) dans le mur et [en] a abattu, son abattage est valable. Rav Anan a dit [au nom de] l&#x27;estimation de Chemouel : [la braita] n&#x27;a enseigne [que cet abattage soit valable] que [pour le cas] ou le couteau [est] en haut et le cou de l&#x27;animal (behema) en bas -- son abattage [est alors] valable a posteriori (be-diavad) ; mais [si] le couteau [est] en bas et le cou de l&#x27;animal en haut, meme a posteriori son abattage est invalide, car nous craignons qu&#x27;il ne presse (yidros -- deressa, appuyer au lieu de trancher par va-et-vient, ce qui invalide l&#x27;abattage). Or [le texte] aurait du dire &#x27;daras&#x27; [au passe : il a presse] ; mais il a pris une formule tournee vers l&#x27;avenir (le-haba) pour nous enseigner que, meme s&#x27;il disait &#x27;il m&#x27;est certain que je n&#x27;ai pas presse&#x27;, son abattage [reste] invalide, [par crainte] qu&#x27;il ne presse une autre fois. Et ce qui est enseigne &#x27;aussi bien [le cas] ou le couteau [est] en bas et le cou de l&#x27;animal en haut, que [le cas] ou le couteau [est] en haut et le cou de l&#x27;animal en bas&#x27;, [cela] est enseigne par cotes distincts (li-tsedadin -- chaque membre visant un cas different) : [le couteau] en bas et le cou de l&#x27;animal en haut [vaut] pour [une lame] detachee (be-teloucha) ; [le couteau] en haut et le cou de l&#x27;animal en bas [vaut] pour [une lame] attachee (bi-mechouberet). Rav Papa a dit : [le cas ou l&#x27;on valide malgre le couteau en bas concerne] un volatile, [animal] leger (be-ofa de-kalil). Rabbi Yirmiya a pose la question (ba&#x27;ei) : les membres de chair de nechira (bessar nechira -- chair d&#x27;un animal tue par percement de la nuque, permise aux Enfants d&#x27;Israel au desert) qu&#x27;ils ont introduits avec eux en Terre d&#x27;Israel, qu&#x27;en [est-il] ? Et [la question] demeure en teiku (irresolue). Rachi a explique : c&#x27;est [selon le principe] &#x27;etudie et recois recompense&#x27; (derosh ve-kabbel sachar), [a savoir] que nous devons etablir la verite [d&#x27;une question] bien qu&#x27;elle appartienne deja au passe. Mais cela ne m&#x27;est pas clair (lo nehira li), car ce n&#x27;est precisement que pour comprendre le sens des versets (le-missbar kera&#x27;ei) que nous scrutons [une question] bien qu&#x27;elle appartienne au passe ; mais [quant] a poser (li-kboa) une question dans le Talmud (chas) sur une chose sans utilite [pratique], nous ne [l&#x27;]avons pas trouve. Et ainsi disons-nous au premier chapitre de Yoma (feuillet 5b) : &#x27;Comment les a-t-il vetus [Aaron et ses fils], etc. ?&#x27; -- &#x27;Comment les a-t-il vetus ? Ce qui fut, fut [c&#x27;est passe, quelle utilite ?]&#x27; Plutot : &#x27;comment les vetira-t-on dans le temps a venir (le-atid lavo)&#x27; -- dans le temps a venir, lorsque viendront Aaron, ses fils et Moche avec eux [a la resurrection]. Plutot : &#x27;comment les vetira-t-on&#x27; [signifie] pour comprendre le sens des versets : &#x27;dans [l&#x27;ordre du] commandement il est ecrit [ainsi], etc.&#x27; [ -- preuve qu&#x27;on ne pose une question sur le passe que pour comprendre les versets]. Et il me semble qu&#x27;il decoule une consequence pratique (nafka mina) de cette question [de Rabbi Yirmiya] pour un homme qui s&#x27;est interdit lui-meme l&#x27;une des especes [d&#x27;aliments] a partir d&#x27;un moment determine et au-dela, et [qui], lorsque le moment est arrive, possedait de cette espece [dont] il mangeait continuellement jusqu&#x27;a ce que le moment arrive -- [la question etant] s&#x27;il est permis de manger ce qui est reste en sa possession. Ou encore, par exemple [le cas] ou un tribunal (beth din) a voulu interdire une chose -- comme [lorsqu&#x27;]ils ont interdit les fromages des idolatres (oved kokhavim), les [aliments] bouillis [par eux] et [choses] semblables -- [la question etant] si est interdit ce qu&#x27;un [membre d&#x27;]Israel possede de cette espece.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le Maitre a dit : abattre avec un <b>mecanisme a roue</b> (mokhni) -&gt; valable. Mais une autre braita dit <b>invalide</b> ! Reponse : la valable parle d'une <b>roue de potier</b> (actionnee par l'homme -&gt; c'est sa force) ; l'invalide d'une <b>roue a eau</b> (mue par l'eau, non par l'homme).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאִיבָּעֵית אֵימָא: הָא וְהָא בְּסַרְנָא דְּמַיָּא, וְלָא קַשְׁיָא: הָא בְּכֹחַ רִאשׁוֹן, הָא בְּכֹחַ שֵׁנִי.</div>
+            <div class="fr"><p>Et si tu veux, dis : celle-ci et celle-la [parlent] d&#x27;une roue [actionnee par] l&#x27;eau, et ce n&#x27;est pas difficile : ceci [le cas] d&#x27;une &#x27;premiere force&#x27; (koah richon), cela [le cas] d&#x27;une &#x27;seconde force&#x27; (koah cheni).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דָּמְיָא</b> שְׁחִיטָתוֹ פְּסוּלָה שֶׁהַמַּיִם מְגַלְגְּלִין אוֹתוֹ וְאֵין שְׁחִיטָה זוֹ מִכֹּחַ אָדָם וּתְנַן לְקַמָּן (חֻולִּין דַּף לא.) נָפְלָה וּשְׁחָטָהּ שְׁחִיטָתוֹ פְּסוּלָה דִּכְתִיב וְזָבַחְתָּ וְאָכַלְתָּ מַה שֶּׁאַתָּה זוֹבֵחַ אַתָּה אוֹכֵל כו&#x27;:</div>
+          <div class="glose-fr">[Roue actionnee par] l&#x27;eau — son abattage [est] invalide, car l&#x27;eau la fait tourner et cet abattage n&#x27;[est] pas [du] a la force d&#x27;un homme ; et nous avons appris plus loin (Houlin 31a) &#x27;[le couteau] est tombe et a abattu — son abattage [est] invalide&#x27;, car il est ecrit &#x27;tu egorgeras et tu mangeras&#x27; : ce que tu egorges [par ta force], tu [le] manges, etc.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּכֹחַ רִאשׁוֹן</b> מִיָּד כְּשֶׁנָּטַל הַדַּף הַמְעַכֵּב אֶת הַמַּיִם וְהִתְחִיל לְגַלְגֵּל וּבִתְחִלַּת גִּלְגּוּלוֹ שָׁחַט מִכֹּחַ אָדָם שֶׁנָּטַל הַדַּף:</div>
+          <div class="glose-fr">Par une premiere force — des qu&#x27;il a ote la planche (daf) qui retenait l&#x27;eau et [que la roue] a commence a tourner, et [qu&#x27;]au debut de son tournoiement elle a abattu — [c&#x27;est] par la force de l&#x27;homme [qui] a ote la planche.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּכֹחַ שֵׁנִי</b> לְאַחַר שֶׁגִּלְגְּלוּ הַמַּיִם אֶת הַגַּלְגַּל פַּעַם רִאשׁוֹנָה וּשְׁנִיָּה:</div>
+          <div class="glose-fr">Par une seconde force — apres que l&#x27;eau a fait tourner la roue une premiere et une deuxieme fois.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Autre reponse : <b>les deux</b> parlent d'une roue a eau, et la distinction est : <b>premiere force</b> (koah richon — la lame abat des qu'on libere l'eau, au 1er tour -&gt; valable) vs <b>seconde force</b> (koah cheni — au 2e tour, l'eau agit seule -&gt; invalide).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְכִי הָא דְּאָמַר רַב פָּפָּא: הַאי מַאן דְּכַפְתֵיהּ לְחַבְרֵיהּ וְאַשְׁקֵיל עֲלֵיהּ בִּידְקָא דְּמַיָּא וּמִית – חַייָּב. מַאי טַעְמָא? גִּירֵי דִּידֵיהּ הוּא דְּאַהֲנִי בֵּיהּ. וְהָנֵי מִילֵּי – בְּכֹחַ רִאשׁוֹן, אֲבָל בְּכֹחַ שֵׁנִי – גְּרָמָא בְּעָלְמָא הוּא.</div>
+            <div class="fr"><p>Et [c&#x27;est] comme ce que dit Rav Papa : celui qui a ligote son prochain et a fait deferler sur lui un flot d&#x27;eau (bidka de-maya), et [que celui-ci] est mort — [il est] coupable (hayav). Quelle [en est] la raison ?</p><p>Ce sont ses [propres] traits (guirei) qui ont ete efficaces en lui [= qui l&#x27;ont tue]. Et cela [vaut] par une premiere force ; mais par une seconde force — [ce n&#x27;est] qu&#x27;une cause indirecte (garma be-alma).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(5)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּכַפְתֵיהּ</b> קָשְׁרוּ:</div>
+          <div class="glose-fr">Qu&#x27;il a ligote (de-kaftei) — il l&#x27;a attache.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּאַשְׁקִיל עָלֶיהָ בִּידְקָא דְּמַיָּא</b> שֶׁהִפְנָה הַמַּיִם לַעֲבֹור עָלָיו וְנִיעֲרוּהוּ:</div>
+          <div class="glose-fr">Qu&#x27;il a fait deferler sur lui un flot d&#x27;eau — qu&#x27;il a oriente l&#x27;eau pour passer sur lui, et [qu&#x27;]elle l&#x27;a emporte.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>חַיָּיב</b> דַּהֲרָגוֹ מַמָּשׁ בְּאוֹתָן הַמַּיִם וְהֵן הֵן כְּלֵי זַיִּינוּ וְלָא הָוֵי גְּרָמָא:</div>
+          <div class="glose-fr">Coupable — car il l&#x27;a tue effectivement avec cette eau, et elle [est] son arme, et ce n&#x27;est pas [une simple] cause indirecte (garma).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּכֹחַ רִאשׁוֹן</b> שֶׁקְּשָׁרוֹ סָמוּךְ לִשְׂפַת הַמַּיִם וְכֵיוָן שֶׁנָּקַב נֶקֶב בִּשְׂפַת הַמַּיִם מִיָּד בָּאוּ הַמַּיִם לְפִיו:</div>
+          <div class="glose-fr">Par une premiere force — qu&#x27;il l&#x27;a attache pres du bord de l&#x27;eau, et que, des qu&#x27;il a perce un trou au bord de l&#x27;eau, aussitot l&#x27;eau est venue a sa bouche.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲבָל בְּכֹחַ שֵׁנִי</b> שֶׁקְּשָׁרוֹ בְּרִחוּק וְהַמַּיִם הָלְכוּ שָׁם אע&quot;פ שֶׁהוּא נִקַּב הַנֶּקֶב וַהֲפָכוֹ לְשָׁם פָּטוּר דִּגְרָמָא בְּעָלְמָא הוּא:</div>
+          <div class="glose-fr">Mais par une seconde force — qu&#x27;il l&#x27;a attache au loin, et [que] l&#x27;eau [y] est allee ; bien que ce soit lui [qui] ait perce le trou et [l&#x27;]ait orientee la, [il est] exempt, car [ce n&#x27;est] qu&#x27;une cause indirecte (garma be-alma).</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲבָל בְּכֹחַ שֵׁנִי גְּרָמָא בְּעָלְמָא הוּא</b> וְאַכְּפִיתָה לָא מִיחַייַּב דְּלָא מִיבַּעְיָא הָיָה עוֹמֵד שָׁם וּכְפִתּוֹ בִּמְקוֹמוֹ דְּפָטוּר אֲפִילּוּ הָיָה סוֹף מַיִם לָבֹא עָלָיו דְּלָא רַבֵּיהּ רַחֲמָנָא מְצַמְצֵם אֶלָּא בְּמָקוֹם שֶׁהִתְחִיל הַהֶיזֵּק כְּבָר כְּגוֹן כָּבַשׁ עָלָיו לְתוֹךְ הָאֵשׁ אוֹ לְתוֹךְ הַמַּיִם כְּדִתְנַן בְּהַנִּשְׂרָפִין (סַנְהֶדְרִין עז. וְשָׁם ד&quot;ה סוֹף) אֲבָל סוֹף חֹום לָבֹא וְסוֹף מַיִם לָבֹא פָּטוּר אֲפִילּוּ כְּפָתוֹ בְּמָקוֹם אַחֵר וֶהֱבִיאוֹ שָׁם פָּטוּר אע&quot;ג דְּאִם הָיָה סוֹף מַיִם לָבֹא עָלָיו הָיָה חַיָּיב לְמַאן דְּאָמַר אִשּׁוֹ מִשּׁוּם חִצָּיו דְּמַאי שְׁנָא מֵאִשּׁוֹ בְּרוּחַ מְצוּיָה דְּאֵין חִילּוּק בֵּין מְקָרֵב הָאֵשׁ אֵצֶל הַדָּבָר לִמְקָרֵב הַדָּבָר אֵצֶל הָאֵשׁ דְּהָא כּוֹפֵף קוֹמָתוֹ שֶׁל חֲבֵירוֹ לִפְנֵי הַדְּלֵיקָה שֶׁיְּכוֹלָה וְלָבֹא בְּרוּחַ מְצוּיָה חַייָּב כִּדְאָמַר בְּרֵישׁ הַכּוֹנֵס (ב&quot;ק נו. וְשָׁם ד&quot;ה אִילֵּימָא) מ&quot;מ הָכָא פָּטוּר שֶׁבְּשָׁעָה שֶׁהֱבִיאוֹ שָׁם לֹא הָיָה סוֹף מַיִם לָבֹא אִי לָאו דְּאַשְׁקִיל אַחַר כָּךְ וְאַמָּה דְּאַשְׁקִיל לָא מִיחַייַּב בְּכֹחַ שֵׁנִי וְדוֹמֶה לְזָרַק חֵץ וּתְרִיס בְּיָדוֹ וְקָדַם בְּעַצְמוֹ וְסִילֵּק אֶת הַתְּרִיס דְּפָטוּר:</div>
+          <div class="glose-fr">&#x27;Mais par une seconde force, [ce n&#x27;est] qu&#x27;une cause indirecte&#x27; — et [pour] le fait de [l&#x27;]avoir ligote, [il n&#x27;est] pas coupable [de meurtre] : car il n&#x27;est pas [seulement] question [du cas ou] il se tenait deja la et [qu&#x27;]il l&#x27;a ligote a sa place, [cas ou il est] exempt meme [s&#x27;]il y avait [un] flot d&#x27;eau a venir sur lui — car le Misericordieux n&#x27;a inclus &#x27;celui qui restreint&#x27; (metzamtzem) que la ou le dommage avait deja commence, par exemple [s&#x27;]il l&#x27;a pousse dans le feu ou dans l&#x27;eau, comme nous avons appris dans &#x27;Ha-nisrafin&#x27; (Sanhedrin 77a) ; mais [si] la chaleur [etait] a venir, ou l&#x27;eau [etait] a venir, [il est] exempt — meme [s&#x27;]il l&#x27;a ligote en un autre endroit et l&#x27;a amene la, [il est] exempt, bien que, s&#x27;il y avait [un] flot d&#x27;eau a venir sur lui, il serait coupable selon l&#x27;avis [que] &#x27;le feu [est puni] au titre de ses fleches&#x27; (echo michoum hitzav). En quoi cela differe-t-il du feu [allume] par un vent ordinaire (rouah metzouya), [pour lequel] il n&#x27;y a pas de distinction entre rapprocher le feu de la chose et rapprocher la chose du feu — car &#x27;celui qui courbe la stature de son prochain devant l&#x27;incendie [qui peut l&#x27;]atteindre par un vent ordinaire&#x27; est coupable (Baba Kama 56a) ? — neanmoins, ici [il est] exempt, car au moment ou il l&#x27;a amene la, l&#x27;eau n&#x27;etait pas [encore] a venir, si ce n&#x27;est qu&#x27;il a [ensuite] fait deferler [l&#x27;eau] ; et pour [le fait] qu&#x27;il a fait deferler, [il n&#x27;est] pas coupable par une seconde force ; et [cela] ressemble a &#x27;celui qui a lance une fleche, et [tenait] un bouclier (teris) en main, et [que la victime] s&#x27;est hatee elle-meme et a retire le bouclier&#x27; — [cas ou il est] exempt.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Comme Rav Papa : qui <b>ligote autrui et detourne sur lui un flot d'eau</b> qui le tue -&gt; <b>coupable</b> de meurtre — 'ce sont ses propres <b>fleches</b> (giri) qui ont agi'. Mais cela ne vaut que par <b>premiere force</b> (l'eau l'atteint directement) ; par <b>seconde force</b> (l'eau coule ensuite d'elle-meme) -&gt; simple <b>cause indirecte</b> (garma) -&gt; exempt.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">יָתֵיב רַב אֲחוֹרֵיהּ דְּרַבִּי חִייָּא, וְרַבִּי חִיָּיא קַמֵּיהּ דְּרַבִּי, וְיָתֵיב רַבִּי וְקָאָמַר: מִנַּיִן לִשְׁחִיטָה שֶׁהִיא בְּתָלוּשׁ? שֶׁנֶּאֱמַר: ״וַיִּקַּח אֶת הַמַּאֲכֶלֶת לִשְׁחֹט״. אֲמַר לֵיהּ רַב לְרַבִּי חַייָּא: מַאי קָאָמַר? אֲמַר לֵיהּ: וָי״ו דִּכְתִיב אַאֻופְתָּא קָאָמַר. וְהָא קְרָא קָאָמַר! קְרָא זְרִיזוּתֵיהּ דְּאַבְרָהָם קָא מַשְׁמַע לַן.</div>
+            <div class="fr"><p>Rav etait assis derriere Rabbi Hiyya, et Rabbi Hiyya devant Rabbi ; et Rabbi etait assis et disait : d&#x27;ou [savons-nous] que l&#x27;abattage [se fait] avec [une lame] detachee (be-talouch) ? Car il est dit : &#x27;et il prit le couteau (ma&#x27;akhelet) pour egorger&#x27; (Gen 22:10).</p><p>Rav dit a Rabbi Hiyya : que dit-il ? Il lui dit : il dit un [raisonnement comme un] vav ecrit sur un eclat de bois (a-oufta).</p><p>Mais il a [pourtant] cite un verset ! Le verset nous enseigne la diligence (zerizut) d&#x27;Abraham.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַאי קָאָמַר</b> הֵיכִי יָלֵיף טַעְמָא מֵהָכָא:</div>
+          <div class="glose-fr">Que dit-il — comment deduit-il un raisonnement (taam) de ceci ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲמַר לֵיהּ וָי&quot;ו דִּכְתִיב אַאֻופְתָּא קָאָמַר</b> כְּלוֹמַר טַעַם שֶׁאֵינוֹ נָכוֹן קָאָמַר כְּמוֹ שֶׁכּוֹתֵב וָי&quot;ו עַל הַבְּקַעַת וְכֻולָּהּ מְנֻותַּחַת לִפְרָקִים מִפְּנֵי שִׁינֵּי הַבְּקַעַת שֶׁהֵן עֲשׂוּיִין חֲרִיצִין חֲרִיצִין וְאֵינָהּ חֲלָקָה. לָשׁוֹן אַחֵר אוֹתָן חֲרִיצִין קָרֵי וָי&quot;ו. רַבִּי חַיָּיא לְטַעְמֵיהּ דְּמַכְשִׁיר לְעֵיל שְׁחִיטָה בִּמְחֻובָּר:</div>
+          <div class="glose-fr">Il lui dit : il dit un vav ecrit sur un eclat de bois (oufta) — c&#x27;est-a-dire : il dit un raisonnement qui n&#x27;[est] pas correct, comme [quand] on ecrit un vav sur une buche, et [que] toute [la lettre] est decoupee par segments a cause des dents de la buche, qui sont faites [de] sillons, [la buche] n&#x27;etant pas lisse. Autre explication : ces sillons [eux-memes] sont appeles &#x27;vav&#x27;. Rabbi Hiyya [suit] son [propre] avis, [lui] qui a valide plus haut l&#x27;abattage avec [une lame] attachee.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">וְקָפְרִיךְ גְּמָרָא וְהָא קְרָא קָאָמַר:</div>
+          <div class="glose-fr">Et la Guemara objecte : mais il a [pourtant] cite un verset !</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>קְרָא זְרִיזוּתֵיהּ דְּאַבְרָהָם קמ&quot;ל</b> שֶׁחָשׁ וְנִזְהָר שֶׁמָּא לֹא יִמְצָא צוּר אֲפִילּוּ מְחֻובָּר וְהֵבִיא עִמּוֹ מַאֲכֶלֶת: ל&quot;א רַב לֹא שָׁמַע דְּבָרָיו שֶׁל רַבִּי אֶלָּא מִקְרָא שָׁמַע יֹוצֵא מִפִּיו וְלֹא יָדַע עַל מַה וַאֲמַר לֵיהּ רַב לְרַבִּי חִיָּיא מַאי קָאָמַר רַבִּי אֲמַר לֵיהּ טַעַם הֵבִיא לִשְׁחִיטָה שֶׁנִּפְסְלָה בִּמְחֻובָּר וּמִן הַמִּקְרָא אֲבָל אֵינוֹ עִיקָּר אֲמַר לֵיהּ וְהָא קְרָא קָאָמַר כו&#x27;:</div>
+          <div class="glose-fr">Le verset nous enseigne la diligence d&#x27;Abraham — qui s&#x27;inquieta et prit garde [au cas] ou il ne trouverait pas [d&#x27;eclat de] silex, fut-il attache, et apporta avec lui un couteau. Autre version : Rav n&#x27;a [pas] entendu les paroles de Rabbi, mais a [seulement] entendu un verset sortir de sa bouche, sans savoir a quel [propos], et Rav dit a Rabbi Hiyya : que dit Rabbi ? Il lui dit : il a apporte un raisonnement pour [montrer que] l&#x27;abattage est invalide [avec une lame] attachee, et [tire] du verset ; mais ce n&#x27;[est] pas l&#x27;essentiel. Il lui dit : mais il a [pourtant] cite un verset, etc.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִנַּיִן לִשְׁחִיטָה שֶׁהִיא בְּתָלוּשׁ שֶׁנֶּאֱמַר וַיִּקַּח אֶת הַמַּאֲכֶלֶת</b> וְאִם תֹּאמַר וְהָא הַאי קְרָא בְּקָדָשִׁים כְּתִיב דִּבְפֶרֶק הַתּוֹדָה (מְנָחוֹת דַּף פב: וְשָׁם ד&quot;ה וַיִּקַּח) וּבְסוֹף פ&#x27; דַּם חַטָּאת (זְבָחִים דַּף צז: וְשָׁם ד&quot;ה וְהָתָם) נָפְקָא לָן מֵהָכָא דְּקָדָשִׁים טְעוּנִין כְּלִי וְאוֹמֵר ר&quot;ת דִּלְעִנְיַן תָּלוּשׁ גָּמְרִינַן נָמֵי אַחֻולִּין מִדִּכְתִיב לִשְׁחֹוט אֶת בְּנוֹ וְלָא כְּתִיב לִשְׁחֹוט אֶת הָעוֹלָה אֲבָל כְּלִי לֹא שַׁיָּיךְ לְמֵילַף בְּחֻולִּין אֶלָּא בְּקָדָשִׁים כִּשְׁאָר עֲבוֹדוֹת דְּבָעוּ כְּלִי שָׁרֵת וּמִדִּכְתִיב וַיִּקַּח וְלָא כְּתִיב וְיָכִין דָּרְשִׁינַן תָּלוּשׁ בְּחֻולִּין וּמִדִּכְתִיב מַאֲכֶלֶת וְלָא כְּתִיב הַמְחַתֵּךְ דָּרְשִׁינַן כְּלִי בְּקָדָשִׁים ואע&quot;ג דְּהָכָא דָּחֵי רַבִּי חַיָּיא דִּזְרִיזוּתֵיהּ דְּאַבְרָהָם קמ&quot;ל הָתָם לֹא שַׁיָּיךְ לְמֵימַר הָכִי:</div>
+          <div class="glose-fr">&#x27;D&#x27;ou [savons-nous] que l&#x27;abattage [se fait] avec [une lame] detachee ? Car il est dit &#x27;et il prit le couteau&#x27;&#x27; — et si tu objectes : mais ce verset est ecrit a propos des [animaux] consacres (kodachim) ! car au chapitre &#x27;Ha-toda&#x27; (Menahot 82b) et a la fin de &#x27;Dam hatat&#x27; (Zevahim 97b) nous deduisons de la que les [animaux] consacres requierent un ustensile [de service] ! Rabbenou Tam dit : quant au [caractere] detache, nous [l&#x27;]apprenons aussi pour les [animaux] profanes (houlin), du fait qu&#x27;il est ecrit &#x27;pour egorger son fils&#x27; et non &#x27;pour egorger l&#x27;holocauste&#x27; ; mais [l&#x27;exigence d&#x27;]un ustensile, on ne peut [l&#x27;]apprendre [que] pour les consacres, non pour les profanes, a l&#x27;instar des autres services [du Temple], qui requierent un ustensile de service. Et du fait qu&#x27;il est ecrit &#x27;et il prit&#x27; et non &#x27;et il prepara&#x27;, nous interpretons &#x27;[lame] detachee&#x27; pour les profanes ; et du fait qu&#x27;il est ecrit &#x27;couteau&#x27; et non &#x27;ce qui tranche&#x27;, nous interpretons &#x27;ustensile&#x27; pour les consacres. Et bien qu&#x27;ici Rabbi Hiyya ecarte [cela en disant] que [le verset] nous enseigne la diligence d&#x27;Abraham, la-bas [pour les consacres] on ne peut dire ainsi.</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">מִנַּיִן לִשְׁחִיטָה שֶׁהִיא בְּתָלוּשׁ? שֶׁנֶּאֱמַר: &quot;וַיִּקַּח אֶת הַמַּאֲכֶלֶת לִשְׁחֹט&quot; (בְּרֵאשִׁית כב, י) . הַכַּוָּנָה הוּא דְּיָלֵיף זֶה מִיִּתּוּרָא דִּקְרָא דְּאִיכָּא יִתּוּר בְּפָסוּק זֶה דַּהֲוָה לֵיהּ לְמֵימַר &#x27;וַיִּשְׁלַח אַבְרָהָם אֶת יָדוֹ לִשְׁחֹט אֶת בְּנוֹ&#x27; וּמִסְּתָמָא מַשְׁמַע שֶׁיִּשָּׁחֵט בְּמַאֲכֹלֶת, וּלְהָכִי יָלֵיף רָבָא יִתּוּר הַכָּתוּב לְאַשְׁמְעִינַן שֶׁהַשְּׁחִיטָה בְּתָלוּשׁ כִּי אֵין מַאֲכֶלֶת בִּמְחֻובָּר אֶלָּא רַק בְּתָלוּשׁ וּלְהָכִי פָּרִיךְ &#x27; וְהָא קְרָא קָאָמַר ?&#x27; כְּלוֹמַר זוֹ רְאָיָה גְּמוּרָה מִיִּתּוּרָא דִּקְרָא וְכָל יַלְּפוֹת רַבּוֹתֵינוּ זַ&quot;ל בְּעָלְמָא הוּא בִּכְהַאי גַּוְנָא וְהֵשִׁיב &#x27; קְרָא זְרִיזוּתֵיהּ דְּאַבְרָהָם קָא מַשְׁמַע לַן &#x27; כְּלוֹמַר אֵין יִתּוּר זֶה בָּא לְלַמְּדֵינוּ דִּין אֶלָּא בָּא לְלַמֵּד זְרִיזוּת אַבְרָהָם אָבִינוּ ע&quot;ה דְּהִזְמִין הַמַּאֲכֶלֶת בְּחֵיקוֹ וְכַאֲשֶׁר עָקְדוּ תֵּכֶף הוֹשִׁיט יָדוֹ וְלָקַח הַמַּאֲכֶלֶת לִשְׁחֹוט שֶׁלֹּא הָיְתָה הַמַּאֲכֶלֶת מֻונַּחַת בְּמָקוֹם אַחֵר רָחוֹק מִן הַמִּזְבֵּחַ ג&#x27; אוֹ ד&#x27; אַמּוֹת כְּדֵי שֶׁיִּצְטָרֵךְ לָקוּם אַחַר עֲקֵידָה לַהֲבִיאָהּ לִשְׁחֹוט בָּהּ, אִי נָמֵי קָא מַשְׁמַע לַן שֶׁלֹּא נִתְרַשְּׁלָה יָדוֹ אַחַר עֲקֵידָה בִּלְקִיחַת הַמַּאֲכֶלֶת אֶלָּא תֵּכֶף אַחַר עֲקֵידָה נִזְדָּרֵז לִיקַּח הַמַּאֲכֶלֶת בִּמְהִירוּת כְּדֵי לִשְׁחֹוט. וּמַה שֶׁאָמַר רַבִּי חַיָּיא רַבִּי חַייָּא לְרַב &#x27; וַי &quot; ו דִּכְתִיב אַאֻופְתָּא קָאָמַר לָךְ &#x27; הַכַּוָּנָה דְּהַבְּקַעַת עֲשׂוּיָה חֲרִיצִין כְּעֵין ווי&quot;ן אַךְ אֵלּוּ הווי&quot;ן שָׁוִים לֹא יֵשׁ בָּהֶם אֶחָד רָחָב יוֹתֵר מִשְּׁאָר אֲשֶׁר אֶצְלוֹ שָׁם כֵּן כָּאן אֵין בִּקְרָא תֵּיבָה יְתֵירָה כְּדֵי דְּנֵילַף מִינָּהּ דִּין לוֹמַר דְּאֵין שְׁחִיטָה בִּמְחֻובָּר וְדַע דְּמַה שֶׁהֻוצְרַךְ תַּלְמוּדָא לְפָרֵשׁ דַּהֲוָה יָתֵיב אֲחוֹרֵיהּ דְּרַבִּי חַייָּא, וְרַבִּי חִיָּיא קַמֵּיהּ דְּרַבִּי לְהוֹדִיעֵנוּ שֶׁהָיְתָה יְשִׁיבָתוֹ שֶׁל רַב וְרַבִּי חַייָּא סְמוּכָה נִמְּקוּם רַבִּי דִּוְהָאֵי יִשְׁמַע רַבִּי מַה שֶׁהֵם מְדַבְּרִים זֶה בָּזֶה וְעִם כָּל זֶה לֹא חָשׁ רַבִּי חַיָּיא בְּאוֹמְרוֹ &#x27;וָי&quot;ו דִּכְתִיב אַאֻופְתָּא קָאָמַר&#x27; פֶּן יַקְפִּיד רַבִּי בִּדְבָרָיו אֵלּוּ.</div>
+          
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Scene d'etude : Rav derriere R. Hiyya, R. Hiyya devant Rabbi. Rabbi : d'ou sait-on que l'abattage se fait avec une <b>lame detachee</b> ? De 'il <b>prit le couteau</b> (ma'akhelet) pour egorger' (Gen 22:10). Rav (perplexe) : que dit-il ? R. Hiyya : un raisonnement <b>bancal</b> ('comme un vav trace sur un eclat de bois' rugueux). Mais c'est un verset ! Reponse : le verset enseigne [seulement] la <b>diligence d'Abraham</b> (il avait un couteau pret), non une loi d'abattage.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רָבָא: פְּשִׁיטָא לִי, תָּלוּשׁ וּלְבַסּוֹף חִבְּרוֹ לְעִנְיַן עֲבוֹדָה זָרָה הָוֵי תָּלוּשׁ, דְּאָמַר מַר: הַמִּשְׁתַּחֲוֶה לְבַיִת שֶׁלּוֹ אֲסָרוֹ, וְאִי סָלְקָא דַעְתָּךְ הָוֵי מְחֻובָּר – ״אֱלֹהֵיהֶם עַל הֶהָרִים״ וְלֹא הֶהָרִים אֱלֹהֵיהֶם.</div>
+            <div class="fr"><p>Rava dit : il m&#x27;est evident que [pour] une [chose] detachee puis attachee a la fin, quant a l&#x27;idolatrie (avoda zara), elle a [le statut d&#x27;une chose] detachee ; car le Maitre a dit : celui qui se prosterne devant sa [propre] maison l&#x27;a interdite [comme idole] ; et si tu pensais qu&#x27;elle a [le statut d&#x27;une chose] attachee — [il est ecrit] &#x27;leurs dieux sur les montagnes&#x27; [Deut 12:2], et non &#x27;les montagnes [sont] leurs dieux&#x27;.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְעִנְיַן עֲבוֹדַת כּוֹכָבִים</b> דְּקַייְמָא לָן (ע&quot;ז דַּף מה:) שֶׁעוֹבֵד אֶת הֶהָרִים אֵינָן נֶאֱסָרִים הֶהָרִים בְּכָךְ דִּכְתִיב אֶת אֱלֹהֵיהֶם עַל הֶהָרִים וְלֹא הֶהָרִים אֱלֹהֵיהֶם ה&quot;מ הָר דִּמְחֻובָּר מֵעִיקָּרוֹ אֲבָל תָּלוּשׁ וּלְבַסּוֹף חִבְּרוֹ וּמִשֶּׁחָבְרוּ עַבְדּוֹ נֶאֱסַר מִשּׁוּם לֹא יִדְבַּק בְּיָדְךָ:</div>
+          <div class="glose-fr">Quant a l&#x27;idolatrie — car nous tenons (Avoda Zara 45b) que [celui] qui adore les montagnes, les montagnes n&#x27;en sont pas interdites, car il est ecrit &#x27;leurs dieux sur les montagnes&#x27; et non &#x27;les montagnes [sont] leurs dieux&#x27; ; cela [vaut pour] une montagne, [qui est] attachee des l&#x27;origine ; mais [une chose] detachee puis attachee a la fin, et [qu&#x27;]apres l&#x27;avoir attachee on a adoree, [elle] est interdite, au titre de &#x27;que rien [de voue] ne s&#x27;attache a ta main&#x27; [Deut 13:18].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַמִּשְׁתַּחֲוֶה לַבַּיִת שֶׁלּוֹ</b> אֲבָל שֶׁל חֲבֵרוֹ אֵינוֹ יָכוֹל לֶאֱסֹור:</div>
+          <div class="glose-fr">Celui qui se prosterne devant sa [propre] maison — mais [la maison] de son prochain, il ne peut [l&#x27;]interdire [n&#x27;en etant pas proprietaire].</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְעִנְיַן עֲבוֹדַת כּוֹכָבִים הָוֵי תָּלוּשׁ דְּאָמַר רַב הַמִּשְׁתַּחֲוֶה לְבַיִת כּוּ&#x27;</b> לָא בָּעֵי לַאֲתוּיֵי הָכָא פְּלוּגְתָּא דְּרַבִּי יוֹסֵי וְרַבָּנָן דִּפְלִיגִי בְּמִשְׁתַּחֲוֶה לָאִילָן בְּפֶרֶק כָּל הַצְּלָמִים (ע&quot;ז דַּף מח.) דַּאֲפִילּוּ רַבָּנָן דְּשָׁרוּ הָתָם הַיְינוּ דַּוְקָא אִילָן שֶׁנִּשְׁרַשׁ וְיוֹצֵא מִן הַקַּרְקַע וַחֲשִׁיב כִּמְחֻובָּר מֵעִיקָּרוֹ וְלָא דָּמֵי לְבַיִת וּמַתְנִיתִין דְּכָל הַצְּלָמִים (שָׁם דַּף מז.) דְּמִי שֶׁהָיָה כָּותְלוֹ סָמוּךְ לַעֲבוֹדַת כּוֹכָבִים וְנָפַל כו&#x27; אֲבָנָיו וְעֵצָיו וַעֲפָרוֹ מְטַמְּאִין כְּשֶׁרֶץ לָא מָצֵי נָמֵי לַאֲתוּיֵי דְּהָתָם כְּשֶׁבְּנָאוֹ מִתְּחִלָּה לְשֵׁם עֲבוֹדַת כּוֹכָבִים אוֹ הִשְׁתַּחֲוָה מִקֹּודֶם לְכָל אֶבֶן וָאֶבֶן:</div>
+          <div class="glose-fr">&#x27;Quant a l&#x27;idolatrie, elle a [le statut d&#x27;une chose] detachee, car Rav a dit : celui qui se prosterne devant une maison, etc.&#x27; — [la Guemara] ne veut pas apporter ici la divergence de Rabbi Yossi et des Sages, qui divergent a propos de &#x27;celui qui se prosterne devant un arbre&#x27; au chapitre &#x27;Kol ha-tzelamim&#x27; (Avoda Zara 48a), car meme les Sages, qui [y] permettent, [c&#x27;est] precisement [pour] un arbre qui s&#x27;est enracine et sort du sol, considere comme attache des l&#x27;origine, et qui ne ressemble pas a une maison ; et la michna de &#x27;Kol ha-tzelamim&#x27; (47a) [a propos de] celui dont le mur etait proche d&#x27;une idole et [qui] s&#x27;est ecroule, [dont] les pierres, les bois et la terre rendent impur comme un sheretz — [la Guemara] ne peut pas non plus [l&#x27;]apporter, car la-bas [c&#x27;est le cas] ou il l&#x27;a bati des le depart pour [le servir comme] idole, ou [ou] il s&#x27;est prosterne d&#x27;abord devant chaque pierre.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rava : il est <b>evident</b> qu'une chose <b>detachee puis rattachee</b>, pour l'<b>idolatrie</b>, garde le statut de <b>detachee</b>. Car 'qui se prosterne devant sa <b>maison</b> la rend interdite' (idole). Or si elle etait 'attachee', [impossible], car 'leurs dieux <b>sur</b> les montagnes' (Deut 12:2) — <b>mais non les montagnes elles-memes</b> : un objet <em>attache des l'origine</em> ne peut devenir idole. Une maison [pierres detachees puis baties] le peut -&gt; donc statut de detache.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לְעִנְיַן הֶכְשֵׁר זְרָעִים תַּנָּאֵי הִיא, דִּתְנַן: הַכּוֹפֶה קְעָרָה עַל הַכֹּותֶל בִּשְׁבִיל שֶׁתּוּדַח – הֲרֵי זֶה ב״כי יֻותַּן״, בִּשְׁבִיל שֶׁלֹּא יִלְקֶה הַכֹּותֶל – אֵינוֹ ב״כי יֻותַּן״.</div>
+            <div class="fr"><p>Quant a [rendre les] semences aptes [a l&#x27;impurete] (hechcher zera&#x27;im), c&#x27;est [l&#x27;objet d&#x27;]une divergence de Tannaim, car nous avons appris : celui qui retourne (renverse) un bol (ke&#x27;ara) sur le mur pour qu&#x27;il soit rince — le voici sous [la regle de] &#x27;ki yutan&#x27; (quand [de l&#x27;eau] est mise [sur la semence]) ; [s&#x27;il l&#x27;a fait] pour que le mur ne soit pas endommage — il n&#x27;[est] pas sous [la regle de] &#x27;ki yutan&#x27;.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְעִנְיַן הֶכְשֵׁר זְרָעִים תַּנָּאֵי הִיא</b> אִי הָוֵי מְחֻובָּר אִי הֲוָה תָּלוּשׁ דְּאִי אַחְשְׁבִינְהוּ לִגְשָׁמִים בִּירִידָתָן לְצֹורֶךְ שׁוּם דָּבָר וְאַחַר כֵּן נָפְלוּ פֵּירוֹת לְתוֹכָהּ אע&quot;פ שֶׁלֹּא יָדַע כְּשֶׁהֻוכְשְׁרוּ אוֹתָן פֵּירוֹת וְלָא נִיחָא לֵיהּ בְּהַהוּא הֶכְשֵׁר הָווּ מֻוכְשָׁרִין דִּתְנַן בִּתְחִלַּת מַסֶּכֶת מַכְשִׁירִין (מִשְׁנָה א) כָּל מַשְׁקֶה שֶׁתְּחִלָּתוֹ לְרָצוֹן אע&quot;פ שֶׁאֵין סוֹפוֹ לְרָצוֹן מַכְשִׁיר. וה&quot;מ כִּי אַחְשְׁבִינְהוּ בִּירִידָתָן לְצֹורֶךְ דָּבָר תָּלוּשׁ אֲבָל אִי אַחְשְׁבִינְהוּ לְצֹורֶךְ מְחֻובָּר לָא מַכְשְׁרִי דְּהָכִי תַּנְיָא בְּת&quot;כ אֲשֶׁר יָבֹא עָלָיו מַיִם אֵין לִי אֶלָּא מַיִם וְכוּ&#x27; יָכוֹל אֲפִילּוּ הֵן בְּבוֹרוֹת שִׁיחִין וּמְעָרוֹת יְהוּ מַכְשִׁירִין ת&quot;ל כְּלִי אֵין לִי אֶלָּא שֶׁמִּלְּאָן בִּכְלִי לִשְׁתּוֹת מִנַּיִן לְגַבֵּל בָּהֶן אֶת הַטִּיט וּלְכַבֵּס בָּהֶן אֶת הַכֵּלִים ת&quot;ל בְּכָל יִטְמָא אִי בְּכָל יִטַּמָּא יָכוֹל אֲפִילּוּ בְּבוֹרוֹת שִׁיחִין וּמְעָרוֹת ת&quot;ל כְּלִי מַה כְּלִי מְיֻוחָד שֶׁהוּא תָּלוּשׁ מִן הַקַּרְקַע אַף כָּל כּוּ&#x27; יָכוֹל אֲפִילּוּ חִישֵּׁב עֲלֵיהֶם שֶׁיָּרְדוּ בְּבוֹרוֹת וְשִׁיחִין וּמְעָרוֹת יְהוּ מַכְשִׁירִין ת&quot;ל אֲשֶׁר יִשָּׁתֶה אֵין לִי אֶלָּא שֶׁמִּלְּאָן לִשְׁתִיָּה מִנַּיִן שֶׁאִם חִישֵּׁב עֲלֵיהֶן לְהַדִּיחַ עֵצִים וַאֲבָנִים ת&quot;ל מַיִם כוּ&#x27; אַלְמָא אַחְשְׁבִינְהוּ לְצֹורֶךְ תָּלוּשׁ מַכְשִׁירִין לְצֹורֶךְ מְחֻובָּר לֹא מַכְשִׁירִין אא&quot;כ נִיחָא לֵיהּ בִּנְפִילַת הַפֵּירוֹת לְתוֹכָן דְּהַייְנוּ הֲדַר אַחְשְׁבִינְהוּ לִתְלֹושׁ. וְהָא דְּאָמְרִינַן בִּפְסָחִים (דַּף טז.) מְחֻובָּרִין מַכְשִׁירִין הַייְנוּ דְּנִיחָא לֵיהּ שֶׁיִּפְּלוּ פֵּירוֹת לְתוֹכָן אוֹ לְהוֹשִׁיט יָדָיו לְהַדִּיחָן כְּשֶׁיּוֹצִיא הַפֵּירוֹת מִן הַמַּיִם:</div>
+          <div class="glose-fr">Quant a [rendre les] semences aptes, c&#x27;est [l&#x27;objet d&#x27;]une divergence de Tannaim — [a savoir] si [le mur] a [le statut d&#x27;une chose] attachee ou detachee. Car s&#x27;il a &#x27;donne de l&#x27;importance&#x27; (achchevinhou) aux pluies, a leur descente, pour [le] besoin de quelque chose, et qu&#x27;ensuite des fruits sont tombes dedans — bien qu&#x27;il n&#x27;ait pas su [au moment] ou ces fruits ont ete rendus aptes, et [qu&#x27;]ce &#x27;rendre apte&#x27; ne lui agree pas — ils sont [neanmoins] rendus aptes, car nous avons appris au debut de Makhchirin (1:1) : &#x27;tout liquide dont le debut [est] selon [le] gre (le-ratzon), bien que sa fin ne [soit] pas selon [le] gre, rend apte&#x27;. Et cela [vaut] lorsqu&#x27;il leur a donne de l&#x27;importance, a leur descente, pour [le] besoin d&#x27;une chose detachee ; mais s&#x27;il leur a donne de l&#x27;importance pour [le] besoin d&#x27;une [chose] attachee, [elles] ne rendent pas apte — car ainsi est-il enseigne dans le Torat Kohanim : &#x27;&#x27;[de l&#x27;eau] qui sera venue sur [la semence]&#x27; — je n&#x27;ai [la] que [de l&#x27;]eau ; [on] pourrait [croire] que, meme [si elles sont] dans des fosses, des citernes et des cavernes, [elles] rendent apte ; l&#x27;enseignement dit &#x27;ustensile&#x27; — je n&#x27;ai [la] que [le cas] ou il les a remplies dans un ustensile pour [les] boire ; d&#x27;ou [savons-nous] de [les] petrir avec [l&#x27;eau] de l&#x27;argile, ou de laver avec [l&#x27;eau] les ustensiles ? l&#x27;enseignement dit &#x27;dans tout [liquide] il sera rendu impur&#x27; ; de meme que l&#x27;ustensile est singulier en ce qu&#x27;il est detache du sol, de meme tout [le reste] ; [on] pourrait [croire] que, meme [s&#x27;]il a pense a leur sujet qu&#x27;elles descendent dans des fosses, des citernes et des cavernes, [elles] rendent apte ; l&#x27;enseignement dit &#x27;qu&#x27;on boira&#x27; — je n&#x27;ai [la] que [le cas] ou il les a remplies pour [la] boisson ; d&#x27;ou [savons-nous] que, s&#x27;il a pense a leur sujet [de s&#x27;en servir] pour laver des bois et des pierres, [l&#x27;enseignement dit] &#x27;eau, etc.&#x27;&#x27; — preuve [que, s&#x27;]il leur a donne de l&#x27;importance pour [le] besoin d&#x27;une [chose] detachee, [elles] rendent apte ; [pour le] besoin d&#x27;une [chose] attachee, [elles] ne rendent pas apte, a moins qu&#x27;il ne lui agree [que] les fruits tombent dedans, ce qui revient a [leur] avoir [a nouveau] donne de l&#x27;importance comme [a une chose] detachee. Et ce que nous disons dans Pessahim (16a) &#x27;[les eaux] attachees rendent apte&#x27;, c&#x27;est [le cas] ou il lui agree que des fruits tombent dedans, ou de [pouvoir] tendre ses mains pour les rincer lorsqu&#x27;il sortira les fruits de l&#x27;eau.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בִּשְׁבִיל שֶׁתּוּדַח</b> הַקְּעָרָה הֲרֵי הֵן בְּכִי יֻותַּן אִם נָפְלוּ אַחַר כָּךְ עַל הַפֵּירוֹת אֲפִילּוּ לְאַחַר זְמַן הֻוכְשְׁרוּ דְּאַחְשְׁבִינְהוּ לְהָנָךְ מַשְׁקִין לַהֲדָחַת קְעָרָה וְנִיחָא לֵיהּ בְּהַךְ נְפִילָה אֲפִילּוּ לָא אַחְשְׁבִינְהוּ לְצֹורֶךְ הָנָךְ פֵּירוֹת כִּי יֻותַּן קָרֵינָא בֵיהּ דְּנִיחָא לֵיהּ בְּהַךְ נְפִילָה:</div>
+          <div class="glose-fr">Pour qu&#x27;il soit rince — le bol : les voici sous [la regle de] &#x27;ki yutan&#x27; ; [si l&#x27;eau] est tombee ensuite sur les fruits, meme apres un [certain] temps, ils ont ete rendus aptes ; car il a donne de l&#x27;importance a ces liquides pour le rincage du bol, et cette chute lui agree ; meme [s&#x27;]il ne leur a pas donne d&#x27;importance pour [le] besoin de ces fruits, nous lisons a son sujet &#x27;ki yutan&#x27;, car cette chute lui agree.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בִּשְׁבִיל שֶׁלֹּא יִלְקֶה הַכֹּותֶל</b> וְנָפְלוּ עַל הַקְּעָרָה וּמִמֶּנּוּ לְפֵירוֹת לֹא הֻוכְשְׁרוּ דְּלָא נִיחָא לֵיהּ בְּהָנָךְ גְּשָׁמִים וּבִנְפִילָתָן:</div>
+          <div class="glose-fr">Pour que le mur ne soit pas endommage — et [l&#x27;eau] est tombee sur le bol, et de la sur les fruits : ils n&#x27;ont pas ete rendus aptes, car ces pluies, et leur chute, ne lui agreent pas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Pour <b>rendre les semences aptes a l'impurete</b> (hechcher zera'im), c'est une <b>dispute de Tannaim</b>. Michna (Makhchirin 4:3) : qui pose un <b>bol renverse sur un mur</b> [sous la pluie] <b>pour qu'il soit rince</b> -&gt; l'eau releve de '<b>ki yutan</b>' (rend les semences susceptibles d'impurete, car l'eau lui agree) ; <b>pour que le mur ne soit pas abime</b> -&gt; <b>pas</b> 'ki yutan' (l'eau ne lui agree pas).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָא גּוּפָהּ קַשְׁיָא: אָמַרְתָּ, בִּשְׁבִיל שֶׁתּוּדַח – הֲרֵי זֶה ב״כי יֻותַּן״, הָא בִּשְׁבִיל שֶׁיּוּדַח הַכֹּותֶל – אֵין זֶה ב״כי יֻותַּן״.</div>
+            <div class="fr"><p>Cela meme fait difficulte : tu as dit &#x27;pour qu&#x27;il [le bol] soit rince — le voici sous &#x27;ki yutan&#x27;&#x27; — [donc] &#x27;pour que le mur soit rince (yudach ha-kotel)&#x27;, ce n&#x27;[est] pas sous &#x27;ki yutan&#x27; [le mur etant attache].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָא בִּשְׁבִיל שֶׁיּוּדַח הַכֹּותֶל</b> כְּגוֹן שֶׁהָיוּ נוֹפְלִין סָמוּךְ לַכֹּותֶל וְנָתַן שָׁם קְעָרָה שֶׁתְּבִיאֵם לַכֹּותֶל:</div>
+          <div class="glose-fr">[Donc] pour que le mur soit rince — par exemple [le cas] ou [les pluies] tombaient pres du mur, et [qu&#x27;]il a place la un bol pour les amener au mur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La michna se contredit (ha gufa kashya) : 'pour que le <b>bol</b> soit rince -&gt; ki yutan' implique que 'pour que le <b>mur</b> soit rince -&gt; <b>pas</b> ki yutan' (le mur = chose <b>attachee</b>).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וַהֲדַר תָּנֵי: בִּשְׁבִיל שֶׁלֹּא יִלְקֶה הַכֹּותֶל – אֵינוֹ ב״כי יֻותַּן״, הָא בִּשְׁבִיל שֶׁיּוּדַח הַכֹּותֶל – הֲרֵי זֶה ב״כי יֻותַּן״.</div>
+            <div class="fr"><p>Et [pourtant] on enseigne [ensuite] : &#x27;pour que le mur ne soit pas endommage — il n&#x27;[est] pas sous &#x27;ki yutan&#x27;&#x27; — [donc] &#x27;pour que le mur soit rince&#x27;, le voici sous &#x27;ki yutan&#x27; [le mur etant detache] !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵינוֹ בְּכִי יֻותַּן</b> ואע&quot;ג דְּאַחְשְׁבִינְהוּ לְצֹורֶךְ הַכֹּותֶל חֲשִׁיבוּת דִּמְחֻובָּר לָאו חֲשִׁיבוּת הוּא עַד דְּלִיחַשְּׁבִינְהוּ לְצֹורֶךְ דָּבָר תָּלוּשׁ כְּדַאֲמָרָן:</div>
+          <div class="glose-fr">Il n&#x27;[est] pas sous &#x27;ki yutan&#x27; — et bien qu&#x27;il leur ait donne de l&#x27;importance pour [le] besoin du mur, l&#x27;importance [accordee pour] une [chose] attachee n&#x27;[est] pas une [vraie] importance, tant qu&#x27;il ne leur a pas donne d&#x27;importance pour [le] besoin d&#x27;une chose detachee, comme nous [l&#x27;]avons dit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Mais la suite : 'pour que le mur ne soit pas <b>endommage</b> -&gt; pas ki yutan' implique que 'pour que le mur soit <b>rince</b> -&gt; <b>oui</b> ki yutan' (le mur = chose <b>detachee</b>, pierres baties) ! <b>Contradiction</b> interne.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַבִּי אֶלְעָזָר: תַּבְרָא, מִי שֶׁשָּׁנָה זוֹ לֹא שָׁנָה זוֹ. רַב פָּפָּא אָמַר: כֻּולָּהּ חַד תַּנָּא הוּא, הָא בְּכֹותֶל מְעָרָה, הָא בְּכֹותֶל בִּנְיָן.</div>
+            <div class="fr"><p>Rabbi Elazar dit : [c&#x27;est] une fracture (tavra) — celui qui a enseigne celle-ci n&#x27;a pas enseigne celle-la. Rav Papa dit : tout [cela] est [d&#x27;]un seul Tana : ceci [le cas] d&#x27;un mur de caverne (kotel me&#x27;ara), cela [le cas] d&#x27;un mur de batiment (kotel binyan).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תַּבְרָא</b> קַשְׁיָא הַךְ רֵישָׁא לְסֵיפָא וּתְרֵי תַּנָּאֵי נִינְהוּ מַר חֲשִׁיב לֵיהּ תָּלוּשׁ לְהַאי כֹּותֶל וּמַר חֲשִׁיב לֵיהּ מְחֻובָּר מַר חֲשִׁיב לֵיהּ תָּלוּשׁ הוֹאִיל וְלָאו מְחֻובָּר מֵעִיקָּרוֹ הוּא שֶׁכְּבָר הָיוּ אֲבָנָיו תְּלוּשׁוֹת וְחִבְּרָם בְּבִנְיַן וּמַר חֲשִׁיב לֵיהּ מְחֻובָּר וְהַייְנוּ תַּנָּאֵי דְּאָמַר לְעֵיל:</div>
+          <div class="glose-fr">Une fracture (tavra) — ce debut fait difficulte [par rapport] a la fin, et ce sont deux Tannaim : l&#x27;un considere ce mur comme [une chose] detachee, et l&#x27;autre le considere comme [une chose] attachee ; l&#x27;un le considere comme detache puisqu&#x27;il n&#x27;[est] pas attache des l&#x27;origine, ses pierres ayant deja ete detachees et [qu&#x27;]il les a reunies dans la construction ; et l&#x27;autre le considere comme attache — et c&#x27;est [la] la &#x27;divergence de Tannaim&#x27; dont on a parle plus haut.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>חַד תַּנָּא הוּא</b> ודכ&quot;ע תָּלוּשׁ וּלְבַסּוֹף חִבְּרוֹ הָוֵי תָּלוּשׁ:</div>
+          <div class="glose-fr">[C&#x27;est] un seul Tana — et de l&#x27;avis de tous, [une chose] detachee puis attachee a la fin a [le statut d&#x27;une chose] detachee.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּכֹותֶל מְעָרָה</b> שֶׁהוּא עָשׂוּי מֵאֵלָיו שֶׁחוֹקֵק הַקַּרְקַע וְהַכֹּותֶל עוֹמֵד מֵאֵלָיו וּמְחֻובָּר מֵעִיקָּרוֹ הוּא אֲבָל בְּכֹותֶל בִּנְיָן שֶׁהוּא תָּלוּשׁ בִּשְׁבִיל שֶׁלֹּא יִלְקֶה הַכֹּותֶל דְּלָא נִיחָא לֵיהּ בְּהוּ אֵינוֹ בְּכִי יֻותַּן אֲבָל בִּשְׁבִיל שֶׁיֻּודַּח דְּאַחְשְׁבִינְהוּ לְצֹורֶךְ כֹּותֶל מַכְשְׁרִי זְרָעִים לְטֻומְאָה:</div>
+          <div class="glose-fr">Un mur de caverne — qui est fait de lui-meme, [car] il creuse le sol et le mur se tient de lui-meme, et [il est] attache des l&#x27;origine ; mais [pour] un mur de batiment, qui est [une chose] detachee, &#x27;pour que le mur ne soit pas endommage&#x27; — [cas ou les pluies] ne lui agreent pas — il n&#x27;[est] pas sous &#x27;ki yutan&#x27; ; mais &#x27;pour qu&#x27;il soit rince&#x27;, [cas ou] il leur a donne de l&#x27;importance pour [le] besoin du mur, [elles] rendent les semences aptes a l&#x27;impurete.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אָמַר רַבִּי אֶלְעָזָר תַּבְרָא כו&#x27;</b> לֹא שַׁייָּךְ לְשַׁנּוֹיֵי הָכָא הָא בִּשְׁבִיל שֶׁיּוּדַח הַכֹּותֶל נַעֲשָׂה כְּמִי שֶׁלֹּא יִלְקֶה הַכֹּותֶל כֵּיוָן דְּאֵין לוֹ לִתְלוֹת זֶה בָּזֶה דְּאֵין הַטְּעָמִים שָׁוִין דְּהָא דְּלָא הָוֵי בְּכִי יֻותַּן בִּשְׁבִיל שֶׁיּוּדַח הַייְנוּ מִשּׁוּם דַּחֲשִׁיב כִּמְחֻובָּר וּבִשְׁבִיל שֶׁלֹּא יִלְקֶה הָוֵי מִשּׁוּם דְּלָא נִיחָא לֵיהּ וְלָא דָּמֵי לְנָתַן הוּא וְאָמְרָה הִיא דבפ&quot;ק דְּקִדּוּשִׁין (דַּף ה:) דִּמְשַׁנֵּי הָתָם נַעֲשָׂה כְּמִי שֶׁנָּתְנָה הִיא וְאָמְרָה הִיא דְּחַד טַעְמָא הוּא מִשּׁוּם דִּכְתִיב (דְּבָרִים כֹּד) כִּי יִקַּח אִישׁ אִשָּׁה וְלֹא שֶׁתִּקַּח אֶת עַצְמָהּ וְאִם תֹּאמַר דְּהָכָא מַשְׁמַע דִּפְלִיגִי תַּנָּאֵי בְּתָלוּשׁ וּלְבַסּוֹף חִבְּרוֹ לְעִנְיַן הֶכְשֵׁר זְרָעִים וּלְרַב פַּפָּא הָוֵי לכ&quot;ע כְּתָלוּשׁ וא&quot;כ מַאי קָא מִבַּעְיָא לֵיהּ לְרַב יוֹסֵף בְּפֶ&#x27; הַמּוֹכֵר אֶת הַבַּיִת (ב&quot;ב דַּף סו: וְשָׁם ד&quot;ה בָּעֵי) מֵי גְשָׁמִים שֶׁחִשֵּׁב עֲלֵיהֶם לְהַדִּיחַ אֶת הָאִיצְטְרֻובָּל מַהוּ לְהַכְשִׁיר בָּהֶן אֶת הַזְּרָעִים וי&quot;ל דִּלְרַבִּי אֶלְעָזָר דְּאָמַר תַּבְרָא לָמֶ&quot;ד מְחֻובָּר הָוֵי מִבַּעְיָא לֵיהּ דְּשֶׁמָּא אִיצְטְרֻובָּל לָא הָוֵי מְחֻובָּר כְּמוֹ בַּיִת:</div>
+          <div class="glose-fr">&#x27;Rabbi Elazar dit : une fracture, etc.&#x27; — il ne convient pas de repondre ici &#x27;[le cas] &#x27;pour que le mur soit rince&#x27; est rendu comme &#x27;[le cas] pour que le mur ne soit pas endommage&#x27;&#x27;, puisqu&#x27;il n&#x27;y a pas lieu de rattacher l&#x27;un a l&#x27;autre, les raisons n&#x27;etant pas identiques ; car [le fait] que [le cas] &#x27;pour qu&#x27;il soit rince&#x27; ne [soit] pas sous &#x27;ki yutan&#x27; [tiendrait au fait] qu&#x27;il est considere comme attache, et [le cas] &#x27;pour qu&#x27;il ne soit pas endommage&#x27; [tient au fait] que [les pluies] ne lui agreent pas — et [cela] ne ressemble pas a &#x27;[le cas ou] c&#x27;est lui [qui] a donne [le get] et c&#x27;est elle [qui] a parle&#x27;, au premier chapitre de Kiddouchin (5b), ou l&#x27;on resout &#x27;c&#x27;est rendu comme [le cas ou] c&#x27;est elle [qui] a donne et elle [qui] a parle&#x27;, [car la c&#x27;]est une seule [et meme] raison, du fait qu&#x27;il est ecrit &#x27;quand un homme prend [une] femme&#x27; et non &#x27;qu&#x27;[elle] se prenne elle-meme&#x27;. Et si tu objectes : ici il ressort que des Tannaim divergent a propos d&#x27;[une chose] detachee puis attachee a la fin quant a [rendre les] semences aptes, et [que] selon Rav Papa elle a, de l&#x27;avis de tous, [le statut d&#x27;une chose] detachee — et si [c&#x27;est] ainsi, qu&#x27;est-ce qui fait question a Rav Yossef au chapitre &#x27;Ha-mocher et ha-bayit&#x27; (Baba Batra 66b) : &#x27;des eaux de pluie au sujet desquelles il a pense [de s&#x27;en servir] pour rincer la meule (itzrubal) — qu&#x27;en [est-il] de rendre apte avec elles les semences ?&#x27; On peut repondre : selon Rabbi Elazar, qui dit &#x27;une fracture&#x27;, [c&#x27;est] selon l&#x27;avis [qui tient le mur] attache [que la question] lui fait difficulte, car peut-etre la meule n&#x27;[est]-elle pas [consideree comme] attachee comme [l&#x27;est] une maison.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>R. Elazar</b> : la michna est <b>brisee</b> (tavra) — <b>deux Tannaim</b> differents (l'un tient le mur attache, l'autre detache). <b>Rav Papa</b> : <b>un seul Tana</b> — la 1re clause parle d'un <b>mur de caverne</b> (attache des l'origine), la 2e d'un <b>mur de batiment</b> (pierres detachees puis baties = detache).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְהָכִי קָאָמַר: הַכּוֹפֶה קְעָרָה עַל הַכֹּותֶל בִּשְׁבִיל שֶׁתּוּדַח – הֲרֵי זֶה ב״כי יֻותַּן״, הָא בִּשְׁבִיל שֶׁיּוּדַח הַכֹּותֶל – אֵין זֶה ב״כי יֻותַּן״.</div>
+            <div class="fr"><p>Et voici ce que [la michna] dit : celui qui retourne un bol sur le mur pour qu&#x27;il soit rince — le voici sous &#x27;ki yutan&#x27; ; [donc] &#x27;pour que le mur soit rince&#x27;, ce n&#x27;[est] pas sous &#x27;ki yutan&#x27;.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Donc [selon Rav Papa] la michna dit : bol renverse <b>pour qu'il soit rince -&gt; ki yutan</b> ; d'ou 'pour que le <b>mur</b> soit rince -&gt; pas ki yutan' (premier cas : mur de caverne, attache).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בַּמֶּה דְבָרִים אֲמוּרִים? בְּכֹותֶל מְעָרָה, אֲבָל בְּכֹותֶל בִּנְיָן – בִּשְׁבִיל שֶׁלֹּא יִלְקֶה הַכֹּותֶל הוּא דְּאֵינוֹ ב״כי יֻותַּן״, הָא בִּשְׁבִיל שֶׁיּוּדַח הַכֹּותֶל – הֲרֵי זֶה ב״כי יֻותַּן״.</div>
+            <div class="fr"><p>Dans quel cas cela [est-il] dit ? [Dans le cas d&#x27;]un mur de caverne ; mais [dans le cas d&#x27;]un mur de batiment — c&#x27;est &#x27;pour que le mur ne soit pas endommage&#x27; qu&#x27;il n&#x27;[est] pas sous &#x27;ki yutan&#x27; ; [tandis que] &#x27;pour que le mur soit rince&#x27;, le voici sous &#x27;ki yutan&#x27;.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Precision : cela [le mur 'non-ki-yutan'] ne vaut que pour un <b>mur de caverne</b> (attache). Pour un <b>mur de batiment</b> (detache) : seul 'pour qu'il ne soit pas abime' -&gt; pas ki yutan ; mais 'pour qu'il soit rince' -&gt; <b>oui</b> ki yutan.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בָּעֵי רָבָא:</div>
+            <div class="fr"><p>Rava pose la question (ba&#x27;ei Rava) :</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rava souleve un nouveau dilemme — la suite, sur 16b.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Chullin_15b.html">&lsaquo; Chullin 15b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Chullin_16b.html">Chullin 16b &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

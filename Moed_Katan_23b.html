@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moed Katan 23b — Y a-t-il un deuil le Chabbat ? La lecture de la michna, la baraita de l&#x27;onen et la tentative de rattacher la question a une controverse de tanaim</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Moed Katan 23b — Y a-t-il un deuil le Chabbat ? La lecture de la michna, la baraita de l&#x27;onen et la tentative de rattacher la question a une controverse de tanaim</h1>
+    <div class="ref">Moed_Katan 23b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Moed_Katan_23a.html">&lsaquo; Moed_Katan 23a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Moed_Katan_24a.html">Moed_Katan 24a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> Le folio poursuit la controverse amoraique ouverte a la page precedente : le Chabbat, durant les sept jours de deuil, le deuil est-il observe ou suspendu ? Les deux camps lisent la meme michna, qui enseigne que le Chabbat compte dans les sept jours et qu&#x27;il n&#x27;interrompt pas le deuil ; chacun s&#x27;appuie sur l&#x27;un des deux membres de la phrase, et la guemara montre que chaque camp peut rendre compte du membre qui le gene par la symetrie voulue avec la fin de la michna, consacree aux fetes.</p><p>La guemara essaie ensuite d&#x27;adosser la controverse a un differend de tanaim, tire de la baraita sur celui dont le mort est encore etendu devant lui : le premier tana enumere ce que l&#x27;onen retrouve le Chabbat, Rabban Gamliel ajoute qu&#x27;il est alors tenu de toutes les mitsvot, et Rabbi Yohanan identifie la difference pratique dans les relations conjugales. La tentative echoue : chacun des deux tanaim peut avoir parle seulement de son cas, avant l&#x27;ensevelissement, ou la situation differe de celle des sept jours.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 420" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+<rect x="0" y="0" width="740" height="420" fill="#fbfaf7"/>
+<text x="370" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2933">Le plan du folio : une seule question, trois etapes</text>
+<rect x="24" y="46" width="692" height="64" rx="6" fill="#eef3f8" stroke="#4a6fa5"/>
+<text x="42" y="68" font-size="12.5" font-weight="700" fill="#24405e">1. La controverse posee</text>
+<text x="42" y="86" font-size="11.5" fill="#5b6b7c">Les uns : il y a un deuil le Chabbat (dans les choses accomplies en prive).</text>
+<text x="42" y="103" font-size="11.5" fill="#5b6b7c">Les autres : il n'y a pas de deuil le Chabbat.</text>
+<rect x="24" y="120" width="692" height="100" rx="6" fill="#f4f0e8" stroke="#9a7b3f"/>
+<text x="42" y="142" font-size="12.5" font-weight="700" fill="#5c4517">2. Les deux appuis dans la michna, et la reponse a chacun</text>
+<text x="42" y="160" font-size="11.5" fill="#7a6540">Appui du premier camp : le Chabbat compte (ola) — donc quelque chose y est observe.</text>
+<text x="42" y="177" font-size="11.5" fill="#7a6540">Appui du second camp : le Chabbat n'interrompt pas (einah mafseket) — mention superflue si le deuil y etait observe.</text>
+<text x="42" y="196" font-size="11.5" fill="#7a6540">Reponse commune : chaque terme est appele par la symetrie avec la fin de la michna, qui traite des fetes.</text>
+<text x="42" y="213" font-size="11.5" fill="#7a6540">La michna dit donc moins qu'il n'y parait ; aucun camp n'est refute par elle.</text>
+<rect x="24" y="230" width="692" height="118" rx="6" fill="#e9f2ec" stroke="#3f7d5a"/>
+<text x="42" y="252" font-size="12.5" font-weight="700" fill="#1e4b34">3. La tentative de rattachement a une controverse de tanaim</text>
+<text x="42" y="270" font-size="11.5" fill="#3f6b52">Baraita : celui dont le mort est etendu devant lui (onen) — ce qu'il perd en semaine, ce qu'il retrouve le Chabbat.</text>
+<text x="42" y="287" font-size="11.5" fill="#3f6b52">Premier tana : la liste s'arrete aux mitsvot enumerees. Rabban Gamliel : puisqu'il est tenu de celles-la, il est tenu de toutes.</text>
+<text x="42" y="304" font-size="11.5" fill="#3f6b52">Rabbi Yohanan : la difference pratique porte sur les relations conjugales, qui sont une chose accomplie en prive.</text>
+<text x="42" y="322" font-size="11.5" fill="#3f6b52">Proposition : le premier tana tient qu'il y a un deuil le Chabbat, Rabban Gamliel qu'il n'y en a pas.</text>
+<text x="42" y="339" font-size="11.5" fill="#3f6b52">Rejet : chacun a pu parler seulement de son cas, ou le mort n'est pas encore enseveli.</text>
+<rect x="24" y="358" width="692" height="46" rx="6" fill="#3b5c7e"/>
+<text x="370" y="380" text-anchor="middle" font-size="12.5" font-weight="700" fill="#ffffff">Resultat : la controverse amoraique reste ouverte, sans appui tannaitique</text>
+<text x="370" y="397" text-anchor="middle" font-size="11.5" fill="#dde6ef">Le critere retenu en pratique demeure celui de Rabbi Yohanan : les choses accomplies en prive sont observees</text>
+</svg></div>
+          <figcaption>Le plan du folio : la controverse est posee, puis eprouvee par la michna, puis par une baraita ; aucune des deux ne parvient a la trancher.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 360" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+<rect x="0" y="0" width="740" height="360" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2933">Une seule michna, deux lectures opposees</text>
+<rect x="180" y="42" width="380" height="46" rx="6" fill="#ffffff" stroke="#c7cdd4"/>
+<text x="370" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#1f2933">La michna : le Chabbat compte, et il n'interrompt pas</text>
+<text x="370" y="79" text-anchor="middle" font-size="11" fill="#5b6b7c">deux membres de phrase, deux points d'appui possibles</text>
+<line x1="280" y1="88" x2="190" y2="112" stroke="#c7cdd4" stroke-width="2"/>
+<line x1="460" y1="88" x2="550" y2="112" stroke="#c7cdd4" stroke-width="2"/>
+<rect x="24" y="112" width="330" height="150" rx="6" fill="#eef3f8" stroke="#4a6fa5"/>
+<text x="189" y="134" text-anchor="middle" font-size="13" font-weight="700" fill="#24405e">Il y a un deuil le Chabbat</text>
+<text x="189" y="156" text-anchor="middle" font-size="11.5" fill="#24405e">Appui : le Chabbat compte (ola)</text>
+<text x="189" y="174" text-anchor="middle" font-size="11" fill="#5b6b7c">un jour ne compte dans les sept que</text>
+<text x="189" y="190" text-anchor="middle" font-size="11" fill="#5b6b7c">si quelque chose du deuil y est observe</text>
+<text x="189" y="214" text-anchor="middle" font-size="11.5" font-weight="700" fill="#24405e">Gene par : il n'interrompt pas</text>
+<text x="189" y="232" text-anchor="middle" font-size="11" fill="#5b6b7c">Reponse : terme appele par la fin de la</text>
+<text x="189" y="248" text-anchor="middle" font-size="11" fill="#5b6b7c">michna, ou les fetes interrompent</text>
+<rect x="386" y="112" width="330" height="150" rx="6" fill="#f4f0e8" stroke="#9a7b3f"/>
+<text x="551" y="134" text-anchor="middle" font-size="13" font-weight="700" fill="#5c4517">Il n'y a pas de deuil le Chabbat</text>
+<text x="551" y="156" text-anchor="middle" font-size="11.5" fill="#5c4517">Appui : il n'interrompt pas</text>
+<text x="551" y="174" text-anchor="middle" font-size="11" fill="#7a6540">si le deuil y etait observe, dire qu'il</text>
+<text x="551" y="190" text-anchor="middle" font-size="11" fill="#7a6540">n'interrompt pas serait superflu</text>
+<text x="551" y="214" text-anchor="middle" font-size="11.5" font-weight="700" fill="#5c4517">Gene par : le Chabbat compte</text>
+<text x="551" y="232" text-anchor="middle" font-size="11" fill="#7a6540">Reponse : terme appele par la fin de la</text>
+<text x="551" y="248" text-anchor="middle" font-size="11" fill="#7a6540">michna, ou les fetes ne comptent pas</text>
+<rect x="24" y="278" width="692" height="62" rx="6" fill="#e9f2ec" stroke="#3f7d5a"/>
+<text x="42" y="300" font-size="12" font-weight="700" fill="#1e4b34">Le procede commun aux deux reponses : idei de-kabaei le-mitna seifa</text>
+<text x="42" y="320" font-size="11.5" fill="#3f6b52">Le tana formule le debut de la michna dans les termes appeles par sa fin, pour garder une langue parallele ;</text>
+<text x="42" y="336" font-size="11.5" fill="#3f6b52">on ne peut donc rien deduire du terme lui-meme, et la michna cesse de trancher.</text>
+</svg></div>
+          <figcaption>Les deux lectures de la michna : chaque camp s&#x27;appuie sur un membre de phrase et neutralise l&#x27;autre par la symetrie voulue avec la fin de la michna.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 430" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+<rect x="0" y="0" width="740" height="430" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2933">L'onen dans la baraita : la semaine, le Chabbat, et le point de desaccord</text>
+<rect x="24" y="44" width="340" height="176" rx="6" fill="#f4f0e8" stroke="#9a7b3f"/>
+<text x="194" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#5c4517">En semaine — le mort est etendu devant lui</text>
+<text x="44" y="90" font-size="11.5" fill="#7a6540">il ne s'accoude pas pour manger</text>
+<text x="44" y="110" font-size="11.5" fill="#7a6540">pas de viande, pas de vin</text>
+<text x="44" y="130" font-size="11.5" fill="#7a6540">il ne benit pas pour autrui, pas de zimoun</text>
+<text x="44" y="150" font-size="11.5" fill="#7a6540">on ne benit pas pour lui, on ne le compte pas</text>
+<text x="44" y="170" font-size="11.5" fill="#7a6540">dispense du Chema, de la tefila, des tefilines</text>
+<text x="44" y="190" font-size="11.5" fill="#7a6540">dispense de toutes les mitsvot de la Torah</text>
+<text x="44" y="210" font-size="11" fill="#9a7b3f">motif : il doit rester tout entier a l'ensevelissement de son mort</text>
+<rect x="386" y="44" width="330" height="176" rx="6" fill="#eef3f8" stroke="#4a6fa5"/>
+<text x="551" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#24405e">Le Chabbat</text>
+<text x="406" y="90" font-size="11.5" fill="#5b6b7c">il s'accoude et mange</text>
+<text x="406" y="110" font-size="11.5" fill="#5b6b7c">viande et vin</text>
+<text x="406" y="130" font-size="11.5" fill="#5b6b7c">il benit et fait le zimoun</text>
+<text x="406" y="150" font-size="11.5" fill="#5b6b7c">on benit pour lui, on le compte</text>
+<text x="406" y="170" font-size="11.5" fill="#5b6b7c">tenu du Chema, de la tefila, des tefilines</text>
+<text x="406" y="190" font-size="11.5" fill="#5b6b7c">tenu de toutes les mitsvot de la Torah</text>
+<text x="406" y="210" font-size="11" fill="#4a6fa5">motif : le Chabbat, l'ensevelissement est de toute maniere differe</text>
+<rect x="24" y="238" width="340" height="86" rx="6" fill="#ffffff" stroke="#9a7b3f"/>
+<text x="194" y="260" text-anchor="middle" font-size="12.5" font-weight="700" fill="#5c4517">Premier tana</text>
+<text x="194" y="280" text-anchor="middle" font-size="11.5" fill="#7a6540">la liste s'arrete la</text>
+<text x="194" y="300" text-anchor="middle" font-size="11.5" fill="#7a6540">relations conjugales : interdites</text>
+<text x="194" y="317" text-anchor="middle" font-size="11" fill="#9a7b3f">une chose accomplie en prive reste retenue</text>
+<rect x="386" y="238" width="330" height="86" rx="6" fill="#ffffff" stroke="#4a6fa5"/>
+<text x="551" y="260" text-anchor="middle" font-size="12.5" font-weight="700" fill="#24405e">Rabban Gamliel</text>
+<text x="551" y="280" text-anchor="middle" font-size="11.5" fill="#5b6b7c">puisqu'il est tenu de celles-la, il est tenu de toutes</text>
+<text x="551" y="300" text-anchor="middle" font-size="11.5" fill="#5b6b7c">relations conjugales : permises</text>
+<text x="551" y="317" text-anchor="middle" font-size="11" fill="#4a6fa5">plus rien n'est retenu le Chabbat</text>
+<rect x="24" y="336" width="692" height="34" rx="6" fill="#3b5c7e"/>
+<text x="370" y="358" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Rabbi Yohanan : la difference pratique entre eux porte sur les relations conjugales</text>
+<rect x="24" y="380" width="692" height="40" rx="6" fill="#e9f2ec" stroke="#3f7d5a"/>
+<text x="370" y="396" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1e4b34">Mais ce desaccord ne prouve rien sur les sept jours de deuil</text>
+<text x="370" y="412" text-anchor="middle" font-size="11" fill="#3f6b52">la baraita parle d'un temps ou le mort n'est pas enseveli : le regime y est autre des deux cotes</text>
+</svg></div>
+          <figcaption>La baraita de l&#x27;onen : le contraste semaine / Chabbat, le supplement de Rabban Gamliel, et le point precis que Rabbi Yohanan isole entre les deux tanaim.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">יֵשׁ אֲבֵילוּת בְּשַׁבָּת, וְהָנֵי אָמְרִי: אֵין אֲבֵילוּת בְּשַׁבָּת.</div>
+            <div class="fr"><p>[Ceux-ci disent :] il y a un deuil le Chabbat, et ceux-la disent : il n&#x27;y a pas de deuil le Chabbat.</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">יֵשׁ אֲבֵילוּת בְּשַׁבָּת. בִּדְבָרִים שֶׁבְּצִנְעָא מַיְירֵי כִּדְפֵירֵשׁ בַּקְּוַנְט&#x27; וּבְסָמוּךְ נָמֵי לֵימָא כְתַנָּאֵי מַיְיתֵי פְּלֻוגְתָּא דְּרַשְׁבָּ&quot;ג וְרַבָּנָן דְּהָוֵי דְּבָרִים שֶׁבְּצִנְעָא וְהָכִי מַשְׁמַע קְצָת בִּירֻושַּׁל&#x27; דִּלְעֵיל אַמַּתְנִיתִין דַּהֲשָׁבַת עוֹלָה פְּלִיגִי רַבִּי יוֹחָנָן וְרִיבָּ&quot;ל אִם אָסוּר בְּשַׁבָּת בְּתַשְׁמִישׁ הַמִּטָּה מַשְׁמַע דִּפְלִיגִי כְּעֵין פְּלֻוגְתָּא דְּהָכָא וְאַלִּיבָּא דְּרַבִּי יוֹחָנָן יֵשׁ שֶׁאוֹמְרִים שָׁם מֻותָּר וְאוֹתוֹ חוֹלֵק עַל הַשַּׁ&quot;ס שֶׁלָּנוּ דְּא&quot;ר יוֹחָנָן בפ&quot;ק דִּכְתֻובּוֹת (דַּף ד. וְשָׁם) אע&quot;פ שֶׁאָמְרוּ אֵין אֲבֵילוּת בְּשַׁבָּת אֲבָל דְּבָרִים שֶׁבְּצִנְעָא נוֹהֵג וּקְצָת קָשֶׁה לִי תֵּימַהּ בִּשְׁמַעְתִּין אַבָּיֵי אַשְׁכְּחֵיהּ לְרַב יוֹסֵף דִּפְרִיס סוּדָרָא אַרֵישֵׁיהּ אֲמַר לֵיהּ לָא סָבַר לַהּ מָר אֵין אֲבֵילוּת בְּשַׁבָּת אֲמַר לֵיהּ הָכִי אָמַר ר&#x27; יוֹחָנָן דְּבָרִים שֶׁבְּצִנְעָא נוֹהֵג שֶׁמָּא הָיָה סָבוּר דִּפְרִיס סוּדָרָא אַרֵישֵׁיהּ הֲוָה דְּבָרִים שֶׁבְּפַרְהֶסְיָא וּכְמַאן דְּאָמַר פְּרִיעַת הָרֹאשׁ חוֹבָה וְלֹא הָיָה מְחַלֵּק בֵּין בְּבֵיתוֹ בֵּין חוּץ לְבֵיתוֹ וְהוּא הֵשִׁיב לוֹ בְּבֵיתוֹ חֲשִׁיב צִנְעָא:</div>
+          <div class="glose-fr">« Il y a un deuil le Chabbat. » Il s&#x27;agit des choses accomplies en prive (devarim che-be-tsina), comme l&#x27;a explique le Qountras (Rachi). Plus loin egalement, lorsque la guemara dit « disons que cela correspond a une controverse de tanaim », elle apporte le differend de Rabban Chimon ben Gamliel et des sages, qui porte sur des choses accomplies en prive. C&#x27;est aussi ce que laisse quelque peu entendre le Yerouchalmi, plus haut, sur notre michna qui dit que le Chabbat compte : Rabbi Yohanan et Rabbi Yehochoua ben Levi y divergent sur la question de savoir si les relations conjugales sont interdites le Chabbat, ce qui laisse entendre qu&#x27;ils divergent a la maniere du differend d&#x27;ici. Et selon Rabbi Yohanan, certains disent la-bas que c&#x27;est permis ; celui-la contredit notre Talmud, puisque Rabbi Yohanan a dit au premier chapitre de Ketoubot (4a) : bien qu&#x27;ils aient dit qu&#x27;il n&#x27;y a pas de deuil le Chabbat, les choses accomplies en prive sont pourtant observees. Une difficulte me reste dans notre sougya : Abaye trouva Rav Yossef qui avait etendu un foulard sur sa tete ; il lui dit : le maitre ne tient-il pas qu&#x27;il n&#x27;y a pas de deuil le Chabbat ? Il lui repondit : ainsi a dit Rabbi Yohanan, les choses accomplies en prive sont observees. Peut-etre Abaye pensait-il qu&#x27;etendre un foulard sur la tete relevait du domaine public, a la maniere de celui qui dit que se couvrir la tete est une obligation, et il ne distinguait pas entre l&#x27;interieur de la maison et le dehors ; Rav Yossef lui repondit que dans sa maison cela compte comme du prive.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le folio reprend la controverse amoraique ouverte a la page precedente. La question porte sur le statut du Chabbat a l'interieur des sept jours de deuil : le deuil y est-il observe, ou bien la saintete du jour le suspend-elle entierement ?</p><p>Tossefot precise aussitot le point sur lequel le desaccord est reel. Personne ne songe a un deuil visible le Chabbat ; le differend porte sur les <b>devarim che-be-tsina</b>, les pratiques de deuil qui se tiennent en prive et qu'aucun regard exterieur ne percoit.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאן דְּאָמַר יֵשׁ אֲבֵילוּת בְּשַׁבָּת, דְּקָתָנֵי ״עוֹלָה״. מַאן דְּאָמַר אֵין אֲבֵילוּת בְּשַׁבָּת, דְּקָתָנֵי ״אֵינָהּ מַפְסֶקֶת״.</div>
+            <div class="fr"><p>Celui qui dit qu&#x27;il y a un deuil le Chabbat s&#x27;appuie sur ce qui est enseigne : « [le Chabbat] compte ». Celui qui dit qu&#x27;il n&#x27;y a pas de deuil le Chabbat s&#x27;appuie sur ce qui est enseigne : « il n&#x27;interrompt pas ».</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">מַאן דְּאָמַר יֵשׁ אֲבֵילוּת בְּשַׁבָּת מִדְּקָתָנֵי עוֹלָה. פֵּירֵשׁ הר&quot;א זַ&quot;ל מִדְּקָתָנֵי וְלֹא פֵּירֵשׁ וְאֵין בָּהּ אֲבֵילוּת אַלְמָא אֲבֵילוּת נוֹהֵג בָּהּ דְּאִם לֹא כֵן הָיָה לוֹ לְפָרֵשׁ הָכִי בְּהֶדְיָא אע&quot;ג דְּעוֹלָה לֹא נָהַג בָּהּ אֲבֵילוּת דְּכֵיוָן דְּעוֹלָה מַשְׁמַע דְּנוֹהֵג בָּהּ אֲבֵילוּת וּמְשַׁנֵּי אַיְּידֵי דְּקָתָנֵי סֵיפָא אֵין עוֹלִין סְתָם תְּנָא בְּרֵישָׁא עוֹלָה סְתָם וְלָא נְהִירָא וּפֵירֵשׁ ר&#x27; שִׁמְעוֹן זצ&quot;ל מֵרַבּוֹ מַאן דְּאָמַר יֵשׁ אֲבֵילוּת דְּקָתָנֵי עוֹלָה מַשְׁמַע דְּעוֹלֶה לְכָל מִנְיַן שִׁבְעָה וְלַאֲבֵילוּת שֶׁיִּנְהַג בְּשַׁבָּת מַה שֶׁנָּהַג אֶתְמוֹל וּמִתּוֹךְ כָּךְ תַּעֲלֶה שַׁבָּת לְחֶשְׁבּוֹנוֹ כְּשֵׁם שע&quot;ש עוֹלָה לְחֶשְׁבּוֹנוֹ מ&quot;ד אֵין אֲבֵילוּת בְּשַׁבָּת דְּקָתָנֵי אֵינָהּ מַפְסֶקֶת אע&quot;ג דַּחֲשִׁיבָא כֻּולֵּי הַאי לְבַטֵּל אֲבֵילוּת בְּגַוַּהּ מ&quot;מ אֵינוֹ מַפְסִיק דאל&quot;כ פְּשִׁיטָא וְקָפְרִיךְ וְאֶלָּא הָא דְּקָתָנֵי עוֹלֶה דְּמַשְׁמַע דְּנוֹהֵג אֲבֵילוּת כִּשְׁאָר יָמִים וּמְשַׁנֵּי אַיְּידֵי דְּקָתָנֵי גַּבֵּי י&quot;ט אֵין עוֹלִין לְגַמְרֵי לֹא לְמִנְיָן וְלֹא לַאֲבֵילוּת מִשּׁוּם שִׂמְחָה דִּכְתִיב בָּהֶן כִּדְפָרֵישִׁית תְּנָא רֵישָׁא נָמֵי עוֹלֶה בְּאוֹתוֹ לָשׁוֹן עַצְמוֹ דִּתְנָא בי&quot;ט תְּנָא בְּשַׁבָּת דְּלָא לְהַפְלִיג בִּלְשׁוֹן הַמִּשְׁנָה וּמִיהוּ עוֹלֶה דְּשַׁבָּת אֵינוֹ לְמִנְיָן דְּלַאֲבֵילוּת לָא סָלְקָא אֶלָּא אִי נָהֲגָא אֲבֵילוּת בְּגַוֵּיהּ וא&quot;כ לְפִי פֵּירוּשׁ זֶה וְאֶלָּא הָא דְּקָתָנֵי עוֹלֶה וּמְשַׁנֵּי לְעוֹלָם לָא נָהֲגָא וְאַיְּידֵי דִּתְנָא כו&#x27; וא&quot;כ הַמִּשְׁנָה אֵין שִׁטַּת הַשַּׁ&quot;ס לוֹמַר אַיְּידֵי דִּתְנָא הָא תְּנָא נָמֵי הָא אֶלָּא בְּמִילְּתָא דֶּאֱמֶת אֶלָּא דְּלָא צְרִיכִי אֲבָל דְּבָרִים נִרְאִים שֶׁקֶר אֵין לוֹ לִשְׁנוֹת וְעוֹד יֵשׁ לְהַקְשׁוֹת לְפִי מַה שֶׁמְּפָרֵשׁ אִי הָכִי לִיתְנֵי שַׁבָּת אֵינוֹ עוֹלֶה וְהָוֵי דֻּומְיָא דְּסֵיפָא יוֹתֵר עַד כָּאן לְשׁוֹן הר&quot;א וּבִתּוֹ&#x27; הָרַב מַקְשֶׁה דְּמַשְׁמַע אֲפִילּוּ לְמָאֵן דְּאָמַר דְּלָא נָהֲגָא עוֹלֶה לְמִנְיַן שִׁבְעָה וא&quot;כ בָּרֶגֶל נָמֵי אע&quot;ג דְּלָא נָהֲגָא יְהֵא עוֹלֶה וּלְעֵיל אָמְרִי&#x27; לְעִנְיַן שִׁבְעָה לָא קָמִבַּעְיָא לֵיהּ דְּלָא נָהֲגָא מִצְוַת שִׁבְעָה בָּרֶגֶל וּמְתָרֵץ אע&quot;ג דְּשַׁבָּת עוֹלֵה רֶגֶל אֵינוֹ עוֹלֶה הוֹאִיל וְאֵין אֲבֵילוּת כְּלָל מִשּׁוּם דִּכְתִיב בָּהֶן שִׂמְחָה שַׁבָּת מִיהָא לָא כְּתִיב שִׂמְחָה אֲפִילּוּ אֵינָהּ נוֹהֶגֶת עוֹלָה בַּיְּרוּשַׁלְמִי מְפָרֵשׁ טַעְמָא דְּשַׁבָּת דְּאֵין אֲבֵילוּת נוֹהֵג בּוֹ מִשּׁוּם דִּכְתִיב (מִשְׁלֵי י׳:כ״ב) בִּרְכַּת ה&#x27; הִיא תַעֲשִׁיר וְלֹא יוֹסִיף עֶצֶב עִמָּהּ וְשַׁבָּת כְּתִיב בֵּיהּ בְּרָכָה:</div>
+          <div class="glose-fr">« Celui qui dit qu&#x27;il y a un deuil le Chabbat, puisqu&#x27;il est enseigne il compte. » Le Ra, de memoire benie, a explique : puisqu&#x27;il est enseigne « il compte » sans que la michna precise « et il n&#x27;y a pas de deuil en lui », le deuil y est donc observe ; autrement elle aurait du le preciser explicitement — et cela bien que « il compte » soit compatible avec l&#x27;absence de deuil, car « il compte » laisse entendre que le deuil y est observe. La guemara repond que, puisque la fin de la michna enseigne « ils ne comptent pas », le tana a enseigne au debut « il compte » sans plus. Cette explication ne parait pas juste. Rabbi Chimon, de memoire benie, a explique au nom de son maitre : celui qui dit qu&#x27;il y a un deuil s&#x27;appuie sur « il compte », terme qui laisse entendre que le jour entre dans le compte des sept et vaut pour le deuil, en ce qu&#x27;on y observe le Chabbat ce que l&#x27;on observait la veille, et de la sorte le Chabbat entre dans le compte, de meme que la veille de Chabbat y entre. Celui qui dit qu&#x27;il n&#x27;y a pas de deuil le Chabbat s&#x27;appuie sur « il n&#x27;interrompt pas » : bien que le Chabbat soit assez important pour annuler le deuil en son sein, il n&#x27;interrompt pourtant pas — sinon la chose irait de soi. La guemara objecte : mais ce qui est enseigne, « il compte », laisse entendre que le deuil y est observe comme les autres jours ! Elle repond : puisqu&#x27;il est enseigne a propos du jour de fete « ils ne comptent pas » du tout, ni pour le compte ni pour le deuil, en raison de la joie qui y est ecrite, comme je l&#x27;ai explique, le tana a enseigne aussi au debut « il compte », dans les memes termes que pour le jour de fete, afin de ne pas varier la langue de la michna. Toutefois, « il compte » a propos du Chabbat ne vaut pas pour le compte, car pour le deuil le jour ne compterait que si le deuil y etait observe. Selon cette explication, l&#x27;objection « mais il est enseigne il compte ! » recoit pour reponse : en verite le deuil n&#x27;y est pas observe, et c&#x27;est parce que le tana a enseigne etc. Or il faut objecter que le Talmud n&#x27;a pas coutume de dire « puisqu&#x27;il a enseigne ceci, il a enseigne aussi cela » sinon pour une chose vraie mais non necessaire ; des choses qui paraissent fausses, il n&#x27;a pas a les enseigner. Il y a encore a objecter, selon cette explication : s&#x27;il en est ainsi, que la michna enseigne « le Chabbat ne compte pas », ce qui serait plus semblable a sa fin. Jusqu&#x27;ici les termes du Ra. Dans les Tossefot, le Rav objecte : cela laisse entendre que meme pour celui qui tient que le deuil n&#x27;y est pas observe, le Chabbat compte pour les sept jours ; et s&#x27;il en est ainsi, la fete devrait compter elle aussi, bien que le deuil n&#x27;y soit pas observe. Or plus haut nous avons dit que, quant aux sept jours, la question ne se posait pas pour lui, l&#x27;obligation des sept jours n&#x27;etant pas observee durant la fete. Il repond : bien que le Chabbat compte, la fete ne compte pas, puisqu&#x27;il n&#x27;y a en elle aucun deuil, la joie y etant ecrite ; pour le Chabbat en revanche, la joie n&#x27;y est pas ecrite, et meme si le deuil n&#x27;y est pas observe, il compte. Dans le Yerouchalmi, on explique la raison pour laquelle le deuil n&#x27;est pas observe le Chabbat par ce qui est ecrit (Pr. 10, 22) : « la benediction de Hachem, c&#x27;est elle qui enrichit, et Il n&#x27;y ajoute pas de peine » — or a propos du Chabbat la benediction est ecrite.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Les deux camps lisent la meme michna et se partagent ses deux membres de phrase. Le premier retient <b>ola</b>, « il compte » : un jour n'entre dans le compte des sept que si le deuil s'y observe d'une maniere ou d'une autre. Le second retient <b>einah mafseket</b>, « il n'interrompt pas » : dire d'un jour qu'il n'interrompt pas suppose qu'il aurait pu le faire, donc que le deuil y est suspendu.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִי סָלְקָא דַּעְתָּךְ יֵשׁ אֲבֵילוּת בְּשַׁבָּת, הַשְׁתָּא אֲבֵילוּת נָהֲגָא, אַפְּסוּקֵי מִיבַּעְיָא?</div>
+            <div class="fr"><p>Si tu penses qu&#x27;il y a un deuil le Chabbat : maintenant que le deuil lui-meme y est observe, faut-il encore dire qu&#x27;il n&#x27;interrompt pas ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַפְּסוּקֵי מִבַּעְיָא</b> כְּלוֹמַר מִי צְרִיכָא לְמֵימַר דְּאֵינָהּ מַפְסֶקֶת:</div>
+          <div class="glose-fr">c&#x27;est-a-dire : est-il besoin de dire qu&#x27;il n&#x27;interrompt pas ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Premiere objection, dirigee contre le camp qui maintient le deuil le Chabbat. Si le deuil s'observe ce jour-la comme les autres jours, l'enseignement selon lequel il n'interrompt pas devient superflu : un jour de deuil ordinaire n'interrompt evidemment rien.</p><p>L'argument repose sur le principe de lecture qui gouverne toute la sougya : une michna n'enseigne pas ce qui va de soi. Un membre de phrase inutile signale que la realite visee est autre que celle que l'on supposait.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאֶלָּא הָא קָתָנֵי ״עוֹלָה״! אַייְּדֵי דְּקָבָעֵי לְמִיתְנֵא סֵיפָא ״אֵינָן עוֹלִים״, תְּנָא רֵישָׁא ״עוֹלָה״.</div>
+            <div class="fr"><p>Mais alors, voici qu&#x27;il est enseigne « il compte » ! Puisque le tana voulait enseigner dans la fin de la michna « [les fetes] ne comptent pas », il a enseigne au debut « il compte ».</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara retourne l'objection contre le second camp, puis fournit la reponse. Le terme <b>ola</b> n'a pas ete choisi pour ce qu'il affirme du Chabbat : il est appele par la fin de la michna, qui doit enoncer que les jours de fete ne comptent pas.</p><p>Ce procede, designe par la formule <b>idei de-kabaei le-mitna seifa</b>, consiste a formuler le debut d'une michna dans les termes que sa fin impose, pour conserver une langue parallele. Le terme cesse alors d'etre une source de deduction.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּלְמַאן דְּאָמַר יֵשׁ אֲבֵילוּת בְּשַׁבָּת, הָא קָתָנֵי אֵינָהּ מַפְסֶקֶת! מִשּׁוּם דְּקָבָעֵי לְמִיתְנָא סֵיפָא ״מַפְסִיקִין״, תְּנָא רֵישָׁא ״אֵינָהּ מַפְסֶקֶת״.</div>
+            <div class="fr"><p>Et pour celui qui dit qu&#x27;il y a un deuil le Chabbat : voici qu&#x27;il est enseigne « il n&#x27;interrompt pas » ! C&#x27;est parce que le tana voulait enseigner dans la fin de la michna « [les fetes] interrompent » qu&#x27;il a enseigne au debut « il n&#x27;interrompt pas ».</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le meme procede sert le camp adverse. Le terme <b>einah mafseket</b> est appele par la fin de la michna, qui doit enoncer que les fetes interrompent le deuil.</p><p>Les deux appuis se neutralisent donc de la meme maniere. La michna dit moins qu'il n'y paraissait, et la controverse amoraique reste entiere : il faut chercher ailleurs de quoi la trancher.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לֵימָא כְתַנָּאֵי: מִי שֶׁמֵּתוֹ מֻוטָּל לְפָנָיו — אוֹכֵל בְּבַיִת אַחֵר. אֵין לוֹ בַּיִת אַחֵר — אוֹכֵל בְּבֵית חֲבֵרוֹ, אֵין לוֹ בַּיִת חֲבֵרוֹ — עוֹשֶׂה לוֹ מְחִיצָה עֲשָׂרָה טְפָחִים. אֵין לוֹ דָּבָר לַעֲשׂוֹת מְחִיצָה — מַחֲזִיר פָּנָיו וְאוֹכֵל.</div>
+            <div class="fr"><p>Disons que cela correspond a une controverse de tanaim. Celui dont le mort est etendu devant lui mange dans une autre piece.</p><p>S&#x27;il n&#x27;a pas d&#x27;autre piece, il mange dans la maison de son compagnon. S&#x27;il n&#x27;a pas la maison d&#x27;un compagnon, il se fait une cloison de dix tefahim.</p><p>S&#x27;il n&#x27;a pas de quoi faire une cloison, il detourne son visage et mange.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara cherche un appui tannaitique et cite une baraita sur l'<b>onen</b>, celui dont un proche est mort et n'est pas encore enseveli. Le statut d'aninout differe du deuil proprement dit : il tient a la presence du mort et a l'obligation de s'occuper de son ensevelissement.</p><p>La baraita ouvre par une cascade de solutions decroissantes pour le repas, du plus separe au moins separe. La cloison de dix <b>tefahim</b> est la mesure standard qui constitue une separation reconnue en halakha.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 220" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+<rect x="0" y="0" width="740" height="220" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2933">Ou l'onen peut-il manger ? La cascade de la baraita</text>
+<rect x="18" y="52" width="160" height="70" rx="6" fill="#e9f2ec" stroke="#3f7d5a"/>
+<text x="98" y="78" text-anchor="middle" font-size="12" font-weight="700" fill="#1e4b34">1. Une autre piece</text>
+<text x="98" y="98" text-anchor="middle" font-size="11" fill="#3f6b52">solution premiere :</text>
+<text x="98" y="113" text-anchor="middle" font-size="11" fill="#3f6b52">ne pas voir le mort</text>
+<rect x="196" y="52" width="160" height="70" rx="6" fill="#eef3f8" stroke="#4a6fa5"/>
+<text x="276" y="78" text-anchor="middle" font-size="12" font-weight="700" fill="#24405e">2. Chez un voisin</text>
+<text x="276" y="98" text-anchor="middle" font-size="11" fill="#5b6b7c">s'il n'a pas d'autre</text>
+<text x="276" y="113" text-anchor="middle" font-size="11" fill="#5b6b7c">piece chez lui</text>
+<rect x="374" y="52" width="170" height="70" rx="6" fill="#f4f0e8" stroke="#9a7b3f"/>
+<text x="459" y="78" text-anchor="middle" font-size="12" font-weight="700" fill="#5c4517">3. Une cloison</text>
+<text x="459" y="98" text-anchor="middle" font-size="11" fill="#7a6540">dix tefahim de haut,</text>
+<text x="459" y="113" text-anchor="middle" font-size="11" fill="#7a6540">entre lui et le mort</text>
+<rect x="562" y="52" width="160" height="70" rx="6" fill="#ffffff" stroke="#c7cdd4"/>
+<text x="642" y="78" text-anchor="middle" font-size="12" font-weight="700" fill="#1f2933">4. Detourner le visage</text>
+<text x="642" y="98" text-anchor="middle" font-size="11" fill="#5b6b7c">s'il n'a rien pour</text>
+<text x="642" y="113" text-anchor="middle" font-size="11" fill="#5b6b7c">faire la cloison</text>
+<line x1="178" y1="87" x2="196" y2="87" stroke="#9aa5b1" stroke-width="2"/>
+<line x1="356" y1="87" x2="374" y2="87" stroke="#9aa5b1" stroke-width="2"/>
+<line x1="544" y1="87" x2="562" y2="87" stroke="#9aa5b1" stroke-width="2"/>
+<rect x="18" y="142" width="704" height="58" rx="6" fill="#ffffff" stroke="#c7cdd4"/>
+<text x="38" y="164" font-size="11.5" font-weight="700" fill="#1f2933">Le principe de la serie</text>
+<text x="38" y="184" font-size="11.5" fill="#5b6b7c">Manger devant son mort porte atteinte a l'honneur du defunt ; chaque degre cherche la separation la plus grande encore possible.</text>
+</svg></div><div class="svg-cap">Les quatre degres de separation prevus par la baraita pour le repas de l&#x27;onen.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאֵינוֹ מֵיסֵב וְאוֹכֵל, וְאֵינוֹ אוֹכֵל בָּשָׂר וְאֵינוֹ שׁוֹתֶה יַיִן, וְאֵין מְבָרֵךְ וְאֵין מְזַמֵּן, וְאֵין מְבָרְכִין עָלָיו וְאֵין מְזַמְּנִין עָלָיו, וּפָטוּר מִקְּרִיאַת שְׁמַע וּמִן הַתְּפִלָּה וּמִן הַתְּפִילִּין, וּמִכָּל מִצְוֹת הָאֲמוּרוֹת בַּתּוֹרָה.</div>
+            <div class="fr"><p>Il ne s&#x27;accoude pas pour manger, il ne mange pas de viande et ne boit pas de vin ; il ne recite pas la benediction [pour acquitter autrui] et ne convie pas au zimoun ; on ne recite pas la benediction pour lui et on ne le convie pas au zimoun ; et il est dispense de la lecture du Chema, de la tefila et des tefilines, ainsi que de toutes les mitsvot enoncees dans la Torah.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵין מְבָרֵךְ</b> לְהוֹצִיא אֲחֵרִים יְדֵי חוֹבָתָן:</div>
+          <div class="glose-fr">pour acquitter autrui de son obligation.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">וְאֵינוֹ אוֹכֵל בָּשָׂר וְאֵינוֹ שׁוֹתֶה יַיִן. נִרְאֶה דְּכִי הֵיכִי דְּשָׁרֵי בְּפֶרֶק בָּתְרָא דְּתַעֲנִית (דַּף ל.) גַּבֵּי עֶרֶב תִּשְׁעָה בְּאָב בָּשָׂר כָּל זְמַן שֶׁאֵינוֹ כִּשְׁלָמִים וְיַיִן מִגִּתּוֹ הָכִי נָמֵי שָׁרֵי בְּאוֹנֵן מִיהוּ אֵין רְגִילִין לִנְהֹוג בָּהֶן הֶיתֵּר לֹא בְּכָאן וְלֹא בְּתִשְׁעָה בְּאָב תֵּימַהּ מַשְׁמַע דְּאוֹנֵן חָמוּר מֵאָבֵל דְּלָא מָצִינוּ אָבֵל שֶׁיְּהֵא בּוֹ אִיסּוּר בְּבָשָׂר וּבְיַיִן וּלְעִנְיַן קָדָשִׁים אַשְׁכְּחַן דְּאָבֵל אוֹכֵל בְּקָדָשִׁים וְאוֹנֵן אָסוּר וּבִשְׁאָר דְּבָרִים הֶחְמִירוּ בַּאֲבֵילוּת בִּכְפִייַּת הַמִּטָּה וּנְעִילַת הַסַּנְדָּל וַעֲטִיפַת הָרֹאשׁ וְטוּבָא אִיכָּא וּבְאוֹנֵן שָׁרִי וי&quot;ל דִּדְבָרִים שֶׁהֵן מִשּׁוּם אָבֵל מֻותָּר גַּבֵּי אוֹנֵן וּבַאֲבֵילוּת אֲסוּרִין אֲבָל דְּבָרִים שֶׁאֵינָם אֲסוּרִין מִשּׁוּם אֲבֵילוּת אֶלָּא מִשּׁוּם שֶׁיֵּשׁ לוֹ לִהְיוֹת טָרוּד בִּקְבוּרַת מֵתוֹ וְלֹא יִמָּשֵׁךְ אַחַר דְּבָרִים אֲחֵרִים כְּגוֹן אֲכִילַת בָּשָׂר וּשְׁתִייַּת יַיִן אֲסִירֵי בְּאוֹנֵן דַּוְקָא וְתַשְׁמִישׁ הַמִּטָּה דְּמַשְׁמַע בְּסָמוּךְ דְּאָסוּר בְּאוֹנֵן בְּהָא נָמֵי שֶׁמָּא יִמָּשֵׁךְ אוֹ שֶׁמָּא שִׂמְחָה יַתִּירְתָא וְחֻוצְפָּה כָּךְ מָצָאתִי וּבְתִגְלַחַת וּבְתִכְבֹּוסֶת לָא יָדְעִינַן אִי שָׁרִי בְּאוֹנֵן וְאֵין לִלְמֹוד אִיסּוּר לְגַלֵּחַ מִדְּתָנֵי&#x27; בְּמַס&#x27; שְׂמָחוֹת הָיָה מְגַלֵּחַ וְאָמְרוּ לוֹ מֵת אֶחָד מִקְּרוֹבָיו הֲרֵי זֶה יִגְמֹור מַשְׁמַע הָא לֹא הִתְחִיל אָסוּר דִּלְמָא בִּשְׁמוּעָה אַייְרֵי וּלְאַחַר שֶׁנִּקְבַּר וּבְשֵׁם רִיבָ&quot;א כָּתַבְתִּי דְּתִגְלַחַת אָסוּר דְּנָפְקָא לָן מֵרָאשֵׁיכֶם אַל תִּפְרָעוּ (וַיִּקְרָא י׳:ו׳) הָא כֻּולֵּי עָלְמָא אֲסִירֵי וְאִינְהוּ אוֹנְנִים הָווּ וּבְתַשְׁמִישׁ הַמִּטָּה דְּאָסְרִינַן בְּסָמוּךְ וְרָאוּ לְהַתִּיר בַּאֲנִינוּת כִּדְאָמְרִינַן פּ&quot;ק דִּכְתֻובּוֹת (דַּף ד. וְשָׁם) וּבַאֲבֵילוּת אָסְרוּ דְּקָאָמְרִינַן הָתָם מַכְנִיסִין אֶת הַמֵּת לַחֶדֶר וּבוֹעֵל בְּעִילַת מִצְוָה וּפוֹרֵשׁ וְהָא דְּקָאָמְרִינַן הָתָם אֲבֵילוּת דְּהָכָא קִילָא וְאָתֵי לְזִלְזוּלֵי בָּהּ וּמַקְשֶׁה מַאי קֻולָּא אִילֵּימָא דְּקָתָנֵי בּוֹעֵל בְּעִילַת מִצְוָה מִשּׁוּם דְּלָא חָיְילָא אֲבֵילוּת עָלֶיהָ אֵינוֹ רוֹצֶה לוֹמַר שֶׁאֵין קֻולָּא בַּדָּבָר אֶלָּא הָכִי קָאָמַר אֵין קֻולָּא בַּאֲבֵילוּת כִּי אִם בַּאֲנִינוּת וְלָא אָתֵי לְזִלְזוּלֵי בַּאֲבֵילוּת:</div>
+          <div class="glose-fr">« Il ne mange pas de viande et ne boit pas de vin. » Il parait que, de meme qu&#x27;on autorise au dernier chapitre de Taanit (30a), a la veille du neuf av, la viande qui n&#x27;est pas preparee comme des chelamim et le vin sortant du pressoir, cela est de meme permis a l&#x27;onen. Toutefois, on n&#x27;a pas coutume d&#x27;appliquer cette permission, ni ici ni le neuf av. Difficulte : cela laisse entendre que l&#x27;onen est plus grave que l&#x27;endeuille, car nous ne trouvons pas d&#x27;endeuille a qui la viande et le vin soient interdits ; et quant aux qodachim, nous trouvons que l&#x27;endeuille en mange tandis que l&#x27;onen en est interdit. Dans les autres domaines, on a ete plus severe dans le deuil — le renversement du lit, le port de la sandale, la couverture de la tete, et bien d&#x27;autres choses encore — alors que cela est permis a l&#x27;onen. On peut repondre que les choses interdites au titre du deuil sont permises a l&#x27;onen et interdites a l&#x27;endeuille ; mais les choses qui ne sont pas interdites au titre du deuil et qui le sont parce qu&#x27;il doit rester occupe a l&#x27;ensevelissement de son mort sans se laisser entrainer par autre chose — comme manger de la viande et boire du vin — sont interdites precisement a l&#x27;onen. Quant aux relations conjugales, dont il ressort plus loin qu&#x27;elles sont interdites a l&#x27;onen, la raison en est peut-etre qu&#x27;il risque de s&#x27;y laisser entrainer, ou bien qu&#x27;il y a la une joie excessive et une effronterie ; ainsi l&#x27;ai-je trouve. Quant a la coupe des cheveux et au lavage du linge, nous ne savons pas s&#x27;ils sont permis a l&#x27;onen, et l&#x27;on ne peut apprendre l&#x27;interdiction de se couper les cheveux de ce qui est enseigne au traite Semahot : « il etait en train de se couper les cheveux et on lui dit qu&#x27;un de ses proches etait mort, celui-la acheve », ce qui laisserait entendre que s&#x27;il n&#x27;a pas commence cela lui est interdit — car il se peut que le texte parle d&#x27;une nouvelle recue apres l&#x27;ensevelissement. Au nom du Riva, j&#x27;ai ecrit que la coupe des cheveux est interdite, ce que l&#x27;on tire du verset « ne laissez pas croitre vos cheveux » (Lev. 10, 6) : tous y etaient donc tenus, et ils etaient onenim. Quant aux relations conjugales que nous interdisons plus loin, on a vu qu&#x27;il y avait lieu de les permettre durant l&#x27;aninout, comme nous le disons au premier chapitre de Ketoubot (4a), alors qu&#x27;on les a interdites durant le deuil ; car nous disons la-bas qu&#x27;on rentre le mort dans une chambre, qu&#x27;il accomplit la relation de la mitsva puis se retire. Et lorsque l&#x27;on dit la-bas que « le deuil dont il s&#x27;agit ici est leger et l&#x27;on risque de le prendre a la legere », et que la guemara objecte : quelle legerete ? si tu dis ce qui est enseigne, « il accomplit la relation de la mitsva », parce que le deuil n&#x27;a pas pris effet sur lui — cela ne veut pas dire qu&#x27;il n&#x27;y a la aucune legerete ; le sens est plutot qu&#x27;il y a de la legerete dans l&#x27;aninout et non dans le deuil, de sorte que l&#x27;on ne viendra pas a prendre le deuil a la legere.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">וְאֵין מְבָרְכִין עָלָיו. פֵּירֵשׁ בַּקּוּנְטְרֵס בִּבְרָכוֹת פֶּרֶק מִי שֶׁמֵּתוֹ (בְּרָכוֹת דַּף יח. וְשָׁם) בִּרְכַּת הַמּוֹצִיא וְאֵין מְזַמְּנִין בִּרְכַּת הַמָּזוֹן וְתֵימַהּ גַּבֵּי הַמּוֹצִיא מַה שַׁייָּךְ לוֹמַר אֵין מְבָרְכִין עָלָיו בִּשְׁלָמָא גַּבֵּי בִּרְכַּת הַמָּזוֹן שַׁיָּיךְ צֵירוּף אֶלָּא גַּבֵּי הַמּוֹצִיא מַאי שַׁיָּיךְ צֵירוּף וְיֵשׁ לְפָרֵשׁ דְּבַגְּמָרָא קָאָמְרִינַן דְּאֵין מְבָרְכִין עָלָיו אֶלָּא מִצְוָה לְחַלֵּק דְּהָווּ כִּשְׁנַיִם שֶׁאָכְלוּ שֶׁמִּצְוָה לֵיחָלֵק וְאֵין זֶה הָאוֹנֵן מִצְטָרֵף עִמָּהֶן וְאֵין מְזַמְּנִין עֲלֵיהֶן עִמָּהֶן לוֹמַר נְבָרֵךְ שֶׁאָכַלְנוּ מִשֶּׁלּוֹ וְאִי לָא הֲוָה תָּנֵי אֶלָּא חֲדָא הֲוָה אֲמִינָא לְעִנְיַן נְבָרֵךְ שֶׁאָכַלְנוּ מִשֶּׁלּוֹ דְּאֵין מִצְטָרֵף אֲבָל מִצְטָרֵף לִהְיוֹת לָהֶם דִּין שְׁלֹשָׁה לְבָרֵךְ אֶחָד מֵהֶן בַּעֲבוּר חֲבֵרוֹ לְהָכִי תָּנֵי תַּרְתֵּי וְרִיבָ&quot;א מְפָרֵשׁ דְּאֵין מְבָרְכִין וּמְזַמְּנִין חֲדָא לוֹמַר נְבָרֵךְ שֶׁאָכַלְנוּ מִשֶּׁלּוֹ וַחֲדָא לְבָרֵךְ בְּשֵׁם כְּמוֹ שֶׁמַּזְכִּירִין שָׁם בַּעֲשָׂרָה פֵּירֵשׁ בַּקּוּנְטְרֵס בְּפֶרֶק מִי שֶׁמֵּתוּ (ג&quot;ז שָׁם) וְאֵינוֹ מְבָרֵךְ אֵין צָרִיךְ לְבָרֵךְ בִּרְכַּת הַמָּזוֹן מַשְׁמַע מִפֵּירוּשׁוֹ דְּאֵין אָסוּר לְבָרֵךְ וּבִשְׁמַעְתִּין נָמֵי פֵּירֵשׁ כְּעִנְיָן זֶה וּמִיהוּ מִדְּקָאָמַר בְּרֵישׁ פֶּרֶק מִי שֶׁמֵּתוֹ הָתָם לְמָאֵן דְּאָמַר [תּוֹךְ] אַרְבַּע אַמּוֹת הוּא דְאָסוּר פֵּירֵשׁ רַבֵּינוּ יִצְחָק בִּבְרָכוֹת דְּאִיכָּא אִיסּוּר לְבָרֵךְ וְגַם בְּתוֹסָפוֹת הָרַב פֵּירֵשׁ דְּאָסוּר לְבָרֵךְ וְתֵימַהּ לְרַבִּי יִצְחָק דְּהַשְׁתָּא נָהֲגוּ לְבָרֵךְ וּלְזַמֵּן וְהָיָה אוֹמֵר דְּלָא אַייְרֵי הָכָא רַק כְּשֶׁהוּא עוֹסֵק בְּצָרְכֵי הַמֵּת שֶׁאֵין לוֹ לְהִתְבַּטֵּל מִן הַמִּצְוָה אֲבָל בְּשָׁעָה שֶׁאֵינוֹ עוֹסֵק שָׁרִי אִי נָמֵי בְּשָׁעָה שֶׁאֲחֵרִים עוֹסְקִים וְהוּא אֵינוֹ עוֹשֶׂה כְּלוּם וּמִיהוּ בִּירֻושַּׁל&#x27; אֵינוֹ מַשְׁמַע כֵּן וְהָכֵי אִיתָא הָתָם אֵינוֹ אוֹכֵל כָּל צָורְכּוֹ וְאֵינוֹ שׁוֹתֶה כָּל צָורְכּוֹ כּוּ&#x27; וְאֵינוֹ מְבָרֵךְ וְאִם בֵּירַךְ אֵין עוֹנִין אַחֲרָיו אָמֵן וְאִם בֵּרְכוּ אֲחֵרִים אֵינוֹ עוֹנֶה אַחֲרֵיהֶם אָמֵן וְאִם מִשּׁוּם בִּיטּוּל מִצְוַת עֵסֶק בְּמֵתוֹ מַה בִּיטּוּל יֵשׁ בַּעֲנִייַּת אָמֵן מִיהוּ נִרְאֶה לִי מִשּׁוּם שְׁמִיעַת הַבְּרָכָה שֶׁלֹּא תִּהְיֶה אָמֵן יְתוֹמָה וְעוֹד דְּאָמְרִינַן לְקַמָּן הֵן עוֹמְדִין וּמִתְפַּלְּלִין וְהוּא יוֹשֵׁב וּמַצְדִּיק עָלָיו אֶת הַדִּין וּמַשְׁמַע שֶׁאֵינוֹ עוֹסֵק בּוֹ כְּלָל אֶלָּא יוֹשֵׁב וְדוֹמֵם וְנִרְאֶה דְּאָסוּר לְבָרֵךְ וְשׁוּב מָצָאתִי בִּירֻושַּׁל&#x27; דְּרֵישׁ פֶּרֶק מִי שֶׁמֵּתוֹ תָּנֵי אִם רָצָה לְהַחְמִיר עַל עַצְמוֹ אֵין שׁוֹמְעִין לוֹ לָמָּה מִפְּנֵי כְּבוֹדוֹ שֶׁל מֵת אוֹ מִשּׁוּם שֶׁאֵין לוֹ מִי שֶׁיִּשָּׂא מַשּׂאוֹי וּפָרִיךְ וְהָא תַּנְיָא פָּטוּר מִנְּטִילַת לוּלָב וְקָא סָלְקָא דַּעְתֵּיהּ דְּמַיְירֵי בְּיוֹם טוֹב וּבוֹ אֵינוֹ טָרוּד לִישָּׂא בְּמַשּׂאוֹי וּמְשַׁנֵּי תִּפָּתֵר בְּחוֹל פֵּירוּשׁ בְּחֻולּוֹ שֶׁל מוֹעֵד וּפָרִיךְ וְהָתַנְיָא פָּטוּר מִתְּקִיעַת שׁוֹפָר אִית לָךְ לְמֵימַר בְּחוֹל וְלֹא בְּיוֹם טוֹב אָמַר ר&#x27; חֲנִינָא מִכֵּיוָן שֶׁהָיוּ זְקוּקִים לְהָבִיא לוֹ אָרוֹן וְתַכְרִיכִין דִּתְנֵינַן תַּמָּן מַחְשִׁיכִין עַל הַתְּחוּם לְפַקֵּחַ עַל עִסְקֵי כַּלָּה וְעַל עִסְקֵי הַמֵּת לְהָבִיא אָרוֹן וְתַכְרִיכִין נָמֵי כְּמוֹ שֶׁהוּא נוֹשֵׂא מַשּׂאוֹי דָּמֵי מַשְׁמַע דִּפְלִיגִי בְּשַׁבָּת וּבְיוֹם טוֹב דְּאֵינוֹ מְבָרֵךְ בְּמַאי דְּאָמְרִינַן מִיהוּ הָא קַשְׁיָא לָן דְּאָמְרִינַן בְּסֵיפָא בְּשַׁבָּת מְבָרֵךְ וּמְזַמֵּן וְצָרִיךְ עִיּוּן:</div>
+          <div class="glose-fr">« On ne recite pas la benediction pour lui. » Le Qountras a explique, dans Berakhot au chapitre Mi che-meto (18a), qu&#x27;il s&#x27;agit de la benediction ha-motsi, et que « on ne le convie pas au zimoun » vise la birkat hamazon. Difficulte : a propos du ha-motsi, que signifie « on ne recite pas la benediction pour lui » ? Pour la birkat hamazon, la notion de jonction se comprend, mais pour le ha-motsi, de quelle jonction s&#x27;agirait-il ? On peut expliquer que la guemara dit qu&#x27;on ne recite pas la benediction pour lui et qu&#x27;il y a plutot mitsva de se separer, car ils sont comme deux personnes qui ont mange, pour lesquelles il y a mitsva de se separer ; cet onen ne se joint pas a elles, et on ne fait pas le zimoun avec elles pour dire « benissons Celui dont nous avons mange ». Et si la baraita n&#x27;avait enseigne qu&#x27;une seule chose, j&#x27;aurais pu dire qu&#x27;il ne se joint pas pour « benissons Celui dont nous avons mange », mais qu&#x27;il se joindrait pour leur donner le statut de trois, l&#x27;un benissant pour son compagnon ; c&#x27;est pourquoi elle enseigne les deux. Le Riva explique que « on ne benit pas » et « on ne fait pas le zimoun » visent l&#x27;un la formule « benissons Celui dont nous avons mange », l&#x27;autre la benediction avec le Nom, comme on mentionne le Nom a dix. Le Qountras a explique au chapitre Mi che-meto que « il ne benit pas » signifie qu&#x27;il n&#x27;a pas besoin de reciter la birkat hamazon ; il ressort de son explication qu&#x27;il n&#x27;est pas interdit de benir, et dans notre sougya il a explique dans le meme sens. Toutefois, de ce qui est dit au debut du chapitre Mi che-meto — la-bas, pour celui qui tient que l&#x27;interdiction ne porte que dans les quatre coudees — Rabbenou Yitshak a explique dans Berakhot qu&#x27;il y a interdiction de benir ; et dans les Tossefot, le Rav a explique lui aussi qu&#x27;il est interdit de benir. Difficulte pour Rabbi Yitshak : de nos jours, on a coutume de benir et de faire le zimoun. Il disait que notre passage ne parle que du moment ou il s&#x27;occupe des besoins du mort, ou il ne doit pas s&#x27;ecarter de la mitsva ; mais lorsqu&#x27;il ne s&#x27;en occupe pas, cela est permis. Ou bien : lorsque d&#x27;autres s&#x27;en occupent et que lui ne fait rien. Toutefois, le Yerouchalmi ne laisse pas entendre ainsi, car on y lit : il ne mange pas a sa suffisance et ne boit pas a sa suffisance etc., et il ne benit pas ; s&#x27;il a beni, on ne repond pas amen apres lui, et si d&#x27;autres ont beni, il ne repond pas amen apres eux. Or, si le motif etait l&#x27;interruption de la mitsva de s&#x27;occuper de son mort, quelle interruption y aurait-il a repondre amen ? Il me parait plutot que le motif tient a l&#x27;ecoute de la benediction, pour que l&#x27;amen ne soit pas un amen orphelin. En outre, nous disons plus loin : eux se tiennent debout et prient, et lui est assis et justifie sur lui le jugement, ce qui laisse entendre qu&#x27;il ne s&#x27;occupe de rien, mais reste assis et silencieux. Il parait donc qu&#x27;il est interdit de benir. J&#x27;ai ensuite trouve dans le Yerouchalmi, au debut du chapitre Mi che-meto : il est enseigne que s&#x27;il veut se montrer plus rigoureux envers lui-meme, on ne l&#x27;ecoute pas ; pourquoi ? a cause de l&#x27;honneur du mort, ou parce qu&#x27;il n&#x27;a personne pour porter la charge. La guemara objecte : mais il est enseigne qu&#x27;il est dispense de la prise du loulav ! Elle supposait qu&#x27;il s&#x27;agit d&#x27;un jour de fete, ou il n&#x27;est pas occupe a porter une charge. Elle repond : explique-le un jour ordinaire, c&#x27;est-a-dire durant hol hamoed. Elle objecte : mais il est enseigne qu&#x27;il est dispense de la sonnerie du chofar ; peux-tu dire que ce soit un jour ordinaire et non un jour de fete ? Rabbi Hanina dit : puisqu&#x27;ils avaient besoin de lui apporter un cercueil et des linceuls — comme nous l&#x27;avons appris la-bas : on attend a la limite du tehoum pour s&#x27;occuper des affaires d&#x27;une fiancee et des affaires d&#x27;un mort, pour apporter cercueil et linceuls — cela aussi compte comme s&#x27;il portait une charge. Il en ressort qu&#x27;ils divergent a propos du Chabbat et du jour de fete, ou il ne benit pas, selon ce que nous avons dit. Toutefois une difficulte nous demeure, car nous disons dans la fin de la baraita que le Chabbat il benit et convie au zimoun ; cela demande examen.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La liste rassemble deux registres. Les premiers elements ecartent les marques de repas festif : s'accouder, la viande, le vin. Les suivants portent sur la benediction et le <b>zimoun</b>, dont l'onen se trouve exclu, faute de pouvoir acquitter autrui ni compter dans le quorum de trois.</p><p>La dispense generale des mitsvot decoule du principe selon lequel celui qui est engage dans une mitsva se trouve dispense d'une autre : l'ensevelissement du mort occupe entierement l'onen.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּבְשַׁבָּת — מֵיסֵב וְאוֹכֵל, וְאוֹכֵל בָּשָׂר וְשׁוֹתֶה יַיִן, וּמְבָרֵךְ וּמְזַמֵּן, וּמְבָרְכִין וּמְזַמְּנִין עָלָיו, וְחַיָּיב בִּקְרִיאַת שְׁמַע וּבִתְפִילָּה וּבִתְפִילִּין, וּבְכָל מִצְוֹת הָאֲמוּרוֹת בַּתּוֹרָה. רַבָּן גַּמְלִיאֵל אוֹמֵר: מִתּוֹךְ שֶׁנִּתְחַיֵּיב בְּאֵלּוּ — נִתְחַיֵּיב בְּכֻולָּן.</div>
+            <div class="fr"><p>Mais le Chabbat, il s&#x27;accoude et mange, il mange de la viande et boit du vin ; il recite la benediction et convie au zimoun, on recite la benediction pour lui et on le convie au zimoun ; il est tenu de la lecture du Chema, de la tefila et des tefilines, ainsi que de toutes les mitsvot enoncees dans la Torah. Rabban Gamliel dit : puisqu&#x27;il est tenu de celles-la, il est tenu de toutes.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִתּוֹךְ שֶׁנִּתְחַיֵּיב בְּאֵלּוּ</b> קְרִיאַת שְׁמַע כו&#x27; נִתְחַיֵּיב בְּכֻולָּן:</div>
+          <div class="glose-fr">la lecture du Chema et le reste : il est tenu de toutes.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le Chabbat, l'ensevelissement se trouve de toute maniere differe : le motif de la dispense disparait et l'onen reprend la conduite ordinaire du jour. La baraita reprend point par point la liste precedente pour en inverser chaque terme.</p><p>L'ajout de Rabban Gamliel parait redondant, puisque le premier tana a deja dit « toutes les mitsvot ». Le folio suivant en tire que son propos vise un element que le premier tana laissait de cote.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאָמַר רַבִּי יוֹחָנָן: תַּשְׁמִישׁ הַמִּטָּה אִיכָּא בֵּינַיְיהוּ.</div>
+            <div class="fr"><p>Et Rabbi Yohanan a dit : la difference entre eux porte sur les relations conjugales.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תַּשְׁמִישׁ הַמִּטָּה אִיכָּא בֵּינַיְיהוּ</b> הָא דְּאָמַר נִתְחַיֵּיב בְּכֻולָּן סָבַר מֻותָּר בְּתַשְׁמִישׁ הַמִּטָּה וְתַנָּא קַמָּא סָבַר אָסוּר בְּתַשְׁמִישׁ הַמִּטָּה:</div>
+          <div class="glose-fr">celui qui dit « il est tenu de toutes » tient que les relations conjugales sont permises, et le premier tana tient qu&#x27;elles sont interdites.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabbi Yohanan identifie le point que l'ajout de Rabban Gamliel vient trancher. Le premier tana enumere des mitsvot qui s'accomplissent au vu de tous ; les relations conjugales relevent des <b>devarim che-be-tsina</b>, les choses accomplies en prive, et restent hors de sa liste.</p><p>Cette <b>nafka mina</b> donne a la baraita sa portee pour notre question : un desaccord sur une pratique privee le Chabbat ressemble exactement au desaccord amoraique du debut du folio.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאי לָאו בְּהָא קָא מִיפַּלְגִי, דְּמַר סָבַר: יֵשׁ אֲבֵילוּת בְּשַׁבָּת, וּמַר סָבַר: אֵין אֲבֵילוּת בְּשַׁבָּת!</div>
+            <div class="fr"><p>N&#x27;est-ce pas sur ce point qu&#x27;ils divergent : l&#x27;un tient qu&#x27;il y a un deuil le Chabbat, et l&#x27;autre tient qu&#x27;il n&#x27;y a pas de deuil le Chabbat ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַר</b> דְּאָסַר בְּתַשְׁמִישׁ סָבַר יֵשׁ אֲבֵילוּת בְּשַׁבָּת:</div>
+          <div class="glose-fr">celui qui interdit les relations conjugales tient qu&#x27;il y a un deuil le Chabbat.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמַר</b> דְּשָׁרֵי סָבַר כִּשְׁמוּאֵל דְּאָמַר אֵין אֲבֵילוּת בְּשַׁבָּת:</div>
+          <div class="glose-fr">celui qui les permet tient comme Chemouel, qui dit qu&#x27;il n&#x27;y a pas de deuil le Chabbat.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara formule la proposition : le premier tana retiendrait les relations conjugales parce que le deuil subsiste le Chabbat dans ce qui est prive, et Rabban Gamliel les permettrait parce que le jour suspend tout deuil.</p><p>Rachi rattache la seconde position a Chemouel, nomme a la page precedente comme tenant de l'absence de deuil le Chabbat, ce qui donnerait a la position amoraique un appui tannaitique.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מִמַּאי? דִּלְמָא עַד כָּאן לָא קָאָמַר תַּנָּא קַמָּא הָתָם, אֶלָּא מִשּׁוּם דְּמֵתוֹ מֻוטָּל לְפָנָיו. אֲבָל הָכָא, דְּאֵין מֵתוֹ מֻוטָּל לְפָנָיו — לֹא.</div>
+            <div class="fr"><p>D&#x27;ou cela ? Peut-etre le premier tana n&#x27;a-t-il parle ainsi que la-bas, parce que son mort est etendu devant lui ; mais ici, ou son mort n&#x27;est pas etendu devant lui, non.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le rejet repose sur la difference de situation entre les deux cas. La baraita traite de l'<b>aninout</b>, avant l'ensevelissement ; notre question porte sur l'<b>avelout</b>, apres. Le motif que le premier tana retient, la presence du mort, tombe une fois l'ensevelissement accompli.</p><p>Il peut donc interdire les relations conjugales dans la baraita tout en tenant qu'il n'y a pas de deuil le Chabbat durant les sept jours.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 250" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+<rect x="0" y="0" width="740" height="250" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2933">Pourquoi la baraita ne tranche pas : deux echappatoires symetriques</text>
+<rect x="24" y="44" width="692" height="40" rx="6" fill="#ffffff" stroke="#c7cdd4"/>
+<text x="370" y="60" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1f2933">Deux situations distinctes</text>
+<text x="370" y="77" text-anchor="middle" font-size="11" fill="#5b6b7c">la baraita : le mort n'est pas encore enseveli (aninout) — notre question : les sept jours apres l'ensevelissement (avelout)</text>
+<rect x="24" y="100" width="340" height="100" rx="6" fill="#f4f0e8" stroke="#9a7b3f"/>
+<text x="194" y="122" text-anchor="middle" font-size="12.5" font-weight="700" fill="#5c4517">Le premier tana peut interdire la-bas seulement</text>
+<text x="194" y="144" text-anchor="middle" font-size="11.5" fill="#7a6540">motif retenu : le mort est etendu devant lui</text>
+<text x="194" y="163" text-anchor="middle" font-size="11.5" fill="#7a6540">une fois enseveli, ce motif tombe</text>
+<text x="194" y="184" text-anchor="middle" font-size="11" fill="#9a7b3f">il peut donc tenir qu'il n'y a pas de deuil le Chabbat</text>
+<rect x="386" y="100" width="330" height="100" rx="6" fill="#eef3f8" stroke="#4a6fa5"/>
+<text x="551" y="122" text-anchor="middle" font-size="12.5" font-weight="700" fill="#24405e">Rabban Gamliel peut permettre la-bas seulement</text>
+<text x="551" y="144" text-anchor="middle" font-size="11.5" fill="#5b6b7c">motif retenu : le deuil n'a pas encore pris effet</text>
+<text x="551" y="163" text-anchor="middle" font-size="11.5" fill="#5b6b7c">une fois le deuil en vigueur, il interdirait</text>
+<text x="551" y="184" text-anchor="middle" font-size="11" fill="#4a6fa5">il peut donc tenir qu'il y a un deuil le Chabbat</text>
+<rect x="24" y="212" width="692" height="30" rx="6" fill="#3b5c7e"/>
+<text x="370" y="232" text-anchor="middle" font-size="11.5" font-weight="700" fill="#ffffff">Chaque tana pouvant se ranger dans l'un ou l'autre camp, la baraita ne peut servir d'appui</text>
+</svg></div><div class="svg-cap">Les deux echappatoires qui empechent de tirer de la baraita un appui pour l&#x27;une ou l&#x27;autre position.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְעַד כָּאן לָא קָאָמַר רַבָּן גַּמְלִיאֵל הָתָם, דְּאַכַּתִּי לָא חָל אֲבֵילוּת עֲלֵיהּ. אֲבָל הָכָא, דְּחָל אֲבֵילוּת עֲלֵיהּ — הָכִי נָמֵי.</div>
+            <div class="fr"><p>Et peut-etre Rabban Gamliel n&#x27;a-t-il parle ainsi que la-bas, parce que le deuil n&#x27;a pas encore pris effet sur lui ; mais ici, ou le deuil a pris effet sur lui, il en irait de meme [et il interdirait].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">עֲדַייִן לֹא חָלָה אֲבֵילוּת עָלֶיהָ דְּלָא נִקְבַּר:</div>
+          <div class="glose-fr">le deuil n&#x27;a pas encore pris effet sur lui, puisqu&#x27;il n&#x27;est pas enseveli.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le second volet du rejet est exactement symetrique. Rabban Gamliel peut permettre dans la baraita parce que le deuil n'a pas encore commence, l'ensevelissement n'ayant pas eu lieu, tout en tenant qu'il y a un deuil le Chabbat une fois les sept jours entames.</p><p>Chacun des deux tanaim pouvant se ranger dans l'un ou l'autre camp, la baraita ne fournit aucun appui. La controverse amoraique demeure, et la conduite retenue reste celle de Rabbi Yohanan : le Chabbat, les pratiques de deuil accomplies en prive sont observees.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Moed_Katan_23a.html">&lsaquo; Moed_Katan 23a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Moed_Katan_24a.html">Moed_Katan 24a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

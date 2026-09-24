@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pesachim 64b - Trois groupes, les portes, et la zerika du pesah</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Pesachim 64b - Trois groupes, les portes, et la zerika du pesah</h1>
+    <div class="ref">Pesachim 64b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Pesachim_64a.html">&lsaquo; Pesachim 64a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Pesachim_65a.html">Pesachim 65a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> La mishna acheve le rite du chabbat : sans batons, deux hommes suspendent le pesah bras contre epaule, puis on en sort les emourim et on les fait fumer. Les trois groupes attendent la nuit, sur le mont du Temple, dans le heil, et dans la azara, puis ils rotissent.</p><p>Rabbi Its&#x27;hak exige trois groupes de trente, a cause de kahal, eda et Israel. Cinquante hommes suffisent par rotation.</p><p>Abaye et Rava se partagent la fermeture des portes : d&#x27;elles-memes, ou par la main de l&#x27;homme. La page nomme le pesah des ecrases, au temps de Hillel, et le pesah serre d&#x27;Agrippa, compte par les reins.</p><p>Puis la Guemara reprend le service du sang : rangees d&#x27;or et d&#x27;argent, chehita du zar, holakha, et la zerika du pesah, avec le yesod, apprise de l&#x27;ola.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 430" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="430" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Chabbat : suspendre, attendre, rotir a la nuit</text>
+<text x="370" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Les batons de la mishna precedente ne se preparent pas. Rachi.</text>
+<rect x="16" y="62" width="348" height="168" rx="4" fill="#eef3f7" stroke="#5d7385"/>
+<text x="190" y="88" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5566">Suspension</text>
+<text x="190" y="116" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Main sur l'epaule du collegue</text>
+<text x="190" y="140" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Sa main sur mon epaule</text>
+<text x="190" y="164" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le pesah pend au bras</text>
+<text x="190" y="188" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">par les tendons du jarret</text>
+<text x="190" y="212" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Puis : fendre, emourim, magis, autel</text>
+<rect x="376" y="62" width="348" height="168" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="550" y="88" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">Trois lieux, jusqu'a la nuit</text>
+<text x="550" y="116" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">1. Mont du Temple</text>
+<text x="550" y="140" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">2. Heil, devant le soreg</text>
+<text x="550" y="164" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">3. Reste a sa place</text>
+<text x="550" y="196" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">La nuit : ils sortent et rotissent</text>
+<rect x="16" y="246" width="708" height="164" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="370" y="274" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Ordre du heil, selon Rachi</text>
+<rect x="36" y="292" width="200" height="92" rx="4" fill="#fbfaf7" stroke="#5d7385"/>
+<text x="136" y="326" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#3d5566">Soreg</text>
+<text x="136" y="350" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">cote exterieur</text>
+<rect x="260" y="292" width="200" height="92" rx="4" fill="#fbfaf7" stroke="#8a7b63"/>
+<text x="360" y="318" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#6b5344">Heil</text>
+<text x="360" y="342" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2b2b2b">entre soreg</text>
+<text x="360" y="362" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2b2b2b">et mur des femmes</text>
+<rect x="484" y="292" width="216" height="92" rx="4" fill="#fbfaf7" stroke="#2f5c2f"/>
+<text x="592" y="326" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2f5c2f">Azarat nashim</text>
+<text x="592" y="350" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">debut de la montee</text>
+</svg></div>
+          <figcaption>Chabbat : suspension sans batons, puis trois lieux d&#x27;attente jusqu&#x27;a la nuit. Le heil est entre le soreg et le mur de la azarat nashim.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 460" xmlns="http://www.w3.org/svg">
+<rect width="740" height="460" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Kahal, eda, Israel : le doute de Rabbi Its'hak</text>
+<text x="370" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Chaque mot vaut dix. Les deux lectures doivent etre couvertes.</text>
+<rect x="16" y="64" width="348" height="200" rx="4" fill="#eef3f7" stroke="#5d7385"/>
+<text x="190" y="92" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5566">En une seule fois</text>
+<text x="190" y="122" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Kahal 10 + eda 10 + Israel 10</text>
+<text x="190" y="150" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Trente presents ensemble</text>
+<text x="190" y="186" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Donc chaque groupe : 30</text>
+<text x="190" y="214" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Moins de trente : la chehita manque</text>
+<text x="190" y="242" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">cette lecture</text>
+<rect x="376" y="64" width="348" height="200" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="550" y="92" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">L'un apres l'autre</text>
+<text x="550" y="122" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Trois groupes de dix</text>
+<text x="550" y="150" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">qui se succedent</text>
+<text x="550" y="186" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Donc trois groupes</text>
+<text x="550" y="214" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">sont exiges</text>
+<text x="550" y="242" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">meme si chacun est petit</text>
+<rect x="16" y="280" width="708" height="160" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="370" y="308" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Exigence qui couvre les deux</text>
+<text x="370" y="338" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">Trois groupes de trente personnes chacun</text>
+<text x="370" y="366" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">En une fois : les trente sont la. L'un apres l'autre : les trois groupes sont la.</text>
+<text x="370" y="396" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Cinquante hommes suffisent aussi, par entrees et sorties de dix.</text>
+<text x="370" y="420" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">A chaque vague, trente personnes se tiennent dans la azara.</text>
+</svg></div>
+          <figcaption>Kahal, eda, Israel. En une fois : trente ensemble. L&#x27;un apres l&#x27;autre : trois groupes. Les deux lectures exigent trois groupes de trente. Cinquante suffisent par rotation.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 420" xmlns="http://www.w3.org/svg">
+<rect width="740" height="420" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Ninelou ou noalin : s'appuyer sur le miracle</text>
+<text x="370" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Meme mishna d'Eduyot sur Akavia. Chacun la lit selon sa lecon.</text>
+<rect x="16" y="64" width="348" height="210" rx="4" fill="#eef3f7" stroke="#5d7385"/>
+<text x="190" y="92" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5566">Abaye : ninelou</text>
+<text x="190" y="120" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Les portes se ferment seules</text>
+<text x="190" y="144" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Acte miraculeux, Rachi</text>
+<text x="190" y="176" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Autant qui entrent, entrent</text>
+<text x="190" y="200" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">On s'appuie sur le miracle</text>
+<text x="190" y="232" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Tant qu'elles restent ouvertes</text>
+<text x="190" y="254" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">on laisse entrer</text>
+<rect x="376" y="64" width="348" height="210" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="550" y="92" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Rava : noalin</text>
+<text x="550" y="120" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Des hommes ferment les portes</text>
+<text x="550" y="144" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">au moment voulu</text>
+<text x="550" y="176" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">On ne s'appuie pas</text>
+<text x="550" y="200" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">sur le miracle</text>
+<text x="550" y="232" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">On ferme a temps</text>
+<text x="550" y="254" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">pour garder trois groupes</text>
+<rect x="16" y="290" width="708" height="110" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="370" y="318" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">Deux pesah nommes</text>
+<text x="190" y="350" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Pesah meoukhin</text>
+<text x="190" y="372" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Hillel : un vieillard ecrase</text>
+<text x="550" y="350" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Pesah meouvin</text>
+<text x="550" y="372" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Agrippa : le peuple est nombreux</text>
+</svg></div>
+          <figcaption>Abaye : les portes se ferment seules, on s&#x27;appuie sur le miracle. Rava : on les ferme, on ne s&#x27;y appuie pas. Pesah meoukhin au temps de Hillel. Pesah meouvin sous Agrippa.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">שחל להיות בשבת, מניח ידו על כתף חבירו, ויד חבירו על כתיפו, ותולה ומפשיט. קרעו, והוציא את אימוריו. נתנו במגיס, והקטירן על גבי המזבח.</div>
+            <div class="fr"><p>qui tombe un chabbat, il pose sa main sur l&#x27;epaule de son collegue, et la main de son collegue sur son epaule, il suspend et il depouille. Il l&#x27;a dechire, et il en a sorti les emourim (parties offertes sur l&#x27;autel).</p><p>Il les a places dans un magis (grande coupe), et il les a faits fumer sur l&#x27;autel.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שחל להיות בשבת</b> ואינו יכול לתקן המקלות:</div>
+          <div class="glose-fr">Et il ne peut pas preparer les batons.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ידו על כתף חבירו</b> ותולה אותו בגידי ארכובותיו בזרועו:</div>
+          <div class="glose-fr">Et il le suspend par les tendons de ses jarrets, a son bras.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>במגיס</b> קערה:</div>
+          <div class="glose-fr">Une coupe.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La phrase continue Rabbi Eliezer, au feuillet precedent : le quatorze qui tombe un <b>chabbat</b>. Rachi : les batons minces, prevus pour suspendre le pesah, ne se preparent pas ce jour-la. Deux hommes posent chacun une main sur l'epaule de l'autre. La bete pend au bras, par les tendons du jarret.</p><p>On dechire la chair, on retire les <b>emourim</b>, on les met dans un <b>magis</b>, et on les fait fumer sur l'autel.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 430" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="430" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Chabbat : suspendre, attendre, rotir a la nuit</text>
+<text x="370" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Les batons de la mishna precedente ne se preparent pas. Rachi.</text>
+<rect x="16" y="62" width="348" height="168" rx="4" fill="#eef3f7" stroke="#5d7385"/>
+<text x="190" y="88" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5566">Suspension</text>
+<text x="190" y="116" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Main sur l'epaule du collegue</text>
+<text x="190" y="140" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Sa main sur mon epaule</text>
+<text x="190" y="164" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le pesah pend au bras</text>
+<text x="190" y="188" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">par les tendons du jarret</text>
+<text x="190" y="212" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Puis : fendre, emourim, magis, autel</text>
+<rect x="376" y="62" width="348" height="168" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="550" y="88" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">Trois lieux, jusqu'a la nuit</text>
+<text x="550" y="116" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">1. Mont du Temple</text>
+<text x="550" y="140" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">2. Heil, devant le soreg</text>
+<text x="550" y="164" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">3. Reste a sa place</text>
+<text x="550" y="196" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">La nuit : ils sortent et rotissent</text>
+<rect x="16" y="246" width="708" height="164" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="370" y="274" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Ordre du heil, selon Rachi</text>
+<rect x="36" y="292" width="200" height="92" rx="4" fill="#fbfaf7" stroke="#5d7385"/>
+<text x="136" y="326" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#3d5566">Soreg</text>
+<text x="136" y="350" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">cote exterieur</text>
+<rect x="260" y="292" width="200" height="92" rx="4" fill="#fbfaf7" stroke="#8a7b63"/>
+<text x="360" y="318" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#6b5344">Heil</text>
+<text x="360" y="342" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2b2b2b">entre soreg</text>
+<text x="360" y="362" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2b2b2b">et mur des femmes</text>
+<rect x="484" y="292" width="216" height="92" rx="4" fill="#fbfaf7" stroke="#2f5c2f"/>
+<text x="592" y="326" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2f5c2f">Azarat nashim</text>
+<text x="592" y="350" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">debut de la montee</text>
+</svg></div><div class="svg-cap">Deux epaules pour suspendre. Ensuite, trois lieux jusqu&#x27;a la nuit : mont du Temple, heil, place du troisieme groupe.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">יצתה כת הראשונה וישבה לה בהר הבית. שניה בחיל, והשלישית במקומה עומדת. חשיכה — יצאו וצלו את פסחיהן.</div>
+            <div class="fr"><p>Le premier groupe est sorti et s&#x27;est assis sur le mont du Temple. Le second, dans le heil.</p><p>Le troisieme se tient a sa place. Il fait nuit : ils sont sortis et ont roti leurs pesahim.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וישבה לה בהר הבית</b> בשבת קאמר שלא היו יכולין להוליך פסחיהן לבתיהן:</div>
+          <div class="glose-fr">C&#x27;est du chabbat qu&#x27;il parle : ils ne pouvaient pas porter leurs pesahim a leurs maisons.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בחיל</b> לפני הסורג הוא בין הסורג לחומת עזרת נשים בתחלת עליית ההר:</div>
+          <div class="glose-fr">C&#x27;est devant le soreg : entre le soreg et le mur de la azarat nashim, au debut de la montee de la montagne.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rachi lit cette attente comme une regle de <b>chabbat</b> : on ne porte pas les pesahim jusqu'aux maisons. Le premier groupe reste sur le <b>Har ha-Bayit</b>. Le second reste dans le <b>heil</b>, entre le soreg et le mur du parvis des femmes. Le troisieme reste a sa place.</p><p>Des qu'il fait nuit, tous sortent et rotissent leurs pesahim.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">גמ׳ אמר רבי יצחק: אין הפסח נשחט אלא בשלש כתות של שלשים שלשים בני אדם. מאי טעמא? ״קהל״ ו״עדה״ ו״ישראל״. מספקא לן אי בבת אחת אי בזה אחר זה,</div>
+            <div class="fr"><p>Guemara. Rabbi Its&#x27;hak a dit : le pesah n&#x27;est egorge qu&#x27;en trois groupes de trente, trente personnes.</p><p>Quelle est la raison ? Kahal, eda, et Israel.</p><p>Nous sommes dans le doute : est-ce en une seule fois, ou l&#x27;un apres l&#x27;autre,</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>גמ&#x27; שלשים בכל כת וכת</b> קהל עשרה ועדה עשרה וישראל עשרה:</div>
+          <div class="glose-fr">Trente dans chaque groupe : kahal, dix ; eda, dix ; Israel, dix.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מספקא ליה</b> דילמא בבת אחת צוה לשוחטו ויהיו בה שלשים:</div>
+          <div class="glose-fr">Peut-etre l&#x27;ordre est-il de l&#x27;egorger en une seule fois, et qu&#x27;il y ait en elle trente personnes.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Trois mots du verset, Exode 12, 6 : <b>kahal</b>, <b>eda</b>, <b>Israel</b>. Rachi donne dix personnes a chaque mot. Le doute porte sur la maniere de les compter.</p><p><b>En une seule fois</b> : les trente sont presents ensemble au moment de la chehita. <b>L'un apres l'autre</b> : trois groupes de dix se succedent. La phrase reste ouverte : la suite tranche en couvrant les deux lectures.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הלכך בעינן שלש כתות של שלשים שלשים בני אדם. דאי בבת אחת — הא איכא, ואי בזה אחר זה — הא איכא, הלכך בחמשין נמי סגיא, דעיילי תלתין ועבדי, עיילי עשרה ונפקי עשרה, עיילי עשרה ונפקי עשרה.</div>
+            <div class="fr"><p>C&#x27;est pourquoi il nous faut trois groupes de trente, trente personnes. Car si c&#x27;est en une seule fois, les voila ; et si c&#x27;est l&#x27;un apres l&#x27;autre, les voila.</p><p>C&#x27;est pourquoi, avec cinquante aussi, cela suffit : trente entrent et font le rite, dix entrent et dix sortent, dix entrent et dix sortent.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>או בזה אחר זה</b> שלש כתות של עשרה עשרה הלכך שלש כתות בעינן דילמא בזה אחר זה קאמר ושל שלשים בעינן דילמא בבת אחת קאמר ואינו יכול לשוחטו בפחות משלשים:</div>
+          <div class="glose-fr">Trois groupes de dix chacun. C&#x27;est pourquoi il nous faut trois groupes : peut-etre parle-t-il de l&#x27;un apres l&#x27;autre. Et il nous faut des groupes de trente : peut-etre parle-t-il d&#x27;une seule fois. On ne peut l&#x27;egorger a moins de trente.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בנ&#x27; סגי עיילי שלשים</b> ברישא ושוחטים פסחיהן ונפקי עשרה מינייהו ועיילי י&#x27; חדשים דאי בהדדי קאמר הא איכא ואי שלש כתות קאמר הא איכא:</div>
+          <div class="glose-fr">D&#x27;abord, et ils egorgent leurs pesahim. Dix d&#x27;entre eux sortent, et dix nouveaux entrent. Si c&#x27;est ensemble qu&#x27;il parle, les voila. Et s&#x27;il parle de trois groupes, les voila.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Les deux lectures restent ouvertes. On exige donc <b>trois groupes de trente</b>. La lecture simultanee a ses trente. La lecture successive a ses trois groupes.</p><p>Cinquante hommes y parviennent. Trente entrent et egorgent. Dix sortent, dix entrent : trente sont encore la, c'est un deuxieme groupe. Meme mouvement une fois encore : troisieme groupe. Rachi precise l'ordre : d'abord la sortie des dix, puis l'entree des dix nouveaux.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 300" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="300" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Cinquante hommes, trois vagues de trente</text>
+<rect x="16" y="46" width="230" height="180" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="131" y="74" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Vague 1</text>
+<text x="131" y="104" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">30 entrent</text>
+<text x="131" y="128" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">et egorgent</text>
+<text x="131" y="160" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">30 presents</text>
+<text x="131" y="190" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">groupe de trente</text>
+<rect x="258" y="46" width="230" height="180" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="373" y="74" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">Vague 2</text>
+<text x="373" y="104" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">10 sortent</text>
+<text x="373" y="128" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">10 nouveaux entrent</text>
+<text x="373" y="160" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">encore 30 presents</text>
+<text x="373" y="190" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">deuxieme groupe</text>
+<rect x="500" y="46" width="224" height="180" rx="4" fill="#eef3f7" stroke="#5d7385"/>
+<text x="612" y="74" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5566">Vague 3</text>
+<text x="612" y="104" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">10 sortent</text>
+<text x="612" y="128" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">10 nouveaux entrent</text>
+<text x="612" y="160" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">encore 30 presents</text>
+<text x="612" y="190" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">troisieme groupe</text>
+<text x="370" y="256" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Personnes au total : 30 + 10 + 10 = 50.</text>
+<text x="370" y="280" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Ensemble : trente sont la. Succession : trois groupes sont la.</text>
+</svg></div><div class="svg-cap">Trois vagues. A chaque vague, trente personnes. Au total, cinquante hommes.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">נכנסה כת ראשונה וכו׳. איתמר, אביי אמר: ננעלו תנן. רבא אמר: נועלין תנן.</div>
+            <div class="fr"><p>Le premier groupe est entre, etc. Il a ete enseigne : Abaye a dit : nous avons appris ninelou (elles se sont fermees).</p><p>Rava a dit : nous avons appris noalin (on ferme).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ננעלין תנן</b> מאליהן ומעשה נסים:</div>
+          <div class="glose-fr">D&#x27;elles-memes, et c&#x27;est un acte miraculeux.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La mishna du feuillet precedent dit que l'on ferme les portes de la azara. Abaye lit <b>ninelou</b> : les portes se sont fermees d'elles-memes. Rachi : miracle. Rava lit <b>noalin</b> : des hommes les ferment.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מאי בינייהו? איכא בינייהו למסמך אניסא. אביי אמר: ננעלו תנן, כמה דעיילו מעלו, וסמכינן אניסא. רבא אמר: נועלין תנן, ולא סמכינן אניסא.</div>
+            <div class="fr"><p>Quelle est la difference entre eux ? Il y a entre eux de s&#x27;appuyer sur le miracle.</p><p>Abaye a dit : nous avons appris ninelou : autant qu&#x27;il en entre, qu&#x27;il en entre, et nous nous appuyons sur le miracle. Rava a dit : nous avons appris noalin, et nous ne nous appuyons pas sur le miracle.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>סמכינן אניסא</b> וכל זמן שאין ננעלין מאליהן מניחין אותם ליכנס ולא חיישינן דלמא עיילי כולהו ואין כאן שלש כיתות:</div>
+          <div class="glose-fr">Et tant qu&#x27;elles ne se ferment pas d&#x27;elles-memes, on les laisse entrer. Et nous ne craignons pas que tous entrent, et qu&#x27;il n&#x27;y ait plus ici trois groupes.</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">כמה דעילי, ניעול, וסמכינן אניסא. מקשים תנן (משנה אבות ה, ה) &#x27;עשרה נסים נעשו לאבותינו בבית המקדש&#x27; ובכללם &#x27;לא ארע קרי לכהן גדול ביום הכפורים&#x27;. ולפי זה אמאי מזמנין כהן אחר בערב כיפור, יסמכו אניסא דלא יארע לו קרי? ונראה לי התם איכא עוד חששא אחרת שמא לא יהיה מרוצה לשמים ויכנס וימות ובזה לא שייך לסמוך על הנס דהרי הוא מת מכח קדושת המקום שנכנס בו בהיותו אינו ראוי ולהכי מזמנין כהן אחר בשביל חשש זה וחשש זה.</div>
+          <div class="glose-fr">Autant qu&#x27;il en entre, qu&#x27;il en entre, et nous nous appuyons sur le miracle. On objecte, d&#x27;apres ce que nous avons appris (mishna Avot 5, 5) : dix miracles ont ete faits pour nos peres dans le Temple, et parmi eux : aucun keri (emission qui rend impur) n&#x27;est arrive au Cohen Gadol le jour de Kippour. Des lors, pourquoi designe-t-on un autre cohen la veille de Kippour ? Que l&#x27;on s&#x27;appuie sur le miracle, et qu&#x27;aucun keri ne lui arrive. Il me semble : la-bas, il y a encore une autre crainte, qu&#x27;il ne soit pas agreable au Ciel, qu&#x27;il entre et qu&#x27;il meure. Sur cela, il n&#x27;y a pas lieu de s&#x27;appuyer sur le miracle, car il meurt par la kedousha du lieu ou il entre alors qu&#x27;il n&#x27;est pas apte. C&#x27;est pourquoi l&#x27;on designe un autre cohen, pour cette crainte et pour cette crainte.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La difference pratique : <b>s'appuyer sur le miracle</b>. Pour Abaye, on laisse entrer tant que les portes ne se ferment pas seules. Rachi : on ne craint pas que tout le monde entre d'un coup, au point qu'il ne reste plus trois groupes. Pour Rava, des hommes ferment a temps. On ne remet pas cette fermeture au miracle.</p><p>Ben Yehoyada rapproche ce principe du miracle d'Avot : pas de <b>keri</b> au Cohen Gadol a Kippour. La question : pourquoi un cohen suppleant, si l'on s'appuie sur ce miracle ? Reponse : une autre crainte reste, qu'il ne soit pas agreable au Ciel et qu'il meure en entrant, par la <b>kedousha</b> du lieu, parce qu'il n'est pas apte. Cette mort ne se couvre pas par le miracle. Le suppleant repond a l'une et a l'autre crainte.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 420" xmlns="http://www.w3.org/svg">
+<rect width="740" height="420" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Ninelou ou noalin : s'appuyer sur le miracle</text>
+<text x="370" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Meme mishna d'Eduyot sur Akavia. Chacun la lit selon sa lecon.</text>
+<rect x="16" y="64" width="348" height="210" rx="4" fill="#eef3f7" stroke="#5d7385"/>
+<text x="190" y="92" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5566">Abaye : ninelou</text>
+<text x="190" y="120" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Les portes se ferment seules</text>
+<text x="190" y="144" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Acte miraculeux, Rachi</text>
+<text x="190" y="176" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Autant qui entrent, entrent</text>
+<text x="190" y="200" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">On s'appuie sur le miracle</text>
+<text x="190" y="232" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Tant qu'elles restent ouvertes</text>
+<text x="190" y="254" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">on laisse entrer</text>
+<rect x="376" y="64" width="348" height="210" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="550" y="92" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Rava : noalin</text>
+<text x="550" y="120" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Des hommes ferment les portes</text>
+<text x="550" y="144" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">au moment voulu</text>
+<text x="550" y="176" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">On ne s'appuie pas</text>
+<text x="550" y="200" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">sur le miracle</text>
+<text x="550" y="232" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">On ferme a temps</text>
+<text x="550" y="254" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">pour garder trois groupes</text>
+<rect x="16" y="290" width="708" height="110" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="370" y="318" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">Deux pesah nommes</text>
+<text x="190" y="350" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Pesah meoukhin</text>
+<text x="190" y="372" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Hillel : un vieillard ecrase</text>
+<text x="550" y="350" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Pesah meouvin</text>
+<text x="550" y="372" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Agrippa : le peuple est nombreux</text>
+</svg></div><div class="svg-cap">Abaye laisse entrer et s&#x27;appuie sur la fermeture miraculeuse. Rava fait fermer par des hommes.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">והא דתנן, אמר רבי יהודה: חס ושלום שעקביא בן מהללאל נתנדה, שאין עזרה ננעלת על כל אדם בישראל בחכמה וביראת חטא כעקביא בן מהללאל. אביי מתרץ לטעמיה, ורבא מתרץ לטעמיה. אביי מתרץ לטעמיה: אין בעזרה בשעה שננעלה על כל אדם בישראל בחכמה וביראת חטא כעקביא בן מהללאל: רבא מתרץ לטעמיה: אין בעזרה בשעה שנועלין אותה על כל ישראל בחכמה וביראת חטא כעקביא בן מהללאל.</div>
+            <div class="fr"><p>Et ce que nous avons appris : Rabbi Yehouda a dit : loin de nous qu&#x27;Akavia ben Mahalalel ait ete mis au nidouy (ecarte), car la azara ne se ferme pas sur tout homme d&#x27;Israel qui soit, en sagesse et en crainte du peche, comme Akavia ben Mahalalel. Abaye resout selon son avis, et Rava resout selon son avis.</p><p>Abaye resout selon son avis : il n&#x27;y a personne dans la azara, a l&#x27;heure ou elle s&#x27;est fermee, sur tout homme d&#x27;Israel, en sagesse et en crainte du peche, comme Akavia ben Mahalalel. Rava resout selon son avis : il n&#x27;y a personne dans la azara, a l&#x27;heure ou on la ferme, sur tout Israel, en sagesse et en crainte du peche, comme Akavia ben Mahalalel.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>חס ושלום כו&#x27;</b> במסכת עדיות תנן ארבעה דברים העיד עקביא בן מהללאל כו&#x27; וקתני התם הוא היה אומר אין משקין לא את הגיורת ולא את המשוחררת אמרו לו מעשה בכרכמית שפחה שהיתה בירושלים והשקוה שמעיה ואבטליון אמר להם דוגמא השקוה דומין לה היו אותן שהשקוה ונידוהו אמר רבי יהודה חס ושלום שעקביא נתנדה שאין עזרה ננעלת כו&#x27; כשהיתה ננעלת על כל אדם בערבי פסחים שהקהל גדול ורב אין בהם אחד בחכמה וביראת חטא כעקביא:</div>
+          <div class="glose-fr">Dans le traite Eduyot, on apprend : quatre choses qu&#x27;a temoignees Akavia ben Mahalalel, etc. Et l&#x27;on enseigne la : il disait : on ne fait pas boire ni la convertie ni l&#x27;affranchie. Ils lui ont dit : un fait, Karkemit, une servante qui etait a Jerusalem, et Shemaya et Avtalyon lui ont fait boire. Il leur a dit : c&#x27;est un cas semblable qu&#x27;ils ont fait boire. Ceux qui l&#x27;ont fait boire lui etaient semblables. Et ils l&#x27;ont mis au nidouy. Rabbi Yehouda a dit : loin de nous qu&#x27;Akavia ait ete mis au nidouy, car la azara ne se ferme pas, etc. Quand elle se fermait sur tout le monde, les veilles de Pessah, le rassemblement etant grand et nombreux, il n&#x27;y a parmi eux personne, en sagesse et en crainte du peche, comme Akavia.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La mishna d'Eduyot dit que la <b>azara</b> ne se ferme pas sur un homme de la sagesse et de la crainte du peche d'Akavia. Rabbi Yehouda en tire qu'il n'a pas ete mis au <b>nidouy</b>. Abaye garde le verbe <b>ninela</b>, elle s'est fermee. Rava garde <b>noalin</b>, on la ferme. Chacun fait tenir la phrase avec sa lecon.</p><p>Rachi rappelle le temoignage : Akavia refuse l'eau de la sota a la convertie et a l'affranchie. On lui oppose Karkemit, a qui Shemaya et Avtalyon ont fait boire. Il repond que ceux qui ont fait boire lui etaient semblables. Le nidouy suit cette parole. Les veilles de Pessah, la foule est dans la azara au moment de la fermeture : parmi elle, personne n'atteint Akavia.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תנו רבנן: מעולם לא נתמעך אדם בעזרה, חוץ מפסח אחד שהיה בימי הלל, שנתמעך בו זקן אחד, והיו קוראין אותו ״פסח מעוכין״.</div>
+            <div class="fr"><p>Les Sages ont enseigne : jamais un homme n&#x27;a ete ecrase dans la azara, hormis un pesah qui eut lieu aux jours de Hillel, ou un vieillard fut ecrase, et on l&#x27;appelait pesah meoukhin (pesah des ecrases).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>פסח מעוכין</b> על שם שנתמעך:</div>
+          <div class="glose-fr">A cause de celui qui a ete ecrase.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La foule de la <b>azara</b> n'a ecrase personne, sauf une fois, aux jours de Hillel. Un vieillard a ete ecrase. Ce pesah porte le nom de <b>meoukhin</b>, du verbe de l'ecrasement.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תנו רבנן: פעם אחת ביקש אגריפס המלך ליתן עיניו באוכלוסי ישראל. אמר ליה לכהן גדול: תן עיניך בפסחים. נטל כוליא מכל אחד, ונמצאו שם ששים ריבוא זוגי כליות כפלים כיוצאי מצרים. חוץ מטמא ושהיה בדרך רחוקה. ואין לך כל פסח ופסח שלא נמנו עליו יותר מעשרה בני אדם. והיו קוראין אותו ״פסח מעובין״.</div>
+            <div class="fr"><p>Les Sages ont enseigne : une fois, le roi Agrippa a voulu poser les yeux sur les foules d&#x27;Israel. Il dit au Cohen Gadol : pose les yeux sur les pesahim.</p><p>Il prit un rein de chacun, et l&#x27;on trouva la soixante myriades de paires de reins, le double de ceux qui sortirent d&#x27;Egypte, hors l&#x27;impur et celui qui etait sur un chemin lointain. Et tu n&#x27;as aucun pesah sur lequel n&#x27;aient ete inscrits plus de dix personnes.</p><p>Et on l&#x27;appelait pesah meouvin (pesah serre, le peuple etant nombreux).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>פסח מעובין</b> עב על שם שהעם רב:</div>
+          <div class="glose-fr">Epais, a cause de ce que le peuple etait nombreux.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Agrippa veut voir l'ampleur d'Israel. Le Cohen Gadol compte les <b>pesahim</b> par un rein de chaque bete. Le compte annonce : soixante ribo de paires de reins, le double des sortis d'Egypte. Ce compte laisse dehors le <b>tame</b> et celui qui est en chemin lointain.</p><p>Chaque pesah a plus de dix inscrits. Le nom <b>meouvin</b> vient de l'epaisseur de la foule, comme le dit Rachi.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">נטל כוליא? הא בעי אקטורה! דהדר מקטיר להו. והכתיב: ״והקטירו״, שלא יערב חלביו של זה בזה!</div>
+            <div class="fr"><p>Il a pris un rein ? Mais il doit le faire fumer !</p><p>Il les fait fumer ensuite. Or il est ecrit : ve-hiktito (et il le fera fumer), pour qu&#x27;on ne melange pas les graisses de celui-ci avec celui-la !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>והקטירו</b> משמע לבדן שלא יערב חלבים של קרבן זה בחלבים של קרבן אחר:</div>
+          <div class="glose-fr">Cela implique : a part, pour qu&#x27;on ne melange pas les graisses de ce korban avec les graisses d&#x27;un autre korban.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le rein est un <b>emour</b> : il doit monter sur l'autel. Premiere reponse : on le brule apres le compte. Le verset au singulier, <b>ve-hiktito</b>, separe les graisses d'un korban de celles d'un autre. Rachi : on ne melange pas deux korbanot.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">דהדר מקטיר להו חדא חדא. והתניא ״והקטירם״, שיהא כולו כאחד! אלא: תפיסה בעלמא, דשקיל מינייהו עד דיהבין ליה מידי אחרינא.</div>
+            <div class="fr"><p>Il les fait fumer ensuite un par un. Or on a enseigne : ve-hiktiram (et il les fera fumer), pour que le tout soit ensemble !</p><p>Plutot : une simple saisie. Il en prend jusqu&#x27;a ce qu&#x27;on lui donne autre chose.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שיהא כולו כאחד</b> כל האימורין של קרבן:</div>
+          <div class="glose-fr">Tous les emourim du korban.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>תפיסה בעלמא</b> תופס כוליא ומראה לשליח והוא נותן פול או אבן כנגדה:</div>
+          <div class="glose-fr">Il saisit un rein, il le montre a l&#x27;envoye, et celui-ci donne une feve ou une pierre en regard.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Bruler les reins un par un se heurte a <b>ve-hiktiram</b> : les emourim d'un meme korban fument ensemble. Rachi : tout l'ensemble des emourim de ce korban.</p><p>La conclusion est une <b>tefisa</b>, une saisie breve. Le cohen montre le rein. L'envoye pose une feve ou une pierre pour le compte. Le rein retourne avec les emourim de sa bete.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 340" xmlns="http://www.w3.org/svg">
+<rect width="740" height="340" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Le rein compte, puis rendu a ses emourim</text>
+<rect x="16" y="46" width="170" height="150" rx="4" fill="#eef3f7" stroke="#5d7385"/>
+<text x="101" y="78" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#3d5566">1. Compter</text>
+<text x="101" y="108" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Un rein</text>
+<text x="101" y="132" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">par pesah</text>
+<text x="101" y="164" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Il doit fumer</text>
+<rect x="202" y="46" width="170" height="150" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="287" y="78" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#8a4b3a">2. Ensemble</text>
+<text x="287" y="108" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Ve-hiktito</text>
+<text x="287" y="132" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">singulier</text>
+<text x="287" y="164" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Pas de melange</text>
+<text x="287" y="182" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">entre korbanot</text>
+<rect x="388" y="46" width="170" height="150" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="473" y="78" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#8a4b3a">3. Un par un</text>
+<text x="473" y="108" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Ve-hiktiram</text>
+<text x="473" y="132" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">pluriel</text>
+<text x="473" y="164" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Emourim d'un korban</text>
+<text x="473" y="182" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">ensemble</text>
+<rect x="574" y="46" width="150" height="150" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="649" y="78" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2f5c2f">4. Tefisa</text>
+<text x="649" y="108" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Saisie breve</text>
+<text x="649" y="132" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Feve ou pierre</text>
+<text x="649" y="164" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Le rein revient</text>
+<text x="649" y="182" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">a ses emourim</text>
+<rect x="16" y="214" width="708" height="106" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="370" y="244" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le cohen saisit le rein, le montre a l'envoye.</text>
+<text x="370" y="270" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">L'envoye pose une feve ou une pierre en regard. Rachi.</text>
+<text x="370" y="296" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Le compte se fait sur cet objet. Le rein est brule avec son korban.</text>
+</svg></div><div class="svg-cap">Compter par le rein. Le singulier separe les korbanot. Le pluriel unit les emourim d&#x27;un korban. La saisie breve tranche.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כהנים עומדין שורות וכו׳. מאי טעמא? אילימא דילמא שקלי דדהבא ומעיילי דכספא — הכי נמי, דילמא שקלי בר מאתן ומעיילי בר מאה! אלא, דהכי שפיר טפי.</div>
+            <div class="fr"><p>Les cohanim se tiennent en rangees, etc. Quelle est la raison ?</p><p>Si tu dis : de peur qu&#x27;ils prennent de l&#x27;or et qu&#x27;ils mettent de l&#x27;argent. Ici aussi : de peur qu&#x27;ils prennent un de deux cents et qu&#x27;ils mettent un de cent !</p><p>Plutot : ainsi, c&#x27;est plus beau.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מאי טעמא</b> שורה שכולה כסף כסף:</div>
+          <div class="glose-fr">Une rangee qui est toute d&#x27;argent, argent.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אי נימא דילמא</b> כשהוא מחזיר הריקן ומקבל המלא זימנין דמחזיר ריקן של זהב ומקבל מלא של כסף והוה ליה מורידין בקודש:</div>
+          <div class="glose-fr">Quand il rend le vide et recoit le plein, il arrive qu&#x27;il rende un vide d&#x27;or et recoive un plein d&#x27;argent, et ce serait descendre dans le kodech.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La mishna separe la rangee d'argent et la rangee d'or. Premiere raison, ecartee : empecher qu'un cohen rende un bassin d'or et recoive un bassin d'argent. Rachi place l'echange au moment ou le vide revient et ou le plein est recu. Ce serait <b>moridin ba-kodech</b>, descendre dans la saintete.</p><p>La Guemara repond que le meme echange existe dans une rangee toute d'or : un bassin de deux cents contre un bassin de cent. La raison retenue : une rangee d'un seul metal est <b>plus belle</b>.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 250" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="250" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Pourquoi une rangee d'un seul metal</text>
+<rect x="16" y="46" width="348" height="184" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="190" y="74" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Raison ecartee</text>
+<text x="190" y="104" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Or rendu, argent recu</text>
+<text x="190" y="128" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">descente dans le kodech</text>
+<text x="190" y="160" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Meme souci dans l'or seul :</text>
+<text x="190" y="184" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">bassin de 200, bassin de 100</text>
+<text x="190" y="208" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">La rangee unique ne l'empeche pas</text>
+<rect x="376" y="46" width="348" height="184" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="550" y="74" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Raison retenue</text>
+<text x="550" y="110" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">Ainsi, c'est plus beau</text>
+<text x="550" y="142" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Rangee toute d'argent</text>
+<text x="550" y="166" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Rangee toute d'or</text>
+<text x="550" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Un seul aspect par rangee</text>
+</svg></div><div class="svg-cap">L&#x27;echange or contre argent, puis 200 contre 100, ne justifie pas la rangee unique. La raison retenue est la beaute de la rangee.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ולא היו לבזיכין שוליים וכו׳. תנו רבנן: כל הבזיכין שבמקדש לא היו להן שוליים, חוץ מבזיכי לבונה של לחם הפנים — שמא יניחום ויפרוס הלחם.</div>
+            <div class="fr"><p>Et les bezikhin n&#x27;avaient pas de fond, etc. Les Sages ont enseigne : tous les bezikhin du Temple etaient sans fond, sauf les bezikhin de levona (encens) du lehem ha-panim (pains de proposition), de peur qu&#x27;on les pose et que le pain se fende.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>חוץ מבזיכי לבונה של לחם הפנים</b> שהיו מניחין אותן אצל הלחם על השולחן והתקינו להם מושב שוליים רחב כדי שלא יסמכו על הלחם שאצלם ויפרסו דופנותיו שהיה עשוי דפנות כמין תיבה פרוצה שני רוחותיה:</div>
+          <div class="glose-fr">On les posait aupres du pain, sur la table. On leur a menage un siege, un fond large, afin qu&#x27;on ne les appuie pas sur le pain qui est a cote d&#x27;eux et qu&#x27;on n&#x27;en fende pas les parois. Il etait fait de parois, comme une caisse ouverte sur deux de ses cotes.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Les <b>bezikhin</b> du Temple sont sans fond plat, pour que le sang ne repose pas. Exception : les coupes de <b>levona</b> posees avec le <b>lehem ha-panim</b>. Celles-la ont un fond large.</p><p>Rachi : le pain a des parois, comme une caisse ouverte de deux cotes. Une coupe pointue, appuyee dessus, fendrait ces parois. Le fond large evite cet appui.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">שחט ישראל וקבל הכהן וכו׳. לא סגיא דלאו ישראל?! היא גופא קא משמע לן, דשחיטה בזר כשירה. וקבל הכהן. הא קמשמע לן, מקבלה ואילך מצות כהונה.</div>
+            <div class="fr"><p>L&#x27;Israel a egorge, et le cohen a recu, etc. Faut-il que ce soit un Israel ?</p><p>C&#x27;est cela meme que le texte enseigne : la chehita par un zar (non-cohen) est kacher. Et le cohen a recu.</p><p>Voici ce que le texte enseigne : depuis la kabala (reception du sang) et au-dela, c&#x27;est une mitsva de kehouna.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מקבלה ואילך כו&#x27;</b> דכתיב ושחט את בן הבקר והקריבו בני אהרן וגו&#x27; ואמר מר במסכת חגיגה (דף יא.) והקריבו זו קבלת הדם לימד על הקבלה שטעונה כהונה:</div>
+          <div class="glose-fr">Car il est ecrit : il egorgera le fils du gros betail, et les fils d&#x27;Aharon l&#x27;offriront, etc. Et le maitre a dit dans le traite Hagiga (11a) : ve-hikrivou, c&#x27;est la reception du sang. Cela enseigne sur la kabala qu&#x27;elle exige la kehouna.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La question : la mishna exige-t-elle un <b>Israel</b> pour la chehita ? Elle enseigne le contraire de cette exigence de cohen : la <b>chehita</b> faite par un <b>zar</b> est kacher.</p><p>La suite, le cohen recoit, ouvre la part des cohanim. Depuis la <b>kabala</b>, le service est une mitsva de <b>kehouna</b>. Rachi : Levitique 1, 5, ve-hikrivou vise la reception du sang, d'apres Hagiga 11a.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 280" xmlns="http://www.w3.org/svg">
+<rect width="740" height="280" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Quatre services du sang, et l'ordre des bassins</text>
+<rect x="16" y="48" width="160" height="88" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="96" y="80" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2f5c2f">Chehita</text>
+<text x="96" y="104" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2b2b2b">kacher par un zar</text>
+<rect x="192" y="48" width="160" height="88" rx="4" fill="#eef3f7" stroke="#5d7385"/>
+<text x="272" y="80" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#3d5566">Kabala</text>
+<text x="272" y="104" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2b2b2b">mitsva de kehouna</text>
+<rect x="368" y="48" width="160" height="88" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="448" y="80" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#6b5344">Holakha</text>
+<text x="448" y="104" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2b2b2b">de main en main</text>
+<rect x="544" y="48" width="180" height="88" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="634" y="80" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#8a4b3a">Zerika</text>
+<text x="634" y="104" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2b2b2b">face au yesod</text>
+<rect x="16" y="156" width="348" height="104" rx="4" fill="#fbfaf7" stroke="#5d7385"/>
+<text x="190" y="184" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#3d5566">Plein d'abord</text>
+<text x="190" y="210" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Des que le plein est tendu</text>
+<text x="190" y="234" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">on ne passe pas la mitsva</text>
+<rect x="376" y="156" width="348" height="104" rx="4" fill="#fbfaf7" stroke="#8a7b63"/>
+<text x="550" y="184" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#6b5344">Vide ensuite</text>
+<text x="550" y="210" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le retour du bassin vide</text>
+<text x="550" y="234" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">vient apres la reception</text>
+</svg></div><div class="svg-cap">Chehita du zar, puis kabala, holakha et zerika des cohanim. Le plein est recu avant le retour du vide.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">נותנו לחבירו. שמעת מינה הולכה שלא ברגל — הויא הולכה! דילמא הוא נייד פורתא. ואלא מאי קא משמע לן? הא קמשמע לן: ״ברב עם הדרת מלך״.</div>
+            <div class="fr"><p>Il le donne a son collegue. On en entend : une holakha (transport du sang) sans le pied est une holakha !</p><p>Peut-etre se deplace-t-il un peu. Mais alors, que nous enseigne-t-on ?</p><p>Voici ce qu&#x27;on nous enseigne : dans la multitude du peuple est la splendeur du roi.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שמעת מינה הולכה שלא ברגל</b> כי הא הויא הולכה ופלוגתא היא בשילהי פרק קמא דזבחים (דף יד:) ארבע עבודות נאמרו בדם שחיטה וקבלה והולכה וזריקה קבלה והולכה מוהקריבו נפקי בשילהי פרק קמא דחגיגה ומאי אשמעינן מתניתין דאיכפל למיתני סדר הולכתן היאך אי לאו הא אתא לאשמעינן:</div>
+          <div class="glose-fr">Comme celle-ci, c&#x27;est une holakha. Et c&#x27;est un differend a la fin du premier chapitre de Zevahim (14b). Quatre services ont ete dits au sujet du sang : chehita, kabala, holakha et zerika. Kabala et holakha sortent de ve-hikrivou, a la fin du premier chapitre de Hagiga. Et que nous enseigne la mishna, qui s&#x27;est etendue a enseigner l&#x27;ordre de leur transport, et comment, sinon que c&#x27;est cela qu&#x27;elle vient enseigner ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ברב עם הדרת מלך</b> שהיו כולן עסוקין בעבודה:</div>
+          <div class="glose-fr">Car tous etaient occupes au service.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Passer le bassin de main en main, sans marcher jusqu'a l'autel, semblait prouver qu'une <b>holakha</b> sans le pied compte comme holakha. Rachi rappelle les quatre services du sang, et le differend de Zevahim 14b.</p><p>La Guemara ecarte la preuve : le cohen bouge peut-etre un peu les pieds. Ce que la rangee enseigne : <b>berov am hadrat melekh</b>, la splendeur du roi dans la multitude. Rachi : tous sont occupes a l'avoda.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">קבל את המלא ומחזיר את הריקן וכו׳. אבל איפכא לא — מסייע ליה לרבי שמעון בן לקיש, דאמר רבי שמעון בן לקיש: אין מעבירין על המצות.</div>
+            <div class="fr"><p>Il recoit le plein et rend le vide, etc. Mais l&#x27;inverse, non.</p><p>Cela appuie Rabbi Shimon ben Lakish, car Rabbi Shimon ben Lakish a dit : on ne passe pas par-dessus les mitsvot.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אבל איפכא</b> מחזיר את הריקן ברישא לא דמכי מושיט ליה האי מיד בעי לקבולי דאין מעבירין על המצוה מאחר שבאת לידו:</div>
+          <div class="glose-fr">Il rend d&#x27;abord le vide : non. Car des que celui-ci le lui tend, il doit aussitot recevoir, puisqu&#x27;on ne passe pas par-dessus la mitsva des lors qu&#x27;elle est arrivee a sa main.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>L'ordre de la mishna est fixe : recevoir le bassin <b>plein</b>, puis rendre le <b>vide</b>. L'ordre inverse est exclu. Cela appuie Reish Lakish : <b>ein maavirin al ha-mitsvot</b>, on ne passe pas par-dessus les mitsvot.</p><p>Rachi : des que le collegue tend le plein, la mitsva est dans la main. On la fait avant de rendre le vide.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg16">
+          <div class="seg-num">17</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כהן הקרוב אצל המזבח וכו׳. מאן תנא פסח בזריקה? אמר רב חסדא: רבי יוסי הגלילי היא.</div>
+            <div class="fr"><p>Le cohen proche de l&#x27;autel, etc. Quel est le tanna pour qui le pesah se fait par zerika (projection) ?</p><p>Rav Hisda a dit : c&#x27;est Rabbi Yosse ha-Gelili.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מאן תנא פסח בזריקה</b> למרחוק ולא בשפיכה בנחת מקריב הכלי לכותל המזבח דאיכא למאן דאמר בפרק בתרא (דף קכא.) פסח בשפיכה ורבי ישמעאל היא דמפיק ליה מודם זבחיך ישפך במסכת זבחים בפרק בית שמאי אין לך קרבן שצריך מתנה באצבע אלא חטאת בלבד אבל כל שאר קרבנות מתן דם על ידי זריקת כל הכלי:</div>
+          <div class="glose-fr">De loin, et non par une shefikha (versement) tranquille, en approchant le recipient du mur de l&#x27;autel. Car il y a un avis, au dernier chapitre (121a), pour qui le pesah se fait par shefikha, et c&#x27;est Rabbi Yishmael, qui le tire de : et le sang de tes sacrifices sera verse. Dans le traite Zevahim, chapitre Beit Shammai : tu n&#x27;as de korban qui exige une application au doigt que la hatat seule. Tous les autres korbanot : le don du sang se fait par la projection de tout le recipient.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La mishna dit que le cohen proche de l'autel jette le sang d'un seul jet. Rav Hisda attribue cette <b>zerika</b>, jet de loin, a <b>Rabbi Yosse ha-Gelili</b>.</p><p>Rachi oppose <b>Rabbi Yishmael</b> : le pesah se fait par <b>shefikha</b>, versement contre le mur, tire de : et le sang de tes sacrifices sera verse. Le doigt reste a la hatat. Les autres korbanot projettent le sang avec tout le recipient.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg17">
+          <div class="seg-num">18</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">דתניא, רבי יוסי הגלילי אומר: ״את דמם תזרוק על המזבח ואת חלבם תקטיר״ — ״דמו״ לא נאמר, אלא ״דמם״. ״חלבו״ לא נאמר, אלא ״חלבם״. למד על בכור ומעשר ופסח, שהן טעונין מתן דמים ואימורין לגבי מזבח.</div>
+            <div class="fr"><p>Car on a enseigne : Rabbi Yosse ha-Gelili dit : Tu jetteras leur sang sur l&#x27;autel, et tu feras fumer leur graisse. Damo (son sang) n&#x27;est pas dit ; damam (leur sang) est dit.</p><p>Helbo (sa graisse) n&#x27;est pas dit ; helbam (leur graisse) est dit. On apprend, pour le bekhor, le maaser et le pesah, qu&#x27;ils exigent le don des sangs et des emourim sur l&#x27;autel.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דמו לא נאמר</b> בבכור כתיב אך בכור שור וגו&#x27;:</div>
+          <div class="glose-fr">C&#x27;est au sujet du bekhor qu&#x27;il est ecrit : toutefois le premier-ne du boeuf, etc.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אלא דמם</b> אלמא אחריני נמי מישתמעי לימד על הפסח ומעשר בהמה שלא מצינו להם מתן דמים בתורה אלא כאן וכתיב תזרק ולא כתיב תשפך:</div>
+          <div class="glose-fr">On voit que d&#x27;autres aussi sont entendus. On apprend pour le pesah et le maaser behemot, dont nous ne trouvons le don des sangs dans la Tora qu&#x27;ici. Et il est ecrit : tu jetteras. Et il n&#x27;est pas ecrit : tu verseras.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le verset, Nombres 18, 17, parle du <b>bekhor</b>. Les pluriels <b>damam</b> et <b>helbam</b> englobent deux autres : le <b>maaser</b> et le <b>pesah</b>. Tous trois exigent le sang et les emourim sur l'autel.</p><p>Rachi : le verbe est <b>tizrok</b>, tu jetteras. Le verset ne dit pas tishpokh, tu verseras. D'ou la zerika, et non la shefikha, pour ces trois-la.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg18">
+          <div class="seg-num">19</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מנלן דטעונין יסוד? אמר רבי אלעזר: אתיא ״זריקה״ ״זריקה״ מעולה. כתיב הכא: ״את דמם תזרוק על המזבח״, וכתיב התם: ״וזרקו בני אהרן הכהנים את דמו על המזבח סביב״, מה עולה טעונה יסוד — אף פסח נמי טעון יסוד.</div>
+            <div class="fr"><p>D&#x27;ou tenons-nous qu&#x27;ils exigent le yesod (soubassement) ? Rabbi Elazar a dit : cela vient par zerika, zerika, de l&#x27;ola.</p><p>Il est ecrit ici : Tu jetteras leur sang sur l&#x27;autel. Et il est ecrit la-bas : Les fils d&#x27;Aharon, les cohanim, jetteront son sang sur l&#x27;autel, tout autour.</p><p>De meme que l&#x27;ola exige le yesod, le pesah aussi exige le yesod.</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אתיא זריקה זריקה מעולה</b> בפ&#x27; איזהו מקומן (זבחים נז.) פריך ונילף מעולה מה עולה שתים שהן ארבע אף פסח כו&#x27; ומשני אמר אביי למה לי למיכתב סביב בעולה סביב בחטאת הוו להו שני כתובין הבאין כאחד ואין מלמדין וקשה לר&quot;י דנהי דלא ילפינן משני כתובין הבאין כאחד במה מצינו מדלא כתב בחד מינייהו בכור ומעשר ופסח דאיכא גזירה שוה נילף שפיר מעולה דאין גזירה שוה למחצה ואומר ר&quot;י דע&quot;כ אשם וחטאת דכתיב בהו סביב דאמרינן התם דהוו שני כתובים ושלשה כתובים ילפינן בג&quot;ש מעולה או עולה ילפא מינייהו והשתא אתי שפיר הא דמסיק הוו להו שני כתובים הבאין כאחד דלמעוטי דלא נילף בגזירה שוה אתו דדומיא דכתב בהו סביב קא ממעט דאית בהו גזירה שוה כדפרישי&#x27;:</div>
+          <div class="glose-fr">Dans le chapitre Eizehou Mekoman (Zevahim 57a), on objecte : que l&#x27;on apprenne de l&#x27;ola. De meme que l&#x27;ola est deux applications qui en font quatre, le pesah aussi, etc. On repond. Abaye a dit : pourquoi ecrire saviv pour l&#x27;ola, saviv pour la hatat ? Ce sont deux versets qui viennent comme un seul, et ils n&#x27;enseignent pas. Difficulte pour le Ri. Admettons que l&#x27;on n&#x27;apprenne pas, par bameh matsinou (analogie : que trouvons-nous), de deux versets qui viennent comme un seul. Puisque ce n&#x27;est pas ecrit dans l&#x27;un d&#x27;eux, le bekhor, le maaser et le pesah, et qu&#x27;il y a une gezera shava (analogie de mots), on apprendrait bien de l&#x27;ola, car une gezera shava ne se prend pas a moitie. Le Ri dit : force est que l&#x27;asham et la hatat, ou saviv est ecrit, et dont nous disons la-bas qu&#x27;ils sont deux ecrits, et trois ecrits, s&#x27;apprennent par gezera shava depuis l&#x27;ola, ou bien l&#x27;ola s&#x27;apprend depuis eux. Des lors s&#x27;eclaire ce qu&#x27;il conclut : ce sont deux versets qui viennent comme un seul. Ils viennent pour exclure, afin que l&#x27;on n&#x27;apprenne pas par gezera shava. Il exclut le cas semblable, celui ou saviv est ecrit, et ou il y a une gezera shava, comme je l&#x27;ai explique.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le sang du pesah doit toucher une face qui a un <b>yesod</b>. Rabbi Elazar l'apprend par <b>gezera shava</b> : le mot <b>zerika</b> ici, Nombres 18, 17, et le mot zerika de l'<b>ola</b>, Levitique 1, 11. L'ola exige le yesod. Le pesah l'exige aussi.</p><p>Tossefot rapportent l'objection de Zevahim 57a. La meme analogie pourrait porter aussi <b>shtayim she-hen arba</b>, deux jets qui comptent pour quatre cotes. Abaye l'arrete : <b>saviv</b> est ecrit pour l'ola et pour la hatat. Deux versets qui disent la meme loi n'etendent pas cette loi plus loin.</p><p>Le Ri demande pourquoi la gezera shava, qui ne se coupe pas en deux, ne porterait pas quand meme les quatre cotes sur le pesah, puisque saviv n'est pas ecrit pour le pesah. Il repond que ces deux versets viennent bloquer la gezera shava pour les offrandes ou saviv est ecrit.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 360" xmlns="http://www.w3.org/svg">
+<rect width="740" height="360" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Damam : bekhor, maaser, pesah, puis le yesod</text>
+<rect x="16" y="48" width="170" height="110" rx="4" fill="#eef3f7" stroke="#5d7385"/>
+<text x="101" y="80" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5566">Bekhor</text>
+<text x="101" y="108" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">nomme dans le verset</text>
+<text x="101" y="132" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">Nombres 18, 17</text>
+<rect x="202" y="48" width="160" height="110" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="282" y="80" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">Maaser</text>
+<text x="282" y="108" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">entre par le pluriel</text>
+<text x="282" y="132" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">damam, helbam</text>
+<rect x="378" y="48" width="160" height="110" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="458" y="80" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Pesah</text>
+<text x="458" y="108" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">entre par le pluriel</text>
+<text x="458" y="132" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">tizrok : zerika</text>
+<rect x="554" y="48" width="170" height="110" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="639" y="80" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Yesod</text>
+<text x="639" y="108" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">gezera shava</text>
+<text x="639" y="132" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">zerika / zerika</text>
+<rect x="16" y="176" width="708" height="164" rx="4" fill="#fbfaf7" stroke="#8a7b63"/>
+<text x="370" y="206" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">De l'ola au pesah</text>
+<text x="370" y="236" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Ici : tu jetteras leur sang sur l'autel.</text>
+<text x="370" y="260" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">La-bas, l'ola : les fils d'Aharon jetteront son sang, tout autour.</text>
+<text x="370" y="292" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">L'ola exige le yesod. Le pesah exige le yesod.</text>
+<text x="370" y="316" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Abaye : saviv de l'ola et saviv de la hatat ne portent pas les quatre cotes.</text>
+</svg></div><div class="svg-cap">Le pluriel damam joint bekhor, maaser et pesah. Zerika et zerika portent le yesod de l&#x27;ola au pesah.</div></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Pesachim_64a.html">&lsaquo; Pesachim 64a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Pesachim_65a.html">Pesachim 65a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

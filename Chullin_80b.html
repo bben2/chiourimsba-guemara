@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chullin 80b — l&#x27;abattage &#x27;non reussi&#x27; (R. Chimon) et les interdits que la michna compte</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Chullin 80b — l&#x27;abattage &#x27;non reussi&#x27; (R. Chimon) et les interdits que la michna compte</h1>
+    <div class="ref">Chullin 80b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Chullin_80a.html">&lsaquo; Chullin 80a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Chullin_81a.html">Chullin 81a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> Suite de l&#x27;examen de la michna &#x27;oto ve-et beno&#x27; (un animal et son petit abattus le meme jour). Rabbi Ochaya demontre, cas par cas, que la michna ne suit pas Rabbi Chimon — pour qui un abattage qui ne rend pas la chair permise (chehita che-eina reouya) n&#x27;a pas valeur d&#x27;abattage : si tel etait le cas, le premier animal compterait pour &#x27;tue&#x27; et le second n&#x27;encourrait pas les sanctions enoncees.</p><p>Le cas decisif est celui des consacres abattus au-dedans : tant que le sang n&#x27;est pas asperge, la chair reste interdite, donc meme l&#x27;abattage du premier est &#x27;non reussi&#x27; ; pourtant le second recoit les quarante coups et reste invalide — preuve que la michna rejette le principe de Rabbi Chimon. La Guemara demande ensuite pourquoi, dans ce cas, on ne fouette pas aussi pour l&#x27;interdit de &#x27;mechousar zeman&#x27; (animal offert avant son temps), tire du verset &#x27;cela ne sera pas agree&#x27;.</p><p>Reponse : la michna n&#x27;enumere que les interdits apparentes a &#x27;oto ve-beno&#x27;, pas les interdits etrangers — sauf la ou il n&#x27;y a pas du tout &#x27;oto ve-beno&#x27; (consacres au-dehors). Enfin Rabbi Zira ecarte &#x27;mechousar zeman&#x27; parce que le verset l&#x27;a detache vers un commandement positif (nitko la-asse).</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 330" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="330" fill="#fffdf8"/>
+  <text x="360" y="22" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Rabbi Oshaya : la michna ne suit PAS Rabbi Chimon</text>
+  <text x="360" y="42" text-anchor="middle" font-size="11" fill="#78716c">principe de R. Chimon : un abattage qui ne rend pas permis (chehita che-eina reouya) n'est pas un abattage</text>
+  <rect x="20" y="58" width="216" height="118" rx="10" fill="#fdeaea" stroke="#b91c1c"/>
+  <text x="128" y="80" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b91c1c">Consacres au-dehors</text>
+  <text x="128" y="100" text-anchor="middle" font-size="10.5" fill="#292524">1er : karet (chehoutei houtz)</text>
+  <text x="128" y="118" text-anchor="middle" font-size="10.5" fill="#292524">2e : 40 coups (oto ve-beno)</text>
+  <text x="128" y="144" text-anchor="middle" font-size="10" fill="#78716c">objection : le 1er est 'tue' (passoul) ;</text>
+  <text x="128" y="160" text-anchor="middle" font-size="10" fill="#78716c">le 2e devrait etre karet !</text>
+  <rect x="252" y="58" width="216" height="118" rx="10" fill="#fef3e2" stroke="#b45309"/>
+  <text x="360" y="80" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b45309">Profanes au-dedans</text>
+  <text x="360" y="100" text-anchor="middle" font-size="10.5" fill="#292524">les deux : passoul</text>
+  <text x="360" y="118" text-anchor="middle" font-size="10.5" fill="#292524">2e : 40 coups</text>
+  <text x="360" y="144" text-anchor="middle" font-size="10" fill="#78716c">objection : le 1er est 'tue' ;</text>
+  <text x="360" y="160" text-anchor="middle" font-size="10" fill="#78716c">pourquoi 40 coups au 2e ?</text>
+  <rect x="484" y="58" width="216" height="118" rx="10" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="592" y="80" text-anchor="middle" font-size="12.5" font-weight="700" fill="#4338ca">Consacres au-dedans</text>
+  <text x="592" y="100" text-anchor="middle" font-size="10.5" fill="#292524">1er : valide, exempt</text>
+  <text x="592" y="118" text-anchor="middle" font-size="10.5" fill="#292524">2e : 40 coups + passoul</text>
+  <text x="592" y="144" text-anchor="middle" font-size="10" fill="#78716c">objection-cle : sans aspersion,</text>
+  <text x="592" y="160" text-anchor="middle" font-size="10" fill="#78716c">la chair n'est pas permise !</text>
+  <path d="M360,182 L360,206" stroke="#1c1917" stroke-width="1.6" marker-end="url(#aoz)"/>
+  <rect x="120" y="208" width="480" height="44" rx="9" fill="#eafaf1" stroke="#15803d"/>
+  <text x="360" y="230" text-anchor="middle" font-size="11.5" font-weight="700" fill="#15803d">Conclusion : la michna n'est PAS selon R. Chimon</text>
+  <text x="360" y="247" text-anchor="middle" font-size="10.5" fill="#292524">car elle sanctionne le 2e meme la ou le 1er est un abattage 'non reussi'</text>
+  <rect x="120" y="266" width="480" height="48" rx="9" fill="#f5f5f4" stroke="#a8a29e"/>
+  <text x="360" y="287" text-anchor="middle" font-size="10.5" fill="#78716c">cas decisif : consacres au-dedans — sans aspersion du sang, la chair reste interdite,</text>
+  <text x="360" y="304" text-anchor="middle" font-size="10.5" fill="#78716c">donc meme l'abattage du 1er est 'non reussi' ; pourtant le 2e est sanctionne et invalide</text>
+  <defs><marker id="aoz" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#1c1917"/></marker></defs>
+</svg></div>
+          <figcaption>La demonstration de Rabbi Ochaya (segments 0-4) : sur les trois cas de la michna, le principe de Rabbi Chimon mene a une contradiction ; donc la michna ne le suit pas.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 270" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="270" fill="#fffdf8"/>
+  <text x="360" y="22" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Quels interdits la michna enumere-t-elle ?</text>
+  <text x="360" y="42" text-anchor="middle" font-size="11" fill="#78716c">la michna ne compte que les interdits 'apparentes' (oto ve-beno), pas les interdits 'etrangers' (noukhraim)</text>
+  <rect x="40" y="62" width="290" height="170" rx="10" fill="#fef3e2" stroke="#b45309"/>
+  <text x="185" y="86" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b45309">La ou il Y A 'oto ve-beno'</text>
+  <text x="185" y="110" text-anchor="middle" font-size="11" fill="#292524">consacres au-dedans</text>
+  <text x="185" y="132" text-anchor="middle" font-size="10.5" fill="#78716c">on NE compte PAS</text>
+  <text x="185" y="150" text-anchor="middle" font-size="10.5" fill="#78716c">l'interdit etranger</text>
+  <text x="185" y="172" text-anchor="middle" font-size="10.5" fill="#292524">(mechousar zeman :</text>
+  <text x="185" y="190" text-anchor="middle" font-size="10.5" fill="#292524">animal 'avant son temps')</text>
+  <text x="185" y="214" text-anchor="middle" font-size="10.5" font-weight="700" fill="#b45309">-&gt; seul oto ve-beno cite</text>
+  <rect x="390" y="62" width="290" height="170" rx="10" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="535" y="86" text-anchor="middle" font-size="12.5" font-weight="700" fill="#4338ca">La ou il N'Y A PAS 'oto ve-beno'</text>
+  <text x="535" y="110" text-anchor="middle" font-size="11" fill="#292524">consacres au-dehors</text>
+  <text x="535" y="132" text-anchor="middle" font-size="10.5" fill="#78716c">on compte bien</text>
+  <text x="535" y="150" text-anchor="middle" font-size="10.5" fill="#78716c">l'interdit etranger</text>
+  <text x="535" y="172" text-anchor="middle" font-size="10.5" fill="#292524">(chehoutei houtz : karet</text>
+  <text x="535" y="190" text-anchor="middle" font-size="10.5" fill="#292524">au 1er, 40 coups aux deux)</text>
+  <text x="535" y="214" text-anchor="middle" font-size="10.5" font-weight="700" fill="#4338ca">-&gt; interdit etranger cite</text>
+  <rect x="120" y="244" width="480" height="20" rx="6" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="360" y="258" text-anchor="middle" font-size="10" fill="#7c3aed">R. Zira : et pour mechousar zeman, pas de coups — le verset l'a 'detache' vers un commandement positif (nitko la-asse)</text>
+</svg></div>
+          <figcaption>Quels interdits la michna cite (segments 5-11) : seulement ceux apparentes a &#x27;oto ve-beno&#x27;, sauf en l&#x27;absence de &#x27;oto ve-beno&#x27; ; et le sort de &#x27;mechousar zeman&#x27; (R. Zira).</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">קמא מיקטל קטליה, שני מתקבל בפנים הוא, כרת נמי ליחייב.</div>
+            <div class="fr"><p>[Or] le premier, [le texte] l&#x27;a [comme] tue [non abattu rituellement], [et] le second [animal] est [un animal] qui aurait pu etre agree au-dedans [du parvis] : qu&#x27;il encoure donc aussi le karet [pour l&#x27;avoir abattu au-dehors] !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>קמא מיקטל קטליה</b> דשחיטת קדשים בחוץ שחיטה שאינה ראויה היא ונהי דלענין שחוטי חוץ להתחייב כרת הויא שחיטה דגזירת הכתוב היא אבל לכל מילי לאו שחיטה היא כדאמרינן בפ&#x27; כסוי הדם (לקמן חולין דף פה.) דגמר מטבוח טבח והכן וכיון דלאו שחיטה היא מותר לשחוט את בנה ולא מחוסר זמן הוא דבאותו ואת בנו שחיטה כתיבא ושני נמי ניחייב כרת:</div>
+          <div class="glose-fr">Le premier, [le texte] l&#x27;a [comme] tue — car l&#x27;abattage des consacres au-dehors est un abattage non reussi (chehita che-eina reouya) ; et bien que, pour ce qui est des abattus-au-dehors (chehoutei houtz), [il faille le tenir] pour un abattage [afin] d&#x27;encourir le karet — [c&#x27;est] un decret de l&#x27;Ecriture (guezerat ha-katouv) — pour tout le reste [ce] n&#x27;est pas un abattage, comme nous le disons au chapitre Kisouy ha-Dam (plus loin, Houlin 85a) qu&#x27;il [le] derive de &#x27;abats un abattage et prepare&#x27; (Gen 43) ; et puisque [ce] n&#x27;est pas un abattage, il est permis d&#x27;abattre son petit, et [le second] n&#x27;est pas [un animal] &#x27;avant son temps&#x27; (mechousar zeman), car a propos de &#x27;l&#x27;animal et son petit&#x27; [c&#x27;est] un abattage [qui] est ecrit ; et le second [animal] aussi devrait encourir le karet.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reprise de l'objection de Rabbi Ochaya (commencee en 80a). Cas des <b>consacres abattus au-dehors</b> du parvis : pour le premier on encourt le <b>karet</b> (retranchement) au titre de l'abattage hors du parvis (<b>chehoutei houtz</b>) ; pour le second, seulement les quarante coups au titre de 'l'animal et son petit' (<b>oto ve-beno</b>). Mais selon le principe de Rabbi Chimon, l'abattage du premier hors du parvis est un <b>abattage non reussi</b> (chehita che-eina reouya) qui ne compte pas comme abattage : le premier est donc comme simplement <b>tue</b>, et le second redevient un animal qui <b>aurait pu etre agree au-dedans</b> — il devrait donc, lui aussi, encourir le karet pour l'avoir abattu au-dehors.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">חולין בפנים – שניהם פסולין, והשני סופג את הארבעים. מכדי שמעינן ליה לרבי שמעון דאמר: שחיטה שאינה ראויה – לא שמה שחיטה, קמא מיקטל קטליה, שני אמאי סופג את הארבעים?</div>
+            <div class="fr"><p>[&#x27;Si les] profanes au-dedans — les deux [sont] invalides, et le second recoit les quarante [coups].&#x27; Or nous tenons de Rabbi Chimon, qui dit : un abattage non reussi n&#x27;a pas valeur d&#x27;abattage ; [donc] le premier, [le texte] l&#x27;a [comme] tue, [et] le second, pourquoi recoit-il les quarante [coups] ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>חולין בפנים כו&#x27; קמא מיקטיל קטליה</b> לאו דוקא דה&quot;ה לבתרא:</div>
+          <div class="glose-fr">&#x27;Profanes au-dedans etc., le premier, [le texte] l&#x27;a [comme] tue&#x27; — [ce n&#x27;est] pas precisement [le premier], car il en va de meme pour le dernier.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deuxieme cas de la michna : <b>profanes abattus au-dedans</b> du parvis. Les deux sont rendus <b>invalides</b> (un profane abattu dans le parvis est interdit a la consommation), et pour le second on recoit les <b>quarante coups</b> au titre de 'oto ve-beno'. Mais selon Rabbi Chimon, l'abattage du premier — qui ne rend pas sa chair permise — est <b>non reussi</b> et ne compte pas ; le premier est donc comme <b>tue</b>, et alors l'abattage du second ne suit aucun abattage valide : pourquoi le sanctionner des quarante coups ?</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">קדשים בפנים – הראשון כשר ופטור, והשני סופג את הארבעים, ופסול.</div>
+            <div class="fr"><p>[&#x27;Si les] consacres au-dedans — le premier [est] valide et exempt, et le second recoit les quarante [coups] et [est] invalide.&#x27;</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ופסול</b> משום מחוסר זמן:</div>
+          <div class="glose-fr">Et [est] invalide — au titre de &#x27;avant son temps&#x27; (mechousar zeman).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Troisieme cas de la michna : <b>consacres abattus au-dedans</b> du parvis (le lieu normal de leur abattage). Le premier est <b>valide</b> et son auteur <b>exempt</b> de toute peine. Pour le second, on recoit les <b>quarante coups</b> (oto ve-beno) et il est <b>invalide</b> a l'offrande — parce que, son frere ayant deja ete offert ce jour-la, il est 'avant son temps' (<b>mechousar zeman</b>) jusqu'au lendemain.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מכדי שמעינן ליה לרבי שמעון דאמר: שחיטה שאינה ראויה לא שמה שחיטה, שחיטת קדשים נמי שחיטה שאינה ראויה היא, דכמה דלא זריק דם – לא מישתרי בשר. שני אמאי סופג את הארבעים, ופסול? אלא שמע מינה דלא כרבי שמעון.</div>
+            <div class="fr"><p>Or nous tenons de Rabbi Chimon, qui dit : un abattage non reussi n&#x27;a pas valeur d&#x27;abattage ; [or] l&#x27;abattage des consacres [au-dedans] aussi est un abattage non reussi, car tant que l&#x27;on n&#x27;a pas asperge le sang — la chair n&#x27;est pas permise [a la consommation ou a l&#x27;autel]. Le second, pourquoi recoit-il les quarante [coups] et [est-il] invalide ?</p><p>Plutot, conclus-en [que la michna n&#x27;]est pas selon Rabbi Chimon.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שחיטת קדשים שחיטה שאינה ראויה היא דכל כמה דלא זריק דם כו&#x27;</b> כלומר לא מיבעיא לענין מלקות דלא בעי למילקי משום שחיטת שני דאי אית ליה אותו ואת בנו נוהג בקדשים הויא ליה שחיטת שני שאינה ראויה דהא מחוסר זמן הוא ופסול אלא אפילו אותו ואת בנו נמי לר&quot;ש לא נהיגא בקדשים דהא שחיטת ראשון אינה ראויה דאינה מותרת בלא זריקה ושני אמאי פסול להקרבה ומאי סופג נמי דקאמר:</div>
+          <div class="glose-fr">L&#x27;abattage des consacres est un abattage non reussi, car tant que l&#x27;on n&#x27;a pas asperge le sang etc. — c&#x27;est-a-dire : non seulement quant aux coups, [ou] il n&#x27;y aurait pas lieu de fouetter au titre de l&#x27;abattage du second — car si &#x27;l&#x27;animal et son petit&#x27; s&#x27;applique aux consacres, l&#x27;abattage du second est non reussi puisqu&#x27;[il] est &#x27;avant son temps&#x27; (mechousar zeman) et invalide — mais meme &#x27;l&#x27;animal et son petit&#x27; lui-meme ne s&#x27;applique pas, selon Rabbi Chimon, aux consacres, car l&#x27;abattage du premier est non reussi, n&#x27;etant pas permis sans aspersion ; et alors le second, pourquoi [serait-il] invalide a l&#x27;offrande, et que signifie aussi &#x27;recoit [les coups]&#x27; qu&#x27;il dit ?</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>קדשים שחיטה שאינה ראויה היא</b> וא&quot;ת והא בפרק כסוי הדם (לקמן חולין דף פה.) מפרש טעמא דר&quot;ש דיליף מטבוח טבח והכן ופריך ולילף משחוטי חוץ ומשני דנין חולין מחולין ואין דנין חולין מקדשים א&quot;כ הכא דבקדשים נילף קדשים מקדשים וי&quot;ל כיון דעיקר אותו ואת בנו בחולין כתיבא דשור הפסיק הענין על כרחך שחיטה דכתיב ביה בשחיטה הראויה איירי משום דילפינן חולין מחולין:</div>
+          <div class="glose-fr">[De ce que] l&#x27;abattage des consacres est un abattage non reussi — et si tu demandes : or, au chapitre Kisouy ha-Dam (plus loin, Houlin 85a), il explique la raison de Rabbi Chimon [comme] tiree de &#x27;abats un abattage et prepare&#x27; (Gen 43:16), et l&#x27;on objecte : qu&#x27;il le derive donc des abattus-au-dehors (chehoutei houtz) [ou l&#x27;abattage compte] ! et l&#x27;on repond : on derive [le cas] profane d&#x27;[un autre cas] profane, et l&#x27;on ne derive pas [le] profane des consacres ; or, si [c&#x27;etait] ainsi, ici, ou [il s&#x27;agit] de consacres, qu&#x27;on derive [le cas] des consacres des [autres] consacres ! Et l&#x27;on peut dire : puisque le fond de &#x27;l&#x27;animal et son petit&#x27; est ecrit a propos des [betes] profanes — car [le mot] &#x27;taureau&#x27; (chor) a interrompu le sujet [le separant du contexte des consacres] — l&#x27;abattage qui y est ecrit traite forcement de l&#x27;abattage reussi, parce que nous derivons [le] profane d&#x27;[un autre cas] profane.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שחיטה שאינה ראויה היא דכל כמה כו&#x27;</b> פי&#x27; הקונטרס לא מיבעיא דלענין מלקות דלא בעי למילקי משום שחיטת שני אם אותו ואת בנו נוהג בקדשים דהשתא הוי מחוסר זמן ופסול אלא אפילו אי אין אותו ואת בנו נוהג בקדשים משום דשחיטת ראשון אינה ראויה דאינה מותרת בלא זריקה שני אמאי פסול דהשתא לא הוי מחוסר זמן ומאי סופג נמי דקאמר ומטעם זה מחק ספרים לקמן שהיה כתוב בהן אין מלקות דאותו ואת בנו נוהג בקדשים משום התראת ספק דלמה לי טעם דהתראת ספק תיפוק ליה משום דלא הוה ראויה משום שהוא מחוסר זמן ואין נראה דכיון דאסר הכתוב אותו ואת בנו בקדשים מוי&quot;ו מוסיף על ענין ראשון (לעיל חולין דף עח.) הרי גזירת הכתוב דלילקי אע&quot;ג דלאו שחיטה ראויה היא דהוי מחוסר זמן כיון דליכא פסול אחרינא כמו שחוטי חוץ דחייב אפילו לרבי שמעון אף על גב דלשאר מילי חשיבא שחיטה שאינה ראויה ועוד דבהדיא תנן בפרק בתרא דזבחים (דף קיב:) אותו ואת בנו קדשים ומחוסר זמן רבי שמעון אומר הרי הן בלא תעשה משום דחשיבא שחיטה ועובר בלאו דלא תשחטו לכך נראה דלא מוכח הכא אלא מן הראשון דשחיטת קדשים אינה ראויה היא והרי כאילו מיקטל קטליה לקמא והשני כשר גמור הוא ולא מצי למיפרך לרבי אושעיא ואפילו לרב המנונא דבסמוך מפרק בתרא דזבחים דמשמע דלר&quot;ש אותו ואת בנו נוהג בקדשים דאיכא לאוקומי כשהראשון הוה חולין ושני קדשים דהוי שחיטת ראשון שחיטה ראויה:</div>
+          <div class="glose-fr">Un abattage non reussi, car tant que [l&#x27;on n&#x27;a pas asperge] etc. — Rachi a explique : non seulement quant aux coups, [ou] il n&#x27;y aurait pas lieu de fouetter au titre de l&#x27;abattage du second si &#x27;l&#x27;animal et son petit&#x27; s&#x27;applique aux consacres, car alors [le second] est &#x27;avant son temps&#x27; et invalide ; mais meme si &#x27;l&#x27;animal et son petit&#x27; ne s&#x27;applique pas aux consacres — parce que l&#x27;abattage du premier est non reussi, n&#x27;etant pas permis sans aspersion — le second, pourquoi [serait-il] invalide, puisqu&#x27;il n&#x27;est alors pas &#x27;avant son temps&#x27;, et que signifie aussi &#x27;recoit&#x27; qu&#x27;il dit ? Et pour ce motif il a biffe, plus loin, les livres ou il etait ecrit qu&#x27;il n&#x27;y a pas de coups [au titre] de &#x27;l&#x27;animal et son petit&#x27; applique aux consacres, a cause d&#x27;un avertissement douteux (hatraat safek) — car pourquoi [invoquer] la raison de l&#x27;avertissement douteux ? qu&#x27;il la tire [plutot] de ce que [l&#x27;abattage] n&#x27;est pas reussi, etant &#x27;avant son temps&#x27; ! Et [cela] ne parait pas [exact], car puisque l&#x27;Ecriture a interdit &#x27;l&#x27;animal et son petit&#x27; pour les consacres — par le &#x27;vav&#x27; qui ajoute au sujet precedent (plus haut, Houlin 78a) — voila un decret de l&#x27;Ecriture [imposant] de fouetter, bien que [ce] ne soit pas un abattage reussi du fait qu&#x27;[il] est &#x27;avant son temps&#x27;, des lors qu&#x27;il n&#x27;y a pas d&#x27;autre cause d&#x27;invalidite — comme [pour] les abattus-au-dehors, ou l&#x27;on est responsable meme selon Rabbi Chimon, quoique pour le reste [cet abattage] soit tenu pour non reussi ; et de plus, on a enseigne explicitement au dernier chapitre de Zevahim (112b) : &#x27;l&#x27;animal et son petit&#x27;, consacres et &#x27;avant son temps&#x27; — Rabbi Chimon dit : ils sont [vises] par un interdit (lo taasse), parce que [l&#x27;abattage] est tenu pour [un] abattage, et l&#x27;on transgresse l&#x27;interdit &#x27;vous n&#x27;abattrez pas&#x27;. C&#x27;est pourquoi il parait que l&#x27;on ne prouve [rien] ici sinon du premier [cas] : que l&#x27;abattage des consacres n&#x27;est pas reussi, et voici [le premier] comme si le texte l&#x27;avait tue, et le second [est] pleinement valide ; et l&#x27;on ne peut objecter a Rabbi Ochaya — ni meme a Rav Hamnouna ci-apres — depuis le dernier chapitre de Zevahim, d&#x27;ou il ressort que, pour Rabbi Chimon, &#x27;l&#x27;animal et son petit&#x27; s&#x27;applique aux consacres, car on peut l&#x27;etablir [dans le cas] ou le premier etait profane et le second consacre, [de sorte] que l&#x27;abattage du premier est un abattage reussi.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דכמה דלא זריק דם לא מישתרי בשר</b> ואפילו שחט שני אחר שנזרק דם הראשון חשיב שחיטה ראשונה אינה ראויה כיון דבשעת שחיטה אכתי לא היתה ראויה ואע&quot;ג דלרבי שמעון כל העומד ליזרק כזרוק דמי היינו דווקא לאחר שנתקבל בכוס כדאמר בפ&quot;ק דפסחים (דף יג:) ועוד כיון דעל ידי שחיטה גרידא לא משתרי בשר אלא משום דכזרוק דמי לא חשיבא שחיטה ראויה ואם תאמר דבמרובה (ב&quot;ק עו.) משמע דשחיטת קדשים הויא שחיטה ראויה אפילו נשפך הדם דפריך אמתניתין דמחייב רבי שמעון ארבעה וחמשה בקדשים שחייב באחריותן שחיטה שאינה ראויה היא ומוקי רב דימי בשוחט תמימים לשם בעלים בפנים דהא חזרה קרן לבעלים כשנשפך הדם ופריך וכי שחיטה מתרת זריקה מתרת ומשני כל העומד ליזרק כזרוק דמי ולכך הויא שחיטה ראויה ורבי אושעיא גופיה אית ליה בפרק המנחות והנסכים (מנחות קב.) דלרבי שמעון כל העומד ליזרק כזרוק דמי גבי נותר וי&quot;ל דדוקא להחשיב נותר אוכל שאתה יכול להאכילו לאחרים אית ליה לרבי אושעיא דכזרוק דמי אבל לשוייה שחיטה ראויה משום דכזרוק דמי לית ליה וההיא דמרובה הוה משני רבי אושעיא כר&quot;ל בשוחט בעלי מומין בחוץ ומשום דכל העומד לפדות כפדוי דמי ואע&quot;ג דלית ליה כל העומד ליזרק כזרוק דמי היינו משום דזריקה תלויה בשחיטה ושחיטה צריכה לזריקה אבל פדייה אינה תלוייה בשחיטה דאף קודם שחיטה יכול לפדותה ובמסקנא דהכא הויא נמי שחיטת קדשים שחיטה ראויה משום דכזרוק דמי כמו במרובה (ב&quot;ק עו:) דמסיק דאותו ואת בנו נוהג בקדשים אלא דליכא מלקות משום דהתראת ספק היא שמא לא יזרוק הדם ואז הוי שחיטה שאינה ראויה ואע&quot;ג דבמרובה אמרינן דשחיטה ראויה היא אפילו נשפך הדם דכל העומד ליזרק כזרוק דמי הכא דמחוסר זמן הוא ואינו ראוי לזרוק דאסור לזרוק לא הוי כזרוק והכי אמרינן בהמביא אשם תלוי (כריתות כד:) אימור דאמר רבי שמעון כזרוק דמי במידי דעומד לזרוק ובפרק המנחות והנסכים (מנחות דף קב:) בשלמא פרה מצוה לפדותה פירוש בשמצא נאה הימנה ולכך כפדוי דמי אלא מנחות מצוה לפדותם ואם תאמר אמאי לא פריך לרבי אושעיא כדפריך לקמן לרב המנונא וי&quot;ל דרבי אושעיא לא אמר אלא דמתניתין דקדשים בפנים לא אתיא כרבי שמעון והש&quot;ס הוא דקאמר שני אמאי סופג ופסול אבל לרבי אושעיא אפשר דלא דייק אלא מסופג את הארבעים לחוד אמאי סופג והא התראת ספק היא כמו שישאר במסקנא לכך לא פריך אלא לרב המנונא דאמר בהדיא דאין אותו ואת בנו נוהג בקדשים משום דשחיטת קדשים הוי שחיטה שאינה ראויה ור&quot;ת לא גריס הכא ופסול אלא אמאי סופג ותו לא ומכח התראת ספק מדקדק כמו שהוא לפי המסקנא ואם תאמר ולימא דסופג ארבעים לאו משום לאו דלא תשחטו אותו ואת בנו אלא משום לאו דמחוסר זמן דלא תעשון דאמר בפרק בתרא דזבחים (דף קיד:) דלקי לרבי שמעון וי&quot;ל דלא חשיב בכל מתניתין דקתני והשני סופג הארבעים אלא לאו דאותו ואת בנו:</div>
+          <div class="glose-fr">[De ce que] tant que l&#x27;on n&#x27;a pas asperge le sang, la chair n&#x27;est pas permise — et meme s&#x27;il a abattu le second apres que le sang du premier a ete asperge, l&#x27;abattage du premier est tenu pour non reussi, puisque, au moment de l&#x27;abattage, il n&#x27;etait pas encore reussi ; et bien que, pour Rabbi Chimon, tout ce qui se tient pret a etre asperge [soit] comme asperge, [ce n&#x27;est] precisement qu&#x27;apres [que le sang] a ete recueilli dans la coupe, comme il [le] dit au premier chapitre de Pessahim (13b) ; et de plus, puisque, par l&#x27;abattage seul, la chair n&#x27;est pas permise, mais [seulement] parce que [le sang est] comme asperge, [l&#x27;abattage] n&#x27;est pas tenu pour reussi. Et si tu demandes : car au [chapitre] Merouba (Baba Kama 76a) il ressort que l&#x27;abattage des consacres est un abattage reussi meme [si] le sang s&#x27;est repandu, car l&#x27;on objecte a la michna qui rend Rabbi Chimon responsable du [paiement] quadruple et quintuple pour des consacres dont [le voleur] repond — [or c&#x27;est] un abattage non reussi ! et Rav Dimi l&#x27;etablit [dans le cas] ou il abat des [betes] sans defaut, au nom des proprietaires, au-dedans, car le capital est revenu aux proprietaires lorsque le sang s&#x27;est repandu, et l&#x27;on objecte : est-ce l&#x27;abattage qui rend permis, [ou] l&#x27;aspersion qui rend permis ? et l&#x27;on repond : tout ce qui se tient pret a etre asperge [est] comme asperge, et c&#x27;est pourquoi [c&#x27;est] un abattage reussi ; et Rabbi Ochaya lui-meme tient, au chapitre Ha-Menahot ve-ha-Nessakhim (Menahot 102a), que pour Rabbi Chimon tout ce qui se tient pret a etre asperge [est] comme asperge, a propos du [reste sacrifie] (notar) ! Et l&#x27;on peut dire : c&#x27;est precisement pour tenir le &#x27;notar&#x27; [pour] un aliment que tu peux donner a manger a d&#x27;autres que Rabbi Ochaya admet [le principe] &#x27;comme asperge&#x27; ; mais pour en faire un abattage reussi parce que [c&#x27;est] comme asperge, il ne [l&#x27;]admet pas. Et ce [cas] de Merouba, Rabbi Ochaya l&#x27;etablirait comme Resh Lakich, [dans le cas] ou il abat des [betes] a defaut au-dehors, et parce que tout ce qui se tient pret a etre rachete [est] comme rachete ; et bien qu&#x27;il n&#x27;admette pas &#x27;tout ce qui se tient pret a etre asperge [est] comme asperge&#x27;, [c&#x27;est] parce que l&#x27;aspersion depend de l&#x27;abattage et que l&#x27;abattage a besoin de l&#x27;aspersion, tandis que le rachat ne depend pas de l&#x27;abattage, car meme avant l&#x27;abattage on peut [la] racheter. Et dans la conclusion d&#x27;ici aussi, l&#x27;abattage des consacres est un abattage reussi parce que [c&#x27;est] comme asperge, comme dans Merouba (Baba Kama 76b) ou il conclut que &#x27;l&#x27;animal et son petit&#x27; s&#x27;applique aux consacres, sauf qu&#x27;il n&#x27;y a pas de coups parce que [c&#x27;est] un avertissement douteux (hatraat safek) : peut-etre n&#x27;aspergera-t-il pas le sang, et alors [c&#x27;est] un abattage non reussi ; et bien qu&#x27;au [chapitre] Merouba l&#x27;on dise que [c&#x27;est] un abattage reussi meme [si] le sang s&#x27;est repandu, parce que tout ce qui se tient pret a etre asperge [est] comme asperge — ici, ou [c&#x27;est] &#x27;avant son temps&#x27; et qu&#x27;il n&#x27;est pas apte a etre asperge, car il est interdit d&#x27;asperger, [ce] n&#x27;est pas comme asperge ; et ainsi disons-nous au [chapitre] Ha-Mevi Asham Talouy (Keritot 24b) : dis [seulement] que Rabbi Chimon a dit &#x27;comme asperge&#x27; pour une chose qui se tient prete a etre aspergee. Et au [chapitre] Ha-Menahot ve-ha-Nessakhim (Menahot 102b) : &#x27;soit, la vache [rousse], [il y a] commandement de la racheter&#x27; — c&#x27;est-a-dire, lorsqu&#x27;on en trouve une plus belle, et c&#x27;est pourquoi [c&#x27;est] comme rachete ; &#x27;mais les oblations, [y a-t-il] commandement de les racheter ?&#x27; Et si tu demandes : pourquoi n&#x27;objecte-t-on pas a Rabbi Ochaya comme on objecte plus loin a Rav Hamnouna ? Et l&#x27;on peut dire : Rabbi Ochaya n&#x27;a dit que [ceci] : que la michna &#x27;consacres au-dedans&#x27; ne suit pas Rabbi Chimon ; et c&#x27;est le Talmud qui dit &#x27;le second, pourquoi recoit-il [les coups] et [est-il] invalide ?&#x27; ; mais pour Rabbi Ochaya, peut-etre ne raisonne-t-il que depuis &#x27;recoit les quarante [coups]&#x27; seul : pourquoi recoit-il, alors que [c&#x27;est] un avertissement douteux ? — comme il restera dans la conclusion ; c&#x27;est pourquoi l&#x27;on n&#x27;objecte qu&#x27;a Rav Hamnouna, qui dit explicitement que &#x27;l&#x27;animal et son petit&#x27; ne s&#x27;applique pas aux consacres parce que l&#x27;abattage des consacres est un abattage non reussi. Et Rabbenou Tam ne lit pas ici &#x27;et [est] invalide&#x27; mais [seulement] &#x27;pourquoi recoit-il [les coups]&#x27;, et rien de plus, et c&#x27;est par l&#x27;avertissement douteux qu&#x27;il raisonne, conformement a la conclusion. Et si tu demandes : qu&#x27;il dise [donc] que &#x27;recoit les quarante [coups]&#x27; [n&#x27;est] pas au titre de l&#x27;interdit &#x27;vous n&#x27;abattrez pas l&#x27;animal et son petit&#x27;, mais au titre de l&#x27;interdit de &#x27;avant son temps&#x27;, [ce] &#x27;vous ne ferez pas&#x27; dont on dit, au dernier chapitre de Zevahim (114b), que l&#x27;on fouette selon Rabbi Chimon ! Et l&#x27;on peut dire : dans toute la michna, qui enseigne &#x27;et le second recoit les quarante [coups]&#x27;, on ne compte que l&#x27;interdit de &#x27;l&#x27;animal et son petit&#x27;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le cas decisif. Meme l'abattage des <b>consacres au-dedans</b> est un <b>abattage non reussi</b> selon le critere de Rabbi Chimon, car la chair des consacres n'est rendue permise (a l'autel ou a la consommation) qu'apres l'<b>aspersion du sang</b> (zerikat ha-dam) : l'abattage seul ne 'reussit' rien. Si donc le principe de Rabbi Chimon valait, le premier serait comme <b>tue</b>, et le second ne devrait ni recevoir les quarante coups ni etre declare invalide. Puisque la michna le sanctionne quand meme, <b>conclusion : la michna ne suit pas Rabbi Chimon</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">פשיטא דהכי איתה? שחיטת קדשים איצטריכא ליה, סלקא דעתך אמינא: שחיטת קדשים שחיטה ראויה היא, דהא אי נחר וזריק דם – לא מישתרי בשר, וכי שחט – מישתרי בשר, ושחיטה ראויה היא; קא משמע לן.</div>
+            <div class="fr"><p>Mais est-ce evident qu&#x27;il en soit ainsi [que la michna ne suive pas Rabbi Chimon, au point que Rabbi Ochaya doive le dire] ? [Reponse :] [le cas de] l&#x27;abattage des consacres [au-dedans] lui etait necessaire ; [car] il pourrait te venir a l&#x27;esprit de dire : l&#x27;abattage des consacres est un abattage reussi, car s&#x27;il [les] perfore (nahar) et asperge le sang — la chair n&#x27;est pas permise, mais des qu&#x27;il [les] a abattus — la chair est permise [par l&#x27;aspersion qui suivra], et [c&#x27;est donc] un abattage reussi ; [Rabbi Ochaya] nous fait savoir [qu&#x27;il n&#x27;en est rien].</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Pourquoi Rabbi Ochaya devait-il l'enoncer, si c'est evident ? Parce que le cas des <b>consacres au-dedans</b> presente une subtilite : on aurait pu croire que leur abattage est <b>reussi</b>, en raisonnant ainsi — si on les <b>perfore</b> (nehira, mise a mort par dechirure plutot que par abattage rituel) puis qu'on asperge le sang, la chair reste interdite ; mais si on les <b>abat rituellement</b>, la chair sera permise (par l'aspersion qui suit). L'abattage rituel serait donc determinant, donc 'reussi'. Rabbi Ochaya <b>enseigne que non</b> : tant que le sang n'est pas effectivement asperge, l'abattage seul ne rend rien permis.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ולילקי נמי משום לאו דמחוסר זמן, דתניא: מנין לכל הפסולין שבשור ושבשה שהוא ב״לא ירצה״?</div>
+            <div class="fr"><p>Et qu&#x27;il soit fouette aussi au titre de l&#x27;interdit de &#x27;avant son temps&#x27; (mechousar zeman) ! Car il est enseigne [dans une braita] : d&#x27;ou [sait-on] que, pour toutes les [causes d&#x27;]invalidite qui sont dans le taureau et dans l&#x27;agneau, [l&#x27;animal est compris] dans [l&#x27;interdit] &#x27;cela ne sera pas agree&#x27; (lo yeratze) ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ולילקי נמי</b> האי שני דקדשים בפנים:</div>
+          <div class="glose-fr">Et qu&#x27;il soit fouette aussi — ce second [animal] des consacres au-dedans.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>משום לאו</b> דשוחט מחוסר זמן לגבוה דאף על גב דלא אקרביה מיחייב אשחיטה מיד דגבי כל פסולים ילפינן בתמורה (דף ו:) עובר משום חמשה שמות משום בל תקדישו ומשום בל תשחטו ומשום בל תזרקו ומשום בל תקטירו כולו ומשום בל תקטירו מקצתו:</div>
+          <div class="glose-fr">Au titre de l&#x27;interdit — de celui qui abat un [animal] &#x27;avant son temps&#x27; pour le Tres-Haut, car, bien qu&#x27;il ne l&#x27;ait pas [encore] offert, il est responsable des l&#x27;abattage ; car, a propos de toutes les [causes d&#x27;]invalidite, nous derivons dans Temoura (6b) qu&#x27;il transgresse au titre de cinq denominations : au titre de &#x27;ne consacre pas&#x27;, au titre de &#x27;n&#x27;abats pas&#x27;, au titre de &#x27;n&#x27;asperge pas&#x27;, au titre de &#x27;ne fais pas fumer [l&#x27;animal] entier&#x27;, et au titre de &#x27;ne fais pas fumer [une] partie [de l&#x27;animal]&#x27;.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ולילקי נמי משום מחוסר זמן</b> תימה היכי לילקי הא הוי לאו שבכללות שאין לוקין עליו כי ההיא דלא יאכל כי קדש הם דדרשינן מיניה כל שבקדש פסול בא הכתוב ליתן לא תעשה על אכילתו וקרי ליה בפרק כל שעה (פסחים דף כד.) לאו שבכללות:</div>
+          <div class="glose-fr">Et qu&#x27;il soit fouette aussi au titre de &#x27;avant son temps&#x27; — etonnant : comment serait-il fouette ? car [c&#x27;est] un interdit general (lav che-bikhlalout) pour lequel on ne fouette pas, comme ce [cas] de &#x27;tu n&#x27;en mangeras pas car ils sont [chose] sainte&#x27; (Ex 29:33), d&#x27;ou nous derivons [que] &#x27;tout ce qui devient, dans le sacre, invalide, l&#x27;Ecriture vient frapper d&#x27;un interdit sa consommation&#x27;, et l&#x27;on [l&#x27;]appelle, au chapitre Kol Chaa (Pessahim 24a), un interdit general.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Question sur le cas des <b>consacres au-dedans</b> : le second animal, etant 'avant son temps' (<b>mechousar zeman</b>), pourquoi ne recoit-il pas <b>aussi</b> les coups au titre de cet interdit-la, en plus de 'oto ve-beno' ? Une braita fonde l'interdit : toutes les <b>causes d'invalidite</b> d'un animal sacrificiel (du gros betail, le taureau, comme du petit, l'agneau) sont comprises dans le verset 'cela ne sera pas agree' (<b>lo yeratze</b>, Lev 22:23).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תלמוד לומר: ״ושור ושה שרוע וקלוט וגו׳״, לימד על הפסולין שבשור ושבשה, שהוא ב״לא ירצה״!</div>
+            <div class="fr"><p>[Le] Talmud [l&#x27;]enseigne en disant : &#x27;et un taureau ou un agneau [aux membres] disproportionnes ou ecourtes, etc.&#x27; (Lev 22:23) — [l&#x27;Ecriture] a enseigne, a propos des [causes d&#x27;]invalidite qui sont dans le taureau et dans l&#x27;agneau, qu&#x27;[elles entrent dans l&#x27;interdit] &#x27;cela ne sera pas agree&#x27; !</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La braita acheve sa derivation : au milieu du passage interdisant d'offrir des betes a defaut, le verset 'et un taureau ou un agneau [aux membres] <b>disproportionnes ou ecourtes</b>' (Lev 22:23) — alors que taureau et agneau ont deja ete nommes — est <b>surnumeraire</b>. Il vient donc englober <b>toutes</b> les causes d'invalidite (y compris 'avant son temps') dans l'interdit '<b>cela ne sera pas agree</b>'. D'ou la question : le second animal devrait aussi etre fouette a ce titre.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כי קא חשיב לאוי ד״אותו ואת בנו״ – לאוי נוכראי לא קא חשיב.</div>
+            <div class="fr"><p>[Reponse :] lorsqu&#x27;[il] compte les interdits de &#x27;l&#x27;animal et son petit&#x27;, [c&#x27;est] les interdits etrangers (noukhraim) qu&#x27;[il] ne compte pas.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse de la Guemara. La michna, quand elle enumere les peines, ne retient que les interdits <b>apparentes</b> a 'l'animal et son petit' (oto ve-beno) — son sujet propre. Les interdits <b>etrangers</b> (noukhraim), comme celui de 'avant son temps', ne sont <b>pas comptes</b>, bien qu'ils s'appliquent aussi : la michna ne les omet pas par exemption, mais par <b>economie d'enumeration</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ולא? והא קדשים בחוץ, דלאוי נוכראי נינהו, וקא חשיב, דקתני: קדשים בחוץ – הראשון חייב כרת, ושניהם סופגין את הארבעים.</div>
+            <div class="fr"><p>Et [vraiment] non [elle ne compte pas les interdits etrangers] ? Mais voici [le cas des] consacres au-dehors, ou ce sont des interdits etrangers, et [pourtant] il [les] compte !</p><p>Car il est enseigne : &#x27;consacres au-dehors — le premier encourt le karet, et tous deux recoivent les quarante [coups].&#x27;</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection : la michna compte bien des interdits etrangers ! Au cas des <b>consacres au-dehors</b>, elle enonce que le premier encourt le <b>karet</b> (au titre de chehoutei houtz, interdit etranger a 'oto ve-beno') et que <b>tous deux</b> recoivent les quarante coups. Donc elle ne s'en tient pas qu'au seul interdit de 'l'animal et son petit'.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בשלמא שני, משום לאו ד״אותו ואת בנו״, אלא ראשון אמאי סופג? לאו משום לאו דשחוטי חוץ?</div>
+            <div class="fr"><p>Soit pour le second : [il recoit les coups] au titre de l&#x27;interdit de &#x27;l&#x27;animal et son petit&#x27;. Mais le premier, pourquoi recoit-il [les coups] ?</p><p>N&#x27;est-ce pas au titre de l&#x27;interdit des abattus-au-dehors (chehoutei houtz) ?</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Precision de l'objection. Pour le second animal (consacres au-dehors), les coups se justifient par 'oto ve-beno'. Mais le <b>premier</b> animal, qui n'a pas de petit abattu avant lui, pourquoi recoit-il les coups ? Necessairement au titre des <b>abattus-au-dehors</b> (chehoutei houtz) — un interdit <b>etranger</b> a 'oto ve-beno'. Preuve que la michna compte parfois ces interdits ; pourquoi alors omettre 'avant son temps' au cas des consacres au-dedans ?</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כל היכא דליכא לאו ד״אותו ואת בנו״ – חשיב לאוי נוכראי, וכל היכא דאיכא לאו ד״אותו ואת בנו״ – לא חשיב לאוי נוכראי.</div>
+            <div class="fr"><p>[Reponse :] partout ou il n&#x27;y a pas [d&#x27;]interdit de &#x27;l&#x27;animal et son petit&#x27; — [il] compte les interdits etrangers ; et partout ou il y a [un] interdit de &#x27;l&#x27;animal et son petit&#x27; — [il] ne compte pas les interdits etrangers.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse affinee. La regle de la michna est <b>contextuelle</b> : la ou un cas <b>n'engage pas</b> 'l'animal et son petit' (comme le premier animal des consacres au-dehors), elle enumere les interdits <b>etrangers</b> (le karet de chehoutei houtz, les coups) ; mais la ou un cas <b>engage</b> 'l'animal et son petit' (le second animal, les consacres au-dedans), elle <b>ne cite que cet interdit-la</b> et laisse de cote les etrangers — d'ou le silence sur 'avant son temps'.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רבי זירא אמר: הנח למחוסר זמן, דהכתוב</div>
+            <div class="fr"><p>Rabbi Zira a dit : laisse [de cote] &#x27;avant son temps&#x27; (mechousar zeman), car le verset</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הנח למחוסר זמן שהכתוב נתקו לעשה</b> פירש בקונטרס דלא דמי לעשה דשלוח דהוי מעיקרא אבל האי עשה על כרחך אחר הלאו הוא דהלאו הוי תוך שבעה והעשה אחר כך משמע שרוצה לפרש כמו שאר ניתק לעשה שבש&quot;ס ותימה דלא דמי לנותר וגזלה דהתם אחר שעבר הלאו בא העשה לתקן מה שעבר אבל כי ההיא דהכא לא מצינו ומיהו מצינו לעשה כה&quot;ג בפרק אמר להם הממונה (יומא לו:) דא&quot;ר ירמיה בלאו דנבלה קמיפלגי אי הוה ניתק לעשה במאי דאמר קרא לגר אשר בשעריך תתננה ואכלה אבל אינה ראיה חדא דאביי פליג עליה ואמר דלכולי עלמא לאו מעליא הוא ואפילו לרבי ירמיה דאיכא מאן דקרי ליה ניתק לעשה היינו התם דנכתב לעשה מיד אחר הלאו אבל עשה דמיום השמיני אינו נכתב מיד אחר הלאו דלא ירצה ונראה לפרש הנח למחוסר זמן דהכתוב נתקו מלאוי דלא ירצה ולא הוי בכלל שאר פסולים דהוו בלאו דלא ירצה אלא נתקו לעשה ולית ביה אלא עשה דמיום השמיני ירצה ולית לן למימר דאתא קרא דירצה שיש בו גם עשה עם הלאו דכל היכא דאיכא למידרש לא מוקמינן ליה בלאוי יתירי ואית לן לאוקומי הלאו בשאר פסולין והוי האי ניתק לעשה כי ההוא דפסחים דפרק אלו דברים (פסחים דף סז.) דאמרינן מצורע שנכנס לפנים ממחיצתו פטור שנאמר בדד ישב הכתוב נתקו לעשה פי&#x27; נתקו משאר טמאים דהוו בלא יטמאו מחניהם להעמיד אעשה דבדד ישב וכן החולץ ליבמתו דהוי בלא יבנה ובא להוציאו מכרת דאשת אח וכן הבערה ללאו יצתה לר&#x27; יוסי והשתא ניחא סוגיא דפ&#x27; פרת חטאת (זבחים ד&#x27; קיב:) דקאמר רבי שמעון אותו ואת בנו ומחוסר זמן בלא תעשה ומפרש בגמרא טעמא מקרא דלא תעשון ככל וגו&#x27; איש כל הישר בעיניו אמר להן משה כשתבאו לא&quot;י ותקריבו חובות לא תקריבו מכל הישר דרך ישרות וגלגל לגבי שילה מחוסר זמן הוא ואמר רחמנא לא תעשון ופריך אי הכי מילקי נמי לילקי אלמה א&quot;ר זירא הכתוב נתקו לעשה פי&#x27; כיון דאמרינן דאיכא בהדיא לאו במחוסר זמן א&quot;כ לילקי עליה דליכא למימר דנתקו לעשה התם כי הכא דאתא לגלות אעשה דלא ירצה לא קאי אמחוסר זמן אלא אשאר פסולין דכיון דכתב ביה לאו בפני עצמו לא שייך למימר הכי אבל לפי&#x27; הקונטרס כי היכי דלא ירצה הוי ניתק לעשה ה&quot;נ לא תעשון ואם כן מאי פריך והר&quot;ר שמואל מוורדו&quot;ן היה אומר דהכי פירושו כיון דאית ביה נמי לאו דלא תעשון לילקי דלא אתי חד עשה ומנתק הני תרי לאוי כדאמר במסכת תמורה (דף ו:) דלא אתי עשה דוהיה הוא ותמורתו יהיה קדש ועקר תרי לאוי דלא יחליפנו ולא ימיר אותו וא&quot;א לומר כן דהיינו דוקא היכא דשני לאוין סמוכין זה לזה תדע דאמר בפרק אלו הן הלוקין (מכות דף יד:) דלא תעשה שקדמו עשה לוקין עליו ומייתי מוישלחו מן המחנה וגו&#x27; ולא יטמאו את מחניהם ותנא אלו הן הלוקין טמא הבא למקדש ומה ראיה היא דלמא התם משום דאיכא תרי לאוי לא יטמאו וגו&#x27; ואיכא נמי לאו דואל המקדש לא תבא ועוד דאמרינן בההוא פירקא דלא לקי אלאו דלא תגזול משום דניתק לעשה דוהשיב את הגזלה אשר גזל דאיכא נמי לאו דלא תעשוק דאמר רבא בפ&#x27; המקבל (ב&quot;מ קיא.) היינו עשק היינו גזל ולמה כתביה בשני שמות לעבור עליו בשני לאוין אלא ודאי דוקא היכא דשני לאוין סמוכין קאמר דלא עקר להו חד עשה ועוד נראה הא דלא עקר תרי לאוי היינו כי ההוא דתמורה דלא הוי ניתוק גמור דאין שם מעשה לתקן הלאו דוהיה קדש לאו עשייה הוא דמאליו קדוש דאם היה אומר הכתוב ואם ימיר יקריב אז הוי ניתוק ובלאו הכי קשה שם הסוגיא וצ&quot;ל שם דכולהו דמייתי התם לא הוי ניתוק גמור ואין להאריך כאן:</div>
+          <div class="glose-fr">Laisse [de cote] &#x27;avant son temps&#x27;, car le verset l&#x27;a detache vers un [commandement] positif — Rachi a explique [que] cela ne ressemble pas au [commandement] positif du renvoi [du nid] (chilouah ha-ken), qui [existait] des l&#x27;origine ; mais ce [commandement] positif-ci [vient] forcement apres l&#x27;interdit, car l&#x27;interdit [s&#x27;applique] durant les sept [premiers jours] et le [commandement] positif ensuite — [Rachi] semble vouloir [l&#x27;]expliquer comme les autres &#x27;[interdits] detaches vers un positif&#x27; du Talmud. Et [c&#x27;est] etonnant, car cela ne ressemble pas [au cas du] &#x27;reste&#x27; (notar) et [du] vol (guezela), ou [c&#x27;est] apres avoir transgresse l&#x27;interdit que vient le [commandement] positif [pour] reparer ce que l&#x27;on a transgresse ; mais un cas comme celui d&#x27;ici, nous ne [le] trouvons pas. Toutefois nous trouvons un [commandement] positif de ce genre au chapitre Amar Lahem ha-Memouneh (Yoma 36b), ou Rabbi Yirmeya dit [que] sur l&#x27;interdit de la charogne (nevela) ils divergent, [a savoir] s&#x27;il est detache vers un positif par ce que dit le verset &#x27;a l&#x27;etranger qui est dans tes portes tu la donneras et il [la] mangera&#x27; (Deut 14) — mais [ce] n&#x27;est pas une preuve : d&#x27;une part, Abaye le contredit et dit que, de l&#x27;avis de tous, [c&#x27;est] un interdit a part entiere ; et [d&#x27;autre part], meme selon Rabbi Yirmeya, [s&#x27;]il en est qui [l&#x27;]appellent &#x27;detache vers un positif&#x27;, [c&#x27;est] la, ou [le commandement] positif est ecrit aussitot apres l&#x27;interdit, tandis que le [commandement] positif de &#x27;a partir du huitieme jour&#x27; n&#x27;est pas ecrit aussitot apres l&#x27;interdit de &#x27;cela ne sera pas agree&#x27;. Et il parait [preferable] d&#x27;expliquer : laisse [de cote] &#x27;avant son temps&#x27;, car le verset l&#x27;a detache de l&#x27;interdit de &#x27;cela ne sera pas agree&#x27;, et [donc il] n&#x27;entre pas dans [le lot des] autres [causes d&#x27;]invalidite qui [sont] dans l&#x27;interdit de &#x27;cela ne sera pas agree&#x27; ; mais [le verset] l&#x27;a detache vers un [commandement] positif, et il n&#x27;y a en lui que le [commandement] positif de &#x27;a partir du huitieme jour il sera agree&#x27; ; et nous n&#x27;avons pas a dire que le verset &#x27;il sera agree&#x27;, [bien] qu&#x27;il y ait en lui aussi un [commandement] positif avec l&#x27;interdit [s&#x27;applique a &#x27;avant son temps&#x27;], car partout ou il est possible d&#x27;interpreter [autrement], nous ne l&#x27;etablissons pas dans des interdits surnumeraires, et nous devons etablir l&#x27;interdit pour les autres [causes d&#x27;]invalidite ; et cet &#x27;[interdit] detache vers un positif&#x27; [est] comme celui de Pessahim, au chapitre Elou Devarim (Pessahim 67a), ou nous disons [que] le lepreux qui est entre a l&#x27;interieur de sa limite est exempt, car il est dit &#x27;il habitera a l&#x27;ecart&#x27; (badad yechev) : le verset l&#x27;a detache vers un [commandement] positif — c&#x27;est-a-dire [qu&#x27;il] l&#x27;a detache des autres [personnes] impures qui [sont] dans [l&#x27;interdit] &#x27;qu&#x27;ils ne rendent pas impurs leurs camps&#x27;, [pour] le maintenir sur le [commandement] positif de &#x27;il habitera a l&#x27;ecart&#x27; ; et de meme celui qui fait la halitsa a sa belle-soeur, qui [serait] dans [l&#x27;interdit] &#x27;il ne batira pas&#x27;, [le verset] vient l&#x27;extraire du karet de [l&#x27;interdit relatif a] la femme du frere ; et de meme &#x27;l&#x27;embrasement [du feu] le [jour du] chabbat&#x27; (havara), [pour] un [simple] interdit [le verset l&#x27;]a degage, selon Rabbi Yossi. Et maintenant la sougya du chapitre Parat Hatat (Zevahim 112b) se comprend [bien], la ou Rabbi Chimon dit [que] &#x27;l&#x27;animal et son petit&#x27; et &#x27;avant son temps&#x27; [tombent] sous un interdit, et [ou] l&#x27;on explique dans la Guemara [que] la raison [vient] du verset &#x27;vous ne ferez pas... selon tout ce qui [est] droit a ses yeux&#x27; (Deut 12:8) — Moise leur dit : lorsque vous viendrez en Terre [d&#x27;Israel] et offrirez les obligations, n&#x27;offrez pas selon tout ce qui [est] droit [selon] la voie de la droiture ; et [au passage] de Guilgal a Silo, [l&#x27;animal] &#x27;avant son temps&#x27; [est concerne], et le Misericordieux a dit &#x27;vous ne ferez pas&#x27; ; et l&#x27;on objecte : s&#x27;il en est ainsi, qu&#x27;il soit aussi fouette ! pourquoi donc Rabbi Zira a-t-il dit [que] le verset l&#x27;a detache vers un [commandement] positif ? — c&#x27;est-a-dire : puisque nous disons [qu&#x27;]il y a explicitement un interdit pour &#x27;avant son temps&#x27;, alors qu&#x27;il soit fouette a son titre, car on ne peut dire qu&#x27;[ici] le verset l&#x27;ait detache vers un positif comme [precedemment], la ou [le verset] venait reveler le [commandement] positif de &#x27;cela ne sera pas agree&#x27; [qui] ne porte pas sur &#x27;avant son temps&#x27; mais sur les autres [causes d&#x27;]invalidite — car des lors qu&#x27;un interdit [propre] est ecrit a son sujet, il ne convient pas de dire ainsi ; mais selon l&#x27;explication de Rachi, de meme que &#x27;cela ne sera pas agree&#x27; est un [interdit] detache vers un positif, de meme &#x27;vous ne ferez pas&#x27; — et alors, que vient objecter [la Guemara] ? Et notre maitre Chemouel de Vardoun disait que tel est le sens : puisqu&#x27;il y a aussi en lui l&#x27;interdit de &#x27;vous ne ferez pas&#x27;, qu&#x27;il soit fouette, car un seul [commandement] positif ne vient pas detacher ces deux interdits — comme on [le] dit au traite Temoura (6b) [que] le [commandement] positif de &#x27;et il sera, lui et son echange, [chose] sainte&#x27; (Lev 27) ne vient pas et n&#x27;extirpe [pas] les deux interdits de &#x27;il ne le changera pas&#x27; et &#x27;il ne le permutera pas&#x27;. Et il n&#x27;est pas possible de dire ainsi, car [cela vaut] precisement la ou deux interdits sont contigus l&#x27;un a l&#x27;autre. Sache[-le] : car l&#x27;on dit au chapitre Elou Hen ha-Lokin (Makot 14b) [qu&#x27;]un interdit precede d&#x27;un [commandement] positif, on est fouette a son titre, et l&#x27;on [l&#x27;]amene de &#x27;qu&#x27;ils renvoient hors du camp... et ils ne rendront pas impurs leurs camps&#x27; (Nombres 5), et l&#x27;on a enseigne &#x27;voici ceux que l&#x27;on fouette : l&#x27;impur qui entre au sanctuaire&#x27; — or quelle preuve est-ce la ? peut-etre [est-ce] la, parce qu&#x27;il y a deux interdits, &#x27;ils ne rendront pas impurs etc.&#x27;, et qu&#x27;il y a aussi l&#x27;interdit de &#x27;et il ne viendra pas vers le sanctuaire&#x27; ! Et de plus, l&#x27;on dit dans ce chapitre [que] l&#x27;on n&#x27;est pas fouette au titre de l&#x27;interdit de &#x27;tu ne deroberas pas&#x27;, parce qu&#x27;il est detache vers un positif, [a savoir] &#x27;et il restituera l&#x27;objet vole qu&#x27;il a derobe&#x27;, alors qu&#x27;il y a aussi l&#x27;interdit de &#x27;tu n&#x27;extorqueras pas&#x27;, car Rava dit au chapitre Ha-Mekabel (Baba Metsia 111a) : &#x27;extorquer&#x27;, c&#x27;est &#x27;derober&#x27;, [c&#x27;est] la meme chose, et pourquoi [l&#x27;Ecriture] l&#x27;a-t-elle ecrit sous deux denominations ? [pour] transgresser a son sujet deux interdits ; [or l&#x27;on n&#x27;est pas fouette,] donc, assurement, [c&#x27;est] precisement la ou deux interdits sont contigus qu&#x27;il dit qu&#x27;un seul [commandement] positif ne [les] extirpe pas. Et de plus il parait [que] ce [principe] qu&#x27;un seul [commandement] positif n&#x27;extirpe pas deux interdits, [c&#x27;est] comme ce [cas] de Temoura, ou [ce] n&#x27;est pas un detachement complet, car il n&#x27;y a pas la d&#x27;acte [permettant] de reparer l&#x27;interdit — [car] &#x27;il sera [chose] sainte&#x27; n&#x27;est pas un acte, [l&#x27;animal] etant sanctifie de lui-meme ; [tandis que] si l&#x27;Ecriture avait dit &#x27;et s&#x27;il permute, qu&#x27;il offre&#x27;, alors [ce] serait un detachement ; et sans cela [encore], la sougya y est difficile, et il faut dire la que toutes [les preuves] que l&#x27;on amene la-bas ne [sont] pas un detachement complet — et il n&#x27;y a pas a [s&#x27;]etendre ici.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse alternative de <b>Rabbi Zira</b> (qui se poursuit au daf suivant). Il ne faut meme pas chercher pourquoi la michna n'enonce pas de coups pour 'avant son temps' : c'est que le <b>verset l'a detache</b> (nitko) de l'interdit 'cela ne sera pas agree' pour le rattacher a un <b>commandement positif</b> (la-asse) — celui de 'a partir du huitieme jour... il sera agree' (Lev 22:27). Or un interdit 'detache vers un positif' (<b>lav ha-nitak la-asse</b>) n'entraine <b>pas de coups</b>. 'Avant son temps' sort donc de la liste des invalidites passibles de flagellation.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Chullin_80a.html">&lsaquo; Chullin 80a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Chullin_81a.html">Chullin 81a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

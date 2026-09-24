@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chullin — étude continue (13a → 13b)</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Chullin — étude continue (13a → 13b)</h1>
+    <div class="ref">Chullin 13a · Chullin 13b</div>
+  </header>
+  
+  
+  <div style="margin:40px 0 16px;text-align:center;border-top:2px solid #c9bfa8;"><span style="background:var(--bg);padding:0 18px;position:relative;top:-13px;font-weight:700;color:#b45309;letter-spacing:.06em;font-size:1.05rem;">◈ Chullin 13a ◈</span></div><h2 style="text-align:center;font-size:1.15rem;margin:0 0 4px;color:#1c1917;">Chullin 13a — Acte et intention du mineur, mitassek dans les qodachim, chehita du non-Juif et du min</h2><div class="resume"><b>Sougya :</b> Ce daf clot la discussion sur la valeur juridique des actes (maaseh) et des intentions (mahshava) du mineur, du sourd-muet et du dement. Rabbi Yohanan distingue l&#x27;intention pure (jamais retenue) de l&#x27;intention lue dans l&#x27;acte (machshavto nikeret mitoch maasav), illustree par l&#x27;olah deplacee du sud vers le nord du parvis et par les fruits exposes a la rosee. Rav Nahman bar Yitzhak fixe la synthese : l&#x27;acte vaut meme de-oraita, l&#x27;intention seule ne vaut jamais, l&#x27;intention manifeste par l&#x27;acte ne vaut que de-rabbanan. Chmouel etablit ensuite, a partir des versets, que le mitassek (qui egorge sans intention de chehita) rend l&#x27;offrande passoul. La Michna ouvre enfin le theme central du chapitre : la chehita d&#x27;un non-Juif rend la bete nevela, et la braita etend le soupcon idolatre au min juif (pain, vin, livres, fruits).</div><figure class="intro-svg"><div class="svg-wrap"><svg viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="280" fill="#fffdf8"/>
+  <text x="360" y="26" text-anchor="middle" font-size="16" font-weight="700" fill="#1c1917">Mineur, sourd-muet, dement : qu'est-ce qui est juridiquement valable ?</text>
+  <rect x="30" y="44" width="330" height="38" fill="#f3eee2" stroke="#d6cdbb"/>
+  <rect x="360" y="44" width="150" height="38" fill="#e8ecfb" stroke="#d6cdbb"/>
+  <rect x="510" y="44" width="180" height="38" fill="#e8ecfb" stroke="#d6cdbb"/>
+  <text x="46" y="68" font-size="13" font-weight="700" fill="#1c1917">Element</text>
+  <text x="435" y="68" text-anchor="middle" font-size="13" font-weight="700" fill="#3730a3">de-oraita</text>
+  <text x="600" y="68" text-anchor="middle" font-size="13" font-weight="700" fill="#3730a3">de-rabbanan</text>
+  <rect x="30" y="82" width="330" height="56" fill="#ffffff" stroke="#d6cdbb"/>
+  <rect x="360" y="82" width="150" height="56" fill="#ffffff" stroke="#d6cdbb"/>
+  <rect x="510" y="82" width="180" height="56" fill="#ffffff" stroke="#d6cdbb"/>
+  <text x="46" y="106" font-size="13" font-weight="700" fill="#292524">Maaseh — un acte</text>
+  <text x="46" y="125" font-size="11" fill="#78716c">(ex. creuser un recipient)</text>
+  <text x="435" y="116" text-anchor="middle" font-size="14" font-weight="700" fill="#15803d">VALABLE</text>
+  <text x="600" y="116" text-anchor="middle" font-size="14" font-weight="700" fill="#15803d">VALABLE</text>
+  <rect x="30" y="138" width="330" height="56" fill="#fbf7ef" stroke="#d6cdbb"/>
+  <rect x="360" y="138" width="150" height="56" fill="#fbf7ef" stroke="#d6cdbb"/>
+  <rect x="510" y="138" width="180" height="56" fill="#fbf7ef" stroke="#d6cdbb"/>
+  <text x="46" y="162" font-size="13" font-weight="700" fill="#292524">Mahshava seule</text>
+  <text x="46" y="181" font-size="11" fill="#78716c">(intention non manifestee)</text>
+  <text x="435" y="172" text-anchor="middle" font-size="14" font-weight="700" fill="#b91c1c">NON</text>
+  <text x="600" y="172" text-anchor="middle" font-size="14" font-weight="700" fill="#b91c1c">NON</text>
+  <rect x="30" y="194" width="330" height="62" fill="#ffffff" stroke="#d6cdbb"/>
+  <rect x="360" y="194" width="150" height="62" fill="#ffffff" stroke="#d6cdbb"/>
+  <rect x="510" y="194" width="180" height="62" fill="#ffffff" stroke="#d6cdbb"/>
+  <text x="46" y="220" font-size="13" font-weight="700" fill="#292524">Mahshava lue dans l'acte</text>
+  <text x="46" y="239" font-size="11" fill="#78716c">(machshavto nikeret mitoch maasav)</text>
+  <text x="435" y="230" text-anchor="middle" font-size="14" font-weight="700" fill="#b91c1c">NON</text>
+  <text x="600" y="230" text-anchor="middle" font-size="14" font-weight="700" fill="#15803d">OUI</text>
+</svg></div><figcaption>Synthese de Rav Nahman bar Yitzhak (segments 7-9) : l&#x27;acte vaut pleinement, l&#x27;intention seule jamais, l&#x27;intention revelee par l&#x27;acte seulement de-rabbanan.</figcaption></figure><figure class="intro-svg"><div class="svg-wrap"><svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="300" fill="#fffdf8"/>
+  <rect x="280" y="16" width="160" height="42" rx="8" fill="#1c1917"/>
+  <text x="360" y="42" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Qui a egorge ?</text>
+  <path d="M360 58 L130 104" stroke="#a8a29e" stroke-width="2" fill="none"/>
+  <path d="M360 58 L360 104" stroke="#a8a29e" stroke-width="2" fill="none"/>
+  <path d="M360 58 L600 104" stroke="#a8a29e" stroke-width="2" fill="none"/>
+  <text x="130" y="100" text-anchor="middle" font-size="13" font-weight="700" fill="#44403c">Juif cacher</text>
+  <text x="360" y="100" text-anchor="middle" font-size="13" font-weight="700" fill="#44403c">Non-Juif (nokhri)</text>
+  <text x="600" y="100" text-anchor="middle" font-size="13" font-weight="700" fill="#44403c">Min (apostat juif)</text>
+  <rect x="30" y="116" width="200" height="150" rx="10" fill="#eaf6ec" stroke="#15803d"/>
+  <rect x="260" y="116" width="200" height="150" rx="10" fill="#fdf3e3" stroke="#b45309"/>
+  <rect x="490" y="116" width="200" height="150" rx="10" fill="#fdeaea" stroke="#b91c1c"/>
+  <text x="130" y="152" text-anchor="middle" font-size="14" font-weight="700" fill="#15803d">Chehita cachere</text>
+  <text x="130" y="182" text-anchor="middle" font-size="12" fill="#292524">Permise a la</text>
+  <text x="130" y="200" text-anchor="middle" font-size="12" fill="#292524">consommation</text>
+  <text x="360" y="148" text-anchor="middle" font-size="14" font-weight="700" fill="#b45309">Nevela</text>
+  <text x="360" y="174" text-anchor="middle" font-size="11.5" fill="#292524">Interdite a la table,</text>
+  <text x="360" y="192" text-anchor="middle" font-size="11.5" fill="#292524">MAIS permise au profit</text>
+  <text x="360" y="216" text-anchor="middle" font-size="11.5" fill="#292524">Impurifie par le port</text>
+  <text x="360" y="240" text-anchor="middle" font-size="11" fill="#78716c">(la Michna n'est pas R. Eliezer)</text>
+  <text x="590" y="148" text-anchor="middle" font-size="14" font-weight="700" fill="#b91c1c">Pour l'avoda zara</text>
+  <text x="590" y="174" text-anchor="middle" font-size="11.5" fill="#292524">Interdite meme</text>
+  <text x="590" y="192" text-anchor="middle" font-size="11.5" fill="#292524">a la jouissance</text>
+  <text x="590" y="222" text-anchor="middle" font-size="11" fill="#78716c">pain, vin, livres,</text>
+  <text x="590" y="240" text-anchor="middle" font-size="11" fill="#78716c">fruits : tous suspects</text>
+</svg></div><figcaption>La Michna et la braita (segments 11-13) : trois statuts selon l&#x27;auteur de l&#x27;abattage.</figcaption></figure><section class="seg" id="13a-seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאֵין לָהֶן מַחְשָׁבָה.</div>
+            <div class="fr">(Suite de la Michna :) ... mais ils n&#x27;ont pas d&#x27;intention juridiquement operante (mahshava).</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאֵין לָהֶן מַחֲשָׁבָה</b> כְּגוֹן מָצָא לִקְלִיפַּת אֱגוֹז כְּמוֹ שֶׁהָיָה וַחֲשִׁיב עָלֶיהָ לִמּוּד אוֹ אֲפִילּוּ מָדַד בָּהּ אֶלָּא שֶׁלֹּא עָשָׂה בָּהּ מַעֲשֶׂה לְשֵׁם כְּלִי וְאִם בֶּן דַּעַת חָשַׁב עֲלֵיהֶן טְמֵאִין בְּמַחְשָׁבָה דִּתְנַן (כֵּלִים פכ&quot;ה מ&quot;ט) כָּל הַכֵּלִים יוֹרְדִין לִידֵי טֻומְאָתָן בְּמַחְשָׁבָה:</div>
+          <div class="glose-fr">Et ils n&#x27;ont pas de mahshava — par exemple, on a trouve une coquille de noix telle quelle et l&#x27;on a pense l&#x27;employer comme mesure, ou meme on a effectivement mesure avec, mais sans accomplir d&#x27;acte la destinant a devenir un ustensile. Si une personne dotee de discernement (bar daat) avait forme cette intention, l&#x27;objet deviendrait impur par la seule pensee, comme l&#x27;enseigne la Michna (Kelim 25:9) : tous les ustensiles accedent a leur receptivite a l&#x27;impurete par la pensee.</div>
+        </div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13a-seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ: מַחְשָׁבָה גְּרֵידְתָּא לָא קָא מִיבַּעְיָא לֵיהּ, כִּי קָא מִיבַּעְיָא לֵיהּ – מַחְשַׁבְתּוֹ נִיכֶּרֶת מִתּוֹךְ מַעֲשָׂיו.</div>
+            <div class="fr">Il lui dit : l&#x27;intention seule (mahshava grida) ne fait pas l&#x27;objet de son doute ; ce qui fait l&#x27;objet de son doute, c&#x27;est le cas ou sa pensee est decelable a travers ses actes.</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַחְשָׁבָה גְּרֵידָא לָא קָא מִבַּעְיָא לֵיהּ</b> דִּשְׁמִיעַ לֵיהּ הָא:</div>
+          <div class="glose-fr">La pensee seule ne fait pas l&#x27;objet de son doute — car il a deja recu cet enseignement (que leur pensee n&#x27;a pas de valeur).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַחְשַׁבְתּוֹ נִיכֶּרֶת מִתּוֹךְ מַעֲשָׂיו</b> לְפִי רְאוֹת עֵינֵינוּ אֲבָל אֵין אָנוּ יוֹדְעִין אִם עָשָׂה מַעֲשֶׂה זֶה לְשֵׁם מַחְשָׁבָה זוֹ:</div>
+          <div class="glose-fr">Sa pensee decelable a travers ses actes — selon ce que voient nos yeux ; mais nous ignorons s&#x27;il a accompli cet acte precisement en vue de cette intention.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le doute de Rabbi Yohanan ne porte pas sur l'<b>intention pure</b> (mahshava grida) : la Michna a deja tranche qu'elle n'a aucune valeur pour un mineur. Il vise le cas intermediaire ou la <b>pensee se laisse deviner a travers l'acte</b> (mahshavto nikeret mitoch maasav), sans avoir ete explicitee.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13a-seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כְּגוֹן דַּהֲוָה קָייְמָא עוֹלָה בַּדָּרוֹם, וְאַתְייָה בַּצָּפוֹן וּשְׁחָטָהּ, מַאי? מִדְּאַתְיַיהּ בַּצָּפוֹן וְשַׁחְטַהּ אִיכַּוֵּין לַהּ, אוֹ דִּילְמָא מָקוֹם הוּא דְּלָא אִיתְרְמִי לֵיהּ?</div>
+            <div class="fr">Par exemple : une olah (holocauste) se tenait au sud du parvis ; il l&#x27;a amenee au nord et l&#x27;a egorgee. Quelle est la regle ? Du fait qu&#x27;il l&#x27;a amenee au nord et l&#x27;y a egorgee, conclut-on qu&#x27;il a eu l&#x27;intention de l&#x27;offrir ? Ou peut-etre l&#x27;endroit (du sud) ne lui convenait-il simplement pas ?</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאַתֵּיוַהּ לַצָּפוֹן</b> וְלֹא אָמַר עַל שֵׁם כָּךְ אֲנִי מוֹלִיכָהּ לְשָׁם לְפִי שֶׁאֵינָהּ כְּשֵׁרָה בַּדָּרוֹם:</div>
+          <div class="glose-fr">Et il l&#x27;a amenee au nord — sans declarer : c&#x27;est pour telle raison que je l&#x27;y conduis, parce qu&#x27;elle n&#x27;est pas valable au sud.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אוֹ דִּלְמָא מָקוֹם הוּא דְּלָא אִיתְרְמִי לֵיהּ</b> לֹא נִרְאָה בְּעֵינָיו מָקוֹם הָרִאשׁוֹן:</div>
+          <div class="glose-fr">Ou peut-etre l&#x27;endroit ne lui convenait pas — le premier emplacement ne lui plaisait pas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Cas-test : une <b>olah</b>, dont la chehita doit obligatoirement se faire au <b>nord</b> du parvis, se trouvait au sud. Le mineur la deplace au nord et l'egorge. Ce deplacement <em>revele-t-il</em> une intention valable de l'offrir en olah, ou n'est-il qu'un hasard (le sud ne lui convenait pas) ?</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 312" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="312" fill="#fffdf8"/>
+  <text x="350" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">L'olah deplacee du sud vers le nord du parvis</text>
+  <rect x="70" y="48" width="560" height="148" fill="#f6f1e6" stroke="#b8ab90" stroke-width="2"/>
+  <line x1="350" y1="48" x2="350" y2="196" stroke="#b8ab90" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="210" y="70" text-anchor="middle" font-size="13" font-weight="700" fill="#78716c">SUD (Darom)</text>
+  <text x="490" y="70" text-anchor="middle" font-size="13" font-weight="700" fill="#15803d">NORD (Tzafon)</text>
+  <text x="490" y="88" text-anchor="middle" font-size="10.5" fill="#78716c">lieu requis pour la chehita de l'olah</text>
+  <ellipse cx="200" cy="146" rx="34" ry="20" fill="#e7dcc6" stroke="#8a7a59"/>
+  <text x="200" y="151" text-anchor="middle" font-size="12" font-weight="700" fill="#5b4a2c">olah</text>
+  <defs><marker id="ar1" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0 0 L7 3 L0 6 z" fill="#0891b2"/></marker></defs>
+  <path d="M250 146 L432 146" stroke="#0891b2" stroke-width="3" fill="none" marker-end="url(#ar1)"/>
+  <text x="500" y="150" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">chehita</text>
+  <rect x="40" y="224" width="290" height="72" rx="8" fill="#eaf6ec" stroke="#15803d"/>
+  <text x="55" y="247" font-size="12" font-weight="700" fill="#15803d">Lecture 1 : intention revelee</text>
+  <text x="55" y="266" font-size="11.5" fill="#292524">il l'a menee au nord -&gt; il visait l'olah</text>
+  <text x="55" y="285" font-size="11.5" fill="#292524">(machshavto nikeret mitoch maasav)</text>
+  <rect x="370" y="224" width="290" height="72" rx="8" fill="#fdf3e3" stroke="#b45309"/>
+  <text x="385" y="247" font-size="12" font-weight="700" fill="#b45309">Lecture 2 : simple hasard</text>
+  <text x="385" y="266" font-size="11.5" fill="#292524">le sud ne lui convenait pas ;</text>
+  <text x="385" y="285" font-size="11.5" fill="#292524">le deplacement ne prouve rien</text>
+</svg></div><div class="svg-cap">Segment 2 : le doute de Rabbi Yohanan sur l&#x27;intention lue dans l&#x27;acte du mineur.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13a-seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָא נָמֵי אַמְרַהּ רַבִּי יוֹחָנָן חֲדָא זִימְנָא, דִּתְנַן: הַמַּעֲלֶה פֵּירוֹתָיו לַגַּג מִפְּנֵי הַכְּנִימָה, וְיָרַד עֲלֵיהֶם טַל – אֵינָן ב״כי יֻותַּן״, וְאִם נִתְכַּוֵּין לְכָךְ – הֲרֵי הֵן ב״כי יֻותַּן״.</div>
+            <div class="fr">Mais cela aussi, Rabbi Yohanan l&#x27;a deja enonce une fois, comme nous l&#x27;avons appris (Makhchirin 6:1) : celui qui monte ses fruits sur le toit pour les proteger des charancons, et la rosee tombe dessus — ils ne sont pas sous ki youtan ; mais s&#x27;il a eu l&#x27;intention de cela, ils sont sous ki youtan.</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִפְּנֵי הַכְּנִימָה</b> כוצונ&quot;ש שֶׁבְּפוֹלִים וַעֲדָשִׁים כְּמוֹ וַתְּהִי הַכִּנָּם (שְׁמוֹת ח):</div>
+          <div class="glose-fr">A cause de la kinima — une vermine (charancons) des feves et des lentilles, comme dans va-tehi ha-kinam (Ex 8).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵינָן בְּכִי יֻותַּן</b> דְּלָא נִיחָא לֵיהּ בְּהַאי טַל וְלָא הֲוָה הֶכְשֵׁר לְהוֹרִידָן לִידֵי טֻומְאָתָן אִם יִגַּע בָּהֶם שֶׁרֶץ לְאַחַר זְמַן דְּבָעֵינַן כִּי יֻותַּן דֻּומְיָא דְּכִי יִתֵּן דְּנִיחָא לֵיהּ:</div>
+          <div class="glose-fr">Ils ne sont pas sous ki youtan — car cette rosee ne lui agree pas ; ce n&#x27;est donc pas une mise en aptitude (hekhcher) qui les rendrait susceptibles d&#x27;impurete si un sheretz les touchait ensuite, car il faut ki youtan (s&#x27;il est mis) a l&#x27;image de ki yiten (s&#x27;il met) : c&#x27;est-a-dire que cela lui agree.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאִם נִתְכַּוֵּין לְכָךְ</b> בֵּין בִּשְׁעַת הַעֲלָאָה וּבֵין לְאַחַר מִכָּאן קֹודֶם שֶׁיְּנַגֵּב הַטַּל מֵעֲלֵיהֶם:</div>
+          <div class="glose-fr">Et s&#x27;il a eu l&#x27;intention de cela — que ce soit au moment de monter les fruits ou apres, tant que la rosee n&#x27;a pas seche sur eux.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הֲרֵי הֵן בְּכִי יֻותַּן</b> דְּהָכִי אָמְרִינַן בְּדֻוכְתָּא אַחֲרִיתִי עוֹדֵהוּ הַטַּל עֲלֵיהֶן וְשָׂמַח הֲרֵי הֵן בְּכִי יֻותַּן ואע&quot;פ שֶׁלֹּא נִתְכַּוֵּין קֹודֶם לָכֵן אֶלָּא כְּשֶׁרָאָה שָׂמֵחַ:</div>
+          <div class="glose-fr">Ils sont sous ki youtan — car ainsi disons-nous ailleurs : tant que la rosee est encore sur eux et qu&#x27;il s&#x27;en rejouit, ils sont sous ki youtan, meme s&#x27;il n&#x27;en avait pas eu l&#x27;intention auparavant et ne s&#x27;est rejoui qu&#x27;en la voyant.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Preuve tiree de Makhchirin : des fruits ne deviennent receptifs a l'impurete (<b>ki youtan</b>, Lev 11:38) que si leur humidification <b>agree</b> au proprietaire. Monter les fruits pour les proteger des charancons ne vaut pas consentement ; mais une intention que la rosee les mouille, oui.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13a-seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הֶעֱלוּם חֵרֵשׁ שׁוֹטֶה וְקָטָן, אַף עַל פִּי שֶׁנִּתְכַּוְּונוּ לְכָךְ, אֵינָן ב״כי יֻותַּן״, מִפְּנֵי שֶׁיֵּשׁ לָהֶן מַעֲשֶׂה וְאֵין לָהֶן מַחְשָׁבָה.</div>
+            <div class="fr">(La Michna poursuit :) Si un sourd-muet, un dement ou un mineur les ont montes, meme s&#x27;ils en ont eu l&#x27;intention, ils ne sont pas sous ki youtan, parce qu&#x27;ils ont un acte (maaseh) mais n&#x27;ont pas d&#x27;intention operante (mahshava).</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הֶעֱלוּם חש&quot;ו</b> מִפְּנֵי הַכְּנִימָה:</div>
+          <div class="glose-fr">Un sourd-muet, un dement ou un mineur les ont montes — a cause de la kinima.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אע&quot;פ שֶׁנִּתְכַּוֵּין לְכָךְ</b> לְאַחַר שֶׁיָּרַד הַטַּל עֲלֵיהֶם:</div>
+          <div class="glose-fr">Meme s&#x27;ils ont eu l&#x27;intention de cela — apres que la rosee soit tombee sur eux.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵינָן בְּכִי יֻותַּן</b> שֶׁאֵין מַחְשַׁבְתָּם מַחְשָׁבָה וְהֶכְשֵׁר בְּמַחְשָׁבָה תָּלוּי וְהַאי מַעֲשֶׂה דַּעֲלִיָּיה לָאו מַעֲשֶׂה הוּא דְּמִפְּנֵי הַכְּנִימָה הֶעֱלוּם:</div>
+          <div class="glose-fr">Ils ne sont pas sous ki youtan — car leur pensee n&#x27;est pas une pensee valable, et la mise en aptitude depend de la pensee ; quant a l&#x27;acte de les monter, ce n&#x27;est pas un acte probant, puisque c&#x27;est a cause de la kinima qu&#x27;on les a montes.</div>
+        </div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13a-seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאָמַר רַבִּי יוֹחָנָן: לֹא שָׁנוּ אֶלָּא שֶׁלֹּא הִיפֵּךְ בָּהֶן, אֲבָל הִיפֵּךְ בָּהֶן – הֲרֵי זֶה ב״כי יֻותַּן״.</div>
+            <div class="fr">Et Rabbi Yohanan dit : on n&#x27;a enseigne cela que dans le cas ou il ne les a pas retournes ; mais s&#x27;il les a retournes, ils sont sous ki youtan. (Preuve que l&#x27;intention manifeste par l&#x27;acte est operante.)</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא שָׁנוּ</b> דַּאֲפִילּוּ נִתְכַּווְּנוּ לָא הָוְיָא כַּוָּונָה:</div>
+          <div class="glose-fr">On n&#x27;a enseigne cela — a savoir que meme s&#x27;ils ont eu l&#x27;intention, ce n&#x27;est pas une intention valable.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא שֶׁלֹּא הִיפֵּךְ בָּהֶן</b> לְאַחַר שֶׁיָּרַד הַטַּל עֲלֵיהֶם מִצַּד זֶה כְּדֵי שֶׁיִּפֹּול עֲלֵיהֶם מִצַּד אַחֵר:</div>
+          <div class="glose-fr">Que dans le cas ou il ne les a pas retournes — apres la chute de la rosee d&#x27;un cote, afin qu&#x27;elle tombe aussi de l&#x27;autre cote.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲבָל הִיפֵּךְ בָּהֶן</b> דְּמַעֲשָׂיו מוֹכִיחִין אע&quot;פ שֶׁלֹּא פֵּירֵשׁ מַחְשַׁבְתּוֹ הוֹאִיל וְנִיכָּר שֶׁדַּעְתּוֹ לְכָךְ הֲרֵי הֵן בְּכִי יֻותַּן דְּאִי בְּשֶׁפֵּירֵשׁ מַחְשַׁבְתּוֹ בִּשְׁעַת מַעֲשֶׂה לָא אִיצְטְרִיךְ רַבִּי יוֹחָנָן לְאַשְׁמוּעִינַן דְּהָא בְּהֶדְיָא תְּנַן דְּיֵשׁ לָהֶן מַעֲשֶׂה:</div>
+          <div class="glose-fr">Mais s&#x27;il les a retournes — ses actes le prouvent : meme sans avoir explicite sa pensee, puisqu&#x27;il est manifeste que telle est son intention, ils sont sous ki youtan. Car s&#x27;il avait explicite sa pensee au moment de l&#x27;acte, Rabbi Yohanan n&#x27;aurait pas eu besoin de l&#x27;enseigner, la Michna disant deja explicitement qu&#x27;ils ont un acte.</div>
+        </div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13a-seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָכִי קָא מִיבַּעְיָא לֵיהּ: דְּאוֹרָייְתָא אוֹ דְּרַבָּנָן?</div>
+            <div class="fr">Voici donc le doute : cela est-il de-oraita (de droit toranique) ou de-rabbanan (de droit rabbinique) ?</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָכִי קָא מִיבַּעְיָא דְּאוֹרָייְתָא אוֹ דְּרַבָּנָן</b> הָא דְּאָמְרִינַן וְשָׁמַעְתִּי מֵרַבּוֹתַי דְּמַחֲשַׁבְתּוֹ נִיכֶּרֶת מִתּוֹךְ מַעֲשָׂיו הָוְיָא מַחֲשָׁבָה כְּאִילּוּ פֵּירְשָׁה בִּשְׁעַת מַעֲשֶׂה:</div>
+          <div class="glose-fr">Voici le doute, de-oraita ou de-rabbanan — au sujet de ce que nous disons (et que j&#x27;ai entendu de mes maitres) : la pensee decelable a travers les actes vaut comme une pensee, comme si elle avait ete explicitee au moment de l&#x27;acte.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּאוֹרָייְתָא הִיא</b> וְסָמְכִינַן עֲלָהּ אֲפִילּוּ לְקֻולָּא כְּגוֹן בַּעְייַן דִּלְעֵיל בְּהֵבִיא עוֹלָה מִדָּרוֹם לַצָּפוֹן וּמַכְשְׁרִי:</div>
+          <div class="glose-fr">Est-ce de-oraita — auquel cas l&#x27;on s&#x27;appuie dessus meme pour alleger (le-koula), comme dans le doute precedent ou l&#x27;on declare valable l&#x27;olah amenee du sud au nord.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אוֹ דְּרַבָּנָן</b> הִיא וְחוּמְרָא בְּעָלְמָא הוּא דַּאֲמוּר רַבָּנָן נֶיהֱוֵי מַעֲשֶׂה וְכִי הִיפֵּךְ בָּהֶן נֶיהֱוֵי הֶכְשֵׁר אֲבָל מִדְּאוֹרַייְתָּא לָא הָוֵי מַעֲשֶׂה וְגַבֵּי עוֹלָה דְּקֻולָּא הוּא לֹא אָמְרוּ כֵּן שֶׁלֹּא אָמְרוּ חֲכָמִים דִּבְרֵיהֶם לְהָקֵל מִדִּבְרֵי תּוֹרָה דְּנִמְצְאוּ עוֹקְרִין אֶלָּא לְהַחְמִיר וְלַעֲשׂוֹת סְיָיג:</div>
+          <div class="glose-fr">Ou de-rabbanan — simple stringence : les Sages ont decrete que ce soit tenu pour un acte, et que les retourner vaille hekhcher ; mais de-oraita ce n&#x27;est pas un acte. Pour l&#x27;olah, ou il s&#x27;agirait d&#x27;alleger, ils n&#x27;ont rien dit de tel : les Sages n&#x27;edictent pas leurs decrets pour alleger la Torah (ce serait la deraciner), mais pour aggraver et eriger une barriere (seyag).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Premiere version de l'echange : le doute n'est pas de savoir si l'intention lue dans l'acte est valable (Rabbi Yohanan l'admet), mais si elle l'est <b>de-oraita</b> — au point de servir meme a alleger (valider l'olah) — ou seulement <b>de-rabbanan</b>, comme stringence. Principe pose par Rachi : les Sages durcissent, ils n'allegent pas la Torah.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13a-seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַב נַחְמָן בַּר יִצְחָק מַתְנֵי הָכִי: אָמַר רַבִּי חִייָּא בַּר אַבָּא, בָּעֵי רַבִּי יוֹחָנָן: קָטָן יֵשׁ לוֹ מַעֲשֶׂה אוֹ אֵין לוֹ מַעֲשֶׂה?</div>
+            <div class="fr">Rav Nahman bar Yitzhak enseigne ainsi : Rabbi Hiyya bar Abba dit que Rabbi Yohanan a pose ce doute : un mineur a-t-il un acte operant (maaseh) ou n&#x27;en a-t-il pas ?</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>יֵשׁ לָהֶן מַעֲשֶׂה</b> אִם עָשׂוּ מַעֲשֶׂה מוֹכִיחַ עַל מַחְשַׁבְתָּן וּפֵירְשׁוּ שֶׁעַל דַּעַת כֵּן עוֹשִׂים וְכִדְפָרְשִׁינַן לְעֵיל שֶׁהֵבִיא עוֹלָה לַצָּפוֹן וּפֵירֵשׁ שֶׁמִּפְּנֵי שֶׁדָּרוֹם פָּסוּל לָהּ הוּא מְבִיאָהּ לַצָּפוֹן:</div>
+          <div class="glose-fr">Ont-ils un acte — s&#x27;ils accomplissent un acte qui prouve leur pensee et qu&#x27;ils precisent agir dans cette intention, comme explique plus haut : il a amene l&#x27;olah au nord en precisant que c&#x27;est parce que le sud lui est invalide.</div>
+        </div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13a-seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רַבִּי אַמֵּי: וְתִיבְעֵי לֵיהּ מַחְשָׁבָה! מַאי שְׁנָא מַחְשָׁבָה דְּלָא קָא מִיבַּעְיָא לֵיהּ? דִּתְנַן: אֵין לָהֶן מַחְשָׁבָה. מַעֲשֶׂה נָמֵי לָא תִּיבְּעֵי לֵיהּ, דִּתְנַן: יֵשׁ לָהֶן מַעֲשֶׂה.</div>
+            <div class="fr">Rabbi Ami lui dit : mais qu&#x27;il pose aussi le doute sur l&#x27;intention ! Qu&#x27;a donc de particulier l&#x27;intention pour qu&#x27;il n&#x27;en doute pas — parce que nous avons appris ils n&#x27;ont pas d&#x27;intention ? Mais alors, qu&#x27;il ne doute pas non plus de l&#x27;acte, puisque nous avons appris ils ont un acte !</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְתִיבְעֵי לֵיהּ מַחְשָׁבָה</b> שְׁחִיטָה גְּרִידְתָּא וּפֵירֵשׁ לְשֵׁם עוֹלָה וּשְׁחִיטָה לָאו מַעֲשֶׂה מוֹכִיחַ עַל הַמַּחֲשָׁבָה הוּא שֶׁכָּל הַשְּׁחִיטוֹת שָׁווֹת:</div>
+          <div class="glose-fr">Qu&#x27;il pose le doute sur la mahshava — le cas d&#x27;une chehita seule ou il a precise viser une olah ; or la chehita n&#x27;est pas un acte qui prouve la pensee, car toutes les chehitot se ressemblent.</div>
+        </div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13a-seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָכִי קָא מִיבַּעְיָא לֵיהּ: דְּאוֹרָייְתָא אוֹ דְּרַבָּנָן? וּפְשִׁיט: יֵשׁ לָהֶן מַעֲשֶׂה, וַאֲפִילּוּ מִדְּאוֹרַיְיתָּא, אֵין לָהֶן מַחְשָׁבָה, וַאֲפִילּוּ מִדְּרַבָּנָן. מַחְשַׁבְתּוֹ נִיכֶּרֶת מִתּוֹךְ מַעֲשָׂיו – מִדְּאוֹרַייְתָּא אֵין לוֹ, מִדְּרַבָּנָן יֵשׁ לוֹ.</div>
+            <div class="fr">Voici le doute : de-oraita ou de-rabbanan ? Et il tranche : ils ont un acte, meme de-oraita ; ils n&#x27;ont pas d&#x27;intention, pas meme de-rabbanan ; quant a l&#x27;intention decelable a travers les actes — de-oraita il n&#x27;en a pas, mais de-rabbanan il en a.</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(5)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָכִי קָא מִיבַּעְיָא לֵיהּ</b> הָא דִּתְנַן (כֵּלִים פי&quot;ז מט&quot;ו) גַּבֵּי חֲקִיקַת אֵלוֹן וְרִמּוֹן יֵשׁ לָהֶם מַעֲשֶׂה:</div>
+          <div class="glose-fr">Voici le doute — au sujet de ce qu&#x27;enseigne la Michna (Kelim 17:15) a propos du creusement d&#x27;un gland de chene et d&#x27;une grenade : ils ont un acte.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּאוֹרָייְתָא הִיא</b> וְסָמְכִינַן עֲלָהּ גַּבֵּי שְׁחִיטַת עוֹלָה וּמַכְשְׁרִינַן:</div>
+          <div class="glose-fr">Est-ce de-oraita — et l&#x27;on s&#x27;appuie dessus pour la chehita de l&#x27;olah, qu&#x27;on declare valable.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אוֹ דִּלְמָא דְּרַבָּנָן הוּא</b> וְחוּמְרָא הוּא דְּאַחְמוּר רַבָּנָן לְשַׁוְויָה כְּלִי לִיטָּמֵא אֲבָל גַּבֵּי עוֹלָה דְּקֻולָּא הוּא לֹא:</div>
+          <div class="glose-fr">Ou peut-etre de-rabbanan — stringence par laquelle les Sages en font un ustensile susceptible d&#x27;impurete ; mais pour l&#x27;olah, ou il s&#x27;agirait d&#x27;alleger, non.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִדְּרַבָּנָן יֵשׁ לוֹ</b> וּלְחוּמְרָא גַּבֵּי הִיפֵּךְ בָּהֶם דְּהֶכְשֵׁירָן:</div>
+          <div class="glose-fr">De-rabbanan il en a — et pour aggraver, dans le cas ou il a retourne les fruits, qu&#x27;on rend alors aptes.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִדְּאוֹרַייְתָּא אֵין לוֹ</b> וְגַבֵּי בַּעְיַין קַמַּייְתָא דְּעוֹלָה לָא סָמְכִינַן עֲלָהּ:</div>
+          <div class="glose-fr">De-oraita il n&#x27;en a pas — et pour le premier doute, celui de l&#x27;olah, on ne s&#x27;appuie pas dessus.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Resolution (version de Rav Nahman bar Yitzhak) : l'<b>acte</b> du mineur vaut meme de-oraita ; l'<b>intention seule</b> ne vaut jamais, pas meme de-rabbanan ; l'<b>intention lue dans l'acte</b> ne vaut que de-rabbanan (pour aggraver), jamais de-oraita — donc on ne s'appuie pas dessus pour valider l'olah.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13a-seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בְּעָא מִינֵּיהּ שְׁמוּאֵל מֵרַב הוּנָא: מִנַּיִן לַמִּתְעַסֵּק בְּקָדָשִׁים שֶׁהוּא פָּסוּל? שֶׁנֶּאֱמַר: ״וְשָׁחַט אֶת בֶּן הַבָּקָר״, שֶׁתְּהֵא שְׁחִיטָה לְשֵׁם בֶּן בָּקָר. אָמַר לוֹ: זוֹ בְּיָדֵינוּ הִיא, לְעַכֵּב מִנַּיִן? תַּלְמוּד לוֹמַר: ״לִרְצוֹנְכֶם תִּזְבָּחֻהוּ״, לְדַעְתְּכֶם זְבוּחוּ.</div>
+            <div class="fr">Chmouel demanda a Rav Houna : d&#x27;ou sait-on que le mitassek (celui qui agit sans intention de chehita) dans les animaux consacres rend l&#x27;offrande passoul (invalide) ? Car il est dit (Lev 1:5) Et il egorgera le jeune taureau : la chehita doit viser un jeune taureau. Il lui repondit : cela, nous le tenons deja ; d&#x27;ou sait-on que c&#x27;est indispensable (le-akev) ? L&#x27;Ecriture enseigne (Lev 19:5) Vous l&#x27;egorgerez selon votre gre — egorgez-le en pleine conscience.</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִנַּיִן לַמִּתְעַסֵּק בְּקָדָשִׁים שֶׁהוּא פָּסוּל</b> כְּלוֹמַר מִנַּיִן לַמִּתְעַסֵּק שֶׁפָּסוּל בְּקָדָשִׁים כְּגוֹן מִתְעַסֵּק בְּסַכִּין לְהַגְבִּיהוֹ אוֹ לְזָורְקוֹ וְשָׁחַט בְּקָדָשִׁים שֶׁלֹּא נִתְכַּוֵּין לְשׁוּם שְׁחִיטָה אֲבָל נִתְכַּוֵּין לְשׁוּם שְׁחִיטָה בְּעָלְמָא כָּשֵׁר אֶלָּא שֶׁלֹּא עָלָה לַבְּעָלִים לְשֵׁם חוֹבָה:</div>
+          <div class="glose-fr">D&#x27;ou sait-on que le mitassek dans les qodachim est passoul — c&#x27;est-a-dire celui qui agit par inadvertance, par exemple en maniant un couteau pour le soulever ou le lancer et qui egorge ainsi un animal consacre, sans aucune intention de chehita. S&#x27;il avait eu l&#x27;intention d&#x27;une chehita quelconque, ce serait valable, mais sans etre compte aux proprietaires comme acquittement de leur obligation.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>זוֹ בְּיָדֵינוּ הִיא</b> מִקְרָא זֶה הָיִיתִי יוֹדֵעַ וּמִכָּאן אָנוּ לְמֵדִים שֶׁמִּצְוָה לְהִתְכַּוֵּין וַאֲנִי שָׁאַלְתִּי לְעַכֵּב מִנַּיִן שֶׁאִם לֹא נִתְכַּוֵּין יְהֵא פָּסוּל:</div>
+          <div class="glose-fr">Cela, nous le tenons deja — ce verset, je le connaissais, et nous en apprenons qu&#x27;il y a mitzva d&#x27;avoir l&#x27;intention ; or ma question portait sur le caractere indispensable (le-akev) : d&#x27;ou sait-on que, faute d&#x27;intention, c&#x27;est invalide ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לִרְצוֹנְכֶם תִּזְבָּחוּהוּ</b> שָׁנָה עָלָיו הַכָּתוּב לְעַכֵּב:</div>
+          <div class="glose-fr">Vous l&#x27;egorgerez selon votre gre — l&#x27;Ecriture a repete l&#x27;exigence pour enseigner qu&#x27;elle est indispensable (le-akev).</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּעָא מִינֵּיהּ שְׁמוּאֵל מֵרַב הוּנָא</b> מַשְׁמַע שֶׁהָיָה שְׁמוּאֵל קָטָן מֵרַב הוּנָא וְכֵן בְּרֵישׁ גִּיטִּין (דַּף ה.) וּבְפֶ&#x27; יֵשׁ בַּעֲרָכִין (עֲרָכִין טז:) הֲווּ יָתְבִי רַב הוּנָא וְחִיָּיא בַּר רַב קַמֵּי שְׁמוּאֵל מַשְׁמַע כְּתַלְמִיד הַיּוֹשֵׁב לִפְנֵי רַבּוֹ וּבְפֶרֶק קַמָּא דְּגִיטִּין (דַּף יא:) יָתֵיב רַב הוּנָא קַמֵּי רַבִּי יִרְמְיָה וְרַבִּי יִרְמְיָה חֲבֵירוֹ שֶׁל רַבִּי זֵירָא הֲוָה כִּדְמוֹכַח בְּנִדָּה (דַּף כג.) בְּעָא מִינֵּיהּ רַבִּי יִרְמְיָה מֵרַבִּי זֵירָא כו&#x27; עַד כָּאן הֱבִיאוֹ רַבִּי יִרְמְיָה לְרַבִּי זֵירָא לִידֵי גִּיחוּךְ וְלֹא גִּחֵךְ וְרַבִּי זֵירָא תַּלְמִידוֹ שֶׁל רַב יְהוּדָה דַּהֲוָה מִשְׁתַּמֵּיט מִינֵּיהּ לְמִיסַּק לְאַרְעָא דְּיִשְׂרָאֵל וְרַב יְהוּדָה תַּלְמִידוֹ שֶׁל רַב וּשְׁמוּאֵל וְהָיָה קוֹרֵא רַבִּי יִרְמְיָה לְרַב הוּנָא דַּרְדְּקֵי (גִּיטִּין דַּף יא:) וְיֵשׁ לוֹמַר דִּתְרֵי רַב הוּנָא הָווּ וּמִיהוּ הַהוּא דַּעֲרָכִין (דַּף טז:) עַל כָּרְחָךְ תַּלְמִידוֹ שֶׁל רַב הֲוָה כִּדְמוֹכַח הָתָם:</div>
+          <div class="glose-fr">Il ressort de cette formulation que Chmouel etait le cadet de Rav Houna ; de meme au debut de Guittin (5a), et au chapitre Yech be-Arakhin (Arakhin 16b) : Rav Houna et Hiyya bar Rav etaient assis devant Chmouel, tel un disciple devant son maitre. Et au premier chapitre de Guittin (11b) : Rav Houna siegeait devant Rabbi Yirmeya ; or Rabbi Yirmeya etait le collegue de Rabbi Zera (cf. Nidda 23a : Rabbi Yirmeya posa une question a Rabbi Zera... il l&#x27;amena au bord du rire sans le faire rire), et Rabbi Zera etait le disciple de Rav Yehouda — qu&#x27;il fuyait pour monter en Terre d&#x27;Israel — lequel etait le disciple de Rav et de Chmouel ; et Rabbi Yirmeya appelait Rav Houna dardeqi (ecolier). On peut donc dire qu&#x27;il y avait deux Rav Houna ; toutefois celui d&#x27;Arakhin (16b) etait necessairement le disciple de Rav, comme le prouve le passage la-bas.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִנַּיִן לַמִּתְעַסֵּק בְּקָדָשִׁים שֶׁהוּא פָּסוּל</b> פֵּירֵשׁ בַּקּוּנְטְרֵס מִתְעַסֵּק בְּסַכִּין לְהַגְבִּיהוֹ וְלִזְרֹוק אוֹתוֹ וְקָשֶׁה דבכה&quot;ג אֲפִילּוּ בְּחֻולִּין פָּסוּל לְרַבָּנָן אֲפִילּוּ מִתְכַּוֵּין לַחֲתִיכָה כְּגוֹן לִנְעָצָהּ בַּכֹּותֶל כִּדְמוֹכַח בְּפֶרֶק ב&#x27; (לְקַמָּן חֻולִּין לא.) עַד שֶׁיִּתְכַּוֵּין לַחֲתִיכַת סִימָנִין וְנִרְאֶה דְּהַאי מִתְעַסֵּק בְּקָדָשִׁים הַיְינוּ דְּמִתְכַּוֵּין לַחֲתִיכַת סִימָנִים וְלֹא לְשֵׁם זְבִיחָה דִּבְחֻולִּין כָּשֵׁר וּבְקָדָשִׁים פָּסוּל וְעוֹד יֵשׁ מִתְעַסֵּק אַחֵר כְּגוֹן שֶׁל קָדָשִׁים שֶׁסָּבוּר שֶׁהוּא חֻולִּין וּשְׁחָטוֹ דְּפָסוּל מִטַּעַם מִתְעַסֵּק כִּדְאָמְרִינַן בִּזְבָחִים בְּסוֹף פֶּרֶק ב&quot;ש (זְבָחִים דַּף מו:) דְּמִשּׁוּם חֻולִּין פְּסוּלָה וְתַרְוַיְיהוּ מֻושְׁחָט אֶת בֶּן הַבָּקָר נָפְקָא:</div>
+          <div class="glose-fr">D&#x27;ou sait-on que le mitassek dans les qodachim est passoul — Rachi (le Kountras) a explique : celui qui manie un couteau pour le soulever ou le lancer. Cela fait difficulte, car dans un tel cas, meme pour de la viande profane (houlin) ce serait deja invalide selon les Rabbanan, et meme avec l&#x27;intention de trancher (par ex. pour planter le couteau dans un mur), comme le prouve le 2e chapitre (Houlin 31a) : jusqu&#x27;a ce qu&#x27;il ait l&#x27;intention de trancher les simanim. Il parait donc que ce mitassek dans les qodachim vise celui qui a l&#x27;intention de trancher les simanim mais non en vue d&#x27;un sacrifice : pour de la houlin c&#x27;est valable, pour les qodachim c&#x27;est invalide. Il existe encore un autre mitassek : un animal consacre qu&#x27;il croyait profane et qu&#x27;il a egorge — invalide au titre de mitassek (Zevahim 46b : invalide a cause de l&#x27;intention de houlin) ; les deux cas se deduisent de ve-chahat et ben ha-bakar.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouveau theme : le <b>mitassek</b>, celui qui egorge un animal consacre <em>sans intention d'accomplir une chehita</em> (il maniait le couteau). Chmouel deduit l'invalidite de deux versets : ve-chahat et ben ha-bakar enseigne qu'il <b>faut</b> viser l'animal (mitzva, le-chatehila), et li-retzonkhem tizbahuhou que cette intention est <b>indispensable</b> (le-akev) : son absence rend l'offrande passoul.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 292" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="292" fill="#fffdf8"/>
+  <text x="350" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Mitassek : pourquoi l'offrande est invalide</text>
+  <rect x="40" y="46" width="290" height="98" rx="10" fill="#eef2ff" stroke="#3730a3"/>
+  <text x="185" y="70" text-anchor="middle" font-size="12" font-weight="700" fill="#3730a3">Ve-chahat et ben ha-bakar (Lev 1:5)</text>
+  <text x="185" y="93" text-anchor="middle" font-size="11.5" fill="#292524">la chehita doit viser un jeune taureau</text>
+  <text x="185" y="117" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1c1917">-&gt; mitzva d'avoir l'intention</text>
+  <text x="185" y="135" text-anchor="middle" font-size="11" fill="#78716c">(le-chatehila)</text>
+  <rect x="370" y="46" width="290" height="98" rx="10" fill="#eef2ff" stroke="#3730a3"/>
+  <text x="515" y="70" text-anchor="middle" font-size="12" font-weight="700" fill="#3730a3">Li-retzonkhem tizbahuhou (Lev 19:5)</text>
+  <text x="515" y="93" text-anchor="middle" font-size="11.5" fill="#292524">egorgez-le en pleine conscience</text>
+  <text x="515" y="117" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1c1917">-&gt; intention indispensable</text>
+  <text x="515" y="135" text-anchor="middle" font-size="11" fill="#78716c">(le-akev)</text>
+  <path d="M185 144 L320 192" stroke="#a8a29e" stroke-width="2" fill="none"/>
+  <path d="M515 144 L380 192" stroke="#a8a29e" stroke-width="2" fill="none"/>
+  <rect x="200" y="192" width="300" height="74" rx="10" fill="#fdeaea" stroke="#b91c1c"/>
+  <text x="350" y="219" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b91c1c">Mitassek = egorge sans viser une chehita</text>
+  <text x="350" y="245" text-anchor="middle" font-size="13" font-weight="700" fill="#b91c1c">Offrande PASSOUL (invalide)</text>
+</svg></div><div class="svg-cap">Segment 10 : les deux versets — l&#x27;un pose la mitzva, l&#x27;autre rend l&#x27;intention indispensable.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13a-seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַתְנִי׳ שְׁחִיטַת נָכְרִי נְבֵלָה, וּמְטַמְּאָה בְּמַשָּׂא.</div>
+            <div class="fr">MICHNA. La chehita accomplie par un non-Juif rend la bete nevela (charogne), et celle-ci transmet l&#x27;impurete par le port (be-massa).</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַתְנֵי&#x27; שְׁחִיטַת עוֹבֵד כּוֹכָבִים</b> אֲפִילּוּ כְּהִלְכָתָהּ וַאֲחֵרִים רוֹאִין אוֹתוֹ:</div>
+          <div class="glose-fr">Michna. La chehita d&#x27;un idolatre — meme accomplie selon les regles et alors que d&#x27;autres le surveillent.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמְטַמְּאָה בְּמַשָּׂא</b> בַּגְּמָרָא פָּרִיךְ פְּשִׁיטָא:</div>
+          <div class="glose-fr">Et elle impurifie par le port — dans la Guemara on objecte : c&#x27;est evident (pechita) !</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Debut de la Michna du chapitre. La <b>chehita d'un non-Juif</b> ne tue pas casheirement : la bete est <b>nevela</b> et transmet l'impurete a qui la <b>porte</b> (be-massa), meme si l'abattage a ete fait selon les regles et sous surveillance.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13a-seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">גמ׳ נְבֵלָה – אִין, אִיסּוּר הֲנָאָה – לֹא. מַאן תְּנָא? אָמַר רַבִּי חִייָּא בְּרַבִּי אַבָּא אָמַר רַבִּי יוֹחָנָן: דְּלָא כְּרַבִּי אֱלִיעֶזֶר, דְּאִי רַבִּי אֱלִיעֶזֶר – הָאָמַר: סְתָם מַחְשֶׁבֶת נָכְרִי לַעֲבוֹדָה זָרָה.</div>
+            <div class="fr">GUEMARA. Nevela — oui ; interdite a la jouissance — non. Quel est le tana (auteur de la Michna) ? Rabbi Hiyya bar Abba dit au nom de Rabbi Yohanan : ce n&#x27;est pas conforme a Rabbi Eliezer ; car si c&#x27;etait Rabbi Eliezer, n&#x27;a-t-il pas dit : la pensee non specifiee d&#x27;un non-Juif se porte vers l&#x27;idolatrie ?</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>גְּמ&#x27; הָא אָמַר</b> לְקַמָּן בְּהַשּׁוֹחֵט (חֻולִּין דַּף לח:) דְּאַפֵּי&#x27; שְׁחָטָהּ יִשְׂרָאֵל לְצֹורֶךְ עוֹבֵד כּוֹכָבִים אֲסוּרָה בַּהֲנָאָה שֶׁסְּתָם מַחְשֶׁבֶת עוֹבֵד כּוֹכָבִים לַעֲבוֹדַת כּוֹכָבִים:</div>
+          <div class="glose-fr">Guemara. N&#x27;a-t-il pas dit — plus loin, au chapitre Ha-chohet (Houlin 38b), que meme si un Juif a egorge pour le compte d&#x27;un idolatre, la bete est interdite a la jouissance, car la pensee non specifiee d&#x27;un idolatre se porte vers l&#x27;idolatrie.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deduction : nevela <em>oui</em>, interdite a la jouissance <em>non</em> — la bete reste permise au profit. La Michna ne suit donc pas <b>Rabbi Eliezer</b>, pour qui la pensee non specifiee d'un non-Juif vise l'idolatrie (ce qui en interdirait tout benefice).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13a-seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבִּי אַמִּי אָמַר: הָכִי קָתָנֵי, שְׁחִיטַת נָכְרִי – נְבֵלָה, הָא דְּמִין – לַעֲבוֹדָה זָרָה. תְּנִינָא לְהָא דְתָנוּ רַבָּנַן: שְׁחִיטַת מִין לַעֲבוֹדָה זָרָה, פִּיתּוֹ – פַּת כּוּתִי, יֵינוֹ – יֵין נֶסֶךְ, סְפָרָיו – סִפְרֵי קוֹסְמִין, פֵּירוֹתָיו – טְבָלִין, וְיֵשׁ אוֹמְרִים: אַף</div>
+            <div class="fr">Rabbi Ami dit : voici ce qu&#x27;enseigne la Michna — la chehita d&#x27;un non-Juif rend nevela, mais celle d&#x27;un min vise l&#x27;avoda zara. Nous avons ainsi appris (par deduction) ce que les Sages ont enseigne explicitement : la chehita d&#x27;un min est tenue pour l&#x27;idolatrie ; son pain a le statut du pain d&#x27;un Kouti, son vin celui du yein nessekh, ses livres ceux de devins, ses fruits sont tevel ; et certains disent : meme...</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(5)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ר&#x27; אַמִּי מַתְנֵי הָכִי שְׁחִיטַת עוֹבֵד כּוֹכָבִים נְבֵלָה הָא דְּמִין לַעֲבוֹדַת כּוֹכָבִים</b> בְּמִין יִשְׂרָאֵל קָא מַיְירֵי. וְהַךְ דֻּוקְיָא דְּמַתְנִיתִין הָכִי דָּיֵיק מִינָּהּ וּלְסַיּוֹעֵי לְתַנָּא דְּבָרַייְתָא וְרַבִּי אַמִּי לָא פְּלִיג אַדְּרַבִּי חַייָּא דְּוַדַּאי מַתְנִיתִין דְּלָא כְּרַבִּי אֱלִיעֶזֶר אֶלָּא לָא אִצְטְרִיךְ לֵיהּ לְמֵידַק דְּמִמֵּילָא שָׁמְעִינַן לָהּ דְּמִדְּקָרֵי לֵיהּ נְבֵלָה ש&quot;מ מֻותֶּרֶת בַּהֲנָאָה:</div>
+          <div class="glose-fr">Rabbi Ami enseigne ainsi : la chehita d&#x27;un idolatre rend nevela, mais celle d&#x27;un min vise l&#x27;idolatrie — il parle d&#x27;un min juif. Cette deduction de la Michna se fait pour corroborer le tana de la braita. Rabbi Ami ne diverge pas de Rabbi Hiyya : assurement la Michna ne suit pas Rabbi Eliezer ; simplement il n&#x27;avait pas besoin de le deduire, puisqu&#x27;on l&#x27;entend de soi-meme : du fait qu&#x27;on l&#x27;appelle nevela, on conclut qu&#x27;elle est permise a la jouissance.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>תְּנֵינָא לְהָא דת&quot;ר</b> וש&quot;מ דְּהִלְכְתָא כְּבָרַיְיתָא מִדִּמְסַיֵּיעַ לֵיהּ דֻּוקְיָא דְּמַתְנִיתִין:</div>
+          <div class="glose-fr">Nous avons appris ce que les Sages ont enseigne — et l&#x27;on en deduit que la halakha suit la braita, puisque la deduction de la Michna la corrobore.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שְׁחִיטַת מִין</b> דְּיִשְׂרָאֵל וכ&quot;ש דְּעוֹבֵד כּוֹכָבִים וְהָא מַתְנִיתִין מִיהָא בְּיִשְׂרָאֵל קַיְימָא מִדְּקָאָמַר פֵּירוֹתָיו טְבָלִים וּבָנָיו מַמְזֵרִים: בְּסֵדֶר זְרָעִים שָׁנִינוּ אוֹמֵר הָיָה רַבִּי אֱלִיעֶזֶר פַּת כּוּתִי כִּבְשַׂר חֲזִיר בְּמַסֶּכֶת שְׁבִיעִית (פ&quot;ח מ&quot;י):</div>
+          <div class="glose-fr">La chehita d&#x27;un min — d&#x27;un min juif, a fortiori d&#x27;un idolatre ; mais cette braita vise tout de meme un Juif, puisqu&#x27;elle dit ses fruits sont tevel et ses fils sont mamzerim. Dans l&#x27;ordre Zeraim nous avons appris : Rabbi Eliezer disait que le pain d&#x27;un Kouti est comme de la chair de porc (Cheviit 8:10).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>סְפָרָיו</b> תּוֹרָה נְבִיאִים וּכְתוּבִים שֶׁכְּתָבָן מִין:</div>
+          <div class="glose-fr">Ses livres — la Torah, les Prophetes et les Hagiographes qu&#x27;un min a ecrits.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּסִפְרֵי קוֹסְמִין</b> נְבִיאֵי הַבַּעַל דִּלְשֵׁם עֲבוֹדַת כּוֹכָבִים כְּתָבוֹ וְהָכִי נָמֵי אָמְרִינַן בְּמַסֶּכֶת גִּיטִּין (דַּף מה:) סֵפֶר תּוֹרָה שֶׁכְּתָבוֹ מִין יִשָּׂרֵף:</div>
+          <div class="glose-fr">Comme des livres de devins — tels ceux des prophetes du Baal, ecrits en vue de l&#x27;idolatrie ; de meme disons-nous au traite Guittin (45b) : un sefer Torah ecrit par un min doit etre brule.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>פִּיתּוֹ פַּת כּוּתִי</b> בְּפִירְקֵי דְּרַבִּי אֱלִיעֶזֶר (פ&#x27; לח) יֵשׁ דְּעֶזְרָא וּזְרֻובָּבֶל בֶּן שְׁאַלְתִּיאֵל וִיהוֹשֻׁעַ בֶּן יְהוֹצָדָק נִידּוּ אוֹתָן בְּשָׁלֹשׁ מֵאוֹת כֹּהֲנִים וּבְשָׁלֹשׁ מֵאוֹת תִּינוֹקוֹת וּבְשָׁלֹשׁ מֵאוֹת סִפְרֵי תּוֹרָה וְהָיוּ תּוֹקְעִין וְהַלְּוִיִּם מְשׁוֹרְרִים וּמְסַיְּימִים בֵּהּ מִכָּאן אָמְרוּ כָּל הָאוֹכֵל פַּת כּוּתִי כְּאִילּוּ אוֹכֵל בְּשַׂר חֲזִיר:</div>
+          <div class="glose-fr">Son pain a le statut du pain d&#x27;un Kouti — dans les Pirkei de-Rabbi Eliezer (ch. 38), il est rapporte qu&#x27;Ezra, Zeroubavel ben Chealtiel et Yehochoua ben Yehotzadak excommunierent les Koutim avec trois cents kohanim, trois cents enfants et trois cents rouleaux de Torah ; on sonnait du chofar, les Levites chantaient, et l&#x27;on conclut : de la on a dit que quiconque mange du pain d&#x27;un Kouti, c&#x27;est comme s&#x27;il mangeait de la chair de porc.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Lecture de Rabbi Ami : la Michna oppose implicitement le non-Juif (nevela, profit permis) au <b>min</b> — l'apostat juif — dont l'abattage est repute <b>pour l'avoda zara</b>, donc interdit a la jouissance. Une braita etend ce soupcon idolatre a tout ce qui vient du min : son pain (statut du Kouti), son vin (yein nessekh), ses rouleaux sacres (a bruler), ses fruits (tevel).</p></div>
+    </details></div>
+          </div>
+        </section><div style="margin:40px 0 16px;text-align:center;border-top:2px solid #c9bfa8;"><span style="background:var(--bg);padding:0 18px;position:relative;top:-13px;font-weight:700;color:#b45309;letter-spacing:.06em;font-size:1.05rem;">◈ Chullin 13b ◈</span></div><h2 style="text-align:center;font-size:1.15rem;margin:0 0 4px;color:#1c1917;">Chullin 13b — Ein minin be&#x27;umot, korban du non-Juif, impurete du tikrovet avoda zara, et l&#x27;abattage de nuit</h2><div class="resume"><b>Sougya :</b> Suite directe de 13a. La braita sur le min s&#x27;acheve (ses fils sont mamzerim), puis la Guemara demande pourquoi ne pas craindre que le non-Juif soit un min : Rav Nahman pose ein minin be&#x27;umot — il n&#x27;y a pas de minim parmi les nations, la majorite suivant la coutume de leurs peres (R. Yohanan). On precise la portee de cette regle : ni pour la chehita ni pour moridin (kal va-homer depuis le min juif), mais pour accepter une offrande, qu&#x27;on recoit de tout non-Juif mais non du moumar juif (mikem / ish ish). La Guemara revient ensuite sur &#x27;impurifie par le port&#x27; : Rava distingue la nevela (be-massa) du tikrovet avoda zara, objet d&#x27;une mahloket — Rabbi Yehouda ben Beteira l&#x27;assimile au mort (be-ohel, d&#x27;apres zivchei metim), les Rabbanan non. Enfin une nouvelle Michna : l&#x27;abattage de nuit et celui d&#x27;un aveugle sont valables ; bedi&#x27;avad oui, lechatchila non, sauf torche (Rav Papa).</div><figure class="intro-svg"><div class="svg-wrap"><svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="300" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Trois degres d'impurete et la mahloket sur le tikrovet (segments 7-9)</text>
+  <rect x="30" y="42" width="250" height="34" fill="#f3eee2" stroke="#d6cdbb"/>
+  <rect x="280" y="42" width="170" height="34" fill="#e8ecfb" stroke="#d6cdbb"/>
+  <rect x="450" y="42" width="240" height="34" fill="#e8ecfb" stroke="#d6cdbb"/>
+  <text x="46" y="64" font-size="12.5" font-weight="700" fill="#1c1917">Source d'impurete</text>
+  <text x="365" y="64" text-anchor="middle" font-size="12.5" font-weight="700" fill="#3730a3">par le port (be-massa)</text>
+  <text x="570" y="64" text-anchor="middle" font-size="12.5" font-weight="700" fill="#3730a3">sous une tente (be-ohel)</text>
+  <rect x="30" y="76" width="250" height="56" fill="#ffffff" stroke="#d6cdbb"/>
+  <rect x="280" y="76" width="170" height="56" fill="#ffffff" stroke="#d6cdbb"/>
+  <rect x="450" y="76" width="240" height="56" fill="#ffffff" stroke="#d6cdbb"/>
+  <text x="46" y="101" font-size="13" font-weight="700" fill="#292524">Nevela</text>
+  <text x="46" y="119" font-size="11" fill="#78716c">(bete egorgee par un non-Juif)</text>
+  <text x="365" y="109" text-anchor="middle" font-size="13" font-weight="700" fill="#15803d">OUI</text>
+  <text x="570" y="109" text-anchor="middle" font-size="13" font-weight="700" fill="#b91c1c">NON</text>
+  <rect x="30" y="132" width="250" height="70" fill="#fbf7ef" stroke="#d6cdbb"/>
+  <rect x="280" y="132" width="170" height="70" fill="#fbf7ef" stroke="#d6cdbb"/>
+  <rect x="450" y="132" width="240" height="70" fill="#fbf7ef" stroke="#d6cdbb"/>
+  <text x="46" y="163" font-size="13" font-weight="700" fill="#292524">Tikrovet avoda zara</text>
+  <text x="46" y="181" font-size="11" fill="#78716c">(offrande idolatre)</text>
+  <text x="365" y="171" text-anchor="middle" font-size="13" font-weight="700" fill="#15803d">OUI</text>
+  <text x="570" y="158" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b45309">R. Yehouda b. Beteira : OUI</text>
+  <text x="570" y="178" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1c1917">Rabbanan : NON</text>
+  <text x="570" y="195" text-anchor="middle" font-size="10.5" fill="#78716c">(machloket : be-ohel ou non)</text>
+  <rect x="30" y="202" width="250" height="50" fill="#ffffff" stroke="#d6cdbb"/>
+  <rect x="280" y="202" width="170" height="50" fill="#ffffff" stroke="#d6cdbb"/>
+  <rect x="450" y="202" width="240" height="50" fill="#ffffff" stroke="#d6cdbb"/>
+  <text x="46" y="232" font-size="13" font-weight="700" fill="#292524">Met (cadavre)</text>
+  <text x="365" y="232" text-anchor="middle" font-size="13" font-weight="700" fill="#15803d">OUI</text>
+  <text x="570" y="232" text-anchor="middle" font-size="13" font-weight="700" fill="#15803d">OUI</text>
+  <text x="360" y="278" text-anchor="middle" font-size="11.5" fill="#78716c">R. Yehouda b. Beteira derive l'impurete de tente de : va-yochlu zivchei metim (Ps 106:28) — assimilation au mort.</text>
+</svg></div><figcaption>Impurete (segments 7-9) : la nevela par le port, le mort sous tente, et le tikrovet entre les deux selon la mahloket.</figcaption></figure><figure class="intro-svg"><div class="svg-wrap"><svg viewBox="0 0 720 312" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="312" fill="#fffdf8"/>
+  <rect x="210" y="14" width="300" height="44" rx="8" fill="#1c1917"/>
+  <text x="360" y="34" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">Ein minin be'umot</text>
+  <text x="360" y="50" text-anchor="middle" font-size="11.5" fill="#d6d3d1">enonce a quel propos ?</text>
+  <path d="M360 58 L130 108" stroke="#a8a29e" stroke-width="2" fill="none"/>
+  <path d="M360 58 L360 108" stroke="#a8a29e" stroke-width="2" fill="none"/>
+  <path d="M360 58 L600 108" stroke="#a8a29e" stroke-width="2" fill="none"/>
+  <text x="130" y="104" text-anchor="middle" font-size="12.5" font-weight="700" fill="#44403c">Pour la chehita ?</text>
+  <text x="360" y="104" text-anchor="middle" font-size="12.5" font-weight="700" fill="#44403c">Pour moridin ?</text>
+  <text x="600" y="104" text-anchor="middle" font-size="12.5" font-weight="700" fill="#44403c">Pour le korban ?</text>
+  <rect x="30" y="118" width="200" height="120" rx="10" fill="#f1efed" stroke="#b91c1c"/>
+  <rect x="260" y="118" width="200" height="120" rx="10" fill="#f1efed" stroke="#b91c1c"/>
+  <rect x="490" y="118" width="200" height="160" rx="10" fill="#eaf6ec" stroke="#15803d"/>
+  <line x1="42" y1="128" x2="218" y2="228" stroke="#b91c1c" stroke-width="1.5"/>
+  <line x1="272" y1="128" x2="448" y2="228" stroke="#b91c1c" stroke-width="1.5"/>
+  <text x="130" y="160" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">Superflu</text>
+  <text x="130" y="186" text-anchor="middle" font-size="11" fill="#292524">kal va-homer depuis</text>
+  <text x="130" y="203" text-anchor="middle" font-size="11" fill="#292524">le min juif (deja interdit)</text>
+  <text x="360" y="160" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">Superflu</text>
+  <text x="360" y="186" text-anchor="middle" font-size="11" fill="#292524">kal va-homer depuis</text>
+  <text x="360" y="203" text-anchor="middle" font-size="11" fill="#292524">le min juif</text>
+  <text x="590" y="150" text-anchor="middle" font-size="12.5" font-weight="700" fill="#15803d">RETENU</text>
+  <text x="590" y="175" text-anchor="middle" font-size="11" fill="#292524">On accepte l'offrande</text>
+  <text x="590" y="192" text-anchor="middle" font-size="11" fill="#292524">de tout non-Juif, meme min</text>
+  <text x="590" y="222" text-anchor="middle" font-size="11" fill="#1c1917">mikem : exclut le moumar juif</text>
+  <text x="590" y="244" text-anchor="middle" font-size="11" fill="#1c1917">ish ish : inclut les non-Juifs</text>
+  <text x="590" y="264" text-anchor="middle" font-size="10.5" fill="#78716c">(Rav Oukva bar Hama)</text>
+</svg></div><figcaption>Ein minin be&#x27;umot (segments 2-6) : la regle ne sert ni la chehita ni moridin, mais l&#x27;acceptation d&#x27;une offrande.</figcaption></figure><section class="seg" id="13b-seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בָּנָיו מַמְזֵרִין.</div>
+            <div class="fr">...ses fils sont mamzerim (puisqu&#x27;il ne se soucie pas que sa femme commette l&#x27;adultere et la laisse libre).</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בָּנָיו מַמְזֵרִים</b> שֶׁאֵינוֹ מַקְפִּיד עַל אִשְׁתּוֹ וּמַפְקִירָהּ:</div>
+          <div class="glose-fr">Ses fils sont mamzerim — car il ne veille pas sur sa femme et la laisse libre (mafqir).</div>
+        </div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13b-seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְתַנָּא קַמָּא, אִשְׁתּוֹ לָא מַפְקַר.</div>
+            <div class="fr">Et le premier tana (pourquoi n&#x27;a-t-il pas inclus que ses fils sont mamzerim) ? Pour lui, le min ne laisse pas sa femme libre.</div>
+            <div class="tools"></div>
+          </div>
+        </section><section class="seg" id="13b-seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר מַר: שְׁחִיטַת נָכְרִי נְבֵלָה, וְנֵיחוּשׁ שֶׁמָּא מִין הוּא? אָמַר רַב נַחְמָן אָמַר רַבָּה בַּר אֲבוּהּ: אֵין מִינִין בָּאֻומּוֹת.</div>
+            <div class="fr">Le Maitre a dit (dans la Michna) : la chehita d&#x27;un non-Juif rend nevela. Mais craignons qu&#x27;il soit peut-etre un min (idolatre fervent, dont l&#x27;abattage serait interdit a la jouissance) ! Rav Nahman dit au nom de Rabba bar Avouh : il n&#x27;y a pas de minim parmi les nations.</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִין</b> זֶה הָאָדוּק בַּעֲבוֹדַת כּוֹכָבִים וּמִין יִשְׂרָאֵל חָמוּר מִמּוּמָר לַעֲבוֹדַת כּוֹכָבִים שֶׁהַמִּין אָדוּק בָּהּ וְכָל מַחְשְׁבוֹתָיו לָהּ:</div>
+          <div class="glose-fr">Min — celui qui est fervent (adouk) dans l&#x27;idolatrie ; et le min juif est plus grave que le moumar (apostat) pour l&#x27;idolatrie, car le min y est attache et toutes ses pensees vont vers elle.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara craint qu'un non-Juif soit en realite un <b>min</b> (idolatre fervent), ce qui interdirait sa bete a la jouissance. Reponse de Rav Nahman au nom de Rabba bar Avouh : <b>ein minin be'umot</b> — il n'y a pas de minim parmi les nations.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="300" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1c1917">Faut-il craindre que le non-Juif soit un min ?</text>
+  <defs><marker id="b2" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0 0 L7 3 L0 6 z" fill="#0891b2"/></marker></defs>
+  <rect x="40" y="44" width="260" height="46" rx="8" fill="#fdf3e3" stroke="#b45309"/>
+  <text x="170" y="63" text-anchor="middle" font-size="12" fill="#292524">Chehita d'un non-Juif :</text>
+  <text x="170" y="81" text-anchor="middle" font-size="12" font-weight="700" fill="#b45309">et s'il etait un min (idolatre) ?</text>
+  <path d="M170 90 L170 116" stroke="#0891b2" stroke-width="2.5" fill="none" marker-end="url(#b2)"/>
+  <rect x="40" y="118" width="260" height="44" rx="8" fill="#eef2ff" stroke="#3730a3"/>
+  <text x="170" y="137" text-anchor="middle" font-size="12" font-weight="700" fill="#3730a3">Rav Nahman / Rabba bar Avouh :</text>
+  <text x="170" y="154" text-anchor="middle" font-size="12" font-weight="700" fill="#3730a3">ein minin be'umot</text>
+  <rect x="360" y="100" width="300" height="64" rx="8" fill="#f6f1e6" stroke="#b8ab90"/>
+  <text x="510" y="122" text-anchor="middle" font-size="12" font-weight="700" fill="#1c1917">On en voit pourtant !</text>
+  <text x="510" y="142" text-anchor="middle" font-size="11" fill="#292524">-&gt; mais c'est une minorite (on suit la majorite)</text>
+  <text x="510" y="159" text-anchor="middle" font-size="11" fill="#292524">-&gt; hors d'Israel : minhag avot, non conviction (R. Yohanan)</text>
+  <path d="M300 140 L356 134" stroke="#a8a29e" stroke-width="2" fill="none"/>
+  <path d="M350 200 L350 174" stroke="#15803d" stroke-width="2.5" fill="none"/>
+  <rect x="170" y="200" width="360" height="58" rx="9" fill="#eaf6ec" stroke="#15803d"/>
+  <text x="350" y="225" text-anchor="middle" font-size="12.5" font-weight="700" fill="#15803d">Conclusion : la bete est nevela</text>
+  <text x="350" y="245" text-anchor="middle" font-size="11.5" fill="#292524">interdite a la table, mais permise a la jouissance</text>
+</svg></div><div class="svg-cap">Segment 2-3 : la crainte du min ecartee par la majorite et le minhag avot.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13b-seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְהָא קָחָזֵינַן דְּאִיכָּא? אֵימָא: אֵין רֹוב אֻומּוֹת מִינִין, סָבַר לַהּ כִּי הָא דְּאָמַר רַבִּי חִייָּא בַּר אַבָּא אָמַר רַבִּי יוֹחָנָן: גּוֹיִם שֶׁבְּחוּצָה לְאָרֶץ לָאו עוֹבְדֵי עֲבוֹדָה זָרָה הֵן, אֶלָּא מִנְהַג אֲבוֹתֵיהֶן בִּידֵיהֶן.</div>
+            <div class="fr">Mais nous voyons bien qu&#x27;il y en a ! Dis plutot : la majorite des nations ne sont pas minim (et l&#x27;on suit la majorite). Rabba bar Avouh tient comme ce que dit Rabbi Hiyya bar Abba au nom de Rabbi Yohanan : les non-Juifs hors de Terre d&#x27;Israel ne sont pas des idolatres, mais ils suivent la coutume de leurs peres (minhag avot).</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵין רוֹב עוֹבְדֵי כּוֹכָבִים מִינִין</b> הִלְכָּךְ הָווּ לְהוּ מִינִין מִיעוּטָא וּלְמִיעוּטָא לָא חָיְישִׁינַן:</div>
+          <div class="glose-fr">La majorite des idolatres ne sont pas minim — donc les minim sont une minorite, et a une minorite on ne se soucie pas.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>נָכְרִים שֶׁבְּחוּצָה לְאָרֶץ לָאו עוֹבְדֵי עֲבוֹדַת כּוֹכָבִים הֵם</b> הִלְכָּךְ בְּאֶרֶץ יִשְׂרָאֵל נָמֵי אֵין אֲדוּקִין כָּל כָּךְ שֶׁיִּהְיוּ מַעֲשֵׂיהֶם לְשֵׁם עֲבוֹדַת כּוֹכָבִים:</div>
+          <div class="glose-fr">Les non-Juifs hors de Terre d&#x27;Israel ne sont pas des idolatres — donc, en Terre d&#x27;Israel non plus ils ne sont pas si attaches a l&#x27;idolatrie que leurs actes seraient accomplis en son nom.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection : on voit bien des idolatres ! Reponse : la <b>majorite</b> des nations ne sont pas minim, et l'on suit la majorite. Rabba bar Avouh suit Rabbi Yohanan : les non-Juifs hors de Terre d'Israel ne sont pas des idolatres convaincus, ils suivent la <b>coutume de leurs peres</b> (minhag avot).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13b-seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב יוֹסֵף בַּר מִנְיוֹמֵי אָמַר רַב נַחְמָן: אֵין מִינִין בָּאֻומּוֹת. לְמַאי? אִילֵּימָא לִשְׁחִיטָה, הַשְׁתָּא שְׁחִיטַת מִין דְּיִשְׂרָאֵל אָמְרַתְּ אֲסִירָא, דְּגוֹי מִבַּעְיָא? אֶלָּא לְמוֹרִידִין, הַשְׁתָּא דְּיִשְׂרָאֵל מוֹרִידִין, דְּגוֹיִם מִבַּעְיָא?</div>
+            <div class="fr">Rav Yossef bar Minyoumi dit au nom de Rav Nahman : il n&#x27;y a pas de minim parmi les nations. A quel propos ? Si l&#x27;on dit : pour la chehita — or maintenant que tu as dit que la chehita d&#x27;un min juif est interdite, faut-il le dire d&#x27;un non-Juif (a fortiori) ? Plutot : pour moridin (qu&#x27;on fait descendre dans une fosse, c.-a-d. qu&#x27;on peut faire perir) — or maintenant que d&#x27;un min juif on fait descendre, faut-il le dire d&#x27;un non-Juif ?</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אָמַר רַב יוֹסֵף בַּר מִנְיוֹמֵי אֵין מִינִין בְּאוּמוֹת עוֹבְדֵי כּוֹכָבִים</b> כְּלוֹמַר אֵין תּוֹרַת מִין עַל מִין עוֹבֵד כּוֹכָבִים:</div>
+          <div class="glose-fr">Rav Yossef bar Minyoumi dit : il n&#x27;y a pas de minim parmi les nations idolatres — c&#x27;est-a-dire que le statut (din) de min ne s&#x27;applique pas a un min idolatre.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּעוֹבֵד כּוֹכָבִים מִבַּעְיָא</b> כ&quot;ש שֶׁאָדוּק דִּסְתָם מַחְשְׁבוֹתָיו לָהּ וַאֲסוּרָה בַּהֲנָאָה:</div>
+          <div class="glose-fr">Faut-il le dire d&#x27;un non-Juif — a fortiori, puisqu&#x27;il est fervent et que ses pensees non specifiees vont vers l&#x27;idolatrie, son abattage etant interdit a la jouissance.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לַמּוֹרִידִין</b> בְּבוֹר דְּאָמְרִינַן בְּאֵין מַעֲמִידִין (ע&quot;ז דַּף כו:) הַמִּינִים מוֹרִידִין אוֹתָן לַבּוֹר כו&#x27; אֲבָל הָעוֹבָדֵי כּוֹכָבִים וְהָרוֹעִים בְּהֵמָה דַּקָּה אֲפִילּוּ יִשְׂרָאֵל לֹא מַעֲלִין וְלֹא מוֹרִידִין:</div>
+          <div class="glose-fr">Pour moridin — dans une fosse, comme nous disons au chapitre Ein maamidin (Avoda Zara 26b) : les minim, on les fait descendre dans la fosse, etc. ; mais les idolatres ordinaires et les bergers juifs de petit betail, meme un Juif, on ne les remonte pas et on ne les fait pas descendre.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שְׁחִיטַת מִין דְּיִשְׂרָאֵל אֲסוּרָה דְּעוֹבֵד כּוֹכָבִים מִיבַּעְיָא</b> וא&quot;ת וְדִילְמָא מִין יִשְׂרָאֵל גָּרַע דְּהָא עוֹבֵד עֲבוֹדַת כּוֹכְבֵי&#x27; הָוֵי מִין לכ&quot;ע בְּפֶרֶק בָּתְרָא דְּהוֹרָיוֹת (דַּף יא.) וְנָכְרִים אַף עַל פִּי שֶׁרֻובָּם עוֹבְדֵי עֲבוֹדַת כּוֹכָבִים לָא אָמְרִינַן שְׁחִיטָתָן לַעֲבוֹדַת כּוֹכָבִים וְי&quot;ל דְּמִכָּל מָקוֹם מִין עוֹבֵד כּוֹכָבִים דְּאָדוּק בַּעֲבוֹדַת כּוֹכָבִים יוֹתֵר פָּשׁוּט דִּשְׁחִיטָתוֹ לַעֲבוֹדַת כּוֹכָבִים מִמִּין יִשְׂרָאֵל:</div>
+          <div class="glose-fr">La chehita d&#x27;un min juif est interdite, faut-il le dire d&#x27;un non-Juif — on pourrait objecter : peut-etre le min juif est-il pire, car un Juif idolatre est un min selon tous (Horayot 11a), tandis que des non-Juifs, bien que la plupart soient idolatres, on ne dit pas que leur chehita vise l&#x27;idolatrie ? On repond : neanmoins, pour un min non-Juif, attache a l&#x27;idolatrie, il est plus evident que son abattage vise l&#x27;idolatrie que pour un min juif.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>A quel propos enoncer 'ein minin be'umot' ? Pas pour la <b>chehita</b> ni pour <b>moridin</b> (les faire perir) : dans les deux cas un kal va-homer depuis le min juif suffirait. La regle vise donc autre chose (segment suivant).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13b-seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב עֻוקְבָא בַּר חָמָא: לְקַבֵּל מֵהֶן קָרְבָּן, דְּתַנְיָא: ״מִכֶּם״ וְלֹא כֻּולְּכֶם, לְהוֹצִיא אֶת הַמְשֻׁומָּד, ״מִכֶּם״ – בָּכֶם חִלַּקְתִּי וְלֹא בָּאֻומּוֹת.</div>
+            <div class="fr">Rav Oukva bar Hama dit : c&#x27;est pour accepter d&#x27;eux une offrande (korban). Comme il est enseigne (braita) sur le verset mikem (d&#x27;entre vous, Lev 1:2) : mikem et non tous, pour exclure le moumar (apostat juif) ; mikem — c&#x27;est parmi vous les Juifs que j&#x27;ai fait une distinction, et non parmi les nations (dont on accepte l&#x27;offrande de tous, meme d&#x27;un min).</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְקַבֵּל מֵהֶן קָרְבָּן</b> דִּמְקַבְּלִין קָרְבָּן מִכֻּולָּן וּמַקְרִיבִין אוֹתוֹ לַמִּזְבֵּחַ אֲבָל בְּמִין יִשְׂרָאֵל לֹא כִּדְקָתָנֵי סֵיפָא דְּהַךְ מַתְנִיתָא חוּץ מִן הַמּוּמָר לְנַסֵּךְ אֶת הַיַּיִן ואע&quot;פ שֶׁאֵינוֹ מוּמָר לִשְׁאָר מִצְוֹת וְהֵבִיא קָרְבָּן אֵין מְקַבְּלִין הֵימֶנּוּ כִּדְתָרֵיצְנָא לְעֵיל בְּפִירְקִין (חֻולִּין דַּף ה.):</div>
+          <div class="glose-fr">Pour accepter d&#x27;eux une offrande — on accepte une offrande de tous les non-Juifs et on l&#x27;offre sur l&#x27;autel ; mais d&#x27;un min juif, non, comme l&#x27;enseigne la fin de cette braita : sauf le moumar pour la libation du vin — et meme s&#x27;il n&#x27;est pas apostat pour les autres mitzvot, s&#x27;il a apporte une offrande on ne l&#x27;accepte pas de lui, comme nous l&#x27;avons explique plus haut dans ce chapitre (Houlin 5a).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בָּכֶם חִלַּקְתִּי</b> לְהוֹצִיא אֶת הַמּוּמָר:</div>
+          <div class="glose-fr">Parmi vous j&#x27;ai fait une distinction — pour exclure le moumar.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְלֹא בְּעוֹבְדֵי כּוֹכָבִים</b> דַּאֲפִילּוּ הַמִּינִין כְּשֵׁרִין. ואע&quot;ג דִּבְהֶדְיָא תְּנָא לָהּ בְּהָא מַתְנִיתָא לֵיכָּא לְמִיפְרַךְ תְּנֵינָא מִשּׁוּם דְּלָאו לְכֻולֵּי עָלְמָא שֹׁמֵיעַ לְהוּ מַתְנִיתָא אֲבָל בְּמִידִי דִּתְנָא בְּמַתְנִיתִין כִּי אָמַר לָהּ אָמוֹרָא פָּרִיךְ עָלֶיהָ מַאי קמ&quot;ל תְּנֵינָא:</div>
+          <div class="glose-fr">Et non parmi les idolatres — car meme les minim non-Juifs sont valables pour apporter une offrande. Et bien que cela soit enseigne explicitement dans cette braita, on n&#x27;objecte pas nous l&#x27;avons deja appris (taninah), parce que cette braita n&#x27;est pas connue de tous ; mais pour une chose enseignee dans la Michna, quand un Amora la repete, on lui objecte : que nous apprend-il, nous l&#x27;avons deja appris.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Oukva bar Hama : c'est pour <b>accepter une offrande</b> (korban). Le verset 'mikem' exclut le <b>moumar</b> (apostat juif), mais 'parmi vous j'ai distingue, non parmi les nations' : on accepte le korban de tout non-Juif, <b>meme d'un min</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13b-seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מִמַּאי? דִּלְמָא הָכִי קָאָמַר: מִיִּשְׂרָאֵל – מַצְדִּיקֵי קַבֵּל, מֵרַשִּׁיעֵי לָא תְּקַבֵּל, אֲבָל בְּאוּמוֹת הָעוֹלָם – כְּלָל כְּלָל לֹא! לָא סָלְקָא דַעְתָּךְ, דְּתַנְיָא: ״אִישׁ״ – מַה תַּלְמוּד לוֹמַר ״אִישׁ אִישׁ״? לְרַבּוֹת הַגּוֹיִם, שֶׁנּוֹדְרִים נְדָרִים וּנְדָבוֹת כְּיִשְׂרָאֵל.</div>
+            <div class="fr">D&#x27;ou cela ? Peut-etre le verset dit-il : des Juifs, accepte des justes, des mechants n&#x27;accepte pas ; mais des nations du monde, pas du tout ! Cela ne saurait te venir a l&#x27;esprit, car il est enseigne (braita) : ish — que vient enseigner ish ish (Lev 22:18) ? A inclure les non-Juifs, qui peuvent faire des voeux (nedarim) et des dons (nedavot) comme un Juif.</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִישׁ אִישׁ</b> מִבֵּית יִשְׂרָאֵל וּמִן הַגֵּר (הַגֵּר) בְּיִשְׂרָאֵל אֲשֶׁר יַקְרִיב קָרְבָּנוֹ וְגוֹ&#x27;:</div>
+          <div class="glose-fr">Ish ish — ...de la maison d&#x27;Israel et du guer (etranger residant) en Israel, qui offrira son offrande, etc. (Lev 22:18).</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲבָל מֵעוֹבְדֵי כּוֹכָבִים כְּלָל כְּלָל לֹא</b> וא&quot;ת א&quot;כ לִישְׁתּוֹק קְרָא מִינֵּיהּ דְּמֵהֵיכָא תַּיְתֵי מְקַבְּלִין הָא אִיצְטְרִיךְ אִישׁ אִישׁ לְרַבּוֹיִינְהוּ וְי&quot;ל דְּמ&quot;מ ס&quot;ד דְּמִצַּדִּיקֵי עוֹבְדֵי כּוֹכָבִים נְקַבֵּל לְהָכִי אֲתָא קְרָא לְמַעוֹטִינְהוּ לְגַמְרֵי וְאִם תֹּאמַר וְהָא כְּתִיב (וַיִּקְרָא כב) וּמָעוּךְ וְכָתוּת וְנָתוּק וְכָרוּת וְגוֹ&#x27; וּכְתִיב (שָׁם) וּמִיַּד בֶּן נֵכָר לֹא תַקְרִיבוּ אֶת אֵלֶּה הָא תְּמִימִים תַּקְרִיבוּ וְיֵשׁ לוֹמַר דִּלְעוֹלָם תְּמִימִים נָמֵי לָא וַאֲתָא קְרָא בְּבַעֲלֵי מוּמִין לַעֲבֹור עֲלֵיהֶם בְּלָאו וַעֲשֵׂה:</div>
+          <div class="glose-fr">Mais des idolatres, pas du tout — on pourrait objecter : alors que le verset se taise a leur sujet, d&#x27;ou viendrait-il qu&#x27;on accepte d&#x27;eux ? Or il a fallu ish ish pour les inclure ! On repond : neanmoins on aurait pu penser que des idolatres justes on accepterait ; c&#x27;est pourquoi le verset vient les exclure entierement. Et si tu objectes : il est ecrit (Lev 22) une bete meurtrie, ecrasee, arrachee ou coupee... puis de la main d&#x27;un fils d&#x27;etranger vous n&#x27;offrirez pas tout cela — donc des betes sans defaut on offrirait ! On repond : en realite, meme sans defaut on n&#x27;offre pas non plus, et le verset vient parler des betes a defaut pour transgresser a leur sujet par un interdit (lav) et un commandement positif (asseh).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Pourrait-on accepter des justes des nations et rien des autres ? Non : 'ish ish' (Lev 22:18) vient <b>inclure les non-Juifs</b>, qui peuvent vouer nedarim et nedavot comme un Juif.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13b-seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּמְטַמְּאָה בְּמַשָּׂא. פְּשִׁיטָא, כֵּיוָן דִּנְבֵלָה הִיא מְטַמְּאָה בְּמַשָּׂא! אָמַר רָבָא: הָכִי קָתָנֵי, זוֹ מְטַמְּאָה בְּמַשָּׂא, וְיֵשׁ לְךָ אַחֶרֶת שֶׁהִיא מְטַמְּאָה אֲפִילּוּ בְּאֹהֶל, וְאֵיזוֹ זוֹ? תִּקְרֹובֶת עֲבוֹדָה זָרָה, וּכְרַבִּי יְהוּדָה בֶּן בְּתִירָא.</div>
+            <div class="fr">Et elle impurifie par le port. C&#x27;est evident — puisque c&#x27;est une nevela, elle impurifie par le port ! Rava dit : voici ce qu&#x27;enseigne la Michna : celle-ci impurifie par le port, et il en est une autre qui impurifie meme sous une tente (be-ohel) ; laquelle ? Le tikrovet avoda zara (offrande idolatre), selon Rabbi Yehouda ben Beteira.</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מְטַמְּאָה בְּמַשָּׂא</b> כְּדִכְתִיב (וַיִּקְרָא יא) וְהַנּוֹשֵׂא אֶת נִבְלָתָהּ ואע&quot;פ שֶׁלֹּא נָגַע:</div>
+          <div class="glose-fr">Impurifie par le port — comme il est ecrit (Lev 11) et celui qui porte sa charogne..., meme s&#x27;il n&#x27;y a pas touche.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָכִי קָתָנֵי</b> שְׁחִיטַת סְתָם עוֹבֵד כּוֹכָבִים אֵין מְטַמֵּא אֶלָּא בְּמַשָּׂא אֲבָל יֵשׁ שְׁחִיטַת עוֹבֵד כּוֹכָבִים שֶׁמְּטַמְּאָה אֲפִילּוּ בְּאֹהֶל:</div>
+          <div class="glose-fr">Voici ce qu&#x27;enseigne — la chehita d&#x27;un idolatre ordinaire n&#x27;impurifie que par le port ; mais il existe un abattage d&#x27;idolatre qui impurifie meme sous une tente.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּר&#x27; יְהוּדָה בֶּן בְּתֵירָא</b> לְקַמָּן מְפָרֵשׁ וְאָזֵיל:</div>
+          <div class="glose-fr">Selon Rabbi Yehouda ben Beteira — la Guemara l&#x27;explique plus loin.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>'Elle impurifie par le port' semble <b>evident</b> (puisque nevela) ! Rava : la Michna distingue en realite deux niveaux — celle-ci par le <b>port</b> (be-massa), tandis qu'une autre impurifie meme <b>sous une tente</b> (be-ohel) : le tikrovet avoda zara, selon Rabbi Yehouda ben Beteira.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13b-seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִיכָּא דְאָמְרִי, אָמַר רָבָא: הָכִי קָתָנֵי, זוֹ מְטַמְּאָה בְּמַשָּׂא, וְיֵשׁ לְךָ אַחֶרֶת שֶׁהִיא כָּזוֹ שֶׁמְּטַמְּאָה בְּמַשָּׂא וְאֵינָהּ מְטַמְּאָה בְּאֹהֶל, וְאֵיזוֹ זוֹ? תִּקְרֹובֶת עֲבוֹדָה זָרָה, וּדְלָא כְּרַבִּי יְהוּדָה בֶּן בְּתֵירָא.</div>
+            <div class="fr">Certains rapportent : Rava dit : voici ce qu&#x27;enseigne la Michna : celle-ci impurifie par le port, et il en est une autre, comme celle-ci, qui impurifie par le port et n&#x27;impurifie pas sous une tente ; laquelle ? Le tikrovet avoda zara — et non comme Rabbi Yehouda ben Beteira.</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִיכָּא דְאָמְרִי וְכוּ&#x27;</b> הָכִי מַשְׁמַע מַתְנִיתִין אֵין טֻומְאָה בִּשְׁחִיטַת עוֹבֵד כּוֹכָבִים אֶלָּא כִּשְׁאָר נְבֵילוֹת דִּמְטַמְּאִין בְּמַשָּׂא אֲבָל אֵין אֹהֶל בְּשׁוּם שְׁחִיטַת עוֹבֵד כּוֹכָבִים וַאֲפִילּוּ שָׁחַט לַעֲבוֹדַת כּוֹכָבִים. לִישָּׁנָא אַחְרִינָא הָכִי מַשְׁמַע שְׁחִיטַת עוֹבֵד כּוֹכָבִים נְבֵלָה וְטֻומְאָתָהּ כִּשְׁאָר נְבֵילוֹת וְהָא דְּקָתָנֵי וּמְטַמְּאָה בְּמַשָּׂא אַתִּקְרֹובֶת עֲבוֹדַת כּוֹכָבִים קָאֵי וְהָכִי קָאָמַר וְעוֹד יֵשׁ שְׁחִיטָה אַחֶרֶת שֶׁהִיא כָּזוֹ כְּלוֹמַר אֵינָהּ חֲמוּרָה מִזּוֹ שֶׁאֵינָהּ מְטַמְּאָה אֶלָּא בְּמַשָּׂא כָּזוֹ:</div>
+          <div class="glose-fr">Ika de&#x27;amri, etc. — ainsi la Michna signifie : il n&#x27;y a pas d&#x27;autre impurete dans l&#x27;abattage d&#x27;un idolatre que celle des autres charognes, qui impurifient par le port, mais aucun abattage d&#x27;idolatre n&#x27;impurifie sous une tente, meme s&#x27;il a egorge pour l&#x27;idolatrie. Autre version : la Michna signifie la chehita d&#x27;un idolatre est nevela et son impurete est comme celle des autres charognes ; et ce qu&#x27;elle enseigne et elle impurifie par le port se rapporte au tikrovet avoda zara, et voici ce qu&#x27;elle dit : il y a en outre un autre abattage semblable a celui-ci, c&#x27;est-a-dire pas plus grave que lui, qui n&#x27;impurifie que par le port comme lui.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תִּקְרֹובֶת עֲבוֹדַת כּוֹכָבִים וּדְלָא כְּרַבִּי יְהוּדָה בֶּן בְּתֵירָא</b> מַשְׁמַע הָכָא דְּרַבָּנָן לָא מַקְשֵׁי תִּקְרֹובֶת עֲבוֹדַת כּוֹכָבִים לְמֵת וְכֵן מַשְׁמַע בְּפֶרֶק אֵין מַעֲמִידִין (ע&quot;ז דַּף לב:) גַּבֵּי בָּשָׂר הַנִּכְנָס לַעֲבוֹדַת כּוֹכָבִים מֻותָּר וְהַיּוֹצֵא אָסוּר וְקָאָמַר בַּגְּמָרָא וְהַיּוֹצֵא אָסוּר אִי אֶפְשָׁר דְּלֵיכָּא תִּקְרֹובֶת מַנִּי רַבִּי יְהוּדָה בֶּן בְּתֵירָא הִיא וְהִקְשָׁה ר&quot;ת דִּלְעֵיל בְּהַהוּא פִּירְקָא (חֻולִּין דַּף כט:) גַּבֵּי יַיִן שֶׁל עוֹבְדֵי כּוֹכָבִים דְּאָסוּר בַּהֲנָאָה מְפָרֵשׁ בַּגְּמָרָא דְּנָפְקָא לָן מִדְּאִיתַּקַּשׁ לְזֶבַח וְזֶבַח לְמֵת וְלָא קָאָמַר רַבִּי יְהוּדָה בֶּן בְּתֵירָא הִיא כִּדְקָאָמַר גַּבֵּי בָּשָׂר הַיּוֹצֵא וְעוֹד הִקְשָׁה ר&quot;ת דִּלְעֵיל בִּשְׁמַעְתִּין דִּיֵּיק נְבֵלָה אִין אִיסּוּר הֲנָאָה לָא מַתְנִיתִין דְּלָא כְּר&#x27; אֱלִיעֶזֶר דְּאִי ר&quot;א הָאָמַר סְתָם מַחְשֶׁבֶת עוֹבֵד כּוֹכְבֵי&#x27; לַעֲבוֹדַת כּוֹכָבִים וּמַאי קֻושְׁיָא לְעוֹלָם מַתְנִיתִין כר&quot;א וְהָא דְּלָא אָסוּר בַּהֲנָאָה מִשּׁוּם דְּלָא אָתְיָא כְּרַבִּי יְהוּדָה בֶּן בְּתֵירָא וּמִיהָא יֵשׁ לִדְחוֹת וּלְפָרֵשׁ דְּקָאָמַר מַתְנִיתִין דְּלָא כְּר&#x27; אֱלִיעֶזֶר לְמַאי דְּמוֹקֵי מַתְנִיתִין כְּרַבִּי יְהוּדָה בֶּן בְּתֵירָא וְנִרְאֶה לְפָרֵשׁ דִּלְעִנְיַן אִיסּוּר לָא פְלִיגִי דְּמַקִּישׁ רַחֲמָנָא לְמֵת לְעִנְיַן אִיסּוּר הֲנָאָה דְּהָא כְּתִיב אֲכִילָה בִּקְרָא (תְּהִילִּים ק״ו:כ״ח) וְיֵאָכְלוּ זִבְחֵי מֵתִים וּבְטֻומְאָה הוּא דִּפְלִיגִי דְּרַבִּי יְהוּדָה בֶּן בְּתֵירָא מַקִּישׁ לְגַמְרֵי לְמֵת אֲפִילּוּ לְעִנְיַן טֻומְאָה וְכֵן מַשְׁמַע דְּרַבִּי יְהוּדָה בֶּן בְּתֵירָא לָא נְקַט אֶלָּא טֻומְאָה וְגַבֵּי בָּשָׂר הַיּוֹצֵא דְּמוּקֵי לָהּ כְּר&#x27; יְהוּדָה בֶּן בְּתֵירָא מִשּׁוּם דְּקָתָנֵי מִפְּנֵי שֶׁהוּא כְּזִבְחֵי מֵתִים דְּלָא הֲוָה צָרִיךְ לְמִתְנֵי כֵּיוָן דִּתְנָא אָסוּר אֶלָּא מִיִּתּוּר לָשׁוֹן מַשְׁמַע דִּמְטַמֵּא בְּאֹהֶל הַמֵּת וּמִיהוּ אִי לָאו מִיִּתּוּרָא מִלְּשׁוֹן זִבְחֵי מֵתִים אִי אֶפְשָׁר לְדַקְדֵּק מִדְּדָיֵיק לְקַמָּן בְּפ&quot;ב (חֻולִּין דַּף מ.) גַּבֵּי הַשּׁוֹחֵט לְשֵׁם הָרִים שְׁחִיטָתוֹ פְּסוּלָה פְּסוּלָה אִין זִבְחֵי מֵתִים לָא וּרְמִינְהוּ הַשּׁוֹחֵט לְשֵׁם הָרִים כו&#x27; הֲרֵי אֵלּוּ זִבְחֵי מֵתִים וּמַאי קוּשְׁיָא דִּלְמָא הַהִיא כְּרַבִּי יְהוּדָה בֶּן בְּתֵירָא וּמַתְנִיתִין כְּרַבָּנָן אֶלָּא וַדַּאי כֵּיוָן דְּאָסוּר בַּהֲנָאָה מִשּׁוּם תִּקְרֹובֶת שַׁיָּיךְ לְמִיתְנֵי זִבְחֵי מֵתִים אַף עַל גַּב דְּלָא מְטַמֵּא בְּאֹהֶל וְאַף עַל גַּב דִּלְרַבָּנָן לֵיכָּא טֻומְאַת אֹהֶל טֻומְאָה בְּעָלְמָא מִיהוּ מִדְּרַבָּנָן אִיכָּא כִּדְאָמְרִינַן בְּפֶרֶק רַבִּי יִשְׁמָעֵאל (ע&quot;ז דַּף נב:) אִיסּוּר דְּאוֹרָייְתָא לֹא בָּטְלָה טֻומְאָה דְּרַבָּנָן בָּטְלָה אֲבָל לְרַבִּי יְהוּדָה הָוְיָא טֻומְאַת אֹהֶל דְּאוֹרָייְתָא וְהָא דִּתְנַן בְּפֶרֶק כָּל הַצְּלָמִים (עֲבוֹדָה זָרָה דַּף מח:) לַעֲבֹור תַּחְתֶּיהָ וְאִם עָבַר טָמֵא וּמְפָרֵשׁ בַּגְּמָרָא מִשּׁוּם דְּאִי אֶפְשָׁר דְּלֵיכָּא תִּקְרֹובֶת וּמַנִּי רַבִּי יְהוּדָה בֶּן בְּתֵירָא הִיא וְקָתָנֵי סֵיפָא וְאִם הָיְתָה גּוֹזֶלֶת אֶת הָרַבִּים טָהוֹר אע&quot;ג דְּטֻומְאַת אֹהֶל דְּאוֹרָייְתָא הָתָם לֵיכָּא תִּקְרֹובֶת וַדַּאי אֶלָּא חֲשָׁשָׁא בְּעָלְמָא הִיא וְהֵיכָא דְּגוֹזֶלֶת רַבִּים לֹא גָּזְרוּ רַבָּנָן וְהָא דְּאָמַר בְּפֶרֶק הָעוֹר וְהָרֹוטֶב (לְקַמָּן חֻולִּין קכט.) הֲרֵי אָמְרוּ תִּקְרֹובֶת עֲבוֹדַת כּוֹכָבִים שֶׁל אֳוכָלִים מְטַמֵּא טֻומְאָתָהּ לָאו דְּאוֹרָייְתָא דְּאִי ס&quot;ד דְּאוֹרָיְיתָא מָצִינוּ לָאֳוכָלִין שֶׁמְּטַמְּאִין טֻומְאָה חֲמוּרָה וּמְשַׁנֵּי כְּשֶׁשִּׁימֵּשׁ מַעֲשֵׂה עֵץ שִׁימֵּשׁ דִּיחוּי בְּעָלְמָא הוּא אִי נָמֵי כְּרַבִּי יְהוּדָה בֶּן בְּתֵירָא וא&quot;ת דְּאָמַר בִּפְסָחִים פ&#x27; אֵלּוּ דְּבָרִים (פְּסָחִים דַּף עג.) הַשּׁוֹחֵט בְּשַׁבָּת בַּחוּץ לַעֲבוֹדַת כּוֹכָבִים חַיָּיב ג&#x27; חַטָּאוֹת וּבָעֵי מַאי תִּיקֵּן פֵּירוּשׁ דְּלָא מָצֵית אָמַרְתְּ תִּיקֵּן לְהוֹצִיאוֹ מִידִי נְבֵלָה דְּהָא אִית לֵיהּ טֻומְאָה מִכֹּחַ תִּקְרֹובֶת עֲבוֹדַת כּוֹכָבִים מַשְׁמַע דְּאִיכָּא טֻומְאָה דְּאוֹרָייְתָא דְּאִי מִדְּרַבָּנָן א&quot;&#x27;כ תִּיקֵּן לְהוֹצִיאוֹ מִידִי טֻומְאָה דְּאוֹרָייְתָא וְאִם אָכַל קוֹדֶשׁ אוֹ נִכְנַס לַמִּקְדָּשׁ פָּטוּר וּמַשְׁמַע דַּאֲפִילּוּ לְרַבָּנָן מַיְירֵי מִדְּלָא קָאָמַר לְרַבִּי יְהוּדָה בֶּן בְּתֵירָא מַה תִּיקֵּן כִּדְאָמַר הָתָם (לְעֵיל) (שָׁם עג.) לְדִבְרֵי הָאוֹמֵר מְקַלְקֵל בְּחַבּוּרָה פָּטוּר מַה תִּיקֵּן וי&quot;ל דְּהָוֵי מָצֵי לְשַׁנּוּיֵי הָכִי אֶלָּא אֵין רוֹצֶה לְדַקְדֵּק מִכָּאן שֶׁיְּהֵא טֻומְאַת הַתִּקְרֹובֶת לָאו דְּאוֹרָייְתָא לְפִי שֶׁהַגְּמָרָא רוֹצֶה לְדַקְדֵּק בְּהָעוֹר וְהָרֹוטֶב דְּטֻומְאָה לָאו דְּאוֹרָייְתָא וְדָחֵי לָהּ ור&quot;ת תֵּירֵץ בְּעִנְיָן אַחֵר וְקָשֶׁה לְפֵירוּשׁוֹ וְאֵין לְהַאֲרִיךְ כָּאן:</div>
+          <div class="glose-fr">Tikrovet avoda zara, et non comme Rabbi Yehouda ben Beteira — il ressort d&#x27;ici que les Rabbanan n&#x27;assimilent pas (lo maqshi) le tikrovet au mort (met). De meme au chapitre Ein maamidin (Avoda Zara 32b), a propos de la viande qui ENTRE pour l&#x27;idolatrie (permise) et celle qui en SORT (interdite) : la Guemara dit que celle qui sort est interdite, il est impossible qu&#x27;il n&#x27;y ait pas de tikrovet, et c&#x27;est selon Rabbi Yehouda ben Beteira. Rabbenou Tam a objecte : plus haut (Avoda Zara), a propos du vin des idolatres interdit a la jouissance, la Guemara le tire de ce qu&#x27;il est compare au sacrifice (zevah), et le sacrifice au mort — sans dire que c&#x27;est Rabbi Yehouda ben Beteira, comme on le dit pour la viande qui sort. Il a encore objecte : plus haut dans notre sougya (13a) on deduit nevela oui, jouissance non, donc la Michna n&#x27;est pas selon Rabbi Eliezer — or quelle difficulte ? La Michna pourrait etre selon R. Eliezer, et si elle ne l&#x27;interdit pas a la jouissance c&#x27;est parce qu&#x27;elle n&#x27;est pas selon Rabbi Yehouda ben Beteira ! On peut repousser cela : la Michna n&#x27;est dite pas selon R. Eliezer que selon l&#x27;interpretation qui l&#x27;etablit comme Rabbi Yehouda ben Beteira. Il parait donc qu&#x27;au sujet de l&#x27;interdit ils ne divergent pas : la Torah assimile le tikrovet au mort pour l&#x27;interdit de jouissance, puisque la consommation est ecrite dans le verset (Ps 106:28) et ils mangerent les sacrifices des morts ; c&#x27;est sur l&#x27;IMPURETE qu&#x27;ils divergent — Rabbi Yehouda ben Beteira l&#x27;assimile entierement au mort, meme quant a l&#x27;impurete. Et a propos de la viande qui sort, etablie comme Rabbi Yehouda ben Beteira parce qu&#x27;elle enseigne parce qu&#x27;elle est comme les sacrifices des morts (formule superflue, puisqu&#x27;elle a deja dit interdite) : c&#x27;est de cette surabondance qu&#x27;il ressort qu&#x27;elle impurifie sous la tente. Toutefois, sans cette surabondance zivchei metim, on ne pourrait le deduire, comme on le voit plus loin (Houlin 40a) a propos de celui qui egorge en l&#x27;honneur des montagnes — son abattage est passoul : passoul oui, sacrifices de morts non ; et l&#x27;on objecte celui qui egorge pour les montagnes... voici des sacrifices de morts. Quelle difficulte ? Peut-etre cela est-il selon Rabbi Yehouda ben Beteira et la Michna selon les Rabbanan ! Mais assurement, puisque c&#x27;est interdit a la jouissance au titre de tikrovet, il convient d&#x27;enseigner sacrifices de morts meme si cela n&#x27;impurifie pas sous une tente. Et bien que pour les Rabbanan il n&#x27;y ait pas d&#x27;impurete de tente, il y a tout de meme une impurete generale, du moins de-rabbanan, comme au chapitre Rabbi Yishmael (Avoda Zara 52b) : un interdit de-oraita ne s&#x27;annule pas, une impurete de-rabbanan s&#x27;annule ; mais pour Rabbi Yehouda c&#x27;est une impurete de tente de-oraita. Et ce que nous avons appris au chapitre Kol ha-tzelamim (Avoda Zara 48b), passer sous un arbre idolatre, et s&#x27;il est passe il est impur, explique parce qu&#x27;il est impossible qu&#x27;il n&#x27;y ait pas de tikrovet, selon Rabbi Yehouda ben Beteira — et la fin enseigne et si elle empietait sur la voie publique il est pur, bien que l&#x27;impurete de tente soit de-oraita : la il n&#x27;y a certainement pas de tikrovet, ce n&#x27;est qu&#x27;une crainte, et la ou cela empiete sur le public les Rabbanan n&#x27;ont pas decrete. Et ce qui est dit au chapitre Ha-or ve-ha-rotev (Houlin 129a), un tikrovet avoda zara d&#x27;aliments impurifie : son impurete n&#x27;est pas de-oraita, car si elle l&#x27;etait nous trouverions des aliments qui impurifient d&#x27;une impurete grave ; et l&#x27;on repond quand il a servi un usage de bois il a servi — simple rejet, ou bien c&#x27;est selon Rabbi Yehouda ben Beteira. Et si tu objectes : dans Pessahim, chapitre Elou devarim (73a), celui qui egorge le Chabbat, dehors, pour l&#x27;idolatrie, est passible de trois sacrifices de faute, et l&#x27;on demande qu&#x27;a-t-il repare ? — c&#x27;est-a-dire que tu ne peux dire qu&#x27;il a repare en le faisant sortir du statut de nevela, puisqu&#x27;il a deja une impurete au titre de tikrovet : il ressort donc une impurete de-oraita ; et il parle meme selon les Rabbanan, puisqu&#x27;il ne dit pas selon Rabbi Yehouda ben Beteira, qu&#x27;a-t-il repare, comme il dit la-bas selon celui qui dit que celui qui endommage en faisant une blessure est exempt, qu&#x27;a-t-il repare. On peut repondre qu&#x27;il aurait pu repondre ainsi, mais ne veut pas en deduire ici que l&#x27;impurete du tikrovet ne serait pas de-oraita, parce que la Guemara veut deja le deduire dans Ha-or ve-ha-rotev, et elle le repousse. Rabbenou Tam a repondu autrement, mais cela fait difficulte a son explication, et il n&#x27;y a pas lieu de developper ici.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Version alternative de Rava : l'autre cas (tikrovet avoda zara) impurifie <b>seulement</b> par le port, <b>comme</b> la nevela — et <b>non</b> sous une tente : on tranche ici <b>contre</b> Rabbi Yehouda ben Beteira. (Le long Tossefot ci-dessous discute si cette impurete est de-oraita ou de-rabbanan.)</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13b-seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">דְּתַנְיָא, רַבִּי יְהוּדָה בֶּן בְּתֵירָא אוֹמֵר: מִנַּיִן לְתִקְרֹובֶת עֲבוֹדָה זָרָה שֶׁהִיא מְטַמְּאָה בְּאֹהֶל? שֶׁנֶּאֱמַר: ״וַיִּצָּמְדוּ לְבַעַל פְּעוֹר וַיֹּאכְלוּ זִבְחֵי מֵתִים״, מַה מֵת מְטַמֵּא בְּאֹהֶל, אַף תִּקְרֹובֶת עֲבוֹדָה זָרָה מְטַמְּאָה בְּאֹהֶל.</div>
+            <div class="fr">Comme il est enseigne (braita) : Rabbi Yehouda ben Beteira dit : d&#x27;ou sait-on qu&#x27;un tikrovet avoda zara impurifie sous une tente ? Il est dit (Ps 106:28) Ils s&#x27;attacherent a Baal Peor et mangerent les sacrifices des morts : de meme que le mort impurifie sous une tente, de meme le tikrovet avoda zara impurifie sous une tente.</div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Source de Rabbi Yehouda ben Beteira : le verset 'ils mangerent les <b>sacrifices des morts</b>' (Ps 106:28) assimile le tikrovet avoda zara au <b>mort</b> — il impurifie donc sous une tente, comme un cadavre.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13b-seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַתְנֵי׳ הַשּׁוֹחֵט בַּלַּיְלָה, וְכֵן הַסּוּמָא שֶׁשָּׁחַט – שְׁחִיטָתוֹ כְּשֵׁרָה.</div>
+            <div class="fr">MICHNA. Celui qui egorge de nuit, de meme l&#x27;aveugle qui a egorge — son abattage est valable (kacher).</div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle Michna : l'abattage <b>de nuit</b> et celui d'un <b>aveugle</b> sont valables (kacher).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13b-seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">גמ׳ הַשּׁוֹחֵט דִּיעֲבַד – אִין, לְכַתְּחִלָּה – לָא. וּרְמִינְהִי: לְעוֹלָם שׁוֹחֲטִין, בֵּין בַּיּוֹם וּבֵין בַּלַּיְלָה, בֵּין בְּרֹאשׁ הַגָּג בֵּין בְּרֹאשׁ הַסְּפִינָה!</div>
+            <div class="fr">GUEMARA. Celui qui egorge (de nuit) : a posteriori (bedi&#x27;avad) oui, a priori (lechatchila) non. On objecte (braita) : on peut TOUJOURS egorger, de jour comme de nuit, au sommet du toit comme a la proue du navire ! (donc lechatchila permis)</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְכַתְּחִלָּה לֹא</b> יִשְׁחֹוט בַּלַּיְלָה שֶׁמָּא לֹא יִשְׁחֹוט רֻובָּא וְהוּא לֹא יָדַע:</div>
+          <div class="glose-fr">A priori non — qu&#x27;il egorge de nuit, de peur qu&#x27;il ne tranche pas la majorite des simanim sans le savoir.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בֵּין בְּרֹאשׁ הַגָּג בֵּין בְּרֹאשׁ הַסְּפִינָה</b> ואע&quot;ג דִּתְנַן בְּהַשּׁוֹחֵט (לְקַמָּן חֻולִּין דַּף מא.) אֵין שׁוֹחֲטִין לֹא לְתוֹךְ יַמִּים וְלֹא לְתוֹךְ נְהָרוֹת דְּלָא לֵימְרוּ לְשַׂר שֶׁל יָם הוּא שׁוֹחֵט וְלֹא לְתוֹךְ כֵּלִים דְּלָא לֵימְרוּ הוֹאִיל וּמְקַבֵּל אֶת הַדָּם לְזָורְקוֹ לַעֲבוֹדַת כּוֹכָבִים הוּא צָרִיךְ אַפֵּ&quot;ה בְּרֹאשׁ הַגַּג שׁוֹחֲטִין וְאֵין חוֹשְׁשִׁין לִשְׁמָא יֹאמְרוּ לַצָּבָא הַשָּׁמַיִם עֲלָהּ לִשְׁחֹוט אוֹ אִם מְקַבֵּל בִּכְלִי הַכֹּל יוֹדְעִין שֶׁאִי אֶפְשָׁר לוֹ לְטַנֵּף אֶת הַגַּג וְאֵין כָּאן חֲשָׁד וּבִסְפִינָה נָמֵי הַכֹּל יוֹדְעִים דְּכֵיוָן דְּבִסְפִינָה הוּא עַל כָּרְחוֹ הוּא שׁוֹחֵט לְתוֹךְ הַיָּם שֶׁאִי אֶפְשָׁר לוֹ לְטַנֵּף אֶת הַסְּפִינָה:</div>
+          <div class="glose-fr">Au sommet du toit comme a la proue du navire — bien que nous ayons appris au chapitre Ha-chohet (Houlin 41a) : on n&#x27;egorge ni dans les mers ni dans les fleuves, de peur qu&#x27;on ne dise c&#x27;est au prince de la mer qu&#x27;il egorge, ni dans des recipients, de peur qu&#x27;on ne dise puisqu&#x27;il recueille le sang, c&#x27;est pour le repandre en l&#x27;honneur de l&#x27;idolatrie — neanmoins, au sommet du toit on egorge, sans craindre qu&#x27;on dise il est monte egorger pour l&#x27;armee des cieux, car s&#x27;il recueille dans un recipient tous savent qu&#x27;il ne peut souiller le toit, et il n&#x27;y a la aucun soupcon ; sur un navire aussi, tous savent que, puisqu&#x27;il y est, il egorge forcement vers la mer, ne pouvant souiller le navire.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בֵּין בְּרֹאשׁ הַסְּפִינָה</b> פֵּירֵשׁ בַּקּוּנְטְרֵס אע&quot;ג דְּאָמְרִינַן לְקַמָּן (חֻולִּין דַּף מא.) דְּאֵין שׁוֹחֲטִין לְתוֹךְ יָמִים אֲפִילּוּ הָכֵי בְּרֹאשׁ הַסְּפִינָה שׁוֹחֲטִין דְּהַכֹּל יוֹדְעִין דְּכֵיוָן דְּבִסְפִינָה הוּא עַל כָּרְחָךְ הוּא שׁוֹחֵט לְתוֹךְ הַיָּם שֶׁלֹּא לְטַנֵּף סְפִינָתוֹ וְאִי אֶפְשָׁר לוֹמַר כֵּן דַּאֲפִילּוּ עוֹמֵד בִּסְפִינָה אָסוּר לִשְׁחֹוט לְתוֹךְ הַיָּם כִּדְאָמְרִינַן לְקַמָּן בְּסוֹף פֶּרֶק שֵׁנִי (שָׁם:) אֶלָּא מוֹצִיא יָדוֹ חוּץ לַסְּפִינָה וְשׁוֹחֵט וְדָם שׁוֹתֵת וְיוֹרֵד עַל דָּופְנֵי סְפִינָה:</div>
+          <div class="glose-fr">A la proue du navire — Rachi (le Kountras) a explique : bien que nous disions plus loin (Houlin 41a) qu&#x27;on n&#x27;egorge pas dans les mers, on egorge neanmoins a la proue du navire, car tous savent que, puisqu&#x27;il y est, il egorge forcement vers la mer pour ne pas souiller son navire. Mais il est impossible de dire ainsi, car meme debout sur le navire il est interdit d&#x27;egorger vers la mer, comme nous disons plus loin a la fin du 2e chapitre ; plutot, il sort sa main hors du navire et egorge, et le sang ruisselle et descend sur les flancs du navire.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deduction : 'celui qui egorge' — a posteriori (<b>bedi'avad</b>) oui, a priori (<b>lechatchila</b>) non. Contradiction d'une braita : on peut <b>toujours</b> egorger, jour comme nuit, sur un toit ou un navire — donc lechatchila permis !</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="13b-seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב פָּפָּא: בְּשֶׁאֲבוּקָה כְּנֶגְדּוֹ. אָמַר רַב אַשִּׁי: דַּיְקָא נָמֵי, דְּקָתָנֵי הָתָם דֻּומְיָא דְּיוֹם, וְהָכָא דֻּומְיָא דְּסוּמָא, שְׁמַע מִינָּה.</div>
+            <div class="fr">Rav Papa dit : (la braita parle) du cas ou une torche (avouka) est en face de lui (donc on voit — permis a priori). Rav Achi dit : la formulation aussi est precise, car la-bas (la braita) la nuit est enseignee a l&#x27;image du jour, et ici (la Michna) a l&#x27;image de l&#x27;aveugle. Conclus-en (qu&#x27;il en est ainsi).</div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אר&quot;פ</b> הָא דְּקָתָנֵי שׁוֹחֲטִין בַּלַּיְלָה לְכַתְּחִלָּה בְּשֶׁאֲבוּקָה כְּנֶגְדּוֹ וּמַתְנִיתִין בְּלֹא אֲבוּקָה: מַתְנִיתִין תְּנָא לַיְלָה וְסוּמָא בַּהֲדֵי הֲדָדֵי:</div>
+          <div class="glose-fr">Rav Papa dit — ce qui est enseigne on egorge de nuit a priori vise le cas ou une torche est en face de lui ; la Michna vise le cas sans torche. La Michna a enseigne la nuit et l&#x27;aveugle ensemble.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Resolution : Rav Papa — la braita vise le cas <b>avec torche</b> (on voit) ; la Michna, <b>sans torche</b>. Rav Achi confirme par la formulation : la braita assimile la nuit au <b>jour</b> (lechatchila), la Michna l'assimile a l'<b>aveugle</b> (bedi'avad).</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 268" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="268" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1c1917">Egorger de nuit : a priori ou seulement a posteriori ?</text>
+  <rect x="36" y="42" width="300" height="190" rx="10" fill="#eef2ff" stroke="#3730a3"/>
+  <text x="186" y="66" text-anchor="middle" font-size="12.5" font-weight="700" fill="#3730a3">Braita</text>
+  <text x="186" y="90" text-anchor="middle" font-size="11.5" fill="#292524">On egorge TOUJOURS :</text>
+  <text x="186" y="108" text-anchor="middle" font-size="11.5" fill="#292524">jour ou nuit, sur un toit ou un navire</text>
+  <line x1="60" y1="124" x2="312" y2="124" stroke="#cdd3ef" stroke-width="1"/>
+  <text x="186" y="148" text-anchor="middle" font-size="12.5" font-weight="700" fill="#15803d">lechatchila (a priori)</text>
+  <text x="186" y="172" text-anchor="middle" font-size="11.5" fill="#292524">Rav Papa : cas AVEC torche</text>
+  <text x="186" y="190" text-anchor="middle" font-size="11.5" fill="#292524">Rav Achi : la nuit ~ le jour</text>
+  <text x="186" y="214" text-anchor="middle" font-size="11" fill="#78716c">(on voit ce qu'on fait)</text>
+  <rect x="364" y="42" width="300" height="190" rx="10" fill="#fdf3e3" stroke="#b45309"/>
+  <text x="514" y="66" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b45309">Michna</text>
+  <text x="514" y="90" text-anchor="middle" font-size="11.5" fill="#292524">Celui qui egorge de nuit,</text>
+  <text x="514" y="108" text-anchor="middle" font-size="11.5" fill="#292524">de meme l'aveugle</text>
+  <line x1="388" y1="124" x2="640" y2="124" stroke="#efe1c8" stroke-width="1"/>
+  <text x="514" y="148" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b91c1c">bedi'avad (a posteriori)</text>
+  <text x="514" y="172" text-anchor="middle" font-size="11.5" fill="#292524">cas SANS torche</text>
+  <text x="514" y="190" text-anchor="middle" font-size="11.5" fill="#292524">Rav Achi : la nuit ~ l'aveugle</text>
+  <text x="514" y="214" text-anchor="middle" font-size="11" fill="#78716c">(valable apres coup seulement)</text>
+</svg></div><div class="svg-cap">Segment 11-12 : braita (avec torche, lechatchila) vs Michna (sans torche, comme l&#x27;aveugle, bedi&#x27;avad).</div></div>
+    </details></div>
+          </div>
+        </section>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

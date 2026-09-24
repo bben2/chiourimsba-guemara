@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yoma 21a -- les dix miracles permanents du Temple : leur enumeration (michna d&#x27;Avot), puis la comptabilite serree par laquelle la guemara maintient exactement le nombre de dix -- retirer, ajouter, fusionner les miracles de meme nature -- et le critere qui tranche : ne comptent que les miracles visibles du dehors (bara&#x27;i), non ceux caches a l&#x27;interieur (gawa&#x27;i).</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Yoma 21a -- les dix miracles permanents du Temple : leur enumeration (michna d&#x27;Avot), puis la comptabilite serree par laquelle la guemara maintient exactement le nombre de dix -- retirer, ajouter, fusionner les miracles de meme nature -- et le critere qui tranche : ne comptent que les miracles visibles du dehors (bara&#x27;i), non ceux caches a l&#x27;interieur (gawa&#x27;i).</h1>
+    <div class="ref">Yoma 21a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_20b.html">&lsaquo; Yoma 20b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> Le daf s&#x27;ouvre sur la fin de la sougya du keriat ha-guever (baraita appuyant Rabbi Chila : voyager de nuit avant le chant du coq expose aux demons), puis Rav Yehouda au nom de Rav introduit le miracle des pelerins serres debout mais au large en se prosternant. De la, la guemara cite la michna des DIX miracles du Temple et en fait une analyse comptable : la michna ouvre sur le Temple mais clot sur Jerusalem, ne laissant que huit miracles proprement du Temple ; on ajoute la pluie qui n&#x27;eteint pas le feu et la fumee immobile ; on decouvre d&#x27;autres miracles (tessons engloutis, jabot, plumes, cendres) qui menacent le compte ; on resout en fusionnant les miracles de meme nature (les trois invalidites comptent pour un), en ajoutant le lehem ha-panim toujours chaud, puis en ecartant l&#x27;arche sans mesure et les cheroubim.</p><p>Le principe organisateur est enfin degage : ne comptent que les miracles PUBLICS, visibles du dehors (bara&#x27;i), et le lehem ha-panim y est rattache par la derach de Rech Lakich sur &#x27;la table pure&#x27; -- demonstration qui se poursuit en 21b.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="760" height="470" fill="#fffdf8"/>
+  <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Les dix miracles permanents du Temple (michna citee en Yoma 21a)</text>
+  <text x="380" y="45" text-anchor="middle" font-size="10.3" fill="#57534e">Huit se produisent DANS le Temple, deux a Jerusalem : de la nait tout le probleme de comptage du daf.</text>
+
+  <!-- colonne Temple -->
+  <rect x="24" y="60" width="470" height="380" rx="8" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="259" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#1e40af">Dans le Temple (mikdach)</text>
+  <text x="40" y="108" font-size="10.6" fill="#1c1917">1. Aucune femme n'avorta de l'odeur de la viande sacree</text>
+  <text x="40" y="130" font-size="10.6" fill="#1c1917">2. La viande sacree ne se putrefia jamais</text>
+  <text x="40" y="152" font-size="10.6" fill="#1c1917">3. Aucune mouche dans l'abattoir</text>
+  <text x="40" y="174" font-size="10.6" fill="#1c1917">4. Aucune pollution (keri) au Cohen Gadol a Kippour</text>
+  <text x="40" y="196" font-size="10.6" fill="#1c1917">5. Aucune invalidite : omer / 2 pains / lehem ha-panim</text>
+  <text x="40" y="218" font-size="10.6" fill="#1c1917">6. Serres debout, au large en se prosternant</text>
+  <text x="40" y="252" font-size="10.6" fill="#166534" font-weight="600">+ ajoutes par la guemara pour completer a dix :</text>
+  <text x="40" y="274" font-size="10.6" fill="#166534">7. La pluie n'eteignit jamais le feu de l'arrangement</text>
+  <text x="40" y="296" font-size="10.6" fill="#166534">8. Nul vent ne deplaca la fumee de l'arrangement</text>
+  <text x="40" y="318" font-size="10.6" fill="#166534">9. Le lehem ha-panim, retire aussi chaud que dispose</text>
+  <text x="40" y="352" font-size="10.6" fill="#57534e">(candidats surnumeraires : tessons engloutis ;</text>
+  <text x="40" y="370" font-size="10.6" fill="#57534e">jabot, plumes, cendres ; arche sans mesure ; cheroubim)</text>
+  <text x="40" y="404" font-size="10.2" fill="#334155" font-style="italic">Regle finale : on ne compte que les miracles VISIBLES</text>
+  <text x="40" y="421" font-size="10.2" fill="#334155" font-style="italic">de l'exterieur (bara'i), pas ceux caches a l'interieur.</text>
+
+  <!-- colonne Jerusalem -->
+  <rect x="510" y="60" width="226" height="380" rx="8" fill="#fef2f2" stroke="#fecaca"/>
+  <text x="623" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">A Jerusalem (pas le Temple)</text>
+  <text x="524" y="112" font-size="10.6" fill="#1c1917">9'. Serpent ni scorpion</text>
+  <text x="524" y="130" font-size="10.6" fill="#1c1917">   ne fit jamais de mal</text>
+  <text x="524" y="160" font-size="10.6" fill="#1c1917">10'. Nul ne dit : le lieu</text>
+  <text x="524" y="178" font-size="10.6" fill="#1c1917">   est trop etroit pour</text>
+  <text x="524" y="196" font-size="10.6" fill="#1c1917">   loger a Jerusalem</text>
+  <text x="524" y="240" font-size="10" fill="#7f1d1d">La michna ouvre sur le</text>
+  <text x="524" y="256" font-size="10" fill="#7f1d1d">Temple mais clot sur</text>
+  <text x="524" y="272" font-size="10" fill="#7f1d1d">Jerusalem : il ne reste</text>
+  <text x="524" y="288" font-size="10" fill="#7f1d1d">alors que HUIT miracles</text>
+  <text x="524" y="304" font-size="10" fill="#7f1d1d">proprement du Temple.</text>
+  <text x="524" y="336" font-size="10" fill="#7f1d1d">D'ou la recherche de</text>
+  <text x="524" y="352" font-size="10" fill="#7f1d1d">deux miracles de plus</text>
+  <text x="524" y="368" font-size="10" fill="#7f1d1d">pour retrouver dix.</text>
+</svg></div>
+          <figcaption>Les dix miracles : huit dans le Temple, deux a Jerusalem -- source du probleme de decompte.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 440" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="740" height="440" fill="#fffdf8"/>
+  <text x="370" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">La comptabilite : garder exactement dix miracles</text>
+  <text x="370" y="45" text-anchor="middle" font-size="10.3" fill="#57534e">Chaque objection retire ou ajoute des miracles ; la guemara reequilibre le compte a chaque etape.</text>
+
+  <!-- etape A -->
+  <rect x="24" y="62" width="692" height="60" rx="7" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="40" y="84" font-size="11.4" font-weight="700" fill="#1e40af">Depart : 8 miracles du Temple + 2 de Jerusalem = liste de dix, mais Jerusalem n'est pas le Temple.</text>
+  <text x="40" y="106" font-size="10.6" fill="#334155">Il faut donc DEUX miracles du Temple en plus : la pluie qui n'eteint pas le feu, la fumee que nul vent ne deplace.</text>
+
+  <!-- fleche -->
+  <text x="370" y="140" text-anchor="middle" font-size="13" fill="#78716c">v</text>
+
+  <!-- etape B -->
+  <rect x="24" y="150" width="692" height="72" rx="7" fill="#f0fdf4" stroke="#bbf7d0"/>
+  <text x="40" y="172" font-size="11.4" font-weight="700" fill="#166534">Objection : il existe d'autres miracles (tessons, jabot/plumes/cendres) -- plus de dix !</text>
+  <text x="40" y="194" font-size="10.6" fill="#334155">Reponse : les 3 invalidites (omer, 2 pains, lehem ha-panim) ne comptent que pour UN miracle (meme nature).</text>
+  <text x="40" y="212" font-size="10.6" fill="#334155">On retire 2 places, on y introduit la pluie et la fumee. Compte tenu.</text>
+
+  <text x="370" y="240" text-anchor="middle" font-size="13" fill="#78716c">v</text>
+
+  <!-- etape C -->
+  <rect x="24" y="250" width="692" height="72" rx="7" fill="#fef9c3" stroke="#fde68a"/>
+  <text x="40" y="272" font-size="11.4" font-weight="700" fill="#92400e">Contre-objection : alors les 2 engloutis (tessons ; jabot-plumes-cendres) comptent pour UN aussi -- il manque un !</text>
+  <text x="40" y="294" font-size="10.6" fill="#334155">Reponse : il y en a encore un -- le lehem ha-panim retire aussi chaud que dispose (R. Yehochoua ben Levi).</text>
+  <text x="40" y="312" font-size="10.6" fill="#334155">Le compte de dix est retabli.</text>
+
+  <text x="370" y="340" text-anchor="middle" font-size="13" fill="#78716c">v</text>
+
+  <!-- etape D -->
+  <rect x="24" y="350" width="692" height="74" rx="7" fill="#faf5ff" stroke="#e9d5ff"/>
+  <text x="40" y="372" font-size="11.4" font-weight="700" fill="#6b21a8">Objection finale : l'arche sans mesure, les cheroubim debout par miracle -- encore plus de dix !</text>
+  <text x="40" y="394" font-size="10.6" fill="#334155">Reponse : on ne compte que les miracles de l'EXTERIEUR (bara'i), visibles de tous ;</text>
+  <text x="40" y="412" font-size="10.6" fill="#334155">arche et cheroubim sont a l'interieur (gawa'i), donc hors compte -- et le lehem ha-panim est reclasse dehors.</text>
+</svg></div>
+          <figcaption>Comment la guemara reequilibre le compte a chaque objection pour maintenir dix.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 400" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="400" fill="#fffdf8"/>
+  <text x="360" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Le critere de comptage : bara'i (dehors) vs gawa'i (dedans)</text>
+  <text x="360" y="45" text-anchor="middle" font-size="10.3" fill="#57534e">Le tana ne compte que les miracles PUBLICS (pirsoumei nissa) ; ceux caches dans le Sanctuaire ne comptent pas.</text>
+
+  <!-- bara'i -->
+  <rect x="28" y="66" width="320" height="300" rx="8" fill="#f0fdf4" stroke="#86efac"/>
+  <text x="188" y="90" text-anchor="middle" font-size="12.5" font-weight="700" fill="#166534">bara'i -- dehors, dans la azara</text>
+  <text x="188" y="110" text-anchor="middle" font-size="10.4" fill="#166534">Visible de tous -> COMPTE</text>
+  <text x="46" y="140" font-size="10.6" fill="#1c1917">- Feu inextinguible sous la pluie</text>
+  <text x="46" y="162" font-size="10.6" fill="#1c1917">- Fumee immobile dans le vent</text>
+  <text x="46" y="184" font-size="10.6" fill="#1c1917">- Serres / au large a la prosternation</text>
+  <text x="46" y="206" font-size="10.6" fill="#1c1917">- Le lehem ha-panim (voir ci-dessous)</text>
+  <text x="46" y="248" font-size="10.2" fill="#334155" font-style="italic">Pourquoi le pain compte-t-il ?</text>
+  <text x="46" y="268" font-size="10.2" fill="#334155">On l'elevait pour le montrer aux pelerins</text>
+  <text x="46" y="286" font-size="10.2" fill="#334155">(R. Yehochoua ben Levi). Rech Lakich :</text>
+  <text x="46" y="304" font-size="10.2" fill="#334155">"la table pure" implique qu'elle peut</text>
+  <text x="46" y="322" font-size="10.2" fill="#334155">devenir impure -> elle se souleve pleine</text>
+  <text x="46" y="340" font-size="10.2" fill="#334155">-> le miracle est public, donc bara'i.</text>
+
+  <!-- gawa'i -->
+  <rect x="372" y="66" width="320" height="300" rx="8" fill="#fef2f2" stroke="#fca5a5"/>
+  <text x="532" y="90" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b91c1c">gawa'i -- dedans, le Saint des Saints</text>
+  <text x="532" y="110" text-anchor="middle" font-size="10.4" fill="#b91c1c">Cache aux yeux -> PAS COMPTE</text>
+  <text x="390" y="140" font-size="10.6" fill="#1c1917">- L'arche n'entre pas dans la mesure</text>
+  <text x="390" y="162" font-size="10.6" fill="#1c1917">  (20 x 20 coudees, 10 de chaque cote)</text>
+  <text x="390" y="184" font-size="10.6" fill="#1c1917">- Les cheroubim debout par miracle</text>
+  <text x="390" y="206" font-size="10.6" fill="#1c1917">  (ailes de 20 coudees, mur a mur)</text>
+  <text x="390" y="248" font-size="10.2" fill="#334155" font-style="italic">La distinction ne tient pas au lieu</text>
+  <text x="390" y="268" font-size="10.2" fill="#334155">seul mais a la CONNAISSANCE du public :</text>
+  <text x="390" y="286" font-size="10.2" fill="#334155">un miracle non vu ne se compte pas</text>
+  <text x="390" y="304" font-size="10.2" fill="#334155">parmi les dix (Ben Yehoyada).</text>
+</svg></div>
+          <figcaption>Le critere qui tranche : miracles visibles du dehors (comptes) contre miracles caches du dedans (non comptes).</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְיֵשׁ אוֹמְרִים: אַף רִידְייָא. וּבְעוֹ רַבָּנַן רַחֲמֵי אַנְּשָׁמָה בְּשָׁעָה שֶׁיּוֹצְאָה מִן הַגּוּף, וּבִטְּלוּהָ.</div>
+            <div class="fr"><p>Et certains disent : (on entend) aussi (le grondement du) Ridya. Et les Sages implorerent misericorde au sujet (du cri) de l&#x27;ame a l&#x27;instant ou elle quitte le corps, et (Dieu) l&#x27;abolit.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וי&quot;א אַף רִידְיָיא</b> מַלְאָךְ הַמְמֻונֶּה עַל הַשְׁקוֹת הָאָרֶץ מִמְּטַר הַשָּׁמַיִם מִמַּעַל וּמִן הַתְּהוֹם מִתַּחַת וְקוֹרֵא לָהֶן שֶׁנֶּאֱמַר תְּהוֹם אֶל תְּהוֹם קוֹרֵא כִּדְאָמְרִי&#x27; בְּמַס&#x27; [תַּעֲנִית דַּף כֹּד. וְדַף כה:] וְאָמְרִינַן הָתָם דְּדָמֵי לְעִגְלָא וּלְכָךְ נִקְרָא רִידְייָא לְשׁוֹן שׁוֹר הַחוֹרֵשׁ מְתַרְגְּמִינַן לֹא תַּחֲרֹושׁ לָא תִּירְדֵּי (דְּבָרִים כב):</div>
+          <div class="glose-fr">Certains disent : aussi le Ridya - l&#x27;ange prepose a l&#x27;irrigation de la terre par la pluie du ciel d&#x27;en haut et par l&#x27;abime d&#x27;en bas ; il les appelle, comme il est dit (Ps 42,8) &#x27;l&#x27;abime appelle l&#x27;abime&#x27;, ainsi qu&#x27;il est enseigne au traite Taanit (24a, 25b). Et l&#x27;on y dit qu&#x27;il ressemble a un veau (egla) ; c&#x27;est pourquoi on le nomme Ridya, du langage du boeuf qui laboure -- on traduit (Deut 22,10) &#x27;tu ne laboureras pas&#x27; (lo tacharosh) par &#x27;lo tirdei&#x27;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Fin d'une liste de sons puissants entendus dans le monde. Le <b>Ridya</b> est l'ange prepose a l'irrigation de la terre. Les Sages prierent pour attenuer un autre de ces sons -- le cri de l'ame quittant le corps -- et il fut supprime. L'ensemble de cette baraita comprend <b>keriat ha-guever</b> (le chant du guever) comme la proclamation du crieur du Temple, ce qui appuie l'avis de Rav.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תַּנְיָא כְּוָותֵיהּ דְּרַבִּי שֵׁילָא: הַיּוֹצֵא לַדֶּרֶךְ קֹודֶם קְרִיאַת הַגֶּבֶר — דָּמוֹ בְּרֹאשׁוֹ. רַבִּי יֹאשִׁיָּה אוֹמֵר: עַד שֶׁיִּשְׁנֶה, וְיֵשׁ אוֹמְרִים: עַד שֶׁיְּשַׁלֵּשׁ. וּבְאֵיזֶה תַּרְנְגוֹל אָמְרוּ — בְּתַרְנְגוֹל בֵּינוֹנִי.</div>
+            <div class="fr"><p>Il a ete enseigne (dans une baraita) conformement a Rabbi Chila : Celui qui se met en route avant le chant du coq (keriat ha-guever) -- son sang est sur sa tete. Rabbi Yochiya dit : jusqu&#x27;a ce qu&#x27;il (le coq) repete (deux fois) ; et certains disent : jusqu&#x27;a ce qu&#x27;il chante trois fois.</p><p>Et de quel coq ont-ils parle ? D&#x27;un coq moyen.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּוָותֵיהּ דָּר&#x27; שִׁילָא</b> דְּאָמַר קְרוֹת הַגֶּבֶר קְרָא תַּרְנְגוֹלָא:</div>
+          <div class="glose-fr">Conformement a Rabbi Chila - qui a dit : (l&#x27;expression) &#x27;chant du guever&#x27; signifie que le coq a chante.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַיּוֹצֵא יְחִידִי לַדֶּרֶךְ דָּמוֹ בְּרֹאשׁוֹ</b> מִפְּנֵי הַמַּזִּיקִין:</div>
+          <div class="glose-fr">Celui qui sort seul en chemin, son sang est sur sa tete - a cause des demons (mazikin).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דָּמוֹ בְּרֹאשׁוֹ</b> עֲוֹן מוֹתוֹ עַל רֹאשׁוֹ מוּטָל שֶׁהוּא הֵמִית עַצְמוֹ:</div>
+          <div class="glose-fr">Son sang sur sa tete - la faute de sa mort retombe sur sa tete, car c&#x27;est lui-meme qui s&#x27;est tue (en s&#x27;exposant).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּתַרְנְגוֹל בֵּינוֹנִי</b> שֶׁאֵינוֹ מְמַהֵר קְרִיאָתוֹ וְלֹא מֵאַחַר:</div>
+          <div class="glose-fr">Un coq moyen - qui ne chante ni trop tot ni trop tard.</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">וְיֵשׁ אוֹמְרִים: עַד שֶׁיְּשַׁלֵּשׁ. נִרְאֶה לִי בס&quot;ד רֶמֶז לַדָּבָר (מִשְׁלֵי ל, כט) &#x27;שְׁלֹשָׁה הֵמָּה מֵיטִיבֵי צַעַד&#x27; כְּלוֹמַר אַחַר שֶׁנִּשְׁמַע שְׁלֹשָׁה קוֹלוֹת אָז יָטִיבוּ צְעָדָיו שֶׁל אָדָם לָלֶכֶת בַּדֶּרֶךְ.</div>
+          <div class="glose-fr">Et certains disent : jusqu&#x27;a ce qu&#x27;il chante trois fois. Il me semble, avec l&#x27;aide du Ciel, qu&#x27;il y a la une allusion au verset (Proverbes 30,29) &#x27;Ils sont trois a bien marcher (metivei tsaad)&#x27; : c&#x27;est-a-dire qu&#x27;apres avoir entendu trois cris (du coq), alors les pas de l&#x27;homme seront bons pour aller sur la route.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Cette baraita appuie <b>Rabbi Chila</b>, qui comprenait keriat ha-guever comme le chant reel du coq (et non la proclamation du crieur). Se mettre en route de nuit avant ce signal expose aux demons (mazikin) : celui qui s'y risque et perit est responsable de sa mort -- <b>son sang est sur sa tete</b>. Le <b>coq moyen</b> sert de repere fiable, car il ne chante ni trop tot ni trop tard.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב יְהוּדָה אָמַר רַב: בְּשָׁעָה שֶׁיִּשְׂרָאֵל עוֹלִין לָרֶגֶל, עוֹמְדִין צְפוּפִין וּמִשְׁתַּחֲוִים רְוָוחִים, וְנִמְשָׁכִין אַחַת עֶשְׂרֵה אַמָּה אֲחוֹרֵי בֵּית הַכַּפֹּורֶת. מַאי קָאָמַר? הָכִי קָאָמַר: אַף עַל פִּי שֶׁנִּמְשָׁכִין אַחַת עֶשְׂרֵה אַמָּה אֲחוֹרֵי בֵּית הַכַּפֹּורֶת, וְעוֹמְדִים צְפוּפִין, כְּשֶׁהֵן מִשְׁתַּחֲוִין — מִשְׁתַּחֲוִין רְוָוחִים, וְזֶה אֶחָד מֵעֲשָׂרָה נִסִּים שֶׁנַּעֲשׂוּ בַּמִּקְדָּשׁ.</div>
+            <div class="fr"><p>Rav Yehouda a dit au nom de Rav : Lorsque les enfants d&#x27;Israel montent (a Jerusalem) pour la fete de pelerinage (regel), ils se tiennent serres (tzefoufim) et se prosternent au large (revahim), et ils s&#x27;etendent sur onze coudees derriere le Saint des Saints (bet ha-kapporet). Que veut-il dire ?</p><p>Voici ce qu&#x27;il dit : bien qu&#x27;ils s&#x27;etendent sur onze coudees derriere le Saint des Saints et se tiennent serres, lorsqu&#x27;ils se prosternent -- ils se prosternent au large. Et c&#x27;est la l&#x27;un des dix miracles qui se produisaient dans le Temple.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(5)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>צְפוּפִים</b> לְשׁוֹן צָף מֵרוֹב הָעָם הָיוּ נִדְחָקִים אִישׁ בְּאָחִיו וְאֵין לוֹ מָקוֹם לִנְטוֹת עַל צִדּוֹ לְכָאן וּלְכָאן וְזָקוּף כְּקוֹרָה אַף רַגְלָיו נִיטָּלִים מֵעַל הָאָרֶץ:</div>
+          <div class="glose-fr">Serres - du langage de &#x27;flotter&#x27; (tzaf) : tant la foule etait dense qu&#x27;ils se pressaient l&#x27;un contre l&#x27;autre, chacun contre son prochain, sans place pour se pencher de cote ni d&#x27;un cote ni de l&#x27;autre, droits comme une poutre ; leurs pieds meme se soulevaient du sol.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִשְׁתַּחֲוִים רְוָוחִים</b> וּכְשֶׁמִּשְׁתַּחֲוִים וְנוֹפְלִים נַעֲשָׂה לָהֶם נֵס וְהַמָּקוֹם מַרְחִיב עַד שֶׁיֵּשׁ בֵּינֵיהֶן אַרְבַּע אַמּוֹת שֶׁלֹּא יִשְׁמַע אִישׁ וִידּוּי שֶׁל חֲבֵירוֹ שֶׁלֹּא יִכָּלֵם:</div>
+          <div class="glose-fr">Se prosternent au large - lorsqu&#x27;ils se prosternaient et tombaient (a terre), un miracle se produisait pour eux : l&#x27;espace s&#x27;elargissait jusqu&#x27;a ce qu&#x27;il y ait entre eux quatre coudees, afin que nul n&#x27;entende la confession (viddouy) de son voisin et n&#x27;en soit honteux.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>נִמְשָׁכִין אַחַת עֶשְׂרֵה אַמָּה אֲחוֹרֵי בֵּית הַכַּפֹּורֶת</b> נִמְשָׁכִין מִתּוֹךְ דָּוחְקָן וּמִתְפַּזְּרִין עַל פְּנֵי אֹורֶךְ כָּל י&quot;א אַמָּה שֶׁל מְקוֹם דְּרִיסַת רַגְלֵי יִשְׂרָאֵל לַצָּפוֹן וְלַדָּרוֹם וְיוֹצְאִין מִמְּקוֹם דְּרִיסַת רַגְלֵיהֶם וְנִכְנָסִין דֶּרֶךְ בֵּית הַחֲלִיפוֹת בֵּין צִידֵּי הַהֵיכָל לְכָותְלֵי הָעֲזָרָה לַצָּפוֹן וְלַדָּרוֹם וּמִשָּׁם נִכְנָסִין לַמַּעֲרָב בְּאַחַת עֲשָׂרָה אַמָּה שֶׁיֵּשׁ אֲוִיר אֲחוֹרֵי בֵּית הַכַּפֹּורֶת עַד כֹּותֶל מַעֲרָבִי שֶׁל עֲזָרָה כְּדִתְנַן בְּמַסֶּכֶת מִדּוֹת (פ&quot;ה מִשְׁנָה א) וְאָמְרִינַן לָהּ לְעֵיל בְּפִרְקִין (יוֹמָא דַּף טז:):</div>
+          <div class="glose-fr">S&#x27;etendent sur onze coudees derriere le Saint des Saints - a cause de la presse, ils se dispersaient sur toute la longueur des onze coudees de l&#x27;emplacement ou Israel pose les pieds, vers le nord et le sud ; ils sortaient de l&#x27;emplacement de leurs pieds et entraient par le bet ha-chalifot (couloir des couteaux), entre les cotes du Hekhal et les murs de la azara au nord et au sud, et de la ils penetraient vers l&#x27;ouest, dans les onze coudees d&#x27;espace situees derriere le Saint des Saints jusqu&#x27;au mur occidental de la azara, comme il est enseigne au traite Middot (ch. 5 michna 1) et comme nous l&#x27;avons dit plus haut dans notre chapitre (Yoma 16b).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַאי קָאָמַר</b> מֵאַחַר שֶׁמִּשְׁתַּחֲוִים רְוָוחִים וְנִתְרַווַּח הַמָּקוֹם עַל יְדֵי הַנֵּס אַתָּה מַזְקִיקוֹ לִימָּשֵׁךְ וּלְהִתְפַּשֵּׁט אֲחוֹרֵי בֵּית הַכַּפֹּורֶת:</div>
+          <div class="glose-fr">Que veut-il dire - puisqu&#x27;ils se prosternent au large et que l&#x27;espace s&#x27;est elargi par le miracle, pourquoi le contraindre a s&#x27;etendre et se repandre derriere le Saint des Saints ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָכִי קָאָמַר כּוּ&#x27;</b> הַאי וְנִמְשָׁכִים אֲחוֹרֵי כו&#x27; אַרֵישָׁא קָאֵי קֹודֶם הִשְׁתַּחֲוָאָה וְהָכִי קָאָמַר אע&quot;פ שֶׁנִּמְשָׁכִין אֲחוֹרֵי הַכַּפֹּורֶת וְהָיוּ צְרִיכִין לַעֲמֹוד צְפוּפִים מֵרֹוב דָּוחְקָן אֲפִילּוּ הָכֵי כְּשֶׁהָיוּ כֻּולָּם מִשְׁתַּחֲוִים בָּאִים לְמִזְרַח הַמִּזְבֵּחַ מִתּוֹךְ הָעֲזָרָה וּמִשְׁתַּחֲוִים לִפְנֵי הַהֵיכָל וּבְרִיוַּח:</div>
+          <div class="glose-fr">Voici ce qu&#x27;il dit, etc. - ce &#x27;(et) ils s&#x27;etendent derriere, etc.&#x27; se rapporte au debut, avant la prosternation ; et voici le sens : bien qu&#x27;ils s&#x27;etendent derriere le Saint des Saints et qu&#x27;ils dussent se tenir serres a cause de la presse, malgre cela, lorsqu&#x27;ils se prosternaient tous, ils venaient a l&#x27;est de l&#x27;autel depuis l&#x27;interieur de la azara et se prosternaient devant le Hekhal, au large.</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">כְּשֶׁהָיוּ יִשְׂרָאֵל עוֹלִין לָרֶגֶל, עוֹמְדִים צְפוּפִים וּמִשְׁתַּחֲוִים רְוָחִים, וְנִמְשָׁכִים אַחַת עֶשְׂרֵה אַמָּה אֲחוֹרֵי בֵּית הַכַּפֹּרֶת. נִרְאֶה לִי בס&quot;ד הַטַּעַם שֶׁנִּמְשָׁכִים י&quot;א אַמָּה כְּמִסְפַּר ו&quot;ה שֶׁכָּל הַתִּיקּוּן שֶׁעוֹשִׂים בְּבֵית הַמִּקְדָּשׁ הוּא בָּהֶם וְעֵסֶק הָעֲבוֹדָה מַגִּיעַ עַד בֵּית הַכַּפֹּורֶת. וְנִרְאֶה לִי מַה שֶׁעָשׂוּ בְּבִנְיַן תְּחִילָּה אַחַת עֶשְׂרֵה אַמָּה אֲחוֹרֵי בֵּית הַכַּפֹּרֶת עַל פִּי מַה שֶׁאָמַר רַבֵּינוּ הָאֲרִ&quot;י זַ&quot;ל בְּסוֹד (שְׁמוֹת כו, ז) &#x27;עַשְׁתֵּי עֶשְׂרֵה יְרִיעַת&#x27; כִּי בִּי&#x27; סְפִירוֹת שֶׁל קְדֻושָּׁה נִבְלַעַת הַקְּדֻושָּׁה בְּתוֹכָם וְלָכֵן נֶחְשָׁבִים לִי&#x27; סְפִירוֹת בִּלְבַד אֲבָל בַּקְּלִיפּוֹת אֵין הַחַיּוּת הַקְּדוֹשָׁה מֻובְלָע בְּתוֹכָם כִּי אֵין קוֹדֶשׁ מִתְעָרֵב בְּחוֹל אֶלָּא עוֹמֵד עַל רֹאשָׁם וּמֵאִיר לָהֶם וְלָכֵן נֶחְשָׁבִים לְאֶחָד עָשָׂר. וְכָתַב עוֹד דְּהָאַלּוּפִים שֶׁל עֵשָׂו שֶׁהָיוּ י&quot;א הֵם כְּנֶגֶד י&quot;א הַנִּזְכָּרִים שֶׁבַּקְּלִיפָּה יְעֻויַּן שָׁם. וְלָכֵן בְּבִנְיַן בֵּית הַמִּקְדָּשׁ עָשׂוּ בִּדְבַר ה&#x27; אַחַד עָשָׂר אַמָּה אֲחוֹרֵי בֵּית קֹודֶשׁ קֳדָשִׁים לִרְמֹוז לְיִשְׂרָאֵל בָּזֶה הַמִּסְפָּר עַל י&quot;א אַלּוּפִים דְּעָשׂוּ שֶׁהֵם י&quot;א שֶׁל קְלִיפָּה שֶׁאִם יֶחֶטְאוּ הֲרֵי פְּלִשְׁתִּים מֵאָחוֹר יָבוֹאוּ וְיַחֲרִיבוּ בֵּית הַמִּקְדָּשׁ. וְלָזֶה אָמַר (יְשַׁעְיָה א, ד) &#x27;נִאֲצוּ אֶת קְדוֹשׁ יִשְׂרָאֵל נָזֹרוּ אָחוֹר&#x27;.</div>
+          <div class="glose-fr">Lorsque Israel montait pour la fete, ils se tenaient serres et se prosternaient au large, et s&#x27;etendaient sur onze coudees derriere le Saint des Saints. Il me semble, avec l&#x27;aide du Ciel, que la raison pour laquelle ils s&#x27;etendent sur onze coudees correspond au nombre (des lettres) vav-he [6+5=11], car toute la reparation (tikkoun) accomplie dans le Temple s&#x27;opere par elles, et l&#x27;oeuvre du service parvient jusqu&#x27;au Saint des Saints. Et il me semble que si l&#x27;on fit dans la construction, precisement, onze coudees derriere le Saint des Saints, c&#x27;est d&#x27;apres ce qu&#x27;a dit notre maitre le Ari, de memoire benie, dans le secret (sod) du verset (Ex 26,7) &#x27;onze tentures&#x27; : car dans les dix sefirot de saintete, la saintete est absorbee (nivla) en elles, aussi ne les compte-t-on que comme dix sefirot ; mais dans les klipot (ecorces impures), la vitalite sainte n&#x27;est pas absorbee en elles -- car le sacre ne se mele pas au profane -- elle se tient au-dessus d&#x27;elles et les eclaire ; c&#x27;est pourquoi on les compte comme onze. Il a ecrit encore que les chefs (aloufim) d&#x27;Esav, qui etaient onze, correspondent aux onze mentionnes du cote de la klipa (vois-y). C&#x27;est pourquoi, dans la construction du Temple, on fit par la parole de Dieu onze coudees derriere le Saint des Saints, pour faire allusion a Israel, par ce nombre, aux onze chefs d&#x27;Esav qui sont les onze de la klipa : car s&#x27;ils fautent, voici que les Philistins par-derriere viendront et detruiront le Temple. Et c&#x27;est ce que dit (Isaie 1,4) &#x27;ils ont meprise le Saint d&#x27;Israel, ils se sont retires en arriere (nazoru ahor)&#x27;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Malgre une foule si dense que les gens se tenaient <b>serres</b> comme des poutres, au moment de la prosternation l'espace s'ecartait miraculeusement : quatre coudees separaient chacun, afin que nul n'entende le <b>viddouy</b> (confession) de son voisin. La foule debordait aussi sur onze coudees <b>derriere le Saint des Saints</b>, en contournant par le bet ha-chalifot (couloirs lateraux). La guemara precise que ce 'debordement' decrit l'etat AVANT la prosternation, et que l'aisance vient ensuite -- c'est le miracle.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="320" fill="#fffdf8"/>
+  <text x="350" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Serres debout, au large en se prosternant -- l'un des dix miracles</text>
+
+  <!-- debout serres -->
+  <rect x="30" y="46" width="300" height="240" rx="8" fill="#eef2ff" stroke="#c7d2fe"/>
+  <text x="180" y="68" text-anchor="middle" font-size="11.5" font-weight="700" fill="#3730a3">Debout : tzefoufim (serres)</text>
+  <g fill="#4f46e5">
+    <circle cx="80" cy="110" r="8"/><circle cx="104" cy="110" r="8"/><circle cx="128" cy="110" r="8"/><circle cx="152" cy="110" r="8"/><circle cx="176" cy="110" r="8"/><circle cx="200" cy="110" r="8"/><circle cx="224" cy="110" r="8"/><circle cx="248" cy="110" r="8"/><circle cx="272" cy="110" r="8"/>
+    <circle cx="80" cy="140" r="8"/><circle cx="104" cy="140" r="8"/><circle cx="128" cy="140" r="8"/><circle cx="152" cy="140" r="8"/><circle cx="176" cy="140" r="8"/><circle cx="200" cy="140" r="8"/><circle cx="224" cy="140" r="8"/><circle cx="248" cy="140" r="8"/><circle cx="272" cy="140" r="8"/>
+    <circle cx="80" cy="170" r="8"/><circle cx="104" cy="170" r="8"/><circle cx="128" cy="170" r="8"/><circle cx="152" cy="170" r="8"/><circle cx="176" cy="170" r="8"/><circle cx="200" cy="170" r="8"/><circle cx="224" cy="170" r="8"/><circle cx="248" cy="170" r="8"/><circle cx="272" cy="170" r="8"/>
+  </g>
+  <text x="180" y="212" text-anchor="middle" font-size="10.2" fill="#334155">Presse extreme : nul espace pour se pencher,</text>
+  <text x="180" y="228" text-anchor="middle" font-size="10.2" fill="#334155">droits comme des poutres, pieds souleves du sol.</text>
+
+  <text x="350" y="170" text-anchor="middle" font-size="20" fill="#a8a29e">-&gt;</text>
+
+  <!-- au large -->
+  <rect x="370" y="46" width="300" height="240" rx="8" fill="#f0fdf4" stroke="#bbf7d0"/>
+  <text x="520" y="68" text-anchor="middle" font-size="11.5" font-weight="700" fill="#166534">Prosternes : revahim (au large)</text>
+  <g fill="#16a34a">
+    <circle cx="420" cy="120" r="7"/><circle cx="480" cy="120" r="7"/><circle cx="540" cy="120" r="7"/><circle cx="600" cy="120" r="7"/>
+    <circle cx="420" cy="180" r="7"/><circle cx="480" cy="180" r="7"/><circle cx="540" cy="180" r="7"/><circle cx="600" cy="180" r="7"/>
+  </g>
+  <text x="520" y="222" text-anchor="middle" font-size="10.2" fill="#334155">L'espace s'ecarte : quatre coudees entre chacun,</text>
+  <text x="520" y="238" text-anchor="middle" font-size="10.2" fill="#334155">nul n'entend le viddouy (confession) du voisin</text>
+  <text x="520" y="254" text-anchor="middle" font-size="10.2" fill="#334155">et n'en est mis dans la honte.</text>
+
+  <text x="350" y="306" text-anchor="middle" font-size="10" fill="#57534e">La foule debordait aussi sur onze coudees derriere le Saint des Saints, en passant par le bet ha-chalifot (couloirs lateraux).</text>
+</svg></div><div class="svg-cap">Le miracle : serres debout, mais espaces de quatre coudees des qu&#x27;ils se prosternent.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">דִּתְנַן, עֲשָׂרָה נִסִּים נַעֲשׂוּ בְּבֵית הַמִּקְדָּשׁ: לֹא הִפִּילָה אִשָּׁה מֵרֵיחַ בְּשַׂר הַקֹּדֶשׁ. וְלֹא הִסְרִיחַ בְּשַׂר הַקֹּדֶשׁ מֵעוֹלָם. וְלֹא נִרְאָה זְבוּב בְּבֵית הַמִּטְבָּחַיִם. וְלֹא אֵירַע קֶרִי לְכֹהֵן גָּדוֹל בְּיוֹם הַכִּפּוּרִים. וְלֹא נִמְצָא פְּסוּל בָּעֹומֶר, וּבִשְׁתֵּי הַלֶּחֶם, וּבְלֶחֶם הַפָּנִים. עוֹמְדִים צְפוּפִים, וּמִשְׁתַּחֲוִים רְווָחִים. וְלֹא הִזִּיק נָחָשׁ וְעַקְרָב בִּירוּשָׁלַיִם מֵעוֹלָם. וְלֹא אָמַר אָדָם לַחֲבֵרוֹ: צַר לִי הַמָּקוֹם שֶׁאָלִין בִּירוּשָׁלַיִם.</div>
+            <div class="fr"><p>Ainsi que nous l&#x27;avons appris (michna) : Dix miracles se produisirent dans le Temple. Aucune femme n&#x27;avorta a cause de l&#x27;odeur de la viande sacree.</p><p>La viande sacree ne se putrefia jamais. On ne vit jamais de mouche dans l&#x27;abattoir.</p><p>Aucune pollution nocturne (keri) n&#x27;arriva au Cohen Gadol le jour de Kippour. On ne trouva jamais d&#x27;invalidite (passoul) dans le omer, ni dans les deux pains (chte ha-lehem), ni dans les pains de proposition (lehem ha-panim).</p><p>Ils se tiennent serres et se prosternent au large. Jamais serpent ni scorpion ne fit de mal a Jerusalem.</p><p>Et jamais un homme ne dit a son prochain : le lieu est trop etroit pour moi pour passer la nuit a Jerusalem.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא הִפִּילָה אִשָּׁה</b> עֻובָּרָה שֶׁנִּתְאַוְּתָה לֶאֱכֹול מִבְּשַׂר הַצָּלִי כְּשֶׁמַּעֲלֶה רֵיחַ:</div>
+          <div class="glose-fr">Aucune femme n&#x27;avorta - une femme enceinte qui eut envie de manger de la viande rotie lorsqu&#x27;elle en sentait l&#x27;odeur (ne fit pas de fausse couche par ce desir inassouvi).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּבֵית הַטַּבָּחִים</b> שֶׁל עֲזָרָה:</div>
+          <div class="glose-fr">Dans l&#x27;abattoir - (celui) de la azara.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְלֹא נִמְצָא פְּסוּל בָּעֹומֶר</b> שֶׁאִם יֶאֱרַע בּוֹ פְּסוּל אֵין אַחֵר לְהָבִיא תַּחְתָּיו שֶׁהוּא נִקְצָר בְּלֵיל מוֹצָאֵי י&quot;ט וְאֵין מַרְבִּין לִקְצֹור אֶלָּא כְּפִי הַשִּׁיעוּר שֶׁל עִשָּׂרוֹן מְנֻופֶּה בי&quot;ג נָפָה וְכֵן שְׁתֵּי הַלֶּחֶם נֶאֱפִין מֵעֶרֶב י&quot;ט וְאֵין אֲפִייָּתָן דּוֹחָה יוֹם טוֹב וְאִם יִפָּסֵל לֹא יֹאפוּ אַחֶרֶת בי&quot;ט וְכֵן לֶחֶם הַפָּנִים שֶׁנֶּאֱפָה מע&quot;ש וְאִם יִפָּסֵל אֵין חִילּוּף וְהַשֻּׁלְחָן עוֹמֵד רֵיקָם עַד שַׁבָּת הַבָּאָה:</div>
+          <div class="glose-fr">On ne trouva jamais d&#x27;invalidite dans le omer - car s&#x27;il lui arrivait une invalidite, il n&#x27;y en avait pas d&#x27;autre pour le remplacer, puisqu&#x27;on le moissonne la nuit suivant le (premier) jour de fete, et l&#x27;on ne moissonne pas plus que la mesure d&#x27;un issaron tamise par treize tamis. De meme les deux pains sont cuits la veille de la fete, et leur cuisson ne repousse pas la fete ; s&#x27;ils se trouvaient invalides, on n&#x27;en cuirait pas d&#x27;autres pendant la fete. De meme le lehem ha-panim, cuit la veille de Chabbat : s&#x27;il se trouvait invalide, il n&#x27;y avait pas de remplacant, et la table restait vide jusqu&#x27;au Chabbat suivant.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>צַר לִי הַמָּקוֹם</b> מְזוֹנוֹתַי דְּחוּקִים דִּירָתִי דְּחוּקָה:</div>
+          <div class="glose-fr">Le lieu est trop etroit pour moi - ma nourriture est a l&#x27;etroit, mon logement est a l&#x27;etroit.</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">עֲשָׂרָה נִסִּים נַעֲשׂוּ בְּבֵית הַמִּקְדָּשׁ. נִרְאֶה לִי בס&quot;ד טַעַם לַעֲשָׂרָה כִּי אַבְרָהָם אָבִינוּ ע&quot;ה נִתְנַסָּה בַּעֲשָׂרָה נִסְיוֹנוֹת וְנִסָּיוֹן הָעֲשִׂירִי הָיָה הָעֲקֵדָה שֶׁנִּשְׁלַם בַּמָּקוֹם הַהוּא שֶׁל בֵּית הַמִּקְדָּשׁ לָכֵן בִּזְכוּת עֲשָׂרָה נִסְיוֹנוֹת שֶׁנִּשְׁלְמוּ שָׁם זָכָה הַמָּקוֹם הַהוּא לִהְיוֹת בּוֹ עֲשָׂרָה נִסִּים. אוֹ יוּבַן הַטַּעַם כִּי בַּעֲבוֹדַת בֵּית הַמִּקְדָּשׁ נַעֲשֶׂה יִחוּד וְחִיבּוּר שֵׁם הָוֵי &quot; ה בְּמִלּוּי אלפי&quot;ן [יוֹ&quot;ד הֵ&quot;א וָא&quot;ו הֵ&quot;א = 45] עִם שֵׁם אֱדָנ &quot; י [65] שֶׁמִּסְפָּרָם נֵס [110] בְּסוֹד מַה שֶׁאָמְרוּ רַבּוֹתֵינוּ זַ&quot;ל (שַׁבָּת קד.) מֵ&quot;ם שֶׁבַּלּוּחוֹת בְּנֵס הָיוּ עוֹמְדִים. וּפֵירֵשׁ רַבֵּינוּ הָאֲרִ&quot;י זַ&quot;ל נֵס עַל שֵׁם הוי&quot;ה דְּאַלְפִין וְשֵׁם אדנ&quot;י, וְיָדוּעַ כָּל דָּבָר שֶׁבִּקְדֻושָּׁה כָּלוּל מֵעֶשֶׂר לְכָךְ נַעֲשָׂה עֲשָׂרָה נֵס.</div>
+          <div class="glose-fr">Dix miracles se produisirent dans le Temple. Il me semble, avec l&#x27;aide du Ciel, une raison au nombre dix : Abraham notre pere, la paix sur lui, fut eprouve par dix epreuves, et la dixieme fut la ligature (akeda), achevee en ce lieu meme du Temple ; c&#x27;est pourquoi, par le merite des dix epreuves qui s&#x27;y acheverent, ce lieu merita de porter dix miracles. Ou l&#x27;on comprendra la raison ainsi : par le service du Temple s&#x27;operait l&#x27;union et la jonction du Nom Havaya dans son epellation par des alef [YOD HE VAV HE = 45] avec le Nom Adnout [65], dont la somme est &#x27;nes&#x27; [110], selon le secret de ce qu&#x27;ont dit nos maitres (Chabbat 104a) que le mem (final) des Tables se tenait par miracle (be-nes) ; et notre maitre le Ari, de memoire benie, a explique &#x27;nes&#x27; comme (allusion) au Nom Havaya par les alef et au Nom Adnout. Or l&#x27;on sait que toute chose de saintete est incluse de dix ; ainsi se fit un &#x27;nes&#x27; de dix.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">עוֹמְדִים צְפוּפִים וּמִשְׁתַּחֲוִים רְוָחִים. פֵּירֵשׁ רַשִׁ&quot;י הַמָּקוֹם מַרְחִיב עַד שֶׁיֵּשׁ בֵּינֵיהֶם, רוֹצֶה לוֹמַר מִן הַצְּדָדִין, גַּם כֵּן אַרְבַּע אַמּוֹת שֶׁלֹּא יִשְׁמַע אֶחָד וִדּוּי שֶׁל חֲבֵירוֹ שֶׁלֹּא יִכָּלֵם. וְהַגָּאוֹן יַעֲבֵ&quot;ץ זַ&quot;ל בְּבֵיאוּר אָבוֹת פִּקְפֵּק בָּזֶה דְּמַה צֹורֶךְ יֵשׁ בְּהַרְחָבַת הַמָּקוֹם מִן הַצְּדָדִין מֵאַחַר דְּמִתְפַּלְּלִין וּמִתְוַודִּין בְּלַחַשׁ וְרַק הַנֵּס מֻוכְרָח לִהְיוֹת מִלִּפְנֵיהֶם מִפְּנֵי הִשְׁתַּחֲוָיָה שֶׁהוּא פָּשׁוּט יָדַיִם וְרַגְלַיִם עַל הָרִצְפָּה וּכְשֶׁעוֹמְדִים צְפוּפִים אֵינָם יְכוֹלִים אֲפִילּוּ לִכְרֹועַ מְעַט וּלְכָךְ הֻוצְרַךְ הַנֵּס לְהַרְחִיב הַמָּקוֹם עַד כָּאן דְּבָרָיו. וְצָרִיךְ לְהָבִין בֶּאֱמֶת מִי הִכְרִיחוּ לְרַשִׁ&quot;י זַ&quot;ל לְפָרֵשׁ עַל הַצְּדָדִין גַּם כֵּן? וְנִרְאֶה לִי בס&quot;ד דְּדָייֵק דַּהֲוָה לֵיהּ לְמֵימַר &#x27;עוֹמְדִים צְפוּפִים וּמִשְׁתַּחֲוִים&#x27; וְיָדַעְנָא דְּהַנֵּס הוּא בְּהַרְחָבַת הַמָּקוֹם לִפְנֵיהֶם דְּאֵיךְ מִשְׁתַּחֲוִים שֶׁהוּא פָּשׁוּט יָדַיִם וְרַגְלַיִם אִם הֵם עוֹמְדִים צְפוּפִים, וְכֵיוָן דְּהוֹסִיף הַתַּנָּא לוֹמַר &#x27;רְוָחִים&#x27; שְׁמַע מִינָּה דְּקָא מַשְׁמָע לָן עַל הַרְוָוחָה יְתֵירָה שֶׁהִיא מִן הַצְּדָדִין וּלְהָכִי אָמַר רְוָחִים וְלֹא אָמַר בְּרִיוַּח דְּקָא מַשְׁמָע לָן עַל שְׁתֵּי הָרְווָחוֹת, וְעָשָׂה טַעַם לָזֶה מִשּׁוּם וִדּוּי וְהַיְינוּ אַף עַל פִּי דְּרֻובָּא דְּעָלְמָא מִתְווַדִּים בְּלַחַשׁ לֹא יִבָּצֵר מֵאֵיזֶה אֲנָשִׁים שֶׁיִּהְיוּ מִתְוַודִּים בְּקוֹל רָם.</div>
+          <div class="glose-fr">Ils se tiennent serres et se prosternent au large. Rachi a explique : l&#x27;espace s&#x27;elargissait jusqu&#x27;a ce qu&#x27;il y ait entre eux (quatre coudees) -- c&#x27;est-a-dire aussi sur les cotes -- afin que nul n&#x27;entende le viddouy de son voisin et n&#x27;en soit honteux. Le Gaon Yaavetz, de memoire benie, dans son commentaire sur Avot, a mis en doute cela : quel besoin d&#x27;elargir l&#x27;espace sur les cotes, puisqu&#x27;on prie et confesse a voix basse ? Le miracle ne serait necessaire que devant eux, a cause de la prosternation qui est un etendement des mains et des pieds sur le dallage : quand ils sont serres ils ne peuvent meme pas s&#x27;incliner un peu, et c&#x27;est pourquoi le miracle elargit l&#x27;espace -- fin de ses propos. Et il faut vraiment comprendre : qui a contraint Rachi, de memoire benie, a expliquer aussi (l&#x27;elargissement) sur les cotes ? Il me semble, avec l&#x27;aide du Ciel, qu&#x27;il l&#x27;a deduit precisement : (la michna) aurait du dire &#x27;ils se tiennent serres et se prosternent&#x27;, et l&#x27;on saurait que le miracle est l&#x27;elargissement de l&#x27;espace devant eux -- car comment se prosterneraient-ils, etendant mains et pieds, s&#x27;ils sont serres ? Et puisque le tana a ajoute de dire &#x27;au large&#x27; (revahim), on en deduit qu&#x27;il nous apprend une aisance supplementaire, celle des cotes ; c&#x27;est pourquoi il a dit &#x27;revahim&#x27; et non &#x27;be-revah&#x27;, pour nous apprendre les deux aisances. Et il en a donne la raison a cause du viddouy : car meme si la plupart des gens confessent a voix basse, il ne manquera pas quelques hommes qui confessent a voix haute.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">וְלֹא הִזִּיק נָחָשׁ וְעַקְרָב בִּירוּשָׁלַיִם. מַקְשִׁים אַמַּאי נָקֵיט נִסִּים שֶׁל יְרוּשָׁלַיִם עִם נִסִּים שֶׁל בֵּית הַמִּקְדָּשׁ? וְנִרְאֶה לִי בס&quot;ד דְּקָא מַשְׁמַע לָן לֹא זָכְתָה יְרוּשָׁלַיִם לְנִסִּים אֵלּוּ טְפֵי מִשְּׁאָר אֶרֶץ יִשְׂרָאֵל אֶלָּא בִּשְׁבִיל בֵּית הַמִּקְדָּשׁ שֶׁהָיָה בְּתוֹכָהּ וְלָכֵן זָכְתָה לְנִסִּים אֵלּוּ שֶׁהֵם מֵעֵין נִסִּים שֶׁל בֵּית הַמִּקְדָּשׁ, כִּי כְּנֶגֶד נֵס הַרְחָקַת הַזְּבוּב וּמְנִיעַת הַקֶּרִי שֶׁהָיָה בְּבֵית הַמִּקְדָּשׁ זָכְתָה יְרוּשָׁלַיִם שֶׁלֹּא הִזִּיק נָחָשׁ וְעַקְרָב, כִּי שֹׁורֶשׁ אֶחָד הֵם, וּכְנֶגֶד נֵס מִשְׁתַּחֲוִים רְוָחִים זָכְתָה שֶׁלֹּא אָמַר אָדָם לַחֲבֵרוֹ: צַר לִי הַמָּקוֹם. וְעוֹד מַקְשִׁים אַמַּאי אָמַר &#x27;וְלֹא הִזִּיק&#x27; וַהֲוָה לֵיהּ לְמֵימַר &#x27;וְלֹא נָשַׁךְ נָחָשׁ וְעַקְרָב&#x27;? וְנִרְאֶה לִי בס&quot;ד דְּבָא לִכְלֹול בָּזֶה גַּם כֵּן שֶׁלֹּא נִזְדַּמֵּן שֶׁהַנָּחָשׁ הֵטִיל אֶרֶס בְּמַאֲכָל וּמַשְׁקֶה וְשֶׁתֹּוהוּ בְּנֵי אָדָם וְעַל זֶה לֹא שַׁיָּיךְ לוֹמַר נָשַׁךְ אֶלָּא הִזִּיק.</div>
+          <div class="glose-fr">Jamais serpent ni scorpion ne fit de mal a Jerusalem. On objecte : pourquoi ranger des miracles de Jerusalem avec les miracles du Temple ? Il me semble, avec l&#x27;aide du Ciel, qu&#x27;il nous apprend que Jerusalem ne merita ces miracles davantage que le reste de la terre d&#x27;Israel qu&#x27;a cause du Temple qui etait en son sein ; c&#x27;est pourquoi elle merita ces miracles qui sont de la nature des miracles du Temple : car en regard du miracle d&#x27;eloigner la mouche et d&#x27;empecher le keri qui etaient au Temple, Jerusalem merita que serpent ni scorpion n&#x27;y nuise -- car ils sont d&#x27;une meme racine ; et en regard du miracle &#x27;ils se prosternent au large&#x27;, elle merita que nul ne dise a son prochain : le lieu est trop etroit pour moi. On objecte encore : pourquoi dire &#x27;ne fit pas de mal (hizik)&#x27; au lieu de &#x27;ne mordit pas (nachach) serpent ni scorpion&#x27; ? Il me semble, avec l&#x27;aide du Ciel, qu&#x27;il vient inclure aussi le cas ou un serpent aurait injecte son venin dans un aliment ou une boisson que des hommes auraient consommes -- et la le terme &#x27;mordre&#x27; ne convient pas, mais bien &#x27;faire du mal&#x27;.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">לֹא הִפִּילָה אִשָּׁה מֵרֵיחַ בְּשַׂר הַקֹּדֶשׁ. יֵשׁ לְהַקְשׁוֹת כֻּולְּהוּ נִסֵּי הֵם מַעֲלוֹת שֶׁיֵּשׁ בָּהֶם תּוֹעֶלֶת לַקֹּודֶשׁ עַצְמוֹ אַךְ נֵס זֶה אֵינוֹ תּוֹעֶלֶת לַקֹּודֶשׁ? וְנִרְאֶה לִי בס&quot;ד דְּמַגִּיעַ מִזֶּה תּוֹעֶלֶת לַקֹּודֶשׁ שֶׁלֹּא יִהְיוּ נִצְרָכִים לְהַאֲכִילָהּ מִבְּשַׂר קוֹדֶשׁ דְּאִיתָא בַּגְּמָרָא (יוֹמָא פב.) עֻובָּרָה שֶׁהֵרִיחָה בְּשַׂר קֹודֶשׁ יֵשׁ תּוֹחֲבִין לָהּ כּוּשׁ בְּרֹוטֶב וּמַנִּיחִין לָהּ עַל פִּיהָ אִם נִתְייַשְּׁבָה דַּעְתָּהּ מוּטָב וְאִם לָאו מַאֲכִילִין אוֹתָהּ וְכוּ&#x27; שֶׁאֵין לְךָ דָּבָר עוֹמֵד בִּפְנֵי פִּקּוּחַ נֶפֶשׁ עַיֵּין שָׁם.</div>
+          <div class="glose-fr">Aucune femme n&#x27;avorta a cause de l&#x27;odeur de la viande sacree. Il y a lieu d&#x27;objecter : tous les (autres) miracles sont des perfections utiles au sacre lui-meme, tandis que ce miracle-ci n&#x27;est pas une utilite pour le sacre ? Il me semble, avec l&#x27;aide du Ciel, qu&#x27;il en resulte une utilite pour le sacre : que l&#x27;on n&#x27;ait pas a la nourrir de viande sacree -- car il est dit dans la guemara (Yoma 82a) qu&#x27;une femme enceinte qui a senti de la viande sacree (et en est saisie de desir), on lui plonge un fuseau dans la sauce et on le pose sur sa bouche ; si son esprit se calme, tant mieux, et sinon on la nourrit (de la viande elle-meme), etc., car rien ne tient devant le danger pour la vie (pikoua&#x27;h nefech) (vois-y).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La michna (Avot 5,5) enumere les <b>dix miracles</b>. Les huit premiers concernent le Temple meme ; les deux derniers -- serpent/scorpion et l'hospitalite -- concernent <b>Jerusalem</b>. Ce glissement du Temple a Jerusalem est precisement ce qui declenchera le probleme de decompte dans la suite : il ne resterait que huit miracles proprement du Temple.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">פָּתַח בַּמִּקְדָּשׁ, וְסִיֵּים בִּירוּשָׁלַיִם! אִיכָּא תַּרְתֵּי אַחְרָנְייָתָא בְּמִקְדָּשׁ. דְּתַנְיָא: מֵעוֹלָם לֹא כִּבּוּ גְּשָׁמִים אֵשׁ שֶׁל עֲצֵי הַמַּעֲרָכָה. וַעֲשַׁן הַמַּעֲרָכָה, אֲפִילּוּ כָּל הָרוּחוֹת שֶׁבָּעוֹלָם בָּאוֹת וּמְנַשְּׁבוֹת בּוֹ — אֵין מְזִיזוֹת אוֹתוֹ מִמְּקוֹמוֹ.</div>
+            <div class="fr"><p>(La michna) a ouvert avec le Temple (mikdach) et a conclu avec Jerusalem ! (Il n&#x27;y aurait donc que huit miracles du Temple.) Il y a deux autres (miracles) dans le Temple, comme il est enseigne (baraita) : Jamais les pluies n&#x27;eteignirent le feu des buches de l&#x27;arrangement (maarakha) ; et la fumee de l&#x27;arrangement -- meme si tous les vents du monde venaient souffler sur elle, ils ne la deplacaient pas de son lieu.</p></div>
+            <div class="tools"><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אֵלּוּ חֲמִשָּׁה דְּבָרִים שֶׁיֵּשׁ בֵּין מִקְדָּשׁ רִאשׁוֹן לְמִקְדָּשׁ שֵׁנִי וְכוּ&#x27;.. הִקְשָׁה הֲרִיטֵּב &quot; א זַ&quot;ל אַמַּאי לָא חֲשִׁיב שֶׁמֶן הַמִּשְׁחָה? יְעֻויַּן שָׁם. וְנִרְאֶה לִי בס&quot;ד דְּשֶׁמֶן הַמִּשְׁחָה אֵינוֹ נוֹגֵעַ חֶסְרוֹנוֹ לְיִשְׂרָאֵל כִּי אֵין בּוֹ צֹורֶךְ אֶלָּא רַק לְמֶלֶךְ שֶׁהוּא מִתְכַּבֵּד יוֹתֵר בִּמְשִׁיחָתוֹ בּוֹ מַה שֶׁאֵין כֵּן כָּל הָנֵי חֲמִשָּׁה חֶסְרוֹנָם נוֹגֵעַ לְכָל יִשְׂרָאֵל שֶׁכֻּולָּם מִתְכַּבְּדִים בָּהֶם. אַךְ הָרִיטְבָ&quot;א זַ&quot;ל תֵּירֵץ לְקֻושְׁיָתוֹ הַנִּזְכָּר מִפְּנֵי שֶׁשֶּׁמֶן הַמִּשְׁחָה אַף בְּבַיִת רִאשׁוֹן לֹא הָיָה תָּמִיד שֶׁכְּבָר נִגְנַז בִּימֵי יֹאשִׁיָּהוּ עַד כָּאן. וְכָתַב הַגָּאוֹן חִיֵּד &quot; א זַ&quot;ל בְּפֶתַח עֵינַיִים מִפִּי הַשְּׁמוּעָה קֻושְׁיָא עֲצוּמָה עַל הָרִיטְבָ&quot;א זַ&quot;ל דְּהָא אָמְרוּ בְּפֶרֶק הוֹצִיאוּ לוֹ (יוֹמָא נב:) דְּשֶׁמֶן הַמִּשְׁחָה נִגְנַז עִם הָאָרוֹן בְּיַחַד וְכֵיוָן דַּחֲשִׁיב אָרוֹן יֹאמַר גַּם כֵּן שֶׁמֶן הַמִּשְׁחָה וְכָתַב עַל זֶה שֶׁהִיא תְּמִיהָה קַיֶּימֶת יְעֻויַּן שָׁם. וְנִרְאֶה לִי בס&quot;ד דְּהָאָרוֹן בְּעֵת שֶׁנִּגְנַז בְּבַיִת רִאשׁוֹן בִּימֵי יֹאשִׁיָּהוּ לָא חֲשִׁיב נֶחְסַר מִן בֵּית הַמִּקְדָּשׁ יַעַן כִּי הוּא נִגְנַז בְּאַחַת הַלְּשָׁכוֹת בְּתוֹךְ בֵּית הַמִּקְדָּשׁ וְלֹא יָצָא מִבֵּית הַמִּקְדָּשׁ, וְאוֹתָם שֶׁגָּנְזוּ אוֹתוֹ הֵם יוֹדְעִים בְּאֵיזֶה מָקוֹם הוּא מֻונָּח וְלָכֵן אֵין זֶה חֲשִׁיב חִסָּרוֹן בִּזְמַן בַּיִת רִאשׁוֹן דְּמַה לִי מֻונָּח בְּבֵית קֹודֶשׁ קֳדָשִׁים מַה לִי מֻונָּח בְּאַחַת הַלְּשָׁכוֹת הִנֵּה שְׁתֵּי מְקוֹמוֹת אֵלּוּ בְּבֵית הַמִּקְדָּשׁ, וְכֵיוָן דְּיוֹדְעִים בְּאֵיזֶה מָקוֹם מֻונָּח הֲרֵי הֵם יְכוֹלִים לְהוֹצִיאוֹ מִמָּקוֹם הַשֵּׁנִי וּלְהַחֲזִירוֹ לְבֵית קֹודֶשׁ קֳדָשִׁים אִם יִרְצוּ וְכָל הָרָאוּי לְבִילָּה אֵין בִּילָּה מְעַכֶּבֶת (מְנָחוֹת קג:) וַהֲרֵי הוּא כְּאִלּוּ מֻונָּח בְּקוֹדֶשׁ קָדָשִׁים וְאֵין זֶה חֲשִׁיב חִסָּרוֹן, אַךְ בְּבַיִת שֵׁנִי דְּאוֹתָם שֶׁהָיוּ יוֹדְעִין מְקוֹמוֹ נִפְטְרוּ וְאוֹתָם שֶׁעָלוּ בְּבַיִת שֵׁנִי לֹא הָיוּ יוֹדְעִים הֵיכָן הוּא מֻונָּח דְּאִי אֶפְשָׁר לְהַחֲזִירוֹ לִמְקוֹמוֹ נֶחְשָׁב זֶה חִסָּרוֹן בְּבַיִת שֵׁנִי גַּבֵּי הָאָרוֹן, אָמְנָם שֶׁמֶן הַמִּשְׁחָה שֶׁנִּגְנַז בִּזְמַן שֶׁהָיָה בַּיִת רִאשׁוֹן אַף עַל פִּי שֶׁיֵּשׁ שֶׁהֵם יוֹדְעִים בְּאֵיזֶה מָקוֹם נִגְנַז עִם כָּל זֶה כֵּיוָן שֶׁהֻוצְרְכוּ אֵלָיו לִמְשֹׁוחַ בּוֹ אֶת יְהוֹאָחָז מִפְּנֵי מַחֲלֹוקֶת שֶׁל יְהוֹיָקִים וְלֹא יָכְלוּ לְגַלּוֹתוֹ וְלַהֲבִיאוֹ לַעֲשׂוֹת בּוֹ מְלַאכְתּוֹ הַמְיֻוחֶדֶת לוֹ נִרְגָּשׁ חֶסְרוֹנוֹ וְנִיכָּר, וּלְהָכִי גַּם בְּבַיִת רִאשׁוֹן נֶחְשְׁבָה גְּנִיזָתוֹ חִסָּרוֹן כֵּיוָן שֶׁהוּא עִנְיָינוֹ לִמְשֹׁוחַ בּוֹ וּכְשֶׁהֻוצְרְכוּ אֵלָיו לֹא נִמְצָא בְּיָדָם וְהֻוכְרְחוּ לִמְשֹׁוחַ יְהוֹאָחָז בְּאֶפְרַסְמוֹנָא דַּכְיָא וְכַנִּזְכָּר בְּהוֹרָיוֹת (הוֹרָיוֹת יב.) וּלְהָכִי לָא חָשֵׁיב לֵיהּ בַּהֲדֵי חֲמִשָּׁה שֶׁלֹּא נִרְגָּשׁ חֶסְרוֹנָם בְּבַיִת רִאשׁוֹן גַּם בְּסוֹפוֹ. וְאַף עַל גַּב דְּאִם הָיָה גַּם כֵּן מָצוּי אֶצְלָם שֶׁמֶן הַמִּשְׁחָה אֶפְשָׁר לֹא הָיוּ מוֹשְׁחִין בּוֹ אֶת יְהוֹאָחָז עִם כָּל זֶה חֲשִׁיב חִסָּרוֹן כֵּיוָן שֶׁהֻוצְרְכוּ אֵלָיו וְלֹא נִמְצָא גָּלוּי בְּיָדָם. נִמְצָא בַּיִת רִאשׁוֹן שֶׁבָּנָה שְׁלֹמֹה הַמֶּלֶךְ ע&quot;ה הָיָה שָׁלֵם בַּחֲמִשָּׁה דְּבָרִים וְנִרְאֶה לִי בס&quot;ד דְּנִרְמְזָה מַעֲלָה זוֹ בְּשֵׁם שְׁלֹמֹה שֶׁהוּא שָׁלֵם ה &#x27;. וְנִרְאֶה לִי לָכֵן נֶאֱמַר עַל שְׁלֹמֹה הַמֶּלֶךְ ע&quot;ה (מְלָכִים א&#x27; ה, יב) &#x27;וַיְהִי שִׁירוֹ חֲמִשָּׁה וְאֶלֶף&#x27; דְּמִסֵּפֶר הָאָלֶף כִּיוֵּן בּוֹ לְאוֹמְרוֹ כְּנֶגֶד בֵּית הַמִּקְדָּשׁ עַצְמוֹ דְּעָלָיו נֶאֱמַר (שִׁיר הַשִּׁירִים ד, ד) &#x27;בָּנוּי לְתַלְפִּיּוֹת אֶלֶף הַמָּגֵן תָּלוּי עָלָיו&#x27; וּמִסְפַּר הַחֲמִשָּׁה הַנּוֹתָרִים עַל אֶלֶף הֵם כְּנֶגֶד חֲמִשָּׁה יִתְרוֹנוֹת הַנִּזְכָּרִים שֶׁהָיָה יֶתֶר בַּיִת רִאשׁוֹן. וּמַה שֶׁאָמַר שֶׁנֶּחְסַר הַשְׁרָאַת שְׁכִינָה אֵין כַּוָּנָתוֹ לוֹמַר שֶׁלֹּא הָיָה הַשְׁרָאַת שְׁכִינָה כְּלָל דְּזֶה אִי אֶפְשָׁר דַּאֲפִילּוּ בְּחֻרְבָּן לֹא זָזָה שְׁכִינָה מִכֹּותֶל מַעֲרָבִי (מִדְרַשׁ רַבָּה שְׁמוֹת ב, ב) , אַךְ בֶּאֱמֶת בְּהַשְׁרָאַת אוֹר שְׁכִינָה יֵשׁ כַּמָּה הַדְרָגוֹת וְאוֹתָהּ הַמַּדְרֵגָה שֶׁהָיְתָה בִּזְמַן בַּיִת רִאשׁוֹן לֹא הָיְתָה בְּבַיִת שֵׁנִי, וְכֵן תִּמְצָא גַּם כֵּן בְּרוּחַ הַקֹּודֶשׁ דְּגַם הַנְּבוּאָה קָרֵי לָהּ בְּשֵׁם רוּחַ הַקֹּודֶשׁ וּמַדְרֵגַת הַנְּבוּאָה שֶׁהָיְתָה בְּבַיִת רִאשׁוֹן לֹא הָיְתָה בְּבַיִת שֵׁנִי. אָמְרִי : [ אִין ] , מְהַוָּה הָווּ , סִיּוּעִי הוּא דְּלָא מְסַיְּעָא [כא:] וְנִרְאֶה לִי לְפִי זֶה מַה שֶׁאָמַר בִּזְבָחִים (זְבָחִים סא:) אֵשׁ שֶׁיָּרְדָה בִּימֵי שְׁלֹמֹה לֹא נִסְתַּלְּקָה עַד שֶׁבָּא מְנַשֶּׁה וְסִילְּקָהּ, אֵין הַכַּוָּנָה סִילְּקָהּ לְגַמְרֵי שֶׁנִּסְתַּלֵּק גּוּף הָאֵשׁ, אֶלָּא הַכַּוָּנָה נִסְתַּלֵּק כֹּחַ הַפְּעֻולָּה שֶׁלָּהּ כִּדְאָמַר הָכָא מְהַוָּה הָווּ סִיּוּעַי הוּא דְּלָא מְסַיְּעָא דְּכֵן הָיָה לָהּ גַּם בְּבַיִת רִאשׁוֹן מִזְּמַן מְנַשֶּׁה עַד חֻרְבַּן הַבַּיִת. וְעַל חֶסְרוֹן אוּרִים וְתֻמִּים עַיֵּין פֶּתַח עֵינַיִם בְּשֵׁם הָרַמְבַּ&quot;ם דְּנִכְתְּבוּ עַל יְדֵי שָׁמַיִם, וְהִקְשָׁה וַהֲלֹא אָמְרוּ בַּגְּמָרָא שֶׁהָיוּ כְּתוּבִים עַל יְדֵי הַשָּׁמִיר? יְעֻויַּן שָׁם. וְנִרְאֶה לִי בס&quot;ד דְּאַף עַל גַּב דְּהָיָה עַל יְדֵי הַשָּׁמִיר הָיוּ צְרִיכִין לְמַעֲשֵׂה נֵס מִן הַשָּׁמַיִם כִּי הַשָּׁמִיר טִבְעוֹ וּסְגֻולָּתוֹ לְשַׁבֵּר מֵעֵבֶר לְעֵבֶר וְאֵינוֹ חוֹקֵק מְעַט כְּמוֹ כְּתִיבָה וּמַה שֶׁהָיָה חֲקִיקָה בְּדֶרֶךְ כְּתִיבָה הָיָה בְּדֶרֶךְ נֵס וּמַעֲשֵׂה שָׁמַיִם מִקְּרֵי. וְעוֹד נִרְאֶה לִי בְּלָאו הָכִי פְּעֻולַּת הַשָּׁמִיר עַצְמָהּ נִקְרֵאית בִּידֵי שָׁמַיִם כֵּיוָן שֶׁהִיא פְּעֻולָּה סְגֻולִּיִּית דְּאָמְרוּ רַבּוֹתֵינוּ זַ&quot;ל שׂוֹרְטִין תְּחִילָּה וּמַרְאִין לָהֶם אֶת הַשָּׁמִיר וְהֵם נִבְקָעִין מֵאֲלֵיהֶן, נִמְצָא הוּא מַעֲשֶׂה סוּגְלִיי וְאֵינוֹ טִבְעִי וְכָל מַעֲשֶׂה סוּגְלִיי נִקְרָא בִּידֵי שָׁמַיִם. וּמַה שֶׁאָמַר &#x27;שֵׁשׁ אַשְׁוַת הֵן&#x27; נִרְאֶה לִי בס&quot;ד אֵשׁ רָאשֵׁי תֵּיבוֹת ש ש א שְׁוָת.</div>
+          <div class="glose-fr">Ces cinq choses qui distinguent le premier Temple du second, etc. Le Ritva, de memoire benie, a demande : pourquoi ne compte-t-on pas l&#x27;huile d&#x27;onction (chemen ha-micha) ? (vois-y). Il me semble, avec l&#x27;aide du Ciel, que l&#x27;absence de l&#x27;huile d&#x27;onction ne touche pas Israel, car elle n&#x27;est necessaire qu&#x27;au roi, qui s&#x27;honore davantage d&#x27;en etre oint -- tandis que ces cinq (autres) choses, leur absence touche tout Israel, qui tous s&#x27;honorent par elles. Mais le Ritva, de memoire benie, a repondu a sa question : parce que l&#x27;huile d&#x27;onction, meme au premier Temple, n&#x27;etait pas toujours (presente), ayant deja ete cachee (nignaz) aux jours de Yochiyahou. Et le Gaon Hida, de memoire benie, a ecrit dans Petah Einayim, d&#x27;apres la tradition orale, une objection considerable contre le Ritva : car on a dit au chapitre Hotsiou Lo (Yoma 52b) que l&#x27;huile d&#x27;onction fut cachee avec l&#x27;arche, ensemble ; et puisqu&#x27;on compte l&#x27;arche, on devrait compter aussi l&#x27;huile d&#x27;onction ; il ecrit a ce sujet que c&#x27;est une difficulte qui subsiste (vois-y). Il me semble, avec l&#x27;aide du Ciel, que l&#x27;arche, lorsqu&#x27;elle fut cachee au premier Temple aux jours de Yochiyahou, ne fut pas comptee comme manquant au Temple, car elle fut cachee dans l&#x27;une des chambres a l&#x27;interieur du Temple et n&#x27;en sortit pas ; ceux qui la cacherent savent en quel lieu elle repose, aussi cela n&#x27;est-il pas compte comme un manque a l&#x27;epoque du premier Temple -- que m&#x27;importe qu&#x27;elle repose dans le Saint des Saints ou dans l&#x27;une des chambres, ces deux lieux etant dans le Temple ; et puisqu&#x27;ils savent en quel lieu elle repose, ils peuvent la ressortir du second lieu et la ramener au Saint des Saints s&#x27;ils le veulent, et &#x27;tout ce qui est apte au melange, l&#x27;absence de melange ne l&#x27;invalide pas&#x27; (Menahot 103b) -- c&#x27;est comme si elle reposait dans le Saint des Saints, et cela n&#x27;est pas compte comme un manque. Mais au second Temple, ceux qui savaient son emplacement etaient decedes, et ceux qui monterent au second Temple ne savaient pas ou elle reposait, de sorte qu&#x27;il etait impossible de la remettre a sa place : cela est compte comme un manque au second Temple s&#x27;agissant de l&#x27;arche. Cependant l&#x27;huile d&#x27;onction, cachee a l&#x27;epoque du premier Temple -- bien qu&#x27;il y ait ceux qui savent en quel lieu elle fut cachee -- neanmoins, puisqu&#x27;on en eut besoin pour oindre Yehoahaz a cause de la contestation de Yehoyakim et qu&#x27;on ne put ni la reveler ni l&#x27;apporter pour accomplir son oeuvre propre, son absence se fit sentir et fut manifeste ; c&#x27;est pourquoi, meme au premier Temple, sa dissimulation est comptee comme un manque, puisque sa raison d&#x27;etre est d&#x27;oindre par elle, et que, lorsqu&#x27;on en eut besoin, elle ne se trouva pas en leur main. On dut oindre Yehoahaz avec le baume pur (afarsemona dakhya), comme mentionne dans Horayot (12a). C&#x27;est pourquoi on ne la compte pas parmi les cinq (choses) dont l&#x27;absence ne se fit pas sentir au premier Temple, meme a sa fin. Et bien que, si l&#x27;huile d&#x27;onction s&#x27;etait trouvee aupres d&#x27;eux, peut-etre n&#x27;auraient-ils pas oint Yehoahaz avec elle, malgre cela c&#x27;est compte comme un manque, puisqu&#x27;on en eut besoin et qu&#x27;elle ne se trouva pas manifeste en leur main. Il ressort que le premier Temple, bati par le roi Salomon, la paix sur lui, etait complet (chalem) en ces cinq choses ; et il me semble, avec l&#x27;aide du Ciel, que cette qualite est allusionnee dans le nom Chelomo (Salomon), qui est &#x27;chalem he&#x27; (complet des cinq). Et il me semble que c&#x27;est pourquoi il est dit de Salomon (I Rois 5,12) &#x27;et son cantique fut de cinq et mille&#x27; : le nombre mille vise le Temple lui-meme, dont il est dit (Cant 4,4) &#x27;bati pour les trophees (talpiot), mille boucliers y sont suspendus&#x27;, et le nombre cinq restant au-dela du mille correspond aux cinq avantages mentionnes par lesquels le premier Temple etait superieur. Et ce qu&#x27;il dit, que la residence de la Chekhina (hachraat chekhina) manqua (au second Temple), n&#x27;entend pas dire qu&#x27;il n&#x27;y eut pas du tout de residence de la Chekhina -- cela est impossible, car meme lors de la destruction la Chekhina ne bougea pas du mur occidental (Chemot Rabba 2,2) ; mais en verite, dans la residence de la lumiere de la Chekhina il y a plusieurs degres, et le degre qui existait au premier Temple n&#x27;existait pas au second. De meme tu trouveras pour l&#x27;esprit saint (roua&#x27;h ha-kodech) : car la prophetie aussi est appelee du nom d&#x27;esprit saint, et le degre de prophetie du premier Temple n&#x27;existait pas au second. On dit : [oui], &#x27;elles existaient (mehava havou), c&#x27;est l&#x27;assistance (siyoua) qui n&#x27;assistait pas&#x27; [21b]. Il me semble, d&#x27;apres cela, que ce qui est dit dans Zevahim (61b) -- &#x27;le feu qui descendit aux jours de Salomon ne se retira point jusqu&#x27;a ce que vint Menache et le retira&#x27; -- ne veut pas dire qu&#x27;il le retira entierement, que le corps du feu se retira, mais que se retira la puissance de son action, comme on dit ici &#x27;elles existaient, c&#x27;est l&#x27;assistance qui n&#x27;assistait pas&#x27; : ainsi en fut-il aussi au premier Temple, depuis l&#x27;epoque de Menache jusqu&#x27;a la destruction. Et au sujet de l&#x27;absence des ourim ve-toumim, vois le Petah Einayim au nom du Rambam, (disant) qu&#x27;ils furent ecrits par (l&#x27;action) du Ciel ; il objecte : mais n&#x27;a-t-on pas dit dans la guemara qu&#x27;ils etaient graves au moyen du chamir ? (vois-y). Il me semble, avec l&#x27;aide du Ciel, que bien que ce fut par le chamir, ils avaient besoin d&#x27;un acte miraculeux venu du Ciel : car le chamir, sa nature et sa vertu sont de fendre de part en part, et il ne creuse pas legerement comme une ecriture ; or le fait qu&#x27;il y eut gravure a la maniere d&#x27;une ecriture etait par miracle, appele acte du Ciel. Et il me semble encore, sans meme cela, que l&#x27;action du chamir elle-meme est appelee &#x27;par (l&#x27;action) du Ciel&#x27;, puisque c&#x27;est une action de vertu (segoula) : car nos maitres ont dit qu&#x27;on entaille d&#x27;abord et qu&#x27;on leur montre le chamir, et (les pierres) se fendent d&#x27;elles-memes ; il se trouve donc que c&#x27;est une action de vertu et non naturelle, et toute action de vertu est appelee &#x27;par le Ciel&#x27;. Et ce qu&#x27;il dit &#x27;il y a six feux (chech echot)&#x27; -- il me semble, avec l&#x27;aide du Ciel, que &#x27;ech&#x27; (aleph-chin) forme les initiales de &#x27;ch-ch a-chot&#x27;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection de decompte : la michna 'ouvre' sur le Temple mais 'clot' sur des miracles de <b>Jerusalem</b> (serpent, hospitalite) -- il ne resterait alors que huit miracles proprement du Temple. Reponse : il existe <b>deux autres</b> miracles du Temple a integrer : la pluie n'eteignait jamais le feu de l'autel (a ciel ouvert), et la <b>colonne de fumee</b> montait droite, immobile sous tous les vents. On retrouve dix.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְתוּ לֵיכָּא? וְהָתַנְיָא רַב שְׁמַעְיָה בְּקַלְנְבוֹ: שִׁבְרֵי כְּלִי חֶרֶס, נִבְלָעִין בִּמְקוֹמָן, וְאָמַר אַבַּיֵּי: מוֹרָאָהּ, וְנוֹצָה, וְדִישּׁוּן מִזְבֵּחַ הַפְּנִימִי, וְדִישּׁוּן הַמְּנוֹרָה — נִבְלָעִין בִּמְקוֹמָן!</div>
+            <div class="fr"><p>Et il n&#x27;y en a pas davantage ? Mais Rav Chemaya n&#x27;a-t-il pas enseigne a Kalnevo : Les tessons de vaisselle de terre cuite etaient engloutis (nivla&#x27;in) sur place !</p><p>Et Abaye a dit : le jabot (moura), les plumes (notsa), les cendres de l&#x27;autel interieur (dichoun mizbeah ha-penimi) et les cendres de la menora -- etaient engloutis sur place !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּקַלְנְבוֹ</b> שֵׁם מָקוֹם:</div>
+          <div class="glose-fr">A Kalnevo - nom d&#x27;un lieu.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שִׁבְרֵי כְּלֵי חֶרֶס</b> שֶׁמְּבַשְּׁלִים בָּהֶן קָדְשֵׁי קָדָשִׁים וּבְלִיעָתָן נֶאֱסֶרֶת מִשּׁוּם נוֹתָר וּטְעוּנִין שְׁבִירָה כְּדִכְתִיב (וַיִּקְרָא ו׳:כ״א) וּכְלִי חֶרֶשׂ אֲשֶׁר תְּבֻושַּׁל בּוֹ יִשָּׁבֵר וּשְׁבִירָתוֹ בְּמָקוֹם קָדוֹשׁ כִּדְאָמְרִי&#x27; הָתָם בִּזְבָחִים בְּפֶרֶק דַּם חַטָּאת (זְבָחִים דַּף צג:) וְאִם אֵין נִבְלָעִין נִמְצְאוּ אַשְׁפַּתּוֹת שֶׁל שְׁבָרִים בָּעֲזָרָה:</div>
+          <div class="glose-fr">Les tessons de vaisselle de terre cuite - dans lesquels on cuit les offrandes tres saintes (kodchei kodachim), et dont l&#x27;absorption devient interdite au titre de notar, exigeant le bris, comme il est ecrit (Lev 6,21) &#x27;et le vase de terre dans lequel elle a ete cuite sera brise&#x27; ; et son bris (a lieu) en lieu saint, comme on le dit la, dans Zevahim au chapitre Dam Hatat (93b). Et si (les tessons) n&#x27;etaient pas engloutis, on trouverait des tas d&#x27;ordures de tessons dans la azara.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מֻורְאָה וְנוֹצָה</b> שֶׁל עוֹלַת הָעוֹף:</div>
+          <div class="glose-fr">Le jabot et les plumes - de l&#x27;holocauste d&#x27;oiseau (olat ha-of).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְדִישּׁוּן מִזְבֵּחַ הַפְּנִימִי וְדִישּׁוּן הַמְּנוֹרָה</b> בְּכָל בָּקָר נוֹתְנָן עִם תְּרוּמַת הַדֶּשֶׁן בַּמִּזְרָח שֶׁל כֶּבֶשׂ כְּדִתְנַן גַּבֵּי תְּרוּמַת הַדֶּשֶׁן (תָּמִיד פ&quot;א מִשְׁנָה ד) הִגִּיעַ לָרִצְפָּה הָפַךְ פָּנָיו לַצָּפוֹן וְהוֹלֵךְ בְּמִזְרָחוֹ שֶׁל כֶּבֶשׁ כְּעֶשֶׂר אַמּוֹת מָקוֹם שֶׁנּוֹתְנִין שָׁם מֻורְאָה וְנוֹצָה וְדִישּׁוּן מִזְבֵּחַ הַפְּנִימִי וְהַמְּנוֹרָה וּקְרָא נָמֵי דְּמֻורְאָה וְנוֹצָה הָכִי כְּתִיב וְהִשְׁלִיךְ אֹותָהּ אֵצֶל הַמִּזְבֵּחַ קֵדְמָה אֶל מְקוֹם הַדָּשֶׁן (וַיִּקְרָא א׳:ט״ז):</div>
+          <div class="glose-fr">Les cendres de l&#x27;autel interieur et les cendres de la menora - chaque matin on les depose avec le prelevement des cendres (teroumat ha-dechen) a l&#x27;est de la rampe (kevech), comme il est enseigne a propos de la teroumat ha-dechen (Tamid ch. 1 michna 4) : arrive au dallage, il tournait sa face vers le nord et marchait a l&#x27;est de la rampe, sur environ dix coudees, a l&#x27;endroit ou l&#x27;on depose le jabot, les plumes, les cendres de l&#x27;autel interieur et de la menora ; et le verset au sujet du jabot et des plumes est ecrit ainsi (Lev 1,16) : &#x27;il la jettera pres de l&#x27;autel, vers l&#x27;est, au lieu des cendres (mekom ha-dechen)&#x27;.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>נִבְלָעִין בִּמְקוֹמָן</b> פֵּירֵשׁ הָרַב פּוֹרָת דְּהוּא הַדִּין דִּישּׁוּן מִזְבֵּחַ הַחִיצוֹן וְאֵין נִרְאֶה לְרַבֵּינוּ תָּם דִּמְנָא לֵיהּ הַאי סְבָרָא כֵּיוָן דְּלָא חָשֵׁיב לֵיהּ בַּהֲדֵי הָנָךְ וְעוֹד הָא אָמְרִי&#x27; בְּפֶרֶק כָּל שָׁעָה (פְּסָחִים דַּף כו.) וּבְשִׁילְהֵי תְּמוּרָה (דַּף לד.) וְאֵפֶר הֶקְדֵּשׁ לְעוֹלָם אָסוּר בְּאוֹתָן שֶׁטְּעוּנִין גְּנִיזָה כִּדְתַנְיָא וּשְׁמוֹ בְּנַחַת וּשְׁמוֹ שֶׁלֹּא יְפַזֵּר אַלְמָא דְּלָא הָוֵי נִבְלָע בִּמְקוֹמָן מִדְּטָעוּן גְּנִיזָה מִיהוּ יֵשׁ לוֹמַר קְרָא לָאו אַנִּיסָּא סָמַךְ וה&quot;ק אִי לָאו הֲוָה נִיסָּא שֶׁיְּהֵא נִבְלָע בִּמְקוֹמָן טָעוּן גְּנִיזָה אִי נָמֵי נִרְאֶה לִי אִם חָפַר שָׁם וְהוֹצִיא אוֹתוֹ קָאָמַר דְּאֵפֶר הֶקְדֵּשׁ לְעוֹלָם אָסוּר וְכֵן פֵּירֵשׁ רַשִׁ&quot;י בְּסוֹף תְּמוּרָה:</div>
+          <div class="glose-fr">Engloutis sur place - le Rav Porat a explique qu&#x27;il en va de meme pour les cendres de l&#x27;autel exterieur ; mais cela ne parait pas juste a Rabbenou Tam, car d&#x27;ou tirerait-il cette assertion, puisque (la baraita) ne l&#x27;a pas comptee parmi celles-la ? En outre, nous disons au chapitre Kol Chaa (Pessahim 26a) et a la fin de Temoura (34a) que &#x27;la cendre du sacre est toujours interdite&#x27; pour celles qui exigent une genisa (enfouissement), comme il est enseigne &#x27;ve-samo (il la deposera) doucement&#x27; -- &#x27;ve-samo&#x27; : qu&#x27;il ne la disperse pas ; d&#x27;ou l&#x27;on voit qu&#x27;elle n&#x27;est pas engloutie sur place, puisqu&#x27;elle exige une genisa. Toutefois on peut dire que le verset ne s&#x27;appuie pas sur le miracle, et voici son sens : si ce n&#x27;etait le miracle qu&#x27;elle soit engloutie sur place, elle exigerait une genisa. Ou encore il me semble : (le verset) parle du cas ou l&#x27;on a creuse la et qu&#x27;on l&#x27;a ressortie -- car (dans ce cas) la cendre du sacre est toujours interdite ; ainsi l&#x27;a explique Rachi a la fin de Temoura.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle objection : il y aurait plus de dix miracles. On cuisait les <b>kodchei kodachim</b> (offrandes tres saintes) dans des vases de terre ; ces vases absorbaient la viande, qui devenait <b>notar</b> (residu interdit), imposant de briser le vase. Les tessons etaient miraculeusement engloutis dans le sol la meme, sans encombrer la azara. De meme le jabot et les plumes de l'holocauste d'oiseau, et les cendres de l'autel interieur et de la menora, etaient absorbes sur place plutot que transportes au-dehors.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">פְּסוּלֵי תְּלָתָא הָווּ? חַשְׁבִינְהוּ בְּחַד, אַפֵּיק תְּרֵי וְעַייֵּל תְּרֵי. אִי הָכִי, בְּלוּעִין נָמֵי תְּרֵי הָווּ? חַשְׁבִינְהוּ בְּחַד. חָסְרוּ לְהוּ! אִיכָּא נָמֵי אַחֲרִיתִי, דְּאָמַר רַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי: נֵס גָּדוֹל הָיָה נַעֲשָׂה בְּלֶחֶם הַפָּנִים, סִלּוּקוֹ כְּסִדּוּרוֹ, שֶׁנֶּאֱמַר: ״לָשׂוּם לֶחֶם חֹום בְּיוֹם הִלָּקְחוֹ״.</div>
+            <div class="fr"><p>Les invalidites etaient trois -- compte-les comme une (seule), retire-en deux et introduis-en deux (autres). Si c&#x27;est ainsi, les engloutis aussi etaient deux -- compte-les comme un (seul) : il en manque donc un !</p><p>Il y en a encore une autre, car Rabbi Yehochoua ben Levi a dit : un grand miracle se produisait avec le lehem ha-panim -- son retrait (etait) comme sa disposition (encore chaud), ainsi qu&#x27;il est dit (I Sam 21,7) &#x27;pour placer du pain chaud le jour ou on l&#x27;enleve&#x27;.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>פְּסוּלֵי תְּלָתָא הָווּ</b> פְּסוּל עֹומֶר וּשְׁתֵּי הַלֶּחֶם וְלֶחֶם הַפָּנִים תְּלָת נִיסֵּי חֲשַׁבְתִּינְהוּ:</div>
+          <div class="glose-fr">Les invalidites etaient trois - l&#x27;invalidite du omer, des deux pains et du lehem ha-panim : je les ai comptees comme trois miracles (or elles ne valent qu&#x27;un).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בָּלוֹעִין תְּרֵי הָווּ</b> דְּשִׁבְרֵי כְּלֵי חֶרֶס הֲוָה חַד וּמֻורְאָה וְנוֹצָה וְכָל הַנִּיתָּנִים שָׁם חַד הֲוָה:</div>
+          <div class="glose-fr">Les engloutis etaient deux - car les tessons de terre cuite font un, et le jabot, les plumes et tout ce qu&#x27;on depose la font un.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>סִילּוּקוֹ כְּסִידּוּרוֹ</b> כְּשֶׁמְּסַלְּקִין אוֹתוֹ עֲדַיִין הוּא חַם:</div>
+          <div class="glose-fr">Son retrait comme sa disposition - lorsqu&#x27;on le retire, il est encore chaud.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>חֹום בְּיוֹם הִלָּקְחוֹ</b> שֶׁהוּא חַם בַּיּוֹם שֶׁנִּלְקַח מִשָּׁם וְהַאי קְרָא בְּלֶחֶם הַפָּנִים כְּתִיב בְּסֵפֶר שְׁמוּאֵל:</div>
+          <div class="glose-fr">Chaud le jour ou on l&#x27;enleve - car il est chaud le jour ou on l&#x27;enleve de la ; et ce verset est ecrit au sujet du lehem ha-panim, dans le livre de Samuel.</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אִי הָכִי &#x27;בָּלוֹעִין&#x27; נָמֵי, תְּרֵי הָווּ. יֵשׁ לְהַקְשׁוֹת דְּקָארֵי לַהּ מַאי קָאָרֵי לַהּ וְהָאֵיךְ הִתְרַצֵּן שֶׁתֵּירֵץ אַפֵּיק תְּרֵי וְעַייֵּל תְּרֵי לֹא נִרְגָּשׁ בָּזֶה הַקֻּושְׁיָא כֵּיוָן דְּהוּא עַצְמוֹ קָאָמַר דִּתְלָתָא פְּסוּלֵי נֶחְשָׁבִים אֶחָד אֵיךְ יִסְבֹּור דִּתְרֵי בְּלוּעֵי נֶחְשָׁבִים בִּתְרֵי? וְנִרְאֶה לִי בס&quot;ד דְּהִתְרַצֵּן סָלְקָא דַעְתָּךְ דְּלָא אָמְרִינַן תְּלָתָא חֲשִׁיבִי כְּחַד אֶלָּא בְּהָנָךְ דְּפִיסּוּלֵי לְפִי שֶׁשְּׁלָשְׁתָּם לֹא הָיוּ נִסִּים בְּמַעֲשֶׂה בְּעַיִן אֶלָּא הַנֵּס הוּא בְּהַרְחָקַת הַנֶּזֶק שֶׁלֹּא יִזְדַּמֵּן הַפִּיסּוּל וְגַם עוֹד אֲפִילּוּ לְפִי הַשְׁעָרַת הַשֵּׂכֶל לֹא יִתְרָאֶה זֶה לְנֵס אֶלָּא בְּאֹורֶךְ הַזְּמַן וּמִשּׁוּם הָכִי לָא חֲשִׁיבֵי כָּל חַד נֵס גָּמוּר לַהֲבִיאָם לְמִנְיָן לְכָל חַד בְּאַפֵּיהּ נַפְשֵׁיהּ וְלָזֶה שְׁלָשְׁתָּם נֶחְשְׁבוּ בְּחַד נֵס בְּמִנְיַן הַנִּסִּים, אֲבָל תְּרֵי נִיסֵּי דִּבְלִיעָה כֵּיוָן שֶׁהֵם נִסִּים בְּמַעֲשֶׂה בְּעַיִן שֶׁנַּעֲשָׂה בְּגוּפָם מַעֲשֵׂה נֵס לְהִבָּלַע מֵאֲלֵיהֶן הֲרֵי כָּל חַד מִנַּייְהוּ הוּא נֵס גָּמוּר וּלְהָכִי אַף עַל גַּב דִּשְׁנֵיהֶם הוּא עִנְיַן בְּלִיעָה רְאוּיִים לָבֹא כָּל חַד לְמִנְיַן הַנִּסִּים בִּפְנֵי עַצְמוֹ וְאֵין נִכְלָלִים יַחַד כָּךְ עָלָה בְּדַעַת הַתָּרְצָן מֵעִיקָּרָא, אֲבָל הַמַּקְשָׁן לָא נִיחָא לֵיהּ בְּהַאי חִילּוּקָא וְסָבַר כֵּיוָן דְּתַרְוַוייְהוּ עִנְיַן בְּלִיעָה לָא שְׁנָא מֵהַךְ תְּלָתָא דְּפִיסּוּלֵי דְּחָשְׁבִינַן לְהוּ בְּחַד מִשּׁוּם דְּחַד עִנְיָינָא נִינְהוּ.</div>
+          <div class="glose-fr">Si c&#x27;est ainsi, les &#x27;engloutis&#x27; aussi etaient deux. Il y a lieu d&#x27;objecter : celui qui pose la question, comment peut-il la poser ? Comment celui qui a repondu &#x27;retire deux et introduis deux&#x27; n&#x27;a-t-il pas ressenti cette objection, puisque lui-meme dit que les trois invalidites comptent pour un -- comment penserait-il que les deux engloutis comptent pour deux ? Il me semble, avec l&#x27;aide du Ciel, que celui qui a repondu pensait qu&#x27;on ne dit &#x27;trois comptent pour un&#x27; que pour ces invalidites, parce que toutes trois n&#x27;etaient pas des miracles agissant sur une chose visible, mais un miracle d&#x27;eloignement du dommage -- que l&#x27;invalidite ne survienne pas -- et de plus, meme selon l&#x27;estimation de la raison, cela n&#x27;apparaitrait comme miracle que sur la duree ; c&#x27;est pourquoi chacune n&#x27;est pas comptee comme un miracle complet a inscrire pour elle-meme au compte, et toutes trois furent comptees comme un seul miracle. Mais les deux miracles d&#x27;engloutissement, puisqu&#x27;ils sont des miracles agissant sur une chose visible -- un acte de miracle se fit dans leur corps meme, qu&#x27;ils soient engloutis d&#x27;eux-memes -- chacun d&#x27;eux est un miracle complet, aussi, bien que tous deux soient affaire d&#x27;engloutissement, chacun merite de venir au compte des miracles pour lui-meme, sans etre inclus avec l&#x27;autre : ainsi pensait d&#x27;abord celui qui repondait. Mais celui qui objecte ne se satisfait pas de cette distinction et pense que, puisque tous deux relevent de l&#x27;engloutissement, ce n&#x27;est pas different des trois invalidites que l&#x27;on compte pour un parce qu&#x27;elles sont d&#x27;une meme affaire.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">נֵס גָּדוֹל נַעֲשָׂה בְּלֶחֶם הַפָּנִים, סִלּוּקוֹ כְּסִדּוּרוֹ. נִרְאֶה לִי בס&quot;ד לֶחֶם הַפָּנִים רֶמֶז לַתּוֹרָה שֶׁנִּקְרֵאת לֶחֶם וְהִיא מְזוֹן הַנֶּפֶשׁ וְרָאוּי שֶׁהָאָדָם יִשָּׁאֵר בְּהִתְלַהֲבוּת וְחֵשֶׁק הַתּוֹרָה בְּסוֹף הַלִּימּוּד כְּמוֹ הִתְחַיַּלְתְּ הַלִּימּוּד וְלָכֵן נַעֲשָׂה בּוֹ נֵס שֶׁיִּהְיֶה בְּעֵת סִלּוּקוֹ כְּמוֹ עֵת סִדּוּרוֹ, וְהַתּוֹרָה נִקְנֵית במ&quot;ח מַעֲלוֹת לְכָךְ הַנֵּס הָיָה שֶׁיִּשָּׁאֵר &#x27;חָם&#x27; שֶׁהוּא מ&quot;ח. בְּרַם יֵשׁ לְהַקְשׁוֹת אַמַּאי נָקֵיט כָּאן &#x27;נֵס גָּדוֹל&#x27; וַאֲפִילּוּ בְּנֵס אָרוֹן וּכְרוּבִים שֶׁהָיוּ פְּלָאִים יוֹתֵר לָא נָקֵיט נֵס גָּדוֹל וְכֵן בְּמֵ&quot;ם שֶׁבַּלּוּחוֹת נָמֵי לָא נָקֵיט נֵס גָּדוֹל וְאַמַּאי בְּלֶחֶם הַפָּנִים נָקֵיט &#x27;נֵס גָּדוֹל&#x27;? וְנִרְאֶה לִי בס&quot;ד דְּכָאן הָווּ תְּרֵי נִסִּים בְּבַת אַחַת שֶׁהָיָה נִשְׁאַר רַךְ וְלַח שֶׁלֹּא הָיָה מִתְקַשֶּׁה וּמִתְיַיבֵּשׁ וְגַם שֶׁהָיָה חַם הֲרֵי נֵס בְּתוֹךְ נֵס וְלָכֵן קָרֵי לֵיהּ &#x27;נֵס גָּדוֹל&#x27; דַּייְקָא, כִּי אוֹתִיּוֹת נֵס בְּמִילּוֹאָם כָּזֶה נ&quot; ן ס מ &quot; ך גַּם הַמִּלּוּי הוּא מִסְפַּר נֵס [110] וְזֶהוּ נֵס בְּתוֹךְ נֵס. וּלְפִי דִּבְרֵי הָרִיטְבָ&quot;א זַ&quot;ל הָיָה בּוֹ עוֹד נֵס אַחֵר שֶׁהָיָה יוֹצֵא מִמֶּנּוּ הֶבֶל תָּמִיד כְּמוֹ עֵת יְצִיאָתוֹ מִן הַתַּנּוּר הֲרֵי תְּלָתָא נִסִּים נִצְמָדִים יַחַד וּלְהָכִי קָרֵי לֵיהּ &#x27;נֵס גָּדוֹל&#x27;. וְנִרְאֶה לִי בס&quot;ד לִרְמֹוז שְׁתֵּי נִסִּים שֶׁל לַח וְחַם בְּאוֹתִיּוֹת לֶחֶם כִּי אוֹת ח&#x27; תְּחַבֵּרְנָה עִם הַלָּמֶ&quot;ד בִּלְבַד וְנִקְרָא לַח וְתַחֲבֹרְנָה עִם אוֹת מֵ&quot;ם בִּלְבַד וְנִקְרָא חָם וּלְכָךְ נִקְרָא לֶחֶם הַפָּנִים שֶׁיֵּשׁ בּוֹ שְׁנֵי מַשְׁמָעוּת שֶׁהֵם לַח וְחַם. וּלְפִי דִּבְרֵי הָרִיטְבָ&quot;א זַ&quot;ל שֶׁהָיָה יוֹצֵא מִמֶּנּוּ הֶבֶל נִרְאֶה לִי בס&quot;ד לְכָךְ קְרָאוֹ הַכָּתוּב בְּשֵׁם חַלָּה דִּכְתִיב בְּפָרָשַׁת אֱמֹור (וַיִּקְרָא כֹּד, ה) &#x27;וְאָפִיתָ אֹתָהּ שְׁתֵּים עֶשְׂרֵה חַלּוֹת שְׁנֵי עֶשְׂרֹנִים יִהְיֶה הַחַלָּה הָאַחַת&#x27; נִמְצָא קָרְאוּ חַלָּה לִרְמֹוז בּוֹ שְׁלֹשָׁה נִסִּים הַנִּזְכָּר כִּי חַלָּה רָאשֵׁי תֵּיבוֹת ח ם ל ח ה בַּל.</div>
+          <div class="glose-fr">Un grand miracle se produisait avec le lehem ha-panim, son retrait comme sa disposition. Il me semble, avec l&#x27;aide du Ciel, que le lehem ha-panim fait allusion a la Torah, appelee &#x27;pain&#x27; et qui est la nourriture de l&#x27;ame ; et il convient que l&#x27;homme demeure dans l&#x27;ardeur et le desir de la Torah a la fin de l&#x27;etude comme au debut. C&#x27;est pourquoi ce miracle s&#x27;y produisait : qu&#x27;a l&#x27;heure de son retrait il fut comme a l&#x27;heure de sa disposition. Et la Torah s&#x27;acquiert par 48 qualites (mem-het) ; aussi le miracle fut-il qu&#x27;il demeure &#x27;ham&#x27; (chaud), qui vaut 48. Mais il y a lieu d&#x27;objecter : pourquoi dire ici &#x27;un grand miracle&#x27;, alors que meme pour l&#x27;arche et les cheroubim, plus prodigieux encore, on ne dit pas &#x27;grand miracle&#x27;, et de meme pour le mem des Tables ? Pourquoi, pour le lehem ha-panim, dire &#x27;un grand miracle&#x27; ? Il me semble, avec l&#x27;aide du Ciel, que la se trouvaient deux miracles a la fois : il restait tendre et humide, sans durcir ni se dessecher, et il restait aussi chaud -- voici un miracle dans un miracle, aussi le nomme-t-on precisement &#x27;grand miracle&#x27;. Car les lettres de &#x27;nes&#x27; en leur epellation -- noun (noun-noun), samekh (samekh-mem-khaf) -- l&#x27;epellation aussi vaut &#x27;nes&#x27; [110] : c&#x27;est un miracle dans un miracle. Et selon les paroles du Ritva, de memoire benie, il s&#x27;y trouvait encore un autre miracle : une vapeur en sortait sans cesse, comme a l&#x27;instant de sa sortie du four -- voici trois miracles joints ensemble, aussi le nomme-t-on &#x27;grand miracle&#x27;. Et il me semble, avec l&#x27;aide du Ciel, faire allusion aux deux miracles de &#x27;humide (lah)&#x27; et &#x27;chaud (ham)&#x27; dans les lettres de &#x27;lehem&#x27; : car la lettre het, jointe au seul lamed, se lit &#x27;lah&#x27;, et jointe au seul mem se lit &#x27;ham&#x27; ; c&#x27;est pourquoi on l&#x27;appelle &#x27;lehem ha-panim&#x27;, qui a deux sens, &#x27;lah&#x27; et &#x27;ham&#x27;. Et selon les paroles du Ritva, de memoire benie, qu&#x27;une vapeur en sortait, il me semble, avec l&#x27;aide du Ciel, que c&#x27;est pourquoi l&#x27;Ecriture l&#x27;a nomme &#x27;hala&#x27;, comme il est ecrit dans la parachat Emor (Lev 24,5) &#x27;tu en cuiras douze pains (halot), deux issaron pour chaque pain (hala)&#x27; : il se trouve qu&#x27;on l&#x27;a nomme &#x27;hala&#x27; pour y faire allusion aux trois miracles mentionnes, car &#x27;hala&#x27; est l&#x27;acronyme de &#x27;ham, lah, hevel (vapeur)&#x27;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le coeur de la <b>comptabilite</b>. Les trois invalidites possibles (omer, deux pains, lehem ha-panim) sont de meme nature : elles ne comptent que pour <b>un</b> miracle. Cela libere deux places pour la pluie et la fumee. Mais alors les deux 'engloutis' (tessons ; jabot-plumes-cendres) devraient aussi n'en faire qu'<b>un</b> -- et il manque un miracle. On l'ajoute : le lehem ha-panim reste aussi <b>chaud</b> a son retrait (une semaine plus tard) qu'a sa mise en place.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְתוּ לֵיכָּא? וְהָאָמַר רַבִּי לֵוִי: דָּבָר זֶה מָסֹורֶת בְּיָדֵינוּ מֵאֲבוֹתֵינוּ: מְקוֹם אָרוֹן — אֵינוֹ מִן הַמִּדָּה. וְאָמַר רַבְנַאי אָמַר שְׁמוּאֵל: כְּרוּבִים — בְּנֵס הָיוּ עוֹמְדִין!</div>
+            <div class="fr"><p>Et il n&#x27;y en a pas davantage ? Mais Rabbi Levi n&#x27;a-t-il pas dit : ceci est une tradition en notre main, (recue) de nos peres : le lieu de l&#x27;arche (mekom aron) n&#x27;entre pas dans la mesure.</p><p>Et Ravnai a dit au nom de Chemouel : les cheroubim se tenaient par miracle !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מְקוֹם אָרוֹן אֵינוֹ מִן הַמִּדָּה</b> אֵינוֹ תּוֹפֵס לְמַעֵט מִמִּדַּת הֶחָלָל שֶׁל בַּיִת כְּלוּם דְּתַנְיָא אָרוֹן שֶׁעָשָׂה מֹשֶׁה יֵשׁ לוֹ עֶשֶׂר אַמּוֹת אֲוִיר לְכָל רוּחַ כְּשֶׁנִּיתַּן בְּאֶמְצַע בֵּית הַכַּפֹּורֶת וַהֲרֵי כָּל הֶחָלָל לֹא הָיָה אֶלָּא כ&#x27; עַל כ&#x27; שֶׁנֶּאֱמַר (מְלָכִים א ו׳:כ׳) וְלִפְנֵי הַדְּבִיר עֶשְׂרִים אַמָּה אֹורֶךְ וְעֶשְׂרִים אַמָּה רֹוחַב נִמְצָא שֶׁאֵין מְקוֹם הָאָרוֹן מְמַעֵט כְּלוּם:</div>
+          <div class="glose-fr">Le lieu de l&#x27;arche n&#x27;entre pas dans la mesure - il ne prend rien pour diminuer la mesure de l&#x27;espace interieur du (Saint des Saints), car il est enseigne : l&#x27;arche que fit Moise avait dix coudees d&#x27;espace de chaque cote lorsqu&#x27;elle etait placee au milieu du Saint des Saints ; or tout l&#x27;espace interieur n&#x27;etait que de vingt sur vingt, comme il est dit (I Rois 6,20) &#x27;et devant le devir : vingt coudees de long et vingt coudees de large&#x27; -- il ressort donc que le lieu de l&#x27;arche ne diminue rien.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּרוּבִין בְּנֵס הָיוּ עוֹמְדִין</b> גּוּפֵי הַכְּרוּבִים שֶׁעָשָׂה שְׁלֹמֹה עוֹמְדִין בָּאָרֶץ אֵצֶל אָרוֹן אֶחָד בַּצָּפוֹן וְאֶחָד בַּדָּרוֹם (שָׁם) וּבְכַנְפֵיהֶם עֶשְׂרִים אַמָּה פְּרוּשׂוֹת מִקִּיר אֶל קִיר כְּדִכְתִיב כְּנַף הַכְּרוּב חָמֵשׁ אַמּוֹת נִמְצְאוּ הַכְּנָפַיִם מַחֲזִיקִים אֶת כָּל הֶחָלָל נִמְצָא עֹובִי הַגּוּף אֵינוֹ מִן הַמִּדָּה:</div>
+          <div class="glose-fr">Les cheroubim se tenaient par miracle - les corps des cheroubim qu&#x27;a faits Salomon se tenaient a terre pres de l&#x27;arche, l&#x27;un au nord et l&#x27;un au sud (I Rois 6) ; et leurs ailes, vingt coudees, etaient deployees d&#x27;un mur a l&#x27;autre, comme il est ecrit &#x27;l&#x27;aile du cheroub, cinq coudees&#x27; -- il se trouve que les ailes remplissaient tout l&#x27;espace ; donc l&#x27;epaisseur des corps n&#x27;entre pas dans la mesure.</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">וְתוּ לֵיכָּא?! וְהָא אָמַר רַבִּי לֵוִי: דָּבָר זֶה מָסֹרֶת בְּיָדֵינוּ מֵאֲבוֹתֵינוּ: מְקוֹם אָרוֹן אֵינוֹ מִן הַמִּדָּה. הָא דְּלָא הִקְשָׁה זֶה קֹודֶם שֶׁהִקְשָׁה מֵהָא דְּתָנֵי רַב שֶׁמַּעְיָא? מִשּׁוּם דְּיָדַע מֵעִיקָּרָא שֶׁיֵּשׁ לְחַלֵּק בֵּין גַּוָּאֵי לְבָרָאֵי וְרַק עַתָּה שֶׁהִתְרַצֵּן הִכְנִיס בְּחֶשְׁבּוֹן לֶחֶם הַפָּנִים שֶׁהוּא דְּגַוַּאי הִקְשָׁה לוֹ מֵאָרוֹן וּכְרוּבִים וּפָשׁוּט. וּמַה שֶׁאָמַר וְהָא לֶחֶם הַפָּנִים נָמֵי נִסֵּי דְּבִרְאִי הוּא כָּתַב מָהַרְשָׁ&quot;א זַ&quot;ל קֹודֶשׁ קֳדָשִׁים דְּגַוַּאי לִפְנַי וְלִפְנִים דְּהַייְנוּ אָרוֹן וּכְרוּבִים שֶׁהָיוּ בְּקוֹדֶשׁ קָדָשִׁים מַה שֶׁאֵין כֵּן לֶחֶם הַפָּנִים בַּהֵיכָל, וּמִקְּרֵי בָּרָאֵי לְגַבֵּי קֹודֶשׁ קֳדָשִׁים עַד כָּאן. וּמַה שֶׁאָמַר עַל זֶה קְצָת קָשֶׁה מִשּׁוּם דְּיֵשׁ לְתָרֵץ עֲדִיפָה מֵהָא מְשַׁנֵּי לֵיהּ. אָמְנָם נִרְאֶה לִי בס&quot;ד דִּקְדּוּק זֶה בִּפְשִׁיטוּת עוֹד דְּלָא הֲוָה מָצֵי לְתָרֵץ בְּהָכִי דְּהָא מַה שֶׁאָמְרוּ לְחַלֵּק בֵּין גַּוָּאֵי וּבֵין בָּרָאֵי הַיְינוּ טַעְמָא מִשּׁוּם דְּגַוַּאי אֵין נִרְאִין לְעֵינֵי הַכֹּל וְלָאו אִיכָּא פִּרְסוּמֵי נִיסָּא כְּלָל וּלְפִי זֶה מִסְתַּבְּרָא דְּגַם נֵס שֶׁל לֶחֶם אֵין לְהַכְנִיסוֹ עִמָּהֶם דְּנֵס זֶה אֵינוֹ מְפֻורְסָם וְנִרְאֶה לְעֵינֵי הַכֹּל. וּבָזֶה נִיחָא לְתָרֵץ קֻושְׁיָא אַחֶרֶת דְּמַאי מְשַׁנֵּי לֶחֶם הַפָּנִים נֵס דְּבִרְאִי הוּא מֵהָא דְּאָמַר רַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי דְּמַגְבִּיהִין אוֹתוֹ בִּמְקוֹמוֹ בְּתוֹךְ הַהֵיכָל וּמַרְאִין לְעוֹלֵי רְגָלִים וַהֲלֹא כֵּיוָן דְּמַגְבִּיהִין אוֹתוֹ בְּתוֹךְ הַהֵיכָל וְאֵין מוֹצִיאִין אוֹתוֹ חוּץ לַהֵיכָל עוֹדֶנּוּ חֲשִׁיב נֵס דְּגַוַּאי? וּבָזֶה נִיחָא דְּטַעַם הַחִילּוּק בֵּין גַּוָּאֵי לְבָרָאֵי לָאו מִצַּד הַמָּקוֹם אֶלָּא מִצַּד הַיְּדִיעָה וְגִילּוּי וּפִרְסוּם הַנֵּס הוּא כִּי כֵּיוָן שֶׁהוּא לִפְנִים אֵין הַנֵּס גָּלוּי וְנוֹדַע וּמְפֻורְסָם לְעֵינֵי הַכֹּל וְלָכֵן גַּבֵּי לֶחֶם הַפָּנִים אַחַר שֶׁאָמַר שֶׁהֵם מַגְבִּיהִין אוֹתוֹ לְהַרְאוֹתוֹ לְעוֹלֵי רְגָלִים הָעוֹמְדִים בַּחוּץ נִמְצָא נֵס שֶׁלּוֹ נוֹדַע וְגָלוּי הוּא וְלָכֵן נֶחְשָׁב בִּכְלַל נִסִּים דְּבִרְאִי. וְרָאִיתִי לְהָרַב בִּרְכַּת הַזֶּבַח זַ&quot;ל בִּמְנָחוֹת דַּף כ&quot;ט שֶׁהֵעִיר בְּדִבְרֵי הַתּוֹסָפוֹת זַ&quot;ל שָׁם וְזַ&quot;ל לֹא יָדַעְתִּי מְנָא לֵיהּ דִּילְמָא הָיָה הַנֵּס שֶׁהָיָה חָם גַּם מֵעֶרֶב שַׁבָּת שֶׁנֶּאֱפָה עַד הִלָּקְחוֹ? וְשֶׁמָּא דְּדָייְקִי מִלְּשׁוֹן הַגְּמָרָא מִדְּקָאָמַר &#x27;כְּסִדּוּרוֹ&#x27; וְלֹא אָמַר &#x27;כִּלְקִיחָתוֹ&#x27; מֵהַתַּנּוּר וְהָרַב צֹאן קָדָשִׁים הֵבִיא גַּם כֵּן קֻושְׁיָא זוֹ וְתֵירְצָהּ בְּאֹופֶן אַחֵר יְעֻויַּן שָׁם. וְלִי אֲנָא עָבְדָא נִרְאֶה לִי בס&quot;ד לְתָרֵץ קֻושְׁיָא זוֹ דְּהַתּוֹסָפוֹת דָּייְקִי הָא מִגְּמָרָא דִּידַן הָכָא דְּפָרִיךְ &#x27;וְהָא לֶחֶם הַפָּנִים נָמֵי, נִסֵּי דְּגַוַּאי הוּא&#x27; וּמְשַׁנֵּי דְּאָמַר רַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי דְּמַרְאִין אוֹתוֹ לְעוֹלֵי רְגָלִים וּלְהָכִי חֲשִׁיב דְּבִרְאִי וְאִם שֶׁהָיָה נִשְׁאַר חַם אַחַר יְרִידָתוֹ מִן הַתַּנּוּר בְּעֶרֶב שַׁבָּת עַד יוֹם הַשַּׁבָּת בַּבֹּוקֶר שֶׁהָיוּ מְסַדְּרִים אוֹתוֹ אִם כֵּן נִמְצָא נַעֲשָׂה בּוֹ הַנֵּס בִּהְיוֹתוֹ חוּץ לַהֵיכָל דְּרוֹאִין שֶׁנִּשְׁאַר חַם מִן עֶרֶב שַׁבָּת עַד יוֹם שַׁבָּת בַּבֹּוקֶר וּמַאי פָּרֵיךְ הָכָא וְהֻוצְרַךְ לְהָבִיא הָא דְּרַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי אֶלָּא וַדַּאי לֹא הָיָה נַעֲשָׂה נֵס שֶׁל הַחֹום בַּלֶּחֶם אֶלָּא רַק בְּשַׁבָּת בַּבֹּוקֶר כְּשֶׁהָיוּ מְסַדְּרִין אוֹתוֹ בַּהֵיכָל דְּנַעֲשָׂה חַם מֵאֵילָיו וְנִשְׁאַר חֹום זֶה בּוֹ עַד עֵת סִלּוּקוֹ בַּשַּׁבָּת הַבָּאָה. וְאֵין לוֹמַר דְּאוּלַי הָיוּ מַצְנִיעִין אוֹתוֹ אַחַר אֲפִיָּה בְּעֶרֶב שַׁבָּת אֵצֶל חֹום הַתַּנּוּר וְהָיָה מְקַבֵּל מֵחֹום הַתַּנּוּר וְהָיָה מִשְׁתַּמֵּר חֹום שֶׁלּוֹ בּוֹ בְּטֶבַע וְלֹא בְּנֵס שֶׁהָיָה נִשְׁאַר מֻוצְנָע אֵצֶל חֹום הַתַּנּוּר עַד יוֹם שַׁבָּת בַּבֹּוקֶר, דְּזֶה אֵינוֹ דְּהָא בַּגְּמָרָא פ&quot;ד דְּתָמִיד (תָּמִיד לא:) אִיתָא שְׁנֵי שֻׁלְחָנוֹת הָיוּ בָּאוּלָם מִבִּפְנִים עַל פֶּתַח הַבַּיִת אֶחָד שֶׁל שַׁיִשׁ וְאֶחָד שֶׁל זָהָב וְעַל אוֹתוֹ שֶׁל שַׁיִשׁ מַנִּיחִים לֶחֶם פָּנִים בִּכְנִיסָתוֹ וְכוּ&#x27; וּפָרִיךְ וְנֶעֶבְדֵי דְּכֶסֶף וּמְשַׁנֵּי מִפְּנֵי שֶׁהוּא מַרְתִּיחַ אֶת הַלֶּחֶם וּמְחַמְּמוֹ וּמְמַהֵר לְהִתְעַפֵּשׁ עַיֵּין שָׁם וְעַייֵּן תּוֹסְפוֹת יוֹם טוֹב זַ&quot;ל בִּמְנָחוֹת פי&quot;א מ&quot;ז יְעֻויַּן שָׁם, וּלְפִי זֶה נִמְצָא הַלֶּחֶם אַחַר אֲפִיָּה הָיוּ מַנִּיחִין אוֹתוֹ עַד שְׁעַת סִידּוּרוֹ בַּבֹּוקֶר עַל שֻׁלְחָן שֶׁל שַׁיִשׁ שֶׁיֵּשׁ בַּפֶּתַח וְלֹא אֵצֶל הַתַּנּוּר. וְאֵין לוֹמַר שֶׁהָיוּ מַנִּיחִים עַל שֻׁלְחָן שֶׁל שַׁיִשׁ רֶגַע אֶחָד בַּבֹּוקֶר קֹודֶם סִידּוּר דְּוַדַּאי אֵין לָחוּשׁ עַל חֹום בְּזֶה הָרֶגַע לַעֲשׂוֹת הַשֻּׁלְחָן שֶׁל שַׁיִשׁ וְלֹא שֶׁל כֶּסֶף מִפְּנֵי שֶׁהוּא מַרְתִּיחַ וְיֵשׁ לְהַרְחִיב הַדְּבָרִים עוֹד בְּכָל זֶה וְאֵין לִי פְּנַאי עַתָּה. וְדַע דְּאֵין לְהַקְשׁוֹת לְמַאי הֻוצְרַךְ לְהוֹכִיחַ דַּחֲשִׁיב נֵס בָּרָאֵי מֵהָא דְּרַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי דְּמַרְאִין אוֹתוֹ לְעוֹלֵי רְגָלִים תִּיפּוֹק לִי כְּשֶׁמּוֹצְאִין אוֹתוֹ בְּכָל שַׁבָּת לְחֶלְקוֹ לַכֹּהֲנִים בְּלִשְׁכַּת הַגָּזִית הָיוּ רוֹאִין אוֹתוֹ עוֹדֶנּוּ חַם וְזֶה הָיָה בַּחוּץ, דְּנִרְאֶה לִי דְּאֵין זוֹ קוּשְׁיָא דְּאֶפְשָׁר שֶׁלֹּא הָיָה הַנֵּס שֶׁל הַחֹום בַּלֶּחֶם אֶלָּא רַק בְּעוֹדֶנּוּ בַּהֵיכָל וְאַחַר שֶׁיּוֹצִיאוּהוּ מֵהַהֵיכָל יִתְקָרֵר תֶּכֶף וּמִיָּד כִּי כְּמוֹ שֶׁהַחֹום בָּא אֵלָיו בְּנֵס כֵּן יוֹצֵא מִמֶּנּוּ בְּנֵס תֵּכֶף וְלֹא יִסְתַּלֵּק בַּהַדְרָגוֹת כְּחֹום הַטִּבְעִי.</div>
+          <div class="glose-fr">Et il n&#x27;y en a pas davantage ?! Mais Rabbi Levi a dit : ceci est une tradition en notre main, de nos peres : le lieu de l&#x27;arche n&#x27;entre pas dans la mesure. Pourquoi (la guemara) n&#x27;a-t-elle pas souleve cette objection avant celle tiree de l&#x27;enseignement de Rav Chemaya ? Parce qu&#x27;elle savait des le depart qu&#x27;il y a lieu de distinguer entre le dedans (gawa&#x27;i) et le dehors (bara&#x27;i) ; ce n&#x27;est que maintenant, ou celui qui repond a inclus dans le compte le lehem ha-panim qui est du dedans, qu&#x27;elle lui objecte de l&#x27;arche et des cheroubim -- et c&#x27;est simple. Et sur ce qu&#x27;il dit &#x27;mais le lehem ha-panim aussi est un miracle du dehors&#x27;, le Maharcha, de memoire benie, a ecrit : le Saint des Saints est le &#x27;dedans du dedans&#x27; (lifnai ve-lifnim), soit l&#x27;arche et les cheroubim qui etaient dans le Saint des Saints, tandis que le lehem ha-panim est dans le Hekhal -- il est donc appele &#x27;dehors&#x27; par rapport au Saint des Saints. Et il a dit la-dessus que c&#x27;est un peu difficile, car il y a a repondre mieux que ce qu&#x27;il lui a repondu. Toutefois il me semble, avec l&#x27;aide du Ciel, une precision plus simple encore : (la guemara) n&#x27;aurait pas pu repondre ainsi (comme le Maharcha), car ce qu&#x27;on a dit pour distinguer entre le dedans et le dehors, sa raison est que le dedans n&#x27;est pas visible aux yeux de tous et qu&#x27;il n&#x27;y a la aucun pirsoumei nissa (publicite du miracle) ; et selon cela il serait logique que le miracle du pain non plus ne soit pas inclus avec eux, car ce miracle n&#x27;est ni celebre ni visible aux yeux de tous. Par la se resout une autre difficulte : comment repond-il que le lehem ha-panim est un miracle du dehors a partir de ce que dit Rabbi Yehochoua ben Levi, qu&#x27;on l&#x27;elevait sur place, a l&#x27;interieur du Hekhal, et qu&#x27;on le montrait aux pelerins ? Puisqu&#x27;on l&#x27;elevait a l&#x27;interieur du Hekhal sans le sortir dehors, il serait encore compte comme un miracle du dedans ! Par la se resout (la difficulte) : la raison de distinguer entre dedans et dehors ne tient pas au lieu mais a la connaissance, a la revelation et a la publicite du miracle ; car du fait qu&#x27;il est a l&#x27;interieur, le miracle n&#x27;est ni revele ni connu ni celebre aux yeux de tous ; c&#x27;est pourquoi, pour le lehem ha-panim, apres qu&#x27;on a dit qu&#x27;on l&#x27;elevait pour le montrer aux pelerins qui se tiennent au-dehors, il se trouve que son miracle est connu et revele, aussi est-il compte parmi les miracles du dehors. Et j&#x27;ai vu le Rav Birkat ha-Zevah, de memoire benie, dans Menahot (folio 29), qui a remarque dans les paroles des Tossefot, de memoire benie, ainsi : je ne sais d&#x27;ou ils tirent (que le miracle n&#x27;etait pas plutot) qu&#x27;il restait chaud depuis la veille de Chabbat ou il fut cuit jusqu&#x27;a son retrait ? Et peut-etre le deduisent-ils du langage de la guemara, du fait qu&#x27;elle dit &#x27;comme sa disposition&#x27; et non &#x27;comme sa prise (du four)&#x27; ; et le Rav Tson Kodachim a lui aussi apporte cette difficulte et l&#x27;a resolue autrement (vois-y). Quant a moi, le serviteur, il me semble, avec l&#x27;aide du Ciel, resoudre cette difficulte des Tossefot : ils la deduisent de notre guemara ici, qui objecte &#x27;mais le lehem ha-panim aussi est un miracle du dedans&#x27; et repond, d&#x27;apres Rabbi Yehochoua ben Levi, qu&#x27;on le montrait aux pelerins et qu&#x27;ainsi il est compte du dehors. Or s&#x27;il restait chaud apres sa sortie du four la veille de Chabbat jusqu&#x27;au matin du Chabbat ou on le disposait, alors le miracle se serait produit hors du Hekhal -- on verrait qu&#x27;il reste chaud depuis la veille de Chabbat jusqu&#x27;au matin du Chabbat -- et qu&#x27;objecterait-elle ici, et pourquoi aurait-il fallu apporter (l&#x27;enseignement) de Rabbi Yehochoua ben Levi ? Force est donc que le miracle de la chaleur du pain ne se produisait qu&#x27;au matin du Chabbat, lorsqu&#x27;on le disposait dans le Hekhal : il devenait chaud de lui-meme, et cette chaleur demeurait en lui jusqu&#x27;au moment de son retrait, le Chabbat suivant. Et l&#x27;on ne peut dire qu&#x27;on le mettait peut-etre a l&#x27;abri, apres cuisson la veille de Chabbat, aupres de la chaleur du four, de sorte qu&#x27;il en recevait la chaleur et la conservait par nature et non par miracle, demeurant a l&#x27;abri pres du four jusqu&#x27;au matin du Chabbat -- car il n&#x27;en est rien : dans la guemara, au chapitre 4 de Tamid (31b), il est dit qu&#x27;il y avait deux tables dans le Oulam, a l&#x27;interieur, a l&#x27;entree du Bayit, l&#x27;une de marbre et l&#x27;une d&#x27;or, et sur celle de marbre on posait le lehem ha-panim a son entree, etc. ; et (la guemara) objecte : qu&#x27;on la fasse d&#x27;argent ! et repond : parce que (l&#x27;argent) chauffe le pain, le rechauffe et hate sa moisissure (vois-y, et vois le Tossefot Yom Tov, Menahot ch. 11 michna 7). Selon cela, il se trouve qu&#x27;apres cuisson on posait le pain, jusqu&#x27;a l&#x27;heure de sa disposition au matin, sur la table de marbre qui est a l&#x27;entree, et non pres du four. Et l&#x27;on ne peut dire qu&#x27;on le posait sur la table de marbre un seul instant, le matin, avant la disposition -- car alors il n&#x27;y aurait pas a craindre pour un instant de chaleur, au point de faire la table en marbre plutot qu&#x27;en argent parce que celui-ci chauffe ; et il y aurait encore a developper tout ceci, mais je n&#x27;ai pas le loisir maintenant. Et sache qu&#x27;il n&#x27;y a pas lieu d&#x27;objecter : pourquoi a-t-il fallu prouver qu&#x27;il compte comme miracle du dehors a partir de Rabbi Yehochoua ben Levi (qu&#x27;on le montrait aux pelerins) ? Qu&#x27;on le deduise du fait que, chaque Chabbat, lorsqu&#x27;on le trouvait pour le partager entre les cohanim dans la lichkat ha-gazit, on le voyait encore chaud, et cela etait au-dehors ! Il me semble que ce n&#x27;est pas une objection : il se peut que le miracle de la chaleur du pain ne fut que tant qu&#x27;il etait dans le Hekhal, et qu&#x27;apres l&#x27;avoir sorti du Hekhal il refroidissait aussitot -- car de meme que la chaleur lui venait par miracle, de meme elle le quittait par miracle, sur-le-champ, sans se retirer par degres comme la chaleur naturelle.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">מְקוֹם אָרוֹן אֵינוֹ מִן הַמִּדָּה. נִרְאֶה לִי בס&quot;ד הַטַּעַם שֶׁעָשָׂה נֵס זֶה בָּאָרוֹן שֶׁבּוֹ הַלּוּחוֹת שֶׁשָּׁם הַתּוֹרָה לִרְמֹוז לָאָדָם כָּל מַה שֶׁיַּעֲשֶׂה הוֹצָאוֹת מִן מָמוֹנוֹ בִּשְׁבִיל תַּלְמוּד תּוֹרָה אֵינוֹ נֶחְסָר מִן הַקִּצְבָּה שֶׁל הַמְּזוֹנוֹת שֶׁקּוֹצְבִים לוֹ בְּיוֹם רֹאשׁ הַשָּׁנָה וְלָכֵן הָאָרוֹן שֶׁבּוֹ הַתּוֹרָה אֵינוֹ לוֹקֵחַ מִן הַמָּקוֹם וְאֵינוֹ מְחַסֵּר מִמֶּנּוּ כְּלוּם! וּמַה שֶׁהָיוּ הַכְּרוּבִים גַּם כֵּן בְּנֵס עוֹמְדִים שֶׁאֵין לוֹקְחִים שִׁיעוּר מִן הַמָּקוֹם שֶׁעוֹמְדִים בּוֹ, גַּם בָּזֶה יֵשׁ רֶמֶז לְיִשְׂרָאֵל כִּי יָדוּעַ שֶׁהַכְּרוּבִים רוֹמְזִים לִכְלָלוּת יִשְׂרָאֵל זְכָרִים וּנְקֵבוֹת וְאַף עַל פִּי שֶׁעָשׂוּ לָקַח עוֹלָם הַזֶּה אֵין יִשְׂרָאֵל לוֹקְחִים מֵחֶלְקוֹ כְּלוּם אֶלָּא נִזּוֹנִים בְּנֵס מִן הַבְּרָכָה הַיְּתֵירָה הַבָּאָה לָעוֹלָם בִּזְכוּתָם וְלָכֵן אֵין לְעֵשָׂו עֲלֵיהֶם טַעֲנָה וּתְבִיעָה דְּאֵין מְחַסְּרִים מִמֶּנּוּ כְּלוּם.</div>
+          <div class="glose-fr">Le lieu de l&#x27;arche n&#x27;entre pas dans la mesure. Il me semble, avec l&#x27;aide du Ciel, la raison pour laquelle ce miracle se fit pour l&#x27;arche, qui contient les Tables ou est la Torah : (c&#x27;est) pour faire allusion a l&#x27;homme que tout ce qu&#x27;il depense de son argent en faveur de l&#x27;etude de la Torah n&#x27;est pas retranche du budget de subsistance qui lui est alloue au jour de Roch Hachana ; c&#x27;est pourquoi l&#x27;arche, ou est la Torah, ne prend rien du lieu et n&#x27;en diminue rien ! Et le fait que les cheroubim se tenaient aussi par miracle, ne prenant aucune mesure du lieu ou ils se tenaient, comporte aussi une allusion pour Israel : car l&#x27;on sait que les cheroubim font allusion a l&#x27;ensemble d&#x27;Israel, males et femelles ; et bien qu&#x27;Esav ait pris ce monde-ci, Israel ne prend rien de sa part mais est nourri par miracle, de la benediction supplementaire qui vient au monde par leur merite ; aussi Esav n&#x27;a-t-il contre eux ni grief ni reclamation, car ils ne lui retranchent rien.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Encore des miracles surnumeraires, tous deux dans le Saint des Saints. L'<b>arche</b> n'occupait aucune place dans la mesure : le Saint des Saints faisait 20 x 20 coudees, et il restait pourtant 10 coudees de vide de chaque cote de l'arche. Les <b>cheroubim</b> de Salomon avaient une envergure de 20 coudees remplissant la salle d'un mur a l'autre -- leurs corps ne prenaient donc aucune coudee mesuree : un miracle.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 460 400" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="460" height="400" fill="#fffdf8"/>
+  <text x="230" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1917">Le lieu de l'arche n'entre pas dans la mesure</text>
+  <text x="230" y="42" text-anchor="middle" font-size="10.2" fill="#57534e">Saint des Saints : 20 x 20 coudees. Pourtant 10 coudees de vide de chaque cote de l'arche.</text>
+
+  <!-- salle -->
+  <rect x="80" y="70" width="300" height="300" fill="#fdf6ec" stroke="#78716c" stroke-width="2"/>
+  <text x="230" y="60" text-anchor="middle" font-size="10.6" fill="#334155">20 coudees</text>
+  <text x="66" y="224" text-anchor="middle" font-size="10.6" fill="#334155" transform="rotate(-90 66 224)">20 coudees</text>
+
+  <!-- arche au centre -->
+  <rect x="205" y="195" width="50" height="50" fill="#fcd34d" stroke="#b45309" stroke-width="2"/>
+  <text x="230" y="225" text-anchor="middle" font-size="9.6" font-weight="700" fill="#78350f">arche</text>
+
+  <!-- cotes 10 -->
+  <line x1="80" y1="220" x2="205" y2="220" stroke="#2563eb" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <text x="140" y="214" text-anchor="middle" font-size="9.6" fill="#1e40af">10 coudees</text>
+  <line x1="255" y1="220" x2="380" y2="220" stroke="#2563eb" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <text x="318" y="214" text-anchor="middle" font-size="9.6" fill="#1e40af">10 coudees</text>
+
+  <text x="230" y="392" text-anchor="middle" font-size="10.2" fill="#7f1d1d">10 + 10 = 20 sans l'arche : elle n'occupe aucune coudee de la mesure -- miracle. De meme les cheroubim (ailes 20 coudees, mur a mur).</text>
+</svg></div><div class="svg-cap">20 = 10 + 10 sans l&#x27;arche : elle n&#x27;occupe aucune coudee de la mesure.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">נִיסֵּי דְּבָרָאֵי — קָא חֲשִׁיב, נִיסֵּי דְּגַוַּאי — לָא קָא חֲשִׁיב. אִי הָכִי, לֶחֶם הַפָּנִים נָמֵי נִיסֵּי דְגַוַּאי הוּא! לֶחֶם הַפָּנִים נִיסֵּי דְבָרַאי הוּא, דְּאָמַר רֵישׁ לָקִישׁ: מַאי דִכְתִיב ״עַל הַשֻּׁלְחָן הַטָּהוֹר״, טָהוֹר — מִכְּלָל שֶׁהוּא טָמֵא,</div>
+            <div class="fr"><p>Les miracles de l&#x27;exterieur (bara&#x27;i) -- il les compte ; les miracles de l&#x27;interieur (gawa&#x27;i) -- il ne les compte pas. Si c&#x27;est ainsi, le lehem ha-panim aussi est un miracle de l&#x27;interieur !</p><p>Le lehem ha-panim est un miracle de l&#x27;exterieur, car Rech Lakich a dit : que signifie ce qui est ecrit (Lev 24,6) &#x27;sur la table pure (ha-tahor)&#x27; ? &#x27;Pure&#x27; -- cela implique qu&#x27;elle peut devenir impure (tame),</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּבִרְאִי</b> מִבַּחוּץ בָּעֲזָרָה נִסִּים הַיְּדוּעִים לַכֹּל:</div>
+          <div class="glose-fr">De l&#x27;exterieur - au-dehors, dans la azara : des miracles connus de tous.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִכְּלָל שֶׁהוּא טָמֵא</b> שֶׁמְּקַבֵּל טֻומְאָה:</div>
+          <div class="glose-fr">Cela implique qu&#x27;elle est (susceptible d&#x27;)impurete - qu&#x27;elle recoit la toumaa (impurete).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La resolution de principe : le tana ne compte que les miracles <b>visibles du dehors</b> (bara'i), objets de <b>pirsoumei nissa</b> (publicite du miracle) ; ceux caches a l'interieur du Sanctuaire (gawa'i), comme l'arche et les cheroubim, ne comptent pas. Objection : le lehem ha-panim aussi est interieur ! Reponse : il compte comme 'dehors' -- Rech Lakich deduit de <b>'la table pure'</b> que la table pouvait devenir impure (donc elle se soulevait pleine et etait montree aux pelerins). Le miracle etait donc public. (La demonstration se poursuit en 21b.)</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Yoma_20b.html">&lsaquo; Yoma 20b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

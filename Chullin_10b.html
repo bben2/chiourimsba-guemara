@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chullin 10b — la halakha du couteau ebreche, et la source du principe de presomption (chazaka)</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Chullin 10b — la halakha du couteau ebreche, et la source du principe de presomption (chazaka)</h1>
+    <div class="ref">Chullin 10b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Chullin_10a.html">&lsaquo; Chullin 10a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Chullin_11a.html">Chullin 11a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> La Guemara tranche la dispute du couteau ebreche : la halakha est comme Rav Houna lorsqu&#x27;il n&#x27;a pas brise d&#x27;os (invalide), et comme Rav Hisda lorsqu&#x27;il a brise un os (valable, l&#x27;ebrechure etant attribuee a l&#x27;os). On rapporte que Rav Yossef declara terefa jusqu&#x27;a treize betes, et que Rav Kahana exige un examen du couteau entre chaque bete.</p><p>Un seul temoin etant credible en matiere d&#x27;interdits, l&#x27;abatteur n&#x27;a pas besoin de faire valider le couteau par un sage — si ce n&#x27;est, au debut, par deference pour le sage (Rabbi Yohanan). La Guemara cherche alors la source du principe &#x27;etablis la chose sur sa presomption&#x27; (oki milta a-chezkei) : Rabbi Yonatan la deduit de la lepre des maisons, ou le pretre met la maison en quarantaine apres etre sorti, bien que la plaie ait pu retrecir entre-temps.</p><p>Rav Aha bar Yaakov objecte (il sortirait a reculons), Abaye le refute par deux arguments, Rava repond a Abaye (le grand pretre a Yom Kippour ; la maison sombre), et une braita est enseignee contre Rav Aha bar Yaakov.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 256" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="256" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">D'ou vient le principe de presomption (chazaka) ?</text>
+  <rect x="60" y="36" width="600" height="34" rx="8" fill="#eef2ff" stroke="#3730a3"/>
+  <text x="360" y="58" text-anchor="middle" font-size="11.5" font-style="italic" fill="#3730a3">Lev 14:38 — 'Le pretre sortira de la maison... et fermera la maison sept jours'</text>
+  <rect x="40" y="84" width="190" height="56" rx="9" fill="#f5f5f4" stroke="#a8a29e"/>
+  <text x="135" y="106" text-anchor="middle" font-size="11.5" fill="#292524">1. Il voit la plaie</text>
+  <text x="135" y="124" text-anchor="middle" font-size="10.5" fill="#78716c">(taille minimale : ke-gris)</text>
+  <rect x="265" y="84" width="190" height="56" rx="9" fill="#f5f5f4" stroke="#a8a29e"/>
+  <text x="360" y="106" text-anchor="middle" font-size="11.5" fill="#292524">2. Il sort de la maison</text>
+  <rect x="490" y="84" width="190" height="56" rx="9" fill="#f5f5f4" stroke="#a8a29e"/>
+  <text x="585" y="106" text-anchor="middle" font-size="11.5" fill="#292524">3. Quarantaine 7 jours</text>
+  <text x="232" y="116" text-anchor="middle" font-size="15" fill="#a8a29e">-&gt;</text>
+  <text x="457" y="116" text-anchor="middle" font-size="15" fill="#a8a29e">-&gt;</text>
+  <rect x="60" y="156" width="600" height="40" rx="9" fill="#fdeaea" stroke="#b91c1c"/>
+  <text x="360" y="181" text-anchor="middle" font-size="11.5" fill="#b91c1c">Mais pendant qu'il sortait, la plaie a pu RETRECIR sous la taille minimale...</text>
+  <rect x="60" y="206" width="600" height="40" rx="9" fill="#eaf6ec" stroke="#15803d"/>
+  <text x="360" y="231" text-anchor="middle" font-size="11.5" font-weight="700" fill="#15803d">On enferme quand meme -&gt; on ETABLIT la plaie sur sa presomption (oki milta a-chezkei)</text>
+</svg></div>
+          <figcaption>La derivation du principe de presomption a partir de la lepre des maisons (segments 6-7).</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּמַאי שְׁנָא? הָתָם אִיתְיְלִידָא בַּהּ רֵיעוּתָא בִּבְהֵמָה, הָכָא סַכִּין אִיתָּרְעַאי, בְּהֵמָה לָא אִיתָּרְעַאי.</div>
+            <div class="fr"><p>Et qu&#x27;y a-t-il de different ? La-bas (doute d&#x27;arret / d&#x27;appui), une suspicion s&#x27;est manifestee dans la bete ; ici (doute sur le couteau), le couteau a ete suspecte, [mais] la bete n&#x27;a pas ete suspectee.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמַאי שְׁנָא</b> הָא סָפֵק וְהָא סָפֵק:</div>
+          <div class="glose-fr">Et qu&#x27;y a-t-il de different — celui-ci [est] un doute et celui-la [est] un doute.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Pourquoi distinguer doute de chehiya/derassa et doute du couteau (les deux sont des doutes) ? Reponse : pour la <b>chehiya/derassa</b>, la suspicion nait <b>dans la bete</b> (l'acte d'abattage lui-meme) -&gt; invalide ; pour le <b>couteau ebreche</b>, la suspicion est sur le <b>couteau</b>, pas sur la bete -&gt; valable (Rav Hisda).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְהִילְכְתָא כְּוָותֵיהּ דְּרַב הוּנָא, כְּשֶׁלֹּא שִׁיבֵּר בָּהּ עֶצֶם. וְהִילְכְתָא כְּוָותֵיהּ דְּרַב חִסְדָּא, כְּשֶׁשִּׁיבֵּר בָּהּ עֶצֶם. מִכְּלָל דְּרַב חִסְדָּא אַף עַל גַּב דְּלָא שִׁיבֵּר בָּהּ עֶצֶם? אֶלָּא בְּמַאי אִיפְּגִים? אֵימָא: בְּעֶצֶם דְּמַפְרֶקֶת אִיפְּגִים.</div>
+            <div class="fr"><p>Et la halakha [est] comme Rav Houna [quand] il n&#x27;a pas brise d&#x27;os avec [le couteau] ; et la halakha [est] comme Rav Hisda [quand] il a brise un os avec. [On en deduit] par implication que Rav Hisda [valide] meme s&#x27;il n&#x27;a pas brise d&#x27;os avec ?</p><p>Mais alors, sur quoi s&#x27;est-il ebreche ? Dis : il s&#x27;est ebreche sur l&#x27;os de la nuque (etzem ha-mafreket).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הִלְכְתָא כְּרַב הוּנָא</b> דְּחָייְשִׁינַן לְעוֹר. וְעַל יָדִי הָיָה מַעֲשֶׂה וְהוֹרָה לִי רַבֵּינוּ יַעֲקֹב ב&quot;ר יָקָר בְּעוֹף לְאִיסּוּר:</div>
+          <div class="glose-fr">La halakha [est] comme Rav Houna — car nous craignons [l&#x27;ebrechure sur] la peau. Et par mon intermediaire il y eut un cas, et mon maitre Rabbenou Yaakov fils de Rabbi Yakar me trancha, pour un oiseau, vers l&#x27;interdit.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִכְּלָל דְּרַב חִסְדָּא אֲפִילּוּ כְּשֶׁלֹּא שִׁיבֵּר בָּהּ עֶצֶם</b> לְאַחַר שְׁחִיטָה מַכְשִׁיר מִדְּאִצְטְרִיךְ לְמֵימַר הִלְכְתָא כְּרַב הוּנָא כְּשֶׁלֹּא שִׁיבֵּר מִכְּלָל דִּפְלִיג רַב חִסְדָּא עָלֶיהָ:</div>
+          <div class="glose-fr">Par implication, Rav Hisda [valide] meme s&#x27;il n&#x27;a pas brise d&#x27;os avec — [s&#x27;il a touche un os] apres l&#x27;abattage, il [le] valide ; du fait qu&#x27;il a fallu dire &#x27;la halakha [est] comme Rav Houna quand il n&#x27;a pas brise&#x27;, on en deduit que Rav Hisda diverge de lui [en ce cas].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּעֶצֶם מַפְרֶקֶת</b> לְאַחַר שְׁחִיטָה שֶׁנָּגַע בְּעֶצֶם הַצַּוָּאר וְהִיא הַמַּפְרֶקֶת דִּכְתִיב (שְׁמוּאֵל א ד) וַתִּשָּׁבֵר מַפְרַקְתּוֹ וְלָא סְבִירָא לַן כְּוָותֵיהּ לְמִתְלֵי לְקֻולָּא דְּהַהִיא נְגִיעָה דְּעֶצֶם מַפְרֶקֶת לֹא פָּגְמָה לַסַּכִּין טְפֵי מֵעוֹר אֲבָל שְׁבִירַת עֲצָמוֹת בְּהַהוּא וַדַּאי תָּלֵינַן:</div>
+          <div class="glose-fr">Sur l&#x27;os de la nuque — apres l&#x27;abattage, [le couteau] a touche l&#x27;os du cou, c&#x27;est-a-dire la nuque (mafreket), comme il est ecrit (I Samuel 4) &#x27;et sa nuque se brisa&#x27; ; mais nous ne tenons pas comme lui (Rav Hisda) pour [l&#x27;]attribuer vers l&#x27;indulgence, car ce simple contact de l&#x27;os de la nuque n&#x27;ebreche pas le couteau plus que la peau ; en revanche, [pour] le brisement d&#x27;os, a celui-la assurement nous [l&#x27;]attribuons.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">וְאִם נִשְׁחֲטָה שְׁחִיטָה כְּשֵׁירָה כָּרָאוּי הֲרֵי הִיא בְּחֶזְקַת הֶיתֵּר עַד שֶׁיִּוָּדַע לָךְ בַּמֶּה נִטְרְפָה. וַאֲפִילּוּ אִי אִיתְיַלִּיד בָּהּ רֵיעוּתָא כְּגוֹן שֶׁבָּא זְאֵב וְנָטַל בְּנֵי מֵעַיִם וְהֶחֱזִירָן כְּשֶׁהֵן נְקוּבִים אֵין חוֹשְׁשִׁין שֶׁמָּא בִּמְקוֹם נֶקֶב נָקַב. וַאֲפִילּוּ יֵשׁ בּוֹ נְקָבִים הַרְבֵּה. כֵּיוָן שֶׁבָּא הַזְּאֵב תָּלֵינַן כֻּולְּהוּ בִּזְאֵב כִּי הֵיכִי דְּתָלֵינַן נְקִיבַת הָרֵיאָה בְּטַבָּח הֵיכָא דְּמִשִּׁמְשָׁא יְדָא דְּטַבָּחָא. וְהָנֵי מִילֵּי בְּאִיסּוּרָהּ אֲבָל בְּסַכַּנְתָּא כְּגוֹן שֶׁרָאָה צִיפּוֹר מְנַקֵּר בַּתְּאֵנָה וְעַכְבָּר מִנֶּקֶב בָּאֲבַטִּיחַ חָייְשִׁינַן שֶׁמָּא בִּמְקוֹם נֶקֶב נָקַב וְאָסוּר מִשּׁוּם סַכָּנַת נְפָשׁוֹת. אִיתְּמַר הַשּׁוֹחֵט בְּסַכִּין בְּדוּקָה וְנִמְצֵאת פְּגוּמָה אָמַר רַב הוּנָא אֲפִילּוּ שִׁיבֵּר בָּהּ עֲצָמוֹת כָּל הַיּוֹם כֻּולּוֹ פְּסוּלָה. חָייְשִׁינַן שֶׁמָּא בָּעוֹר נִפְגְּמָה. וְרַב חִסְדָּא אָמַר כְּשֵׁירָה אֵימַר בְּעֶצֶם וְנִפְגְּמָה. וְהִלְכְתָא כְּוָותֵיהּ דְּרַב הוּנָא בְּשֶׁלֹּא שִׁיבֵּר בָּהּ עֲצָמוֹת דְּאֵימָא בָּעוֹר נִפְגְּמָה וְלָא תָּלֵינַן בַּמַּפְרֶקֶת. כִּי אֵינוֹ חוֹתֵךְ בְּכֹחַ בַּמַּפְרֶקֶת אֶלָּא לִפְעָמִים אַחַר שְׁחִיטַת הַסִּימָנִים וְהַוְּורִידִין נוֹגֵעַ בְּסַכִּין בַּמַּפְרֶקֶת. וְהִלְכְתָא כְּוָותֵיהּ דְּרַב חִסְדָּא בְּשֶׁשִּׁבֵּר בָּהּ עֲצָמוֹת וְכֵן אִם נָפְלָה הַסַּכִּין בְּחֻודָּהּ ע&quot;ג קַרְקַע קָשֶׁה הִילְכָּךְ צְרִיכָה בְּדִיקָה בֵּין כֹּל חֲדָא וַחֲדָא. וְאִי לָא בְּדִיק הַסַּכִּין בֵּין כֹּל חֲדָא וַחֲדָא וְנִמְצֵאת הַסַּכִּין פְּגוּמָה כָּל מַאי דִּשְׁחִיט בָּהּ אָסוּר. כִּדְאָמְרִינַן הֲוָה עוֹבָדָא וְטָרַף רַב יוֹסֵף עַד תְּלֵיסַר חֵיוָתָא. וַאֲפִילּוּ קַמַּיְיתָא. כִּדְרַב הוּנָא דְּאָמַר חָיְישִׁינַן שֶׁמָּא בָּעוֹר נִפְגְּמָה וְכִי שָׁחֵיט לְסִימָנִין בְּסַכִּין פְּגוּמָה שָׁחֵיט לְהוּ. וְהֵיכָא דְּבָדַק הַסַּכִּין תְּחִלָּה וְנֶאֱבַד הַסַּכִּין קֹודֶם שֶׁבָּדְקוּ אַחַר שְׁחִיטָה שְׁחִיטָתוֹ כְּשֵׁירָה וְלָא חָייְשִׁינַן שֶׁמָּא בָּעוֹר נִפְגְּמָה. וְלֹא שַׁיָּיךְ הָכָא לְמֵימַר בְּחֶזְקַת אִיסּוּר עוֹמֶדֶת עַד שֶׁיִּוָּדַע לָךְ בַּמֶּה נִשְׁחֲטָה. דְּכֵיוָן דְּלָא חָזֵינַן רֵיעוּתָא בְּסַכִּין וַדַּאי נוֹדַע לָנוּ בַּמֶּה נִשְׁחֲטָה וַאֲפִילּוּ שָׁחַט כַּמָּה בְּהֵמוֹת זוֹ אַחַר זוֹ כֻּולָּן כְּשֵׁירוֹת. דְּלָא תָּלֵינַן לֹא בָּעוֹר וְלֹא בַּמַּפְרֶקֶת כָּל כַּמָּה דְּלָא חָזֵינַן רֵיעוּתָא בְּסַכִּין. תֵּדַע לְךָ דְּקַיְימָא לָן רֹוב מְצוּיִין אֵצֶל שְׁחִיטָה מֻומְחִין הֵן וְלָא אָמְרִינַן סְמֹוךְ מִיעוּטָא דְּאֵין מֻומְחִין לִבְהֵמָה בְּחַיֶּיהָ בְּחֶזְקַת אִיסּוּר עוֹמֶדֶת עַד שֶׁיִּוָּדַע לָךְ בַּמֶּה נִשְׁחֲטָה כֵּיוָן דְּמִיעוּטָא דְּאֵינוֹ מֻומְחִין לָא שְׁכִיחַ וַדַּאי נוֹדַע לָנוּ שֶׁנִּשְׁחַט יָפֶה וְיָצְתָה מִכְּלַל אִיסּוּר הָכִי נָמֵי כֵּיוָן שֶׁשָּׁחַט בְּסַכִּין בָּדוּק לָא שְׁכִיחַ שֶׁנִּפְגַּם בְּעוֹר אוֹ בַּמַּפְרֶקֶת וּבְוַדַּאי נִשְׁחַט יָפֶה וְיָצְאָה מִכְּלַל אִיסּוּר. וְיֵשׁ מִן הַגְּדוֹלִים שֶׁהֶחְמִירוּ וְאוֹמְרִי&#x27; שֶׁאִם נָגַע בַּמַּפְרֶקֶת הָרִאשׁוֹנָה וְלֹא בָּדַק הַסַּכִּין וְנֶאֱבַד אַחַר שְׁחִיטַת הַשְּׁנִיָּה דְּחָיְישִׁינַן שֶׁמָּא בְּעֶצֶם הַמַּפְרֶקֶת אִיפְּגוּם. וְלֹא מִיסְתַּבֵּר דְּבִנְגִיעָה כָּל שֶׁהוּא שֶׁנּוֹגֵעַ בַּמַּפְרֶקֶת לָא שְׁכִיחַ דְּפַגִּים וְלָא מַחְזְקִינַן רֵיעוּתָא ואע&quot;ג דְּרַשִׁ&quot;י כָּתַב הַשּׁוֹחֵט אֲפִילּוּ בְּהֵמָה אַחַת צָרִיךְ לִבְדֹּוק אַחַר הַשְּׁחִיטָה. הַייְנוּ לְכַתְּחִלָּה אִי אִיתֵיהּ קַמַּן דְּלִיבְדְּקֵיהּ. אֲבָל אִם נֶאֱבַד לָא תָּלֵינַן רֵיעוּתָא. וּבַעַל הַמָּאוֹר זַ&quot;ל כָּתַב אע&quot;ג דְּמַצְרִיךְ רַב הוּנָא בְּדִיקוּתָא בֵּין כֹּל חֲדָא וַחֲדָא זְהִירוּת יַתִּירְתָא הִיא מִפְּנֵי שְׁחִיטַת רֹוב בְּהֵמוֹת שֶׁלֹּא יִפֹּול בָּהֶן סָפֵק דִּלְמָא אַגַּב דְּנָגַע סַכִּינָא בְּכָל עֶצֶם וְעֶצֶם דְּמַפְרֶקֶת אִיפַּגְמָא. אֲבָל לְאַחַר שְׁחִיטַת בְּהֵמָה אַחַת אֵין לָנוּ רְאָיָה לְהַצְרִיךְ לִבְדֹּוק הַסַּכִּין. וַאֲפִילּוּ בִּשְׁחִיטַת הַרְבֵּה בְּהֵמוֹת אִם לֹא נִזְהַר וְלֹא בָּדַק בֵּין כָּל אַחַת וְאַחַת וְלֹא אַחַר שְׁחִיטָה אֵין פּוֹסְלִין שְׁחִיטָתוֹ בְּכָךְ מֵאַחַר שֶׁבָּדַק בִּתְחִלַּת הַשְּׁחִיטָה. וְכֵן כָּתַב בַּעַל הָעִיטּוּר זַ&quot;ל. וְאִם שָׁחַט בְּסַכִּין שֶׁאֵינָהּ בְּדוּקָה וְנֶאֱבַד שְׁחִיטָתוֹ פְּסוּלָה וְיֵרָאֶה טַבָּח שֶׁיֵּשׁ לוֹ סַכִּין מְיֻוחֶדֶת לִשְׁחִיטָה וּמָקוֹם מְיֻוחָד שֶׁמַּצְנִיעוֹ שָׁם תָּמִיד בְּחֶזְקַת בְּדוּקָה תָּמִיד עוֹמֶדֶת וְאִם שָׁחַט בּוֹ בְּלֹא בְּדִיקָה וְנֶאֱבַד שְׁחִיטָתוֹ כְּשֵׁירָה:</div>
+          <div class="glose-fr">Et si elle a ete abattue d&#x27;un abattage cachere (chehita), comme il convient, voici qu&#x27;elle est en presomption de permission (chezkat heter) jusqu&#x27;a ce qu&#x27;il te soit connu par quoi elle est devenue terefa. Et meme si une suspicion (reiouta) s&#x27;est manifestee en elle — par exemple qu&#x27;un loup est venu et a pris les intestins puis les a rendus alors qu&#x27;ils sont perfores — on ne craint pas [de dire] : peut-etre a-t-il perfore a l&#x27;endroit [deja] perfore. Et meme s&#x27;il y a en elle beaucoup de perforations, puisque le loup est venu nous [les] attribuons toutes au loup, de meme que nous attribuons la perforation du poumon a l&#x27;abatteur (tabbah) la ou la main de l&#x27;abatteur y a touche. Et cela [ne vaut] qu&#x27;en matiere d&#x27;interdit (issour) ; mais en matiere de danger (sakanta) — par exemple qu&#x27;il a vu un oiseau picorer la figue, ou une souris [mordre] a l&#x27;endroit perfore de la pasteque — nous craignons [de dire] : peut-etre a-t-il perfore a l&#x27;endroit [deja] perfore, et [c&#x27;est] interdit a cause du danger de mort (sakanat nefachot). Il a ete enonce : celui qui abat avec un couteau examine (sakin bedouka) et [qui ensuite] s&#x27;est trouve ebreche (pegoumah) — Rav Houna a dit : meme s&#x27;il a brise avec [ce couteau] des os toute la journee entiere, [l&#x27;abattage est] passoul (invalide), [car] nous craignons que peut-etre [le couteau] se soit ebreche sur la peau. Et Rav Hisda a dit : [c&#x27;est] cachere ; dis [plutot] : c&#x27;est sur un os qu&#x27;il s&#x27;est ebreche. Et la halakha [est] comme Rav Houna [dans le cas] ou il n&#x27;a pas brise d&#x27;os avec [le couteau], car [alors] dis : c&#x27;est sur la peau qu&#x27;il s&#x27;est ebreche, et nous ne [l&#x27;]attribuons pas a la nuque (mafreket) ; car [le couteau] ne coupe pas avec force dans la nuque, mais parfois, apres l&#x27;abattage des simanim (organes : trachee et oesophage) et des veines (veridin), le couteau touche la nuque. Et la halakha [est] comme Rav Hisda [dans le cas] ou il a brise des os avec [le couteau], et de meme si le couteau est tombe par son tranchant sur un sol dur. C&#x27;est pourquoi elle (la bete) requiert un examen (bedika) entre chacune et chacune [des betes]. Et s&#x27;il n&#x27;a pas examine le couteau entre chacune et chacune, et que le couteau s&#x27;est trouve ebreche, tout ce qu&#x27;il a abattu avec est interdit ; comme nous [le] disons : il y eut un cas, et Rav Yossef declara terefa jusqu&#x27;a treize betes (tleisar heivata), et meme la premiere, selon Rav Houna qui a dit : nous craignons que peut-etre [le couteau] se soit ebreche sur la peau, et quand il a abattu les simanim, [c&#x27;est] avec un couteau ebreche [qu&#x27;]il les a abattus. Et la ou il a examine le couteau au debut et [que] le couteau a ete perdu avant qu&#x27;on [ne l&#x27;]examine apres l&#x27;abattage, son abattage [est] cachere, et nous ne craignons pas que peut-etre [le couteau] se soit ebreche sur la peau ; et il n&#x27;est pas pertinent (chayakh) de dire ici : elle se tient en presomption d&#x27;interdit (chezkat issour) jusqu&#x27;a ce qu&#x27;il te soit connu par quoi elle a ete abattue. Car puisque nous ne voyons pas de suspicion (reiouta) dans le couteau, assurement il nous est [des lors] connu par quoi elle a ete abattue ; et meme s&#x27;il a abattu plusieurs betes l&#x27;une apres l&#x27;autre, toutes [sont] cacheres, car nous n&#x27;[l&#x27;]attribuons ni a la peau ni a la nuque tant que nous ne voyons pas de suspicion dans le couteau. Sache-le : car nous tenons [pour etabli que] &#x27;la plupart de ceux que l&#x27;on trouve aupres de l&#x27;abattage sont experts (moumhin)&#x27;, et nous ne disons pas &#x27;adjoins la minorite de ceux qui ne sont pas experts a [la] bete en sa vie [qui se tient] en presomption d&#x27;interdit jusqu&#x27;a ce qu&#x27;il te soit connu par quoi elle a ete abattue&#x27; ; puisque la minorite de ceux qui ne sont pas experts n&#x27;est pas frequente (lo chekhiah), assurement il nous est connu qu&#x27;elle a ete bien abattue et [qu&#x27;]elle est sortie du domaine de l&#x27;interdit. De meme ici : puisqu&#x27;il a abattu avec un couteau examine, il n&#x27;est pas frequent qu&#x27;il se soit ebreche sur la peau ou sur la nuque, et assurement elle a ete bien abattue et est sortie du domaine de l&#x27;interdit. Et il y a parmi les grands [decisionnaires] qui ont ete rigoureux (hehmirou) et disent : que s&#x27;il a touche la nuque de la premiere et n&#x27;a pas examine le couteau, et [que celui-ci] a ete perdu apres l&#x27;abattage de la seconde, nous craignons que peut-etre [le couteau] se soit ebreche sur l&#x27;os de la nuque. Mais cela n&#x27;est pas plausible (lo mistabbar), car par un contact quelconque [avec lequel] il touche la nuque, il n&#x27;est pas frequent qu&#x27;il s&#x27;ebreche, et nous n&#x27;[y] presumons pas de suspicion. Et bien que Rachi ait ecrit : celui qui abat, meme une seule bete, doit examiner [le couteau] apres l&#x27;abattage — cela [vaut] a priori (le-khat&#x27;hila), si [le couteau] est devant nous pour qu&#x27;on l&#x27;examine ; mais s&#x27;il a ete perdu, nous n&#x27;[y] attribuons pas de suspicion. Et le Baal ha-Maor (que sa memoire soit une benediction) a ecrit : bien que Rav Houna exige un examen entre chacune et chacune, c&#x27;est une precaution supplementaire (zehirout yeteirta) a cause de l&#x27;abattage de la plupart des betes, pour qu&#x27;il n&#x27;y tombe pas de doute — peut-etre, du fait que le couteau touche chaque os et [chaque] os de la nuque, s&#x27;est-il ebreche ; mais apres l&#x27;abattage d&#x27;une seule bete, nous n&#x27;avons pas de preuve pour [en] exiger d&#x27;examiner le couteau. Et meme dans l&#x27;abattage de nombreuses betes, si [l&#x27;abatteur] n&#x27;a pas pris garde et n&#x27;a pas examine entre chacune et chacune, ni apres l&#x27;abattage, on n&#x27;invalide pas son abattage pour autant, du moment qu&#x27;il a examine [le couteau] au debut de l&#x27;abattage. Et ainsi a ecrit le Baal ha-Ittour (que sa memoire soit une benediction). Et s&#x27;il a abattu avec un couteau qui n&#x27;est pas examine (che-eino bedouka) et [que celui-ci] a ete perdu, son abattage [est] passoul (invalide). Et qu&#x27;un abatteur veille a avoir un couteau reserve a l&#x27;abattage et un endroit reserve ou il le range toujours : [alors] il se tient toujours en presomption d&#x27;[etre] examine (chezkat bedouka), et s&#x27;il a abattu avec lui sans examen et [qu&#x27;]il a ete perdu, son abattage [est] cachere.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Tranchant : halakha <b>comme Rav Houna</b> quand il n'a <b>pas brise d'os</b> (invalide) ; <b>comme Rav Hisda</b> quand il a <b>brise un os</b> (valable). De la formulation on deduit que Rav Hisda validerait <b>meme sans os brise</b> — alors d'ou l'ebrechure ? Reponse : de l'<b>os de la nuque</b> (touche apres l'abattage, sans le briser).</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 196" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="196" fill="#fffdf8"/>
+  <text x="360" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Couteau ebreche : la halakha tranchee</text>
+  <rect x="30" y="40" width="320" height="64" rx="10" fill="#fdeaea" stroke="#b91c1c"/>
+  <text x="190" y="64" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">N'a PAS brise d'os apres l'abattage</text>
+  <text x="190" y="86" text-anchor="middle" font-size="11.5" fill="#292524">comme Rav Houna : INVALIDE (on craint la peau)</text>
+  <rect x="370" y="40" width="320" height="64" rx="10" fill="#eaf6ec" stroke="#15803d"/>
+  <text x="530" y="64" text-anchor="middle" font-size="12" font-weight="700" fill="#15803d">A brise un os apres l'abattage</text>
+  <text x="530" y="86" text-anchor="middle" font-size="11.5" fill="#292524">comme Rav Hisda : VALABLE (attribue a l'os)</text>
+  <rect x="60" y="120" width="600" height="58" rx="10" fill="#fff7e6" stroke="#b45309"/>
+  <text x="360" y="143" text-anchor="middle" font-size="11.5" fill="#292524">Tout abatteur doit verifier le couteau APRES l'abattage.</text>
+  <text x="360" y="163" text-anchor="middle" font-size="11.5" fill="#292524">Plusieurs betes sans verifier entre chacune + couteau ebreche -&gt; meme la 1ere est interdite.</text>
+</svg></div><div class="svg-cap">Resume de la halakha.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הֲוָה עוֹבָדָא וְטָרַף רַב יוֹסֵף עַד תְּלֵיסַר חֵיוָתָא, כְּמַאן? כְּרַב הוּנָא, וַאֲפִילּוּ בְּקַמָּיְיתָא? לֹא, כְּרַב חִסְדָּא, וּלְבַר מִקַּמָּיְיתָא.</div>
+            <div class="fr"><p>Il y eut un cas, et Rav Yossef declara terefa jusqu&#x27;a treize betes. Selon qui ?</p><p>Selon Rav Houna — et meme la premiere ? Non, selon Rav Hisda — et a l&#x27;exception de la premiere.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תְּלֵיסַר חֵיוָתָא</b> שֶׁלֹּא בָּדַק בֵּין זוֹ לְזוֹ וּלְאַחַר שְׁחִיטַת כֻּולָּן נִמְצֵאת פְּגוּמָה:</div>
+          <div class="glose-fr">Treize betes — [parce] qu&#x27;il n&#x27;a pas verifie entre l&#x27;une et l&#x27;autre, et qu&#x27;apres l&#x27;abattage de toutes [le couteau] s&#x27;est trouve ebreche.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּמַאן</b> ס&quot;ל:</div>
+          <div class="glose-fr">Selon qui — tient-il [son avis] ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּרַב הוּנָא וַאֲפִילּוּ בְּהֵמָה קַמַּיְיתָא</b> נָמֵי טְרֵפָה דְּחָייְשִׁינַן לְעוֹר וּלְשׁוֹן בַּעְיָא הוּא:</div>
+          <div class="glose-fr">Selon Rav Houna — et meme la premiere bete [serait] elle aussi terefa, car nous craignons [l&#x27;ebrechure sur] la peau ; et c&#x27;est une formulation interrogative.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא כְּרַב חִסְדָּא</b> וּמִשּׁוּם עֶצֶם מַפְרֶקֶת דְּקַמָּייְתָא טַרְפִינְהוּ לְכוּלְּהוּ בָּתְרָיְיתָא:</div>
+          <div class="glose-fr">Non, selon Rav Hisda — et a cause de l&#x27;os de la nuque de la premiere il a declare terefa toutes les suivantes.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Cas : Rav Yossef declara <b>terefa jusqu'a 13 betes</b> (abattues sans examen entre chaque, couteau trouve ebreche a la fin). Selon Rav Houna (meme la 1re interdite) ? <b>Non</b> : selon Rav Hisda — <b>toutes sauf la premiere</b> (l'ebrechure peut venir de l'os de la nuque de la 1re, contaminant les suivantes ; mais la 1re fut abattue avec un couteau alors intact).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאִיבָּעֵית אֵימָא: לְעוֹלָם כְּרַב הוּנָא, דְּאִי כְּרַב חִסְדָּא, מִכְּדֵי מַתְלָא תָּלֵינַן, מִמַּאי דִּבְעֶצֶם דְּמַפְרֶקֶת דְּקַמַּיְיתָא אִיפְּגִים? דִּלְמָא בְּעֶצֶם דְּמַפְרֶקֶת דְּבָתְרָיְיתָא אִיפְּגִים!</div>
+            <div class="fr"><p>Et si tu veux, dis : en realite [c&#x27;est] selon Rav Houna ; car si [c&#x27;etait] selon Rav Hisda — puisque nous [l&#x27;]attribuons [a l&#x27;os par indulgence], d&#x27;ou [savons-nous] que c&#x27;est sur l&#x27;os de la nuque de la premiere qu&#x27;il s&#x27;est ebreche ? Peut-etre est-ce sur l&#x27;os de la nuque de la derniere qu&#x27;il s&#x27;est ebreche !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִכְּדֵי מִיתְלָא תָּלֵינַן</b> דְּהָא וַדַּאי נְגִיעַת סַכִּין בַּמַּפְרֶקֶת לֹא פָּגְמָה טְפֵי מֵעוֹר שֶׁהֲרֵי אֵינוֹ מַכֶּה עָלָיו בְּכֹחַ וַאֲפִילּוּ הָכֵי תָּלֵי בֵּיהּ לְקֻולָּא הִלְכָּךְ כִּי שָׁחַט בְּהֵמוֹת טוּבָא תָּלֵי נָמֵי רַב חִסְדָּא בַּמַּפְרֶקֶת דְּבָתְרָיָיתָא וּמַכְשַׁר לְהוּ:</div>
+          <div class="glose-fr">Puisque nous [l&#x27;]attribuons — car assurement le contact du couteau avec la nuque ne [l&#x27;]ebreche pas plus que la peau, [le couteau] ne la frappant pas avec force, et neanmoins [Rav Hisda] [l&#x27;]attribue a [l&#x27;os] par indulgence ; c&#x27;est pourquoi, lorsqu&#x27;on a abattu de nombreuses betes, Rav Hisda [l&#x27;]attribue aussi a la nuque de la derniere et les valide [toutes].</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Autre lecture : en fait <b>selon Rav Houna</b>. Car selon Rav Hisda (qui attribue par indulgence a l'os), pourquoi incriminer l'os de la nuque de la <b>premiere</b> ? On pourrait l'attribuer a la nuque de la <b>derniere</b> — et alors <em>toutes</em> seraient permises. Donc le verdict 'toutes sauf la 1re' colle mieux a Rav Houna.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רַב אַחָא בְּרֵיהּ דְּרָבָא לְרַב אָשֵׁי: רַב כָּהֲנָא מַצְרֵיךְ בְּדִיקוּתָא בֵּין כֹּל חֲדָא וַחֲדָא. כְּמַאן? כְּרַב הוּנָא, וּלְמִיפְסַל קַמַּייְתָא? לֹא, כְּרַב חִסְדָּא, וּלְאַכְשׁוֹרֵי בָּתְרָיְיתָא.</div>
+            <div class="fr"><p>Rav Aha fils de Rava dit a Rav Achi : Rav Kahana exige une verification (bedika) entre chaque [bete]. Selon qui ?</p><p>Selon Rav Houna — et [c&#x27;est] pour invalider la premiere ? Non, selon Rav Hisda — et [c&#x27;est] pour valider les suivantes.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְמִפְסַל קַמַּיְיתָא</b> בַּעְיָא הִיא. הַאי דְּמַצְרִיךְ בְּדִיקָה לְאַחַר שְׁחִיטַת הָרִאשׁוֹנָה מִיָּד מִשּׁוּם דְּאִי מַשְׁכַּח לָהּ פְּגוּמָה טָרֵיף לָהּ כְּרַב הוּנָא:</div>
+          <div class="glose-fr">Pour invalider la premiere — c&#x27;est une question. [Est-ce que] le fait qu&#x27;il exige une verification aussitot apres l&#x27;abattage de la premiere [vise] a [pouvoir], s&#x27;il [la] trouve ebrechee, la declarer terefa, comme Rav Houna ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא כְּרַב חִסְדָּא</b> ס&quot;ל דְּלָא חָייֵשׁ לָעוֹר וּמַצְרִיךְ בְּדִיקָה שֶׁאִם תִּמָּצֵא פְּגוּמָה יְתַקְּנֶנָּה וְיִהְיוּ אַחֲרוֹנוֹת כְּשֵׁרוֹת עִם הָרִאשׁוֹנָה דְּאִי לֹא בָּדַק וְשֶׁחַיָּט לֵיהּ לְאִידָךְ וּמַשְׁכַּח לָהּ פְּגוּמָה חָיְישִׁינַן לַמַּפְרֶקֶת דְּקַמָּיְיתָא וַאֲסִירִי בָּתְרָיְיתָא וְלֵית לֵיהּ הָא דַּאֲמַרַן לְעֵיל מִכְּדֵי מַתְלָא תָּלֵינַן כּוּ&#x27; וְאע&quot;ג דִּמְשַׁנֵּינָא הָכִי דִּיחוּיָא בְּעָלְמָא הוּא כְּלוֹמַר לְעוֹלָם אֵימָא לָךְ כְּרַב חִסְדָּא סְבִירָא לֵיהּ אֲבָל רַב כָּהֲנָא וַדַּאי כְּרַב הוּנָא קָאָמַר לְמִפְסַל קַמַּיְיתָא כִּדְאוֹקְמִינַן לְעֵיל הִלְכְתָא כְּוָותֵיהּ וְהַשּׁוֹחֵט אֲפִילּוּ בְּהֵמָה אַחַת צָרִיךְ לִבְדֹּוק הַסַּכִּין אַחַר שְׁחִיטָה וְאִם שָׁחַט הַרְבֵּה וְלֹא בָּדַק בֵּינְתַיִם וְאַחַר כָּךְ נִמְצֵאת פְּגוּמָה אַף הָרִאשׁוֹנָה אֲסוּרָה:</div>
+          <div class="glose-fr">Non, selon Rav Hisda — il tient qu&#x27;il ne craint pas [l&#x27;ebrechure sur] la peau, et il exige une verification [pour que], si [le couteau] se trouve ebreche, on le repare et que les dernieres soient cacheres avec la premiere ; car s&#x27;il ne verifie pas et qu&#x27;il en abat une autre et trouve [ensuite le couteau] ebreche, nous craignons [l&#x27;os de] la nuque de la premiere et les suivantes sont interdites — et il ne tient pas le [propos] dit plus haut &#x27;puisque nous [l&#x27;]attribuons, etc.&#x27;. Et bien que j&#x27;aie repondu ainsi, ce n&#x27;est qu&#x27;une simple esquive ; c&#x27;est-a-dire : en realite je puis te dire qu&#x27;il tient comme Rav Hisda ; mais Rav Kahana, assurement, [c&#x27;est] comme Rav Houna [qu&#x27;]il parle, pour invalider la premiere, comme nous l&#x27;avons etabli plus haut [que] la halakha [est] comme lui. Et celui qui abat, meme une seule bete, doit verifier le couteau apres l&#x27;abattage ; et s&#x27;il en a abattu beaucoup sans verifier entre-temps, et qu&#x27;ensuite [le couteau] se trouve ebreche, meme la premiere est interdite.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Kahana exige un <b>examen du couteau entre chaque abattage</b>. Selon Rav Houna (pour pouvoir invalider la 1re si on trouve une ebrechure) ? <b>Non</b> : selon Rav Hisda — l'examen sert a <b>valider les suivantes</b> (si on trouve l'ebrechure plus tard, sans examen intermediaire, on craint la nuque de la precedente et les suivantes sont interdites).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִי הָכִי, תִּיבְעֵי נָמֵי בְּדִיקַת חָכָם! עֵד אֶחָד נֶאֱמָן בְּאִיסּוּרִין. אִי הָכִי, מֵעִיקָּרָא נָמֵי לָא! הָאָמַר רַבִּי יוֹחָנָן: לֹא אָמְרוּ לְהַרְאוֹת סַכִּין לְחָכָם אֶלָּא מִפְּנֵי כְּבוֹדוֹ שֶׁל חָכָם.</div>
+            <div class="fr"><p>Si [c&#x27;est] ainsi, [le couteau] devrait aussi exiger la verification d&#x27;un sage (chacham) ! Un seul temoin est credible en matiere d&#x27;interdits (ed echad neeman be-issourin).</p><p>Si [c&#x27;est] ainsi, des le debut [il ne devrait] pas non plus [l&#x27;exiger] ! [Mais] Rabbi Yohanan n&#x27;a-t-il pas dit : on n&#x27;a dit de montrer le couteau a un sage qu&#x27;a cause de l&#x27;honneur du sage (kevodo shel chacham) ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִי הָכִי</b> דְּמִשּׁוּם הָא דְּבָעֵי לְמִישְׁחֲטֵיהּ קָא בְּדִיק הָוֵי לֵיהּ בְּדִיקָה דְּקֹודֶם שְׁחִיטָה וְתִיבְעֵי חָכָם לְהַרְאוֹת לוֹ אֶת הַסַּכִּין דְּיָלְפִינַן (לְקַמָּן חֻולִּין יז:) מֻושְׁחַטְתָּם בָּזֶה וַאֲכַלְתֶּם וּמִדְּלָא בָּעֵי לְמִחְוֵי לְחָכָם ש&quot;מ לָאו בְּדִיקָה דְּקֹודֶם שְׁחִיטָה חֲשִׁיב לֵיהּ:</div>
+          <div class="glose-fr">Si [c&#x27;est] ainsi — [si] c&#x27;est parce qu&#x27;il veut [l&#x27;]abattre qu&#x27;il verifie, [alors] c&#x27;est une verification d&#x27;avant l&#x27;abattage, et il faudrait un sage a qui montrer le couteau, car nous [le] deduisons (Houlin 17b) de &#x27;tu [les] abattras... et tu mangeras&#x27; ; et du fait qu&#x27;il n&#x27;a pas besoin de [le] montrer a un sage, on en conclut qu&#x27;il ne le considere pas comme une verification d&#x27;avant l&#x27;abattage.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>עֵד אֶחָד נֶאֱמָן בְּאִיסּוּרִין</b> דְּכָל יָחִיד וְיָחִיד הֶאֱמִינַתּוּ תּוֹרָה וְזָבַחְתָּ מִבְּקָרְךָ וּמִצֹּאנְךָ וְשָׁחַט אֶת בֶּן הַבָּקָר (וַיִּקְרָא א) וְאָכְלִי כֹּהֲנִים עַל יָדוֹ וְלֹא הִזְקִיקוֹ לְהַעֲמִיד עֵדִים בַּדָּבָר וְלֹא הִצְרִיכָה תּוֹרָה עֵדִים אֶלָּא לְעֹונֶשׁ מָמוֹן אוֹ מִיתַת בֵּית דִּין וְלַעֲרָיוֹת דְּגָמְרִינַן (גִּיטִּין צ.) דָּבָר דָּבָר מִמָּמוֹן:</div>
+          <div class="glose-fr">Un seul temoin est credible en matiere d&#x27;interdits — car la Torah a accorde foi a chaque individu : &#x27;tu egorgeras de ton gros et de ton menu betail&#x27; (Deut), &#x27;et il abattra le jeune du gros betail&#x27; (Levitique 1), et les kohanim mangent par son entremise, sans qu&#x27;on ait eu besoin d&#x27;etablir des temoins en la matiere ; et la Torah n&#x27;a exige des temoins que pour un chatiment pecuniaire, une mise a mort par le tribunal, et pour les unions interdites (arayot), [pour lesquelles] nous [le] deduisons (Guittin 90a) par [analogie verbale] &#x27;davar / davar&#x27; [tiree] du [domaine] pecuniaire.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָאָמַר רַבִּי יוֹחָנָן</b> תֵּירוּצָא הוּא:</div>
+          <div class="glose-fr">Rabbi Yohanan n&#x27;a-t-il pas dit — c&#x27;est une reponse.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection : si l'examen precede l'abattage, il faudrait le faire valider par un <b>Sage</b> ! Reponse : <b>un seul temoin est cru en matiere d'interdits</b> (ed echad neeman be-issourin) — l'abatteur suffit. Contre-objection : alors meme au tout debut, pas besoin de Sage ! Reponse (R. Yohanan) : on montre le couteau au Sage uniquement <b>par deference pour le Sage</b> (kevodo) — une fois faite avant le 1er abattage, plus necessaire ensuite.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מְנַָא הָא מִלְּתָא דַאֲמוּר רַבָּנַן: אוֹקֵי מִילְּתָא אַחֲזָקֵיהּ?</div>
+            <div class="fr"><p>D&#x27;ou cette chose que les Sages ont dite : &#x27;etablis la chose sur sa presomption (oki milta a-chezkei)&#x27; ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָא דַּאֲמוּר רַבָּנָן כוּ&#x27;</b> בִּמְקוֹמוֹת הַרְבֵּה סָמְכוּ עַל הַחֲזָקָה לֶאֱסֹור וּלְהַתִּיר כִּי הַהוּא דִּלְעֵיל:</div>
+          <div class="glose-fr">Cette [chose] que les Sages ont dite, etc. — en bien des endroits ils se sont appuyes sur la presomption (chazaka) pour interdire et pour permettre, comme celle [du cas] ci-dessus.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Question de fond : <b>d'ou</b> la regle '<b>etablis une chose sur sa presomption</b>' (oki milta a-chezkei, le principe de chazaka invoque par Rav Houna) ?</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַבִּי שְׁמוּאֵל בַּר נַחְמָנִי אָמַר רַבִּי יוֹנָתָן, אֲמַר קְרָא ״וְיָצָא הַכֹּהֵן מִן הַבַּיִת אֶל פֶּתַח הַבָּיִת וְהִסְגִּיר אֶת הַבַּיִת שִׁבְעַת יָמִים״, דִּלְמָא אַדְּנָפֵיק וְאָתֵא בְּצַר לֵיהּ שִׁיעוּרָא! אֶלָּא לָאו מִשּׁוּם דְּאָמְרִינַן אוֹקֵי אַחֶזְקֵיהּ.</div>
+            <div class="fr"><p>Rabbi Chmouel bar Nahmani dit au nom de Rabbi Yonatan : le verset dit &#x27;et le pretre sortira de la maison vers l&#x27;entree de la maison, et il fermera la maison sept jours&#x27; (Lev 14:38) — mais peut-etre, tandis qu&#x27;il sortait et venait [dehors], la mesure [de la plaie] a-t-elle diminue [en dessous du requis] ! Plutot, n&#x27;est-ce pas parce que nous disons &#x27;etablis [la chose] sur sa presomption&#x27; ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְיָצָא הַכֹּהֵן וְגוֹ&#x27;</b> דְּבָעֵינַן דְּנִיפּוֹק מִכָּל הַבַּיִת וְאַחַ&quot;כּ יַסְגִּיר אֶת הַדֶּלֶת ואע&quot;ג דְּאִיכָּא לְמֵימַר דִּלְמָא עַד דְּנָפֵיק וְאָתֵי בְּצִיר לֵיהּ שִׁיעוּרֵיהּ מִכִּגְרִיס וְנִמְצָא שֶׁלֹּא הָיָה נֶגַע בִּשְׁעַת הֶסְגֵּר וְאֵין הֶסְגֵּרוֹ הֶסְגֵּר דִּכְמַאן דְּלֵיתֵיהּ דָּמֵי:</div>
+          <div class="glose-fr">&#x27;Et le pretre sortira, etc.&#x27; — car il faut qu&#x27;il sorte de toute la maison, et [seulement] ensuite il ferme la porte ; et bien qu&#x27;on puisse dire &#x27;peut-etre, le temps qu&#x27;il sorte et vienne [dehors], la mesure [de la plaie] a-t-elle diminue en dessous de [la taille d&#x27;]une feve (ke-gris), [de sorte] qu&#x27;il se trouve qu&#x27;il n&#x27;y avait pas de plaie au moment de la fermeture, et que sa fermeture n&#x27;[est] pas une fermeture [valide], [la plaie] etant comme inexistante&#x27;.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְדִילְמָא אַדְּנָפֵיק וְאָתֵי בָּצַר לֵיהּ שִׁיעוּרָא כו&#x27;</b> אֵין לְהַקְשׁוֹת הֵיכִי מוֹכַח מֵהָכָא דְּאוֹקֵי מִילְּתָא אַחֲזָקֵיהּ דִּלְמָא הָכָא טָמֵא מִסָּפֵק דִּסְפֵק טֻומְאָה ברה&quot;י סְפֵיקוֹ טָמֵא דִּבְכָל עִנְיָן טִימֵּא הַכָּתוּב אֲפִילּוּ הָוֵי רה&quot;ר שֶׁיֵּשׁ בּוֹ הַרְבֵּה בְּנֵי אָדָם וַאֲפִילּוּ דָּבָר שֶׁאֵין בּוֹ דַּעַת לִישָּׁאֵל אֲבָל קָשֶׁה דְּתִינַח הֵיכָא דְּלֵיכָּא רֵיעוּתָא אֲבָל הֵיכָא דְּאִיכָּא רֵיעוּתָא כְּגוֹן סַכִּין שֶׁנִּמְצֵאת פְּגוּמָה וְכֵן אֶחָד מִשְּׁנַיִם שֶׁנִּטְמָא וַדַּאי ברה&quot;ר דִּמְטַהֲרִין שְׁנֵיהֶם מִטַּעַם חֲזָקָה כה&quot;ג מִנָּלַן דְּאָזְלִינַן בָּתַר חֲזָקָה וי&quot;ל דה&quot;נ יֵשׁ רֵיעוּתָא גְּדוֹלָה דאע&quot;ג דְּאִישְׁתְּכַח שֶׁחָסֵר לְאַחַר שִׁבְעָה אַפֵּ&quot;ה לֹא מְטַהֲרִים לְמַפְרֵעַ כָּל אוֹתָם שֶׁנִּכְנְסוּ לַבַּיִת בִּימֵי הֶסְגֵּר וּמִיהוּ קָשֶׁה דְּהַךְ מִילְּתָא דָּמְיָא לְמִקְוֶה שֶׁנִּמְדַּד וְנִמְצָא חָסֵר דְּשָׁבְקִינַן לַחֲזָקָה דְּמִקְוֶה וּמְטַמְּאִינַן לְגַבְרָא שֶׁטָּבַל מִשּׁוּם הַעֲמֵד טָמֵא עַל חֶזְקָתוֹ וַהֲרֵי חָסֵר לְפָנֶיךָ וה&quot;נ הֲוָה לָן לְמֵימַר דְּשָׁבְקִינַן חֶזְקַת נָגַע וְאָזְלִינַן בָּתַר גַּבְרָא דְּאוֹקְמִינַן בְּחֶזְקַת טָהֳרָה וַהֲרֵי חָסֵר לְפָנֶיךָ:</div>
+          <div class="glose-fr">&#x27;Et peut-etre, tandis qu&#x27;il sortait et venait, la mesure a-t-elle diminue, etc.&#x27; — il ne faut pas objecter : comment prouver d&#x27;ici que &#x27;on etablit la chose sur sa presomption&#x27; ? peut-etre [est-ce qu&#x27;]ici il est impur par doute, car &#x27;un doute d&#x27;impurete en domaine prive, son doute est impur&#x27;, l&#x27;Ecriture [l&#x27;]ayant declare impur en tout etat de cause, meme en domaine public ou il y a beaucoup de gens, et meme [pour] une chose sans &#x27;conscience pour etre interrogee&#x27; [comme une maison] ! Mais [voici] la difficulte : passe encore la ou il n&#x27;y a pas de suspicion (reiouta) ; mais la ou il y a une suspicion — par exemple un couteau trouve ebreche, ou [le cas de] l&#x27;un de deux [hommes] dont l&#x27;un s&#x27;est certainement rendu impur en domaine public, ou l&#x27;on declare les deux purs au titre de la presomption — d&#x27;ou [savons-nous], dans un tel [cas], qu&#x27;on suit la presomption ? On peut repondre : ici aussi il y a une grande suspicion, car bien qu&#x27;on ait constate [la plaie] diminuee apres sept [jours], neanmoins on ne declare pas pures retroactivement toutes les [personnes] entrees dans la maison pendant les jours de la fermeture. Toutefois cela fait difficulte, car cette [chose] ressemble au mikve mesure et trouve deficient, ou nous abandonnons la presomption du mikve et declarons impur l&#x27;homme qui s&#x27;y est immerge, au titre de &#x27;etablis l&#x27;impur sur sa presomption&#x27; et &#x27;le voici deficient devant toi&#x27; ; et ici aussi nous aurions du dire que nous abandonnons la presomption de la plaie et suivons l&#x27;homme, que nous etablissons en presomption de purete, [puisque] &#x27;le voici diminue devant toi&#x27; !</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא לָאו מִשּׁוּם דְּאָמְרִינַן אוֹקְמֵיהּ אַחֲזָקֵיהּ</b> וְאֵין לוֹמַר דְּשָׁאנֵי הָכָא דְּאָזְלִינַן לְחוּמְרָא דְּמִדְּאוֹרַיְיתָּא אֵין לְחַלֵּק וְעוֹד דְּאַף לְקֻולָּא מְטַמְּאִין לֵיהּ לִשְׂרֹוף קָדָשִׁים וּלְהָבִיא קָרְבָּן אִם נִכְנַס לַמִּקְדָּשׁ וְקָא מַיְיתֵי מִסָּפֵק חֻולִּין לָעֲזָרָה וְעוֹד דְּאַף לְקֻולָּא מוֹקְמִינַן הָכָא אַחֲזָקֵיהּ דְּאִי הָיָה נֶגַע גָּדוֹל וּבְסוֹף הַשָּׁבוּעַ הָיָה חָסֵר מִמַּה שֶׁהָיָה מְטַהֲרִין וְנִיחוּשׁ דִּלְמָא אַדְּנָפֵיק וְאָתֵי בְּצִיר לֵיהּ שִׁיעוּרָא וְהָיָה כַּשִּׁיעוּר שֶׁהָיָה בְּסוֹף שָׁבוּעַ וְנִמְצָא שֶׁהַנֶּגַע עוֹמֵד בְּעֵינָיו וּבָעֵי הֶסְגֵּר שֵׁנִי אֶלָּא מִשּׁוּם דְּמוֹקְמִינַן לֵיהּ בִּשְׁעַת הֶסְגֵּר אַחֲזָקֵיהּ:</div>
+          <div class="glose-fr">&#x27;Plutot, n&#x27;est-ce pas parce que nous disons : etablis-le sur sa presomption&#x27; — et il ne faut pas dire &#x27;c&#x27;est different ici, car nous allons vers la rigueur&#x27;, car de par la Torah on ne [peut] distinguer ; et de plus, [c&#x27;est] aussi vers l&#x27;indulgence [qu&#x27;]on le declare impur — pour bruler des [aliments] consacres et apporter un sacrifice s&#x27;il est entre au sanctuaire — et l&#x27;on [risquerait alors d&#x27;]apporter des [aliments] profanes douteux dans le parvis [par erreur] ; et de plus, [c&#x27;est] aussi vers l&#x27;indulgence [qu&#x27;]on l&#x27;etablit ici sur sa presomption : car si la plaie etait grande et qu&#x27;a la fin de la semaine elle etait diminuee de ce qu&#x27;elle etait, on [le] declarerait pur — et l&#x27;on devrait craindre &#x27;peut-etre, tandis qu&#x27;il sortait et venait, la mesure a-t-elle diminue&#x27;, [de sorte] qu&#x27;elle etait [deja] de la taille qu&#x27;elle avait a la fin de la semaine, et qu&#x27;il se trouve [alors] que la plaie demeure telle quelle et requiert une seconde fermeture ! Plutot, [c&#x27;est] parce que nous l&#x27;etablissons, au moment de la fermeture, sur sa presomption.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Source (R. Yonatan), a propos de la <b>lepre des maisons</b> : le pretre voit la plaie, <b>sort</b>, puis <b>met la maison en quarantaine 7 jours</b> (Lev 14:38). Or pendant qu'il sortait, la plaie a pu <b>retrecir sous la taille minimale</b> (et alors pas de quarantaine valable) ! Si on l'enferme quand meme, c'est donc qu'on <b>etablit la plaie sur sa presomption</b> (chazaka).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַתְקִיף לַהּ רַב אַחָא בַּר יַעֲקֹב: וְדִילְמָא כְּגוֹן שֶׁיָּצָא דֶּרֶךְ אֲחוֹרָיו, דְּקָא חָזֵי לֵיהּ כִּי נָפֵק!</div>
+            <div class="fr"><p>Rav Aha bar Yaakov objecte : et peut-etre [s&#x27;agit-il d&#x27;]un cas ou il est sorti a reculons (derech achorav), de sorte qu&#x27;il [la] voit en sortant !</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Aha bar Yaakov objecte : peut-etre le pretre <b>sort a reculons</b> (face a la plaie), donc il la <b>voit jusqu'au bout</b> — pas besoin de chazaka pour expliquer le verset.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר לֵיהּ אַבַּיֵּי: שְׁתֵּי תְּשׁוּבוֹת בַּדָּבָר, חֲדָא, דִּיצִיאָה דֶּרֶךְ אֲחוֹרָיו לֹא שְׁמָהּ יְצִיאָה, וְעוֹד, אֲחוֹרֵי הַדֶּלֶת מַאי אִיכָּא לְמֵימַר? וְכִי תֵּימָא דְּפָתַח בֵּיהּ כַּווְּתָא – וְהִתְנָן: בַּיִת אָפֵל אֵין פּוֹתְחִין בּוֹ חַלּוֹנוֹת לִרְאוֹת אֶת נִגְעוֹ!</div>
+            <div class="fr"><p>Abaye lui dit : il y a deux reponses a la chose. D&#x27;abord, sortir a reculons ne s&#x27;appelle pas &#x27;sortir&#x27;.</p><p>Et de plus, [pour la plaie qui est] derriere la porte, qu&#x27;y a-t-il a dire ? Et si tu dis qu&#x27;il y perce une lucarne (kavta) — n&#x27;avons-nous pas appris : une maison sombre, on n&#x27;y perce pas de fenetres pour voir sa plaie !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְעוֹד אֲחוֹרֵי הַדֶּלֶת</b> אִם הָיָה נָגַע אֲחוֹרֵי הַדֶּלֶת בִּיצִיאָתוֹ הֵיכִי חָזֵי לֵיהּ:</div>
+          <div class="glose-fr">Et de plus, derriere la porte — si la plaie etait derriere la porte, comment [la] verrait-il en sortant ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּפָתַח בֵּיהּ כַּוְּותָא</b> חַלּוֹן בַּדֶּלֶת קֹודֶם הֶסְגֵּר:</div>
+          <div class="glose-fr">Qu&#x27;il y perce une lucarne — une fenetre dans la porte avant la fermeture.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵין פּוֹתְחִין</b> בַּיִת אָפֵל שֶׁצָּרִיךְ לִפְתֹּוחַ לוֹ חַלּוֹנוֹת לִרְאוֹת הַנֶּגַע פּוֹטְרִין אוֹתוֹ לְגַמְרֵי כְּדִכְתִיב (וַיִּקְרָא יד) כְּנֶגַע נִרְאָה לִי בַּבָּיִת לִי וְלֹא לְאוֹרִי שֶׁאִם עָמַד בְּמָקוֹם אָפֵל וְצָרִיךְ שָׁם לְהַדְלִיק אֶת הַנֵּר אֵינוֹ נָגַע:</div>
+          <div class="glose-fr">On n&#x27;[y] perce pas — une maison sombre, qui aurait besoin qu&#x27;on lui perce des fenetres pour voir la plaie, on l&#x27;exempte entierement, comme il est ecrit (Levitique 14) &#x27;telle une plaie m&#x27;est apparue dans la maison&#x27; — &#x27;a moi&#x27; et non &#x27;a ma lumiere [artificielle]&#x27; : car s&#x27;il se tient dans un endroit sombre et qu&#x27;il faut y allumer la lampe, ce n&#x27;est pas une plaie.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Abaye, <b>deux refutations</b> : (1) sortir <b>a reculons</b> n'est pas 'sortir' (le verset exige une vraie sortie). (2) Si la plaie est <b>derriere la porte</b>, meme a reculons il ne la voit pas. Et percer une fenetre ? Non : '<b>une maison sombre, on n'y perce pas de fenetres</b> pour voir la plaie' (Nega'im 2:3).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רָבָא: דְּקָאָמְרַתְּ יְצִיאָה דֶּרֶךְ אֲחוֹרָיו לֹא שְׁמָהּ יְצִיאָה – כֹּהֵן גָּדוֹל בְּיוֹם הַכִּפּוּרִים יוֹכִיחַ, דִּכְתִיב בֵּיהּ יְצִיאָה, וּתְנַן: יָצָא וּבָא לוֹ דֶּרֶךְ כְּנִיסָתוֹ. וּדְקָאָמְרַתְּ בַּיִת אָפֵל אֵין פּוֹתְחִין בּוֹ חַלּוֹנוֹת לִרְאוֹת אֶת נִגְעוֹ – הָנֵי מִילֵּי הֵיכָא דְּלָא אִיתַּחְזַק, אֲבָל הֵיכָא דְּאִיתַּחְזַק – אִיתַּחְזַק.</div>
+            <div class="fr"><p>Rava lui dit : ce que tu dis &#x27;sortir a reculons ne s&#x27;appelle pas sortir&#x27; — le grand pretre a Yom Kippour [le] prouve (yochiach), car &#x27;sortir&#x27; est ecrit a son sujet, et nous avons appris : &#x27;il sortit et revint par le chemin de son entree&#x27;. Et ce que tu dis &#x27;une maison sombre, on n&#x27;y perce pas de fenetres pour voir sa plaie&#x27; — cela vaut la ou [la plaie] n&#x27;a pas ete etablie [presumee] ; mais la ou elle a [deja] ete etablie, elle a ete etablie.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כֹּהֵן גָּדוֹל בְּיוֹם הַכִּפּוּרִים</b> כְּשֶׁהוּא יוֹצֵא מִבֵּית קָדְשֵׁי הַקֳּדָשִׁים לְאַחַר הוֹצָאַת כַּף וּמַחְתָּה כְּתִיב וְיָצָא וְעָשָׂה עוֹלָתוֹ וְגוֹ&#x27; בְּאַחֲרֵי מוֹת:</div>
+          <div class="glose-fr">Le grand pretre a Yom Kippour — lorsqu&#x27;il sort du Saint des Saints apres avoir sorti la coupe (kaf) et l&#x27;encensoir (mahta), il est ecrit &#x27;et il sortira et fera son holocauste, etc.&#x27; dans [la parasha] &#x27;Aharei Mot&#x27;.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּתְנַן</b> בְּמַסֶּכֶת יוֹמָא (דַּף נב:):</div>
+          <div class="glose-fr">Et nous avons appris — au traite Yoma (52b).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>יָצָא וּבָא לוֹ דֶּרֶךְ כְּנִיסָתוֹ</b> פָּנָיו כְּלַפֵּי לִפְנַי וְלִפְנִים כְּדֶרֶךְ שֶׁנִּכְנָס כָּךְ מְחַזֵּר וְיוֹצֵא דֶּרֶךְ אֲחוֹרָיו:</div>
+          <div class="glose-fr">Il sortit et revint par le chemin de son entree — le visage tourne vers le Saint des Saints ; de la maniere dont il est entre, ainsi il rebrousse et sort a reculons.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּלָא אִתַּחְזַק</b> כָּל זְמַן שֶׁלֹּא רָאָה הַכֹּהֵן אֶת הַנֶּגַע בְּמַרְאוֹתָיו שֶׁהָיָה מָקוֹם אָפֵל וְאֵין מַרְאֵהוּ נִיכָּר אֲבָל נֶגַע שֶׁעוֹמֵד אֲחוֹרֵי הַדֶּלֶת וּכְבָר הִכִּיר שֶׁהוּא נָגַע וְאֵין צָרִיךְ חַלּוֹן אֶלָּא לְהַעֲמִידוֹ בְּחֶזְקָתוֹ פּוֹתְחִין:</div>
+          <div class="glose-fr">La ou elle n&#x27;a pas ete etablie — tant que le pretre n&#x27;a pas [encore] vu la plaie dans ses [vraies] couleurs, l&#x27;endroit etant sombre et son aspect non discernable ; mais une plaie qui se tient derriere la porte, et [qu&#x27;]il a deja reconnue comme une plaie, [de sorte qu&#x27;]il n&#x27;a besoin d&#x27;une fenetre que pour l&#x27;etablir dans sa presomption — on [y] perce [alors une fenetre].</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כֹּהֵן גָּדוֹל בְּיוֹם הַכִּפּוּרִים יוֹכִיחַ</b> תֵּימַהּ דִּבְפֶרֶק יְדִיעוֹת הַטֻּומְאָה (שְׁבוּעוֹת יז:) אָמְרִינַן הַנִּכְנָס לְבַיִת הַמְנֻוגָּע דֶּרֶךְ אֲחוֹרָיו אֲפִילּוּ כֻּולּוֹ מִבִּפְנִים חוּץ מֵחָוטְמוֹ טָהוֹר וְהַבָּא אֶל הַבַּיִת אֲמַר רַחֲמָנָא דֶּרֶךְ בִּיאָה אָסְרָה תּוֹרָה וְיֵשׁ לְחַלֵּק בֵּין כְּנִיסָה לִיצִיאָה דְּאוֹרְחָא דְּמִילְּתָא בִּיצִיאָה כְּתַלְמִיד הַנִּפְטָר מֵרַבּוֹ:</div>
+          <div class="glose-fr">&#x27;Le grand pretre a Yom Kippour [le] prouve&#x27; — c&#x27;est etonnant, car au chapitre &#x27;Yedi&#x27;ot ha-toumah&#x27; (Chevouot 17b) nous disons : &#x27;celui qui entre a reculons dans une maison atteinte [de lepre], meme [s&#x27;il y est] tout entier hormis son nez, [est] pur&#x27;, car le Misericordieux a dit &#x27;et celui qui vient vers la maison&#x27; — la Torah [n&#x27;]a interdit que [l&#x27;entree] a la maniere d&#x27;une &#x27;venue&#x27; [normale, de face] ! Et l&#x27;on peut distinguer entre l&#x27;entree et la sortie, car la maniere usuelle, lors d&#x27;une sortie, [est de sortir a reculons], tel un disciple qui prend conge de son maitre.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rava refute Abaye : (1) sur 'a reculons', le <b>Grand Pretre a Yom Kippour</b> le prouve — 'sortir' est dit de lui, et il <b>sortait du Saint des Saints a reculons</b> (face a l'Arche) (Yoma 52b). Donc reculer = sortir. (2) 'Pas de fenetre dans une maison sombre' ne vaut <b>que tant que la plaie n'est pas etablie</b> ; une fois la plaie <b>etablie</b> (deja reconnue), on peut percer pour la maintenir dans sa presomption.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תַּנְיָא דְּלָא כְּרַב אַחָא בַּר יַעֲקֹב, ״וְיָצָא הַכֹּהֵן מִן הַבַּיִת״ – יָכוֹל יֵלֵךְ לְתוֹךְ בֵּיתוֹ וְיַסְגִּיר? תַּלְמוּד לוֹמַר: ״אֶל פֶּתַח הַבַּיִת״.</div>
+            <div class="fr"><p>Il est enseigne [une braita] non comme Rav Aha bar Yaakov : &#x27;et le pretre sortira de la maison&#x27; — [on] pourrait [croire qu&#x27;]il aille dans sa [propre] maison et ferme [de la] ? L&#x27;enseignement dit : &#x27;vers l&#x27;entree de la maison&#x27;.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תַּנְיָא דְּלָא כְּרַב אַחָא בַּר יַעֲקֹב</b> דְּאָמַר דְּלָא מוּקֵי אַחֶזְקָתוֹ אֶלָּא בְּיָצָא דֶּרֶךְ אֲחוֹרָיו דְּחָזֵי לֵיהּ עַד שְׁעַת הֶסְגֵּר דְּהָכָא קָתָנֵי שֶׁאִם הָלַךְ לְבֵיתוֹ וְהִסְגִּירוֹ הֶסְגֵּרוֹ הֶסְגֵּר וְהָכָא וַדַּאי אִיכַּסִּי נָגַע מִינֵּיהּ וּמוֹקְמִי לֵיהּ אַחֲזָקֵיהּ:</div>
+          <div class="glose-fr">Il est enseigne non comme Rav Aha bar Yaakov — qui dit qu&#x27;on n&#x27;etablit [la plaie] sur sa presomption que [dans le cas] ou il est sorti a reculons, [la] voyant jusqu&#x27;au moment de la fermeture ; car ici on enseigne que [meme] s&#x27;il est alle dans sa [propre] maison et l&#x27;a fermee, sa fermeture [est] une fermeture [valide], et ici assurement la plaie lui est cachee, et [pourtant] on l&#x27;etablit sur sa presomption.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>יָכוֹל</b> יְהֵא לוֹ רְשׁוּת לֵילֵךְ לְתוֹךְ בֵּיתוֹ וְלַחֲזֹור וְלִסְגֹּור הַדֶּלֶת:</div>
+          <div class="glose-fr">[On] pourrait — [croire qu&#x27;]il ait la permission d&#x27;aller dans sa [propre] maison, puis de revenir fermer la porte.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Une <b>braita refute Rav Aha bar Yaakov</b> : 'le pretre sortira de la maison' — on aurait pu croire qu'il rentre <b>chez lui</b> pour fermer a distance ? Le verset precise '<b>vers l'entree de la maison</b>' [atteinte]. (Donc il ne voit pas la plaie en fermant — preuve qu'on s'appuie sur la chazaka.)</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִי ״פֶּתַח הַבַּיִת״, יָכוֹל יַעֲמוֹד תַּחַת הַמַּשְׁקוֹף וְיַסְגִּיר? תַּלְמוּד לוֹמַר: ״מִן הַבַּיִת״ – עַד שֶׁיֵּצֵא מִן הַבַּיִת כֻּולּוֹ. הָא כֵיצַד? עוֹמֵד בְּצַד הַמַּשְׁקוֹף וּמַסְגִּיר.</div>
+            <div class="fr"><p>Si &#x27;l&#x27;entree de la maison&#x27; — [on] pourrait [croire qu&#x27;]il se tienne sous le linteau (machkof) et ferme ? L&#x27;enseignement dit : &#x27;de la maison&#x27; — [il ne ferme pas] jusqu&#x27;a ce qu&#x27;il sorte de toute la maison.</p><p>Comment cela ? Il se tient a cote du linteau et ferme.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תַּחַת הַמַּשְׁקוֹף</b> מִפְתָּן הָעֶלְיוֹן:</div>
+          <div class="glose-fr">Sous le linteau — le seuil superieur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Et si 'l'entree' — il pourrait fermer <b>sous le linteau</b> ? Le verset 'de la maison' enseigne qu'il doit sortir de la maison <b>tout entiere</b>. Conclusion : il se tient <b>a cote du linteau</b> (dehors) et ferme.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּמִנַּיִן שֶׁאִם הָלַךְ לְתוֹךְ בֵּיתוֹ וְהִסְגִּיר, אוֹ שֶׁעָמַד בְּתוֹךְ הַבַּיִת וְהִסְגִּיר, שֶׁהֶסְגֵּרוֹ מֻוסְגָּר? תַּלְמוּד לוֹמַר: ״וְהִסְגִּיר אֶת הַבַּיִת״, מִכָּל מָקוֹם.</div>
+            <div class="fr"><p>Et d&#x27;ou [savons-nous] que [meme] s&#x27;il est alle dans sa [propre] maison et a ferme, ou [s&#x27;]il s&#x27;est tenu a l&#x27;interieur de la maison et a ferme, que sa fermeture [est] fermee [valide] ? L&#x27;enseignement dit : &#x27;et il fermera la maison&#x27; — en tout cas.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>(הָלַךְ לְבֵיתוֹ וְהִסְגִּיר</b> עַל יְדֵי חֶבֶל אָרֹוךְ כְּגוֹן שֶׁהָיָה בֵּיתוֹ סָמוּךְ לְשָׁם):</div>
+          <div class="glose-fr">[S&#x27;]il est alle dans sa [propre] maison et a ferme — au moyen d&#x27;une longue corde, par exemple si sa maison etait proche de la.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּתוֹךְ הַבַּיִת</b> תַּחַת הַמַּשְׁקוֹף:</div>
+          <div class="glose-fr">A l&#x27;interieur de la maison — sous le linteau.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Et d'ou sait-on que meme s'il a ferme <b>depuis chez lui</b> ou <b>de l'interieur</b> (sans voir la plaie), la quarantaine est <b>valable</b> ? Du verset '<b>et il fermera la maison</b>' — en tout etat de cause. Preuve que la plaie reste dans sa <b>presomption</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַב אַחָא בַּר יַעֲקֹב,</div>
+            <div class="fr"><p>Et Rav Aha bar Yaakov [interprete la braita selon son avis]...</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְרַב אֲחָא</b> אָמַר לָךְ מֵהָא לָא תּוֹתָבָן דְּאִיכָּא לְאוֹקְמֵי:</div>
+          <div class="glose-fr">Et Rav Aha — peut te dire : de ceci ne m&#x27;objecte pas, car il y a [moyen de l&#x27;]etablir [autrement].</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Et Rav Aha bar Yaakov, lui, <b>interprete la braita autrement</b> (pour la concilier avec son opinion) — la suite explicite sa reponse.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Chullin_10a.html">&lsaquo; Chullin 10a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Chullin_11a.html">Chullin 11a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

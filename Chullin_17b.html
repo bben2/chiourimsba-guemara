@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chullin 17b — l&#x27;entaille happante ou accrochante, et l&#x27;examen du couteau (bedikat ha-sakin)</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Chullin 17b — l&#x27;entaille happante ou accrochante, et l&#x27;examen du couteau (bedikat ha-sakin)</h1>
+    <div class="ref">Chullin 17b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Chullin_17a.html">&lsaquo; Chullin 17a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Chullin_18a.html">Chullin 18a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> La braita distingue les entailles du couteau : plusieurs entailles = comme une scie (invalide) ; une seule entaille happante (ogeret, a deux crocs) invalide, accrochante d&#x27;un seul cote (mesukhseket) valide. Rabbi Eliezer et la Guemara precisent la geometrie (deux crocs contre un), et Rava degage trois mesures : ogeret (interdit, invalide a posteriori), mesukhseket (interdit a priori, valide a posteriori si l&#x27;on a mene sans ramener en tete de lame), et oleh ve-yored (permis meme a priori).</p><p>Rav Hisda rattache l&#x27;examen du couteau a un verset (Saul : &#x27;egorgez avec ceci&#x27;), mais la Guemara conclut [que] l&#x27;obligation de le montrer a un sage est rabbinique, le verset n&#x27;etant qu&#x27;un appui. Suivent les procedes d&#x27;examen (soleil, eau, langue, cheveu) et la regle de Rav Papa : chair, ongle et les trois faces.</p><p>Enfin Resh Lakich enumere trois entailles de meme mesure (os du pascal, oreille du premier-ne, defaut des consacres), a quoi Rav Hisda ajoute l&#x27;entaille du couteau, toutes mesurees comme l&#x27;entaille qui invalide l&#x27;autel.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 232" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="232" fill="#fffdf8"/>
+  <text x="360" y="22" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Les trois mesures de l'entaille (Rava)</text>
+  <rect x="20" y="38" width="212" height="176" rx="10" fill="#fdeaea" stroke="#b91c1c"/>
+  <text x="126" y="60" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b91c1c">Ogeret (happante)</text>
+  <line x1="44" y1="92" x2="208" y2="92" stroke="#a8a29e" stroke-width="2"/>
+  <path d="M104,92 L114,108 L124,92" fill="none" stroke="#b91c1c" stroke-width="2"/>
+  <path d="M104,92 L101,84 L107,92 Z" fill="#b91c1c"/>
+  <path d="M124,92 L121,84 L127,92 Z" fill="#b91c1c"/>
+  <text x="126" y="126" text-anchor="middle" font-size="10.5" fill="#78716c">deux crocs</text>
+  <text x="126" y="156" text-anchor="middle" font-size="11.5" fill="#292524">ne pas abattre ;</text>
+  <text x="126" y="176" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b91c1c">si abattu : INVALIDE</text>
+  <rect x="254" y="38" width="212" height="176" rx="10" fill="#fef3e2" stroke="#b45309"/>
+  <text x="360" y="60" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b45309">Mesukhseket</text>
+  <line x1="278" y1="92" x2="442" y2="92" stroke="#a8a29e" stroke-width="2"/>
+  <path d="M338,92 L348,108 L358,92" fill="none" stroke="#b45309" stroke-width="2"/>
+  <path d="M338,92 L335,84 L341,92 Z" fill="#b45309"/>
+  <circle cx="358" cy="92" r="2.5" fill="#15803d"/>
+  <text x="360" y="126" text-anchor="middle" font-size="10.5" fill="#78716c">un seul croc (l'autre lisse)</text>
+  <text x="360" y="150" text-anchor="middle" font-size="11.5" fill="#292524">pas a priori ;</text>
+  <text x="360" y="168" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b45309">si abattu : VALIDE</text>
+  <text x="360" y="188" text-anchor="middle" font-size="9.5" fill="#78716c">(tete de lame, mene sans ramener)</text>
+  <rect x="488" y="38" width="212" height="176" rx="10" fill="#eafaf1" stroke="#15803d"/>
+  <text x="594" y="60" text-anchor="middle" font-size="12.5" font-weight="700" fill="#15803d">Oleh ve-yored</text>
+  <path d="M512,92 Q594,116 676,92" fill="none" stroke="#a8a29e" stroke-width="2"/>
+  <text x="594" y="126" text-anchor="middle" font-size="10.5" fill="#78716c">depression lisse, sans croc</text>
+  <text x="594" y="158" text-anchor="middle" font-size="11.5" fill="#292524">on abat</text>
+  <text x="594" y="178" text-anchor="middle" font-size="11.5" font-weight="700" fill="#15803d">meme a priori</text>
+</svg></div>
+          <figcaption>Les trois mesures de Rava (segment 2) : statut a priori et a posteriori de chaque type d&#x27;entaille.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 720 214" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="720" height="214" fill="#fffdf8"/>
+  <text x="360" y="22" text-anchor="middle" font-size="15" font-weight="700" fill="#1c1917">Comment examiner le couteau (bedikat ha-sakin)</text>
+  <rect x="16" y="36" width="163" height="96" rx="9" fill="#f5f5f4" stroke="#a8a29e"/>
+  <text x="97" y="58" text-anchor="middle" font-size="11.5" font-weight="700" fill="#4338ca">Terre d'Israel</text>
+  <text x="97" y="82" text-anchor="middle" font-size="11" fill="#292524">au soleil</text>
+  <text x="97" y="102" text-anchor="middle" font-size="10" fill="#78716c">l'entaille se voit</text>
+  <text x="97" y="116" text-anchor="middle" font-size="10" fill="#78716c">dans l'ombre</text>
+  <rect x="191" y="36" width="163" height="96" rx="9" fill="#f5f5f4" stroke="#a8a29e"/>
+  <text x="272" y="58" text-anchor="middle" font-size="11.5" font-weight="700" fill="#4338ca">Nehardea</text>
+  <text x="272" y="82" text-anchor="middle" font-size="11" fill="#292524">sur l'eau</text>
+  <text x="272" y="102" text-anchor="middle" font-size="10" fill="#78716c">le croc trace</text>
+  <text x="272" y="116" text-anchor="middle" font-size="10" fill="#78716c">un sillon</text>
+  <rect x="366" y="36" width="163" height="96" rx="9" fill="#f5f5f4" stroke="#a8a29e"/>
+  <text x="447" y="58" text-anchor="middle" font-size="11.5" font-weight="700" fill="#4338ca">Rav Chechet</text>
+  <text x="447" y="82" text-anchor="middle" font-size="11" fill="#292524">du bout</text>
+  <text x="447" y="100" text-anchor="middle" font-size="11" fill="#292524">de la langue</text>
+  <rect x="541" y="36" width="163" height="96" rx="9" fill="#f5f5f4" stroke="#a8a29e"/>
+  <text x="622" y="58" text-anchor="middle" font-size="11.5" font-weight="700" fill="#4338ca">Rav Aha b. Yaakov</text>
+  <text x="622" y="82" text-anchor="middle" font-size="11" fill="#292524">avec un cheveu</text>
+  <text x="622" y="102" text-anchor="middle" font-size="10" fill="#78716c">il s'accroche</text>
+  <text x="622" y="116" text-anchor="middle" font-size="10" fill="#78716c">a l'entaille</text>
+  <rect x="16" y="146" width="688" height="56" rx="9" fill="#eef2ff" stroke="#4338ca"/>
+  <text x="360" y="168" text-anchor="middle" font-size="11.5" font-weight="700" fill="#4338ca">La regle (Rav Papa ; appliquee devant Rav Achi)</text>
+  <text x="360" y="190" text-anchor="middle" font-size="11" fill="#292524">chair (pour l'oesophage, mou) + ongle (pour la trachee, dur) + les trois faces de la lame</text>
+</svg></div>
+          <figcaption>Les procedes d&#x27;examen du couteau (segments 7-10) et la regle pratique retenue.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">סַכִּין שֶׁיֵּשׁ בָּהּ פְּגִימוֹת הַרְבֵּה – תִּידּוֹן כִּמְגֵירָה, וְשֶׁאֵין בָּהּ אֶלָּא פְּגִימָה אַחַת: אוֹגֶרֶת – פְּסוּלָה, מְסֻוכְסֶכֶת – כְּשֵׁרָה. הֵיכִי דָּמְיָא אוֹגֶרֶת? הֵיכִי דָּמְיָא מְסֻוכְסֶכֶת? אָמַר רַבִּי אֱלִיעֶזֶר: אוֹגֶרֶת – מִשְׁתֵּי רוּחוֹת, מְסֻוכְסֶכֶת – מֵרוּחַ אַחַת.</div>
+            <div class="fr"><p>Un couteau qui presente de nombreuses entailles — il est juge comme une scie [invalide]. Et celui qui ne presente qu&#x27;une seule entaille : [si elle est] happante (ogeret) — invalide ; [si elle est] accrochante d&#x27;un seul cote (mesukhseket) — valide.</p><p>A quoi ressemble une [entaille] happante ? A quoi ressemble une [entaille] mesukhseket ?</p><p>Rabbi Eliezer a dit : happante — [a croc] des deux cotes ; mesukhseket — d&#x27;un seul cote.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(5)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>סַכִּין שֶׁיֵּשׁ בָּהּ פְּגִימוֹת הַרְבֵּה תִּידּוֹן כִּמְגֵירָה</b> וְאֵין בָּהּ חִילּוּק בֵּין אוֹגֶרֶת לִמְסֻוכְסֶכֶת שָׁאפֵי&#x27; כֻּולָּם מְסֻוכְסָכוֹת פְּסוּלָה דִּמְסֻוכְסֶכֶת הַייְנוּ שֶׁאֵין לִפְגִימָה אֶלָּא עֹוקֶץ אֶחָד וְעֹוקֶץ הַשֵּׁנִי הֻוחְלַק בְּמַשְׁחֶזֶת וּמַכְשְׁרִינַן לָהּ לְקַמָּן כִּי אִיכָּא חֲדָא פְּגִימָה בְּשֶׁהוֹלִיךְ וְלֹא הֵבִיא שֶׁלֹּא פָּגְעָה הַשְּׁחִיטָה בָּעֹוקֶץ מִשֶּׁהִגִּיעַ לְסִימָנִין:</div>
+          <div class="glose-fr">Un couteau qui presente de nombreuses entailles, il est juge comme une scie — et l&#x27;on n&#x27;y fait pas de distinction entre [entaille] happante et mesukhseket, car meme [si] toutes [sont] mesukhsekot, [c&#x27;est] invalide ; car &#x27;mesukhseket&#x27; signifie que l&#x27;entaille n&#x27;a qu&#x27;un seul croc (oketz), le second croc ayant ete lisse a la meule (machkhezet) ; et nous la validons plus loin, lorsqu&#x27;il n&#x27;y a qu&#x27;une seule entaille, [dans le cas] ou il a mene [le couteau] sans [le] ramener, de sorte que l&#x27;abattage n&#x27;a pas heurte le croc une fois parvenu aux simanim.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהוּא דְּקַייְמָא אַרֵישָׁא דְּסַכִּינָא</b> שֶׁכְּשֶׁהִגִּיעַ לְעֹוקֶץ עֲדַייִן לֹא נֶחְתְּכוּ הָעוֹר וְהַבָּשָׂר שֶׁיִּקְרַע הָעֹוקֶץ אֶת הַסִּימָן בִּירִידָתוֹ אֲבָל כָּאן שֶׁיֵּשׁ פְּגִימוֹת הַרְבֵּה אֲפִילּוּ כֻּולָּן מְסֻוכְסָכוֹת עֹוקֶץ שֶׁל פְּגָם הָרִאשׁוֹן מַחֲלִישׁ הָעוֹר וְהַבָּשָׂר וְהַפְּגָם הַשֵּׁנִי בָּא לְסִימָן וְקוֹרְעוֹ. וְהָא דִּתְנַן (לְקַמָּן חֻולִּין דַּף יח.) הַשּׁוֹחֵט בְּמַגַּל קָצִיר דֶּרֶךְ הֲלִיכָתָהּ בֵּית הִלֵּל מַכְשִׁירִין מִפְּנֵי שֶׁמַּגַּל קָצִיר עֻוקְצֵי הַפְּגִימוֹת כְּפוּפִים מְאֹד מְאֹד וְאֵין קוֹרְעִים דֶּרֶךְ הֲלִיכָתָם כְּלָל אֲבָל עֹוקֶץ שֶׁאֵינוֹ כָּפוּף קוֹרֵעַ אַפֵּי&#x27; בִּירִידָתוֹ שֶׁהַסִּימָן יוֹרֵד מִמֶּנּוּ וְנִכְנָס לְתוֹךְ הַפְּגָם:</div>
+          <div class="glose-fr">Et c&#x27;est lorsqu&#x27;elle se tient au debut (a la tete) de la lame — car, quand [le couteau] est parvenu au croc, le cuir et la chair n&#x27;avaient pas encore ete coupes [au point] que le croc dechire le siman dans sa descente ; mais ici, ou il y a de nombreuses entailles, meme [si] toutes [sont] mesukhsekot, le croc de la premiere entaille affaiblit le cuir et la chair, et la seconde entaille parvient au siman et le dechire. Et ce que nous avons appris (plus loin, Houlin 18a) &#x27;celui qui abat avec une faucille a moissonner dans le sens de sa marche, Beit Hillel valident&#x27; — c&#x27;est parce que les crocs des entailles d&#x27;une faucille a moissonner sont tres tres recourbes et ne dechirent nullement dans le sens de leur marche ; mais un croc qui n&#x27;est pas recourbe dechire meme dans sa descente, car le siman en descend et penetre dans l&#x27;entaille.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מְסֻוכְסֶכֶת כְּשֵׁרָה</b> וּכְדִמְפָרֵשׁ וְאָזֵיל:</div>
+          <div class="glose-fr">Mesukhseket [est] valide — comme [le texte l&#x27;]explique en poursuivant.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִשְּׁנֵי רוּחוֹת</b> שֶׁיֵּשׁ ב&#x27; עוֹקְצִים לִפְגָם אֶחָד לְרֹאשׁוֹ וְאֶחָד לְסוֹפוֹ. אוֹגֶרֶת לָשׁוֹן (מִשְׁלֵי ו) אָגְרָה בַּקָּצִיר מַאֲכָלָהּ לְשׁוֹן אֲסִיפָה שֶׁאוֹגֶרֶת הַצִּיפֹּורֶן לְתוֹכָהּ בֵּין ב&#x27; עֻוקְצֵיהּ:</div>
+          <div class="glose-fr">Des deux cotes — qu&#x27;il y a deux crocs a une seule entaille, l&#x27;un a sa tete et l&#x27;un a son extremite. &#x27;Ogeret&#x27; [est] un terme [de] (Proverbes 6) &#x27;agra bakatzir maakhala&#x27; [elle engrange sa nourriture en moisson], un terme de rassemblement (assifa), car elle &#x27;engrange&#x27; l&#x27;ongle en elle, entre ses deux crocs.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מֵרוּחַ אַחַת</b> שֶׁאֵין לִפְגִימָה אֶלָּא עֹוקֶץ אֶחָד וְהַשֵּׁנִי הֻוחְלַק בְּמַשְׁחֶזֶת וְאֵינָהּ אוֹגֶרֶת אֶלָּא מְסֻוכְסֶכֶת הַסַּכִּין וְהַבָּשָׂר. וּלְשׁוֹן סִכְסוּךְ אנמשלי&quot;ר בְּלַעַ&quot;ז כְּמוֹ (יְשַׁעְיָהוּ יט) וְסִכְסַכְתִּי מִצְרַיִם בְּמִצְרָיִם:</div>
+          <div class="glose-fr">D&#x27;un seul cote — que l&#x27;entaille n&#x27;a qu&#x27;un seul croc, et le second a ete lisse a la meule ; et elle n&#x27;engrange pas, mais &#x27;accroche-frotte&#x27; (mesakhsekhet) le couteau et la chair. Le terme &#x27;sikhsoukh&#x27; [est] &#x27;anmachlir&#x27; en langue vernaculaire, comme (Isaie 19) &#x27;vesikhsachti mitzrayim be-mitzrayim&#x27;.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">ת&quot;ר סַכִּין שֶׁיֵּשׁ בָּהּ פְּגִימוֹת הַרְבֵּה נִידּוֹן כִּמְגֵירָה אֲפִילּוּ כֻּולָּן מְסֻוכְסֶכֶת וְשֶׁאֵין בָּהּ אֶלָּא פְּגִימָה אַחַת. אוֹגֶרֶת פְּסוּלָה. מְסֻוכְסֶכֶת כְּשֵׁירָה. עוֹלֶה וְיוֹרֵד מֻותָּר לִשְׁחֹוט בָּהּ לְכַתְּחִלָּה. הֵיכִי דָמֵי אוֹגֶרֶת הֵיכִי דָמֵי מְסֻוכְסֶכֶת. אוֹגֶרֶת מִשְׁתֵּי רוּחוֹת. מְסֻוכְסֶכֶת מֵרוּחַ אַחַת שֶׁאֵין לִפְגִימָה אֶלָּא עֹוקֶץ אֶחָד וְהַשֵּׁנִי הֻוחְלַק בְּמַשְׁחֶזֶת. מַאי שְׁנָא מִשְׁתֵּי רוּחוֹת דְּמֻורְשָׁא קַמָּא מַחְלֵישׁ. פֵּירוּשׁ חוֹתֵךְ עוֹר וּבָשָׂר. וּמֻורְשָׁא בָּתְרָא בָּזַע פּוֹגֵעַ בַּסִּימָן וְקוֹרֵעַ. מֵרוּחַ אַחַת נָמֵי חֻורְפָּא דְּסַכִּינָא מַחְלֵישׁ וּמֻורְשָׁא בָּתְרָא בָּזַע. דְּכָל עֻוקְצֵי הַפְּגָם קוֹרְעִין הֵן וְאֵין חוֹתְכִין בֵּין בְּפוֹגְעוֹ בּוֹ וּבֵין שֶׁהוּא יוֹרֵד מִמֶּנּוּ שֶׁהֲרֵי שָׁנִינוּ סַכִּין שֶׁיֵּשׁ בָּהּ פְּגִימוֹת הַרְבֵּה נִדּוֹן כִּמְגֵירָה וַאֲפִילּוּ כֻּולָּן מְסֻוכְסָכוֹת. מִדְּקָמְפַלֵּיג בַּחֲדָא בֵּין אוֹגֶרֶת לִמְסֻוכֶּנֶת וּבְטוּבָא לָא מְפַלֵּיג מַשְׁמַע דַּאֲפִילּוּ כָּל עֻוקְצֵיהֶן מִצַּד אֶחָד לְצַד רֹאשׁ הַסַּכִּין וְהוֹלִיךְ וְלֹא הֵבִיא בִּירִידָתוֹ נָמֵי קוֹרֵעַ. דְּקָאֵי אַרֵישָׁא דְּסַכִּינָא. סוֹף סוֹף כִּי אָזְלָא מַחְלְשָׁא וְכִי אָתְיָא בָּזַע. כְּגוֹן שֶׁהוֹלִיךְ וְלֹא הֵבִיא. אָמַר רָבָא שָׁלֹשׁ מִדּוֹת בְּסַכִּין. אוֹגֶרֶת לֹא יִשְׁחֹוט וְאִם שָׁחַט שְׁחִיטָתוֹ פְּסוּלָה. מְסֻוכְסֶכֶת לֹא יִשְׁחֹוט וְאִם שָׁחַט שְׁחִיטָתוֹ כְּשֵׁירָה. עוֹלֶה וְיוֹרֵד מֻותָּר לִשְׁחֹוט בָּהּ לְכַתְּחִלָּה. א&quot;ל רַב הוּנָא בְּרֵיהּ דְּרַב נִחוּמִי לְרַב אָשֵׁי אֲמַרְתְּ לַן מִשְּׁמֵיהּ דְּרָבָא מְסֻוכְסֶכֶת פְּסוּלָה וְהָאָמַר רָבָא מְסֻוכְסֶכֶת כְּשֵׁירָה. לָא קַשְׁיָא כָּאן שֶׁהוֹלִיךְ וְהֵבִיא כָּאן שֶׁהוֹלִיךְ וְלֹא הֵבִיא. וּדְקַיְימָא נָמֵי אַרֵישָׁא דְּסַכִּינָא כִּדְשַׁנִּי הַשַּׁ&quot;ס לְעֵיל. וְרַב אִלְפָּס כָּתַב מְסֻוכְסֶכֶת דְּקָאָמַר רָבָא שְׁחִיטָתוֹ כְּשֵׁירָה כְּשֶׁהוֹלִיךְ וְלֹא הֵבִיא אֲבָל אִם הוֹלִיךְ וְהֵבִיא שְׁחִיטָתוֹ פְּסוּלָה. וְלֹא כָּתַב דְּקַיְימָא אַרֵישָׁא דְּסַכִּינָא וּמַשְׁמַע שֶׁאֵין רוֹצֶה לוֹמַר שֶׁהָעֹוקֶץ קוֹרֵעַ כְּשֶׁהוּא יוֹרֵד מִמֶּנּוּ וְכָךְ הוּא מְפָרֵשׁ מֵרוּחַ אַחַת נָמֵי חֻורְפָּא דְּסַכִּינָא מַחְלֵישׁ וּמֻורְשָׁא בָּזַע דְּקָאֵי אַרֵישָׁא דְּסַכִּינָא כְּלוֹמַר שֶׁהָעֹוקֶץ עוֹמֵד כְּלַפֵּי הָרֹאשׁ וְאָז אֵינוֹ קוֹרֵעַ בִּירִידָתוֹ לְתוֹכוֹ. סוֹף סוֹף כִּי אָזְלָא מַחְלְשָׁא וְכִי אָתְיָא בָּזַע. כְּגוֹן שֶׁהוֹלִיךְ וְלֹא הֵבִיא וַאֲפִילּוּ עוֹמֶדֶת בְּאֶמְצַע כְּגוֹן שֶׁהָעֹוקֶץ לְצַד הָרֹאשׁ וְהוֹלִיךְ וְלֹא הֵבִיא כָּשֵׁר. וְכֵן אִם הָעֹוקֶץ לְצַד הַקַּתָּא וְהֵבִיא וְלֹא הוֹלִיךְ כְּשֵׁירָה וּמִיהוּ אַף לְפֵירוּשׁ זֶה הָיָה צָרִיךְ שֶׁיָּבִיא בְּהִלְכוֹתָיו דְּקַיְימָא אַרֵישָׁא דְּסַכִּינָא כֵּיוָן שֶׁאִם הָיָה הָעֹוקֶץ צָרִיךְ לְצַד הַקַּתָּא צָרִיךְ שֶׁיָּבִיא וְלֹא יוֹלִיךְ. וּפֵירוּשׁ רַשִׁ&quot;י עִיקָּר דְּמוֹכְחָא סֻוגְיָא דִּשְׁמַעְתִּין שֶׁהָעֹוקֶץ קוֹרֵעַ אַף דֶּרֶךְ יְרִידָתוֹ וְהָרַמְבַּ&quot;ם זַ&quot;ל כָּתַב סַכִּין שֶׁתִּבָּדֵק בַּהוֹלָכָה וְלֹא תַּרְגִּישׁ שֶׁיֵּשׁ שָׁם פְּגָם וּכְשֶׁתַּחֲזֹור וְתִבְדֹּוק אוֹתָהּ בַּהֲבָאָה תַּרְגִּישׁ שֶׁיֵּשׁ שָׁם פְּגָם אִם שָׁחַט בָּהּ דֶּרֶךְ הוֹלָכָה וְלֹא הֵבִיא שְׁחִיטָתוֹ כְּשֵׁירָה וְאִם הֵבִיא שְׁחִיטָתוֹ פְּסוּלָה. וּדְבָרָיו נְכוֹחִין שֶׁאִם עֹוקֶץ הַפְּגִימָה הָיָה לְצַד הָרֹאשׁ וּכְשֶׁהוֹלִיךְ אֶצְבָּעוֹ עָלֶיהָ לֹא הִרְגִּישׁ בִּפְגִימָה כְּלַל דָּבָר יָדוּעַ הוּא כְּמוֹ שֶׁלֹּא הִרְגִּישׁ בָּהּ בְּאֶצְבָּעוֹ כָּךְ לֹא תִּקָּרַע בַּסִּימָן. אֲבָל דַּעַת רְחוֹקָה הוּא כֵּיוָן שֶׁזְּקוּפָה הִיא מִצַּד אֶחָד הֵיאַךְ לֹא יַרְגִּישׁ בְּאֶצְבָּעוֹ כְּשֶׁהוּא יוֹרֵד לְתוֹכָהּ. דִּמְסֻוכְסֶכֶת הִיא מִצַּד אֶחָד כְּמוֹ אוֹגֶרֶת מִשְׁתֵּי הָרוּחוֹת וְאוֹגֶרֶת אָמַר דְּמֻורְשָׁא קַמָּא מַחְלֵישׁ וּמֻורְשָׁא בָּתְרָא בָּזַע אַלְמָא בְּאוֹגֶרֶת בֵּין בִּירִידָתָהּ בֵּין בַּעֲלִיָּיתָהּ לְעוֹלָם הוּא מַרְגִּישׁ בִּשְׁנֵי חֻודֵּי הַפְּגִימָה. וְכֵן בִּמְסֻוכְסֶכֶת נָמֵי הוּא מַרְגִּישׁ בְּתוֹדָה שֶׁל הַפְּגִימָה בֵּין בִּירִידָתָהּ בֵּין בַּעֲלִייָּתָהּ. וְסַכִּינָא חָרִיפָא דְּדָמְיָא לְסַאסְּאָה שֶׁהָאֶצְבַּע מְסַכְסֵךְ בָּהּ אֲבָל אֵין בָּהּ פְּגִימָה כְּשֵׁירָה. וְכֵיוָן דִּפְגִימָה קוֹרַעַת צָרִיךְ לִבְדֹּוק הַסַּכִּין תְּחִלָּה. וּבְמַעֲרָבָא בָּדְקִי לָהּ בְּשִׁמְשָׁא. וּבִנְהַרְדְּעָא בָּדְקִי לָהּ בְּמַיָּא. בְּסוּרָא אָמְרִי בִּשְׂרָא אָכְלָה בִּשְׂרָא בְּדִיק לָהּ. וְהִילְכְתָא צְרִיכָא אַבִּשְׂרָא וְאַטֻּופְרָא וְאַתְּלָתָא רוּחָתָא. אַבִּשְׂרָא בִּשְׁבִיל הַוֶּושֶׁט שֶׁהוּא רַךְ. וְאַטֻּופְרָא בִּשְׁבִיל הַקָּנֶה. וְאַתִּלְתָּא רוּחָתָא לְפִי שֶׁאֶפְשָׁר שֶׁיֵּשׁ בְּצַד הַסַּכִּין דָּבָר הַבּוֹלֵט מִמֶּנּוּ וְאֵינוֹ מַרְגִּישׁ בּוֹ כְּשֶׁבּוֹדְקָהּ עַל חֻודָּהּ וְאוֹתָהּ הַבְּלִיטָה קוֹרַעַת הַסִּימָנִים מִן הַצְּדָדִין וְלָא אָמְרִינַן בֵּית הַשְּׁחִיטָה מִירְווָח רָווַח לְעִנְיַן פְּגִימָה שֶׁהִיא בְּצִידֵּי הַסַּכִּין כִּדְפֵירַשְׁנוּ לְעֵיל סִי&#x27; ח הִילְכָּךְ צָרִיךְ לִבְדֹּוק בְּהוֹלָכָה וְהוֹבָאָה עַל חֻודָּהּ בַּבָּשָׂר וְאַחַר כָּךְ בְּהוֹלָכָה וְהוֹבָאָה בַּצִּפֹּורֶן. דְּאֵינוֹ מַרְגִּישׁ יָפֶה בְּיַחַד בַּבָּשָׂר וּבַצִּפֹּורֶן. וְכֵן מִשְּׁנֵי צִידֵּי הַסַּכִּין. וְהֵם שְׁנֵים עָשָׂר בֵּין הַכֹּל. וְאַסְמַכְתָּא וּשְׁחַטְתֶּם בָּזֶה: אָמַר רַב הוּנָא בַּר קַטִּינָא אָמַר רַבִּי שִׁמְעוֹן בֶּן לָקִישׁ שָׁלֹשׁ פְּגִימוֹת הֵן. פְּגִימַת עֶצֶם בְּפֶסַח. פְּגִימַת אֹזֶן בִּבְכוֹרָה פְּגִימַת מוּם בְּקָדָשִׁים. וְרַב חִסְדָּא אָמַר אַף פְּגִימַת סַכִּין. וְאִידַּךְ בְּחֻולִּין לָא קָא מַיְירֵי. וְכֻולָּן פְּגִימָתָן כִּפְגִימַת הַמִּזְבֵּחַ וְכַמָּה פְּגִימַת הַמִּזְבֵּחַ כְּדֵי שֶׁתַּחְגֹּור בָּהּ צִפֹּורֶן. רַב אִלְפָּס זַ&quot;ל לֹא הֵבִיא הַךְ דְּרַב חִסְדָּא. יֵשׁ מְפָרֵשׁ דַּעְתּוֹ שֶׁהוּא סוֹבֵר דְּהָנָךְ דְּבָדְקִי בְּשִׁמְשָׁא וּבְמַיָּא וְרַב פָּפָּא דְּבָדַק אַבִּשְׂרָא וְאַטֻּופְרָא פְּלִיגִי אַדְּרַב חִסְדָּא וְסָבְרִי דְּבִפְגִימָה כָּל דְּהוּ טָרְפִינַן וַאֲפִילּוּ אֵין הַצִּפֹּורֶן חוֹגֶרֶת בּוֹ. וְלִי נִרְאֶה כֵּיוָן דְּפָסַק דְּבָעֵינַן לִבְדֹּוק אַבִּשְׂרָא וְאַטֻּופְרָא הַייְנוּ כְּדֵי שֶׁתַּחְגֹּור בָּהּ צִפֹּורֶן דְּכָל פְּגִימָה שֶׁהוּא מַרְגִּישׁ בַּצִּפֹּורֶן הַייְנוּ שֶׁתַּחְגֹּור בָּהּ הַצִּפֹּורֶן הִלְכָּךְ לֹא הֻוצְרַךְ לְהַזְכִּיר הַהִיא דְּרַב חִסְדָּא: אָמַר רַב הוּנָא הַאי טַבָּחָא דְּלָא סָר סַכִּינָא קַמֵּי חָכָם הָיוּ מְשַׁמְּתִינַן לֵיהּ רָבָא אֲמַר מְעַבְּרִינַן לֵיהּ וּמַכְרְזִינַן אַבִּישְׂרֵיהּ דִּטְרֵפָה הִיא. וְלָא פְּלִיגִי כָּאן שֶׁנִּמְצֵאת סַכִּינוֹ יָפָה כָּאן שֶׁלֹּא נִמְצֵאת סַכִּינוֹ יָפָה. וּתְמֵיהֵנִי לָמָּה לֹא הֵבִיא רַב אִלְפָּס זַ&quot;ל הַךְ דְּרָבִינָא דְּהוּא בָּתְרָאָה דְּקָאָמַר הֵיכָא דְּלֹא נִמְצֵאת סַכִּינוֹ יָפָה מְמַסְמֵס לֵיהּ בְּפַרְתָּא דַּאֲפִילּוּ לְעוֹבֵד כּוֹכָבִים לָא מְזַבֵּן לֵיהּ. וְהָאִידָּנָא נְהִיגִי שֶׁאֵין מַרְאִין סַכִּין לְחָכָם כִּי בִּימֵיהֶם הָיוּ הַקַּצָּבִין שׁוֹחֲטִין בְּעַצְמָם כִּדְאָמְרִינַן הַאי טַבָּחָא דְּלָא סָר סַכִּינָא. וְהָשְׁתָּא נָהוּג בְּכָל גָּלוּת יִשְׂרָאֵל שֶׁאֵין מַאֲמִינִים לַקַּצָּבִים וּמְמַנִּים אֲנָשִׁים יְדוּעִים עַל הַשְּׁחִיטָה וְעַל הַבְּדִיקָה וְלָהֶם מָחֲלוּ חֲכָמִים אֶת כְּבוֹדָם כִּי הֵן זְרִיזִין וּזְהִירִין. וּמִתּוֹךְ כָּךְ נִתְבַּטֵּל בְּדִיקַת הֶחָכָם לְגַמְרֵי אַף אָדָם הַשּׁוֹחֵט בְּבֵיתוֹ אַף כִּי אֵינוֹ נָכוֹן כִּי הַרְבֵּה צָרִיךְ יִשּׁוּב דַּעַת וְיִרְאַת שָׁמַיִם לִבְדִיקַת סַכִּין : הַשּׁוֹחֵט בְּמַגַּל קָצִיר בַּדֶּרֶךְ הֲלִיכָתָהּ ב&quot;ש פּוֹסְלִין וב&quot;ה מַכְשִׁירִין. א&quot;ר חַיָּיא בַּר אַבָּא א&quot;ר יוֹחָנָן אַף כְּשֶׁהִכְשִׁירוּ בֵּית הִלֵּל לֹא הִכְשִׁירוּ אֶלָּא לְטַהֲרָהּ מִידֵי נְבֵלָה אֲבָל בַּאֲכִילָה אֲסוּרָה:</div>
+          <div class="glose-fr">Nos maitres ont enseigne : un couteau qui presente de nombreuses entailles est juge comme une scie, meme [si] toutes [sont] mesukhseket (accrochantes d&#x27;un seul cote) ; et celui qui ne presente qu&#x27;une seule entaille : [si elle est] happante (ogeret) — invalide ; mesukhseket — valide ; [si le couteau] monte et descend (oleh ve-yored) — il est permis d&#x27;abattre avec, a priori (lekhatchila). A quoi ressemble une [entaille] happante ? A quoi ressemble une [entaille] mesukhseket ? Happante — [a croc] des deux cotes ; mesukhseket — d&#x27;un seul cote, car l&#x27;entaille n&#x27;a qu&#x27;un seul croc (oketz), le second ayant ete lisse a la meule (machkhezet). En quoi differe [le cas] &#x27;des deux cotes&#x27; [au point qu&#x27;il soit invalide] ? [Reponse :] parce que la premiere arete (morcha kama) affaiblit — explication : elle coupe le cuir et la chair — et la derniere arete (morcha batra) fend, [c&#x27;est-a-dire] heurte le siman et le dechire. &#x27;D&#x27;un seul cote&#x27; aussi, le tranchant du couteau (churfa de-sakina) affaiblit et la derniere arete fend ! Car tous les crocs de l&#x27;entaille dechirent et ne coupent pas, que ce soit en [la] heurtant ou lorsqu&#x27;[il] descend d&#x27;elle ; car nous avons appris [dans la braita] &#x27;un couteau qui presente de nombreuses entailles est juge comme une scie&#x27;, et [ce] meme [si] toutes [sont] mesukhsekot. Du fait qu&#x27;il distingue, pour une seule [entaille], entre happante et mesukhseket, mais pour de nombreuses [entailles] il ne distingue pas, [cela] implique [que] meme [si] tous leurs crocs [sont] d&#x27;un seul cote, vers la tete du couteau, et [qu&#x27;]il a mene sans ramener, elle dechire aussi dans sa descente. [Reponse :] [c&#x27;est le cas] ou elle se tient au debut (a la tete) de la lame. En fin de compte, lorsqu&#x27;elle [le couteau] va, elle affaiblit, et lorsqu&#x27;elle vient, elle fend ! [Reponse :] par exemple [le cas] ou il a mene sans ramener. Rava a dit : trois mesures [d&#x27;entaille] dans un couteau. [Entaille] happante — il n&#x27;abattra pas, et [s&#x27;]il a abattu, son abattage (chehita) [est] invalide (passoul). Mesukhseket — il n&#x27;abattra pas, et [s&#x27;]il a abattu, son abattage [est] valide (kacher). [Couteau qui] monte et descend — il est permis d&#x27;abattre avec, a priori. Rav Houna fils de Rav Nihoumi dit a Rav Achi : tu nous as dit, au nom de Rava, [que] mesukhseket [est] invalide ; or Rava a [aussi] dit [que] mesukhseket [est] valide ! Ce n&#x27;est pas une difficulte : ici [ou elle est invalide, c&#x27;est le cas] ou il a mene et ramene ; la [ou elle est valide, c&#x27;est le cas] ou il a mene sans ramener. Et [c&#x27;est aussi] lorsqu&#x27;elle se tient au debut de la lame, comme le Chas (le Talmud) [l&#x27;]a resolu plus haut. Et Rav Alfas (le Rif) a ecrit : la mesukhseket dont Rava a dit [que] son abattage [est] valide, [c&#x27;est] lorsqu&#x27;il a mene sans ramener ; mais s&#x27;il a mene et ramene, son abattage [est] invalide. Et il n&#x27;a pas ecrit [qu&#x27;il faut] qu&#x27;elle se tienne au debut de la lame, [ce qui] implique qu&#x27;il ne veut pas dire que le croc dechire lorsqu&#x27;[il] descend d&#x27;elle ; et voici comment il explique : &#x27;d&#x27;un seul cote&#x27; aussi le tranchant du couteau affaiblit et l&#x27;arete fend — [c&#x27;est] lorsqu&#x27;elle se tient au debut de la lame, c&#x27;est-a-dire que le croc est dresse vers la tete, et alors il ne dechire pas dans sa descente en elle [l&#x27;entaille]. En fin de compte, lorsqu&#x27;elle va, elle affaiblit, et lorsqu&#x27;elle vient, elle fend ! [Reponse :] par exemple [le cas] ou il a mene sans ramener. Et meme [si elle] se tient au milieu, par exemple [le cas] ou le croc est du cote de la tete et [ou] il a mene sans ramener — [c&#x27;est] valide. Et de meme, si le croc est du cote du manche (kata) et [qu&#x27;]il a ramene sans mener — [c&#x27;est] valide. Toutefois, meme selon cette explication, il [le Rif] aurait du apporter dans ses regles [le fait] qu&#x27;elle se tient au debut de la lame, puisque, si le croc etait du cote du manche, il faut qu&#x27;il ramene et ne mene pas. Et l&#x27;explication de Rachi [est] la principale, car la sougya (le fil talmudique) de notre passage prouve que le croc dechire meme dans le sens de sa descente. Et le Rambam, de memoire benie, a ecrit : un couteau que l&#x27;on examine dans le mouvement d&#x27;aller (holakha) et [ou] l&#x27;on ne percoit pas qu&#x27;il y a la une entaille, et lorsqu&#x27;on l&#x27;examine a nouveau dans le mouvement de retour (havaa) [ou] l&#x27;on percoit qu&#x27;il y a la une entaille — s&#x27;il a abattu avec, dans le sens de l&#x27;aller sans ramener, son abattage [est] valide ; et s&#x27;il a ramene, son abattage [est] invalide. Et ses propos [sont] justes, car si le croc de l&#x27;entaille etait du cote de la tete et [que], lorsqu&#x27;il a passe son doigt dessus dans le sens de l&#x27;aller, il n&#x27;a nullement percu l&#x27;entaille, [c&#x27;est] chose connue [que], de meme qu&#x27;il ne l&#x27;a pas percue avec son doigt, de meme elle ne dechirera pas le siman. Mais [c&#x27;est] une opinion eloignee [de la verite] : puisqu&#x27;elle [l&#x27;entaille] est dressee d&#x27;un seul cote, comment ne percevrait-il pas avec son doigt lorsqu&#x27;il descend en elle ? Car la mesukhseket est d&#x27;un seul cote comme la happante [est] des deux cotes ; et de la happante il a dit que la premiere arete affaiblit et la derniere arete fend — d&#x27;ou [il ressort que], dans la happante, aussi bien dans sa descente que dans sa montee, il percoit toujours les deux pointes de l&#x27;entaille. Et de meme, dans la mesukhseket aussi, il percoit la &#x27;toda&#x27; [pointe / relief] de l&#x27;entaille, aussi bien dans sa descente que dans sa montee. Et un couteau tranchant qui ressemble a une barbe d&#x27;epi (sasa), auquel le doigt &#x27;accroche&#x27; (mesakhsekh) mais qui n&#x27;a pas d&#x27;entaille — [est] valide. Et puisque l&#x27;entaille dechire, il faut examiner le couteau au prealable. En Occident (Terre d&#x27;Israel), on l&#x27;examine au soleil (chimcha) ; a Nehardea, on l&#x27;examine a l&#x27;eau (maya) ; a Soura ils disaient : [celui qui aime la] viande, [qui] mange de la viande, [c&#x27;est lui qui] l&#x27;examine. Et la halakha [est] : il faut [l&#x27;examiner] sur la chair, sur l&#x27;ongle (tsipporen) et sur les trois faces (roukhata). Sur la chair, a cause de l&#x27;oesophage (veshet) qui est mou ; sur l&#x27;ongle, a cause de la trachee (kaneh) [qui est dure] ; et sur les trois faces parce qu&#x27;il est possible qu&#x27;il y ait sur le cote du couteau un element qui en saille et qu&#x27;il ne le percoive pas lorsqu&#x27;il l&#x27;examine sur son fil, et que cette saillie dechire les simanim par les cotes. Et nous ne disons pas [que] le lieu de l&#x27;abattage (beit ha-chehita) s&#x27;elargit largement pour ce qui concerne une entaille qui est sur les cotes du couteau, comme nous [l&#x27;]avons explique plus haut, siman 8. C&#x27;est pourquoi il faut examiner en menant et en ramenant (holakha et havaa) sur son fil avec la chair, puis en menant et en ramenant avec l&#x27;ongle ; car il ne percoit pas bien, [en le faisant] a la fois avec la chair et avec l&#x27;ongle [en meme temps]. Et de meme des deux cotes du couteau. Et ils [les examens] sont douze en tout. Et [le verset] &#x27;et vous egorgerez avec ceci&#x27; [n&#x27;est qu&#x27;]un appui (asmakhta). Rav Houna bar Katina a dit au nom de Rabbi Chimon ben Lakich : il y a trois [sortes d&#x27;]entailles [de meme mesure] : l&#x27;entaille de l&#x27;os pour le [sacrifice] pascal (pessah), l&#x27;entaille de l&#x27;oreille pour le premier-ne (bekhora), l&#x27;entaille [constituant] un defaut (moum) pour les [animaux] consacres (kodachim). Et Rav Hisda a dit : [il y a] aussi l&#x27;entaille du couteau. Et l&#x27;autre [Resh Lakich] ne traite pas des [choses] profanes (houlin). Et toutes [ces entailles], leur [mesure d&#x27;]entaille [est] comme l&#x27;entaille de l&#x27;autel (mizbeah). Et quelle [est la mesure de] l&#x27;entaille de l&#x27;autel ? De quoi y accrocher un ongle. Rav Alfas (le Rif), de memoire benie, n&#x27;a pas apporte ce [propos] de Rav Hisda. Certains expliquent son avis [ainsi] : il estime que ceux qui examinent au soleil et a l&#x27;eau, et Rav Papa qui examinait sur la chair et sur l&#x27;ongle, sont en desaccord avec Rav Hisda et estiment que pour une entaille, si petite soit-elle, nous [la] declarons tereifa (interdite), et [ce] meme [si] l&#x27;ongle n&#x27;y accroche pas. Et il me semble [au Rosh] : puisqu&#x27;il [le Rif] a tranche que nous requerons un examen sur la chair et sur l&#x27;ongle, [cela signifie] &#x27;de quoi y accrocher un ongle&#x27;, car toute entaille qu&#x27;il percoit avec l&#x27;ongle, c&#x27;est [precisement] &#x27;de quoi y accrocher l&#x27;ongle&#x27; ; c&#x27;est pourquoi il n&#x27;a pas eu besoin de mentionner ce [propos] de Rav Hisda. Rav Houna a dit : ce boucher (tabaha) qui n&#x27;a pas fait examiner son couteau devant un sage (chakham), nous l&#x27;excommunions. Rava a dit : nous le destituons et nous proclamons a propos de sa viande qu&#x27;elle est tereifa. Et ils ne sont pas en desaccord : ici [ou l&#x27;on ne fait qu&#x27;excommunier, c&#x27;est le cas] ou son couteau s&#x27;est trouve bon (yafa) ; la [ou l&#x27;on declare la viande tereifa, c&#x27;est le cas] ou son couteau ne s&#x27;est pas trouve bon. Et il m&#x27;etonne [au Rosh] : pourquoi Rav Alfas, de memoire benie, n&#x27;a-t-il pas apporte ce [propos] de Ravina, qui est le dernier [en date], lequel dit : la ou son couteau ne s&#x27;est pas trouve bon, on le lui fait fondre (mesamses) dans un tas d&#x27;ordures (parta), de sorte qu&#x27;on ne le vende meme pas a un idolatre (oved kokhavim). Et de nos jours, l&#x27;usage est qu&#x27;on ne montre pas le couteau a un sage, car en leur temps les bouchers abattaient eux-memes, comme nous [le] disons : &#x27;ce boucher qui n&#x27;a pas fait examiner son couteau&#x27;. Or maintenant, l&#x27;usage dans tout l&#x27;exil d&#x27;Israel est qu&#x27;on ne fait pas confiance aux bouchers, et l&#x27;on designe des hommes attitres pour l&#x27;abattage et pour l&#x27;examen (bedika) ; et c&#x27;est a ceux-la que les sages ont renonce a leur honneur, car ils [ces preposes] sont prompts (zerizin) et scrupuleux (zehirin). Et de ce fait, l&#x27;examen [du couteau] par le sage a ete completement aboli — meme [pour] l&#x27;homme qui abat dans sa maison, bien que ce ne soit pas juste, car il faut beaucoup de posement d&#x27;esprit (yichouv da&#x27;at) et de crainte du Ciel (yirat chamayim) pour l&#x27;examen du couteau. Celui qui abat avec une faucille a moissonner (magal katzir) dans le sens de sa marche (halikha), Beit Chammai declarent [la bete] invalide et Beit Hillel [la] declarent valide (makhchirin). Rabbi Hiyya bar Abba a dit au nom de Rabbi Yohanan : meme lorsque Beit Hillel [l&#x27;]ont declaree valide, ils ne [l&#x27;]ont declaree valide que pour la purifier [du statut] de bete morte d&#x27;elle-meme (nevela) [c&#x27;est-a-dire de l&#x27;impurete], mais a la consommation elle [reste] interdite.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La braita (suite de 17a) distingue : un couteau a <b>plusieurs</b> entailles = comme une scie, <b>invalide</b>. Une <b>seule</b> entaille : si elle <b>happe</b> l'ongle des deux cotes (<b>ogeret</b>) -&gt; invalide ; si elle n'accroche que d'un cote (<b>mesukhseket</b>, l'autre arete ayant ete lissee a la meule) -&gt; valide. R. Eliezer : ogeret = deux crocs ; mesukhseket = un seul croc.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schema</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 210" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif">
+  <rect x="0" y="0" width="700" height="210" fill="#fffdf8"/>
+  <rect x="20" y="34" width="320" height="158" rx="10" fill="#fffdf8" stroke="#b91c1c"/>
+  <text x="180" y="56" text-anchor="middle" font-size="13" font-weight="700" fill="#b91c1c">Ogeret : deux crocs</text>
+  <line x1="56" y1="118" x2="304" y2="118" stroke="#a8a29e" stroke-width="3"/>
+  <path d="M158,118 L180,150 L202,118" fill="#fffdf8" stroke="#b91c1c" stroke-width="2.5"/>
+  <path d="M158,118 L154,108 L162,118 Z" fill="#b91c1c"/>
+  <path d="M202,118 L198,108 L206,118 Z" fill="#b91c1c"/>
+  <path d="M120,98 L240,98" stroke="#1c1917" stroke-width="1.4" marker-start="url(#a2)" marker-end="url(#a2)"/>
+  <text x="180" y="92" text-anchor="middle" font-size="10" fill="#1c1917">happe a l'aller ET au retour</text>
+  <text x="180" y="176" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b91c1c">-&gt; INVALIDE</text>
+  <rect x="360" y="34" width="320" height="158" rx="10" fill="#fffdf8" stroke="#b45309"/>
+  <text x="520" y="56" text-anchor="middle" font-size="13" font-weight="700" fill="#b45309">Mesukhseket : un seul croc</text>
+  <line x1="396" y1="118" x2="644" y2="118" stroke="#a8a29e" stroke-width="3"/>
+  <path d="M498,118 L520,150 L548,118" fill="#fffdf8" stroke="#b45309" stroke-width="2.5"/>
+  <path d="M498,118 L494,108 L502,118 Z" fill="#b45309"/>
+  <circle cx="548" cy="118" r="3" fill="#15803d"/>
+  <text x="566" y="138" font-size="9" fill="#15803d">lisse (meule)</text>
+  <path d="M560,98 L470,98" stroke="#1c1917" stroke-width="1.4" marker-end="url(#a2)"/>
+  <text x="520" y="92" text-anchor="middle" font-size="10" fill="#1c1917">n'accroche que d'un cote</text>
+  <text x="520" y="176" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b45309">-&gt; valide a posteriori</text>
+  <defs><marker id="a2" markerWidth="8" markerHeight="8" refX="4" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#1c1917"/></marker></defs>
+</svg></div><div class="svg-cap">Ogeret (deux crocs, happe l&#x27;ongle dans les deux sens) face a mesukhseket (un seul croc, l&#x27;autre arete lissee a la meule).</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאי שְׁנָא מִשְׁתֵּי רוּחוֹת, דְּמֻורְשָׁא קַמָּא מַחְלֵישׁ וּמֻורְשָׁא בָּתְרָא בָּזַע? מֵרוּחַ אַחַת נָמֵי, חוּרְפָּא דְּסַכִּינָא מַחֲלִישׁ, מֻורְשָׁא בָּזַע! דְּקָאֵים אַרֵישָׁא דְּסַכִּינָא. סוֹף סוֹף, כִּי אָזְלָא מַחְלְשָׁא, כִּי (אֲתָא בָּזַע) [אָתְיָא בְּזֵעָה]! כְּגוֹן שֶׁהוֹלִיךְ וְלֹא הֵבִיא.</div>
+            <div class="fr"><p>En quoi differe[-t-elle] &#x27;des deux cotes&#x27;, [au point] que la premiere arete (morcha) affaiblit [le cuir et la chair] et la derniere arete dechire ? &#x27;D&#x27;un seul cote&#x27; aussi, le tranchant du couteau (churfa de-sakina) affaiblit, [et] l&#x27;arete dechire ! [Reponse :] [dans le cas] ou elle se tient au debut de la lame.</p><p>En fin de compte, lorsqu&#x27;il [le] mene elle affaiblit, [et] lorsqu&#x27;il [le] ramene elle dechire ! [Reponse :] par exemple [le cas] ou il a mene [le couteau] sans [le] ramener.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מֻורְשָׁא קַמָּא מַחֲלִישׁ</b> עוֹר וּבָשָׂר לִפְנֵי הַשֵּׁנִי וְהַשֵּׁנִי בָּא וּפוֹגֵעַ בַּסִּימָן וְקוֹרְעוֹ:</div>
+          <div class="glose-fr">La premiere arete affaiblit — le cuir et la chair devant la seconde, et la seconde vient heurter le siman et le dechire.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>חוּרְפָּא דְּסַכִּינָא</b> קֹודֶם שֶׁיַּגִּיעַ לִפְגָם:</div>
+          <div class="glose-fr">Le tranchant du couteau — avant qu&#x27;il ne parvienne a l&#x27;entaille.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַחֲלִישׁ</b> אטינבזש&quot;ט בְּלַעַ&quot;ז כְּמוֹ (כְּתֻובּוֹת דַּף עז.) חֻשְׁלֵי דּוֹדִי וּכְמוֹ דְּחָשְׁלִי מִינַּייְהוּ כְּלֵי זַייִן בְּפָ&#x27; לִפְנֵי אֵידֵיהֶן (ע&quot;ז דַּף טז.). וְכָל עֻוקְצֵי הַפְּגָם קוֹרְעִין הֵן וְאֵין חוֹתְכִין בֵּין בְּפוֹגְעוֹ בּוֹ וּבֵין כְּשֶׁהוּא יוֹרֵד מִמֶּנּוּ כָּךְ שָׁמַעְתִּי וְכֵן הִיא שֶׁהֲרֵי שָׁנִינוּ סַכִּין שֶׁיֵּשׁ בָּהּ פְּגִימוֹת הַרְבֵּה תִּידּוֹן כִּמְגֵירָה וְאַפֵּי&#x27; מְסֻוכְסָכוֹת קָאָמַר מִדְּקָמְפַלֵּיג בַּחֲדָא בֵּין אוֹגֶרֶת לִמְסֻוכְסֶכֶת וּבַטּוּבָא לָא מְפַלֵּיג וּמַשְׁמַע אֲפִילּוּ כָּל עֻוקְצֵיהּ לְצַד אֶחָד לְצַד רֹאשׁ הַסַּכִּין וְהוֹלִיךְ וְלֹא הֵבִיא אַלְמָא בִּירִידָתוֹ נָמֵי קוֹרֵעַ:</div>
+          <div class="glose-fr">Affaiblit — &#x27;atinbzecht&#x27; en langue vernaculaire, comme (Ketoubot 77a) &#x27;chachlei doudei&#x27;, et comme &#x27;de-chachlei minaihou klei zayin&#x27; au [chapitre] Lifnei Eidehen (Avoda Zara 16a). Et tous les crocs de l&#x27;entaille dechirent et ne coupent pas, que ce soit en [la] heurtant ou lorsqu&#x27;[il en] descend. Ainsi l&#x27;ai-je entendu, et ainsi est-ce ; car nous avons appris &#x27;un couteau qui presente de nombreuses entailles est juge comme une scie&#x27;, et [c&#x27;est] meme [si elles sont] mesukhsekot qu&#x27;il [le] dit, du fait qu&#x27;il distingue, pour une seule [entaille], entre happante et mesukhseket, mais pour de nombreuses [entailles] il ne distingue pas ; et [cela] implique [que] meme [si] tous ses crocs [sont] vers un seul cote, vers la tete du couteau, et [qu&#x27;]il a mene sans ramener [c&#x27;est invalide] — d&#x27;ou [il ressort] qu&#x27;elle dechire aussi dans sa descente.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּקַייְמָא אַרֵישָׁא דְּסַכִּינָא</b> שֶׁכְּשֶׁהִתְחִיל לְהוֹלִיךְ לֹא הָיָה כֹּחַ לַסַּכִּין לְהַחֲלִישׁ עַד שֶׁעָבַר הַפְּגָם וְאֵין כָּאן סָפֵק שֶׁמָּא נָגַע הָעֹוקֶץ בַּסִּימָן:</div>
+          <div class="glose-fr">Qui se tient au debut de la lame — car, lorsqu&#x27;il a commence a mener, le couteau n&#x27;avait pas la force d&#x27;affaiblir avant d&#x27;avoir passe l&#x27;entaille, et il n&#x27;y a la aucun doute [a craindre] que le croc ait touche le siman.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Difficulte : pourquoi 'deux crocs' invalide, alors que pour 'un croc' aussi le tranchant entame d'abord puis l'unique croc pourrait dechirer ? Reponse : la mesukhseket n'est valide que si le croc est <b>en tete de lame</b> (le cuir n'est pas encore entame quand le croc passe) <b>et</b> qu'on a <b>mene sans ramener</b> (holikh velo heivi) — un seul passage, qui n'expose pas le siman au croc.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רָבָא: שָׁלֹשׁ מִדּוֹת בְּסַכִּין – אוֹגֶרֶת – לֹא יִשְׁחֹוט, וְאִם שָׁחַט – שְׁחִיטָתוֹ פְּסוּלָה. מְסֻוכְסֶכֶת – לֹא יִשְׁחֹוט בָּהּ לְכִתְחִלָּה, וְאִם שָׁחַט – שְׁחִיטָתוֹ כְּשֵׁרָה. עוֹלֶה וְיוֹרֵד בְּסַכִּין – שׁוֹחֵט בָּהּ לְכַתְּחִלָּה.</div>
+            <div class="fr"><p>Rava a dit : trois mesures [d&#x27;entaille] dans un couteau. [Entaille] happante (ogeret) — il n&#x27;abattra pas, et [s&#x27;]il a abattu, son abattage [est] invalide.</p><p>Mesukhseket — il n&#x27;abattra pas avec, a priori (lekhatchila), et [s&#x27;]il a abattu, son abattage [est] valide. [Couteau qui] monte et descend (oleh ve-yored) — il abat avec, a priori.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שְׁחִיטָתוֹ כְּשֵׁירָה</b> וְכִדְאוֹקְמָא בְּרֵישָׁא דְּסַכִּינָא וּכְשֶׁהוֹלִיךְ וְלֹא הֵבִיא וְאַפֵּ&quot;ה לֹא יִשְׁחֹוט לְכַתְּחִלָּה שֶׁמָּא יוֹלִיךְ וְיָבִיא:</div>
+          <div class="glose-fr">Son abattage [est] valide — comme [on l&#x27;]a etabli [pour une entaille] au debut de la lame, et [dans le cas] ou il a mene sans ramener ; et meme ainsi il n&#x27;abattra pas a priori, de peur qu&#x27;il [ne] mene et [ne] ramene.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>עוֹלֶה וְיוֹרֵד</b> כְּגוֹן שֶׁנִּפְגְּמָה פְּגָם גָּדוֹל וְהֻוחְלְקוּ הָעוֹקְצִים בְּמַשְׁחֶזֶת וְהָוֵי הַסַּכִּין נָמוּךְ שָׁם:</div>
+          <div class="glose-fr">Monte et descend — par exemple [le cas] ou elle s&#x27;est entaillee d&#x27;une grande entaille et [ou] les crocs ont ete lisses a la meule, et [ou] le couteau est [simplement] plus bas a cet endroit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La regle pratique de Rava, en <b>trois mesures</b> (voir le schema) : <b>ogeret</b> (deux crocs) -&gt; interdit, et invalide a posteriori ; <b>mesukhseket</b> (un croc) -&gt; interdit a priori mais valide a posteriori ; <b>oleh ve-yored</b> (une depression lisse, sans croc) -&gt; permis meme a priori.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רַב הוּנָא בְּרֵיהּ דְּרַב נְחֶמְיָה לְרַב אָשֵׁי: אֲמַרְתְּ לַן מִשְּׁמֵיהּ דְּרָבָא: מְסֻוכְסֶכֶת פְּסוּלָה, וְהָא אָמַר רָבָא: מְסֻוכְסֶכֶת כְּשֵׁרָה! לָא קַשְׁיָא: כָּאן שֶׁהוֹלִיךְ וְהֵבִיא, כָּאן שֶׁהוֹלִיךְ וְלֹא הֵבִיא.</div>
+            <div class="fr"><p>Rav Houna fils de Rav Nehemia dit a Rav Achi : tu nous as dit, au nom de Rava, [que] mesukhseket [est] invalide ; or Rava a [aussi] dit [que] mesukhseket [est] valide ! [Rav Achi repondit :] ce n&#x27;est pas une difficulte : ici [ou elle est invalide], [c&#x27;est le cas] ou il a mene et ramene ; la [ou elle est valide], [c&#x27;est le cas] ou il a mene sans ramener.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מְסֻוכְסֶכֶת פְּסוּלָה</b> אַפֵּי&#x27; דִּיעֲבַד:</div>
+          <div class="glose-fr">Mesukhseket [est] invalide — meme a posteriori (be-di&#x27;avad).</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כָּאן שֶׁהוֹלִיךְ וְהֵבִיא</b> הֲוָה מָצֵי לְשַׁנּוּיֵי הָא דְּקַייְמָא אַרֵישָׁא דְּסַכִּינָא וְהָא דְּקַיְימָא בָּאֶמְצַע:</div>
+          <div class="glose-fr">&#x27;Ici [c&#x27;est le cas] ou il a mene et ramene&#x27; — il aurait pu repondre [autrement] : ceci [ou elle est valide, c&#x27;est le cas] ou elle se tient au debut de la lame, et ceci [ou elle est invalide, c&#x27;est le cas] ou elle se tient au milieu.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Conciliation des deux propos de Rava sur la mesukhseket : <b>invalide</b> quand on a <b>mene et ramene</b> (le croc finit par atteindre le siman) ; <b>valide</b> quand on a <b>mene sans ramener</b> (un seul passage, croc en tete de lame).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רַב אַחָא בְּרֵיהּ דְּרַב אַוְיָא לְרַב אָשֵׁי: דָּמְיָא לְסָאסָא, מַאי? אֲמַר לֵיהּ: מַאן יָהֵיב לַן מִבִּשְׂרֵיהּ וְאָכְלִינַן.</div>
+            <div class="fr"><p>Rav Aha fils de Rav Avya dit a Rav Achi : [si le couteau] ressemble a une barbe d&#x27;epi (sasa) — [son fil irregulier mais sans veritable entaille] — quoi [le statut] ? Il lui dit : qui nous donnera de sa viande [d&#x27;une bete abattue avec un tel couteau] pour que nous [la] mangions !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דָּמְיָא לְסַאסְּאָה</b> ארישט&quot;א זְקַן הַשִּׁבֳּלִים שֶׁאֵינוֹ חָלָק כָּךְ סַכִּין שֶׁאֵין פִּיהָ חָלָק אֲבָל פְּגָם אֵין לָהּ אשפר&quot;א בְּלַעַ&quot;ז:</div>
+          <div class="glose-fr">Ressemble a une barbe d&#x27;epi — &#x27;arichta&#x27; [en vernaculaire], la barbe des epis, qui n&#x27;est pas lisse ; ainsi un couteau dont le fil n&#x27;est pas lisse mais [qui] n&#x27;a pas d&#x27;entaille — &#x27;achpra&#x27; en langue vernaculaire.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Cas du couteau dont le fil n'est pas parfaitement lisse mais <b>sans veritable entaille</b> (comme la barbe d'un epi). Rav Achi, par eloge : '<b>qui nous donnera de cette viande a manger</b>' — un tel couteau est tout a fait propre a l'abattage.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב חִסְדָּא: מִנַּיִן לִבְדִיקַת סַכִּין מִן הַתּוֹרָה? שֶׁנֶּאֱמַר: ״וּשְׁחַטְתֶּם בָּזֶה וַאֲכַלְתֶּם״.</div>
+            <div class="fr"><p>Rav Hisda dit : d&#x27;ou [sait-on que] l&#x27;examen du couteau (bedikat sakin) [releve] de la Torah ? De ce qu&#x27;il est dit : &#x27;et vous egorgerez avec ceci et vous mangerez&#x27; (I Samuel 14:34).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּשְׁחַטְתֶּם בָּזֶה</b> בְּשָׁאוּל כְּתִיב וּמִדְּקָאָמַר בָּזֶה ש&quot;מ סַכִּין בָּדַק לָהֶם:</div>
+          <div class="glose-fr">&#x27;Et vous egorgerez avec ceci&#x27; — [cela] est ecrit a propos de Saul ; et du fait qu&#x27;il dit &#x27;avec ceci&#x27;, infere-[s&#x27;en] qu&#x27;il leur a examine un couteau.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Hisda rattache l'<b>examen du couteau</b> a un verset : Saul dit au peuple 'egorgez avec <b>ceci</b> et mangez' (I Sam 14:34) — 'avec ceci' implique qu'il leur a fourni un couteau [deja] examine.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">פְּשִׁיטָא, כֵּיוָן דְּכִי נְקַב טְרֵיפָה, בָּעֲיָא בְּדִיקָה לְחָכָם קָאָמְרִינַן! וְהָאָמַר רַבִּי יוֹחָנָן: לֹא אָמְרוּ לְהַרְאוֹת סַכִּין לְחָכָם אֶלָּא מִפְּנֵי כְּבוֹדוֹ שֶׁל חָכָם! מִדְּרַבָּנָן, וּקְרָא אַסְמַכְתָּא בְּעָלְמָא הוּא.</div>
+            <div class="fr"><p>[Mais] c&#x27;est evident — puisque, si l&#x27;on perfore [l&#x27;oesophage], [la bete est] tereifa, [le couteau] requiert un examen ! [Reponse :] nous parlons de [l&#x27;obligation de] montrer [le couteau] a un sage (chacham).</p><p>Or Rabbi Yohanan a dit : on n&#x27;a dit de montrer le couteau a un sage qu&#x27;en raison de l&#x27;honneur du sage ! [Reponse :] [c&#x27;est] d&#x27;ordre rabbinique, et le verset [n&#x27;est] qu&#x27;un simple appui (asmakhta).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּכֵיוָן דְּאִי נָקַב</b> לְווֵשֶׁט מִיטַּרְפָא פְּשִׁיטָא דְּבָעֵינַן בְּדִיקָה דְּהָא אִי אִיכָּא פְּגָם נָקֵיב:</div>
+          <div class="glose-fr">Puisque, si l&#x27;on perfore — l&#x27;oesophage (veshet) devient tereifa, [il est] evident que nous requerons un examen, car s&#x27;il y a une entaille, elle perfore.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא אָמְרוּ כוּ&#x27;</b> וַאֲנַן מִקְּרָא יָלְפִינַן לָהּ:</div>
+          <div class="glose-fr">On n&#x27;a dit etc. — et nous, [c&#x27;est] d&#x27;un verset que nous [le] derivons.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection : l'examen du couteau va de soi (une entaille perfore l'oesophage -&gt; tereifa) — pas besoin de verset ! Reponse : le verset vise l'obligation de <b>montrer le couteau a un sage</b>. Mais R. Yohanan dit que c'est seulement <b>par honneur pour le sage</b> [donc rabbinique] ! Conclusion : l'obligation est <b>rabbinique</b>, et le verset n'en est qu'un <b>appui</b> (asmakhta).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בְּמַעְרְבָא בָּדְקִי לַהּ בְּשִׁימְשָׁא, בִּנְהַרְדְּעָא בָּדְקוּ לַהּ בְּמַיָּא, רַב שֵׁשֶׁת בָּדֵק לַהּ בְּרֵישׁ לִישָּׁנֵיהּ, רַב אַחָא בַּר יַעֲקֹב בָּדֵק לַהּ בְּחוּט הַשַּׂעֲרָה.</div>
+            <div class="fr"><p>En Occident (Terre d&#x27;Israel), on l&#x27;examine au soleil ; a Nehardea, on l&#x27;examine a l&#x27;eau ; Rav Chechet l&#x27;examinait du bout de sa langue ; Rav Aha bar Yaakov l&#x27;examinait avec un cheveu (hout ha-saara).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּשִׁימְשָׁא</b> נוֹתְנִים אוֹתָהּ בַּשֶּׁמֶשׁ וְרוֹאִין בְּחֻודָּהּ. מ&quot;ר. לִישָּׁנָא אַחְרִינָא הוֹלֵךְ וּמַעֲמִידָהּ בַּשֶּׁמֶשׁ חֻודָּהּ לְמַעְלָה וּמִסְתַּכֵּל בְּצִילָּהּ שֶׁל סַכִּין וְאִם יֵשׁ פְּגָם בְּסַכִּין נִיכָּר הוּא בָּצָל שֶׁהַחַמָּה נִכְנְסָה בַּפְּגָם:</div>
+          <div class="glose-fr">Au soleil — on le place au soleil et on regarde son fil. [Mon maitre.] Autre version : il va le dresser au soleil, le fil vers le haut, et il observe l&#x27;ombre du couteau ; et s&#x27;il y a une entaille dans le couteau, elle est reconnaissable dans l&#x27;ombre, car le soleil a penetre dans l&#x27;entaille.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּמַיָּא</b> הוֹפֵךְ חֻודָּהּ לְמַטָּה וּמוֹלִיכָהּ עַל פְּנֵי הַמַּיִם וְנֻוגְּעָה מְעַט וְאִם יֵשׁ פְּגָם עֹוקֶץ עוֹשֶׂה כְּמִין חָרִיץ בַּמַּיִם בַּהֲלִיכָתָהּ. ל&quot;א הוֹפֵךְ חֻודָּהּ לְמַעְלָה וְאוֹחֲזָהּ בְּיָדוֹ בְּשִׁיפּוּעַ רֹאשָׁהּ לְמַטָּה וּמַטִּיף עַל חֻודָּהּ בְּאֶצְבָּעוֹ אִם יֵשׁ שָׁם פְּגָם נוֹפְלִים שָׁם וְאֵין יְכוֹלִים לֵילֵךְ עַד רֹאשָׁהּ. לְשׁוֹן מוֹרִי:</div>
+          <div class="glose-fr">A l&#x27;eau — il retourne le fil vers le bas, le fait passer a la surface de l&#x27;eau et l&#x27;y touche legerement ; et s&#x27;il y a une entaille, un croc fait une sorte de sillon dans l&#x27;eau en passant. Autre version : il retourne le fil vers le haut et le tient en main, incline, sa tete vers le bas, et fait goutter sur son fil avec son doigt ; s&#x27;il y a la une entaille, [les gouttes] tombent la et ne peuvent aller jusqu&#x27;a sa tete. La langue de mon maitre.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Catalogue de procedes d'examen (voir le schema) : au <b>soleil</b> (Terre d'Israel), sur l'<b>eau</b> (Nehardea), du bout de la <b>langue</b> (Rav Chechet), avec un <b>cheveu</b> qui s'accroche a l'entaille (Rav Aha bar Yaakov).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בְּסוּרָא אָמְרִי: בִּישְׂרָא אָכְלָה, בִּישְׂרָא לְבָדְקָהּ. אָמַר רַב פָּפָּא: צְרִיכָא בְּדִיקָה אַבִּישְׂרָא, וְאַטֻּופְרָא, וְאַתִּלְתָּא רוּחָתָא.</div>
+            <div class="fr"><p>A Soura, on dit : [le couteau] consomme de la chair [il sert a couper la chair] — que la chair l&#x27;examine. Rav Papa a dit : il requiert un examen sur la chair (bisra), sur l&#x27;ongle (toufra), et sur les trois faces (telata ruhata) [le fil et les deux cotes de la lame].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בִּישְׂרָא אָכְלָה</b> הִיא בָּאָה לַחְתֹּוךְ בָּשָׂר לְפִיכָךְ עִיקַּר בְּדִיקָתָהּ בְּבָשָׂר אוֹ בְּרֵישׁ לִישָּׁנָא אוֹ בִּבְשַׂר אֶצְבָּעוֹ אִם בָּשָׂר זֶה פּוֹגֵעַ בַּפְּגָם כֵּן יִפְגַּע בּוֹ בְּשַׂר הַסִּימָן אֲבָל בְּדָבָר אַחֵר לָא הָוְיָא בְּדִיקָה שֶׁמָּא דָּבָר קָשֶׁה עוֹבֵר עַל פְּגָם קָטָן וְאֵינוֹ חוֹגֵר אוֹ דָּבָר שֶׁהוּא רַךְ יוֹתֵר מִדַּאי נִכְנָס לְתוֹךְ פְּגָם קָטָן אע&quot;פ שֶׁאֵין פְּגָם לְקַלְקֵל הַסִּימָן:</div>
+          <div class="glose-fr">[Le couteau] consomme de la chair — il vient couper de la chair, c&#x27;est pourquoi son examen principal [se fait] sur la chair, ou sur le bout de la langue, ou sur la chair de son doigt : si cette chair[-ci] heurte l&#x27;entaille, ainsi la chair du siman la heurtera[-t-elle] ; mais avec une autre chose [ce] n&#x27;est pas un [bon] examen, de peur qu&#x27;une chose dure ne passe sur une petite entaille sans s&#x27;[y] accrocher, ou qu&#x27;une chose trop molle ne penetre dans une petite entaille bien qu&#x27;il n&#x27;y ait pas d&#x27;entaille [propre] a abimer le siman.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַבִּישְׂרָא</b> בְּשַׂר הָאֶצְבַּע:</div>
+          <div class="glose-fr">Sur la chair — la chair du doigt.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַבִּישְׂרָא וְאַטֻּופְרָא</b> אַבִּישְׂרָא מִשּׁוּם וֶשֶׁט וְאַטֻּופְרָא מִשּׁוּם קָנֶה:</div>
+          <div class="glose-fr">Sur la chair et sur l&#x27;ongle — sur la chair a cause de l&#x27;oesophage (veshet, mou), et sur l&#x27;ongle a cause de la trachee (kaneh, dur).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>A Soura : puisque le couteau coupe la <b>chair</b>, que la chair (langue, doigt) l'<b>examine</b>. Rav Papa fixe la regle : examen sur la <b>chair</b>, sur l'<b>ongle</b>, et sur les <b>trois faces</b> de la lame (le fil et les deux flancs).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רָבִינָא לְרַב אָשֵׁי: אָמַר לַן רַב סַמָּא בְּרֵיהּ דְּרַב מְשַׁרְשְׁיָא מִשְּׁמָךְ, דַּאֲמַרְתְּ לֵיהּ מִשְּׁמֵיהּ דְּרָבָא: צְרִיכָא בְּדִיקָה אַבִּישְׂרָא וְאַטֻּופְרָא וְאַתְּלָתָא רוּחָתָא. אֲמַר לֵיהּ: אַבִּישְׂרָא וְאַטֻּופְרָא אָמְרִי, וְאַתְּלָתָא רוּחָתָא לָא אֲמַרִי. אִיכָּא דְאָמְרִי: אַבִּישְׂרָא וְאַטֻּופְרָא וְאַתְּלָתָא רוּחָתָא אֲמַרִי, מִשְּׁמֵיהּ דְּרָבָא לָא אֲמַרִי.</div>
+            <div class="fr"><p>Ravina dit a Rav Achi : Rav Sama fils de Rav Mecharchia nous a dit en ton nom, [ce] que tu lui as dit au nom de Rava : il requiert un examen sur la chair, sur l&#x27;ongle, et sur les trois faces. Il lui dit : &#x27;sur la chair et sur l&#x27;ongle&#x27;, [voila ce que] j&#x27;ai dit ; &#x27;sur les trois faces&#x27;, je ne [l&#x27;]ai pas dit.</p><p>Certains disent [qu&#x27;il repondit] : &#x27;sur la chair, sur l&#x27;ongle et sur les trois faces&#x27;, [voila ce que] j&#x27;ai dit ; &#x27;au nom de Rava&#x27;, je ne [l&#x27;]ai pas dit.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאַתִּלְתָּא רוּחָתָא</b> בְּאֶמְצַע חֻודּוֹ וּבַצְּדָדִין שֶׁמָּא נִפְגַּם עֳובִי חֻודָּהּ בְּצִידָּהּ וְנֶאֱחַז הַסִּימָן בָּעֹוקֶץ וְנִקְרַע:</div>
+          <div class="glose-fr">Et sur les trois faces — au milieu de son fil et sur les cotes, de peur que l&#x27;epaisseur de son fil [ne] se soit entaillee sur son flanc et [que] le siman [ne] se prenne dans un croc et [ne] se dechire.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Achi corrige la tradition rapportee en son nom : il a bien prescrit chair + ongle, mais (version 1) <b>pas</b> les trois faces ; ou (version 2) il a bien dit les trois faces, mais <b>pas au nom de Rava</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רָבִינָא וְרַב אַחָא בְּרֵיהּ דְּרָבָא הֲווֹ יָתְבִי קַמֵּיהּ דְּרַב אָשֵׁי, אַיְיתוֹ סַכִּין לְקַמֵּיהּ דְּרַב אָשֵׁי לִבְדְּקַהּ. אֲמַר לֵיהּ לְרַב אַחָא בְּרֵיהּ דְּרָבָא: בִּידְקָהּ. בַּדְקַהּ אַטֻּופְרָא וְאַבִּישְׂרָא וְאַתְּלָתָא רוּחָתָא. אֲמַר לֵיהּ: יִישַׁר, וְכֵן אָמַר רַב כָּהֲנָא.</div>
+            <div class="fr"><p>Ravina et Rav Aha fils de Rava etaient assis devant Rav Achi. On apporta un couteau devant Rav Achi pour [l&#x27;]examiner.</p><p>Il dit a Rav Aha fils de Rava : examine-le. Il l&#x27;examina sur l&#x27;ongle, sur la chair, et sur les trois faces.</p><p>Il lui dit : &#x27;bien joue (yiyacher)&#x27; ; et ainsi a dit Rav Kahana.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>יִישַׁר</b> יָפֶה עָשִׂיתָ:</div>
+          <div class="glose-fr">Yiyacher — tu as bien fait.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְכֵן אָמַר רַב כָּהֲנָא</b> דְּכָךְ צְרִיכָה: כָּל הֵיכָא דְּאָמַר מִשְּׁמֵיהּ דִּפְלוֹנִי לֹא שְׁמָעָהּ מִמֶּנּוּ אֶלָּא מֵאֲחֵרִים שָׁמַע שֶׁקִּבְּלוּהָ מִמֶּנּוּ כִּי הָא דְּרַב אָשֵׁי לֹא רָאָה אֶת רָבָא מֵעוֹלָם כִּדְאָמַר בַּעֲשָׂרָה יוּחֲסִין (קִדּוּשִׁין דַּף עב:) יוֹם שֶׁמֵּת רָבָא נוֹלַד רַב אָשֵׁי:</div>
+          <div class="glose-fr">Et ainsi a dit Rav Kahana — que c&#x27;est bien ainsi [qu&#x27;il faut faire]. Partout ou il dit &#x27;au nom d&#x27;un tel&#x27;, il ne [l&#x27;]a pas entendu de lui [directement] mais l&#x27;a entendu d&#x27;autres qui [l&#x27;]avaient recu de lui — comme dans ce [cas] de Rav Achi, qui n&#x27;a jamais vu Rava, ainsi qu&#x27;il est dit au [chapitre] Assara Yohassin (Kiddouchin 72b) : le jour ou Rava mourut, Rav Achi naquit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Mise en pratique : Rav Aha fils de Rava examine le couteau <b>ongle + chair + trois faces</b> ; Rav Achi approuve ('<b>yiyacher</b>', bravo), et Rav Kahana confirme cette methode.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַב ייֵמַר אָמַר: אַטֻּופְרָא וְאַבִּישְׂרָא צְרִיכָא, אַתְּלָתָא רוּחָתָא לָא צְרִיכָא. מִי לָא אָמַר רַבִּי זֵירָא אָמַר שְׁמוּאֵל: לִיבֵּן סַכִּין וְשָׁחַט בָּהּ – שְׁחִיטָתוֹ כְּשֵׁרָה, שֶׁחִידּוּדָהּ קוֹדֵם לְלִיבּוּנָהּ; וְקַשְׁיָא לָן: הָאִיכָּא צְדָדִין! וְאָמְרִינַן: בֵּית הַשְּׁחִיטָה מִרְוָוח רָווַח. הָכָא נָמֵי, בֵּית הַשְּׁחִיטָה מִרְוָוח רָוַוח.</div>
+            <div class="fr"><p>Rav Yemar a dit : l&#x27;examen sur l&#x27;ongle et sur la chair est requis ; sur les trois faces, [ce n&#x27;]est pas requis. Rabbi Zera n&#x27;a-t-il pas dit au nom de Chmouel : [si] l&#x27;on a porte un couteau au rouge (liben) et [qu&#x27;]on a abattu avec, son abattage [est] valide, car son tranchant (hidoud) precede son incandescence (liboun) ?</p><p>Et [cela] nous [faisait] difficulte : mais il y a [pourtant] les cotes [qui brulent l&#x27;oesophage] ! Et nous avons dit : le lieu de l&#x27;abattage s&#x27;ecarte aussitot (bet ha-chehita merevah ravah).</p><p>Ici aussi, le lieu de l&#x27;abattage s&#x27;ecarte aussitot [les flancs du couteau ne touchent pas le siman].</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַתְּלָתָא רוּחָתָא לָא צְרִיכִי</b> וְאִם יֵשׁ שָׁם פְּגָם בְּצִידָּהּ לֹא אִיכְפַּת לָן דְּאֵין צִידֵּי הַסַּכִּין נוֹגְעִין בַּסִּימָן מִכֵּיוָן שֶׁחָתְכוּ חֻודָּהּ שֶׁל סַכִּין הוּא מִתְרַוֵּוחַ לְכָאן וּלְכָאן:</div>
+          <div class="glose-fr">Sur les trois faces, [ce n&#x27;]est pas requis — et s&#x27;il y a la une entaille sur son flanc, [cela] ne nous importe pas, car les flancs du couteau ne touchent pas le siman : des lors que son fil a coupe, [le lieu] s&#x27;ecarte de part et d&#x27;autre.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁחִידּוּדָהּ קוֹדֵם לְלִיבּוּנָהּ</b> קֹודֶם שֶׁיַּכְוִינָהּ הַסִּימָן בְּלִיבּוּן הוּא נֶחְתַּךְ בְּחִידּוּד:</div>
+          <div class="glose-fr">Car son tranchant precede son incandescence — avant que l&#x27;incandescence ne brule le siman, il est coupe par le tranchant.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָא אִיכָּא צְדָדִין</b> שֶׁנִּכְווּ בְּצִידֵּי הַסַּכִּין קֹודֶם שֶׁתִּגָּמֵר שְׁחִיטָה וַהֲרֵי סִימָנֵי טְרֵפוֹת נוֹלָדִין בָּהּ כֵּיוָן שֶׁהַווֶּשֶׁט נִשְׂרַף. וְאַפֵּ&quot;ה קי&quot;ל כְּרַב אֲחָא וְרַב כָּהֲנָא וְרַב אַשִּׁי וְכוּלְּהוּ אָמוֹרָאֵי דְּאָמְרִי צְרִיכָא אַבִּישְׂרָא וְאַטֻּופְרָא וְאַתְּלָת רוּחָתָא וְאִם שָׁכַח וְלֹא בָּדַק קֹודֶם שְׁחִיטָה בּוֹדֵק לְאַחַר שְׁחִיטָה:</div>
+          <div class="glose-fr">Mais il y a les cotes — qui se brulent aux flancs du couteau avant que l&#x27;abattage ne s&#x27;acheve, et voici que des signes de tereifa naissent en [la bete] puisque l&#x27;oesophage est brule. Et meme ainsi, nous tranchons (kayma lan) comme Rav Aha, Rav Kahana, Rav Achi et tous les Amoraim qui disent [qu&#x27;]il requiert [un examen] sur la chair, sur l&#x27;ongle et sur les trois faces ; et s&#x27;il a oublie et n&#x27;a pas examine avant l&#x27;abattage, il examine apres l&#x27;abattage.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אָמַר רַבִּי זֵירָא לִיבֵּן סַכִּין וְשָׁחַט בָּהּ שְׁחִיטָתָהּ כְּשֵׁירָה שֶׁחִדּוּדָהּ קֹודֶם לְלִיבּוּנָהּ. וְהָא אִיכָּא צְדָדִין בֵּית הַשְּׁחִיטָה מִירְווָח רָווַח. רַב אַלְּפֻם לֹא הֵבִיא הַךְ דְּר&#x27; זֵירָא. וְגַם הָרַמְבַּ&quot;ם זַ&quot;ל כָּתַב לִיבֵּן סַכִּין וְשָׁחַט בָּהּ שְׁחִיטָתוֹ פְּסוּלָה. וְטַעְמַיְיהוּ מִשּׁוּם דְּאָמְרִינַן לְקַמָּן בְּפִרְקִין (חֻולִּין דַּף יז:) רַב יֵימַר אָמַר אַבִּישְׂרָא וְאַטֻּופְרָא צְרִיכָה וְאַתִּלְתָּא רוּחָתָא לָא צְרִיכָה מִי לָא אָמַר רַבִּי זֵירָא לִיבֵּן סַכִּין וְשָׁחַט בָּהּ שְׁחִיטָתוֹ כְּשֵׁירָה שֶׁחִדּוּדָהּ קֹודֶם לְלִיבּוּנָהּ וְקָשֶׁה לָן וְהָא אִיכָּא צְדָדִין וְאָמְרִינַן בֵּית הַשְּׁחִיטָה מִירְוָח רָוַוח. וְקַייְמָא לָן כְּרַב אַשִּׁי דְּמַצְרִיךְ אַבִּשְׂרָא וְאַטֻּופְרָא וְאַתְּלָתָא רוּחָתָא א&quot;כ לֵית לָן בֵּית הַשְּׁחִיטָה מִרְוָוח רָווַח וְאִיכָּא צְדָדִין וּטְרֵיפָה. וה&quot;ר יוֹנָה זַ&quot;ל דִּקְדֵּק מִדְּקָאָמַר מִי לֹא אָמַר ר&#x27; זֵירָא וְלָא קָאָמַר דְּאָמַר רַבִּי זֵירָא אַלְמָא הֲלָכָה פְּסוּקָה הָיְתָה בִּימֵיהֶם וּמַקְשֶׁה מִמֶּנָּה כְּמוֹ מִמִּשְׁנָה וּבָרַיְיתָא. וי&quot;ל דְּאֶפְשָׁר דַּהֲלָכָה כַּר&#x27; זֵירָא דְּמִירְווַח רָווַח לְהִנָּצֵל מִכְּוִוייַּת הַלִּבּוּן שֶׁאֵין מִתְפַּשֵּׁט לִצְדָדִין. אֲבָל מֻורְשָׁא שֶׁל סַכִּין יוֹצְאָהּ וּמִתְפַּשֶּׁטֶת וְנִרְוַוחַת בְּצִידֵּי הַשְּׁחִיטָה וְקוֹרַעְתּוֹ. וּמַה שֶׁלֹּא הֵשִׁיבוּ כֵּן מִשּׁוּם שֶׁנִּרְאֶה לָהֶם דָּבָר פָּשׁוּט וְקַל לְחַלֵּק וְלֹא חָשׁוּ לַהֲשִׁיבוֹ וְעוֹד יֵשׁ לְחַלֵּק דְּשָׁאנֵי הָתָם שֶׁיּוֹדֵעַ שֶׁהַסַּכִּין מְלֻובָּן וּמְכַוֵּין שֶׁלֹּא יַטֶּנּוּ לִצְדָדִין אֲבָל פְּגִימָה שֶׁבַּצְּדָדִין אִם לֹא יִבְדֹּוק תְּחִלָּה פְּעָמִים שֶׁיֵּשׁ שָׁם פְּגִימָה וְאֵין יוֹדֵעַ וְלֹא יִזָּהֵר מִלְּהַטּוֹת. וְכֵן כָּתַב הָרָאָבָ&quot;ד זַ&quot;ל דְּעַד כָּאן לָא שָׁרֵי רַבִּי זֵירָא אֶלָּא בְּדִיעֲבַד אֲבָל לְכַתְּחִילָּה לָא לְפִיכָךְ צָרִיךְ בְּדִיקָה אַתְּלָתָא רוּחָתָא שֶׁאֵין סוֹמְכִין עַל זְהִירָתוֹ אֲפִילּוּ הוּא אוֹמֵר אֲנִי אֶשְׁחֹוט וְלֹא אַטֶּה. כְּדֶרֶךְ שֶׁאָמְרוּ לְעֵיל (חֻולִּין דַּף ב:) וּבְמֻוקְדָּשִׁין לֹא יִשְׁחֹוט שֶׁמָּא יִגַּע בַּבָּשָׂר וְכָל שֶׁכֵּן כָּאן שֶׁאֵין יוֹדֵעַ שֶׁיֵּשׁ שָׁם פְּגִימָה שֶׁאֵין נִזְהָר מִלְּהַטּוֹת. וַאֲפִילּוּ בְּדִיעֲבַד אִם לֹא בָּדַק אַתְּלָתָא רוּחָתָא פּוֹסְלִין אוֹתָהּ שֶׁמָּא הִטָּה. וְהָא אִיכָּא צְדָדִין. מִכָּאן מַשְׁמַע שֶׁאִם בִּשְׁעַת שְׁחִיטָה אִיתְרַמִּי נֶקֶב בַּוֶּשֶׁט כְּנֶגֶד מַה שֶׁשָּׁחַט טְרֵיפָה כִּי הָכָא דְּבָעֵי לְמֵיסַר מִשּׁוּם צְדָדִין:</div>
+          <div class="glose-fr">Rabbi Zera a dit : [si] l&#x27;on a rougi au feu (liben) un couteau et [qu&#x27;]on a abattu avec, son abattage [est] valide, car son tranchant (chidoud) [agit] avant son incandescence (libboun). Or il y a les cotes [de la bete] [par lesquels le couteau brulant passe] ! [Reponse :] le lieu de l&#x27;abattage (beit ha-chehita) s&#x27;elargit largement [de sorte que les cotes ne touchent pas le couteau]. Rav Alfas (le Rif) n&#x27;a pas apporte ce [propos] de Rabbi Zera. Et de meme le Rambam, de memoire benie, a ecrit : [si] l&#x27;on a rougi un couteau au feu et [qu&#x27;]on a abattu avec, son abattage [est] invalide. Et leur raison [est] : parce que nous disons plus loin dans notre chapitre (Houlin 17b) [que] Rav Yemar a dit : [l&#x27;examen] sur la chair et sur l&#x27;ongle est requis, mais sur les trois faces n&#x27;est pas requis — Rabbi Zera n&#x27;a-t-il pas dit [que si] l&#x27;on a rougi un couteau au feu et [qu&#x27;]on a abattu avec, son abattage [est] valide, car son tranchant [agit] avant son incandescence, et nous [l&#x27;]objectons : or il y a les cotes ! Et nous disons : le lieu de l&#x27;abattage s&#x27;elargit largement. Et nous tenons pour [tranche] comme Rav Achi, qui requiert [l&#x27;examen] sur la chair, sur l&#x27;ongle et sur les trois faces ; s&#x27;il en est ainsi, nous ne tenons pas [le principe que] le lieu de l&#x27;abattage s&#x27;elargit largement, et [donc] il y a les cotes et [la bete est] tereifa. Et notre maitre Rabbi Yona, de memoire benie, a deduit [ceci] : du fait qu&#x27;il dit &#x27;Rabbi Zera n&#x27;a-t-il pas dit&#x27; et ne dit pas &#x27;car Rabbi Zera a dit&#x27;, [cela prouve] qu&#x27;a leur epoque c&#x27;etait une halakha tranchee (pessouka), et l&#x27;on objecte a partir d&#x27;elle comme a partir d&#x27;une michna ou d&#x27;une braita. Et l&#x27;on peut repondre qu&#x27;il est possible que la halakha [soit] comme Rabbi Zera [qui dit] que [le lieu de l&#x27;abattage] s&#x27;elargit largement pour se preserver de la brulure de l&#x27;incandescence, laquelle ne se propage pas vers les cotes ; mais l&#x27;arete (morcha) du couteau sort, se propage, s&#x27;elargit sur les cotes de l&#x27;abattage et le dechire. Et s&#x27;ils n&#x27;ont pas repondu ainsi, [c&#x27;est] parce que la chose leur a paru evidente et facile a distinguer, et ils n&#x27;ont pas pris la peine d&#x27;y repondre. Et l&#x27;on peut encore distinguer [ainsi] : car la-bas [dans le cas du couteau rougi], c&#x27;est different, puisqu&#x27;il sait que le couteau est incandescent et il vise a ne pas l&#x27;incliner vers les cotes ; mais [pour] une entaille qui est sur les cotes, s&#x27;il n&#x27;examine pas au prealable, parfois il y a la une entaille et il ne le sait pas, et il ne prendra pas garde de [ne pas] l&#x27;incliner. Et de meme a ecrit le Raavad, de memoire benie : Rabbi Zera n&#x27;a permis [le couteau rougi] qu&#x27;a posteriori (be-di&#x27;avad), mais a priori (lekhatchila) non ; c&#x27;est pourquoi il faut un examen sur les trois faces, car on ne se fie pas a son attention [au fait qu&#x27;il prenne garde], meme s&#x27;il dit &#x27;moi, j&#x27;abattrai et je n&#x27;inclinerai pas&#x27;. A la maniere de ce qu&#x27;ils ont dit plus haut (Houlin 2b) : et pour les [animaux] consacres (moukdachin) il n&#x27;abattra pas [avec une petite serpe], de peur qu&#x27;il ne touche la chair — et a plus forte raison ici, ou il ne sait pas qu&#x27;il y a la une entaille, [de sorte] qu&#x27;il ne prend pas garde de [ne pas] l&#x27;incliner. Et meme a posteriori, s&#x27;il n&#x27;a pas examine sur les trois faces, on [la] declare invalide, de peur qu&#x27;il [ne] l&#x27;ait inclinee. &#x27;Or il y a les cotes&#x27; — de la [il] ressort que si, au moment de l&#x27;abattage, il s&#x27;est trouve [par hasard] une perforation (nekev) dans l&#x27;oesophage (veshet) en face de ce qu&#x27;il a abattu, [la bete est] tereifa, comme ici [ou] il faut [la] declarer interdite a cause des cotes.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Yemar : ongle + chair <b>suffisent</b>, pas les trois faces. Preuve, par le couteau <b>chauffe au rouge</b> (Chmouel) : valide, car le <b>tranchant coupe avant</b> que l'incandescence ne brule ; et l'objection 'les flancs brulants ?' se resout par '<b>le lieu de l'abattage s'ecarte aussitot</b>' — les flancs ne touchent pas le siman. <b>Idem ici</b> : une entaille sur le flanc n'atteint pas le siman.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב הוּנָא בַּר רַב קַטִּינָא אָמַר רַבִּי שִׁמְעוֹן בֶּן לָקִישׁ, שָׁלֹשׁ פְּגִימוֹת הֵן: פְּגִימַת עֶצֶם בְּפֶסַח, פְּגִימַת אֹוזֶן בִּבְכוֹר, פְּגִימַת מוּם בְּקָדָשִׁים.</div>
+            <div class="fr"><p>Rav Houna bar Rav Ketina a dit au nom de Rabbi Chimon ben Lakich : il y a trois entailles [d&#x27;une meme mesure] : l&#x27;entaille [le bris] d&#x27;un os dans [l&#x27;agneau] pascal (pessah), l&#x27;entaille d&#x27;une oreille dans un premier-ne (bekhor), [et] l&#x27;entaille [constituant] un defaut (moum) dans les [animaux] consacres (kodachim).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ג&#x27; פְּגִימוֹת הֵן</b> לְשִׁיעוּר אֶחָד:</div>
+          <div class="glose-fr">Trois entailles — d&#x27;une seule mesure.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>פְּגִימַת עֶצֶם בְּפֶסַח</b> לַעֲבֹור עָלֶיהָ בְּלָאו דְּעֶצֶם לֹא תִשְׁבְּרוּ בּוֹ:</div>
+          <div class="glose-fr">L&#x27;entaille d&#x27;un os dans le pascal — pour transgresser a son sujet l&#x27;interdit &#x27;[un] os, vous n&#x27;en briserez pas en lui&#x27; (Ex 12:46).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>פְּגִימַת אֹוזֶן בִּבְכוֹר</b> לִהְיוֹת בּוֹ מוּם לִישָּׁחֵט עָלָיו בַּמְּדִינָה דִּתְנַן (בְּכוֹרוֹת דַּף לז.) נִפְגְּמָה אָזְנוֹ מִן הַסְּחוּס. וה&quot;ה לִשְׁאָר מוּמִין שֶׁל פְּגִימָה הַנִּזְכָּרִים שָׁם וְקַמָּיְיתָא נְקַט:</div>
+          <div class="glose-fr">L&#x27;entaille d&#x27;une oreille dans un premier-ne — pour constituer en lui un defaut (moum) [permettant] de l&#x27;abattre en province (medina), comme nous avons appris (Bekhorot 37a) &#x27;son oreille s&#x27;est entaillee depuis le cartilage&#x27;. Et il en va de meme pour les autres defauts d&#x27;entaille mentionnes la ; et [la braita] prend le premier.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>פְּגִימַת מוּם בַּקֳּדָשִׁים</b> נְקֵבוֹת כְּגוֹן חַטָּאת וּשְׁלָמִים שֶׁיֵּשׁ בָּהֶם פְּגִימוֹת שֶׁאֵינָן נוֹהֲגוֹת בִּבְכוֹר וּכְדִתְנַן הָתָם בִּבְכוֹרוֹת (דַּף לט:) נִפְגַּם הַזּוֹבָן בִּבְכוֹר אוֹ הָעֶרְוָה שְׂפַת בֵּית הָרֶחֶם שֶׁל נְקֵבָה בְּמֻוקְדָּשִׁין. וְאִיצְטְרִיךְ לִמְנַקַּט הָכָא לְאַשְׁמוֹעִינַן דאע&quot;ג דְּלָא מִינַּכְרָא בֵּיהּ פְּגִימָה כֻּולֵּי הַאי אֲפִילּוּ הָכֵי שִׁיעוּרֵיהּ בִּכְדֵי שֶׁתַּחְגֹּור בָּהּ צִפֹּורֶן. וְאִי קַשְׁיָא לִינַקֵּט פְּגִימַת מוּם בַּקֳּדָשִׁים וְכֻולָּן בִּכְלָל דְּהָא בְּכוֹר בִּכְלַל כָּל הַקֳּדָשִׁים הוּא אִי תְּנָא הָכִי הֵ&quot;א לִיפָּסֵל מֵהַקְרָבָה הוּא בִּכְדֵי חֲגִירַת צִפֹּורֶן מִיפַּסְלָא אֲבָל מוּם גָּמוּר לָא הָוֵי לִישָּׁחֵט עָלָיו בַּמְּדִינָה דְּמוּמִין הַרְבֵּה פּוֹסְלִין בַּבְּהֵמָה וְאֵין הַבְּכוֹר נִשְׁחָט עֲלֵיהֶן כְּדִתְנַן (שָׁם דַּף מא.) וְאֵלּוּ שֶׁאֵין שׁוֹחֲטִין עֲלֵיהֶם לֹא בַמִּקְדָּשׁ וְלֹא בַמְּדִינָה כו&#x27; וּלְהָכִי תְּנָא פְּגִימַת אֹוזֶן בִּבְכוֹר שֶׁהֻוזְכְּרָה בִּבְכוֹרוֹת לְעִנְיַן לִישָּׁחֵט בַּמְּדִינָה:</div>
+          <div class="glose-fr">L&#x27;entaille [constituant] un defaut dans les consacres — [par exemple les] femelles, comme un sacrifice expiatoire (hatat) et des sacrifices de paix (chelamim), qui ont des entailles[-defauts] inapplicables a un premier-ne, comme nous avons appris la, dans Bekhorot (39b) : &#x27;[s&#x27;]est entaillee... la levre de la matrice d&#x27;une femelle&#x27; dans les [animaux] consacres. Et il a fallu [le] prendre ici pour nous enseigner que, bien que l&#x27;entaille n&#x27;y soit pas si reconnaissable, neanmoins sa mesure [est] de quoi qu&#x27;un ongle s&#x27;y accroche. Et si tu objectes : qu&#x27;il prenne [seulement] &#x27;l&#x27;entaille-defaut dans les consacres&#x27;, et tous [seront] inclus, car le premier-ne est inclus dans l&#x27;ensemble des consacres ! [Reponse :] s&#x27;il avait enseigne ainsi, j&#x27;aurais dit [que], pour etre invalide a l&#x27;offrande, [la mesure est] de quoi qu&#x27;un ongle s&#x27;accroche, mais [que], pour [constituer] un defaut complet [permettant] de l&#x27;abattre en province, non — car de nombreux defauts invalident une bete sans que le premier-ne [ne] soit abattu pour eux, comme nous avons appris (la, 41a) &#x27;voici ceux pour lesquels on n&#x27;abat ni au Temple ni en province, etc.&#x27; ; c&#x27;est pourquoi [la braita] a enseigne &#x27;l&#x27;entaille d&#x27;une oreille dans un premier-ne&#x27;, laquelle a ete mentionnee dans Bekhorot a propos de [la permission de] l&#x27;abattre en province.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>פְּגִימַת אֹוזֶן בִּבְכוֹר פְּגִימַת מוּם בְּקָדָשִׁים</b> אִיצְטְרִיךְ תַּרְוַייְהוּ פְּגִימַת אֹוזֶן בִּבְכוֹר לִשְׁחֹוט עָלָיו בַּמְּדִינָה וְקָדָשִׁים אִיצְטְרִיךְ מִשּׁוּם עֶרְוָה שֶׁל נְקֵבָה דְּלָא הָוְיָא בִּכְלַל בְּכוֹר אִי נָמֵי אִיצְטְרִיךְ קָדָשִׁים דְּלָא נֵימָא פְּגִימַת מוּם לִיפְסֹול מֵעַל גַּבֵּי הַמִּזְבֵּחַ הָוְיָא פָּחוֹת מֵחֲגִירַת הַצִּפֹּורֶן וְהָא דְּלָא חֲשִׁיב בַּהֲדַייְהוּ פְּגִימַת מִזְבֵּחַ וְלֵימָא ד&#x27; פְּגִימוֹת הֵן מָצִינוּ לְמֵימַר מִשּׁוּם דִּפְגִימַת מִזְבֵּחַ בְּהֶדְיָא כְּתִיב (דְּבָרִים כז) אֲבָנִים שְׁלֵמוֹת אע&quot;ג דִּבְקָדָשִׁים נָמֵי כְּתִיב תָּמִים לָא מַשְׁמַע מַמָּשׁ בְּלֹא פְּגִימָה דִּבְכַמָּה מְקוֹמוֹת לָא חָיְישִׁינַן אִם נֶחְתַּךְ מִמֶּנּוּ הַבָּשָׂר אוֹ הָעֶצֶם:</div>
+          <div class="glose-fr">L&#x27;entaille d&#x27;une oreille dans un premier-ne, l&#x27;entaille-defaut dans les consacres — les deux [sont] necessaires : &#x27;l&#x27;entaille d&#x27;une oreille dans un premier-ne&#x27; [pour le permis] de l&#x27;abattre en province ; et &#x27;les consacres&#x27; [est] necessaire a cause de la levre de la matrice d&#x27;une femelle, qui n&#x27;est pas incluse dans [le cas du] premier-ne. Ou bien &#x27;les consacres&#x27; [est] necessaire [afin] que nous ne disions pas [que] l&#x27;entaille-defaut [rendant] invalide de [monter] sur l&#x27;autel [serait] inferieure a [la mesure ou] l&#x27;ongle s&#x27;accroche. Et le fait qu&#x27;il ne compte pas parmi elles &#x27;l&#x27;entaille de l&#x27;autel&#x27;, et ne dise pas &#x27;il y a quatre entailles&#x27; — nous pouvons dire [que c&#x27;est] parce que l&#x27;entaille de l&#x27;autel est explicitement ecrite (Deut 27) &#x27;des pierres entieres&#x27; ; bien que, pour les consacres aussi, &#x27;sans defaut (tamim)&#x27; soit ecrit, [cela] n&#x27;implique pas [un sens] litteral, sans entaille [aucune], car en plusieurs endroits nous ne nous soucions pas [du fait] que de la chair ou de l&#x27;os en ait ete retranche.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabbi Chimon ben Lakich : trois 'entailles' de meme mesure — le <b>bris d'un os</b> de l'agneau pascal (interdit par 'vous n'en briserez pas un os'), l'<b>entaille d'oreille</b> qui rend un <b>premier-ne</b> defectueux (donc abattable en province, hors Temple), et l'<b>entaille-defaut</b> (moum) dans les autres consacres.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַב חִסְדָּא אָמַר: אַף פְּגִימַת סַכִּין. וְאִידַּךְ בְּחֻולִּין לָא קָא מַיְירֵי.</div>
+            <div class="fr"><p>Et Rav Hisda dit : [il y a] aussi l&#x27;entaille d&#x27;un couteau. Et l&#x27;autre (Rabbi Chimon ben Lakich) [pourquoi ne la compte-t-il pas] ? — [parce qu&#x27;]il ne traite pas des [betes] profanes (houlin).</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Hisda ajoute une <b>quatrieme</b> : l'<b>entaille du couteau</b> [d'abattage]. Resh Lakich ne la compte pas, car son propos ne porte <b>pas sur les profanes</b> (houlin).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְכֻולָּן, פְּגִימָתָן כְּדֵי פְּגִימַת הַמִּזְבֵּחַ.</div>
+            <div class="fr"><p>Et toutes — leur entaille [a pour mesure] la mesure de l&#x27;entaille de l&#x27;autel (mizbeah).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִזְבֵּחַ</b> שֶׁנִּפְגַּם פָּסוּל כִּדְיָלְפִינַן בִּשְׁחִיטַת קָדָשִׁים בְּפֶרֶק קָדְשֵׁי קָדָשִׁים (זְבָחִים דַּף נט.) וְזָבַחְתָּ אֵלָיו אֶת עֹולֹותֶיךָ וְאֶת שְׁלָמֶיךָ וְגוֹ&#x27; וְכִי עָלָיו אַתָּה זוֹבֵחַ אֶלָּא בִּזְמַן שֶׁהוּא שָׁלֵם וְלֹא בִּזְמַן שֶׁהוּא חָסֵר וְהַאי עָלָיו בִּשְׁבִילוֹ הוּא כְּלוֹמַר כְּשֶׁהוּא בְּחֶזְקָתוֹ:</div>
+          <div class="glose-fr">L&#x27;autel — qui s&#x27;est entaille [est] invalide, comme nous le derivons dans Chehitat Kodachim, au chapitre Kodchei Kodachim (Zevahim 59a) : &#x27;tu egorgeras sur lui (alav) tes holocaustes et tes sacrifices de paix...&#x27; — est-ce sur lui que tu egorges ? plutot, au moment ou il est entier (chalem) et non au moment ou il est defectueux (haser) ; et ce &#x27;alav&#x27; [signifie] &#x27;pour lui (bichvilo)&#x27;, c&#x27;est-a-dire [tant qu&#x27;]il est dans son etat [valide].</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Et la mesure commune a toutes ces entailles est celle qui <b>invalide l'autel</b> (mizbeah) — la pierre 'entiere' ne doit pas etre entaillee ; soit, en pratique, de quoi qu'un ongle s'y accroche.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Chullin_17a.html">&lsaquo; Chullin 17a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Chullin_18a.html">Chullin 18a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schemas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+var sel='';try{sel=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+function maj(){var s=''; try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com'
++'?subject='+encodeURIComponent('Correction — '+t)
++'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage selectionne :\n« '+s+' »\n'):'\nPassage concerne :\n\n')+'\nCorrection proposee :\n\n\n— envoye depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>
