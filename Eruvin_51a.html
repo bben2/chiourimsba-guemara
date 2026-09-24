@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eruvin 51a - Le tronc à portée de course, les deux mille coudées, le cercle et le carré</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Eruvin 51a - Le tronc à portée de course, les deux mille coudées, le cercle et le carré</h1>
+    <div class="ref">Eruvin 51a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Eruvin_50b.html">&lsaquo; Eruvin 50b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> Rava limite la chevita au tronc : il faut pouvoir l&#x27;atteindre en courant avant la nuit. Abaye objecte la formule &quot;il a fait nuit pour lui&quot; ; la Guemara sépare la maison, hors d&#x27;atteinte, et le tronc, encore accessible.</p><p>Rabba fixe leur chevita sous un palmier reconnaissable, et Rav Yossef, qui ne le connaît pas, s&#x27;en remet à lui. Rav Hisda fait sortir les deux mille coudées d&#x27;une chaîne de gezera shava, du mot &quot;lieu&quot; jusqu&#x27;au migrash des leviim.</p><p>Rabbi Hanina ben Antigenos mesure un cercle ; les sages, un carré. Rabbi Aha bar Yaakov ne rend passible le transport de quatre coudées qu&#x27;avec leur diagonale.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 560" xmlns="http://www.w3.org/2000/svg">
+<rect width="760" height="560" fill="#fbfaf7"/>
+<text x="380" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">D'où viennent les deux mille coudées ?</text>
+<text x="380" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Rav Hisda. Chaque gezera shava ajoute un mot, jusqu'à la mesure du migrash.</text>
+<rect x="16" y="64" width="470" height="72" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="251.0" y="96.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#2b2b2b">1. Que nul ne sorte de son lieu</text>
+<text x="251.0" y="112.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#2b2b2b">Le verset a le mot lieu.</text>
+<line x1="250" y1="136" x2="250" y2="146" stroke="#8a7b63" stroke-width="1.4"/><polygon points="250,152 246,145 254,145" fill="#8a7b63"/>
+<rect x="16" y="152" width="470" height="72" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="251.0" y="184.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#2b2b2b">2. Je te fixerai un lieu où il fuira</text>
+<text x="251.0" y="200.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#2b2b2b">On y reporte le mot fuite.</text>
+<line x1="250" y1="224" x2="250" y2="234" stroke="#8a7b63" stroke-width="1.4"/><polygon points="250,240 246,233 254,233" fill="#8a7b63"/>
+<rect x="16" y="240" width="470" height="72" fill="#ede7dc" stroke="#8a7b63"/>
+<text x="251.0" y="272.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#2b2b2b">3. Depuis la frontière de sa ville de refuge</text>
+<text x="251.0" y="288.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#2b2b2b">On y reporte le mot frontière.</text>
+<line x1="250" y1="312" x2="250" y2="322" stroke="#8a7b63" stroke-width="1.4"/><polygon points="250,328 246,321 254,321" fill="#8a7b63"/>
+<rect x="16" y="328" width="470" height="72" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="251.0" y="360.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#2b2b2b">4. Le vengeur du sang, hors de la frontière</text>
+<text x="251.0" y="376.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#2b2b2b">On y reporte le mot dehors, hutz.</text>
+<line x1="250" y1="400" x2="250" y2="410" stroke="#8a7b63" stroke-width="1.4"/><polygon points="250,416 246,409 254,409" fill="#8a7b63"/>
+<rect x="16" y="416" width="470" height="72" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="251.0" y="448.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#2b2b2b">5. Vous mesurerez en dehors de la ville</text>
+<text x="251.0" y="464.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#2b2b2b">Là sont écrites 2000 coudées.</text>
+<rect x="504" y="64" width="240" height="248" fill="#f6e6e0" stroke="#93756b"/>
+<text x="624.0" y="144.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Écarté</text>
+<text x="624.0" y="160.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Depuis le mur de la ville</text>
+<text x="624.0" y="176.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">et au-dehors : 1000 coudées.</text>
+<text x="624.0" y="192.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Le mot est hutza.</text>
+<text x="624.0" y="208.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">On apprend hutz de hutz.</text>
+<text x="624.0" y="224.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">On n'apprend pas hutz</text>
+<text x="624.0" y="240.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">de hutza.</text>
+<rect x="504" y="328" width="240" height="176" fill="#ffffff" stroke="#8a7b63"/>
+<text x="624.0" y="372.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">École de R. Yishmael</text>
+<text x="624.0" y="388.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Retour et venue du kohen</text>
+<text x="624.0" y="404.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">s'équivalent,</text>
+<text x="624.0" y="420.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">lorsqu'aucun mot</text>
+<text x="624.0" y="436.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">identique n'existe.</text>
+<text x="624.0" y="452.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">S'il existe, on apprend</text>
+<text x="624.0" y="468.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">du mot identique.</text>
+</svg></div>
+          <figcaption>Cinq gezera shava, de &quot;lieu&quot; jusqu&#x27;aux deux mille coudées du migrash. Le verset &quot;au-dehors, mille&quot; est écarté : le mot est hutza, pas hutz.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg">
+<rect width="760" height="440" fill="#fbfaf7"/>
+<text x="380" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Tehoum de 2000 coudées : cercle ou carré ?</text>
+<text x="380" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Le carré gagne les angles : ses coins dépassent le cercle de rayon 2000.</text>
+<circle cx="150" cy="180" r="78" fill="#e7f1e4" stroke="#5d8a5d" stroke-width="2"/>
+<line x1="150" y1="180" x2="228" y2="180" stroke="#5d8a5d"/>
+<text x="188" y="174" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2b2b2b">2000</text>
+<text x="150" y="280" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Cercle</text>
+<rect x="330" y="102" width="156" height="156" fill="#f7f1e3" stroke="#b39b5a" stroke-width="2"/>
+<circle cx="408" cy="180" r="78" fill="#e7f1e4" fill-opacity="0.55" stroke="#5d8a5d"/>
+<text x="348" y="118" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2b2b2b">angle</text>
+<text x="448" y="118" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2b2b2b">angle</text>
+<text x="348" y="248" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2b2b2b">angle</text>
+<text x="448" y="248" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#2b2b2b">angle</text>
+<text x="408" y="280" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Carré</text>
+<rect x="520" y="90" width="224" height="180" fill="#ffffff" stroke="#8a7b63"/>
+<text x="632.0" y="152.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Les coins du carré</text>
+<text x="632.0" y="168.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">sont au-delà des 2000</text>
+<text x="632.0" y="184.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">du rayon.</text>
+<text x="632.0" y="200.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">C'est le gain des angles,</text>
+<text x="632.0" y="216.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">les zouyot de la michna.</text>
+<rect x="16" y="310" width="360" height="110" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="196.0" y="337.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rabbi Hanina ben Antigenos</text>
+<text x="196.0" y="353.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Il tient la gezera shava.</text>
+<text x="196.0" y="369.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">"Ceci" réserve les côtés</text>
+<text x="196.0" y="385.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">au migrash des leviim.</text>
+<text x="196.0" y="401.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Le tehoum de chabbat est rond.</text>
+<rect x="392" y="310" width="352" height="110" fill="#f6e6e0" stroke="#93756b"/>
+<text x="568.0" y="337.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Les sages, Rav Hananya</text>
+<text x="568.0" y="353.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">"Comme ceci seront</text>
+<text x="568.0" y="369.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">tous ceux qui font</text>
+<text x="568.0" y="385.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">la chevita de chabbat."</text>
+<text x="568.0" y="401.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Le tehoum est carré.</text>
+</svg></div>
+          <figcaption>Rabbi Hanina ben Antigenos : cercle, les côtés restent au migrash. Les sages : carré, et l&#x27;on gagne les angles.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg">
+<rect width="760" height="420" fill="#fbfaf7"/>
+<text x="380" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Quatre coudées et leur diagonale</text>
+<text x="380" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">4 + 8 cinquièmes = 5 coudées et 3 cinquièmes. Même compte : 5,6.</text>
+<rect x="48" y="78" width="150" height="150" fill="#f7f1e3" stroke="#b39b5a" stroke-width="2"/>
+<line x1="48" y1="228" x2="198" y2="78" stroke="#93756b" stroke-width="2"/>
+<text x="123" y="258" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">côté : 4</text>
+<text x="210" y="150" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">diagonale</text>
+<text x="210" y="168" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">4 + 8/5</text>
+<rect x="400" y="70" width="344" height="168" fill="#ffffff" stroke="#8a7b63"/>
+<text x="572.0" y="102.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Transport dans le domaine public.</text>
+<text x="572.0" y="118.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rabbi Aha bar Yaakov :</text>
+<text x="572.0" y="134.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">passible lorsqu'il a porté</text>
+<text x="572.0" y="150.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">les quatre coudées</text>
+<text x="572.0" y="166.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">et leur diagonale.</text>
+<text x="572.0" y="182.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rachi : on ne trace pas</text>
+<text x="572.0" y="198.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">ici un carré et un cercle.</text>
+<text x="572.0" y="214.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">On allonge la mesure.</text>
+<rect x="16" y="286" width="236" height="116" fill="#f6e6e0" stroke="#93756b"/>
+<text x="134.0" y="316.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rachi</text>
+<text x="134.0" y="332.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Toute direction :</text>
+<text x="134.0" y="348.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">la diagonale.</text>
+<text x="134.0" y="364.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Pas de côtés</text>
+<text x="134.0" y="380.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">à ajouter au trajet.</text>
+<rect x="264" y="286" width="240" height="116" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="384.0" y="316.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rachbam</text>
+<text x="384.0" y="332.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Est-ouest, nord-sud :</text>
+<text x="384.0" y="348.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">4 coudées seules.</text>
+<text x="384.0" y="364.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Diagonale du monde :</text>
+<text x="384.0" y="380.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">4 et leur diagonale.</text>
+<rect x="516" y="286" width="228" height="116" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="630.0" y="316.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rabbenou Tam</text>
+<text x="630.0" y="332.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Chaque direction</text>
+<text x="630.0" y="348.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">reçoit la diagonale.</text>
+<text x="630.0" y="364.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">La colonne utile</text>
+<text x="630.0" y="380.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">mesure 5,6 de côté.</text>
+</svg></div>
+          <figcaption>Transport de quatre coudées : Rachi allonge toute direction jusqu&#x27;à la diagonale. Le Rachbam réserve cet allongement à la diagonale du monde. Rabbenou Tam le donne de chaque côté.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר רבא: והוא דכי רהיט לעיקרו מטי. אמר ליה אביי: והא ״חשכה לו״ קתני!</div>
+            <div class="fr"><p>Rava a dit : et c&#x27;est lorsqu&#x27;en courant jusqu&#x27;à son tronc, il arrive. Abaye lui a dit : or la michna enseigne &quot;il a fait nuit pour lui&quot; !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>והוא דכי רהיט מטי</b> הא דקתני מתניתין דאם סיים קנה שביתה בעיקרו הוא דכי הוה רהיט מטי התם קודם שתחשך התם מהניא אמירה ואי קני התם מצי למיזל לביתו בנחת:</div>
+          <div class="glose-fr">Et c&#x27;est lorsqu&#x27;en courant il arrive. Ce que la michna enseigne, à savoir que s&#x27;il a précisé, il a acquis une chevita à son tronc : c&#x27;est lorsqu&#x27;en courant il y arrive avant que la nuit tombe. Là, la déclaration est efficace. Et s&#x27;il a acquis là, il peut aller chez lui sans se presser.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>חשכה לו</b> לילך עד ביתו אפילו במרוצה אבל לעיקרו הוה מטי במרוצה אי הוה רהיט:</div>
+          <div class="glose-fr">Il a fait nuit pour lui. Quant à aller jusqu&#x27;à sa maison, même en courant. Jusqu&#x27;au tronc, il y serait arrivé en courant, s&#x27;il avait couru.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">תניא כוותיה דרב מי שהיה בא בדרך וחשכה עליו והיה מכיר באילן או גדר ואמר שביתתי תחתיו לא אמר כלום. שביתתי במקום פלוני מהלך עד מקום פלוני. הגיע למקום פלוני מהלך את כולו וחוצה לו אלפים אמה. במה דברים אמורים במקום מסויים כגון שבת בתל שהוא גבוה עשרה והוא מד&#x27; אמות עד בית סאתים אבל במקום שאינו מסויים אין לו אלא ארבע אמות. היו שנים אחד מכיר ואחד אינו מכיר שאינו מכיר מוסר שביתתו לאותו שהוא מכיר. ומכיר אומר תהא שביתתנו במקום פלוני. במה דברים אמורים בסיים לו ארבע אמות שקבע. אבל לא סיים ארבע אמות שקבע לא יזוז ממקומו. לימא תיהוי תיובתא דשמואל. אמר לך שמואל הכא במאי עסקינן דאיכא ממקום רגליו עד עיקרו תרי אלפים וד&#x27; גרמידי אי סיים ד&quot;א מצי אזיל ואי לא לא מצי אזיל. תניא כוותיה דשמואל טעה ועירב לשתי רוחות כמדומה הוא שמערבין לשתי רוחות. או שאמר לעבדיו צאו ועירבו עלי. אחד עירב עליו לצפון ואחד עירב עליו לדרום. מהלך לצפון בעירובו לדרום ולדרום בעירובו לצפון. ואם מיצעו עליו את התחום לא יזוז ממקומו. ואע&quot;ג דקי&quot;ל הלכתא כרב באיסורא בהא הלכתא כשמואל. דהך דתניא כוותיה דשמואל שייכא בההיא דת&quot;ר ביצה לז: שנים ששאלו חלוק אחד זה לילך שחרית לבית המדרש וזה לילך בו ערבית לבית הכנסת וכו&#x27; וקי&quot;ל דהלכתא היא. הלכך הלכתא כי האי דתניא כוותיה דשמואל דתרווייהו חד טעמא הוא. ועוד דתניא כוותיה דשמואל. ואף על גב דתניא נמי כוותיה דרב. הא משני ליה שמואל שפיר. ועוד דהני ברייתות פליגי אהדדי וקי&quot;ל כדברי המיקל בעירובין כך כתב ר&quot;מ ז&quot;ל: מהלך ממקום רגליו וכו&#x27; אמר רבא והוא דכי רהיט מטי. א&quot;ל אביי והא חשכה לו קתני. חשכה לו לביתו אבל לעיקרו של אילן מצי אזיל. איכא דאמרי חשכה לו כי סגי קלי קלי אבל כי רהיט מטי:</div>
+          <div class="glose-fr">On enseigne comme Rav. Quelqu&#x27;un allait en chemin, la nuit est tombée sur lui, il reconnaissait un arbre ou une clôture, et il a dit &quot;ma chevita est sous lui&quot; : il n&#x27;a rien dit. &quot;Ma chevita est en tel lieu&quot; : il marche jusqu&#x27;à ce lieu. Arrivé à ce lieu, il parcourt ce lieu tout entier, et en dehors de lui deux mille coudées. Dans quel cas ces paroles s&#x27;appliquent-elles ? Pour un lieu délimité, par exemple s&#x27;il a fait la chevita dans un tell haut de dix, depuis quatre coudées jusqu&#x27;à un beit seatayim (surface de deux séa). Pour un lieu qui n&#x27;est pas délimité, il n&#x27;a que quatre coudées. Ils étaient deux, l&#x27;un reconnaît et l&#x27;autre ne reconnaît pas : celui qui ne reconnaît pas remet sa chevita à celui qui reconnaît. Et celui qui reconnaît dit : que notre chevita soit en tel lieu. Dans quel cas ? Lorsqu&#x27;il lui a précisé les quatre coudées qu&#x27;il a fixées. S&#x27;il ne lui a pas précisé les quatre coudées qu&#x27;il a fixées, il ne bougera pas de sa place. Dirons-nous que cela réfute Chmouel ? Chmouel te dit : de quoi traite-t-on ici ? Du lieu de ses pieds jusqu&#x27;au tronc, il y a deux mille et quatre coudées. S&#x27;il a précisé quatre coudées, il peut aller. S&#x27;il ne les a pas précisées, il ne peut pas aller. On enseigne comme Chmouel. Il s&#x27;est trompé et a fait un erouv vers deux directions, s&#x27;imaginant qu&#x27;on fait un erouv vers deux directions. Ou bien il a dit à ses serviteurs : sortez et faites un erouv pour moi. L&#x27;un a fait pour lui un erouv au nord, l&#x27;autre au sud. Il marche vers le nord selon son erouv du sud, et vers le sud selon son erouv du nord. S&#x27;ils ont placé le milieu du tehoum sur lui, il ne bougera pas de sa place. Bien que nous tenions pour règle que la halakha suit Rav dans un interdit, ici la halakha suit Chmouel. Car cette beraita conforme à Chmouel se rattache à celle qu&#x27;ont enseignée nos maîtres, Beitsa 37b : deux hommes ont emprunté un même vêtement, l&#x27;un pour aller le matin à la maison d&#x27;étude, l&#x27;autre pour aller avec lui le soir à la synagogue, etc. Et nous tenons que c&#x27;est la halakha. Dès lors, la halakha suit cette beraita conforme à Chmouel, car toutes deux ont une seule raison. De plus, on enseigne comme Chmouel. Et bien qu&#x27;on enseigne aussi comme Rav, Chmouel y répond bien. De plus, ces beraitot divergent l&#x27;une de l&#x27;autre, et nous tenons comme les paroles de celui qui est indulgent en matière d&#x27;erouvin. Ainsi a écrit le Ram, de mémoire bénie. Il marche depuis le lieu de ses pieds, etc. Rava a dit : et c&#x27;est lorsqu&#x27;en courant il arrive. Abaye lui a dit : or on enseigne &quot;il a fait nuit pour lui&quot;. &quot;Il a fait nuit pour lui&quot; vise sa maison. Jusqu&#x27;au tronc de l&#x27;arbre, il peut aller. Certains disent : il a fait nuit pour lui lorsqu&#x27;il marche peu à peu ; lorsqu&#x27;il court, il arrive.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Suite de la michna sur celui qui précise sa <b>chevita</b> au <b>tronc</b>. <b>Rava</b> pose une condition : la déclaration ne vaut que s'il peut, en courant, atteindre le tronc avant la nuit. Une fois la chevita acquise là, il rejoint sa maison dans le <b>tehoum</b> (limite de chabbat), sans avoir à courir.</p><p><b>Abaye</b> objecte les mots "il a fait nuit pour lui". Rachi les lit ainsi : la maison reste hors d'atteinte, même en courant ; le tronc, lui, est encore à portée de course.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 250" xmlns="http://www.w3.org/2000/svg">
+<rect width="760" height="250" fill="#fbfaf7"/>
+<text x="380" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Avant la nuit : la maison, ou seulement le tronc ?</text>
+<circle cx="70" cy="110" r="16" fill="#2b2b2b"/>
+<text x="70" y="150" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">voyageur</text>
+<rect x="250" y="86" width="70" height="48" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="285" y="115" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">tronc</text>
+<rect x="560" y="86" width="140" height="48" fill="#f6e6e0" stroke="#93756b"/>
+<text x="630" y="115" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">sa maison</text>
+<line x1="90" y1="100" x2="246" y2="100" stroke="#5d8a5d" stroke-width="2"/>
+<polygon points="246,100 236,95 236,105" fill="#5d8a5d"/>
+<text x="168" y="90" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">en courant, il arrive</text>
+<line x1="90" y1="124" x2="556" y2="124" stroke="#93756b" stroke-width="2" stroke-dasharray="6 4"/>
+<polygon points="556,124 546,119 546,129" fill="#93756b"/>
+<text x="320" y="148" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">même en courant, la nuit tombe avant la maison</text>
+<rect x="16" y="176" width="728" height="56" fill="#ffffff" stroke="#8a7b63"/>
+<text x="380.0" y="200.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rava : la déclaration au tronc vaut s'il peut l'atteindre en courant.</text>
+<text x="380.0" y="216.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">S'il a acquis là, il rentre ensuite chez lui sans se presser.</text>
+</svg></div><div class="svg-cap">La course atteint le tronc avant la nuit. La maison, même en courant, reste au-delà.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">״חשכה״ — לביתו, אבל לעיקרו של אילן מצי אזיל. איכא דאמרי אמר רבא: חשכה לו כי מסגי קלי קלי, אבל רהיט — מטי.</div>
+            <div class="fr"><p>&quot;Il a fait nuit&quot; : pour sa maison. Jusqu&#x27;au tronc de l&#x27;arbre, il peut aller.</p><p>Certains disent que Rava a dit : il a fait nuit pour lui lorsqu&#x27;il marche peu à peu ; s&#x27;il court, il arrive.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מסגי קלי</b> הולך מעט מעט:</div>
+          <div class="glose-fr">Il marche peu à peu. Il va petit à petit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara répond à Abaye. "Il a fait nuit" vise la <b>maison</b>. Le <b>tronc</b> reste accessible avant l'entrée de chabbat.</p><p>Autre version des paroles de <b>Rava</b>. "Il a fait nuit" se mesure au pas : au pas menu, <b>kali kali</b>, il n'arrive pas ; en courant, il arrive. Rachi glose seulement : il marche peu à peu.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רבה ורב יוסף הוו קא אזלי באורחא. אמר ליה רבה לרב יוסף: תהא שביתתנו תותי דיקלא דסביל אחוה. ואמרי לה: תותי דיקלא דפריק מריה מכרגא.</div>
+            <div class="fr"><p>Rabba et Rav Yossef allaient en chemin. Rabba dit à Rav Yossef : que notre chevita soit sous le palmier qui soutient son frère.</p><p>Et certains disent : sous le palmier qui a dégagé son maître du karga.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דסביל אחוה</b> אילן אחר היה נסמך עליו:</div>
+          <div class="glose-fr">Qui soutient son frère. Un autre arbre s&#x27;appuyait sur lui.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דפריק מריה מכרגא</b> טוען פירות הרבה ומוכרן ופורע מהן המס:</div>
+          <div class="glose-fr">Qui a dégagé son maître du karga. Il porte beaucoup de fruits ; on les vend, et l&#x27;on paie l&#x27;impôt avec cela.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le palmier doit être <b>reconnaissable</b>. Première formule : il <b>soutient</b> un autre arbre, son "frère". Seconde formule : ses dattes suffisent à payer le <b>karga</b>, l'impôt foncier du maître.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ידע ליה מר? אמר ליה: לא ידענא ליה. אמר ליה: סמוך עלי, דתניא, רבי יוסי אומר: אם היו שנים, אחד מכיר ואחד שאינו מכיר — זה שאינו מכיר מוסר שביתתו למכיר, זה שמכיר אומר: תהא ״שביתתנו במקום פלוני״.</div>
+            <div class="fr"><p>Le maître le connaît-il ? Il lui dit : je ne le connais pas.</p><p>Il lui dit : appuie-toi sur moi. Car on enseigne : Rabbi Yossi dit : s&#x27;ils étaient deux, l&#x27;un qui reconnaît et l&#x27;autre qui ne reconnaît pas, celui qui ne reconnaît pas remet sa chevita à celui qui reconnaît, et celui qui reconnaît dit : que notre chevita soit en tel lieu.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לא ידענא ליה</b> איני מכיר אותו אילן:</div>
+          <div class="glose-fr">Je ne le connais pas. Je ne reconnais pas cet arbre.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מוסר שביתתו למכיר</b> אומר שביתתי עמך:</div>
+          <div class="glose-fr">Il remet sa chevita à celui qui reconnaît. Il dit : ma chevita est avec toi.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rav Yossef</b> ne connaît pas le palmier. <b>Rabba</b> lui dit de s'appuyer sur lui, et cite <b>Rabbi Yossi</b> : celui qui ne reconnaît pas le lieu <b>remet</b> sa chevita à celui qui le reconnaît. Rachi : la formule de la remise est "ma chevita est avec toi". Celui qui connaît achève : "que notre chevita soit en tel lieu".</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 280" xmlns="http://www.w3.org/2000/svg">
+<rect width="760" height="280" fill="#fbfaf7"/>
+<text x="380" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Deux hommes, un seul palmier connu</text>
+<rect x="16" y="48" width="230" height="140" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="131.0" y="90.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rav Yossef</text>
+<text x="131.0" y="106.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Il ne reconnaît pas</text>
+<text x="131.0" y="122.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">le palmier.</text>
+<text x="131.0" y="138.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Il dit : ma chevita</text>
+<text x="131.0" y="154.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">est avec toi.</text>
+<rect x="266" y="48" width="230" height="140" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="381.0" y="90.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rabba</text>
+<text x="381.0" y="106.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Il reconnaît le palmier</text>
+<text x="381.0" y="122.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">qui soutient son frère,</text>
+<text x="381.0" y="138.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">ou celui qui paie</text>
+<text x="381.0" y="154.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">le karga de son maître.</text>
+<rect x="516" y="48" width="228" height="140" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="630.0" y="90.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Formule dite par lui</text>
+<text x="630.0" y="106.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Que notre chevita</text>
+<text x="630.0" y="122.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">soit en tel lieu.</text>
+<text x="630.0" y="138.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rabbi Yossi, dans</text>
+<text x="630.0" y="154.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">la bouche de Rabba.</text>
+<rect x="16" y="204" width="728" height="56" fill="#ffffff" stroke="#8a7b63"/>
+<text x="380.0" y="228.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">La beraita est anonyme. Rabba la place au nom de Rabbi Yossi,</text>
+<text x="380.0" y="244.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">dont le nimouk accompagne la décision, pour que Rav Yossef l'accepte.</text>
+</svg></div><div class="svg-cap">Rav Yossef remet sa chevita à Rabba, qui seul reconnaît le palmier.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ולא היא, לא תנא ליה כרבי יוסי, אלא כי היכי דליקבל לה מיניה, משום דרבי יוסי נימוקו עמו.</div>
+            <div class="fr"><p>Il n&#x27;en est pas ainsi. Il ne le lui a pas enseigné selon Rabbi Yossi.</p><p>Il l&#x27;a fait afin qu&#x27;il l&#x27;accepte de lui, parce que le raisonnement de Rabbi Yossi l&#x27;accompagne.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ולא היא</b> הא דאמר ליה משמיה דר&#x27; יוסי ליתא דלא תניא ליה בשם ר&#x27; יוסי אלא סתמא תניא ליה לעיל ומשום הכי אמרה בשם רבי יוסי כי היכי דליקבלה מיניה:</div>
+          <div class="glose-fr">Il n&#x27;en est pas ainsi. Ce qu&#x27;il lui a dit au nom de Rabbi Yossi ne tient pas : cela n&#x27;est pas enseigné au nom de Rabbi Yossi, c&#x27;est enseigné plus haut sans nom. C&#x27;est pour cela qu&#x27;il le lui a dit au nom de Rabbi Yossi, afin qu&#x27;il l&#x27;accepte de lui.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">ה&quot;ג ולא היא לא תניא ליה כדר&#x27; יוסי:</div>
+          <div class="glose-fr">Ainsi est la leçon : il n&#x27;en est pas ainsi, cela n&#x27;est pas enseigné selon Rabbi Yossi.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>נימוקו עמו</b> טעמו במסכת גיטין (דף סז.) מונה שבחן של חכמים ואמר ר&quot;י נמוקו עמו נים וקו דבר ישר כקו המשקולת:</div>
+          <div class="glose-fr">Son nimouk l&#x27;accompagne : sa raison. Dans le traité Gittin (67a), on énumère l&#x27;éloge des sages, et l&#x27;on dit : Rabbi Yossi, son nimouk l&#x27;accompagne. Nim et kav : une chose droite comme le fil du fil à plomb.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara écarte l'attribution. La beraita est <b>anonyme</b> ; Rabba l'a mise au nom de <b>Rabbi Yossi</b> pour que Rav Yossef l'accepte. On suit d'ordinaire Rabbi Yossi, parce que son <b>nimouk</b> (son raisonnement) l'accompagne.</p><p>Rachi donne une autre leçon : "cela n'est pas enseigné", là où le texte dit "il ne le lui a pas enseigné". Il décompose <b>nimouk</b> en nim (fil) et kav (ligne) : droit comme le fil à plomb. L'éloge est celui de Gittin 67a.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אם אינו מכיר או שאינו בקי וכו׳.</div>
+            <div class="fr"><p>S&#x27;il ne reconnaît pas, ou s&#x27;il n&#x27;est pas expert, etc.</p></div>
+            <div class="tools"><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">מתני&#x27; אם אינו מכיר או שאינו בקי בהלכ&#x27; ואמר שביתתי במקומי זכה לו מקומו ויש לו אלפים אמה לכל רוח עגולות דברי ר&#x27; חנינא בן אנטיגנוס. וחכמים אומרים מרובעות כטבלא מרובעת כדי שיהא נשכר הזויות וזהו שאמרו העני מערב ברגליו. ר&#x27; מאיר אומר אנו אין לנו אלא עני. ר&#x27; יהודה אומר אחד עני ואחד עשיר. ולא אמרו לערב בפת אלא להקל על העשיר שלא יצא ויערב ברגליו. הא דקתני במתני&#x27; ואמר שביתתי במקומי לאו דוקא אמר. דהוא הדין בלא אמירה נמי הוי קני כדאמר לעיל בפרק בכל מערבין (עירובין דף לח:) אבל ניעור דאי בעי למימר מצי אמר אע&quot;ג דלא אמר כמאן דאמר דמי. ולעיל (עירובין דף מה.) נמי תנן מי שישב ועמד והרי הוא סמוך לעיר הואיל ולא היתה כוונתו לכך לא יכנס ומוכח בגמרא דקני שביתה גבי עובדא דרבי טרפון דאמר שמא בית המדרש מובלע בתחום שלו היה. והא דקתני ואמר שביתתי במקומי משום דבעי למיתני בסיפא זהו שאמרו העני מערב ברגליו אבל עשיר לא אע&quot;ג דאמר שביתתי במקומי ורבי יהודה נמי דאמר אחד עני ואחד עשיר ע&quot;כ מיירי בדאמר. להכי תנא ברישא ואמר שביתתי במקומי. דעשיר העומד בעירו והחשיך על התחום אינו קונה משם אלפים אמה לכל רוח אלא אם כן נתכוון לקנות משם שביתה. וכה&quot;ג אשכחן בפרק קמא דבבא מציעא דף יא. דתנן ראה אותן רצין אחר המציאה אחר צבי שבור ואחר גוזלות שלא פרחו ואמר זכתה לי שדי זכתה לו. ובלא אמירה נמי זכתה לו שדהו דאפילו גבי ד&#x27; אמות שתקנו חכמים שקונות לו בכל מקום קאמר התם אי תקינו ליה רבנן דליקני כי לא אמר מאי הוה. והא דתני ואמר זכתה לי שדי משום רבותא דסיפא תני היה צבי רץ כדרכו או שהיו גוזלות מפריחין ואמר זכתה לי שדי לא אמר כלום:</div>
+          <div class="glose-fr">Michna. S&#x27;il ne reconnaît pas, ou s&#x27;il n&#x27;est pas expert dans la halakha, et qu&#x27;il a dit &quot;ma chevita est à ma place&quot;, son lieu lui est acquis, et il a deux mille coudées dans chaque direction, circulaires : paroles de Rabbi Hanina ben Antigenos. Et les sages disent : carrées, comme une tablette carrée, afin qu&#x27;il gagne les angles. Et c&#x27;est ce qu&#x27;ils ont dit : le pauvre fait l&#x27;erouv avec ses pieds. Rabbi Meir dit : nous n&#x27;avons que le pauvre. Rabbi Yehouda dit : le pauvre comme le riche. Et l&#x27;on n&#x27;a dit de faire l&#x27;erouv avec du pain que pour alléger le riche, afin qu&#x27;il n&#x27;ait pas à sortir faire l&#x27;erouv avec ses pieds. Ce que la michna enseigne, &quot;et il a dit : ma chevita est à ma place&quot;, ne vise pas précisément une parole prononcée. La même règle vaut sans parole : il acquiert aussi, comme on l&#x27;a dit plus haut au chapitre Bekhol me&#x27;arvin (Eruvin 38b). S&#x27;il est éveillé, et que, voulant parler, il pouvait parler, même s&#x27;il n&#x27;a pas parlé, c&#x27;est comme s&#x27;il avait parlé. Plus haut aussi (Eruvin 45a) nous avons enseigné : celui qui s&#x27;est assis, s&#x27;est levé, et se trouve proche de la ville, puisqu&#x27;il n&#x27;en avait pas l&#x27;intention, n&#x27;entrera pas. Et la Guemara prouve qu&#x27;il acquiert une chevita, à propos du fait de Rabbi Tarfon, qui a dit : peut-être la maison d&#x27;étude était-elle englobée dans son tehoum. Si la michna enseigne &quot;et il a dit : ma chevita est à ma place&quot;, c&#x27;est parce qu&#x27;elle veut enseigner à la fin : c&#x27;est ce qu&#x27;ils ont dit, le pauvre fait l&#x27;erouv avec ses pieds, et le riche, non, même s&#x27;il a dit &quot;ma chevita est à ma place&quot;. Rabbi Yehouda aussi, qui dit le pauvre comme le riche, parle nécessairement d&#x27;un cas où il a parlé. C&#x27;est pourquoi le début enseigne &quot;et il a dit : ma chevita est à ma place&quot;. Car un riche qui se tient dans sa ville, et pour qui la nuit tombe à la limite du tehoum, n&#x27;acquiert pas de là deux mille coudées dans chaque direction, sauf s&#x27;il a eu l&#x27;intention d&#x27;acquérir de là une chevita. Nous trouvons de même au premier chapitre de Bava Metsia 11a, où l&#x27;on enseigne : il a vu des gens courir après une trouvaille, après une gazelle blessée, après des oisillons qui n&#x27;ont pas encore volé, et il a dit &quot;mon champ me l&#x27;a acquis&quot; : cela lui est acquis. Sans parole aussi, son champ le lui acquiert. Même pour les quatre coudées que les sages ont instituées, et qui lui acquièrent en tout lieu, on dit là-bas : s&#x27;ils les ont instituées pour qu&#x27;il acquière, lorsqu&#x27;il n&#x27;a pas parlé, qu&#x27;en est-il ? Si l&#x27;on enseigne &quot;et il a dit : mon champ me l&#x27;a acquis&quot;, c&#x27;est à cause de la nouveauté de la fin : une gazelle courait comme à son habitude, ou des oisillons s&#x27;envolaient, et il a dit &quot;mon champ me l&#x27;a acquis&quot; : il n&#x27;a rien dit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reprise de la <b>michna</b>. Sans repère connu, ou sans être expert dans la halakha, il dit "ma chevita est à ma place" : le lieu lui est acquis, avec deux mille coudées dans chaque direction.</p><p>Le Rosh rapporte la suite. <b>Rabbi Hanina ben Antigenos</b> : ces deux mille sont <b>circulaires</b>. Les sages : <b>carrées</b>, comme une tablette, afin de gagner les angles. Puis le pauvre qui fait l'erouv avec ses pieds.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הני אלפים אמה היכן כתיבן? דתניא: ״שבו איש תחתיו״ — אלו ארבע אמות. ״אל יצא איש ממקומו״ — אלו אלפים אמה.</div>
+            <div class="fr"><p>Ces deux mille coudées, où sont-elles écrites ? Comme on enseigne : &quot;Demeurez chacun à sa place&quot;, ce sont quatre coudées.</p><p>&quot;Que nul ne sorte de son lieu&quot;, ce sont deux mille coudées.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אלו ד&#x27; אמות</b> ליוצא חוץ לתחום:</div>
+          <div class="glose-fr">Ce sont quatre coudées. Pour celui qui est sorti hors du tehoum.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">גמ&#x27; הני אלפים אמות היכא כתיבי. דתניא שבו איש תחתיו אלו ארבע אמות. אל יצא איש ממקומו אלו אלפים אמה. מנא הני מילי. אמר רב חסדא למדנו מקום ממקום ומקום מניסה וניסה מניסה וניסה מגבול וגבול מגבול וגבול מחוץ וחוץ מחוץ ומדותם מחוץ לעיר. והא דבעיא מרובעות משום דכתיב גבי מגרש הלוים זה יהיה להם ותני רבי חנינא כזה יהיה לכם כל שובתי שבת מה התם כתיב פיאות אף גבי שבת בעינן מרובעות כדי שיהיה להם פיאות. אמר רב אחא בר יעקב המעביר ד&#x27; אמות בר&quot;ה אינו חייב עד שיעביר הן ואלכסונן. פירש רש&quot;י דגבי העברה לא שייך למיתב להו פיאות דלא שייך בהו ריבוע ועיגול. אלא בכל פעם נותנין לו שיעור אלכסון ואינו חייב עד שיעביר ה&#x27; אמות וג&#x27; חומשים. ורשב&quot;ם ז&quot;ל פירש דגבי העברת ד&quot;א נמי תלוי בריבוע העולם שאם הוא מעביר אך זורק ממזרח למערב או מצפון לדרום חייב בד&quot;א לחודייהו. ואם העביר או זרק לאלכסון של עולם מקרן מזרחית צפונית לקרן מערבית דרומית אינו חייב עד ד&#x27; אמות ואלכסונן. ועמוד בר&quot;ה נמי דבעיא גבוה עשרה ורחב ארבעה דבעינן הן ואלכסונן היינו כשעומד אלכסונו של עמוד לאלכסונו של עולם אבל אם עומד אלכסונו ממזרח למערב ומצפון לדרום לא סגי בד&#x27; על ד&#x27; מרובעין דבעיא שיהא ארבע טפחים ואלכסונן לאלכסון של עולם. והכי אמר לקמן בכיצד מעברין (עירובין דף נו.) דעיר עגולה מרבעה בריבוע העולם נותן צפונה לצפון עולם ודרומה לדרום עולם. ור&quot;ת ז&quot;ל פירש דלכל צד נותנין אלכסון בזריקה ובהעברה וכן לתחום שבת לכל צד שהולך נותנין לו אלפים ואלכסונן. ובכל מקום שמזכיר ד&#x27; גבי עמוד רחב ארבעה בעי הן ואלכסונן לכל צד דהיינו רחב חמשה טפחים וג&#x27; חומשים על חמשה טפחים וג&#x27; חומשים. אלא דלא איצטריך ליה להזכיר בשום מקום אלא הד&#x27; טפחים דמנייהו נפיק אלכסונן. וגבי כוורת בפ&quot;ק דשבת דף ח. דנקט רחבה ששה פטור ולא נקט רחבה ד&#x27; כמו בכל מקום משום דבכל דוכתא דאיירי במרובע שמעינן הן ואלכסונן. אבל כוורת דסתמא עגולה היא אי הוי נקט רחבה ד&#x27; הוה משמע דלא בעי אלכסון שאין לעיגול אלכסון. וקשה לפירושו מהא דתניא ביומא פרק ב&#x27; שעירי (יומא דף סז.) עשר סוכות ושנים עשר מילין דר&quot;מ וכולן על ידי עירוב. פי&#x27; שהמיל הוא אלפים אמה והיה מהלך ע&quot;י עירוב. אלמא דתחום שבת לא הוי אלא אלפים אמה. וי&quot;ל דכי היכי דבכל דוכתא קרי לתחום שבת אלפים אמה אע&quot;ג דבעי אלכסון הכי נמי קרי ליה התם מיל. ומיהו קשה לפי&#x27; דבכל פיאות שבת ילפינן מערי לוים ובערי לוים אין נותנין פיאות אלא לפיאות עולם כדמוכח לקמן בכיצד מעברין (עירובין דף נו:): וזהו שאמרו העני מערב ברגליו וכו&#x27;. אמר רב נחמן מחלוקת במקומי. דרבי מאיר סבר עיקר עירוב בפת עני אין עשיר לא ורבי יהודה סבר עיקר עירוב ברגליו אחד עני ואחד עשיר. אבל במקום פלוני ד&quot;ה עני אין עשיר לא אלמא קסבר ר&#x27; מאיר עיקר עירוב בפת. ולא אמרו מערבין בפת אלא להקל על העשיר מאן קתני לה ר&#x27; יהודה קתני לה:</div>
+          <div class="glose-fr">Guemara. Ces deux mille coudées, où sont-elles écrites ? Comme on enseigne : &quot;Demeurez chacun à sa place&quot;, ce sont quatre coudées. &quot;Que nul ne sorte de son lieu&quot;, ce sont deux mille coudées. D&#x27;où ces mesures ? Rav Hisda a dit : nous avons appris lieu de lieu, lieu de fuite, fuite de fuite, fuite de frontière, frontière de frontière, frontière de dehors, et dehors de dehors, &quot;vous mesurerez en dehors de la ville&quot;. Si l&#x27;on exige des carrés, c&#x27;est parce qu&#x27;il est écrit au sujet du migrash des leviim &quot;ceci sera pour eux&quot;, et Rabbi Hanina enseigne : comme ceci ce sera pour vous, tous ceux qui font la chevita de chabbat. De même que là-bas des côtés sont écrits, de même pour chabbat nous exigeons des carrés, afin qu&#x27;ils aient des côtés. Rav Aha bar Yaakov a dit : celui qui transporte quatre coudées dans le domaine public n&#x27;est passible que lorsqu&#x27;il a transporté elles et leur diagonale. Rachi explique : pour le transport, il n&#x27;y a pas lieu de leur donner des côtés, car le carré et le cercle n&#x27;y ont pas leur place. Chaque fois on lui donne la mesure de la diagonale, et il n&#x27;est passible que lorsqu&#x27;il a transporté cinq coudées et trois cinquièmes. Le Rachbam, de mémoire bénie, explique : le transport de quatre coudées dépend aussi du carré du monde. S&#x27;il transporte ou lance d&#x27;est en ouest, ou du nord au sud, il est passible pour quatre coudées seules. S&#x27;il a transporté ou lancé selon la diagonale du monde, de l&#x27;angle nord-est à l&#x27;angle sud-ouest, il n&#x27;est passible que pour quatre coudées et leur diagonale. Une colonne dans le domaine public, dont on exige dix de haut et quatre de large, et pour laquelle nous exigeons elles et leur diagonale : c&#x27;est lorsque sa diagonale est placée selon la diagonale du monde. Si sa diagonale est placée d&#x27;est en ouest et du nord au sud, quatre sur quatre en carré ne suffisent pas : il faut quatre tefahim et leur diagonale, selon la diagonale du monde. C&#x27;est aussi ce que l&#x27;on dit plus loin, dans Keitsad me&#x27;abrin (Eruvin 56a) : une ville ronde, on la carre selon le carré du monde ; on donne son nord au nord du monde et son sud au sud du monde. Rabbenou Tam, de mémoire bénie, explique : de chaque côté on donne la diagonale, pour le lancer et pour le transport, et de même pour le tehoum de chabbat : de chaque côté où il va, on lui donne deux mille et leur diagonale. Partout où l&#x27;on mentionne quatre au sujet d&#x27;une colonne large de quatre, il faut elles et leur diagonale de chaque côté, c&#x27;est-à-dire une largeur de cinq tefahim et trois cinquièmes sur cinq tefahim et trois cinquièmes. Il n&#x27;est pas nécessaire de mentionner, en aucun endroit, autre chose que les quatre tefahim, car c&#x27;est d&#x27;eux que sort leur diagonale. Pour la ruche, au premier chapitre de Chabbat 8a, on prend une largeur de six, et il est exempt ; on ne prend pas une largeur de quatre, comme partout ailleurs. Car partout où l&#x27;on traite d&#x27;un carré, nous comprenons &quot;elles et leur diagonale&quot;. La ruche, en principe ronde : si l&#x27;on avait pris une largeur de quatre, on aurait compris qu&#x27;elle n&#x27;exige pas de diagonale, car un cercle n&#x27;a pas de diagonale. Une difficulté demeure selon son explication, du fait de ce que l&#x27;on enseigne dans Yoma, au chapitre des deux boucs (Yoma 67a) : dix cabanes et douze milles, selon Rabbi Meir, et toutes au moyen d&#x27;un erouv. Explication : le mille vaut deux mille coudées, et il marchait au moyen d&#x27;un erouv. On apprend que le tehoum de chabbat se limite à deux mille coudées. On peut répondre : de même que partout on appelle le tehoum de chabbat &quot;deux mille coudées&quot;, bien qu&#x27;il exige la diagonale, de même là-bas on l&#x27;appelle un mille. Une difficulté demeure toutefois selon cette explication : tous les côtés de chabbat, nous les apprenons des villes des leviim, et dans les villes des leviim on ne donne des côtés que selon les côtés du monde, comme le prouve plus loin Keitsad me&#x27;abrin (Eruvin 56b). Et c&#x27;est ce qu&#x27;ils ont dit : le pauvre fait l&#x27;erouv avec ses pieds, etc. Rav Nahman a dit : la dispute porte sur &quot;à ma place&quot;. Rabbi Meir tient : l&#x27;essentiel de l&#x27;erouv est le pain ; le pauvre, oui ; le riche, non. Rabbi Yehouda tient : l&#x27;essentiel de l&#x27;erouv est avec les pieds ; le pauvre comme le riche. Pour &quot;tel lieu&quot;, tous conviennent : le pauvre, oui ; le riche, non. On apprend que Rabbi Meir tient : l&#x27;essentiel de l&#x27;erouv est le pain. &quot;Et l&#x27;on n&#x27;a dit qu&#x27;on fait l&#x27;erouv avec du pain que pour alléger le riche&quot; : qui l&#x27;enseigne ? C&#x27;est Rabbi Yehouda qui l&#x27;enseigne.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Question de fond : d'où la Torah tient-elle les <b>deux mille coudées</b> ? La beraita partage le verset de la manne (Exode 16, 29). "Demeurez chacun à sa place" : les <b>quatre coudées</b>. Rachi : elles visent celui qui est déjà sorti hors du tehoum. "Que nul ne sorte de son lieu" : les <b>deux mille</b>.</p><p>Le chiffre deux mille n'est pas dans ce verset. Le segment suivant le fait venir, par <b>gezera shava</b> (analogie de mots), du migrash des leviim.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מנא לן? אמר רב חסדא: למדנו ׳מקום׳ מ׳מקום׳, ו׳מקום׳ מ׳ניסה׳, ו׳ניסה׳ מ׳ניסה׳, ו׳ניסה׳ מ׳גבול׳, ו׳גבול׳ מ׳גבול׳, ו׳גבול׳ מ׳חוץ׳, ו׳חוץ׳ מ׳חוץ׳. דכתיב: ״ומדותם מחוץ לעיר את פאת קדמה אלפים באמה וגו׳״.</div>
+            <div class="fr"><p>D&#x27;où tenons-nous cela ? Rav Hisda a dit : nous avons appris lieu de lieu, lieu de fuite, fuite de fuite, fuite de frontière, frontière de frontière, frontière de dehors, et dehors de dehors.</p><p>Car il est écrit : &quot;Vous mesurerez en dehors de la ville le côté est, deux mille coudées, etc.&quot;</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מקום ממקום ומקום מניסה</b> פסוק שנאמר בו מקום ולא נאמר בו ניסה דנין אותו מפסוק אחר שנאמר בו מקום וניסה כגון אל יצא איש ממקומו דנין מושמתי לך מקום אשר ינוס שמה מה להלן כתיב ניסה אשר ינוס אף מקרא דאל יצא איש ממקומו מרבי ביה ניסה והוי כמאן דכתיב ביה ניסה והדר דנין ניסה מניסה וניסה מגבול כלומר דנין ניסה זו שלא נאמר בו גבול מניסה שנאמר בו גבול דכתיב מגבול עיר מקלטו אשר ינוס ומרבינן נמי באידך ניסה דאל יצא איש ממקומו כאילו כתיב ביה גבול והדר דנין גבול מגבול וגבול מחוץ דנין גבול זה שלא נאמר בו חוץ מגבול שנאמר בו חוץ שנאמר ומצא אותו גואל הדם מחוץ לגבול ומרבינן חוץ מג&quot;ש להאי גבול דאל יצא איש ממקומו והדר דנין האי חוץ מחוץ דומדותם מחוץ לעיר דכתיב ביה אלפים באמה:</div>
+          <div class="glose-fr">Lieu de lieu, et lieu de fuite. Un verset où il est dit &quot;lieu&quot;, et où il n&#x27;est pas dit &quot;fuite&quot;, on le met en regard d&#x27;un autre verset où il est dit &quot;lieu&quot; et &quot;fuite&quot;. Par exemple, &quot;que nul ne sorte de son lieu&quot;, on le met en regard de &quot;je te fixerai un lieu où il fuira&quot;. De même que là-bas &quot;fuite&quot; est écrit, &quot;où il fuira&quot;, de même, dans le verset &quot;que nul ne sorte de son lieu&quot;, on inclut &quot;fuite&quot;, et c&#x27;est comme si &quot;fuite&quot; y était écrit. Ensuite on met en regard fuite et fuite, puis fuite et frontière. C&#x27;est-à-dire : on met en regard cette fuite où &quot;frontière&quot; n&#x27;est pas dit, avec une fuite où &quot;frontière&quot; est dit, car il est écrit &quot;depuis la frontière de sa ville de refuge, où il fuira&quot;. On inclut aussi, dans l&#x27;autre fuite de &quot;que nul ne sorte de son lieu&quot;, comme si &quot;frontière&quot; y était écrit. Ensuite on met en regard frontière et frontière, puis frontière et dehors. On met en regard cette frontière où &quot;dehors&quot; n&#x27;est pas dit, avec une frontière où &quot;dehors&quot; est dit, car il est dit &quot;le vengeur du sang le trouve en dehors de la frontière&quot;. On inclut &quot;dehors&quot;, par gezera shava, pour cette frontière de &quot;que nul ne sorte de son lieu&quot;. Ensuite on met en regard ce &quot;dehors&quot; avec le &quot;dehors&quot; de &quot;vous mesurerez en dehors de la ville&quot;, où &quot;deux mille coudées&quot; est écrit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rav Hisda</b> construit une chaîne. Chaque <b>gezera shava</b> transporte un mot nouveau sur "que nul ne sorte de son lieu", jusqu'à ce que ce verset soit traité comme s'il contenait "dehors". Ce "dehors" rejoint alors "vous mesurerez en dehors de la ville", où la Torah écrit <b>deux mille coudées</b>.</p><p>Rachi détaille l'ordre : lieu, puis fuite, puis frontière, puis dehors. Le point d'arrivée est le <b>migrash</b> (terrain ouvert) des villes des leviim.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ונילף מ״קיר העיר וחוצה אלף אמה״? דנין ׳חוץ׳ מ׳חוץ׳, ואין דנין ׳חוץ׳ מ׳חוצה׳.</div>
+            <div class="fr"><p>Et que l&#x27;on apprenne de &quot;depuis le mur de la ville et au-dehors, mille coudées&quot; ? On apprend &quot;dehors&quot; de &quot;dehors&quot;, et l&#x27;on n&#x27;apprend pas &quot;dehors&quot; de &quot;et au-dehors&quot;.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Un autre verset du même chapitre donne <b>mille</b> coudées, "depuis le mur de la ville et au-dehors". Le mot y est <b>hutza</b> ("et au-dehors"), pas <b>hutz</b> ("dehors"). La gezera shava se fait d'un mot à son identique. Les deux mille restent la mesure du tehoum.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ומאי נפקא מינה? הא תנא דבי רבי ישמעאל: ״ושב הכהן״ ״ובא הכהן״ — זו היא שיבה, זו היא ביאה!</div>
+            <div class="fr"><p>Et quelle différence cela fait-il ? Or l&#x27;école de Rabbi Yishmael enseigne : &quot;le kohen reviendra&quot;, &quot;le kohen viendra&quot; : ce retour est cette venue !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ושב הכהן ובא הכהן</b> בתורת כהנים שנויה בנגעי בתים בשבוע של הסגר ראשון כתיב ושב הכהן ביום השביעי וראה והנה פשה הנגע בקירות הבית וכתיב בתריה וחלצו את האבנים ואת הבית יקציע מבית יקלף עפר הבית סביב הקיר ועפר אחר יקח וטח את הבית וכתיב ואם ישוב הנגע ופרח בבית וגו&#x27; ונתץ את הבית ותניא ופרח יכול לא יהא טמא עד שיחזור ויפשה ת&quot;ל צרעת ממארת צרעת ממארת לג&quot;ש מה צרעת ממארת האמורה בבגדים טימא את החוזר אע&quot;פ שאינו פושה אף צרעת ממארת האמורה בבתים טימא את החוזר אע&quot;פ שאינו פושה יכול חזר ופרח בו ביום יהא טמא נאמר ואם ישוב הנגע ונאמר ושב הכהן מה שיבה האמורה להלן בסוף שבוע אף שיבה האמורה כאן בסוף שבוע למדנו שנותן לו שבוע אחר החליצה וקיצה וטיחה אם חזר הנגע נותצו ואם לא חזר מטהרו אין לי אלא חולץ וקוצה וטח ונותן שבוע אלא בפושה בשבוע של הסגר ראשון מניין לנגע שעמד בעיניו בראשון שלא פשה והכהן לא חלץ ולא קצה ולא טח והמתין שבוע שני ופשה בשבוע שני מניין שהוא חולץ וקוצה וטח ונותן לו שבוע ואינו נותצו מיד ת&quot;ל ובא הכהן והנה פשה וגו&#x27; ואע&quot;ג דהאי קרא בתריה דאם ישוב הנגע כתיב דמשמע דבנגע החוזר קאי מפקינן ליה התם מהאי משמעות ומרבינן נתיצה לנגע החוזר ואע&quot;פ שלא פשה והאי ובא הכהן וראה והנה פשה דמשמע דבעי פשיון מוקמינן ליה בנגע שעמד בראשון ופשה בשני ואע&quot;ג דכתיב נתיצה בתריה יליף בג&quot;ש נאמר כאן בפשה בשני ובא הכהן ונאמר בפשה בראשון ושב הכהן היא שיבה היא ביאה כלומר זו כזו מה להלן חולץ וקוצה וטח ונותן לו שבוע אף כאן חולץ וקוצה וטח ונותן לו שבוע ואם חזר שוב בעי נתיצה אלמא אע&quot;ג דלאו שיבה היא כיון דשיבה וביאה חדא מילתא היא דתרוייהו משמע שבא מביתו לבית המנוגע דיינינן גזירה שוה מינייהו:</div>
+          <div class="glose-fr">&quot;Le kohen reviendra&quot;, &quot;le kohen viendra&quot;. Cela est enseigné dans la Torat Kohanim, au sujet des atteintes des maisons. Dans la première semaine de clôture, il est écrit : le kohen reviendra le septième jour, il regardera, et voici que l&#x27;atteinte s&#x27;est étendue dans les murs de la maison. Ensuite il est écrit : ils retireront les pierres, on raclera la maison à l&#x27;intérieur, on grattera la poussière de la maison autour du mur, on prendra une autre poussière, et l&#x27;on enduira la maison. Et il est écrit : si l&#x27;atteinte revient et éclate dans la maison, etc., on démolira la maison. On enseigne : &quot;et elle éclate&quot;. On aurait pu dire qu&#x27;elle n&#x27;est impure que si elle revient et s&#x27;étend. Le verset dit &quot;tsaraat maméret&quot;, &quot;tsaraat maméret&quot;, pour une gezera shava. De même que la tsaraat maméret dite pour les vêtements rend impur ce qui revient, même si cela ne s&#x27;étend pas, de même la tsaraat maméret dite pour les maisons rend impur ce qui revient, même si cela ne s&#x27;étend pas. On aurait pu dire : si c&#x27;est revenu et a éclaté le jour même, ce sera impur. Il est dit &quot;si l&#x27;atteinte revient&quot;, et il est dit &quot;le kohen reviendra&quot;. De même que le retour dit là-bas est à la fin de la semaine, de même le retour dit ici est à la fin de la semaine. Nous apprenons qu&#x27;on lui donne une autre semaine après le retrait des pierres, le raclage et l&#x27;enduit. Si l&#x27;atteinte est revenue, on démolit. Si elle n&#x27;est pas revenue, on déclare pur. Je n&#x27;ai ce retrait, ce raclage, cet enduit et cette semaine que pour ce qui s&#x27;est étendu dans la première semaine de clôture. D&#x27;où le sait-on pour une atteinte qui est restée en l&#x27;état la première semaine, sans s&#x27;étendre, le kohen n&#x27;ayant ni retiré, ni raclé, ni enduit, puis qui s&#x27;étend dans la seconde semaine : d&#x27;où sait-on qu&#x27;il retire, racle, enduit, lui donne une semaine, et ne démolit pas aussitôt ? Le verset dit : &quot;le kohen viendra, et voici que cela s&#x27;est étendu&quot;, etc. Bien que ce verset soit écrit après &quot;si l&#x27;atteinte revient&quot;, ce qui laisserait entendre qu&#x27;il porte sur l&#x27;atteinte qui revient, on l&#x27;écarte là-bas de ce sens, et l&#x27;on inclut la démolition pour l&#x27;atteinte qui revient, même si elle ne s&#x27;est pas étendue. Et ce &quot;le kohen viendra, il verra, et voici que cela s&#x27;est étendu&quot;, qui laisse entendre qu&#x27;une extension est exigée, on le fixe pour une atteinte restée stable la première semaine et étendue la seconde. Bien que la démolition soit écrite ensuite, il l&#x27;apprend par gezera shava. Il est dit ici, pour l&#x27;extension de la seconde semaine, &quot;le kohen viendra&quot;, et il est dit, pour l&#x27;extension de la première, &quot;le kohen reviendra&quot; : ce retour est cette venue, c&#x27;est-à-dire l&#x27;un comme l&#x27;autre. De même que là-bas il retire, racle, enduit et lui donne une semaine, de même ici il retire, racle, enduit et lui donne une semaine. Et si cela revient encore, la démolition est exigée. On apprend donc : bien que ce ne soit pas un &quot;retour&quot;, puisque retour et venue sont une seule chose, car tous deux signifient qu&#x27;il est venu de sa maison à la maison atteinte, nous établissons une gezera shava à partir d&#x27;eux.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>L'objection : si <b>hutz</b> et <b>hutza</b> ne s'équivalent pas, pourquoi l'école de <b>Rabbi Yishmael</b> fait-elle une gezera shava entre "le kohen <b>reviendra</b>" et "le kohen <b>viendra</b>", deux mots différents ?</p><p>Rachi déroule la halakha des <b>néga'im</b> (atteintes) de maison. Retour et venue désignent tous deux le trajet du kohen, de sa maison vers la maison atteinte. De là, la même suite : retirer les pierres, racler, enduire, donner une semaine. La démolition vient si l'atteinte revient ensuite.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הני מילי היכא דליכא מידי דדמי ליה, אבל היכא דאיכא מידי דדמי ליה — מדמי ליה ילפינן.</div>
+            <div class="fr"><p>Ces paroles valent là où rien ne lui ressemble. Là où quelque chose lui ressemble, c&#x27;est de ce qui lui ressemble que nous apprenons.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La gezera shava entre deux mots proches, comme retour et venue, a sa place lorsqu'<b>aucun mot identique</b> n'est disponible. Pour "dehors", un <b>hutz</b> identique existe, celui des deux mille coudées. On apprend de celui-là, et l'on laisse <b>hutza</b>, le verset des mille.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אלפים אמה עגולות. ורבי חנינא בן אנטיגנוס מה נפשך: אי אית ליה גזירה שוה — פיאות כתיבן, אי לית ליה גזירה שוה — אלפים אמה מנא ליה?</div>
+            <div class="fr"><p>Deux mille coudées, circulaires. Et Rabbi Hanina ben Antigenos, de toute manière : s&#x27;il tient la gezera shava, des côtés sont écrits ; s&#x27;il ne tient pas la gezera shava, d&#x27;où tient-il deux mille coudées ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אי אית ליה ג&quot;ש</b> דמקום מניסה וחוץ מחוץ כדאמר לעיל:</div>
+          <div class="glose-fr">S&#x27;il tient la gezera shava. Celle de lieu et fuite, et de dehors et dehors, comme on l&#x27;a dit plus haut.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>פיאות כתיב</b> דכתיב פאת (נגב) ופאת משמע מרובע:</div>
+          <div class="glose-fr">Des côtés sont écrits. Car il est écrit &quot;le côté (du sud)&quot;, et &quot;côté&quot; signifie un carré.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La michna donne à <b>Rabbi Hanina ben Antigenos</b> un tehoum <b>rond</b>. La Guemara le prend de deux côtés. S'il accepte la <b>gezera shava</b> des leviim, le verset écrit des <b>pe'ot</b> (côtés), donc un carré. S'il la refuse, les deux mille coudées n'ont plus de source.</p><p>Rachi : "côté" est le mot du verset du migrash, et ce mot implique le carré.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לעולם אית ליה גזירה שוה, ושאני הכא דאמר קרא: ״זה יהיה להם מגרשי הערים״ — לזה אתה נותן פיאות, ואי אתה נותן פיאות לשובתי שבת.</div>
+            <div class="fr"><p>En fait, il tient la gezera shava. Ici, c&#x27;est différent, car le verset dit : &quot;Ceci sera pour eux le migrash des villes&quot;.</p><p>À ceci tu donnes des côtés. Tu ne donnes pas de côtés à ceux qui font la chevita de chabbat.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Réponse : Rabbi Hanina ben Antigenos <b>tient</b> la gezera shava, d'où les deux mille. Le mot <b>zeh</b> ("ceci") limite les <b>pe'ot</b> au migrash des villes levitiques. Ceux qui font la chevita de chabbat reçoivent les deux mille <b>sans les côtés</b> : le tehoum est un cercle.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">ורבנן? תני, רב חנניה אומר: כזה יהו כל שובתי שבת.</div>
+            <div class="fr"><p>Et les sages ? On enseigne : Rav Hananya dit : comme ceci seront tous ceux qui font la chevita de chabbat.</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כזה יהו כל שובתי שבת</b> פ&quot;ה דגבי העברה ליכא למיתב פיאות אלא כה&quot;ג שנותנין שיעור אלכסון דהא ליכא למימר בהן ריבוע ועיגול ור&#x27; שמואל מפרש שמרביעין ד&#x27; אמות ברשות הרבים בריבוע עולם ואם מעביר או זורק ממזרח למערב או מצפון לדרום חייב בד&quot;א לחודיה ואם לאלכסונו של עולם אינו חייב עד שיזרוק או יעביר ד&quot;א ואלכסונן ועמוד נמי ברה&quot;ר גבוה י&#x27; ורחב ד&#x27; דבעינן נמי ד&#x27; על ד&#x27; מרובעים היינו כשמעמיד אלכסון העמוד לאלכסון העולם אבל העמיד האלכסון ממזרח למערב ומצפון לדרום לא סגי בד&#x27; על ד&#x27; מרובעות ועיר עגולה נמי אמרינן בכיצד מעברין (לקמן עירובין דף נו.) דמרבעה בריבוע עולם ור&quot;ת מפרש דלכל צד נותנין האלכסון בזריקה ובהעברה ובתחום שבת ועמוד נמי צריך שיהא בו ששה פחות ב&#x27; חומשין והא דמזכיר בכל דוכתא ד&#x27; אמות היינו משום דנפיק מינייהו האלכסון וכוורת דפ&quot;ק דשבת (ד&#x27; ח.) שהיא עגולה ואין לה אלכסון נקט רחבה ו&#x27; דאי הוה נקט ד&#x27; הוה משמע דלא בעי אלכסון ול&quot;נ דפיאות דשבת ילפינן מערי הלוים והתם אין נותנין פיאות אלא לפיאות העולם כדמוכח בכיצד מעברין (לקמן עירובין דף נו:) דקאמר נמצא מגרש רביע:</div>
+          <div class="glose-fr">Comme ceci seront tous ceux qui font la chevita de chabbat. Selon le commentaire de Rachi : pour le transport, il n&#x27;y a pas lieu de donner des côtés, sauf de cette manière, où l&#x27;on donne la mesure de la diagonale, car on ne peut pas dire à leur sujet carré et cercle. Rabbi Chmouel explique : on carre les quatre coudées dans le domaine public selon le carré du monde. S&#x27;il transporte ou lance d&#x27;est en ouest, ou du nord au sud, il est passible pour quatre coudées seules. Selon la diagonale du monde, il n&#x27;est passible que lorsqu&#x27;il a lancé ou transporté quatre coudées et leur diagonale. Une colonne aussi, dans le domaine public, haute de dix et large de quatre, pour laquelle nous exigeons aussi quatre sur quatre en carré : c&#x27;est lorsqu&#x27;il place la diagonale de la colonne selon la diagonale du monde. S&#x27;il a placé la diagonale d&#x27;est en ouest et du nord au sud, quatre sur quatre en carré ne suffisent pas. Une ville ronde aussi : nous disons dans Keitsad me&#x27;abrin (plus loin, Eruvin 56a) qu&#x27;on la carre selon le carré du monde. Rabbenou Tam explique : de chaque côté on donne la diagonale, pour le lancer, pour le transport et pour le tehoum de chabbat. Une colonne aussi doit mesurer six moins deux cinquièmes. Si partout on mentionne quatre coudées, c&#x27;est parce que la diagonale en sort. La ruche du premier chapitre de Chabbat (8a), qui est ronde et n&#x27;a pas de diagonale : on prend sa largeur de six. Si l&#x27;on avait pris quatre, on aurait compris qu&#x27;elle n&#x27;exige pas de diagonale. Cela ne nous semble pas. Les côtés de chabbat, nous les apprenons des villes des leviim, et là-bas on ne donne des côtés que selon les côtés du monde, comme le prouve Keitsad me&#x27;abrin (plus loin, Eruvin 56b), où l&#x27;on dit : il se trouve que le migrash est un quart.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Les <b>sages</b> lisent le même mot "ceci" en sens inverse. <b>Rav Hananya</b> : comme cette mesure-là seront <b>tous</b> ceux qui font la chevita de chabbat. Le carré du migrash devient aussi le carré du tehoum.</p><p>Tossefot ouvrent trois lectures de "elles et leur diagonale", reprises au segment suivant. <b>Rachi</b> allonge le transport jusqu'à la diagonale, faute de pouvoir y tracer carré et cercle. <b>Rabbi Chmouel</b> (le Rachbam) aligne les quatre coudées sur le carré du monde : quatre suffisent dans l'axe est-ouest ou nord-sud ; la diagonale du monde exige le supplément. <b>Rabbenou Tam</b> donne la diagonale dans chaque direction. Tossefot retiennent les côtés du monde, comme pour les villes des leviim : le migrash aboutit à un quart, un carré aligné sur le monde.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר רבי אחא בר יעקב: המעביר ארבע אמות ברשות הרבים אינו חייב עד שמעביר הן ואלכסונן.</div>
+            <div class="fr"><p>Rabbi Aha bar Yaakov a dit : celui qui transporte quatre coudées dans le domaine public n&#x27;est passible que lorsqu&#x27;il transporte elles et leur diagonale.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הן ואלכסונן</b> ד&quot;א וח&#x27; חומשי אמה דאמרן כזה יהיו כל שובתי שבת פיאות תן להן וגבי העברה ליכא למיתב פיאות אלא כי האי גוונא שנותנין להן שיעור אלכסונן דהא ליכא למימר בהו רבוע ועיגול:</div>
+          <div class="glose-fr">Elles et leur diagonale. Quatre coudées et huit cinquièmes de coudée. Comme nous l&#x27;avons dit : comme ceci seront tous ceux qui font la chevita de chabbat, donne-leur des côtés. Pour le transport, il n&#x27;y a pas lieu de leur donner des côtés, sauf de cette manière : on leur donne la mesure de leur diagonale. Car on ne peut pas dire à leur sujet carré et cercle.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Dans le <b>reshut harabim</b> (domaine public), transporter un objet quatre <b>coudées</b> est un interdit. <b>Rabbi Aha bar Yaakov</b> ne rend passible qu'à partir des quatre coudées <b>plus leur diagonale</b>.</p><p>Rachi chiffre : quatre coudées et <b>huit cinquièmes</b>, soit cinq coudées et trois cinquièmes. Le carré et le cercle concernent un espace. Un trajet de transport reçoit, à la place des côtés, cet allongement.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg">
+<rect width="760" height="420" fill="#fbfaf7"/>
+<text x="380" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Quatre coudées et leur diagonale</text>
+<text x="380" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">4 + 8 cinquièmes = 5 coudées et 3 cinquièmes. Même compte : 5,6.</text>
+<rect x="48" y="78" width="150" height="150" fill="#f7f1e3" stroke="#b39b5a" stroke-width="2"/>
+<line x1="48" y1="228" x2="198" y2="78" stroke="#93756b" stroke-width="2"/>
+<text x="123" y="258" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">côté : 4</text>
+<text x="210" y="150" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">diagonale</text>
+<text x="210" y="168" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">4 + 8/5</text>
+<rect x="400" y="70" width="344" height="168" fill="#ffffff" stroke="#8a7b63"/>
+<text x="572.0" y="102.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Transport dans le domaine public.</text>
+<text x="572.0" y="118.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rabbi Aha bar Yaakov :</text>
+<text x="572.0" y="134.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">passible lorsqu'il a porté</text>
+<text x="572.0" y="150.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">les quatre coudées</text>
+<text x="572.0" y="166.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">et leur diagonale.</text>
+<text x="572.0" y="182.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rachi : on ne trace pas</text>
+<text x="572.0" y="198.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">ici un carré et un cercle.</text>
+<text x="572.0" y="214.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">On allonge la mesure.</text>
+<rect x="16" y="286" width="236" height="116" fill="#f6e6e0" stroke="#93756b"/>
+<text x="134.0" y="316.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rachi</text>
+<text x="134.0" y="332.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Toute direction :</text>
+<text x="134.0" y="348.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">la diagonale.</text>
+<text x="134.0" y="364.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Pas de côtés</text>
+<text x="134.0" y="380.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">à ajouter au trajet.</text>
+<rect x="264" y="286" width="240" height="116" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="384.0" y="316.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rachbam</text>
+<text x="384.0" y="332.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Est-ouest, nord-sud :</text>
+<text x="384.0" y="348.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">4 coudées seules.</text>
+<text x="384.0" y="364.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Diagonale du monde :</text>
+<text x="384.0" y="380.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">4 et leur diagonale.</text>
+<rect x="516" y="286" width="228" height="116" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="630.0" y="316.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rabbenou Tam</text>
+<text x="630.0" y="332.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Chaque direction</text>
+<text x="630.0" y="348.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">reçoit la diagonale.</text>
+<text x="630.0" y="364.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">La colonne utile</text>
+<text x="630.0" y="380.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">mesure 5,6 de côté.</text>
+</svg></div><div class="svg-cap">Côté de 4. Diagonale : 4 coudées et 8 cinquièmes. Trois lectures : Rachi, Rachbam, Rabbenou Tam.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר רב פפא בדיק לן רבא: עמוד ברשות הרבים גבוה עשרה ורוחב ארבעה, צריך הן ואלכסונן או לא? ואמרינן ליה: לאו היינו דרב חנניה? דתניא, רב חנניה אומר: כזה יהו כל שובתי שבת.</div>
+            <div class="fr"><p>Rav Papa a dit : Rava nous a mis à l&#x27;épreuve. Une colonne dans le domaine public, haute de dix et large de quatre : faut-il elles et leur diagonale, ou non ?</p><p>Et nous lui avons dit : n&#x27;est-ce pas l&#x27;enseignement de Rav Hananya ? Car on enseigne : Rav Hananya dit : comme ceci seront tous ceux qui font la chevita de chabbat.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בדיק לן</b> מנסה אותנו:</div>
+          <div class="glose-fr">Il nous a mis à l&#x27;épreuve. Il nous teste.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מי בעינן הן ואלכסונן</b> שיהא רחב ד&#x27; בריבוע שתוכל למצוא בו אלכסון דדבר עגול אין לו אלכסון:</div>
+          <div class="glose-fr">Faut-il elles et leur diagonale ? Qu&#x27;elle soit large de quatre en carré, de sorte qu&#x27;on puisse y trouver une diagonale. Car une chose ronde n&#x27;a pas de diagonale.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rava</b> interroge ses élèves sur une <b>colonne</b> du domaine public : dix de haut, quatre de large. Cette mesure est celle qui peut faire de la colonne un domaine à part. Faut-il les quatre <b>et leur diagonale</b> ?</p><p>Les élèves renvoient à <b>Rav Hananya</b> : "comme ceci" vaut pour toute chevita de chabbat, donc les mesures de chabbat suivent le carré. Rachi précise la question : les quatre doivent former un <b>carré</b>, où une diagonale se trace. Un cercle n'en a pas.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 760 250" xmlns="http://www.w3.org/2000/svg">
+<rect width="760" height="250" fill="#fbfaf7"/>
+<text x="380" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Colonne : dix de haut, quatre de large</text>
+<rect x="70" y="56" width="70" height="120" fill="#ede7dc" stroke="#8a7b63"/>
+<text x="105" y="196" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">carré de 4</text>
+<text x="160" y="120" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">haut : 10</text>
+<rect x="300" y="70" width="56" height="106" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="328" y="196" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">cercle</text>
+<text x="370" y="124" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">pas de diagonale</text>
+<rect x="460" y="56" width="284" height="150" fill="#ffffff" stroke="#8a7b63"/>
+<text x="602.0" y="71.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Rava met les élèves à l'épreuve.</text>
+<text x="602.0" y="87.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Faut-il les quatre et</text>
+<text x="602.0" y="103.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">leur diagonale ?</text>
+<text x="602.0" y="119.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Rachi : les quatre doivent</text>
+<text x="602.0" y="135.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">former un carré, afin qu'une</text>
+<text x="602.0" y="151.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">diagonale s'y trouve.</text>
+<text x="602.0" y="167.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Ils répondent par Rav Hananya :</text>
+<text x="602.0" y="183.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">comme ceci, tous ceux</text>
+<text x="602.0" y="199.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">qui font chabbat.</text>
+</svg></div><div class="svg-cap">Colonne carrée : une diagonale s&#x27;y trace. Colonne ronde : Rachi, pas de diagonale.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg16">
+          <div class="seg-num">17</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וזה הוא שאמרו העני מערב ברגליו. אמר רבי מאיר: אנו אין לנו אלא עני וכו׳.</div>
+            <div class="fr"><p>Et c&#x27;est ce qu&#x27;ils ont dit : le pauvre fait l&#x27;erouv avec ses pieds. Rabbi Meir a dit : nous n&#x27;avons que le pauvre, etc.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La michna en vient à l'<b>erouv tehumin</b> fait avec les <b>pieds</b> : aller sur place fixer sa chevita, sans déposer de pain. <b>Rabbi Meir</b> réserve cela au <b>pauvre</b>. Le "etc." annonce Rabbi Yehouda, que Rav Nahman reprend aussitôt.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg17">
+          <div class="seg-num">18</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אמר רב נחמן: מחלוקת ״במקומי״, דרבי מאיר סבר: עיקר עירוב בפת,</div>
+            <div class="fr"><p>Rav Nahman a dit : la dispute porte sur &quot;à ma place&quot;. Car Rabbi Meir tient : l&#x27;essentiel de l&#x27;erouv est le pain.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מחלוקת במקומי</b> גרסינן ביו&quot;ד מחלוקת דר&#x27; מאיר ור&#x27; יהודה דקא שרי ר&#x27; יהודה אפילו לעשיר לערב ברגליו באומר שביתתי במקומי וזהו שאמרו דמתני&#x27; לקמן מפרש אהיכא קאי אי אמכיר אילן דקתני דאמר שביתתי במקום פלוני או אאינו בקי דקתני דאמר שביתתי במקומי:</div>
+          <div class="glose-fr">La dispute porte sur &quot;à ma place&quot;. On lit avec un yod. La dispute de Rabbi Meir et de Rabbi Yehouda : Rabbi Yehouda permet même au riche de faire l&#x27;erouv avec ses pieds, lorsqu&#x27;il dit &quot;ma chevita est à ma place&quot;. Et &quot;c&#x27;est ce qu&#x27;ils ont dit&quot;, dans la michna : plus loin on explique sur quoi cela porte, sur celui qui reconnaît un arbre, dont on enseigne qu&#x27;il a dit &quot;ma chevita est en tel lieu&quot;, ou sur celui qui n&#x27;est pas expert, dont on enseigne qu&#x27;il a dit &quot;ma chevita est à ma place&quot;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>L'amud s'arrête sur <b>Rav Nahman</b>. La dispute entre <b>Rabbi Meir</b> et <b>Rabbi Yehouda</b> vise la formule "ma chevita est <b>à ma place</b>". Rabbi Meir : l'<b>essentiel</b> de l'erouv est le <b>pain</b>.</p><p>Rachi complète la leçon. Rabbi Yehouda permet les pieds même au riche, pour cette formule. Il prépare aussi la question de la page suivante : "c'est ce qu'ils ont dit" porte-t-il sur celui qui connaît un arbre, ou sur celui qui n'est pas expert ?</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Eruvin_50b.html">&lsaquo; Eruvin 50b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schémas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage sélectionné :\n« '+s+' »\n'):'\nPassage concerné :\n\n')+'\nCorrection proposée :\n\n\n— envoyé depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>
