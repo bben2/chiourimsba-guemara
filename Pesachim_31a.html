@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pesachim 31a - Le créancier recouvre-t-il le gage rétroactivement ?</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Pesachim 31a - Le créancier recouvre-t-il le gage rétroactivement ?</h1>
+    <div class="ref">Pesachim 31a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Pesachim_30b.html">&lsaquo; Pesachim 30b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> L&#x27;amoud poursuit le débat d&#x27;Abayé et de Rava sur la date où le créancier acquiert le bien gagé. Abayé dit qu&#x27;il recouvre rétroactivement : le défaut de paiement révèle que le bien était déjà à lui.</p><p>Rava dit qu&#x27;il ne l&#x27;acquiert qu&#x27;à l&#x27;échéance, car l&#x27;emprunteur aurait pu le dessaisir en payant. On objecte à Rava le cas de Reouven, de Chimon et du créancier antérieur : la réponse passe par Rabbi Natan, qui fait payer le dernier débiteur au premier créancier.</p><p>La Guemara revient ensuite au hametz donné en gage entre un Juif et un non-Juif, et écarte une première lecture de la baraïta de Rabbi Meir.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 400" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="400" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Depuis quand le créancier tient-il le bien ?</text>
+<rect x="16" y="44" width="160" height="64" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="96" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">Prêt</text>
+<text x="96" y="90" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le bien est gagé</text>
+<rect x="196" y="44" width="300" height="64" rx="4" fill="#fff6e8" stroke="#a36b2d"/>
+<text x="346" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a36b2d">Avant l'échéance</text>
+<text x="346" y="90" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le créancier vend ou consacre</text>
+<rect x="516" y="44" width="208" height="64" rx="4" fill="#e8eef6" stroke="#3d5a80"/>
+<text x="620" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5a80">Échéance impayée</text>
+<text x="620" y="90" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Il vient recouvrer</text>
+<rect x="16" y="128" width="348" height="150" rx="4" fill="#fff6e8" stroke="#a36b2d"/>
+<text x="190" y="154" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#a36b2d">Abayé : lemafre'a</text>
+<text x="190" y="180" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le défaut révèle qu'il tenait</text>
+<text x="190" y="200" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">le bien dès le prêt.</text>
+<text x="190" y="228" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#a36b2d">Vente et consécration</text>
+<text x="190" y="248" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#a36b2d">antérieures tiennent.</text>
+<rect x="376" y="128" width="348" height="150" rx="4" fill="#e8eef6" stroke="#3d5a80"/>
+<text x="550" y="154" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#3d5a80">Rava : mikan oulehaba</text>
+<text x="550" y="180" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">L'emprunteur pouvait payer</text>
+<text x="550" y="200" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">et l'écarter de la terre.</text>
+<text x="550" y="228" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#3d5a80">Il n'acquiert qu'à l'échéance.</text>
+<text x="550" y="248" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#3d5a80">L'acte antérieur tombe.</text>
+<rect x="16" y="296" width="708" height="84" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="370" y="326" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Point commun, déjà acquis</text>
+<text x="370" y="350" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Si l'emprunteur a vendu ou consacré, le créancier saisit quand même.</text>
+<text x="370" y="370" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Hekdesh de valeur : il ajoute un dinar et rachète, pour qu'un hekdesh ne sorte pas sans rachat.</text>
+</svg></div>
+          <figcaption>Abayé fait remonter l&#x27;acquisition au prêt, une fois le défaut constaté. Rava ne la fait commencer qu&#x27;à l&#x27;échéance. Les deux conviennent que le créancier saisit si c&#x27;est l&#x27;emprunteur qui a vendu ou consacré.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 460" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="460" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Reouven, Chimon, et le créancier antérieur</text>
+<rect x="16" y="44" width="230" height="100" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="131" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">1. Vente</text>
+<text x="131" y="94" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Champ vendu avec</text>
+<text x="131" y="114" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">aharayot (garantie).</text>
+<text x="131" y="132" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le prix devient une dette.</text>
+<rect x="256" y="44" width="230" height="100" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="371" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">2. Saisie</text>
+<text x="371" y="94" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Reouven meurt.</text>
+<text x="371" y="114" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Son créancier saisit</text>
+<text x="371" y="132" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">le champ chez Chimon.</text>
+<rect x="496" y="44" width="228" height="100" rx="4" fill="#fff6e8" stroke="#a36b2d"/>
+<text x="610" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a36b2d">3. Apaisement</text>
+<text x="610" y="94" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Chimon paie</text>
+<text x="610" y="114" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">ce créancier</text>
+<text x="610" y="132" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">avec l'argent du prix.</text>
+<rect x="16" y="160" width="350" height="120" rx="4" fill="#e8eef6" stroke="#3d5a80"/>
+<text x="191" y="186" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5a80">Les orphelins</text>
+<text x="191" y="212" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Notre père a laissé chez toi</text>
+<text x="191" y="232" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">des meubles, l'argent du prix.</text>
+<text x="191" y="256" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#3d5a80">Les meubles d'orphelins</text>
+<text x="191" y="274" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#3d5a80">ne sont pas gagés.</text>
+<rect x="376" y="160" width="348" height="120" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="550" y="186" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Chimon avisé, selon Rava</text>
+<text x="550" y="212" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Il les paie avec une terre.</text>
+<text x="550" y="232" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Puis il la leur reprend</text>
+<text x="550" y="256" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2f5c2f">pour l'aharayot.</text>
+<text x="550" y="274" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2f5c2f">Rav Nahman : la terre se saisit.</text>
+<rect x="16" y="298" width="708" height="142" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="370" y="324" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">La question posée à Rava</text>
+<text x="370" y="350" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Lemafréa : la terre était déjà au père de son vivant. Un autre créancier la reprend.</text>
+<text x="370" y="374" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Mikan oulehaba : les orphelins sont comme des acheteurs. Leur terre neuve n'est pas gagée.</text>
+<text x="370" y="404" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#6b5344">Réponse : Rabbi Natan. Chimon doit au père, le père doit à son créancier.</text>
+<text x="370" y="424" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#6b5344">On prélève chez le dernier débiteur et on paie le premier créancier.</text>
+</svg></div>
+          <figcaption>Chimon doit le prix aux orphelins. Payé en terre, ce bien redevient saisissable. Rabbi Natan explique la reprise sans acquisition rétroactive.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 430" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="430" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Hametz en gage, et la baraïta</text>
+<rect x="16" y="44" width="350" height="150" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="191" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Michna</text>
+<text x="191" y="96" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Un non-Juif prête à un Juif</text>
+<text x="191" y="116" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">sur son hametz.</text>
+<text x="191" y="144" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2f5c2f">Après Pessah,</text>
+<text x="191" y="164" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2f5c2f">la jouissance est permise.</text>
+<rect x="376" y="44" width="348" height="150" rx="4" fill="#fff6e8" stroke="#a36b2d"/>
+<text x="550" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a36b2d">Lecture tentée</text>
+<text x="550" y="96" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Lemafréa : le hametz était</text>
+<text x="550" y="116" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">déjà au non-Juif.</text>
+<text x="550" y="144" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#a36b2d">Mikan oulehaba : il était</text>
+<text x="550" y="164" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#a36b2d">encore au Juif. Difficulté.</text>
+<rect x="16" y="210" width="230" height="120" rx="4" fill="#e8eef6" stroke="#3d5a80"/>
+<text x="131" y="236" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5a80">Réponse provisoire</text>
+<text x="131" y="262" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le hametz a été</text>
+<text x="131" y="282" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">déposé en gage</text>
+<text x="131" y="302" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">chez le non-Juif.</text>
+<rect x="256" y="210" width="230" height="120" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="371" y="236" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">Baraïta, reisha</text>
+<text x="371" y="262" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Juif prête au non-Juif.</text>
+<text x="371" y="282" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Tanna : ne transgresse pas.</text>
+<text x="371" y="302" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Rabbi Meir : transgresse.</text>
+<rect x="496" y="210" width="228" height="120" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="610" y="236" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Baraïta, seifa</text>
+<text x="610" y="262" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Non-Juif prête au Juif.</text>
+<text x="610" y="282" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">De l'avis de tous,</text>
+<text x="610" y="302" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#8a4b3a">il transgresse.</text>
+<rect x="16" y="346" width="708" height="68" rx="4" fill="#fbfaf7" stroke="#8a7b63"/>
+<text x="370" y="374" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Un débat sur la date du recouvrement aurait inversé les deux avis dans la seifa.</text>
+<text x="370" y="396" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#6b5344">La seifa les met d'accord. La Guemara écarte cette lecture.</text>
+</svg></div>
+          <figcaption>La michna permet la jouissance du hametz gagé chez un non-Juif. La baraïta ne se laisse pas lire comme le débat d&#x27;Abayé et de Rava, parce que sa fin met les avis d&#x27;accord.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאָתֵי מַלְוֶה וּפָרֵיק. דִּתְנַן: מוֹסִיף עוֹד דִּינָר וּפוֹדֶה אֶת הַנְּכָסִים הָאֵלּוּ. כִּי פְּלִיגִי דְּזַבֵּין מַלְוֶה, וְקַדֵּישׁ מִלְוֶה.</div>
+            <div class="fr"><p>Et le créancier vient et rachète. Comme l&#x27;enseigne la michna : il ajoute encore un dinar et rachète ces biens.</p><p>Là où ils divergent : quand le créancier a vendu, et quand le créancier a consacré.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאָתֵי מַלְוֶה וּפָרֵיק</b> מִן הַהֶקְדֵּשׁ בְּדָבָר מוּעָט כְּדֵי שֶׁלֹּא יֹאמְרוּ הֶקְדֵּשׁ יוֹצֵא בְּלֹא פִּדְיוֹן וְגוֹבֶה חוֹבוֹ כְּדִתְנַן בַּעֲרָכִין בְּפֶרֶק שׁוּם הַיְתוֹמִים הִקְדִּישׁ בְּתִשְׁעִים מָנֶה וְהָיָה חוֹבוֹ מֵאָה מָנֶה מוֹסִיף מַלְוֶה זֶה עַל הַלְוָאָתוֹ דִּינָר וּפוֹדֶה אֶת הַנְּכָסִים הַלָּלוּ מִיָּד הֶקְדֵּשׁ בְּדִינָר זֶה וְנוֹטְלָן בְּחוֹבוֹ וְדִינָר דְּיָהֵיב מְפָרֵשׁ טַעְמָא הָתָם שֶׁלֹּא יֹאמְרוּ הֶקְדֵּשׁ יוֹצֵא בְּלֹא פִּדְיוֹן וְאַף עַל גַּב דְּאָמַר רָבָא (כְּתֻובּוֹת דַּף נט:) הֶקְדֵּשׁ חָמֵץ וְשִׁיחְרוּר מַפְקִיעִין מִידֵי שִׁיעְבּוּד דַּוְקָא קְדֻושַּׁת הַגּוּף קָאָמַר רָבָא כְּגוֹן קוֹנָמוֹת אוֹ בְּהֵמָה לְקָרְבָּן אוֹ בֶּגֶד שֶׁפֵּירְסוּ עַל הַמֵּת כִּי הַהִיא דִּיבָמוֹת (דַּף סו:) גַּבֵּי אִיצְטְלָא דְּמִילְּתָא דְּפֵירְסוּהָ יַתְמֵי אַמִּיתָנָא דַּהֲוָה מִשְׁתַּעְבֵּד לִכְתֻובַּת הָאִשָּׁה דְּאָמַר רָבָא קָנְיָיא מִיתָנָא אֲבָל קְדֻושַּׁת דָּמִים לָא אָמְרִינַן:</div>
+          <div class="glose-fr">Et le créancier vient et rachète : du hekdesh, pour une somme minime, afin qu&#x27;on ne dise pas qu&#x27;un hekdesh sort sans rachat, et il recouvre sa créance. Comme on l&#x27;enseigne dans Arakhin, au chapitre Shum ha-yetomim : s&#x27;il a consacré pour quatre-vingt-dix maneh et que sa dette était de cent maneh, ce créancier ajoute un dinar à son prêt, rachète ces biens des mains du hekdesh avec ce dinar, et les prend pour sa créance. Le dinar qu&#x27;il donne, on en explique là-bas la raison : afin qu&#x27;on ne dise pas qu&#x27;un hekdesh sort sans rachat. Et bien que Rava ait dit (Ketoubot 59b) que le hekdesh, le hametz et l&#x27;affranchissement retirent le bien de l&#x27;emprise d&#x27;un shiaboud (lien), Rava ne parle que d&#x27;une kedoushat ha-gouf (sainteté qui porte sur le corps même) : par exemple des konamot (interdits par vœu), ou une bête destinée au sacrifice, ou un vêtement que l&#x27;on a étendu sur le mort, comme ce cas de Yevamot (66b) au sujet de l&#x27;itztala de mileta (manteau de soie) que les orphelins ont étendu sur le mort, alors qu&#x27;il était gagé pour la ketouba de la femme, et Rava a dit que le mort l&#x27;a acquis. Mais pour une kedoushat damim (sainteté de valeur), nous ne le disons pas.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כִּי פְּלִיגִי דְּאַקְדִּישׁ מִלְוֶה</b> בְּתוֹךְ הַזְּמַן אֶת הַקַּרְקַע הַמְשֻׁועְבָּד לוֹ וְלֹא הִקְדִּישׁ אֶת הַחוֹב אֶלָּא הַקַּרְקַע וְהַשְׁתָּא כְּשֶׁהִגִּיעַ הַזְּמַן וְלֹא פְּרָעוֹ זֶה וְהוּא בָּא לִגְבּוֹתָהּ מִן הַלֹּוֶה חוֹזֵר בּוֹ מִן הַהֶקְדֵּשׁ:</div>
+          <div class="glose-fr">Là où ils divergent, quand le créancier a consacré : pendant le délai, la terre qui lui est gagée. Il n&#x27;a pas consacré la créance, seulement la terre. Et maintenant, l&#x27;échéance arrivée, celui-ci n&#x27;a pas payé, et le créancier vient la recouvrer de l&#x27;emprunteur : il se rétracte du hekdesh.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le bien gagé a été consacré. Le créancier le rachète du <b>hekdesh</b> en ajoutant un <b>dinar</b>, pour qu'un bien consacré ne sorte pas sans rachat, puis il s'en paie.</p><p>Rachi limite le principe de Rava. Seule une <b>kedoushat ha-gouf</b> arrache le bien au shiaboud. Une <b>kedoushat damim</b> laisse le lien du créancier.</p><p>Le désaccord d'Abayé et de Rava porte sur le créancier qui, avant l'échéance, a lui-même <b>vendu</b> ou <b>consacré</b> la terre gagée.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אַבַּיֵּי אָמַר, לְמַפְרֵעַ הוּא גוֹבֶה: כֵּיוָן דִּמְטָא זִמְנֵיהּ וְלָא פַּרְעֵיהּ, אִיגַּלַּאי מִילְּתָא לְמַפְרֵעַ דְּמֵעִיקָּרָא בִּרְשׁוּתֵיהּ הֲוָה קָאֵי, וְשַׁפִּיר אַקְדִּישׁ, וְשַׁפִּיר זָבִין. וְרָבָא אָמַר, מִכָּאן וּלְהַבָּא הוּא גּוֹבֶה: כֵּיוָן דְּאִילּוּ הֲווֹ לֵיהּ זוּזֵי, הֲוָה מְסַלֵּיק לְהוּ בְּזוּזֵי — אִישְׁתְּכַח דְּהַשְׁתָּא קָא קָנֵי.</div>
+            <div class="fr"><p>Abayé dit : il recouvre rétroactivement. Dès que l&#x27;échéance est arrivée et qu&#x27;il ne l&#x27;a pas payé, la chose se révèle rétroactivement : dès l&#x27;origine, il se tenait dans son domaine.</p><p>Il a valablement consacré, et il a valablement vendu. Et Rava dit : il recouvre à partir de maintenant et pour la suite.</p><p>Puisque, s&#x27;il avait eu de l&#x27;argent, il l&#x27;aurait écarté au moyen de cet argent, il se trouve qu&#x27;il n&#x27;acquiert que maintenant.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כֵּיוָן דְּאִילּוּ הֲוָה לֵיהּ זוּזֵי</b> לַלֹּוֶה בְּיוֹם הַזְּמַן הֲוָה מְסַלֵּק לֵיהּ לַמַּלְוֶה מִן הַקַּרְקַע בְּזוּזֵי אִישְׁתְּכַח שֶׁלֹּא הָיָה הַקַּרְקַע קָנוּי לוֹ עֲדַיִין אֶלָּא עַכְשָׁיו כְּשֶׁהוּא גּוֹבֶה אוֹתָהּ בְּחוֹבוֹ הִיא נִקְנֵית לוֹ:</div>
+          <div class="glose-fr">Puisque, si l&#x27;emprunteur avait eu de l&#x27;argent au jour de l&#x27;échéance, il aurait écarté le créancier de la terre au moyen de cet argent : il se trouve que la terre ne lui était pas encore acquise. Elle ne lui est acquise que maintenant, quand il la recouvre pour sa créance.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Lemafréa</b> : le défaut de paiement révèle que le bien était déjà au créancier. Sa vente et sa consécration, faites avant l'échéance, tiennent.</p><p><b>Mikan oulehaba</b> : tant que l'emprunteur pouvait payer en argent et écarter le créancier, le bien restait à l'emprunteur. Le créancier ne l'acquiert qu'à l'échéance.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 400" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="400" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Depuis quand le créancier tient-il le bien ?</text>
+<rect x="16" y="44" width="160" height="64" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="96" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">Prêt</text>
+<text x="96" y="90" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le bien est gagé</text>
+<rect x="196" y="44" width="300" height="64" rx="4" fill="#fff6e8" stroke="#a36b2d"/>
+<text x="346" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a36b2d">Avant l'échéance</text>
+<text x="346" y="90" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le créancier vend ou consacre</text>
+<rect x="516" y="44" width="208" height="64" rx="4" fill="#e8eef6" stroke="#3d5a80"/>
+<text x="620" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5a80">Échéance impayée</text>
+<text x="620" y="90" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Il vient recouvrer</text>
+<rect x="16" y="128" width="348" height="150" rx="4" fill="#fff6e8" stroke="#a36b2d"/>
+<text x="190" y="154" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#a36b2d">Abayé : lemafre'a</text>
+<text x="190" y="180" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le défaut révèle qu'il tenait</text>
+<text x="190" y="200" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">le bien dès le prêt.</text>
+<text x="190" y="228" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#a36b2d">Vente et consécration</text>
+<text x="190" y="248" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#a36b2d">antérieures tiennent.</text>
+<rect x="376" y="128" width="348" height="150" rx="4" fill="#e8eef6" stroke="#3d5a80"/>
+<text x="550" y="154" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#3d5a80">Rava : mikan oulehaba</text>
+<text x="550" y="180" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">L'emprunteur pouvait payer</text>
+<text x="550" y="200" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">et l'écarter de la terre.</text>
+<text x="550" y="228" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#3d5a80">Il n'acquiert qu'à l'échéance.</text>
+<text x="550" y="248" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#3d5a80">L'acte antérieur tombe.</text>
+<rect x="16" y="296" width="708" height="84" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="370" y="326" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Point commun, déjà acquis</text>
+<text x="370" y="350" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Si l'emprunteur a vendu ou consacré, le créancier saisit quand même.</text>
+<text x="370" y="370" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Hekdesh de valeur : il ajoute un dinar et rachète, pour qu'un hekdesh ne sorte pas sans rachat.</text>
+</svg></div><div class="svg-cap">Abayé fait remonter le droit au jour du prêt. Rava ne le fait commencer qu&#x27;à l&#x27;échéance, parce que l&#x27;emprunteur pouvait encore payer.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּמִי אָמַר רָבָא הָכִי? וְהָאָמַר רָמֵי בַּר חָמָא: רְאוּבֵן שֶׁמָּכַר שָׂדֶה לְשִׁמְעוֹן בְּאַחְרָיוּת וּזְקָפָן עָלָיו בְּמִלְוֶה, וּמֵת רְאוּבֵן, וַאֲתָא בַּעַל חוֹב דִּרְאוּבֵן וְטָרֵיף לֵיהּ מִשִּׁמְעוֹן, וַאֲתָא שִׁמְעוֹן וּפַיְּיסֵיהּ בְּזוּזֵי —</div>
+            <div class="fr"><p>Et Rava a-t-il dit cela ? Or Rami bar Hama a dit : Reouven a vendu un champ à Chimon avec aharayot (garantie), et il a converti le prix en dette sur lui.</p><p>Reouven est mort. Le créancier de Reouven est venu et l&#x27;a saisi à Chimon.</p><p>Chimon est venu et l&#x27;a apaisé avec de l&#x27;argent.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּאַחְרָיוּת</b> שֶׁמָּא יִטְּלֶנָּה בַּעַל חוֹב דִּרְאוּבֵן מִשִּׁמְעוֹן בִּשְׁבִיל חוֹב שֶׁשִּׁיעְבְּדָהּ לוֹ רְאוּבֵן שֶׁיְּשַׁלֵּם לוֹ רְאוּבֵן זֶה מְעוֹתָיו לְשִׁמְעוֹן וְלֹא הָיוּ לוֹ נְכָסִים עוֹד עַל דְּבַר אַחְרָיוּת זֶה:</div>
+          <div class="glose-fr">Avec aharayot : de peur que le créancier de Reouven ne prenne le champ à Chimon pour une dette que Reouven lui avait gagée, ce Reouven remboursera son argent à Chimon. Et il n&#x27;avait plus d&#x27;autres biens pour cette garantie.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּזְקָפָן עָלָיו בְּמִלְוָה</b> שֶׁלֹּא הָיוּ מָעוֹת לְשִׁמְעוֹן שֶׁפָּסַק עַל שָׂדֶה זוֹ וְכָתַב לִרְאוּבֵן שְׁטָר עֲלֵיהֶן וְשִׁיעְבֵּד נְכָסָיו לוֹ עֲלֵיהֶן:</div>
+          <div class="glose-fr">Et il a converti le prix en dette sur lui : Chimon n&#x27;avait pas l&#x27;argent fixé pour ce champ. Il a écrit à Reouven un acte sur cette somme, et il lui a gagé ses biens pour elle.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמֵת רְאוּבֵן</b> הַמּוֹכֵר וּבָא בַּעַל חוֹבוֹ וְטוֹרְפָהּ מִשִּׁמְעוֹן וַעֲדַייִן לֹא נָתַן שִׁמְעוֹן הַמָּעוֹת לִרְאוּבֵן וְלָא לִיתוֹמָיו וּפַיְיסֵיהּ שִׁמְעוֹן לְבַעַל חוֹב דִּרְאוּבֵן בְּאוֹתָן מָעוֹת:</div>
+          <div class="glose-fr">Et Reouven est mort : le vendeur. Son créancier est venu et l&#x27;a saisi à Chimon. Chimon n&#x27;avait pas encore donné l&#x27;argent à Reouven, ni à ses orphelins. Chimon a apaisé le créancier de Reouven avec ce même argent.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּאַחְרָיוּת</b> שֶׁלֹּא בְּאַחְרָיוּת פְּשִׁיטָא דְּיִתֵּן לְיוֹרְשָׁיו אֲפִילּוּ לֹא זְקָפָן עָלָיו בְּמִלְוֶה אֲבָל בְּאַחְרָיוּת קמ&quot;ל דְּהֵ&quot;א יְעַכְּבֵם לְעַצְמוֹ דה&quot;ל כְּתוֹפֵס מֵחַיִּים קמ&quot;ל דְּלָא חֲשִׁיב לֵיהּ כְּתוֹפֵס מֵחַיִּים כֵּיוָן דִּזְקָפָן עָלָיו בְּמִלְוֶה:</div>
+          <div class="glose-fr">Avec aharayot : sans aharayot, il est évident qu&#x27;il remet l&#x27;argent aux héritiers, même s&#x27;il ne l&#x27;a pas converti en dette. Avec aharayot, voilà ce que le cas enseigne. On aurait dit qu&#x27;il le retient pour lui, car il serait comme un tofes me-hayim (quelqu&#x27;un qui a saisi du vivant du débiteur). Le cas enseigne qu&#x27;on ne le tient pas pour un tofes me-hayim, puisqu&#x27;il a converti la somme en dette.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּפַיְיסֵיהּ בְּזוּזֵי</b> רְבוּתָא נְקַט אַף עַל פִּי שֶׁנָּתַן מָעוֹת לָא מָצֵי לְמֵימַר הַמָּעוֹת שֶׁנִּתְחַיַּיבְתִּי לַאֲבִיכֶם נָתַתִּי לוֹ:</div>
+          <div class="glose-fr">Et il l&#x27;a apaisé avec de l&#x27;argent : il énonce un cas fort. Même s&#x27;il a donné de l&#x27;argent, il ne peut pas dire : l&#x27;argent dont je m&#x27;étais obligé envers votre père, je le lui ai donné.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La question vise Rava, qui ne fait acquérir le créancier qu'à l'échéance. On lui oppose un cas où lui-même conseille à <b>Chimon</b> de reprendre une terre aux orphelins.</p><p><b>Reouven</b> a vendu avec <b>aharayot</b>. Le prix est resté une dette de Chimon. Après la mort de Reouven, son créancier saisit le champ, et Chimon le désintéresse en argent.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">דִּינָא הוּא דְּאָתוּ בְּנֵי רְאוּבֵן וְאָמְרִי לֵיהּ לְשִׁמְעוֹן: אֲנַן, מִטַּלְטְלֵי שְׁבַק אִבּוּן גַּבָּךְ, וּמִטַּלְטְלֵי דְּיַתְמֵי לְבַעַל חוֹב לָא מִשְׁתַּעְבְּדִי.</div>
+            <div class="fr"><p>Le droit est que les fils de Reouven viennent et disent à Chimon : nous, notre père a laissé des meubles entre tes mains, et les meubles des orphelins ne sont pas gagés au créancier.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דִּינָא הוּא</b> אע&quot;ג דְּאַבָּוהֳוָן קַבֵּיל עֲלֵיהּ אַחֲרָיוּת מְכִירָה זוֹ אֲפִילּוּ הָכֵי יְכוֹלִין בְּנֵי רְאוּבֵן לָבֹא עַל שִׁמְעוֹן וְלוֹמַר אֲנַן מִטַּלְטְלֵי שְׁבַק אֲבוּךְ גַּבָּךְ לֹא הָיִיתָ חַיָּיב עָלָיו אֶלָּא מָעוֹת וְלֹא הָיָה לְךָ לִיתְּנָן לְבַעַל חוֹב וְלֹא לְעַכְּבָן בִּשְׁבִיל אַחְרָיוּת מְכִירָתְךָ דְּמִטַּלְטְלֵי דְּיַתְמֵי לֹא שִׁיעְבְּדוּם חֲכָמִים לְבַעַל חוֹב דְּקַרְקַע שֶׁל יְתוֹמִים הוּא דְּאָמְרִינַן בַּעַל חוֹב גּוֹבֶה אוֹתָהּ בְּחוֹבַת אֲבִיהֶן מִשּׁוּם דְּמֵחַיִּים חָל שִׁיעְבּוּדָא עֲלֵיהֶן אֲבָל עַל מָעוֹת שֶׁלֹּא הָיוּ בְּעַיִן לָא חָיֵיל שִׁיעְבּוּדוֹ מֵחַיִּים עֲלֵיהֶן וּכְשֶׁהֵן בְּעַיִן אֵין כָּאן לֹוֶה וּלְבַעֲלֵי הַמָּעוֹת דְּהַיְינוּ יְתוֹמִים לֹא הִלְוָה זֶה כְּלוּם:</div>
+          <div class="glose-fr">Le droit est : bien que leur père ait accepté sur lui la garantie de cette vente, les fils de Reouven peuvent malgré cela venir vers Chimon et dire : des meubles, notre père en a laissé chez toi. Tu ne lui devais que de l&#x27;argent. Tu n&#x27;avais pas à le donner au créancier, ni à le retenir pour la garantie de ton achat. Car les Sages n&#x27;ont pas gagé les meubles des orphelins au créancier. C&#x27;est la terre des orphelins que le créancier recouvre pour la dette de leur père, parce que, de son vivant, le shiaboud a pris effet sur elle. Mais sur de l&#x27;argent qui n&#x27;était pas en nature, son shiaboud n&#x27;a pas pris effet de son vivant. Et quand cet argent est en nature, il n&#x27;y a ici aucun emprunteur. Envers les maîtres de cet argent, c&#x27;est-à-dire les orphelins, celui-ci n&#x27;a rien prêté.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Les orphelins réclament le prix du champ. Cette créance est un <b>meuble</b>. Le créancier du père ne saisit, chez les orphelins, qu'une <b>terre</b> déjà gagée du vivant du père.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאָמַר רָבָא: אִי פִּיקֵּחַ שִׁמְעוֹן — מַגְבֵּי לְהוּ אַרְעָא, וַהֲדַר גָּבֵי לַהּ מִינַּייְהוּ. דְּאָמַר רַב נַחְמָן: יְתוֹמִים שֶׁגָּבוּ קַרְקַע בְּחוֹבַת אֲבִיהֶם — בַּעַל חוֹב חוֹזֵר וְגוֹבֶה אוֹתָהּ מֵהֶן.</div>
+            <div class="fr"><p>Et Rava a dit : si Chimon est avisé, il leur fait recouvrer une terre, puis il la recouvre d&#x27;eux. Car Rav Nahman a dit : des orphelins qui ont recouvré une terre pour la créance de leur père, un créancier revient et la recouvre d&#x27;eux.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאָמַר רָבָא</b> גָּרְסִינַן:</div>
+          <div class="glose-fr">Et Rava a dit : c&#x27;est ainsi que nous lisons.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִי פִּיקֵּחַ</b> זֶה שִׁמְעוֹן יִטְעֹון וַיֹּאמֶר לָהֶם אֵין לִי מָעוֹת לִפְרֹועַ לָכֶם אֶלָּא קַרְקַע יֵשׁ לִי וְנוֹתְנָהּ לָהֶם בְּחוֹבוֹתָם וְחוֹזֵר וְגוֹבֶה אוֹתָם מֵהֶם בִּשְׁבִיל אַחְרָיוּת מְכִירָה שֶׁקִּבֵּל אֲבִיהֶן עָלָיו דְּהַשְׁתָּא כִּי אַגְבֵּי לְהוּ הָא אַרְעָא אִיגַּלַּאי מִילְּתָא דְּלָאו מִטַּלְטְלֵי הוּא דְּשָׁבֵיק גַּבֵּיהּ אֶלָּא קַרְקַע:</div>
+          <div class="glose-fr">S&#x27;il est avisé : ce Chimon plaidera et leur dira : je n&#x27;ai pas d&#x27;argent pour vous payer, je n&#x27;ai qu&#x27;une terre. Il la leur donne pour leur créance, puis il revient et la recouvre d&#x27;eux pour la garantie de la vente que leur père avait acceptée. Maintenant qu&#x27;il leur a fait recouvrer cette terre, la chose se révèle : ce qu&#x27;il a laissé chez lui, ce sont des terres, et non des meubles.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בַּעַל חוֹב</b> אַחֵר שֶׁל אֲבִיהֶן חוֹזֵר וְגוֹבֶה אוֹתָהּ מֵהֶן אַלְמָא אָמְרִינַן הַנּוֹטֵל קַרְקַע בְּחוֹבוֹ מֵאוֹתָהּ שָׁעָה שֶׁנָּתַן לוֹ הַמָּעוֹת נִקְנֵית לוֹ:</div>
+          <div class="glose-fr">Un créancier : un autre créancier de leur père revient et la recouvre d&#x27;eux. On en déduit que celui qui prend une terre pour sa créance, elle lui est acquise depuis l&#x27;heure où il a donné l&#x27;argent.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Chimon avisé</b> paie les orphelins en terre. Une fois dans la succession, cette terre redevient saisissable, et il la reprend au titre de l'<b>aharayot</b>.</p><p><b>Rav Nahman</b> pose la règle générale : une terre recouvrée par les orphelins pour une créance de leur père peut être reprise par un autre créancier du père.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 220" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="220" fill="#fbfaf7"/>
+<text x="370" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Le conseil de Rava à Chimon</text>
+<rect x="16" y="42" width="170" height="156" rx="4" fill="#e8eef6" stroke="#3d5a80"/>
+<text x="101" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5a80">Dette</text>
+<text x="101" y="98" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Chimon doit</text>
+<text x="101" y="118" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">le prix aux</text>
+<text x="101" y="138" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">orphelins.</text>
+<text x="101" y="166" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#3d5a80">Meubles :</text>
+<text x="101" y="184" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#3d5a80">non gagés.</text>
+<rect x="206" y="42" width="160" height="156" rx="4" fill="#fff6e8" stroke="#a36b2d"/>
+<text x="286" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a36b2d">Paiement</text>
+<text x="286" y="98" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Il leur donne</text>
+<text x="286" y="118" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">une terre</text>
+<text x="286" y="138" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">à la place</text>
+<text x="286" y="158" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">de l'argent.</text>
+<rect x="386" y="42" width="160" height="156" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="466" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Reprise</text>
+<text x="466" y="98" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Cette terre</text>
+<text x="466" y="118" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">entre dans</text>
+<text x="466" y="138" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">la succession.</text>
+<text x="466" y="166" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2f5c2f">Elle redevient</text>
+<text x="466" y="184" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2f5c2f">saisissable.</text>
+<rect x="566" y="42" width="158" height="156" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="645" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Aharayot</text>
+<text x="645" y="98" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Chimon la</text>
+<text x="645" y="118" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">reprend pour</text>
+<text x="645" y="138" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">la garantie</text>
+<text x="645" y="158" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">de la vente.</text>
+</svg></div><div class="svg-cap">Chimon change l&#x27;argent en terre. La terre entre chez les orphelins, puis il la saisit pour la garantie.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִי אָמְרַתְּ בִּשְׁלָמָא ״לְמַפְרֵעַ הוּא גוֹבֶה״, אַמְּטוּ לְהָכִי חוֹזֵר וְגוֹבֶה אוֹתָהּ מֵהֶן — דִּכְמַאן דְּגָבוּ מֵחַיִּים דַּאֲבוּהוֹן דָּמֵי. אֶלָּא אִי אָמְרַתְּ ״מִכָּאן וּלְהַבָּא הוּא גּוֹבֶה״, אַמַּאי חוֹזֵר וְגוֹבֶה אוֹתָהּ מֵהֶן? הָא הָוֵי כְּמַאן דִּזְבֵין יַתְמֵי נִכְסֵי דָּמֵי, וְאִילּוּ קָנֵי יַתְמֵי נִכְסֵי, מִי קָא מִשְׁתַּעְבְּדִי לְבַעַל חוֹב?</div>
+            <div class="fr"><p>Cela se tient bien si tu dis &quot;il recouvre rétroactivement&quot; : c&#x27;est pour cela qu&#x27;il revient et la recouvre d&#x27;eux, car c&#x27;est comme s&#x27;ils l&#x27;avaient recouvrée du vivant de leur père. Mais si tu dis &quot;il recouvre à partir de maintenant&quot;, pourquoi revient-il et la recouvre-t-il d&#x27;eux ?</p><p>Cela revient au cas où les orphelins auraient acheté des biens. Et si les orphelins acquièrent des biens, sont-ils gagés au créancier ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אא&quot;ב</b> אָמְרִינַן אִיגַּלַּאי מִילְּתָא לְמַפְרֵעַ שֶׁהָיְתָה קְנוּיָה לַאֲבִיהֶן קַרְקַע זֶה שֶׁגָּבוּ בְּחוֹב אֲבִיהֶן מִשּׁוּם הָכִי בע&quot;ח אַחֵר שֶׁל אֲבִיהֶן חוֹזֵר וְגוֹבֶה אוֹתָהּ מֵהֶן דִּכְמַאן דְּגָבֵי לָהּ מֵחַיִּים דְּאַבָּוהֳוָן דָּמִי:</div>
+          <div class="glose-fr">Cela se tient bien si tu dis : nous disons que la chose se révèle rétroactivement, cette terre qu&#x27;ils ont recouvrée pour la créance de leur père était acquise à leur père. C&#x27;est pourquoi un autre créancier de leur père revient et la recouvre d&#x27;eux, car c&#x27;est comme s&#x27;il l&#x27;avait recouvrée du vivant de leur père.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא אִי אָמְרַתְּ</b> כָּל הַגּוֹבֶה קַרְקַע בְּחוֹבוֹ אֵינָהּ קְנוּיָה לוֹ אֶלָּא מִגְּבִייָּה וְאֵילָךְ אַמַּאי בַּעַל חוֹב אַחֵר חוֹזֵר וְגוֹבֶה אוֹתָהּ מֵהֶן לֹא יְהֵא דָּבָר זֶה אֶלָּא כְּמִי שֶׁקָּנוּ יְתוֹמִים קַרְקַע בַּמָּעוֹת שֶׁלָּהֶן מִי הֲוָה מִשְׁתַּעְבְּדָא לְבַעַל חוֹב:</div>
+          <div class="glose-fr">Mais si tu dis : quiconque recouvre une terre pour sa créance ne l&#x27;acquiert qu&#x27;à partir du recouvrement et au-delà, pourquoi un autre créancier revient-il et la recouvre-t-il d&#x27;eux ? Cette chose ne serait que comme des orphelins qui ont acquis une terre avec leur propre argent. Serait-elle gagée au créancier ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La règle de <b>Rav Nahman</b> se comprend si le recouvrement remonte en arrière : la terre était déjà au père de son vivant.</p><p>Si le recouvrement ne vaut qu'à partir de maintenant, les orphelins sont comme des <b>acheteurs</b>. Un bien qu'ils acquièrent après la mort n'est pas gagé aux créanciers du père. Rava, qui tient cette seconde date, semble contredit par son propre conseil.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">שָׁאנֵי הָתָם, דְּאָמַר לְהוּ: כִּי הֵיכִי דְּמִשְׁתַּעְבַּדְנָא לֵיהּ לַאֲבוּכוֹן, מִשְׁתַּעְבַּדְנָא נָמֵי לְבַעַל חוֹב דַּאֲבוּכוֹן — מִדְּרַבִּי נָתָן. דְּתַנְיָא, רַבִּי נָתָן אוֹמֵר: מִנַּיִן לַנּוֹשֶׁה בַּחֲבֵירוֹ מָנֶה וַחֲבֵירוֹ בַּחֲבֵירוֹ, שֶׁמּוֹצִיאִין מִזֶּה וְנוֹתְנִין לָזֶה? תַּלְמוּד לוֹמַר: ״וְנָתַן לַאֲשֶׁר אָשַׁם לוֹ״.</div>
+            <div class="fr"><p>C&#x27;est différent là-bas. Car il leur dit : de même que je suis gagé envers votre père, je suis aussi gagé envers le créancier de votre père, d&#x27;après Rabbi Natan.</p><p>Car on enseigne dans une baraïta : Rabbi Natan dit : d&#x27;où sait-on, pour celui qui est créancier de son prochain d&#x27;un maneh, et son prochain créancier de son prochain, qu&#x27;on retire de celui-ci et qu&#x27;on donne à celui-là ? Le verset l&#x27;enseigne : &quot;Et il donnera à celui envers qui il s&#x27;est rendu coupable.&quot;</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שָׁאנֵי הָתָם דְּאָמַר לְהוּ כִּי הֵיכִי דְּמִשְׁתַּעְבַּדְנָא לַאֲבוּכוֹן מִשְׁתַּעְבַּדְנָא נָמֵי לְבַעַל חוֹב דַּאֲבוּכוֹן מִדְּרַבִּי נָתָן</b> לְעוֹלָם מִכָּאן וּלְהַבָּא הוּא גּוֹבֶה וּמַאי דְּאָמַר רַב נַחְמָן בְּעָלְמָא בַּעַל חוֹב חוֹזֵר וְגוֹבֶה אוֹתָהּ מֵהֶן מִשּׁוּם דְּאָמַר לָהֶן בַּעַל חוֹב לַיְּתוֹמִים מִכֹּחַ מִי בָּאתֶם וּגְבִיתֶם קַרְקַע זוֹ מִכֹּחַ שִׁיעְבּוּד שֶׁל אֲבִיכֶן וְכִי הֵיכִי דְּמִשְׁתַּעְבְּדָא לַאֲבוּכוֹן קַרְקַע זוֹ שֶׁל לֹוֶה שֶׁלָּוָה מֵאֲבִיכֶם מִשְׁתַּעְבְּדָא נָמֵי לְדִידִי שֶׁהָיִיתִי מַלְוֶה שֶׁל אֲבִיכֶן וְהַמְחֻויָּב לוֹ כְּלוּם מְשֻׁועְבָּד לִי מִדְּרַבִּי נָתָן הִלְכָּךְ קָדַם שִׁיעְבּוּדִי עָלֶיהָ אֲפִילּוּ אֵצֶל לֹוֶה שֶׁהָיְתָה בִּרְשׁוּתוֹ וְשִׁמְעוֹן נָמֵי אָמַר לְהוּ לִבְנֵי רְאוּבֵן כִּי הֵיכִי דְּהָוֵי נְכָסַיי מְשֻׁועְבָּדִין לַאֲבִיכֶם בִּשְׁבִיל חוֹבוֹ הָיוּ מְשֻׁועְבָּדִין גַּם לְעַצְמִי מִכֹּחַ אֲבִיכֶן שֶׁהָיָה לֹוֶה אֶצְלִי מֵחֲמַת אַחְרָיוּת הַמְּכִירָה מָדָר&#x27; נָתָן דְּמַה לִי אֲנִי מַה לִי אַחֵר הִלְכָּךְ אע&quot;פ שֶׁלֹּא הָיְתָה קְנוּיָה לַאֲבִיכֶם מֵחַיִּים חָל שִׁיעְבּוּדִי עָלֶיהָ אֵצֶל עַצְמִי:</div>
+          <div class="glose-fr">C&#x27;est différent là-bas, car il leur dit : de même que je suis gagé envers votre père, je suis aussi gagé envers le créancier de votre père, d&#x27;après Rabbi Natan. En réalité, il recouvre à partir de maintenant et pour la suite. Et ce que Rav Nahman a dit en général, qu&#x27;un créancier revient et la recouvre d&#x27;eux, c&#x27;est parce que le créancier dit aux orphelins : de quel chef êtes-vous venus recouvrer cette terre ? Du chef du shiaboud de votre père. Et de même que cette terre de l&#x27;emprunteur, qui a emprunté à votre père, est gagée à votre père, elle est aussi gagée à moi, qui étais créancier de votre père. Quiconque lui doit quelque chose m&#x27;est gagé, d&#x27;après Rabbi Natan. Dès lors, mon shiaboud a pris les devants sur elle, même chez l&#x27;emprunteur dans le domaine duquel elle se trouvait. Chimon aussi dit aux fils de Reouven : de même que mes biens étaient gagés à votre père pour sa créance, ils m&#x27;étaient aussi gagés à moi-même, du chef de votre père, qui était emprunteur chez moi au titre de la garantie de la vente, d&#x27;après Rabbi Natan. Qu&#x27;importe que ce soit moi ou un autre. Dès lors, même si elle n&#x27;avait pas été acquise à votre père de son vivant, mon shiaboud a pris effet sur elle à mon propre égard.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לַאֲשֶׁר אָשַׁם לוֹ</b> לַאֲשֶׁר הִלְוָהוּ לוֹ לֹא נֶאֱמַר אֶלָּא לַאֲשֶׁר אָשַׁם לוֹ לַאֲשֶׁר הַקֶּרֶן שֶׁלּוֹ בְּבָבָא קַמָּא אָמְרִינַן אָשָׁם זֶה קֶרֶן:</div>
+          <div class="glose-fr">À celui envers qui il s&#x27;est rendu coupable : il n&#x27;est pas dit &quot;à celui qui lui a prêté&quot;, mais &quot;à celui envers qui il s&#x27;est rendu coupable&quot;, à celui à qui le capital appartient. Dans Bava Kamma, nous disons : cet acham désigne le capital.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִשְׁתַּעְבַּדְנָא לב&quot;ח דַּאֲבוּכוֹן מִדְּרַבִּי נָתָן</b> וא&quot;ת גַּבֵּי מִטַּלְטְלִים נַמֵּי נֵימָא הָכִי וְנִרְאֶה לר&quot;י דְּדַוְקָא גַּבֵּי קַרְקַע שַׁיָּיךְ לְמֵימַר הָכִי דְּבַת שִׁיעְבּוּד הִיא דִּכְשֶׁהַקַּרְקַע זוֹ מְשֻׁועְבֶּדֶת לִרְאוּבֵן חָשְׁבִינַן לֵיהּ כְּאִילּוּ הִיא בְּיָדוֹ דְּהָא אִם מְכָרָהּ אוֹ מִשְׁכְּנָהּ חוֹזֵר רְאוּבֵן וְגוֹבֶה אוֹתָהּ וּלְכָךְ מְשֻׁועְבֶּדֶת נָמֵי לבע&quot;ח אֲבָל מִטַּלְטְלִים אֵין לְהַחֲשִׁיבָם כְּאִילּוּ הֵם בְּיַד רְאוּבֵן כֵּיוָן שֶׁאִילּוּ מְכָרָם אוֹ מִשְׁכְּנָם אֵין גּוֹבֶה מֵהֶן וּמִכָּאן יֵשׁ לְהוֹכִיחַ דַּהֲלָכָה כְּרַבִּי נָתָן דְּהָא רָבָא קָאֵי כְּוָותֵיהּ בִּשְׁמַעְתִּין:</div>
+          <div class="glose-fr">Je suis gagé envers le créancier de votre père, d&#x27;après Rabbi Natan. Et si l&#x27;on objecte : pour les meubles aussi, disons de même. Il paraît au Ri que l&#x27;on ne dit cela que pour la terre, car elle est sujette au shiaboud. Quand cette terre est gagée à Reouven, nous la tenons pour être dans sa main : s&#x27;il l&#x27;a vendue ou donnée en gage, Reouven revient et la recouvre. C&#x27;est pourquoi elle est aussi gagée au créancier. Mais les meubles, on ne les tient pas pour être dans la main de Reouven : s&#x27;il les a vendus ou donnés en gage, il n&#x27;en recouvre rien. Et de là on prouve que la halakha suit Rabbi Natan, car Rava se tient comme lui dans notre sougya.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La réponse sauve <b>Rava</b>. Chimon ne s'appuie pas sur une acquisition rétroactive. Il doit au père, et le père doit à son créancier. <b>Rabbi Natan</b> fait prélever chez le dernier débiteur pour payer le premier créancier.</p><p>La Tossefot réserve cela à la <b>terre</b>, que le créancier peut ressaisir après une vente. Les meubles vendus lui échappent. Rava suit ici Rabbi Natan : la halakha est comme lui.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 250" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="250" fill="#fbfaf7"/>
+<text x="370" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Rabbi Natan : la dette traverse l'intermédiaire</text>
+<rect x="16" y="44" width="200" height="90" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="116" y="76" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">A, dernier débiteur</text>
+<text x="116" y="102" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Doit un maneh à B</text>
+<rect x="270" y="44" width="200" height="90" rx="4" fill="#fff6e8" stroke="#a36b2d"/>
+<text x="370" y="76" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a36b2d">B, intermédiaire</text>
+<text x="370" y="102" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Doit un maneh à C</text>
+<rect x="524" y="44" width="200" height="90" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="624" y="76" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">C, premier créancier</text>
+<text x="624" y="102" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">On prélève chez A</text>
+<rect x="16" y="154" width="708" height="78" rx="4" fill="#e8eef6" stroke="#3d5a80"/>
+<text x="370" y="182" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Chimon doit le prix à Reouven. Reouven doit à son créancier, par l'aharayot.</text>
+<text x="370" y="206" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#3d5a80">Chimon est donc gagé aussi envers le créancier du père. Le verset : il donnera à celui envers qui il est coupable.</text>
+</svg></div><div class="svg-cap">A doit à B, B doit à C : on paie C avec ce que doit A. Chimon est A, Reouven est B, le créancier antérieur est C.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תְּנַן: גּוֹי שֶׁהִלְוָה אֶת יִשְׂרָאֵל עַל חֲמֵצוֹ — אַחַר הַפֶּסַח מֻותָּר בַּהֲנָאָה. אִי אָמְרַתְּ בִּשְׁלָמָא ״לְמַפְרֵעַ הוּא גוֹבֶה״ — אַמְּטוּ לְהָכִי מֻותָּר בַּהֲנָאָה.</div>
+            <div class="fr"><p>Nous avons appris dans la michna : un non-Juif qui a prêté à un Juif sur son hametz, après Pessah, la jouissance en est permise. Cela se tient bien si tu dis &quot;il recouvre rétroactivement&quot; : c&#x27;est pour cela que la jouissance est permise.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תְּנַן נָכְרִי שֶׁהִלְוָה כו&#x27;</b> קס&quot;ד הַשְׁתָּא בְּשֶׁלֹּא מְסָרוֹ לוֹ אֶלָּא שֶׁיַּעַבְדוּ לוֹ כִּשְׁאָר לוֹוִים שֶׁאִם לֹא אֶתֵּן לְךָ עַד יוֹם פְּלוֹנִי בָּא לְבֵיתִי וְגָבָה מֵחָמֵץ זֶה:</div>
+          <div class="glose-fr">Nous avons appris, un non-Juif qui a prêté, etc. : nous tenons pour l&#x27;instant qu&#x27;il ne le lui a pas remis. Il le lui a seulement gagé, comme les autres emprunteurs : si je ne te paie pas jusqu&#x27;à tel jour, viens chez moi et recouvre sur ce hametz.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אִיבְּעִי&#x27; לְהוּ הַמַּשְׂכִּיר בַּיִת לַחֲבֵירוֹ בְּחֶזְקַת בָּדוּק וּמְצָאוֹ שֶׁאֵינוֹ בָּדוּק מַהוּ מִי הָוֵי מֶקַח טָעוּת אוֹ לָא וּפְשִׁיט אַבַּיֵּי דְּלָא הָוֵי מֶקַח טָעוּת בֵּין בְּאַתְרָא דְּיָהֲבִי אַגְרָא וּבָדְקִי בֵּין בְּאַתְרָא דְּבָדְקִי אִינְהוּ גּוּפַיְיהוּ. מ&quot;ט נִיחָא לֵיהּ לְאִינִישׁ לְקַיּוֹמֵי מִצְוָה בֵּין בְּגוּפֵיהּ בֵּין בְּמָמוֹנֵיהּ. תְּנַן הָתָם ר&quot;מ אוֹמֵר אוֹכְלִין כָּל חָמֵשׁ וְשׂוֹרְפִין בִּתְחִלַּת שֵׁשׁ ר&#x27; יְהוּדָה אוֹמֵר אוֹכְלִין כָּל ד&#x27; וְתוֹלִין כָּל חָמֵשׁ וְשׂוֹרְפִין בִּתְחִלַּת שֵׁשׁ. דְּכֻולֵּי עָלְמָא חָמֵץ מִשֵּׁשׁ שָׁעוֹת וּלְמַעְלָה צָרִיךְ לְבַעֲרוֹ מִן הַבַּיִת מִנָּלַן אָמַר רָבָא לֹא תִשְׁחַט עַל חָמֵץ דַּם זִבְחִי לֹא תִּשְׁחַט אֶת הַפֶּסַח וַעֲדַיִין חָמֵץ קַייָּם. וּזְמַן שְׁחִיטַת הַפֶּסַח בֵּין הָעַרְבַּיִם מִכִּי יִנָּטוּ צִלְלֵי עֶרֶב וְהַיְינוּ בִּתְחִלַּת שֶׁבַע. וְאֵימָא כָּל חַד וְחַד כִּי שָׁחֵיט זְמַן שְׁחִיטָה קָאָמַר רַחֲמָנָא. תָּנוּ רַבָּנַן שִׁבְעַת יָמִים שְׂאֹור לֹא יִמָּצֵא בְּבָתֵּיכֶם מַה תַּלְמוּד לוֹמַר וַהֲלֹא כְּבָר נֶאֱמַר לֹא יֵרָאֶה לְךָ שְׂאֹור וְלֹא יֵרָאֶה לְךָ חָמֵץ. לְפִי שֶׁנֶּאֱמַר לֹא יֵרָאֶה לְךָ שְׂאֹור וְלֹא יֵרָאֶה לְךָ חָמֵץ. שֶׁלְּךָ אִי אַתָּה רוֹאֶה אֲבָל אַתָּה רוֹאֶה שֶׁל אֲחֵרִים וְשֶׁל גָּבוֹהַּ יָכוֹל יַטְמִין וִיקַבֵּל פִּקְדוֹנוֹת מִן הַנָּכְרִים תַּלְמוּד לוֹמַר לֹא יִמָּצֵא. אֵין לִי אֶלָּא בְּנָכְרִי שֶׁלֹּא כִּבַּשְׁתּוֹ וְאֵין שָׁרוּי עִמְּךָ בֶּחָצֵר. נָכְרִי שֶׁכִּבַּשְׁתּוֹ וְשָׁרוּי עִמְּךָ בֶּחָצֵר מִנַּיִן. ת&quot;ל לֹא יִמָּצֵא. אֵין לִי אֶלָּא בְּבָתִּים. בְּבוֹרוֹת שִׁיחִין וּמְעָרוֹת מִנַּיִן ת&quot;ל בְּכָל גְּבוּלְךָ. וַעֲדַיִין אֲנִי אוֹמֵר בַּבָּתִּים עוֹבֵר מִשּׁוּם בַּל יֵרָאֶה וּבַל יִמָּצֵא וּבַל יַטְמִין וּבַל יְקַבֵּל פִּקְדוֹנוֹת מִן הַנָּכְרִים וּבַגְּבוּלִים שֶׁלְּךָ אִי אַתָּה רוֹאֶה אֲבָל אַתָּה רוֹאֶה שֶׁל אֲחֵרִים וְשֶׁל גָּבוֹהַּ. מִנַּיִן לִיתֵּן אֶת הָאָמוּר שֶׁל זֶה בָּזֶה וְשֶׁל זֶה בָּזֶה. ת&quot;ל שְׂאוֹר שְׂאוֹר לג&quot;ש. נֶאֱמַר שְׂאוֹר בַּבָּתִּים וְנֶאֱמַר שְׂאוֹר בְּגִבּוּלִין מַה שְׂאוֹר הָאָמוּר בַּבָּתִּים עוֹבֵר מִשּׁוּם בַּל יֵרָאֶה וּבַל יִמָּצֵא וּבַל יַטְמִין וּבַל יְקַבֵּל פִּקְדוֹנוֹת מִן הַנָּכְרִים אַף שְׂאוֹר הָאָמוּר בַּגְּבוּלִין כֵּן. וּמַה שְׂאוֹר הָאָמוּר בַּגְּבוּלִין שֶׁלְּךָ אִי אַתָּה רוֹאֶה אֲבָל אַתָּה רוֹאֶה שֶׁל אֲחֵרִים וְשֶׁל גָּבוֹהַּ אַף שְׂאוֹר הָאָמוּר בַּבָּתִּים כֵּן. אָמַר מָר יָכוֹל יַטְמִין וִיקַבֵּל פִּקְדוֹנוֹת מִן הַנָּכְרִים ת&quot;ל לֹא יִמָּצֵא וְהָאָמְרַתְּ שֶׁלְּךָ אִי אַתָּה רוֹאֶה אֲבָל אַתָּה רוֹאֶה שֶׁל אֲחֵרִים וְשֶׁל גָּבוֹהַּ. לָא קַשְׁיָא הָא דְּקַבֵּיל עֲלֵיהּ אַחְרָיוּת הָא דְּלָא קַבֵּיל עֲלֵיהּ אַחְרָיוּת. אִי קַבֵּיל עֲלֵיהּ אַחֲרָיוּת אָסוּר דַּהֲוָה לֵיהּ כְּדִידֵיהּ. כִּדְאָמַר לְהוּ רָבָא לִבְנֵי מָחוֹזָא בַּעִירוּ חֲמִירָא דִּבְנֵי חֵילָא מִבָּתַּיְיכוּ כֵּיוָן דְּאִילּוּ מִיתְבַּד אוֹ מִיגְנָב בִּרְשׁוּתַייְכוּ קָאֵי וּבָעִיתוּ לְשַׁלּוֹמֵי כְּדִידְכוּ דָּמֵי. וְאִי לָא קַבֵּיל עֲלֵיהּ אַחְרָיוּת שָׁרִי. יֵשׁ אוֹמְרִים דַּוְקָא ש&quot;ש דְּחַיָּיב בִּגְנֵיבָה וַאֲבֵידָה אֲבָל ש&quot;ח לֹא וְדָיְיקִינַן מִלִּישָּׁנָא דְּאִילּוּ מִיגְנָב אוֹ מִיתְבַּד וְכֵן כָּתַב ר&quot;י. ובה&quot;ג כָּתַב דְּאַפֵּי&#x27; ש&quot;ח נָמֵי. וּמִיגְנָב אוֹ מִיתְבַּד בִּפְשִׁיעָה קָאָמַר. וּמִשּׁוּם דְּבָעֵי לְמֵימַר וּבְעֵיתוּ לְשַׁלּוֹמֵי הֻוצְרַךְ לוֹמַר מִיגְנָב אוֹ מִיתְבַּד. וְהָרַמְבַּ&quot;ם זַ&quot;ל פ&quot;ד מֹהַל&#x27; חָמֵץ וּמַצָּה הֵל&#x27; ד&#x27; כָּתַב שֶׁאִם הַנָּכְרִי אַלָּם וְכוֹפֵהוּ לְשַׁלֵּם אע&quot;פ שֶׁלֹּא קִבֵּל עָלָיו אַחֲרָיוּת כְּדִידֵיהּ דָּמֵי וְאָסוּר. יֵשׁ מִן הַגְּאוֹנִים שֶׁאָמְרוּ יִשְׂרָאֵל שֶׁהִפְקִיד חֲמֵצוֹ אֵצֶל נָכְרִי אוֹ אֵצֶל יִשְׂרָאֵל חֲבֵירוֹ וְקִבֵּל הַנִּפְקָד עָלָיו אַחֲרָיוּת הַנִּפְקָד חַיָּיב בְּבִיעוּרוֹ וְלֹא הַמַּפְקִיד אע&quot;פ שֶׁהוּא שֶׁלּוֹ כֵּיוָן שֶׁאֵינוֹ בִּרְשׁוּתוֹ. וְהֵבִיאוּ רְאָיָה מִמְּכִילְתָּא דְּתָנֵי הָתָם בְּבָתֵּיכֶם לָמָּה נֶאֱמַר. לְפִי שֶׁנֶּאֱמַר בְּכָל גְּבוּלְךָ שׁוֹמֵעַ אֲנִי כִּפְשׁוּטוֹ. ת&quot;ל בְּבָתֵּיכֶם מַה בֵּיתְךָ בִּרְשׁוּתְךָ אַף גְּבוּלְךָ בִּרְשׁוּתֵךְ. יָצָא חֲמֵצוֹ שֶׁל נָכְרִי בִּרְשׁוּת יִשְׂרָאֵל שֶׁהוּא בְּבֵיתוֹ וְאֵינוֹ יָכוֹל לְבַעֲרוֹ. יָצָא חֲמֵצוֹ שֶׁל יִשְׂרָאֵל בִּרְשׁוּת הַנָּכְרִי שֶׁהוּא שֶׁלּוֹ וְאֵין בִּרְשׁוּתוֹ. וה&quot;ר יוֹנָה זַ&quot;ל הָיָה אוֹמֵר דִּלְעוֹלָם בִּרְשׁוּת הַמַּפְקִיד הוּא וְחַיָּיב לְבַעֲרוֹ מִן הַתּוֹרָה. כִּדְאָמְרִינַן בְּפֶ&#x27; מְרֻובֶּה (בָּבָא קַמָּא דַּף עו.) וְגוֹנֵב מִבֵּית הָאִישׁ. וְלֹא מִבֵּית הֶקְדֵּשׁ. כָּךְ מָצָאתִי בְּשֵׁם ה&quot;ר יוֹנָה זַ&quot;ל וְלֹא הֵבַנְתִּי רְאָייָתוֹ. וְגַם לֹא כָּתַב לְפָרֵשׁ הָא דִּמְכִילְתָּא שֶׁהֵבִיאוּ מִמֶּנָּה רְאָיָה. ונ&quot;ל דְּדָבָר פָּשׁוּט הוּא דאע&quot;פ שֶׁהַנִּפְקָד קִבֵּל עָלָיו אַחְרָיוּת מ&quot;מ עִיקַּר הַמָּמוֹן שֶׁל הַבְּעָלִים הוּא וְכֵיוָן שֶׁהִשְׁאִילוֹ הַנִּפְקָד בֵּיתוֹ לִשְׁמִירַת מָמוֹנוֹ קָרֵינָא בֵיהּ בֵּיתוֹ. וְהַהִיא דִּמְכִילְתָּא מַייְרֵי בְּנָכְרִי שֶׁהִלְוָה לְיִשְׂרָאֵל עַל חֲמֵצוֹ כְּדִתְנַן בְּפֶ&#x27; כָּל שָׁעָה (פְּסָחִים ד&#x27; לא.).</div>
+          <div class="glose-fr">On a posé la question : celui qui loue une maison à son prochain en la donnant pour déjà vérifiée, et qui la trouve non vérifiée, qu&#x27;en est-il ? Y a-t-il mekah taout (vente viciée), ou non ? Abayé tranche qu&#x27;il n&#x27;y a pas mekah taout, que l&#x27;on soit dans un endroit où l&#x27;on paie un salaire pour faire vérifier, ou dans un endroit où ils vérifient eux-mêmes. Quelle est la raison ? Il plaît à l&#x27;homme d&#x27;accomplir la mitzva, par son corps comme par son argent. On enseigne là-bas dans la michna : Rabbi Meir dit qu&#x27;on mange pendant toute la cinquième heure et qu&#x27;on brûle au début de la sixième. Rabbi Yehouda dit qu&#x27;on mange pendant toute la quatrième, qu&#x27;on suspend pendant toute la cinquième, et qu&#x27;on brûle au début de la sixième. Tout le monde convient que le hametz, depuis la sixième heure et au-delà, doit être éliminé de la maison. D&#x27;où le tenons-nous ? Rava a dit : &quot;Tu n&#x27;égorgeras pas sur du hametz le sang de Mon sacrifice&quot; : tu n&#x27;égorgeras pas le sacrifice de Pessah tant que du hametz subsiste. Or le temps de l&#x27;égorgement du sacrifice de Pessah est bein ha-arbayim (entre les deux soirs), dès que les ombres du soir s&#x27;inclinent, c&#x27;est-à-dire au début de la septième heure. Et je dirais : chacun, à l&#x27;heure où il égorge, c&#x27;est l&#x27;heure de l&#x27;égorgement que le Miséricordieux a dite ? Les maîtres ont enseigné : &quot;Sept jours, du levain ne se trouvera pas dans vos maisons.&quot; Que vient enseigner le verset ? N&#x27;est-il pas déjà dit : &quot;Du levain ne sera pas vu pour toi&quot;, et &quot;Du hametz ne sera pas vu pour toi&quot; ? Parce qu&#x27;il est dit &quot;Du levain ne sera pas vu pour toi&quot; et &quot;Du hametz ne sera pas vu pour toi&quot; : le tien, tu ne le vois pas, mais tu vois celui des autres et celui du Haut (hekdesh). On pourrait penser qu&#x27;il le cache et qu&#x27;il reçoit des dépôts des non-Juifs. Le verset enseigne : &quot;il ne se trouvera pas&quot;. Je n&#x27;ai cet enseignement que pour un non-Juif que tu n&#x27;as pas soumis et qui ne réside pas avec toi dans la cour. Un non-Juif que tu as soumis et qui réside avec toi dans la cour, d&#x27;où l&#x27;interdit ? Le verset enseigne : &quot;il ne se trouvera pas&quot;. Je n&#x27;ai l&#x27;interdit que pour les maisons. Les citernes, les fosses et les cavernes, d&#x27;où ? Le verset enseigne : &quot;dans tout ton territoire&quot;. Et je dirais encore : dans les maisons, on transgresse à cause de bal yeraé (il ne sera pas vu), de bal yimatze (il ne se trouvera pas), de bal yatmin (tu ne le cacheras pas), et à cause de l&#x27;interdit de recevoir des dépôts des non-Juifs ; et dans les territoires, le tien tu ne le vois pas, mais tu vois celui des autres et celui du Haut. D&#x27;où appliquer ce qui est dit de l&#x27;un à l&#x27;autre, et de l&#x27;autre à l&#x27;un ? Le verset enseigne &quot;levain, levain&quot;, pour une gezerah shava (analogie de mots). &quot;Levain&quot; est dit pour les maisons, et &quot;levain&quot; est dit pour les territoires. De même que le levain dit pour les maisons fait transgresser bal yeraé, bal yimatze, bal yatmin et l&#x27;interdit de recevoir des dépôts des non-Juifs, de même le levain dit pour les territoires. Et de même que le levain dit pour les territoires : le tien, tu ne le vois pas, mais tu vois celui des autres et celui du Haut, de même le levain dit pour les maisons. Le maître a dit : on pourrait penser qu&#x27;il le cache et qu&#x27;il reçoit des dépôts des non-Juifs, le verset enseigne &quot;il ne se trouvera pas&quot;. Or tu as dit : le tien, tu ne le vois pas, mais tu vois celui des autres et celui du Haut. Il n&#x27;y a pas de difficulté. Ici, il a accepté l&#x27;aharayot (responsabilité). Là, il n&#x27;a pas accepté l&#x27;aharayot. S&#x27;il a accepté l&#x27;aharayot, c&#x27;est interdit, car le dépôt compte comme le sien. Comme Rava l&#x27;a dit aux gens de Mehoza : faites sortir de vos maisons le levain des soldats. Puisque, s&#x27;il se perd ou s&#x27;il est volé, il se tient dans votre domaine et vous devez payer, il compte comme le vôtre. Et s&#x27;il n&#x27;a pas accepté l&#x27;aharayot, c&#x27;est permis. Certains disent : cela ne vise qu&#x27;un shomer sakhar (gardien payé), responsable du vol et de la perte, et non un shomer hinam (gardien bénévole). Nous le déduisons de la formule &quot;s&#x27;il est volé ou s&#x27;il se perd&quot;. Ainsi a écrit le Ri. Et le Bahag (Baal Halakhot Guedolot) a écrit que cela vaut même pour un shomer hinam. Et &quot;volé ou perdu&quot; vise une peshia (négligence). Parce qu&#x27;il fallait dire &quot;et vous devez payer&quot;, il a fallu dire &quot;volé ou perdu&quot;. Et le Rambam z&quot;l, chapitre 4 des lois du hametz et de la matza, halakha 4, a écrit : si le non-Juif est un homme violent et le contraint à payer, même s&#x27;il n&#x27;a pas accepté l&#x27;aharayot, le dépôt compte comme le sien, et c&#x27;est interdit. Certains Gueonim ont dit : un Juif qui a déposé son hametz chez un non-Juif, ou chez un Juif son prochain, et le dépositaire a accepté l&#x27;aharayot, c&#x27;est le dépositaire qui doit l&#x27;éliminer, et non le déposant, bien que le hametz soit au déposant, puisqu&#x27;il n&#x27;est pas dans son domaine. Ils en ont apporté une preuve depuis la Mekhilta, qui enseigne là-bas : &quot;dans vos maisons&quot;, pourquoi est-ce dit ? Puisqu&#x27;il est dit &quot;dans tout ton territoire&quot;, j&#x27;entendrais le verset selon son sens simple. Le verset enseigne &quot;dans vos maisons&quot; : de même que ta maison désigne ce qui est dans ton domaine, de même ton territoire désigne ce qui est dans ton domaine. En sort le hametz d&#x27;un non-Juif qui se trouve dans le domaine d&#x27;un Juif : il est dans sa maison, et il ne peut pas l&#x27;éliminer. En sort le hametz d&#x27;un Juif qui se trouve dans le domaine d&#x27;un non-Juif : il est à lui, et il n&#x27;est pas dans son domaine. Rabbeinou Yona z&quot;l disait qu&#x27;il reste toujours dans le domaine du déposant, et qu&#x27;il doit l&#x27;éliminer par la Torah. Comme on le dit au chapitre Merouba (Bava Kamma 76a) : &quot;et il vole de la maison de l&#x27;homme&quot;, et non de la maison du hekdesh. Ainsi ai-je trouvé au nom de Rabbeinou Yona z&quot;l, et je n&#x27;ai pas compris sa preuve. Il n&#x27;a pas écrit non plus pour expliquer la Mekhilta dont ils ont tiré une preuve. Et il me semble que la chose est claire : bien que le dépositaire ait accepté l&#x27;aharayot, le fond du bien appartient aux propriétaires. Et puisque le dépositaire a prêté sa maison pour la garde de ce bien, nous y lisons &quot;sa maison&quot;. Et cette Mekhilta traite d&#x27;un non-Juif qui a prêté à un Juif sur son hametz, comme l&#x27;enseigne la michna au chapitre Kol cha&#x27;a (Pesachim 31a).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La michna sert de preuve. Si le non-Juif a acquis le hametz <b>rétroactivement</b>, il était déjà à lui pendant Pessah, et la jouissance après la fête est permise.</p><p>Rachi lit d'abord un simple <b>shiaboud</b> : le hametz est resté dans la maison du Juif, avec un droit de venir le saisir si la dette n'est pas payée.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא אִי אָמְרַתְּ ״מִכָּאן וּלְהַבָּא הוּא גּוֹבֶה״, אַמַּאי מֻותָּר בַּהֲנָאָה? בִּרְשׁוּתָא דְיִשְׂרָאֵל הֲוָה קָאֵי! הָכָא בְמַאי עָסְקִינַן — כְּשֶׁהִרְהִינוֹ אֶצְלוֹ.</div>
+            <div class="fr"><p>Mais si tu dis &quot;il recouvre à partir de maintenant&quot;, pourquoi la jouissance est-elle permise ? Il se tenait dans le domaine d&#x27;un Juif.</p><p>De quoi traitons-nous ici ? Du cas où il le lui a remis en gage.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּשֶׁהִרְהִינוֹ אֶצְלוֹ</b> בְּבֵיתוֹ שֶׁל נָכְרִי נְתָנוֹ קס&quot;ד הַשְׁתָּא דְּטַעְמָא מִשּׁוּם דַּהֲוָה לֵיהּ תּוֹרַת מַשְׁכּוֹן וּבַעַל חוֹב קוֹנֶה מַשְׁכּוֹן:</div>
+          <div class="glose-fr">Du cas où il le lui a remis en gage : il l&#x27;a déposé dans la maison du non-Juif. Nous tenons pour l&#x27;instant que la raison est celle-ci : le hametz a le statut de mashkon (gage), et un créancier acquiert le gage.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Selon Rava, le hametz serait resté au Juif pendant toute la fête, et la jouissance après Pessah serait interdite. La michna la permet.</p><p>La Guemara resserre le cas : le Juif a <b>déposé le gage</b> chez le non-Juif. Rachi explique, pour l'instant, que le créancier <b>acquiert le mashkon</b>.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 200" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="200" fill="#fbfaf7"/>
+<text x="370" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Où se tient le hametz pendant Pessah ?</text>
+<rect x="16" y="44" width="348" height="136" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="190" y="72" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Simple shiaboud</text>
+<text x="190" y="100" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le hametz reste chez le Juif.</text>
+<text x="190" y="120" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Si le créancier n'acquiert</text>
+<text x="190" y="140" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">qu'à l'échéance :</text>
+<text x="190" y="164" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#8a4b3a">jouissance interdite</text>
+<rect x="376" y="44" width="348" height="136" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="550" y="72" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Gage déposé</text>
+<text x="550" y="100" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le Juif l'a remis</text>
+<text x="550" y="120" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">dans la maison du non-Juif.</text>
+<text x="550" y="140" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Rachi : statut de mashkon.</text>
+<text x="550" y="164" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2f5c2f">jouissance permise</text>
+</svg></div><div class="svg-cap">Tant que le hametz reste chez le Juif, la date tardive de Rava l&#x27;interdit. Déposé chez le non-Juif, il a le statut de mashkon.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לֵימָא כְתַנָּאֵי: יִשְׂרָאֵל שֶׁהִלְוָה לְגוֹי עַל חֲמֵצוֹ — לְאַחַר הַפֶּסַח אֵינוֹ עוֹבֵר. מִשּׁוּם רַבִּי מֵאִיר אָמְרוּ: עוֹבֵר. מַאי לַָאו, בְּהָא קָמִיפַּלְגִי: דְּמָר סָבַר לְמַפְרֵעַ הוּא גּוֹבֶה, וּמָר סָבַר מִכָּאן וּלְהַבָּא הוּא גּוֹבֶה?</div>
+            <div class="fr"><p>Dirons-nous que c&#x27;est comme un débat de tannaïm ? Un Juif qui a prêté à un non-Juif sur son hametz, après Pessah, ne transgresse pas.</p><p>On a dit au nom de Rabbi Meir : il transgresse. N&#x27;est-ce pas sur ceci qu&#x27;ils divergent : l&#x27;un tient qu&#x27;il recouvre rétroactivement, et l&#x27;autre tient qu&#x27;il recouvre à partir de maintenant ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>יִשְׂרָאֵל שֶׁהִלְוָה אֶת הַנָּכְרִי עַל חֲמֵצוֹ</b> קֹודֶם הַפֶּסַח לְאַחַר הַפֶּסַח אֵינוֹ עוֹבֵר אִם נֶהֱנָה מִמֶּנּוּ:</div>
+          <div class="glose-fr">Un Juif qui a prêté au non-Juif sur son hametz : avant Pessah. Après Pessah, il ne transgresse pas s&#x27;il en tire jouissance.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַאי לַָאו</b> בְּשֶׁלֹּא הִרְהִינוֹ וּבְהָא קָמִיפַּלְגִי דת&quot;ק סָבַר מִכָּאן וּלְהַבָּא הוּא גּוֹבֶה כו&#x27;:</div>
+          <div class="glose-fr">N&#x27;est-ce pas : dans le cas où il ne le lui a pas remis en gage. Et ils divergent sur ceci : le premier tanna tient qu&#x27;il recouvre à partir de maintenant, etc.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La baraïta inverse les rôles : c'est le <b>Juif</b> qui prête, et le hametz du non-Juif qui est gagé. Le tanna anonyme dit qu'il ne transgresse pas. <b>Rabbi Meir</b> dit qu'il transgresse.</p><p>La Guemara propose d'y lire le même débat : acquisition <b>rétroactive</b> ou acquisition <b>à partir de l'échéance</b>, et cela dans un cas où le gage n'a pas été déposé.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְתִסְבְּרָא? אֵימָא סֵיפָא: אֲבָל גּוֹי שֶׁהִלְוָה לְיִשְׂרָאֵל עַל חֲמֵצוֹ — לְאַחַר הַפֶּסַח דִּבְרֵי הַכֹּל עוֹבֵר. וְהָא אִיפְּכָא מִיבְּעֵי לֵיהּ: לְמָאֵן דְּאָמַר הָתָם ״אֵינוֹ עוֹבֵר״ — הָכָא עוֹבֵר. לְמָאֵן דְּאָמַר הָתָם ״עוֹבֵר״ — הָכָא אֵינוֹ עוֹבֵר!</div>
+            <div class="fr"><p>Et peux-tu le soutenir ? Dis la fin : mais un non-Juif qui a prêté à un Juif sur son hametz, après Pessah, de l&#x27;avis de tous, il transgresse.</p><p>Or il faudrait l&#x27;inverse : selon celui qui dit là-bas &quot;il ne transgresse pas&quot;, ici il transgresse ; selon celui qui dit là-bas &quot;il transgresse&quot;, ici il ne transgresse pas.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵימָא סֵיפָא דִּבְרֵי הַכֹּל עוֹבֵר</b> וְאִי טַעְמָא מִשּׁוּם לְהַבָּא וּלְמַפְרֵעַ הוּא אִיפְּכָא הֲוָה לָן לְאַפּוֹכֵי פְּלֻוגְתַּייְהוּ בְּהָא וְלָא לְאַשְׁוַיי דַּעְתַּייְהוּ דִּלְמַאן דְּאָמַר לְעֵיל בְּרֵישָׁא עוֹבֵר אַלְמָא לְמַפְרֵעַ הוּא גוֹבֶה הָכָא הֲוָה לֵיהּ לְמֵימַר אֵינוֹ עוֹבֵר מִשּׁוּם דְּבִשְׁעַת הַלְוָאָה קָם לֵיהּ בִּרְשׁוּת נָכְרִי וּלְמַאן דְּאָמַר הָתָם כוּ&#x27;:</div>
+          <div class="glose-fr">Dis la fin, de l&#x27;avis de tous il transgresse. Et si la raison tenait à &quot;à partir de maintenant&quot; et à &quot;rétroactivement&quot;, il aurait fallu inverser leur débat dans ce cas, et non les mettre d&#x27;accord. Car selon celui qui a dit plus haut, dans la première clause, qu&#x27;il transgresse, on en déduit qu&#x27;il recouvre rétroactivement : ici, il aurait fallu dire qu&#x27;il ne transgresse pas, parce qu&#x27;à l&#x27;heure du prêt le hametz s&#x27;est tenu dans le domaine du non-Juif. Et selon celui qui a dit là-bas, etc.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אִיבְּעִי&#x27; לְהוּ הַמַּשְׂכִּיר בַּיִת לַחֲבֵירוֹ בְּחֶזְקַת בָּדוּק וּמְצָאוֹ שֶׁאֵינוֹ בָּדוּק מַהוּ מִי הָוֵי מֶקַח טָעוּת אוֹ לָא וּפְשִׁיט אַבַּיֵּי דְּלָא הָוֵי מֶקַח טָעוּת בֵּין בְּאַתְרָא דְּיָהֲבִי אַגְרָא וּבָדְקִי בֵּין בְּאַתְרָא דְּבָדְקִי אִינְהוּ גּוּפַיְיהוּ. מ&quot;ט נִיחָא לֵיהּ לְאִינִישׁ לְקַיּוֹמֵי מִצְוָה בֵּין בְּגוּפֵיהּ בֵּין בְּמָמוֹנֵיהּ. תְּנַן הָתָם ר&quot;מ אוֹמֵר אוֹכְלִין כָּל חָמֵשׁ וְשׂוֹרְפִין בִּתְחִלַּת שֵׁשׁ ר&#x27; יְהוּדָה אוֹמֵר אוֹכְלִין כָּל ד&#x27; וְתוֹלִין כָּל חָמֵשׁ וְשׂוֹרְפִין בִּתְחִלַּת שֵׁשׁ. דְּכֻולֵּי עָלְמָא חָמֵץ מִשֵּׁשׁ שָׁעוֹת וּלְמַעְלָה צָרִיךְ לְבַעֲרוֹ מִן הַבַּיִת מִנָּלַן אָמַר רָבָא לֹא תִשְׁחַט עַל חָמֵץ דַּם זִבְחִי לֹא תִּשְׁחַט אֶת הַפֶּסַח וַעֲדַיִין חָמֵץ קַייָּם. וּזְמַן שְׁחִיטַת הַפֶּסַח בֵּין הָעַרְבַּיִם מִכִּי יִנָּטוּ צִלְלֵי עֶרֶב וְהַיְינוּ בִּתְחִלַּת שֶׁבַע. וְאֵימָא כָּל חַד וְחַד כִּי שָׁחֵיט זְמַן שְׁחִיטָה קָאָמַר רַחֲמָנָא. תָּנוּ רַבָּנַן שִׁבְעַת יָמִים שְׂאֹור לֹא יִמָּצֵא בְּבָתֵּיכֶם מַה תַּלְמוּד לוֹמַר וַהֲלֹא כְּבָר נֶאֱמַר לֹא יֵרָאֶה לְךָ שְׂאֹור וְלֹא יֵרָאֶה לְךָ חָמֵץ. לְפִי שֶׁנֶּאֱמַר לֹא יֵרָאֶה לְךָ שְׂאֹור וְלֹא יֵרָאֶה לְךָ חָמֵץ. שֶׁלְּךָ אִי אַתָּה רוֹאֶה אֲבָל אַתָּה רוֹאֶה שֶׁל אֲחֵרִים וְשֶׁל גָּבוֹהַּ יָכוֹל יַטְמִין וִיקַבֵּל פִּקְדוֹנוֹת מִן הַנָּכְרִים תַּלְמוּד לוֹמַר לֹא יִמָּצֵא. אֵין לִי אֶלָּא בְּנָכְרִי שֶׁלֹּא כִּבַּשְׁתּוֹ וְאֵין שָׁרוּי עִמְּךָ בֶּחָצֵר. נָכְרִי שֶׁכִּבַּשְׁתּוֹ וְשָׁרוּי עִמְּךָ בֶּחָצֵר מִנַּיִן. ת&quot;ל לֹא יִמָּצֵא. אֵין לִי אֶלָּא בְּבָתִּים. בְּבוֹרוֹת שִׁיחִין וּמְעָרוֹת מִנַּיִן ת&quot;ל בְּכָל גְּבוּלְךָ. וַעֲדַיִין אֲנִי אוֹמֵר בַּבָּתִּים עוֹבֵר מִשּׁוּם בַּל יֵרָאֶה וּבַל יִמָּצֵא וּבַל יַטְמִין וּבַל יְקַבֵּל פִּקְדוֹנוֹת מִן הַנָּכְרִים וּבַגְּבוּלִים שֶׁלְּךָ אִי אַתָּה רוֹאֶה אֲבָל אַתָּה רוֹאֶה שֶׁל אֲחֵרִים וְשֶׁל גָּבוֹהַּ. מִנַּיִן לִיתֵּן אֶת הָאָמוּר שֶׁל זֶה בָּזֶה וְשֶׁל זֶה בָּזֶה. ת&quot;ל שְׂאוֹר שְׂאוֹר לג&quot;ש. נֶאֱמַר שְׂאוֹר בַּבָּתִּים וְנֶאֱמַר שְׂאוֹר בְּגִבּוּלִין מַה שְׂאוֹר הָאָמוּר בַּבָּתִּים עוֹבֵר מִשּׁוּם בַּל יֵרָאֶה וּבַל יִמָּצֵא וּבַל יַטְמִין וּבַל יְקַבֵּל פִּקְדוֹנוֹת מִן הַנָּכְרִים אַף שְׂאוֹר הָאָמוּר בַּגְּבוּלִין כֵּן. וּמַה שְׂאוֹר הָאָמוּר בַּגְּבוּלִין שֶׁלְּךָ אִי אַתָּה רוֹאֶה אֲבָל אַתָּה רוֹאֶה שֶׁל אֲחֵרִים וְשֶׁל גָּבוֹהַּ אַף שְׂאוֹר הָאָמוּר בַּבָּתִּים כֵּן. אָמַר מָר יָכוֹל יַטְמִין וִיקַבֵּל פִּקְדוֹנוֹת מִן הַנָּכְרִים ת&quot;ל לֹא יִמָּצֵא וְהָאָמְרַתְּ שֶׁלְּךָ אִי אַתָּה רוֹאֶה אֲבָל אַתָּה רוֹאֶה שֶׁל אֲחֵרִים וְשֶׁל גָּבוֹהַּ. לָא קַשְׁיָא הָא דְּקַבֵּיל עֲלֵיהּ אַחְרָיוּת הָא דְּלָא קַבֵּיל עֲלֵיהּ אַחְרָיוּת. אִי קַבֵּיל עֲלֵיהּ אַחֲרָיוּת אָסוּר דַּהֲוָה לֵיהּ כְּדִידֵיהּ. כִּדְאָמַר לְהוּ רָבָא לִבְנֵי מָחוֹזָא בַּעִירוּ חֲמִירָא דִּבְנֵי חֵילָא מִבָּתַּיְיכוּ כֵּיוָן דְּאִילּוּ מִיתְבַּד אוֹ מִיגְנָב בִּרְשׁוּתַייְכוּ קָאֵי וּבָעִיתוּ לְשַׁלּוֹמֵי כְּדִידְכוּ דָּמֵי. וְאִי לָא קַבֵּיל עֲלֵיהּ אַחְרָיוּת שָׁרִי. יֵשׁ אוֹמְרִים דַּוְקָא ש&quot;ש דְּחַיָּיב בִּגְנֵיבָה וַאֲבֵידָה אֲבָל ש&quot;ח לֹא וְדָיְיקִינַן מִלִּישָּׁנָא דְּאִילּוּ מִיגְנָב אוֹ מִיתְבַּד וְכֵן כָּתַב ר&quot;י. ובה&quot;ג כָּתַב דְּאַפֵּי&#x27; ש&quot;ח נָמֵי. וּמִיגְנָב אוֹ מִיתְבַּד בִּפְשִׁיעָה קָאָמַר. וּמִשּׁוּם דְּבָעֵי לְמֵימַר וּבְעֵיתוּ לְשַׁלּוֹמֵי הֻוצְרַךְ לוֹמַר מִיגְנָב אוֹ מִיתְבַּד. וְהָרַמְבַּ&quot;ם זַ&quot;ל פ&quot;ד מֹהַל&#x27; חָמֵץ וּמַצָּה הֵל&#x27; ד&#x27; כָּתַב שֶׁאִם הַנָּכְרִי אַלָּם וְכוֹפֵהוּ לְשַׁלֵּם אע&quot;פ שֶׁלֹּא קִבֵּל עָלָיו אַחֲרָיוּת כְּדִידֵיהּ דָּמֵי וְאָסוּר. יֵשׁ מִן הַגְּאוֹנִים שֶׁאָמְרוּ יִשְׂרָאֵל שֶׁהִפְקִיד חֲמֵצוֹ אֵצֶל נָכְרִי אוֹ אֵצֶל יִשְׂרָאֵל חֲבֵירוֹ וְקִבֵּל הַנִּפְקָד עָלָיו אַחֲרָיוּת הַנִּפְקָד חַיָּיב בְּבִיעוּרוֹ וְלֹא הַמַּפְקִיד אע&quot;פ שֶׁהוּא שֶׁלּוֹ כֵּיוָן שֶׁאֵינוֹ בִּרְשׁוּתוֹ. וְהֵבִיאוּ רְאָיָה מִמְּכִילְתָּא דְּתָנֵי הָתָם בְּבָתֵּיכֶם לָמָּה נֶאֱמַר. לְפִי שֶׁנֶּאֱמַר בְּכָל גְּבוּלְךָ שׁוֹמֵעַ אֲנִי כִּפְשׁוּטוֹ. ת&quot;ל בְּבָתֵּיכֶם מַה בֵּיתְךָ בִּרְשׁוּתְךָ אַף גְּבוּלְךָ בִּרְשׁוּתֵךְ. יָצָא חֲמֵצוֹ שֶׁל נָכְרִי בִּרְשׁוּת יִשְׂרָאֵל שֶׁהוּא בְּבֵיתוֹ וְאֵינוֹ יָכוֹל לְבַעֲרוֹ. יָצָא חֲמֵצוֹ שֶׁל יִשְׂרָאֵל בִּרְשׁוּת הַנָּכְרִי שֶׁהוּא שֶׁלּוֹ וְאֵין בִּרְשׁוּתוֹ. וה&quot;ר יוֹנָה זַ&quot;ל הָיָה אוֹמֵר דִּלְעוֹלָם בִּרְשׁוּת הַמַּפְקִיד הוּא וְחַיָּיב לְבַעֲרוֹ מִן הַתּוֹרָה. כִּדְאָמְרִינַן בְּפֶ&#x27; מְרֻובֶּה (בָּבָא קַמָּא דַּף עו.) וְגוֹנֵב מִבֵּית הָאִישׁ. וְלֹא מִבֵּית הֶקְדֵּשׁ. כָּךְ מָצָאתִי בְּשֵׁם ה&quot;ר יוֹנָה זַ&quot;ל וְלֹא הֵבַנְתִּי רְאָייָתוֹ. וְגַם לֹא כָּתַב לְפָרֵשׁ הָא דִּמְכִילְתָּא שֶׁהֵבִיאוּ מִמֶּנָּה רְאָיָה. ונ&quot;ל דְּדָבָר פָּשׁוּט הוּא דאע&quot;פ שֶׁהַנִּפְקָד קִבֵּל עָלָיו אַחְרָיוּת מ&quot;מ עִיקַּר הַמָּמוֹן שֶׁל הַבְּעָלִים הוּא וְכֵיוָן שֶׁהִשְׁאִילוֹ הַנִּפְקָד בֵּיתוֹ לִשְׁמִירַת מָמוֹנוֹ קָרֵינָא בֵיהּ בֵּיתוֹ. וְהַהִיא דִּמְכִילְתָּא מַייְרֵי בְּנָכְרִי שֶׁהִלְוָה לְיִשְׂרָאֵל עַל חֲמֵצוֹ כְּדִתְנַן בְּפֶ&#x27; כָּל שָׁעָה (פְּסָחִים ד&#x27; לא.).</div>
+          <div class="glose-fr">On a posé la question : celui qui loue une maison à son prochain en la donnant pour déjà vérifiée, et qui la trouve non vérifiée, qu&#x27;en est-il ? Y a-t-il mekah taout (vente viciée), ou non ? Abayé tranche qu&#x27;il n&#x27;y a pas mekah taout, que l&#x27;on soit dans un endroit où l&#x27;on paie un salaire pour faire vérifier, ou dans un endroit où ils vérifient eux-mêmes. Quelle est la raison ? Il plaît à l&#x27;homme d&#x27;accomplir la mitzva, par son corps comme par son argent. On enseigne là-bas dans la michna : Rabbi Meir dit qu&#x27;on mange pendant toute la cinquième heure et qu&#x27;on brûle au début de la sixième. Rabbi Yehouda dit qu&#x27;on mange pendant toute la quatrième, qu&#x27;on suspend pendant toute la cinquième, et qu&#x27;on brûle au début de la sixième. Tout le monde convient que le hametz, depuis la sixième heure et au-delà, doit être éliminé de la maison. D&#x27;où le tenons-nous ? Rava a dit : &quot;Tu n&#x27;égorgeras pas sur du hametz le sang de Mon sacrifice&quot; : tu n&#x27;égorgeras pas le sacrifice de Pessah tant que du hametz subsiste. Or le temps de l&#x27;égorgement du sacrifice de Pessah est bein ha-arbayim (entre les deux soirs), dès que les ombres du soir s&#x27;inclinent, c&#x27;est-à-dire au début de la septième heure. Et je dirais : chacun, à l&#x27;heure où il égorge, c&#x27;est l&#x27;heure de l&#x27;égorgement que le Miséricordieux a dite ? Les maîtres ont enseigné : &quot;Sept jours, du levain ne se trouvera pas dans vos maisons.&quot; Que vient enseigner le verset ? N&#x27;est-il pas déjà dit : &quot;Du levain ne sera pas vu pour toi&quot;, et &quot;Du hametz ne sera pas vu pour toi&quot; ? Parce qu&#x27;il est dit &quot;Du levain ne sera pas vu pour toi&quot; et &quot;Du hametz ne sera pas vu pour toi&quot; : le tien, tu ne le vois pas, mais tu vois celui des autres et celui du Haut (hekdesh). On pourrait penser qu&#x27;il le cache et qu&#x27;il reçoit des dépôts des non-Juifs. Le verset enseigne : &quot;il ne se trouvera pas&quot;. Je n&#x27;ai cet enseignement que pour un non-Juif que tu n&#x27;as pas soumis et qui ne réside pas avec toi dans la cour. Un non-Juif que tu as soumis et qui réside avec toi dans la cour, d&#x27;où l&#x27;interdit ? Le verset enseigne : &quot;il ne se trouvera pas&quot;. Je n&#x27;ai l&#x27;interdit que pour les maisons. Les citernes, les fosses et les cavernes, d&#x27;où ? Le verset enseigne : &quot;dans tout ton territoire&quot;. Et je dirais encore : dans les maisons, on transgresse à cause de bal yeraé (il ne sera pas vu), de bal yimatze (il ne se trouvera pas), de bal yatmin (tu ne le cacheras pas), et à cause de l&#x27;interdit de recevoir des dépôts des non-Juifs ; et dans les territoires, le tien tu ne le vois pas, mais tu vois celui des autres et celui du Haut. D&#x27;où appliquer ce qui est dit de l&#x27;un à l&#x27;autre, et de l&#x27;autre à l&#x27;un ? Le verset enseigne &quot;levain, levain&quot;, pour une gezerah shava (analogie de mots). &quot;Levain&quot; est dit pour les maisons, et &quot;levain&quot; est dit pour les territoires. De même que le levain dit pour les maisons fait transgresser bal yeraé, bal yimatze, bal yatmin et l&#x27;interdit de recevoir des dépôts des non-Juifs, de même le levain dit pour les territoires. Et de même que le levain dit pour les territoires : le tien, tu ne le vois pas, mais tu vois celui des autres et celui du Haut, de même le levain dit pour les maisons. Le maître a dit : on pourrait penser qu&#x27;il le cache et qu&#x27;il reçoit des dépôts des non-Juifs, le verset enseigne &quot;il ne se trouvera pas&quot;. Or tu as dit : le tien, tu ne le vois pas, mais tu vois celui des autres et celui du Haut. Il n&#x27;y a pas de difficulté. Ici, il a accepté l&#x27;aharayot (responsabilité). Là, il n&#x27;a pas accepté l&#x27;aharayot. S&#x27;il a accepté l&#x27;aharayot, c&#x27;est interdit, car le dépôt compte comme le sien. Comme Rava l&#x27;a dit aux gens de Mehoza : faites sortir de vos maisons le levain des soldats. Puisque, s&#x27;il se perd ou s&#x27;il est volé, il se tient dans votre domaine et vous devez payer, il compte comme le vôtre. Et s&#x27;il n&#x27;a pas accepté l&#x27;aharayot, c&#x27;est permis. Certains disent : cela ne vise qu&#x27;un shomer sakhar (gardien payé), responsable du vol et de la perte, et non un shomer hinam (gardien bénévole). Nous le déduisons de la formule &quot;s&#x27;il est volé ou s&#x27;il se perd&quot;. Ainsi a écrit le Ri. Et le Bahag (Baal Halakhot Guedolot) a écrit que cela vaut même pour un shomer hinam. Et &quot;volé ou perdu&quot; vise une peshia (négligence). Parce qu&#x27;il fallait dire &quot;et vous devez payer&quot;, il a fallu dire &quot;volé ou perdu&quot;. Et le Rambam z&quot;l, chapitre 4 des lois du hametz et de la matza, halakha 4, a écrit : si le non-Juif est un homme violent et le contraint à payer, même s&#x27;il n&#x27;a pas accepté l&#x27;aharayot, le dépôt compte comme le sien, et c&#x27;est interdit. Certains Gueonim ont dit : un Juif qui a déposé son hametz chez un non-Juif, ou chez un Juif son prochain, et le dépositaire a accepté l&#x27;aharayot, c&#x27;est le dépositaire qui doit l&#x27;éliminer, et non le déposant, bien que le hametz soit au déposant, puisqu&#x27;il n&#x27;est pas dans son domaine. Ils en ont apporté une preuve depuis la Mekhilta, qui enseigne là-bas : &quot;dans vos maisons&quot;, pourquoi est-ce dit ? Puisqu&#x27;il est dit &quot;dans tout ton territoire&quot;, j&#x27;entendrais le verset selon son sens simple. Le verset enseigne &quot;dans vos maisons&quot; : de même que ta maison désigne ce qui est dans ton domaine, de même ton territoire désigne ce qui est dans ton domaine. En sort le hametz d&#x27;un non-Juif qui se trouve dans le domaine d&#x27;un Juif : il est dans sa maison, et il ne peut pas l&#x27;éliminer. En sort le hametz d&#x27;un Juif qui se trouve dans le domaine d&#x27;un non-Juif : il est à lui, et il n&#x27;est pas dans son domaine. Rabbeinou Yona z&quot;l disait qu&#x27;il reste toujours dans le domaine du déposant, et qu&#x27;il doit l&#x27;éliminer par la Torah. Comme on le dit au chapitre Merouba (Bava Kamma 76a) : &quot;et il vole de la maison de l&#x27;homme&quot;, et non de la maison du hekdesh. Ainsi ai-je trouvé au nom de Rabbeinou Yona z&quot;l, et je n&#x27;ai pas compris sa preuve. Il n&#x27;a pas écrit non plus pour expliquer la Mekhilta dont ils ont tiré une preuve. Et il me semble que la chose est claire : bien que le dépositaire ait accepté l&#x27;aharayot, le fond du bien appartient aux propriétaires. Et puisque le dépositaire a prêté sa maison pour la garde de ce bien, nous y lisons &quot;sa maison&quot;. Et cette Mekhilta traite d&#x27;un non-Juif qui a prêté à un Juif sur son hametz, comme l&#x27;enseigne la michna au chapitre Kol cha&#x27;a (Pesachim 31a).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La <b>seifa</b> traite du non-Juif qui prête au Juif. Les deux avis disent qu'il transgresse.</p><p>Si la reisha portait sur la date du recouvrement, la seifa aurait <b>inversé</b> les deux positions. L'accord de la seifa écarte cette lecture. La Guemara cherchera un autre point de débat.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 430" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="430" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Hametz en gage, et la baraïta</text>
+<rect x="16" y="44" width="350" height="150" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="191" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Michna</text>
+<text x="191" y="96" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Un non-Juif prête à un Juif</text>
+<text x="191" y="116" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">sur son hametz.</text>
+<text x="191" y="144" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2f5c2f">Après Pessah,</text>
+<text x="191" y="164" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2f5c2f">la jouissance est permise.</text>
+<rect x="376" y="44" width="348" height="150" rx="4" fill="#fff6e8" stroke="#a36b2d"/>
+<text x="550" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a36b2d">Lecture tentée</text>
+<text x="550" y="96" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Lemafréa : le hametz était</text>
+<text x="550" y="116" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">déjà au non-Juif.</text>
+<text x="550" y="144" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#a36b2d">Mikan oulehaba : il était</text>
+<text x="550" y="164" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#a36b2d">encore au Juif. Difficulté.</text>
+<rect x="16" y="210" width="230" height="120" rx="4" fill="#e8eef6" stroke="#3d5a80"/>
+<text x="131" y="236" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5a80">Réponse provisoire</text>
+<text x="131" y="262" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le hametz a été</text>
+<text x="131" y="282" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">déposé en gage</text>
+<text x="131" y="302" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">chez le non-Juif.</text>
+<rect x="256" y="210" width="230" height="120" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="371" y="236" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">Baraïta, reisha</text>
+<text x="371" y="262" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Juif prête au non-Juif.</text>
+<text x="371" y="282" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Tanna : ne transgresse pas.</text>
+<text x="371" y="302" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Rabbi Meir : transgresse.</text>
+<rect x="496" y="210" width="228" height="120" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="610" y="236" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Baraïta, seifa</text>
+<text x="610" y="262" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Non-Juif prête au Juif.</text>
+<text x="610" y="282" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">De l'avis de tous,</text>
+<text x="610" y="302" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#8a4b3a">il transgresse.</text>
+<rect x="16" y="346" width="708" height="68" rx="4" fill="#fbfaf7" stroke="#8a7b63"/>
+<text x="370" y="374" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Un débat sur la date du recouvrement aurait inversé les deux avis dans la seifa.</text>
+<text x="370" y="396" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#6b5344">La seifa les met d'accord. La Guemara écarte cette lecture.</text>
+</svg></div><div class="svg-cap">La seifa met les deux avis d&#x27;accord sur la transgression. Un débat lemafréa contre mikan oulehaba les aurait opposés.</div></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Pesachim_30b.html">&lsaquo; Pesachim 30b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schémas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage sélectionné :\n« '+s+' »\n'):'\nPassage concerné :\n\n')+'\nCorrection proposée :\n\n\n— envoyé depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>
