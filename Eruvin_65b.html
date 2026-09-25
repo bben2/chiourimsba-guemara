@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eruvin 65b — La coupe, les deux cours, et la location au goy</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Eruvin 65b — La coupe, les deux cours, et la location au goy</h1>
+    <div class="ref">Eruvin 65b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Eruvin_65a.html">&lsaquo; Eruvin 65a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> Le daf ferme d&#x27;abord la parole sur le vin : répandu dans la maison comme l&#x27;eau, il y a berakha. Rabbi Ilai reconnaît l&#x27;homme à son koso, son kiso et son kaaso, et certains ajoutent le rire.</p><p>La sougya revient aux deux cours. Rav interdit l&#x27;extérieure quand un Israël et un goy sont dans l&#x27;intérieure.</p><p>Rav Houna fils de Rav Yehochoua tient ensemble Rabbi Eliezer ben Yaakov et Rabbi Akiva : ils ont fait un erouv, et le goy l&#x27;annule. Puis deux questions d&#x27;auberge : louer au bailleur quand le locataire est absent, et louer le Chabbat même quand le maître goy arrive le jour même.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 274" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="274" fill="#fbfaf7"/>
+<text x="370.0" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">En trois choses l'homme se reconnaît</text>
+<text x="370.0" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#5c5348">Rabbi Ilai : koso, kiso, kaaso</text>
+<rect x="20" y="62" width="170" height="36" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="105.0" y="85.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Koso</text>
+<rect x="204" y="62" width="170" height="36" rx="4" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="289.0" y="85.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Kiso</text>
+<rect x="388" y="62" width="170" height="36" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="473.0" y="85.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Kaaso</text>
+<rect x="572" y="62" width="150" height="36" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="647.0" y="84.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Sehok</text>
+<rect x="20" y="110" width="170" height="88" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="105.0" y="142.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">La coupe.</text>
+<text x="105.0" y="158.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">L'esprit reste-t-il</text>
+<text x="105.0" y="174.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">posé dans le vin ?</text>
+<rect x="204" y="110" width="170" height="88" rx="4" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="289.0" y="134.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">La bourse.</text>
+<text x="289.0" y="150.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Le négoce se fait-il</text>
+<text x="289.0" y="166.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">be-emouna,</text>
+<text x="289.0" y="182.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">avec loyauté ?</text>
+<rect x="388" y="110" width="170" height="88" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="473.0" y="142.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">La colère.</text>
+<text x="473.0" y="158.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Est-il kapdan,</text>
+<text x="473.0" y="174.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">trop irascible ?</text>
+<rect x="572" y="110" width="150" height="88" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="647.0" y="142.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Le rire.</text>
+<text x="647.0" y="158.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Certains l'ajoutent</text>
+<text x="647.0" y="174.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">aux trois.</text>
+<rect x="20" y="214" width="702" height="40" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="371.0" y="238.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Ben Yehoyada : hazaka seulement après les trois. Ordre : du rare (le vin) au quotidien (la colère).</text>
+</svg></div>
+          <figcaption>Rabbi Ilai : la coupe, la bourse, la colère. Certains ajoutent le rire. Rachi précise chaque épreuve.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 756 326" xmlns="http://www.w3.org/2000/svg">
+<rect width="756" height="326" fill="#fbfaf7"/>
+<text x="378.0" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Deux cours, l'une dans l'autre</text>
+<text x="378.0" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#5c5348">Qui explique l'interdit de Rav dans l'extérieure</text>
+<rect x="20" y="58" width="300" height="64" rx="4" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="170.0" y="77.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Cour intérieure</text>
+<text x="170.0" y="94.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Israël et goy</text>
+<text x="170.0" y="111.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">permis chez lui (Rav)</text>
+<line x1="320" y1="90" x2="393" y2="90" stroke="#2b2b2b" stroke-width="1.4"/><polygon points="392,85 392,95 400,90" fill="#2b2b2b"/>
+<text x="360" y="78" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="normal" fill="#5c5348">passage</text>
+<rect x="400" y="58" width="320" height="64" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="560.0" y="77.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Cour extérieure</text>
+<text x="560.0" y="94.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">un Israël</text>
+<text x="560.0" y="111.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">porter, jusqu'à la sekhira ?</text>
+<rect x="16" y="142" width="176" height="28" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="104.0" y="160.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2b2b2b">Rabbi Meir</text>
+<rect x="200" y="142" width="176" height="28" rx="4" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="288.0" y="159.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" fill="#2b2b2b">R. Eliezer b. Yaakov</text>
+<rect x="384" y="142" width="176" height="28" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="472.0" y="160.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2b2b2b">Rabbi Akiva</text>
+<rect x="568" y="142" width="172" height="28" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="654.0" y="160.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2b2b2b">Rav Houna</text>
+<rect x="16" y="176" width="176" height="130" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="104.0" y="213.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Le goy interdit</text>
+<text x="104.0" y="229.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">même un seul Israël.</text>
+<text x="104.0" y="245.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Citer l'Israël</text>
+<text x="104.0" y="261.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">du dehors n'ajoute</text>
+<text x="104.0" y="277.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">rien à l'interdit.</text>
+<rect x="200" y="176" width="176" height="130" rx="4" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="288.0" y="213.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Le goy n'interdit</text>
+<text x="288.0" y="229.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">que si deux Israël</text>
+<text x="288.0" y="245.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">s'interdisent.</text>
+<text x="288.0" y="261.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Le pied permis</text>
+<text x="288.0" y="277.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">n'interdit pas ailleurs.</text>
+<rect x="384" y="176" width="176" height="130" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="472.0" y="213.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Le pied permis</text>
+<text x="472.0" y="229.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">chez lui interdit</text>
+<text x="472.0" y="245.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">hors de son lieu.</text>
+<text x="472.0" y="261.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">L'intérieur seul</text>
+<text x="472.0" y="277.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">suffit à interdire.</text>
+<rect x="568" y="176" width="172" height="130" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="654.0" y="213.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Les deux avis.</text>
+<text x="654.0" y="229.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Ils ont fait l'erouv.</text>
+<text x="654.0" y="245.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Le goy l'annule.</text>
+<text x="654.0" y="261.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Sans goy, l'erouv</text>
+<text x="654.0" y="277.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">laisse porter.</text>
+</svg></div>
+          <figcaption>Israël et goy dans l&#x27;intérieure, Israël dans l&#x27;extérieure. Quatre lectures de l&#x27;interdit de Rav.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 756 236" xmlns="http://www.w3.org/2000/svg">
+<rect width="756" height="236" fill="#fbfaf7"/>
+<text x="378.0" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Louer au goy pour l'erouv</text>
+<text x="378.0" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#5c5348">Deux questions à l'auberge</text>
+<rect x="16" y="58" width="356" height="28" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="194.0" y="76.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2b2b2b">Locataire absent, bailleur présent</text>
+<rect x="384" y="58" width="356" height="28" rx="4" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="562.0" y="76.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2b2b2b">Le maître goy arrive le Chabbat</text>
+<rect x="16" y="96" width="170" height="72" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="101.0" y="112.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Il ne peut pas</text>
+<text x="101.0" y="128.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">le renvoyer</text>
+<text x="101.0" y="144.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">jusqu'au terme.</text>
+<text x="101.0" y="160.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">On ne loue pas.</text>
+<rect x="198" y="96" width="174" height="72" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="285.0" y="112.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Il peut le renvoyer.</text>
+<text x="285.0" y="128.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Rech Lakich : on loue.</text>
+<text x="285.0" y="144.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Rabbi Afes :</text>
+<text x="285.0" y="160.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">vous avez bien fait.</text>
+<rect x="384" y="96" width="174" height="72" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="471.0" y="112.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Sekhira comme erouv :</text>
+<text x="471.0" y="128.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">seulement tant</text>
+<text x="471.0" y="144.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">qu'il fait jour.</text>
+<text x="471.0" y="160.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Donc pas le Chabbat.</text>
+<rect x="566" y="96" width="174" height="72" rx="4" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="653.0" y="112.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Sekhira comme bitoul :</text>
+<text x="653.0" y="128.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">même le Chabbat.</text>
+<text x="653.0" y="144.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Hanina : louer.</text>
+<text x="653.0" y="160.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Assi : ne pas louer.</text>
+<rect x="16" y="182" width="724" height="36" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="378.0" y="204.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Rabbi Hiya bar Abba : suivre l'ancien et louer. La réponse de Rabbi Yohanan ouvre le daf suivant.</text>
+</svg></div>
+          <figcaption>Sekhira au bailleur si le locataire peut être renvoyé. Sekhira le Chabbat si elle suit le bitoul.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִי נִשְׁפָּךְ בְּבֵיתוֹ כַּמַּיִם — אִיכָּא בְּרָכָה, וְאִי לֹא — לֹא.</div>
+            <div class="fr"><p>S&#x27;il est répandu dans sa maison comme de l&#x27;eau, il y a berakha (bénédiction) ; et sinon, non.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִם נִשְׁפַּךְ בְּבֵיתוֹ כַּמַּיִם</b> הָוֵי בִּכְלַל בְּרָכָה וְאִי לֹא. לֹא:</div>
+          <div class="glose-fr">Il entre dans la bénédiction ; et sinon, non.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Suite de Rabbi Hanin bar Papa, au daf précédent. Le sujet est le <b>yayin</b> (vin).</p><p>S'il coule dans la maison <b>comme l'eau</b>, il entre dans la <b>berakha</b>. S'il n'en est pas ainsi, la berakha manque. Rachi le dit en ces termes.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַבִּי אִילְעַאי, בִּשְׁלֹשָׁה דְּבָרִים אָדָם נִיכָּר: בְּכוֹסוֹ, וּבְכִיסוֹ וּבְכַעְסוֹ. וְאָמְרִי לֵיהּ אַף בְּשַׂחֲקוֹ.</div>
+            <div class="fr"><p>Rabbi Ilai a dit : en trois choses un homme se reconnaît : à son koso (sa coupe), à son kiso (sa bourse) et à son kaaso (sa colère). Et certains disent : même à son sehok (son rire).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אָדָם נִיכָּר</b> אִם הָגוּן הוּא:</div>
+          <div class="glose-fr">S&#x27;il est convenable.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּכוֹסוֹ</b> אִם דַּעְתּוֹ מְיֻושֶּׁבֶת עָלָיו בְּיֵינוֹ:</div>
+          <div class="glose-fr">Si son esprit reste posé sur lui dans son vin.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּכִיסוֹ</b> כְּשֶׁנּוֹשֵׂא וְנוֹתֵן עִם בְּנֵי אָדָם אִם בֶּאֱמוּנָה הוּא עוֹשֶׂה:</div>
+          <div class="glose-fr">Quand il négocie avec les gens, s&#x27;il agit avec loyauté.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּכַעְסוֹ</b> שֶׁאֵינוֹ קַפְדָן יוֹתֵר מִדַּאי:</div>
+          <div class="glose-fr">Qu&#x27;il ne soit pas trop irascible.</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">בִּשְׁלֹשָׁה דְּבָרִים אָדָם נִכָּר: בְּכוֹסוֹ, בְּכִיסוֹ, בְּכַעְסוֹ. הָא דִּנְחִית לְמִנְייָנָא, נִרְאֶה לִי שֶׁבָּא לְלַמְּדֵנוּ אַף עַל גַּב דְּמִכָּל חַד בִּפְנֵי עַצְמוֹ אִיכָּא לְמֵילַף לְהָרַע אוֹ לְהֵטִיב, עִם כָּל זֶה לֹא יִהְיֶה הָאָדָם מֻוחְזָק לְהָרַע אוֹ לְהֵטִיב אֶלָּא עַד שֶׁיִּהְיֶה נִבְדָּק בִּשְׁלָשְׁתָּן בִּתְלָתָא הָוֵי חֲזָקָה. וְהָא דְּנָקֵיט לְהוּ בְּסֵדֶר זֶה &#x27; כּוֹסוֹ כִּיסוֹ כַּעֲסוֹ &#x27; נִרְאֶה לִי שֶׁתָּפַס הַמּוּעָט וְאֵינוֹ מָצוּי תְּחִלָּה, כִּי בְּדִיקָה בְּכוֹס אֵינוֹ מָצוּי בְּכָל יוֹם דְּאֵין אָדָם מַרְבֶּה בִּשְׁתִייַּת הַיַּיִן בְּכָל יוֹם וְיוֹם, אַךְ בְּדִיקָה שֶׁל הַכִּיס בְּכָל יוֹם, שֶׁבְּכָל יוֹם הָאָדָם עוֹסֵק בְּמַשָּׂא וּמַתָּן וְגַם זֶה אֵינוֹ אֶלָּא בַּיּוֹם וְלֹא בַּלַּיְלָה, וְגַם אֵינוֹ בְּשַׁבָּתוֹת וְיָמִים טוֹבִים, אֲבָל בְּכַעְסוֹ נִבְדָּק בְּכָל עֵת שֶׁזֶּה מָצוּי בַּיָּמִים וּבַלֵּילוֹת וְגַם בְּשַׁבָּתוֹת וְיָמִים טוֹבִים.</div>
+          <div class="glose-fr">En trois choses un homme se reconnaît : à son koso, à son kiso, à son kaaso. Qu&#x27;il soit descendu à un compte, il me semble qu&#x27;il vient nous apprendre ceci : bien que de chacun pris à part on puisse apprendre pour le mal ou pour le bien, l&#x27;homme ne sera tenu pour mauvais ou pour bon qu&#x27;une fois éprouvé dans les trois, car à trois il y a hazaka (présomption). Et qu&#x27;il les ait pris dans cet ordre, koso, kiso, kaaso, il me semble qu&#x27;il a saisi d&#x27;abord le moindre et le peu fréquent. L&#x27;épreuve de la coupe n&#x27;est pas fréquente chaque jour, car l&#x27;homme ne multiplie pas la boisson du vin chaque jour. L&#x27;épreuve de la bourse, elle, est de chaque jour : chaque jour l&#x27;homme s&#x27;occupe de négoce. Encore cela n&#x27;a lieu que le jour, et non la nuit, et non les Chabbatot ni les yamim tovim. Dans sa colère, il est éprouvé en tout temps : cela se trouve les jours et les nuits, et aussi les Chabbatot et les yamim tovim.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rabbi Ilai</b> donne trois épreuves. <b>Koso</b> : Rachi, l'esprit reste-t-il posé dans le vin. <b>Kiso</b> : le négoce se fait-il <b>be-emouna</b> (avec loyauté). <b>Kaaso</b> : n'est-il pas trop <b>kapdan</b> (irascible). Certains ajoutent le <b>sehok</b>.</p><p>Le Ben Yehoyada lit le nombre trois comme une <b>hazaka</b> : une seule épreuve ne fixe pas l'homme. L'ordre va du rare, le vin, au plus courant, la colère.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 274" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="274" fill="#fbfaf7"/>
+<text x="370.0" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">En trois choses l'homme se reconnaît</text>
+<text x="370.0" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#5c5348">Rabbi Ilai : koso, kiso, kaaso</text>
+<rect x="20" y="62" width="170" height="36" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="105.0" y="85.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Koso</text>
+<rect x="204" y="62" width="170" height="36" rx="4" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="289.0" y="85.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Kiso</text>
+<rect x="388" y="62" width="170" height="36" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="473.0" y="85.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Kaaso</text>
+<rect x="572" y="62" width="150" height="36" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="647.0" y="84.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Sehok</text>
+<rect x="20" y="110" width="170" height="88" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="105.0" y="142.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">La coupe.</text>
+<text x="105.0" y="158.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">L'esprit reste-t-il</text>
+<text x="105.0" y="174.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">posé dans le vin ?</text>
+<rect x="204" y="110" width="170" height="88" rx="4" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="289.0" y="134.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">La bourse.</text>
+<text x="289.0" y="150.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Le négoce se fait-il</text>
+<text x="289.0" y="166.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">be-emouna,</text>
+<text x="289.0" y="182.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">avec loyauté ?</text>
+<rect x="388" y="110" width="170" height="88" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="473.0" y="142.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">La colère.</text>
+<text x="473.0" y="158.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Est-il kapdan,</text>
+<text x="473.0" y="174.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">trop irascible ?</text>
+<rect x="572" y="110" width="150" height="88" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="647.0" y="142.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Le rire.</text>
+<text x="647.0" y="158.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Certains l'ajoutent</text>
+<text x="647.0" y="174.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">aux trois.</text>
+<rect x="20" y="214" width="702" height="40" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="371.0" y="238.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Ben Yehoyada : hazaka seulement après les trois. Ordre : du rare (le vin) au quotidien (la colère).</text>
+</svg></div><div class="svg-cap">Coupe, bourse, colère, et le rire en plus. Chaque case est l&#x27;épreuve que Rachi donne au mot.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב יְהוּדָה אָמַר רַב: יִשְׂרָאֵל וְגוֹי בַּפְּנִימִית, וְיִשְׂרָאֵל בַּחִיצוֹנָה. בָּא מַעֲשֶׂה לִפְנֵי רַבִּי, וְאָסַר, וְלִפְנֵי רַבִּי חַיָּיא, וְאָסַר.</div>
+            <div class="fr"><p>Rav Yehouda a dit au nom de Rav : un Israël et un goy dans l&#x27;intérieure, et un Israël dans l&#x27;extérieure. Un cas vint devant Rabbi, et il interdit ; et devant Rabbi Hiya, et il interdit.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>יִשְׂרָאֵל וְנָכְרִי בַּפְּנִימִית</b> שְׁתֵּי חֲצֵירוֹת זוֹ לִפְנִים מִזּוֹ וְהָיָה לוֹ לְבֵן פְּנִימִית דְּרִיסַת הָרֶגֶל עַל בֶּן חִיצוֹנָה:</div>
+          <div class="glose-fr">Deux cours, l&#x27;une à l&#x27;intérieur de l&#x27;autre, et l&#x27;habitant de l&#x27;intérieure avait un droit de passage sur l&#x27;habitant de l&#x27;extérieure.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאָסַר</b> בַּחִיצוֹנָה עַד שֶׁיַּשְׂכִּיר:</div>
+          <div class="glose-fr">Dans l&#x27;extérieure, jusqu&#x27;à ce qu&#x27;on loue.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Retour aux <b>erouvin</b>. Deux cours, l'une dans l'autre. Dans la <b>penimit</b> (intérieure) : un Israël et un goy. Dans la <b>hitsona</b> (extérieure) : un Israël. Rachi : l'intérieur a la <b>derissat ha-regel</b> (droit de passage) sur l'extérieur.</p><p>Le cas vient devant <b>Rabbi</b>, puis devant <b>Rabbi Hiya</b>. Les deux interdisent dans l'extérieure, jusqu'à la <b>sekhira</b> (location prise au goy).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">יְתוּב רַבָּה וְרַב יוֹסֵף בְּשִׁילְהֵי פִּירְקֵיהּ דְּרַב שֵׁשֶׁת, וְיָתֵיב רַב שֵׁשֶׁת וְקָאָמַר: כְּמַאן אַמְרַהּ רַב לִשְׁמַעְתֵּיהּ, כְּרַבִּי מֵאִיר. כַּרְכֵּישׁ רַבָּה רֵישֵׁיהּ.</div>
+            <div class="fr"><p>Rabba et Rav Yossef étaient assis à la fin du cours de Rav Chechet, et Rav Chechet était assis et disait : selon qui Rav a-t-il dit son enseignement ? Selon Rabbi Meir.</p><p>Rabba hocha la tête.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּשִׁילְהֵי פִּירְקֵיהּ</b> לְאַחַר שֶׁסִּייֵּם הַדְּרָשָׁה:</div>
+          <div class="glose-fr">Après qu&#x27;il eut achevé le discours.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כר&quot;מ</b> דְּלָא בָּעֵי שְׁנֵי יִשְׂרְאֵלִים אוֹסְרִין זֶה עַל זֶה:</div>
+          <div class="glose-fr">Qui n&#x27;exige pas deux Israélites qui s&#x27;interdisent l&#x27;un à l&#x27;autre.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כַּרְכֵּישׁ רַבָּה רֵישֵׁיהּ</b> הוֹדָה לִדְבָרָיו:</div>
+          <div class="glose-fr">Il donna son accord à ses paroles.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rav Chechet</b> rattache l'enseignement de Rav à <b>Rabbi Meir</b>. Selon Rabbi Meir, le goy interdit même sans deux Israélites qui s'interdisent l'un à l'autre. Rachi le dit ainsi.</p><p><b>Rabba</b> hoche la tête : Rachi, il adhère. <b>Rav Yossef</b> était assis là, et il objectera.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב יוֹסֵף: תְּרֵי גַּבְרֵי רַבְרְבֵי כְּרַבָּנַן לִיטְעוֹ בְּהַאי מִילְּתָא? אִי כְּרַבִּי מֵאִיר, לָמָּה לִי יִשְׂרָאֵל בַּחִיצוֹנָה?</div>
+            <div class="fr"><p>Rav Yossef dit : deux hommes aussi grands que ces maîtres se tromperaient-ils en cette affaire ? Si c&#x27;est selon Rabbi Meir, pourquoi me faut-il un Israël dans l&#x27;extérieure ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לָמָּה לִי יִשְׂרָאֵל בַּחִיצוֹנָה</b> דְּבָעֵינַן שְׁנֵי יִשְׂרְאֵלִים:</div>
+          <div class="glose-fr">Car nous exigeons deux Israélites.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rav Yossef</b> refuse l'accord de Rabba et de Rav Chechet. Selon <b>Rabbi Meir</b>, un seul Israël avec un goy est déjà interdit. Mentionner l'Israël de l'extérieure ne se comprend que si l'on exige <b>deux Israélites</b>, ce qui est la mesure de Rabbi Eliezer ben Yaakov. Rachi pointe cette exigence.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְכִי תֵּימָא, מַעֲשֶׂה שֶׁהָיָה כָּךְ הָיָה, וְהָא בְּעוֹ מִינֵּיהּ מֵרַב: פְּנִימִי בִּמְקוֹמוֹ מַהוּ? וְאָמַר לָהֶן: מֻותָּר.</div>
+            <div class="fr"><p>Et si tu dis : le cas qui eut lieu eut lieu ainsi. Or ils ont demandé à Rav : l&#x27;intérieur dans son lieu, qu&#x27;en est-il ?</p><p>Et il leur a dit : c&#x27;est permis.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>פְּנִימִי בִּמְקוֹמוֹ</b> בֶּחָצֵר הַפְּנִימִית:</div>
+          <div class="glose-fr">Dans la cour intérieure.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַהוּ</b> לְהוֹצִיא מִבֵּיתוֹ לֶחָצֵר:</div>
+          <div class="glose-fr">De sortir de sa maison vers la cour.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אָמַר לָהֶם מֻותָּר</b> אַלְמָא לֹא אָסַר אֶלָּא בַּחִיצוֹנָה שֶׁרְשׁוּת שְׁנֵי יִשְׂרְאֵלִים שׁוֹלֶטֶת בָּהּ:</div>
+          <div class="glose-fr">On en déduit qu&#x27;il n&#x27;a interdit que dans l&#x27;extérieure, où le droit de deux Israélites s&#x27;exerce.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>On pourrait dire que l'Israël extérieur n'est cité que parce que le <b>maassé</b> (cas) s'est présenté ainsi.</p><p>La Guemara écarte. On a demandé à Rav : l'intérieur <b>dans son lieu</b>, peut-il porter de sa maison à sa cour ? Rav dit : <b>permis</b>. Rachi : il n'interdit donc que l'extérieure, là où le droit de deux Israélites s'exerce. Rav ne tient donc pas comme Rabbi Meir, pour qui le goy interdit même un seul.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאֶלָּא מַאי, כְּרַבִּי אֱלִיעֶזֶר בֶּן יַעֲקֹב? הָאָמַר: עַד שֶׁיְּהוּ שְׁנֵי יִשְׂרְאֵלִים אוֹסְרִין זֶה עַל זֶה!</div>
+            <div class="fr"><p>Alors quoi : selon Rabbi Eliezer ben Yaakov ? Mais il a dit : jusqu&#x27;à ce qu&#x27;il y ait deux Israélites qui s&#x27;interdisent l&#x27;un à l&#x27;autre !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אוֹסְרִים זֶה עַל זֶה</b> וְהָנֵי לָאו אוֹסְרִים זֶה עַל זֶה נִינְהוּ דְּהָא אָמְרִי רַבָּנַן בְּשִׁילְהֵי פִּירְקִין רֶגֶל הַמֻּותֶּרֶת בִּמְקוֹמָהּ אֵינָהּ אוֹסֶרֶת שֶׁלֹּא בִּמְקוֹמָהּ מִשּׁוּם דְּרִיסַת הָרֶגֶל וְאַף עַל פִּי שֶׁלֹּא עֵירְבָה עִמָּהּ:</div>
+          <div class="glose-fr">Et ceux-ci ne s&#x27;interdisent pas l&#x27;un à l&#x27;autre. Car les Sages ont dit à la fin de notre chapitre : un pied permis dans son lieu n&#x27;interdit pas hors de son lieu à cause du droit de passage, même s&#x27;il n&#x27;a pas fait d&#x27;erouv avec elle.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rabbi Eliezer ben Yaakov</b> : le goy n'interdit que là où deux Israélites s'interdisent déjà l'un à l'autre.</p><p>Ici, ils ne s'interdisent pas. Rachi renvoie à la fin du chapitre, l'avis des Sages contre Rabbi Akiva : une <b>regel</b> (un pied) permise dans son lieu n'interdit pas ailleurs par la <b>derissat ha-regel</b>, même sans erouv. L'intérieur, permis chez lui, ne ferme pas l'extérieure.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא כְּרַבִּי עֲקִיבָא, דְּאָמַר: רֶגֶל הַמֻּותֶּרֶת בִּמְקוֹמָהּ — אוֹסֶרֶת שֶׁלֹּא בִּמְקוֹמָהּ.</div>
+            <div class="fr"><p>Alors, selon Rabbi Akiva, qui a dit : un pied permis dans son lieu interdit hors de son lieu.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאֶלָּא</b> רַב כר&quot;ע ס&quot;ל וְהָווּ לְהוּ שְׁנֵי יִשְׂרְאֵלִים אוֹסְרִין זֶה עַל זֶה הִלְכָּךְ אָסַר נָכְרִי עֲלַיְיהוּ לָמָּה לִי מִשּׁוּם נָכְרִי יִשְׂרָאֵל פְּנִימִי לְחוּדֵיהּ נָמֵי אָסַר עַל חִיצוֹן:</div>
+          <div class="glose-fr">Rav tient comme Rabbi Akiva, et ils sont deux Israélites qui s&#x27;interdisent l&#x27;un à l&#x27;autre. Dès lors le nokhri leur interdit. Pourquoi me le faut-il à cause du nokhri ? L&#x27;Israël intérieur à lui seul interdit aussi l&#x27;extérieur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rabbi Akiva</b> : la regel permise chez elle interdit hors de son lieu. L'intérieur, permis dans sa cour, ferme l'extérieure par son passage. Ils deviennent deux Israélites qui s'interdisent, et le nokhri peut alors interdire.</p><p>Rachi pousse tout de suite la difficulté du segment suivant : à ce compte, l'intérieur seul suffit. Le goy n'a plus de rôle.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לָמָּה לִי גּוֹי? אֲפִילּוּ יִשְׂרָאֵל נָמֵי!</div>
+            <div class="fr"><p>Pourquoi me faut-il un goy ? Même un Israël aussi !</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Selon <b>Rabbi Akiva</b>, l'Israël de l'intérieure interdit déjà l'extérieure par son passage. Le récit de Rav n'a pas à faire entrer un <b>goy</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב הוּנָא בְּרֵיהּ דְּרַב יְהוֹשֻׁעַ: לְעוֹלָם כְּרַבִּי אֱלִיעֶזֶר בֶּן יַעֲקֹב, וּכְרַבִּי עֲקִיבָא, וְהָכָא בְּמַאי עָסְקִינַן? כְּגוֹן שֶׁעֵירְבוּ, וְטַעְמָא דְּאִיכָּא גּוֹי דַּאֲסִיר, אֲבָל לֵיכָּא גּוֹי לָא אֲסִיר.</div>
+            <div class="fr"><p>Rav Houna fils de Rav Yehochoua a dit : en réalité, selon Rabbi Eliezer ben Yaakov et selon Rabbi Akiva. Et ici, de quoi s&#x27;agit-il ?</p><p>D&#x27;un cas où ils ont fait un erouv. Et la raison est qu&#x27;il y a un goy, qui interdit ; mais s&#x27;il n&#x27;y a pas de goy, il n&#x27;interdit pas.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְעוֹלָם כר&quot;א</b> מִשּׁוּם הָכִי פְּנִימִי בִּמְקוֹמוֹ מֻותָּר וְחִיצוֹן אָסוּר מִשּׁוּם דְּרִיסַת הָרֶגֶל דִּפְנִימִי כר&quot;ע וְכֵיוָן דְּאָסַר עָלֶיהָ הָווּ לְהוּ בַּחִיצוֹנָה שְׁנֵי יִשְׂרְאֵלִים אוֹסְרִין זֶה עַל זֶה וּמְהַנֵּי נָכְרִי לְבַטֵּל אֶת עֵירוּבָן אֲפִילּוּ עֵירְבוּ וְאִי לֵיכָּא נָכְרִי כִּי עֵירְבוּ שָׁרִי:</div>
+          <div class="glose-fr">C&#x27;est pourquoi l&#x27;intérieur dans son lieu est permis, et l&#x27;extérieur est interdit à cause du droit de passage de l&#x27;intérieur, selon Rabbi Akiva. Et puisqu&#x27;il lui interdit, ils sont dans l&#x27;extérieure deux Israélites qui s&#x27;interdisent l&#x27;un à l&#x27;autre. Et le nokhri sert à annuler leur erouv, même s&#x27;ils ont fait un erouv. Et s&#x27;il n&#x27;y a pas de nokhri, lorsqu&#x27;ils ont fait un erouv, c&#x27;est permis.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rav Houna fils de Rav Yehochoua</b> tient les deux. Pour le goy : <b>Rabbi Eliezer ben Yaakov</b>, il n'interdit que deux Israélites qui s'interdisent. Pour le passage : <b>Rabbi Akiva</b>.</p><p>Le cas est qu'ils ont fait un <b>erouv</b>. L'intérieur reste permis chez lui. Son passage fermerait l'extérieure. Ils sont donc deux qui s'interdisent, et le goy <b>annule l'erouv</b> même déjà fait. Sans goy, l'erouv laisse porter. Rachi déroule cette chaîne.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 266" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="266" fill="#fbfaf7"/>
+<text x="370.0" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Pourquoi le goy est nécessaire</text>
+<text x="370.0" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#5c5348">Rav Houna : erouv, puis annulation</text>
+<rect x="250" y="58" width="240" height="36" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="370.0" y="80.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2b2b2b">Les deux Israël ont fait l'erouv</text>
+<line x1="370" y1="94" x2="370" y2="121" stroke="#2b2b2b" stroke-width="1.4"/><polygon points="365,120 375,120 370,128" fill="#2b2b2b"/>
+<rect x="40" y="128" width="210" height="64" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="145.0" y="148.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Rabbi Akiva</text>
+<text x="145.0" y="164.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Le passage interdit</text>
+<text x="145.0" y="180.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">l'extérieure.</text>
+<rect x="265" y="128" width="210" height="64" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="370.0" y="148.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Deux Israël</text>
+<text x="370.0" y="164.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">s'interdisent</text>
+<text x="370.0" y="180.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">dans l'extérieure.</text>
+<rect x="490" y="128" width="210" height="64" rx="4" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="595.0" y="148.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2b2b2b">Le goy annule</text>
+<text x="595.0" y="164.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2b2b2b">l'erouv, même</text>
+<text x="595.0" y="180.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2b2b2b">déjà fait.</text>
+<rect x="40" y="210" width="660" height="36" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="370.0" y="232.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Sans goy : l'erouv tient, on porte. L'intérieur reste permis dans sa cour.</text>
+</svg></div><div class="svg-cap">L&#x27;erouv réglerait le passage. Le goy l&#x27;annule. Sans goy, on porte dans l&#x27;extérieure.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בְּעָא מִינֵּיהּ רַבִּי אֱלִיעֶזֶר מֵרַב: יִשְׂרָאֵל וְגוֹי בַּחִיצוֹנָה וְיִשְׂרָאֵל בַּפְּנִימִית מַהוּ? הָתָם טַעְמָא מִשּׁוּם דִּשְׁכִיחַ דְּדָיַיר, דְּמִירַתַּת גּוֹי, וְסָבַר: הַשְׁתָּא אָתֵי יִשְׂרָאֵל וְאָמַר לִי: יִשְׂרָאֵל דַּהֲוָה גַּבָּךְ הֵיכָא?</div>
+            <div class="fr"><p>Rabbi Eliezer demanda à Rav : un Israël et un goy dans l&#x27;extérieure, et un Israël dans l&#x27;intérieure, qu&#x27;en est-il ? Là-bas, la raison est qu&#x27;il est fréquent qu&#x27;il habite, car le goy craint, et il pense : maintenant l&#x27;Israël viendra et me dira : l&#x27;Israël qui était chez toi, où est-il ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּמִירַתַּת נָכְרִי</b> לַהֲרֹוג אֶת יִשְׂרָאֵל הָדַר עִמּוֹ בַּפְּנִימִית דְּסָבַר אָתֵי יִשְׂרָאֵל דְּחִיצוֹנָה וְתָבַע לֵיהּ מִינֵּיהּ וְלֹא מָצִינוּ לְמֵימַר לֵיהּ נְפַק אָזֵיל לֵיהּ לְבָרַאי דְּאָמַר לִי אִי הֲוָה נָפֵיק אֲנָא חֲזָא לֵיהּ:</div>
+          <div class="glose-fr">De tuer l&#x27;Israël qui habite avec lui dans l&#x27;intérieure. Car il pense : l&#x27;Israël de l&#x27;extérieure viendra et le lui réclamera, et il ne pourra pas lui dire : il est sorti, il est parti dehors. Car celui-là lui dira : s&#x27;il était sorti, je l&#x27;aurais vu.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָתָם טַעְמָא מַאי מִשּׁוּם דִּשְׁכִיחַ דְּדָיַיר</b> וא&quot;ת כֵּיוָן דִּשְׁכִיחַ אִם כֵּן פְּנִימִי בִּמְקוֹמוֹ אַמַּאי מֻותָּר דע&quot;כ לָא שָׁרֵי ראב&quot;י יָחִיד בִּמְקוֹם נָכְרִי אֶלָּא מִשּׁוּם דְּלָא שְׁכִיחַ דְּדָיַיר וְי&quot;ל כֵּיוָן דְּרֹוב פְּעָמִים חַד לָא שְׁכִיחַ לָא פְּלוּג רַבָּנַן וְשָׁרוּ בְּכוּלְּהוּ וא&quot;ת א&quot;כ מַאי קָמִיבַּעְיָא לֵיהּ אֲבָל הָכָא אָמֵינָא כו&#x27; נְהִי דְּלָא שְׁכִיחַ מ&quot;מ לִיתְּסַר דְּלָא פְּלוּג רַבָּנָן בְּכָל תְּרֵי בִּמְקוֹם נָכְרִי וי&quot;ל דִּלְחֻומְרָא לֹא אָמַר דְּלָא פְּלוּג:</div>
+          <div class="glose-fr">Et si tu dis : puisqu&#x27;il est fréquent, alors l&#x27;intérieur dans son lieu, pourquoi est-il permis ? Car Rabbi Eliezer ben Yaakov ne permet un seul dans le lieu d&#x27;un nokhri que parce qu&#x27;il n&#x27;est pas fréquent qu&#x27;il habite. On peut répondre : puisque la plupart du temps un seul n&#x27;est pas fréquent, les Sages n&#x27;ont pas distingué, et ils ont permis dans tous les cas. Et si tu dis : s&#x27;il en est ainsi, que demande-t-il par : mais ici, je lui dirai, etc. ? Admettons que ce ne soit pas fréquent : que ce soit quand même interdit, car les Sages n&#x27;ont pas distingué pour tout cas de deux personnes dans le lieu d&#x27;un nokhri. On peut répondre : pour le houmer (la sévérité), on n&#x27;a pas dit qu&#x27;on ne distingue pas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Cas inverse. <b>Israël et goy dans l'extérieure</b>, un Israël dans l'intérieure. Peut-on porter dans l'extérieure sans sekhira ?</p><p>Là-bas, goy et Israël dans l'intérieure, la cohabitation est <b>fréquente</b> : le goy <b>craint</b>. Rachi précise : il craint de le tuer, car l'Israël du dehors aurait vu la sortie et réclamerait l'absent. Le décret des Sages s'applique donc.</p><p>Tossefot : si le fréquent explique l'interdit, pourquoi l'intérieur seul avec un nokhri reste permis ? Réponse : la plupart du temps un seul n'habite pas avec un nokhri, et les Sages n'ont pas distingué, dans le sens du <b>koula</b> (l'allègement). Ils n'étendent pas ce refus de distinguer vers le houmer.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲבָל הָכָא, אָמֵינָא לֵיהּ: נְפַק אֲזַל לֵיהּ.</div>
+            <div class="fr"><p>Mais ici, je lui dirai : il est sorti, il est parti.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Ici le goy est dans l'<b>extérieure</b>. Il peut répondre à l'Israël de l'intérieure : l'autre <b>est sorti, il est parti</b>. Il ne craint donc pas de la même façon. Une telle cohabitation est peu fréquente, et le décret peut ne pas s'y appliquer.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אוֹ דִּילְמָא, הָכָא נָמֵי מִירַתַּת, דְּסָבַר: הַשְׁתָּא אָתֵי יִשְׂרָאֵל וְחָזֵי לִי.</div>
+            <div class="fr"><p>Ou peut-être, ici aussi il craint, car il pense : maintenant l&#x27;Israël viendra et me verra.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Autre côté. Même dans l'extérieure, le goy craint : l'Israël de l'intérieure peut <b>venir et le voir</b> au moment où il tuerait son voisin. La cohabitation redevient fréquente, et le décret s'appliquerait.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 216" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="216" fill="#fbfaf7"/>
+<text x="370.0" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Le goy craint-il d'habiter avec l'Israël ?</text>
+<text x="370.0" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#5c5348">De là dépend si la cohabitation est fréquente</text>
+<rect x="20" y="58" width="340" height="28" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="190.0" y="76.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Goy dans l'intérieure</text>
+<rect x="380" y="58" width="340" height="28" rx="4" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="550.0" y="76.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Goy dans l'extérieure</text>
+<rect x="20" y="96" width="340" height="100" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="190.0" y="126.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Il craint de tuer.</text>
+<text x="190.0" y="142.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">L'Israël du dehors dira :</text>
+<text x="190.0" y="158.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">celui qui était chez toi,</text>
+<text x="190.0" y="174.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">où est-il ? Je l'aurais vu sortir.</text>
+<rect x="380" y="96" width="340" height="100" rx="4" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="550.0" y="126.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Côté 1 : il dira : il est parti.</text>
+<text x="550.0" y="142.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Côté 2 : l'intérieur peut</text>
+<text x="550.0" y="158.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">venir et le voir.</text>
+<text x="550.0" y="174.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Rav : ici aussi, interdit.</text>
+</svg></div><div class="svg-cap">Dans l&#x27;intérieure, le goy ne peut pas nier la sortie. Dans l&#x27;extérieure, il peut dire qu&#x27;il est parti, sauf s&#x27;il craint d&#x27;être vu.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ: ״תֵּן לְחָכָם וְיֶחְכַּם עוֹד״.</div>
+            <div class="fr"><p>Il lui dit : &quot;Donne au sage, et il sera plus sage encore.&quot;</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תֵּן לְחָכָם וְיֶחְכַּם עוֹד</b> כִּי הֵיכִי דְּהָתָם אָסוּר הָכָא נָמֵי אָסוּר:</div>
+          <div class="glose-fr">De même que là-bas c&#x27;est interdit, ici aussi c&#x27;est interdit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav répond à Rabbi Eliezer par le verset (Michlei 9, 9) : <b>ten le-hakham ve-yehkam od</b>, donne au sage et il sera plus sage encore.</p><p>Rachi en tire la halakha : là-bas c'est interdit, ici aussi c'est interdit. On prend le côté sévère. Il faut la sekhira dans l'extérieure.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רֵישׁ לָקִישׁ וְתַלְמִידֵי דְּרַבִּי חֲנִינָא אִיקְּלַעוּ לְהָהוּא פֻּונְדָּק, וְלָא הֲוָה שׂוֹכֵר, וַהֲוָה מַשְׂכִּיר.</div>
+            <div class="fr"><p>Rech Lakich et les disciples de Rabbi Hanina arrivèrent à une auberge. Il n&#x27;y avait pas de shocher (locataire), et il y avait un maskhir (bailleur).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִיקְּלַעוּ לְהַהוּא פֻּונְדָּק</b> דְּהָווּ דָּיְירִי בֵּיהּ בְּהַהוּא חָצֵר תְּרֵי יִשְׂרְאֵלִים וְחַד נָכְרִי שֶׁשָּׂכַר אֶת דִּירָתוֹ מֵחֲבֵירוֹ נָכְרִי וְאוֹתוֹ שַׁבָּת לֹא הָיָה שָׁם אוֹתוֹ נָכְרִי הַשּׂוֹכֵר אֶלָּא נָכְרִי הַמַּשְׂכִּיר וְהָיוּ יְרֵאִים שֶׁמָּא יָבֹא נָכְרִי בְּשַׁבָּת:</div>
+          <div class="glose-fr">Y habitaient dans cette cour deux Israélites et un nokhri, qui avait loué son logement de son compagnon nokhri. Ce Chabbat-là, ce nokhri locataire n&#x27;était pas là, seul le nokhri bailleur était là. Ils craignaient que le nokhri vienne le Chabbat.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>פֻּונְדָּק</b> יֵשׁ בּוֹ חֲדָרִים פִּתּוּחִין לֶחָצֵר וְהָאַכְסְנָאִים נִכְנָסִים בָּהֶן וְאוֹסְרִין זֶה עַל זֶה בְּשַׁבָּת:</div>
+          <div class="glose-fr">Il y a des chambres ouvertes sur la cour, les hôtes y entrent et s&#x27;interdisent les uns aux autres le Chabbat.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רֵישׁ לָקִישׁ וְתַלְמִידֵי ר&#x27; חֲנִינָא</b> כָּאן מוֹכִיחַ כְּדִבְרֵי ר&quot;ת דר&quot;ל גַּבְרָא רַבָּה הֲוָה קֹודֶם שֶׁבָּא לִפְנֵי רַבִּי יוֹחָנָן דְּהַאי עֻובְדָּא הֲוָה סָמוּךְ לִפְטִירָתוֹ שֶׁל רַבִּי כֵּיוָן דְּשַׁיְילֵיהּ לְרַבִּי אֶפֶס דָּר&#x27; אֶפֶס לֹא חָיָה אַחַר רַבִּי אֶלָּא שְׁתֵּי שָׁנִים וּמֶחֱצָה כִּדְאִיתָא בִּכְתֻובּוֹת בְּסוֹף הַנּוֹשֵׂא (כְּתֻובּוֹת דַּף קג:) וְכֵן מַשְׁמַע בְּפֶ&#x27; הבע&quot;י (יְבָמוֹת נז.) גַּבֵּי שְׁמַעְתָּא דִּקְהַל גֵּרִים אִקְרֵי קָהָל:</div>
+          <div class="glose-fr">Ici l&#x27;on prouve, comme le dit Rabbeinou Tam, que Rech Lakich était un grand homme avant de venir devant Rabbi Yohanan. Cet incident eut lieu proche de la mort de Rabbi, puisqu&#x27;ils interrogèrent Rabbi Afes, et Rabbi Afes ne vécut après Rabbi que deux ans et demi, comme il est dit dans Ketoubot à la fin du chapitre Ha-nossé (Ketoubot 103b). Il en ressort de même dans le chapitre Ha-ba al yevimto (Yevamot 57a), au sujet de l&#x27;enseignement : une assemblée de guerim (convertis) est appelée assemblée.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִיקְּלַעוּ לְהַהוּא פֻּונְדָּק</b> פֵּי&#x27; בַּקּוּנְטְרֵס וְהָיוּ יְרֵאִין שֶׁמָּא יָבֹא נָכְרִי בְּשַׁבָּת רוֹצֶה לוֹמַר דְּאִם לֹא הָיָה בָּא לֹא הָיָה אוֹסֵר וְהַייְנוּ כְּרַבִּי יְהוּדָה דִּתְנַן בְּפֶרֶק כֵּיצַד מִשְׁתַּתְּפִין (לְקַמָּן עֵירוּבִין דַּף פּוֹ.) הַמַּנִּיחַ בֵּיתוֹ וְהָלַךְ לִשְׁבּוֹת בְּעִיר אַחֶרֶת אֶחָד יִשְׂרָאֵל וְאֶחָד נָכְרִי אוֹסֵר רַבִּי יְהוּדָה אוֹמֵר אֵינוֹ אוֹסֵר כּוּ&#x27; וְאע&quot;ג דְּפָסְקִינַן לְעֵיל בְּפֶרֶק מִי שֶׁהוֹצִיאוּהוּ (עֵירוּבִין דַּף מז.) דַּהֲלָכָה כר&quot;ש דְּאָמַר אֲפִילּוּ הִנִּיחַ אֶת בֵּיתוֹ וְהָלַךְ לִשְׁבּוֹת אֵצֶל בִּתּוֹ בְּאוֹתָהּ הָעִיר אֵינוֹ אוֹסֵר לֹא בָּא ר&quot;ש לְהַחְמִיר בְּנָכְרִי יוֹתֵר מֵרַבִּי יְהוּדָה אֶלָּא לְגַמְרֵי בָּא לְהָקֵל וּלְהַתִּיר בְּיִשְׂרָאֵל טְפֵי מֵרַבִּי יְהוּדָה דַּאֲפִילּוּ בְּאוֹתָהּ הָעִיר שָׁרֵי שֶׁכְּבָר הִסִּיחַ מִדַּעְתּוֹ וְעוֹד דְּקַיְימָא לָן כְּדִבְרֵי הַמֵּיקֵל בְּעֵירוּב ואע&quot;ג דְּרַבִּי יוֹחָנָן לֵית לֵיהּ דִּלְגַמְרֵי קָאָמַר הָנְהוּ כְּלָלֵי דְּפֶרֶק מִי שֶׁהוֹצִיאוּהוּ (עֵירוּבִין דַּף מו:) דְּר&#x27; יְהוּדָה ור&quot;ש הֲלָכָה כְּרַבִּי יְהוּדָה אַפֵּי&#x27; בְּעֵירוּב מִדְּבָעֵי לְמֵידַק דְּרַב לֵית לֵיהּ הָנֵי כְּלָלֵי מִדְּאַשְׁכַּחְנָא דִּפְסִיק כר&quot;ש בְּהַהִיא דְּעֵירוּב מ&quot;מ קַייְמָא לַן כְּרַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי לְגַבֵּי ר&#x27; יוֹחָנָן דְּקָאָמַר הֲלָכָה כְּדִבְרֵי הַמֵּיקֵל בְּעֵירוּב כְּמוֹ שֶׁרָגִיל ר&quot;ת לְדַקְדֵּק מִמְּגִילָּה פֶּרֶק בָּתְרָא (דַּף כז.) גַּבֵּי וְאֶת הַבַּיִת הַגָּדוֹל שָׂרָף בָּאֵשׁ:</div>
+          <div class="glose-fr">Le Kountres explique : ils craignaient que le nokhri vienne le Chabbat. Cela veut dire que, s&#x27;il ne venait pas, il n&#x27;interdirait pas. C&#x27;est selon Rabbi Yehouda. Car nous avons appris dans le chapitre Keitsad mishtatfin (plus loin, Eruvin 86a) : celui qui laisse sa maison et va passer le Chabbat dans une autre ville, qu&#x27;il soit Israël ou nokhri, interdit. Rabbi Yehouda dit : il n&#x27;interdit pas, etc. Et bien que nous tranchions plus haut, dans le chapitre Mi che-hotsiouhou (Eruvin 47a), que la halakha est selon Rabbi Chimon, qui dit : même s&#x27;il a laissé sa maison et est allé passer le Chabbat chez sa fille dans la même ville, il n&#x27;interdit pas. Rabbi Chimon n&#x27;est pas venu être plus sévère pour le nokhri que Rabbi Yehouda. Il est venu entièrement alléger, et permettre pour l&#x27;Israël davantage que Rabbi Yehouda : même dans la même ville c&#x27;est permis, car il a déjà détourné son attention. De plus, nous tenons : la halakha suit les paroles de celui qui allège en matière d&#x27;erouv. Et bien que Rabbi Yohanan ne tienne pas qu&#x27;il ait parlé de façon entière. Ce sont les règles du chapitre Mi che-hotsiouhou (Eruvin 46b) : Rabbi Yehouda et Rabbi Chimon, la halakha est selon Rabbi Yehouda, même pour l&#x27;erouv, puisqu&#x27;il veut déduire que Rav ne tient pas ces règles, du fait que nous trouvons qu&#x27;il tranche selon Rabbi Chimon dans cette affaire d&#x27;erouv. Néanmoins nous tenons selon Rabbi Yehochoua ben Levi face à Rabbi Yohanan, qui dit : la halakha suit les paroles de celui qui allège en matière d&#x27;erouv, comme Rabbeinou Tam a coutume de le déduire de Meguila, dernier chapitre (27a), au sujet de : et il brûla par le feu la grande maison.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּלָא הֲוָה שׂוֹכֵר</b> לֹא הָיָה שָׁם אַפֵּי&#x27; אֶחָד מִבְּנֵי בֵּיתוֹ דְּהָא אָמְרִינַן לְקַמָּן דְּשׂוֹכֵר אַפֵּי&#x27; מִשְּׂכִירוֹ וּלְקִיטוֹ וְאִשְׁתּוֹ נָמֵי אִם הָיְתָה שָׁם הָיְתָה יְכוֹלָה לְהַשְׂכִּיר כִּדְמַשְׁמַע לְקַמָּן גַּבֵּי הַהוּא טוּרְזִינָא:</div>
+          <div class="glose-fr">Il n&#x27;y avait même pas là un seul des gens de sa maison. Car nous disons plus loin qu&#x27;on loue même de son locataire et de son valet, et sa femme aussi, si elle avait été là, aurait pu louer, comme il ressort plus loin au sujet de ce turzina (gardien).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle scène. <b>Rech Lakich</b> et les disciples de <b>Rabbi Hanina</b> arrivent à un <b>pundak</b> (auberge). Rachi : deux Israélites et un nokhri locataire habitent la cour. Le locataire est absent. Le <b>maskhir</b> (bailleur) nokhri est là. Ils craignent que le locataire revienne le Chabbat.</p><p>Tossefot lit l'absence comme l'avis de <b>Rabbi Yehouda</b> : celui qui a quitté sa maison pour une autre ville n'interdit pas. Rabbi Chimon allège encore pour l'Israël, même dans la même ville. Il n'aggrave pas le nokhri au-delà de Rabbi Yehouda. La halakha de l'erouv suit le <b>meikil</b> (celui qui allège), selon Rabbi Yehochoua ben Levi.</p><p>Le <b>shocher</b> absent, c'est aussi : personne de sa maison. Femme, valet ou locataire auraient pu donner la sekhira.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמְרוּ: מַהוּ לְמֵיגַר מִינֵּיהּ? כָּל הֵיכָא דְּלָא מָצֵי מְסַלֵּיק לֵיהּ — לָא תִּיבְּעֵי לָךְ דְּלָא אָגְרִינָא. כִּי תִּיבָּעֵי — הֵיכָא דְּמָצֵי מְסַלֵּיק לֵיהּ.</div>
+            <div class="fr"><p>Ils dirent : qu&#x27;en est-il de louer de lui ? Partout où il ne peut pas le renvoyer, ne pose pas la question : nous ne louons pas.</p><p>Quand tu poses la question, c&#x27;est là où il peut le renvoyer.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הֵיכָא דְּלָא מָצֵי מְסַלֵּיק לֵיהּ</b> מַשְׂכִּיר לַשּׂוֹכֵר עַד זְמַנּוֹ:</div>
+          <div class="glose-fr">Le bailleur, vis-à-vis du locataire, jusqu&#x27;à son terme.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לָא תִּיבְּעֵי לָךְ</b> דְּוַדַּאי [לָאו] בִּרְשׁוּתֵיהּ הוּא וְלָא מָצֵינַן לְמֵיגַר מִינֵּיהּ:</div>
+          <div class="glose-fr">Car à coup sûr le domaine n&#x27;est pas à lui, et nous ne pouvons pas louer de lui.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Peut-on prendre la <b>sekhira</b> du <b>maskhir</b>, alors que le logement est déjà loué au shocher absent ?</p><p>S'il ne peut pas <b>le renvoyer</b> avant le terme, la question ne se pose pas : le domaine n'est pas à lui, on ne loue pas de lui. Rachi le dit ainsi. La question ne s'ouvre que s'il <b>peut le renvoyer</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg16">
+          <div class="seg-num">17</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאי? כֵּיוָן דְּמָצֵי מְסַלֵּיק — אַגֻּרְיַנָא. אוֹ דִּילְמָא, הַשְׁתָּא מִיהָא הָא לָא סַלְּקֵיהּ?</div>
+            <div class="fr"><p>Quoi donc ? Puisqu&#x27;il peut le renvoyer, nous louons.</p><p>Ou bien : maintenant, en tout cas, il ne l&#x27;a pas renvoyé ?</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deux côtés, une fois qu'il <b>peut</b> renvoyer. Puisqu'il le peut, le logement reste sous sa main, et l'on prend la sekhira de lui. Ou bien : tant qu'il ne l'a pas renvoyé, le logement est encore au locataire.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg17">
+          <div class="seg-num">18</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר לָהֶן רֵישׁ לָקִישׁ: נִשְׂכּוֹר, וְלִכְשֶׁנַּגִּיעַ אֵצֶל רַבּוֹתֵינוּ שֶׁבַּדָּרוֹם, נִשְׁאַל לָהֶן. אֲתוֹ שַׁיַּילּוּ לְרַבִּי אַפָּס, אָמַר לָהֶן: יָפֶה עֲשִׂיתֶם שֶׁשְּׂכַרְתֶּם.</div>
+            <div class="fr"><p>Rech Lakich leur dit : louons, et quand nous arriverons chez nos maîtres du Sud, nous leur demanderons. Ils vinrent interroger Rabbi Afes.</p><p>Il leur dit : vous avez bien fait de louer.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>נִשְׂכּוֹר</b> דִּסְפֵק דִּבְרֵיהֶם לְהָקֵל:</div>
+          <div class="glose-fr">Car un doute sur leurs paroles, on allège.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">דַּף סה ע&quot;ב רֵישׁ לָקִישׁ וְתַלְמִידֵי רַבִּי חֲנִינָא אִיקְּלַעוּ לְהָהוּא פֻּונְדָּק דְּלָא הָוֵי שׂוֹכֵר וַהֲוָה מַשְׂכִּיר וְאִיבְּעִי&#x27; לְהוּ מַהוּ לְמֵיגַר מִינֵּיהּ. כָּל הֵיכָא דְּלָא מָצֵי מְסַלֵּק לֵיהּ לָא תִּיבְּעֵי לָךְ דְּהָא לָא מָצֵי מְסַלֵּק לֵיהּ וּכְגוֹן דְּלֵית לֵיהּ לַמַּשְׂכִּיר שׁוּם תְּפִיסַת יָד לְהִשְׁתַּמֵּשׁ בַּבַּיִת. דְּאִי אִית לֵיהּ שׁוּם תְּפִיסַת יָד לְהִשְׁתַּמֵּשׁ בַּבַּיִת לָא גָּרַע מִשְּׂכִירוֹ וּלְקִיטוֹ. כִּי תִּיבְּעֵי לָךְ הֵיכָא דְּמָצֵי מְסַלֵּק לֵיהּ. כֵּיוָן דְּמָצֵי מְסַלֵּק לֵיהּ אָגְרִינַן מִינֵּיהּ. אוֹ דִּילְמָא הַשְׁתָּא מִיהָא לָא סַלְּקֵיהּ. אָמַר רֵישׁ לָקִישׁ נִשְׂכּוֹר וּכְשֶׁנֵּלֵךְ אֵצֶל רַבּוֹתֵינוּ שֶׁבַּדָּרוֹם נִשְׁאַל לָהֶם. אֲתוּ וְשַׁיִּילוּ לְרַבִּי אֶפֶס אָמַר לָהֶם יָפֶה עֲשִׂיתֶם שֶׁשְּׂכַרְתֶּם:</div>
+          <div class="glose-fr">Daf 65b. Rech Lakich et les disciples de Rabbi Hanina arrivèrent à une auberge où il n&#x27;y avait pas de locataire et où il y avait un bailleur, et ils demandèrent : qu&#x27;en est-il de louer de lui. Partout où il ne peut pas le renvoyer, ne pose pas la question, car il ne peut pas le renvoyer, et c&#x27;est un cas où le bailleur n&#x27;a aucune tefissat yad (prise, droit d&#x27;usage) pour se servir de la maison. Car s&#x27;il a une quelconque tefissat yad pour se servir de la maison, il ne vaut pas moins que son locataire et son valet. Quand tu dois poser la question, c&#x27;est là où il peut le renvoyer. Puisqu&#x27;il peut le renvoyer, loue-t-on de lui ? Ou bien, maintenant en tout cas, il ne l&#x27;a pas renvoyé. Rech Lakich dit : louons, et quand nous irons chez nos maîtres du Sud, nous leur demanderons. Ils vinrent et demandèrent à Rabbi Afes. Il leur dit : vous avez bien fait de louer.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rech Lakich</b> tranche pour l'acte : on loue. Rachi : <b>safek de-divreihem le-hakel</b>, un doute sur une parole des Sages, on allège. On demandera ensuite aux maîtres du Sud.</p><p><b>Rabbi Afes</b> confirme : vous avez bien fait de louer.</p><p>Le Roch ajoute une borne : si le bailleur a une <b>tefissat yad</b>, un droit d'usage dans la maison, il est au moins comme le locataire ou le valet, de qui l'on peut louer. Le cas où l'on ne pose pas la question est celui où il ne peut pas renvoyer et n'a aucun usage.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg18">
+          <div class="seg-num">19</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבִּי חֲנִינָא בַּר יוֹסֵף וְרַבִּי חִיָּיא בַּר אַבָּא וְרַבִּי אַסִּי אִיקְּלַעוּ לְהָהוּא פֻּונְדָּק דַּאֲתָא גּוֹי מָרֵי דְפֻונְדָּק בְּשַׁבְּתָא. אָמְרוּ: מַהוּ לְמֵיגַר מִינֵּיהּ? שׂוֹכֵר כִּמְעָרֵב דָּמֵי — מַה מְעָרֵב מִבְּעוֹד יוֹם, אַף שׂוֹכֵר מִבְּעוֹד יוֹם.</div>
+            <div class="fr"><p>Rabbi Hanina bar Yossef, Rabbi Hiya bar Abba et Rabbi Assi arrivèrent à une auberge où vint le goy maître de l&#x27;auberge, le Chabbat. Ils dirent : qu&#x27;en est-il de louer de lui ?</p><p>Celui qui loue est-il semblable à celui qui fait un erouv : de même que celui qui fait un erouv le fait tant qu&#x27;il fait jour, de même celui qui loue, tant qu&#x27;il fait jour.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דַּאֲתָא נָכְרִי בְּשַׁבָּת</b> דְּמֵאֶתְמוֹל שַׁפִּיר מָצוּ לְעָרוֹבֵי דִּיּוּרִין דְּיִשְׂרָאֵל דְּהָווּ בֵּיהּ מִשּׁוּם דְּנָכְרִי לָא אָסַר עֲלַיְיהוּ הֵיכָא דְּלֵיתֵיהּ וְלֹא עֵירְבוּ מֵאֶתְמוֹל וְלָא הָווּ (מָצֵי) מִטַּלְטְלֵי בֶּחָצֵר כִּי אֲתָא נָכְרִי אָמְרִי מַהוּ לְמֵיגַר מִינֵּיהּ וַהֲדַר נְבַטֵּל רְשׁוּת לְגַבֵּי חַד וְהַהוּא מִיהוּ לִישְׁתְּרֵי לְהוֹצִיא:</div>
+          <div class="glose-fr">Car la veille, ils pouvaient bien faire un erouv des logements d&#x27;Israël qui s&#x27;y trouvaient, puisque le nokhri ne leur interdit pas là où il n&#x27;est pas. Ils n&#x27;ont pas fait d&#x27;erouv la veille, et ils ne pouvaient pas transporter dans la cour. Quand le nokhri vint, ils dirent : qu&#x27;en est-il de louer de lui, puis nous annulerons le droit en faveur d&#x27;un seul, et celui-là sera permis de sortir.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אִיקְּלַעוּ לְהַהוּא פֻּונְדָּק כו&#x27;. פֵּירֵשׁ בַּקּוּנְטְרֵס הָיוּ שָׁם הַרְבֵּה בָּתִּים שֶׁל יִשְׂרְאֵלִים שֶׁהָיוּ אוֹסְרִים זֶה עַל זֶה וְיֵשׁ פֵּירוּשִׁים שֶׁמֻּוגָּהּ בָּהֶם פֻּונְדָּק יֵשׁ בּוֹ חֲדָרִים הַרְבֵּה פִּתּוּחִין לֶחָצֵר וְהָאַכְסְנָאִים נִכְנָסִין בָּהֶן וְאוֹסְרִין זֶה עַל זֶה וְגַם זֶה אֱמֶת דְּכִי הַאי גַּוְונָא נָמֵי אָסְרִי כְּמוֹ חֲבוּרָה שֶׁשָּׁבְתָה בַּטְּרַקְלִין:</div>
+          <div class="glose-fr">Le Kountres explique : il y avait là beaucoup de maisons d&#x27;Israélites qui s&#x27;interdisaient l&#x27;un à l&#x27;autre. Et il y a des explications où le texte est corrigé : une auberge a beaucoup de chambres ouvertes sur la cour, les hôtes y entrent et s&#x27;interdisent l&#x27;un à l&#x27;autre. Cela aussi est exact : un cas de cette forme interdit également, comme une havoura (groupe) qui a passé le Chabbat dans un traklin (salle).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דַּאֲתָא נָכְרִי בְּשַׁבְּתָא</b> פֵּירֵשׁ בַּקּוּנְטְרֵס וּמֵאֶתְמוֹל לָא הָווּ מָצוּ לְאִיעָרוֹבֵי דִּיּוּרִין מִיִּשְׂרָאֵל דְּהָווּ בֵּיהּ מִשּׁוּם דְּנָכְרִי אָסַר עֲלַיְיהוּ אע&quot;ג דְּלֵיתֵיהּ וּדְבָרָיו תְּמוּהִים שֶׁפֵּירֵשׁ סֻוגְיָא זוֹ דְּלָא כְּהִלְכְתָא דְּקַייְמָא לָן דְּאֵין נָכְרִי אוֹסֵר אֶלָּא הֵיכָא דְּאִיתֵיהּ כִּדְפֵירַשְׁתִּי לְעֵיל [ד&quot;ה אִיקְּלַעוּ] וְכִדְפֵי&#x27; נָמֵי בַּקְּוַנְט&#x27; בְּהַהִיא עֻובְדָּא דִּלְעֵיל וּבְפִי&#x27; רַשִׁ&quot;י אֲחֵרִים מָצָאתִי דְּמֵאֶתְמוֹל שַׁפִּיר מָצוּ לְאִיעָרוֹבֵי דִּיּוּרִין דְּיִשְׂרָאֵל דְּהָווּ בֵּיהּ מִשּׁוּם דְּנָכְרִי לָא אָסַר עֲלַיְיהוּ הֵיכָא דְּלֵיתֵיהּ אֲמַרוּ מַהוּ לְמֵיגַר מִינֵּיהּ וַהֲדַר נְבַטֵּל רְשׁוּתָא לְגַבֵּי דְּחַד דְּהַהוּא יְהֵא מֻותָּר לְהוֹצִיא עַד כָּאן לְשׁוֹן הַקּוּנְטְרֵס וְהַדִּין עִמּוֹ שֶׁפֵּירֵשׁ דְּבָעֵי בִּיטּוּל אַחַר שְׂכִירוּת כִּדְמוֹכַח כֻּולָּהּ שְׁמַעְתָּא דְּבָעֵי תַּרְתֵּי שְׂכִירוּת וּבִיטּוּל וְאַף עַל פִּי שֶׁעֵירְבוּ לָא מִשְׁתְּרֵי בִּשְׂכִירוּת לְחוּדֵיהּ דְּמִיָּד כְּשֶׁבָּא הַנָּכְרִי בָּטֵל לֵיהּ עֵירוּב וְכִי הָדַר שְׂכָרוֹ אֵין הָעֵירוּב חוֹזֵר לְקַדְמוּתוֹ אַף עַל גַּב דְּבִסְפִינוֹת אָמַר בְּמַסֶּכֶת שַׁבָּת (דַּף קא:) סְפִינוֹת קְשׁוּרוֹת זוֹ בָּזוֹ מְעָרְבִין וּמְטַלְטְלִין מִזּוֹ לָזוֹ נִפְסְקוּ נֶאֶסְרוּ חָזְרוּ וְנִתְקַשְּׁרוּ חָזְרוּ לְהֶתֵּירָן הָרִאשׁוֹן שָׁאנֵי הָכָא דְּמִתְּחִילָּה כְּשֶׁעָשָׂה הָעֵירוּב אֵין סוֹפוֹ לְהִתְקַייֵּם כָּל הַשַּׁבָּת שֶׁעָתִיד הַנָּכְרִי לָבֹא אֲבָל הָתָם אֵין הַסְּפִינוֹת עוֹמְדוֹת לְהֶפְסֵק וְאַף עַל גַּב דְּהֵיכָא דְּשָׁכַח אֶחָד מִבְּנֵי חָצֵר וְלֹא עֵירַב אֵין עֵירוּבוֹ בָּטֵל אֶלָּא מְבַטֵּל הַיָּחִיד רְשׁוּתוֹ לְאוֹתָן שֶׁעֵירְבוּ וּמֻותָּרִין לְהַכְנִיס וּלְהוֹצִיא שָׁאנֵי הָתָם דַּחֲזוּ כּוּלְּהוּ לְאִיעָרוֹבֵי מֵאֶתְמוֹל לְפִיכָךְ אֵין בָּטֵל הָעֵירוּב שֶׁלָּהֶן כְּלָל וְגַם אֵין שַׁייָּךְ לוֹמַר כְּלָל שַׁבָּת הוֹאִיל וְהֻותְרָה הֻותְּרָה וְלֹא יִתְבַּטֵּל עֵירוּב שֶׁלָּהֶן כְּשֶׁיָּבֹא הַנָּכְרִי בְּשַׁבָּת וְזֶה אֵין נִרְאֶה לְפָרֵשׁ כְּלָל דְּכָאן לֹא עֵירְבוּ וּלְפִיכָךְ לָא סַגִּי בִּשְׂכִירוּת לְחוּד בְּלֹא בִּיטּוּל דְּהָא עַל כָּרְחָךְ הָיוּ יְכוֹלִין לְעָרֵב כָּאן כִּדְפָרֵישִׁית לְעֵיל דַּהֲלָכָה כְּר&#x27; יְהוּדָה דְּנָכְרִי כִּי לֵיתֵיהּ לָא אָסַר וְכֵיוָן שֶׁהָיָה מוֹעִיל בְּאוֹתוֹ עֵירוּב מְנָא לֵיהּ שֶׁלֹּא עֵירְבוּ וְעָשׂוּ שְׂכִירוּת וּבִיטּוּל דְּקַשְׁיָא לֵיהּ לְקַמָּן דִּשְׁמוּאֵל רַבֵּיהּ דְּאָמַר אוֹסְרִין וְאֵין מְעָרְבִין אֵין מְבַטְּלִין וּבְסוֹף שְׁמַעְתָּא דְּקָאָמַר לָמֶ&quot;ד שׂוֹכְרִין לָא תִּיבְּעֵי לָךְ תַּרְתֵּי עָבְדִינַן שְׂכִירוּת וּבִיטּוּל דִּלְמָא הָכָא הוּא דְּעֵירְבוּ וְלֹא עָשׂוּ אֶלָּא שְׂכִירוּת לְחוּד עַל כֵּן נִרְאֶה כְּפֵירוּשׁ הַקּוּנְטְרֵס דַּאֲפִילּוּ עֵירְבוּ בָּטֵל הָעֵירוּב לְגַמְרֵי מִיכֵּן כֵּיוָן שֶׁבָּא הַנָּכְרִי וְאִם תֹּאמַר וְלָמָּה לְהוּ הָכָא תַּרְתֵּי שְׂכִירוּת וּבִיטּוּל בְּבִיטּוּל לְחוּדֵיהּ סַגִּי כֵּיוָן דְּבָטְלִי רְשׁוּתַיְיהוּ לְגַבֵּי חַד הָוֵה לֵיהּ יָחִיד בִּמְקוֹם נָכְרִי כִּדְאָמַר לְעֵיל גַּבֵּי עֻובְדָּא דְּהָמָן בַּר רִסְתַּק דְּקַייְמָא לָן כראב&quot;י יָחִיד בִּמְקוֹם נָכְרִי שָׁרִי ואע&quot;ג דְּמַסִּיק רָבָא דְּלָא מְהַנֵּי בִּיטּוּל לַעֲשׂוֹתוֹ יָחִיד בִּמְקוֹם נָכְרִי מִשּׁוּם דְּא&quot;כ בִּטַּלְתָּ תּוֹרַת עֵירוּב מֵאוֹתוֹ מָבוֹי ה&quot;מ בְּנָכְרִי שֶׁאֵינוֹ רוֹצֶה לְהַשְׂכִּיר דְּלָא אֶפְשָׁר לְהוּ לְעָרֵב אֲבָל הָכָא שֶׁהוּא מִתְרַצֶּה לְהַשְׂכִּיר וּבְשַׁבָּת אַחֶרֶת יוּכְלוּ לְעָרֵב לְהַתִּיר לְכֻולָּן אֶלָּא הַיּוֹם שֶׁבָּא הַנָּכְרִי בְּשַׁבָּת לֹא אֶפְשָׁר מוֹעִיל בִּיטּוּל לַעֲשׂוֹת יָחִיד בִּמְקוֹם נָכְרִי דְּאֵין שַׁיָּיךְ כָּאן לוֹמַר בִּטַּלְתָּ תּוֹרַת עֵירוּב וְי&quot;ל כֵּיוָן שֶׁאִם לֹא הָיָה מִתְרַצֶּה לְהַשְׂכִּיר לֹא הָיָה מוֹעִיל בִּיטּוּל מִשּׁוּם דְּא&quot;כ בִּיטַּלְתָּ תּוֹרַת עֵירוּב אֵין לְחַלֵּק בֵּין מִתְרַצֶּה לְשֶׁאֵינוֹ מִתְרַצֶּה דְּאַטּוּ אֲמִירַת הַנָּכְרִי תִּגְרֹום הַבִּיטּוּל שֶׁיּוֹעִיל כְּשֶׁיֹּאמַר אֶתְרַצֶּה לָכֶם לְהַשְׂכִּיר אוֹ לֹא יוֹעִיל כְּשֶׁיֹּאמַר לֹא אֶתְרַצֶּה לָכֶם וְעוֹד י&quot;ל דְּהָנֵי אָמוֹרָאֵי סְבִירָא לְהוּ כְּר&quot;מ דְּאָמַר אָסוּר יָחִיד בִּמְקוֹם נָכְרִי וְר&#x27; יוֹחָנָן דִּבְסָמוּךְ נָמֵי לְטַעְמֵיהּ דְּאָמַר נָהֲגוּ הָעָם כר&quot;א בֶּן יַעֲקֹב אֲבָל אוֹרוֹיֵי לָא מוֹרִינַן אֲבָל אֲנַן סְבִירָא לָן וַדַּאי כְּרַבִּי אֱלִיעֶזֶר בֶּן יַעֲקֹב דְּהָא אַבַּיֵּי וְרָבָא קָיְימִי כְּוָותֵיהּ בְּעֻובְדָּא דְּהָמָן בַּר רִסְתַּק:</div>
+          <div class="glose-fr">Le Kountres explique : et la veille, ils ne pouvaient pas faire un erouv des logements d&#x27;Israël qui s&#x27;y trouvaient, parce que le nokhri leur interdit même s&#x27;il n&#x27;est pas là. Ses paroles font difficulté, car il a expliqué cette sougya autrement que la halakha. Nous tenons en effet qu&#x27;un nokhri n&#x27;interdit que là où il est présent, comme je l&#x27;ai expliqué plus haut, et comme le Kountres l&#x27;explique aussi dans l&#x27;incident précédent. Et dans d&#x27;autres explications de Rachi j&#x27;ai trouvé : la veille, ils pouvaient bien faire un erouv des logements d&#x27;Israël qui s&#x27;y trouvaient, parce que le nokhri ne leur interdit pas là où il n&#x27;est pas. Ils dirent : qu&#x27;en est-il de louer de lui, puis nous annulerons le droit en faveur d&#x27;un seul, et celui-là sera permis de sortir. Jusqu&#x27;ici la langue du Kountres. Et le din est avec lui : il a expliqué qu&#x27;il faut un bitoul après la sekhira, comme toute la sougya le prouve, qui exige les deux, sekhira et bitoul. Et même s&#x27;ils ont fait un erouv, la sekhira seule ne permet pas. Dès que le nokhri est venu, l&#x27;erouv tombe. Et quand ensuite ils louent, l&#x27;erouv ne revient pas à son état premier. Et pourtant, au sujet des bateaux, il est dit dans le traité Chabbat (101b) : des bateaux liés l&#x27;un à l&#x27;autre, on fait un erouv et l&#x27;on transporte de l&#x27;un à l&#x27;autre ; s&#x27;ils ont été détachés, ils sont interdits ; s&#x27;ils ont été liés de nouveau, ils reviennent à leur premier permis. Ici, c&#x27;est autre chose : dès le début, quand on a fait l&#x27;erouv, il n&#x27;est pas destiné à tenir tout le Chabbat, puisque le nokhri doit venir. Là-bas, les bateaux ne sont pas destinés à être détachés. Et pourtant, là où l&#x27;un des habitants de la cour a oublié et n&#x27;a pas pris part à l&#x27;erouv, leur erouv ne tombe pas : le seul annule son droit en faveur de ceux qui ont fait l&#x27;erouv, et ils sont permis d&#x27;entrer et de sortir. Là-bas, c&#x27;est autre chose : tous étaient aptes à faire l&#x27;erouv la veille, c&#x27;est pourquoi leur erouv ne tombe pas du tout. Et l&#x27;on ne peut pas non plus dire la règle du Chabbat, hoïl ve-huttera huttera (puisque c&#x27;était permis, cela reste permis), pour que leur erouv ne tombe pas quand le nokhri vient le Chabbat. Et il ne semble pas du tout expliquer qu&#x27;ici ils n&#x27;avaient pas fait d&#x27;erouv, et que pour cela la sekhira seule, sans bitoul, ne suffit pas. Car, de force, ils pouvaient faire un erouv ici, comme je l&#x27;ai expliqué plus haut : la halakha est selon Rabbi Yehouda, un nokhri quand il est absent n&#x27;interdit pas. Et puisque cet erouv aurait été efficace, d&#x27;où sait-il qu&#x27;ils n&#x27;ont pas fait d&#x27;erouv, et qu&#x27;ils ont fait sekhira et bitoul ? Car plus loin cela lui fait difficulté au sujet de Chmouel son maître, qui a dit : ils interdisent, et l&#x27;on ne fait pas d&#x27;erouv, l&#x27;on ne fait pas de bitoul. Et à la fin de la sougya, où il est dit : selon celui qui dit qu&#x27;on loue, ne pose pas la question, nous faisons les deux, sekhira et bitoul. Peut-être qu&#x27;ici ils avaient fait l&#x27;erouv, et n&#x27;avaient fait que la sekhira seule. C&#x27;est pourquoi l&#x27;explication du Kountres semble juste : même s&#x27;ils ont fait l&#x27;erouv, l&#x27;erouv tombe entièrement à partir de là, dès que le nokhri est venu. Et si tu dis : pourquoi leur faut-il ici les deux, sekhira et bitoul ? Le bitoul seul suffit. Dès qu&#x27;ils annulent leur droit en faveur d&#x27;un seul, il devient un seul dans le lieu d&#x27;un nokhri, comme il a été dit plus haut au sujet de l&#x27;incident de Haman bar Ristak. Nous tenons comme Rabbi Eliezer ben Yaakov : un seul dans le lieu d&#x27;un nokhri est permis. Et bien que Rava conclue que le bitoul ne sert pas à le faire seul dans le lieu d&#x27;un nokhri, parce qu&#x27;alors tu as annulé la torat erouv (la règle de l&#x27;erouv) de ce mavoy. Cela ne vaut que pour un nokhri qui ne veut pas louer, de sorte qu&#x27;ils ne peuvent pas faire d&#x27;erouv. Mais ici, où il consent à louer, et où un autre Chabbat ils pourront faire un erouv pour les permettre tous, et où seulement aujourd&#x27;hui, le nokhri étant venu le Chabbat, la chose est impossible, le bitoul sert à faire un seul dans le lieu d&#x27;un nokhri, car il n&#x27;y a pas lieu ici de dire : tu as annulé la torat erouv. On peut répondre : puisque, s&#x27;il n&#x27;avait pas consenti à louer, le bitoul n&#x27;aurait pas servi, parce qu&#x27;alors tu aurais annulé la torat erouv, on ne distingue pas entre celui qui consent et celui qui ne consent pas. La parole du nokhri ferait-elle que le bitoul serve quand il dit : je consens à vous louer, et qu&#x27;il ne serve pas quand il dit : je ne consens pas pour vous ? Et l&#x27;on peut encore répondre : ces Amoraïm tiennent comme Rabbi Meir, qui dit : un seul dans le lieu d&#x27;un nokhri est interdit. Et Rabbi Yohanan, tout près, va aussi selon son avis, lui qui a dit : le peuple a la coutume selon Rabbi Eliezer ben Yaakov, mais on ne rend pas de horaa (décision d&#x27;enseignement) en ce sens. Mais nous, nous tenons à coup sûr comme Rabbi Eliezer ben Yaakov, car Abaye et Rava se tiennent avec lui dans l&#x27;incident de Haman bar Ristak.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Autre auberge. Le <b>mari pundak</b> (maître goy) était absent à l'entrée du Chabbat, et il arrive <b>le Chabbat</b>. Rachi, dans le texte que nous avons : la veille, le nokhri absent n'interdisait pas, ils pouvaient faire l'erouv des Israélites, ils ne l'ont pas fait. À son arrivée : peut-on louer de lui, puis faire <b>bitoul rechout</b> (annulation du droit) en faveur d'un seul, pour que celui-là porte ?</p><p>Premier côté de la question : la <b>sekhira</b> est comme l'<b>erouv</b>. L'erouv se fait <b>mi-be-od yom</b>, tant qu'il fait jour. La sekhira aussi.</p><p>Tossefot écarte une autre version du Kountres, où le nokhri interdirait même absent. Il retient celle de notre Rachi, et il maintient qu'il faut <b>sekhira et bitoul</b> : dès que le nokhri arrive, l'erouv de la veille tombe, et il ne revient pas avec la seule sekhira. Le cas des bateaux de Chabbat 101b est autre : ils ne sont pas destinés à se détacher.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg19">
+          <div class="seg-num">20</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אוֹ דִּילְמָא שׂוֹכֵר כִּמְבַטֵּל רְשׁוּת דָּמֵי, מַה מְבַטֵּל רְשׁוּת וַאֲפִילּוּ בְּשַׁבָּת, אַף שׂוֹכֵר וַאֲפִילּוּ בְּשַׁבָּת?</div>
+            <div class="fr"><p>Ou bien celui qui loue est semblable à celui qui annule un droit : de même que celui qui annule un droit le fait même le Chabbat, de même celui qui loue, même le Chabbat ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַה מְבַטֵּל רְשׁוּת אֲפִילּוּ בְּשַׁבָּת</b> כְּדִתְנַן בְּמַתְנִיתִין בֵּית הִלֵּל אוֹמְרִים מִשֶּׁתֶּחְשַׁךְ כו&#x27;:</div>
+          <div class="glose-fr">Comme nous l&#x27;avons appris dans la michna : Beit Hillel disent : dès qu&#x27;il fait nuit, etc.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Second côté. La sekhira serait comme le <b>bitoul rechout</b>. La michna : <b>Beit Hillel</b> permettent le bitoul <b>dès la nuit</b>, donc le Chabbat même. Alors on pourrait louer au goy le Chabbat.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 232" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="232" fill="#fbfaf7"/>
+<text x="370.0" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">La sekhira suit-elle l'erouv ou le bitoul ?</text>
+<text x="370.0" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#5c5348">Le maître de l'auberge arrive le Chabbat</text>
+<rect x="230" y="58" width="280" height="36" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="370.0" y="80.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Louer au maître goy le Chabbat ?</text>
+<line x1="300" y1="94" x2="300" y2="125" stroke="#2b2b2b" stroke-width="1.4"/><polygon points="295,124 305,124 300,132" fill="#2b2b2b"/>
+<line x1="440" y1="94" x2="440" y2="125" stroke="#2b2b2b" stroke-width="1.4"/><polygon points="435,124 445,124 440,132" fill="#2b2b2b"/>
+<rect x="40" y="132" width="300" height="80" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="190.0" y="152.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Comme l'erouv.</text>
+<text x="190.0" y="168.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Seulement mi-be-od yom,</text>
+<text x="190.0" y="184.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">tant qu'il fait jour.</text>
+<text x="190.0" y="200.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">On ne loue pas.</text>
+<rect x="400" y="132" width="300" height="80" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="550.0" y="152.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Comme le bitoul rechout.</text>
+<text x="550.0" y="168.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Même le Chabbat,</text>
+<text x="550.0" y="184.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">dès la nuit, Beit Hillel.</text>
+<text x="550.0" y="200.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">On peut louer.</text>
+</svg></div><div class="svg-cap">Si la sekhira suit l&#x27;erouv, seulement avant la nuit. Si elle suit le bitoul, même le Chabbat.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg20">
+          <div class="seg-num">21</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבִּי חֲנִינָא בַּר יוֹסֵף אָמַר: נִשְׂכּוֹר, וְרַבִּי אַסִּי אָמַר: לֹא נִשְׂכּוֹר, אֲמַר לְהוּ רַבִּי חִיָּיא בַּר אַבָּא: נִסְמֹוךְ עַל דִּבְרֵי זָקֵן וְנִשְׂכֹּור. אֲתוֹ שַׁיַּילוּ לֵיהּ לְרַבִּי יוֹחָנָן, אָמַר לָהֶן:</div>
+            <div class="fr"><p>Rabbi Hanina bar Yossef dit : louons. Et Rabbi Assi dit : ne louons pas.</p><p>Rabbi Hiya bar Abba leur dit : appuyons-nous sur les paroles de l&#x27;ancien, et louons. Ils vinrent interroger Rabbi Yohanan.</p><p>Il leur dit :</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rabbi Hanina bar Yossef</b>, l'ancien, dit de louer : la sekhira suit le bitoul, elle vaut le Chabbat. <b>Rabbi Assi</b> dit de ne pas louer : elle suit l'erouv, et le jour est passé.</p><p><b>Rabbi Hiya bar Abba</b> : on s'appuie sur l'ancien, et l'on loue. Ils vont ensuite demander à <b>Rabbi Yohanan</b>. Ses paroles ouvrent le daf 66a.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Eruvin_65a.html">&lsaquo; Eruvin 65a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schémas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage sélectionné :\n« '+s+' »\n'):'\nPassage concerné :\n\n')+'\nCorrection proposée :\n\n\n— envoyé depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<p id="credit-texte" style="text-align:center;font-size:.76rem;color:#78716c;margin:6px auto 18px;max-width:640px;line-height:1.5">
+Texte hébreu et araméen vocalisé : édition numérique William Davidson du Talmud Koren Noé, via
+<a href="https://www.sefaria.org" style="color:#78716c">Sefaria</a> (licence CC BY-NC). Traduction française, notes et schémas : Chiourim BA (licence CC BY 4.0).</p>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>
