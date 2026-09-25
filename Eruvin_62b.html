@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eruvin 62b - Présent ou absent, et la décision à la place du maître</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Eruvin 62b - Présent ou absent, et la décision à la place du maître</h1>
+    <div class="ref">Eruvin 62b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Eruvin_62a.html">&lsaquo; Eruvin 62a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> La Guemara accorde la beraita, qui compare la cour du goy à un enclos de bête, avec la michna, qui dit que le nokhri interdit. Présent, le nokhri interdit par décret, de peur que l&#x27;on apprenne de ses actes.</p><p>Absent, il n&#x27;interdit pas, sauf s&#x27;il revient le jour même. L&#x27;Israélite interdit même absent : les Sages ont décrété, parce que sa demeure compte lorsqu&#x27;il est là.</p><p>Chmouel tranche : la halakha suit Rabbi Eliezer ben Yaakov. Rav Houna parle de coutume, Rabbi Yohanan de pratique du peuple.</p><p>Abaye demande si un disciple peut rendre cette décision à la place de son maître. Même un œuf dans le koutah, Rav Hisda s&#x27;est tu du vivant de Rav Houna.</p><p>Il a tranché à Kafri, qui n&#x27;était pas la ville de son maître.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 396" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="396" fill="#fbfaf7"/>
+<text x="370.0" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Qui interdit le transport dans la cour</text>
+<text x="370.0" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#5c5348">Présent, absent, retour le jour même</text>
+<rect x="16" y="58" width="708" height="40" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="370.0" y="82.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Demeure sans propriétaires : elle ne compte pas.</text>
+<rect x="16" y="112" width="344" height="36" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="188.0" y="135.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Israélite</text>
+<rect x="380" y="112" width="344" height="36" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="552.0" y="135.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Goy</text>
+<rect x="16" y="160" width="344" height="150" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="188.0" y="205.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Présent : sa demeure compte.</text>
+<text x="188.0" y="222.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Il interdit.</text>
+<text x="188.0" y="239.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Absent : décret des Sages,</text>
+<text x="188.0" y="256.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">à cause du cas où il est là.</text>
+<text x="188.0" y="273.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Il interdit encore.</text>
+<rect x="380" y="160" width="344" height="150" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="552.0" y="205.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Présent : décret seulement.</text>
+<text x="552.0" y="222.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">De peur qu'on apprenne</text>
+<text x="552.0" y="239.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">de ses actes.</text>
+<text x="552.0" y="256.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Absent : pas de décret.</text>
+<text x="552.0" y="273.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Il n'interdit pas.</text>
+<rect x="16" y="324" width="708" height="52" rx="4" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="370.0" y="346.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">S'il revient le jour même, le nokhri interdit déjà avant son retour.</text>
+<text x="370.0" y="363.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Sinon, on transporterait encore après son arrivée.</text>
+</svg></div>
+          <figcaption>L&#x27;Israélite interdit présent et absent. Le goy n&#x27;interdit que présent, par décret, sauf s&#x27;il revient le jour même.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 360" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="360" fill="#fbfaf7"/>
+<text x="370.0" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Trois degrés de décision</text>
+<text x="370.0" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#5c5348">Même avis, trois portées</text>
+<rect x="16" y="58" width="228" height="36" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="130.0" y="81.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Halakha</text>
+<rect x="256" y="58" width="228" height="36" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="370.0" y="81.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Coutume</text>
+<rect x="496" y="58" width="228" height="36" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="610.0" y="81.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Ils ont pratiqué</text>
+<rect x="16" y="106" width="228" height="168" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="130.0" y="160.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Chmouel</text>
+<text x="130.0" y="177.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">On enseigne au pirka,</text>
+<text x="130.0" y="194.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">en public.</text>
+<text x="130.0" y="211.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">On tranche pour</text>
+<text x="130.0" y="228.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">qui vient demander.</text>
+<rect x="256" y="106" width="228" height="168" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="370.0" y="160.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rav Houna</text>
+<text x="370.0" y="177.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">On n'enseigne pas</text>
+<text x="370.0" y="194.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">au pirka.</text>
+<text x="370.0" y="211.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">On tranche pour</text>
+<text x="370.0" y="228.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">qui vient demander.</text>
+<rect x="496" y="106" width="228" height="168" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="610.0" y="160.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rabbi Yohanan</text>
+<text x="610.0" y="177.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">On n'enseigne pas.</text>
+<text x="610.0" y="194.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">On ne tranche pas.</text>
+<text x="610.0" y="211.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">S'ils ont agi,</text>
+<text x="610.0" y="228.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">on ne proteste pas.</text>
+<rect x="16" y="288" width="708" height="52" rx="4" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="370.0" y="310.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Ici l'on suit Chmouel : halakha selon Rabbi Eliezer ben Yaakov.</text>
+<text x="370.0" y="327.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">En matière d'eruv, la halakha suit l'avis indulgent.</text>
+</svg></div>
+          <figcaption>Chmouel : halakha, on l&#x27;enseigne en public. Rav Houna : coutume, on tranche en privé. Rabbi Yohanan : pratique, on ne fait pas revenir celui qui a agi.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 336" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="336" fill="#fbfaf7"/>
+<text x="370.0" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Où le disciple peut trancher</text>
+<text x="370.0" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#5c5348">Place du maître, distance, talmid haver</text>
+<rect x="16" y="58" width="708" height="40" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="370.0" y="82.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Même une chose évidente : l'œuf dans le koutah, la Megilat Taanit.</text>
+<rect x="16" y="112" width="228" height="150" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="130.0" y="157.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Dans la ville</text>
+<text x="130.0" y="174.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">du maître</text>
+<text x="130.0" y="191.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rav Hisda s'est tu</text>
+<text x="130.0" y="208.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">toute la vie</text>
+<text x="130.0" y="225.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">de Rav Houna.</text>
+<rect x="256" y="112" width="228" height="150" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="370.0" y="159.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Disciple complet,</text>
+<text x="370.0" y="175.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">même au loin</text>
+<text x="370.0" y="191.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Interdit.</text>
+<text x="370.0" y="207.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Au-delà de 3 parsaot :</text>
+<text x="370.0" y="223.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">sans peine capitale.</text>
+<rect x="496" y="112" width="228" height="150" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="610.0" y="157.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Talmid haver</text>
+<text x="610.0" y="174.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Hors de 3 parsaot</text>
+<text x="610.0" y="191.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Permis.</text>
+<text x="610.0" y="208.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rav Hisda a tranché</text>
+<text x="610.0" y="225.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">à Kafri.</text>
+<rect x="16" y="276" width="708" height="40" rx="4" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="370.0" y="300.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Dans les 3 parsaot : comme en présence du maître. La peine est capitale.</text>
+</svg></div>
+          <figcaption>À la place du maître, même l&#x27;évident reste interdit. Un talmid haver tranche hors des trois parsaot. Rav Hisda l&#x27;a fait à Kafri.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר מַר: חֲצֵירוֹ שֶׁל גּוֹי הֲרֵי הוּא כְּדִיר שֶׁל בְּהֵמָה. וְהָא אֲנַן תְּנַן: הַדָּר עִם הַנָּכְרִי בֶּחָצֵר הֲרֵי זֶה אוֹסֵר עָלָיו!</div>
+            <div class="fr"><p>Le maître a dit : la cour d&#x27;un goy (non-Juif), la voici comme un enclos de bête. Or nous avons appris : celui qui habite avec le nokhri dans une cour, celui-ci l&#x27;interdit !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אָמַר מַר הֲרֵי הוּא כְּדִיר שֶׁל בְּהֵמָה</b> דְּנָכְרִי לָא אָסַר מִידֵּי וְכִי דָּייַר יִשְׂרָאֵל גַּבֵּיהּ קָאָמַר ר&#x27; מֵאִיר דְּיִשְׂרָאֵל אוֹסֵר עַל בֵּיתוֹ שֶׁל עַכּוּ&quot;ם אֲבָל עַכּוּ&quot;ם אֵינוֹ אוֹסֵר עַל בֵּיתוֹ שֶׁל יִשְׂרָאֵל וְהִתְנָן כו&#x27;:</div>
+          <div class="glose-fr">Le nokhri n&#x27;interdit rien. Et lorsqu&#x27;un Israélite habite auprès de lui, Rabbi Meir dit que l&#x27;Israélite interdit sur la maison de l&#x27;idolâtre, mais l&#x27;idolâtre n&#x27;interdit pas sur la maison de l&#x27;Israélite. Et nous avons appris...</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le maître reprend la beraita de la page précédente. La cour du <b>goy</b> est un <b>enclos de bête</b> : elle n'interdit pas par elle-même. La michna enseigne que celui qui habite avec le <b>nokhri</b>, celui-ci l'interdit.</p><p>Rachi : lorsqu'un Israélite habite avec l'idolâtre, <b>Rabbi Meir</b> dit que l'Israélite interdit sur la maison de l'idolâtre. L'idolâtre n'interdit pas sur la maison de l'Israélite. Reste à accorder cette beraita avec la michna.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לָא קַשְׁיָא: הָא — דְּאִיתֵיהּ. הָא — דְּלֵיתֵיהּ.</div>
+            <div class="fr"><p>Pas de difficulté : ici, lorsqu&#x27;il est présent. Là, lorsqu&#x27;il est absent.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָא דְּלֵיתֵיהּ</b> לְעַכּוּ&quot;ם לֹא אָסַר וְאִם יֵשׁ שָׁם יִשְׂרָאֵל אַחֵר אוֹסֵר עַל בֵּיתוֹ שֶׁל עַכּוּ&quot;ם וְאַפֵּי&#x27; לֵיתָא לְיִשְׂרָאֵל:</div>
+          <div class="glose-fr">L&#x27;idolâtre n&#x27;interdit pas. Et s&#x27;il y a là un autre Israélite, celui-ci interdit sur la maison de l&#x27;idolâtre, même si l&#x27;Israélite est absent.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La michna vise le nokhri <b>présent</b> : il interdit. La beraita vise le nokhri <b>absent</b> : sa cour reste un enclos, il n'interdit pas.</p><p>Rachi : un autre Israélite qui se trouve là interdit sur la maison de l'idolâtre, même lorsque cet Israélite est absent.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּמַאי קָסָבַר? אִי קָסָבַר דִּירָה בְּלֹא בְּעָלִים שְׁמָהּ דִּירָה — אֲפִילּוּ גּוֹי נָמֵי נִיתְּסַר. וְאִי קָסָבַר דִּירָה בְּלֹא בְּעָלִים לֹא שְׁמָהּ דִּירָה — אֲפִילּוּ יִשְׂרָאֵל נָמֵי לָא נִיתְּסַר!</div>
+            <div class="fr"><p>Et que tient-il ? S&#x27;il tient qu&#x27;une demeure sans propriétaires est appelée demeure, même un goy devrait aussi être interdit.</p><p>Et s&#x27;il tient qu&#x27;une demeure sans propriétaires n&#x27;est pas appelée demeure, même un Israélite ne devrait pas non plus être interdit !</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La question porte sur la <b>demeure sans propriétaires</b>. Si elle compte encore, le goy absent devrait lui aussi faire tomber la cour sous l'interdit. Si elle ne compte pas, l'Israélite absent ne devrait pas non plus la faire tomber sous l'interdit.</p><p><b>Etre interdit</b> veut dire ici : le transport dans la cour tombe sous l'interdit à cause de lui.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לְעוֹלָם קָסָבַר דִּירָה בְּלֹא בְּעָלִים — לֹא שְׁמָהּ דִּירָה. וְיִשְׂרָאֵל, דְּכִי אִיתֵיהּ אָסַר, כִּי לֵיתֵיהּ — גָּזְרוּ בֵּיהּ רַבָּנָן.</div>
+            <div class="fr"><p>En réalité, il tient qu&#x27;une demeure sans propriétaires n&#x27;est pas appelée demeure. Et l&#x27;Israélite, qui interdit lorsqu&#x27;il est présent : lorsqu&#x27;il est absent, les Sages ont décrété à son sujet.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">ה&quot;ג לְעוֹלָם קָסָבַר דִּירָה בְּלֹא בְּעָלִים לָאו שְׁמָהּ דִּירָה:</div>
+          <div class="glose-fr">Voici la leçon : en réalité, il tient qu&#x27;une demeure sans propriétaires n&#x27;est pas appelée demeure.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְיִשְׂרָאֵל דְּכִי אִיתֵיהּ אָסַר</b> מִשּׁוּם דִּירָה דְּדִירַת יִשְׂרָאֵל שְׁמָהּ דִּירָה:</div>
+          <div class="glose-fr">À cause de la demeure : car la demeure d&#x27;un Israélite est appelée demeure.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כִּי לֵיתֵיהּ גָּזְרוּ רַבָּנָן</b> מִשּׁוּם כִּי אִיתֵיהּ אֲבָל עַכּוּ&quot;ם דַּאֲפִילּוּ כִּי אִיתֵיהּ לָאו שְׁמָהּ דִּירָה אֶלָּא מִשּׁוּם שֶׁמָּא יִלְמַד כו&#x27;:</div>
+          <div class="glose-fr">À cause du cas où il est présent. Mais l&#x27;idolâtre, même lorsqu&#x27;il est présent, sa demeure n&#x27;est pas appelée demeure, si ce n&#x27;est à cause de : de peur qu&#x27;il apprenne...</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reponse retenue. Une demeure sans propriétaires <b>n'est pas une demeure</b>. L'Israélite présent interdit parce que la <b>demeure d'un Israélite</b> compte. Lorsqu'il est absent, les Sages ont <b>décrété</b> à son sujet, à cause du cas où il est présent.</p><p>Rachi marque la leçon du texte, puis réserve le décret supplémentaire à l'Israélite. Pour l'idolâtre, même présent, la demeure ne compte que par le décret : de peur qu'il apprenne.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">גּוֹי, דְּכִי אִיתֵיהּ — גְּזֵירָה שֶׁמָּא יִלְמַד מִמַּעֲשָׂיו. כִּי אִיתֵיהּ — אָסַר, כִּי לֵיתֵיהּ — לֹא אָסַר.</div>
+            <div class="fr"><p>Un goy : lorsqu&#x27;il est présent, c&#x27;est un décret, de peur qu&#x27;il apprenne de ses actes. Lorsqu&#x27;il est présent, il interdit ; lorsqu&#x27;il est absent, il n&#x27;interdit pas.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le goy présent n'interdit que par un <b>décret</b> : de peur que l'Israélite <b>apprenne de ses actes</b>. Les Sages n'ont pas ajouté de décret pour le temps où il est absent. Présent, il interdit. Absent, il n'interdit pas.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְכִי לֵיתֵיהּ, לֹא אָסַר? וְהִתְנָן: הַמַּנִּיחַ אֶת בֵּיתוֹ וְהָלַךְ לוֹ לִשְׁבּוֹת בְּעִיר אַחֶרֶת, אֶחָד נָכְרִי וְאֶחָד יִשְׂרָאֵל אוֹסֵר, דִּבְרֵי רַבִּי מֵאִיר.</div>
+            <div class="fr"><p>Et lorsqu&#x27;il est absent, il n&#x27;interdit pas ? Or nous avons appris : celui qui laisse sa maison et s&#x27;en va passer le Chabbat dans une autre ville, qu&#x27;il soit nokhri ou Israélite, il interdit.</p><p>Paroles de Rabbi Meir.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection. Une michna : celui qui laisse sa maison et va passer le <b>Chabbat</b> ailleurs, nokhri ou Israélite, interdit. Paroles de <b>Rabbi Meir</b>. Le nokhri absent interdirait donc lui aussi.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָתָם דְּאָתֵי בְּיוֹמֵיהּ.</div>
+            <div class="fr"><p>Là-bas, c&#x27;est qu&#x27;il revient le jour même.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּאָתֵי בְּיוֹמֵיהּ</b> שֶׁהָלַךְ לְמָקוֹם קָרוֹב וְיָבֹא בּוֹ בַּיּוֹם וְאִי שָׁרֵית לְהוּ קֹודֶם שֶׁיָּבֹא מִטַּלְטְלֵי נָמֵי אַחַר שֶׁיָּבֹא וְלָא מַסְּקִי אַדַּעְתַּייְהוּ: ל&quot;א הָכִי גָּרְסִינַן וְאִם יֵשׁ שָׁם יִשְׂרָאֵל אַחֵר שֶׁדָּר יִשְׂרָאֵל עִם יִשְׂרָאֵל אַחֵר בְּבַיִת אֶחָד הֲרֵי זֶה הָעַכּוּ&quot;ם אוֹסֵר עָלָיו דְּהָכִי שְׁכִיחַ דְּדָיַיר וְרֵישָׁא דְּקָתָנֵי הֲרֵי הוּא כְּדִיר שֶׁל בְּהֵמָה בְּיִשְׂרָאֵל הַדָּר יְחִידִי עִמּוֹ דְּלָא שְׁכִיחַ דְּדָייַר וַאֲתָא ר&#x27; אֱלִיעֶזֶר לְמֵימַר עַד שֶׁיְּהוּ דָּרִין בִּשְׁנֵי בָּתִּים וּמִשּׁוּם הָכִי מוֹתְבִינַן לר&quot;מ וּבִיחִידִי לָא אָסַר וְהִתְנָן כּוּ&#x27; וְאִי אֶפְשָׁר לוֹמַר כֵּן דְּהָא מַשְׁנִינַן הָא דְּאִיתֵיהּ הָא דְּלֵיתֵיהּ וְכֵיוָן דִּבְלֵיתֵיהּ מוֹקְמִינַן לָהּ כִּי יֵשׁ שָׁם יִשְׂרָאֵל אַחֵר דָּר עִם חֲבֵירוֹ בַּבַּיִת מַאי טַעְמָא אָסַר עַכּוּ&quot;ם וְעוֹד דִּבְתוֹסֶפֶת&#x27; (פ&quot;ה) הָכִי גָּרְסִינַן וְאִם יֵשׁ שָׁם יִשְׂרָאֵל אַחֵר הֲרֵי זֶה אוֹסֵר מִפְּנֵי שֶׁהוּא כַּחֲצֵירוֹ וְאִי הַאי אוֹסֵר בְּעַכּוּ&quot;ם קָאָמַר מַאי מִפְּנֵי שֶׁהוּא כַּחֲצֵירוֹ וְעוֹד הָא טַעְמָא מִשּׁוּם שֶׁמָּא יִלְמַד הוּא:</div>
+          <div class="glose-fr">Il est allé dans un lieu proche, et il reviendra ce jour-là. Si tu leur permets avant qu&#x27;il arrive, ils transporteront aussi après son arrivée, et ils n&#x27;y feront pas attention. Autre leçon. Voici comment on lit : et s&#x27;il y a là un autre Israélite, c&#x27;est-à-dire un Israélite qui habite avec un autre Israélite dans une seule maison, cet idolâtre l&#x27;interdit, car il est fréquent qu&#x27;ils habitent. Et le début, qui enseigne que la cour est comme un enclos de bête, vise l&#x27;Israélite qui habite seul avec lui, cas où il n&#x27;est pas fréquent d&#x27;habiter. Et Rabbi Eliezer vient dire : jusqu&#x27;à ce qu&#x27;ils habitent dans deux maisons. C&#x27;est pourquoi l&#x27;on objecte à Rabbi Meir : et seul, il n&#x27;interdit pas ? Or nous avons appris... Et l&#x27;on ne peut pas dire ainsi. Car l&#x27;on répond : ici, lorsqu&#x27;il est présent ; là, lorsqu&#x27;il est absent. Et dès lors que, pour l&#x27;absence, on établit le cas sur un autre Israélite qui habite avec son compagnon dans la maison, pour quelle raison l&#x27;idolâtre interdit-il ? De plus, dans la Tossefta (chapitre 5), la leçon est : et s&#x27;il y a là un autre Israélite, celui-ci interdit, parce qu&#x27;elle est comme sa cour. Et si ce celui-ci qui interdit désignait l&#x27;idolâtre, que signifierait : parce qu&#x27;elle est comme sa cour ? De plus, la raison est : de peur qu&#x27;il apprenne.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Là, il <b>revient le jour même</b>, d'un lieu proche. Si l'on permet le transport avant son arrivée, ils continuent après, sans y prendre garde. Le décret couvre donc déjà son absence.</p><p>Rachi écarte une autre leçon. Elle lirait l'interdit de l'idolâtre dès que deux Israélites habitent une seule maison, et elle réserverait l'enclos de bête à l'Israélite seul. La Guemara répond par le présent et l'absent. Dans la Tossefta, l'autre Israélite interdit <b>parce que la cour est comme la sienne</b>. Le motif de l'idolâtre reste : de peur qu'il apprenne.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 262" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="262" fill="#fbfaf7"/>
+<text x="370.0" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Pourquoi l'absent interdit encore</text>
+<text x="370.0" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#5c5348">Retour le jour même</text>
+<rect x="16" y="58" width="708" height="56" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="370.0" y="82.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Michna : il laisse sa maison et passe le Chabbat dans une autre ville.</text>
+<text x="370.0" y="99.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Nokhri ou Israélite, il interdit. Paroles de Rabbi Meir.</text>
+<rect x="16" y="130" width="708" height="40" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="370.0" y="155.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Réponse : il revient le jour même, d'un lieu proche.</text>
+<rect x="16" y="186" width="708" height="56" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="370.0" y="210.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Si l'on permet avant qu'il arrive,</text>
+<text x="370.0" y="227.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">ils transportent encore après, sans y prendre garde.</text>
+</svg></div><div class="svg-cap">Le nokhri qui revient le jour même interdit déjà avant d&#x27;être rentré.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב יְהוּדָה אָמַר שְׁמוּאֵל: הֲלָכָה כְּרַבִּי אֱלִיעֶזֶר בֶּן יַעֲקֹב. וְרַב הוּנָא אָמַר: מִנְהָג כְּרַבִּי אֱלִיעֶזֶר בֶּן יַעֲקֹב. וְרַבִּי יוֹחָנָן אָמַר: נָהֲגוּ הָעָם כְּרַבִּי אֱלִיעֶזֶר בֶּן יַעֲקֹב.</div>
+            <div class="fr"><p>Rav Yehouda a dit que Chmouel a dit : la halakha est comme Rabbi Eliezer ben Yaakov. Et Rav Houna a dit : la coutume est comme Rabbi Eliezer ben Yaakov.</p><p>Et Rabbi Yohanan a dit : le peuple a pratiqué comme Rabbi Eliezer ben Yaakov.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הֲלָכָה</b> דְּדָרְשִׁינַן לָהּ בְּפִירְקָא בָּרַבִּים:</div>
+          <div class="glose-fr">On l&#x27;enseigne dans le pirka (leçon publique), en public.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִנְהָג</b> בְּפִירְקָא לָא דָּרְשִׁינַן אֲבָל אוֹרוֹיֵי מוֹרִינַן לָהּ בְּבָא לִישָּׁאֵל וּמַאן דְּאָמַר נָהֲגוּ אוֹרוֵי נָמֵי לָא מוֹרִינַן אֲבָל אִי עָבְדִי לָא מָחֵינַן בִּידַיְיהוּ:</div>
+          <div class="glose-fr">Dans le pirka on ne l&#x27;enseigne pas, mais on rend la décision à celui qui vient demander. Et celui qui dit : ils ont pratiqué, on ne rend même pas la décision ; mais s&#x27;ils ont agi, on ne proteste pas contre eux.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְרַבִּי יוֹחָנָן אָמַר נָהֲגוּ הָעָם כְּר&#x27; אֱלִיעֶזֶר בֶּן יַעֲקֹב</b> בְּמַסֶּכֶת תַּעֲנִית בְּפֶ&#x27; שְׁלֹשָׁה פְּרָקִים (תַּעֲנִית דַּף כו:) מְפָרֵשׁ דַּהֲלָכָה דָּרְשִׁינַן בְּפִרְקָא וּמִנְהָגָא בְּפִרְקָא לָא דָּרְשִׁינַן אֲבָל אוֹרוֹיֵי מוֹרִינַן ומ&quot;ד נָהֲגוּ אוֹרוֹיֵי נָמֵי לָא מוֹרִינַן אֲבָל אִי עָבְדִי לָא מָחֵינַן בִּידַיְיהוּ ואע&quot;ג דִּבְכָל דֻּוכְתָּא קַייְמָא לַן כַּר&#x27; יוֹחָנָן לְגַבֵּי שְׁמוּאֵל בְּהָא קי&quot;ל כִּשְׁמוּאֵל דְּאָמַר הֲלָכָה אֲפִילּוּ בְּפִירְקָא דְּרֵישׁ לָהּ דקי&quot;ל הֲלָכָה כְּדִבְרֵי הַמֵּיקֵל בְּעֵירוּב כְּדִפְסִיק רִיבָּ&quot;ל לְעֵיל וקי&quot;ל כְּוָותֵיהּ לְגַבֵּי ר&quot;י וְאַפֵּי&#x27; כְּבֵיעֲתָא בְּכוּתְחָא חָשְׁבִי לֵיהּ אַבַּיֵּי וְרַב יוֹסֵף לְהָא דראב&quot;י וְרָבָא נָמֵי מוֹדֶה לְאַבַּיֵּי גַּבֵּי עֻובְדָּא דְּהָמָן בַּר רִיסְתַּק אִי לָא מִשּׁוּם דְּבִיטַּלְתָּ תּוֹרַת עֵירוּב מֵאוֹתוֹ מָבוֹי וְאוֹמֵר ר&quot;י דְּאוֹתָן יִשְׂרְאֵלִים הַדָּרִים יְחִידִים בַּכְּרַכִּים הַמֻּוקָּפִים חוֹמָה שֶׁיֵּשׁ לָהֶם מְחִיצּוֹת גְּמוּרוֹת וְדַלְתוֹתֵיהֶן נְעוּלוֹת בַּלַּיְלָה שָׁרִי לְטַלְטֵל בְּכֻולָּהּ בְּשַׁבָּת כֵּיוָן דְּלֵיכָּא יִשְׂרָאֵל אַחֵר דְּאָסַר עָלֶיהָ:</div>
+          <div class="glose-fr">Dans le traité Taanit, au chapitre Des trois périodes (Taanit 26b), on explique : halakha, on l&#x27;enseigne dans le pirka ; coutume, on ne l&#x27;enseigne pas dans le pirka, mais on rend la décision ; et celui qui dit : ils ont pratiqué, on ne rend même pas la décision, mais s&#x27;ils ont agi on ne proteste pas contre eux. Et bien que partout nous tenions comme Rabbi Yohanan face à Chmouel, ici nous tenons comme Chmouel, qui a dit halakha, de sorte qu&#x27;on l&#x27;enseigne même dans le pirka. Car nous tenons que la halakha suit les paroles de celui qui est indulgent en matière d&#x27;eruv, comme l&#x27;a tranché Rabbi Yehochoua ben Levi plus haut, et nous tenons comme lui face à Rabbi Yohanan. Et même à l&#x27;égal d&#x27;un œuf dans le koutah, Abaye et Rav Yossef tiennent cet enseignement de Rabbi Eliezer ben Yaakov. Et Rava aussi en convient avec Abaye au sujet du fait de Haman bar Ristak, si ce n&#x27;était que tu aurais annulé la règle de l&#x27;eruv pour cette ruelle. Et Ri dit : ces Israélites qui habitent seuls dans des villes entourées d&#x27;une muraille, qui ont des clôtures complètes et dont les portes sont verrouillées la nuit, il est permis de transporter dans toute la ville le Chabbat, puisqu&#x27;il n&#x27;y a pas d&#x27;autre Israélite qui l&#x27;interdise.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Trois degrés, sur l'avis de <b>Rabbi Eliezer ben Yaakov</b>. <b>Halakha</b> (Chmouel) : on l'enseigne au <b>pirka</b>, la leçon publique. <b>Coutume</b> (Rav Houna) : on ne l'enseigne pas en public, on tranche pour qui vient demander. <b>Ils ont pratiqué</b> (Rabbi Yohanan) : on ne tranche pas ; si l'on a agi, on ne proteste pas.</p><p>Tossefot : face à Chmouel, on suit d'ordinaire Rabbi Yohanan. Ici on suit <b>Chmouel</b>, et l'on enseigne même au pirka, parce qu'en matière d'<b>eruv</b> la halakha suit l'avis indulgent, comme Rabbi Yehochoua ben Levi. Abaye et Rav Yossef tiennent cet avis pour une chose évidente, au rang d'un œuf dans le koutah. Ri : un Israélite seul, dans une ville close d'une muraille, aux clôtures complètes et aux portes verrouillées la nuit, peut transporter dans toute la ville.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ אַבָּיֵי לְרַב יוֹסֵף: קַייְמָא לַן מִשְׁנַת רַבִּי אֱלִיעֶזֶר בֶּן יַעֲקֹב קַב וְנָקִי, וְאָמַר רַב יְהוּדָה אָמַר שְׁמוּאֵל: הֲלָכָה כְּרַבִּי אֱלִיעֶזֶר בֶּן יַעֲקֹב.</div>
+            <div class="fr"><p>Abaye lui dit, à Rav Yossef : nous tenons que la michna de Rabbi Eliezer ben Yaakov est un kav net. Et Rav Yehouda a dit que Chmouel a dit : la halakha est comme Rabbi Eliezer ben Yaakov.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>קַייְמָא לַן</b> בִּיבָמוֹת פ&#x27; הַחוֹלֵץ בְּסוֹפֵיהּ (דַּף מט:) מִשְׁנַת ר&#x27; אֱלִיעֶזֶר בֶּן יַעֲקֹב קַב וְנָקִי כְּלוֹמַר בִּמְקוֹמוֹת מוּעָטִין מֻוזְכָּר בַּמִּשְׁנָה אֲבָל נָקִי הוּא. דַּהֲלָכָה כְּמוֹתוֹ בְּכָל מָקוֹם וְהָכָא אָמַר שְׁמוּאֵל דַּהֲלָכָה כְּמוֹתוֹ וּמַשְׁמַע דִּפְשִׁיטָא לָן דְּהָכִי הִילְכְתָא:</div>
+          <div class="glose-fr">Dans Yevamot, au chapitre HaHolets, à la fin (49b) : la michna de Rabbi Eliezer ben Yaakov est un kav net. C&#x27;est-à-dire : il est mentionné dans la michna en peu d&#x27;endroits, mais c&#x27;est net, car la halakha est comme lui partout. Et ici Chmouel a dit que la halakha est comme lui, ce qui implique que la chose est évidente pour nous : telle est la halakha.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Kav venaki</b> : la michna de Rabbi Eliezer ben Yaakov est peu nombreuse, et nette. Rachi renvoie à Yevamot 49b : peu de mentions, et la halakha le suit partout. Chmouel le dit encore pour notre debat. Abaye en tire que la halakha est déjà fixée, et il pose la question qui suit.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַהוּ לְאוֹרוֹיֵי בִּמְקוֹם רַבּוֹ?</div>
+            <div class="fr"><p>Qu&#x27;en est-il, pour rendre une décision à la place de son maître ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַהוּ לְאוֹרוֹיֵי תַּלְמִיד בִּמְקוֹם רַבּוֹ</b> כֵּיוָן דְּלָא תַּלְיָא בִּסְבָרָא וּמִילְּתָא פְּשִׁיטָא הִיא שָׁרִי אוֹ דִּילְמָא חֻוצְפָּא הוּא:</div>
+          <div class="glose-fr">Puisque cela ne dépend pas d&#x27;un raisonnement et que la chose est évidente, est-ce permis, ou bien est-ce de la houtspa (insolence) ?</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַהוּ לְאוֹרוֹיֵי בִּמְקוֹם רַבֵּיהּ</b> אוֹמֵר רִ&quot;י כָּל הָנֵי הוֹרָאוֹת כְּגוֹן שֶׁבָּא מַעֲשֶׂה לְפָנָיו וּמוֹרֶה לַעֲשׂוֹת כֵּן אֲבָל אִם שׁוֹאֲלִין לַתַּלְמִיד הֲלָכָה כְּדִבְרֵי מִי יָכוֹל לוֹמַר כָּל מַה שֶׁבְּדַעְתּוֹ וּבִלְבַד שֶׁלֹּא יוֹרֶה עַל מַעֲשֶׂה שֶׁבָּא:</div>
+          <div class="glose-fr">Ri dit : toutes ces décisions visent le cas où un fait vient devant lui et où il indique d&#x27;agir ainsi. Mais si l&#x27;on demande au disciple selon qui est la halakha, il peut dire tout ce qu&#x27;il a à l&#x27;esprit, pourvu qu&#x27;il ne rende pas de décision sur le fait qui est venu.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La question d'Abaye : la <b>horaa</b> (décision pratique) <b>à la place de son maître</b>. La chose ne dépend pas d'un raisonnement. Elle est évidente. Rachi pose les deux branches : permission, ou <b>houtspa</b> (insolence).</p><p>Ri : l'interdit vise un <b>cas venu</b> devant lui, lorsqu'il dit d'agir. Si l'on demande au disciple selon qui est la halakha, il peut dire ce qu'il pense, tant qu'il ne tranche pas le cas venu.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ: אֲפִילּוּ בֵּיעֲתָא בְּכֻותָּחָא בְּעוֹ מִינֵּיהּ מֵרַב חִסְדָּא כָּל שְׁנֵי דְּרַב הוּנָא, וְלָא אוֹרִי.</div>
+            <div class="fr"><p>Il lui dit : même un œuf dans le koutah (préparation lactée), on l&#x27;a demandé à Rav Hisda pendant toutes les années de Rav Houna, et il n&#x27;a pas rendu de décision.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בֵּיעֲתָא</b> בֵּיצָה לְאוֹכְלָהּ:</div>
+          <div class="glose-fr">Un œuf, pour le manger.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּכוּתָח</b> שֶׁיֵּשׁ בּוֹ נִיסְיוֹבֵי דְּחַלְבָא דְּמִלְּתָא פְּשִׁיטָא הוּא:</div>
+          <div class="glose-fr">Qui contient du petit-lait : c&#x27;est une chose évidente.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּעוֹ מִינֵּיהּ מֵרַב חִסְדָּא</b> אִם מֻותָּר אִם אָסוּר וּלְנַסּוֹתוֹ הָיָה מִתְכַּוֵּין אִם יוֹרֶה בִּמְקוֹם רַבּוֹ:</div>
+          <div class="glose-fr">S&#x27;il est permis ou interdit. Et l&#x27;on avait l&#x27;intention de l&#x27;éprouver : rendrait-il une décision à la place de son maître ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְלָא אוֹרִי</b> בִּשְׁנֵי דְּרַב הוּנָא רַבֵּיהּ:</div>
+          <div class="glose-fr">Pendant les années de Rav Houna, son maître.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲפִילּוּ בֵּיעֲתָא בְּכוּתְחָא</b> מְפָרֵשׁ בֶּעָרוּךְ דְּלָאו בִּסְתָם בֵּיצִים אַיְירֵי דְּאוֹתָן אֵין צְרִיכִין הֶיתֵּר דְּאֵין לְךָ עַם הָאָרֶץ שֶׁלֹּא יָדַע שֶׁמֻּותָּרוֹת בְּחָלָב אֶלָּא כְּשֶׁשּׁוֹחֵט אֶת הַתַּרְנְגֹולֶת וּמָצָא בָּהּ בֵּיצִים גְּמוּרוֹת שֶׁמֻּותָּר לְאוֹכְלָן בְּחָלָב כִּדְתַנְיָא בפ&quot;ק דְּבֵיצָה (דַּף ו:) וְאִם תֹּאמַר אַמַּאי מֻותָּר לְאוֹכְלָן בְּחָלָב מ&quot;ש מִבֵּיצַת נְבֵילָה דְּאָסְרִינַן אַפֵּי&#x27; כָּמוֹהָ נִמְכֶּרֶת בַּשּׁוּק כְּדִתְנַן בְּמַס&#x27; עִדִּיּוֹת (פ&quot;ה מ&quot;א) וְתֵירֵץ בַּהֲלָכוֹת גְּדוֹלוֹת דְּגַבֵּי אִיסּוּר נְבֵילָה דְּאוֹרָייְתָא הֶחְמִירוּ אֲבָל בִּבְשַׂר עוֹף בְּחָלָב דְּרַבָּנָן הֵקֵילּוּ וְאִם תֹּאמַר אִם כֵּן מַאי אֲפִילּוּ דְּקָאָמְרִינַן אֲפִילּוּ בֵּיעֲתָא בְּכֻותָּחָא דְּאַטּוּ מִי פְּשִׁיט הֶיתֵּר טְפֵי מִשְּׁאָר דְּבָרִים הָא פְּלוּגְתָּא הִיא דְּלָמֶ&quot;ד בְּשַׂר עוֹף בְּחָלָב דְּאוֹרָיְיתָא אֲסִירֵי מִידִי דַּהֲוָה אַבֵּיצַת נְבֵילָה וְאוֹמֵר ר&quot;י דִּלְהָכִי קָאָמַר אַפֵּי&#x27; שאע&quot;פ שֶׁכָּל הָעוֹלָם נוֹהֲגִין בּוֹ הֶיתֵּר ובפ&quot;ק דְּבֵיצָה (דַּף ו:) נָמֵי פְּשִׁיטָא לֵיהּ לְהַשַּׁ&quot;ס דְּשַׁרְייָא גַּבֵּי הָא דְּאָמַר רַב בֵּיצָה עִם יְצִיאָתָהּ נִגְמְרָה דְּקָאָמְרִינַן לְמַאי אִילֵּימָא דְּשָׁרֵי לְאָוכְלָה בְּחָלָב הָא בִּמְעֵי אִמּוֹ אֲסוּרָה וְהָא תַּנְיָא הַשּׁוֹחֵט אֶת הַתַּרְנְגֹולֶת כו&#x27; מַשְׁמַע דִּפְשִׁיטָא לֵיהּ דְּלָא הֲוָה פְּלִיג רַב וּלְפֵירוּשׁ. רַבֵּינוּ תָּם אָתֵי שַׁפִּיר שָׁפֵי&#x27; דִּבְבֵיצַת נְבֵילָה הֶחְמִירוּ מִשּׁוּם דִּנְבֵילָה דָּבָר הָאָסוּר הוּא אֲבָל בְּבָשָׂר בְּחָלָב לֹא הֶחְמִירוּ דְּכָל חַד וְחַד בְּאַפֵּי נַפְשֵׁיהּ שָׁרִי:</div>
+          <div class="glose-fr">L&#x27;Aroukh explique le cas où l&#x27;on fait la chehita (abattage) de la poule et où l&#x27;on trouve en elle des œufs achevés, qu&#x27;il est permis de manger avec du lait, comme on l&#x27;enseigne au premier chapitre de Beitsa (6b). Les œufs ordinaires n&#x27;ont pas besoin d&#x27;une permission : il n&#x27;est pas d&#x27;am haarets (ignorant) qui ne sache qu&#x27;ils sont permis avec du lait. Et si l&#x27;on objecte : pourquoi est-il permis de les manger avec du lait ? En quoi diffèrent-ils de l&#x27;œuf d&#x27;une neveila (bête morte sans chehita), que l&#x27;on interdit même lorsqu&#x27;il est pareil à ceux que l&#x27;on vend au marché, comme l&#x27;enseigne la michna du traité Edouyot (chapitre 5, michna 1) ? Les Halakhot Guedolot ont répondu : pour l&#x27;interdit de neveila, qui est de la Tora, on a été sévère ; pour la viande de volaille dans le lait, qui est d&#x27;ordre rabbinique, on a été indulgent. Et si l&#x27;on objecte : dès lors, que vient faire le mot même, lorsque nous disons même un œuf dans le koutah ? La permission est-elle plus évidente que pour les autrès choses ? C&#x27;est un debat : selon celui qui dit que la viande de volaille dans le lait est de la Tora, ces œufs sont interdits, au même titre que l&#x27;œuf d&#x27;une neveila. Et Ri dit : c&#x27;est pour cela qu&#x27;il dit même, bien que le monde entier y pratique la permission. Et au premier chapitre de Beitsa (6b) aussi, il est évident pour la Guemara que c&#x27;est permis, à propos de ce qu&#x27;a dit Rav : l&#x27;œuf est achevé au moment où il sort. Car nous disons : en vue de quoi ? Si l&#x27;on dit : qu&#x27;il est permis de le manger avec du lait. Or, dans le ventre de sa mère, il est interdit. Et l&#x27;on a enseigné : celui qui fait la chehita de la poule... Ce qui montre qu&#x27;il lui est évident que Rav ne serait pas en désaccord. Et selon l&#x27;explication de Rabbeinou Tam, cela s&#x27;accorde : il a expliqué que, pour l&#x27;œuf d&#x27;une neveila, on a été sévère, parce que la neveila est une chose interdite ; mais pour la viande dans le lait, on n&#x27;a pas été sévère, car chacun des deux, pris à part, est permis.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Yossef répond par un fait. Même un <b>œuf dans le koutah</b>, chose évidente, on l'a demandé à <b>Rav Hisda</b> pendant toutes les années de <b>Rav Houna</b>, son maître, pour voir s'il trancherait à sa place. Il n'a pas tranché.</p><p>Rachi : le koutah contient du petit-lait. La question, permis ou interdit, est simple.</p><p>Tossefot, d'après l'Aroukh : le cas est l'œuf achevé trouvé dans la poule au moment de la <b>chehita</b>, permis avec du lait (Beitsa 6b). L'œuf d'une <b>neveila</b> reste interdit, même pareil à ceux du marché (Edouyot 5, 1). Les Halakhot Guedolot : sévérité pour la neveila, interdit de la Tora ; indulgence pour la volaille dans le lait, interdit rabbinique. Ri : le mot même marque que tout le monde y pratique déjà la permission. Rabbeinou Tam : la neveila est interdite en elle-même ; la viande et le lait, chacun à part, sont permis.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רַבִּי יַעֲקֹב בַּר אַבָּא לְאַבָּיֵי: כְּגוֹן מְגִלַּת תַּעֲנִית דִּכְתִיבָא וּמַנְּחָא. מַהוּ לְאוֹרוֹיֵי בְּאַתְרֵיהּ דְּרַבֵּיהּ? אֲמַר לֵיהּ, הָכִי אָמַר רַב יוֹסֵף: אֲפִילּוּ בֵּיעֲתָא בְּכֻותָּחָא בְּעוֹ מִינֵּיהּ מֵרַב חִסְדָּא כָּל שְׁנֵי דְּרַב הוּנָא, וְלָא אוֹרִי.</div>
+            <div class="fr"><p>Rabbi Yaakov bar Abba dit à Abaye : par exemple la Megilat Taanit, qui est écrite et déposée. Qu&#x27;en est-il, pour rendre une décision dans la localité de son maître ?</p><p>Il lui dit : ainsi a dit Rav Yossef : même un œuf dans le koutah, on l&#x27;a demandé à Rav Hisda pendant toutes les années de Rav Houna, et il n&#x27;a pas rendu de décision.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּגוֹן מְגִלַּת תַּעֲנִית דִּכְתִיבָא וּמַנְּחָא</b> אֵלּוּ יָמִים אֲסוּרִין לְהִתְעַנּוֹת לְהָכִי נְקַט מְגִילַּת תַּעֲנִית שֶׁלֹּא הָיְתָה דְּבַר הֲלָכָה כְּתוּבָה בִּימֵיהֶן אֲפִילּוּ אוֹת אַחַת חוּץ מִמְּגִילַּת תַּעֲנִית וּלְהָכִי קָרֵי לָהּ מְגִלָּה:</div>
+          <div class="glose-fr">Ce sont les jours où il est interdit de jeûner. C&#x27;est pourquoi il prend la Megilat Taanit : de leur temps, aucune halakha n&#x27;était écrite, pas même une lettre, hormis la Megilat Taanit. C&#x27;est pourquoi on l&#x27;appelle megila.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּגוֹן מְגִלַּת תַּעֲנִית</b> פֵּירֵשׁ בַּקּוּנְטְרֵס דִּכְתִיבָא וּמַנְּחָא אִלֵּין יָמִים הָאֲסוּרִין לְהִתְעַנּוֹת וא&quot;א לוֹמַר הָכִי דְּאַפְּרוּשֵׁי מֵאִיסּוּרָא שָׁרִי בִּמְקוֹם רַבֵּיהּ כִּדְאָמְרִינַן לְקַמָּן אֵין חָכְמָה וְאֵין תְּבוּנָה כו&#x27; אֶלָּא בַּיָּמִים הַמֻּותָּרִים אַייְרֵי אִי שָׁרִי לְאוֹרוֹיֵי וְכִי הַהוּא דְּמִקְצָתָן הָווּ דְּלָא לְמִסְפַּד בְּהוֹן דְּמוֹרֵי הֵי מִינַּייְהוּ שָׁרִי וּלְפָנָיו אָסוּר וּלְאַחֲרָיו מֻותָּר וּבִזְמַן שֶׁהָיָה מְגִלַּת תַּעֲנִית נוֹהֶגֶת קָאָמְרִינַן כִּי הָאִידָּנָא בָּטְלָה מְגִלַּת תַּעֲנִית כְּדִפְסִיק בפ&quot;ק דר&quot;ה (דַּף יט:):</div>
+          <div class="glose-fr">Rachi a expliqué : écrite et déposée, ce sont les jours où il est interdit de jeûner. Et l&#x27;on ne peut pas dire ainsi. Car écarter quelqu&#x27;un d&#x27;un interdit est permis à la place de son maître, comme nous le disons plus bas : il n&#x27;y a ni sagesse ni intelligence... Le passage vise les jours permis : a-t-on le droit de rendre une décision ? Comme cet enseignement : une partie d&#x27;entre eux étaient des jours où l&#x27;on ne fait pas d&#x27;oraison funèbre, et il indique lequel d&#x27;entre eux est permis, et la veille est interdite, et le lendemain est permis. Et nous parlons du temps où la Megilat Taanit était en vigueur. De nos jours, la Megilat Taanit est annulée, comme on le tranche au premier chapitre de Roch Hachana (19b).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rabbi Yaakov bar Abba</b> propose un texte public : la <b>Megilat Taanit</b>, écrite et déposée, que chacun peut lire. Peut-on trancher dessus dans la localité du maître ? Abaye ramène la réponse de Rav Yossef : même l'œuf dans le koutah, Rav Hisda n'a pas tranché du vivant de Rav Houna.</p><p>Rachi : à leur époque, aucune halakha n'était écrite, fût-ce une lettre, hormis cette megila. D'ou son nom. Pour lui, il s'agit des jours où le jeûne est interdit.</p><p>Tossefot : écarter quelqu'un d'un interdit est permis à la place du maître. Le debat porte sur les jours <b>permis</b> : indiquer lequel est permis, lequel est interdit la veille, lequel est permis le lendemain. Cela, au temps où la Megilat Taanit était en vigueur. Aujourd'hui elle est annulée (Roch Hachana 19b).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַב חִסְדָּא אוֹרִי בְּכַפְרִי בִּשְׁנֵי דְּרַב הוּנָא.</div>
+            <div class="fr"><p>Rav Hisda a rendu des décisions à Kafri pendant les années de Rav Houna.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּכַפְרִי</b> שֵׁם מָקוֹם וְלֹא הָיָה מְקוֹמוֹ שֶׁל רַב הוּנָא וּמְקוֹמוֹ בְּפוּמְבְּדִיתָא וּשְׁתֵּיהֶן בְּבָבֶל:</div>
+          <div class="glose-fr">Nom d&#x27;un lieu. Ce n&#x27;était pas le lieu de Rav Houna. Son lieu était Poumbedita. Et les deux sont en Babylonie.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רַב חִסְדָּא אוֹרִי בְּכַפְרִי בִּשְׁנֵי דְּרַב הוּנָא</b> כְּדִמְפָרֵשׁ הַקּוּנְטְרֵס שֶׁלֹּא הָיָה שָׁם מְקוֹמוֹ שֶׁל רַב הוּנָא וּבְפוּמְבְּדִיתָא הָיְתָה מְקוֹמוֹ וצ&quot;ל דְּתַלְמִיד חָבֵר דְּרַב הוּנָא הֲוָה כְּמוֹ רַב הַמְנוּנָא דְּאוֹרֵי בְּחַרְתָּא דְּאַרְגֵּז בִּשְׁנֵי דְּרַב חִסְדָּא דִּמְפָרֵשׁ בְּסָמוּךְ מִשּׁוּם דְּתַלְמִיד חָבֵר דִּילֵיהּ הָיָה אֲבָל תַּלְמִיד גָּמוּר אֵין יָכוֹל לְהוֹרוֹת אֲפִילּוּ שֶׁלֹּא בִּמְקוֹם רַבֵּיהּ כִּדְאָמְרִינַן בִּשְׁנֵי דְּרַב הוּנָא לָא אוֹרִי רַב הַמְנוּנָא בְּחַרְתָּא דְּאַרְגָּז אע&quot;פ שֶׁהָיָה מְקוֹמוֹ שֶׁל רַב הוּנָא בְּפוּמְבְּדִיתָא וַאֲפִילּוּ רָחוֹק מִמֶּנּוּ שָׁלֹשׁ פַּרְסָאוֹת אוֹ אֲפִילּוּ טְפֵי אָסוּר וְאֵינוֹ חַייָּב מִיתָה דְּפָרִיךְ עֲלָהּ מֵאוֹתוֹ תַּלְמִיד שֶׁנִּתְחַייֵּב מִיתָה עַל שֶׁהוֹרָה בְּרִחוּק שָׁלֹשׁ פַּרְסָאוֹת מר&quot;א אֲבָל אִם לֹא נִתְחַיֵּיב מִיתָה לָא הֲוָה קַשְׁיָא מִידִי אֲפִילּוּ אִיכָּא אִיסּוּרָא בְּמִילְּתֵיהּ וְרָבִינָא דְּסָר סַכִּינָא בְּבָבֶל מַשְׁמַע שֶׁהָיָה רָחוֹק הַרְבֵּה מֵרַב אַשִּׁי וְהָיָה אָסוּר שָׁם אִם הָיָה תַּלְמִידוֹ גָּמוּר כּוּ&#x27; וְהָא דְּאָמְרִינַן בפ&quot;ק דְּסַנְהֶדְרִין (דַּף ה:) תַּנְחוּם בְּרֵיהּ דָּר&#x27; אַמִּי אִיקְּלַע לְאַתְרָא דְּרַשׁ לְהוּ מֻותָּר לִלְתֹּות חִטִּין בַּפֶּסַח אָמְרוּ לֵיהּ לָאו ר&#x27; מַנִּי דְּמִן צוּר אִיכָּא הָכָא וְתַנָּא תַּלְמִיד לֹא יוֹרֶה הֲלָכָה בִּמְקוֹם רַבּוֹ אא&quot;כ רָחוֹק מִמֶּנּוּ שָׁלֹשׁ פַּרְסָאוֹת כְּנֶגֶד מַחֲנֵה יִשְׂרָאֵל צָרִיךְ לוֹמַר דְּתַלְמִיד חָבֵר הֲוָה ומש&quot;ה חוּץ לֹג&#x27; פַּרְסָאוֹת שָׁרִי וְהָא דְּאָמְרִינַן בְּפָנָיו אָסוּר וְחַיָּיב מִיתָה כָּל תּוֹךְ שָׁלֹשׁ פַּרְסָאוֹת חֲשִׁיב בְּפָנָיו כִּדְמַשְׁמַע בְּאוֹתוֹ תַּלְמִיד שֶׁהוֹרָה לִפְנֵי ר&quot;א דְּאִם הָיָה תּוֹךְ שָׁלֹשׁ פַּרְסָאוֹת בְּדִין הָיָה חַיָּיב מִיתָה וּמִסְּתָמָא נָמֵי לֹא בְּפָנָיו מַמָּשׁ הָיָה וְכֵן בְּנֵי אַהֲרֹן מִסְּתָמָא לֹא הוֹרוּ בִּפְנֵי מֹשֶׁה מַמָּשׁ וְעִיקַּר שִׁיעוּר דְּגָמְרִינַן שָׁלֹשׁ פַּרְסָאוֹת כְּנֶגֶד מַחֲנֵה יִשְׂרָאֵל מִבְּנֵי אַהֲרֹן גָּמְרִינַן לָהּ וְהָתָם חַיָּיבֵי מִיתָה הָווּ וְאוֹמֵר ר&quot;י דַּוְוקָא בְּדָבָר שֶׁנִּרְאֶה חִידּוּשׁ לַשּׁוֹאֵל וַאֲפִילּוּ בֵּיעֲתָא בְּכוּתְחָא וּמְגִלַּת תַּעֲנִית בְּכִי הַאי גַּוְונָא אַייְרֵי וְלָא נַקְטִינְהוּ אֶלָּא לְאַשְׁמוֹעִינַן דַּאֲפִילּוּ בְּהָנֵי שֶׁהַתַּלְמִיד בְּעַצְמוֹ יוֹדֵעַ שֶׁאֵינוֹ טוֹעֶה אָסוּר לְהוֹרוֹת אֲבָל דָּבָר שֶׁהַשּׁוֹאֵל יוֹדֵעַ שֶׁיָּדוּעַ מִנְהָגוֹ שֶׁל דָּבָר זֶה כְּגוֹן נוֹתֵן טַעַם לִפְגָם וְכַיּוֹצֵא בּוֹ דִּכְשֶׁמּוֹרֶה לוֹ הֶיתֵּר אֵין דּוֹמֶה לוֹ דְּבַר חִידּוּשׁ שָׁרִי וְרָבִינָא דְּסָר סַכִּינָא בְּבָבֶל כְּעֵין דְּבַר חִידּוּשׁ הוּא שֶׁנּוֹטֵל שְׂרָרָה כִּדְאָמְרִינַן (חֻולִּין דַּף יז:) לֹא אָמְרוּ לְהַרְאוֹת סַכִּין לְחָכָם אֶלָּא מִפְּנֵי כְּבוֹדוֹ שֶׁל חָכָם:</div>
+          <div class="glose-fr">Comme l&#x27;explique Rachi : le lieu de Rav Houna n&#x27;était pas là, et son lieu était Poumbedita. Et il faut dire qu&#x27;il était talmid haver (disciple-collègue) de Rav Houna, comme Rav Hamnouna, qui a rendu des décisions à Harta de-Argiz pendant les années de Rav Hisda, ce que l&#x27;on explique tout à côté : c&#x27;est qu&#x27;il était son talmid haver. Mais un disciple complet ne peut pas rendre de décision, même hors du lieu de son maître. Comme nous le disons : pendant les années de Rav Houna, Rav Hamnouna n&#x27;a pas rendu de décision à Harta de-Argiz, bien que le lieu de Rav Houna fût Poumbedita. Et même à une distance de trois parsaot, ou même davantage, c&#x27;est interdit, et il n&#x27;est pas passible de mort. Car l&#x27;on objecte à partir de ce disciple qui fut passible de mort pour avoir rendu une décision à une distance de trois parsaot de Rabbi Eliezer. Mais s&#x27;il n&#x27;avait pas été passible de mort, il n&#x27;y aurait aucune difficulté, même s&#x27;il y a un interdit dans la chose. Et Ravina, qui a examiné le couteau à Bavel : cela implique qu&#x27;il était très loin de Rav Achi, et là-bas cela aurait été interdit s&#x27;il avait ete son disciple complet. Et ce que nous disons au premier chapitre de Sanhedrin (5b) : Tanhoum, fils de Rabbi Ami, arriva dans une localité et leur exposa qu&#x27;il est permis de mouiller le blé (letita) à Pessah. Ils lui dirent : Rabbi Mani de Tsour n&#x27;est-il pas ici ? Et l&#x27;on a enseigné : un disciple ne rend pas une décision de halakha à la place de son maître, à moins d&#x27;en être éloigné de trois parsaot, à la mesure du camp d&#x27;Israël. Il faut dire qu&#x27;il était talmid haver, et c&#x27;est pourquoi, au-delà de trois parsaot, c&#x27;est permis. Et ce que nous disons : en sa présence, c&#x27;est interdit et il est passible de mort : tout l&#x27;espace en deça de trois parsaot compte comme en sa présence, comme on le voit de ce disciple qui a rendu une décision devant Rabbi Eliezer. Car s&#x27;il était en deça de trois parsaot, il était à juste titre passible de mort, et selon toute vraisemblance il n&#x27;était pas non plus littéralement devant lui. De même, les fils d&#x27;Aharon, selon toute vraisemblance, n&#x27;ont pas rendu de décision littéralement devant Moché. Et le fond de la mesure, les trois parsaot à l&#x27;égal du camp d&#x27;Israël, nous l&#x27;apprenons des fils d&#x27;Aharon, et là-bas ils étaient passibles de mort. Et Ri dit : uniquement pour une chose qui a l&#x27;air d&#x27;une nouveauté pour celui qui demande. Et même l&#x27;œuf dans le koutah et la Megilat Taanit parlent d&#x27;un cas de ce genre. On ne les cite que pour nous apprendre que, même dans ces cas, où le disciple sait de lui-même qu&#x27;il ne se trompe pas, il est interdit de rendre une décision. Mais une chose dont celui qui demande sait que l&#x27;usage est connu, par exemple noten taam lifgam (qui donne un goût altéré) et ce qui lui ressemble : lorsqu&#x27;on lui rend une décision de permission, cela n&#x27;a pas pour lui l&#x27;air d&#x27;une nouveauté, et c&#x27;est permis. Et Ravina, qui a examiné le couteau à Bavel, c&#x27;est à la manière d&#x27;une nouveauté, car il prend une autorité, comme nous le disons (Houlin 17b) : on n&#x27;a dit de montrer le couteau au sage qu&#x27;à cause de l&#x27;honneur du sage.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rav Hisda</b> a tranché à <b>Kafri</b> du vivant de Rav Houna. Rachi : Kafri n'était pas sa ville. La sienne était <b>Poumbedita</b>. Les deux sont en Babylonie.</p><p>Tossefot : Rav Hisda était un <b>talmid haver</b>, disciple-collègue, comme Rav Hamnouna à Harta de-Argiz du vivant de Rav Hisda. Un disciple complet ne tranche pas, même hors de la ville du maître. Au-delà de trois <b>parsaot</b>, l'interdit demeure, sans peine capitale. En deçà, on est traité comme en présence du maître, et la peine est capitale : la mesure vient des fils d'Aharon, à la distance du camp d'Israël.</p><p>Ri limite l'interdit à ce qui a l'air d'une <b>nouveauté</b> pour le questionneur. L'œuf dans le koutah et la Megilat Taanit sont de ce genre : le disciple sait qu'il ne se trompe pas, et trancher lui reste interdit. Une chose dont l'usage est connu, comme <b>noten taam lifgam</b> (un goût altéré), peut être tranchée. Examiner le couteau, comme Ravina à Bavel, prend une autorité : on ne montre le couteau au sage que pour l'honneur du sage (Houlin 17b).</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 250" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="250" fill="#fbfaf7"/>
+<text x="370.0" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">La distance du maître</text>
+<text x="370.0" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#5c5348">Camp d'Israël : trois parsaot</text>
+<rect x="16" y="58" width="708" height="36" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="370.0" y="80.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Depuis le maître</text>
+<rect x="16" y="108" width="228" height="120" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="130.0" y="147.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Moins de 3 parsaot</text>
+<text x="130.0" y="164.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Comme en sa présence.</text>
+<text x="130.0" y="181.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Interdit,</text>
+<text x="130.0" y="198.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">peine capitale.</text>
+<rect x="256" y="108" width="228" height="120" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="370.0" y="148.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">3 parsaot et plus</text>
+<text x="370.0" y="164.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Disciple complet :</text>
+<text x="370.0" y="180.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">interdit,</text>
+<text x="370.0" y="196.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">sans peine capitale.</text>
+<rect x="496" y="108" width="228" height="120" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="610.0" y="147.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Hors de 3 parsaot</text>
+<text x="610.0" y="164.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Talmid haver :</text>
+<text x="610.0" y="181.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">permis.</text>
+<text x="610.0" y="198.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Ex. : Kafri.</text>
+</svg></div><div class="svg-cap">Trois parsaot : en deçà, comme devant le maître. Au-delà, le disciple complet reste interdit ; le talmid haver peut trancher.</div></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Eruvin_62a.html">&lsaquo; Eruvin 62a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schémas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage sélectionné :\n« '+s+' »\n'):'\nPassage concerné :\n\n')+'\nCorrection proposée :\n\n\n— envoyé depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<p id="credit-texte" style="text-align:center;font-size:.76rem;color:#78716c;margin:6px auto 18px;max-width:640px;line-height:1.5">
+Texte hébreu et araméen vocalisé : édition numérique William Davidson du Talmud Koren Noé, via
+<a href="https://www.sefaria.org" style="color:#78716c">Sefaria</a> (licence CC BY-NC). Traduction française, notes et schémas : Chiourim BA (licence CC BY 4.0).</p>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>
