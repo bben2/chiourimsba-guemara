@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pesachim 62a - l&#x27;arel est-il bar kapara, et comment lire la tuma de la baraita</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Pesachim 62a - l&#x27;arel est-il bar kapara, et comment lire la tuma de la baraita</h1>
+    <div class="ref">Pesachim 62a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Pesachim_61b.html">&lsaquo; Pesachim 61b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Pesachim_62b.html">Pesachim 62b &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> L&#x27;amoud explique le débat ouvert au feuillet précédent : Rabba et Rav Hisda, sur un Pessah abattu pour des circoncis afin que des incirconcis soient expiés par la zerika. Le verset lekhaper alav exige un prochain bar kapara.</p><p>Rabba exclut l&#x27;arel. Rav Hisda le compte comme bar kapara par un ho&#x27;il : il peut se circoncire.</p><p>Ce ho&#x27;il est confronté à celui qui cuit le Yom Tov pour la semaine : Rav Hisda le refuse pour dispenser des coups, et l&#x27;accepte pour rendre le Pessah passoul. Mar Zutra demande ensuite à Ravina de quelle tuma la baraita apprend l&#x27;arela partielle : chair ou personnes, et en quoi le Pessah se sépare des autres zevahim au moment de jeter le sang.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 400" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="400" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Lekhaper alav : quel prochain rend passoul ?</text>
+<rect x="16" y="42" width="708" height="40" rx="4" fill="#efeae2" stroke="#cfc6b8"/>
+<text x="370" y="67" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">Pour lui, et non pour son prochain. La zerika expie un bar kapara.</text>
+<rect x="16" y="98" width="348" height="36" fill="#eef3f7" stroke="#5d7385"/>
+<text x="190" y="121" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#3d5566">Rabba</text>
+<rect x="376" y="98" width="348" height="36" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="550" y="121" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#6b5344">Rav Hisda</text>
+<rect x="16" y="142" width="348" height="190" fill="#fff" stroke="#e4ddd2"/>
+<text x="190" y="170" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">Le prochain doit lui ressembler.</text>
+<text x="190" y="194" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">Lui : bar kapara.</text>
+<text x="190" y="218" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">Le prochain : bar kapara.</text>
+<text x="190" y="242" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">L'arel n'est pas bar kapara.</text>
+<text x="190" y="274" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Penser à lui : kacher</text>
+<text x="190" y="296" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">il est hors de l'expiation</text>
+<rect x="376" y="142" width="348" height="190" fill="#fff" stroke="#e4ddd2"/>
+<text x="550" y="170" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">L'arel est bar hiyuva.</text>
+<text x="550" y="194" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">Le Pessah lui incombe.</text>
+<text x="550" y="218" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">Ho'il : s'il veut, il se circoncit.</text>
+<text x="550" y="242" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">Il compte comme bar kapara.</text>
+<text x="550" y="274" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Penser à lui : passoul</text>
+<text x="550" y="296" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">la zerika vise un apte</text>
+<rect x="16" y="348" width="708" height="36" rx="4" fill="#fbfaf7" stroke="#c8c0b4"/>
+<text x="370" y="371" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Rachi : des arelim inscrits, toute la zerika pour eux, tout le monde rend passoul. Le débat : des non-inscrits.</text>
+</svg></div>
+          <figcaption>Rabba exige un prochain bar kapara et exclut l&#x27;arel. Rav Hisda le tient pour bar kapara, puisqu&#x27;il peut se circoncire.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 420" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="420" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Ho'il : quand l'acte manque, kola ou houmera</text>
+<rect x="16" y="44" width="168" height="36" fill="#efeae2" stroke="#cfc6b8"/>
+<text x="100" y="67" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#5c5348">Cas</text>
+<rect x="192" y="44" width="160" height="36" fill="#efeae2" stroke="#cfc6b8"/>
+<text x="272" y="67" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#5c5348">Acte manquant</text>
+<rect x="360" y="44" width="176" height="36" fill="#eef3f7" stroke="#5d7385"/>
+<text x="448" y="67" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#3d5566">Rabba</text>
+<rect x="544" y="44" width="180" height="36" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="634" y="67" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#6b5344">Rav Hisda</text>
+<rect x="16" y="88" width="168" height="130" fill="#fff" stroke="#e4ddd2"/>
+<text x="100" y="128" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Pessah</text>
+<text x="100" y="150" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">zerika pour un arel</text>
+<text x="100" y="178" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">sujet de l'amoud</text>
+<rect x="192" y="88" width="160" height="130" fill="#fff" stroke="#e4ddd2"/>
+<text x="272" y="140" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">oui</text>
+<text x="272" y="162" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">la mila</text>
+<rect x="360" y="88" width="176" height="130" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="448" y="136" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">pas de ho'il</text>
+<text x="448" y="160" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">kacher</text>
+<rect x="544" y="88" width="180" height="130" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="634" y="128" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">ho'il</text>
+<text x="634" y="152" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">passoul</text>
+<text x="634" y="176" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">houmera</text>
+<rect x="16" y="226" width="168" height="130" fill="#fff" stroke="#e4ddd2"/>
+<text x="100" y="266" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Cuire le Yom Tov</text>
+<text x="100" y="288" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">pour un jour de semaine</text>
+<rect x="192" y="226" width="160" height="130" fill="#fff" stroke="#e4ddd2"/>
+<text x="272" y="278" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">non</text>
+<text x="272" y="300" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">des hôtes peuvent venir</text>
+<rect x="360" y="226" width="176" height="130" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="448" y="274" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">ho'il</text>
+<text x="448" y="298" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">pas de malkot</text>
+<rect x="544" y="226" width="180" height="130" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="634" y="266" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">pas de ho'il</text>
+<text x="634" y="290" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">malkot</text>
+<text x="634" y="314" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">kola</text>
+<rect x="16" y="370" width="708" height="36" rx="4" fill="#fbfaf7" stroke="#c8c0b4"/>
+<text x="370" y="393" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Rabba suit l'acte manquant. Rav Hisda : ho'il pour la houmera, refus pour la kola.</text>
+</svg></div>
+          <figcaption>Ho&#x27;il de Rabba : seulement si aucun acte ne manque. Ho&#x27;il de Rav Hisda : pour la houmera du Pessah, pas pour dispenser des malkot.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 520" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="520" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Deux lectures de la baraita</text>
+<text x="370" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">L'arela partielle s'apprend d'une tuma partielle</text>
+<rect x="16" y="62" width="708" height="28" fill="#eef3f7" stroke="#5d7385"/>
+<text x="370" y="81" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5566">Ravina : on objecte au nom de tuma</text>
+<rect x="16" y="98" width="348" height="150" fill="#fff" stroke="#e4ddd2"/>
+<text x="190" y="122" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Début : chair</text>
+<text x="190" y="148" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Un membre impur : on le brûle.</text>
+<text x="190" y="170" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le reste : on le mange.</text>
+<text x="190" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Le partiel n'équivaut pas au tout.</text>
+<text x="190" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Modèle de l'arela partielle.</text>
+<rect x="376" y="98" width="348" height="150" fill="#fff" stroke="#e4ddd2"/>
+<text x="550" y="122" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Fin : personnes</text>
+<text x="550" y="148" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Autres zevahim : arel et tamei</text>
+<text x="550" y="170" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">envoient leur korban.</text>
+<text x="550" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Pessah : ils n'envoient pas.</text>
+<text x="550" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Il faut être apte à manger.</text>
+<rect x="16" y="264" width="708" height="28" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="370" y="283" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">Autre voie : début et fin, tuma de la chair</text>
+<rect x="16" y="300" width="348" height="160" fill="#fff" stroke="#e4ddd2"/>
+<text x="190" y="324" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Autres zevahim</text>
+<text x="190" y="350" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Helev impur, chair là :</text>
+<text x="190" y="372" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">on jette le sang.</text>
+<text x="190" y="400" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Chair impure, helev là :</text>
+<text x="190" y="422" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">on jette le sang aussi.</text>
+<rect x="376" y="300" width="348" height="160" fill="#fff" stroke="#e4ddd2"/>
+<text x="550" y="324" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Pessah</text>
+<text x="550" y="350" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Helev impur, chair là :</text>
+<text x="550" y="372" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2f5c2f">on jette le sang.</text>
+<text x="550" y="400" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Chair impure, helev là :</text>
+<text x="550" y="422" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#8a4b3a">on ne jette pas.</text>
+<rect x="16" y="474" width="708" height="32" rx="4" fill="#fbfaf7" stroke="#c8c0b4"/>
+<text x="370" y="495" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Au Pessah, le helev pour l'autel ne tient pas lieu de la chair que les propriétaires mangent.</text>
+</svg></div>
+          <figcaption>Ravina : le début parle de la chair, la fin des personnes. Autre voie : les deux parlent de la chair, et le Pessah ne jette le sang que si la chair subsiste.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בְּהַאי קְרָא קָמִיפַּלְגִי: ״וְנִרְצָה לוֹ לְכַפֵּר עָלָיו״ — עָלָיו וְלֹא עַל חֲבֵירוֹ. רַבָּה סָבַר: חֲבֵירוֹ דּוּמְיָא דִידֵיהּ. מָה הוּא דְּבַר כַּפָּרָה — אַף חֲבֵירוֹ דְּבַר כַּפָּרָה, לְאַפּוֹקֵי הַאי עָרֵל דְּלָאו בַּר כַּפָּרָה הוּא.</div>
+            <div class="fr"><p>Ils divergent sur ce verset : &quot;Il sera agréé pour lui, pour expier pour lui&quot; : pour lui, et non pour son prochain. Rabba tient : son prochain doit être semblable à lui.</p><p>De même que lui est bar kapara (apte à l&#x27;expiation), de même son prochain doit être bar kapara. Pour exclure cet arel (incirconcis), qui n&#x27;est pas bar kapara.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בהאי קרא פליגי</b> וכשיתכפרו בו ערלים דקאמר שאין מנויין עליו קאמר ומשום מחשבת שלא למנוייו קאמרי אבל במנויין עליו ושחטו למולים שהן נמי מנויין לזרוק דמו למנוייו ערלים שבהם לבדם דהויא כולה זריקה לערלים מנוייו דכולי עלמא פסול ובערלים שאינן מנויין ומשום מחשבת שלא למנוייו פליגי ובהאי קרא דשלא למנוייו בזריקה מהכא נפיק בכל הקרבנות לכפר עליו היינו זריקה עליו ולא על הזורק לשם חבירו:</div>
+          <div class="glose-fr">Ils divergent sur ce verset. Quand il parle d&#x27;arelim qui se feraient expier par lui, il parle d&#x27;arelim qui ne sont pas inscrits sur lui, et ils visent une mahshava shelo le-manuyav (pensée pour qui n&#x27;est pas inscrit). Mais s&#x27;ils sont inscrits sur lui, qu&#x27;on a abattu pour des circoncis qui sont eux aussi inscrits, afin de jeter le sang pour les arelim inscrits parmi eux, pour eux seuls, de sorte que toute la zerika soit pour des arelim inscrits : tout le monde rend passoul. Ils divergent au sujet d&#x27;arelim qui ne sont pas inscrits, à cause d&#x27;une mahshava shelo le-manuyav. Et ce verset, d&#x27;où l&#x27;on tire shelo le-manuyav pour la zerika, vaut pour tous les korbanot. &quot;Pour expier pour lui&quot;, c&#x27;est la zerika : pour lui, et non pour celui qui jette au nom de son prochain.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>רבה סבר חבירו</b> דפסול משום שינוי בעלים דומיא דידיה בעינן מה הוא דבר כפרה כו&#x27;:</div>
+          <div class="glose-fr">Rabba tient : le prochain rendu passoul à cause du shinui baalim (changement de propriétaire), nous l&#x27;exigeons semblable à lui. De même que lui est bar kapara, et la suite.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le verset, "pour expier pour lui", vise la <b>zerika</b>. L'expiation vaut pour lui, et elle ne vaut pas pour un autre. Rabba limite le passoul du <b>shinui baalim</b> à un prochain qui est <b>bar kapara</b>. L'<b>arel</b> est hors de l'expiation du Pessah : une zerika pensée pour lui laisse le korban kacher.</p><p>Rachi place le débat. Des arelim <b>inscrits</b>, si toute la zerika est pour eux, tout le monde rend passoul. La divergence porte sur des arelim <b>non inscrits</b>, au titre de <b>shelo le-manuyav</b>.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 400" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="400" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Lekhaper alav : quel prochain rend passoul ?</text>
+<rect x="16" y="42" width="708" height="40" rx="4" fill="#efeae2" stroke="#cfc6b8"/>
+<text x="370" y="67" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">Pour lui, et non pour son prochain. La zerika expie un bar kapara.</text>
+<rect x="16" y="98" width="348" height="36" fill="#eef3f7" stroke="#5d7385"/>
+<text x="190" y="121" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#3d5566">Rabba</text>
+<rect x="376" y="98" width="348" height="36" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="550" y="121" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#6b5344">Rav Hisda</text>
+<rect x="16" y="142" width="348" height="190" fill="#fff" stroke="#e4ddd2"/>
+<text x="190" y="170" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">Le prochain doit lui ressembler.</text>
+<text x="190" y="194" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">Lui : bar kapara.</text>
+<text x="190" y="218" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">Le prochain : bar kapara.</text>
+<text x="190" y="242" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">L'arel n'est pas bar kapara.</text>
+<text x="190" y="274" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Penser à lui : kacher</text>
+<text x="190" y="296" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">il est hors de l'expiation</text>
+<rect x="376" y="142" width="348" height="190" fill="#fff" stroke="#e4ddd2"/>
+<text x="550" y="170" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">L'arel est bar hiyuva.</text>
+<text x="550" y="194" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">Le Pessah lui incombe.</text>
+<text x="550" y="218" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">Ho'il : s'il veut, il se circoncit.</text>
+<text x="550" y="242" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">Il compte comme bar kapara.</text>
+<text x="550" y="274" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Penser à lui : passoul</text>
+<text x="550" y="296" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">la zerika vise un apte</text>
+<rect x="16" y="348" width="708" height="36" rx="4" fill="#fbfaf7" stroke="#c8c0b4"/>
+<text x="370" y="371" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Rachi : des arelim inscrits, toute la zerika pour eux, tout le monde rend passoul. Le débat : des non-inscrits.</text>
+</svg></div><div class="svg-cap">Rabba : l&#x27;arel n&#x27;est pas bar kapara, penser à lui laisse kacher. Rav Hisda : ho&#x27;il, il peut se circoncire, penser à lui rend passoul.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְרַב חִסְדָּא סָבַר: הַאי עָרֵל נָמֵי, כֵּיוָן דְּבַר חִיּוּבָא הוּא — בַּר כַּפָּרָה הוּא, [הוֹאִיל] דְּאִי בָּעֵי מְתַקֵּן נַפְשֵׁיהּ.</div>
+            <div class="fr"><p>Et Rav Hisda tient : cet arel aussi, puisqu&#x27;il est bar hiyuva (soumis à l&#x27;obligation), il est bar kapara, puisque, s&#x27;il le veut, il se rend apte.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מתקן נפשיה</b> מל את עצמו:</div>
+          <div class="glose-fr">Il se rend apte : il se circoncit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Hisda tient l'arel pour <b>bar hiyuva</b> : le Pessah lui incombe. Le <b>ho'il</b> (puisque) ajoute : s'il veut, il se circoncit et devient apte. Il compte donc déjà comme <b>bar kapara</b>, et une zerika pensée pour lui rend le Pessah passoul.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּמִי אִית לֵיהּ לְרַב חִסְדָּא ״הוֹאִיל״? וְהָא אִיתְּמַר: הָאוֹפֶה מִיּוֹם טוֹב לְחוֹל, רַב חִסְדָּא אָמַר: לוֹקֶה. רַבָּה אָמַר: אֵינוֹ לוֹקֶה.</div>
+            <div class="fr"><p>Et Rav Hisda a-t-il le ho&#x27;il (puisque) ? Or on a enseigné : celui qui cuit le jour de fête pour un jour de semaine, Rav Hisda dit : il reçoit des malkot (coups).</p><p>Rabba dit : il ne reçoit pas de malkot.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le <b>ho'il</b> que Rav Hisda vient d'employer pour l'arel est confronté à un autre débat. Cuire le <b>Yom Tov</b> pour la semaine : Rav Hisda inflige les <b>malkot</b>, Rabba les écarte.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבָּה אָמַר אֵינוֹ לוֹקֶה: אָמְרִינַן ״הוֹאִיל וְאִי מִקַּלְעִי לֵיהּ אוֹרְחִים חֲזֵי לֵיהּ, הַשְׁתָּא נָמֵי חֲזֵי לֵיהּ״ וְלָא לָקֵי. רַב חִסְדָּא אָמַר לוֹקֶה: לָא אָמְרִינַן ״הוֹאִיל״.</div>
+            <div class="fr"><p>Rabba dit qu&#x27;il ne reçoit pas de malkot : nous disons &quot;ho&#x27;il, si des hôtes lui arrivent, cela lui est propre ; maintenant aussi, cela lui est propre&quot;, et il ne reçoit pas de coups. Rav Hisda dit qu&#x27;il reçoit des malkot : nous ne disons pas ho&#x27;il.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הואיל ואי מיקלעי ליה אורחים חזי ליה לא לקי</b> ואע&quot;ג דאיהו השתא לא סעד ליה ולא צריך למידי:</div>
+          <div class="glose-fr">Puisque, si des hôtes lui arrivent, cela lui est propre, il ne reçoit pas de coups. Et ce, même si lui, maintenant, n&#x27;en mange pas et n&#x27;en a aucun besoin.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Pour Rabba, la cuisson du Yom Tov peut encore servir le jour même : des hôtes peuvent arriver. L'acte a donc un usage permis, et les <b>malkot</b> tombent. Rav Hisda refuse ce <b>ho'il</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בִּשְׁלָמָא דְּרַבָּה אַדְּרַבָּה לָא קַשְׁיָא: הָכָא מְחוּסָּר מַעֲשֶׂה, הָתָם דְּלָא מְחוּסָּר מַעֲשֶׂה. אֶלָּא דְּרַב חִסְדָּא אַדְּרַב חִסְדָּא קַשְׁיָא! אָמְרִי: כִּי לֵית לֵיהּ לְרַב חִסְדָּא ״הוֹאִיל״ — לְקוּלָּא, לְחוּמְרָא — אִית לֵיהּ.</div>
+            <div class="fr"><p>Passe encore pour Rabba face à Rabba, il n&#x27;y a pas de difficulté : ici, un acte manque ; là, aucun acte ne manque. Mais Rav Hisda face à Rav Hisda, c&#x27;est difficile !</p><p>On dit : quand Rav Hisda n&#x27;a pas le ho&#x27;il, c&#x27;est pour la kola (souplesse) ; pour la houmera (rigueur), il l&#x27;a.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אלא דרב חסדא קשיא</b> השתא היכא דלא מחוסר מעשה כגון זימון אורחים דלאו מעשה הוא לית ליה הואיל הכא גבי ערל דמחוסר מעשה אית ליה הואיל:</div>
+          <div class="glose-fr">Mais Rav Hisda est difficile. Maintenant, là où aucun acte ne manque, comme inviter des hôtes, ce qui n&#x27;est pas un acte, il n&#x27;a pas le ho&#x27;il. Ici, pour l&#x27;arel, où un acte manque, il aurait le ho&#x27;il.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לקולא</b> לפוטרו ממלקות:</div>
+          <div class="glose-fr">Pour la kola : pour l&#x27;exempter des malkot.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לחומרא</b> לפסול בפסחים:</div>
+          <div class="glose-fr">Pour la houmera : pour rendre passoul dans les pessahim.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>האי מחוסר מעשה כו&#x27;</b> הקשה ריב&quot;א דבפ&#x27; אלו עוברין (פסחים דף מז:) מסיק כתישה בי&quot;ט מי שרי משמע אי הוה שרי אמרינן הואיל אע&quot;ג דמחוסר מעשה ותירץ ר&quot;י דהאי מעשה דמילה חשיב טפי:</div>
+          <div class="glose-fr">Cet acte qui manque, etc. Riva objecte : au chapitre Elou Ovrin (Pessahim 47b), on conclut : &quot;piler le jour de fête, est-ce permis ?&quot; On entend que, si c&#x27;était permis, on dirait ho&#x27;il, bien qu&#x27;un acte manque. Ri répond : cet acte de la mila (circoncision) est plus considérable.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כי לית ליה לקולא וכו&#x27;</b> נראה דרב חסדא לא פסל אלא מדרבנן דמדאוריי&#x27; לא שייך לחלק בין לחומרא בין לקולא ומדאוריי&#x27; לא אמרינן הואיל כלל אפי&#x27; לחומרא וכן מוכח בר&quot;פ שני שעירים (יומא דס&quot;ב:) דקאמר רבינא השתא דאמר ר&quot;ח מחוסר הגרלה כמחוסר מעשה דמי פי&#x27; אם שחט שעיר יום הכפורים בחוץ היה פטור משום דמחוסר הגרלה אי לאו משום דחזי לשעיר חיצון שלמים ששחטן קודם פתיחת ההיכל פטור מחוסר פתיחה כמחוסר מעשה דמי אלמא לית ליה הואיל אפילו לחומרא ואין להקשות אי מדרבנן היאך יתחייב פסח אחר הא קמייתי חולין לעזרה לא היא כיון דלא יזרוק הדם אינו יוצא ומותר לצאת באחר וכן מוכח בכיצד צולין דאמר רב לא זרק את הדם חייב לעשות פסח אחר כו&#x27; (תימה דהשתא לרב אשי דמחשבת ערלים המנויין לכ&quot;ע פסל אף בזריקה וכשאינם מנויין איכא מאן דמכשר וסברא משמע איפכא דהשתא כשאינה מנויין לא פסלה כ&quot;ש במנויין):</div>
+          <div class="glose-fr">Quand il ne l&#x27;a pas pour la kola, etc. Il paraît que Rav Hisda ne rend passoul que mi-derabbanan (par décret des sages). Mi-deoraita (au niveau de la Torah), on ne sépare pas la houmera de la kola, et mi-deoraita on ne dit ho&#x27;il en aucun cas, même pour la houmera. C&#x27;est aussi prouvé au début du chapitre Shnei Seirim (Yoma 62b), où Ravina dit : maintenant que Rav Hisda a dit, celui à qui manque le tirage au sort est comme celui à qui manque un acte. Explication : s&#x27;il avait abattu le bouc de Yom Kippour à l&#x27;extérieur, il serait exempt, parce qu&#x27;il manque le tirage au sort, n&#x27;était qu&#x27;il est apte au bouc extérieur. Des shelamim abattus avant l&#x27;ouverture du Heikhal : exempt. Il manque l&#x27;ouverture, ce qui compte comme un acte manquant. On voit qu&#x27;il n&#x27;a pas le ho&#x27;il, même pour la houmera. Et il ne faut pas objecter : si c&#x27;est mi-derabbanan, comment serait-il tenu d&#x27;un autre Pessah ? Il apporterait du houlin (profane) dans l&#x27;azara. Réponse : cela ne tient pas. Puisqu&#x27;il ne jettera pas le sang, il n&#x27;est pas quitte, et il est permis de se rendre quitte par un autre. C&#x27;est aussi prouvé dans Keitsad Tsolin, où Rav dit : s&#x27;il n&#x27;a pas jeté le sang, il est tenu de faire un autre Pessah, et la suite. (Difficulté : maintenant, selon Rav Ashi, la mahshava d&#x27;arelim inscrits, tout le monde la rend passoul, même à la zerika ; et quand ils ne sont pas inscrits, il y a une opinion qui déclare kacher. Le raisonnement semblerait inverse : maintenant, quand ils ne sont pas inscrits, elle ne rend pas passoul, à plus forte raison quand ils le sont.)</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Ici</b>, l'arel du Pessah : la <b>mila</b> manque, c'est un acte, et Rabba ne dit pas ho'il. <b>Là</b>, la cuisson : l'arrivée d'hôtes n'est pas un acte, et Rabba dit ho'il. Ses deux avis se tiennent.</p><p>Rav Hisda paraît à l'envers : il refuse le ho'il là où aucun acte ne manque, et il l'accepte pour l'arel. Réponse : il refuse le ho'il <b>lekoula</b>, pour dispenser des coups. Il l'accepte <b>lehoumra</b>, pour rendre le Pessah passoul.</p><p>Tossefot : Ri distingue la mila, acte plus considérable, du pilage du grain. Le passoul de Rav Hisda est ensuite lu comme <b>mi-derabbanan</b>. Au niveau de la Torah, le ho'il ne se partage pas entre kola et houmera.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 420" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="420" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Ho'il : quand l'acte manque, kola ou houmera</text>
+<rect x="16" y="44" width="168" height="36" fill="#efeae2" stroke="#cfc6b8"/>
+<text x="100" y="67" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#5c5348">Cas</text>
+<rect x="192" y="44" width="160" height="36" fill="#efeae2" stroke="#cfc6b8"/>
+<text x="272" y="67" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#5c5348">Acte manquant</text>
+<rect x="360" y="44" width="176" height="36" fill="#eef3f7" stroke="#5d7385"/>
+<text x="448" y="67" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#3d5566">Rabba</text>
+<rect x="544" y="44" width="180" height="36" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="634" y="67" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#6b5344">Rav Hisda</text>
+<rect x="16" y="88" width="168" height="130" fill="#fff" stroke="#e4ddd2"/>
+<text x="100" y="128" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Pessah</text>
+<text x="100" y="150" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">zerika pour un arel</text>
+<text x="100" y="178" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">sujet de l'amoud</text>
+<rect x="192" y="88" width="160" height="130" fill="#fff" stroke="#e4ddd2"/>
+<text x="272" y="140" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">oui</text>
+<text x="272" y="162" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">la mila</text>
+<rect x="360" y="88" width="176" height="130" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="448" y="136" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">pas de ho'il</text>
+<text x="448" y="160" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">kacher</text>
+<rect x="544" y="88" width="180" height="130" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="634" y="128" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">ho'il</text>
+<text x="634" y="152" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">passoul</text>
+<text x="634" y="176" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">houmera</text>
+<rect x="16" y="226" width="168" height="130" fill="#fff" stroke="#e4ddd2"/>
+<text x="100" y="266" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Cuire le Yom Tov</text>
+<text x="100" y="288" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">pour un jour de semaine</text>
+<rect x="192" y="226" width="160" height="130" fill="#fff" stroke="#e4ddd2"/>
+<text x="272" y="278" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">non</text>
+<text x="272" y="300" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">des hôtes peuvent venir</text>
+<rect x="360" y="226" width="176" height="130" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="448" y="274" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">ho'il</text>
+<text x="448" y="298" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">pas de malkot</text>
+<rect x="544" y="226" width="180" height="130" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="634" y="266" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">pas de ho'il</text>
+<text x="634" y="290" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">malkot</text>
+<text x="634" y="314" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#5c5348">kola</text>
+<rect x="16" y="370" width="708" height="36" rx="4" fill="#fbfaf7" stroke="#c8c0b4"/>
+<text x="370" y="393" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Rabba suit l'acte manquant. Rav Hisda : ho'il pour la houmera, refus pour la kola.</text>
+</svg></div><div class="svg-cap">Rabba : ho&#x27;il seulement si aucun acte ne manque. Rav Hisda : ho&#x27;il pour rendre le Pessah passoul, refus pour dispenser des malkot.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ מָר זוּטְרָא בְּרֵיהּ דְּרַב מָרִי לְרָבִינָא: קָתָנֵי, הוֹאִיל וְעָרְלָה פּוֹסֶלֶת וְטוּמְאָה פּוֹסֶלֶת, מָה טוּמְאָה לֹא עָשָׂה בָּהּ מִקְצָת טוּמְאָה כְּכׇל טוּמְאָה — אַף עׇרְלָה לֹא עָשָׂה מִקְצָת עׇרְלָה כְּכׇל עׇרְלָה. הַאי טוּמְאָה הֵיכִי דָמֵי? אִילֵּימָא בְּטוּמְאַת גַּבְרֵי, וּמַאי ״לֹא עָשָׂה בָּהּ מִקְצָת טוּמְאָה כְּכׇל טוּמְאָה״ — דְּאִי אִיכָּא אַרְבְּעָה וְחַמְשָׁה גַּבְרֵי טְמֵאִין וְאַרְבְּעָה וְחַמְשָׁה גַּבְרֵי טְהוֹרִין, לָא פָּסְלִי לְהוּ טְמֵאִין לִטְהוֹרִין,</div>
+            <div class="fr"><p>Mar Zutra, fils de Rav Mari, dit à Ravina : on enseigne : puisque l&#x27;arela (l&#x27;incirconcision) invalide et que la tuma (l&#x27;impureté) invalide, de même que pour la tuma on n&#x27;a pas traité une tuma partielle comme toute la tuma, de même pour l&#x27;arela on n&#x27;a pas traité une arela partielle comme toute l&#x27;arela. Cette tuma, comment est-elle ?</p><p>Si tu dis : la tuma des personnes, et que signifie &quot;on n&#x27;a pas traité en elle une tuma partielle comme toute la tuma&quot; ? S&#x27;il y a quatre ou cinq hommes temeim et quatre ou cinq hommes tehorim, les temeim ne rendent pas passoul pour les tehorim,</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בטומאת גברי</b> שנמנו עליו טמאים וטהורים וכדפרישית לעיל:</div>
+          <div class="glose-fr">La tuma des personnes : des temeim et des tehorim se sont inscrits sur lui, comme on l&#x27;a expliqué plus haut.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לא פסלי להן טמאין</b> לפסח על הטהורין:</div>
+          <div class="glose-fr">Les temeim ne rendent pas le Pessah passoul pour les tehorim.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Mar Zutra reprend la <b>baraita</b>. Elle apprend l'<b>arela</b> partielle de la <b>tuma</b> partielle : une part d'inaptes ne donne pas au korban le din du tout. Première lecture : la tuma des <b>personnes</b> inscrites. Quatre ou cinq temeim avec autant de tehorim : les temeim ne rendent pas le Pessah passoul pour les tehorim.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">גַּבֵּי עׇרְלָה נָמֵי הָא לָא פָּסְלִי, דִּתְנַן: לְמוּלִין וְלַעֲרֵלִים — כָּשֵׁר. מַאי שְׁנָא טוּמְאָה דִּפְשִׁיטָא לֵיהּ, וּמַאי שְׁנָא עׇרְלָה דִּמְסַפְּקָא לֵיהּ?</div>
+            <div class="fr"><p>pour l&#x27;arela aussi, ils ne rendent pas passoul, car la michna enseigne : pour des circoncis et des incirconcis, c&#x27;est kacher. En quoi la tuma lui est-elle évidente, et en quoi l&#x27;arela lui est-elle douteuse ?</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מאי שנא טומאה דפשיטא ליה ומאי שנא ערלה דמספקא ליה</b> תימה לרשב&quot;א דלמא טומאה פשיטא ליה משום דילפינן טומאת גברי מטומאת בשר וכי תימא דמשמע ליה דאי פשיטא לן בטומאת גברי דלא עשה בה מקצת טומאה ככל טומאה הוא הדין בערלה משום דמחד קרא דלפי אכלו נפקי ותו לא הוה שייך למילף מזמן מכל מקום מאי קאמר דנין דבר שלא הותר מכללו כו&#x27; הא ע&quot;כ איכא למילף טפי טומאת גברי מטומאת בשר דהוי טומאה מטומאה ודמי ליה בכל צד מדנילף טומאת גברי מזמן דלא דמי ליה כלל וכיון דפשיטא לן בטומאה דגברי פשיטא לן נמי בערלה כיון שיש להשוותם והיכי קבעי למילף ערלה מזמן ואומר ר&quot;י דטומאת גברי נמי איכא למימר דנילף טפי מזמן מדנילף מטומאת בשר משום דדנין פסול מחשבה מפסול מחשבה ולא תוכיח טומאת בשר דלא הוי פסול מחשבה:</div>
+          <div class="glose-fr">En quoi la tuma lui est-elle évidente, et en quoi l&#x27;arela lui est-elle douteuse ? Difficulté pour le Rachba : peut-être la tuma lui est-elle évidente parce que nous apprenons la tuma des personnes de la tuma de la chair. Et si tu dis que voici ce qui lui paraît : si la tuma des personnes nous est évidente, qu&#x27;on n&#x27;y a pas traité une tuma partielle comme toute la tuma, il en va de même pour l&#x27;arela, puisqu&#x27;elles sortent d&#x27;un seul verset, &quot;selon ce qu&#x27;il mange&quot;, et qu&#x27;il n&#x27;y aurait plus lieu d&#x27;apprendre du zman. De toute façon, que vient-il dire : &quot;on déduit une chose qui n&#x27;a pas été permise hors de son interdit&quot;, et la suite ? De toute nécessité, on apprend mieux la tuma des personnes de la tuma de la chair, car c&#x27;est une tuma apprise d&#x27;une tuma, et elle lui ressemble de tout côté, que de l&#x27;apprendre du zman, qui ne lui ressemble en rien. Et puisque la tuma des personnes nous est évidente, l&#x27;arela nous est évidente aussi, puisqu&#x27;il y a lieu de les égaler. Comment cherche-t-il à apprendre l&#x27;arela du zman ? Ri dit : pour la tuma des personnes aussi, on peut dire qu&#x27;on apprend mieux du zman que de la tuma de la chair, parce qu&#x27;on déduit un passoul de mahshava (pensée) d&#x27;un passoul de mahshava. La tuma de la chair ne sert pas de preuve : elle n&#x27;est pas un passoul de mahshava.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La lecture par les personnes bloque. La <b>michna</b> enseigne déjà : shehita pour des circoncis et des incirconcis, le Pessah est <b>kacher</b>. L'arela partielle laisse elle aussi le korban kacher. Les deux cas sont clairs, et la baraita reste à expliquer : pourquoi prouver l'arela par la tuma, et pourquoi l'une est évidente tandis que l'autre est douteuse.</p><p>Tossefot, Ri : la tuma des personnes s'apprend du <b>zman</b>, car on rapproche un <b>passoul de mahshava</b> d'un passoul de mahshava. La tuma de la chair est un passoul de la chose elle-même.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 220" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="220" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Pourquoi la tuma est évidente et l'arela douteuse ?</text>
+<rect x="16" y="48" width="348" height="120" fill="#eef3f7" stroke="#5d7385"/>
+<text x="190" y="76" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5566">Tuma des personnes</text>
+<text x="190" y="104" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">4 ou 5 temeim, 4 ou 5 tehorim</text>
+<text x="190" y="128" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">les temeim ne rendent pas passoul</text>
+<text x="190" y="150" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">pour Mar Zutra, c'est clair</text>
+<rect x="376" y="48" width="348" height="120" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="550" y="76" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">Arela</text>
+<text x="550" y="104" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">michna : mulin et arelim</text>
+<text x="550" y="128" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2f5c2f">kacher</text>
+<text x="550" y="150" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">le partiel n'invalide pas non plus</text>
+<rect x="16" y="180" width="708" height="28" rx="4" fill="#fff" stroke="#e4ddd2"/>
+<text x="370" y="199" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Les deux partiels laissent kacher. La baraita doit viser une autre tuma.</text>
+</svg></div><div class="svg-cap">Tuma des personnes et arela partielle aboutissent au même kacher. Mar Zutra demande pourquoi l&#x27;une est évidente et l&#x27;autre douteuse.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא בְּטוּמְאַת בָּשָׂר, וּמַאי לֹא עָשָׂה בָּהּ מִקְצָת טוּמְאָה כְּכׇל טוּמְאָה? דְּאִילּוּ אִיטַּמִּי חַד מֵאֵבָרִים — הַאי דְּאִיטַּמִּי שָׂרְפִינַן לֵיהּ, וְאִידַּךְ — אָכְלִינַן לֵיהּ.</div>
+            <div class="fr"><p>Dis plutôt : la tuma de la chair. Et que signifie &quot;on n&#x27;a pas traité en elle une tuma partielle comme toute la tuma&quot; ?</p><p>Si l&#x27;un des membres est devenu impur : celui qui est devenu impur, nous le brûlons ; et le reste, nous le mangeons.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Autre lecture : la <b>tuma de la chair</b>. Un membre impur se brûle, le reste se mange. Le partiel n'a pas reçu le din du tout. C'est le modèle dont la baraita apprend l'arela partielle.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 180" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="180" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Tuma de la chair : un membre, pas tout le korban</text>
+<rect x="16" y="48" width="220" height="90" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="126" y="80" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Membre impur</text>
+<text x="126" y="106" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">on le brûle</text>
+<rect x="260" y="48" width="220" height="90" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="370" y="80" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Le reste</text>
+<text x="370" y="106" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">on le mange</text>
+<rect x="504" y="48" width="220" height="90" fill="#efeae2" stroke="#cfc6b8"/>
+<text x="614" y="80" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#5c5348">Toute la chair</text>
+<text x="614" y="106" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2b2b2b">serait interdite</text>
+<rect x="16" y="150" width="708" height="20" fill="#fbfaf7"/>
+<text x="370" y="164" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Le partiel n'a pas reçu le din du tout. Modèle proposé pour l'arela.</text>
+</svg></div><div class="svg-cap">Un membre impur se brûle, le reste se mange. La tuma partielle n&#x27;entraîne pas le din de toute la chair.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בְּמַאי אוֹקֵימְתָּא — בְּטוּמְאַת בָּשָׂר? אֵימָא סֵיפָא: דָּנִין דָּבָר שֶׁאֵינוֹ נוֹהֵג בְּכׇל הַזְּבָחִים מִדָּבָר שֶׁאֵינוֹ נוֹהֵג בְּכׇל הַזְּבָחִים, וְאַל יוֹכִיחַ זְמַן שֶׁנּוֹהֵג בְּכׇל הַזְּבָחִים. וּמַאי טוּמְאָה? אִי נֵימָא טוּמְאַת בָּשָׂר, אַמַּאי אֵינוֹ נוֹהֵג בְּכׇל הַזְּבָחִים?</div>
+            <div class="fr"><p>Sur quoi l&#x27;établis-tu ? Sur la tuma de la chair ?</p><p>Dis la fin : on déduit une chose qui ne se pratique pas dans tous les zevahim d&#x27;une chose qui ne se pratique pas dans tous les zevahim, et que le zman (l&#x27;intention hors du temps), qui se pratique dans tous les zevahim, ne serve pas de preuve. Et quelle tuma ?</p><p>Si l&#x27;on dit la tuma de la chair, pourquoi ne se pratique-t-elle pas dans tous les zevahim ?</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La fin de la baraita serre cette lecture. On apprend une règle absente de <b>tous les zevahim</b> d'une règle du même genre. Le <b>zman</b>, présent dans tous, ne prouve pas. La tuma de la chair se pratique dans tous les sacrifices : elle sort du modèle que la fin appelle une chose qui ne se pratique pas dans tous les zevahim.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא פְּשִׁיטָא בְּטוּמְאַת גַּבְרֵי, וּמַאי אֵינוֹ נוֹהֵג בְּכׇל הַזְּבָחִים? דְּאִילּוּ בְּכׇל הַזְּבָחִים — עָרֵל וְטָמֵא מְשַׁלְּחִין קׇרְבְּנוֹתֵיהֶן, וְאִילּוּ בְּפֶסַח — עָרֵל וְטָמֵא אֵין מְשַׁלְּחִין פִּסְחֵיהֶן. רֵישָׁא בְּטוּמְאַת בָּשָׂר וְסֵיפָא בְּטוּמְאַת גַּבְרֵי!</div>
+            <div class="fr"><p>Dis plutôt, c&#x27;est évident : la tuma des personnes. Et que signifie &quot;elle ne se pratique pas dans tous les zevahim&quot; ?</p><p>Dans tous les zevahim, l&#x27;arel et le tamei envoient leurs korbanot ; pour le Pessah, l&#x27;arel et le tamei n&#x27;envoient pas leurs pessahim. Le début porterait sur la tuma de la chair, et la fin sur la tuma des personnes !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אלא פשיטא בטומאת גברי</b> שאפילו פסח שלא הותר ליחיד טמא לשלח פסחו לעזרה לשחוט הותר לציבור טמאין להביא פסחיהן בטומאה אם רובן טמאין נמצא שהותרה מכלל איסורה:</div>
+          <div class="glose-fr">Dis plutôt, c&#x27;est évident : la tuma des personnes. Même le Pessah, qui n&#x27;a pas été permis à un particulier tamei d&#x27;envoyer son Pessah à l&#x27;azara pour qu&#x27;on l&#x27;abatte, a été permis à un public de temeim d&#x27;apporter leurs pessahim en tuma si la majorité est temea. Il se trouve qu&#x27;elle a été permise hors de son interdit.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ערל וטמא משלחין קרבנותיהן</b> בעזרה חוץ מפסח דבעינן ראוי לאוכלו שאכילת בעליו מעכבת בו דכתיב לפי אכלו תכוסו:</div>
+          <div class="glose-fr">L&#x27;arel et le tamei envoient leurs korbanot dans l&#x27;azara, sauf le Pessah, car nous exigeons qu&#x27;il soit apte à le manger : la consommation de ses propriétaires fait obstacle en lui, car il est écrit &quot;selon ce qu&#x27;il mange, vous compterez&quot;.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ערל משלח קרבנות וטמא משלח כו&#x27;</b> כרבי עקיבא אתיא דמרבי ערל כי טמא בחגיגה (דף ד:) דאי לאו הכי לייתי איהו גופיה קרבנותיו וקשה לר&quot;י בריש חגיגה (שם) טמא פטור מן הראייה שנאמר ובאת שמה והבאתם שמה כל שישנו בביאה ישנו בהבאה וכל שאינו כו&#x27; משמע דטמא אינו משלח שום קרבן דבההוא קרא גופיה כתיבי שאר קרבנות עולותיכם וזבחיכם וגו&#x27; ואומר ר&quot;י דמכל מקום דווקא בחגיגה שתלויה בביאה קפיד קרא ואע&quot;ג דכל הקרבנות כתיבי בקרא לא קאי אכולהו דהא מעשרות ותרומה כתיבי נמי התם ועוד קשה לר&quot;י טמא איך משלח קרבנות והא בעי סמיכה ואפילו למאן דאמר ביאה במקצת לא שמה ביאה ליכא למימר אפשר דמעייל ידיה וסמיך דהא בפרק כל הפסולים (זבחים דף לג.) אמרינן כל הסומך ראשו ורובו מכניס מאי טעמא כל כחו בעינן ותירץ ר&quot;י דהכא מיירי בעופות וכן משני בכל הגט (גיטין דף כח:) אי נמי בבכור ומעשר דלא בעי סמיכה כדתנן פרק שתי מדות (מנחות דף צב:) ובקרבן נשים ליכא לאוקמי משום ערל: [וע&quot;ע תוס&#x27; יבמות קד:</div>
+          <div class="glose-fr">Un arel envoie des korbanot, et un tamei envoie, et la suite. Cela vient selon Rabbi Akiva, qui étend l&#x27;arel comme le tamei, dans Hagiga 4b. Sans cela, il apporterait lui-même ses korbanot. C&#x27;est difficile pour Ri, au début de Hagiga, là-même : le tamei est exempt de la reiya (présentation), car il est dit &quot;tu viendras là-bas&quot; et &quot;vous apporterez là-bas&quot; : quiconque est dans la venue est dans l&#x27;apport, et quiconque n&#x27;y est pas, la suite. On entend que le tamei n&#x27;envoie aucun korban, car dans ce verset même sont écrits les autres korbanot : &quot;vos olot et vos zevahim&quot;, et la suite. Ri dit : le verset n&#x27;est exigeant que pour la hagiga, qui dépend de la venue. Bien que tous les korbanot soient écrits dans le verset, cela ne porte pas sur tous, puisque les maasserot et la teruma y sont aussi écrits. Autre difficulté pour Ri : comment le tamei envoie-t-il des korbanot, alors que la semikha (imposition des mains) est exigée ? Même selon celui qui dit qu&#x27;une entrée partielle ne porte pas le nom d&#x27;entrée, il n&#x27;y a pas lieu de dire qu&#x27;il ferait entrer sa main et ferait la semikha. Au chapitre Kol ha-Pesoulim (Zevahim 33a), on dit : quiconque fait la semikha fait entrer sa tête et la majeure partie de son corps. Pourquoi ? Nous exigeons toute sa force. Ri répond : ici on parle d&#x27;oiseaux. On répond de même dans Kol ha-Get (Gittin 28b). Ou encore : un bekhor et le maasser, qui n&#x27;exigent pas de semikha, comme la michna l&#x27;enseigne au chapitre Shtei Midot (Menahot 92b). On ne place pas le cas sur le korban des femmes, à cause de l&#x27;arel. [Voir aussi Tossefot Yevamot 104b</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">ד&quot;ה דאמר]</div>
+          <div class="glose-fr">au dibour hamatchil &quot;de-amar&quot;.]</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La fin vise la <b>tuma des personnes</b>. Dans les autres korbanot, l'arel et le tamei <b>envoient</b> leur sacrifice, un autre l'offre pour eux. Au Pessah, ils n'envoient pas le leur : il faut être apte à le manger, <b>lefi okhlo</b>. Le début parlerait de la chair, la fin des personnes.</p><p>Rachi relie "permise hors de son interdit" au Pessah du <b>tsibour</b> : si la majorité est temea, le public apporte le Pessah en tuma, alors qu'un particulier tamei ne peut pas envoyer le sien.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ: אִין, שֵׁם טוּמְאָה קָא פָרֵיךְ.</div>
+            <div class="fr"><p>Il lui dit : oui, c&#x27;est au nom de tuma qu&#x27;il objecte.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Ravina accepte le décalage. La baraita objecte au nom de <b>tuma</b>, le genre, sans exiger que le début et la fin parlent de la même sorte de tuma.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאִיבָּעֵית אֵימָא: סֵיפָא נָמֵי בְּטוּמְאַת בָּשָׂר. וּמַאי ״אֵינוֹ נוֹהֵג בְּכׇל הַזְּבָחִים״? דְּאִילּוּ בְּכׇל הַזְּבָחִים בֵּין שֶׁנִּטְמָא חֵלֶב וּבָשָׂר קַיָּים, בֵּין שֶׁנִּטְמָא בָּשָׂר וְחֵלֶב קַיָּים — זוֹרֵק אֶת הַדָּם.</div>
+            <div class="fr"><p>Et si tu veux, dis : la fin aussi porte sur la tuma de la chair. Et que signifie &quot;elle ne se pratique pas dans tous les zevahim&quot; ?</p><p>Dans tous les zevahim, que le helev (la graisse) soit devenu impur et que la chair subsiste, ou que la chair soit devenue impure et que le helev subsiste, on jette le sang.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ואיבעית אימא</b> לעולם בטומאת בשר ומאי אינו נוהג בכל הזבחים אין מנהגא בשאר זבחים שוה למנהגא בפסח דאילו בשאר זבחים לר&#x27; יהושע דאמר בכיצד צולין (לקמן פסחים דף עז.) אם אין בשר אין דם אם בשר קיים לאכילת אדם או חלב קיים לאכילת מזבח זורק את הדם ואילו פסח לא מהניא אכילת מזבח לזרוק דם עליה אלא אם נשתייר כזית בשר כדתנן בכיצד צולין:</div>
+          <div class="glose-fr">Et si tu veux, dis. C&#x27;est toujours la tuma de la chair. Et que signifie &quot;elle ne se pratique pas dans tous les zevahim&quot; ? La pratique des autres zevahim n&#x27;égale pas la pratique du Pessah. Dans les autres zevahim, selon Rabbi Yehoshoua, qui dit dans Keitsad Tsolin (plus loin, Pessahim 77a) : s&#x27;il n&#x27;y a pas de chair, il n&#x27;y a pas de sang. Si de la chair subsiste pour la consommation de l&#x27;homme, ou si du helev subsiste pour la consommation de l&#x27;autel, on jette le sang. Pour le Pessah, la consommation de l&#x27;autel ne suffit pas pour jeter le sang sur lui : il faut qu&#x27;il reste un kazayit de chair, comme la michna l&#x27;enseigne dans Keitsad Tsolin.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Autre voie : la fin parle elle aussi de la <b>chair</b>. Chez les autres zevahim, il reste de la chair pour l'homme ou du <b>helev</b> pour l'autel : on jette le sang. Rachi le rattache à Rabbi Yehoshoua : s'il n'y a pas de chair, il n'y a pas de sang.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאִילּוּ בְּפֶסַח, נִטְמָא חֵלֶב וּבָשָׂר קַיָּים — זוֹרֵק אֶת הַדָּם, נִטְמָא בָּשָׂר וְחֵלֶב קַיָּים — אֵינוֹ זוֹרֵק אֶת הַדָּם.</div>
+            <div class="fr"><p>Pour le Pessah, le helev est devenu impur et la chair subsiste : on jette le sang ; la chair est devenue impure et le helev subsiste : on ne jette pas le sang.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Au <b>Pessah</b>, la consommation des propriétaires fait obstacle. Helev impur et chair pure : on jette le sang. Chair impure et helev pur : on ne jette pas. Le helev seul, nourriture de l'autel, ne tient pas lieu du kazayit que les baalim mangent.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 520" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="520" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Deux lectures de la baraita</text>
+<text x="370" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">L'arela partielle s'apprend d'une tuma partielle</text>
+<rect x="16" y="62" width="708" height="28" fill="#eef3f7" stroke="#5d7385"/>
+<text x="370" y="81" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5566">Ravina : on objecte au nom de tuma</text>
+<rect x="16" y="98" width="348" height="150" fill="#fff" stroke="#e4ddd2"/>
+<text x="190" y="122" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Début : chair</text>
+<text x="190" y="148" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Un membre impur : on le brûle.</text>
+<text x="190" y="170" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le reste : on le mange.</text>
+<text x="190" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Le partiel n'équivaut pas au tout.</text>
+<text x="190" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Modèle de l'arela partielle.</text>
+<rect x="376" y="98" width="348" height="150" fill="#fff" stroke="#e4ddd2"/>
+<text x="550" y="122" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Fin : personnes</text>
+<text x="550" y="148" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Autres zevahim : arel et tamei</text>
+<text x="550" y="170" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">envoient leur korban.</text>
+<text x="550" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Pessah : ils n'envoient pas.</text>
+<text x="550" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Il faut être apte à manger.</text>
+<rect x="16" y="264" width="708" height="28" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="370" y="283" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">Autre voie : début et fin, tuma de la chair</text>
+<rect x="16" y="300" width="348" height="160" fill="#fff" stroke="#e4ddd2"/>
+<text x="190" y="324" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Autres zevahim</text>
+<text x="190" y="350" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Helev impur, chair là :</text>
+<text x="190" y="372" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">on jette le sang.</text>
+<text x="190" y="400" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Chair impure, helev là :</text>
+<text x="190" y="422" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">on jette le sang aussi.</text>
+<rect x="376" y="300" width="348" height="160" fill="#fff" stroke="#e4ddd2"/>
+<text x="550" y="324" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Pessah</text>
+<text x="550" y="350" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Helev impur, chair là :</text>
+<text x="550" y="372" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2f5c2f">on jette le sang.</text>
+<text x="550" y="400" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Chair impure, helev là :</text>
+<text x="550" y="422" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#8a4b3a">on ne jette pas.</text>
+<rect x="16" y="474" width="708" height="32" rx="4" fill="#fbfaf7" stroke="#c8c0b4"/>
+<text x="370" y="495" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#5c5348">Au Pessah, le helev pour l'autel ne tient pas lieu de la chair que les propriétaires mangent.</text>
+</svg></div><div class="svg-cap">Autres zevahim : chair ou helev qui reste, on jette le sang. Pessah : seule la chair qui reste permet la zerika.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בְּמַאי אוֹקֵימְתָּא — בְּטוּמְאַת בָּשָׂר? אֵימָא סֵיפָא: דָּנִין דָּבָר שֶׁלֹּא הוּתַּר מִכְּלָלוֹ מִדָּבָר שֶׁלֹּא הוּתַּר מִכְּלָלוֹ, וְאַל תּוֹכִיחַ טוּמְאָה שֶׁהֲרֵי הוּתְּרָה מִכְּלָלָהּ. בְּמַאי? אִילֵימָא</div>
+            <div class="fr"><p>Sur quoi l&#x27;établis-tu ? Sur la tuma de la chair ?</p><p>Dis la fin : on déduit une chose qui n&#x27;a pas été permise hors de son interdit, d&#x27;une chose qui n&#x27;a pas été permise hors de son interdit, et que la tuma ne serve pas de preuve, puisqu&#x27;elle a été permise hors de son interdit. Dans quel cas ?</p><p>Si tu dis</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דנין דבר שלא הותר מכללו</b> ערלה במקום שאסרה דהיינו בפסח לא הותרה:</div>
+          <div class="glose-fr">On déduit une chose qui n&#x27;a pas été permise hors de son interdit : l&#x27;arela, à l&#x27;endroit où elle interdit, c&#x27;est-à-dire au Pessah, n&#x27;a pas été permise.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מדבר שלא הותר מכללן</b> זמן:</div>
+          <div class="glose-fr">D&#x27;une chose qui n&#x27;a pas été permise hors de son interdit : le zman.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Si tout est tuma de la chair, la clause suivante reste à lire. On apprend l'<b>arela</b>, jamais permise hors de son interdit au Pessah, du <b>zman</b>, jamais permis hors du sien. La tuma ne prouve pas : une permission a été faite dans son interdit. La question "dans quel cas" s'ouvre sur l'amoud suivant.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Pesachim_61b.html">&lsaquo; Pesachim 61b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Pesachim_62b.html">Pesachim 62b &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schémas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage sélectionné :\n« '+s+' »\n'):'\nPassage concerné :\n\n')+'\nCorrection proposée :\n\n\n— envoyé depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<p id="credit-texte" style="text-align:center;font-size:.76rem;color:#78716c;margin:6px auto 18px;max-width:640px;line-height:1.5">
+Texte hébreu et araméen vocalisé : édition numérique William Davidson du Talmud Koren Noé, via
+<a href="https://www.sefaria.org" style="color:#78716c">Sefaria</a> (licence CC BY-NC). Traduction française, notes et schémas : Chiourim BA (licence CC BY 4.0).</p>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>
