@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pesachim 34b - Hesek hadaat, passage de la forme, et zeria du hekdesh</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Pesachim 34b - Hesek hadaat, passage de la forme, et zeria du hekdesh</h1>
+    <div class="ref">Pesachim 34b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Pesachim_34a.html">&lsaquo; Pesachim 34a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Pesachim_35a.html">Pesachim 35a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> La page poursuit l&#x27;objection de Rabbi Yohanan à Rabbi Shimon ben Lakish : le hesek hadaat est-il un défaut du corps, ou un soupçon d&#x27;impureté ? La michna brûle aussitôt un défaut du corps, et elle attend le passage de la forme pour un défaut du sang ou des propriétaires.</p><p>Reish Lakish répond par le tanna de Rabba bar Avuha, qui exige ce passage même pour le piggul. Une seconde baraita parle d&#x27;aspersion après invalidation de la viande : l&#x27;agrément s&#x27;explique si le tzitz couvre l&#x27;impureté.</p><p>Rabbi Yirmeya écarte ensuite la raison de Rav Sheshet. La hashka purifie l&#x27;eau de la fête avant la consécration, et non après : il n&#x27;y a pas de zeria pour le hekdesh, ni pour la teruma.</p><p>Abaye demande si cette maala vaut pour une sainteté de parole. Rav Dimi rapproche les raisins de Rabbi Yohanan, Rav Yosef les limite à la teruma, et Rava ouvre le verset des eaux de la hatat, détachées et attachées à la fois.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 400" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="400" fill="#fbfaf7"/>
+<text x="370" y="28" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Quand le sacrifice invalidé part-il au brûlage ?</text>
+<rect x="16" y="48" width="230" height="210" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="131" y="76" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Défaut du corps</text>
+<text x="131" y="104" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Pesul certain,</text>
+<text x="131" y="124" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">dans la viande même.</text>
+<text x="131" y="156" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Règle générale</text>
+<text x="131" y="176" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">de cette michna.</text>
+<text x="131" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Brûler aussitôt</text>
+<rect x="256" y="48" width="230" height="210" rx="4" fill="#fff6e8" stroke="#a36b2d"/>
+<text x="371" y="76" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a36b2d">Sang ou propriétaires</text>
+<text x="371" y="104" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Sang répandu.</text>
+<text x="371" y="128" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Propriétaires impurs :</text>
+<text x="371" y="148" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">personne pour manger.</text>
+<text x="371" y="176" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le défaut est complet,</text>
+<text x="371" y="196" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">hors de la viande.</text>
+<text x="371" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a36b2d">Ibur tzura, puis brûlage</text>
+<rect x="496" y="48" width="228" height="210" rx="4" fill="#e8eef6" stroke="#3d5a80"/>
+<text x="610" y="76" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5a80">Reish Lakish</text>
+<text x="610" y="104" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Ce tanna est celui</text>
+<text x="610" y="124" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">de Rabba bar Avuha.</text>
+<text x="610" y="156" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Même le piggul,</text>
+<text x="610" y="176" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">défaut du corps,</text>
+<text x="610" y="196" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">exige l'ibur tzura.</text>
+<text x="610" y="228" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#3d5a80">L'objection du lul tombe</text>
+<rect x="16" y="274" width="708" height="108" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="370" y="302" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">Pourquoi l'attente du lendemain</text>
+<text x="370" y="328" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">L'ibur tzura est la lina (nuit) : la forme du sacrifice passe, il devient notar.</text>
+<text x="370" y="350" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Pour un simple soupçon, on attend : Eliyahu pourrait encore le déclarer pur.</text>
+<text x="370" y="370" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#6b5344">Ce tanna attend même pour le piggul : l'objection du lul tombe.</text>
+</svg></div>
+          <figcaption>Défaut du corps : brûlage immédiat. Sang ou propriétaires : ibur tzura. Reish Lakish : ce tanna attend même pour le piggul.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 520" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="520" fill="#fbfaf7"/>
+<text x="370" y="28" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Hesek hadaat : deux lectures, deux objections</text>
+<rect x="16" y="46" width="348" height="150" rx="4" fill="#e8eef6" stroke="#3d5a80"/>
+<text x="190" y="72" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5a80">Rabbi Yohanan</text>
+<text x="190" y="98" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Pesul tumah : soupçon d'impureté.</text>
+<text x="190" y="122" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Si Eliyahu le déclare pur, on l'écoute.</text>
+<text x="190" y="146" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le tzitz peut agréer bediavad.</text>
+<text x="190" y="174" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#3d5a80">On attend l'ibur tzura</text>
+<rect x="376" y="46" width="348" height="150" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="550" y="72" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Rabbi Shimon ben Lakish</text>
+<text x="550" y="98" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Pesul haguf : défaut propre.</text>
+<text x="550" y="122" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Même si Eliyahu le déclare pur,</text>
+<text x="550" y="142" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">on ne l'écoute pas.</text>
+<text x="550" y="174" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#8a4b3a">Le tzitz ne couvre pas ce défaut</text>
+<rect x="16" y="210" width="348" height="150" rx="4" fill="#fff6e8" stroke="#a36b2d"/>
+<text x="190" y="236" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a36b2d">Objection 1 : le lul</text>
+<text x="190" y="262" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Hatat de l'oiseau invalidé :</text>
+<text x="190" y="282" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">on attend le passage de la forme.</text>
+<text x="190" y="306" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Un défaut du corps se brûle aussitôt.</text>
+<text x="190" y="334" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#a36b2d">Réponse : même le piggul attend</text>
+<rect x="376" y="210" width="348" height="150" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="550" y="236" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Objection 2 : l'aspersion</text>
+<text x="550" y="262" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Viande invalidée. Si l'on a aspergé,</text>
+<text x="550" y="282" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Rabbi Yehoshua : cela a été agréé.</text>
+<text x="550" y="306" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le tzitz agrée l'impureté, bediavad.</text>
+<text x="550" y="334" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2f5c2f">Réponse : tevul yom, autre impureté</text>
+<rect x="16" y="374" width="708" height="128" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="370" y="402" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">Rabbi Yirmeya : la michna des plants vient d'une maala</text>
+<text x="370" y="428" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Hashka puis consécration : pur. Consécration puis hashka : impur.</text>
+<text x="370" y="450" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Il n'y a pas de zeria pour le hekdesh. De même pour la teruma.</text>
+<text x="370" y="476" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#6b5344">Les plants ne rendent plus impur. Ils restent interdits à manger.</text>
+</svg></div>
+          <figcaption>Yohanan : hesek hadaat, soupçon d&#x27;impureté, le tzitz agrée. Reish Lakish : défaut du corps. Yirmeya : l&#x27;interdit des plants est une maala.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 470" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="470" fill="#fbfaf7"/>
+<text x="370" y="28" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">L'ordre décide : avant ou après la consécration</text>
+<rect x="16" y="48" width="348" height="170" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="190" y="74" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">D'abord la purification</text>
+<text x="190" y="102" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Eau de la fête : hashka, puis hekdesh.</text>
+<text x="190" y="126" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Raisins : foulage, puis consécration.</text>
+<text x="190" y="158" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">La zeria ou le jus sort</text>
+<text x="190" y="178" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">tant que la chose est encore profane.</text>
+<text x="190" y="202" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Pur</text>
+<rect x="376" y="48" width="348" height="170" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="550" y="74" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">D'abord la consécration</text>
+<text x="550" y="102" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Eau : hekdesh, puis hashka.</text>
+<text x="550" y="126" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Raisins : consécration, puis foulage.</text>
+<text x="550" y="158" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">La maala est déjà là.</text>
+<text x="550" y="178" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">La maala maintient l'impureté.</text>
+<text x="550" y="202" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Impur</text>
+<rect x="16" y="232" width="230" height="150" rx="4" fill="#e8eef6" stroke="#3d5a80"/>
+<text x="131" y="258" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#3d5a80">Abaye</text>
+<text x="131" y="284" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Keli sharet seulement ?</text>
+<text x="131" y="308" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Ou aussi la parole,</text>
+<text x="131" y="328" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">un ustensile profane</text>
+<text x="131" y="348" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">rempli pour la fête ?</text>
+<rect x="256" y="232" width="230" height="150" rx="4" fill="#fff6e8" stroke="#a36b2d"/>
+<text x="371" y="258" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#a36b2d">Rav Dimi</text>
+<text x="371" y="284" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Cas semblable :</text>
+<text x="371" y="308" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">les raisins.</text>
+<text x="371" y="332" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Sainteté de parole,</text>
+<text x="371" y="352" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">et la maala tient.</text>
+<rect x="496" y="232" width="228" height="150" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="610" y="258" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2f5c2f">Rav Yosef</text>
+<text x="610" y="284" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Raisins de teruma.</text>
+<text x="610" y="308" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">La parole y vaut</text>
+<text x="610" y="328" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">un ustensile.</text>
+<text x="610" y="352" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">L'eau de la fête : non.</text>
+<rect x="16" y="396" width="708" height="56" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="370" y="420" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#6b5344">La question d'Abaye sur l'eau reste ouverte ici. Le verset de Rava la reprend à la fin de la page.</text>
+<text x="370" y="440" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Rachi lit déjà, dans ce verset, une maala même pour une sainteté de parole.</text>
+</svg></div>
+          <figcaption>Hashka ou foulage avant la consécration : pur. Après : impur. Abaye distingue keli et parole. Rav Yosef limite les raisins à la teruma.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כָּל שֶׁפְּסוּלוֹ בְּגוּפוֹ — יִשָּׂרֵף מִיָּד. בְּדַם וּבַבְּעָלִים — תְּעֻובַּר צוּרָתָן וְיוֹצְאִין לְבֵית הַשְּׂרֵיפָה. אֲמַר לֵיהּ: הַאי תַּנָּא, תַּנָּא דְּבֵי רַבָּה בַּר אֲבוּהּ הוּא, דְּאָמַר: אֲפִילּוּ פִּיגּוּל טָעוּן עִיבּוּר צוּרָה.</div>
+            <div class="fr"><p>Tout ce dont le défaut est dans son corps, qu&#x27;on le brûle aussitôt. Dans le sang ou chez les propriétaires, qu&#x27;on fasse passer leur forme, et ils sortent vers le lieu du brûlage.</p><p>Il lui dit : ce tanna, c&#x27;est le tanna de l&#x27;école de Rabba bar Avuha, qui a dit : même le piggul exige le passage de la forme.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(5)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כָּל שֶׁפְּסוּלוֹ בְּגוּפוֹ</b> פָּסוּל וַדַּאי וּבְבָשָׂר עַצְמוֹ יִשָּׂרֵף מִיָּד:</div>
+          <div class="glose-fr">Tout ce dont le défaut est dans son corps : un défaut certain, et dans la viande elle-même, qu&#x27;on le brûle aussitôt.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּדַם</b> כְּגוֹן נִשְׁפַּךְ הַדָּם:</div>
+          <div class="glose-fr">Dans le sang : par exemple, le sang a été répandu.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּבַבְּעָלִים</b> כְּגוֹן נִטְמְאוּ בְּעָלִים וְהַפֶּסַח קַייָּם וְאֵין כָּאן מִי שֶׁיֹּאכְלֶנּוּ וְדָם אע&quot;פ שֶׁפָּסוּל גָּמוּר הוּא אֲפִילּוּ הָכֵי הוֹאִיל וְאֵינוֹ כַּבָּשָׂר עַצְמוֹ בָּעֵי עִיבּוּר צוּרָה:</div>
+          <div class="glose-fr">Et chez les propriétaires : par exemple, les propriétaires sont devenus impurs, le pesah est là, et il n&#x27;y a personne pour le manger. Et le sang, bien que son défaut soit complet, exige quand même le passage de la forme, puisqu&#x27;il n&#x27;est pas comme la viande elle-même.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>תַּנָּא דְּבֵי רַבָּה בַּר אֲבוּהּ</b> עִיקַּר מִילְּתָא לָא יָדַעְנָא הֵיכָא וְטַעְמָא דְּמִילְּתֵיהּ בִּכְיָצֹד צוֹלִין:</div>
+          <div class="glose-fr">Le tanna de l&#x27;école de Rabba bar Avuha : je ne sais pas où se trouve le fond de cette parole, et la raison de cette parole est dans Keitzad Tzolin.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲפִילּוּ פִּיגּוּל</b> שֶׁפְּסוּל הַגּוּף הוּא טָעוּן עִיבּוּר צוּרָה וְהָכָא לָא מָצֵי לְשַׁנּוּיֵי כְּדִמְשַׁנֵּי לְקַמֵּיהּ מַאי פְּסוּלֵי חַטַּאת הָעוֹף שֶׁנִּפְסְלוּ בִּטְבוּל יוֹם דְּהַיְינוּ טֻומְאָה וְצוּרָה לָמָּה לִי:</div>
+          <div class="glose-fr">Même le piggul : lui dont le défaut est un défaut du corps exige le passage de la forme. Et ici, il ne peut pas répondre comme il répond plus loin : que sont les défauts du hatat de l&#x27;oiseau ? Ceux qui ont été invalidés par un tevul yom, c&#x27;est-à-dire une impureté. Et le passage de la forme, pour quoi faire ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La michna citée à la fin de 34a donne la règle du brûlage. Un <b>pesul haguf</b>, défaut certain dans la viande, part aussitôt au feu. Un défaut du <b>sang</b> ou des <b>propriétaires</b> attend l'<b>ibur tzura</b> : une nuit passe, la forme change, le sacrifice est notar, puis on le sort au lieu du brûlage.</p><p><b>Rabbi Shimon ben Lakish</b> répond à Rabbi Yohanan. Ce tanna, Rabbi Yishmael fils de Rabbi Yohanan ben Beroka, suit l'école de <b>Rabba bar Avuha</b> : même le <b>piggul</b>, défaut du corps, attend le passage de la forme. L'ibur tzura exigé même pour le piggul laisse l'objection de Rabbi Yohanan sans prise.</p><p>Rachi note qu'on ne peut pas, ici, renvoyer l'invalidation à un <b>tevul yom</b>. Cette réponse viendra plus loin, pour une autre baraita. Si le hatat de l'oiseau n'était invalidé que par une impureté, la question du passage de la forme se reposerait autrement.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אַיְּתִיבֶיהָ: נִטְמָא אוֹ שֶׁנִּפְסַל הַבָּשָׂר, אוֹ שֶׁיָּצָא חוּץ לַקְּלָעִים, רַבִּי אֱלִיעֶזֶר אוֹמֵר: יִזְרֹוק, רַבִּי יְהוֹשֻׁעַ אוֹמֵר: לֹא יִזְרֹוק. וּמוֹדֶה רַבִּי יְהוֹשֻׁעַ שֶׁאִם זָרַק — הוּרְצָה.</div>
+            <div class="fr"><p>Il lui objecta : la viande est devenue impure, ou elle a été invalidée, ou elle est sortie hors des tentures. Rabbi Eliezer dit : qu&#x27;il asperge.</p><p>Rabbi Yehoshua dit : qu&#x27;il n&#x27;asperge pas. Et Rabbi Yehoshua convient que, s&#x27;il a aspergé, cela a été agréé.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רַבִּי אֱלִיעֶזֶר אוֹמֵר יִזְרֹוק</b> אֶת הַדָּם ר&#x27; אֱלִיעֶזֶר לְטַעְמֵיהּ דְּאָמַר בִּכְיָצֹד צוֹלִין דָּם אַף עַל פִּי שֶׁאֵין בָּשָׂר:</div>
+          <div class="glose-fr">Rabbi Eliezer dit : qu&#x27;il asperge le sang. Rabbi Eliezer reste dans sa raison, car il a dit dans Keitzad Tzolin : il y a le sang même s&#x27;il n&#x27;y a pas de viande.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>רַבִּי יְהוֹשֻׁעַ אוֹמֵר לֹא יִזְרֹוק</b> ר&#x27; יְהוֹשֻׁעַ לְטַעְמֵיהּ דְּאָמַר אִם אֵין בָּשָׂר אֵין דָּם וְיָצָא חוּץ לַקְּלָעִים בִּבְשַׂר קָדְשֵׁי הַקֳּדָשִׁים קָאָמַר שֶׁמְּחִיצָּה שֶׁלָּהֶן חוֹמַת עֲזָרָה כְּדִכְתִיב בְּכוּלְּהוּ בַּחֲצַר אֹהֶל מוֹעֵד יֹאכְלוּהָ וְאִם יָצָאת נִפְסֶלֶת כִּדְיָלְפִינַן בִּכְיָצָד צוֹלִין מֵאֵל הַקֹּודֶשׁ פְּנִימָה:</div>
+          <div class="glose-fr">Rabbi Yehoshua dit : qu&#x27;il n&#x27;asperge pas. Rabbi Yehoshua reste dans sa raison, car il a dit : s&#x27;il n&#x27;y a pas de viande, il n&#x27;y a pas de sang. Et &#x27;elle est sortie hors des tentures&#x27; parle de la viande des kodshei kodashim. Leur cloison est le mur de l&#x27;azara, comme il est écrit pour tous : &#x27;dans la cour de la tente d&#x27;assignation ils la mangeront&#x27;. Si elle est sortie, elle est invalidée, comme nous l&#x27;apprenons dans Keitzad Tzolin à partir de &#x27;vers le saint, à l&#x27;intérieur&#x27;.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁאִם זָרַק הוּרְצָה</b> אַף עַל גַּב דְּאֵין צִיץ מְרַצֶּה עַל הַיּוֹצֵא רַבִּי יְהוֹשֻׁעַ סָבַר זְרִיקָה מוֹעֶלֶת לַיּוֹצֵא כְּרַבִּי עֲקִיבָא דְּרֵישׁ מְעִילָה (דַּף ו:) דְּאָמַר זְרִיקָה מוֹעֶלֶת לְהוֹצִיא בָּשָׂר מִידֵי מְעִילָה וְכָל שֶׁכֵּן לְהַרְצָאָה דְּהָא רַבִּי אֱלִיעֶזֶר דְּאָמַר הָכָא יִזְרֹוק קָאָמַר הָתָם דִּלְהוֹצָאָה מִמְּעִילָה לָא מְהַנְּיָא:</div>
+          <div class="glose-fr">Que s&#x27;il a aspergé, cela a été agréé. Bien que le tzitz n&#x27;effectue pas l&#x27;agrément sur le yotze, Rabbi Yehoshua tient que l&#x27;aspersion est efficace pour le yotze, comme Rabbi Akiva au début de Meila (6b), qui a dit : l&#x27;aspersion est efficace pour faire sortir la viande du régime de la meila, et à plus forte raison pour l&#x27;agrément. Car Rabbi Eliezer, qui dit ici qu&#x27;il asperge, dit là-bas qu&#x27;elle n&#x27;est pas efficace pour sortir du régime de la meila.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Seconde objection de <b>Rabbi Yohanan</b>. La baraita vise trois états de la viande : impure, invalidée, ou <b>yotze</b> (sortie hors des tentures, les kelaim). <b>Rabbi Eliezer</b> fait asperger le sang même sans viande recevable. <b>Rabbi Yehoshua</b> refuse l'aspersion lekhathila, et il convient qu'après coup l'aspersion a agréé le sacrifice.</p><p>Rachi borne la sortie aux <b>kodshei kodashim</b> : leur domaine est l'azara. Tossefot explique l'agrément du yotze. Le <b>tzitz</b> ne couvre pas la sortie. Rabbi Yehoshua suit <b>Rabbi Akiva</b> : la zerika retire la viande de la <b>meila</b>, et elle produit a fortiori l'agrément. Rabbi Eliezer, qui fait asperger ici, dit là-bas que cette aspersion ne retire pas la meila.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאי נִפְסַל — לָאו בְּהֶיסַּח הַדַּעַת? אִי אָמְרַתְּ בִּשְׁלָמָא פְּסוּלֵי טֻומְאָה הָוֵי, הַייְנוּ דְּמַשְׁכַּחַתְּ לַהּ דִּמְרַצֵּי צִיץ. אֶלָּא אִי אָמְרַתְּ פְּסוּל הַגּוּף הָוֵי, אַמַּאי הוּרְצָה (צִיץ)?</div>
+            <div class="fr"><p>Qu&#x27;est-ce que &#x27;elle a été invalidée&#x27; ? N&#x27;est-ce pas par hesek hadaat ?</p><p>Cela se tient si tu dis que c&#x27;est un défaut d&#x27;impureté : voilà comment tu trouves que le tzitz effectue l&#x27;agrément. Mais si tu dis que c&#x27;est un défaut du corps, pourquoi cela a-t-il été agréé (tzitz) ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַאי נִפְסַל לָאו בְּהֶיסַּח הַדַּעַת</b> בִּתְמִיהַּ דְּכֵיוָן דִּתְנָא נִטְמָא וְיָצָא מַאי פָּסוּל אִיכָּא תּוּ אִי נִפְסַל בַּעֲבוֹדַת דָּם כְּגוֹן בְּמַחֲשֶׁבֶת חוּץ לִמְקוֹמוֹ וְחוּץ לִזְמַנּוֹ לָא קָרֵי נִפְסַל בָּשָׂר שֶׁהֲרֵי אַף הַדָּם נִפְסַל וּבְהָא לָא נֵימָא ר&#x27; אֱלִיעֶזֶר יִזְרֹוק:</div>
+          <div class="glose-fr">Qu&#x27;est-ce que &#x27;elle a été invalidée&#x27; ? N&#x27;est-ce pas par hesek hadaat ? C&#x27;est un étonnement. Puisque le tanna a enseigné &#x27;elle est devenue impure&#x27; et &#x27;elle est sortie&#x27;, quel défaut reste-t-il encore ? Si elle a été invalidée dans le service du sang, par exemple par une pensée hors de son lieu ou hors de son temps, on n&#x27;appelle pas cela &#x27;la viande a été invalidée&#x27;, car le sang aussi a été invalidé. Et dans ce cas, Rabbi Eliezer ne dirait pas : qu&#x27;il asperge.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִי אָמְרַתְּ בִּשְׁלָמָא</b> פְּסוּל חֲשַׁשׁ טֻומְאָה הוּא מִשּׁוּם הָכִי מוֹדֶה רַבִּי יְהוֹשֻׁעַ שֶׁאִם זָרַק הֻורְצָה דַּאֲפִילּוּ נִטְמָא וַדַּאי ואע&quot;ג דְּטֻומְאָה פְּסוּל הַגּוּף הָוֵי מְרַצֶּה צִיץ וּלְכַתְּחִלָּה לֹא יִזְרֹוק דְּקָא סָבַר רִיצּוּי צִיץ בְּדִיעֲבַד הוּא וְיוֹצֵא אע&quot;ג דְּלָא מְהַנֵּי לֵיהּ צִיץ הוּרְצָה בְּדִיעֲבַד דאע&quot;ג דְּרַבִּי יְהוֹשֻׁעַ בָּעֵי תַּרְתֵּי דָּם וּבָשָׂר מִיהוּ הוֹאִיל וְהַבָּשָׂר בְּעַיִן וּפְסוּל יוֹצֵא פָּסוּל מֵחֲמַת דָּבָר אַחֵר הוּא חָשְׁבִינַן לֵיהּ פְּסוּל חֶסְרוֹן מְחִיצּוֹת בְּפֶרֶק קַמָּא דִּמְנָחוֹת בְּסוֹפוֹ אִיכָּא לְמֵימַר בְּדִיעֲבַד הוּרְצָה:</div>
+          <div class="glose-fr">Cela se tient : c&#x27;est un défaut de soupçon d&#x27;impureté. C&#x27;est pour cela que Rabbi Yehoshua convient que, s&#x27;il a aspergé, cela a été agréé. Car même si elle est devenue impure de façon certaine, et bien que l&#x27;impureté soit un défaut du corps, le tzitz effectue l&#x27;agrément. Et lekhathila, qu&#x27;il n&#x27;asperge pas, car il tient que l&#x27;agrément du tzitz est bediavad. Et le yotze, bien que le tzitz ne lui serve pas, a été agréé bediavad. Car bien que Rabbi Yehoshua exige les deux, le sang et la viande, néanmoins, puisque la viande est encore là, et que le défaut du yotze est un défaut dû à une autre cause, nous le comptons comme un défaut de manque de cloisons. Au premier chapitre de Menahot, à la fin, on peut dire : bediavad, cela a été agréé.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא אִי הֶיסַּח הַדַּעַת פְּסוּל הַגּוּף הוּא</b> וְצִיץ נָמֵי לָא מְרַצֵּי עָלֶיהָ אַמַּאי הוּרְצָה:</div>
+          <div class="glose-fr">Mais si le hesek hadaat est un défaut du corps, et que le tzitz n&#x27;effectue pas non plus l&#x27;agrément sur lui, pourquoi cela a-t-il été agréé ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ה&quot;ג אֶלָּא אִי אָמְרַתְּ פְּסוּל הַגּוּף הָוֵי אַמַּאי הֻורְצָה</b> וְלָא גָּרְסִינַן פְּסוּל הַגּוּף מִי קָא מְרַצֵּי צִיץ דְּהָא פְּסוּל יוֹצֵא נָמֵי לָא מְרַצֵּי צִיץ כִּדְאָמְרִינַן בְּפֶרֶק קַמָּא (דַּף טז:) הָא אֵינוֹ נוֹשֵׂא אֶלָּא עֲוֹן טֻומְאָה:</div>
+          <div class="glose-fr">Voici la leçon : &#x27;Mais si tu dis que c&#x27;est un défaut du corps, pourquoi cela a-t-il été agréé ?&#x27; Et nous ne lisons pas : &#x27;Un défaut du corps, le tzitz effectue-t-il l&#x27;agrément sur lui ?&#x27; Car le défaut de ce qui est sorti, le tzitz n&#x27;effectue pas non plus l&#x27;agrément sur lui, comme nous le disons au premier chapitre (16b) : il ne porte que la faute de l&#x27;impureté.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>'Invalidée', après 'devenue impure' et 'sortie', vise le <b>hesek hadaat</b>. Une pensée hors du lieu ou hors du temps invaliderait aussi le sang : Rabbi Eliezer ne dirait pas d'asperger. Rachi écarte donc cette lecture.</p><p>Si le hesek hadaat est un <b>pesul tumah</b>, l'agrément se comprend. Le <b>tzitz</b> couvre l'impureté, même certaine, et seulement <b>bediavad</b>. Lekhathila, Rabbi Yehoshua refuse l'aspersion. Le yotze, que le tzitz ne couvre pas, est agréé bediavad parce que la viande est encore là : on le compte comme un manque de cloisons.</p><p>Si le hesek hadaat est un <b>pesul haguf</b>, le tzitz ne le couvre pas. Rachi fixe la leçon sur ces mots : pourquoi cela a-t-il été agréé ? Le verset du tzitz lui fait porter la faute de l'impureté. La sortie reste hors de ce ritzuy.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 280" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="280" fill="#fbfaf7"/>
+<text x="370" y="28" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Si l'on a aspergé : quand cela est-il agréé ?</text>
+<rect x="16" y="48" width="348" height="160" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="190" y="76" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Soupçon d'impureté</text>
+<text x="190" y="104" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Lekhathila : on n'asperge pas.</text>
+<text x="190" y="128" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Bediavad : le tzitz agrée.</text>
+<text x="190" y="152" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Même une impureté certaine</text>
+<text x="190" y="172" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">entre dans ce ritzuy.</text>
+<text x="190" y="196" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2f5c2f">Cela a été agréé</text>
+<rect x="376" y="48" width="348" height="160" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="550" y="76" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Défaut du corps</text>
+<text x="550" y="104" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le tzitz ne porte</text>
+<text x="550" y="124" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">que la faute d'impureté.</text>
+<text x="550" y="152" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Un hesek hadaat lu ainsi</text>
+<text x="550" y="172" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">resterait sans agrément.</text>
+<text x="550" y="196" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#8a4b3a">Pourquoi a-t-il été agréé ?</text>
+<rect x="16" y="222" width="708" height="44" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="370" y="250" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#6b5344">Réponse du segment suivant : l'invalidation vise un tevul yom, seconde sorte d'impureté.</text>
+</svg></div><div class="svg-cap">Soupçon d&#x27;impureté : le tzitz agrée bediavad. Défaut du corps : l&#x27;agrément reste sans raison, jusqu&#x27;au tevul yom.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאי נִפְסַל, נִפְסַל בִּטְבוּל יוֹם. אִי הָכִי, הַיְינוּ טָמֵא! תְּרֵי גַּוְונֵי טָמֵא.</div>
+            <div class="fr"><p>Qu&#x27;est-ce que &#x27;elle a été invalidée&#x27; ? Elle a été invalidée par un tevul yom.</p><p>S&#x27;il en est ainsi, c&#x27;est cela même, l&#x27;impur ! Deux sortes d&#x27;impur.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>נִפְסַל בִּטְבוּל יוֹם</b> וְטַעֲמָא מִשּׁוּם צִיץ:</div>
+          <div class="glose-fr">Elle a été invalidée par un tevul yom : et la raison, c&#x27;est le tzitz.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rabbi Shimon ben Lakish</b> lit 'invalidée' comme le contact d'un <b>tevul yom</b>, celui qui s'est immergé et attend le coucher du soleil. C'est une impureté : le <b>tzitz</b> explique donc l'agrément bediavad.</p><p>La Guemara rapproche ce cas de 'devenue impure'. La réponse distingue deux impuretés. L'une se transmet plus loin. Le tevul yom invalide, sans rendre impur à son tour comme un tamei complet.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כִּי סָלֵיק רָבִין, אַמְרַהּ לִשְׁמַעְתֵּיהּ קַמֵּיהּ דְּרַבִּי יִרְמְיָה, וַאֲמַר: בַּבְלָאֵי טַפְשָׁאֵי, מִשּׁוּם דְּיָתְבִי בְּאַרְעָא דַּחֲשׁוֹכָא אָמְרִיתוּן שְׁמַעְתָּתָא דִּמְחַשְּׁכוּ. לָא שְׁמִיעַ לְכוּ הָא דְּרַבִּי שִׁמְעוֹן בֶּן לָקִישׁ מִשְּׁמֵיהּ דְּרַבִּי אוֹשַׁעְיָא:</div>
+            <div class="fr"><p>Quand Ravin monta, il dit cette tradition devant Rabbi Yirmeya. Et celui-ci dit : Babyloniens sots, parce que vous siégez dans un pays de ténèbres, vous dites des traditions obscures.</p><p>N&#x27;avez-vous pas entendu ceci, que Rabbi Shimon ben Lakish a dit au nom de Rabbi Oshaya ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲמָרָהּ קַמֵּיהּ דְּר&#x27; יִרְמְיָה</b> הָא דְּרַב שֵׁשֶׁת לְעֵיל דַּאֲסוּרִין מִלֶּאֱכֹול מִשּׁוּם הֶיסַּח הַדַּעַת הוּא:</div>
+          <div class="glose-fr">Il la dit devant Rabbi Yirmeya : ceci de Rav Sheshet, plus haut, elles sont interdites à manger parce que c&#x27;est un hesek hadaat.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שְׁמַעְתָּתָא דִּמְחַשְּׁכָן</b> כְּשֶׁאֵין יוֹדְעִין טַעְמוֹ שֶׁל דָּבָר בּוֹדִין מִלִּבָּם טַעַם שֶׁאֵינוֹ:</div>
+          <div class="glose-fr">Des traditions obscures : quand ils ne connaissent pas la raison d&#x27;une chose, ils forgent de leur propre fond un motif étranger à la chose.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַתְרָא דִּמְחַשְּׁכָא</b> בָּבֶל עֲמֻוקָּה:</div>
+          <div class="glose-fr">Un lieu de ténèbres : Bavel est profonde.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לָא שְׁמִיעַ לְכוּ כו&#x27;</b> וּמִכָּאן יְכוֹלִין לִלְמֹוד טַעְמָהּ שֶׁל מִשְׁנָה דַּאֲסוּרִין מִלֶּאֱכֹול מִשּׁוּם מַעֲלָה דְּאַף עַל גַּב דִּמְהַנְּיָא זְרִיעָה לְחֻולִּין עֲבוּד רַבָּנָן מַעֲלָה דְּלָא תְּהַנֵּי לִתְרוּמָה לְהַעֲלוֹת לָהּ טָהֳרָה גְּמוּרָה לְהֶיתֵּר אֲכִילָה וּמִיהוּ מִלְּטַמֵּא טָהֲרוּ דִּלְהָא לָא עֲבוּד מַעֲלָה:</div>
+          <div class="glose-fr">Vous n&#x27;avez pas entendu, etc. Et de là on peut apprendre la raison de la michna : elles sont interdites à manger à cause d&#x27;une maala. Bien que la zeria soit efficace pour le hullin, les rabbins ont institué une maala pour qu&#x27;elle ne soit pas efficace pour la teruma, afin de lui élever une pureté complète jusqu&#x27;à la permission de manger. Cependant, quant à rendre impur, elles sont devenues pures, car pour cela ils n&#x27;ont pas institué de maala.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Ravin</b> rapporte en terre d'Israël la raison de <b>Rav Sheshet</b>, au daf précédent : les plants de teruma restent interdits à manger à cause du <b>hesek hadaat</b>.</p><p><b>Rabbi Yirmeya</b> juge cette raison forgée. Il renvoie à une tradition de Rabbi Shimon ben Lakish au nom de <b>Rabbi Oshaya</b>, dite au segment suivant. Rachi en tire déjà la leçon pour la michna.</p><p>La <b>zeria</b> purifie le hullin. Pour la <b>teruma</b>, les rabbins ont mis une <b>maala</b> : la plantation ne donne pas la pureté qui permettrait de manger. Elle suffit en revanche à faire cesser la transmission de l'impureté. L'interdit de manger vient de cette maala.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מֵי הֶחָג שֶׁנִּטְמְאוּ, הִשִּׁיקָן וְאַחַר כָּךְ הִקְדִּישָׁן — טְהוֹרִין, הִקְדִּישָׁן וְאַחַר כָּךְ הִשִּׁיקָן — טְמֵאִים.</div>
+            <div class="fr"><p>Les eaux de la fête qui sont devenues impures : s&#x27;il les a mises en contact et qu&#x27;ensuite il les a consacrées, elles sont pures. S&#x27;il les a consacrées et qu&#x27;ensuite il les a mises en contact, elles sont impures.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מֵי הֶחָג</b> כְּגוֹן שֶׁל נִיסּוּךְ הַמַּיִם דְּשַׁבָּת שֶׁבְּתוֹךְ הֶחָג הָיוּ מְמַלְּאִין אוֹתָן מֵעֶרֶב שַׁבָּת וּכְשֶׁנִּטְמְאוּ אֵין יְכוֹלִין לֵילֵךְ וּלְמַלֹּאות מִן הַשִּׁילּוּחַ בְּשַׁבָּת וְטוֹרֵחַ הוּא לְמַלֹּאות מִבּוֹר הַגָּדוֹל בַּגִּלְגָּל וְהָלַךְ וְהִשִּׁיקָם בְּאַמַּת הַמַּיִם שֶׁבָּעֲזָרָה וּמַיִם סָלְקָא לְהוּ הַשָּׁקָה דְּזוֹ הִיא זְרִיעָתָן מִשֶּׁעָבְרוּ עֲלֵיהֶן מֵי הַמִּקְוֶה וְנַעֲשָׂה חִיבּוּר וּבָטְלוּ:</div>
+          <div class="glose-fr">Les eaux de la fête : par exemple celles de la libation d&#x27;eau. Le shabbat qui tombe pendant la fête, on les remplissait la veille du shabbat. Quand elles sont devenues impures, on ne peut pas aller les remplir au Shiloah le shabbat, et c&#x27;est une peine de les remplir depuis le grand puits, par la roue. Il est allé et les a mises en contact avec le canal d&#x27;eau de l&#x27;azara. Pour l&#x27;eau, la hashka leur suffit : c&#x27;est leur zeria, dès que les eaux du mikve sont passées sur elles, qu&#x27;une jonction s&#x27;est faite, et qu&#x27;elles se sont annulées.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Tradition de Rabbi Shimon ben Lakish au nom de Rabbi Oshaya. Les <b>eaux de la fête</b> sont celles du nisukh hamayim, puisées d'avance quand un shabbat tombe pendant Sukkot. Devenues impures, on ne retourne pas au Shiloah. On les relie au canal de l'azara : c'est la <b>hashka</b>.</p><p>Pour un liquide, la hashka tient lieu de <b>zeria</b>. Le contact avec le mikve fait une jonction, et l'eau impure s'annule dans l'eau pure. L'ordre compte : la hashka avant la consécration purifie. Après la consécration, l'eau reste impure.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מִכְּדֵי זְרִיעָה נִינְהוּ, מַה לִי הִשִּׁיקָן וְאַחַר כָּךְ הִקְדִּישָׁן, מַה לִי הִקְדִּישָׁן וְאַחַר כָּךְ הִשִּׁיקָן? אַלְמָא: אֵין זְרִיעָה לְהֶקְדֵּשׁ. הָכָא נָמֵי, אֵין זְרִיעָה לִתְרוּמָה.</div>
+            <div class="fr"><p>Puisque c&#x27;est une zeria, qu&#x27;importe qu&#x27;il les ait mises en contact et qu&#x27;ensuite il les ait consacrées, ou qu&#x27;il les ait consacrées et qu&#x27;ensuite il les ait mises en contact ? Il en ressort : il n&#x27;y a pas de zeria pour le hekdesh.</p><p>Ici aussi, il n&#x27;y a pas de zeria pour la teruma.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאַחַ&quot;כּ הִקְדִּישָׁן</b> שֶׁעֲדַייִן לֹא קָרָא עֲלֵיהֶן שֵׁם אוֹ לֹא קִידְּשׁוּ בִּכְלִי שָׁרֵת טְהוֹרִין:</div>
+          <div class="glose-fr">Et ensuite il les a consacrées : tant qu&#x27;il n&#x27;a pas encore appelé un nom sur elles, ou qu&#x27;il ne les a pas consacrées dans un keli sharet, elles sont pures.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵין זְרִיעָה לְהֶקְדֵּשׁ</b> לְטַהֲרוֹ בְּכָךְ דְּמַעֲלָה עָשׂוּ בְּקָדָשִׁים הָכָא נָמֵי אֵין זְרִיעָה לִתְרוּמָה דְּמַעֲלָה עָשׂוּ:</div>
+          <div class="glose-fr">Il n&#x27;y a pas de zeria pour le hekdesh, pour le purifier par là, car ils ont institué une maala dans les kodashim. Ici aussi, il n&#x27;y a pas de zeria pour la teruma, car ils ont institué une maala.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְנָתַן אַלְמָא תְּלוּשִׁין וְהָא מְחֻובָּרִין נִינְהוּ</b> פֵּירוּשׁ דִּוְנָתַן מַשְׁמַע דַּחֲשִׁיב לְהוּ תְּלוּשִׁין וְהַיְינוּ לְעִנְיַן קַבָּלַת טֻומְאָה אַף עַל פִּי שֶׁהֵן מְחֻובָּרִין וְהַשְׁתָּא מַייְתֵי רְאָיָה דְּאֵין הַשָּׁקָה לְהֶקְדֵּשׁ מִן הַתּוֹרָה וְכֵן בִּתְרוּמָה נָמֵי עֲבוּד רַבָּנַן מַעֲלָה וּפֵ&quot;ה דָּחוּק:</div>
+          <div class="glose-fr">&#x27;Et il mettra&#x27;, il en ressort qu&#x27;elles sont détachées, et elles sont attachées. Explication : &#x27;et il mettra&#x27; implique qu&#x27;il les tient pour détachées, et c&#x27;est au sujet de la réception de l&#x27;impureté, bien qu&#x27;elles soient attachées. Et maintenant il apporte une preuve qu&#x27;il n&#x27;y a pas de hashka pour le hekdesh d&#x27;après la Torah. Et de même pour la teruma, les rabbins ont aussi institué une maala. Et le commentaire de Rachi est forcé.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La hashka est une <b>zeria</b>. Si le semis purifiait le hekdesh comme le hullin, l'ordre serait indifférent. L'ordre décide : <b>il n'y a pas de zeria pour le hekdesh</b>. La même phrase ferme la michna des plants : <b>il n'y a pas de zeria pour la teruma</b>.</p><p>Rachi précise le cas pur. Au moment de la hashka, l'eau n'a encore ni nom, ni consécration dans un <b>keli sharet</b>. La maala ne commence qu'avec la consécration.</p><p>Tossefot commente déjà le verset de la fin de la page, 'et il mettra'. Le mot traite l'eau comme détachée pour recevoir l'impureté, alors qu'elle est attachée à la source. Ils y lisent une preuve de Torah : pas de hashka pour le hekdesh. Pour la teruma, la maala reste rabbinique. Ils jugent la lecture de Rachi forcée.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">יָתֵיב רַב דִּימֵי וְקָאָמַר לָהּ לְהָא שְׁמַעְתָּא. אָמַר לֵיהּ אַבַּיֵּי: הִקְדִּישָׁן בִּכְלִי קָאָמַר, אֲבָל בַּפֶּה לָא עֲבוּד רַבָּנַן מַעֲלָה. אוֹ דִּילְמָא בַּפֶּה נָמֵי עֲבוּד רַבָּנַן מַעֲלָה?</div>
+            <div class="fr"><p>Rav Dimi était assis et il disait cette tradition. Abaye lui dit : parle-t-il de celui qui les a consacrées dans un ustensile, et par la parole les rabbins n&#x27;ont pas institué de maala ?</p><p>Ou bien, par la parole aussi, les rabbins ont institué une maala ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְהָא שְׁמַעְתָּא</b> דְּרַבִּי אוֹשַׁעְיָא:</div>
+          <div class="glose-fr">Cette tradition : celle de Rabbi Oshaya.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הִקְדִּישָׁן בִּכְלִי שָׁרֵת קָאָמְרַתְּ</b> דְּכֵיוָן דְּקִדּוּשִׁין הֵן קְדֻושַּׁת הַגּוּף עַבְדִינְהוּ לְהוּ רַבָּנָן מַעֲלָה אֲבָל מִשּׁוּם קְדֻושַּׁת פֶּה דְּמִלְּאָן בִּכְלִי חוֹל לְשֵׁם חַג לָא עָבְדִי לְהוּ מַעֲלָה וּמְהַנְּיָא לְהוּ הַשָּׁקָה:</div>
+          <div class="glose-fr">Tu parles de celui qui les a consacrées dans un keli sharet. Puisque leur sainteté est une sainteté du corps, les rabbins leur ont institué une maala. Mais pour une sainteté de parole, quand on les a remplies dans un ustensile profane au nom de la fête, ils ne leur ont pas institué de maala, et la hashka leur est efficace.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Abaye</b> demande la portée de la maala sur les eaux de la fête. Deux consécrations sont en jeu. Le <b>keli sharet</b> donne une sainteté du corps. La parole, remplir un ustensile profane au nom de la fête, est plus légère.</p><p>Première lecture : la maala ne vise que le keli sharet, et la hashka reste efficace après une simple parole. Seconde lecture : la parole aussi reçoit la maala. Rav Dimi n'a pas entendu la réponse sur ce cas.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ: זוֹ לֹא שָׁמַעְתִּי, כַּיּוֹצֵא בָּהּ שָׁמַעְתִּי. דְּאָמַר רַבִּי אֲבָהוּ אָמַר רַבִּי יוֹחָנָן: עֲנָבִים שֶׁנִּטְמְאוּ, דְּרָכָן וְאַחַר כָּךְ הִקְדִּישָׁן — טְהוֹרִים. הִקְדִּישָׁן וְאַחַר כָּךְ דְּרָכָן — טְמֵאִין. וְהָא עֲנָבִים דִּקְדֻושַּׁת פֶּה נִינְהוּ, וַאֲפִילּוּ הָכִי עֲבוּד רַבָּנַן מַעֲלָה.</div>
+            <div class="fr"><p>Il lui dit : celle-ci, je ne l&#x27;ai pas entendue ; j&#x27;en ai entendu une semblable. Car Rabbi Abahu a dit que Rabbi Yohanan a dit : des raisins qui sont devenus impurs, s&#x27;il les a foulés et qu&#x27;ensuite il les a consacrés, ils sont purs.</p><p>S&#x27;il les a consacrés et qu&#x27;ensuite il les a foulés, ils sont impurs. Or les raisins ont une sainteté de parole, et même ainsi les rabbins ont institué une maala.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>זוֹ לֹא שָׁמַעְתִּי</b> בְּמַעֲלָה זוֹ דִּזְרִיעָה לֹא שָׁמַעְתִּי אִם בְּפֶה אִם בִּכְלִי אֲבָל בְּמַעֲלָה אַחֶרֶת שָׁמַעְתִּי דְּאַף בִּקְדֻושַּׁת פֶּה עַבְדוּהָ רַבָּנָן וְאִיכָּא לְמֵילַף מִינָּהּ דְּהוּא הַדִּין לְכָל מַעֲלוֹת שֶׁבַּקּוֹדֶשׁ:</div>
+          <div class="glose-fr">Celle-ci, je ne l&#x27;ai pas entendue : dans cette maala de la zeria, je n&#x27;ai pas entendu si c&#x27;est par la parole ou par l&#x27;ustensile. Mais dans une autre maala, j&#x27;ai entendu que les rabbins l&#x27;ont instituée même pour une sainteté de parole. Et l&#x27;on peut en apprendre que la même règle vaut pour toutes les maalot du kodesh.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּרָכָן וְאַחַר כָּךְ הִקְדִּישָׁן טְהוֹרוֹת</b> לִנְסָכִים וְר&#x27; יוֹחָנָן לְטַעְמֵיהּ דְּאָמַר לְעֵיל מַשְׁקִין מִיפְקָד פְּקִידֵי וְלָא קַבִּילִי טֻומְאָה עִם הָאֹוכֶל וּלְקַמֵּיהּ מְפָרֵשׁ הֵיכִי דְּרִיךְ לְהוּ:</div>
+          <div class="glose-fr">S&#x27;il les a foulés et qu&#x27;ensuite il les a consacrés, elles sont pures : pour les nesakhim. Et Rabbi Yohanan reste dans sa raison, car il a dit plus haut : les liquides sont déposés, et ils ne reçoivent pas l&#x27;impureté avec l&#x27;aliment. Et plus loin il explique comment il les foule.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הִקְדִּישָׁן וְאַחַ&quot;כּ דַּרְכָּן טְמֵאוֹת</b> קָא ס&quot;ד הִקְדִּישׁ יֵינוֹ לִנְסָכִים:</div>
+          <div class="glose-fr">S&#x27;il les a consacrés et qu&#x27;ensuite il les a foulés, elles sont impures. On pense d&#x27;abord : il a consacré son vin pour les nesakhim.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>טְמֵאוֹת</b> דַּעֲבוּד רַבָּנָן מַעֲלָה בְּקָדָשִׁים דְּמִיטַּמֵּא מַשְׁקֶה עִם הָאֹוכֶל וְלָא אָמְרִינַן בְּהוּ מַשְׁקִין מִיפְקָד פְּקִידֵי וְהָא עֲנָבִים קְדֻושַּׁת פֶּה הֵן דְּאִי נָמֵי נְתָנָן לַכְּלִי אֵין כְּלִי מְקַדְּשָׁן דְּאֵין כְּלֵי שָׁרֵת מְקַדְּשִׁין אֶלָּא דָּבָר הָרָאוּי לוֹ כִּדְיָלְפִינַן בִּשְׁחִיטַת קָדָשִׁים גַּבֵּי מִזְבֵּחַ שֶׁנֶּאֱמַר כָּל הַנֹּוגֵעַ בַּמִּזְבֵּחַ יִקְדָּשׁ שׁוֹמֵעַ אֲנִי בֵּין רָאוּי בֵּין שֶׁאֵינוֹ רָאוּי תַּלְמוּד לוֹמַר עוֹלָה וּכְלִי שָׁרֵת דֻּומְיָא דְּמִזְבֵּחַ נָפְקָא לָן הָתָם:</div>
+          <div class="glose-fr">Elles sont impures : car les rabbins ont institué une maala dans les kodashim, le liquide devient impur avec l&#x27;aliment, et nous ne disons pas à leur sujet que les liquides sont déposés. Or les raisins ont une sainteté de parole. Même s&#x27;il les a mis dans un ustensile, l&#x27;ustensile ne les consacre pas. Car un keli sharet ne consacre que ce qui lui est apte, comme nous l&#x27;apprenons dans Shehitat Kodashim au sujet de l&#x27;autel. Il est dit : &#x27;tout ce qui touche l&#x27;autel sera saint&#x27;. J&#x27;entendrais : aussi bien ce qui est apte que ce qui ne l&#x27;est pas. Le verset enseigne : &#x27;ola&#x27;. Et le keli sharet, à la ressemblance de l&#x27;autel, nous l&#x27;apprenons là-bas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rav Dimi</b> n'a pas la réponse sur l'eau. Il rapporte un cas voisin, de <b>Rabbi Abahu</b> au nom de <b>Rabbi Yohanan</b>. Des raisins impurs : foulés puis consacrés, ils sont purs ; consacrés puis foulés, ils sont impurs.</p><p>Rabbi Yohanan reste sur sa thèse du daf précédent : les liquides sont <b>déposés</b> dans le raisin, et l'impureté de l'aliment ne les gagne pas. Après consécration, une <b>maala</b> des kodashim les fait devenir impurs avec l'aliment.</p><p>Les raisins n'ont qu'une <b>sainteté de parole</b>. Un keli sharet ne consacre que ce qui lui est apte, comme l'autel, que le verset limite à l'<b>ola</b>. Rav Dimi en tire que la maala vaut aussi pour la parole, et dès lors pour les maalot du kodesh en général.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב יוֹסֵף: עֲנָבִים קָאָמְרַתְּ? הָכָא בַּעֲנָבִים שֶׁל תְּרוּמָה עָסְקִינַן, דִּקְדֻושַּׁת פֶּה דִּידְהוּ — כִּקְדֻושַּׁת כְּלִי דָּמְיָא. אֲבָל הָנֵי דְּבָעֵי כְּלִי, בַּפֶּה לָא עֲבוּד רַבָּנַן מַעֲלָה.</div>
+            <div class="fr"><p>Rav Yosef dit : tu parles de raisins ? Ici, nous traitons de raisins de teruma, dont la sainteté de parole est semblable à la sainteté d&#x27;un ustensile.</p><p>Mais celles-ci, qui exigent un ustensile, par la parole les rabbins n&#x27;ont pas institué de maala.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בַּעֲנָבִים שֶׁל תְּרוּמָה</b> וְהַאי הִקְדִּישָׁן קְדֻושַּׁת תְּרוּמָה קָאָמַר דְּבִתְרוּמָה לָא שָׁיְיכָא קְדֻושַּׁת כְּלִי לֹא בְּיַיִן וְלֹא בַּעֲנָבִים:</div>
+          <div class="glose-fr">De raisins de teruma : et ce &#x27;il les a consacrés&#x27; parle d&#x27;une sainteté de teruma. Car dans la teruma, la sainteté d&#x27;ustensile ne s&#x27;applique pas, ni au vin ni aux raisins.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲבָל הָנֵי</b> מֵי הֶחָג:</div>
+          <div class="glose-fr">Mais celles-ci : les eaux de la fête.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rav Yosef</b> refuse de transporter la maala des raisins vers l'eau de la fête. Le cas entendu vise des raisins de <b>teruma</b>. La teruma ne passe pas par un keli sharet : appeler son nom est sa consécration pleine. Cette parole-là est semblable à la sainteté d'un ustensile.</p><p>Les eaux de la fête, elles, exigent le keli pour la sainteté du corps. Une simple parole ne reçoit pas la maala. La question d'Abaye sur l'eau n'est donc pas tranchée par les raisins.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">דַּרְכָּן — וַאֲפִילּוּ טוּבָא?! וּמִי אָמַר רַבִּי יוֹחָנָן הָכִי, וְהָאָמַר רַבִּי יוֹחָנָן: עֲנָבִים שֶׁנִּטְמְאוּ — דּוֹרְכָן פָּחוֹת פָּחוֹת מִכְּבֵיצָה!</div>
+            <div class="fr"><p>Il les a foulés, même en grande quantité ?! Et Rabbi Yohanan a-t-il dit cela ?</p><p>Or Rabbi Yohanan a dit : des raisins qui sont devenus impurs, on les foule moins que moins d&#x27;un kebeitza !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דַּרְכָּן וַאֲפִילּוּ טוּבָא</b> לְעֵיל קָמַהְדַּר אֲמַרְתְּ דְּרָכָן וְאַחַר כָּךְ הִקְדִּישָׁן טְהוֹרוֹת וַאֲפִילּוּ טוּבָא בְּבַת אַחַת בִּתְמִיהַּ וְהָא אֲמַרְתְּ לְעֵיל פָּחוֹת פָּחוֹת מִכַּבֵּיצָה דְּאִי יוֹתֵר הָא אִיטַּמוּ מַשְׁקִין בְּכַבֵּיצָה מִיְּצִיאַת טִיפָּה רִאשׁוֹנָה טֻומְאַת הָאֹוכֶל שֶׁהֲרֵי יֵשׁ בָּהּ כַּשִּׁיעוּר:</div>
+          <div class="glose-fr">Il les a foulés, même en grande quantité : plus haut tu reviens et tu dis : s&#x27;il les a foulés et qu&#x27;ensuite il les a consacrés, elles sont pures, même beaucoup d&#x27;un seul coup. C&#x27;est un étonnement. Or tu as dit plus haut : moins que moins d&#x27;un kebeitza. Car s&#x27;il y en a davantage, les liquides sont devenus impurs par un kebeitza, dès la sortie de la première goutte, par l&#x27;impureté de l&#x27;aliment, puisqu&#x27;il y a en lui la mesure.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La formule 'il les a foulés' est sans limite. Elle semble permettre une grande quantité d'un seul coup, puis la consécration, avec un vin pur.</p><p>Or <b>Rabbi Yohanan</b>, au daf précédent, n'autorise le foulage que <b>moins que moins d'un kebeitza</b>. Au-dessus de cette mesure, la première goutte sort alors qu'il reste un kebeitza d'aliment : l'aliment impur rend le liquide impur. Les deux phrases du même maître se heurtent.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִיבָּעֵית אֵימָא: הָכָא נָמֵי פָּחוֹת פָּחוֹת מִכְּבֵיצָה. וְאִיבָּעֵית אֵימָא: הָתָם דְּנָגְעוּ לְהוּ בְּרִאשׁוֹן, דְּהָווּ לְהוּ אִינְהוּ שֵׁנִי. הָכָא דְּנָגְעוּ בְּשֵׁנִי, דְּהָווּ לְהוּ שְׁלִישִׁי.</div>
+            <div class="fr"><p>Si tu veux, dis : ici aussi, moins que moins d&#x27;un kebeitza. Et si tu veux, dis : là-bas, ils ont touché un rishon, de sorte qu&#x27;eux-mêmes sont sheni.</p><p>Ici, ils ont touché un sheni, de sorte qu&#x27;ils sont shelishi.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָכִי גָּרְסִינַן אִי בָּעֵית אֵימָא הָכָא נָמֵי בְּפָחוֹת מִכַּבֵּיצָה וְאִי בָּעֵית אֵימָא הָתָם דְּבָעֵינַן פָּחוֹת מִכַּבֵּיצָה שֶׁנָּגְעוּ עֲנָבִים בָּרִאשׁוֹן</b> כְּגוֹן טָמֵא שֶׁרֶץ אוֹ טָמֵא נְבֵילָה וְכָל שֶׁכֵּן טְמֵא מֵת דְּכֵיוָן דְּהָווּ עֲנָבִים שֵׁנִי טִימְּאוּ אֶת הַמַּשְׁקִין בְּכַבֵּיצָה מִשֶּׁיָּצָאת טִיפָּה רִאשׁוֹנָה וְאַף עַל פִּי שֶׁהֵן חֻולִּין דְּכָל הַפּוֹסֵל אֶת הַתְּרוּמָה מְטַמֵּא מַשְׁקִין לִהְיוֹת תְּחִלָּה וְשֵׁנִי עוֹשֶׂה שְׁלִישִׁי בִּתְרוּמָה לָא גָרְסִינַן דְּהָא בְּחֻולִּין עָסְקִינַן דְּאִי בִּתְרוּמָה הָא אֲמָרָן דַּעֲבוּד מַעֲלָה שֶׁמְּטַמְּאָה מַשְׁקֶה עִם הָאֹוכֶל:</div>
+          <div class="glose-fr">Voici comment nous lisons : &#x27;Si tu veux, dis : ici aussi, en moins d&#x27;un kebeitza. Et si tu veux, dis : là-bas, où nous exigeons moins d&#x27;un kebeitza, les raisins ont touché un rishon&#x27;, par exemple un impur par un sheretz ou un impur par une nevela, et à plus forte raison un impur par un mort. Puisque les raisins sont sheni, ils ont rendu les liquides impurs par un kebeitza, dès que la première goutte est sortie, bien qu&#x27;ils soient hullin. Car tout ce qui invalide la teruma rend les liquides impurs pour qu&#x27;ils soient techila. Et nous ne lisons pas : &#x27;et un sheni produit un shelishi dans la teruma&#x27;, car nous traitons de hullin. Si c&#x27;était de la teruma, nous avons déjà dit qu&#x27;ils ont institué une maala : elle rend le liquide impur avec l&#x27;aliment.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָכָא דְּנָגְעוּ</b> עֲנָבִים בְּשֵׁנִי דְּהָווּ לְהוּ שְׁלִישִׁי עֲנָבִים שֶׁנַּעֲשׂוּ עַל טָהֳרַת תְּרוּמָה מַשְׁכַּחַת בְּהוּ שְׁלִישִׁי הִלְכָּךְ דְּרָכָן וְאַחַר כָּךְ הִקְדִּישָׁן שֶׁקָּרָא לָהֶן שֵׁם תְּרוּמָה טְהוֹרִין וַאֲפִילּוּ דֶּרֶךְ הַרְבֵּה יַחַד שֶׁהָאֹוכֶל שְׁלִישִׁי לֹא עָשָׂה לַמַּשְׁקֶה כְּלוּם וּמִתְּחִלָּה לֹא נִטְמְאוּ עִם הָאֹוכֶל דְּקֹודֶם קְרִיאַת שֵׁם לָא עֲבוּד מַעֲלָה הִקְדִּישָׁן לִתְרוּמָה וְאַחַ&quot;כּ דַּרְכָּן טְמֵאִין דְּמִקְּרִיאַת שֵׁם חָלָה הַמַּעֲלָה עֲלֵיהֶן וְנַעֲשָׂה הַמַּשְׁקִין כְּאֹוכֶל הַכֹּל אֶחָד:</div>
+          <div class="glose-fr">Ici, ils ont touché : les raisins ont touché un sheni, de sorte qu&#x27;ils sont shelishi. Des raisins préparés dans la pureté de la teruma : tu trouves en eux un shelishi. Par conséquent, s&#x27;il les a foulés et qu&#x27;ensuite il les a consacrés, en appelant sur eux le nom de teruma, ils sont purs, même s&#x27;il en foule beaucoup ensemble. Car l&#x27;aliment shelishi n&#x27;a rien fait au liquide. Et d&#x27;abord ils ne sont pas devenus impurs avec l&#x27;aliment, car avant l&#x27;appel du nom ils n&#x27;ont pas institué de maala. S&#x27;il les a consacrés pour la teruma et qu&#x27;ensuite il les a foulés, ils sont impurs : dès l&#x27;appel du nom, la maala prend effet sur eux, et les liquides sont faits comme l&#x27;aliment, le tout un.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deux réponses tiennent ensemble les deux phrases de Rabbi Yohanan. La première relit le cas d'ici : là aussi, on foule <b>moins que moins d'un kebeitza</b>.</p><p>La seconde distingue le degré. Là-bas, les raisins ont touché un <b>rishon</b> (sheretz, nevela, ou à plus forte raison un met) : ils sont <b>sheni</b>. Un sheni invalide la teruma, et il rend un liquide <b>techila</b>, premier degré, dès qu'un kebeitza d'aliment est encore là au sortir de la première goutte. Rachi retire de la leçon la phrase 'un sheni produit un shelishi dans la teruma' : le cas est du hullin. Dans la teruma, la maala rendrait de toute façon le liquide impur avec l'aliment.</p><p>Ici, les raisins ont touché un sheni. Gardés dans la pureté de la teruma, ils sont <b>shelishi</b>. L'aliment shelishi ne transmet rien au liquide. On peut donc fouler beaucoup, puis appeler le nom de teruma : le vin reste pur. Si le nom est appelé avant le foulage, la maala s'applique, et le liquide est traité comme l'aliment.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 340" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="340" fill="#fbfaf7"/>
+<text x="370" y="28" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Deux chaînes d'impureté pour les raisins</text>
+<rect x="16" y="48" width="348" height="200" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="190" y="74" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Là-bas : moins d'un kebeitza</text>
+<text x="190" y="102" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Contact avec un rishon</text>
+<text x="190" y="122" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">(sheretz, nevela, met).</text>
+<text x="190" y="150" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Les raisins deviennent sheni.</text>
+<text x="190" y="178" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Dès un kebeitza, la première goutte</text>
+<text x="190" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">rend le liquide impur, techila.</text>
+<text x="190" y="226" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#8a4b3a">On foule en petite quantité</text>
+<rect x="376" y="48" width="348" height="200" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="550" y="74" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Ici : même une grande quantité</text>
+<text x="550" y="102" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Contact avec un sheni.</text>
+<text x="550" y="122" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Raisins gardés pour la teruma :</text>
+<text x="550" y="142" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">ils deviennent shelishi.</text>
+<text x="550" y="170" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">L'aliment shelishi ne transmet</text>
+<text x="550" y="190" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">rien au liquide.</text>
+<text x="550" y="218" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2f5c2f">Foulage, puis nom de teruma : pur</text>
+<rect x="16" y="262" width="708" height="62" rx="4" fill="#fff6e8" stroke="#a36b2d"/>
+<text x="370" y="288" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Si le nom de teruma est appelé avant le foulage, la maala prend effet.</text>
+<text x="370" y="308" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#a36b2d">Le liquide est alors traité comme l'aliment : tout est impur.</text>
+</svg></div><div class="svg-cap">Raisins sheni : la goutte devient impure dès le kebeitza. Raisins shelishi : le liquide reste pur, tant que le nom de teruma n&#x27;est pas encore appelé.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רָבָא, אַף אֲנַן נָמֵי תְּנֵינָא: ״וְנָתַן עָלָיו מַיִם חַיִּים אֶל כֶּלִי״ — שֶׁתְּהֵא חַיּוּתָן בִּכְלִי. ״וְנָתַן״, אַלְמָא תְּלוּשִׁין נִינְהוּ. וְהָא מְחֻובָּרִין נִינְהוּ!</div>
+            <div class="fr"><p>Rava dit : nous aussi, nous l&#x27;avons appris. &#x27;Et il mettra sur lui de l&#x27;eau vive, dans un ustensile&#x27; : que leur vitalité soit dans l&#x27;ustensile. &#x27;Et il mettra&#x27; : il en ressort qu&#x27;elles sont détachées. Et elles sont attachées !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַף אֲנַן נָמֵי תְּנֵינָא</b> דַּעֲבוּד רַבָּנָן מַעֲלָה בְּקָדָשִׁים וַאֲפִילּוּ בִּקְדֻושַּׁת פֶּה:</div>
+          <div class="glose-fr">Nous aussi, nous l&#x27;avons appris : les rabbins ont institué une maala dans les kodashim, même pour une sainteté de parole.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁתְּהֵא חַיּוּתָן בִּכְלִי</b> בְּאוֹתוֹ כְּלִי עַצְמוֹ שֶׁהוּא מְקַדֵּשׁ בּוֹ מֵי חַטָּאת בְּאֶפְרָן צָרִיךְ לִמְלֵאוּתוֹ מִן הַמַּעְיָן וְלֹא יְמַלְּאֵם בִּכְלִי אַחֵר וִיעָרֵם לְתוֹךְ זֶה וְכָתַב וְנָתַן דְּמַשְׁמַע תְּלוּשִׁין דְּמֻותָּר לִמְלֵאוּתוֹ בִּכְלִי אַחֵר וִיעָרֵם לְתוֹךְ זֶה:</div>
+          <div class="glose-fr">Que leur vitalité soit dans l&#x27;ustensile : dans cet ustensile même avec lequel il consacre les eaux de la hatat par leur cendre, il faut le remplir depuis la source. Et il ne les remplira pas dans un autre ustensile pour les verser dans celui-ci. Or il est écrit &#x27;et il mettra&#x27;, ce qui implique qu&#x27;elles sont détachées : il est permis de le remplir avec un autre ustensile et de les verser dans celui-ci.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rava</b> reprend la maala des kodashim à partir du verset des eaux de la <b>hatat</b> (Nombres 19:17). 'De l'eau vive, dans un ustensile' : la vitalité, l'eau courante de la source, doit entrer dans le keli même qui recevra la cendre. L'eau est alors <b>attachée</b> à la source.</p><p>'Et il mettra' se lit comme un versement : l'eau est <b>détachée</b>, puisée d'abord dans un autre ustensile. Les deux lectures sont dans le même verset. La page s'arrête sur cette tension.</p><p>Rachi dit d'emblée où Rava veut en venir : une maala des kodashim, même pour une sainteté de parole. Tossefot, sur le segment de la zeria, lit plutôt 'et il mettra' comme une susceptibilité à l'impureté malgré l'attache à la source.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 300" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="300" fill="#fbfaf7"/>
+<text x="370" y="28" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Eaux de la hatat : deux lectures du même verset</text>
+<rect x="16" y="48" width="348" height="170" rx="4" fill="#e8eef6" stroke="#3d5a80"/>
+<text x="190" y="76" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5a80">Eaux vives dans l'ustensile</text>
+<text x="190" y="104" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Leur vitalité doit être</text>
+<text x="190" y="124" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">dans le keli qui sanctifie.</text>
+<text x="190" y="152" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">On puise à la source,</text>
+<text x="190" y="172" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">directement dans ce keli.</text>
+<text x="190" y="200" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#3d5a80">Elles sont attachées</text>
+<rect x="376" y="48" width="348" height="170" rx="4" fill="#fff6e8" stroke="#a36b2d"/>
+<text x="550" y="76" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a36b2d">Et il mettra</text>
+<text x="550" y="104" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Venatan implique</text>
+<text x="550" y="124" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">un versement.</text>
+<text x="550" y="152" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">On peut puiser dans un autre keli</text>
+<text x="550" y="172" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">et verser dans celui-ci.</text>
+<text x="550" y="200" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#a36b2d">Elles sont détachées</text>
+<rect x="16" y="232" width="708" height="52" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="370" y="254" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#6b5344">La page s'arrête sur les deux lectures. Rachi y voit une maala des kodashim.</text>
+<text x="370" y="274" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Tossefot, plus haut, lit venatan pour la réception de l'impureté.</text>
+</svg></div><div class="svg-cap">Le même verset demande l&#x27;eau vive directement dans le keli, et le mot &#x27;il mettra&#x27; laisse verser d&#x27;un autre ustensile.</div></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Pesachim_34a.html">&lsaquo; Pesachim 34a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Pesachim_35a.html">Pesachim 35a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schémas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage sélectionné :\n« '+s+' »\n'):'\nPassage concerné :\n\n')+'\nCorrection proposée :\n\n\n— envoyé depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>
