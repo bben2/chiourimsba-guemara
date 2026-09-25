@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eruvin 60a  -  Marpesset, shiur de la ville, eruv à l&#x27;est ou à l&#x27;ouest</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Eruvin 60a  -  Marpesset, shiur de la ville, eruv à l&#x27;est ou à l&#x27;ouest</h1>
+    <div class="ref">Eruvin 60a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Eruvin_59b.html">&lsaquo; Eruvin 59b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> La Guemara achève l&#x27;enseignement de Chmouel sur la marpesset et la cour qui n&#x27;ont pas fait d&#x27;eruv ensemble : une daka de quatre tefahim retire la marpesset, lorsque celle-ci a moins de dix tefahim de haut et qu&#x27;elle est close sauf une ouverture d&#x27;au plus dix coudées. Rav Yehouda, au nom de Chmouel, maintient le statut de cloison à un mur garni d&#x27;échelles, même au-delà de dix coudées.</p><p>Abaye, envoyé faire l&#x27;eruv de Kakounai, cherche quel shiur laisser : maisons vers le fleuve, fenêtres, quartiers de Mehouza, puis le grenier à paille de Poumbedita. La mesure du shiur va d&#x27;Ir Hadasha, cinquante habitants, à Rabbi Shimon, trois cours, puis à Rabbi Yitshak, une maison dans une cour.</p><p>La michna suivante fixe la chevita selon la distance de deux mille coudées : maison ou eruv, et l&#x27;eruv déposé dans l&#x27;ibbour de la ville n&#x27;ajoute rien.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 322" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="322" fill="#fbfaf7"/>
+<text x="370.0" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Marpesset et daka</text>
+<text x="370.0" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#5c5348">Chmouel. Oubli de l'eruv commun</text>
+<rect x="16" y="62" width="230" height="150" rx="4" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="131.0" y="116.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Hauteur sous dix tefahim</text>
+<text x="131.0" y="133.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Close tout autour</text>
+<text x="131.0" y="150.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Ouverture : dix coudées</text>
+<text x="131.0" y="167.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">au plus</text>
+<rect x="258" y="62" width="230" height="150" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="373.0" y="116.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Daka de quatre tefahim</text>
+<text x="373.0" y="133.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">devant l'ouverture</text>
+<text x="373.0" y="150.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Ils se retirent</text>
+<text x="373.0" y="167.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">La cour reste permise</text>
+<rect x="500" y="62" width="224" height="150" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="612.0" y="116.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Sans daka</text>
+<text x="612.0" y="133.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">L'ouverture est un petah</text>
+<text x="612.0" y="150.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Même pour la rigueur</text>
+<text x="612.0" y="167.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">La marpesset interdit</text>
+<rect x="16" y="228" width="708" height="72" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="370.0" y="260.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Dix tefahim : hauteur d'une cloison. Dix coudées : largeur d'une entrée.</text>
+<text x="370.0" y="277.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Sous dix tefahim, la marpesset fait corps avec la cour, sauf si la daka la retire.</text>
+</svg></div>
+          <figcaption>Marpesset sous dix tefahim, close sauf une ouverture de dix coudées. La daka de quatre retire. Sans daka, elle interdit la cour.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 336" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="336" fill="#fbfaf7"/>
+<text x="370.0" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Mur garni d'échelles</text>
+<text x="370.0" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#5c5348">Rav Yehouda au nom de Chmouel</text>
+<rect x="40" y="70" width="28" height="150" rx="2" fill="#6b8193" stroke="#6b8193"/>
+<rect x="78" y="70" width="28" height="150" rx="2" fill="#6b8193" stroke="#6b8193"/>
+<rect x="116" y="70" width="28" height="150" rx="2" fill="#6b8193" stroke="#6b8193"/>
+<rect x="154" y="70" width="28" height="150" rx="2" fill="#6b8193" stroke="#6b8193"/>
+<rect x="192" y="70" width="28" height="150" rx="2" fill="#6b8193" stroke="#6b8193"/>
+<text x="130" y="248" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Échelles jointives</text>
+<text x="130" y="268" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#5c5348">même au-delà de dix coudées</text>
+<rect x="280" y="68" width="444" height="78" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="502.0" y="103.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Un seul veut reunir</text>
+<text x="502.0" y="120.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">L'échelle est un petah : un eruv. Kolla.</text>
+<rect x="280" y="158" width="444" height="78" rx="4" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="502.0" y="193.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Les deux veulent séparer</text>
+<text x="502.0" y="210.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">La cloison tient : deux eruvs.</text>
+<rect x="280" y="248" width="444" height="64" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="502.0" y="276.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rigueur qui annulerait le mur : écartée.</text>
+<text x="502.0" y="293.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">En érouvines, on retient l'indulgence.</text>
+</svg></div>
+          <figcaption>Mur garni d&#x27;échelles, même au-delà de dix coudées : la cloison tient. On prend l&#x27;indulgence, entrée ou séparation.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 400" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="400" fill="#fbfaf7"/>
+<text x="370.0" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Cinq pas d'Abaye a Kakounai</text>
+<text x="370.0" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#5c5348">Quel shiur laisse-t-on a la ville ?</text>
+<rect x="16" y="60" width="708" height="58" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="370.0" y="85.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">1. Maisons ouvertes sur le fleuve</text>
+<text x="370.0" y="102.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Abaye les prend d'abord pour le shiur.</text>
+<rect x="16" y="126" width="708" height="58" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="370.0" y="151.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">2. Reprise : elles ne peuvent pas rejoindre</text>
+<text x="370.0" y="168.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">La michna suppose qu'on aurait pu faire l'eruv. Fenêtres.</text>
+<rect x="16" y="192" width="708" height="58" rx="4" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="370.0" y="217.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">3. Reprise : Mehouza, quartier par quartier</text>
+<text x="370.0" y="234.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Chacun est shiur de l'autre, sans passage au sol.</text>
+<rect x="16" y="258" width="708" height="58" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="370.0" y="283.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">4. Reprise : là-bas, les toits relient</text>
+<text x="370.0" y="300.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Ici, aucun joint. Il faut des fenêtres.</text>
+<rect x="16" y="324" width="708" height="58" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="370.0" y="349.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">5. Grenier à paille de Poumbedita</text>
+<text x="370.0" y="366.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Shiur retenu. Les fenêtres ne sont plus exigées.</text>
+</svg></div>
+          <figcaption>Abaye à Kakounai : maisons du fleuve, fenêtres, quartiers de Mehouza, toits, puis le grenier à paille de Poumbedita.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְלֹא עֵירְבוּ, אִם יֵשׁ לִפְנֵיהֶם דַּקָּה אַרְבָּעָה — אֵינָהּ אוֹסֶרֶת, וְאִם לָאו — אוֹסֶרֶת.</div>
+            <div class="fr"><p>et ils n&#x27;ont pas fait l&#x27;eruv : s&#x27;il y a devant eux une daka de quatre, elle n&#x27;interdit pas ; sinon, elle interdit.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְלֹא עֵירְבוּ</b> בְּנֵי מִרְפֶּסֶת עִם בְּנֵי חָצֵר אֶלָּא אֵלּוּ לְבַדָּן וְאֵלּוּ לְבַדָּן:</div>
+          <div class="glose-fr">Et ils n&#x27;ont pas fait l&#x27;eruv : les gens de la marpesset avec les gens de la cour, ceux-ci à part et ceux-là à part.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִם יֵשׁ לִפְנֵיהֶם</b> לִפְנֵי הַמִּרְפֶּסֶת לְרַגְלֵי הַכֶּבֶשׂ בִּתְחִלַּת עֲלִיָּיתָהּ:</div>
+          <div class="glose-fr">S&#x27;il y a devant eux : devant la marpesset, au pied de la rampe, au début de sa montée.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דַּקָּה</b> פֶּתַח קָטָן גֹּובַהּ אַרְבָּעָה אֵין אוֹסְרִין בְּנֵי מִרְפֶּסֶת עַל בְּנֵי הֶחָצֵר דְּהָא אִיסְתַּלַּק לְהוּ:</div>
+          <div class="glose-fr">Daka : une petite entrée, haute de quatre. Les gens de la marpesset n&#x27;interdisent pas aux gens de la cour, car ils se sont retirés.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאִם לָאו אוֹסֶרֶת</b> אַלְמָא תּוֹרַת פֶּתַח עָלָיו וַאֲפִילּוּ לְחוּמְרָא:</div>
+          <div class="glose-fr">Et sinon, elle interdit : on voit qu&#x27;elle a le statut d&#x27;entrée, même pour la rigueur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Suite de l'enseignement de <b>Chmouel</b> sur la <b>marpesset</b> (galerie haute) et la cour. Chacun a fait son eruv de son côté.</p><p>Une <b>daka</b>, petite cloison de quatre <b>tefahim</b>, placée devant la montée, retire les gens du haut : ils n'interdisent plus la cour. Sans elle, la rampe compte comme une <b>entrée</b>, et l'interdiction tient, même quand ce statut alourdit.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָכָא בְמַאי עָסְקִינַן, בִּדְלֹא גְּבוֹהָ מִרְפֶּסֶת עֲשָׂרָה.</div>
+            <div class="fr"><p>De quoi s&#x27;agit-il ici ? D&#x27;une marpesset qui n&#x27;est pas haute de dix.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בִּדְלָא גָּבוֹהַּ י&#x27;</b> דְּלֵיכָּא לְמֵימַר תּוֹרַת מְחִיצָּה עָלֶיהָ:</div>
+          <div class="glose-fr">Lorsqu&#x27;elle n&#x27;est pas haute de dix : on ne peut pas dire qu&#x27;elle a le statut de cloison.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La réponse limite le cas. La marpesset a moins de dix <b>tefahim</b> de haut. À cette hauteur, elle ne forme pas un domaine séparé : elle fait corps avec la cour.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאִי לֹא גְּבוֹהָ מִרְפֶּסֶת עֲשָׂרָה, כִּי קָא עָבֵיד דַּקָּה, מַאי הָוֵי? בִּמְגֻופֶּפֶת עַד עֶשֶׂר אַמּוֹת, דְּכֵיוָן דַּעֲבִיד דַּקָּה — אִיסְתַּלּוֹקֵי אִיסְתַּלּוּק לֵיהּ מֵהָכָא.</div>
+            <div class="fr"><p>Et si la marpesset n&#x27;est pas haute de dix, lorsqu&#x27;il fait une daka, qu&#x27;est-ce que cela fait ? Lorsqu&#x27;elle est close jusqu&#x27;à dix coudées : dès qu&#x27;il fait une daka, il s&#x27;est retiré d&#x27;ici.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כִּי עֲבִיד דַּקָּה לְפָנֶיהָ מַאי הָוֵי</b> הֲרֵי כָּל הַמִּרְפֶּסֶת סְבִיבוֹתֶיהָ נְמוּכָה וּפְתוּחָה לֶחָצֵר וַהֲרֵי הֵן כִּשְׁתֵּי חֲצֵירוֹת שֶׁאֵין כֹּותֶל בֵּינֵיהֶן:</div>
+          <div class="glose-fr">Lorsqu&#x27;il fait une daka devant elle, qu&#x27;est-ce que cela fait ? Toute la marpesset, alentour, est basse et ouverte sur la cour : ils sont comme deux cours sans mur entre elles.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מְגֻופֶּפֶת</b> מֻוקֶּפֶת מְחִיצָּה סָבִיב אֶלָּא שֶׁנִּשְׁאַר לִפְנִים י&#x27; אַמּוֹת כְּדִין פֶּתַח בְּלֹא הֶיקֵּף דְּאִי עֲבוּד הָתָם דַּקָּה סִלּוּק נַפְשַׁייְהוּ וְאִי לָא ע&quot;כ לְחוּמְרָא נָמֵי פֶּתַח הוּא הוֹאִיל דְּלָא גָּבוֹהַּ י&#x27;:</div>
+          <div class="glose-fr">Close : entourée d&#x27;une cloison, sauf qu&#x27;il reste à l&#x27;intérieur dix coudées, selon la règle d&#x27;une entrée sans pourtour. S&#x27;ils y font une daka, ils se retirent. Sinon, forcément, même pour la rigueur, c&#x27;est une entrée, puisqu&#x27;elle n&#x27;est pas haute de dix.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Si tout le pourtour est ouvert et bas, une daka locale ne sépare rien. Le cas retenu : la marpesset est <b>close</b>, et il ne reste qu'une ouverture d'au plus dix <b>coudées</b>, mesure d'un <b>petah</b> (entrée).</p><p>La daka ferme cette entrée : les gens du haut se retirent. Sans daka, cette ouverture reste une entrée, et ils interdisent la cour.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 310" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="310" fill="#fbfaf7"/>
+<text x="370.0" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Close jusqu'à dix coudées</text>
+<text x="370.0" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#5c5348">La daka ferme la seule ouverture</text>
+<rect x="80" y="78" width="360" height="200" rx="2" fill="#ffffff" stroke="#6b8193"/>
+<rect x="80" y="78" width="360" height="16" rx="2" fill="#6b8193" stroke="#6b8193"/>
+<rect x="80" y="78" width="16" height="200" rx="2" fill="#6b8193" stroke="#6b8193"/>
+<rect x="424" y="78" width="16" height="200" rx="2" fill="#6b8193" stroke="#6b8193"/>
+<rect x="80" y="200" width="120" height="16" rx="2" fill="#6b8193" stroke="#6b8193"/>
+<rect x="280" y="200" width="160" height="16" rx="2" fill="#6b8193" stroke="#6b8193"/>
+<rect x="200" y="248" width="80" height="28" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="240.0" y="266.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">10 c.</text>
+<text x="260" y="160" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#2b2b2b">Marpesset</text>
+<text x="260" y="182" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">close, basse</text>
+<rect x="470" y="110" width="240" height="140" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="590.0" y="167.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Daka sur l'ouverture</text>
+<text x="590.0" y="184.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">quatre tefahim</text>
+<text x="590.0" y="201.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Retrait de la cour</text>
+</svg></div><div class="svg-cap">Marpesset close, une seule ouverture d&#x27;au plus dix coudées. La daka la ferme.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב יְהוּדָה אָמַר שְׁמוּאֵל: כֹּותֶל שֶׁרִצְפָּה בְּסֻולָּמוֹת, אֲפִילּוּ בְּיָתֵר מֵעֶשֶׂר — תּוֹרַת מְחִיצָּה עָלָיו.</div>
+            <div class="fr"><p>Rav Yehouda a dit au nom de Chmouel : un mur qu&#x27;on a garni d&#x27;échelles, même au-delà de dix, a le statut de cloison.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁרְצָפוֹ</b> זָקַף סֻולָּם אֵצֶל סֻולָּם:</div>
+          <div class="glose-fr">Qu&#x27;on a garni : il a dressé une échelle à côté d&#x27;une échelle.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>תּוֹרַת מְחִיצָּה עָלָיו</b> וְאֵין מְבַטְּלִין הַמְּחִיצָּה לְמֶהֱוֵי כְּנִפְרַץ הַכֹּותֶל יוֹתֵר מֵעֶשֶׂר דְּאָמַר לְקַמָּן מְעָרְבִין אֶחָד וְאֵין מְעָרְבִין שְׁנַיִם אֶלָּא רָצוּ אֶחָד מְעָרְבִין וּלְקֻולָּא וְהָוֵי כְּפֶתַח רָצוּ שְׁנֵיהֶם מְעָרְבִין דִּלְחֻומְרָא לָא אָמְרִינַן דְּלִיבַטְּלֵיהּ לַמְּחִיצָּה דְּכֹל בְּעֵירוּבִין לְהָקֵל:</div>
+          <div class="glose-fr">Il a le statut de cloison : on n&#x27;annule pas la cloison pour qu&#x27;elle soit comme un mur ouvert sur plus de dix. Car on dit plus loin : on fait l&#x27;eruv à un, et on ne fait pas l&#x27;eruv à deux. Plutôt : s&#x27;ils veulent, à un, on fait l&#x27;eruv, et c&#x27;est pour l&#x27;indulgence, et c&#x27;est comme une entrée. S&#x27;ils veulent tous les deux, on fait l&#x27;eruv. Pour la rigueur, on ne dit pas que cela annule la cloison, car en matière d&#x27;erouvines tout va vers l&#x27;indulgence.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Une brèche de plus de dix <b>coudées</b> annule un mur. Des <b>échelles</b> alignées sur plus de dix coudées pourraient passer pour cette brèche. Chmouel maintient le <b>statut de cloison</b>.</p><p>L'échelle a deux usages, et l'on prend l'<b>indulgence</b>. Pour réunir : elle est une entrée, un seul eruv. Pour rester séparés : la cloison tient, deux eruvs. On n'applique pas la rigueur qui annulerait le mur.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רָמֵי לֵיהּ רַב בְּרוֹנָא לְרַב יְהוּדָה בְּמַעְצַרְתָּא דְּבֵי רַב חֲנִינָא: מִי אָמַר שְׁמוּאֵל תּוֹרַת מְחִיצָה עָלָיו? וְהָאָמַר רַב נַחְמָן אָמַר שְׁמוּאֵל: אַנְשֵׁי מִרְפֶּסֶת וְאַנְשֵׁי חָצֵר שֶׁשָּׁכְחוּ וְלֹא עֵירְבוּ, אִם יֵשׁ לְפָנֶיהָ דַּקָּה אַרְבָּעָה אֵינָהּ אוֹסֶרֶת, וְאִם לָאו — אוֹסֶרֶת.</div>
+            <div class="fr"><p>Rav Berouna opposa une contradiction à Rav Yehouda, au pressoir de la maison de Rav Hanina : Chmouel a-t-il dit qu&#x27;il a le statut de cloison ? Or Rav Nahman a dit au nom de Chmouel : les gens de la marpesset et les gens de la cour qui ont oublié et n&#x27;ont pas fait l&#x27;eruv, s&#x27;il y a devant elle une daka de quatre, elle n&#x27;interdit pas, et sinon, elle interdit.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמִי אָמַר שְׁמוּאֵל</b> דְּלָא מְבַטְּלָא סֻולָּם לִמְחִיצָּה לְחוּמְרָא:</div>
+          <div class="glose-fr">Et Chmouel a-t-il dit : que l&#x27;échelle n&#x27;annule pas la cloison pour la rigueur.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאִי לָאו אוֹסֶרֶת</b> אַלְמָא אע&quot;ג דְּגָבוֹהַּ מִרְפֶּסֶת י&#x27; אָתֵי סֻולָּם וּמְבַטֵּיל לֵיהּ:</div>
+          <div class="glose-fr">Et sinon, elle interdit : on voit que, bien que la marpesset soit haute de dix, l&#x27;échelle vient et l&#x27;annule.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Berouna met en face deux dits de <b>Chmouel</b>. Le mur garni d'échelles garderait sa cloison. Or, sans <b>daka</b>, la marpesset interdit la cour : l'échelle, ou la rampe, annulerait donc la séparation, et cela pour la rigueur.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָכָא בְמַאי עָסְקִינַן, דְּלֹא גְּבוֹהָ מִרְפֶּסֶת עֲשָׂרָה. וְאִי לֹא גְּבוֹהָ מִרְפֶּסֶת עֲשָׂרָה, כִּי עָבֵיד דַּקָּה מַאי הָוֵי? בִּמְגֻופֶּפֶת עַד עֶשֶׂר אַמּוֹת, דְּכֵיוָן דַּעֲבִיד דַּקָּה — אִיסְתְּלוֹקֵי אִיסְתַּלַּק מֵהָכָא.</div>
+            <div class="fr"><p>De quoi s&#x27;agit-il ici ? D&#x27;une marpesset qui n&#x27;est pas haute de dix.</p><p>Et si la marpesset n&#x27;est pas haute de dix, lorsqu&#x27;il fait une daka, qu&#x27;est-ce que cela fait ? Lorsqu&#x27;elle est close jusqu&#x27;à dix coudées : dès qu&#x27;il fait une daka, il s&#x27;est retiré d&#x27;ici.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בִּדְלָא גָּבוֹהַּ כו&#x27;</b> דִּבְלֹא סֻולָּם נָמֵי בָּטְלָה:</div>
+          <div class="glose-fr">Lorsqu&#x27;elle n&#x27;est pas haute, etc. : même sans échelle, elle est annulée.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Même réponse que plus haut. Le cas où l'absence de daka interdit vise une marpesset <b>sous dix tefahim</b> : sans l'échelle déjà, elle ne fait pas domaine à part. La daka ne sert que parce que le pourtour est clos et qu'il reste une ouverture d'au plus dix coudées.</p><p>Le mur garni d'échelles, lui, reste une cloison. Les deux dits de Chmouel portent sur deux constructions.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָנְהוּ בְּנֵי קָקוּנָאֵי דְּאָתֵי לְקַמֵּיהּ דְּרַב יוֹסֵף, אָמְרוּ לֵיהּ: הַב לַן גַּבְרָא דְּלִיעָרֵב לַן מָאתִין. אֲמַר לֵיהּ לְאַבַּיֵּי: זִיל עָרֵב לְהוּ, וַחֲזִי דְּלָא מְצַוְוחַתְּ עֲלַהּ בְּבֵי מִדְרְשָׁא. אֲזַל, חֲזָא לְהָנְהוּ בָּתֵּי דִּפְתִיחִי לְנַהֲרָא. אָמַר: הָנֵי לֶהֱוֵי שִׁיּוּר לְמָתָא.</div>
+            <div class="fr"><p>Ces gens de Kakounai vinrent devant Rav Yossef. Ils lui dirent : donne-nous un homme qui fasse l&#x27;eruv pour notre ville.</p><p>Il dit à Abaye : va, fais-leur l&#x27;eruv, et veille à ce qu&#x27;on ne crie pas contre cela au beit hamidrach. Il alla, vit ces maisons ouvertes sur le fleuve.</p><p>Il dit : que celles-ci soient un shiur pour la ville.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּלִיעָרַב מָאתִין</b> וְעִיר שֶׁל רַבִּים וְנַעֲשֵׂית שֶׁל יָחִיד הָוְיָא וּבַעְיָא שִׁיּוּר:</div>
+          <div class="glose-fr">Qui fasse l&#x27;eruv pour notre ville : et c&#x27;était une ville du grand nombre devenue d&#x27;un seul, et elle exige un shiur.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דִּפְתִיחִי לְנַהֲרָא</b> פִּתְחֵיהֶן אֲחוֹרֵי הָעִיר לַנָּהָר וְלֹא הָיָה לָהֶם פֶּתַח פָּתוּחַ לָעִיר:</div>
+          <div class="glose-fr">Ouvertes sur le fleuve : leurs entrées sont derrière la ville, vers le fleuve, et elles n&#x27;avaient pas d&#x27;entrée ouverte sur la ville.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּלִיעָרַב לָן מָאתִין</b> מַה שֶּׁפֵּי&#x27; בַּקְּוַנְט&#x27; דְּעִיר שֶׁל רַבִּים וְנַעֲשֵׂית שֶׁל יָחִיד הֲוַאי לֹא בָּא לְאַפּוּקֵי וַהֲרֵי הִיא שֶׁל רַבִּים אֶלָּא לְאַפּוּקֵי שֶׁל יָחִיד וְנַעֲשֵׂית שֶׁל רַבִּים:</div>
+          <div class="glose-fr">Qui fasse l&#x27;eruv pour notre ville. Ce que Rachi a expliqué, une ville du grand nombre devenue d&#x27;un seul : il n&#x27;est pas venu exclure le cas où elle est du grand nombre, mais exclure une ville d&#x27;un seul devenue du grand nombre.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Ville du <b>grand nombre devenue d'un seul</b> : on ne fait pas l'eruv de tout, on laisse un <b>shiur</b>, une part hors de l'eruv. Rav Yossef envoie Abaye, avec l'ordre d'éviter toute contestation au <b>beit hamidrach</b>.</p><p>Abaye voit des maisons dont la porte donne sur le <b>fleuve</b>, pas sur la ville, et il veut les laisser comme shiur. Tossefot précise la portée de Rachi : le cas exclu est la ville d'un seul devenue du grand nombre, où l'on réunit tout.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הֲדַר אָמַר: ״אֵין מְעָרְבִין אֶת כֻּולָּהּ״ תְּנַן, [מִכְּלָל] דְּאִי בָּעֵי לְעֵירוּבֵי, מָצֵי מְעָרְבִי. אֶלָּא אֶיעְבֵּיד לְהוּ כַּווֵּי, דְּאִי בָּעוּ לְעָירוֹבֵי דֶּרֶךְ חַלּוֹנוֹת מָצוּ מְעָרְבִי.</div>
+            <div class="fr"><p>Il se ravisa et dit : nous avons appris &quot; on ne fait pas l&#x27;eruv de toute la ville &quot;, d&#x27;où l&#x27;on déduit que, s&#x27;ils voulaient faire l&#x27;eruv, ils le pourraient. Je leur ferai plutôt des fenêtres, afin que, s&#x27;ils veulent faire l&#x27;eruv par les fenêtres, ils le puissent.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּאִי בָּעוּ לְעָרוּבֵי</b> הָנָךְ דִּמְשַׁייְּרִי מָצוּ מְעָרְבִי:</div>
+          <div class="glose-fr">S&#x27;ils voulaient faire l&#x27;eruv : ceux qu&#x27;on laisse en shiur peuvent faire l&#x27;eruv.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶיעְבֵּיד לְהוּ כַּוֵּוי</b> חַלּוֹנוֹת שֶׁיֵּשׁ בָּהֶן ד&#x27; עַל ד&#x27; לְצַד הָעִיר דְּאִי בָּעוּ הָווּ מָצוּ מְעָרְבִי וְאֶעֶבְדִינְהוּ שִׁיּוּר לְמָתָא דְּלָא לִיעָרְבוּהָ בַּהֲדַיְהוּ:</div>
+          <div class="glose-fr">Je leur ferai des fenêtres : des fenêtres de quatre sur quatre vers la ville, de sorte que, s&#x27;ils voulaient, ils pourraient faire l&#x27;eruv. Et j&#x27;en ferai un shiur pour la ville, pour ne pas faire l&#x27;eruv avec eux.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La michna, " on ne fait pas l'eruv de <b>toute</b> la ville ", suppose que la part laissée <b>aurait pu</b> entrer dans l'eruv. Des maisons sans aucune ouverture vers la ville ne peuvent pas servir de shiur.</p><p>Abaye veut donc percer des <b>fenêtres</b> de quatre tefahim sur quatre, mesure qui joint pour l'eruv, puis les laisser hors de l'eruv de la ville.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הֲדַר אֲמַר: לָא בָּעֵי, דְּהָא רַבָּה בַּר אֲבוּהּ מְעָרֵב לַהּ לְכֻולַּהּ מָחוֹזָא עַרְסְיָיתָא עַרְסְייָתָא מִשּׁוּם פֵּירָא דְּבֵי תוֹרֵי, דְּכָל חַד וְחַד הָוֵי שִׁיּוּר לְחַבְרֵיהּ. וְאַף עַל גַּב דְּאִי בָּעוּ לְעָרוֹבֵי בַּהֲדֵי הֲדָדֵי, לָא מָצוּ מְעָרְבִי.</div>
+            <div class="fr"><p>Il se ravisa et dit : on n&#x27;en a pas besoin. Car Rabba bar Avouha fait l&#x27;eruv pour tout Mehouza, quartier par quartier, à cause des fosses de nourriture du bétail, chacun étant un shiur pour l&#x27;autre.</p><p>Et bien que, s&#x27;ils voulaient faire l&#x27;eruv ensemble, ils ne le pourraient pas.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>עַרְסָיָיתָא עַרְסָיָיתָא</b> שְׁכוּנוֹת שְׁכוּנוֹת וְלֹא הָיוּ מְעָרְבִין כָּל הָעִיר כְּאַחַת:</div>
+          <div class="glose-fr">Quartier par quartier : des quartiers, et ils ne faisaient pas l&#x27;eruv de toute la ville en une fois.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>פֵּירָא דְּבֵי תּוֹרֵי</b> גֻּומָּא גְּדוֹלָה שֶׁמַּצְנִיעִים שָׁם גַּרְעִינֵי תְּמָרִים לְמַאֲכַל בְּהֵמָה וְהָיוּ אוֹתָן גֻּומּוֹת מַבְדִּילוֹת בֵּין הַשְּׁכוּנוֹת מִתַּחַת וּבְכָל שְׁכוּנָה הָיוּ מְבוֹאוֹת הַרְבֵּה וּמְעָרְבִין יַחַד וְלֹא הָיוּ מְתַקְּנִין לָהּ לְחָיַיִם מִשּׁוּם דְּעִיר שֶׁל רַבִּים וְנַעֲשֵׂית שֶׁל יָחִיד הָוְיָא וְכָל חַד וְחַד הָוֵי שִׁיּוּר לְחַבְרֵיהּ דְּאִי לָא הָוֵי שִׁיּוּר הֵיכִי מָצוּ לְעַרְבֵי מְבוֹאוֹת הַרְבֵּה שֶׁבְּכָל שְׁכוּנָה יַחַד בְּכָל עִיר שֶׁל רַבִּים וְנַעֲשֵׂית שֶׁל יָחִיד כָּל חַד וְחַד בְּאַנְפֵּי נַפְשֵׁיהּ בָּעוּ עֵירוּבֵי וּבָעֵי לֶחִי וְקוֹרָה כְּכָל עֲיָירוֹת שֶׁל רַבִּים:</div>
+          <div class="glose-fr">Fosses de nourriture du bétail : une grande fosse où l&#x27;on serre des noyaux de dattes pour la nourriture des bêtes. Ces fosses séparaient les quartiers par en dessous. Dans chaque quartier il y avait beaucoup de mabouot, et l&#x27;on faisait l&#x27;eruv ensemble. On n&#x27;y installait pas de lehi, parce que c&#x27;était une ville du grand nombre devenue d&#x27;un seul, et chacun était un shiur pour l&#x27;autre. Car s&#x27;il n&#x27;y avait pas de shiur, comment pourraient-ils réunir par un eruv les nombreux mabouot de chaque quartier ? Dans toute ville du grand nombre devenue d&#x27;un seul, chacun pour soi a besoin d&#x27;erouvines, et il faut un lehi et une kora, comme pour toutes les villes du grand nombre.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאַף עַל גַּב דְּאִי בָּעוּ לְעֵירוּבֵי לָא מָצֵי מְעָרְבִי</b> מִשּׁוּם פֵּירָא דְּמַפְסִיק וְאֵין יְכוֹלִין לְהַלֵּךְ מִשְּׁכוּנָה לִשְׁכוּנָה וְהָוֵי חָרִיץ שֶׁבֵּין שְׁתֵּי חֲצֵירוֹת דְּאָמְרִינַן לְקַמָּן (עֵירוּבִין דַּף עח:) מְעָרְבִין שְׁנַיִם וְאֵין מְעָרְבִין אֶחָד:</div>
+          <div class="glose-fr">Et bien que, s&#x27;ils voulaient faire l&#x27;eruv, ils ne le pourraient pas : à cause de la fosse qui interrompt, et ils ne peuvent pas aller d&#x27;un quartier à l&#x27;autre. C&#x27;est un fossé entre deux cours, dont on dit plus loin (Erouvin 78b) : on fait l&#x27;eruv à deux, et on ne fait pas l&#x27;eruv à un.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Mehouza</b> était partagée par des fosses où l'on gardait des noyaux de dattes pour le bétail. Rabba bar Avouha faisait l'eruv <b>quartier par quartier</b>. Chaque quartier servait de <b>shiur</b> à l'autre, alors qu'au sol on ne pouvait pas passer de l'un à l'autre.</p><p>Rachi en tire la règle du fossé : deux eruvs, oui ; un seul eruv commun, non. Abaye en conclut d'abord que le shiur n'a pas besoin de pouvoir rejoindre la ville.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 300" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="300" fill="#fbfaf7"/>
+<text x="370.0" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Mehouza, quartier par quartier</text>
+<text x="370.0" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#5c5348">Rabba bar Avouha. Pira de-vei torei</text>
+<rect x="16" y="70" width="220" height="120" rx="4" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="126.0" y="117.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#2b2b2b">Quartier A</text>
+<text x="126.0" y="135.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#2b2b2b">Eruv du quartier</text>
+<text x="126.0" y="153.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#2b2b2b">Shiur pour B</text>
+<rect x="250" y="70" width="240" height="120" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="370.0" y="117.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#2b2b2b">Fosses</text>
+<text x="370.0" y="135.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#2b2b2b">noyaux de dattes</text>
+<text x="370.0" y="153.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#2b2b2b">passage coupé</text>
+<rect x="504" y="70" width="220" height="120" rx="4" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="614.0" y="117.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#2b2b2b">Quartier B</text>
+<text x="614.0" y="135.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#2b2b2b">Eruv du quartier</text>
+<text x="614.0" y="153.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#2b2b2b">Shiur pour A</text>
+<rect x="16" y="210" width="708" height="64" rx="4" fill="#ffffff" stroke="#6b8193"/>
+<text x="370.0" y="238.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Par les toits et les étages, un eruv commun restait possible.</text>
+<text x="370.0" y="255.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Au sol, le fossé sépare : deux eruvs, pas un seul.</text>
+</svg></div><div class="svg-cap">Deux quartiers de Mehouza, séparés par les fosses. Chacun est le shiur de l&#x27;autre.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הֲדַר אָמַר: לָא דָּמֵי. הָתָם, אִי בָּעֵי — לְעָרוֹבֵי דֶּרֶךְ גַּגּוֹת, וְהָנֵי לָא מְעָרְבִי, הִילְכָּךְ נֶעֱבָדָן כַּוֵּוי.</div>
+            <div class="fr"><p>Il se ravisa et dit : cela ne se compare pas. Là-bas, s&#x27;ils voulaient, ils feraient l&#x27;eruv par les toits ; ceux-ci ne font pas l&#x27;eruv.</p><p>Nous leur ferons donc des fenêtres.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דֶּרֶךְ גַּגּוֹת</b> שֶׁהָיוּ לָהֶם דְּיוֹטָאוֹת עוֹבְרוֹת מִגַּגֵּי שְׁכוּנָה זוֹ לְגַגֵּי שְׁכוּנָה זוֹ:</div>
+          <div class="glose-fr">Par les toits : ils avaient des étages qui passaient du toit de ce quartier au toit de ce quartier.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Abaye distingue Mehouza de Kakounai. À Mehouza, des <b>étages</b> reliaient les toits : un eruv commun restait possible par en haut. Les maisons du fleuve, elles, n'ont aucun joint avec la ville. Il revient donc aux <b>fenêtres</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הֲדַר אָמַר: כַּווֵּי נָמֵי לָא בָּעֵי, דְּהָהוּא בֵּי תִּיבְנָא דַּהֲוָה לֵיהּ לְמָר בַּר פּוֹפִידְתָּא מִפֻּומְבְּדִיתָא, וְשָׁוְיָהּ שִׁיּוּר לְפוּמְבְּדִיתָא.</div>
+            <div class="fr"><p>Il se ravisa et dit : les fenêtres non plus ne sont pas exigées. Car ce grenier à paille qu&#x27;avait Mar bar Pofidata, de Poumbedita, il en a fait un shiur pour Poumbedita.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּהַהוּא בֵּי תִּבְנָא כּוּ&#x27;</b> וְאָמְרִינַן לְקַמָּן הֲלָכָה כְּר&quot;ש דְּלָא בָּעֵי נ&#x27; דִּיּוּרִין לְשִׁיּוּר:</div>
+          <div class="glose-fr">Car ce grenier à paille, etc. : et nous disons plus loin que la halakha est comme Rabbi Shimon, qui n&#x27;exige pas cinquante habitants pour le shiur.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְשָׁוְיָהּ שִׁיּוּר לְפוּמְבְּדִיתָא</b> בַּהֲדֵי שִׁיּוּר דָּג&#x27; חֲצֵירוֹת שֶׁל שְׁנֵי בָתִּים בָּעֵינַן וַהֲלָכָה כר&quot;ש:</div>
+          <div class="glose-fr">Et il en fit un shiur pour Poumbedita : avec le shiur de trois cours de deux maisons que nous exigeons, et la halakha est comme Rabbi Shimon.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Dernière reprise. À <b>Poumbedita</b>, un <b>grenier à paille</b> a servi de shiur, sans être une maison apte à entrer dans l'eruv de la ville. Les fenêtres de Kakounai ne sont donc pas exigées.</p><p>Rachi rattache cela à <b>Rabbi Shimon</b> : le shiur n'a pas la taille de cinquante habitants. Tossefot aligne le grenier sur la mesure de trois cours de deux maisons.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר, הַייְנוּ דְּאָמַר לִי מָר: ״חֲזִי דְּלָא מְצַווְחַתְּ עֲלַהּ בְּבֵי מִדְרְשָׁא״.</div>
+            <div class="fr"><p>Il dit : c&#x27;est bien ce que m&#x27;a dit le maître : &quot; Veille à ce qu&#x27;on ne crie pas contre cela au beit hamidrach. &quot;</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַייְנוּ דְּאָמַר (לֵיהּ) חָזֵי דְּלָא מַצְוְוחָא</b> שֶׁאִם הָיָה מִזְּקִיקָם לַעֲשׂוֹת כַּווֵּי עַל חִנָּם הָיוּ סוֹתְרִין אֶת בָּתֵּיהֶם:</div>
+          <div class="glose-fr">C&#x27;est bien ce qu&#x27;il a dit, veille à ce qu&#x27;on ne crie pas : s&#x27;il les avait obligés à faire des fenêtres pour rien, ils auraient démoli leurs maisons.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">רַבִּי זֵירָא עֵירֵב לְכֻולָּא מָתָא דְּבֵי ר&#x27; חַיָּיא וְלָא שָׁבֵיק לָהּ שִׁיּוּר. אֲמַר לֵיהּ אַבָּיֵי מַאי טַעְמָא עָבֵיד מַר הָכִי. א&quot;ל דְּאָמְרִי לִי הָנֵי סָבֵי דִּידָּה דר&#x27; חִייָּא בַּר אָשֵׁי הֲוָה מְעָרֵב לְכֻולָּהּ. וְאָמֵינָא שְׁמַע מִינַּהּ עִיר שֶׁל יָחִיד וְנַעֲשֵׂית שֶׁל רַבִּים הֲוַאי. אֲמַר לֵיהּ לְדִידִי אֲמַרוּ לִי הָנֵי סָבֵי דִּידֵהּ אַשְׁפָּה הֲוַאי הָתָם מֵחַד גִּיסָא הַשְׁתָּא דְּאִישְׁתְּקִילָא אַשְׁפָּה הֲוָה לֵיהּ כִּשְׁנֵי פְּתָחִים וְאָסוּר. אֲמַר לֵיהּ לָאו אַדַּעְתַּאי. אָמַר רַב נַחְמָן אָמַר רַב סֻולָּם מִכָּאן וּפֶתַח מִכָּאן תּוֹרַת פֶּתַח עָלָיו וְתוֹרַת מְחִיצָה עָלָיו וְלָא בָּעֵי שִׁיּוּר. שְׁמַע מִינָּה דְּכָל הֵיכָא דְּאִיכָּא שְׁנֵי פְּתָחִים לָא מַעֲרָבִי לֵיהּ עַד דְּעָבְדִי לֵיהּ שִׁיּוּר. וְטַעֲמָא דְּשִׁיּוּר כְּדֵי שֶׁיַּכִּירוּ כִּי הָעֵירוּב הוּא שֶׁהִתִּיר הַטִּלְטוּל לְפִיכָךְ אָסוּר הַשִּׁיּוּר לְהוֹכִיחַ עַל הָעֵירוּב כְּלוֹמַר הַשִּׁיּוּר אָסוּר לְעָרֵב עִם הָעִיר מִשּׁוּם הֶיכֵּירָא. אֲבָל לְעַצְמָן יְכוֹלִים לְעָרֵב בְּנֵי הַשִּׁיּוּר כִּדְאָמַר בִּשְׁמַעְתִּין בְּעִיר חֲדָשָׁה כִּי הֵיכִי דְּהִיא הָוְיָא שִׁיּוּר לִגְדוֹלָה גְּדוֹלָה נָמֵי הָוְיָא שִׁיּוּר לְדִידָהּ. וְכֵן אָמַר דְּרַבָּה בַּר אֲבוּהּ מְעָרֵב לַהּ לְכֻולָּא מָחוֹזָא עַרְסְיָיתָא עַרְסְייָתָא מִשּׁוּם פֵּירָא דְּבֵי תוֹרֵי וְכָל חַד הָוֵי שִׁיּוּר לְחַבְרֵיהּ. וְהָא דְּאָמַר סֻולָּם תּוֹרַת פֶּתַח עָלָיו הַיְינוּ בְּכֹותֶל שֶׁבֵּין שְׁתֵּי חֲצֵירוֹת רָצוּ מְעָרְבִין שְׁנַיִם לֹא רָצוּ מְעָרְבִין אֶחָד. וְאַנְשֵׁי חָצֵר וְאַנְשֵׁי מִרְפֶּסֶת שֶׁלֹּא עֵירְבוּ זֶה עִם זֶה אֵינָן אוֹסְרִין זֶה עַל זֶה. אָמַר רַב יְהוּדָה כֹּותֶל שֶׁרְצָפוֹ בְּסֻולָּמוֹת אֲפִילּוּ בְּיוֹתֵר מֵעֶשֶׂר תּוֹרַת מְחִיצָה עָלָיו:</div>
+          <div class="glose-fr">Rabbi Zeira fit l&#x27;eruv pour toute la ville de la maison de Rabbi Hiya, et ne lui laissa pas de shiur. Abaye lui dit : quelle est la raison pour laquelle le maître agit ainsi ? Il lui dit : ces anciens du lieu m&#x27;ont dit que Rabbi Hiya bar Ashi faisait l&#x27;eruv de toute la ville. Et j&#x27;ai dit : apprends-en que c&#x27;était une ville d&#x27;un seul devenue du grand nombre. Il lui dit : à moi, ces anciens du lieu ont dit qu&#x27;il y avait là un tas d&#x27;ordures d&#x27;un côté. Maintenant que le tas a été enlevé, c&#x27;est comme deux entrées, et c&#x27;est interdit. Il lui dit : je ne l&#x27;avais pas à l&#x27;esprit. Rav Nahman a dit au nom de Rav : une échelle d&#x27;un côté et une entrée de l&#x27;autre, elle a le statut d&#x27;entrée et le statut de cloison, et elle n&#x27;exige pas de shiur. Apprends-en que partout où il y a deux entrées, on ne lui fait pas l&#x27;eruv tant qu&#x27;on ne lui a pas fait un shiur. La raison du shiur : qu&#x27;ils reconnaissent que c&#x27;est l&#x27;eruv qui a permis le port. Dès lors le shiur est interdit, pour attester l&#x27;eruv. Autrement dit, le shiur a interdiction de faire l&#x27;eruv avec la ville, à cause du signe (heker). Pour eux-mêmes, les habitants du shiur peuvent faire l&#x27;eruv, comme on le dit dans notre discussion au sujet de la ville neuve : de même qu&#x27;elle est un shiur pour la grande, la grande est aussi un shiur pour elle. Et de même, Rabba bar Avouha fait l&#x27;eruv pour tout Mehouza, quartier par quartier, à cause des fosses de nourriture du bétail, et chacun est un shiur pour l&#x27;autre. Ce qu&#x27;on a dit, une échelle a le statut d&#x27;entrée, vise un mur entre deux cours : s&#x27;ils veulent, on fait deux eruvs ; s&#x27;ils ne veulent pas, on fait un eruv. Les gens de la cour et les gens de la marpesset qui n&#x27;ont pas fait l&#x27;eruv l&#x27;un avec l&#x27;autre ne s&#x27;interdisent pas l&#x27;un l&#x27;autre. Rav Yehouda a dit : un mur qu&#x27;on a garni d&#x27;échelles, même au-delà de dix, a le statut de cloison.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Abaye comprend l'avertissement de Rav Yossef. Le shiur se discute de plusieurs côtés, et une décision hâtive aurait été reprise au <b>beit hamidrach</b>.</p><p>Tossefot : imposer des fenêtres inutiles, c'était faire <b>démolir</b> des murs de maisons.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא אִם כֵּן עָשָׂה חוּצָה לָהּ כָּעִיר חֲדָשָׁה. תַּנְיָא, אָמַר רַבִּי יְהוּדָה: עִיר אַחַת הָיְתָה בִּיהוּדָה וַחֲדָשָׁה שְׁמָהּ, וְהָיוּ בָּהּ חֲמִשִּׁים דָּיוֹרִים אֲנָשִׁים וְנָשִׁים וָטַף, וּבָהּ הָיוּ מְשַׁעֲרִים חֲכָמִים, וְהִיא הָיְתָה שִׁיּוּר.</div>
+            <div class="fr"><p>sauf s&#x27;il a fait en dehors d&#x27;elle comme la ville de Hadasha. On a enseigné : Rabbi Yehouda a dit : il y avait une ville en Judée, et son nom était Hadasha.</p><p>Il y avait là cinquante habitants, hommes, femmes et enfants. C&#x27;est par elle que les Sages estimaient, et elle-même était le shiur.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּבָהּ שִׁיעֲרוּ חֲכָמִים</b> שִׁיּוּרֵי עֲייָרוֹת וְהִיא עַצְמָהּ הָיְתָה שִׁיּוּר לְעִיר גְּדוֹלָה הַסְּמוּכָה לָהּ:</div>
+          <div class="glose-fr">Et c&#x27;est par elle que les Sages estimaient : les shiourim des villes. Et elle-même était un shiur pour une grande ville voisine.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וַחֲדָשָׁה שְׁמָהּ</b> בְּסֵפֶר יְהוֹשֻׁעַ (טו) הִיא כְּתוּבָה בְּנַחֲלַת יְהוּדָה:</div>
+          <div class="glose-fr">Et Hadasha est son nom : dans le livre de Yehochoua (chapitre 15), elle est écrite dans le patrimoine de Yehouda.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Reprise de la michna : ville du grand nombre devenue d'un seul, on laisse dehors une part <b>comme Ir Hadasha</b>.</p><p>La beraita fixe la mesure : <b>cinquante habitants</b>, en comptant hommes, femmes et enfants. Hadasha servait elle-même de shiur à la grande ville d'à côté. Tossefot la situe dans Yehochoua 15, héritage de Yehouda.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִיבַּעְיָא לְהוּ: חֲדָשָׁה מַהוּ? חֲדָשָׁה, כִּי הֵיכִי דְּאִיהִי הָוְיָא שִׁיּוּר לִגְדוֹלָה — גְּדוֹלָה נָמֵי הָוְיָא שִׁיּוּר לִקְטַנָּה.</div>
+            <div class="fr"><p>On a demandé : Hadasha, qu&#x27;en est-il ? Hadasha : de même qu&#x27;elle est un shiur pour la grande, la grande est aussi un shiur pour la petite.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Peut-on faire l'eruv de <b>Hadasha elle-même</b>, tout entière ? Oui : la grande ville voisine, pour laquelle Hadasha est le shiur, est en retour le shiur de Hadasha. Chacune laisse l'autre dehors.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא כְּעֵין חֲדָשָׁה, מַהוּ? רַב הוּנָא וְרַב יְהוּדָה, חַד אָמַר: בָּעֲיָא שִׁיּוּר, וְחַד אָמַר: לָא בָּעֲיָא שִׁיּוּר.</div>
+            <div class="fr"><p>Plutôt, une ville semblable à Hadasha, qu&#x27;en est-il ? Rav Houna et Rav Yehouda : l&#x27;un dit qu&#x27;elle exige un shiur, et l&#x27;un dit qu&#x27;elle n&#x27;exige pas de shiur.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>חֲדָשָׁה מַהוּ</b> לְעֵירוּבֵי בְּאַנְפָּהּ נַפְשָׁהּ כֻּולָּהּ בְּלֹא שִׁיּוּר:</div>
+          <div class="glose-fr">Hadasha, qu&#x27;en est-il : faire l&#x27;eruv pour elle-même, tout entière, sans shiur.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּעֵין חֲדָשָׁה</b> עִיר קְטַנָּה אַחֶרֶת שֶׁל נ&#x27; דִּיּוּרִין וְאֵינָהּ סְמוּכָה לִגְדוֹלָה:</div>
+          <div class="glose-fr">Semblable à Hadasha : une autre petite ville de cinquante habitants, et elle n&#x27;est pas voisine d&#x27;une grande.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La question qui reste : une <b>petite ville isolée</b>, de la taille de Hadasha, cinquante habitants, sans grande ville à côté. Exige-t-elle un shiur ?</p><p><b>Rav Houna</b> et <b>Rav Yehouda</b> se partagent. Le Rosh, plus loin, retient la <b>kolla</b> : elle n'exige pas de shiur.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבִּי שִׁמְעוֹן אוֹמֵר שָׁלֹשׁ חֲצֵירוֹת וְכוּ׳. אָמַר רַב חָמָא בַּר גּוּרְיָא אָמַר רַב: הֲלָכָה כְּרַבִּי שִׁמְעוֹן. רַבִּי יִצְחָק אָמַר: אֲפִילּוּ בַּיִת אֶחָד וְחָצֵר אַחַת. חָצֵר אַחַת סָלְקָא דַּעְתָּךְ?! אֶלָּא אֵימָא: בַּיִת אֶחָד בְּחָצֵר אַחַת.</div>
+            <div class="fr"><p>Rabbi Shimon dit : trois cours, etc. Rav Hama bar Gourya a dit au nom de Rav : la halakha est comme Rabbi Shimon.</p><p>Rabbi Yitshak a dit : même une maison et une cour. Une cour, cela te viendrait-il à l&#x27;esprit ?</p><p>Dis plutôt : une maison dans une cour.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>חָצֵר אַחַת ס&quot;ד</b> חָצֵר בְּלֹא בַּיִת מִי הָוֵי דִּירָה:</div>
+          <div class="glose-fr">Une cour, cela te viendrait-il à l&#x27;esprit : une cour sans maison, est-ce une demeure ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בַּיִת אֶחָד בְּחָצֵר אַחַת</b> חָצֵר וּבַיִת לְתוֹכָהּ סַגִּי לִהְיוֹת שִׁיּוּר:</div>
+          <div class="glose-fr">Une maison dans une cour : une cour, et une maison à l&#x27;intérieur, suffit pour être un shiur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Trois mesures du <b>shiur</b>. La michna, par Ir Hadasha : cinquante habitants. <b>Rabbi Shimon</b> : trois cours de deux maisons. Rav tranche comme lui. <b>Rabbi Yitshak</b> descend encore : une maison dans une cour.</p><p>La formule " une cour " seule est corrigée. Une cour sans maison n'est pas une <b>demeure</b>. Il faut une maison dans la cour.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 340" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="340" fill="#fbfaf7"/>
+<text x="370.0" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Quelle taille pour le shiur ?</text>
+<text x="370.0" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#5c5348">De la michna au Rif</text>
+<rect x="16" y="62" width="230" height="180" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="131.0" y="131.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Michna, Ir Hadasha</text>
+<text x="131.0" y="148.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Cinquante habitants</text>
+<text x="131.0" y="165.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">hommes, femmes, enfants</text>
+<text x="131.0" y="182.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Mesure des Sages</text>
+<rect x="258" y="62" width="230" height="180" rx="4" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="373.0" y="131.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rabbi Shimon</text>
+<text x="373.0" y="148.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Trois cours</text>
+<text x="373.0" y="165.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">de deux maisons</text>
+<text x="373.0" y="182.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Halakha : Rav</text>
+<rect x="500" y="62" width="224" height="180" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="612.0" y="131.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rabbi Yitshak</text>
+<text x="612.0" y="148.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Une maison</text>
+<text x="612.0" y="165.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">dans une cour</text>
+<text x="612.0" y="182.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Le Rif tranche ainsi</text>
+<rect x="16" y="258" width="708" height="56" rx="4" fill="#ffffff" stroke="#6b8193"/>
+<text x="370.0" y="290.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Ville seule, taille d'Hadasha : Rav Houna et Rav Yehouda. Halakha : kolla, sans shiur.</text>
+</svg></div><div class="svg-cap">Trois mesures du shiur : cinquante habitants, trois cours, une maison dans une cour.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg16">
+          <div class="seg-num">17</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ אַבָּיֵי לְרַב יוֹסֵף: הָא דְּרַבִּי יִצְחָק, גְּמָרָא אוֹ סְבָרָא? אֲמַר לֵיהּ: מַאי נָפְקָא לַן מִינַּהּ? אֲמַר לֵיהּ: גְּמָרָא גָּמוּר, זְמוֹרְתָּא תְּהֵא?!</div>
+            <div class="fr"><p>Abaye dit à Rav Yossef : cet enseignement de Rabbi Yitshak, gemara ou sevara ? Il lui dit : quelle conséquence pratique y a-t-il pour nous ?</p><p>Il lui dit : une gemara, qu&#x27;on l&#x27;étudie : en ferait-on une chanson ?</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>גְּמָרָא</b> שֶׁהָיָה לוֹ קַבָּלָה מִשּׁוּם תַּנָּא אוֹ סְבָרָא שֶׁמִּסְּבָרָא הָיָה אוֹמֵר שֶׁכָּךְ נִרְאֶה אַף עַל פִּי שֶׁאֵין שׁוּם תַּנָּא סוֹבֵר כֵּן וְלֹא לִפְסֹוק הֲלָכָה בָּא אֶלָּא שֶׁכָּךְ הָיוּ דְּבָרִים נִרְאִים וְקָאָמַר מַאי נָפְקָא לַן מִינַּהּ כְּלוֹמַר הָא פָּסְקִינַן לְעֵיל כְּרַבִּי שִׁמְעוֹן וּמְשַׁנֵּי גְּמָרָא גָּמוּר כו&#x27; מ&quot;מ יֵשׁ לָנוּ לַחְקֹור וְלֵידַע אִם גְּמָרָא אוֹ סְבָרָא:</div>
+          <div class="glose-fr">Gemara : soit il tenait une tradition reçue d&#x27;un tanna, soit une sevara, et par raisonnement il disait que cela paraît ainsi, bien qu&#x27;aucun tanna ne soit de cet avis. Et il n&#x27;est pas venu trancher la halakha : c&#x27;est ainsi que les choses paraissaient. Et il dit : quelle conséquence pratique y a-t-il pour nous ? C&#x27;est-à-dire : nous avons déjà tranché plus haut comme Rabbi Shimon. Et il répond : une gemara, qu&#x27;on l&#x27;étudie, etc. Quoi qu&#x27;il en soit, nous devons chercher et savoir si c&#x27;est une gemara ou une sevara.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">הָנְהוּ בְּנֵי קָקוֹנָאֵי דַּאֲתוֹ לְקַמֵּיהּ דְּרַב יוֹסֵף אֲמַרוּ לֵיהּ הַב לַן גַּבְרָא דְּמִיעָרַב לָן מָאתִין. אֲמַר לֵיהּ לְאַבָּיֵי זִיל עֵרוּב לְהוּ וַחֲזִי דְּלָא קָא מְצַווְחַתְּ עֲלַהּ בְּבֵי מִדְרְשָׁא. אֲזַל חֲזִינְהוּ לְהָנְהוּ בָּתֵּי דִּפְתִיחִי לְנַהֲרָא אָמַר הָנֵי וַדַּאי לֶיהֱווֹ שִׁיּוּר לְמָתָא. הֲדַר אָמַר אֵין מְעָרְבִין אֶת כֻּולָּהּ תְּנַן מִכְּלָל דְּאִי בָּעֵי לְעָרוֹבֵי מָצֵי מְעָרְבִי וְהָנֵי לָא מָצֵי לְעָרוֹבֵי אֶלָּא לִיפָּתֵחַ לְהוּ כּוֹי לְמָתָא דְּאִי בָּעֵי לְעָרוֹבֵי דֶּרֶךְ חַלּוֹנוֹת מָצוּ מְעָרְבִי. הֲדַר אָמַר לָא בָּעֵי כּוֹי דְּהָא רַבָּה בַּר אֲבוּהּ מְעָרֵב לַהּ לְכֻולַּהּ מָחוֹזָא עַרְסְיָיתָא עַרְסְייָתָא מִשּׁוּם פֵּירָא דְּבֵי תוֹרֵי וְכָל חַד הָוֵי שִׁיּוּר לְחַבְרֵיהּ אַף עַל גַּב דְּאִי בָּעֵי לְעָרוֹבֵי בַּהֲדֵי הֲדָדֵי לָא מָצֵי מְעָרְבִי. הֲדַר אָמַר לְהוּ לָא דָּמֵי לְהָתָם דְּהָתָם אִי בָּעוּ לְעָרוֹבֵי דֶּרֶךְ גַּגּוֹת וְקַרְפֵּיפוֹת מָצוּ מְעָרְבִי הָכָא לָא מָצוּ מְעָרְבִי כְּלָל הִילְכָּךְ בָּעֵינַן כּוֹי. הֲדַר אָמַר כַּוֵּי נָמֵי לָא בָּעֵי דְּהָהוּא בֵּי תִּיבְנָא דַּהֲוָה לֵיהּ לְמָר בְּפוּמְבְּדִיתָא וַהֲוָה שִׁיּוּר לְכֻולָּא מָתָא אֲמַר הַייְנוּ דְּאָמַר לִי רַב יוֹסֵף חֲזִי דְּלָא קָמַצְווְחַתְּ עֲלָהּ בְּבֵי מִדְרְשָׁא: עִיר חֲדָשָׁה הָיְתָה בִּיהוּדָה. אִיבַּעְיָא לְהוּ חֲדָשָׁה מַהוּ מַאי חֲדָשָׁה אִילֵּימָא חֲדָשָׁה מַמָּשׁ כִּי הֵיכִי דְּהָוְיָא הִיא שִׁיּוּר לִגְדוֹלָה גְּדוֹלָה נָמֵי הָוֵי שִׁיּוּר לְדִידָהּ אֶלָּא כְּעֵין חֲדָשָׁה פֵּירוּשׁ עִיר שֶׁל רַבִּים שֶׁנִּתְמַעֲטָה וְעָמְדָה עַל חֲמִשִּׁים דִּיּוּרִין כְּעִיר חֲדָשָׁה צְרִיכָה שִׁיּוּר אוֹ לָא. רַב יְהוּדָה וְרַב הוּנָא חַד אָמַר צְרִיכָה שִׁיּוּר וְחַד אָמַר אֵינָהּ צְרִיכָה שִׁיּוּר. וְהִלְכְתָא לְקֻולָּא: ר&#x27; שִׁמְעוֹן אוֹמֵר ג&#x27; חֲצֵירוֹת. אָמַר רַב חָמָא בַּר גּוּרְיָא אָמַר רַב הֲלָכָה כְּרַבִּי שִׁמְעוֹן. ר&#x27; יִצְחָק אָמַר אֲפִילּוּ בַּיִת אֶחָד וְחָצֵר אַחַת. חָצֵר אַחַת סָלְקָא דַּעְתָּךְ. אֶלָּא בַּיִת אֶחָד בְּחָצֵר אַחַת אֲמַר לֵיהּ אַבָּיֵי לְרַב יוֹסֵף הָא דְּרַבִּי יִצְחָק גְּמָרָא אוֹ סְבָרָא. אֲמַר לֵיהּ מַאי נָפְקָא לָךְ מִינֵּיהּ אֲמַר לֵיהּ גְּמָרָא גָּמוּר זְמוֹרְתָּא תְּהֵא. פָּסַק רַב אִלְפָּס וְהִלְכְתָא כְּרַבִּי יִצְחָק. וְתֵימַהּ הֵיאַךְ יַחֲלֹוק אָמוֹרָא עַל תַּנָּאֵי דְּמַתְנִי&#x27; דְּמַר מַצְרִיךְ חֲמִשִּׁים דִּיּוּרִין וּמַר מַצְרִיךְ ג&#x27; חֲצֵירוֹת וְנִרְאֶה לִי שֶׁרַב אִלְפָּס סוֹבֵר דְּרַבִּי יִצְחָק הוּא תַּנָּא וּבָרַיְיתָא הִיא וַהֲלָכָה כְּדִבְרֵי הַמֵּיקֵל בְּעֵירוּב. וְסָמַךְ אַהַהִיא דְּאַבַּיֵּי דִּלְעֵיל דְּבֵי תִּיבְנָא לְחוּדֵיהּ הָוֵי שִׁיּוּר:</div>
+          <div class="glose-fr">Ces gens de Kakounai vinrent devant Rav Yossef. Ils lui dirent : donne-nous un homme qui fasse l&#x27;eruv pour notre ville. Il dit à Abaye : va, fais-leur l&#x27;eruv, et veille à ce qu&#x27;on ne crie pas contre cela au beit hamidrach. Il alla, vit ces maisons ouvertes sur le fleuve, et dit : celles-ci seront certes un shiur pour la ville. Il se ravisa et dit : nous avons appris &quot; on ne fait pas l&#x27;eruv de toute la ville &quot;, d&#x27;où l&#x27;on déduit que, s&#x27;ils voulaient faire l&#x27;eruv, ils le pourraient. Et celles-ci ne peuvent pas faire l&#x27;eruv. Qu&#x27;on leur ouvre plutôt des fenêtres vers la ville, afin que, s&#x27;ils veulent faire l&#x27;eruv par les fenêtres, ils le puissent. Il se ravisa et dit : les fenêtres ne sont pas exigées. Car Rabba bar Avouha fait l&#x27;eruv pour tout Mehouza, quartier par quartier, à cause des fosses de nourriture du bétail, et chacun est un shiur pour l&#x27;autre, bien que, s&#x27;ils voulaient faire l&#x27;eruv ensemble, ils ne le pourraient pas. Il se ravisa et leur dit : cela ne se compare pas à là-bas. Là-bas, s&#x27;ils voulaient faire l&#x27;eruv par les toits et les karpefot, ils le pourraient. Ici, ils ne peuvent pas faire l&#x27;eruv du tout. Il nous faut donc des fenêtres. Il se ravisa et dit : les fenêtres non plus ne sont pas exigées. Car ce grenier à paille qu&#x27;avait Mar à Poumbedita était un shiur pour toute la ville. Il dit : c&#x27;est bien ce que m&#x27;a dit Rav Yossef : veille à ce qu&#x27;on ne crie pas contre cela au beit hamidrach. Il y avait une ville neuve en Judée. On a demandé : Hadasha, qu&#x27;en est-il ? Qu&#x27;est-ce qu&#x27;Hadasha ? Si tu dis Hadasha elle-même : de même qu&#x27;elle est un shiur pour la grande, la grande est aussi un shiur pour elle. Plutôt, une ville semblable à Hadasha. Explication : une ville du grand nombre qui a diminué et s&#x27;est fixée à cinquante habitants, comme la ville de Hadasha, exige-t-elle un shiur, ou non ? Rav Yehouda et Rav Houna : l&#x27;un dit qu&#x27;elle exige un shiur, l&#x27;un dit qu&#x27;elle n&#x27;exige pas de shiur. Et la halakha suit l&#x27;indulgence. Rabbi Shimon dit : trois cours. Rav Hama bar Gourya a dit au nom de Rav : la halakha est comme Rabbi Shimon. Rabbi Yitshak a dit : même une maison et une cour. Une cour, cela te viendrait-il à l&#x27;esprit ? Dis plutôt : une maison dans une cour. Abaye dit à Rav Yossef : cet enseignement de Rabbi Yitshak, gemara ou sevara ? Il lui dit : quelle conséquence pratique en tires-tu ? Il lui dit : une gemara, qu&#x27;on l&#x27;étudie : en ferait-on une chanson ? Rav Alfas a tranché : la halakha est comme Rabbi Yitshak. Et il y a lieu de s&#x27;étonner : comment un amora contredirait-il les tannaïm de la michna, alors que l&#x27;un exige cinquante habitants et l&#x27;autre trois cours ? Il me paraît que Rav Alfas tient Rabbi Yitshak pour un tanna, et que c&#x27;est une beraita, et que la halakha suit les paroles de celui qui allège en matière d&#x27;eruv. Et il s&#x27;est appuyé sur ce qu&#x27;Abaye a dit plus haut : le grenier à paille, à lui seul, est un shiur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Gemara</b> : tradition reçue. <b>Sevara</b> : raisonnement d'Abaye, ici de Rabbi Yitshak. Rav Yossef demande la différence pratique, puisque la halakha a déjà été dite comme Rabbi Shimon.</p><p>Le jeu de mots d'Abaye : <b>gemara</b> et <b>zemara</b> (chanson). Étudier, c'est aussi savoir d'où vient le dit, même quand la halakha est déjà fixée.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg17">
+          <div class="seg-num">18</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַתְנִי׳ מִי שֶׁהָיָה בַּמִּזְרָח וְאָמַר לִבְנוֹ: ״עָרֵב לִי בַּמַּעֲרָב״, בַּמַּעֲרָב וְאָמַר לִבְנוֹ: ״עָרֵב לִי בַּמִּזְרָח״, אִם יֵשׁ הֵימֶנּוּ וּלְבֵיתוֹ אַלְפַּיִם אַמָּה, וּלְעֵירוּבוֹ יוֹתֵר מִכָּאן — מֻותָּר לְבֵיתוֹ, וְאָסוּר לְעֵירוּבוֹ.</div>
+            <div class="fr"><p>Michna. Celui qui était à l&#x27;est et a dit à son fils : &quot; Fais-moi l&#x27;eruv à l&#x27;ouest.</p><p>&quot; À l&#x27;ouest, et il a dit à son fils : &quot; Fais-moi l&#x27;eruv à l&#x27;est. &quot; S&#x27;il y a de lui à sa maison deux mille coudées, et jusqu&#x27;à son eruv plus que cela : permis pour sa maison, et interdit pour son eruv.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(5)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַתְנִי&#x27; מִי שֶׁהָיָה בַּמִּזְרָח</b> בַּשָּׂדֶה וְקִדֵּשׁ עָלָיו שֵׁם הַיּוֹם:</div>
+          <div class="glose-fr">Michna. Celui qui était à l&#x27;est : dans le champ, et le jour s&#x27;est sanctifié sur lui.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאָמַר לִבְנוֹ</b> לְעָרֵב מִבְּעוֹד יוֹם לַמַּעֲרָב:</div>
+          <div class="glose-fr">Et il a dit à son fils : de faire l&#x27;eruv pendant qu&#x27;il fait encore jour, à l&#x27;ouest.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּלְעֵירוּבוֹ יוֹתֵר מִכָּאן</b> שֶׁנָּתַן לוֹ הָעֵירוּב מִבֵּיתוֹ וָהָלְאָה:</div>
+          <div class="glose-fr">Et jusqu&#x27;à son eruv plus que cela : il a placé l&#x27;eruv au-delà de sa maison.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מֻותָּר לְבֵיתוֹ</b> לְדִין בֵּיתוֹ כְּלוֹמַר לִמְנוֹת שְׁבִיתָתוֹ מִבֵּיתוֹ כְּאִילּוּ לֹא עֵירֵב:</div>
+          <div class="glose-fr">Permis pour sa maison : selon le droit de sa maison, c&#x27;est-à-dire compter sa chevita depuis sa maison, comme s&#x27;il n&#x27;avait pas fait d&#x27;eruv.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאָסוּר לְעֵירוּבוֹ</b> לְדִין עֵירוּבוֹ לִמְנוֹת שְׁבִיתָתוֹ מֵעֵירוּבוֹ דְּכֵיוָן דְּקִידֵּשׁ עָלָיו הַיּוֹם רָחוֹק מֵעֵירוּבוֹ יוֹתֵר מֵאַלְפַּיִם נִמְצָא שֶׁאֵינוֹ יָכוֹל לְהַלֵּךְ וְלִיטְלוֹ שֶׁהֲרֵי אֵין עֵירוּבוֹ קוֹנֶה לוֹ אֶלָּא אַלְפַּיִם לְכָל רוּחַ וְכֵיוָן דְּאֵינוֹ עֵירוּב הָוֵי לֵיהּ שְׁבִיתָתוֹ בְּבֵיתוֹ שֶׁהֲרֵי בִּתְחוּם בֵּיתוֹ הֲוָה ואע&quot;ג דְּאוֹקֵמִי&#x27; בְּשִׁילְהֵי מִי שֶׁהוֹצִיאוּהוּ דְּאִי מוֹקְמֵת לֵיהּ בְּאִידַּךְ גִּיסָא דְּאִילָן קָם לֵיהּ כו&#x27; אַלְמָא אָמַר שְׁבִיתָתִי רָחוֹק מֵאַלְפַּיִם ה&quot;ז לֹא יָזוּז מִמְּקוֹמוֹ הָנֵי מִילֵּי בְּבָא בַּדֶּרֶךְ דְּכֵיוָן דִּבְמָקוֹם פְּלוֹנִי לֹא יָכוֹל לִקְנוֹת דְּרָחוֹק מֵאַלְפַּיִם הֲוָה וּבִמְקוֹם רַגְלָיו לָא הֲוָה נִיחָא לֵיהּ דְּלִיקְנֵי לֵיהּ אֵין לוֹ שְׁבִיתָה כְּלָל לְפִיכָךְ לֹא יָזוּז מִמְּקוֹמוֹ אֲבָל בְּעוֹמֵד בְּבֵיתוֹ וְעֵירֵב בְּמָקוֹם שֶׁאֵינוֹ עֵירוּב יֵשׁ לוֹ שְׁבִיתָה בְּבֵיתוֹ דְּמִסְּתָמָא בְּבֵיתוֹ נִיחָא לֵיהּ לְמִיקְנֵי בְּשֶׁאֵין עֵירוּבוֹ עֵירוּב כְּדִתְנַן בְּפֶרֶק בַּכֹּל מְעָרְבִין (לְעֵיל עֵירוּבִין דַּף לה.) גַּבֵּי נִתְגַּלְגֵּל חוּץ לַתְּחוּם סָפֵק מִבְּעוֹד יוֹם סָפֵק מִשֶּׁחָשֵׁיכָה ה&quot;ז חַמָּר גַּמָּל וְלָא קָתָנֵי לֹא יָזוּז מִמְּקוֹמוֹ שָׁמְעִינַן מִינָּהּ דְּאִם אֵינוֹ עֵירוּב יֵשׁ לוֹ שְׁבִיתָה בְּבֵיתוֹ:</div>
+          <div class="glose-fr">Interdit pour son eruv : selon le droit de son eruv, compter sa chevita depuis son eruv. Puisque le jour s&#x27;est sanctifié sur lui alors qu&#x27;il est éloigné de son eruv de plus de deux mille, il se trouve qu&#x27;il ne peut pas aller le prendre. Car son eruv ne lui acquiert que deux mille dans chaque direction. Et puisque l&#x27;eruv ne tient pas, sa chevita est dans sa maison, car il était dans le tehum de sa maison. Et bien qu&#x27;on ait établi à la fin du chapitre Mi chehotsiouhou que, si tu le places de l&#x27;autre côté de l&#x27;arbre, il se tient, etc., on voit que celui qui dit &quot; ma chevita est au-delà de deux mille &quot;, celui-ci ne bougera pas de sa place. Ces paroles visent celui qui vient en chemin : puisque à tel endroit il ne peut pas acquérir, car c&#x27;était au-delà de deux mille, et qu&#x27;à l&#x27;endroit de ses pieds il ne lui convenait pas que cela acquière pour lui, il n&#x27;a aucune chevita. C&#x27;est pourquoi il ne bougera pas de sa place. Mais celui qui se tient dans sa maison et a fait un eruv dans un lieu où l&#x27;eruv ne vaut pas a une chevita dans sa maison. Car, en principe, dans sa maison il lui convient d&#x27;acquérir lorsque son eruv ne vaut pas. Comme nous l&#x27;avons appris au chapitre Bekhol me&#x27;arvin (plus haut, Erouvin 35a), au sujet de l&#x27;eruv qui a roulé hors du tehum, doute s&#x27;il faisait encore jour, doute après la nuit : celui-ci est hamor gamal. Et on n&#x27;enseigne pas &quot; il ne bougera pas de sa place &quot;. On en apprend que, si l&#x27;eruv ne vaut pas, il a une chevita dans sa maison.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">מַתְנִי&#x27; מִי שֶׁהָיָה בַּמִּזְרָח וְאָמַר לִבְנוֹ לְעָרֵב לוֹ בַּמַּעֲרָב. בַּמַּעֲרָב וְאָמַר לִבְנוֹ לְעָרֵב לוֹ בַּמִּזְרָח. אִם יֵשׁ מִמֶּנּוּ וּלְבֵיתוֹ אַלְפַּיִם אַמָּה וּלְעֵירוּבוֹ יוֹתֵר מִכָּאן מֻותָּר לְבֵיתוֹ וְאָסוּר לְעֵירוּבוֹ. לְעֵירוּבוֹ אַלְפַּיִם אַמָּה וּלְבֵיתוֹ יוֹתֵר מִכָּאן מֻותָּר לְעֵירוּבוֹ וְאָסוּר לְבֵיתוֹ. פִּי&#x27; לְדִין בֵּיתוֹ. וְהוּא הַדִּין נָמֵי אִם הָיָה בְּתוֹךְ תְּחוּם בֵּיתוֹ אָסוּר לְדִין בֵּיתוֹ אֶלָּא אַגַּב דִּנְקַט בְּרֵישָׁא וּלְעֵירוּבוֹ יוֹתֵר מִכָּאן תָּנֵי נָמֵי בְּסֵיפָא וּלְבֵיתוֹ יוֹתֵר מִכָּאן:</div>
+          <div class="glose-fr">Michna. Celui qui était à l&#x27;est et a dit à son fils de lui faire l&#x27;eruv à l&#x27;ouest. À l&#x27;ouest, et il a dit à son fils de lui faire l&#x27;eruv à l&#x27;est. S&#x27;il y a de lui à sa maison deux mille coudées, et jusqu&#x27;à son eruv plus que cela : permis pour sa maison, interdit pour son eruv. Jusqu&#x27;à son eruv, deux mille coudées, et jusqu&#x27;à sa maison plus que cela : permis pour son eruv, interdit pour sa maison. Explication : selon le droit de sa maison. Et la même halakha vaut s&#x27;il se trouvait dans le tehum de sa maison : il est interdit selon le droit de sa maison. Seulement, puisque la première clause a pris &quot; et jusqu&#x27;à son eruv plus que cela &quot;, la seconde enseigne aussi &quot; et jusqu&#x27;à sa maison plus que cela &quot;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle michna. L'homme est hors de chez lui quand le <b>Chabbat</b> entre. Il a chargé son fils de déposer un <b>eruv tehoumin</b> du côté opposé à celui où il se trouve.</p><p>On ne compte la <b>chevita</b> que depuis un point situé dans les <b>deux mille coudées</b>. Si la maison est dans les deux mille et l'eruv au-delà, l'eruv ne prend pas. Il compte depuis sa maison, puisqu'il était dans son tehum.</p><p>Rachi distingue le voyageur qui a refusé l'endroit de ses pieds : lui ne bouge pas. Ici, la maison reste acquise. Le cas du rouleau hors du tehum (Erouvin 35a), <b>hamor gamal</b>, restreint des deux côtés, le montre : on ne dit pas qu'il est sans aucune chevita.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 350" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="350" fill="#fbfaf7"/>
+<text x="370.0" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Maison ou eruv</text>
+<text x="370.0" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#5c5348">Deux mille coudées depuis le lieu où le Chabbat le trouve</text>
+<text x="80" y="78" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Lui</text>
+<text x="300" y="78" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Maison</text>
+<text x="560" y="78" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Eruv</text>
+<rect x="60" y="90" width="40" height="28" rx="2" fill="#dfe8ef" stroke="#6b8193"/>
+<rect x="280" y="90" width="40" height="28" rx="2" fill="#e7f1e4" stroke="#5d8a5d"/>
+<rect x="540" y="90" width="40" height="28" rx="2" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="190" y="110" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">2000 c.</text>
+<text x="430" y="110" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">au-delà</text>
+<rect x="16" y="140" width="708" height="48" rx="4" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="370.0" y="168.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Jusqu'à la maison : deux mille. Jusqu'à l'eruv : plus. Permis : la maison. Interdit : l'eruv.</text>
+<text x="80" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Lui</text>
+<text x="300" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Eruv</text>
+<text x="560" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2b2b2b">Maison</text>
+<rect x="60" y="232" width="40" height="28" rx="2" fill="#dfe8ef" stroke="#6b8193"/>
+<rect x="280" y="232" width="40" height="28" rx="2" fill="#f7f1e3" stroke="#b39b5a"/>
+<rect x="540" y="232" width="40" height="28" rx="2" fill="#f6e6e0" stroke="#93756b"/>
+<text x="190" y="252" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">2000 c.</text>
+<text x="430" y="252" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">au-delà</text>
+<rect x="16" y="278" width="708" height="48" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="370.0" y="306.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Jusqu'à l'eruv : deux mille. Jusqu'à la maison : plus. Interdit : la maison. Permis : l'eruv.</text>
+</svg></div><div class="svg-cap">Deux mille coudées : on retient la maison ou l&#x27;eruv, selon celui des deux qui est à portée.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg18">
+          <div class="seg-num">19</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לְעֵירוּבוֹ אַלְפַּיִם אַמָּה, וּלְבֵיתוֹ יֶתֶר מִכָּאן — אָסוּר לְבֵיתוֹ, וּמֻותָּר לְעֵירוּבוֹ.</div>
+            <div class="fr"><p>Jusqu&#x27;à son eruv, deux mille coudées, et jusqu&#x27;à sa maison plus que cela : interdit pour sa maison, et permis pour son eruv.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אָסוּר לְבֵיתוֹ</b> לְדִין בֵּיתוֹ לִמְנוֹת מִבֵּיתוֹ אַלְפַּיִם לְכָל רוּחַ:</div>
+          <div class="glose-fr">Interdit pour sa maison : selon le droit de sa maison, compter depuis sa maison deux mille dans chaque direction.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Cas inverse. L'<b>eruv</b> est dans les deux mille, la <b>maison</b> au-delà. La chevita se compte depuis l'eruv. Depuis la maison, les deux mille dans chaque direction ne sont pas ouverts.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg19">
+          <div class="seg-num">20</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הַנּוֹתֵן אֶת עֵירוּבוֹ בְּעִיבּוּרָהּ שֶׁל עִיר, לֹא עָשָׂה וְלֹא כְלוּם.</div>
+            <div class="fr"><p>Celui qui place son eruv dans l&#x27;ibbour de la ville n&#x27;a rien fait.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּעִיבּוּרָהּ שֶׁל עִיר</b> בְּאֶחָד מִן הַבָּתִּים הָעוֹמְדִין בְּתוֹךְ שִׁבְעִים אַמָּה וְשִׁירַיִם:</div>
+          <div class="glose-fr">Dans l&#x27;ibbour de la ville : dans l&#x27;une des maisons qui se tiennent dans les soixante-dix coudées et un fragment.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא עָשָׂה וְלֹא כְלוּם</b> שֶׁהֲרֵי בְּלֹא עֵירוּב נָמֵי יֵשׁ לוֹ מִן הָעִיר אַלְפַּיִם לְכָל רוּחַ וְכָל הָעִיר לוֹ כְּאַרְבַּע אַמּוֹת:</div>
+          <div class="glose-fr">Il n&#x27;a rien fait : car même sans eruv, il a depuis la ville deux mille dans chaque direction, et toute la ville est pour lui comme quatre coudées.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">הַנּוֹתֵן עֵירוּבוֹ בְּתוֹךְ עִיבּוּרָהּ שֶׁל עִיר לֹא עָשָׂה וְלֹא כְלוּם. נְתָנוֹ חוּץ לַתְּחוּם מַה שֶּׁנִּשְׂכַּר הוּא מַפְסִיד:</div>
+          <div class="glose-fr">Celui qui place son eruv dans l&#x27;ibbour de la ville n&#x27;a rien fait. S&#x27;il l&#x27;a placé hors du tehum, ce qu&#x27;il gagne, il le perd.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>L'<b>ibbour</b> est la bande de soixante-dix coudées et deux tiers autour de la ville. Toute la ville compte déjà comme <b>quatre coudées</b>, et les deux mille partent du bord de cette bande.</p><p>Déposer l'eruv dans cette bande n'allonge rien : on avait déjà ce tehum sans eruv.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 340" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="340" fill="#fbfaf7"/>
+<text x="370.0" y="24" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Ibbour de la ville</text>
+<text x="370.0" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#5c5348">Déposer l'eruv au bord, ou au-delà</text>
+<rect x="180" y="70" width="380" height="70" rx="4" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="370.0" y="101.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#2b2b2b">Ville</text>
+<text x="370.0" y="119.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#2b2b2b">comptée comme quatre coudées</text>
+<rect x="120" y="160" width="500" height="56" rx="4" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="370.0" y="192.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Ibbour : soixante-dix coudées et un fragment, autour de la ville</text>
+<rect x="16" y="236" width="348" height="80" rx="4" fill="#ffffff" stroke="#6b8193"/>
+<text x="190.0" y="263.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Eruv dans l'ibbour</text>
+<text x="190.0" y="280.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rien de plus :</text>
+<text x="190.0" y="297.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">le tehum part déjà du bord</text>
+<rect x="376" y="236" width="348" height="80" rx="4" fill="#f6e6e0" stroke="#93756b"/>
+<text x="550.0" y="263.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Eruv hors du tehum</text>
+<text x="550.0" y="280.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">même d'une coudée</text>
+<text x="550.0" y="297.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">le gain d'un côté est la perte de l'autre</text>
+</svg></div><div class="svg-cap">L&#x27;eruv dans l&#x27;ibbour n&#x27;ajoute rien. Hors du tehum, le gain d&#x27;un côté est la perte de l&#x27;autre.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg20">
+          <div class="seg-num">21</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">נְתָנוֹ חוּץ לַתְּחוּם, אֲפִילּוּ אַמָּה אַחַת —</div>
+            <div class="fr"><p>S&#x27;il l&#x27;a placé hors du tehum, même d&#x27;une seule coudée -</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>נְתָנוֹ חוּץ לַתְּחוּם</b> מְפָרֵשׁ בַּגְּמָרָא חוּץ לְעִיבּוּרָהּ שֶׁל עִיר:</div>
+          <div class="glose-fr">S&#x27;il l&#x27;a placé hors du tehum : la Guemara explique, hors de l&#x27;ibbour de la ville.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le segment s'arrête ici. " Hors du tehum ", Rachi le renvoie à la Guemara : hors de l'<b>ibbour</b>, pas hors des deux mille. Même une coudée au-delà du bord déplace le centre de la chevita. La suite est au daf suivant.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Eruvin_59b.html">&lsaquo; Eruvin 59b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schémas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage sélectionné :\n« '+s+' »\n'):'\nPassage concerné :\n\n')+'\nCorrection proposée :\n\n\n— envoyé depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<p id="credit-texte" style="text-align:center;font-size:.76rem;color:#78716c;margin:6px auto 18px;max-width:640px;line-height:1.5">
+Texte hébreu et araméen vocalisé : édition numérique William Davidson du Talmud Koren Noé, via
+<a href="https://www.sefaria.org" style="color:#78716c">Sefaria</a> (licence CC BY-NC). Traduction française, notes et schémas : Chiourim BA (licence CC BY 4.0).</p>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>
