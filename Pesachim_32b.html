@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pesachim 32b - Valeur ou mesure, kezayit ou peruta, me&#x27;ila</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Pesachim 32b - Valeur ou mesure, kezayit ou peruta, me&#x27;ila</h1>
+    <div class="ref">Pesachim 32b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Pesachim_32a.html">&lsaquo; Pesachim 32a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> Abaye range Rabbi Eliezer ben Yaakov, Rabbi Akiva et Rabbi Yohanan ben Nouri du même côté : le hametz à Pessah est interdit à la jouissance. Rabbi Akiva paie selon la valeur, donc rien pour une teruma de hametz.</p><p>Rabbi Yohanan ben Nouri paie selon la mesure, donc il rend le volume. Une baraita fixe ensuite le seuil du capital et du cinquième : le tanna kamma exige un kezayit, Abba Chaoul une peruta.</p><p>Rav Papa, qui veut les deux conditions, est réfuté. La fin du daf explique pourquoi le verset exclut l&#x27;acte délibéré de la me&#x27;ila, et pourquoi le karet puis la mort par le Ciel semblent tour à tour les plus graves.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 470" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="470" fill="#fbfaf7"/>
+<text x="370" y="28" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Hametz à Pessah : qui paie, et comment</text>
+<rect x="16" y="44" width="708" height="62" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="370" y="68" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">Accord d'Abaye</text>
+<text x="370" y="90" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Rabbi Eliezer ben Yaakov, Rabbi Akiva, Rabbi Yohanan ben Nouri</text>
+<rect x="16" y="122" width="228" height="210" rx="4" fill="#e8eef6" stroke="#3d5a80"/>
+<text x="130" y="148" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5a80">Rabbi Akiva</text>
+<text x="130" y="174" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Il paie selon la valeur.</text>
+<text x="130" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Jouissance interdite :</text>
+<text x="130" y="218" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">le hametz ne vaut rien.</text>
+<text x="130" y="252" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5a80">Rien à payer</text>
+<text x="130" y="276" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#3d5a80">ni le bois</text>
+<rect x="256" y="122" width="228" height="210" rx="4" fill="#fff6e8" stroke="#a36b2d"/>
+<text x="370" y="148" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a36b2d">Rabbi Yohanan ben Nouri</text>
+<text x="370" y="174" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Il paie selon la mesure.</text>
+<text x="370" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Même sans valeur,</text>
+<text x="370" y="218" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">il rend le volume mangé.</text>
+<text x="370" y="252" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a36b2d">Il est tenu</text>
+<text x="370" y="276" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#a36b2d">capital et cinquième</text>
+<rect x="496" y="122" width="228" height="210" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="610" y="148" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Lecture écartée</text>
+<text x="610" y="174" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Comme Rabbi Yosse</text>
+<text x="610" y="194" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">HaGelili :</text>
+<text x="610" y="218" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">jouissance permise.</text>
+<text x="610" y="242" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Il paierait selon</text>
+<text x="610" y="262" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">la valeur, car il y</text>
+<text x="610" y="282" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">a une jouissance.</text>
+<rect x="16" y="348" width="708" height="104" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="370" y="374" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Pourquoi cette lecture tombe</text>
+<text x="370" y="398" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">S'il tenait la jouissance permise, il répondrait comme Rabbi Elazar Hisma :</text>
+<text x="370" y="420" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">le kohen peut jeter ce hametz devant son chien, ou le brûler sous son plat.</text>
+<text x="370" y="440" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2f5c2f">Rabbi Yohanan ben Nouri n'a pas donné cette réponse.</text>
+</svg></div>
+          <figcaption>Abaye : les trois tannaïm interdisent la jouissance du hametz à Pessah. Rabbi Akiva paie selon la valeur, donc rien. Rabbi Yohanan ben Nouri paie selon la mesure. Il n&#x27;a pas la réponse de Rabbi Elazar Hisma, celle du chien et du chauffage.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 520" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="520" fill="#fbfaf7"/>
+<text x="370" y="28" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Capital et cinquième : deux seuils</text>
+<rect x="170" y="46" width="270" height="36" rx="4" fill="#e8eef6" stroke="#3d5a80"/>
+<text x="305" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#3d5a80">Moins d'une peruta</text>
+<rect x="450" y="46" width="274" height="36" rx="4" fill="#fff6e8" stroke="#a36b2d"/>
+<text x="587" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#a36b2d">Valeur d'une peruta</text>
+<rect x="16" y="92" width="144" height="150" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="88" y="128" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Un kezayit</text>
+<text x="88" y="152" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">mot</text>
+<text x="88" y="172" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">"il mangera"</text>
+<rect x="170" y="92" width="270" height="150" rx="4" fill="#e8eef6" stroke="#3d5a80"/>
+<text x="305" y="124" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Tanna kamma</text>
+<text x="305" y="148" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5a80">Capital et cinquième</text>
+<text x="305" y="176" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Abba Chaoul</text>
+<text x="305" y="200" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#3d5a80">Pas de donation : exempt</text>
+<rect x="450" y="92" width="274" height="150" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="587" y="150" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Capital et cinquième</text>
+<text x="587" y="174" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Les deux seuils sont atteints</text>
+<rect x="16" y="252" width="144" height="150" rx="4" fill="#fff6e8" stroke="#a36b2d"/>
+<text x="88" y="292" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a36b2d">Moins d'un</text>
+<text x="88" y="314" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a36b2d">kezayit</text>
+<rect x="170" y="252" width="270" height="150" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="305" y="318" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Exempt</text>
+<text x="305" y="342" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Même le capital manque</text>
+<rect x="450" y="252" width="274" height="150" rx="4" fill="#fff6e8" stroke="#a36b2d"/>
+<text x="587" y="300" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a36b2d">Capital : oui</text>
+<text x="587" y="324" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Cinquième : non</text>
+<text x="587" y="352" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Année de sécheresse</text>
+<rect x="16" y="418" width="708" height="84" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="370" y="444" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#6b5344">Rav Papa : Abba Chaoul exige les deux, kezayit et peruta.</text>
+<text x="370" y="468" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#6b5344">La michna le réfute : Abba Chaoul ne pose que la peruta.</text>
+<text x="370" y="488" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#6b5344">Le cinquième suit la manducation. Le capital suit le dommage.</text>
+</svg></div>
+          <figcaption>Le tanna kamma suit le kezayit, d&#x27;après &quot;il mangera&quot;. Abba Chaoul suit la peruta, d&#x27;après &quot;et il donnera&quot;. Sous le kezayit, avec une peruta, on paie le capital sans le cinquième. Rav Papa, qui cumule les deux seuils, est réfuté.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 500" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="500" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Me'ila : pourquoi le verset exclut le délibéré</text>
+<rect x="16" y="44" width="348" height="130" rx="4" fill="#e8eef6" stroke="#3d5a80"/>
+<text x="190" y="68" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5a80">Kal va-homer</text>
+<text x="190" y="92" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Autres fautes à karet :</text>
+<text x="190" y="112" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">le délibéré est exempt</text>
+<text x="190" y="132" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">du sacrifice.</text>
+<text x="190" y="156" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#3d5a80">Me'ila sans karet : à plus forte raison.</text>
+<rect x="376" y="44" width="348" height="130" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="550" y="68" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Rejet</text>
+<text x="550" y="92" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">La me'ila délibérée</text>
+<text x="550" y="112" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">est passible de mort</text>
+<text x="550" y="132" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">par le Ciel.</text>
+<text x="550" y="156" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#8a4b3a">Le verset "par erreur" reste utile.</text>
+<rect x="16" y="190" width="348" height="140" rx="4" fill="#fff6e8" stroke="#a36b2d"/>
+<text x="190" y="214" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a36b2d">Rav Nahman bar Yitzhak</text>
+<text x="190" y="240" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Au début, le karet est plus fort :</text>
+<text x="190" y="260" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">la me'ila n'en a pas.</text>
+<text x="190" y="284" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">À la fin, la mort est plus forte :</text>
+<text x="190" y="304" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">les autres fautes n'en ont pas.</text>
+<rect x="376" y="190" width="348" height="140" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="550" y="214" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Rav Hiya bar Avin</text>
+<text x="550" y="240" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le karet reste le plus fort.</text>
+<text x="550" y="264" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">La coupure porte sur le volume :</text>
+<text x="550" y="284" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">mort pour moins d'un kezayit,</text>
+<text x="550" y="304" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">dans la me'ila seulement.</text>
+<rect x="16" y="346" width="708" height="136" rx="4" fill="#f4eee0" stroke="#8a7b63"/>
+<text x="370" y="372" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6b5344">Rabba et Rav Chechet jettent la hache</text>
+<text x="370" y="396" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Qui enseigne une mort pour la me'ila délibérée ? Rabbi.</text>
+<text x="370" y="418" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Il l'apprend de la teruma. Or la mort de la teruma est écrite</text>
+<text x="370" y="438" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">avec la manducation : elle ne s'applique qu'à un kezayit.</text>
+<text x="370" y="462" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#6b5344">La phrase s'arrête ici. La suite est au daf suivant.</text>
+</svg></div>
+          <figcaption>Le kal va-homer de la me&#x27;ila cède, parce que la me&#x27;ila délibérée est passible de mort par le Ciel. Rav Nahman voit le karet puis la mort l&#x27;emporter tour à tour. Rav Hiya reporte la coupure sur le kezayit. Rabba et Rav Chechet rejettent cette mort en dessous de l&#x27;olive.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר אַבַּיֵּי: רַבִּי אֱלִיעֶזֶר בֶּן יַעֲקֹב וְרַבִּי עֲקִיבָא וְרַבִּי יוֹחָנָן בֶּן נוּרִי כֻּולְּהוּ סְבִירָא לְהוּ חָמֵץ בַּפֶּסַח אָסוּר בַּהֲנָאָה, וּבְהָא פְּלִיגִי, דְּרַבִּי עֲקִיבָא סָבַר: לְפִי דָּמִים מְשַׁלֵּם, וְרַבִּי יוֹחָנָן בֶּן נוּרִי סָבַר: לְפִי מִדָּה מְשַׁלֵּם.</div>
+            <div class="fr"><p>Abaye dit : Rabbi Eliezer ben Yaakov, Rabbi Akiva et Rabbi Yohanan ben Nouri tiennent tous que le hametz à Pessah est interdit à la jouissance. Et ils divergent en ceci : Rabbi Akiva tient qu&#x27;il paie selon la valeur, et Rabbi Yohanan ben Nouri tient qu&#x27;il paie selon la mesure.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אָמַר אַבַּיֵּי ר&#x27; עֲקִיבָא וְר&#x27; יוֹחָנָן בֶּן נוּרִי</b> אע&quot;ג דְּאִיחַייַּב בְּתַשְׁלוּמִין סְבִירָא לְהוּ דְּאֵין לוֹ דָּמִים וּבְהָא פְּלִיגִי רַבִּי עֲקִיבָא וְר&#x27; יוֹחָנָן בֶּן נוּרִי:</div>
+          <div class="glose-fr">Même s&#x27;il est tenu aux paiements, ils tiennent que cela n&#x27;a pas de valeur. Et c&#x27;est en ceci que Rabbi Akiva et Rabbi Yohanan ben Nouri divergent.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Abaye commente la baraita du daf précédent. Les trois tannaïm s'accordent : le <b>hametz</b> à Pessah est <b>interdit à la jouissance</b>. La divergence porte sur le mode de paiement d'une teruma de hametz.</p><p><b>Selon la valeur</b> (damin) : Rabbi Akiva. Le hametz ne vaut rien, donc rien à payer. <b>Selon la mesure</b> (midda) : Rabbi Yohanan ben Nouri. On rend le volume mangé, capital et cinquième, même sans prix de marché.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">פְּשִׁיטָא! מַהוּ דְתֵימָא: רַבִּי יוֹחָנָן בֶּן נוּרִי נָמֵי כְּרַבִּי עֲקִיבָא סְבִירָא לֵיהּ, דְּאָמַר לְפִי דָמִים מְשַׁלֵּם. וְהָתָם הַיְינוּ טַעְמָא דְּקָא מְחַייֵּב — מִשּׁוּם דְּסָבַר לָהּ כְּרַבִּי יוֹסֵי הַגְּלִילִי, דְּאָמַר: חָמֵץ בַּפֶּסַח מֻותָּר בַּהֲנָאָה, קָא מַשְׁמָע לַן.</div>
+            <div class="fr"><p>Cela va de soi ! Que pourrais-tu dire ?</p><p>Rabbi Yohanan ben Nouri tient lui aussi comme Rabbi Akiva, qui dit qu&#x27;il paie selon la valeur. Et là-bas, voici la raison pour laquelle il oblige : il tient comme Rabbi Yosse HaGelili, qui dit : le hametz à Pessah est permis à la jouissance.</p><p>Il nous l&#x27;apprend.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Sans la phrase d'Abaye, on lirait Rabbi Yohanan ben Nouri comme Rabbi Akiva : paiement <b>selon la valeur</b>. Son obligation viendrait alors de <b>Rabbi Yosse HaGelili</b>, pour qui le hametz de Pessah a une jouissance, donc un prix. Abaye écarte cette lecture : Rabbi Yohanan ben Nouri interdit la jouissance, et il paie selon la mesure.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאֵימָא הָכִי נָמֵי? אִם כֵּן, נַהְדַּר לֵיהּ רַבִּי יוֹחָנָן בֶּן נוּרִי לְרַבִּי עֲקִיבָא כִּי הֵיכִי דְּמַהְדַּר לֵיהּ רַבִּי אֶלְעָזָר חַסָּמָא לְרַבִּי אֱלִיעֶזֶר בֶּן יַעֲקֹב.</div>
+            <div class="fr"><p>Et dis qu&#x27;il en est bien ainsi. S&#x27;il en est ainsi, que Rabbi Yohanan ben Nouri réponde à Rabbi Akiva comme Rabbi Elazar Hisma a répondu à Rabbi Eliezer ben Yaakov.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La réponse de <b>Rabbi Elazar Hisma</b>, au daf précédent, est qu'il y a un <b>permis de chauffage</b> : le kohen peut jeter ce hametz devant son chien ou le brûler sous son plat. Rabbi Yohanan ben Nouri n'a pas répondu cela à Rabbi Akiva. Il s'accorde donc sur l'interdit de jouissance.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּנוּ רַבָּנַן: הָאוֹכֵל כְּזַיִת תְּרוּמָה מְשַׁלֵּם קֶרֶן וָחֹומֶשׁ, אַבָּא שָׁאוּל אוֹמֵר: עַד שֶׁיְּהֵא בּוֹ שָׁוֶה פְּרוּטָה. מַאי טַעְמָא דְּתַנָּא קַמָּא — אֲמַר קְרָא: ״וְאִישׁ כִּי יֹאכַל קֹדֶשׁ בִּשְׁגָגָה״, וַאֲכִילָה בִּכְזַיִת.</div>
+            <div class="fr"><p>Les Sages ont enseigné : celui qui mange un kezayit de teruma paie le capital et le cinquième. Abba Chaoul dit : jusqu&#x27;à ce qu&#x27;il y ait en lui la valeur d&#x27;une peruta.</p><p>Quelle est la raison du tanna kamma ? Le verset dit : &quot;Et un homme, s&#x27;il mange une chose sainte par erreur&quot;, et la manducation est d&#x27;un kezayit.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>א&quot;כ</b> דִּסְבִירָא לֵיהּ מֻותָּר נֶיהְדַּר לֵיהּ ר&#x27; יוֹחָנָן לְרַבִּי עֲקִיבָא אַף לָזֶה יֵשׁ לוֹ הֶיתֵּר הַסָּקָה:</div>
+          <div class="glose-fr">S&#x27;il tient que c&#x27;est permis, que Rabbi Yohanan réponde à Rabbi Akiva : celui-ci aussi a un permis de chauffage.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כַּזַּיִת תְּרוּמָה</b> בִּשְׁאָר יְמוֹת הַשָּׁנָה קָאֵי:</div>
+          <div class="glose-fr">Un kezayit de teruma : cela vise le reste des jours de l&#x27;année.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Nouvelle baraita, pour la teruma du reste de l'année. Le <b>tanna kamma</b> fixe le seuil à un <b>kezayit</b> (volume d'une olive), mesure minimale d'une manducation, d'après "s'il mange". <b>Abba Chaoul</b> attend la valeur d'une <b>peruta</b> (petite pièce). Sa raison vient au segment suivant, du mot "et il donnera".</p><p>Le <b>capital</b> (keren) remplace la teruma. Le <b>cinquième</b> (homesh) s'y ajoute quand l'acte entre dans le verset de l'erreur.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאַבָּא שָׁאוּל, מַאי טַעְמָא? אֲמַר קְרָא: ״וְנָתַן״, וְאֵין נְתִינָה פָּחוֹת מִשָּׁוֶה פְּרוּטָה. וְאִידָךְ נָמֵי, הָא כְתִיב ״יֹאכַל״! הַהוּא, פְּרָט לְמַזִּיק הוּא דַּאֲתָא.</div>
+            <div class="fr"><p>Et Abba Chaoul, quelle est sa raison ? Le verset dit : &quot;et il donnera&quot;, et il n&#x27;y a pas de donation inférieure à la valeur d&#x27;une peruta.</p><p>Et l&#x27;autre aussi, voici qu&#x27;il est écrit &quot;il mangera&quot; ! Celui-là vient exclure celui qui endommage.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>פְּרָט לְמַזִּיק</b> תְּרוּמָה שֶׁל כֹּהֵן אַפֵּי&#x27; בְּשׁוֹגֵג שֶׁאֵינוֹ מְשַׁלֵּם חֹומֶשׁ אֶלָּא קֶרֶן כִּשְׁאָר מַזִּיק חֻולִּין:</div>
+          <div class="glose-fr">Pour exclure celui qui endommage la teruma d&#x27;un kohen, même par inadvertance : il ne paie pas le cinquième, seulement le capital, comme celui qui endommage du hullin.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאֵין נְתִינָה פָּחוֹת מִשָּׁוֶה פְּרוּטָה</b> וְרַבָּנָן נָמֵי לָא פְלִיגִי אֶלָּא מִשּׁוּם דִּכְתִיב אֲכִילָה וא&quot;ת וְהָא קַיְימָא לַן (חֻולִּין דַּף קלז:) דְּחִטָּה אַחַת פּוֹטֶרֶת אֶת הַכְּרִי אע&quot;ג דִּכְתִיב בָּהּ נְתִינָה דִּכְתִיב תִּתֵּן לוֹ וּבְהַזָּהָב (ב&quot;מ מז.) אָמַר קוֹנִין בִּכְלִי אע&quot;פ שֶׁאֵין בּוֹ שָׁוֶה פְּרוּטָה אע&quot;ג דִּכְתִיב וְנָתַן לְרֵעֵהוּ וְגַבֵּי גֵּט נַמֵּי אָמְרִינַן (גִּיטִּין דַּף כ) כְּתָבוֹ עַל אִיסּוּרֵי הֲנָאָה כָּשֵׁר אע&quot;ג דִּכְתִיב וְנָתַן בְּיָדָהּ וְיֵשׁ לוֹמַר דְּהָכָא וַדַּאי בָּעֵינַן שָׁוֶה פְּרוּטָה דִּנְתִינָה קַיְימָא אַתַּשְׁלוּמִין וְהָוֵי כְּמוֹ הֲשָׁבַת גְּזֵילָה שֶׁאֵין בְּפָחוֹת מִשָּׁוֶה פְּרוּטָה וּלְהָכִי מִשּׁוּם דִּכְתִיב וְנָתַן מַשְׁמַע שַׁפִּיר נְתִינָה חֲשׁוּבָה אֲבָל שְׁאָר מִילֵּי אע&quot;ג דִּכְתִיב בָּהֶן נְתִינָה לָא בָּעֵינַן שָׁוֶה פְּרוּטָה מִיהוּ קָשֶׁה לְרִ&quot;י דְּרַבִּי יְהוּדָה דְּרֵישׁ בִּכְרִיתוֹת (דַּף ו:) וַאֲשֶׁר יִתֵּן מִמֶּנּוּ עַל זָר בִּכְזַיִת וְיָלֵיף נְתִינָה נְתִינָה מִתְּרוּמָה וְאַדְּיָלֵיף מִתְּרוּמָה בִּכְזַיִת לֵילַף מִכָּל נְתִינָה לְחוּמְרָא דְּהָווּ בְּכָל שֶׁהוּא כְּגוֹן מַתַּן דָּמִים וּמַתַּן בְּהוֹנוֹת שֶׁאֵין בָּהֶן שִׁיעוּר וְהָוֵי נָמֵי דֹּומִי&#x27; דְּסִיכָה דְּהָוֵי בְּכָל שֶׁהוּא וְלָמֶ&quot;ד הָתָם נְתִינָה בְּכָל שֶׁהוּא א&quot;ש:</div>
+          <div class="glose-fr">Et il n&#x27;y a pas de donation inférieure à la valeur d&#x27;une peruta. Les Sages aussi ne divergent que parce qu&#x27;il est écrit une manducation. Et si tu dis : or nous tenons (Houlin 137b) qu&#x27;un seul grain de blé exempte le tas, bien qu&#x27;une donation y soit écrite, car il est écrit &quot;tu lui donneras&quot;. Et dans HaZahav (Bava Metzia 47a), on dit qu&#x27;on acquiert par un ustensile même s&#x27;il ne vaut pas une peruta, bien qu&#x27;il soit écrit &quot;et il donnera à son prochain&quot;. Et pour le guet aussi, nous disons (Gittin 20) : s&#x27;il l&#x27;a écrit sur des choses interdites à la jouissance, il est valide, bien qu&#x27;il soit écrit &quot;et il donnera dans sa main&quot;. Et l&#x27;on peut dire : ici, nous exigeons certes la valeur d&#x27;une peruta, car la donation porte sur les paiements, et c&#x27;est comme la restitution d&#x27;un vol, qui n&#x27;a pas lieu en dessous de la valeur d&#x27;une peruta. C&#x27;est pourquoi, puisqu&#x27;il est écrit &quot;et il donnera&quot;, cela implique bien une donation consistante. Mais les autres matières, bien qu&#x27;une donation y soit écrite, n&#x27;exigent pas la valeur d&#x27;une peruta. Toutefois c&#x27;est difficile pour le Ri : Rabbi Yehouda interprète dans Keritot (6b) &quot;et ce qu&#x27;il en donnera sur un étranger&quot; comme un kezayit, et il apprend donation de donation, depuis la teruma. Et puisqu&#x27;il apprend de la teruma un kezayit, qu&#x27;il apprenne de toute donation vers la rigueur, à savoir qu&#x27;elles valent pour une quantité quelconque, comme la pose du sang et la pose sur les pouces, qui n&#x27;ont pas de mesure, et c&#x27;est aussi semblable à l&#x27;onction, qui vaut pour une quantité quelconque. Et selon celui qui dit là-bas que la donation vaut pour une quantité quelconque, cela s&#x27;arrange.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Abba Chaoul</b> lit "et il donnera" : une <b>donation</b> (netina) commence à une peruta. On lui oppose "il mangera". Il réserve ce verbe à exclure le <b>mazik</b> (celui qui endommage sans manger) : pas de cinquième, seulement le capital, comme pour du hullin.</p><p>Tossefot limite la peruta aux <b>paiements</b>, sur le modèle de la restitution d'un vol. Un grain de teruma, un ustensile de kinyan, un guet sur un objet interdit à la jouissance restent valides sans peruta. La difficulté du Ri (Rabbeinou Yitzhak) : si Rabbi Yehouda apprend le kezayit de la teruma par gezera chava, les autres donations, sans mesure, tireraient vers la rigueur, pour toute quantité.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְתַנָּא קַמָּא, הַכְּתִיב ״וְנָתַן״! הַהוּא מִיבְּעֵי לֵיהּ לְדָבָר הָרָאוּי לִהְיוֹת קֹדֶשׁ (פְּרָט לָאוֹכֵל תְּרוּמַת חָמֵץ בַּפֶּסַח).</div>
+            <div class="fr"><p>Et le tanna kamma, voici qu&#x27;il est écrit &quot;et il donnera&quot; ! Celui-là lui est nécessaire pour une chose apte à être sainte (à l&#x27;exclusion de celui qui mange de la teruma de hametz à Pessah).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַהוּא מִיבְּעֵי לֵיהּ דָּבָר הָרָאוּי לִהְיוֹת קֹדֶשׁ</b> וְכוּלֵּיהּ קְרָא מִשּׁוּם סֵיפָא אִצְטְרִיךְ:</div>
+          <div class="glose-fr">Celui-là lui est nécessaire : une chose apte à être sainte. Et tout le verset n&#x27;a été nécessaire qu&#x27;à cause de sa fin.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַהוּא מִיבַּעְיָא לֵיהּ לְדָבָר הָרָאוּי לִהְיוֹת קֹודֶשׁ</b> ואע&quot;ג דִּמְאַת הַקֹּודֶשׁ דָּרְשִׁינַן דָּבָר הָרָאוּי לִהְיוֹת קֹודֶשׁ אִצְטְרִיךְ נָמֵי וְנָתַן דְּאִי כְּתַב אֶת הַקֹּודֶשׁ לְחוּדֵיהּ הֵ&quot;א דְּלָא אֲתָא לְמַעוּטֵי אֶלָּא מָעוֹת אֲבָל כָּל פֵּירוֹת יְשַׁלֵּם לְהָכִי כְּתַב וְנָתַן דְּמַשְׁמַע שֶׁהַפֵּירוֹת שֶׁל נְתִינָה בָּעֵינַן רָאוּי לִהְיוֹת קוֹדֶשׁ:</div>
+          <div class="glose-fr">Celui-là lui est nécessaire pour une chose apte à être sainte. Et bien que, de &quot;la chose sainte&quot;, nous interprétions &quot;une chose apte à être sainte&quot;, &quot;et il donnera&quot; est nécessaire aussi. Car s&#x27;il n&#x27;avait écrit que &quot;la chose sainte&quot;, j&#x27;aurais dit qu&#x27;il ne vient exclure que l&#x27;argent, mais tous les fruits, il les paierait. C&#x27;est pourquoi il a écrit &quot;et il donnera&quot;, ce qui implique que les fruits de la donation, nous exigeons qu&#x27;ils soient aptes à être saints.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le tanna kamma a déjà employé "il mangera" pour le kezayit. "Et il donnera" lui sert à autre chose : le paiement doit être <b>apte à devenir saint</b>. Cela exclut la teruma de hametz mangée à Pessah, dont le remplacement ne peut pas recevoir le statut de teruma.</p><p>Tossefot : "la chose sainte" seul n'écarterait que l'<b>argent</b>. "Et il donnera" étend l'exigence aux <b>fruits</b> versés au kohen.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּנוּ רַבָּנַן: הָאוֹכֵל תְּרוּמָה פָּחוֹת מִכְּזַיִת — מְשַׁלֵּם אֶת הַקֶּרֶן וְאֵינוֹ מְשַׁלֵּם אֶת הַחֹומֶשׁ. הֵיכִי דָמֵי? אִי דְּלֵית בֵּיהּ שָׁוֶה פְּרוּטָה — קֶרֶן נָמֵי לָא לִישַׁלֵּם, וְאִי דְּאִית בֵּהּ שָׁוֶה פְּרוּטָה — חֹומֶשׁ נָמֵי לִישַׁלֵּם! לְעוֹלָם דְּאִית בֵּהּ שָׁוֶה פְּרוּטָה, וַאֲפִילּוּ הָכֵי, כֵּיוָן דְּלֵית בֵּיהּ כְּזַיִת — מְשַׁלֵּם אֶת הַקֶּרֶן וְאֵינוֹ מְשַׁלֵּם אֶת הַחֹומֶשׁ.</div>
+            <div class="fr"><p>Les Sages ont enseigné : celui qui mange de la teruma moins d&#x27;un kezayit paie le capital et ne paie pas le cinquième. Comment le cas se présente-t-il ?</p><p>S&#x27;il n&#x27;y a pas en lui la valeur d&#x27;une peruta, qu&#x27;il ne paie pas le capital non plus. Et s&#x27;il y a en lui la valeur d&#x27;une peruta, qu&#x27;il paie le cinquième aussi !</p><p>En réalité, il y a en lui la valeur d&#x27;une peruta, et même ainsi, puisqu&#x27;il n&#x27;y a pas en lui un kezayit, il paie le capital et ne paie pas le cinquième.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּאִית בֵּהּ שָׁוֶה פְּרוּטָה</b> וְלֵיכָּא כַּזַּיִת כְּגוֹן שְׁנַת בַּצֹּורֶת:</div>
+          <div class="glose-fr">Il y a en lui la valeur d&#x27;une peruta, et il n&#x27;y a pas un kezayit, par exemple une année de sécheresse.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כֵּיוָן דְּלֵית בֵּהּ כְּזַיִת כו&#x27;</b> דַּאֲכִילָה כְּתִיבָא בָּהּ:</div>
+          <div class="glose-fr">Puisqu&#x27;il n&#x27;y a pas en lui un kezayit, etc. : car la manducation est écrite à son sujet.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Les deux seuils se séparent. Le <b>cinquième</b> suit "il mangera", donc le kezayit. Le <b>capital</b> suit le dommage, donc la peruta suffit.</p><p>En année de <b>sécheresse</b>, le prix est haut : un volume inférieur à l'olive atteint déjà une peruta. Il paie le capital, pas le cinquième.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 230" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="230" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Moins d'un kezayit, mais une peruta</text>
+<rect x="16" y="44" width="228" height="168" rx="4" fill="#e8eef6" stroke="#3d5a80"/>
+<text x="130" y="72" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5a80">Sécheresse</text>
+<text x="130" y="100" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le prix monte.</text>
+<text x="130" y="124" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Un volume sous</text>
+<text x="130" y="144" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">l'olive vaut déjà</text>
+<text x="130" y="164" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">une peruta.</text>
+<rect x="256" y="44" width="228" height="168" rx="4" fill="#fff6e8" stroke="#a36b2d"/>
+<text x="370" y="72" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a36b2d">Capital</text>
+<text x="370" y="104" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Il y a une peruta.</text>
+<text x="370" y="128" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le dommage</text>
+<text x="370" y="148" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">se paie.</text>
+<text x="370" y="180" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a36b2d">Il paie</text>
+<rect x="496" y="44" width="228" height="168" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="610" y="72" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Cinquième</text>
+<text x="610" y="104" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Pas de kezayit.</text>
+<text x="610" y="128" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Le mot "il mangera"</text>
+<text x="610" y="148" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">n'est pas atteint.</text>
+<text x="610" y="180" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">Il ne paie pas</text>
+</svg></div><div class="svg-cap">Sous l&#x27;olive, avec une peruta : le capital est dû, le cinquième ne l&#x27;est pas.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אַמְרוּהָ רַבָּנַן קַמֵּיהּ דְּרַב פָּפָּא הָא דְּלָא כְּאַבָּא שָׁאוּל, דְּאִי כְּאַבָּא שָׁאוּל, הָאָמַר: כֵּיוָן שֶׁיֵּשׁ בָּהּ שָׁוֶה פְּרוּטָה, אַף עַל גַּב דְּלֵית בֵּיהּ כְּזַיִת. אֲמַר לְהוּ רַב פָּפָּא: אֲפִילּוּ תֵּימָא אַבָּא שָׁאוּל, אַבָּא שָׁאוּל תַּרְתֵּי בָּעֵי.</div>
+            <div class="fr"><p>Les Sages l&#x27;ont dite devant Rav Papa : ceci n&#x27;est pas selon Abba Chaoul. Car si c&#x27;était selon Abba Chaoul, voici ce qu&#x27;il dit : dès lors qu&#x27;il y a en lui la valeur d&#x27;une peruta, même s&#x27;il n&#x27;y a pas en lui un kezayit.</p><p>Rav Papa leur dit : même si tu dis Abba Chaoul, Abba Chaoul exige les deux.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַמְרוּהָ רַבָּנַן קַמֵּיהּ דְּרַב פָּפָּא</b> דִּקְדְּקוּ מַלְבֵּן וְאָמְרוּ לְפָנָיו דְּהָא מַתְנֵי&#x27; דְּקָפְדָא אַכַּזַּיִת דְּלָא כְּאַבָּא שָׁאוּל דְּהָא שָׁמְעִינַן לֵיהּ דְּקָפֵיד אַפֵּרוּט&#x27; וְלֹא אַכַּזַּיִת:</div>
+          <div class="glose-fr">Ils l&#x27;ont scrutée en la clarifiant, et ils l&#x27;ont dite devant lui : cet enseignement, qui tient au kezayit, n&#x27;est pas selon Abba Chaoul. Car nous l&#x27;avons entendu tenir à la peruta, et non au kezayit.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>תַּרְתֵּי בָּעֵי</b> שֶׁיְּהֵא בּוֹ כַּזַּיִת דְּהָא אֲכִילָה כְּתִיבָא בֵּיהּ וְשֶׁיְּהֵא בְּדָמָיו פְּרוּטָה דְּהָא כְּתִיב וְנָתַן:</div>
+          <div class="glose-fr">Il exige les deux : qu&#x27;il y ait en lui un kezayit, car la manducation est écrite à son sujet, et qu&#x27;il y ait une peruta dans sa valeur, car il est écrit &quot;et il donnera&quot;.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Les Sages lisent la baraita contre <b>Abba Chaoul</b> : s'il ne tenait qu'à la peruta, un volume sous le kezayit qui vaut une peruta entraînerait aussi le cinquième.</p><p><b>Rav Papa</b> le défend : Abba Chaoul exige les <b>deux</b> conditions ensemble, le kezayit du verbe manger et la peruta de "et il donnera". La baraita peut donc rester la sienne.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּמִי בָּעֵי אַבָּא שָׁאוּל תַּרְתֵּי? וְהָא תְנַן, אַבָּא שָׁאוּל אוֹמֵר: אֶת שֶׁיֵּשׁ בּוֹ שָׁוֶה פְּרוּטָה — חַיָּיב בְּתַשְׁלוּמִין, אֶת שֶׁאֵין בּוֹ שָׁוֶה פְּרוּטָה — אֵינוֹ חַייָּב בְּתַשְׁלוּמִין. אָמְרוּ לוֹ: לֹא אָמְרוּ שָׁוֶה פְּרוּטָה אֶלָּא לְעִנְיַן מְעִילָה בִּלְבַד, אֲבָל לִתְרוּמָה — אֵינוֹ חַיָּיב עַד שֶׁיְּהֵא בּוֹ כְּזַיִת. וְאִם אִיתָא, ״כֵּיוָן שֶׁיֵּשׁ בּוֹ כְּזַיִת״ מִיבְּעֵי לֵיהּ. תְּיוּבְתָּא.</div>
+            <div class="fr"><p>Et Abba Chaoul exige-t-il les deux ? Or nous avons appris : Abba Chaoul dit : ce en quoi il y a la valeur d&#x27;une peruta, on est tenu aux paiements ; ce en quoi il n&#x27;y a pas la valeur d&#x27;une peruta, on n&#x27;est pas tenu aux paiements.</p><p>Ils lui ont dit : on n&#x27;a parlé de la valeur d&#x27;une peruta qu&#x27;au sujet de la me&#x27;ila seulement. Mais pour la teruma, on n&#x27;est tenu que lorsqu&#x27;il y a en lui un kezayit.</p><p>Et s&#x27;il en est ainsi, &quot;dès lors qu&#x27;il y a en lui un kezayit&quot; est ce qu&#x27;il fallait dire. Réfutation.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>חַייָּב בְּתַשְׁלוּמִין</b> אַתְּרוּמַת שׁוֹגֵג קָאֵי וְקֶרֶן וְחֹומֶשׁ קָאָמַר:</div>
+          <div class="glose-fr">Tenu aux paiements : cela vise la teruma mangée par inadvertance, et il parle du capital et du cinquième.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְעִנְיַן מְעִילָה</b> בְּנֶהֱנֶה מֵהֶקְדֵּשׁ גָּבוֹהַּ דְּהָתָם לָא כְּתִיב אֲכִילָה אֲבָל לִתְרוּמָה אַפֵּי&#x27; יֵשׁ בּוֹ שָׁוֶה פְּרוּטָה אֵין חַיָּיב חֹומֶשׁ עַד שֶׁיְּהֵא בּוֹ כְּזַיִת מִכְּלָל לְאַבָּא שָׁאוּל אע&quot;ג דְּלֵיכָּא כְּזַיִת דְּאִם אִיתָא דְּתַרְתֵּי בָּעֵי וּבְיֵשׁ בּוֹ כַּזַּיִת קָאֵי אַבָּא שָׁאוּל וְקָאָמַר דאע&quot;ג דְּאִית בֵּיהּ כְּזַיִת בָּעֵינַן פֵּרוּט&#x27; הָכִי הֲוָה לְהוּ לְמֵימַר כֵּיוָן דְּיֵשׁ בּוֹ כְּזַיִת חַיָּיב:</div>
+          <div class="glose-fr">Au sujet de la me&#x27;ila : celui qui tire jouissance d&#x27;un hekdesh du Ciel, car là la manducation n&#x27;est pas écrite. Mais pour la teruma, même s&#x27;il y a en lui la valeur d&#x27;une peruta, on n&#x27;est pas tenu au cinquième tant qu&#x27;il n&#x27;y a pas en lui un kezayit. D&#x27;où il suit qu&#x27;Abba Chaoul tient même sans kezayit. Car s&#x27;il en était ainsi qu&#x27;il exige les deux, et qu&#x27;Abba Chaoul vise un cas où il y a un kezayit, et qu&#x27;il dise que, même avec un kezayit, nous exigeons une peruta, ils auraient dû dire ainsi : dès lors qu&#x27;il y a en lui un kezayit, on est tenu.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La michna cite <b>Abba Chaoul</b> sur la seule <b>peruta</b>. Les Sages lui répondent que la peruta ne concerne que la <b>me'ila</b> (profit tiré d'un hekdesh), et que la teruma attend un kezayit.</p><p>S'il avait exigé les deux, et parlé d'un cas déjà pourvu d'un kezayit, ils auraient dit : "dès le kezayit, il est tenu", même sans peruta. Leur formulation montre qu'Abba Chaoul tient sans kezayit. <b>Tiyuvta</b> : réfutation de Rav Papa.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 250" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="250" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Ce que les Sages auraient dû dire</text>
+<rect x="16" y="46" width="348" height="186" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="190" y="72" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">S'il exigeait les deux</text>
+<text x="190" y="100" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Abba Chaoul parlerait</text>
+<text x="190" y="120" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">d'un cas qui a déjà</text>
+<text x="190" y="140" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">un kezayit.</text>
+<text x="190" y="168" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Réponse attendue :</text>
+<text x="190" y="192" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#8a4b3a">Dès le kezayit, il est tenu</text>
+<rect x="376" y="46" width="348" height="186" rx="4" fill="#eef4ee" stroke="#2f5c2f"/>
+<text x="550" y="72" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#2f5c2f">Ce qu'ils ont dit</text>
+<text x="550" y="100" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">La peruta ne vise</text>
+<text x="550" y="120" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">que la me'ila.</text>
+<text x="550" y="144" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Pour la teruma :</text>
+<text x="550" y="168" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#2f5c2f">tenu seulement au kezayit</text>
+<text x="550" y="196" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2f5c2f">Donc Abba Chaoul suit la peruta seule.</text>
+</svg></div><div class="svg-cap">La réponse réelle des Sages ne convient qu&#x27;à un Abba Chaoul qui suit la peruta seule.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאַף רַב פָּפָּא הֲדַר בֵּיהּ, דְּתַנְיָא: ״וְחָטְאָה בִּשְׁגָגָה״ — פְּרָט לְמֵזִיד. וַהֲלֹא דִּין הוּא: וּמַה שְׁאָר מִצְוֹת שֶׁחַייָּב בָּהֶן כָּרֵת — פּוֹטֵר בָּהֶן אֶת הַמֵּזִיד, מְעִילָה שֶׁאֵין בָּהּ כָּרֵת — אֵינוֹ דִּין שֶׁפָּטַר אֶת הַמֵּזִיד?</div>
+            <div class="fr"><p>Et Rav Papa aussi s&#x27;est rétracté. Car on a enseigné : &quot;et il a fauté par erreur&quot;, à l&#x27;exclusion de l&#x27;acte délibéré.</p><p>Et n&#x27;est-ce pas un raisonnement : de même que les autres commandements pour lesquels on est passible de karet, on y exempte l&#x27;acte délibéré ; la me&#x27;ila, qui n&#x27;a pas de karet, n&#x27;est-il pas logique qu&#x27;on y exempte l&#x27;acte délibéré ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְחָטְאָה בְּשָׁגַג&#x27;</b> בִּמְעִיל&#x27; דְּהֶקְדֵּשׁ כְּתִיב:</div>
+          <div class="glose-fr">&quot;Et il a fauté par erreur&quot; : c&#x27;est écrit au sujet de la me&#x27;ila d&#x27;un hekdesh.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וַהֲלֹא דִּין הוּא</b> דְּמֵזִיד פָּטוּר מִקָּרְבָּן וְלָמָּה לִי קְרָא:</div>
+          <div class="glose-fr">Et n&#x27;est-ce pas un raisonnement : l&#x27;acte délibéré est exempt du sacrifice, et pourquoi me faut-il un verset ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁחַייָּב בָּהֶן הַכָּתוּב כָּרֵת</b> כְּגוֹן חֵלֶב וְדָם:</div>
+          <div class="glose-fr">Pour lesquels le verset rend passible de karet : par exemple le helev et le sang.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>פָּטַר בָּהֶן אֶת הַמֵּזִיד</b> מִקָּרְבָּן דְּגַבֵּי חַטָּאת שְׁגָגָה כְּתִיב:</div>
+          <div class="glose-fr">On y exempte l&#x27;acte délibéré du sacrifice, car au sujet du hatat il est écrit &quot;erreur&quot;.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מְעִילָה שֶׁלֹּא חַייָּב בָּהּ כָּרֵת אֵינוֹ דִּין שֶׁפָּטַר בָּהּ אֶת הַמֵּזִיד</b> תֵּימַהּ נֵימָא הִיא הַנּוֹתֶנֶת דִּשְׁאָר מִצְוֹת שֶׁהֵן חֲמוּרוֹת שֶׁהֵן בְּכָרֵת אֵין לִזְדוֹנָהּ כַּפָּרָה אֲבָל מְעִילָה שֶׁהִיא קַלָּה שֶׁאֵין בָּהּ כָּרֵת יֵשׁ לִזְדוֹנָהּ כַּפָּרָה וכה&quot;ג אִיכָּא בְּרֵישׁ מַכּוֹת (דַּף ב:) דְּקָאָמַר ק&quot;ו וּמָה הוּא שֶׁעוֹשֶׂה מַעֲשֶׂה בְּמֵזִיד אֵינוֹ גֹּולֶה עֵדִים שֶׁלֹּא עָשׂוּ מַעֲשֶׂה אֵינוֹ דִּין שֶׁלֹּא יִגְלוּ הִיא הַנּוֹתֶנֶת הוּא שֶׁעָשָׂה מַעֲשֶׂה בְּמֵזִיד לָא יְגַלֶּה כִּי הֵיכִי דְּלָא תֶּיהְוֵי לֵיהּ כַּפָּרָה הֵן שֶׁלֹּא עָשׂוּ מַעֲשֶׂה יִגְלוּ דְּתֶיהֱוֵי לְהוּ כַּפָּרָה וְעוֹד אַרְבָּעָה הַמְּבִיאִין עַל הַזָּדוֹן כִּשְׁגָגָה יוֹכִיחוּ דְּאֵין בָּהֶן כָּרֵת וְחַייָּבִין עַל זְדוֹנָם הַבָּא עַל שִׁפְחָה חֲרוּפָה וְנָזִיר טָמֵא וּשְׁבוּעַת הָעֵדוּת וְהַפִּקָּדוֹן (תּוֹסֶפְתָּא דִּכְרִיתוֹת פ&quot;א) וְאוֹמֵר ר&quot;י דְּשַׁפִּיר פָּרִיךְ בְּלָאו הָכִי לֹא אִם אָמַרְתָּ וְכוּ&#x27; וּמִיהוּ קָשֶׁה לר&quot;י אַמַּאי אִיצְטְרִיךְ בִּכְרִיתוֹת (דַּף ט.) בְּשִׁפְחָה חֲרוּפָה אֲשֶׁר חָטָא לְרַבּוֹת זָדוֹן וְגַבֵּי נָזִיר נַמֵּי דְּרֵישׁ מִפִּתְאוֹם לְרַבּוֹת זָדוֹן דְּאִי מִשּׁוּם דְּלָא נֵילַף מִמְּעִילָה דְּאִמְּעִיט מִזָּדוֹן אַדְּרַבָּה מִשְּׁבוּעַת הָעֵדוּת וְהַפִּקָּדוֹן אִית לָן לְמֵילַף דִּלְחֻומְרָא מַקְּשִׁינַן:</div>
+          <div class="glose-fr">La me&#x27;ila, pour laquelle on n&#x27;a pas rendu passible de karet, n&#x27;est-il pas logique qu&#x27;on y exempte l&#x27;acte délibéré. Difficulté : disons hi ha-notenet (c&#x27;est elle qui le donne). Les autres commandements, qui sont graves et passibles de karet, leur acte délibéré n&#x27;a pas d&#x27;expiation. Mais la me&#x27;ila, qui est légère et n&#x27;a pas de karet, son acte délibéré a une expiation. Et l&#x27;on trouve un cas semblable au début de Makkot (2b), qui dit un kal va-homer : de même que lui, qui fait un acte délibéré, n&#x27;est pas exilé, les témoins, qui n&#x27;ont pas fait d&#x27;acte, n&#x27;est-il pas logique qu&#x27;ils ne soient pas exilés ? C&#x27;est elle qui le donne : lui, qui a fait un acte délibéré, ne sera pas exilé, afin qu&#x27;il n&#x27;ait pas d&#x27;expiation ; eux, qui n&#x27;ont pas fait d&#x27;acte, seront exilés, afin qu&#x27;ils aient une expiation. Et encore, les quatre qui apportent un sacrifice pour le délibéré comme pour l&#x27;inadvertance le prouveront : ils n&#x27;ont pas de karet, et ils sont tenus pour leur acte délibéré. Celui qui a une relation avec une servante désignée (shifha haroufa), le nazir devenu impur, le serment de témoignage et le dépôt (Tossefta de Keritot, chapitre 1). Et le Ri dit : l&#x27;objection porte bien même sans cela, par &quot;non, si tu dis&quot;, etc. Toutefois c&#x27;est difficile pour le Ri : pourquoi a-t-on besoin, dans Keritot (9a), au sujet de la servante désignée, de &quot;qu&#x27;il a fauté&quot; pour inclure l&#x27;acte délibéré, et au sujet du nazir aussi on interprète &quot;soudainement&quot; pour inclure l&#x27;acte délibéré ? Si c&#x27;est afin que nous n&#x27;apprenions pas de la me&#x27;ila, d&#x27;où l&#x27;acte délibéré a été exclu, à l&#x27;inverse, du serment de témoignage et du dépôt nous avons de quoi apprendre, car on compare vers la rigueur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara note que <b>Rav Papa</b> s'est rétracté, puis ouvre la baraita de la <b>me'ila</b>. "Et il a fauté par erreur" exclut le <b>délibéré</b> (mezid) du sacrifice.</p><p>Un <b>kal va-homer</b> semblait rendre le verset inutile. Les fautes passibles de <b>karet</b> (retranchement), comme le helev et le sang, exemptent déjà le délibéré du hatat, car le hatat est écrit pour l'erreur. La me'ila, qui n'a pas de karet, devrait l'exempter à plus forte raison.</p><p>Tossefot retourne le raisonnement par <b>hi ha-notenet</b> : l'absence de karet laisserait une expiation au délibéré. Les quatre cas sans karet qui apportent un sacrifice même pour le délibéré vont dans ce sens. Le Ri renvoie à la réponse du segment suivant.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לֹא! אִם אָמַרְתָּ בִּשְׁאָר מִצְוֹת שֶׁכֵּן לֹא חִיֵּיב בָּהֶן מִיתָה, תֹּאמַר בִּמְעִילָה, שֶׁחַיָּיב בָּהּ מִיתָה! תַּלְמוּד לוֹמַר: ״בִּשְׁגָגָה״ — פְּרָט לְמֵזִיד.</div>
+            <div class="fr"><p>Non ! Si tu dis au sujet des autres commandements, puisqu&#x27;on n&#x27;y est pas passible de mort, diras-tu au sujet de la me&#x27;ila, pour laquelle on est passible de mort !</p><p>Le verset l&#x27;enseigne : &quot;par erreur&quot;, à l&#x27;exclusion de l&#x27;acte délibéré.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא חִייֵּב בָּהֶן מִיתָה</b> בִּידֵי שָׁמַיִם אֲבָל מְעִילָה חַייָּב עַל זְדוֹנָהּ מִיתָה כְּדִלְקַמָּן וְדִילְמָא מִיתָה חֲמִירָא מִכָּרֵת:</div>
+          <div class="glose-fr">On n&#x27;y est pas passible de mort par le Ciel. Mais la me&#x27;ila, on y est passible de mort pour son acte délibéré, comme plus loin. Et peut-être la mort est-elle plus grave que le karet.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le kal va-homer cède. Les autres commandements n'entraînent pas la <b>mort par le Ciel</b>. La <b>me'ila</b> délibérée, si. On ne transporte pas leur exemption jusqu'à elle.</p><p>Le verset <b>"par erreur"</b> reste donc nécessaire : il exclut le délibéré. Rachi ajoute que cette mort pourrait être plus grave que le karet. C'est le point que Rav Nahman va relever.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וַאֲמַר לֵיהּ רַב נַחְמָן בַּר יִצְחָק לְרַב חִיָּיא בַּר אָבִין: הַאי תַּנָּא מֵעִיקָּרָא אַלִּימָא לֵיהּ כָּרֵת, וּלְבַסּוֹף אַלִּימָא לֵיהּ מִיתָה!</div>
+            <div class="fr"><p>Et Rav Nahman bar Yitzhak dit à Rav Hiya bar Avin : ce tanna, au début le karet est fort pour lui, et à la fin la mort est forte pour lui !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וַאֲמַר לֵיהּ רַב נַחְמָן</b> גָּרְסִינַן הַאי תַּנָּא אַלִּימָא לֵיהּ כָּרֵת מִמִּיתָה מֵעִיקָּרָא דְּקָתָנֵי מְעִילָה שֶׁלֹּא חַייָּב בָּהּ כָּרֵת אֶלָּא מִיתָה כו&#x27; אַלְמָא כָּרֵת חֲמִירָא וּלְבַסּוֹף אַלִּימָא לֵיהּ מִיתָה דְּקָתָנֵי תֹּאמַר בִּמְעִילָה כו&#x27;:</div>
+          <div class="glose-fr">Et Rav Nahman lui dit. Nous lisons : ce tanna, le karet est plus fort pour lui que la mort, au début. Car on enseigne : la me&#x27;ila, pour laquelle on n&#x27;est pas passible de karet, mais de mort, etc. Donc le karet est plus grave. Et à la fin, la mort est forte pour lui, car on enseigne : diras-tu au sujet de la me&#x27;ila, etc.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Nahman bar Yitzhak relève une bascule dans la même baraita. D'abord le <b>karet</b> est le plus grave : la me'ila, qui n'en a pas, devrait suivre à plus forte raison. Ensuite la <b>mort par le Ciel</b> est le plus grave : on refuse d'apprendre des fautes qui n'en comportent pas.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וַאֲמַר לֵיהּ, הָכִי קָאָמַר: לֹא! אִם אָמַרְתָּ בִּשְׁאָר מִצְוֹת — שֶׁכֵּן לֹא חִיֵּיב בָּהֶן מִיתָה בְּפָחוֹת מִכְּזַיִת, תֹּאמַר בִּמְעִילָה — שֶׁחִייֵּב בָּהּ מִיתָה בְּפָחוֹת מִכְּזַיִת. וַאֲמַר לֵיהּ: תָּנוּחַ דַּעְתְּךָ שֶׁהִנַּחְתָּ אֶת דַּעְתִּי. וַאֲמַר לֵיהּ: מַאי נִיחוּתָא, דְּרַבָּה וְרַב שֵׁשֶׁת שָׁדוּ בֵּיהּ נַרְגָּא: מַאן שָׁמְעַתְּ לֵיהּ דְּאָמַר</div>
+            <div class="fr"><p>Et il lui dit : voici ce qu&#x27;il dit. Non !</p><p>Si tu dis au sujet des autres commandements, puisqu&#x27;on n&#x27;y est pas passible de mort pour moins d&#x27;un kezayit, diras-tu au sujet de la me&#x27;ila, pour laquelle on est passible de mort pour moins d&#x27;un kezayit. Et il lui dit : que ton esprit se repose, car tu as mis mon esprit au repos.</p><p>Et il lui dit : quel repos y a-t-il ? Car Rabba et Rav Chechet y ont jeté une hache : qui as-tu entendu dire</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וא&quot;ל</b> רַבִּי חַייָּא לְעוֹלָם כָּרֵת אַלִּימָא לֵיהּ וְהַךְ סֵיפָא דְּמַתְנִי&#x27; הָכִי קָאָמַר לֹא אִם אָמַרְתָּ בִּשְׁאָר מִצְוֹת שֶׁהֲרֵי לֹא חַיָּיב בָּהֶן אֲפִילּוּ מִיתָה בְּפָחוֹת מִכְּזַיִת תֹּאמַר מְעִילָה שֶׁחַייָּב בָּהּ מִיהָא מִיתָה בְּפָחוֹת מִכַּזַּיִת בְּכוּלְּהוּ גָּרְסִינַן וַאֲמַר לֵיהּ וּמַתְקִיף לֵיהּ רַב פָּפָּא כו&#x27; עַד הָדַר בֵּיהּ:</div>
+          <div class="glose-fr">Et il lui dit. Rabbi Hiya : en tout cas, le karet est fort pour lui. Et cette fin de l&#x27;enseignement dit ceci : Non, si tu dis au sujet des autres commandements, puisqu&#x27;on n&#x27;y est même pas passible de mort pour moins d&#x27;un kezayit, diras-tu la me&#x27;ila, pour laquelle on est du moins passible de mort pour moins d&#x27;un kezayit. Dans tous ces échanges, nous lisons &quot;et il lui dit&quot;, et Rav Papa objecte, etc., jusqu&#x27;à : il s&#x27;est rétracté.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמַאי נִיחוּתָא</b> אִיכָּא דְּהָא רַבָּה וְרַב שֵׁשֶׁת שָׁדוּ בֵּיהּ נַרְגָּא בְּהַאי תֵּירוּצָא דְּתָרֵיצִית וּמַקְּשׁוּ הָכִי הֵיכִי אָמְרִי&#x27; דִּתְנָא אַפָּחוֹת מִכַּזַּיִת מְחַיֵּיב מִיתָה:</div>
+          <div class="glose-fr">Et quel repos y a-t-il ? Il y a ceci : Rabba et Rav Chechet ont jeté une hache dans cette réponse que tu as donnée, et ils objectent ainsi : comment disons-nous que le tanna rend passible de mort pour moins d&#x27;un kezayit ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַאן שָׁמְעַתְּ לֵיהּ דְּאָמַר מְעִילָה זְדוֹנָהּ מִיתָה רַבִּי</b> וְעַל כָּרְחֲךָ מִתְּרוּמָה גָּמַר לָהּ כְּדִמְפָרְשִׁינַן וְכֵיוָן דְּמִתְּרוּמָה גָּמַר לָא מַשְׁכַּח בָּהּ מִיתָה אֶלָּא בִּכְזַיִת כִּתְרוּמָה דִּתְרוּמָה גַּבֵּי מִיתָה כְּתִיב בָּהּ אֲכִילָה דְּמִיתָה דִּתְרוּמָה נָפְקָא לָן מִדִּסְמִיךְ וְכָל זָר לֹא יֹאכַל קֹדֶשׁ גַּבֵּי וּמֵתוּ בוֹ כִּי יְחַלְּלֻוהוּ בְּאֵלּוּ הֵן הַנִּשְׂרָפִין בְּסַנְהֶדְרִין (דַּף פג:):</div>
+          <div class="glose-fr">Qui as-tu entendu dire que la me&#x27;ila délibérée est passible de mort ? Rabbi. Et forcément, il l&#x27;apprend de la teruma, comme nous l&#x27;expliquons. Et puisqu&#x27;il l&#x27;apprend de la teruma, on n&#x27;y trouve la mort qu&#x27;avec un kezayit, comme pour la teruma. Car pour la teruma, au sujet de la mort, la manducation est écrite. La mort de la teruma, nous la tirons de la juxtaposition : &quot;et tout étranger ne mangera pas une chose sainte&quot; à côté de &quot;et ils mourront par cela, lorsqu&#x27;ils l&#x27;auront profané&quot;, dans le chapitre &quot;Voici ceux qui sont brûlés&quot;, à Sanhédrin (83b).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Hiya bar Avin maintient que le <b>karet</b> reste le plus fort. La coupure de la baraita porte sur le volume : les autres fautes n'ont pas de mort en dessous d'un <b>kezayit</b> ; la me'ila, si. Rav Nahman s'en déclare apaisé.</p><p>Rav Hiya retire lui-même cet apaisement. <b>Rabba</b> et <b>Rav Chechet</b> ont jeté une hache dans la réponse : qui pose une mort sur la me'ila délibérée ? Rachi nomme <b>Rabbi</b> (Rabbi Yehouda HaNassi). Il l'apprend de la teruma, et la mort de la teruma, juxtaposée à "il ne mangera pas", n'existe qu'au kezayit. La phrase de la Guemara s'interrompt sur "qui as-tu entendu dire" et continue au daf suivant.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 240" xmlns="http://www.w3.org/2000/svg">
+<rect width="740" height="240" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#2b2b2b">Mort en dessous d'un kezayit ?</text>
+<rect x="16" y="44" width="228" height="178" rx="4" fill="#e8eef6" stroke="#3d5a80"/>
+<text x="130" y="72" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#3d5a80">Autres fautes</text>
+<text x="130" y="104" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Pas de mort</text>
+<text x="130" y="128" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">en dessous</text>
+<text x="130" y="152" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">d'un kezayit.</text>
+<text x="130" y="184" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#3d5a80">Helev, sang</text>
+<rect x="256" y="44" width="228" height="178" rx="4" fill="#fff6e8" stroke="#a36b2d"/>
+<text x="370" y="72" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#a36b2d">Me'ila, selon Rav Hiya</text>
+<text x="370" y="104" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Mort par le Ciel</text>
+<text x="370" y="128" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">même en dessous</text>
+<text x="370" y="152" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">d'un kezayit.</text>
+<text x="370" y="184" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#a36b2d">D'où le verset</text>
+<rect x="496" y="44" width="228" height="178" rx="4" fill="#f7e8e4" stroke="#8a4b3a"/>
+<text x="610" y="72" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#8a4b3a">La hache</text>
+<text x="610" y="100" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">Rabbi l'apprend</text>
+<text x="610" y="120" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">de la teruma.</text>
+<text x="610" y="144" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">La teruma : mort</text>
+<text x="610" y="164" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2b2b2b">liée à "il mangera".</text>
+<text x="610" y="192" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#8a4b3a">Donc un kezayit</text>
+</svg></div><div class="svg-cap">Rav Hiya place la mort de la me&#x27;ila sous le kezayit. La hache rappelle que Rabbi l&#x27;apprend de la teruma, qui exige un kezayit.</div></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Pesachim_32a.html">&lsaquo; Pesachim 32a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schémas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage sélectionné :\n« '+s+' »\n'):'\nPassage concerné :\n\n')+'\nCorrection proposée :\n\n\n— envoyé depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>
