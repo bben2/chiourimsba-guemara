@@ -481,5 +481,17 @@ function toggleAll(cls) {
 }
 function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
 </script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage sélectionné :\n« '+s+' »\n'):'\nPassage concerné :\n\n')+'\nCorrection proposée :\n\n\n— envoyé depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<p id="credit-texte" style="text-align:center;font-size:.76rem;color:#78716c;margin:6px auto 18px;max-width:640px;line-height:1.5">
+Texte hébreu et araméen vocalisé : édition numérique William Davidson du Talmud Koren Noé, via
+<a href="https://www.sefaria.org" style="color:#78716c">Sefaria</a> (licence CC BY-NC). Traduction française, notes et schémas : Chiourim BA (licence CC BY 4.0).</p>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
 </body>
 </html>
