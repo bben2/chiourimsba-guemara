@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eruvin 36a : Hazaka, erouv douteux, et l&#x27;heure où l&#x27;erouv s&#x27;acquiert</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Eruvin 36a : Hazaka, erouv douteux, et l&#x27;heure où l&#x27;erouv s&#x27;acquiert</h1>
+    <div class="ref">Eruvin 36a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Eruvin_35b.html">&lsaquo; Eruvin 35b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+  <div class="resume"><p><b>Sougya :</b> Rava lève la contradiction de Rabbi Meir : la nuit, deux hazakot allègent ; pour la terouma de la michna, une seule hazaka ne suffit pas face aux témoins. Rabbi Yossi, rigoureux sur un doute d&#x27;immersion et souple sur l&#x27;erouv, reçoit trois réponses : l&#x27;impureté a un fondement dans la Tora, l&#x27;avis souple est celui d&#x27;Avtolmos, ou la hazaka de l&#x27;impur ne va que vers la rigueur.</p><p>Une baraita distingue le doute sur l&#x27;heure, qui laisse l&#x27;erouv valable, et le doute dès l&#x27;origine. Deux pains, le pur où qu&#x27;il soit, ne font pas un repas apte tant qu&#x27;il fait jour.</p><p>Un pain houlin aujourd&#x27;hui et hekdesh demain reste houlin au crépuscule ; l&#x27;inverse reste consacré. La cruche de tevoul yom enseigne que la fin du jour acquiert l&#x27;erouv.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 500" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="500" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Le fil de la page</text>
+<text x="370" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#555">Suite de 35b. Chaque réponse ouvre le cas suivant.</text>
+<rect x="16" y="62" width="708" height="58" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="370.0" y="87.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">1. Rava sur Rabbi Meir</text>
+<text x="370.0" y="103.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">La nuit : deux hazakot pour alléger. La terouma : une seule.</text>
+<rect x="16" y="128" width="708" height="58" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="370.0" y="153.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">2. Rabbi Yossi contre Rabbi Yossi</text>
+<text x="370.0" y="169.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Trois issues : fondement de la Tora, maître, ou hazaka.</text>
+<rect x="16" y="194" width="708" height="58" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="370.0" y="219.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">3. Baraita : quel erouv douteux est valable</text>
+<text x="370.0" y="235.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Doute sur l'heure : oui. Doute dès le dépôt : non.</text>
+<rect x="16" y="260" width="708" height="58" fill="#f6e6e0" stroke="#93756b"/>
+<text x="370.0" y="285.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">4. Deux pains, le pur où qu'il soit</text>
+<text x="370.0" y="301.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Les deux avis exigent un repas apte tant qu'il fait jour.</text>
+<rect x="16" y="326" width="708" height="58" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="370.0" y="351.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">5. Houlin aujourd'hui, hekdesh demain</text>
+<text x="370.0" y="367.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Un doute ne fait ni descendre ni partir la sainteté.</text>
+<rect x="16" y="392" width="708" height="84" fill="#ede7dc" stroke="#8a7b63"/>
+<text x="370.0" y="422.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">6. Cruche de tevoul yom</text>
+<text x="370.0" y="438.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">La teroumat maasser est dite pour la nuit.</text>
+<text x="370.0" y="454.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">L'erouv, lui, se joue à la fin du vendredi. Rava : la fin du jour acquiert l'erouv.</text>
+</svg></div>
+          <figcaption>De la hazaka de Rabbi Meir jusqu&#x27;à la cruche de tevoul yom : six temps de la page.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 420" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="420" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Rabbi Yossi contre Rabbi Yossi</text>
+<text x="370" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#555">Doute d'immersion : impur. Erouv douteux : valable. Trois issues.</text>
+<rect x="16" y="64" width="230" height="250" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="131.0" y="129.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rav Houna bar Hinana</text>
+<text x="131.0" y="145.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">L'impureté a un</text>
+<text x="131.0" y="161.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">fondement dans la Tora.</text>
+<text x="131.0" y="177.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Les Sages étendent</text>
+<text x="131.0" y="193.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">la rigueur au doute</text>
+<text x="131.0" y="209.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">rabbinique.</text>
+<text x="131.0" y="225.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Les tehoumin,</text>
+<text x="131.0" y="241.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">pour Rabbi Yossi,</text>
+<text x="131.0" y="257.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">sont rabbiniques.</text>
+<rect x="254" y="64" width="230" height="250" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="369.0" y="129.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Ceci, le sien</text>
+<text x="369.0" y="145.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Le doute d'immersion</text>
+<text x="369.0" y="161.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">reste le sien :</text>
+<text x="369.0" y="177.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">il est rigoureux,</text>
+<text x="369.0" y="193.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">même au rang</text>
+<text x="369.0" y="209.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">rabbinique.</text>
+<text x="369.0" y="225.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">La michna est</text>
+<text x="369.0" y="241.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">d'Avtolmos,</text>
+<text x="369.0" y="257.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">au nom de cinq Anciens.</text>
+<rect x="492" y="64" width="232" height="250" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="608.0" y="129.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rava : la hazaka</text>
+<text x="608.0" y="145.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">L'homme était impur.</text>
+<text x="608.0" y="161.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Une hazaka,</text>
+<text x="608.0" y="177.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">vers la rigueur.</text>
+<text x="608.0" y="193.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Dans la michna,</text>
+<text x="608.0" y="209.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">maison contre terouma.</text>
+<text x="608.0" y="225.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Loi rabbinique :</text>
+<text x="608.0" y="241.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">on va vers</text>
+<text x="608.0" y="257.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">l'allègement.</text>
+<rect x="16" y="330" width="708" height="70" fill="#ede7dc" stroke="#8a7b63"/>
+<text x="370.0" y="361.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Le mikvé de Rava n'a jamais été mesuré.</text>
+<text x="370.0" y="377.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Aucune hazaka de validité ne le tient pour complet.</text>
+</svg></div>
+          <figcaption>Trois issues entre le doute d&#x27;immersion, où Rabbi Yossi est rigoureux, et l&#x27;erouv douteux, qu&#x27;il rapporte comme valable.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 460" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="460" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Quel erouv douteux tient</text>
+<text x="370" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#555">L'état déjà là au crépuscule décide.</text>
+<rect x="16" y="64" width="460" height="72" fill="#ede7dc" stroke="#8a7b63"/>
+<text x="246.0" y="88.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Doute sur l'heure</text>
+<text x="246.0" y="104.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Pure au dépôt, devenue impure ensuite.</text>
+<text x="246.0" y="120.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Houlin en état, puis mélange.</text>
+<rect x="484" y="64" width="240" height="72" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="604.0" y="88.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Valable</text>
+<text x="604.0" y="104.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">La hazaka tient</text>
+<text x="604.0" y="120.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">jusqu'après la nuit.</text>
+<rect x="16" y="148" width="460" height="72" fill="#ede7dc" stroke="#8a7b63"/>
+<text x="246.0" y="172.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Doute dès l'origine</text>
+<text x="246.0" y="188.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Deux tas, l'un pur, l'autre impur.</text>
+<text x="246.0" y="204.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">On ignore lequel a été déposé.</text>
+<rect x="484" y="148" width="240" height="72" fill="#f6e6e0" stroke="#93756b"/>
+<text x="604.0" y="172.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Invalide</text>
+<text x="604.0" y="188.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Aucune hazaka</text>
+<text x="604.0" y="204.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">de validité.</text>
+<rect x="16" y="232" width="460" height="72" fill="#ede7dc" stroke="#8a7b63"/>
+<text x="246.0" y="256.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Deux pains : le pur, où qu'il soit</text>
+<text x="246.0" y="272.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Les deux sont au bout du tehoum.</text>
+<text x="246.0" y="288.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Aucun n'est mangeable avant la nuit.</text>
+<rect x="484" y="232" width="240" height="72" fill="#f6e6e0" stroke="#93756b"/>
+<text x="604.0" y="256.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Invalide</text>
+<text x="604.0" y="272.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rabbi Meir</text>
+<text x="604.0" y="288.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">et Rabbi Yossi.</text>
+<rect x="16" y="316" width="460" height="88" fill="#ede7dc" stroke="#8a7b63"/>
+<text x="246.0" y="348.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Pain déclaré</text>
+<text x="246.0" y="364.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Aujourd'hui houlin, demain hekdesh.</text>
+<text x="246.0" y="380.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Aujourd'hui hekdesh, demain houlin.</text>
+<rect x="484" y="316" width="240" height="88" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="604.0" y="348.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Valable, puis invalide</text>
+<text x="604.0" y="364.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">La sainteté ne descend pas.</text>
+<text x="604.0" y="380.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Elle ne part pas.</text>
+<rect x="16" y="416" width="708" height="28" fill="#dfe8ef" stroke="#6b8193"/>
+<text x="370.0" y="434.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#2b2b2b">Un doute ne crée pas un état, et n'efface pas l'état déjà là.</text>
+</svg></div>
+          <figcaption>Doute sur l&#x27;heure : erouv valable. Doute dès l&#x27;origine, ou deux pains indistincts : invalide. Le pain déclaré suit l&#x27;état que le doute ne change pas.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רָבָא אָמַר: הָתָם תְּרֵי חֶזְקֵי לְקֻולָּא, וְהָכָא חֲדָא חֲזָקָה לְקֻולָּא.</div>
+            <div class="fr"><p>Rava a dit : là-bas, deux hazakot (présomptions) pour alléger ; ici, une seule hazaka pour alléger.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רָבָא אָמַר</b> גַּבֵּי נָגַע בְּאֶחָד נָמֵי אֲפִילּוּ יֵשׁ שְׁנֵי כִּיתֵּי עֵדִים חֲלוּקוֹת אַחַת אוֹמֶרֶת קֹודֶם שֶׁנָּגַע בּוֹ מֵת וְאַחַת אוֹמֶרֶת עַכְשָׁיו מֵת הָוֵי נָמֵי ר&quot;מ מְטַהֵר וַאֲפִילּוּ הָכֵי לָא תִּיקְשֵׁי:</div>
+          <div class="glose-fr">Au sujet de celui qui a touché quelqu&#x27;un, là aussi : même s&#x27;il y a deux groupes de témoins opposés, l&#x27;un disant qu&#x27;il est mort avant qu&#x27;il le touche, l&#x27;autre disant qu&#x27;il est mort maintenant, Rabbi Meir déclare encore pur. Même ainsi, il n&#x27;y a pas de difficulté.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָתָם תְּרֵי חֲזָקֵי נִינְהוּ</b> לְטַהֵר וּמִשּׁוּם הָכִי אָזְלִינַן לְקֻולָּא דְּאוֹקֵי תְּרֵי לְבַהֲדֵי תְּרֵי וְהַעֲמֵד מֵת עַל חֶזְקָתוֹ רִאשׁוֹנָה כָּל הַלַּיְלָה וְחַי הֲוָה וְעוֹד הַעֲמֵד נוֹגֵעַ עַל חֶזְקָתוֹ רִאשׁוֹנָה וְטָהוֹר הָיָה:</div>
+          <div class="glose-fr">Pour déclarer pur. C&#x27;est pourquoi nous allons vers l&#x27;allègement : on place deux face à deux, on établit le mort sur sa hazaka première, toute la nuit il était vivant, et l&#x27;on établit encore celui qui a touché sur sa hazaka première : il était pur.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָכָא</b> בְּמַתְנִיתִין חֲדָא חֲזָקָה הוּא דְּאִיכָּא לְמֵימַר הַעֲמֵד תְּרוּמָה עַל חֶזְקָתָהּ וּמִשּׁוּם חֲדָא חֲזָקָה לָא מַרְעִינַן סָהֲדֵי הִלְכָּךְ אָזְלִינַן לְחוּמְרָא:</div>
+          <div class="glose-fr">Dans notre michna. Il y a une seule hazaka à dire : établis la terouma sur sa hazaka. À cause d&#x27;une seule hazaka, nous n&#x27;affaiblissons pas les témoins. C&#x27;est pourquoi nous allons vers la rigueur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rava reprend la fin de 35b. <b>Là-bas</b>, un homme a touché quelqu'un la nuit, et on le trouve mort le matin. <b>Ici</b>, la terouma de la michna, devant deux groupes de témoins.</p><p>Même avec deux groupes opposés, <b>Rabbi Meir</b> déclare pur. Les témoins s'annulent, et il reste <b>deux hazakot</b> pour alléger : l'homme était vivant, et celui qui l'a touché était pur. Pour la terouma, une seule hazaka, la pureté du dépôt. Une seule hazaka n'affaiblit pas les témoins : il va vers la <b>rigueur</b>.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 400" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="400" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Deux hazakot, ou une seule</text>
+<text x="370" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#555">Rava. Les groupes de témoins s'annulent. On compte ensuite les hazakot.</text>
+<rect x="16" y="64" width="350" height="220" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="191.0" y="122.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Là-bas : la nuit</text>
+<text x="191.0" y="138.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Il a touché quelqu'un.</text>
+<text x="191.0" y="154.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Même deux groupes opposés :</text>
+<text x="191.0" y="170.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">mort avant le contact,</text>
+<text x="191.0" y="186.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">ou mort maintenant.</text>
+<text x="191.0" y="202.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Hazaka 1 : il était vivant.</text>
+<text x="191.0" y="218.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Hazaka 2 : le toucheur était pur.</text>
+<text x="191.0" y="234.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rabbi Meir déclare pur.</text>
+<rect x="374" y="64" width="350" height="220" fill="#f6e6e0" stroke="#93756b"/>
+<text x="549.0" y="122.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Ici : la terouma</text>
+<text x="549.0" y="138.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Deux groupes :</text>
+<text x="549.0" y="154.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">impure tant qu'il fait jour,</text>
+<text x="549.0" y="170.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">ou après la nuit.</text>
+<text x="549.0" y="186.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Une hazaka :</text>
+<text x="549.0" y="202.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">déposée, elle était pure.</text>
+<text x="549.0" y="218.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Une hazaka n'affaiblit pas</text>
+<text x="549.0" y="234.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">les témoins. Rigueur.</text>
+<rect x="16" y="300" width="708" height="80" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="370.0" y="336.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Place deux face à deux, puis la hazaka.</text>
+<text x="370.0" y="352.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Deux hazakot pour alléger tiennent. Une seule ne sort pas les témoins.</text>
+</svg></div><div class="svg-cap">La nuit, deux hazakot restent après l&#x27;annulation des témoins. Pour la terouma, une seule : Rabbi Meir est rigoureux.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">קַשְׁיָא דְּרַבִּי יוֹסֵי אַדְּרַבִּי יוֹסֵי!</div>
+            <div class="fr"><p>Difficulté de Rabbi Yossi contre Rabbi Yossi.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>קַשְׁיָא דְּר&#x27; יוֹסֵי</b> דְּבָרַייְתָא דְּקָתָנֵי בְּסָפֵק טֶבֶל וּבְסָפֵק לֹא טָבַל וּבְטֻומְאָה דְּרַבָּנָן אָכַל אֳוכָלִין כּוּ&#x27; וְרַבִּי יוֹסֵי מְטַמֵּא וּמַתְנִי&#x27; קָתָנֵי סְפֵק עֵירוּב כָּשֵׁר וַאֲפִילּוּ תְּחוּמִין דְּרַבָּנָן תִּיקְשֵׁי:</div>
+          <div class="glose-fr">Cela vient de la baraita : doute s&#x27;il s&#x27;est immergé, doute s&#x27;il ne s&#x27;est pas immergé, et pour une impureté rabbinique, il a mangé des aliments, et la suite, et Rabbi Yossi déclare impur. Notre michna enseigne : un erouv douteux est valable. Même si les tehoumin (limites de Chabbat) sont rabbiniques, il y a difficulté.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La difficulté change de personne. Dans la baraita de 35b, <b>Rabbi Yossi</b> déclare impur un doute d'immersion, même pour une impureté <b>rabbinique</b>. Dans notre michna, un <b>erouv douteux</b> est valable. Si les <b>tehoumin</b> sont rabbiniques, les deux enseignements se contredisent.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב הוּנָא בַּר חִינָּנָא: שָׁאנֵי טֻומְאָה, הוֹאִיל וְיֵשׁ לָהּ עִיקָּר מִן הַתּוֹרָה. שַׁבָּת נָמֵי דְּאוֹרָייְתָא הִיא? קָסָבַר רַבִּי יוֹסֵי: תְּחוּמִין דְּרַבָּנָן.</div>
+            <div class="fr"><p>Rav Houna bar Hinana a dit : l&#x27;impureté est différente, puisqu&#x27;elle a un fondement dans la Tora. Chabbat aussi est de la Tora ?</p><p>Rabbi Yossi tient : les tehoumin sont rabbiniques.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הוֹאִיל וְיֵשׁ לָהּ עִיקָּר מִן הַתּוֹרָה</b> דְּיֵשׁ טֻומְאָה מִן הַתּוֹרָה וְיֵשׁ לְהַחְמִיר בִּסְפֵק טְבִילָתָהּ לְהָכִי אַחְמוּר רַבָּנָן אַף בִּסְפֵק טְבִילַת טֻומְאָה דְּרַבָּנָן דְּלָא לַיְּתֵי לְזִלְזוּלֵי בִּסְפֵק טְבִילַת טֻומְאָה דְּאוֹרָיְיתָא:</div>
+          <div class="glose-fr">Il y a une impureté de la Tora, et l&#x27;on est rigoureux sur le doute de son immersion. C&#x27;est pourquoi les Sages ont été rigoureux même sur le doute d&#x27;immersion d&#x27;une impureté rabbinique, afin qu&#x27;on n&#x27;en vienne pas à traiter à la légère le doute d&#x27;immersion d&#x27;une impureté de la Tora.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שַׁבָּת נָמֵי דְּאוֹרָיְיתָא הִיא</b> אַתְּחוּמִין פָּרִיךְ לְמֵימַר דִּתְחוּמִין דְּאוֹרָייְתָא וְכַר&#x27; עֲקִיבָא בְּמַס&#x27; סוֹטָה (דַּף ל:):</div>
+          <div class="glose-fr">L&#x27;objection porte sur les tehoumin : dire que les tehoumin sont de la Tora, comme Rabbi Akiva dans le traité Sota (30b).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמְשַׁנֵּי קָסָבַר רַבִּי יוֹסֵי תְּחוּמִין דְּרַבָּנַן</b> וּמִשּׁוּם דְּלָא לֵיתוּ לְזִלְזוּלֵי בִּשְׁאָר סְפֵיקוֹת דִּמְלֶאכֶת שַׁבָּת לֵיכָּא לְמִיגְזַר דְּלָא דָּמוּ מְלָאכוֹת לִתְחוּמִין אֲבָל טֻומְאוֹת דָּמוּ לַהֲדָדֵי:</div>
+          <div class="glose-fr">Et parce qu&#x27;on n&#x27;en viendrait pas à traiter à la légère les autres doutes des travaux de Chabbat, il n&#x27;y a pas à décréter : les travaux ne ressemblent pas aux tehoumin. Les impuretés, elles, se ressemblent.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rav Houna bar Hinana</b> : l'impureté a un <b>fondement dans la Tora</b>. Les Sages ont étendu la rigueur au doute d'immersion d'une impureté rabbinique, pour garder le sérieux du doute d'une impureté de la Tora.</p><p>Objection : Chabbat est de la Tora. Rachi vise les <b>tehoumin</b>, loi de la Tora pour Rabbi Akiva (Sota 30b). Réponse : pour Rabbi Yossi, les tehoumin sont <b>rabbiniques</b>. On ne décrète pas à partir des travaux de Chabbat : un travail ne ressemble pas à un tehoum. Les impuretés se ressemblent entre elles.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאִיבָּעֵית אֵימָא: הָא דִּידֵיהּ, הָא דְּרַבֵּיהּ. דַּיְקָא נָמֵי, דְּקָתָנֵי: אָמַר רַבִּי יוֹסֵי: אַבְטוּלְמוֹס הֵעִיד מִשּׁוּם חֲמִשָּׁה זְקֵנִים שֶׁסְּפֵק עֵירוּב כָּשֵׁר — שְׁמַע מִינָּה.</div>
+            <div class="fr"><p>Et si tu veux, dis : ceci est le sien, cela est celui de son maître. C&#x27;est précis aussi, car on enseigne : Rabbi Yossi a dit : Avtolmos a témoigné au nom de cinq Anciens qu&#x27;un erouv douteux est valable.</p><p>Apprends-en.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דִּידֵיהּ</b> מַחְמִיר אֲפִילּוּ בְּסָפֵק דְּרַבָּנָן וּמַתְנִיתִין דְּרַבֵּיהּ אַבְטוּלְמוֹס הִיא:</div>
+          <div class="glose-fr">Il est rigoureux même dans un doute rabbinique. Et notre michna est celle de son maître : c&#x27;est Avtolmos.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Autre issue. L'avis rigoureux sur le doute d'immersion est <b>le sien</b>. L'erouv douteux valable, dans la michna, est l'avis de <b>son maître</b>.</p><p>Le texte le marque. Rabbi Yossi rapporte : <b>Avtolmos a témoigné</b> au nom de cinq Anciens. <b>Shema mina</b> : on conclut ainsi.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רָבָא אָמַר, הָתָם הַייְנוּ טַעְמָא דְּרַבִּי יוֹסֵי: הַעֲמֵד טָמֵא עַל חֶזְקָתוֹ, וְאֵימָא לֹא טָבַל.</div>
+            <div class="fr"><p>Rava a dit : là-bas, voici la raison de Rabbi Yossi : établis l&#x27;impur sur sa hazaka, et dis qu&#x27;il ne s&#x27;est pas immergé.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַעֲמֵד טָמֵא עַל חֶזְקָתוֹ</b> כּוּלֵּיהּ חֲזָקָה לְחוּמְרָא אִיכָּא לְקֻולָּא לֵיכָּא אֲבָל מַתְנִיתִין אִיכָּא חֲזָקָה לְקֻולָּא וּלְחוּמְרָא הַעֲמֵד אָדָם עַל חֶזְקַת תְּחוּם בֵּיתוֹ וְאָמַר לֹא עֵירֵב הַעֲמֵד תְּרוּמָה עַל חֶזְקָתָהּ וְעֵירֵב וּבִדְרַבָּנָן לְקֻולָּא אָזְלִינַן:</div>
+          <div class="glose-fr">Toute la hazaka va vers la rigueur ; vers l&#x27;allègement, il n&#x27;y en a pas. Dans notre michna, il y a une hazaka vers l&#x27;allègement et une hazaka vers la rigueur : établis l&#x27;homme sur la hazaka du tehoum de sa maison, et dis qu&#x27;il n&#x27;a pas fait d&#x27;erouv ; établis la terouma sur sa hazaka, et il a fait l&#x27;erouv. Et dans une loi rabbinique, nous allons vers l&#x27;allègement.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rava</b> laisse les deux textes à Rabbi Yossi. Dans le doute d'immersion, l'homme était <b>impur</b>. Sa hazaka le maintient ainsi : il ne s'est pas immergé. Cette hazaka ne va que vers la <b>rigueur</b>.</p><p>Dans la michna, deux hazakot se font face. Le <b>tehoum de sa maison</b> : il n'a pas fait d'erouv. La <b>terouma</b> était pure : il a fait l'erouv. Pour une loi rabbinique, on suit l'allègement.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 360" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="360" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Où va la hazaka de Rabbi Yossi</text>
+<text x="370" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#555">Rava. Là-bas, la rigueur seule. Dans la michna, deux hazakot.</text>
+<rect x="16" y="64" width="350" height="200" fill="#f6e6e0" stroke="#93756b"/>
+<text x="191.0" y="120.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Doute d'immersion</text>
+<text x="191.0" y="136.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">L'homme était impur.</text>
+<text x="191.0" y="152.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Établis-le sur sa hazaka :</text>
+<text x="191.0" y="168.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">il ne s'est pas immergé.</text>
+<text x="191.0" y="184.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Vers l'allègement,</text>
+<text x="191.0" y="200.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">aucune hazaka.</text>
+<text x="191.0" y="216.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rabbi Yossi : impur.</text>
+<rect x="374" y="64" width="350" height="200" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="549.0" y="120.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Michna de l'erouv</text>
+<text x="549.0" y="136.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Hazaka de la maison :</text>
+<text x="549.0" y="152.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">il n'a pas fait d'erouv.</text>
+<text x="549.0" y="168.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Hazaka de la terouma :</text>
+<text x="549.0" y="184.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">elle était pure, erouv fait.</text>
+<text x="549.0" y="200.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Loi rabbinique :</text>
+<text x="549.0" y="216.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">on va vers l'allègement.</text>
+<rect x="16" y="280" width="708" height="60" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="370.0" y="314.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Les deux hazakot se font face. Au rang rabbinique, Rabbi Yossi allège.</text>
+</svg></div><div class="svg-cap">L&#x27;impur n&#x27;a qu&#x27;une hazaka, vers la rigueur. La michna en a deux ; au rang rabbinique, on allège.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אַדְּרַבָּה הַעֲמֵד מִקְוֶה עַל חֶזְקָתוֹ, וְאֵימָא לֹא חָסֵר! בְּמִקְוֶה שֶׁלֹּא נִמְדַּד.</div>
+            <div class="fr"><p>Au contraire : établis le mikvé sur sa hazaka, et dis qu&#x27;il n&#x27;a pas manqué. Dans un mikvé qui n&#x27;a pas été mesuré.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁלֹּא נִמְדְּדָה</b> מִתְּחִילָּתָהּ וְלֹא עָמְדָה בְּחֶזְקַת כַּשְׁרוּת:</div>
+          <div class="glose-fr">Depuis le début, et il ne s&#x27;est jamais tenu dans une hazaka de validité.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַדְּרַבָּה הַעֲמֵד מִקְוֶה עַל חֶזְקָתוֹ</b> הֲוָה מָצֵי לְשַׁנּוּיֵי הֲרֵי חָסֵר לְפָנֶיךָ כִּדְאָמַר פַּר&#x27; קַמָּא דְנִדָּה (דַּף ב.) אֶלָּא דְּלָא מַיְירֵי הָכָא בְּמִקְוֶה שֶׁנִּמְדַּד וְנִמְצָא חָסֵר:</div>
+          <div class="glose-fr">On aurait pu répondre : le voici en manque devant toi, comme on le dit au premier chapitre de Nida (2a). Seulement, ici, on ne traite pas d&#x27;un mikvé qui a été mesuré et qu&#x27;on a trouvé en manque.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּמִקְוֶה שֶׁלֹּא נִמְדַּד</b> וא&quot;ת וְהָא רַבִּי יוֹסֵי מְטַמֵּא אֲפִילּוּ טְהָרוֹת אִם נָגַע בָּהֶן דִּלְעִנְיַן דְּאָמְרִינַן לֵיהּ זִיל טְבֹול אֲפִילּוּ ר&quot;מ מוֹדֶה כִּדְאָמְרִינַן גַּבֵּי סְפֵק טֻומְאָה בִּרְשׁוּת הָרַבִּים וא&quot;כ אַדְּרַבָּה נֵימָא אוֹקֵי טְהָרוֹת עַל חֶזְקָתָן וי&quot;ל דְּבִסְפֵיקָא דְּרַבָּנָן כִּי הָכָא לָא אָמְרִינַן זִיל טְבֹול לְרַבִּי מֵאִיר וּפְלִיגִי אַגַּבְרָא אִי בָּעֵי טְבִילָה אֲבָל טְהָרוֹת מוֹדֶה רַבִּי יוֹסֵי דְּלָא מְטַמְּאִינַן וְכֵן אִיתָא בְּמַסֶּכֶת מִקְוָאוֹת (פ&quot;ב מִשְׁנָה ב) דְּקָתָנֵי וְרַבִּי יוֹסֵי מְטַמֵּא שֶׁסָּפֵק לִיטָּמֵא טָמֵא לְטַמֵּא אֲחֵרִים טָהוֹר:</div>
+          <div class="glose-fr">Et si tu dis : Rabbi Yossi déclare impures même les taharot (choses pures) s&#x27;il les a touchées. Car là où on lui dit d&#x27;aller s&#x27;immerger, Rabbi Meir lui-même est d&#x27;accord, comme on le dit pour un doute d&#x27;impureté dans le reshut harabim (domaine public). Dès lors, au contraire, disons : établis les taharot sur leur hazaka. On répond : dans un doute rabbinique comme ici, selon Rabbi Meir, on ne dit pas d&#x27;aller s&#x27;immerger. Ils divergent sur l&#x27;homme : a-t-il besoin d&#x27;une immersion ? Pour les taharot, Rabbi Yossi convient qu&#x27;on ne les déclare pas impures. Il en est ainsi dans le traité Mikvaot (chapitre 2, michna 2), qui enseigne : et Rabbi Yossi déclare impur, car un doute pour devenir impur est impur, et pour rendre autrui impur, c&#x27;est pur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection. Le <b>mikvé</b> a, lui aussi, une hazaka : il était valable, disons qu'il n'a pas manqué. Réponse : ce mikvé <b>n'a jamais été mesuré</b>. Il n'a pas de hazaka de validité.</p><p>Tossefot. La réponse de Nida 2a, le manque est devant nous, vise un mikvé mesuré puis trouvé en manque. Le débat de Rabbi Meir et de Rabbi Yossi, dans un doute rabbinique, porte sur <b>l'homme</b>. Les <b>taharot</b> qu'il a touchées restent pures, même pour Rabbi Yossi. Mikvaot 2:2 : doute d'être rendu impur, impur ; doute de rendre autrui impur, pur.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 280" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="280" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Le mikvé de l'objection</text>
+<text x="370" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#555">Au contraire : tiens le mikvé pour complet. Réponse : il n'a pas de hazaka.</text>
+<rect x="16" y="64" width="350" height="140" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="191.0" y="106.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Objection</text>
+<text x="191.0" y="122.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Établis le mikvé</text>
+<text x="191.0" y="138.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">sur sa hazaka.</text>
+<text x="191.0" y="154.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Dis qu'il n'a pas manqué.</text>
+<text x="191.0" y="170.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">L'homme serait pur.</text>
+<rect x="374" y="64" width="350" height="140" fill="#f6e6e0" stroke="#93756b"/>
+<text x="549.0" y="106.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Réponse</text>
+<text x="549.0" y="122.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Mikvé jamais mesuré.</text>
+<text x="549.0" y="138.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Il ne s'est jamais tenu</text>
+<text x="549.0" y="154.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">dans une hazaka de validité.</text>
+<text x="549.0" y="170.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">L'impur reste impur.</text>
+<rect x="16" y="220" width="708" height="44" fill="#ede7dc" stroke="#8a7b63"/>
+<text x="370.0" y="246.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Tossefot : le manque devant nous vise un mikvé mesuré, puis trouvé en manque.</text>
+</svg></div><div class="svg-cap">L&#x27;objection rend le mikvé complet par hazaka. La Guemara parle d&#x27;un mikvé qui n&#x27;a jamais été mesuré.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תַּנְיָא: כֵּיצַד אָמַר רַבִּי יוֹסֵי סְפֵק עֵירוּב כָּשֵׁר? עֵירֵב בִּתְרוּמָה, סָפֵק מִבְּעוֹד יוֹם נִטְמֵאת סָפֵק מִשֶּׁחָשֵׁיכָה נִטְמֵאת; וְכֵן בְּפֵירוֹת, סָפֵק מִבְּעוֹד יוֹם נִתַּקְּנוּ סָפֵק מִשֶּׁחָשֵׁיכָה נִתַּקְּנוּ — זֶה הוּא סָפֵק עֵירוּב כָּשֵׁר.</div>
+            <div class="fr"><p>Une baraita enseigne : comment Rabbi Yossi a-t-il dit qu&#x27;un erouv douteux est valable ? Il a fait l&#x27;erouv avec de la terouma, doute si elle est devenue impure tant qu&#x27;il fait jour, doute si elle est devenue impure après la nuit ; et de même pour des fruits, doute s&#x27;ils ont été mis en état tant qu&#x27;il fait jour, doute s&#x27;ils ont été mis en état après la nuit.</p><p>Voilà un erouv douteux valable.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(5)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>עֵירֵב בִּתְרוּמָה</b> טְהוֹרָה וְנִטְמֵאת מִשֶּׁהִנִּיחָהּ שָׁם:</div>
+          <div class="glose-fr">Elle était pure, et elle est devenue impure après qu&#x27;il l&#x27;a déposée là.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>סָפֵק מִבְּעוֹד יוֹם נִטְמֵאת סָפֵק מִשֶּׁחָשֵׁיכָה נִטְמֵאת</b> אָמְרִינַן אוֹקְמֵיהּ בֵּין הַשְּׁמָשׁוֹת אַחֶזְקַת&#x27; קַמַּיְיתָא וּטְהוֹרָה הֲוַאי וְהַשְׁתָּא מִשֶּׁחָשֵׁיכָה הוּא דְּאִיטַּמִּי:</div>
+          <div class="glose-fr">Nous disons : établis-la au crépuscule sur sa hazaka première, elle était pure, et c&#x27;est maintenant, après la nuit, qu&#x27;elle est devenue impure.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְכֵן בְּפֵירוֹת</b> שֶׁל טֶבֶל:</div>
+          <div class="glose-fr">Des fruits de tevel (produits dont les prélèvements n&#x27;ont pas été faits).</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>סָפֵק מִבְּעוֹד יוֹם נִתַּקְּנוּ</b> לְאַחַר שֶׁהִנִּיחָן שָׁם:</div>
+          <div class="glose-fr">Après qu&#x27;il les a déposés là.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>סָפֵק מִשֶּׁחָשֵׁיכָה נִתְקְנוּ</b> וְלֹא קָנָה עֵירוּב כְּדִתְנַן בְּמָתְנֵי&#x27; אֲבָל לֹא בְּטֶבֶל וּלְקַמָּן פָּרִיךְ בְּהַאי מָה חֶזְקַת כַּשְׁרוּת אִיכָּא דְּמַכְשַׁר רַבִּי יוֹסֵי דְּהָא אִיכָּא לְמֵימַר הַעֲמֵד טֶבֶל עַל חֶזְקָתוֹ:</div>
+          <div class="glose-fr">Et il n&#x27;a pas acquis l&#x27;erouv, comme notre michna l&#x27;enseigne : mais non avec du tevel. Et plus loin on objecte : dans ce cas, quelle hazaka de validité y a-t-il, pour que Rabbi Yossi déclare valable ? Car on peut dire : établis le tevel sur sa hazaka.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La baraita décrit le <b>sefek erouv</b> que Rabbi Yossi tient pour valable. Le doute porte sur <b>l'heure</b>. La terouma était pure au dépôt, puis elle est devenue impure : de jour, ou après la nuit ? Les fruits de <b>tevel</b> ont été mis en état : de jour, ou après la nuit ?</p><p>On maintient l'état du départ pendant le <b>crépuscule</b> (bein hashmashot). La terouma était encore pure : l'erouv a pris. Rachi annonce l'objection sur les fruits : leur état du départ est le tevel, et le tevel ne sert pas d'erouv.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲבָל עֵירֵב בִּתְרוּמָה, סָפֵק טְהוֹרָה סָפֵק טְמֵאָה; וְכֵן בְּפֵירוֹת, סָפֵק נִתַּקְּנוּ סָפֵק לֹא נִתַּקְּנוּ — אֵין זֶה סְפֵק עֵירוּב כָּשֵׁר.</div>
+            <div class="fr"><p>Mais s&#x27;il a fait l&#x27;erouv avec de la terouma, doute si elle est pure, doute si elle est impure ; et de même pour des fruits, doute s&#x27;ils ont été mis en état, doute s&#x27;ils ne l&#x27;ont pas été : ceci n&#x27;est pas un erouv douteux valable.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>סָפֵק טְמֵאָה סָפֵק טְהוֹרָה</b> דְּקֹודֶם שֶׁהִנִּיחָה שָׁם נוֹלַד לָהּ סָפֵק וְלֹא הָיָה שָׁם חֶזְקַת הֶכְשֵׁר עֵירוּב מֵעוֹלָם:</div>
+          <div class="glose-fr">Car, avant qu&#x27;il la dépose là, le doute est né pour elle, et il n&#x27;y a jamais eu de hazaka de validité de l&#x27;erouv.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲבָל עֵירַב בִּתְרוּמָה סָפֵק טְמֵאָה סָפֵק טְהוֹרָה</b> כְּגוֹן שֶׁהָיוּ ב&#x27; צִיבּוּרִין לְפָנָיו אֶחָד הָיָה תְּרוּמָה טְמֵאָה וְאֶחָד הָיָה תְּרוּמָה טְהוֹרָה וְעֵירֵב בְּאֶחָד מֵהֶן דְּלֵיכָּא חֲזָקָה כְּלָל:</div>
+          <div class="glose-fr">Par exemple, deux tas étaient devant lui, l&#x27;un de terouma impure et l&#x27;autre de terouma pure, et il a fait l&#x27;erouv avec l&#x27;un d&#x27;eux : il n&#x27;y a aucune hazaka.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Second cas, que Rabbi Yossi ne tient pas pour cet erouv valable. Le doute existe <b>dès le dépôt</b>. On ignore si cette terouma a été pure, et si ces fruits ont été mis en état. Aucune <b>hazaka</b> de validité de l'erouv ne précède le doute.</p><p>Tossefot : deux tas, l'un pur, l'autre impur. Il fait l'erouv avec l'un d'eux, sans savoir lequel.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 340" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="340" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Doute sur l'heure, doute dès l'origine</text>
+<text x="370" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#555">Baraita. Rabbi Yossi ne valide que le premier.</text>
+<rect x="16" y="64" width="350" height="180" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="191.0" y="110.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Sefek erouv valable</text>
+<text x="191.0" y="126.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Terouma pure au dépôt,</text>
+<text x="191.0" y="142.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">puis devenue impure.</text>
+<text x="191.0" y="158.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Fruits mis en état après coup.</text>
+<text x="191.0" y="174.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Doute : de jour, ou après la nuit ?</text>
+<text x="191.0" y="190.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">La hazaka tient l'état du départ</text>
+<text x="191.0" y="206.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">pendant le crépuscule.</text>
+<rect x="374" y="64" width="350" height="180" fill="#f6e6e0" stroke="#93756b"/>
+<text x="549.0" y="110.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Pas ce sefek-là</text>
+<text x="549.0" y="126.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Doute si elle est pure</text>
+<text x="549.0" y="142.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">ou impure, dès le départ.</text>
+<text x="549.0" y="158.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Deux tas devant lui.</text>
+<text x="549.0" y="174.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Il prend l'un des deux.</text>
+<text x="549.0" y="190.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Aucune hazaka</text>
+<text x="549.0" y="206.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">de validité de l'erouv.</text>
+<rect x="16" y="260" width="708" height="60" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="370.0" y="294.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Le doute né avant le dépôt n'a pas d'état valable à maintenir.</text>
+</svg></div><div class="svg-cap">Doute sur l&#x27;heure : la hazaka du dépôt tient au crépuscule. Doute dès l&#x27;origine : aucune hazaka de validité.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאי שְׁנָא תְּרוּמָה — דְּאָמַר הַעֲמֵד תְּרוּמָה עַל חֶזְקָתָהּ, וְאֵימָא טְהוֹרָה הִיא; פֵּירוֹת נָמֵי — הַעֲמֵד טֶבֶל עַל חֶזְקָתוֹ, וְאֵימָא לֹא נִתְקְנוּ!</div>
+            <div class="fr"><p>En quoi la terouma est-elle différente, qu&#x27;on dise : établis la terouma sur sa hazaka, et dis qu&#x27;elle est pure ? Les fruits aussi : établis le tevel sur sa hazaka, et dis qu&#x27;ils n&#x27;ont pas été mis en état.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַאי שְׁנָא תְּרוּמָה</b> דְּרֵישָׁא סָפֵק מִבְּעוֹד יוֹם נִיטְמָא סָפֵק מִשֶּׁחֲשֵׁיכָה דְּמַכְשַׁר ר&#x27; יוֹסֵי מִשּׁוּם חֲזָקָה קַמַּיְיתָא:</div>
+          <div class="glose-fr">Du premier membre : doute si elle est devenue impure tant qu&#x27;il fait jour, doute après la nuit, que Rabbi Yossi déclare valable à cause de la hazaka première.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>פֵּירוֹת</b> סָפֵק מִבְּעוֹד יוֹם נִתַּקְּנוּ סָפֵק מִשֶּׁחָשֵׁיכָה נוֹקְמִינְהוּ נָמֵי אַחֲזָקָה קַמַּיְיתָא דְּטֶבֶל הָווּ וְלִיפְסֹול:</div>
+          <div class="glose-fr">Doute s&#x27;ils ont été mis en état tant qu&#x27;il fait jour, doute après la nuit : établissons-les aussi sur la hazaka première, ils étaient tevel, et que l&#x27;erouv soit invalide.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La hazaka du départ joue des deux côtés. Pour la terouma, elle était pure : on la tient pour pure au crépuscule, et Rabbi Yossi valide. Pour les fruits, ils étaient <b>tevel</b> : la même hazaka les tiendrait pour non mis en état, et l'erouv serait invalide.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לָא תֵּימָא: סָפֵק מִבְּעוֹד יוֹם נִתַּקְּנוּ, אֶלָּא אֵימָא: סָפֵק מִבְּעוֹד יוֹם נִדְמְעוּ, סָפֵק מִשֶּׁחָשֵׁיכָה נִדְמְעוּ.</div>
+            <div class="fr"><p>Ne dis pas : doute s&#x27;ils ont été mis en état tant qu&#x27;il fait jour. Dis : doute s&#x27;ils ont été mélangés tant qu&#x27;il fait jour, doute s&#x27;ils ont été mélangés après la nuit.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>נִדְמְעוּ</b> חֻולִּין הָווּ מֵעִיקָּרָא מְתֻוקָּנִין וְנָפְלָה בָּהֶן תְּרוּמָה וְנִדְמְעוּ וְהַאי תַּנָּא סָבַר לַהּ כְּסוּמָכוֹס דְּאָמַר (לְעֵיל עֵירוּבִין דַּף כו:) אֵין מְעָרְבִין לְיִשְׂרָאֵל בִּתְרוּמָה הִלְכָּךְ אִם מבע&quot;י נִדְמְעוּ אע&quot;ג דַּחֲזֵי לַכֹּהֲנִים אֵין עֵירוּבוֹ עֵירוּב ל&quot;א נִדְמְעוּ שֶׁנָּפַל לְתוֹכָן טֶבֶל דְּלָא חֲזִי אֲפִילּוּ לְכֹהֵן:</div>
+          <div class="glose-fr">C&#x27;étaient au départ des houlin (aliments ordinaires) déjà mis en état. De la terouma y est tombée, et ils ont été mélangés. Ce tanna tient comme Soumakhos, qui a dit (plus haut, Eruvin 26b) : on ne fait pas d&#x27;erouv pour un Israël avec de la terouma. Donc, s&#x27;ils ont été mélangés tant qu&#x27;il fait jour, même s&#x27;ils conviennent à des kohanim, son erouv n&#x27;est pas un erouv. Autre version : ils ont été mélangés parce que du tevel est tombé dedans, et cela ne convient même pas à un kohen.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>סָפֵק נִדְמְעוּ</b> נִרְאֶה כְּפֵ&quot;ה בְּלָשׁוֹן שֵׁנִי נִדְמְעוּ טֶבֶל בְּחֻולִּין וְלֹא כִּסְתָם דִּימּוּעַ שבהש&quot;ס אֲבָל לָשׁוֹן רִאשׁוֹן שֶׁפֵּירֵשׁ נִדְמְעוּ תְּרוּמָה בְּחֻולִּין וְאָתְיָא כְּסוּמָכוֹס אֵין נִרְאֶה דְּהָא קָתָנֵי בַּבָּרַיְיתָא דִּמְעָרְבִין בִּתְרוּמָה וְדֹוחַק לוֹמַר דְּמַייְרֵי בִּתְרוּמָה לְכֹהֵן:</div>
+          <div class="glose-fr">Cela paraît comme le commentaire de Rachi, dans la seconde version : du tevel s&#x27;est mélangé à des houlin, et non comme le dimoua (mélange de terouma) habituel du Talmud. La première version, mélange de terouma dans des houlin, qui suit Soumakhos, ne paraît pas juste : la baraita enseigne qu&#x27;on fait l&#x27;erouv avec de la terouma, et l&#x27;on est réduit à dire qu&#x27;il s&#x27;agit de terouma pour un kohen.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La Guemara corrige la formule. On quitte le doute sur la <b>mise en état</b> des fruits. On lit un <b>dimoua</b> : un mélange arrivé ensuite. Doute : de jour, ou après la nuit ? L'état du départ est alors un aliment déjà apte.</p><p>Rachi donne deux lectures. Première : de la terouma tombe dans des houlin, et ce tanna suit <b>Soumakhos</b>, pas d'erouv de terouma pour un Israël. Seconde : du <b>tevel</b> tombe dans les houlin, impropre même à un kohen. Tossefot retient la seconde : la baraita parle elle-même d'un erouv fait avec de la terouma.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 300" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="300" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Corriger les fruits : nidme'ou</text>
+<text x="370" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#555">La hazaka de tevel invaliderait. On lit un mélange survenu ensuite.</text>
+<rect x="16" y="64" width="350" height="150" fill="#f6e6e0" stroke="#93756b"/>
+<text x="191.0" y="103.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Formule à quitter</text>
+<text x="191.0" y="119.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Doute s'ils ont été</text>
+<text x="191.0" y="135.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">mis en état de jour,</text>
+<text x="191.0" y="151.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">ou après la nuit.</text>
+<text x="191.0" y="167.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Hazaka : ils étaient tevel.</text>
+<text x="191.0" y="183.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">L'erouv tomberait.</text>
+<rect x="374" y="64" width="350" height="150" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="549.0" y="103.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Formule retenue</text>
+<text x="549.0" y="119.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Doute s'ils ont été</text>
+<text x="549.0" y="135.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">mélangés de jour,</text>
+<text x="549.0" y="151.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">ou après la nuit.</text>
+<text x="549.0" y="167.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Hazaka : houlin en état.</text>
+<text x="549.0" y="183.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">L'erouv tient.</text>
+<rect x="16" y="230" width="708" height="52" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="370.0" y="260.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Tossefot retient : du tevel est tombé dans les houlin. Le dimoua de terouma suivrait Soumakhos.</text>
+</svg></div><div class="svg-cap">Mis en état : la hazaka de tevel invalide. Mélangés ensuite : la hazaka de houlin aptes maintient l&#x27;erouv.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בְּעָא רַב שְׁמוּאֵל בַּר רַב יִצְחָק מֵרַב הוּנָא: הָיוּ לְפָנָיו שְׁתֵּי כִכָּרוֹת, אַחַת טְמֵאָה וְאַחַת טְהוֹרָה, וְאָמַר: עָירְבוּ לִי בַּטְּהוֹרָה בְּכָל מָקוֹם שֶׁהִיא, מַהוּ?</div>
+            <div class="fr"><p>Rav Chemouel bar Rav Its&#x27;hak a demandé à Rav Houna : deux pains étaient devant lui, l&#x27;un impur et l&#x27;autre pur, et il a dit : faites-moi l&#x27;erouv avec le pur, où qu&#x27;il soit. Qu&#x27;en est-il ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>עָירְבוּ לִי בַּטְּהוֹרָה בְּכָל מָקוֹם שֶׁהִיא</b> וְהִנִּיחוּם שְׁתֵּיהֶן יַחַד בְּסוֹף הַתְּחוּם וּבְכִכָּרוֹת שֶׁל תְּרוּמָה עָסְקִינַן דְּאִי בְּחֻולִּין חֻולִּין טְמֵאִין מֻותָּרִין הֵן דְּלָאו כָּל אָדָם אוֹכֵל חָולְיוֹ בְּטָהֳרָה:</div>
+          <div class="glose-fr">Et on les a déposés tous les deux ensemble au bout du tehoum. Il s&#x27;agit de pains de terouma. S&#x27;il s&#x27;agissait de houlin, des houlin impurs sont permis : tout homme ne mange pas ses houlin en pureté.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rav Chemouel bar Rav Its'hak</b> demande à <b>Rav Houna</b>. Deux pains de terouma, l'un pur, l'autre impur. Il dit : faites l'erouv avec le pur, <b>où qu'il soit</b>. Les deux sont déposés ensemble au bout du tehoum.</p><p>Rachi : ce sont des pains de <b>terouma</b>. Des houlin impurs restent mangeables, car tout homme ne mange pas ses houlin en état de pureté. Les deux pains seraient alors aptes.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תִּיבְּעֵי לְרַבִּי מֵאִיר, תִּיבְּעֵי לְרַבִּי יוֹסֵי. תִּיבְּעֵי לְרַבִּי מֵאִיר: עַד כָּאן לָא קָאָמַר רַבִּי מֵאִיר הָתָם — דְּלֵיכָּא טְהוֹרָה. הָכָא — הָא אִיכָּא טְהוֹרָה. אוֹ דִּילְמָא: אֲפִילּוּ לְרַבִּי יוֹסֵי, לָא קָאָמַר אֶלָּא הָתָם, דְּאִם אִיתָא דְּהִיא טְהוֹרָה — יָדַע לָהּ. אֲבָל הָכָא, הָא לָא יָדַע לַהּ?</div>
+            <div class="fr"><p>La question se pose pour Rabbi Meir, la question se pose pour Rabbi Yossi. Pour Rabbi Meir : Rabbi Meir ne l&#x27;a dit, là-bas, que là où il n&#x27;y a pas de pure.</p><p>Ici, il y a une pure. Ou bien, même pour Rabbi Yossi : il ne l&#x27;a dit que là-bas, où, s&#x27;il est vrai qu&#x27;elle est pure, il la connaît.</p><p>Mais ici, il ne la connaît pas.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּלֵיכָּא טְהוֹרָה</b> וַדָּאִית דְּשֶׁמָּא מִבְּעוֹד יוֹם נִטְמֵאת:</div>
+          <div class="glose-fr">Une pure certaine, car peut-être est-elle devenue impure tant qu&#x27;il fait jour.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אוֹ דִּילְמָא אֲפִילּוּ ר&#x27; יוֹסֵי</b> לָא מַכְשַׁר בְּמָתְנֵי&#x27; אֶלָּא מִשּׁוּם דְּאִי טְהוֹרָה הִיא הָא יָדַע לָהּ הֵיכָא הִיא וְאֵיזוֹ הִיא סְעֻודָּתוֹ וּמִשּׁוּם סְפֵק טֻומְאָה לָא מִיפַּסְלָא דְּאָמַר אוֹקְמָא אַחֲזָקָה:</div>
+          <div class="glose-fr">Il ne déclare valable, dans la michna, que parce que, si elle est pure, il sait où elle est et quel est son repas. Et à cause d&#x27;un doute d&#x27;impureté elle n&#x27;est pas invalidée, car il dit : établis-la sur sa hazaka.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲבָל הָכָא לָא יָדַע</b> הֵי נִיהוּ סְעֻודָּתוֹ:</div>
+          <div class="glose-fr">Lequel est son repas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La question vaut dans les deux sens. <b>Rabbi Meir</b>, rigoureux dans la michna, allégerait peut-être ici : là-bas, aucune terouma n'était pure à coup sûr ; ici, l'un des deux pains est pur.</p><p><b>Rabbi Yossi</b>, souple dans la michna, serait peut-être rigoureux ici. Là-bas, si la terouma est pure, il sait quel est son repas. Ici, il ne désigne pas son pain.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ: בֵּין לְרַבִּי יוֹסֵי בֵּין לְרַבִּי מֵאִיר בָּעִינַן סְעוּדָה הָרְאוּיָה מִבְּעוֹד יוֹם — וְלֵיכָּא.</div>
+            <div class="fr"><p>Il lui a dit : pour Rabbi Yossi comme pour Rabbi Meir, nous exigeons un repas apte tant qu&#x27;il fait jour, et il n&#x27;y en a pas.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בָּעֵינַן סְעוּדָה הָרְאוּיָה מבע&quot;י וְלֵיכָּא</b> וְאֵין עֵירוּבוֹ כְּלוּם דַּאֲפִילּוּ חַמָּר גַּמָּל לָא הָוֵי דְּבִשְׁלָמָא מַתְנֵי&#x27; סְעוּדָה הָרְאוּיָה הֲוַאי וְהַשְׁתָּא הוּא דְּאִיתְיְלִיד בָּהּ סָפֵק:</div>
+          <div class="glose-fr">Et son erouv n&#x27;est rien : même un hamar gamal (l&#x27;âne et le chameau, deux erouvin conditionnels), il ne l&#x27;est pas. Certes, dans la michna, le repas était apte, et c&#x27;est maintenant que le doute y est né.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rav Houna</b> tranche pour les deux avis. L'erouv exige une <b>seouda raouya</b>, un repas apte, <b>tant qu'il fait jour</b>. Ici, aucun des deux pains ne se mange avant la nuit : on ignore lequel est pur.</p><p>Rachi : on n'atteint pas le <b>hamar gamal</b>, figure de deux erouvin conditionnels. Dans la michna, le repas était apte au dépôt. Le doute est né ensuite.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 320" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="320" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Deux pains au bout du tehoum</text>
+<text x="370" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#555">Faites l'erouv avec le pur, où qu'il soit. Rav Houna : il n'y a pas de repas apte.</text>
+<rect x="16" y="64" width="230" height="160" fill="#f6e6e0" stroke="#93756b"/>
+<text x="131.0" y="116.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Pain impur</text>
+<text x="131.0" y="132.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Terouma tame.</text>
+<text x="131.0" y="148.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">On ne la mange pas.</text>
+<text x="131.0" y="164.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">On ignore</text>
+<text x="131.0" y="180.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">lequel c'est.</text>
+<rect x="254" y="64" width="230" height="160" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="369.0" y="116.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Pain pur</text>
+<text x="369.0" y="132.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Terouma tahor.</text>
+<text x="369.0" y="148.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Il serait apte.</text>
+<text x="369.0" y="164.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">On ne peut pas</text>
+<text x="369.0" y="180.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">le désigner.</text>
+<rect x="492" y="64" width="232" height="160" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="608.0" y="116.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Avant la nuit</text>
+<text x="608.0" y="132.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Aucun des deux</text>
+<text x="608.0" y="148.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">n'est un repas apte.</text>
+<text x="608.0" y="164.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Même pas un</text>
+<text x="608.0" y="180.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">hamar gamal.</text>
+<rect x="16" y="240" width="708" height="60" fill="#ede7dc" stroke="#8a7b63"/>
+<text x="370.0" y="274.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Dans la michna, le repas était apte au dépôt. Le doute est né ensuite.</text>
+</svg></div><div class="svg-cap">Les deux pains sont au même lieu. Tant qu&#x27;il fait jour, aucun n&#x27;est un repas qu&#x27;on puisse manger.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בְּעָא מִינֵּיהּ רָבָא מֵרַב נַחְמָן: כִּכָּר זוֹ הַיּוֹם חוֹל וּלְמָחָר קֹדֶשׁ, וְאָמַר: עֵירְבוּ לִי בָּזֶה, מַהוּ? אֲמַר לֵיהּ: עֵירוּבוֹ עֵירוּב.</div>
+            <div class="fr"><p>Rava a demandé à Rav Nahman : ce pain, aujourd&#x27;hui houlin, et demain consacré ; et il a dit : faites-moi l&#x27;erouv avec celui-ci. Qu&#x27;en est-il ?</p><p>Il lui a dit : son erouv est un erouv.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כִּכָּר זוֹ כו&#x27;</b> אָמַר עַל כִּכָּר אַחַת בע&quot;ש הַיּוֹם יְהֵא חוֹל וּלְמָחָר יְהֵא קֹדֶשׁ וְעֵירֵב שְׁלוּחוֹ בָּהּ:</div>
+          <div class="glose-fr">Il a dit, sur un pain, le vendredi : aujourd&#x27;hui il sera houlin, et demain il sera consacré. Et son envoyé a fait l&#x27;erouv avec lui.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַהוּ</b> הוֹאִיל וּבֵין הַשְּׁמָשׁוֹת סָפֵק הוּא חָיְישִׁינַן דִּילְמָא קֹודֶם קְנִיַּית עֵירוּב חָל עָלֶיהָ הֶקְדֵּשׁ וְאֵין מְעָרְבִין בְּהֶקְדֵּשׁ אוֹ לָא אָמְרִינַן הָכִי:</div>
+          <div class="glose-fr">Puisque le crépuscule est un doute, craignons-nous qu&#x27;avant l&#x27;acquisition de l&#x27;erouv la consécration prenne effet sur lui, et l&#x27;on ne fait pas d&#x27;erouv avec de l&#x27;hekdesh (bien consacré) ? Ou bien ne le disons-nous pas ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rava</b> interroge <b>Rav Nahman</b>. Le vendredi, sur un pain : aujourd'hui <b>houlin</b>, demain <b>hekdesh</b>. Son envoyé en fait l'erouv.</p><p>Le <b>bein hashmashot</b> est un doute, fin du vendredi ou début de Chabbat. La consécration a-t-elle déjà pris avant que l'erouv s'acquière ? On ne fait pas d'erouv avec de l'hekdesh. Rav Nahman : <b>son erouv est un erouv</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הַיּוֹם קֹדֶשׁ וּלְמָחָר חוֹל, וְאָמַר: עֵירְבוּ לִי בָּזֶה, מַהוּ? אֲמַר לֵיהּ: אֵין עֵירוּבוֹ עֵירוּב. מַאי שְׁנָא?</div>
+            <div class="fr"><p>Aujourd&#x27;hui consacré, et demain houlin ; et il a dit : faites-moi l&#x27;erouv avec celui-ci. Qu&#x27;en est-il ?</p><p>Il lui a dit : son erouv n&#x27;est pas un erouv. Quelle différence ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַיּוֹם תְּהֵא קוֹדֶשׁ וּלְמָחָר תְּהֵא חוֹל</b> עַל מְעוֹת שֶׁיֵּשׁ לִי בַּבַּיִת מַהוּ מִי אָמְרִינַן כִּי מְטָא בֵּין הַשְּׁמָשׁוֹת נְפַק לֵיהּ מִקְּדֻושְׁתֵּיהּ וְקָנָה עֵירוּב אוֹ לָא:</div>
+          <div class="glose-fr">Sur des pièces que j&#x27;ai à la maison. Qu&#x27;en est-il : disons-nous que, le crépuscule arrivé, il sort de sa sainteté et l&#x27;erouv est acquis, ou non ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמַאי שְׁנָא</b> הָא בֵּין הַשְּׁמָשׁוֹת סְפֵיקָא הוּא מַאי שְׁנָא הָכָא לְקֻולָּא וְהָכָא לְחוּמְרָא:</div>
+          <div class="glose-fr">Or le crépuscule est un doute. Pourquoi ici vers l&#x27;allègement, et ici vers la rigueur ?</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַאי שְׁנָא</b> וְאִם תֹּאמַר וְהָא רָבָא גּוּפֵיהּ קָאָמַר בְּסָמוּךְ זֹאת אוֹמֶרֶת סוֹף הַיּוֹם קוֹנֶה עֵירוּב וְאִם סוֹף הַיּוֹם קוֹנֶה עֵירוּב אָתְיָא דְּרַב נַחְמָן שַׁפִּיר וְאַמַּאי קָמִיבַּעְיָא לֵיהּ מַאי שְׁנָא וְיֵשׁ לוֹמַר דע&quot;כ דְּרָבָא אִית לֵיהּ דִּתְחִלַּת הַיּוֹם קוֹנֶה עֵירוּב דְּהָא פְּסִיק בְּרֵישׁ בֵּיצָה (דַּף ד:) כְּרַב דְּאָמַר נוֹלְדָה בָּזֶה אֲסוּרָה בָּזֶה וְטַעֲמָא דְּרַב מִשּׁוּם הֲכָנָה וּמַאן דְּאִית לֵיהּ הֲכָנָה סָבַר תְּחִילַּת הַיּוֹם קוֹנֶה עֵירוּב כִּדְמוֹכַח בְּפִירְקִין (דַּף לח:) וְרָבָא דְּאָמַר זֹאת אוֹמֶרֶת סוֹף הַיּוֹם קוֹנֶה עֵירוּב אַלִּיבָּא דְּבָרַייְתָא קָאָמַר וְלֵיהּ לָא ס&quot;ל:</div>
+          <div class="glose-fr">Et si tu dis : or Rava lui-même dit tout à côté : cela enseigne que la fin du jour acquiert l&#x27;erouv. Et si la fin du jour acquiert l&#x27;erouv, l&#x27;avis de Rav Nahman se tient bien. Pourquoi donc lui demande-t-il : quelle différence ? On peut dire : Rava tient nécessairement que le début du jour acquiert l&#x27;erouv. Car il tranche au début de Beitsa (4b) comme Rav, qui a dit : né dans celui-ci, interdit dans celui-là. La raison de Rav est la hakhana (préparation du jour avant qu&#x27;il commence). Et celui qui tient la hakhana tient que le début du jour acquiert l&#x27;erouv, comme le montre notre chapitre (38b). Et Rava, quand il dit : cela enseigne que la fin du jour acquiert l&#x27;erouv, le dit selon la baraita, et lui-même ne le tient pas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Déclaration inverse : aujourd'hui <b>hekdesh</b>, demain houlin. Rachi : le rachat se fera sur des pièces qui sont à la maison. Rav Nahman : <b>son erouv n'est pas un erouv</b>. Rava demande la différence. Le crépuscule est un doute dans les deux déclarations.</p><p>Tossefot. Plus loin, Rava dira que la <b>fin du jour</b> acquiert l'erouv, et les deux réponses de Rav Nahman suivent alors le statut du vendredi. Pour son compte, Rava tient que le <b>début du jour</b> acquiert l'erouv : il tranche comme Rav au début de Beitsa (4b), à cause de la <b>hakhana</b>, et cet avis lie l'erouv au début du jour (38b). La formule sur la fin du jour, il la dit selon la baraita, sans la tenir.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ: לְכִי תֵּיכוּל עֲלֵיהּ כּוֹרָא דְמִלְחָא: הַיּוֹם חוֹל וּלְמָחָר קֹדֶשׁ — מִסְּפֵיקָא לָא נָחֲתָא לֵיהּ קְדֻושָּׁה. הַיּוֹם קֹדֶשׁ וּלְמָחָר חוֹל — מִסְּפֵיקָא לָא פָּקְעָא לֵיהּ קְדֻושְׁתֵּיהּ מִינֵּיהּ.</div>
+            <div class="fr"><p>Il lui a dit : quand tu auras mangé là-dessus un kor de sel. Aujourd&#x27;hui houlin et demain consacré : par un doute, la sainteté ne descend pas sur lui.</p><p>Aujourd&#x27;hui consacré et demain houlin : par un doute, sa sainteté ne le quitte pas.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְכִי תֵּיכוֹל עֲלָהּ כּוֹרָא דְּמִילְחָא</b> לִכְשֶׁתִּמְדֹּוד כּוּר שֶׁל מֶלַח עַל דָּבָר זֶה וְתִתְּנֵהוּ לִי אוֹמֵר לְךָ טַעְמוֹ:</div>
+          <div class="glose-fr">Quand tu auras mesuré un kor de sel sur cette affaire et que tu me l&#x27;auras remis, je t&#x27;en dirai la raison.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַיּוֹם חוֹל וּלְמָחָר קֹודֶשׁ</b> וּבֵין הַשְּׁמָשׁוֹת דִּקְנִיַּית עֵירוּב סְפֵיקָא הוּא וּמִסְּפֵיקָא לָא תַּפְּקֵיהּ מִמִּילְּתֵיהּ קַמַּיְיתָא וְכֵן סֵיפָא:</div>
+          <div class="glose-fr">Et le crépuscule, moment où l&#x27;erouv s&#x27;acquiert, est un doute. Par un doute, ne le sors pas de son état premier. Et de même le second membre.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Nahman ouvre par une formule : quand tu auras mangé là-dessus un <b>kor</b> de sel. Rachi lit : quand tu m'auras remis un kor de sel mesuré sur cette question, j'en dirai la raison. La raison vient aussitôt.</p><p>Un doute ne fait pas entrer un état nouveau, et ne fait pas sortir de l'état déjà là. Aujourd'hui houlin, demain hekdesh : au crépuscule, la sainteté <b>ne descend pas</b>. Le pain reste houlin, l'erouv est valable. Aujourd'hui hekdesh, demain houlin : la sainteté <b>ne quitte pas</b> le pain. Il reste hekdesh, l'erouv est invalide.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 340" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="340" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">Le doute ne change pas l'état</text>
+<text x="370" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#555">Rav Nahman. Le crépuscule reste sur l'état du jour.</text>
+<rect x="16" y="64" width="350" height="180" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="191.0" y="110.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Aujourd'hui houlin</text>
+<text x="191.0" y="126.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Demain hekdesh.</text>
+<text x="191.0" y="142.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Par un doute,</text>
+<text x="191.0" y="158.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">la sainteté ne descend pas.</text>
+<text x="191.0" y="174.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Au crépuscule : houlin.</text>
+<text x="191.0" y="190.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">On peut en faire l'erouv.</text>
+<text x="191.0" y="206.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Son erouv est un erouv.</text>
+<rect x="374" y="64" width="350" height="180" fill="#f6e6e0" stroke="#93756b"/>
+<text x="549.0" y="110.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Aujourd'hui hekdesh</text>
+<text x="549.0" y="126.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Demain houlin,</text>
+<text x="549.0" y="142.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">rachat sur des pièces</text>
+<text x="549.0" y="158.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">qui sont à la maison.</text>
+<text x="549.0" y="174.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">La sainteté ne part pas.</text>
+<text x="549.0" y="190.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Au crépuscule : hekdesh.</text>
+<text x="549.0" y="206.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Son erouv n'est pas un erouv.</text>
+<rect x="16" y="260" width="708" height="60" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="370.0" y="294.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Même raison des deux côtés : on ne sort pas un objet de son état premier par un doute.</text>
+</svg></div><div class="svg-cap">Houlin qui doit devenir hekdesh : la sainteté ne descend pas par doute. Hekdesh qui doit devenir houlin : elle ne part pas.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg16">
+          <div class="seg-num">17</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תְּנַן הָתָם: לָגִין טְבוּל יוֹם שֶׁמִּלְּאוֹ מִן הֶחָבִית שֶׁל מַעֲשֵׂר טֶבֶל, וְאָמַר: הֲרֵי זֶה תְּרוּמַת מַעֲשֵׂר לִכְשֶׁתֶּחֱשַׁךְ — דְּבָרָיו קַיָּימִין.</div>
+            <div class="fr"><p>Nous avons appris là-bas : une cruche de tevoul yom (immergée le jour, pure à la nuit), qu&#x27;il a remplie depuis le tonneau de maasser (dîme) encore tevel, et il a dit : ceci sera teroumat maasser quand il fera nuit. Ses paroles tiennent.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁל מַעֲשֵׂר</b> רִאשׁוֹן שֶׁהָיָה עֲדַייִן טֶבֶל שֶׁלֹּא הִפְרִישׁ הַלֵּוִי מִמֶּנָּה תְּרוּמַת מַעֲשֵׂר וַהֲרֵי הוּא בְּמִיתָה בְּעוֹדוֹ טֶבֶל וַאֲפִילּוּ לַכֹּהֲנִים וְלָא חֲזִי לְעֵירוּב וּלְגַבֵּי לָגִין טְבוּל יוֹם בְּעוֹדוֹ טֶבֶל לָא פְּסִיל דִּטְבוּל יוֹם מֻותָּר בִּנְגִיעָה לְחֻולִּין וּלְמַעֲשֵׂר ואע&quot;ג דִּפְתִיכָא בֵּיהּ תְּרוּמָה שֶׁלֹּא הוּרְמָה וְאָמַר הֲרֵי זוֹ שֶׁבַּלָּגִין תְּרוּמַת מַעֲשֵׂר עַל הֶחָבִית לִכְשֶׁתֶּחְשַׁךְ וְיַעֲרִיב שִׁמְשׁוֹ שֶׁתְּהֵא כְּשֵׁרָה לִתְרוּמָה:</div>
+          <div class="glose-fr">Maasser premier, qui était encore tevel : le lévite n&#x27;en avait pas prélevé la teroumat maasser. Tant qu&#x27;il est tevel, il est sous peine de mort, même pour les kohanim, et il ne convient pas à l&#x27;erouv. Pour la cruche de tevoul yom, tant que c&#x27;est du tevel, elle ne l&#x27;invalide pas : un tevoul yom peut toucher des houlin et du maasser, même si une terouma non prélevée y est mêlée. Et il a dit : ceci qui est dans la cruche sera teroumat maasser pour le tonneau, quand il fera nuit et que son soleil se couchera, afin qu&#x27;elle soit apte à la terouma.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּבָרָיו קַיָּימִין</b> וְהַתְּרוּמָה טְהוֹרָה:</div>
+          <div class="glose-fr">Et la terouma est pure.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Michna citée d'ailleurs. Un <b>tevoul yom</b> n'est pleinement pur qu'à la nuit. Son contact invalide la terouma. Il laisse entiers le maasser et les houlin.</p><p>La cruche est remplie d'un tonneau de <b>maasser rishon</b> encore <b>tevel</b> : le lévite n'a pas prélevé la <b>teroumat maasser</b>, la part du kohen. Il dit : le contenu de la cruche le deviendra <b>quand il fera nuit</b>. À cette heure la cruche est pure, et la terouma le reste. Ses paroles tiennent.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg17">
+          <div class="seg-num">18</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאִם אָמַר: עֵירְבוּ לִי בָּזֶה — לֹא אָמַר כְּלוּם. אָמַר רָבָא זֹאת אוֹמֶרֶת: סוֹף הַיּוֹם קוֹנֶה עֵירוּב,</div>
+            <div class="fr"><p>Et s&#x27;il a dit : faites-moi l&#x27;erouv avec ceci, il n&#x27;a rien dit. Rava a dit : cela enseigne que la fin du jour acquiert l&#x27;erouv.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאִם אָמַר עָירְבוּ לִי בְּלָגִין זֶה לֹא אָמַר כְּלוּם</b> הוֹאִיל וְכִי מְטָא בֵּין הַשְּׁמָשׁוֹת אַכַּתִּי טֶבֶל הֲוָה:</div>
+          <div class="glose-fr">Puisque, le crépuscule arrivé, c&#x27;était encore du tevel.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>סוֹף הַיּוֹם</b> תְּחִילַּת בֵּין הַשְּׁמָשׁוֹת שֶׁהוּא סוֹף הַיּוֹם שֶׁל ע&quot;ש:</div>
+          <div class="glose-fr">Le début du crépuscule, qui est la fin du jour du vendredi.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>קוֹנֶה עֵירוּב</b> וְסוֹף הַיּוֹם אַכַּתִּי טֶבֶל הוּא:</div>
+          <div class="glose-fr">Et à la fin du jour, c&#x27;est encore du tevel.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>S'il dit : faites l'erouv avec cette cruche, <b>il n'a rien dit</b>. Au crépuscule, le contenu est encore du <b>tevel</b>. La séparation n'est dite que pour la nuit. Le tevel ne sert pas d'erouv.</p><p><b>Rava</b> en tire : <b>la fin du jour acquiert l'erouv</b>. Rachi : c'est le début du crépuscule, encore vendredi, et à cette heure c'est du tevel. Tossefot, plus haut : Rava énonce cela selon la baraita. Pour lui, le début du jour acquiert l'erouv.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 360" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="360" fill="#fbfaf7"/>
+<text x="370" y="26" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#2b2b2b">La cruche, du jour à la nuit</text>
+<text x="370" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#555">Teroumat maasser dite pour la nuit. Erouv acquis à la fin du vendredi.</text>
+<rect x="16" y="64" width="230" height="200" fill="#ede7dc" stroke="#8a7b63"/>
+<text x="131.0" y="128.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Tant qu'il fait jour</text>
+<text x="131.0" y="144.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Cruche tevoul yom.</text>
+<text x="131.0" y="160.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Maasser encore tevel.</text>
+<text x="131.0" y="176.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Le contact n'invalide</text>
+<text x="131.0" y="192.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">pas le tevel.</text>
+<text x="131.0" y="208.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Pas encore d'erouv.</text>
+<rect x="254" y="64" width="230" height="200" fill="#f6e6e0" stroke="#93756b"/>
+<text x="369.0" y="128.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Fin du jour</text>
+<text x="369.0" y="144.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Début du crépuscule.</text>
+<text x="369.0" y="160.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">C'est encore du tevel.</text>
+<text x="369.0" y="176.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">L'erouv devrait</text>
+<text x="369.0" y="192.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">déjà être apte.</text>
+<text x="369.0" y="208.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Il ne l'est pas.</text>
+<rect x="492" y="64" width="232" height="200" fill="#e7f1e4" stroke="#5d8a5d"/>
+<text x="608.0" y="128.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Quand il fait nuit</text>
+<text x="608.0" y="144.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">La cruche est pure.</text>
+<text x="608.0" y="160.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">La teroumat maasser</text>
+<text x="608.0" y="176.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">prend effet.</text>
+<text x="608.0" y="192.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Ses paroles tiennent</text>
+<text x="608.0" y="208.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">pour la terouma.</text>
+<rect x="16" y="280" width="708" height="60" fill="#f7f1e3" stroke="#b39b5a"/>
+<text x="370.0" y="314.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#2b2b2b">Rava : la fin du jour acquiert l'erouv. À cette heure, la cruche est encore du tevel.</text>
+</svg></div><div class="svg-cap">De jour, tevel dans une cruche tevoul yom. À la fin du vendredi, l&#x27;erouv exigerait déjà un aliment apte. La terouma ne prend qu&#x27;à la nuit.</div></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Eruvin_35b.html">&lsaquo; Eruvin 35b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><span class="nav-b off">&rsaquo;</span></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schémas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage sélectionné :\n« '+s+' »\n'):'\nPassage concerné :\n\n')+'\nCorrection proposée :\n\n\n— envoyé depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>
