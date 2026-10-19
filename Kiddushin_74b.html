@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kiddushin 74b — Qui sont « tous ceux qui sont interdits d&#x27;entrer dans l&#x27;assemblée » : quatre explications de la michna</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Kiddushin 74b — Qui sont « tous ceux qui sont interdits d&#x27;entrer dans l&#x27;assemblée » : quatre explications de la michna</h1>
+    <div class="ref">Kiddushin 74b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Kiddushin_74a.html">&lsaquo; Kiddushin 74a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Kiddushin_75a.html">Kiddushin 75a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> La guemara cherche à quels cas se rapporte la michna « tous ceux qui sont interdits d&#x27;entrer dans l&#x27;assemblée sont permis les uns aux autres ; Rabbi Yehouda interdit ». Rav Yehouda l&#x27;explique de l&#x27;assemblée de la prêtrise (la convertie de moins de trois ans et un jour), réfuté par plusieurs objections.</p><p>Rav Natan bar Hoshaya : celui dont le kohen ne peut épouser la fille (un converti marié à une convertie, selon Rabbi Eliezer ben Ya&#x27;akov), avec deux objections (Rabbi Dostaï ben Yehouda, &#x27;halal avec &#x27;halala). Rav Na&#x27;hman au nom de Rabba bar Avouha : mamzer d&#x27;une soeur ou d&#x27;une femme mariée, réfuté par la michna de Yevamot (Rabbi Akiva, Chimon HaTemani, Rabbi Yehoshoua).</p><p>Rava : l&#x27;Ammonite et le Moabite convertis. La page se termine sur la baraïta du garçon de neuf ans et un jour.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 360" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6a6a6a"/></marker></defs><rect x="0" y="0" width="740" height="360" fill="#fbfaf6"/><text x="370" y="24" text-anchor="middle" font-size="16" font-weight="bold" fill="#2b2b2b">Les quatre explications de la michna</text><rect x="20" y="36" width="700" height="26" rx="5" fill="#e7e9f2" stroke="#7a86a8"/><text x="370" y="53" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2f3a55">Quatre explications de « tous ceux qui sont interdits d'entrer dans l'assemblée »</text><rect x="20" y="72" width="340" height="76" rx="5" fill="#f2e2dd" stroke="#a75d4b"/><text x="190" y="92" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#7c3b2c">1. Rav Yehouda</text><text x="190" y="107" text-anchor="middle" font-size="11" fill="#7c3b2c">L'assemblée de la prêtrise : la convertie de moins</text><text x="190" y="122" text-anchor="middle" font-size="11" fill="#7c3b2c">de trois ans et un jour (contre Rabbi Chimon</text><text x="190" y="137" text-anchor="middle" font-size="11" fill="#7c3b2c">ben Yo'haï)  ✗ plusieurs objections</text><rect x="380" y="72" width="340" height="76" rx="5" fill="#f2e2dd" stroke="#a75d4b"/><text x="550" y="92" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#7c3b2c">2. Rav Natan bar Hoshaya</text><text x="550" y="107" text-anchor="middle" font-size="11" fill="#7c3b2c">Celui dont la fille est interdite au kohen :</text><text x="550" y="122" text-anchor="middle" font-size="11" fill="#7c3b2c">un converti qui épouse une convertie</text><text x="550" y="137" text-anchor="middle" font-size="11" fill="#7c3b2c">(Rabbi Eliezer ben Ya'akov)  ✗</text><rect x="20" y="164" width="340" height="76" rx="5" fill="#f2e2dd" stroke="#a75d4b"/><text x="190" y="184" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#7c3b2c">3. Rav Na'hman / Rabba bar Avouha</text><text x="190" y="199" text-anchor="middle" font-size="11" fill="#7c3b2c">Un mamzer d'une soeur et un mamzer</text><text x="190" y="214" text-anchor="middle" font-size="11" fill="#7c3b2c">d'une femme mariée : dispute sur le mamzer</text><text x="190" y="229" text-anchor="middle" font-size="11" fill="#7c3b2c">de karet  ✗ (déjà dans Yevamot)</text><rect x="380" y="164" width="340" height="76" rx="5" fill="#e0eee0" stroke="#5f9a63"/><text x="550" y="184" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2d5a31">4. Rava</text><text x="550" y="199" text-anchor="middle" font-size="11" fill="#2d5a31">L'Ammonite et le Moabite convertis</text><text x="550" y="214" text-anchor="middle" font-size="11" fill="#2d5a31">permis avec les mamzerim ; Rabbi Yehouda</text><text x="550" y="229" text-anchor="middle" font-size="11" fill="#2d5a31">interdit au converti ordinaire (un seul tana)</text><rect x="20" y="258" width="700" height="26" rx="5" fill="#dcd7c8" stroke="#b6b2a4"/><text x="370" y="275" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">Baraïta : le garçon de neuf ans et un jour</text><rect x="20" y="294" width="700" height="46" rx="5" fill="#ffffff" stroke="#c9c5b6"/><text x="370" y="314" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#3a3a3a">Un Ammonite, Égyptien, Koutim, natin, 'halal ou mamzer de neuf ans et un jour qui a eu une relation avec une kohenet,</text><text x="370" y="329" text-anchor="middle" font-size="11" fill="#3a3a3a">une Lévia ou une Israélite la disqualifie (de la prêtrise) ; Rabbi Yossi : celui dont la descendance est disqualifiée</text></svg></div>
+          <figcaption>Les quatre explications de la michna « tous ceux qui sont interdits d&#x27;entrer dans l&#x27;assemblée » (Kiddouchin 74b).</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָכִי קָאָמַר: כָּל הָאֲסוּרִים לָבֹא בִּקְהַל כְּהֻונָּה, מַאי נִינְהוּ – גִּיֹּורֶת פְּחוּתָה מִבַּת שָׁלֹשׁ שָׁנִים וְיוֹם אֶחָד, וּדְלָא כְּרַבִּי שִׁמְעוֹן בֶּן יוֹחַי – מֻותָּרִין לָבוֹא זֶה בָּזֶה.</div>
+            <div class="fr"><p>Voici ce qu&#x27;il dit : Tous ceux qui sont interdits d&#x27;entrer dans l&#x27;assemblée de la prêtrise, quels sont-ils ? La convertie de moins de trois ans et un jour, et contrairement à Rabbi Chimon ben Yo&#x27;haï : ils sont permis les uns aux autres.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּדְלָא כר&quot;ש</b> דְּאָמַר לְקַמָּן בְּפִירְקִין (קִידּוּשִׁין דַּף עח.) גִּיּוֹרֶת פְּחוּתָה מִבַּת ג&#x27; כְּשֵׁירָה לִכְהֻונָּה וה&quot;ק כָּל הָאֲסוּרִין לָבֹא בַּקָּהָל כְּהֻונָּה וּמַאי נִיהוּ דִּמְרַבֵּי הַאי כְּלָלָא יֶתֶר עַל הָרִאשׁוֹנִים שֶׁאֲסוּרִין בִּקְהַל יִשְׂרָאֵל גִּיֹּורֶת שֶׁפְּחוּתָה מִבַּת שָׁלֹשׁ שָׁנִים וכ&quot;ש יְתֵירָה עַל בַּת שָׁלֹשׁ שָׁנִים מֻותָּרִין הָנָךְ אֲסוּרִין גִּיּוֹרוֹת וּמַמְזֵרִים וּנְתִינֵי וּשְׁתוּקִי לָבֹא זֶה בָּזֶה:</div>
+          <div class="glose-fr">« Et contrairement à Rabbi Chimon » : qui dit plus loin dans ce chapitre (78a) qu&#x27;une convertie de moins de trois ans est casher pour la prêtrise ; et voici ce qu&#x27;il dit : « tous ceux qui sont interdits d&#x27;entrer dans l&#x27;assemblée de la prêtrise » : quel est ce cas qui ajoute cette règle aux premiers, qui sont interdits dans l&#x27;assemblée d&#x27;Israël ? La convertie de moins de trois ans, et à plus forte raison de plus de trois ans, est permise à ceux-ci : sont interdites les converties, les mamzerim, les netinim et les shetouki, de se marier les uns avec les autres.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָכִי קָאָמַר כָּל הָאֲסוּרִים לָבֹא בִּקְהַל כְּהֻונָּה וּמַאי נִינְהוּ גִּיֹּורֶת פְּחוּתָה כּוּ&#x27;</b> וְא&quot;ת אַמַּאי לָא פָּרִיךְ הָא תָּנָא לֵיהּ רֵישָׁא דְּגֵר מֻותָּר בְּמַמְזֶרֶת כִּדְפָרִיךְ לְעֵיל וְי&quot;ל דְּלָאו עִיקַּר קֻושְׁיָא הִיא דְּפָרִיךְ הָא תְּנָא לֵיהּ רֵישָׁא אֶלָּא עִיקָּרֵיהּ אַאִידָךְ קֻושְׁיָא סְמִיךְ ר&#x27; יְהוּדָה אוֹסֵר אַהֵיָיא:</div>
+          <div class="glose-fr">« Voici ce qu&#x27;il dit : tous ceux qui sont interdits d&#x27;entrer dans l&#x27;assemblée de la prêtrise, quels sont-ils : la convertie de moins, etc. » : on peut demander : pourquoi n&#x27;objecte-t-il pas que la première partie l&#x27;a déjà enseigné, que le converti est permis avec une mamzeret, comme il objecte plus haut ? On peut répondre que ce n&#x27;est pas la question principale, quand il objecte que la première partie l&#x27;a déjà enseigné ; mais il s&#x27;appuie principalement sur l&#x27;autre question : « Rabbi Yehouda interdit » : sur quoi ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Première explication, de <b>Rav Yehouda</b> : la michna parle de « l'assemblée de la <b>prêtrise</b> » : ceux qui sont interdits d'épouser un kohen, par exemple la <b>convertie de moins de trois ans et un jour</b> (contre Rabbi Chimon ben Yo'haï, qui la permet à la prêtrise). Ceux-là peuvent se marier avec les familles interdites d'entrer dans l'assemblée.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְנוֹקְמַהּ בְּבַת שָׁלֹשׁ שָׁנִים וְיוֹם אֶחָד, וַאֲפִילּוּ לְרַבִּי שִׁמְעוֹן בֶּן יוֹחַי! אִם כֵּן, מִצִּידָּהּ תַּבְרָהּ.</div>
+            <div class="fr"><p>Et qu&#x27;on l&#x27;établisse pour une fille de trois ans et un jour, même pour Rabbi Chimon ben Yo&#x27;haï ! Dans ce cas, c&#x27;est de son côté qu&#x27;on la brise.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְנוֹקְמָהּ בְּבַת שָׁלֹשׁ</b> וְלֹא בְּפָחוֹת וְנֵימָא דִּפְחוּתָה מֻותֶּרֶת לְכֹהֵן וּבָהּ לָא אַיְירֵי:</div>
+          <div class="glose-fr">« Et qu&#x27;on l&#x27;établisse pour une fille de trois ans » : et non moins, et disons que celle de moins de trois ans est permise au kohen et qu&#x27;on n&#x27;en parle pas.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>א&quot;כ</b> דכר&quot;ש מִיתּוֹקְמָא דִּפְחוּתָה מֻותֶּרֶת לִכְהֻונָּה וְהוּא לֹא הִתִּיר לָבֹא בְּמַמְזֶרֶת אֶלָּא הָאֲסוּרִין לָבֹא בִּכְהֻונָּה הָוֵי מַשְׁמַע הַאי דִּפְחוּתָה אִית לֵיהּ דַּאֲסוּרָה לְמַמְזֵר:</div>
+          <div class="glose-fr">« Dans ce cas » : si c&#x27;est comme Rabbi Chimon, il faut établir que celle de moins de trois ans est permise à la prêtrise, et il ne l&#x27;a permise avec une mamzeret que parmi ceux qui sont interdits à la prêtrise ; cela laisse entendre que celle de moins de trois ans lui est interdite avec un mamzer.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִצִּידָּהּ תַּבְרָהּ</b> תְּשׁוּבָתוֹ מוּכֶנֶת לְצִידּוֹ:</div>
+          <div class="glose-fr">« De son côté on la brise » : sa réponse est prête à son côté.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Première objection : qu'on établisse la michna pour une convertie de <b>plus de trois ans et un jour</b> (que même Rabbi Chimon interdit au kohen). Réponse : la michna se contredirait alors elle-même, car celle de moins de trois ans semblerait interdite aux mamzerim.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא טַעְמָא דְּבַת שָׁלֹשׁ שָׁנִים וְיוֹם אֶחָד, הָא פְּחוּתָה מִבַּת שָׁלֹשׁ שָׁנִים וְיוֹם אֶחָד, דְּמֻותֶּרֶת לָבֹא בִּקְהַל כְּהֻונָּה, אֲסוּרָה לָבוֹא זֶה בָּזֶה? הֲרֵי פְּחוּתָה מִבַּת שָׁלֹשׁ שָׁנִים וְיוֹם אֶחָד לְרַבִּי שִׁמְעוֹן בֶּן יוֹחַי, דְּמֻותֶּרֶת לָבֹא בִּקְהַל כְּהֻונָּה וּמֻותֶּרֶת לָבֹא זֶה בָּזֶה!</div>
+            <div class="fr"><p>Mais la raison est qu&#x27;elle a trois ans et un jour ; donc celle de moins de trois ans et un jour, qui est permise à l&#x27;assemblée de la prêtrise, est interdite entre eux ? Voici que celle de moins de trois ans et un jour, selon Rabbi Chimon ben Yo&#x27;haï, est permise à l&#x27;assemblée de la prêtrise et permise entre eux !</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Si la michna parlait seulement de la fille de plus de trois ans, il faudrait en déduire que celle de moins de trois ans, permise au kohen, est interdite aux mamzerim ; or selon Rabbi Chimon ben Yo'haï, elle est permise aux deux. La michna ne peut donc pas suivre cet avis.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 212" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6a6a6a"/></marker></defs><rect x="0" y="0" width="740" height="212" fill="#fbfaf6"/><text x="370" y="24" text-anchor="middle" font-size="16" font-weight="bold" fill="#2b2b2b">L'explication de Rav Yehouda et ses objections</text><rect x="20" y="40" width="340" height="76" rx="5" fill="#e7e9f2" stroke="#7a86a8"/><text x="190" y="60" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2f3a55">Rav Yehouda</text><text x="190" y="75" text-anchor="middle" font-size="11" fill="#2f3a55">« Tous les interdits de l'assemblée de la prêtrise »:</text><text x="190" y="90" text-anchor="middle" font-size="11" fill="#2f3a55">la convertie de moins de trois ans et un jour</text><text x="190" y="105" text-anchor="middle" font-size="11" fill="#2f3a55">(contre Rabbi Chimon ben Yo'haï qui la permet)</text><rect x="380" y="40" width="340" height="76" rx="5" fill="#f6efd6" stroke="#b59a3c"/><text x="550" y="60" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#6a5716">Objection 1</text><text x="550" y="75" text-anchor="middle" font-size="11" fill="#6a5716">Et qu'on l'établisse pour une fille de plus de</text><text x="550" y="90" text-anchor="middle" font-size="11" fill="#6a5716">trois ans (même Rabbi Chimon l'admet) :</text><text x="550" y="105" text-anchor="middle" font-size="11" fill="#6a5716">la michna se contredirait elle-même</text><rect x="20" y="128" width="340" height="76" rx="5" fill="#f6efd6" stroke="#b59a3c"/><text x="190" y="148" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#6a5716">Objection 2</text><text x="190" y="163" text-anchor="middle" font-size="11" fill="#6a5716">Selon Rabbi Chimon, la fille de moins de trois ans</text><text x="190" y="178" text-anchor="middle" font-size="11" fill="#6a5716">est permise à la prêtrise et permise aux mamzerim :</text><text x="190" y="193" text-anchor="middle" font-size="11" fill="#6a5716">la michna ne peut suivre Rabbi Chimon</text><rect x="380" y="128" width="340" height="76" rx="5" fill="#f6efd6" stroke="#b59a3c"/><text x="550" y="148" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#6a5716">Objection 3</text><text x="550" y="163" text-anchor="middle" font-size="11" fill="#6a5716">Est-ce une règle ? La veuve, la divorcée,</text><text x="550" y="178" text-anchor="middle" font-size="11" fill="#6a5716">la 'halala, la zona sont interdites au kohen</text><text x="550" y="193" text-anchor="middle" font-size="11" fill="#6a5716">et entre elles ; le converti est permis aux deux</text></svg></div><div class="svg-cap">L&#x27;explication de Rav Yehouda (convertie de moins de trois ans) et ses objections.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּכְלָלָא הוּא דְּכָל הָאֲסוּרִים לָבֹא בִּקְהַל כְּהֻונָּה מֻותָּרִין לָבֹא זֶה בָּזֶה? וַהֲרֵי אַלְמָנָה וּגְרוּשָׁה וַחֲלָלָה וְזוֹנָה דַּאֲסוּרִים לָבֹא בִּקְהַל כְּהֻונָּה, וַאֲסוּרִים לָבֹא זֶה בָּזֶה! וְתוּ: הָא מֻותָּר אָסוּר? וַהֲרֵי גֵּר שֶׁמֻּותָּר בְּכֹהֶנֶת וּמֻותָּר בְּמַמְזֶרֶת!</div>
+            <div class="fr"><p>Et est-ce une règle que tous ceux qui sont interdits d&#x27;entrer dans l&#x27;assemblée de la prêtrise sont permis les uns aux autres ? Voici la veuve, la divorcée, la &#x27;halala et la zona, interdites d&#x27;entrer dans l&#x27;assemblée de la prêtrise, et interdites entre elles !</p><p>Et encore : celui qui est permis est-il interdit ? Voici le converti, permis avec une kohenet et permis avec une mamzeret !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲסוּרִין לָבֹא זֶה בָּזֶה</b> בִּתְמִיהַּ הִיא בְּמַמְזֵר וּמַמְזֵר בָּהּ וַהֲרֵי גִּיּוֹרֶת וְכוּ&#x27; דְּכֵיוָן דִּקְהַל גֵּרִים לָאו קָהָל הוּא לָא שְׁנָא פְּחוּתָה ל&quot;ש יְתֵירָה וְעַל כְּרִחְיָךְ תַּנָּא דִידַן מִדְּשָׁרֵי יְתֵירָה עַל בַּת שָׁלֹשׁ לְמַמְזֵר ש&quot;מ אִית לֵיהּ קְהַל גֵּרִים לָא אִיקְּרִי קָהָל:</div>
+          <div class="glose-fr">« Interdits les uns aux autres » : avec étonnement : cela vaut pour le mamzer et la mamzeret ; or voici la convertie, etc., car puisque le kahal des convertis n&#x27;est pas un kahal, il n&#x27;y a pas de différence entre celle de moins et celle de plus ; et tu es forcé de dire que notre tana, puisqu&#x27;il permet celle de plus de trois ans avec un mamzer, pense que le kahal des convertis n&#x27;est pas appelé kahal.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וַהֲרֵי גֵּר כּוּ&#x27;</b> כֵּיוָן דְּאִית לֵיהּ קְהַל גֵּרִים לָא אִיקְּרִי קָהָל:</div>
+          <div class="glose-fr">« Et voici le converti » : puisqu&#x27;il pense que le kahal des convertis n&#x27;est pas appelé kahal.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וַהֲרֵי גֵּר דְּמֻותָּר בְּכֹהֶנֶת וּמֻותָּר בְּמַמְזֶרֶת</b> וא&quot;ת מַאי פָּרֵיךְ וַהֲרֵי הַטַּעַם שֶׁהוּא מֻותָּר לְפִי שֶׁלֹּא הֻוזְהֲרוּ כְּשֵׁרוֹת לְהִינָּשֵׂא לִפְסוּלִים וְלֹא מִשּׁוּם הֶכְשֵׁר גֵּר הוּא דִּלְעוֹלָם אָמְרִינַן דְּכֹהֵן אָסוּר בְּגִיּוֹרֶת וּמֻותָּר אָסוּר ר&quot;ל כֹּל שֶׁמֻּותָּר לָבֹא בַּקָּהָל מִטַּעַם יִחוּס אָסוּר לִיקַּח מַמְזֶרֶת וְנִרְאֶה לְפָרֵשׁ הֲרֵי גֵּר שֶׁנָּשָׂא בַּת יִשְׂרָאֵל שֶׁהַבַּת מֻותֶּרֶת לְכֹהֵן וּמֻותֶּרֶת בְּמַמְזֵר כר&quot;א בֶּן יַעֲקֹב וכה&quot;ג פָּרֵיךְ בְּסָמוּךְ:</div>
+          <div class="glose-fr">« Et voici le converti, permis avec une kohenet et permis avec une mamzeret » : on peut demander : que veut-il objecter ? Si la raison pour laquelle il est permis est que les femmes casher n&#x27;ont pas été averties de ne pas épouser des disqualifiés, et non par la qualité de converti, alors nous disons toujours que le kohen est interdit avec une convertie, et « celui qui est permis est interdit » veut dire : tout ce qui est permis d&#x27;entrer dans l&#x27;assemblée du fait de la lignée est interdit de prendre une mamzeret. Il semble qu&#x27;il faille expliquer : voici un converti qui a épousé une Israélite, dont la fille est permise à un kohen et permise à un mamzer, selon Rabbi Eliezer ben Ya&#x27;akov ; et c&#x27;est ainsi qu&#x27;il objecte plus loin.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deuxième série d'objections à Rav Yehouda : est-ce une règle ? La veuve, la divorcée, la 'halala et la zona sont interdites au kohen et entre elles. Et celui qui est permis au kohen est-il interdit aux mamzerim ? Le converti est permis avec la kohenet <b>et</b> avec la mamzeret. L'explication de Rav Yehouda est donc écartée.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא אָמַר רַב נָתָן בַּר הוֹשַׁעְיָא: הָכִי קָאָמַר: כָּל שֶׁכֹּהֵן אָסוּר לִישָּׂא אֶת בִּתּוֹ, וּמַאי נִיהוּ – גֵּר שֶׁנָּשָׂא גִּיֹּורֶת. וּכְרַבִּי אֱלִיעֶזֶר בֶּן יַעֲקֹב – מֻותָּרִין לָבֹא זֶה בָּזֶה.</div>
+            <div class="fr"><p>Mais Rav Natan bar Hoshaya a dit : Voici ce qu&#x27;il dit : Tout homme dont le kohen ne peut épouser la fille, quel est-il ? Un converti qui a épousé une convertie, selon Rabbi Eliezer ben Ya&#x27;akov : ils sont permis les uns aux autres.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא אָמַר רַב נָתָן</b> לָא תֵּימָא כָּל הָאֲסוּרִין דְּתִקְשֵׁי לָךְ אַלְמָנָה לְכ&quot;ג וְתִיקְשֵׁי לָךְ גֵּר מִדֻּוקְיָא אֶלָּא ה&quot;ק ת&quot;ק כָּל שִׁבְתּוֹ אֲסוּרָה לִכְהֻונָּה וּמַאי נִיהוּ דְּמוֹסִיף הַאי כְּלָלָא עַל הָאֲסוּרִין לְיִשְׂרָאֵל גֵּר שֶׁנָּשָׂא גִּיּוֹרֶת וְכַר&#x27; אֱלִיעֶזֶר בֶּן יַעֲקֹב דְּאָמַר בְּמָתְנֵי&#x27; (לְקַמָּן קִידּוּשִׁין דַּף עז.) גֵּר שֶׁנָּשָׂא גִּיֹּורֶת בִּתּוֹ פְּסוּלָה לַכְּהֻונָּה מֻותָּרִים לָבֹא זֶה בָּזֶה וְהַיְינוּ גֵּר מֻותָּר בְּמַמְזֶרֶת וּמַמְזֵר בּוֹ דְּאִילּוּ בְּגֵר שֶׁנָּשָׂא יִשְׂרְאֵלִית לָא מָצֵית לְאוֹקְמָה דְּמַאן שָׁמְעַת לֵיהּ דְּאָמַר כֹּהֵן אָסוּר לִישָּׂא בִּתּוֹ ר&#x27; יְהוּדָה דְּאָמַר בְּמָתְנֵי&#x27; (שָׁם) בַּת גֵּר זָכָר כְּבַת חָלָל זָכָר וּמִדְּסֵיפָא ר&#x27; יְהוּדָה דְּקָתָנֵי ר&#x27; יְהוּדָה אוֹסֵר רֵישָׁא לָאו ר&#x27; יְהוּדָה לְהָכִי מוֹקְמִי לָהּ כר&quot;א בֶּן יַעֲקֹב וְשַׁמְעֵיהּ ר&#x27; יְהוּדָה לת&quot;ק דְּאִית לֵיהּ קְהַל גֵּרִים לָא אִיקְּרִי קָהָל וּפְלִיג עָלֶיהָ:</div>
+          <div class="glose-fr">« Mais Rav Natan a dit » : ne dis pas « tous ceux qui sont interdits », car on t&#x27;objecterait la veuve du grand prêtre et le converti, qui est « permis » ; mais voici ce que dit le premier tana : tout homme dont la fille est interdite à la prêtrise : quel est celui qui ajoute cette règle à ceux qui sont interdits à Israël ? Un converti qui a épousé une convertie ; et comme Rabbi Eliezer ben Ya&#x27;akov, qui dit dans la michna (77a) : un converti qui a épousé une convertie, sa fille est disqualifiée pour la prêtrise ; ils sont permis les uns aux autres : c&#x27;est-à-dire que le converti est permis avec une mamzeret, et le mamzer avec lui ; car pour un converti qui a épousé une Israélite tu ne peux pas l&#x27;établir : de qui as-tu entendu qu&#x27;il dit que le kohen ne peut épouser sa fille ? De Rabbi Yehouda, qui dit dans la michna (ibid.) : « la fille d&#x27;un converti mâle est comme la fille d&#x27;un &#x27;halal mâle » ; et comme dans la dernière partie, Rabbi Yehouda dit : « Rabbi Yehouda interdit », la première partie n&#x27;est pas de Rabbi Yehouda ; c&#x27;est pourquoi on l&#x27;établit comme Rabbi Eliezer ben Ya&#x27;akov, et Rabbi Yehouda a entendu cela du premier tana, qui pense que le kahal des convertis n&#x27;est pas appelé kahal, et il diverge de lui.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deuxième explication, de <b>Rav Natan bar Hoshaya</b> : « tout homme dont le kohen ne peut épouser la fille » : c'est le <b>converti qui a épousé une convertie</b>, selon <b>Rabbi Eliezer ben Ya'akov</b> (sa fille est interdite au kohen). Ceux-là sont permis avec les mamzerim, puisque le kahal des convertis n'est pas un kahal.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּכְלָלָא הוּא דְּכָל שֶׁכֹּהֵן אָסוּר לִישָּׂא אֶת בִּתּוֹ מֻותָּרִים לָבֹא זֶה בָּזֶה? הֲרֵי חָלָל שֶׁנָּשָׂא בַּת יִשְׂרָאֵל, דְּכֹהֵן אָסוּר לִישָּׂא בִּתּוֹ, וַאֲסוּרִין נָמֵי לָבֹא זֶה בָּזֶה! לָא קַשְׁיָא, כְּרַבִּי דּוֹסְתַּאי בֶּן יְהוּדָה.</div>
+            <div class="fr"><p>Et est-ce une règle que tout homme dont le kohen ne peut épouser la fille est permis aux autres ? Voici le &#x27;halal qui a épousé une fille d&#x27;Israël : le kohen ne peut pas épouser sa fille, et ils sont aussi interdits entre eux !</p><p>Ce n&#x27;est pas difficile : c&#x27;est comme Rabbi Dostaï ben Yehouda.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּכְלָלָא הוּא</b> בִּתְמִיהַּ דְּכָל הָאֲסוּרִין לְכֹהֵן מֻותָּרִין לְמַמְזֵר:</div>
+          <div class="glose-fr">« Et est-ce une règle » : avec étonnement : que tous ceux qui sont interdits au kohen sont permis au mamzer.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כַּר&#x27; דּוֹסְתַּאי בְּר&#x27; יְהוּדָה</b> ס&quot;ל לְתַנָּא דִּידַן דְּאָמַר (שָׁם) בְּנוֹת יִשְׂרָאֵל מִקְוֵה טָהֳרָה לַחֲלָלִים:</div>
+          <div class="glose-fr">« Comme Rabbi Dostaï ben Rabbi Yehouda » : notre tana pense (77a) que « les filles d&#x27;Israël sont un mikvé de purification pour les &#x27;halalim ».</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Première objection : le <b>'halal qui épouse une Israélite</b> : le kohen ne peut pas épouser sa fille (elle est 'halala), et pourtant elle est interdite aux mamzerim. Réponse : la michna suit Rabbi Dostaï ben Yehouda (77a) : la fille d'un 'halal et d'une Israélite est casher pour la prêtrise.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וַהֲרֵי חָלָל שֶׁנָּשָׂא חֲלָלָה וְכֹהֵן אָסוּר לִישָּׂא בִּתּוֹ, וְאָסוּר נָמֵי לָבֹא זֶה בָּזֶה! וְתוּ: הָא מֻותָּר אָסוּר? וַהֲרֵי גֵּר שֶׁנָּשָׂא בַּת יִשְׂרָאֵל, וְכֹהֵן מֻותָּר לִישָּׂא בִּתּוֹ, וּמֻותָּרִין לָבֹא זֶה בָּזֶה!</div>
+            <div class="fr"><p>Mais voici le &#x27;halal qui a épousé une &#x27;halala : le kohen ne peut pas épouser sa fille, et ils sont aussi interdits entre eux ! Et encore : celui qui est permis est-il interdit ?</p><p>Voici le converti qui a épousé une Israélite, et le kohen est permis avec sa fille, et ils sont permis entre eux !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְתוּ הָא הַמֻּותָּר</b> לִישָּׂא כֹּהֵן בִּתּוֹ אָסוּר לָבֹא בְּאִסּוּרִין:</div>
+          <div class="glose-fr">« Et encore, celui qui est permis » : au kohen d&#x27;épouser sa fille est interdit de se marier avec les interdits.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וַהֲרֵי גֵּר שֶׁנָּשָׂא בַּת יִשְׂרָאֵל כו&#x27;</b> וּמֻותָּר לָבֹא בְּמַמְזֵרִים דְּהָא אָמַר קְהַל גֵּרִים לָאו קָהָל הוּא:</div>
+          <div class="glose-fr">« Voici le converti qui a épousé une Israélite, etc. » : et il est permis avec les mamzerim, car il a dit que le kahal des convertis n&#x27;est pas un kahal.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּת&quot;ק סָבַר מַמְזֵר מֵאֲחוֹתוֹ הָוֵי מַמְזֵר</b> וְאִם תֹּאמַר הֵיכִי מִשְׁתְּמַע פְּלֻוגְתַּייְהוּ מִמַּתְנִי&#x27; וּפֵירֵשׁ הַקּוּנְטְרֵס דה&quot;ק כָּל הַנּוֹלָדִים מֵאִיסּוּר עֶרְוָה מַמְזֵרִים הֵם וּמֻותָּרִים לָבֹא זֶה בָּזֶה בְּנֵי חַיָּיבֵי כְּרִיתוֹת בִּבְנֵי חַייָּבֵי מִיתוֹת עכ&quot;ל וְלָא נְהִירָא דְּדֹוחַק הוּא לְכָךְ פר&quot;י דה&quot;ק. כָּל הָאֲסוּרִין לָבֹא בַּקָּהָל שֶׁאֲפִילּוּ קִידּוּשִׁין אֵין תּוֹפְסִין בָּהֶם כְּגוֹן חַיָּיבֵי כְּרִיתוֹת מֻותָּרִין לָבֹא זֶה בָּזֶה כְּלוֹמַר כֹּל שֶׁבָּא מֵאִיסּוּר תְּפִיסַת הַקִּידּוּשִׁין דְּהַייְנוּ בְּנֵי חַיָּיבֵי כָרֵיתוֹת וְחַייָּבֵי מִיתוֹת דְּאֵין קִידּוּשִׁין תּוֹפְסִין בָּהֶם כֻּולָּן מֻותָּרִין לָבֹא זֶה בָּזֶה דְּקָסָבַר יֵשׁ מַמְזֵר מִכָּל דָּבָר דְּלָא תָּפְסִי קִידּוּשִׁין: מַאי קָא מַשְׁמַע לַן תְּנֵינָא כו&#x27; ר&#x27; יְהוֹשֻׁעַ אוֹמֵר כֹּל שֶׁחַיָּיבִין עָלָיו מִיתַת בֵּית דִּין. וּפֵירוּשׁוֹ כְּמוֹ תְּנִינָא חֲדָא זִימְנָא דִּלְעֵיל דְּאַבָּא שָׁאוּל דַּהֲוָה לֵיהּ לְמִיתַּנְייָא הָתָם גַּבֵּי מִילְּתָא דְּר&#x27; יְהוֹשֻׁעַ וְכֵן הָיָה רַ&#x27; יְהוּדָה אוֹמֵר כִּדְבָרָיו וא&quot;ת אַמַּאי אִיצְטְרִיךְ לְמִיפְרַךְ תְּנֵינָא לִיפְרֹךְ דְּר&#x27; יְהוּדָה אֶדֶר&#x27; יְהוּדָה דְּהָכָא קָאָמַר ר&#x27; יְהוּדָה דְּאֵין מַמְזֵר אֶלָּא מֵחַיָּיבֵי מִיתוֹת ב&quot;ד וּבְמַסֶּכֶת יְבָמוֹת (דַּף מט.) קָאָמַר לֹא יְגַלֶּה כְּנַף אָבִיו אַיְירֵי בַּאֲנוּסַת אָבִיו שֶׁהִיא בְּלָאו וּסְמִיךְ לֵיהּ לֹא יָבֹא מַמְזֵר מַשְׁמַע שֶׁמַּמְזֵר הֲוָה אַפֵּי&#x27; מֵחַייָּבֵי לָאוְיָן דְּהָא ר&#x27; יְהוּדָה נָמֵי דְּרֵישׁ סְמוּכִים בְּמִשְׁנֵה תּוֹרָה וְי&quot;ל דְּר&#x27; יְהוּדָה סָבַר הָתָם דְּאֵשֶׁת אָב דִּכְתִיב בֵּין לֹא יִקַּח וּבֵין לֹא יִגְלֶה הָוֵי מְיֻותָּר דְּהַשְׁתָּא אֲנוּסַת אָבִיו לֹא יִקַּח כְּדִכְתִיב לֹא יְגַלֶּה כְּנַף אָבִיו אִשְׁתּוֹ מִיבַּעְיָא וא&quot;כ לְמִידְרְשֵׁיהּ וְלוֹמַר דְּלָא יָבֹא מַמְזֵר דַּוְקָא מֵאֵשֶׁת אָבִיו וְלֵימָא הָכִי מִלֹּא יִקַּח עַד לֹא יְגַלֶּה דְּהַיְינוּ אֵשֶׁת אָבִיו הָוֵי מַמְזֵר טְפֵי לָא הָוֵי מַמְזֵר:</div>
+          <div class="glose-fr">« Car le premier tana pense que le mamzer d&#x27;une soeur est mamzer » : on peut demander : comment leur dispute ressort-elle de la michna ? Le commentaire explique : voici ce qu&#x27;il dit : tous ceux qui sont nés d&#x27;un interdit d&#x27;&#x27;erva sont des mamzerim et sont permis les uns aux autres : les fils de passibles de karet avec les fils de passibles de mort ; fin de citation ; mais ce n&#x27;est pas clair, car c&#x27;est forcé. C&#x27;est pourquoi Rabbénou Yitz&#x27;hak explique : tous ceux qui sont interdits d&#x27;entrer dans l&#x27;assemblée, même les kiddouchin ne prennent pas avec eux, comme les passibles de karet, sont permis les uns aux autres : c&#x27;est-à-dire que tout ce qui vient d&#x27;un interdit où les kiddouchin ne prennent pas, c&#x27;est-à-dire les fils de passibles de karet et de passibles de mort, car les kiddouchin ne prennent pas avec eux, tous sont permis les uns aux autres ; car il pense qu&#x27;il y a un mamzer de toute chose où les kiddouchin ne prennent pas. « Que vient-il nous apprendre ? Nous l&#x27;avons appris, etc. Rabbi Yehoshoua dit : tout ce qui est passible de la peine de mort du tribunal. » Cela signifie : comme nous l&#x27;avons appris une fois plus haut, de la parole d&#x27;Abba Chaoul, qu&#x27;il aurait fallu enseigner là à propos de la parole de Rabbi Yehoshoua ; et ainsi Rabbi Yehouda disait comme ses paroles. Et si l&#x27;on demande : pourquoi faut-il objecter « nous l&#x27;avons appris » ? Qu&#x27;on objecte de Rabbi Yehouda à Rabbi Yehouda ! Car ici Rabbi Yehouda dit qu&#x27;il n&#x27;y a de mamzer que des passibles de mort du tribunal, et dans Yevamot (49a) il dit : « il ne découvrira pas le pan de son père » parle de la violée de son père, qui est un simple interdit, et juste après il est écrit « un mamzer n&#x27;entrera pas » : cela laisse entendre qu&#x27;il y a un mamzer même des passibles d&#x27;un simple interdit, car Rabbi Yehouda expose aussi les passages voisins dans Devarim. On peut répondre que Rabbi Yehouda pense là-bas que la femme du père, qui est écrite à la fois par « il ne prendra pas » et par « il ne découvrira pas », est superflue : car maintenant la violée de son père, « il ne prendra pas », comme il est écrit « il ne découvrira pas le pan de son père » : sa femme, est-ce nécessaire ? S&#x27;il en est ainsi, il faut l&#x27;exposer et dire que « un mamzer n&#x27;entrera pas » vaut seulement pour la femme du père ; et qu&#x27;on dise ainsi : de « il ne prendra pas » jusqu&#x27;à « il ne découvrira pas », c&#x27;est-à-dire la femme du père, c&#x27;est un mamzer ; plus que cela, ce n&#x27;est pas un mamzer.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deuxième et troisième objections à Rav Natan bar Hoshaya : le <b>'halal qui épouse une 'halala</b> (le kohen ne peut pas épouser leur fille, et pourtant elle est interdite aux mamzerim) ; et le <b>converti qui épouse une Israélite</b> (le kohen peut épouser sa fille, et pourtant ils sont permis avec les mamzerim). Les Tossefot discutent la dispute entre le premier tana et Rabbi Yehouda à propos du mamzer de karet.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 216" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6a6a6a"/></marker></defs><rect x="0" y="0" width="740" height="216" fill="#fbfaf6"/><text x="370" y="24" text-anchor="middle" font-size="16" font-weight="bold" fill="#2b2b2b">L'explication de Rav Natan bar Hoshaya et ses objections</text><rect x="20" y="40" width="340" height="76" rx="5" fill="#e7e9f2" stroke="#7a86a8"/><text x="190" y="60" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2f3a55">Rav Natan bar Hoshaya</text><text x="190" y="75" text-anchor="middle" font-size="11" fill="#2f3a55">« Tout ce dont le kohen ne peut épouser la fille »</text><text x="190" y="90" text-anchor="middle" font-size="11" fill="#2f3a55">= un converti qui a épousé une convertie</text><text x="190" y="105" text-anchor="middle" font-size="11" fill="#2f3a55">(Rabbi Eliezer ben Ya'akov : sa fille est passoul)</text><rect x="380" y="40" width="340" height="91" rx="5" fill="#f6efd6" stroke="#b59a3c"/><text x="550" y="60" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#6a5716">Objection 1</text><text x="550" y="75" text-anchor="middle" font-size="11" fill="#6a5716">Le 'halal qui épouse une Israélite : le kohen</text><text x="550" y="90" text-anchor="middle" font-size="11" fill="#6a5716">ne peut pas épouser sa fille, et pourtant</text><text x="550" y="105" text-anchor="middle" font-size="11" fill="#6a5716">elle est interdite avec les mamzerim</text><text x="550" y="120" text-anchor="middle" font-size="11" fill="#6a5716">Réponse : Rabbi Dostaï ben Yehouda</text><rect x="20" y="140" width="340" height="61" rx="5" fill="#f6efd6" stroke="#b59a3c"/><text x="190" y="160" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#6a5716">Objection 2</text><text x="190" y="175" text-anchor="middle" font-size="11" fill="#6a5716">Le 'halal qui épouse une 'halala : même cas</text><text x="190" y="190" text-anchor="middle" font-size="11" fill="#6a5716">(la fille est 'halala et interdite aux mamzerim)</text><rect x="380" y="140" width="340" height="76" rx="5" fill="#f6efd6" stroke="#b59a3c"/><text x="550" y="160" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#6a5716">Objection 3</text><text x="550" y="175" text-anchor="middle" font-size="11" fill="#6a5716">Un converti qui épouse une Israélite :</text><text x="550" y="190" text-anchor="middle" font-size="11" fill="#6a5716">le kohen peut épouser sa fille, et pourtant</text><text x="550" y="205" text-anchor="middle" font-size="11" fill="#6a5716">ils sont permis avec les mamzerim</text></svg></div><div class="svg-cap">L&#x27;explication de Rav Natan bar Hoshaya et ses objections.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא אָמַר רַב נַחְמָן אָמַר רַבָּה בַּר אֲבוּהּ: הָכָא מַמְזֵר מֵאֲחוֹתוֹ וּמַמְזֵר מֵאֵשֶׁת אִישׁ אִיכָּא בֵּינַיְיהוּ.</div>
+            <div class="fr"><p>Mais Rav Na&#x27;hman a dit au nom de Rabba bar Avouha : Ici, il y a entre eux le mamzer d&#x27;une soeur et le mamzer d&#x27;une femme mariée.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַמְזֵר מֵאֵשֶׁת אִישׁ</b> מִיתוֹת:</div>
+          <div class="glose-fr">« Mamzer d&#x27;une femme mariée » : passible de mort.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַמְזֵר מֵאֲחוֹתוֹ</b> כְּרִיתוֹת:</div>
+          <div class="glose-fr">« Mamzer d&#x27;une soeur » : passible de karet.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִיכָּא בֵינַיְיהוּ</b> לָאו בְּגֵר אִיפְּלִיגוּ אֶלָּא דְּקָסָבַר יֵשׁ מַמְזֵר מֵחַיָּיבֵי כָרֵיתוֹת וה&quot;ק כָּל הַנּוֹלָדִים מֵאִיסּוּרֵי עֶרְוָה מַמְזֵרִים הֵם וּמֻותָּרִים לָבֹא זֶה בָּזֶה הָנֵי חַיָּיבֵי כְּרִיתוֹת בִּבְנֵי חַייָּבֵי מִיתוֹת כְּגוֹן א&quot;א דְּכֻולָּן מַמְזֵרִים הֵם וְר&#x27; יְהוּדָה אוֹסֵר לָבֹא חַיָּיבֵי כְּרִיתוֹת בִּבְנֵי חַייָּבֵי מִיתוֹת דְּקָסָבַר אֵין מַמְזֵר אֶלָּא מֵחַיָּיבֵי מִיתוֹת וְטַעֲמָא מְפֹורָשׁ בִּיבָמוֹת (דַּף מט.):</div>
+          <div class="glose-fr">« Il y a entre eux » : ils ne divergent pas sur le converti, mais il pense qu&#x27;il y a un mamzer de passibles de karet ; et voici ce qu&#x27;il dit : tous les nés d&#x27;interdits d&#x27;inceste sont mamzerim et permis les uns aux autres : ces passibles de karet avec les fils de passibles de mort, comme une femme mariée, qui sont tous mamzerim ; et Rabbi Yehouda interdit aux passibles de karet de se marier avec les fils de passibles de mort, car il pense qu&#x27;il n&#x27;y a de mamzer que des passibles de mort ; et la raison est expliquée dans Yevamot (49a).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Troisième explication, de <b>Rav Na'hman</b> au nom de Rabba bar Avouha : la dispute du premier tana et de Rabbi Yehouda porte sur le <b>mamzer d'une soeur</b> (passible de karet) et le <b>mamzer d'une femme mariée</b> (passible de mort). Le premier pense que les deux sont mamzerim ; Rabbi Yehouda, que seule la femme mariée donne un mamzer.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תַּנָּא קַמָּא סָבַר: אֲפִילּוּ מַמְזֵר מֵאֲחוֹתוֹ נָמֵי הָוֵי מַמְזֵר. וְרַבִּי יְהוּדָה סָבַר: מֵאֵשֶׁת אִישׁ הָוֵי מַמְזֵר, מֵאֲחוֹתוֹ – לָא הָוֵי מַמְזֵר.</div>
+            <div class="fr"><p>Le premier tana pense : même le mamzer d&#x27;une soeur est mamzer. Et Rabbi Yehouda pense : le mamzer d&#x27;une femme mariée est mamzer ; celui d&#x27;une soeur n&#x27;est pas mamzer.</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּת&quot;ק סָבַר מַמְזֵר מֵאֲחוֹתוֹ הָוֵי מַמְזֵר</b> וְאִם תֹּאמַר הֵיכִי מִשְׁתְּמַע פְּלֻוגְתַּייְהוּ מִמַּתְנִי&#x27; וּפֵירֵשׁ הַקּוּנְטְרֵס דה&quot;ק כָּל הַנּוֹלָדִים מֵאִיסּוּר עֶרְוָה מַמְזֵרִים הֵם וּמֻותָּרִים לָבֹא זֶה בָּזֶה בְּנֵי חַיָּיבֵי כְּרִיתוֹת בִּבְנֵי חַייָּבֵי מִיתוֹת עכ&quot;ל וְלָא נְהִירָא דְּדֹוחַק הוּא לְכָךְ פר&quot;י דה&quot;ק כָּל הָאֲסוּרִין לָבֹא בַּקָּהָל שֶׁאֲפִילּוּ קִידּוּשִׁין אֵין תּוֹפְסִין בָּהֶם כְּגוֹן חַיָּיבֵי כְּרִיתוֹת מֻותָּרִין לָבֹא זֶה בָּזֶה כְּלוֹמַר כָּל שֶׁבָּא מֵאִיסּוּר תְּפִיסַת הַקִּידּוּשִׁין דְּהַייְנוּ בְּנֵי חַיָּיבֵי כָרֵיתוֹת וְחַייָּבֵי מִיתוֹת דְּאֵין קִידּוּשִׁין תּוֹפְסִין בָּהֶם כֻּולָּן מֻותָּרִין לָבֹא זֶה בָּזֶה דְּקָסָבַר יֵשׁ מַמְזֵר מִכָּל דָּבָר דְּלָא תָּפְסִי קִידּוּשִׁין:</div>
+          <div class="glose-fr">« Car le premier tana pense que le mamzer d&#x27;une soeur est mamzer » : on peut demander : comment leur dispute ressort-elle de la michna ? Le commentaire explique : voici ce qu&#x27;il dit : tous ceux qui sont nés d&#x27;un interdit d&#x27;&#x27;erva sont des mamzerim et sont permis les uns aux autres : les fils de passibles de karet avec les fils de passibles de mort ; fin de citation ; mais ce n&#x27;est pas clair, car c&#x27;est forcé. C&#x27;est pourquoi Rabbénou Yitz&#x27;hak explique : tous ceux qui sont interdits d&#x27;entrer dans l&#x27;assemblée, même les kiddouchin ne prennent pas avec eux, comme les passibles de karet, sont permis les uns aux autres : c&#x27;est-à-dire que tout ce qui vient d&#x27;un interdit où les kiddouchin ne prennent pas, c&#x27;est-à-dire les fils de passibles de karet et de passibles de mort, car les kiddouchin ne prennent pas avec eux, tous sont permis les uns aux autres ; car il pense qu&#x27;il y a un mamzer de toute chose où les kiddouchin ne prennent pas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Précision de la dispute : le <b>premier tana</b> pense que même le mamzer d'une soeur est mamzer, donc permis avec celui d'une femme mariée ; <b>Rabbi Yehouda</b> pense que celui d'une soeur n'est pas mamzer : il est de lignée sûre et ne peut donc pas épouser un mamzer.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאי קָא מַשְׁמַע לַן? תְּנֵינָא: אֵיזֶהוּ מַמְזֵר – כָּל שֶׁהוּא ב״לא יָבֹא״, דִּבְרֵי רַבִּי עֲקִיבָא.</div>
+            <div class="fr"><p>Que vient-il nous apprendre ? Nous l&#x27;avons appris : Qui est mamzer ?</p><p>Tout celui qui est sous « il n&#x27;entrera pas », paroles de Rabbi Akiva.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>תְּנֵינָא</b> פְּלֻוגְתָּא אַחֲרִיתִי בְּמָתְנֵי&#x27; בִּתְנַאי אַחֲרֵינִי וְלָמָּה לֵיהּ לְרַבִּי לְמִיתְנֵי לְתָרָתִי בָּבֵי נִיתְנֵי הָתָם לְגַבֵּי ר&#x27; יְהוֹשֻׁעַ וְכֵן הָיָה רַ&#x27; יְהוּדָה אוֹמֵר כִּדְבָרָיו:</div>
+          <div class="glose-fr">« Nous l&#x27;avons appris » : une autre dispute dans la michna, entre d&#x27;autres tanaïm ; et pourquoi Rabbi devait-il enseigner deux fois ? Qu&#x27;il l&#x27;enseigne là-bas à propos de Rabbi Yehoshoua ; et ainsi Rabbi Yehouda disait comme ses paroles.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁהוּא בְּלֹא יָבֹא</b> אע&quot;פ שֶׁאֵינוֹ אֶלָּא בְּלָאו הַוָּלָד מַמְזֵר:</div>
+          <div class="glose-fr">« Qui est sous « il n&#x27;entrera pas » » : même s&#x27;il n&#x27;est que sous un simple interdit, l&#x27;enfant est mamzer.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection à Rav Na'hman : cette dispute est déjà enseignée dans la michna de Yevamot (49a) : « Qui est mamzer ? Tout celui qui est sous un « lo yavo » (un simple interdit), paroles de Rabbi Akiva ».</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">שִׁמְעוֹן הַתֵּימְנִי אוֹמֵר: כֹּל שֶׁחַייָּבִין עָלָיו כָּרֵת בִּידֵי שָׁמַיִם, וַהֲלָכָה כִּדְבָרָיו. רַבִּי יְהוֹשֻׁעַ אוֹמֵר: כֹּל שֶׁחַיָּיבִין עָלָיו מִיתַת בֵּית דִּין.</div>
+            <div class="fr"><p>Chimon HaTemani dit : Tout ce qui est passible de karet de la main du Ciel, et la hala&#x27;ha est comme ses paroles. Rabbi Yehoshoua dit : Tout ce qui est passible de la peine de mort du tribunal.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כָּל שֶׁחַיָּיבִין</b> עַל אוֹתָהּ בִּיאָה כָּרֵת בִּידֵי שָׁמַיִם:</div>
+          <div class="glose-fr">« Tout ce qui est passible » : pour cette relation, de karet de la main du Ciel.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כֹּל שֶׁחַייָּבִין עָלָיו מִיתַת ב&quot;ד</b> אֲבָל חַייָּבֵי כְּרֵיתוֹת לֹא וְטַעְמָא דְּכוּלְּהוּ מְפָרֵשׁ בִּיבָמוֹת (שָׁם):</div>
+          <div class="glose-fr">« Tout ce qui est passible de la peine de mort du tribunal » : mais les passibles de karet, non ; et la raison de tous est expliquée dans Yevamot (ibid.).</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">מַאי קָא מַשְׁמַע לַן תְּנֵינָא כו&#x27; ר&#x27; יְהוֹשֻׁעַ אוֹמֵר כֹּל שֶׁחַיָּיבִין עָלָיו מִיתַת בֵּית דִּין. וּפֵירוּשׁוֹ כְּמוֹ תְּנִינָא חֲדָא זִימְנָא דִּלְעֵיל דְּאַבָּא שָׁאוּל דַּהֲוָה לֵיהּ לְמִיתַּנְייָא הָתָם גַּבֵּי מִילְּתָא דְּר&#x27; יְהוֹשֻׁעַ וְכֵן הָיָה רַ&#x27; יְהוּדָה אוֹמֵר כִּדְבָרָיו וא&quot;ת אַמַּאי אִיצְטְרִיךְ לְמִיפְרַךְ תְּנֵינָא לִיפְרֹךְ דְּר&#x27; יְהוּדָה אֶדֶר&#x27; יְהוּדָה דְּהָכָא קָאָמַר ר&#x27; יְהוּדָה דְּאֵין מַמְזֵר אֶלָּא מֵחַיָּיבֵי מִיתוֹת ב&quot;ד וּבְמַסֶּכֶת יְבָמוֹת (דַּף מט.) קָאָמַר לֹא יְגַלֶּה כְּנַף אָבִיו אַיְירֵי בַּאֲנוּסַת אָבִיו שֶׁהִיא בְּלָאו וּסְמִיךְ לֵיהּ לֹא יָבֹא מַמְזֵר מַשְׁמַע שֶׁמַּמְזֵר הֲוָה אַפֵּי&#x27; מֵחַייָּבֵי לָאוְיָן דְּהָא ר&#x27; יְהוּדָה נָמֵי דְּרֵישׁ סְמוּכִים בְּמִשְׁנֵה תּוֹרָה וְי&quot;ל דְּר&#x27; יְהוּדָה סָבַר הָתָם דְּאֵשֶׁת אָב דִּכְתִיב בֵּין לֹא יִקַּח וּבֵין לֹא יִגְלֶה הָוֵי מְיֻותָּר דְּהַשְׁתָּא אֲנוּסַת אָבִיו לֹא יִקַּח כְּדִכְתִיב לֹא יְגַלֶּה כְּנַף אָבִיו אִשְׁתּוֹ מִיבַּעְיָא וא&quot;כ לְמִידְרְשֵׁיהּ וְלוֹמַר דְּלָא יָבֹא מַמְזֵר דַּוְקָא מֵאֵשֶׁת אָבִיו וְלֵימָא הָכִי מִלֹּא יִקַּח עַד לֹא יְגַלֶּה דְּהַיְינוּ אֵשֶׁת אָבִיו הָוֵי מַמְזֵר טְפֵי לָא הָוֵי מַמְזֵר:</div>
+          <div class="glose-fr">« Que vient-il nous apprendre ? Nous l&#x27;avons appris, etc. Rabbi Yehoshoua dit : tout ce qui est passible de la peine de mort du tribunal » : cela signifie : comme nous l&#x27;avons appris une fois plus haut, de la parole d&#x27;Abba Chaoul, qu&#x27;il aurait fallu enseigner là à propos de la parole de Rabbi Yehoshoua ; et ainsi Rabbi Yehouda disait comme ses paroles. Et si l&#x27;on demande : pourquoi faut-il objecter « nous l&#x27;avons appris » ? Qu&#x27;on objecte de Rabbi Yehouda à Rabbi Yehouda ! Car ici Rabbi Yehouda dit qu&#x27;il n&#x27;y a de mamzer que des passibles de mort du tribunal, et dans Yevamot (49a) il dit : « il ne découvrira pas le pan de son père » parle de la violée de son père, qui est un simple interdit, et juste après il est écrit « un mamzer n&#x27;entrera pas » : cela laisse entendre qu&#x27;il y a un mamzer même des passibles d&#x27;un simple interdit, car Rabbi Yehouda expose aussi les passages voisins dans Devarim. On peut répondre que Rabbi Yehouda pense là-bas que la femme du père, qui est écrite à la fois par « il ne prendra pas » et par « il ne découvrira pas », est superflue : car maintenant la violée de son père, « il ne prendra pas », comme il est écrit « il ne découvrira pas le pan de son père » : sa femme, est-ce nécessaire ? S&#x27;il en est ainsi, il faut l&#x27;exposer et dire que « un mamzer n&#x27;entrera pas » vaut seulement pour la femme du père ; et qu&#x27;on dise ainsi : de « il ne prendra pas » jusqu&#x27;à « il ne découvrira pas », c&#x27;est-à-dire la femme du père, c&#x27;est un mamzer ; plus que cela, ce n&#x27;est pas un mamzer.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Suite de la michna de Yevamot : <b>Chimon HaTemani</b> : tout ce qui est passible de karet (la hala'ha est comme lui) ; <b>Rabbi Yehoshoua</b> : tout ce qui est passible de la peine de mort du tribunal. La question de savoir si le mamzer d'une soeur (karet) est mamzer est donc déjà enseignée ; l'explication de Rav Na'hman est rejetée.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 216" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6a6a6a"/></marker></defs><rect x="0" y="0" width="740" height="216" fill="#fbfaf6"/><text x="370" y="24" text-anchor="middle" font-size="16" font-weight="bold" fill="#2b2b2b">Mamzer d'une soeur ou d'une femme mariée</text><rect x="20" y="40" width="340" height="76" rx="5" fill="#e7e9f2" stroke="#7a86a8"/><text x="190" y="60" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2f3a55">Rav Na'hman (Rabba bar Avouha)</text><text x="190" y="75" text-anchor="middle" font-size="11" fill="#2f3a55">Dispute du premier tana et de Rabbi Yehouda</text><text x="190" y="90" text-anchor="middle" font-size="11" fill="#2f3a55">sur le mamzer d'une soeur (karet) et le</text><text x="190" y="105" text-anchor="middle" font-size="11" fill="#2f3a55">mamzer d'une femme mariée (mort du tribunal)</text><rect x="380" y="40" width="340" height="91" rx="5" fill="#e0eee0" stroke="#5f9a63"/><text x="550" y="60" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2d5a31">Premier tana</text><text x="550" y="75" text-anchor="middle" font-size="11" fill="#2d5a31">Même le mamzer d'une soeur est mamzer :</text><text x="550" y="90" text-anchor="middle" font-size="11" fill="#2d5a31">ils sont permis entre eux</text><text x="550" y="105" text-anchor="middle" font-size="11" fill="#2d5a31">Rabbi Yehouda : celui d'une soeur</text><text x="550" y="120" text-anchor="middle" font-size="11" fill="#2d5a31">n'est pas mamzer</text><rect x="20" y="140" width="700" height="46" rx="5" fill="#f2e2dd" stroke="#a75d4b"/><text x="370" y="160" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#7c3b2c">Mais la michna de Yevamot (49a) : Rabbi Akiva : tout ce qui est interdit par « lo yavo » ; Chimon HaTemani : tout ce qui est passible de karet</text><text x="370" y="175" text-anchor="middle" font-size="11" fill="#7c3b2c">(hala'ha) ; Rabbi Yehoshoua : tout ce qui est passible de mort du tribunal. La dispute est donc déjà enseignée : explication rejetée</text></svg></div><div class="svg-cap">Le mamzer d&#x27;une soeur ou d&#x27;une femme mariée : Rabbi Akiva, Chimon HaTemani, Rabbi Yehoshoua.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא אָמַר רָבָא: גֵּר עַמּוֹנִי וּמוֹאָבִי אִיכָּא בֵּינַייְהוּ, וְהָכִי קָאָמַר: כָּל הָאֲסוּרִים לָבֹא בַקָּהָל, וּמַאי נִיהוּ: גֵּר עַמּוֹנִי וּמוֹאָבִי – מֻותָּרִין לָבֹא זֶה בָּזֶה.</div>
+            <div class="fr"><p>Mais Rava a dit : Il y a entre eux le converti ammonite et moabite, et voici ce qu&#x27;il dit : Tous ceux qui sont interdits d&#x27;entrer dans l&#x27;assemblée, et qui sont-ils ? Un converti ammonite et moabite : ils sont permis les uns aux autres.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>זֶה בָּזֶה</b> הֵם בְּמַמְזֵרִים וּמַמְזֵרִים בָּהֶם:</div>
+          <div class="glose-fr">« Les uns aux autres » : eux avec les mamzerim et les mamzerim avec eux.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Quatrième explication, de <b>Rava</b> : « tous ceux qui sont interdits d'entrer dans l'assemblée » : l'<b>Ammonite et le Moabite convertis</b> (mâles), qui sont permis avec les mamzerim.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִי הָכִי מַאי רַבִּי יְהוּדָה אוֹסֵר? הָכִי קָאָמַר: אַף עַל פִּי שֶׁרַבִּי יְהוּדָה אוֹסֵר גֵּר בְּמַמְזֶרֶת, הָנֵי מִילֵּי גֵּר דְּרָאוּי לָבֹא בַּקָּהָל, אֲבָל גֵּר עַמּוֹנִי וּמוֹאָבִי דְּאֵין רְאוּיִין לָבֹא בַּקָּהָל – לֹא.</div>
+            <div class="fr"><p>S&#x27;il en est ainsi, en quoi Rabbi Yehouda interdit-il ? Voici ce qu&#x27;il dit : Bien que Rabbi Yehouda interdise le converti avec une mamzeret, cela vaut pour un converti apte à entrer dans l&#x27;assemblée ; mais pour un converti ammonite et moabite, qui ne sont pas aptes à entrer dans l&#x27;assemblée, non.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִי הָכִי אַמַּאי ר&#x27; יְהוּדָה אוֹסֵר</b> הָנֵי וַדַּאי לָא אִיקְּרִי קָהָל דְּהָא לָא חֲזוּ לָבֹא בַּקָּהָל:</div>
+          <div class="glose-fr">« S&#x27;il en est ainsi, pourquoi Rabbi Yehouda interdit-il ? » : ceux-ci ne sont certainement pas appelés kahal, car ils ne sont pas aptes à entrer dans l&#x27;assemblée.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ה&quot;ק</b> כְּלוֹמַר וְכֻולָּהּ חַד תַּנָּא הוּא:</div>
+          <div class="glose-fr">« Voici ce qu&#x27;il dit » : c&#x27;est-à-dire que le tout est d&#x27;un seul tana.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Si la michna parle de l'Ammonite et du Moabite, pourquoi Rabbi Yehouda interdit-il ? Réponse : il interdit au converti ordinaire, apte à entrer dans l'assemblée ; mais pas à l'Ammonite ni au Moabite convertis, qui n'y sont pas aptes. Tout est donc d'un seul tana.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 148" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6a6a6a"/></marker></defs><rect x="0" y="0" width="740" height="148" fill="#fbfaf6"/><text x="370" y="24" text-anchor="middle" font-size="16" font-weight="bold" fill="#2b2b2b">L'explication de Rava</text><rect x="20" y="40" width="340" height="76" rx="5" fill="#e0eee0" stroke="#5f9a63"/><text x="190" y="60" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2d5a31">Rava</text><text x="190" y="75" text-anchor="middle" font-size="11" fill="#2d5a31">« Tous ceux qui sont interdits d'entrer</text><text x="190" y="90" text-anchor="middle" font-size="11" fill="#2d5a31">dans l'assemblée » : un Ammonite et un</text><text x="190" y="105" text-anchor="middle" font-size="11" fill="#2d5a31">Moabite convertis (mâles)</text><rect x="380" y="40" width="340" height="91" rx="5" fill="#f6efd6" stroke="#b59a3c"/><text x="550" y="60" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#6a5716">Objection</text><text x="550" y="75" text-anchor="middle" font-size="11" fill="#6a5716">Alors pourquoi Rabbi Yehouda interdit-il ?</text><text x="550" y="90" text-anchor="middle" font-size="11" fill="#6a5716">Réponse : Rabbi Yehouda interdit au converti</text><text x="550" y="105" text-anchor="middle" font-size="11" fill="#6a5716">ordinaire, apte à entrer ; non à l'Ammonite</text><text x="550" y="120" text-anchor="middle" font-size="11" fill="#6a5716">ni au Moabite : un seul tana</text><line x1="360" y1="80" x2="380" y2="80" stroke="#6a6a6a" stroke-width="1.6" marker-end="url(#ar)"/></svg></div><div class="svg-cap">L&#x27;explication de Rava : l&#x27;Ammonite et le Moabite convertis.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">תָּנוּ רַבָּנַן: בֶּן תֵּשַׁע שָׁנִים וְיוֹם אֶחָד גֵּר עַמּוֹנִי וּמוֹאָבִי, מִצְרִי וַאֲדוֹמִי, כּוּתִי וְנָתִין, חָלָל וּמַמְזֵר שֶׁבָּאוּ עַל הַכֹּהֶנֶת וְעַל הַלְּוִיָּה וְעַל בַּת יִשְׂרָאֵל – [פְּסָלוּהָ]. רַבִּי יוֹסֵי אוֹמֵר: כָּל שֶׁזַּרְעוֹ פָּסוּל – פּוֹסֵל, וְכֹל שֶׁאֵין זַרְעוֹ פָּסוּל – אֵינוֹ פּוֹסֵל. רַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל אוֹמֵר:</div>
+            <div class="fr"><p>Nos maîtres ont enseigné : Un garçon de neuf ans et un jour, converti ammonite ou moabite, égyptien ou édomite, Koutim ou natin, &#x27;halal ou mamzer, qui a eu une relation avec une kohenet, une Lévia ou une fille d&#x27;Israël [l&#x27;a disqualifiée]. Rabbi Yossi dit : Tout celui dont la descendance est disqualifiée disqualifie, et tout celui dont la descendance n&#x27;est pas disqualifiée ne disqualifie pas.</p><p>Rabban Chimon ben Gamliel dit :</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בֶּן ט&#x27; שָׁנִים וְיוֹם אֶחָד</b> שֶׁהוּא גֵּר עַמּוֹנִי וְכוּ&#x27; דִּבְכִי הַאי זִימְנָא חֲזִי לְבִיאָה:</div>
+          <div class="glose-fr">« Un garçon de neuf ans et un jour » : qui est converti ammonite, etc., car à cet âge il est apte à la relation.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>פְּסָלוּהָ</b> לְכֹהֶנֶת מִן הַתְּרוּמָה וּמִן הַכְּהֻונָּה וּלְוִיָּה וְיִשְׂרְאֵלִית מִלִּינָּשֵׂא עוֹד לְכֹהֵן:</div>
+          <div class="glose-fr">« L&#x27;a disqualifiée » : la kohenet de la teroumah et de la prêtrise ; la Lévia et l&#x27;Israélite de se marier encore à un kohen.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כָּל שֶׁזַּרְעוֹ פָּסוּל</b> מִן הַכְּהֻונָּה פּוֹסֵל אֶת אִשְׁתּוֹ מִן הַכְּהֻונָּה וּלְקַמָּן מְפָרֵשׁ מַאי בֵינַיְיהוּ:</div>
+          <div class="glose-fr">« Tout celui dont la descendance est disqualifiée » : de la prêtrise, disqualifie sa femme de la prêtrise ; et plus loin il explique la différence entre eux.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Baraïta : un garçon de <b>neuf ans et un jour</b> (dont la relation compte), converti ammonite, moabite, égyptien, édomite, Koutim, natin, 'halal ou mamzer, qui a eu une relation avec une kohenet, une Lévia ou une Israélite, l'a disqualifiée. <b>Rabbi Yossi</b> : celui dont la descendance est disqualifiée disqualifie ; sinon non. Rabban Chimon ben Gamliel continue à la page suivante (75a).</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 176" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6a6a6a"/></marker></defs><rect x="0" y="0" width="740" height="176" fill="#fbfaf6"/><text x="370" y="24" text-anchor="middle" font-size="16" font-weight="bold" fill="#2b2b2b">Baraïta : le garçon de neuf ans et un jour</text><rect x="20" y="40" width="700" height="46" rx="5" fill="#ffffff" stroke="#c9c5b6"/><text x="370" y="60" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#3a3a3a">Baraïta : un garçon de neuf ans et un jour (sa relation compte) : Ammonite ou Moabite converti, Égyptien ou Édomite converti,</text><text x="370" y="75" text-anchor="middle" font-size="11" fill="#3a3a3a">Koutim, natin, 'halal ou mamzer, qui a eu une relation avec une kohenet, une Lévia ou une Israélite : il l'a disqualifiée</text><rect x="20" y="112" width="340" height="61" rx="5" fill="#e0eee0" stroke="#5f9a63"/><text x="190" y="132" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2d5a31">Rabbi Yossi</text><text x="190" y="147" text-anchor="middle" font-size="11" fill="#2d5a31">Tout ce dont la descendance est disqualifiée</text><text x="190" y="162" text-anchor="middle" font-size="11" fill="#2d5a31">disqualifie ; sinon, non</text><rect x="380" y="112" width="340" height="61" rx="5" fill="#f6efd6" stroke="#b59a3c"/><text x="550" y="132" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#6a5716">Rabban Chimon ben Gamliel</text><text x="550" y="147" text-anchor="middle" font-size="11" fill="#6a5716">(le texte se poursuit à la page</text><text x="550" y="162" text-anchor="middle" font-size="11" fill="#6a5716">suivante)</text></svg></div><div class="svg-cap">Baraïta : la relation d&#x27;un garçon de neuf ans et un jour avec une femme casher.</div></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Kiddushin_74a.html">&lsaquo; Kiddushin 74a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Kiddushin_75a.html">Kiddushin 75a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schémas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage sélectionné :\n« '+s+' »\n'):'\nPassage concerné :\n\n')+'\nCorrection proposée :\n\n\n— envoyé depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<p id="credit-texte" style="text-align:center;font-size:.76rem;color:#78716c;margin:6px auto 18px;max-width:640px;line-height:1.5">
+Texte hébreu et araméen vocalisé : édition numérique William Davidson du Talmud Koren Noé, via
+<a href="https://www.sefaria.org" style="color:#78716c">Sefaria</a> (licence CC BY-NC). Traduction française, notes et schémas : Chiourim BA (licence CC BY 4.0).</p>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kiddushin 7b — L&#x27;animal repoussé, les kiddouchin fractionnés et la vérification de la valeur des objets</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Kiddushin 7b — L&#x27;animal repoussé, les kiddouchin fractionnés et la vérification de la valeur des objets</h1>
+    <div class="ref">Kiddushin 7b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Kiddushin_7a.html">&lsaquo; Kiddushin 7a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Kiddushin_8a.html">Kiddushin 8a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> La guemara tire de l&#x27;enseignement de Rabbi Yo&#x27;hanan deux conséquences : un animal vivant peut être repoussé définitivement (dé&#x27;houi), et le rejet existe dès l&#x27;origine ainsi que pour une sainteté de valeur. Elle rapporte ensuite une série de questions de Rava, restées sans réponse (teiku), sur des formules fractionnées : « la moitié de toi pour une demi-peruta et la moitié de toi pour une demi-peruta », « la moitié de toi pour une peruta et la moitié de toi pour une peruta », « aujourd&#x27;hui et demain », « tes deux moitiés pour une peruta », puis « tes deux filles pour mes deux fils ».</p><p>Rav Pappa interroge sur « ta fille et ta vache », Rav Ashi sur « ta fille et ton terrain ». Un dernier volet porte sur un homme qui a consacré une femme avec des vêtements de soie : Rabba dit qu&#x27;ils n&#x27;ont pas besoin d&#x27;évaluation, Rav Yosef dit qu&#x27;ils en ont besoin ; une seconde version prolonge le désaccord au cas où il aurait dit « par n&#x27;importe quelle valeur », sur la base du principe « un objet qui vaut de l&#x27;argent est comme de l&#x27;argent ».</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 440" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="440" fill="#fbfaf6"/>
+<text x="370" y="24" text-anchor="middle" font-size="16" font-weight="bold" fill="#2b2b2b">Kiddouchin 7b : les questions de Rava et le désaccord sur la soie</text>
+<rect x="20" y="40" width="700" height="26" rx="5" fill="#dcd7c8" stroke="#b6b2a4"/>
+<text x="370" y="58" text-anchor="middle" font-size="13" font-weight="bold" fill="#3a3a3a">A. Enseignements du cas de la bête de deux associés</text>
+<rect x="20" y="74" width="340" height="52" rx="5" fill="#e7e9f2" stroke="#7a86a8"/>
+<text x="190" y="96" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f3a55">Les animaux vivants peuvent être repoussés</text>
+<text x="190" y="114" text-anchor="middle" font-size="11.5" fill="#2f3a55">pas seulement ceux qui sont abattus</text>
+<rect x="380" y="74" width="340" height="52" rx="5" fill="#e7e9f2" stroke="#7a86a8"/>
+<text x="550" y="96" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f3a55">Rejet dès l'origine ; rejet sur une valeur</text>
+<text x="550" y="114" text-anchor="middle" font-size="11.5" fill="#2f3a55">même une sainteté de valeur est repoussée</text>
+<rect x="20" y="136" width="700" height="26" rx="5" fill="#dcd7c8" stroke="#b6b2a4"/>
+<text x="370" y="154" text-anchor="middle" font-size="13" font-weight="bold" fill="#3a3a3a">B. Cas fractionnés (questions restées en teiku)</text>
+<rect x="20" y="170" width="226" height="86" rx="5" fill="#fff" stroke="#c9c5b6"/>
+<text x="133" y="190" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a3a3a">Rava, chaîne de questions</text>
+<text x="133" y="208" text-anchor="middle" font-size="11" fill="#3a3a3a">demi-prouta + demi-prouta</text>
+<text x="133" y="223" text-anchor="middle" font-size="11" fill="#3a3a3a">prouta + prouta ; aujourd'hui, demain</text>
+<text x="133" y="238" text-anchor="middle" font-size="11" fill="#3a3a3a">tes deux moitiés pour une prouta</text>
+<rect x="257" y="170" width="226" height="86" rx="5" fill="#fff" stroke="#c9c5b6"/>
+<text x="370" y="190" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a3a3a">Rava : deux filles, deux fils</text>
+<text x="370" y="208" text-anchor="middle" font-size="11" fill="#3a3a3a">suit-on celui qui donne et reçoit</text>
+<text x="370" y="223" text-anchor="middle" font-size="11" fill="#3a3a3a">(une prouta : valable) ou les personnes</text>
+<text x="370" y="238" text-anchor="middle" font-size="11" fill="#3a3a3a">(pas de prouta pour chacune) ?</text>
+<rect x="494" y="170" width="226" height="86" rx="5" fill="#fff" stroke="#c9c5b6"/>
+<text x="607" y="190" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a3a3a">Rav Pappa et Rav Ashi</text>
+<text x="607" y="208" text-anchor="middle" font-size="11" fill="#3a3a3a">ta fille et ta vache : meshi'ha</text>
+<text x="607" y="223" text-anchor="middle" font-size="11" fill="#3a3a3a">ta fille et ton terrain : 'hazaka</text>
+<text x="607" y="238" text-anchor="middle" font-size="11" fill="#3a3a3a">ou une demi-prouta chacun ?</text>
+<rect x="20" y="266" width="700" height="26" rx="5" fill="#dcd7c8" stroke="#b6b2a4"/>
+<text x="370" y="284" text-anchor="middle" font-size="13" font-weight="bold" fill="#3a3a3a">C. Kiddouchin par des vêtements de soie : faut-il une évaluation ?</text>
+<rect x="20" y="300" width="340" height="62" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="190" y="320" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e5c2c">Rabba : pas besoin d'évaluation</text>
+<text x="190" y="338" text-anchor="middle" font-size="11.5" fill="#2e5c2c">ils valent certainement une prouta</text>
+<text x="190" y="354" text-anchor="middle" font-size="11.5" fill="#2e5c2c">et cinquante s'ils les valent vraiment</text>
+<rect x="380" y="300" width="340" height="62" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="550" y="320" text-anchor="middle" font-size="12" font-weight="bold" fill="#7c3b2c">Rav Yosef : évaluation nécessaire</text>
+<text x="550" y="338" text-anchor="middle" font-size="11.5" fill="#7c3b2c">la femme ne s'y connaît pas</text>
+<text x="550" y="354" text-anchor="middle" font-size="11.5" fill="#7c3b2c">et ne s'appuie pas sur l'avis de l'homme</text>
+<rect x="20" y="372" width="700" height="56" rx="5" fill="#f4ead3" stroke="#b8975a"/>
+<text x="370" y="392" text-anchor="middle" font-size="12" font-weight="bold" fill="#6b5420">Seconde version : désaccord même pour "par n'importe quelle valeur"</text>
+<text x="370" y="410" text-anchor="middle" font-size="11.5" fill="#6b5420">Rav Yosef : un objet qui vaut de l'argent est comme de l'argent, qui est fixé (qaïtz)</text>
+</svg></div>
+          <figcaption>Vue d&#x27;ensemble de 7b : conséquences du cas de la bête de deux associés, questions de Rava restées en teiku et désaccord de Rabba et Rav Yosef sur l&#x27;évaluation des vêtements de soie.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">שְׁמַע מִינַּהּ בַּעֲלֵי חַיִּים נִדְחִים,</div>
+            <div class="fr"><p>Apprends-en que les êtres vivants sont repoussés,</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בַּעֲלֵי חַיִּים נִדְחִים</b> אִם נִדְחוּ יִדָּחוּ לְעוֹלָם וְאִיכָּא לָמֶ&quot;ד (בְּיוֹמָא דַּף סד.) אֵין דִּיחוּי אֶלָּא בִּשְׁחוּטִין אֲבָל בַּעֲלֵי חַיִּים שֶׁנִּדְחוּ חוֹזְרִים וְנִרְאִין וּלְדִידֵיהּ קְרֵיבָה הַךְ בְּהֵמָה כְּשֶׁחָזַר וְלָקַח חֶצְיָהּ:</div>
+          <div class="glose-fr">« Les êtres vivants sont repoussés » : s&#x27;ils ont été repoussés, ils sont repoussés pour toujours. Il y a un avis (Yoma 64a) selon lequel il n&#x27;y a de repoussement (di&#x27;houï) que pour les animaux abattus, tandis que les êtres vivants repoussés reviennent et redeviennent aptes, et selon lui cette bête serait offerte lorsqu&#x27;il est revenu acheter sa moitié.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שְׁמַע מִינַּהּ בַּעֲלֵי חַיִּים</b> פֵּי&#x27; בַּקּוּנְטְרֵס אִם נִדְחוּ יִדָּחוּ לְעוֹלָם דְּאִיכָּא לָמֶ&quot;ד אֵין דִּיחוּי אֶלָּא בִּשְׁחוּטִין אֲבָל בַּעֲלֵי חַיִּים שֶׁנִּדְחוּ חוֹזְרִים וְנִרְאִים וּלְדִידֵיהּ קְרֵבָה הַךְ בְּהֵמָה כְּשֶׁחָזַר וְלָקַח חֶצְיָהּ וש&quot;מ דִּיחוּי מֵעִיקָּרָא הָוֵי דִּיחוּי פִּי&#x27; כְּגוֹן זוֹ שֶׁמִּתְּחִילַּת הִקְדִּישָׁהּ לֹא נִרְאֵית לִיקָּרֵב דְּאִיכָּא מַאן דִּפְלִיג דְּאֵין דִּיחוּי אֶלָּא בְּנִרְאֶה וְנִדְחָה וש&quot;מ יֵשׁ דִּיחוּי בְּדָמִים פִּי&#x27; יֵשׁ תּוֹרַת דִּיחוּי בְּדָבָר שֶׁאֵין קָדוֹשׁ אֶלָּא לְדָמָיו כְּגוֹן זוֹ שֶׁמִּתְּחִילָּה לֹא הִקְדִּישָׁהּ אֶלָּא לְדָמֶיהָ שֶׁתִּמָּכֵר וִיקַדְּשׁוּ דְּמֵי חֶצְיָהּ שֶׁהֲרֵי לִיקָּרֵב לַחֲצָאִין לֹא הָיְתָה רְאוּיָה וְאַפֵּ&quot;ה חָל עֲלָהּ תּוֹרַת דִּיחוּי לִדְחוֹת מֵעַל הַמִּזְבֵּחַ לְעוֹלָם וְלָא אָמְרִינַן אֵין דִּיחוּי אֶלָּא בְּדָבָר שֶׁהֻוקְדַּשׁ לְגוּפוֹ לִיקָּרֵב וא&quot;ת לָמָּה לִי לְמֵימַר הָנֵי תַּרְתֵּי ש&quot;מ יֵשׁ דִּיחוּי בְּדָמִים וְדִיחוּי מֵעִיקָּרָא וַהֲלֹא אִי אֶפְשָׁר לְדִיחוּי מֵעִיקָּרָא שֶׁלֹּא יְהֵא דִּיחוּי בְּדָמִים וְיֵשׁ לוֹמַר דְּאַשְׁכְּחַן דִּיחוּי מֵעִיקָּרָא אע&quot;ג שֶׁקָּדוֹשׁ קְדֻושַּׁת הַגּוּף כִּדְאָמַר ר&#x27; יוֹחָנָן פ&#x27; נִגְמַר הַדִּין (סַנְהֶדְרִין דַּף מז.) כְּגוֹן אָכַל חֵלֶב וְהִפְרִישׁ קָרְבָּן וְעָבַד עֲבוֹדַת כּוֹכָבִים וְחָזַר בּוֹ וְהוֹאִיל וְנִדְחָה כְּשֶׁעָבַד עֲבוֹדַת כּוֹכָבִים מִשּׁוּם דְּזֶבַח רְשָׁעִים תּוֹעֵבָה יִדָּחֶה וְלָאו דַּוְקָא נְקַט הָתָם וְהִפְרִישׁ קָרְבָּן תְּחִלָּה דה&quot;ה עָבַד עֲבוֹדַת כּוֹכָבִים וְאַחַ&quot;כּ הִפְרִישׁ קָרְבָּן דְּהַשְׁתָּא הָוֵי דִּיחוּי מֵעִיקָּרָא דְּהָא ר&quot;י הוּא דְּאִית לֵיהּ דִּיחוּי מֵעִיקָּרָא הָוֵי דִּיחוּי אֶלָּא מִשּׁוּם אִידָךְ מִילְּתָא דְרַבִּי יוֹחָנָן דְּמַייְתִי הָתָם אָכַל חֵלֶב וְהִפְרִישׁ קָרְבָּן וְנִשְׁתַּטָּה וְחָזַר וְנִשְׁתַּפָּה דְּלָא מָצֵי לְמֵימַר דְּנִשְׁתַּטָּה תְּחִילָּה כֵּיוָן דְּשׁוֹטֶה הוּא לָאו בַּר הַפְרָשָׁה הוּא נְקַט נָמֵי הִפְרִישׁ קָרְבָּן וְעָבַד עֲבוֹדַת כּוֹכָבִים וְאַשְׁכְּחַן נָמֵי קְדֻושַּׁת דָּמִים אע&quot;ג דְּלָא הָוֵי דִּיחוּי מֵעִיקָּרָא כְּגוֹן הַמַּפְרִישׁ נְקֵבָה לְפִסְחוֹ וְיָלְדָה זָכָר וְהָוֵי קְדֻושַּׁת דָּמִים דְּאֵין פֶּסַח בָּא מִנְּקֵבָה וְלָא הָוֵי דִּיחוּי מֵעִיקָּרָא שֶׁהֲרֵי הַוָּלָד רָאוּי לְהַקְרִיב וְיֵשׁ סְפָרִים דְּגָרְסִינַן ש&quot;מ קְדֻושַּׁת דָּמִים מַדְחֶה וּמְפָרֵשׁ דּוֹחֶה תְּמוּרָתָהּ מִלִּיקָּרֵב מִדְּקָתָנֵי וּתְמוּרָתָהּ כַּיּוֹצֵא בָּהּ וְלָא נְהִירָא דְּהָא בִּכְרִיתוֹת (דַּף כֹּח.) גַּבֵּי מְטַמֵּא מִקְדָּשׁ עָשִׁיר שֶׁהִפְרִישׁ קֵן לְכִבְשָׂתוֹ וְהֶעֱנִי הוֹאִיל וְנִדְחָה יִדָּחֶה גָּרְסִינַן נָמֵי ש&quot;מ תְּלָת כְּמוֹ בִּשְׁמַעְתִּין וְהָתָם ע&quot;כ אֵין לְפָרֵשׁ קְדֻושַּׁת דָּמִים מַדְחֶה הַתְּמוּרָה דְּאֵין תְּמוּרָה בְּעוֹפוֹת אֶלָּא ע&quot;כ הַיְינוּ קְדוֹשָׁה וְאֵינָהּ קְרֵיבָה וא&quot;ת לָמָּה לֵיהּ לְרַבִּי יוֹחָנָן לְאַשְׁמוֹעִינַן הָנֵי תְּלָת מִילֵּי הָא שָׁמְעִינַן לָהּ בְּפֶרֶק מִי שֶׁהָיָה טָמֵא (פְּסָחִים דַּף צח.) וְיֵשׁ לוֹמַר מִשּׁוּם דִּפְלוּגְתָּא הִיא בְּפֶרֶק בָּתְרָא דִּכְרִיתוֹת (שָׁם) דִּפְלִיגִי בַּהּ רַבִּי שִׁמְעוֹן בֶּן יוֹחַאי וְרַבָּנָן מַיְיתֵי דִּבְרֵי הָאָמוֹרָאִים וְיֵשׁ לִתְמֹוהַּ אַמַּאי לָא פָּרֵיךְ עֲלָהּ דְּרַבִּי יוֹחָנָן כִּי הֵיכִי דְּפָרִיךְ בְּסוֹף כְּרִיתוֹת (שָׁם) עֲלָהּ דְּרַבִּי אוֹשַׁעְיָא דְּאָמַר מְטַמֵּא מִקְדָּשׁ עָשִׁיר שֶׁהִפְרִישׁ קֵן לְכִבְשָׂתוֹ וְהֶעֱנִי הוֹאִיל וְנִדְחָה יִדָּחֶה דְּפָרִיךְ עֲלָהּ מֵרַבִּי שִׁמְעוֹן מֵהַהִיא דְּאָמַר הַמַּפְרִישׁ נְקֵבָה [לְפִסְחוֹ קֹודֶם הַפֶּסַח תִּרְעֶה עַד שֶׁתִּסְתָּאֵב וְתִמָּכֵר וְיָבִיא בְּדָמֶיהָ פֶּסַח] יָלְדָה זָכָר יִרְעֶה עַד שֶׁיִּסְתָּאֵב וְיִמָּכֵר [וְיָבִיא בְּדָמָיו פֶּסַח] וְרַבִּי שִׁמְעוֹן אוֹמֵר הוּא עַצְמוֹ יִקְרַב פֶּסַח וְעוֹד אַדְּפָרֵיךְ עֲלָהּ מֵרַבִּי שִׁמְעוֹן לְסַייְּעָהּ עֲלָהּ מִדְּרַבָּנָן דְּקָאָמְרִי בְּרֵישָׁא יִרְעֶה עַד שֶׁיִּסְתָּאֵב וְעוֹד כֵּיוָן דְּפָרִיךְ מִיְּחִידָאָה אַדְּפָרֵיךְ מֵרַבִּי שִׁמְעוֹן דְּבָרַיְיתָא לִפְרֹוךְ מֵרַבִּי אֱלִיעֶזֶר דְּמַתְנִי&#x27; דִּתְמוּרָה דִּתְנַן פֶּרֶק אֵלּוּ קָדָשִׁים (תְּמוּרָה דַּף יח:) גַּבֵּי מַפְרִישׁ נְקֵבָה לְעוֹלָה וְיָלְדָה זָכָר רַבִּי אֱלִיעֶזֶר אוֹמֵר הוּא עַצְמוֹ יִקְרַב עוֹלָה וְיֵשׁ לוֹמַר הַיְינוּ טַעְמָא דְּפָרִיךְ מֵרַבִּי שִׁמְעוֹן מִשּׁוּם דִּבְהָהִיא אֲפִילּוּ רַבָּנָן מוֹדוּ דְּעַד כָּאן לָא פְּלִיגִי רַבָּנַן עֲלֵיהּ אֶלָּא בְּדָבָר דְּשַׁיָּיךְ בֵּיהּ קְדֻושַּׁת דָּמִים סָבְרִי מִיגּוֹ דְּנָחֲתָא בֵּיהּ קְדֻושַּׁת דָּמִים נָחֲתָא בֵּיהּ נָמֵי קְדֻושַּׁת הַגּוּף וּקְדֻושַּׁת הַגּוּף לָא הָוֵי שֶׁהֲרֵי אֵין פֶּסַח בָּא מִן הַנְּקֵבָה אֲבָל גַּבֵּי קֵן אֲפִילּוּ רַבָּנָן מוֹדוּ שֶׁהֲרֵי אֵין קְדֻושַּׁת דָּמִים חָלָה בְּעוֹפוֹת וּלְמִילְּתָא דְּרַבִּי יוֹחָנָן דְּהָכָא לָא מָצֵי לְאוֹתוֹבֵי מִשּׁוּם דַּהֲוָה כִּי הַהוּא דְּהַמַּפְרִישׁ נְקֵבָה לְפִסְחוֹ וְאִי הֲוָה מוֹתֵיב מֵרַבִּי שִׁמְעוֹן הֲוָה אֲמִינָא לְסִיּוּעֶיהָ מִדְּרַבָּנָן וּמִמִּילְּתָא דְּר&#x27; אֱלִיעֶזֶר נָמֵי לָא מָצֵי לְאוֹתְבֵיהּ מִשּׁוּם דַּהֲוָה יְחִידָאָה:</div>
+          <div class="glose-fr">« Apprends-en que les êtres vivants » : Rachi explique : s&#x27;ils ont été repoussés, ils sont repoussés pour toujours, car il y a un avis selon lequel il n&#x27;y a de repoussement que pour les animaux abattus, tandis que les êtres vivants repoussés reviennent et redeviennent aptes, et selon lui cette bête serait offerte lorsqu&#x27;il est revenu acheter sa moitié ; « apprends-en que le repoussement dès l&#x27;origine est un repoussement », c&#x27;est-à-dire par exemple celle qui, dès le début de sa consécration, n&#x27;était pas apte à être offerte, car il y a quelqu&#x27;un qui conteste et dit qu&#x27;il n&#x27;y a de repoussement que pour ce qui était apte et a été repoussé ; « apprends-en qu&#x27;il y a repoussement pour des valeurs », c&#x27;est-à-dire qu&#x27;il y a le statut de repoussement dans une chose qui n&#x27;est sainte que pour sa valeur, par exemple celle que l&#x27;on n&#x27;a consacrée dès le début que pour sa valeur, afin qu&#x27;elle soit vendue, et dont la valeur de la moitié sera consacrée, puisqu&#x27;elle n&#x27;était pas apte à être offerte par moitiés ; et malgré cela le statut de repoussement s&#x27;applique à elle, la repoussant de l&#x27;autel pour toujours, et nous ne disons pas qu&#x27;il n&#x27;y a de repoussement que dans ce qui a été consacré pour son corps afin d&#x27;être offert. Et si tu demandes : pourquoi dire ces deux choses, « apprends-en qu&#x27;il y a repoussement pour des valeurs » et « le repoussement dès l&#x27;origine », alors qu&#x27;il est impossible qu&#x27;il y ait repoussement dès l&#x27;origine sans repoussement de valeurs ? On peut répondre : nous trouvons un repoussement dès l&#x27;origine alors que la chose est sainte de sainteté du corps, comme le dit Rabbi Yo&#x27;hanan au chapitre « Nigmar hadin » (Sanhédrin 47a) : par exemple s&#x27;il a mangé de la graisse interdite, mis à part une offrande, servi une idole puis est revenu : et puisqu&#x27;elle a été repoussée quand il a servi l&#x27;idole, en raison de « le sacrifice des impies est une abomination », elle est repoussée. Et la formule n&#x27;est pas stricte là-bas en disant « et il a mis à part une offrande » d&#x27;abord : de même s&#x27;il a servi l&#x27;idole puis mis à part une offrande, maintenant c&#x27;est un repoussement dès l&#x27;origine, car c&#x27;est Rabbi Yo&#x27;hanan lui-même qui dit que le repoussement dès l&#x27;origine est un repoussement ; mais à cause de l&#x27;autre enseignement de Rabbi Yo&#x27;hanan qu&#x27;il y rapporte, « il a mangé de la graisse, a mis à part une offrande, est devenu fou puis est redevenu sain », où l&#x27;on ne peut pas dire qu&#x27;il est devenu fou d&#x27;abord, puisqu&#x27;un fou n&#x27;est pas apte à mettre à part, il a aussi cité le cas « a mis à part une offrande et a servi l&#x27;idole ». Et nous trouvons aussi une sainteté de valeur sans repoussement dès l&#x27;origine, par exemple celui qui met à part une femelle pour sa Pâque et elle met bas un mâle : il y a sainteté de valeur, car une Pâque ne vient pas d&#x27;une femelle, et il n&#x27;y a pas de repoussement dès l&#x27;origine, car le petit est apte à être offert. Certains livres lisent « apprends-en que la sainteté de valeur repousse », et expliquent : elle repousse sa substitution de l&#x27;offrande, puisqu&#x27;il est enseigné « et sa substitution est comme elle » ; mais cela n&#x27;est pas clair, car dans Kerititot (28a), au sujet de celui qui rend impur le Sanctuaire, le riche qui a mis à part un nid pour son agneau et le pauvre, « puisqu&#x27;il a été repoussé, il est repoussé », on lit aussi « apprends-en trois choses » comme dans notre sougya ; et là il est impossible d&#x27;expliquer que la sainteté de valeur repousse la substitution, car il n&#x27;y a pas de substitution pour des oiseaux : il s&#x27;agit donc nécessairement de « consacré et non offert ». Et si tu demandes : pourquoi Rabbi Yo&#x27;hanan doit-il nous enseigner ces trois choses, alors que nous les entendons déjà au chapitre « Mi chehaya tamé » (Pessa&#x27;him 98a) ? On peut répondre : parce qu&#x27;il y a un désaccord au dernier chapitre de Kerititot (28b) entre Rabbi Chimon bar Yo&#x27;haï et les Sages, il rapporte les paroles des Amoraïm. Mais on peut s&#x27;étonner : pourquoi ne pose-t-on pas une objection contre Rabbi Yo&#x27;hanan comme on le fait à la fin de Kerititot contre Rabbi Ochaya, qui dit : « celui qui rend impur le Sanctuaire, le riche qui a mis à part un nid pour son agneau et le pauvre, puisqu&#x27;il a été repoussé, il est repoussé », objection tirée de Rabbi Chimon, à propos de ce qu&#x27;on dit : « celui qui met à part une femelle pour sa Pâque avant la Pâque, elle paît jusqu&#x27;à ce qu&#x27;elle ait un défaut, est vendue, et il apporte une Pâque avec son prix ; si elle a mis bas un mâle, il paît jusqu&#x27;à ce qu&#x27;il ait un défaut, est vendu et il apporte une Pâque avec son prix ; et Rabbi Chimon dit : lui-même est offert comme Pâque » ? Et de plus : au lieu de poser l&#x27;objection tirée de Rabbi Chimon, que ne l&#x27;appuie-t-on par les Sages, qui disent au début « il paît jusqu&#x27;à ce qu&#x27;il ait un défaut » ? Et encore : puisqu&#x27;il s&#x27;agit d&#x27;un avis isolé, au lieu de l&#x27;objection tirée de Rabbi Chimon dans la baraïta, qu&#x27;on objecte de Rabbi Eli&#x27;ezer dans la michna de Temoura (18b), où l&#x27;on apprend, au sujet de celui qui met à part une femelle pour un holocauste et qui met bas un mâle : Rabbi Eli&#x27;ezer dit : lui-même sera offert en holocauste ? On peut répondre : la raison pour laquelle on objecte de Rabbi Chimon est que dans ce cas même les Sages reconnaissent, car les Sages ne contestent Rabbi Chimon que dans une chose à laquelle s&#x27;applique la sainteté de valeur : ils pensent que puisque la sainteté de valeur est descendue sur lui, la sainteté du corps y est descendue aussi, et la sainteté du corps n&#x27;existe pas, puisqu&#x27;une Pâque ne vient pas d&#x27;une femelle ; mais pour un nid, même les Sages reconnaissent, puisque la sainteté de valeur ne s&#x27;applique pas aux oiseaux. Et pour le propos de Rabbi Yo&#x27;hanan ici, on ne pouvait pas objecter, car ce serait comme le cas de « celui qui met à part une femelle pour sa Pâque », et si l&#x27;on objectait de Rabbi Chimon on dirait de l&#x27;appuyer par les Sages ; et de Rabbi Eli&#x27;ezer non plus on ne pouvait pas objecter, car c&#x27;est un avis isolé.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Première des trois choses qu'on apprend de la bête de deux associés (6b-7a) : un animal vivant, pas seulement un animal abattu, peut être <b>repoussé</b> (<b>di'houï</b>) de l'autel pour toujours. L'animal consacré par moitié n'est pas apte à être offert, et il le reste. Rachi précise qu'un avis conteste (Yoma 64a). Tossefot développe les deux autres enseignements (repoussement dès l'origine et repoussement sur une valeur), les sources de Rabbi Yo'hanan à Sanhédrin et Kerititot, et le fait que la guemara rapporte ces mêmes principes sous plusieurs formes dans différents traités.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּשְׁמַע מִינַּהּ דָּחוּי מֵעִיקָּרָא הָוֵי דָּחוּי, וּשְׁמַע מִינַּהּ יֵשׁ דִּחוּי בְּדָמִים.</div>
+            <div class="fr"><p>et apprends-en que le repoussement dès l&#x27;origine est un repoussement, et apprends-en qu&#x27;il y a repoussement pour des valeurs.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דִּיחוּי מֵעִיקָּרָא</b> כְּגוֹן זוֹ שֶׁמִּתְּחִילַּת הִקְדִּישָׁהּ לֹא נִרְאֵית לִיקָּרֵב וְאִיכָּא לָמֶ&quot;ד (בַּסֻּוכָּה דַּף לג:) דִּפְלִיג וְאָמַר אֵין דִּיחוּי אֶלָּא בְּנִרְאֶה וְנִדְחָה:</div>
+          <div class="glose-fr">« Le repoussement dès l&#x27;origine » : par exemple celle qui, dès le début de sa consécration, n&#x27;était pas apte à être offerte. Il y a un avis (Soucca 33b) qui conteste et dit qu&#x27;il n&#x27;y a de repoussement que pour ce qui était apte et a été repoussé.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>יֵשׁ דִּיחוּי בְּדָמִים</b> יֵשׁ תּוֹרַת דִּיחוּי בְּדָבָר שֶׁאֵינוֹ קָדוֹשׁ אֶלָּא לְדָמָיו כְּגוֹן זוֹ שֶׁמִּתְּחִלָּה לֹא הִקְדִּישָׁהּ אֶלָּא לְדָמֶיהָ שֶׁתִּמָּכֵר וְיִקְדְּשׁוּ דְּמֵי חֶצְיָהּ שֶׁהֲרֵי לִיקָּרֵב לַחֲצָאִין לֹא הָיְתָה רְאוּיָה וְאַפֵּ&quot;ה חָל עֲלָהּ תּוֹרַת דִּיחוּי לִדְחוֹת מֵעַל הַמִּזְבֵּחַ לְעוֹלָם וְלָא אָמְרִינַן אֵין דִּיחוּי אֶלָּא בְּדָבָר שֶׁהֻוקְדַּשׁ לְגוּפוֹ לִיקָּרֵב:</div>
+          <div class="glose-fr">« Il y a repoussement pour des valeurs » : il y a le statut de repoussement dans une chose qui n&#x27;est sainte que pour sa valeur, par exemple celle que l&#x27;on n&#x27;a consacrée dès le début que pour sa valeur, afin qu&#x27;elle soit vendue, et dont la valeur de la moitié sera consacrée, puisqu&#x27;elle n&#x27;était pas apte à être offerte par moitiés ; et malgré cela le statut de repoussement s&#x27;applique à elle, la repoussant de l&#x27;autel pour toujours, et nous ne disons pas qu&#x27;il n&#x27;y a de repoussement que dans ce qui a été consacré pour son corps afin d&#x27;être offert.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deux autres enseignements : le repoussement existe aussi lorsque l'animal n'a jamais été apte à être offert (dès l'origine), et il existe pour une chose qui n'est sainte que pour sa <b>valeur</b> (<b>kedoushat damim</b>). Rachi indique pour chacun un avis contraire dans une autre sougya.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 240" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah-k7b-s1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a766a"/></marker></defs>
+<rect x="0" y="0" width="740" height="240" fill="#fbfaf6"/>
+<text x="370" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b2b2b">Ce qu'on apprend de la bête de deux associés (Rabbi Yo'hanan)</text>
+<rect x="20" y="40" width="700" height="44" rx="5" fill="#dcd7c8" stroke="#b6b2a4"/>
+<text x="370" y="66.32" text-anchor="middle" font-size="12" fill="#3a3a3a">Une moitié consacrée, l'autre rachetée puis consacrée : la bête est sainte mais n'est pas offerte.</text>
+<line x1="130" y1="84" x2="130" y2="104" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k7b-s1)"/>
+<line x1="370" y1="84" x2="370" y2="104" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k7b-s1)"/>
+<line x1="610" y1="84" x2="610" y2="104" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k7b-s1)"/>
+<rect x="20" y="106" width="220" height="92" rx="5" fill="#e3ecf5" stroke="#4f78a8"/>
+<text x="130" y="130.76" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2c4a6e">1. Êtres vivants</text>
+<text x="130" y="147.80" text-anchor="middle" font-size="12" fill="#2c4a6e">un animal vivant peut</text>
+<text x="130" y="164.84" text-anchor="middle" font-size="12" fill="#2c4a6e">être repoussé (di'houï)</text>
+<text x="130" y="181.88" text-anchor="middle" font-size="12" fill="#2c4a6e">de l'autel pour toujours</text>
+<rect x="260" y="106" width="220" height="92" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="370" y="130.76" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2e5c2c">2. Dès l'origine</text>
+<text x="370" y="147.80" text-anchor="middle" font-size="12" fill="#2e5c2c">même s'il n'a jamais été</text>
+<text x="370" y="164.84" text-anchor="middle" font-size="12" fill="#2e5c2c">apte, le repoussement</text>
+<text x="370" y="181.88" text-anchor="middle" font-size="12" fill="#2e5c2c">est un repoussement</text>
+<rect x="500" y="106" width="220" height="92" rx="5" fill="#ece6f2" stroke="#7d6a9a"/>
+<text x="610" y="130.76" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#46385e">3. Sur une valeur</text>
+<text x="610" y="147.80" text-anchor="middle" font-size="12" fill="#46385e">une chose sainte pour</text>
+<text x="610" y="164.84" text-anchor="middle" font-size="12" fill="#46385e">sa valeur seulement</text>
+<text x="610" y="181.88" text-anchor="middle" font-size="12" fill="#46385e">peut être repoussée</text>
+<text x="370" y="218" text-anchor="middle" font-size="11" font-style="italic" fill="#5a564a">Rachi : sur chacun de ces points, une autre sougya rapporte un avis contraire.</text>
+</svg></div><div class="svg-cap">Les trois enseignements tirés de la bête de deux associés : êtres vivants, repoussement dès l&#x27;origine, repoussement sur une valeur.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בָּעֵי רָבָא: ״חֶצְייֵךְ בַּחֲצִי פְּרוּטָה, וְחֶצְיֵיךְ בַּחֲצִי פְּרוּטָה״ מַהוּ? כֵּיוָן דְּאָמַר לָהּ ״חֲצִי פְּרוּטָה״ – פָּסְקָה, אוֹ דִּילְמָא מוֹנֶה וְהוֹלֵךְ הוּא?</div>
+            <div class="fr"><p>Rava a demandé : « La moitié de toi pour une demi-peruta et la moitié de toi pour une demi-peruta », qu&#x27;en est-il ? Du fait qu&#x27;il lui a dit « une demi-peruta », a-t-il achevé [sa parole], ou bien compte-t-il en continuant ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>פָּסְקָה</b> וַהֲוָה לֵיהּ כִּמְקַדֵּשׁ לַחֲצָאִין:</div>
+          <div class="glose-fr">« Il a achevé » : et c&#x27;est comme celui qui consacre par moitiés.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מוֹנֶה וְהוֹלֵךְ הוּא</b> וְרֵישָׁא דְּמִילְּתָא אַמַּסְּקָנָא נָמֵי קָאֵי וְלָאו לַחֲצָאִין הוּא דְּהָא חֲצִי פְּרוּטָה לָאו בַּר תְּפִיסָה הוּא:</div>
+          <div class="glose-fr">« Compte-t-il en continuant » : le début de la phrase se tient aussi sur la conclusion, et ce n&#x27;est pas par moitiés, car une demi-peruta ne peut pas être saisie.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Début d'une série de questions de Rava, restées sans solution. Quand l'homme dit « la moitié de toi pour une demi-peruta » puis « la moitié de toi pour une demi-peruta », a-t-il divisé sa phrase (donc deux consécrations partielles, invalides), ou compte-t-il en continuant jusqu'à une peruta entière en un seul acte ?</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִם תִּימְצֵי לוֹמַר מוֹנֶה וְהוֹלֵךְ הוּא, ״חֶצְייֵךְ בִּפְרוּטָה וְחֶצְיֵיךְ בִּפְרוּטָה״ מַהוּ? כֵּיוָן דְּאָמַר לַהּ בִּפְרוּטָה וּפְרוּטָה – פָּסְקָה לְמִילְּתֵיהּ, אוֹ דִּילְמָא כֹּל בְּיוֹמֵיהּ מוֹנֶה וְהוֹלֵךְ הוּא?</div>
+            <div class="fr"><p>Si tu en viens à dire qu&#x27;il compte en continuant : « la moitié de toi pour une peruta et la moitié de toi pour une peruta », qu&#x27;en est-il ? Du fait qu&#x27;il lui a dit « pour une peruta et une peruta », a-t-il achevé sa parole, ou bien chaque chose, dans son propre jour, compte-t-elle en continuant ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כֵּיוָן דְּאָמַר בִּפְרוּטָה פָּסְקָה</b> וְלֹא הָיָה תְּחִילַּת דִּבּוּרוֹ אֶלָּא לְחֶצְיָהּ וְטָעָה לוֹמַר שֶׁמְּקַדְּשִׁין לַחֲצָאִין:</div>
+          <div class="glose-fr">« Du fait qu&#x27;il a dit pour une peruta, il a achevé » : le début de sa parole n&#x27;était que pour une moitié, et il s&#x27;est trompé en disant qu&#x27;on consacre par moitiés.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כָּל בְּיוֹמֵיהּ</b> הוֹאִיל וּבְדַעְתֵּיהּ לְגָומְרוֹ הַיּוֹם:</div>
+          <div class="glose-fr">« Chacun dans son propre jour » : puisqu&#x27;il a l&#x27;intention de l&#x27;achever aujourd&#x27;hui.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>חֶצְייֵךְ בִּפְרוּטָה וְחֶצְיֵיךְ בִּפְרוּטָה</b> וְאִם תֹּאמַר אַמַּאי לֹא יוֹעִיל וְהָא לֹא אָמַר לְעֵיל דְּלָא פָּשְׁטוּ קִידּוּשִׁין בְּכֻולָּהּ אֶלָּא מִשּׁוּם דְּאִיכָּא דַּעַת אַחֶרֶת וְאֵינָהּ מִתְרַצֶּה אֶלָּא לְמַה שֶׁשּׁוֹמַעַת אֲבָל אִם הָיִינוּ יוֹדְעִים שֶׁמִּתְרַצֶּה בְּכֻולָּהּ פָּשְׁטוּ קִידּוּשִׁין בְּכֻולָּהּ וְהָכָא גַּלִּי דַּעְתָּהּ שֶׁמִּתְרַצֶּה בְּכֻולָּהּ וְי&quot;ל דְּאִי הָוֵי מַיְירֵי דְּאָמַר לָהּ בִּלְשׁוֹן קִידּוּשִׁין אִין ה&quot;נ דְּהָווּ פָּשְׁטוּ קִידּוּשִׁין בְּכֻולָּהּ אֲבָל הָכָא אַייְרֵי דְּאָמַר לָהּ הֲרֵי אַתְּ מְאֹורֶסֶת לִי אוֹ בְּחַד מֵהָנֵי לִישָּׁנֵי דִּלְעֵיל (קִידּוּשִׁין דַּף ו.):</div>
+          <div class="glose-fr">« La moitié de toi pour une peruta et la moitié de toi pour une peruta » : et si tu demandes : pourquoi cela n&#x27;aurait-il pas d&#x27;effet ? Plus haut (7a) on n&#x27;a dit que le kiddouchin ne s&#x27;étend pas à toute elle qu&#x27;en raison de l&#x27;existence d&#x27;une autre volonté qui ne consent qu&#x27;à ce qu&#x27;elle entend ; mais si nous savions qu&#x27;elle consent à tout, le kiddouchin s&#x27;étendrait à toute elle, et ici elle a montré qu&#x27;elle consent à tout ! On peut répondre : s&#x27;il lui avait parlé en langage de consécration, certes le kiddouchin s&#x27;étendrait à toute elle ; mais ici on parle du cas où il lui a dit « tu m&#x27;es fiancée » ou l&#x27;une de ces formules mentionnées plus haut (6a).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Si l'on admet qu'il compte en continuant, la question suivante : il dit « la moitié de toi pour une peruta » et « la moitié de toi pour une peruta », avec deux perutot en tout. A-t-il achevé sa phrase après la première moitié, ou son intention de terminer le jour même réunit-elle l'ensemble ? Tossefot explique pourquoi une femme qui accepte la totalité ne voit pas le kiddouchin s'étendre : la formule utilisée n'est pas un langage de consécration.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִם תִּימְצֵי לוֹמַר כֹּל בְּיוֹמֵיהּ מוֹנֶה וְהוֹלֵךְ הוּא, ״חֶצְייֵךְ בִּפְרוּטָה הַיּוֹם וְחֶצְיֵיךְ בִּפְרוּטָה לְמָחָר״ מַהוּ? כֵּיוָן דְּאָמַר לַהּ לְמָחָר – פָּסְקָה, אוֹ דִּילְמָא הָכִי קָאָמַר לָהּ: ״קִדּוּשִׁין מַתְחֲלוּ מֵהָאִידָּנָא וּמִגְמָר לָא נִיגְמְרוּ עַד לִמְחַר״?</div>
+            <div class="fr"><p>Si tu en viens à dire que chaque chose, dans son propre jour, compte en continuant : « la moitié de toi pour une peruta aujourd&#x27;hui et la moitié de toi pour une peruta demain », qu&#x27;en est-il ? Du fait qu&#x27;il lui a dit « demain », a-t-il achevé sa parole, ou bien dit-il ceci : le kiddouchin commence dès maintenant et ne s&#x27;achève que demain ?</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>חֶצְייֵךְ בִּפְרוּטָה הַיּוֹם וְחֶצְיֵיךְ בִּפְרוּטָה לְמָחָר</b> כָּךְ אָמַר לָהּ בְּפַעַם אַחַת:</div>
+          <div class="glose-fr">« La moitié de toi pour une peruta aujourd&#x27;hui et la moitié de toi pour une peruta demain » : il le lui a dit en une seule fois.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Troisième question : si le jour est regroupé (cas précédent), qu'en est-il quand une moitié est payée aujourd'hui et l'autre demain ? L'ajout de « demain » interrompt-il la phrase, ou le kiddouchin commence-t-il maintenant et s'achève-t-il le lendemain ?</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">״שְׁנֵי חֶצְייֵךְ בִּפְרוּטָה״ מַהוּ? הָכָא וַדַּאי בְּחַד זִימְנָא קָאָמַר לַהּ, אוֹ דִּילְמָא אֵין אִשָּׁה מִתְקַדֶּשֶׁת לַחֲצָאִין כְּלָל? תֵּיקוּ.</div>
+            <div class="fr"><p>« Tes deux moitiés pour une peruta », qu&#x27;en est-il ? Ici certainement il lui parle en une seule fois, ou bien une femme ne se consacre pas par moitiés du tout ?</p><p>Teiku.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Dernière question de la série : « tes deux moitiés pour une peruta ». Il parle en une seule fois, donc la peruta est entière. Mais l'autre côté de la question est qu'une femme ne se consacre pas par moitiés du tout. Aucune réponse : <b>teiku</b>, les questions restent sans solution.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 370" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah-k7b-s5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a766a"/></marker></defs>
+<rect x="0" y="0" width="740" height="370" fill="#fbfaf6"/>
+<text x="370" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b2b2b">La chaîne des questions de Rava sur le kiddouchin par moitiés</text>
+<rect x="20" y="40" width="700" height="50" rx="5" fill="#fdf4e8" stroke="#c98b3a"/>
+<text x="370" y="60.80" text-anchor="middle" font-size="12" fill="#6b4a14">1. La moitié de toi pour une demi-prouta, et la moitié de toi pour une demi-prouta</text>
+<text x="370" y="77.84" text-anchor="middle" font-size="12" fill="#6b4a14">A-t-il achevé sa parole, ou compte-t-il en continuant ?</text>
+<line x1="370" y1="90" x2="370" y2="112" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k7b-s5)"/>
+<text x="376" y="105" text-anchor="start" font-size="10.5" font-style="italic" fill="#5a564a">si tu dis : il compte en continuant</text>
+<rect x="20" y="112" width="700" height="50" rx="5" fill="#fdf4e8" stroke="#c98b3a"/>
+<text x="370" y="132.80" text-anchor="middle" font-size="12" fill="#6b4a14">2. La moitié de toi pour une prouta, et la moitié de toi pour une prouta</text>
+<text x="370" y="149.84" text-anchor="middle" font-size="12" fill="#6b4a14">A-t-il achevé, ou ce qui se fait le même jour compte-t-il ensemble ?</text>
+<line x1="370" y1="162" x2="370" y2="184" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k7b-s5)"/>
+<text x="376" y="177" text-anchor="start" font-size="10.5" font-style="italic" fill="#5a564a">si tu dis : le jour même compte ensemble</text>
+<rect x="20" y="184" width="700" height="50" rx="5" fill="#fdf4e8" stroke="#c98b3a"/>
+<text x="370" y="204.80" text-anchor="middle" font-size="12" fill="#6b4a14">3. La moitié pour une prouta aujourd'hui, et la moitié pour une prouta demain</text>
+<text x="370" y="221.84" text-anchor="middle" font-size="12" fill="#6b4a14">Demain interrompt-il, ou le kiddouchin commence-t-il dès maintenant ?</text>
+<line x1="370" y1="234" x2="370" y2="256" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k7b-s5)"/>
+<text x="376" y="249" text-anchor="start" font-size="10.5" font-style="italic" fill="#5a564a">autre question</text>
+<rect x="20" y="256" width="700" height="50" rx="5" fill="#e3ecf5" stroke="#4f78a8"/>
+<text x="370" y="276.80" text-anchor="middle" font-size="12" fill="#2c4a6e">4. Tes deux moitiés pour une prouta</text>
+<text x="370" y="293.84" text-anchor="middle" font-size="12" fill="#2c4a6e">Une seule parole, ou une femme ne se consacre pas du tout par moitiés ?</text>
+<rect x="270" y="320" width="200" height="32" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="370" y="340.32" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#7c3b2c">Teiku</text>
+</svg></div><div class="svg-cap">Les quatre questions de Rava, chacune posée si l&#x27;on tranche la précédente dans un sens ; elles restent en teiku.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בָּעֵי רָבָא: ״שְׁתֵּי בְּנוֹתֶיךָ לִשְׁנֵי בָנַי בִּפְרוּטָה״ מַהוּ? בָּתַר נוֹתֵן וּמְקַבֵּל אָזְלִינַן וְהָאִיכָּא מָמוֹנָא, אוֹ דִּילְמָא בָּתַר דִּידְהוּ אָזְלִינַן וְהָא לֵיכָּא? תֵּיקוּ.</div>
+            <div class="fr"><p>Rava a demandé : « Tes deux filles pour mes deux fils pour une peruta », qu&#x27;en est-il ? Suit-on celui qui donne et celui qui reçoit, et il y a de l&#x27;argent, ou bien les suit-on eux, et il n&#x27;y en a pas ?</p><p>Teiku.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לִשְׁנֵי בְּנֵי</b> וְהֵם גְּדוֹלִים וַעֲשָׂאוּהוּ שָׁלִיחַ לְקַדֵּשׁ:</div>
+          <div class="glose-fr">« Pour mes deux fils » : ils sont adultes et l&#x27;ont fait envoyé pour consacrer.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שְׁתֵּי בְנוֹתֶיךָ לִשְׁנֵי בָנַי</b> אוֹמֵר רִ&quot;י דְּמַיְירֵי בְּבָנוֹת קְטַנּוֹת דְּקִידּוּשִׁין דְּאָב נִינְהוּ דְּאִי בִּגְדוֹלוֹת וְאָב מְקַבֵּל קִידּוּשִׁין בְּתוֹרַת שְׁלִיחוּת פְּשִׁיטָא דְּבָעֵי פְּרוּטָה לְכָל אַחַת דְּשָׁלִיחַ לֹא עָדִיף מִמְּשַׁלְּחוֹ דְּבָתַר נוֹתֵן דְּקָאָמַר לָאו דַּוְקָא שֶׁהֲרֵי הַנּוֹתֵן ע&quot;כ בְּתוֹרַת שְׁלִיחוּת בָּנָיו הוּא בָּא וְאִי בָּתַר נוֹתֵן אָזְלִינַן הָוֵי בָּעֵי שְׁתֵּי פְּרוּטוֹת כְּאִילּוּ הַבָּנִים בְּעַצְמָם מְקַדְּשִׁין אֲבָל הַבַּעְיָא הִיא אִי בָּתַר מְקַבֵּל אָזְלִינַן לְגַמְרֵי דְּשֶׁמָּא אֵין לָחוּשׁ אֶלָּא שֶׁיְּקַבֵּל הַמְקַבֵּל שָׁוֶה פְּרוּטָה וצ&quot;ל שֶׁבֵּירֵר לְאֵיזֶה מֵהֶם כְּגוֹן רָחֵל לִרְאוּבֵן וְלֵאָה לְשִׁמְעוֹן דאל&quot;כ הָוֵי קִידּוּשִׁין שֶׁלֹּא נִמְסְרוּ לְבִיאָה:</div>
+          <div class="glose-fr">« Tes deux filles pour mes deux fils » : Rabbénou Yits&#x27;hak dit qu&#x27;il s&#x27;agit de filles mineures, dont le kiddouchin est celui du père ; car si elles étaient adultes et que le père recevait le kiddouchin au titre de mandat, il serait évident qu&#x27;il faut une peruta pour chacune, puisqu&#x27;un envoyé n&#x27;est pas supérieur à celui qui l&#x27;envoie. Le « suit-on celui qui donne » n&#x27;est pas strict, car celui qui donne vient nécessairement au titre du mandat de ses fils, et si nous suivons celui qui donne, il faudrait deux perutot, comme si les fils consacraient eux-mêmes. Mais la question est de savoir si l&#x27;on suit entièrement celui qui reçoit : peut-être n&#x27;y a-t-il à se préoccuper que du fait que celui qui reçoit reçoive la valeur d&#x27;une peruta ; et il faut dire qu&#x27;il a désigné laquelle pour lequel, par exemple Ra&#x27;hel pour Reouven et Léa pour Chimon, sinon ce serait un kiddouchin non remis à la relation conjugale.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אָמַר רָבָא הִתְקַדְּשִׁי לִי לְחֶצְיִי מְקֻודֶּשֶׁת. חֶצְיֵיךְ מְקֻודֶּשֶׁת לִי אֵינָהּ מְקֻודֶּשֶׁת. וְהַייְנוּ טַעְמָא דְּכִי אָמַר הִתְקַדְּשִׁי לִי לְחֶצְיִי הָכִי קָאָמַר דְּאִי בָּעֵינָא לְמִינְסַב אַחֲרִיתָא נָסֵיבְנָא אֲבָל בְּאִתְּתָא לֹא שַׁיָּיךְ לְמֵימַר הָכִי הִילְכָּךְ שִׁיֵּיר בְּקִנְייָנוֹ וְלָא הָוְיָא מְקֻודֶּשֶׁת. בָּעֵי רָבָא חֶצְייֵךְ בַּחֲצִי פְּרוּטָה וְחֶצְייֵךְ בַּחֲצִי פְּרוּטָה מַהוּ כֵּיוָן דְּאָמַר לַהּ חֲצִי פְרוּטָה פַּסְקַהּ לְמִילְּתֵיהּ אוֹ דִּילְמָא מוֹנֶה וְהוֹלֵךְ הוּא וְאִם תִּמְצָא לוֹמַר מוֹנֶה וְהוֹלֵךְ הוּא חֶצְיֵיךְ בִּפְרוּטָה וְחֶצְייֵךְ בִּפְרוּטָה מַהוּ כֵּיוָן דְּאָמַר חֶצְייֵךְ בִּפְרוּטָה פַּסְקַהּ לְמִילְּתֵיהּ אוֹ דִּילְמָא כֹּל בְּיוֹמֵיהּ מוֹנֶה וְהוֹלֵךְ הוּא וְאִם תִּמְצָא לוֹמַר כֹּל בְּיוֹמֵיהּ מוֹנֶה וְהוֹלֵךְ הוּא נָתַן לָהּ שְׁתֵּי פְּרוּטוֹת וְאָמַר לָהּ חֶצְיֵיךְ בִּפְרוּטָה הַיּוֹם וְחֶצְייֵךְ בִּפְרוּטָה לְמָחָר מַהוּ כֵּיוָן דְּאָמַר לַהּ לְמָחָר פַּסְקַהּ לְמִילְּתֵיהּ אוֹ דִילְמָא הָכִי קָאָמַר לָהּ קִדּוּשֵׁי נַתְחֲלוּ מֵהָאִידָּנָא וּמִיגְמָר לָא נִגְמְרוּ עַד לִמְחַר. שְׁנֵי חֲצָיַיִךְ בִּפְרוּטָה מַהוּ הָכָא וַדַּאי בְּחַד זִימְנָא קָאָמַר לַהּ אוֹ דִּילְמָא אֵין אִשָּׁה מִתְקַדֶּשֶׁת לַחֲצָאִין כְּלָל תֵּיקוּ בָּעֵי רָבָא שְׁתֵּי בְּנוֹתֶיךָ לִשְׁנֵי בָּנַי בִּפְרוּטָה מַהוּ בָּתַר נוֹתֵן וּמְקַבֵּל אָזְלִינַן וְאִיכָּא מָמוֹנָא אוֹ דִּילְמָא בָּתַר דִּידְהוּ אָזְלִינַן וְלֵיכָּא מָמוֹנָא בָּעֵי רַב פָּפָּא בִּתְּךָ וּפָרָתְךָ בִּפְרוּטָה מַהוּ מִי אָמְרִינַן בִּתְּךָ בַּחֲצִי פְּרוּטָה וּפָרָתְךָ בַּחֲצִי פְּרוּטָה אוֹ דִּילְמָא בִּתְּךָ בִּפְרוּטָה וּפָרָתְךָ בִּמְשִׁיכָה בָּעֵי רַב אָשֵׁי בִּתְּךָ וְקַרְקָעֲךָ בִּפְרוּטָה מַהוּ מִי אָמְרִינַן בִּתְּךָ בַּחֲצִי פְּרוּטָה וְקַרְקָעֲךָ בַּחֲצִי פְּרוּטָה אוֹ דִּילְמָא בִּתְּךָ בִּפְרוּטָה וְקַרְקָעֲךָ בַּחֲזָקָה תֵּיקוּ. כָּתַב ר&quot;ח זַ&quot;ל דְּכָל הָנֵי בְּעָיוֹת עָלוּ בְּתֵיקוּ וְעָבְדִינַן בְּהוּ לְחוּמְרָא וְהָרַמְבַּ&quot;ם זַ&quot;ל פ&quot;ג מֹהַל&#x27; אִישׁוּת הל&quot;י כָּתַב דְּחֶצְיֵיךְ בַּחֲצִי פְּרוּטָה וְחֶצְייֵךְ בַּחֲצִי פְרוּטָה אוֹ חֶצְיֵיךְ בִּפְרוּטָה וְחֶצְיֵיךְ בִּפְרוּטָה מְקֻודֶּשֶׁת וַדַּאי סְבָרָתוֹ בְּזוֹ דְּזוֹ הִיא שִׁיטַת הַגְּאוֹנִים דְּכֹל אִם תִּמְצָא לוֹמַר כְּמוֹ פְּשִׁיטוּתָא הוּא וא&quot;כ נִפְשְׁטוּ שְׁתֵּי אִיבַּעְיוֹת הָרִאשׁוֹנוֹת דְּכֹל בְּיוֹמֵיהּ מוֹנֶה וְהוֹלֵךְ וְנִרְאֶה דִּבְכָאן א&quot;א לוֹמַר כֵּן דְּבָעֲיָא אַחֲרוֹנָה שְׁנֵי חֶצְיֵיךְ בִּפְרוּטָה לָא קַייְמָא אַבָּבָא רִאשׁוֹנָה וְלֹא שַׁייָּךְ בָּהּ אִם תִּמְצָא לוֹמַר וּבָזֶה מִסְתַּבֵּר לְמֵימַר דִּמְקֻודֶּשֶׁת יוֹתֵר מִכֻּולָּן כִּדְקָאָמַר גְּמָרָא הָכָא וַדַּאי בְּחַד זִימְנָא קָאָמַר אוֹ דִילְמָא אֵין אִשָּׁה לַחֲצָאִין כְּלָל וְכֵיוָן דְּעָלְתָה בְּתֵיקוּ כָּל שֶׁכֵּן הָרִאשׁוֹנוֹת וְאֵין אִשָּׁה כְּלָל לַחֲצָאִין אֶלָּא סָפֵק:</div>
+          <div class="glose-fr">Rava a dit : « Sois consacrée à moi pour la moitié de moi » : consacrée. « La moitié de toi m&#x27;est consacrée » : non consacrée. Telle est la raison : quand il dit « sois consacrée à moi pour la moitié de moi », il dit ceci : si je veux en épouser une autre, je l&#x27;épouserai ; mais on ne peut pas dire cela d&#x27;une femme ; c&#x27;est pourquoi il a réservé dans son acquisition et elle n&#x27;est pas consacrée. Rava a demandé : « La moitié de toi pour une demi-peruta et la moitié de toi pour une demi-peruta », qu&#x27;en est-il ? Du fait qu&#x27;il lui a dit « une demi-peruta », a-t-il achevé sa parole, ou bien compte-t-il en continuant ? Et si tu en viens à dire qu&#x27;il compte en continuant : « la moitié de toi pour une peruta et la moitié de toi pour une peruta », qu&#x27;en est-il ? Du fait qu&#x27;il a dit « la moitié de toi pour une peruta », a-t-il achevé sa parole, ou bien chacun compte-t-il en continuant dans son propre jour ? Et si tu en viens à dire que chacun compte en continuant dans son propre jour : il lui a donné deux perutot et lui a dit « la moitié de toi pour une peruta aujourd&#x27;hui et la moitié de toi pour une peruta demain », qu&#x27;en est-il ? Du fait qu&#x27;il a dit « demain », a-t-il achevé sa parole, ou bien dit-il ceci : le kiddouchin commence dès maintenant et ne s&#x27;achève que demain ? « Deux moitiés de toi pour une peruta », qu&#x27;en est-il ? Ici certainement il parle en une seule fois, ou bien une femme ne se consacre pas par moitiés du tout ? Teiku. Rava a demandé : « Tes deux filles pour mes deux fils pour une peruta », qu&#x27;en est-il ? Suit-on celui qui donne et celui qui reçoit, et il y a de l&#x27;argent (valeur), ou suit-on eux, et il n&#x27;y a pas d&#x27;argent ? Rav Pappa a demandé : « Ta fille et ta vache pour une peruta », qu&#x27;en est-il ? Dit-on : ta fille pour une demi-peruta et ta vache pour une demi-peruta, ou bien : ta fille pour une peruta et ta vache par la traction ? Rav Ashi a demandé : « Ta fille et ton terrain pour une peruta », qu&#x27;en est-il ? Dit-on : ta fille pour une demi-peruta et ton terrain pour une demi-peruta, ou bien : ta fille pour une peruta et ton terrain par la prise de possession ? Teiku. Rabbénou &#x27;Hananel, de mémoire bénie, a écrit que toutes ces questions sont restées en teiku et qu&#x27;on agit pour elles avec rigueur. Le Rambam, de mémoire bénie, au chapitre 3 des lois sur le mariage, loi 10, a écrit que « la moitié de toi pour une demi-peruta et la moitié de toi pour une demi-peruta » ou « la moitié de toi pour une peruta et la moitié de toi pour une peruta » : elle est certainement consacrée. Son avis est celui des Guéonim, selon lesquels tout « si tu en viens à dire » vaut une affirmation ; ainsi les deux premières questions sont résolues : chacun compte en continuant dans son propre jour. Mais il semble qu&#x27;ici on ne puisse pas dire cela, car la dernière question, « deux moitiés de toi pour une peruta », ne se tient pas sur la première porte, et l&#x27;on ne peut pas dire à son sujet « si tu en viens à dire » ; et là il est raisonnable de dire qu&#x27;elle est davantage consacrée que toutes, comme le dit la guemara : « ici certainement il parle en une seule fois, ou bien il n&#x27;y a pas de femme par moitiés du tout ». Et puisqu&#x27;elle est restée en teiku, à plus forte raison les premières ; et il n&#x27;y a pas du tout de femme par moitiés, sinon dans le doute.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Une autre question de Rava, sur un échange entre deux pères : une peruta pour deux mariages. Suit-on celui qui donne et celui qui reçoit (une peruta, donc de l'argent) ou les personnes concernées (une peruta pour quatre personnes) ? Teiku. Tossefot limite le cas aux filles mineures ou analyse la signification de « suit-on celui qui donne ». Le Rosh reprend ici le même passage que sur 7a, ensemble des questions de ce type et opinions de Rabbénou 'Hananel et du Rambam.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בָּעֵי רַב פָּפָּא: ״בִּתְּךָ וּפָרָתְךָ בִּפְרוּטָה״ מַהוּ? מִי אָמְרִינַן בִּתְּךָ בַּחֲצִי פְּרוּטָה וּפָרָתְךָ בַּחֲצִי פְרוּטָה, אוֹ דִּילְמָא בִּתְּךָ בִּפְרוּטָה וּפָרָתְךָ בִּמְשִׁיכָה? תֵּיקוּ.</div>
+            <div class="fr"><p>Rav Pappa a demandé : « Ta fille et ta vache pour une peruta », qu&#x27;en est-il ? Dit-on : ta fille pour une demi-peruta et ta vache pour une demi-peruta, ou bien : ta fille pour une peruta et ta vache par la traction (meshi&#x27;ha) ?</p><p>Teiku.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אוֹ דִילְמָא בִּתְּךָ בִּפְרוּטָה</b> דְּמִידָּע יָדַע דְּבִבְצִיר מִפְּרוּטָה לֹא מְקַדְּשָׁהּ וּפָרָתוֹ לֹא אָמַר עַל פְּרוּטָה אֶלָּא שֶׁתִּקְנֶה לוֹ כְּשֶׁיִּמְשְׁכֶנָּה:</div>
+          <div class="glose-fr">« Ou bien : ta fille pour une peruta » : car il sait qu&#x27;il ne la consacre pas pour moins qu&#x27;une peruta, et il n&#x27;a pas dit « ta vache » à propos de la peruta, mais pour qu&#x27;elle lui soit acquise quand il la tirera.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בִּתְּךָ וּפָרָתְךָ בִּפְרוּטָה</b> כֵּיוָן דְּפָרָה אֵין נִקְנֵית בְּכֶסֶף שָׁדֵינָא לְהוּ בָּתַר בִּתּוֹ וַהֲדַר בָּעֵי בִּתְּךָ וְקַרְקָעֲךָ דְּקַרְקַע נִקְנֶה בְּכֶסֶף:</div>
+          <div class="glose-fr">« Ta fille et ta vache pour une peruta » : puisqu&#x27;une vache ne s&#x27;acquiert pas par l&#x27;argent, nous les avons jugées d&#x27;après sa fille ; et ensuite il demande « ta fille et ton terrain », car un terrain s&#x27;acquiert par l&#x27;argent.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Pappa demande : une peruta pour la fille et la vache. Le partage en deux demi-perutot rendrait le kiddouchin invalide. Autre lecture : la peruta est pour la fille, et la vache s'acquiert séparément par la <b>meshi'ha</b> (traction). Teiku. Tossefot note qu'une vache ne s'acquiert pas par l'argent, d'où le cas suivant avec un terrain.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בָּעֵי רַב אַשִּׁי: ״בִּתְּךָ וְקַרְקָעֲךָ בִּפְרוּטָה״ מַהוּ? בִּתְּךָ בַּחֲצִי פְּרוּטָה וְקַרְקָעֲךָ בַּחֲצִי פְרוּטָה, אוֹ דִּילְמָא בִּתְּךָ בִּפְרוּטָה וְקַרְקָעֲךָ בַּחֲזָקָה? תֵּיקוּ.</div>
+            <div class="fr"><p>Rav Ashi a demandé : « Ta fille et ton terrain pour une peruta », qu&#x27;en est-il ? Ta fille pour une demi-peruta et ton terrain pour une demi-peruta, ou bien : ta fille pour une peruta et ton terrain par la prise de possession (&#x27;hazaka) ?</p><p>Teiku.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>קַרְקָעָךְ בַּחֲזָקָה</b> כְּשֶׁאַחֲזִיק בָּהּ:</div>
+          <div class="glose-fr">« Ton terrain par la &#x27;hazaka » : quand j&#x27;en prendrai possession.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Ashi reprend la question de Rav Pappa avec un terrain, qui s'acquiert aussi par l'argent : la peruta se partage-t-elle (donc deux demi-perutot, aucun acte valable) ou le terrain s'acquiert-il par la <b>'hazaka</b> et la peruta est-elle pour la fille ? Teiku.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 352" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="352" fill="#fbfaf6"/>
+<text x="370" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b2b2b">Une prouta pour deux choses : trois questions restées en teiku</text>
+<rect x="20" y="40" width="190" height="36" rx="5" fill="#dcd7c8" stroke="#b6b2a4"/>
+<text x="115" y="62.32" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">Question</text>
+<rect x="220" y="40" width="245" height="36" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="342.5" y="62.32" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2e5c2c">Côté 1</text>
+<rect x="475" y="40" width="245" height="36" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="597.5" y="62.32" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#7c3b2c">Côté 2</text>
+<rect x="20" y="84" width="190" height="70" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="115" y="106.28" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">Rava</text>
+<text x="115" y="123.32" text-anchor="middle" font-size="12" fill="#3a3a3a">tes deux filles pour</text>
+<text x="115" y="140.36" text-anchor="middle" font-size="12" fill="#3a3a3a">mes deux fils</text>
+<rect x="220" y="84" width="245" height="70" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="342.5" y="106.28" text-anchor="middle" font-size="12" fill="#3a3a3a">on suit celui qui donne</text>
+<text x="342.5" y="123.32" text-anchor="middle" font-size="12" fill="#3a3a3a">et celui qui reçoit :</text>
+<text x="342.5" y="140.36" text-anchor="middle" font-size="12" fill="#3a3a3a">une prouta, il y a de l'argent</text>
+<rect x="475" y="84" width="245" height="70" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="597.5" y="106.28" text-anchor="middle" font-size="12" fill="#3a3a3a">on suit les personnes :</text>
+<text x="597.5" y="123.32" text-anchor="middle" font-size="12" fill="#3a3a3a">moins d'une prouta chacune,</text>
+<text x="597.5" y="140.36" text-anchor="middle" font-size="12" fill="#3a3a3a">il n'y a pas d'argent</text>
+<rect x="20" y="162" width="190" height="70" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="115" y="184.28" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">Rav Pappa</text>
+<text x="115" y="201.32" text-anchor="middle" font-size="12" fill="#3a3a3a">ta fille et ta vache</text>
+<text x="115" y="218.36" text-anchor="middle" font-size="12" fill="#3a3a3a">pour une prouta</text>
+<rect x="220" y="162" width="245" height="70" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="342.5" y="184.28" text-anchor="middle" font-size="12" fill="#3a3a3a">la fille pour une prouta,</text>
+<text x="342.5" y="201.32" text-anchor="middle" font-size="12" fill="#3a3a3a">la vache acquise par</text>
+<text x="342.5" y="218.36" text-anchor="middle" font-size="12" fill="#3a3a3a">la traction (meshi'ha)</text>
+<rect x="475" y="162" width="245" height="70" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="597.5" y="192.80" text-anchor="middle" font-size="12" fill="#3a3a3a">une demi-prouta chacune :</text>
+<text x="597.5" y="209.84" text-anchor="middle" font-size="12" fill="#3a3a3a">pas de kiddouchin</text>
+<rect x="20" y="240" width="190" height="70" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="115" y="262.28" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">Rav Achi</text>
+<text x="115" y="279.32" text-anchor="middle" font-size="12" fill="#3a3a3a">ta fille et ton terrain</text>
+<text x="115" y="296.36" text-anchor="middle" font-size="12" fill="#3a3a3a">pour une prouta</text>
+<rect x="220" y="240" width="245" height="70" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="342.5" y="262.28" text-anchor="middle" font-size="12" fill="#3a3a3a">la fille pour une prouta,</text>
+<text x="342.5" y="279.32" text-anchor="middle" font-size="12" fill="#3a3a3a">le terrain acquis par</text>
+<text x="342.5" y="296.36" text-anchor="middle" font-size="12" fill="#3a3a3a">la prise de possession ('hazaka)</text>
+<rect x="475" y="240" width="245" height="70" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="597.5" y="270.80" text-anchor="middle" font-size="12" fill="#3a3a3a">une demi-prouta chacun :</text>
+<text x="597.5" y="287.84" text-anchor="middle" font-size="12" fill="#3a3a3a">pas de kiddouchin</text>
+<text x="370" y="330" text-anchor="middle" font-size="11.5" font-style="italic" fill="#5a564a">Aucune des trois questions n'est tranchée.</text>
+</svg></div><div class="svg-cap">Une prouta pour deux personnes ou deux choses : les deux manières de lire chaque cas, sans réponse (teiku).</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָהוּא גַּבְרָא דְּאקַדֵּישׁ בְּשִׁירָאֵי, רַבָּה אָמַר: לָא צְרִיכִי שׁוּמָא. רַב יוֹסֵף אָמַר: צְרִיכִי שׁוּמָא. אִי דְּאָמַר לַהּ בְּכֹל דְּהוּ, כֻּולֵּי עָלְמָא לָא פְּלִיגִי דְּלָא צְרִיכִי שׁוּמָא.</div>
+            <div class="fr"><p>Un homme a consacré [une femme] avec des vêtements de soie. Rabba dit : ils n&#x27;ont pas besoin d&#x27;évaluation.</p><p>Rav Yosef dit : ils ont besoin d&#x27;évaluation. S&#x27;il lui a dit « par n&#x27;importe quelle valeur », tous s&#x27;accordent qu&#x27;ils n&#x27;ont pas besoin d&#x27;évaluation.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לָא צְרִיכִי שׁוּמָא</b> שֶׁיָּשׁוּמוּ אוֹתָן שַׁמָּאִים קֹודֶם שֶׁתְּקַבְּלֵם:</div>
+          <div class="glose-fr">« Ils n&#x27;ont pas besoin d&#x27;évaluation » : que des estimateurs les évaluent avant qu&#x27;elle les reçoive.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>צְרִיכִי שׁוּמָא</b> וְכֵיוָן שֶׁלֹּא שֶׁמְּאוּם תְּחִלָּה אֵינָהּ מְקֻודֶּשֶׁת כְּדִמְפָרֵשׁ וְאָזֵיל:</div>
+          <div class="glose-fr">« Ils ont besoin d&#x27;évaluation » : et puisque des estimateurs ne les ont pas évalués d&#x27;abord, elle n&#x27;est pas consacrée, comme il l&#x27;explique ensuite.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּכָל דְּהוּ</b> הִתְקַדְּשִׁי לִי בָּהֶן כְּמוֹ שֶׁהֵן דְּלָא צְרִיכִי שׁוּמָא דִּבְצִיר מִפְּרוּטָה לָא שָׁווּ:</div>
+          <div class="glose-fr">« Par n&#x27;importe quelle valeur » : « sois consacrée à moi par eux tels qu&#x27;ils sont », car ils ne valent pas moins qu&#x27;une peruta, donc ils n&#x27;ont pas besoin d&#x27;évaluation.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְרַב יוֹסֵף אָמַר צְרִיכִי שׁוּמָא</b> קֹודֶם קִידּוּשִׁין קָאָמַר כִּדְפֵי&#x27; בַּקּוּנְטְרֵס וְתֵימַהּ דִּלְקַמָּן פ&quot;ב (קִידּוּשִׁין דַּף מח.) תַּנְיָא גַּבֵּי הִתְקַדְּשִׁי לִי בִּשְׁטַר חוֹב וַחֲכָמִים אוֹמְרִים שָׁמִין אֶת הַנְּיָיר אִם יֵשׁ בּוֹ שָׁוֶה פְּרוּטָה מְקֻודֶּשֶׁת וּמַשְׁמַע שָׁמִין אֶת הַנְּיָיר אַחַר קִידּוּשִׁין ואע&quot;ג דְּמִתְּחִלָּה שׁוּמַת הַנְּייָר לֹא הָיְתָה יְדוּעָה וְיֵשׁ לוֹמַר דִּלְלִישָּׁנָא דְּאָמַר בְּכֹל דְּהוּ כֻּולֵּי עָלְמָא לָא פְּלִיגִי אַייְרֵי דְּאָמַר לָהּ כָּל דְּהוּ וּלְלִישָּׁנָא דִּבְכָל דְּהוּ נָמֵי פְּלִיגִי הָכִי קָאָמַר וְאִם רוֹצֶה לְקַדְּשָׁהּ בִּשְׁטָר שָׁמִין אֶת הַנְּיָיר מִתְּחִילָּה אִם יֵשׁ בּוֹ שָׁוֶה פְּרוּטָה מְקֻודֶּשֶׁת כְּלוֹמַר אִם שָׁמוּהוּ תְּחִילָּה לְאַפּוֹקֵי מָמָ&quot;ד מְקֻודֶּשֶׁת אע&quot;פ שֶׁאֵין בּוֹ שָׁוֶה פְּרוּטָה מִטַּעַם שְׁטָר:</div>
+          <div class="glose-fr">« Et Rav Yosef dit qu&#x27;ils ont besoin d&#x27;évaluation » : il dit avant le kiddouchin, comme Rachi l&#x27;a expliqué. Et c&#x27;est étonnant, car plus loin, au chapitre 2 (48a), on enseigne au sujet de « sois consacrée à moi par un acte de dette » que les Sages disent : on évalue le papier, et s&#x27;il vaut une peruta, elle est consacrée ; et cela signifie qu&#x27;on évalue le papier après le kiddouchin, bien qu&#x27;au départ la valeur du papier ne fût pas connue. On peut répondre : selon la version « par n&#x27;importe quelle valeur », tous s&#x27;accordent et il s&#x27;agit du cas où il lui a dit « n&#x27;importe quoi » ; et selon la version où l&#x27;on discute aussi pour « n&#x27;importe quoi », voici ce qu&#x27;on dit : et s&#x27;il veut la consacrer par un acte, on évalue d&#x27;abord le papier, et s&#x27;il vaut une peruta, elle est consacrée, c&#x27;est-à-dire s&#x27;ils l&#x27;ont évalué d&#x27;abord ; cela écarte l&#x27;avis de celui qui dit qu&#x27;elle est consacrée même si le papier ne vaut pas une peruta, en raison de la valeur de l&#x27;acte.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Un homme a consacré une femme avec des vêtements de soie sans avoir fait évaluer leur valeur. Rabba : l'évaluation n'est pas nécessaire, car ils valent certainement plus qu'une peruta. Rav Yosef : elle est nécessaire. Si l'homme a dit « par n'importe quelle valeur », tous reconnaissent qu'aucune évaluation n'est nécessaire. Tossefot compare avec la baraïta du chapitre 2 sur le papier d'un acte de dette.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִי דְּאָמַר לָהּ ״חַמְשִׁין״ וְלָא שָׁווּ חַמְשִׁין – הָא לָא שָׁווּ. כִּי פְּלִיגִי, דְּאָמַר ״חַמְשִׁין״ וְשָׁווּ חַמְשִׁין. רַבָּה אָמַר: לָא צְרִיכִי שׁוּמָא, דְּהָא שָׁווּ חַמְשִׁין. רַב יוֹסֵף אָמַר: צְרִיכִי שׁוּמָא, כֵּיוָן דְּאִיתְּתָא לָא בְּקִיאָה בְּשׁוּמָא לָא סָמְכָה דַּעְתַּהּ.</div>
+            <div class="fr"><p>S&#x27;il lui a dit « cinquante » et qu&#x27;ils ne valent pas cinquante : ils ne valent pas. Ils sont en désaccord quand il a dit « cinquante » et qu&#x27;ils valent cinquante.</p><p>Rabba dit : ils n&#x27;ont pas besoin d&#x27;évaluation, puisqu&#x27;ils valent cinquante. Rav Yosef dit : ils ont besoin d&#x27;évaluation, puisque la femme ne s&#x27;y connaît pas en évaluation et son esprit ne s&#x27;appuie pas.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִי דְּאָמַר</b> הִתְקַדְּשִׁי לִי בַּחֲמִשִּׁים זוּז וַהֲרֵי לְךָ אֵלּוּ בִּדְמֵיהֶם:</div>
+          <div class="glose-fr">« S&#x27;il a dit » : « sois consacrée à moi par cinquante zouzim, et voici pour toi ceux-ci en leur valeur ».</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְשָׁווּ חַמְשִׁין</b> מִיהוּ לֹא שֶׁמְּאַוֶּה בְּקִיאִים קֹודֶם לְכָךְ:</div>
+          <div class="glose-fr">« Et ils valent cinquante » : mais des experts ne les ont pas évalués auparavant.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">הָהוּא גַּבְרָא דְּאקַדֵּישׁ בְּשִׁירָאֵי רַבָּה אָמַר לָא צְרִיכִי שׁוּמָא רַב יוֹסֵף אָמַר צְרִיכִי שׁוּמָא אִי אָמַר לָהּ כָּל דְּהוּ כֻּולֵּי עָלְמָא לָא פְּלִיגִי דְּלָא צְרִיכִי שׁוּמָא וְאִי אֲמַר לַהּ חַמְשִׁין וְלָא שָׁווּ חַמְשִׁין כֻּולֵּי עָלְמָא לָא פְלִיגִי דִּצְרִיכִי שׁוּמָא כִּי פְּלִיגִי דַּאֲמַר לֵהּ חַמְשִׁין וְשָׁווּ חַמְשִׁין רַבָּה אָמַר לָא צְרִיכִי שׁוּמָא דְּהָא שָׁווּ חַמְשִׁין רַב יוֹסֵף אָמַר צְרִיכִי שׁוּמָא כֵּיוָן דְּאִיתְּתָא לָא בְּקִיאָה בְּשׁוּמָא לָא סָמְכָה דַּעְתַּהּ. דַּף ט&#x27;. וְהִלְכְתָא שִׁירָאֵי לָא צְרִיכִי שׁוּמָא וְדִקְדֵּק ר&quot;ת זַ&quot;ל אַמַּאי אִיצְטְרִיךְ לִפְסֹוק כְּרַבָּה לְגַבֵּי רַב יוֹסֵף הָא קי&quot;ל ב&quot;ב דַּף קמג. הִלְכְתָא כְּרַבָּה בכ&quot;מ בַּר מִשָּׂדֶה עִנְיָן וּמֶחֱצָה אע&quot;ג שֶׁיֵּשׁ רוֹצִין לוֹמַר דְּהַיְינוּ דַּוְקָא בְּבָבָא בָּתְרָא אִי אֶפְשָׁר לוֹמַר כֵּן דְּעַל כְּרִחְיָךְ בְּכֻולָּהּ גְּמָרָא קָא אָמַר כִּדְמוֹכַח בְּפֶרֶק מִי שֶׁאֲחָזוֹ (גִּיטִּין דַּף עַד.) דְּקָאָמַר וְתִסְבְּרָא דְּרַבָּה כְּרַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל וְהָא קַיְימָא לַן דְּהִילְכְתָא כְּרַבָּה וּבְהָא קַייְמָא לַן דְּאֵין הֲלָכָה כְּרַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל וּבְכֻולָּהּ גְּמָרָא הוּא דְּקַייְמָא לָן הָכִי מִדְּלָא קָאָמַר בְּהָא כִּדְקָאָמַר עַל רַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל וְעוֹד קָשֶׁה אַמַּאי לָא קָאָמַר וְהִילְכְתָא כְּרַבָּה כִּדְקָאָמַר וְהִילְכְתָא כְּרַבִּי אֶלְעָזָר וְהִילְכְתָא כְּרָבָא אָמַר רַב נַחְמָן עַל כֵּן הָיָה אוֹמֵר דְּדַוְקָא שִׁירָאֵי הוּא דְּלָא צְרִיכִי שׁוּמָא לְפִי שֶׁשּׁוּמָתָן יָדוּעַ קְצָת וְאֵין רְגִילִים לִטְעוֹת בּוֹ כָּל כָּךְ אֲבָל שְׁאָר דְּבָרִים כְּגוֹן אֲבָנִים טוֹבוֹת וּמַרְגָּלִיּוֹת אֵין בְּקִיאִין בְּשׁוּמָתָן וּפְעָמִים שֶׁטּוֹעִין בָּהֶן הַרְבֵּה צְרִיכִין שׁוּמָא מִשּׁוּם דְּלָא סָמְכָא דַּעְתָּהּ לְכָךְ נָהֲגוּ הָעוֹלָם לְקַדֵּשׁ בְּטַבַּעַת שֶׁאֵין בָּהּ אֶבֶן וְהָא דְּאָמְרִינַן לְקַמָּן בְּפֶרֶק שֵׁנִי (קִידּוּשִׁין דַּף מח.) כְּגוֹן שֶׁהוֹסִיף לָהּ נֹופֶךְ מִשֶּׁלּוֹ יֵשׁ לוֹמַר דְּמַיְירֵי כְּגוֹן שֶׁשָּׁמוּ אוֹתָהּ אִי נָמֵי נֹופֶךְ הָוֵי כְּמוֹ שִׁירָאֵי שֶׁשּׁוּמָתוֹ יָדוּעַ קְצָת וּלְקַמָּן (קִידּוּשִׁין דַּף יב.) הַהוּא דְּקַדֵּישׁ בְּאַבְנָא דְּכֻוחְלָא וְהָיָה רַב חִסְדָּא מְשַׁעֵר אִם יֵשׁ בּוֹ שָׁוֶה פְּרוּטָה הַאי אַבְנָא דְּכֻוחְלָא אֵינָהּ בִּכְלַל אֲבָנִים טוֹבוֹת אֶלָּא כְּעֵין אַבְנֵי שֶׁיֵּשׁ כִּדְאִיתָא בְּרֵישׁ בָּבָא בָּתְרָא דַּף ד. בְּבִנְיַן הוֹרְדּוֹס דְּבָנֶיהָ בְּאַבְנֵי שִׁישָׁא וּמַרְמְרָא וְכֻוחְלָא. וּמִיהוּ לֹא בְּרִירָא לִי הַאי טַעְמָא מַה שֶׁנָּהֲגוּ הָעוֹלָם לְהָסִיר הָאֶבֶן מִן הַטַּבַּעַת דְּהָא אָמְרִינַן בְּכָל דְּהוּ לָא פְלִיגִי לְלִישָּׁנָא קַמָּא וְאֵין דֶּרֶךְ לָתֵת שׁוּמָא לְטַבַּעַת שֶׁל קִידּוּשִׁין ור&quot;י אָמַר דְּמַה שֶׁהֻוצְרַךְ לִפְסֹוק כָּאן כְּרַבָּה מִשּׁוּם דְּרַב יוֹסֵף הֵבִיא כַּמָּה רְאָיוֹת לִדְבָרָיו וְהָא דְּלָא קָאָמַר וְהִילְכְתָא כְּרַבָּה דְּלָא תֵּימָא הַייְנוּ כְּרַבָּה דְּאִיכָּא דְּאָמְרִי דִּבְכָל דְּהוּ לֹא צָרִיךְ שׁוּמָא אֲבָל אָמַר חַמְשִׁין וְשָׁווּ חַמְשִׁין צְרִיכִי שׁוּמָא לְפִיכָךְ הֻוצְרַךְ לִפְסֹוק דִּבְכָל עִנְיָן לָא צְרִיכִי שׁוּמָא:</div>
+          <div class="glose-fr">Un homme a consacré avec des vêtements de soie. Rabba a dit : ils n&#x27;ont pas besoin d&#x27;évaluation. Rav Yosef a dit : ils ont besoin d&#x27;évaluation. S&#x27;il lui a dit « n&#x27;importe quoi », tous s&#x27;accordent qu&#x27;ils n&#x27;ont pas besoin d&#x27;évaluation. Et s&#x27;il lui a dit « cinquante » et qu&#x27;ils ne valent pas cinquante, tous s&#x27;accordent qu&#x27;ils ont besoin d&#x27;évaluation. Ils sont en désaccord quand il lui a dit « cinquante » et qu&#x27;ils valent cinquante : Rabba a dit qu&#x27;ils n&#x27;ont pas besoin d&#x27;évaluation, puisqu&#x27;ils valent cinquante ; Rav Yosef a dit qu&#x27;ils ont besoin d&#x27;évaluation, puisque la femme ne s&#x27;y connaît pas en évaluation et son esprit ne s&#x27;appuie pas. Page 9. La hala&#x27;ha est que la soie n&#x27;a pas besoin d&#x27;évaluation. Rabbénou Tam, de mémoire bénie, a fait une remarque précise : pourquoi fallait-il trancher comme Rabba contre Rav Yosef, alors que nous avons établi (Bava Batra 143a) que la hala&#x27;ha est comme Rabba partout, sauf dans « bar mi-sadeh inyan » et « mi&#x27;hatsa » ? Même si certains veulent dire que cela vaut seulement dans Bava Batra, on ne peut pas le dire, car il le dit nécessairement dans toute la guemara, comme le prouve le chapitre « Mi chéa&#x27;hazo » (Gittin 74a), où l&#x27;on dit : « Penses-tu que Rabba est comme Rabban Chimon ben Gamliel ? Nous avons établi que la hala&#x27;ha est comme Rabba, et pour cela nous avons établi que la hala&#x27;ha n&#x27;est pas comme Rabban Chimon ben Gamliel », et nous l&#x27;établissons dans toute la guemara, puisqu&#x27;il n&#x27;a pas dit « ici » comme il le dit à propos de Rabban Chimon ben Gamliel. Et de plus, pourquoi ne dit-on pas « et la hala&#x27;ha est comme Rabba », comme on dit « et la hala&#x27;ha est comme Rabbi Elazar » et « et la hala&#x27;ha est comme Rava », a dit Rav Na&#x27;hman ? C&#x27;est pourquoi il disait que seule la soie n&#x27;a pas besoin d&#x27;évaluation, parce que sa valeur est quelque peu connue et qu&#x27;on ne s&#x27;y trompe pas beaucoup ; mais les autres choses, comme les pierres précieuses et les perles, dont on ne connaît pas bien la valeur et sur lesquelles on se trompe parfois beaucoup, ont besoin d&#x27;évaluation, car son esprit ne s&#x27;appuie pas. C&#x27;est pourquoi l&#x27;usage du monde est de consacrer avec une bague sans pierre. Et quant à ce que nous disons plus loin au chapitre deux (48a) « par exemple s&#x27;il lui a ajouté un nofe&#x27;h de sa part », on peut dire qu&#x27;il s&#x27;agit du cas où ils l&#x27;ont évalué ; ou bien le nofe&#x27;h est comme la soie, dont la valeur est quelque peu connue. Et plus loin (12a) ce cas de l&#x27;homme qui a consacré avec une pierre de kou&#x27;hla, que Rav &#x27;Hisda estimait pour voir si elle valait une peruta : cette pierre de kou&#x27;hla n&#x27;est pas comprise parmi les pierres précieuses mais est du genre des pierres de marbre, comme il est dit au début de Bava Batra (4a) dans la construction d&#x27;Hérode, qui bâtit de pierres de chicha, de marmara et de kou&#x27;hla. Cependant, cette raison n&#x27;est pas claire pour moi, que le monde ait l&#x27;usage d&#x27;ôter la pierre de la bague, car nous avons dit que sur « n&#x27;importe quoi » ils ne sont pas en désaccord selon la première version, et l&#x27;usage n&#x27;est pas de faire évaluer une bague de kiddouchin. Et Rabbénou Yits&#x27;hak dit que s&#x27;il fallait trancher ici comme Rabba, c&#x27;est parce que Rav Yosef a apporté plusieurs preuves à ses paroles ; et s&#x27;il n&#x27;a pas dit « la hala&#x27;ha est comme Rabba », c&#x27;est pour que l&#x27;on ne dise pas qu&#x27;il s&#x27;agit de Rabba selon ceux qui disent que pour « n&#x27;importe quoi » il n&#x27;y a pas besoin d&#x27;évaluation, mais que s&#x27;il a dit cinquante et qu&#x27;ils valent cinquante, il faut une évaluation ; c&#x27;est pourquoi il a fallu trancher que dans tous les cas ils n&#x27;ont pas besoin d&#x27;évaluation.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Précision du désaccord. Si l'homme a dit une valeur (cinquante) que les vêtements n'atteignent pas, aucun kiddouchin. S'ils valent bien ce qu'il a dit, Rabba valide sans évaluation. Rav Yosef exige une évaluation préalable : la femme ne sait pas estimer et ne se fie pas à l'homme. Le Rosh tranche comme Rabba pour la soie, discute avec Rabbénou Tam et Rabbénou Yits'hak de la portée de cette décision, et mentionne l'usage de consacrer par une bague sans pierre.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 334" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="334" fill="#fbfaf6"/>
+<text x="370" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b2b2b">Kiddouchin par des vêtements de soie : faut-il une évaluation ?</text>
+<rect x="20" y="40" width="230" height="36" rx="5" fill="#dcd7c8" stroke="#b6b2a4"/>
+<text x="135" y="62.32" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">Ce qu'il a dit</text>
+<rect x="260" y="40" width="225" height="36" rx="5" fill="#e3ecf5" stroke="#4f78a8"/>
+<text x="372.5" y="62.32" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2c4a6e">Rabba</text>
+<rect x="495" y="40" width="225" height="36" rx="5" fill="#ece6f2" stroke="#7d6a9a"/>
+<text x="607.5" y="62.32" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#46385e">Rav Yosef</text>
+<rect x="20" y="84" width="230" height="44" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="135" y="110.32" text-anchor="middle" font-size="12" fill="#3a3a3a">'par n'importe quelle valeur'</text>
+<rect x="260" y="84" width="460" height="44" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="490" y="110.32" text-anchor="middle" font-size="12" fill="#2e5c2c">1re version : tous d'accord, pas besoin d'évaluation</text>
+<rect x="20" y="136" width="230" height="44" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="135" y="153.80" text-anchor="middle" font-size="12" fill="#3a3a3a">'cinquante', et ils ne</text>
+<text x="135" y="170.84" text-anchor="middle" font-size="12" fill="#3a3a3a">valent pas cinquante</text>
+<rect x="260" y="136" width="460" height="44" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="490" y="162.32" text-anchor="middle" font-size="12" fill="#7c3b2c">pas de kiddouchin, selon tous</text>
+<rect x="20" y="188" width="230" height="64" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="135" y="215.80" text-anchor="middle" font-size="12" fill="#3a3a3a">'cinquante', et ils</text>
+<text x="135" y="232.84" text-anchor="middle" font-size="12" fill="#3a3a3a">valent cinquante</text>
+<rect x="260" y="188" width="225" height="64" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="372.5" y="215.80" text-anchor="middle" font-size="12" fill="#2e5c2c">pas besoin d'évaluation :</text>
+<text x="372.5" y="232.84" text-anchor="middle" font-size="12" fill="#2e5c2c">ils valent bien cinquante</text>
+<rect x="495" y="188" width="225" height="64" rx="5" fill="#fdf4e8" stroke="#c98b3a"/>
+<text x="607.5" y="207.28" text-anchor="middle" font-size="12" fill="#6b4a14">évaluation nécessaire : la</text>
+<text x="607.5" y="224.32" text-anchor="middle" font-size="12" fill="#6b4a14">femme ne sait pas estimer,</text>
+<text x="607.5" y="241.36" text-anchor="middle" font-size="12" fill="#6b4a14">son esprit ne s'appuie pas</text>
+<rect x="20" y="266" width="700" height="50" rx="5" fill="#ece6f2" stroke="#7d6a9a"/>
+<text x="370" y="286.80" text-anchor="middle" font-size="12" fill="#46385e">2e version : ils sont en désaccord même pour 'n'importe quelle valeur'.</text>
+<text x="370" y="303.84" text-anchor="middle" font-size="12" fill="#46385e">Rav Yosef : un objet qui vaut de l'argent est comme l'argent, qui a une valeur fixée.</text>
+</svg></div><div class="svg-cap">Le désaccord de Rabba et Rav Yosef sur l&#x27;évaluation des vêtements de soie, selon les deux versions.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִיכָּא דְּאָמְרִי בְּכֹל דְּהוּ נָמֵי פְּלִיגִי. רַב יוֹסֵף אָמַר: שָׁוֶה כֶּסֶף הֲרֵי הוּא כְּכֶסֶף, מַה כֶּסֶף דְּקִיץ –</div>
+            <div class="fr"><p>Il y en a qui disent : pour « n&#x27;importe quoi » aussi ils sont en désaccord. Rav Yosef dit : un objet qui vaut de l&#x27;argent est comme de l&#x27;argent ; de même que l&#x27;argent est fixé,</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שָׁוֶה כֶּסֶף כְּכֶסֶף</b> גַּבֵּי קִידּוּשִׁין כֶּסֶף כְּתִיב וְשָׁוֶה כֶּסֶף אִיתְרַבִּי כְּכֶסֶף כִּדְאָמְרִינַן לְקַמָּן יָשִׁיב לְרַבּוֹת שָׁוֶה כֶּסֶף הִלְכָּךְ כִּי כֶּסֶף בָּעֵינַן דְּקָיֵיץ:</div>
+          <div class="glose-fr">« Un objet qui vaut de l&#x27;argent est comme de l&#x27;argent » : pour les kiddouchin « argent » est écrit, et « un objet qui vaut de l&#x27;argent » est inclus comme l&#x27;argent, comme nous le disons plus loin (Kiddouchin 28a) « il rendra », pour inclure ce qui vaut de l&#x27;argent ; c&#x27;est pourquoi, comme l&#x27;argent, nous exigeons qu&#x27;il soit fixé.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Seconde version : le désaccord vaut même pour « par n'importe quelle valeur ». Rav Yosef appuie son avis sur le principe selon lequel un objet qui vaut de l'argent est comme de l'argent : l'argent a une valeur fixée (<b>qaïtz</b>), donc l'objet doit avoir une valeur fixée avant le kiddouchin. La phrase est interrompue ici ; elle se poursuit à la page suivante.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Kiddushin_7a.html">&lsaquo; Kiddushin 7a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Kiddushin_8a.html">Kiddushin 8a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schémas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage sélectionné :\n« '+s+' »\n'):'\nPassage concerné :\n\n')+'\nCorrection proposée :\n\n\n— envoyé depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<p id="credit-texte" style="text-align:center;font-size:.76rem;color:#78716c;margin:6px auto 18px;max-width:640px;line-height:1.5">
+Texte hébreu et araméen vocalisé : édition numérique William Davidson du Talmud Koren Noé, via
+<a href="https://www.sefaria.org" style="color:#78716c">Sefaria</a> (licence CC BY-NC). Traduction française, notes et schémas : Chiourim BA (licence CC BY 4.0).</p>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

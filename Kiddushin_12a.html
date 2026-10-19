@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kiddushin 12a — La valeur de la peruta, l&#x27;issar italien et les kiddouchin douteux</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Kiddushin 12a — La valeur de la peruta, l&#x27;issar italien et les kiddouchin douteux</h1>
+    <div class="ref">Kiddushin 12a</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Kiddushin_11b.html">&lsaquo; Kiddushin 11b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Kiddushin_12b.html">Kiddushin 12b &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> La guemara achève l&#x27;examen de la raison de Beit Chamaï (la déduction du rachat de la servante hébraïque, rapprochée de la désignation), puis donne l&#x27;avis de Rava : que les filles d&#x27;Israël ne soient pas comme un bien sans maître. Elle passe à Beit Hillel : une peruta.</p><p>Rav Yosef pense que « peruta » est une valeur quelconque ; Abaye lui oppose la michna, qui la fixe à un huitième d&#x27;issar italien. Plusieurs estimations sont rapportées (un huitième ou un sixième), et la guemara concilie les deux par la variation du cours de l&#x27;issar par rapport à l&#x27;argent.</p><p>Elle traite ensuite l&#x27;avis de Shmuel sur le kiddouchin avec une datte, valide par crainte que l&#x27;objet vaille une peruta en Médie, et le distingue du kiddouchin certain par la notion de kiddouchin douteux, avec les cas de la botte de chiffons et de la pierre bleue devant Rav &#x27;Hisda.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 470" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah-k12a-d1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a766a"/></marker></defs>
+<rect x="0" y="0" width="740" height="470" fill="#fbfaf6"/>
+<text x="370" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b2b2b">Kiddouchin 12a : le dinar de Beit Chamaï, la prouta de Beit Hillel</text>
+<rect x="20" y="40" width="340" height="112" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="190" y="66.30" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#7c3b2c">Beit Chamaï : un dinar</text>
+<text x="190" y="83.30" text-anchor="middle" font-size="12" fill="#7c3b2c">R. Shimon ben Lakish : appris de la</text>
+<text x="190" y="100.30" text-anchor="middle" font-size="12" fill="#7c3b2c">servante hébraïque, qui doit pouvoir déduire</text>
+<text x="190" y="117.30" text-anchor="middle" font-size="12" fill="#7c3b2c">Rava : que les filles d'Israël ne soient</text>
+<text x="190" y="134.30" text-anchor="middle" font-size="12" fill="#7c3b2c">pas comme un bien sans maître</text>
+<rect x="380" y="40" width="340" height="112" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="550" y="74.80" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2e5c2c">Beit Hillel : une prouta</text>
+<text x="550" y="91.80" text-anchor="middle" font-size="12" fill="#2e5c2c">Rav Yosef : une valeur quelconque</text>
+<text x="550" y="108.80" text-anchor="middle" font-size="12" fill="#2e5c2c">Abaye : une baraïta la fixe :</text>
+<text x="550" y="125.80" text-anchor="middle" font-size="12" fill="#2e5c2c">un huitième de l'issar italien</text>
+<rect x="380" y="172" width="340" height="92" rx="5" fill="#e3ecf5" stroke="#4f78a8"/>
+<text x="550" y="196.80" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2c4a6e">Combien vaut la prouta ?</text>
+<text x="550" y="213.80" text-anchor="middle" font-size="12" fill="#2c4a6e">Rav Dimi (R. Simaï) : 1/8 d'issar</text>
+<text x="550" y="230.80" text-anchor="middle" font-size="12" fill="#2c4a6e">Ravin (R. Dostaï et autres) : 1/6 d'issar</text>
+<text x="550" y="247.80" text-anchor="middle" font-size="12" fill="#2c4a6e">Accord : le cours de l'issar a varié</text>
+<line x1="550" y1="152" x2="550" y2="170" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k12a-d1)"/>
+<rect x="20" y="172" width="340" height="92" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="190" y="196.80" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">Rav Yosef objecte</text>
+<text x="190" y="213.80" text-anchor="middle" font-size="12" fill="#3a3a3a">"plus de 2000 prouta dans 2 sela" ?</text>
+<text x="190" y="230.80" text-anchor="middle" font-size="12" fill="#3a3a3a">Un vieillard : "près de 2000" ;</text>
+<text x="190" y="247.80" text-anchor="middle" font-size="12" fill="#3a3a3a">en fait 1536 (plus de la moitié)</text>
+<line x1="378" y1="218" x2="362" y2="218" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k12a-d1)"/>
+<rect x="20" y="290" width="700" height="52" rx="5" fill="#fdf4e8" stroke="#c98b3a"/>
+<text x="370" y="311.80" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#6b4a14">Shmuel : consacrée avec une datte</text>
+<text x="370" y="328.80" text-anchor="middle" font-size="12" fill="#6b4a14">même si un kor de dattes vaut un dinar : on craint qu'elle vaille une prouta en Médie</text>
+<rect x="20" y="362" width="340" height="86" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="190" y="383.80" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2e5c2c">Kiddouchin certain</text>
+<text x="190" y="400.80" text-anchor="middle" font-size="12" fill="#2e5c2c">l'objet vaut une prouta sur place</text>
+<text x="190" y="417.80" text-anchor="middle" font-size="12" fill="#2e5c2c">(michna de Beit Hillel ; les chiffons</text>
+<text x="190" y="434.80" text-anchor="middle" font-size="12" fill="#2e5c2c">estimés devant Rav)</text>
+<rect x="380" y="362" width="340" height="86" rx="5" fill="#fff4d6" stroke="#b08a2a"/>
+<text x="550" y="383.80" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#6b5412">Kiddouchin douteux</text>
+<text x="550" y="400.80" text-anchor="middle" font-size="12" fill="#6b5412">il ne la vaut pas sur place,</text>
+<text x="550" y="417.80" text-anchor="middle" font-size="12" fill="#6b5412">mais peut la valoir ailleurs (Shmuel)</text>
+<text x="550" y="434.80" text-anchor="middle" font-size="12" fill="#6b5412">Rav 'Hisda n'adopte pas cet avis</text>
+<line x1="250" y1="342" x2="190" y2="360" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k12a-d1)"/>
+<line x1="490" y1="342" x2="550" y2="360" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k12a-d1)"/>
+</svg></div>
+          <figcaption>Vue d&#x27;ensemble : les raisons du dinar de Beit Chamaï, la valeur de la prouta de Beit Hillel, et le kiddouchin douteux de Shmuel.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לָא סָלְקָא דַעְתָּךְ – דֻּומְיָא דְּיִיעוּד, מַה ייִעוּד, אַף עַל גַּב דְּאִי בָּעֵי מְיַיעֵד וְאִי בָּעֵי לָא מְייַעֵד, כָּל הֵיכָא דְּלָא מָצֵי מְייַעֵד – לָא הָווּ זְבִינָא זְבִינֵי, הָכִי נָמֵי כֹּל הֵיכָא דְּלָא מָצֵי[א] מִיגַּרְעָא – לָא הָווּ זְבִינָא זְבִינֵי.</div>
+            <div class="fr"><p>Cela ne peut te venir à l&#x27;esprit ! [Il faut le comparer] à la désignation (yi&#x27;oud) : de même que pour la désignation, bien que s&#x27;il veut il désigne et s&#x27;il ne veut pas il ne désigne pas, partout où il ne peut pas désigner la vente n&#x27;est pas une vente, de même ici, partout où elle ne peut pas déduire, la vente n&#x27;est pas une vente.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לָא ס&quot;ד</b> שֶׁתְּהֵא נִקְנֵית בְּדָבָר שֶׁאֵין בּוֹ גֵּירוּעַ מֵאַחַר שֶׁנִּכְתַּב גֵּירוּעַ כָּאן:</div>
+          <div class="glose-fr">« Cela ne peut te venir à l&#x27;esprit » : qu&#x27;elle soit acquise par une chose qui n&#x27;a pas de déduction, puisque la déduction a été écrite ici.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דֻּומְיָא דְּיִיעוּד</b> כִּי הֵיכִי דְּאָמַר לְעִנְיַן ייִעוּד שֶׁנִּכְתַּב עִמּוֹ אֲשֶׁר לֹא יְעָדָהּ וְלָמַדְנוּ שֶׁרַשַּׁאי הָאָדוֹן לְיַעֲדָהּ לוֹ בְּתוֹךְ שְׁנֵי אִמָּהוֹת וְתִהְיֶה מְקֻודֶּשֶׁת לוֹ אִם יֹאמַר לָהּ הֲרֵי אַתְּ מְיֹועֶדֶת לִי בְּמַה שֶׁיֵּשׁ לִי עָלֶיךָ וְאֵין צָרִיךְ כֶּסֶף אַחֵר וְאָמַר לְקַמָּן (קִידּוּשִׁין דַּף יח:) אֵין אָבִיהָ רַשַּׁאי לְמָוכְרָהּ לִקְרוֹבִים שֶׁהִיא אֲסוּרָה לָהֶם מִשּׁוּם עֶרְוָה לְפִי שֶׁאֵין אֲנִי מְקַיֵּים בָּהּ אֲשֶׁר לֹא יְעָדָהּ וְגֵירוּעַ נָמֵי כְּיִיעוּד מַה ייִעוּד אע&quot;ג כו&#x27;:</div>
+          <div class="glose-fr">« Comme la désignation » : comme il est dit à propos de la désignation, écrite avec lui : « qu&#x27;il n&#x27;aura pas désignée » ; nous avons appris que le maître est autorisé à la désigner pour lui dans l&#x27;intervalle de deux servantes, et elle lui est consacrée s&#x27;il lui dit : « tu m&#x27;es désignée par ce que j&#x27;ai sur toi », et il n&#x27;a pas besoin d&#x27;un autre argent. Et il a dit plus loin (Kiddouchin 18b) que son père n&#x27;est pas autorisé à la vendre à des proches auxquels elle est interdite par prohibition d&#x27;inceste, parce que je ne peux pas accomplir pour elle « qu&#x27;il n&#x27;aura pas désignée » ; et la déduction est comme la désignation : de même que la désignation, bien que, etc.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לָא הָווּ</b> בִּשְׁנֵי סְלָעִים כִּדְפָרֵישִׁית בְּסָמוּךְ:</div>
+          <div class="glose-fr">« N&#x27;est pas » : en deux sela, comme je l&#x27;ai expliqué plus haut.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara écarte l'idée que la servante hébraïque puisse être acquise pour une somme sans déduction possible (une peruta). La déduction du rachat est apparentée à la <b>désignation (yi'oud)</b> : le maître peut désigner sa servante pour lui-même ou pour son fils, et s'il ne peut pas le faire (par exemple parce qu'elle lui est interdite), la vente est nulle. De même, si elle ne peut pas déduire de son prix, la vente est nulle. Une vente à une peruta est donc impossible.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah-k12a-s0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a766a"/></marker></defs>
+<rect x="0" y="0" width="720" height="300" fill="#fbfaf6"/>
+<text x="360" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b2b2b">Pourquoi la servante hébraïque ne s'achète pas pour une prouta</text>
+<rect x="20" y="44" width="320" height="86" rx="5" fill="#e3ecf5" stroke="#4f78a8"/>
+<text x="180" y="65.80" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2c4a6e">La désignation (yi'oud)</text>
+<text x="180" y="82.80" text-anchor="middle" font-size="12" fill="#2c4a6e">le maître peut ou non la désigner ;</text>
+<text x="180" y="99.80" text-anchor="middle" font-size="12" fill="#2c4a6e">là où il ne le peut pas</text>
+<text x="180" y="116.80" text-anchor="middle" font-size="12" fill="#2c4a6e">(interdite à lui), la vente est nulle</text>
+<rect x="380" y="44" width="320" height="86" rx="5" fill="#e3ecf5" stroke="#4f78a8"/>
+<text x="540" y="65.80" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2c4a6e">La déduction (gera'on)</text>
+<text x="540" y="82.80" text-anchor="middle" font-size="12" fill="#2c4a6e">elle déduit de son prix et sort ;</text>
+<text x="540" y="99.80" text-anchor="middle" font-size="12" fill="#2c4a6e">là où elle ne le peut pas</text>
+<text x="540" y="116.80" text-anchor="middle" font-size="12" fill="#2c4a6e">(achat pour une prouta), vente nulle</text>
+<line x1="340" y1="87" x2="378" y2="87" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k12a-s0)"/>
+<text x="359" y="79" text-anchor="middle" font-size="10.5" font-style="italic" fill="#5a564a">comme</text>
+<rect x="20" y="158" width="680" height="52" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="360" y="179.80" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2e5c2c">Donc : la servante hébraïque n'est pas acquise avec une prouta</text>
+<text x="360" y="196.80" text-anchor="middle" font-size="12" fill="#2e5c2c">il faut une somme dont on puisse déduire jusqu'à une prouta</text>
+<line x1="360" y1="130" x2="360" y2="156" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k12a-s0)"/>
+<rect x="20" y="230" width="680" height="52" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="360" y="251.80" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#7c3b2c">Beit Chamaï : la femme apprend de la servante hébraïque</text>
+<text x="360" y="268.80" text-anchor="middle" font-size="12" fill="#7c3b2c">elle n'est pas consacrée avec une prouta (conclusion de R. Shimon ben Lakish)</text>
+<line x1="360" y1="210" x2="360" y2="228" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k12a-s0)"/>
+</svg></div><div class="svg-cap">La déduction est comparée à la désignation : sans possibilité de déduire, pas de vente ; d&#x27;où la règle de Beit Chamaï pour le kiddouchin.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְקִידּוּשֵׁי אִשָּׁה לְבֵית שַׁמַּאי נָפְקָא לְהוּ מֵאָמָה הָעִבְרִיָּה: מֶה אָמָה הָעִבְרִיָּה בִּפְרוּטָה לָא מִקַּנְיָא, אַף אִשָּׁה בִּפְרוּטָה לָא מִיקַּדְּשָׁא.</div>
+            <div class="fr"><p>Et le kiddouchin de la femme, pour Beit Chamaï, vient de la servante hébraïque : comme la servante hébraïque n&#x27;est pas acquise avec une peruta, de même la femme n&#x27;est pas consacrée avec une peruta.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְקִידּוּשֵׁי אִשָּׁה כוּ&#x27;</b> מַסְּקָנָא דְּמִילְּתָא דר&quot;ל הִיא דְּקָא מַסִּיק וְאוֹמֵר טַעְמָא דב&quot;ש כִּדְחִזְקִיָּה:</div>
+          <div class="glose-fr">« Et le kiddouchin de la femme, etc. » : c&#x27;est la conclusion du propos de Rabbi Shimon ben Lakish, qui conclut et dit que la raison de Beit Chamaï est comme celle de &#x27;Hizkiya.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַף אִשָּׁה בִּפְרוּטָה לָא מִיקַּדְּשָׁה</b> דְּגָמְרִינַן מִקִּידּוּשֵׁי יִיעוּד:</div>
+          <div class="glose-fr">« De même la femme n&#x27;est pas consacrée avec une peruta » : car nous l&#x27;apprenons du kiddouchin de la désignation.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La conclusion de Rabbi Shimon ben Lakish : Beit Chamaï apprennent le kiddouchin de la femme de la servante hébraïque. Elle n'est pas acquise avec une peruta ; la femme n'est donc pas consacrée avec une peruta.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאֵימָא פַּלְגָא דְּדִינָר, וְאֵימָא שְׁתֵּי פְּרוּטוֹת! כֵּיוָן דְּאַפִּיקְתֵּיהּ מִפְּרוּטָה – אוֹקְמָה אַדִּינָר.</div>
+            <div class="fr"><p>Et dis : une moitié de dinar, et dis : deux perutot ! Puisque tu l&#x27;as fait sortir de la peruta, tu l&#x27;as établi sur le dinar.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>פַּלְגָא דְּדִינָר</b> וְאִיכָּא גֵּירוּעַ עַד פְּרוּטָה:</div>
+          <div class="glose-fr">« Une moitié de dinar » : et il y a une déduction jusqu&#x27;à une peruta.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כֵּיוָן דְּאַפִּיקְתֵּיהּ מִפְּרוּטָה</b> אַלְמָא חֲשִׁיבוּתָא בָּעֵי&#x27; אוֹקְמָה אַדִּינָר דַּחֲשִׁיב:</div>
+          <div class="glose-fr">« Puisque tu l&#x27;as fait sortir de la peruta » : on voit donc qu&#x27;il faut une valeur ; elle l&#x27;a établi sur le dinar, qui est une valeur.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection : pourquoi la limite serait-elle un dinar et non un demi-dinar, ou deux perutot, qui permettent aussi une déduction ? Réponse : dès lors que le verset a exclu la peruta, il faut une somme d'une certaine valeur, et on l'établit sur le <b>dinar</b>, qui est une pièce importante.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רָבָא אָמַר: הַייְנוּ טַעְמָא דְּבֵית שַׁמַּאי: שֶׁלֹּא יְהוּ בְּנוֹת יִשְׂרָאֵל כְּהֶפְקֵר.</div>
+            <div class="fr"><p>Rava a dit : telle est la raison de Beit Chamaï : afin que les filles d&#x27;Israël ne soient pas comme un bien sans maître (hefqer).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּהֶפְקֵר</b> לִקְנוֹת בְּדָבָר מוּעָט וּמִדְּרַבָּנָן הוּא דְּקָאָמְרִי לָהּ ב&quot;ש דְּאַפְקְעֵיהּ רַבָּנָן לְקִידּוּשִׁין הַפְּחוּתִין מִדִּינָר:</div>
+          <div class="glose-fr">« Comme un bien sans maître » : acquises par peu de chose. Beit Chamaï disent cela par décision rabbinique : les Sages ont annulé les kiddouchin de moins d&#x27;un dinar.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rava donne une autre raison à l'avis de Beit Chamaï : une peruta est trop peu, et les filles d'Israël seraient alors presque sans valeur. Selon Rachi, cette exigence d'un dinar est de décision rabbinique : les Sages ont annulé les kiddouchin de moins d'un dinar.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah-k12a-s3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a766a"/></marker></defs>
+<rect x="0" y="0" width="720" height="250" fill="#fbfaf6"/>
+<text x="360" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b2b2b">Deux raisons pour le dinar de Beit Chamaï</text>
+<rect x="20" y="44" width="330" height="128" rx="5" fill="#e3ecf5" stroke="#4f78a8"/>
+<text x="185" y="78.30" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2c4a6e">Rabbi Shimon ben Lakish</text>
+<text x="185" y="95.30" text-anchor="middle" font-size="12" fill="#2c4a6e">appris de la servante hébraïque</text>
+<text x="185" y="112.30" text-anchor="middle" font-size="12" fill="#2c4a6e">(verset "et elle sera rachetée") ;</text>
+<text x="185" y="129.30" text-anchor="middle" font-size="12" fill="#2c4a6e">pourquoi un dinar et non deux prouta ?</text>
+<text x="185" y="146.30" text-anchor="middle" font-size="12" fill="#2c4a6e">on a quitté la prouta : on fixe le dinar</text>
+<rect x="370" y="44" width="330" height="128" rx="5" fill="#fdf4e8" stroke="#c98b3a"/>
+<text x="535" y="69.80" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#6b4a14">Rava</text>
+<text x="535" y="86.80" text-anchor="middle" font-size="12" fill="#6b4a14">afin que les filles d'Israël ne soient</text>
+<text x="535" y="103.80" text-anchor="middle" font-size="12" fill="#6b4a14">pas comme un bien sans maître (hefqer)</text>
+<text x="535" y="120.80" text-anchor="middle" font-size="12" fill="#6b4a14">Rachi : décision rabbinique, les Sages</text>
+<text x="535" y="137.80" text-anchor="middle" font-size="12" fill="#6b4a14">ont annulé les kiddouchin de moins</text>
+<text x="535" y="154.80" text-anchor="middle" font-size="12" fill="#6b4a14">d'un dinar</text>
+<text x="360" y="200" text-anchor="middle" font-size="11.5" fill="#6a6a6a">Une raison tirée du verset, l'autre d'une mesure des Sages pour la dignité des filles d'Israël.</text>
+<text x="360" y="222" text-anchor="middle" font-size="11.5" fill="#6a6a6a">Dans les deux cas, Beit Hillel s'en tiennent à la prouta.</text>
+</svg></div><div class="svg-cap">Les deux justifications de l&#x27;avis de Beit Chamaï : la servante hébraïque (Rabbi Shimon ben Lakish) et le hefqer (Rava).</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּבֵית הִלֵּל אוֹמְרִים בִּפְרוּטָה. סָבַר רַב יוֹסֵף לְמֵימַר: פְּרוּטָה כָּל דְּהוּ. אָמַר לֵיהּ אַבַּיֵּי: וְהָא עֲלָהּ קָתָנֵי: כַּמָּה הִיא פְּרוּטָה – אֶחָד מִשְּׁמֹנָה בָּאִיסָּר הָאִיטַלְקִי.</div>
+            <div class="fr"><p>Et Beit Hillel disent : avec une peruta. Rav Yosef pensait dire : une peruta, n&#x27;importe quoi.</p><p>Abaye lui dit : mais à ce sujet on a enseigné : combien est une peruta ? Un huitième de l&#x27;issar italien.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כָּל דְּהוּ</b> כָּל מַה שֶׁהַדּוֹרוֹת מְשַׁנִּים אֶת הַמַּטְבֵּעַ פְּעָמִים שֶׁפּוֹחֲתִין פְּעָמִים שֶׁמּוֹסִיפִין מִמִּשְׁקָלָם:</div>
+          <div class="glose-fr">« N&#x27;importe quoi » : tout ce que les générations changent la monnaie, parfois elles la diminuent, parfois elles ajoutent à son poids.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אִיבַּעְיָא לְהוּ בִּיאָה נִישּׂוּאִין עוֹשָׂה אוֹ אֵירוּסִין עוֹשָׂה נָפְקָא מִינַּהּ לְיוֹרְשָׁהּ וּלְטַמֵּא לָהּ וּלְהָפֵר נְדָרֶיהָ אִי אָמְרַתְּ אֵירוּסִין עוֹשָׂה אֵינוֹ יוֹרְשָׁהּ וְאֵינוֹ מִטַּמֵּא לָהּ וְאֵינוֹ מֵפֵר נְדָרֶיהָ וְאִי אָמְרַתְּ נִישּׂוּאִין עוֹשָׂה יוֹרְשָׁהּ וּמִטַּמֵּא לָהּ וּמֵפֵר נְדָרֶיהָ אָמַר אַבָּיֵי תָּא שְׁמַע הָאָב זוֹכֶה בְּבִתּוֹ בְּקִידּוּשֶׁיהָ בְּכֶסֶף וּשְׁטָר וּבִיאָה וְזַכַּאי בִּמְצִיאָתָהּ וּבְמַעֲשֵׂה יָדֶיהָ וּבַהֲפָרַת נְדָרֶיהָ וְאֵינוֹ אוֹכֵל פֵּירוֹת בְּחַיֶּיהָ נִישֵּׂאת יָתֵר עָלָיו הַבַּעַל שֶׁהוּא אוֹכֵל פֵּירוֹת בְּחַיֶּיהָ קָתָנֵי בִּיאָה וְקָתָנֵי נִישֵּׂאת כִּי קָתָנֵי נִישֵּׂאת אַשְּׁאָרָא אָמַר רָבָא ת&quot;ש בַּת ג&#x27; שָׁנִים וְיוֹם אֶחָד מִתְקַדֶּשֶׁת בְּבִיאָה וְכוּ&#x27; נִישֵּׂאת לְכֹהֵן אוֹכֶלֶת בִּתְרוּמָה קָתָנֵי בִּיאָה וְקָתָנֵי נִישֵּׂאת הָכִי קָאָמַר אִי הָנֵי נִישּׂוּאִין דְּכֹהֵן נִינְהוּ אוֹכֶלֶת בִּתְרוּמָה וְכָתַב הָרַמְבַּ&quot;ם זַ&quot;ל דַּהֲלָכָה כְּאַבַּיֵּי וְרָבָא דְּבָעוּ לְמִיפְשַׁט מֵהַאי מַתְנֵי&#x27; דְּאֵירוּסִין עוֹשָׂה ואע&quot;ג דְּדָחֵי לְהוּ גְּמָרָא פְּשָׁטָא דְּמַתְנִיתִין כְּוָותַייְהוּ מַשְׁמַע וְתוּ מַיְיתֵי בָּרַייְתָא דָּר&#x27; יוֹחָנָן בֶּן בַּג בַּג לְמִיפְשַׁט דְּנִישּׂוּאִין עוֹשָׂה וְדָחוּ לָהּ ר&quot;נ וְרָבִינָא דִּלְעוֹלָם אֵירוּסִין עוֹשָׂה וְהִלְכְתָא כְּוָותַייְהוּ: בּ&quot;ה אוֹמְרִים בִּפְרוּטָה וְכוּ&#x27; תְּנָא שֵׁשׁ מָעָה כֶּסֶף דִּינָר מָעָה שְׁנֵי פֻּונְדְּיוֹנִין פֻּונְדְּיוֹן שְׁנֵי אִיסָּרִים אִיסָּר שְׁנֵי מְסַמְּסִים מְסַמֵּס שְׁנֵי קוּנְטְרְקִין קוּנְטְרֵק שְׁתֵּי פְּרוּטוֹת נִמְצָא פְּרוּטָה אֶחָד מִשְּׁמֹנָה בָּאִיסָּר הָאִיטַלְקִי וְהִיא מִשְׁקַל חֲצִי שְׂעוֹרָה כֶּסֶף צָרוּף: אָמַר שְׁמוּאֵל קִדְּשָׁהּ בִּתְמָרָה אֲפִילּוּ עוֹמֵד כֹּור תְּמָרִים בְּדִינָר מְקֻודֶּשֶׁת חָייְשִׁינַן שֶׁמָּא שָׁוֶה פְּרוּטָה בְּמָדַי חוּמְרָא דְּרַבָּנָן בְּעָלְמָא הוּא דְּמִדְּאוֹרַייְתָּא אֵין לַהֶקְדֵּשׁ אֶלָּא מְקוֹמוֹ וּשְׁעָתוֹ עֲרָכִין כד. וְכֵן לְמִקָּח וּמִמְכָּר וְהָא דְּקָרֵי לָהּ בִּשְׁמַעְתִּין קִידּוּשֵׁי סָפֵק לֹא שֶׁיְּהֵא בּוֹ מִשּׁוּם סָפֵק מִדְּאוֹרַיְיתָּא אֶלָּא קִידּוּשֵׁי דְּרַבָּנָן נִינְהוּ וַעֲשָׂאוּהוּ כְּמוֹ סָפֵק שֶׁאֵינָהּ מֻותֶּרֶת לְאַחֵר בְּלֹא גֵּט וְגַם הָרִאשׁוֹן צָרִיךְ לְקַדְּשָׁהּ קִידּוּשִׁין אֲחֵרִים וַדָּאִין וְהָרַמְבַּ&quot;ם זַ&quot;ל פ&quot;ד מֹהַל&#x27; אִישׁוּת הלי&quot;ט כָּתַב שֶׁאִם קִדֵּשׁ בְּתַבְשִׁיל אוֹ בְּיָרָק וְכַיּוֹצֵא בָּהֶן כָּל דָּבָר שֶׁאֵינוֹ מִתְקַיֵּים אִם לֹא הָיָה שָׁוֶה פְּרוּטָה בְּאוֹתוֹ מָקוֹם אֵינָהּ מְקֻודֶּשֶׁת כְּלָל שֶׁהֲרֵי דָּבָר זֶה אֵינוֹ מַגִּיעַ לְמָקוֹם אַחֵר עַד שֶׁיִּפָּסֵד וְיֹאבַד וְלֹא יְהֵא שָׁוֶה כְּלוּם וּמִתּוֹךְ דְּבָרָיו מַשְׁמַע שֶׁאִם הָיִינוּ יוֹדְעִים שֶׁהוּא שָׁוֶה בְּמָקוֹם אַחֵר הָיְתָה מְקֻודֶּשֶׁת מִדְּאוֹרַייְתָּא כֵּיוָן דְּאִי אִית אוֹרְחָא לְהָתָם שַׁוְיָא לָהּ פְּרוּטָה וְהָא דְּקָרֵי לְהוּ קִדּוּשֵׁי סָפֵק מִשּׁוּם דְּקָאָמַר שְׁמוּאֵל שֶׁמָּא שָׁוֶה פְּרוּטָה בְּמָדַי וְאֵין יָדוּעַ לָנוּ בְּוַדַּאי שֶׁשָּׁוֶה פְּרוּטָה בְּמָקוֹם אַחֵר וּמֵחֲמַת זֶה כָּתַב שֶׁאִם הוּא דָּבָר שֶׁאֵינוֹ מִתְקַיֵּים לְהַגִּיעוֹ לִמְקוֹם הַיֹּוקֶר אֵינָהּ מְקֻודֶּשֶׁת כְּלָל מִדְּאוֹרַייְתָּא ור&quot;י פִּי&#x27; אֲפִילּוּ יָדוּעַ שֶׁשָּׁוֶה פְּרוּטָה בְּמָקוֹם אַחֵר דְּאֵין לַהֶקְדֵּשׁ אֶלָּא מְקוֹמוֹ וּשְׁעָתוֹ וְהַאי דִּנְקַט חָיְישִׁינַן שֶׁמָּא שָׁוֶה פְּרוּטָה בְּמָדַי לִרְבוּתָא נְקַט דַּאֲפִילּוּ בְּכִי הַאי גַּוְונָא אָמְרוּ רַבָּנָן דְּהָווּ קִידּוּשִׁין גְּזֵירָה אַטּוּ אוֹתוֹ מָקוֹם שֶׁשָּׁוֶה פְּרוּטָה א&quot;כ אֵין חִילּוּק בֵּין דָּבָר הַמִּתְקַייֵּם וּבֵין דָּבָר שֶׁאֵין מִתְקַיֵּים כֵּיוָן דְּמִשּׁוּם גְּזֵירָה הוּא וּמִסְתַּבְּרָא כְּדִבְרֵי ר&quot;י דְּאִשָּׁה לָא מִיקַּנְיָא נַפְשָׁהּ בְּפָחוֹת מִשָּׁוֶה פְּרוּטָה בִּמְקוֹמָהּ וְהָא אֲנַן תְּנַן בִּפְרוּטָה וּבְשָׁוֶה פְּרוּטָה לָא קַשְׁיָא הָא בְּקִידּוּשֵׁי וַדַּאי הָא בְּקִידּוּשֵׁי סָפֵק:</div>
+          <div class="glose-fr">On a demandé : l&#x27;union conjugale (bi&#x27;a) fait-elle le mariage (nissouïn) ou les fiançailles (érousin) ? La différence pratique concerne l&#x27;héritage de sa succession, le fait de se rendre impur pour elle et l&#x27;annulation de ses vœux. Si tu dis que cela fait les fiançailles, il n&#x27;hérite pas d&#x27;elle, ne se rend pas impur pour elle et n&#x27;annule pas ses vœux ; si tu dis que cela fait le mariage, il hérite d&#x27;elle, se rend impur pour elle et annule ses vœux. Abaye dit : viens entendre : le père acquiert sa fille par son kiddouchin, par l&#x27;argent, l&#x27;acte écrit et l&#x27;union conjugale ; il a droit à ce qu&#x27;elle trouve, au travail de ses mains et à l&#x27;annulation de ses vœux, et il ne mange pas les fruits de son bien de son vivant. Si elle s&#x27;est mariée (nisseet), le mari a plus que lui : il mange les fruits de son bien de son vivant. Il enseigne « union conjugale » et il enseigne « elle s&#x27;est mariée » ; lorsqu&#x27;il enseigne « elle s&#x27;est mariée », cela porte sur le reste. Rava dit : viens entendre : une fille de trois ans et un jour est consacrée par l&#x27;union conjugale, etc. ; si elle s&#x27;est mariée à un kohen, elle mange de la teroumah. Il enseigne « union conjugale » et il enseigne « elle s&#x27;est mariée » : il dit ainsi : si ce sont les nissouïn d&#x27;un kohen, elle mange de la teroumah. Et le Rambam, de mémoire bénie, a écrit que la hala&#x27;ha suit Abaye et Rava, qui voulaient déduire de cette michna que l&#x27;union conjugale fait les fiançailles ; et bien que la guemara les repousse, le sens simple de la michna va dans leur sens. Il cite encore la baraita de Rabbi Yo&#x27;hanan ben Bag Bag pour déduire que l&#x27;union conjugale fait les nissouïn, et Rav Na&#x27;hman et Ravina la repoussent : en réalité elle fait les érousin, et la hala&#x27;ha suit eux. Beit Hillel disent : avec une peruta, etc. Il a été enseigné : six maa d&#x27;argent font un dinar ; une maa, deux pundeyon ; un pundeyon, deux issar ; un issar, deux masmas ; un masmas, deux konterak ; un konterak, deux perutot. Il en résulte qu&#x27;une peruta est un huitième de l&#x27;issar italien, et c&#x27;est le poids d&#x27;une demi-orge d&#x27;argent pur. Shmuel a dit : s&#x27;il l&#x27;a consacrée avec une datte, même si un kor de dattes se tient à un dinar, elle est consacrée : nous craignons que cela vaille une peruta en Médie. C&#x27;est une rigueur seulement rabbinique, car selon la Torah le hekdesh n&#x27;a que son lieu et son moment (Ara&#x27;hin 24a), et de même pour l&#x27;achat et la vente. Et ce que la guemara appelle ici « kiddouchin douteux », ce n&#x27;est pas qu&#x27;il y ait un doute selon la Torah ; ce sont des kiddouchin rabbiniques, qu&#x27;ils ont traités comme un doute : elle n&#x27;est pas permise à un autre sans acte de divorce, et le premier doit aussi la consacrer à nouveau par des kiddouchin certains. Le Rambam, de mémoire bénie (Ichout 4,19), a écrit que s&#x27;il a consacré avec un plat cuisiné ou des légumes ou ce qui leur ressemble, toute chose qui ne dure pas, et que cela ne valait pas une peruta à cet endroit, elle n&#x27;est pas consacrée du tout : cette chose n&#x27;arrive pas ailleurs avant de se gâter et de ne plus rien valoir. De ses paroles on déduit que, si nous savions que cela vaut une peruta ailleurs, elle serait consacrée selon la Torah, puisque s&#x27;il y a un chemin, cela vaut là-bas une peruta. Et il l&#x27;appelle kiddouchin douteux parce que Shmuel dit « nous craignons que cela vaille une peruta en Médie », et nous ne savons pas avec certitude que cela vaut une peruta ailleurs ; c&#x27;est pourquoi il a écrit que, si la chose ne dure pas assez pour être portée au lieu où elle est chère, elle n&#x27;est pas consacrée du tout selon la Torah. Et Rabbenou Yitsh&#x27;ak a expliqué : même si l&#x27;on sait que cela vaut une peruta ailleurs, puisque le hekdesh n&#x27;a que son lieu et son moment, et que Shmuel n&#x27;a dit « nous craignons que cela vaille une peruta en Médie » que pour souligner que même dans un tel cas les Sages ont dit que ce sont des kiddouchin, par précaution à l&#x27;égard de ce lieu où cela vaut une peruta. S&#x27;il en est ainsi, il n&#x27;y a pas de différence entre une chose durable et une chose non durable, puisque c&#x27;est par précaution. Et il est logique de suivre les paroles de Rabbenou Yitsh&#x27;ak, car la femme ne s&#x27;acquiert pas elle-même pour moins que la valeur d&#x27;une peruta dans son lieu. Et nous avons appris « avec une peruta et avec la valeur d&#x27;une peruta » : cela ne pose pas de difficulté, l&#x27;un vise les kiddouchin certains et l&#x27;autre les kiddouchin douteux.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Beit Hillel autorisent le kiddouchin avec une <b>peruta</b>. Rav Yosef pense qu'il s'agit d'une valeur quelconque, qui varie selon les générations. Abaye lui oppose l'enseignement de la michna elle-même : une peruta est un huitième d'<b>issar italien</b>, ce qui fixe une valeur.</p><p>Le Rosh rapporte ici plusieurs discussions : si l'union conjugale produit les érousin ou les nissouïn, la table des monnaies de la baraita, et l'avis de Shmuel sur la datte, que la guemara reprend plus bas.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְכִי תֵּימָא: הָנֵי מִילֵּי בְּדוֹרוֹ שֶׁל מֹשֶׁה, אֲבָל הָכָא כְּדַחֲשִׁבָה לְהוּ לְאִינָשֵׁי – וְהָא כִּי אֲתָא רַב דִּימִי אָמַר: שִׁיעֵר רַבִּי סִימַאי בְּדוֹרוֹ כַּמָּה הִיא פְּרוּטָה: אֶחָד מִשְּׁמֹנָה בָּאִיסָּר הָאִיטַלְקִי, וְכִי אֲתָא רָבִין אָמַר: רַבִּי דּוֹסְתַּאי וְרַבִּי יַנַּאי וְרַבִּי אוֹשַׁעְיָא שִׁיעֲרוּ כַּמָּה הָוֵי פְּרוּטָה – אֶחָד מִשִּׁשָּׁה בְּאִיסָּר הָאִיטַלְקִי!</div>
+            <div class="fr"><p>Et si tu dis : cela valait pour la génération de Moché, mais ici, selon ce que les gens estiment, une peruta... mais lorsque Rav Dimi est venu, il a dit : Rabbi Simaï a estimé en sa génération combien est une peruta : un huitième de l&#x27;issar italien ; et lorsque Ravin est venu, il a dit : Rabbi Dostaï, Rabbi Yannaï et Rabbi Oshaya ont estimé combien vaut une peruta : un sixième de l&#x27;issar italien !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שִׁיעֵר ר&#x27; סִימַאי</b> מַעֲשֶׂה בָּא לְפָנָיו בְּאִשָּׁה שֶׁנִּתְקַדְּשָׁה בִּפְרוּטָה וְהִצְרִיךְ לִהְיוֹת שָׁוֶה אֶחָד מִשְּׁמֹנָה בְּאִיסָּר וּבִיטֵּל אֶת הַקִּידּוּשִׁין:</div>
+          <div class="glose-fr">« Rabbi Simaï a estimé » : un cas est venu devant lui, d&#x27;une femme consacrée par une peruta ; il a exigé que cela vaille un huitième d&#x27;issar, et il a annulé le kiddouchin.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶחָד מִשִּׁשָּׁה</b> לְקַמָּן מְפָרֵשׁ פְּלֻוגְתַּייְהוּ:</div>
+          <div class="glose-fr">« Un sixième » : plus loin il explique leur divergence.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>On pourrait objecter que la valeur d'un huitième d'issar valait seulement à l'époque de Moché et que, depuis, la peruta se mesure selon l'usage des gens. La guemara répond par deux estimations rapportées de la terre d'Israël : Rabbi Simaï (un huitième d'issar) et Rabbi Dostaï, Rabbi Yannaï et Rabbi Oshaya (un sixième). La valeur de la peruta a donc été fixée par des Sages dans leurs générations.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רַב יוֹסֵף: אִי הָכִי, הַיְינוּ דִּתְנֵינָא: ״צֵא וַחֲשֹׁוב כַּמָּה פְּרוּטוֹת בִּשְׁנֵי סְלָעִים – יוֹתֵר מֵאַלְפַּיִם״ – הַשְׁתָּא אַלְפַּיִם לָא הָוְייָן, יָתֵר מֵאַלְפַּיִם קָרֵי לְהוּ? אֲמַר לְהוּ הַהוּא סָבָא: אֲנָא תָּנֵינָא לָהּ: ״קָרוֹב לְאַלְפַּיִם״. סוֹף סוֹף אַלְפָּא וַחֲמֵשׁ מְאָה וּתְלָתִין וְשִׁיתָּא הוּא דְּהָוְיָין! כֵּיוָן דְּנָפְקָא לְהוּ מִפַּלְגָא – קָרוֹב לְאַלְפַּיִם קָרֵי לֵיהּ.</div>
+            <div class="fr"><p>Rav Yosef lui dit : s&#x27;il en est ainsi, voici ce que nous avons appris : « Va et compte combien de perutot il y a dans deux sela : plus de deux mille ». Maintenant il n&#x27;y a pas deux mille, et il les appelle « plus de deux mille » ?</p><p>Un vieillard leur dit : moi j&#x27;ai appris : « près de deux mille ». Finalement il n&#x27;y en a que mille cinq cent trente-six !</p><p>Puisqu&#x27;on a dépassé la moitié, il l&#x27;appelle « près de deux mille ».</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(11)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>א&quot;ל רַב יוֹסֵף</b> לְאַבַּיֵּי:</div>
+          <div class="glose-fr">« Rav Yosef lui dit » : à Abaye.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִי הָכִי</b> דְּאֵין פְּרוּטָה פְּחוּתָה מִכָּאן:</div>
+          <div class="glose-fr">« S&#x27;il en est ainsi » : que la peruta n&#x27;est pas inférieure à cela.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַייְנוּ דִּתְנֵינָא</b> שֶׁאֲנִי שׁוֹנֶה בְּתוֹרַת כֹּהֲנִים צֵא וַחֲשֹׁוב כו&#x27;:</div>
+          <div class="glose-fr">« Voici ce que nous avons appris » : car moi j&#x27;enseigne dans la Torat Kohanim : « va et compte, etc. ».</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַלְפַּיִם</b> פְּרוּטוֹת:</div>
+          <div class="glose-fr">« Deux mille » : de perutot.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַשְׁתָּא</b> אִם הוּא אֶחָד מִשְּׁמֹנָה בָּאִיסָּר הָאִיטַלְקִי:</div>
+          <div class="glose-fr">« Maintenant » : si c&#x27;est un huitième d&#x27;issar italien.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַלְפַּיִם</b> פְּרוּטוֹת:</div>
+          <div class="glose-fr">« Deux mille » : de perutot.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לָא הָווּ</b> בִּשְׁנֵי סְלָעִים כִּדְפָרֵישִׁית בְּסָמוּךְ:</div>
+          <div class="glose-fr">« Ne sont pas » : en deux sela, comme je l&#x27;ai expliqué plus haut.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>יוֹתֵר מֵאַלְפַּיִם קָרֵי לְהוּ</b> מִשְׁנָה זוֹ שְׁנוּיָה אֵצֶל נֶהֱנֶה מִן הַהֶקְדֵּשׁ שֶׁמֵּבִיא עַל הֲנָיַית פְּרוּטָה אָשָׁם בְּכֶסֶף שְׁקָלִים צֵא וַחֲשֹׁוב לְהִתְרַחֵק מִן הָעֲבֵירָה שֶׁאַף עַל הַשּׁוֹגֵג צָרִיךְ כַּפָּרָה גְּדוֹלָה כְּגוֹן זוֹ:</div>
+          <div class="glose-fr">« Il les appelle plus de deux mille » : cette michna est enseignée à propos de celui qui tire profit du hekdesh, qui apporte pour le profit d&#x27;une peruta un asham en sicles d&#x27;argent : « va et compte », pour t&#x27;éloigner de la faute, car même pour la faute involontaire il faut une grande expiation comme celle-ci.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>א&quot;ל הַהוּא סָבָא</b> טוֹעֶה אַתָּה בְּמִשְׁנָה זוֹ דַּאֲנָא תְּנֵינָא לָהּ וְקָרוֹב לַאֲלָפִים תָּנֵינָא בָּהּ:</div>
+          <div class="glose-fr">« Ce vieillard leur dit » : tu te trompes dans cette michna, car moi je l&#x27;ai apprise ainsi, et j&#x27;y ai appris « près de deux mille ».</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַלְפָּא וַחֲמֵשׁ מְאָה וּתְלָתִין וְשִׁיתָּא הָוְיָין</b> שֶׁהַסֶּלַע ד&#x27; דִּינָרִין וְהַדִּינָר כ&quot;ד אִיסָּרִים כְּדִלְקַמָּן וְאִי אִיסָּר שְׁמֹנָה פְּרוּטוֹת לְעוֹלָם נִמְצְאוּ קצ&quot;ב פְּרוּטוֹת בְּדִינָר וְהַשְּׁמֹנָה דִּינָר שֶׁבִּשְׁתֵּי סְלָעִים עוֹלִים כָּל אֶחָד מָאתַיִם פְּרוּטוֹת חָסֵר שְׁמֹנָה הֲרֵי אֶלֶף ותקל&quot;ו:</div>
+          <div class="glose-fr">« Mille cinq cent trente-six » : car le sela est de quatre dinars et le dinar de vingt-quatre issar, comme plus loin, et si un issar est huit perutot, il y a toujours cent quatre-vingt-douze perutot au dinar, et les huit dinars qui sont dans deux sela montent chacun à deux cents perutot moins huit, ce qui fait mille cinq cent trente-six.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כֵּיוָן דְּנָפְקָא</b> אֶלֶף הַשֵּׁנִי מֵחֶצְיוֹ שְׁלֹשִׁים וְשִׁשָּׁה קָרוֹב לְאַלְפַּיִם קָרֵי לֵיהּ:</div>
+          <div class="glose-fr">« Puisqu&#x27;on a dépassé » : le second millier a dépassé sa moitié de trente-six : on l&#x27;appelle près de deux mille.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Yosef objecte à Abaye avec une baraita (Torat Kohanim) : deux sela contiennent « plus de deux mille » perutot. Avec un huitième d'issar, le calcul donne 1536, loin de deux mille. Un vieillard répond qu'il apprend « près de deux mille », et la guemara admet qu'au-delà de la moitié du second millier, on dit « près de deux mille ». Rachi explique le calcul : un sela vaut 4 dinars, un dinar 24 issar, soit 192 perutot au dinar.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah-k12a-s6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a766a"/></marker></defs>
+<rect x="0" y="0" width="720" height="250" fill="#fbfaf6"/>
+<text x="360" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b2b2b">Combien de prouta dans deux sela ?</text>
+<rect x="20" y="44" width="680" height="40" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="360" y="68.30" text-anchor="middle" font-size="12.5" fill="#3a3a3a">2 sela = 8 zouz (dinar) ; 1 zouz = 192 prouta ; 8 x 192 = 1536 prouta</text>
+<rect x="20" y="106" width="320" height="70" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="180" y="128.30" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#7c3b2c">Version de Rav Yosef</text>
+<text x="180" y="145.30" text-anchor="middle" font-size="12" fill="#7c3b2c">"plus de 2000"</text>
+<text x="180" y="162.30" text-anchor="middle" font-size="12" fill="#7c3b2c">impossible : il n'y en a pas 2000</text>
+<rect x="380" y="106" width="320" height="70" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="540" y="128.30" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2e5c2c">Version du vieillard</text>
+<text x="540" y="145.30" text-anchor="middle" font-size="12" fill="#2e5c2c">"près de 2000"</text>
+<text x="540" y="162.30" text-anchor="middle" font-size="12" fill="#2e5c2c">1536 dépasse la moitié du millier</text>
+<text x="360" y="210" text-anchor="middle" font-size="11.5" fill="#6a6a6a">L'objection contre une valeur fixe de la prouta (1/8 d'issar) tombe : le texte exact dit "près de".</text>
+</svg></div><div class="svg-cap">Le calcul qui fonde la réponse du vieillard à l&#x27;objection de Rav Yosef.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">גּוּפָא, כִּי אֲתָא רַב דִּימִי אֲמַר: שִׁיעֵר רַבִּי סִימַאי בְּדוֹרוֹ כַּמָּה הִיא פְּרוּטָה – אֶחָד מִשְּׁמֹנָה בָּאִיסָּר הָאִיטַלְקִי, וְכִי אֲתָא רָבִין אָמַר: שִׁיעֲרוּ רַבִּי דּוֹסְתַּאי וְרַבִּי יַנַּאי וְרַבִּי אוֹשַׁעְיָא כַּמָּה הִיא פְּרוּטָה – אֶחָד מִשִּׁשָּׁה בְּאִיסָּר הָאִיטַלְקִי. אֲמַר לֵיהּ אַבָּיֵי לְרַב דִּימִי: נֵימָא, אַתְּ וְרָבִין בִּפְלֻוגְתָּא דְּהָנֵי תַּנָּאֵי קָא מִיפַּלְגִיתוּ,</div>
+            <div class="fr"><p>Sur le fond : lorsque Rav Dimi est venu, il a dit : Rabbi Simaï a estimé en sa génération combien est une peruta : un huitième de l&#x27;issar italien ; et lorsque Ravin est venu, il a dit : Rabbi Dostaï, Rabbi Yannaï et Rabbi Oshaya ont estimé combien est une peruta : un sixième de l&#x27;issar italien. Abaye dit à Rav Dimi : disons que toi et Ravin, vous divergez sur la divergence de ces tanaïm,</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara revient au contenu des deux rapports. Abaye demande si Rav Dimi et Ravin divergent sur une controverse de tanaïm. La phrase se poursuit dans le segment suivant, avec la baraita.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">דְּתַנְיָא: פְּרוּטָה שֶׁאָמְרוּ חֲכָמִים – אֶחָד מִשְּׁמֹנָה בָּאִיסָּר הָאִיטַלְקִי, שֵׁשׁ מָעָה כֶּסֶף – דִּינָר, מָעָה – שְׁנֵי פּוּנְדְיוֹנִין, פּוּנְדְיוֹן – שְׁנֵי אִיסָּרִין, אִיסָּר – שְׁנֵי מִסְמִיסִים, מְסַמֵּס – שְׁנֵי קוֹנְטְרוֹנְקִין, קוּנְטְרְנָק – שְׁתֵּי פְּרוּטוֹת. נִמְצָא, פְּרוּטָה – אֶחָד מִשְּׁמֹנָה בָּאִיסָּר הָאִיטַלְקִי.</div>
+            <div class="fr"><p>car il a été enseigné : la peruta dont les Sages ont parlé est un huitième de l&#x27;issar italien. Six maa d&#x27;argent : un dinar ; une maa : deux pundeyon ; un pundeyon : deux issarin ; un issar : deux masmisim ; un masmas : deux kontronkin ; un kontronk : deux perutot.</p><p>Il en résulte qu&#x27;une peruta est un huitième de l&#x27;issar italien.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>פּוּנְדְיוֹנִין אִיסָּרִין מְסַמְּסִים קוֹנְטְרוֹנְקִין</b> מִינֵי מַטְבְּעוֹת הֵם קְטַנּוֹת זוֹ מִזּוֹ וְכֵן הַדְּרִיסִין הַנָּצְיָן שֶׁמִּנְיַן:</div>
+          <div class="glose-fr">« Pundeyonin, issarin, masmisin, kontronkin » : ce sont des sortes de monnaies, plus petites l&#x27;une que l&#x27;autre ; de même les hadrisin, henetzin et shemanin.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La première baraita donne l'échelle des monnaies : un dinar vaut six maa, une maa deux pundeyon, un pundeyon deux issar, un issar deux masmas, un masmas deux kontronk, un kontronk deux perutot. Dans ce compte, une peruta est un huitième d'issar.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 340" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah-k12a-s8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a766a"/></marker></defs>
+<rect x="0" y="0" width="740" height="340" fill="#fbfaf6"/>
+<text x="370" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b2b2b">Deux tables des monnaies dans la baraïta</text>
+<text x="190" y="52" text-anchor="middle" font-size="13" font-weight="bold" fill="#7c3b2c">Premier tanna</text>
+<rect x="40" y="62" width="300" height="28" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="190" y="80.30" text-anchor="middle" font-size="12" fill="#7c3b2c">1 dinar = 6 maa</text>
+<rect x="40" y="96" width="300" height="28" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="190" y="114.30" text-anchor="middle" font-size="12" fill="#7c3b2c">1 maa = 2 poundeyon</text>
+<rect x="40" y="130" width="300" height="28" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="190" y="148.30" text-anchor="middle" font-size="12" fill="#7c3b2c">1 poundeyon = 2 issar</text>
+<rect x="40" y="164" width="300" height="28" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="190" y="182.30" text-anchor="middle" font-size="12" fill="#7c3b2c">1 issar = 2 masmas</text>
+<rect x="40" y="198" width="300" height="28" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="190" y="216.30" text-anchor="middle" font-size="12" fill="#7c3b2c">1 masmas = 2 kontronk</text>
+<rect x="40" y="232" width="300" height="28" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="190" y="250.30" text-anchor="middle" font-size="12" fill="#7c3b2c">1 kontronk = 2 prouta</text>
+<rect x="40" y="272" width="300" height="50" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="190" y="292.80" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2e5c2c">1 issar = 8 prouta</text>
+<text x="190" y="309.80" text-anchor="middle" font-size="12" fill="#2e5c2c">1 dinar = 192 prouta</text>
+<text x="550" y="52" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c4a6e">Rabban Shimon ben Gamliel</text>
+<rect x="400" y="62" width="300" height="28" rx="5" fill="#e3ecf5" stroke="#4f78a8"/>
+<text x="550" y="80.30" text-anchor="middle" font-size="12" fill="#2c4a6e">1 dinar = 6 maa</text>
+<rect x="400" y="96" width="300" height="28" rx="5" fill="#e3ecf5" stroke="#4f78a8"/>
+<text x="550" y="114.30" text-anchor="middle" font-size="12" fill="#2c4a6e">1 maa = 3 hadris</text>
+<rect x="400" y="130" width="300" height="28" rx="5" fill="#e3ecf5" stroke="#4f78a8"/>
+<text x="550" y="148.30" text-anchor="middle" font-size="12" fill="#2c4a6e">1 hadris = 2 henets</text>
+<rect x="400" y="164" width="300" height="28" rx="5" fill="#e3ecf5" stroke="#4f78a8"/>
+<text x="550" y="182.30" text-anchor="middle" font-size="12" fill="#2c4a6e">1 henets = 2 chemin</text>
+<rect x="400" y="198" width="300" height="28" rx="5" fill="#e3ecf5" stroke="#4f78a8"/>
+<text x="550" y="216.30" text-anchor="middle" font-size="12" fill="#2c4a6e">1 chemin = 2 prouta</text>
+<rect x="400" y="272" width="300" height="50" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="550" y="292.80" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2e5c2c">1 maa = 24 prouta, 1 dinar = 144</text>
+<text x="550" y="309.80" text-anchor="middle" font-size="12" fill="#2e5c2c">144 / 24 issar = 6 : 1 issar = 6 prouta</text>
+</svg></div><div class="svg-cap">Le premier tanna aboutit à 1/8 d&#x27;issar, Rabban Shimon ben Gamliel à 1/6 : Abaye y voit d&#x27;abord la source du désaccord entre Rav Dimi et Ravin.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל אוֹמֵר: שְׁלֹשָׁה הַדָּרְסִין לְמָעָה, שְׁנֵי הַנַּצְיָן לְהִדָּרֵיס, שְׁנֵי שֶׁמִּנְיָן לְהָנֵץ, שְׁתֵּי פְּרוּטוֹת לַשְׁמְיָן, נִמְצָא, פְּרוּטָה – אֶחָד מִשִּׁשָּׁה בְּאִיסָּר הָאִיטַלְקִי. לֵימָא דְּמָר אָמַר כְּתַנָּא קַמָּא וְרָבִין דְּאָמַר כְּרַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל?</div>
+            <div class="fr"><p>Rabban Shimon ben Gamliel dit : trois hadrisin à la maa, deux henetzin au hadris, deux shemanin au henetz, deux perutot au shemin. Il en résulte qu&#x27;une peruta est un sixième de l&#x27;issar italien.</p><p>Dira-t-on que l&#x27;un a parlé comme le premier tanna, et que Ravin a parlé comme Rabban Shimon ben Gamliel ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>נִמְצֵאת פְּרוּטָה אֶחָד מִשִּׁשָּׁה</b> שֶׁהָאִיסָּר אֶחָד מִכ&quot;ד בְּדִינָר כִּדְקָאָמְרַתְּ אֲבָל הַפְּרוּטוֹת גְּדוֹלוֹת מִמַּה שֶׁאָמַרְתָּ שֶׁהַדִּינָר שֵׁשׁ מָעָה וְהַמָּעָה ג&#x27; הַדְרֵיסִים הֲרֵי י&quot;ח הַדְרֵיסִים לְדִינָר וְהֵם שְׁלֹשִׁים וְשֵׁשׁ הַנַּצְיָן וְהֵם שִׁבְעִים וּשְׁנַיִם שֶׁמִּינִין וְהֵם קמ&quot;ד פְּרוּטוֹת חֶלְקָם לכ&quot;ד חֲלָקִים תִּמְצָא שִׁשָּׁה בְּכָל חֵלֶק הֲרֵי שֵׁשׁ פְּרוּטוֹת לְאִיסָּר שֶׁהוּא אֶחָד מִכ&quot;ד בְּדִינָר:</div>
+          <div class="glose-fr">« Il en résulte qu&#x27;une peruta est un sixième » : car l&#x27;issar est un vingt-quatrième du dinar, comme tu le dis, mais les perutot sont plus grandes que ce que tu as dit : le dinar est six maa, la maa trois hadrisin, cela fait dix-huit hadrisin au dinar ; ce sont trente-six henetzin, soixante-douze shemanin, cent quarante-quatre perutot ; divise-les en vingt-quatre parts, et tu en trouveras six dans chaque part : six perutot à l&#x27;issar, qui est un vingt-quatrième du dinar.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabban Shimon ben Gamliel propose une autre échelle : trois hadris à la maa, deux henetz au hadris, deux shamin au henetz, deux perutot au shamin, soit 144 perutot au dinar. Une peruta y vaut un sixième d'issar. La guemara se demande si Rav Dimi suit le premier tanna et Ravin Rabban Shimon ben Gamliel.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ: בֵּין דִּידִי וּבֵין רָבִין אַלִּיבָּא דְּתַנָּא קַמָּא, וְלָא קַשְׁיָא: הָא – דְּאִיַּקּוּר אִיסּוּרֵי, הָא – דְּזוּל אִיסּוּרֵי. הָא דְּאִיַּקּוּר אִיסּוּרֵי – קוּם עֶשְׂרִים וְאַרְבַּע בְּזוּזָא, הָא דְּזוֹל – קוּם תְּלָתִין וּתְרֵין בְּזוּזָא.</div>
+            <div class="fr"><p>Il lui dit : tant moi que Ravin, nous parlons selon le premier tanna, et ce n&#x27;est pas une difficulté : ceci, lorsque les issarin étaient chers ; ceci, lorsque les issarin étaient bon marché. Ceci, lorsque les issarin étaient chers : vingt-quatre à un zouz.</p><p>Ceci, lorsqu&#x27;ils étaient bon marché : trente-deux à un zouz.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַלִּיבָּא דת&quot;ק</b> דְּהַייְנוּ כִּסְתָם מַתְנֵי&#x27; וְהַךְ דְּרָבִין לָאו שֶׁהוֹסִיפוּ עַל הַפְּרוּטוֹת אֶלָּא הָאִיסָּרִין הוּזְלוּ וְעָמְדוּ שְׁלֹשִׁים וּשְׁתַּיִם בְּדִינָר בִּימֵיהֶם וּלְעוֹלָם קצ&quot;ב פְּרוּטוֹת בְּדִינָר חָשׁוּב ו&#x27; פְּעָמִים שְׁלֹשִׁים וּשְׁתַּיִם וְתִמְצָא קצ&quot;ב וּבִימֵי ר&#x27; סִימַאי הָיוּ הָאִיסָּרִים יְקָרִים כְּמִשְׁפָּטָם כ&quot;ד בְּדִינָר וְנִמְצֵאת שֶׁהַפְּרוּטָה שֶׁהִיא קצ&quot;ב לְדִינָר הָיְתָה אֶחָד מִשְּׁמֹנָה בְּאִיסָּר:</div>
+          <div class="glose-fr">« Selon le premier tanna » : c&#x27;est-à-dire comme la michna anonyme ; et ce que dit Ravin ne signifie pas qu&#x27;on a ajouté aux perutot, mais que les issarin ont baissé de valeur et se sont tenus à trente-deux au dinar de leurs jours ; et toujours cent quatre-vingt-douze perutot au dinar : compte six fois trente-deux et tu trouveras cent quatre-vingt-douze. Et aux jours de Rabbi Simaï les issarin étaient chers selon leur règle, vingt-quatre au dinar, et il se trouve que la peruta, qui est cent quatre-vingt-douze au dinar, était un huitième d&#x27;issar.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Dimi répond que lui et Ravin suivent le premier tanna. Le nombre de perutot au dinar ne change pas (192). Seul varie le cours de l'issar de cuivre : quand il est cher, vingt-quatre issar valent un dinar (une peruta est alors un huitième d'issar) ; quand il est bon marché, trente-deux issar valent un dinar (une peruta est un sixième). Les deux estimations s'accordent donc.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah-k12a-s10" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a766a"/></marker></defs>
+<rect x="0" y="0" width="720" height="300" fill="#fbfaf6"/>
+<text x="360" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b2b2b">La réponse de Rav Dimi : tous suivent le premier tanna</text>
+<rect x="110" y="44" width="500" height="52" rx="5" fill="#e7e9f2" stroke="#7a86a8"/>
+<text x="360" y="65.80" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2f3a55">Invariant : 192 prouta au zouz (dinar)</text>
+<text x="360" y="82.80" text-anchor="middle" font-size="12" fill="#2f3a55">seul change le nombre d'issar au zouz</text>
+<rect x="20" y="124" width="320" height="80" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="180" y="151.30" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#7c3b2c">Issar cher</text>
+<text x="180" y="168.30" text-anchor="middle" font-size="12" fill="#7c3b2c">24 issar au zouz</text>
+<text x="180" y="185.30" text-anchor="middle" font-size="12" fill="#7c3b2c">192 / 24 = 8 : prouta = 1/8 d'issar</text>
+<rect x="380" y="124" width="320" height="80" rx="5" fill="#e3ecf5" stroke="#4f78a8"/>
+<text x="540" y="151.30" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2c4a6e">Issar bon marché</text>
+<text x="540" y="168.30" text-anchor="middle" font-size="12" fill="#2c4a6e">32 issar au zouz</text>
+<text x="540" y="185.30" text-anchor="middle" font-size="12" fill="#2c4a6e">192 / 32 = 6 : prouta = 1/6 d'issar</text>
+<line x1="300" y1="96" x2="180" y2="122" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k12a-s10)"/>
+<line x1="420" y1="96" x2="540" y2="122" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k12a-s10)"/>
+<rect x="20" y="228" width="320" height="46" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="180" y="255.30" text-anchor="middle" font-size="12" fill="#3a3a3a">Rav Dimi, au nom de Rabbi Simaï</text>
+<rect x="380" y="228" width="320" height="46" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="540" y="255.30" text-anchor="middle" font-size="12" fill="#3a3a3a">Ravin, au nom de R. Dostaï, Yannaï, Oshaya</text>
+</svg></div><div class="svg-cap">La prouta garde sa valeur ; ce qui varie est le cours de l&#x27;issar, d&#x27;où les deux estimations.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר שְׁמוּאֵל: קִידְּשָׁהּ בִּתְמָרָה, אֲפִילּוּ עוֹמֵד כֹּור תְּמָרִים בְּדִינָר – מְקֻודֶּשֶׁת; חָייְשִׁינַן שֶׁמָּא שָׁוֶה פְּרוּטָה בְּמָדַי.</div>
+            <div class="fr"><p>Shmuel a dit : s&#x27;il l&#x27;a consacrée avec une datte, même si un kor de dattes se tient à un dinar, elle est consacrée : nous craignons que cela vaille une peruta en Médie.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּמָדַי</b> כְּלוֹמַר בְּמָקוֹם שֶׁאֵין תְּמָרִים מְצֻוייָּן:</div>
+          <div class="glose-fr">« En Médie » : c&#x27;est-à-dire dans un lieu où les dattes ne sont pas courantes.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Shmuel enseigne que si un homme consacre avec une datte, la femme est consacrée même si une datte vaut bien moins d'une peruta dans l'endroit, car elle pourrait valoir une peruta en <b>Médie</b>, où il y a peu de dattes. Cette crainte est une mesure de précaution.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְהָא אֲנַן תְּנַן: בֵּית הִלֵּל אוֹמְרִים בִּפְרוּטָה וּבְשָׁוֶה פְרוּטָה! לָא קַשְׁיָא, הָא בְּקִידּוּשֵׁי וַדַּאי, הָא בְּקִידּוּשֵׁי סָפֵק.</div>
+            <div class="fr"><p>Mais nous avons appris : Beit Hillel disent : avec une peruta et avec la valeur d&#x27;une peruta ! Ce n&#x27;est pas une difficulté : l&#x27;un parle de kiddouchin certains, l&#x27;autre de kiddouchin douteux.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהָא תְנַן כו&#x27;</b> וְאִם בָּאתָה לוֹמַר כֵּן אֵין שִׁיעוּר קִידּוּשִׁין:</div>
+          <div class="glose-fr">« Mais nous avons appris, etc. » : et si tu veux dire ainsi, il n&#x27;y a plus de mesure du kiddouchin.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָא בְּקִידּוּשֵׁי וַדַּאי</b> אִם יֶשְׁנוֹ שָׁוֶה פְּרוּטָה בִּמְקוֹמוֹ הָווּ קִידּוּשִׁין וַדַּאי וְאִם בָּא אַחֵר וְקִידְּשָׁהּ אַחַ&quot;כּ מֻותֶּרֶת לָרִאשׁוֹן וְאֵינָהּ צְרִיכָה גֵּט מִשֵּׁנִי וְאִם אֵינוֹ ש&quot;פ בִּמְקוֹמוֹ קִידּוּשֵׁי וַדַּאי לָא הָווּ לְבַטֵּל קִידּוּשֵׁי שֵׁנִי אֲבָל קִידּוּשֵׁי סָפֵק הָווּ וְאֵינָהּ מֻותֶּרֶת לְאַחֵר בְּלֹא גֵּט דְּחָייְשִׁינַן שֶׁמָּא ש&quot;פ בְּמָדַי וְשִׁיעוּר אַהֲנֵי לְדַעַת אֵלּוּ הֵן קִידּוּשִׁין גְּמוּרִים שֶׁמֵּאַחַר שֶׁקִּידֵּשׁ בִּפְרוּטָה בִּמְקוֹמָם אֵין גִּמְגּוּם בַּדָּבָר:</div>
+          <div class="glose-fr">« Ceci, pour des kiddouchin certains » : s&#x27;il y a la valeur d&#x27;une peruta dans son lieu, ce sont des kiddouchin certains, et si un autre vient et la consacre ensuite, elle est permise au premier et n&#x27;a pas besoin d&#x27;un acte de divorce du second. S&#x27;il n&#x27;y a pas la valeur d&#x27;une peruta dans son lieu, ce ne sont pas des kiddouchin certains qui annuleraient le second kiddouchin, mais ce sont des kiddouchin douteux : elle n&#x27;est pas permise à un autre sans acte de divorce, car nous craignons que cela vaille une peruta en Médie ; et la mesure a de l&#x27;effet selon l&#x27;idée de ceux-là. Ceux-ci sont des kiddouchin complets, car puisqu&#x27;il a consacré par une peruta dans leur lieu, il n&#x27;y a pas d&#x27;hésitation à ce sujet.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara objecte à Shmuel avec la michna : Beit Hillel exigent la valeur d'une peruta. Elle répond par la distinction entre <b>kiddouchin certains</b> (l'objet vaut une peruta dans son lieu) et <b>kiddouchin douteux</b> (il ne la vaut pas, mais pourrait la valoir ailleurs). Dans ce dernier cas, la femme n'est pas permise à un autre sans acte de divorce.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 360" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah-k12a-s12" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a766a"/></marker></defs>
+<rect x="0" y="0" width="740" height="360" fill="#fbfaf6"/>
+<text x="370" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b2b2b">La datte de Shmuel : kiddouchin certain ou douteux</text>
+<rect x="170" y="40" width="400" height="52" rx="5" fill="#e7e9f2" stroke="#7a86a8"/>
+<text x="370" y="61.80" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2f3a55">L'objet donné vaut-il une prouta ?</text>
+<text x="370" y="78.80" text-anchor="middle" font-size="12" fill="#2f3a55">on l'estime sur place</text>
+<rect x="20" y="126" width="330" height="92" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="185" y="150.80" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2e5c2c">Oui : kiddouchin certain</text>
+<text x="185" y="167.80" text-anchor="middle" font-size="12" fill="#2e5c2c">c'est la michna de Beit Hillel ;</text>
+<text x="185" y="184.80" text-anchor="middle" font-size="12" fill="#2e5c2c">un second kiddouchin est sans effet</text>
+<text x="185" y="201.80" text-anchor="middle" font-size="12" fill="#2e5c2c">et elle reste permise au premier</text>
+<rect x="390" y="126" width="330" height="92" rx="5" fill="#fff4d6" stroke="#b08a2a"/>
+<text x="555" y="150.80" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#6b5412">Non, mais il pourrait valoir</text>
+<text x="555" y="167.80" text-anchor="middle" font-size="12" fill="#6b5412">une prouta ailleurs (Médie) :</text>
+<text x="555" y="184.80" text-anchor="middle" font-size="12" fill="#6b5412">kiddouchin douteux (Shmuel) ;</text>
+<text x="555" y="201.80" text-anchor="middle" font-size="12" fill="#6b5412">pas permise à un autre sans guet</text>
+<line x1="300" y1="92" x2="185" y2="124" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k12a-s12)"/>
+<line x1="440" y1="92" x2="555" y2="124" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k12a-s12)"/>
+<rect x="20" y="244" width="330" height="92" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="185" y="268.80" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">Les chiffons (Rav Shimi bar 'Hiyya)</text>
+<text x="185" y="285.80" text-anchor="middle" font-size="12" fill="#3a3a3a">estimés devant Rav : s'il n'y a pas</text>
+<text x="185" y="302.80" text-anchor="middle" font-size="12" fill="#3a3a3a">une prouta, pas de kiddouchin</text>
+<text x="185" y="319.80" text-anchor="middle" font-size="12" fill="#3a3a3a">certain ; Shmuel n'est pas contredit</text>
+<rect x="390" y="244" width="330" height="92" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="555" y="268.80" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">La pierre de 'ho'hla (Rav 'Hisda)</text>
+<text x="555" y="285.80" text-anchor="middle" font-size="12" fill="#3a3a3a">il l'estime et l'annule s'il n'y a</text>
+<text x="555" y="302.80" text-anchor="middle" font-size="12" fill="#3a3a3a">pas une prouta : il n'adopte pas</text>
+<text x="555" y="319.80" text-anchor="middle" font-size="12" fill="#3a3a3a">l'avis de Shmuel</text>
+</svg></div><div class="svg-cap">La distinction qui concilie Shmuel avec la michna, et ses deux applications.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָהוּא גַּבְרָא דְּאקַדֵּישׁ בִּזְווָדָא דְּאֻודְרֵי, יָתֵיב רַב שִׁימִי בַּר חִיָּיא קַמֵּיהּ דְּרַב וְקָא מְעַייֵּן בַּהּ, אִי אִית בַּהּ שָׁוֶה פְּרוּטָה – אִין, אִי לָא – לָא. וְאִי לֵית בַּהּ שָׁוֶה פְּרוּטָה לָא? וְהָאָמַר שְׁמוּאֵל: חָיְישִׁינַן! לָא קַשְׁיָא, הָא בְּקִידּוּשֵׁי וַדַּאי, הָא בְּקִידּוּשֵׁי סָפֵק.</div>
+            <div class="fr"><p>Un homme avait consacré avec un paquet de chiffons (zavda de-ourdei). Rav Shimi bar &#x27;Hiyya était assis devant Rav et l&#x27;examinait : s&#x27;il y avait en lui la valeur d&#x27;une peruta, oui ; sinon, non.</p><p>Et s&#x27;il n&#x27;y a pas en lui la valeur d&#x27;une peruta, non ? Mais Shmuel a dit : nous craignons !</p><p>Ce n&#x27;est pas une difficulté : l&#x27;un parle de kiddouchin certains, l&#x27;autre de kiddouchin douteux.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּזַווְּדָא דְּאַוַּרְדִּי</b> אֲגֻודָּה שֶׁל מוֹכִין:</div>
+          <div class="glose-fr">« Zavda de-ourdei » : un paquet de bourre de laine.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהָאָמַר שְׁמוּאֵל</b> הָא דִּלְעֵיל חָייְשִׁינַן שֶׁמָּא ש&quot;פ בְּמָקוֹם אַחֵר:</div>
+          <div class="glose-fr">« Mais Shmuel a dit » : l&#x27;enseignement plus haut : nous craignons que cela vaille une peruta dans un autre lieu.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Première application : un homme a consacré avec un paquet de chiffons, et Rav Shimi bar 'Hiyya en estime la valeur devant Rav. S'il n'atteint pas une peruta, la femme n'est pas consacrée. La guemara objecte avec Shmuel, puis répond par la même distinction : la décision porte sur le kiddouchin <b>certain</b>, la crainte de Shmuel sur le kiddouchin <b>douteux</b>.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הָהוּא גַּבְרָא דְּאקַדֵּישׁ בְּאַבְנָא דְכֻוחְלָא, יָתֵיב רַב חִסְדָּא וְקָא מְשַׁעֵר לַיהּ, אִי אִית בַּהּ שָׁוֶה פְּרוּטָה – אִין, וְאִי לָא – לָא. וְאִי לֵית בַּהּ שָׁוֶה פְּרוּטָה לָא? וְהָא אָמַר שְׁמוּאֵל: חָיְישִׁינַן! רַב חִסְדָּא לָא סָבַר לֵיהּ דִּשְׁמוּאֵל.</div>
+            <div class="fr"><p>Un homme avait consacré avec une pierre de &#x27;ho&#x27;hla. Rav &#x27;Hisda était assis et l&#x27;estimait : s&#x27;il y avait en elle la valeur d&#x27;une peruta, oui ; sinon, non.</p><p>Et s&#x27;il n&#x27;y a pas en elle la valeur d&#x27;une peruta, non ? Mais Shmuel a dit : nous craignons !</p><p>Rav &#x27;Hisda ne tient pas pour l&#x27;avis de Shmuel.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַבְנָא דְּכֻוחְלָא</b> שַׁייִשׁ שָׁחוֹר דּוֹמֶה לִכְחֹול:</div>
+          <div class="glose-fr">« Pierre de &#x27;ho&#x27;hla » : du marbre noir qui ressemble à du &#x27;hol.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>יָתֵיב רַב חִסְדָּא וְקָא מְעַיֵּין כּוּ&#x27;</b> לְפִי שֶׁבָּא אַחֵר וְקִדְּשָׁהּ בִּפְרוּטָה אַחַ&quot;כּ:</div>
+          <div class="glose-fr">« Rav &#x27;Hisda était assis et examinait, etc. » : parce qu&#x27;un autre était venu et l&#x27;avait consacrée ensuite avec une peruta.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>רַב חִסְדָּא לָא סָבַר לֵיהּ דִּשְׁמוּאֵל</b> הָכָא לָא מָצֵי לְשַׁנּוּיֵי הָא בְּקִידּוּשֵׁי סָפֵק כְּדִלְעֵיל מִשּׁוּם דְּמַייְרֵי שֶׁקִּדְּשָׁהּ אָחִיו אַחַ&quot;כּ בִּפְרוּטָה וְהָיָה בָּא רַב חִסְדָּא לְהַפְקִיעַ קִידּוּשֵׁי רִאשׁוֹן כִּדְאָמַר לָאו כָּל כְּמִינָּךְ דְּאָסְרַתְּ לַהּ אַבָּתְרָא וְאִי הֲוָה אָמַר דְּרִאשׁוֹנִים סָפֵק הָווּ א&quot;כ צ&quot;ל דִּצְרִיכָה גֵּט מֵרִאשׁוֹן א&quot;כ תִּהְיֶה אֲסוּרָה מִשּׁוּם דְּהָוְיָא גְּרוּשַׁת אָחִיו:</div>
+          <div class="glose-fr">« Rav &#x27;Hisda ne tient pas pour l&#x27;avis de Shmuel » : ici il ne pouvait pas répondre, comme plus haut, « ceci pour des kiddouchin douteux », parce qu&#x27;il s&#x27;agit du cas où son frère l&#x27;a consacrée ensuite avec une peruta, et Rav &#x27;Hisda venait annuler le premier kiddouchin, comme il le dit : « tu n&#x27;as pas le pouvoir de la lui interdire pour la suite ». Et s&#x27;il avait dit que les premiers étaient douteux, il faudrait dire qu&#x27;elle a besoin d&#x27;un acte de divorce du premier, et elle serait alors interdite parce qu&#x27;elle serait la divorcée de son frère.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">הָהוּא גַּבְרָא דְּאקַדֵּישׁ בְּשִׁירָאֵי רַבָּה אָמַר לָא צְרִיכִי שׁוּמָא רַב יוֹסֵף אָמַר צְרִיכִי שׁוּמָא אִי אָמַר לָהּ כָּל דְּהוּ כֻּולֵּי עָלְמָא לָא פְּלִיגִי דְּלָא צְרִיכִי שׁוּמָא וְאִי אֲמַר לַהּ חַמְשִׁין וְלָא שָׁווּ חַמְשִׁין כֻּולֵּי עָלְמָא לָא פְלִיגִי דִּצְרִיכִי שׁוּמָא כִּי פְּלִיגִי דַּאֲמַר לֵהּ חַמְשִׁין וְשָׁווּ חַמְשִׁין רַבָּה אָמַר לָא צְרִיכִי שׁוּמָא דְּהָא שָׁווּ חַמְשִׁין רַב יוֹסֵף אָמַר צְרִיכִי שׁוּמָא כֵּיוָן דְּאִיתְּתָא לָא בְּקִיאָה בְּשׁוּמָא לָא סָמְכָה דַּעְתַּהּ. דַּף ט&#x27;. וְהִלְכְתָא שִׁירָאֵי לָא צְרִיכִי שׁוּמָא וְדִקְדֵּק ר&quot;ת זַ&quot;ל אַמַּאי אִיצְטְרִיךְ לִפְסֹוק כְּרַבָּה לְגַבֵּי רַב יוֹסֵף הָא קי&quot;ל ב&quot;ב דַּף קמג. הִלְכְתָא כְּרַבָּה בכ&quot;מ בַּר מִשָּׂדֶה עִנְיָן וּמֶחֱצָה אע&quot;ג שֶׁיֵּשׁ רוֹצִין לוֹמַר דְּהַיְינוּ דַּוְקָא בְּבָבָא בָּתְרָא אִי אֶפְשָׁר לוֹמַר כֵּן דְּעַל כְּרִחְיָךְ בְּכֻולָּהּ גְּמָרָא קָא אָמַר כִּדְמוֹכַח בְּפֶרֶק מִי שֶׁאֲחָזוֹ (גִּיטִּין דַּף עַד.) דְּקָאָמַר וְתִסְבְּרָא דְּרַבָּה כְּרַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל וְהָא קַיְימָא לַן דְּהִילְכְתָא כְּרַבָּה וּבְהָא קַייְמָא לַן דְּאֵין הֲלָכָה כְּרַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל וּבְכֻולָּהּ גְּמָרָא הוּא דְּקַייְמָא לָן הָכִי מִדְּלָא קָאָמַר בְּהָא כִּדְקָאָמַר עַל רַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל וְעוֹד קָשֶׁה אַמַּאי לָא קָאָמַר וְהִילְכְתָא כְּרַבָּה כִּדְקָאָמַר וְהִילְכְתָא כְּרַבִּי אֶלְעָזָר וְהִילְכְתָא כְּרָבָא אָמַר רַב נַחְמָן עַל כֵּן הָיָה אוֹמֵר דְּדַוְקָא שִׁירָאֵי הוּא דְּלָא צְרִיכִי שׁוּמָא לְפִי שֶׁשּׁוּמָתָן יָדוּעַ קְצָת וְאֵין רְגִילִים לִטְעוֹת בּוֹ כָּל כָּךְ אֲבָל שְׁאָר דְּבָרִים כְּגוֹן אֲבָנִים טוֹבוֹת וּמַרְגָּלִיּוֹת אֵין בְּקִיאִין בְּשׁוּמָתָן וּפְעָמִים שֶׁטּוֹעִין בָּהֶן הַרְבֵּה צְרִיכִין שׁוּמָא מִשּׁוּם דְּלָא סָמְכָא דַּעְתָּהּ לְכָךְ נָהֲגוּ הָעוֹלָם לְקַדֵּשׁ בְּטַבַּעַת שֶׁאֵין בָּהּ אֶבֶן וְהָא דְּאָמְרִינַן לְקַמָּן בְּפֶרֶק שֵׁנִי (קִידּוּשִׁין דַּף מח.) כְּגוֹן שֶׁהוֹסִיף לָהּ נֹופֶךְ מִשֶּׁלּוֹ יֵשׁ לוֹמַר דְּמַיְירֵי כְּגוֹן שֶׁשָּׁמוּ אוֹתָהּ אִי נָמֵי נֹופֶךְ הָוֵי כְּמוֹ שִׁירָאֵי שֶׁשּׁוּמָתוֹ יָדוּעַ קְצָת וּלְקַמָּן (קִידּוּשִׁין דַּף יב.) הַהוּא דְּקַדֵּישׁ בְּאַבְנָא דְּכֻוחְלָא וְהָיָה רַב חִסְדָּא מְשַׁעֵר אִם יֵשׁ בּוֹ שָׁוֶה פְּרוּטָה הַאי אַבְנָא דְּכֻוחְלָא אֵינָהּ בִּכְלַל אֲבָנִים טוֹבוֹת אֶלָּא כְּעֵין אַבְנֵי שֶׁיֵּשׁ כִּדְאִיתָא בְּרֵישׁ בָּבָא בָּתְרָא דַּף ד. בְּבִנְיַן הוֹרְדּוֹס דְּבָנֶיהָ בְּאַבְנֵי שִׁישָׁא וּמַרְמְרָא וְכֻוחְלָא. וּמִיהוּ לֹא בְּרִירָא לִי הַאי טַעְמָא מַה שֶׁנָּהֲגוּ הָעוֹלָם לְהָסִיר הָאֶבֶן מִן הַטַּבַּעַת דְּהָא אָמְרִינַן בְּכָל דְּהוּ לָא פְלִיגִי לְלִישָּׁנָא קַמָּא וְאֵין דֶּרֶךְ לָתֵת שׁוּמָא לְטַבַּעַת שֶׁל קִידּוּשִׁין ור&quot;י אָמַר דְּמַה שֶׁהֻוצְרַךְ לִפְסֹוק כָּאן כְּרַבָּה מִשּׁוּם דְּרַב יוֹסֵף הֵבִיא כַּמָּה רְאָיוֹת לִדְבָרָיו וְהָא דְּלָא קָאָמַר וְהִילְכְתָא כְּרַבָּה דְּלָא תֵּימָא הַייְנוּ כְּרַבָּה דְּאִיכָּא דְּאָמְרִי דִּבְכָל דְּהוּ לֹא צָרִיךְ שׁוּמָא אֲבָל אָמַר חַמְשִׁין וְשָׁווּ חַמְשִׁין צְרִיכִי שׁוּמָא לְפִיכָךְ הֻוצְרַךְ לִפְסֹוק דִּבְכָל עִנְיָן לָא צְרִיכִי שׁוּמָא:</div>
+          <div class="glose-fr">Un homme avait consacré avec des chiraï (soies/brocarts). Rabba dit : ils n&#x27;ont pas besoin d&#x27;estimation. Rav Yosef dit : ils ont besoin d&#x27;estimation. S&#x27;il lui a dit « n&#x27;importe quoi », tous s&#x27;accordent qu&#x27;ils n&#x27;ont pas besoin d&#x27;estimation ; s&#x27;il lui a dit « cinquante » et que cela ne valait pas cinquante, tous s&#x27;accordent qu&#x27;ils ont besoin d&#x27;estimation. Ils divergent lorsqu&#x27;il lui a dit « cinquante » et que cela valait cinquante : Rabba dit qu&#x27;ils n&#x27;ont pas besoin d&#x27;estimation, car cela valait cinquante ; Rav Yosef dit qu&#x27;ils ont besoin d&#x27;estimation, car la femme n&#x27;est pas experte en estimation et son esprit n&#x27;est pas apaisé. Feuille 9 : la hala&#x27;ha est que les chiraï n&#x27;ont pas besoin d&#x27;estimation. Rabbenou Tam, de mémoire bénie, a examiné : pourquoi a-t-il fallu décider comme Rabba contre Rav Yosef, alors que nous avons établi (Baba Batra 143a) que la hala&#x27;ha suit Rabba partout, sauf dans « Ane, Ine et une moitié » ? Bien que certains veuillent dire que c&#x27;est seulement dans Baba Batra, on ne peut le dire, car on le dit nécessairement dans toute la guemara, comme le montre le chapitre « Mi cheahazo » (Guittin 74a), où il est dit : peux-tu penser que Rabba est comme Rabban Shimon ben Gamliel ? Or nous avons établi que la hala&#x27;ha suit Rabba, et nous avons établi que la hala&#x27;ha n&#x27;est pas comme Rabban Shimon ben Gamliel, et c&#x27;est dans toute la guemara que nous avons établi cela, puisqu&#x27;il n&#x27;a pas été dit « sur ce point » comme on le dit de Rabban Shimon ben Gamliel. Et une difficulté encore : pourquoi ne dit-il pas « et la hala&#x27;ha suit Rabba », comme il est dit « et la hala&#x27;ha suit Rabbi Elazar » et « la hala&#x27;ha suit Rava, a dit Rav Na&#x27;hman » ? C&#x27;est pourquoi il a dit que seuls les chiraï n&#x27;ont pas besoin d&#x27;estimation, parce que leur valeur est un peu connue et qu&#x27;on ne se trompe pas beaucoup à leur sujet. Mais d&#x27;autres choses, comme les pierres précieuses et les perles, dont on ne connaît pas bien la valeur et sur lesquelles on se trompe parfois beaucoup, ont besoin d&#x27;estimation, parce que son esprit n&#x27;est pas apaisé. C&#x27;est pourquoi l&#x27;usage est de consacrer avec une bague sans pierre. Et ce que nous disons plus loin au deuxième chapitre (Kiddouchin 48a) « à savoir qu&#x27;il lui a ajouté un nofe&#x27;h de son propre bien », on peut dire qu&#x27;il s&#x27;agit du cas où on l&#x27;a estimé ; ou bien le nofe&#x27;h est comme les chiraï, dont la valeur est un peu connue. Et plus loin (Kiddouchin 12a) : cet homme qui avait consacré avec une pierre de &#x27;ho&#x27;hla, et Rav &#x27;Hisda estimait si elle valait une peruta : cette pierre de &#x27;ho&#x27;hla n&#x27;entre pas dans les pierres précieuses, mais est du genre des pierres de marbre, comme dans Baba Batra 4a, au bâtiment d&#x27;Hérode qui bâtit avec des pierres de marbre, de marmara et de &#x27;ho&#x27;hla. Cependant la raison qu&#x27;ils aient l&#x27;usage de retirer la pierre de la bague ne m&#x27;est pas claire, car on dit « n&#x27;importe quoi : ils ne divergent pas » selon la première version, et on n&#x27;a pas l&#x27;habitude de donner une estimation pour une bague de kiddouchin. Et Rabbenou Yitsh&#x27;ak dit que s&#x27;il a fallu trancher ici comme Rabba, c&#x27;est parce que Rav Yosef a apporté plusieurs preuves à ses paroles ; et s&#x27;il n&#x27;a pas dit « et la hala&#x27;ha suit Rabba », c&#x27;est pour que l&#x27;on ne dise pas que cela signifie comme Rabba, selon ceux qui disent que pour « n&#x27;importe quoi » il n&#x27;est pas nécessaire d&#x27;estimer, mais que s&#x27;il a dit « cinquante » et que cela valait cinquante, il est nécessaire d&#x27;estimer ; c&#x27;est pourquoi il a fallu trancher que dans tous les cas on n&#x27;a pas besoin d&#x27;estimation.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deuxième application : un homme a consacré avec une pierre bleue ('ho'hla), et Rav 'Hisda estime sa valeur. La guemara ne répond pas ici par le kiddouchin douteux : <b>Rav 'Hisda n'adopte pas l'avis de Shmuel</b>. Tossefot explique pourquoi la distinction habituelle ne s'applique pas : un frère a consacré ensuite la même femme, et Rav 'Hisda veut annuler le premier kiddouchin ; si celui-ci était douteux, la femme aurait besoin d'un acte de divorce du premier, et elle serait interdite au second comme divorcée de son frère.</p><p>Le Rosh traite ici la question de l'estimation : faut-il estimer la valeur d'un objet donné pour le kiddouchin ? Les chiraï n'ont pas besoin d'estimation selon la hala'ha, et Rabbenou Tam et Rabbenou Yitsh'ak discutent de la portée de cette décision.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמְרָה לֵיהּ אִימֵּיהּ: וְהָא הָהוּא יוֹמָא דְּקַדְּשַׁהּ הֲוָה בַּהּ שָׁוֶה פְּרוּטָה! אֲמַר לָהּ: לָאו כָּל כְּמִינָּךְ דְּאָסְרַתְּ לַהּ אַבָּתְרָא.</div>
+            <div class="fr"><p>Sa mère lui dit : mais ce jour-là, quand il l&#x27;a consacrée, il y avait la valeur d&#x27;une peruta ! Il lui dit : tu n&#x27;as pas le pouvoir de la lui interdire pour la suite.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַהוּא יוֹמָא</b> בַּיּוֹם שֶׁקִּידְּשָׁהּ הֲוָה בָּהּ ש&quot;פ וְעַכְשָׁיו הוּזְלָה:</div>
+          <div class="glose-fr">« Ce jour-là » : le jour où il l&#x27;a consacrée, il y avait la valeur d&#x27;une peruta, et maintenant elle a baissé.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לָאו כָּל כְּמִינָּךְ</b> לְהָעִיד שֶׁהָרִאשׁוֹן קִידּוּשִׁין וְאוֹסַרְתָּהּ אַבָּתְרָא:</div>
+          <div class="glose-fr">« Tu n&#x27;as pas le pouvoir » : de témoigner que le premier est un kiddouchin et de l&#x27;interdire pour la suite.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La mère du premier homme objecte que le jour du kiddouchin la pierre valait une peruta. Rav 'Hisda répond qu'elle n'a pas le pouvoir d'interdire la femme à un autre : si la pierre ne vaut plus une peruta, le second kiddouchin peut être valide.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Kiddushin_11b.html">&lsaquo; Kiddushin 11b</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Kiddushin_12b.html">Kiddushin 12b &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schémas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage sélectionné :\n« '+s+' »\n'):'\nPassage concerné :\n\n')+'\nCorrection proposée :\n\n\n— envoyé depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<p id="credit-texte" style="text-align:center;font-size:.76rem;color:#78716c;margin:6px auto 18px;max-width:640px;line-height:1.5">
+Texte hébreu et araméen vocalisé : édition numérique William Davidson du Talmud Koren Noé, via
+<a href="https://www.sefaria.org" style="color:#78716c">Sefaria</a> (licence CC BY-NC). Traduction française, notes et schémas : Chiourim BA (licence CC BY 4.0).</p>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

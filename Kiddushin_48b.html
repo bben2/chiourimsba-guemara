@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kiddushin 48b — La location de bout en bout, l&#x27;artisan et l&#x27;amélioration de l&#x27;objet, et les erreurs sur la condition</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Kiddushin 48b — La location de bout en bout, l&#x27;artisan et l&#x27;amélioration de l&#x27;objet, et les erreurs sur la condition</h1>
+    <div class="ref">Kiddushin 48b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Kiddushin_48a.html">&lsaquo; Kiddushin 48a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Kiddushin_49a.html">Kiddushin 49a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> La page poursuit la baraïta « fais-moi des bracelets, des anneaux et des bagues » : la divergence porte sur la location (existe-t-elle de bout en bout ou seulement à la fin ?), sur l&#x27;artisan qui acquiert l&#x27;amélioration de l&#x27;objet, ou sur le prêt et la pérouta (« s&#x27;il lui a ajouté une pierre de sa part »). La baraïta « en salaire de ce que j&#x27;ai fait / de ce que je ferai avec toi », avec Rabbi Natan et Rabbi Yehouda le Prince, est rapprochée de ces trois explications.</p><p>Vient ensuite la michna du début du chapitre sur les erreurs : « sois consacrée à moi par cette coupe de vin » et il se trouve que c&#x27;est du miel, un dinar d&#x27;argent qui se révèle d&#x27;or, riche ou pauvre ; Rabbi Chimon : si l&#x27;erreur est en mieux, elle est consacrée. La guemara examine la coupe et son contenu (eau, vin, saumure), la comparaison avec le vin et le vinaigre, et l&#x27;explication d&#x27;Abayé et de Rava : l&#x27;envoyé qui prête de l&#x27;or au lieu de l&#x27;argent est une « indication de lieu » (Rabbi Chimon, Rabban Chimon ben Gamliel, Rabbi Elazar).</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 440" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#7a7a7a"/></marker></defs>
+<rect x="0" y="0" width="740" height="440" fill="#fbfaf6"/>
+<text x="370.0" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b2b2b">Kiddushin 48b : la location, l'artisan et les erreurs sur la condition</text>
+<rect x="20" y="40" width="700" height="56" rx="5" fill="#e7e9f2" stroke="#7a86a8"/>
+<text x="370.0" y="64.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f3a55">« Fais-moi des bracelets... » : la divergence porte sur la location de bout en bout, sur l'artisan qui acquiert</text>
+<text x="370.0" y="80.0" text-anchor="middle" font-size="11" fill="#2f3a55">l'amélioration de l'objet, ou sur prêt et pérouta (s'il a ajouté une pierre de sa part)</text>
+<line x1="370" y1="96" x2="370" y2="114" stroke="#7a7a7a" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="20" y="114" width="340" height="80" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="190.0" y="134.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e5c2c">Salaire de ce que j'ai fait / ferai</text>
+<text x="190.0" y="150.0" text-anchor="middle" font-size="11" fill="#2e5c2c">Premier tana : fait : non ; fera : oui</text>
+<text x="190.0" y="166.0" text-anchor="middle" font-size="11" fill="#2e5c2c">Rabbi Natan : même fera : non</text>
+<text x="190.0" y="182.0" text-anchor="middle" font-size="11" fill="#2e5c2c">Rabbi Yehouda : sauf si pierre ajoutée</text>
+<rect x="380" y="114" width="340" height="80" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="550.0" y="134.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#7c3b2c">Michna des erreurs</text>
+<text x="550.0" y="150.0" text-anchor="middle" font-size="11" fill="#7c3b2c">Coupe de vin, de miel ; dinar d'argent,</text>
+<text x="550.0" y="166.0" text-anchor="middle" font-size="11" fill="#7c3b2c">d'or ; riche, pauvre : pas consacrée</text>
+<text x="550.0" y="182.0" text-anchor="middle" font-size="11" fill="#7c3b2c">Rabbi Chimon : en mieux : consacrée</text>
+<line x1="370" y1="194" x2="370" y2="212" stroke="#7a7a7a" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="20" y="212" width="340" height="90" rx="5" fill="#dcd7c8" stroke="#b6b2a4"/>
+<text x="190.0" y="237.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a3a3a">La coupe et son contenu</text>
+<text x="190.0" y="253.0" text-anchor="middle" font-size="11" fill="#3a3a3a">Eau : par elle (ou les deux) ; vin :</text>
+<text x="190.0" y="269.0" text-anchor="middle" font-size="11" fill="#3a3a3a">par ce qu'il y a dedans ; saumure :</text>
+<text x="190.0" y="285.0" text-anchor="middle" font-size="11" fill="#3a3a3a">par elle et son contenu (Rachi, Rabbénou Tam)</text>
+<rect x="380" y="212" width="340" height="90" rx="5" fill="#e7e9f2" stroke="#7a86a8"/>
+<text x="550.0" y="237.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f3a55">Vin et vinaigre</text>
+<text x="550.0" y="253.0" text-anchor="middle" font-size="11" fill="#2f3a55">Les deux peuvent se rétracter :</text>
+<text x="550.0" y="269.0" text-anchor="middle" font-size="11" fill="#2f3a55">il y en a que le vinaigre arrange ;</text>
+<text x="550.0" y="285.0" text-anchor="middle" font-size="11" fill="#2f3a55">de même l'argent et l'or</text>
+<line x1="370" y1="302" x2="370" y2="320" stroke="#7a7a7a" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="20" y="320" width="700" height="100" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="370.0" y="358.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#7c3b2c">Abayé : Rabbi Chimon, Rabban Chimon ben Gamliel et Rabbi Elazar tiennent tous « indication de lieu »</text>
+<text x="370.0" y="374.0" text-anchor="middle" font-size="11" fill="#7c3b2c">Rava (et Rabbi 'Hiya bar Avin) : elle dit à son envoyé de recevoir un dinar d'argent et il lui donne un dinar d'or :</text>
+<text x="370.0" y="390.0" text-anchor="middle" font-size="11" fill="#7c3b2c">le premier tana : exigence ; Rabbi Chimon : indication de lieu ; « il se trouve » : il l'avait noué dans un chiffon</text>
+</svg></div>
+          <figcaption>Vue d&#x27;ensemble de Kiddouchin 48b.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֵינָהּ לִשְׂכִירוּת אֶלָּא בַּסּוֹף. וּמַר סָבַר: יֶשְׁנָהּ לִשְׂכִירוּת מִתְּחִלָּה וְעַד סוֹף.</div>
+            <div class="fr"><p>[L&#x27;un pense :] la location n&#x27;existe qu&#x27;à la fin. Et l&#x27;autre pense : la location existe depuis le début jusqu&#x27;à la fin.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵינָהּ לִשְׂכִירוּת אֶלָּא לְבַסּוֹף</b> כְּשֶׁמַּחֲזִירָן לָהּ וַהֲרֵי לְשֵׁם קִידּוּשִׁין הוּא מוֹחֲלוֹ אֶצְלָהּ וְאֵין כָּאן מִלְוֶה כְּשֶׁמַּחֲזִירָן לָהּ:</div>
+          <div class="glose-fr">« La location n&#x27;existe qu&#x27;à la fin » : lorsqu&#x27;il les lui rend, c&#x27;est au titre des kiddouchin qu&#x27;il les pardonne chez elle, et il n&#x27;y a pas de prêt lorsqu&#x27;il les lui rend.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">ת&quot;ר עֲשֵׂה לִי שִׁירִים וּנְזָמִים וְטַבָּעוֹת וְאֶתְקַדֵּשׁ אֲנִי לָךְ כֵּיוָן שֶׁעֲשָׂאָן מְקֻודֶּשֶׁת דר&quot;מ וחכ&quot;א אֵינָהּ מְקֻודֶּשֶׁת עַד שֶׁיַּגִּיעַ מָמוֹן לְיָדָהּ וּמוּקֵי לִפְלֻוגְתַּייְהוּ בִּתְלָתָא אַנְפֵּי דְּכֻולֵּי עָלְמָא הַמְקַדֵּשׁ בְּמִלְוָה אֵינָהּ מְקֻודֶּשֶׁת וּבִישָׁנָה לִשְׂכִירוּת מִתְּחִלָּה וְעַד סוֹף קָמִפַּלְגִי מ&quot;ס יֶשְׁנָהּ לִשְׂכִירוּת מִתְּחִילָּה וְעַד סוֹף וה&quot;ל מִלְוֶה ומ&quot;ס אֵינָהּ אֶלָּא לְבַסּוֹף וּלְהַאי אוֹקִימְתָּא הֲלָכָה כְּרַבָּנָן דְּאָמְרִי אֵינָהּ מְקֻודֶּשֶׁת דקי&quot;ל דְּיֶשְׁנָהּ לִשְׂכִירוּת מִתְּחִילָּה וְעַד סוֹף מִדְּאָמְרִינַן בפ&quot;ק דְּמַסֶּכֶת ע&quot;ז דַּף יט: גַּבֵּי הִגִּיעַ לְכִיפָּה שֶׁמַּעֲמִידִין בָּהּ עֲבוֹדַת כּוֹכָבִים אָסוּר לִבְנוֹתָהּ וְאָמַר ר&quot;א עֲלָהּ אִם בָּנָה שְׂכָרוֹ מֻותָּר וּמְפָרֵשׁ הָתָם טַעְמָא מִשּׁוּם דְּיֶשְׁנָהּ לִשְׂכִירוּת מִתְּחִילָּה וְעַד סוֹף וְאֵימַת אִיתְּסַר בְּמַכּוֹשׁ אַחֲרוֹן מַכּוֹשׁ אַחֲרוֹן לֵית בֵּהּ שו&quot;פ וְכֵן הִלְכְתָא דְּלֵיכָּא מַאן דִּפְלִיג ומ&quot;מ שְׂכִירוּת אֵינָהּ מִשְׁתַּלֶּמֶת אֶלָּא לְבַסּוֹף כִּדְדָרֵישׁ מִקְּרָא בְּפֶ&#x27; אֵיזֶהוּ נֶשֶׁךְ (בָּבָא מְצִיעָא דַּף סה.) מַשְׂכִּיר שָׁנָה בְּשָׁנָה וְלָא נָפְקָא מִינֵּיהּ בְּהַךְ פְּלוּגְתָּא דְּיֶשְׁנָהּ לִשְׂכִירוּת אֶלָּא לְעִנְיַן קִידּוּשִׁין אִי חֲשִׁיב מִלְוֶה וּלְעִנְיַן הַהִיא דַּעֲבוֹדַת כּוֹכָבִים דְּאִם בָּנָה שְׂכָרוֹ מֻותָּר. ואב&quot;א דכ&quot;ע יֶשְׁנָהּ לִשְׂכִירוּת מִתְּחִילָּה וְעַד סוֹף וְהָכָא בְּאֻומָּן קוֹנָה בִּשְׁבַח כְּלִי קָמִיפַּלְגִי מ&quot;ס אֻומָּן קוֹנֶה בְּשֶׁבַח כְּלִי וְלָאו הַלְוָאָה הִיא ומ&quot;ס אֵין אֻומָּן קוֹנֶה בִּשְׁבַח כְּלִי וְהַלְוָאָה הִיא. רַב אִלְפָּס כָּתַב בְּפֶ&#x27; הַגּוֹזֵל קַמָּא (בָּבָא קַמָּא דַּף צט:) גַּבֵּי הָא דא&quot;ר אַסִּי לֹא שָׁנוּ אֶלָּא שֶׁנָּתַן לְחָרָשׁ שִׁידָּה תֵּיבָה וּמִגְדָּל לִנְעֹוץ בָּהֶן מַסְמֵר וּשְׁבָרוֹ אֲבָל נָתַן לְחָרָשׁ עֵצִים לַעֲשׂוֹת מֵהֶן שִׁידָּה תֵּיבָה וּמִגְדָּל וְעָשָׂה מֵהֶן שִׁידָּה תֵּיבָה וּמִגְדָּל וְשִׁבְּרָן פָּטוּר מ&quot;ט אֻומָּן קוֹנֶה בְּשֶׁבַח כְּלִי דְּלֵית הִילְכְתָא כְּרַב אַסִּי מִשּׁוּם דְּמַיְיתִי הָתָם עַל מִילְּתֵיהּ דְּרַב אַסִּי נֵימָא כְּתַנָּאֵי עֲשֵׂה לִי שֵׁירִים וּנְזָמִים וְכוּ&#x27; מַאי לָאו בְּהָא קָמִיפַּלְגִי מ&quot;ס אֻומָּן קוֹנֶה בְּשֶׁבַח כְּלִי וְכוּ&#x27; וְדָחֵי לָהּ לָא דְּכ&quot;ע אֵין אֻומָּן קוֹנֶה בְּשֶׁבַח כְּלִי וְכוּ&#x27; אַלְמָא לֵיתָא לְדָר&#x27; אַסִּי ונ&quot;ל דְּאֵין זוֹ רְאָיָה דְּמִשּׁוּם דְּבָעֵי לְמִידְחֵי הָא דְּאָמַר כְּתַנָּאֵי הֻוצְרַךְ לוֹמַר דְּכֻולֵּי עָלְמָא אֵין אֻומָּן קוֹנֶה בְּשֶׁבַח כְּלִי דְּאִי אֻומָּן קוֹנֶה א&quot;כ לְכֻולֵּי עָלְמָא מְקֻודֶּשֶׁת וְכֵן פִּי&#x27; ר&quot;י דְּאֵין לְהָבִיא רְאָיָה דַּהֲלָכָה יֶשְׁנָהּ לִשְׂכִירוּת מִתְּחִילָּה וְעַד סוֹף מִדְּאָמְרִינַן דכ&quot;ע יֶשְׁנָהּ לִשְׂכִירוּת מִתְּחִילָּה וְעַד סוֹף מִשּׁוּם דְּלָא מָצֵי לְמֵימַר דְּכ&quot;ע אֵינָהּ לִשְׂכִירוּת אֶלָּא לְבַסּוֹף דא&quot;כ הָוְיָא מְקֻודֶּשֶׁת לכ&quot;ע ור&quot;ת זַ&quot;ל פָּסַק כְּרַב אַסִּי דְּאָמַר אֻומָּן קוֹנֶה בְּשֶׁבַח כְּלִי ואע&quot;ג דִּבְפֶ&#x27; הַמְקַבֵּל (בָּבָא מְצִיעָא דַּף קיב.) מְפָ&#x27; טַעְמָא דְּרַב שֵׁשֶׁת דְּאָמַר דְּקַבְּלָן עוֹבֵר מִשּׁוּם בַּל תָּלִין מִשּׁוּם דְּאֵין אֻומָּן קוֹנֶה בְּשֶׁבַח כְּלִי הָא אָמְרִינַן בְּפֶ&#x27; הַגּוֹזֵל קַמָּא (בָּבָא קַמָּא דַּף צט.) לֵימָא פְּלִיגָא דְּרַב שֵׁשֶׁת אַדְּרַב אַסִּי וּמוּקִי לְהָא דְּרַב שֵׁשֶׁת בְּשָׁלִיחַ דְּאִיגַּרְתָּא וּלְהַךְ אוֹקִימְתָּא הֲלָכָה כְּר&#x27; מֵאִיר וְאִי בָּעֵית אֵימָא דכ&quot;ע אֵין אֻומָּן קוֹנֶה בְּשֶׁבַח כְּלִי וְכוּ&#x27; וְהָכָא בְּמַאי עָסְקִינַן כְּגוֹן שֶׁהוֹסִיף לָהּ נֹופֶךְ מִשֶּׁלּוֹ מ&quot;ס מִלְוָה וּפְרוּטָה דַּעְתֵּיהּ אַמִּלְוָה ומ&quot;ס דַּעְתֵּיהּ אַפְּרוּטָה וּלְהַךְ אוֹקִימְתָּא נָמֵי הֲלָכָה כְּר&quot;מ דְּהָכִי אָמְרִינַן לְעֵיל (קִידּוּשִׁין דַּף מו.) ש&quot;מ מִדְּרַבִּי אַמִּי הַמְקַדֵּשׁ בְּמִלְוֶה וּפְרוּטָה דַּעְתֵּיהּ אַפְּרוּטָה:</div>
+          <div class="glose-fr">Les rabbanan ont enseigné : « Fais-moi des bracelets, des anneaux et des bagues, et que je te sois consacrée » : dès qu&#x27;il les a faits, elle est consacrée, selon Rabbi Meïr ; et les sages disent : elle n&#x27;est pas consacrée tant que l&#x27;argent n&#x27;est pas arrivé dans sa main. Et il établit leur divergence en trois façons : tous s&#x27;accordent que celui qui consacre par un prêt n&#x27;est pas consacré, et ils divergent sur le point de savoir si la location existe depuis le début jusqu&#x27;à la fin. L&#x27;un pense que la location existe de bout en bout, et il se trouve que c&#x27;est un prêt ; l&#x27;autre pense que cela n&#x27;arrive qu&#x27;à la fin ; et selon cette établissement, la halakha est comme les rabbanan, qui disent qu&#x27;elle n&#x27;est pas consacrée, car nous tenons que la location existe de bout en bout, de ce qui est dit au premier chapitre de la masséchet Avoda Zara (19b) à propos de celui qui arrive à la coupole où l&#x27;on installe une idole : il est interdit de la bâtir ; et Rabbi Elazar a dit à ce sujet : s&#x27;il l&#x27;a bâtie, son salaire est permis ; et il explique là la raison : parce que la location existe de bout en bout ; et quand est-ce interdit ? Au dernier coup de pioche ; or au dernier coup de pioche il n&#x27;y a pas la valeur d&#x27;une pérouta. Et ainsi est la halakha, car personne ne diverge ; néanmoins la location n&#x27;est payée qu&#x27;à la fin, comme il l&#x27;enseigne du verset au chapitre Eizehou nechech (Bava Metsia 65a) « comme un salarié année par année » ; et la conséquence de cette controverse « la location existe de bout en bout » ne se pose que pour les kiddouchin, si c&#x27;est considéré comme un prêt, et pour le cas d&#x27;Avoda Zara : si elle l&#x27;a bâtie, son salaire est permis. Et si tu veux, dis : tous s&#x27;accordent que la location existe de bout en bout, et ici, c&#x27;est dans le cas de l&#x27;artisan qui acquiert l&#x27;amélioration de l&#x27;objet : l&#x27;un pense que l&#x27;artisan acquiert l&#x27;amélioration de l&#x27;objet et ce n&#x27;est pas un prêt, l&#x27;autre pense que l&#x27;artisan n&#x27;acquiert pas l&#x27;amélioration de l&#x27;objet et c&#x27;est un prêt. Le Rif a écrit au premier chapitre Hagozel (Bava Kama 99b) à propos de ce que Rav Assi a dit : ils n&#x27;ont enseigné cela que s&#x27;il a donné à un forgeron un coffre, une boîte ou une tour pour y planter un clou et qu&#x27;il les a brisés ; mais s&#x27;il a donné à un forgeron du bois pour faire un coffre, une boîte ou une tour, et qu&#x27;il en a fait un coffre, une boîte ou une tour et les a brisés, il est quitte : pourquoi ? parce que l&#x27;artisan acquiert l&#x27;amélioration de l&#x27;objet ; que la halakha n&#x27;est pas comme Rav Assi, parce que l&#x27;on cite là-bas une opinion de Rav Assi : disons que c&#x27;est une controverse de tanaïm : « fais-moi des bracelets, des anneaux, etc. » ; n&#x27;est-ce pas qu&#x27;ils diffèrent en ceci : l&#x27;un pense que l&#x27;artisan acquiert l&#x27;amélioration de l&#x27;objet, etc. ; et on repousse : non, tous pensent que l&#x27;artisan n&#x27;acquiert pas l&#x27;amélioration de l&#x27;objet, etc. ; on voit donc que Rav Assi n&#x27;est pas [la halakha] ; et il me semble que ce n&#x27;est pas une preuve : car pour repousser ce qui est dit « une controverse de tanaïm », il lui fallait dire que tous pensent que l&#x27;artisan n&#x27;acquiert pas l&#x27;amélioration de l&#x27;objet, car si l&#x27;artisan acquiert, alors pour tous elle est consacrée. Et ainsi a expliqué le Ri : on ne tire pas de preuve que la halakha est « la location existe de bout en bout » du fait qu&#x27;ils disent que tous pensent que la location existe de bout en bout, parce qu&#x27;il ne pouvait pas dire que tous pensent que la location n&#x27;existe qu&#x27;à la fin, car alors elle serait consacrée pour tous. Et Rabbénou Tam z&quot;l a décidé comme Rav Assi, qui dit que l&#x27;artisan acquiert l&#x27;amélioration de l&#x27;objet ; et bien que dans le chapitre Hamekabel (Bava Metsia 112a) il explique la raison de Rav Chécheth, qui dit que l&#x27;entrepreneur transgresse « tu ne retiendras pas » parce que l&#x27;artisan n&#x27;acquiert pas l&#x27;amélioration de l&#x27;objet, n&#x27;avons-nous pas dit au premier chapitre Hagozel (Bava Kama 99a) « disons que Rav Chécheth diverge de Rav Assi », et il établit la parole de Rav Chécheth dans le cas d&#x27;un messager de lettre ; et selon cette établissement, la halakha est comme Rabbi Meïr. Et si tu veux, dis que tous pensent que l&#x27;artisan n&#x27;acquiert pas l&#x27;amélioration de l&#x27;objet, etc. Et ici de quoi s&#x27;agit-il ? Par exemple s&#x27;il lui a ajouté une pierre précieuse de sa part : l&#x27;un pense « prêt et pérouta, son intention sur le prêt » et l&#x27;autre « son intention sur la pérouta » ; et selon cette établissement aussi la halakha est comme Rabbi Meïr, car nous disons plus haut (Kiddouchin 46a) « apprends de Rabbi Ami : celui qui consacre par un prêt et une pérouta, son intention est sur la pérouta ».</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Suite de la baraïta des bracelets : un tana pense que la <b>location</b> n'existe qu'à la fin (quand il les rend, c'est un pardon au titre des kiddouchin, non un prêt), l'autre qu'elle existe depuis le début jusqu'à la fin (Rachi).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאִיבָּעֵית אֵימָא: דְּכֻולֵּי עָלְמָא יֶשְׁנָהּ לִשְׂכִירוּת מִתְּחִלָּה וְעַד סוֹף, וּמְקַדֵּשׁ בְּמִלְוָה – אֵינָהּ מְקֻודֶּשֶׁת, וְהָכָא, בְּאֻומָּן קוֹנֶה בְּשֶׁבַח כְּלִי קָמִיפַּלְגִי. מַר סָבַר: אֻומָּן קוֹנֶה בְּשֶׁבַח כְּלִי, וּמַר סָבַר: אֵין אֻומָּן קוֹנֶה בְּשֶׁבַח כְּלִי.</div>
+            <div class="fr"><p>Et si tu veux, dis : de l&#x27;avis de tous la location existe depuis le début jusqu&#x27;à la fin, et celui qui consacre par un prêt n&#x27;est pas consacrée, et ici ils divergent sur l&#x27;artisan qui acquiert l&#x27;amélioration de l&#x27;objet. L&#x27;un pense : l&#x27;artisan acquiert l&#x27;amélioration de l&#x27;objet, et l&#x27;autre pense : l&#x27;artisan n&#x27;acquiert pas l&#x27;amélioration de l&#x27;objet.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאִיבָּעֵית אֵימָא דכ&quot;ע יְשָׁנָה כו&#x27;</b> ודכ&quot;ע הַמְקַדֵּשׁ בְּמִלְוָה אֵינָהּ מְקֻודֶּשֶׁת:</div>
+          <div class="glose-fr">« Et si tu veux, dis : de l&#x27;avis de tous la location existe, etc. » : et de l&#x27;avis de tous celui qui consacre par un prêt n&#x27;est pas consacrée.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהָכָא בְּאֻומָּן קוֹנֶה כו&#x27;</b> כְּלוֹמַר הָכָא בְּשֶׁלֹּא הִתְנָה לִהְיוֹת שְׂכִיר יָמִים אֶלָּא קַבְּלָן שֶׁקִּבֵּל עָלָיו לִגְמֹור הַמְּלָאכָה בְּכָךְ וְכָךְ וּבְאֻומָּן קַבְּלָן כְּשֶׁמַּשְׁבִּיחוֹ וְעָשָׂה מִן הַזָּהָב כְּלִי קוֹנֶה לִזְכּוֹת בַּכְּלִי כְּשֶׁהוּא מַשְׁבִּיחוֹ קָמִיפַּלְגִי ר&quot;מ סָבַר אֻומָּן קוֹנֶה בְּשֶׁבַח כְּלִי וְאֵין בְּזוֹ לוֹמַר יֶשְׁנָהּ לִשְׂכִירוּת כּוּ&#x27; דְּכָל מַה שֶׁמַּשְׁבִּיחַ אֵינוֹ מִלְוֶה עַל הַבְּעָלִים אֶלָּא בִּכְלִי הוּא זוֹכֶה וּכְשֶׁמַּחֲזִירוֹ לוֹ בַּשָּׂכָר הַקָּצוּב הַהִיא שַׁעְתָּא הֲרֵי הוּא כְּמוֹכְרוֹ לוֹ:</div>
+          <div class="glose-fr">« Et ici, l&#x27;artisan acquiert, etc. » : c&#x27;est-à-dire : ici, il n&#x27;a pas stipulé d&#x27;être un salarié à la journée mais un entrepreneur (kabban) qui a accepté de terminer le travail pour tel prix, et l&#x27;artisan entrepreneur, quand il améliore et fait avec l&#x27;or un objet, acquiert, pour avoir part à l&#x27;objet quand il l&#x27;améliore ; Rabbi Meïr pense : l&#x27;artisan acquiert l&#x27;amélioration de l&#x27;objet, et il n&#x27;y a pas lieu de dire que la location existe, etc., car tout ce qu&#x27;il améliore n&#x27;est pas un prêt sur les propriétaires mais il acquiert dans l&#x27;objet, et quand il le lui rend pour le salaire convenu, à cette heure c&#x27;est comme s&#x27;il le lui vendait.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵין אֻומָּן קוֹנֶה כו&#x27;</b> וַהֲרֵי הוּא כִּשְׁאָר שְׂכִירוּת:</div>
+          <div class="glose-fr">« L&#x27;artisan n&#x27;acquiert pas, etc. » : et c&#x27;est comme les autres locations.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דכ&quot;ע יֶשְׁנָהּ לִשְׂכִירוּת מִתְּחִלָּה וְעַד סוֹף</b> אֵין לְדַקְדֵּק מִכָּאן דַּהֲלָכָה דְּיֶשְׁנָהּ לִשְׂכִירוּת מִתְּחִלָּה וְעַד סוֹף דְּהָא לָא הֲוָה מָצֵי לְמֵימַר דכ&quot;ע אֵינָהּ לִשְׂכִירוּת דא&quot;כ מ&quot;ט דמ&quot;ד אֵינָהּ מְקֻודֶּשֶׁת אַךְ יֵשׁ לְהָבִיא רְאָיָה דַּהֲלָכָה דְּיֶשְׁנָהּ לִשְׂכִירוּת מִתְּחִלָּה וְעַד סוֹף מֵהַהִיא דפ&quot;ק דְּמַסֶּכֶת ע&quot;ז (דַּף יט:) תְּנַן הִגִּיעַ לְכִיפָּה שֶׁמַּעֲמִידִים בָּהּ עֲבוֹדַת כּוֹכָבִים אָסוּר לִבְנוֹתָהּ וְקָאָמַר ר&quot;א בגמ&#x27; דְּאִם בָּנָה שְׂכָרוֹ מֻותָּר וּמְפָרֵשׁ הָתָם טַעְמָא מִשּׁוּם דְּיֶשְׁנָהּ לִשְׂכִירוּת מִתְּחִילָּה וְעַד סוֹף וְאֵימַת קָמִיתְּסַר בְּמַכּוֹשׁ אַחֲרוֹן וּבְמַכּוֹשׁ אַחֲרוֹן לֵית בֵּהּ שָׁוֶה פְּרוּטָה ש&quot;מ דְּהָכִי הִילְכְתָא דְּלֵיכָּא מַאן דִּפְלִיג וְאֵין נַפְקוּתָא לְעִנְיַן חֲזָרָה דְּהָא דְּאָמַר רַב (בּ&quot;מ דַּף עז.) פּוֹעֵל יָכוֹל לַחֲזוֹר בּוֹ אַפֵּי&#x27; בַּחֲצִי הַיּוֹם הַיְינוּ אַפֵּי&#x27; לָמֶ&quot;ד אֵינָהּ לִשְׂכִירוּת אֶלָּא לְבַסּוֹף אֲבָל אִיכָּא נַפְקוּתָא לְעִנְיַן קִידּוּשִׁין דְּאִי יֶשְׁנָהּ לִשְׂכִירוּת מִתְּחִילָּה וְעַד סוֹף חֲשִׁיב הַאי שְׂכִירוּת מִלְוֶה וְאֵינָהּ מְקֻודֶּשֶׁת וּלְעִנְיַן עֲבוֹדַת כּוֹכָבִים אִם בָּנָה שְׂכָרוֹ מֻותָּר ואע&quot;ג דְּיֶשְׁנָהּ לִשְׂכִירוּת מִתְּחִילָּה וְעַד סוֹף מ&quot;מ אֵינָהּ מִשְׁתַּלֶּמֶת אֶלָּא לְבַסּוֹף כִּדְאָמְרִי&#x27; בְּפֶרֶק אֵיזֶהוּ נֶשֶׁךְ (בּ&quot;מ דַּף סה.) כִּשְׂכִיר שָׁנָה בְּשָׁנָה שְׂכִירוּת שֶׁל שָׁנָה זוֹ אֵינָהּ מִשְׁתַּלֶּמֶת אֶלָּא בְּשָׁנָה אַחֶרֶת:</div>
+          <div class="glose-fr">« De l&#x27;avis de tous la location existe de bout en bout » : On ne peut pas en déduire que la halakha est que la location existe de bout en bout, car il ne pouvait pas dire que tous pensent que la location n&#x27;existe pas, puisque alors, quelle serait la raison de celui qui dit qu&#x27;elle n&#x27;est pas consacrée ? Mais on peut apporter une preuve que la halakha est que la location existe de bout en bout de ce qui est dit au premier chapitre d&#x27;Avoda Zara (19b) : nous avons enseigné : si l&#x27;on arrive à la coupole où l&#x27;on installe une idole, il est interdit de la bâtir ; et Rabbi Elazar dit dans la guemara que s&#x27;il l&#x27;a bâtie, son salaire est permis ; et il explique là la raison : parce que la location existe de bout en bout ; et quand est-ce interdit ? Au dernier coup de pioche, et au dernier coup de pioche il n&#x27;y a pas la valeur d&#x27;une pérouta ; apprends-en que la halakha est ainsi, car personne ne diverge. Et il n&#x27;y a pas de conséquence pour le retour, car ce que Rav a dit (Bava Metsia 77a) « un ouvrier peut se rétracter même au milieu de la journée » vaut même selon celui qui dit que la location n&#x27;existe qu&#x27;à la fin ; mais il y a une conséquence pour les kiddouchin : si la location existe de bout en bout, cette location est considérée comme un prêt et elle n&#x27;est pas consacrée ; et pour Avoda Zara : s&#x27;il l&#x27;a bâtie, son salaire est permis ; et bien que la location existe de bout en bout, elle n&#x27;est payée qu&#x27;à la fin, comme nous le disons au chapitre Eizehou nechech (Bava Metsia 65a) : comme un salarié année par année : la location de cette année n&#x27;est payée que l&#x27;année suivante.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אָמַר רָבָא אָמַר ר&quot;נ אָמַר לָהּ הִתְקַדְּשִׁי לִי בְּמָנֶה וְהִנִּיחַ לָהּ מַשְׁכּוֹן עָלָיו אֵינָהּ מְקֻודֶּשֶׁת מָנֶה אֵין כָּאן מַשְׁכּוֹן אֵין כָּאן. יֵשׁ מְפָרְשִׁים דְּהַיְינוּ דַּוְקָא בְּקִנְיַן אִשָּׁה וַעֲבָדִים כִּי הַהִיא עֻובְדָּא דְּאַמְּתָא דִּבְסָמוּךְ וְכֵן בְּקַרְקַע לְפִי שֶׁנִּקְנִין בְּכֶסֶף וְאֵין כָּאן כֶּסֶף שֶׁיּוּכַל לִקְנוֹת שֶׁאֵין הַמַּשְׁכּוֹן קָנוּי שֶׁלֹּא נָתְנוּ לָהּ זְכוּת בְּגוּפוֹ אֲבָל אִם אָדָם נוֹתֵן מַתָּנָה לַחֲבֵירוֹ וְנָתַן לוֹ מַשְׁכּוֹן בִּשְׁבִיל הַמַּתָּנָה מְשִׁיכַת הַמַּשְׁכּוֹן כְּאִילּוּ זָכָה בַּמַּתָּנָה וּמֵבִיא רְאָיָה מֵהָא דְּאָמְרִינַן בְּפֶרֶק הַשּׂוֹכֵר אֶת הָאֻומָּנִין (בָּבָא מְצִיעָא דַּף עח.) דְּקָאָמַר הָתָם הָאֻומָּנִין שֶׁחָזְרוּ בָּהֶן בְּדָבָר הָאָבֵד וּבָאתָה חֲבִילָתוֹ לְיַד בַּעַל הַבַּיִת דְּהַיְינוּ כְּלֵי אֻומָּנוּת שֶׁל פּוֹעֲלִים שׂוֹכֵר עֲלֵיהֶן עַד כְּדֵי דְּמֵיהֶן אַלְמָא בִּמְשִׁיכַת הַמַּשְׁכּוֹן נִתְחַיְּיבוּ הַפּוֹעֲלִים לְקַיֵּים דִּיבּוּרָם וְלֵיתָא דְּאֵין חִילּוּק בֵּין מַתָּנָה לְקִידּוּשִׁין וְטַעַם אֶחָד לְכֻולָּן לְפִי שֶׁאֵין הַמַּשְׁכּוֹן מְשֻׁועְבָּד לִכְלוּם מִשּׁוּם דְּאָדָם יָכוֹל לְשַׁעְבֵּד נְכָסָיו לְדָבָר שֶׁנִּתְחַיֵּיב בּוֹ אֲבָל בְּדָבָר שֶׁלֹּא נִתְחַיֵּיב לֹא חָל שִׁיעְבּוּד עַל נְכָסָיו וּבְמַתָּנָה שֶׁאָמַר לִיתֵּן לוֹ לֹא נִתְחַיֵּיב בָּהּ וְלֹא יִתְחַייֵּב בָּהּ לְעוֹלָם לְפִי שֶׁיָּכוֹל לַחֲזֹור בּוֹ לְפִיכָךְ לֹא נִשְׁתַּעְבֵּד לוֹ הַמַּשְׁכּוֹן בִּמְשִׁיכָתוֹ אֲבָל הַהִיא דְּהַפּוֹעֲלִים כֵּיוָן דְּדָבָר הָאָבֵד הוּא וְחָזְרוּ בְּהוּ חַיָּיבִין לְשַׁלֵּם לוֹ הַהֶפְסֵד הִילְכָּךְ נִשְׁתַּעְבֵּד לוֹ הַמַּשְׁכּוֹן שֶׁלָּהֶם לִשְׂכֹּור עָלָיו עַד כְּדֵי דָּמָיו הִילְכָּךְ כְּשֶׁעוֹשִׂין שִׁידּוּכִין וְנוֹתְנִין עִרְבוֹנוֹת זֶה לָזֶה לְשֵׁם קְנָס לֹא יֹאמַר אִם אֶחֱזֹור בֵּי אֲנִי נוֹתֵן לְךָ כָּךְ וְכָךְ וַהֲרֵי חֵפֶץ זֶה בְּיָדְךָ עַל יְדֵי מָמוֹן שֶׁאֶתְחַיֵּיב לְךָ אִם אֶחֱזֹור בֵּי דִּבְכִי הַאי גַּווְנָא לֹא זָכָה בַּמַּשְׁכּוֹן דַּאֲחֵרִים כָּל זְמַן שֶׁאֵינוֹ חַייָּב לוֹ כְּלוּם אֶלָּא צָרִיךְ לְהַקְנוֹת לוֹ בְּסוּדָר דְּלָא כְּאַסְמַכְתָּא בְּבֵית דִּין חָשׁוּב כְּדֵי שֶׁיִּתְחַיֵּיב לוֹ מִן הַדִּין אִם יַחְזֹור וְאִם יִתֵּן לוֹ הַחֵפֶץ בַּמַּשְׁכּוֹן וְאָז יָחוּל הַשִּׁיעְבּוּד עַל הַמַּשְׁכּוֹן כֵּיוָן שֶׁנִּתְחַיֵּיב לוֹ הַקְּנָס אִם יַחֲזֹור בּוֹ אוֹ יֹאמַר לוֹ אִם אֶחֱזֹור בִּי תִּזְכֶּה בְּכָךְ וְכָךְ מָמוֹן בְּגוּף הַחֵפֶץ הַזֶּה. אֵיתִיבֵיהּ רָבָא לְרַב נַחְמָן קִדְּשָׁה בְּמַשְׁכּוֹן מְקֻודֶּשֶׁת הָתָם בְּמַשְׁכּוֹן דַּאֲחֵרִים וְכִדְרַבִּי יִצְחָק דְּאָמַר רַבִּי יִצְחָק מִנַּיִן לְבַעַל חוֹב שֶׁקּוֹנֶה מַשְׁכּוֹן שֶׁנֶּאֱמַר וּלְךָ תִּהְיֶה צְדָקָה אִם אֵינוֹ קוֹנֶה מַשְׁכּוֹן צְדָקָה מִנַּיִן מִכָּאן לְבַעַל חוֹב שֶׁקּוֹנֶה מַשְׁכּוֹן. אִיכָּא לְפָרוּשֵׁי דְּאַיְירֵי אַפֵּי&#x27; בְּמַשְׁכּוֹן שֶׁמִּשְׁכֵּן לוֹ בִּשְׁעַת הַלְוָאָתוֹ אע&quot;ג דְּלָא אָמַר ר&#x27; יִצְחָק אֶלָּא שֶׁלֹּא בִּשְׁעַת הַלְוָאָתוֹ אִיכָּא לְמֵימַר כֵּיוָן דְּקָנֵי לֵיהּ בַּעַל חוֹב שֶׁלֹּא בִּשְׁעַת הַלְוָאָה קִנְיָן גָּמוּר אִם כֵּן בִּשְׁעַת הַלְוָאָה נָמֵי אַלִּים שִׁיעְבּוּדוֹ לֵיחָשֵׁב מָמוֹנוֹ לְקַדֵּשׁ בּוֹ הָאִשָּׁה וְלִקְנוֹת בּוֹ עֲבָדִים וְקַרְקָעוֹת וְכִי הַאי גַּוְונָא אָנוּ צְרִיכִין לוֹמַר בְּפֶרֶק הַשּׁוֹלֵחַ (גִּיטִּין דַּף לז.) בְּהַהִיא דְּאָמְרִינַן הַמַּלְוֶה אֶת חֲבֵירוֹ עַל הַמַּשְׁכּוֹן אֵינוֹ מְשַׁמֵּט וּמְפָרֵשׁ הָתָם מִשּׁוּם דְּקָנֵי לֵיהּ מֻדַּר&#x27; יִצְחָק וְר&#x27; יִצְחָק לָא קָאָמַר אֶלָּא שֶׁלֹּא בִּשְׁעַת הַלְוָאָתוֹ וְהַמַּלְוֶה עַל הַמַּשְׁכּוֹן מַשְׁמַע בִּשְׁעַת הַלְוָאָה כִּדְמוֹכַח בְּסוֹף הַשּׂוֹכֵר אֶת הָאֻומָּנִין (בָּבָא מְצִיעָא דַּף פֹּא.) אֶלָּא עַל כָּרְחָךְ הָכִי פֵּי&#x27; כֵּיוָן דְּקָנֵי לֵיהּ שֶׁלֹּא בִּשְׁעַת הַלְוָאָתוֹ קִנְיָן גָּמוּר לְכָל הַפָּחוֹת בִּשְׁעַת הַלְוָאָתוֹ קָנֵי לֵיהּ לְעִנְיַן שֶׁלֹּא יִשָּׁמֵט דַּחֲשִׁיב שֶׁל אָחִיךָ בְּיָדְךָ כִּדְדָרְשִׁינַן בְּסִפְרֵי אֲשֶׁר יִהְיֶה לְךָ אֶת אָחִיךָ תַּשְׁמֵט יָדֶךָ וְלֹא שֶׁל אָחִיךָ בְּיָדְךָ מִכָּאן אָמְרוּ הַמַּלְוֶה עַל הַמַּשְׁכּוֹן אֵינוֹ מְשַׁמֵּט וְכֵן צָרִיךְ לְפָרֵשׁ בִּפְסָחִים פֶּרֶק כָּל שָׁעָה (פְּסָחִים דַּף לא.) בְּהַהִיא דְּהַמַּלְוֶה אֶת הָעוֹבֵד כּוֹכָבִים עַל חֲמֵצוֹ אַחַר הַפֶּסַח עוֹבֵר לְרַבִּי מֵאִיר מִשּׁוּם דְּקָנֵי לֵיהּ כְּדָר&#x27; יִצְחָק דְּכֵיוָן דְּקָנֵי לֵיהּ שֶׁלֹּא בִּשְׁעַת הַלְוָאָתוֹ קִנְיָן גָּמוּר קָנֵי מִיהָא בִּשְׁעַת הַלְוָאָתוֹ לְעִנְיָן זֶה דְּקָרֵינַן בֵּיהּ שֶׁלְּךָ אִי אַתָּה רוֹאֶה וּמִיהוּ צָרִיךְ לְדַקְדֵּק דִּבְסוֹף פ&#x27; הָאֻומָּנִין וּבְסוֹף פֶּרֶק שְׁבוּעוֹת הַדַּייָּנִין דַּף מד. מַשְׁמַע דְּמִשּׁוּם דְּר&#x27; יִצְחָק לָא הָוֵי אֶלָּא שׁוֹמֵר שָׂכָר וּדְלֹא כְּפֵירוּשׁ רַשִׁ&quot;י שֶׁפֵּירֵשׁ בְּסוֹף הָאֻומָּנִין דִּלֵּר&#x27; יִצְחָק קוֹנֶה הַמַּשְׁכּוֹן לְהִתְחַיֵּיב בָּאֳונָסִין דְּלָא מַשְׁמַע הָתָם הָכִי דְּכִי מְפָרֵשׁ הָתָם טַעְמָא דְּהִלְוָהוּ עַל הַמַּשְׁכּוֹן שׁוֹמֵר שָׂכָר כְּדָר&#x27; יִצְחָק פָּרֵיךְ לֵיהּ אֵימַר דְּאָמַר ר&#x27; יִצְחָק שֶׁלֹּא בִּשְׁעַת הַלְוָאָה בִּשְׁעַת הַלְוָאָה מִי אָמַר ולפרש&quot;י הֲוָה לֵיהּ לְאַקְשׁוּיֵי וְתִסְבְּרָא אִי אִית לֵיהּ דְּר&#x27; יִצְחָק אַמַּאי לָא הָוֵי אֶלָּא ש&quot;ש בָּאֳונָסִין נַמֵּי לִיחַייַּב מִיהוּ יָכוֹל לִדְחוֹת דַּחֲדָא מִתְּרֵי פָּרְכִי נְקַט. וְרַבֵּינוּ חֲנַנְאֵל זַ&quot;ל פִּי&#x27; שָׁם דְּלָא לְהִתְחַיֵּיב בָּאֳונָסִין וְצָרִיךְ לְדַקְדֵּק אַמַּאי קְנָאוֹ לִהְיוֹת עָלָיו ש&quot;ש אִי חֲשִׁיב קִנְיָן גָּמוּר בָּאֳונָסִין נַמֵּי לִיחַייַּב וְאִי לָא חֲשִׁיב קִנְיָן עָלָיו אַפֵּי&#x27; שׁוֹמֵר שָׂכָר לָא הָוֵי וְאֵין לוֹמַר שֶׁזֶּה שְׂכָרוֹ שֶׁתּוֹפֵס מַשְׁכּוֹן זֶה לִהְיוֹת בָּטוּחַ מֵחוֹבוֹ דא&quot;כ לֹא הָיִינוּ צְרִיכִין לְדָר&#x27; יִצְחָק אֶלָּא מִמֵּילָא שָׁמְעִינַן דְּהָוֵי שׁוֹמֵר שָׂכָר מִידֵּי דְּהָוֵי אַאֻומָּנִין דְּהָוֵי שׁוֹמֵר שָׂכָר מִשּׁוּם דִּתְפִיס לֵיהּ אַאַגְרֵיהּ אֶלָּא וַדַּאי גַּבֵּי אֻומָּן דַּוְקָא שַׁייָּךְ הַאי טַעְמָא שֶׁיֵּשׁ לוֹ שָׂכָר אַחֵר שֶׁמִּשְׂתַּכֵּר בְּאֻומָּנוּתָם וּבִשְׁבִיל שֶׁבִּתְפִיסַת הַכְּלִי הוּא בָּטוּחַ מִשְּׂכָרוֹ הָוֵי שׁוֹמֵר שָׂכָר אֲבָל בְּהַלְוָאָה אִם לֹא יִלְוֶה לֹא יִצְטָרֵךְ לְמַשְׁכּוֹן אֶלָּא וַדַּאי הַיְינוּ שְׂכָרוֹ דְּקָנֵי לֵיהּ לִהְיוֹת מָמוֹנוֹ לְקַדֵּשׁ בּוֹ אֶת הָאִשָּׁה וְלִקְנוֹת בּוֹ עֲבָדִים וְקַרְקָעוֹת וְכֵן פֵּירֵשׁ ר&quot;ת דְּקָנֵי לֵיהּ לְקַדֵּשׁ בּוֹ אֶת הָאִשָּׁה וְאִם תֹּאמַר אַמַּאי חֲשִׁיב שׁוֹמֵר שָׂכָר מֵהַאי טַעְמָא גַּם בִּמְעוֹתָיו הָיָה יָכוֹל לַעֲשׂוֹת זֶה וְיֵשׁ לוֹמַר כֵּיוָן דִּבְשָׁעָה שֶׁנְּטָלוֹ לֹא הָיוּ מְעוֹתָיו בְּיָדוֹ נִקְנֶה הוּא בַּמַּשְׁכּוֹן שֶׁנָּטַל בּוֹ בִּמְקוֹמוֹ כֵּיוָן שֶׁיָּכוֹל לַעֲשׂוֹת מִמֶּנּוּ קִידּוּשִׁין אוֹ קִנְיָן וְעוֹד שֶׁיָּכוֹל לַעֲשׂוֹת חֲלִיפִין מִן הַכְּלִי הַמְמֻושְׁכָּן מַה שֶּׁלֹּא הָיָה יָכוֹל לַעֲשׂוֹת בַּמָּעוֹת וּלְפוּם הַאי טַעְמָא לֹא נוּכַל לְפָרֵשׁ בִּשְׁמַעְתִּין דְּבִשְׁעַת הַלְוָאָה מַייְרֵי דְּכֵיוָן דְּשֶׁלֹּא בִּשְׁעַת הַלְוָאָה לָא הָוֵי אֶלָּא שׁוֹמֵר שָׂכָר מִשּׁוּם שֶׁנֶּהֱנֶה שֶׁיָּכוֹל לְקַדֵּשׁ בּוֹ אִם כֵּן בִּשְׁעַת הַלְוָאָה אֵין לוֹ כֹּחַ זֶה וְכֵן מַשְׁמַע לְקַמָּן פֶּרֶק שֵׁנִי (קִידּוּשִׁין דַּף מח.) גַּבֵּי עֲשֵׂה לִי שִׁירִים וּנְזָמִים וְאֶקָּדֵשׁ אֲנִי לְךָ דְּקָאָמַר לְמָאֵן דְּאָמַר אֵין אֻומָּן קוֹנֶה בְּשֶׁבַח כְּלִי דְּאֵינָהּ מְקֻודֶּשֶׁת עַד שֶׁיַּגִּיעַ מָמוֹן אַחֵר לְיָדָהּ וּמַאי שְׁנָא מִמַּשְׁכּוֹן אֲחֵרִים בִּשְׁעַת הַלְוָאָה דְּהַאי נָמֵי מְמֻושְׁכָּן לוֹ בִּשְׂכָרוֹ דִּתְפִיס לֵיהּ אַאַגְרֵיהּ הִלְכָּךְ לָא אַייְרֵי הָכָא אֶלָּא בְּמִשְׁכְּנוֹ שֶׁלֹּא בִּשְׁעַת הַלְוָאָתוֹ אֲבָל אִם הָיָה לוֹ מַשְׁכּוֹן מִמֶּנָּה אֲפִילּוּ מִשְׁכַּנְתּוֹ לוֹ בִּשְׁעַת הַלְוָאָה וְהֶחֱזִיר לָהּ הַמַּשְׁכּוֹן וְקִדְּשָׁה בּוֹ מְקֻודֶּשֶׁת דַּחֲזָרַת הַךְ מַשְׁכּוֹן הָוֵי בִּמְחִילַת מִלְוֶה וְכֵן הִלְכְתָא וְעוֹד מוּכָח לְקַמָּן סִי&#x27; כו דְּאַף אִם קִדְּשָׁהּ בְּמִלְוָה שֶׁיֵּשׁ עָלֶיהָ מַשְׁכּוֹן בְּלֹא חֲזָרַת מַשְׁכּוֹן מְקֻודֶּשֶׁת: בְּנֵי רַב הוּנָא בַּר אָבִין זָבִין אַמְתָּא בִּפְרִיטֵי לָא הֲווֹ לְהוּ פְּרִיטֵי אוֹתִיבוּ נִסְכָּא עִילָּוַוייְהוּ לְסוֹף אִייַּקּוּר אַמְתָּא אֲתוֹ לְקַמֵּיהּ דְּרַבִּי אַמֵּי אֲמַר לְהוּ פְּרִיטֵי אֵין כָּאן נְסָכָא אֵין כָּאן.</div>
+          <div class="glose-fr">Rava a dit au nom de Rav Na&#x27;hman : S&#x27;il lui a dit « sois consacrée à moi par une mine » et lui a laissé un gage (michkon) pour cela, elle n&#x27;est pas consacrée : une mine, il n&#x27;y en a pas ici ; un gage, il n&#x27;y en a pas ici. Certains expliquent que c&#x27;est précisément pour l&#x27;acquisition d&#x27;une femme et d&#x27;esclaves, comme dans le cas de la servante plus bas, et de même pour la terre, parce qu&#x27;ils s&#x27;acquièrent par l&#x27;argent et qu&#x27;il n&#x27;y a pas ici d&#x27;argent qui puisse acquérir, car le gage n&#x27;est pas acquis, on ne lui a pas donné de droit sur sa substance ; mais si un homme donne un don à son prochain et lui donne un gage pour le don, la traction du gage est comme s&#x27;il avait acquis le don ; et il apporte une preuve de ce qui est dit au chapitre Hasokher et haouménin (Bava Metsia 78a) : là il dit : les artisans qui se sont rétractés dans une affaire qui se perd, et dont le paquet est venu dans la main du maître de maison, c&#x27;est-à-dire les outils de travail des ouvriers, il loue à leur place jusqu&#x27;à concurrence de leur valeur : on voit que par la traction du gage les ouvriers sont obligés de tenir leur parole. Ce n&#x27;est pas ainsi : il n&#x27;y a pas de différence entre un don et des kiddouchin, et la raison est la même pour tous, parce que le gage n&#x27;est asservi à rien, car un homme peut asservir ses biens à une chose dont il est obligé ; mais pour une chose dont il n&#x27;est pas obligé, l&#x27;asservissement ne s&#x27;applique pas à ses biens ; et pour un don qu&#x27;il a dit donner, il n&#x27;est pas obligé et ne le sera jamais, parce qu&#x27;il peut se rétracter ; c&#x27;est pourquoi le gage n&#x27;est pas asservi à lui par sa traction ; mais dans le cas des ouvriers, puisque c&#x27;est une affaire qui se perd et qu&#x27;ils se sont rétractés, ils doivent payer la perte ; c&#x27;est pourquoi leur gage lui est asservi pour qu&#x27;il loue à leur place jusqu&#x27;à concurrence de sa valeur. C&#x27;est pourquoi quand on fait des fiançailles et qu&#x27;on se donne des arrhes l&#x27;un à l&#x27;autre à titre d&#x27;amende, qu&#x27;il ne dise pas : « si je me rétracte, je te donne tant et tant, et voici cet objet entre tes mains, par l&#x27;argent que je m&#x27;oblige envers toi si je me rétracte », car dans un cas pareil il n&#x27;a pas acquis le gage d&#x27;autrui tant qu&#x27;il ne lui est tenu de rien ; mais il faut lui faire acquérir par un &#x27;kinyan soudar&#x27; (écharpe), non comme une assmakhta devant un tribunal important, afin qu&#x27;il lui soit tenu en droit s&#x27;il se rétracte, et s&#x27;il lui donne l&#x27;objet en gage, alors l&#x27;asservissement s&#x27;applique au gage puisqu&#x27;il lui est tenu de l&#x27;amende s&#x27;il se rétracte ; ou qu&#x27;il lui dise : « si je me rétracte, tu acquiers tant et tant d&#x27;argent dans la substance de cet objet ». Rava objecta à Rav Na&#x27;hman : « Il l&#x27;a consacrée par un gage, elle est consacrée » ? Là, c&#x27;est un gage d&#x27;autrui, et comme Rabbi Yitz&#x27;hak, car Rabbi Yitz&#x27;hak a dit : d&#x27;où que le créancier acquiert le gage ? Car il est dit « et pour toi ce sera une tsedaka » (Dt 24,13) : s&#x27;il n&#x27;acquérait pas le gage, d&#x27;où une tsedaka ? De là, le créancier acquiert le gage. On peut expliquer qu&#x27;il parle même du gage qu&#x27;on lui a engagé au moment de son prêt, bien que Rabbi Yitz&#x27;hak ne l&#x27;ait dit que pour hors du moment du prêt, on peut dire : puisque le créancier l&#x27;a acquis hors du moment du prêt d&#x27;une acquisition complète, alors au moment du prêt aussi son asservissement est assez fort pour être considéré comme son argent, pour consacrer une femme et acquérir des esclaves et des terres ; et dans un cas pareil nous devons dire au chapitre Hachole&#x27;ah (Guitin 37a), à propos de ce qui est dit : celui qui prête sur un gage n&#x27;annule pas (la chemita) ; et il explique là que c&#x27;est parce qu&#x27;il l&#x27;a acquis de Rabbi Yitz&#x27;hak, et Rabbi Yitz&#x27;hak ne l&#x27;a dit que hors du moment du prêt, et « celui qui prête sur un gage » implique au moment du prêt, comme il ressort à la fin du chapitre Hasokher et haouménin (Bava Metsia 81a) ; mais forcément on l&#x27;explique ainsi : puisqu&#x27;il l&#x27;a acquis hors du moment du prêt d&#x27;une acquisition complète, au moins au moment du prêt il l&#x27;a acquis pour qu&#x27;il ne soit pas annulé, car il est considéré comme « de ton frère entre tes mains », comme nous l&#x27;expliquons dans le Sifré : « ce que tu as de ton frère, ta main l&#x27;annulera » et non « ce qui est de ton frère entre tes mains » ; de là ils ont dit : celui qui prête sur un gage n&#x27;annule pas ; et de même il faut expliquer dans Pesa&#x27;him au chapitre Kol chaa (31a), à propos de « celui qui prête au non-juif sur son &#x27;hamets après Pessa&#x27;h » : transgresse selon Rabbi Meïr, parce qu&#x27;il l&#x27;a acquis comme Rabbi Yitz&#x27;hak, car puisqu&#x27;il l&#x27;a acquis hors du moment du prêt d&#x27;une acquisition complète, il l&#x27;a au moins acquis au moment du prêt pour ceci qu&#x27;on lui applique « à toi » : « tu ne le verras pas ». Toutefois, il faut examiner, car à la fin du chapitre Hasokher et haouménin et à la fin du chapitre Chevou&#x27;ot hadayanin (Chevou&#x27;ot 44a), il ressort que, d&#x27;après Rabbi Yitz&#x27;hak, il n&#x27;est que gardien salarié, contrairement à Rachi qui explique à la fin de Haouménin que d&#x27;après Rabbi Yitz&#x27;hak il acquiert le gage pour être responsable des cas de force majeure, car il n&#x27;en ressort pas ainsi ; car quand on y explique la raison de celui qui a prêté sur un gage, gardien salarié selon Rabbi Yitz&#x27;hak, on objecte : on dit ce que Rabbi Yitz&#x27;hak a dit hors du moment du prêt, au moment du prêt a-t-il parlé ? Et selon Rachi, il aurait dû objecter : « le crois-tu ? S&#x27;il a l&#x27;avis de Rabbi Yitz&#x27;hak, pourquoi n&#x27;est-il que gardien salarié ? Qu&#x27;il soit aussi responsable des cas de force majeure » ; mais on peut rejeter : il a pris une des deux objections. Et Rabbénou &#x27;Hananel explique là que ce n&#x27;est pas pour être responsable des cas de force majeure ; et il faut examiner pourquoi il l&#x27;a acquis pour être gardien salarié : si c&#x27;est considéré comme une acquisition complète, qu&#x27;il soit aussi responsable des cas de force majeure ; et si ce n&#x27;est pas considéré comme une acquisition, il ne serait même pas gardien salarié ; et on ne peut pas dire que son salaire est de saisir ce gage pour être assuré de sa dette, car alors nous n&#x27;aurions pas besoin de Rabbi Yitz&#x27;hak, mais nous apprendrions d&#x27;emblée qu&#x27;il est gardien salarié, comme les artisans qui sont gardiens salariés parce qu&#x27;ils saisissent leur salaire ; mais certainement, pour un artisan, cette raison s&#x27;applique précisément, car il a un autre salaire qu&#x27;il gagne par son art, et parce qu&#x27;il est assuré de son salaire par la saisie de l&#x27;outil, il est gardien salarié ; mais pour un prêt, s&#x27;il ne prête pas il n&#x27;aura pas besoin de gage ; mais certainement son salaire est qu&#x27;il l&#x27;acquiert pour que ce soit son argent pour consacrer une femme et acquérir des esclaves et des terres. Et ainsi a expliqué Rabbénou Tam : qu&#x27;il l&#x27;acquiert pour consacrer une femme. Et si tu dis : pourquoi est-il considéré comme gardien salarié pour cette raison ? Il aurait pu faire cela aussi avec son propre argent ? On peut répondre : puisqu&#x27;au moment où il l&#x27;a pris, son argent n&#x27;était pas dans sa main, il est acquis dans le gage qu&#x27;il a pris à sa place, puisqu&#x27;il peut en faire des kiddouchin ou une acquisition ; et de plus, il peut faire un échange avec l&#x27;objet gagé, ce qu&#x27;il ne pouvait pas faire avec de l&#x27;argent ; et d&#x27;après cette raison, nous ne pouvons pas expliquer dans notre sougya qu&#x27;il s&#x27;agit du moment du prêt, puisque hors du moment du prêt il n&#x27;est que gardien salarié parce qu&#x27;il profite de pouvoir consacrer avec, alors au moment du prêt il n&#x27;a pas ce pouvoir ; et ainsi il ressort plus loin au chapitre 2 (Kiddouchin 48b) à propos de « fais-moi des bracelets, des anneaux, et je te serai consacrée », où l&#x27;on dit, pour celui qui dit que l&#x27;artisan n&#x27;acquiert pas l&#x27;amélioration de l&#x27;objet, qu&#x27;elle n&#x27;est consacrée que lorsque d&#x27;autre argent arrive dans sa main ; et en quoi cela diffère-t-il du gage d&#x27;autres au moment du prêt ? Car celui-ci aussi lui est engagé pour son salaire, il le saisit sur son salaire ; c&#x27;est pourquoi on ne parle ici que d&#x27;un gage qu&#x27;il lui a engagé hors du moment du prêt. Mais s&#x27;il avait un gage de sa part, même si elle le lui avait engagé au moment du prêt, et qu&#x27;il lui a rendu le gage et l&#x27;a consacrée par lui, elle est consacrée, car le retour de ce gage est avec le pardon du prêteur ; et ainsi est la halakha. Et de plus il ressort plus loin, au siman 26, que même s&#x27;il l&#x27;a consacrée par un prêt sur lequel il y a un gage, sans retour du gage, elle est consacrée. Les fils de Rav Hounah bar Avin ont acheté une servante avec des pièces ; ils n&#x27;avaient pas de pièces, ils ont déposé un lingot d&#x27;argent (nesakha) auprès d&#x27;eux ; à la fin, la servante a renchéri ; ils sont venus devant Rabbi Ami, qui leur a dit : des pièces, oui ; un lingot, non.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Seconde explication : de l'avis de tous la location existe de bout en bout et celui qui consacre par un prêt n'est pas consacré ; la divergence porte sur l'<b>artisan</b> qui acquiert l'amélioration de l'objet (Rachi : l'entrepreneur acquiert sa part dans l'objet). Les Tossefot tirent d'Avoda Zara que la location existe de bout en bout, mais n'est payée qu'à la fin.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 440" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#7a7a7a"/></marker></defs>
+<rect x="0" y="0" width="740" height="440" fill="#fbfaf6"/>
+<text x="370.0" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b2b2b">Trois explications de la baraïta « fais-moi des bracelets »</text>
+<rect x="20" y="40" width="700" height="56" rx="5" fill="#e7e9f2" stroke="#7a86a8"/>
+<text x="370.0" y="64.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f3a55">« Fais-moi des bracelets, des anneaux et des bagues, et je te serai consacrée » : dès qu'il les a faits, consacrée (Rabbi Meïr) ;</text>
+<text x="370.0" y="80.0" text-anchor="middle" font-size="11" fill="#2f3a55">les sages : pas avant que l'argent arrive dans sa main ; de l'avis de tous celui qui consacre par un prêt n'est pas consacrée</text>
+<line x1="370" y1="96" x2="370" y2="114" stroke="#7a7a7a" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="20" y="114" width="220" height="110" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="130.0" y="141.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e5c2c">1. La location</text>
+<text x="130.0" y="157.0" text-anchor="middle" font-size="11" fill="#2e5c2c">L'un : elle n'existe qu'à la fin</text>
+<text x="130.0" y="173.0" text-anchor="middle" font-size="11" fill="#2e5c2c">(le rendre est un pardon)</text>
+<text x="130.0" y="189.0" text-anchor="middle" font-size="11" fill="#2e5c2c">L'autre : de bout en bout :</text>
+<text x="130.0" y="205.0" text-anchor="middle" font-size="11" fill="#2e5c2c">chaque pérouta est un prêt</text>
+<rect x="260" y="114" width="220" height="110" rx="5" fill="#dcd7c8" stroke="#b6b2a4"/>
+<text x="370.0" y="141.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a3a3a">2. L'artisan</text>
+<text x="370.0" y="157.0" text-anchor="middle" font-size="11" fill="#3a3a3a">Il n'a pas été engagé à la journée,</text>
+<text x="370.0" y="173.0" text-anchor="middle" font-size="11" fill="#3a3a3a">mais entrepreneur (kabban)</text>
+<text x="370.0" y="189.0" text-anchor="middle" font-size="11" fill="#3a3a3a">Rabbi Meïr : il acquiert l'amélioration</text>
+<text x="370.0" y="205.0" text-anchor="middle" font-size="11" fill="#3a3a3a">de l'objet : pas un prêt</text>
+<rect x="500" y="114" width="220" height="110" rx="5" fill="#e7e9f2" stroke="#7a86a8"/>
+<text x="610.0" y="141.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f3a55">3. La pierre ajoutée</text>
+<text x="610.0" y="157.0" text-anchor="middle" font-size="11" fill="#2f3a55">Il lui a ajouté une pierre (nofekh)</text>
+<text x="610.0" y="173.0" text-anchor="middle" font-size="11" fill="#2f3a55">L'un : prêt et pérouta, son intention</text>
+<text x="610.0" y="189.0" text-anchor="middle" font-size="11" fill="#2f3a55">sur la pérouta ; l'autre : sur</text>
+<text x="610.0" y="205.0" text-anchor="middle" font-size="11" fill="#2f3a55">le prêt</text>
+<line x1="370" y1="224" x2="370" y2="242" stroke="#7a7a7a" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="20" y="242" width="700" height="70" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="370.0" y="265.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#7c3b2c">Rosh : halakha comme les rabbanan : la location existe de bout en bout (Avoda Zara 19b : dernier coup de pioche) ;</text>
+<text x="370.0" y="281.0" text-anchor="middle" font-size="11" fill="#7c3b2c">Rabbénou Tam : comme Rav Assi (l'artisan acquiert l'amélioration de l'objet), selon la baraïta de Rabbi Meïr</text>
+<text x="370.0" y="297.0" text-anchor="middle" font-size="11" fill="#7c3b2c">Tossefot : l'autre version : la location est payée à la fin (« comme un salarié année par année »)</text>
+<rect x="20" y="328" width="700" height="84" rx="5" fill="#dcd7c8" stroke="#b6b2a4"/>
+<text x="370.0" y="358.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a3a3a">Gage (Rosh) : « une mine » avec un gage : pas consacrée ; gage d'autres : comme Rabbi Yitz'hak, le créancier acquiert le gage ;</text>
+<text x="370.0" y="374.0" text-anchor="middle" font-size="11" fill="#3a3a3a">Rabbénou Tam : pour consacrer une femme ; les fils de Rav Hounah bar Avin : une servante achetée avec un lingot :</text>
+<text x="370.0" y="390.0" text-anchor="middle" font-size="11" fill="#3a3a3a">des pièces oui, un lingot non (Rabbi Ami)</text>
+</svg></div><div class="svg-cap">Trois explications de la baraïta « fais-moi des bracelets ».</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאִי בָּעֵית אֵימָא: דְּכֻולֵּי עָלְמָא אֵין אֻומָּן קוֹנֶה בְּשֶׁבַח כְּלִי, וְיֶשְׁנָהּ לִשְׂכִירוּת מִתְּחִלָּה וְעַד סוֹף, וּמְקַדֵּשׁ בְּמִלְוָה אֵינָהּ מְקֻודֶּשֶׁת, וְהָכָא בְּמַאי עָסְקִינַן – כְּגוֹן שֶׁהוֹסִיף לָהּ נֹופֶךְ מִשֶּׁלּוֹ. דְּמַר סָבַר: מִלְוֶה וּפְרוּטָה, דַּעְתֵּיהּ אַפְּרוּטָה, וּמַר סָבַר: דַּעְתֵּיהּ אַמִּלְוָה.</div>
+            <div class="fr"><p>Et si tu veux, dis : de l&#x27;avis de tous l&#x27;artisan n&#x27;acquiert pas l&#x27;amélioration de l&#x27;objet, et la location existe depuis le début jusqu&#x27;à la fin, et celui qui consacre par un prêt n&#x27;est pas consacrée, et ici de quoi s&#x27;agit-il ? Par exemple s&#x27;il lui a ajouté une pierre (nofekh) de sa part.</p><p>L&#x27;un pense : prêt et pérouta, son intention est sur la pérouta ; et l&#x27;autre pense : son intention est sur le prêt.</p></div>
+            <div class="tools"><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">הָהוּא גַּבְרָא דְּאקַדֵּישׁ בְּשִׁירָאֵי רַבָּה אָמַר לָא צְרִיכִי שׁוּמָא רַב יוֹסֵף אָמַר צְרִיכִי שׁוּמָא אִי אָמַר לָהּ כָּל דְּהוּ כֻּולֵּי עָלְמָא לָא פְּלִיגִי דְּלָא צְרִיכִי שׁוּמָא וְאִי אֲמַר לַהּ חַמְשִׁין וְלָא שָׁווּ חַמְשִׁין כֻּולֵּי עָלְמָא לָא פְלִיגִי דִּצְרִיכִי שׁוּמָא כִּי פְּלִיגִי דַּאֲמַר לֵהּ חַמְשִׁין וְשָׁווּ חַמְשִׁין רַבָּה אָמַר לָא צְרִיכִי שׁוּמָא דְּהָא שָׁווּ חַמְשִׁין רַב יוֹסֵף אָמַר צְרִיכִי שׁוּמָא כֵּיוָן דְּאִיתְּתָא לָא בְּקִיאָה בְּשׁוּמָא לָא סָמְכָה דַּעְתַּהּ. דַּף ט&#x27;. וְהִלְכְתָא שִׁירָאֵי לָא צְרִיכִי שׁוּמָא וְדִקְדֵּק ר&quot;ת זַ&quot;ל אַמַּאי אִיצְטְרִיךְ לִפְסֹוק כְּרַבָּה לְגַבֵּי רַב יוֹסֵף הָא קי&quot;ל ב&quot;ב דַּף קמג. הִלְכְתָא כְּרַבָּה בכ&quot;מ בַּר מִשָּׂדֶה עִנְיָן וּמֶחֱצָה אע&quot;ג שֶׁיֵּשׁ רוֹצִין לוֹמַר דְּהַיְינוּ דַּוְקָא בְּבָבָא בָּתְרָא אִי אֶפְשָׁר לוֹמַר כֵּן דְּעַל כְּרִחְיָךְ בְּכֻולָּהּ גְּמָרָא קָא אָמַר כִּדְמוֹכַח בְּפֶרֶק מִי שֶׁאֲחָזוֹ (גִּיטִּין דַּף עַד.) דְּקָאָמַר וְתִסְבְּרָא דְּרַבָּה כְּרַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל וְהָא קַיְימָא לַן דְּהִילְכְתָא כְּרַבָּה וּבְהָא קַייְמָא לַן דְּאֵין הֲלָכָה כְּרַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל וּבְכֻולָּהּ גְּמָרָא הוּא דְּקַייְמָא לָן הָכִי מִדְּלָא קָאָמַר בְּהָא כִּדְקָאָמַר עַל רַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל וְעוֹד קָשֶׁה אַמַּאי לָא קָאָמַר וְהִילְכְתָא כְּרַבָּה כִּדְקָאָמַר וְהִילְכְתָא כְּרַבִּי אֶלְעָזָר וְהִילְכְתָא כְּרָבָא אָמַר רַב נַחְמָן עַל כֵּן הָיָה אוֹמֵר דְּדַוְקָא שִׁירָאֵי הוּא דְּלָא צְרִיכִי שׁוּמָא לְפִי שֶׁשּׁוּמָתָן יָדוּעַ קְצָת וְאֵין רְגִילִים לִטְעוֹת בּוֹ כָּל כָּךְ אֲבָל שְׁאָר דְּבָרִים כְּגוֹן אֲבָנִים טוֹבוֹת וּמַרְגָּלִיּוֹת אֵין בְּקִיאִין בְּשׁוּמָתָן וּפְעָמִים שֶׁטּוֹעִין בָּהֶן הַרְבֵּה צְרִיכִין שׁוּמָא מִשּׁוּם דְּלָא סָמְכָא דַּעְתָּהּ לְכָךְ נָהֲגוּ הָעוֹלָם לְקַדֵּשׁ בְּטַבַּעַת שֶׁאֵין בָּהּ אֶבֶן וְהָא דְּאָמְרִינַן לְקַמָּן בְּפֶרֶק שֵׁנִי (קִידּוּשִׁין דַּף מח.) כְּגוֹן שֶׁהוֹסִיף לָהּ נֹופֶךְ מִשֶּׁלּוֹ יֵשׁ לוֹמַר דְּמַיְירֵי כְּגוֹן שֶׁשָּׁמוּ אוֹתָהּ אִי נָמֵי נֹופֶךְ הָוֵי כְּמוֹ שִׁירָאֵי שֶׁשּׁוּמָתוֹ יָדוּעַ קְצָת וּלְקַמָּן (קִידּוּשִׁין דַּף יב.) הַהוּא דְּקַדֵּישׁ בְּאַבְנָא דְּכֻוחְלָא וְהָיָה רַב חִסְדָּא מְשַׁעֵר אִם יֵשׁ בּוֹ שָׁוֶה פְּרוּטָה הַאי אַבְנָא דְּכֻוחְלָא אֵינָהּ בִּכְלַל אֲבָנִים טוֹבוֹת אֶלָּא כְּעֵין אַבְנֵי שֶׁיֵּשׁ כִּדְאִיתָא בְּרֵישׁ בָּבָא בָּתְרָא דַּף ד. בְּבִנְיַן הוֹרְדּוֹס דְּבָנֶיהָ בְּאַבְנֵי שִׁישָׁא וּמַרְמְרָא וְכֻוחְלָא. וּמִיהוּ לֹא בְּרִירָא לִי הַאי טַעְמָא מַה שֶׁנָּהֲגוּ הָעוֹלָם לְהָסִיר הָאֶבֶן מִן הַטַּבַּעַת דְּהָא אָמְרִינַן בְּכָל דְּהוּ לָא פְלִיגִי לְלִישָּׁנָא קַמָּא וְאֵין דֶּרֶךְ לָתֵת שׁוּמָא לְטַבַּעַת שֶׁל קִידּוּשִׁין ור&quot;י אָמַר דְּמַה שֶׁהֻוצְרַךְ לִפְסֹוק כָּאן כְּרַבָּה מִשּׁוּם דְּרַב יוֹסֵף הֵבִיא כַּמָּה רְאָיוֹת לִדְבָרָיו וְהָא דְּלָא קָאָמַר וְהִילְכְתָא כְּרַבָּה דְּלָא תֵּימָא הַייְנוּ כְּרַבָּה דְּאִיכָּא דְּאָמְרִי דִּבְכָל דְּהוּ לֹא צָרִיךְ שׁוּמָא אֲבָל אָמַר חַמְשִׁין וְשָׁווּ חַמְשִׁין צְרִיכִי שׁוּמָא לְפִיכָךְ הֻוצְרַךְ לִפְסֹוק דִּבְכָל עִנְיָן לָא צְרִיכִי שׁוּמָא:</div>
+          <div class="glose-fr">Un certain homme qui a consacré avec des chirai (bijoux) : Rabba dit : ils n&#x27;ont pas besoin d&#x27;estimation (chouma). Rav Yossef dit : ils ont besoin d&#x27;estimation. S&#x27;il lui a dit « n&#x27;importe quoi » (kol dehou), de l&#x27;avis de tous il n&#x27;y a pas besoin d&#x27;estimation ; s&#x27;il lui a dit « cinquante » et qu&#x27;ils ne valent pas cinquante, de l&#x27;avis de tous il y a besoin d&#x27;estimation ; ils divergent quand il lui a dit « cinquante » et qu&#x27;ils valent cinquante : Rabba dit : pas besoin d&#x27;estimation, car ils valent cinquante ; Rav Yossef dit : besoin d&#x27;estimation, puisque la femme n&#x27;est pas experte en estimation, son esprit ne s&#x27;est pas appuyé. (Daf 9.) Et la halakha : les chirai n&#x27;ont pas besoin d&#x27;estimation. Rabbénou Tam z&quot;l s&#x27;est étonné : pourquoi fallait-il décider comme Rabba contre Rav Yossef, n&#x27;avons-nous pas la règle (Bava Batra 143a) que la halakha est comme Rabba partout, sauf dans « Bar Sadé Inyan oumhetsa » ? Bien que certains veuillent dire que c&#x27;est précisément dans Bava Batra, on ne peut pas dire cela, car de force il le dit dans toute la guemara, comme le montre le chapitre Mi chéa&#x27;hazo (Guitin 74a) où l&#x27;on dit « le crois-tu que Rabba soit comme Rabban Chimon ben Gamliel ? N&#x27;avons-nous pas la règle que la halakha est comme Rabba, et là nous tenons que la halakha n&#x27;est pas comme Rabban Chimon ben Gamliel », et dans toute la guemara nous le tenons ainsi, puisqu&#x27;il ne dit pas ici comme il dit sur Rabban Chimon ben Gamliel. Et de plus, il est difficile qu&#x27;il ne dise pas « et la halakha est comme Rabba » comme il dit « la halakha est comme Rabbi Elazar » et « la halakha est comme Rava ; Rav Na&#x27;hman a dit ». C&#x27;est pourquoi il disait que précisément pour les chirai il n&#x27;y a pas besoin d&#x27;estimation, car leur estimation est un peu connue et on n&#x27;a pas l&#x27;habitude de se tromper beaucoup ; mais pour les autres choses comme les pierres précieuses et les perles, on n&#x27;est pas expert en leur estimation, et parfois on se trompe beaucoup, elles ont besoin d&#x27;estimation parce que son esprit n&#x27;est pas appuyé ; c&#x27;est pourquoi l&#x27;usage du monde est de consacrer avec une bague sans pierre. Et ce que nous disons plus loin au chapitre 2 (Kiddouchin 48a) « s&#x27;il lui a ajouté une pierre de sa part », on peut dire qu&#x27;on parle d&#x27;un cas où on l&#x27;a estimée, ou bien que la &#x27;nofekh&#x27; est comme les chirai, dont l&#x27;estimation est un peu connue. Plus loin (Kiddouchin 12b) : celui qui a consacré avec une pierre de kohel, Rav &#x27;Hisda estimait s&#x27;il y avait la valeur d&#x27;une pérouta ; cette pierre de kohel n&#x27;est pas incluse dans les pierres précieuses mais est de la sorte des pierres de marbre (chaïch), comme il est dit au début de Bava Batra 4a à propos de la construction d&#x27;Hérode, qui a bâti avec des pierres de chaïch, de marmara et de kohel. Cependant cette raison n&#x27;est pas claire pour moi, que l&#x27;usage du monde soit d&#x27;enlever la pierre de la bague, car nous avons dit « n&#x27;importe quoi, ils ne divergent pas » selon la première version, et on n&#x27;a pas l&#x27;habitude de donner une estimation à la bague des kiddouchin. Et le Ri dit que s&#x27;il a fallu décider ici comme Rabba, c&#x27;est parce que Rav Yossef a apporté plusieurs preuves à ses paroles ; et ce qu&#x27;il ne dit pas « la halakha est comme Rabba » est pour qu&#x27;on ne dise pas que c&#x27;est comme Rabba, car certains disent que pour « n&#x27;importe quoi » il n&#x27;y a pas besoin d&#x27;estimation, mais s&#x27;il dit « cinquante » et qu&#x27;ils valent cinquante, il faut une estimation ; c&#x27;est pourquoi il a fallu décider qu&#x27;en tout cas il n&#x27;y a pas besoin d&#x27;estimation.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Troisième explication : de l'avis de tous, l'artisan n'acquiert pas l'amélioration, la location existe de bout en bout et le prêt ne consacre pas ; il s'agit du cas où il a ajouté une <b>pierre</b> de sa part (prêt et pérouta). Pour l'un son intention est sur la pérouta, pour l'autre sur le prêt. Le Rosh rapporte à ce sujet la controverse de Rabba et de Rav Yossef sur l'estimation des bijoux.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּבִפְלוּגְתָּא דְּהָנֵי תַּנָּאֵי, דְּתַנְיָא: ״בְּשָׂכָר שֶׁעָשִׂיתִי עִמָּךְ״ – אֵינָהּ מְקֻודֶּשֶׁת. ״בְּשָׂכָר שֶׁאֶעֱשֶׂה עִמָּךְ״ – מְקֻודֶּשֶׁת. רַבִּי נָתָן אוֹמֵר: ״בְּשָׂכָר שֶׁאֶעֱשֶׂה עִמָּךְ״ – אֵינָהּ מְקֻודֶּשֶׁת, וְכָל שֶׁכֵּן ״בְּשָׂכָר שֶׁעָשִׂיתִי עִמָּךְ״.</div>
+            <div class="fr"><p>Et sur la controverse de ces tanaïm, car on a enseigné : « En salaire de ce que j&#x27;ai fait avec toi » : elle n&#x27;est pas consacrée. « En salaire de ce que je ferai avec toi » : elle est consacrée.</p><p>Rabbi Natan dit : « En salaire de ce que je ferai avec toi » : elle n&#x27;est pas consacrée, et a fortiori « en salaire de ce que j&#x27;ai fait avec toi ».</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּשָׂכָר שֶׁעָשִׂיתִי עִמְּךָ</b> הִתְקַדְּשִׁי לִי אֵינָהּ מְקֻודֶּשֶׁת דְּהָוְיָא לֵיהּ כְּמִלְוֶה:</div>
+          <div class="glose-fr">« En salaire de ce que j&#x27;ai fait avec toi, sois consacrée à moi » : pas consacrée, car c&#x27;est comme un prêt.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בִּשְׂכַר שֶׁאֶעֱשֶׂה עִמָּךְ מְקֻודֶּשֶׁת</b> לִכְשֶׁיִּגְמֹור וְיִתְּנֶנּוּ לָהּ דְּקָא סָבַר אֵינָהּ לִשְׂכִירוּת אֶלָּא לְבַסּוֹף:</div>
+          <div class="glose-fr">« En salaire de ce que je ferai avec toi : consacrée » : lorsqu&#x27;il aura terminé et le lui donnera, car il pense que la location n&#x27;existe qu&#x27;à la fin.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ר&#x27; נָתָן אוֹמֵר בִּשְׂכַר שֶׁאֶעֱשֶׂה עִמָּךְ אֵינָהּ מְקֻודֶּשֶׁת</b> דְּיֶשְׁנָהּ לִשְׂכִירוּת מִתְּחִילָּה וְעַד סוֹף:</div>
+          <div class="glose-fr">« Rabbi Natan dit : en salaire de ce que je ferai avec toi, pas consacrée » : car la location existe depuis le début jusqu&#x27;à la fin.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וכ&quot;ש וְכוּ&#x27;</b> וְכֵיוָן דְּגָמְרוּ וְהֶחֱזִירוּ לָהּ כְּבָר הִיא מִלְוֶה גְּמוּרָה:</div>
+          <div class="glose-fr">« Et a fortiori, etc. » : et puisqu&#x27;ils ont terminé et lui ont rendu, c&#x27;est déjà un prêt complet.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La controverse des tanaïm se retrouve dans la baraïta du <b>salaire</b> : « en salaire de ce que j'ai fait avec toi » : pas consacrée (c'est un prêt) ; « en salaire de ce que je ferai avec toi » : consacrée (la location n'existe qu'à la fin) ; Rabbi Natan : même « que je ferai » n'est pas consacrée, car la location existe de bout en bout (Rachi).</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 400" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#7a7a7a"/></marker></defs>
+<rect x="0" y="0" width="740" height="400" fill="#fbfaf6"/>
+<text x="370.0" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b2b2b">« En salaire de ce que j'ai fait... » : le premier tana, Rabbi Natan, Rabbi Yehouda</text>
+<rect x="20" y="40" width="700" height="56" rx="5" fill="#e7e9f2" stroke="#7a86a8"/>
+<text x="370.0" y="64.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f3a55">Baraïta : « en salaire de ce que j'ai fait avec toi » : pas consacrée ; « en salaire de ce que je ferai avec toi » : consacrée</text>
+<text x="370.0" y="80.0" text-anchor="middle" font-size="11" fill="#2f3a55">Rabbi Natan : même « que je ferai » : pas consacrée, et a fortiori « que j'ai fait »</text>
+<line x1="370" y1="96" x2="370" y2="114" stroke="#7a7a7a" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="20" y="114" width="340" height="80" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="190.0" y="134.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e5c2c">Premier tana / Rabbi Natan</text>
+<text x="190.0" y="150.0" text-anchor="middle" font-size="11" fill="#2e5c2c">Ce qui est entre eux : la location</text>
+<text x="190.0" y="166.0" text-anchor="middle" font-size="11" fill="#2e5c2c">(existe-t-elle de bout en bout ?)</text>
+<text x="190.0" y="182.0" text-anchor="middle" font-size="11" fill="#2e5c2c">Rachi : « que je ferai » : à la fin</text>
+<rect x="380" y="114" width="340" height="80" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="550.0" y="134.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e5c2c">Rabbi Natan / Rabbi Yehouda le Prince</text>
+<text x="550.0" y="150.0" text-anchor="middle" font-size="11" fill="#2e5c2c">Prêt et pérouta : son intention sur</text>
+<text x="550.0" y="166.0" text-anchor="middle" font-size="11" fill="#2e5c2c">le prêt (Rabbi Natan) ou sur la pérouta</text>
+<text x="550.0" y="182.0" text-anchor="middle" font-size="11" fill="#2e5c2c">(Rabbi Yehouda : pierre ajoutée : consacrée)</text>
+<line x1="370" y1="194" x2="370" y2="212" stroke="#7a7a7a" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="20" y="212" width="700" height="70" rx="5" fill="#dcd7c8" stroke="#b6b2a4"/>
+<text x="370.0" y="243.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a3a3a">Rabbi Yehouda le Prince : en vérité ils ont dit : aussi bien « que j'ai fait » que « que je ferai » : pas consacrée ;</text>
+<text x="370.0" y="259.0" text-anchor="middle" font-size="11" fill="#3a3a3a">et s'il a ajouté une pierre de sa part : consacrée (Rachi : Rabbi Natan, même ajoutée : pas consacrée)</text>
+<rect x="20" y="298" width="700" height="80" rx="5" fill="#e7e9f2" stroke="#7a86a8"/>
+<text x="370.0" y="334.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f3a55">Donc trois niveaux : (1) la location, (2) l'artisan qui acquiert l'amélioration, (3) le prêt et la pérouta</text>
+<text x="370.0" y="350.0" text-anchor="middle" font-size="11" fill="#2f3a55">La baraïta rejoint les trois explications de la baraïta « fais-moi des bracelets »</text>
+</svg></div><div class="svg-cap">« En salaire de ce que j&#x27;ai fait... » : trois tanaïm.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבִּי יְהוּדָה הַנָּשִׂיא אוֹמֵר: בֶּאֱמֶת אָמְרוּ: בֵּין ״בְּשָׂכָר שֶׁעָשִׂיתִי״, בֵּין ״בְּשָׂכָר שֶׁאֶעֱשֶׂה עִמָּךְ״ – אֵינָהּ מְקֻודֶּשֶׁת. וְאִם הוֹסִיף לָהּ נֹופֶךְ מִשֶּׁלּוֹ – מְקֻודֶּשֶׁת.</div>
+            <div class="fr"><p>Rabbi Yehouda le Prince dit : En vérité ils ont dit : aussi bien « en salaire de ce que j&#x27;ai fait » que « en salaire de ce que je ferai avec toi », elle n&#x27;est pas consacrée. Et s&#x27;il lui a ajouté une pierre (nofekh) de sa part, elle est consacrée.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאִם הוֹסִיף לָהּ כוּ&#x27;</b> מִכְּלָל דְּרַבִּי נָתָן סָבַר אֲפִילּוּ הוֹסִיף לָהּ אֵינָהּ מְקֻודֶּשֶׁת דְּקָסָבַר מִלְוָה וּפְרוּטָה דַּעְתֵּיהּ אַמִּלְוָה:</div>
+          <div class="glose-fr">« Et s&#x27;il lui a ajouté, etc. » : il en ressort que Rabbi Natan pense que même s&#x27;il lui a ajouté, elle n&#x27;est pas consacrée, car il pense : prêt et pérouta, son intention est sur le prêt.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabbi Yehouda le Prince : aussi bien « que j'ai fait » que « que je ferai », elle n'est pas consacrée ; mais s'il lui a ajouté une <b>pierre</b> de sa part, elle est consacrée. Rachi : donc Rabbi Natan pense que même ainsi elle n'est pas consacrée.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בֵּין תַּנָּא קַמָּא לְרַבִּי נָתָן – אִיכָּא בֵינַייְהוּ שְׂכִירוּת, בֵּין רַבִּי נָתָן לְרַבִּי יְהוּדָה הַנָּשִׂיא – אִיכָּא בֵּינַייְהוּ מִלְוָה וּפְרוּטָה. מַר סָבַר: מִלְוֶה וּפְרוּטָה, דַּעְתֵּיהּ אַמִּלְוָה, וּמַר סָבַר: דַּעְתֵּיהּ אַפְּרוּטָה.</div>
+            <div class="fr"><p>Entre le premier tana et Rabbi Natan, la location est ce qu&#x27;il y a entre eux ; entre Rabbi Natan et Rabbi Yehouda le Prince, prêt et pérouta est ce qu&#x27;il y a entre eux. L&#x27;un pense : prêt et pérouta, son intention est sur le prêt ; et l&#x27;autre pense : son intention est sur la pérouta.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִיכָּא בֵינַייְהוּ שְׂכִירוּת</b> אִם יֶשְׁנָהּ מִתְּחִילָּה וְעַד סוֹף אוֹ לָאו כִּדְפָרֵישִׁית:</div>
+          <div class="glose-fr">« La location est ce qu&#x27;il y a entre eux » : si elle existe depuis le début jusqu&#x27;à la fin ou non, comme je l&#x27;ai expliqué.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Entre le premier tana et Rabbi Natan, la différence porte sur la <b>location</b> ; entre Rabbi Natan et Rabbi Yehouda le Prince, sur <b>prêt et pérouta</b> (l'intention est sur le prêt ou sur la pérouta).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַתְנֵי׳ ״הִתְקַדְּשִׁי לִי בְּכוֹס זֶה שֶׁל יַיִן״ וְנִמְצָא שֶׁל דְּבַשׁ, ״שֶׁל דְּבַשׁ״ וְנִמְצָא שֶׁל יַיִן, ״בְּדִינָר זֶה שֶׁל כֶּסֶף״ וְנִמְצָא שֶׁל זָהָב, ״שֶׁל זָהָב״ וְנִמְצָא שֶׁל כֶּסֶף, ״עַל מְנָת שֶׁאֲנִי עָשִׁיר״ וְנִמְצָא עָנִי, ״עָנִי״ וְנִמְצָא עָשִׁיר – אֵינָהּ מְקֻודֶּשֶׁת. רַבִּי שִׁמְעוֹן אוֹמֵר: אִם הִטְעָה לִשְׁבָח, מְקֻודֶּשֶׁת.</div>
+            <div class="fr"><p>Michna : « Sois consacrée à moi par cette coupe de vin » et il se trouve que c&#x27;est du miel ; « de miel » et il se trouve que c&#x27;est du vin ; « par ce dinar d&#x27;argent » et il se trouve qu&#x27;il est d&#x27;or ; « d&#x27;or » et il se trouve qu&#x27;il est d&#x27;argent ; « à condition que je sois riche » et il se trouve pauvre ; « pauvre » et il se trouve riche : elle n&#x27;est pas consacrée. Rabbi Chimon dit : S&#x27;il a trompé en mieux, elle est consacrée.</p></div>
+            <div class="tools"><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">מַתְנִי&#x27; הִתְקַדְּשִׁי לִי בְּכוֹס שֶׁל יַיִן וְנִמְצָא דְּבַשׁ דְּבַשׁ וְנִמְצָא יַיִן בְּדִינָר זֶה שֶׁל כֶּסֶף וְנִמְצָא שֶׁל זָהָב שֶׁל זָהָב וְנִמְצָא שֶׁל כֶּסֶף ע&quot;מ שֶׁאֲנִי עָשִׁיר וְנִמְצָא עָנִי עָנִי וְנִמְצָא עָשִׁיר אֵינָהּ מְקֻודֶּשֶׁת רש&quot;א אִם הִטְעָהּ לְשֶׁבַח מְקֻודֶּשֶׁת ע&quot;מ שֶׁאֲנִי כֹּהֵן וְנִמְצָא לֵוִי לֵוִי וְנִמְצָא כֹּהֵן נָתִין וְנִמְצָא מַמְזֵר מַמְזֵר וְנִמְצָא נָתִין בֶּן עִיר וְנִמְצָא בֶּן כְּרַךְ בֶּן כְּרַךְ וְנִמְצָא בֶּן עִיר עַל מְנָת שֶׁבֵּיתִי קָרוֹב לַמֶּרְחָץ וְנִמְצָא רָחוֹק רָחוֹק וְנִמְצָא קָרוֹב ע&quot;מ שֶׁיֵּשׁ לִי בַּת אוֹ שִׁפְחָה מְגֻודֶּלֶת וְאֵין לוֹ אוֹ ע&quot;מ שֶׁאֵין לוֹ וְיֵשׁ לְךָ ע&quot;מ שֶׁיֵּשׁ לִי בָּנִים וְאֵין לוֹ ע&quot;מ שֶׁאֵין לוֹ וְיֵשׁ לוֹ וּבְכֻולָּם אע&quot;פ שֶׁאָמְרָה בְּלִבִּי הָיָה לְהִתְקַדֵּשׁ לוֹ אעפ&quot;כ אֵינָהּ מְקֻודֶּשֶׁת וְכֵן הָאִשָּׁה שֶׁהִטְעַתּוּ:</div>
+          <div class="glose-fr">Michna. « Sois consacrée à moi par une coupe de vin » et il se trouve du miel ; du miel et il se trouve du vin ; « par ce dinar d&#x27;argent » et il se trouve d&#x27;or ; d&#x27;or et il se trouve d&#x27;argent ; « à condition que je sois riche » et il se trouve pauvre ; pauvre et il se trouve riche : elle n&#x27;est pas consacrée. Rabbi Chimon dit : s&#x27;il a trompé en mieux, elle est consacrée. « À condition que je sois cohen » et il se trouve lévi ; lévi et il se trouve cohen ; natin et il se trouve mamzer ; mamzer et il se trouve natin ; originaire d&#x27;une ville et il se trouve d&#x27;une grande ville ; d&#x27;une grande ville et il se trouve d&#x27;une ville ; « à condition que ma maison soit proche des bains » et il se trouve éloignée ; éloignée et il se trouve proche ; « à condition que j&#x27;aie une fille ou une servante grandie » et il n&#x27;en a pas, ou « à condition que je n&#x27;en aie pas » et il en a ; « à condition que j&#x27;aie des fils » et il n&#x27;en a pas ; « à condition que je n&#x27;en aie pas » et il en a ; et pour tous, bien qu&#x27;elle ait dit « j&#x27;avais dans mon cœur de me consacrer à lui », elle n&#x27;est pas consacrée ; et de même la femme qui l&#x27;a trompé.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Michna sur les <b>erreurs</b> : celui qui consacre par une coupe de vin qui se révèle de miel, un dinar d'argent qui se révèle d'or, ou à condition d'être riche et qui se trouve pauvre (et inversement) : elle n'est pas consacrée. Rabbi Chimon : si l'erreur est en mieux, elle est consacrée.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 440" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#7a7a7a"/></marker></defs>
+<rect x="0" y="0" width="740" height="440" fill="#fbfaf6"/>
+<text x="370.0" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b2b2b">La michna des erreurs : la coupe, le dinar, riche ou pauvre</text>
+<rect x="20" y="40" width="340" height="100" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="190.0" y="70.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#7c3b2c">Erreurs sur l'objet</text>
+<text x="190.0" y="86.0" text-anchor="middle" font-size="11" fill="#7c3b2c">« Par cette coupe de vin » : c'est du miel</text>
+<text x="190.0" y="102.0" text-anchor="middle" font-size="11" fill="#7c3b2c">« Par ce dinar d'argent » : il est d'or</text>
+<text x="190.0" y="118.0" text-anchor="middle" font-size="11" fill="#7c3b2c">« À condition que je sois riche » : pauvre</text>
+<rect x="380" y="40" width="340" height="100" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="550.0" y="70.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#7c3b2c">Et l'inverse</text>
+<text x="550.0" y="86.0" text-anchor="middle" font-size="11" fill="#7c3b2c">Miel : c'est du vin ; or : c'est de l'argent</text>
+<text x="550.0" y="102.0" text-anchor="middle" font-size="11" fill="#7c3b2c">Pauvre : il se trouve riche</text>
+<text x="550.0" y="118.0" text-anchor="middle" font-size="11" fill="#7c3b2c">Dans tous les cas : pas consacrée</text>
+<line x1="370" y1="140" x2="370" y2="158" stroke="#7a7a7a" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="20" y="158" width="700" height="56" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="370.0" y="182.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e5c2c">Rabbi Chimon : s'il a trompé en mieux (lechevah), elle est consacrée</text>
+<text x="370.0" y="198.0" text-anchor="middle" font-size="11" fill="#2e5c2c">Rosh : cohen/lévi, natin/mamzer, ben ir/ben kerakh, maison proche des bains, enfants...</text>
+<line x1="370" y1="214" x2="370" y2="232" stroke="#7a7a7a" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="20" y="232" width="340" height="90" rx="5" fill="#dcd7c8" stroke="#b6b2a4"/>
+<text x="190.0" y="257.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a3a3a">Yerouchalmi (Rosh)</text>
+<text x="190.0" y="273.0" text-anchor="middle" font-size="11" fill="#3a3a3a">Cohen qui se trouve lévi : on n'exige pas</text>
+<text x="190.0" y="289.0" text-anchor="middle" font-size="11" fill="#3a3a3a">Pauvre qui se trouve riche : profit</text>
+<text x="190.0" y="305.0" text-anchor="middle" font-size="11" fill="#3a3a3a">Ben ir qui se trouve ben kerakh : on exige</text>
+<rect x="380" y="232" width="340" height="90" rx="5" fill="#e7e9f2" stroke="#7a86a8"/>
+<text x="550.0" y="257.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f3a55">Oula</text>
+<text x="550.0" y="273.0" text-anchor="middle" font-size="11" fill="#2f3a55">Controverse sur le gain d'argent ;</text>
+<text x="550.0" y="289.0" text-anchor="middle" font-size="11" fill="#2f3a55">pour le gain de lignée, de l'avis de tous,</text>
+<text x="550.0" y="305.0" text-anchor="middle" font-size="11" fill="#2f3a55">pas consacrée</text>
+<rect x="20" y="338" width="700" height="76" rx="5" fill="#dcd7c8" stroke="#b6b2a4"/>
+<text x="370.0" y="372.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a3a3a">« À condition que je sois lecteur » : trois versets à la synagogue (Rabbi Meïr) ; Rabbi Yehouda : et le targoum</text>
+<text x="370.0" y="388.0" text-anchor="middle" font-size="11" fill="#3a3a3a">« À condition que je sois enseignant » : 'Hizkiya : halakhot ; Rabbi Yo'hanan : Torah</text>
+</svg></div><div class="svg-cap">La michna des erreurs : la coupe, le dinar, riche ou pauvre.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">גְּמ׳ תָּנוּ רַבָּנַן: ״הִתְקַדְּשִׁי לִי בְּכוֹס זֶה״, תָּנֵי חֲדָא: בּוֹ וּבְמַה שֶׁבְּתוֹכוֹ, וְתַנְיָא אִידָךְ: בּוֹ וְלֹא בַּמֶּה שֶׁבְּתוֹכוֹ. וְתַנְיָא אִידָךְ: בַּמֶּה שֶׁבְּתוֹכוֹ וְלֹא בּוֹ. וְלָא קַשְׁיָא: הָא – בְּמַיָּא, הָא – בְּחַמְרָא, הָא – בְּצִיהֲרָא.</div>
+            <div class="fr"><p>Guemara. Les rabbanan ont enseigné : « Sois consacrée à moi par cette coupe » : on a enseigné une fois : par elle et par ce qu&#x27;il y a dedans ; et on a enseigné une autre : par elle et non par ce qu&#x27;il y a dedans ; et on a enseigné une autre : par ce qu&#x27;il y a dedans et non par elle.</p><p>Et ce n&#x27;est pas difficile : celle-ci avec de l&#x27;eau, celle-ci avec du vin, celle-ci avec de la saumure (tsihara).</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(7)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>ת&quot;ק סָבַר קְפִידָא הִיא</b> וְלָא נִיחָא לֵיהּ לָתֶת לָהּ זָהָב וְאֵין זֶה שְׁלוּחוֹ בָּזֹאת וְרַבִּי שִׁמְעוֹן סָבַר מֵינָח נִיחָא לֵיהּ דַּחֲשִׁיבוּתָא הִיא גַּבֵּיהּ וְהַאי דְּקָאָמַר לֵיהּ דִּינַר כֶּסֶף מַרְאֶה מָקוֹם הוּא לוֹ לְהָקֵל עָלָיו וְלוֹמַר אִם אֵינְךָ יָכוֹל לְהַלְווֹת לִי דִּינַר זָהָב תַּלְוֶה לִי דִּינַר כֶּסֶף:</div>
+          <div class="glose-fr">« Le premier tana pense : c&#x27;est une exigence (kefida) » : et il ne lui convient pas de lui donner de l&#x27;or, et celui-ci n&#x27;est pas son envoyé en cela ; et Rabbi Chimon pense : cela lui convient, car c&#x27;est une importance pour lui, et ce qu&#x27;il lui dit « un dinar d&#x27;argent » est une indication de lieu pour lui alléger : si tu ne peux pas me prêter un dinar d&#x27;or, prête-moi un dinar d&#x27;argent.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בּוֹ וּבְמַה שֶׁבְּתוֹכוֹ</b> בִּשְׁנֵיהֶם זָכְתָה (דְּמִצְטָרְפִי) לְשָׁוֶה פְּרוּטָה:</div>
+          <div class="glose-fr">« Par elle et par ce qu&#x27;il y a dedans » : elle a acquis par les deux (qui s&#x27;ajoutent) à la valeur d&#x27;une pérouta.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בּוֹ</b> קִדְּשָׁהּ וְלֹא בְּמַה שֶׁבְּתוֹכוֹ אֵינָהּ זוֹכָה בּוֹ וְאֵינוֹ מִצְטָרֵף לש&quot;פ:</div>
+          <div class="glose-fr">« Par elle » : il l&#x27;a consacrée, et non par ce qu&#x27;il y a dedans : elle n&#x27;acquiert pas cela et cela ne s&#x27;ajoute pas à la pérouta.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בּוֹ</b> קִדְּשָׁהּ וְלֹא בְּמַה שֶׁבְּתוֹכוֹ אֵינָהּ זוֹכָה בּוֹ וְאֵינוֹ מִצְטָרֵף לש&quot;פ:</div>
+          <div class="glose-fr">« Par elle » : il l&#x27;a consacrée, et non par ce qu&#x27;il y a dedans : elle n&#x27;acquiert pas cela et cela ne s&#x27;ajoute pas à la pérouta.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּמַיָּא</b> דְּלָא חֲשִׁיבָא (הִיא) וְלֹא הָיְתָה דַּעְתָּהּ אֶלָּא בִּכְלִי:</div>
+          <div class="glose-fr">« Avec de l&#x27;eau » : qui n&#x27;est pas importante, et son esprit n&#x27;était que sur le récipient.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּחַמְרָא</b> בַּמֶּה שֶׁבְּתוֹכוֹ וְלֹא בּוֹ דַּעֲבִידִי לְמִשְׁתְּיָיא וּמַהְדְּרִי כּוֹס לְמָרֵיהּ:</div>
+          <div class="glose-fr">« Avec du vin » : par ce qu&#x27;il y a dedans et non par elle : ils sont faits pour être bus et la coupe est rendue à son maître.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּצִיהֲרָא</b> צִיר דָּגִים שֶׁעָשׂוּי לְיָמִים רַבִּים לְטַבֵּל בּוֹ וְהַכּוֹס צָרִיךְ לְשָׁומְרוֹ בּוֹ וּבְמַה שֶׁבְּתוֹכוֹ וי&quot;א צִיהֲרָא שֶׁמֶן לְשׁוֹן יִצְהָר (בַּמִּדְבָּר יח):</div>
+          <div class="glose-fr">« Avec de la saumure (tsihara) » : saumure de poissons, faite pour de nombreux jours, pour y tremper, et la coupe est nécessaire pour la conserver : par elle et par ce qu&#x27;il y a dedans ; et certains disent que « tsihara » est de l&#x27;huile, d&#x27;après « yitshar » (Nb 18).</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָא בְּמַיָּא</b> פֵּי&#x27; הַקּוּנְטְרֵס בְּמַיָּא שֶׁאֵינָם חֲשׁוּבִים אָמְרִי&#x27; בּוֹ וְלֹא בַּמֶּה שֶׁבְּתוֹכוֹ בְּחַמְרָא דְּחָשׁוּב בַּמֶּה שֶׁבְּתוֹכוֹ וְלֹא בּוֹ וּבְצִיהֲרָא פֵּירֵשׁ צִיר דָּגִים שֶׁעָשׂוּי לְיָמִים רַבִּים לְטַבֵּל וְהַכּוֹס צָרִיךְ לוֹ לְשָׁומְרוֹ לָשׁוֹן אַחֵר צִיהֲרָא שָׁמֵן כְּמוֹ יִצְהָר שֶׁצָּרִיךְ לִכְלִי שֶׁמַּשְׁהִין אוֹתוֹ לִזְמַן גָּדוֹל בּוֹ וּבְמַה שֶׁבְּתוֹכוֹ וְקָשֶׁה לר&quot;ת דְּאֵין זֶה סֵדֶר הַבָּרַייְתָא שֶׁהֵבִיא לָכֵן פר&quot;ת בְּמַיָּא בּוֹ וּבְמַה שֶׁבְּתוֹכוֹ שֶׁהַמַּיִם בְּטֵלִים לְגַבֵּי הַכּוֹס בְּחַמְרָא בּוֹ וְלֹא בַּמֶּה שֶׁבְּתוֹכוֹ שֶׁהַיַּיִן חָשׁוּב וְאֵינוֹ בָּטֵל לְגַבֵּי הַכּוֹס ומ&quot;מ אֵינוֹ חָשׁוּב כ&quot;כ שֶׁנֹּאמַר דְּדַעְתָּהּ תְּהֵא עַל הַיַּיִן אֲבָל בְּצִיהֲרָא בְּמַה שֶׁבְּתוֹכוֹ דְּחָשׁוּב יוֹתֵר מִן הַכּוֹס אֲבָל לֹא בּוֹ דְּהַכּוֹס אֵינוֹ בָּטֵל לְגַבֵּי צִיהֲרָא וּמִיהוּ קֻושְׁיָא דר&quot;ת לָאו קוּשְׁיָא הִיא שֶׁהֲרֵי מָצִינוּ בַּגְּמָרָא דְּאֵינוֹ חוֹשֵׁשׁ לְסֵדֶר הַבָּרַיְיתָא כִּדְאָמַר בְּפֶ&#x27; הַיָּשָׁן (סֻוכָּה כו.) גַּבֵּי לֹא יִישַׁן אָדָם בִּתְפִילִּין לֹא שֵׁינַת קֶבַע וְלֹא עֲרַאי כו&#x27; וְדוֹק וְתַשְׁכַּח:</div>
+          <div class="glose-fr">« Celle-ci avec de l&#x27;eau » : Rachi explique : avec de l&#x27;eau, qui n&#x27;est pas importante, nous disons « par elle et non par ce qu&#x27;il y a dedans » ; avec du vin, qui est important, « par ce qu&#x27;il y a dedans et non par elle » ; avec de la saumure, Rachi explique : saumure de poissons, faite pour de nombreux jours, pour y tremper, et la coupe est nécessaire pour la conserver ; autre explication : « tsihara » est de l&#x27;huile, comme « yitshar », qui a besoin d&#x27;un récipient dans lequel on la garde longtemps : « par elle et par ce qu&#x27;il y a dedans ». Et c&#x27;est difficile pour Rabbénou Tam, car ce n&#x27;est pas l&#x27;ordre de la baraïta qu&#x27;il a rapportée ; c&#x27;est pourquoi Rabbénou Tam explique : avec de l&#x27;eau : « par elle et par ce qu&#x27;il y a dedans », car l&#x27;eau est annulée par rapport à la coupe ; avec du vin : « par elle et non par ce qu&#x27;il y a dedans », car le vin est important et n&#x27;est pas annulé par rapport à la coupe, mais il n&#x27;est pas assez important pour qu&#x27;on dise que son esprit soit sur le vin ; mais avec de la saumure : « par ce qu&#x27;il y a dedans », car elle est plus importante que la coupe, mais pas « par elle », car la coupe n&#x27;est pas annulée par rapport à la saumure. Cependant la difficulté de Rabbénou Tam n&#x27;est pas une difficulté, car nous trouvons dans la guemara qu&#x27;on ne se soucie pas de l&#x27;ordre de la baraïta, comme il est dit au chapitre Haïchen (Souca 26a) à propos de « qu&#x27;on ne dorme pas avec les tefilines, ni d&#x27;un sommeil fixe ni d&#x27;un sommeil passager » : examine et tu trouveras.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">גְּמ&#x27; ת&quot;ר הִתְקַדְּשִׁי לִי בְּכוֹס זֶה תָּנֵי חֲדָא בּוֹ וּבַמֶּה שֶׁבְּתוֹכוֹ וְתַנְיָא אִידַּךְ בַּמֶּה שֶׁבְּתוֹכוֹ וְלֹא בּוֹ וְתַנְיָא אִידַּךְ בּוֹ וְלֹא בַּמֶּה שֶׁבְּתוֹכוֹ וְלָא קַשְׁיָא הָא בְּמַיָּא וְהָא בְּחַמְרָא וְהָא בְּצִיהֲרָא רַשִׁ&quot;י פֵּירֵשׁ בְּמַיָּא בּוֹ וְלֹא בַּמֶּה שֶׁבְּתוֹכוֹ דְּלָא חֲשִׁיבֵי וְאֵין דַּעְתָּהּ אֶלָּא בִּכְלִי בַּמֶּה שֶׁבְּתוֹכוֹ וְלֹא בּוֹ בְּחַמְרָא דַּעֲבִיד לְמִישְׁתְּייֵהּ וּמִיהְדָּר כָּסָא לְמָרֵיהּ וְכֵן פֵּי&#x27; רַ&quot;ח וה&quot;ר מֹשֶׁה זַ&quot;ל פ&quot;ה מֵהִלְכוֹת אִישׁוּת הֲלָכָה כ&quot;ט פֵּירֵשׁ בְּמַיָּא בּוֹ וּבְמַה שֶׁבְּתוֹכוֹ מִשּׁוּם דְּמַיָּא בְּטֵלִים לְגַבֵּי כְּלִי דַּחֲשִׁיבִי בְּחַמְרָא בּוֹ וְלֹא בַּמֶּה שֶׁבְּתוֹכוֹ מִשּׁוּם דְּמִסְּתָמָא מָנָא עָדִיף וְדַעְתָּהּ אַעִילּוּייָא וְחַמְרָא לָא בְּטִיל לְגַבֵּי כְּלִי בְּצִיהֲרָא בַּמֶּה שֶׁבְּתוֹכוֹ וְלָא בֵּיהּ מִשּׁוּם דְּעָדִיף מִמָּנָא וְדַעְתָּא אַעִילּוּייָא יְרֻושַּׁל&#x27; בְּפִירְקִין ה&quot;ג נִיחָא כֹּהֵן וְנִמְצָא לֵוִי לֵוִי וְנִמְצָא כֹּהֵן לָא בָּעֵינַן טִירְחָא דִּכְהַוָּנתָא עָנִי וְנִמְצָא עָשִׁיר לָא בָּעֵינַן דְּאִיכָּא רַווְחָא רַבָּה עָלֶיהָ בֶּן עִיר וְנִמְצָא בֶּן כְּרַךְ בָּעֵינָא הֲוָה מַצְנְעָא רָחוֹק וְנִמְצָא קָרוֹב בָּעֵינָא הָוְיָא מַטְרַפְסָא וְאָזְלָא מַטְרַפְסָא וְאָתְיָא: אָמַר עֻולָּא מַחֲלֹוקֶת בְּשֶׁבַח מָמוֹן אֲבָל בְּשֶׁבַח יוּחֲסִין ד&quot;ה אֵינָהּ מְקֻודֶּשֶׁת מ&quot;ט מְסָאנָא דְּרַב מִכַּרְעַאי לָא בָּעֵינָא וקי&quot;ל כת&quot;ק ע&quot;מ שֶׁאֲנִי קַרְיָינָא כֵּיוָן דְּקָרָא שָׁלֹשׁ פְּסוּקִים בבהכ&quot;נ מְקֻודֶּשֶׁת דר&quot;מ רי&quot;א עַד שֶׁיִּקְרָא וִיתַרְגֵּם תַּרְגּוּם דִּידַן וה&quot;מ דְּאָמַר קַרְיָינָא אֲבָל אִי אָמַר קְרָאָהּ אֲנָא עַד דְּקָרֵי אוֹרָייְתָא נְבִיאִים וּכְתוּבִים בְּדִיּוּקָא ע&quot;מ שֶׁאֲנִי שׁוֹנֶה חִזְקִיָּה אָמַר הֲלָכוֹת ר&#x27; יוֹחָנָן אָמַר תּוֹרָה: מֵיתִיבִי אֵיזֶהוּ מִשְׁנָה. ר&quot;מ אוֹמֵר הֲלָכוֹת ר&quot;י אוֹמֵר מִדְרָשׁ: מַאי מִדְרַשׁ מִדְרַשׁ תּוֹרָה וּמִסְתַּבְּרָא כְּחִזְקִיָּה חֲדָא דְּרַבֵּיהּ דְּר&#x27; יוֹחָנָן הוּא וְעוֹד דְּהָא אַסְּקִינָא כְּוָותֵיהּ דְּאָמְרִינַן ה&quot;מ דְּאָמַר תָּנֵינָא אֲבָל אִם אָמַר תְּנָאָה אֲנָא עַד דְּתָנֵי הִלְכְתָא סִפְרֵי וְסָפְרָא וְתוֹסֶפְתָּא פִּי&#x27; הִלְכוֹת מִשְׁנָה וְיוֹתֵר הָיָה נִרְאֶה דְּהִלְכְתָא כַּר&#x27; יוֹחָנָן דְּסָבַר כְּר&#x27; יְהוּדָה וְסָפְרֵי וְסָפְרָא הֵם מִדְרְשֵׁי תּוֹרָה וְהָא דְּקָאָמַר תְּנָאָה אֲנָא מוֹסִיף הִילְכְתָא וְתוֹסֶפְתָּא:</div>
+          <div class="glose-fr">Guemara. Les rabbanan ont enseigné : « Sois consacrée à moi par cette coupe » : on a enseigné une fois : par elle et par ce qu&#x27;il y a dedans ; on a enseigné une autre : par ce qu&#x27;il y a dedans et non par elle ; et on a enseigné une autre : par elle et non par ce qu&#x27;il y a dedans. Et ce n&#x27;est pas difficile : celle-ci avec de l&#x27;eau, celle-ci avec du vin, celle-ci avec de la saumure. Rachi a expliqué : avec de l&#x27;eau : par elle et non par ce qu&#x27;il y a dedans, car elle n&#x27;est pas importante et son esprit n&#x27;est que sur le récipient ; par ce qu&#x27;il y a dedans et non par elle, avec du vin, qui est fait pour être bu et la coupe est rendue à son maître ; ainsi a expliqué Rabbénou &#x27;Hananel. Et Rabbi Moshé z&quot;l (Rambam), au chapitre 5 des lois d&#x27;Ichout, halakha 29, a expliqué : avec de l&#x27;eau : par elle et par ce qu&#x27;il y a dedans, parce que l&#x27;eau est annulée par rapport à des récipients importants ; avec du vin : par elle et non par ce qu&#x27;il y a dedans, parce que présumément le récipient est préférable et son esprit est sur le récipient, et le vin n&#x27;est pas annulé par rapport au récipient ; avec de la saumure : par ce qu&#x27;il y a dedans et non par elle, parce qu&#x27;elle est préférable au récipient et son esprit est sur ce qu&#x27;il y a dedans. Yerouchalmi dans notre chapitre, halakha 3 : c&#x27;est bien : cohen et il se trouve lévi, lévi et il se trouve cohen : nous n&#x27;exigeons pas la peine de la prêtrise ; pauvre et il se trouve riche : nous n&#x27;exigeons pas, car il y a un grand profit pour lui ; originaire d&#x27;une ville et il se trouve d&#x27;une grande ville : nous exigeons : il aurait été caché ; éloigné et il se trouve proche : nous exigeons : elle serait dégoûtée à aller et venir. Oula a dit : la controverse porte sur le gain d&#x27;argent, mais pour le gain de lignée, de l&#x27;avis de tous, elle n&#x27;est pas consacrée ; quelle en est la raison ? « Je ne veux pas des chaussures de Rav Mekhra&#x27;i. » Et nous tenons comme le premier tana. « À condition que je sois lecteur » : dès qu&#x27;il a lu trois versets à la synagogue, elle est consacrée, selon Rabbi Meïr ; Rabbi Yehouda dit : jusqu&#x27;à ce qu&#x27;il lise et traduise notre targoum ; et cela vaut s&#x27;il a dit « lecteur », mais s&#x27;il a dit « je lis », jusqu&#x27;à ce qu&#x27;il lise la Torah, les Prophètes et les Hagiographes avec précision. « À condition que je sois enseignant » : &#x27;Hizkiya a dit : des halakhot ; Rabbi Yo&#x27;hanan a dit : de la Torah ; on objecte : qu&#x27;est-ce que la michna ? Rabbi Meïr dit : des halakhot ; Rabbi Yehouda dit : du midrach ; quel midrach ? Le midrach de la Torah ; et il est raisonnable comme &#x27;Hizkiya, d&#x27;une part parce qu&#x27;il est le maître de Rabbi Yo&#x27;hanan, et d&#x27;autre part parce que nous l&#x27;avons conclu comme lui, car nous disons : cela vaut s&#x27;il a dit « je suis enseignant », mais s&#x27;il a dit « je suis tana », jusqu&#x27;à ce qu&#x27;il enseigne halakha, Sifré, Sifra et Tosefta ; explication : halakhot, michna ; et il semblerait mieux que la halakha soit comme Rabbi Yo&#x27;hanan, qui pense comme Rabbi Yehouda ; et Sifré et Sifra sont les midrachim de la Torah ; et ce qu&#x27;il dit « tana je suis » ajoute halakha et tosefta.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Trois baraïtot sur la <b>coupe</b> : « par elle et par ce qu'elle contient » ; « par elle et non par ce qu'elle contient » ; « par ce qu'elle contient et non par elle ». La guemara les concilie par l'<b>eau</b>, le <b>vin</b> et la <b>saumure</b>. Rachi, Rabbénou Tam et le Rambam attribuent chaque cas différemment. Le Rosh ajoute les cas du Yerouchalmi et d'Oula (gain de lignée) ainsi que « lecteur » et « enseignant ».</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 420" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#7a7a7a"/></marker></defs>
+<rect x="0" y="0" width="740" height="420" fill="#fbfaf6"/>
+<text x="370.0" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b2b2b">« Sois consacrée à moi par cette coupe » : trois baraïtot</text>
+<rect x="20" y="40" width="700" height="56" rx="5" fill="#e7e9f2" stroke="#7a86a8"/>
+<text x="370.0" y="64.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f3a55">Les rabbanan ont enseigné : « sois consacrée à moi par cette coupe » : 1. par elle et ce qu'il y a dedans ;</text>
+<text x="370.0" y="80.0" text-anchor="middle" font-size="11" fill="#2f3a55">2. par elle et non ce qu'il y a dedans ; 3. par ce qu'il y a dedans et non par elle</text>
+<line x1="370" y1="96" x2="370" y2="114" stroke="#7a7a7a" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="20" y="114" width="220" height="90" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="130.0" y="139.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e5c2c">Eau</text>
+<text x="130.0" y="155.0" text-anchor="middle" font-size="11" fill="#2e5c2c">Rachi : par elle seule, car</text>
+<text x="130.0" y="171.0" text-anchor="middle" font-size="11" fill="#2e5c2c">l'eau n'est pas importante</text>
+<text x="130.0" y="187.0" text-anchor="middle" font-size="11" fill="#2e5c2c">Rabbénou Tam : par les deux</text>
+<rect x="260" y="114" width="220" height="90" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="370.0" y="139.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e5c2c">Vin</text>
+<text x="370.0" y="155.0" text-anchor="middle" font-size="11" fill="#2e5c2c">Rachi : par le contenu, car</text>
+<text x="370.0" y="171.0" text-anchor="middle" font-size="11" fill="#2e5c2c">on rend la coupe à son maître</text>
+<text x="370.0" y="187.0" text-anchor="middle" font-size="11" fill="#2e5c2c">Rabbénou Tam : par la coupe seule</text>
+<rect x="500" y="114" width="220" height="90" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="610.0" y="139.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e5c2c">Saumure (tsihara)</text>
+<text x="610.0" y="155.0" text-anchor="middle" font-size="11" fill="#2e5c2c">Rachi : par les deux, la coupe</text>
+<text x="610.0" y="171.0" text-anchor="middle" font-size="11" fill="#2e5c2c">sert à la conserver</text>
+<text x="610.0" y="187.0" text-anchor="middle" font-size="11" fill="#2e5c2c">Rabbénou Tam : par le contenu seul</text>
+<line x1="370" y1="204" x2="370" y2="222" stroke="#7a7a7a" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="20" y="222" width="700" height="70" rx="5" fill="#dcd7c8" stroke="#b6b2a4"/>
+<text x="370.0" y="253.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a3a3a">Rambam : eau : par elle et son contenu ; vin : par elle et non son contenu ; saumure : par le contenu et non par elle</text>
+<text x="370.0" y="269.0" text-anchor="middle" font-size="11" fill="#3a3a3a">Tossefot : l'ordre de la baraïta n'a pas à être suivi (Souca 26a)</text>
+<rect x="20" y="308" width="700" height="80" rx="5" fill="#e7e9f2" stroke="#7a86a8"/>
+<text x="370.0" y="344.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f3a55">Rabbi Chimon : si on l'a trompée en mieux, elle est consacrée ; vin et vinaigre : les deux peuvent se rétracter :</text>
+<text x="370.0" y="360.0" text-anchor="middle" font-size="11" fill="#2f3a55">il y en a que le vinaigre arrange, il y en a que le vin arrange ; de même l'argent et l'or</text>
+</svg></div><div class="svg-cap">« Sois consacrée à moi par cette coupe » : trois baraïtot.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִם הִטְעָהּ לְשֶׁבַח הֲרֵי זוֹ מְקֻודֶּשֶׁת. וְלֵית לֵיהּ לְרַבִּי שִׁמְעוֹן יַיִן וְנִמְצָא חֹומֶץ, חֹומֶץ וְנִמְצָא יַיִן – שְׁנֵיהֶם יְכוֹלִין לַחֲזוֹר בָּהֶם. אַלְמָא, אִיכָּא דְּנִיחָא לֵיהּ בְּחַלָּא וְאִיכָּא דְּנִיחָא לֵיהּ בְּחַמְרָא. הָכָא נָמֵי: אִיכָּא נִיחָא לֵיהּ בְּכַסְפָּא וְלָא נִיחָא לֵיהּ בְּדַהֲבָא!</div>
+            <div class="fr"><p>S&#x27;il a trompé en mieux, elle est consacrée. Et Rabbi Chimon n&#x27;a-t-il pas : vin et il se trouve du vinaigre, vinaigre et il se trouve du vin : les deux peuvent se rétracter.</p><p>On voit qu&#x27;il y en a que le vinaigre arrange et il y en a que le vin arrange. Ici aussi : il y en a que l&#x27;argent arrange et que l&#x27;or n&#x27;arrange pas !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שְׁנֵיהֶם</b> הַלּוֹקֵחַ וּמוֹכֵר וּמִשְׁנָה בְּבָבָא בָּתְרָא הִיא:</div>
+          <div class="glose-fr">« Les deux » : l&#x27;acheteur et le vendeur, et la michna est dans Bava Batra.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִיכָּא דְּנִיחָא לֵיהּ בְּחַלָּא</b> וְאַף עַל גַּב דְּחַמְרָא עָדִיף פְּעָמִים שֶׁזֶּה צָרִיךְ לַחֹומֶץ:</div>
+          <div class="glose-fr">« Il y en a que le vinaigre arrange » : bien que le vin soit préférable, parfois celui-ci a besoin de vinaigre.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִיכָּא דְּנִיחָא לֵיהּ בְּכַסְפָּא וְלָא נִיחָא לֵיהּ בְּדַהֲבָא</b> פִּי&#x27; כְּגוֹן שֶׁצְּרִיכָה כֶּסֶף לְהַשְׁלִים תַּכְשִׁיט שֶׁל כֶּסֶף שֶׁעוֹשֶׂה וּמִיהוּ הֵיכָא שֶׁהִטְעָה הָאִשָּׁה בְּמָמוֹן לָא פְּלִיג. רַבִּי שִׁמְעוֹן:</div>
+          <div class="glose-fr">« Il y en a que l&#x27;argent arrange et que l&#x27;or n&#x27;arrange pas » : par exemple si elle a besoin d&#x27;argent pour compléter une parure d&#x27;argent qu&#x27;elle fait ; mais là où on a trompé la femme en argent, Rabbi Chimon ne diverge pas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Objection à Rabbi Chimon : n'a-t-il pas lui-même dit, pour le vin qui se révèle du vinaigre, que les deux (acheteur et vendeur) peuvent se rétracter, car certains préfèrent le vinaigre ? De même, l'argent peut arranger quelqu'un que l'or n'arrange pas (Tossefot : par exemple une parure d'argent à compléter).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַב שִׁימִי בַּר אָשֵׁי: אַשְׁכַּחְתֵּיהּ לְאַבָּיֵי דְּיָתֵיב וְקָמַסְבַּר לֵיהּ לִבְרֵיהּ: הָכָא בְמַאי עָסְקִינַן – כְּגוֹן שֶׁאָמַר לִשְׁלוּחוֹ: ״הַלְוֵינִי דִּינָר שֶׁל כֶּסֶף, וְלֵךְ וְקַדֵּשׁ לִי אִשָּׁה פְּלוֹנִית״ וְהָלַךְ וְהִלְוָה שֶׁל זָהָב. מַר סָבַר: קְפִידָא. וּמַר סָבַר: מַרְאֶה מָקוֹם הוּא לוֹ.</div>
+            <div class="fr"><p>Rav Chimi bar Achi a dit : J&#x27;ai trouvé Abayé assis et expliquant à son fils : Ici, de quoi s&#x27;agit-il ? Par exemple s&#x27;il a dit à son envoyé : « Prête-moi un dinar d&#x27;argent, et va consacrer-moi telle femme » et il est allé et a emprunté un dinar d&#x27;or.</p><p>L&#x27;un pense : c&#x27;est une exigence. Et l&#x27;autre pense : c&#x27;est une indication de lieu pour lui.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָכָא בְמַאי עָסְקִינַן כּוּ&#x27;</b> כְּלוֹמַר אִי טָעוּת גַּבֵּי דִּידָּה הָוֵי לָא הֲוָה פְּלִיג ר&quot;ש אֶלָּא כְּגוֹן דַּהֲוָה טָעוּת גַּבֵּי דִּידֵיהּ דְּאָמַר לַשָּׁלִיחַ כו&#x27;:</div>
+          <div class="glose-fr">« Ici, de quoi s&#x27;agit-il, etc. » : c&#x27;est-à-dire que si l&#x27;erreur concernait la femme elle-même, Rabbi Chimon ne diverge pas, mais il s&#x27;agit d&#x27;une erreur de son côté à lui, à savoir qu&#x27;il a dit à l&#x27;envoyé, etc.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ת&quot;ק סָבַר קְפִידָא הִיא</b> וְלָא נִיחָא לֵיהּ לָתֶת לָהּ זָהָב וְאֵין זֶה שְׁלוּחוֹ בָּזֹאת וְרַבִּי שִׁמְעוֹן סָבַר מֵינָח נִיחָא לֵיהּ דַּחֲשִׁיבוּתָא הִיא גַּבֵּיהּ וְהַאי דְּקָאָמַר לֵיהּ דִּינַר כֶּסֶף מַרְאֶה מָקוֹם הוּא לוֹ לְהָקֵל עָלָיו וְלוֹמַר אִם אֵינְךָ יָכוֹל לְהַלְווֹת לִי דִּינַר זָהָב תַּלְוֶה לִי דִּינַר כֶּסֶף:</div>
+          <div class="glose-fr">« Le premier tana pense : c&#x27;est une exigence » : et il ne lui convient pas de lui donner de l&#x27;or, et celui-ci n&#x27;est pas son envoyé en cela ; et Rabbi Chimon pense : cela lui convient, car c&#x27;est une importance pour lui, et ce qu&#x27;il lui dit « un dinar d&#x27;argent » est une indication de lieu pour lui alléger : si tu ne peux pas me prêter un dinar d&#x27;or, prête-moi un dinar d&#x27;argent.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Abayé explique que la michna parle de l'<b>envoyé</b> à qui l'on a dit « prête-moi un dinar d'argent et va me consacrer telle femme » et qui a emprunté un dinar d'or : le premier tana y voit une exigence, Rabbi Chimon une indication de lieu (Rachi : si tu ne peux pas, prête-moi de l'argent).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אִי הָכִי ״הִתְקַדְּשִׁי לִי״? ״הִתְקַדְּשִׁי לוֹ״ מִיבְּעֵי לֵיהּ! הִטְעָה לְשֶׁבַח? הִטְעָהוּ לְשֶׁבַח מִיבְּעֵי לֵיהּ! ״נִמְצָא״ מֵעִיקָּרָא נָמֵי דְּזָהָב הֲוָה!</div>
+            <div class="fr"><p>S&#x27;il en est ainsi, « sois consacrée à moi » ? Il aurait dû dire « sois consacrée à lui » !</p><p>« Il a trompé en mieux » ? Il aurait dû dire « on l&#x27;a trompé en mieux » !</p><p>« Il se trouve » : au début aussi c&#x27;était d&#x27;or !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִי הָכִי</b> דְּשָׁלִיחַ קִדְּשָׁהּ לוֹ הִתְקַדְּשִׁי לוֹ מִיבְּעֵי לֵיהּ וְעוֹד אִם טָעוּת גַּבֵּיהּ הוּא אִם הִטְעָהוּ מִבָּעֵי לֵיהּ וְעוֹד נִמְצָא שֶׁל זָהָב דְּקָתָנֵי מַאי הִיא מֵעִיקָּרָא כִּי יַהְבֵּיהּ בְּחֶזְקַת זָהָב יַהְבֵּיהּ:</div>
+          <div class="glose-fr">« S&#x27;il en est ainsi » : où l&#x27;envoyé l&#x27;a consacrée pour lui, il aurait dû dire « sois consacrée à lui » ; et de plus, si l&#x27;erreur est de son côté, il aurait dû dire « on l&#x27;a trompé » ; et de plus, ce qu&#x27;il enseigne « il se trouve d&#x27;or » : qu&#x27;est-ce ? Dès le début, quand il l&#x27;a donné, il l&#x27;a donné en pensant que c&#x27;est de l&#x27;or.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Trois objections à l'explication d'Abayé : la michna dit « sois consacrée à <b>moi</b> » (non « à lui ») ; « il a trompé » (non « on l'a trompé ») ; et « il se trouve » alors que dès le début c'était de l'or.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא אָמַר רָבָא: אֲנִי וַאֲרִי שֶׁבַּחֲבוּרָה (תַּרְגֵּימְנָא) [תְּרַגִּימְנוּהָ] וּמַנּוּ – רַבִּי חִיָּיא בַּר אָבִין, הָכָא בְמַאי עָסְקִינַן – כְּגוֹן שֶׁאָמְרָה הִיא לִשְׁלוּחָהּ ״צֵא וְקַבֵּל לִי קִדּוּשַׁי מִפְּלוֹנִי שֶׁאָמַר לִי הִתְקַדְּשִׁי לִי בְּדִינָר שֶׁל כֶּסֶף״ וְהָלַךְ וְנָתַן לוֹ דִּינָר שֶׁל זָהָב, מַר סָבַר: קְפִידָא, וּמַר סָבַר: מַרְאָה מָקוֹם הִיא לוֹ, וּמַאי ״נִמְצָא״ – דְּקָא צִייֵּר בִּבְלִיתָא.</div>
+            <div class="fr"><p>Mais Rava a dit : Moi et le lion du groupe l&#x27;avons expliqué — et qui est-ce ? Rabbi &#x27;Hiya bar Avin — : Ici, de quoi s&#x27;agit-il ?</p><p>Par exemple si elle a dit à son envoyé : « Va, reçois pour moi mes kiddouchin de tel qui m&#x27;a dit : sois consacrée à moi par un dinar d&#x27;argent » et qu&#x27;il est allé et lui a donné un dinar d&#x27;or. L&#x27;un pense : c&#x27;est une exigence ; et l&#x27;autre pense : c&#x27;est une indication de lieu pour lui.</p><p>Et que veut dire « il se trouve » : il l&#x27;avait noué dans un chiffon.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>קְפִידָא</b> לֹא הָיְתָה חֲפֵיצָה אֶלָּא בְּשֶׁל כֶּסֶף דְּאִיכָּא דְּנִיחָא לֵיהּ בְּכַסְפָּא:</div>
+          <div class="glose-fr">« Une exigence » : elle ne voulait que de l&#x27;argent, car il y en a que l&#x27;argent arrange.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמָר סָבַר מַרְאֶה מָקוֹם הִיא לוֹ</b> אַף אִם לֹא יִתֵּן אֶלָּא כֶּסֶף קַבְּלֵהוּ וּמִיהוּ הֵיכָא דִּטְעַאי אִיהִי גּוּפָהּ לָא פְּלִיג ר&quot;ש:</div>
+          <div class="glose-fr">« Et l&#x27;autre pense : c&#x27;est une indication de lieu pour lui » : même s&#x27;il ne donne que de l&#x27;argent, reçois-le ; cependant, là où l&#x27;erreur vient d&#x27;elle-même, Rabbi Chimon ne diverge pas.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמַאי נִמְצָא</b> הָא מֵעִיקָּרָא הָכִי הֲוָה:</div>
+          <div class="glose-fr">« Et que veut dire il se trouve » : n&#x27;était-ce pas ainsi dès le début ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דַּהֲוָה צִייֵּר בִּבְלִיתָא</b> כְּשֶׁנְּתָנוֹ לַשָּׁלִיחַ הָיָה צָרוּר בִּסְמַרְטוּט וּמְצָאַתּוּ שֶׁל זָהָב:</div>
+          <div class="glose-fr">« Il l&#x27;avait noué dans un chiffon » : quand il l&#x27;a donné à l&#x27;envoyé, c&#x27;était noué dans un chiffon, et il l&#x27;a trouvé d&#x27;or.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דַּהֲוָה צִייֵּר בִּבְלִיתָא</b> פֵּי&#x27; בַּקּוּנְטְ&#x27; כְּשֶׁנְּתָנוֹ לַשָּׁלִיחַ הָיָה צָרוּר בִּסְמַרְטוּט וּכְשֶׁהִגִּיעַ לְיַד הָאִשָּׁה מְצָאַתּוּ שֶׁל זָהָב וּלְעֵיל כִּי פָּרֵיךְ נִמְצָא מֵעִיקָּרָא נָמֵי זָהָב הָיָה לָא מָצֵי לְשַׁנּוּיֵי מַאי נִמְצָא דַּהֲוָה צַיָּיר בִּבְלִיתָא דְּהָא הָאִשָּׁה עַצְמָהּ מְקַבֶּלֶת קִידּוּשִׁין א&quot;כ יוֹדַעַת הִיא שֶׁהוּא שֶׁל זָהָב שֶׁאִם הִיא סְבוּרָה שֶׁהוּא שֶׁל כֶּסֶף הָוֵי קַשְׁיָא לֵיהּ אַמַּאי מְקֻודֶּשֶׁת וְהָא אִיכָּא דְּנִיחָא לֵיהּ בְּכַסְפָּא וְלָא נִיחָא לֵיהּ בְּדַהֲבָא וכ&quot;ש שֶׁהַשָּׁלִיחַ יוֹדֵעַ כָּךְ דאל&quot;כ טוֹעֶה הוּא וְאֵין הַקִּידּוּשִׁין כְּלוּם וְלֹא שַׁייָּךְ הָתָם טַעְמָא דְּמַרְאֶה מָקוֹם הִיא לוֹ אֲבָל הָכָא שֶׁעֲשָׂאַתּוּ שָׁלִיחַ לְקַבֵּל קִידּוּשִׁין שַׁייָּךְ טַעְמָא דְּמַרְאֶה מָקוֹם הִיא לוֹ:</div>
+          <div class="glose-fr">« Il l&#x27;avait noué dans un chiffon » : Rachi explique dans le Kountres : quand il l&#x27;a donné à l&#x27;envoyé, c&#x27;était noué dans un chiffon, et quand il est arrivé dans la main de la femme, elle l&#x27;a trouvé d&#x27;or. Et plus haut, quand on objecte « il se trouve — au début aussi c&#x27;était d&#x27;or », il ne pouvait pas répondre « que veut dire il se trouve : il l&#x27;avait noué dans un chiffon », car la femme elle-même reçoit les kiddouchin, donc elle sait que c&#x27;est d&#x27;or ; si elle pensait que c&#x27;était d&#x27;argent, il serait difficile de savoir pourquoi elle est consacrée, puisqu&#x27;il y en a que l&#x27;argent arrange et que l&#x27;or n&#x27;arrange pas ; et à plus forte raison l&#x27;envoyé sait cela, sinon il se trompe et les kiddouchin ne valent rien ; et là n&#x27;est pas applicable la raison de « indication de lieu » ; mais ici, où elle l&#x27;a fait envoyé pour recevoir les kiddouchin, la raison de « indication de lieu » s&#x27;applique.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rava, avec Rabbi 'Hiya bar Avin, établit la michna dans le cas où <b>la femme</b> a envoyé quelqu'un recevoir ses kiddouchin : il lui a donné un dinar d'or au lieu d'argent. Le premier tana y voit une exigence, Rabbi Chimon une indication de lieu. Et « il se trouve » : l'envoyé avait noué le dinar dans un chiffon et ne savait pas qu'il était d'or (Rachi).</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 440" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#7a7a7a"/></marker></defs>
+<rect x="0" y="0" width="740" height="440" fill="#fbfaf6"/>
+<text x="370.0" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b2b2b">L'envoyé qui prête de l'or au lieu de l'argent : « indication de lieu »</text>
+<rect x="20" y="40" width="700" height="56" rx="5" fill="#e7e9f2" stroke="#7a86a8"/>
+<text x="370.0" y="64.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f3a55">Abayé : Rabbi Chimon, Rabban Chimon ben Gamliel et Rabbi Elazar pensent tous « mar'e makom hou lo » (indication de lieu)</text>
+<text x="370.0" y="80.0" text-anchor="middle" font-size="11" fill="#2f3a55">Rachi : celui qui dit à son envoyé de faire une chose légère et qui fait une chose lourde : pas un changement</text>
+<line x1="370" y1="96" x2="370" y2="114" stroke="#7a7a7a" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="20" y="114" width="340" height="90" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="190.0" y="139.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e5c2c">Rav Chimi bar Achi : Abayé</text>
+<text x="190.0" y="155.0" text-anchor="middle" font-size="11" fill="#2e5c2c">Il a dit à son envoyé : « prête-moi un dinar</text>
+<text x="190.0" y="171.0" text-anchor="middle" font-size="11" fill="#2e5c2c">d'argent, et va consacrer-moi telle femme »</text>
+<text x="190.0" y="187.0" text-anchor="middle" font-size="11" fill="#2e5c2c">et il a emprunté d'or</text>
+<rect x="380" y="114" width="340" height="90" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="550.0" y="139.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#7c3b2c">Objection</text>
+<text x="550.0" y="155.0" text-anchor="middle" font-size="11" fill="#7c3b2c">S'il en est ainsi, « sois consacrée à moi » ?</text>
+<text x="550.0" y="171.0" text-anchor="middle" font-size="11" fill="#7c3b2c">Il aurait dû dire « à lui » !</text>
+<text x="550.0" y="187.0" text-anchor="middle" font-size="11" fill="#7c3b2c">« Il se trouve » : dès le début c'était d'or !</text>
+<line x1="370" y1="204" x2="370" y2="222" stroke="#7a7a7a" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="20" y="222" width="700" height="70" rx="5" fill="#dcd7c8" stroke="#b6b2a4"/>
+<text x="370.0" y="253.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a3a3a">Rava : moi et le lion du groupe (Rabbi 'Hiya bar Avin) : elle a dit à son envoyé « va, reçois pour moi mes kiddouchin de tel qui m'a dit :</text>
+<text x="370.0" y="269.0" text-anchor="middle" font-size="11" fill="#3a3a3a">sois consacrée par un dinar d'argent » et il lui a donné un dinar d'or ; l'un : exigence ; l'autre : indication de lieu</text>
+<rect x="20" y="308" width="700" height="84" rx="5" fill="#e7e9f2" stroke="#7a86a8"/>
+<text x="370.0" y="338.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f3a55">« Il se trouve » : il l'avait noué dans un chiffon (Rachi : quand il l'a donné à l'envoyé, c'était noué, et il l'a trouvé d'or)</text>
+<text x="370.0" y="354.0" text-anchor="middle" font-size="11" fill="#2f3a55">Tossefot : la raison d' « indication de lieu » n'existe que pour l'envoyé qui reçoit les kiddouchin ;</text>
+<text x="370.0" y="370.0" text-anchor="middle" font-size="11" fill="#2f3a55">si c'est elle-même qui reçoit, elle sait qu'il est d'or</text>
+</svg></div><div class="svg-cap">L&#x27;envoyé qui prête de l&#x27;or au lieu de l&#x27;argent : « indication de lieu ».</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר אַבַּיֵּי: רַבִּי שִׁמְעוֹן וְרַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל וְרַבִּי אֶלְעָזָר כֻּולְּהוּ סְבִירָא לְהוּ מַרְאֶה מָקוֹם הוּא לוֹ. רַבִּי שִׁמְעוֹן – הָא דַּאֲמָרָן, רַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל – דִּתְנַן:</div>
+            <div class="fr"><p>Abayé a dit : Rabbi Chimon, Rabban Chimon ben Gamliel et Rabbi Elazar pensent tous : c&#x27;est une indication de lieu. Rabbi Chimon, ce que nous avons dit ; Rabban Chimon ben Gamliel, car nous avons enseigné :</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כֻּולְּהוּ סְבִירָא לְהוּ מַרְאֶה מָקוֹם הוּא לוֹ</b> הָאוֹמֵר לִשְׁלוּחוֹ לַעֲשׂוֹת לוֹ בְּדָבָר הַקַּל וְעָשָׂה לוֹ בְּדָבָר כָּבֵד דְּאֵין זוֹ שִׁינּוּי וְלֹא א&quot;ל דָּבָר הַקַּל אֶלָּא לְהַרְאוֹת לוֹ מָקוֹם לְהָקֵל בִּשְׁלִיחוּתוֹ אִם כָּבֵד עָלָיו בְּעִנְיָן אַחֵר:</div>
+          <div class="glose-fr">« Tous pensent que c&#x27;est une indication de lieu » : celui qui dit à son envoyé de faire pour lui dans une chose légère et qui fait pour lui dans une chose lourde, ce n&#x27;est pas un changement, et il ne lui a dit la chose légère que pour lui indiquer l&#x27;endroit pour alléger sa mission si cela lui est lourd d&#x27;une autre manière.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Abayé généralise : Rabbi Chimon, Rabban Chimon ben Gamliel et Rabbi Elazar pensent tous que la mention d'un objet léger est une <b>indication de lieu</b> (Rachi : celui qui fait plus lourd que ce qu'on lui a dit ne change pas sa mission). La suite est à la page suivante (49a).</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Kiddushin_48a.html">&lsaquo; Kiddushin 48a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Kiddushin_49a.html">Kiddushin 49a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schémas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage sélectionné :\n« '+s+' »\n'):'\nPassage concerné :\n\n')+'\nCorrection proposée :\n\n\n— envoyé depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<p id="credit-texte" style="text-align:center;font-size:.76rem;color:#78716c;margin:6px auto 18px;max-width:640px;line-height:1.5">
+Texte hébreu et araméen vocalisé : édition numérique William Davidson du Talmud Koren Noé, via
+<a href="https://www.sefaria.org" style="color:#78716c">Sefaria</a> (licence CC BY-NC). Traduction française, notes et schémas : Chiourim BA (licence CC BY 4.0).</p>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kiddushin 6b — Les formules d&#x27;affranchissement et le kiddouchin par un prêt ou par un don avec restitution</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Kiddushin 6b — Les formules d&#x27;affranchissement et le kiddouchin par un prêt ou par un don avec restitution</h1>
+    <div class="ref">Kiddushin 6b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Kiddushin_6a.html">&lsaquo; Kiddushin 6a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Kiddushin_7a.html">Kiddushin 7a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> La guemara achève les formules du guet (« tu es permise à tout homme » dit à sa servante ne produit rien) puis examine « tu es à toi-même », dit à sa femme, et « je n&#x27;ai pas d&#x27;affaire avec toi », dit à son esclave. Elle cite une baraïta sur la formule d&#x27;affranchissement (gouf shel guet chi&#x27;hrour) et la vente d&#x27;un esclave à un non-Juif, où Rabban Chimon ben Gamliel parle de l&#x27;acte écrit (ono).</p><p>Abayé enseigne ensuite que le kiddouchin par un prêt n&#x27;est pas valable, mais qu&#x27;il l&#x27;est par le bénéfice du prêt (haana), bien qu&#x27;il soit interdit en raison de la ruse d&#x27;intérêt (ha&#x27;arama de ribit). Rava enseigne sur « prends cette mina à condition de me la rendre » : dans la vente, il n&#x27;y a pas d&#x27;acquisition ; pour la femme, pas de kiddouchin ; pour le rachat du premier-né, il n&#x27;est pas racheté ; pour la terouma, il s&#x27;est acquitté.</p><p>La guemara objecte à Rava l&#x27;incohérence de ces cas et sa propre règle sur l&#x27;étrog. Rav Achi en propose une lecture : l&#x27;acquisition vaut partout, excepté pour la femme, car elle ne s&#x27;acquiert pas par échange.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 420" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="420" fill="#fbfaf6"/>
+<text x="370" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b2b2b">Kiddouchin par un prêt et par un don à condition de restituer</text>
+<rect x="20" y="40" width="340" height="68" rx="5" fill="#e7e9f2" stroke="#7a86a8"/>
+<text x="190" y="62" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2f3a55">Abayé : par un prêt</text>
+<text x="190" y="82" text-anchor="middle" font-size="11.5" fill="#2f3a55">le prêt lui-même : pas de kiddouchin (il est déjà à elle)</text>
+<text x="190" y="98" text-anchor="middle" font-size="11.5" fill="#2f3a55">le bénéfice du prêt (un délai) : kiddouchin</text>
+<rect x="380" y="40" width="340" height="68" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="550" y="62" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#7c3b2c">Mais interdit</text>
+<text x="550" y="82" text-anchor="middle" font-size="11.5" fill="#7c3b2c">ruse d'intérêt (ha'arama de ribit)</text>
+<text x="550" y="98" text-anchor="middle" font-size="11.5" fill="#7c3b2c">donc cas où il lui a accordé un délai</text>
+<rect x="20" y="122" width="700" height="44" rx="5" fill="#dcd7c8" stroke="#b6b2a4"/>
+<text x="370" y="142" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">Rava : "prends cette mina à condition de me la rendre"</text>
+<text x="370" y="158" text-anchor="middle" font-size="12" fill="#3a3a3a">Quatre cas, quatre résultats</text>
+<rect x="20" y="176" width="165" height="64" rx="5" fill="#fff" stroke="#c9c5b6"/>
+<text x="102" y="198" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a3a3a">Vente</text>
+<text x="102" y="218" text-anchor="middle" font-size="11.5" fill="#6a6a6a">pas d'acquisition</text>
+<rect x="195" y="176" width="165" height="64" rx="5" fill="#fff" stroke="#c9c5b6"/>
+<text x="277" y="198" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a3a3a">Femme</text>
+<text x="277" y="218" text-anchor="middle" font-size="11.5" fill="#6a6a6a">pas de kiddouchin</text>
+<rect x="370" y="176" width="165" height="64" rx="5" fill="#fff" stroke="#c9c5b6"/>
+<text x="452" y="198" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a3a3a">Fils premier-né</text>
+<text x="452" y="218" text-anchor="middle" font-size="11.5" fill="#6a6a6a">pas racheté</text>
+<rect x="545" y="176" width="175" height="64" rx="5" fill="#fff" stroke="#c9c5b6"/>
+<text x="632" y="198" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a3a3a">Terouma</text>
+<text x="632" y="218" text-anchor="middle" font-size="11.5" fill="#6a6a6a">quitte (mais interdit)</text>
+<rect x="20" y="252" width="700" height="52" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="370" y="274" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#7c3b2c">Objection : quelle est l'opinion de Rava ?</text>
+<text x="370" y="292" text-anchor="middle" font-size="12" fill="#7c3b2c">Si le don avec restitution est un don : tous valent. S'il n'en est pas un : même la terouma ne vaut pas</text>
+<rect x="20" y="316" width="700" height="44" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="370" y="336" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#7c3b2c">Et Rava dit ailleurs : l'étrog donné à condition de le rendre est un don</text>
+<text x="370" y="352" text-anchor="middle" font-size="12" fill="#7c3b2c">Il a pris et rendu : quitte ; sinon : non</text>
+<rect x="20" y="372" width="700" height="38" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="370" y="396" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2e5c2c">Rav Achi : tous acquièrent, sauf la femme (elle ne s'acquiert pas par échange)</text>
+</svg></div>
+          <figcaption>Synthèse : kiddouchin par un prêt et par un don avec restitution, objections et réponse de Rav Achi.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">– לֹא אָמַר וְלֹא כְּלוּם. אָמַר לָהּ לְשִׁפְחָתוֹ: ״הֲרֵי אַתְּ מֻותֶּרֶת לְכָל אָדָם״ – לֹא אָמַר וְלֹא כְּלוּם.</div>
+            <div class="fr"><p>[Si le mari a dit à sa servante : « Tu es permise à tout homme »] il n&#x27;a rien dit. Il a dit à sa servante : « Tu es permise à tout homme » : il n&#x27;a rien dit.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא אָמַר כְּלוּם</b> לְהִתְגָּרְשָׁה אִם כָּתַב לָשׁוֹן זֶה בְּגֵט שֶׁאֵין זֶה לְשׁוֹן גֵּירוּשִׁין:</div>
+          <div class="glose-fr">« Il n&#x27;a rien dit » : pour qu&#x27;elle soit divorcée, si l&#x27;on a écrit cette expression dans l&#x27;acte, car elle n&#x27;est pas une expression de divorce.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הֲרֵי אַתְּ מֻותֶּרֶת</b> לְשׁוֹן גֵּירוּשִׁין הוּא וְלֹא לְשׁוֹן שִׁחְרוּר דְּשִׁפְחָה דְּאִי בַּת חוֹרִין מַשְׁוֶה לָהּ אֵינָהּ מֻותֶּרֶת לַעֲבָדִים אֲבָל לְשׁוֹן גֵּט הוּא לְאִשָּׁה שֶׁמַּתִּירָהּ לְכָל שֶׁהָיְתָה אֲסוּרָה לוֹ עַל יָדוֹ:</div>
+          <div class="glose-fr">« Tu es permise » : c&#x27;est une expression de divorce, et non une expression d&#x27;affranchissement pour une servante, car si elle est faite libre, elle n&#x27;est pas permise aux esclaves. Mais c&#x27;est la formule du guet pour la femme, qui la rend permise à tous, alors qu&#x27;elle lui était interdite par lui.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Fin de la phrase de la page précédente : la formule « tu es permise à tout homme » appartient au guet de l'épouse. Dite à une servante, elle n'affranchit pas, car une servante affranchie devient interdite aux esclaves, et la formule du guet ne convient pas à sa situation.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר לָהּ לְאִשְׁתּוֹ: ״הֲרֵי אַתְּ לְעַצְמְךָ״ מַהוּ? מִי אָמְרִינַן לִמְלָאכָה קָאָמַר לַהּ, אוֹ דִּילְמָא לִגְמָרֵי קָאָמַר לַהּ?</div>
+            <div class="fr"><p>S&#x27;il a dit à sa femme : « Tu es à toi-même », qu&#x27;en est-il ? Disons-nous qu&#x27;il lui parle pour le travail, ou bien qu&#x27;il lui parle d&#x27;une façon complète ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְגַמְרֵי</b> אֲפִילּוּ לְהִנָּשֵׂא:</div>
+          <div class="glose-fr">« Complètement » : même pour se remarier.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לִמְלָאכָה</b> שֶׁיְּהֵא מַעֲשֵׂה יָדֶיהָ שֶׁלָּהּ:</div>
+          <div class="glose-fr">« Pour le travail » : que le travail de ses mains soit à elle.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La formule « tu es à toi-même » dite par le mari à son épouse pourrait signifier seulement que le travail de ses mains lui appartient, ou bien une séparation complète qui lui permet de se remarier. La guemara pose la question.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רָבִינָא לְרַב אָשֵׁי: תָּא שְׁמַע, דְּתַנְיָא: גּוּפוֹ שֶׁל גֵּט שִׁחְרוּר: ״הֲרֵי אַתָּה בֶּן חוֹרִין״, ״הֲרֵי אַתָּה לְעַצְמְךָ״. הַשְׁתָּא וּמָה עֶבֶד כְּנַעֲנִי דִּקְנֵי לֵיהּ גּוּפֵיהּ, כִּי אָמַר לֵיהּ ״הֲרֵי אַתָּה לְעַצְמְךָ״ – לְגַמְרֵי קָאָמַר לֵיהּ, אִשָּׁה דְּלָא קְנֵי לֵיהּ גּוּפָהּ, לֹא כָל שֶׁכֵּן?</div>
+            <div class="fr"><p>Ravina dit à Rav Achi : viens écouter, car il a été enseigné : « Le corps de l&#x27;acte d&#x27;affranchissement : « Tu es libre », « tu es à toi-même » ». Or si un esclave cananéen, dont le corps est acquis, quand il lui dit « tu es à toi-même », cela veut dire complètement, une femme, dont le corps n&#x27;est pas acquis, a fortiori !</p></div>
+            <div class="tools"><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִשָּׁה דְּלָא קְנֵי לֵיהּ גּוּפָהּ לכ&quot;ש</b> אע&quot;ג דְּגַבֵּי הֲרֵי אַתְּ בַּת חוֹרִין לֹא מְהַנֵּי מק&quot;ו הַיְינוּ מִשּׁוּם דְּלָא שַׁיָּיךְ חֵירוּת בְּאִשָּׁה וְלָא עֲבִיד ק&quot;ו אֶלָּא מִלְּשׁוֹנוֹת דְּשָׁיְיכִי הָכָא וְהָכָא:</div>
+          <div class="glose-fr">« Une femme dont le corps n&#x27;est pas acquis, a fortiori » : bien que pour « tu es libre » le a fortiori ne serve pas, c&#x27;est parce que la liberté ne s&#x27;applique pas à une femme ; et on ne fait le a fortiori qu&#x27;à partir des expressions qui s&#x27;appliquent aux deux cas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Ravina apporte une preuve d'une baraïta : pour un esclave cananéen, dont le maître possède le corps, « tu es à toi-même » est une formule d'affranchissement complète. À plus forte raison pour la femme, qui n'est pas acquise dans son corps.</p><p>Tossefot explique pourquoi le a fortiori ne s'applique pas à « tu es libre » : la liberté (<b>'hérout</b>) n'est pas une notion qui s'applique à la femme, et le a fortiori ne se fait qu'à partir des formules qui s'appliquent aux deux.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 720 248" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah-k6b-s2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a766a"/></marker></defs>
+<rect x="0" y="0" width="720" height="248" fill="#fbfaf6"/>
+<text x="360" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b2b2b">Le mari dit à sa femme : "Tu es à toi-même"</text>
+<rect x="20" y="40" width="680" height="50" rx="5" fill="#fdf4e8" stroke="#c98b3a"/>
+<text x="360" y="60.80" text-anchor="middle" font-size="12" fill="#6b4a14">Question : parle-t-il du travail de ses mains,</text>
+<text x="360" y="77.84" text-anchor="middle" font-size="12" fill="#6b4a14">ou la libère-t-il complètement (elle peut se remarier) ?</text>
+<line x1="360" y1="90" x2="360" y2="110" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k6b-s2)"/>
+<rect x="20" y="112" width="330" height="92" rx="5" fill="#e3ecf5" stroke="#4f78a8"/>
+<text x="185" y="136.76" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2c4a6e">Esclave cananéen</text>
+<text x="185" y="153.80" text-anchor="middle" font-size="12" fill="#2c4a6e">son corps est acquis au maître</text>
+<text x="185" y="170.84" text-anchor="middle" font-size="12" fill="#2c4a6e">baraïta : "tu es à toi-même" =</text>
+<text x="185" y="187.88" text-anchor="middle" font-size="12" fill="#2c4a6e">acte d'affranchissement complet</text>
+<rect x="370" y="112" width="330" height="92" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="535" y="136.76" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2e5c2c">Femme</text>
+<text x="535" y="153.80" text-anchor="middle" font-size="12" fill="#2e5c2c">son corps n'est pas acquis au mari</text>
+<text x="535" y="170.84" text-anchor="middle" font-size="12" fill="#2e5c2c">a fortiori (kal va-'homer) :</text>
+<text x="535" y="187.88" text-anchor="middle" font-size="12" fill="#2e5c2c">la formule vaut complètement</text>
+<line x1="350" y1="158" x2="368" y2="158" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k6b-s2)"/>
+<text x="360" y="226" text-anchor="middle" font-size="11" font-style="italic" fill="#5a564a">Preuve de Ravina à Rav Achi. Tossefot : on ne compare que les formules qui s'appliquent aux deux.</text>
+</svg></div><div class="svg-cap">« Tu es à toi-même » : la preuve de Ravina par un raisonnement a fortiori depuis l&#x27;esclave cananéen.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רָבִינָא לְרַב אָשֵׁי: אָמַר לְעַבְדּוֹ ״אֵין לִי עֵסֶק בְּךָ״ מַאי? מִי אָמְרִינַן ״אֵין לִי עֵסֶק בָּךְ״ – לְגַמְרֵי קָאָמַר לֵיהּ, אוֹ דִּילְמָא לִמְלָאכָה קָאָמַר לֵיהּ?</div>
+            <div class="fr"><p>Ravina dit à Rav Achi : s&#x27;il a dit à son esclave : « Je n&#x27;ai pas d&#x27;affaire avec toi », qu&#x27;en est-il ? Disons-nous que « je n&#x27;ai pas d&#x27;affaire avec toi » veut dire complètement, ou bien qu&#x27;il lui parle pour le travail ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְעַבְדּוֹ</b> כְּנַעֲנִי:</div>
+          <div class="glose-fr">« À son esclave » : cananéen.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְגַמְרֵי</b> אַפֵּי&#x27; לְשִׁחְרוּר גּוּפוֹ וּמֻותָּר בְּבַת חוֹרִין:</div>
+          <div class="glose-fr">« Complètement » : même pour libérer son corps, et il lui est permis d&#x27;épouser une femme libre.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Autre question de Ravina : la formule « je n'ai pas d'affaire avec toi » dite à un esclave cananéen. Libère-t-elle son corps (et lui permet-elle d'épouser une femme libre), ou concerne-t-elle seulement son travail ?</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲמַר לֵיהּ רַב נַחְמָן לְרַב אָשֵׁי וְאָמְרִי לַהּ רַב חָנִין מָחוֹזָאָה לְרַב אָשֵׁי: תָּא שְׁמַע: הַמּוֹכֵר עַבְדּוֹ לְנָכְרִי – יָצָא לְחֵירוּת, וְצָרִיךְ גֵּט שִׁחְרוּר מֵרַבּוֹ רִאשׁוֹן.</div>
+            <div class="fr"><p>Rav Na&#x27;hman dit à Rav Achi, et certains disent Rav &#x27;Hanin de &#x27;Hozaa à Rav Achi : viens écouter : celui qui vend son esclave à un non-Juif : il sort à la liberté, et il a besoin d&#x27;un acte d&#x27;affranchissement de son premier maître.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>יָצָא לְחֵירוּת</b> ואע&quot;ג דקי&quot;ל (גִּיטִּין דַּף מד.) קוֹנְסִין אוֹתוֹ לִפְדּוֹתוֹ מִן הָעוֹבֵד כּוֹכָבִים עַד עֲשָׂרָה בְּדָמָיו דְּאַפְקְעֵיהּ מִמִּצְוֹת:</div>
+          <div class="glose-fr">« Il sort à la liberté » : bien que nous tenions (Guittin 44a) qu&#x27;on l&#x27;oblige à le racheter au non-Juif jusqu&#x27;à dix fois sa valeur, car il l&#x27;a fait sortir de l&#x27;obligation des commandements.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְצָרִיךְ גֵּט שִׁחְרוּר</b> לְהַתִּירוֹ בְּבַת חוֹרִין מִשּׁוּם דְּעוֹבֵד כּוֹכָבִים גּוּפוֹ לָא קָנֵי דִּכְתִיב מֵהֶם תִּקְנוּ אַתֶּם קוֹנִין מֵהֶם וְלֹא הֵם קוֹנִים מִכֶּם וְלֹא הֵם קוֹנִים זֶה אֶת זֶה (שָׁם דַּף לח.):</div>
+          <div class="glose-fr">« Et il a besoin d&#x27;un acte d&#x27;affranchissement » : pour lui permettre d&#x27;épouser une femme libre, car le non-Juif n&#x27;acquiert pas le corps, puisqu&#x27;il est écrit « d&#x27;eux vous acquerrez » : vous acquérez d&#x27;eux, mais eux n&#x27;acquièrent pas de vous, ni les uns des autres (ibid. 38a).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Preuve apportée par une baraïta : l'esclave vendu à un non-Juif devient libre, mais il a besoin d'un acte d'affranchissement de son premier maître pour pouvoir épouser une femme libre, car le non-Juif n'acquiert pas le corps d'un esclave juif.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל: בַּמֶּה דְבָרִים אֲמוּרִים – שֶׁלֹּא כָּתַב עָלָיו אוֹנוֹ, אֲבָל כָּתַב עָלָיו אוֹנוֹ – זֶהוּ שִׁחְרוּרוֹ. הֵיכִי דָמֵי אוֹנוֹ? אָמַר רַב שֵׁשֶׁת: דְּכָתַב לֵיהּ: כְּשֶׁתִּבְרַח מִמֶּנּוּ – ״אֵין לִי עֵסֶק בָּךְ״.</div>
+            <div class="fr"><p>Rabban Chimon ben Gamliel dit : dans quel cas est-ce dit ? S&#x27;il n&#x27;a pas écrit sur lui son ono.</p><p>Mais s&#x27;il a écrit sur lui son ono, c&#x27;est son affranchissement. Qu&#x27;est-ce que l&#x27;ono ?</p><p>Rav Chéchet dit : qu&#x27;il lui a écrit : « Quand tu t&#x27;échapperas de lui : je n&#x27;ai pas d&#x27;affaire avec toi ».</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בד&quot;א</b> שֶׁצָּרִיךְ גֵּט שִׁחְרוּר שֶׁלֹּא כָּתַב עָלָיו אוֹנוֹ כְּשֶׁמְּכָרוֹ לְעוֹבֵד כּוֹכָבִים:</div>
+          <div class="glose-fr">« Dans quel cas est-ce dit » : qu&#x27;il a besoin d&#x27;un acte d&#x27;affranchissement, s&#x27;il n&#x27;a pas écrit son ono quand il l&#x27;a vendu au non-Juif.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אוֹנוֹ</b> לְשׁוֹן שְׁטָר:</div>
+          <div class="glose-fr">« Ono » : expression d&#x27;acte écrit.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לִכְשֶׁתִּבְרַח מִמֶּנּוּ</b> מִן הָעוֹבֵד כּוֹכָבִים:</div>
+          <div class="glose-fr">« Quand tu t&#x27;échapperas de lui » : du non-Juif.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵין לִי עֵסֶק בָּךְ</b> אַלְמָא לְשׁוֹן שִׁחְרוּר הוּא:</div>
+          <div class="glose-fr">« Je n&#x27;ai pas d&#x27;affaire avec toi » : c&#x27;est donc une expression d&#x27;affranchissement.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּשֶׁתִּבְרַח מִמֶּנּוּ</b> כְּלוֹמַר מִן הָעוֹבֵד כּוֹכָבִים אֲבָל אֵינוֹ רוֹצֶה לוֹמַר כְּשֶׁתִּבְרַח מִמֶּנִּי מֵעַכְשָׁיו אֵין לִי עֵסֶק בְּךָ א&quot;כ יִהְיֶה מִיָּד בֶּן חוֹרִין וְיִתְחַיֵּיב בְּמִצְוֹת וְלֹא יוּכַל לְקַייְּמוֹ בְּבֵית הָעוֹבֵד כּוֹכָבִים נִמְצָא שֶׁרַע לוֹ מַה שֶׁכּוֹתֵב עָלָיו אוֹנוֹ:</div>
+          <div class="glose-fr">« Quand tu t&#x27;échapperas de lui » : c&#x27;est-à-dire du non-Juif. Mais il ne veut pas dire : quand tu t&#x27;échapperas de moi, dès maintenant je n&#x27;ai pas d&#x27;affaire avec toi, car alors il serait libre immédiatement et obligé aux commandements, et ne pourrait pas les accomplir dans la maison du non-Juif ; il en résulterait que ce qu&#x27;il écrit sur lui, son ono, lui serait préjudiciable.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabban Chimon ben Gamliel distingue : si le premier maître a écrit l'<b>ono</b> (l'acte de vente avec la formule de libération), l'esclave est libre sans autre acte. Rav Chéchet précise la formule : « quand tu t'échapperas du non-Juif, je n'ai pas d'affaire avec toi ». Cela montre que « je n'ai pas d'affaire avec toi » est une expression d'affranchissement.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 338" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah-k6b-s5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a766a"/></marker></defs>
+<rect x="0" y="0" width="740" height="338" fill="#fbfaf6"/>
+<text x="370" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b2b2b">"Je n'ai pas d'affaire avec toi" dit à un esclave</text>
+<rect x="20" y="40" width="700" height="44" rx="5" fill="#fdf4e8" stroke="#c98b3a"/>
+<text x="370" y="66.32" text-anchor="middle" font-size="12" fill="#6b4a14">Question de Ravina : libération complète, ou seulement le travail ?</text>
+<line x1="370" y1="84" x2="370" y2="104" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k6b-s5)"/>
+<rect x="20" y="106" width="700" height="50" rx="5" fill="#dcd7c8" stroke="#b6b2a4"/>
+<text x="370" y="126.80" text-anchor="middle" font-size="12" fill="#3a3a3a">Baraïta : l'esclave vendu à un non-Juif sort libre</text>
+<text x="370" y="143.84" text-anchor="middle" font-size="12" fill="#3a3a3a">mais il lui faut un acte d'affranchissement de son premier maître.</text>
+<line x1="370" y1="156" x2="370" y2="176" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k6b-s5)"/>
+<rect x="20" y="178" width="340" height="92" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="190" y="202.76" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#7c3b2c">Sans ono</text>
+<text x="190" y="219.80" text-anchor="middle" font-size="12" fill="#7c3b2c">le premier maître n'a rien écrit</text>
+<text x="190" y="236.84" text-anchor="middle" font-size="12" fill="#7c3b2c">à la vente : il faut encore</text>
+<text x="190" y="253.88" text-anchor="middle" font-size="12" fill="#7c3b2c">un acte d'affranchissement</text>
+<rect x="380" y="178" width="340" height="92" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="550" y="202.76" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2e5c2c">Avec ono (Rabban Chimon ben Gamliel)</text>
+<text x="550" y="219.80" text-anchor="middle" font-size="12" fill="#2e5c2c">c'est son affranchissement ;</text>
+<text x="550" y="236.84" text-anchor="middle" font-size="12" fill="#2e5c2c">Rav Chéchet : ono = 'quand tu t'échapperas,</text>
+<text x="550" y="253.88" text-anchor="middle" font-size="12" fill="#2e5c2c">je n'ai pas d'affaire avec toi'</text>
+<rect x="120" y="284" width="500" height="36" rx="5" fill="#e3ecf5" stroke="#4f78a8"/>
+<text x="370" y="306.32" text-anchor="middle" font-size="12" fill="#2c4a6e">Donc la formule est une expression d'affranchissement complet.</text>
+<line x1="550" y1="270" x2="470" y2="283" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k6b-s5)"/>
+</svg></div><div class="svg-cap">« Je n&#x27;ai pas d&#x27;affaire avec toi » : la baraïta de l&#x27;esclave vendu à un non-Juif et l&#x27;ono de Rabban Chimon ben Gamliel.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר אַבַּיֵּי: הַמְקַדֵּשׁ בְּמִלְוָה – אֵינָהּ מְקֻודֶּשֶׁת. בַּהֲנָאַת מִלְוֶה – מְקֻודֶּשֶׁת, וְאָסוּר לַעֲשׂוֹת כֵּן מִפְּנֵי הַעֲרָמַת רִבִּית.</div>
+            <div class="fr"><p>Abayé a dit : celui qui consacre par un prêt, elle n&#x27;est pas consacrée. Par le bénéfice du prêt, elle est consacrée, et il est interdit de faire ainsi à cause de la ruse d&#x27;intérêt.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַמִּקְדָּשׁ בְּמִלְוָה</b> דְּאָמַר הִתְקַדְּשִׁי לִי בְּמִלְוֶה שֶׁהִלְוִיתִיךָ:</div>
+          <div class="glose-fr">« Celui qui consacre par un prêt » : qui dit : « Sois consacrée à moi par le prêt que je t&#x27;ai fait ».</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵינָהּ מְקֻודֶּשֶׁת</b> דְּקִיחָה מִשְּׂדֵה עֶפְרוֹן גָּמְרִינַן דְּיָהֵיב מִידִי בִּשְׁעַת קִידּוּשִׁין וּמַלְוֶה לְהוֹצָאָה נִיתְּנָה וּכְבָר הֵן שֶׁלָּהּ וּמָעוֹת אֲחֵרִים הִיא חַיֶּיבֶת לוֹ:</div>
+          <div class="glose-fr">« Elle n&#x27;est pas consacrée » : car nous déduisons de « prise, prise » du champ d&#x27;Efron qu&#x27;il faut donner quelque chose au moment du kiddouchin, et un prêt est donné pour être dépensé, c&#x27;est déjà à elle, et elle lui doit l&#x27;argent d&#x27;autres.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בַּהֲנָאַת מִלְוֶה</b> מְפָרֵשׁ לָהּ וְאָזֵיל:</div>
+          <div class="glose-fr">« Par le bénéfice du prêt » : il l&#x27;explique ensuite.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אָמַר אַבָּיֵי הַמְקַדֵּשׁ בְּמִלְוֶה אֵינָהּ מְקֻודֶּשֶׁת כְּגוֹן דְּאָמַר לָהּ הִתְקַדְּשִׁי לִי בְּמִלְוֶה שֶׁאַתְּ חַיֶּיבֶת וַאֲפִילּוּ הִלְוָה לָהּ מָעוֹת מִיָּד וַעֲדַייִן הֵן בְּעַיִן בְּיָדָהּ דְּהָנֵי מָעוֹת דִּידֵהּ נִינְהוּ דְּמִלְוָה לְהוֹצָאָה נִיתְּנָה וְלָא יָהֵיב לָהּ מִידִי אֲבָל אִם אָמַר לָהּ בַּהֲנָאַת מְחִילַת מִלְוֶה מְקֻודֶּשֶׁת דְּלָא גָּרַע מֵאָרוּוחַ לָהּ זִימְנָא וכ&quot;ש כָּאן שֶׁמַּאֲרִיךְ לָהּ זְמַן לְעוֹלָם וְיֵשׁ בַּהֲנָאָה זוֹ שָׁוֶה כַּמָּה פְּרוּטוֹת תֵּדַע דְּאָמְרִינַן לְקַמָּן (קִידּוּשִׁין דַּף מז.) דִּבְמֶכֶר נָמֵי לֹא קָנָה אִם קָנָה קַרְקַע בְּמִלְוֶה וְאָמְרִינַן בְּפֶ&#x27; הַזָּהָב (בָּבָא מְצִיעָא דַּף מו.) וְכֵן לְקַמָּן בְּפִירְקִין (קִידּוּשִׁין דַּף כֹּח.) יֵשׁ דָּמִים שֶׁהֵן כַּחֲלִיפִין כֵּיצַד הֶחְלִיף דְּמֵי שׁוֹר בְּפָרָה אוֹ דְּמֵי חֲמוֹר בְּשׁוֹר פֵּירוּשׁ אִם מָכַר לוֹ שׁוֹר וְאָמַר לוֹ אַחַר כָּךְ דְּמֵי שׁוֹר שֶׁאַתָּה חַייָּב לִי פָּרָתְךָ תְּהֵא קְנוּיָה לִי קוֹנֶה מִשּׁוּם דְּדָבָר תּוֹרָה מָעוֹת קוֹנוֹת וַחֲכָמִים תִּקְּנוּ שֶׁלֹּא יִהְיוּ קוֹנוֹת וּמִילְּתָא דְּלָא שְׁכִיחָא כִּי הַאי לָא תִּקְּנוּ וְאוֹקְמוּהָ אַדְּאוֹרָייְתָא וְהֵיאַךְ קוֹנֶה בְּאֵלּוּ הַמָּעוֹת וְהָא מִלְוֶה נִינְהוּ אֶלָּא בַּהֲנָאַת מְחִילַת מִלְוֶה וְהוּא הַדִּין לְעִנְיַן קִידּוּשִׁין. בַּהֲנָאַת מִלְוֶה מְקֻודֶּשֶׁת וְאָסוּר לַעֲשׂוֹת כֵּן מִפְּנֵי הַעֲרָמַת רִיבִּית. הֲנָאַת מִלְוֶה הֵיכִי דָמֵי כְּגוֹן דִּמְטָא זִימְנָא לְמִיגְבֵּי מִינָּהּ וְאַרְוַוח לָהּ זִימְנָא וַאֲמַר לֵהּ בְּהָהִיא הֲנָאָה דְּקָא מַרְוַוחְנָא לָךְ עַד זְמַן פְּלוֹנִי מְקֻודֶּשֶׁת לִי וְאִי קַשְׁיָא לָךְ הֵיכִי אַלִּימָא הֲנָאַת מִלְוֶה מִגּוּפָא דְּמִלְוָה לָא קַשְׁיָא הֲנָאַת מִלְוֶה אִיתָא וּמִשּׁוּם הָכִי מִיקַּדְּשָׁה בֵּיהּ מִלְוֶה גּוּפָא לֵיתָא דִּיקַדֵּשׁ בָּהּ דְּקַיְימָא לָן מִלְוָה לְהוֹצָאָה נִיתְּנָה:</div>
+          <div class="glose-fr">Abayé a dit : celui qui consacre par un prêt, elle n&#x27;est pas consacrée. C&#x27;est le cas où il lui a dit : « Sois consacrée à moi par le prêt que tu me dois ». Même s&#x27;il lui a prêté de l&#x27;argent à l&#x27;instant, qui est encore là, dans sa main, cet argent est à elle, car un prêt est donné pour être dépensé, et il ne lui a rien donné. Mais s&#x27;il lui a dit : « Pour le bénéfice de la remise du prêt », elle est consacrée, puisque cela n&#x27;est pas moindre que de lui accorder un délai, et a fortiori ici où il lui accorde un délai pour toujours, et ce bénéfice vaut plusieurs perutot. Sache-le, car nous disons plus loin (Kiddouchin 47a) que dans la vente aussi il n&#x27;a pas acquis si c&#x27;est par un prêt, et nous disons dans le chapitre « Hazahav » (Bava Metsia 46a), et de même plus loin dans ce chapitre (Kiddouchin 28a) : il y a des sommes qui sont comme un échange. Comment ? Celui qui a échangé le prix d&#x27;un bœuf contre une vache, ou le prix d&#x27;un âne contre un bœuf. C&#x27;est-à-dire que s&#x27;il lui a vendu un bœuf et lui a dit ensuite : « le prix du bœuf que tu me dois, que ta vache soit acquise à moi », il acquiert, car d&#x27;après la Torah, l&#x27;argent acquiert, et les sages ont décrété qu&#x27;il n&#x27;acquiert pas ; mais une chose rare comme celle-ci, ils ne l&#x27;ont pas décrétée, et l&#x27;ont laissée sur la règle de la Torah. Comment acquiert-il avec cet argent, qui est un prêt ? Ce n&#x27;est que par le bénéfice de la remise du prêt, et il en est de même pour le kiddouchin. « Par le bénéfice d&#x27;un prêt, elle est consacrée, et il est interdit de faire ainsi à cause de la ruse d&#x27;intérêt. » Comment est le bénéfice du prêt ? Par exemple, le moment du recouvrement est arrivé, il lui accorde un délai et lui dit : « Pour ce bénéfice dont je te fais profiter jusqu&#x27;à telle date, sois consacrée à moi. » Et si tu demandes : comment le bénéfice du prêt est-il plus fort que le prêt lui-même ? Cela ne pose pas de difficulté : le bénéfice du prêt existe, et c&#x27;est pourquoi elle est consacrée par lui ; le prêt lui-même n&#x27;existe pas pour la consacrer, car nous tenons qu&#x27;un prêt est donné pour être dépensé.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Abayé distingue deux situations. Le <b>prêt lui-même</b> : l'argent est déjà à la femme (un prêt est donné pour être dépensé), donc rien n'est donné au moment du kiddouchin et il n'y a pas de kiddouchin. Le <b>bénéfice du prêt</b> (par exemple un délai supplémentaire ou une remise) est un avantage réel qui vaut une peruta, donc le kiddouchin est valable. Mais il est interdit de procéder ainsi, car cela ressemble à un prêt à intérêt déguisé (<b>ha'arama de ribit</b>).</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הַאי הֲנָאַת מִלְוֶה, הֵיכִי דָמֵי? אִילֵּימָא דְּאַזָּקְפֵהּ, דַּאֲמַר לַהּ אַרְבַּע בְּחַמְשָׁה – הָא רִבִּית מְעַלַּיְיתָא הוּא. וְעוֹד, הַיְינוּ מִלְוֶה!</div>
+            <div class="fr"><p>Ce bénéfice du prêt, de quoi s&#x27;agit-il ? Si l&#x27;on dit qu&#x27;il lui a fait reconnaître la dette : il lui a dit « quatre pour cinq » – c&#x27;est de l&#x27;intérêt véritable.</p><p>Et de plus, c&#x27;est le prêt lui-même !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִילֵּימָא דְּאַזָּקְפֵהּ</b> מֵעִיקָּרָא אַרְבָּעָה בַּחֲמִשָּׁה וְהַשְׁתָּא אָמַר לָהּ הִתְקַדְּשִׁי לִי בְּזוּז חֲמִישִׁי:</div>
+          <div class="glose-fr">« Si l&#x27;on dit qu&#x27;il lui a fait reconnaître la dette » : au départ « quatre pour cinq », et maintenant il lui dit : « Sois consacrée à moi avec le cinquième zouz ».</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>רִבִּית מְעַלַּיְיתָא הוּא</b> וְאַמַּאי קָרֵי לֵיהּ הַעֲרָמַת רִבִּית:</div>
+          <div class="glose-fr">« C&#x27;est de l&#x27;intérêt véritable » : et pourquoi l&#x27;appelle-t-il ruse d&#x27;intérêt ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>ה&quot;ג וְעוֹד הַיְינוּ מִלְוֶה</b> שֶׁאַף הַזּוּז הַזֶּה כְּבָר מְחֻוייֶּבֶת וְעוֹמֶדֶת:</div>
+          <div class="glose-fr">On lit ainsi : « Et de plus, c&#x27;est le prêt lui-même » : car même ce zouz est déjà dû par elle.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara précise le cas du bénéfice du prêt. Première hypothèse : l'homme a prêté quatre et fait écrire cinq, puis donne le cinquième zouz comme kiddouchin. C'est de l'intérêt direct, pas de la ruse, et c'est de plus une dette, donc il n'y a pas de don nouveau.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לָא צְרִיכָא, דְּאַרְוַוח לָהּ זִימְנָא.</div>
+            <div class="fr"><p>Non : [l&#x27;enseignement] est nécessaire dans le cas où il lui a accordé un délai.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לָא צְרִיכָא דְּאַרְוַוח לַהּ זְמַן</b> הַלְוָאָתוֹ וְאָמַר לָהּ הִתְקַדְּשִׁי בַּהֲנָאָה זוֹ שֶׁאַתְּ הָיִיתָ נוֹתֶנֶת פְּרוּטָה לְאָדָם שֶׁיְּפַיְּיסֵנִי עַל כָּךְ אוֹ לִי וְאַפֵּי&#x27; לַאֲגַר נָטַר לָא דָּמֵי כְּלָל וְאִם פֵּירֵשׁ לָהּ כָּךְ מְקֻודֶּשֶׁת וְהַעֲרָמַת רִבִּית הוּא דְּהָוְיָא וְלֹא רִבִּית גָּמוּר דְּלָא קַץ לָהּ מִידִי וְלָא מִידֵי שְׁקַל מִינָּהּ וכ&quot;ש אִם מָחַל לָהּ כָּל הַמַּלְוֶה וְאָמַר לָהּ הִתְקַדְּשִׁי לִי בַּהֲנָאַת מְחִילָה זוֹ דְּהַשְׁתָּא הוּא דְּקָא יָהֵיב לָהּ הַךְ פְּרוּטָה דַּהֲנָאַת מִלְוֶה אֲבָל כִּי מְקַדֵּשׁ לָהּ בְּעִיקַּר הַמָּעוֹת לָאו מִידִי יָהֵיב לָהּ שֶׁכְּבָר הֵם בִּרְשׁוּתָהּ וְהֵם שֶׁלָּהּ:</div>
+          <div class="glose-fr">« Non, [l&#x27;enseignement] est nécessaire : il lui a accordé un délai » : pour son prêt, et lui a dit : « Sois consacrée par ce bénéfice, car tu aurais donné une peruta à quelqu&#x27;un pour qu&#x27;il me persuade de cela, ou à moi-même ; et même pour le salaire d&#x27;attente, il n&#x27;est pas du tout semblable. » S&#x27;il le lui a précisé ainsi, elle est consacrée. Il y a seulement une ruse d&#x27;intérêt, et non un intérêt véritable, car il ne lui a rien fixé, et il n&#x27;a rien pris d&#x27;elle. A fortiori s&#x27;il lui a remis tout le prêt et lui a dit : « Sois consacrée à moi par le bénéfice de cette remise » : c&#x27;est maintenant qu&#x27;il lui donne cette peruta du bénéfice du prêt. Mais quand il la consacre avec le capital, il ne lui donne rien, puisque ce capital est déjà en sa possession et lui appartient.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּאַרְווַח לָהּ זִימְנָא</b> פֵּי&#x27; בַּקּוּנְטְרֵס שֶׁהָיְתָה חַייֶּבֶת לוֹ וְנָתַן לָהּ זְמַן וְאָמַר לָהּ הִתְקַדְּשִׁי לִי בַּהֲנָאָה זוֹ שֶׁאַתְּ הָיִיתָ נוֹתֶנֶת לְאָדָם פְּרוּטָה שֶׁיְּפַיְּיסֵנִי עַל כָּךְ וְאִם פֵּירֵשׁ לָהּ כָּךְ מְקֻודֶּשֶׁת וְהַעֲרָמַת רִבִּית הוּא דְּהָוְיָא וְלֹא רִבִּית גָּמוּר דְּלָא קַץ לָהּ וְלָא מִידֵי שְׁקִיל מִינָּהּ וכ&quot;ש אִם מָחַל לָהּ כָּל הַמַּלְוֶה וְאָמַר לָהּ הִתְקַדְּשִׁי לִי בַּהֲנָאַת מְחִילָה זוֹ מְקֻודֶּשֶׁת אֲבָל כִּי מְקַדְּשָׁהּ בְּעִיקַּר הַמָּעוֹת לָאו מִידִי יָהֵיב לָהּ שֶׁכְּבָר הֵם שֶׁלָּהּ וּבִרְשׁוּתָהּ וּמַה שָׁפֵי&#x27; דְּרִבִּית קְצוּצָה לָא הָוֵי כֵּיוָן שֶׁאֵין הָאִשָּׁה נוֹתֶנֶת לְאִישׁ כְּלוּם לָא נְהִירָא כֵּיוָן שֶׁהוּא נוֹתֵן לָהּ זֶה פְּרוּטָה בְּקִידּוּשִׁין וְלֹא נָתַן לָהּ כְּלוּם הָוֵי כְּאִילּוּ נָתְנָה לוֹ פְּרוּטָה מַמָּשׁ וְהָוֵי רִבִּית גָּמוּר וְכִי הַהִיא (בּ&quot;מ דַּף סב:) דְּמָנֶה אֵין לִי חִטִּין בְּמָנֶה יֵשׁ לִי שַׁיָּיךְ לִקְרוֹת הַעֲרָמַת רִבִּית שֶׁמַּעֲרִים דְּלָא הָוֵי אֲגַר נְטַר לֵיהּ לָכֵן פר&quot;ת דְּאַייְרֵי הָכָא שֶׁהָיְתָה חַייֶּבֶת מָעוֹת לְאָדָם אַחֵר וְהִגִּיעַ זְמַנּוֹ לִפְרֹועַ וּבָא זֶה וְנוֹתֵן לַמַּלְוֶה פְּרוּטָה לְאַרְווֹחֵי לָהּ זִימְנָא וְקִידְּשָׁהּ בְּאוֹתָהּ הֲנָאָה וְאִם תֹּאמַר אַמַּאי אָסוּר לַעֲשׂוֹת כֵּן מִפְּנֵי הַעֲרָמַת רִבִּית וְהָא אָמַר בְּפֶרֶק אֵיזֶהוּ נֶשֶׁךְ (בָּבָא מְצִיעָא דַּף סט:) שָׁרִי לֵיהּ לְאִינִישׁ לְמֵימַר לְחַבְרֵיהּ שְׁקוֹל ד&#x27; זוּזֵי וְאוֹזֵפִי לִפְלוֹנִי זוּזֵי דְּלָא אָסְרָה תּוֹרָה אֶלָּא רִבִּית הַבָּאָה מִלֹּוֶה לְמַלְוֶה וי&quot;ל הַייְנוּ שֶׁאֵין הַלֹּוֶה נוֹתֵן כְּלוּם לַנּוֹתֵן אֲבָל אִם הָיָה נוֹתֵן הָיָה נִרְאֶה כִּשְׁלוּחוֹ וְאָסוּר דְּכִי נָמֵי אָמְרִינַן הָתָם בְּאֵיזֶהוּ נֶשֶׁךְ (שָׁם) שָׁרִי לֵיהּ לְאִינִישׁ לְמֵימַר לְחַבְרֵיהּ שְׁקוֹל ד&#x27; זוּזֵי וֶאֱמֹור לִפְלוֹנִי דְּלוֹזְפַן זוּזֵי הַייְנוּ כְּשֶׁאֵין הַמְקַבֵּל נוֹתֵן כְּלוּם לַמַּלְוֶה כִּי אִם הָיָה נוֹתֵן הָיָה נִרְאֶה כִּשְׁלוּחוֹ וְאָסוּר וא&quot;ת אַמַּאי מוֹקֵי לָהּ בְּאִרְוַוח לָהּ בִּתְחִילַּת הַלְווָאָה הָיָה יָכוֹל לְהַעֲמִיד דְּבַהֲנָאַת מִלְוֶה מְקֻודֶּשֶׁת כְּגוֹן שֶׁהַמְקַדֵּשׁ נוֹתֵן לַמַּלְוֶה פְּרוּטָה לְהַלְווֹת לָהּ מָעוֹת וּבְאוֹתָהּ פְּרוּטָה נִתְקַדְּשָׁה לוֹ וְי&quot;ל בַּהֲנָאַת מִלְוֶה מַשְׁמַע מִלְוֶה שֶׁהָיְתָה עָלָיו כְּבָר:</div>
+          <div class="glose-fr">« Il lui a accordé un délai » : Rachi explique : elle lui devait, et il lui a donné un délai et lui a dit : « Sois consacrée à moi par ce bénéfice, car tu aurais donné une peruta à quelqu&#x27;un pour qu&#x27;il me persuade de cela ». S&#x27;il le lui a dit ainsi, elle est consacrée. Il y a seulement une ruse d&#x27;intérêt, et non un intérêt véritable, car il ne lui a rien fixé et n&#x27;a rien pris d&#x27;elle. A fortiori s&#x27;il lui a remis tout le prêt et lui a dit « sois consacrée à moi par le bénéfice de cette remise » : elle est consacrée. Mais quand il la consacre avec le capital, il ne lui donne rien, puisque cela lui appartient déjà. Et ce que Rachi explique, que ce n&#x27;est pas un intérêt véritable puisque la femme ne donne rien à l&#x27;homme, ne semble pas juste. Car puisqu&#x27;il lui donne cette peruta en kiddouchin et qu&#x27;il ne lui a rien donné, c&#x27;est comme si elle lui avait donné une vraie peruta, et c&#x27;est de l&#x27;intérêt véritable. C&#x27;est comme dans Bava Metsia (62b) : « une mina de moi », « du blé, de ma mina de ...», où l&#x27;on peut parler de ruse d&#x27;intérêt, car il dissimule : ce n&#x27;est pas un salaire d&#x27;attente. C&#x27;est pourquoi Rabbénou Tam explique que le cas est celui où elle devait de l&#x27;argent à un autre homme, dont le terme de paiement est arrivé, et celui-ci donne au prêteur une peruta pour accorder un délai, et la consacre par ce bénéfice. Et si tu demandes : pourquoi est-il interdit de faire ainsi à cause de la ruse d&#x27;intérêt, alors qu&#x27;on a dit dans « Eizehou Neshe&#x27;h » (Bava Metsia 69b) qu&#x27;il est permis de dire à son prochain : « prends quatre zouz et prête à un tel » ? Car la Torah n&#x27;interdit que l&#x27;intérêt qui vient d&#x27;un prêteur à un emprunteur. On peut répondre que cela vaut quand l&#x27;emprunteur ne donne rien au donneur ; s&#x27;il donnait, il apparaîtrait comme son envoyé, et c&#x27;est interdit. Et si tu demandes : pourquoi la guemara l&#x27;établit-elle dans le cas où il a accordé un délai, alors qu&#x27;elle aurait pu établir que « par le bénéfice du prêt, elle est consacrée » dans le cas où celui qui consacre donne au prêteur une peruta pour lui prêter de l&#x27;argent, et qu&#x27;elle est consacrée par cette peruta ? On peut répondre : « bénéfice du prêt » désigne un prêt qui existe déjà à sa charge.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara retient un cas plus précis : l'homme a accordé un <b>délai</b> à la femme qui lui devait. Le bénéfice du délai est le don qui sert de kiddouchin. Il y a seulement ruse d'intérêt (<b>ha'arama</b>), car aucun intérêt n'a été fixé à l'avance.</p><p>Tossefot reprend l'explication de Rachi puis la conteste : puisque l'homme donne une peruta de bénéfice en kiddouchin sans rien recevoir de plus, c'est comme si la femme lui donnait une peruta, donc de l'intérêt direct. Rabbénou Tam établit le cas ailleurs : la femme devait à un tiers, et l'homme paie ce tiers pour accorder un délai à la femme.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 308" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah-k6b-s8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a766a"/></marker></defs>
+<rect x="0" y="0" width="740" height="308" fill="#fbfaf6"/>
+<text x="370" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b2b2b">Abayé : kiddouchin par un prêt, par le bénéfice du prêt</text>
+<rect x="20" y="40" width="340" height="80" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="190" y="58.76" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#7c3b2c">Par le prêt lui-même</text>
+<text x="190" y="75.80" text-anchor="middle" font-size="12" fill="#7c3b2c">pas de kiddouchin : un prêt est fait</text>
+<text x="190" y="92.84" text-anchor="middle" font-size="12" fill="#7c3b2c">pour être dépensé, l'argent est</text>
+<text x="190" y="109.88" text-anchor="middle" font-size="12" fill="#7c3b2c">déjà à elle (Rachi)</text>
+<rect x="380" y="40" width="340" height="80" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="550" y="58.76" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2e5c2c">Par le bénéfice du prêt</text>
+<text x="550" y="75.80" text-anchor="middle" font-size="12" fill="#2e5c2c">elle est consacrée,</text>
+<text x="550" y="92.84" text-anchor="middle" font-size="12" fill="#2e5c2c">mais c'est interdit :</text>
+<text x="550" y="109.88" text-anchor="middle" font-size="12" fill="#2e5c2c">ruse d'intérêt (ha'arama de ribit)</text>
+<line x1="550" y1="120" x2="550" y2="140" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k6b-s8)"/>
+<rect x="20" y="142" width="700" height="34" rx="5" fill="#fdf4e8" stroke="#c98b3a"/>
+<text x="370" y="163.32" text-anchor="middle" font-size="12" fill="#6b4a14">Quel est ce bénéfice ?</text>
+<line x1="240" y1="176" x2="190" y2="196" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k6b-s8)"/>
+<line x1="500" y1="176" x2="550" y2="196" stroke="#7a766a" stroke-width="1.6" marker-end="url(#ah-k6b-s8)"/>
+<rect x="20" y="198" width="340" height="92" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="190" y="222.76" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#7c3b2c">Hypothèse : "quatre pour cinq"</text>
+<text x="190" y="239.80" text-anchor="middle" font-size="12" fill="#7c3b2c">il prête 4, fait reconnaître 5, et</text>
+<text x="190" y="256.84" text-anchor="middle" font-size="12" fill="#7c3b2c">consacre par le 5e zouz : écartée,</text>
+<text x="190" y="273.88" text-anchor="middle" font-size="12" fill="#7c3b2c">intérêt véritable, et c'est le prêt même</text>
+<rect x="380" y="198" width="340" height="92" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="550" y="222.76" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2e5c2c">Conclusion : il lui accorde un délai</text>
+<text x="550" y="239.80" text-anchor="middle" font-size="12" fill="#2e5c2c">le délai qu'il lui laisse pour</text>
+<text x="550" y="256.84" text-anchor="middle" font-size="12" fill="#2e5c2c">rembourser est le don du kiddouchin ;</text>
+<text x="550" y="273.88" text-anchor="middle" font-size="12" fill="#2e5c2c">seulement ruse d'intérêt</text>
+</svg></div><div class="svg-cap">Abayé : le prêt lui-même ne consacre pas, le bénéfice du prêt consacre ; la guemara précise ce bénéfice.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רָבָא: ״הֵילָךְ מָנֶה עַל מְנָת שֶׁתַּחֲזִירֵהוּ לִי״ בְּמֶכֶר – לֹא קָנָה, בְּאִשָּׁה – אֵינָהּ מְקֻודֶּשֶׁת, בְּפִדְיוֹן הַבֵּן – אֵין בְּנוֹ פָּדוּי,</div>
+            <div class="fr"><p>Rava a dit : « Prends cette mina à condition de me la rendre » : dans la vente, il n&#x27;a pas acquis ; pour la femme, elle n&#x27;est pas consacrée ; pour le rachat du fils, son fils n&#x27;est pas racheté ;</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּמֶכֶר לֹא קָנָה</b> כְּגוֹן קַרְקַע דְּקי&quot;ל לְקַמָּן (קִידּוּשִׁין דַּף כו.) שֶׁהִיא נִקְנֶה בְּכֶסֶף אֵינוֹ נִקְנֶה בְּכָךְ דְּלָאו מִידִי יָהֵיב לֵיהּ:</div>
+          <div class="glose-fr">« Dans la vente il n&#x27;a pas acquis » : par exemple un terrain, dont nous tenons plus loin (Kiddouchin 26a) qu&#x27;il s&#x27;acquiert par l&#x27;argent : il n&#x27;est pas acquis ainsi, car il ne lui a rien donné.</div>
+        </div></div>
+    </details><details class="comm rosh">
+      <summary style="--c:#1d4ed8">⚖️ Rosh <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אָמַר רָבָא הֵילָךְ מָנֶה עַל מְנָת שֶׁתַּחֲזִירֵהוּ לִי בְּמֶכֶר לֹא קָנָה בְּאִשָּׁה אֵינָהּ מְקֻודֶּשֶׁת בְּפִדְיוֹן הַבֵּן אֵין בְּנוֹ פָּדוּי בִּתְרוּמָה יָצָא יְדֵי נְתִינָה וְאָסוּר לַעֲשׂוֹת כֵּן מִפְּנֵי שֶׁנִּרְאֶה כְּכֹהֵן הַמְסַיֵּיעַ בְּבֵית הַגְּרָנוֹת וְהָאָמַר רָבָא מַתָּנָה עַל מְנָת לְהַחֲזִיר שְׁמָהּ מַתָּנָה אֶלָּא אָמַר רַב אָשֵׁי בְּכֻולְּהוּ קָנֵי לְבַר מֵאִשָּׁה לְפִי שֶׁאֵין אִשָּׁה נִקְנֵית בַּחֲלִיפִין לְפִי שֶׁדֶּרֶךְ הוּא לְהַחֲזִיר הַסּוּדָר שֶׁמַּקְנִין בּוֹ הִילְכָּךְ אִי אָמְרַתְּ דְּקָנֵי אָתֵי לְמֵימַר אִשָּׁה נִקְנֵית בַּחֲלִיפִין לְפִיכָךְ אַפְקְעוּהָ רַבָּנָן לְקִידּוּשֵׁי אע&quot;ג דְּמִדְּאוֹרַיְיתָּא הָוְיָא מְקֻודֶּשֶׁת אֲמַר לֵיהּ הוּנָא מָר בְּרֵיהּ דְּרַב כָּהֲנָא לְרַב אָשֵׁי הָכִי אָמְרִינַן מִשְּׁמֵיהּ דְּרָבָא כְּוָותָךְ:</div>
+          <div class="glose-fr">Rava a dit : « Prends cette mina à condition de me la rendre » : dans la vente, il n&#x27;a pas acquis ; pour la femme, elle n&#x27;est pas consacrée ; pour le rachat du fils premier-né, son fils n&#x27;est pas racheté ; pour la terouma, il s&#x27;est acquitté de l&#x27;obligation de donner, et il est interdit de faire ainsi parce que cela ressemble à un cohen qui aide dans les aires de battage. Mais Rava n&#x27;a-t-il pas dit : un don à condition de restituer est appelé un don ? Rav Achi a donc dit : dans tous ces cas, il acquiert, sauf pour la femme, parce que la femme ne s&#x27;acquiert pas par l&#x27;échange (halifin) : l&#x27;usage est de rendre le foulard avec lequel on fait l&#x27;acquisition ; c&#x27;est pourquoi, si tu dis qu&#x27;elle acquiert, on viendrait à dire que la femme s&#x27;acquiert par l&#x27;échange. C&#x27;est pourquoi les sages ont annulé le kiddouchin, bien que, d&#x27;après la Torah, elle soit consacrée. Houna, fils de Rav Kahana, dit à Rav Achi : on dit ainsi au nom de Rava, comme toi.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rava enseigne qu'un objet donné à condition d'être rendu (<b>matana al menat leha'hzir</b>) ne réalise pas l'acquisition dans la vente, ni le kiddouchin, ni le rachat du fils premier-né, car l'argent n'a en réalité pas été donné. Le Rosh cite la suite de la guemara : Rav Achi dit que dans tous ces cas l'acquisition vaut, sauf pour le kiddouchin, parce qu'une femme ne s'acquiert pas par échange.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בִּתְרוּמָה – יָצָא יְדֵי נְתִינָה. וְאָסוּר לַעֲשׂוֹת כֵּן, מִפְּנֵי שֶׁנִּרְאֶה כְּכֹהֵן הַמְסַיֵּיעַ בְּבֵית הַגְּרָנוֹת.</div>
+            <div class="fr"><p>Pour la terouma, il s&#x27;est acquitté de l&#x27;obligation de donner, mais il est interdit de faire ainsi, car il paraît comme un cohen qui aide dans les aires de battage.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>יָצָא יְדֵי נְתִינָה</b> וּמוֹכְרָהּ לַכֹּהֲנִים וְהַדָּמִים שֶׁלּוֹ וּלְקַמָּן פָּרִיךְ מִמַּה נַפְשָׁךְ:</div>
+          <div class="glose-fr">« Il s&#x27;est acquitté de l&#x27;obligation de donner » : il la vend aux cohanim et l&#x27;argent est à lui. Plus loin, la guemara objecte : « De toute façon... ».</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאָסוּר לַעֲשׂוֹת כֵּן</b> לְפִי שֶׁבִּשְׂכַר זֶה יִתֵּן לוֹ שְׁאָר תְּרוּמוֹתָיו וְהָוֵי הַאי כֹּהֵן כְּקוֹנֶה תְּרוּמָה בִּשְׂכָרוֹ וּמְסַיֵּיעַ בְּבֵית הַגְּרָנוֹת שֶׁיִּתְּנוּ לוֹ הַתְּרוּמָה וּתְנַן בִּבְכוֹרוֹת (דַּף כו:) כֹּהֲנִים הַמְסַייְּעִים בְּבֵית הַגְּרָנוֹת אֵין נוֹתְנִין לָהֶם תְּרוּמָה וּמַעַשְׂרוֹת בִּשְׂכָרָן וְאִם עָשׂוּ כֵּן חֲלָלוֹ וַעֲלֵיהֶם הַכָּתוּב אוֹמֵר (מַלְאָכִי ב׳:ח׳) שֶׁחָתַם בְּרִית הַלֵּוִי:</div>
+          <div class="glose-fr">« Et il est interdit de faire ainsi » : parce qu&#x27;en échange il lui donnera ses autres teroumot, et ce cohen sera comme celui qui acquiert la terouma en salaire, et aide dans les aires de battage pour qu&#x27;on lui donne la terouma. Nous avons appris dans Be&#x27;horot (26b) : les cohanim qui aident dans les aires de battage, on ne leur donne pas la terouma et les dîmes en salaire, et s&#x27;ils l&#x27;ont fait, ils ont profané, et d&#x27;eux le verset dit (Mala&#x27;hie 2,8) : « vous avez corrompu l&#x27;alliance de Lévi ».</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Pour la terouma, l'Israélite s'est acquitté de l'obligation de la donner, car le cohen qui l'a reçue peut en disposer comme il l'entend. Mais il est interdit de procéder ainsi : le cohen recevant de la terouma en échange de la restitution ressemble à celui qui aide dans les aires de battage pour recevoir sa part, ce que les sages interdisent.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַאי קָסָבַר רָבָא? אִי קָסָבַר מַתָּנָה עַל מְנָת לְהַחֲזִיר שְׁמָהּ מַתָּנָה – אֲפִילּוּ כּוּלְּהוּ נַמֵּי, וְאִי קָסָבַר לֹא שְׁמָהּ מַתָּנָה – אֲפִילּוּ תְּרוּמָה נָמֵי לָא.</div>
+            <div class="fr"><p>Quelle est l&#x27;opinion de Rava ? S&#x27;il pense qu&#x27;un don à condition de restituer est appelé un don, alors tous aussi [valent] ; et s&#x27;il pense qu&#x27;il n&#x27;est pas appelé don, même la terouma ne vaut pas.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara objecte à Rava une incohérence : ou bien le don avec restitution est un vrai don, et alors la vente, le kiddouchin et le rachat valent comme la terouma ; ou bien il n'est pas un don, et alors la terouma ne vaut pas non plus.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְעוֹד, הָא רָבָא הוּא דְּאָמַר: מַתָּנָה עַל מְנָת לְהַחֲזִיר שְׁמָהּ מַתָּנָה! דְּאָמַר רָבָא: ״הֵילָךְ אֶתְרוֹג זֶה עַל מְנָת שֶׁתַּחְזִירֵהוּ לִי״ – נְטָלוֹ וְהֶחֱזִירוֹ – יָצָא. וְאִם לָאו – לֹא יָצָא!</div>
+            <div class="fr"><p>Et de plus, c&#x27;est Rava lui-même qui dit : un don à condition de restituer est appelé un don ! Car Rava a dit : « Prends cet étrog à condition de me le rendre » : s&#x27;il l&#x27;a pris et l&#x27;a rendu, il s&#x27;est acquitté ; sinon, il ne s&#x27;est pas acquitté !</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא הֶחְזִירוֹ לֹא יָצָא</b> דַּהֲוָה לֵיהּ גֶּזֶל לְמַפְרֵעַ:</div>
+          <div class="glose-fr">« S&#x27;il ne l&#x27;a pas rendu, il ne s&#x27;est pas acquitté » : car c&#x27;est un vol rétroactif.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֹא הֶחְזִירוֹ לֹא יָצָא</b> וא&quot;ת אַמַּאי לֹא יָצָא הָא לָא הֲוָה תְּנַאי כָּפוּל וְי&quot;ל דְּאִיכָּא תְּנַאי דְּלָא בָּעֵי כָּפוּל כְּגוֹן הָכָא שֶׁהָיָה דַּעְתּוֹ שֶׁיְּבָרֵךְ חֲבֵירוֹ עַל אֶתְרוֹג שֶׁלּוֹ וּגְדוֹלָה מִזֹּאת אָמְרוּ (לְקַמָּן קִידּוּשִׁין דַּף מט: וְשָׁם) בְּהַהוּא גַּבְרָא דְּזַבֵּין נְכָסֶיהָ אַדַּעְתָּא לְמִיסַּק לְאַרְעָא דְיִשְׂרָאֵל וְלֹא פֵּירֵשׁ וְלָא מִידֵי וְסוֹף לָא סָלֵיק בָּעֵי לְמִיהְדַּר וְאָמַר רַב הוּנָא הָוֵי דְּבָרִים שֶׁבַּלֵּב וְאֵינָם דְּבָרִים א&quot;כ מַשְׁמַע דַּוְקָא מִשּׁוּם דְּלָא פֵּירֵשׁ אֲבָל אִם פֵּירֵשׁ הָוֵי תְּנַאי אע&quot;ג דְּלָא כַּפְלֵיהּ וה&quot;נ אִיתָא בְּמִי שֶׁמֵּת (ב&quot;ב דַּף קמז.) גַּבֵּי ש&quot;מ שֶׁאָמַר כִּמְדֻומֶּה אֲנִי שֶׁאִשְׁתִּי מְעֻובֶּרֶת אֲבָל עַכְשָׁיו שֶׁאֵינָהּ מְעֻובֶּרֶת נְכָסַי לִפְלוֹנִי לְסוֹף נִתְגַּלָּה שֶׁהָיְתָה מְעֻובֶּרֶת וְקָאָמַר הָתָם דְּלָא הָוֵי מַתָּנָה מִשּׁוּם דְּמֵעִיקָּרָא לֹא הָיָה בְּדַעְתּוֹ לְיִתְּנֵם לְאוֹתוֹ פְּלוֹנִי אִם הָיְתָה אִשְׁתּוֹ מְעֻובֶּרֶת ה&quot;נ לָא בָּעֵינַן תְּנַאי כָּפוּל כֵּיוָן שֶׁהָיָה בְּדַעְתּוֹ לְכָךְ וא&quot;ת וּבְלֹא הֶחֱזִירוֹ אַמַּאי לֹא יָצָא וְהָא הָוֵי תְּנַאי וּמַעֲשֶׂה בְּדָבָר אֶחָד וְהַתְּנַאי בָּטֵל כִּדְאָמְרִי&#x27; הָתָם (גִּיטִּין דַּף עה.) מִכְּדֵי כָּל תְּנַאי מֵהֵיכָא יָלְפִינַן מִתְּנַאי בְּנֵי גָד וּבְנֵי רְאוּבֵן וְהָתָם תְּנַאי בְּדָבָר אֶחָד וּמַעֲשֶׂה בְּדָבָר אַחֵר הֲוָה וי&quot;ל הָתָם לָא הָוֵי מַסְּקָנָא הָכִי וְאִיכָּא שִׁינּוּיֵי אַחֲרֵינִי א&quot;נ י&quot;ל הָא דְּלָא מְהַנֵּי תְּנַאי וּמַעֲשֶׂה בְּדָבָר אֶחָד הַייְנוּ כְּשֶׁשְּׁנֵיהֶם סוֹתְרִים זֶה אֶת זֶה כִּי הַהִיא דְּעַל מְנָת שֶׁתַּחְזִירִי לִי אֶת הַנְּיָיר דְּפֶרֶק מִי שֶׁאֲחָזוֹ (שָׁם) דְּהָתָם ס&quot;ד דְּכָל הָאוֹמֵר ע&quot;מ לָאו כְּאוֹמֵר מֵעַכְשָׁיו דָּמֵי וְנִמְצָא שֶׁאֵינָהּ מְגֹורֶשֶׁת עַד שֶׁמְּחַזֶּרֶת הַנְּייָר וְאָז אֵינוֹ שֶׁלָּהּ אֲבָל הָכָא סָבַר דְּכָל הָאוֹמֵר עַל מְנָת כְּאוֹמֵר מֵעַכְשָׁיו דָּמֵי:</div>
+          <div class="glose-fr">« S&#x27;il ne l&#x27;a pas rendu, il ne s&#x27;est pas acquitté » : et si tu demandes : pourquoi ne s&#x27;est-il pas acquitté, puisque la condition n&#x27;est pas double ? Il faut répondre qu&#x27;il y a une condition qui n&#x27;a pas besoin d&#x27;être doublée, comme ici où son intention était que son compagnon prononce la bénédiction sur son étrog. Et plus grand que cela, ils ont dit (plus loin, Kiddouchin 49b) de celui qui vendit ses biens en vue de monter en terre d&#x27;Israël sans l&#x27;expliquer, et qui n&#x27;est finalement pas monté et veut revenir : Rav Houna dit que ce sont des paroles du cœur, qui ne sont pas des paroles. Il s&#x27;ensuit que c&#x27;est seulement parce qu&#x27;il n&#x27;a pas précisé ; mais s&#x27;il avait précisé, cela aurait été une condition même sans la doubler. De même dans « Mi Chemet » (Bava Batra 147a), à propos de celui qui est sur le point de mourir et dit : « Il me semble que ma femme est enceinte, mais maintenant qu&#x27;elle ne l&#x27;est pas, mes biens sont à un tel », et il fut révélé qu&#x27;elle était enceinte. La guemara dit que ce n&#x27;est pas un don, parce qu&#x27;au départ il n&#x27;avait pas l&#x27;intention de les donner à ce tel si sa femme était enceinte. De même ici, on n&#x27;a pas besoin d&#x27;une condition doublée, puisque telle était son intention. Et si tu demandes : et s&#x27;il ne l&#x27;a pas rendu, pourquoi ne s&#x27;est-il pas acquitté, puisque c&#x27;est une condition et un acte sur une seule chose, et que la condition est nulle, comme nous disons dans Guittin (75a) : d&#x27;où apprenons-nous toutes les conditions ? Des conditions des fils de Gad et des fils de Réouven. Et là la condition portait sur une chose et l&#x27;acte sur une autre. On peut répondre : là, la conclusion n&#x27;est pas ainsi, et il y a d&#x27;autres réponses. Ou bien on peut dire : le principe « condition et acte sur une seule chose » ne fonctionne que si les deux se contredisent, comme dans le cas « à condition que tu me rendes le papier » (Guittin 75a), où l&#x27;on pensait que celui qui dit « à condition que » ne ressemble pas à celui qui dit « dès maintenant », et où elle n&#x27;est pas divorcée tant qu&#x27;elle n&#x27;a pas rendu le papier, et alors il n&#x27;est plus à elle. Mais ici, il pensait que celui qui dit « à condition que » est comme celui qui dit « dès maintenant ».</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְאִם לָאו לֹא יָצָא</b> וְהָא דְּאָמַר בְּמַסֶּכֶת סֻוכָּה (דַּף מא:) אֶתְרוֹג הָיָה לוֹ לר&quot;ג נְטָלוֹ ר&#x27; יְהוֹשֻׁעַ וְיָצָא בּוֹ וּנְתָנוֹ לר&quot;ע וְיָצָא בּוֹ ר&quot;ע וְהֶחֱזִיר לר&quot;ג וְדָיְיקִי&#x27; מִינָּהּ מַתָּנָה עַל מְנָת לְהַחֲזִיר שְׁמָהּ מַתָּנָה אע&quot;פ שַׂר&#x27; יְהוֹשֻׁעַ לֹא הֶחֱזִירוֹ לר&quot;ג דַּעְתּוֹ שֶׁל ר&quot;ג הָיָה לְכָךְ שֶׁלֹּא הָיָה חוֹשֵׁשׁ אֶלָּא שֶׁיַּחֲזֹור לְיָדוֹ אַחַר שֶׁיָּצְאוּ כֻּולָּם:</div>
+          <div class="glose-fr">« Et sinon, il ne s&#x27;est pas acquitté » : et ce que dit le traité Souka (41b) : Rabban Gamliel avait un étrog, Rabbi Yehochoua le prit et s&#x27;en acquitta, le donna à Rabbi Akiva qui s&#x27;en acquitta, et il le rendit à Rabban Gamliel ; on en déduit qu&#x27;un don à condition de restituer est appelé un don, bien que Rabbi Yehochoua ne l&#x27;ait pas rendu à Rabban Gamliel : l&#x27;intention de Rabban Gamliel était qu&#x27;il ne se souciait que de le récupérer une fois que tous s&#x27;en seraient acquittés.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Seconde objection à Rava : il dit lui-même que le don à condition de restituer est appelé un don. Exemple de l'étrog : on le donne à quelqu'un pour qu'il s'acquitte de la mitsva, à condition de le rendre. S'il l'a rendu, il s'est acquitté ; sinon, non.</p><p>Tossefot examine la condition en détail : doit-elle être doublée ? La règle de la condition (<b>tenai kafoul</b>) a des exceptions quand l'intention est claire. Il cite aussi l'épisode de Rabban Gamliel et Rabbi Yehochoua dans Souka.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא אָמַר רַב אָשֵׁי: בְּכֻולְּהוּ קָנֵי לְבַר מֵאִשָּׁה, לְפִי שֶׁאֵין אִשָּׁה נִקְנֵית בַּחֲלִיפִין. אֲמַר לֵיהּ רַב הוּנָא מָר בְּרֵיהּ דְּרַב נְחֶמְיָה לְרַב אָשֵׁי: הָכִי אָמְרִינַן מִשְּׁמֵיהּ דְּרָבָא כְּוָותָיךְ.</div>
+            <div class="fr"><p>Mais Rav Achi a dit : dans tous ces cas, il acquiert, sauf pour la femme, parce que la femme ne s&#x27;acquiert pas par échange. Houna, fils de Rav Nehémie, dit à Rav Achi : on dit ainsi au nom de Rava, comme toi.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֶלָּא אָמַר רַב אָשֵׁי</b> וַדַּאי בְּכוּלְּהוּ אָמַר רָבָא דְּקוֹנֶה לְבַר מֵאִשָּׁה כּוּ&#x27; וְהַאי לַחֲלִיפִין דָּמֵי כְּקִנְיַן בְּסוּדָר דְּאֵינוֹ אֶלָּא אוֹחֵז בָּהּ וּמַחֲזִירוֹ:</div>
+          <div class="glose-fr">« Mais Rav Achi a dit » : assurément, Rava a dit que dans tous ces cas il acquiert, sauf la femme. Et ce don-ci est semblable à l&#x27;échange, comme l&#x27;acquisition par le foulard (kinyan sudar), où l&#x27;on tient la chose et on la rend.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לְבַר מֵאִשָּׁה לְפִי שֶׁאֵין אִשָּׁה נִקְנֵית בַּחֲלִיפִין</b> וא&quot;ת בְּמַאי דָּמוּ לַחֲלִיפִין אִי מִשּׁוּם דַּחֲלִיפִין הָדְרִי הָא בַּחֲלִיפִין גּוּפַיְיהוּ אָמַר בִּנְדָרִים פֶּרֶק הַשֻּׁותָּפִין (נְדָרִים דַּף מח:) דְּאִי תְּפִיס לָהּ מִיתַּפְסִי וְנִרְאֶה לר&quot;י דְּלָאו חֲלִיפִין הוּא וּמִדְּרַבָּנָן הוּא דְּלָא הָווּ קִידּוּשִׁין לְפִי שֶׁדֶּרֶךְ הָעוֹלָם לְהַחֲזִיר חֲלִיפִין וְהָנֵי כְּעֵין חֲלִיפִין דָּמֵי וְאָתֵי לְמֵימַר אִשָּׁה נִקְנֵית בַּחֲלִיפִין הִילְכָּךְ אַפְקְעִינְהוּ רַבָּנָן לְקִידּוּשִׁין מִינָּהּ תֵּדַע דְּאִי כַּחֲלִיפִין דָּמוּ בְּמֶכֶר הֵיאַךְ קָנָה בְּהַאי מָנֶה הָא אֵין מַטְבֵּעַ נַעֲשֶׂה חֲלִיפִין וְכֵן בְּפִדְיוֹן הַבֵּן לָמָּה יְהֵא בְּנוֹ פָּדוּי בַּחֲלִיפִין הֲלֹא כֶּסֶף ה&#x27; שְׁקָלִים כְּתִיב וְלֹא חֲלִיפִין:</div>
+          <div class="glose-fr">« Sauf pour la femme, parce que la femme ne s&#x27;acquiert pas par échange » : et si tu demandes : en quoi ressemblent-ils à l&#x27;échange ? Si c&#x27;est parce que l&#x27;échange est rendu, pour l&#x27;échange lui-même on dit dans Nedarim, chapitre « Hachoutafin » (48b) que s&#x27;il l&#x27;a saisi, il est saisi. Rabbénou Yitz&#x27;hak pense que ce n&#x27;est pas un échange, et que c&#x27;est seulement de rabbanan que ce ne sont pas des kiddouchin, parce que l&#x27;usage est de rendre les échanges, et que ces cas ressemblent à un échange ; on viendrait à dire que la femme s&#x27;acquiert par échange, c&#x27;est pourquoi les sages ont annulé les kiddouchin. Sache-le : s&#x27;ils ressemblaient à un échange dans la vente, comment aurait-il acquis par cette mina, puisque la monnaie ne devient pas un échange ? De même pour le rachat du fils, pourquoi son fils serait-il racheté par échange, alors qu&#x27;il est écrit « cinq sicles d&#x27;argent » et non un échange ?</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rav Achi lit Rava ainsi : le don à condition de restituer est un vrai don dans tous les cas, donc l'acquisition est effective. Le kiddouchin fait exception, et non par la Torah : les sages l'ont annulé parce que la restitution ressemble à un échange (<b>'halifin</b>) et que la femme ne s'acquiert pas par échange.</p><p>Tossefot, suivant Rabbénou Yitz'hak, y voit une mesure rabbinique : l'usage est de rendre les objets d'échange, et l'on aurait pu croire qu'on acquiert la femme par échange.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 322" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="322" fill="#fbfaf6"/>
+<text x="370" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b2b2b">Don "à condition de me le rendre" : les deux lectures de Rava</text>
+<rect x="20" y="40" width="160" height="40" rx="5" fill="#dcd7c8" stroke="#b6b2a4"/>
+<text x="100" y="64.32" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">Cas</text>
+<rect x="190" y="40" width="260" height="40" rx="5" fill="#f2e2dd" stroke="#a75d4b"/>
+<text x="320" y="64.32" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#7c3b2c">Rava, première version</text>
+<rect x="460" y="40" width="260" height="40" rx="5" fill="#e2efe0" stroke="#5d8f5b"/>
+<text x="590" y="64.32" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2e5c2c">Rav Achi (et Houna au nom de Rava)</text>
+<rect x="20" y="88" width="160" height="34" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="100" y="109.32" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">Vente</text>
+<rect x="190" y="88" width="260" height="34" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="320" y="109.32" text-anchor="middle" font-size="12" fill="#3a3a3a">pas d'acquisition</text>
+<rect x="460" y="88" width="260" height="34" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="590" y="109.32" text-anchor="middle" font-size="12" fill="#3a3a3a">il acquiert</text>
+<rect x="20" y="128" width="160" height="34" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="100" y="149.32" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">Femme</text>
+<rect x="190" y="128" width="260" height="34" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="320" y="149.32" text-anchor="middle" font-size="12" fill="#3a3a3a">pas consacrée</text>
+<rect x="460" y="128" width="260" height="34" rx="5" fill="#e3ecf5" stroke="#4f78a8"/>
+<text x="590" y="149.32" text-anchor="middle" font-size="12" fill="#2c4a6e">pas consacrée</text>
+<rect x="20" y="168" width="160" height="34" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="100" y="189.32" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">Rachat du fils</text>
+<rect x="190" y="168" width="260" height="34" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="320" y="189.32" text-anchor="middle" font-size="12" fill="#3a3a3a">pas racheté</text>
+<rect x="460" y="168" width="260" height="34" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="590" y="189.32" text-anchor="middle" font-size="12" fill="#3a3a3a">racheté</text>
+<rect x="20" y="208" width="160" height="34" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="100" y="229.32" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">Terouma</text>
+<rect x="190" y="208" width="260" height="34" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="320" y="229.32" text-anchor="middle" font-size="12" fill="#3a3a3a">quitte, mais interdit</text>
+<rect x="460" y="208" width="260" height="34" rx="5" fill="#ffffff" stroke="#c9c5b6"/>
+<text x="590" y="229.32" text-anchor="middle" font-size="12" fill="#3a3a3a">quitte</text>
+<rect x="20" y="252" width="700" height="52" rx="5" fill="#fdf4e8" stroke="#c98b3a"/>
+<text x="370" y="273.80" text-anchor="middle" font-size="12" fill="#6b4a14">Objection à la première version : un don à condition de rendre est un don (étrog),</text>
+<text x="370" y="290.84" text-anchor="middle" font-size="12" fill="#6b4a14">Rav Achi : la femme seule fait exception, elle ne s'acquiert pas par échange ('halifin).</text>
+</svg></div><div class="svg-cap">Les quatre cas de Rava (vente, femme, rachat du fils, terouma) selon la première version et selon Rav Achi.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רָבָא: ״תֵּן מָנֶה לִפְלוֹנִי</div>
+            <div class="fr"><p>Rava a dit : « Donne une mina à un tel</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Début d'un nouvel enseignement de Rava, qui se poursuit à la page suivante : le cas où l'on demande à quelqu'un de remettre de l'argent à un tiers.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Kiddushin_6a.html">&lsaquo; Kiddushin 6a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Kiddushin_7a.html">Kiddushin 7a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schémas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage sélectionné :\n« '+s+' »\n'):'\nPassage concerné :\n\n')+'\nCorrection proposée :\n\n\n— envoyé depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<p id="credit-texte" style="text-align:center;font-size:.76rem;color:#78716c;margin:6px auto 18px;max-width:640px;line-height:1.5">
+Texte hébreu et araméen vocalisé : édition numérique William Davidson du Talmud Koren Noé, via
+<a href="https://www.sefaria.org" style="color:#78716c">Sefaria</a> (licence CC BY-NC). Traduction française, notes et schémas : Chiourim BA (licence CC BY 4.0).</p>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>

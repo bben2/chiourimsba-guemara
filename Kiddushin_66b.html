@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kiddushin 66b — Le mikvé de Diskim, la parabole du kohen disqualifié, et la règle « le fils suit le mâle »</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Kiddushin 66b — Le mikvé de Diskim, la parabole du kohen disqualifié, et la règle « le fils suit le mâle »</h1>
+    <div class="ref">Kiddushin 66b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Kiddushin_66a.html">&lsaquo; Kiddushin 66a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Kiddushin_67a.html">Kiddushin 67a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> La guemara cite la baraïta de Rabbi Chimon sur le mikvé de Diskim à Yavné, découvert incomplet après coup : Rabbi Tarfon (ne pas le déclarer incomplet par doute) et Rabbi Akiva (ne pas déclarer pur par doute) s&#x27;opposent, chacun avec une parabole prise au service de l&#x27;autel. Rabbi Akiva établit sa comparaison par deux critères (un seul témoin, disqualification dans le corps même) et Rabbi Tarfon se rallie.</p><p>La guemara examine ensuite dans quel cas un témoin unique est cru (Rav Yehouda : le kohen se tait ; Abaye : « enlève ton vêtement et montre »), puis cherche les sources qui valident le service du fils de divorcée et du &#x27;halal (Chmouel, son père, Rabbi Yanaï) et invalide celui du ba&#x27;al moum. Enfin débute la michna sur la lignée de l&#x27;enfant : il suit le mâle, le parent déficient, ou la mère, selon le cas.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 310" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6a6a6a"/></marker></defs><rect x="0" y="0" width="740" height="310" fill="#fbfaf6"/><text x="370" y="24" text-anchor="middle" font-size="16" font-weight="bold" fill="#2b2b2b">Le mikvé de Diskim : Rabbi Tarfon contre Rabbi Akiva</text><rect x="20" y="40" width="700" height="46" rx="5" fill="#e7e9f2" stroke="#7a86a8"/><text x="370" y="60" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2f3a55">Question : un témoin vient dire, après coup, que le mikvé de Diskim était incomplet (moins de 40 se'a)</text><text x="370" y="75" text-anchor="middle" font-size="11" fill="#2f3a55">Les immersions faites avant la mesure sont-elles valides ?</text><rect x="20" y="105" width="340" height="91" rx="5" fill="#e0eee0" stroke="#5f9a63"/><text x="190" y="125" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2d5a31">Rabbi Tarfon : taher</text><text x="190" y="140" text-anchor="middle" font-size="11" fill="#2d5a31">Le mikvé est en 'hazaka d'être entier</text><text x="190" y="155" text-anchor="middle" font-size="11" fill="#2d5a31">on ne le déclare pas incomplet par doute</text><text x="190" y="170" text-anchor="middle" font-size="11" fill="#2d5a31">Parabole : fils de divorcée / de 'halutsa</text><text x="190" y="185" text-anchor="middle" font-size="11" fill="#2d5a31">le service déjà accompli reste valable</text><rect x="380" y="105" width="340" height="91" rx="5" fill="#f2e2dd" stroke="#a75d4b"/><text x="550" y="125" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#7c3b2c">Rabbi Akiva : metamé</text><text x="550" y="140" text-anchor="middle" font-size="11" fill="#7c3b2c">L'homme est en 'hazaka d'être impur</text><text x="550" y="155" text-anchor="middle" font-size="11" fill="#7c3b2c">on ne le déclare pas pur par doute</text><text x="550" y="170" text-anchor="middle" font-size="11" fill="#7c3b2c">Parabole : kohen ba'al moum</text><text x="550" y="185" text-anchor="middle" font-size="11" fill="#7c3b2c">le service déjà accompli est invalide</text><line x1="190" y1="100" x2="190" y2="104" stroke="#6a6a6a" stroke-width="1.6" marker-end="url(#ar)"/><line x1="550" y1="100" x2="550" y2="104" stroke="#6a6a6a" stroke-width="1.6" marker-end="url(#ar)"/><rect x="20" y="218" width="700" height="76" rx="5" fill="#f6efd6" stroke="#b59a3c"/><text x="370" y="238" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#6a5716">Rabbi Akiva compare le mikvé au ba'al moum par deux critères</text><text x="370" y="253" text-anchor="middle" font-size="11" fill="#6a5716">1) la disqualification vient d'un seul témoin   2) elle se trouve dans le corps lui-même</text><text x="370" y="268" text-anchor="middle" font-size="11" fill="#6a5716">Le fils de divorcée est disqualifié par deux témoins et par sa mère : il ne prouve rien</text><text x="370" y="283" text-anchor="middle" font-size="11" fill="#6a5716">Rabbi Tarfon : « Quiconque se sépare de toi se sépare de la vie »</text></svg></div>
+          <figcaption>Le mikvé de Diskim : Rabbi Tarfon et Rabbi Akiva, leurs paraboles et la conclusion (Kiddouchin 66b).</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מְנָא אֲמִינָא לַהּ, דִּתְנַן: אָמַר רַבִּי שִׁמְעוֹן: מַעֲשֶׂה בִּמְגוֹרָה שֶׁל דִּסְקִים בְּיַבְנֶה שֶׁהָיְתָה עוֹמֶדֶת בְּחֶזְקַת שְׁלֵימָה, וּמְדָדוֹ וְנִמְצֵאת חֲסֵירָה –</div>
+            <div class="fr"><p>D&#x27;où est-ce que je dis cela ? Car nous avons appris : Rabbi Chimon a dit : Il y eut un cas à Yavné d&#x27;un réservoir de Diskim qui se trouvait en &#x27;hazaka d&#x27;être complet ; on le mesura et on le trouva incomplet.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מְנָא אֲמִינָא לַהּ</b> דְּאֵין עֵד אֶחָד נֶאֱמָן בִּדְבַר עֶרְוָה לִפְסוֹל וַאֲפִילּוּ אֵין לוֹ מַכְחִישׁ:</div>
+          <div class="glose-fr">« D&#x27;où est-ce que je dis cela » : qu&#x27;un seul témoin n&#x27;est pas cru en matière d&#x27;arayot pour disqualifier, même si personne ne le contredit.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מְגוּרָה</b> מְגוֹרַת מַיִם כְּמִין בְּרִיכוֹת מַיִם כִּדְאָמַר בְּבָבָא בָּתְרָא (דַּף סז.) לֹא מָכַר אֶת הַמְּגוּרוֹת שֶׁל מַיִם:</div>
+          <div class="glose-fr">« Réservoir » : un réservoir d&#x27;eau, comme des bassins d&#x27;eau, comme il est dit dans Bava Batra (67a) : « Il n&#x27;a pas vendu les réservoirs d&#x27;eau ».</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁל דִּיסְקִים</b> שֵׁם אָדָם אוֹ שֵׁם מָקוֹם שֶׁבְּיַבְנֶה:</div>
+          <div class="glose-fr">« De Diskim » : nom d&#x27;un homme ou nom d&#x27;un lieu à Yavné.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בְּחֶזְקַת שְׁלֵימָה</b> אַרְבָּעִים סְאָה:</div>
+          <div class="glose-fr">« En &#x27;hazaka d&#x27;être complet » : quarante se&#x27;a.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara cherche la source de la règle selon laquelle un témoin unique n'est pas cru pour établir un défaut de lignée : la baraïta de Rabbi Chimon sur le mikvé de Diskim. Un mikvé doit contenir <b>quarante se'a</b> d'eau ; celui-ci était réputé complet (<b>'hazaka</b>, présomption fondée sur l'état antérieur). Après coup, on le mesure et on le trouve incomplet : que dire des immersions faites auparavant ?</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כָּל טְהָרוֹת שֶׁנַּעֲשׂוּ עַל גַּבָּהּ הָיָה רַבִּי טַרְפוֹן מְטַהֵר, וְרַבִּי עֲקִיבָא מְטַמֵּא. אָמַר רַבִּי טַרְפוֹן: מִקְוֶה זֶה בְּחֶזְקַת שָׁלֵם הוּא עוֹמֵד, מִסָּפֵק אַתָּה בָּא לְחַסְּרוֹ – אַל תְּחַסְּרֶנּוּ מִסָּפֵק. אָמַר רַבִּי עֲקִיבָא: אָדָם זֶה בְּחֶזְקַת טָמֵא הוּא עוֹמֵד, מִסָּפֵק אַתָּה בָּא לְטַהֲרוֹ – אַל תְּטַהֲרֶנּוּ מִסָּפֵק.</div>
+            <div class="fr"><p>Toutes les puretés rituelles qui avaient été faites sur lui, Rabbi Tarfon les déclarait pures et Rabbi Akiva impures. Rabbi Tarfon dit : Ce mikvé se trouve en &#x27;hazaka d&#x27;être complet ; c&#x27;est par doute que tu viens le déclarer incomplet : ne le déclare pas incomplet par doute.</p><p>Rabbi Akiva dit : Cet homme se trouve en &#x27;hazaka d&#x27;être impur ; c&#x27;est par doute que tu viens le purifier : ne le purifie pas par doute.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָיָה רַבִּי טַרְפוֹן מְטַהֵר</b> דְּאָמַר הַשְׁתָּא הוּא דְּחָסֵר וּבְשָׁעָה שֶׁטָּבְלוּ בָּהּ אָדָם וְכֵלִים שְׁלֵימָה הָיְתָה:</div>
+          <div class="glose-fr">« Rabbi Tarfon déclarait pures » : car il dit : c&#x27;est maintenant qu&#x27;il est devenu incomplet, et à l&#x27;heure où l&#x27;homme et les ustensiles s&#x27;y sont immergés, il était complet.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מְטַמֵּא</b> דְּלָא יָדְעִינַן מֵאֵימַת חֲסֵרָה וְנִמְצָא שֶׁאֵינָהּ טְבִילָה:</div>
+          <div class="glose-fr">« Impures » : car nous ne savons pas depuis quand il est incomplet, et il se trouve que ce n&#x27;était pas une immersion.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Les deux Sages s'appuient sur une <b>'hazaka</b> différente. Pour Rabbi Tarfon, c'est la présomption du mikvé (complet) qui l'emporte : on ne peut pas affirmer qu'il était déjà incomplet. Pour Rabbi Akiva, c'est la présomption de la personne (impure avant l'immersion) : la purification n'est pas établie.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַבִּי טַרְפוֹן: מָשָׁל לְעוֹמֵד וּמַקְרִיב עַל גַּבֵּי הַמִּזְבֵּחַ, וְנוֹדַע שֶׁהוּא בֶּן גְּרוּשָׁה אוֹ בֶּן חֲלוּצָה, שֶׁעֲבוֹדָתוֹ כְּשֵׁירָה. אָמַר רַבִּי עֲקִיבָא: מָשָׁל לְעוֹמֵד וּמַקְרִיב עַל גַּבֵּי הַמִּזְבֵּחַ וְנוֹדַע שֶׁהוּא בַּעַל מוּם, שֶׁעֲבוֹדָתוֹ פְּסוּלָה.</div>
+            <div class="fr"><p>Rabbi Tarfon dit : Cela ressemble à quelqu&#x27;un qui se tient et offre sur l&#x27;autel, et l&#x27;on apprend qu&#x27;il est fils de divorcée ou fils de &#x27;halutsa : son service est casher. Rabbi Akiva dit : Cela ressemble à quelqu&#x27;un qui se tient et offre sur l&#x27;autel, et l&#x27;on apprend qu&#x27;il est ba&#x27;al moum : son service est passoul.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁעֲבוֹדָתוֹ</b> שֶׁעָבַד כְּבָר כְּשֵׁירָה לְקַמָּן יָלֵיף לָהּ:</div>
+          <div class="glose-fr">« Son service » : qu&#x27;il a déjà accompli est casher ; plus loin on l&#x27;apprend.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בַּעַל מוּם שֶׁעֲבוֹדָתוֹ</b> שֶׁעָבַד כְּבָר פְּסוּלָה וַאֲפִילּוּ הָיָה שׁוֹגֵג לְקַמָּן יָלֵיף לָהּ:</div>
+          <div class="glose-fr">« Ba&#x27;al moum, son service » : qu&#x27;il a déjà accompli est passoul, même s&#x27;il était par erreur ; plus loin on l&#x27;apprend.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">אָמַר רַבִּי טַרְפוֹן מָשָׁל לְעוֹמֵד וּמַקְרִיב עַל גַּבֵּי הַמִּזְבֵּחַ. וא&quot;ת מַאי מָשָׁל הוּא זֶה הֲרֵי בַּמָּשָׁל אַפֵּי&#x27; נוֹדַע שֶׁפָּסוּל הָיָה בִּשְׁעַת עֲבוֹדָה אַפֵּ&quot;ה עֲבוֹדָתוֹ כְּשֵׁרָה כִּדְמוֹכַח בְּסָמוּךְ מִקְּרָא וּבְכִי הַאי גַּוְונָא גַּבֵּי מִקְוֶה אִם נִמְצָא שֶׁמְּדִידָתוֹ הָיְתָה תְּחִלָּה בְּטָעוּת טַהֲרוֹתָיו טְמֵאוֹת לְמַפְרֵעַ אֲפִילּוּ לְר&#x27; טִרְפוֹן ואור&quot;י דִּבְתַרְתֵּי פְּלִיגִי פְּלִיגִי בִּטְהָרוֹת שֶׁנַּעֲשׂוּ עַל גַּבָּיו לְמַפְרֵעַ מַר אָזֵיל בָּתַר חֲזָקָה דְּמִקְוֶה וּמַר אָזֵיל בָּתַר חֲזָקָה דְּאָדָם וּבְשֶׁלֹּא נוֹדַע חֶסְרוֹן הַמִּקְוֶה לְמַפְרֵעַ [וּפְלִיגִי נָמֵי בְּטָמֵא שֶׁטָּבַל בְּמִקְוֶה וּלְאַחַר זְמַן נוֹדַע שֶׁהָיָה חָסֵר בְּאוֹתָהּ שָׁעָה שֶׁטָּהֳרוֹתָיו טְהוֹרוֹת לְמַפְרֵעַ וְאַהָא מַיְיתֵי הַמָּשָׁל] וּפְלִיגִי נָמֵי בְּמִקְוֶה שֶׁטָּבַל בָּהּ כֹּהֵן וְעָבַד עֲבוֹדָה וּבָאוּ עֵדִים וְהֵעִידוּ שֶׁהָיָה הַמִּקְוֶה חָסֵר קֹודֶם הַטְּבִילָה רַבִּי טֵרָפוֹן אוֹמֵר כְּשֵׁירָה הָעֲבוֹדָה מִידִי דַּהֲוָה אֶבֶן גְּרוּשָׁה וּבֶן חֲלוּצָה וְאַהָא קָאֵי הַמָּשָׁל:</div>
+          <div class="glose-fr">« Rabbi Tarfon dit : Cela ressemble à quelqu&#x27;un qui se tient et offre sur l&#x27;autel » : on pourrait demander quelle est cette parabole, puisque, dans la parabole, même si l&#x27;on apprend qu&#x27;il était disqualifié au moment du service, son service est pourtant casher, comme cela ressort plus loin d&#x27;un verset ; or dans le cas du mikvé, s&#x27;il se trouve que sa mesure était fausse dès le début, ses puretés sont impures rétroactivement, même pour Rabbi Tarfon. Rabbénou Yitz&#x27;hak répond qu&#x27;ils s&#x27;opposent sur deux points : sur les puretés faites sur lui rétroactivement, l&#x27;un suit la &#x27;hazaka du mikvé, l&#x27;autre celle de l&#x27;homme, lorsque le manque du mikvé n&#x27;a pas été connu rétroactivement ; [ils s&#x27;opposent aussi sur l&#x27;impur qui s&#x27;est immergé dans le mikvé, et ensuite on a appris qu&#x27;il était incomplet à ce moment-là : ses puretés sont pures rétroactivement, et pour cela on apporte la parabole] ; et ils s&#x27;opposent aussi sur un mikvé où un kohen s&#x27;est immergé et a fait le service, puis des témoins ont attesté que le mikvé était incomplet avant l&#x27;immersion : Rabbi Tarfon dit que le service est casher, comme dans le cas du fils de divorcée et du fils de &#x27;halutsa, et c&#x27;est à cela que se rapporte la parabole.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Chacun choisit comme modèle le cas qui soutient sa position. Pour <b>Rabbi Tarfon</b>, le kohen fils de divorcée ou de 'halutsa (<b>'halal</b>, disqualifié de la prêtrise) a un service déjà accompli qui reste valable : on ne remet pas le passé en cause. Pour <b>Rabbi Akiva</b>, le kohen <b>ba'al moum</b> (porteur d'un défaut corporel) a un service qui est rétroactivement invalide. Les Tossefot expliquent que la parabole porte surtout sur le cas du kohen qui s'est immergé dans le mikvé puis a servi.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 150" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6a6a6a"/></marker></defs><rect x="0" y="0" width="740" height="150" fill="#fbfaf6"/><text x="370" y="24" text-anchor="middle" font-size="16" font-weight="bold" fill="#2b2b2b">Les deux paraboles</text><rect x="20" y="40" width="344" height="91" rx="5" fill="#e0eee0" stroke="#5f9a63"/><text x="192" y="60" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2d5a31">Rabbi Tarfon</text><text x="192" y="75" text-anchor="middle" font-size="11" fill="#2d5a31">Le kohen est fils de divorcée</text><text x="192" y="90" text-anchor="middle" font-size="11" fill="#2d5a31">ou de 'halutsa</text><text x="192" y="105" text-anchor="middle" font-size="11" fill="#2d5a31">On l'apprend après coup</text><text x="192" y="120" text-anchor="middle" font-size="11" fill="#2d5a31">Son service passé est CASHER</text><rect x="376" y="40" width="344" height="91" rx="5" fill="#f2e2dd" stroke="#a75d4b"/><text x="548" y="60" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#7c3b2c">Rabbi Akiva</text><text x="548" y="75" text-anchor="middle" font-size="11" fill="#7c3b2c">Le kohen est ba'al moum</text><text x="548" y="90" text-anchor="middle" font-size="11" fill="#7c3b2c">(porteur d'un défaut)</text><text x="548" y="105" text-anchor="middle" font-size="11" fill="#7c3b2c">On l'apprend après coup</text><text x="548" y="120" text-anchor="middle" font-size="11" fill="#7c3b2c">Son service passé est PASSOUL</text><text x="370" y="153" text-anchor="middle" font-size="11" fill="#6a6a6a">Chacun compare le mikvé incomplet au cas qui donne raison à sa position</text></svg></div><div class="svg-cap">Les deux paraboles : fils de divorcée (Rabbi Tarfon) et ba&#x27;al moum (Rabbi Akiva).</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אָמַר רַבִּי טַרְפוֹן: אַתָּה דִּימִּיתוֹ לְבַעַל מוּם, וַאֲנִי דִּמִּיתִיו לְבֶן גְּרוּשָׁה אוֹ לְבֶן חֲלוּצָה, נִרְאֶה לְמִי דּוֹמֶה. אִי דּוֹמֶה לְבֶן גְּרוּשָׁה וּלְבֶן חֲלוּצָה – נְדוּנֶנּוּ כְּבֶן גְּרוּשָׁה אוֹ כְּבֶן חֲלוּצָה, אִם דּוֹמֶה לְבַעַל מוּם – נִדּוֹנֵנוּ כְּבַעַל מוּם.</div>
+            <div class="fr"><p>Rabbi Tarfon dit : Toi, tu l&#x27;as comparé à un ba&#x27;al moum, et moi je l&#x27;ai comparé à un fils de divorcée ou à un fils de &#x27;halutsa ; voyons à qui il ressemble. S&#x27;il ressemble au fils de divorcée et au fils de &#x27;halutsa, jugeons-le comme le fils de divorcée ou le fils de &#x27;halutsa ; s&#x27;il ressemble à un ba&#x27;al moum, jugeons-le comme un ba&#x27;al moum.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Rabbi Tarfon propose de trancher en examinant à quel cas le mikvé est réellement comparable. Aucune des deux paraboles n'est acceptée d'avance : c'est la ressemblance qui décide.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הִתְחִיל רַבִּי עֲקִיבָא לָדוּן: מִקְוֶה פְּסוּלוֹ בְּיָחִיד, וּבַעַל מוּם פְּסוּלוֹ בְּיָחִיד, וְאַל יוֹכִיחַ בֶּן גְּרוּשָׁה וּבֶן חֲלוּצָה שֶׁפְּסוּלוֹ בִּשְׁנַיִם.</div>
+            <div class="fr"><p>Rabbi Akiva se mit à raisonner : Le mikvé est disqualifié par un seul témoin, et le ba&#x27;al moum est disqualifié par un seul témoin ; que le fils de divorcée et le fils de &#x27;halutsa, dont la disqualification vient de deux témoins, ne prouvent pas le contraire.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִקְוֶה פְּסוּלוֹ בְּיָחִיד</b> בָּא אֶחָד וְאוֹמֵר אֲנִי מְדַדְתִּיו וְנִמְצָא חָסֵר נֶאֱמָן דקי&quot;ל (גִּיטִּין דַּף ב:) דְּעֵד אֶחָד נֶאֱמָן בְּאִיסּוּרִין:</div>
+          <div class="glose-fr">« Le mikvé est disqualifié par un seul témoin » : un homme vient et dit : je l&#x27;ai mesuré et il s&#x27;est trouvé incomplet ; il est cru, car nous avons établi (Guittin 2b) qu&#x27;un témoin unique est cru en matière d&#x27;interdits.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּבַעַל מוּם פְּסוּלוֹ בְּיָחִיד</b> בָּא אֶחָד וְאָמַר בַּעַל מוּם הוּא נֶאֱמָן וּלְקַמָּן מְפָרֵשׁ לָהּ:</div>
+          <div class="glose-fr">« Et le ba&#x27;al moum est disqualifié par un seul témoin » : un homme vient et dit : il est ba&#x27;al moum ; il est cru, et plus loin la guemara l&#x27;explique.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Premier critère de Rabbi Akiva : le <b>nombre de témoins</b>. Le mikvé et le ba'al moum sont tous deux disqualifiés par un témoin unique ; le fils de divorcée exige deux témoins, parce qu'il s'agit d'établir un fait de lignée.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 160" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6a6a6a"/></marker></defs><rect x="0" y="0" width="740" height="160" fill="#fbfaf6"/><text x="370" y="24" text-anchor="middle" font-size="16" font-weight="bold" fill="#2b2b2b">Rabbi Akiva : à quoi ressemble le mikvé ?</text><rect x="20" y="40" width="344" height="76" rx="5" fill="#f6efd6" stroke="#b59a3c"/><text x="192" y="60" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#6a5716">Critère 1</text><text x="192" y="75" text-anchor="middle" font-size="11" fill="#6a5716">Le mikvé : disqualifié par un SEUL témoin</text><text x="192" y="90" text-anchor="middle" font-size="11" fill="#6a5716">Le ba'al moum : de même</text><text x="192" y="105" text-anchor="middle" font-size="11" fill="#6a5716">Le fils de divorcée : DEUX témoins</text><rect x="376" y="40" width="344" height="76" rx="5" fill="#f6efd6" stroke="#b59a3c"/><text x="548" y="60" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#6a5716">Critère 2</text><text x="548" y="75" text-anchor="middle" font-size="11" fill="#6a5716">Le mikvé : le défaut est dans le mikvé</text><text x="548" y="90" text-anchor="middle" font-size="11" fill="#6a5716">Le ba'al moum : dans le corps du kohen</text><text x="548" y="105" text-anchor="middle" font-size="11" fill="#6a5716">Le fils de divorcée : défaut venu de sa mère</text><text x="370" y="138" text-anchor="middle" font-size="11" fill="#6a6a6a">Dans les deux critères, le mikvé ressemble au ba'al moum, pas au fils de divorcée</text></svg></div><div class="svg-cap">Rabbi Akiva : les deux critères qui rapprochent le mikvé du ba&#x27;al moum.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">דָּבָר אַחֵר: מִקְוֶה פְּסוּלוֹ בְּגוּפוֹ, בַּעַל מוּם פְּסוּלוֹ בְּגוּפוֹ, וְאַל יוֹכִיחַ בֶּן גְּרוּשָׁה וּבֶן חֲלוּצָה שֶׁפְּסוּלוֹ מֵאֲחֵרִים. אֲמַר לֵיהּ רַבִּי טַרְפוֹן: עֲקִיבָא! כָּל הַפּוֹרֵשׁ מִמְּךָ כְּפוֹרֵשׁ מִן הַחַיִּים.</div>
+            <div class="fr"><p>Autre chose : le mikvé est disqualifié dans son corps, et le ba&#x27;al moum est disqualifié dans son corps ; que le fils de divorcée et le fils de &#x27;halutsa, dont la disqualification vient d&#x27;autres, ne prouvent pas le contraire. Rabbi Tarfon lui dit : Akiva !</p><p>Quiconque se sépare de toi est comme celui qui se sépare de la vie.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מֵאֲחֵרִים</b> מֵחֲמַת אִמּוֹ:</div>
+          <div class="glose-fr">« D&#x27;autres » : à cause de sa mère.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deuxième critère : l'<b>origine du défaut</b>. Dans le mikvé et chez le ba'al moum, le défaut se trouve dans la chose ou la personne elle-même. Chez le fils de divorcée, le défaut vient de sa mère. Rabbi Tarfon accepte cet argument.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הַאי בַּעַל מוּם שֶׁפְּסוּלוֹ בְּיָחִיד הֵיכִי דָמֵי? אִי דְּקָא מַכְחֵישׁ לֵיהּ, מִי מְהֵימַן? אֶלָּא דִּשְׁתֵיק,</div>
+            <div class="fr"><p>Ce ba&#x27;al moum dont la disqualification vient d&#x27;un seul témoin, de quel cas s&#x27;agit-il ? S&#x27;il le contredit, le témoin est-il cru ?</p><p>Mais il s&#x27;agit de quelqu&#x27;un qui se tait,</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara questionne la baraïta : si le kohen conteste l'accusation, un témoin unique ne devrait pas suffire. La baraïta doit donc parler du kohen qui <b>se tait</b>, et dont le silence est tenu pour un aveu.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 267" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6a6a6a"/></marker></defs><rect x="0" y="0" width="740" height="267" fill="#fbfaf6"/><text x="370" y="24" text-anchor="middle" font-size="16" font-weight="bold" fill="#2b2b2b">Quand un témoin unique est-il cru ?</text><rect x="60" y="40" width="620" height="31" rx="5" fill="#ffffff" stroke="#c9c5b6"/><text x="370" y="60" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#3a3a3a">Un témoin dit : le kohen est ba'al moum</text><line x1="370" y1="71" x2="370" y2="95" stroke="#6a6a6a" stroke-width="1.6" marker-end="url(#ar)"/><rect x="60" y="97" width="620" height="31" rx="5" fill="#ffffff" stroke="#c9c5b6"/><text x="370" y="117" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#3a3a3a">Si le kohen le nie, le témoin est-il cru ? (question de la guemara)</text><rect x="20" y="152" width="344" height="91" rx="5" fill="#e7e9f2" stroke="#7a86a8"/><text x="192" y="172" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2f3a55">Rav Yehouda (déduction)</text><text x="192" y="187" text-anchor="middle" font-size="11" fill="#2f3a55">Le kohen se tait</text><text x="192" y="202" text-anchor="middle" font-size="11" fill="#2f3a55">Silence = aveu</text><text x="192" y="217" text-anchor="middle" font-size="11" fill="#2f3a55">Et de même le fils de divorcée</text><text x="192" y="232" text-anchor="middle" font-size="11" fill="#2f3a55">se tait : un témoin suffit alors</text><rect x="376" y="152" width="344" height="91" rx="5" fill="#e0eee0" stroke="#5f9a63"/><text x="548" y="172" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2d5a31">Abaye</text><text x="548" y="187" text-anchor="middle" font-size="11" fill="#2d5a31">Le kohen nie</text><text x="548" y="202" text-anchor="middle" font-size="11" fill="#2d5a31">Le témoin dit : shelah ahavi</text><text x="548" y="217" text-anchor="middle" font-size="11" fill="#2d5a31">(enlève ton vêtement et montre)</text><text x="548" y="232" text-anchor="middle" font-size="11" fill="#2d5a31">La chose se vérifie : le témoin est cru</text></svg></div><div class="svg-cap">Un témoin unique contre le kohen : silence (Rav Yehouda) ou vérification (Abaye).</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְדִכְוָתֵיהּ גַּבֵּי בֶּן גְּרוּשָׁה וּבֶן חֲלוּצָה דְּשָׁתֵיק, וְקָתָנֵי: מִקְוֶה פְּסוּלוֹ בְּיָחִיד וּבַעַל מוּם פְּסוּלוֹ בְּיָחִיד, וְאַל יוֹכִיחַ בֶּן גְּרוּשָׁה וּבֶן חֲלוּצָה שֶׁפְּסוּלוֹ בִּשְׁנַיִם.</div>
+            <div class="fr"><p>et de même pour le fils de divorcée et le fils de &#x27;halutsa, qui se taisent ; et pourtant il est enseigné : le mikvé est disqualifié par un seul témoin, le ba&#x27;al moum est disqualifié par un seul témoin, et que le fils de divorcée et le fils de &#x27;halutsa, dont la disqualification vient de deux, ne prouvent pas le contraire.</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Si la baraïta parlait du kohen qui se tait, le fils de divorcée qui se tait serait lui aussi disqualifié par un seul témoin, et la distinction « un / deux témoins » n'aurait pas de sens. Cette objection amène la réponse d'Abaye.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאַבַּיֵּי אָמַר: לְעוֹלָם דְּקָא מַכְחֵישׁ לֵיהּ, וּדְקָאָמְרַתְּ: ׳אַמַּאי מְהֵימַן׳ – דְּאָמַר לֵיהּ: שְׁלַח אַחְוִי. וְהַייְנוּ דְּקָתָנֵי: מִקְוֶה פְּסוּלוֹ בְּגוּפוֹ וּבַעַל מוּם פְּסוּלוֹ בְּגוּפוֹ, וְאַל יוֹכִיחַ בֶּן גְּרוּשָׁה וּבֶן חֲלוּצָה שֶׁפְּסוּלוֹ מֵאֲחֵרִים.</div>
+            <div class="fr"><p>Et Abaye dit : En réalité, il le contredit ; et ce que tu dis : « Pourquoi est-il cru ? », c&#x27;est que le témoin lui a dit : Envoie et montre. Et c&#x27;est ce qui est enseigné : le mikvé est disqualifié dans son corps et le ba&#x27;al moum est disqualifié dans son corps ; que le fils de divorcée et le fils de &#x27;halutsa, dont la disqualification vient d&#x27;autres, ne prouvent pas le contraire.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שְׁלַח אַחְוִי</b> אִם אֵינְךָ בַּעַל מוּם הֶפְשֵׁט בְּגָדֶיךָ וְנִרְאֶה וְהַייְנוּ דְּקָתָנֵי בַּעַל מוּם פְּסוּלוֹ בְּגוּפוֹ שֶׁנּוּכַל לְבָרֵר הַדְּבָרִים וְכֵן מִקְוֶה חֶסְרוֹנוֹ לְפָנֵינוּ:</div>
+          <div class="glose-fr">« Envoie et montre » : si tu n&#x27;es pas ba&#x27;al moum, ôte tes vêtements et nous verrons ; et c&#x27;est ce qui est enseigné : le ba&#x27;al moum est disqualifié dans son corps, car nous pouvons éclaircir les choses ; et de même pour le mikvé, son manque est devant nous.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שְׁלַח וְאַחְוִי</b> תַּרְגּוּם שֶׁל וְהִפְשִׁיט וְשָׁלַח (וַיִּקְרָא א) מִכָּאן יֵשׁ לְהוֹכִיחַ דְּכָל דָּבָר שֶׁיָּכוֹל לְהִתְבָּרֵר עֵד א&#x27; נֶאֱמָן עָלָיו וַאֲפִילּוּ עֵד א&#x27; מַכְחִישׁוֹ:</div>
+          <div class="glose-fr">« Envoie et montre » : traduction araméenne de « et il dépouillera » et « et il enverra » (Vayikra 1) ; on peut en prouver que pour toute chose qui peut être éclaircie, un seul témoin est cru, même si un seul témoin le contredit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Selon <b>Abaye</b>, le kohen conteste bien l'accusation, mais le témoin est cru parce que la vérification est possible : « <b>Chelah ahavi</b> » (« enlève ton vêtement et montre »). Un témoin n'est pas cru quand personne ne peut contrôler ses dires ; ici le corps du kohen se vérifie, et si le témoin mentait, le kohen le prouverait aussitôt. Cela explique le second critère de la baraïta : le défaut est dans le corps même.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּבֶן גְּרוּשָׁה וּבֶן חֲלוּצָה דַּעֲבוֹדָתוֹ כְּשֵׁירָה, מִנָּלַן? אָמַר רַב יְהוּדָה אָמַר שְׁמוּאֵל: דְּאָמַר קְרָא: ״וְהָיְתָה לּוֹ וּלְזַרְעוֹ אַחֲרָיו״ – בֵּין זֶרַע כָּשֵׁר וּבֵין זֶרַע פָּסוּל.</div>
+            <div class="fr"><p>Et le fils de divorcée et le fils de &#x27;halutsa, dont le service est casher, d&#x27;où le savons-nous ? Rav Yehouda a dit au nom de Chmouel : L&#x27;Écriture dit : « Et il sera pour lui et pour sa descendance après lui » : qu&#x27;elle soit descendance casher ou descendance passoul.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְהָיְתָה לּוֹ וּלְזַרְעוֹ אַחֲרָיו וְגוֹ&#x27;</b> בֵּין זֶרַע פָּסוּל חָלָל וּלְכַתְּחִילָּה לָא קָאָמַר דְּהָא מְחֻולָּל קַרְייֵהּ רַחֲמָנָא שֶׁנִּתְחַלֵּל מִקְּדֻושַּׁת כֹּהֵן:</div>
+          <div class="glose-fr">« Et il sera pour lui et pour sa descendance après lui, etc. » : même une descendance passoul, un &#x27;halal ; et il ne dit pas cela dès le départ, car Hachem l&#x27;appelle « profané », qui a été profané de la sainteté du kohen.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּלְזַרְעוֹ אַחֲרָיו בֵּין זֶרַע כָּשֵׁר בֵּין זֶרַע פָּסוּל</b> וּבְרֵישׁ מְכִילְתִּין (דַּף ד.) אָמַר וְזֶרַע אֵין לָהּ אֵין לִי אֶלָּא זֶרַע כָּשֵׁר זֶרַע פָּסוּל מִנַּיִן ת&quot;ל וְכוּ&#x27; מַשְׁמַע דִּלְשׁוֹן זֶרַע לָא מִשְׁתְּמַע אֶלָּא כָּשֵׁר וְי&quot;ל דְּשָׁאנֵי הָכָא דְּזַרְעוֹ מְיֻותָּר דַּהֲוָה מָצֵי לְמִיכְתַּב וּלְבָנָיו שֶׁהֲרֵי בְּבָנוֹת לֹא שַׁיָּיךְ בְּרִית כְּהֻונָּה וּלְכָךְ דָּרְשִׁינַן מִינֵּיהּ אֲפִילּוּ זֶרַע פָּסוּל אֲבָל הָתָם אֵינוֹ מְיֻותָּר שֶׁהֲרֵי הָתָם יֵשׁ לוֹ בַּת כְּמוֹ בֵּן:</div>
+          <div class="glose-fr">« Pour sa descendance après lui, qu&#x27;elle soit descendance casher ou descendance passoul » : au début de ce traité (4a), on dit : « zéra&#x27;  (descendance) » : il n&#x27;y a pas de descendance ; je n&#x27;ai de descendance que casher, d&#x27;où la descendance passoul ? L&#x27;Écriture dit... ce qui fait entendre que le mot « zéra&#x27; » ne s&#x27;entend que de la descendance casher. On peut répondre qu&#x27;ici c&#x27;est différent, car « sa descendance » est superflu : il aurait pu écrire « et à ses fils », puisque pour les filles l&#x27;alliance de prêtrise ne s&#x27;applique pas, et c&#x27;est pourquoi on en déduit même une descendance passoul ; mais là-bas, ce n&#x27;est pas superflu, puisqu&#x27;il a une fille comme un fils.</div>
+        </div></div>
+    </details><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">&quot;וְהָיְתָה לּוֹ וּלְזַרְעוֹ אַחֲרָיו&quot;, בֵּין זֶרַע כָּשֵׁר וּבֵין זֶרַע פָּסוּל. קַשָּׁא מֵהֵיכָא מַשְׁמַע זֶה? וְנִרְאֶה לִי בס&quot;ד דְּ&#x27;אַחֲרָיו&#x27; (בַּמִּדְבָּר כה, יג) לְשׁוֹן יָתֵר וּמְפָרֵשׁ לָהּ לִגְנַאי כְּמוֹ נִזְרוֹ אָחוֹר (יְשַׁעְיָה א, ד) וְכֵן וַיִּהְיוּ לְאָחוֹר וְלֹא לְפָנִים (יִרְמְיָה ז, כד) וְזֶהוּ &#x27;אַחֲרָיו&#x27; רְצוֹנוֹ לוֹמַר לְאָחוֹר מִמֶּנּוּ, פֵּירוּשׁ חֲלָלִים שֶׁאֵינָם זֶרַע כָּשֵׁר כָּמוֹהוּ. אִי נָמֵי דְּרֵישׁ אַחֲרָיו לְשׁוֹן גְּנַאי כְּמוֹ שֶׁדָּרְשׁוּ בַּגְּמָרָא דְּיוֹמָא (יוֹמָא כג:) עַל פָּסוּק וְלָבַשׁ בְּגָדִים אֲחֵרִים (וַיִּקְרָא ו, ד) כְּלוֹמַר פְּחוּתִים וְכֵן דָּרְשׁוּ בַּזֹּוהַר הַקָּדוֹשׁ עַל פָּסוּק וְהָלְכָה וְהָיְתָה לְאִישׁ אַחֵר (דְּבָרִים כֹּד, ב) לְשׁוֹן גְּנַאי דְּאָמְרוּ אַחֵר קַרְיָה רַחֲמָנָא. וְהָא דְּאָבוּהָ דִּשְׁמוּאֵל מַפִּיק לֵיהּ מִן פָּסוּק בָּרֵךְ ה&#x27; חֵילוֹ (דְּבָרִים לג, יא) וְלָא מַפִּיק לָהּ מִפָּסוּק זֶה דְּ&#x27;לְזַרְעוֹ אַחֲרָיו&#x27; דִּקְדִים נִרְאֶה לִי בס&quot;ד דְּסָבַר אַבֹּוהַּ דִּשְׁמוּאֵל דְּיֵשׁ לוֹמַר מַעֲלָה זוֹ לֹא נִיתְּנָה אֶלָּא רַק לְפִנְחָס בְּשָׂכָר שֶׁהָרַג אֶת זִמְרִי וְנָתַן לוֹ הַכְּהֻונָּה שֶׁגַּם הֶחָלָל שֶׁבְּזַרְעוֹ תִּהְיֶה עֲבוֹדָתוֹ כְּשֵׁרָה אֲבָל שְׁאָר כֹּהֲנִים הֲוָה אֲמִינָא אֵין לָהֶם מַעֲלָה זוֹ. וְהָא דְּהֵבִיא בַּגְּמָרָא דִּבְרֵי שְׁמוּאֵל קֹודֶם דִּבְרֵי אָבִיו נִרְאֶה לִי בס&quot;ד דְּנָקֵיט לְפִי סֵדֶר הַמִּקְרָאוֹת דִּשְׁמוּאֵל יָלֵיף מִפָּסוּק בַּמִּדְבָּר כ&quot;ה וְאַבֹּוהַּ דִּשְׁמוּאֵל יָלֵיף מִפָּסוּק דְּבָרִים ל&quot;ג.</div>
+          <div class="glose-fr">« Et il sera pour lui et pour sa descendance après lui », qu&#x27;elle soit descendance casher ou descendance passoul. On peut demander : d&#x27;où cela se déduit-il ? Il me semble, avec l&#x27;aide de D.ieu, que « après lui » (Bamidbar 25,13) est une expression superflue et s&#x27;interprète en mauvaise part, comme « ils se sont détournés en arrière » (Yéchayahou 1,4) et « ils allèrent en arrière et non en avant » (Yirmeyahou 7,24) ; « après lui » veut donc dire en arrière de lui, c&#x27;est-à-dire des &#x27;halalim, qui ne sont pas une descendance casher comme lui. Ou bien on interprète « après lui » comme une expression dépréciative, comme on l&#x27;a expliqué dans la guemara de Yoma (23b) à propos du verset « et il revêtira d&#x27;autres vêtements » (Vayikra 6,4), c&#x27;est-à-dire inférieurs ; et de même le saint Zohar sur le verset « et elle sera à un autre homme » (Devarim 24,2), expression dépréciative, car l&#x27;Écriture l&#x27;appelle « autre ». Quant au fait que le père de Chmouel l&#x27;apprend du verset « Bénis, Hachem, sa force » (Devarim 33,11) et non de ce verset « pour sa descendance après lui », qui précède, il me semble, avec l&#x27;aide de D.ieu, que le père de Chmouel pense que cette qualité n&#x27;a été donnée qu&#x27;à Pin&#x27;has, en récompense d&#x27;avoir tué Zimri, et qu&#x27;on lui a donné la prêtrise de sorte que même le &#x27;halal de sa descendance aurait un service casher ; mais les autres kohanim, je dirais, n&#x27;ont pas cette qualité. Et quant au fait que la guemara rapporte les paroles de Chmouel avant celles de son père, il me semble que c&#x27;est selon l&#x27;ordre des versets : Chmouel l&#x27;apprend du verset de Bamidbar 25 et le père de Chmouel du verset de Devarim 33.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Première source pour la validité du service du <b>'halal</b> (fils de divorcée, de 'halutsa) : le verset dit à Pin'has « pour lui <b>et pour sa descendance</b> après lui ». L'expression « sa descendance » est comprise comme englobant la descendance disqualifiée (<b>zéra' passoul</b>) : l'alliance de la prêtrise reste valable après coup, bien que la descendance soit disqualifiée dès le départ (<b>le'hathila</b>). Les Tossefot concilient ce verset avec 4a, où « zéra' » désigne la descendance casher.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 201" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6a6a6a"/></marker></defs><rect x="0" y="0" width="740" height="201" fill="#fbfaf6"/><text x="370" y="24" text-anchor="middle" font-size="16" font-weight="bold" fill="#2b2b2b">Trois sources : le service du fils de divorcée / du 'halal est valide</text><rect x="20" y="40" width="225" height="91" rx="5" fill="#e0eee0" stroke="#5f9a63"/><text x="132.5" y="60" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2d5a31">Chmouel (Rav Yehouda)</text><text x="132.5" y="75" text-anchor="middle" font-size="11" fill="#2d5a31">Pin'has : « pour lui et pour sa</text><text x="132.5" y="90" text-anchor="middle" font-size="11" fill="#2d5a31">descendance après lui »</text><text x="132.5" y="105" text-anchor="middle" font-size="11" fill="#2d5a31">= descendance casher ou passoul</text><text x="132.5" y="120" text-anchor="middle" font-size="11" fill="#2d5a31">(Bamidbar 25,13)</text><rect x="257" y="40" width="225" height="91" rx="5" fill="#e0eee0" stroke="#5f9a63"/><text x="369.5" y="60" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2d5a31">Le père de Chmouel</text><text x="369.5" y="75" text-anchor="middle" font-size="11" fill="#2d5a31">Lévi : « Bénis, Hachem, son</text><text x="369.5" y="90" text-anchor="middle" font-size="11" fill="#2d5a31">'hel (sa force) »</text><text x="369.5" y="105" text-anchor="middle" font-size="11" fill="#2d5a31">lu 'houllin : même ses profanes</text><text x="369.5" y="120" text-anchor="middle" font-size="11" fill="#2d5a31">(Devarim 33,11)</text><rect x="495" y="40" width="225" height="91" rx="5" fill="#e0eee0" stroke="#5f9a63"/><text x="607.5" y="60" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2d5a31">Rabbi Yanaï</text><text x="607.5" y="75" text-anchor="middle" font-size="11" fill="#2d5a31">« Tu iras vers le kohen qui</text><text x="607.5" y="90" text-anchor="middle" font-size="11" fill="#2d5a31">sera en ces jours-là »</text><text x="607.5" y="105" text-anchor="middle" font-size="11" fill="#2d5a31">un kohen casher devenu 'halal</text><text x="607.5" y="120" text-anchor="middle" font-size="11" fill="#2d5a31">(Devarim 26,3)</text><rect x="20" y="145" width="700" height="46" rx="5" fill="#f2e2dd" stroke="#a75d4b"/><text x="370" y="165" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#7c3b2c">Source du ba'al moum invalide : « Je lui donne Mon alliance de paix (chalom) »</text><text x="370" y="180" text-anchor="middle" font-size="11" fill="#7c3b2c">lu chalem (entier) : le vav de chalom est coupé (Rav Na'hman) ; donc kohen entier, pas défectueux</text></svg></div><div class="svg-cap">Les trois sources de la validité du service du &#x27;halal, et la source de l&#x27;invalidité du ba&#x27;al moum.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אַבֹּוהַּ דִּשְׁמוּאֵל אָמַר: מֵהָכָא: ״בָּרֵךְ ה׳ חֵילוֹ וּפֹעַל יָדָיו תִּרְצֶה״ – אֲפִילּוּ חֻולִּין שֶׁבּוֹ תִּרְצֶה.</div>
+            <div class="fr"><p>Le père de Chmouel dit : De là : « Bénis, Hachem, sa force, et agrée l&#x27;œuvre de ses mains » : même les profanes qui s&#x27;y trouvent, agrée-les.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>חֻולִּין שֶׁבּוֹ</b> חֲלָלִין שֶׁבּוֹ חֲלָלִין שֶׁבְּשֵׁבֶט לֵוִי דִּקְרָא בְּשֵׁבֶט לֵוִי כְּתִיב:</div>
+          <div class="glose-fr">« Les profanes qui s&#x27;y trouvent » : les &#x27;halalim de la tribu de Lévi, car le verset parle de la tribu de Lévi.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le père de Chmouel lit « 'heïlo » (sa force) comme « 'houlin » (ses profanes) : Moché bénit la tribu de Lévi en demandant que Hachem agrée même le service de ses membres profanés.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">רַבִּי יַנַּאי אָמַר: מֵהָכָא: ״וּבָאתָ אֶל הַכֹּהֵן אֲשֶׁר יִהְיֶה בַּיָּמִים הָהֵם״, וְכִי תַּעֲלֶה עַל דַּעְתְּךָ שֶׁאָדָם הוֹלֵךְ אֵצֶל כֹּהֵן שֶׁלֹּא הָיָה בְּיָמָיו? אֶלָּא זֶה כָּשֵׁר וְנִתְחַלֵּל.</div>
+            <div class="fr"><p>Rabbi Yanaï dit : De là : « Et tu viendras vers le kohen qui sera en ces jours-là » : se peut-il que tu penses qu&#x27;un homme aille vers un kohen qui n&#x27;a pas existé à son époque ? Mais il s&#x27;agit de celui qui était casher et qui a été profané.</p></div>
+            <div class="tools"><details class="comm benyehoyada">
+      <summary style="--c:#9d174d">🪔 Ben Yehoyada <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">רַבִּי יַנַּאי אָמַר: מֵהָכָא: &quot;וּבָאתָ אֶל הַכֹּהֵן אֲשֶׁר יִהְיֶה בַּיָּמִים הָהֵם&quot; (דְּבָרִים כו, ג) . יֵשׁ לְהָבִין רַבִּי יַנַּאי אַמַּאי לֹא הֵבִיא פָּסוּק שֶׁהֵבִיא אַבֹּוהַּ דִּשְׁמוּאֵל? וְנִרְאֶה לִי בס&quot;ד דְּקַשְׁיָא לֵיהּ לְרַבִּי יַנַּאי אֵיךְ יְבַקֵּשׁ מֹשֶׁה רַבֵּינוּ ע&quot;ה לְבָרֵךְ אֶת הַחֲלָלִים וְדַי לוֹמַר &#x27;וּפָעַל יָדָיו חֵילוֹ תִּרְצֶה&#x27;? וְעוֹד קַשְׁיָא לֵיהּ אַמַּאי הֻוצְרַךְ לְבָרֵךְ אוֹתָם בְּכָךְ וּלְהַזְכִּיר דָּבָר זֶה בִּבְרָכָה וַהֲלֹא כְּבָר קִבֵּל דִּין זֶה מִסִּינַי דְּחָלָל עֲבוֹדָתוֹ כְּשֵׁרָה? אַךְ אַבֹּוהַּ דִּשְׁמוּאֵל סְבִירָא לֵיהּ נָקֵיט זֶה בִּבְרָכָה וּבִקֵּשׁ שֶׁתִּתְקַבֵּל עֲבוֹדָתָם בְּרָצוֹן. וַעֲדַיִין יֵשׁ לְהָבִין אַבֹּוהַּ דִּשְׁמוּאֵל אַמַּאי לֹא הֵבִיא פָּסוּק דְּרַבִּי יַנַּאי דִּקְדִים? וְנִרְאֶה לִי דְּהַאי דִּיּוּקָא דְּרַבִּי יַנַּאי לָא מַשְׁמַע לֵיהּ דִּמְפָרֵשׁ דְּאָמַר &#x27;בַּיָּמִים הָהֵם&#x27; כְּמוֹ שֶׁכָּתַב רַבֵּינוּ מֵהָרַבִּי מֵאִיר אַלְשֵׁיךְ זַ&quot;ל דְּאֵין לְךָ אֶלָּא כֹּהֵן שֶׁיִּהְיֶה בְּיָמֶיךָ עַייֵּן שָׁם. וְעוֹד יֵשׁ לוֹמַר לְהָכִי קָאָמַר &#x27;בַּיָּמִים הָהֵם&#x27; דְּאַל תֹּאמַר אֵיךְ יְכַנֶּה אַלְּקוּתוֹ יִתְבָּרֵךְ עַל הַכֹּהֵן שֶׁאוֹמֵר לוֹ &#x27;הִגַּדְתִּי הַיּוֹם לָה&#x27; אֱלֹקֶיךָ&#x27; וְדִילְמָא אֵינוֹ רָאוּי לְכָךְ? לָכֵן אָמַר לוֹ &#x27;בַּיָּמִים הָהֵם&#x27; אֵין לְךָ אֶלָּא כֹּהֵן שֶׁיִּהְיֶה בְּיָמֶיךָ הֵן רָאוּי הֵן אֵינוֹ רָאוּי.</div>
+          <div class="glose-fr">Rabbi Yanaï dit : De là : « Et tu viendras vers le kohen qui sera en ces jours-là » (Devarim 26,3). Il faut comprendre pourquoi Rabbi Yanaï n&#x27;a pas apporté le verset qu&#x27;a apporté le père de Chmouel. Il me semble, avec l&#x27;aide de D.ieu, que Rabbi Yanaï se demande : comment Moché notre maître, la paix soit sur lui, demanderait-il de bénir les profanes, alors qu&#x27;il suffit de dire « et agrée l&#x27;œuvre de ses mains, sa force » ? Et encore : pourquoi a-t-il fallu les bénir ainsi et mentionner cela dans la bénédiction, alors que cette règle avait déjà été reçue du Sinaï, à savoir que le service du &#x27;halal est casher ? Mais le père de Chmouel pense qu&#x27;il l&#x27;a retenue dans la bénédiction et a demandé que leur service soit agréé avec bienveillance. Et il reste à comprendre pourquoi le père de Chmouel n&#x27;a pas apporté le verset de Rabbi Yanaï, qui vient avant. Il me semble que cette déduction de Rabbi Yanaï ne lui paraît pas s&#x27;entendre ainsi, car « en ces jours-là » s&#x27;explique, comme l&#x27;a écrit notre maître Rabbi Méïr Alchi&#x27;h de mémoire bénie, par : tu n&#x27;as que le kohen qui sera en ton temps ; voir là-bas. On peut dire encore que « en ces jours-là » signifie : que l&#x27;on ne dise pas comment il convient d&#x27;attribuer la divinité du Béni au kohen à qui l&#x27;on dit « J&#x27;ai déclaré aujourd&#x27;hui à Hachem ton D.ieu », peut-être n&#x27;est-il pas apte à cela ? C&#x27;est pourquoi l&#x27;Écriture dit « en ces jours-là » : tu n&#x27;as que le kohen qui sera en ton temps, qu&#x27;il soit apte ou non.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p><b>Rabbi Yanaï</b> tire sa source de la mitsva des prémices : on se rend « chez le kohen qui sera en ces jours-là ». Comme on ne peut aller que chez le kohen de son temps, l'expression ajoute qu'il peut s'agir d'un kohen casher devenu 'halal : les offrandes apportées par lui avant sa disqualification, et ses services accomplis, restent valables.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">בַּעַל מוּם דַּעֲבוֹדָתוֹ פְּסוּלָה, מִנָּלַן? אָמַר רַב יְהוּדָה אָמַר שְׁמוּאֵל: דְּאָמַר קְרָא: ״לָכֵן אֱמֹר הִנְנִי נֹתֵן לוֹ אֶת בְּרִיתִי שָׁלוֹם״ – כְּשֶׁהוּא שָׁלֵם וְלֹא כְּשֶׁהוּא חָסֵר. וְהָא ״שָׁלוֹם״ כְּתִיב! אָמַר רַב נַחְמָן: וָיו דְּשָׁלוֹם קְטִיעָה הִיא.</div>
+            <div class="fr"><p>Et le ba&#x27;al moum, dont le service est passoul, d&#x27;où le savons-nous ? Rav Yehouda a dit au nom de Chmouel : L&#x27;Écriture dit : « C&#x27;est pourquoi dis : Voici que Je lui donne Mon alliance de paix » : quand il est entier, et non quand il est manquant.</p><p>Mais il est écrit « chalom » ! Rav Na&#x27;hman a dit : Le vav de « chalom » est coupé.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּבַעַל מוּם דַּעֲבוֹדָתוֹ פְּסוּלָה מְנָלַן</b> אִם עָבַד בְּשׁוֹגֵג דְּאִילּוּ בְּמֵזִיד כְּתִיב (וַיִּקְרָא כ״א:כ״ג) אַךְ אֶל הַפָּרֹוכֶת לֹא יָבֹא וְגוֹ&#x27; וְלֹא יְחַלֵּל אֶת מִקְדָּשַׁי אֶלָּא עָבַד בְּלֹא יְדִיעָה מִנָּלַן דְּלָא מַכְשְׁרִינַן לֵיהּ מֵהַאי קְרָא דִּוְהָיְתָה לוֹ וּלְזַרְעוֹ אַחֲרָיו:</div>
+          <div class="glose-fr">« Et le ba&#x27;al moum, dont le service est passoul, d&#x27;où le savons-nous ? » : s&#x27;il a servi par erreur ; car s&#x27;il l&#x27;a fait volontairement, il est écrit (Vayikra 21,23) « mais il ne viendra pas vers le voile... et il ne profanera pas Mes lieux saints » ; mais s&#x27;il a servi sans le savoir, d&#x27;où le savons-nous que nous ne le validons pas par ce verset « et il sera pour lui et pour sa descendance après lui » ?</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הִנְנִי נוֹתֵן לוֹ</b> לְעֵיל מִוְּהָיְתָה לוֹ כְּתִיב אַלְמָא בִּשְׁלֵימִים הוּא דְּאַכְּשַׁר:</div>
+          <div class="glose-fr">« Voici que Je lui donne » : plus haut, avant « et il sera pour lui », il est écrit ; l&#x27;Écriture montre donc qu&#x27;Elle ne valide que les entiers.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Pour le <b>ba'al moum</b>, la validité après coup est refusée. Le verset dit « Mon alliance de <b>chalom</b> » (paix) : on le lit <b>chalem</b> (entier). Le vav de « chalom » est écrit coupé dans le sefer Torah, ce qui permet de lire le mot comme s'il n'avait pas de vav. L'alliance n'est donnée qu'à un kohen entier.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מַתְנִי׳ כָּל מָקוֹם שֶׁיֵּשׁ קִידּוּשִׁין וְאֵין עֲבֵירָה – הַוָּלָד הוֹלֵךְ אַחַר הַזָּכָר. וְאֵיזֶה זוֹ – זוֹ כֹּהֶנֶת, לְוִיָּה, וְיִשְׂרְאֵלִית שֶׁנָּשְׂאוּ לְכֹהֵן, לֵוִי, וְיִשְׂרָאֵל.</div>
+            <div class="fr"><p>Michna. Tout cas où il y a kiddouchin et pas de transgression, l&#x27;enfant suit le mâle.</p><p>Et quel est ce cas ? C&#x27;est la fille d&#x27;un kohen, la fille d&#x27;un Lévi et la fille d&#x27;un Israélite qui se sont mariées à un kohen, à un Lévi et à un Israélite.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַתְנִי&#x27; כָּל מָקוֹם שֶׁיֵּשׁ קִידּוּשִׁין וְאֵין עֲבֵירָה</b> שֶׁהַקִּידּוּשִׁין תּוֹפְסִין בָּהּ וְאֵין עֲבֵירָה בַּנִּשּׂוּאִין שֶׁלֹּא אֲסָרַתָּה תּוֹרָה עָלָיו:</div>
+          <div class="glose-fr">« Michna. Tout cas où il y a kiddouchin et pas de transgression » : que les kiddouchin s&#x27;appliquent et qu&#x27;il n&#x27;y a pas de transgression dans le mariage, car la Torah ne l&#x27;a pas interdite pour lui.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>כֹּהֶנֶת לְוִיָּה וְיִשְׂרְאֵלִית וְכוּ&#x27;</b> לֵוִי שֶׁנָּשָׂא כֹּהֶנֶת אוֹ יִשְׂרְאֵלִית בְּנָהּ לֵוִי וְכֹהֵן שֶׁנָּשָׂא לְוִיָּה וְיִשְׂרְאֵלִית בְּנָהּ כֹּהֵן (וְלֵוִי) יִשְׂרָאֵל שֶׁנָּשָׂא כֹּהֶנֶת אוֹ לְוִיָּה הַוָּלָד יִשְׂרָאֵל לְמִשְׁפְּחֹותָם לְבֵית אֲבֹותָם כְּתִיב:</div>
+          <div class="glose-fr">« La fille d&#x27;un kohen, d&#x27;un Lévi et d&#x27;un Israélite, etc. » : un Lévi qui a épousé la fille d&#x27;un kohen ou d&#x27;un Israélite : son fils est Lévi ; un kohen qui a épousé la fille d&#x27;un Lévi ou d&#x27;un Israélite : son fils est kohen ; un Israélite qui a épousé la fille d&#x27;un kohen ou d&#x27;un Lévi : l&#x27;enfant est Israélite, car il est écrit « selon leurs familles, selon la maison de leurs pères ».</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl">כָּל מָקוֹם שֶׁיֵּשׁ קִידּוּשִׁין וְיֵשׁ כו&#x27; וְכָל מָקוֹם שֶׁאֵין קִידּוּשִׁין וְאֵיזֶה זֶה זֶה הַבָּא עַל אַחַת מִכָּל הָעֲרָיוֹת שֶׁבַּתּוֹרָה. נִרְאֶה לר&quot;י דְּהַךְ סְתָמָא אָתְיָא כְּרַבִּי שִׁמְעוֹן הַתֵּימְנִי דְּאָמַר בְּסוֹף פ&#x27; הַחוֹלֵץ (יְבָמוֹת מט.) יֵשׁ מַמְזֵר מֵחַיָּיבֵי כָרֵיתוֹת וְלֹא מֵחַייָּבֵי לָאוְיָן וכה&quot;ג קָאָמַר הָכָא וְעוֹד נִרְאֶה לְרִ&quot;י דַּהֲלָכָה כִּי הַךְ סְתָמָא אע&quot;ג דְּאִיכָּא סְתָמָא אַחַרְיַנָא בִּיבָמוֹת (דַּף צב.) כְּר&#x27; עֲקִיבָא מ&quot;מ הַךְ סְתָמָא עִיקָּר מִשּׁוּם דְּמִתַּנְיָא גַּבֵּי הִילְכְתָא פְּסִיקְתָּא דְּקִידּוּשִׁין וְעוֹד דְּמָצִינוּ בְּהַרְבֵּה מְקוֹמוֹת כִּי הַאי סְתָמָא כִּדְקָתָנֵי הָתָם (יְבָמוֹת דַּף יד:) פְּשִׁיטָא בְּנֵי חַיָּיבֵי לָאוִין כְּשֵׁרִים נִינְהוּ וְעוֹד תָּנֵי אֵיזֶהוּ מַמְזֵר כָּל שֶׁאִיסּוּרוֹ אִיסּוּר עֶרְוָה וְעָנוּשׁ כָּרֵת מַשְׁמַע דְּלָא הָוֵי מַמְזֵר אֶלָּא מֵחַיָּיבֵי כָּרֵיתוֹת:</div>
+          <div class="glose-fr">« Tout cas où il y a kiddouchin et il y a... et tout cas où il n&#x27;y a pas de kiddouchin, et quel est celui-ci ? C&#x27;est celui qui vient sur l&#x27;une de toutes les arayot de la Torah » : il semble à Rabbénou Yitz&#x27;hak que cette michna anonyme suit Rabbi Chimon le Témanite, qui dit à la fin du chapitre Ha&#x27;holets (Yevamot 49a) qu&#x27;il y a un mamzer de ceux qui sont passibles de karet et non de ceux qui sont passibles d&#x27;un simple interdit, et il s&#x27;exprime ici de la même manière. Il lui semble encore que la hala&#x27;ha est comme cette michna anonyme, bien qu&#x27;il y ait une autre michna anonyme dans Yevamot (92a) selon Rabbi Akiva ; cette michna est pourtant l&#x27;essentiel, parce qu&#x27;elle est enseignée avec la hala&#x27;ha, comme michna fixée de Kiddouchin, et parce que nous trouvons en beaucoup d&#x27;endroits une michna de ce genre, comme il est enseigné là-bas (Yevamot 14b) : évidemment, les enfants de ceux qui sont passibles d&#x27;un interdit sont casher ; et il est encore enseigné : « Qui est mamzer ? Tout cas dont l&#x27;interdit est un interdit d&#x27;ervah et passible de karet » : cela indique qu&#x27;il n&#x27;y a de mamzer que parmi ceux qui sont passibles de karet.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La michna pose la première règle de lignée : lorsque le mariage est permis (<b>kiddouchin sans transgression</b>), l'enfant prend le statut de son <b>père</b>. Une fille de kohen, de Lévi ou d'Israélite mariée à un homme qui lui est permis donne un enfant de la caste du père. Les Tossefot discutent l'opinion retenue sur le mamzer : seulement les passibles de karet (Rabbi Chimon le Témanite), et non les simples interdits (lav).</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 740 340" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6a6a6a"/></marker></defs><rect x="0" y="0" width="740" height="340" fill="#fbfaf6"/><text x="370" y="24" text-anchor="middle" font-size="16" font-weight="bold" fill="#2b2b2b">Michna : à qui l'enfant ressemble-t-il ?</text><rect x="20" y="40" width="700" height="61" rx="5" fill="#e0eee0" stroke="#5f9a63"/><text x="370" y="60" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2d5a31">Cas 1 : il y a kiddouchin et PAS de transgression</text><text x="370" y="75" text-anchor="middle" font-size="11" fill="#2d5a31">Kohenet / Lévia / Israélite mariées à kohen / Lévi / Israélite</text><text x="370" y="90" text-anchor="middle" font-size="11" fill="#2d5a31">L'enfant suit le MÂLE</text><rect x="20" y="112" width="700" height="61" rx="5" fill="#f6efd6" stroke="#b59a3c"/><text x="370" y="132" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#6a5716">Cas 2 : il y a kiddouchin ET transgression</text><text x="370" y="147" text-anchor="middle" font-size="11" fill="#6a5716">Almana à un grand prêtre, divorcée / 'halutsa à un kohen, mamzeret / netina à un Israélite...</text><text x="370" y="162" text-anchor="middle" font-size="11" fill="#6a5716">L'enfant suit le parent DÉFICIENT (pagoum)</text><rect x="20" y="184" width="700" height="61" rx="5" fill="#f2e2dd" stroke="#a75d4b"/><text x="370" y="204" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#7c3b2c">Cas 3 : pas de kiddouchin avec lui, mais des kiddouchin avec d'autres</text><text x="370" y="219" text-anchor="middle" font-size="11" fill="#7c3b2c">Relations interdites de la Torah (arayot)</text><text x="370" y="234" text-anchor="middle" font-size="11" fill="#7c3b2c">L'enfant est MAMZER</text><rect x="20" y="256" width="700" height="61" rx="5" fill="#ffffff" stroke="#c9c5b6"/><text x="370" y="276" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#3a3a3a">Cas 4 : aucun kiddouchin, ni avec lui ni avec d'autres</text><text x="370" y="291" text-anchor="middle" font-size="11" fill="#3a3a3a">Servante cananéenne, non-Juive</text><text x="370" y="306" text-anchor="middle" font-size="11" fill="#3a3a3a">L'enfant est COMME ELLE</text></svg></div><div class="svg-cap">Les quatre règles de lignée de la michna (Kiddouchin 66b).</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg14">
+          <div class="seg-num">15</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְכָל מָקוֹם שֶׁיֵּשׁ קִידּוּשִׁין וְיֵשׁ עֲבֵירָה – הַוָּלָד הוֹלֵךְ אַחַר הַפָּגוּם. וְאֵיזֶה זוֹ – זוֹ אַלְמָנָה לְכֹהֵן גָּדוֹל, גְּרוּשָׁה וַחֲלוּצָה לְכֹהֵן הֶדְיוֹט, מַמְזֶרֶת וּנְתִינָה לְיִשְׂרָאֵל, בַּת יִשְׂרָאֵל לְמַמְזֵר וּלְנָתִין.</div>
+            <div class="fr"><p>Et tout cas où il y a kiddouchin et il y a transgression, l&#x27;enfant suit le parent déficient. Et quel est ce cas ?</p><p>C&#x27;est la veuve avec un grand prêtre, la divorcée et la &#x27;halutsa avec un kohen ordinaire, la mamzeret et la netina avec un Israélite, la fille d&#x27;Israélite avec un mamzer et un natin.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַחַר הַפָּגוּם שֶׁבִּשְׁנֵיהֶם</b> שֶׁנּוֹלַד מִפְּסוּלֵי כְּהֻונָּה הַוָּלָד פָּסוּל וְכֵן בֶּן מַמְזֶרֶת לְיִשְׂרָאֵל מַמְזֵר וְכֵן בֶּן מַמְזֵר מִיִּשְׂרְאֵלִית מַמְזֵר וְכֵן בַּת נְתִינָה לְיִשְׂרָאֵל נָתִין וּבֶן נָתִין מִכְּשֵׁרָה נָתִין:</div>
+          <div class="glose-fr">« Suit le parent déficient des deux » : celui qui naît de personnes disqualifiées de la prêtrise est disqualifié ; de même le fils d&#x27;une mamzeret avec un Israélite est mamzer, de même le fils d&#x27;un mamzer avec une Israélite est mamzer, de même la fille d&#x27;une netina avec un Israélite est natin, et le fils d&#x27;un natin avec une femme casher est natin.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אַלְמָנָה לְכ&quot;ג</b> יֵשׁ קִידּוּשִׁין וְיֵשׁ עֲבֵירָה דְּקָסָבַר קִידּוּשִׁין תּוֹפְסִין בְּחַיָּיבֵי לָאוִין:</div>
+          <div class="glose-fr">« La veuve avec un grand prêtre » : il y a kiddouchin et il y a transgression, car il considère que les kiddouchin s&#x27;appliquent aux passibles d&#x27;un simple interdit.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deuxième règle : quand les <b>kiddouchin prennent mais le mariage est interdit</b> (interdit simple, <b>lav</b>), l'enfant suit le <b>parent déficient</b> (<b>pagoum</b>). Ainsi le fils de la veuve et du grand prêtre est 'halal ; la fille d'une netina et d'un Israélite est natin.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg15">
+          <div class="seg-num">16</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְכָל מִי שֶׁאֵין לָהּ עָלָיו קִידּוּשִׁין, אֲבָל יֵשׁ לָהּ עַל אֲחֵרִים קִידּוּשִׁין – הַוָּלָד מַמְזֵר. וְאֵיזֶה זֶה – זֶה הַבָּא עַל אַחַת מִכָּל הָעֲרָיוֹת שֶׁבַּתּוֹרָה. וְכָל מִי שֶׁאֵין לָהּ לֹא עָלָיו וְלֹא עַל אֲחֵרִים קִידּוּשִׁין – הַוָּלָד כְּמוֹתָהּ. וְאֵיזֶה זֶה – זֶה וְלַד שִׁפְחָה וְנָכְרִית.</div>
+            <div class="fr"><p>Et toute femme qui n&#x27;a pas de kiddouchin avec lui mais qui en a avec d&#x27;autres, l&#x27;enfant est mamzer. Et quel est ce cas ?</p><p>C&#x27;est celui qui vient sur l&#x27;une de toutes les arayot de la Torah. Et toute femme qui n&#x27;a de kiddouchin ni avec lui ni avec d&#x27;autres, l&#x27;enfant est comme elle.</p><p>Et quel est ce cas ? C&#x27;est l&#x27;enfant d&#x27;une servante et d&#x27;une non-Juive.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַוָּלָד מַמְזֵר</b> בַּגְּמָרָא מְפָרֵשׁ לָהּ:</div>
+          <div class="glose-fr">« L&#x27;enfant est mamzer » : la guemara l&#x27;explique plus loin.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>מִכָּל עֲרָיוֹת שֶׁבַּתּוֹרָה</b> שֶׁל חַייָּבֵי כְּרִיתוֹת:</div>
+          <div class="glose-fr">« De toutes les arayot de la Torah » : celles qui sont passibles de karet.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>הַוָּלָד כְּמוֹתָהּ</b> וְלַד נָכְרִית נָכְרִי וְאִם גִּייְּרוּהוּ הָוֵי גֵּר כָּשֵׁר וְאֵינוֹ מַמְזֵר:</div>
+          <div class="glose-fr">« L&#x27;enfant est comme elle » : l&#x27;enfant d&#x27;une non-Juive est non-Juif ; si on l&#x27;a converti, c&#x27;est un prosélyte casher et il n&#x27;est pas mamzer.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְלַד שִׁפְחָה</b> עֶבֶד שֶׁשִּׁחְרְרוֹ בְּעָלָיו כָּשֵׁר וּמֻותָּר בְּיִשְׂרְאֵלִית:</div>
+          <div class="glose-fr">« L&#x27;enfant de la servante » : l&#x27;esclave que son maître a affranchi est casher et permis avec une Israélite.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Troisième règle : pas de kiddouchin avec cet homme mais des kiddouchin avec d'autres (<b>ervah</b>, une relation interdite passible de karet) : l'enfant est <b>mamzer</b>. Quatrième règle : aucun kiddouchin possible avec personne (servante cananéenne, non-Juive) : l'enfant a le statut de sa mère.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg16">
+          <div class="seg-num">17</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">גְּמָ׳ כָּל מָקוֹם שֶׁיֵּשׁ קִידּוּשִׁין. אֲמַר לֵיהּ רַבִּי שִׁמְעוֹן לְרַבִּי יוֹחָנָן: כְּלָלָא הוּא דְּכָל מָקוֹם שֶׁיֵּשׁ קִידּוּשִׁין וְאֵין עֲבֵירָה הַוָּלָד הוֹלֵךְ אַחַר הַזָּכָר? הֲרֵי</div>
+            <div class="fr"><p>Guemara. « Tout cas où il y a kiddouchin. » Rabbi Chimon dit à Rabbi Yo&#x27;hanan : Est-ce une règle que tout cas où il y a kiddouchin et pas de transgression, l&#x27;enfant suit le mâle ?</p><p>Voici</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara ouvre sa discussion de la michna. Le texte est interrompu au milieu d'une objection de Rabbi Chimon à Rabbi Yo'hanan, qui se poursuit à la page suivante (67a).</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Kiddushin_66a.html">&lsaquo; Kiddushin 66a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Kiddushin_67a.html">Kiddushin 67a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schémas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage sélectionné :\n« '+s+' »\n'):'\nPassage concerné :\n\n')+'\nCorrection proposée :\n\n\n— envoyé depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<p id="credit-texte" style="text-align:center;font-size:.76rem;color:#78716c;margin:6px auto 18px;max-width:640px;line-height:1.5">
+Texte hébreu et araméen vocalisé : édition numérique William Davidson du Talmud Koren Noé, via
+<a href="https://www.sefaria.org" style="color:#78716c">Sefaria</a> (licence CC BY-NC). Traduction française, notes et schémas : Chiourim BA (licence CC BY 4.0).</p>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>
