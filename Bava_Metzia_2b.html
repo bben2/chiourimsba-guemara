@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bava Metzia 2b — Pourquoi la michna enseigne la trouvaille et l&#x27;achat, puis la michna face à Ben Nannos, à Soum&#x27;hos et à la derara de-mamona</title>
+<style>
+  :root { --bg:#faf8f3; --ink:#1c1917; --muted:#78716c; --line:#e7e2d8; --paper:#fffdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 18px 120px; }
+  header.top { text-align:center; padding:24px 0 16px; border-bottom:2px solid var(--line); margin-bottom:24px; }
+  header.top h1 { margin:0 0 6px; font-size:1.7rem; }
+  header.top .ref { color:var(--muted); font-size:.95rem; letter-spacing:.04em; }
+  .resume { background:var(--paper); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; margin:18px 0; font-size:.98rem; }
+  .resume b { color:#7c3aed; }
+  .resume p { margin:.45em 0; } .resume p:first-child { margin-top:0; } .resume p:last-child { margin-bottom:0; }
+  figure.intro-svg { margin:18px 0; padding:14px; background:var(--paper);
+    border:1px solid var(--line); border-radius:12px; text-align:center; }
+  figure.intro-svg figcaption { color:var(--muted); font-size:.88rem; margin-top:8px; }
+  .svg-wrap { overflow-x:auto; }
+  .svg-wrap svg { max-width:100%; height:auto; }
+  .seg { display:flex; gap:12px; margin:0 0 10px; padding:14px;
+    background:var(--paper); border:1px solid var(--line); border-radius:12px; }
+  .seg-num { flex:0 0 26px; height:26px; border-radius:50%; background:#1c1917; color:#fff;
+    font-size:.78rem; display:flex; align-items:center; justify-content:center; font-weight:600; }
+  .seg-main { flex:1; min-width:0; }
+  .he { font-family:"Frank Ruhl Libre","Times New Roman",serif; font-size:1.35rem;
+    line-height:1.9; text-align:right; }
+  .fr { margin-top:8px; font-size:1.02rem; color:#292524; }
+  .fr p { margin:0 0 .55em; } .fr p:last-child { margin-bottom:0; }
+  .tools { margin-top:10px; display:flex; flex-direction:column; gap:6px; }
+  details.comm { border:1px solid var(--line); border-radius:9px; overflow:hidden; background:#fff; }
+  details.comm summary { cursor:pointer; padding:8px 12px; font-size:.9rem; font-weight:600;
+    list-style:none; color:var(--c,#444); border-left:4px solid var(--c,#444); user-select:none; }
+  details.comm summary::-webkit-details-marker { display:none; }
+  details.comm summary:hover { background:#faf8f3; }
+  details.comm .cnt { color:var(--muted); font-weight:400; }
+  .comm-body { padding:6px 14px 12px; font-size:.95rem; }
+  .glose { padding:7px 0; border-bottom:1px dashed var(--line); }
+  .glose:last-child { border-bottom:none; }
+  .glose-he { font-family:"Frank Ruhl Libre",serif; font-size:1.08rem; line-height:1.7; color:#44403c; }
+  .glose-he b { color:#b45309; }
+  .glose-fr { margin-top:3px; color:#57534e; font-size:.92rem; }
+  .explain-body { line-height:1.7; }
+  .explain-body p { margin:.5em 0; }
+  .explain-body b { color:#7c3aed; }
+  .svg-cap { color:var(--muted); font-size:.85rem; margin-top:6px; text-align:center; }
+  .dafnav { display:flex; gap:8px; justify-content:space-between; align-items:center; margin:16px 0; flex-wrap:wrap; }
+  .dafnav .nav-b { text-decoration:none; color:#1c1917; background:var(--paper); border:1px solid var(--line);
+    border-radius:999px; padding:8px 15px; font-size:.9rem; font-weight:600; white-space:nowrap; }
+  .dafnav .nav-b:hover { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home { background:#1c1917; color:#fff; }
+  .dafnav .nav-b.home:hover { background:#44403c; }
+  .dafnav .nav-b.off { opacity:.28; pointer-events:none; }
+  .ctl { position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    background:#1c1917; border-radius:999px; padding:6px; display:flex; gap:4px; box-shadow:0 6px 24px rgba(0,0,0,.25); z-index:50; }
+  .ctl button { border:none; background:transparent; color:#d6d3d1; font-size:.82rem;
+    padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:600; }
+  .ctl button:hover { background:#44403c; color:#fff; }
+  @media (max-width:600px) { .he { font-size:1.2rem; } .seg { padding:11px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Bava Metzia 2b — Pourquoi la michna enseigne la trouvaille et l&#x27;achat, puis la michna face à Ben Nannos, à Soum&#x27;hos et à la derara de-mamona</h1>
+    <div class="ref">Bava_Metzia 2b</div>
+  </header>
+  <nav class="dafnav"><a class="nav-b" href="Bava_Metzia_2a.html">&lsaquo; Bava_Metzia 2a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Bava_Metzia_3a.html">Bava_Metzia 3a &rsaquo;</a></nav>
+  <div class="resume"><p><b>Sougya :</b> Le folio poursuit la question posée à la michna des deux hommes qui tiennent un vêtement : pourquoi enseigne-t-elle à la fois la trouvaille et l&#x27;achat-vente ? La guemara répond que chaque cas, pris seul, aurait pu suggérer que l&#x27;autre ne requiert pas de serment.</p><p>Elle écarte ensuite l&#x27;idée d&#x27;interroger le vendeur, qui a reçu l&#x27;argent des deux acheteurs. Vient alors une série de confrontations avec les avis connus : Ben Nannos, qui refuse un serment en vain, puis Soum&#x27;hos, qui fait partager sans serment un argent douteux, face aux Rabbanan pour qui la preuve incombe à celui qui retire.</p><p>La distinction entre « peut-être et peut-être » et « certain et certain », puis celle de la derara de-mamona, préparent un kal va-&#x27;homer qui se poursuit à la page suivante.</p></div>
+  <figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 352" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="352" fill="#fbfaf6"/>
+<text x="370" y="24" text-anchor="middle" font-size="16" font-weight="bold" fill="#2b2b2b">Pourquoi la michna enseigne les deux cas : chacun aurait pu laisser croire le contraire pour l'autre</text>
+<rect x="24" y="40" width="340" height="34" rx="6" fill="#f7ebe7" stroke="#a75d4b" stroke-width="1.5"/>
+<text x="194" y="62" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#7c3b2c">Si elle n'enseignait que la trouvaille</text>
+<rect x="376" y="40" width="340" height="34" rx="6" fill="#eaf3e8" stroke="#5d8f5b" stroke-width="1.5"/>
+<text x="546" y="62" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#2e5c2c">Si elle n'enseignait que l'achat-vente</text>
+<rect x="24" y="82" width="340" height="86" rx="6" fill="#fff" stroke="#c9c5b6"/>
+<text x="194" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a3a3a">Le serment serait imposé ici, car le réclamant se dit :</text>
+<text x="194" y="122" text-anchor="middle" font-size="12" fill="#4a2820">mon compagnon n'y perd rien, elle lui est venue</text>
+<text x="194" y="138" text-anchor="middle" font-size="12" fill="#4a2820">gratuitement ; je saisis et je partage avec lui.</text>
+<text x="194" y="158" text-anchor="middle" font-size="11.5" fill="#7c3b2c">Il saisit donc même en sachant que l'autre l'a trouvée.</text>
+<rect x="376" y="82" width="340" height="86" rx="6" fill="#fff" stroke="#c9c5b6"/>
+<text x="546" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a3a3a">Le serment serait imposé ici, car le réclamant se dit :</text>
+<text x="546" y="122" text-anchor="middle" font-size="12" fill="#24422a">lui donne de l'argent et moi aussi ; j'en ai besoin</text>
+<text x="546" y="138" text-anchor="middle" font-size="12" fill="#24422a">maintenant, je la prends, qu'il aille acheter ailleurs.</text>
+<text x="546" y="158" text-anchor="middle" font-size="11.5" fill="#2e5c2c">Il prétend lui laisser la peine de chercher autre chose.</text>
+<rect x="24" y="178" width="340" height="104" rx="6" fill="#fff" stroke="#c9c5b6"/>
+<text x="194" y="198" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a3a3a">Pour l'achat-vente, on dirait : pas de serment</text>
+<text x="194" y="218" text-anchor="middle" font-size="12" fill="#4a2820">On ne peut pas parler ainsi. Celui qui vient partager</text>
+<text x="194" y="234" text-anchor="middle" font-size="12" fill="#4a2820">et payer la moitié du prix contre le droit fait perdre</text>
+<text x="194" y="250" text-anchor="middle" font-size="12" fill="#4a2820">à l'autre ce dont il avait besoin (Rachi).</text>
+<text x="194" y="271" text-anchor="middle" font-size="11.5" fill="#7c3b2c">D'où l'enseignement du cas de l'achat.</text>
+<rect x="376" y="178" width="340" height="104" rx="6" fill="#fff" stroke="#c9c5b6"/>
+<text x="546" y="198" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a3a3a">Pour la trouvaille, on dirait : pas de serment</text>
+<text x="546" y="218" text-anchor="middle" font-size="12" fill="#24422a">On ne peut pas parler ainsi. Son compagnon ne peut</text>
+<text x="546" y="234" text-anchor="middle" font-size="12" fill="#24422a">pas aller se donner la peine d'en trouver une autre :</text>
+<text x="546" y="250" text-anchor="middle" font-size="12" fill="#24422a">lui prendre sa part lui fait perdre de l'argent.</text>
+<text x="546" y="271" text-anchor="middle" font-size="11.5" fill="#2e5c2c">D'où l'enseignement du cas de la trouvaille.</text>
+<rect x="24" y="294" width="692" height="46" rx="6" fill="#eef0f6" stroke="#7a86a8"/>
+<text x="370" y="314" text-anchor="middle" font-size="13" font-weight="bold" fill="#2f3a55">Conclusion de la guemara : tsericha, les deux sont nécessaires.</text>
+<text x="370" y="331" text-anchor="middle" font-size="12" fill="#2f3a55">Chaque cas enseigne le serment que l'autre cas, seul, aurait pu laisser écarter.</text>
+</svg></div>
+          <figcaption>Les deux hypothèses de la guemara (hava amina) : ce que laisserait croire chaque cas pris isolément, et pourquoi la michna doit enseigner les deux.</figcaption>
+        </figure><figure class="intro-svg">
+          <div class="svg-wrap"><svg viewBox="0 0 740 470" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="740" height="470" fill="#fbfaf6"/>
+<text x="370" y="24" text-anchor="middle" font-size="16" font-weight="bold" fill="#2b2b2b">La michna mise à l'épreuve des avis connus : objections et réponses</text>
+<defs><marker id="mm2b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#7a86a8"/></marker></defs>
+<rect x="24" y="38" width="330" height="26" rx="4" fill="#f7ebe7" stroke="#a75d4b"/>
+<text x="189" y="56" text-anchor="middle" font-size="13" font-weight="bold" fill="#7c3b2c">Objection</text>
+<rect x="386" y="38" width="330" height="26" rx="4" fill="#eaf3e8" stroke="#5d8f5b"/>
+<text x="551" y="56" text-anchor="middle" font-size="13" font-weight="bold" fill="#2e5c2c">Réponse</text>
+<rect x="24" y="72" width="330" height="62" rx="6" fill="#fff" stroke="#c9c5b6"/>
+<text x="189" y="92" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">1. Pas selon Ben Nannos</text>
+<text x="189" y="110" text-anchor="middle" font-size="11.5" fill="#4a2820">Il refuse que les deux en viennent à un</text>
+<text x="189" y="125" text-anchor="middle" font-size="11.5" fill="#4a2820">serment dont l'un sera un serment en vain.</text>
+<rect x="386" y="72" width="330" height="62" rx="6" fill="#fff" stroke="#c9c5b6"/>
+<text x="551" y="92" text-anchor="middle" font-size="11.5" fill="#24422a">Là il y a assurément un serment en vain ;</text>
+<text x="551" y="110" text-anchor="middle" font-size="11.5" fill="#24422a">ici, peut-être les deux l'ont-ils soulevée</text>
+<text x="551" y="125" text-anchor="middle" font-size="11.5" fill="#24422a">ensemble : chacun jure la vérité sur sa part.</text>
+<line x1="354" y1="103" x2="384" y2="103" stroke="#7a86a8" stroke-width="2" marker-end="url(#mm2b)"/>
+<rect x="24" y="146" width="330" height="62" rx="6" fill="#fff" stroke="#c9c5b6"/>
+<text x="189" y="166" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">2. Pas selon Soum'hos</text>
+<text x="189" y="184" text-anchor="middle" font-size="11.5" fill="#4a2820">Un argent en doute se partage sans serment ;</text>
+<text x="189" y="199" text-anchor="middle" font-size="11.5" fill="#4a2820">la michna impose pourtant un serment.</text>
+<rect x="386" y="146" width="330" height="62" rx="6" fill="#fff" stroke="#c9c5b6"/>
+<text x="551" y="166" text-anchor="middle" font-size="11.5" fill="#24422a">Selon les Rabbanan, alors ? Ils disent que la</text>
+<text x="551" y="184" text-anchor="middle" font-size="11.5" fill="#24422a">preuve incombe à celui qui retire : ici les deux</text>
+<text x="551" y="199" text-anchor="middle" font-size="11.5" fill="#24422a">tiennent, ils partagent avec serment.</text>
+<line x1="354" y1="177" x2="384" y2="177" stroke="#7a86a8" stroke-width="2" marker-end="url(#mm2b)"/>
+<rect x="24" y="220" width="330" height="62" rx="6" fill="#fff" stroke="#c9c5b6"/>
+<text x="189" y="240" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">3. Mais selon Soum'hos : a fortiori</text>
+<text x="189" y="258" text-anchor="middle" font-size="11.5" fill="#4a2820">Si même là où les deux ne tiennent pas on</text>
+<text x="189" y="273" text-anchor="middle" font-size="11.5" fill="#4a2820">partage sans serment, ici bien plus encore.</text>
+<rect x="386" y="220" width="330" height="62" rx="6" fill="#fff" stroke="#c9c5b6"/>
+<text x="551" y="240" text-anchor="middle" font-size="11.5" fill="#24422a">Soum'hos dit cela pour peut-être et peut-être ;</text>
+<text x="551" y="258" text-anchor="middle" font-size="11.5" fill="#24422a">pour certain et certain, il ne l'a pas dit.</text>
+<text x="551" y="273" text-anchor="middle" font-size="11.5" fill="#24422a">Ici, chacun est certain de son fait.</text>
+<line x1="354" y1="251" x2="384" y2="251" stroke="#7a86a8" stroke-width="2" marker-end="url(#mm2b)"/>
+<rect x="24" y="294" width="330" height="62" rx="6" fill="#fff" stroke="#c9c5b6"/>
+<text x="189" y="314" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">4. Selon Rabba bar Rav Houna</text>
+<text x="189" y="332" text-anchor="middle" font-size="11.5" fill="#4a2820">Soum'hos a dit son avis même pour</text>
+<text x="189" y="347" text-anchor="middle" font-size="11.5" fill="#4a2820">certain et certain : que répondre ?</text>
+<rect x="386" y="294" width="330" height="62" rx="6" fill="#fff" stroke="#c9c5b6"/>
+<text x="551" y="314" text-anchor="middle" font-size="11.5" fill="#24422a">Soum'hos ne l'a dit que là où il y a derara</text>
+<text x="551" y="332" text-anchor="middle" font-size="11.5" fill="#24422a">de-mamona (un doute d'argent indépendant des</text>
+<text x="551" y="347" text-anchor="middle" font-size="11.5" fill="#24422a">plaidoiries) ; là où il n'y en a pas, non.</text>
+<line x1="354" y1="325" x2="384" y2="325" stroke="#7a86a8" stroke-width="2" marker-end="url(#mm2b)"/>
+<rect x="24" y="368" width="330" height="62" rx="6" fill="#fdf4e8" stroke="#c98b3a" stroke-width="1.5"/>
+<text x="189" y="388" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#8a5a12">5. Un kal va-'homer</text>
+<text x="189" y="406" text-anchor="middle" font-size="11.5" fill="#6b4710">Si là où il y a derara de-mamona pour l'un</text>
+<text x="189" y="421" text-anchor="middle" font-size="11.5" fill="#6b4710">et derara de-mamona pour l'autre,</text>
+<rect x="386" y="368" width="330" height="62" rx="6" fill="#eef0f6" stroke="#7a86a8" stroke-dasharray="5 4"/>
+<text x="551" y="404" text-anchor="middle" font-size="12" fill="#2f3a55">La suite figure à la page suivante (3a).</text>
+<line x1="354" y1="399" x2="384" y2="399" stroke="#7a86a8" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#mm2b)"/>
+<text x="370" y="454" text-anchor="middle" font-size="11.5" fill="#6a6a6a">Les flèches relient chaque objection à la réponse qui la suit dans la guemara.</text>
+</svg></div>
+          <figcaption>La chaîne des objections tirées de Ben Nannos, de Soum&#x27;hos et des Rabbanan, avec la réponse donnée à chacune, jusqu&#x27;au kal va-&#x27;homer qui se poursuit en 3a.</figcaption>
+        </figure>
+  <section class="seg" id="seg0">
+          <div class="seg-num">1</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">דְּאִי תְּנָא מְצִיאָה הֲוָה אָמֵינָא: מְצִיאָה הוּא דִּרְמוֹ רַבָּנַן שְׁבוּעָה עֲלֵיהּ מִשּׁוּם דְּמוֹרֵי וְאָמַר, חַבְרַאי לָאו מִידֵּי חָסַר בָּהּ, אֵיזִל אֶתְפִּיס וְאִתְפְּלֵיג בַּהֲדֵיהּ! אֲבָל מֶקַח וּמִמְכָּר, דְּלֵיכָּא לְמֵימַר הָכִי – אֵימָא לָא.</div>
+            <div class="fr"><p>Car si la michna avait enseigné seulement la trouvaille, j&#x27;aurais dit : c&#x27;est pour la trouvaille que les Rabbanan ont imposé un serment, parce que [le réclamant] se donne la permission et dit : mon compagnon n&#x27;y perd rien ; je vais saisir et partager avec lui ! Mais pour l&#x27;achat et la vente, où l&#x27;on ne peut pas parler ainsi, je dirais que non.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(3)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּמוֹרֶה וְאָמַר</b> מוֹרֶה הֶיתֵּר לְעַצְמוֹ לֶאֱחֹוז בָּהּ בְּלֹא מִשְׁפָּט:</div>
+          <div class="glose-fr">Il se donne à lui-même la permission de la saisir, sans jugement.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לָאו מִידֵּי חָסֵר</b> אֵינוֹ מַפְסִיד כְּלוּם בְּחִנָּם בָּאָה לוֹ וְאַף בְּלֹא טֹורַח:</div>
+          <div class="glose-fr">Il ne perd rien : elle lui est venue gratuitement, et même sans peine.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲבָל מִקָּח וּמִמְכָּר דְּלֵיכָּא לְמֵימַר הָכִי</b> וְאַף עַל גַּב שֶׁזֶּה גַּם הוּא נָתַן אֶת הַמָּעוֹת לַמּוֹכֵר כִּדְאוֹקְמִינַן לְקַמָּן דִּנְקַט מִתַּרְוַיְיהוּ חַד מִדַּעְתֵּיהּ וְחַד בְּעַל כָּרְחֵיהּ וּכְשֶׁיַּחְלוֹקוּ יִטֹּול זֶה חֲצִי מְעוֹתָיו וְזֶה חֲצִי מְעוֹתָיו אֲפִילּוּ הָכֵי חִסָּרוֹן הוּא אֶצְלוֹ דְּאִי לָא הֲוָה צָרִיךְ לָהּ לָא הֲוָה מַהְדַּר אַבָּתְרַהּ לִמְזַבְּנָה וְזֶה שֶׁבָּא לַחֲלֹוק וְלִיתֵּן חֲצִי דָּמִים שֶׁלֹּא כַּדִּין מְחַסְּרוֹ:</div>
+          <div class="glose-fr">Mais pour l&#x27;achat et la vente, où l&#x27;on ne peut pas parler ainsi : bien que celui-ci aussi ait donné l&#x27;argent au vendeur, comme nous l&#x27;établirons plus loin, où [le vendeur] a pris [l&#x27;argent] des deux, l&#x27;un de son gré et l&#x27;autre contre son gré, et que lorsqu&#x27;ils partageront, celui-ci prendra la moitié de son argent et celui-là la moitié de son argent, même ainsi il y a perte chez lui : s&#x27;il n&#x27;avait pas eu besoin de l&#x27;objet, il ne l&#x27;aurait pas poursuivi pour l&#x27;acheter ; et celui qui vient partager et donner la moitié du prix contre le droit lui cause une perte.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אִי תְּנָא מְצִיאָה</b> מִשּׁוּם דְּמוֹרֶה וְאָמַר חַבְרַאי לָאו מִידֵּי חָסַר לְכָךְ תְּפִיס אע&quot;ג שֶׁיּוֹדֵעַ שֶׁחֲבֵירוֹ מָצְאָה וְרָמוּ רַבָּנָן שְׁבוּעָה עָלֶיהָ כְּדֵי שֶׁיִּפְרֹושׁ אֲבָל מִקָּח וּמִמְכָּר דְּלֵיכָּא לְמֵימַר הָכִי שֶׁאִם יוֹדֵעַ שֶׁחֲבֵירוֹ קְנָאָהּ לָא הָוֵי תְּפִיס וּמִדִּתְפִיס בָּהּ סָבוּר שֶׁלּוֹ הוּא וְנִתְרַצָּה הַמּוֹכֵר כִּדְמַסִּיק לְקַמָּן דְּנָקֵיט זוּזֵי מִתַּרְוַייְהוּ אֵימָא לֹא יִשָּׁבַע דְּמִשּׁוּם שְׁבוּעָה לֹא יִפְרֹושׁ שֶׁהֲרֵי סָבוּר הוּא לוֹמַר אֱמֶת קמ&quot;ל דְּאַפֵּ&quot;ה יִשָּׁבַע וְהֵיכָא שֶׁוַּדַּאי אֵינוֹ סָבוּר לוֹמַר אֱמֶת כְּגוֹן דְּקָא טְעִין כָּל אֶחָד אֲנִי אֲרַגְתִּיהָ שֶׁאֶחָד מֵהֶן טוֹעֵן שֶׁקֶר בְּמֵזִיד אוֹ כְּגוֹן שְׁנַיִם אֲדוּקִין בַּשְּׁטָר דִּלְקַמָּן (בָּבָא מְצִיעָא דַּף ז.) הָתָם פְּשִׁיטָא דְּיַחֲלֹוקוּ בִּשְׁבוּעָה דע&quot;י שְׁבוּעָה וַדַּאי יִפְרֹושׁ דַּחֲשִׁיד אַמָּמוֹנָא לָא חֲשִׁיד אַשְּׁבוּעֲתָא:</div>
+          <div class="glose-fr">Si la michna avait enseigné la trouvaille : parce qu&#x27;il se donne la permission et dit : mon compagnon n&#x27;y perd rien, c&#x27;est pourquoi il saisit, bien qu&#x27;il sache que son compagnon l&#x27;a trouvée ; et les Rabbanan ont imposé un serment sur elle, afin qu&#x27;il s&#x27;en abstienne. Mais pour l&#x27;achat et la vente, où l&#x27;on ne peut pas parler ainsi : s&#x27;il savait que son compagnon l&#x27;a acquise, il ne saisirait pas ; et puisqu&#x27;il a saisi, il pense qu&#x27;elle est à lui et que le vendeur a consenti, comme on le conclut plus loin : [le vendeur] a pris les pièces des deux. Je dirais qu&#x27;il ne jure pas : le serment ne le ferait pas s&#x27;abstenir, puisqu&#x27;il pense dire vrai. [La michna] nous enseigne donc qu&#x27;il jure néanmoins. Et là où il est certain qu&#x27;il ne pense pas dire vrai, par exemple lorsque chacun plaide : c&#x27;est moi qui l&#x27;ai tissé, car l&#x27;un d&#x27;eux plaide faussement à dessein, ou le cas de deux hommes qui tiennent un acte plus loin (Bava Metzia 7a), il est évident qu&#x27;ils partagent avec serment : par le serment il s&#x27;abstiendra assurément, car celui qui est soupçonné en matière d&#x27;argent n&#x27;est pas soupçonné en matière de serment.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara répond à la question de savoir pourquoi la michna des deux hommes qui tiennent un vêtement enseigne à la fois la <b>trouvaille</b> (metzia) et l'<b>achat-vente</b> (mika'h oumimkar). Chaque cas, pris seul, aurait pu laisser croire que l'autre ne requiert pas de serment. Ici, l'hypothèse porte sur la trouvaille : le réclamant se permet de saisir, convaincu que son compagnon, qui a trouvé l'objet gratuitement, n'y perd rien ; les Rabbanan lui imposent un serment pour le retenir. L'achat se distingue : celui qui vient partager fait perdre à l'autre ce dont il avait besoin.</p><p>Tossefot précise le mécanisme. Dans la trouvaille, le réclamant saisit en sachant que l'autre l'a trouvée, et le serment sert à le dissuader. Dans l'achat, il croit sincèrement que l'objet est à lui : le serment ne le dissuaderait pas, et l'on pourrait penser qu'il n'y en a pas. Là où l'un des deux ment à dessein, le serment dissuade assurément, car celui qui est soupçonné d'argent n'est pas soupçonné de serment.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg1">
+          <div class="seg-num">2</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאִי תְּנָא מִקָּח וּמִמְכָּר, הוּא דִּרְמוֹ רַבָּנַן שְׁבוּעָה עֲלֵיהּ מִשּׁוּם דְּמוֹרֵי וְאָמַר: חַבְרַאי דְּמֵי קָא יָהֵיב וַאֲנָא דְּמֵי קָא יָהֵיבְנָא, הַשְׁתָּא דִּצְרִיכָא לְדִידִי אֶשְׁקְלֵיהּ אֲנָא, וְחַבְרַאי לֵיזִיל לִטְרַח לִיזְבַּן, אֲבָל מְצִיאָה, דְּלֵיכָּא לְמֵימַר הָכִי – אֵימָא לָא. צְרִיכָא.</div>
+            <div class="fr"><p>Et si la michna avait enseigné l&#x27;achat et la vente, j&#x27;aurais dit : c&#x27;est pour l&#x27;achat et la vente que les Rabbanan ont imposé un serment, parce que [le réclamant] se donne la permission et dit : mon compagnon donne de l&#x27;argent, et moi je donne de l&#x27;argent ; maintenant que j&#x27;en ai besoin, que je la prenne, et que mon compagnon aille se donner la peine d&#x27;acheter. Mais pour la trouvaille, où l&#x27;on ne peut pas parler ainsi, je dirais que non.</p><p>Les deux sont donc nécessaires.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּמִי קָא יָהֵיבְנָא</b> דָּמִים אֲנִי רוֹצֶה לִיתֵּן:</div>
+          <div class="glose-fr">Je veux donner de l&#x27;argent.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֲבָל מְצִיאָה דְּלֵיכָּא לְמֵימַר</b> חֲבֵרִי יֵלֵךְ וְיִמְצָא אַחֶרֶת זֶה וַדַּאי מְחַסְּרוֹ מָמוֹן:</div>
+          <div class="glose-fr">Mais pour la trouvaille, où l&#x27;on ne peut pas dire : mon compagnon ira et en trouvera une autre, celui-ci lui fait assurément perdre de l&#x27;argent.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Le raisonnement s'inverse. Si la michna n'avait enseigné que l'achat, on aurait cru le serment limité à ce cas : l'acheteur qui a besoin de l'objet et a payé peut dire que son compagnon n'a qu'à aller en acheter un autre. Ce discours est impossible pour la trouvaille, puisque l'on ne peut aller en trouver une autre : on dirait donc qu'il n'y a pas de serment.</p><p>Le dernier mot, <b>tsericha</b>, donne la conclusion : les deux enseignements sont nécessaires, chacun écartant l'erreur que l'autre, seul, aurait fait naître.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg2">
+          <div class="seg-num">3</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">מִקָּח וּמִמְכָּר, וְלִחְזֵי זוּזֵי מִמַּאן נָקֵט? לָא צְרִיכָא דְּנָקֵט מִתַּרְוַיְיהוּ, מֵחַד מִדַּעְתֵּיהּ וּמֵחַד בְּעַל כָּרְחֵיהּ, וְלָא יָדַעְנָא מִי הוּא מִדַּעְתֵּיהּ, וּמִי הוּא בְּעַל כָּרְחֵיהּ.</div>
+            <div class="fr"><p>Pour l&#x27;achat et la vente : mais qu&#x27;on regarde de qui il a pris l&#x27;argent ! — Il n&#x27;est pas nécessaire [de le dire] : c&#x27;est le cas où il a pris [l&#x27;argent] des deux, de l&#x27;un de son gré et de l&#x27;autre contre son gré, et je ne sais pas lequel est de son gré et lequel contre son gré.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְלִחְזֵי זוּזֵי מִמַּאן נָקֵט</b> נִשְׁאַל אֶת הַמּוֹכֵר מִמִּי קִיבֵּל דָּמֶיהָ דְּתַנְיָא בְּקִדּוּשִׁין (דַּף עג:) נֶאֱמָן בַּעַל הַמֶּקָּח לוֹמַר לָזֶה מָכַרְתִּי וְלָזֶה לֹא מָכַרְתִּי ואע&quot;ג דִּמְסַייֵּם בד&quot;א שֶׁמִּקָּחוֹ בְּיָדוֹ אֲבָל אֵין מִקָּחוֹ בְּיָדוֹ אֵינוֹ נֶאֱמָן שֶׁלֹּא נָתַן לֵב לְדָבָר כָּל כָּךְ לִהְיוֹת זָכוּר מֵאַחַר שֶׁשְּׁנֵיהֶם חָזְרוּ אַחֲרָיו בְּפִיסּוּק דָּמֶיהָ הָא אוֹקִימְנָא הָתָם בִּדְנָקֵט זוּזֵי מִתַּרְוַיְיהוּ מֵחַד מִדַּעְתֵּיהּ וּמֵחַד בע&quot;כ דְּכֵיוָן דְּלָא עֲלֵיהּ רַמְיָא לְאַסְהוֹדֵי לָא דַּק כֻּולֵּי הַאי לִהְיוֹת נִזְהָר מִשֶּׁהָלְכוּ מִלְּפָנָיו הֵי מִדַּעְתֵּיהּ וְהֵי בע&quot;כ אֲבָל הֵיכָא דְּלָא קִיבֵּל דָּמִים אֶלָּא מֵחַד מִידְכָּר דְּכִיר לֵיהּ:</div>
+          <div class="glose-fr">Qu&#x27;on interroge le vendeur sur celui dont il a reçu le prix. Car on a enseigné dans Kiddouchin (73b) que le propriétaire de la marchandise est cru pour dire : à celui-ci j&#x27;ai vendu, à celui-ci je n&#x27;ai pas vendu. Et bien que [la michna] conclue : quand ? quand sa marchandise est entre ses mains ; mais si sa marchandise n&#x27;est pas entre ses mains, il n&#x27;est pas cru, car il n&#x27;a pas porté son attention à la chose au point de s&#x27;en souvenir, puisque les deux sont venus derrière lui en fixant son prix. Mais nous avons établi là-bas [que cela vaut] quand [le vendeur] a pris l&#x27;argent des deux, de l&#x27;un de son gré et de l&#x27;autre contre son gré : puisqu&#x27;il ne lui incombait pas de témoigner, il n&#x27;a pas été si précis, une fois qu&#x27;ils sont partis de devant lui, au point de se garder de savoir lequel était de son gré et lequel contre son gré. Mais là où il n&#x27;a reçu l&#x27;argent que d&#x27;un seul, il s&#x27;en souvient assurément.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>לָא צְרִיכָא דִּנְקַט זוּזֵי מִתַּרְוַיְיהוּ</b> ה&quot;ג וְלָא יָדְעִינַן מֵהֵי מִדַּעְתֵּיהּ וּמֵהֵי בַּעַל כָּורְחֵיהּ וְלָא גָּרְסִי&#x27; וְלֹא יָדַע דְּאַפֵּי&#x27; יָדַע בְּזוֹ אֵין הַמּוֹכֵר נֶאֱמָן מִשֶּׁהָלְכוּ כִּדְמוּקֵי הָתָם:</div>
+          <div class="glose-fr">Il n&#x27;est pas nécessaire [de le dire] : [le vendeur] a pris les pièces des deux. Ainsi est la leçon : « et nous ne savons pas lequel est de son gré et lequel contre son gré », et l&#x27;on ne lit pas « et il ne sait pas » : car même s&#x27;il savait pour celui-ci, le vendeur n&#x27;est pas cru après leur départ, comme on l&#x27;établit là-bas.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וְלִחְזֵי זוּזֵי מִמַּאן נָקֵט</b> פרש&quot;י נִשְׁאַל לַמּוֹכֵר ואע&quot;ג דְּאֵין הַמּוֹכֵר נֶאֱמָן כְּשֶׁאֵין מִקָּחוֹ בְּיָדוֹ כְּדַאי&#x27; בַּעֲשָׂרָה יוּחֲסִין (קִדּוּשִׁין דַּף עג: וְשָׁם ד&quot;ה בד&quot;א) ה&quot;מ בִּדְנָקֵיט מִתַּרְוַייְהוּ אֲבָל בִּדְנָקֵיט מֵחַד נֶאֱמָן אֲפִילּוּ אֵין מִקָּחוֹ בְּיָדוֹ וְגָרְסִינַן בָּתַר הָכִי וְלָא יָדְעִינַן וּבְחִנָּם דָּחַק לְפָרֵשׁ כֵּן דְּהָכָא פָּרִיךְ שַׁפִּיר דְּאע&quot;ג דְּאֵין מִקָּחוֹ בְּיָדוֹ נֶאֱמָן הוּא כְּעֵד אֶחָד וְאַמַּאי שְׁנֵיהֶם נִשְׁבָּעִין אוֹתוֹ שֶׁהַמּוֹכֵר מְסַיְּיעוֹ יִפָּטֵר מִשְּׁבוּעָה וְאִידָךְ יִשָּׁבַע שְׁבוּעָה דְּאוֹרָייְתָא וְהַשְׁתָּא גָּרַס שַׁפִּיר וְלֹא יָדַע דְּאִי יָדַע הֲוָה נֶאֱמָן כְּעֵד אֶחָד וּמִיהוּ ה&quot;מ לְשַׁנּוֹיֵי דְּלֵיתֵיהּ קַמַּן דְּנִשְׁיְילֵיהּ ור&quot;י מְפָרֵשׁ דְּנִשְׁאַל לָהֶם מִמִּי קִבֵּל הַמּוֹכֵר הַמָּעוֹת שֶׁאֵין אָנוּ חוֹשְׁדִין אוֹתָן לְשַׁקֵּר בָּזֶה לוֹמַר נָתַתִּי וְהוּא לֹא נָתַן וְגַם הֵם אֵינָם חֲלוּקִים אֶלָּא לְמִי נִתְרַצָּה הַמּוֹכֵר אֲבָל בִּנְתִינַת הַמָּעוֹת אֵינָם חֲלוּקִין:</div>
+          <div class="glose-fr">Qu&#x27;on regarde de qui il a pris l&#x27;argent : Rachi explique qu&#x27;on interroge le vendeur. Et bien que le vendeur ne soit pas cru quand sa marchandise n&#x27;est pas entre ses mains, comme il est dit dans « Assara Yo&#x27;hassin » (Kiddouchin 73b, et là-bas au dibour hamatchil : bema devarim amourim), cela n&#x27;est dit que quand il a pris [l&#x27;argent] des deux ; mais s&#x27;il l&#x27;a pris d&#x27;un seul, il est cru même si sa marchandise n&#x27;est pas entre ses mains. Et nous lisons ensuite : « et nous ne savons pas », et c&#x27;est en vain que Rachi s&#x27;est contraint à expliquer ainsi, car ici [la guemara] objecte à juste titre que, même si sa marchandise n&#x27;est pas entre ses mains, il est cru comme un témoin unique : pourquoi les deux jurent-ils ? Celui que le vendeur appuie serait quitte de serment, et l&#x27;autre jurerait un serment de la Torah. Et maintenant on lit bien « et il ne sait pas » : s&#x27;il savait, il serait cru comme un témoin unique. Mais on aurait pu aussi répondre que le vendeur n&#x27;est pas présent devant nous pour que nous l&#x27;interrogions. Et Rabbénou Its&#x27;hak (le Ri) explique : qu&#x27;on demande aux deux de qui le vendeur a reçu l&#x27;argent, car nous ne les soupçonnons pas de mentir sur ce point, en disant : j&#x27;ai donné, alors qu&#x27;il n&#x27;a pas donné ; et ils ne divergent que sur celui à qui le vendeur a consenti, mais sur la remise de l&#x27;argent ils ne divergent pas.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara propose de trancher en interrogeant le vendeur : de qui a-t-il reçu l'argent ? Elle répond que le cas visé est celui où il a reçu des deux, l'un de bon gré et l'autre malgré lui, sans savoir lequel est lequel. L'interroger n'avance donc à rien.</p><p>Rachi s'appuie sur Kiddouchin 73b : le vendeur n'est pas cru une fois que les deux sont partis, car il n'avait pas de raison de mémoriser lequel avait consenti. Il lit pour cela « nous ne savons pas ». Tossefot conteste cette lecture : si le vendeur n'avait reçu que d'un seul, il serait cru comme un témoin unique, et l'on lirait plutôt « il ne sait pas ». Le Ri propose autrement de demander aux deux acheteurs eux-mêmes de qui vient l'argent, puisqu'ils ne divergent que sur le consentement du vendeur.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 258" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="700" height="258" fill="#fbfaf6"/>
+<text x="350" y="22" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#2b2b2b">Pourquoi interroger le vendeur ne règle rien : il a reçu l'argent des deux</text>
+<defs><marker id="m2b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#8a7a62"/></marker></defs>
+<rect x="40" y="48" width="150" height="56" rx="6" fill="#f7ebe7" stroke="#a75d4b" stroke-width="1.5"/>
+<text x="115" y="72" text-anchor="middle" font-size="13" font-weight="bold" fill="#7c3b2c">Acheteur A</text>
+<text x="115" y="90" text-anchor="middle" font-size="11.5" fill="#4a2820">tient le vêtement</text>
+<rect x="510" y="48" width="150" height="56" rx="6" fill="#eaf3e8" stroke="#5d8f5b" stroke-width="1.5"/>
+<text x="585" y="72" text-anchor="middle" font-size="13" font-weight="bold" fill="#2e5c2c">Acheteur B</text>
+<text x="585" y="90" text-anchor="middle" font-size="11.5" fill="#24422a">tient le vêtement</text>
+<rect x="265" y="148" width="170" height="56" rx="6" fill="#ecebe4" stroke="#b6b2a4" stroke-width="1.5"/>
+<text x="350" y="172" text-anchor="middle" font-size="13" font-weight="bold" fill="#3a3a3a">Le vendeur</text>
+<text x="350" y="190" text-anchor="middle" font-size="11.5" fill="#6a6a6a">a pris les pièces des deux</text>
+<line x1="150" y1="104" x2="290" y2="146" stroke="#8a7a62" stroke-width="2" marker-end="url(#m2b)"/>
+<line x1="550" y1="104" x2="410" y2="146" stroke="#8a7a62" stroke-width="2" marker-end="url(#m2b)"/>
+<text x="168" y="136" text-anchor="middle" font-size="11.5" fill="#6a6a6a">de son gré ?</text>
+<text x="532" y="136" text-anchor="middle" font-size="11.5" fill="#6a6a6a">contre son gré ?</text>
+<text x="350" y="226" text-anchor="middle" font-size="12" fill="#3a3a3a">Le vendeur ne sait plus lequel des deux a consenti et lequel a payé malgré lui.</text>
+<text x="350" y="244" text-anchor="middle" font-size="11.5" fill="#6a6a6a">Rachi (Kiddouchin 73b) : il n'est pas cru après leur départ ; il se souvient seulement s'il n'a reçu que d'un seul.</text>
+</svg></div><div class="svg-cap">Le vendeur a reçu l&#x27;argent des deux acheteurs et ne sait pas lequel a consenti : l&#x27;interroger n&#x27;apporte rien.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg3">
+          <div class="seg-num">4</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לֵימָא מַתְנִיתִין דְּלָא כְּבֶן נַנָּס, דְּאִי בֶּן נַנָּס, הָאָמַר:</div>
+            <div class="fr"><p>Dira-t-on que notre michna n&#x27;est pas selon Ben Nannos ? Car si c&#x27;était Ben Nannos, ne dit-il pas :</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>מַתְנִיתִין</b> דְּמִשָּׂבֵעַ לְתַרְוַייְהוּ וְחַד מִשְׁתְּבַע לְשִׁיקְרָא:</div>
+          <div class="glose-fr">Notre michna : où l&#x27;on fait jurer les deux, alors que l&#x27;un jure faussement.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּלָא כְּבֶן נַנָּס</b> בְּמַסֶּכֶת שְׁבוּעוֹת (דַּף מה.) גַּבֵּי חֶנְוָנִי עַל פִּנְקָסוֹ אֵלּוּ וָאֵלּוּ בָּאִין לְבֵית דִּין עַל מְנָת לִישָּׁבַע אֶחָד מֵהֶם לַשָּׁוְא אָמַר בַּעַל הַבַּיִת לַחֶנְוָנִי תֵּן לִבְנִי חִטִּים בְּדִינָר וְעָלַי לְשַׁלֵּם אוֹ לַפּוֹעֲלִים בְּסֶלַע מָעוֹת שֶׁאֲנִי חַיָּיב בִּשְׂכָרָם וְעָלַי לִיתֵּן סֶלַע הוּא אוֹמֵר נָתַתִּי וְהוּא אוֹמֵר לֹא נָטַלְתִּי וּשְׁנֵיהֶם תּוֹבְעִין אֶת בַּעַל הַבַּיִת שְׁנֵיהֶם נִשְׁבָּעִין וְנוֹטְלִין מִבַּעַל הַבַּיִת אָמַר בֶּן נַנָּס כֵּיצַד אֵלּוּ וְאֵלּוּ בָּאִין לִידֵי שְׁבוּעַת שָׁוְא אֶלָּא שְׁנֵיהֶם נוֹטְלִין בְּלֹא שְׁבוּעָה:</div>
+          <div class="glose-fr">Pas selon Ben Nannos : dans le traité Chevouot (45a), à propos du commerçant [qui s&#x27;appuie] sur son carnet : ceux-ci et ceux-là viennent au tribunal pour que l&#x27;un d&#x27;eux jure en vain. Le maître de maison dit au commerçant : donne à mon fils du blé pour un dinar, et c&#x27;est à moi de payer ; ou : aux ouvriers, pour un séla, [la somme] que je leur dois en salaire, et c&#x27;est à moi de donner le séla. [Le commerçant] dit : j&#x27;ai donné, et [le bénéficiaire] dit : je n&#x27;ai pas reçu, et les deux réclament au maître de maison : les deux jurent et prennent du maître de maison. Ben Nannos dit : comment ! ceux-ci et ceux-là viendraient à un serment en vain ? Mais les deux prennent sans serment.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>לֵימָא מַתְנֵי&#x27; דְּלָא כְּבֶן נַנָּס</b> מָצִינוּ לְמֵימַר דְּיָדַע שַׁפִּיר דְּמַתְנִי&#x27; אֶפְשָׁר דְּתַרְוַיְיהוּ בַּהֲדֵי הֲדָדֵי אַגְבְּהוּהָ ומ&quot;מ פָּרִיךְ שֶׁיַּחֲלֹוקוּ בְּלֹא שְׁבוּעָה אַחֲרֵי שֶׁאֶפְשָׁר לָבֹא לִידֵי שְׁבוּעַת שָׁוְא וּמְשַׁנֵּי הָתָם וַדַּאי אִיכָּא שְׁבוּעַת שָׁוְא:</div>
+          <div class="glose-fr">Dira-t-on que notre michna n&#x27;est pas selon Ben Nannos : on pourrait dire que [le questionneur] sait bien que dans la michna il est possible que les deux l&#x27;aient soulevée ensemble ; et pourtant il objecte qu&#x27;ils devraient partager sans serment, puisqu&#x27;il est possible d&#x27;en venir à un serment en vain. Et [la guemara] répond : là-bas, il y a assurément un serment en vain.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Première confrontation de la michna avec un avis connu. Ben Nannos, dans Chevouot 45a, refuse d'imposer un serment lorsque l'un des deux jurerait forcément à faux : il fait prendre les deux sans serment. Notre michna fait jurer les deux alors que l'un des deux dit faux. Elle serait donc contre Ben Nannos.</p><p>Le segment s'arrête sur l'annonce de la citation, que le suivant donne. Rachi la complète par le cas concret de Chevouot : le commerçant dit avoir livré, le bénéficiaire dit n'avoir rien reçu, et le maître de maison est réclamé par les deux. Tossefot note que le questionneur n'ignore pas la réponse qui vient ensuite : il objecte tout de même, puisque la possibilité d'un serment en vain subsiste.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 262" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="700" height="262" fill="#fbfaf6"/>
+<text x="350" y="22" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#2b2b2b">Ben Nannos : pas de serment qui puisse être un serment en vain</text>
+<defs><marker id="m2b3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#7a86a8"/></marker></defs>
+<rect x="24" y="38" width="652" height="60" rx="6" fill="#ecebe4" stroke="#b6b2a4"/>
+<text x="350" y="58" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">Le cas de Chevouot (45a) : le commerçant et son carnet</text>
+<text x="350" y="76" text-anchor="middle" font-size="11.5" fill="#3a3a3a">Le maître de maison a dit au commerçant de donner à son fils (ou à des ouvriers) ; il paiera lui-même.</text>
+<text x="350" y="90" text-anchor="middle" font-size="11.5" fill="#3a3a3a">Le commerçant dit : j'ai donné. Le bénéficiaire dit : je n'ai pas reçu. Tous deux réclament au maître de maison.</text>
+<rect x="24" y="114" width="300" height="62" rx="6" fill="#fff" stroke="#c9c5b6"/>
+<text x="174" y="134" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#7c3b2c">Ben Nannos</text>
+<text x="174" y="152" text-anchor="middle" font-size="11.5" fill="#4a2820">Ceux-ci et ceux-là viendraient à un serment</text>
+<text x="174" y="167" text-anchor="middle" font-size="11.5" fill="#4a2820">en vain : les deux prennent sans serment.</text>
+<rect x="376" y="114" width="300" height="62" rx="6" fill="#fff" stroke="#c9c5b6"/>
+<text x="526" y="134" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">Notre michna</text>
+<text x="526" y="152" text-anchor="middle" font-size="11.5" fill="#3a3a3a">Les deux jurent, et l'un jure faussement :</text>
+<text x="526" y="167" text-anchor="middle" font-size="11.5" fill="#3a3a3a">elle serait donc contre Ben Nannos ?</text>
+<line x1="324" y1="145" x2="374" y2="145" stroke="#7a86a8" stroke-width="2" marker-end="url(#m2b3)"/>
+<rect x="24" y="192" width="652" height="58" rx="6" fill="#eaf3e8" stroke="#5d8f5b" stroke-width="1.5"/>
+<text x="350" y="212" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2e5c2c">Réponse : dans le cas de Chevouot, un serment en vain est certain</text>
+<text x="350" y="230" text-anchor="middle" font-size="11.5" fill="#24422a">Ici, on peut supposer que les deux ont soulevé le vêtement ensemble : chacun se croit propriétaire du tout</text>
+<text x="350" y="244" text-anchor="middle" font-size="11.5" fill="#24422a">et jure la vérité en disant qu'il n'a pas moins de la moitié. Aucun serment n'est alors en vain.</text>
+</svg></div><div class="svg-cap">Le cas de Chevouot, la position de Ben Nannos et l&#x27;objection contre notre michna, avec la réponse du segment 5.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg4">
+          <div class="seg-num">5</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">כֵּיצַד אֵלּוּ וְאֵלּוּ בָּאִין לִידֵי שְׁבוּעַת שָׁוְא?</div>
+            <div class="fr"><p>Comment ! Ceux-ci et ceux-là viendraient à un serment en vain ?</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Citation de Ben Nannos, annoncée au segment précédent. Son raisonnement porte sur le <b>serment en vain</b> (chevouat chav) : lorsqu'il est certain que l'un des deux jurera à faux, les Sages n'imposent pas de serment et font prendre les deux sans serment. La guemara va chercher si notre michna se heurte à cet avis.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg5">
+          <div class="seg-num">6</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲפִילּוּ תֵּימָא בֶּן נַנָּס, הָתָם וַדַּאי אִיכָּא שְׁבוּעַת שָׁוְא. הָכָא אִיכָּא לְמֵימַר דְּלֵיכָּא שְׁבוּעַת שָׁוְא, אֵימוֹר דְּתַרְוַייְהוּ בַּהֲדֵי הֲדָדֵי אַגְבְּהוּהָ.</div>
+            <div class="fr"><p>Même si tu dis [que c&#x27;est selon] Ben Nannos : là-bas il y a assurément un serment en vain ; ici on peut dire qu&#x27;il n&#x27;y a pas de serment en vain : suppose que les deux l&#x27;ont soulevée ensemble.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>אֵימוֹר בַּהֲדֵי הֲדָדֵי אַגְבְּהוּהָ</b> לִמְצִיאָה וְכָל אֶחָד וְאֶחָד סָבוּר אֲנִי הִגְבַּהְתִּיהָ תְּחִילָּה וְכֻולָּהּ שֶׁלִּי וְכִי מִשְׁתְּבַע עַל חֶצְיָהּ קוּשְׁטָא מִשְׁתְּבַע וּלְעִנְיַן מִקָּח וּמִמְכָּר נָמֵי שֶׁמָּא לִשְׁנֵיהֶם נִתְרַצָּה:</div>
+          <div class="glose-fr">Suppose qu&#x27;ils l&#x27;ont soulevée ensemble : pour la trouvaille, chacun pense : j&#x27;ai été le premier à la soulever, et elle est tout entière à moi ; et lorsqu&#x27;il jure sur sa moitié, il jure la vérité. Et pour l&#x27;achat et la vente aussi : peut-être [le vendeur] a-t-il consenti aux deux.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Réponse à l'objection tirée de Ben Nannos. Dans le cas de Chevouot, l'un des deux prétendants dit forcément faux. Dans notre michna, rien n'oblige à le penser : chacun peut croire sincèrement avoir été le premier à soulever l'objet, et jurer en toute vérité qu'il n'a pas moins de la moitié.</p><p>Rachi applique la même idée à l'achat : le vendeur a peut-être consenti aux deux. Dans les deux cas, le serment ne peut donc pas être un serment en vain.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg6">
+          <div class="seg-num">7</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">לֵימָא מַתְנִיתִין דְּלָא כְּסוֹמְכוֹס, דְּאִי כְּסוּמָכוֹס, הָאָמַר: מָמוֹן הַמֻּוטָּל בְּסָפֵק – חוֹלְקִין בְּלֹא שְׁבוּעָה.</div>
+            <div class="fr"><p>Dira-t-on que notre michna n&#x27;est pas selon Soum&#x27;hos ? Car si c&#x27;était Soum&#x27;hos, ne dit-il pas : un argent qui est en doute, ils partagent sans serment ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>כְּסוּמָכוֹס</b> בְּבָבָא קַמָּא גַּבֵּי שׁוֹר שֶׁנָּגַח אֶת הַפָּרָה וְנִמְצָא עֻובָּרָהּ בְּצִדָּהּ (דַּף מו.):</div>
+          <div class="glose-fr">Selon Soum&#x27;hos : dans Bava Kamma, à propos du bœuf qui a encorné la vache dont le petit a été trouvé à côté d&#x27;elle (46a).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Deuxième avis confronté : Soum'hos, que Rachi renvoie à Bava Kamma 46a, au cas du bœuf qui a encorné une vache et du petit mort trouvé à côté d'elle. Selon lui, un argent en doute se partage <b>sans serment</b>. Notre michna impose un serment : elle serait donc contre Soum'hos.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg7">
+          <div class="seg-num">8</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְאֶלָּא מַאי, רַבָּנָן? הָא אָמְרִי הַמּוֹצִיא מֵחֲבֵרוֹ עָלָיו הָרְאָיָה!</div>
+            <div class="fr"><p>Et alors, [serait-elle] selon les Rabbanan ? Mais ils disent : celui qui retire [quelque chose] à son compagnon doit apporter la preuve !</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara poursuit : si la michna n'est pas selon Soum'hos, serait-elle selon les <b>Rabbanan</b> ? Leur principe est que celui qui veut retirer un bien à son compagnon doit apporter la preuve : il n'y aurait alors pas de partage du tout. La question reçoit une première réponse au segment suivant.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg8">
+          <div class="seg-num">9</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">הַאי מַאי, אִי אָמְרַתְּ בִּשְׁלָמָא רַבָּנַן: הָתָם דְּלָא תָּפְסִי תַּרְוַיְיהוּ אֲמַרוּ רַבָּנַן הַמּוֹצִיא מֵחֲבֵירוֹ עָלָיו הָרְאָיָה, הָכָא דְּתַרְוַייְהוּ תָּפְסִי [פָּלְגִי] לָהּ בִּשְׁבוּעָה.</div>
+            <div class="fr"><p>Quelle est cette objection ? Si tu dis [que c&#x27;est selon] les Rabbanan, soit : là-bas, où les deux ne tiennent pas [l&#x27;objet], les Rabbanan ont dit : celui qui retire à son compagnon doit apporter la preuve ; ici, où les deux tiennent, ils partagent avec serment.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(4)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>עָלָיו הָרְאָיָה</b> בְּעֵדִים וְאִי לָא לָא גַּבֵּי מִידֵּי וְהָכָא חוֹלְקִין [בִּשְׁבוּעָה]:</div>
+          <div class="glose-fr">Il doit apporter la preuve : par des témoins ; sinon il n&#x27;obtient rien. Et ici, ils partagent [avec serment].</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl">ה&quot;ג אִי אָמְרַתְּ בִּשְׁלָמָא רַבָּנַן הָתָם דְּלָא תָּפְסִי תַּרְוַיְיהוּ אֲמוּר רַבָּנָן כוּ&#x27; הָכָא דְּתָפְסִי תַּרְוַייְהוּ פָּלְגִי בִּשְׁבוּעָה אֶלָּא אִי אָמְרַתְּ סוֹמְכוֹס וּמֶה הָתָם דְּלָא תָּפְסִי תַּרְוַיְיהוּ אָמַר סוּמָכוֹס פָּלְגִי בְּלֹא שְׁבוּעָה. הָכָא דְּתָפְסִי תַּרְוַיְיהוּ לֹא כָל שֶׁכֵּן:</div>
+          <div class="glose-fr">Ainsi est la leçon : « Si tu dis, à la bonne heure, les Rabbanan : là-bas, où les deux ne tiennent pas, les Rabbanan ont dit, etc. ; ici, où les deux tiennent, ils partagent avec serment. Mais si tu dis Soum&#x27;hos : là-bas, où les deux ne tiennent pas, Soum&#x27;hos dit qu&#x27;ils partagent sans serment ; ici, où les deux tiennent, n&#x27;est-ce pas à plus forte raison ? »</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>תַּרְוַייְהוּ תָּפְסִי</b> וְאֵין כָּאן מוֹצִיא מֵחֲבֵירוֹ:</div>
+          <div class="glose-fr">Les deux tiennent : il n&#x27;y a pas ici de « celui qui retire à son compagnon ».</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>בִּשְׁבוּעָה פַּלְגֵי לָהּ</b> כֵּיוָן דִּמְחַסֵּר גּוּבַיְינָא בְּמַה שֶׁחֲבֵירוֹ תּוֹפֵס דְּהַאי תְּפִיס בְּכֻולָּהּ וְהַאי תְּפִיס [בְּכֻולָּהּ] לָא קִים לְהוּ לְרַבָּנַן לְהוֹצִיא מָמוֹן מֵחֶזְקָתוֹ בִּכְדִי כִּדְאָמְרִי&#x27; הָתָם לְרַבָּנָן דְּבָעֵי רְאָיָה הִצְרִיכוּם שְׁבוּעָה:</div>
+          <div class="glose-fr">Ils partagent avec serment : puisque [chacun] entame le recouvrement (gobayna) de l&#x27;autre par ce que son compagnon tient, car celui-ci tient la totalité et celui-là tient la totalité, il n&#x27;a pas paru juste aux Rabbanan de retirer de l&#x27;argent de sa possession sans raison ; comme on le dit là-bas, pour les Rabbanan qui demandent une preuve, ils les ont obligés à un serment.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הָתָם דְּלָא תָּפְסִי תַּרְוַיְיהוּ</b> כ&quot;א הָאֶחָד ואע&quot;ג דְּאַפֵּי&#x27; בְּעוֹמֶדֶת בַּאֲגַם אִית לְהוּ לְרַבָּנָן הַמּוֹצִיא מֵחֲבֵירוֹ עָלָיו הָרְאָיָה מ&quot;מ מִיקְּרֵי הָאֶחָד תְּפִיס מֵחֲמַת חֶזְקַת מָרֵיהּ קַמָּא וְאִית דְּגָרַס הָתָם דְּחַד מִינַּייְהוּ הוּא:</div>
+          <div class="glose-fr">Là-bas, où les deux ne tiennent pas : c&#x27;est-à-dire un seul [tient]. Et bien que, même pour [l&#x27;objet] qui se trouve dans le pré (be&#x27;agam), les Rabbanan aient [la règle] : celui qui retire à son compagnon doit apporter la preuve, on dit néanmoins que l&#x27;un tient en vertu de la &#x27;hazaka de son maître précédent. Et certains lisent là-bas : [le cas] où l&#x27;un d&#x27;eux est [celui qui tient].</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara ne voit pas de difficulté avec les Rabbanan. Quand aucun des deux ne tient l'objet, celui qui veut en retirer à l'autre doit prouver. Ici, les deux tiennent, et aucun ne retire à l'autre : le partage avec serment est la solution intermédiaire que Rachi justifie, car la prise de l'un entame le recouvrement de l'autre, et les Rabbanan ne retirent pas d'argent d'une possession sans raison.</p><p>La difficulté se pose avec Soum'hos : si lui partage sans serment même quand les deux ne tiennent pas, il le ferait a fortiori quand les deux tiennent. Tossefot précise que, dans le cas des Rabbanan, l'un des deux est en réalité tenu pour possesseur en vertu de la 'hazaka de l'ancien propriétaire.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 270" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="700" height="270" fill="#fbfaf6"/>
+<text x="350" y="22" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#2b2b2b">Deux lectures de la michna : Rabbanan ou Soum'hos</text>
+<rect x="24" y="36" width="140" height="30" rx="4" fill="#ecebe4" stroke="#b6b2a4"/>
+<rect x="170" y="36" width="250" height="30" rx="4" fill="#ecebe4" stroke="#b6b2a4"/>
+<rect x="426" y="36" width="250" height="30" rx="4" fill="#ecebe4" stroke="#b6b2a4"/>
+<text x="94" y="56" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">Selon</text>
+<text x="295" y="56" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">Là : les deux ne tiennent pas</text>
+<text x="551" y="56" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a3a3a">Ici : les deux tiennent</text>
+<rect x="24" y="72" width="140" height="74" rx="4" fill="#f7ebe7" stroke="#a75d4b"/>
+<rect x="170" y="72" width="250" height="74" rx="4" fill="#fff" stroke="#c9c5b6"/>
+<rect x="426" y="72" width="250" height="74" rx="4" fill="#fff" stroke="#c9c5b6"/>
+<text x="94" y="114" text-anchor="middle" font-size="13" font-weight="bold" fill="#7c3b2c">Les Rabbanan</text>
+<text x="295" y="98" text-anchor="middle" font-size="11.5" fill="#4a2820">Celui qui retire à son compagnon</text>
+<text x="295" y="114" text-anchor="middle" font-size="11.5" fill="#4a2820">doit apporter la preuve.</text>
+<text x="295" y="132" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#7c3b2c">Sans preuve, il n'obtient rien.</text>
+<text x="551" y="98" text-anchor="middle" font-size="11.5" fill="#4a2820">Aucun ne retire à l'autre :</text>
+<text x="551" y="114" text-anchor="middle" font-size="11.5" fill="#4a2820">ils partagent avec serment.</text>
+<text x="551" y="132" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2e5c2c">Conforme à la michna.</text>
+<rect x="24" y="152" width="140" height="74" rx="4" fill="#eaf3e8" stroke="#5d8f5b"/>
+<rect x="170" y="152" width="250" height="74" rx="4" fill="#fff" stroke="#c9c5b6"/>
+<rect x="426" y="152" width="250" height="74" rx="4" fill="#fff" stroke="#c9c5b6"/>
+<text x="94" y="194" text-anchor="middle" font-size="13" font-weight="bold" fill="#2e5c2c">Soum'hos</text>
+<text x="295" y="178" text-anchor="middle" font-size="11.5" fill="#24422a">Un argent en doute se partage</text>
+<text x="295" y="194" text-anchor="middle" font-size="11.5" fill="#24422a">sans serment.</text>
+<text x="551" y="178" text-anchor="middle" font-size="11.5" fill="#24422a">A fortiori : si on partage sans serment là,</text>
+<text x="551" y="194" text-anchor="middle" font-size="11.5" fill="#24422a">ici où les deux tiennent aussi.</text>
+<text x="551" y="212" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#a03b28">Contredit le serment de la michna.</text>
+<rect x="24" y="236" width="652" height="26" rx="5" fill="#eef0f6" stroke="#7a86a8"/>
+<text x="350" y="254" text-anchor="middle" font-size="12" fill="#2f3a55">Rachi : tenir ensemble fait que chacun entame le recouvrement de l'autre ; les Rabbanan lui imposent un serment.</text>
+</svg></div><div class="svg-cap">Les deux lectures de la michna : avec les Rabbanan la michna est cohérente ; avec Soum&#x27;hos elle se heurte à un a fortiori.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg9">
+          <div class="seg-num">10</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֶלָּא אִי אָמְרַתְּ סוֹמְכוֹס, הַשְׁתָּא וּמֶה הָתָם דְּלָא תָּפְסִי תַּרְוַיְיהוּ – חוֹלְקִין בְּלֹא שְׁבוּעָה, הָכָא דְּתַרְוַיְיהוּ תָּפְסִי לַהּ – לֹא כָל שֶׁכֵּן!</div>
+            <div class="fr"><p>Mais si tu dis [que c&#x27;est selon] Soum&#x27;hos : maintenant que là-bas, où les deux ne tiennent pas, ils partagent sans serment, ici, où les deux tiennent, n&#x27;est-ce pas à plus forte raison !</p></div>
+            <div class="tools"><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Voici l'a fortiori complet contre l'hypothèse de Soum'hos. Si, quand aucun des deux ne tient l'objet, Soum'hos fait partager sans serment, alors quand les deux le tiennent, le partage sans serment s'impose davantage. La michna, qui impose un serment, ne pourrait donc pas être selon lui. La réponse suit.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg10">
+          <div class="seg-num">11</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲפִילּוּ תֵּימָא סוּמָכוֹס: כִּי אָמַר סוֹמְכוֹס שֶׁמָּא וְשֶׁמָּא, אֲבָל בָּרִי וּבָרִי – לֹא אָמַר.</div>
+            <div class="fr"><p>Même si tu dis [que c&#x27;est selon] Soum&#x27;hos : Soum&#x27;hos n&#x27;a parlé que de « peut-être et peut-être » ; mais « certain et certain », il ne l&#x27;a pas dit.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>שֶׁמָּא וְשֶׁמָּא</b> כִּי הָתָם דְּקָתָנֵי נִמְצָא עֻובָּרָהּ בְּצִדָּהּ וְאֵין יָדוּעַ אִם עַד שֶׁלֹּא יָלְדָה נָגְחָה אִם מִשֶּׁיָּלְדָה נָגְחָה וְלֹא מֵת הַוָּלָד מֵחֲמַת הַנְּגִיחָה אֶלָּא מֵאֵלָיו וְכֵיוָן דְּכָל חַד שֶׁמָּא טְעִין לֵיכָּא לְמִרְמֵי עֲלַיְיהוּ שְׁבוּעָה:</div>
+          <div class="glose-fr">Peut-être et peut-être : comme là-bas, où il est enseigné qu&#x27;on a trouvé son petit à côté d&#x27;elle, et l&#x27;on ne sait pas si c&#x27;est avant qu&#x27;elle ait mis bas qu&#x27;il a encorné ou après avoir mis bas, et que le petit n&#x27;est pas mort du fait de l&#x27;encornement mais de lui-même ; et puisque chacun plaide un doute, il n&#x27;est pas possible de leur imposer un serment.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Première réponse en faveur d'une michna selon Soum'hos. Son avis ne vise que le cas où chacun des deux plaide un doute (<b>shema ve-shema</b>) : on ne peut alors leur imposer un serment. Dans notre michna, chacun plaide avec certitude (<b>bari ouvari</b>) : j'ai trouvé, ou : c'est à moi. Soum'hos n'a pas dit son avis à ce sujet.</p><p>Rachi illustre le doute par le cas de Bava Kamma : on ignore si le bœuf a encorné avant ou après la mise bas, et si le petit est mort de l'encornement ou de lui-même.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg11">
+          <div class="seg-num">12</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וּלְרַבָּה בַּר רַב הוּנָא, דְּאָמַר: אָמַר סוֹמְכוֹס אֲפִילּוּ בָּרִי וּבָרִי, מַאי אִיכָּא לְמֵימַר?</div>
+            <div class="fr"><p>Et selon Rabba bar Rav Houna, qui a dit : Soum&#x27;hos a parlé même de « certain et certain », que dire ?</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּרַבָּה בַּר רַב הוּנָא</b> בְּפֶרֶק הַשּׁוֹאֵל לְקַמָּן (בָּבָא מְצִיעָא דַּף ק.):</div>
+          <div class="glose-fr">Rabba bar Rav Houna : dans le chapitre Hasho&#x27;el plus loin (Bava Metzia 100a).</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La réponse précédente se heurte à Rabba bar Rav Houna : selon lui, Soum'hos a dit son avis même quand chacun plaide avec certitude. La distinction entre doute et certitude n'est alors plus disponible. Rachi renvoie à Bava Metzia 100a, où cet avis est enseigné.</p></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg12">
+          <div class="seg-num">13</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">אֲפִילּוּ תֵּימָא סוּמָכוֹס, כִּי אָמַר סוּמָכוֹס – הֵיכָא דְּאִיכָּא דְּרָרָא דְמָמוֹנָא, אֲבָל הֵיכָא דְּלֵיכָּא דְּרָרָא דְמָמוֹנָא – לֹא.</div>
+            <div class="fr"><p>Même si tu dis [que c&#x27;est selon] Soum&#x27;hos : Soum&#x27;hos n&#x27;a parlé que là où il y a une derara de-mamona ; mais là où il n&#x27;y a pas de derara de-mamona, non.</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>דְּרָרָא דְמָמוֹנָא</b> חֶסְרוֹן מָמוֹן שֶׁאִם יִפְרַע זֶה שֶׁלֹּא כְּדִין הָוֵי חֶסְרוֹן מָמוֹן וְאִם נִפְטַרְנוּ שֶׁלֹּא כַּדִּין נִמְצָא זֶה חָסֵר וְלַד פָּרָתוֹ:</div>
+          <div class="glose-fr">Derara de-mamona : une perte d&#x27;argent, car si celui-ci paie sans droit, il y a perte d&#x27;argent ; et si nous l&#x27;acquittons sans droit, il se trouve que celui-ci perd le petit de sa vache.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>הֵיכָא דְּאִיכָּא דְּרָרָא דְמָמוֹנָא</b> פֵּירוּשׁ שֶׁבְּלֹא טַעֲנוֹתֵיהֶם יֵשׁ סָפֵק לב&quot;ד דְּיֵשׁ לְאֶחָד תְּבִיעָה עַל חֲבֵירוֹ בְּלֹא טַעֲנוֹתָם כְּגוֹן בְּשׁוֹר שֶׁנָּגַח אֶת הַפָּרָה (בּ&quot;ק דַּף מו.) וּמַחֲלִיף פָּרָה בַּחֲמוֹר. אַחֲרֵי שֶׁהַסָּפֵק נוֹלַד מֵעַצְמוֹ דִּין הוּא שֶׁיַּחֲלֹוקוּ אֲפִילּוּ בְּלֹא שְׁבוּעָה:</div>
+          <div class="glose-fr">Là où il y a derara de-mamona : c&#x27;est-à-dire que, indépendamment de leurs plaidoiries, le tribunal a un doute, car l&#x27;un a une créance sur son compagnon même sans leurs plaidoiries, par exemple pour le bœuf qui a encorné la vache (Bava Kamma 46a) et pour celui qui échange une vache contre un âne. Puisque le doute est né de lui-même, il est de droit qu&#x27;ils partagent même sans serment.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>Seconde réponse, qui vaut même pour Rabba bar Rav Houna. L'avis de Soum'hos suppose une <b>derara de-mamona</b>, c'est-à-dire un doute d'argent que le tribunal a de lui-même, avant toute plaidoirie : en condamnant ou en acquittant à tort, on fait perdre de l'argent à l'un des deux. Là où ce doute n'existe pas, l'avis de Soum'hos ne s'applique pas.</p><p>Tossefot donne des exemples : le bœuf qui a encorné la vache, et l'échange d'une vache contre un âne. Dans ces cas, le doute naît de lui-même, et le partage sans serment s'impose.</p></div>
+    </details><details class="comm schema" open>
+      <summary style="--c:#0891b2">🖼️ Schéma</summary>
+      <div class="comm-body"><div class="svg-wrap"><svg viewBox="0 0 700 290" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="700" height="290" fill="#fbfaf6"/>
+<text x="350" y="22" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#2b2b2b">Les limites que la guemara pose à l'avis de Soum'hos</text>
+<rect x="24" y="36" width="652" height="66" rx="6" fill="#fff" stroke="#c9c5b6"/>
+<text x="40" y="56" font-size="12.5" font-weight="bold" fill="#3a3a3a">Première limite : peut-être et peut-être (shema ve-shema)</text>
+<text x="40" y="74" font-size="11.5" fill="#4a2820">Chacun ne plaide qu'un doute, comme dans le cas du bœuf qui a encorné la vache et du petit trouvé à côté d'elle :</text>
+<text x="40" y="90" font-size="11.5" fill="#4a2820">on ignore s'il a encorné avant ou après la mise bas. Aucun serment ne peut être imposé. En revanche, certain et certain : non.</text>
+<rect x="24" y="112" width="652" height="52" rx="6" fill="#fff" stroke="#c9c5b6"/>
+<text x="40" y="132" font-size="12.5" font-weight="bold" fill="#3a3a3a">Objection : Rabba bar Rav Houna (Bava Metzia 100a)</text>
+<text x="40" y="150" font-size="11.5" fill="#4a2820">Il dit que Soum'hos a parlé même de certain et certain. Que répondre ?</text>
+<rect x="24" y="174" width="652" height="66" rx="6" fill="#eaf3e8" stroke="#5d8f5b" stroke-width="1.5"/>
+<text x="40" y="194" font-size="12.5" font-weight="bold" fill="#2e5c2c">Seconde limite : la derara de-mamona</text>
+<text x="40" y="212" font-size="11.5" fill="#24422a">Il y a derara de-mamona lorsque le tribunal a un doute d'argent indépendamment des plaidoiries : si l'on fait payer à</text>
+<text x="40" y="228" font-size="11.5" fill="#24422a">tort l'un, ou si on acquitte à tort l'autre, il y a une perte d'argent. Sinon, Soum'hos n'a pas dit son avis.</text>
+<rect x="24" y="250" width="652" height="30" rx="5" fill="#eef0f6" stroke="#7a86a8"/>
+<text x="350" y="270" text-anchor="middle" font-size="12" fill="#2f3a55">Exemples de Tossefot : le bœuf qui a encorné la vache (Bava Kamma 46a) et l'échange d'une vache contre un âne.</text>
+</svg></div><div class="svg-cap">Les deux limites posées à Soum&#x27;hos : peut-être et peut-être, puis la derara de-mamona, face à l&#x27;avis de Rabba bar Rav Houna.</div></div>
+    </details></div>
+          </div>
+        </section><section class="seg" id="seg13">
+          <div class="seg-num">14</div>
+          <div class="seg-main">
+            <div class="he" dir="rtl">וְלָאו קַל וָחֹומֶר הוּא? וּמֶה הָתָם דְּאִיכָּא דְּרָרָא דְמָמוֹנָא לְמָר, וְאִיכָּא דְּרָרָא דְמָמוֹנָא לְמָר,</div>
+            <div class="fr"><p>Mais n&#x27;est-ce pas un kal va-&#x27;homer ? Si là-bas, où il y a une derara de-mamona pour l&#x27;un, et une derara de-mamona pour l&#x27;autre,</p></div>
+            <div class="tools"><details class="comm rashi">
+      <summary style="--c:#b45309">📜 Rachi <span class="cnt">(1)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמֶה הָתָם דְּאִיכָּא דְּרָרָא דְמָמוֹנָא כו&#x27;</b> אֵיזֶה מֵהֶן שֶׁמַּפְסִיד הַחֵצִי שֶׁלֹּא כַּדִּין אַתָּה מְחַסְּרוֹ מָמוֹן:</div>
+          <div class="glose-fr">Si là-bas, où il y a une derara de-mamona, etc. : celui des deux qui perd la moitié sans droit, tu lui fais perdre de l&#x27;argent.</div>
+        </div></div>
+    </details><details class="comm tosafot">
+      <summary style="--c:#15803d">🗂️ Tossefot <span class="cnt">(2)</span></summary>
+      <div class="comm-body"><div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמֶה הָתָם דְּאִיכָּא דְּרָרָא דְמָמוֹנָא</b> וְאִיכָּא לְמֵימַר כֻּולָּהּ דְּמַר. לָא פָּרֵיךְ אֶלָּא אִי סוּמָכוֹס ס&quot;ל כְּרַבָּנָן דְּבֶן נַנָּס דְּלָא חָיְישִׁי לִשְׁבוּעַת שָׁוְא דִּלְבֶן נַנָּס אַדְּרַבָּה הֵיכָא דְּאִיכָּא לְמֵימַר כֻּולָּהּ דְּמַר פַּלְגֵי בְּלֹא שְׁבוּעָה מִשּׁוּם דְּאִיכָּא בְּוַדַּאי שְׁבוּעַת שָׁוְא:</div>
+          <div class="glose-fr">Si là-bas, où il y a une derara de-mamona : et l&#x27;on peut dire que le tout est à l&#x27;un. [La guemara] n&#x27;objecte que si Soum&#x27;hos est du même avis que les Rabbanan de [Ben Nannos], qui ne craignent pas un serment en vain, contrairement à Ben Nannos : pour Ben Nannos, au contraire, là où l&#x27;on peut dire que le tout est à l&#x27;un, ils partagent sans serment, car il y a assurément un serment en vain.</div>
+        </div>
+<div class="glose">
+          <div class="glose-he" dir="rtl"><b>וּמֶה הָתָם דְּאִיכָּא דְּרָרָא דְמָמוֹנָא</b> בְּפֶרֶק ח&quot;ה (ב&quot;ב דַּף לה. וְשָׁם) גַּבֵּי אַרְבָּא דְּאָמַר רַב נַחְמָן כֹּל דְּאַלִּים גָּבַר פָּרִיךְ מֵהַמַּחֲלִיף פָּרָה בַּחֲמוֹר דְּיַחֲלֹוקוּ וּמְשַׁנֵּי הָתָם אִיכָּא דְּרָרָא דְמָמוֹנָא וְלָא פָּרִיךְ וּמֶה הָתָם דְּאִיכָּא דְּרָרָא דְמָמוֹנָא וְאִיכָּא לְמֵימַר כֻּולָּהּ דְּמַר יַחֲלֹוקוּ גַּבֵּי אַרְבָּא דְּאִיכָּא לְמֵימַר דְּתַרְוַייְהוּ הוּא וְאֵין חוֹלְקִין אֶלָּא כָּל דְּאַלִּים גָּבַר כִּדְפָרִיךְ הָכָא הַיְינוּ מִשּׁוּם דִּלְעִנְיַן חֲלֻוקָּה סְבָרַת דְּרָרָא דְמָמוֹנָא הִיא טוֹבָה מֵאַחַר שֶׁסָּפֵק גָּמוּר הוּא בְּלֹא טַעֲנוֹתָם דִּין שֶׁיַּחֲלֹוקוּ אֲבָל אַרְבָּא אע&quot;ג דְּאֶפְשָׁר דְּתַרְוַייְהוּ הִיא כֵּיוָן דְּלֵיכָּא דְּרָרָא דְמָמוֹנָא וְאֵין אוֹחֲזִין הָוֵי דִּינָא כָּל דְּאַלִּים גָּבַר אֲבָל לְעִנְיַן שְׁבוּעָה אֵין מוֹעִיל סְבָרַת דְּרָרָא דְמָמוֹנָא לַחֲלֹוק בְּלֹא שְׁבוּעָה אַחֲרֵי שֶׁהוּא בְּוַדַּאי שֶׁל אֶחָד מֵהֶם סְבָרָא הוּא שֶׁיַּחֲלֹוקוּ בִּשְׁבוּעָה אוּלַי יוֹדֶה אֶחָד מֵהֶם:</div>
+          <div class="glose-fr">Si là-bas, où il y a une derara de-mamona : dans le chapitre &#x27;Hezkat haBatim (Bava Batra 35a, et là-bas), à propos du bateau (arba), où Rav Na&#x27;hman dit : celui qui est le plus fort l&#x27;emporte, [la guemara] objecte à partir de celui qui échange une vache contre un âne, [où] ils partagent, et répond : là-bas il y a une derara de-mamona. Et elle n&#x27;objecte pas : si là-bas, où il y a une derara de-mamona et où l&#x27;on peut dire que le tout est à l&#x27;un, ils partagent, pour le bateau, où l&#x27;on peut dire qu&#x27;il est aux deux, ils ne partagent pas mais [on dit] celui qui est le plus fort l&#x27;emporte, comme elle objecte ici. C&#x27;est parce que, pour le partage, le raisonnement de la derara de-mamona est bon, puisqu&#x27;il y a un doute complet sans leurs plaidoiries, et qu&#x27;il est de droit qu&#x27;ils partagent. Mais pour le bateau, bien qu&#x27;il soit possible qu&#x27;il soit aux deux, puisqu&#x27;il n&#x27;y a pas de derara de-mamona et qu&#x27;il n&#x27;y a pas de tenants (ein o&#x27;hazin), le jugement est : celui qui est le plus fort l&#x27;emporte. Mais pour le serment, le raisonnement de la derara de-mamona ne sert pas à partager sans serment, puisque [l&#x27;objet] est assurément à l&#x27;un des deux : il est logique qu&#x27;ils partagent avec serment, peut-être l&#x27;un d&#x27;eux avouera-t-il.</div>
+        </div></div>
+    </details><details class="comm explain">
+      <summary style="--c:#7c3aed">💡 Explication</summary>
+      <div class="comm-body explain-body"><p>La guemara retourne la distinction de la derara de-mamona en un <b>kal va-'homer</b> : dans le cas où chacun des deux a une derara de-mamona, Soum'hos partage sans serment. Le segment s'interrompt sur cette ouverture d'argument, dont la suite figure à la page suivante (3a).</p><p>Tossefot explique la portée de l'objection. Elle suppose que Soum'hos ne craint pas le serment en vain, contrairement à Ben Nannos. Il distingue aussi, à partir de Bava Batra 35a, entre le partage, où la derara de-mamona est un bon argument, et le serment, où elle ne sert pas, puisque l'objet est certainement à l'un des deux : le serment peut amener l'un d'eux à avouer.</p></div>
+    </details></div>
+          </div>
+        </section>
+  <nav class="dafnav"><a class="nav-b" href="Bava_Metzia_2a.html">&lsaquo; Bava_Metzia 2a</a><a class="nav-b home" href="index.html">🏠 Accueil</a><a class="nav-b" href="Bava_Metzia_3a.html">Bava_Metzia 3a &rsaquo;</a></nav>
+</div>
+<div class="ctl">
+  <button onclick="toggleAll('rashi')">📜 Rachi</button>
+  <button onclick="toggleAll('tosafot')">🗂️ Tossefot</button>
+  <button onclick="toggleAll('benyehoyada')">🪔 Ben Yehoyada</button>
+  <button onclick="toggleAll('rosh')">⚖️ Rosh</button>
+  <button onclick="toggleAll('explain')">💡 Explications</button>
+  <button onclick="toggleAll('schema')">🖼️ Schémas</button>
+  <button onclick="closeAll()">✕ Tout fermer</button>
+</div>
+<script>
+function toggleAll(cls) {
+  const els = document.querySelectorAll('details.comm.'+cls);
+  const anyClosed = [...els].some(e => !e.open);
+  els.forEach(e => e.open = anyClosed);
+}
+function closeAll() { document.querySelectorAll('details.comm').forEach(e => e.open=false); }
+</script>
+<div id="signaler-err" style="text-align:center;margin:34px 0 10px;padding-top:14px;border-top:1px solid #e7e2d8">
+<a id="signaler-lien" href="#" style="display:inline-block;color:#78716c;text-decoration:none;font-size:.82rem;border:1px solid #e7e2d8;background:#fffdf8;border-radius:999px;padding:5px 14px">&#9993; Signaler une erreur de traduction</a>
+</div>
+<script>(function(){var a=document.getElementById('signaler-lien');if(!a)return;
+var t=(document.title||'').replace(/\s+/g,' ').trim();
+function maj(){var s='';try{s=(window.getSelection?String(window.getSelection()):'').trim().slice(0,400);}catch(e){}
+a.href='mailto:chiourimsba@gmail.com?subject='+encodeURIComponent('Correction — '+t)+'&body='+encodeURIComponent('Page : '+location.href+'\n'+(s?('\nPassage sélectionné :\n« '+s+' »\n'):'\nPassage concerné :\n\n')+'\nCorrection proposée :\n\n\n— envoyé depuis '+location.hostname);}
+maj();document.addEventListener('selectionchange',maj);a.addEventListener('mouseenter',maj);})();</script>
+<p id="credit-texte" style="text-align:center;font-size:.76rem;color:#78716c;margin:6px auto 18px;max-width:640px;line-height:1.5">
+Texte hébreu et araméen vocalisé : édition numérique William Davidson du Talmud Koren Noé, via
+<a href="https://www.sefaria.org" style="color:#78716c">Sefaria</a> (licence CC BY-NC). Traduction française, notes et schémas : Chiourim BA (licence CC BY 4.0).</p>
+<script src="https://chiourimsba.vercel.app/chat.js" defer></script>
+</body>
+</html>
